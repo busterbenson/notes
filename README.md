@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sidey
 
 Sidey is a simple and minimalistic jekyll blogging theme.
@@ -23,3 +24,6 @@ Sidey is a simple and minimalistic jekyll blogging theme.
 ### Screenshot
 
 ![Screenshot](screenshot.png)
+=======
+# blog
+>>>>>>> 9c2df1f7b172f1fb3a6b0b9c09f0f66d2e6a89c5
