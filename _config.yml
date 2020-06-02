@@ -1,0 +1,54 @@
+site: Buster Benson
+url: https://busterbenson.com
+title: Buster Benson
+description: My blog.
+permalink: pretty
+
+baseurl: ""
+
+highlighter: none
+
+exclude:
+  - '.jekyll-cache'
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:slug
+  
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
