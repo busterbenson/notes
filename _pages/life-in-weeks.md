@@ -1,6 +1,10 @@
 ---
-layout: page
-title: Life in Weeks
+title 			: Life in Weeks
+layout			: life-in-weeks
+
+datafile		:	'life-in-weeks'
+start_date	: 1976-05-28
+end_year		: 2076
 ---
 
-Buster's life in weeks.
+My life, where each week I've been alive is a little box. When meaningful things happen (for both better and worse) I make a note of it so I can remember how much of life is influenced by these factors. If you'd like to create your own version of this, it's basically a data file, a template, and a blog post mashed together.

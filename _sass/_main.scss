@@ -22,6 +22,13 @@ body {
 	color: rgb(22, 23, 26);
 }
 
+.serif {
+	font-family: "Open Sans", system-ui, sans-serif;
+}
+.sans-serif {
+	font-family: "Open Sans", system-ui, sans-serif;
+}
+
 nav ul {
   border-right: 1px solid #edf2f7;
 }
@@ -299,4 +306,35 @@ input[type=text]#search-input {
   font-family: inherit;
   font-size: 100%;
   border: none;
+}
+
+// Life in weeks
+.life-in-weeks {
+	h2 {
+		margin-top: 0;
+	}
+	.border-tertiary {
+		border-color: #eee;
+		color: #666;
+	}
+	.border-tertiary a {
+		color: #666;
+	}
+	.week {
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+// Pop-overs
+h3.popover-header {
+	margin: 0;
+	margin-block-start: 0;
+}
+.popover .arrow {
+  display: none;
+}
+.popover {
+  border: 5px solid #334;
 }

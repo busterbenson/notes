@@ -1,17 +1,14 @@
 ---
 layout: default
 ---
-<!-- Script pointing to search-script.js -->
-<script src="/search.js" type="text/javascript"></script>
+<script src="/assets/js/search.js" type="text/javascript"></script>
 
 <section class="posts">
-
 	<span id="swatch_time" class="mb-1"></span>
 	<div id="unix_time" class="d-none"></div>
 
-<!-- Html Elements for Search -->
 <div id="search-container">
-<input type="text" id="search-input" placeholder="Search&hellip;">
+	<input type="text" id="search-input" placeholder="Search&hellip;">
 </div>
 
 <ul id="results-container" style="border-left: 1px solid #ccc; padding-left: 1rem;"></ul>
@@ -34,7 +31,7 @@ layout: default
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
-  json: '/search.json',
+  json: '/assets/js/search-entries/search.json',
   searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time></li>',
   noResultsText: 'No results found',
   limit: 10,

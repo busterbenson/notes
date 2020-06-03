@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Buster Benson</title>
- <link href="https://notes.busterbenson.com/atom.xml" rel="self"/>
- <link href="https://notes.busterbenson.com/"/>
- <updated>2020-06-03T01:25:04-07:00</updated>
- <id>https://notes.busterbenson.com</id>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2020-06-03T12:25:56-07:00</updated>
+ <id>http://localhost:4000</id>
  <author>
    <name></name>
    <email></email>
@@ -14,18 +14,18 @@
  
  <entry>
    <title>Notes on Awakening from the Meaning Crisis, by John Vervaeke</title>
-   <link href="https://notes.busterbenson.com/2020/06/01/notes-on-awakening-from-the-meaning-crisis"/>
+   <link href="http://localhost:4000/2020/06/01/notes-on-awakening-from-the-meaning-crisis"/>
    <updated>2020-06-01T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2020/06/01/notes-on-awakening-from-the-meaning-crisis</id>
+   <id>http://localhost:4000/2020/06/01/notes-on-awakening-from-the-meaning-crisis</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>44: Year of the Amateur</title>
-   <link href="https://notes.busterbenson.com/2020/05/28/year-of-the-amateur"/>
+   <link href="http://localhost:4000/2020/05/28/year-of-the-amateur"/>
    <updated>2020-05-28T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2020/05/28/year-of-the-amateur</id>
+   <id>http://localhost:4000/2020/05/28/year-of-the-amateur</id>
    <content type="html">&lt;p&gt;I’ve reviewed my life around the time of my birthday every year for the last 14 years. It’s a funny habit to review a life as it’s happening. I can look back to last year when I was just acclimating to a life without a full-time tech job (with all its perks and foibles) and finishing up a book with no idea what lay on the other side of that project. Being “all in and with the flow” turned out to be a useful mindset to approach the increasingly chaotic world on the brink of cultural collapse and a global pandemic. And also a fine one to witness the contradictions of all of this as the stock market floats on a cloud of overconfidence and willful blindness.&lt;/p&gt;
 
 &lt;p&gt;This year I’m feeling drawn to the idea of embracing the upheaval as a portal to a new timeline. Instead of calling all the King’s horses and all the King’s men to put the world back together again, I want to look at the rubble and ask what new things can be built from these little pebbles.&lt;/p&gt;
@@ -87,27 +87,27 @@ Associations&lt;/li&gt;
  
  <entry>
    <title>An Amateur’s Unfinished Map of Whatever Comes to Mind as This is Happening</title>
-   <link href="https://notes.busterbenson.com/2020/05/28/an-amateurs-guide"/>
+   <link href="http://localhost:4000/2020/05/28/an-amateurs-guide"/>
    <updated>2020-05-28T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2020/05/28/an-amateurs-guide</id>
+   <id>http://localhost:4000/2020/05/28/an-amateurs-guide</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>What is blogging?</title>
-   <link href="https://notes.busterbenson.com/2020/04/22/blogging"/>
+   <link href="http://localhost:4000/2020/04/22/blogging"/>
    <updated>2020-04-22T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2020/04/22/blogging</id>
+   <id>http://localhost:4000/2020/04/22/blogging</id>
    <content type="html">&lt;p&gt;I don’t really have any idea. But starting to think about it.&lt;/p&gt;
 </content>
  </entry>
  
  <entry>
    <title>One meaningful thing</title>
-   <link href="https://notes.busterbenson.com/2020/04/07/one-meaningful-thing"/>
+   <link href="http://localhost:4000/2020/04/07/one-meaningful-thing"/>
    <updated>2020-04-07T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2020/04/07/one-meaningful-thing</id>
+   <id>http://localhost:4000/2020/04/07/one-meaningful-thing</id>
    <content type="html">&lt;p&gt;My last letter to you all was on January 16th of this year 2020. Our heads know that this was only a few months of calendar time, but our hearts know that it was a lifetime ago. The last letter was titled, What’s Next?, quaintly referring to what was next for me after all my book promotion and conversation. And now we have an answer! It’s the same as your answer. We have all converged our timelines. We have all also converged our vocabularies: exponential curves! social distancing! lockdown! community spread! contact tracing! self-quarantine! zoom happy hour! I imagine if aliens were watching us from space for the last few millennia, disorganized and frantic, how weird it must have been to see us all suddenly start moving in a more coordinated way than we likely ever have before as a species.&lt;/p&gt;
 
 &lt;p&gt;In a matter of weeks, cars started disappearing.&lt;/p&gt;
@@ -191,9 +191,9 @@ pointing again and again down, down into the black depths.&lt;/p&gt;
  
  <entry>
    <title>Why We Should Create Personal Mythologies (and How)</title>
-   <link href="https://notes.busterbenson.com/2020/01/23/why-we-need-a-personal-mythology"/>
+   <link href="http://localhost:4000/2020/01/23/why-we-need-a-personal-mythology"/>
    <updated>2020-01-23T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2020/01/23/why-we-need-a-personal-mythology</id>
+   <id>http://localhost:4000/2020/01/23/why-we-need-a-personal-mythology</id>
    <content type="html">&lt;p&gt;Setting context for this post is going to be tough. It’s gonna get weird but I try to tie it all together into a useful proposal by the end. Bear with me!&lt;/p&gt;
 
 &lt;p&gt;I tossed this idea out the other day:&lt;/p&gt;
@@ -396,9 +396,9 @@ pointing again and again down, down into the black depths.&lt;/p&gt;
  
  <entry>
    <title>Ooh look, a book</title>
-   <link href="https://notes.busterbenson.com/2019/10/09/new-book-website"/>
+   <link href="http://localhost:4000/2019/10/09/new-book-website"/>
    <updated>2019-10-09T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2019/10/09/new-book-website</id>
+   <id>http://localhost:4000/2019/10/09/new-book-website</id>
    <content type="html">&lt;p&gt;(&lt;a href=&quot;https://busterbenson.com/book/timeline&quot;&gt;Click here to see the timeline larger&lt;/a&gt;)&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Okay, things are starting to get real.&lt;/strong&gt; Today is the day I begin to share a lot more about this book on productive disagreement I spent the last 3+ years writing with the broader world. You all have been patiently hearing about it the whole time, so I want to both thank you and extend deep apologies for the next month or two.&lt;/p&gt;
@@ -422,9 +422,9 @@ pointing again and again down, down into the black depths.&lt;/p&gt;
  
  <entry>
    <title>43: All in &amp; with the flow</title>
-   <link href="https://notes.busterbenson.com/2019/05/31/43-all-in-and-with-the-flow"/>
+   <link href="http://localhost:4000/2019/05/31/43-all-in-and-with-the-flow"/>
    <updated>2019-05-31T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2019/05/31/43-all-in-and-with-the-flow</id>
+   <id>http://localhost:4000/2019/05/31/43-all-in-and-with-the-flow</id>
    <content type="html">&lt;blockquote&gt;
   &lt;p&gt;I’ve been doing a review of my life every year around my birthday since 2006. You can last year’s reflection about &lt;a href=&quot;/blog/2018/07-02-dig-deeper&quot;&gt;digging deeper&lt;/a&gt;, and &lt;a href=&quot;/me/yearly-reviews/&quot;&gt;the other 12&lt;/a&gt;.
 The primary formative event of my last year was changing careers and re-entering the world of independent creator living.&lt;/p&gt;
@@ -477,9 +477,9 @@ The primary formative event of my last year was changing careers and re-entering
  
  <entry>
    <title>Pocket Biases</title>
-   <link href="https://notes.busterbenson.com/2019/05/10/pocket-biases"/>
+   <link href="http://localhost:4000/2019/05/10/pocket-biases"/>
    <updated>2019-05-10T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2019/05/10/pocket-biases</id>
+   <id>http://localhost:4000/2019/05/10/pocket-biases</id>
    <content type="html">&lt;iframe style=&quot;border: none;&quot; src=&quot;https://cards.producthunt.com/cards/posts/150227?v=1&quot; width=&quot;500&quot; height=&quot;405&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;p&gt;You can have every bias in your pocket by &lt;a href=&quot;https://pocket-biases.glideapp.io/&quot;&gt;adding this website&lt;/a&gt; to your mobile phone’s homescreen.&lt;/p&gt;
@@ -520,45 +520,45 @@ The primary formative event of my last year was changing careers and re-entering
  
  <entry>
    <title>Well that backfired</title>
-   <link href="https://notes.busterbenson.com/2019/04/12/well-that-backfired"/>
+   <link href="http://localhost:4000/2019/04/12/well-that-backfired"/>
    <updated>2019-04-12T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2019/04/12/well-that-backfired</id>
+   <id>http://localhost:4000/2019/04/12/well-that-backfired</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>$1/month early bird special ⛅️</title>
-   <link href="https://notes.busterbenson.com/2019/03/22/one-dollar-early-bird-special"/>
+   <link href="http://localhost:4000/2019/03/22/one-dollar-early-bird-special"/>
    <updated>2019-03-22T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2019/03/22/one-dollar-early-bird-special</id>
+   <id>http://localhost:4000/2019/03/22/one-dollar-early-bird-special</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>Oakland schools are struggling</title>
-   <link href="https://notes.busterbenson.com/2019/02/20/oakland-schools-are-struggling"/>
+   <link href="http://localhost:4000/2019/02/20/oakland-schools-are-struggling"/>
    <updated>2019-02-20T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2019/02/20/oakland-schools-are-struggling</id>
+   <id>http://localhost:4000/2019/02/20/oakland-schools-are-struggling</id>
    <content type="html">&lt;p&gt;Evidence of the problem, diverse perspectives of the problem, initiatives proposed to address the problem, and next steps.&lt;/p&gt;
 </content>
  </entry>
  
  <entry>
    <title>The Green New Deal is a 1-Pager for America</title>
-   <link href="https://notes.busterbenson.com/2019/02/12/the-green-new-deal-is-a-one-pager-for-america"/>
+   <link href="http://localhost:4000/2019/02/12/the-green-new-deal-is-a-one-pager-for-america"/>
    <updated>2019-02-12T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2019/02/12/the-green-new-deal-is-a-one-pager-for-america</id>
+   <id>http://localhost:4000/2019/02/12/the-green-new-deal-is-a-one-pager-for-america</id>
    <content type="html">&lt;p&gt;Evidence of the problem, diverse perspectives of the problem, initiatives proposed to address the problem, and next steps.&lt;/p&gt;
 </content>
  </entry>
  
  <entry>
    <title>History of my name</title>
-   <link href="https://notes.busterbenson.com/2019/02/06/history-of-my-name"/>
+   <link href="http://localhost:4000/2019/02/06/history-of-my-name"/>
    <updated>2019-02-06T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2019/02/06/history-of-my-name</id>
+   <id>http://localhost:4000/2019/02/06/history-of-my-name</id>
    <content type="html">&lt;p&gt;I have a pretty weird story to share about my name.&lt;/p&gt;
 
 &lt;p&gt;I was born with the name Erik Keith Benson.&lt;/p&gt;
@@ -601,9 +601,9 @@ The primary formative event of my last year was changing careers and re-entering
  
  <entry>
    <title>The definition of “emotional labor” has changed</title>
-   <link href="https://notes.busterbenson.com/2019/01/20/the-definition-of-emotional-labor-has-changed"/>
+   <link href="http://localhost:4000/2019/01/20/the-definition-of-emotional-labor-has-changed"/>
    <updated>2019-01-20T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2019/01/20/the-definition-of-emotional-labor-has-changed</id>
+   <id>http://localhost:4000/2019/01/20/the-definition-of-emotional-labor-has-changed</id>
    <content type="html">&lt;p&gt;Arlie Hochschild coined the term in her book, The Managed Heart, to describe a component of some service industry jobs in which workers must project a different emotion than the one they are experiencing.&lt;/p&gt;
 
 &lt;p&gt;The new common usage is super valuable for us, and probably more valuable than the original intended meaning. But I also really like the original intended meaning and think it too is a phenomenon worth understanding.&lt;/p&gt;
@@ -641,27 +641,27 @@ The primary formative event of my last year was changing careers and re-entering
  
  <entry>
    <title>Guidelines for Fruitful Dialogue</title>
-   <link href="https://notes.busterbenson.com/2019/01/18/guidelines-for-fruitful-dialogue"/>
+   <link href="http://localhost:4000/2019/01/18/guidelines-for-fruitful-dialogue"/>
    <updated>2019-01-18T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2019/01/18/guidelines-for-fruitful-dialogue</id>
+   <id>http://localhost:4000/2019/01/18/guidelines-for-fruitful-dialogue</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>The Beginning of a Fruitful Dialogue</title>
-   <link href="https://notes.busterbenson.com/2019/01/17/the-beginning-of-a-fruitful-dialogue"/>
+   <link href="http://localhost:4000/2019/01/17/the-beginning-of-a-fruitful-dialogue"/>
    <updated>2019-01-17T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2019/01/17/the-beginning-of-a-fruitful-dialogue</id>
+   <id>http://localhost:4000/2019/01/17/the-beginning-of-a-fruitful-dialogue</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>The Hippocratic Oath</title>
-   <link href="https://notes.busterbenson.com/2019/01/17/hippocratic-oath"/>
+   <link href="http://localhost:4000/2019/01/17/hippocratic-oath"/>
    <updated>2019-01-17T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2019/01/17/hippocratic-oath</id>
+   <id>http://localhost:4000/2019/01/17/hippocratic-oath</id>
    <content type="html">&lt;p&gt;I went down a strange research rabbit hole about the Hippocratic Oath, and tweeted about it:&lt;/p&gt;
 
 &lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;The first interesting thing I learned about the Hippocratic Oath is that the words &amp;quot;Primum non nocere&amp;quot; or &amp;quot;First, do no harm&amp;quot; don&amp;#39;t appear in the original. It has a more wishy-washy line about not harming people, but it&amp;#39;s not central or primary to the oath.&lt;/p&gt;&amp;mdash; Buster (@buster) &lt;a href=&quot;https://twitter.com/buster/status/1086040872649519104?ref_src=twsrc%5Etfw&quot;&gt;January 17, 2019&lt;/a&gt;&lt;/blockquote&gt;
@@ -732,9 +732,9 @@ The primary formative event of my last year was changing careers and re-entering
  
  <entry>
    <title>Can a friendly and diverse dialogue exist between liberals and conservatives on the internet?</title>
-   <link href="https://notes.busterbenson.com/2019/01/09/friendly-and-diverse-community"/>
+   <link href="http://localhost:4000/2019/01/09/friendly-and-diverse-community"/>
    <updated>2019-01-09T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2019/01/09/friendly-and-diverse-community</id>
+   <id>http://localhost:4000/2019/01/09/friendly-and-diverse-community</id>
    <content type="html">&lt;p&gt;For the last 2+ years I’ve been researching and writing a book about productive disagreement (&lt;em&gt;Why Are We Yelling?&lt;/em&gt; will be published in 2020). It’s based on work that has unfolded since I synthesized all 200+ cognitive biases into 4 universal conundrums that our brains are constantly trying to solve in the &lt;a href=&quot;https://link.medium.com/vt53kCLjlT&quot;&gt;Cognitive Bias Cheat Sheet&lt;/a&gt;, which has since been read more than a million times. This unfolding project has been the hardest and most rewarding work of my professional life so far.&lt;/p&gt;
 
 &lt;p&gt;It seems necessary to put these ideas into practice towards something meaningful. That is, addressing one space that is very negatively impacted by our struggles with communication: politics.&lt;/p&gt;
@@ -780,9 +780,9 @@ This project will only work if we can show that quiet, respectful voices do have
  
  <entry>
    <title>Announcing a new friendly and diverse community: Fruitful</title>
-   <link href="https://notes.busterbenson.com/2019/01/07/fruitful"/>
+   <link href="http://localhost:4000/2019/01/07/fruitful"/>
    <updated>2019-01-07T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2019/01/07/fruitful</id>
+   <id>http://localhost:4000/2019/01/07/fruitful</id>
    <content type="html">&lt;h3 id=&quot;what-is-it&quot;&gt;What is it?&lt;/h3&gt;
 
 &lt;p&gt;Fruitful will be an invite-only Q&amp;amp;A community around the question of how we can be most productive as humans and citizens during the upcoming 2020 election season (based on many streams of work I’ve been aggregating for my book on productive disagreement). It won’t be on Facebook, and it won’t be ad-supported, and it will be FREEEEE. It’ll be a place to ask questions and get input from a wide variety of perspectives that are quieter and more nuanced than the kind that travel through the news and social streams.&lt;/p&gt;
@@ -832,9 +832,9 @@ This project will only work if we can show that quiet, respectful voices do have
  
  <entry>
    <title>30 fundamentals</title>
-   <link href="https://notes.busterbenson.com/2019/01/04/30-fundamentals"/>
+   <link href="http://localhost:4000/2019/01/04/30-fundamentals"/>
    <updated>2019-01-04T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2019/01/04/30-fundamentals</id>
+   <id>http://localhost:4000/2019/01/04/30-fundamentals</id>
    <content type="html">&lt;h3 id=&quot;my-top-take-away&quot;&gt;My top take-away&lt;/h3&gt;
 
 &lt;p&gt;I lifted a couple things from this list and added them to my own beliefs file. Specifically, thoughts around how modern life is changing the way we relate and communicated to each other and causing all kinds of problems. Overall, this is a great read and also a great example of the value in articulating foundational beliefs and opinions.&lt;/p&gt;
@@ -947,9 +947,9 @@ This project will only work if we can show that quiet, respectful voices do have
  
  <entry>
    <title>Equilibriums and Limits: a better way to look at most every political issue</title>
-   <link href="https://notes.busterbenson.com/2019/01/02/equilibriums-and-limits"/>
+   <link href="http://localhost:4000/2019/01/02/equilibriums-and-limits"/>
    <updated>2019-01-02T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2019/01/02/equilibriums-and-limits</id>
+   <id>http://localhost:4000/2019/01/02/equilibriums-and-limits</id>
    <content type="html">&lt;h3 id=&quot;my-top-take-away&quot;&gt;My top take-away:&lt;/h3&gt;
 
 &lt;p&gt;When the argument is about a binary choice between only two option, consider re-framing the difference as something that exists along a spectrum, with more than two possible perspectives. Some perspectives will be about which direction we should push, relative to our current circumstances (aka &lt;strong&gt;equilibrium perspectives&lt;/strong&gt;). Others will be about what kinds of absolute limits we should put into place regardless of current circumstances (aka &lt;strong&gt;limitation perspectives&lt;/strong&gt;).&lt;/p&gt;
@@ -1005,9 +1005,9 @@ This project will only work if we can show that quiet, respectful voices do have
  
  <entry>
    <title>Sarah Mei’s thread about the negative space of technology</title>
-   <link href="https://notes.busterbenson.com/2018/12/31/the-negative-space-of-technology"/>
+   <link href="http://localhost:4000/2018/12/31/the-negative-space-of-technology"/>
    <updated>2018-12-31T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2018/12/31/the-negative-space-of-technology</id>
+   <id>http://localhost:4000/2018/12/31/the-negative-space-of-technology</id>
    <content type="html">&lt;p&gt;It starts here, click through to read:&lt;/p&gt;
 
 &lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;There is not, never has been, &amp;amp; never will be ANY technology with a purely positive effect on society.&lt;br /&gt;&lt;br /&gt;Everything that makes life better for some group ALSO makes life worse for another group.&lt;/p&gt;&amp;mdash; Sarah Mei (@sarahmei) &lt;a href=&quot;https://twitter.com/sarahmei/status/1078932447314595840?ref_src=twsrc%5Etfw&quot;&gt;December 29, 2018&lt;/a&gt;&lt;/blockquote&gt;
@@ -1018,9 +1018,9 @@ This project will only work if we can show that quiet, respectful voices do have
  
  <entry>
    <title>History of my beliefs (so far)</title>
-   <link href="https://notes.busterbenson.com/2018/12/31/history-of-my-beliefs"/>
+   <link href="http://localhost:4000/2018/12/31/history-of-my-beliefs"/>
    <updated>2018-12-31T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2018/12/31/history-of-my-beliefs</id>
+   <id>http://localhost:4000/2018/12/31/history-of-my-beliefs</id>
    <content type="html">&lt;p&gt;A short history of how my &lt;mark&gt;&lt;a href=&quot;/beliefs&quot;&gt;beliefs&lt;/a&gt;&lt;/mark&gt; have moved over the years. You can find every change to every belief between 2012 and 2019 in this &lt;a href=&quot;https://github.com/busterbenson/public/commits/master&quot;&gt;changelog&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h4 id=&quot;2012&quot;&gt;&lt;a href=&quot;https://github.com/busterbenson/public/blob/master/book-of-beliefs-2012.md&quot;&gt;2012&lt;/a&gt;&lt;/h4&gt;
@@ -1063,27 +1063,27 @@ This project will only work if we can show that quiet, respectful voices do have
  
  <entry>
    <title>A Parenting Paradox: How Kids Manage To Be 'All Joy And No Fun'</title>
-   <link href="https://notes.busterbenson.com/2018/12/30/the-parenting-paradox"/>
+   <link href="http://localhost:4000/2018/12/30/the-parenting-paradox"/>
    <updated>2018-12-30T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2018/12/30/the-parenting-paradox</id>
+   <id>http://localhost:4000/2018/12/30/the-parenting-paradox</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>Parenting the Fortnite Addict</title>
-   <link href="https://notes.busterbenson.com/2018/12/30/parenting-the-fortnite-addict"/>
+   <link href="http://localhost:4000/2018/12/30/parenting-the-fortnite-addict"/>
    <updated>2018-12-30T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2018/12/30/parenting-the-fortnite-addict</id>
+   <id>http://localhost:4000/2018/12/30/parenting-the-fortnite-addict</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>Monopoly’s Anti-Capitalist, Socialist Roots as a Teaching Game at Wharton</title>
-   <link href="https://notes.busterbenson.com/2018/12/30/monopoly-teaching-game"/>
+   <link href="http://localhost:4000/2018/12/30/monopoly-teaching-game"/>
    <updated>2018-12-30T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2018/12/30/monopoly-teaching-game</id>
+   <id>http://localhost:4000/2018/12/30/monopoly-teaching-game</id>
    <content type="html">&lt;blockquote&gt;
   &lt;p&gt;“A virtue of gaming that is sometimes overlooked by those seeking grander goals is its unparalleled advantages in training and educational programs. A game can easily be made fascinating enough to put over the dullest facts. To sit down and play through a game is to be convinced as by no argument, however persuasively presented.”&lt;/p&gt;
 
@@ -1095,27 +1095,27 @@ This project will only work if we can show that quiet, respectful voices do have
  
  <entry>
    <title>Is Screen Time Bad for Kids’ Brains?</title>
-   <link href="https://notes.busterbenson.com/2018/12/30/is-screen-time-bad-for-kids-brains"/>
+   <link href="http://localhost:4000/2018/12/30/is-screen-time-bad-for-kids-brains"/>
    <updated>2018-12-30T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2018/12/30/is-screen-time-bad-for-kids-brains</id>
+   <id>http://localhost:4000/2018/12/30/is-screen-time-bad-for-kids-brains</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>A Dark Consensus About Screens and Kids Begins to Emerge in Silicon Valley</title>
-   <link href="https://notes.busterbenson.com/2018/12/30/a-dark-consensus-about-screens-and-kids"/>
+   <link href="http://localhost:4000/2018/12/30/a-dark-consensus-about-screens-and-kids"/>
    <updated>2018-12-30T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2018/12/30/a-dark-consensus-about-screens-and-kids</id>
+   <id>http://localhost:4000/2018/12/30/a-dark-consensus-about-screens-and-kids</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>42: Dig deeper</title>
-   <link href="https://notes.busterbenson.com/2018/07/02/dig-deeper"/>
+   <link href="http://localhost:4000/2018/07/02/dig-deeper"/>
    <updated>2018-07-02T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2018/07/02/dig-deeper</id>
+   <id>http://localhost:4000/2018/07/02/dig-deeper</id>
    <content type="html">&lt;p&gt;This is my 13th year of yearly birthday reflections. Here are the previous 12:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -1219,18 +1219,18 @@ To digging deeper, friends. 🍻&lt;/p&gt;
  
  <entry>
    <title>A rational person's 1-minute guide to why rational thinking often fails to persuade people</title>
-   <link href="https://notes.busterbenson.com/2017/10/27/rational-one-minute-guide"/>
+   <link href="http://localhost:4000/2017/10/27/rational-one-minute-guide"/>
    <updated>2017-10-27T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2017/10/27/rational-one-minute-guide</id>
+   <id>http://localhost:4000/2017/10/27/rational-one-minute-guide</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>41: Seek endarkenment</title>
-   <link href="https://notes.busterbenson.com/2017/05/28/seek-endarkenment"/>
+   <link href="http://localhost:4000/2017/05/28/seek-endarkenment"/>
    <updated>2017-05-28T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2017/05/28/seek-endarkenment</id>
+   <id>http://localhost:4000/2017/05/28/seek-endarkenment</id>
    <content type="html">&lt;p&gt;This is my 12th year of yearly birthday reflections. Here are the previous 11:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -1322,9 +1322,9 @@ To digging deeper, friends. 🍻&lt;/p&gt;
  
  <entry>
    <title>7 Habits of Highly Effective People</title>
-   <link href="https://notes.busterbenson.com/2017/02/06/stephen-covey-7-habits-of-highly-effective-people"/>
+   <link href="http://localhost:4000/2017/02/06/stephen-covey-7-habits-of-highly-effective-people"/>
    <updated>2017-02-06T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2017/02/06/stephen-covey-7-habits-of-highly-effective-people</id>
+   <id>http://localhost:4000/2017/02/06/stephen-covey-7-habits-of-highly-effective-people</id>
    <content type="html">&lt;p&gt;My favorite habit from this book is habit 5: &lt;a href=&quot;https://www.franklincovey.com/the-7-habits/habit-5.html&quot;&gt;seek first to understand, then to be understood&lt;/a&gt;. Stephen Covey seemed to also share this favorite:&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -1336,45 +1336,45 @@ To digging deeper, friends. 🍻&lt;/p&gt;
  
  <entry>
    <title>Cognitive bias cheat sheet, simplified</title>
-   <link href="https://notes.busterbenson.com/2017/01/07/cognitive-bias-cheat-sheet-simplified"/>
+   <link href="http://localhost:4000/2017/01/07/cognitive-bias-cheat-sheet-simplified"/>
    <updated>2017-01-07T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2017/01/07/cognitive-bias-cheat-sheet-simplified</id>
+   <id>http://localhost:4000/2017/01/07/cognitive-bias-cheat-sheet-simplified</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>Strangers to Ourselves</title>
-   <link href="https://notes.busterbenson.com/2016/11/12/timothy-wilson-strangers-to-ourselves"/>
+   <link href="http://localhost:4000/2016/11/12/timothy-wilson-strangers-to-ourselves"/>
    <updated>2016-11-12T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2016/11/12/timothy-wilson-strangers-to-ourselves</id>
+   <id>http://localhost:4000/2016/11/12/timothy-wilson-strangers-to-ourselves</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>Cognitive bias cheat sheet</title>
-   <link href="https://notes.busterbenson.com/2016/09/01/cognitive-bias-cheat-sheet"/>
+   <link href="http://localhost:4000/2016/09/01/cognitive-bias-cheat-sheet"/>
    <updated>2016-09-01T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2016/09/01/cognitive-bias-cheat-sheet</id>
+   <id>http://localhost:4000/2016/09/01/cognitive-bias-cheat-sheet</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>Codex Vitae - Better Humans</title>
-   <link href="https://notes.busterbenson.com/2016/07/17/codex-vitae-better-humans"/>
+   <link href="http://localhost:4000/2016/07/17/codex-vitae-better-humans"/>
    <updated>2016-07-17T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2016/07/17/codex-vitae-better-humans</id>
+   <id>http://localhost:4000/2016/07/17/codex-vitae-better-humans</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>40: Mind the loops</title>
-   <link href="https://notes.busterbenson.com/2016/05/28/mind-the-loops"/>
+   <link href="http://localhost:4000/2016/05/28/mind-the-loops"/>
    <updated>2016-05-28T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2016/05/28/mind-the-loops</id>
+   <id>http://localhost:4000/2016/05/28/mind-the-loops</id>
    <content type="html">&lt;p&gt;This is my 11th year of yearly birthday reflections. Here are the previous 10:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -1470,18 +1470,18 @@ In addition to my commute, I found some wiggle room in the time in the evenings 
  
  <entry>
    <title>Systems Thinking For Kids</title>
-   <link href="https://notes.busterbenson.com/2015/09/20/systems-thinking-for-kids"/>
+   <link href="http://localhost:4000/2015/09/20/systems-thinking-for-kids"/>
    <updated>2015-09-20T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2015/09/20/systems-thinking-for-kids</id>
+   <id>http://localhost:4000/2015/09/20/systems-thinking-for-kids</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>39: Make wiggle room</title>
-   <link href="https://notes.busterbenson.com/2015/06/13/make-wiggle-room"/>
+   <link href="http://localhost:4000/2015/06/13/make-wiggle-room"/>
    <updated>2015-06-13T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2015/06/13/make-wiggle-room</id>
+   <id>http://localhost:4000/2015/06/13/make-wiggle-room</id>
    <content type="html">&lt;p&gt;This is my 10th year of yearly birthday reflections. Here are the previous 9:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -1541,9 +1541,9 @@ I think this is going to be a good year. Next time I do one of these yearly revi
  
  <entry>
    <title>The Element of Irreducible Rascality</title>
-   <link href="https://notes.busterbenson.com/2015/05/27/the-element-of-irreducible-rascality"/>
+   <link href="http://localhost:4000/2015/05/27/the-element-of-irreducible-rascality"/>
    <updated>2015-05-27T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2015/05/27/the-element-of-irreducible-rascality</id>
+   <id>http://localhost:4000/2015/05/27/the-element-of-irreducible-rascality</id>
    <content type="html">&lt;p&gt;This is one of my favorite phrases coined by Alan Watts, who I’ve been immersing myself in over the last few months.&lt;/p&gt;
 
 &lt;p&gt;The idea of the element of irreducible rascality is that there is no perfect system. There’s no ultimate stability in anything: physical, logical, emotional, or spiritual. At the bottom of every hole, at the end of every train of thought, and behind even the most powerful structures, is a little rascal that will undo it all.
@@ -1596,9 +1596,9 @@ Imagine that you want to prepare for a perfect future. You somehow manage to ama
  
  <entry>
    <title>Self-coaching experiment results</title>
-   <link href="https://notes.busterbenson.com/2014/11/29/self-coaching-experiment-results"/>
+   <link href="http://localhost:4000/2014/11/29/self-coaching-experiment-results"/>
    <updated>2014-11-29T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2014/11/29/self-coaching-experiment-results</id>
+   <id>http://localhost:4000/2014/11/29/self-coaching-experiment-results</id>
    <content type="html">&lt;p&gt;These are notes on my coaching experiment that’s taking place on Lift. The program is called &lt;a href=&quot;https://www.lift.do/coaches/414-buster-benson?plan_id=354515&quot;&gt;Look before you Lift&lt;/a&gt; and Batch 2 will be opening up soon.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Batch 1 date:&lt;/strong&gt; 11/13/2014 - 11/19/2014&lt;br /&gt;
@@ -1667,9 +1667,9 @@ Imagine that you want to prepare for a perfect future. You somehow manage to ama
  
  <entry>
    <title>Better than meditation</title>
-   <link href="https://notes.busterbenson.com/2014/10/22/better-than-meditation"/>
+   <link href="http://localhost:4000/2014/10/22/better-than-meditation"/>
    <updated>2014-10-22T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2014/10/22/better-than-meditation</id>
+   <id>http://localhost:4000/2014/10/22/better-than-meditation</id>
    <content type="html">&lt;p&gt;Meditation is awesome.&lt;/p&gt;
 
 &lt;p&gt;It’s pretty much the simplest, cheapest way to improve your life that has ever been invented.&lt;/p&gt;
@@ -1729,18 +1729,18 @@ Imagine that you want to prepare for a perfect future. You somehow manage to ama
  
  <entry>
    <title>Universe ↔ soloverse</title>
-   <link href="https://notes.busterbenson.com/2014/10/18/universe-soloverse"/>
+   <link href="http://localhost:4000/2014/10/18/universe-soloverse"/>
    <updated>2014-10-18T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2014/10/18/universe-soloverse</id>
+   <id>http://localhost:4000/2014/10/18/universe-soloverse</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>3-lane product development</title>
-   <link href="https://notes.busterbenson.com/2014/08/10/3-lane-product-development"/>
+   <link href="http://localhost:4000/2014/08/10/3-lane-product-development"/>
    <updated>2014-08-10T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2014/08/10/3-lane-product-development</id>
+   <id>http://localhost:4000/2014/08/10/3-lane-product-development</id>
    <content type="html">&lt;p&gt;Let’s say you want to build an amazing product or start an amazing company. Where to start? Here are 3 lanes (Existential/WHY, Experimental/WHAT, &amp;amp; Execution/HOW) that work for us.&lt;/p&gt;
 
 &lt;h3 id=&quot;lane-1-the-existential-lane-discover-why-you-should-exist&quot;&gt;Lane 1: The Existential Lane. Discover WHY you should exist.&lt;/h3&gt;
@@ -1814,18 +1814,18 @@ Imagine that you want to prepare for a perfect future. You somehow manage to ama
  
  <entry>
    <title>The Technology</title>
-   <link href="https://notes.busterbenson.com/2014/07/30/the-technology"/>
+   <link href="http://localhost:4000/2014/07/30/the-technology"/>
    <updated>2014-07-30T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2014/07/30/the-technology</id>
+   <id>http://localhost:4000/2014/07/30/the-technology</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>38 is great: cultivate quality time</title>
-   <link href="https://notes.busterbenson.com/2014/05/28/cultivate-quality-time"/>
+   <link href="http://localhost:4000/2014/05/28/cultivate-quality-time"/>
    <updated>2014-05-28T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2014/05/28/cultivate-quality-time</id>
+   <id>http://localhost:4000/2014/05/28/cultivate-quality-time</id>
    <content type="html">&lt;p&gt;This is my 9th year of yearly birthday reflections. Here are the previous 8:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -1973,18 +1973,18 @@ Imagine that you want to prepare for a perfect future. You somehow manage to ama
  
  <entry>
    <title>How I track my life</title>
-   <link href="https://notes.busterbenson.com/2014/03/17/how-i-track-my-life"/>
+   <link href="http://localhost:4000/2014/03/17/how-i-track-my-life"/>
    <updated>2014-03-17T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2014/03/17/how-i-track-my-life</id>
+   <id>http://localhost:4000/2014/03/17/how-i-track-my-life</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>The concept of a person</title>
-   <link href="https://notes.busterbenson.com/2014/02/17/the-concept-of-a-person"/>
+   <link href="http://localhost:4000/2014/02/17/the-concept-of-a-person"/>
    <updated>2014-02-17T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2014/02/17/the-concept-of-a-person</id>
+   <id>http://localhost:4000/2014/02/17/the-concept-of-a-person</id>
    <content type="html">&lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;“The concept of a person is arguably the most important interface ever developed.”&lt;/strong&gt;  —  a key line in &lt;a href=&quot;http://kevinsimler.quora.com/UX-and-the-Civilizing-Process&quot;&gt;an amazing post&lt;/a&gt; by Kevin Simler about etiquette and design.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2041,9 +2041,9 @@ Imagine that you want to prepare for a perfect future. You somehow manage to ama
  
  <entry>
    <title>Smarter than smart</title>
-   <link href="https://notes.busterbenson.com/2014/02/17/smarter-than-smart"/>
+   <link href="http://localhost:4000/2014/02/17/smarter-than-smart"/>
    <updated>2014-02-17T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2014/02/17/smarter-than-smart</id>
+   <id>http://localhost:4000/2014/02/17/smarter-than-smart</id>
    <content type="html">&lt;p&gt;There are 2 ways to be “smart”, and one way is better than the other.&lt;/p&gt;
 
 &lt;p&gt;Smart Version 1: Know the answer to question X.&lt;/p&gt;
@@ -2136,18 +2136,18 @@ Imagine that you want to prepare for a perfect future. You somehow manage to ama
  
  <entry>
    <title>Make better resolutions</title>
-   <link href="https://notes.busterbenson.com/2013/12/31/make-better-resolutions"/>
+   <link href="http://localhost:4000/2013/12/31/make-better-resolutions"/>
    <updated>2013-12-31T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2013/12/31/make-better-resolutions</id>
+   <id>http://localhost:4000/2013/12/31/make-better-resolutions</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>Make your own @horse_ebooks</title>
-   <link href="https://notes.busterbenson.com/2013/09/23/make-your-own-horse-ebooks"/>
+   <link href="http://localhost:4000/2013/09/23/make-your-own-horse-ebooks"/>
    <updated>2013-09-23T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2013/09/23/make-your-own-horse-ebooks</id>
+   <id>http://localhost:4000/2013/09/23/make-your-own-horse-ebooks</id>
    <content type="html">&lt;p&gt;Today, &lt;a href=&quot;http://twitter.com/horse_ebooks&quot;&gt;@horse_ebooks&lt;/a&gt; &lt;a href=&quot;http://www.newyorker.com/online/blogs/elements/2013/09/horse-ebooks-and-pronunciation-book-revealed.html&quot;&gt;sorta died&lt;/a&gt;. Long live @horse_ebooks!&lt;/p&gt;
 
 &lt;p&gt;I remember playing around with Markov chains back in the day, and thought that it would be fun to see what that looked like when fed all 15,000 of my Tweets.&lt;/p&gt;
@@ -2201,9 +2201,9 @@ Imagine that you want to prepare for a perfect future. You somehow manage to ama
  
  <entry>
    <title>Managing my internet rage</title>
-   <link href="https://notes.busterbenson.com/2013/08/28/managing-my-internet-rage"/>
+   <link href="http://localhost:4000/2013/08/28/managing-my-internet-rage"/>
    <updated>2013-08-28T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2013/08/28/managing-my-internet-rage</id>
+   <id>http://localhost:4000/2013/08/28/managing-my-internet-rage</id>
    <content type="html">&lt;h2 id=&quot;step-1-identify-the-rage&quot;&gt;STEP 1: Identify the rage&lt;/h2&gt;
 
 &lt;p&gt;Next time you find yourself ENRAGED ON THE INTERNET, ask yourself these questions.&lt;/p&gt;
@@ -2273,9 +2273,9 @@ Imagine that you want to prepare for a perfect future. You somehow manage to ama
  
  <entry>
    <title>Live like a hydra</title>
-   <link href="https://notes.busterbenson.com/2013/08/24/live-like-a-hydra"/>
+   <link href="http://localhost:4000/2013/08/24/live-like-a-hydra"/>
    <updated>2013-08-24T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2013/08/24/live-like-a-hydra</id>
+   <id>http://localhost:4000/2013/08/24/live-like-a-hydra</id>
    <content type="html">&lt;h2 id=&quot;1-what-is-antifragility&quot;&gt;#1 What is antifragility?&lt;/h2&gt;
 
 &lt;p&gt;I’ve been a fan of Nassim Nicholas Taleb since reading &lt;a href=&quot;http://en.wikipedia.org/wiki/Fooled_by_Randomness&quot;&gt;Fooled By Randomness&lt;/a&gt; 9 years ago. It’s one of those books that you read and you can never look at the world the same way.&lt;/p&gt;
@@ -2466,9 +2466,9 @@ Imagine that you want to prepare for a perfect future. You somehow manage to ama
  
  <entry>
    <title>What's your life change score?</title>
-   <link href="https://notes.busterbenson.com/2013/07/25/whats-your-life-change-score"/>
+   <link href="http://localhost:4000/2013/07/25/whats-your-life-change-score"/>
    <updated>2013-07-25T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2013/07/25/whats-your-life-change-score</id>
+   <id>http://localhost:4000/2013/07/25/whats-your-life-change-score</id>
    <content type="html">&lt;p&gt;How many of the following things have happened to you in the last 6 months?&lt;/p&gt;
 
 &lt;ol&gt;
@@ -2506,18 +2506,18 @@ Imagine that you want to prepare for a perfect future. You somehow manage to ama
  
  <entry>
    <title>The Elephants</title>
-   <link href="https://notes.busterbenson.com/2013/07/13/the-elephants"/>
+   <link href="http://localhost:4000/2013/07/13/the-elephants"/>
    <updated>2013-07-13T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2013/07/13/the-elephants</id>
+   <id>http://localhost:4000/2013/07/13/the-elephants</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>The death bed game</title>
-   <link href="https://notes.busterbenson.com/2013/06/29/the-death-bed-game"/>
+   <link href="http://localhost:4000/2013/06/29/the-death-bed-game"/>
    <updated>2013-06-29T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2013/06/29/the-death-bed-game</id>
+   <id>http://localhost:4000/2013/06/29/the-death-bed-game</id>
    <content type="html">&lt;p&gt;You get one death bed point whenever you do something that you believe will still be valuable and meaningful to you when you’re on your death bed.&lt;/p&gt;
 
 &lt;p&gt;Toss out your goals, toss out your desire to change. Step back for a moment with me. Believe me, it’s not easy for me to say this. I built 43things.com because I believed then that managing goals was the best way to live life. I built healthmonth.com because I believed then that answering the question “&lt;a href=&quot;http://bustr.tumblr.com/post/20775796587/how-do-we-change-ourselves&quot;&gt;How do we change ourselves?&lt;/a&gt;” was the single most important question we could ask ourselves during this life.&lt;/p&gt;
@@ -2598,9 +2598,9 @@ Imagine that you want to prepare for a perfect future. You somehow manage to ama
  
  <entry>
    <title>Know Thy Umwelt</title>
-   <link href="https://notes.busterbenson.com/2013/06/16/know-thy-umwelt"/>
+   <link href="http://localhost:4000/2013/06/16/know-thy-umwelt"/>
    <updated>2013-06-16T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2013/06/16/know-thy-umwelt</id>
+   <id>http://localhost:4000/2013/06/16/know-thy-umwelt</id>
    <content type="html">&lt;p&gt;&lt;em&gt;Rambling notes on a Sunday afternoon after a sunny bike ride.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://svbtleusercontent.com/buster_24685687876608_small.jpg&quot; alt=&quot;Neocortex&quot; /&gt;&lt;/p&gt;
@@ -2671,9 +2671,9 @@ As Syllable from Sound—&lt;/p&gt;
  
  <entry>
    <title>Experimenting with subjectivity</title>
-   <link href="https://notes.busterbenson.com/2013/06/05/experimenting-with-subjectivity"/>
+   <link href="http://localhost:4000/2013/06/05/experimenting-with-subjectivity"/>
    <updated>2013-06-05T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2013/06/05/experimenting-with-subjectivity</id>
+   <id>http://localhost:4000/2013/06/05/experimenting-with-subjectivity</id>
    <content type="html">&lt;p&gt;After going to the Quantified Self conference last month and thinking about it for a few weeks, I’ve decided to start a new self-tracking experiment… or rather to adapt my existing one to new thoughts on what’s worth tracking.&lt;/p&gt;
 
 &lt;p&gt;So, tonight I made a list of my four top interests, and I made a list of the four people that matter most to me in the world. “Quality time” with these interests and people is what I plan to track.&lt;/p&gt;
@@ -2708,9 +2708,9 @@ As Syllable from Sound—&lt;/p&gt;
  
  <entry>
    <title>37: More kiloslogs</title>
-   <link href="https://notes.busterbenson.com/2013/05/28/more-kiloslogs"/>
+   <link href="http://localhost:4000/2013/05/28/more-kiloslogs"/>
    <updated>2013-05-28T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2013/05/28/more-kiloslogs</id>
+   <id>http://localhost:4000/2013/05/28/more-kiloslogs</id>
    <content type="html">&lt;p&gt;Every year of my 30s has had some kind of birthday reflection and a motto. Here are the ones from the past:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -2818,9 +2818,9 @@ As Syllable from Sound—&lt;/p&gt;
  
  <entry>
    <title>Celebrate your next death day</title>
-   <link href="https://notes.busterbenson.com/2013/05/17/celebrate-your-next-death-day"/>
+   <link href="http://localhost:4000/2013/05/17/celebrate-your-next-death-day"/>
    <updated>2013-05-17T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2013/05/17/celebrate-your-next-death-day</id>
+   <id>http://localhost:4000/2013/05/17/celebrate-your-next-death-day</id>
    <content type="html">&lt;p&gt;Your birthday is the number of years you’ve been alive (obviously).&lt;/p&gt;
 
 &lt;p&gt;But what if we also celebrated the number of years we estimate to have left?&lt;/p&gt;
@@ -2837,9 +2837,9 @@ As Syllable from Sound—&lt;/p&gt;
  
  <entry>
    <title>If I lived 100 times</title>
-   <link href="https://notes.busterbenson.com/2013/05/04/if-i-lived-100-times"/>
+   <link href="http://localhost:4000/2013/05/04/if-i-lived-100-times"/>
    <updated>2013-05-04T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2013/05/04/if-i-lived-100-times</id>
+   <id>http://localhost:4000/2013/05/04/if-i-lived-100-times</id>
    <content type="html">&lt;p&gt;I just did something sort of morbid.&lt;/p&gt;
 
 &lt;p&gt;Using &lt;a href=&quot;http://www.cdc.gov/nchs/fastats/lifexpec.htm&quot;&gt;the most recent life expectancy data&lt;/a&gt; published by the CDC, I ran the numbers for my current age and gender to find the distribution of my year of death if I lived 100 times.&lt;/p&gt;
@@ -2889,9 +2889,9 @@ I want to know more. What happened to the Buster that died before age 40? Was it
  
  <entry>
    <title>1 metric kiloslog</title>
-   <link href="https://notes.busterbenson.com/2013/04/22/one-metric-kiloslog"/>
+   <link href="http://localhost:4000/2013/04/22/one-metric-kiloslog"/>
    <updated>2013-04-22T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2013/04/22/one-metric-kiloslog</id>
+   <id>http://localhost:4000/2013/04/22/one-metric-kiloslog</id>
    <content type="html">&lt;p&gt;I respect BJ Fogg and his work around &lt;a href=&quot;http://tinyhabits.com/&quot;&gt;tiny habits&lt;/a&gt;, but lately I’ve found my own opinions (granted, I’m no academic) diverging from his quite a bit.&lt;/p&gt;
 
 &lt;p&gt;All of my thinking about behavior change lately has ended up re-affirming my conviction that &lt;a href=&quot;http://wayoftheduck.com/huge-habits&quot;&gt;habits aren’t tiny things&lt;/a&gt;. They’re huge. If you could do a brain scan on someone and squirt food coloring into their ear that highlighted the neuronal pathways that supported, say, their exercise habit, my guess is that you’d see a complex and fragile structure.&lt;/p&gt;
@@ -2945,9 +2945,9 @@ I want to know more. What happened to the Buster that died before age 40? Was it
  
  <entry>
    <title>Three cognitive biases walk into a bar...</title>
-   <link href="https://notes.busterbenson.com/2013/04/07/three-cognitive-biases-walk-into-a-bar"/>
+   <link href="http://localhost:4000/2013/04/07/three-cognitive-biases-walk-into-a-bar"/>
    <updated>2013-04-07T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2013/04/07/three-cognitive-biases-walk-into-a-bar</id>
+   <id>http://localhost:4000/2013/04/07/three-cognitive-biases-walk-into-a-bar</id>
    <content type="html">&lt;p&gt;Most people are loss averse. Meaning that the pain of losing something is felt about twice as strongly as the pleasure of gaining something.&lt;/p&gt;
 
 &lt;p&gt;Most people are also fairly bad at intuitively understanding risk.  We understand certainty (0% and 100%) but tend to get everything in between muddled up. Some people err on the downside (thinking things are less likely than they really are) and some people err on the upside (thinking things are more likely than they really are).&lt;/p&gt;
@@ -2974,9 +2974,9 @@ I want to know more. What happened to the Buster that died before age 40? Was it
  
  <entry>
    <title>Too simple, cheap, easy, obvious bias</title>
-   <link href="https://notes.busterbenson.com/2013/03/20/too-simple-cheap-easy-obvious-bias"/>
+   <link href="http://localhost:4000/2013/03/20/too-simple-cheap-easy-obvious-bias"/>
    <updated>2013-03-20T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2013/03/20/too-simple-cheap-easy-obvious-bias</id>
+   <id>http://localhost:4000/2013/03/20/too-simple-cheap-easy-obvious-bias</id>
    <content type="html">&lt;blockquote&gt;
   &lt;p&gt;The bias against things anyone can have at any time, that nobody can make much money from, because they seem too easy, too obvious, too simple, too cheap. The bias against the following solutions because nobody is marketing or can market them to you for very much profit:&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -3009,9 +3009,9 @@ I want to know more. What happened to the Buster that died before age 40? Was it
  
  <entry>
    <title>How to change yourself (v0.1)</title>
-   <link href="https://notes.busterbenson.com/2013/03/18/how-to-change-yourself-v1"/>
+   <link href="http://localhost:4000/2013/03/18/how-to-change-yourself-v1"/>
    <updated>2013-03-18T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2013/03/18/how-to-change-yourself-v1</id>
+   <id>http://localhost:4000/2013/03/18/how-to-change-yourself-v1</id>
    <content type="html">&lt;p&gt;There are many other ways to change, but this is the one that is my current best/favorite theory.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; Complete the sentence: “I am an aspiring &lt;strong&gt;__&lt;/strong&gt;.” Try to find the most succinct identity that represents the difference between who you are now and who you want to be. It doesn’t have to explain why, or how, you will get there. Just put a flag down.&lt;/p&gt;
@@ -3058,9 +3058,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>Are your habits tiny or huge?</title>
-   <link href="https://notes.busterbenson.com/2013/03/13/are-your-habits-tiny-or-huge"/>
+   <link href="http://localhost:4000/2013/03/13/are-your-habits-tiny-or-huge"/>
    <updated>2013-03-13T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2013/03/13/are-your-habits-tiny-or-huge</id>
+   <id>http://localhost:4000/2013/03/13/are-your-habits-tiny-or-huge</id>
    <content type="html">&lt;p&gt;Confession. I don’t think habits are tiny things.&lt;/p&gt;
 
 &lt;p&gt;I think they’re huge things, convoluted twisting structures in our brains. Traversing all the way from triggers and automatic responses deep in the subconscious, to routines, to circumstances, to goals and values, and all the way up to our sense of selves and our identity in the neocortex.&lt;/p&gt;
@@ -3101,9 +3101,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>The game of life</title>
-   <link href="https://notes.busterbenson.com/2013/03/05/the-game-of-life"/>
+   <link href="http://localhost:4000/2013/03/05/the-game-of-life"/>
    <updated>2013-03-05T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2013/03/05/the-game-of-life</id>
+   <id>http://localhost:4000/2013/03/05/the-game-of-life</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;https://hoffbauer.us/blog/wp-content/uploads/2012/10/GameOfLife1.png&quot; alt=&quot;The Game of Life&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;A while ago I tweeted:&lt;/p&gt;
@@ -3133,9 +3133,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>My two brains</title>
-   <link href="https://notes.busterbenson.com/2013/03/03/my-two-brains"/>
+   <link href="http://localhost:4000/2013/03/03/my-two-brains"/>
    <updated>2013-03-03T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2013/03/03/my-two-brains</id>
+   <id>http://localhost:4000/2013/03/03/my-two-brains</id>
    <content type="html">&lt;p&gt;There’s the lizard brain, the old brain.&lt;/p&gt;
 
 &lt;p&gt;And there’s the new brain, the neocortex, the pattern-finder that some people correlate with rationality.&lt;/p&gt;
@@ -3190,9 +3190,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>Our filters</title>
-   <link href="https://notes.busterbenson.com/2013/02/23/our-filters"/>
+   <link href="http://localhost:4000/2013/02/23/our-filters"/>
    <updated>2013-02-23T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2013/02/23/our-filters</id>
+   <id>http://localhost:4000/2013/02/23/our-filters</id>
    <content type="html">&lt;p&gt;Photo filters are quite popular these days. They’re cool because they add personality to a photo with minimal work.&lt;/p&gt;
 
 &lt;p&gt;It turns out that OUR PERSONALITIES are also the output of a number of personal distorting filters applied to the universe.&lt;/p&gt;
@@ -3229,9 +3229,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>The long slog</title>
-   <link href="https://notes.busterbenson.com/2013/02/19/the-long-slog"/>
+   <link href="http://localhost:4000/2013/02/19/the-long-slog"/>
    <updated>2013-02-19T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2013/02/19/the-long-slog</id>
+   <id>http://localhost:4000/2013/02/19/the-long-slog</id>
    <content type="html">&lt;p&gt;There are different modes of “work”. Here are a few of them.&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -3273,9 +3273,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>$1 for you (conclusion)</title>
-   <link href="https://notes.busterbenson.com/2013/01/28/one-dollar-conclusion"/>
+   <link href="http://localhost:4000/2013/01/28/one-dollar-conclusion"/>
    <updated>2013-01-28T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2013/01/28/one-dollar-conclusion</id>
+   <id>http://localhost:4000/2013/01/28/one-dollar-conclusion</id>
    <content type="html">&lt;p&gt;Last September I asked people to call me out whenever I complained. The first person to call me out would get &lt;a href=&quot;http://buster.svbtle.com/1-for-you&quot;&gt;$1&lt;/a&gt;. I probably got called out at least 100 times, and appreciate all of the help from everyone who did so.&lt;/p&gt;
 
 &lt;p&gt;It was pretty great as a way of crowdsourcing my own mindfulness around how much I complain (which wasn’t much, but definitely more than I had originally thought).&lt;/p&gt;
@@ -3294,9 +3294,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>Is this your best possible work?</title>
-   <link href="https://notes.busterbenson.com/2013/01/23/is-this-your-best-possible-work"/>
+   <link href="http://localhost:4000/2013/01/23/is-this-your-best-possible-work"/>
    <updated>2013-01-23T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2013/01/23/is-this-your-best-possible-work</id>
+   <id>http://localhost:4000/2013/01/23/is-this-your-best-possible-work</id>
    <content type="html">&lt;p&gt;When it comes to your meaningful productivity and creativity, this is the only question that really matters.&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -3313,9 +3313,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>Starter kit for a solar-powered self-replicating 3D printer that can make enough money to buy its own materials, pick them up, and print children when it feels ready.</title>
-   <link href="https://notes.busterbenson.com/2013/01/04/starter-kit"/>
+   <link href="http://localhost:4000/2013/01/04/starter-kit"/>
    <updated>2013-01-04T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2013/01/04/starter-kit</id>
+   <id>http://localhost:4000/2013/01/04/starter-kit</id>
    <content type="html">&lt;p&gt;1 &lt;a href=&quot;http://store.makerbot.com/3d-printers.html&quot;&gt;3D printer&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;1 &lt;a href=&quot;http://www.cnn.com/2012/09/25/tech/innovation/self-driving-car-california/index.html&quot;&gt;self-driving mini-car&lt;/a&gt; to pick up parts at the store.&lt;/p&gt;
@@ -3336,9 +3336,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>My 2013 resolution: memento morning</title>
-   <link href="https://notes.busterbenson.com/2012/12/31/my-2013-resolution"/>
+   <link href="http://localhost:4000/2012/12/31/my-2013-resolution"/>
    <updated>2012-12-31T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2012/12/31/my-2013-resolution</id>
+   <id>http://localhost:4000/2012/12/31/my-2013-resolution</id>
    <content type="html">&lt;p&gt;My resolution for 2013:&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -3355,9 +3355,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>Rabbit Rabbit Resolution Accountability Squad</title>
-   <link href="https://notes.busterbenson.com/2012/12/28/rabbit-rabbit"/>
+   <link href="http://localhost:4000/2012/12/28/rabbit-rabbit"/>
    <updated>2012-12-28T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2012/12/28/rabbit-rabbit</id>
+   <id>http://localhost:4000/2012/12/28/rabbit-rabbit</id>
    <content type="html">&lt;p&gt;Want to try something fun and different for new year’s resolutions this year?&lt;/p&gt;
 
 &lt;h3 id=&quot;1-make-only-one-resolution&quot;&gt;1. Make only ONE resolution.&lt;/h3&gt;
@@ -3409,9 +3409,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>&quot;Anything is possible.&quot;</title>
-   <link href="https://notes.busterbenson.com/2012/12/08/anything-is-possible"/>
+   <link href="http://localhost:4000/2012/12/08/anything-is-possible"/>
    <updated>2012-12-08T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2012/12/08/anything-is-possible</id>
+   <id>http://localhost:4000/2012/12/08/anything-is-possible</id>
    <content type="html">&lt;p&gt;Great straight forward explanation about &lt;a href=&quot;http://charlesduhigg.com/how-habits-work/&quot;&gt;how habits work&lt;/a&gt; from the appendix of Charles Duhigg’s book, &lt;a href=&quot;http://charlesduhigg.com/the-power-of-habit/&quot;&gt;The Power of Habit&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;It’s simple:&lt;/p&gt;
@@ -3464,9 +3464,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>Codex Vitae</title>
-   <link href="https://notes.busterbenson.com/2012/11/28/codex-vitae"/>
+   <link href="http://localhost:4000/2012/11/28/codex-vitae"/>
    <updated>2012-11-28T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2012/11/28/codex-vitae</id>
+   <id>http://localhost:4000/2012/11/28/codex-vitae</id>
    <content type="html">&lt;p&gt;Just finished Robin Sloan’s very fun book, &lt;a href=&quot;http://www.amazon.com/gp/product/B008FPOIT6/ref=as_li_ss_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=390957&amp;amp;creativeASIN=B008FPOIT6&amp;amp;linkCode=as2&amp;amp;tag=mockerybird&quot;&gt;Mr. Penumbra’s 24-Hour Bookstore: A Novel&lt;/a&gt;. Here are my &lt;a href=&quot;https://kindle.amazon.com/your_highlights_and_notes/B008FPOIT6&quot;&gt;Kindle highlights&lt;/a&gt; on it.&lt;/p&gt;
 
 &lt;p&gt;One of my favorite parts of the book was the idea of a Codex Vitae:&lt;/p&gt;
@@ -3499,9 +3499,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>Disconnect Saturdays</title>
-   <link href="https://notes.busterbenson.com/2012/11/18/disconnect-saturdays"/>
+   <link href="http://localhost:4000/2012/11/18/disconnect-saturdays"/>
    <updated>2012-11-18T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2012/11/18/disconnect-saturdays</id>
+   <id>http://localhost:4000/2012/11/18/disconnect-saturdays</id>
    <content type="html">&lt;p&gt;The challenge.&lt;/p&gt;
 
 &lt;ol&gt;
@@ -3518,9 +3518,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>A/B fit</title>
-   <link href="https://notes.busterbenson.com/2012/11/18/ab-fit"/>
+   <link href="http://localhost:4000/2012/11/18/ab-fit"/>
    <updated>2012-11-18T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2012/11/18/ab-fit</id>
+   <id>http://localhost:4000/2012/11/18/ab-fit</id>
    <content type="html">&lt;p&gt;&lt;strong&gt;Solution/problem fit:&lt;/strong&gt; A solution is a strategy that fits the needs of a specific problem. If a strategy technically works, but is too expensive, or too slow, for the specific problem, it still won’t fit and the problem will not be “solved”.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://www.startup-marketing.com/the-startup-pyramid/&quot;&gt;&lt;img src=&quot;/images/pieces/ab-fit.png&quot; width=&quot;500&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -3577,9 +3577,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>What I'm tracking now and why</title>
-   <link href="https://notes.busterbenson.com/2012/11/04/what-im-tracking-now-and-why"/>
+   <link href="http://localhost:4000/2012/11/04/what-im-tracking-now-and-why"/>
    <updated>2012-11-04T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2012/11/04/what-im-tracking-now-and-why</id>
+   <id>http://localhost:4000/2012/11/04/what-im-tracking-now-and-why</id>
    <content type="html">&lt;p&gt;It’s been about 3 years since &lt;a href=&quot;/2007/02/07/history-of-my-self-tracking&quot;&gt;my last update&lt;/a&gt; on my self-tracking setup. I figured I should write about it again since I’ve recently found a system that works really well for me, and is simple enough for anyone to do.&lt;/p&gt;
 
 &lt;h2 id=&quot;why-do-i-track-things-about-my-life&quot;&gt;Why do I track things about my life?&lt;/h2&gt;
@@ -3655,9 +3655,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>Zoomed out</title>
-   <link href="https://notes.busterbenson.com/2012/10/30/zoomed-out"/>
+   <link href="http://localhost:4000/2012/10/30/zoomed-out"/>
    <updated>2012-10-30T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2012/10/30/zoomed-out</id>
+   <id>http://localhost:4000/2012/10/30/zoomed-out</id>
    <content type="html">&lt;p&gt;My father passed away 19 years ago today.&lt;/p&gt;
 
 &lt;p&gt;Hurricane Sandy hit the east coast hard yesterday.&lt;/p&gt;
@@ -3678,9 +3678,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>Behavior change is belief change</title>
-   <link href="https://notes.busterbenson.com/2012/10/10/behavior-change-is-belief-change"/>
+   <link href="http://localhost:4000/2012/10/10/behavior-change-is-belief-change"/>
    <updated>2012-10-10T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2012/10/10/behavior-change-is-belief-change</id>
+   <id>http://localhost:4000/2012/10/10/behavior-change-is-belief-change</id>
    <content type="html">&lt;p&gt;Every behavior change fanatic out there loves this quote. Probably has it on their bathroom mirror.&lt;/p&gt;
 
 &lt;p&gt;The formula is so simple.&lt;/p&gt;
@@ -3791,9 +3791,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>Who you are vs who you want to be</title>
-   <link href="https://notes.busterbenson.com/2012/10/06/who-you-are-vs-who-you-want-to-be"/>
+   <link href="http://localhost:4000/2012/10/06/who-you-are-vs-who-you-want-to-be"/>
    <updated>2012-10-06T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2012/10/06/who-you-are-vs-who-you-want-to-be</id>
+   <id>http://localhost:4000/2012/10/06/who-you-are-vs-who-you-want-to-be</id>
    <content type="html">&lt;blockquote&gt;
   &lt;p&gt;To accept who you are seems to suggest that there’s no reason to gamble it all on who you want to be.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -3818,9 +3818,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>Look, look, look</title>
-   <link href="https://notes.busterbenson.com/2012/10/05/look-look-look"/>
+   <link href="http://localhost:4000/2012/10/05/look-look-look"/>
    <updated>2012-10-05T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2012/10/05/look-look-look</id>
+   <id>http://localhost:4000/2012/10/05/look-look-look</id>
    <content type="html">&lt;p&gt;One of the things I love on the internet is this tap-essay manifesto slash free iPhone story app by Robin Sloan: &lt;a href=&quot;http://robinsloan.com/fish&quot;&gt;Fish&lt;/a&gt;. I return to it pretty often.&lt;/p&gt;
 
 &lt;p&gt;The premise is that we have a desire to return repeatedly to the things that we love. And that, on the internet, the deluge of information overload sometimes discourages returning much to individual things. Instead, we collect containers of things, and curations of things, because they’re always new.&lt;/p&gt;
@@ -3895,9 +3895,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>$1 for you</title>
-   <link href="https://notes.busterbenson.com/2012/09/26/one-dollar-for-you"/>
+   <link href="http://localhost:4000/2012/09/26/one-dollar-for-you"/>
    <updated>2012-09-26T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2012/09/26/one-dollar-for-you</id>
+   <id>http://localhost:4000/2012/09/26/one-dollar-for-you</id>
    <content type="html">&lt;p&gt;I want to change some of my behaviors. What else is new, right? (I’ll tell you what is new!) I have a &lt;strong&gt;new strategy&lt;/strong&gt; for getting through my habit-gimmick-resistant brain.&lt;/p&gt;
 
 &lt;p&gt;Between now and the end of October, I’ll give $1 to the first person who calls me out at any time if they witness me doing any of the following:&lt;/p&gt;
@@ -3923,9 +3923,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>The &quot;I don't want to&quot; habit</title>
-   <link href="https://notes.busterbenson.com/2012/09/22/the-i-dont-want-to-habit"/>
+   <link href="http://localhost:4000/2012/09/22/the-i-dont-want-to-habit"/>
    <updated>2012-09-22T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2012/09/22/the-i-dont-want-to-habit</id>
+   <id>http://localhost:4000/2012/09/22/the-i-dont-want-to-habit</id>
    <content type="html">&lt;p&gt;If there is such a thing as “one habit that rules them all” it might be the habit of overriding the voice in my head that says, in the moment, that I don’t want to do something when, in theory, I actually &lt;strong&gt;do&lt;/strong&gt; want to do it.&lt;/p&gt;
 
 &lt;p&gt;For those who are really interested in getting to the bottom of habits and behavior change, why not face this conflict head on and turn the act of overriding this voice, itself, into a habit?&lt;/p&gt;
@@ -3948,9 +3948,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>Tweet fearlessly</title>
-   <link href="https://notes.busterbenson.com/2012/09/16/tweet-fearlessly"/>
+   <link href="http://localhost:4000/2012/09/16/tweet-fearlessly"/>
    <updated>2012-09-16T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2012/09/16/tweet-fearlessly</id>
+   <id>http://localhost:4000/2012/09/16/tweet-fearlessly</id>
    <content type="html">&lt;p&gt;I remember when we all blogged like nobody was watching, back in 1998-2003ish. Diaryland -&amp;gt; Livejournal -&amp;gt; Movable Type -&amp;gt; Typepad -&amp;gt; Wordpress -&amp;gt; write my own -&amp;gt; back to Livejournal (yeah, I still use it).  I learned a whole lot about Kellianne by reading through 5 years of public Livejournal (she turned them all private after I told her I had read them, though). There were a few big public deals where people got fired or embarrassed by their open writing, and things slowly clamped down and people started acting safer in their writing (and less interesting, in my opinion) (I’m definitely guilty of this too).&lt;/p&gt;
 
 &lt;p&gt;I also remember when we used to tweet pretty much anything.  Lunches, crushes, opinions of your boss, deep personal thoughts. Maybe not as freely as the blogging was, but still pretty open. Back when nobody was really watching on the Internet.&lt;/p&gt;
@@ -3988,9 +3988,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>The half-plants diet</title>
-   <link href="https://notes.busterbenson.com/2012/08/17/the-half-plants-diet"/>
+   <link href="http://localhost:4000/2012/08/17/the-half-plants-diet"/>
    <updated>2012-08-17T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2012/08/17/the-half-plants-diet</id>
+   <id>http://localhost:4000/2012/08/17/the-half-plants-diet</id>
    <content type="html">&lt;p&gt;Or, The Blackjack Diet&lt;/p&gt;
 
 &lt;p&gt;I’ve been trying to reduce everything I know about health, and behavior change, and habits, into their simplest possible implementations.  Here’s one I’ve been kicking around that’s eating related and I’d love your feedback on it (especially if you think you’d want to try to do it with me).&lt;/p&gt;
@@ -4035,9 +4035,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>A friendly safety reminder</title>
-   <link href="https://notes.busterbenson.com/2012/08/17/a-friendly-safety-reminder"/>
+   <link href="http://localhost:4000/2012/08/17/a-friendly-safety-reminder"/>
    <updated>2012-08-17T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2012/08/17/a-friendly-safety-reminder</id>
+   <id>http://localhost:4000/2012/08/17/a-friendly-safety-reminder</id>
    <content type="html">&lt;p&gt;Are your tweets safe? No.&lt;/p&gt;
 
 &lt;p&gt;Are your photos safe? No.&lt;/p&gt;
@@ -4088,9 +4088,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>Why 'Just Do It' is bullshit</title>
-   <link href="https://notes.busterbenson.com/2012/07/31/why-just-do-it-is-bullshit"/>
+   <link href="http://localhost:4000/2012/07/31/why-just-do-it-is-bullshit"/>
    <updated>2012-07-31T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2012/07/31/why-just-do-it-is-bullshit</id>
+   <id>http://localhost:4000/2012/07/31/why-just-do-it-is-bullshit</id>
    <content type="html">&lt;blockquote&gt;
   &lt;p&gt;I wouldn’t say anything is impossible. I think that everything is possible as long as you put your mind to it and put the work and time into it.
 —  Michael Phelps&lt;/p&gt;
@@ -4150,9 +4150,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>Everything I (currently) know about starting and keeping habits in one long manifesto</title>
-   <link href="https://notes.busterbenson.com/2012/07/25/everything-i-currently-know-about-habits"/>
+   <link href="http://localhost:4000/2012/07/25/everything-i-currently-know-about-habits"/>
    <updated>2012-07-25T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2012/07/25/everything-i-currently-know-about-habits</id>
+   <id>http://localhost:4000/2012/07/25/everything-i-currently-know-about-habits</id>
    <content type="html">&lt;p&gt;&lt;em&gt;Cross-posted on the &lt;a href=&quot;http://www.boldacademy.com/fail-proof-your-habit-decisions/&quot;&gt;Bold Academy Blog&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;I had the opportunity and honor of speaking at the first ever Bold Academy in Boulder, Colorado the other day. I have been trying to distill many of the ideas we’ve experimented with and learned about in Habit Labs into something that is sharable, and I used this 3-hour talk/workshop as a way to test a first draft of some of these thoughts and got some really great feedback from the group.&lt;/p&gt;
@@ -4281,9 +4281,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>A duck bears no grudges</title>
-   <link href="https://notes.busterbenson.com/2012/07/11/a-duck-bears-no-grudges"/>
+   <link href="http://localhost:4000/2012/07/11/a-duck-bears-no-grudges"/>
    <updated>2012-07-11T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2012/07/11/a-duck-bears-no-grudges</id>
+   <id>http://localhost:4000/2012/07/11/a-duck-bears-no-grudges</id>
    <content type="html">&lt;p&gt;Habit Labs is ending soon, the third company I’ve started.&lt;/p&gt;
 
 &lt;p&gt;The first one, The Robot Co-op, still lives on in some form or another, with 43things.com (and myriad other offshoots).  Its question: what do you want to do with your life?  Currently owned by Amazon.&lt;/p&gt;
@@ -4326,9 +4326,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>36: Talk it out</title>
-   <link href="https://notes.busterbenson.com/2012/05/28/talk-it-out"/>
+   <link href="http://localhost:4000/2012/05/28/talk-it-out"/>
    <updated>2012-05-28T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2012/05/28/talk-it-out</id>
+   <id>http://localhost:4000/2012/05/28/talk-it-out</id>
    <content type="html">&lt;p&gt;Here’s what I had to say about &lt;a href=&quot;/blog/2011/05-28-love-the-struggle&quot;&gt;turning 35&lt;/a&gt; last year.  The motto for the year was more presciently chosen than I could’ve known at the time.  &lt;strong&gt;Love the Struggle&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Every year I chose a theme for the year.  Here are a few of the previous:&lt;/p&gt;
@@ -4391,9 +4391,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>What I’ve learned taking photos every day at 8:36 p.m.</title>
-   <link href="https://notes.busterbenson.com/2011/06/11/what-ive-learned-taking-photos-every-day-836pm"/>
+   <link href="http://localhost:4000/2011/06/11/what-ive-learned-taking-photos-every-day-836pm"/>
    <updated>2011-06-11T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2011/06/11/what-ive-learned-taking-photos-every-day-836pm</id>
+   <id>http://localhost:4000/2011/06/11/what-ive-learned-taking-photos-every-day-836pm</id>
    <content type="html">&lt;p&gt;On January 4th, 2006, a Wednesday, I wrote this in my LiveJournal (long live LiveJournal!):&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -4457,9 +4457,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>35: Love the struggle</title>
-   <link href="https://notes.busterbenson.com/2011/05/28/love-the-struggle"/>
+   <link href="http://localhost:4000/2011/05/28/love-the-struggle"/>
    <updated>2011-05-28T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2011/05/28/love-the-struggle</id>
+   <id>http://localhost:4000/2011/05/28/love-the-struggle</id>
    <content type="html">&lt;p&gt;I’m 35! Luckily, the roller-coasters of entrepreneurship and parenthood don’t really let things drift accidentally out of perspective, only to be thrust upon one at yearly anniversaries. The sense of mortality, obscurity, youth vs age, and passing opportunity never get taken much for granted these days… I have the luxury of insomnia and feeling like a grain of sand in a big universe on a pretty much daily basis. And I feel exactly 35 right now. Honestly, it feels great. Bring it.&lt;/p&gt;
 
 &lt;p&gt;My tradition since turning 30 has been to come up with a motto for the year. Previous years include: &lt;a href=&quot;/blog/2006/05-31-higher-highs-lower-lows&quot;&gt;Higher Highs and Lower Lows&lt;/a&gt;, &lt;a href=&quot;/blog/2007/05-29-double-down&quot;&gt;Double Down&lt;/a&gt;, &lt;a href=&quot;/blog/2008/05-27-no-problem&quot;&gt;No Problem&lt;/a&gt;, &lt;a href=&quot;/blog/2009/05-28-frugal-to-the-max&quot;&gt;Frugal to the Max&lt;/a&gt;, and last year was &lt;a href=&quot;/blog/2010/05-28-cultivate-the-core&quot;&gt;Cultivate the Core&lt;/a&gt;. They’ve all had personal meaning to me, and more than anything capture my frame of mind at the moment.&lt;/p&gt;
@@ -4525,18 +4525,18 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>Why Wasn't I Consulted?</title>
-   <link href="https://notes.busterbenson.com/2011/01/06/why-wasnt-i-consulted"/>
+   <link href="http://localhost:4000/2011/01/06/why-wasnt-i-consulted"/>
    <updated>2011-01-06T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2011/01/06/why-wasnt-i-consulted</id>
+   <id>http://localhost:4000/2011/01/06/why-wasnt-i-consulted</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>34: Cultivate the core</title>
-   <link href="https://notes.busterbenson.com/2010/05/28/cultivate-the-core"/>
+   <link href="http://localhost:4000/2010/05/28/cultivate-the-core"/>
    <updated>2010-05-28T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2010/05/28/cultivate-the-core</id>
+   <id>http://localhost:4000/2010/05/28/cultivate-the-core</id>
    <content type="html">&lt;p&gt;&lt;em&gt;This one was on a blog that got deleted. Found a copy of the text and archiving it here.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;When I turned 30, my birthday motto was &lt;a href=&quot;/blog/2006/05-31-higher-highs-lower-lows&quot;&gt;Higher highs and lower lows&lt;/a&gt;.&lt;/p&gt;
@@ -4597,9 +4597,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>33: Frugal to the max</title>
-   <link href="https://notes.busterbenson.com/2009/05/28/frugal-to-the-max"/>
+   <link href="http://localhost:4000/2009/05/28/frugal-to-the-max"/>
    <updated>2009-05-28T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2009/05/28/frugal-to-the-max</id>
+   <id>http://localhost:4000/2009/05/28/frugal-to-the-max</id>
    <content type="html">&lt;p&gt;&lt;em&gt;This one was on a blog that got deleted. Found a copy of the text and archiving it here.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;When I turned 30, my birthday motto was &lt;a href=&quot;/blog/2006/05-31-higher-highs-lower-lows&quot;&gt;Higher highs and lower lows&lt;/a&gt;.&lt;/p&gt;
@@ -4622,9 +4622,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>32: No problem</title>
-   <link href="https://notes.busterbenson.com/2008/05/27/no-problem"/>
+   <link href="http://localhost:4000/2008/05/27/no-problem"/>
    <updated>2008-05-27T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2008/05/27/no-problem</id>
+   <id>http://localhost:4000/2008/05/27/no-problem</id>
    <content type="html">&lt;p&gt;The theme of my 30th birthday, and the following year, was &lt;a href=&quot;/blog/2006/05-31-higher-highs-lower-lows&quot;&gt;Higher highs and lower lows&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The theme of my 31st birthday, and the following year, was &lt;a href=&quot;/blog/2007/05-29-double-down&quot;&gt;Double down&lt;/a&gt;. Double down on love, on friends, and on my projects.&lt;/p&gt;
@@ -4749,9 +4749,9 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
  
  <entry>
    <title>31: Double down</title>
-   <link href="https://notes.busterbenson.com/2007/05/29/double-down"/>
+   <link href="http://localhost:4000/2007/05/29/double-down"/>
    <updated>2007-05-29T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2007/05/29/double-down</id>
+   <id>http://localhost:4000/2007/05/29/double-down</id>
    <content type="html">&lt;p&gt;&lt;strong&gt;I had the best birthday weekend ever.&lt;/strong&gt;  All of you are amazing.  I love you.  Best friends ever, best ideas ever, best dance moves ever, best three and four-layer pyramids ever, best falling over ever, best eyeliner ever, best champagne ever, best ass slapping ever, best tongue ever, best cheerleading ever, best long distance romance ever, best fortress of pillows ever, best sparkly glasses ever, best blasted broccoli ever, best donuts in a bag ever, best universe of possibilities ever, best zest ever, best prom photoset ever, best photographers ever, best everything in the universe ever really.  I really do want to double down on friends, love, and becoming a better, kinder, sillier, person.  Life could be as simple as that I think.&lt;/p&gt;
 
 &lt;p&gt;More pictures from Andy, Kristen, and the photobooth here:&lt;/p&gt;
@@ -4765,9 +4765,9 @@ http://flickr.com/photos/mcleodphotobooth/sets/72157600283731292/with/517552968/
  
  <entry>
    <title>History of my self-tracking</title>
-   <link href="https://notes.busterbenson.com/2007/02/07/history-of-my-self-tracking"/>
+   <link href="http://localhost:4000/2007/02/07/history-of-my-self-tracking"/>
    <updated>2007-02-07T00:00:00-08:00</updated>
-   <id>https://notes.busterbenson.com/2007/02/07/history-of-my-self-tracking</id>
+   <id>http://localhost:4000/2007/02/07/history-of-my-self-tracking</id>
    <content type="html">&lt;p&gt;&lt;em&gt;The Way Back Machine has &lt;a href=&quot;https://web.archive.org/web/20130828011151/http://enjoymentland.com/2009/02/07/history-of-my-self-tracking/&quot;&gt;a copy of this original post&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;I have been interested in self-tracking ever since I started posting links to the Internet in 2002, when I attached a + or a – to each link depending on its impact on my morale.  It turns out, whatever makes me want to post a link to something also tends to impact my morale in a positive way, and so my first Morale-O-Meter almost always showed my morale as 10 (tracking the last 10 links posted).&lt;/p&gt;
@@ -4820,9 +4820,9 @@ http://flickr.com/photos/mcleodphotobooth/sets/72157600283731292/with/517552968/
  
  <entry>
    <title>30: Higher highs and lower lows</title>
-   <link href="https://notes.busterbenson.com/2006/05/31/higher-highs-lower-lows"/>
+   <link href="http://localhost:4000/2006/05/31/higher-highs-lower-lows"/>
    <updated>2006-05-31T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2006/05/31/higher-highs-lower-lows</id>
+   <id>http://localhost:4000/2006/05/31/higher-highs-lower-lows</id>
    <content type="html">&lt;p&gt;I am having such a great weekend (okay, it’s Wednesday but I took Friday, Monday, and Tuesday off and feel like the lines between weeks and ends are only a formality lately anyway… all work is play and playing right is work). With everyone in town (lele, terrajen, enmicropedias and Michelle, Giao, and many others for LBJ and Rick’s wedding) and Seattle people coming out of the winter woodwork I think this weekend is going to serve as a launching pad of ideas and actions that will sail us all through the next couple years at least.&lt;/p&gt;
 
 &lt;p&gt;Thanks to Daniel and Reggie for inventing some awesome music on the spot (the audio of which was captured by Josh S). Thanks to Vladimir the Polar Bear who gave a great motivational speech (SO FAR!) and sang some wonderful songs (including an improved song about probability and foxes… ideas that she got from the audience) (did anyone catch this on audio or video?). And THANK YOU to everyone who gave 1-minute speeches or subjected themselves to interviews (I want to make a list of everyone that spoke on stage at all, I’ll post the full list later) or baked bacon cakes (thanks mizrobot!) or baked dump cakes (thanks yeswad!) or ate easy cheese or helped with the raffle or wore tuxes or wore wigs or modelled the t-shirts or took pictures or drowned in paddle boats on the way or drank drinks or simply laughed hysterically and cried uncontrollably at the higher highs and the lower lows. Life is uncanny and magical and everyone can help make it even more so for everybody else. I had a wonderful time and hope you did too.&lt;/p&gt;
@@ -4833,9 +4833,9 @@ http://flickr.com/photos/mcleodphotobooth/sets/72157600283731292/with/517552968/
  
  <entry>
    <title>My first book, Man Versus Himself</title>
-   <link href="https://notes.busterbenson.com/2003/08/05/man-versus-himself"/>
+   <link href="http://localhost:4000/2003/08/05/man-versus-himself"/>
    <updated>2003-08-05T00:00:00-07:00</updated>
-   <id>https://notes.busterbenson.com/2003/08/05/man-versus-himself</id>
+   <id>http://localhost:4000/2003/08/05/man-versus-himself</id>
    <content type="html">
 &lt;div class=&quot;image &quot;&gt;&lt;img src=&quot;/assets/images/pieces/man-versus-himself-333x499.jpg&quot; alt=&quot;Book cover&quot; caption=&quot;Book cover&quot; width=&quot;&quot; srcset=&quot;/assets/images/pieces/man-versus-himself-333x499.jpg 1x, /assets/images/pieces/man-versus-himself-333x499.jpg 2x, /assets/images/pieces/man-versus-himself-333x499.jpg 3x&quot; /&gt;&lt;/div&gt;
 

@@ -8,11 +8,11 @@ layout: default
     <h2 class="subtitle">{{ page.one_liner }}</h2>
   {% endif %}
   {% if page.link and page.link != blank %}
-  	<small>The original post is here: <a href="{{ page.link }}">{{ page.link }}</a></small>
+  	<small>The original post is here: <a href="{{ page.link }}">{{ page.link | slice: 0, 40 }}...</a></small>
   {% endif %}
   
   {% if page.image and page.image != blank %}
-  	{% include img.html src=page.image class="featured-image" alt=page.title width="100%" %}
+  	{% include img.html src=page.image class="featured-image" alt=page.title width="500" %}
   {% endif %}
 
   {{ content }}
@@ -24,7 +24,7 @@ layout: default
     	{% endfor %}
     {% endif %}
     {% if page.link and page.link != blank %}
-      &middot; <a href="{{ page.link }}">The original post</a>
+      &middot; <a href="{{ page.link }}">Original post</a>
     {% endif %}
 
   </div>
