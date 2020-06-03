@@ -4,14 +4,23 @@ layout: default
 
 <section class="post">
   <h1 class="title">{{ page.title }}</h1>
+  {% if page.link and page.link != blank %}
+  	<small>The original post is here: <a href="{{ page.link }}">{{ page.link }}</a></small>
+  {% endif %}
   
   {% if page.image and page.image != blank %}
   	{% include img.html src=page.image class="featured-image" alt=page.title %}
   {% endif %}
 
   {{ content }}
-  <span class="meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time> &middot; {% for pile in page.piles %}
-    <a href="/pile/{{pile}}">{{pile}}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
+  <div class="meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time> 
+  	{% if page.piles %}
+  		&middot; In these piles:
+  		{% for pile in page.piles %}
+    		<a href="/pile/{{pile}}">{{pile}}</a>{% unless forloop.last %}, {% endunless %}
+    	{% endfor %}
+    {% endif %}
+  </div>
 </section>
 
 

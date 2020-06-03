@@ -95,6 +95,11 @@
     Cache-Control = "max-age=604800, public"
 
 [[headers]]
+  for = "*.jpeg"
+  [headers.values]
+    Cache-Control = "max-age=604800, public"
+
+[[headers]]
   for = "*.png"
   [headers.values]
     Cache-Control = "max-age=604800, public"

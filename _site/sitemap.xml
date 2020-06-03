@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/about</loc>
-<lastmod>2020-06-02T21:01:26-07:00</lastmod>
+<lastmod>2020-06-03T00:13:18-07:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/codex</loc>
-<lastmod>2020-06-02T21:01:26-07:00</lastmod>
+<lastmod>2020-06-03T00:13:18-07:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/life-in-weeks</loc>
-<lastmod>2020-06-02T21:01:26-07:00</lastmod>
+<lastmod>2020-06-03T00:13:18-07:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/2003/08/05/man-versus-himself</loc>
@@ -113,6 +113,10 @@
 <lastmod>2012-11-18T00:00:00-08:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/2012/11/18/disconnect-saturdays</loc>
+<lastmod>2012-11-18T00:00:00-08:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/2012/11/28/codex-vitae</loc>
 <lastmod>2012-11-28T00:00:00-08:00</lastmod>
 </url>
@@ -123,6 +127,10 @@
 <url>
 <loc>http://localhost:4000/2012/12/28/rabbit-rabbit</loc>
 <lastmod>2012-12-28T00:00:00-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/2012/12/31/my-2013-resolution</loc>
+<lastmod>2012-12-31T00:00:00-08:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/2013/01/04/starter-kit</loc>
@@ -397,6 +405,10 @@
 <lastmod>2019-10-09T00:00:00-07:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/2020/01/23/why-we-need-a-personal-mythology</loc>
+<lastmod>2020-01-23T00:00:00-08:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/2020/04/22/blogging</loc>
 <lastmod>2020-04-22T00:00:00-07:00</lastmod>
 </url>
@@ -561,5 +573,8 @@
 </url>
 <url>
 <loc>http://localhost:4000/pile/meta-crisis/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/pile/personal-mythology/</loc>
 </url>
 </urlset>

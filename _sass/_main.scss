@@ -1,4 +1,4 @@
-c  *,:after,:before {
+*,:after,:before {
 	box-sizing:border-box;
 	background-color:inherit;
 	color:inherit;
@@ -6,8 +6,15 @@ c  *,:after,:before {
 	padding:0;
 }
 
+::selection {
+  background: #84FFFF; /* #f7f5a0; WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #84FFFF; /* #f7f5a0; Gecko Browsers */
+}
+
 body {
-	font-family: system-ui, sans-serif;
+	font-family: "Open Sans", system-ui, sans-serif;
 	-webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 	line-height:1.5;
@@ -39,6 +46,9 @@ img.outlined {
 	border: 1px solid #ccc;
 }
 
+ul#side-nav li:first-child {
+}
+
 div.image {
 	margin: 1em 0 1em 0;
 	padding: 0;
@@ -47,6 +57,9 @@ div.image {
 .post p {
 	margin: 0.5rem 0 0.5rem 0;
 	font-size: 18px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 1.5;
 }
 
 .post h1, .post h2, .post h3, .post h4 {
@@ -54,15 +67,18 @@ div.image {
 }
 
 .post h1.title {
-	margin-top: 1rem;
+	font-size: 30px;
+	margin-top: 0;
 }
 
 .post h2:first-child, .project h2:first-child, .photo h2:first-child {
 	margin-top: 0;
 }
 
-.meta {
+.meta, .meta a {
 	margin: 2rem 0;
+	font-size: 14px;
+	color: #667;
 }
 
 code,pre {
@@ -102,6 +118,8 @@ header {
 
 header a {
 	text-decoration: none;
+	padding: 5px;
+	border-radius: 5px;
 }
 
 header li {
@@ -112,6 +130,7 @@ header li {
 
 header a.active {
 	font-weight: bold;
+	background-color: #E0F7FA;
 }
 
 header,section {
@@ -126,9 +145,26 @@ blockquote {
 }
 
 h1,h2,h3,h4,h5 {
-	line-height: 1.5em;
+	line-height: 1.2em;
 	margin: 1rem 0;
-	font-weight: 600;
+	font-weight: 400;
+	font-size: 26px;
+	font-family: "Fredoka One", "Open Sans", sans-serif;
+}
+
+h1 {
+	font-style: normal;
+	color: #000;
+}
+
+h2 {
+	font-style: normal;
+	color: #334;
+}
+
+h3 {
+	font-style: normal;
+	color: #667;
 }
 
 section h1:first-child {
@@ -192,7 +228,7 @@ ul.post-list, ul.post-list li, ul#results-container, ul#results-container li {
 main {
 	display: flex;
 	flex-wrap: wrap;
-	max-width: 60rem;
+	max-width: 55rem;
 	margin: 2rem auto;
 	padding: 1rem;
 }

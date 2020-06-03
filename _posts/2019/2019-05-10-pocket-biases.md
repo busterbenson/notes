@@ -36,6 +36,6 @@ This app is really just a starting point for understanding how you can find bett
 
 I also [started a new Twitter account (@pocketbiases)](https://twitter.com/pocketbiases) that will tweet out a bias-a-day for the next 200ish days. It’s another way to keep all this fresh in our minds so we can remember to notice them in our thoughts.
 
-https://twitter.com/buster/status/1122903124186890240
+{% twitter https://twitter.com/buster/status/1122903124186890240 %}
 
-<p><a href="https://pocket-biases.glideapp.io/" class="btn btn-sm btn-outline-success" target="_new">Visit Pocket Biases</a></p>
+<p><a href="https://pocket-biases.glideapp.io/" class="btn btn-sm btn-outline-info" target="_new">Visit Pocket Biases</a></p>

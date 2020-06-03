@@ -1,9 +1,9 @@
 <header role="banner">
-      <nav role="navigation">
-<ul>
-   {% for item in site.data.navigation.links %}
-      <li><a href="{{ item.url }}" {% if item.url == page.url %} class="active"{% endif %}>{{ item.title }}</a></li>
-   {% endfor %}
-</ul>
-</nav>
+  <nav role="navigation">
+		<ul id="side-nav">
+		   {% for item in site.data.navigation.links %}
+		      <li><a href="{{ item.url }}" {% if item.url == page.url or item.layout == page.layout or page.pile contains item.tag %} class="active"{% endif %}>{{ item.title }}</a></li>
+		   {% endfor %}
+		</ul>
+	</nav>
 </header>

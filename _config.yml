@@ -1,7 +1,7 @@
 site: Buster Benson
-url: https://busterbenson.com
+url: https://notes.busterbenson.com
 title: Buster Benson
-description: My blog.
+description: Notes
 permalink: pretty
 
 strict_front_matter: true
@@ -35,6 +35,7 @@ plugins:
   - jekyll-target-blank
   - jekyll-twitter-plugin
   - jekyll-srcset
+  - jekyll-youtube
 
 collections:
   pages:

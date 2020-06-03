@@ -1,11 +1,19 @@
 links:
-- title: Buster
+- title: Buster's Notes
   url: /
+  layout: post
+- title: Yearly Reviews
+  url: /pile/year-in-review
+  tag: year-in-review
 - title: Codex Vitae
   url: /codex
+  layout: codex
 - title: Life in Weeks
   url: /life-in-weeks
+  layout: life-in-weeks
 - title: About
   url: /about
+  layout: about
 - title: RSS
   url: /atom.xml
+  layout: rss
