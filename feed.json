@@ -1,5 +1,5 @@
 ---
-layout: null
+layout: nil
 ---
 {
     "version": "https://jsonfeed.org/version/1",
@@ -29,7 +29,7 @@ layout: null
             {% if post.image.size > 1 %}"image": {{ post.image | jsonify }},{% endif %}
             {% if post.link.size > 1 %}"external_url": "{{ post.link }}",{% endif %}
             {% if post.banner.size > 1 %}"banner_image": "{{ post.banner }}",{% endif %}
-            {% if post.tags.size > 1 %}"tags": {{ post.tags | jsonify }},{% endif %}
+            {% if post.piles.size > 1 %}"tags": {{ post.piles | jsonify }},{% endif %}
             {% if post.enclosure.size > 1 %}"attachments": [ {
               "url": "{{ post.enclosure }}",
               "mime_type": "{{ post.enclosure_type }}",

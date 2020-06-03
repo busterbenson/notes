@@ -1,12 +1,41 @@
 ---
 layout: default
 ---
+<!-- Script pointing to search-script.js -->
+<script src="/search.js" type="text/javascript"></script>
 
 <section class="posts">
+
+<!-- Html Elements for Search -->
+<div id="search-container">
+<input type="text" id="search-input" placeholder="search...">
+</div>
+
+<ul id="results-container"></ul>
 <ul>
-{% for post in site.posts %}
-<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%m-%d-%Y" }}</time></li>
-{% endfor %}
+	{% for post in site.posts %}
+		<li>
+			{% if post.link and post.redirect == true %}
+				<a href="{{ post.link }}">{{ post.title }}</a>
+			{% else %}
+				<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+			{% endif %}
+			<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%m-%d-%Y" }}</time>
+		</li>
+	{% endfor %}
 </ul>
 </section>
 
+<!-- Configuration -->
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: '/search.json',
+  searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time></li>',
+  noResultsText: 'No results found',
+  limit: 10,
+  fuzzy: false,
+  exclude: ['Welcome']
+})
+</script>

@@ -1,0 +1,15 @@
+---
+layout: default
+title: Piles
+---
+
+<section class="posts">
+	<h1>{{ page.title }}</h1>
+{% assign piles = site.piles | sort %}
+<ul>
+{% for pile in piles %}
+ <li><a href="/pile/{{ pile | first | slugify }}/">{{ pile[0] | replace:'-', ' ' }} ({{ pile | last | size }}){% unless forloop.last %}, {% endunless %}</a></li>
+{% endfor %}
+</ul>
+
+</section>

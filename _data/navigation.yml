@@ -1,9 +1,7 @@
 links:
-- title: Writing
+- title: List
   url: /
 - title: About
-  url: /about
-- title: Search
-  url: /search
-- title: Rss
+  url: https://paper.dropbox.com/doc/Buster-Benson--A1K~jygtvw~abdRBbiopWRe6AQ-I2Jb6sblUYldUzAc0Qob8
+- title: RSS
   url: /atom.xml

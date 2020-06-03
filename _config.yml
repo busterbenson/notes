@@ -4,6 +4,10 @@ title: Buster Benson
 description: My blog.
 permalink: pretty
 
+strict_front_matter: true
+liquid:
+  error_mode: strict
+  
 baseurl: ""
 
 highlighter: none
@@ -18,13 +22,23 @@ compress_html:
   comments: ["<!-- ", " -->"]
 
 sass:
-  sass_dir:          _sass
-  style:            :compressed
+  sass_dir: _sass
+  style:    :compressed
+
+target-blank:
+  add_css_classes: external-link
+
+picture:
+  source: "/assets/images"
+  suppress_warnings: true
+  fast_build: development
 
 plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-target-blank
+  - jekyll-twitter-plugin
 
 collections:
   pages:

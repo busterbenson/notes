@@ -2,6 +2,7 @@ tmp
 *.rdb
 .env
 .sass-cache
+.tweet-cache
 Gemfile.lock
 .DS_Store
 .jekyll-cache

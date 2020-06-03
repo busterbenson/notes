@@ -1,0 +1,103 @@
+---
+title        : "42: Dig deeper"
+link         : 
+author       : me
+
+one_liner    : "My 42nd year in review."
+image			   : pieces/dig-deeper.jpg
+piles			   : ['self-reflection', 'year-in-review']
+comment_link : 
+---
+
+This is my 13th year of yearly birthday reflections. Here are the previous 12:
+
+* [41: Seek endarkenment](/2017/05/28/seek-endarkenment)
+* [40: Mind the loops](/2016/05/28/mind-the-loops)
+* [39: Make wiggle room](/2015/06/13/make-wiggle-room)
+* [38: Cultivate quality time](/2014/05/28/cultivate-quality-time)
+* [37: More kiloslogs](/2013/05/28/more-kiloslogs)
+* [36: Talk it out](/2012/05/28/talk-it-out)
+* [35: Love the struggle](/2011/05/28/cultivate-the-core)
+* [34: Cultivating the core](/2010/05/28/cultivate-the-core)
+* [33: Frugal to the max](/2009/05/28/frugal-to-the-max)
+* [32: No problem](/2008/05/-27/no-problem)
+* [31: Double down](/2007/05/29/double-down)
+* [30: Higher highs and lower lows](/2006/05/31/higher-highs-lower-lows)
+
+I usually do these on my birthday at the end of May, but it’s now July. Whoops. Most (okay, all) of my energy is going into 3 things right now and for the foreseeable future: family, work (Patreon), book. Book, by virtue of being the most flexible, is taking the 3rd rank there, and is therefore the most behind. Meaning that, given time to think and write, which this post generally requires, there’s usually a higher urgency need to work on the book directly. Hence the delay. That’s my story.
+
+But, I know that self-reflection of the past and coming year is fundamental to actually being a productive and healthy contributor to family, work, and the book… so here we are.
+
+One notable thing about all of this is that my 3 priorities are converging more than they ever have in the past. I’m looking back at the mottos from last few years: cultivate quality time (38), make wiggle room (39), mind the loops (40), and seek endarkenment (40)… these are all links in the same chain that now turns out to be a universal mindset that applies to family, work, and writing. I guess that’s a convenient byproduct of systems thinking… eventually it all has to fit together into a single puzzle.
+
+To be more specific.
+
+It probably goes back further. My multi-decade long love of private journaling, constraints, unfiltered streams of consciousness, quantified self, and self-reflection are all links in the chain too. I remember journaling in college, and then writing in LiveJournal, and then doing morning pages, 8:36pm, and most recently doing my “[Written on Bart](https://writtenonbart.com/)” series, slowly circling around a hunch that somewhere below my thoughts was an invisible, interconnected web of ideas and meaning that were more interesting than the things that happened to bubble up to the surface of my mind and personal narrative.
+
+Writing 50 posts in between the time BART’s subway doors closed at either Ashby or El Cerrito Plaza station, and when they opened in SF on Civic Center or Powell, was like taking a shovel and digging deeper and deeper into the unprocessed portions of my brain.
+
+My coworker, Ben, and I were designing a 1-hour discussion for our product/eng/design offsite a few months back. As we were brainstorming, he told the story of a teacher (if my memory serves me) who gave the class, or maybe just him, advice to “Dig deeper” on a particular topic or assignment. It has rung in my ears since… dig deeper! The problems and answers are not out in the world, they’re inside us. Since Trump was elected, I’ve been struggling with how to respond, how to even interpret what is happening in the first place… but as tempting as it has been to blame him and Nazis and evil-doers for the world’s problems, I keep returning to a mistake that I made… I had been overly optimistic about the direction of the world (I had even bet a friend that we would win the presidency as well as a majority in the Senate and the House)… how embarrassingly wrong I was. My optimism creates a blind spot around how the world actually was. And now the blind spot has grabbed the spotlight. Now, I grieve for my inaccurate assessment of the country and the world… it was never right, and by being inaccurate it allowed problems to fester. Cultural debt leads to culture wars. I had not dug deep enough to realize this at the time. Going forward, perhaps I could do better.
+
+Niko helps me dig deeper too. Seeing the world through a child’s eyes, where nothing makes sense yet, but giant open questions are opened and resolved on an almost daily basis made me realize how many ideas and mental models we have that are unexamined simply because there’s consensus on them. Because an authority figure (in this case me) gave a confident answer. As I learned to dig deeper, maybe I could help him build those skills early, so that not every confident authority figure he runs into can just insert answers into his brain without examination. How might that even work? I would have to dig deeper to find out.
+
+Maybe I could write a systems thinking children’s book? Incidentally, my first proposal to the editor and agent I am now working with was a “Little Prince meets Star Trek meets Who Moved My Cheese” space fable. It had the bonus quality of being the first idea that felt like it might unite family and writing priorities. 20 first chapters and book proposals later, I got a deal that seemed too good to be true! It’s no longer a space fable but it still unites family, and writing, and work too!
+
+But work (at Twitter, then Slack) remained unintegrated from the other direction, like the stubborn force of gravity that refuses to link up with the Grand Theory of Everything. How might work add value to writing?
+
+A few months later, Patreon floats past my view and I realize that’s the solution! Working with creators: podcasters, YouTubers, webcomic artists, illustrators, writers, and all manner of niche creative types who are also trying to unify their lives under a single Grand Theory! Gravity, however, remains unintegrated as far as I know.
+
+So yeah, this last year, I signed a book deal with Portfolio (an imprint of Penguin Random House) to [write a book about arguing](http://patreon.com/buster). Why arguing? Well, arguing is something that applies to every field of interest, and also pretty much every moment of every day. Family, work, craft, and self. To argue is to be human. Arguing is generally not considered to be quality time, except that sometimes, as if by freak accident, it creates the best quality time… conflict brings resolution. The heat of argument is not so different from the passion to live meaningfully. We argue because we care! Arguing makes us wiggle, and gets us nervous, and yet arguments are also sign posts for interesting conversations that we really should be having. Even if they aren’t the conversations we want to have. To be frank, we want to change other people, prove their idiocy wrong, shame their maliciousness, and silence their unproductive dissent. We’re motivated to confirm our own positions, and to ignore any evidence to the contrary. We surround ourselves with people who feel the same. We use zingers to keep our spirits up and taunt the enemy, and to get a laugh while stinging our enemies.
+
+That unproductive kind of arguing, and digging deeper, could not be more different in spirit and execution. But how to flip it to something productive? This has been my obsession this last year.
+
+### Last year’s motto: [seek endarkenment](https://medium.com/@buster/41-seek-endarkenment-9700663dea67)
+Endarkenment is the opposite of enlightenment.
+
+If enlightenment is getting the answer, endarkenment is walking into the uncertainty of an open question. A dark room. If enlightenment is having all the evidence and data to prove that you’re right, endarkenment is the doubt of not knowing if you are right or if you just fear that you aren’t right and so are signaling confidence to brute force your way out of the problem.
+
+If enlightenment is the Obama presidency, endarkenment is the Trump presidency.
+
+If enlightenment is getting degrees, making money, setting up a matched 401K, angel investing, and getting invited to all the cool parties, endarkenment is wondering if you should opt out of the entire scene and move to a small island, and live with monkeys.
+
+Enlightenment is fighting for truth. Endarkenment is wondering if you’re even on the right side.
+
+It can get a bit dark. It’s endarkenment!
+
+### Motto for my 42nd year: dig deeper
+This is a continuation of my now 4-year interest into systems thinking, quality time, and cognitive biases. Jack posed a question on Twitter recently:
+
+https://twitter.com/buster/status/1012801112934502403
+
+Lots of solid answers in the replies. Critical thinking and cognitive biases are my jam. Not because I’m any better at it than others, but maybe a little bit because I know how bad I am at it.
+
+Over a million people have now “read” my post that claims to be a [cognitive bias cheat sheet](https://betterhumans.coach.me/cognitive-bias-cheat-sheet-55a472476b18). It’s been translated a bunch and used in classes, papers, and books all over the world. It’s weird, given that I just summarized a Wikipedia page. But it’s also not weird. The accidental secret to its success is that it takes advantage of all 4 bias categories:
+
+1. There are several hundred cognitive biases (too many), so reducing them to 4 basic problems helps filter out the noise.
+2. There’s no satisfying theory that unites all biases (not enough meaning), so I made one up that wasn’t “because brains suck” but a bit more friendly and forgiving “our brains are doing their darn best”.
+3. Nobody actually has time to devote to immersing themselves in the nuances of biases, so now you can just bookmark this cheat sheet and share it with friends. Done.
+4. Our attention and memories are like a school of baby penguins gripping a slippery sheet of ice in a category-5 hurricane. Even a bookmark is too hard to keep track of. Here’s a [phone lock screen](https://medium.com/thinking-is-hard/4-conundrums-of-intelligence-2ab78d90740f) to hold onto as the waves of distractions constantly crash onto you.
+
+Asking for critical thinking tips on Twitter is a bit like having 24-hours left to live and spending it searching for a 1-day course on how to spend the last day of your life.
+
+It’s okay though.
+
+I don’t mean to pick on Jack, because we all do this. That’s the point! We’re all part of a wiggling universe that is extremely worried that it’s not good enough. We spend our last days on Earth looking for ways to signal to ourselves and others that we’ve at least put in sufficient time worrying about this problem. The hope being that we’ll then feel good enough, and give ourselves permission to do other more pleasant things.
+
+So when I say I want to dig deeper, it’s not to reach enlightenment. It’s to reach endarkenment, where I can appreciate being part of a universe that doesn’t think in terms of good enough or not, because obviously we all are. Instead I want to dig deeper in terms of appreciating the world as it is, grieving the loss of wishful thinking about how we wanted the world to be, and enthusiastically participating in the tiny patch that we find ourselves in, while we last. Maybe on a small island with monkeys. Maybe we’re already there.
+
+I love these monkeys. Some who can’t keep their pants up while bouncing on beds.
+
+{% picture pieces/family-photo-louie-pants.jpeg %}
+
+Some who are quickly developing their own complex inner narratives of life on monkey island:
+
+{% picture pieces/family-photo-buster-niko.jpeg %}
+
+And of course this lovely monkey I have enlisted to enthusiastically participate with most closely, approaching 10 years now:
+
+{% picture pieces/family-photo-buster-kellianne.jpeg %}
+
+Family, work, book. These are the shadows cast by my life now past its 42nd year, the first year of life that extends further than my own father’s was able.
+
+“Everything we see is a shadow cast by that which we don’t see.” — Martin Luther King Jr
+To digging deeper, friends. 🍻

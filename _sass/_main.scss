@@ -1,4 +1,4 @@
-*,:after,:before {
+c  *,:after,:before {
 	box-sizing:border-box;
 	background-color:inherit;
 	color:inherit;
@@ -16,13 +16,14 @@ body {
 }
 
 nav ul {
-    border-right: 1px solid #edf2f7;
+  border-right: 1px solid #edf2f7;
 }
 
 a {
-    color: #000;
-    text-decoration-skip-ink: auto;
-    text-decoration: underline;
+  color: #000;
+  //text-decoration-skip-ink: auto;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 pre {
@@ -30,12 +31,26 @@ pre {
 	padding: .5rem;
 }
 
+.featured-image {
+	margin-top: 1em;	
+}
+
+picture {
+	margin: 1em 0 1em 0;
+	padding: 0;
+
+	img {
+		border: 1px solid #ccc;
+	}
+}
+
 .post p {
-	margin: .5rem 0;
+	margin: 0.5rem 0 0.5rem 0;
+	font-size: 18px;
 }
 
 .post h1, .post h2, .post h3, .post h4 {
-	margin: 1rem 0;
+	margin: 1.5rem 0 0 0;
 }
 
 .post h2:first-child, .project h2:first-child, .photo h2:first-child {
@@ -68,9 +83,11 @@ img {
 }
 
 hr {
-	background: #000;
-    height: 1px;
-    border: 0;
+	background: #ccc;
+  height: 1px;
+  border: 0;
+  margin: 2em auto 1em auto;
+  width: 70%;
 }
 
 header {
@@ -99,12 +116,13 @@ header,section {
 
 blockquote {
 	font-style: italic;
-    border-left: 5px solid #ececec;
-    padding-left: 1rem;
+  border-left: 5px solid #03dac5;
+  padding: 0 1rem;
+  margin: 0.5rem 0;
 }
 
 h1,h2,h3,h4,h5 {
-	line-height: 1;
+	line-height: 1.5em;
 	margin: 1rem 0;
 	font-weight: 600;
 }
@@ -154,7 +172,13 @@ strong, b {
 }
 
 .post ul, .project ul, .post ol  {
+	padding-left: 20px;
+	margin-bottom: 1rem;
 	//list-style-position: inside;
+
+	li {
+		margin-bottom: 0.5rem;
+	}
 }
 
 main {
@@ -167,25 +191,24 @@ main {
 
 
 @media screen and (max-width: 45rem ) {
-header li {
-    display: inline;
-	margin-right: 1rem;
-}
-.logo {
-	padding-bottom: 1rem;
-}
-header ul {
-	border-bottom: 1px solid #edf2f7;
-	padding-bottom: 2rem;	
-}
-nav ul {
-    border-right: 0px;
-}
+	header li {
+	  display: inline;
+		margin-right: 1rem;
+	}
+	.logo {
+		padding-bottom: 1rem;
+	}
+	header ul {
+		border-bottom: 1px solid #edf2f7;
+		padding-bottom: 2rem;	
+	}
+	nav ul {
+	    border-right: 0px;
+	}
 
-.photos ul {
-	margin-top: 0.5rem;
-}
-
+	.photos ul {
+		margin-top: 0.5rem;
+	}
 }
 
 section {
@@ -198,5 +221,24 @@ section {
 }
 
 figcaption {
-    font-size: smaller;
+	font-size: smaller;
+}
+
+#search-container {
+	margin-block-start: 1em;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 35px;
+  padding-inline-start: 40px;
+}
+input[type=text]#search-input {
+  font-size: normal;
+  outline: none;
+  padding: 1rem;
+  width: 100%;
+  background: rgb(236, 237, 238);
+  -webkit-appearance: none;
+  font-family: inherit;
+  font-size: 100%;
+  border: none;
 }

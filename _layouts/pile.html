@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<section class="posts">
+<h1>The #{{page.pile}} pile</h1>
+    <ul>
+      {% for post in site.posts %}
+      {% if post.piles contains page.pile %}
+      <li><a class="post" href="{{ post.url }}">{{ post.title }}</a><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%m-%d-%Y" }}</time></li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+	
+</section>
