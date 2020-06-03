@@ -7,10 +7,10 @@
 }
 
 ::selection {
-  background: #84FFFF; /* #f7f5a0; WebKit/Blink Browsers */
+  background: #F0F4C3; /* #f7f5a0; WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #84FFFF; /* #f7f5a0; Gecko Browsers */
+  background: #F0F4C3; /* #f7f5a0; Gecko Browsers */
 }
 
 body {
@@ -35,6 +35,10 @@ nav ul {
 
 a {
   color: #000;
+  text-decoration: underline;
+}
+.btn a {
+	text-decoration: none;
 }
 
 pre {
@@ -73,7 +77,10 @@ div.image {
 	margin: 1.5rem 0 0 0;
 }
 
-.post h1.title {
+.header-title a {
+	text-decoration: none;	
+}
+.post h1.title, h1.header-title {
 	font-size: 30px;
 	margin-top: 0;
 }
