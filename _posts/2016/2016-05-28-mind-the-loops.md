@@ -27,7 +27,6 @@ Every week of my life is represented as a colored box on [busterbenson.com](http
 
 {% include img.html src='pieces/mind-the-loops-life-by-weeks.png' alt='Life by weeks' %}
 
-From busterbenson.com
 Life moves fast, but it also moves slow. Every year (if I’m lucky) I get a new row. In the last few months, I’ve heard from a half dozen friends who are going through such difficult times (cancer, mental illness, unpredictable health incidents, etc) and right now especially, each box of this chart feels all the more tangible.
 
 Today I turn 40. My father died when he was 41. This year, Niko is 6 and a new baby will be added to our family in a couple months.
@@ -87,7 +86,7 @@ Credit: [Josh Santangelo](https://www.flickr.com/photos/endquote/157001967/in/ph
 
 This year, I had a really nice long walk with Kellianne, a delicious brunch, and plan a relaxing weekend of napping, drawing, house-work, and writing.
 
-{% picture pieces/mind-the-loops-me.jpeg %}
+{% include img.html src='pieces/mind-the-loops-me.jpeg' %}
 Credit: [Kellianne](https://www.instagram.com/p/BF9hgJtuFb5JJJCjbIkTQ5ugYMUDiOHOF8oe_s0/)
 
 And it is all good. Have a great year!
