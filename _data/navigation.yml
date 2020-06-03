@@ -1,7 +1,11 @@
 links:
-- title: List
+- title: Buster
   url: /
+- title: Codex Vitae
+  url: /codex
+- title: Life in Weeks
+  url: /life-in-weeks
 - title: About
-  url: https://paper.dropbox.com/doc/Buster-Benson--A1K~jygtvw~abdRBbiopWRe6AQ-I2Jb6sblUYldUzAc0Qob8
+  url: /about
 - title: RSS
   url: /atom.xml

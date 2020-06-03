@@ -25,7 +25,7 @@ This is my 11th year of yearly birthday reflections. Here are the previous 10:
 ### Life by weeks
 Every week of my life is represented as a colored box on [busterbenson.com](http://busterbenson.com/). The last green box is this week. The last white box is where (very roughly) my life is predicted to end. And there are 100 rows since my life goal is to ride a bike on my 100th birthday.
 
-![Life by weeks](/images/pieces/mind-the-loops-life-by-weeks.png)
+{% include img.html src='pieces/mind-the-loops-life-by-weeks.png' alt='Life by weeks' %}
 
 From busterbenson.com
 Life moves fast, but it also moves slow. Every year (if I’m lucky) I get a new row. In the last few months, I’ve heard from a half dozen friends who are going through such difficult times (cancer, mental illness, unpredictable health incidents, etc) and right now especially, each box of this chart feels all the more tangible.
@@ -34,15 +34,15 @@ Today I turn 40. My father died when he was 41. This year, Niko is 6 and a new b
 
 Life is still just getting started. And yet, it is also at a point where the end doesn’t feel so far away.
 
-https://twitter.com/buster/status/724770953243193344
+{% twitter https://twitter.com/buster/status/724770953243193344 %}
 
 Here’s a [neat simulation](http://flowingdata.com/2015/09/23/years-you-have-left-to-live-probably/) of when my life might end, according to data from the CDC. A 2% chance of dying in the next 10 years, 9% chance in the next 20 years, and somewhere a bit over a 90% chance that I won’t make it to 100.
 
-![Life by weeks](/images/pieces/mind-the-loops-years-left.png)
+{% include img.html src='pieces/mind-the-loops-years-left.png' alt='Life by weeks' %}
 
 But how will I die? At this point, heart disease and external causes (like car accidents) are my most threatening factors. Cancer is creeping up though, and is probably a bit higher than represented here due to my family’s history with it.
 
-![Life by weeks](/images/pieces/mind-the-loops-mortality.png)
+{% include img.html src='pieces/mind-the-loops-mortality.png' alt='Life by weeks' %}
 Causes of death ([try it](http://flowingdata.com/2016/01/05/causes-of-death/))
 
 Talking about death and appreciating life go hand in hand. Yeah, it’s all a bit morbid, but it’s all part of the story here, might as well acknowledge it.
@@ -52,11 +52,11 @@ Last year, my birthday motto was to make wiggle room… which was my code word f
 
 Here’s a 3-slide summary of his talk:
 
-![Life by weeks](/images/pieces/mind-the-loops-loopy.png)
+{% include img.html src='pieces/mind-the-loops-loopy.png' alt='Life by weeks' %}
 
-![Life by weeks](/images/pieces/mind-the-loops-loopy2.png)
+{% include img.html src='pieces/mind-the-loops-loopy2.png' alt='Life by weeks' %}
 
-![Life by weeks](/images/pieces/mind-the-loops-loopy3.png)
+{% include img.html src='pieces/mind-the-loops-loopy3.png' alt='Life by weeks' %}
 
 The [whole talk is great](http://ncase.me/OVC2016/).
 
@@ -82,7 +82,7 @@ Years: Every year is one loop around the sun. I share a birthday with Ted Rheing
 
 10 years ago, I had a polar bear, live interpretive painting, Reggie Watts and Daniel Spils playing weird music, embarrassing interviews on stage, a raffle for a hot air balloon ride, and lots of other absurdity:
 
-{% picture pieces/mind-the-loops-vladmir.jpeg --alt Vladmir the polar bear %}
+{% include img.html src='pieces/mind-the-loops-vladmir.jpeg' alt='Vladmir the polar bear' %}
 Credit: [Josh Santangelo](https://www.flickr.com/photos/endquote/157001967/in/photolist-eSFdt-eSF83-eSF29-eSEV1-eSENP-eSkrZ-eSknq-eSkhW-eSkcv-eSjJc-eSjEy-eSjzS-eSjwf-eSjq6-eSjjT-eSjeS-eSj9J-eSj2y-eSiWB-eSiQT-eSiGz-eSiAM-eSinB-eSigN-eSibn-eSi5B-eShXT-eShVh-eRNCd-eQ763-eQ73Z-eQ72E-eQ71b-eQ6Yq-eQ6X3-eQ6Vo-eQ6Ug-eQ6Ss-eQ6Rc-eQ6PT-eQ6NW-eQ6N4-eQ6Lh-ePRTF-ePRTz-ePQBS-ePQBN-ePMnx-ePMnz-ePLiY)
 
 This year, I had a really nice long walk with Kellianne, a delicious brunch, and plan a relaxing weekend of napping, drawing, house-work, and writing.

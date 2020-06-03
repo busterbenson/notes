@@ -1,4 +1,0 @@
-markup_presets:
-  default:
-    formats: [webp, original]
-    size: 600px

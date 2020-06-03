@@ -66,7 +66,7 @@ It can get a bit dark. It’s endarkenment!
 ### Motto for my 42nd year: dig deeper
 This is a continuation of my now 4-year interest into systems thinking, quality time, and cognitive biases. Jack posed a question on Twitter recently:
 
-https://twitter.com/buster/status/1012801112934502403
+{% twitter https://twitter.com/buster/status/1012801112934502403 %}
 
 Lots of solid answers in the replies. Critical thinking and cognitive biases are my jam. Not because I’m any better at it than others, but maybe a little bit because I know how bad I am at it.
 
@@ -87,15 +87,15 @@ So when I say I want to dig deeper, it’s not to reach enlightenment. It’s to
 
 I love these monkeys. Some who can’t keep their pants up while bouncing on beds.
 
-{% picture pieces/family-photo-louie-pants.jpeg %}
+{% include img.html src='pieces/family-photo-louie-pants.jpeg' %}
 
 Some who are quickly developing their own complex inner narratives of life on monkey island:
 
-{% picture pieces/family-photo-buster-niko.jpeg %}
+{% include img.html src='pieces/family-photo-buster-niko.jpeg' %}
 
 And of course this lovely monkey I have enlisted to enthusiastically participate with most closely, approaching 10 years now:
 
-{% picture pieces/family-photo-buster-kellianne.jpeg %}
+{% include img.html src='pieces/family-photo-buster-kellianne.jpeg' %}
 
 Family, work, book. These are the shadows cast by my life now past its 42nd year, the first year of life that extends further than my own father’s was able.
 

@@ -4,7 +4,7 @@ link         : https://buster.svbtle.com/belief-change
 author       : me
 
 one_liner    : "Are we what we repeatedly do?"
-image			   : pieces/aristotle-we-are-what-we-repeatedly-do.jpeg
+image			   : pieces/aristotle-we-are-what-we-repeatedly-do.jpg
 piles			   : ['behavior-change']
 comment_link : 
 ---
@@ -37,7 +37,7 @@ And...
 
 I know what you're thinking.
 
-{% picture pieces/be-excellent-to-each-other.jpg --alt Be excellent to each other %}
+{% include img.html src='pieces/be-excellent-to-each-other.jpg' alt='Be excellent to each other' %}
 
 And more importantly, just be excellent.
 

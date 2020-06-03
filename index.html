@@ -8,11 +8,11 @@ layout: default
 
 <!-- Html Elements for Search -->
 <div id="search-container">
-<input type="text" id="search-input" placeholder="search...">
+<input type="text" id="search-input" placeholder="Search&hellip;">
 </div>
 
-<ul id="results-container"></ul>
-<ul>
+<ul id="results-container" style="border-left: 1px solid #ccc; padding-left: 1rem;"></ul>
+<ul class="post-list">
 	{% for post in site.posts %}
 		<li>
 			{% if post.link and post.redirect == true %}

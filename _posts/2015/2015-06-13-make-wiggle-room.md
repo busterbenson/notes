@@ -45,13 +45,13 @@ The reason I think of it as wiggle room is because making space is also pretty t
 
 Another interesting coincidence of life is that I just started working at Slack, and people sometimes comment on its funny name. But there’s this:
 
-https://twitter.com/buster/status/431862004895076352
+{% twitter https://twitter.com/buster/status/431862004895076352 %}
 
 So, here’s to finding new ways to make wiggle room this year, and to bringing quality time into those cracks.
 
 Along with this yearly review, I also did a big edit/re-organization to my beliefs in the [Codex](/beliefs), which I wrote up [here](https://writtenonbart.com/4-kinds-of-beliefs-44dce1c04093). I’ll continue to do my monthly reviews there as well.
 
-{% picture pieces/make-wiggle-room-lifecycle.png --alt Kellianne finishing the AIDS Lifecycle ride %} 
+{% include img.html src='pieces/make-wiggle-room-lifecycle.png' alt='Kellianne finishing the AIDS Lifecycle ride' %} 
 
 Niko and I meet Kellianne at the finish line of her AIDS/LifeCycle ride.
 I think this is going to be a good year. Next time I do one of these yearly reviews, I’ll be 40! 😬

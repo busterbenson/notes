@@ -28,17 +28,13 @@ sass:
 target-blank:
   add_css_classes: external-link
 
-picture:
-  source: "/assets/images"
-  suppress_warnings: true
-  fast_build: development
-
 plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-target-blank
   - jekyll-twitter-plugin
+  - jekyll-srcset
 
 collections:
   pages:

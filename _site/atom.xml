@@ -4,7 +4,7 @@
  <title>Buster Benson</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2020-06-02T17:20:16-07:00</updated>
+ <updated>2020-06-02T20:57:59-07:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name></name>
@@ -84,12 +84,12 @@
 The primary formative event of my last year was changing careers and re-entering the world of independent creator living.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;picture&gt;&lt;source sizes=&quot;600px&quot; srcset=&quot;/generated/pieces/43-my-40s-400-047a86.webp 400w, /generated/pieces/43-my-40s-600-047a86.webp 600w, /generated/pieces/43-my-40s-800-047a86.webp 800w, /generated/pieces/43-my-40s-1000-047a86.webp 1000w&quot; type=&quot;image/webp&quot; /&gt;&lt;source sizes=&quot;600px&quot; srcset=&quot;/generated/pieces/43-my-40s-400-047a86.png 400w, /generated/pieces/43-my-40s-600-047a86.png 600w, /generated/pieces/43-my-40s-800-047a86.png 800w, /generated/pieces/43-my-40s-1000-047a86.png 1000w&quot; type=&quot;image/png&quot; /&gt;&lt;img src=&quot;/generated/pieces/43-my-40s-800-047a86.png&quot; alt=&quot;My 40s&quot; /&gt;&lt;/picture&gt;
+&lt;div class=&quot;image &quot;&gt;&lt;img src=&quot;/assets/images/pieces/43-my-40s-1948x630.png&quot; alt=&quot;My 40s&quot; caption=&quot;My 40s&quot; srcset=&quot;/assets/images/pieces/43-my-40s-1948x630.png 1x, /assets/images/pieces/43-my-40s-1948x630.png 2x, /assets/images/pieces/43-my-40s-1948x630.png 3x&quot; /&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;large--small&quot;&gt;Large &amp;amp; small&lt;/h3&gt;
 &lt;p&gt;One way to see this is as a cycle I’ve now been through twice of moving from large companies to small companies. This year I oscillated back to independent creative work after 6 years at big tech companies. A brief history of my career is: I joined Amazon in 1998 and left in 2003. From 2003 to 2012 I co-founded several startups (Robot Co-op, McLeod Residence, Habit Labs). Technically Robot Co-op became part of Amazon during that time, but I left before it was re-absorbed into the mothership. From 2012 to 2019 I spent another six years at Twitter, Slack, and (briefly) Patreon.&lt;/p&gt;
 
-&lt;picture&gt;&lt;source sizes=&quot;600px&quot; srcset=&quot;/generated/pieces/43-400-cadab5.webp 400w, /generated/pieces/43-600-cadab5.webp 600w, /generated/pieces/43-800-cadab5.webp 800w, /generated/pieces/43-1000-cadab5.webp 1000w&quot; type=&quot;image/webp&quot; /&gt;&lt;source sizes=&quot;600px&quot; srcset=&quot;/generated/pieces/43-400-cadab5.png 400w, /generated/pieces/43-600-cadab5.png 600w, /generated/pieces/43-800-cadab5.png 800w, /generated/pieces/43-1000-cadab5.png 1000w&quot; type=&quot;image/png&quot; /&gt;&lt;img src=&quot;/generated/pieces/43-800-cadab5.png&quot; alt=&quot;My career&quot; /&gt;&lt;/picture&gt;
+&lt;div class=&quot;image &quot;&gt;&lt;img src=&quot;/assets/images/pieces/43-2400x1887.png&quot; alt=&quot;My career&quot; caption=&quot;My career&quot; srcset=&quot;/assets/images/pieces/43-2400x1887.png 1x, /assets/images/pieces/43-2400x1887.png 2x, /assets/images/pieces/43-2400x1887.png 3x&quot; /&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;Green is when I worked at these companies. The y-axis represents approximate number of employees at the company, on a logarithmic scale.&lt;/em&gt;&lt;/p&gt;
 
@@ -124,7 +124,8 @@ The primary formative event of my last year was changing careers and re-entering
   &lt;li&gt;Reach out to people (independence requires interdependence)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;picture&gt;&lt;source sizes=&quot;600px&quot; srcset=&quot;/generated/pieces/43-smell-flowers-400-399006.webp 400w, /generated/pieces/43-smell-flowers-600-399006.webp 600w, /generated/pieces/43-smell-flowers-800-399006.webp 800w, /generated/pieces/43-smell-flowers-1000-399006.webp 1000w&quot; type=&quot;image/webp&quot; /&gt;&lt;source sizes=&quot;600px&quot; srcset=&quot;/generated/pieces/43-smell-flowers-400-399006.jpeg 400w, /generated/pieces/43-smell-flowers-600-399006.jpeg 600w, /generated/pieces/43-smell-flowers-800-399006.jpeg 800w, /generated/pieces/43-smell-flowers-1000-399006.jpeg 1000w&quot; type=&quot;image/jpeg&quot; /&gt;&lt;img src=&quot;/generated/pieces/43-smell-flowers-800-399006.jpeg&quot; alt=&quot;Smell the flowers&quot; /&gt;&lt;/picture&gt;
+&lt;div class=&quot;image &quot;&gt;&lt;img src=&quot;/assets/images/pieces/43-smell-flowers-1800x1350.jpeg&quot; alt=&quot;Smell the flowers&quot; caption=&quot;Smell the flowers&quot; srcset=&quot;/assets/images/pieces/43-smell-flowers-1800x1350.jpeg 1x, /assets/images/pieces/43-smell-flowers-1800x1350.jpeg 2x, /assets/images/pieces/43-smell-flowers-1800x1350.jpeg 3x&quot; /&gt;&lt;/div&gt;
+
 </content>
  </entry>
  
@@ -826,7 +827,9 @@ This project will only work if we can show that quiet, respectful voices do have
 &lt;h3 id=&quot;motto-for-my-42nd-year-dig-deeper&quot;&gt;Motto for my 42nd year: dig deeper&lt;/h3&gt;
 &lt;p&gt;This is a continuation of my now 4-year interest into systems thinking, quality time, and cognitive biases. Jack posed a question on Twitter recently:&lt;/p&gt;
 
-&lt;p&gt;https://twitter.com/buster/status/1012801112934502403&lt;/p&gt;
+&lt;div class=&quot;jekyll-twitter-plugin&quot;&gt;&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;What are the best books you’ve read on critical thinking? And why? &lt;a href=&quot;https://t.co/iRMx0qGaGw&quot;&gt;https://t.co/iRMx0qGaGw&lt;/a&gt;&lt;/p&gt;&amp;mdash; jack (@jack) &lt;a href=&quot;https://twitter.com/jack/status/1012801112934502403?ref_src=twsrc%5Etfw&quot;&gt;June 29, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Lots of solid answers in the replies. Critical thinking and cognitive biases are my jam. Not because I’m any better at it than others, but maybe a little bit because I know how bad I am at it.&lt;/p&gt;
 
@@ -849,15 +852,15 @@ This project will only work if we can show that quiet, respectful voices do have
 
 &lt;p&gt;I love these monkeys. Some who can’t keep their pants up while bouncing on beds.&lt;/p&gt;
 
-&lt;picture&gt;&lt;source sizes=&quot;600px&quot; srcset=&quot;/generated/pieces/family-photo-louie-pants-400-0497ca.webp 400w, /generated/pieces/family-photo-louie-pants-600-0497ca.webp 600w, /generated/pieces/family-photo-louie-pants-800-0497ca.webp 800w, /generated/pieces/family-photo-louie-pants-1000-0497ca.webp 1000w&quot; type=&quot;image/webp&quot; /&gt;&lt;source sizes=&quot;600px&quot; srcset=&quot;/generated/pieces/family-photo-louie-pants-400-0497ca.jpeg 400w, /generated/pieces/family-photo-louie-pants-600-0497ca.jpeg 600w, /generated/pieces/family-photo-louie-pants-800-0497ca.jpeg 800w, /generated/pieces/family-photo-louie-pants-1000-0497ca.jpeg 1000w&quot; type=&quot;image/jpeg&quot; /&gt;&lt;img src=&quot;/generated/pieces/family-photo-louie-pants-800-0497ca.jpeg&quot; /&gt;&lt;/picture&gt;
+&lt;div class=&quot;image &quot;&gt;&lt;img src=&quot;/assets/images/pieces/family-photo-louie-pants-1600x1066.jpeg&quot; alt=&quot;&quot; caption=&quot;&quot; srcset=&quot;/assets/images/pieces/family-photo-louie-pants-1600x1066.jpeg 1x, /assets/images/pieces/family-photo-louie-pants-1600x1066.jpeg 2x, /assets/images/pieces/family-photo-louie-pants-1600x1066.jpeg 3x&quot; /&gt;&lt;/div&gt;
 
 &lt;p&gt;Some who are quickly developing their own complex inner narratives of life on monkey island:&lt;/p&gt;
 
-&lt;picture&gt;&lt;source sizes=&quot;600px&quot; srcset=&quot;/generated/pieces/family-photo-buster-niko-400-f2349f.webp 400w, /generated/pieces/family-photo-buster-niko-600-f2349f.webp 600w, /generated/pieces/family-photo-buster-niko-800-f2349f.webp 800w, /generated/pieces/family-photo-buster-niko-1000-f2349f.webp 1000w&quot; type=&quot;image/webp&quot; /&gt;&lt;source sizes=&quot;600px&quot; srcset=&quot;/generated/pieces/family-photo-buster-niko-400-f2349f.jpeg 400w, /generated/pieces/family-photo-buster-niko-600-f2349f.jpeg 600w, /generated/pieces/family-photo-buster-niko-800-f2349f.jpeg 800w, /generated/pieces/family-photo-buster-niko-1000-f2349f.jpeg 1000w&quot; type=&quot;image/jpeg&quot; /&gt;&lt;img src=&quot;/generated/pieces/family-photo-buster-niko-800-f2349f.jpeg&quot; /&gt;&lt;/picture&gt;
+&lt;div class=&quot;image &quot;&gt;&lt;img src=&quot;/assets/images/pieces/family-photo-buster-niko-1600x1066.jpeg&quot; alt=&quot;&quot; caption=&quot;&quot; srcset=&quot;/assets/images/pieces/family-photo-buster-niko-1600x1066.jpeg 1x, /assets/images/pieces/family-photo-buster-niko-1600x1066.jpeg 2x, /assets/images/pieces/family-photo-buster-niko-1600x1066.jpeg 3x&quot; /&gt;&lt;/div&gt;
 
 &lt;p&gt;And of course this lovely monkey I have enlisted to enthusiastically participate with most closely, approaching 10 years now:&lt;/p&gt;
 
-&lt;picture&gt;&lt;source sizes=&quot;600px&quot; srcset=&quot;/generated/pieces/family-photo-buster-kellianne-400-04644c.webp 400w, /generated/pieces/family-photo-buster-kellianne-600-04644c.webp 600w, /generated/pieces/family-photo-buster-kellianne-800-04644c.webp 800w, /generated/pieces/family-photo-buster-kellianne-1000-04644c.webp 1000w&quot; type=&quot;image/webp&quot; /&gt;&lt;source sizes=&quot;600px&quot; srcset=&quot;/generated/pieces/family-photo-buster-kellianne-400-04644c.jpeg 400w, /generated/pieces/family-photo-buster-kellianne-600-04644c.jpeg 600w, /generated/pieces/family-photo-buster-kellianne-800-04644c.jpeg 800w, /generated/pieces/family-photo-buster-kellianne-1000-04644c.jpeg 1000w&quot; type=&quot;image/jpeg&quot; /&gt;&lt;img src=&quot;/generated/pieces/family-photo-buster-kellianne-800-04644c.jpeg&quot; /&gt;&lt;/picture&gt;
+&lt;div class=&quot;image &quot;&gt;&lt;img src=&quot;/assets/images/pieces/family-photo-buster-kellianne-1600x1066.jpeg&quot; alt=&quot;&quot; caption=&quot;&quot; srcset=&quot;/assets/images/pieces/family-photo-buster-kellianne-1600x1066.jpeg 1x, /assets/images/pieces/family-photo-buster-kellianne-1600x1066.jpeg 2x, /assets/images/pieces/family-photo-buster-kellianne-1600x1066.jpeg 3x&quot; /&gt;&lt;/div&gt;
 
 &lt;p&gt;Family, work, book. These are the shadows cast by my life now past its 42nd year, the first year of life that extends further than my own father’s was able.&lt;/p&gt;
 
@@ -1042,7 +1045,7 @@ To digging deeper, friends. 🍻&lt;/p&gt;
 &lt;h3 id=&quot;life-by-weeks&quot;&gt;Life by weeks&lt;/h3&gt;
 &lt;p&gt;Every week of my life is represented as a colored box on &lt;a href=&quot;http://busterbenson.com/&quot;&gt;busterbenson.com&lt;/a&gt;. The last green box is this week. The last white box is where (very roughly) my life is predicted to end. And there are 100 rows since my life goal is to ride a bike on my 100th birthday.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/pieces/mind-the-loops-life-by-weeks.png&quot; alt=&quot;Life by weeks&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;image &quot;&gt;&lt;img src=&quot;/assets/images/pieces/mind-the-loops-life-by-weeks-1600x3106.png&quot; alt=&quot;Life by weeks&quot; caption=&quot;Life by weeks&quot; srcset=&quot;/assets/images/pieces/mind-the-loops-life-by-weeks-1600x3106.png 1x, /assets/images/pieces/mind-the-loops-life-by-weeks-1600x3106.png 2x, /assets/images/pieces/mind-the-loops-life-by-weeks-1600x3106.png 3x&quot; /&gt;&lt;/div&gt;
 
 &lt;p&gt;From busterbenson.com
 Life moves fast, but it also moves slow. Every year (if I’m lucky) I get a new row. In the last few months, I’ve heard from a half dozen friends who are going through such difficult times (cancer, mental illness, unpredictable health incidents, etc) and right now especially, each box of this chart feels all the more tangible.&lt;/p&gt;
@@ -1051,16 +1054,19 @@ Life moves fast, but it also moves slow. Every year (if I’m lucky) I get a new
 
 &lt;p&gt;Life is still just getting started. And yet, it is also at a point where the end doesn’t feel so far away.&lt;/p&gt;
 
-&lt;p&gt;https://twitter.com/buster/status/724770953243193344&lt;/p&gt;
+&lt;div class=&quot;jekyll-twitter-plugin&quot;&gt;&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;We&amp;#39;re all in this together. 👶🎢☠&lt;/p&gt;&amp;mdash; Buster Benson (@buster) &lt;a href=&quot;https://twitter.com/buster/status/724770953243193344?ref_src=twsrc%5Etfw&quot;&gt;April 26, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Here’s a &lt;a href=&quot;http://flowingdata.com/2015/09/23/years-you-have-left-to-live-probably/&quot;&gt;neat simulation&lt;/a&gt; of when my life might end, according to data from the CDC. A 2% chance of dying in the next 10 years, 9% chance in the next 20 years, and somewhere a bit over a 90% chance that I won’t make it to 100.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/pieces/mind-the-loops-years-left.png&quot; alt=&quot;Life by weeks&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;image &quot;&gt;&lt;img src=&quot;/assets/images/pieces/mind-the-loops-years-left-1600x893.png&quot; alt=&quot;Life by weeks&quot; caption=&quot;Life by weeks&quot; srcset=&quot;/assets/images/pieces/mind-the-loops-years-left-1600x893.png 1x, /assets/images/pieces/mind-the-loops-years-left-1600x893.png 2x, /assets/images/pieces/mind-the-loops-years-left-1600x893.png 3x&quot; /&gt;&lt;/div&gt;
 
 &lt;p&gt;But how will I die? At this point, heart disease and external causes (like car accidents) are my most threatening factors. Cancer is creeping up though, and is probably a bit higher than represented here due to my family’s history with it.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/pieces/mind-the-loops-mortality.png&quot; alt=&quot;Life by weeks&quot; /&gt;
-Causes of death (&lt;a href=&quot;http://flowingdata.com/2016/01/05/causes-of-death/&quot;&gt;try it&lt;/a&gt;)&lt;/p&gt;
+&lt;div class=&quot;image &quot;&gt;&lt;img src=&quot;/assets/images/pieces/mind-the-loops-mortality-1600x1118.png&quot; alt=&quot;Life by weeks&quot; caption=&quot;Life by weeks&quot; srcset=&quot;/assets/images/pieces/mind-the-loops-mortality-1600x1118.png 1x, /assets/images/pieces/mind-the-loops-mortality-1600x1118.png 2x, /assets/images/pieces/mind-the-loops-mortality-1600x1118.png 3x&quot; /&gt;&lt;/div&gt;
+
+&lt;p&gt;Causes of death (&lt;a href=&quot;http://flowingdata.com/2016/01/05/causes-of-death/&quot;&gt;try it&lt;/a&gt;)&lt;/p&gt;
 
 &lt;p&gt;Talking about death and appreciating life go hand in hand. Yeah, it’s all a bit morbid, but it’s all part of the story here, might as well acknowledge it.&lt;/p&gt;
 
@@ -1069,11 +1075,11 @@ Causes of death (&lt;a href=&quot;http://flowingdata.com/2016/01/05/causes-of-de
 
 &lt;p&gt;Here’s a 3-slide summary of his talk:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/pieces/mind-the-loops-loopy.png&quot; alt=&quot;Life by weeks&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;image &quot;&gt;&lt;img src=&quot;/assets/images/pieces/mind-the-loops-loopy-800x450.png&quot; alt=&quot;Life by weeks&quot; caption=&quot;Life by weeks&quot; srcset=&quot;/assets/images/pieces/mind-the-loops-loopy-800x450.png 1x, /assets/images/pieces/mind-the-loops-loopy-800x450.png 2x, /assets/images/pieces/mind-the-loops-loopy-800x450.png 3x&quot; /&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/pieces/mind-the-loops-loopy2.png&quot; alt=&quot;Life by weeks&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;image &quot;&gt;&lt;img src=&quot;/assets/images/pieces/mind-the-loops-loopy2-800x450.png&quot; alt=&quot;Life by weeks&quot; caption=&quot;Life by weeks&quot; srcset=&quot;/assets/images/pieces/mind-the-loops-loopy2-800x450.png 1x, /assets/images/pieces/mind-the-loops-loopy2-800x450.png 2x, /assets/images/pieces/mind-the-loops-loopy2-800x450.png 3x&quot; /&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/pieces/mind-the-loops-loopy3.png&quot; alt=&quot;Life by weeks&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;image &quot;&gt;&lt;img src=&quot;/assets/images/pieces/mind-the-loops-loopy3-800x450.png&quot; alt=&quot;Life by weeks&quot; caption=&quot;Life by weeks&quot; srcset=&quot;/assets/images/pieces/mind-the-loops-loopy3-800x450.png 1x, /assets/images/pieces/mind-the-loops-loopy3-800x450.png 2x, /assets/images/pieces/mind-the-loops-loopy3-800x450.png 3x&quot; /&gt;&lt;/div&gt;
 
 &lt;p&gt;The &lt;a href=&quot;http://ncase.me/OVC2016/&quot;&gt;whole talk is great&lt;/a&gt;.&lt;/p&gt;
 
@@ -1101,13 +1107,13 @@ In addition to my commute, I found some wiggle room in the time in the evenings 
 
 &lt;p&gt;10 years ago, I had a polar bear, live interpretive painting, Reggie Watts and Daniel Spils playing weird music, embarrassing interviews on stage, a raffle for a hot air balloon ride, and lots of other absurdity:&lt;/p&gt;
 
-&lt;picture&gt;&lt;source sizes=&quot;600px&quot; srcset=&quot;/generated/pieces/mind-the-loops-vladmir-400-387964.webp 400w, /generated/pieces/mind-the-loops-vladmir-600-387964.webp 600w, /generated/pieces/mind-the-loops-vladmir-800-387964.webp 800w, /generated/pieces/mind-the-loops-vladmir-1000-387964.webp 1000w&quot; type=&quot;image/webp&quot; /&gt;&lt;source sizes=&quot;600px&quot; srcset=&quot;/generated/pieces/mind-the-loops-vladmir-400-387964.jpeg 400w, /generated/pieces/mind-the-loops-vladmir-600-387964.jpeg 600w, /generated/pieces/mind-the-loops-vladmir-800-387964.jpeg 800w, /generated/pieces/mind-the-loops-vladmir-1000-387964.jpeg 1000w&quot; type=&quot;image/jpeg&quot; /&gt;&lt;img src=&quot;/generated/pieces/mind-the-loops-vladmir-800-387964.jpeg&quot; alt=&quot;Vladmir the polar bear&quot; /&gt;&lt;/picture&gt;
+&lt;div class=&quot;image &quot;&gt;&lt;img src=&quot;/assets/images/pieces/mind-the-loops-vladmir-1024x768.jpeg&quot; alt=&quot;Vladmir the polar bear&quot; caption=&quot;Vladmir the polar bear&quot; srcset=&quot;/assets/images/pieces/mind-the-loops-vladmir-1024x768.jpeg 1x, /assets/images/pieces/mind-the-loops-vladmir-1024x768.jpeg 2x, /assets/images/pieces/mind-the-loops-vladmir-1024x768.jpeg 3x&quot; /&gt;&lt;/div&gt;
 
 &lt;p&gt;Credit: &lt;a href=&quot;https://www.flickr.com/photos/endquote/157001967/in/photolist-eSFdt-eSF83-eSF29-eSEV1-eSENP-eSkrZ-eSknq-eSkhW-eSkcv-eSjJc-eSjEy-eSjzS-eSjwf-eSjq6-eSjjT-eSjeS-eSj9J-eSj2y-eSiWB-eSiQT-eSiGz-eSiAM-eSinB-eSigN-eSibn-eSi5B-eShXT-eShVh-eRNCd-eQ763-eQ73Z-eQ72E-eQ71b-eQ6Yq-eQ6X3-eQ6Vo-eQ6Ug-eQ6Ss-eQ6Rc-eQ6PT-eQ6NW-eQ6N4-eQ6Lh-ePRTF-ePRTz-ePQBS-ePQBN-ePMnx-ePMnz-ePLiY&quot;&gt;Josh Santangelo&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;This year, I had a really nice long walk with Kellianne, a delicious brunch, and plan a relaxing weekend of napping, drawing, house-work, and writing.&lt;/p&gt;
 
-&lt;picture&gt;&lt;source sizes=&quot;600px&quot; srcset=&quot;/generated/pieces/mind-the-loops-me-400-7310e2.webp 400w, /generated/pieces/mind-the-loops-me-600-7310e2.webp 600w, /generated/pieces/mind-the-loops-me-800-7310e2.webp 800w, /generated/pieces/mind-the-loops-me-1000-7310e2.webp 1000w&quot; type=&quot;image/webp&quot; /&gt;&lt;source sizes=&quot;600px&quot; srcset=&quot;/generated/pieces/mind-the-loops-me-400-7310e2.jpeg 400w, /generated/pieces/mind-the-loops-me-600-7310e2.jpeg 600w, /generated/pieces/mind-the-loops-me-800-7310e2.jpeg 800w, /generated/pieces/mind-the-loops-me-1000-7310e2.jpeg 1000w&quot; type=&quot;image/jpeg&quot; /&gt;&lt;img src=&quot;/generated/pieces/mind-the-loops-me-800-7310e2.jpeg&quot; /&gt;&lt;/picture&gt;
+&lt;p&gt;&lt;img src=&quot;/generated/pieces/mind-the-loops-me-800-7310e2.jpeg&quot; srcset=&quot;/generated/pieces/mind-the-loops-me-400-7310e2.jpeg 400w, /generated/pieces/mind-the-loops-me-600-7310e2.jpeg 600w, /generated/pieces/mind-the-loops-me-800-7310e2.jpeg 800w, /generated/pieces/mind-the-loops-me-1000-7310e2.jpeg 1000w&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Credit: &lt;a href=&quot;https://www.instagram.com/p/BF9hgJtuFb5JJJCjbIkTQ5ugYMUDiOHOF8oe_s0/&quot;&gt;Kellianne&lt;/a&gt;&lt;/p&gt;
 
@@ -1167,13 +1173,15 @@ In addition to my commute, I found some wiggle room in the time in the evenings 
 
 &lt;p&gt;Another interesting coincidence of life is that I just started working at Slack, and people sometimes comment on its funny name. But there’s this:&lt;/p&gt;
 
-&lt;p&gt;https://twitter.com/buster/status/431862004895076352&lt;/p&gt;
+&lt;div class=&quot;jekyll-twitter-plugin&quot;&gt;&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Our name may seem funny, but think on this: without slack, there is no reach, no play, no flexibility, no learning, no evolution, no growth.&lt;/p&gt;&amp;mdash; Slack (@SlackHQ) &lt;a href=&quot;https://twitter.com/SlackHQ/status/431862004895076352?ref_src=twsrc%5Etfw&quot;&gt;February 7, 2014&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
 
 &lt;p&gt;So, here’s to finding new ways to make wiggle room this year, and to bringing quality time into those cracks.&lt;/p&gt;
 
 &lt;p&gt;Along with this yearly review, I also did a big edit/re-organization to my beliefs in the &lt;a href=&quot;/beliefs&quot;&gt;Codex&lt;/a&gt;, which I wrote up &lt;a href=&quot;https://writtenonbart.com/4-kinds-of-beliefs-44dce1c04093&quot;&gt;here&lt;/a&gt;. I’ll continue to do my monthly reviews there as well.&lt;/p&gt;
 
-&lt;picture&gt;&lt;source sizes=&quot;600px&quot; srcset=&quot;/generated/pieces/make-wiggle-room-lifecycle-400-b40d7c.webp 400w, /generated/pieces/make-wiggle-room-lifecycle-600-b40d7c.webp 600w, /generated/pieces/make-wiggle-room-lifecycle-800-b40d7c.webp 800w, /generated/pieces/make-wiggle-room-lifecycle-1000-b40d7c.webp 1000w&quot; type=&quot;image/webp&quot; /&gt;&lt;source sizes=&quot;600px&quot; srcset=&quot;/generated/pieces/make-wiggle-room-lifecycle-400-b40d7c.png 400w, /generated/pieces/make-wiggle-room-lifecycle-600-b40d7c.png 600w, /generated/pieces/make-wiggle-room-lifecycle-800-b40d7c.png 800w, /generated/pieces/make-wiggle-room-lifecycle-1000-b40d7c.png 1000w&quot; type=&quot;image/png&quot; /&gt;&lt;img src=&quot;/generated/pieces/make-wiggle-room-lifecycle-800-b40d7c.png&quot; alt=&quot;Kellianne finishing the AIDS Lifecycle ride&quot; /&gt;&lt;/picture&gt;
+&lt;div class=&quot;image &quot;&gt;&lt;img src=&quot;/assets/images/pieces/make-wiggle-room-lifecycle-1200x750.png&quot; alt=&quot;Kellianne finishing the AIDS Lifecycle ride&quot; caption=&quot;Kellianne finishing the AIDS Lifecycle ride&quot; srcset=&quot;/assets/images/pieces/make-wiggle-room-lifecycle-1200x750.png 1x, /assets/images/pieces/make-wiggle-room-lifecycle-1200x750.png 2x, /assets/images/pieces/make-wiggle-room-lifecycle-1200x750.png 3x&quot; /&gt;&lt;/div&gt;
 
 &lt;p&gt;Niko and I meet Kellianne at the finish line of her AIDS/LifeCycle ride.
 I think this is going to be a good year. Next time I do one of these yearly reviews, I’ll be 40! 😬&lt;/p&gt;
@@ -3328,7 +3336,7 @@ If you want to help me improve this, suggest edits &lt;a href=&quot;https://draf
 
 &lt;p&gt;I know what you’re thinking.&lt;/p&gt;
 
-&lt;picture&gt;&lt;source sizes=&quot;600px&quot; srcset=&quot;/generated/pieces/be-excellent-to-each-other-400-8bb62d.webp 400w, /generated/pieces/be-excellent-to-each-other-600-8bb62d.webp 600w, /generated/pieces/be-excellent-to-each-other-800-8bb62d.webp 800w, /generated/pieces/be-excellent-to-each-other-1000-8bb62d.webp 1000w&quot; type=&quot;image/webp&quot; /&gt;&lt;source sizes=&quot;600px&quot; srcset=&quot;/generated/pieces/be-excellent-to-each-other-400-8bb62d.jpg 400w, /generated/pieces/be-excellent-to-each-other-600-8bb62d.jpg 600w, /generated/pieces/be-excellent-to-each-other-800-8bb62d.jpg 800w, /generated/pieces/be-excellent-to-each-other-1000-8bb62d.jpg 1000w&quot; type=&quot;image/jpeg&quot; /&gt;&lt;img src=&quot;/generated/pieces/be-excellent-to-each-other-800-8bb62d.jpg&quot; alt=&quot;Be excellent to each other&quot; /&gt;&lt;/picture&gt;
+&lt;div class=&quot;image &quot;&gt;&lt;img src=&quot;/assets/images/pieces/be-excellent-to-each-other-1280x720.jpg&quot; alt=&quot;Be excellent to each other&quot; caption=&quot;Be excellent to each other&quot; srcset=&quot;/assets/images/pieces/be-excellent-to-each-other-1280x720.jpg 1x, /assets/images/pieces/be-excellent-to-each-other-1280x720.jpg 2x, /assets/images/pieces/be-excellent-to-each-other-1280x720.jpg 3x&quot; /&gt;&lt;/div&gt;
 
 &lt;p&gt;And more importantly, just be excellent.&lt;/p&gt;
 
@@ -4381,7 +4389,7 @@ http://flickr.com/photos/mcleodphotobooth/sets/72157600283731292/with/517552968/
 
 &lt;p&gt;Later, around 2005, I started a more general Morale-O-Meter that allowed me to rate my morale each day from 1-10.  In addition, I also counted the number of alcoholic drinks and caffienated drinks I had, the number of hours of sleep, and my general “health” (1-10, 10 being healthiest).  It created a graph that looked something like this:&lt;/p&gt;
 
-&lt;picture&gt;&lt;source sizes=&quot;600px&quot; srcset=&quot;/generated/pieces/history-of-my-self-tracking-1-385-8bf842.webp 385w&quot; type=&quot;image/webp&quot; /&gt;&lt;source sizes=&quot;600px&quot; srcset=&quot;/generated/pieces/history-of-my-self-tracking-1-385-8bf842.png 385w&quot; type=&quot;image/png&quot; /&gt;&lt;img src=&quot;/generated/pieces/history-of-my-self-tracking-1-385-8bf842.png&quot; alt=&quot;Morale-o-meter&quot; /&gt;&lt;/picture&gt;
+&lt;div class=&quot;image &quot;&gt;&lt;img src=&quot;/assets/images/pieces/history-of-my-self-tracking-1-385x288.png&quot; alt=&quot;Morale-o-meter&quot; caption=&quot;Morale-o-meter&quot; srcset=&quot;/assets/images/pieces/history-of-my-self-tracking-1-385x288.png 1x, /assets/images/pieces/history-of-my-self-tracking-1-385x288.png 2x, /assets/images/pieces/history-of-my-self-tracking-1-385x288.png 3x&quot; /&gt;&lt;/div&gt;
 
 &lt;p&gt;The coincidence of this graph was that all of the inputs could be displayed on the same 1-10 scale, and so it tended to make it easy to believe that the inputs could in some way be correlated.  After doing this for about 3 years though, except for minor correlations between number of alcoholic drinks and amount of sleep, there were no deep insights.&lt;/p&gt;
 
@@ -4417,7 +4425,7 @@ http://flickr.com/photos/mcleodphotobooth/sets/72157600283731292/with/517552968/
 
 &lt;p&gt;This then all gets added up on a weekly basis and graphed into something like this:&lt;/p&gt;
 
-&lt;picture&gt;&lt;source sizes=&quot;600px&quot; srcset=&quot;/generated/pieces/history-of-my-self-tracking-2-385-7a25bc.webp 385w&quot; type=&quot;image/webp&quot; /&gt;&lt;source sizes=&quot;600px&quot; srcset=&quot;/generated/pieces/history-of-my-self-tracking-2-385-7a25bc.png 385w&quot; type=&quot;image/png&quot; /&gt;&lt;img src=&quot;/generated/pieces/history-of-my-self-tracking-2-385-7a25bc.png&quot; alt=&quot;Morale-o-meter&quot; /&gt;&lt;/picture&gt;
+&lt;div class=&quot;image &quot;&gt;&lt;img src=&quot;/assets/images/pieces/history-of-my-self-tracking-2-385x288.png&quot; alt=&quot;Morale-o-meter&quot; caption=&quot;Morale-o-meter&quot; srcset=&quot;/assets/images/pieces/history-of-my-self-tracking-2-385x288.png 1x, /assets/images/pieces/history-of-my-self-tracking-2-385x288.png 2x, /assets/images/pieces/history-of-my-self-tracking-2-385x288.png 3x&quot; /&gt;&lt;/div&gt;
 
 &lt;p&gt;I’m still adjusting it week by week, and hope that eventually it will be possible to actually trust the output of this fitness function to relate my true fitness in life.  The goal being a well-balanced, healthy, creative life shared with family and friends.&lt;/p&gt;
 
@@ -4443,7 +4451,8 @@ http://flickr.com/photos/mcleodphotobooth/sets/72157600283731292/with/517552968/
    <link href="http://localhost:4000/2003/08/05/man-versus-himself"/>
    <updated>2003-08-05T00:00:00-07:00</updated>
    <id>http://localhost:4000/2003/08/05/man-versus-himself</id>
-   <content type="html">&lt;picture&gt;&lt;source sizes=&quot;600px&quot; srcset=&quot;/generated/pieces/man-versus-himself-333-90d613.webp 333w&quot; type=&quot;image/webp&quot; /&gt;&lt;source sizes=&quot;600px&quot; srcset=&quot;/generated/pieces/man-versus-himself-333-90d613.jpg 333w&quot; type=&quot;image/jpeg&quot; /&gt;&lt;img style=&quot;max-width:300px;&quot; src=&quot;/generated/pieces/man-versus-himself-333-90d613.jpg&quot; /&gt;&lt;/picture&gt;
+   <content type="html">
+&lt;div class=&quot;image &quot;&gt;&lt;img src=&quot;/assets/images/pieces/man-versus-himself-333x499.jpg&quot; alt=&quot;Book cover&quot; caption=&quot;Book cover&quot; srcset=&quot;/assets/images/pieces/man-versus-himself-333x499.jpg 1x, /assets/images/pieces/man-versus-himself-333x499.jpg 2x, /assets/images/pieces/man-versus-himself-333x499.jpg 3x&quot; /&gt;&lt;/div&gt;
 
 &lt;p&gt;I wrote this book in 30 days, during NaNoWriMo.&lt;/p&gt;
 </content>

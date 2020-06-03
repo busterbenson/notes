@@ -9,6 +9,6 @@ piles			   : ['book', 'death', 'fiction']
 comment_link : 
 ---
 
-{% picture pieces/man-versus-himself.jpg style="max-width:300px;" %}
+{% include img.html src='pieces/man-versus-himself.jpg' alt='Book cover' %}
 
 I wrote this book in 30 days, during NaNoWriMo.

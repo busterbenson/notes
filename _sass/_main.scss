@@ -9,7 +9,7 @@ c  *,:after,:before {
 body {
 	font-family: system-ui, sans-serif;
 	-webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
 	line-height:1.5;
 	font-size: 1rem;
 	color: rgb(22, 23, 26);
@@ -21,9 +21,6 @@ nav ul {
 
 a {
   color: #000;
-  //text-decoration-skip-ink: auto;
-  text-decoration: underline;
-  cursor: pointer;
 }
 
 pre {
@@ -33,15 +30,18 @@ pre {
 
 .featured-image {
 	margin-top: 1em;	
+	img {
+		border: 1px solid #ccc;	
+	}
 }
 
-picture {
+img.outlined {
+	border: 1px solid #ccc;
+}
+
+div.image {
 	margin: 1em 0 1em 0;
 	padding: 0;
-
-	img {
-		border: 1px solid #ccc;
-	}
 }
 
 .post p {
@@ -51,6 +51,10 @@ picture {
 
 .post h1, .post h2, .post h3, .post h4 {
 	margin: 1.5rem 0 0 0;
+}
+
+.post h1.title {
+	margin-top: 1rem;
 }
 
 .post h2:first-child, .project h2:first-child, .photo h2:first-child {
@@ -91,7 +95,7 @@ hr {
 }
 
 header {
-	flex-basis:10rem;
+	//flex-basis:15rem;
 	flex-grow:1;
 	position:relative;
 }
@@ -162,7 +166,9 @@ strong, b {
 	white-space:nowrap;
 	overflow:hidden;
 	text-overflow:ellipsis;
-	text-decoration: none;
+}
+
+.posts a:hover {
 }
 
 .posts li time, .projects li time {
@@ -174,19 +180,21 @@ strong, b {
 .post ul, .project ul, .post ol  {
 	padding-left: 20px;
 	margin-bottom: 1rem;
-	//list-style-position: inside;
 
 	li {
 		margin-bottom: 0.5rem;
 	}
 }
+ul.post-list, ul.post-list li, ul#results-container, ul#results-container li {
+  padding-inline-start: 0px;	
+}
 
 main {
-	display:flex;
-	flex-wrap:wrap;
-	max-width:60rem;
-	margin:2rem auto;
-	padding:1rem;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 60rem;
+	margin: 2rem auto;
+	padding: 1rem;
 }
 
 
@@ -212,12 +220,11 @@ main {
 }
 
 section {
-	flex-basis:0;
-	flex-grow:999;
-	min-width:70%;
-	display:flex;
-	flex-direction:column;
-	
+	flex-basis: 0;
+	flex-grow: 999;
+	min-width: 70%;
+	display: flex;
+	flex-direction: column;
 }
 
 figcaption {
@@ -229,7 +236,7 @@ figcaption {
   margin-block-end: 0;
   margin-inline-start: 0px;
   margin-inline-end: 35px;
-  padding-inline-start: 40px;
+  padding-inline-start: 0px;
 }
 input[type=text]#search-input {
   font-size: normal;

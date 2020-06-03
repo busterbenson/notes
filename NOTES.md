@@ -4,8 +4,8 @@
 `bundle exec jekyll serve --incremental`
 
 ## Working with images (using webp)
-- defaults in _data/picture.yml
-- https://rbuchberger.github.io/jekyll_picture_tag/
+- uses netlify's image_tag
+- {% include img.html src=page.image alt=page.title %}
 
 ## Embedding tweets
 - uses jekyll-twitter-plugin
