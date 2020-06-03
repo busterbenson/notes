@@ -4,7 +4,7 @@
  <title>Buster Benson</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2020-06-03T00:13:18-07:00</updated>
+ <updated>2020-06-03T00:19:26-07:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name></name>
@@ -2229,7 +2229,7 @@ Imagine that you want to prepare for a perfect future. You somehow manage to ama
 
 &lt;h2 id=&quot;3-lifes-chaos-monkey&quot;&gt;#3 Life’s Chaos Monkey&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/pieces/live-like-a-hydra-2.jpg&quot; alt=&quot;Chaos Monkey&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;image &quot;&gt;&lt;img src=&quot;/assets/images/pieces/live-like-a-hydra-2-1242x976.jpg&quot; alt=&quot;Chaos Monkey&quot; caption=&quot;Chaos Monkey&quot; width=&quot;100%&quot; srcset=&quot;/assets/images/pieces/live-like-a-hydra-2-1242x976.jpg 1x, /assets/images/pieces/live-like-a-hydra-2-1242x976.jpg 2x, /assets/images/pieces/live-like-a-hydra-2-1242x976.jpg 3x&quot; /&gt;&lt;/div&gt;
 
 &lt;p&gt;I’ve spent a lot of time thinking about goals (43things.com) and habits (healthmonth.com, 750words.com, 8:36pm) over the years, and I’ve long believed that the only way to change anything about your life is to guard against failure. Now I realize it’s more than that.&lt;/p&gt;
 
@@ -2345,7 +2345,7 @@ Imagine that you want to prepare for a perfect future. You somehow manage to ama
 &lt;p&gt;Create a document on your computer, phone, or in a notebook titled something like &lt;strong&gt;“Review Every Month”&lt;/strong&gt; and create sections for “My Goals”, “My Interests”, “My People”, “My Beliefs”, and “Chaos Monkey Tricks”.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;See my doc as an example: &lt;a href=&quot;/beliefs&quot;&gt;Book of Beliefs&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;See my doc as an example: &lt;a href=&quot;/codex&quot;&gt;Book of Beliefs&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;On the 1st day of the month, every month, open your “Review Every Month” document:&lt;/p&gt;

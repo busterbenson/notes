@@ -46,7 +46,7 @@ The philosophy is simple: by building a server architecture that expects failure
 
 ## #3 Life’s Chaos Monkey
 
-![Chaos Monkey](/images/pieces/live-like-a-hydra-2.jpg)
+{% include img.html src='pieces/live-like-a-hydra-2.jpg' alt='Chaos Monkey' width='100%' %}
 
 I’ve spent a lot of time thinking about goals (43things.com) and habits (healthmonth.com, 750words.com, 8:36pm) over the years, and I’ve long believed that the only way to change anything about your life is to guard against failure. Now I realize it’s more than that.
 
@@ -147,7 +147,7 @@ Set a reminder on your phone, in your calendar, as a post-it note on your bathro
 
 Create a document on your computer, phone, or in a notebook titled something like **“Review Every Month”** and create sections for “My Goals”, “My Interests”, “My People”, “My Beliefs”, and “Chaos Monkey Tricks”.
 
-> See my doc as an example: [Book of Beliefs](/beliefs)
+> See my doc as an example: [Book of Beliefs](/codex)
 
 On the 1st day of the month, every month, open your “Review Every Month” document:
 

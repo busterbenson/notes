@@ -9,7 +9,7 @@ layout: default
   {% endif %}
   
   {% if page.image and page.image != blank %}
-  	{% include img.html src=page.image class="featured-image" alt=page.title %}
+  	{% include img.html src=page.image class="featured-image" alt=page.title width="100%" %}
   {% endif %}
 
   {{ content }}
