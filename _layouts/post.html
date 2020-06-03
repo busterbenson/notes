@@ -4,6 +4,9 @@ layout: default
 
 <section class="post">
   <h1 class="title">{{ page.title }}</h1>
+  {% if page.one_liner and page.one_liner != blank %}
+    <h2 class="subtitle">{{ page.one_liner }}</h2>
+  {% endif %}
   {% if page.link and page.link != blank %}
   	<small>The original post is here: <a href="{{ page.link }}">{{ page.link }}</a></small>
   {% endif %}
@@ -20,6 +23,10 @@ layout: default
     		<a href="/pile/{{pile}}">{{pile}}</a>{% unless forloop.last %}, {% endunless %}
     	{% endfor %}
     {% endif %}
+    {% if page.link and page.link != blank %}
+      &middot; <a href="{{ page.link }}">The original post</a>
+    {% endif %}
+
   </div>
 </section>
 

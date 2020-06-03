@@ -9,13 +9,13 @@ piles			   : ['self-tracking']
 comment_link : 
 ---
 
-It’s been about 3 years since [my last update](/pieces/2007-02-07-history-of-my-self-tracking/) on my self-tracking setup. I figured I should write about it again since I’ve recently found a system that works really well for me, and is simple enough for anyone to do.
+It’s been about 3 years since [my last update](/2007/02/07/history-of-my-self-tracking) on my self-tracking setup. I figured I should write about it again since I’ve recently found a system that works really well for me, and is simple enough for anyone to do.
 
-#### Why do I track things about my life?
+## Why do I track things about my life?
 
 Despite my long-running obsession with Quantified Self and history of tracking pretty much anything that is trackable, it has been many years now since I tracked anything simply for the pleasure of tracking it. That pleasure, for me, is gone. The only reason to track anything, now, is to learn something new and meaningful about myself.
 
-#### What am I tracking right now?
+## What am I tracking right now?
 
 I’ve found, over the years, that there are certain things in my daily routine that have more impact on my happiness, productivity, and purpose than others.
 
@@ -25,7 +25,7 @@ One of the striking qualities of these things is that they don’t really requir
 
 Sure, I can use a Zeo to track sleep, and a Fitbit to track walking, and a calorie tracker to track what I’m eating, but for the purposes of finding new meaning in my life this isn’t necessary.
 
-#### How do I track?
+## How do I track?
 
 I use a spreadsheet saved to a Dropbox folder so I can access it from any computer.
 
@@ -51,7 +51,7 @@ Because it’s all in a spreadsheet, I can have a little control over what exact
 
 The algorithmic day score is designed to trigger a “point” on the smallest meaningful unit that I think makes my day better.
 
-#### Why do I like this approach?
+## Why do I like this approach?
 
 Even though this is all tracked with a very simple spreadsheet, I’m able to have control over what I think is meaningful. There’s no temptation to collect information that is precise (how many steps did I walk, how many calories did I eat) unless I also think there is a direct translation of that precision to the day’s self-reported or algorithmic scores.
 
@@ -65,7 +65,7 @@ It’s flexible because I can add or remove a field whenever I feel like it. I�
 
 Also, I can also leave out answers when I don’t have them. No need for me to weigh myself every day. For the moment, I don’t have any weight inputs in the algorithmic day score because I don’t currently think that there’s much of a correlation between my weight and the quality of the day. If that changes in the future, I can update the function in the algorithmic day score field to be retroactive (or not).
 
-#### How do I visualize this data?
+## How do I visualize this data?
 
 Here’s the really cool thing. There’s a new app out there called [Wizard](http://wizard.evanmiller.org/) by Evan Miller that helps you create visualizations from spreadsheets! Just export it as a CSV (comma separated values) and instantly get to see if there are statistical correlations between any of your data points!
 
@@ -77,5 +77,5 @@ For example, after a month or so of data, I am seeing that my day score is highe
 
 Similarly, because I’m tracking days of the week and the city I’m in, I can very quickly see how they are correlated to meaningful work.
 
-#### Conclusions
+## Conclusions
 I’m happy with this setup because for the first time I feel like I’m tracking my life at the right level of precision. Using a spreadsheet and a simple statistical visualization tool gives me the level of control and autonomy that no other apps or services out there have been able to deliver. It’s also simple and forgiving enough that missed days, changes in life, and new ideas about what’s meaningful to track are easy to adapt to without much trouble.

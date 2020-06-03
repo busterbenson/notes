@@ -70,6 +70,12 @@ div.image {
 	font-size: 30px;
 	margin-top: 0;
 }
+.post h2.subtitle {
+	font-family: "Open Sans", system-ui, sans-serif;
+	font-size: 24px;
+	font-weight: 200;
+	margin-top: 0;
+}
 
 .post h2:first-child, .project h2:first-child, .photo h2:first-child {
 	margin-top: 0;
@@ -157,14 +163,20 @@ h1 {
 	color: #000;
 }
 
-h2 {
+h2, h4 {
 	font-style: normal;
 	color: #334;
 }
 
-h3 {
+h3, h5 {
 	font-style: normal;
 	color: #667;
+}
+h4 {
+	font-size: 20px;
+}
+h5 {
+	font-size: 20px;
 }
 
 section h1:first-child {
