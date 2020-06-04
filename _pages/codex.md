@@ -12,6 +12,6 @@ Maintaining it has become one of the most treasured activities in my life. It’
 
 It often moves around, to account for my relationship to technology at the time, and what I perceive to be the best confluence of change-tracking, accountability, readability, etc. As of June of 2020, it lives in a Dropbox Paper document [over here](https://paper.dropbox.com/doc/Codex-Vitae--A1OJaE9fBGp9BpUxOd7QP3S4AQ-rRJ8akyi4ky4Sdc8CQscV).
 
-<button type="button" class="btn btn-outline-primary btn-lg">[Read it!](https://paper.dropbox.com/doc/Codex-Vitae--A1OJaE9fBGp9BpUxOd7QP3S4AQ-rRJ8akyi4ky4Sdc8CQscV)</button>
+<button type="button" class="btn btn-outline-secondary btn-lg">[Read it!](https://paper.dropbox.com/doc/Codex-Vitae--A1OJaE9fBGp9BpUxOd7QP3S4AQ-rRJ8akyi4ky4Sdc8CQscV)</button>
 
 If you are interested in making one of your own, I recommend starting small and slowly building it up over time. [Here's the one I first came up with in 2012](https://github.com/busterbenson/public/blob/master/book-of-beliefs-2012.md). Also, be patient with yourself as you slowly realize that you don't even know what your beliefs are, and that they're really difficult to pin down. That's part of the fun!

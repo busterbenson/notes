@@ -1,0 +1,265 @@
+'2020-12-25':
+  - name: 🌚 New Lavendar
+    desc: Lunation 1200 starts at 9:13pm (pacific). 
+    phase: new moon
+    lunation: 1200
+    time: 8:45pm
+
+'2020-01-10':
+  - name: Full Lavendar
+    moon_name: 🐺 Wolf Moon
+    desc: Fullest Wolf moon at 11:21am (pacific).
+    phase: full moon
+    time: 11:21am
+
+'2020-01-24':
+  - name: 🌚 New Magenta
+    desc: Lunation 1201 starts at 1:42pm (pacific).
+    phase: new moon
+    lunation: 1201
+    time: 1:42pm
+
+'2020-02-08':
+  - name: Full Magenta
+    moon_name: ❄️ Snow Moon
+    desc: Fullest Snow moon at 11:33pm (pacific).
+    phase: full moon
+    time: 11:33pm
+
+'2020-02-23':
+  - name: 🌚 New Beet
+    desc: Lunation 1202 starts at 7:32am (pacific).
+    phase: new moon
+    lunation: 1202
+    time: 7:32am
+
+'2020-03-09':
+  - name: Beet
+    moon_name: 🐛 Worm Moon (Super)
+    desc: Fullest Worm moon at 10:47am (pacific).
+    phase: full moon
+    time: 10:47am
+
+'2020-03-24':
+  - name: 🌚 New Red (Micro)
+    desc: Lunation 1203 starts at 2:28am (pacific).
+    phase: new moon
+    lunation: 1203
+    time: 2:28am
+
+'2020-04-07':
+  - name: Red
+    moon_name: 🌸 Pink Moon (Super)
+    desc: Fullest Pink moon at 7:35pm (pacific).
+    phase: full moon
+    time: 7:35pm
+
+'2020-04-22':
+  - name: 🌚 New Orange
+    desc: Lunation 1204 starts at 7:25pm (pacific).
+    phase: new moon
+    lunation: 1204
+    time: 7:25pm
+
+'2020-05-07':
+  - name: Orange
+    moon_name: 🌷 Flower Moon
+    desc: Fullest Flower moon at 3:45am (pacific).
+    phase: full moon
+    time: 3:45am
+
+'2020-05-22':
+  - name: 🌚 New Yellow
+    desc: Lunation 1205 starts at 10:38am (pacific).
+    phase: new moon
+    lunation: 1205
+    time: 10:38am
+
+'2020-06-05':
+  - name: Yellow
+    moon_name: 🍓 Strawberry Moon
+    desc: Fullest Strawberry moon at 12:12pm (pacific).
+    phase: full moon
+    time: 12:12pm
+
+'2020-06-20':
+  - name: 🌚 New Chartreuse
+    desc: Lunation 1206 starts at 11:41pm (pacific).
+    phase: new moon
+    lunation: 1206
+    time: 11:41pm
+
+'2020-07-04':
+  - name: Chartreuse
+    moon_name: 🦌 Buck Moon
+    phase: full moon
+    desc: Fullest Buck moon at 9:44pm (pacific).
+    time: 9:44pm
+
+'2020-07-20':
+  - name: 🌚 New Green
+    desc: Lunation 1207 starts at 10:32am (pacific).
+    phase: new moon
+    lunation: 1207
+    time: 10:32am
+
+'2020-08-03':
+  - name: Green
+    moon_name: 🐟 Sturgeon Moon
+    desc: Fullest Sturgeon moon at 8:58am (pacific).
+    phase: full moon
+    time: 8:58am
+
+'2020-08-18':
+  - name: 🌚 New Clover
+    desc: Lunation 1208 starts at 7:41pm (pacific).
+    phase: new moon
+    lunation: 1208
+    time: 7:41pm
+
+'2020-09-01':
+  - name: Clover
+    moon_name: 🌽 Corn Moon
+    desc: Fullest Corn moon at 10:22pm (pacific).
+    phase: full moon
+    time: 10:22pm
+
+'2020-09-17':
+  - name: 🌚 New Cyan
+    desc: Lunation 1209 starts at 4:00am (pacific).
+    phase: new moon
+    lunation: 1209
+    time: 4:00am
+
+'2020-10-01':
+  - name: Cyan
+    moon_name: 🎃 Harvest Moon
+    desc: Fullest Harvest moon at 2:05pm (pacific).
+    phase: full moon
+    time: 2:05pm
+
+'2020-10-16':
+  - name: 🌚 New Azure (Micro)
+    desc: Lunation 1210 starts at 12:31pm (pacific).
+    phase: new moon
+    lunation: 1210
+    time: 12:31pm
+
+'2020-10-31':
+  - name: Azure
+    moon_name: 🔵 Blue Moon
+    desc: Fullest Blue moon at 7:49am (pacific), and Blue because it's the 2nd full moon in October.
+    phase: full moon
+    time: 7:49am
+
+'2020-11-14':
+  - name: 🌚 New Blue
+    desc: Lunation 1211 starts at 9:07pm (pacific).
+    phase: new moon
+    lunation: 1211
+    time: 9:07pm
+
+'2020-11-30':
+  - name: Blue
+    moon_name: 🦃 Turkey Moon
+    desc: Fullest moon at 1:29am (pacific).
+    phase: full moon
+    time: 1:29am
+
+'2020-12-14':
+  - name: 🌚 New Violet
+    desc: Lunation 1212 starts at 8:16am (pacific).
+    phase: new moon
+    lunation: 1212
+    time: 8:16am
+
+'2020-12-29':
+  - name: Violet
+    moon_name: 🥶 Cold Moon
+    desc: Fullest moon at 7:28pm (pacific).
+    phase: full moon
+    time: 7:28pm
+
+'2021-01-12':
+  - name: 🌚 New Lavendar
+    desc: Lunation 1213 starts at 9:00pm (pacific).
+    phase: new moon
+    lunation: 1213
+    time: 9:00pm
+
+'2021-01-28':
+  - name: Lavendar
+    moon_name: 🐺 Wolf Moon
+    desc: Fullest moon at 11:16am (pacific).
+    phase: full moon
+    time: 11:16am
+
+'2021-01-12':
+  - name: 🌚 New Magenta
+    desc: Lunation 1214 starts at 9:00pm (pacific).
+    phase: new moon
+    lunation: 1214
+    time: 9:00pm
+
+'2021-02-27':
+  - name: Magenta
+    moon_name: ❄️ Snow Moon
+    desc: Fullest moon at 12:17am (pacific).
+    phase: full moon
+    time: 12:17am
+
+'2021-03-13':
+  - name: 🌚 New Beet
+    desc: Lunation 1215 starts at 2:21am (pacific).
+    phase: new moon
+    lunation: 1215
+    time: 2:21am
+
+'2021-03-28':
+  - name: Beet
+    moon_name: 🐛 Worm Moon
+    desc: Fullest moon at 11:48am (pacific).
+    phase: full moon
+    time: 11:48am
+
+'2021-04-11':
+  - name: 🌚 New Red
+    desc: Lunation 1216 starts at 7:30pm (pacific).
+    phase: new moon
+    lunation: 1216
+    time: 7:30pm
+
+'2021-04-26':
+  - name: Red
+    moon_name: 🌸 Pink Moon
+    desc: Fullest moon at 8:31pm (pacific).
+    phase: full moon
+    time: 8:31pm
+
+'2021-05-11':
+  - name: 🌚 New Orange
+    desc: Lunation 1217 starts at 11:59am (pacific).
+    phase: new moon
+    lunation: 1217
+    time: 11:59am
+
+'2021-05-26':
+  - name: Orange
+    moon_name: 🌷 Flower Moon
+    desc: Fullest moon at 4:13am (pacific).
+    phase: full moon
+    time: 4:13am
+
+'2021-06-10':
+  - name: 🌚 New Yellow
+    desc: Lunation 1218 starts at 3:52am (pacific).
+    phase: new moon
+    lunation: 1218
+    time: 3:52am
+
+'2021-06-24':
+  - name: Yellow
+    moon_name: 🍓 Strawberry Moon
+    desc: Fullest moon at 11:39am (pacific).
+    phase: full moon
+    time: 11:39am   

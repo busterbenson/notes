@@ -36,7 +36,8 @@ max_width: false
 			    <a name="decade-{{ age }}"></a>
 			    <div class="row text-left display-block w-100 mt-4">
 				    <div class="col sticky-top mt-1" style="top: 60px; background-color: #fff;"><h3 class="mt-0">
-				      {% if age == 0 %}
+				    	{% if page.suppress_decades %}
+				      {% elsif age == 0 %}
 				        My first ten years
 				      {% elsif age == 10 %}
 				        My teens
@@ -55,7 +56,7 @@ max_width: false
 		    		 data-placement="right" 
 		    		 data-trigger="hover" 
 		    		 data-content="">
-		      {{ age }} in {{ year }}
+		      {% unless page.suppress_age %}{{ age }} in {% endunless %}{{ year }}
 		    </div>
 
 		    {% for week in (0..53) %}
@@ -64,7 +65,7 @@ max_width: false
 			    {% assign this_week_date = this_year | date: "%s" | plus: week_modifier | date: "%Y-%m-%d" %}
 			    {% assign end_year_date = this_week_date | date: "%s" | plus: week_modifier | date: "%Y-%m-%d" %}
 
-		    	<div class="week border {{ week_border_class }} float-left text-center text-truncate" 
+		    	<div data-date="{{ this_week_date }}" class="week border {{ week_border_class }} float-left text-center text-truncate" 
 		    			 style="height: 2em; max-height: 2em; padding: 2px 5px; margin: 2px;">
 		    		{% for day in (0..6) %}
 					    {% assign day_modifier = 86400 | times: day %}
@@ -89,7 +90,14 @@ max_width: false
 <script>
 	$(document).ready(function () {
 	  $(function () {
-	    $('[data-toggle="popover"]').popover()
+	    $('[data-toggle="popover"]').popover();
+
+			var today = new Date();
+			$( ".week" ).each(function( index ) {
+			  if (today < Date.parse($( this ).attr('data-date'))) {
+			  	$( this ).addClass('future-date');
+			  }
+			});
 	  })
 	});
 </script>

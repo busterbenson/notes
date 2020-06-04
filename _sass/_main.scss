@@ -40,6 +40,9 @@ a {
 .btn a {
 	text-decoration: none;
 }
+.btn a:hover {
+	color: white;
+}
 
 pre {
 	margin: .5rem 0;
@@ -331,6 +334,9 @@ input[type=text]#search-input {
 		a {
 			text-decoration: none;
 		}
+	}
+	.future-date {
+		background-color: #eee;
 	}
 }
 
