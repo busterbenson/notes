@@ -6,7 +6,7 @@ author       : me
 one_liner    : "Raw notes with one quick pass on summarizing the 50 YouTube series."
 image			   : 
 piles			   : ['meta-crisis']
-comment_link : 
+redirect 		 : true
 ---
 
 

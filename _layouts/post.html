@@ -15,7 +15,7 @@ layout: default
   	{% include img.html src=page.image class="featured-image" alt=page.title width="500" %}
   {% endif %}
 
-  {{ content }}
+  <div class="content mt-3">{{ content }}</div>
   <div class="meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time> 
   	{% if page.piles %}
   		&middot; In these piles:
