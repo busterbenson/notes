@@ -6,7 +6,6 @@ author       : Sarah Mei
 one_liner    : "Every technology has both upsides and downsides."
 image			   : 
 piles			   : ['negative-space']
-comment_link : 
 ---
 
 It starts here, click through to read:

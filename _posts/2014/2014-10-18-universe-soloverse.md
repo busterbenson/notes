@@ -6,5 +6,5 @@ author       : me
 one_liner    : "Each of us has an entire universe stored in our heads, and I call that the soloverse."
 image			   : pieces/universe-soloverse.jpg
 piles			   : ['internal-voices']
-comment_link : 
+redirect 	   : true
 ---

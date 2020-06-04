@@ -11,4 +11,4 @@ comment_link :
 
 {% include img.html src='pieces/man-versus-himself.jpg' alt='Book cover' %}
 
-I wrote this book in 30 days, during NaNoWriMo.
+I wrote [this book](https://amzn.to/2RpYWrW) in 30 days, during NaNoWriMo. It's not worth reading unless you are curious what kind of weird book pops out of a head in 30 days.

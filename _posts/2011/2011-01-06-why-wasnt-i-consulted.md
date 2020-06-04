@@ -6,5 +6,5 @@ author       : Paul Ford
 one_liner    : "The web is a customer service medium more than anything else."
 image			   : 
 piles			   : ['product-management', 'technology']
-comment_link : 
+redirect 	   : true
 ---

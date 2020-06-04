@@ -6,6 +6,6 @@ author       : me
 one_liner    : "Consider the environment that your resolutions are made in."
 image			   : pieces/make-better-resolution.jpg
 piles			   : ['behavior-change']
-comment_link : 
+redirect 	   : true
 ---
 

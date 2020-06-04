@@ -6,5 +6,5 @@ author       : me
 one_liner    : "Read this if you think learning about biases will make you more persuasive."
 image			   : 
 piles			   : ['cognitive-biases']
-comment_link : 
+redirect 	   : true
 ---

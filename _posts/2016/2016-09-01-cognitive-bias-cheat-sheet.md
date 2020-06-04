@@ -6,5 +6,5 @@ author       : me
 one_liner    : "Original full analysis of 200+ cognitive biases."
 image			   : 
 piles			   : ['cognitive-biases']
-comment_link : 
+redirect 	   : true
 ---

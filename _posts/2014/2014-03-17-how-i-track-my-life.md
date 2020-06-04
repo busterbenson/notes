@@ -6,5 +6,5 @@ author       : me
 one_liner    : "The most important thing to track is quality time."
 image			   : pieces/how-i-track-my-life.png
 piles			   : ['behavior-change', 'quality-time', 'technology']
-comment_link : 
+redirect 	   : true
 ---

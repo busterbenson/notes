@@ -6,5 +6,5 @@ author       : Paul Buchheit
 one_liner    : "A sort of winding manifesto for building technology products."
 image			   : 
 piles			   : ['product-management']
-comment_link : 
+redirect 	   : true
 ---

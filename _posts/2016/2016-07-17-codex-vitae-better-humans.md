@@ -6,5 +6,5 @@ author       : Tony Stubblebine
 one_liner    : ""
 image			   : 
 piles			   : ['self-tracking', 'codex-vitae']
-comment_link : 
+redirect 	   : true
 ---
