@@ -5,7 +5,7 @@ author       : me
 
 one_liner    : "Written for the Bold Academy blog."
 image			   : 
-piles			   : ['behavior-change']
+piles			   : ['behavior-change', '750-words']
 comment_link : 
 ---
 

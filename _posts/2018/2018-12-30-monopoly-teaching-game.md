@@ -5,7 +5,7 @@ author       : Wharton Learning Lab
 
 one_liner    : "Games can and have been used as very effective educational tools."
 image			   : 
-piles			   : ['parenting', 'game-theory']
+piles			   : ['game-theory']
 comment_link : 
 ---
 

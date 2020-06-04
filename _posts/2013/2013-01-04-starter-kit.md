@@ -5,7 +5,7 @@ author       : me
 
 one_liner    : "A silly invention that could destroy us."
 image			   : 
-piles			   : ['thought-experiment', 'science-fiction']
+piles			   : ['thought-experiment', 'artificial-intelligence']
 comment_link : 
 ---
 

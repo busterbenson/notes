@@ -5,7 +5,7 @@ author       : me
 
 one_liner    : "A book that captures everything that you think is worth knowing about your life. Doesn't have to be a real book."
 image			   : 
-piles			   : ['robin-sloan', 'self-reflection', 'codex-vitae']
+piles			   : ['self-reflection', 'codex-vitae', 'project']
 comment_link : 
 ---
 

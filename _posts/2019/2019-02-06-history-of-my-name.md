@@ -2,7 +2,7 @@
 title        : "History of my name"
 one_liner    : "A lot of people ask me if Buster is my real name. Here's the answer."
 image			   : 
-piles			   : ['self-reflection']
+piles			   : ['self-reflection', 'family']
 link         : 
 comment_link : 
 author       : me

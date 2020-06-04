@@ -5,7 +5,7 @@ author       : me
 
 one_liner    : "Thoughts on how to get stronger when things are chaotic."
 image			   : pieces/live-like-a-hydra.jpg
-piles			   : ['resiliance', 'behavior-change', 'self-tracking']
+piles			   : ['resiliance', 'behavior-change', 'self-tracking', 'personal-mythology']
 comment_link : 
 ---
 

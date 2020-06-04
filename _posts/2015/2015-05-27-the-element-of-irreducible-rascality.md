@@ -5,7 +5,7 @@ author       : me
 
 one_liner    : "This is one of my favorite phrases coined by Alan Watts"
 image			   : 
-piles			   : ['alan-watts', 'strange-loops']
+piles			   : ['personal-mythology']
 comment_link : 
 ---
 

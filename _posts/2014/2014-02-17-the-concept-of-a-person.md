@@ -5,7 +5,7 @@ author       : me
 
 one_liner    : "The most important interface ever developed."
 image			   : 
-piles			   : ['kevin-simler', 'internal-voices']
+piles			   : ['internal-voices']
 comment_link : 
 ---
 

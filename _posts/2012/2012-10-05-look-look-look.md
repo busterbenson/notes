@@ -5,7 +5,7 @@ author       : me
 
 one_liner    : "Robin Sloan's Fish tap-essay / manifesto about returning to things we love."
 image			   : pieces/look-look-look.png
-piles			   : ['observation','robin-sloan']
+piles			   : ['mindset']
 comment_link : 
 ---
 

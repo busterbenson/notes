@@ -5,7 +5,7 @@ author       : me
 
 one_liner    : "I’ve learned that there is beauty in the impossible, in the unfinishable, in the imperfect.  I’ve learned that it’s okay to be boring, and to let other people know you’re boring."
 image			   : projects/836pm.png
-piles			   : ['self-reflection', '836pm']
+piles			   : ['self-reflection', 'project', 'family']
 comment_link : 
 ---
 

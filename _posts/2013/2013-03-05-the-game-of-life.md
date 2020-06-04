@@ -5,7 +5,7 @@ author       : me
 
 one_liner    : "With 4 levels."
 image			   : 
-piles			   : ['motivation']
+piles			   : ['mindset']
 comment_link : 
 ---
 

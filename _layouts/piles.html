@@ -8,14 +8,16 @@ title: The Piles
 	{{ content }}
 
 	{% assign rawpiles = "" %}
+	{% assign rawpiles_array = "" %}
+	{% assign all_piles = "" %}
+
 	{% for post in site.posts %}
 	  {% assign tpiles = post.piles | join:'|' | append:'|' %}
 	  {% assign rawpiles = rawpiles | append:tpiles %}
 	{% endfor %}
-	{% assign rawpiles = rawpiles | split:'|' | sort %}
+	{% assign rawpiles_array = rawpiles | split:'|' | sort %}
 
-	{% assign all_piles = "" %}
-	{% for pile in rawpiles %}
+	{% for pile in rawpiles_array %}
 	  {% if pile != "" %}
 	    {% if all_piles == "" %}
 	      {% assign piles = pile | split:'|' %}
@@ -30,7 +32,13 @@ title: The Piles
 	<div class="row">
 	{% for pile in all_piles %}
 		{% if pile != "" %}
-			<div class="col-6 col-md-4 mb-2"><a href="/pile/{{ pile }}">{{ pile }}</a></div>
+			<div class="col-6 col-md-4 mb-2">
+				<a href="/pile/{{ pile }}">{{ pile }}</a>
+				{% assign count = rawpiles | split: pile | size | minus: 1 %}
+				{% if count > 1 %}
+					<small>{{ count }}</small>
+				{% endif %}
+			</div>
 		{% endif %}
 	{% endfor %}
 	</div>

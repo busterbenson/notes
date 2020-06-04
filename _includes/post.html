@@ -1,0 +1,8 @@
+<li>
+	{% if post.link and post.redirect == true %}
+		<a href="{{ post.link }}">{{ post.title }}</a>
+	{% else %}
+		<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+	{% endif %}
+	<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%m-%d-%Y" }}</time>
+</li>

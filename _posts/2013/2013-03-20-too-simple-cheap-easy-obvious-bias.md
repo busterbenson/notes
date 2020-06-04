@@ -5,7 +5,7 @@ author       : me
 
 one_liner    : "I made this one up."
 image			   : 
-piles			   : ['cognitive-biases']
+piles			   : ['cognitive-biases', 'mindfulness']
 comment_link : 
 ---
 

@@ -2,7 +2,7 @@
 title        : "Can a friendly and diverse dialogue exist between liberals and conservatives on the internet?"
 one_liner    : "Let’s learn from past mistakes and keep trying."
 image			   : 
-piles			   : ['dialogue', 'fruitful']
+piles			   : ['dialogue', 'community']
 link         : https://medium.com/@buster/can-a-friendly-and-diverse-dialogue-exist-between-liberals-and-conservatives-on-the-internet-3bd54025735b
 comment_link : 
 author       : me

@@ -5,7 +5,7 @@ author       : me
 
 one_liner    : "First 9 participants."
 image			   : 
-piles			   : ['behavior-change', 'coaching']
+piles			   : ['behavior-change', 'project']
 comment_link : 
 ---
 

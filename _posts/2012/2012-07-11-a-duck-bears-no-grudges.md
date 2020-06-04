@@ -5,7 +5,7 @@ author       : me
 
 one_liner    : "The post I wrote when we closed down Habit Labs."
 image			   : 
-piles			   : ['behavior-change', 'habit-labs']
+piles			   : ['behavior-change', 'mindset']
 comment_link : 
 ---
 
