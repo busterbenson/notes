@@ -1,15 +1,37 @@
 ---
 layout: default
-title: Piles
+title: The Piles
 ---
 
 <section class="posts">
 	<h1>{{ page.title }}</h1>
-{% assign piles = site.piles | sort %}
-<ul>
-{% for pile in piles %}
- <li><a href="/pile/{{ pile | first | slugify }}/">{{ pile[0] | replace:'-', ' ' }} ({{ pile | last | size }}){% unless forloop.last %}, {% endunless %}</a></li>
-{% endfor %}
-</ul>
+	{{ content }}
 
+	{% assign rawpiles = "" %}
+	{% for post in site.posts %}
+	  {% assign tpiles = post.piles | join:'|' | append:'|' %}
+	  {% assign rawpiles = rawpiles | append:tpiles %}
+	{% endfor %}
+	{% assign rawpiles = rawpiles | split:'|' | sort %}
+
+	{% assign all_piles = "" %}
+	{% for pile in rawpiles %}
+	  {% if pile != "" %}
+	    {% if all_piles == "" %}
+	      {% assign piles = pile | split:'|' %}
+	    {% endif %}
+	    {% unless all_piles contains pile %}
+	      {% assign all_piles = all_piles | join:'|' | append:'|' | append:pile | split:'|' %}
+	    {% endunless %}
+	  {% endif %}
+	{% endfor %}
+
+
+	<div class="row">
+	{% for pile in all_piles %}
+		{% if pile != "" %}
+			<div class="col-6 col-md-4 mb-2"><a href="/pile/{{ pile }}">{{ pile }}</a></div>
+		{% endif %}
+	{% endfor %}
+	</div>
 </section>

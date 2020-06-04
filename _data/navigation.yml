@@ -2,6 +2,9 @@ links:
 - title: Buster's Notes
   url: /
   layout: post
+- title: The Piles
+  url: /piles
+  layout: piles
 - title: Yearly Reviews
   url: /pile/year-in-review
   tag: year-in-review
