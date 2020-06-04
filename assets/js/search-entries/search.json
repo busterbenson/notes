@@ -8,6 +8,8 @@ layout: nil
       "title"       : "{{ post.title | strip_html | escape }}",
       "url"         : "{{ site.baseurl }}{{ post.url }}",
       "link"        : "{{ post.link }}",
+      "result_link" : {% if post.redirect == true %}"{{ post.link }}"{% else %}"{{ site.baseurl }}{{ post.url }}"{% endif %},
+      "link_attr"   : {% if post.redirect == true %}"target='_blank' class='external-link'"{% else %}""{% endif %},
       "piles"       : "{{ post.piles | join: ', ' }}",
       "date"        : "{{ post.date | date: '%m-%d-%Y' }}",
       "one_liner"   : "{{ post.one_liner | strip_html | strip_newlines | escape }}",

@@ -25,9 +25,9 @@ SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
   json: '/assets/js/search-entries/search.json',
-  searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time></li>',
+  searchResultTemplate: '<li><a href="{result_link}" title="{desc}" {link_attr}>{title}</a><time>{date}</time></li>',
   noResultsText: 'No results found',
-  limit: 10,
+  limit: 25,
   fuzzy: false,
   exclude: ['the','a']
 })
