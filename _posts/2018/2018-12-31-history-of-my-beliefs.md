@@ -5,7 +5,7 @@ author       : me
 
 one_liner    : "My beliefs are constantly changing, and so are the tools I use to share them."
 image			   : 
-piles			   : ['meta', 'self-tracking', 'codex-vitae']
+piles			   : ['self-tracking', 'codex-vitae']
 comment_link : 
 ---
 

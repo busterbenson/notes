@@ -10,7 +10,7 @@ author       : Wikipedia
 
 I went down a strange research rabbit hole about the Hippocratic Oath, and tweeted about it: 
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The first interesting thing I learned about the Hippocratic Oath is that the words &quot;Primum non nocere&quot; or &quot;First, do no harm&quot; don&#39;t appear in the original. It has a more wishy-washy line about not harming people, but it&#39;s not central or primary to the oath.</p>&mdash; Buster (@buster) <a href="https://twitter.com/buster/status/1086040872649519104?ref_src=twsrc%5Etfw">January 17, 2019</a></blockquote>
+{% twitter https://twitter.com/buster/status/1086040872649519104 %}
 
 Click through for the rest.
 

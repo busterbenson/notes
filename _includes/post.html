@@ -1,4 +1,4 @@
-<li>
+<li class="mb-0">
 	{% if post.link and post.redirect == true %}
 		<a href="{{ post.link }}">{{ post.title }}</a>
 	{% else %}
@@ -6,3 +6,4 @@
 	{% endif %}
 	<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%m-%d-%Y" }}</time>
 </li>
+<div class="small mb-3" style="text-overflow: ellipsis;">{{ post.one_liner }}</div>

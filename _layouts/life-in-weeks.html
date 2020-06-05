@@ -90,8 +90,6 @@ max_width: false
 <script>
 	$(document).ready(function () {
 	  $(function () {
-	    $('[data-toggle="popover"]').popover();
-
 			var today = new Date();
 			$( ".week" ).each(function( index ) {
 			  if (today < Date.parse($( this ).attr('data-date'))) {
