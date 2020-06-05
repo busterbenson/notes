@@ -6,5 +6,6 @@ piles			   : ['dialogue', 'fruitful']
 link         : https://medium.com/fruitful-zone/the-beginning-of-a-fruitful-dialogue-d0f67734985f
 comment_link : 
 author       : me
+redirect 		 : true
 ---
 
