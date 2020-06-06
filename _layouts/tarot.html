@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<section class="post">
+  <h1 class="title">{{ page.title }}</h1>
+  {% if page.one_liner and page.one_liner != blank %}
+    <h2 class="subtitle">{{ page.one_liner }}</h2>
+  {% endif %}
+  {% if page.link and page.link != blank %}
+  	<small><a href="{{ page.link }}">{{ page.link | slice: 0, 40 }}...</a></small>
+  {% endif %}
+  
+  {% if page.image and page.image != blank %}
+  	{% include img.html src=page.image class="featured-image" alt=page.title width="500" %}
+  {% endif %}
+
+  <div class="content mt-3">{{ content }}</div>
+  <div class="meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time> 
+  	{% if page.piles %}
+  		&middot; In these piles:
+  		{% for pile in page.piles %}
+    		<a href="/pile/{{pile}}">{{pile}}</a>{% unless forloop.last %}, {% endunless %}
+    	{% endfor %}
+    {% endif %}
+    {% if page.link and page.link != blank %}
+      &middot; <a href="{{ page.link }}">Original post</a>
+    {% endif %}
+
+  </div>
+</section>
+
+

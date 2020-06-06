@@ -17,13 +17,6 @@ layout: default
   	<time datetime="{{ page.date | date_to_xmlschema }}">
   		Created {{ page.date | date: "%B %-d, %Y" }}
   	</time> 
-  	{% if page.piles %}
-  		&middot; In these piles:
-  		{% for pile in page.piles %}
-    		<a href="/pile/{{pile}}">{{pile}}</a>{% unless forloop.last %}, {% endunless %}
-    	{% endfor %}
-    {% endif %}
-
   </div>
 </section>
 
