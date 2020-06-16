@@ -5,9 +5,24 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 media_folder: 'assets/images'
 collections:
-  - name: 'notes'
-    label: 'Notes'
+  - name: '2020'
+    label: '2020 Notes'
     folder: '_posts/2020/'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Link', name: 'link', widget: 'string' }
+      - { label: 'Author', name: 'author', widget: 'string', default: 'me' }
+      - { label: 'One-Liner', name: 'one_liner', widget: 'string' }
+      - { label: 'Featured Image URL', name: 'image', widget: 'string' }
+      - { label: 'Piles', name: 'piles', widget: 'list' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'notes'
+    label: 'All Notes'
+    folder: '_posts/'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
