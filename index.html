@@ -21,14 +21,26 @@ layout: default
 
 <!-- Configuration -->
 <script>
-SimpleJekyllSearch({
-  searchInput: document.getElementById('search-input'),
-  resultsContainer: document.getElementById('results-container'),
-  json: '/assets/js/search-entries/search.json',
-  searchResultTemplate: '<li class="mb-0"><a href="{result_link}" title="{desc}" {link_attr}>{title}</a><time>{date}</time></li><div class="small mb-3" style="text-overflow: ellipsis;">{one_liner}</div>',
-  noResultsText: 'No results found',
-  limit: 25,
-  fuzzy: false,
-  exclude: ['the','a','on','in']
-})
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/assets/js/search-entries/search.json',
+    searchResultTemplate: '<li class="mb-0"><a href="{result_link}" title="{desc}" {link_attr}>{title}</a><time>{date}</time></li><div class="small mb-3" style="text-overflow: ellipsis;">{one_liner}</div>',
+    noResultsText: 'No results found',
+    limit: 25,
+    fuzzy: false,
+    exclude: ['the','a','on','in']
+  })
+</script>
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
 </script>
