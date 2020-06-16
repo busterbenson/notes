@@ -18,5 +18,5 @@ collections:
       - { label: 'Author', name: 'author', widget: 'string', default: 'me' }
       - { label: 'One-Liner', name: 'one_liner', widget: 'string' }
       - { label: 'Featured Image URL', name: 'image', widget: 'string' }
-      - { label: 'Piles', name: 'piles', widget: 'string' }
+      - { label: 'Piles', name: 'piles', widget: 'list' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
