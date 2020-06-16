@@ -5,8 +5,8 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 media_folder: 'assets/images'
 collections:
-  - name: '2020'
-    label: '2020'
+  - name: 'notes'
+    label: 'notes'
     folder: '_posts/'
     create: true
     path: '{{year}}/{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -17,7 +17,7 @@ collections:
       - { label: 'Link', name: 'link', widget: 'string' }
       - { label: 'Author', name: 'author', widget: 'string', default: 'me' }
       - { label: 'One-Liner', name: 'one_liner', widget: 'string' }
-      - { label: 'Featured Image', name: 'image', widget: 'file', 
+      - { label: 'Featured Image', name: 'image', widget: 'image', 
           media_library: { config: { multiple: true } } }
       - { label: 'Piles', name: 'piles', widget: 'list' }
       - { label: 'Redirect', name: 'redirect', widget: 'boolean', default: false }
