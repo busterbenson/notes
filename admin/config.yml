@@ -7,9 +7,9 @@ media_folder: 'assets/images'
 collections:
   - name: '2020'
     label: '2020'
-    folder: '_posts/2020/'
+    folder: '_posts/'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    path: '{{year}}/{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: false
     fields: &basicpost  
@@ -18,15 +18,7 @@ collections:
       - { label: 'Author', name: 'author', widget: 'string', default: 'me' }
       - { label: 'One-Liner', name: 'one_liner', widget: 'string' }
       - { label: 'Featured Image', name: 'image', widget: 'file', 
-          media_library: { config: multiple: true } }
+          media_library: { config: { multiple: true } } }
       - { label: 'Piles', name: 'piles', widget: 'list' }
       - { label: 'Redirect', name: 'redirect', widget: 'boolean', default: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: '2019'
-    label: '2019'
-    folder: '_posts/2019/'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    editor:
-      preview: false
-    fields: *basicpost
