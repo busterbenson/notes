@@ -6,7 +6,7 @@ backend:
 media_folder: 'assets/images'
 collections:
   - name: 'notes'
-    label: 'notes'
+    label: 'Notes'
     folder: '_posts/'
     create: true
     path: '{{year}}/{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -19,6 +19,6 @@ collections:
       - { label: 'One-Liner', name: 'one_liner', widget: 'string' }
       - { label: 'Featured Image', name: 'image', widget: 'image', 
           media_library: { config: { multiple: true } } }
-      - { label: 'Piles', name: 'piles', widget: 'list' }
+      - { label: 'Piles', name: 'piles', widget: 'list', hint: '750-words, artificial-intelligence, behavior-change, being-a-creator, etc.' }
       - { label: 'Redirect', name: 'redirect', widget: 'boolean', default: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }
