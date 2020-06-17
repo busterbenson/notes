@@ -6,6 +6,7 @@ gem 'jekyll-sitemap'
 gem 'jekyll-target-blank'
 gem 'jekyll-twitter-plugin'
 gem 'jekyll-srcset'
+gem 'jekyll-email-protect'
 
 group :jekyll_plugins do
   gem "jekyll-youtube"

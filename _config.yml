@@ -36,6 +36,7 @@ plugins:
   - jekyll-twitter-plugin
   - jekyll-srcset
   - jekyll-youtube
+  - jekyll-email-protect
 
 collections:
   pages:
