@@ -14,6 +14,8 @@ collections:
     path: '{{year}}/{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: false
+    sortableFields: ['commit_date', 'title'],
+    summary: "{{title}}<br />{{slug}}",
     fields: &basicpost  # Can reference it with *basicpost
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Link', name: 'link', widget: 'string', required: false }
