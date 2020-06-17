@@ -4,7 +4,7 @@ link         :
 author       : me
 
 one_liner    : "My 39th year in review."
-image			   : pieces/make-wiggle-room.png
+image			   : /assets/images/pieces/make-wiggle-room.png
 piles			   : ['self-reflection', 'year-in-review']
 comment_link : 
 ---

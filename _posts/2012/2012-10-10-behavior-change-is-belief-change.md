@@ -4,7 +4,7 @@ link         : https://buster.svbtle.com/belief-change
 author       : me
 
 one_liner    : "Are we what we repeatedly do?"
-image			   : pieces/aristotle-we-are-what-we-repeatedly-do.jpg
+image			   : /assets/images/pieces/aristotle-we-are-what-we-repeatedly-do.jpg
 piles			   : ['behavior-change']
 comment_link : 
 ---

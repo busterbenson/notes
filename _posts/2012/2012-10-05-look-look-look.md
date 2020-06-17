@@ -4,7 +4,7 @@ link         : https://buster.svbtle.com/look-look-look
 author       : me
 
 one_liner    : "Robin Sloan's Fish tap-essay / manifesto about returning to things we love."
-image			   : pieces/look-look-look.png
+image			   : /assets/images/pieces/look-look-look.png
 piles			   : ['mindset']
 comment_link : 
 ---

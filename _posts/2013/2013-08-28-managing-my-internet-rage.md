@@ -4,7 +4,7 @@ link         : https://medium.com/@buster/managing-my-internet-rage-1b16c7a2c0e7
 author       : me
 
 one_liner    : "Getting super angry isn’t as fun as it used to be."
-image			   : pieces/managing-my-internet-rage.jpg
+image			   : /assets/images/pieces/managing-my-internet-rage.jpg
 piles			   : ['dialogue', 'cognitive-dissonance']
 comment_link : 
 ---

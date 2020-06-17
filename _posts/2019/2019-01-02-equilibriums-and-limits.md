@@ -3,7 +3,7 @@ title      : "Equilibriums and Limits: a better way to look at most every politi
 author     : me
 link       : 
 one_liner  : Understand the difference between equilibriums and limits.
-image			 : pieces/equilibriums-and-limits.jpg
+image			 : /assets/images/pieces/equilibriums-and-limits.jpg
 piles			 : ['dialogue']
 ---
 

@@ -1,7 +1,7 @@
 ---
 title        : "43: All in & with the flow"
 one_liner    : "My 43rd year in review."
-image			   : pieces/43.png
+image			   : /assets/images/pieces/43.png
 piles			   : ['self-reflection', 'year-in-review']
 link         : https://medium.com/@buster/43-all-in-with-the-flow-e61e55b5dcf0
 comment_link : 

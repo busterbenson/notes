@@ -4,7 +4,7 @@ link         : https://betterhumans.coach.me/live-like-a-hydra-c02337782a89
 author       : me
 
 one_liner    : "Thoughts on how to get stronger when things are chaotic."
-image			   : pieces/live-like-a-hydra.jpg
+image			   : /assets/images/pieces/live-like-a-hydra.jpg
 piles			   : ['resiliance', 'behavior-change', 'self-tracking', 'personal-mythology']
 comment_link : 
 ---

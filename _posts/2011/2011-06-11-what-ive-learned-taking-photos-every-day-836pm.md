@@ -4,7 +4,7 @@ link         : https://www.geekwire.com/2012/day-rest-life/
 author       : me 
 
 one_liner    : "I’ve learned that there is beauty in the impossible, in the unfinishable, in the imperfect.  I’ve learned that it’s okay to be boring, and to let other people know you’re boring."
-image			   : projects/836pm.png
+image			   : /assets/images/projects/836pm.png
 piles			   : ['self-reflection', 'project', 'family']
 comment_link : 
 ---

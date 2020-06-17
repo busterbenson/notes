@@ -4,7 +4,7 @@ link         : https://medium.com/@buster/40-mind-the-loops-9e0c6ba35a87
 author       : me
 
 one_liner    : "My 40th year in review."
-image			   : pieces/mind-the-loops.png
+image			   : /assets/images/pieces/mind-the-loops.png
 piles			   : ['self-reflection', 'systems-thinking', 'year-in-review']
 comment_link : 
 ---

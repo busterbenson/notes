@@ -4,7 +4,7 @@ link         :
 author       : me
 
 one_liner    : "My 35th year in review."
-image			   : pieces/love-the-struggle.jpg
+image			   : /assets/images/pieces/love-the-struggle.jpg
 piles			   : ['self-reflection', 'year-in-review']
 comment_link : 
 ---

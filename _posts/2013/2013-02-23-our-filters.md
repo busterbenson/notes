@@ -4,7 +4,7 @@ link         : https://buster.svbtle.com/filters
 author       : me
 
 one_liner    : "The only way we see things."
-image			   : pieces/our-filters.jpg
+image			   : /assets/images/pieces/our-filters.jpg
 piles			   : ['cognitive-biases']
 comment_link : 
 ---

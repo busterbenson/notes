@@ -4,7 +4,7 @@ link         : https://medium.com/@buster/the-death-bed-game-20cc8d9c7494
 author       : me
 
 one_liner    : "He/she who dies with the most death bed points, wins."
-image			   : pieces/the-death-bed-game.jpg
+image			   : /assets/images/pieces/the-death-bed-game.jpg
 piles			   : ['death', 'self-tracking']
 comment_link : 
 ---

@@ -4,7 +4,7 @@ link         : https://medium.com/@buster/what-im-tracking-now-and-why-e36f280a2
 author       : me
 
 one_liner    : ""
-image			   : pieces/what-im-tracking-now-and-why.png
+image			   : /assets/images/pieces/what-im-tracking-now-and-why.png
 piles			   : ['self-tracking']
 comment_link : 
 ---

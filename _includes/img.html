@@ -1,2 +1,2 @@
-{% assign img = "/assets/images/" | append: include.src %}
+{% assign img = "/" | append: include.src %}
 <div class="image {{include.class}}">{% image_tag src=img alt=include.alt caption=include.alt width=include.width %}</div>

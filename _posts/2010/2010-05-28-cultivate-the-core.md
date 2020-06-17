@@ -4,7 +4,7 @@ link         :
 author       : me
 
 one_liner    : "My 34th year in review."
-image			   : pieces/cultivate-the-core.jpg
+image			   : /assets/images/pieces/cultivate-the-core.jpg
 piles			   : ['self-reflection', 'year-in-review']
 comment_link : 
 ---

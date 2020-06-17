@@ -3,7 +3,7 @@ title        : "Is this your best possible work?"
 link         : https://buster.svbtle.com/is-this-your-best-work
 author       : me
 
-one_liner    : ""
+one_liner    : "This is the only question that really matters."
 image			   : 
 piles			   : []
 comment_link : 

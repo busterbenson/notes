@@ -4,7 +4,7 @@ link         : https://medium.com/@buster/1-metric-kiloslog-52167e196771
 author       : me
 
 one_liner    : ""
-image			   : pieces/one-metric-kiloslog.jpg
+image			   : /assets/images/pieces/one-metric-kiloslog.jpg
 piles			   : ['self-tracking']
 comment_link : 
 ---

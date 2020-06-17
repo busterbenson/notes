@@ -4,7 +4,7 @@ link         :
 author       : me
 
 one_liner    : "My 30th year in review."
-image			   : pieces/higher-highs-lower-lows.jpg
+image			   : /assets/images/pieces/higher-highs-lower-lows.jpg
 piles			   : ['self-reflection', 'year-in-review']
 comment_link : 
 ---
