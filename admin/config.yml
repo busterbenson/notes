@@ -15,7 +15,7 @@ collections:
     editor:
       preview: false
     sortableFields: ['commit_date', 'title'],
-    summary: "{{title}}<br />{{slug}}",
+    summary: "{{title}}<br />{{fields.one_liner}}",
     fields: &basicpost  # Can reference it with *basicpost
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Link', name: 'link', widget: 'string', required: false }
