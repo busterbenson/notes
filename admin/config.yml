@@ -16,16 +16,17 @@ collections:
       preview: false
     sortableFields: ['commit_date', 'title']
     summary: "{{title}}: {{fields.one_liner}}"
+    media_folder: '/assets/images'
+    public_folder: '/assets/images/'
     fields: &basicpost  # Can reference it with *basicpost
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Link', name: 'link', widget: 'string', required: false }
       - { label: 'Author', name: 'author', widget: 'string', default: 'me' }
       - { label: 'One-Liner', name: 'one_liner', widget: 'string', required: false }
       - { label: 'Featured Image', name: 'image', widget: 'image', required: false,
-          path: '/assets/images/{{year}}-{{month}}-{{day}}-{{slug}}.{{extension}}',  
           hint: "Upload to the media tab then include the path relative to /assets/images/." }
       - { label: 'Piles', name: 'piles', widget: 'list', required: false, 
           hint: '750-words, artificial-intelligence, behavior-change, being-a-creator, book, codex-vitae, community, critical-thinking, death, dialogue, family, fiction, game-theory, health, internal-voices, meta-crisis, mindfulness, mindset, negative-space, personal-mythology, product-management, project, quality-time, resiliance, rules-to-live-by, security, self-reflection, self-tracking, social-issues, systems-thinking, technology, thought-experiment, wicked-problems, year-in-review, etc.' }
-      - { label: 'Redirect', name: 'redirect', widget: 'boolean', default: false }
-      - { label: 'Published', name: 'published', widget: 'boolean', default: true }
+      - { label: 'Redirect', name: 'redirect', widget: 'boolean', default: false, required: false }
+      - { label: 'Published', name: 'published', widget: 'boolean', default: true, required: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }
