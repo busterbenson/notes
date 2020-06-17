@@ -3,17 +3,18 @@
 backend:
   name: git-gateway
   branch: master 
+  site_domain: notes.busterbenson.com
 media_folder: 'assets/images'
 public_folder: '/assets/images/'
 collections:
   - name: 'notes'
-    label: 'Notes'
+    label: 'Note'
     folder: '_posts/'
     create: true
     path: '{{year}}/{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
-      preview: true
-    fields: &basicpost  
+      preview: false
+    fields: &basicpost  # Can reference it with *basicpost
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Link', name: 'link', widget: 'string', required: false }
       - { label: 'Author', name: 'author', widget: 'string', default: 'me' }
