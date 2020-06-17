@@ -22,7 +22,6 @@ collections:
       - { label: 'Author', name: 'author', widget: 'string', default: 'me' }
       - { label: 'One-Liner', name: 'one_liner', widget: 'string', required: false }
       - { label: 'Featured Image', name: 'image', widget: 'image', required: false,
-          media_folder: '/assets/images', public_folder: '/assets/images/',  
           filename: '{{year}}-{{month}}-{{day}}-{{slug}}.{{extension}}',  
           hint: "Upload to the media tab then include the path relative to /assets/images/." }
       - { label: 'Piles', name: 'piles', widget: 'list', required: false, 
