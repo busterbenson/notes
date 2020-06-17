@@ -5,7 +5,7 @@ author       : me
 
 one_liner    : "A conversation with Jonathan Church on Robin DiAngelo's book, White Fragility."
 image			   : 
-piles			   : ['dialogue', 'social-justice']
+piles			   : ['dialogue', 'social-issues']
 redirect 		 : true
 ---
 
