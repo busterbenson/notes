@@ -20,7 +20,7 @@ collections:
       - { label: 'One-Liner', name: 'one_liner', widget: 'string', required: false }
       - { label: 'Featured Image', name: 'image', widget: 'image', 
           hint: "Will be uploaded to /assets/images/.",
-          media_library: { config: { media_folder: 'assets/images', public_folder: '/assets/images/' multiple: false } } }
+          media_library: { config: { media_folder: 'assets/images', public_folder: '/assets/images/', multiple: false } } }
       - { label: 'Piles', name: 'piles', widget: 'list', required: false, 
           hint: '750-words, artificial-intelligence, behavior-change, being-a-creator, book, codex-vitae, community, critical-thinking, death, dialogue, family, fiction, game-theory, health, internal-voices, meta-crisis, mindfulness, mindset, negative-space, personal-mythology, product-management, project, quality-time, resiliance, rules-to-live-by, security, self-reflection, self-tracking, social-issues, systems-thinking, technology, thought-experiment, wicked-problems, year-in-review, etc.' }
       - { label: 'Redirect', name: 'redirect', widget: 'boolean', default: false }
