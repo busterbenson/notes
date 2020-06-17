@@ -2,7 +2,7 @@
 
 backend:
   name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
+  branch: master 
 media_folder: 'assets/images'
 public_folder: '/assets/images/'
 collections:
@@ -12,7 +12,7 @@ collections:
     create: true
     path: '{{year}}/{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
-      preview: false
+      preview: true
     fields: &basicpost  
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Link', name: 'link', widget: 'string', required: false }
