@@ -11,12 +11,12 @@ author       : me
 > I’ve been doing a review of my life every year around my birthday since 2006. You can last year’s reflection about [digging deeper](/blog/2018/07-02-dig-deeper), and [the other 12](/me/yearly-reviews/).
 The primary formative event of my last year was changing careers and re-entering the world of independent creator living.
 
-{% include img.html src='pieces/43-my-40s.png' alt='My 40s' %}
+{% include img.html src='/assets/images/pieces/43-my-40s.png' alt='My 40s' %}
 
 ### Large & small
 One way to see this is as a cycle I’ve now been through twice of moving from large companies to small companies. This year I oscillated back to independent creative work after 6 years at big tech companies. A brief history of my career is: I joined Amazon in 1998 and left in 2003. From 2003 to 2012 I co-founded several startups (Robot Co-op, McLeod Residence, Habit Labs). Technically Robot Co-op became part of Amazon during that time, but I left before it was re-absorbed into the mothership. From 2012 to 2019 I spent another six years at Twitter, Slack, and (briefly) Patreon.
 
-{% include img.html src='pieces/43.png' alt='My career' %}
+{% include img.html src='/assets/images/pieces/43.png' alt='My career' %}
 
 *Green is when I worked at these companies. The y-axis represents approximate number of employees at the company, on a logarithmic scale.*
 
@@ -48,4 +48,4 @@ My tool kit for being all in & with the flow is:
 * Keep dialogues open (I wrote a book about it, after all)
 * Reach out to people (independence requires interdependence)
 
-{% include img.html src='pieces/43-smell-flowers.jpeg' alt='Smell the flowers' %}
+{% include img.html src='/assets/images/pieces/43-smell-flowers.jpeg' alt='Smell the flowers' %}

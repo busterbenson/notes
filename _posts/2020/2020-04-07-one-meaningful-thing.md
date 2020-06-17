@@ -13,15 +13,15 @@ My last letter to you all was on January 16th of this year 2020. Our heads know 
 
 In a matter of weeks, cars started disappearing.
 
-{% include img.html src='pieces/one-meaningful-thing-1.jpg' width='100%' %}
+{% include img.html src='/assets/images/pieces/one-meaningful-thing-1.jpg' width='100%' %}
 
 So did airplanes. And with them, pollution went down.
 
-{% include img.html src='pieces/one-meaningful-thing-2.jpg' width='100%' %}
+{% include img.html src='/assets/images/pieces/one-meaningful-thing-2.jpg' width='100%' %}
 
 People, unable to work or travel, stopped buying things as well.
 
-{% include img.html src='pieces/one-meaningful-thing-3.jpg' width='100%' %}
+{% include img.html src='/assets/images/pieces/one-meaningful-thing-3.jpg' width='100%' %}
 
 (See many more impacts in [this Google Slides presentation](https://docs.google.com/presentation/d/e/2PACX-1vTg9n7VMzj8RqHqPImPHY3oiVjDLFHJRfYJADZh51fddM0-3FBUr_CRDPBaZ_ezUCZikmEA8GibDJYU/pub?slide=id.g72c71d2fdf_0_0) by [Luke Wroblewski](https://twitter.com/lukew).)
 
@@ -37,7 +37,7 @@ Jan 22nd: James G. Hodge Jr., director of the Center for Public Health Law and P
 
 And yet, here we are. Now this is happening. Now the upheaval has a name and a face.
 
-{% include img.html src='pieces/one-meaningful-thing-4.png' width='100%' %}
+{% include img.html src='/assets/images/pieces/one-meaningful-thing-4.png' width='100%' %}
 
 The world is in upheaval. We are in upheaval.
 

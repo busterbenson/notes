@@ -87,15 +87,15 @@ So when I say I want to dig deeper, it’s not to reach enlightenment. It’s to
 
 I love these monkeys. Some who can’t keep their pants up while bouncing on beds.
 
-{% include img.html src='pieces/family-photo-louie-pants.jpeg' %}
+{% include img.html src='/assets/images/pieces/family-photo-louie-pants.jpeg' %}
 
 Some who are quickly developing their own complex inner narratives of life on monkey island:
 
-{% include img.html src='pieces/family-photo-buster-niko.jpeg' %}
+{% include img.html src='/assets/images/pieces/family-photo-buster-niko.jpeg' %}
 
 And of course this lovely monkey I have enlisted to enthusiastically participate with most closely, approaching 10 years now:
 
-{% include img.html src='pieces/family-photo-buster-kellianne.jpeg' %}
+{% include img.html src='/assets/images/pieces/family-photo-buster-kellianne.jpeg' %}
 
 Family, work, book. These are the shadows cast by my life now past its 42nd year, the first year of life that extends further than my own father’s was able.
 

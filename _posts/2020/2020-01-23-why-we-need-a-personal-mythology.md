@@ -39,7 +39,7 @@ In John Vervaeke’s amazing 50-episode YouTube series, [Awakening from the Mean
 
 These 3 perennial problems resonated with me to the core. I have been circling around them for years, calling them “universal conundrums” in the [cognitive bias cheat sheet](https://medium.com/better-humans/cognitive-bias-cheat-sheet-55a472476b18?source=friends_link&sk=eb8e0a6f56df8083ff37d48e8ee356b3) and eventually evolving them into the realms of the Head, Heart, and Hands in my book. These 3 realms are defined by how conversations in them are resolved:
 
-{% include img.html src='pieces/why-we-need-a-personal-mythology-1.png' alt='Head, heart, and hands' width='600' %}
+{% include img.html src='/assets/images/pieces/why-we-need-a-personal-mythology-1.png' alt='Head, heart, and hands' width='600' %}
 
 1.  **The Head Realm.** The realm of information, evidence, etc that we can refer to socially as “true”. Conversations here can be resolved by looking up evidence that exists in the world somewhere. This maps to our connection with others, because we rely on communities and institutions to generate and vouch for this data that we can point to and dialogue about.
 2.  **The Heart Realm.** The realm of values, beliefs, preferences that we build within ourselves and know is true subjectively. Conversations here can be resolved with self-reflection and introspection (if the question is about our values) or by asking other people about their own beliefs, values, etc. This maps to the perennial problem of connection with ourselves, because these values in many ways are the way we connect with ourselves.

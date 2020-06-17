@@ -37,7 +37,7 @@ And...
 
 I know what you're thinking.
 
-{% include img.html src='pieces/be-excellent-to-each-other.jpg' alt='Be excellent to each other' %}
+{% include img.html src='/assets/images/pieces/be-excellent-to-each-other.jpg' alt='Be excellent to each other' %}
 
 And more importantly, just be excellent.
 
