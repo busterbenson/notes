@@ -7,10 +7,10 @@
 }
 
 ::selection {
-  background: #F0F4C3; /* #f7f5a0; WebKit/Blink Browsers */
+  background: #E0F7FA /* #F0F4C3; #f7f5a0; WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #F0F4C3; /* #f7f5a0; Gecko Browsers */
+  background: #E0F7FA /* #F0F4C3; #f7f5a0; Gecko Browsers */
 }
 
 body {
@@ -28,14 +28,18 @@ body {
 .sans-serif {
 	font-family: "Open Sans", system-ui, sans-serif;
 }
-
 nav ul {
   border-right: 1px solid #edf2f7;
 }
-
 a {
   color: #000;
   text-decoration: underline;
+}
+a.external-link {
+	color: #311B92;
+}
+a:hover, a:hover.external-link {
+	color: #2962FF;	
 }
 .btn a {
 	text-decoration: none;
@@ -232,9 +236,6 @@ strong, b {
 	white-space:nowrap;
 	overflow:hidden;
 	text-overflow:ellipsis;
-}
-
-.posts a:hover {
 }
 
 .posts li time, .projects li time {
