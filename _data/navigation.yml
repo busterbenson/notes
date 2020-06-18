@@ -10,11 +10,14 @@ links:
 - title: Yearly Reviews
   url: /pile/year-in-review
   tag: year-in-review
+- title: Life in Weeks
+  url: /life-in-weeks
+  layout: life-in-weeks
 - title: Codex Vitae
   url: /codex
   layout: codex
-- title: Life in Weeks
-  url: /life-in-weeks
+- title: My Book
+  url: https://busterbenson.com/whyareweyelling
   layout: life-in-weeks
 - title: About
   url: /about
