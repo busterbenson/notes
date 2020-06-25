@@ -29,21 +29,21 @@ $(document).ready(function() {
         // 5 days til next full moon, 6 next full moon.
         if (moon_data[0]) {
           if (parseInt(moon_data[0][2]) < 2 || parseInt(moon_data[0][2]) >= 29) {
-            moon_phase = "🌑"
+            moon_phase = "🌑 "
           } else if (parseInt(moon_data[0][2]) < 6) {
-            moon_phase = "🌒"
+            moon_phase = "🌒 "
           } else if (parseInt(moon_data[0][2]) < 10) {
-            moon_phase = "🌓"
+            moon_phase = "🌓 "
           } else if (parseInt(moon_data[0][2]) < 15) {
-            moon_phase = "🌔"
+            moon_phase = "🌔 "
           } else if (parseInt(moon_data[0][2]) < 17) {
-            moon_phase = "🌕"
+            moon_phase = "🌕 "
           } else if (parseInt(moon_data[0][2]) < 21) {
-            moon_phase = "🌖"
+            moon_phase = "🌖 "
           } else if (parseInt(moon_data[0][2]) < 24) {
-            moon_phase = "🌗"
+            moon_phase = "🌗 "
           } else if (parseInt(moon_data[0][2]) < 29) {
-            moon_phase = "🌘"
+            moon_phase = "🌘 "
           }
 
           var chimera_date = moon_phase

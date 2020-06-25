@@ -7,4 +7,3 @@ image 			 :
 piles				 : ['social-issues']
 redirect: true
 ---
-
