@@ -47,21 +47,50 @@ $(document).ready(function() {
           }
 
           var chimera_date = moon_phase
-          if (parseInt(moon_data[0][6]) < 5) {
-            chimera_date += " The next full moon is in "
-            if (moon_data[0][6] == '1') {
-              chimera_date += "1 day."
+
+          // FULL MOONS
+          if (parseInt(moon_data[0][6]) < 7 && parseInt(moon_data[0][6]) > -7) {
+            if (parseInt(moon_data[0][6]) == 0) {
+              chimera_time = " Today is the full moon. "
+            } else if (parseInt(moon_data[0][6]) > 0) {
+              chimera_date += " The next full moon is in "
+              if (moon_data[0][6] == '1') {
+                chimera_date += "1 day."
+              } else {
+                chimera_date += moon_data[0][6]+" days."              
+              }
             } else {
-              chimera_date += moon_data[0][6]+" days."              
+              chimera_date += " The full moon was "
+              if (moon_data[0][6] == '-1') {
+                chimera_date += "1 day ago."
+              } else {
+                chimera_date += Math.abs(moon_data[0][6])+" days ago."              
+              }
             }
-          } else if (parseInt(moon_data[0][4]) < 5) {
-            chimera_date += " The next new moon is in "
-            if (parseInt(moon_data[0][4]) == 1) {
-              chimera_date += "1 day."
+
+          // NEW MOONS
+          } else if (parseInt(moon_data[0][4]) < 7 && parseInt(moon_data[0][4]) > -7) {
+            if (parseInt(moon_data[0][4]) == 0) {
+              chimera_date += " The next new moon is today."
+            } else if (parseInt(moon_data[0][4]) > 0) {
+              chimera_date += " The next new moon is in "
+              if (parseInt(moon_data[0][4]) == 1) {
+                chimera_date += "1 day."
+              } else {
+                chimera_date += moon_data[0][4]+" days."              
+              }
             } else {
-              chimera_date += moon_data[0][4]+" days."              
+              chimera_date += " The next new moon was "
+              if (parseInt(moon_data[0][4]) == -1) {
+                chimera_date += "1 day ago."
+              } else {
+                chimera_date += Math.abs(moon_data[0][4])+" days ago."              
+              }
+
             }
-          } else if (parseInt(moon_data[0][2]) < 31) {
+
+          // AFTER THE NEW MOON
+          } else if (parseInt(moon_data[0][2]) < 31 && parseInt(moon_data[0][2]) > 0) {
             if (parseInt(moon_data[0][2]) == 1) {
               chimera_date += "1 day "
             } else {
