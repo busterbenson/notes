@@ -7,5 +7,6 @@ one_liner    : "My new website."
 image			   : 
 piles			   : ['being-a-creator']
 comment_link : 
+redirect     : true
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Buster's Notes
+title: "About Buster's Notes"
 ---
 
 I'm Buster Benson. I'm currently rebuilding [750words.com](https://750words.com) and recently [wrote a book](https://busterbenson.com/whyareweyelling) about the art of productive disagreement. [Here's some other basic info about who I am](https://paper.dropbox.com/doc/Buster-Benson--A2GI15IlN2~uk4PY9Wd6lofAAQ-I2Jb6sblUYldUzAc0Qob8). I'm [@buster](https://twitter.com/buster) on Twitter and have my DMs open. You can also <a href="mailto:{{ 'buster@hey.com' | encode_email }}">email me</a> if you're old fashioned like that. 

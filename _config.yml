@@ -25,6 +25,9 @@ sass:
   sass_dir: _sass
   style:    :compressed
 
+kramdown:
+  html_to_native: true
+
 target-blank:
   add_css_classes: external-link
 
@@ -45,6 +48,9 @@ collections:
   posts:
     output: true
     permalink: /:year/:month/:day/:slug
+  loops:
+    output: true
+    permalink: /loops/:name
   
 defaults:
   - scope:
@@ -61,3 +67,8 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  - scope: 
+      path: ""
+      type: "pages"
+    values:
+      layout: "loop"
