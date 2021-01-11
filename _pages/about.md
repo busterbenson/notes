@@ -11,4 +11,3 @@ The current iteration of this website is a [Jekyll static site](https://jekyllrb
 
 This site is the latest incarnation of a personal website that has been morphing into weird shapes since 1998. Here's a version from [2019](https://paused.busterbenson.com/whyareweyelling/), here's one from [a bit before that](http://archive.busterbenson.com). Find even older versions [here](https://web.archive.org/web/20140418111024/http://busterbenson.com/), and [here](https://web.archive.org/web/20070104225801/http://bustermcleod.com/), and [here](https://web.archive.org/web/20041215024700/http://erikbenson.com/), and [here](https://web.archive.org/web/20010202090600/http://mockerybird.com/).
 
-

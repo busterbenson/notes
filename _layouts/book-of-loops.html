@@ -1,0 +1,51 @@
+---
+title: Book of Loops
+layout: fullscreen
+max_width: false
+---
+
+{% assign data   = site.data[page.datafile] %}
+
+{% assign start_date = page.start_date %}
+{% assign split_start = start_date | split: "-" %}
+{% assign start_year = split_start[0] %}
+{% assign start_month = split_start[1] %}
+{% assign start_day = split_start[2] %}
+
+{% assign end_year = page.end_year %}
+{% assign year_border_class = "border-secondary" %} 
+
+<section class="book-of-loops">
+	<div class="row justify-content-center">
+		<div class="col-12">
+		{% include header_fullscreen.html %}
+
+		{{content}}
+		</div>
+	</div>
+</section>
+
+<style>
+	ul, ol {
+		padding-left: 20px;
+	}
+	.book-of-loops table {
+		width: 100%;
+	}
+	.book-of-loops td, .book-of-loops th {
+		padding: 5px;
+	}
+</style>
+
+<script>
+	$(document).ready(function () {
+	  $(function () {
+			var today = new Date();
+			$( ".week" ).each(function( index ) {
+			  if (today < Date.parse($( this ).attr('data-date'))) {
+			  	$( this ).addClass('future-date');
+			  }
+			});
+	  })
+	});
+</script>

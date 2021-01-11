@@ -6,11 +6,12 @@ class BidirectionalLinksGenerator < Jekyll::Generator
     graph_nodes = []
     graph_edges = []
 
-    all_collections = site.collections['loops'].docs
+    collection_loops = site.collections['loops'].docs
+    collection_pages = site.collections['pages'].docs
     all_notes = site.posts.docs
-    all_pages = site.pages
+    # all_pages = site.pages
 
-    all_docs = all_notes + all_pages + all_collections
+    all_docs = collection_loops + collection_pages + all_notes 
 
     # Convert all Wiki/Roam-style double-bracket link syntax to plain HTML
     # anchor tag elements (<a>) with "internal-link" CSS class

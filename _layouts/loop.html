@@ -1,21 +1,43 @@
 ---
-layout: default
+layout: fullscreen
 ---
 
+{% assign hexagrams = site.data.book-of-loops.hexagram %}
+{% assign hex = hexagrams[page.title] %}
+
 <section class="post">
-  <h1 class="title">{{ page.title }}</h1>
-  {% if page.one_liner and page.one_liner != blank %}
-    <h2 class="subtitle">{{ page.one_liner }}</h2>
+  {% if hex.name and hex.name != blank %}
+    <div class="subtitle">
+      <div style="padding: 10px 0;">
+        <a href="/book-of-loops">The Book of Loops</a>
+      </div>
+    </div>
   {% endif %}
-  
-  {% if page.image and page.image != blank %}
-  	{% include img.html src=page.image class="featured-image" alt=page.title width="500" %}
+
+  {% if hex %}
+    <div class="row" style="background-color: #eee; margin: 0">
+      <div class="col-12 col-md-6" style="margin: 0; padding: 20px;">
+        <h1 style="font-size: 70px; line-height: 90px; ">
+          {{ hex.name }}
+        </h1>
+        <div style="padding: 0 5px;">
+          <h3>{{ hex.symbol }}: {{ hex.scene }}</h3>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6" style="margin: 0; padding: 20px;">
+        <div style="font-size: 70px; line-height: 90px;">
+          {{ hex.hexagram }}&nbsp;{{ page.title }}
+        </div>
+        <div style="padding: 10px 5px; vertical-align: middle; min-height: 90px;">
+          <div>Hexagram {{ hex.number }}: {{ hex.oldname }}</div>
+          <div>{{ hex.uppertrigram }} over {{ hex.lowertrigram }}</div>
+        </div>
+
+      </div>
+    </div>
   {% endif %}
 
   {{ page.content | markdownify }}
-  <div class="meta">
-  	<time datetime="{{ page.date | date_to_xmlschema }}">
-  		Created {{ page.date | date: "%B %-d, %Y" }}
-  	</time> 
-  </div>
+
 </section>
