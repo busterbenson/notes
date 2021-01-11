@@ -378,6 +378,16 @@
   - name: "🏠 First day of shelter-in-place for COVID-19"
     category: "world"
 
+'2020-12-14':
+  - name: "Biden receives enough electoral votes to win the election."
+    category: "world"
+    tags: ["politics"]
+
+'2021-01-06':
+  - name: "Trump supporters storm the Capital Building in DC"
+    category: "world"
+    tags: ["politics"]
+
 '2052-08-05':
   - name: "☠️ My life expectancy expiration date."
     category: "self"
