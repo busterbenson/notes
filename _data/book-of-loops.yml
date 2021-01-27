@@ -15,8 +15,8 @@ question:
     label: Network
     text: Are your close relationships and community aware of your question and supportive of asking it?
   six: 
-    label: Nature
-    text: Is there a feedback loop with the natural world that will respond to steps you take to address this question?
+    label: Feedback
+    text: Is there a way to receive trustworthy feedback about potential answers to this question?
 
 hexagram:
   '000000':
