@@ -83,7 +83,7 @@ $(document).ready(function() {
       if (days_til_full_moon < 7 && days_til_full_moon > -7) {
         if (days_til_full_moon == 0) {
           moon_phase += " Today is the full moon! "
-        } else if (days_til_full_moon > 1) {
+        } else if (days_til_full_moon >= 1) {
           moon_phase += " The next full moon is in "
           if (days_til_full_moon == 1) {
             moon_phase += "1 day."
