@@ -37,7 +37,7 @@ $(document).ready(function() {
         // console.log('This moon: ', new_moon.toDate())
 
         var days_since_new_moon = moment().diff(new_moon,'days');
-        // console.log('Days since new moon: '+days_since_new_moon)
+        console.log('Days since new moon: '+days_since_new_moon)
 
         var full_moon = moment(record.get('Full Moon').toString()+' '+record.get('Full Moon Time').toString()+' GMT+00:00')
         // console.log('Full moon: ', full_moon.toDate())
@@ -111,11 +111,15 @@ $(document).ready(function() {
             moon_phase += days_til_new_moon+" days."              
           }
         } else {
-          moon_phase += " The new moon was "
           if (days_since_new_moon == -1) {
+            moon_phase += " The new moon was "
             moon_phase += "1 day ago."
-          } else {
+          } else if (days_since_new_moon) {
+            moon_phase += " The new moon was "
             moon_phase += days_since_new_moon+" days ago."              
+          } else {
+            // Say nothing because it is confusing.
+            console.log('days_since_new_moon = '+days_since_new_moon)
           }
 
         }
