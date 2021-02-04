@@ -1,0 +1,279 @@
+<!--
+<div>Q1: {{page.question_1}}</div>
+<div>Q2: {{page.question_2}}</div>
+<div>Q3: {{page.question_3}}</div>
+<div>Q4: {{page.question_4}}</div>
+<div>Q5: {{page.question_5}}</div>
+<div>Q6: {{page.question_6}}</div>
+-->
+
+<!-- Assign question values -->
+{% assign q1 = page.question_1 | plus: 0 | divided_by: 100.0 %}
+{% assign q2 = page.question_2 | plus: 0 | divided_by: 100.0 %}
+{% assign q3 = page.question_3 | plus: 0 | divided_by: 100.0 %}
+{% assign q4 = page.question_4 | plus: 0 | divided_by: 100.0 %}
+{% assign q5 = page.question_5 | plus: 0 | divided_by: 100.0 %}
+{% assign q6 = page.question_6 | plus: 0 | divided_by: 100.0 %}
+
+<!-- Determine opacity --> 
+{% if q1 < 0.1 %}{% assign q1_opacity = 0.2 %}{% else %}{% assign q1_opacity = 1.0 %}{% endif %}
+{% if q2 < 0.1 %}{% assign q2_opacity = 0.2 %}{% else %}{% assign q2_opacity = 1.0 %}{% endif %}
+{% if q3 < 0.1 %}{% assign q3_opacity = 0.2 %}{% else %}{% assign q3_opacity = 1.0 %}{% endif %}
+{% if q4 < 0.1 %}{% assign q4_opacity = 0.2 %}{% else %}{% assign q4_opacity = 1.0 %}{% endif %}
+{% if q5 < 0.1 %}{% assign q5_opacity = 0.2 %}{% else %}{% assign q5_opacity = 1.0 %}{% endif %}
+{% if q6 < 0.1 %}{% assign q6_opacity = 0.2 %}{% else %}{% assign q6_opacity = 1.0 %}{% endif %}
+
+<!-- Determine colors -->
+{% if q4 > 0.5 %}
+	{% if q5 > 0.5 %}
+		{% if q6 > 0.5 %} {% assign upper = 'White' %} {% else %} {% assign upper = 'Yellow' %} {% endif %}
+	{% else %}
+		{% if q6 > 0.5 %} {% assign upper = 'Magenta' %} {% else %} {% assign upper = 'Red' %} {% endif %}
+	{% endif %}
+{% else %}
+	{% if q5 > 0.5 %}
+		{% if q6 > 0.5 %} {% assign upper = 'Cyan' %} {% else %} {% assign upper = 'Green' %} {% endif %}
+	{% else %}
+		{% if q6 > 0.5 %} {% assign upper = 'Blue' %} {% else %} {% assign upper = 'Black' %} {% endif %}
+	{% endif %}
+{% endif %}
+{% if q1 > 0.5 %}
+	{% if q2 > 0.5 %}
+		{% if q3 > 0.5 %} {% assign lower = 'White' %} {% else %} {% assign lower = 'Yellow' %} {% endif %}
+	{% else %}
+		{% if q3 > 0.5 %} {% assign lower = 'Magenta' %} {% else %} {% assign lower = 'Red' %} {% endif %}
+	{% endif %}
+{% else %}
+	{% if q2 > 0.5 %}
+		{% if q3 > 0.5 %} {% assign lower = 'Cyan' %} {% else %} {% assign lower = 'Green' %} {% endif %}
+	{% else %}
+		{% if q3 > 0.5 %} {% assign lower = 'Blue' %} {% else %} {% assign lower = 'Black' %} {% endif %}
+	{% endif %}
+{% endif %}
+
+<!-- Determine self, community, world phases -->
+{% if q1 > 0.5 %}
+	{% if q4 > 0.5 %}
+		{% assign self_phase = 'full' %}
+	{% else %}
+		{% assign self_phase = 'rising' %}
+	{% endif %}
+{% else %}
+	{% if q4 > 0.5 %}
+		{% assign self_phase = 'falling' %}
+	{% else %}
+		{% assign self_phase = 'new' %}
+	{% endif %}
+{% endif %}
+
+{% if q2 > 0.5 %}
+	{% if q5 > 0.5 %}
+		{% assign community_phase = 'full' %}
+	{% else %}
+		{% assign community_phase = 'rising' %}
+	{% endif %}
+{% else %}
+	{% if q5 > 0.5 %}
+		{% assign community_phase = 'falling' %}
+	{% else %}
+		{% assign community_phase = 'new' %}
+	{% endif %}
+{% endif %}
+
+{% if q3 > 0.5 %}
+	{% if q6 > 0.5 %}
+		{% assign world_phase = 'full' %}
+	{% else %}
+		{% assign world_phase = 'rising' %}
+	{% endif %}
+{% else %}
+	{% if q6 > 0.5 %}
+		{% assign world_phase = 'falling' %}
+	{% else %}
+		{% assign world_phase = 'new' %}
+	{% endif %}
+{% endif %}
+
+
+<style>
+	.book-of-moods blockquote {
+		padding-left: 30px;
+	}
+	.book-of-moods li {
+		padding-bottom: 0.5em;
+	}
+	.book-of-moods li:last {
+		padding-bottom: 0;
+	}
+	.book-of-moods table {
+		width: 100%;
+	}
+	.book-of-moods td strong {
+		padding-right: 20px;
+	}
+</style>
+
+<div class="mood-color">
+
+	<div class="row" style="display: flex; width: 100%; justify-content: space-evenly;">
+		<div class="col-12 col-sm-10 col-lg-8">
+
+				<div class="row" style="background-color: rgb({{ 255 | times: q4 }},{{ 255 | times: q5 }},{{ 255 | times: q6 }},1); max-width: 500px; margin: auto auto; border-left: 1px solid #000; border-top: 1px solid #000; border-right: 1px solid #000; border-bottom: 1px solid rgba(128,128,128,1); padding: 2px;">
+					
+					<div class="col-12" style="display: flex; height: 250px; align-items: center; justify-content: space-around;">
+
+						<div class="row" style="display: flex; justify-content: space-evenly; width: 100%;">
+							<div class="col-3 mx-2 px-2" style="display: flex; height: 120px; border: 1px solid rgba(128,128,128,1); background-color: rgba({{ 255 | times: q4 }},0,0,{{ q4_opacity }}); align-items: center; justify-content: center;">
+								{% comment %}{{ q4 | times: 100 | round }}{% endcomment %}
+							</div>
+							<div class="col-3 mx-2 px-2" style="display: flex; height: 120px; border: 1px solid rgba(128,128,128,1); background-color: rgba(0,{{ 255 | times: q5 }},0,{{ q5_opacity }}); align-items: center; justify-content: center;">
+								{% comment %}{{ q5 | times: 100 | round }}{% endcomment %}
+							</div>
+							<div class="col-3 mx-2 px-2" style="display: flex; height: 120px; border: 1px solid rgba(128,128,128,1); background-color: rgba(0,0,{{ 255 | times: q6 }},{{ q6_opacity }}); align-items: center; justify-content: center;">
+								{% comment %}{{ q6 | times: 100 | round }}{% endcomment %}
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="row" style="background-color: rgb({{ 255 | times: q1 }},{{ 255 | times: q2 }},{{ 255 | times: q3 }},1); max-width: 500px; margin: auto auto; border-left: 1px solid #000; border-bottom: 1px solid #000; border-right: 1px solid #000; padding: 2px;">
+					
+					<div class="col-12" style="display: flex; min-height: 250px; align-items: center; justify-content: space-around;">
+					
+						<div class="row" style="display: flex; justify-content: space-evenly; width: 100%;">
+							<div class="col-3 mx-2 px-2" style="display: flex; height: 120px; border: 1px solid rgba(128,128,128,1); background-color: rgba({{ 255 | times: q1 }},0,0,{{ q1_opacity }}); align-items: center; justify-content: center;">
+								{% comment %}{{ q1 | times: 100 | round }}{% endcomment %}
+							</div>
+							<div class="col-3 mx-2 px-2" style="display: flex; height: 120px; border: 1px solid rgba(128,128,128,1); background-color: rgba(0,{{ 255 | times: q2 }},0,{{ q2_opacity }}); align-items: center; justify-content: center;">
+								{% comment %}{{ q2 | times: 100 | round }}{% endcomment %}
+							</div>
+							<div class="col-3 mx-2 px-2" style="display: flex; height: 120px; border: 1px solid rgba(128,128,128,1); background-color: rgba(0,0,{{ 255 | times: q3 }},{{ q3_opacity }}); align-items: center; justify-content: center;">
+								{% comment %}{{ q3 | times: 100 | round }}{% endcomment %}
+							</div>
+						</div>
+					
+					</div>
+				</div>
+
+				<div style="max-width: 500px; margin: auto auto; padding: 2em 2px;">
+					<h1>
+						{{ upper }} over {{ lower }}
+					</h1>
+					<p>
+						<strong>I Ching {{ page.iching_hex }}:</strong> 
+						{% if upper == 'Red' %}
+							Thunder
+						{% elsif upper == 'Green' %}
+							Water
+						{% elsif upper == 'Blue' %}
+							Mountain
+						{% elsif upper == 'White' %}
+							Heaven
+						{% elsif upper == 'Cyan' %}
+							Winds
+						{% elsif upper == 'Magenta' %}
+							Fire
+						{% elsif upper == 'Yellow' %}
+							Lake
+						{% elsif upper == 'Black' %}
+							Earth
+						{% endif %}
+						over 
+						{% if lower == 'Red' %}
+							Thunder.
+						{% elsif lower == 'Green' %}
+							Water.
+						{% elsif lower == 'Blue' %}
+							Mountain.
+						{% elsif lower == 'White' %}
+							Heaven.
+						{% elsif lower == 'Cyan' %}
+							Winds.
+						{% elsif lower == 'Magenta' %}
+							Fire.
+						{% elsif lower == 'Yellow' %}
+							Lake.
+						{% elsif lower == 'Black' %}
+							Earth.
+						{% endif %}
+
+						{{ page.iching_name }}.						
+					</p>
+
+					
+					{% if lower == 'Red' %}
+						<p><strong>Dragon:</strong>
+						Intuition is aligned, but skill and resources aren't.</p>
+					{% elsif lower == 'Green' %}
+						<p><strong>Snake:</strong>
+						Skill is aligned, but intuition and resources aren't.</p>
+					{% elsif lower == 'Blue' %}
+						<p><strong>Bear:</strong>
+						Resources is aligned, but intuition and skill aren't.</p>
+					{% elsif lower == 'White' %}
+						<p><strong>Mist:</strong>
+						Intuition, skill, and resources are aligned.</p>
+					{% elsif lower == 'Cyan' %}
+						<p><strong>Crow:</strong>
+						Skill and resources are aligned, but intuition isn't.</p>
+					{% elsif lower == 'Magenta' %}
+						<p><strong>Pinecone:</strong>
+						Intuition and resources are aligned, but skill isn't.</p>
+					{% elsif lower == 'Yellow' %}
+						<p><strong>Otter:</strong>
+						Skill and resources are aligned, but intuition isn't.</p>
+					{% elsif lower == 'Black' %}
+						<p><strong>Ants:</strong>
+						Intuition, skill, and resources are all unaligned.</p>
+					{% endif %}
+
+					{% if upper == 'Red' %}
+						<p><strong>Storm context:</strong>
+						Circumstances are aligned, but network and feedback aren't.</p>
+					{% elsif upper == 'Green' %}
+						<p><strong>River context:</strong>
+						Network is aligned, but circumstances and feedback aren't.</p>
+					{% elsif upper == 'Blue' %}
+						<p><strong>Mountain context:</strong>
+						Feedback is aligned, but circumstances and network aren't.</p>
+					{% elsif upper == 'White' %}
+						<p><strong>Tower context:</strong>
+						Circumstances, network, and feedback are aligned.</p>
+					{% elsif upper == 'Cyan' %}
+						<p><strong>Forest context:</strong>
+						Network and feedback are aligned, but circumstances aren't.</p>
+					{% elsif upper == 'Magenta' %}
+						<p><strong>Fire context:</strong>
+						Circumstances and feedback are aligned, but network isn't.</p>
+					{% elsif upper == 'Yellow' %}
+						<p><strong>Lake context:</strong>
+						Network and Feedback are aligned, but circumstances aren't.</p>
+					{% elsif upper == 'Black' %}
+						<p><strong>Cave context:</strong>
+						Circumstances, network, and feedback are all unaligned.</p>
+					{% endif %}
+
+					<p>
+						<strong>Phases:</strong>
+						Self is {{ self_phase }}.
+						Community is {{ community_phase }}.
+						The World is {{ world_phase }}.
+					</p>
+				</div>
+
+		</div>
+	</div>
+
+
+	</p>
+</div>
+
+<script>
+	$(document).ready(function () {
+	  $(function () {
+	  	// do things here
+	  })
+	});
+</script>

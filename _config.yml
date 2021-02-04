@@ -48,9 +48,9 @@ collections:
   posts:
     output: true
     permalink: /:year/:month/:day/:slug
-  loops:
+  mood:
     output: true
-    permalink: /loops/:name
+    permalink: /mood/:name
   
 defaults:
   - scope:
@@ -71,4 +71,4 @@ defaults:
       path: ""
       type: "pages"
     values:
-      layout: "loop"
+      layout: "mood"

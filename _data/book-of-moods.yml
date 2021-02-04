@@ -1,0 +1,2057 @@
+question:
+  one: 
+    label: Intuition
+    text: Do you feel like you can trust your intuitions right now?
+  two: 
+    label: Skill
+    text: Do you have all the necessary skills and know-how that you need right now?
+  three: 
+    label: Resources
+    text: Do you have the raw information, time, and other resources that you need right now?
+  four: 
+    label: Circumstances
+    text: Do your immediate environment and circumstances work in your favor right now?
+  five: 
+    label: Network
+    text: Are your close relationships and community supporting you right now?
+  six: 
+    label: Reality
+    text: Is reality being kind to you right now?
+
+hexagram:
+  '000000':
+    number: 2
+    symbol: Ka
+    name: Ants
+    scene: Ants at a crossroads
+    oldname: Receptive Earth
+    pdf: https://www.dropbox.com/s/9lkon1gw2utu40h/02-48-the-magnetic.pdf?dl=0
+    hexagram: ䷁
+    upper: ☷
+    lower: ☷
+    uppertrigram: Earth
+    lowertrigram: Earth
+    upperanimal: Ants
+    loweranimal: Ants
+    blue: 00
+    green: 00
+    red: 00
+    line:
+      one: 0
+      two: 0
+      three: 0
+      four: 0
+      five: 0
+      six: 0
+    change: 
+      one:   '100000'
+      two:   '010000'
+      three: '001000'
+      four:  '000100'
+      five:  '000010'
+      six:   '000001'
+  '000001':
+    number: 23
+    symbol: Kaso
+    name: Lost
+    scene: Ants meet Bear at a lookout point
+    oldname: Splitting Apart
+    pdf: https://www.dropbox.com/s/5pbpif5fuo3usn5/23-33-disintegration.pdf?dl=0
+    hexagram: ䷖
+    upper: ☶
+    lower: ☷
+    uppertrigram: Mountain
+    lowertrigram: Earth
+    upperanimal: Bear
+    loweranimal: Ants
+    blue: 01
+    green: 00
+    red: 00
+    line:
+      one: 0
+      two: 0
+      three: 0
+      four: 0
+      five: 0
+      six: 1
+    change: 
+      one:   '100001'
+      two:   '010001'
+      three: '001001'
+      four:  '000101'
+      five:  '000011'
+      six:   '000000'
+  '000010':
+    number: 8
+    symbol: Kalo
+    name: Pinkie Swear
+    scene: Ants and Snake fall down
+    oldname: Holding Together
+    pdf: https://www.dropbox.com/s/479e8viz3s99i48/08-49-holding-together.pdf?dl=0
+    hexagram: ䷇
+    upper: ☵
+    lower: ☷
+    uppertrigram: Water
+    lowertrigram: Earth
+    upperanimal: Snake
+    loweranimal: Ants
+    blue: 00
+    green: 01
+    red: 00
+    line:
+      one: 0
+      two: 0
+      three: 0
+      four: 0
+      five: 1
+      six: 0
+    change: 
+      one:   '100010'
+      two:   '010010'
+      three: '001010'
+      four:  '000110'
+      five:  '000000'
+      six:   '000011'
+  '000011':
+    number: 20
+    symbol: Kara
+    name: Design Thinking
+    scene: Ants meet Raven on a winding path
+    oldname: Contemplation
+    pdf: https://www.dropbox.com/s/f7mitd7yrc0sov2/20-64-contemplation.pdf?dl=0
+    hexagram: ䷓
+    upper: ☴
+    lower: ☷
+    uppertrigram: Wind
+    lowertrigram: Earth
+    upperanimal: Raven
+    loweranimal: Ants
+    blue: 01
+    green: 01
+    red: 00
+    line:
+      one:   0
+      two:   0
+      three: 0
+      four:  0
+      five:  1
+      six:   1
+    change: 
+      one:   '100011'
+      two:   '010011'
+      three: '001011'
+      four:  '000111'
+      five:  '000001'
+      six:   '000010'
+  '000100':
+    number: 16
+    symbol: Karo
+    name: Courage
+    scene: Ants meet Dragon at a dead end
+    oldname: Enthusiasm
+    pdf: https://www.dropbox.com/s/yozj1rg54k0hku9/16-17-enthusiasm-self-deception-repose.pdf?dl=0
+    hexagram: ䷏
+    upper: ☳
+    lower: ☷
+    uppertrigram: Thunder
+    lowertrigram: Earth
+    upperanimal: Dragon
+    loweranimal: Ants    
+    blue: 00
+    green: 00
+    red: 01
+    line:
+      one:   0
+      two:   0
+      three: 0
+      four:  1
+      five:  0
+      six:   0
+    change: 
+      one:   '100100'
+      two:   '010100'
+      three: '001100'
+      four:  '000000'
+      five:  '000110'
+      six:   '000101'
+  '000101':
+    number: 35
+    symbol: Kala
+    name: Groundswell
+    scene: Ants and Phoenix rise up
+    oldname: Progress
+    pdf: https://www.dropbox.com/s/ndwt8wytrwjwo34/35-32-advance-of-consciousness.pdf?dl=0
+    hexagram: ䷢
+    upper: ☲
+    lower: ☷
+    uppertrigram: Fire
+    lowertrigram: Earth
+    upperanimal: Phoenix
+    loweranimal: Ants
+    blue: 01
+    green: 00
+    red: 01
+    line:
+      one:   0
+      two:   0
+      three: 0
+      four:  1
+      five:  0
+      six:   1
+    change: 
+      one:   '100101'
+      two:   '010101'
+      three: '001101'
+      four:  '000001'
+      five:  '000111'
+      six:   '000100'
+  '000110':
+    number: 45
+    symbol: Kasa
+    name: Get Together
+    scene: Ants enjoy time with Turtle
+    oldname: Gathering Together
+    pdf: https://www.dropbox.com/s/xf42dtb6ig5k4ix/45-16-gathering-together-contraction.pdf?dl=0
+    hexagram: ䷬
+    upper: ☱
+    lower: ☷
+    uppertrigram: Lake
+    lowertrigram: Earth
+    upperanimal: Turtle
+    loweranimal: Ants
+    blue: 00
+    green: 01
+    red: 01
+    line:
+      one:   0
+      two:   0
+      three: 0
+      four:  1
+      five:  1
+      six:   0
+    change: 
+      one:   '100110'
+      two:   '010110'
+      three: '001110'
+      four:  '000010'
+      five:  '000100'
+      six:   '000111'
+  '000111':
+    number: 12
+    symbol: Kako
+    name: Paralyzed
+    scene: Ants meet Mice off the beaten path
+    oldname: Standstill
+    pdf: https://www.dropbox.com/s/cemxvy2k7o0y0z5/12-01-divorcement.pdf?dl=0
+    hexagram: ䷋
+    upper: ☰
+    lower: ☷
+    uppertrigram: Heaven
+    lowertrigram: Earth
+    upperanimal: Mice
+    loweranimal: Ants
+    blue: 01
+    green: 01
+    red: 01
+    line:
+      one:   0
+      two:   0
+      three: 0
+      four:  1
+      five:  1
+      six:   1
+    change: 
+      one:   '100111'
+      two:   '010111'
+      three: '001111'
+      four:  '000011'
+      five:  '000101'
+      six:   '000110'
+
+  '001000':
+    number: 15
+    symbol: Soka
+    name: Hidden Truth
+    scene: Bear meets Ants at a crossroads
+    oldname: Modesty
+    pdf: https://www.dropbox.com/s/i5h0d4y5io4431e/15-45-temperance.pdf?dl=0
+    hexagram: ䷎
+    upper: ☷
+    lower: ☶
+    uppertrigram: Earth
+    lowertrigram: Mountain
+    upperanimal: Ants
+    loweranimal: Bear
+    blue: 10
+    green: 00
+    red: 00
+    line:
+      one:   0
+      two:   0
+      three: 1
+      four:  0
+      five:  0
+      six:   0
+    change: 
+      one:   '101000'
+      two:   '011000'
+      three: '000000'
+      four:  '001100'
+      five:  '001010'
+      six:   '001001'
+  '001001':
+    number: 52
+    symbol: So
+    name: Security
+    scene: Bear at a lookout point
+    oldname: Keeping Still Mountain
+    pdf: https://www.dropbox.com/s/3761adr69b9b8ph/52-36-keeping-still.pdf?dl=0
+    hexagram: ䷳
+    upper: ☶
+    lower: ☶
+    uppertrigram: Mountain
+    lowertrigram: Mountain
+    upperanimal: Bear
+    loweranimal: Bear
+    blue: 11
+    green: 00
+    red: 00
+    line:
+      one:   0
+      two:   0
+      three: 1
+      four:  0
+      five:  0
+      six:   1
+    change: 
+      one:   '101001'
+      two:   '011001'
+      three: '000001'
+      four:  '001101'
+      five:  '001011'
+      six:   '001000'
+  '001010':
+    number: 39
+    symbol: Solo
+    name: Trick Question
+    scene: Bear and Snake fall down
+    oldname: Obstruction
+    pdf: https://www.dropbox.com/s/kt8xz47px2nxbw9/39-52-impasse.pdf?dl=0
+    hexagram: ䷦
+    upper: ☵
+    lower: ☶
+    uppertrigram: Water
+    lowertrigram: Mountain
+    upperanimal: Snake
+    loweranimal: Bear
+    blue: 10
+    green: 01
+    red: 00
+    line:
+      one:   0
+      two:   0
+      three: 1
+      four:  0
+      five:  1
+      six:   0
+    change: 
+      one:   '101010'
+      two:   '011010'
+      three: '000010'
+      four:  '001110'
+      five:  '001000'
+      six:   '001011'
+  '001011':
+    number: 53
+    symbol: Sora
+    name: Wiggle Room
+    scene: Bear meet Raven on a winding path
+    oldname: Development
+    pdf: https://www.dropbox.com/s/i7lgqb2c3v76smq/53-61-gradual-progress.pdf?dl=0
+    hexagram: ䷤
+    upper: ☴
+    lower: ☶
+    uppertrigram: Wind
+    lowertrigram: Mountain
+    upperanimal: Raven
+    loweranimal: Bear
+    blue: 11
+    green: 01
+    red: 00
+    line:
+      one:   0
+      two:   0
+      three: 1
+      four:  0
+      five:  1
+      six:   1
+    change: 
+      one:   '101011'
+      two:   '011011'
+      three: '000011'
+      four:  '001111'
+      five:  '001001'
+      six:   '001010'
+  '001100':
+    number: 62
+    symbol: Soro
+    name: Nesting
+    scene: Bear meets Dragon at a dead end
+    oldname: Small Preponderance
+    pdf: https://www.dropbox.com/s/u53rzuro4a7718p/62-20-small-powers.pdf?dl=0
+    hexagram: ䷽
+    upper: ☳
+    lower: ☶
+    uppertrigram: Thunder
+    lowertrigram: Mountain
+    upperanimal: Dragon
+    loweranimal: Bear
+    blue: 10
+    green: 00
+    red: 01
+    line:
+      one:   0
+      two:   0
+      three: 1
+      four:  1
+      five:  0
+      six:   0
+    change: 
+      one:   '101100'
+      two:   '011100'
+      three: '000100'
+      four:  '001000'
+      five:  '001110'
+      six:   '001101'
+  '001101':
+    number: 56
+    symbol: Sola
+    name: Lantern
+    scene: Bear and Phoenix rise up
+    oldname: The Wanderer
+    pdf: https://www.dropbox.com/s/iu9fdddb8zpe5mt/MB-transition.pdf?dl=0
+    hexagram: ䷷
+    upper: ☲
+    lower: ☶
+    uppertrigram: Fire
+    lowertrigram: Mountain
+    upperanimal: Phoenix
+    loweranimal: Bear
+    blue: 11
+    green: 00
+    red: 01
+    line:
+      one:   0
+      two:   0
+      three: 1
+      four:  1
+      five:  0
+      six:   1
+    change: 
+      one:   '101101'
+      two:   '011101'
+      three: '000101'
+      four:  '001001'
+      five:  '001111'
+      six:   '001100'
+  '001110':
+    number: 31
+    symbol: Sosa
+    name: Lucky Twist 
+    scene: Bear enjoys time with Turtle
+    oldname: Initiative
+    olddesc: A lake at the top of a mountain.
+    pdf: https://www.dropbox.com/s/jo46i6z9rigf9up/YB-initiative-influence.pdf?dl=0
+    other_titles: Influence, Wooing, Attraction, Sensation, Stimulation, Conjoining, Feelings, Sensitivity, Sensing, Affection, Influencing to Action, Tension, Seeking Union, Persuasion, Courting Response, Importuning
+    interpretation: The mountain is the perfect complement to the lake that reflects it's image reversed. The world is now perfectly prepared to support your weaknesses and give you space to express your strengths.  
+    advice: The recommendation of this hexagram is to take the initiative to welcome people in and to be vulnerable.
+    hexagram: ䷞
+    upper: ☱
+    lower: ☶
+    uppertrigram: Lake
+    lowertrigram: Mountain
+    upperanimal: Turtle
+    loweranimal: Bear
+    blue: 10
+    green: 01
+    red: 01
+    line:
+      one:   0
+      two:   0
+      three: 1
+      four:  1
+      five:  1
+      six:   0
+    change: 
+      one:   '101110'
+      two:   '011110'
+      three: '000110'
+      four:  '001010'
+      five:  '001100'
+      six:   '001111'
+  '001111':
+    number: 33
+    symbol: Soko
+    name: Nonviolence
+    scene: Bear meets Mice off the beaten path
+    oldname: Withdrawal
+    olddesc: A mountain reaching for the sky.
+    pdf: https://www.dropbox.com/s/umsyv55u20ilfge/OB-retreat.pdf?dl=0
+    other_titles: Retreat, Yielding, Retiring, Wielding, Strategic Withdrawal, Inaccessibility, Disassociation from Inferior Forces
+    interpretation: There are some shadows rising and taking shape, intimidating in size like a mountain looming on the horizon. Rather than engaging with these shadows directly, subtly withdraw and watch them, curious about how they evolve, but they're not yet receptive to a dialogue.
+    advice: The timing isn't quite right to engage with the growing discomfort. Better to patiently wait for a time when it finds its own voice and speaks up.
+    hexagram: ䷠
+    upper: ☰
+    lower: ☶
+    uppertrigram: Heaven
+    lowertrigram: Mountain
+    upperanimal: Mice
+    loweranimal: Bear
+    blue: 01
+    green: 01
+    red: 11
+    line:
+      one:   0
+      two:   0
+      three: 1
+      four:  1
+      five:  1
+      six:   1
+    change: 
+      one:   '101111'
+      two:   '011111'
+      three: '000111'
+      four:  '001011'
+      five:  '001101'
+      six:   '001110'
+
+  '010000':
+    number: 7
+    symbol: Loka
+    name: Fight or Flight
+    scene: Snake meets Ants at a crossroads
+    oldname: Army
+    pdf: https://www.dropbox.com/s/mhpisvcgi46y0k9/07-43-discipline.pdf?dl=0
+    hexagram: ䷆
+    upper: ☷
+    lower: ☵
+    uppertrigram: Earth
+    lowertrigram: Water
+    upperanimal: Ants
+    loweranimal: Snake    
+    blue: 00
+    green: 10
+    red: 00
+    line:
+      one:   0
+      two:   1
+      three: 0
+      four:  0
+      five:  0
+      six:   0
+    change: 
+      one:   '110000'
+      two:   '000000'
+      three: '011000'
+      four:  '010100'
+      five:  '010010'
+      six:   '010001'
+  '010001':
+    number: 4
+    symbol: Loso
+    name: Sand Castle
+    scene: Snake meets Bear at a lookout point
+    oldname: Youthful Folly
+    olddesc: A fresh spring bubbling in the shadow of a mountain.
+    pdf: https://www.dropbox.com/s/hzlv3fa419mlc98/BG-youthful-folly.pdf?dl=0
+    other_titles: Inexperience, The Symbol of Covering, Immaturity, Uncultivated Growth, Youth, Acquiring Experience, Youthful Ignorance, Enveloping, Folly, Darkness
+    interpretation: The mountain blocks our path, and the small spring at the foot of the mountain gives us false hope that we can make the journey. Together, this suggests that we have a perilous journey ahead of us, and lack the experience needed to make it safely.
+    advice: You might be asking the wrong question. Instead of trying to answer this question, consider asking it in a different way, or looking at it from a different angle. If that doesn't help, it might be best to drop the question for now and try again at a later time.
+    hexagram: ䷃
+    upper: ☶
+    lower: ☵
+    uppertrigram: Mountain
+    lowertrigram: Water
+    upperanimal: Bear
+    loweranimal: Snake    
+    blue: 01
+    green: 10
+    red: 00
+    line:
+      one:   0
+      two:   1
+      three: 0
+      four:  0
+      five:  0
+      six:   1
+    change: 
+      one:   '110001'
+      two:   '000001'
+      three: '011001'
+      four:  '010101'
+      five:  '010011'
+      six:   '010000'
+  '010010':
+    number: 29
+    symbol: Lo
+    name: Snake
+    scene: Snake falls down
+    oldname: Abysmal Water
+    pdf: https://www.dropbox.com/s/ycg2dejni8u4rhb/29-54-danger.pdf?dl=0
+    hexagram: ䷜
+    upper: ☵
+    lower: ☵
+    uppertrigram: Water
+    lowertrigram: Water
+    upperanimal: Snake
+    loweranimal: Snake    
+    blue: 00
+    green: 11
+    red: 00
+    line:
+      one:   0
+      two:   1
+      three: 0
+      four:  0
+      five:  1
+      six:   0
+    change: 
+      one:   '110010'
+      two:   '000010'
+      three: '011010'
+      four:  '010110'
+      five:  '010000'
+      six:   '010011'
+  '010011':
+    number: 59
+    symbol: Lora
+    name: Correction
+    scene: Snake meets Raven on a winding path
+    oldname: Dispersion
+    pdf: https://www.dropbox.com/s/va3y7o2ceuyb728/59-59-expansion-dispersion.pdf?dl=0
+    hexagram: ䷺
+    upper: ☴
+    lower: ☵
+    uppertrigram: Wind
+    lowertrigram: Water
+    upperanimal: Raven
+    loweranimal: Snake    
+    blue: 01
+    green: 11
+    red: 00
+    line:
+      one:   0
+      two:   1
+      three: 0
+      four:  0
+      five:  1
+      six:   1
+    change: 
+      one:   '110011'
+      two:   '000011'
+      three: '011011'
+      four:  '010111'
+      five:  '010001'
+      six:   '010010'
+  '010100':
+    number: 40
+    symbol: Loro
+    name: Clean Slate
+    scene: Snake meets Dragon at a dead end
+    oldname: Deliverance
+    pdf: https://www.dropbox.com/s/m50z25801enr06b/40-22-liberation.pdf?dl=0
+    hexagram: ䷧
+    upper: ☳
+    lower: ☵
+    uppertrigram: Thunder
+    lowertrigram: Water
+    upperanimal: Dragon
+    loweranimal: Snake    
+    blue: 00
+    green: 10
+    red: 01
+    line:
+      one:   0
+      two:   1
+      three: 0
+      four:  1
+      five:  0
+      six:   0
+    change: 
+      one:   '010100'
+      two:   '010100'
+      three: '010100'
+      four:  '010100'
+      five:  '010100'
+      six:   '010100'
+  '010101':
+    number: 64
+    symbol: Lola
+    name: Open Loop
+    scene: Snake and Phoenix rise up
+    oldname: Before Completion
+    pdf: https://www.dropbox.com/s/r8x03monv34qs3w/64-27-unfinished-business.pdf?dl=0
+    hexagram: ䷿
+    upper: ☲
+    lower: ☵
+    uppertrigram: Fire
+    lowertrigram: Water
+    upperanimal: Phoenix
+    loweranimal: Snake    
+    blue: 01
+    green: 10
+    red: 01
+    line:
+      one:   0
+      two:   1
+      three: 0
+      four:  1
+      five:  0
+      six:   1
+    change: 
+      one:   '110101'
+      two:   '000101'
+      three: '011101'
+      four:  '010001'
+      five:  '010111'
+      six:   '010100'
+  '010110':
+    number: 47
+    symbol: Losa
+    name: Empty Shell
+    scene: Snake enjoys time with Turtle
+    oldname: Oppression
+    pdf: https://www.dropbox.com/s/lsrxfjrtrqe9l53/47-11-oppression.pdf?dl=0
+    hexagram: ䷮
+    upper: ☱
+    lower: ☵
+    uppertrigram: Lake
+    lowertrigram: Water
+    upperanimal: Turtle
+    loweranimal: Snake    
+    blue: 00
+    green: 11
+    red: 01
+    line:
+      one:   0
+      two:   1
+      three: 0
+      four:  1
+      five:  1
+      six:   0
+    change: 
+      one:   '110110'
+      two:   '000110'
+      three: '011110'
+      four:  '010010'
+      five:  '010100'
+      six:   '010111'
+  '010111':
+    number: 6
+    symbol: Loko
+    name: Cognitive Dissonance
+    scene: Snake meets Mice off the beaten path
+    oldname: Conflict
+    pdf: https://www.dropbox.com/s/i5vhovqpgu6glri/06-06-stress-conflict.pdf?dl=0
+    other_titles: The Symbol of Contention, Strife, Litigation, Quarreling, Arguing, Lawsuit
+    trigrams: Water moving uphill against the laws of nature.
+    advice: You have access to the full power of your intuition, ability, and wisdom to create (and/or destroy) what you feel is necessary. The timing is right to do this now. 
+    hexagram: ䷅
+    upper: ☰
+    lower: ☵
+    uppertrigram: Heaven
+    lowertrigram: Water
+    upperanimal: Mice
+    loweranimal: Snake    
+    blue: 01
+    green: 11
+    red: 10
+    line:
+      one:   0
+      two:   1
+      three: 0
+      four:  1
+      five:  1
+      six:   1
+    change: 
+      one:   '010111'
+      two:   '010111'
+      three: '010111'
+      four:  '010111'
+      five:  '010111'
+      six:   '010111'
+
+  '011000':
+    number: 46
+    symbol: Raka
+    name: Sprout
+    scene: Raven meets Ants at a crossroads
+    oldname: Pushing Upward
+    pdf: https://www.dropbox.com/s/1mb5b2lvdh267pn/46-44-pushing-upward.pdf?dl=0
+    hexagram: ䷭
+    upper: ☷
+    lower: ☴
+    uppertrigram: Earth
+    lowertrigram: Wind
+    upperanimal: Ants
+    loweranimal: Raven    
+    blue: 10
+    green: 10
+    red: 00
+    line:
+      one:   0
+      two:   1
+      three: 1
+      four:  0
+      five:  0
+      six:   0
+    change: 
+      one:   '111000'
+      two:   '001000'
+      three: '010000'
+      four:  '011100'
+      five:  '011010'
+      six:   '011001'
+  '011001':
+    number: 18
+    symbol: Raso
+    name: Cracked Foundation
+    scene: Raven meets Bear at a lookout point
+    oldname: Work on the Decayed
+    pdf: https://www.dropbox.com/s/ir0miqzoabziskk/18-37-repair.pdf?dl=0
+    hexagram: ䷑
+    upper: ☶
+    lower: ☴
+    uppertrigram: Mountain
+    lowertrigram: Wind
+    upperanimal: Bear
+    loweranimal: Raven    
+    blue: 11
+    green: 10
+    red: 00
+    line:
+      one:   0
+      two:   1
+      three: 1
+      four:  0
+      five:  0
+      six:   1
+    change: 
+      one:   '111001'
+      two:   '001001'
+      three: '010001'
+      four:  '011101'
+      five:  '011011'
+      six:   '011000'
+  '011010':
+    number: 48
+    symbol: Ralo
+    name: Dig Deep
+    scene: Raven and Snake fall down
+    oldname: The Well
+    pdf: https://www.dropbox.com/s/d98443hktkiqjap/48-53-the-well.pdf?dl=0
+    hexagram: ䷯
+    upper: ☵
+    lower: ☴
+    uppertrigram: Water
+    lowertrigram: Wind
+    upperanimal: Snake
+    loweranimal: Raven    
+    blue: 10
+    green: 11
+    red: 00
+    line:
+      one:   0
+      two:   1
+      three: 1
+      four:  0
+      five:  1
+      six:   0
+    change: 
+      one:   '111010'
+      two:   '001010'
+      three: '010010'
+      four:  '011110'
+      five:  '011000'
+      six:   '011011'
+  '011011':
+    number: 57
+    symbol: Ra
+    name: Raven
+    scene: Raven on a winding path
+    oldname: Gentle Wind
+    olddesc: The winds are favorable.
+    pdf: https://www.dropbox.com/s/c0qeof2ra16je0u/CC-penetration.pdf?dl=0
+    other_titles: The Gentle, The Penetrating, Wind, The Symbol of Bending to Enter, Willing Submission, Gentle Penetration, Ground, Calculations, Complaisance, Penetrating Influence, The Penetration of the Wind, Humility, Devoted Service, Submission
+    interpretation: Wind represents activity of the mind, slowly but persistently getting to the heart of something. There may be something that feels a little bit off, but this wind can help it bend back into a more fitting shape if you let it. 
+    advice: Don't jump to conclusions. Be patient and stay undecided and open as you gather more raw information and mull things over. Even if that's a bit scary. Only settle on a decision once you feel like you've truly internalized the question from all angles.
+    hexagram: ䷸
+    upper: ☴
+    lower: ☴
+    uppertrigram: Wind
+    lowertrigram: Wind
+    upperanimal: Raven
+    loweranimal: Raven    
+    blue: 11
+    green: 11
+    red: 00
+    line:
+      one:   0
+      two:   1
+      three: 1
+      four:  0
+      five:  1
+      six:   1
+    change: 
+      one:   '111011'
+      two:   '001011'
+      three: '010011'
+      four:  '011111'
+      five:  '011001'
+      six:   '011010'
+  '011100':
+    number: 32
+    symbol: Raro
+    name: Second Wind
+    scene: Raven meets Dragon at a dead end
+    oldname: Duration
+    pdf: https://www.dropbox.com/s/7sts7squnzrxezl/32-21-consistency.pdf?dl=0
+    hexagram: ䷟
+    upper: ☳
+    lower: ☴
+    uppertrigram: Thunder
+    lowertrigram: Wind
+    upperanimal: Dragon
+    loweranimal: Raven    
+    blue: 10
+    green: 10
+    red: 01
+    line:
+      one:   0
+      two:   1
+      three: 1
+      four:  1
+      five:  0
+      six:   0
+    change: 
+      one:   '111100'
+      two:   '001100'
+      three: '010100'
+      four:  '011000'
+      five:  '011110'
+      six:   '011101'
+  '011101':
+    number: 50
+    symbol: Rala
+    name: Cauldron
+    scene: Raven and Phoenix rise up
+    oldname: Cauldron
+    pdf: https://www.dropbox.com/s/uchfj8uyjm8han1/50-28-the-sacrificial-vessel.pdf?dl=0
+    hexagram: ䷱
+    upper: ☲
+    lower: ☴
+    uppertrigram: Fire
+    lowertrigram: Wind
+    upperanimal: Phoenix
+    loweranimal: Raven    
+    blue: 11
+    green: 10
+    red: 01
+    line:
+      one:   0
+      two:   1
+      three: 1
+      four:  1
+      five:  0
+      six:   1
+    change: 
+      one:   '111101'
+      two:   '001101'
+      three: '010101'
+      four:  '011001'
+      five:  '011111'
+      six:   '011100'
+  '011110':
+    number: 28
+    symbol: Rasa
+    name: Critical Mass
+    scene: Raven enjoys time with Turtle
+    oldname: Critical Mass
+    olddesc: A forest submerged in a great lake.
+    pdf: https://www.dropbox.com/s/ok3ktccus2xhai9/28-12-critical-mass-great-preponderance.pdf?dl=0
+    other_titles: Preponderance of the Great, The Symbol of Great Passing, Excess, Great Excess, The Passing of Greatness, Great Surpassing, Great Gains, Experience, Greater than Great, Greatness in Excess, Dominance by the Mighty, The Passing of Greatness, Excess of the Great, Law of Karm
+    interpretation: The trees in the lake are outgrowing their existing container. There's a lot of pent up energy, and cracks in the wall of the container that are about to bust open with the raw energy of life. 
+    advice: The hexagram recommends letting this energy flow by its own power, and following it, because it is mature and ready. It’s time to stop holding back.
+    hexagram: ䷛
+    upper: ☱
+    lower: ☴
+    uppertrigram: Lake
+    lowertrigram: Wind
+    upperanimal: Turtle
+    loweranimal: Raven    
+    blue: 10
+    green: 11
+    red: 01
+    line:
+      one:   0
+      two:   1
+      three: 1
+      four:  1
+      five:  1
+      six:   0
+    change: 
+      one:   '111110'
+      two:   '001110'
+      three: '010110'
+      four:  '011010'
+      five:  '011100'
+      six:   '011111'
+  '011111':
+    number: 44
+    symbol: Rako
+    name: Loophole
+    scene: Raven meets Mice off the beaten path
+    oldname: Coming to Meet
+    pdf: https://www.dropbox.com/s/tkbs5mbt4y97qaz/44-05-temptation-coming-to-meet.pdf?dl=0
+    hexagram: ䷫
+    upper: ☰
+    lower: ☴
+    uppertrigram: Heaven
+    lowertrigram: Wind
+    upperanimal: Mice
+    loweranimal: Raven    
+    blue: 11
+    green: 11
+    red: 01
+    line:
+      one:   0
+      two:   1
+      three: 1
+      four:  1
+      five:  1
+      six:   1
+    change: 
+      one:   '111111'
+      two:   '001111'
+      three: '010111'
+      four:  '011011'
+      five:  '011101'
+      six:   '011110'
+
+  '100000':
+    number: 24
+    symbol: Roka
+    name: Ashes To Ashes
+    scene: Dragon meets Ants at a crossroads
+    oldname: Return
+    pdf: https://www.dropbox.com/s/5u2fsn62aij53ul/36-46-clouded-perception.pdf?dl=0
+    hexagram: ䷗
+    upper: ☷
+    lower: ☳
+    uppertrigram: Earth
+    lowertrigram: Thunder
+    upperanimal: Ants
+    loweranimal: Dragon    
+    blue: 00
+    green: 00
+    red: 10
+    line:
+      one:   1
+      two:   0
+      three: 0
+      four:  0
+      five:  0
+      six:   0
+    change: 
+      one:   '000000'
+      two:   '110000'
+      three: '101000'
+      four:  '100100'
+      five:  '100010'
+      six:   '100001'
+  '100001':
+    number: 27
+    symbol: Roso
+    name: Open Jaws
+    scene: Dragon meets Bear at a lookout point
+    oldname: Mouth Corners
+    pdf: https://www.dropbox.com/s/k16x4pfkcfa2u1r/27-34-nourishment.pdf?dl=0
+    hexagram: ䷚
+    upper: ☶
+    lower: ☳
+    uppertrigram: Mountain
+    lowertrigram: Thunder
+    upperanimal: Bear
+    loweranimal: Dragon    
+    blue: 01
+    green: 00
+    red: 10
+    line:
+      one:   1
+      two:   0
+      three: 0
+      four:  0
+      five:  0
+      six:   1
+    change: 
+      one:   '000001'
+      two:   '110001'
+      three: '101001'
+      four:  '100101'
+      five:  '100011'
+      six:   '100000'
+  '100010':
+    number: 3
+    symbol: Rolo
+    name: Empty Handed
+    scene: Dragon and Snake fall down
+    oldname: Difficulty at the Beginning
+    pdf: https://www.dropbox.com/s/batz5aqc17qiram/03-50-difficulty.pdf?dl=0
+    hexagram: ䷂
+    upper: ☵
+    lower: ☳
+    uppertrigram: Water
+    lowertrigram: Thunder
+    upperanimal: Snake
+    loweranimal: Dragon    
+    blue: 00
+    green: 01
+    red: 10
+    line:
+      one:   1
+      two:   0
+      three: 0
+      four:  0
+      five:  1
+      six:   0
+    change: 
+      one:   '000010'
+      two:   '110010'
+      three: '101010'
+      four:  '100110'
+      five:  '100000'
+      six:   '100011'
+  '100011':
+    number: 42
+    symbol: Rora
+    name: Bounty
+    scene: Dragon mmets Raven on a winding path
+    oldname: Increase
+    pdf: https://www.dropbox.com/s/mst0f99417l805u/42-63-increase-breakthrough.pdf?dl=0
+    hexagram: ䷩
+    upper: ☴
+    lower: ☳
+    uppertrigram: Wind
+    lowertrigram: Thunder
+    upperanimal: Raven
+    loweranimal: Dragon    
+    blue: 01
+    green: 01
+    red: 10
+    line:
+      one:   1
+      two:   0
+      three: 0
+      four:  0
+      five:  1
+      six:   1
+    change: 
+      one:   '000011'
+      two:   '110011'
+      three: '101011'
+      four:  '100111'
+      five:  '100001'
+      six:   '100010'
+  '100100':
+    number: 51
+    symbol: Ro
+    name: Dragon
+    scene: Dragon at a dead end
+    oldname: Arousing Thunder
+    pdf: https://www.dropbox.com/s/qb6qifgda2mih0p/51-18-shock-thunder.pdf?dl=0
+    hexagram: ䷲
+    upper: ☳
+    lower: ☳
+    uppertrigram: Thunder
+    lowertrigram: Thunder
+    upperanimal: Dragon
+    loweranimal: Dragon    
+    blue: 00
+    green: 00
+    red: 11
+    line:
+      one:   1
+      two:   0
+      three: 0
+      four:  1
+      five:  0
+      six:   0
+    change: 
+      one:   '000100'
+      two:   '110100'
+      three: '101100'
+      four:  '100000'
+      five:  '100110'
+      six:   '100101'
+  '100101':
+    number: 21
+    symbol: Rola
+    name: Protest
+    scene: Dragon and Phoenix rise up
+    oldname: Biting Through
+    pdf: https://www.dropbox.com/s/jgkyvdbxolcz6dt/21-31-discernment.pdf?dl=0
+    hexagram: ䷔
+    upper: ☲
+    lower: ☳
+    uppertrigram: Fire
+    lowertrigram: Thunder
+    upperanimal: Phoenix
+    loweranimal: Dragon    
+    blue: 01
+    green: 00
+    red: 11
+    line:
+      one:   1
+      two:   0
+      three: 0
+      four:  1
+      five:  0
+      six:   1
+    change: 
+      one:   '000101'
+      two:   '110101'
+      three: '101101'
+      four:  '100001'
+      five:  '100111'
+      six:   '100100'
+  '100110':
+    number: 17
+    symbol: Rosa
+    name: Mirroring
+    scene: Dragon enjoys time with Turtle
+    oldname: Following
+    pdf: https://www.dropbox.com/s/4eu3rsxkf9glu61/17-15-following.pdf?dl=0
+    hexagram: ䷐
+    upper: ☱
+    lower: ☳
+    uppertrigram: Lake
+    lowertrigram: Thunder
+    upperanimal: Turtle
+    loweranimal: Dragon    
+    blue: 00
+    green: 01
+    red: 11
+    line:
+      one:   1
+      two:   0
+      three: 0
+      four:  1
+      five:  1
+      six:   0
+    change: 
+      one:   '000110'
+      two:   '110110'
+      three: '101110'
+      four:  '100010'
+      five:  '100100'
+      six:   '100111'
+  '100111':
+    number: 25
+    symbol: Roko
+    name: Beginner's Mind
+    scene: Dragon meets Mice off the beaten path
+    oldname: Innocence
+    olddesc: Thunder rolls under heaven.
+    pdf: https://www.dropbox.com/s/o10namzmmt65jpu/25-02-innocence.pdf?dl=0
+    other_titles: Integrity, The Unexpected, The Unintentional, The Symbol of Freedom from Error, Without Embroiling, Pestilence, Fidelity, No Error, Freedom from Vanity, Instinctive Goodness, The Simple, Correctness, Subconscious
+    quotes: ['"Whatever happens, keep calm and do what is right." -- D.F. Hook']
+    interpretation: A flash of insight has arrived unexpectedly within yourself. If you can deliver it where it needs to go with innocence and integrity as-is, without entangling it in other grievances, resentments, or fears, this could benefit everyone. 
+    advice: Don't overthink it. Channel your first instinct with as much innocence and good will as you can. If that's not possible, refrain for a moment from saying anything.
+    hexagram: ䷘
+    upper: ☰
+    lower: ☳
+    uppertrigram: Heaven
+    lowertrigram: Thunder
+    upperanimal: Mice
+    loweranimal: Dragon    
+    blue: 01
+    green: 01
+    red: 11
+    line:
+      one:   1
+      two:   0
+      three: 0
+      four:  1
+      five:  1
+      six:   1
+    change: 
+      one:   '000111'
+      two:   '110111'
+      three: '101111'
+      four:  '100011'
+      five:  '100101'
+      six:   '100110'
+
+  '101000':
+    number: 36
+    symbol: Laka
+    name: Dying Embers
+    scene: Phoenix meets Ants at a crossroads
+    oldname: Darkening of the Light
+    pdf: https://www.dropbox.com/s/5u2fsn62aij53ul/36-46-clouded-perception.pdf?dl=0
+    hexagram: ䷣
+    upper: ☷
+    lower: ☲
+    uppertrigram: Earth
+    lowertrigram: Fire
+    upperanimal: Ants
+    loweranimal: Phoenix    
+    blue: 10
+    green: 00
+    red: 10
+    line:
+      one:   1
+      two:   0
+      three: 1
+      four:  0
+      five:  0
+      six:   0
+    change: 
+      one:   '001000'
+      two:   '111000'
+      three: '100000'
+      four:  '101100'
+      five:  '101010'
+      six:   '101001'
+  '101001':
+    number: 22
+    symbol: Laso
+    name: Hearth
+    scene: Phoenix meets Bear at a lookout point
+    oldname: Grace
+    pdf: https://www.dropbox.com/s/5erxt9msmouqpr5/22-35-persona.pdf?dl=0
+    hexagram: ䷕
+    upper: ☶
+    lower: ☲
+    uppertrigram: Mountain
+    lowertrigram: Fire
+    upperanimal: Bear
+    loweranimal: Phoenix    
+    blue: 11
+    green: 00
+    red: 10
+    line:
+      one:   1
+      two:   0
+      three: 1
+      four:  0
+      five:  0
+      six:   1
+    change: 
+      one:   '001001'
+      two:   '111001'
+      three: '100001'
+      four:  '101101'
+      five:  '101011'
+      six:   '101000'
+  '101010':
+    number: 63
+    symbol: Lalo
+    name: Secret Password
+    scene: Phoenix and Snake fall down
+    oldname: After Completion
+    pdf: https://www.dropbox.com/s/rafu2wl73a6vjwp/GM-completion.pdf?dl=0
+    hexagram: ䷾
+    upper: ☵
+    lower: ☲
+    uppertrigram: Water
+    lowertrigram: Fire
+    upperanimal: Snake
+    loweranimal: Phoenix    
+    blue: 10
+    green: 01
+    red: 10
+    line:
+      one:   1
+      two:   0
+      three: 1
+      four:  0
+      five:  1
+      six:   0
+    change: 
+      one:   '001010'
+      two:   '111010'
+      three: '100010'
+      four:  '101110'
+      five:  '101000'
+      six:   '101011'
+  '101011':
+    number: 37
+    symbol: Lara
+    name: Chosen Family
+    scene: Phoenix meets Raven on a winding path
+    oldname: Family
+    pdf: https://www.dropbox.com/s/hti41n1t1l1gf43/37-62-the-family.pdf?dl=0
+    hexagram: ䷤
+    upper: ☴
+    lower: ☲
+    uppertrigram: Wind
+    lowertrigram: Fire
+    upperanimal: Raven
+    loweranimal: Phoenix        
+    blue: 11
+    green: 01
+    red: 10
+    line:
+      one:   1
+      two:   0
+      three: 1
+      four:  0
+      five:  1
+      six:   1
+    change: 
+      one:   '001011'
+      two:   '111011'
+      three: '100011'
+      four:  '101111'
+      five:  '101001'
+      six:   '101010'
+  '101100':
+    number: 55
+    symbol: Laro
+    name: Free Pass
+    scene: Phoenix meets Dragon at a dead end
+    oldname: Abundance
+    pdf: https://www.dropbox.com/s/sf4hzhvlauh6lzt/55-19-abundance-expansion-of-awareness.pdf?dl=0
+    hexagram: ䷶
+    upper: ☳
+    lower: ☲
+    uppertrigram: Thunder
+    lowertrigram: Fire
+    upperanimal: Dragon
+    loweranimal: Phoenix    
+    blue: 10
+    green: 00
+    red: 11
+    line:
+      one:   1
+      two:   0
+      three: 1
+      four:  1
+      five:  0
+      six:   0
+    change: 
+      one:   '001100'
+      two:   '111100'
+      three: '100100'
+      four:  '101000'
+      five:  '101110'
+      six:   '101101'
+  '101101':
+    number: 30
+    symbol: La
+    name: Phoenix
+    scene: Phoenix rises up
+    oldname: Clinging Fire
+    pdf: https://www.dropbox.com/s/gu09i415s4fr2nc/30-30-clarity.pdf?dl=0
+    hexagram: ䷝
+    upper: ☲
+    lower: ☲
+    uppertrigram: Fire
+    lowertrigram: Fire
+    upperanimal: Phoenix
+    loweranimal: Phoenix    
+    blue: 11
+    green: 00
+    red: 11
+    line:
+      one:   1
+      two:   0
+      three: 1
+      four:  1
+      five:  0
+      six:   1
+    change: 
+      one:   '001101'
+      two:   '111101'
+      three: '100101'
+      four:  '101001'
+      five:  '101111'
+      six:   '101100'
+  '101110':
+    number: 49
+    symbol: Lasa
+    name: Hot Seat
+    scene: Phoenix enjoys time with Turtle
+    oldname: Metamorphosis
+    olddesc: Fire in the lake. 
+    pdf: https://www.dropbox.com/s/gpgxbnkxsvlkcvn/YM-metamorphosis-revolution.pdf?dl=0
+    other_titles: Revolution, Transformation, Skinning, The Bridle, The Symbol of Change, Molting, Changing, Radical Change, Overthrowing, Upheaval
+    interpretation: Water extinguishes fire, and fire dries up water. The image of metamorphosis. Each changes the other. Mutually incompatible forces are in dialogue.  
+    advice: A big error might have been made, but forgiveness is fully extended after the fact when it turns out to have been a necessary mistake. It's time to grow.
+    hexagram: ䷰
+    upper: ☱
+    lower: ☲
+    uppertrigram: Lake
+    lowertrigram: Fire
+    upperanimal: Turtle
+    loweranimal: Phoenix    
+    blue: 10
+    green: 01
+    red: 11
+    line:
+      one:   1
+      two:   0
+      three: 1
+      four:  1
+      five:  1
+      six:   0
+    change: 
+      one:   '001110'
+      two:   '111110'
+      three: '100110'
+      four:  '101010'
+      five:  '101100'
+      six:   '101111'
+  '101111':
+    number: 36
+    symbol: Laka
+    name: Mutual Improvement
+    scene: Phoenix meets Mice off the beaten path
+    oldname: Fellowship
+    pdf: https://www.dropbox.com/s/dxufflllzvk66bq/13-03-union-of-forces.pdf?dl=0
+    hexagram: ䷌
+    upper: ☰
+    lower: ☲
+    uppertrigram: Heaven
+    lowertrigram: Fire
+    upperanimal: Mice
+    loweranimal: Phoenix    
+    blue: 11
+    green: 01
+    red: 11
+    line:
+      one:   1
+      two:   0
+      three: 1
+      four:  1
+      five:  1
+      six:   1
+    change: 
+      one:   '001111'
+      two:   '111111'
+      three: '100111'
+      four:  '101011'
+      five:  '101101'
+      six:   '101110'
+
+  '110000':
+    number: 19
+    symbol: Saka
+    name: Mulling
+    scene: Turtle meets Ants at a crossroads
+    oldname: Approach
+    pdf: https://www.dropbox.com/s/xnkphs5kc85f0zw/19-42-approach.pdf?dl=0
+    hexagram: ䷒
+    upper: ☷
+    lower: ☱
+    uppertrigram: Earth
+    lowertrigram: Lake
+    upperanimal: Ants
+    loweranimal: Turtle    
+    blue: 00
+    green: 10
+    red: 10
+    line:
+      one:   1
+      two:   1
+      three: 0
+      four:  0
+      five:  0
+      six:   0
+    change: 
+      one:   '010000'
+      two:   '100000'
+      three: '111000'
+      four:  '110100'
+      five:  '110010'
+      six:   '110001'
+  '110001':
+    number: 41
+    symbol: Saso
+    name: Hibernation
+    scene: Turtle meets Bear at a lookout point
+    oldname: Decrease
+    pdf: https://www.dropbox.com/s/8ufhecbifaz141o/BY-compensating-sacrifice.pdf?dl=0
+    hexagram: ䷨
+    upper: ☶
+    lower: ☱
+    uppertrigram: Mountain
+    lowertrigram: Lake
+    upperanimal: Bear
+    loweranimal: Turtle    
+    blue: 01
+    green: 10
+    red: 10
+    line:
+      one:   1
+      two:   1
+      three: 0
+      four:  0
+      five:  0
+      six:   1
+    change: 
+      one:   '010001'
+      two:   '100001'
+      three: '111001'
+      four:  '110101'
+      five:  '110011'
+      six:   '110000'
+  '110010':
+    number: 60
+    symbol: Salo
+    name: Drawing Straws
+    scene: Turtle and Snake fall down
+    oldname: Limitation
+    pdf: https://www.dropbox.com/s/1qsvshbp3ztr8zr/60-55-restrictive-regulations.pdf?dl=0
+    hexagram: ䷻
+    upper: ☵
+    lower: ☱
+    uppertrigram: Water
+    lowertrigram: Lake
+    upperanimal: Snake
+    loweranimal: Turtle    
+    blue: 00
+    green: 11
+    red: 10
+    line:
+      one:   1
+      two:   1
+      three: 0
+      four:  0
+      five:  1
+      six:   0
+    change: 
+      one:   '010010'
+      two:   '100010'
+      three: '111010'
+      four:  '110110'
+      five:  '110000'
+      six:   '110011'
+  '110011':
+    number: 61
+    symbol: Sara
+    name: Epiphany
+    scene: Turtle meets Raven on a winding path
+    oldname: Inner Truth
+    pdf: https://www.dropbox.com/s/08g89auksj5b7cp/05-56-waiting.pdf?dl=0
+    hexagram: ䷼
+    upper: ☴
+    lower: ☱
+    uppertrigram: Wind
+    lowertrigram: Lake
+    upperanimal: Raven
+    loweranimal: Turtle    
+    blue: 01
+    green: 11
+    red: 10
+    line:
+      one:   1
+      two:   1
+      three: 0
+      four:  0
+      five:  1
+      six:   1
+    change: 
+      one:   '010011'
+      two:   '100011'
+      three: '111011'
+      four:  '110111'
+      five:  '110001'
+      six:   '110010'
+  '110100':
+    number: 54
+    symbol: Saro
+    name: Fake It
+    scene: Turtle meets Dragon at a dead end
+    oldname: Making Do
+    pdf: https://www.dropbox.com/s/qj5z1ogo87e56uz/54-23-propriety-making-do.pdf?dl=0
+    hexagram: ䷵
+    upper: ☳
+    lower: ☱
+    uppertrigram: Thunder
+    lowertrigram: Lake
+    upperanimal: Dragon
+    loweranimal: Turtle    
+    blue: 00
+    green: 10
+    red: 11
+    line:
+      one:   1
+      two:   1
+      three: 0
+      four:  1
+      five:  0
+      six:   0
+    change: 
+      one:   '010100'
+      two:   '100100'
+      three: '111100'
+      four:  '110000'
+      five:  '110110'
+      six:   '110101'
+  '110101':
+    number: 38
+    symbol: Sala
+    name: Entrenched
+    scene: Turtle and Phoenix rise up
+    oldname: Opposition
+    olddesc: Fire over a lake.
+    pdf: https://www.dropbox.com/s/4t9us07u74a6rzp/MY-mutual-alienation.pdf?dl=0
+    other_titles: Mutual Alienation, The Symbol of Strangeness and Disunion, The Estranged, Opposites, Polarizing, Alienation, Distant From, Perversion, Disharmony, Separated, Contradiction, Estrangement, Incongruity
+    interpretation: The fire is rising and the lake is falling, which represents a growing separation between parties involved. And yet, it's through this separation that collective well-being is preserved, because each is able to move with integrity in their own way.
+    advice: Respect alternate points of view. Energy is generated by the tension created by the proximity of fire and water. Channel it creatively rather than destructively. This may not be easy to do, but it is the right thing to do because it will lead to mutual growth.
+    hexagram: ䷥
+    upper: ☲
+    lower: ☱
+    uppertrigram: Fire
+    lowertrigram: Lake
+    upperanimal: Phoenix
+    loweranimal: Turtle    
+    blue: 01
+    green: 10
+    red: 11
+    line:
+      one:   1
+      two:   1
+      three: 0
+      four:  1
+      five:  0
+      six:   1
+    change: 
+      one:   '010101'
+      two:   '100101'
+      three: '111101'
+      four:  '110001'
+      five:  '110111'
+      six:   '110100'
+  '110110':
+    number: 58
+    symbol: Sa
+    name: Turtle
+    scene: Turtle enjoys time
+    oldname: Joyous Lake
+    pdf: https://www.dropbox.com/s/el34w42ea4qke6v/58-10-joyous-lake-self-indulgence.pdf?dl=0
+    hexagram: ䷹
+    upper: ☱
+    lower: ☱
+    uppertrigram: Lake
+    lowertrigram: Lake
+    upperanimal: Turtle
+    loweranimal: Turtle    
+    blue: 00
+    green: 11
+    red: 11
+    line:
+      one:   1
+      two:   1
+      three: 0
+      four:  1
+      five:  1
+      six:   0
+    change: 
+      one:   '010110'
+      two:   '100110'
+      three: '111110'
+      four:  '110010'
+      five:  '110100'
+      six:   '110111'
+  '110111':
+    number: 10
+    symbol: Sako
+    name: Systems Thinking
+    scene: Turtle meets Mice off the beaten path
+    oldname: Treading
+    pdf: https://www.dropbox.com/s/gopn8w2pfe0hvuq/10-07-cautious-advance-treading.pdf?dl=0
+    hexagram: ䷉
+    upper: ☰
+    lower: ☱
+    uppertrigram: Heaven
+    lowertrigram: Lake
+    upperanimal: Mice
+    loweranimal: Turtle    
+    blue: 01
+    green: 11
+    red: 11
+    line:
+      one:   1
+      two:   1
+      three: 0
+      four:  1
+      five:  1
+      six:   1
+    change: 
+      one:   '010111'
+      two:   '100111'
+      three: '111111'
+      four:  '110011'
+      five:  '110101'
+      six:   '110110'
+
+  '111000':
+    number: 11
+    symbol: Koka
+    name: Falling Into Place
+    scene: Mice meet Ants at a crossroads
+    oldname: Peace
+    pdf: https://www.dropbox.com/s/tem53jnwzry7opr/11-41-harmony.pdf?dl=0
+    hexagram: ䷊
+    upper: ☷
+    lower: ☰
+    uppertrigram: Earth
+    lowertrigram: Heaven
+    upperanimal: Ants
+    loweranimal: Mice    
+    blue: 10
+    green: 10
+    red: 10
+    line:
+      one:   1
+      two:   1
+      three: 1
+      four:  0
+      five:  0
+      six:   0
+    change: 
+      one:   '011000'
+      two:   '101000'
+      three: '110000'
+      four:  '111100'
+      five:  '111010'
+      six:   '111001'
+  '111001':
+    number: 26
+    symbol: Koso
+    name: Make Over
+    scene: Mice meet Bear at a lookout point
+    oldname: Great Taming
+    pdf: https://www.dropbox.com/s/rkh8kp9lcbc93pz/26-40-controlled-power.pdf?dl=0
+    hexagram: ䷙
+    upper: ☶
+    lower: ☰
+    uppertrigram: Mountain
+    lowertrigram: Heaven
+    upperanimal: Bear
+    loweranimal: Mice    
+    blue: 11
+    green: 10
+    red: 10
+    line:
+      one:   1
+      two:   1
+      three: 1
+      four:  0
+      five:  0
+      six:   1
+    change: 
+      one:   '011001'
+      two:   '101001'
+      three: '110001'
+      four:  '111101'
+      five:  '111011'
+      six:   '111000'
+  '111010':
+    number: 5
+    symbol: Kolo
+    name: Open Mind
+    scene: Mice and Snake fall down
+    oldname: Waiting
+    pdf: https://www.dropbox.com/s/08g89auksj5b7cp/05-56-waiting.pdf?dl=0
+    hexagram: ䷄
+    upper: ☵
+    lower: ☰
+    uppertrigram: Fire
+    lowertrigram: Heaven
+    upperanimal: Snake
+    loweranimal: Mice    
+    blue: 10
+    green: 11
+    red: 10
+    line:
+      one:   1
+      two:   1
+      three: 1
+      four:  0
+      five:  1
+      six:   0
+    change: 
+      one:   '011010'
+      two:   '101010'
+      three: '110010'
+      four:  '111110'
+      five:  '111000'
+      six:   '111011'
+  '111011':
+    number: 9
+    symbol: Kora
+    name: Practice
+    scene: Mice meet Raven on a winding path
+    oldname: Small Taming
+    pdf: https://www.dropbox.com/s/xleql3skc6okzun/09-57-passive-restraint.pdf?dl=0
+    hexagram: ䷈
+    upper: ☴
+    lower: ☰
+    uppertrigram: Wind
+    lowertrigram: Heaven
+    upperanimal: Raven
+    loweranimal: Mice    
+    blue: 11
+    green: 11
+    red: 10
+    line:
+      one:   1
+      two:   1
+      three: 1
+      four:  0
+      five:  1
+      six:   1
+    change: 
+      one:   '011011'
+      two:   '101011'
+      three: '110011'
+      four:  '111111'
+      five:  '111001'
+      six:   '111010'
+  '111100':
+    number: 34
+    symbol: Koro
+    name: Great Timing
+    scene: Mice meet Dragon at a dead end
+    oldname: Great Power
+    olddesc: Thunder booming across the sky. 
+    pdf: https://www.dropbox.com/s/u3ze7lbfrsv3esw/RO-great-power.pdf?dl=0
+    other_titles: The Power of the Great, The Symbol of Great Vigor, Persons of Great Authority, Great Strength, Great Invigorating, Great Maturity, Accumulated Force, The Strength of the Mighty, Righteous Power, Excessive Force
+    interpretation: The thunder represents movement and the sky represents strength and reach. Together this represents an opportunity to display great power, if you choose to use it. 
+    advice: There is great power crackling in your fingertips like lightning bolts. That doesn't necessarily mean that you should use it, but it should at least be acknowledged and considered as something you must manage. Combining this power with equally great wisdom could benefit everyone involved.
+    hexagram: ䷡
+    upper: ☳
+    lower: ☰
+    uppertrigram: Thunder
+    lowertrigram: Heaven
+    upperanimal: Dragon
+    loweranimal: Mice    
+    blue: 10
+    green: 10
+    red: 11
+    line:
+      one:   1
+      two:   1
+      three: 1
+      four:  1
+      five:  0
+      six:   0
+    change: 
+      one:   '011100'
+      two:   '101100'
+      three: '110100'
+      four:  '111000'
+      five:  '111110'
+      six:   '111101'
+  '111101':
+    number: 14
+    symbol: Kola
+    name: Fuel
+    scene: Mice and Phoenix rise up
+    oldname: Great Possession
+    pdf: https://www.dropbox.com/s/5hk0w2z08fqahzj/14-25-wealth.pdf?dl=0
+    hexagram: ䷍
+    upper: ☲
+    lower: ☰
+    uppertrigram: Fire
+    lowertrigram: Heaven
+    upperanimal: Phoenix
+    loweranimal: Mice    
+    blue: 11
+    green: 10
+    red: 11
+    line:
+      one:   1
+      two:   1
+      three: 1
+      four:  1
+      five:  0
+      six:   1
+    change: 
+      one:   '011101'
+      two:   '101101'
+      three: '110101'
+      four:  '111001'
+      five:  '111111'
+      six:   '111100'
+  '111110':
+    number: 43
+    symbol: Kosa
+    name: Transmute
+    scene: Mice enjoy time with Turtle
+    oldname: Breakthrough
+    olddesc: A lake drying up
+    pdf: https://www.dropbox.com/s/jz5u4fg4tj741eb/43-09-resoluteness.pdf?dl=0
+    hexagram: ䷪
+    upper: ☱
+    lower: ☰
+    uppertrigram: Lake
+    lowertrigram: Heaven
+    upperanimal: Turtle
+    loweranimal: Mice    
+    blue: 10
+    green: 11
+    red: 11
+    line:
+      one:   1
+      two:   1
+      three: 1
+      four:  1
+      five:  1
+      six:   0
+    change: 
+      one:   '011110'
+      two:   '101110'
+      three: '110110'
+      four:  '111010'
+      five:  '111100'
+      six:   '111111'
+  '111111':
+    number: 1
+    symbol: Ko
+    name: Mice
+    scene: Mice off the beaten path
+    oldname: Creative Heaven
+    olddesc: The heavens are in motion.
+    pdf: https://www.dropbox.com/s/fn2mlm395lctbmz/01-08-the-dynamic-creative.pdf?dl=0
+    other_titles: The Creative, The Symbol of Heaven, The Creative Principle, Force, The Key, Creativity, The Originating, Creative Power, Primal Power, Yang, The Life Force, Kundalini
+    interpretation: The heavens represent the source and life energy of all things. Clouds form and rain pours down giving life to everything in nature. 
+    advice: You have access to the full power of your intuition, ability, and wisdom to create (and/or destroy) what you feel is necessary. The timing is right to do this now. 
+    hexagram: ䷀
+    upper: ☰
+    lower: ☰
+    uppertrigram: Heaven
+    lowertrigram: Heaven
+    upperanimal: Mice
+    loweranimal: Mice    
+    blue: 11
+    green: 11
+    red: 11
+    line:
+      one:   1
+      two:   1
+      three: 1
+      four:  1
+      five:  1
+      six:   1
+    change: 
+      one:   '011111'
+      two:   '101111'
+      three: '110111'
+      four:  '111011'
+      five:  '111101'
+      six:   '111110'

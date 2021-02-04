@@ -1,0 +1,44 @@
+---
+title: Book of Moods
+layout: fullscreen
+max_width: false
+---
+
+<style>
+	.book-of-moods blockquote {
+		padding-left: 30px;
+	}
+	.book-of-moods li {
+		padding-bottom: 0.5em;
+	}
+	.book-of-moods li:last {
+		padding-bottom: 0;
+	}
+	.book-of-moods table {
+		width: 100%;
+	}
+	.book-of-moods td strong {
+		padding-right: 20px;
+	}
+</style>
+
+<section class="moods">
+	<div class="row justify-content-center">
+		<div class="col-12 book-of-moods"> 
+		{{content}}
+		</div>
+	</div>
+</section>
+
+<script>
+	$(document).ready(function () {
+	  $(function () {
+			var today = new Date();
+			$( ".week" ).each(function( index ) {
+			  if (today < Date.parse($( this ).attr('data-date'))) {
+			  	$( this ).addClass('future-date');
+			  }
+			});
+	  })
+	});
+</script>
