@@ -12,4 +12,12 @@ question_6: 0
 iching_hex: 24
 iching_name: Return
 iching_desc: 
+
+color_name: "Black over Red"
+change_6: ["YNNNNY","Blue over Red"]
+change_5: ["YNNNYN","Green over Red"]
+change_4: ["YNNYNN","Red over Red"]
+change_3: ["YNYNNN","Black over Magenta"]
+change_2: ["YYNNNN","Black over Yellow"]
+change_1: ["NNNNNN","Black over Black"]
 ---

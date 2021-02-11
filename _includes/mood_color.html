@@ -54,43 +54,43 @@
 <!-- Determine self, community, world phases -->
 {% if q1 > 0.5 %}
 	{% if q4 > 0.5 %}
-		{% assign self_phase = 'full' %}
+		{% assign self_phase = 'full 🌕' %}
 	{% else %}
-		{% assign self_phase = 'rising' %}
+		{% assign self_phase = 'rising 🌔' %}
 	{% endif %}
 {% else %}
 	{% if q4 > 0.5 %}
-		{% assign self_phase = 'falling' %}
+		{% assign self_phase = 'falling 🌘' %}
 	{% else %}
-		{% assign self_phase = 'new' %}
+		{% assign self_phase = 'new 🌑' %}
 	{% endif %}
 {% endif %}
 
 {% if q2 > 0.5 %}
 	{% if q5 > 0.5 %}
-		{% assign community_phase = 'full' %}
+		{% assign community_phase = 'full 🌕' %}
 	{% else %}
-		{% assign community_phase = 'rising' %}
+		{% assign community_phase = 'rising 🌔' %}
 	{% endif %}
 {% else %}
 	{% if q5 > 0.5 %}
-		{% assign community_phase = 'falling' %}
+		{% assign community_phase = 'falling 🌘' %}
 	{% else %}
-		{% assign community_phase = 'new' %}
+		{% assign community_phase = 'new 🌑' %}
 	{% endif %}
 {% endif %}
 
 {% if q3 > 0.5 %}
 	{% if q6 > 0.5 %}
-		{% assign world_phase = 'full' %}
+		{% assign world_phase = 'full 🌕' %}
 	{% else %}
-		{% assign world_phase = 'rising' %}
+		{% assign world_phase = 'rising 🌔' %}
 	{% endif %}
 {% else %}
 	{% if q6 > 0.5 %}
-		{% assign world_phase = 'falling' %}
+		{% assign world_phase = 'falling 🌘' %}
 	{% else %}
-		{% assign world_phase = 'new' %}
+		{% assign world_phase = 'new 🌑' %}
 	{% endif %}
 {% endif %}
 
@@ -157,14 +157,14 @@
 					</div>
 				</div>
 
-				<div style="max-width: 500px; margin: auto auto; padding: 2em 2px;">
+				<div style="max-width: 500px; margin: auto auto; padding: 2em 2px 0 2px;">
 					<h1>
 						{{ upper }} over {{ lower }}
 					</h1>
 					<p>
-						<strong>I Ching {{ page.iching_hex }}:</strong> 
+						<strong>I Ching {{ page.iching_hex }}.</strong>
 						{% if upper == 'Red' %}
-							Thunder
+							Fire
 						{% elsif upper == 'Green' %}
 							Water
 						{% elsif upper == 'Blue' %}
@@ -172,7 +172,7 @@
 						{% elsif upper == 'White' %}
 							Heaven
 						{% elsif upper == 'Cyan' %}
-							Winds
+							Wind
 						{% elsif upper == 'Magenta' %}
 							Fire
 						{% elsif upper == 'Yellow' %}
@@ -181,6 +181,7 @@
 							Earth
 						{% endif %}
 						over 
+
 						{% if lower == 'Red' %}
 							Thunder.
 						{% elsif lower == 'Green' %}
@@ -190,76 +191,22 @@
 						{% elsif lower == 'White' %}
 							Heaven.
 						{% elsif lower == 'Cyan' %}
-							Winds.
+							Wind.
 						{% elsif lower == 'Magenta' %}
-							Fire.
+							Fire. 
 						{% elsif lower == 'Yellow' %}
-							Lake.
+							Lake. 
 						{% elsif lower == 'Black' %}
 							Earth.
 						{% endif %}
 
-						{{ page.iching_name }}.						
+						{{ page.iching_name }}.
 					</p>
 
-					
-					{% if lower == 'Red' %}
-						<p><strong>Dragon:</strong>
-						Intuition is aligned, but skill and resources aren't.</p>
-					{% elsif lower == 'Green' %}
-						<p><strong>Snake:</strong>
-						Skill is aligned, but intuition and resources aren't.</p>
-					{% elsif lower == 'Blue' %}
-						<p><strong>Bear:</strong>
-						Resources is aligned, but intuition and skill aren't.</p>
-					{% elsif lower == 'White' %}
-						<p><strong>Mist:</strong>
-						Intuition, skill, and resources are aligned.</p>
-					{% elsif lower == 'Cyan' %}
-						<p><strong>Crow:</strong>
-						Skill and resources are aligned, but intuition isn't.</p>
-					{% elsif lower == 'Magenta' %}
-						<p><strong>Pinecone:</strong>
-						Intuition and resources are aligned, but skill isn't.</p>
-					{% elsif lower == 'Yellow' %}
-						<p><strong>Otter:</strong>
-						Skill and resources are aligned, but intuition isn't.</p>
-					{% elsif lower == 'Black' %}
-						<p><strong>Ants:</strong>
-						Intuition, skill, and resources are all unaligned.</p>
-					{% endif %}
-
-					{% if upper == 'Red' %}
-						<p><strong>Storm context:</strong>
-						Circumstances are aligned, but network and feedback aren't.</p>
-					{% elsif upper == 'Green' %}
-						<p><strong>River context:</strong>
-						Network is aligned, but circumstances and feedback aren't.</p>
-					{% elsif upper == 'Blue' %}
-						<p><strong>Mountain context:</strong>
-						Feedback is aligned, but circumstances and network aren't.</p>
-					{% elsif upper == 'White' %}
-						<p><strong>Tower context:</strong>
-						Circumstances, network, and feedback are aligned.</p>
-					{% elsif upper == 'Cyan' %}
-						<p><strong>Forest context:</strong>
-						Network and feedback are aligned, but circumstances aren't.</p>
-					{% elsif upper == 'Magenta' %}
-						<p><strong>Fire context:</strong>
-						Circumstances and feedback are aligned, but network isn't.</p>
-					{% elsif upper == 'Yellow' %}
-						<p><strong>Lake context:</strong>
-						Network and Feedback are aligned, but circumstances aren't.</p>
-					{% elsif upper == 'Black' %}
-						<p><strong>Cave context:</strong>
-						Circumstances, network, and feedback are all unaligned.</p>
-					{% endif %}
-
 					<p>
-						<strong>Phases:</strong>
-						Self is {{ self_phase }}.
-						Community is {{ community_phase }}.
-						The World is {{ world_phase }}.
+						<div>Self is {{ self_phase }}.</div>
+						<div>Community is {{ community_phase }}.</div>
+						<div>The World is {{ world_phase }}.</div>
 					</p>
 				</div>
 

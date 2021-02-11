@@ -12,5 +12,13 @@ question_6: 100
 iching_hex: 23
 iching_name: Disintegration
 iching_desc: 
+
+color_name: "Blue over Black"
+change_6: ["NNNNNN","Black over Black"]
+change_5: ["NNNNYY","Cyan over Black"]
+change_4: ["NNNYNY","Magenta over Black"]
+change_3: ["NNYNNY","Blue over Blue"]
+change_2: ["NYNNNY","Blue over Green"]
+change_1: ["YNNNNY","Blue over Red"]
 ---
 
