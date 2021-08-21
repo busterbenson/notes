@@ -400,6 +400,22 @@
     category: "world"
     tags: ["politics"]
 
+'2021-01-20':
+  - name: "Biden is inaugurated."
+    category: "world"
+    tags: ["politics"]
+
+'2021-05-04':
+  - name: "💉💉 I get my 2nd vaccination."
+    category: "world"
+    tags: ["pandemic"]
+
+'2021-05-28':
+  - name: "🎂 I turn 45. Year of Reconstellation."
+    category: "birthday"
+    link: "https://buster.medium.com/45-year-of-reconstellation-38f7c0917c1b"
+    tags: ["annual review"]
+
 '2052-08-05': 
   - name: "☠️ My life expectancy expiration date."
     category: "self"

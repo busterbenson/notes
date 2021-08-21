@@ -62,6 +62,8 @@ $(document).ready(function() {
       if (days_since_new_moon) {
         if (days_since_new_moon < 2 || days_since_new_moon >= 29) {
           moon_phase = "🌑 "
+        } else if (days_til_full_moon == 0) {
+          moon_phase = "🌕 "
         } else if (days_since_new_moon < 6) {
           moon_phase = "🌒 "
         } else if (days_since_new_moon < 10) {
