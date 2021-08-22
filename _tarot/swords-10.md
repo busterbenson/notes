@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Exhaustion, ruin, disaster, stamina, obsession"
+alt_names			 : ['Ruin', 'Finality']
 images				 : ['/assets/images/tarot/rws/rw-swords-10.jpg']
 keywords			 : ['exhaustion', 'ruin', 'disaster', 'stamina', 'obsession']
 url						 : 'tarot/cards/swords-10'

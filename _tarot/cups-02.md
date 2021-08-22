@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Union, attraction, combination, affection"
+alt_names			 : ['Love', 'Union']
 images				 : ['/assets/images/tarot/rws/rw-cups-02.jpg']
 keywords			 : ['union', 'attraction', 'combination', 'affection']
 url						 : 'tarot/cards/cups-02'

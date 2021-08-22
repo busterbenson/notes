@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Fertility, productivity, ripeness, nurturing"
+alt_names			 : []
 images				 : ['/assets/images/tarot/rws/rw-major-03.jpg']
 keywords			 : ['fertility', 'productivity', 'ripeness', 'nurturing']
 url						 : 'tarot/cards/major-03'

@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Mystery, fantasy, imagination, dreams, uncertainty"
+alt_names			 : []
 images				 : ['/assets/images/tarot/rws/rw-major-18.jpg']
 keywords			 : ['mystery', 'fantasy', 'imagination', 'dreams', 'uncertainty']
 url						 : 'tarot/cards/major-18'

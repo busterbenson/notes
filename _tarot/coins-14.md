@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Stability, dependability, confidence, intervention"
+alt_names			 : ['Knight of Disks', 'Father of Roots']
 images				 : ['/assets/images/tarot/rws/rw-coins-14.jpg']
 keywords			 : ['Stability', 'dependability', 'confidence', 'intervention']
 url						 : 'tarot/cards/coins-14'

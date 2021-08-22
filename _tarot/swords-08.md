@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Restriction, limitation, confinement, helplessness"
+alt_names			 : ['Interference', 'Oppression']
 images				 : ['/assets/images/tarot/rws/rw-swords-08.jpg']
 keywords			 : ['restriction', 'limitation', 'confinement', 'helplessness']
 url						 : 'tarot/cards/swords-08'

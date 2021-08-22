@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Celebration, jubilation, community, teamwork, completion"
+alt_names			 : ['Completion', 'Optimism']
 images				 : ['/assets/images/tarot/rws/rw-wands-04.jpg']
 keywords			 : ['celebration', 'jubilation', 'community', 'teamwork', 'completion']
 url						 : 'tarot/cards/wands-04'

@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Charity, fairness, cooperation, sharing"
+alt_names			 : ['Success', 'Altruism']
 images				 : ['/assets/images/tarot/rws/rw-coins-06.jpg']
 keywords			 : ['charity', 'fairness', 'cooperation', 'sharing']
 url						 : 'tarot/cards/coins-06'

@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Enthusiasm, eagerness, confidence, validation, affirmation"
+alt_names			 : ['Princess of Wands', 'Daughter of Feathers']
 images 				 : ['/assets/images/tarot/rws/rw-wands-11.jpg']
 keywords			 : ['enthusiasm', 'eagerness', 'confidence', 'validation', 'affirmation']
 url						 : 'tarot/cards/wands-11'

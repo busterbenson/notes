@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Luck, randomness, cycles, karma, fate, revolution"
+alt_names			 : ['Fortune']
 images				 : ['/assets/images/tarot/rws/rw-major-10.jpg']
 keywords			 : ['luck', 'randomness', 'cycles', 'karma', 'fate', 'revolution']
 url						 : 'tarot/cards/major-10'

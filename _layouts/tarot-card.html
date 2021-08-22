@@ -9,7 +9,7 @@ layout: fullscreen
   }
   .subtitle {
     font-weight: 200;
-    font-size: 24px;
+    font-size: 20px;
   }
 </style>
 
@@ -24,8 +24,19 @@ layout: fullscreen
       </div>
       <div class="row justify-content-center">
         <div class="col-12">
-          <h1 class="title mt-3 mb-0" style="font-size: 40px;">{{ page.title }}</h1>
-          <div class="subtitle mt-0">{{ page.one_liner }}</div>
+          <h1 class="title mt-3 mb-0" style="font-size: 50px;">{{ page.title }}</h1>
+          {% if page.alt_names %}
+            <div class="subtitle mt-0">
+              <strong>Alt names: </strong>
+              {% for name in page.alt_names %}
+                {{ name }}{% if forloop.last %}{% else %},{% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+          <div class="subtitle mt-0">
+            <strong>Keywords:</strong>
+            {{ page.one_liner }}
+          </div>
           {% if content and content != "" %}
             <div class="page-content">{{ content }}</div>
           {% endif %}

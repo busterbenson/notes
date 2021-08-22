@@ -7,6 +7,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Evaluation, decision, budgeting, diagnosis"
+alt_names			 : ['Change', 'Equilibrium']
 images				 : ['/assets/images/tarot/rws/rw-coins-02.jpg']
 keywords			 : ['evaluation', 'decision', 'budgeting', 'diagnosis']
 url						 : 'tarot/cards/coins-02'

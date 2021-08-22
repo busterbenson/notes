@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Creativity, ingenuity, achievement, direction"
+alt_names			 : ['Knight of Wands', 'Father of Feathers']
 images				 : ['/assets/images/tarot/rws/rw-wands-14.jpg']
 keywords			 : ['creativity', 'ingenuity', 'achievement', 'direction']
 url						 : 'tarot/cards/wands-14'

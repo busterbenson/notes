@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Conflict, decision, option, individuality"
+alt_names			 : ['Dominion', 'Success']
 images				 : ['/assets/images/tarot/rws/rw-wands-02.jpg']
 keywords			 : ['conflict', 'decision', 'option', 'individuality']
 url						 : 'tarot/cards/wands-02'

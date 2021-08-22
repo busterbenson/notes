@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Implementation, action, exploration"
+alt_names			 : ['Virtue', 'Vantage']
 images				 : ['/assets/images/tarot/rws/rw-wands-03.jpg']
 keywords			 : ['implementation', 'action', 'exploration']
 url						 : 'tarot/cards/wands-03'

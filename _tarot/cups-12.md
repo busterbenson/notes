@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : ""
+alt_names			 : ['Prince of Cups', 'Son of Horns']
 images				 : ['/assets/images/tarot/rws/rw-cups-12.jpg']
 keywords			 : ['fervor', 'zeal', 'moodiness', 'illumination']
 url						 : 'tarot/cards/cups-12'

@@ -7,6 +7,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Remorse, worry, distraught, conclusion"
+alt_names			 : ['Cruelty', 'Anguish']
 images				 : ['/assets/images/tarot/rws/rw-swords-09.jpg']
 keywords			 : ['remorse', 'worry', 'distraught', 'conclusion']
 url						 : 'tarot/cards/swords-09'

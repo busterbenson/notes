@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : ""
+alt_names			 : ['Queen of Cups', 'Mother of Horns']
 images				 : ['/assets/images/tarot/rws/rw-cups-13.jpg']
 keywords			 : ['insightfulness', 'spirituality', 'compassion', 'empathy', 'instinct']
 url						 : 'tarot/cards/cups-13'

@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Loss, despair, re-evaluation, regret, uncertainty, repentance"
+alt_names			 : ['Disappointment', 'Loss']
 images				 : ['/assets/images/tarot/rws/rw-cups-05.jpg']
 keywords			 : ['loss', 'despair', 're-evaluation', 'regret', 'uncertainty', 'repentance']
 url						 : 'tarot/cards/cups-05'

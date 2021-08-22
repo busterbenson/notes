@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Discipline, boldness, self-discipline, power, vitality"
+alt_names			 : ['Lust']
 images				 : ['/assets/images/tarot/rws/rw-major-08.jpg']
 keywords			 : ['discipline', 'boldness', 'self-discipline', 'power', 'vitality']
 url						 : 'tarot/cards/major-08'

@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Celebration, expression, community, friendliness"
+alt_names			 : ['Abundance', 'Celebration']
 images				 : ['/assets/images/tarot/rws/rw-cups-03.jpg']
 keywords			 : ['celebration', 'expression', 'community', 'friendliness']
 url						 : 'tarot/cards/cups-03'

@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Attention, attraction, unification, collaboration"
+alt_names			 : ['Queen of Wands', 'Mother of Feathers']
 images				 : ['/assets/images/tarot/rws/rw-wands-13.jpg']
 keywords			 : ['attention', 'attraction', 'unification', 'collaboration']
 url						 : 'tarot/cards/wands-13'

@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Charity, sharing, sacrifice, cooperation, fairness"
+alt_names			 : ['Pleasure', 'Happiness']
 images				 : ['/assets/images/tarot/rws/rw-cups-06.jpg']
 keywords			 : ['charity', 'sharing', 'sacrifice', 'cooperation', 'fairness']
 url						 : 'tarot/cards/cups-06'

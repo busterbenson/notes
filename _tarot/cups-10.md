@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Joy, fulfillment, overwhelming emotion, giddiness"
+alt_names			 : ['Satiety', 'Overflowing']
 images				 : ['/assets/images/tarot/rws/rw-cups-10.jpg']
 keywords			 : ['joy', 'fulfillment', 'overwhelming emotion', 'giddiness']
 url						 : 'tarot/cards/cups-10'

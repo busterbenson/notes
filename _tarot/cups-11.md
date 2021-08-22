@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : ""
+alt_names			 : ['Princess of Cups', 'Daughter of Horns']
 images				 : ['/assets/images/tarot/rws/rw-cups-11.jpg']
 keywords			 : ['enthusiasm', 'first impressions', 'romanticism', 'superficiality']
 url						 : 'tarot/cards/cups-11'

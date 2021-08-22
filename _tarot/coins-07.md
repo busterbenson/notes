@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Assessment, evaluation, re-evaluation, reflection"
+alt_names			 : ['Failure', 'Growth']
 images				 : ['/assets/images/tarot/rws/rw-coins-07.jpg']
 keywords			 : ['assessment', 'evaluation', 're-evaluation', 'reflection']
 url						 : 'tarot/cards/coins-07'

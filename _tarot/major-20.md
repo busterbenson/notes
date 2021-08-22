@@ -7,6 +7,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Revival, renewal, resurrection, evaluation, invitation"
+alt_names			 : ['The Aeon']
 images				 : ['/assets/images/tarot/rws/rw-major-20.jpg']
 keywords			 : ['revival', 'renewal', 'resurrection', 'evaluation', 'invitation']
 url						 : 'tarot/cards/major-20'

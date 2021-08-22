@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Intuition, spirituality, affection, motivation"
+alt_names			 : ['Joy']
 images				 : ['/assets/images/tarot/rws/rw-cups-01.jpg']
 keywords			 : ['intuition', 'spirituality', 'affection', 'motivation']
 url						 : 'tarot/cards/cups-01'

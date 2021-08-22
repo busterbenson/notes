@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Love, passion, unity, choice"
+alt_names			 : []
 images				 : ['/assets/images/tarot/rws/rw-major-06.jpg']
 keywords			 : ['love', 'passion', 'unity', 'choice']
 url						 : 'tarot/cards/major-06'

@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Wholeness, integration, totality, completeness, fullness"
+alt_names			 : ['The Universe']
 images				 : ['/assets/images/tarot/rws/rw-major-21.jpg']
 keywords			 : ['wholeness', 'integration', 'totality', 'completeness', 'fullness']
 url						 : 'tarot/cards/major-21'

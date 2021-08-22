@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Bravery, resolve, determination"
+alt_names			 : ['Valour', 'Power']
 images				 : ['/assets/images/tarot/rws/rw-wands-07.jpg']
 keywords			 : ['bravery', 'resolve', 'determination']
 url						 : 'tarot/cards/wands-07'

@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Shadow, materialism, bondage, delusion"
+alt_names			 : []
 images				 : ['/assets/images/tarot/rws/rw-major-15.jpg']
 keywords			 : ['shadow', 'materialism', 'bondage', 'delusion']
 url						 : 'tarot/cards/major-15'

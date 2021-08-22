@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Effort, work diligence, skill"
+alt_names			 : ['Prudence', 'Discipline']
 images				 : ['/assets/images/tarot/rws/rw-coins-08.jpg']
 keywords			 : ['effort', 'work diligence', 'skill']
 url						 : 'tarot/cards/coins-08'

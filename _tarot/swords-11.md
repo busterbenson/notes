@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Student, apprentice, scholarship, information"
+alt_names			 : ['Princess of Swords', 'Daughter of Arrows']
 images				 : ['/assets/images/tarot/rws/rw-swords-11.jpg']
 keywords			 : ['student', 'apprentice', 'scholarship', 'information']
 url						 : 'tarot/cards/swords-11'

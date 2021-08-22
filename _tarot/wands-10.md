@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Exhaustion, resistance, burden, oppression"
+alt_names			 : ['Oppression', 'Burden']
 images				 : ['/assets/images/tarot/rws/rw-wands-10.jpg']
 keywords			 : []
 url						 : 'tarot/cards/wands-10'

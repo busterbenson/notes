@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Solitude, experience, stillness, withdrawal"
+alt_names			 : []
 images				 : ['/assets/images/tarot/rws/rw-major-09.jpg']
 keywords			 : ['solitude', 'experience', 'stillness', 'withdrawal']
 url						 : 'tarot/cards/major-09'

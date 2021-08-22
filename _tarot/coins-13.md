@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Luxury, comfort, resourcefulness, generosity, prosperity"
+alt_names			 : ['Queen of Disks', 'Mother of Roots']
 images				 : ['/assets/images/tarot/rws/rw-coins-13.jpg']
 keywords			 : ['luxury', 'comfort', 'resourcefulness', 'generosity', 'prosperity']
 url						 : 'tarot/cards/coins-13'

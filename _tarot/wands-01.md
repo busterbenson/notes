@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Desire, inspiration, vision, creation, invention"
+alt_names			 : ['Inspiration']
 images				 : ['/assets/images/tarot/rws/rw-wands-01.jpg']
 keywords			 : ['desire', 'inspiration', 'vision', 'creation', 'invention']
 url						 : 'tarot/cards/wands-01'

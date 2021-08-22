@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Wealth, abundance, acquisition, greed"
+alt_names			 : ['Wealth']
 images				 : ['/assets/images/tarot/rws/rw-coins-10.jpg']
 keywords			 : ['wealth', 'abundance', 'acquisition', 'greed']
 url						 : 'tarot/cards/coins-10'

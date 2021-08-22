@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Selfishness, hostility, irrationality, self-preservation"
+alt_names			 : ['Defeat']
 images				 : ['/assets/images/tarot/rws/rw-swords-05.jpg']
 keywords			 : ['selfishness', 'hostility', 'irrationality', 'self-preservation']
 url						 : 'tarot/cards/swords-05'

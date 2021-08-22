@@ -7,6 +7,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Training, discipline, confidence, enough"
+alt_names			 : ['Gain', 'Accomplishment']
 images				 : ['/assets/images/tarot/rws/rw-coins-09.jpg']
 keywords			 : ['training', 'discipline', 'confidence', 'enough']
 url						 : 'tarot/cards/coins-09'

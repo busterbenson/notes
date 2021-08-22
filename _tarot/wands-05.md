@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Confrontation, disruption, distinction, objection, strife"
+alt_names			 : ['Strife', 'Rivalry']
 images				 : ['/assets/images/tarot/rws/rw-wands-05.jpg']
 keywords			 : ['confrontation', 'disruption', 'distinction', 'objection', 'strife']
 url						 : 'tarot/cards/wands-05'

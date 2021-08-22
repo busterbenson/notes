@@ -6,6 +6,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Satisfaction, sensuality, luxury, pleasure"
+alt_names			 : ['Happiness', 'Fulfillment']
 images				 : ['/assets/images/tarot/rws/rw-cups-09.jpg']
 keywords			 : ['satisfaction', 'sensuality', 'luxury', 'pleasure']
 url						 : 'tarot/cards/cups-09'

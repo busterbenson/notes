@@ -7,6 +7,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Bluntness, intelligence, incisiveness, investigation"
+alt_names			 : ['Prince of Swords', 'Son of Arrows']
 images				 : ['/assets/images/tarot/rws/rw-swords-12.jpg']
 keywords			 : ['bluntness', 'intelligence', 'incisiveness', 'investigation']
 url						 : 'tarot/cards/swords-12'

@@ -6,6 +6,7 @@ card_type			 : 'major' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Capability, empowerment, activity"
+alt_names			 : ['The Magus']
 images				 : ['/assets/images/tarot/rws/rw-major-01.jpg']
 keywords			 : ['capability', 'empowerment', 'activity']
 url						 : 'tarot/cards/major-01'

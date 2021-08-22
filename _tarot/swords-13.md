@@ -7,6 +7,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Grace, skill, wit, charm, aptitude"
+alt_names			 : ['Queen of Swords', 'Mother of Arrows']
 images				 : ['/assets/images/tarot/rws/rw-swords-13.jpg']
 keywords			 : ['grace', 'skill', 'wit', 'charm', 'aptitude']
 url						 : 'tarot/cards/swords-13'
