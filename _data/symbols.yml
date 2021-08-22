@@ -1,22 +1,21 @@
-0:
+'0':
   name: The Number 0
   desc: 0 transcends the Alpha (beginning) and Omega (the end) as there is no beginning and no end. All is infinite.
   cards: 
     - major-00
 
-1:
+'1':
   name: The Number 1
-  desc: Origins, unity, seeds.
+  desc: "Origins, unity, seeds."
   cards: 
     - major-01
     - major-10
-    - major-19
     - wands-01
     - cups-01
     - swords-01
     - coins-01
 
-2:
+'2':
   name: The Number 2
   desc: "The Other: Division, debate, duality."
   cards: 
@@ -28,7 +27,7 @@
     - swords-02
     - coins-02
 
-3:
+'3':
   name: The Number 3
   desc: "Getting Results: expression, productivity, output."
   cards: 
@@ -40,7 +39,7 @@
     - swords-03
     - coins-03
 
-4:
+'4':
   name: The Number 4
   desc: "The Status Quo: stability, equality, persistence."
   cards: 
@@ -51,7 +50,7 @@
     - swords-04
     - coins-04
 
-5:
+'5':
   name: The Number 5
   desc: "The Catalyst: instability, resistance, confrontation, evolution. The number representing humanity (head, arms, and legs)."
   cards: 
@@ -62,7 +61,7 @@
     - swords-05
     - coins-05
 
-6:
+'6':
   name: The Number 6
   desc: "The Adjustment: cooperation, collaboration, interaction."
   cards: 
@@ -73,7 +72,7 @@
     - swords-06
     - coins-06
 
-7:
+'7':
   name: The Number 7
   desc: "The Motive: imagination, inner work, psychology."
   cards: 
@@ -84,7 +83,7 @@
     - swords-07
     - coins-07
 
-8:
+'8':
   name: The Number 8
   desc: "The Action: movement, outer work."
   cards: 
@@ -95,7 +94,7 @@
     - swords-08
     - coins-08
 
-9:
+'9':
   name: The Number 9
   desc: "The Completion: fullness, readiness, ripeness."
   cards: 
@@ -106,9 +105,9 @@
     - swords-09
     - coins-09
 
-10:
+'10':
   name: The Number 10
-  desc: "The End: finality, completion, the end of a cycle."
+  desc: "The End: finality, completion, the end of a cycle, beginning of a new one."
   cards: 
     - major-10
     - major-19
@@ -119,16 +118,18 @@
 
 ace:
   name: Nature of the Ace
-  desc: Compressed into the Ace are all the qualities of all the other cards of the suit. In this way, the Ace can be said to be the “root” or “seed” of its associated element.
+  desc: Compressed into the Ace are all the qualities of all the other cards of the suit. In this way, the Ace can be said to be the “root” or “seed” of its suit.
   cards: 
     - wands-01
     - cups-01
     - swords-01
     - coins-01
 
-acolytes:
-  name: Acolytes
+kneeling-acolytes:
+  name: Kneeling Acolytes
   desc: The kneeling acolytes or ministers wear robes adorned with roses and lilies in RWS-influenced decks, suggesting a connection with repressed male and female sexual energies.
+  cards: 
+    - major-05
 
 adoration-of-coin:
   name: Adoration of the Coin

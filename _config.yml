@@ -49,11 +49,14 @@ collections:
     output: true
     permalink: /:year/:month/:day/:slug
   mood:
-    output: true
+    output: false # Disabled for now
     permalink: /mood/:name
   tarot:
     output: true
     permalink: /tarot/:name
+  symbol:
+    output: true
+    permalink: /symbol/:symbol
 
 defaults:
   - scope:

@@ -1,5 +1,4 @@
 ---
-title: Hi
 layout: fullscreen
 ---
 
@@ -140,7 +139,7 @@ layout: fullscreen
               <p>
                 {% assign symbol = site.data.symbols[s] %}
                 {% if symbol %}
-                  <strong>{{ symbol.name }}:</strong> {{ symbol.desc }}
+                  <strong><a href="/symbol/{{s}}">{{ symbol.name }}</a>:</strong> {{ symbol.desc }}
                 {% endif %}
                 </p>
             {% endfor %}

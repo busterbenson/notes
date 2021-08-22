@@ -39,7 +39,7 @@ advice_fortune_telling : "Expect to be caught in a misdeed and punished accordin
 questions	: ["How is your own faith (or lack of faith) reflected in this situation?", "Are there outdated beliefs you’d do well to abandon?", "What urges or inclinations are you being called upon to control?", "If you were in a respected position of power, what changes would you make?", "What role might tradition or religion play in this situation?", "Who authored the rules? Who enforces them? Why?", "How might an experienced guide impact this situation?"]
 
 # referenced in the symbols.toml data file
-symbols	  : ['5', 'three-tiered-crown', 'triple-cross-scepter', 'acolytes', 'red-roses-and-white-lilies']
+symbols	  : ['5', 'three-tiered-crown', 'triple-cross-scepter', 'kneeling-acolytes', 'red-roses-and-white-lilies']
 
 # metadata
 suppress_topnav : true
