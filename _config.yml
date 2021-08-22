@@ -51,7 +51,10 @@ collections:
   mood:
     output: true
     permalink: /mood/:name
-  
+  tarot:
+    output: true
+    permalink: /tarot/:name
+
 defaults:
   - scope:
       path: ""
@@ -72,3 +75,8 @@ defaults:
       type: "pages"
     values:
       layout: "mood"
+  - scope: 
+      path: ""
+      type: "pages"
+    values:
+      layout: "tarot"

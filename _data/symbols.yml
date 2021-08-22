@@ -1,0 +1,1502 @@
+0:
+  name: The Number 0
+  desc: 0 transcends the Alpha (beginning) and Omega (the end) as there is no beginning and no end. All is infinite.
+  cards: 
+    - major-00
+
+1:
+  name: The Number 1
+  desc: Origins, unity, seeds.
+  cards: 
+    - major-01
+    - major-10
+    - major-19
+    - wands-01
+    - cups-01
+    - swords-01
+    - coins-01
+
+2:
+  name: The Number 2
+  desc: "The Other: Division, debate, duality."
+  cards: 
+    - major-02
+    - major-11
+    - major-20
+    - wands-02
+    - cups-02
+    - swords-02
+    - coins-02
+
+3:
+  name: The Number 3
+  desc: "Getting Results: expression, productivity, output."
+  cards: 
+    - major-03
+    - major-12
+    - major-21
+    - wands-03
+    - cups-03
+    - swords-03
+    - coins-03
+
+4:
+  name: The Number 4
+  desc: "The Status Quo: stability, equality, persistence."
+  cards: 
+    - major-04
+    - major-13
+    - wands-04
+    - cups-04
+    - swords-04
+    - coins-04
+
+5:
+  name: The Number 5
+  desc: "The Catalyst: instability, resistance, confrontation, evolution. The number representing humanity (head, arms, and legs)."
+  cards: 
+    - major-05
+    - major-14
+    - wands-05
+    - cups-05
+    - swords-05
+    - coins-05
+
+6:
+  name: The Number 6
+  desc: "The Adjustment: cooperation, collaboration, interaction."
+  cards: 
+    - major-06
+    - major-15
+    - wands-06
+    - cups-06
+    - swords-06
+    - coins-06
+
+7:
+  name: The Number 7
+  desc: "The Motive: imagination, inner work, psychology."
+  cards: 
+    - major-07
+    - major-16
+    - wands-07
+    - cups-07
+    - swords-07
+    - coins-07
+
+8:
+  name: The Number 8
+  desc: "The Action: movement, outer work."
+  cards: 
+    - major-08
+    - major-17
+    - wands-08
+    - cups-08
+    - swords-08
+    - coins-08
+
+9:
+  name: The Number 9
+  desc: "The Completion: fullness, readiness, ripeness."
+  cards: 
+    - major-09
+    - major-18
+    - wands-09
+    - cups-09
+    - swords-09
+    - coins-09
+
+10:
+  name: The Number 10
+  desc: "The End: finality, completion, the end of a cycle."
+  cards: 
+    - major-10
+    - major-19
+    - wands-10
+    - cups-10
+    - swords-10
+    - coins-10
+
+ace:
+  name: Nature of the Ace
+  desc: Compressed into the Ace are all the qualities of all the other cards of the suit. In this way, the Ace can be said to be the “root” or “seed” of its associated element.
+  cards: 
+    - wands-01
+    - cups-01
+    - swords-01
+    - coins-01
+
+acolytes:
+  name: Acolytes
+  desc: The kneeling acolytes or ministers wear robes adorned with roses and lilies in RWS-influenced decks, suggesting a connection with repressed male and female sexual energies.
+
+adoration-of-coin:
+  name: Adoration of the Coin
+  desc: The RWS Page, Knight, and Queen of Pentacles seem to romanticize the giant coin in their hands, holding it like a beloved treasure. There's something a bit silly and superficial about this level of reverence for money. As the court cards progress you can see how once you’ve attained the object of your quest, caution is increasingly required to protect, maintain, and preserve what you’ve won.
+  cards: 
+    - coins-11
+    - coins-12
+    - coins-13
+
+airy-throne:
+  name: Airy Throne
+  desc: To emphasize the airiness of this suit, the throne of the King of Swords may be decorated with flying creatures, or, in some decks, may hover in space. Air’s qualities include logic and communication.
+  cards: 
+    - swords-14
+
+angel:
+  name: An Angel
+  desc: Whether seen as Cupid (in the Marseilles deck) or Eros (in the RWS-influenced decks), the influence of the angel draws the lovers together.
+  cards: 
+    - major-06
+
+angel-gabriel:
+  name: Gabriel
+  desc: In the apocalyptic visions of the Book of Revelation, Gabriel summons the dead from their slumber with a blast of his trumpet.
+  cards: 
+    - major-20
+
+ankh-scepter:
+  name: Scepter with Ankh
+  desc: The Emperor’s distinctive scepter hints at his dominion over life and death. In the Marseilles-style decks, the Emperor holds a standard orb and cross scepter.
+  variations: 
+    - orb-and-cross-scepter
+    - triple-cross-scepter
+  cards: 
+    - major-04
+
+arbor:
+  name: Arbor
+  desc: Most RWS-inspired illustrations for the 4 of Wands card incorporate a celebratory arbor. Consider what can be celebrated.
+  cards: 
+    - wands-04
+
+awkwardness:
+  name: Awkwardness
+  desc: Most RWS-inspired cards for the Page of Swords will feature a young swordsman in a romantic pose, indicating he’s more acquainted with the idea of battle than he is with its harsh realities. The Page of Swords wants to be an intellectual or scholar, but lacks the credentials or training to fill the role with much success at this time. The Page of Wands’s yearning gaze is also frequently posed in a manner that suggests awkwardness or clumsiness.
+  cards: 
+    - swords-11
+    - wands-11
+
+baby:
+  name: Baby
+  desc: In RWS-influenced decks, the Sun card depicts a single gleeful infant. In other decks, we see two dancing cherubs. Both represent an energetic and mystical rebirth. In The Book of Thoth, Crowley writes, “They represent the next stage which is to be attained by mankind.” 
+  cards: 
+    - major-19
+
+background-wands:
+  name: Background Wands
+  desc: In the background of many RWS versions of the 9 of Wands, we see eight Wands; they represent the work done to get this far. Whenever necessary, this figure can look back and remember their achievements in order to give them the strength to keep moving forward. Or at least prevent them from falling over.
+  variations: 
+    - wands
+  cards: 
+    - wands-09
+
+bag:
+  name: Bag
+  desc: The RWS Fool carries a bag or wallet, presumably filled with lessons from a previous life.
+  cards: 
+    - major-00
+
+balance:
+  name: Balance
+  desc: Illustrations for the 2 of Cups almost always incorporate themes of balance. Emotional extremes and obsessions unbalance us; tempering your feelings with wisdom may help you feel more empowered.
+  variations: 
+    - scales
+  cards: 
+    - cups-02
+
+baton:
+  name: Baton
+  desc: In many decks, the central figure holds a baton; in RWS-influenced decks, he or she holds two. This is no longer the singular wand of the Magician!
+  cards: 
+    - major-21
+
+battered-figure:
+  name: Battered Figure
+  desc: The figure on RWS-inspired versions of this card looks exhausted; his Wand is more a prop than a weapon. Still, they persist, and the fight seems to be mostly over.
+  variations: 
+    - hero
+  cards: 
+    - wands-09
+
+beard:
+  name: Beard
+  desc: The Emperor is often drawn with a full beard, suggesting masculinity and maturity. Significantly, many drawings of masculine deities (including the Christian God) incorporate long, flowing beards, emphasizing transcendent authority.
+  cards: 
+    - major-04
+
+beggar:
+  name: The Beggar
+  desc: While the RWS and other later Fools are fresh-faced characters cavorting on cliffs, earlier incarnations were beggars -- the lowliest of the low, according to the Renaissance world view.
+  cards: 
+    - major-00
+
+black-and-white:
+  name: Black and White
+  desc: Yin and Yang. Masculine and feminine forces.
+  variations: 
+    - sphynxes
+    - columns
+
+black-cat:
+  name: Black Cat
+  desc: The black cat on RWS-inspired versions of this card is a familiar, an animal helper sent to guard, assist, and protect. Having a “familiar”—an aide or openly or covertly embraces your ideology—in a group can help you steer participants toward agreement.
+  cards: 
+    - wands-13
+
+blended-cups:
+  name: Blended Cups
+  desc: Temperance often pours the contents of two cups together, blending water, water and wine, wine and milk, or even fire and water. Bringing opposites together.
+  cards: 
+    - major-14
+
+blindfold:
+  name: Blindfold (or lack thereof)
+  desc: Themis on the Justice card doesn't wear a blindfold, emphasizing her ability to foresee the future; Justitia does, emphasizing her objectivity. In RWS-inspired decks, we frequently see a blindfolded woman grasping two broadswords on the Two of Swords. Set apart from the waters of intuition, she is depending solely on logic to make a difficult decision.
+
+blindfolded-figure:
+  name: Blindfolded Figure
+  desc: In RWS-inspired decks, we frequently see a blindfolded woman grasping two broadswords on the Two of Swords. Set apart from the waters of intuition, for better or worse she is depending solely on logic to make a difficult decision.
+  cards: 
+    - swords-02
+
+boatman:
+  name: Boatman
+  desc: On RWS versions of the 6 of Swords, a boatman steers a craft bearing one or two huddled figures. What are they leaving? Where are they going?
+  cards: 
+    - swords-06
+
+bolted-wand:
+  name: Bolted Wand
+  desc: In RWS-inspired decks, one of the two Wands is bolted to the wall, hinting at the possibility that you may need to abandon old habits for new, more flexible ones.
+  variations: 
+    - wands
+  cards: 
+    - wands-02
+
+bored-figure:
+  name: Bored Figure
+  desc: In the 4 of Cups, a figure looks both transfixed and bored at what he sees in front of him, to the point that he completely misses (or maybe dismisses) the new opportunity being offered to him.
+
+bumper-crop:
+  name: Bumper Crop
+  desc: While the lady of the manor focuses on the task at hand in the 9 of Coins, a rich harvest of pentacles grows. Her bounty looks effortless, but a crop this rich doesn’t happen by accident.
+  cards: 
+    - coins-09
+
+canopy:
+  name: Canopy
+  desc: Stars imprinted on the canopy of the RWS Chariot signify the occupant’s mastery over all things under heaven.
+  cards: 
+    - major-07
+
+charging-forward:
+  name: Charging Forward
+  desc: Versions of this card based on RWS imagery often depict a fair young man streaking across the desert in full battle armor. Is the horse you’re riding today galloping fast…or out of control?
+  cards: 
+    - wands-12
+
+charity:
+  name: Charity
+  desc: The wealthy merchant on many versions of this card won’t miss a gold Coin or two, but the money he distributes could make a huge difference to someone less fortunate. Sometimes there is an imbalance of values between people where giving ends up being more valuable to the recipient than it costs to the giver.
+  cards: 
+    - coins-06
+
+cliff:
+  name: The Cliff
+  desc: The Fool is often shown just one footfall short of a tumble; in other decks, he is suspended in space.
+  cards: 
+    - major-00
+
+coins:
+  name: Coins
+  desc: "One of the four suits of the tarot. Also sometimes called pentacles or diskc. Coins suggest health, wealth, practicality and physicality. Their domain extends beyond money and finance to all physical things, including the human body. Coins explore your attitude toward resources of all kinds: what you’ve been given, and what you do with it. In RWS-influenced decks, Coins are often called Pentacles. A pentacle’s design (with the upright star in the middle that represents the human body) reminds us that physical blessings, from possessions to our bodies, are to be used for higher purposes. In your own life, how often do you focus on 'the star in the coin'?"
+  variations: 
+    - crop-of-coins
+  cards: 
+    - major-01
+    - coins-01
+    - coins-02
+    - coins-03
+    - coins-04
+    - coins-05
+    - coins-06
+    - coins-07
+    - coins-08
+    - coins-09
+    - coins-10
+    - coins-11
+    - coins-12
+    - coins-13
+    - coins-14
+
+columns:
+  name: Boaz and Jachin
+  desc: The B (Boaz) and J (Jachin) often seen on the columns to either side of the Priestess are the two pillars of Solomon’s Temple. Their names mean “in strength” and “God will establish” and hint at the High Priestess's mysterious connection with reality. We also see these columns in the Justice card, but the veil now represents human law.
+  variations: 
+    - black-and-white
+  cards: 
+    - major-02
+    - major-11
+
+contemplative-horse:
+  name: Contemplative Horse
+  desc: In RWS-inspired versions of this card, the Knight’s steed looks almost contemplative. But Knights, by nature embody extremes. In times of extreme emotion, are you reflective…or berserk?
+  cards: 
+    - cups-12
+
+controlled-luxury:
+  name: Controlled Luxury
+  desc: No excesses here; the King of Coins enjoys his comforts, but he keeps them in perspective.
+  cards: 
+    - coins-14
+
+the-couple:
+  name: The Couple
+  desc: "RWS-influenced decks depict Adam and Eve. The Marseilles decks depict a young man making a choice between two women: a younger woman and an older woman."
+  cards: 
+    - major-06
+
+crop-of-coins:
+  name: Crop of Coins
+  variations: 
+    - coins
+  cards: 
+    - coins-07
+
+crossed-banner:
+  name: Crossed Banner
+  desc: "In Tarot: History, Symbolism, and Divination, scholar Robert Place identifies this as Constantine’s victory flag. “When held by Christ or Gabriel, it represents victory over death.”"
+  cards: 
+    - major-20
+
+crossed-keys:
+  name: Crossed Keys
+  desc: The crossed keys are associated with St. Peter, considered by some traditions to be the first pope. Jesus gave Peter the keys of the kingdom.
+  cards: 
+    - major-05
+
+cushioned-throne:
+  name: Cushioned Throne
+  desc: Unlike the rigid stone throne of the Emperor, the Empress is often depicted on a cushioned throne, emphasizing themes of luxury.
+  variations: 
+    - throne
+  cards: 
+    - major-03
+
+crescent-moon:
+  name: Crescent Moon
+  desc: Many versions of the Two of Swords depict a sky punctuated by a crescent moon -- a symbol for receptivity and cyclical change. What would happen if you took a “wait and see” approach to your current dilemma? How might your situation change over time?
+  variations: 
+    - moon
+  cards: 
+    - swords-02
+
+crocodile:
+  name: Crocodile
+  desc: Accompanies the Fool in the Thoth deck. Represents the reptilian brain.
+  cards: 
+    - major-00
+  source: Thoth
+
+crown:
+  name: Crown
+  desc: In RWS-influenced images, the Empress wears a diadem of 12 stars, suggesting her dominion over the circle of the year.
+  cards: 
+    - major-03
+
+cubic-throne:
+  name: Cubic Throne
+  desc: In stark contrast to the Empress’s cushioned throne, the Emperor’s seat often appears to be carved out of a single marble slab, reinforcing his monolithic authority.
+  variations: 
+    - throne
+  cards: 
+    - major-04
+
+curtained-shelf:
+  name: Curtained Shelf
+  desc: The curtained shelf on RWS-inspired 9 of Cups prompts much speculation. What’s the merchant hiding? And to what extent is that secret responsible for his apparent satisfaction?
+  cards: 
+    - cups-09
+
+cups:
+  name: Cups
+  desc: "One of the 4 suits of the tarot. Also sometimes called vessels, or chalices. Represents intuition, spirituality, affection, and motivation. As a suit marker, Cups suggest receptivity: they are vessels, waiting to be filled. Cups have long been associated with divination (remember the uproar caused when Benjamin stole King Joseph’s cup?) and, by extension, intuition."
+  variations: 
+    - upraised-cups
+    - extended-cup
+    - partially-overturned-cups
+    - floating-cups
+  cards: 
+    - major-01
+    - cups-01
+    - cups-02
+    - cups-03
+    - cups-04
+    - cups-05
+    - cups-06
+    - cups-07
+    - cups-08
+    - cups-09
+    - cups-10
+    - cups-11
+    - cups-12
+    - cups-13
+    - cups-14
+
+cup-held-aloft:
+  name: Cup Held Aloft
+  desc: The Knight of Cups is frequently drawn with a cup held aloft—or, at least, carried reverently. Emotions are powerful; they must be treated with the utmost care. If we fail to take proper precautions, emotions will overrun our lives, drenching us in obsession and over-reaction.
+  cards: 
+    - cups-12
+
+dancing-woman:
+  name: Dancing Woman
+  desc: In RWS-inspired decks, the 3 of Cups frequently depicts three dancing women. How in touch are you with your more feminine emotions and instincts?
+  cards: 
+    - cups-03
+
+dark-skies:
+  name: Dark Skies
+  desc: RWS-inspired decks often depict a sunset (or sunrise) in the background of the 10 of Swords, suggesting that a change of some kind is at hand, but only after hitting rock bottom.
+  cards: 
+    - swords-10
+
+darkness:
+  name: Darkness
+  desc: With the exception of early decks (like the Marseilles), many Tower cards depict darkened skies. The moment of disaster is our lowest point.
+  cards: 
+    - major-16
+
+decorated-crown:
+  name: Decorated Crown
+  desc: The Ace of Swords in the Tarot of Marseilles and RWS-inspired decks picture the Sword topped by a decorated crown representing how the intellect is blessed with power over so many parts of the world.
+
+defeated-figure:
+  name: Defeated Figure
+  desc: The 5 of Cups often depicts a cloaked figure with slumped shoulders, looking defeated. He seems fixated on the three overturned cups, and either unaware or dismissive of the two upright cups behind him.
+  variations: 
+    - destitute-figures
+  cards: 
+    - cups-05
+
+destitute-figures:
+  name: Destitute Figures
+  desc: The people on many RWS-inspired versions of this card are in dire straits indeed. Starving, freezing, and wounded in both body and spirit, but they also limp right past an opportunity for aid. When feeling down, don’t forget to look up.
+  variations: 
+    - defeated-figure
+  cards: 
+    - coins-05
+
+devil:
+  name: The Devil
+  desc: The Marseilles Devil incorporates bat wings and sexual features known as Baphomet. The RWS Devil, influenced by Pan and associations with Capricorn, is more bestial and fearsome. The Gilded Tarot emphasizes the attractiveness of the Devil; the Bright Idea Deck suggests that the Shadow is, in fact, within.
+  cards: 
+    - major-15
+
+devoted-craftsman:
+  name: Devoted Craftsman
+  desc: RWS-inspired versions of the 8 of Coins often show an isolated worker carving a number of shiny new pentacles. He loses himself in the work.
+  cards: 
+    - coins-08
+
+distant-ships:
+  name: Distant Ships
+  desc: In the background of RWS illustrations, the 3 of Wands card often features ships sailing toward the horizon. In The Pictorial Key to the Tarot, Waite says these belong to the central figure, who sends them out to do his bidding.
+  cards: 
+    - wands-03
+
+distant-village:
+  name: Distant Village
+  desc: "Some RWS-inspired decks depict a distant village in the background of the 10 of Wands and on the 2 of Coins. The village is the light at the end of the tunnel: a reminder that the destination is close at hand. The way out' may be as simple as declining an opportunity you lack the time or energy to complete. In the case of the 4 of coins, the distant village can be interpreted as a city that the king holds dear and is unable to let go of, much like the coins in his arms."
+  cards: 
+    - wands-10
+    - coins-02
+    - coins-04
+
+distraught-figure:
+  name: Distraught Figure
+  desc: In illustrations for 9 of Swords, postures of agony abound. Something is keeping this person up, perhaps it's something from a nightmare, or something from real life.
+  cards: 
+    - swords-09
+
+dog:
+  name: Dog
+  desc: Accompanies the Fool in the RWS deck. The dog is a symbol of loyalty and instinct. On the Wheel of Fortune, the dog (or Anubis) is ascending to reign after the Sphynx.
+  cards: 
+    - major-00
+
+doomed-figures:
+  name: Doomed Figures
+  desc: The sprawled bodies and scattered body parts seen on many cards reflect death’s disruptive force.
+  cards: 
+    - major-13
+
+eight-pointed-stars:
+  name: Eight-Pointed Stars
+  desc: Depending on the deck used, the number eight suggests the work associated with expressions of strength or the delivery of justice. Eight, the number of action, doubles four, the number of persistence and stability.
+  cards: 
+    - major-17
+
+embedded-swords:
+  name: Embedded Swords
+  desc: Many versions of the 6 of Swords depict six swords embedded in the deck of the boat. Do they form a defensive barrier? Are they needed in case of attack? Or are they products, being ferried to market?
+  variations: 
+    - swords
+  cards: 
+    - swords-06
+
+extended-cup:
+  name: Extended Cup
+  desc: Remember the Ace with a cup held out by the Hand of God? Here again, opportunity knocks, but we may be too distracted or dull-witted to hear it. Or perhaps the opportunity just doesn't grab us in the right way for whatever reason.
+  variations: 
+    - cups
+  cards: 
+    - cups-04
+
+falcon:
+  name: Falcon
+  desc: Decks in the RWS family often illustrate the 9 of Coins with an image of a lady training a falcon. Training an animal requires patience and empathy.
+  cards: 
+    - coins-09
+
+falling-bodies:
+  name: Falling Bodies
+  desc: Humans fear falling from great heights. Significantly, we fall from grace; exposed criminals “take the fall.” The scapegoat may be called the “fall guy“. The bigger they are, the harder they fall.
+  cards: 
+    - major-16
+
+fiery-surroundings:
+  name: Fiery Surroundings
+  desc: The Emperor often appears in a blasted desert landscape (suggestive of Mars). Here, the emotional stream that flowed so freely past the Empress is often compressed into a weak, regulated trickle.
+  cards: 
+    - major-04
+
+fish:
+  name: Fish
+  desc: In many decks, a playful fish peeks out of the Page’s Cup.
+  cards: 
+    - cups-11
+
+
+five-figures:
+  name: In RWS-inspired decks, five figures on the 5 of Wands confront each other. Are they fighting? Are they dancing? Are three watching while the other two battle to the death? Waite claimed the youths could be engaged in either sport or strife -- or even a “sham fight.” It’s worth asking whether or not your conflict, represented by this card, is the problem or just a symptom of something else in the group dynamic.
+  cards: 
+    - wands-05
+
+flags-and-banners:
+  name: Flags and Banners
+  desc: Many illustrations for the 6 of Wands card show Wands with flags and banners attached. These are visual signs sent to recognize and appreciate what you have to offer.
+  cards: 
+    - wands-06
+
+flames:
+  name: Flames
+  desc: Flames appear on the tip of the male faun’s tail in the RWS, and on the second tree of the Lover's card next to the Tree of Knowledge. Flames represent all-consuming passion.
+
+floating-cups:
+  name: Floating Cups
+  desc: "On RWS-inspired decks for the 7 of Cups, we often see cups laden with all manner of intriguing options: masks, serpents, wreaths, jewels, elemental symbols, shrouded figures. Where do aspirations end and illusions begin?"
+  variations: 
+    - cups
+  cards: 
+    - cups-07
+
+flying-wands:
+  name: Flying Wands
+  desc: In The Pictorial Key to the Tarot, Waite suggests the eight Wands seen on RWS-inspired versions of this card are just shy of impact. Things are happening swiftly and urgently.
+  variations: 
+    - wands
+  cards: 
+    - wands-08
+
+four-evangelists:
+  name: The Four Evangelists
+  desc: Four winds of heaven, the four corners of the earth, four seasons, four classical elements, four fixed signs of the zodiac, and four Gospels. Matthew, who looks human, traced the human lineage of Christ. Mark, the Lion, wrote of someone crying/roaring in the wilderness. Luke, the Ox, focused on Jesus as a sacrifice. John, the Eagle, emphasized the mystical, higher nature of the Christ.
+  cards: 
+    - major-10
+    - major-21
+
+garden-wall:
+  name: Garden Wall
+  desc: The wall separates citizens of the current world from spiritual purity. From Earth, like sunflowers following the sun, we gaze on this return to Eden with great longing.
+  cards: 
+    - major-19
+
+flowers-in-cups:
+  name: Flowers in Cups
+  desc: "Many versions of the 6 of Cups depict chalices overflowing with blossoms: a symbol of inexhaustible bounty. A figure gives a bouquet to another, but it's ambiguous whether this is a transaction or a gift."
+  cards: 
+    - cups-06
+
+globe:
+  name: Globe
+  desc: The figure in the 2 of Wands on RWS-inspired decks carries “the whole world in his hands”. He enjoys a clearly-defined value system, enabling him to make difficult choices with ease.
+  cards: 
+    - wands-02
+
+grapes:
+  name: Grapes
+  desc: Grapes suggest both harvest and celebration.
+  cards: 
+    - wands-04
+
+gray-robes:
+  name: Gray Robes
+  desc: The Hermit's robes suggest status as an initiate or member of an esoteric order.
+  cards: 
+    - major-10
+
+great-wheel:
+  name: The Great Wheel
+  desc: “To everything there is a season; a time for every purpose under heaven.” The wheel suggests the evolution of events, but also the cyclical nature of time and history.
+  cards: 
+    - major-10
+
+halo:
+  name: Halo of Enlightenment
+  desc: The Marseilles Hanged Man is clearly being punished. As they mapped concepts of sacrificial enlightenment to this card, occultists added the halo.
+  cards: 
+    - major-12
+
+hand-of-god:
+  name: Hand of God
+  desc: On the Aces in Marseilles and RWS-inspired decks, a heavenly hand extends from the clouds, offering the viewer the suit’s distinctive marker. When opportunity comes your way, take advantage of it; the hand that extends an offer can always withdraw it.
+  cards: 
+    - wands-01
+    - cups-01
+    - swords-01
+    - coins-01
+
+happy-family:
+  name: Happy Family
+  desc: "Most RWS-inspired decks depict a joyful couple with dancing children on the 10 of Cups, representing gratitude and fulfillment. There's also a hint of a question: what now?"
+  cards: 
+    - cups-10
+
+happy-merchant:
+  name: Happy Merchant
+  desc: The RWS-inspired merchant on the 9 of Cups sits in front of a raised and curtained platform, looking as happy as he can be. The Gilded Tarot’s wine maker is “in his cups,” merry as ever.
+  cards: 
+    - cups-09
+
+harvest-throne:
+  name: The Harvest Throne
+  desc: The King of Coins frequently sits on a throne draped with vines and grapes—a reminder of his intimate connection with the forces that create abundance.
+  variations: 
+    - throne
+  cards: 
+    - coins-14
+
+holy-grail:
+  name: Holy Grail
+  desc: The RWS depicts the chalice in the Ace of Cups as the Grail -- the cup of the Christ. In addition to the spiritual connotations of the Grail, this card (like the Grail) can be connected with the Divine Feminine.
+  cards: 
+    - cups-01
+
+howling-dog-and-wolf:
+  name: Howling Dog and Wolf
+  desc: Waite cast these as fears; later commentators position the hounds and wolves as faithful familiars (animal helpers who, like Hecate, lend aid on our journey through darkness).
+  cards: 
+    - major-18
+
+ibis:
+  name: Ibis
+  desc: The ibis is a bird seen in the background of the Star card, and is the representative of Thoth who was the master magician of the Egyptians. It is associated with the idea of both initiation and meditation.
+  cards: 
+    - major-17
+
+irises:
+  name: Irises
+  desc: The flowers seen in RWS-inspired illustrations suggest their namesake, Iris, the goddess of the rainbow. She traveled from the gods to the humans over this rainbow, and she represents hope and miracles.
+  cards: 
+    - major-14
+
+jester:
+  name: The Jester
+  desc: In the royal court, the jester’s wit bought indulgence for his sharp-tongued commentary. As a result, he could say what the king (and others) could not.
+  cards: 
+    - major-00
+
+juggler:
+  name: Juggler
+  desc: In the Marseilles deck, the Magician is a juggler, known for his slight of hand. In RWS-inspired decks, the 2 of Coins depicts a juggler carefully balancing two Coins joined by a lemniscate (infinity symbol). The world offers us infinite options; the choices we make are a result of weighing each option against our personal value system. There are options in the air.
+  cards: 
+    - major-01
+    - coins-02
+
+king:
+  name: King
+  desc: A King card in your reading makes things limited and certain but also delivers results that are more concrete, more absolute and of a longer lasting impact.
+  cards: 
+    - cups-14
+    - coins-14
+    - wands-14
+    - swords-14
+
+king-of-the-hill:
+  name: King of the Hill
+  desc: Many illustrations for the 7 of Wands card place the lone warrior on top of a small hill or cliff.
+  cards: 
+    - wands-07
+
+knight:
+  name: Knight
+  desc: Knights embody extremes. The Knight of Coins could be a miser or a spendthrift, depending on which way his energy flows. The Knight of Cups could be emotionally-intelligent or overly sentimental. The Knight of Swords rushes towards insight, but might skip over important facts in the process. The Knight of Wands is motivated to rush to action, but might never be able to build something that lasts, like the pyramids behind him.
+  cards: 
+    - coins-12
+    - cups-12
+    - wands-12
+    - swords-12
+
+land-and-water:
+  name: Land and Water
+  desc: Occult decks frequently draw Temperance with one foot on stable land and one foot in emotional water. A dive-in-or-get-off-the-dock approach assumes extremes are the only options, but they aren't. On the Star card, the figure pours the Water of Life over both land and water, 
+  cards: 
+    - major-14
+    - major-17
+
+laurels:
+  name: Laurels
+  desc: Laurel leaves have long been given as tokens of recognition.
+  cards: 
+    - wands-04
+    - wands-06
+
+lemniscate:
+  name: The Lemniscate
+  desc: The ∞ sign. Symbolic of infinity and spiritual mastery, the lemniscate floats above the Magician’s head and the woman on the Strength card; some also see it reflected in the oddly shaped brim of the Marseilles’ Juggler’s hat. With the Magician it implies infinite potential, with Strength it implies infinite self-discipline.
+  cards: 
+    - major-01
+    - major-08
+    - coins-02
+
+lightning-bold:
+  name: Lighting Bolt
+  desc: Many old traditions interpret disasters as divine commentary. A bolt from the blue might not be God knocking at the door, but a sudden change in circumstance may call your attention to a pattern you’ve overlooked.
+  cards: 
+    - major-16
+
+lion:
+  name: Lion
+  desc: Generally, the lion, king of beasts, suggests bestial and untamed instincts. Closing the mouth of the lion graphically illustrates the power the central figure has over instinctual forces.
+  cards: 
+    - major-08
+
+lingam-yoni-shield:
+  name: Lingam Yoni Shield
+  desc: The Chariot's shield has a symbol known as the Lingam Yoni. Lingam is a cylindrical or phallic shape associated with male sexual potency; the yoni, shaped like a bowl, is considered the source of all that exists. Like the colors black and white, they represent masculine and feminine energy.
+  variations: 
+    - black-and-white
+  cards: 
+    - major-07
+
+lobster:
+  name: Lobster
+  desc: The night can put us in contact with our deepest, most instinctual fears. Here, this lobster represents our most primitive brain, crawls up from the depths of the subconscious mind, and bathes itself in the light of the moon.
+  cards: 
+    - major-18
+
+loose-bonds:
+  name: Loose Bonds
+  desc: Many versions of the 8 of Swords feature someone tied with what appear to be very loose bonds. They are reminiscent of the chains around the fawns’ necks on the Devil card. She feels trapped in many different ways, but each of those ways is relatively easy to get out of?
+  cards: 
+    - swords-08
+
+luxurious-robes:
+  name: Luxurious Robes
+  desc: "Reflecting themes of luxury and sensuality, the Queen of Coins is frequently clothed in rich fabrics and loose, comfortable robes. She loves the pentacle in her hands: its texture, its temperature, its smoothness, its weight."
+  cards: 
+    - coins-13
+
+mandalora:
+  name: Mandalora
+  desc: Both the Marseilles and RWS-inspired decks surround the central figure with a wreath, or mandalora. Like the oroborous, the snake that swallows its own tail, the mandalora has no beginning or end. Its shape also suggests the number zero -- the designation of the Fool.
+  variations: 
+    - snake-belt
+  cards: 
+    - major-21
+
+magicians-tools:
+  name: Magician's Tools
+  desc: Very early decks depict the juggler with a wand, cups and balls, and a knife—tools of a common conjurer. Some later decks change these to a cup, a blade, a pentacle, and a wand, suggesting mastery over the four dimensions of life. Contemporary decks may use other symbols to suggest similar themes and additional alternatives for action.
+  cards: 
+    - major-01
+
+medicinal-angel:
+  name: Medicinal Angel
+  desc: In RWS-inspired decks, an angel and a caduceus (the medical symbol) rise from the 2 of Cups, signifying the healing power of love.
+
+moment-of-choice:
+  name: Moment of Choice
+  desc: When the road divides, which way should you go? Consider both points of view, but only for a time; eventually, you must choose a course and move forward. Developing a clear picture of what matters most will help you make the right decision.
+  cards: 
+    - wands-02
+
+moon:
+  name: The Moon
+  desc: In any of its many phases. The Priestess is closely associated with the moon and, by extension, with all lunar cycles. This “lesser light to rule the night” renews itself every 28 days, linking it to cycles of all sorts, including menstruation. By extension, it is also associated with rare events (“once in a blue moon”).
+  variations: 
+    - crescent-moon
+  cards: 
+    - major-02
+    - major-18
+
+moon-droplets:
+  name: Moon Droplets
+  desc: The Marseilles Moon (and many RWS-inspired Moons) exudes a shower of brilliant moon droplets; in The Pictorial Key to the Tarot, Waite calls these “the dew of thought.”
+  cards: 
+    - major-18
+
+mounted-swords:
+  name: Mounted Swords
+  desc: The three Swords mounted on the wall of the 4 of Swords suggest the knight’s rest is a deliberate one -- a course of action deliberately chosen. The single Sword in hand suggests opportunity. Sometimes resting and creating some space for quiet reflection is the wisest form of action. Quiet time can be used for research and personal growth, enhancing the work you do when more physically active.
+
+nudity:
+  name: Nudity
+  desc: Nudity communicates innocence, openness, and shamelessness. On some cards, like the Star and Lovers cards, this is a good thing. On others, like the Devil card, it's framed as a weakness.
+  cards: 
+    - major-06
+    - major-15
+    - major-17
+
+one-at-a-time:
+  name: One at a Time
+  desc: Our friend on many versions of this card has several coins hanging on the doorpost, but he can only make one coin at a time. This represents how some work, especially involving craftsmanship, can't be rushed.
+
+orb-and-cross-scepter:
+  name: Scepter with Orb and Cross
+  desc: The Empress’s scepter is a symbol of authority. It's topped by a cross and an orb, a sign of earthly dominion.
+  variations: 
+    - ankh-scepter
+    - triple-cross-scepter
+  cards: 
+    - major-03
+
+overburdened-figure:
+  name: Overburdened Figure
+  desc: Most RWS-inspired decks depict the figure in 10 of Wands as a stooped, overburdened figure. He has gone as far as sheer will can take him; he is on the verge of collapse. There comes a point when too much is too much, and it may be time to re-evaluate the approach to the problem.
+  cards: 
+    - wands-10
+
+partially-overturned-cups:
+  name: Partially Overturned Cups
+  desc: Tradition leads many artists to draw this card with three Cups overturned and two still standing. The outcome (three) of your emotional or spiritual effort may be disappointing, but now it’s time to focus on achieving a new sense of unity (two) elsewhere.
+  variations: 
+    - cups
+  cards: 
+    - cups-05
+
+page:
+  name: Page
+  desc: The Page represents anyone who wants to or needs to learn about something.
+  cards: 
+    - coins-11
+    - cups-11
+    - wands-11
+    - swords-11
+
+pale-horse:
+  name: Pale Horse
+  desc: "Death's way of getting around. “And I looked, and behold a pale horse: and his name that sat on him was Death” (Revelation 6:8)."
+  cards: 
+    - major-13
+
+pastoral-landscape:
+  name: Pastoral Landscape
+  desc: The quiet landscape seen in RWS versions of this card represents the calm before the storm. Even in times of peace, a wise person watches for incoming Wands and prepares to deal with the changes generated by their arrival.
+  cards: 
+    - wands-08
+
+pensive-elder:
+  name: Pensive Elder
+  desc: On the 10 of Coins, RWS-inspired decks often depict an older man, deep in thought. What’s on his mind? His wealth? His family? The future of his empire? How might these sobering topics play a role in your situation?
+  cards: 
+    - coins-10
+
+pensive-expression:
+  name: Pensive Expression
+  desc: Some see the Queen of Cups as pensive and moody. Are your own strong feelings an aid…or a distraction?
+  cards: 
+    - cups-13
+
+pentagram:
+  name: Pentagram
+  desc: Upright, the Star of David is associated with the five points of the human body. Inverted as a pentagram it suggests the head (the intellect) has been conquered by desire.
+  variations: 
+    - star-of-david
+  cards: 
+    - major-15
+
+pierced-heart:
+  name: Pierced Heart
+  desc: This imagery on the 3 of Swords, adapted from one of the earliest illustrated decks, doesn’t require a great deal of interpretation. It’s association with heartbreak and disappointment is clear to everyone who sees it.
+  cards: 
+    - swords-03
+
+pomegranates:
+  name: Pomegranates
+  desc: Symbolizing fertility, pomegranates connect the High Priestess with the myth of Persephone, whose consumption of three pomegranate seeds linked her with the underworld. The veil is the veil of the temple, symbolically marking the division between the realm of humanity and the realm of God.
+  cards: 
+    - major-02
+
+posture-of-pronouncement:
+  name: Posture of Pronouncement
+  desc: The Queen of Swords often appears to be on the verge of making an important statement or rendering an important verdict. In your own situation, what needs to be said? Who needs to say it? What is the obstacle blocking this critical communication?
+  cards: 
+    - swords-13
+
+pouring-water:
+  name: Pouring Water
+  desc: There’s no conservation going on here -- the figure on most Star cards bears an inexhaustible supply of the Water of Life.
+  cards: 
+    - major-17
+
+pregnancy:
+  name: Pregnancy
+  desc: A universal sign for fertility is pregnancy; in many decks, the Empress is pregnant, emphasizing themes of fertility and productivity.
+  cards: 
+    - major-03
+
+prisoners:
+  name: Prisoners
+  desc: The Devil is accompanied by fauns -- mythical half-goats whose horns and tails emphasize their bestial nature. Their fascination with the material prevents them from stepping away from the loose chains around their necks.
+  cards: 
+    - major-15
+
+pyramids:
+  name: Pyramids
+  desc: In the background of RWS-inspired versions of this card, we frequently see pyramids. While his “get things done” attitude moves the Knight rapidly forward, the pyramids remind him that long-term application of force over time is more likely the key to lasting achievement.
+  cards: 
+    - swords-12
+
+queen:
+  name: Queen
+  desc: Each Queen card is the emotional manifestation of the suit she rules.
+  cards: 
+    - cups-13
+    - coins-13
+    - wands-13
+    - swords-13
+
+rack-of-swords:
+  name: Rack of Swords
+  desc: In the RWS, the swords in this 9 of Swords point forward, suggesting a dread of future events. If you pause to define exactly what you fear, you may find that you diminish that fear’s ability to rob you of a good night’s sleep.
+  variations: 
+    - swords
+  cards: 
+    - swords-09
+
+goat:
+  name: The Ram
+  desc: The ram, absent in early versions of the card, suggests the Emperor’s ties to Aries. Traditionally, the ram symbolizes the fiery energy of Aries and, physically, the head of the body.
+  cards: 
+    - major-04
+
+rain:
+  name: Rain
+  desc: Few things metaphorically dampen our spirits like a pouring rain, particularly if we’re already distraught. Talk of silver linings may do little more than irritate us when the clouds are directly overhead. Still, it’s good to realize that the weather will change, and that the rain won’t last forever.
+  cards: 
+    - swords-03
+
+rainbow:
+  name: Rainbow
+  desc: RWS-inspired decks often place a rainbow at the top of the 10 of Cups. Since Biblical times, rainbows have been symbols of promise.
+
+raised-lantern:
+  name: Raised Lantern
+  desc: "A raised lantern has long suggested knowledge: “Thy word is a lamp unto my feet and a light unto my path.” Here, the lantern shows the way to higher knowledge."
+  cards: 
+    - major-09
+
+reclined-figure:
+  name: Reclined Figure
+  desc: On the original RWS cards, the figure of the sleeping knight from the 4 of Swords is easily mistaken for a decorative touch on a stone sarcophagus. Or, perhaps, he’s asleep — but with one Sword at the ready, just in case. Even in rest, be prepared for action.
+
+red-banner:
+  name: Red Banner
+  desc: The banner signifies the RWS child’s victory over animal instincts and worldly influences.
+  cards: 
+    - major-19
+
+red-robe:
+  name: Red Robe
+  desc: Worn by the Magician, suggesting masculine empowerment.
+  cards: 
+    - major-01
+
+red-rose:
+  name: Red Rose
+  desc: Represents the will.
+  variations: 
+    - white-rose
+    - red-roses-and-white-lilies
+  cards: 
+
+red-roses-and-white-lilies:
+  name: Red Roses and White Lilies
+  desc: The flowers at the foot of the Magician suggest the unification of the masculine and feminine, associated with the alchemist’s goal of spiritual refinement and perfection. On the robes of the acolytes in the Hierophant card, or as a painting on the 2 of Wands, they suggest male and female sexual energies being repressed or in conflict.
+  variations: 
+    - red-rose
+  cards: 
+    - major-01
+    - wands-02
+
+resurrected-dead:
+  name: Resurrected Dead
+  desc: In both the Marseilles and RWS-influenced cards, the risen show only positive emotions. The trumpet call liberates and re-creates them.
+  cards: 
+    - major-20
+
+retreating-figure:
+  name: Retreating Figure
+  desc: On many versions of the 8 of Cups, a weary figure walks away, heading toward the horizon. Hinting at things that still feel incomplete, or disappointing.
+  cards: 
+    - cups-08
+
+reviewing-work:
+  name: Reviewing Work
+  desc: In RWS-inspired decks, officials or patrons review a craftsman’s labor in the 3 of Coins. It's ambiguous if the review is going well or not?
+  cards: 
+    - coins-03
+
+romantic-couple:
+  name: Romantic Couple
+  desc: "Many versions of 2 of Coins depict a couple caught up in intense, hypnotic passion. This symbolizes the power of reflected feeling: the unity achieved when yin and yang combine."
+  cards:
+    - coins-02
+
+romantic-pose:
+  name: Romantic Pose
+  desc: Most RWS-inspired cards will feature a young man in impractical attire, gazing at a Wand as though it were a lover. The Page feels intently the fiery grip of passion, but lacks the experience to know how such intense emotion should be put into action.
+  cards:
+    - swords-11
+
+rose-flag:
+  name: Rose Flag
+  desc: In The Pictorial Key to the Tarot, Waite writes, “The black banner emblazoned with the Mystic Rose signifies life.” Sometimes something must die in order to make way for the new.
+  cards: 
+    - major-13
+
+rushing-stream:
+  name: Rushing Stream
+  desc: Unlike the vast, still, reflective body of water often shown behind the High Priestess, the Empress is often seen near a rushing stream or waterfall. Her energy is actively rising.
+  variations: 
+    - still-water
+  cards: 
+    - major-03
+
+salamander:
+  name: Salamander
+  desc: The lowly salamander was once thought to be born in fire and capable of passing through flame without injury. 
+  cards: 
+    - major-00
+    - swords-14
+
+scales:
+  name: Scales
+  desc: Scales have long been a symbol of balance and evaluation, as seen in the Justice card. The Egyptian god Ma’at weighed souls to determine purity of heart. In the 6 of Coins, there's a man with scales doling out charity to grateful recipients. The scales emphasize the fairness with which his charity is delivered, making it possible for each person to receive exactly what’s needed. In your own circumstance, what role does fairness play?
+  variations: 
+    - balance
+  cards: 
+    - major-11
+    - coins-06
+
+seashell-throne:
+  name: Seashell Throne
+  desc: While the nature of the Queen’s throne is difficult to see in the Marseilles version of this card, most RWS-inspired cards depict a throne integrating watery themes.
+  cards: 
+    - cups-13
+
+serpent:
+  name: Serpent
+  desc: An expert at manipulating loopholes, the Biblical serpent tempted Eve. In some versions of the Hanged Man, the figure is hanging by one foot held by a serpent, representing the traitorous crime that led him to this situation.
+  cards: 
+    - major-06
+    - major-12
+
+seven-stars:
+  name: Seven Stars
+  desc: The seven stars seen on both the RWS and Marseilles cards likely refer to the seven classical planets. They orbit a central flamboyant star, which Waite, in The Pictorial Key to the Tarot, describes as a Masonic symbol.
+  cards: 
+    - major-17
+
+skeleton:
+  name: Skeleton
+  desc: Bones persist long after the decay of the body; so, they are symbols of the enduring and eternal.
+  cards: 
+    - major-13
+
+smug-figure:
+  name: Smug Figure
+  desc: The knight depicted on many versions of the 5 of Swords appears to be gloating over his triumph. How we act when we get our way reveals a lot about our character.
+
+snake-belt:
+  name: Snake Belt
+  desc: Worn by the Magician, fashioned like an oroborous, which is a snake swallowing its own tail. Suggests constant reinvention.
+  variations: 
+    - mandalora
+  cards: 
+    - major-01
+
+sneaky-figure:
+  name: Sneaky Figure
+  desc: RWS-inspired illustrations of the 7 of Swords often depict a thief tip-toeing away with stolen goods. He carries five (the number of chaos) swords, but leaves behind two (the number of duality). When we are dishonest, you invite chaos into your life, and force others to question their high opinions of you.
+  cards: 
+    - swords-07
+
+solomon-enthroned:
+  name: Solomon Enthroned
+  desc: The gravity and wisdom of this King are unmistakable—he is an incarnation of Solomon, who ruthlessly applied logic in order to render wise decisions.
+  cards: 
+    - swords-14
+
+sphynx:
+  name: Sphynx
+  desc: Horses draw the Marseilles Chariot, but in other decks, sphinxes pull the chariot. Sphynxes are keepers of riddles, wisdom, and hidden knowledge. One is black and the other white, symbolizing the charioteer’s dominion over masculine and feminine forces. The Sphynx sits at the top of the Wheel of Fortune, one of four fantastic beasts that each have a turn.
+  cards: 
+    - major-07
+    - major-10
+
+stacked-cups:
+  name: Stacked Cups
+  desc: The RWS-inspired versions of the 8 of Cups frequently depict eight stacked Cups, arranging to emphasize the ninth cup’s absence. This missing cup must be found.
+  variations: 
+    - cups
+  cards: 
+    - cups-08
+
+staff:
+  name: Staff
+  desc: This incarnation of the scepter suggests a different use of power, recalling the staff of Moses. Instead of symbolizing power or intention, it facilitates progress.
+  cards: 
+    - major-09
+
+stained-glass-window:
+  name: Stained Glass Window
+  desc: Many versions of the 5 of Coins depict a stained-glass window from a church, implying that they may be able to help the figures if they knew how to ask for it.
+  cards: 
+    - coins-05
+
+star-of-david:
+  name: The Star of David
+  desc: This hexagram is a symbol of Judaism and is also called the Seal of Solomon. It combines the symbols for water and fire, suggesting the union of male and female energies as well as the human body itself.
+  variations: 
+    - black-and-white
+    - pentagram
+  cards: 
+    - major-09
+
+still-water:
+  name: Still Water
+  desc: The water often seen behind or beneath this archetype represents the unknown depths of the subconscious mind.
+  variations: 
+    - rushing-stream
+  cards: 
+    - major-02
+
+stingy-king:
+  name: Stingy King
+  desc: By definition, the King owns it all. On many RWS-influenced cards, we see a ruler who takes this idea to extremes. His possessions are constantly on his mind and close to his heart, to the point of unhealthy obsession.
+  cards: 
+    - coins-04
+
+stolen-swords:
+  name: Stolen Swords
+  desc: "Many see the figure in the foreground of RWS-influenced 5 of Swords as a thief, stealing swords at the expense of his associates. Just remember: victory achieved through dishonesty robs you of your integrity, and often causes some retribution to bounce back in the future."
+  variations: 
+    - swords
+  cards: 
+    - swords-05
+
+sunflower:
+  name: Sunflower
+  desc: Sunflowers turn to follow the path of the sun through the sky, modeling the sort of attention paid to any sunny personality. Their shape and color emulates the object of their attention.
+  cards: 
+    - major-19
+    - wands-13
+
+sunset:
+  name: Sunset
+  desc: In many illustrations, it’s difficult to tell whether the sun is rising or setting. The ambiguity of the sun's direction here points to the ambiguous relationship between life and death.
+  cards: 
+    - major-15
+
+swords:
+  name: Swords
+  desc: One of the four suits of the tarot. Also sometimes called blades, knives or athames. Represents logic, objectivity, intellect, and choice. Along with the responsibility such talents bring. Swords suggest logic, clarity, and decision-making. Remember the story of wise King Solomon, who once offered to slice a baby in half in order to resolve a dispute over motherhood? Swords cut through confusion, revealing our agendas in the process.
+  variations: 
+    - stolen-swords
+    - embedded-swords
+    - wall-of-swords
+    - rack-of-swords
+  cards: 
+    - major-01
+    - major-11
+    - swords-01
+    - swords-02
+    - swords-03
+    - swords-04
+    - swords-05
+    - swords-6
+    - swords-07
+    - swords-08
+    - swords-09
+    - swords-10
+    - swords-11
+    - swords-12
+    - swords-13
+    - swords-14
+
+swords-in-back:
+  name: Swords in Back
+  desc: Optimistic users of the RWS claim the swords on the 10 of Swords pierce the pitiful figure’s charkas, yielding enlightenment through trial. Other decks show the figure face-up, suggesting the additional agony of seeing a bad situation coming.
+
+taro:
+  name: TARO
+  desc: "Using TARO as an alternative spelling, occultists came up with an anagram: TAROT ROTA ORAT TORA ATOR, or “The Tarot speaks the law of Hathor.”(Hathor was an Egyptian goddess of motherhood and love.) The Hebrew letters spell out the unspeakable name of God. The symbols are alchemical glyphs for mercury, sulfur, water, and salt."
+  variations: 
+    - tora
+  cards: 
+    - major-10
+
+teamwork:
+  name: Teamwork
+  desc: In RWS-inspired decks, the 3 of Coins shows an apprentice sharing his work with a priest and nobleman. This represents a coming together of different kinds of knowledge into an effective collaboration.
+  cards: 
+    - coins-03
+
+tents:
+  name: Tents
+  desc: In the background of many RWS-inspired 7 of Swords, we see a cluster of distant tents. Is the figure in the foreground an outsider, come to steal? Or an insider, taking advantage of his own people?
+
+threatening-wands:
+  name: Threatening Wands
+  desc: On the 7 of Wands from RWS-inspired decks, we often see a lone figure threatened by six rather threatening Wands. Six is the number of collaboration, suggesting that many people have come together to launch an attack. It's unclear if they're coming to hurt you, or if it's founded in some other intention and masked by miscommunication.
+  variations: 
+    - wands
+
+three-tiered-crown:
+  name: Three-Tiered Crown
+  desc: The three-tiered crown, called a triregnum or tiara, of the Pope dates to at least the thirteenth century. The number 3 suggests a connection with the trinity.
+  cards: 
+    - major-05
+
+tiger:
+  name: Tiger
+  desc: Accompanies the Fool in the Thoth deck. Represents a violent instinct.
+  cards: 
+    - major-00
+  source: Thoth
+
+toppled-crown:
+  name: Toppled Crown
+  desc: The crown in some illustrations represents the ego, or the self. Disasters and sudden challenges often clear the way for us to see ourselves in a new and unexpected light.
+  cards: 
+    - major-16
+
+tora:
+  name: "TORA: The Scroll of the Law"
+  desc: Often, the Papess or High Priestess holds an unopened book, occasionally labeled TORA (“law”), an anagram of TARO.
+  variations: 
+    - taro
+  cards: 
+    - major-02
+
+traitor:
+  name: Inverted Traitor
+  desc: Renaissance audiences would immediately recognize a hanged man as a traitor because hanging traitors by one foot was a common practice.
+  cards: 
+    - major-12
+
+triangle-in-square:
+  name: Triangle in Square
+  desc: In many RWS-inspired decks, a symbol on the angel’s chest suggests the fiery spirit enshrined in stable matter.
+  cards: 
+    - major-14
+
+tree-of-knowledge:
+  name: Tree of Knowledge of Good and Evil
+  desc: Adam and Eve ate of the Tree of the Knowledge of Good and Evil but were driven out of the Garden of Eden before they could partake of the Tree of Life and become “as gods.” Choices have consequences; note how RWS-influenced deck and the Marseilles deck all drive this point home.
+  variations: 
+    - tree-of-flames
+  cards: 
+    - major-06
+
+tree-of-flames:
+  name: Tree of Flames
+  desc: Behind the man on the RWS Lovers card is a tree of flames, which represent his fiery passion.
+  variations: 
+    - tree-of-knowledge
+    - flames
+  cards: 
+    - major-06
+
+tree-of-life:
+  name: Tree of Life
+  desc: Students of Qabalah will recognize the ten Coins so often seen on the original RWS version of the 10 of Coins have been arranged to suggest the shape of the Tree of Life. In other decks, including the Marseilles, an overflow of Coins dominates the image. Either approach stresses the overflow of material blessings and should remind us to consider the higher purpose behind the “ten thousand things” in our lives.
+  cards: 
+    - coins-10
+
+triple-cross-scepter:
+  name: Triple-Cross Scepter
+  desc: The Papal Cross is widely recognized as a symbol of the Pope’s authority and office. Crowley’s version in the Thoth deck is said to represent three distinct eras, concluding with the age of Horus, in which old beliefs are abandoned.
+  variations: 
+    - ankh-scepter
+    - orb-and-cross-scepter
+
+triumphal-procession:
+  name: Triumphal Procession
+  desc: The parade depicted on the 6 of Wands from RWS-inspired decks calls to mind the modern “ticker tape parade,” in which heroes roll down boulevards, cheered on by crowds.
+  cards: 
+    - wands-06
+
+turbulent-seas:
+  name: Turbulent Seas
+  desc: In some versions of the 2 of Coins we see a rolling, unstable sea in the background -- a sign the juggler’s emotions are stirred as he struggles to get a handle on his dilemma.
+  cards: 
+    - coins-02
+    - coins-14
+
+two-towers:
+  name: Two Towers
+  desc: The path between the two towers leads into unknown territory.
+  cards: 
+    - major-18
+
+unhappy-farmer:
+  name: Unhappy Farmer
+  desc: RWS-influenced decks depict in 7 of Coins a man whose posture and expression suggest a level of exhaustion and regret that not even a bumper crop can alleviate. Most likely, his expectations were out of alignment with reality.
+  cards: 
+    - coins-07
+
+unmoving-horse:
+  name: Unmoving Horse
+  desc: In many decks, the Knight of Coin’s horse stands as rigid and still as a statue. There’s a difference between proceeding with caution and allowing yourself to become paralyzed by pessimism.
+  cards: 
+    - coins-12
+
+unstable-ground:
+  name: Unstable Ground
+  desc: The figure in the 7 of Wands is cornered on a hillside cliff that looks uneven and unstable. This hints at the precarious nature of the position he is trying to defend.
+
+upraised-cups:
+  name: Upraised Cups
+  desc: Upraised cups suggest a toast, which, by extension, is associated with wine, and celebration, and appreciation.
+  variations: 
+    - cups
+  cards: 
+    - cups-03
+
+upraised-sword:
+  name: Upraised Sword
+  desc: Charge! In many different decks, the Knight of Swords is rushing off on a quest, sword upraised. But what is the quest? What’s his destination? What are the terms of success? Charging ahead feels great—but before you do it, a little investigation and reflection can go a long way.
+  variations: 
+    - swords
+  cards: 
+    - swords-12
+
+upraised-wand:
+  name: Upraised Wand
+  desc: "The Magician often holds aloft a wand or caduceus (the snake-entwined symbol associated with the god Hermes and the medical profession). He channels the power of heaven to bring about change on earth: “As above, so below!”"
+  cards: 
+    - major-01
+
+venus:
+  name: Venus
+  desc: The familiar planetary symbol for Venus often appears in illustrations for the Empress, stressing the her association with domesticity, motherhood, and female sexuality.
+  cards: 
+    - major-03
+
+wall-of-swords:
+  name: Wall of Swords
+  desc: RWS-inspired versions of the 8 of Swords depict a woman trapped in the middle of a circle of swords. The circle, however, is incomplete. Escape is simply a matter of casting off the blindfold and taking that first step. How many of your own limitations are strictly imagined?
+  variations: 
+    - swords
+
+wands:
+  name: Wands
+  desc: One of the four suits of the tarot. Also sometimes called rods, staves, or staffs. Represents desire, inspiration, vision, creation, and invention. Many decks depict budding Wands, suggesting the potential for growth. As a suit marker, Wands suggest the power and potency of a king’s scepter. When a Magician wants something to happen, he waves his magic wand to make his intentions manifest.
+  variations: 
+    - bolted-wand
+    - wand-in-hand
+    - threatening-wands
+    - flying-wands
+  cards: 
+    - major-01
+    - major-07
+    - wands-01
+    - wands-02
+    - wands-03
+    - wands-04
+    - wands-05
+    - wands-06
+    - wands-07
+    - wands-08
+    - wands-09
+    - wands-10
+    - wands-11
+    - wands-12
+    - wands-13
+    - wands-14
+
+wand-in-hand:
+  name: Wand in Hand
+  desc: In RWS-inspired decks, the 3 of Wands card often depicts a merchant and three wands. Two (the number of duality) have been planted in the ground, but one (the “starting point”) is in hand—suggesting the time for debate has given way to a time for action.
+  variations: 
+    - wands
+  cards: 
+    - wands-03
+
+watery-throne:
+  name: Watery Throne
+  desc: Many decks depict the King’s throne floating in water. Rather than sink into emotionalism, this King rises above it.
+  cards: 
+    - cups-14
+
+wedding:
+  name: Wedding
+  desc: Centuries ago, alchemists (the forefathers of modern chemists) used the phrase “the Alchemical Wedding” to describe the moment when long-divided opposites were brought together to create something new. They saw this reunion as a symbol for personal transformation and, eventually, enlightenment.
+  cards: 
+    - major-06
+
+white-horse:
+  name: White Horse
+  desc: RWS-influenced decks place a single child on a white horse, long considered proper conveyance for heroes.
+  cards: 
+    - major-19
+
+white-mountains:
+  name: White Mountains
+  desc: Represent a remote location. The work of the Hermit requires isolation; he is usually drawn in a remote locale, emphasizing themes of withdrawal.
+
+white-rose:
+  name: White Rose
+  desc: Held by the Fool in the RWS deck. Represents innocence.
+  variations: 
+    - red-rose
+  cards: 
+    - major-00
+
+windswept:
+  name: Windswept Landscape
+  desc: In a nod to the airy nature of the suit of Swords, the background may be filled with puffy clouds and windswept landscapes. The Page, intrigued by every notion but lacking the experience to distinguish between fluff and hard information, is constantly blown in different directions.
+  cards: 
+    - swords-11  
+
+winged-throne:
+  name: Winged Throne
+  desc: The Queen of Swords is frequently drawn ruling from a throne decorated with butterflies, birds, or other winged creatures, reinforcing the airiness of her suit. How does the element of air—matters of communication and intellect—play a role in your situation?
+  variations: 
+    - throne
+  cards:
+    - swords-13
+
+world-figure:
+  name: World Figure
+  desc: "The Wheel has been replaced by the victorious central figure, indicating that luck and fate have given way to the greater force of self-realization. In the Visconti deck, the central figure is a white city: the New Jerusalem. In some decks, it is the Christ. In others, it appears to be a hermaphrodite -- the ultimate reunion of male and female energies in a single body."
+  variations: 
+    - devil
+  cards: 
+    - major-21

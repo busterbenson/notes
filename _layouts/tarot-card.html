@@ -1,0 +1,140 @@
+---
+title: Hi
+layout: fullscreen
+---
+
+<style>
+  .tarot-card img {
+    width:  300px;
+  }
+  .subtitle {
+    font-weight: 200;
+    font-size: 24px;
+  }
+</style>
+
+<section class="page">
+  <div class="row pt-lg-8 pt-10 justify-content-center">
+
+
+    <div class="col-12">
+      <div class="mt-1 text-smaller">
+        <strong><a href="/tarot">POCKET TAROT</a></strong>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <h1 class="title mt-3 mb-0" style="font-size: 40px;">{{ page.title }}</h1>
+          <div class="subtitle mt-0">{{ page.one_liner }}</div>
+          {% if content and content != "" %}
+            <div class="page-content">{{ content }}</div>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="row justify-content-start mt-3">
+        <div class="col-12 col-sm-3 mb-5">
+          <a href="/tarot/{{ page.token }}">
+            {% if page.images %}
+              {% for image in page.images %}
+                {% include img.html src=image alt=page.title class="tarot-card" %}
+              {% endfor %}
+            {% endif %}
+          </a>
+        </div>
+
+        <div class="col-12 col-sm-5 mb-5">
+          <h3>Range of meanings</h3>
+          
+          {% if page.personality and page.personality != '' %}
+            <p><strong>Personality:</strong> {{ page.personality }}</p>
+          {% endif %}
+          {% if page.meaning_light and page.meaning_light != '' %}
+            <p><strong>Light:</strong> {{ page.meaning_light }}</p>
+          {% endif %}
+          {% if page.meaning_shadow and page.meaning_shadow != '' %}
+            <p><strong>Shadow:</strong> {{ page.meaning_shadow }}</p>
+          {% endif %}
+
+          {% if page.questions %}
+            <h3>Questions to ask</h3>
+            <ol>
+              {% for question in page.questions %}
+                <li>{{ question }}</li>
+              {% endfor %}
+            </ol>
+          {% endif %}
+
+          <h3>Advice</h3>
+
+          {% if page.advice_personal_growth and page.advice_personal_growth != '' %}
+            <p><strong>Personal Growth:</strong> {{ page.advice_personal_growth }}</p>
+          {% endif %}
+
+          {% if page.advice_work and page.advice_work != '' %}
+            <p><strong>Work:</strong> {{ page.advice_work }}</p>
+          {% endif %}
+
+          {% if page.advice_relationships and page.advice_relationships != '' %}
+            <p><strong>Relationships:</strong> {{ page.advice_relationships }}</p>
+          {% endif %}
+
+          {% if page.advice_spirituality and page.advice_spirituality != '' %}
+            <p><strong>Spirituality:</strong> {{ page.advice_spirituality }}</p>
+          {% endif %}
+
+          {% if page.advice_fortune_telling and page.advice_fortune_telling != '' %}
+            <p><strong>Fortune-Telling:</strong> {{ page.advice_fortune_telling }}</p>
+          {% endif %}
+        </div>
+
+        <div class="col-12 col-sm-4">
+
+          <h3>Associations</h3>
+
+          {% if page.correspondence_suit and page.correspondence_suit != '' %}
+            <p><strong>Suit:</strong> {{ page.correspondence_suit }}</p>
+          {% endif %}
+
+          {% if page.correspondence_element and page.correspondence_element != '' %}
+            <p><strong>Element:</strong> {{ page.correspondence_element }}</p>
+          {% endif %}
+          
+          {% if page.correspondence_astrological and page.correspondence_astrological != '' %}
+            <p><strong>Astrological:</strong> {{ page.correspondence_astrological }}</p>
+          {% endif %}
+
+          {% if page.correspondence_planet and page.correspondence_planet != '' %}
+            <p><strong>Planet:</strong> {{ page.correspondence_planet }}</p>
+          {% endif %}
+
+          {% if page.correspondence_hebrew and page.correspondence_hebrew != '' %}
+            <p><strong>Hebrew:</strong> {{ page.correspondence_hebrew }}</p>
+          {% endif %}
+
+          {% if page.correspondence_archetype and page.correspondence_archetype != '' %}
+            <p><strong>Archetype:</strong> {{ page.correspondence_archetype }}</p>
+          {% endif %}
+
+          {% if page.correspondence_mystical and page.correspondence_mystical != '' %}
+            <p><strong>Religions:</strong> {{ page.correspondence_mystical }}</p>
+          {% endif %}
+
+          {% if page.correspondence_story and page.correspondence_story != '' %}
+            <p><strong>Fool's Journey:</strong> {{ page.correspondence_story }}</p>
+          {% endif %}
+
+          {% if page.symbols %}
+            {% for s in page.symbols %}
+              <p>
+                {% assign symbol = site.data.symbols[s] %}
+                {% if symbol %}
+                  <strong>{{ symbol.name }}:</strong> {{ symbol.desc }}
+                {% endif %}
+                </p>
+            {% endfor %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
