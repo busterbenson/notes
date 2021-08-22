@@ -128,6 +128,8 @@ ace:
 kneeling-acolytes:
   name: Kneeling Acolytes
   desc: The kneeling acolytes or ministers wear robes adorned with roses and lilies in RWS-influenced decks, suggesting a connection with repressed male and female sexual energies.
+  variations:
+    - prisoners
   cards: 
     - major-05
 
@@ -963,6 +965,8 @@ pregnancy:
 prisoners:
   name: Prisoners
   desc: The Devil is accompanied by fauns -- mythical half-goats whose horns and tails emphasize their bestial nature. Their fascination with the material prevents them from stepping away from the loose chains around their necks.
+  variations: 
+    - kneeling-acolytes
   cards: 
     - major-15
 
