@@ -1,0 +1,35 @@
+---
+layout: fullscreen
+---
+
+<style>
+  .tarot-card img {
+    width:  250px;
+  }
+</style>
+
+<section class="posts">
+	<div class="row pt-lg-5 pt-3 justify-content-center">
+    <div class="col-12">
+      <div class="mt-1 text-smaller">
+        <strong><a href="/">Buster's Notes</a></strong> • 
+        <strong><a href="/tarot">Pocket Tarot</a></strong>
+      </div>
+			<h1 class="title mt-3" style="font-size: 50px;">{{ page.title }}</h1>
+    </div>
+  </div>
+ 	<div class="row pt-lg-5 pt-3">
+		{% for card in page.cards %}
+			<div class="col-12 col-sm-3 mb-5">
+				<div>
+					{% if card.images %}
+						{% assign card_image = card.images[0] %}
+	          <a href="/tarot/{{card.token}}">{% include img.html src=card_image alt=card.title class="tarot-card" %}</a>
+	        {% endif %}
+	      </div>
+				<h3 class="mb-0"><a href="/tarot/{{card.token}}">{{ card.title }}</a></h3>
+				<div>{{card.one_liner}}</div>
+			</div>
+		{% endfor %}
+	</div>
+</section>
