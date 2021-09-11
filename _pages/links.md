@@ -37,7 +37,7 @@ a:hover.button {
 
 <p><a href='https://notes.busterbenson.com/life-in-weeks' class='button'>My Life in Weeks</a></p>
 
-<p><a href='https://docs.google.com/presentation/d/e/2PACX-1vRCsFi2wJmhYlXPWlHjO1VLOEKrOJvvng1NEgFrBVzrHhAuZ0wIuxmAYUnp3cmVlu5Ov7H1R2s4_ROz/pub?start=true&loop=true&delayms=10000&slide=id.geef698a471_0_92' class='button'>A Game: Dilemma!</a></p>
+<p><a href='https://docs.google.com/presentation/d/e/2PACX-1vRCsFi2wJmhYlXPWlHjO1VLOEKrOJvvng1NEgFrBVzrHhAuZ0wIuxmAYUnp3cmVlu5Ov7H1R2s4_ROz/pub?start=true&loop=true&delayms=10000' class='button'>A Game: Dilemma!</a></p>
 
 <p><a href='https://busterbenson.com/whyareweyelling/' class='button'>My Book: Why Are We Yelling?</a></p>
 
