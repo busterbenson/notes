@@ -127,7 +127,7 @@ ace:
 
 kneeling-acolytes:
   name: Kneeling Acolytes
-  desc: The kneeling acolytes or ministers wear robes adorned with roses and lilies in RWS-influenced decks, suggesting a connection with repressed male and female sexual energies.
+  desc: The kneeling acolytes or ministers wear robes adorned with roses and lilies in RWS-influenced decks, suggesting a connection with repressed male and female sexual energies. They are echoed 
   variations:
     - prisoners
   cards: 
