@@ -12,6 +12,9 @@ keywords			 : ['protection', 'conservation', 'preservation', 'safety']
 url						 : 'tarot/cards/coins-04'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Putting the long-term ahead of the short term. Practicing self-restraint. Saving for a rainy day. Fasting as part of a spiritual practice. Abstaining from sex as a way of honoring a spiritual tradition or personal promise. Putting money away into savings. Going to the gym."
 
 meaning_shadow : "Being stingy. Refusing to spend money that needs to be spent. Withholding sex from your partner. Taking care of your own needs exclusively, without regard for the needs of others. Spending a dollar to save a penny. Failing to be a good manager of the blessings you’ve been given."

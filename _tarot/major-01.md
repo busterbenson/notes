@@ -12,6 +12,9 @@ keywords			 : ['capability', 'empowerment', 'activity']
 url						 : 'tarot/cards/major-01'
 aliases				 : ['magician', 'the-magician']
 
+# password: 'foolish journey'
+dropbox				 : 'https://www.dropbox.com/sh/a75nhp33917wge0/AAACa2vgi484M_9hPcjZdzHva?dl=0'
+
 meaning_light  : "Taking appropriate action. Receiving guidance from a higher power. Becoming a channel of divine will. Expressing masculine energy in appropriate and constructive ways. Being yourself in every way."
 
 meaning_shadow : "Inflating your own ego. Abusing talents. Manipulating or deceiving others. Being too aggressive. Using cheap illusions to dazzle others. Refusing to invest the time and effort needed to master your craft. Taking shortcuts."

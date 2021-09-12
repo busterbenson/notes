@@ -12,6 +12,9 @@ keywords			 : ['enlightenment', 'sacrifice', 'perspective', 'suspension', 'rever
 url						 : 'tarot/cards/major-12'
 aliases				 : ['the-hanging-man', 'hanging-man']
 
+# password: 'foolish journey'
+dropbox				 : 'https://www.dropbox.com/sh/inegxf1narf0t8x/AAACvcCDgWEfPpzIGEHTSAGJa?dl=0'
+
 meaning_light  : "Seeing growth opportunities in unpleasant events. Experiencing a dramatic change in personal perspective. Making the best of an unforeseen change in your life or work. Suspending disbelief. Making sacrifices."
 
 meaning_shadow : "Being untrue to yourself and your values. Refusing to make sacrifices when appropriate. Refusing to adapt to new situations. Blaming others. Profiting at the expense of others."

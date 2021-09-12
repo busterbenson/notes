@@ -12,6 +12,9 @@ keywords			 : ['enthusiasm', 'first impressions', 'romanticism', 'superficiality
 url						 : 'tarot/cards/cups-11'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 personality    : "The Page of Wands can represent anyone who wants to or needs to learn (Page) more about love or spirituality (Cups). Though eager to make a good impression, The Page may lack the experience or information needed to handle new love or new faith with grace and confidence. He or she may overcompensate for this with over-the-top gestures and fanatical zeal."
 
 meaning_light  : "Showing your emotions freely. Throwing yourself into romance. Nursing a secret crush. Indulging in romantic fantasy. Starting a new relationship. Recalling your first love. Experiencing love for the first time. Converting to a new religion."

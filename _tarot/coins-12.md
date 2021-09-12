@@ -12,6 +12,9 @@ keywords			 : ['caution', 'focus', 'realism', 'invention']
 url						 : 'tarot/cards/coins-12'
 aliases				 : ['coins-knight']
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 personality    : "The Knight of Coins can represent anyone who wants to lead the way (Knight) to greater physical and financial success (Coins). The Knight may also represent the tendency to be more cautious than adventuresome, or a compulsive desire to avoid risk by obsessing on tiny logistical or physical details."
 
 meaning_light  : "Spending money wisely. Saving for a rainy day. Paying close attention to physical or financial details. Knowing where every dollar goes. Having safe sex. Preferring facts to “good feelings.” Finding creative ways to “make do” with resources on hand. Completing a new invention."

@@ -12,6 +12,9 @@ keywords			 : ['luxury', 'comfort', 'resourcefulness', 'generosity', 'prosperity
 url						 : 'tarot/cards/coins-13'
 aliases				 : ['coins-queen']
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 personality    : "The Queen of Coins can represent anyone who wants to encourage others (Queen) to appreciate the pleasures of the physical world (Coins). The Queen may also represent the tendency to be more materially-minded than spiritually-minded, or the need to pursue personal comfort at almost any cost."
 
 meaning_light  : "Appreciating fine food, fine wine, beautiful art, beautiful bodies, or any of the better things in life. Reveling in healthy sexuality. Treating yourself. Splurging on the occasional “nice to have” item. Rewarding someone with compensation above and beyond expectations. Having it all."

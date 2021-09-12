@@ -12,6 +12,9 @@ keywords			 : ['victory', 'achievement', 'success', 'triumph']
 url						 : 'tarot/cards/wands-06'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Outperforming your peers. Winning a competition. Being recognized as a capable person. Having your “moment in the spotlight.” Being cheered on by the crowd. Getting an award. Earning the admiration of others. Telling someone, “Good job!”"
 
 meaning_shadow : "Being a bad winner. Allowing your achievements to inflate your ego. Looking down on people who seem less capable. Craving to be the center of attention. Giving or receiving insincere praise. Envying the achievements of others."

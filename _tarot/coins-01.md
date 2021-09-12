@@ -11,6 +11,9 @@ keywords			 : ['health', 'wealth', 'practicality', 'receiving']
 url						 : 'tarot/cards/coins-01'
 aliases				 : ['coins-ace']
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Outlining a plan for achieving prosperity. Becoming aware of opportunities to improve income or health. Realizing you have everything you need. Appreciating everything the Universe has given you. Receiving the perfect gift at the perfect time."
 
 meaning_shadow : "Indulging in relentless consumerism. Wanting more, no matter how much you have. Obsessing on your account balance. Suffering from hypochondria. Consuming blessings without expressing gratitude. Taking what you want without concern for the needs of others."

@@ -12,6 +12,9 @@ keywords			 : ['satisfaction', 'sensuality', 'luxury', 'pleasure']
 url						 : 'tarot/cards/cups-09'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Being delighted with your own achievements. Recognizing your own talents and abilities. Reveling in the good things life has to offer. Indulging yourself. Relaxing and unwinding. Having everything you need in order to feel complete."
 
 meaning_shadow : "Being smug. Satisfying yourself at the expense of others. Being selfish. Over-indulging. Avoiding work that needs to be done. Claiming achievements or skills you do not possess. Never being satisfied, no matter how much you have."

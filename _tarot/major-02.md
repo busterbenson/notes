@@ -12,6 +12,9 @@ keywords			 : ['intuition', 'reflection', 'purity', 'initiation']
 url						 : 'tarot/cards/major-02'
 aliases				 : ['high-priestess', 'the-high-priestess']
 
+# password: 'foolish journey'
+dropbox				 : 'https://www.dropbox.com/sh/tiilbncs6mr7myq/AAD-Z_DYA2BCT8BELzfYBOUYa?dl=0'
+
 meaning_light  : "Listening to your feelings and intuitions. Exploring unconventional spirituality. Keeping secrets. Being receptive. Reflecting instead of acting. Observing others. Preserving purity."
 
 meaning_shadow : "Being aloof. Obsessing on secrets and conspiracies. Rejecting guidance from spirit or intuition. Revealing all. Ignoring gut feelings. Refusing to become involved, even when involvement is appropriate."

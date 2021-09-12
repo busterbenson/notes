@@ -12,6 +12,9 @@ keywords			 : ['balance', 'law', 'fairness', 'objectivity']
 url						 : 'tarot/cards/major-11'
 aliases				 : ['justice']
 
+# password: 'foolish journey'
+dropbox				 : 'https://www.dropbox.com/sh/5fx7nx3c8bdrj1w/AAD4rEdXU3rN6hhxHyKS-14xa?dl=0'
+
 meaning_light  : "Making an objective decision. Weighing an issue carefully before taking action. Appropriately scaling your reaction to a situation. Getting all the facts. Considering evidence. Deliberating."
 
 meaning_shadow : "Delivering harsh criticism. Obsessing on rules and regulations. Playing by the book even when it is destructive or counterproductive to do so. Confusing snap decisions with timely action. Playing favorites."

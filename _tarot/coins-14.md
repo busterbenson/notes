@@ -12,6 +12,9 @@ keywords			 : ['Stability', 'dependability', 'confidence', 'intervention']
 url						 : 'tarot/cards/coins-14'
 aliases				 : ['coins-king']
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 personality    : "The King of Coins can represent anyone who tends to control (King) finances and physical resources (Coins). The King may also represent the tendency to be more conservative than innovative, or the need to intervene on the behalf of others with less confidence or experience."
 
 meaning_light  : "Becoming debt-free. Having more than enough to get by. Making contributions to a savings plan. Taking a new job with an eye toward advancing your career. Buying life or health insurance. Being confident in the bedroom. Taking on the role of enforcer when called upon to do so."

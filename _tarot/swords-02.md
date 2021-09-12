@@ -12,6 +12,9 @@ keywords			 : ['denial', 'debate', 'impasse', 'truce']
 url						 : 'tarot/cards/swords-02'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Refusing to make a decision without getting the facts. Exploring both sides of an argument. Arguing passionately for what you believe in. Weighing the issues. Encouraging the open exchange of ideas. Discussing political or religious issues without getting “hot under the collar.”"
 
 meaning_shadow : "Rejecting evidence that conflicts with dearly-held beliefs. Arguing with others just for the sake of doing so. Nit-picking. Putting off a decision because you’re afraid to face the consequences. Preventing others from getting the information they need to make good decisions."

@@ -12,6 +12,9 @@ keywords			 : ['intuition', 'spirituality', 'affection', 'motivation']
 url						 : 'tarot/cards/cups-01'
 aliases				 : ['cups-ace']
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Trusting your feelings. Opening yourself to spirit. Accepting and returning affection. Getting in touch with what motivates you. Taking advantage of an opportunity to express love to others. Listening to the still, small voice."
 
 meaning_shadow : "Hiding your feelings. Spurning an opportunity to love or be loved. Numbing yourself to spiritual yearnings. Rejecting the counsel of your heart. Becoming a puppet of your own emotions. Indulging in hysteria or obsession."

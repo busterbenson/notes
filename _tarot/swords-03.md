@@ -12,6 +12,9 @@ keywords			 : ['variance', 'difference', 'dissatisfaction', 'heartache', 'reject
 url						 : 'tarot/cards/swords-03'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Being brave enough to see things as they really are. Exercising your critical eye. Being your own best critic. Acknowledging that things don’t always turn out as planned. Moving past heartbreak to embrace a painful truth."
 
 meaning_shadow : "Wallowing in despair. Allowing yourself to be completely crushed by the thoughts, words, or deeds of another. Judging yourself too harshly. Holding yourself to an unrealistic standard of excellence. Wearing your heart on your sleeve while carrying a chip on your shoulder."

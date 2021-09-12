@@ -46,11 +46,12 @@ layout: fullscreen
         <div class="col-12 col-sm-3 mb-5">
           <a href="/tarot/{{ page.token }}">
             {% if page.images %}
-              {% for image in page.images %}
-                {% include img.html src=image alt=page.title class="tarot-card" %}
-              {% endfor %}
+              {% include img.html src=page.images.first alt=page.title class="tarot-card" %}
             {% endif %}
           </a>
+          {% if page.dropbox and page.dropbox != '' %}
+            <div style='text-align: center'><a href="{{ page.dropbox }}">View more versions</a><br /><em>(password protected)</em></div>
+          {% endif %}
         </div>
 
         <div class="col-12 col-sm-5 mb-5">

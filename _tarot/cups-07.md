@@ -12,6 +12,9 @@ keywords			 : ['imagination', 'dreams', 'illusions', 'goals']
 url						 : 'tarot/cards/cups-07'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Motivating yourself with images of future success. Using visualization to encourage progress. Taking an imaginative or creative approach to problem solving. Making dreams come true. Gleaning insight from personal visions."
 
 meaning_shadow : "Obsessing on imaginary fears or uncertain consequences. Giving in to emotional or political terrorism. Spending more time dreaming than working. Failing to envision the possible repercussions of your choices. Being controlled by fear."

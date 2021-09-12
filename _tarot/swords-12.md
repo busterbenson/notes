@@ -13,6 +13,9 @@ keywords			 : ['bluntness', 'intelligence', 'incisiveness', 'investigation']
 url						 : 'tarot/cards/swords-12'
 aliases				 : ['swords-knight']
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 personality    : "The Knight of Swords can represent anyone who wants to lead the way (Knight) to greater knowledge and mental clarity (Swords). The Knight may also represent the tendency to be more intellectual than empathetic, or a compulsive desire to analyze or lecture others."
 
 meaning_light  : "Speaking your mind. Making your opinions known. Offering constructive criticism. Sharing your knowledge. Making insightful observations. Pinpointing the problem. Clarifying what others have said. Giving clear direction to others. Uncovering the truth."

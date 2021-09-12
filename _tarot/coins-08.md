@@ -12,6 +12,9 @@ keywords			 : ['effort', 'work diligence', 'skill']
 url						 : 'tarot/cards/coins-08'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Doing your best. Bringing enthusiasm and zeal to your work. Making an effort to be the best you can be. Finding the work that is right for you. Taking care of the small details. Becoming a finely skilled craftsperson. Building something with your hands. Making a handmade gift."
 
 meaning_shadow : "Working yourself to death. Doing a half-hearted or sloppy job. Continuing in a job you hate. Buying thoughtless gifts. Producing work with shoddy craftsmanship. Rushing through your work. Rejecting opportunities to learn more about your craft."

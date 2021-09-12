@@ -13,6 +13,9 @@ keywords			 : ['remorse', 'worry', 'distraught', 'conclusion']
 url						 : 'tarot/cards/swords-09'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Refusing to worry about what you cannot control. Rejecting anxiety. Judging your own performance with kindness and gentleness. Using meditation to quiet a troubled mind. Confronting nightmares and fears. Drawing a conclusion and putting an issue out of your mind."
 
 meaning_shadow : "Torturing yourself with regrets. Second-guessing your every move. Beating yourself up for your mistakes. Depression. Obsessing on errors and overlooked details. Refusing to handle stress in healthy ways. Ruining your ability to appreciate the present by dwelling on the past. Debating irreversible decisions."

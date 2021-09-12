@@ -12,6 +12,9 @@ keywords			 : ['enthusiasm', 'eagerness', 'confidence', 'validation', 'affirmati
 url						 : 'tarot/cards/wands-11'
 aliases				 : ['wands-page']
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 personality    : "The Page of Wands can represent anyone who wants to learn (Page) how to make something happen (Wands), especially in academic, romantic, and professional areas of life. The Page may also represent the tendency to be more eager than well-informed or a need to learn by doing."
 
 meaning_light  : "Leaping at a new opportunity. Being a cheerleader or ardent advocate for your cause. Being a True Believer. Taking first steps toward independence. Trusting in your own abilities. Asking for feedback."

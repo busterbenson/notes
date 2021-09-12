@@ -12,6 +12,9 @@ keywords			 : ['celebration', 'expression', 'community', 'friendliness']
 url						 : 'tarot/cards/cups-03'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Celebrating your feelings or connections with others. Expressing joy through song, dance, or physical affection. Working together with others who share your feelings. Performing acts of service as a way of saying, “I love you.” Embracing unconventional romantic arrangements."
 
 meaning_shadow : "Mistaking giddiness for true affection. Being dominated by manic emotions. Expecting everyone to always feel the same way you do. Demanding unreasonable support from friends or family. Partying to a dangerous or unhealthy extent."

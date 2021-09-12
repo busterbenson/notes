@@ -13,6 +13,9 @@ keywords			 : ['grace', 'skill', 'wit', 'charm', 'aptitude']
 url						 : 'tarot/cards/swords-13'
 aliases				 : ['swords-queen']
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 personality    : "The Queen of Swords can represent anyone who wants to encourage others (Queen) to be brighter and more communicative (Swords). The Queen may also represent the tendency to be more tactful than objective, or the need to express information more politely than precisely."
 
 meaning_light  : "Exercising tact or using diplomacy. Defusing a tense situation. Knowing what to say and how to say it. Making others feel comfortable and confident. Bringing out the best in everyone. Having a way with words. Telling jokes. Possessing a knack for music, math, art, or science."

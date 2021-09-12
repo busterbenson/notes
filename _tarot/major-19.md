@@ -12,6 +12,9 @@ keywords			 : []
 url						 : 'tarot/cards/major-19'
 aliases				 : ['sun', 'the-sun']
 
+# password: 'foolish journey'
+dropbox				 : 'https://www.dropbox.com/sh/fdqhokv8ims2gk9/AADBJ_1h0Ki5ugCyyDzVhw1Ca?dl=0'
+
 meaning_light  : "Seeing things clearly. Experiencing intense joy. Celebrating your own successes. Knowing you’re good at what you do. Gaining recognition for your personal genius."
 
 meaning_shadow : "Being dazzled by your own accomplishments. Becoming absorbed in your own self-image. Feeling rushed and distracted. Exerting yourself to the point of exhaustion. Overstating your abilities or misrepresenting your achievements."

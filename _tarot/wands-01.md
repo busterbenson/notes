@@ -12,6 +12,9 @@ keywords			 : ['desire', 'inspiration', 'vision', 'creation', 'invention']
 url						 : 'tarot/cards/wands-01'
 aliases				 : ['wands-ace']
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Being inspired. Identifying an important goal. Being given the opportunity to do whatever you want to do. Giving or receiving direction. Seeing a solution. Creating something new. Being aroused, sexually or creatively."
 
 meaning_shadow : "Failing to take advantage of a great opportunity. Being ineffectual or lazy. Making an inadequate effort. Working toward a goal, but lacking the resources or initiative to achieve success. Setting inappropriate goals. Failing to take a stand."

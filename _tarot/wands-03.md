@@ -12,6 +12,9 @@ keywords			 : ['implementation', 'action', 'exploration']
 url						 : 'tarot/cards/wands-03'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Putting a plan into motion. Taking that critical first step. Making good things happen. Going beyond your limits. Blazing new trails. Hitting the ground running. Seeing your plans come to fruition."
 
 meaning_shadow : "Procrastinating. Knowing what to do, but refusing to do it. Launching a project without a clear definition of who should do what. Rejecting an opportunity to try something new. Failing to finish what you start."

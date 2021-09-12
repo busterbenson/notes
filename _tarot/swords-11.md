@@ -12,6 +12,9 @@ keywords			 : ['student', 'apprentice', 'scholarship', 'information']
 url						 : 'tarot/cards/swords-11'
 aliases				 : ['swords-page']
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 personality    : "The Page of Swords can represent anyone who wants to (or needs to) learn (Page) more about intellectual pursuits, academic subjects, or good decision-making (Swords). Though eager to make a good impression, The Page may lack the experience or information needed to handle studies or assignments with responsibility and confidence. He or she may overcompensate for this with bluster, exaggerated credentials, or snap judgments."
 
 meaning_light  : "Pursuing a course of study. Asking good questions. Investing time in study and practice. Doing research. Making a habit of learning new things. Starting an investigation. Outlining what you need to know. Finding a mentor or teacher."

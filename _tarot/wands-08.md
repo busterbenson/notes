@@ -12,6 +12,9 @@ keywords			 : ['speed', 'swiftness', 'responsiveness', 'change']
 url						 : 'tarot/cards/wands-08'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Taking swift action. Moving forward with a plan as quickly as possible. Energizing yourself. Adapting to sudden changes. Taking setbacks in stride. Embracing the idea that nothing stays the same forever. Reacting quickly and appropriately to unforeseen problems."
 
 meaning_shadow : "Giving in to panic. Running in circles and screaming. Insisting things must always stay the same. Stirring the pot just to see what will happen. Rushing others. Refusing to re-evaluate a schedule or program, even when it’s clearly no longer appropriate."

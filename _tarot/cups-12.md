@@ -12,6 +12,9 @@ keywords			 : ['fervor', 'zeal', 'moodiness', 'illumination']
 url						 : 'tarot/cards/cups-12'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 personality    : "The Knight of Cups can represent anyone who wants to lead the way (Knight) to stronger emotions and deeper spiritual understanding (Cups). The Knight may also represent the tendency to be more emotional than reasonable, or an urgent desire to experience spiritual or emotional extremes."
 
 meaning_light  : "Being deeply committed to a cause. Giving in to strong emotions, from excitement to depression. Acting on intuition alone. Solving problems intuitively. Believing in and basing decisions on ideals instead of realities. Bringing intuition or passion to the table."

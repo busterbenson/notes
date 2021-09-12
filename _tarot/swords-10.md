@@ -12,6 +12,9 @@ keywords			 : ['exhaustion', 'ruin', 'disaster', 'stamina', 'obsession']
 url						 : 'tarot/cards/swords-10'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Seeing the signs that you’ve reached your limits. Paying attention to what your body is trying to tell you. Giving in to the need for rest and renewal. Acknowledging that you’ve hit bottom. Committing to a turnaround. Knowing the worst is over."
 
 meaning_shadow : "Accepting defeat prematurely. Driving yourself to total exhaustion, especially mentally. Experiencing a mental breakdown. Obsessing on a problem to the breaking point. Giving up. Refusing to move from thought to action. Deeply unhealthy thoughts."

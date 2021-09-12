@@ -12,6 +12,9 @@ keywords			 : ['wholeness', 'integration', 'totality', 'completeness', 'fullness
 url						 : 'tarot/cards/major-21'
 aliases				 : ['world', 'the-world']
 
+# password: 'foolish journey'
+dropbox				 : 'https://www.dropbox.com/sh/wf94d2v71b93wt9/AACahsuuqSQF37cFz_oirdqGa?dl=0'
+
 meaning_light  : "Having it all. Knowing and loving yourself as completely as possible. Seeing the interconnection of all things and people. Enhancing your perspective. Living life to its fullest. Understanding the meaning of life."
 
 meaning_shadow : "Allowing greed and envy to prevent you from enjoying what you do possess. Failing to see the larger design in ordinary events. Believing that everything that exists can be touched, counted, or measured. Failing to see the divine reflected in those around you."

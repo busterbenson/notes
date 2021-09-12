@@ -12,6 +12,9 @@ keywords			 : ['solitude', 'experience', 'stillness', 'withdrawal']
 url						 : 'tarot/cards/major-09'
 aliases				 : ['hermit', 'the-hermit']
 
+# password: 'foolish journey'
+dropbox				 : 'https://www.dropbox.com/sh/9hla79iv2t6iju0/AACatsKFIh3q6m_yzXKgtBCra?dl=0'
+
 meaning_light  : "Becoming or seeking out a guru. Going on a retreat. Recharging spiritual or creative batteries. Lighting the way for those with less experience. Stepping back to gain perspective."
 
 meaning_shadow : "Being a loner. Fearing contact with others. Becoming a know-it-all. Inflating claims of expertise. Hiding your skills and talents out of fear of unworthiness."

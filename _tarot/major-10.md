@@ -12,6 +12,9 @@ keywords			 : ['luck', 'randomness', 'cycles', 'karma', 'fate', 'revolution']
 url						 : 'tarot/cards/major-10'
 aliases				 : ['the-wheel-of-fortune', 'wheel-of-fortune', 'wheel']
 
+# password: 'foolish journey'
+dropbox				 : 'https://www.dropbox.com/sh/4bjlrhwflyu71tt/AACnyujxtLkUxNTwuTJYJl0La?dl=0'
+
 meaning_light  : "Allowing events to unfold. Seeing the larger pattern in everyday events. Trusting your luck. Watching for cycles. Believing that 'what goes around, comes around.'"
 
 meaning_shadow : "Losing money gambling. Refusing to do your part to bring a plan to fruition. Taking a fatalistic approach to life. Fighting the natural course of events."

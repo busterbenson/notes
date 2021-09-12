@@ -12,6 +12,9 @@ keywords			 : ['love', 'passion', 'unity', 'choice']
 url						 : 'tarot/cards/major-06'
 aliases				 : ['lovers', 'the-lovers']
 
+# password: 'foolish journey'
+dropbox				 : 'https://www.dropbox.com/sh/grnrzva2jbgxgp1/AAB1C-84hDwj4L06OYPWWG2aa?dl=0'
+
 meaning_light  : "Being in love. Showing your love to others. Expressing passion or romantic feelings. Aligning yourself with groups or like-minded others. Bringing people together. Making well-informed decisions."
 
 meaning_shadow : "Debilitating passion. Allowing an unhealthy desire for love to motivate destructive behavior. Disrupting unity. Working against the best interests of those who care about you. Ill-informed decisions."

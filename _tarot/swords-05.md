@@ -12,6 +12,9 @@ keywords			 : ['selfishness', 'hostility', 'irrationality', 'self-preservation']
 url						 : 'tarot/cards/swords-05'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Acting in your own best interest. Choosing to stand up for yourself. Not backing down from disagreement and discord. Taking a stand. Refusing to go along with an unethical plan. Knowing when to bend the rules."
 
 meaning_shadow : "Taking advantage of others. Intimidating others. Acting in an unethical manner. Picking fights. Using words to goad others into violence and irrationality. Ignoring rules you’ve agreed to abide by. Looking out for yourself while allowing harm to come to others. Gloating over victory."

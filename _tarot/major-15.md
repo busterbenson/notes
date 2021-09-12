@@ -12,6 +12,9 @@ keywords			 : ['shadow', 'materialism', 'bondage', 'delusion']
 url						 : 'tarot/cards/major-15'
 aliases				 : ['devil', 'the-devil']
 
+# password: 'foolish journey'
+dropbox				 : 'https://www.dropbox.com/sh/6fmis7p8cbvk01h/AACQlN_AMaMyGSXMwxvuQVSQa?dl=0'
+
 meaning_light  : "Appreciating the luxuries that life has to offer. Being comfortable in your own skin. Enjoying your sexuality. Splurging on an expensive personal item. Embracing the fact that everyone has a darker side. Dealing with unhealthy impulses in healthy ways."
 
 meaning_shadow : "Putting excessive emphasis on superficial things. Always wanting more. Valuing possessions more than people or relationships. Allowing base instincts to govern your life. Being selfish. Attributing your own dark impulses to outside forces or other people."

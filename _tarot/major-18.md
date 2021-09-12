@@ -12,6 +12,9 @@ keywords			 : ['mystery', 'fantasy', 'imagination', 'dreams', 'uncertainty']
 url						 : 'tarot/cards/major-18'
 aliases				 : ['moon', 'the-moon']
 
+# password: 'foolish journey'
+dropbox				 : 'https://www.dropbox.com/sh/xgrrxh8n59qmn28/AADGQb1bemZ6jFnrXu6h8f-Ta?dl=0'
+
 meaning_light  : "Enjoying healthy fantasies and daydreams. Using your imagination. Practicing magic or celebrating the magic of everyday life. Attuning yourself to the cycles of nature. Embracing the unknown."
 
 meaning_shadow : "Becoming unable to separate fantasy from reality. Suffering from delusions. Losing your appreciation for the fantastic or magical. Adopting a ruthlessly logical mindset. Failing to appreciate life’s mysteries."

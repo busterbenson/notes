@@ -12,6 +12,9 @@ keywords			 : ['dishonesty', 'presumption', 'sneakiness', 'assumptions']
 url						 : 'tarot/cards/swords-07'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Refusing to do something dishonest, even when there’s no chance of ever being caught. Handling a difficult situation with finesse. Pointing out assumptions. Acting ethically in public and in private. Living a life that is beyond reproach."
 
 meaning_shadow : "Stealing or lying. Doing whatever you can get away with, simply because you can. Looking for a way around consequences. Justifying wicked behavior by focusing on the wickedness of others. Failing to examine your own motives and prejudices."

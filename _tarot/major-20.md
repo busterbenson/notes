@@ -13,6 +13,9 @@ keywords			 : ['revival', 'renewal', 'resurrection', 'evaluation', 'invitation']
 url						 : 'tarot/cards/major-20'
 aliases				 : ['judgement', 'judgment']
 
+# password: 'foolish journey'
+dropbox				 : 'https://www.dropbox.com/sh/hxfc5r5p2sxr2l7/AACHZg8DpU8GLk_eSzU63LHya?dl=0'
+
 meaning_light  : "Receiving a wake-up call. Discovering a new purpose in life. Becoming totally and completely yourself. Receiving a well-deserved reward. Passing an evaluation or examination. Welcoming the start of a new phase of life."
 
 meaning_shadow : "Being weighed in the balances and found wanting. Failing to measure up to a well-defined standard. Being caught goofing off or misbehaving. Failing to prepare for an examination you know is coming. Rejecting an opportunity to reinvent yourself."

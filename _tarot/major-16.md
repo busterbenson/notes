@@ -12,6 +12,9 @@ keywords			 : ['Demolition', 'upheaval', 'deconstruction', 'disaster', 'destruct
 url						 : 'tarot/cards/major-16'
 aliases				 : ['the-tower', 'tower']
 
+# password: 'foolish journey'
+dropbox				 : 'https://www.dropbox.com/sh/2sr9octyi2ehjmv/AAAjjOrJOZKaF6n4MmqNTbura?dl=0'
+
 meaning_light  : "Breaking out of old, confining habits and mindsets. Clearing the way for new growth. Dispelling the influence of an inflated ego. Getting back to basics. Stripping away harmful illusions. Receiving sudden insight."
 
 meaning_shadow : "Clinging to traditions that repress growth. Engaging in willful blindness. Rejecting evidence that change is needed. Ignoring guidance from a higher power. Maliciously engaging in destructive behavior."

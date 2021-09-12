@@ -12,6 +12,9 @@ keywords			 : ['confrontation', 'disruption', 'distinction', 'objection', 'strif
 url						 : 'tarot/cards/wands-05'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Calmly expressing a dissenting opinion. Allowing someone to use his or her own methods to get a job done. Opening the floor for discussion or debate. Comparing progress made so far to standards set earlier."
 
 meaning_shadow : "Berating others for their ridiculous opinions. Picking fights. Offering destructive criticism. Baiting people with barbed remarks. Disrupting progress with an endless stream of pointless objections."

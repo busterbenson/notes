@@ -12,6 +12,9 @@ keywords			 : ['meditation', 'contemplation', 'perspective', 'mindset']
 url						 : 'tarot/cards/swords-04'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Thinking over your plans before putting them into action. Pausing to meditate or clear your mind. Taking time to understand someone or something before criticizing it. Resting. Occupying your thoughts with a healthy distraction."
 
 meaning_shadow : "Failing to think things through. Mistaking procrastination for thoughtfulness. Adopting a point of view and refusing to reconsider your conclusions, even when presented with refuting evidence. Allowing chaos and whimsy to dominate your thoughts."

@@ -12,6 +12,9 @@ keywords			 : ['union', 'attraction', 'combination', 'affection']
 url						 : 'tarot/cards/cups-02'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Being drawn to someone. Longing for someone or something. Acting on your desires. Discovering a feeling is mutual. Doing what makes you feel good. Merging. Healing broken ties. Admitting two people feel differently about each other and moving on."
 
 meaning_shadow : "Burning bridges. Becoming caught up in unhealthy codependency. Shutting out anyone but your chosen few. Obsessing on someone who does not return your affections. Despairing over finding “The One.” Deceiving yourself about your true orientation."

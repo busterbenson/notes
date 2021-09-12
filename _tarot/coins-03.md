@@ -12,6 +12,9 @@ keywords			 : ['expression', 'production', 'work', 'contribution']
 url						 : 'tarot/cards/coins-03'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Finishing a project. Setting and meeting standards. Performing according to specifications. Making something others value. Creating something new. Doing your part in a group project. Delivering exactly what others have asked for."
 
 meaning_shadow : "Pandering to the tastes of others. Failing to deliver what you’ve promised. Not delivering your best work unless closely supervised. Ignoring or breaking agreements with those who have invested in you. Refusing to do your part. Failing to abide by a clearly-outlined agreement with yourself or others."

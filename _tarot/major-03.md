@@ -12,6 +12,9 @@ keywords			 : ['fertility', 'productivity', 'ripeness', 'nurturing']
 url						 : 'tarot/cards/major-03'
 aliases				 : ['the-empress', 'empress']
 
+# password: 'foolish journey'
+dropbox				 : 'https://www.dropbox.com/sh/1syxw8ownuf86lx/AAAEqEQo1tTWpqxR5e8EWRm8a?dl=0'
+
 meaning_light  : "Nurturing yourself and others. Bearing fruit. Celebrating your body. Bearing literal or figurative children. Reveling in luxury. Mothering those around you in positive ways. Enjoying your sexuality. Getting things done."
 
 meaning_shadow : "Overindulging. Being greedy. Smothering someone with attention. Debilitating someone by being overprotective. Inhibiting productivity by obsessing on productivity. Being overcome by addictive behavior."

@@ -12,6 +12,9 @@ keywords			 : ['ending', 'conclusion', 'transition', 'passage', 'departure']
 url						 : 'tarot/cards/major-13'
 aliases				 : ['death']
 
+# password: 'foolish journey'
+dropbox				 : 'https://www.dropbox.com/sh/hs3o7lq1l8rq9eu/AABUjcHNX5MhcsKxNfDeG1OOa?dl=0'
+
 meaning_light  : "Bringing an unpleasant phase of life to an end. Recognizing and celebrating the conclusion of something. Putting bad habits to rest. Becoming a new person. Leaving one person, place, or thing for another. Letting go."
 
 meaning_shadow : "Obsessing on death and dying. Refusing to give up old habits or unhealthy relationships. Insisting that everything and everyone should stay the same forever. Failing to take good care of yourself."

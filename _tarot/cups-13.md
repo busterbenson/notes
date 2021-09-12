@@ -12,6 +12,9 @@ keywords			 : ['insightfulness', 'spirituality', 'compassion', 'empathy', 'insti
 url						 : 'tarot/cards/cups-13'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 personality    : "The Queen of Cups can represent anyone who wants to convince others (Queen) to be more spiritual and empathetic (Cups). The Queen may also represent the tendency to be more reflective than active, or the need to sway the opinions of others through emotional appeals."
 
 meaning_light  : "Allowing yourself to be moved by the plight of others. Feeling strong emotions. Possessing unusual sympathy or empathy. Trusting your feelings to guide you. Calling on psychic abilities. Achieving unity with Spirit."

@@ -12,6 +12,9 @@ keywords			 : ['wealth', 'abundance', 'acquisition', 'greed']
 url						 : 'tarot/cards/coins-10'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Celebrating your physical and financial blessings. Realizing how lucky or how blessed you are. Being satisfied with your physical and financial achievements. Taking best advantage of “times of plenty.” Enjoying a feast. Showering friends or family with gifts."
 
 meaning_shadow : "Spending all of your money on extravagant gifts and possessions. Trying too hard to impress others with your wealth or physique. Giving an inappropriately expensive gift as a means of currying favor. Obsessing on matters of weight, health, or finance. Always asking, “What’s in it for me?”"

@@ -12,6 +12,9 @@ keywords			 : ['logic', 'objectivity', 'intellect', 'choice']
 url						 : 'tarot/cards/swords-01'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Making objective decisions. Applying logic. Reasoning your way out of a difficult situation. Solving puzzles. Thinking things through. Emphasizing the facts. Clearing your mind. Seeking clarity."
 
 meaning_shadow : "Applying ruthless or twisted logic. Gloating over your own superior intellect. Using quick thinking to deceive or confuse others. Confusing snap judgments with quick thinking. Making decisions without thinking through consequences."

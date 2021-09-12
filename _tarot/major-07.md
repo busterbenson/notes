@@ -12,6 +12,9 @@ keywords			 : ['advancement', 'victory', 'triumph', 'success']
 url						 : 'tarot/cards/major-07'
 aliases				 : ['chariot', 'the-chariot']
 
+# password: 'foolish journey'
+dropbox				 : 'https://www.dropbox.com/sh/vsjxtwgmt9r9x3v/AAB8MvDsuFUxlGyAi22KwLzTa?dl=0'
+
 meaning_light  : "Breaking through barriers. Moving forward with confidence and authority. Reaching the pinnacle of success. Basking in the glory of achievement. Guiding an effort to total victory. Establishing yourself as a worthy leader."
 
 meaning_shadow : "Resting on laurels. Riding roughshod over the feelings or expectations of others. Focusing more on past successes than future opportunities. Failing to rein in impulsive behavior."

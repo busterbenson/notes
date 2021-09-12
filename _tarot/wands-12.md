@@ -12,6 +12,9 @@ keywords			 : ['boldness', 'bravado', 'passion', 'persuasion', 'advocacy']
 url						 : 'tarot/cards/wands-12'
 aliases				 : ['wands-knight']
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 personality    : "The Knight of Wands can represent anyone who wants to lead the way (Knight) to a goal (Wands), especially in academic, romantic, and professional areas of life. The Knight may also represent the tendency to be more forceful than cooperative or the need to take action at any cost."
 
 meaning_light  : "Charging ahead. Making rapid progress. Refusing limits. Dazzling those around you with your wit and charm. Convincing others of your right to leadership. Convincing others to follow you. Being a catalyst for change."

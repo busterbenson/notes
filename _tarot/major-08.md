@@ -12,6 +12,9 @@ keywords			 : ['discipline', 'boldness', 'self-discipline', 'power', 'vitality']
 url						 : 'tarot/cards/major-08'
 aliases				 : ['strength']
 
+# password: 'foolish journey'
+dropbox				 : 'https://www.dropbox.com/sh/k9qz3teoilo55f8/AAD_su4REMQdzOw4DqMj5ieha?dl=0'
+
 meaning_light  : "Imposing restrictions on yourself for your own benefit. Bringing your passions under the control of reason. Resisting impulses that work against your best interests. Taking bold action."
 
 meaning_shadow : "Indulging weakness, even when you know it will damage your health and happiness. Languishing in addiction. Allowing your instincts to tame and conquer you. Failing to take a stand when necessary."

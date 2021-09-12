@@ -12,6 +12,9 @@ keywords			 : ['blending', 'synthesis', 'mediation', 'combination', 'harmony']
 url						 : 'tarot/cards/major-14'
 aliases				 : ['temperance']
 
+# password: 'foolish journey'
+dropbox				 : 'https://www.dropbox.com/sh/8hiwjec8cuihf1d/AAAfwASq_A2gsXL3l1lyk3Xja?dl=0'
+
 meaning_light  : "Bringing opposites together. Moderating your actions or emotions. Finding middle ground. Reaching compromises. Synthesizing solutions that please everyone involved. Using the old to make something new."
 
 meaning_shadow : "Going to extremes. Disrupting group efforts. Ignoring healthy approaches to life. Becoming an addict. Practicing gluttony. Tearing something or someone apart. Breaking alliances."

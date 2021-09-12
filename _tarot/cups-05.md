@@ -12,6 +12,9 @@ keywords			 : ['loss', 'despair', 're-evaluation', 'regret', 'uncertainty', 'rep
 url						 : 'tarot/cards/cups-05'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Acknowledging loss and moving on. Focusing on how the glass remains “half-full.” Finding the silver lining in a dark cloud. Recognizing that loss is a natural part of life. Embracing healthy grief. Learning lessons from harsh consequences."
 
 meaning_shadow : "Wallowing in unhealthy grief or self-pity. Refusing to move on and let go. Clinging to the past. Obsessing on past lives and past loves. Failing to live in the present. Beating yourself up over past mistakes. Allowing fear of failure to limit your efforts."

@@ -13,6 +13,9 @@ keywords			 : ['practicality', 'prosperity', 'learning', 'growth', 'adolescence'
 url						 : 'tarot/cards/coins-11'
 aliases				 : ['coins-page']
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 personality    : "Though fascinated with the physical realm, the Page of Coins may lack the experience or information needed to handle money or human sexuality with responsibility and confidence. He or she may overcompensate for this by wasting money, abusing his or her health, or over-indulging in or obsessing on various forms of physical pleasure."
 
 meaning_light  : "Learning the value of a dollar. Starting a savings plan. Taking the first steps toward getting out of debt. Learning new physical tasks. Discovering your sexuality. Launching a diet, a weight-lifting program, or a health-related effort. Learning by doing."

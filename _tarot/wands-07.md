@@ -12,6 +12,9 @@ keywords			 : ['bravery', 'resolve', 'determination']
 url						 : 'tarot/cards/wands-07'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Refusing to be silenced through fear or intimidation. Continuing a fight against all odds. Being fierce. Defending yourself against physical and emotional attacks. Refusing to put up with abuse. Clinging to your values despite all pressure to abandon them."
 
 meaning_shadow : "Having a chip on your shoulder. Taking unnecessary risks as a means of proving your fearlessness. Looking for an opportunity to take offense. Responding to constructive criticism with defensiveness. Refusing to stand up for yourself and your beliefs."

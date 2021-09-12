@@ -13,6 +13,9 @@ keywords			 : ['evaluation', 'decision', 'budgeting', 'diagnosis']
 url						 : 'tarot/cards/coins-02'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Weighing options. Comparing prices. Determining the value of one option over another. Juggling resources to make ends meet. Making difficult choices based on what’s best for your body or your bankbook. Looking at the bottom line. Asking for a second opinion on health issues."
 
 meaning_shadow : "Engaging in endless price comparison. Putting off a buying decision for fear of finding a slightly better value later on. Buying something without regard for value. Breaking your budget with unnecessary expenses. Engaging in behavior with no regard for how your body or bankbook will be impacted."

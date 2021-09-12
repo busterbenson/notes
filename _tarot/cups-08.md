@@ -12,6 +12,9 @@ keywords			 : ['longing', 'dissatisfaction', 'quest', 'departure', 'withdrawal']
 url						 : 'tarot/cards/cups-08'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Wanting something better. Blazing your own trail. Realizing there must be more to life. Leaving an unhealthy situation behind. Starting your own business. Going on a retreat. Seeking the “still, small voice.”"
 
 meaning_shadow : "Being implacable. Finding fault. Nitpicking. Refusing to settle down. Running away from problems or confrontations. Saying, “It’s my way or the highway!” Harping on past mistakes and disappointments. Threatening to quit as a strategy to get your way."

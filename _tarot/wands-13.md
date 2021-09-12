@@ -12,6 +12,9 @@ keywords			 : ['attention', 'attraction', 'unification', 'collaboration']
 url						 : 'tarot/cards/wands-13'
 aliases				 : ['wands-queen']
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 personality    : "The Queen of Wands can represent anyone who wants to convince others (Queen) to pursue a common goal (Wands), especially in academic, romantic, and professional areas of life. The Queen may also represent the tendency to be more manipulative than direct or the need to capture the attention of others."
 
 meaning_light  : "Paying close attention. Helping others focus on the issue at hand. Getting everyone to work together. Identifying common ground. Bringing people together, despite their differences. Using reverse psychology."

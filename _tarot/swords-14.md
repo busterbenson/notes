@@ -12,6 +12,9 @@ keywords			 : ['genius', 'expertise', 'decision', 'verdict']
 url						 : 'tarot/cards/swords-14'
 aliases				 : ['swords-king']
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 personality    : "The King of Swords can represent anyone who tends to control or seek to control (King) intellectual and verbal responses (Swords). The King may also represent the tendency to be more blunt than diplomatic, or the need to bring something to a conclusion once and for all."
 
 meaning_light  : "Expressing yourself with firmness and authority. Rendering a final decision. Consulting an expert. Calling in advisors and consultants. Coming to a final conclusion. Reaching a beneficial agreement based on sound information."

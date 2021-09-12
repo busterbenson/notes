@@ -12,6 +12,9 @@ keywords			 : ['restriction', 'limitation', 'confinement', 'helplessness']
 url						 : 'tarot/cards/swords-08'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Honoring limits. Respecting the rules. Deciding to go on a diet for your health’s sake. Recognizing you cannot always be in control. Identifying obstacles to further progress. Refusing to think about unhealthy or unethical options. Asking for assistance."
 
 meaning_shadow : "Feeling trapped. Being lost in a maze of rules and regulations. Giving in to despair. Playing the victim. Allowing others to dictate what you can and cannot do. Being rendered helpless. Having very few options. Failing to look for a way out."

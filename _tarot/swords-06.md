@@ -12,6 +12,9 @@ keywords			 : ['adaptation', 'adjustments', 'science', 'travel']
 url						 : 'tarot/cards/swords-06'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Making the best of a bad situation. Recovering from defeat. Resetting expectations. Making allowances for unexpected circumstances. Helping others who find themselves in dire circumstances. Changing the way you see the world. Broadening your perspective through study or travel."
 
 meaning_shadow : "Refusing to accept that things have changed. Playing the victim. Rejecting the idea that your actions have consequences. Applying scientific criteria to matters of faith, or confusing faith with science. Believing the whole world should be like your small corner of it."

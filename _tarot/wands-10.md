@@ -12,6 +12,9 @@ keywords			 : []
 url						 : 'tarot/cards/wands-10'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Holding your own in extreme circumstances. Helping others carry their burdens. Coming to the aid of the oppressed. Knowing and being honest about your own limits. Recognizing when you are not well-suited for a particular task."
 
 meaning_shadow : "Taking on more work than you know you can handle. Refusing to say “No” when you’re already overloaded. Making a habit of working overtime. Shielding others from facing the consequences of their own poor judgment. Over-extending yourself on a regular basis."

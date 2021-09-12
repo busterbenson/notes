@@ -13,6 +13,9 @@ keywords			 : ['poverty', 'destitution', 'need', 'crisis']
 url						 : 'tarot/cards/coins-05'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Recognizing your needs and taking action to fulfill them. Doing as much as you can do with what little you have. Admitting you need help. Embracing the aid that comes your way. Focusing on what you have versus what you don’t. Looking for the light at the end of the tunnel."
 
 meaning_shadow : "Exaggerating your financial or physical needs. Adopting a poverty mentality. Refusing to support yourself. Refusing offers of support. Playing the martyr. Turning down opportunities to improve your health or finances. Wallowing in misery."

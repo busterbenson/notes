@@ -12,6 +12,9 @@ keywords			 : ['guidance', 'knowledge', 'revelation', 'belief']
 url						 : 'tarot/cards/major-05'
 aliases				 : ['hierophant', 'the-hierophant']
 
+# password: 'foolish journey'
+dropbox				 : 'https://www.dropbox.com/sh/14l77cvnhm8by2p/AADCpHXHmv-3jYUhCXHZ3qX5a?dl=0'
+
 meaning_light  : "Teaching or guiding others. Searching for the truth. Asking for guidance from a higher power. Acknowledging the wisdom and experience of others. Taking vows. Engaging in heartfelt rituals. Volunteering."
 
 meaning_shadow : "Using experience as a means of manipulating or misguiding others. Being dogmatic. Favoring tradition over what is expedient or necessary. Going through the motions of empty rituals. Concealing wisdom. Restricting access to spiritual truths or the gods."

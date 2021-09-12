@@ -12,6 +12,9 @@ keywords			 : ['celebration', 'jubilation', 'community', 'teamwork', 'completion
 url						 : 'tarot/cards/wands-04'
 aliases				 : []
 
+# password: 'foolish journey'
+dropbox				 : ''
+
 meaning_light  : "Sharing in a great celebration. Sharing in a communal sense of achievement and success. Preparing for a party. Working together toward a common goal. Giving or winning awards."
 
 meaning_shadow : "Keeping your nose to the grindstone. Recognizing good work by demanding more work. Failing to share in a group celebration. Allowing sour grapes to poison your moment in the sun. Refusing to do your part."

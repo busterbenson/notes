@@ -6,11 +6,14 @@ card_type			 : 'major' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Freedom, faith, inexperience, innocence"
-alt_names			 : []
+alt_names			 : ['Le Mat', 'Beginnings']
 images				 : ['/assets/images/tarot/rws/rw-major-00.jpg']
 keywords			 : ['freedom', 'faith', 'inexperience', 'innocence']
 url						 : 'tarot/cards/major-00'
 aliases				 : ['fool', 'the-fool']
+
+# password: 'foolish journey'
+dropbox				 : 'https://www.dropbox.com/sh/5k2zaibljj4hkfm/AADx02srwL-eK83mZkXxaOYWa?dl=0'
 
 meaning_light  : "Freeing yourself from limitation. Expressing joy and youthful vigor. Being open-minded. Taking a leap of faith. Attuning yourself to your instincts. Being eager or curious. Exploring your potential. Embracing innovation and change."
 

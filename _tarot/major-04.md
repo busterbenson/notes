@@ -12,6 +12,9 @@ keywords			 : ['authority', 'regulation', 'direction', 'structure']
 url						 : 'tarot/cards/major-04'
 aliases				 : ['emporer', 'the-emporer']
 
+# password: 'foolish journey'
+dropbox				 : 'https://www.dropbox.com/sh/wofp99p3pz13ez5/AAAspW7kb_GCZN4agZ27o4Hoa?dl=0'
+
 meaning_light  : "Exercising authority. Defining limits. Directing the flow of work. Communicating clear guidelines. Being in control of yourself and others. Tempering aggressive masculinity with wisdom and experience."
 
 meaning_shadow : "Micromanaging. Crushing the creativity of others with a rigid, iron-fisted approach. Insisting on getting your own way. Assuming a dictatorial mindset. Using overt force to achieve your goals and maintain order."

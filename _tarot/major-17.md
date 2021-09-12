@@ -13,6 +13,9 @@ keywords			 : ['hope', 'optimism', 'openness', 'certainty', 'faith', 'longing', 
 url						 : 'tarot/cards/major-17'
 aliases				 : ['star', 'the-star']
 
+# password: 'foolish journey'
+dropbox				 : 'https://www.dropbox.com/sh/dmgbppenx9taghx/AABE2Jnu570ZktxIMBj1fWGaa?dl=0'
+
 meaning_light  : "Hoping for the best. Believing good things happen to good people. Seeing events in the best possible light. Adopting a generous spirit. Seeking guidance from above. Embracing possibility over probability."
 
 meaning_shadow : "Denying unpleasant truths. Denying personal accountability and saying, “Things just happen!” Ignoring signs and omens. Preferring illusion to reality. Spreading pessimism and stinginess of spirit."
