@@ -13,7 +13,7 @@ url						 : 'tarot/cards/wands-12'
 aliases				 : ['wands-knight']
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/u3xkxrwnaw3aeth/AAAU1-JBL-m3Y8hyZ7VcTvj4a?dl=0'
 
 personality    : "The Knight of Wands can represent anyone who wants to lead the way (Knight) to a goal (Wands), especially in academic, romantic, and professional areas of life. The Knight may also represent the tendency to be more forceful than cooperative or the need to take action at any cost."
 

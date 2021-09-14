@@ -13,7 +13,7 @@ url						 : 'tarot/cards/cups-05'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/xdhi0logjlre0xz/AAC3zVvXPkPtSiaxMYBPxzwza?dl=0'
 
 meaning_light  : "Acknowledging loss and moving on. Focusing on how the glass remains “half-full.” Finding the silver lining in a dark cloud. Recognizing that loss is a natural part of life. Embracing healthy grief. Learning lessons from harsh consequences."
 

@@ -13,7 +13,7 @@ url						 : 'tarot/cards/swords-08'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/rh9pwzet061nucs/AADrdbZa0-PZKwcLmxMGMh_na?dl=0'
 
 meaning_light  : "Honoring limits. Respecting the rules. Deciding to go on a diet for your health’s sake. Recognizing you cannot always be in control. Identifying obstacles to further progress. Refusing to think about unhealthy or unethical options. Asking for assistance."
 

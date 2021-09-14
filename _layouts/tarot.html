@@ -2,7 +2,25 @@
 layout: fullscreen
 ---
 
-{% assign cards = site.data.tarot.cards %}
+<style>
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  color: initial;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  text-align: center;
+}
+a:hover.button {
+  border-color: #cca;
+  background-color: #ffc;
+  color: #000;
+}
+</style>
 
 <section class="post">
   <div class="row pt-lg-8 pt-10 justify-content-center">
@@ -14,8 +32,8 @@ layout: fullscreen
         </div>
       </div>
 
-      <div class="row justify-content-start">
-        <div class="col-6 col-sm-3 col-md-2 mb-2">
+      <div class="row justify-content-start tarot-list">
+        <div class="col-6 col-sm-4 col-lg-2 mb-2">
           <div><a href="/tarot/major-00">The Fool</a></div>
           <div><a href="/tarot/major-01">The Magician</a></div>
           <div><a href="/tarot/major-02">The High Priestess</a></div>
@@ -39,7 +57,7 @@ layout: fullscreen
           <div><a href="/tarot/major-20">Judgement</a></div>
           <div><a href="/tarot/major-21">The World</a></div>
         </div>
-        <div class="col-6 col-sm-3 col-md-2 mb-2">
+        <div class="col-6 col-sm-4 col-lg-2 mb-2 tarot-list">
           <div><a href="/tarot/cups-01">Ace of Cups</a></div>
           <div><a href="/tarot/cups-02">2 of Cups</a></div>
           <div><a href="/tarot/cups-03">3 of Cups</a></div>
@@ -55,7 +73,7 @@ layout: fullscreen
           <div><a href="/tarot/cups-13">Queen of Cups</a></div>
           <div><a href="/tarot/cups-14">King of Cups</a></div>
         </div>
-        <div class="col-6 col-sm-3 col-md-2 mb-2">
+        <div class="col-6 col-sm-4 col-lg-2 mb-2 tarot-list">
           <div><a href="/tarot/coins-01">Ace of Coins</a></div>
           <div><a href="/tarot/coins-02">2 of Coins</a></div>
           <div><a href="/tarot/coins-03">3 of Coins</a></div>
@@ -71,7 +89,7 @@ layout: fullscreen
           <div><a href="/tarot/coins-13">Queen of Coins</a></div>
           <div><a href="/tarot/coins-14">King of Coins</a></div>
         </div>
-        <div class="col-6 col-sm-3 col-md-2 mb-2">
+        <div class="col-6 col-sm-4 col-lg-2 mb-2 tarot-list">
           <div><a href="/tarot/wands-01">Ace of Wands</a></div>
           <div><a href="/tarot/wands-02">2 of Wands</a></div>
           <div><a href="/tarot/wands-03">3 of Wands</a></div>
@@ -87,7 +105,7 @@ layout: fullscreen
           <div><a href="/tarot/wands-13">Queen of Wands</a></div>
           <div><a href="/tarot/wands-14">King of Wands</a></div>
         </div>
-        <div class="col-6 col-sm-3 col-md-2 mb-2">
+        <div class="col-6 col-sm-4 col-lg-2 mb-2 tarot-list">
           <div><a href="/tarot/swords-01">Ace of Swords</a></div>
           <div><a href="/tarot/swords-02">2 of Swords</a></div>
           <div><a href="/tarot/swords-03">3 of Swords</a></div>
@@ -103,20 +121,14 @@ layout: fullscreen
           <div><a href="/tarot/swords-13">Queen of Swords</a></div>
           <div><a href="/tarot/swords-14">King of Swords</a></div>
         </div>
-        <div class="col-6 col-sm-3 col-md-2 mb-2">
-          <p>Or, if you'd like to get a random card...</p>
-          <a class="button btn btn-warning btn-lg" style="display: block;" href="javascript:goto_random_card();" style="font-weight: bold;">Draw card</a>
+        <div class="col-6 col-sm-4 col-lg-2 mb-2 tarot-list">
+          <p>If you'd like to draw a random card...</p>
+          <a class="button btn btn-warning btn-lg" style="display: block; font-weight: bold; font-size: 14px; text-decoration: none;" href="/daily-card">Draw&nbsp;a&nbsp;card</a>
+          <!-- <p>Or three...</p>
+          <a class="button btn btn-warning btn-lg" style="display: block; font-weight: bold; font-size: 14px; text-decoration: none;" href="/3-cards">Draw&nbsp;3&nbsp;cards</a> -->
         </div>
       </div>
 
     </div>
   </div>
 </section>
-
-<script>
-function goto_random_card() {
-  var cards = [{% for c in cards  %}'{{c}}',{% endfor %}];
-  var random_card = cards[Math.floor(Math.random() * cards.length)];
-  window.location.href = "/tarot/"+random_card;
-}
-</script>

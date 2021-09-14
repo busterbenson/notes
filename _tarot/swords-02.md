@@ -13,7 +13,7 @@ url						 : 'tarot/cards/swords-02'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/t3une78wvtl9qio/AABLU2vpk5XQMFU6RbZv4TMLa?dl=0'
 
 meaning_light  : "Refusing to make a decision without getting the facts. Exploring both sides of an argument. Arguing passionately for what you believe in. Weighing the issues. Encouraging the open exchange of ideas. Discussing political or religious issues without getting “hot under the collar.”"
 

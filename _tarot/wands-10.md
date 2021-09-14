@@ -13,7 +13,7 @@ url						 : 'tarot/cards/wands-10'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/we92stke0w7orij/AAC-Kuk0PQ7ENo-BU2xG7xbea?dl=0'
 
 meaning_light  : "Holding your own in extreme circumstances. Helping others carry their burdens. Coming to the aid of the oppressed. Knowing and being honest about your own limits. Recognizing when you are not well-suited for a particular task."
 

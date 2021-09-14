@@ -13,7 +13,7 @@ url						 : 'tarot/cards/wands-09'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/vv66vkmvsywz04l/AAC6Qw1dQi-LFlAK0LDH-mH0a?dl=0'
 
 meaning_light  : "Sticking with it for the duration. Fulfilling your promises and obligations. Bearing up under incredible duress. Dragging yourself across the finish line. Picking yourself up by your own bootstraps. Refusing to quit. Going as far as you can go and being satisfied with your performance."
 

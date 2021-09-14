@@ -13,7 +13,7 @@ url						 : 'tarot/cards/wands-11'
 aliases				 : ['wands-page']
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/7bnfalh83wpl34i/AABybizR0E2t8lNxCif-wMJ1a?dl=0'
 
 personality    : "The Page of Wands can represent anyone who wants to learn (Page) how to make something happen (Wands), especially in academic, romantic, and professional areas of life. The Page may also represent the tendency to be more eager than well-informed or a need to learn by doing."
 

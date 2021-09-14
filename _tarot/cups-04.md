@@ -13,7 +13,7 @@ url						 : 'tarot/cards/cups-04'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/v5d87bwk2mvulrk/AADma4EKx45uEhS71tnk9yfca?dl=0'
 
 meaning_light  : "Maintaining your emotional stability. Refusing to give in to overwhelming emotions. Appreciating what you have and refusing to take it for granted. Seeing the value of long-term commitments."
 

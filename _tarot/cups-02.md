@@ -13,7 +13,7 @@ url						 : 'tarot/cards/cups-02'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/xx9pymqwqndvuwx/AAA80CxBWGWhDtWebfbkPDm-a?dl=0'
 
 meaning_light  : "Being drawn to someone. Longing for someone or something. Acting on your desires. Discovering a feeling is mutual. Doing what makes you feel good. Merging. Healing broken ties. Admitting two people feel differently about each other and moving on."
 

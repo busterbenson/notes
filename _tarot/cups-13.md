@@ -13,7 +13,7 @@ url						 : 'tarot/cards/cups-13'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/wn43gl7hgl5itso/AACSjR5Ygy_AfQ64pNoKWTtVa?dl=0'
 
 personality    : "The Queen of Cups can represent anyone who wants to convince others (Queen) to be more spiritual and empathetic (Cups). The Queen may also represent the tendency to be more reflective than active, or the need to sway the opinions of others through emotional appeals."
 

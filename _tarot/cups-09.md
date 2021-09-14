@@ -13,7 +13,7 @@ url						 : 'tarot/cards/cups-09'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/cf7c7xxtukkmhex/AAAZ_jnLr1PUWxfhEAHAYLODa?dl=0'
 
 meaning_light  : "Being delighted with your own achievements. Recognizing your own talents and abilities. Reveling in the good things life has to offer. Indulging yourself. Relaxing and unwinding. Having everything you need in order to feel complete."
 

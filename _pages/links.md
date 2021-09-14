@@ -3,8 +3,6 @@ title: "Buster Benson"
 layout: fullscreen
 ---
 
-{% assign cards = site.data.tarot.cards %}
-
 <style>
 a.button {
   -webkit-appearance: button;
@@ -51,13 +49,5 @@ a:hover.button {
 
 <p><a href='https://facebook.com/busterbenson/' class='button'>Facebook</a></p>
 
-<p><a href='javascript:goto_random_card();' class='button'>Draw a Random Tarot Card</a></p>
+<p><a href='/daily-card' class='button'>Draw a Random Tarot Card</a></p>
 
-
-<script>
-function goto_random_card() {
-  var cards = [{% for c in cards  %}'{{c}}',{% endfor %}];
-  var random_card = cards[Math.floor(Math.random() * cards.length)];
-  window.location.href = "/tarot/"+random_card;
-}
-</script>

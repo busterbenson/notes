@@ -13,7 +13,7 @@ url						 : 'tarot/cards/cups-12'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/i7y0ily5809ru8e/AADHuFFuBGPcO_0Cs1vc1h8ja?dl=0'
 
 personality    : "The Knight of Cups can represent anyone who wants to lead the way (Knight) to stronger emotions and deeper spiritual understanding (Cups). The Knight may also represent the tendency to be more emotional than reasonable, or an urgent desire to experience spiritual or emotional extremes."
 

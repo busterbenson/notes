@@ -14,7 +14,7 @@ url						 : 'tarot/cards/coins-11'
 aliases				 : ['coins-page']
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/cxkckdafefn3aa7/AAD367bqXgDgCIWm3Hm82I70a?dl=0'
 
 personality    : "Though fascinated with the physical realm, the Page of Coins may lack the experience or information needed to handle money or human sexuality with responsibility and confidence. He or she may overcompensate for this by wasting money, abusing his or her health, or over-indulging in or obsessing on various forms of physical pleasure."
 

@@ -13,7 +13,7 @@ url						 : 'tarot/cards/cups-14'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/2a59s0pq802w6gw/AAAYilh3EeuQQDlQ5l5COWF1a?dl=0'
 
 personality    : "The King of Cups can represent anyone who tends to control (King) emotional and spiritual responses (Cups). The King may also represent the tendency to be more sober than emotional, or the need to maintain order in the face of an overwhelming situation."
 

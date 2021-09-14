@@ -14,7 +14,7 @@ url						 : 'tarot/cards/coins-05'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/tq3kerffm1nr0qv/AAAHBY8OIzeWqSHFVyZ9AFcFa?dl=0'
 
 meaning_light  : "Recognizing your needs and taking action to fulfill them. Doing as much as you can do with what little you have. Admitting you need help. Embracing the aid that comes your way. Focusing on what you have versus what you don’t. Looking for the light at the end of the tunnel."
 

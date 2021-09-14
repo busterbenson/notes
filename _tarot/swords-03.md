@@ -13,7 +13,7 @@ url						 : 'tarot/cards/swords-03'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/fabqzzt50xg41x3/AAAYXrgr2SfRFxaWayCP72LNa?dl=0'
 
 meaning_light  : "Being brave enough to see things as they really are. Exercising your critical eye. Being your own best critic. Acknowledging that things don’t always turn out as planned. Moving past heartbreak to embrace a painful truth."
 

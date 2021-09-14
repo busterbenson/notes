@@ -13,7 +13,7 @@ url						 : 'tarot/cards/coins-14'
 aliases				 : ['coins-king']
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/vfd2pwq2p066bvd/AADVYlc5Ctm6_3Gr5U0dA75Fa?dl=0'
 
 personality    : "The King of Coins can represent anyone who tends to control (King) finances and physical resources (Coins). The King may also represent the tendency to be more conservative than innovative, or the need to intervene on the behalf of others with less confidence or experience."
 

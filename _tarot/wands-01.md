@@ -13,7 +13,7 @@ url						 : 'tarot/cards/wands-01'
 aliases				 : ['wands-ace']
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/bjb3640tv287f2j/AADQh92apjEoPKRSy3mcgHrwa?dl=0'
 
 meaning_light  : "Being inspired. Identifying an important goal. Being given the opportunity to do whatever you want to do. Giving or receiving direction. Seeing a solution. Creating something new. Being aroused, sexually or creatively."
 

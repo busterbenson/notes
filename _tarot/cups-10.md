@@ -13,7 +13,7 @@ url						 : 'tarot/cards/cups-10'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/3h9vg8ynjellyng/AACiK2smeGxQRz_nmLIOQHvMa?dl=0'
 
 meaning_light  : "Having more than you ever dreamed. Being deeply thankful for all you’ve been given. Recognizing the Hand of God in the gifts the Universe brings your way. Experiencing transcendent joy. Achieving domestic bliss."
 

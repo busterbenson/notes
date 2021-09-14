@@ -13,7 +13,7 @@ url						 : 'tarot/cards/coins-04'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/1j8d4s7p222zxcx/AAAVvmgVPto-D_mO-zFW3TFpa?dl=0'
 
 meaning_light  : "Putting the long-term ahead of the short term. Practicing self-restraint. Saving for a rainy day. Fasting as part of a spiritual practice. Abstaining from sex as a way of honoring a spiritual tradition or personal promise. Putting money away into savings. Going to the gym."
 

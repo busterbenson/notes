@@ -13,7 +13,7 @@ url						 : 'tarot/cards/coins-07'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/u6w4fmkdbcz1dou/AAA7YN4DfMUFEgEqjL3vaJqja?dl=0'
 
 meaning_light  : "Measuring progress toward your goal. Looking at results with an eye toward improving performance. Asking, “How happy am I?” Coming up with ideas for improving your health or prosperity. Deciding it’s time for a change. Expressing an honest opinion."
 

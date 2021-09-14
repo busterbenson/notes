@@ -13,7 +13,7 @@ url						 : 'tarot/cards/coins-03'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/7934d1g4wyga1n8/AACTMmE7L-VgLEtnKpk7xBJCa?dl=0'
 
 meaning_light  : "Finishing a project. Setting and meeting standards. Performing according to specifications. Making something others value. Creating something new. Doing your part in a group project. Delivering exactly what others have asked for."
 

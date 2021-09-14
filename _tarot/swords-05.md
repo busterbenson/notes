@@ -13,7 +13,7 @@ url						 : 'tarot/cards/swords-05'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/s4tybxac3jvbzo8/AAARvBXACQWCSj25qcT_JVg8a?dl=0'
 
 meaning_light  : "Acting in your own best interest. Choosing to stand up for yourself. Not backing down from disagreement and discord. Taking a stand. Refusing to go along with an unethical plan. Knowing when to bend the rules."
 

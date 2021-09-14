@@ -13,7 +13,7 @@ url						 : 'tarot/cards/wands-03'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/c9zie8hdxhzvan6/AAAkR5GQYWf1BN3SD3yToauRa?dl=0'
 
 meaning_light  : "Putting a plan into motion. Taking that critical first step. Making good things happen. Going beyond your limits. Blazing new trails. Hitting the ground running. Seeing your plans come to fruition."
 

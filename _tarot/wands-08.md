@@ -13,7 +13,7 @@ url						 : 'tarot/cards/wands-08'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/6jp77ghrshq7y3c/AAANbcqIhgE9ugr25_6whwkva?dl=0'
 
 meaning_light  : "Taking swift action. Moving forward with a plan as quickly as possible. Energizing yourself. Adapting to sudden changes. Taking setbacks in stride. Embracing the idea that nothing stays the same forever. Reacting quickly and appropriately to unforeseen problems."
 

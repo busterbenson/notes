@@ -13,7 +13,7 @@ url						 : 'tarot/cards/wands-06'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/93jq3swxhwirep0/AACajYp6FbMWALj7FTPl-m3ya?dl=0'
 
 meaning_light  : "Outperforming your peers. Winning a competition. Being recognized as a capable person. Having your “moment in the spotlight.” Being cheered on by the crowd. Getting an award. Earning the admiration of others. Telling someone, “Good job!”"
 

@@ -13,7 +13,7 @@ url						 : 'tarot/cards/swords-04'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/ozbcy70hqz8qv85/AAAX3BZvPI0sqI18_zeRkkAMa?dl=0'
 
 meaning_light  : "Thinking over your plans before putting them into action. Pausing to meditate or clear your mind. Taking time to understand someone or something before criticizing it. Resting. Occupying your thoughts with a healthy distraction."
 

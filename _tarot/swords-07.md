@@ -13,7 +13,7 @@ url						 : 'tarot/cards/swords-07'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/vels7yb5vh5h36i/AAARBp3blooBfKf1Z5Pwcy7Ra?dl=0'
 
 meaning_light  : "Refusing to do something dishonest, even when there’s no chance of ever being caught. Handling a difficult situation with finesse. Pointing out assumptions. Acting ethically in public and in private. Living a life that is beyond reproach."
 

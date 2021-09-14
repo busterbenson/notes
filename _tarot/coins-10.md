@@ -13,7 +13,7 @@ url						 : 'tarot/cards/coins-10'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/rmth8kr603dynh0/AADYNAaRBGwmMsbf8RDtH9Psa?dl=0'
 
 meaning_light  : "Celebrating your physical and financial blessings. Realizing how lucky or how blessed you are. Being satisfied with your physical and financial achievements. Taking best advantage of “times of plenty.” Enjoying a feast. Showering friends or family with gifts."
 

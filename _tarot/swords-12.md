@@ -14,7 +14,7 @@ url						 : 'tarot/cards/swords-12'
 aliases				 : ['swords-knight']
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/pv62nlckwdbkl6v/AABMyfnqAGdCMwRqEfsQ2GR3a?dl=0'
 
 personality    : "The Knight of Swords can represent anyone who wants to lead the way (Knight) to greater knowledge and mental clarity (Swords). The Knight may also represent the tendency to be more intellectual than empathetic, or a compulsive desire to analyze or lecture others."
 

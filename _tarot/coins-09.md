@@ -14,7 +14,7 @@ url						 : 'tarot/cards/coins-09'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/rplox7oxv7mqtlp/AAA8fbo2sTrJuMwUQWZnysc2a?dl=0'
 
 meaning_light  : "Investing time in learning or teaching a difficult task. Restraining yourself from physical or financial extremes. Making sacrifices as a way of achieving larger goals. Breaking a complex task down into simple steps. Wanting what you have. Knowing the difference between needs and wants."
 

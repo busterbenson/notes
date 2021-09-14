@@ -13,7 +13,7 @@ url						 : 'tarot/cards/swords-06'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/jytwpixnsng2e8v/AAC1tgrOsUF8Atq3xfdZj1OFa?dl=0'
 
 meaning_light  : "Making the best of a bad situation. Recovering from defeat. Resetting expectations. Making allowances for unexpected circumstances. Helping others who find themselves in dire circumstances. Changing the way you see the world. Broadening your perspective through study or travel."
 

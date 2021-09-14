@@ -13,7 +13,7 @@ url						 : 'tarot/cards/cups-03'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/0503leeoviqoc87/AABJkMaMnPik6IG4zh1UmIFra?dl=0'
 
 meaning_light  : "Celebrating your feelings or connections with others. Expressing joy through song, dance, or physical affection. Working together with others who share your feelings. Performing acts of service as a way of saying, “I love you.” Embracing unconventional romantic arrangements."
 

@@ -13,7 +13,7 @@ url						 : 'tarot/cards/coins-13'
 aliases				 : ['coins-queen']
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/zvp8judzsmjgmkc/AABtuOKCLLtSYXwP_I83jExJa?dl=0'
 
 personality    : "The Queen of Coins can represent anyone who wants to encourage others (Queen) to appreciate the pleasures of the physical world (Coins). The Queen may also represent the tendency to be more materially-minded than spiritually-minded, or the need to pursue personal comfort at almost any cost."
 

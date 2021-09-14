@@ -13,7 +13,7 @@ url						 : 'tarot/cards/cups-06'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/3kll2mvjzkcmcdz/AAD0tgBXND7wZGK2ehoFujCaa?dl=0'
 
 meaning_light  : "Donating your time and talents to others. Taking satisfaction in knowing how your efforts will aid others. Creating a “win-win” scenario. Giving even when you know repayment is not possible. Being motivated to do a good deed."
 

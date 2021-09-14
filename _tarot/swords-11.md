@@ -13,7 +13,7 @@ url						 : 'tarot/cards/swords-11'
 aliases				 : ['swords-page']
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/pv4ek8kklfjluvw/AACcYOKDRd-TpjrbUrwZ6TYia?dl=0'
 
 personality    : "The Page of Swords can represent anyone who wants to (or needs to) learn (Page) more about intellectual pursuits, academic subjects, or good decision-making (Swords). Though eager to make a good impression, The Page may lack the experience or information needed to handle studies or assignments with responsibility and confidence. He or she may overcompensate for this with bluster, exaggerated credentials, or snap judgments."
 

@@ -13,7 +13,7 @@ url						 : 'tarot/cards/swords-10'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/p10jgmlwtneccks/AADOHwZm-Z37LHXvYlcQ3TO6a?dl=0'
 
 meaning_light  : "Seeing the signs that you’ve reached your limits. Paying attention to what your body is trying to tell you. Giving in to the need for rest and renewal. Acknowledging that you’ve hit bottom. Committing to a turnaround. Knowing the worst is over."
 

@@ -14,7 +14,7 @@ url						 : 'tarot/cards/coins-02'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/0d2q8o5kcmyzn6c/AAAxUVO8_t5wMY74zthmZqyza?dl=0'
 
 meaning_light  : "Weighing options. Comparing prices. Determining the value of one option over another. Juggling resources to make ends meet. Making difficult choices based on what’s best for your body or your bankbook. Looking at the bottom line. Asking for a second opinion on health issues."
 

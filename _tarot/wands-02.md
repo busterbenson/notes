@@ -13,7 +13,7 @@ url						 : 'tarot/cards/wands-02'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/grljjxi0wpqr1rg/AAAWrc-0LwzoogK3yCn8ZlzTa?dl=0'
 
 meaning_light  : "Having a choice. Offering or being offered an option. Seeing the value of another person’s approach. Understanding there’s more than one way to “skin a cat.” Successfully doing more than one thing at a time. Being empowered to make a choice."
 

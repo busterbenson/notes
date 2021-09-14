@@ -13,7 +13,7 @@ url						 : 'tarot/cards/wands-05'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/0oeeq93adc7fe7b/AAAiSkGZpizg-_P9JsgqBiTra?dl=0'
 
 meaning_light  : "Calmly expressing a dissenting opinion. Allowing someone to use his or her own methods to get a job done. Opening the floor for discussion or debate. Comparing progress made so far to standards set earlier."
 

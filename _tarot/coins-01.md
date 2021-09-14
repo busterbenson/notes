@@ -12,7 +12,7 @@ url						 : 'tarot/cards/coins-01'
 aliases				 : ['coins-ace']
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/cgdwm499hiitv1i/AABrG7wfGMtB9W5Q9DWVKwWFa?dl=0'
 
 meaning_light  : "Outlining a plan for achieving prosperity. Becoming aware of opportunities to improve income or health. Realizing you have everything you need. Appreciating everything the Universe has given you. Receiving the perfect gift at the perfect time."
 

@@ -13,7 +13,7 @@ url						 : 'tarot/cards/coins-08'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/v8yoxuoht2aftzb/AABxmg0aueuy64yNUlnKs0Cma?dl=0'
 
 meaning_light  : "Doing your best. Bringing enthusiasm and zeal to your work. Making an effort to be the best you can be. Finding the work that is right for you. Taking care of the small details. Becoming a finely skilled craftsperson. Building something with your hands. Making a handmade gift."
 

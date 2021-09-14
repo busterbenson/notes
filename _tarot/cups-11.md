@@ -13,7 +13,7 @@ url						 : 'tarot/cards/cups-11'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/6772thvq6ta6znf/AADW_1gamXeA0wFNI-1ckLbIa?dl=0'
 
 personality    : "The Page of Wands can represent anyone who wants to or needs to learn (Page) more about love or spirituality (Cups). Though eager to make a good impression, The Page may lack the experience or information needed to handle new love or new faith with grace and confidence. He or she may overcompensate for this with over-the-top gestures and fanatical zeal."
 

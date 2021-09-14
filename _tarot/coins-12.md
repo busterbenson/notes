@@ -13,7 +13,7 @@ url						 : 'tarot/cards/coins-12'
 aliases				 : ['coins-knight']
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/tx5nh1of0r40zm7/AADelcGNC8YC_AE6gn9Fw2ROa?dl=0'
 
 personality    : "The Knight of Coins can represent anyone who wants to lead the way (Knight) to greater physical and financial success (Coins). The Knight may also represent the tendency to be more cautious than adventuresome, or a compulsive desire to avoid risk by obsessing on tiny logistical or physical details."
 

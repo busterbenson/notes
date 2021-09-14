@@ -13,7 +13,7 @@ url						 : 'tarot/cards/wands-07'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/w7zs6bxvql8nuge/AADwP8o0WxKJc-2C8IAqZL_Ra?dl=0'
 
 meaning_light  : "Refusing to be silenced through fear or intimidation. Continuing a fight against all odds. Being fierce. Defending yourself against physical and emotional attacks. Refusing to put up with abuse. Clinging to your values despite all pressure to abandon them."
 

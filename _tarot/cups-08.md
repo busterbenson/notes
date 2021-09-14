@@ -13,7 +13,7 @@ url						 : 'tarot/cards/cups-08'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/nthucn7lqcqg79c/AABaXNKxLbqtAx6u-nDfLnK2a?dl=0'
 
 meaning_light  : "Wanting something better. Blazing your own trail. Realizing there must be more to life. Leaving an unhealthy situation behind. Starting your own business. Going on a retreat. Seeking the “still, small voice.”"
 

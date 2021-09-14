@@ -13,7 +13,7 @@ url						 : 'tarot/cards/swords-14'
 aliases				 : ['swords-king']
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/b452s3gp8l4xz1e/AAAbl3NUCXpp979EdawhfPAWa?dl=0'
 
 personality    : "The King of Swords can represent anyone who tends to control or seek to control (King) intellectual and verbal responses (Swords). The King may also represent the tendency to be more blunt than diplomatic, or the need to bring something to a conclusion once and for all."
 

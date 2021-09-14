@@ -13,7 +13,7 @@ url						 : 'tarot/cards/wands-14'
 aliases				 : ['wands-king']
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/a08sm2jqlyqtvpz/AAANxe8BiskeN0sv9mKVuoQDa?dl=0'
 
 personality    : "The King of Wands can represent anyone who wants to oversee or take control of (King) a situation (Wands), especially in academic, romantic, and professional areas of life. The King may also represent the tendency to be more authoritative than cooperative or the need to control the actions of others."
 

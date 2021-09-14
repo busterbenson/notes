@@ -13,7 +13,7 @@ url						 : 'tarot/cards/cups-07'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/dibpjjc62cc6lv7/AABX2tHKaXy7J6-UCxDWKbcIa?dl=0'
 
 meaning_light  : "Motivating yourself with images of future success. Using visualization to encourage progress. Taking an imaginative or creative approach to problem solving. Making dreams come true. Gleaning insight from personal visions."
 

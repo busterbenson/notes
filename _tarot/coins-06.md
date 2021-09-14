@@ -13,7 +13,7 @@ url						 : 'tarot/cards/coins-06'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/7zotfhyopsuimdk/AADElNfDSUfCjlgOaOxjaM63a?dl=0'
 
 meaning_light  : "Giving time, money, or effort to a charity. Taking part in a group effort. Lending your resources to others without expecting anything in return. Making sure everyone is treated equally. Working together toward a common goal. Redistributing wealth, time, or attention. Tithing. Sharing credit for your success."
 

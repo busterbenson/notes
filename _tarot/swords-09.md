@@ -14,7 +14,7 @@ url						 : 'tarot/cards/swords-09'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/hk1fyrfopeumdx4/AAAx3TPhoUEsIQaFN9cI3oXoa?dl=0'
 
 meaning_light  : "Refusing to worry about what you cannot control. Rejecting anxiety. Judging your own performance with kindness and gentleness. Using meditation to quiet a troubled mind. Confronting nightmares and fears. Drawing a conclusion and putting an issue out of your mind."
 

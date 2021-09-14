@@ -13,7 +13,7 @@ url						 : 'tarot/cards/cups-01'
 aliases				 : ['cups-ace']
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/96b9h3eykwn84fk/AABkDJEXxGmD91Smljpn1p8ta?dl=0'
 
 meaning_light  : "Trusting your feelings. Opening yourself to spirit. Accepting and returning affection. Getting in touch with what motivates you. Taking advantage of an opportunity to express love to others. Listening to the still, small voice."
 

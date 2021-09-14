@@ -13,7 +13,7 @@ url						 : 'tarot/cards/swords-01'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/xzrnhx0y5ude02d/AABz1CXmtlWceYcV_5KOxzZ9a?dl=0'
 
 meaning_light  : "Making objective decisions. Applying logic. Reasoning your way out of a difficult situation. Solving puzzles. Thinking things through. Emphasizing the facts. Clearing your mind. Seeking clarity."
 

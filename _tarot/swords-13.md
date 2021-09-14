@@ -14,7 +14,7 @@ url						 : 'tarot/cards/swords-13'
 aliases				 : ['swords-queen']
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/v9pn81tghcscvq2/AAAE4tC4HUqyhlG50C2r5Gfoa?dl=0'
 
 personality    : "The Queen of Swords can represent anyone who wants to encourage others (Queen) to be brighter and more communicative (Swords). The Queen may also represent the tendency to be more tactful than objective, or the need to express information more politely than precisely."
 

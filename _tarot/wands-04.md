@@ -13,7 +13,7 @@ url						 : 'tarot/cards/wands-04'
 aliases				 : []
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/wl5qou67ucxwtsh/AABIWW4QracD18UwgakFHn4Va?dl=0'
 
 meaning_light  : "Sharing in a great celebration. Sharing in a communal sense of achievement and success. Preparing for a party. Working together toward a common goal. Giving or winning awards."
 

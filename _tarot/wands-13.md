@@ -13,7 +13,7 @@ url						 : 'tarot/cards/wands-13'
 aliases				 : ['wands-queen']
 
 # password: 'foolish journey'
-dropbox				 : ''
+dropbox				 : 'https://www.dropbox.com/sh/mjpb3jylgct84a0/AAAao6P3YKilq9tXxtfiUFlJa?dl=0'
 
 personality    : "The Queen of Wands can represent anyone who wants to convince others (Queen) to pursue a common goal (Wands), especially in academic, romantic, and professional areas of life. The Queen may also represent the tendency to be more manipulative than direct or the need to capture the attention of others."
 
