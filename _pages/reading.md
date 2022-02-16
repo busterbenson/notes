@@ -18,6 +18,7 @@ layout: fullscreen
         });
     return result;
 	}
+	
 	console.log(findGetParameter('card1'));
 	console.log(findGetParameter('card2'));
 	console.log(findGetParameter('card3'));
