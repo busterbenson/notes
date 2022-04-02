@@ -584,7 +584,8 @@ fish:
 
 
 five-figures:
-  name: In RWS-inspired decks, five figures on the 5 of Wands confront each other. Are they fighting? Are they dancing? Are three watching while the other two battle to the death? Waite claimed the youths could be engaged in either sport or strife -- or even a “sham fight.” It’s worth asking whether or not your conflict, represented by this card, is the problem or just a symptom of something else in the group dynamic.
+  name: Five Figures
+  desc: "In RWS-inspired decks, five figures on the 5 of Wands confront each other. Are they fighting? Are they dancing? Are three watching while the other two battle to the death? Waite claimed the youths could be engaged in either sport or strife -- or even a “sham fight.” It’s worth asking whether or not your conflict, represented by this card, is the problem or just a symptom of something else in the group dynamic."
   cards: 
     - wands-05
 
