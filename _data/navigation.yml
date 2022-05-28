@@ -5,12 +5,10 @@ links:
 - title: The Piles
   url: /piles
   layout: piles
-- title: Rough Notes
-  url: https://paper.dropbox.com/doc/Rough-Notes-Loosely-Organized--A3O1lfnu6VP~J82PPM7XXg8HAQ-IGamgYXatsECbpKVEuBiG
-- title: Yearly Reviews
+- title: Annual Reviews
   url: /pile/year-in-review
   tag: year-in-review
-- title: Life in Weeks
+- title: My Life in Weeks
   url: /life-in-weeks
   layout: life-in-weeks
 - title: Codex Vitae
