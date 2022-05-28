@@ -23,7 +23,7 @@ This is my 10th year of yearly birthday reflections. Here are the previous 9:
 
 It is also the 7th anniversary of my **8:36pm project** ([see the story here](http://www.geekwire.com/2012/day-rest-life/)). This year I took a photo at 8:36pm on only [310 out of the 365 days](https://www.flickr.com/search/?user_id=35034346886%40N01&sort=interestingness-desc&advanced=1&text=8%3A36%20OR%208%3A36pm&view_all=1&min_taken_date=1401346800&max_taken_date=1432882799), missing 55, for a fairly low 85% success rate. Over the 7 years in all I’ve taken a photo on 2,402 of the 2,562 days, for an overall success rate of 94%.
 
-Life by weeks
+### Life by weeks
 
 Life moves fast, but it also moves slow. I have a chart on [busterbenson.com](http://busterbenson.com/) which maps out my life by weeks: every square is a week of my life, and every row is a year.
 

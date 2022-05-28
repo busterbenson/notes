@@ -86,6 +86,11 @@
     category: "work"
     tags: ["technology"]
 
+'2000-06-17':
+  - name: "Kharis and I get married."
+    category: "relationships"
+    tags: ["kharis"]
+
 '2001-09-11':
   - name: "September 11th happens."
     category: "world"
@@ -106,6 +111,12 @@
     category: "writing"
     link: "https://amzn.to/2GJ8ASw"
     tags: ["man versus himself"]
+
+'2004-09-13':
+  - name: "Kharis and I officially divorced."
+    desc: "Separated in February 2004."
+    category: "relationships"
+    tags: ["kharis"]
 
 '2004-09-01':
   - name: "The Robot Co-op is founded."
@@ -138,12 +149,12 @@
     tags: ["mcleod residence"]
 
   - name: "I meet Kellianne."
-    category: "family"
+    category: "relationships"
     tags: ["kellianne"]
 
 '2007-03-04':
   - name: "First kiss with Kellianne."
-    category: "family"
+    category: "relationships"
     tags: ["kellianne"]
 
 '2007-05-28':
@@ -170,7 +181,7 @@
 
 '2008-10-04':
   - name: "❤️ Kellianne and I get married."
-    category: "family"
+    category: "relationships"
     tags: ["kellianne"]
 
 '2008-10-31':
@@ -255,8 +266,8 @@
 
 '2013-01-04':
   - name: "🚚 Kellianne, Niko, and I move to Berkeley, California."
-    category: "family"
-    tags: ["family", "home"]
+    category: "relationships"
+    tags: ["kellianne", "home"]
 
 '2013-05-28':
   - name: "🎂 I turn 37. More kiloslogs."
@@ -378,7 +389,7 @@
   - name: "😱 Why Are We Yelling? is published"
     category: "writing"
     tags: ["why are we yelling?"]
-    link: "/book"
+    link: "https://busterbenson.com/whyareweyelling/"
 
 '2020-03-14':
   - name: "🏠 First day of shelter-in-place for COVID-19"
@@ -415,6 +426,12 @@
     category: "birthday"
     link: "https://buster.medium.com/45-year-of-reconstellation-38f7c0917c1b"
     tags: ["annual review"]
+
+'2022-04-29':
+  - name: "Kellianne and I officially divorced."
+    desc: "Separated in June of 2019."
+    category: "relatiohships"
+    tags: ["kellianne"]
 
 '2052-08-05': 
   - name: "☠️ My life expectancy expiration date."
