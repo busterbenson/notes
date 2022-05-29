@@ -31,7 +31,7 @@ In my **Life by Weeks** chart on busterbenson.com, two events stood out from the
 
 ### Last year’s motto: mind the loops
 
-The last year really was a lot about [minding the loops](/2016/05/28/mind-the-loop). The now see feedback loops, and systems, and cycles everywhere I look.
+The last year really was a lot about [minding the loops](/2016/05/28/mind-the-loop). I now see feedback loops, and systems, and cycles everywhere I look.
 
 * **In product development:** What’s the right way to empower a messaging, communication, and workflow ecosystem to build businesses on other businesses? A system like this needs aligned incentives amongst a lot of different individuals, consistency, and trust.
 * **In management:** How can I mentor and manage people at different parts of their careers? A career is a learning, testing, and iterating system with many different phases, breaks, setbacks, opportunities.
