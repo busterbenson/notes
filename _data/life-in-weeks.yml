@@ -434,6 +434,12 @@
     category: "relatiohships"
     tags: ["pandemic"]
 
+'2022-05-28':
+  - name: "🎂 I turn 46: A Blagenflorble Heart"
+    category: "birthday"
+    link: "https://buster.medium.com/46-a-blagenflorble-heart-31bc2a992a83"
+    tags: ["annual review"]
+
 '2056-09-12': 
   - name: "☠️ My life expectancy expiration date"
     category: "self"
