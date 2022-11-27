@@ -7,6 +7,8 @@ gem 'jekyll-target-blank'
 gem 'jekyll-twitter-plugin'
 gem 'jekyll-srcset'
 gem 'jekyll-email-protect'
+gem 'jekyll-redirect-from'
+
 
 group :jekyll_plugins do
   gem "jekyll-youtube"

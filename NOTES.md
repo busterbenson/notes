@@ -1,6 +1,7 @@
 # Cool Tips
 
 ## Start the server
+`rvm use 2.6.3` (if `rvm list` shows 2.3.4 is being used)
 `bundle exec jekyll serve --incremental`
 
 ## Working with images (using webp)
