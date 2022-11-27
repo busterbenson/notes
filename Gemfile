@@ -1,4 +1,5 @@
 source "https://rubygems.org"
+gem 'rmagick'
 gem 'jekyll'
 gem 'jekyll-paginate'
 gem 'jekyll-seo-tag'
