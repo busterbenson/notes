@@ -599,6 +599,7 @@
     aliases: ['self', 'self-improvement']
     children: 
       - 'coaching'
+      - 'counseling'
       - 'mental-health'
       - 'mindfulness'
       - 'productivity'
@@ -612,6 +613,18 @@
       - 'dogs'
       - 'dog-training'
       - 'pet-care'
+
+  'cats':
+    name: 'Cats'
+
+  'dogs':
+    name: 'Dogs'
+
+  'dog-training':
+    name: 'Dog Training'
+
+  'pet-care':
+    name: 'Pet Care'
 
   'philosophy': 
     name: 'Philosophy'
@@ -700,6 +713,8 @@
   'therapy':
     name: 'Therapy'
 
+  'counseling':
+    name: 'Counseling'
 
 
 

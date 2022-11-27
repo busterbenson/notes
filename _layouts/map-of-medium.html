@@ -20,19 +20,19 @@ max_width: false
 
 			{% for tag in map['primary'] %}
 				<p>
-					<h2><a href="https://medium.com/tag/{{tag}}" target="map">{{map['list'][tag]['name']}}</a></h2>
+					<h2><a href="https://medium.com/tag/{{tag}}/top/year" target="map">{{map['list'][tag]['name']}}</a></h2>
 					{% if map['list'][tag]['children'] %}
 						<ul style="padding-top: 0; paddings-bottom: 1em; padding-left: 20px;">
 						{% for child_tag in map['list'][tag]['children'] %}
 							<li>
 								<strong>
-									<a href="https://medium.com/tag/{{child_tag}}" target="map">
+									<a href="https://medium.com/tag/{{child_tag}}/top/year" target="map">
 									{{map['list'][child_tag]['name']}}</a>
 								</strong>
 								{% if map['list'][child_tag]['children'] %}
 									<div class="small" style="margin-bottom: 1em;">
 										{% for gchild_tag in map['list'][child_tag]['children'] %}
-											<a href="https://medium.com/tag/{{gchild_tag}}" target="map">{{map['list'][gchild_tag]['name']}}</a> 
+											<a href="https://medium.com/tag/{{gchild_tag}}/top/year" target="map">{{map['list'][gchild_tag]['name']}}</a> 
 										{% endfor %}
 									</div>
 								{% endif %}
