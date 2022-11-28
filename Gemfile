@@ -7,6 +7,7 @@ gem 'jekyll-sitemap'
 gem 'jekyll-target-blank'
 gem 'jekyll-twitter-plugin'
 gem 'jekyll-srcset'
+gem 'jekyll-youtube'
 gem 'jekyll-email-protect'
 gem 'jekyll-redirect-from'
 
