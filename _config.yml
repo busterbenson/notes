@@ -32,6 +32,7 @@ target-blank:
   add_css_classes: external-link
 
 plugins:
+  - rmagick
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap

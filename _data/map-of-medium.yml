@@ -37,7 +37,7 @@
       - 'writing'
 
   'society': 
-    name: 'Society & Social Issues'
+    name: 'Society'
     aliases: ['culture']
     children:
       - 'beauty'
@@ -48,17 +48,15 @@
       - 'education'
       - 'equality'
       - 'fashion'
-      - 'future'
-      - 'gun-control'
-      - 'immigration'
       - 'investing'
-      - 'justice'
       - 'language'
+      - 'law'
       - 'leadership'
       - 'money'
       - 'parenting'
       - 'pets'
       - 'philosophy'
+      - 'politics'
       - 'psychology'
       - 'race'
       - 'religion'
@@ -339,9 +337,6 @@
   'inflation':
     name: 'Inflation'
 
-  'elections': 
-    name: 'Elections'
-
   'equality': 
     name: 'Equality'
     children: 
@@ -442,8 +437,8 @@
   'womens-rights':
     name: "Women's Rights"
 
-  'future': 
-    name: 'Future'
+  'innovation':
+    name: 'Innovation'
 
   'gun-control': 
     name: 'Gun Control'
@@ -461,8 +456,21 @@
       - 'stock-market'
       - 'trading'
 
-  'justice': 
+  'law': 
+    name: 'Law'
+    children:
+      - 'justice'
+      - 'criminal-justice'
+      - 'social-justice'
+
+  'justice':
     name: 'Justice'
+
+  'criminal-justice':
+    name: 'Criminal Justice'
+
+  'social-justice':
+    name: 'Social Justice'
 
   'language': 
     name: 'Language'
@@ -520,6 +528,8 @@
   'twitter':
     name: 'Twitter'
 
+  'urbanism':
+    name: 'Urbanism'
 
 
 
@@ -640,8 +650,8 @@
   'life-lessons':
     name: 'Life Lessons'
     children:
-      - 'advice'
       - 'death'
+      - 'death-and-dying'
       - 'failure'
       - 'grief'
       - 'loss'
@@ -649,6 +659,9 @@
 
   'death':
     name: 'Death'
+
+  'death-and-dying':
+    name: 'Death And Dying'
 
   'failure':
     name: 'Failure'
@@ -1103,9 +1116,9 @@
   'news': 
     name: 'News'
     children: 
+      - 'innovation'
       - 'journalism'
       - 'misinformation'
-      - 'politics'
       - 'true-crime'
 
   'journalism':
@@ -1116,6 +1129,21 @@
 
   'politics': 
     name: 'Politics'
+    children:
+      - 'democracy'
+      - 'elections'
+      - 'government'
+      - 'gun-control'
+      - 'immigration'
+
+  'democracy':
+    - name: 'Democracy'
+
+  'elections': 
+    name: 'Elections'
+
+  'government':
+    - name: 'Government'
 
   'true-crime': 
     name: 'True Crime'
