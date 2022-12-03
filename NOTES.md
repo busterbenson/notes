@@ -3,7 +3,7 @@
 ## Build the site
 `bundle exec jekyll build`
 
-## Start the server
+## Start the server 
 `rvm use 2.6.3` (if `rvm list` shows 2.3.4 is being used)
 `bundle exec jekyll serve --incremental`
 
