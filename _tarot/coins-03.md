@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Expression, production, work, contribution"
 alt_names			 : ['Works', 'Work']
-images				 : ['/assets/images/tarot/rws/rw-coins-03.jpg']
+images				 : ['assets/images/tarot/rws/rw-coins-03.jpg']
 keywords			 : ['expression', 'production', 'work', 'contribution']
 url						 : 'tarot/cards/coins-03'
 aliases				 : []

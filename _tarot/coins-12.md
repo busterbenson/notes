@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Caution, focus, realism, invention"
 alt_names			 : ['Prince of Disks', 'Son of Roots']
-images				 : ['/assets/images/tarot/rws/rw-coins-12.jpg']
+images				 : ['assets/images/tarot/rws/rw-coins-12.jpg']
 keywords			 : ['caution', 'focus', 'realism', 'invention']
 url						 : 'tarot/cards/coins-12'
 aliases				 : ['coins-knight']

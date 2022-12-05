@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Authority, regulation, direction, structure"
 alt_names			 : []
-images				 : ['/assets/images/tarot/rws/rw-major-04.jpg']
+images				 : ['assets/images/tarot/rws/rw-major-04.jpg']
 keywords			 : ['authority', 'regulation', 'direction', 'structure']
 url						 : 'tarot/cards/major-04'
 aliases				 : ['emporer', 'the-emporer']

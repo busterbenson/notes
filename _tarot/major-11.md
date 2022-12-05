@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Balance, law, fairness, objectivity"
 alt_names			 : ['Adjustment']
-images				 : ['/assets/images/tarot/rws/rw-major-11.jpg']
+images				 : ['assets/images/tarot/rws/rw-major-11.jpg']
 keywords			 : ['balance', 'law', 'fairness', 'objectivity']
 url						 : 'tarot/cards/major-11'
 aliases				 : ['justice']

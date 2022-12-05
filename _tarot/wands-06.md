@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Victory, achievement, success, triumph"
 alt_names			 : ['Victory']
-images				 : ['/assets/images/tarot/rws/rw-wands-06.jpg']
+images				 : ['assets/images/tarot/rws/rw-wands-06.jpg']
 keywords			 : ['victory', 'achievement', 'success', 'triumph']
 url						 : 'tarot/cards/wands-06'
 aliases				 : []

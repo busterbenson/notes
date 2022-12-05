@@ -46,7 +46,15 @@ layout: fullscreen
         <div class="col-12 col-sm-3 mb-5">
           <a href="/tarot/{{ page.token }}">
             {% if page.images %}
-              {% include img.html src=page.images.first alt=page.title class="tarot-card" %}
+              <div class='tarot-card'>
+                {% responsive_image_block %}
+                  path: {{ page.images.first }}
+                  {% if title %}
+                    alt: {{ page.title }}
+                    title: {{ page.title }}
+                  {% endif %}
+                {% endresponsive_image_block %}
+              </div>
             {% endif %}
           </a>
           {% if page.dropbox and page.dropbox != '' %}

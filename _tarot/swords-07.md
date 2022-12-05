@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Dishonesty, presumption, sneakiness, assumptions"
 alt_names			 : ['Futility', 'Guile']
-images				 : ['/assets/images/tarot/rws/rw-swords-07.jpg']
+images				 : ['assets/images/tarot/rws/rw-swords-07.jpg']
 keywords			 : ['dishonesty', 'presumption', 'sneakiness', 'assumptions']
 url						 : 'tarot/cards/swords-07'
 aliases				 : []

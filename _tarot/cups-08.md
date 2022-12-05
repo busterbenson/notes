@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Longing, dissatisfaction, quest, departure, withdrawal"
 alt_names			 : ['Indolence', 'Departure']
-images				 : ['/assets/images/tarot/rws/rw-cups-08.jpg']
+images				 : ['assets/images/tarot/rws/rw-cups-08.jpg']
 keywords			 : ['longing', 'dissatisfaction', 'quest', 'departure', 'withdrawal']
 url						 : 'tarot/cards/cups-08'
 aliases				 : []

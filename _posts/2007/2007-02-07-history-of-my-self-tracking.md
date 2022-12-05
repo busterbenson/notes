@@ -15,7 +15,7 @@ I have been interested in self-tracking ever since I started posting links to th
 
 Later, around 2005, I started a more general Morale-O-Meter that allowed me to rate my morale each day from 1-10.  In addition, I also counted the number of alcoholic drinks and caffienated drinks I had, the number of hours of sleep, and my general “health” (1-10, 10 being healthiest).  It created a graph that looked something like this:
 
-{% include img.html src='/assets/images/pieces/history-of-my-self-tracking-1.png' alt='Morale-o-meter' width='600' %}
+{% responsive_image path:'assets/images/pieces/history-of-my-self-tracking-1.png' alt:'Morale-o-meter' width:'600' %}
 
 The coincidence of this graph was that all of the inputs could be displayed on the same 1-10 scale, and so it tended to make it easy to believe that the inputs could in some way be correlated.  After doing this for about 3 years though, except for minor correlations between number of alcoholic drinks and amount of sleep, there were no deep insights.
 
@@ -51,7 +51,7 @@ At the same time, I’m working on my own personal fitness function in a Google 
 
 This then all gets added up on a weekly basis and graphed into something like this:
 
-{% include img.html src='/assets/images/pieces/history-of-my-self-tracking-2.png' alt='Morale-o-meter' width='600' %}
+{% responsive_image path:'assets/images/pieces/history-of-my-self-tracking-2.png' alt:'Morale-o-meter' width:'600' %}
 
 I’m still adjusting it week by week, and hope that eventually it will be possible to actually trust the output of this fitness function to relate my true fitness in life.  The goal being a well-balanced, healthy, creative life shared with family and friends.
 

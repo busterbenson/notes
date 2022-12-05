@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Enlightenment, sacrifice, perspective, suspension, reversals"
 alt_names			 : ['The Hanged One']
-images				 : ['/assets/images/tarot/rws/rw-major-12.jpg']
+images				 : ['assets/images/tarot/rws/rw-major-12.jpg']
 keywords			 : ['enlightenment', 'sacrifice', 'perspective', 'suspension', 'reversals']
 url						 : 'tarot/cards/major-12'
 aliases				 : ['the-hanging-man', 'hanging-man']

@@ -6,7 +6,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Health, wealth, practicality, receiving"
 alt_names			 : ['Enchantment']
-images 				 : ['/assets/images/tarot/rws/rw-coins-01.jpg']
+images 				 : ['assets/images/tarot/rws/rw-coins-01.jpg']
 keywords			 : ['health', 'wealth', 'practicality', 'receiving']
 url						 : 'tarot/cards/coins-01'
 aliases				 : ['coins-ace']

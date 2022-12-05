@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Joy, brilliance, validation, attention, energy"
 alt_names			 : []
-images				 : ['/assets/images/tarot/rws/rw-major-19.jpg']
+images				 : ['assets/images/tarot/rws/rw-major-19.jpg']
 keywords			 : []
 url						 : 'tarot/cards/major-19'
 aliases				 : ['sun', 'the-sun']

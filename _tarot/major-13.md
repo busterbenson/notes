@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Ending, conclusion, transition, passage, departure"
 alt_names			 : []
-images				 : ['/assets/images/tarot/rws/rw-major-13.jpg']
+images				 : ['assets/images/tarot/rws/rw-major-13.jpg']
 keywords			 : ['ending', 'conclusion', 'transition', 'passage', 'departure']
 url						 : 'tarot/cards/major-13'
 aliases				 : ['death']

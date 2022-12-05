@@ -7,7 +7,7 @@ card_type			 : '' # major, minor, court
 layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Hope, optimism, openness, certainty, faith, longing, truth"
-images				 : ['/assets/images/tarot/rws/rw-major-17.jpg']
+images				 : ['assets/images/tarot/rws/rw-major-17.jpg']
 alt_names			 : []
 keywords			 : ['hope', 'optimism', 'openness', 'certainty', 'faith', 'longing', 'truth']
 url						 : 'tarot/cards/major-17'

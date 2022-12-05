@@ -8,7 +8,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Poverty, destitution, need, crisis"
 alt_names			 : ['Worry', 'Scarcity']
-images				 : ['/assets/images/tarot/rws/rw-coins-05.jpg']
+images				 : ['assets/images/tarot/rws/rw-coins-05.jpg']
 keywords			 : ['poverty', 'destitution', 'need', 'crisis']
 url						 : 'tarot/cards/coins-05'
 aliases				 : []

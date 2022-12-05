@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Guidance, knowledge, revelation, belief"
 alt_names			 : ['The Pope']
-images				 : ['/assets/images/tarot/rws/rw-major-05.jpg']
+images				 : ['assets/images/tarot/rws/rw-major-05.jpg']
 keywords			 : ['guidance', 'knowledge', 'revelation', 'belief']
 url						 : 'tarot/cards/major-05'
 aliases				 : ['hierophant', 'the-hierophant']

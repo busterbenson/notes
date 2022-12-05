@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Logic, objectivity, intellect, choice"
 alt_names			 : ['Truth']
-images				 : ['/assets/images/tarot/rws/rw-swords-01.jpg']
+images				 : ['assets/images/tarot/rws/rw-swords-01.jpg']
 keywords			 : ['logic', 'objectivity', 'intellect', 'choice']
 url						 : 'tarot/cards/swords-01'
 aliases				 : []

@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Freedom, faith, inexperience, innocence"
 alt_names			 : ['Le Mat', 'Beginnings']
-images				 : ['/assets/images/tarot/rws/rw-major-00.jpg']
+images				 : ['assets/images/tarot/rws/rw-major-00.jpg']
 keywords			 : ['freedom', 'faith', 'inexperience', 'innocence']
 url						 : 'tarot/cards/major-00'
 aliases				 : ['fool', 'the-fool']

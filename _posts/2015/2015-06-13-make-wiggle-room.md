@@ -4,7 +4,7 @@ link         :
 author       : me
 
 one_liner    : "My 39th year in review."
-image			   : /assets/images/pieces/make-wiggle-room.png
+image			   : assets/images/pieces/make-wiggle-room.png
 piles			   : ['self-reflection', 'year-in-review']
 comment_link : 
 ---
@@ -51,7 +51,7 @@ So, here’s to finding new ways to make wiggle room this year, and to bringing 
 
 Along with this yearly review, I also did a big edit/re-organization to my beliefs in the [Codex](/beliefs), which I wrote up [here](https://writtenonbart.com/4-kinds-of-beliefs-44dce1c04093). I’ll continue to do my monthly reviews there as well.
 
-{% include img.html src='/assets/images/pieces/make-wiggle-room-lifecycle.png' alt='Kellianne finishing the AIDS Lifecycle ride' %} 
+{% responsive_image path:'assets/images/pieces/make-wiggle-room-lifecycle.png' alt='Kellianne finishing the AIDS Lifecycle ride' %} 
 
 Niko and I meet Kellianne at the finish line of her AIDS/LifeCycle ride.
 I think this is going to be a good year. Next time I do one of these yearly reviews, I’ll be 40! 😬

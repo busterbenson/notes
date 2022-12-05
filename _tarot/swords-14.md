@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Genius, expertise, decision, verdict"
 alt_names			 : ['Knight of Swords', 'Father of Arrows']
-images				 : ['/assets/images/tarot/rws/rw-swords-14.jpg']
+images				 : ['assets/images/tarot/rws/rw-swords-14.jpg']
 keywords			 : ['genius', 'expertise', 'decision', 'verdict']
 url						 : 'tarot/cards/swords-14'
 aliases				 : ['swords-king']

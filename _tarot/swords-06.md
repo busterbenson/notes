@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Adaptation, adjustments, science, travel"
 alt_names			 : ['Science', 'Passage']
-images				 : ['/assets/images/tarot/rws/rw-swords-06.jpg']
+images				 : ['assets/images/tarot/rws/rw-swords-06.jpg']
 keywords			 : ['adaptation', 'adjustments', 'science', 'travel']
 url						 : 'tarot/cards/swords-06'
 aliases				 : []

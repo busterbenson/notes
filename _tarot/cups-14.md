@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : ""
 alt_names			 : ['Knight of Cups', 'Father of Horns']
-images				 : ['/assets/images/tarot/rws/rw-cups-14.jpg']
+images				 : ['assets/images/tarot/rws/rw-cups-14.jpg']
 keywords			 : ['wisdom', 'diplomacy', 'restraint', 'composure']
 url						 : 'tarot/cards/cups-14'
 aliases				 : []

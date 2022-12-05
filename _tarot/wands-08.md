@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Speed, swiftness, responsiveness, change"
 alt_names			 : ['Swiftness']
-images				 : ['/assets/images/tarot/rws/rw-wands-08.jpg']
+images				 : ['assets/images/tarot/rws/rw-wands-08.jpg']
 keywords			 : ['speed', 'swiftness', 'responsiveness', 'change']
 url						 : 'tarot/cards/wands-08'
 aliases				 : []

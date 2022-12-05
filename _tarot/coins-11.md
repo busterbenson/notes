@@ -8,7 +8,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Practicality, prosperity, learning, growth, adolescence"
 alt_names			 : ['Princess of Disks', 'Daughter of Roots']
-images				 : ['/assets/images/tarot/rws/rw-coins-11.jpg']
+images				 : ['assets/images/tarot/rws/rw-coins-11.jpg']
 keywords			 : ['practicality', 'prosperity', 'learning', 'growth', 'adolescence']
 url						 : 'tarot/cards/coins-11'
 aliases				 : ['coins-page']

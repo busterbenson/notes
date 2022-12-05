@@ -49,11 +49,11 @@ As you know, I’ve been thinking of these [wicked problems](https://medium.com/
 
 And a bonus META DRAGON BOSS. You hinted at an interesting theory about how our inability to properly address LEVEL 1 DRAGON BOSSES could exacerbate LEVEL 2 and LEVEL 3 DRAGON BOSSES by simply decreasing our effectiveness at contributing productively to them. At the same time, you may also have identified a strategy to help us address all of them, similar in structure to [Maslow’s Hierarchy of Needs](https://www.simplypsychology.org/maslow.html) (though I know there are more accurate models of this out there now, and it’s better to think of them as spirals or networks than pyramids). What I’m trying to say though is that the way to beat LEVEL 3 DRAGON BOSSES is to first get a handle on the LEVEL 1 and LEVEL 2 DRAGON BOSSES.
 
-{% include img.html src='/assets/images/pieces/wicked-problems-solve-your-own-first.jpeg' alt='Solve Your Own Problems First' %}
+{% responsive_image path:'assets/images/pieces/wicked-problems-solve-your-own-first.jpeg' alt:'Solve Your Own Problems First' %}
 
 And this in turn reminds me of the link [Vicki Tan](https://medium.com/u/b78553a5f9b?source=post_page-----ac27c32146fd--------------------------------) shared in the Rickshaw Discord today about [Bentoism](http://bentoism.org/about).
 
-{% include img.html src='/assets/images/pieces/wicked-problems-bentoism.png' alt='Bentoism' %}
+{% responsive_image path:'assets/images/pieces/wicked-problems-bentoism.png' alt:'Bentoism' %}
 
 I’m trying to stick to my “finish the post in one sitting” rule that I’ve arbitrarily set for myself, so I’ll leave you here and ask for your thoughts on this overall framing of the wicked problem. Are we making progress? What’s still missing? What comes out of this exploration next?
 

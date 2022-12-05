@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Denial, debate, impasse, truce"
 alt_names			 : ['Peace', 'Armistice']
-images				 : ['/assets/images/tarot/rws/rw-swords-02.jpg']
+images				 : ['assets/images/tarot/rws/rw-swords-02.jpg']
 keywords			 : ['denial', 'debate', 'impasse', 'truce']
 url						 : 'tarot/cards/swords-02'
 aliases				 : []

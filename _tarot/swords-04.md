@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Meditation, contemplation, perspective, mindset"
 alt_names			 : ['Truce', 'Withdrawal']
-images				 : ['/assets/images/tarot/rws/rw-swords-04.jpg']
+images				 : ['assets/images/tarot/rws/rw-swords-04.jpg']
 keywords			 : ['meditation', 'contemplation', 'perspective', 'mindset']
 url						 : 'tarot/cards/swords-04'
 aliases				 : []

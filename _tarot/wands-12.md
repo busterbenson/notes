@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Boldness, bravado, passion, persuasion, advocacy"
 alt_names			 : ['Prince of Wands', 'Son of Feathers']
-images				 : ['/assets/images/tarot/rws/rw-wands-12.jpg']
+images				 : ['assets/images/tarot/rws/rw-wands-12.jpg']
 keywords			 : ['boldness', 'bravado', 'passion', 'persuasion', 'advocacy']
 url						 : 'tarot/cards/wands-12'
 aliases				 : ['wands-knight']

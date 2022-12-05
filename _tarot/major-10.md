@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Luck, randomness, cycles, karma, fate, revolution"
 alt_names			 : ['Fortune']
-images				 : ['/assets/images/tarot/rws/rw-major-10.jpg']
+images				 : ['assets/images/tarot/rws/rw-major-10.jpg']
 keywords			 : ['luck', 'randomness', 'cycles', 'karma', 'fate', 'revolution']
 url						 : 'tarot/cards/major-10'
 aliases				 : ['the-wheel-of-fortune', 'wheel-of-fortune', 'wheel']

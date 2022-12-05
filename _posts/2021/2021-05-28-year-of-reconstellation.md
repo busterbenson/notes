@@ -79,7 +79,7 @@ Here’s the inaugural test balloon. My first reconstellation, Ursa Minor. That�
 
 Since this my the first new constellation, I decided to forego the usual connect-the-dots style constellation and instead allow each star to be a complete mini-constellation pinecone in itself, while also part of a set of peer pinecones, and the parent of a new set of trees when the next fire comes along and opens them up. They exist in the brackish, primordial, celestial goo state that flows back and forth between star-likeness and constellation-likeness.
 
-{% include img.html src='/assets/images/pieces/45-reconstellation-pinecones.jpg' alt='Pinecones' %}
+{% responsive_image path:'assets/images/pieces/45-reconstellation-pinecones.jpg' alt:'Pinecones' %}
 
 The pinecones we can see within this constellation on any given night are those that have caught fire and are opening up, birthing constellations throughout the rest of the night sky.
 
@@ -91,7 +91,7 @@ The pinecones we can see within this constellation on any given night are those 
 
 ### History
 
-{% include img.html src='/assets/images/pieces/45-reconstellation-history.png' alt='History' %}
+{% responsive_image path:'assets/images/pieces/45-reconstellation-history.png' alt:'History' %}
 
 ### Past associations, etymology, notes
 
@@ -118,6 +118,6 @@ Personal:
 Reconstellating the other 87…
 Who knows how far this will go. I’ll be keeping track here.
 
-{% include img.html src='/assets/images/pieces/45-reconstellation-history.png' alt='History' %}
+{% responsive_image path:'assets/images/pieces/45-reconstellation-history.png' alt:'History' %}
 
 (Credit: [constellation-guide.com](https://www.constellation-guide.com/constellation-map/))

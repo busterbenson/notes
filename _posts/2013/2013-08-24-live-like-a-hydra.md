@@ -4,7 +4,7 @@ link         : https://betterhumans.coach.me/live-like-a-hydra-c02337782a89
 author       : me
 
 one_liner    : "Thoughts on how to get stronger when things are chaotic."
-image			   : /assets/images/pieces/live-like-a-hydra.jpg
+image			   : assets/images/pieces/live-like-a-hydra.jpg
 piles			   : ['resiliance', 'behavior-change', 'self-tracking', 'personal-mythology']
 comment_link : 
 ---
@@ -46,7 +46,7 @@ The philosophy is simple: by building a server architecture that expects failure
 
 ## #3 Life’s Chaos Monkey
 
-{% include img.html src='/assets/images/pieces/live-like-a-hydra-2.jpg' alt='Chaos Monkey' width='100%' %}
+{% responsive_image path:'assets/images/pieces/live-like-a-hydra-2.jpg' alt:'Chaos Monkey' %}
 
 I’ve spent a lot of time thinking about goals (43things.com) and habits (healthmonth.com, 750words.com, 8:36pm) over the years, and I’ve long believed that the only way to change anything about your life is to guard against failure. Now I realize it’s more than that.
 

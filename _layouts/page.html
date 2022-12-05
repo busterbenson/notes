@@ -8,8 +8,18 @@ layout: default
     <h2 class="subtitle">{{ page.one_liner }}</h2>
   {% endif %}
   
-  {% if page.image and page.image != blank %}
-  	{% include img.html src=page.image class="featured-image" alt=page.title width="500" %}
+  {% if page.image and page.image != blank and page.image != '' %}
+    <div class='featured-image'>
+      {% responsive_image_block %}
+        path: {{ page.image }}
+        width: 500
+        class: 'featured-image'
+        {% if title %}
+          alt: {{ page.title }}
+          title: {{ page.title }}
+        {% endif %}
+      {% endresponsive_image_block %}
+    </div>
   {% endif %}
 
   {{ content }}

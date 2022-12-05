@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Toughness, persistence, stamina, loyalty, release"
 alt_names			 : ['Strength', 'Conflict']
-images				 : ['/assets/images/tarot/rws/rw-wands-09.jpg']
+images				 : ['assets/images/tarot/rws/rw-wands-09.jpg']
 keywords			 : ['toughness', 'persistence', 'stamina', 'loyalty', 'release']
 url						 : 'tarot/cards/wands-09'
 aliases				 : []

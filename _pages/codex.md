@@ -1,7 +1,7 @@
 ---
 title. : Codex
 link   : https://github.com/busterbenson/public/blob/master/book-of-beliefs.md
-image	 : /assets/images/beliefs.jpg
+image	 : assets/images/beliefs.jpg
 layout : page
 tag 	 : codex
 ---

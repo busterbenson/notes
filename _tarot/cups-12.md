@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : ""
 alt_names			 : ['Prince of Cups', 'Son of Horns']
-images				 : ['/assets/images/tarot/rws/rw-cups-12.jpg']
+images				 : ['assets/images/tarot/rws/rw-cups-12.jpg']
 keywords			 : ['fervor', 'zeal', 'moodiness', 'illumination']
 url						 : 'tarot/cards/cups-12'
 aliases				 : []

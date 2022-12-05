@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Advancement, victory, triumph, success"
 alt_names			 : []
-images				 : ['/assets/images/tarot/rws/rw-major-07.jpg']
+images				 : ['assets/images/tarot/rws/rw-major-07.jpg']
 keywords			 : ['advancement', 'victory', 'triumph', 'success']
 url						 : 'tarot/cards/major-07'
 aliases				 : ['chariot', 'the-chariot']

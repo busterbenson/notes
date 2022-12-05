@@ -24,7 +24,17 @@ layout: fullscreen
 				<div>
 					{% if card.images %}
 						{% assign card_image = card.images[0] %}
-	          <a href="/tarot/{{card.token}}">{% include img.html src=card_image alt=card.title class="tarot-card" %}</a>
+				    <div class='tarot-card'>
+				      <a href="/tarot/{{card.token}}">
+				      	{% responsive_image_block %}
+				        	path: {{ card_image }}
+				        	{% if title %}
+				          	alt: {{ page.title }}
+				          	title: {{ page.title }}
+				        	{% endif %}
+				      	{% endresponsive_image_block %}
+				      </a>
+				    </div>
 	        {% endif %}
 	      </div>
 				<h3 class="mb-0"><a href="/tarot/{{card.token}}">{{ card.title }}</a></h3>

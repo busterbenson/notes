@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Intuition, reflection, purity, initiation"
 alt_names			 : ['The Priestess']
-images				 : ['/assets/images/tarot/rws/rw-major-02.jpg']
+images				 : ['assets/images/tarot/rws/rw-major-02.jpg']
 keywords			 : ['intuition', 'reflection', 'purity', 'initiation']
 url						 : 'tarot/cards/major-02'
 aliases				 : ['high-priestess', 'the-high-priestess']

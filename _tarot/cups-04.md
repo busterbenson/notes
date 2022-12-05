@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Boredom, listlessness, lethargy, stability, ingratitude"
 alt_names			 : ['Luxury', 'Apathy']
-images				 : ['/assets/images/tarot/rws/rw-cups-04.jpg']
+images				 : ['assets/images/tarot/rws/rw-cups-04.jpg']
 keywords			 : ['boredom', 'listlessness', 'lethargy', 'stability', 'ingratitude']
 url						 : 'tarot/cards/cups-04'
 aliases				 : []

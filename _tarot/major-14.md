@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Blending, synthesis, mediation, combination, harmony"
 alt_names			 : ['Art']
-images				 : ['/assets/images/tarot/rws/rw-major-14.jpg']
+images				 : ['assets/images/tarot/rws/rw-major-14.jpg']
 keywords			 : ['blending', 'synthesis', 'mediation', 'combination', 'harmony']
 url						 : 'tarot/cards/major-14'
 aliases				 : ['temperance']

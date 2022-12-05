@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Variance, difference, dissatisfaction, heartache, rejection"
 alt_names			 : ['Sorrow', 'Mourning']
-images				 : ['/assets/images/tarot/rws/rw-swords-03.jpg']
+images				 : ['assets/images/tarot/rws/rw-swords-03.jpg']
 keywords			 : ['variance', 'difference', 'dissatisfaction', 'heartache', 'rejection']
 url						 : 'tarot/cards/swords-03'
 aliases				 : []

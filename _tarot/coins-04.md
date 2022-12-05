@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Protection, conservation, preservation, safety"
 alt_names			 : ['Power', 'Preservation']
-images				 : ['/assets/images/tarot/rws/rw-coins-04.jpg']
+images				 : ['assets/images/tarot/rws/rw-coins-04.jpg']
 keywords			 : ['protection', 'conservation', 'preservation', 'safety']
 url						 : 'tarot/cards/coins-04'
 aliases				 : []

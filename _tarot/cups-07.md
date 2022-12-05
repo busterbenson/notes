@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Imagination, dreams, illusions, goals"
 alt_names			 : ['Debauch', 'Breach']
-images				 : ['/assets/images/tarot/rws/rw-cups-07.jpg']
+images				 : ['assets/images/tarot/rws/rw-cups-07.jpg']
 keywords			 : ['imagination', 'dreams', 'illusions', 'goals']
 url						 : 'tarot/cards/cups-07'
 aliases				 : []

@@ -7,7 +7,7 @@ layout				 : "tarot-card"
 author    		 : 'me'
 one_liner 		 : "Demolition, upheaval, deconstruction, disaster, destruction"
 alt_names			 : []
-images				 : ['/assets/images/tarot/rws/rw-major-16.jpg']
+images				 : ['assets/images/tarot/rws/rw-major-16.jpg']
 keywords			 : ['Demolition', 'upheaval', 'deconstruction', 'disaster', 'destruction']
 url						 : 'tarot/cards/major-16'
 aliases				 : ['the-tower', 'tower']
