@@ -4,7 +4,7 @@ link         : https://betterhumans.coach.me/better-than-meditation-12532d29f6cd
 author       : me
 
 one_liner    : "Private journaling is a better alternative to meditation."
-image			   : /assets/images/pieces/better-than-meditation.jpg
+image			   : assets/images/pieces/better-than-meditation.jpg
 piles			   : ['mindfulness', '750-words']
 comment_link : 
 ---

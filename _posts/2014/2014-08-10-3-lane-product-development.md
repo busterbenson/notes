@@ -4,7 +4,7 @@ link         : https://medium.com/@buster/3-lane-product-development-30d64d376cd
 author       : me
 
 one_liner    : "My take on building products people love."
-image			   : /assets/images/pieces/3-lane-product-development.jpg
+image			   : assets/images/pieces/3-lane-product-development.jpg
 piles			   : ['product-management']
 comment_link : 
 ---

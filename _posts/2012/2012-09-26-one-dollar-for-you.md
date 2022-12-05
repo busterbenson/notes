@@ -4,7 +4,7 @@ link         : https://buster.svbtle.com/1-for-you
 author       : me
 
 one_liner    : "Help me stop complaining."
-image			   : /assets/images/pieces/one-dollar-for-you.jpg
+image			   : assets/images/pieces/one-dollar-for-you.jpg
 piles			   : ['behavior-change', 'complaining']
 comment_link : 
 ---

@@ -1,7 +1,7 @@
 ---
 title        : "Pocket Biases"
 one_liner    : "Keep your friends close and your cognitive biases closer."
-image			   : /assets/images/pieces/pocket-biases.jpg
+image			   : assets/images/pieces/pocket-biases.jpg
 piles			   : ['cognitive-biases', 'book', 'project']
 link         : https://pocket-biases.glideapp.io/
 comment_link : 

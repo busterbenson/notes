@@ -4,7 +4,7 @@ link         : https://buster.svbtle.com/zoomed-out
 author       : me
 
 one_liner    : "My father passed away 19 years ago today."
-image			   : /assets/images/pieces/father.jpg
+image			   : assets/images/pieces/father.jpg
 piles			   : ['family']
 comment_link : 
 ---

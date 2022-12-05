@@ -1,7 +1,7 @@
 ---
 title        : "Ooh look, a book"
 one_liner    : "I updated my book website with some new things."
-image			   : /assets/images/whyareweyelling/book-timeline-10-2019.png
+image			   : assets/images/whyareweyelling/book-timeline-10-2019.png
 piles			   : ['being-a-creator']
 link         : 
 comment_link : 

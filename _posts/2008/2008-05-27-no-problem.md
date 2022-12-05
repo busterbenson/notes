@@ -4,7 +4,7 @@ link         :
 author       : me
 
 one_liner    : "My 32nd year in review."
-image			   : /assets/images/pieces/no-problem.jpg
+image			   : assets/images/pieces/no-problem.jpg
 piles			   : ['self-reflection', 'year-in-review']
 comment_link : 
 ---

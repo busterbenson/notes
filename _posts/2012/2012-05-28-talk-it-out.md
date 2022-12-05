@@ -4,7 +4,7 @@ link         :
 author       : me
 
 one_liner    : "My 36th year in review."
-image			   : /assets/images/pieces/talk-it-out.jpg
+image			   : assets/images/pieces/talk-it-out.jpg
 piles			   : ['self-reflection', 'year-in-review']
 comment_link : 
 ---

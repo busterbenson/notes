@@ -4,7 +4,7 @@ link         : https://medium.com/@buster/41-seek-endarkenment-9700663dea67
 author       : me
 
 one_liner    : "My 41st year in review."
-image			   : /assets/images/pieces/seek-endarkenment.png
+image			   : assets/images/pieces/seek-endarkenment.png
 piles			   : ['self-reflection', 'negative-space', 'year-in-review']
 comment_link : 
 ---

@@ -4,7 +4,7 @@ link         :
 author       : me
 
 one_liner    : "My year in review."
-image			   : /assets/images/pieces/cultivate-quality-time.png
+image			   : assets/images/pieces/cultivate-quality-time.png
 piles			   : ['self-reflection', 'quality-time', 'year-in-review']
 comment_link : 
 ---
