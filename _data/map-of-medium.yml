@@ -3,8 +3,8 @@
   - 'media'
   - 'society'
   - 'technology'
-  - 'world'
   - 'work'
+  - 'world'
 
 
 'list':
@@ -14,7 +14,7 @@
     children: 
       - 'family'
       - 'health'
-      - 'inspiration'
+      - 'home'
       - 'life-lessons'
       - 'personal-development'
       - 'personal-essay'
@@ -42,54 +42,38 @@
     children:
       - 'beauty'
       - 'disability'
-      - 'diversity-and-inclusion'
       - 'drugs'
       - 'economics'
       - 'education'
       - 'equality'
       - 'fashion'
-      - 'investing'
+      - 'finance'
       - 'language'
       - 'law'
       - 'leadership'
-      - 'money'
-      - 'parenting'
-      - 'pets'
+      - 'logistics'
       - 'philosophy'
       - 'politics'
       - 'psychology'
       - 'race'
       - 'religion'
-      - 'security'
       - 'sexuality'
       - 'social-media'
       - 'sports'
-      - 'transportation'
-      - 'urbanism'
 
   'technology': 
     name: 'Technology'
     aliases: ['tech']
     children:
       - 'artificial-intelligence'
-      - 'biotech'
       - 'blockchain'
       - 'data-science'
       - 'gadgets'
       - 'makers'
       - 'programming'
       - 'programming-languages'
+      - 'security'
       - 'tech-companies'
-
-  'world': 
-    name: 'World'
-    children: 
-      - 'cities'
-      - 'nature'
-      - 'travel'
-      - 'history'
-      - 'pandemic'
-      - 'science'
 
   'work': 
     name: 'Work'
@@ -97,12 +81,20 @@
       - 'business'
       - 'design'
       - 'devops'
-      - 'finance'
       - 'freelancing'
-      - 'make-money-online'
       - 'marketing'
       - 'product-management'
       - 'remote-work'
+
+  'world': 
+    name: 'World'
+    children: 
+      - 'cities'
+      - 'nature'
+      - 'travel'
+      - 'pandemic'
+      - 'science'
+
 
 
 
@@ -140,7 +132,10 @@
   'design': 
     name: 'Design'
     children: 
+      - 'accessibility'
+      - 'design-thinking'
       - 'inclusive-design'
+      - 'product-design'
       - 'ui'
       - 'ux'
       - 'visual-design'
@@ -148,8 +143,14 @@
   'accessibility': 
     name: 'Accessibility'
   
+  'design-thinking':
+    name: 'Design Thinking'
+
   'inclusive-design':
     name: 'Inclusive Design'
+
+  'product-design':
+    name: 'Product Design'
 
   'ui': 
     name: 'User Interface'
@@ -177,34 +178,112 @@
   'kubernetes': 
     name: 'Kubernetes'
 
-  'finance': 
-    name: 'Finance'
+  'investing': 
+    name: 'Investing'
 
   'freelancing': 
-    name: 'Freelancing'    
+    name: 'Freelancing'  
+    children: 
+      - 'client-relationship'
+      - 'client-management'
+      - 'client-services'
+      - 'freelance'  
+      - 'freelancers'
+      - 'freelancing-tips'
+      - 'freelance-writing'
 
-  'make-money-online': 
-    name: 'Make Money Online'
+  'client-relationship':
+    name: 'Client Relationship'
+
+  'client-management':
+    name: 'Client Management'
+
+  'client-services':
+    name: 'Client Servicess'
+
+  'freelance':
+    name: 'Freelance'
+
+  'freelancers':
+    name: 'Freelancers'
+
+  'freelance-tips':
+    name: 'Freelance Tips'
+
+  'freelance-writing':
+    name: 'Freelance Writing'
 
   'marketing': 
     name: 'Marketing'
     children:
+      - 'advertising'
+      - 'branding'
+      - 'brand-strategy'
+      - 'content-marketing'
+      - 'content-strategy'
       - 'digital-marketing'
-      - 'SEO'
+      - 'marketing-strategies'
+      - 'seo'
+      - 'social-media-marketing'
+
+  'advertising':
+    name: 'Advertising'
+
+  'branding':
+    name: 'Branding'
+
+  'brand-strategy':
+    name: 'Brand Strategy'
+
+  'content-marketing':
+    name: 'Content Marketing'
+
+  'content-strategy':
+    name: 'Content Strategy'
 
   'digital-marketing': 
     name: 'Digital Marketing'
 
+  'marketing-strategies':
+    name: 'Marketing Strategies'
+
   'seo': 
     name: 'SEO'
 
+  'social-media-marketing':
+    name: 'Social Media Marketing'
+
   'product-management': 
     name: 'Product Management'
+    children: 
+      - 'innovation'
+      - 'product'
+      - 'product-development'
+      - 'product-manager'
 
   'remote-work': 
     name: 'Remote Work'
+    children: 
+      - 'distributed-teams'
+      - 'future-of-work'
+      - 'remote-team'
+      - 'remote-working'
+      - 'work-from-home' 
 
+  'distributed-teams':
+    name: 'Distributed Teams'
 
+  'future-of-work':
+    name: 'Future of Work'
+
+  'remote-team':
+    name: 'Remote Team'
+
+  'remote-working':
+    name: 'Remote Working'
+
+  'work-from-home':
+    name: 'Work From Home'
 
 
   'beauty': 
@@ -227,26 +306,24 @@
   'skincare':
     name: 'Skincare'
 
+
   'disability': 
     name: 'Disability'
     children: 
       - 'accessibility'
+      - 'blindness'
+      - 'deaf'
       - 'disability-rights'
+
+  'blindness':
+    name: 'Blindness'
+
+  'deaf':
+    name: 'Deaf'
+    aliases: ['hearing-loss']
 
   'disability-rights':
     name: 'Disability Rights'
-
-  'diversity-and-inclusion':
-    name: 'Diversity And Inclusion'
-    children:
-      - 'diversity'
-      - 'inclusion'
-
-  'diversity':
-    name: 'Diversity'
-
-  'inclusion':
-    name: 'Inclusion'
 
   'drugs': 
     name: 'Drugs'
@@ -341,7 +418,9 @@
     name: 'Equality'
     children: 
       - 'discrimination'
+      - 'diversity'
       - 'feminism'
+      - 'inclusion'
       - 'lgbtqia'
       - 'race'
       - 'racism'
@@ -350,9 +429,15 @@
   'discrimination':
     name: 'Discrimination'
 
+  'diversity':
+    name: 'Diversity'
+
   'feminism':
     name: 'Feminism'
     aliases: ['women']
+
+  'inclusion':
+    name: 'Inclusion'
 
   'lgbtqia': 
     name: 'LGBTQIA+'
@@ -397,13 +482,60 @@
 
   'race': 
     name: 'Race'
+    children:
+      - 'anti-racism'
+      - 'black-lives-matter'
+      - 'racism'
+      - 'white-privilege'
+      - 'white-supremacy'
+
+  'anti-racism':
+    name: 'Anti-Racism'
+
+  'black-lives-matter':
+    name: 'Black Lives Matter'
 
   'racism': 
-    aliases: ['black-lives-matters']
     name: 'Racism'
+
+  'white-privilege':
+    name: 'White Privilege'
+
+  'white-supremacy':
+    name: 'White Supremacy'
+
+  'womens-rights':
+    name: "Women's Rights"
+
 
   'religion': 
     name: 'Religion'
+    children: 
+      - 'buddhism'
+      - 'christianity'
+      - 'hinduism'
+      - 'islam'
+      - 'judaism'
+      - 'spirituality'
+      - 'zen'
+
+  'buddhism':
+    name: 'Buddhism'
+
+  'christianity':
+    name: 'Christianity'
+
+  'hinduism':
+    name: 'Hinduism'
+
+  'islam':
+    name: 'Islam'
+
+  'judaism':
+    name: 'Judaism'
+
+  'zen':
+    name: 'Zen'
 
   'sports': 
     name: 'Sports'
@@ -431,11 +563,37 @@
   'astrology': 
     name: 'Astrology'
 
-  'transportation': 
-    name: 'Transportation'
+  'logistics': 
+    name: 'Logistics'
+    children: 
+      - 'procurement'
+      - 'public-transit'
+      - 'self-driving-cars'
+      - 'shipping'
+      - 'supply-chain'
+      - 'transportation'
+      - 'trucking'
 
-  'womens-rights':
-    name: "Women's Rights"
+  'procurement':
+    name: 'Procurement'
+
+  'public-transit':
+    name: 'Public Transit'
+
+  'self-driving-cars':
+    name: 'self-driving-cars'
+
+  'shipping':
+    name: 'shipping'
+
+  'supply-chain':
+    name: 'supply-chain'
+
+  'transportation':
+    name: 'transportation'
+
+  'trucking':
+    name: 'trucking'
 
   'innovation':
     name: 'Innovation'
@@ -446,15 +604,24 @@
   'immigration': 
     name: 'Immigration'
 
-  'investing': 
-    name: 'Investing'
+  'finance': 
+    name: 'Finance'
     children: 
+      - 'investing'
       - 'money'
       - 'retirement'
       - 'philanthropy'
+      - 'real-estate-investments'
+      - 'retirement-planning'
       - 'stocks'
       - 'stock-market'
       - 'trading'
+
+  'real-estate-investments':
+    name: 'Real Estate Investments'
+
+  'retirement-planning':
+    name: 'Retirement Planning'
 
   'law': 
     name: 'Law'
@@ -474,9 +641,80 @@
 
   'language': 
     name: 'Language'
+    children:
+      - 'arabic'
+      - 'english-language'
+      - 'english-learning'
+      - 'foreign-language'
+      - 'french'
+      - 'german-language'
+      - 'hindi'
+      - 'language-learning'
+      - 'linguistics'
+      - 'mandarin'
+      - 'portuguese'
+      - 'spanish'
+
+  'arabic':
+    name: 'Arabic'
+
+  'english-language':
+    name: 'English Language'
+
+  'english-learning':
+    name: 'English Learning'
+    aliases: ['esl']
+
+  'foreign-language':
+    name: 'Foreign Language'
+
+  'french':
+    name: 'French'
+
+  'german-language':
+    name: 'German'
+
+  'hindi':
+    name: 'Hindi'
+
+  'language-learning':
+    name: 'Language Learning'
+
+  'linguistics':
+    name: 'Linguistics'
+
+  'mandarin':
+    name: 'Mandarin'
+
+  'portuguese':
+    name: 'Portuguese'
+
+  'spanish':
+    name: 'Spanish'
 
   'leadership': 
     name: 'Leadership'
+    children:
+      - 'executive-coaching'
+      - 'leadership-coaching'
+      - 'leadership-development'
+      - 'leadership-skills'
+      - 'management'
+
+  'executive-coaching':
+    name: 'Executive Coaching'
+
+  'leadership-coaching':
+    name: 'Leadership Coaching'
+
+  'leadership-development':
+    name: 'Leadership Development'
+
+  'leadership-skills':
+    name: 'Leadership Skills'
+
+  'management':
+    name: 'Management'
 
   'money': 
     name: 'Money'
@@ -488,9 +726,18 @@
   'security':
     name: 'Security'
     children:
+      - 'data-security'
+      - 'encryption'
       - 'infosec'
+      - 'passwords'
       - 'privacy'
       - 'cybersecurity'
+
+  'data-security':
+    name: 'data-security'
+
+  'encryption':
+    name: 'Encryption'
 
   'infosec':
     name: 'Infosec'
@@ -498,15 +745,35 @@
   'cybersecurity':
     name: 'Cybersecurity'
 
+  'passwords':
+    name: 'Passwords'
+
   'privacy':
     name: 'Privacy'
 
   'sexuality': 
     name: 'Sexuality'
     children:
+      - 'bdsm'
+      - 'erotica'
+      - 'kink'
       - 'pg13'
       - 'sex'
-      - 'erotica'
+
+  'bdsm':
+    name: 'BDSM'
+
+  'kink':
+    name: 'Kink'
+
+  'pg13':
+    name: 'PG-13'
+
+  'sex':
+    name: 'sex'
+
+  'erotica':
+    name: 'Erotica'
 
   'social-media': 
     name: 'Social Media'
@@ -527,10 +794,6 @@
 
   'twitter':
     name: 'Twitter'
-
-  'urbanism':
-    name: 'Urbanism'
-
 
 
 
@@ -572,31 +835,53 @@
   'weight-loss': 
     name: 'Weight Loss'
 
-  'inspiration': 
-    name: 'Inspiration'
-    children:
-      - 'dreams'
-      - 'goals'
-      - 'motivation'
+
+  'home':
+    name: 'Home'
+    children: 
+      - 'architecture'
+      - 'home-decor'
+      - 'home-improvement'
+      - 'house'
+      - 'interior-design'
+      - 'real-estate'
+      - 'rental-property'
+      - 'vacation-rental'
+
+  'architecture':
+    name: 'Architecture'
+
+  'home-decor':
+    name: 'Home Decor'
+
+  'home-improvement':
+    name: 'Home Improvement'
+
+  'house':
+    name: 'house'
+
+  'interior-design':
+    name: 'Interior Design'
+
+  'real-estate':
+    name: 'Real Estate'
+
+  'rental-property':
+    name: 'Rental Property'
+
+  'vacation-rental':
+    name: 'Vacation Rental'
+
 
   'children':
     aliases: ['kids']
     name: 'Children'
-
-  'dreams':
-    name: 'Dreams'
-
-  'goals':
-    name: 'Goals'
 
   'seniors':
     name: 'Seniors'
 
   'motherhood':
     name: 'Motherhood'
-
-  'motivation': 
-    name: 'Motivation'
 
   'parenting': 
     name: 'Parenting'
@@ -638,9 +923,72 @@
 
   'philosophy': 
     name: 'Philosophy'
+    children:
+      - 'atheism'
+      - 'consciousness'
+      - 'epistemology'
+      - 'ethics'
+      - 'existentialism'
+      - 'metaphysics'
+      - 'morality'
+      - 'nihilism'
+      - 'philosophy-of-mind'
+      - 'stoicism'
+
+  'atheism':
+    name: 'Atheism'
+
+  'consciousness':
+    name: 'Consciousness'
+
+  'epistemology':
+    name: 'Epistemology'
+
+  'ethics':
+    name: 'Ethics'
+
+  'existentialism':
+    name: 'Existentialism'
+
+  'metaphysics':
+    name: 'Metaphysics'
+
+  'morality':
+    name: 'Morality'
+
+  'nihilism':
+    name: 'Nihilism'
+
+  'philosophy-of-mind':
+    name: 'Philosophy of Mind'
+
+  'stoicism':
+    name: 'Stoicism'
 
   'psychology': 
     name: 'Psychology'
+    children:
+      - 'anxiety'
+      - 'cognitive-psychology'
+      - 'psychiatry'
+      - 'psychotherapy'
+      - 'stress'
+
+  'anxiety':
+    name: 'Anxiety'
+
+  'cognitive-psychology':
+    name: 'Cognitive Psychology'
+    aliases: ['cbt']
+
+  'psychiatry':
+    name: 'Psychiatry'
+
+  'psychoherapy':
+    name: 'Psychotherapy'
+
+  'stress':
+    name: 'Stress'
 
   'mental-health': 
     name: 'Mental Health'
@@ -690,14 +1038,6 @@
       - 'dating'
       - 'friendship'
       - 'love'
-
-  'retirement':
-    name: 'Retirement'
-    children: 
-      - 'retirement-planning'
-
-  'retirement-planning':
-    name: 'Retirement Planning'
 
   'dating': 
     name: 'Dating'
@@ -770,11 +1110,17 @@
     aliases: ['ai']
     name: 'Artificial Intelligence'
     children:
+      - 'conversational-ai'
       - 'data-analysis'
       - 'deep-learning'
       - 'generative-art'
+      - 'large-language-models'
       - 'machine-learning'
       - 'nlp'
+      - 'voice-assistant'
+
+  'conversational-ai': 
+    name: 'Conversational AI'
 
   'data-analysis': 
     name: 'Data Analysis'
@@ -783,14 +1129,17 @@
   'deep-learning': 
     name: 'Deep Learning'
 
+  'large-language-models': 
+    name: 'Large Language Models'
+
   'machine-learning': 
     name: 'Machine Learning'
 
   'nlp': 
     name: 'NLP'
 
-  'biotech': 
-    name: 'Biotech'
+  'voice-assistant':
+    name: 'Voice Assistant'
 
   'programming':
     name: 'Programming'
@@ -913,17 +1262,51 @@
   'gadgets': 
     name: 'Gadgets'
     children:
-      - 'smartphones'
+      - 'ebook'
       - 'ipad'
+      - 'iot'
+      - 'smartphones'
+      - 'smart-home'
+      - 'wearables'
 
-  'smartphones': 
-    name: 'Smartphones'
+  'ebook':
+    name: 'eBook'
 
   'ipad': 
     name: 'iPad'
 
+  'iot':
+    name: 'Internet of Things'
+    aliases: ['internet-of-things']
+
+  'smartphones': 
+    name: 'Smartphones'
+
+  'smart-home':
+    name: 'Smart Home'
+
+  'wearables':
+    name: 'Wearables'
+
   'makers': 
     name: 'Makers'
+    children: 
+      - 'arduino'
+      - '3-d-printing'
+      - 'diy'
+      - 'raspberry-pi'
+
+  'arduino':
+    name: 'Arduino'
+
+  '3-d-printing':
+    name: '3D Printing'
+
+  'diy':
+    name: 'DIY'
+
+  'raspberry-pi':
+    name: 'Raspberry PI'
 
   'art': 
     name: 'Art'
@@ -1116,10 +1499,17 @@
   'news': 
     name: 'News'
     children: 
-      - 'innovation'
+      - 'data-journalism'
+      - 'fake-news'
       - 'journalism'
       - 'misinformation'
       - 'true-crime'
+
+  'data-journalism':
+    name: 'Data Journalism'
+
+  'fake-news':
+    name: 'Fake News'
 
   'journalism':
     name: 'Journalism'
@@ -1407,14 +1797,13 @@
   'wildlife':
     name: 'Wildlife'
 
-  'history': 
-    name: 'History'
-
   'pandemic': 
     name: 'Pandemic'
     children: 
       - 'coronavirus'
       - 'covid-19'
+      - 'disease'
+      - 'vaccines'
 
   'coronavirus':
     name: 'Coronavirus'
@@ -1422,17 +1811,57 @@
   'covid-19':
     name: 'Covid-19'
 
+  'disease':
+    name: 'Disease'
+
+  'vaccines':
+    name: 'Vaccines'
+
   'science': 
     name: 'Science'
     children: 
+      - 'anthropology'
+      - 'archaeology'
       - 'astronomy'
+      - 'astrophysics'
+      - 'biotechnology'
+      - 'chemistry'
+      - 'ecology'
+      - 'genetics'
+      - 'geology'
       - 'neuroscience'
       - 'math'
+      - 'medicine'
       - 'physics'
+      - 'psychology'
       - 'space'
 
   'astronomy': 
     name: 'Astronomy'
+
+  'astrophysics':
+    name: 'Astrophysics'
+
+  'archaeology':
+    name: 'Archaeology'
+
+  'biotechnology':
+    name: 'Biotechnology'
+
+  'chemistry':
+    name: 'Chemistry'
+
+  'ecology':
+    name: 'Ecology'
+
+  'genetics':
+    name: 'Genetics'
+
+  'geology':
+    name: 'Geology'
+
+  'medicine':
+    name: 'Medicine'
 
   'neuroscience': 
     name: 'Neuroscience'
