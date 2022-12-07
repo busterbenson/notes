@@ -620,6 +620,9 @@
   'real-estate-investments':
     name: 'Real Estate Investments'
 
+  'retirement':
+    name: 'Retirement'
+
   'retirement-planning':
     name: 'Retirement Planning'
 
@@ -1029,18 +1032,41 @@
   'personal-essay':
     name: 'Personal Essay'
     children: 
+      - 'diary'
+      - 'journaling'
       - 'memoir'
       - 'this-happened-to-me'
+
+  'diary':
+    name: 'Diary'
+
+  'journaling':
+    name: 'Journaling'
+
+  'memoir':
+    name: 'Memoir'
+
+  'this-happened-to-me': 
+    name: 'This Happened To Me'
 
   'relationships': 
     name: 'Relationships'
     children:
       - 'dating'
+      - 'dating-advice'
+      - 'divorce'
       - 'friendship'
       - 'love'
+      - 'online-dating'
 
   'dating': 
     name: 'Dating'
+
+  'dating-advice':
+    name: 'Dating Advice'
+
+  'divorce':
+    name: 'Divorce'
 
   'friendship': 
     name: 'Friendship'
@@ -1048,17 +1074,14 @@
   'love': 
     name: 'Love'
 
-  'memoir':
-    name: 'Memoir'
+  'online-dating':
+    name: 'Online Dating'
 
   'productivity': 
     name: 'Productivity'
 
   'self-awareness': 
     name: 'Self-Awareness'
-
-  'this-happened-to-me': 
-    name: 'This Happened To Me'
 
   'depression':
     name: 'Depression'
