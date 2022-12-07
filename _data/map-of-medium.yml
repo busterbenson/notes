@@ -20,7 +20,6 @@
       - 'personal-essay'
       - 'pets'
       - 'relationships'
-      - 'retirement'
 
   'media':
     name: 'Media'
