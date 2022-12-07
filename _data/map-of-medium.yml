@@ -1301,6 +1301,7 @@
       - 'facebook'
       - 'google'
       - 'microsoft'
+      - 'twitter'
 
   'amazon':
     name: 'Amazon'
