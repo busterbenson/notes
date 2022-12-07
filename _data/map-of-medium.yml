@@ -38,9 +38,9 @@
 
   'society': 
     name: 'Society'
-    aliases: ['culture']
     children:
       - 'beauty'
+      - 'culture'
       - 'disability'
       - 'drugs'
       - 'economics'
@@ -293,6 +293,34 @@
       - 'hair'
       - 'makeup'
       - 'skincare'
+
+  'culture':
+    name: 'Culture'
+    children: 
+      - 'cultural-heritage'
+      - 'history'
+      - 'holidays'
+      - 'museums'
+      - 'norms'
+      - 'tradition'
+
+  'cultural-heritage':
+    name: 'Cultural Heritage'
+
+  'history':
+    name: 'History'
+
+  'holidays':
+    name: 'Holidays'
+
+  'museums':
+    name: 'Museums'
+
+  'norms':
+    name: 'Norms'
+
+  'tradition':
+    name: 'Tradition'
 
   'beauty-tips':
     name: 'Beauty Tips'
@@ -894,15 +922,22 @@
 
   'personal-development': 
     name: 'Personal Development'
-    aliases: ['self', 'self-improvement']
     children: 
       - 'coaching'
       - 'counseling'
       - 'mental-health'
       - 'mindfulness'
       - 'productivity'
+      - 'self'
+      - 'self-improvement'
       - 'self-awareness'
       - 'therapy'
+
+  'self':
+    name: 'Self'
+
+  'self-improvement':
+    name: 'Self-Improvement'
 
   'pets': 
     name: 'Pets'
@@ -1130,9 +1165,9 @@
 
 
   'artificial-intelligence': 
-    aliases: ['ai']
     name: 'Artificial Intelligence'
     children:
+      - 'ai'
       - 'conversational-ai'
       - 'data-analysis'
       - 'deep-learning'
@@ -1141,6 +1176,9 @@
       - 'machine-learning'
       - 'nlp'
       - 'voice-assistant'
+
+  'ai':
+    name: 'AI'
 
   'conversational-ai': 
     name: 'Conversational AI'
@@ -1182,10 +1220,17 @@
 
   'dev-mobile': 
     name: 'Mobile Development'
-    aliases: ['mobile', 'mobile-app-development']
     children: 
       - 'android'
       - 'iOS'
+      - 'mobile'
+      - 'mobile-app-development'
+
+  'mobile':
+    name: 'Mobile'
+
+  'mobile-app-development':
+    name: 'Mobile App Development'
 
   'android': 
     name: 'Android'
@@ -1379,7 +1424,6 @@
 
   'gaming':
     name: 'Gaming'
-    aliases: ['videogames']
     children:
       - 'game-design'
       - 'game-development'
@@ -1387,6 +1431,7 @@
       - 'metaverse'
       - 'nintendo'
       - 'playstation'
+      - 'videogames'
       - 'virtual-reality'
       - 'xbox'
 
@@ -1411,6 +1456,9 @@
 
   'playstation':
     name: 'Playstation'
+
+  'videogames':
+    name: 'Videogames'
 
   'virtual-reality':
     name: 'Virtual Reality'
