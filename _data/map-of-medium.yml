@@ -100,33 +100,6 @@
 
 
 
-  'medium': 
-    name: 'Medium'
-
-
-
-
-
-
-
-
-
-
-  'business': 
-    name: 'Business'
-    children:
-      - 'startups'
-      - 'entrepreneurship'
-      - 'venture-capital'
-
-  'startups': 
-    name: 'Startups'
-
-  'entrepreneurship': 
-    name: 'Entrepreneurship'
-
-  'venture-capital': 
-    name: 'Venture Capital'
 
   'design': 
     name: 'Design'
@@ -259,6 +232,22 @@
       - 'product'
       - 'product-development'
       - 'product-manager'
+
+  'business': 
+    name: 'Business'
+    children:
+      - 'startups'
+      - 'entrepreneurship'
+      - 'venture-capital'
+
+  'startups': 
+    name: 'Startups'
+
+  'entrepreneurship': 
+    name: 'Entrepreneurship'
+
+  'venture-capital': 
+    name: 'Venture Capital'
 
   'remote-work': 
     name: 'Remote Work'
