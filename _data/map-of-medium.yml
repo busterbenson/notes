@@ -915,6 +915,8 @@
       - 'counseling'
       - 'mental-health'
       - 'mindfulness'
+      - 'morning-routines'
+      - 'pomodoro-technique'
       - 'productivity'
       - 'self'
       - 'self-improvement'
@@ -926,6 +928,12 @@
 
   'self-improvement':
     name: 'Self-Improvement'
+
+  'morning-routines':
+    name: 'Morning Routines'
+
+  'pomodoro-technique':
+    name: 'Pomodoro Technique'
 
   'pets': 
     name: 'Pets'
@@ -1480,16 +1488,15 @@
     name: 'Writing'
     children: 
       - 'books'
+      - 'book-reviews'
+      - 'fiction'
+      - 'nonfiction'
       - 'poetry'
       - 'short-story'
       - 'writing-tips'
 
   'books': 
     name: 'Books'
-    children:
-      - 'book-reviews'
-      - 'fiction'
-      - 'nonfiction'
 
   'writing-tips':
     name: 'Writing Tips'
