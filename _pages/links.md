@@ -29,15 +29,13 @@ a:hover.button {
 
 <p><a href='https://750words.com' class='button'>750 Words</a></p>
 
-<p><a href='https://paper.dropbox.com/doc/Codex-Vitae--A1OJaE9fBGp9BpUxOd7QP3S4AQ-rRJ8akyi4ky4Sdc8CQscV' class='button'>My Beliefs</a></p>
+<p><a href='https://github.com/busterbenson/public/blob/master/book-of-beliefs.md' class='button'>My Beliefs</a></p>
 
-<p><a href='https://paper.dropbox.com/doc/Annual-Reviews--BSMaBw~H4CXN22Q5AEF7KPmKAg-u0nwfC4elqUCSm5nHbvOH' class='button'>My Yearly Life Reviews</a></p>
+<p><a href='https://busterbenson.com/pile/year-in-review/' class='button'>My Yearly Life Reviews</a></p>
 
-<p><a href='https://notes.busterbenson.com/life-in-weeks' class='button'>My Life in Weeks</a></p>
+<p><a href='https://busterbenson.com/life-in-weeks' class='button'>My Life in Weeks</a></p>
 
-<p><a href='https://docs.google.com/presentation/d/e/2PACX-1vRCsFi2wJmhYlXPWlHjO1VLOEKrOJvvng1NEgFrBVzrHhAuZ0wIuxmAYUnp3cmVlu5Ov7H1R2s4_ROz/pub?start=true&loop=true&delayms=10000' class='button'>A Game: Dilemma!</a></p>
-
-<p><a href='https://busterbenson.com/whyareweyelling/' class='button'>My Book: Why Are We Yelling?</a></p>
+<p><a href='https://buster.medium.com/hello-this-is-my-book-b6aab9415f64' class='button'>My Book: Why Are We Yelling?</a></p>
 
 <p><a href='https://pocket-biases.glideapp.io/' class='button'>Pocket Biases</a></p>
 
@@ -45,7 +43,7 @@ a:hover.button {
 
 <p><a href='https://twitter.com/buster/' class='button'>Twitter</a></p>
 
-<p><a href='https://medium.com/@buster/' class='button'>Medium</a></p>
+<p><a href='https://buster.medium.com' class='button'>Medium</a></p>
 
 <p><a href='https://facebook.com/busterbenson/' class='button'>Facebook</a></p>
 

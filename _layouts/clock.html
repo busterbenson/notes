@@ -13,8 +13,8 @@ max_width: true
 		<div id="message"></div>
 	</p>
 	<p>
-		<div>Current relative sun time: <span id="relative_sun_time"></span>
-		<div>Current relative moon time: <span id="relative_moon_time"></span>
+		<div>Current relative sun time: <span id="relative_sun_time"></span></div>
+		<div>Current relative moon time: <span id="relative_moon_time"></span></div>
 	</p>
 	<p>
  		<div>Now: <span id="now_string"></span></div>
@@ -85,21 +85,11 @@ max_width: true
 		var day_length = -rise + set;
 		var day_min_length = day_length / 30;
 		var now_distance_from_rise = now - rise;
-		if (now < rise || now > set) {
-			var now_ticks_past_sunset = now_distance_from_rise / day_min_length;
-			if (now_ticks_past_sunset < 16) {
-				return now_ticks_past_sunset - 45;
-			} else {
-				return now_ticks_past_sunset + 15
-			}
-			return 30 + now_ticks_past_sunrise;
+		var now_ticks_past_sunset = now_distance_from_rise / day_min_length;
+		if (now_ticks_past_sunset < 16) {
+			return now_ticks_past_sunset + 45;
 		} else {
-			var now_ticks_past_sunrise = now_distance_from_rise / day_min_length;
-			if (now_ticks_past_sunrise < 16) {
-				return now_ticks_past_sunrise + 45;
-			} else {
-				return now_ticks_past_sunrise - 15
-			}
+			return now_ticks_past_sunset - 15
 		}
 	}
 

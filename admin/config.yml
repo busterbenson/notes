@@ -3,7 +3,7 @@
 backend:
   name: git-gateway
   branch: master 
-  site_domain: notes.busterbenson.com
+  site_domain: busterbenson.com
 media_folder: 'assets/images'
 public_folder: '/assets/images/'
 collections:
