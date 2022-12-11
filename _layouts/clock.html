@@ -1,0 +1,188 @@
+---
+title: Clock
+layout: fullscreen
+max_width: true
+---
+
+<div id="clock">
+	<p>
+		<div>lat: <span id="location_lat"></span></div>
+		<div>long: <span id="location_long"></span></div>
+	</p>
+	<p>
+		<div id="message"></div>
+	</p>
+	<p>
+ 		<div>Now: <span id="now_string"></span></div>
+		<div>Now Sun Time: <span id="now_time"></span></div>
+		<div>Now Sun azimuth: <span id="now_azimuth"></span></div>
+		<div>Now Sun altitude: <span id="now_altitude"></span></div>
+	</p>
+	<p>
+		<div>Now Moon Time: <span id="now_moon_time"></span></div>
+		<div>Now Moon azimuth: <span id="now_moon_azimuth"></span></div>
+		<div>Now Moon altitude: <span id="now_moon_altitude"></span></div>
+		<div>Now Moon distance: <span id="now_moon_distance"></span></div>
+		<div>Now Moon parallactic: <span id="now_moon_parallactic"></span></div>
+		<div>Now Moon fraction: <span id="now_moon_fraction"></span></div>
+		<div>Now Moon phase: <span id="now_moon_phase"></span></div>
+		<div>Now Moon angle: <span id="now_moon_angle"></span></div>
+	</p>
+	<p>
+ 		<div>Sunrise begins: <span id="sunrise_string"></span></div>
+		<div>Sunrise Time: <span id="sunrise_time"></span></div>
+		<div>Sunrise azimuth: <span id="sunrise_azimuth"></span></div>
+		<div>Sunrise altitude: <span id="sunrise_altitude"></span></div>
+	</p>
+	<p>
+ 		<div>Solar noon: <span id="solarnoon_string"></span></div>
+		<div>Solar noon time: <span id="solarnoon_time"></span></div>
+		<div>Solar noon azimuth: <span id="solarnoon_azimuth"></span></div>
+		<div>Solar noon altitude: <span id="solarnoon_altitude"></span></div>
+	</p>
+	<p>
+ 		<div>Sunset ends: <span id="sunset_string"></span></div>
+		<div>Sunset time: <span id="sunset_time"></span></div>
+		<div>Sunset azimuth: <span id="sunset_azimuth"></span></div>
+		<div>Sunset altitude: <span id="sunset_altitude"></span></div>
+	</p>
+
+	<p>
+ 		<div>Moonrise begins: <span id="moonrise_string"></span></div>
+		<div>Moonrise time: <span id="moonrise_time"></span></div>
+		<div>Moonrise azimuth: <span id="moonrise_azimuth"></span></div>
+		<div>Moonrise altitude: <span id="moonrise_altitude"></span></div>
+	</p>
+	<p>
+ 		<div>Moonset ends: <span id="moonset_string"></span></div>
+		<div>Moonset time: <span id="moonset_time"></span></div>
+		<div>Moonset azimuth: <span id="moonset_azimuth"></span></div>
+		<div>Moonset altitude: <span id="moonset_altitude"></span></div>
+	</p>
+
+</div>
+ 
+<script type="text/javascript">
+	$('#message').html("success");
+
+	function azimuth_to_clock_time(azimuth) {
+		if (azimuth >= 0) {
+			return azimuth / 30;
+		} else {
+			return 12 - (-azimuth / 30);
+		}
+	}
+	function date_to_time_string(d) {
+		return d.getHours() + ':' + (d.getMinutes()<10?'0':'') + d.getMinutes();
+	}
+
+	function got_location(pos) {
+		var latitude = pos.coords.latitude;
+		var longitude = pos.coords.longitude;
+		$('#location_long').html(pos.coords.longitude);
+		$('#location_lat').html(pos.coords.latitude);
+		$('#message').html("got location");
+		var now = new Date();
+		var sunTimes = SunCalc.getTimes(now, latitude, longitude);
+		console.log(sunTimes);
+		var moonTimes = SunCalc.getMoonTimes(now, latitude, longitude);
+		console.log(moonTimes);
+
+		var nowStr = date_to_time_string(now); 
+		$('#now_string').html(nowStr);
+
+		var nowSunPos = SunCalc.getPosition(now, latitude, longitude);
+		console.log(nowSunPos);
+		var nowSunAzimuth = nowSunPos.azimuth * 180 / Math.PI;
+		var nowSunAltitude = nowSunPos.altitude;
+		var nowSunTime = azimuth_to_clock_time(nowSunAzimuth);
+		$('#now_time').html(nowSunTime);
+		$('#now_azimuth').html(nowSunAzimuth); 
+		$('#now_altitude').html(nowSunAltitude); 
+
+		var nowMoonPos = SunCalc.getMoonPosition(now, latitude, longitude);
+		console.log(nowMoonPos);
+		var nowMoonAzimuth = nowMoonPos.azimuth * 180 / Math.PI;
+		var nowMoonAltitude = nowMoonPos.altitude;
+		var nowMoonDistance = nowMoonPos.distance;
+		var nowMoonParallactic = nowMoonPos.parallacticAngle;
+		var nowMoonTime = azimuth_to_clock_time(nowMoonAzimuth);
+		$('#now_moon_time').html(nowMoonTime);
+		$('#now_moon_azimuth').html(nowMoonAzimuth); 
+		$('#now_moon_altitude').html(nowMoonAltitude); 
+		$('#now_moon_distance').html(nowMoonDistance); 
+		$('#now_moon_parallactic').html(nowMoonParallactic); 
+
+		var nowMoonDetails = SunCalc.getMoonIllumination(now);
+		console.log(nowMoonDetails);
+		var nowMoonFraction = nowMoonDetails.fraction;
+		var nowMoonPhase = nowMoonDetails.phase; 
+		var nowMoonAngle = nowMoonDetails.angle;
+		$('#now_moon_fraction').html(nowMoonFraction); 
+		$('#now_moon_phase').html(nowMoonPhase); 
+		$('#now_moon_angle').html(nowMoonAngle); 
+
+		var sunriseStr = date_to_time_string(sunTimes.sunrise);
+		$('#sunrise_string').html(sunriseStr);
+		var sunrisePos = SunCalc.getPosition(sunTimes.sunrise, latitude, longitude);
+		console.log(sunrisePos);
+		var sunriseAzimuth = sunrisePos.azimuth * 180 / Math.PI;
+		var sunriseAltitude = sunrisePos.altitude;
+		var sunriseTime = azimuth_to_clock_time(sunriseAzimuth);
+		$('#sunrise_time').html(sunriseTime);
+		$('#sunrise_azimuth').html(sunriseAzimuth); 
+		$('#sunrise_altitude').html(sunriseAltitude); 
+
+		var solarnoonStr = date_to_time_string(sunTimes.solarNoon); 
+		$('#solarnoon_string').html(solarnoonStr);
+		var solarnoonPos = SunCalc.getPosition(sunTimes.solarNoon, latitude, longitude);
+		console.log(solarnoonPos);
+		var solarnoonAzimuth = solarnoonPos.azimuth * 180 / Math.PI;
+		var solarnoonAltitude = solarnoonPos.altitude;
+		var solarnoonTime = azimuth_to_clock_time(solarnoonAzimuth);
+		$('#solarnoon_time').html(solarnoonTime);
+		$('#solarnoon_azimuth').html(solarnoonAzimuth); 
+		$('#solarnoon_altitude').html(solarnoonAltitude); 
+
+		var sunsetStr = date_to_time_string(sunTimes.sunset);
+		$('#sunset_string').html(sunsetStr);
+		var sunsetPos = SunCalc.getPosition(sunTimes.sunset, latitude, longitude);
+		console.log(sunsetPos);
+		var sunsetAzimuth = sunsetPos.azimuth * 180 / Math.PI;
+		var sunsetAltitude = sunsetPos.altitude;
+		var sunsetTime = azimuth_to_clock_time(sunsetAzimuth);
+		$('#sunset_time').html(sunsetTime);
+		$('#sunset_azimuth').html(sunsetAzimuth); 
+		$('#sunset_altitude').html(sunsetAltitude); 
+
+		var moonriseStr = date_to_time_string(moonTimes.rise);
+		$('#moonrise_string').html(moonriseStr);
+		var moonrisePos = SunCalc.getMoonPosition(moonTimes.rise, latitude, longitude);
+		console.log(moonrisePos);
+		var moonriseAzimuth = moonrisePos.azimuth * 180 / Math.PI;
+		var moonriseAltitude = moonrisePos.altitude;
+		var moonriseTime = azimuth_to_clock_time(moonriseAzimuth);
+		$('#moonrise_time').html(moonriseTime);
+		$('#moonrise_azimuth').html(moonriseAzimuth); 
+		$('#moonrise_altitude').html(moonriseAltitude); 
+
+		var moonsetStr = date_to_time_string(moonTimes.set);
+		$('#moonset_string').html(moonsetStr);
+		var moonsetPos = SunCalc.getMoonPosition(moonTimes.set, latitude, longitude);
+		console.log(moonsetPos);
+		var moonsetAzimuth = moonsetPos.azimuth * 180 / Math.PI;
+		var moonsetAltitude = moonsetPos.altitude;
+		var moonsetTime = azimuth_to_clock_time(moonsetAzimuth);
+		$('#moonset_time').html(moonsetTime);
+		$('#moonset_azimuth').html(moonsetAzimuth); 
+		$('#moonset_altitude').html(moonsetAltitude); 
+
+	};
+	function no_location() {
+		$('#message').html("failed to get location");
+	};
+	if (navigator.geolocation) {
+		$('#message').html("success getting location");
+		navigator.geolocation.getCurrentPosition(got_location, no_location);
+	};
+</script>

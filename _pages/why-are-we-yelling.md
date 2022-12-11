@@ -7,4 +7,3 @@ redirect_from:
 
 ---
 
-Blah
