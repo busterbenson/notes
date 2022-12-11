@@ -5,7 +5,7 @@ author       : me
 
 one_liner    : "A slow meditation of unrelated ideas that I'm mulling for various reasons."
 image			   : 
-piles			   : ['self-reflection', 'codex-vitae', 'projects', 'self-tracking']
+piles			   : ['self-reflection', 'codex-vitae', 'project', 'self-tracking']
 comment_link : 
 redirect		 : true
 ---
