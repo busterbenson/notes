@@ -210,6 +210,9 @@ ul.clock-labels li.hour-num {
 </style>
 
 <div>
+
+	<div id="moon_styles"></div>
+
 	<div id="location_status">
 		Loading 🌞 and 🌛 data from the universe. Hold, please.
 	</div>
@@ -390,31 +393,31 @@ ul.clock-labels li.hour-num {
 		$('#now_moon_angle').html(nowMoonAngle); 
 
 		if (nowMoonPhase < 0.5) {
-			$('#clock').append("<style>#moon:before{content: '🌑' !important;}</style>");
+			$('#moon_styles').html("<style>#moon:before{content: '🌑' !important;}</style>");
 
 		} else if (nowMoonPhase < 0.2) {
-			$('#clock').append("<style>#moon:before{content: '🌒' !important;}</style>");
+			$('#moon_styles').html("<style>#moon:before{content: '🌒' !important;}</style>");
 
 		} else if (nowMoonPhase < 0.3) {
-			$('#clock').append("<style>#moon:before{content: '🌓' !important;}</style>");
+			$('#moon_styles').html("<style>#moon:before{content: '🌓' !important;}</style>");
 
 		} else if (nowMoonPhase < 0.45) {
-			$('#clock').append("<style>#moon:before{content: '🌔' !important;}</style>");
+			$('#moon_styles').html("<style>#moon:before{content: '🌔' !important;}</style>");
 
 		} else if (nowMoonPhase < 0.55) {
-			$('#clock').append("<style>#moon:before{content: '🌕' !important;}</style>");
+			$('#moon_styles').html("<style>#moon:before{content: '🌕' !important;}</style>");
 
 		} else if (nowMoonPhase < 0.7) {
-			$('#clock').append("<style>#moon:before{content: '🌖' !important;}</style>");
+			$('#moon_styles').html("<style>#moon:before{content: '🌖' !important;}</style>");
 
 		} else if (nowMoonPhase < 0.8) {
-			$('#clock').append("<style>#moon:before{content: '🌗' !important;}</style>");
+			$('#moon_styles').html("<style>#moon:before{content: '🌗' !important;}</style>");
 
 		} else if (nowMoonPhase < 0.95) {
-			$('#clock').append("<style>#moon:before{content: '🌘' !important;}</style>");
+			$('#moon_styles').html("<style>#moon:before{content: '🌘' !important;}</style>");
 
 		} else {
-			$('#clock').append("<style>#moon:before{content: '🌑' !important;}</style>");
+			$('#moon_styles').html("<style>#moon:before{content: '🌑' !important;}</style>");
 
 		}
 
