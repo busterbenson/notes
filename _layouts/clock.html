@@ -6,7 +6,7 @@ max_width: true
 
 <style>
 body {
-  background: rgb(13, 186, 230);
+  background: #9BD5E5;
 }
 #clock_canvas {
   position: relative;
@@ -149,7 +149,7 @@ ul.clock-labels li.hour-num {
   transform-origin: 50% 100%;
 }
 #sun {
-  background: turquoise;
+  background: #666;
   left: 152px;
   width: 13px;
   height: 105px;
@@ -168,7 +168,7 @@ ul.clock-labels li.hour-num {
   height: 40px;	
 }
 #sun:after {
-  background: turquoise;
+  background: #666;
   border-radius: 50%;
   content: "";
   display: block;
@@ -178,7 +178,7 @@ ul.clock-labels li.hour-num {
   height: 16px;
 }
 #moon {
-  background: lavender;
+  background: #ddd;
   left: 155px;
   width: 9px;
   height: 125px;
@@ -197,7 +197,7 @@ ul.clock-labels li.hour-num {
   height: 30px;	
 }
 #moon:after {
-  background: lavender;
+  background: #ddd;
   border-radius: 50%;
   content: "";
   display: block;
@@ -210,7 +210,7 @@ ul.clock-labels li.hour-num {
 
 <div>
 	<div id="location_status">
-		Loading location for the clock. Hold, please.
+		Loading 🌞 and 🌛 data from the universe. Hold, please.
 	</div>
 
 	<div id="clock_canvas" style="display: none;">
@@ -321,8 +321,6 @@ ul.clock-labels li.hour-num {
 		var now_ticks_past_set = now_distance_from_rise / day_min_length;
 		if (now < rise || now > set) {
 			day_or_night = 'night';
-			console.log(day_or_night);
-			console.log('day_min_length: '+day_min_length);
 			if (now_ticks_past_set < 16) {
 				return now_ticks_past_set + 45;
 			} else {
@@ -467,17 +465,45 @@ ul.clock-labels li.hour-num {
 		$('#moonset_azimuth').html(moonsetAzimuth); 
 		$('#moonset_altitude').html(moonsetAltitude); 
 
-		if (false && (nowSunAzimuth < sunriseAzimuth || nowSunAzimuth > sunsetAzimuth)) {
-			$('#clock').append("<style>#sun:before{content: '🌚' !important;}</style>");			
-		}
-
 		var sunRelativeTime = get_relative_time(sunriseAzimuth, sunsetAzimuth, nowSunAzimuth);
 		$('#relative_sun_time').html(sunRelativeTime);
 		var moonRelativeTime = get_relative_time(moonriseAzimuth, moonsetAzimuth, nowMoonAzimuth);
 		$('#relative_moon_time').html(moonRelativeTime);
 
+		if (false && (nowSunAzimuth < sunriseAzimuth || nowSunAzimuth > sunsetAzimuth)) {
+			$('#clock').append("<style>#sun:before{content: '🌚' !important;}</style>");			
+		}
+
+		console.log(sunRelativeTime);
+		if (sunRelativeTime < 2.5) {
+			$('body').css('background-color', '#F0F0FF');
+
+		} else if (sunRelativeTime < 12.5) {
+			$('body').css('background-color', '#9BD5E5');
+			
+		} else if (sunRelativeTime < 16.5) {
+			$('body').css('background-color', '#7591B6');
+						
+		} else if (sunRelativeTime < 42.5) {
+			$('body').css('background-color', '#3A4460');
+			
+		} else if (sunRelativeTime < 47.5) {
+			$('body').css('background-color', '#7591B6');
+			
+		} else if (sunRelativeTime < 52.5) {
+			$('body').css('background-color', '#FDC559');
+			
+		} else if (sunRelativeTime < 57.5) {
+			$('body').css('background-color', '#9BD5E5');
+			
+		} else {
+			$('body').css('background-color', '#F0F0FF');
+			
+		}
 		setAngle('#hour_wrapper', sunRelativeTime*6);
 		setAngle('#min_wrapper', moonRelativeTime*6);
+
+
 
 	};
 	function no_location() {
