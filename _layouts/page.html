@@ -24,9 +24,11 @@ layout: default
 
   {{ content }}
   <div class="meta">
-  	<time datetime="{{ page.date | date_to_xmlschema }}">
-  		Created {{ page.date | date: "%B %-d, %Y" }}
-  	</time> 
+    {% if page.date %}
+    	<time datetime="{{ page.date | date_to_xmlschema }}">
+    		Created {{ page.date | date: "%B %-d, %Y" }}
+    	</time> 
+    {% endif %}
   </div>
 </section>
 
