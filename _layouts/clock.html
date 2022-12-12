@@ -148,15 +148,27 @@ ul.clock-labels li.hour-num {
   bottom: 50%;
   transform-origin: 50% 100%;
 }
-.hour {
-  background: gold;
+#sun {
+  background: turquoise;
   left: 152px;
   width: 13px;
   height: 105px;
   border-radius: 10px;
 }
-.hour:after {
-  background: gold;
+#sun:before {
+	background: transparent;
+  border-radius: 50%;
+  content: "🌞";
+  font-size: 40px;
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: -15px;
+  width: 40px;
+  height: 40px;	
+}
+#sun:after {
+  background: turquoise;
   border-radius: 50%;
   content: "";
   display: block;
@@ -165,14 +177,26 @@ ul.clock-labels li.hour-num {
   width: 13px;
   height: 16px;
 }
-.min {
+#moon {
   background: lavender;
   left: 155px;
   width: 9px;
   height: 125px;
   border-radius: 8px;f
 }
-.min:after {
+#moon:before {
+	background: transparent;
+  border-radius: 50%;
+  content: "🌕";
+  font-size: 30px;
+  display: block;
+  position: absolute;
+  top: -15px;
+  left: -10px;
+  width: 30px;
+  height: 30px;	
+}
+#moon:after {
   background: lavender;
   border-radius: 50%;
   content: "";
@@ -206,15 +230,15 @@ ul.clock-labels li.hour-num {
 	      <li class='hour-num'><span>•</span></li>
 	    </ul>
 	    <div id='hour_wrapper'>
-	      <div class='hand hour'></div>
+	      <div id="sun" class='hand hour'></div>
 	    </div>
 	    <div id='min_wrapper'>
-	      <div class='hand min'></div>
+	      <div id="moon" class='hand min'></div>
 	    </div>
 		</div>
 	</div>
 
-	<!-- <div id="location_loaded" style="display: none;">
+	<div id="location_loaded" style="display: none;">
 		<p>
 			<div>lat: <span id="location_lat"></span></div>
 			<div>long: <span id="location_long"></span></div>
@@ -270,7 +294,7 @@ ul.clock-labels li.hour-num {
 			<div>Moonset azimuth: <span id="moonset_azimuth"></span></div>
 			<div>Moonset altitude: <span id="moonset_altitude"></span></div>
 		</p>
-	</div> -->
+	</div> 
 
 </div>
  
@@ -299,7 +323,6 @@ ul.clock-labels li.hour-num {
 			day_or_night = 'night';
 			console.log(day_or_night);
 			console.log('day_min_length: '+day_min_length);
-			console.log(now_ticks_past_set);
 			if (now_ticks_past_set < 16) {
 				return now_ticks_past_set + 45;
 			} else {
@@ -316,20 +339,14 @@ ul.clock-labels li.hour-num {
 	}
 
 	function setAngle(wrapper, angle) {
-		console.log('wrapper: '+wrapper);
-		console.log('angle: '+angle);
 		$(wrapper).css('color: #f00;');
 		var rotate_string = "rotate(" + parseInt(angle) + "deg)";
-		console.log('rotate: '+rotate_string);
   	$(wrapper).css('transform', rotate_string);
-		console.log($(wrapper));
 	}
 
 	function got_location(pos) {
 		location_available = true;
-		console.log('location available');
 		$('#location_status').hide();
-		$('#location_loaded').show();
 		$('#clock_canvas').show();
 
 		var latitude = pos.coords.latitude;
@@ -370,6 +387,35 @@ ul.clock-labels li.hour-num {
 		$('#now_moon_fraction').html(nowMoonFraction); 
 		$('#now_moon_phase').html(nowMoonPhase); 
 		$('#now_moon_angle').html(nowMoonAngle); 
+
+		if (nowMoonPhase < 0.5) {
+			$('#clock').append("<style>#moon:before{content: '🌑' !important;}</style>");
+
+		} else if (nowMoonPhase < 0.2) {
+			$('#clock').append("<style>#moon:before{content: '🌒' !important;}</style>");
+
+		} else if (nowMoonPhase < 0.3) {
+			$('#clock').append("<style>#moon:before{content: '🌓' !important;}</style>");
+
+		} else if (nowMoonPhase < 0.45) {
+			$('#clock').append("<style>#moon:before{content: '🌔' !important;}</style>");
+
+		} else if (nowMoonPhase < 0.55) {
+			$('#clock').append("<style>#moon:before{content: '🌕' !important;}</style>");
+
+		} else if (nowMoonPhase < 0.7) {
+			$('#clock').append("<style>#moon:before{content: '🌖' !important;}</style>");
+
+		} else if (nowMoonPhase < 0.8) {
+			$('#clock').append("<style>#moon:before{content: '🌗' !important;}</style>");
+
+		} else if (nowMoonPhase < 0.95) {
+			$('#clock').append("<style>#moon:before{content: '🌘' !important;}</style>");
+
+		} else {
+			$('#clock').append("<style>#moon:before{content: '🌑' !important;}</style>");
+
+		}
 
 		var sunriseStr = date_to_time_string(sunTimes.sunrise);
 		$('#sunrise_string').html(sunriseStr);
@@ -420,6 +466,10 @@ ul.clock-labels li.hour-num {
 		$('#moonset_time').html(moonsetTime);
 		$('#moonset_azimuth').html(moonsetAzimuth); 
 		$('#moonset_altitude').html(moonsetAltitude); 
+
+		if (false && (nowSunAzimuth < sunriseAzimuth || nowSunAzimuth > sunsetAzimuth)) {
+			$('#clock').append("<style>#sun:before{content: '🌚' !important;}</style>");			
+		}
 
 		var sunRelativeTime = get_relative_time(sunriseAzimuth, sunsetAzimuth, nowSunAzimuth);
 		$('#relative_sun_time').html(sunRelativeTime);
