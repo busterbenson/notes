@@ -6,13 +6,14 @@ max_width: true
 
 <style>
 body {
-  background: #9BD5E5;
+  background: #29B7E5;
+  width: 100%;
 }
 #clock_canvas {
   position: relative;
   color: #333;
   margin: 0;
-  padding: 100px;
+  padding: 100px 0;
   font-family: Helvetica, sans-serif;
 }
 #clock {
@@ -352,6 +353,8 @@ ul.clock-labels li.hour-num {
 		$('#location_long').html(pos.coords.longitude);
 		$('#location_lat').html(pos.coords.latitude);
 		var now = new Date();
+		console.log('updating clock: '+now);
+
 		var sunTimes = SunCalc.getTimes(now, latitude, longitude);
 		var moonTimes = SunCalc.getMoonTimes(now, latitude, longitude);
 
@@ -474,12 +477,11 @@ ul.clock-labels li.hour-num {
 			$('#clock').append("<style>#sun:before{content: '🌚' !important;}</style>");			
 		}
 
-		console.log(sunRelativeTime);
 		if (sunRelativeTime < 2.5) {
 			$('body').css('background-color', '#F0F0FF');
 
 		} else if (sunRelativeTime < 12.5) {
-			$('body').css('background-color', '#9BD5E5');
+			$('body').css('background-color', '#29B7E5');
 			
 		} else if (sunRelativeTime < 16.5) {
 			$('body').css('background-color', '#7591B6');
@@ -494,7 +496,7 @@ ul.clock-labels li.hour-num {
 			$('body').css('background-color', '#FDC559');
 			
 		} else if (sunRelativeTime < 57.5) {
-			$('body').css('background-color', '#9BD5E5');
+			$('body').css('background-color', '#29B7E5');
 			
 		} else {
 			$('body').css('background-color', '#F0F0FF');
@@ -503,19 +505,25 @@ ul.clock-labels li.hour-num {
 		setAngle('#hour_wrapper', sunRelativeTime*6);
 		setAngle('#min_wrapper', moonRelativeTime*6);
 
-
+		window.setTimeout(update_clock, 60000);
 
 	};
 	function no_location() {
 		location_available = false;
 		$('#location_status').html("Please allow location to be accessed and reload the page.");
 		console.log('location not available');
+		window.setTimeout(update_clock, 60000);
+
 	};
-	if (navigator.geolocation) {
-		navigator.geolocation.getCurrentPosition(got_location, no_location);
-	} else {
-		$('#location_status').html("Please allow location to be accessed and reload the page.");
-		console.log('location not available');
-		location_available = false;
-	};
+
+	function update_clock() {
+		if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(got_location, no_location);
+		} else {
+			$('#location_status').html("Please allow location to be accessed and reload the page.");
+			console.log('location not available');
+			location_available = false;
+		};
+	}
+	update_clock();
 </script>
