@@ -29,13 +29,23 @@ max_width: false
 									<a href="https://medium.com/tag/{{child_tag}}/top/year" target="map">
 									{{map['list'][child_tag]['name']}}</a>
 								</strong>
-								{% if map['list'][child_tag]['children'] %}
-									<div class="small" style="margin-bottom: 1em;">
-										{% for gchild_tag in map['list'][child_tag]['children'] %}
-											<a href="https://medium.com/tag/{{gchild_tag}}/top/year" target="map">{{map['list'][gchild_tag]['name']}}</a> 
-										{% endfor %}
+								<div style="margin-bottom: 1em;">
+									{% if map['list'][child_tag]['children'] %}
+										<div class="small">
+											{% for gchild_tag in map['list'][child_tag]['children'] %}
+												<a href="https://medium.com/tag/{{gchild_tag}}/top/year" target="map">{{map['list'][gchild_tag]['name']}}</a> 
+											{% endfor %}
+										</div>
+									{% endif %}
+									{% if map['list'][child_tag]['publications'] %}
+										<div class="small" style="margin-bottom: 1em;">
+											Publications: 
+											{% for pub in map['list'][child_tag]['publications'] %}
+												<a href="{{pub['url']}}" target="map">{{pub['name']}}</a> 
+											{% endfor %}
+										</div>
+									{% endif %}
 									</div>
-								{% endif %}
 							</li>
 						{% endfor %}
 						</ul>

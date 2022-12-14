@@ -111,6 +111,12 @@
       - 'ui'
       - 'ux'
       - 'visual-design'
+    publications: 
+      - 'user-experience-design-1':
+        name: 'UX Colletive'
+        url: 'https://medium.com/user-experience-design-1/'
+        submissions: 'https://medium.com/user-experience-design-1/why-and-how-to-publish-with-the-ux-collective-8c8d1dd018a7'
+
 
   'accessibility': 
     name: 'Accessibility'
@@ -239,6 +245,15 @@
       - 'startups'
       - 'entrepreneurship'
       - 'venture-capital'
+    publications:
+      - 'entrepreneur-s-handbook':
+        name: "Entrepreneur's Handbook"
+        url: 'https://medium.com/entrepreneur-s-handbook'
+        submissions: 'https://medium.com/entrepreneur-s-handbook/write-for-entrepreneurs-handbook-7f9380ee9b63'
+      - 'swlh':
+        name: 'The Startup'
+        url: 'https://medium.com/swlh'
+        submissions: 'https://medium.com/swlh/start-it-up-submissions-3e8ed27bcd3e'
 
   'startups': 
     name: 'Startups'
@@ -922,6 +937,11 @@
       - 'self-improvement'
       - 'self-awareness'
       - 'therapy'
+    publications: 
+      - 'better-humans':
+        name: 'Better Humans'
+        url: 'https://medium.com/better-humans'
+        submissions: 'https://medium.com/better-humans/write-for-better-humans-4c6c9884fc08'
 
   'self':
     name: 'Self'
@@ -1089,6 +1109,11 @@
       - 'friendship'
       - 'love'
       - 'online-dating'
+    publications:
+      - 'hello-love':
+        name: 'Hello, Love'
+        url: 'https://medium.com/hello-love'
+        submissions: 'https://medium.com/hello-love/announcing-hello-love-a-new-publication-on-medium-highlighting-relationships-and-love-1799364244ec'
 
   'dating': 
     name: 'Dating'
@@ -1259,6 +1284,15 @@
       - 'react'
       - 'ruby'
       - 'typescript'
+    publications:
+      - 'gitconnected':
+        name: 'Level Up Coding'
+        url: 'https://medium.com/gitconnected'
+        submissions: 'https://medium.com/gitconnected/how-to-get-published-on-gitconnected-dac547ef556b'
+      - 'javascript-in-plain-english':
+        name: "Javascript in Plain English"
+        url: 'https://medium.com/javascript-in-plain-english/'
+        submissions: 'https://medium.com/javascript-in-plain-english/https-medium-com-javascript-in-plain-english-join-our-team-b0854ead7d14'
 
   'angular':
     name: 'Angular'      
@@ -1317,6 +1351,11 @@
     children: 
       - 'data'
       - 'data-visualization'
+    publications:
+      - 'towards-data-science':
+        name: 'Towards Data Science'
+        url: 'https://medium.com/towards-data-science/'
+        submissions: 'https://medium.com/towards-data-science/questions-96667b06af5'
 
   'data': 
     name: 'Data'
@@ -1494,6 +1533,11 @@
       - 'poetry'
       - 'short-story'
       - 'writing-tips'
+    publications:
+      - 'books-are-our-superpower':
+        name: 'Books Are Our Superpower'
+        url: 'https://medium.com/books-are-our-superpower'
+        submissions: 'https://medium.com/books-are-our-superpower/submission-guidelines-books-are-our-superpower-abf49a475cad'
 
   'books': 
     name: 'Books'
