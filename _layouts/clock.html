@@ -316,11 +316,19 @@ ul.clock-labels li.hour-num {
 		var day_min_length = day_length / 30;
 		var now_distance_from_rise = now - rise;
 		var now_ticks_past_set = now_distance_from_rise / day_min_length;
+		console.log('now: '+now);
+		console.log('rise: '+rise);
+		console.log('now_distance_from_rise: '+now_distance_from_rise);
+		console.log('day_min_length: '+day_min_length);
+		console.log('now_ticks_past_set: '+now_ticks_past_set);
 		if (now < rise || now > set) {
 			day_or_night = 'night';
+			console.log(day_or_night);
 			if (now_ticks_past_set < 16) {
+				console.log('a = + 45');
 				return now_ticks_past_set + 45;
 			} else {
+				console.log('b = - 15');
 				return now_ticks_past_set - 15;
 			}
 		} else {
@@ -343,6 +351,7 @@ ul.clock-labels li.hour-num {
 		location_available = true;
 		$('#location_status').hide();
 		$('#clock_canvas').show();
+		$('#location_loaded').show();
 
 		var latitude = pos.coords.latitude;
 		var longitude = pos.coords.longitude;

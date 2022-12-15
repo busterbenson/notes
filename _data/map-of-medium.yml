@@ -6,7 +6,6 @@
   - 'work'
   - 'world'
 
-
 'list':
 
   'life':
@@ -1526,12 +1525,14 @@
   'writing':
     name: 'Writing'
     children: 
+      - '30-day-challenge'
       - 'books'
       - 'book-reviews'
       - 'fiction'
       - 'nonfiction'
       - 'poetry'
       - 'short-story'
+      - 'writing-prompts'
       - 'writing-tips'
     publications:
       - 'books-are-our-superpower':
@@ -1541,6 +1542,12 @@
 
   'books': 
     name: 'Books'
+
+  '30-day-challenge':
+    name: '30 Day Challenge'
+
+  'writing-prompts':
+    name: 'Writing Prompts'
 
   'writing-tips':
     name: 'Writing Tips'
