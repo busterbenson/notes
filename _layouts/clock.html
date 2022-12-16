@@ -247,11 +247,13 @@ ul.clock-labels li.hour-num {
 		<p>
 	 		<div>Now: <span id="now_string"></span></div>
 			<div>Now Sun Time: <span id="now_time"></span></div>
+			<div>Now Sun Animal: <span id="now_sun_animal"></span></div>
 			<div>Now Sun azimuth: <span id="now_azimuth"></span></div>
 			<div>Now Sun altitude: <span id="now_altitude"></span></div>
 		</p>
 		<p>
 			<div>Now Moon Time: <span id="now_moon_time"></span></div>
+			<div>Now Moon Animal: <span id="now_moon_animal"></span></div>
 			<div>Now Moon azimuth: <span id="now_moon_azimuth"></span></div>
 			<div>Now Moon altitude: <span id="now_moon_altitude"></span></div>
 			<div>Now Moon distance: <span id="now_moon_distance"></span></div>
@@ -316,19 +318,11 @@ ul.clock-labels li.hour-num {
 		var day_min_length = day_length / 30;
 		var now_distance_from_rise = now - rise;
 		var now_ticks_past_set = now_distance_from_rise / day_min_length;
-		console.log('now: '+now);
-		console.log('rise: '+rise);
-		console.log('now_distance_from_rise: '+now_distance_from_rise);
-		console.log('day_min_length: '+day_min_length);
-		console.log('now_ticks_past_set: '+now_ticks_past_set);
 		if (now < rise || now > set) {
 			day_or_night = 'night';
-			console.log(day_or_night);
 			if (now_ticks_past_set < 16) {
-				console.log('a = + 45');
 				return now_ticks_past_set + 45;
 			} else {
-				console.log('b = - 15');
 				return now_ticks_past_set - 15;
 			}
 		} else {
@@ -341,6 +335,17 @@ ul.clock-labels li.hour-num {
 		}
 	}
 
+	function get_wadokei_from_relative_time(relative_minutes) {
+		var wadokei_hour = Math.round(relative_minutes / 5);
+		console.log('wadokei hour: '+wadokei_hour);
+		var wadokei_animals = [
+			'Rabbit','Dragon','Snake','Horse','Goat','Monkey',
+			'Rooster','Dog','Pig','Rat','Ox','Tiger'
+		];
+		console.log(wadokei_animals);
+		return wadokei_animals[wadokei_hour-1];
+	}
+
 	function setAngle(wrapper, angle) {
 		$(wrapper).css('color: #f00;');
 		var rotate_string = "rotate(" + parseInt(angle) + "deg)";
@@ -351,13 +356,16 @@ ul.clock-labels li.hour-num {
 		location_available = true;
 		$('#location_status').hide();
 		$('#clock_canvas').show();
-		$('#location_loaded').show();
 
 		var latitude = pos.coords.latitude;
 		var longitude = pos.coords.longitude;
 		$('#location_long').html(pos.coords.longitude);
 		$('#location_lat').html(pos.coords.latitude);
 		var now = new Date();
+		var yesterday = new Date();
+		yesterday.setDate(yesterday.getDate()-1);
+		var tomorrow = new Date();
+		tomorrow.setDate(tomorrow.getDate()+1);
 		console.log('updating clock: '+now);
 
 		var sunTimes = SunCalc.getTimes(now, latitude, longitude);
@@ -453,9 +461,16 @@ ul.clock-labels li.hour-num {
 		$('#sunset_azimuth').html(sunsetAzimuth); 
 		$('#sunset_altitude').html(sunsetAltitude); 
 
-		var moonriseStr = date_to_time_string(moonTimes.rise);
+		var moonRise;
+		if (!moonTimes.rise) {
+			var yesterdayMoonTimes = SunCalc.getMoonTimes(yesterday, latitude, longitude);
+			moonRise = yesterdayMoonTimes.rise;
+		} else {
+			moonRise = moonTimes.rise;
+		}
+		var moonriseStr = date_to_time_string(moonRise);
 		$('#moonrise_string').html(moonriseStr);
-		var moonrisePos = SunCalc.getMoonPosition(moonTimes.rise, latitude, longitude);
+		var moonrisePos = SunCalc.getMoonPosition(moonRise, latitude, longitude);
 		var moonriseAzimuth = moonrisePos.azimuth * 180 / Math.PI;
 		var moonriseAltitude = moonrisePos.altitude;
 		var moonriseTime = azimuth_to_clock_time(moonriseAzimuth);
@@ -463,7 +478,14 @@ ul.clock-labels li.hour-num {
 		$('#moonrise_azimuth').html(moonriseAzimuth); 
 		$('#moonrise_altitude').html(moonriseAltitude); 
 
-		var moonsetStr = date_to_time_string(moonTimes.set);
+		var moonSet;
+		if (!moonTimes.set) {
+			var tomorrowMoonTimes = SunCalc.getMoonTimes(tomorrow, latitude, longitude);
+			moonRise = tomorrowMoonTimes.rise;
+		} else {
+			moonSet = moonTimes.set;
+		}
+		var moonsetStr = date_to_time_string(moonSet);
 		$('#moonset_string').html(moonsetStr);
 		var moonsetPos = SunCalc.getMoonPosition(moonTimes.set, latitude, longitude);
 		var moonsetAzimuth = moonsetPos.azimuth * 180 / Math.PI;
@@ -475,8 +497,14 @@ ul.clock-labels li.hour-num {
 
 		var sunRelativeTime = get_relative_time(sunriseAzimuth, sunsetAzimuth, nowSunAzimuth);
 		$('#relative_sun_time').html(sunRelativeTime);
+		var sunRelativeAnimal = get_wadokei_from_relative_time(sunRelativeTime);
+		console.log('Sun Wadokei: '+sunRelativeAnimal);
+		$('#now_sun_animal').html(sunRelativeAnimal);
 		var moonRelativeTime = get_relative_time(moonriseAzimuth, moonsetAzimuth, nowMoonAzimuth);
 		$('#relative_moon_time').html(moonRelativeTime);
+		var moonRelativeAnimal = get_wadokei_from_relative_time(moonRelativeTime);
+		console.log('Moon Wadokei: '+moonRelativeAnimal);
+		$('#now_moon_animal').html(moonRelativeAnimal);
 
 		if (false && (nowSunAzimuth < sunriseAzimuth || nowSunAzimuth > sunsetAzimuth)) {
 			$('#clock').append("<style>#sun:before{content: '🌚' !important;}</style>");			
@@ -509,16 +537,13 @@ ul.clock-labels li.hour-num {
 		}
 		setAngle('#hour_wrapper', sunRelativeTime*6);
 		setAngle('#min_wrapper', moonRelativeTime*6);
-
 		window.setTimeout(update_clock, 60000);
-
 	};
 	function no_location() {
 		location_available = false;
 		$('#location_status').html("Please allow location to be accessed and reload the page.");
 		console.log('location not available');
 		window.setTimeout(update_clock, 60000);
-
 	};
 
 	function update_clock() {
