@@ -315,35 +315,59 @@ ul.clock-labels li.hour-num {
 	function get_relative_time(rise, set, now) {
 		var day_or_night = null;
 		var day_length = -rise + set;
+		var night_length = 360-day_length;
+		// console.log('day_length degrees: '+day_length);
+		// console.log('night_length degrees: '+night_length);
 		var day_min_length = day_length / 30;
+		var night_min_length = night_length / 30;
+
 		var now_distance_from_rise = now - rise;
-		var now_ticks_past_set = now_distance_from_rise / day_min_length;
-		if (now < rise || now > set) {
+		var now_distance_from_set = now - set;
+
+		// Night time before sunrise
+		if (now < rise) {
+			var now_ticks_before_rise = now_distance_from_rise / night_min_length;
 			day_or_night = 'night';
-			if (now_ticks_past_set < 16) {
-				return now_ticks_past_set + 45;
+			// console.log('night hour length: '+night_min_length);
+			if (now_ticks_before_rise < 16) {
+				return now_ticks_before_rise + 45;
 			} else {
-				return now_ticks_past_set - 15;
+			  return now_ticks_before_rise - 15;
 			}
-		} else {
-			day_or_night = 'day';
-			if (now_ticks_past_set < 16) {
-				return now_ticks_past_set + 45;
+
+		// Night time after sunset
+		} else if (now > set) {
+			var now_ticks_after_set = now_distance_from_set / night_min_length;
+			day_or_night = 'night';
+			// console.log('night hour length: '+night_min_length);
+			if (now_ticks_after_set > 45) {
+				return now_ticks_after_set - 45;
 			} else {
-				return now_ticks_past_set - 15;
+			  return now_ticks_after_set + 15;
+			}
+
+		// Day time
+		} else {
+			var now_ticks_past_rise = now_distance_from_rise / day_min_length;
+			day_or_night = 'day';
+			// console.log('day hour length: '+day_min_length);
+			if (now_ticks_past_rise < 16) {
+				return now_ticks_past_rise + 45;
+			} else {
+				return now_ticks_past_rise - 15;
 			}
 		}
 	}
 
 	function get_wadokei_from_relative_time(relative_minutes) {
 		var wadokei_hour = Math.round(relative_minutes / 5);
-		console.log('wadokei hour: '+wadokei_hour);
+		// console.log('wadokei hour: '+wadokei_hour+ ' from minutes: '+relative_minutes);
 		var wadokei_animals = [
 			'Rabbit','Dragon','Snake','Horse','Goat','Monkey',
 			'Rooster','Dog','Pig','Rat','Ox','Tiger'
 		];
-		console.log(wadokei_animals);
-		return wadokei_animals[wadokei_hour-1];
+		// console.log(wadokei_animals);
+		return wadokei_animals[wadokei_hour];
 	}
 
 	function setAngle(wrapper, angle) {
@@ -356,7 +380,7 @@ ul.clock-labels li.hour-num {
 		location_available = true;
 		$('#location_status').hide();
 		$('#clock_canvas').show();
-
+		
 		var latitude = pos.coords.latitude;
 		var longitude = pos.coords.longitude;
 		$('#location_long').html(pos.coords.longitude);
@@ -367,8 +391,11 @@ ul.clock-labels li.hour-num {
 		var tomorrow = new Date();
 		tomorrow.setDate(tomorrow.getDate()+1);
 		console.log('updating clock: '+now);
-
 		var sunTimes = SunCalc.getTimes(now, latitude, longitude);
+		if (now >= sunTimes.sunset) {
+			console.log('updating sunTimes to be tomorrow');
+			sunTimes = SunCalc.getTimes(tomorrow, latitude, longitude);
+		}
 		var moonTimes = SunCalc.getMoonTimes(now, latitude, longitude);
 
 		var nowStr = date_to_time_string(now); 
@@ -505,10 +532,6 @@ ul.clock-labels li.hour-num {
 		var moonRelativeAnimal = get_wadokei_from_relative_time(moonRelativeTime);
 		console.log('Moon Wadokei: '+moonRelativeAnimal);
 		$('#now_moon_animal').html(moonRelativeAnimal);
-
-		if (false && (nowSunAzimuth < sunriseAzimuth || nowSunAzimuth > sunsetAzimuth)) {
-			$('#clock').append("<style>#sun:before{content: '🌚' !important;}</style>");			
-		}
 
 		if (sunRelativeTime < 2.5) {
 			$('body').css('background-color', '#F0F0FF');
