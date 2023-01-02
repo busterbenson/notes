@@ -429,7 +429,7 @@ ul.clock-labels li.hour-num {
 		$('#now_moon_phase').html(nowMoonPhase); 
 		$('#now_moon_angle').html(nowMoonAngle); 
 
-		if (nowMoonPhase < 0.5) {
+		if (nowMoonPhase < 0.05) {
 			$('#moon_styles').html("<style>#moon:before{content: '🌑' !important;}</style>");
 
 		} else if (nowMoonPhase < 0.2) {
@@ -457,6 +457,7 @@ ul.clock-labels li.hour-num {
 			$('#moon_styles').html("<style>#moon:before{content: '🌑' !important;}</style>");
 
 		}
+		console.log(nowMoonPhase);
 
 		var sunriseStr = date_to_time_string(sunTimes.sunrise);
 		$('#sunrise_string').html(sunriseStr);
