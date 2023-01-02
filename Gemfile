@@ -12,6 +12,6 @@ gem 'jekyll-email-protect'
 gem 'jekyll-redirect-from'
 
 
-group :jekyll_plugins do
-  gem "jekyll-youtube"
-end
+# group :jekyll_plugins do
+#   gem "jekyll-youtube"
+# end
