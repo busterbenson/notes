@@ -10,6 +10,7 @@ gem 'jekyll-responsive-image'
 gem 'jekyll-youtube'
 gem 'jekyll-email-protect'
 gem 'jekyll-redirect-from'
+gem 'jekyll-sass-converter', "~> 2.0"
 
 
 # group :jekyll_plugins do
