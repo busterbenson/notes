@@ -237,6 +237,7 @@ ul.clock-labels li.hour-num {
 
 	<div id="location_loaded" style="display: block;"> 
 		<p>
+			<div>location on: <span id="location_on"></span></div>
 			<div>lat: <span id="location_lat"></span></div>
 			<div>long: <span id="location_long"></span></div>
 		</p>
@@ -564,6 +565,7 @@ ul.clock-labels li.hour-num {
 	};
 	function no_location() {
 		location_available = false;
+		$('#location_on').html("no 2: "+navigator.geolocation);
 		$('#location_status').html("Please allow location to be accessed and reload the page.");
 		console.log('location not available');
 		window.setTimeout(update_clock, 60000);
@@ -572,8 +574,10 @@ ul.clock-labels li.hour-num {
 	function update_clock() {
 		if (navigator.geolocation) {
 			navigator.geolocation.getCurrentPosition(got_location, no_location);
+			$('#location_on').html("yes: "+got_location);
 		} else {
 			$('#location_status').html("Please allow location to be accessed and reload the page.");
+			$('#location_on').html("no 1: "+navigator.geolocation);
 			console.log('location not available');
 			location_available = false;
 		};
