@@ -385,6 +385,7 @@ ul.clock-labels li.hour-num {
 		
 		var latitude = pos.coords.latitude;
 		var longitude = pos.coords.longitude;
+		$('#location_on_yes').html("yes: "+pos);
 		$('#location_long').html(pos.coords.longitude);
 		$('#location_lat').html(pos.coords.latitude);
 		var now = new Date();
@@ -575,7 +576,6 @@ ul.clock-labels li.hour-num {
 	function update_clock() {
 		if (navigator.geolocation) {
 			navigator.geolocation.getCurrentPosition(got_location, no_location);
-			$('#location_on_yes').html("yes: "+got_location);
 		} else {
 			$('#location_status').html("Please allow location to be accessed and reload the page.");
 			$('#location_on_no').html("no 1: "+navigator.geolocation);
