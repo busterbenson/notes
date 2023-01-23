@@ -109,7 +109,7 @@ collections:
     output: true
     permalink: /:year/:month/:day/:slug
   mood:
-    output: false # Disabled for now
+    output: true 
     permalink: /mood/:name
   tarot:
     output: true
@@ -117,6 +117,9 @@ collections:
   symbol:
     output: true
     permalink: /symbol/:symbol
+  8bit:
+    output: true
+    permalink: /8bit/:name
 
 defaults:
   - scope:
@@ -143,3 +146,8 @@ defaults:
       type: "pages"
     values:
       layout: "tarot"
+  - scope: 
+      path: ""
+      type: "pages"
+    values:
+      layout: "8bit"

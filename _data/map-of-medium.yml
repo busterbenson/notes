@@ -112,7 +112,7 @@
       - 'visual-design'
     publications: 
       - 'user-experience-design-1':
-        name: 'UX Colletive'
+        name: 'UX Collective'
         url: 'https://medium.com/user-experience-design-1/'
         submissions: 'https://medium.com/user-experience-design-1/why-and-how-to-publish-with-the-ux-collective-8c8d1dd018a7'
 
@@ -360,7 +360,7 @@
     children: 
       - 'addiction'
       - 'marijuana'
-      - 'opiods'
+      - 'opioids'
       - 'pharmaceutical'
       - 'psychedelics'
 
@@ -370,8 +370,8 @@
   'marijuana': 
     name: 'Marijuana'
 
-  'opiods': 
-    name: 'Opiods'
+  'opioids': 
+    name: 'Opioids'
 
   'pharmaceutical':
     name: 'Pharmaceuticals'
