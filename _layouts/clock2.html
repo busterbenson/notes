@@ -237,6 +237,7 @@ ul.clock-labels li.hour-num {
 
 	<div id="location_loaded" style="display: block;"> 
 		<p>
+			<div>ENV: <span id="jekyll_environment">{{site.env.GOOGLE_API_KEY}}</span></div>
 			<div>location on no: <span id="location_on_no"></span></div>
 			<div>location on yes: <span id="location_on_yes"></span></div>
 			<div>lat: <span id="location_lat"></span></div>
@@ -386,6 +387,7 @@ ul.clock-labels li.hour-num {
 		var latitude = pos.coords.latitude;
 		var longitude = pos.coords.longitude;
 		$('#location_on_yes').html("yes: "+pos);
+		console.log(pos);
 		$('#location_long').html(pos.coords.longitude);
 		$('#location_lat').html(pos.coords.latitude);
 		var now = new Date();
