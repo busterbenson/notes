@@ -27,7 +27,7 @@ a:hover.button {
 
 <p><a href='/' class='button'>Homepage</a></p>
 
-<p><a href='https://750words.com' class='button'>750 Words</a></p>
+<p><a href='https://new.750words.com' class='button'>750 Words</a></p>
 
 <p><a href='https://github.com/busterbenson/public/blob/master/book-of-beliefs.md' class='button'>My Beliefs</a></p>
 
@@ -40,6 +40,8 @@ a:hover.button {
 <p><a href='https://pocket-biases.glideapp.io/' class='button'>Pocket Biases</a></p>
 
 <p><a href='/tarot' class='button'>Pocket Tarot</a></p>
+
+<p><a href='https://me.dm/@buster' class='button'>Mastodon</a></p>
 
 <p><a href='https://twitter.com/buster/' class='button'>Twitter</a></p>
 

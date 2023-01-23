@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 gem 'rmagick'
+gem 'nokogiri', "~> 1.13.10"
 gem 'jekyll'
 gem 'jekyll-paginate'
 gem 'jekyll-seo-tag'
@@ -11,8 +12,3 @@ gem 'jekyll-youtube'
 gem 'jekyll-email-protect'
 gem 'jekyll-redirect-from'
 gem 'jekyll-sass-converter', "~> 2.0"
-
-
-# group :jekyll_plugins do
-#   gem "jekyll-youtube"
-# end

@@ -8,4 +8,6 @@ Gemfile.lock
 .jekyll-cache
 .jekyll-metadata
 .git
+.bundle
 _site
+vendor
