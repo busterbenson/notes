@@ -563,9 +563,9 @@ ul.clock-labels li.hour-num {
 		setAngle('#min_wrapper', moonRelativeTime*6);
 		window.setTimeout(update_clock, 60000);
 	};
-	function no_location() {
+	function no_location(err) {
 		location_available = false;
-		$('#location_on').html("no 2: "+navigator.geolocation);
+		$('#location_on').html("geolocation error: "+`ERROR(${err.code}): ${err.message}`);
 		$('#location_status').html("Please allow location to be accessed and reload the page.");
 		console.log('location not available');
 		window.setTimeout(update_clock, 60000);
