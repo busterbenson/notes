@@ -1,0 +1,47 @@
+---
+layout: fullscreen
+---
+
+{% assign hexagrams = site.data.eightbit.hexagrams %}
+{% assign hex = hexagrams[page.title] %}
+
+<style>
+	.eightbit blockquote {
+		padding-left: 30px;
+	}
+	.eightbit li {
+		padding-bottom: 0.5em;
+	}
+	.eightbit li:last {
+		padding-bottom: 0;
+	}
+	.eightbit table {
+		width: 100%;
+	}
+	.eightbit td strong {
+		padding-right: 20px;
+	}
+</style>
+
+<section class="moods">
+	<div class="row justify-content-center">
+		<div class="col-12 eightbit"> 
+			<p>{{hex}}</p>
+
+			<p>{{content}}</p>
+		</div>
+	</div>
+</section>
+
+<script>
+	$(document).ready(function () {
+	  $(function () {
+			var today = new Date();
+			$( ".week" ).each(function( index ) {
+			  if (today < Date.parse($( this ).attr('data-date'))) {
+			  	$( this ).addClass('future-date');
+			  }
+			});
+	  })
+	});
+</script>

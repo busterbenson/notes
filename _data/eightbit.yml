@@ -1,0 +1,100 @@
+question:
+  one: 
+    label: Options
+    text: Are the possible paths that you could choose from clear to you?
+    hhh: head
+    domain: outside
+  two: 
+    label: Support
+    text: Do your close relationships and your community relate to you and have your back in this?
+    hhh: hands
+    domain: outside
+  three: 
+    label: Expectations
+    text: Do you feel aligned with cultural norms or conventional expectations that might pressure you to act in a certain way?
+    hhh: heart
+    domain: outside
+  four: 
+    label: Circumstances
+    text: Do you believe your current circumstances grant you the time, capacity, and resources needed to address this question now?
+    hhh: head
+    domain: inside
+  five: 
+    label: Ability
+    text: Do you feel like you have the skills and know-how required to address this question on your own?
+    hhh: hands
+    domain: inside
+  six: 
+    label: Intuition
+    text: Do you trust your natural instincts about how you should address this question?
+    hhh: heart
+    domain: inside
+
+trigrams:
+  '000': 
+    name_outside: Waiting For The 
+    name_inside: Moon
+    color: Black
+    iching_trigram: ☷
+    iching_name: Earth
+
+  '010':
+    name_outside: Ripe 
+    name_inside: Fruit
+    color: Green
+    iching_trigram: ☵
+    iching_name: Water
+
+  '110':
+    name_outside: Dispersed 
+    name_inside: Breeze
+    color: Cyan
+    iching_trigram: ☴
+    iching_name: Wind
+
+  '100':
+    name_outside: Abstract 
+    name_inside: Blade
+    color: Blue
+    iching_trigram: ☶
+    iching_name: Mountain
+
+  '001':
+    name_outside: Fresh 
+    name_inside: Sprout
+    color: Red
+    iching_trigram: ☳
+    iching_name: Thunder
+
+  '111':
+    name_outside: Familiar 
+    name_inside: Sun
+    color: White
+    iching_trigram: ☰
+    iching_name: Heaven
+
+  '011':
+    name_outside: Sacred 
+    name_inside: Cup
+    color: Yellow
+    iching_trigram: ☱
+    iching_name: Lake
+
+  '101':
+    name_outside: One With The 
+    name_inside: Storm
+    color: Magenta
+    iching_trigram: ☲
+    iching_name: Fire
+
+hexagrams:
+  '000000':
+    name: 'Waiting For The Moon'
+    pdf: https://www.dropbox.com/s/9lkon1gw2utu40h/02-48-the-magnetic.pdf?dl=0
+    hexagram: ䷁
+    upper: '000'
+    lower: '000'
+    iching_hex: 2
+    iching_names: Divine Yin, The Magnetic, The Receptive, The Creative
+    iching_desc: The earth in its devotion carries all things, good and even, without exception
+
