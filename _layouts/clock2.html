@@ -6,133 +6,28 @@ max_width: true
 
 <style>
 body {
-  background: #29B7E5;
   width: 100%;
+  font-family: Helvetica, sans-serif;
 }
 #clock_canvas {
   position: relative;
   color: #333;
   margin: 0;
-  padding: 100px 0;
-  font-family: Helvetica, sans-serif;
+  padding: 0;
 }
 #clock {
-  background: #fff;
-  border: 15px solid #222;
-  border-radius: 50%;
+  background-image: url("/assets/images/clock-bg-minimal.png");
+  background-size: contain;
   position: relative;
   width: 350px;
   height: 350px;
   margin: 0 auto;
   padding: 0;
 }
-ul.clock-labels {
-	padding-inline-start: 0;
-  list-style: none;
-  top: 0;
-  background-color: #900;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  text-align: center;
-
-  left: 120px;
-  font-size: 23px;
-  letter-spacing: -1.6px;
-  line-height: 45px;
-}
-
-ul.clock-labels li.hour-num {
-  position: absolute;
-  top: -10 !important;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  transform-origin: 50% 100%;
-  height: 160px;
-  background-color: transparent;
-
-  width: 80px;
-}
-.clock-labels span {
-  display: block;
-}
-.clock-labels li:nth-of-type(1) {
-  transform: rotate(30deg);
-}
-.clock-labels li:nth-of-type(1) span {
-  transform: rotate(-30deg);
-}
-.clock-labels li:nth-of-type(2) {
-  transform: rotate(60deg);
-}
-.clock-labels li:nth-of-type(2) span {
-  transform: rotate(-60deg);
-}
-.clock-labels li:nth-of-type(3) {
-  transform: rotate(90deg);
-}
-.clock-labels li:nth-of-type(3) span {
-  transform: rotate(-90deg);
-}
-.clock-labels li:nth-of-type(4) {
-  transform: rotate(120deg);
-}
-.clock-labels li:nth-of-type(4) span {
-  transform: rotate(-120deg);
-}
-.clock-labels li:nth-of-type(5) {
-  transform: rotate(150deg);
-}
-.clock-labels li:nth-of-type(5) span {
-  transform: rotate(-150deg);
-}
-.clock-labels li:nth-of-type(6) {
-  transform: rotate(180deg);
-}
-.clock-labels li:nth-of-type(6) span {
-  transform: rotate(-180deg);
-}
-.clock-labels li:nth-of-type(7) {
-  transform: rotate(210deg);
-}
-.clock-labels li:nth-of-type(7) span {
-  transform: rotate(-210deg);
-}
-.clock-labels li:nth-of-type(8) {
-  transform: rotate(240deg);
-}
-.clock-labels li:nth-of-type(8) span {
-  transform: rotate(-240deg);
-}
-.clock-labels li:nth-of-type(9) {
-  transform: rotate(270deg);
-}
-.clock-labels li:nth-of-type(9) span {
-  transform: rotate(-270deg);
-}
-.clock-labels li:nth-of-type(10) {
-  transform: rotate(300deg);
-}
-.clock-labels li:nth-of-type(10) span {
-  transform: rotate(-300deg);
-}
-.clock-labels li:nth-of-type(11) {
-  transform: rotate(330deg);
-}
-.clock-labels li:nth-of-type(11) span {
-  transform: rotate(-330deg);
-}
-.clock-labels li:nth-of-type(12) {
-  transform: rotate(360deg);
-}
-.clock-labels li:nth-of-type(12) span {
-  transform: rotate(-360deg);
-}
 #hour_wrapper, #min_wrapper {
   position: absolute;
-  width: 320px;
-  height: 320px;
+  width: 350px;
+  height: 350px;
   background-color: transparent;
   margin: 0;
   padding: 0;
@@ -140,71 +35,65 @@ ul.clock-labels li.hour-num {
 .hand {
   position: absolute;
   bottom: 50%;
-  transform-origin: 50% 100%;
+	transform-origin: center;
+	/* border: 1px solid #000;*/
 }
 #sun {
-  background: #666;
-  left: 152px;
-  width: 13px;
-  height: 105px;
-  border-radius: 10px;
+  left: 160px;
+  height: 180px;
+}
+#moon {
+  left: 160px;
+  height: 165px;
 }
 #sun:before {
 	background: transparent;
-  border-radius: 50%;
   content: "🌞";
-  font-size: 40px;
   display: block;
   position: absolute;
-  top: -20px;
-  left: -15px;
-  width: 40px;
-  height: 40px;	
+  font-size: 50px;
+  top: 0px;
+  left: 0px; // half of font-size?
+  width: 50px;
+  height: 50px;	
+}
+#moon:before {
+	background: transparent;
+  content: "🌕";
+  display: block;
+  position: absolute;
+  font-size: 30px;
+  top: 0px;
+  left: 0px; // half of font-size?
+  width: 30px;
+  height: 30px;	
 }
 #sun:after {
-  background: #666;
-  border-radius: 50%;
+/*  border-radius: 50%;
   content: "";
   display: block;
   position: absolute;
   bottom: -8px;
   width: 13px;
   height: 16px;
-}
-#moon {
-  background: #ddd;
-  left: 155px;
-  width: 9px;
-  height: 125px;
-  border-radius: 8px;f
-}
-#moon:before {
-	background: transparent;
-  border-radius: 50%;
-  content: "🌕";
-  font-size: 30px;
-  display: block;
-  position: absolute;
-  top: -15px;
-  left: -10px;
-  width: 30px;
-  height: 30px;	
+*/
 }
 #moon:after {
-  background: #ddd;
-  border-radius: 50%;
+/*  border-radius: 50%;
   content: "";
   display: block;
   position: absolute;
   bottom: -8px;
-  width: 9px;
+  width: 13px;
   height: 16px;
+*/
 }
 </style>
 
 <div>
 
 	<div id="moon_styles"></div>
+	<div id="moon_height"></div>
 
 	<div id="location_status">
 		Loading 🌞 and 🌛 data from the universe. Hold, please.
@@ -212,20 +101,6 @@ ul.clock-labels li.hour-num {
 
 	<div id="clock_canvas" style="display: none;">
 		<div id="clock">
-			<ul class='clock-labels '>
-	      <li class='hour-num'><span>•</span></li>
-	      <li class='hour-num'><span>•</span></li>
-	      <li class='hour-num'><span>set</span></li>
-	      <li class='hour-num'><span>•</span></li>
-	      <li class='hour-num'><span>•</span></li>
-	      <li class='hour-num'><span>•</span></li>
-	      <li class='hour-num'><span>•</span></li>
-	      <li class='hour-num'><span>•</span></li>
-	      <li class='hour-num'><span>rise</span></li>
-	      <li class='hour-num'><span>•</span></li>
-	      <li class='hour-num'><span>•</span></li>
-	      <li class='hour-num'><span>•</span></li>
-	    </ul>
 	    <div id='hour_wrapper'>
 	      <div id="sun" class='hand hour'></div>
 	    </div>
@@ -235,11 +110,8 @@ ul.clock-labels li.hour-num {
 		</div>
 	</div>
 
-	<div id="location_loaded" style="display: block;"> 
+	<div id="location_loaded" style="display: none;"> 
 		<p>
-			<div>ENV: <span id="jekyll_environment">{{site.env.GOOGLE_API_KEY}}</span></div>
-			<div>location on no: <span id="location_on_no"></span></div>
-			<div>location on yes: <span id="location_on_yes"></span></div>
 			<div>lat: <span id="location_lat"></span></div>
 			<div>long: <span id="location_long"></span></div>
 		</p>
@@ -253,6 +125,7 @@ ul.clock-labels li.hour-num {
 			<div>Now Sun Animal: <span id="now_sun_animal"></span></div>
 			<div>Now Sun azimuth: <span id="now_azimuth"></span></div>
 			<div>Now Sun altitude: <span id="now_altitude"></span></div>
+			<div>Now Moon height above Sun: <span id="now_moon_relative_altitude"></span></div>
 		</p>
 		<p>
 			<div>Now Moon Time: <span id="now_moon_time"></span></div>
@@ -319,8 +192,6 @@ ul.clock-labels li.hour-num {
 		var day_or_night = null;
 		var day_length = -rise + set;
 		var night_length = 360-day_length;
-		// console.log('day_length degrees: '+day_length);
-		// console.log('night_length degrees: '+night_length);
 		var day_min_length = day_length / 30;
 		var night_min_length = night_length / 30;
 
@@ -331,7 +202,6 @@ ul.clock-labels li.hour-num {
 		if (now < rise) {
 			var now_ticks_before_rise = now_distance_from_rise / night_min_length;
 			day_or_night = 'night';
-			// console.log('night hour length: '+night_min_length);
 			if (now_ticks_before_rise < 16) {
 				return now_ticks_before_rise + 45;
 			} else {
@@ -342,7 +212,6 @@ ul.clock-labels li.hour-num {
 		} else if (now > set) {
 			var now_ticks_after_set = now_distance_from_set / night_min_length;
 			day_or_night = 'night';
-			// console.log('night hour length: '+night_min_length);
 			if (now_ticks_after_set > 45) {
 				return now_ticks_after_set - 45;
 			} else {
@@ -353,7 +222,6 @@ ul.clock-labels li.hour-num {
 		} else {
 			var now_ticks_past_rise = now_distance_from_rise / day_min_length;
 			day_or_night = 'day';
-			// console.log('day hour length: '+day_min_length);
 			if (now_ticks_past_rise < 16) {
 				return now_ticks_past_rise + 45;
 			} else {
@@ -364,12 +232,10 @@ ul.clock-labels li.hour-num {
 
 	function get_wadokei_from_relative_time(relative_minutes) {
 		var wadokei_hour = Math.round(relative_minutes / 5);
-		// console.log('wadokei hour: '+wadokei_hour+ ' from minutes: '+relative_minutes);
 		var wadokei_animals = [
 			'Rabbit','Dragon','Snake','Horse','Goat','Monkey',
 			'Rooster','Dog','Pig','Rat','Ox','Tiger'
 		];
-		// console.log(wadokei_animals);
 		return wadokei_animals[wadokei_hour];
 	}
 
@@ -395,6 +261,17 @@ ul.clock-labels li.hour-num {
 		yesterday.setDate(yesterday.getDate()-1);
 		var tomorrow = new Date();
 		tomorrow.setDate(tomorrow.getDate()+1);
+
+		// add days and hours
+		var day_shift = 0;
+		var hour_shift = 0;
+		now.setDate(now.getDate() + day_shift)
+		now.setHours(now.getHours() + hour_shift);
+		yesterday.setDate(yesterday.getDate() + day_shift)
+		yesterday.setHours(yesterday.getHours() + hour_shift);
+		tomorrow.setDate(tomorrow.getDate() + day_shift)
+		tomorrow.setHours(tomorrow.getHours() + hour_shift);
+
 		console.log('updating clock: '+now);
 		var sunTimes = SunCalc.getTimes(now, latitude, longitude);
 		if (now >= sunTimes.sunset) {
@@ -415,6 +292,8 @@ ul.clock-labels li.hour-num {
 		$('#now_altitude').html(nowSunAltitude); 
 
 		var nowMoonPos = SunCalc.getMoonPosition(now, latitude, longitude);
+		console.log('moon: ');
+		console.log(nowMoonPos);
 		var nowMoonAzimuth = nowMoonPos.azimuth * 180 / Math.PI;
 		var nowMoonAltitude = nowMoonPos.altitude;
 		var nowMoonDistance = nowMoonPos.distance;
@@ -510,6 +389,11 @@ ul.clock-labels li.hour-num {
 		$('#moonrise_azimuth').html(moonriseAzimuth); 
 		$('#moonrise_altitude').html(moonriseAltitude); 
 
+		var moon_height = 165+((sunriseAzimuth-moonriseAzimuth)/5);
+		$('#now_moon_relative_altitude').html(165-moon_height);
+		$('#moon_height').html("<style>#moon{height: "+moon_height.toString()+"px; !important;}</style>");
+
+
 		var moonSet;
 		if (!moonTimes.set) {
 			var tomorrowMoonTimes = SunCalc.getMoonTimes(tomorrow, latitude, longitude);
@@ -539,28 +423,28 @@ ul.clock-labels li.hour-num {
 		$('#now_moon_animal').html(moonRelativeAnimal);
 
 		if (sunRelativeTime < 2.5) {
-			$('body').css('background-color', '#F0F0FF');
+			// $('body').css('background-color', '#F0F0FF');
 
 		} else if (sunRelativeTime < 12.5) {
-			$('body').css('background-color', '#29B7E5');
+			// $('body').css('background-color', '#29B7E5');
 			
 		} else if (sunRelativeTime < 16.5) {
-			$('body').css('background-color', '#7591B6');
+			// $('body').css('background-color', '#7591B6');
 						
 		} else if (sunRelativeTime < 42.5) {
-			$('body').css('background-color', '#3A4460');
+			// $('body').css('background-color', '#3A4460');
 			
 		} else if (sunRelativeTime < 47.5) {
-			$('body').css('background-color', '#7591B6');
+			// $('body').css('background-color', '#7591B6');
 			
 		} else if (sunRelativeTime < 52.5) {
-			$('body').css('background-color', '#FDC559');
+			// $('body').css('background-color', '#FDC559');
 			
 		} else if (sunRelativeTime < 57.5) {
-			$('body').css('background-color', '#29B7E5');
+			// $('body').css('background-color', '#29B7E5');
 			
 		} else {
-			$('body').css('background-color', '#F0F0FF');
+			// $('body').css('background-color', '#F0F0FF');
 			
 		}
 		setAngle('#hour_wrapper', sunRelativeTime*6);
