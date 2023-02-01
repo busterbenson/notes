@@ -40,11 +40,11 @@ body {
 }
 #sun {
   left: 160px;
-  height: 180px;
+  height: 168px;
 }
 #moon {
   left: 160px;
-  height: 165px;
+  height: 153px;
 }
 #sun:before {
 	background: transparent;
@@ -391,7 +391,7 @@ body {
 
 		var moon_height = 165+((sunriseAzimuth-moonriseAzimuth)/5);
 		$('#now_moon_relative_altitude').html(165-moon_height);
-		$('#moon_height').html("<style>#moon{height: "+moon_height.toString()+"px; !important;}</style>");
+		//$('#moon_height').html("<style>#moon{height: "+moon_height.toString()+"px; !important;}</style>");
 
 
 		var moonSet;
