@@ -5,9 +5,13 @@ max_width: true
 ---
 
 <style>
+* {
+  background: transparent;
+}
 body {
   width: 100%;
   font-family: Helvetica, sans-serif;
+  background-color: #fff;
 }
 #clock_canvas {
   position: relative;
@@ -16,7 +20,7 @@ body {
   padding: 0;
 }
 #clock {
-  background-image: url("/assets/images/clock/clock-bg-minimal.png");
+  background-image: url("/assets/images/clock/clock-bg-minimal-3.png");
   background-size: contain;
   position: relative;
   width: 350px;
@@ -24,7 +28,7 @@ body {
   margin: 0 auto;
   padding: 0;
 }
-#hour_wrapper, #min_wrapper {
+#hour_wrapper, #min_wrapper, #seasons_wrapper {
   position: absolute;
   width: 350px;
   height: 350px;
@@ -37,6 +41,13 @@ body {
   bottom: 50%;
 	transform-origin: center;
 	/* border: 1px solid #000;*/
+}
+#seasons {
+  background-image: url("/assets/images/clock/clock-seasons-3.png");
+  background-size: contain;
+  top: 0;
+  height: 350px;
+  width: 350px;
 }
 #sun {
   left: 160px;
@@ -101,6 +112,9 @@ body {
 
 	<div id="clock_canvas" style="display: none;">
 		<div id="clock">
+	    <div id='seasons_wrapper'>
+	      <div id="seasons" class='hand season'></div>
+	    </div>
 	    <div id='hour_wrapper'>
 	      <div id="sun" class='hand hour'></div>
 	    </div>
@@ -449,6 +463,77 @@ body {
 		}
 		setAngle('#hour_wrapper', sunRelativeTime*6);
 		setAngle('#min_wrapper', moonRelativeTime*6);
+
+		// March/Spring Equinox occurs on March 21 (day 79, 92 days)
+		// June/Summer Solstice occurs on June 21 (day 171, 92 days)
+		// September/Autumn Equinox occurs on September 21 (day 263, 91 days)
+		// December/Winter Solstice occurs on Dec 21 (day 355, 90 days without leap year)
+		var year_start = new Date(now.getFullYear(), 0, 0);
+		var diff = now - year_start;
+		var oneDay = 1000 * 60 * 60 * 24;
+		var day_of_year = Math.floor(diff / oneDay);
+		var season = 0; // 0 = summer, 1 = fall, 2 = winter, 3 = spring
+		var day_of_season = 0;
+		var seasons_degree = 0;
+		var season_length = 0;
+		var day_of_year_jun, day_of_year_sep, day_of_year_dec, day_of_year_mar = 0;
+		var leap_year = false;
+		day_of_year_mar = 79;
+		day_of_year_jun = 170;
+		day_of_year_sep = 263;
+		day_of_year_dec = 355;
+		var leap_year_modulus = now.getFullYear() % 4; // leap year = 0
+		if (leap_year_modulus = 0) {
+			leap_year = true;
+			day_of_year_mar = 80;
+			day_of_year_jun = 171;
+			day_of_year_sep = 264;
+			day_of_year_dec = 356;
+		} 
+
+		// Calculate the day of the season that it is and translat it to degrees
+		console.log('Day of year: ' + day_of_year);
+		if (day_of_year >= day_of_year_jun && day_of_year < day_of_year_sep) {
+			console.log('Summer');
+			day_of_season = day_of_year - day_of_year_jun;
+			length_of_season = day_of_year_sep - day_of_year_jun;
+			seasons_degree = (day_of_season / length_of_season) * length_of_season;
+
+		} else if (day_of_year >= day_of_year_sep && day_of_year < day_of_year_dec) {
+			console.log('Fall');
+			day_of_season = day_of_year - day_of_year_sep;
+			length_of_season = day_of_year_dec - day_of_year_sep;
+			seasons_degree = 90 + (day_of_season / length_of_season) *length_of_season;
+
+		} else if (day_of_year >= day_of_year_dec) {
+			console.log('Winter');
+			season = 'winter';
+			day_of_season = day_of_year - day_of_year_dec;
+			if (leap_year_modulus == 3) {
+				length_of_season = day_of_year_mar - day_of_year_dec + 1;
+			} else {
+				length_of_season = day_of_year_mar - day_of_year_dec;				
+			}
+			seasons_degree = 180 + (day_of_season / length_of_season) *length_of_season;
+
+		} else if (day_of_year < day_of_year_mar) {
+			season = 'winter';
+			day_of_season = 12 + day_of_year;
+			if (leap_year_modulus == 0) {
+				length_of_season = 12 + day_of_year_mar + 1;
+			} else {
+				length_of_season = 12 + day_of_year_mar;				
+			}
+			seasons_degree = 180 + (day_of_season / length_of_season) *length_of_season;
+
+		} else if (day_of_year >= day_of_year_mar && day_of_year < day_of_year_jun) {
+			console.log('Spring');
+			day_of_season = day_of_year - day_of_year_mar;
+			length_of_season = day_of_year_jun - day_of_year_mar;
+			seasons_degree = 270 + (day_of_season / length_of_season) *length_of_season;
+		}
+
+		setAngle('#seasons_wrapper', seasons_degree);
 		window.setTimeout(update_clock, 60000);
 	};
 	function no_location(err) {
