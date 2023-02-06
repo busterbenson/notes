@@ -1,0 +1,7 @@
+{% assign hexagrams = site.data.eightbit.hexagrams %}
+{% assign hexagram = hexagrams[include.hexagram] %}
+
+<div style="text-align: center;">
+	<strong>{{ hexagram.name }}</strong> 
+	<span id="hexagram-suit-{{include.hexagram}}"></span>
+</div>

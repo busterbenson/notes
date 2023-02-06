@@ -1,93 +1,104 @@
 question:
   one: 
     label: Options
-    text: Are the possible paths that you could choose from clear to you?
+    text: Are the possible paths that you could choose from clear to you right now?
     hhh: head
-    domain: outside
+    domain: external
   two: 
     label: Support
-    text: Do your close relationships and your community relate to you and have your back in this?
+    text: Do your closest relationships and community have your back in this?
     hhh: hands
-    domain: outside
+    domain: external
   three: 
     label: Expectations
-    text: Do you feel aligned with cultural norms or conventional expectations that might pressure you to act in a certain way?
+    text: Are you aligned with how cultural norms and conventional expectations would have you address this?
     hhh: heart
-    domain: outside
+    domain: external
   four: 
     label: Circumstances
-    text: Do you believe your current circumstances grant you the time, capacity, and resources needed to address this question now?
+    text: Do you have enough time, space, and resources to address this properly?
     hhh: head
-    domain: inside
+    domain: internal
   five: 
     label: Ability
-    text: Do you feel like you have the skills and know-how required to address this question on your own?
+    text: Do you have the skills and know-how required to address this question on your own?
     hhh: hands
-    domain: inside
+    domain: internal
   six: 
     label: Intuition
-    text: Do you trust your natural instincts about how you should address this question?
+    text: Do you trust your natural instincts to direct you down the right path?
     hhh: heart
-    domain: inside
+    domain: internal
+  seven:
+    label: The Universe
+    text: Do you have faith that the universe will help you navigate this question area?
+    hhh: 
+    domain: external
+  eight: 
+    label: Your Self
+    text: Do you have faith in yourself to figure this out one way or another?
+    hhh:
+    domain: internal
 
 trigrams:
   '000': 
-    name_outside: Waiting For The 
-    name_inside: Moon
+    name_external: Waiting For The 
+    name_internal: Moon
     color: Black
     iching_trigram: ☷
     iching_name: Earth
 
   '010':
-    name_outside: Ripe 
-    name_inside: Fruit
+    name_external: Bursting 
+    name_internal: Fruit
     color: Green
     iching_trigram: ☵
     iching_name: Water
 
   '110':
-    name_outside: Dispersed 
-    name_inside: Breeze
+    name_external: Quest For The 
+    name_internal: Breeze
     color: Cyan
     iching_trigram: ☴
     iching_name: Wind
 
   '100':
-    name_outside: Abstract 
-    name_inside: Blade
+    name_external: The Idea Of A  
+    name_internal: Blade
     color: Blue
     iching_trigram: ☶
     iching_name: Mountain
 
   '001':
-    name_outside: Fresh 
-    name_inside: Sprout
+    name_external: Brand New  
+    name_internal: Sprout
     color: Red
     iching_trigram: ☳
     iching_name: Thunder
 
   '111':
-    name_outside: Familiar 
-    name_inside: Sun
+    name_external: Same Old  
+    name_internal: Sun
     color: White
     iching_trigram: ☰
     iching_name: Heaven
 
   '011':
-    name_outside: Sacred 
-    name_inside: Cup
+    name_external: Holding The  
+    name_internal: Cup
     color: Yellow
     iching_trigram: ☱
     iching_name: Lake
 
   '101':
-    name_outside: One With The 
-    name_inside: Storm
+    name_external: Changing With The 
+    name_internal: Storm
     color: Magenta
     iching_trigram: ☲
     iching_name: Fire
 
 hexagrams:
+
   '000000':
     name: 'Waiting For The Moon'
     pdf: https://www.dropbox.com/s/9lkon1gw2utu40h/02-48-the-magnetic.pdf?dl=0
@@ -96,5 +107,727 @@ hexagrams:
     lower: '000'
     iching_hex: 2
     iching_names: Divine Yin, The Magnetic, The Receptive, The Creative
-    iching_desc: The earth in its devotion carries all things, good and even, without exception
+    iching_image: Double Earth, expansiveness of space
+    iching_desc: The Earth in its devotion carries all things, good and even, without exception.
+
+  '000001':
+    name: 'Waiting For The Sprout'
+    pdf: https://www.dropbox.com/s/traxa3695tmev3p/24-return.pdf?dl=0
+    hexagram: 
+    upper: '000'
+    lower: '001'
+    iching_hex: 24
+    iching_names: Return, Turning Point
+    iching_image: Thunder within the Earth
+    iching_desc: Waking back up after a period of darkness, movement is just starting up again, the return of health/understanding/etc after a lack.
+
+  '000010':
+    name: 'Waiting For The Fruit'
+    pdf: https://www.dropbox.com/s/mhpisvcgi46y0k9/07-B-Discipline.pdf?dl=0
+    hexagram: 
+    upper: '000'
+    lower: '010'
+    iching_hex: 7
+    iching_names: The Army, Discipline
+    iching_image: The groundwater stored within the earth
+    iching_desc: An organizing force that inspires the disorganized masses that have unrealized potential stored within them. 
+
+  '000011':
+    name: 'Waiting For The Cup'
+    pdf: https://www.dropbox.com/s/xnkphs5kc85f0zw/19-approach.pdf?dl=0
+    hexagram: 
+    upper: '000'
+    lower: '011'
+    iching_hex: 19
+    iching_names: Prevailing, Approach
+    iching_image: Earth borders (approaches) a lake
+    iching_desc: Becoming great (two strong lines at bottom, like thunder). Something great is emerging into the world and welcomed from above. 
+
+  '000100':
+    name: 'Waiting For The Cup'
+    pdf: https://www.dropbox.com/s/i5h0d4y5io4431e/15-B-Temperance.pdf?dl=0
+    hexagram: 
+    upper: '000'
+    lower: '100'
+    iching_hex: 15
+    iching_names: Modesty, Temperance
+    iching_image: Within the earth, a mountain full of treasures
+    iching_desc: The quiet modest greatness that is hidden from sight. 
+
+  '000101':
+    name: 'Waiting For The Storm'
+    pdf: https://www.dropbox.com/s/5u2fsn62aij53ul/36-clouded-perception.pdf?dl=0
+    hexagram: 
+    upper: '000'
+    lower: '101'
+    iching_hex: 36
+    iching_names: Clouded Perception, Dying Embers
+    iching_image: Sun has set into the earth
+    iching_desc: Darkening of the light, sunset. Bring the light inside, but let it still shine. Use caution and be reserved rather than showy/all-knowing. Wait until darkness has fully set in before arising. Let the time of transition take place.
+
+  '000110':
+    name: 'Waiting For The '
+    pdf: https://www.dropbox.com/s/1mb5b2lvdh267pn/46-pushing-upward.pdf?dl=0
+    hexagram: 
+    upper: '000'
+    lower: '110'
+    iching_hex: 46
+    iching_names: Ascendance, Pushing Upward
+    iching_image: Wood in the earth grows upward
+    iching_desc: Requires effort of will, modesty, adaptability, without haste or rest. 
+
+  '000111':
+    name: 'Waiting For The Sun'
+    pdf: https://www.dropbox.com/s/tem53jnwzry7opr/11-B-Harmony.pdf?dl=0
+    hexagram: 
+    upper: '000'
+    lower: '111'
+    iching_hex: 11
+    iching_names: Peace, Harmony
+    iching_image: Heaven on Earth
+    iching_desc: Earth moving down, heaven moving up, all in harmony. Those with power help those without. 
+
+
+
+
+  '001000':
+    name: 'Brand New Moon'
+    pdf: https://www.dropbox.com/s/yozj1rg54k0hku9/16-B-Enthusiasm-self-deception-repose.pdf?dl=0
+    hexagram: 
+    upper: '001'
+    lower: '000'
+    iching_hex: 16
+    iching_names: Enthusiasm, Motivation
+    iching_image: Thunder exploding out of the Earth
+    iching_desc: Delegate some responsibility and help them make things happen.
+
+  '001001':
+    name: 'Brand New Sprout'
+    pdf: https://www.dropbox.com/s/qb6qifgda2mih0p/51-shock-thunder.pdf?dl=0
+    hexagram: 
+    upper: '001'
+    lower: '001'
+    iching_hex: 51
+    iching_names: Shock, Thunder
+    iching_image: Double thunder 
+    iching_desc: A sudden shocking change taking place.
+
+  '001010':
+    name: 'Brand New Fruit'
+    pdf: https://www.dropbox.com/s/m50z25801enr06b/40-liberation.pdf?dl=0
+    hexagram: 
+    upper: '001'
+    lower: '010'
+    iching_hex: 40
+    iching_names: Letting Loose, Liberation
+    iching_image: A thunderstorm clears the way for a gentler rain. 
+    iching_desc: Through movement and clearing away there is escape from peril. 
+
+  '001011':
+    name: 'Brand New Cup'
+    pdf: https://www.dropbox.com/s/qj5z1ogo87e56uz/54-propriety-making-do.pdf?dl=0
+    hexagram: 
+    upper: '001'
+    lower: '011'
+    iching_hex: 54
+    iching_names: Propriety, Making Do
+    iching_image: Thunder over a marsh
+    iching_desc: Something ominous and seemingly wrong will turn out okay if you are clever.
+
+  '001100':
+    name: 'Brand New Blade'
+    pdf: https://www.dropbox.com/s/u53rzuro4a7718p/62-small-powers.pdf?dl=0
+    hexagram: 
+    upper: '001'
+    lower: '100'
+    iching_hex: 62
+    iching_names: Small Excess, Small Powers
+    iching_image: Thunder above a hill
+    iching_desc: It's time to be humble and not force things to happen even if you know they're right. 
+
+  '001101':
+    name: 'Brand New Storm'
+    pdf: https://www.dropbox.com/s/sf4hzhvlauh6lzt/55-abundance-expansion-of-awareness.pdf?dl=0
+    hexagram: 
+    upper: '001'
+    lower: '101'
+    iching_hex: 55
+    iching_names: Abundance, Expansion of Awareness
+    iching_image: Thunder and Lightning
+    iching_desc: Movement and clarity allow you to move into the peak of your potential, but also prepare for the tides of change.
+
+  '001110':
+    name: 'Brand New Breeze'
+    pdf: https://www.dropbox.com/s/7sts7squnzrxezl/32-consistency.pdf?dl=0
+    hexagram: 
+    upper: '001'
+    lower: '110'
+    iching_hex: 32
+    iching_names: Steadfastness, Consistency
+    iching_image: Thunder and wind
+    iching_desc: Stay the course even if it feels like things are moving too slowly.
+
+  '001111':
+    name: 'Brand New Sun'
+    pdf: https://www.dropbox.com/s/u3ze7lbfrsv3esw/34-great-power.pdf?dl=0
+    hexagram: 
+    upper: '001'
+    lower: '111'
+    iching_hex: 34
+    iching_names: Great Injury, Great Power
+    iching_image: Thunder in the sky above with great power
+    iching_desc: It's time to use your increasing power for the good.
+
+
+
+
+  '010000':
+    name: 'Bursting Moon'
+    pdf: https://www.dropbox.com/s/479e8viz3s99i48/08-B-Holding-together.pdf?dl=0
+    hexagram: 8
+    upper: '010'
+    lower: '000'
+    iching_hex: 
+    iching_names: Teamwork, Holding Together
+    iching_image: Waters on the surface of the earth
+    iching_desc: Everything flows together, leads to the sea, led by a singular gravitational force.
+
+  '010001':
+    name: 'Bursting Sprout'
+    pdf: https://www.dropbox.com/s/batz5aqc17qiram/03-B-Difficulty.pdf?dl=0
+    hexagram: 3
+    upper: '010'
+    lower: '001'
+    iching_hex: 
+    iching_names: Retrenchment, Difficulty, Difficulty at the beginning
+    iching_image: Clouds above and thunder below
+    iching_desc: In the chaos of beginnings, order is already finding foot. Discernment and organization in the early phases of something.
+
+  '010010':
+    name: 'Bursting Fruit'
+    pdf: https://www.dropbox.com/s/ycg2dejni8u4rhb/29-danger.pdf?dl=0
+    hexagram: 29
+    upper: '010'
+    lower: '010'
+    iching_hex: 
+    iching_names: Water, Danger, Plunging In
+    iching_image: Double water is the repetition of danger
+    iching_desc: Water always reaches its destination, and in this case we should become familiar with danger and doubly protect ourselves externally and internally. Remain true to one’s self under all conditions and dangers… be vigilant and thorough. 
+
+  '010011':
+    name: 'Bursting Cup'
+    pdf: https://www.dropbox.com/s/1qsvshbp3ztr8zr/60-restrictive-regulations.pdf?dl=0
+    hexagram: 60
+    upper: '010'
+    lower: '011'
+    iching_hex: 
+    iching_names: Frugality, Restrictive Regulations, Limitation
+    iching_image: An overflowing lake
+    iching_desc: Set the correct limitations based on capacity / opportunity, not more or less.
+
+  '010100':
+    name: 'Bursting Blade'
+    pdf: https://www.dropbox.com/s/kt8xz47px2nxbw9/39-impasse.pdf?dl=0
+    hexagram: 39
+    upper: '010'
+    lower: '100'
+    iching_hex: 
+    iching_names: Admonishment, Impasse, Obstruction
+    iching_image: A deep abyss in front of us and an inaccessible mountain behind us. 
+    iching_desc: Surrounded by obstacles. Use the stillness of the mountain to identify the obstacle within ourselves so that it can be overcome. 
+
+  '010101':
+    name: 'Bursting Storm'
+    pdf: https://www.dropbox.com/s/rafu2wl73a6vjwp/63-completion.pdf?dl=0
+    hexagram: 63
+    upper: '010'
+    lower: '101'
+    iching_hex: 
+    iching_names: Fulfillment, Completion, After Completion
+    iching_image: Water in a kettle over a fire. Generates energy (steam).
+    iching_desc: The resulting tension demands caution. If water boils over, the flame goes out. If the flame is too hot, the water evaporates. But when in balance and harmony, everything is in perfect order and magic happens.
+
+  '010110':
+    name: 'Bursting Breeze'
+    pdf: https://www.dropbox.com/s/d98443hktkiqjap/48-the-well-2.pdf?dl=0
+    hexagram: 48
+    upper: '010'
+    lower: '110'
+    iching_hex: 
+    iching_names: The Well
+    iching_image: Wood below the water, like a bucket in a well
+    iching_desc: Wood brings water up. Like in a tree. Use this organizing, vital source to bring about a benefit to the whole. 
+
+  '010111':
+    name: 'Bursting Sun'
+    pdf: https://www.dropbox.com/s/08g89auksj5b7cp/05-B-Waiting.pdf?dl=0
+    hexagram: 5
+    upper: '010'
+    lower: '111'
+    iching_hex: 
+    iching_names: Waiting, Nourishment
+    iching_image: Clouds in the heavens, a sign that it will rain. 
+    iching_desc: We shouldn't worry about what's happening, but let it happen and take care of ourselves, and prepare ourselves for what will come next. 
+
+
+
+
+
+  '011000':
+    name: 'Holding The Moon'
+    pdf: https://www.dropbox.com/s/xf42dtb6ig5k4ix/45-gathering-together-contraction.pdf?dl=0
+    hexagram: 45
+    upper: '011'
+    lower: '000'
+    iching_hex: 
+    iching_names: Illness, Gathering Together
+    iching_image: Marsh above the Earth
+    iching_desc: All things high and low converge and come together in alignment.
+
+  '011001':
+    name: 'Holding The Sprout'
+    pdf: https://www.dropbox.com/s/4eu3rsxkf9glu61/17-following.pdf?dl=0
+    hexagram: 17
+    upper: '011'
+    lower: '101'
+    iching_hex: 
+    iching_names: The Chase, Following
+    iching_image: Thunder in the marsh
+    iching_desc: Let the quiet things grow for a while, and in the meantime rest. 
+
+  '011010':
+    name: 'Holding The Fruit'
+    pdf: https://www.dropbox.com/s/lsrxfjrtrqe9l53/47-oppression-2.pdf?dl=0
+    hexagram: 47
+    upper: '011'
+    lower: '010'
+    iching_hex: 
+    iching_names: Trapped, Oppression
+    iching_image: An abyss beneath a marsh that drains it empty
+    iching_desc: Things are strained and distressed, the only path forward is to rely on skillful attention to the details. 
+
+  '011011':
+    name: 'Holding The Cup'
+    pdf: https://www.dropbox.com/s/el34w42ea4qke6v/58-joyous-lake-self-indulgence.pdf?dl=0
+    hexagram: 58
+    upper: '011'
+    lower: '011'
+    iching_hex: 
+    iching_names: Lake, Joy
+    iching_image: Two lakes, combined
+    iching_desc: Appreciate and enjoy your inner strength, but watch out for being too complacent. 
+
+  '011100':
+    name: 'Holding The Blade'
+    pdf: https://www.dropbox.com/s/jo46i6z9rigf9up/31-initiative-influence.pdf?dl=0
+    hexagram: 31
+    upper: '011'
+    lower: '100'
+    iching_hex: 
+    iching_names: Initiative, Influence
+    iching_image: A lake situated high up in the mountains
+    iching_desc: A good time to unite polarities, and to learn from the differences you become exposed to. 
+
+  '011101':
+    name: 'Holding The Storm'
+    pdf: https://www.dropbox.com/s/gpgxbnkxsvlkcvn/49-metamorphosis.pdf?dl=0
+    hexagram: 49
+    upper: '011'
+    lower: '001'
+    iching_hex: 
+    iching_names: Metamorphosis
+    iching_image: Fire in the lake, extinguishing each other
+    iching_desc: Both sides will battle it out and both will come out changed for the better. 
+
+  '011110':
+    name: 'Holding The Breeze'
+    pdf: https://www.dropbox.com/s/ok3ktccus2xhai9/28-critical-mass-great-preponderance.pdf?dl=0
+    hexagram: 28
+    upper: '011'
+    lower: '110'
+    iching_hex: 
+    iching_names: Great Excess, Critical Mass
+    iching_image: A forest submerged in a great body of water 
+    iching_desc: There's a great deal of pressure on a structure that cannot hold much longer. Prepare for change and think a few steps beyond the current moment. 
+
+  '011111':
+    name: 'Holding The Sun'
+    pdf: https://www.dropbox.com/s/jz5u4fg4tj741eb/43-resoluteness.pdf?dl=0
+    hexagram: 43
+    upper: '011'
+    lower: '000'
+    iching_hex: 
+    iching_names: Breakthrough, Stride, Resoluteness
+    iching_image: A marsh being sucked up into the sky
+    iching_desc: After a long period of tension, there will finally be a breakthrough, but it will be different from what you originally planned. 
+
+
+
+
+
+  '100000':
+    name: 'The Idea Of A Moon'
+    pdf: https://www.dropbox.com/s/5pbpif5fuo3usn5/23-disintegration.pdf?dl=0
+    hexagram: 23
+    upper: '100'
+    lower: '000'
+    iching_hex: 
+    iching_names: Loss, Disintegration, Splitting Apart
+    iching_image: A mountain rests on soft earth, and will be split apart by it
+    iching_desc: Admit to the bad times and stay quiet and let the earth below do it’s work. 
+
+  '100001':
+    name: 'The Idea Of A Sprout'
+    pdf: https://www.dropbox.com/s/k16x4pfkcfa2u1r/27-nourishment.pdf?dl=0
+    hexagram: 27
+    upper: '100'
+    lower: '001'
+    iching_hex: 
+    iching_names: The Cheeks, Nourishment, Corners of the Mouth
+    iching_image: Thunder under a mountain 
+    iching_desc: No need to act other than to feed and nourish those who are in need, including yourself.
+
+  '100010':
+    name: 'The Idea Of A Fruit'
+    pdf: https://www.dropbox.com/s/hzlv3fa419mlc98/04-B-inexperience.pdf?dl=0
+    hexagram: 4
+    upper: '100'
+    lower: '010'
+    iching_hex: 
+    iching_names: Blindness, Youthful Folly
+    iching_image: A well springs up at the foot of a mountain
+    iching_desc: That feeling of stopping in perplexity at the foot of a mountain, not knowing how to proceed at first, but with youthful energy trying lots of things and eventually figuring it out. 
+
+  '100011':
+    name: 'The Idea Of A Cup'
+    pdf: https://www.dropbox.com/s/8ufhecbifaz141o/41-compensating-sacrifice.pdf?dl=0
+    hexagram: 
+    upper: '100'
+    lower: '011'
+    iching_hex: 41
+    iching_names: Decrease, Compensating
+    iching_image: A lake at the foot of a mountain
+    iching_desc: Find ways to make small investments and sacrifices to help bring things back into equilibrium. 
+
+  '100100':
+    name: 'The Idea Of A Blade'
+    pdf: https://www.dropbox.com/s/3761adr69b9b8ph/52-keeping-still.pdf?dl=0
+    hexagram: 
+    upper: '100'
+    lower: '100'
+    iching_hex: 52
+    iching_names: Mountain, Keeping Still
+    iching_image: Two mountains conjoined 
+    iching_desc: Find a stable place to rest and do nothing for now. 
+
+  '100101':
+    name: 'The Idea Of A Storm'
+    pdf: https://www.dropbox.com/s/5erxt9msmouqpr5/22-persona.pdf?dl=0
+    hexagram: 
+    upper: '100'
+    lower: '101'
+    iching_hex: 22
+    iching_names: Luminosity, Beauty and Grace, Decoration, Persona
+    iching_image: Fire at the foot of a mountain 
+    iching_desc: Make time for small aesthetic improvements, enjoy the small things, and let the rest wait.
+
+  '100110':
+    name: 'The Idea Of A Breeze'
+    pdf: https://www.dropbox.com/s/ir0miqzoabziskk/18-repair.pdf?dl=0
+    hexagram: 
+    upper: '100'
+    lower: '110'
+    iching_hex: 18
+    iching_names: Work, Repair
+    iching_image: When the wind blows slow on the mountain, spoiling the vegetation
+    iching_desc: Work on repairing damage that has been done, removing things that have been spoiled. 
+
+  '100111':
+    name: 'The Idea Of A Sun'
+    pdf: https://www.dropbox.com/s/rkh8kp9lcbc93pz/26-controlled-power.pdf?dl=0
+    hexagram: 
+    upper: '100'
+    lower: '111'
+    iching_hex: 26
+    iching_names: Controlled Power, Taming Power of the Great
+    iching_image: Heaven in the midst of a mountain
+    iching_desc: By being judicious about how strength and power are used, it has accumulated and become available. 
+
+
+
+
+
+
+  '101000':
+    name: 'Changing With The Moon'
+    pdf: https://www.dropbox.com/s/ndwt8wytrwjwo34/35-advance-of-consciousness.pdf?dl=0
+    hexagram: 
+    upper: '101'
+    lower: '000'
+    iching_hex: 35
+    iching_names: Advance, Advance of Consciousness
+    iching_image: 
+    iching_desc: 
+
+  '101001':
+    name: 'Changing With The Sprout'
+    pdf: https://www.dropbox.com/s/jgkyvdbxolcz6dt/21-discernment.pdf?dl=0
+    hexagram: 
+    upper: '101'
+    lower: '001'
+    iching_hex: 21
+    iching_names: Biting, Discernment
+    iching_image: 
+    iching_desc: 
+
+  '101010':
+    name: 'Changing With The Fruit'
+    pdf: https://www.dropbox.com/s/r8x03monv34qs3w/64-unfinished-business.pdf?dl=0
+    hexagram: 
+    upper: '101'
+    lower: '010'
+    iching_hex: 64
+    iching_names: Unfulfillment, Unfinished Business
+    iching_image: 
+    iching_desc: 
+
+  '101011':
+    name: 'Changing With The Cup'
+    pdf: https://www.dropbox.com/s/4t9us07u74a6rzp/38-mutual-alienation.pdf?dl=0
+    hexagram: 38
+    upper: '101'
+    lower: '011'
+    iching_hex: 
+    iching_names: Abandoned, Mutual Alienation
+    iching_image: 
+    iching_desc: 
+
+  '101100':
+    name: 'Changing With The Blade'
+    pdf: https://www.dropbox.com/s/iu9fdddb8zpe5mt/56-transition.pdf?dl=0
+    hexagram: 56
+    upper: '101'
+    lower: '100'
+    iching_hex: 
+    iching_names: The Traveler, Transition
+    iching_image: 
+    iching_desc: 
+
+  '101101':
+    name: 'Changing With The Storm'
+    pdf: https://www.dropbox.com/s/gu09i415s4fr2nc/30-clarity.pdf?dl=0
+    hexagram: 
+    upper: '101'
+    lower: '101'
+    iching_hex: 30
+    iching_names: Fire, Clarity
+    iching_image: 
+    iching_desc: 
+
+  '101110':
+    name: 'Changing With The Breeze'
+    pdf: https://www.dropbox.com/s/uchfj8uyjm8han1/50-the-sacrificial-vessel.pdf?dl=0
+    hexagram: 
+    upper: '101'
+    lower: '110'
+    iching_hex: 50
+    iching_names: The Cauldron, Sacrificial Vessel
+    iching_image: 
+    iching_desc: 
+
+  '101111':
+    name: 'Changing With The Sun'
+    pdf: https://www.dropbox.com/s/5hk0w2z08fqahzj/14-B-Wealth.pdf?dl=0
+    hexagram: 
+    upper: '101'
+    lower: '111'
+    iching_hex: 14
+    iching_names: Great Harvest, Wealth
+    iching_image: 
+    iching_desc: 
+
+
+
+
+
+
+  '110000':
+    name: 'Quest For The Moon'
+    pdf: https://www.dropbox.com/s/f7mitd7yrc0sov2/20-contemplation.pdf?dl=0
+    hexagram: 
+    upper: '110'
+    lower: '000'
+    iching_hex: 20
+    iching_names: View, Contemplation
+    iching_image: The wind blowing over the earth, and the grass bends to its power
+    iching_desc: Visiting the ends of the earth, getting into the details and both considering them and making small corrections along the way.
+
+  '110001':
+    name: 'Quest For The Sprout'
+    pdf: https://www.dropbox.com/s/mst0f99417l805u/42-increase-breakthrough.pdf?dl=0
+    hexagram: 
+    upper: '110'
+    lower: '001'
+    iching_hex: 42
+    iching_names: Increase, Bounty
+    iching_image: Wind and thunder both increase and strengthen each other
+    iching_desc: Creating a positive feedback loop that reinforces itself.
+
+  '110010':
+    name: 'Quest For The Fruit'
+    pdf: https://www.dropbox.com/s/va3y7o2ceuyb728/59-expansion-dispersion.pdf?dl=0
+    hexagram: 
+    upper: '110'
+    lower: '010'
+    iching_hex: 59
+    iching_names: Flowing, Expansion, Dispersion, Dissolution
+    iching_image: Wind blowing over the water, creating spray and mist
+    iching_desc: The warm breezes of spring, melting ice, breaking it up, reuniting things that had been separate or frozen for a while.
+
+  '110011':
+    name: 'Quest For The Cup'
+    pdf: https://www.dropbox.com/s/w6wvbq3oljknj1n/61-inner-truth.pdf?dl=0
+    hexagram: 
+    upper: '110'
+    lower: '011'
+    iching_hex: 61
+    iching_names: Sincerity, Inner Truth
+    iching_image: Wind over a lake, stirring it
+    iching_desc: The force of wind has to be quite strong to stir a lake. Like pigs and fishes (stubborn creatures) it won't happen easily. You must find the right way to approach the situation, and expect resistance.
+
+  '110100':
+    name: 'Quest For The Blade'
+    pdf: https://www.dropbox.com/s/i7lgqb2c3v76smq/53-gradual-progress.pdf?dl=0
+    hexagram: 
+    upper: '110'
+    lower: '100'
+    iching_hex: 53
+    iching_names: Progress, Gradual Progress, Development
+    iching_image: A tree on a mountain, visible from afar, growing slowly
+    iching_desc: Influencing people also happens slowly, over time. It requires setting roots, understanding the terrain, and building in a way that is natural and sustainable in that context.
+
+  '110101':
+    name: 'Quest For The Storm'
+    pdf: https://www.dropbox.com/s/hti41n1t1l1gf43/37-the-family.pdf?dl=0
+    hexagram: 
+    upper: '110'
+    lower: '101'
+    iching_hex: 37
+    iching_names: The Family, The Clan
+    iching_image: The stirring wind created by the energy of a fire
+    iching_desc: Influence that works outwardly from within. Built from trust, intuition, and belief. 
+
+  '110110':
+    name: 'Quest For The Breeze'
+    pdf: https://www.dropbox.com/s/c0qeof2ra16je0u/57-penetration.pdf?dl=0
+    hexagram: 
+    upper: '110'
+    lower: '110'
+    iching_hex: 57
+    iching_names: Wind, Penetration, The Gentle
+    iching_image: A ceaseless, penetrating double wind. 
+    iching_desc: It's instrument is time, consistency, persistence. Over-communication. Repetition. 
+
+  '110111':
+    name: 'Quest For The Sun'
+    pdf: https://www.dropbox.com/s/xleql3skc6okzun/09-B-Passive-restraint.pdf?dl=0
+    hexagram: 
+    upper: '110'
+    lower: '111'
+    iching_hex: 9
+    iching_names: Small Cattle, Passive Restraint, The Taming Power of the Small
+    iching_image: Wind that drives clouds together in the sky
+    iching_desc: No great or lasting effects, but small and local effects. 
+
+
+
+
+
+  '111000':
+    name: 'Same Old Moon'
+    pdf: https://www.dropbox.com/s/cemxvy2k7o0y0z5/12-B-Divorcement.pdf?dl=0
+    hexagram: 
+    upper: '111'
+    lower: '000'
+    iching_hex: 12
+    iching_names: Stagnation, Divorcement
+    iching_image: 
+    iching_desc: 
+
+  '110101':
+    name: 'Same Old Sprout'
+    pdf: https://www.dropbox.com/s/dxufflllzvk66bq/13-B-Union-of-forces.pdf?dl=0
+    hexagram: 
+    upper: '111'
+    lower: '001'
+    iching_hex: 13
+    iching_names: Gathering, Union of Forces
+    iching_image: 
+    iching_desc: Call to adventure. Recruiting to fill a skill gap.
+
+  '111010':
+    name: 'Same Old Fruit'
+    pdf: https://www.dropbox.com/s/i5vhovqpgu6glri/06-B-Stress.pdf?dl=0
+    hexagram: 
+    upper: '111'
+    lower: '010'
+    iching_hex: 6
+    iching_names: The Court, Stress
+    iching_image: 
+    iching_desc: 
+
+  '111011':
+    name: 'Same Old Cup'
+    pdf: https://www.dropbox.com/s/gopn8w2pfe0hvuq/10-B-Cautious-advance.pdf?dl=0
+    hexagram: 
+    upper: '111'
+    lower: '011'
+    iching_hex: 10
+    iching_names: Treading on tail of a tiger, Cautious Advance
+    iching_image: 
+    iching_desc: 
+
+  '111100':
+    name: 'Same Old Blade'
+    pdf: https://www.dropbox.com/s/umsyv55u20ilfge/33-retreat-2.pdf?dl=0
+    hexagram: 
+    upper: '111'
+    lower: '100'
+    iching_hex: 33
+    iching_names: The Little Pig, Retreat
+    iching_image: 
+    iching_desc: 
+
+  '111101':
+    name: 'Same Old Storm'
+    pdf: https://www.dropbox.com/s/o10namzmmt65jpu/25-innocence.pdf?dl=0
+    hexagram: 
+    upper: '111'
+    lower: '101'
+    iching_hex: 25
+    iching_names: Propriety, Innocence
+    iching_image: 
+    iching_desc: 
+
+  '111110':
+    name: 'Same Old Breeze'
+    pdf: https://www.dropbox.com/s/tkbs5mbt4y97qaz/44-temptation.pdf?dl=0
+    hexagram: 
+    upper: '111'
+    lower: '110'
+    iching_hex: 44
+    iching_names: Rendezvous, Temptation
+    iching_image: 
+    iching_desc: 
+
+  '111111':
+    name: 'Same Old Sun'
+    pdf: https://www.dropbox.com/s/fn2mlm395lctbmz/01-B-The-dynamic.pdf?dl=0
+    hexagram: 
+    upper: '111'
+    lower: '111'
+    iching_hex: 1
+    iching_names: Heaven, The Dynamic
+    iching_image: 
+    iching_desc: 
 
