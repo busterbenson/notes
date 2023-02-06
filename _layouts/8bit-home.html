@@ -54,11 +54,11 @@ layout: fullscreen
 
 	<div class="intention-oracle row">
 		<div class="row col-12" style="margin-bottom: 3em;">
-			<div id="intention" class="col-6">
+			<div id="intention" class="col-12 col-sm-6">
 				<h2>I'd like insight into...</h2>
 				<textarea style="font-size: 20px; width: 90%; max-width: 90%; min-height: 2em; padding: 10px;"></textarea>
 			</div>
-			<div id="oracle" class="col-6">
+			<div id="oracle" class="col-12 col-sm-6">
 				<h2>8-Bit Oracle</h2>
 
 				<div class="row col-12 justify-content-center">
@@ -84,14 +84,14 @@ layout: fullscreen
 							<div id="q1-answer" class="answer col-3">&nbsp;</div>
 							<div id="q2-answer" class="answer col-3">&nbsp;</div>
 							<div id="q3-answer" class="answer col-3">&nbsp;</div>
-							<div id="q7-answer" class="answer col-3">&nbsp;</div>
+							<div id="q4-answer" class="answer col-3">&nbsp;</div>
 						</div>
 					</div>
 					<div class="col-6">
 						<div class="row">
-							<div id="q4-answer" class="answer col-3">&nbsp;</div>
 							<div id="q5-answer" class="answer col-3">&nbsp;</div>
 							<div id="q6-answer" class="answer col-3">&nbsp;</div>
+							<div id="q7-answer" class="answer col-3">&nbsp;</div>
 							<div id="q8-answer" class="answer col-3">&nbsp;</div>
 						</div>
 					</div>
@@ -101,11 +101,9 @@ layout: fullscreen
 
 		</div>
 
-		<div class="col-12 col-md-6">
-			<h2>External</h2>
-
+		<div class="col-12">
 			<div class="row">
-				<div class="question col-6">
+				<div class="question col-12 col-sm-6 col-md-3">
 					<strong>{{questions.one.label}}:</strong> 
 					<div>{{questions.one.text}}</div>
 					<div>
@@ -113,7 +111,7 @@ layout: fullscreen
 						<button id="q1-0" d-val="0" type="button" class="q-button btn btn-secondary">No</button>
 					</div>	
 				</div>
-				<div class="question col-6">
+				<div class="question col-12 col-sm-6 col-md-3">
 					<strong>{{questions.two.label}}:</strong> 
 					<div>{{questions.two.text}}</div>
 					<div>
@@ -121,7 +119,7 @@ layout: fullscreen
 						<button id="q2-0" d-val="0" type="button" class="q-button btn btn-secondary">No</button>
 					</div>	
 				</div>
-				<div class="question col-6">
+				<div class="question col-12 col-sm-6 col-md-3">
 					<strong>{{questions.three.label}}:</strong> 
 					<div>{{questions.three.text}}</div>
 					<div>
@@ -129,22 +127,7 @@ layout: fullscreen
 						<button id="q3-0" d-val="0" type="button" class="q-button btn btn-secondary">No</button>
 					</div>	
 				</div>
-				<div class="question col-6">
-					<strong>{{questions.seven.label}}:</strong> 
-					<div>{{questions.seven.text}}</div>
-					<div>
-						<button id="q7-1" d-val="1" type="button" class="q-button btn btn-secondary">Yes</button>
-						<button id="q7-0" d-val="0" type="button" class="q-button btn btn-secondary">No</button>
-					</div>	
-				</div>
-			</div>
-		</div>
-
-		<div class="col-12 col-md-6">
-			<h2>Internal</h2>
-
-			<div class="row">
-				<div class="question col-6">
+				<div class="question col-12 col-sm-6 col-md-3">
 					<strong>{{questions.four.label}}:</strong> 
 					<div>{{questions.four.text}}</div>
 					<div>
@@ -152,7 +135,8 @@ layout: fullscreen
 						<button id="q4-0" d-val="0" type="button" class="q-button btn btn-secondary">No</button>
 					</div>	
 				</div>
-				<div class="question col-6">
+
+				<div class="question col-12 col-sm-6 col-md-3">
 					<strong>{{questions.five.label}}:</strong> 
 					<div>{{questions.five.text}}</div>
 					<div>
@@ -160,7 +144,7 @@ layout: fullscreen
 						<button id="q5-0" d-val="0" type="button" class="q-button btn btn-secondary">No</button>
 					</div>	
 				</div>
-				<div class="question col-6">
+				<div class="question col-12 col-sm-6 col-md-3">
 					<strong>{{questions.six.label}}:</strong>
 					<div>{{questions.six.text}}</div>
 					<div>
@@ -168,7 +152,15 @@ layout: fullscreen
 						<button id="q6-0" d-val="0" type="button" class="q-button btn btn-secondary">No</button>
 					</div>	
 				</div>
-				<div class="question col-6">
+				<div class="question col-12 col-sm-6 col-md-3">
+					<strong>{{questions.seven.label}}:</strong> 
+					<div>{{questions.seven.text}}</div>
+					<div>
+						<button id="q7-1" d-val="1" type="button" class="q-button btn btn-secondary">Yes</button>
+						<button id="q7-0" d-val="0" type="button" class="q-button btn btn-secondary">No</button>
+					</div>	
+				</div>
+				<div class="question col-12 col-sm-6 col-md-3">
 					<strong>{{questions.eight.label}}:</strong>
 					<div>{{questions.eight.text}}</div>
 					<div>
