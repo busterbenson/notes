@@ -662,7 +662,7 @@ hexagrams:
     iching_hex: 37
     iching_names: The Family, The Clan
     iching_image: The stirring wind created by the energy of a fire
-    iching_desc: Influence that works outwardly from within. Built from trust, intuition, and belief. 
+    iching_desc: Influence that works outwardly from within. Built from trust, intuition, and belief. Caring for your relationships with those who share your space and for the space itself is the best way to conduct yourself. Dwell with people!
 
   '110110':
     name: 'Quest For The Breeze'
@@ -694,18 +694,18 @@ hexagrams:
     upper: '111'
     lower: '000'
     iching_hex: 12
-    iching_names: Stagnation, Divorcement
-    iching_image: 
-    iching_desc: 
+    iching_names: Standstill, Divorcement
+    iching_image: Heaven and Earth estranged
+    iching_desc: Heaven and Earth are facing different directions, not communicating, and consequently things are not lining up or uniting. 
 
-  '110101':
+  '111101':
     name: 'Same Old Sprout'
     pdf: https://www.dropbox.com/s/dxufflllzvk66bq/13-B-Union-of-forces.pdf?dl=0
     upper: '111'
     lower: '001'
     iching_hex: 13
-    iching_names: Gathering, Union of Forces
-    iching_image: 
+    iching_names: Gathering, Union of Forces, Fellowship
+    iching_image: Fire goes up to Heaven
     iching_desc: Call to adventure. Recruiting to fill a skill gap.
 
   '111010':
@@ -715,8 +715,8 @@ hexagrams:
     lower: '010'
     iching_hex: 6
     iching_names: The Court, Stress
-    iching_image: 
-    iching_desc: 
+    iching_image: Water flows away from Heaven
+    iching_desc: There's a perilous situation that has to contend with strong outside forces. Being pulled in different directions, and feeling stressed about choices that must be made. Be careful, don't attempt to do too much, and prevent things from spiraling out of control. 
 
   '111011':
     name: 'Same Old Cup'
@@ -724,9 +724,9 @@ hexagrams:
     upper: '111'
     lower: '011'
     iching_hex: 10
-    iching_names: Treading on tail of a tiger, Cautious Advance
-    iching_image: 
-    iching_desc: 
+    iching_names: Treading on Tail of a Tiger, Cautious Advance
+    iching_image: Heaven above a lake 
+    iching_desc: Be careful where you are treading. Advance cautiously and avoid volatile conditions if you hope to find safety. 
 
   '111100':
     name: 'Same Old Blade'
@@ -734,9 +734,9 @@ hexagrams:
     upper: '111'
     lower: '100'
     iching_hex: 33
-    iching_names: The Little Pig, Retreat
-    iching_image: 
-    iching_desc: 
+    iching_names: Withdrawal, Retreat
+    iching_image: A mountain beneath the sky
+    iching_desc: Despite appearances, retreat is actually a good strategy right now.
 
   '111101':
     name: 'Same Old Storm'
@@ -744,9 +744,9 @@ hexagrams:
     upper: '111'
     lower: '101'
     iching_hex: 25
-    iching_names: Propriety, Innocence
-    iching_image: 
-    iching_desc: 
+    iching_names: Innocence, The Unexpected
+    iching_image: Thunder rolls under heaven
+    iching_desc: Success is only possible if you're impeccably correct. If that's not possible, take no action at all.
 
   '111110':
     name: 'Same Old Breeze'
@@ -755,8 +755,8 @@ hexagrams:
     lower: '110'
     iching_hex: 44
     iching_names: Rendezvous, Temptation
-    iching_image: 
-    iching_desc: 
+    iching_image: Wind under Heaven 
+    iching_desc: You run into a surprising temptation, but try to avoid it if you can. 
 
   '111111':
     name: 'Same Old Sun'
@@ -764,7 +764,7 @@ hexagrams:
     upper: '111'
     lower: '111'
     iching_hex: 1
-    iching_names: Heaven, The Dynamic
-    iching_image: 
-    iching_desc: 
+    iching_names: Heaven, The Dynamic, Creative 
+    iching_image: The movement of Heaven in its full power 
+    iching_desc: You're in touch with the life force itself. Channel it into wise actions. 
 
