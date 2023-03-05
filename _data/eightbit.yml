@@ -15,8 +15,8 @@ question:
     hhh: heart
     domain: external
   four: 
-    label: Circumstances
-    text: Do you have enough time, space, and resources to address this properly?
+    label: Capacity
+    text: Do your current circumstances provide enough time, space, and resources to address this?
     hhh: head
     domain: internal
   five: 
@@ -118,6 +118,7 @@ hexagrams:
     iching_names: Return, Turning Point
     iching_image: Thunder within the Earth
     iching_desc: Waking back up after a period of darkness, movement is just starting up again, the return of health/understanding/etc after a lack.
+    notes: "Nothing but the the 6th bit: Intuition"
 
   '000010':
     name: 'Waiting For The Fruit'
@@ -128,6 +129,7 @@ hexagrams:
     iching_names: The Army, Discipline
     iching_image: The groundwater stored within the earth
     iching_desc: An organizing force that inspires the disorganized masses that have unrealized potential stored within them. 
+    notes: "Nothing but the the 5th bit: Ability"
 
   '000011':
     name: 'Waiting For The Cup'
@@ -140,7 +142,7 @@ hexagrams:
     iching_desc: Becoming great (two strong lines at bottom, like thunder). Something great is emerging into the world and welcomed from above. 
 
   '000100':
-    name: 'Waiting For The Cup'
+    name: 'Waiting For The Blade'
     pdf: https://www.dropbox.com/s/i5h0d4y5io4431e/15-B-Temperance.pdf?dl=0
     upper: '000'
     lower: '100'
@@ -148,6 +150,7 @@ hexagrams:
     iching_names: Modesty, Temperance
     iching_image: Within the earth, a mountain full of treasures
     iching_desc: The quiet modest greatness that is hidden from sight. 
+    notes: "Nothing but the the 4th bit: Capacity"
 
   '000101':
     name: 'Waiting For The Storm'
@@ -192,6 +195,7 @@ hexagrams:
     iching_names: Enthusiasm, Motivation
     iching_image: Thunder exploding out of the Earth
     iching_desc: Delegate some responsibility and help them make things happen.
+    notes: "Nothing but the the 3rd bit: Norms"
 
   '001001':
     name: 'Brand New Sprout'
@@ -275,6 +279,7 @@ hexagrams:
     iching_names: Teamwork, Holding Together
     iching_image: Waters on the surface of the earth
     iching_desc: Everything flows together, leads to the sea, led by a singular gravitational force.
+    notes: "Nothing but the the 2nd bit: Support"
 
   '010001':
     name: 'Bursting Sprout'
@@ -443,6 +448,7 @@ hexagrams:
     iching_names: Loss, Disintegration, Splitting Apart
     iching_image: A mountain rests on soft earth, and will be split apart by it
     iching_desc: Admit to the bad times and stay quiet and let the earth below do it’s work. 
+    notes: "Nothing but the the 1st bit: Options"
 
   '100001':
     name: 'The Idea Of A Sprout'
