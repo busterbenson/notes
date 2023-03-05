@@ -11,7 +11,7 @@ question:
     domain: external
   three: 
     label: Expectations
-    text: Are you aligned with how cultural norms and conventional expectations would have you address this?
+    text: Are you aligned with how cultural norms and expectations would want you to address this?
     hhh: heart
     domain: external
   four: 
