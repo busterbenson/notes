@@ -3,7 +3,7 @@
   {% include head.html %}
   <body>
 	    
-	  <div id="fullscreen" class="m-4 justify-content-center">
+	  <div id="fullscreen" class="justify-content-center">
 	  	<div class="{% if page.max_width or layout.max_width %}max_width{% endif %}">
 	    	{{ content }}
   		</div>
@@ -18,3 +18,9 @@
 		</script>
 	</body>
 </html>
+
+<style>
+#fullscreen {
+	margin: 24px;
+}
+</style>
