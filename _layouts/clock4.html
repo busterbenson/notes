@@ -26,8 +26,8 @@ body {
   background-image: url("/assets/images/clock/grid.png");
   background-size: contain;
   position: relative;
-  width: 350px;
-  height: 350px;
+  width: 2000px; /* was 350 */
+  height: 2000px; /* was 350 */
   margin: 0 auto;
   padding: 0;
 }
@@ -38,12 +38,14 @@ body {
   background-color: transparent;
   margin: 0;
   padding: 0;
+  display: none;
 }
 .hand {
   position: absolute;
   bottom: 50%;
 	transform-origin: center;
 	/* border: 1px solid #000;*/
+	display: none;
 }
 #seasons {
   background-image: url("/assets/images/clock/clock-seasons-3.png");
@@ -51,14 +53,17 @@ body {
   top: 0;
   height: 350px;
   width: 350px;
+  display: none;
 }
 #sun {
   left: 160px;
   height: 168px;
+  display: none;
 }
 #moon {
   left: 160px;
   height: 153px;
+  display: none;
 }
 #sun:before {
 	background: transparent;
@@ -70,6 +75,7 @@ body {
   left: 0px; // half of font-size?
   width: 50px;
   height: 50px;	
+  display: none;
 }
 #moon:before {
 	background: transparent;
@@ -81,6 +87,7 @@ body {
   left: 0px; // half of font-size?
   width: 30px;
   height: 30px;	
+  display: none;
 }
 #sun:after {
 /*  border-radius: 50%;
@@ -91,6 +98,7 @@ body {
   width: 13px;
   height: 16px;
 */
+  display: none;
 }
 #moon:after {
 /*  border-radius: 50%;
@@ -101,6 +109,7 @@ body {
   width: 13px;
   height: 16px;
 */
+  display: none;
 }
 </style>
 
