@@ -6,6 +6,7 @@
 ## Start the server 
 `rvm use 2.6.3` (if `rvm list` shows 2.3.4 is being used)
 `bundle exec jekyll serve --incremental`
+http://localhost:4000
 
 ## Working with images (using webp)
 - uses netlify's image_tag
