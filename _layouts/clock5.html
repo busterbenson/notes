@@ -460,8 +460,6 @@ body {
 			
 		}
 		setAngle('#hour_wrapper', sunRelativeTime*6);
-		console.log('hour_wrapper', sunRelativeTime*6);
-		console.log('sun angle: '+sunRelativeTime*6)
 		setAngle('#min_wrapper', moonRelativeTime*6);
 
 		// March/Spring Equinox occurs on March 21 (day 79, 92 days)
@@ -491,8 +489,8 @@ body {
 			day_of_year_dec = 356;
 		} 
 
-		var constellation_angle = day_of_year/365*360;
-		setAngle('#zodiac_wrapper', (sunRelativeTime*6)-constellation_angle);
+		var constellation_angle = (day_of_year-79)/365.25*360;
+		setAngle('#zodiac_wrapper', (sunRelativeTime*6)+constellation_angle);
 
 		// Calculate the day of the season that it is and translat it to degrees
 		if (day_of_year >= day_of_year_jun && day_of_year < day_of_year_sep) {
