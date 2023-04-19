@@ -26,8 +26,8 @@ body {
   background-image: url("/assets/images/clock/quirky-zodiac.png");
   background-size: contain;
   position: relative;
-  width: 1000px; /* was 350 */
-  height: 1000px; /* was 350 */
+  width: 1000px; 
+  height: 1000px; 
   margin: 0 auto;
   padding: 0;
   z-index: 2;
@@ -36,8 +36,8 @@ body {
   background-image: url("/assets/images/clock/quirky-bg.png");
   background-size: contain;
   position: relative;
-  width: 1000px; /* was 350 */
-  height: 1000px; /* was 350 */
+  width: 1000px; 
+  height: 1000px; 
   margin: 0 auto;
   padding: 0;
   z-index: 1;
@@ -79,40 +79,22 @@ body {
   content: "🌞";
   display: block;
   position: absolute;
-  font-size: 50px;
+  font-size: 60px;
   top: 0px;
   left: 0px; // half of font-size?
   width: 100px;
-  height: 100px;	
+  height: 100px;
 }
 #moon:before {
 	background: transparent;
   content: "🌕";
   display: block;
   position: absolute;
-  font-size: 40px;
+  font-size: 50px;
   top: 0px;
-  left: 0px; // half of font-size?
+  left: 0px; 
   width: 60px;
   height: 60px;	
-}
-#sun:after {
-  border-radius: 50%;
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -8px;
-  width: 13px;
-  height: 16px; 
-}
-#moon:after {
-  border-radius: 50%;
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -8px;
-  width: 13px;
-  height: 16px;
 }
 </style>
 
@@ -229,11 +211,11 @@ body {
 
 		var now_distance_from_rise = now - rise;
 		var now_distance_from_set = now - set;
-
 		// Night time before sunrise
 		if (now < rise) {
 			var now_ticks_before_rise = now_distance_from_rise / night_min_length;
 			day_or_night = 'night';
+			$('body').css('background-color', '#2244a3');
 			if (now_ticks_before_rise < 16) {
 				return now_ticks_before_rise + 45;
 			} else {
@@ -244,6 +226,7 @@ body {
 		} else if (now > set) {
 			var now_ticks_after_set = now_distance_from_set / night_min_length;
 			day_or_night = 'night';
+			$('body').css('background-color', '#2244a3');
 			if (now_ticks_after_set > 45) {
 				return now_ticks_after_set - 45;
 			} else {
@@ -254,6 +237,7 @@ body {
 		} else {
 			var now_ticks_past_rise = now_distance_from_rise / day_min_length;
 			day_or_night = 'day';
+			$('body').css('background-color', '#6278C6');
 			if (now_ticks_past_rise < 16) {
 				return now_ticks_past_rise + 45;
 			} else {
@@ -304,10 +288,8 @@ body {
 		tomorrow.setDate(tomorrow.getDate() + day_shift)
 		tomorrow.setHours(tomorrow.getHours() + hour_shift);
 
-		console.log('updating clock: '+now);
 		var sunTimes = SunCalc.getTimes(now, latitude, longitude);
 		if (now >= sunTimes.sunset) {
-			console.log('updating sunTimes to be tomorrow');
 			sunTimes = SunCalc.getTimes(tomorrow, latitude, longitude);
 		}
 		var moonTimes = SunCalc.getMoonTimes(now, latitude, longitude);
@@ -324,8 +306,6 @@ body {
 		$('#now_altitude').html(nowSunAltitude); 
 
 		var nowMoonPos = SunCalc.getMoonPosition(now, latitude, longitude);
-		console.log('moon: ');
-		console.log(nowMoonPos);
 		var nowMoonAzimuth = nowMoonPos.azimuth * 180 / Math.PI;
 		var nowMoonAltitude = nowMoonPos.altitude;
 		var nowMoonDistance = nowMoonPos.distance;
@@ -512,11 +492,9 @@ body {
 		} 
 
 		var constellation_angle = day_of_year/365*360;
-		console.log('constellation angle: '+constellation_angle);
 		setAngle('#zodiac_wrapper', (sunRelativeTime*6)-constellation_angle);
 
 		// Calculate the day of the season that it is and translat it to degrees
-		console.log('Day of year: ' + day_of_year);
 		if (day_of_year >= day_of_year_jun && day_of_year < day_of_year_sep) {
 			console.log('Summer');
 			day_of_season = day_of_year - day_of_year_jun;
