@@ -17,30 +17,50 @@ body {
 	margin: 37px !important;
 }
 #clock_canvas {
-  position: relative;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
-#stars {
-  background-image: url("/assets/images/clock/quirky-zodiac.png");
-  background-size: contain;
-  position: relative;
-  width: 1000px; 
-  height: 1000px; 
   margin: 0 auto;
   padding: 0;
-  z-index: 2;
+  position: relative;
 }
 #clock {
-  background-image: url("/assets/images/clock/quirky-bg.png");
-  background-size: contain;
   position: relative;
+  background-size: contain;
   width: 1000px; 
   height: 1000px; 
   margin: 0 auto;
   padding: 0;
   z-index: 1;
+}
+#stars {
+  background-image: url("/assets/images/clock/quirky-zodiac.png");
+  background-size: contain;
+  position: absolute;
+  width: 1000px; 
+  height: 1000px; 
+  margin: 0 auto;
+  padding: 0;
+  z-index: -10;
+}
+#earth {
+  background-image: url("/assets/images/clock/earth-and-circles.png");
+  background-size: contain;
+  position: absolute;
+  width: 1000px; 
+  height: 1000px; 
+  margin: 0 auto;
+  padding: 0;
+  z-index: 0;
+  opacity: 0.8;
+}
+#sky {
+  background-image: url("/assets/images/clock/sky.png");
+  background-size: contain;
+  position: absolute;
+  width: 1000px; 
+  height: 1000px; 
+  margin: 0 auto;
+  padding: 0;
+  z-index: 0;
+  opacity: 0;
 }
 #hour_wrapper, #min_wrapper, #seasons_wrapper, #zodiac_wrapper {
   position: absolute;
@@ -68,33 +88,35 @@ body {
 }
 #sun {
   left: 510px; 
-  height: 310px;
+  height: 315px;
 }
 #moon {
   left: 510px; 
-  height: 304px;
+  height: 315px;
 }
 #sun:before {
+  position: absolute;
 	background: transparent;
   content: "🌞";
   display: block;
-  position: absolute;
   font-size: 60px;
   top: 0px;
-  left: 0px; // half of font-size?
+  left: 0px; 
   width: 100px;
   height: 100px;
+  z-index: 10;
 }
 #moon:before {
+  position: absolute;
 	background: transparent;
   content: "🌕";
   display: block;
-  position: absolute;
   font-size: 50px;
   top: 0px;
   left: 0px; 
   width: 60px;
   height: 60px;	
+  z-index: 10;
 }
 </style>
 
@@ -110,8 +132,10 @@ body {
 	<div id="clock_canvas" style="display: none;">
 		<div id="clock">
 			<div id="zodiac_wrapper">
-				<div id="stars"></div>
+				<div id="stars"></div>			
 			</div>
+			<div id="earth"></div>
+			<div id="sky"></div>
 	    <div id='seasons_wrapper'>
 	      <div id="seasons" class='hand season'></div>
 	    </div>
@@ -121,6 +145,7 @@ body {
 	    <div id='min_wrapper'>
 	      <div id="moon" class='hand min'></div>
 	    </div>
+			
 		</div>
 	</div>
 
@@ -202,7 +227,7 @@ body {
 		return d.getHours() + ':' + (d.getMinutes()<10?'0':'') + d.getMinutes();
 	}
 
-	function get_relative_time(rise, set, now) {
+	function get_relative_time(rise, set, now, set_sky_color) {
 		var day_or_night = null;
 		var day_length = -rise + set;
 		var night_length = 360-day_length;
@@ -215,7 +240,9 @@ body {
 		if (now < rise) {
 			var now_ticks_before_rise = now_distance_from_rise / night_min_length;
 			day_or_night = 'night';
-			$('body').css('background-color', '#2244a3');
+			if (set_sky_color) {
+				$('body').css('background-color', '#2244a3');
+			}
 			if (now_ticks_before_rise < 16) {
 				return now_ticks_before_rise + 45;
 			} else {
@@ -226,7 +253,9 @@ body {
 		} else if (now > set) {
 			var now_ticks_after_set = now_distance_from_set / night_min_length;
 			day_or_night = 'night';
-			$('body').css('background-color', '#2244a3');
+			if (set_sky_color) {
+				$('body').css('background-color', '#2244a3');
+			}
 			if (now_ticks_after_set > 45) {
 				return now_ticks_after_set - 45;
 			} else {
@@ -237,7 +266,9 @@ body {
 		} else {
 			var now_ticks_past_rise = now_distance_from_rise / day_min_length;
 			day_or_night = 'day';
-			$('body').css('background-color', '#6278C6');
+			if (set_sky_color) {
+				$('body').css('background-color', '#6278C6');
+			}
 			if (now_ticks_past_rise < 16) {
 				return now_ticks_past_rise + 45;
 			} else {
@@ -304,6 +335,17 @@ body {
 		$('#now_time').html(nowSunTime);
 		$('#now_azimuth').html(nowSunAzimuth); 
 		$('#now_altitude').html(nowSunAltitude); 
+		if (nowSunAltitude < -0.1) {
+			$('#sky').css('opacity', 0);
+		} else if (nowSunAltitude < 0) {
+			var opacity = 1-(-nowSunAltitude / 0.1);
+			$('#sky').css('opacity', opacity);
+		} else if (nowSunAltitude < 0.125) {
+			var opacity = (nowSunAltitude / 0.25);
+			$('#sky').css('opacity', opacity);
+		} else {
+			$('#sky').css('opacity', 0.8);			
+		}
 
 		var nowMoonPos = SunCalc.getMoonPosition(now, latitude, longitude);
 		var nowMoonAzimuth = nowMoonPos.azimuth * 180 / Math.PI;
@@ -423,15 +465,15 @@ body {
 		$('#moonset_azimuth').html(moonsetAzimuth); 
 		$('#moonset_altitude').html(moonsetAltitude); 
 
-		var sunRelativeTime = get_relative_time(sunriseAzimuth, sunsetAzimuth, nowSunAzimuth);
+		var sunRelativeTime = get_relative_time(sunriseAzimuth, sunsetAzimuth, nowSunAzimuth, true);
 		$('#relative_sun_time').html(sunRelativeTime);
 		var sunRelativeAnimal = get_wadokei_from_relative_time(sunRelativeTime);
-		console.log('Sun Wadokei: '+sunRelativeAnimal);
+		//console.log('Sun Wadokei: '+sunRelativeAnimal);
 		$('#now_sun_animal').html(sunRelativeAnimal);
-		var moonRelativeTime = get_relative_time(moonriseAzimuth, moonsetAzimuth, nowMoonAzimuth);
+		var moonRelativeTime = get_relative_time(moonriseAzimuth, moonsetAzimuth, nowMoonAzimuth, false);
 		$('#relative_moon_time').html(moonRelativeTime);
 		var moonRelativeAnimal = get_wadokei_from_relative_time(moonRelativeTime);
-		console.log('Moon Wadokei: '+moonRelativeAnimal);
+		//console.log('Moon Wadokei: '+moonRelativeAnimal);
 		$('#now_moon_animal').html(moonRelativeAnimal);
 
 		if (sunRelativeTime < 2.5) {
