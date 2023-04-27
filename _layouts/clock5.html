@@ -12,6 +12,7 @@ body {
   width: 100%;
   font-family: Helvetica, sans-serif;
   background-color: #2244a3;
+  color: #fff;
 }
 #fullscreen {
 	margin: 37px !important;
@@ -53,6 +54,28 @@ body {
 }
 #sky {
   background-image: url("/assets/images/clock/sky.png");
+  background-size: contain;
+  position: absolute;
+  width: 1000px; 
+  height: 1000px; 
+  margin: 0 auto;
+  padding: 0;
+  z-index: 0;
+  opacity: 0;
+}
+#precession_background {
+  background-image: url("/assets/images/clock/precession-background.png");
+  background-size: contain;
+  position: absolute;
+  width: 1000px; 
+  height: 1000px; 
+  margin: 0 auto;
+  padding: 0;
+  z-index: 0;
+  opacity: 0.8;
+}
+#precession_foreground {
+  background-image: url("/assets/images/clock/precession-foreground.png");
   background-size: contain;
   position: absolute;
   width: 1000px; 
@@ -126,7 +149,7 @@ body {
 	<div id="moon_height"></div>
 
 	<div id="location_status">
-		Loading 🌞 and 🌛 data from the universe. Hold, please.
+		Loading 🌞 and 🌛 and ✨ data from the universe. Hold, please.
 	</div>
 
 	<div id="clock_canvas" style="display: none;">
@@ -145,6 +168,8 @@ body {
 	    <div id='min_wrapper'>
 	      <div id="moon" class='hand min'></div>
 	    </div>
+			<div id="precession_background"></div>			
+			<div id="precession_foreground"></div>			
 			
 		</div>
 	</div>
@@ -308,6 +333,12 @@ body {
 		yesterday.setDate(yesterday.getDate()-1);
 		var tomorrow = new Date();
 		tomorrow.setDate(tomorrow.getDate()+1);
+
+		// Precession
+		true_year = 9700 + now.getFullYear();
+		true_degrees = (true_year / 25771)*360;
+		setAngle('#precession_foreground', true_degrees);
+
 
 		// add days and hours
 		var day_shift = 0;
