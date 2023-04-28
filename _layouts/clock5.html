@@ -63,6 +63,16 @@ body {
   z-index: 0;
   opacity: 0;
 }
+#seasons_earth_tilt {
+  background-image: url("/assets/images/clock/seasons-earth-tilt.png");
+  background-size: contain;
+  position: absolute;
+  width: 1000px; 
+  height: 1000px; 
+  margin: 0 auto;
+  padding: 0;
+  z-index: 0;
+}
 #precession_background {
   background-image: url("/assets/images/clock/precession-background.png");
   background-size: contain;
@@ -98,14 +108,6 @@ body {
   position: absolute;
   bottom: 50%;
 	transform-origin: center;
-}
-#seasons {
-  background-image: url("/assets/images/clock/clock-seasons-3.png");
-  background-size: contain;
-  top: 0;
-  height: 350px;
-  width: 350px;
-  display: none;
 }
 #sun {
   left: 510px; 
@@ -157,15 +159,13 @@ body {
 			</div>
 			<div id="earth"></div>
 			<div id="sky"></div>
-	    <div id='seasons_wrapper'>
-	      <div id="seasons" class='hand season'></div>
-	    </div>
 	    <div id='hour_wrapper'>
 	      <div id="sun" class='hand hour'></div>
 	    </div>
 	    <div id='min_wrapper'>
 	      <div id="moon" class='hand min'></div>
 	    </div>
+			<div id="seasons_earth_tilt"></div>			
 			<div id="precession_background"></div>			
 			<div id="precession_foreground"></div>			
 			
@@ -331,12 +331,6 @@ body {
 		yesterday.setDate(yesterday.getDate()-1);
 		var tomorrow = new Date();
 		tomorrow.setDate(tomorrow.getDate()+1);
-
-		// Precession
-		true_year = 9700 + now.getFullYear();
-		true_degrees = (true_year / 25771)*360;
-		setAngle('#precession_foreground', true_degrees);
-
 
 		// add days and hours
 		var day_shift = 0;
@@ -544,6 +538,7 @@ body {
 		var season = 0; // 0 = summer, 1 = fall, 2 = winter, 3 = spring
 		var day_of_season = 0;
 		var seasons_degree = 0;
+		var seasons_tilt = 0.0;
 		var season_length = 0;
 		var day_of_year_jun, day_of_year_sep, day_of_year_dec, day_of_year_mar = 0;
 		var leap_year = false;
@@ -568,13 +563,15 @@ body {
 			console.log('Summer');
 			day_of_season = day_of_year - day_of_year_jun;
 			length_of_season = day_of_year_sep - day_of_year_jun;
-			seasons_degree = (day_of_season / length_of_season) * length_of_season;
+			//seasons_degree = (day_of_season / length_of_season) * length_of_season;
+			seasons_tilt = -23.4 + (day_of_season / length_of_season)*23.4;
 
 		} else if (day_of_year >= day_of_year_sep && day_of_year < day_of_year_dec) {
 			console.log('Fall');
 			day_of_season = day_of_year - day_of_year_sep;
 			length_of_season = day_of_year_dec - day_of_year_sep;
-			seasons_degree = 90 + (day_of_season / length_of_season) *length_of_season;
+			//seasons_degree = 90 + (day_of_season / length_of_season) *length_of_season;
+			seasons_tilt = (day_of_season / length_of_season)*23.4;
 
 		} else if (day_of_year >= day_of_year_dec) {
 			console.log('Winter');
@@ -585,7 +582,8 @@ body {
 			} else {
 				length_of_season = day_of_year_mar - day_of_year_dec;				
 			}
-			seasons_degree = 180 + (day_of_season / length_of_season) *length_of_season;
+			//seasons_degree = 180 + (day_of_season / length_of_season) *length_of_season;
+			seasons_tilt = 23.4 - (day_of_season / length_of_season)*23.4;
 
 		} else if (day_of_year < day_of_year_mar) {
 			season = 'winter';
@@ -595,16 +593,30 @@ body {
 			} else {
 				length_of_season = 12 + day_of_year_mar;				
 			}
-			seasons_degree = 180 + (day_of_season / length_of_season) *length_of_season;
+			//seasons_degree = 180 + (day_of_season / length_of_season) *length_of_season;
+			seasons_tilt = 23.4 - (day_of_season / length_of_season)*23.4;
 
 		} else if (day_of_year >= day_of_year_mar && day_of_year < day_of_year_jun) {
 			console.log('Spring');
 			day_of_season = day_of_year - day_of_year_mar;
 			length_of_season = day_of_year_jun - day_of_year_mar;
-			seasons_degree = 270 + (day_of_season / length_of_season) *length_of_season;
+			console.log('day of season: '+String(day_of_season));
+			console.log('length of season: '+String(length_of_season));
+			//seasons_degree = 270 + (day_of_season / length_of_season) *length_of_season;
+			seasons_tilt = -(day_of_season / length_of_season)*23.4;
 		}
 
-		setAngle('#seasons_wrapper', seasons_degree);
+		// The earth's tilt
+		setAngle('#seasons_earth_tilt', seasons_tilt);
+
+		// Precession + Earth's tilt
+		true_year = 9700 + now.getFullYear();
+		true_degrees = (true_year / 25771)*360;
+		setAngle('#precession_foreground', true_degrees+seasons_tilt);
+		setAngle('#precession_background', seasons_tilt);
+
+
+
 		window.setTimeout(update_clock, 60000);
 	};
 	function no_location(err) {
