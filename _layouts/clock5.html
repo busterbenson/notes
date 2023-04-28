@@ -574,9 +574,8 @@ body {
 			console.log('Summer');
 			day_of_season = day_of_year - day_of_year_jun;
 			length_of_season = day_of_year_sep - day_of_year_jun;
-			seasons_degree = (day_of_season / length_of_season) * length_of_season;
+			// seasons_degree = (day_of_season / length_of_season) * length_of_season;
 			seasons_degree = -90 - ((day_of_season / length_of_season) * 90);
-
 			seasons_tilt = -23.4 + (day_of_season / length_of_season)*23.4;
 
 		} else if (day_of_year >= day_of_year_sep && day_of_year < day_of_year_dec) {
@@ -616,10 +615,12 @@ body {
 			console.log('Spring');
 			day_of_season = day_of_year - day_of_year_mar;
 			length_of_season = day_of_year_jun - day_of_year_mar;
-			seasons_degree = -(day_of_season / length_of_season) * 90;
+			seasons_degree = -((day_of_season / length_of_season) * 90);
 			seasons_tilt = -(day_of_season / length_of_season)*23.4;
 		}
-		//console.log('seasons degree: '+String(seasons_degree))
+		console.log('day of season: '+String(day_of_season))
+		console.log('percent through season: '+String((day_of_season / length_of_season)))
+		console.log('seasons degree: '+String(seasons_degree))
 
 		// The earth's tilt
 		setAngle('#seasons_earth_tilt', seasons_tilt);
