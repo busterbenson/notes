@@ -270,18 +270,18 @@ body {
 		// console.log(clock_data['estimated']['sun_pos']['altitude'])
 		// console.log(clock_data['sun']['altitude'])
 
-		// Sun Altitude
-		var nowSunAltitude = clock_data['sun']['altitude'] // nowSunPos.altitude;
+		// Sun Altitude (only in the estimated data)
+		var nowSunAltitude = clock_data['estimated']['sun_pos']['altitude'] // nowSunPos.altitude;
 		var nowSunDistance = clock_data['sun']['distance'] // didn't exist;
 		var nowSunParallactic = clock_data['sun']['parallactic_angle'] // nowMoonPos.parallacticAngle;
 		var nowSunTime = azimuth_to_clock_time(nowSunAzimuth);
 		// $('#now_time').html(nowSunTime);
 		// $('#now_azimuth').html(nowSunAzimuth); 
 		// $('#now_altitude').html(nowSunAltitude); 
-		if (nowSunAltitude < -0.1) {
+		if (nowSunAltitude < -0.2) {
 			$('#sky').css('opacity', 0);
 		} else if (nowSunAltitude < 0) {
-			var opacity = 1-(-nowSunAltitude / 0.1);
+			var opacity = 1-(-nowSunAltitude / 0.2);
 			$('#sky').css('opacity', opacity);
 		} else if (nowSunAltitude < 0.125) {
 			var opacity = (nowSunAltitude / 0.25);
@@ -602,7 +602,7 @@ body {
 
 		// add days and hours
 		var day_shift = 0;
-		var hour_shift = 0;
+		var hour_shift = -6;
 		now.setDate(now.getDate() + day_shift)
 		now.setHours(now.getHours() + hour_shift);
 		yesterday.setDate(yesterday.getDate() + day_shift)
@@ -681,6 +681,7 @@ body {
 		// from midnight (-180) to sunrise (sunrize_az)
 		if (cd['sun_az'] < cd['sunrise_az']) {
 			console.log('sun: not yet risen');
+			$('body').css('background-color', '#2244a3');
 			var segment_length = 180 + cd['sunrise_az']; 
 			var remaining_length = segment_length - (180 + cd['sun_az']);
 			var percent_through = (segment_length-remaining_length)/segment_length;
@@ -694,6 +695,7 @@ body {
 		// from sunset (sunset_az) to midnight (180)
 		} else if (cd['sun_az'] > cd['sunset_az']) {
 			console.log('sun: already set');
+			$('body').css('background-color', '#2244a3');
 			var segment_length = 180 - cd['sunset_az'];
 			var remaining_length = 180 - cd['sun_az'];
 			var percent_through = (segment_length-remaining_length)/segment_length;
@@ -707,6 +709,7 @@ body {
 		// from sunrise to sunset
 		} else {
 			console.log('sun: in the sky');
+			$('body').css('background-color', '#6278C6');
 			var segment_length = -cd['sunrise_az'] + cd['sunset_az'];
 			var remaining_length;
 			if (cd['sun_az'] < 0) {
@@ -755,7 +758,7 @@ body {
 			console.log('segment_length: '+segment_length);
 			console.log('remaining_length: '+remaining_length);
 			console.log('percent_through: '+percent_through);
-			cd['sun_deg'] = 90 + (90*percent_through);
+			cd['moon_deg'] = 90 + (90*percent_through);
 			console.log('moon_deg: '+cd['moon_deg']);
 			setAngle('#min_wrapper', cd['moon_deg']);
 
