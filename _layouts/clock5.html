@@ -183,7 +183,7 @@ body {
 		</div>
 	</div>
 
-	<div id="location_loaded" style="display: none;"> 
+	<div id="location_loaded" style="display: block;"> 
 		<p>
 			<div>lat: <span id="location_lat"></span></div>
 			<div>long: <span id="location_long"></span></div>
@@ -345,7 +345,7 @@ body {
 
 		// add days and hours
 		var day_shift = 0;
-		var hour_shift = 0;
+		var hour_shift = -1;
 		now.setDate(now.getDate() + day_shift)
 		now.setHours(now.getHours() + hour_shift);
 		yesterday.setDate(yesterday.getDate() + day_shift)
@@ -631,8 +631,6 @@ body {
 		true_degrees = (true_year / 25771)*360;
 		setAngle('#precession_foreground', true_degrees+seasons_tilt);
 		setAngle('#precession_background', seasons_tilt);
-
-
 
 		window.setTimeout(update_clock, 60000);
 	};
