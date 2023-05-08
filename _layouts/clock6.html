@@ -283,8 +283,8 @@ body {
 		} else if (nowSunAltitude < 0) {
 			var opacity = 1-(-nowSunAltitude / 0.2);
 			$('#sky').css('opacity', opacity);
-		} else if (nowSunAltitude < 0.125) {
-			var opacity = (nowSunAltitude / 0.25);
+		} else if (nowSunAltitude < 0.25) {
+			var opacity = (nowSunAltitude / 0.31);
 			$('#sky').css('opacity', opacity);
 		} else {
 			$('#sky').css('opacity', 0.8);			
