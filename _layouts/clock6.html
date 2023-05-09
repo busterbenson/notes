@@ -229,8 +229,8 @@ body {
   				'distance': json['moon_distance'],
   				'parallactic_angle': json['moon_parallactic_angle'],
   				'status': json['moon_status'],
-  				'rise': json['moonrise'],
-  				'set': json['moonset']
+  				'rise': (json['moonrise'] == '-:-' ? '23:59' : json['moonrise']),
+  				'set': (json['moonset'] == '-:-' ? '23:59' : json['moonset'])
   			}
   			data['sun'] = {
   				'noon': json['solar_noon'],
@@ -413,6 +413,8 @@ body {
 		// console.log(moonTimes.rise)
 		// console.log(clock_data['date']+'T'+clock_data['moon']['rise']+':00')
 		var moonrise = new Date(Date.parse(clock_data['date']+'T'+clock_data['moon']['rise']+':00'))
+		// console.log(clock_data['date'])
+		// console.log(clock_data['moon']['rise'])
 
 		var old_moonRise;
 		if (!moonTimes.rise) {
@@ -427,6 +429,10 @@ body {
 		// $('#moonrise_string').html(moonriseStr);
 		var moonrisePos = SunCalc.getMoonPosition(moonrise, latitude, longitude);
 		clock_data['estimated']['moonrise'] = moonrisePos;
+		// console.log('MOONRISE')
+		// console.log(moonrisePos)
+		// console.log(moonrise)
+		// console.log(moonriseStr)
 		var moonriseAzimuth = moonrisePos.azimuth * 180 / Math.PI;
 		var moonriseAltitude = moonrisePos.altitude;
 		var moonriseTime = azimuth_to_clock_time(moonriseAzimuth);
