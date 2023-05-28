@@ -444,6 +444,16 @@
     link: "https://buster.medium.com/46-a-blagenflorble-heart-31bc2a992a83"
     tags: ["annual review"]
 
+'2022-08-15':
+  - name: "My first day at Medium"
+    category: "work"
+    tags: ["medium"]
+
+'2023-02-19':
+  - name: "I adopted Pancake 😻"
+    category: "family"
+    tags: ["pancake"]
+
 '2056-09-12': 
   - name: "☠️ My life expectancy expiration date"
     category: "self"
