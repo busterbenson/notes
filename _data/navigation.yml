@@ -11,6 +11,9 @@ links:
 - title: My Life in Weeks
   url: /life-in-weeks
   layout: life-in-weeks
+- title: Quirky Clock
+  url: /clock
+  layout: life-in-weeks
 - title: Codex Vitae
   url: /codex
   layout: codex
