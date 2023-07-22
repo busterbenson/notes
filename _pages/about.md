@@ -10,7 +10,7 @@ title: "About Me"
 - *Book:* I recently [wrote a book](https://busterbenson.com/whyareweyelling) about the art of productive disagreement. 
 - *Tech:* I'm spent most of the last 20 years of my career working in tech (Amazon, Twitter, Slack, Patreon) and being an entrepreneur (Robot Co-op, Health Month, Habit Labs, 750 Words), and am currently rebuilding [750words.com](https://new.750words.com). 
 - *McLeod:* I also started and helped run an art gallery and bar in Seattle called McLeod Residence that was around for a few years. 
-- *Find me:* I'm generally very online. [@buster@xoxo.zone](https://xoxo.zone/@buster) on Mastodon, [@buster](https://twitter.com/buster) on Twitter, [@bustrbensn](https://instagram.com/bustrbensn) on Instagram, [Buster Benson](https://facebook.com/busterbenson) on Facebook, etc. My DMs are open and you can <a href="mailto:{{ 'buster@benson.fm' | encode_email }}">email me</a> if you're old fashioned like that. 
+- *Find me:* I'm generally very online. [@bustrbensn](https://www.threads.net/@bustrbensn) on Threads, [@buster@me.dm](https://me.dm/@buster) on Mastodon, [@buster](https://twitter.com/buster) on Twitter, [@bustrbensn](https://instagram.com/bustrbensn) on Instagram, [Buster Benson](https://facebook.com/busterbenson) on Facebook, etc. My DMs are open and you can <a href="mailto:{{ 'buster@benson.fm' | encode_email }}">email me</a> if you're old fashioned like that. 
 
 **I was born in 1976, the year of the 🐲.** Play That Funky Music and Rocky were top of the charts, and Gerald Ford was president. I’m a Gemini, which of course doesn’t mean anything. My mom collected bicentennial quarters to commemorate my birth year, since it was also the 200th birthday of America.
 
