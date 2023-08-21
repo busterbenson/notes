@@ -113,8 +113,20 @@ body {
   margin: 0;
   padding: 0;
 }
+#hour_wrapper {
+	z-index: 1000;
+}
+#min_wrapper {
+	z-index: 900;
+}
 #venus_wrapper {
   background-image: url("/assets/images/clock/venus.png");
+  background-size: contain;
+  width: 1000px;
+  height: 1000px;
+}
+#mars_wrapper {
+  background-image: url("/assets/images/clock/mars.png");
   background-size: contain;
   width: 1000px;
   height: 1000px;
@@ -145,7 +157,7 @@ body {
   left: 0px; 
   width: 100px;
   height: 100px;
-  z-index: 10;
+	z-index: 1000;
 }
 #moon:before {
   position: absolute;
@@ -839,50 +851,7 @@ body {
 			cd['sun_deg'] = -90 + (180*percent_through);
 			console.log('sun_deg: '+cd['sun_deg']);
 			setAngle('#hour_wrapper', cd['sun_deg']);
-		}
-
-		// Venus 
-		// Before sunrise
-		if (cd['planets']['venus']['azimuth'] < cd['estimated']['sunrise_az']) {
-			console.log('venus: not yet risen');
-			$('body').css('background-color', '#2244a3');
-			var segment_length = 180 + cd['estimated']['sunrise_az']; 
-			var remaining_length = segment_length - (180 + cd['planets']['venus']['azimuth']);
-			var percent_through = (segment_length-remaining_length)/segment_length;
-			// console.log('venus segment_length: '+segment_length);
-			// console.log('venus remaining_length: '+remaining_length);
-			// console.log('venus percent_through: '+percent_through)
-			cd['planets']['venus']['deg'] = -180 + (90*percent_through);
-
-		// After sunset
-		} else if (cd['planets']['venus']['azimuth'] > cd['estimated']['sunset_az']) {
-			console.log('venus: not yet risen');
-			var segment_length = 180 - cd['estimated']['sunset_az'];
-			var remaining_length = 180 - cd['planets']['venus']['azimuth'];
-			var percent_through = (segment_length-remaining_length)/segment_length;
-			// console.log('venus segment_length: '+segment_length);
-			// console.log('venus remaining_length: '+remaining_length);
-			// console.log('venus percent_through: '+percent_through);
-			cd['planets']['venus']['deg'] = 90 + (90*percent_through);
-
-		// In the sky
-		} else {
-			console.log('venus: in the sky');
-			var segment_length = -cd['estimated']['sunrise_az'] + cd['estimated']['sunset_az'];
-			var remaining_length;
-			if (cd['planets']['venus']['azimuth'] < 0) {
-				remaining_length = segment_length - (cd['planets']['venus']['azimuth'] - cd['estimated']['sunrise_az'])
-			} else {
-				remaining_length = cd['estimated']['sunset_az'] - cd['planets']['venus']['azimuth']
-			}
-			var percent_through = (segment_length-remaining_length)/segment_length;
-			// console.log('venus segment_length: '+segment_length);
-			// console.log('venus remaining_length: '+remaining_length);
-			// console.log('venus percent_through: '+percent_through)
-			cd['planets']['venus']['deg'] = -90 + (180*percent_through);
-		}
-		console.log('venus_deg: '+cd['planets']['venus']['deg']);
-		setAngle('#venus_wrapper', cd['planets']['venus']['deg']);
+		}		
 
 		// MOON DEGREES
 		// from midnight (-180) to sunrise (sunrize_az)
@@ -929,6 +898,92 @@ body {
 			// console.log('moon_deg: '+cd['moon_deg']); 
 			setAngle('#min_wrapper', cd['moon_deg']);
 		}		
+
+		// Venus 
+		// Before sunrise
+		if (cd['planets']['venus']['azimuth'] < cd['estimated']['sunrise_az']) {
+			console.log('venus: not yet risen');
+			var segment_length = 180 + cd['estimated']['sunrise_az']; 
+			var remaining_length = segment_length - (180 + cd['planets']['venus']['azimuth']);
+			var percent_through = (segment_length-remaining_length)/segment_length;
+			// console.log('venus segment_length: '+segment_length);
+			// console.log('venus remaining_length: '+remaining_length);
+			// console.log('venus percent_through: '+percent_through)
+			cd['planets']['venus']['deg'] = -180 + (90*percent_through);
+
+		// After sunset
+		} else if (cd['planets']['venus']['azimuth'] > cd['estimated']['sunset_az']) {
+			console.log('venus: not yet risen');
+			var segment_length = 180 - cd['estimated']['sunset_az'];
+			var remaining_length = 180 - cd['planets']['venus']['azimuth'];
+			var percent_through = (segment_length-remaining_length)/segment_length;
+			// console.log('venus segment_length: '+segment_length);
+			// console.log('venus remaining_length: '+remaining_length);
+			// console.log('venus percent_through: '+percent_through);
+			cd['planets']['venus']['deg'] = 90 + (90*percent_through);
+
+		// In the sky
+		} else {
+			console.log('venus: in the sky');
+			var segment_length = -cd['estimated']['sunrise_az'] + cd['estimated']['sunset_az'];
+			var remaining_length;
+			if (cd['planets']['venus']['azimuth'] < 0) {
+				remaining_length = segment_length - (cd['planets']['venus']['azimuth'] - cd['estimated']['sunrise_az'])
+			} else {
+				remaining_length = cd['estimated']['sunset_az'] - cd['planets']['venus']['azimuth']
+			}
+			var percent_through = (segment_length-remaining_length)/segment_length;
+			// console.log('venus segment_length: '+segment_length);
+			// console.log('venus remaining_length: '+remaining_length);
+			// console.log('venus percent_through: '+percent_through)
+			cd['planets']['venus']['deg'] = -90 + (180*percent_through);
+		}
+		console.log('venus_deg: '+cd['planets']['venus']['deg']);
+		if (cd['planets_raw']['venus']['isRetro'] == 'true') {
+			$('#venus_wrapper').css('z-index', 1001);
+		} else {
+			$('#venus_wrapper').css('z-index', 10);
+		}
+		setAngle('#venus_wrapper', cd['planets']['venus']['deg']);
+
+		// Mars 
+		// Before sunrise
+		if (cd['planets']['mars']['azimuth'] < cd['estimated']['sunrise_az']) {
+			console.log('mars: not yet risen');
+			var segment_length = 180 + cd['estimated']['sunrise_az']; 
+			var remaining_length = segment_length - (180 + cd['planets']['mars']['azimuth']);
+			var percent_through = (segment_length-remaining_length)/segment_length;
+			cd['planets']['mars']['deg'] = -180 + (90*percent_through);
+
+		// After sunset
+		} else if (cd['planets']['mars']['azimuth'] > cd['estimated']['sunset_az']) {
+			console.log('mars: not yet risen');
+			var segment_length = 180 - cd['estimated']['sunset_az'];
+			var remaining_length = 180 - cd['planets']['mars']['azimuth'];
+			var percent_through = (segment_length-remaining_length)/segment_length;
+			cd['planets']['mars']['deg'] = 90 + (90*percent_through);
+
+		// In the sky
+		} else {
+			console.log('mars: in the sky');
+			var segment_length = -cd['estimated']['sunrise_az'] + cd['estimated']['sunset_az'];
+			var remaining_length;
+			if (cd['planets']['mars']['azimuth'] < 0) {
+				remaining_length = segment_length - (cd['planets']['mars']['azimuth'] - cd['estimated']['sunrise_az'])
+			} else {
+				remaining_length = cd['estimated']['sunset_az'] - cd['planets']['mars']['azimuth']
+			}
+			var percent_through = (segment_length-remaining_length)/segment_length;
+			cd['planets']['mars']['deg'] = -90 + (180*percent_through);
+		}
+		console.log('mars_deg: '+cd['planets']['mars']['deg']);
+		if (cd['planets_raw']['mars']['isRetro'] == 'true') {
+			$('#mars_wrapper').css('z-index', 1001);
+		} else {
+			$('#mars_wrapper').css('z-index', 10);
+		}
+		setAngle('#mars_wrapper', cd['planets']['mars']['deg']);
+
 
 		return cd;
 	}
