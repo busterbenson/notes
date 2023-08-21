@@ -553,7 +553,7 @@ function eachPage(pageCallback, done) {
         that._table._base.runAction('get', path, params, null, function(err, response, result) {
             if (err) {
                 done(err, null);
-            } else {
+            } else if (result) {
                 var next;
                 if (result.offset) {
                     params.offset = result.offset;
@@ -563,11 +563,9 @@ function eachPage(pageCallback, done) {
                         done(null);
                     };
                 }
-
                 var records = map(result.records, function(recordJson) {
                     return new Record(that._table, null, recordJson);
                 });
-
                 pageCallback(records, next);
             }
         });

@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 gem 'rmagick'
-gem 'nokogiri', "~> 1.13.10"
+gem 'nokogiri', "~> 1.14.3"
 gem 'jekyll'
 gem 'jekyll-paginate'
 gem 'jekyll-seo-tag'
