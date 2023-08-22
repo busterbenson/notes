@@ -42,6 +42,7 @@ plugins:
   - jekyll-youtube
   - jekyll-email-protect
   - jekyll-redirect-from
+  - jekyll-dotenv
 
 responsive_image:
   template: _includes/img.html
