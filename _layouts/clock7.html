@@ -96,7 +96,7 @@ body {
 }
 #jupiter_wrapper, #saturn_wrapper, 
 #uranus_wrapper, #neptune_wrapper, #pluto_wrapper {
-  background-image: url("/assets/images/clock/planet.png");
+/*  background-image: url("/assets/images/clock/planet.png");*/
   background-size: contain;
 }
 #mercury_wrapper {
@@ -112,11 +112,11 @@ body {
 	transform-origin: center;
 }
 #sun {
-  left: 510px; 
-  height: 315px;
+  left: 500px; 
+  height: 320px;
 }
 #moon {
-  left: 510px; 
+  left: 500px; 
   height: 315px;
 }
 #sun:before {
@@ -126,9 +126,10 @@ body {
   display: block;
   font-size: 60px;
   top: 0px;
-  left: 0px; 
-  width: 100px;
-  height: 100px;
+  left: -30px; 
+	/*  width: 100px;*/
+	/*  height: 100px;*/
+  align: center;
 	z-index: 100;
 }
 #moon:before {
@@ -138,9 +139,9 @@ body {
   display: block;
   font-size: 50px;
   top: 0px;
-  left: 0px; 
-  width: 60px;
-  height: 60px;	
+  left: -25px;
+	/*  width: 60px;*/
+	/*  height: 60px;	*/
   z-index: 10;
 }
 </style>
@@ -201,8 +202,8 @@ body {
 		fetch(url)
   		.then((response) => response.json())
   		.then(function (json) {
-  			console.log('sun and moon data: ')
-  			console.log(json)
+  			// console.log('sun and moon data: ')
+  			// console.log(json)
   			data['sun_moon_data'] = json
   			data['location'] = json['location']
   			data['current_time'] = json['current_time']
@@ -227,8 +228,8 @@ body {
   				'set': json['sunset']
   			}
   			data = get_rising_setting_for_sun_and_moon(data, lat, long)
-  			console.log('NEW DATA')
-  			console.log(data)
+  			// console.log('NEW DATA')
+  			// console.log(data)
   			get_planet_data(data, lat, long, date);
   		});
 	}
@@ -735,23 +736,23 @@ body {
 	function get_relative_times(cd) {
 
 		// Relative time
-		console.log('Sun relative time: (sunrise azimuth, sunset az, sun now az')
-		console.log('sunrise azimuth: '+cd['estimated']['sunrise_az']);
-		console.log('sunset azimuth: '+cd['estimated']['sunset_az']);
-		console.log('current sun azimuth: '+cd['estimated']['sun_az']);
+		// console.log('Sun relative time: (sunrise azimuth, sunset az, sun now az')
+		// console.log('sunrise azimuth: '+cd['estimated']['sunrise_az']);
+		// console.log('sunset azimuth: '+cd['estimated']['sunset_az']);
+		// console.log('current sun azimuth: '+cd['estimated']['sun_az']);
 
 		// Before sunrise: from midnight (-180) to sunrise (sunrize_az)
 		if (cd['estimated']['sun_az'] < cd['estimated']['sunrise_az']) {
-			console.log('sun: not yet risen');
+			// console.log('sun: not yet risen');
 			$('body').css('background-color', '#2244a3');
 			var segment_length = 180 + cd['estimated']['sunrise_az']; 
 			var remaining_length = segment_length - (180 + cd['estimated']['sun_az']);
 			var percent_through = (segment_length-remaining_length)/segment_length;
-			console.log('segment_length: '+segment_length);
-			console.log('remaining_length: '+remaining_length);
-			console.log('percent_through: '+percent_through)
+			// console.log('segment_length: '+segment_length);
+			// console.log('remaining_length: '+remaining_length);
+			// console.log('percent_through: '+percent_through)
 			cd['sun_deg'] = -180 + (90*percent_through);
-			console.log('sun_deg: '+cd['sun_deg']);
+			// console.log('sun_deg: '+cd['sun_deg']);
 			setAngle('#hour_wrapper', cd['sun_deg']);
 
 			var percent_remaining = 1 - percent_through;
@@ -767,16 +768,16 @@ body {
 
 		// After sunset: from sunset (sunset_az) to midnight (180)
 		} else if (cd['estimated']['sun_az'] > cd['estimated']['sunset_az']) {
-			console.log('sun: already set');
+			// console.log('sun: already set');
 			$('body').css('background-color', '#2244a3');
 			var segment_length = 180 - cd['estimated']['sunset_az'];
 			var remaining_length = 180 - cd['estimated']['sun_az'];
 			var percent_through = (segment_length-remaining_length)/segment_length;
-			console.log('segment_length: '+segment_length);
-			console.log('remaining_length: '+remaining_length);
-			console.log('percent_through: '+percent_through)
+			// console.log('segment_length: '+segment_length);
+			// console.log('remaining_length: '+remaining_length);
+			// console.log('percent_through: '+percent_through)
 			cd['sun_deg'] = 90 + (90*percent_through);
-			console.log('sun_deg: '+cd['sun_deg']);
+			// console.log('sun_deg: '+cd['sun_deg']);
 			setAngle('#hour_wrapper', cd['sun_deg']);
 			if (percent_through > 0.05) {
 				$('#sky').css('opacity', 0);
@@ -790,7 +791,7 @@ body {
 
 		// During the day: from sunrise to sunset
 		} else {
-			console.log('sun: in the sky');
+			// console.log('sun: in the sky');
 			$('body').css('background-color', '#6278C6');
 			var segment_length = -cd['estimated']['sunrise_az'] + cd['estimated']['sunset_az'];
 			var remaining_length;
@@ -800,11 +801,11 @@ body {
 				remaining_length = cd['estimated']['sunset_az'] - cd['estimated']['sun_az']
 			}
 			var percent_through = (segment_length-remaining_length)/segment_length;
-			console.log('segment_length: '+segment_length);
-			console.log('remaining_length: '+remaining_length);
-			console.log('percent_through: '+percent_through)
+			// console.log('segment_length: '+segment_length);
+			// console.log('remaining_length: '+remaining_length);
+			// console.log('percent_through: '+percent_through)
 			cd['sun_deg'] = -90 + (180*percent_through);
-			console.log('sun_deg: '+cd['sun_deg']);
+			// console.log('sun_deg: '+cd['sun_deg']);
 			setAngle('#hour_wrapper', cd['sun_deg']);
 		}		
 
@@ -815,9 +816,9 @@ body {
 			var segment_length = 180 + cd['estimated']['moonrise_az']; 
 			var remaining_length = segment_length - (180 + cd['estimated']['moon_az']);
 			var percent_through = (segment_length-remaining_length)/segment_length;
-			console.log('segment_length: '+segment_length);
-			console.log('remaining_length: '+remaining_length);
-			console.log('percent_through: '+percent_through)
+			// console.log('segment_length: '+segment_length);
+			// console.log('remaining_length: '+remaining_length);
+			// console.log('percent_through: '+percent_through)
 			cd['moon_deg'] = -180 + (90*percent_through);
 			// console.log('moon_deg: '+cd['moon_deg']);
 			setAngle('#min_wrapper', cd['moon_deg']);
@@ -828,9 +829,9 @@ body {
 			var segment_length = 180 - cd['estimated']['moonset_az'];
 			var remaining_length = 180 - cd['estimated']['moon_az'];
 			var percent_through = (segment_length-remaining_length)/segment_length;
-			console.log('segment_length: '+segment_length);
-			console.log('remaining_length: '+remaining_length);
-			console.log('percent_through: '+percent_through);
+			// console.log('segment_length: '+segment_length);
+			// console.log('remaining_length: '+remaining_length);
+			// console.log('percent_through: '+percent_through);
 			cd['moon_deg'] = 90 + (90*percent_through);
 			// console.log('moon_deg: '+cd['moon_deg']);
 			setAngle('#min_wrapper', cd['moon_deg']);
@@ -846,9 +847,9 @@ body {
 				remaining_length = cd['estimated']['moonset_az'] - cd['estimated']['moon_az']
 			}
 			var percent_through = (segment_length-remaining_length)/segment_length;
-			console.log('segment_length: '+segment_length);
-			console.log('remaining_length: '+remaining_length);
-			console.log('percent_through: '+percent_through)
+			// console.log('segment_length: '+segment_length);
+			// console.log('remaining_length: '+remaining_length);
+			// console.log('percent_through: '+percent_through)
 			cd['moon_deg'] = -90 + (180*percent_through);
 			// console.log('moon_deg: '+cd['moon_deg']); 
 			setAngle('#min_wrapper', cd['moon_deg']);
@@ -873,19 +874,19 @@ body {
 	// Sun/moon azimuth is clockwise from North (bottom)
 	// Sun/moon is off by 180
 	function place_planet(planet, cd) {
-		console.log('placing planet: '+planet)
+		// console.log('placing planet: '+planet)
 		var planet_azimuth = cd['planets'][planet]['azimuth'];
 		// To get it negative instead of positive
 		if (planet_azimuth > 180) {
 			planet_azimuth = planet_azimuth - 360;
 		}
-		console.log('planet_azimuth: '+planet_azimuth)
-		console.log('sunrise_azimuth: '+cd['estimated']['sunrise_az'])
-		console.log('sunset_azimuth: '+cd['estimated']['sunset_az'])
+		// console.log('planet_azimuth: '+planet_azimuth)
+		// console.log('sunrise_azimuth: '+cd['estimated']['sunrise_az'])
+		// console.log('sunset_azimuth: '+cd['estimated']['sunset_az'])
 
 		// Before sunrise
 		if (planet_azimuth < cd['estimated']['sunrise_az']) {
-			console.log(planet+': not yet risen');
+			// console.log(planet+': not yet risen');
 			var segment_length = 180 + cd['estimated']['sunrise_az']; 
 			var remaining_length = segment_length - (180 + planet_azimuth);
 			var percent_through = (segment_length-remaining_length)/segment_length;
@@ -895,7 +896,7 @@ body {
 
 		// After sunset
 		} else if (planet_azimuth > cd['estimated']['sunset_az']) {
-			console.log(planet+': set');
+			// console.log(planet+': set');
 			var segment_length = 180 - cd['estimated']['sunset_az'];
 			var remaining_length = 180 - planet_azimuth;
 			var percent_through = (segment_length-remaining_length)/segment_length;
@@ -905,7 +906,7 @@ body {
 
 		// In the sky
 		} else {
-			console.log(planet+': in the sky');
+			// console.log(planet+': in the sky');
 			var segment_length = -cd['estimated']['sunrise_az'] + cd['estimated']['sunset_az'];
 			var remaining_length;
 			if (planet_azimuth < 0) {
@@ -922,7 +923,7 @@ body {
 			}
 			// $('#'+planet+'_wrapper').css('opacity', 1);
 		}
-		console.log(planet+'_deg: '+cd['planets'][planet]['deg']);
+		// console.log(planet+'_deg: '+cd['planets'][planet]['deg']);
 		setAngle('#'+planet+'_wrapper', cd['planets'][planet]['deg']);
 
 	}
