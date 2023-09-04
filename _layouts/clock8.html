@@ -124,7 +124,7 @@ body {
 		Loading 🌞 and 🌛 and ✨ data from the universe. Hold, please.
 	</div>
 	<div id="location-not-available"></div>
-	<div id="clock_canvas" style="display: block;">
+	<div id="clock_canvas">
 		<div id="clock">
 			<div id="zodiac_wrapper"><div id="stars"></div></div>
 			<div id="earth"></div>
@@ -347,6 +347,7 @@ body {
 	// Called from update_clock()
 	function got_location(pos) {
 		$('#location-status').hide();
+
 		location_available = true;
 		var latitude = pos.coords.latitude;
 		var longitude = pos.coords.longitude;
@@ -647,33 +648,33 @@ body {
 		clock_data['moon']['illumination_phase'] = moon_illumination.phase;
 		clock_data['moon']['illumination_angle'] = moon_illumination.angle;
 
-		if (clock_data['moon']['illumination_phase'] < 0.05) {
-			$('#moon').html("<style>#moon:before{content: '🌑' !important;}</style>");
-		} else if (clock_data['moon']['illumination_phase'] < 0.2) {
-			$('#moon').html("<style>#moon:before{content: '🌒' !important;}</style>");
-		} else if (clock_data['moon']['illumination_phase'] < 0.3) {
-			$('#moon').html("<style>#moon:before{content: '🌓' !important;}</style>");
-		} else if (clock_data['moon']['illumination_phase'] < 0.45) {
-			$('#moon').html("<style>#moon:before{content: '🌔' !important;}</style>");
-		} else if (clock_data['moon']['illumination_phase'] < 0.55) {
-			$('#moon').html("<style>#moon:before{content: '🌕' !important;}</style>");
-		} else if (clock_data['moon']['illumination_phase'] < 0.7) {
-			$('#moon').html("<style>#moon:before{content: '🌖' !important;}</style>");
-		} else if (clock_data['moon']['illumination_phase'] < 0.8) {
-			$('#moon').html("<style>#moon:before{content: '🌗' !important;}</style>");
-		} else if (clock_data['moon']['illumination_phase'] < 0.95) {
-			$('#moon').html("<style>#moon:before{content: '🌘' !important;}</style>");
-		} else {
-			$('#moon').html("<style>#moon:before{content: '🌑' !important;}</style>");
-		}
+		// if (clock_data['moon']['illumination_phase'] < 0.05) {
+		// 	$('#moon').html("<style>#moon:before{content: '🌑' !important;}</style>");
+		// } else if (clock_data['moon']['illumination_phase'] < 0.2) {
+		// 	$('#moon').html("<style>#moon:before{content: '🌒' !important;}</style>");
+		// } else if (clock_data['moon']['illumination_phase'] < 0.3) {
+		// 	$('#moon').html("<style>#moon:before{content: '🌓' !important;}</style>");
+		// } else if (clock_data['moon']['illumination_phase'] < 0.45) {
+		// 	$('#moon').html("<style>#moon:before{content: '🌔' !important;}</style>");
+		// } else if (clock_data['moon']['illumination_phase'] < 0.55) {
+		// 	$('#moon').html("<style>#moon:before{content: '🌕' !important;}</style>");
+		// } else if (clock_data['moon']['illumination_phase'] < 0.7) {
+		// 	$('#moon').html("<style>#moon:before{content: '🌖' !important;}</style>");
+		// } else if (clock_data['moon']['illumination_phase'] < 0.8) {
+		// 	$('#moon').html("<style>#moon:before{content: '🌗' !important;}</style>");
+		// } else if (clock_data['moon']['illumination_phase'] < 0.95) {
+		// 	$('#moon').html("<style>#moon:before{content: '🌘' !important;}</style>");
+		// } else {
+		// 	$('#moon').html("<style>#moon:before{content: '🌑' !important;}</style>");
+		// }
 
 
 
 	}
 
 	$(document).ready(function() {
-	    scale_the_clock();
-	    $(window).bind('resize', scale_the_clock);
-			update_clock();
+    scale_the_clock();
+    $(window).bind('resize', scale_the_clock);
+		update_clock();
 	});
 </script>
