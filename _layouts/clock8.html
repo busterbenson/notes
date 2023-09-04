@@ -694,12 +694,13 @@ body {
 					set_angle('#'+planet.toLowerCase(), data.adjusted_az[planet]);
 
 					// change z-index if this is in retro
-					if (data.planets_raw[planet].isRetro == 'true') {
-						$('#'+planet.toLowerCase()).css('z-index', 500);
-						console.log('A'+planet+(data.planets_raw[planet].isRetro == 'true' ? ' is retro ' : ' is not retro'))
+					if (planet == 'MOON') {
+						// do nothing to z-index
+					} else if (data.planets_raw[planet].isRetro == 'true') {
+						console.log(planet+': '+data.planets_raw[planet].isRetro)
+						$('#'+planet.toLowerCase()).css('z-index', 150);
 					} else {
 						$('#'+planet.toLowerCase()).css('z-index', 50);
-						console.log('B'+planet+(data.planets_raw[planet].isRetro == 'true' ? ' is retro ' : ' is not retro'))
 					}
 				}
 				
