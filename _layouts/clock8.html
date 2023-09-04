@@ -307,7 +307,7 @@ body {
 
 	// HELPER: set angle for a celestial body on the clock
 	function set_angle(wrapper, angle) {
-		console.log('ROTATING '+wrapper+" by "+angle)
+		debug ? console.log('ROTATING '+wrapper+" by "+angle) : null 
 	  $(wrapper).css('color: #f00;');
 		var rotate_string = "rotate(" + parseInt(angle) + "deg)";
   	$(wrapper).css('transform', rotate_string);
@@ -417,7 +417,6 @@ body {
 		$('#debug').append("<br />SUN TIME: ", now);
 		$('#debug').append("<br />SUN AZIMUTH: "+clock_data.estimated.sun_az);
 		$('#sun').css('background-image', 'url("/assets/images/clock/8/sun.png")');
-		set_angle('#sun', clock_data.estimated.sun_az);
 
 		if (using == 'tomorrow') {
 			get_sun_data(clock_data, latitude, longitude, now.toISOString().split('T')[0])
@@ -661,6 +660,9 @@ body {
 	    	}
     		data['planets']['SUN']['azimuth'] = (data['planets']['SUN']['uncorrected_az'] + data['planets']['offset'])
 
+    		// Update the sun's position first
+				set_angle('#sun', data.estimated.sun_az);
+
     		// Convert fullDegree into uncorrected_az
     		var planets = ['MOON', 'MERCURY','VENUS','MARS','SATURN','JUPITER','URANUS','NEPTUNE','PLUTO'];
 				for (var i = 0; i < planets.length; i++) {
@@ -673,15 +675,11 @@ body {
 		    	}
 	    		data['planets'][planet]['azimuth'] = (data['planets'][planet]['uncorrected_az'] + 
 	    																					data['planets']['offset'])
-	    		// console.log('azimuth: '+data['planets'][planet]['azimuth'])
-					data = adjust_azimuth(planet,data['planets'][planet]['azimuth'], data)
-					set_angle('#'+planet.toLowerCase(), data['adjusted_az'][planet]);
+
+					data = adjust_azimuth(planet,data.planets[planet].azimuth, data)
+					set_angle('#'+planet.toLowerCase(), data.adjusted_az[planet]);
 				}
 				
-				console.log('Setting angle for moon: ')
-				console.log(data['adjusted_az']['MOON'])
-			  
-			  console.log(data['planets'])
 	    	build_the_clock(data, lat, long, date)
 			}, 
 			function(err){
@@ -694,7 +692,6 @@ body {
 	function build_the_clock(clock_data, lat, long, date) {
 
 		var moon_illumination = SunCalc.getMoonIllumination(clock_data['now']);
-		console.log(moon_illumination)
 		clock_data['moon']['illumination_fraction'] = moon_illumination.fraction;
 		clock_data['moon']['illumination_phase'] = moon_illumination.phase;
 		clock_data['moon']['illumination_angle'] = moon_illumination.angle;
@@ -734,13 +731,11 @@ body {
 	}
 
 	function configure_constellations(clock_data) {
-		console.log('configuring constellations')
 		var constellation_angle = (clock_data['day_of_year']-79)/365.25*360;
 		set_angle('#zodiac_wrapper', clock_data['estimated']['sun_az']+constellation_angle);		
 	}
 
 	function configure_seasons(clock_data) {
-		console.log('configuring seasons')
 		var season = 0; // 0 = summer, 1 = fall, 2 = winter, 3 = spring
 		var day_of_season = 0;
 		var seasons_degree = 0;
@@ -766,21 +761,21 @@ body {
 		// December/Winter Solstice occurs on Dec 21 (day 355, 90 days without leap year)
 		// Calculate the day of the season that it is and translat it to degrees
 		if (clock_data['day_of_year'] >= day_of_year_jun && clock_data['day_of_year'] < day_of_year_sep) {
-			console.log('Summer');
+			// console.log('Summer');
 			day_of_season = clock_data['day_of_year'] - day_of_year_jun;
 			length_of_season = day_of_year_sep - day_of_year_jun;
 			seasons_degree = -90 - ((day_of_season / length_of_season) * 90);
 			seasons_tilt = -23.4 + (day_of_season / length_of_season)*23.4;
 
 		} else if (clock_data['day_of_year'] >= day_of_year_sep && clock_data['day_of_year'] < day_of_year_dec) {
-			console.log('Fall');
+			// console.log('Fall');
 			day_of_season = clock_data['day_of_year'] - day_of_year_sep;
 			length_of_season = day_of_year_dec - day_of_year_sep;
 			seasons_degree = -180 - ((day_of_season / length_of_season) * 90);
 			seasons_tilt = (day_of_season / length_of_season)*23.4;
 
 		} else if (clock_data['day_of_year'] >= day_of_year_dec) {
-			console.log('Winter 1');
+			// console.log('Winter 1');
 			season = 'winter';
 			day_of_season = clock_data['day_of_year'] - day_of_year_dec;
 			if (leap_year_modulus == 3) {
@@ -792,7 +787,7 @@ body {
 			seasons_tilt = 23.4 - (day_of_season / length_of_season)*23.4;
 
 		} else if (clock_data['day_of_year'] < day_of_year_mar) {
-			console.log('Winter 2');
+			// console.log('Winter 2');
 			season = 'winter';
 			day_of_season = 12 + clock_data['day_of_year'];
 			if (leap_year_modulus == 0) {
@@ -804,7 +799,7 @@ body {
 			seasons_tilt = 23.4 - (day_of_season / length_of_season)*23.4;
 
 		} else if (clock_data['day_of_year'] >= day_of_year_mar && clock_data['day_of_year'] < day_of_year_jun) {
-			console.log('Spring');
+			// console.log('Spring');
 			day_of_season = clock_data['day_of_year'] - day_of_year_mar;
 			length_of_season = day_of_year_jun - day_of_year_mar;
 			seasons_degree = -((day_of_season / length_of_season) * 90);
