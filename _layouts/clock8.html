@@ -50,12 +50,10 @@ body {
   padding: 0;	
 }
 #sun {
-  background-image: url("/assets/images/clock/8/sun.png");
   background-size: contain;
   z-index: 500;
 }
 #moon {
-  background-image: url("/assets/images/clock/8/moon.png");
   background-size: contain;
   z-index: 600;
 }
@@ -151,7 +149,7 @@ body {
 
 <script type="text/javascript">
 	var location_available = null;
-	var debug = true;
+	var debug = false;
 	var clock_width = null;
 
 	if (debug) {
@@ -310,7 +308,7 @@ body {
 	// HELPER: set angle for a celestial body on the clock
 	function set_angle(wrapper, angle) {
 		console.log('ROTATING '+wrapper+" by "+angle)
-		$(wrapper).css('color: #f00;');
+	  $(wrapper).css('color: #f00;');
 		var rotate_string = "rotate(" + parseInt(angle) + "deg)";
   	$(wrapper).css('transform', rotate_string);
 	}
@@ -366,6 +364,11 @@ body {
 		yesterday.setHours(yesterday.getHours() + hour_shift);
 		tomorrow.setDate(tomorrow.getDate() + day_shift)
 		tomorrow.setHours(tomorrow.getHours() + hour_shift);
+
+		var year_start = new Date(now.getFullYear(), 0, 0);
+		var diff = now - year_start;
+		var oneDay = 1000 * 60 * 60 * 24;
+		var day_of_year = Math.floor(diff / oneDay);
 		
 		// Get sun and moon data from calculations
 		var sunTimes = SunCalc.getTimes(now, latitude, longitude);
@@ -390,6 +393,7 @@ body {
 			yesterday: yesterday,
 			tomorrow: tomorrow,
 			using: using,
+			day_of_year: day_of_year,
 
 			// What are these used for? Figuring out the tilt of the earth and how
 			// it affects the time of sunrise and sunset.
@@ -412,6 +416,7 @@ body {
 		}
 		$('#debug').append("<br />SUN TIME: ", now);
 		$('#debug').append("<br />SUN AZIMUTH: "+clock_data.estimated.sun_az);
+		$('#sun').css('background-image', 'url("/assets/images/clock/8/sun.png")');
 		set_angle('#sun', clock_data.estimated.sun_az);
 
 		if (using == 'tomorrow') {
@@ -496,6 +501,52 @@ body {
 			$('#debug').append("<br />SUN LOCATION: After sunset");
 		}
 
+		// Before sunrise: from midnight (-180) to sunrise (sunrize_az)
+		if (clock_data['estimated']['sun_az'] < clock_data['estimated']['sunrise_az']) {
+			$('body').css('background-color', '#2244a3');
+			var segment_length = 180 + clock_data['estimated']['sunrise_az']; 
+			var remaining_length = segment_length - (180 + clock_data['estimated']['sun_az']);
+			var percent_through = (segment_length-remaining_length)/segment_length;
+			var percent_remaining = 1 - percent_through;
+
+			if (percent_remaining > 0.05) {
+				$('#sky').css('opacity', 0.8);
+			} else if (percent_remaining <= 0.05) {
+				var opacity = 0.8-(0.8*(percent_remaining / 0.05));
+				$('#sky').css('opacity', opacity);
+			} else {
+				$('#sky').css('opacity', 0.8);			
+			}
+
+		// After sunset: from sunset (sunset_az) to midnight (180)
+		} else if (clock_data['estimated']['sun_az'] > clock_data['estimated']['sunset_az']) {
+			$('body').css('background-color', '#2244a3');
+			var segment_length = 180 - clock_data['estimated']['sunset_az'];
+			var remaining_length = 180 - clock_data['estimated']['sun_az'];
+			var percent_through = (segment_length-remaining_length)/segment_length;
+
+			if (percent_through > 0.05) {
+				$('#sky').css('opacity', 0);
+			} else if (percent_through <= 0.05) {
+				var opacity = 0.8-(0.8*(percent_through / 0.05));
+				$('#sky').css('opacity', opacity);
+			} else {
+				$('#sky').css('opacity', 0.8);			
+			}
+
+		// During the day: from sunrise to sunset
+		} else {
+			$('body').css('background-color', '#6278C6');
+			$('#sky').css('opacity', 0.8);			
+			var segment_length = -clock_data['estimated']['sunrise_az'] + clock_data['estimated']['sunset_az'];
+			var remaining_length;
+			if (clock_data['estimated']['sun_az'] < 0) {
+				remaining_length = segment_length - (clock_data['estimated']['sun_az'] - clock_data['estimated']['sunrise_az'])
+			} else {
+				remaining_length = clock_data['estimated']['sunset_az'] - clock_data['estimated']['sun_az']
+			}
+			var percent_through = (segment_length-remaining_length)/segment_length;
+		}		
 		return clock_data;
 	}
 
@@ -648,27 +699,127 @@ body {
 		clock_data['moon']['illumination_phase'] = moon_illumination.phase;
 		clock_data['moon']['illumination_angle'] = moon_illumination.angle;
 
-		// if (clock_data['moon']['illumination_phase'] < 0.05) {
-		// 	$('#moon').html("<style>#moon:before{content: '🌑' !important;}</style>");
-		// } else if (clock_data['moon']['illumination_phase'] < 0.2) {
-		// 	$('#moon').html("<style>#moon:before{content: '🌒' !important;}</style>");
-		// } else if (clock_data['moon']['illumination_phase'] < 0.3) {
-		// 	$('#moon').html("<style>#moon:before{content: '🌓' !important;}</style>");
-		// } else if (clock_data['moon']['illumination_phase'] < 0.45) {
-		// 	$('#moon').html("<style>#moon:before{content: '🌔' !important;}</style>");
-		// } else if (clock_data['moon']['illumination_phase'] < 0.55) {
-		// 	$('#moon').html("<style>#moon:before{content: '🌕' !important;}</style>");
-		// } else if (clock_data['moon']['illumination_phase'] < 0.7) {
-		// 	$('#moon').html("<style>#moon:before{content: '🌖' !important;}</style>");
-		// } else if (clock_data['moon']['illumination_phase'] < 0.8) {
-		// 	$('#moon').html("<style>#moon:before{content: '🌗' !important;}</style>");
-		// } else if (clock_data['moon']['illumination_phase'] < 0.95) {
-		// 	$('#moon').html("<style>#moon:before{content: '🌘' !important;}</style>");
-		// } else {
-		// 	$('#moon').html("<style>#moon:before{content: '🌑' !important;}</style>");
-		// }
+		if (clock_data['moon']['illumination_phase'] < 0.05) {
+			$('#moon').css('background-image','url("/assets/images/clock/8/moon-new.png")')
+			$('#moon').css('opacity',0.3)
+		} else if (clock_data['moon']['illumination_phase'] < 0.2) {
+			$('#moon').css('background-image','url("/assets/images/clock/8/moon-waning-3.png")')
+			$('#moon').css('opacity',0.9)
+		} else if (clock_data['moon']['illumination_phase'] < 0.3) {
+			$('#moon').css('background-image','url("/assets/images/clock/8/moon-waning-2.png")')
+			$('#moon').css('opacity',1)
+		} else if (clock_data['moon']['illumination_phase'] < 0.45) {
+			$('#moon').css('background-image','url("/assets/images/clock/8/moon-waning-1.png")')
+			$('#moon').css('opacity',1)
+		} else if (clock_data['moon']['illumination_phase'] < 0.55) {
+			$('#moon').css('background-image','url("/assets/images/clock/8/moon-full.png")')
+			$('#moon').css('opacity',1)
+		} else if (clock_data['moon']['illumination_phase'] < 0.7) {
+			$('#moon').css('background-image','url("/assets/images/clock/8/moon-waxing-1.png")')
+			$('#moon').css('opacity',1)
+		} else if (clock_data['moon']['illumination_phase'] < 0.8) {
+			$('#moon').css('background-image','url("/assets/images/clock/8/moon-waxing-2.png")')
+			$('#moon').css('opacity',1)
+		} else if (clock_data['moon']['illumination_phase'] < 0.95) {
+			$('#moon').css('background-image','url("/assets/images/clock/8/moon-waxing-3.png")')
+			$('#moon').css('opacity',0.3)
+		} else {
+			$('#moon').css('background-image','url("/assets/images/clock/8/moon-new.png")')
+			$('#moon').css('opacity',0.3)
+		}
 
+		configure_constellations(clock_data)
+		configure_seasons(clock_data)
+		window.setTimeout(update_clock, 60000);
+	}
 
+	function configure_constellations(clock_data) {
+		console.log('configuring constellations')
+		var constellation_angle = (clock_data['day_of_year']-79)/365.25*360;
+		set_angle('#zodiac_wrapper', clock_data['estimated']['sun_az']+constellation_angle);		
+	}
+
+	function configure_seasons(clock_data) {
+		console.log('configuring seasons')
+		var season = 0; // 0 = summer, 1 = fall, 2 = winter, 3 = spring
+		var day_of_season = 0;
+		var seasons_degree = 0;
+		var seasons_tilt = 0.0;
+		var season_length = 0;
+		var day_of_year_jun, day_of_year_sep, day_of_year_dec, day_of_year_mar = 0;
+		var leap_year = false;
+		day_of_year_mar = 79;
+		day_of_year_jun = 170;
+		day_of_year_sep = 263;
+		day_of_year_dec = 355;
+		var leap_year_modulus = clock_data['now'].getFullYear() % 4; // leap year = 0
+		if (leap_year_modulus = 0) {
+			leap_year = true;
+			day_of_year_mar = 80;
+			day_of_year_jun = 171;
+			day_of_year_sep = 264;
+			day_of_year_dec = 356;
+		} 
+		// March/Spring Equinox occurs on March 21 (day 79, 92 days)
+		// June/Summer Solstice occurs on June 21 (day 171, 92 days)
+		// September/Autumn Equinox occurs on September 21 (day 263, 91 days)
+		// December/Winter Solstice occurs on Dec 21 (day 355, 90 days without leap year)
+		// Calculate the day of the season that it is and translat it to degrees
+		if (clock_data['day_of_year'] >= day_of_year_jun && clock_data['day_of_year'] < day_of_year_sep) {
+			console.log('Summer');
+			day_of_season = clock_data['day_of_year'] - day_of_year_jun;
+			length_of_season = day_of_year_sep - day_of_year_jun;
+			seasons_degree = -90 - ((day_of_season / length_of_season) * 90);
+			seasons_tilt = -23.4 + (day_of_season / length_of_season)*23.4;
+
+		} else if (clock_data['day_of_year'] >= day_of_year_sep && clock_data['day_of_year'] < day_of_year_dec) {
+			console.log('Fall');
+			day_of_season = clock_data['day_of_year'] - day_of_year_sep;
+			length_of_season = day_of_year_dec - day_of_year_sep;
+			seasons_degree = -180 - ((day_of_season / length_of_season) * 90);
+			seasons_tilt = (day_of_season / length_of_season)*23.4;
+
+		} else if (clock_data['day_of_year'] >= day_of_year_dec) {
+			console.log('Winter 1');
+			season = 'winter';
+			day_of_season = clock_data['day_of_year'] - day_of_year_dec;
+			if (leap_year_modulus == 3) {
+				length_of_season = day_of_year_mar - day_of_year_dec + 1;
+			} else {
+				length_of_season = day_of_year_mar - day_of_year_dec;				
+			}
+			seasons_degree = -270 - ((day_of_season / length_of_season) * 90);
+			seasons_tilt = 23.4 - (day_of_season / length_of_season)*23.4;
+
+		} else if (clock_data['day_of_year'] < day_of_year_mar) {
+			console.log('Winter 2');
+			season = 'winter';
+			day_of_season = 12 + clock_data['day_of_year'];
+			if (leap_year_modulus == 0) {
+				length_of_season = 12 + day_of_year_mar + 1;
+			} else {
+				length_of_season = 12 + day_of_year_mar;				
+			}
+			seasons_degree = -270 - ((day_of_season / length_of_season) * 90);
+			seasons_tilt = 23.4 - (day_of_season / length_of_season)*23.4;
+
+		} else if (clock_data['day_of_year'] >= day_of_year_mar && clock_data['day_of_year'] < day_of_year_jun) {
+			console.log('Spring');
+			day_of_season = clock_data['day_of_year'] - day_of_year_mar;
+			length_of_season = day_of_year_jun - day_of_year_mar;
+			seasons_degree = -((day_of_season / length_of_season) * 90);
+			seasons_tilt = -(day_of_season / length_of_season)*23.4;
+		}
+
+		// The earth's tilt
+		set_angle('#seasons_earth_tilt', seasons_tilt);
+		set_angle('#seasons_dandelion', seasons_tilt+seasons_degree);		
+
+		// Precession + Earth's tilt
+		true_year = 9700 + clock_data['now'].getFullYear();
+		true_degrees = (true_year / 25771)*360;
+		set_angle('#precession_foreground', true_degrees+seasons_tilt);
+		set_angle('#precession_background', seasons_tilt);		
 
 	}
 
