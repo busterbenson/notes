@@ -1,0 +1,679 @@
+---
+title: Clock
+layout: fullscreen
+max_width: true
+---
+
+<style>
+* {
+  background: transparent;
+}
+body {
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+  background-color: #2244a3;
+  color: #fff;
+}
+#fullscreen {
+	margin: 37px !important;
+}
+#clock_canvas {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1000px;
+  max-height: 1000px;
+  min-width: 100px;
+  min-height: 100px;
+  padding: 0;
+}
+#clock {
+  position: relative;
+  background-size: contain;
+  width: 100%; 
+  max-width: 1000px;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+#stars, #earth, #sky, #seasons_dandelion,
+#seasons_earth_tilt, #precession_background,
+#precession_foreground, #sun, #moon, 
+#seasons_wrapper, #zodiac_wrapper, #mercury, 
+#venus, #mars, #jupiter, #saturn,
+#uranus, #neptune, #pluto {
+  position: absolute;
+  width: 100%; 
+  height: 100%; 
+  max-width: 1000px;
+  max-height: 1000px;
+  margin: 0 auto;
+  padding: 0;	
+}
+#sun {
+  background-image: url("/assets/images/clock/8/sun.png");
+  background-size: contain;
+  z-index: 500;
+}
+#moon {
+  background-image: url("/assets/images/clock/8/moon.png");
+  background-size: contain;
+  z-index: 600;
+}
+#earth {
+  background-image: url("/assets/images/clock/8/horizon.png");
+  background-size: contain;
+  z-index: 0;
+  opacity: 0.7;
+}
+#stars {
+  background-image: url("/assets/images/clock/8/constellations.png");
+  background-size: contain;
+  z-index: -10;
+}
+
+#sky {
+  background-image: url("/assets/images/clock/8/sky.png");
+  background-size: contain;
+  z-index: 0;
+  opacity: 0;
+} 
+#seasons_dandelion {
+  background-image: url("/assets/images/clock/8/seasons-cycle.png");
+  background-size: contain;
+  z-index: 0;
+}
+#seasons_earth_tilt {
+  background-image: url("/assets/images/clock/8/seasons-earth-tilt.png");
+  background-size: contain;
+  z-index: 0;
+}
+#precession_background {
+  background-image: url("/assets/images/clock/8/precession-background.png");
+  background-size: contain;
+  z-index: 0;
+}
+#precession_foreground {
+  background-image: url("/assets/images/clock/8/precession-foreground.png");
+  background-size: contain;
+  z-index: 0;
+}
+#venus {
+  background-image: url("/assets/images/clock/8/planet-venus.png");
+  background-size: contain;
+}
+#mars {
+  background-image: url("/assets/images/clock/8/planet-mars.png");
+  background-size: contain;
+}
+#jupiter, #saturn, 
+#uranus, #neptune, #pluto {
+	background-image: url("/assets/images/clock/8/planet-generic.png");
+  background-size: contain;
+}
+#mercury {
+  background-image: url("/assets/images/clock/8/planet-mercury.png");
+  background-size: contain;	
+}
+#zodiac_wrapper {
+	display: block;
+}
+</style>
+
+<div id="quirky-clock">
+	<div id="location-status">
+		Loading 🌞 and 🌛 and ✨ data from the universe. Hold, please.
+	</div>
+	<div id="location-not-available"></div>
+	<div id="clock_canvas" style="display: block;">
+		<div id="clock">
+			<div id="zodiac_wrapper"><div id="stars"></div></div>
+			<div id="earth"></div>
+	    <div id="mercury"></div>
+	    <div id="venus"></div>
+	    <div id="mars"></div>
+	    <div id="jupiter"></div>
+	    <div id="saturn"></div>
+	    <div id="uranus"></div>
+	    <div id="neptune"></div>
+	    <div id="pluto"></div>
+			<div id="sky"></div>
+			<div id="sun"></div>
+			<div id="moon"></div>
+			<div id="seasons_dandelion"></div>			
+			<div id="seasons_earth_tilt"></div>			
+			<div id="precession_background"></div>			
+			<div id="precession_foreground"></div>			
+		</div>
+	</div>
+	<div id="debug"></div>
+</div>
+
+
+<script type="text/javascript">
+	var location_available = null;
+	var debug = true;
+	var clock_width = null;
+
+	if (debug) {
+		$('#debug').show();
+	} else {
+		$('#debug').hide();
+	}
+
+	//////////
+	// FUNCTIONS 
+	// - helper functions
+	// - location (lat/long) 
+	// - sun data
+	// - planet data
+
+	//////////
+	// HELPER FUNCTIONS 
+	// Adjust a non-sun azimuth to one that accounts for sunrise and sunset
+	function adjust_azimuth(object_name, azimuth, clock_data) {
+		if (azimuth <= -180) {
+			azimuth = azimuth + 360
+		} else if (azimuth >= 180) {
+			azimuth = azimuth - 360
+		}
+		var azimuth_diff_from_sun = azimuth - clock_data['estimated']['sun_az']
+		if (azimuth_diff_from_sun < -180) {
+			azimuth_diff_from_sun = azimuth_diff_from_sun + 360
+		} else if (azimuth_diff_from_sun > 180) {
+			azimuth_diff_from_sun = 360 - azimuth_diff_from_sun
+		}
+
+		// figure out the relation of this planet to the sun. 
+		// top left means it's following and will rise before the sun hits high noon
+		// bottom left means it's following and will rise after high noon and before sunset
+		// etc
+		// clock_data['daytime_az']
+		// clock_data['nighttime_az']
+		// clock_data['daytime_deg_per_az']
+		// clock_data['nighttime_deg_per_az']
+		
+		$('#debug').append('<br /><br />'+object_name+' azimuth orig: '+azimuth)
+		$('#debug').append('<br />'+object_name+' azimuth diff: '+azimuth_diff_from_sun)
+		if (azimuth_diff_from_sun <= clock_data['estimated']['sunrise_az']) {
+			$('#debug').append('<br />'+object_name+' relative to sun: bottom left ◵')
+
+			// Calculate the top half with daytime az and the bottom half with nighttime az
+			clock_data['adjusted_az'][object_name] = 
+				(
+					(
+						// Adjusted AZ for the top half of the difference
+						clock_data['estimated']['sunrise_az'] *
+						clock_data['daytime_deg_per_az']
+					) + 
+					(
+						(
+							// Adjusted AZ for the lower half of the difference
+				 			azimuth_diff_from_sun -
+				 			clock_data['estimated']['sunrise_az']
+						) *
+						clock_data['nighttime_deg_per_az']
+					) 
+				)				
+
+		} else if (azimuth_diff_from_sun <= 0) {
+			$('#debug').append('<br />'+object_name+' relative to sun: top left ◴')
+
+			// Sun's location + (The -difference * daytime degrees/az)
+			clock_data['adjusted_az'][object_name] = 
+				clock_data['estimated']['sun_az'] +
+				(
+					azimuth_diff_from_sun  *
+					clock_data['daytime_deg_per_az']
+				)
+
+		} else if (azimuth_diff_from_sun <= clock_data['estimated']['sunset_az']) {
+			$('#debug').append('<br />'+object_name+' relative to sun: top right ◷')
+
+			// Sun's location + (The difference * daytime degrees/az)
+			clock_data['adjusted_az'][object_name] = 
+				clock_data['estimated']['sun_az'] +
+				(
+					azimuth_diff_from_sun *
+					clock_data['daytime_deg_per_az']
+				)
+
+		} else {
+			$('#debug').append('<br />'+object_name+' relative to sun: bottom right ◶')
+
+			// The top half + the bottom half
+			clock_data['adjusted_az'][object_name] = 
+				clock_data['estimated']['sun_az'] + 
+				(
+					clock_data['estimated']['sunset_az']*
+					clock_data['daytime_deg_per_az']
+				) + 
+				(
+					(
+						azimuth_diff_from_sun -
+						clock_data['estimated']['sunset_az']
+					) *
+					clock_data['nighttime_deg_per_az']
+				) 
+			$('#debug').append("<br />Take the suns position, "+clock_data['estimated']['sun_az']+", and then take the time it takes for the sunrise ("+clock_data['estimated']['sunset_az']+") and multiply it by "+clock_data['daytime_deg_per_az']+" degrees, then take the diff between "+azimuth_diff_from_sun+" and subtract "+clock_data['estimated']['sunset_az']+" from "+azimuth_diff_from_sun+" and multiply that by "+clock_data['nighttime_deg_per_az'] +" to get the final adjustment: "+clock_data['adjusted_az'][object_name])
+			$('#debug').append('<br />THIS ONE IS WRONG');
+		}
+
+		if (clock_data['adjusted_az'][object_name] <= -90) {
+			$('#debug').append('<br />'+object_name+' relative to south: bottom left ◵')			
+		} else if (clock_data['adjusted_az'][object_name] <= 0) {
+			$('#debug').append('<br />'+object_name+' relative to south: top left ◴')			
+		} else if (clock_data['adjusted_az'][object_name] <= 90) {
+			$('#debug').append('<br />'+object_name+' relative to south: top right ◷')			
+		} else {
+			$('#debug').append('<br />'+object_name+' relative to south: bottom right ◶')			
+		}
+
+		if (clock_data['adjusted_az'][object_name] < -180) {
+			clock_data['adjusted_az'][object_name] = clock_data['adjusted_az'][object_name] + 360
+		} else if (clock_data['adjusted_az'][object_name] > 180) { 
+			clock_data['adjusted_az'][object_name] = clock_data['adjusted_az'][object_name] - 360
+		}
+		$('#debug').append('<br /><strong>'+object_name+' ADJUSTED AZ: '+clock_data['adjusted_az'][object_name]+'</strong>')
+		return clock_data;
+	}
+
+	// Degrees clockwise from North (Down)
+	function azimuth_to_clock_time(azimuth) {
+		if (azimuth >= 0) {
+			return azimuth / 30;
+		} else {
+			return 12 - (-azimuth / 30);
+		}
+	}
+
+	// HELPER: date to time string
+	function date_to_time_string(d) {
+		return d.getHours() + ':' + (d.getMinutes()<10?'0':'') + d.getMinutes();
+	}
+
+	// HELPER: resize the clock to fit the window
+	function scale_the_clock() {
+    clock_width = $('#clock').width();
+    $("#clock").css('height', clock_width);
+	}
+
+	// HELPER: convert azimuth
+	// There are two different kinds of azimuth apparently
+	// The one we want is... clockwise from south/up (not a weird number unrelated to degrees)
+	function estimated_azimuth_converted(azimuth) {
+		// console.log('azimuth before: '+azimuth)
+		var converted_azimuth = azimuth * 180 / Math.PI;
+		// console.log('azimuth after: '+converted_azimuth)
+		return converted_azimuth;
+	}
+
+	// HELPER: set angle for a celestial body on the clock
+	function set_angle(wrapper, angle) {
+		console.log('ROTATING '+wrapper+" by "+angle)
+		$(wrapper).css('color: #f00;');
+		var rotate_string = "rotate(" + parseInt(angle) + "deg)";
+  	$(wrapper).css('transform', rotate_string);
+	}
+
+	//////////
+	// GET LOCATION FIGURED OUT
+	// Initial function that is run when location is retrieved from the browser
+	function update_clock() {
+		if (navigator.geolocation) {
+
+			navigator.geolocation.getCurrentPosition(got_location, no_location);
+			// got_location({'coords': {'latitude': 37.8573003, 'longitude': -122.2784977}})
+		} else {
+			$('#location-status').html("Please allow location to be accessed and reload the page.");
+			$('#location-not-available').html("no 1: "+navigator.geolocation);
+			console.log('location not available: using pacific time');
+			// lat: 37.8573003, long: -122.2784977
+			got_location({'coords': {'latitude': 37.8573003, 'longitude': -122.2784977}})
+			location_available = false;
+		};
+	}
+
+	// LOCATION: NO -  When we don't have a location
+	// Called from update_clock()
+	function no_location(err) {
+		location_available = false;
+		$('#location-status').html("Please allow location to be accessed and reload the page.");
+		$('#location-not-available').html("geolocation error: "+`ERROR(${err.code}): ${err.message}`);
+		console.log('location not available');
+		window.setTimeout(update_clock, 60000);
+	};
+
+	// LOCATION: YES - Update the clock with the location
+	// Called from update_clock()
+	function got_location(pos) {
+		$('#location-status').hide();
+		location_available = true;
+		var latitude = pos.coords.latitude;
+		var longitude = pos.coords.longitude;
+		var now = new Date();
+		var yesterday = new Date();
+				yesterday.setDate(yesterday.getDate()-1);
+		var tomorrow = new Date();
+				tomorrow.setDate(tomorrow.getDate()+1);
+
+		// Get yesterday, today, and tomorrow
+		var day_shift = 0;
+		var hour_shift = 0;
+		now.setDate(now.getDate() + day_shift)
+		now.setHours(now.getHours() + hour_shift);
+		yesterday.setDate(yesterday.getDate() + day_shift)
+		yesterday.setHours(yesterday.getHours() + hour_shift);
+		tomorrow.setDate(tomorrow.getDate() + day_shift)
+		tomorrow.setHours(tomorrow.getHours() + hour_shift);
+		
+		// Get sun and moon data from calculations
+		var sunTimes = SunCalc.getTimes(now, latitude, longitude);
+		var moonTimes = SunCalc.getMoonTimes(now, latitude, longitude);
+		var using = 'today'
+		if (now >= sunTimes.sunset) {
+			sunTimes = SunCalc.getTimes(tomorrow, latitude, longitude);
+			using = 'tomorrow'
+		} 
+
+		var debug_current_time = date_to_time_string(now); // for debug
+		// $('#debug').append("<br />The time is: "+debug_current_time);
+		// $('#debug').append("<br />The day we're using is: "+using);
+		// $('#debug').append("<br />The date is: "+now);
+
+		// All sun and moon data we can use to build the clock
+		var suncalc_get_sun  = SunCalc.getPosition(now, latitude, longitude)
+		var suncalc_get_moon = SunCalc.getMoonPosition(now, latitude, longitude)
+
+		var clock_data = {
+			now: now,
+			yesterday: yesterday,
+			tomorrow: tomorrow,
+			using: using,
+
+			// What are these used for? Figuring out the tilt of the earth and how
+			// it affects the time of sunrise and sunset.
+			estimated: {
+
+				// Sun
+				// needed? sun_data: sunTimes,
+				sunrise: sunTimes.sunrise,
+				sunset: sunTimes.sunset,
+				// needed? sun_pos: suncalc_get_sun,
+				sun_az: estimated_azimuth_converted(suncalc_get_sun['azimuth']), // not real azimuth
+
+				// Moon 
+				moon_data: moonTimes, // needed for moon rise and set times
+				moon_pos: suncalc_get_moon,
+				moon_az: estimated_azimuth_converted(suncalc_get_moon['azimuth']) // not real azimuth
+			},
+			// This is where azimuth is adjusted relative to the sun
+			adjusted_az: {}
+		}
+		$('#debug').append("<br />SUN TIME: ", now);
+		$('#debug').append("<br />SUN AZIMUTH: "+clock_data.estimated.sun_az);
+		set_angle('#sun', clock_data.estimated.sun_az);
+
+		if (using == 'tomorrow') {
+			get_sun_data(clock_data, latitude, longitude, now.toISOString().split('T')[0])
+		} else {
+			get_sun_data(clock_data, latitude, longitude, now.toISOString().split('T')[0])
+		}
+	};
+
+
+	//////////
+	// SUN DATA 
+	// Date is in yyyy-mm-dd format
+	function get_sun_data(data, lat, long, date) {
+		var url = "https://api.ipgeolocation.io/astronomy?apiKey=7af9a1e42c9a41f9b2e099f8776575d6&lat="+lat+"&long="+long+"&date="+date
+
+		fetch(url)
+  		.then((response) => response.json())
+  		.then(function (json) {
+  			// console.log('sun and moon data: ')
+  			// console.log(json)
+  			// needed? data['sun_moon_data'] = json
+  			// needed? data['location'] = json['location']
+  			data['current_time'] = json['current_time']
+  			data['date'] = json['date']
+  			data['day_length'] = json['day_length']
+  			data['moon'] = {
+  				'azimuth': json['moon_azimuth'],
+  				'rise': (json['moonrise'] == '-:-' ? '23:59' : json['moonrise']),
+  				'set': (json['moonset'] == '-:-' ? '23:59' : json['moonset'])
+  			}
+  			data['sun'] = {
+  				'azimuth': json['sun_azimuth'],
+  				'rise': json['sunrise'],
+  				'set': json['sunset']
+  			}
+  			data = get_rising_setting_for_sun_and_moon(data, lat, long)
+  			debug ? console.log('Sun data:') : null;
+  			debug ? console.log(data) : null;
+  			get_planet_data(data, lat, long, date);
+  		});
+	}
+
+	// SUN: RISING AND SETTING 
+	function get_rising_setting_for_sun_and_moon(clock_data, latitude, longitude) {
+		
+		// Sunrise 
+		var sunrise = new Date(Date.parse(clock_data['date']+'T'+clock_data['sun']['rise']+':00'))
+
+		// FIXME: Getting the lat/long for the sun at time of sunrise. 
+		var sunriseStr = date_to_time_string(sunrise) // date_to_time_string(sunTimes.sunrise);
+		var sunrisePos = SunCalc.getPosition(sunrise, latitude, longitude);
+		clock_data['estimated']['sunrise_pos'] = sunrisePos;
+		clock_data['estimated']['sunrise_az'] = estimated_azimuth_converted(sunrisePos['azimuth'])
+
+		// Sunset time
+		var sunset = new Date(Date.parse(clock_data['date']+'T'+clock_data['sun']['set']+':00'))
+
+		// Sunset lat/long 
+		var sunsetStr = date_to_time_string(sunset);
+		var sunsetPos = SunCalc.getPosition(sunset, latitude, longitude);
+		clock_data['estimated']['sunset_pos'] = sunsetPos;
+		clock_data['estimated']['sunset_az'] = estimated_azimuth_converted(sunsetPos['azimuth'])
+
+		$('#debug').append("<br /><br />SUNRISE AZIMUTH: "+clock_data['estimated']['sunrise_az']);
+		$('#debug').append("<br />SUNSET AZIMUTH: "+clock_data['estimated']['sunset_az']);
+		clock_data['daytime_az'] = -clock_data['estimated']['sunrise_az'] + clock_data['estimated']['sunset_az']
+		clock_data['nighttime_az'] = 360 - clock_data['daytime_az'] 
+		clock_data['daytime_deg_per_az'] = clock_data['daytime_az']/180
+		clock_data['nighttime_deg_per_az'] = clock_data['nighttime_az']/180
+		$('#debug').append("<br />DAYTIME AZ: "+clock_data['daytime_az']);
+		$('#debug').append("<br />NIGHTTIME AZ: "+clock_data['nighttime_az']);
+		$('#debug').append("<br />DAYTIME DEG PER AZ: "+clock_data['daytime_deg_per_az']);
+		$('#debug').append("<br />NIGHTTIME DEG PER AZ: "+clock_data['nighttime_deg_per_az']);
+
+		if (clock_data.estimated.sun_az < clock_data['estimated']['sunrise_az']) {
+			$('#debug').append("<br />SUN LOCATION: Before dawn");
+		} else if (clock_data.estimated.sun_az >= clock_data['estimated']['sunrise_az'] && 
+							 clock_data.estimated.sun_az < clock_data['estimated']['sunset_az']) {
+			$('#debug').append("<br />SUN LOCATION: Day");
+		} else {
+			$('#debug').append("<br />SUN LOCATION: After sunset");
+		}
+
+		return clock_data;
+	}
+
+	//////////
+	// PLANET DATA
+	function get_planet_data(data, lat, long, date) {
+		const user_id = '{{ site.env.ASTROLOGY_USER_ID }}'; 
+		const api_key = '{{ site.env.ASTROLOGY_API_KEY }}';
+		const auth = "Basic " + btoa(user_id + ":" + api_key);
+		const date_bits = data['date'].split("-");
+		const time_bits = data['current_time'].split(":");
+		var time_zone = -7
+		// Send the request
+		// Get tzone from https://astrologyapi.com/docs/api-ref/92/timezone_with_dst
+		var timezone_request = $.ajax({
+			url: "https://json.astrologyapi.com/v1/timezone_with_dst",
+			method: "POST",
+			dataType:'json',
+			headers: {
+		    "authorization": auth,
+		    "Content-Type":'application/json'
+			},
+	    data: JSON.stringify({
+	    	'latitude': lat,
+	    	'longitude': long,
+	    	'date': data['date']
+	    })
+		});
+
+		timezone_request.then( 
+			function(resp){
+				time_zone = resp['timezone']
+			},
+			function(err){
+				console.log('planet error: ')
+	    	console.log(err);
+			}
+		);
+
+		var planet_data = {
+					'day': date_bits[2],
+					'month': date_bits[1],
+					'year': date_bits[0],
+					'hour': time_bits[0],
+					'min': time_bits[1],
+					'lat': lat,
+					'lon': long,
+					'tzone': time_zone
+				}
+		var request = $.ajax({
+			url: "https://json.astrologyapi.com/v1/planets/extended",
+			method: "POST",
+			dataType:'json',
+			headers: {
+		    "authorization": auth,
+		    "Content-Type":'application/json'
+			},
+	    data: JSON.stringify(planet_data)
+		});
+
+		request.then( 
+			function(resp){
+				// fullDegree: 58.62370106968824 // azimuth
+				// house: 1
+				// id: 12
+				// isRetro: false
+				// nakshatra: "Mrigshira"
+				// nakshatraLord: "Mars"
+				// nakshatra_pad: 2
+				// name: "Ascendant"
+				// normDegree: 28.623701069688238
+				// sign: "Taurus"
+				// signLord: "Venus"
+				// speed: 0
+	    	data['planets_raw'] = {
+	    		'SUN': resp[0],
+	    		'MOON': resp[1],
+	    		'MARS': resp[2],
+	    		'MERCURY': resp[3],
+	    		'JUPITER': resp[4],
+	    		'VENUS': resp[5],
+	    		'SATURN': resp[6],
+	    		'URANUS': resp[9],
+	    		'NEPTUNE': resp[10],
+	    		'PLUTO': resp[11],
+	    		'ASCENDANT': resp[12]
+	    	}
+	    	data['planets'] = {
+	    		'offset': null,
+	    		'SUN': {'azimuth': null, 'uncorrected_az': null},
+	    		'MOON': {'azimuth': null, 'uncorrected_az': null},
+	    		'MERCURY': {'azimuth': null, 'uncorrected_az': null, 'L': 13, 'M': 8, 'S': 4},
+	    		'VENUS': {'azimuth': null, 'uncorrected_az': null, 'L': 66, 'M': 38, 'S': 10},
+	    		'MARS': {'azimuth': null, 'uncorrected_az': null, 'L': 25, 'M': 11, 'S': 4},
+	    		'SATURN': {'azimuth': null, 'uncorrected_az': null, 'L': 20, 'M': 17, 'S': 14},
+	    		'JUPITER': {'azimuth': null, 'uncorrected_az': null, 'L': 47, 'M': 38, 'S': 30},
+	    		'URANUS': {'azimuth': null, 'uncorrected_az': null, 'L': 4, 'M': 3, 'S': 3},
+	    		'NEPTUNE': {'azimuth': null, 'uncorrected_az': null, 'L': 2, 'M': 2, 'S': 2},
+	    		'PLUTO': {'azimuth': null, 'uncorrected_az': null, 'L': 1, 'M': 1, 'S': 1}
+	    	}
+
+				// Figure out the correction based on the sun's location
+	    	// Convert az that is counter-clockwise from N to clockwise from S (0-180 degrees)
+	    	if (data['planets_raw']['SUN']['fullDegree'] <= 180) {
+	    		data['planets']['SUN']['uncorrected_az'] = 180 - data['planets_raw']['SUN']['fullDegree']
+		    	data['planets']['offset'] = data['estimated']['sun_az'] - data['planets']['SUN']['uncorrected_az']
+
+	    	// Convert az that is counter-clockwise from N to clockwise from S (180-360 degrees)
+	    	} else {
+	    		data['planets']['SUN']['uncorrected_az'] = (360 - data['planets_raw']['SUN']['fullDegree']) + 180
+		    	data['planets']['offset'] = data['sun_az'] - data['planets']['SUN']['uncorrected_az']
+	    	}
+    		data['planets']['SUN']['azimuth'] = (data['planets']['SUN']['uncorrected_az'] + data['planets']['offset'])
+
+    		// Convert fullDegree into uncorrected_az
+    		var planets = ['MOON', 'MERCURY','VENUS','MARS','SATURN','JUPITER','URANUS','NEPTUNE','PLUTO'];
+				for (var i = 0; i < planets.length; i++) {
+				  var planet = planets[i];
+				  // console.log('PLANET: '+planet)
+		    	if (data['planets_raw'][planet]['fullDegree'] <= 180) {
+		    		data['planets'][planet]['uncorrected_az'] = 180 - data['planets_raw'][planet]['fullDegree']
+		    	} else {
+		    		data['planets'][planet]['uncorrected_az'] = 180 + (360 - data['planets_raw'][planet]['fullDegree'])
+		    	}
+	    		data['planets'][planet]['azimuth'] = (data['planets'][planet]['uncorrected_az'] + 
+	    																					data['planets']['offset'])
+	    		// console.log('azimuth: '+data['planets'][planet]['azimuth'])
+					data = adjust_azimuth(planet,data['planets'][planet]['azimuth'], data)
+					set_angle('#'+planet.toLowerCase(), data['adjusted_az'][planet]);
+				}
+				
+				console.log('Setting angle for moon: ')
+				console.log(data['adjusted_az']['MOON'])
+			  
+			  console.log(data['planets'])
+	    	build_the_clock(data, lat, long, date)
+			}, 
+			function(err){
+				console.log('planet error: ')
+	    	console.log(err);
+			}
+		);
+	}
+
+	function build_the_clock(clock_data, lat, long, date) {
+
+		var moon_illumination = SunCalc.getMoonIllumination(clock_data['now']);
+		console.log(moon_illumination)
+		clock_data['moon']['illumination_fraction'] = moon_illumination.fraction;
+		clock_data['moon']['illumination_phase'] = moon_illumination.phase;
+		clock_data['moon']['illumination_angle'] = moon_illumination.angle;
+
+		if (clock_data['moon']['illumination_phase'] < 0.05) {
+			$('#moon').html("<style>#moon:before{content: '🌑' !important;}</style>");
+		} else if (clock_data['moon']['illumination_phase'] < 0.2) {
+			$('#moon').html("<style>#moon:before{content: '🌒' !important;}</style>");
+		} else if (clock_data['moon']['illumination_phase'] < 0.3) {
+			$('#moon').html("<style>#moon:before{content: '🌓' !important;}</style>");
+		} else if (clock_data['moon']['illumination_phase'] < 0.45) {
+			$('#moon').html("<style>#moon:before{content: '🌔' !important;}</style>");
+		} else if (clock_data['moon']['illumination_phase'] < 0.55) {
+			$('#moon').html("<style>#moon:before{content: '🌕' !important;}</style>");
+		} else if (clock_data['moon']['illumination_phase'] < 0.7) {
+			$('#moon').html("<style>#moon:before{content: '🌖' !important;}</style>");
+		} else if (clock_data['moon']['illumination_phase'] < 0.8) {
+			$('#moon').html("<style>#moon:before{content: '🌗' !important;}</style>");
+		} else if (clock_data['moon']['illumination_phase'] < 0.95) {
+			$('#moon').html("<style>#moon:before{content: '🌘' !important;}</style>");
+		} else {
+			$('#moon').html("<style>#moon:before{content: '🌑' !important;}</style>");
+		}
+
+
+
+	}
+
+	$(document).ready(function() {
+	    scale_the_clock();
+	    $(window).bind('resize', scale_the_clock);
+			update_clock();
+	});
+</script>

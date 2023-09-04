@@ -65,7 +65,7 @@ body {
   background-size: contain;
   z-index: 0;
   opacity: 0;
-}
+} 
 #seasons_dandelion {
   background-image: url("/assets/images/clock/seasons-dandelion.png");
   background-size: contain;
@@ -96,7 +96,7 @@ body {
 }
 #jupiter_wrapper, #saturn_wrapper, 
 #uranus_wrapper, #neptune_wrapper, #pluto_wrapper {
-/*  background-image: url("/assets/images/clock/planet.png");*/
+	/*  background-image: url("/assets/images/clock/planet.png");*/
   background-size: contain;
 }
 #mercury_wrapper {
@@ -405,6 +405,7 @@ body {
 	    	}
     		data['planets']['pluto']['azimuth'] = (data['planets']['pluto']['uncorrected_az'] + data['planets']['offset'])
 
+    		console.log(data);
     		build_the_clock(data, lat, long, date)
 			}, 
 			function(err){
