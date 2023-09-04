@@ -1,5 +1,5 @@
 ---
-title: Clock
+title: Quirky Clock
 layout: fullscreen
 max_width: true
 ---
@@ -49,13 +49,18 @@ body {
   margin: 0 auto;
   padding: 0;	
 }
+/* z-index is 50 if not retro, and 150 if it is retro */
+#mercury, #venus, #mars, #jupiter, #saturn,
+#uranus, #neptune, #pluto {
+	z-index: 50; 
+}
 #sun {
   background-size: contain;
-  z-index: 500;
+  z-index: 100;
 }
 #moon {
   background-size: contain;
-  z-index: 600;
+  z-index: 200;
 }
 #earth {
   background-image: url("/assets/images/clock/8/horizon.png");
@@ -95,6 +100,10 @@ body {
   background-size: contain;
   z-index: 0;
 }
+#mercury {
+  background-image: url("/assets/images/clock/8/planet-mercury.png");
+  background-size: contain;	
+}
 #venus {
   background-image: url("/assets/images/clock/8/planet-venus.png");
   background-size: contain;
@@ -103,14 +112,16 @@ body {
   background-image: url("/assets/images/clock/8/planet-mars.png");
   background-size: contain;
 }
-#jupiter, #saturn, 
-#uranus, #neptune, #pluto {
-	background-image: url("/assets/images/clock/8/planet-generic.png");
+#jupiter {
+	background-image: url("/assets/images/clock/8/planet-jupiter.png");
   background-size: contain;
 }
-#mercury {
-  background-image: url("/assets/images/clock/8/planet-mercury.png");
-  background-size: contain;	
+#saturn {
+	background-image: url("/assets/images/clock/8/planet-saturn.png");
+  background-size: contain;
+}
+#uranus, #neptune, #pluto {
+	display: none;
 }
 #zodiac_wrapper {
 	display: block;
@@ -193,10 +204,12 @@ body {
 		$('#debug').append('<br /><br />'+object_name+' azimuth orig: '+azimuth)
 		$('#debug').append('<br />'+object_name+' azimuth diff: '+azimuth_diff_from_sun)
 		if (azimuth_diff_from_sun <= clock_data['estimated']['sunrise_az']) {
+
 			$('#debug').append('<br />'+object_name+' relative to sun: bottom left ◵')
 
 			// Calculate the top half with daytime az and the bottom half with nighttime az
 			clock_data['adjusted_az'][object_name] = 
+				clock_data['estimated']['sun_az'] +
 				(
 					(
 						// Adjusted AZ for the top half of the difference
@@ -212,6 +225,8 @@ body {
 						clock_data['nighttime_deg_per_az']
 					) 
 				)				
+			$('#debug').append("<br />Take the suns position, "+clock_data['estimated']['sun_az']+", and then take the time it takes for the sunrise ("+clock_data['estimated']['sunrise_az']+") and multiply it by "+clock_data['daytime_deg_per_az']+" degrees, then take the diff between "+azimuth_diff_from_sun+" and subtract "+clock_data['estimated']['sunrise_az']+" from "+azimuth_diff_from_sun+" and multiply that by "+clock_data['nighttime_deg_per_az'] +" to get the final adjustment: "+clock_data['adjusted_az'][object_name])
+
 
 		} else if (azimuth_diff_from_sun <= 0) {
 			$('#debug').append('<br />'+object_name+' relative to sun: top left ◴')
@@ -252,8 +267,7 @@ body {
 					) *
 					clock_data['nighttime_deg_per_az']
 				) 
-			$('#debug').append("<br />Take the suns position, "+clock_data['estimated']['sun_az']+", and then take the time it takes for the sunrise ("+clock_data['estimated']['sunset_az']+") and multiply it by "+clock_data['daytime_deg_per_az']+" degrees, then take the diff between "+azimuth_diff_from_sun+" and subtract "+clock_data['estimated']['sunset_az']+" from "+azimuth_diff_from_sun+" and multiply that by "+clock_data['nighttime_deg_per_az'] +" to get the final adjustment: "+clock_data['adjusted_az'][object_name])
-			$('#debug').append('<br />THIS ONE IS WRONG');
+			$('#debug').append("<br />Take the suns position, "+clock_data['estimated']['sun_az']+", and then take the time it takes for the sunset ("+clock_data['estimated']['sunset_az']+") and multiply it by "+clock_data['daytime_deg_per_az']+" degrees, then take the diff between "+azimuth_diff_from_sun+" and subtract "+clock_data['estimated']['sunset_az']+" from "+azimuth_diff_from_sun+" and multiply that by "+clock_data['nighttime_deg_per_az'] +" to get the final adjustment: "+clock_data['adjusted_az'][object_name])
 		}
 
 		if (clock_data['adjusted_az'][object_name] <= -90) {
@@ -308,7 +322,6 @@ body {
 	// HELPER: set angle for a celestial body on the clock
 	function set_angle(wrapper, angle) {
 		debug ? console.log('ROTATING '+wrapper+" by "+angle) : null 
-	  $(wrapper).css('color: #f00;');
 		var rotate_string = "rotate(" + parseInt(angle) + "deg)";
   	$(wrapper).css('transform', rotate_string);
 	}
@@ -509,12 +522,12 @@ body {
 			var percent_remaining = 1 - percent_through;
 
 			if (percent_remaining > 0.05) {
-				$('#sky').css('opacity', 0.8);
+				$('#sky').css('opacity', 0.7);
 			} else if (percent_remaining <= 0.05) {
-				var opacity = 0.8-(0.8*(percent_remaining / 0.05));
+				var opacity = 0.7-(0.7*(percent_remaining / 0.05));
 				$('#sky').css('opacity', opacity);
 			} else {
-				$('#sky').css('opacity', 0.8);			
+				$('#sky').css('opacity', 0.7);			
 			}
 
 		// After sunset: from sunset (sunset_az) to midnight (180)
@@ -527,16 +540,16 @@ body {
 			if (percent_through > 0.05) {
 				$('#sky').css('opacity', 0);
 			} else if (percent_through <= 0.05) {
-				var opacity = 0.8-(0.8*(percent_through / 0.05));
+				var opacity = 0.7-(0.7*(percent_through / 0.05));
 				$('#sky').css('opacity', opacity);
 			} else {
-				$('#sky').css('opacity', 0.8);			
+				$('#sky').css('opacity', 0.7);			
 			}
 
 		// During the day: from sunrise to sunset
 		} else {
 			$('body').css('background-color', '#6278C6');
-			$('#sky').css('opacity', 0.8);			
+			$('#sky').css('opacity', 0.7);			
 			var segment_length = -clock_data['estimated']['sunrise_az'] + clock_data['estimated']['sunset_az'];
 			var remaining_length;
 			if (clock_data['estimated']['sun_az'] < 0) {
@@ -647,6 +660,7 @@ body {
 	    		'PLUTO': {'azimuth': null, 'uncorrected_az': null, 'L': 1, 'M': 1, 'S': 1}
 	    	}
 
+	    	console.log(data.planets_raw)
 				// Figure out the correction based on the sun's location
 	    	// Convert az that is counter-clockwise from N to clockwise from S (0-180 degrees)
 	    	if (data['planets_raw']['SUN']['fullDegree'] <= 180) {
@@ -664,7 +678,7 @@ body {
 				set_angle('#sun', data.estimated.sun_az);
 
     		// Convert fullDegree into uncorrected_az
-    		var planets = ['MOON', 'MERCURY','VENUS','MARS','SATURN','JUPITER','URANUS','NEPTUNE','PLUTO'];
+    		var planets = ['MOON', 'MERCURY','VENUS','MARS','JUPITER','SATURN']; //,'URANUS','NEPTUNE','PLUTO'
 				for (var i = 0; i < planets.length; i++) {
 				  var planet = planets[i];
 				  // console.log('PLANET: '+planet)
@@ -678,6 +692,15 @@ body {
 
 					data = adjust_azimuth(planet,data.planets[planet].azimuth, data)
 					set_angle('#'+planet.toLowerCase(), data.adjusted_az[planet]);
+
+					// change z-index if this is in retro
+					if (data.planets_raw[planet].isRetro == 'true') {
+						$('#'+planet.toLowerCase()).css('z-index', 500);
+						console.log('A'+planet+(data.planets_raw[planet].isRetro == 'true' ? ' is retro ' : ' is not retro'))
+					} else {
+						$('#'+planet.toLowerCase()).css('z-index', 50);
+						console.log('B'+planet+(data.planets_raw[planet].isRetro == 'true' ? ' is retro ' : ' is not retro'))
+					}
 				}
 				
 	    	build_the_clock(data, lat, long, date)

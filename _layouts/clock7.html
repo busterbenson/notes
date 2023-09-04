@@ -1,5 +1,5 @@
 ---
-title: Clock
+title: Quirky Clock
 layout: fullscreen
 max_width: true
 ---
@@ -758,12 +758,12 @@ body {
 
 			var percent_remaining = 1 - percent_through;
 			if (percent_remaining > 0.05) {
-				$('#sky').css('opacity', 0.8);
+				$('#sky').css('opacity', 0.7);
 			} else if (percent_remaining <= 0.05) {
-				var opacity = 0.8-(0.8*(percent_remaining / 0.05));
+				var opacity = 0.7-(0.7*(percent_remaining / 0.05));
 				$('#sky').css('opacity', opacity);
 			} else {
-				$('#sky').css('opacity', 0.8);			
+				$('#sky').css('opacity', 0.7);			
 			}
 
 
@@ -783,10 +783,10 @@ body {
 			if (percent_through > 0.05) {
 				$('#sky').css('opacity', 0);
 			} else if (percent_through <= 0.05) {
-				var opacity = 0.8-(0.8*(percent_through / 0.05));
+				var opacity = 0.7-(0.7*(percent_through / 0.05));
 				$('#sky').css('opacity', opacity);
 			} else {
-				$('#sky').css('opacity', 0.8);			
+				$('#sky').css('opacity', 0.7);			
 			}
 
 
@@ -794,6 +794,7 @@ body {
 		} else {
 			// console.log('sun: in the sky');
 			$('body').css('background-color', '#6278C6');
+			$('#sky').css('opacity', 0.7);			
 			var segment_length = -cd['estimated']['sunrise_az'] + cd['estimated']['sunset_az'];
 			var remaining_length;
 			if (cd['estimated']['sun_az'] < 0) {
