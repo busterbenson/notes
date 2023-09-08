@@ -52,6 +52,7 @@ body {
 /* z-index is 50 if not retro, and 150 if it is retro */
 #mercury, #venus, #mars, #jupiter, #saturn {
 	z-index: 50; 
+	display: none;
 }
 #sun {
   background-size: contain;
@@ -690,6 +691,7 @@ body {
 	    																					data['planets']['offset'])
 
 					data = adjust_azimuth(planet,data.planets[planet].azimuth, data)
+					$('#'+planet.toLowerCase()).show();
 					set_angle('#'+planet.toLowerCase(), data.adjusted_az[planet]);
 
 					// change z-index if this is in retro
@@ -719,33 +721,46 @@ body {
 		clock_data['moon']['illumination_phase'] = moon_illumination.phase;
 		clock_data['moon']['illumination_angle'] = moon_illumination.angle;
 
-		if (clock_data['moon']['illumination_phase'] < 0.05) {
+		// 0.95 - 0.05 (10) new
+		if (clock_data['moon']['illumination_phase'] < 0.05 || clock_data['moon']['illumination_phase'] >= 0.95) {
 			$('#moon').css('background-image','url("/assets/images/clock/8/moon-new.png")')
 			$('#moon').css('opacity',0.3)
-		} else if (clock_data['moon']['illumination_phase'] < 0.15) {
-			$('#moon').css('background-image','url("/assets/images/clock/8/moon-waning-3.png")')
-			$('#moon').css('opacity',0.9)
-		} else if (clock_data['moon']['illumination_phase'] < 0.25) {
-			$('#moon').css('background-image','url("/assets/images/clock/8/moon-waning-2.png")')
-			$('#moon').css('opacity',1)
-		} else if (clock_data['moon']['illumination_phase'] < 0.45) {
+
+		// 0.05 - 0.15 (15) crescent
+		} else if (clock_data['moon']['illumination_phase'] < 0.2) {
 			$('#moon').css('background-image','url("/assets/images/clock/8/moon-waning-1.png")')
 			$('#moon').css('opacity',1)
+
+		// 0.15 - 0.25 (10) half (10)
+		} else if (clock_data['moon']['illumination_phase'] < 0.3) {
+			$('#moon').css('background-image','url("/assets/images/clock/8/moon-waning-2.png")')
+			$('#moon').css('opacity',1)
+
+		// 0.25 - 0.45 (15) gibbous
+		} else if (clock_data['moon']['illumination_phase'] < 0.45) {
+			$('#moon').css('background-image','url("/assets/images/clock/8/moon-waning-3.png")')
+			$('#moon').css('opacity',1)
+
+		// 0.45 - 0.55 (10) full
 		} else if (clock_data['moon']['illumination_phase'] < 0.55) {
 			$('#moon').css('background-image','url("/assets/images/clock/8/moon-full.png")')
 			$('#moon').css('opacity',1)
-		} else if (clock_data['moon']['illumination_phase'] < 0.65) {
+
+		// 0.55 - 0.65 (15) gibbous
+		} else if (clock_data['moon']['illumination_phase'] < 0.7) {
 			$('#moon').css('background-image','url("/assets/images/clock/8/moon-waxing-1.png")')
 			$('#moon').css('opacity',1)
-		} else if (clock_data['moon']['illumination_phase'] < 0.75) {
+
+		// 0.65 - 0.85 (10) half
+		} else if (clock_data['moon']['illumination_phase'] < 0.8) {
 			$('#moon').css('background-image','url("/assets/images/clock/8/moon-waxing-2.png")')
 			$('#moon').css('opacity',1)
+
+		// 0.75 - 0.95 (15) crescent
 		} else if (clock_data['moon']['illumination_phase'] < 0.95) {
 			$('#moon').css('background-image','url("/assets/images/clock/8/moon-waxing-3.png")')
-			$('#moon').css('opacity',0.3)
-		} else {
-			$('#moon').css('background-image','url("/assets/images/clock/8/moon-new.png")')
-			$('#moon').css('opacity',0.3)
+			$('#moon').css('opacity',1)
+
 		}
 
 		configure_constellations(clock_data)
