@@ -660,7 +660,6 @@ body {
 	    		'PLUTO': {'azimuth': null, 'uncorrected_az': null, 'L': 1, 'M': 1, 'S': 1}
 	    	}
 
-	    	console.log(data.planets_raw)
 				// Figure out the correction based on the sun's location
 	    	// Convert az that is counter-clockwise from N to clockwise from S (0-180 degrees)
 	    	if (data['planets_raw']['SUN']['fullDegree'] <= 180) {
@@ -698,7 +697,7 @@ body {
 					if (planet == 'MOON') {
 						// do nothing to z-index
 					} else if (data.planets_raw[planet].isRetro == 'true') {
-						console.log(planet+': '+data.planets_raw[planet].isRetro)
+						debug ? console.log(planet+': '+data.planets_raw[planet].isRetro) : null
 						$('#'+planet.toLowerCase()).css('z-index', 150);
 					} else {
 						$('#'+planet.toLowerCase()).css('z-index', 50);
@@ -728,7 +727,7 @@ body {
 
 		// 0.05 - 0.15 (15) crescent
 		} else if (clock_data['moon']['illumination_phase'] < 0.2) {
-			$('#moon').css('background-image','url("/assets/images/clock/8/moon-waning-1.png")')
+			$('#moon').css('background-image','url("/assets/images/clock/8/moon-waning-3.png")')
 			$('#moon').css('opacity',1)
 
 		// 0.15 - 0.25 (10) half (10)
@@ -738,7 +737,7 @@ body {
 
 		// 0.25 - 0.45 (15) gibbous
 		} else if (clock_data['moon']['illumination_phase'] < 0.45) {
-			$('#moon').css('background-image','url("/assets/images/clock/8/moon-waning-3.png")')
+			$('#moon').css('background-image','url("/assets/images/clock/8/moon-waning-1.png")')
 			$('#moon').css('opacity',1)
 
 		// 0.45 - 0.55 (10) full
