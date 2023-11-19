@@ -160,7 +160,7 @@ body {
 
 <script type="text/javascript">
 	var location_available = null;
-	var debug = false;
+	var debug = true;
 	var clock_width = null;
 
 	if (debug) {
@@ -678,9 +678,12 @@ body {
 
     		// Convert fullDegree into uncorrected_az
     		var planets = ['MOON', 'MERCURY','VENUS','MARS','JUPITER','SATURN']; //,'URANUS','NEPTUNE','PLUTO'
+    		// console.log('PLANETS_RAW')
+    		// console.log(data['planets_raw'])
 				for (var i = 0; i < planets.length; i++) {
 				  var planet = planets[i];
 				  // console.log('PLANET: '+planet)
+				  // console.log(data['planets_raw'][planet])
 		    	if (data['planets_raw'][planet]['fullDegree'] <= 180) {
 		    		data['planets'][planet]['uncorrected_az'] = 180 - data['planets_raw'][planet]['fullDegree']
 		    	} else {
@@ -689,7 +692,7 @@ body {
 	    		data['planets'][planet]['azimuth'] = (data['planets'][planet]['uncorrected_az'] + 
 	    																					data['planets']['offset'])
 
-					data = adjust_azimuth(planet,data.planets[planet].azimuth, data)
+					data = adjust_azimuth(planet,data.planets[planet].uncorrected_az, data)
 					$('#'+planet.toLowerCase()).show();
 					set_angle('#'+planet.toLowerCase(), data.adjusted_az[planet]);
 
@@ -714,6 +717,7 @@ body {
 	}
 
 	function build_the_clock(clock_data, lat, long, date) {
+		console.log('function build_the_clock')
 
 		var moon_illumination = SunCalc.getMoonIllumination(clock_data['now']);
 		clock_data['moon']['illumination_fraction'] = moon_illumination.fraction;
