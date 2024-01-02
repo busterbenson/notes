@@ -465,7 +465,7 @@ body {
 
 		// FIXME: Moonrise lat/long for the time of moon rise
 		var moonriseStr = date_to_time_string(moonrise); // old_moonRise
-		// $('#moonrise_string').html(moonriseStr);
+		$('#moonrise_string').html(moonriseStr);
 		var moonrisePos = SunCalc.getMoonPosition(moonrise, latitude, longitude);
 		clock_data['estimated']['moonrise'] = moonrisePos;
 		clock_data['estimated']['moonrise_az'] = estimated_azimuth_converted(moonrisePos['azimuth'])
@@ -679,7 +679,7 @@ body {
 		tomorrow.setHours(tomorrow.getHours() + hour_shift);
 
 		var nowStr = date_to_time_string(now); 
-		// $('#now_string').html(nowStr);
+		$('#now_string').html(nowStr);
 		
 		// Get sun and moon data from calculations
 		var sunTimes = SunCalc.getTimes(now, latitude, longitude);
