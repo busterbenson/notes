@@ -4,6 +4,7 @@
 `bundle exec jekyll build`
 
 ## Start the server 
+`ruby -v`
 `rvm use 2.7.7` (if `rvm list` shows 2.3.4 or 2.6.3 is being used)
 `bundle exec jekyll serve --incremental`
 http://localhost:4000
