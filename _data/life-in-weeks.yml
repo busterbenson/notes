@@ -396,10 +396,6 @@
     link: "https://paper.dropbox.com/doc/44-Year-of-the-Amateur--A1I6fGSn30hLhQMF5kpFCXC7AQ-xzFR0pPTrr36OFxt7h86h"
     tags: ["annual review"]
 
-'2020-10-27':
-  - name: "Met Bonnie"
-    category: "relationships"
-
 '2020-12-14':
   - name: "Biden officially declared winner of the election"
     category: "world"
@@ -452,7 +448,21 @@
 '2023-02-19':
   - name: "I adopted Pancake 😻"
     category: "family"
-    tags: ["pancake"]
+    tags: ["cat"]
+
+'2023-12-12':
+  - name: "🏡 I buy a house in Albany"
+    category: "family"
+    tags: ["home"]
+
+'2024-10-24':
+  - name: "First date with Sarah"
+    category: "relationships"
+
+'2024-05-08':
+  - name: "Pancake has kittens 😻😻😻😻"
+    category: "family"
+    tags: ["cat"]
 
 '2056-09-12': 
   - name: "☠️ My life expectancy expiration date"
