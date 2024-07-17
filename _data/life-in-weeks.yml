@@ -146,11 +146,6 @@
     category: "relationships"
     tags: ["kellianne"]
 
-'2007-03-04':
-  - name: "First kiss with Kellianne"
-    category: "relationships"
-    tags: ["kellianne"]
-
 '2007-05-28':
   - name: "🎂 I turn 31: Double down"
     category: "birthday"
@@ -174,7 +169,7 @@
     tags: ["politics"]
 
 '2008-10-04':
-  - name: "❤️ Kellianne and I get married"
+  - name: "Kellianne and I get married"
     category: "relationships"
     tags: ["kellianne"]
 
@@ -274,7 +269,7 @@
     category: "self"
 
 '2014-05-09':
-  - name: "❤️ I meet Rodney, my brother. We found each other through 23 and Me"
+  - name: "❤️ I meet Rodney, my brother. We found each other through 23andme.com"
     category: "family"
     tags: ["rodney"]
 
@@ -450,12 +445,18 @@
     category: "family"
     tags: ["cat"]
 
+'2023-05-28':
+  - name: "🎂 I turn 47: CHALANT!"
+    category: "birthday"
+    link: "https://buster.medium.com/47-chalant-515c3ad09051"
+    tags: ["annual review"]
+
 '2023-12-12':
   - name: "🏡 I buy a house in Albany"
     category: "family"
     tags: ["home"]
 
-'2024-10-24':
+'2023-10-24':
   - name: "First date with Sarah"
     category: "relationships"
 
@@ -463,6 +464,12 @@
   - name: "Pancake has kittens 😻😻😻😻"
     category: "family"
     tags: ["cat"]
+
+'2024-05-28':
+  - name: "🎂 I turn 48: Everything is a tube"
+    category: "birthday"
+    link: ""
+    tags: ["annual review"]
 
 '2056-09-12': 
   - name: "☠️ My life expectancy expiration date"
