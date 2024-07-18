@@ -159,7 +159,7 @@ body {
 
 <script type="text/javascript">
 	var location_available = null;
-	var debug = false;
+	var debug = false; 
 	var clock_width = null;
 
 	if (debug) {
@@ -466,9 +466,11 @@ body {
 	//////////
 	// SUN DATA 
 	// Date is in yyyy-mm-dd format
+	// Hit the IP address API to get time and location, sunrise/sunset, moonrise/moonset
+	// get_rising_setting_for_sun_and_moon()
+	// get_planet_data()
 	function get_sun_data(data, lat, long, date) {
 		var url = "https://api.ipgeolocation.io/astronomy?apiKey=7af9a1e42c9a41f9b2e099f8776575d6&lat="+lat+"&long="+long+"&date="+date
-		console.log('URL: '+url)
 
 		fetch(url)
   		.then((response) => response.json())
@@ -589,6 +591,8 @@ body {
 
 	//////////
 	// PLANET DATA
+	// Called from get_sun_data()
+	// Call astrologyapi.com to get timezone, lat/long
 	function get_planet_data(data, lat, long, date) {
 		const user_id = '{{ site.env.ASTROLOGY_USER_ID }}'; 
 		const api_key = '{{ site.env.ASTROLOGY_API_KEY }}';
@@ -623,6 +627,7 @@ body {
 			}
 		);
 
+		// house_type: Default : "placidus" // koch/topocentric/poryphry/equal_house/whole_sign
 		var planet_data = {
 					'day': date_bits[2],
 					'month': date_bits[1],
@@ -631,10 +636,39 @@ body {
 					'min': time_bits[1],
 					'lat': lat,
 					'lon': long,
-					'tzone': time_zone
+					'tzone': time_zone,
+					'house_type': 'whole_sign' 
 				}
+
+		// https://astrologyapi.com/docs/api-ref/73/planets/extended
+		// {
+		// 		"id": 0,
+		// 		"name": "SUN",
+		// 		"fullDegree": 72.18954079246434,
+		// 		"normDegree": 12.189540792464342,
+		// 		"speed": 0.9537797443255392,
+		// 		"isRetro": "false",
+		// 		"sign": "Gemini",
+		// 		"signLord": "Mercury",
+		// 		"nakshatra": "Ardra",
+		// 		"nakshatraLord": "Rahu",
+		// 		"nakshatra_pad": 2,
+		// 		"house": 9,
+		// 		"is_planet_set": false,
+		// 		"planet_awastha": "Yuva"
+		// 	},		
+		// https://astrologyapi.com/western-api-docs/api-ref/74/planets/tropical
+		// {
+		// 	"name": "Sun",
+		// 	"fullDegree": 259.3692854715937,
+		// 	"normDegree": 19.369285471593685,
+		// 	"speed": 1.0163786145803477,
+		// 	"isRetro": "false",
+		// 	"sign": "Sagittarius",
+		// 	"house": 11
+		// },
 		var request = $.ajax({
-			url: "https://json.astrologyapi.com/v1/planets/extended",
+			url: "https://json.astrologyapi.com/v1/planets/tropical",
 			method: "POST",
 			dataType:'json',
 			headers: {
@@ -648,172 +682,122 @@ body {
 			function(resp){
 				// Full degree is exact degree in the elliptic cycle and norm is the degree within the zodiac.
 				// So norm will always be between 0-30 degrees, and full will be degrees from Aries 0?
-
-				// fullDegree: 58.62370106968824 // azimuth
-				// house: 1
-				// id: 12
-				// isRetro: false
-				// nakshatra: "Mrigshira"
-				// nakshatraLord: "Mars"
-				// nakshatra_pad: 2
-				// name: "Ascendant"
-				// normDegree: 28.623701069688238
-				// sign: "Taurus"
-				// signLord: "Venus"
-				// speed: 0
-	    	data['planets_raw'] = {
-	    		'SUN': resp[0],
-	    		'MOON': resp[1],
-	    		'MARS': resp[2],
-	    		'MERCURY': resp[3],
-	    		'JUPITER': resp[4],
-	    		'VENUS': resp[5],
-	    		'SATURN': resp[6],
-	    		'URANUS': resp[9],
-	    		'NEPTUNE': resp[10],
-	    		'PLUTO': resp[11],
-	    		'ASCENDANT': resp[12]
-	    	}
+				// The degrees turn counter clockwise
+				// console.log(resp)
+				asc_deg_from_aries = resp[10]['fullDegree']
 	    	data['planets'] = {
-	    		'offset': null,
-	    		'SUN': {'azimuth': null, 'uncorrected_az': null},
-	    		'MOON': {'azimuth': null, 'uncorrected_az': null},
-	    		'MERCURY': {'azimuth': null, 'uncorrected_az': null, 'L': 13, 'M': 8, 'S': 4},
-	    		'VENUS': {'azimuth': null, 'uncorrected_az': null, 'L': 66, 'M': 38, 'S': 10},
-	    		'MARS': {'azimuth': null, 'uncorrected_az': null, 'L': 25, 'M': 11, 'S': 4},
-	    		'SATURN': {'azimuth': null, 'uncorrected_az': null, 'L': 20, 'M': 17, 'S': 14},
-	    		'JUPITER': {'azimuth': null, 'uncorrected_az': null, 'L': 47, 'M': 38, 'S': 30},
-	    		'URANUS': {'azimuth': null, 'uncorrected_az': null, 'L': 4, 'M': 3, 'S': 3},
-	    		'NEPTUNE': {'azimuth': null, 'uncorrected_az': null, 'L': 2, 'M': 2, 'S': 2},
-	    		'PLUTO': {'azimuth': null, 'uncorrected_az': null, 'L': 1, 'M': 1, 'S': 1}
+	    		'ASCENDANT': {
+	    			'deg_from_aries':   asc_deg_from_aries, 
+	    			'deg_from_sunrise': 0,
+	    			'house': 					  resp[10]['house'],
+	    			'sign': 					  resp[10]['sign'],
+	    			'is_retro': 			  resp[10]['isRetro'],
+	    			'api': 						  resp[10]
+	    		},
+	    		'SUN':       {
+	    			'deg_from_aries':   resp[0]['fullDegree'], 
+	    			'deg_from_sunrise': resp[0]['fullDegree'] + asc_deg_from_aries, 
+	    			'house': 					  resp[0]['house'],
+	    			'sign': 					  resp[0]['sign'],
+	    			'is_retro': 			  resp[0]['isRetro'],
+	    			'api': 							resp[0]
+	    		},
+	    		'MOON':      {
+	    			'deg_from_aries': 	resp[1]['fullDegree'], 
+	    			'deg_from_sunrise': resp[1]['fullDegree'] + asc_deg_from_aries, 
+	    			'house': 					  resp[1]['house'],
+	    			'sign': 					  resp[1]['sign'],
+	    			'is_retro': 			  resp[1]['isRetro'],
+	    			'api': resp[1]
+	    		},
+	    		'MERCURY':   {
+	    			'deg_from_aries': 	resp[3]['fullDegree'], 
+	    			'deg_from_sunrise': resp[3]['fullDegree'] + asc_deg_from_aries, 
+	    			'house': 					  resp[3]['house'],
+	    			'sign': 					  resp[3]['sign'],
+	    			'is_retro': 			  resp[3]['isRetro'],
+	    			'api': resp[3]
+	    		},
+	    		'VENUS':     {
+	    			'deg_from_aries': 	resp[5]['fullDegree'], 
+	    			'deg_from_sunrise': resp[5]['fullDegree'] + asc_deg_from_aries, 
+	    			'house': 					  resp[5]['house'],
+	    			'sign': 					  resp[5]['sign'],
+	    			'is_retro': 			  resp[5]['isRetro'],
+	    			'api': resp[5]
+	    		},
+	    		'MARS':      {
+	    			'deg_from_aries': 	resp[2]['fullDegree'], 
+	    			'deg_from_sunrise': resp[2]['fullDegree'] + asc_deg_from_aries, 
+	    			'house': 					  resp[2]['house'],
+	    			'sign': 					  resp[2]['sign'],
+	    			'is_retro': 			  resp[2]['isRetro'],
+	    			'api': resp[2]
+	    		},
+	    		'SATURN':    {
+	    			'deg_from_aries': 	resp[6]['fullDegree'], 
+	    			'deg_from_sunrise': resp[6]['fullDegree'] + asc_deg_from_aries, 
+	    			'house': 					  resp[6]['house'],
+	    			'sign': 					  resp[6]['sign'],
+	    			'is_retro': 			  resp[6]['isRetro'],
+	    			'api': resp[6]
+	    		},
+	    		'JUPITER':   {
+	    			'deg_from_aries': 	resp[4]['fullDegree'], 
+	    			'deg_from_sunrise': resp[4]['fullDegree'] + asc_deg_from_aries, 
+	    			'house': 					  resp[4]['house'],
+	    			'sign': 					  resp[4]['sign'],
+	    			'is_retro': 			  resp[4]['isRetro'],
+	    			'api': resp[4]
+	    		},
+	    		'URANUS':    {
+	    			'deg_from_aries': 	resp[7]['fullDegree'], 
+	    			'deg_from_sunrise': resp[7]['fullDegree'] + asc_deg_from_aries, 
+	    			'house': 					  resp[7]['house'],
+	    			'sign': 					  resp[7]['sign'],
+	    			'is_retro': 			  resp[7]['isRetro'],
+	    			'api': resp[7]
+	    		},
+	    		'NEPTUNE':   {
+	    			'deg_from_aries': 	resp[8]['fullDegree'], 
+	    			'deg_from_sunrise': resp[8]['fullDegree'] + asc_deg_from_aries, 
+	    			'house': 					  resp[8]['house'],
+	    			'sign': 					  resp[8]['sign'],
+	    			'is_retro': 			  resp[8]['isRetro'],
+	    			'api': resp[8]
+	    		},
+	    		'PLUTO':     {
+	    			'deg_from_aries': 	resp[9]['fullDegree'], 
+	    			'deg_from_sunrise': resp[9]['fullDegree'] + asc_deg_from_aries, 
+	    			'house': 					  resp[9]['house'],
+	    			'sign': 					  resp[9]['sign'],
+	    			'is_retro': 			  resp[9]['isRetro'],
+	    			'api': resp[9]
+	    		},
 	    	}
+	    	// console.log(data['planets'])
+				$('#sun').show();
+			  // console.log('SUN')
+			  // console.log(data['planets']['SUN'])
+				set_angle('#sun', 270-data['planets']['SUN']['deg_from_sunrise'])
 
-	    	// Just shift azimuth 180 degrees to orient around south instead of north
-	    	// 12-6 oclock, approximately
-	    	if (data['planets_raw']['SUN']['fullDegree'] < 180) {
-	    		data['planets']['SUN']['azimith'] = data['planets_raw']['SUN']['fullDegree'] + 180
-	    	// 6-12 o'clock approximately
-	    	} else {
-	    		data['planets']['SUN']['azimith'] = data['planets_raw']['SUN']['fullDegree'] - 180	    		
-	    	}
-
-	    	// Calculate the difference between the suncalc azimuths and the more reliable ones we get for the sun and the moon.
-    		data['planets']['offset'] = data['suncalc']['sun_az'] - data['planets']['SUN']['azimith']
-	    	
-    		// Update the sun's position first
-    		console.log('SUN ANGLE: '+data['suncalc']['sun_az'])
-
-				data = adjust_sun_azimuth(data['suncalc']['sun_az'], data)
-				console.log('adjusted: ')
-				console.log(data.adjusted_az['SUN'])
-				set_angle('#sun', data['adjusted_az']['SUN']) 
-
-    		// Convert fullDegree into uncorrected_az
+    		// degrees 
     		var planets = ['MOON', 'MERCURY','VENUS','MARS','JUPITER','SATURN']; 
-    		console.log('PLANETS_RAW')
-    		console.log(data['planets_raw'])
 				for (var i = 0; i < planets.length; i++) {
-				  var planet = planets[i];
+				  var planet_name = planets[i];
+				  var planet = data['planets'][planet_name]
+				  while (planet['deg_from_sunrise'] > 360) {
+				  	planet['deg_from_sunrise'] = planet['deg_from_sunrise'] - 360
+				  }
 
-				  console.log('PLANET: '+planet)
-				  console.log(data['planets_raw'][planet])
-
-		    	console.log('planets_raw for '+planet)
-	    		console.log('fullDegree: ')
-	    		console.log(data['planets_raw'][planet]['fullDegree'])
-
-	    		console.log('simpler math')
-	    		console.log(data['planets_raw'][planet]['fullDegree'] - 360)
-
-	    		// I can be more clever with these 
-	    		// - factor in the relation to the sun and the time of year
-	    		rising_az = -90
-	    		setting_az = 90
-
-	    		// 9-12 oclock
-	    		if (data['planets_raw'][planet]['fullDegree'] - 360 < 0 && 
-	    				data['planets_raw'][planet]['fullDegree'] - 360 > rising_az) {
-	    			console.log('1')
-	    			quadrant_offset = 270
-	    			console.log('numerator: ')
-	    			console.log(360-data['planets_raw'][planet]['fullDegree']+rising_az)
-	    			console.log('denominator: ')
-	    			console.log(-rising_az)
-	    			percent_through_quadrant = (360-data['planets_raw'][planet]['fullDegree']+rising_az)/rising_az
-	    			quadrant_offset = 270
-	    		// 6-0 oclock
-	    		} else if (data['planets_raw'][planet]['fullDegree'] - 360 < 0) {
-	    			console.log('2')
-	    			quadrant_offset = 180
-	    			percent_through_quadrant = (data['planets_raw'][planet]['fullDegree'] - 180)/(180 + rising_az)
-
-	    		// 12-3 oclock
-	    		} else if (data['planets_raw'][planet]['fullDegree'] < setting_az) {
-	    			console.log('3')
-	    			quadrant_offset = 0
-
-	    		// 3-6 oclock
-	    		} else {
-	    			console.log('4')
-	    			quadrant_offset = 90
-
-	    		}
-    			console.log('% through quadrant: ')
-    			console.log(percent_through_quadrant)
-    			console.log('angle: ')
-    			quadrant_angle = percent_through_quadrant*90 + quadrant_offset
-    			console.log(quadrant_angle)
-					$('#'+planet.toLowerCase()).show();
-					set_angle('#'+planet.toLowerCase(), quadrant_angle);
-
-					// // change z-index if this is in retro
-					// if (planet == 'MOON') {
-					// 	// do nothing to z-index
-					// } else if (data.planets_raw[planet].isRetro == 'true') {
-					// 	debug ? console.log(planet+': '+data.planets_raw[planet].isRetro) : null
-					// 	$('#'+planet.toLowerCase()).css('z-index', 150);
-					// } else {
-					// 	$('#'+planet.toLowerCase()).css('z-index', 50);
-					// }
-
-
-
-
-				  // console.log('PLANET: '+planet)
-				  // console.log(data['planets_raw'][planet])
-
-		    	// console.log('planets_raw for '+planet)
-	    		// console.log('fullDegree: ')
-	    		// console.log(data['planets_raw'][planet]['fullDegree'])
-
-		    	// if (data['planets_raw'][planet]['fullDegree'] < 180) {
-		    	// 	data['planets'][planet]['uncorrected_az'] = 180 - data['planets_raw'][planet]['fullDegree']
-		    	// } else { 
-		    	// 	data['planets'][planet]['uncorrected_az'] = (360 - data['planets_raw'][planet]['fullDegree']) + 180
-		    	// }
-
-		    	// console.log('AZIMUTH FOR '+planet)
-	    		// console.log('unadjusted: ')
-		    	// console.log(data['planets'][planet]['uncorrected_az'])
-					// data = adjust_azimuth(planet, data['planets'][planet]['uncorrected_az'], data)
-					// console.log('adjusted: ')
-					// console.log(data.adjusted_az[planet])
-
-					// $('#'+planet.toLowerCase()).show();
-					// set_angle('#'+planet.toLowerCase(), data.adjusted_az[planet]);
-
-
-					// // change z-index if this is in retro
-					// if (planet == 'MOON') {
-					// 	// do nothing to z-index
-					// } else if (data.planets_raw[planet].isRetro == 'true') {
-					// 	debug ? console.log(planet+': '+data.planets_raw[planet].isRetro) : null
-					// 	$('#'+planet.toLowerCase()).css('z-index', 150);
-					// } else {
-					// 	$('#'+planet.toLowerCase()).css('z-index', 50);
-					// }
+				  // console.log(planet_name)
+				  // console.log(planet)
+					$('#'+planet_name.toLowerCase()).show();
+					// console.log('degrees from south: ')
+					// console.log(270-planet['deg_from_sunrise'])
+					set_angle('#'+planet_name.toLowerCase(), 270-planet['deg_from_sunrise'])
 				}
-				
+
 	    	build_the_clock(data, lat, long, date)
 			}, 
 			function(err){

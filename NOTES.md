@@ -1,5 +1,7 @@
 # Cool Tips
 
+## Make sure you have a ~/.env file with the astronomy api key and secret 
+
 ## Build the site
 `bundle exec jekyll build`
 
