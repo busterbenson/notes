@@ -6,7 +6,7 @@ title: "About Me"
 
 **tl;dr:** 
 
-- *Basics:* I was born in 1976, am a father to two boys, and currently live in Berkeley, CA. 
+- *Basics:* I was born in 1976, am a father to two children, and currently live in Berkeley, CA. 
 - *Book:* I recently wrote a book titled [Why Are We Yelling? The Art of Producteive Disagreement](https://busterbenson.com/whyareweyelling) about the art of productive disagreement. 
 - *Tech:* I'm spent most of the last 25 years of my career working in tech (Amazon, Twitter, Slack, Patreon) and being an entrepreneur (Robot Co-op, Health Month, Habit Labs, 750 Words). I am currently rebuilding [750words.com](https://new.750words.com), and working at [Medium](https://medium.com/@buster).
 - *McLeod:* I also started and helped run an art gallery and bar in Seattle called [McLeod Residence](https://en.wikipedia.org/wiki/McLeod_Residence) that was around for a few years. 
@@ -20,7 +20,7 @@ title: "About Me"
 
 **I've changed my name a couple times.** My birth name was Erik Keith Benson, and I changed my name to Buster Butterfield McLeod as an experiment for a while, and then changed my middle and last name back when I got married. The full story requires a drink or two, but it's a good story. 
 
-**I am a father.** I have two sons: Niko (born 2010) and Louie (born 2016), whom I share custody of with their mom. They are the best. I have a cat named [Pancake](https://www.instagram.com/stories/highlights/17997382906731800/).
+**I am a father.** I have two kids: Niko (born 2010) and Louie (born 2016), whom I share custody of with their mom. They are the best. I have a cat named [Pancake](https://www.instagram.com/stories/highlights/17997382906731800/) and 3 of her kittens.
 
 **I like personality tests.** 
 
