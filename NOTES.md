@@ -8,6 +8,7 @@
 ## Start the server 
 `ruby -v`
 `rvm use 2.7.7` (if `rvm list` shows 2.3.4 or 2.6.3 is being used)
+or maybe 3.1.3 (so it matches 750 words)
 `bundle exec jekyll serve --incremental`
 http://localhost:4000
 
