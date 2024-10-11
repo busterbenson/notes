@@ -466,10 +466,15 @@
     tags: ["cat"]
 
 '2024-05-28':
-  - name: "🎂 I turn 48: Everything is a tube"
+  - name: "🎂 I turn 48: Be Buster Benson, BBB, Be Be Be, 🐝🐝🐝"
     category: "birthday"
-    link: ""
+    link: "https://buster.medium.com/48-be-buster-benson-bbb-be-be-be-ba0d51abcc7c"
     tags: ["annual review"]
+
+'2024-10-03':
+  - name: "My last day at Medium"
+    category: "work"
+    tags: ["medium"]
 
 '2056-09-12': 
   - name: "☠️ My life expectancy expiration date"
