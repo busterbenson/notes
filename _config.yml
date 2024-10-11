@@ -38,11 +38,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-target-blank
   - jekyll-twitter-plugin
-  - jekyll-responsive-image
   - jekyll-youtube
   - jekyll-email-protect
   - jekyll-redirect-from
   - jekyll-dotenv
+  - jekyll-responsive-image
 
 responsive_image:
   template: _includes/img.html
