@@ -11,6 +11,9 @@
 `bundle exec jekyll serve --incremental`
 http://localhost:4000
 
+## Ruby versions
+- Netlify seems to want 3.3.4
+
 ## Working with images (using webp)
 - uses netlify's image_tag
 - {% include img.html src=page.image alt=page.title %}
