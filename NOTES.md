@@ -2,7 +2,7 @@
 
 ## Make sure you have a ~/.env file with the astronomy api key and secret 
 
-## Build the site
+## Build the site (images, search index)
 `bundle exec jekyll build`
 
 ## Start the server 
