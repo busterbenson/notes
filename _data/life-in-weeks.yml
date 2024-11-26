@@ -476,6 +476,16 @@
     category: "work"
     tags: ["medium"]
 
+'2024-10-18':
+  - name: "Started full-time at 750 Words"
+    category: "work"
+    tags: ["750-words"]
+
+'2024-11-05':
+  - name: "🤮 Trump wins election"
+    category: "world"
+    tags: ["politics"]
+
 '2056-09-12': 
   - name: "☠️ My life expectancy expiration date"
     category: "self"
