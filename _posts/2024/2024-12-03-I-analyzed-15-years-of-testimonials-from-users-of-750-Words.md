@@ -1,6 +1,6 @@
 ---
 title        : "I analyzed 15 years of testimonials from users of 750words.com to learn how their private journaling habits have helped them"
-link         : https://buster.medium.com/48-be-buster-benson-bbb-be-be-be-ba0d51abcc7c
+link         : https://buster.medium.com/i-analyzed-15-years-of-testimonials-from-users-of-750words-com-to-learn-how-journaling-helped-them-9665c93814e8
 author       : me
 
 one_liner    : "Or, how I plan to get around the task of marketing my site by letting people speak for themselves"
