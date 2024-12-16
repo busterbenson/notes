@@ -1,6 +1,6 @@
 ---
 title        : "Spring, Sponge, or Stone?"
-link         : https://enjoymentland.com/spring-sponge-or-stone/
+link         : https://web.archive.org/web/20211222155716/https://enjoymentland.com/spring-sponge-or-stone/
 author       : me
 
 one_liner    : "Every day, when you wake up, ask yourself: am I a SPRING, a SPONGE, or a STONE?"
