@@ -439,7 +439,8 @@ max_width: true
         location_available: true,
         lat: pos.coords.latitude,
         long: pos.coords.longitude,
-        plots: {}
+        plots: {},
+        moon_data: {}
       }
     }
 
@@ -665,9 +666,9 @@ max_width: true
     var sun = d['planets_relative_to_aries']['api'][0]
 
     var sun_is_visible = false
-    if (d['plot_offset'] > d['moments']['sunrise']['clockwise_degrees'] || d['plot_offset'] < d['moments']['sunset']['clockwise_degrees']) {
-      sun_is_visible = true
-    }
+    // if (d['plot_offset'] > d['moments']['sunrise']['clockwise_degrees'] || d['plot_offset'] < d['moments']['sunset']['clockwise_degrees']) {
+      //sun_is_visible = true
+    //}
     $('#sun_debug').html(convert_clockwise_degrees_to_24h_time(d['plots']['sun']['degrees']) + "🕰️, " + Number(d['plots']['sun']['degrees']).toFixed(2) + "&deg;" + (sun_is_visible ? ", visible" : ''))
 
 
@@ -688,9 +689,9 @@ max_width: true
       var relative_to_aries_clockwise = positive_modulo(-planet['fullDegree'], 360)
       var degrees_relative_to_sun_clockwise = positive_modulo(planet['fullDegree'] - sun['fullDegree'], 360)
       var is_visible = false 
-      if (planet_degrees > d['moments']['sunrise']['clockwise_degrees'] || planet_degrees < d['moments']['sunset']['clockwise_degrees']) {
-        is_visible = true 
-      }
+      // if (planet_degrees > d['moments']['sunrise']['clockwise_degrees'] || planet_degrees < d['moments']['sunset']['clockwise_degrees']) {
+      //   is_visible = true 
+      //}
       var to_plot = {
         'name': planet['name'],
         'token': planet['name'].toLowerCase(),
