@@ -480,6 +480,7 @@ body {
   			// needed? data['sun_moon_data'] = json
   			// needed? data['location'] = json['location']
   			data['current_time'] = json['current_time']
+        console.log('current_time: '+data['current_time'])
   			data['date'] = json['date']
   			data['day_length'] = json['day_length']
   			data['moon'] = {
@@ -667,6 +668,8 @@ body {
 		// 	"sign": "Sagittarius",
 		// 	"house": 11
 		// },
+    console.log('planet_data: ')
+    console.log(planet_data)
 		var request = $.ajax({
 			url: "https://json.astrologyapi.com/v1/planets/tropical",
 			method: "POST",
@@ -683,7 +686,6 @@ body {
 				// Full degree is exact degree in the elliptic cycle and norm is the degree within the zodiac.
 				// So norm will always be between 0-30 degrees, and full will be degrees from Aries 0?
 				// The degrees turn counter clockwise
-				// console.log(resp)
 				asc_deg_from_aries = resp[10]['fullDegree']
 	    	data['planets'] = {
 	    		'ASCENDANT': {

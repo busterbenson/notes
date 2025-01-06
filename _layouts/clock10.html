@@ -1,0 +1,713 @@
+---
+title: Quirky Clock
+layout: fullscreen
+max_width: true
+---
+
+<style>
+  * {
+    background: transparent;
+  }
+
+  body {
+    width: 100%;
+    font-family: Helvetica, sans-serif;
+    background-color: #2244a3;
+    color: #fff;
+  }
+
+  #fullscreen {
+    margin: 37px !important;
+  }
+
+  #clock-canvas {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1000px;
+    max-height: 1000px;
+    min-width: 100px;
+    min-height: 100px;
+    padding: 0;
+  }
+
+  #clock {
+    position: relative;
+    background-size: contain;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+  }
+
+  a#get-location-link {
+    color: #fff;
+  }
+  #date-links {
+    font-size: 12px;
+    margin-bottom: 2em;
+    padding: 5px 0;
+  }
+  a.date-link {
+    color: #ddd;
+  }
+  input#date-and-time {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    color: #fff;
+    border: 0 solid #000;
+    border-bottom: 1px solid #fff;
+  }
+  #debug {
+    margin-top: 2em;
+  }
+
+  #stars,
+  #earth,
+  #sky,
+  #seasons_dandelion,
+  #seasons_earth_tilt,
+  #precession_background,
+  #precession_foreground,
+  #sun,
+  #moon,
+  #seasons_wrapper,
+  #zodiac_wrapper,
+  #mercury,
+  #venus,
+  #mars,
+  #jupiter,
+  #saturn,
+  #uranus,
+  #neptune,
+  #pluto {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    max-height: 1000px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  /* z-index is 50 if not retro, and 150 if it is retro */
+  #mercury,
+  #venus,
+  #mars,
+  #jupiter,
+  #saturn {
+    z-index: 50;
+    display: none;
+  }
+
+  #sun {
+    background-size: contain;
+    z-index: 100;
+  }
+
+  #moon {
+    background-size: contain;
+    z-index: 200;
+  }
+
+  #earth {
+    background-image: url("/assets/images/clock/8/horizon.png");
+    background-size: contain;
+    z-index: 0;
+    opacity: 0.7;
+  }
+
+  #stars {
+    background-image: url("/assets/images/clock/8/constellations.png");
+    background-size: contain;
+    z-index: -10;
+  }
+
+  #sky {
+    background-image: url("/assets/images/clock/8/sky.png");
+    background-size: contain;
+    z-index: 0;
+    opacity: 0;
+  }
+
+  #seasons_dandelion {
+    background-image: url("/assets/images/clock/8/seasons-cycle.png");
+    background-size: contain;
+    z-index: 0;
+  }
+
+  #seasons_earth_tilt {
+    background-image: url("/assets/images/clock/8/seasons-earth-tilt.png");
+    background-size: contain;
+    z-index: 0;
+  }
+
+  #precession_background {
+    background-image: url("/assets/images/clock/8/precession-background.png");
+    background-size: contain;
+    z-index: 0;
+  }
+
+  #precession_foreground {
+    background-image: url("/assets/images/clock/8/precession-foreground.png");
+    background-size: contain;
+    z-index: 0;
+  }
+
+  #mercury {
+    background-image: url("/assets/images/clock/8/planet-mercury.png");
+    background-size: contain;
+  }
+
+  #venus {
+    background-image: url("/assets/images/clock/8/planet-venus.png");
+    background-size: contain;
+  }
+
+  #mars {
+    background-image: url("/assets/images/clock/8/planet-mars.png");
+    background-size: contain;
+  }
+
+  #jupiter {
+    background-image: url("/assets/images/clock/8/planet-jupiter.png");
+    background-size: contain;
+  }
+
+  #saturn {
+    background-image: url("/assets/images/clock/8/planet-saturn.png");
+    background-size: contain;
+  }
+
+  #uranus,
+  #neptune,
+  #pluto {
+    display: none;
+  }
+
+  #zodiac_wrapper {
+    display: block;
+  }
+</style>
+
+<div id="quirky-clock">
+  <div id="location-status">
+    Click to <a href="#" id="get-location-link">load 🌞 and 🌛 and ✨ data from the universe</a>. 
+  </div>
+  <div id="location-not-available"></div>
+  <div><input id="date-and-time" /></div>
+  <div id="date-links">
+    <span id="prev-day"><a href="#" id="load-pref-day" class="date-link">Previous Day</a></span> •
+    <span id="right-now"><a href="#" id="load-right-now" class="date-link">Right Now</a></span> •
+    <span id="this-sunset"><a href="#" id="load-sunset" class="date-link">Sunset at <span id="time_of_sunset"></span></a></span> •
+    <span id="next-day"><a href="#" id="load-next-day" class="date-link">Next Day</a></span>
+  </div>
+  <div id="clock-canvas">
+    <div id="clock">
+    </div>
+    <div id="debug">
+      <div>Date: <span id="date"></span></div>
+      <div>Current time: <span id="current_time"></span></div>
+      <div>Countdown to Spring Equinox: <span id="aries_relative_to_year"></span></div>
+      <hr />
+      <div>Sun: <span id="sun_debug"></span></div>
+      <div>Sunrise: <span id="sunrise_debug"></span></div>
+      <div>High Noon: <span id="highnoon_debug"></span></div>
+      <div>Sunset: <span id="sunset_debug"></span></div>
+      <hr />
+      <div>Moon: <span id="moon_debug"></span></div>
+      <hr />
+      <div>Mercury: <span id="mercury_debug"></span></div>
+      <div>Venus: <span id="venus_debug"></span></div>
+      <div>Mars: <span id="mars_debug"></span></div>
+      <div>Jupiter: <span id="jupiter_debug"></span></div>
+      <div>Saturn: <span id="saturn_debug"></span></div>
+      <div>Uranus: <span id="uranus_debug"></span></div>
+      <div>Neptune: <span id="neptune_debug"></span></div>
+      <div>Pluto: <span id="pluto_debug"></span></div>
+    </div>
+  </div>
+
+</div>
+
+<script type="text/javascript">
+
+  // 1. Get the time of sunset and the degrees relative to aries(clockwise) and the day length. What can I do with these three thing ? I can get the offset for the sun's location at sunset in order to pin it to 90 degrees (clockwise). That also determines the season / the zodiac.
+  // - get_seasonal_data (d['season_data']['sunset_time']) # not yet relative to current sun location
+  // If I get the sun's location relative to Aries at sunset time, then I know when in the year it is.
+
+  // 2. Get the current time and map it to the clock by converting the time of sunset to the current time, where 360 degrees = 24 hours.Or should it be slightly more ? How would this work around midnight ? What would shift ? At midnight, the time of sunset would shift(maybe a minute) and so the sun might move backwards a degree.Is that possible ? Because when days are getting longer.I guess technically I could make 360 degrees equal the exact amount of time until the next sunset.That could be improved later.
+  // - current_time_degrees_relative_to_sunset = the number of degrees that the sun is away from sunset, and the amount that all other objects should be shifted by, relative to the sun's current offset and planet's position relative to Aries.
+
+  // 3. Place the sun according to time, and figure out what degree that corresponds to.
+
+  // 4. Then map the rest of the moon and planets relative to the sun based on their position relative to Aries.
+
+  // Global variables
+  var location_available = null;
+  var debug = true; 
+  var clock_width = null;
+  var time_input_type = 'auto' // 'manual', 'one-time'
+  var current_time = new Date()
+  var d = {}
+
+  // A way to manually check location
+  var get_location_button = document.getElementById('get-location-link');
+  get_location_button.onclick = update_clock;
+
+  // DYNAMIC LINKS
+  // Re-calculate the clock with the given date and time
+  var date_and_time_button = document.getElementById('date-and-time');
+  date_and_time_button.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      console.log("Manual time!");
+      manual_date_and_time()
+      event.preventDefault();
+    }
+  });
+
+  // Re-calculate the clock with the given date and time
+  document.getElementById('prev-day').addEventListener("click",prev_day_link_clicked)
+  document.getElementById('right-now').addEventListener("click", right_now_link_clicked)
+  document.getElementById('this-sunset').addEventListener("click", sunset_link_clicked)
+  document.getElementById('next-day').addEventListener("click", next_day_link_clicked)
+
+  if (debug) {
+    $('#debug').show();
+  } else {
+    $('#debug').hide();
+  }
+
+  //////////
+  // HELPERS
+
+  // Pad hour, minute, and seconds numbers
+  function format_time(number) {
+    return number < 10 ? '0' + number : number;
+  }
+
+  // Scales the clock to be a square based on the width of the clock
+  function scale_the_clock() {
+    clock_width = $('#clock').width();
+    $("#clock").css('height', clock_width);
+  }
+
+  // 
+  function convert_24h_time_to_clockwise_degrees_hash(time_string) {
+    var time_bits = time_string.split(':');
+    var hour = parseInt(time_bits[0]);
+    var minute = parseInt(time_bits[1]);
+    clockwise_degrees = (hour * 15) + (minute / 4)
+    return {
+      time_string: time_string,
+      clockwise_degrees: positive_modulo(clockwise_degrees, 360)
+    }
+  }
+
+  function convert_clockwise_degrees_to_24h_time(degrees) {
+    var hour = Math.floor(degrees / 15);
+    var minute = Number((degrees % 15) * 4).toFixed(0);
+    return format_time(hour) + ':' + format_time(minute);
+  }
+
+  // Takes api object from astrologyapi.com and plots it to clock
+  function convert_fulldegrees_to_clockwise_offset_to_sunset(planet, d) {
+    var clockwise_degrees = positive_modulo(-planet['fullDegree'], 360)
+    var sunset_offset = d['season_data']['sun_offset_to_pin_90_deg']
+    return {
+      'full_degree_counter_clockwise': planet['fullDegree'],
+      'full_degree_clockwise': positive_modulo(-planet['fullDegree'],360),
+      'relative_to_aries': clockwise_degrees,
+      'sunset_offset': sunset_offset,
+      'relative_to_sunset': positive_modulo((clockwise_degrees + sunset_offset), 360)
+    }
+  }
+
+  // Take a time, like sunset, or sunrise, and plot it on the clock relative to sunset
+  function convert_moment_time_string_to_clock_degrees(moment_time_string) {
+    // Sunset to degrees relative to midnight
+    if (!d['season_data']['midnight_degrees']) {
+      var sunset_time_bits = d['season_data']['sunset_deg']['time_string'].split(':')
+      d['season_data']['midnight_degrees'] = positive_modulo(90 - ((sunset_time_bits[0] * 15) + (sunset_time_bits[1] * 0.25)), 360)
+    } 
+
+    // Midnight Degrees=90+(7×15)=90+105=195 degrees.
+    var moment_time_bits = moment_time_string.split(':')
+    var moment_degrees = positive_modulo(d['season_data']['midnight_degrees'] + (moment_time_bits[0] * 15) + (moment_time_bits[1] * 0.25),360)
+
+    return {
+      original_time_string: moment_time_string,
+      clockwise_degrees: moment_degrees,
+    }
+  }
+
+  function positive_modulo(num, mod) {
+    return ((num % mod) + mod) % mod
+  }
+
+  //////////
+  // EVENTS
+  function prev_day_link_clicked() {
+    console.log('previous day link clicked')
+    var datetime = $('#date-and-time')
+    var ts = Date.parse($('#date-and-time').val())
+    var new_date = new Date(ts)
+    new_date.setDate(new_date.getDate() - 1)
+    $('#date-and-time').val(new_date)
+    manual_date_and_time()
+    console.log(new_date)
+    event.preventDefault();
+  }
+  function right_now_link_clicked() {
+    console.log('right now link clicked')
+    $('#date-and-time').val("")
+    auto_date_and_time()
+    event.preventDefault();
+  }
+  function sunset_link_clicked() {
+    console.log('this sunset link clicked')
+    var datetime = $('#date-and-time')
+    var ts = Date.parse(d['season_data']['sunset_datetime'])
+    console.log("sunset time: " + String(ts))
+    var new_date = new Date(ts) 
+    $('#date-and-time').val(new_date)
+    manual_date_and_time()
+    console.log(new_date)
+    event.preventDefault();
+  }
+  function next_day_link_clicked() {
+    console.log('next day link clicked')
+    var datetime = $('#date-and-time')
+    var ts = Date.parse($('#date-and-time').val())
+    var new_date = new Date(ts) 
+    new_date.setDate(new_date.getDate() + 1)
+    $('#date-and-time').val(new_date)
+    manual_date_and_time()
+    console.log(new_date)
+    event.preventDefault();
+  }
+
+  //////////
+  // FUNCTIONS 
+
+  function manual_date_and_time() {
+    time_input_type = 'manual' 
+    update_clock()
+  }
+  function auto_date_and_time() {
+    time_input_type = 'auto'
+    update_clock()
+  }
+
+  // Function that is run when location is retrieved from the browser
+	function update_clock() {
+		if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(got_location, no_location);
+      
+    // got_location({'coords': {'latitude': 37.8573003, 'longitude': -122.2784977}})
+		} else {
+			$('#location-status').html("Please allow location to be accessed and reload the page.");
+			$('#location-not-available').html("no 1: "+navigator.geolocation);
+			console.log('location not available: using pacific time');
+			// lat: 37.8573003, long: -122.2784977
+			got_location({'coords': {'latitude': 37.8573003, 'longitude': -122.2784977}})
+			location_available = false;
+		};
+	}
+
+  // LOCATION: NO -  When we don't have a location
+  // Called from update_clock()
+  function no_location(err) {
+    location_available = false;
+    $('#location-status').html("Please allow location to be accessed and reload the page.");
+    $('#location-not-available').html("geolocation error: " + `ERROR(${err.code}): ${err.message}`);
+    console.log('location not available');
+    window.setTimeout(update_clock, 60000);
+  };
+
+  // LOCATION: YES - Update the clock with the location
+  // Called from update_clock()
+  function got_location(pos) {
+    $('#location-status').hide();
+    console.log('got location');
+
+    // Location info
+    if (d['d_initialized'] == undefined) {
+      d = {
+        d_initialized: true,
+        location_available: true,
+        lat: pos.coords.latitude,
+        long: pos.coords.longitude,
+        plots: {}
+      }
+    }
+
+    d = configure_clock(d);
+
+    // Get seasonal data first to figure out the time of sunset
+    get_seasonal_data(d).then((d) => {
+      console.log('get_seasonal_data')
+      $('#current_time').html(d['current_time']['time_string'])      
+      $('#sun_relative_to_midnight').html(d['current_time']['clockwise_degrees'])
+      return get_sun_at_datetime(d['season_data']['date'],
+                          d['current_time'],
+                          d, 'planets_relative_to_aries')
+
+    // Combine seasonal and current time data
+    }).then((d) => {
+      console.log('get_sun_at_datetime (current_time)')
+      return combine_seasonal_and_planet_data(d)
+
+    // Plot the moments on the clock
+    }).then((d) => {
+      return plot_moments_on_clock(d)  
+
+    // Plot the planets on the clock
+    }).then((d) => {             
+      return plot_objects_on_clock(d)  
+
+    }).then((d) => {
+      console.log('got_location complete')
+      console.log(d)
+
+      // Keep updating the clock
+      if (time_input_type == 'auto') {
+        window.setTimeout(update_clock, 60000);
+      }
+
+      return d
+    }).catch((err) => {
+      console.log('error in got_location')
+      console.log(err)
+    })
+  }
+
+  function configure_clock(d) {
+    // Dates and times
+    console.log('configure_clock')
+
+    if (time_input_type == 'manual' && $('#date-and-time').val().length > 0) {
+      console.log('manual time')
+      console.log($('#date-and-time').val())
+      try {
+        var ts = Date.parse($('#date-and-time').val())
+        d['now'] = new Date(ts)
+        d['date'] = moment(d['now']).format('YYYY-MM-DD')
+      }
+      catch {
+        d['now'] = new Date();
+        d['date'] = moment(d['now']).format('YYYY-MM-DD')
+        // d['date'] = d['now'].toISOString().split('T')[0]
+        time_input_type = 'auto'
+      }
+    } else if (time_input_type == 'one-time') {
+
+      time_input_type = 'auto'
+    } else {
+      d['now'] = new Date();
+      d['date'] = moment(d['now']).format('YYYY-MM-DD')
+      time_input_type = 'auto'
+    }
+    console.log('date: ' + d['date'])
+    let hours = d['now'].getHours();
+    let minutes = d['now'].getMinutes();
+    let seconds = d['now'].getSeconds();
+    d['current_time'] = convert_24h_time_to_clockwise_degrees_hash(format_time(hours) + ":" + format_time(minutes) + ":" + format_time(seconds))
+    $('#date-and-time').val(d['now'])
+
+    d['timezone_offset'] = -d['now'].getTimezoneOffset() / 60;
+    d['yesterday'] = new Date();
+    d['yesterday'].setDate(d['now'].getDate() - 1)
+    d['tomorrow'] = new Date();
+    d['tomorrow'].setDate(d['now'].getDate() + 1);
+
+    return d;
+  }
+
+  // 1 
+  // Figure out how to orient the clock by season by using sunrise and sunset data
+  // Previously called get_sun_data and get_rising_setting_for_sun_and_moon
+  // Passed next to get_astrology_data
+  async function get_seasonal_data(d) {
+    var url = "https://api.ipgeolocation.io/astronomy?apiKey=7af9a1e42c9a41f9b2e099f8776575d6&lat=" + d['lat'] + "&long=" + d['long'] + "&date=" + d['date']
+    return await fetch(url)
+      .then((response) => response.json())
+      .then(function (json) {
+        d['season_data_api'] = json
+        d['season_data'] = {
+          'date': d['date'],
+          'day_length_deg': convert_24h_time_to_clockwise_degrees_hash(json['day_length']),
+          'solar_noon_deg': convert_24h_time_to_clockwise_degrees_hash(json['solar_noon']),
+          'sunrise_deg': convert_24h_time_to_clockwise_degrees_hash(json['sunrise']),
+          'sunset_deg': convert_24h_time_to_clockwise_degrees_hash(json['sunset']),
+          'sunrise_datetime': new Date(Date.parse(d['date'] + 'T' + json['sunrise'] + ':00')),
+          'sunset_datetime': new Date(Date.parse(d['date'] + 'T' + json['sunset'] + ':00')),
+          'solarnoon_datetime': new Date(Date.parse(d['date'] + 'T' + json['solar_noon'] + ':00')),
+          'sun_relative_to_aries': null
+        }
+        $('#date').html(d['date'])
+
+        // Not used at the moment
+        // The sun's current position relative to Aries = high noon (say it's 283)
+        // The day length divided by 2 can be used to map 90 degrees to sunrise and 90 degrees to sunset in both directions
+        // - say that the day length is 9 hours and 37 minutes, and the night length is therefore 14 hours and 23 minutes
+        // - so 180 degrees = 9:37, or 577 minutes, which means each degree between 193 and 360 and 0 and 13 is 2.989 minutes per degree
+        // - similarly, at night, between 13 and 193 degrees, or 863 minutes, each degree is 4.78 minutes
+
+        return d
+      });
+  }
+
+  // 2 - comes after get_seasonal_data
+  async function get_sun_at_datetime(date, time, d, hash_token) {
+    const user_id = '{{ site.env.ASTROLOGY_USER_ID }}';
+    const api_key = '{{ site.env.ASTROLOGY_API_KEY }}';
+    const auth = "Basic " + btoa(user_id + ":" + api_key);
+    const date_bits = date.split("-");
+    const time_bits = time['time_string'].split(":");
+
+    // house_type: Default : "placidus" // koch/topocentric/poryphry/equal_house/whole_sign
+    d[hash_token] = {}
+    d[hash_token]['params'] = {
+      'day': date_bits[2],
+      'month': date_bits[1],
+      'year': date_bits[0],
+      'hour': time_bits[0],
+      'min': time_bits[1],
+      'lat': d['lat'],
+      'lon': d['long'],
+      'tzone': d['timezone_offset'],
+      'house_type': 'whole_sign' // placidus/whole_sign 
+    }
+
+    // https://astrologyapi.com/western-api-docs/api-ref/74/planets/tropical
+    // {
+    // 	"name": "Sun",
+    // 	"fullDegree": 259.3692854715937, // relative degrees from Aries 0 
+    // 	"normDegree": 19.369285471593685, // relative degrees from the sign it's currently in
+    // 	"speed": 1.0163786145803477,
+    // 	"isRetro": "false",
+    // 	"sign": "Sagittarius",
+    // 	"house": 11
+    // },
+    var planet_request = $.ajax({
+      url: "https://json.astrologyapi.com/v1/planets/tropical",
+      method: "POST",
+      dataType: 'json',
+      headers: {
+        "authorization": auth,
+        "Content-Type": 'application/json'
+      },
+      data: JSON.stringify(d[hash_token]['params'])
+    });
+    return await planet_request.then(
+      async function (resp) {
+        d[hash_token]['api'] = resp
+        return d
+      },
+      async function (err) {
+        d[hash_token]['error'] = err
+        return d
+      }
+    )
+  }
+
+  async function combine_seasonal_and_planet_data(d) {
+    // Figure out where Aries 0 degrees is
+    sun = d['planets_relative_to_aries']['api'][0]
+    d['season_data']['aries_relative_to_year'] = positive_modulo(-sun['fullDegree'], 360)
+    $('#aries_relative_to_year').html(Number(360 / d['season_data']['aries_relative_to_year']).toFixed(2) + "%")
+
+    // Map the sun relative to Aries
+    d['season_data']['sun_relative_to_aries'] = positive_modulo(-d['season_data']['aries_relative_to_year'], 360)
+    $('#sun_relative_to_aries').html(d['season_data']['sun_relative_to_aries'])
+
+    // Figure out where the sun is relative to the day
+    $('#time_of_sunset').html(d['season_data']['sunset_deg']['time_string'])
+    d['season_data']['current_time_relative_to_midnight'] = d['current_time']['clockwise_degrees']
+
+    // Then, where it is relative to the sunset
+    d['plot_offset'] = positive_modulo(
+      (
+        90 +
+        d['season_data']['current_time_relative_to_midnight'] -
+        d['season_data']['sunset_deg']['clockwise_degrees']
+      ), 360)
+    d['plots']['sun'] = {
+      'name': 'Sun',
+      'token': 'sun',
+      'relative_to_aries_clockwise': d['season_data']['sun_relative_to_aries'],
+      'relative_to_sun_clockwise': 0,
+      'degrees': positive_modulo(d['plot_offset'], 360),
+      'api': sun,
+    }
+    return d
+  }
+
+  // Plot moments of the day
+  async function plot_moments_on_clock(d) {
+    d['moments'] = {
+      sunrise: convert_moment_time_string_to_clock_degrees(d['season_data']['sunrise_deg']['time_string']),
+      solar_noon: convert_moment_time_string_to_clock_degrees(d['season_data']['solar_noon_deg']['time_string']),
+      sunset: convert_moment_time_string_to_clock_degrees(d['season_data']['sunset_deg']['time_string']),
+    }
+
+    $('#sunrise_debug').html(d['season_data']['sunrise_deg']['time_string'] + "🕰️, " + d['moments']['sunrise']['clockwise_degrees'] + "&deg;")
+    $('#highnoon_debug').html(d['season_data']['solar_noon_deg']['time_string'] + "🕰️, " + d['moments']['solar_noon']['clockwise_degrees'] + "&deg;")
+    $('#sunset_debug').html(d['season_data']['sunset_deg']['time_string'] + "🕰️, " + d['moments']['sunset']['clockwise_degrees'] + "&deg;")
+    return d
+  }
+  
+  // Plot the moon and planets
+  async function plot_objects_on_clock(d) {
+    // Figure out where the sun is relative to Aries (this is the season)
+    var sun = d['planets_relative_to_aries']['api'][0]
+
+    var sun_is_visible = false
+    if (d['plot_offset'] > d['moments']['sunrise']['clockwise_degrees'] || d['plot_offset'] < d['moments']['sunset']['clockwise_degrees']) {
+      sun_is_visible = true
+    }
+    $('#sun_debug').html(convert_clockwise_degrees_to_24h_time(d['plots']['sun']['degrees']) + "🕰️, " + Number(d['plots']['sun']['degrees']).toFixed(2) + "&deg;" + (sun_is_visible ? ", visible" : ''))
+
+
+    // Figure out where the sun is relative to Aries (this is the season)
+    var planets = d['planets_relative_to_aries']['api']
+
+    // Plot all the other objects relative to the sun
+    for (let i = 1; i < planets.length; i++) {
+      var planet = planets[i]
+
+      // Relative to the sun, based on both of their relative position to Aries.
+      // If the sun is at 283 deg relative to Aries (Jan 5th), and the Moon is new, so a bit larger (290), then degrees relative to the sun clockwise is 290 - 283, or 7 degrees. 
+
+      // (Sun relative to Aries, clockwise) - (Object relative to Aries, clockwise)
+      // + (Sun's current offset from sunset)
+      // Modulo 360
+      var planet_degrees = (sun['fullDegree'] - planet['fullDegree']) + d['plot_offset']
+      var relative_to_aries_clockwise = positive_modulo(-planet['fullDegree'], 360)
+      var degrees_relative_to_sun_clockwise = positive_modulo(planet['fullDegree'] - sun['fullDegree'], 360)
+      var is_visible = false 
+      if (planet_degrees > d['moments']['sunrise']['clockwise_degrees'] || planet_degrees < d['moments']['sunset']['clockwise_degrees']) {
+        is_visible = true 
+      }
+      var to_plot = {
+        'name': planet['name'],
+        'token': planet['name'].toLowerCase(),
+        'relative_to_aries_clockwise': relative_to_aries_clockwise,
+        'relative_to_sun_clockwise': degrees_relative_to_sun_clockwise,
+        'degrees': positive_modulo(planet_degrees, 360),
+        'is_visible': is_visible,
+        'api': planet,
+      }
+      d['plots'][planet['name'].toLowerCase()] = to_plot
+      $('#' + to_plot['token'] + '_debug').html(convert_clockwise_degrees_to_24h_time(to_plot['degrees']) +"🕰️, "+ Number(to_plot['degrees']).toFixed(2)+"&deg;"+(is_visible ? ", visible" : ''))
+    }
+    return d
+  }
+
+  $(document).ready(function () {
+    $(window).bind('resize', scale_the_clock);
+    update_clock();
+  });
+</script>

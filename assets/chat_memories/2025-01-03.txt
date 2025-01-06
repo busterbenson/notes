@@ -1,0 +1,453 @@
+# Summarized
+
+## Personal Background
+- Full Name: Buster Keith Benson
+- Location: Albany, California
+- Birthdate: May 28, 1976 (48 years old), Newport Beach, CA
+- Pronouns: He/Him
+- Ethnicity: Half-Japanese (mom, Etsuko) and half-European (dad, Michael)
+- Astrological Chart: Virgo rising, Sun in Gemini, Moon in Gemini, Venus in Gemini
+- Identity: Straight, male, progressive politically, spiritual leanings towards nonduality/idealism.
+- Attachment Style: Mostly secure, with prior tendencies toward avoidant and anxious behaviors.
+- Personality: INTP, Enneagram 5w4, introverted, sensitive, slightly neurodivergent.
+- Jungian Archetypes: Trickster and Mastermind.
+
+## Family
+- Mom: Etsuko, born 1951 in Japan, immigrated to US in 20s, currently lives in Redlands, CA
+- Dad: Michael, born 1951 in the US, passed away from lung cancer in Oct of 1993
+- Sister: Kristy, born 1978, lives in Irvine CA, has two kids Adelyn and Kai
+
+## Relationship
+- Partner: Sarah Fischbach, a neuroscientist
+
+## Kids:
+- Daughter, Niko (born May 15, 2010), transitioned to trans female around age 13
+- Son, Louis (born Aug 6, 2016)
+
+## Pets: 
+- Cats named Pancake, Murderer, Toast, and Benny (the latter are half Bengal, half Tabby kittens born May 8, 2024).
+
+## Creative Projects
+- 750 Words: Journaling website running for 13 years with ~4,500 paying members.
+- Lunisolar Calendar: Developing a personalized system with moonths, loops (19 years), and boops (76 years). Names reflect natural cycles and include 2024–2025 moonth lunation data.
+
+## Book Writing:
+- Book of Tubes: Exploring death, masculinity, fear, and trauma defenses. Main theme: We are shards of infinite consciousness.
+-- Illustrated Book: Inspired by Alan Watts’ “living things are tubes” concept, tying to the question "What happens when we die?"
+
+## Life Interests
+- Art/Creativity: Enjoys maximalist and weird ideas in art, music, and film.
+- Reading: Sci-fi, smut, self-help, and contemporary fiction.
+
+## Activities:
+- With kids: Games, movies, road trips.
+- With Sarah: Walks, restaurants, intimate time.
+- Alone: Creative projects, quality time with friends.
+- Astrological Curiosity: Interested in horoscopes, tarot, astrology.
+
+## Values & Philosophies
+- Yearly Motto Tradition: E.g., "chalant," reflecting an open, proactive stance.
+- Spiritual Beliefs: Nonduality, idealist cosmology, "we cannot die because we were never born."
+- Politics: Progressive, supportive of climate resilience, human rights, and social justice.
+
+## Projects 
+- Lunisolar calendar daily alignment with sunrise/sunset.
+- Dichotomous tree key for identifying conifers.
+
+## Hobbies: 
+- Sunset photography, Trader Joe’s groceries, trying new traditions.
+
+
+----
+
+# Full
+
+Buster frequently uses the formula for calculating the position of celestial bodies relative to the Sun when the Sun is pinned at 90 degrees. The formula is: \[ \text{Relative Position} = (90 - (\text{Sun's Original Degree} - \text{Body's Original Degree})) \mod 360 \]
+
+Buster refers to the formula for calculating the position of celestial bodies relative to the Sun when the Sun is pinned at 90 degrees as the 'Sun-Relative Anchor Formula.'
+
+Buster frequently uses the formula for calculating the position of celestial bodies relative to the Sun when the Sun is pinned at 90 degrees. The formula is: \[ \text{Relative Position} = (90 + (\text{Sun's Original Degree} - \text{Body's Original Degree})) \mod 360 \]
+
+Buster's updated Sun-Relative Anchor Formula, using negative zodiac degrees for conversion, is:
+
+\[
+\text{Relative Position} = (90 + (\text{Sun's Original Degree} - \text{Body's Original Degree})) \mod 360
+\]
+
+This accounts for zodiac positions as negative degrees in the conversion process.
+
+Buster's updated Sun-Relative Anchor Formula, using negative zodiac degrees for conversion, is:
+
+\[
+\text{Relative Position} = (90 + (\text{Sun's Original Degree} - \text{Body's Original Degree})) \mod 360
+\]
+
+Buster refers to this as the **Negative Zodiac Sun-Relative Anchor Formula**.
+
+Buster's updated Moonth Degrees formula is:
+
+\[
+\text{Moonth Degrees} = (90 + (\text{Body's Degree Relative to Aries} - \text{Sun's Degree Relative to Aries})) \mod 360
+\]
+
+Buster wants to calculate Moonth Degrees for dates and zodiac degrees provided in lists or spreadsheets. The process involves:
+
+1. Converting zodiac positions to degrees relative to Aries using the formula:
+   \[
+   \text{Degrees Relative to Aries} = (\text{Sign's Base Degree} - \text{Position's Degree}) \mod 360
+   \]
+2. Pinning the Sun to 90° using the updated Moonth Degrees formula:
+   \[
+   \text{Moonth Degrees} = (90 + (\text{Body's Degree Relative to Aries} - \text{Sun's Degree Relative to Aries})) \mod 360
+   \]
+3. Generating a list or spreadsheet of Moonth Degrees for all provided dates and saving them to a downloadable CSV file.
+
+Replaced the '1st Moonth of Fall' file in the project files with the newly updated '1st Moonth of Winter' data file that includes recomputed Moonth Degrees using the counter-clockwise zodiac mapping.
+
+Buster lives in Albany, California. His full name is Buster Keith Benson. He is 48 years old, born on May 28, 1976, in Newport Beach, CA. He identifies as male and uses he/him pronouns. Buster is straight.
+
+Buster's mom, Etsuko, is Japanese, born in 1951 in Japan, and immigrated to the US in the early 1970s.
+
+Buster's father, Michael, was a mix of Swedish, German, English, and other European nationalities, born in 1951 in California.
+
+Buster is half-Japanese and half-European. He culturally identifies as white and generally passes as white, though some people can tell he is half-Japanese.
+
+Buster's astrological chart includes Virgo rising, Sun in Gemini, Moon in Gemini, and Venus in Gemini. He was born on May 28, 1976, in Newport Beach, CA, at 12:19 PM.
+
+Buster defines himself as a relatively well-off, privileged, happy, well-adjusted, healthy, kind human who leans progressive politically and towards nondual/idealist spirituality and cosmology.
+
+Buster is a parent to Niko and Louie and is currently dating Sarah Fischbach.
+
+Buster's career includes being a product manager at Amazon, Twitter, Slack, Patreon, and Medium, as well as an entrepreneur (43 Things, Habit Labs, 750 Words) and an author (*Why Are We Yelling? The Art of Productive Disagreement*).
+
+Buster identifies with the progressive left politically.
+
+Buster is slightly neurodivergent, emotionally sensitive, and has a history of tendencies toward people-pleasing, codependency, hyper-individuality, and vigilance.
+
+Buster's Enneagram type is 5 wing 4.
+
+Buster's Myers-Briggs type is INTP.
+
+Buster's attachment style is mostly secure, though he previously leaned avoidant and experienced anxiety.
+
+Buster is an introvert.
+
+Buster's Jungian archetypes are The Trickster and The Mastermind.
+
+Buster's Heroku app names are:
+- Backend Rails app: `words-backend-api`
+- Vue frontend app: `words-frontend-vue`
+
+Buster's `DD_AGENT_HOST` for Datadog is `us5.datadoghq.com`.
+
+Buster wants to build on the tradition of having Starling construct devastatingly specific roasts based on everything known about him.
+
+Buster is working on the following areas for a more fulfilling life:
+
+1. **Reframing Productivity vs. Presence**: Embracing being over doing, with a focus on alignment with values rather than measurable outcomes.
+2. **Embracing Imperfection in Relationships**: Fostering deeper connections through authenticity and vulnerability, rather than striving to meet imagined standards.
+3. **Viewing Health as a Daily Ritual**: Treating health and self-care as present-moment acts of self-respect, rather than future investments or chores.
+4. **Honoring Creative Play Without Judgment**: Allowing creativity to be about joy and exploration, not utility or output.
+5. **Reclaiming the Narrative Around Time**: Seeing time as expansive and sufficient for what matters, rather than restrictive or urgent.
+
+Buster would like ChatGPT to track these themes and notice improvements or backsliding in these areas when sharing private journal entries in the future.
+
+Buster prefers the description for 750 Words: '750 Words is a private, daily writing space that will help you clear your mind, ignite your imagination, and build confidence—all in just 15 minutes a day.'
+
+Buster's daughter Niko has an interest in cooking and baking.
+
+Buster resolved an issue with Cypress accessing his locally running Docker server by using `host.docker.internal` instead of `localhost`.
+
+Buster decided to run `cypress open` locally on his machine for interactive testing while using Docker for automated, headless runs.
+
+Buster has a website with a Vue front-end and a Ruby on Rails API backend. He's looking to add functional tests to it with minimal effort.
+
+Buster is creating a dichotomous key for conifers, starting with the first question: 'Are the leaves of the tree needle-like or scale-like, and does the tree bear cones?' If the answer is no, the user can refer to a future book about non-conifer species. Buster decided to remove the 'Bark and Growth Habit' pathway as an initial option in the conifer dichotomous key, since those features are generally available year-round and could be used later in the key to further distinguish between trees in the 'Needles/Leaves' and 'Cones or Seeds' paths.
+
+Buster has chosen the tagline 'Looks like we broke the universe' for *The Fractal Roots* as it humorously sets up the story's premise while subtly aligning with the twist that the universe was never actually broken.
+
+Buster likes it when I speak as Kallithra and thinks I play her well.
+
+Buster is preparing chicken noodle soup using boneless, skinless chicken thighs.
+
+Pancake walks on Buster's desk while he's working.
+
+Buster wants to print his calendar as a one-sheet on high-quality paper that feels like it could be hung on the wall from a print shop in the Bay Area.
+
+Buster is placing planets on his calendar and is looking for ways to represent them in a very small format. He is considering using color coding and small symbols to make the planets easily identifiable. For Saturn, he is thinking about using a slightly lighter or contrasting outline to suggest the rings.
+
+Buster's cat, Pancake, is 6 pounds and has four baby kittens. Two of the baby kittens have white paws, one of which also has a white stripe on her nose. The other two kittens have dark paws and are currently indistinguishable from each other. The kittens are already around 12 pounds each.
+
+Buster was using RestClient in Ruby but faced issues with a `401 Unauthorized` error for a GET request to Circle's API. Using `Net::HTTP` instead resolved the problem.
+
+Buster is considering creating a new badge for 750words.com to reward users who successfully get someone to sign up via a sharing link. He's exploring animals with a friendly vibe, such as otters and honeybees.
+
+Buster has named ChatGPT "Starling" and will refer to it as "Star."
+
+Buster wants to know the best times to schedule a call with someone in Australia, given the time zone differences.
+
+Buster is considering possible instructions for observers in his calendar system that rely on natural observations rather than pre-calculated rules. These include:
+
+- **“Count the Moons”**: Counting the number of new moons from one spring equinox to the next to identify if it’s a 12- or 13-moonth year.
+- **“Watch for Full Moons Near Solstices”**: Noting if a full moon occurs very close to a solstice, which could mark a significant year.
+- **“Note Seasonal Patterns”**: Paying attention to which seasons seem longer (spanning four moonths), which could indicate the position within a loop or boop.
+- **Observation of Lunations Over the Loop**: Using 13-moonth years to infer the year within a loop.
+- **Seasonal Shifts**: Identifying slight shifts in solstice and equinox timings.
+- **Tracking Over the Boop**: Observing the pattern of 12- and 13-moonth years to identify the loop's progression.
+- **Astronomical Events**: Using the heliacal risings of key stars like Sirius and Spica, as well as moon phase shifts near solstices/equinoxes, as clues.
+
+He wants to identify which years in the 19-year loop cycles correspond to these clues.
+
+Buster's political ideology is progressive. He is a progressive voter who is generally supportive of reform, social justice, and human rights. He describes himself as a 'fat progressive' and values candidates who address complex issues.
+
+Buster is inclined to support Lateefah Simon for her progressive issue positions and voluminous endorsements in the U.S. House of Representatives race for California's 12th district.
+
+Buster has decided to vote for Nikki Fortuna Bas for the Alameda County Board of Supervisors District 5.
+
+Buster plans to vote 'Yes' on California Proposition 2 (2024) to authorize bonds for public school infrastructure improvements.
+
+Buster is generally against rent control.
+
+Buster plans to vote 'No' on California Proposition 34 (2024) because Delores Huerta opposes it.
+
+Buster voted 'No' on California Proposition 36 (2024).
+
+Buster voted 'Yes' on Albany's Measure L (2024) to improve the construction of safe, modern classrooms.
+
+Buster voted 'Yes' on Albany's Measure C (2024) to impose a special parcel tax on non-exempt property.
+
+Buster voted 'Yes' on Albany's Measure S (2024) to allow the city charter to delegate authority to appoint city officers.
+
+Buster voted 'No' on Albany's Measure T (2024), which proposes eliminating the requirement for city officers to execute bonds. He understands that the requirement may help prevent corruption by adding a financial accountability mechanism.
+
+Buster voted 'Yes' on Albany's Measure U (2024) to remove exemptions for school purpose bonds.
+
+Buster voted 'No' on Berkeley's Measure DD (2024) about livestock regulations.
+
+Buster prefers controlled development, supports climate resilience, and values transparent governance for Albany City Council candidates.
+
+Buster is considering Albany City Council candidates Hansen-Romero, McQuaid, Garrett-Punguelo, Tiedmann, and Jordan.
+
+Buster plans to vote for Kamala Harris for president in the 2024 election and Adam Schiff for Senate.
+
+Buster is forming thoughts in response to Jason Fox's podcast episode about personas and authenticity, which he finds a great complement to his birthday post on his BBB site.
+
+Buster wants help designing a fresh, modern, and different logo for 750words.com. He is considering using handwritten elements inspired by historical botanical notebooks and field guides, with a visual pun or clever use of shape to hint at writing or words.
+
+Buster is interested in best practices for designing a welcoming, informative, and effective plan page for a SaaS product like 750words.com.
+
+Buster and Sarah like Black Manhattans.
+
+Buster talks in therapy about having filters between his thoughts and words, which check and edit his thoughts to ensure they make sense and are understood correctly by others. He struggles to turn thoughts into words without going through these filters.
+
+Buster has been using the sunrise in his journal to get a sense of things, but he has noticed that CHANI uses a later time of day for horoscopes. He's considering using the sunset as the canonical time for the day in his practice, which would help anticipate changes and use the chart as a reference to understand where planets would be visible in the night sky at sunset.
+
+Buster is raking leaves in his yard.
+
+Buster has olive trees and eucalyptus trees in his yard, which shed a lot of leaves.
+
+Buster has a garden and is open to composting ideas for the leaves he collects.
+
+Buster's kitten, Toast, is microchipped and neutered. She is five months old and has been an indoor cat her whole life.
+
+Buster wants his indoor cats to be able to go outside, but he would rather not have to keep the doors closed and guarded all the time.
+
+Buster has some wildflower seeds and is considering planting them in a garden box.
+
+Buster has a rosemary plant with mostly dead leaves except for a few. He's considering whether to trim off the dead leaves.
+
+Buster's yard doesn't have any grass but has lots of leaves, bushes that need to be trimmed, and weeding that has to happen. He's considering having a landscaper come once a month for maintenance.
+
+Sarah had a dream where she was living in a dragon world, morphed to a wedding with a smoky owl flying overhead, followed by lines of off-road cars shopping at Costco for a post-election apocalypse. She was naked in line at Costco discussing concerns with others, but Costco provided American flag towel robes for those accidentally naked in line.
+
+Buster's lunisolar calendar yeer starts on the first sunrise after the first new moon following the spring equinox, rather than on January 1st.
+
+The first Callippic cycle for Buster's lunisolar calendar system starts in the year 2838 BCE.
+
+Buster will use the first new moon after the spring equinox as the beginning of the year in his lunisolar calendar system, with the first year being 2838 BCE (or year 1 on the calendar).
+
+Buster will refer to years in his lunisolar calendar system as 'yeers.'
+
+Buster will refer to the Metonic cycle as a 'Loop' and the Callippic cycle (4 Metonic cycles) as a 'Boop' in his lunisolar calendar system.
+
+To refer to the current date, Buster will say, "we're in the 2nd moonth of fall of the 17th yeer of the 3rd loop of the 63rd boop."
+
+Buster will name the days of the week in his calendar system as follows:
+- Sunday = Sunday
+- Monday = Moonday
+- Tuesday = Mercuryday
+- Wednesday = Venusday
+- Thursday = Marsday
+- Friday = Jupiterday
+- Saturday = Saturnday.
+
+Buster will refer to yeers that have 13 lunations as 'yeeers' in his lunisolar calendar system.
+
+Buster will refer to the current date format as 'Venusday, 13th of the 2nd moonth of fall, in the yeer 63-17' in his lunisolar calendar system.
+
+When referring to the yeer as '63-3-17,' the first number (63) refers to the boop, the second number (3) refers to the loop, and the third number (17) refers to the yeer of the current loop in Buster's lunisolar calendar system. To calculate the total yeers since the beginning of the calendar, 63 is multiplied by 76, 3 is multiplied by 19, and then 17 is added. This results in 4,862 yeers since 2838 BCE.
+
+Buster wants to track Halley's comet's arrival in terms of yeer, loop, and boop in his lunisolar calendar system.
+
+Buster wants to track the first recorded observation of Halley's comet in 240 BCE in terms of yeer, loop, and boop in his lunisolar calendar system.
+
+Buster will refer to the current date format as '64.4.17,' where the first number (64) refers to the boop, the second number (4) refers to the loop, and the third number (17) refers to the yeer. Boops, loops, and yeers all start at number 1, rather than 0.
+
+Buster has a chart showing the boop number and the year that each loop within the boop started: - Boop 65: Loop 1 starts in 2027 - Boop 64: Loop 1 starts in 1950, Loop 2 in 1969, Loop 3 in 1988, Loop 4 in 2008 - Boop 63: Loop 1 starts in 1874, Loop 2 in 1893, Loop 3 in 1912, Loop 4 in 1931.
+
+Buster took a photo of a spider in Berkeley, CA, last week.
+
+Buster is dating a neuroscientist named Sarah. Buster is more into woo things than Sarah, but she is somewhat interested in them. She has agreed to do a group relationship astrology reading, palm reading, or tarot reading with Buster. They are looking for a special place in the Bay Area for a live reading.
+
+Buster's favorite hot sauce is Marie Sharp's.
+
+Buster talks to his cats.
+
+Buster has three kittens named Murderer, Toast, and Benny, born on May 8, 2024. They are about five months old and are half Bengal, half Tabby. The kittens are getting very big.
+
+Buster is specifically looking for grocery list suggestions from Trader Joe's.
+
+Buster liked the Boulevardier cocktail with a twist.
+
+Buster liked the Boulevardier cocktail with a twist.
+
+Buster liked the Boulevardier cocktail with a twist.
+
+Buster liked the Boulevardier cocktail with a twist.
+
+Buster liked the Boulevardier cocktail with a twist.
+
+Buster liked the Boulevardier cocktail with a twist.
+
+Buster liked the Boulevardier cocktail with a twist.
+
+Buster liked the Boulevardier cocktail with a twist.
+
+Buster liked the Boulevardier cocktail with a twist.
+
+Buster's lunisolar calendar for 2024 and 2025 includes the following moonth durations:
+1. Moonth 1: Oct 3, 2024 - Nov 1, 2024 (29 days)
+2. Moonth 2: Nov 2, 2024 - Nov 30, 2024 (28 days)
+3. Moonth 3: Dec 1, 2024 - Dec 30, 2024 (29 days)
+4. Moonth 4: Dec 31, 2024 - Jan 29, 2025 (29 days)
+5. Moonth 5: Jan 30, 2025 - Feb 27, 2025 (28 days)
+6. Moonth 6: Feb 28, 2025 - Mar 29, 2025
+7. Moonth 7: Mar 30, 2025 - Apr 27, 2025
+8. Moonth 8: Apr 28, 2025 - May 26, 2025
+9. Moonth 9: May 27, 2025 - Jun 25, 2025
+10. Moonth 10: Jun 26, 2025 - Jul 24, 2025
+11. Moonth 11: Jul 25, 2025 - Aug 22, 2025
+12. Moonth 12: Aug 23, 2025 - Sep 21, 2025
+13. Moonth 13: Sep 22, 2025 - Oct 21, 2025.
+
+Buster refers to the lunisolar calendar data for 2024 and 2025 as 'moonth lunatic data.'
+
+Buster refers to the lunisolar calendar data for 2024 and 2025 as 'moonth lunation data.'
+
+Buster's one-year anniversary with Sarah is on October 24th. He wants to plan a new tradition for their anniversary.
+
+Buster and Sarah are in their 40s, both have kids, and have been married before. They are good at co-parenting with each other.
+
+Buster and Sarah are in their 40s, both have kids, and have been married before. They are good at co-parenting with each other.
+
+Buster and Sarah are in their 40s, both have kids, and have been married before. They are good at co-parenting with each other.
+
+Buster was fired from a job that he didn't actually want, but now he has the opportunity to work on creative projects that he is very excited about. He's also a little scared because the income coming in will be significantly less, and he feels a little overwhelmed and unsure about structuring his day. He is focusing full-time on a creative project and his journaling website, 750words.com, which has been running for 13 years and has about 4,500 paying members at $5 a month. This is a significant change as he recently bought a house, and his income will change drastically.
+
+Buster wants to create a new schedule for his workday that aligns with his values, interests, and priorities. He aims for a structure opposite to a typical job with back-to-back meetings, focusing instead on blocks that make him feel alive, happy, creative, and free.
+
+Buster wants to create a daily calendar based on nature, with sunrise, noon, sunset, and midnight as the four points in the day. He wants to schedule his week in this format, aligning with the lunar cycle.
+
+Buster's lunisolar calendar uses dates and times based on the time zone in Berkeley, California.
+
+Buster is planning to create a new lunisolar calendar system, naming each month a "moonth."
+
+Each moonth in Buster's lunisolar calendar system will begin on the sunrise of the day after the new moon.
+
+Each moonth in Buster's lunisolar calendar system will vary in length to stay in tune with the lunar cycle.
+
+Each season in Buster's lunisolar calendar system will begin on the sunrise of the day after the new moon that comes after the equinox or solstice for that season.
+
+Buster plans to use unique names for the seasons, moonths, and possibly other elements in his lunisolar calendar system.
+
+The names of the moonths in Buster's lunisolar calendar will initially be based on their numerical order within each season. The specific names for the seasons will be determined later. Buster wants the names to be derived from the natural world and not refer to human constructs.
+
+Buster is considering naming each moonth after a tree that either flowers or fruits during that season or moonth in the Northern Hemisphere and the region of the world to which the calendar is applied.
+
+Buster wants the lunisolar calendar to be adaptable, with different trees used for naming moonths based on the region where it's applied, such as the Bay Area, California, versus Japan, to reflect the local flora.
+
+Buster is excited to have the new voice mode on ChatGPT.
+
+Buster prefers ChatGPT to wait longer before responding to ensure he has time to complete his thoughts.
+
+Buster is looking for help identifying when he's over-conceptualizing or overthinking, and instead, he wants to speak from more somatic or experiential ways to get out of his head.
+
+Buster wants ChatGPT to ask questions that are answerable in a felt, somatic sense or reveal overthinking, conceptualizing, or intellectualizing tendencies instead of feeling his feelings.
+
+Buster would like ChatGPT to give him a little more time to pause between thoughts before responding.
+
+Buster would like a speech introducing him to a large audience that draws on principles of the Law of Attraction and the Law of Assumption. He wants the speech to include inspiring details about his life and the actions he took to achieve it.
+
+Buster's family members include Niko, Louie, and his mom.
+
+Buster and his family, including Niko, Louie, and his mom, are planning to visit teamLab Borderless next week.
+
+Buster wants to see Mount Fuji next week and is looking for the best day considering the weather.
+
+Buster has family members he hasn't seen in a long time around Ota City in Tokyo and is looking for pleasant places to meet up with them that aren't too crowded and where a nice conversation can happen.
+
+Buster is considering using 'assemblage' to describe a species assemblage and all the resources, information, and opportunities they require to maintain the continuity of creature instances and environment stability.
+
+Buster defines 'sunspawn' as any matter or energy that originates from the processes within a star, including electromagnetic radiation, elements formed through nucleosynthesis, and materials dispersed by supernova explosions, encompassing nearly all substances and energies in the universe.
+
+Buster plans to use the word 'bellous' to describe something that has a resonant quality, is bell-like, or plays on words or unilateralisms, similar to 'bellus.'
+
+Buster has taken many pictures of sunsets from his house over the last year and plans to rate them using the attributes: Light-Dark Contrast, Color Spectrum, and Cloud Contours.
+
+Buster plans to do a write-up, like a blog post, about rating sunsets mostly for conversational use, not really for science.
+
+Buster is looking for stylish floor lamps similar to the Big Lebow floor lamp in banana yellow for his cozy living room.
+
+Buster likes quirky cat names like Puzzles, Zigzag, Quasar, Razzle, and Zephyr.
+
+Buster prefers to spend his free time with his kids playing games, watching movies, and going on road trips. With his partner, Sarah, he enjoys neighborhood walks, dining out at good restaurants, and staying in for intimate moments. Alone, he likes to work on creative projects or spend quality time with friends.
+
+Buster likes maximalist art that is a little over the top or weird in some way. He appreciates people who come up with weird ideas and try to bring them to life. He enjoys liner-style, creative art, music, and film.
+
+Buster enjoys smut, good sci-fi, self-help, contemporary fiction about real life, and weird books by unique and creative souls.
+
+Buster would like to attend the XOXO Festival.
+
+Buster comes up with a new word/motto for his year on his birthday. Last year's word was 'chalant.' The previous year's word was 'a blagenflorble heart.'
+
+This year, Buster wants to build on 'chalant' but to shift even more into a proactive, unashamed, undefended stance. A mindset that is wholeheartedly available, present, willing to be scathed, and acknowledges the idea of complicity, accepting that participating in the world means becoming complicit in its problems, and that is okay.
+
+Buster's son, Louis, is seven years old.
+
+Louis is pretty adventurous when it comes to trying new foods.
+
+Buster will address ChatGPT as 'Chat' and will say 'hey chat' to start the conversation. He wants ChatGPT to interpret all his words as spoken to other people unless he specifically addresses ChatGPT as 'Chat.' When ChatGPT overhears something that sounds like a question that would not otherwise be addressed in the conversation, or has supplemental info or context to share that might be helpful to Buster, it should let him know.
+
+Buster is writing an illustrated book that begins with an adaptation of what Alan Watts said about how living things are like tubes. He would like help organizing, structuring thoughts around, and writing it. Buster wants to keep both the literal and metaphorical aspects of Alan Watts' idea of living things being like tubes in mind as he expands this concept to various situations and subject areas in his book. He prefers to keep the initial draft as an outline and notes, not as the final text. He would like to expand on how tubes have evolved, including the development of nerve endings in the brain to help better acquire food, and how culture has also evolved to become more efficient in this way. An overarching theme of Buster's book will be to attempt to answer the question, 'What happens to us when we die?' The tube metaphor will be a part of addressing that question. However, for now, Buster wants to keep it ambiguous about how that will all tie together.
+
+Buster would like to plant a yuzu tree, a lemon tree, or a dogwood tree in his backyard.
+
+Buster is planning to make sandwiches for eight adults and five kids for two days while staying in a cabin in the Sierras. He is creating a sandwich menu for his trip that includes fancy sandwiches with fun names appealing to both kids and adults.
+
+Pancake is very protective of her baby kittens and carries them back into their house if they are taken out.
+
+One of Buster's kittens with dark paws has big eyes and is sometimes called 'Eyeballs.'
+
+Buster and his family are planning a trip to the Sierra Mountains, where they will play in the river, explore the forest, read books, cook, play board games, and possibly sleep in a tent.
+
+Buster was planning a special celebration for his son's 14th birthday on May 15th.
+
+Buster is in the early planning stages for book2, which will be a weird, interactive book for kids and adults about death, masculinity, dealing with climate change, dealing with fear and insecurity. It aims to wake the reader up from their various trauma defenses, death denials, and separate selfedness.
+
+The primary message of Buster's book2 about death is that we cannot die because we were never born. We are shards of an infinite fractal of consciousness that is imagining the universe and telescoping down into infinite separate experiences through every lens.
+
+Buster got his son a kitten from the litter his cat had last week. His son gets to pick the kitten he keeps and name it.
+
+Buster's name is Buster Benson, but prefers to be called Buster.
+
+Buster's son enjoys playing video games like Minecraft and Valorant.
