@@ -62,6 +62,15 @@ max_width: true
   #debug {
     margin-top: 2em;
   }
+  #moonth-data-table td {
+    border: 1px solid #fff;
+    padding: 5px;
+    font-size: 12px;
+  }
+  #save-moonth-data-row {
+    font-size: 12px;
+    padding-top: 3px;
+  }
 
   #stars,
   #earth,
@@ -206,6 +215,26 @@ max_width: true
   <div id="clock-canvas">
     <div id="clock">
     </div>
+    <div id="moonth-data">
+      <table id="moonth-data-table">
+        <tr>
+          <!-- Sunset at	Sun zodiac	Moon zodiac	Mercury zodiac	Venus zodiac	Mars zodiac	Jupiter zodiac	Saturn zodiac -->
+          <td>Date</td>
+          <td>Time</td>
+          <td>Sun</td>
+          <td>Moon</td>
+          <td>Mercury</td>
+          <td>Venus</td>
+          <td>Mars</td>
+          <td>Jupiter</td>
+          <td>Saturn</td>
+          <td>Uranus</td>
+          <td>Neptune</td>
+          <td>Pluto</td>
+        </tr>
+      </table>
+      <div><a href="#" id="save-moonth-data-row" class="date-link">Save Data To Row</a></div>
+    </div>
     <div id="debug">
       <div>Date: <span id="date"></span></div>
       <div>Current time: <span id="current_time"></span></div>
@@ -217,6 +246,10 @@ max_width: true
       <div>Sunset: <span id="sunset_debug"></span></div>
       <hr />
       <div>Moon: <span id="moon_debug"></span></div>
+      <div>Moon Status: <span id="moon_status_debug"></span></div>
+      <div>Moon Phase: <span id="moon_phase_rough_debug"></span></div>
+      <div>Moon Illumination: <span id="moon_illumination_debug"></span></div>
+      <div>Moon Parallactic Angel: <span id="moon_parallactic_angle_debug"></span></div>
       <hr />
       <div>Mercury: <span id="mercury_debug"></span></div>
       <div>Venus: <span id="venus_debug"></span></div>
@@ -272,6 +305,10 @@ max_width: true
   document.getElementById('right-now').addEventListener("click", right_now_link_clicked)
   document.getElementById('this-sunset').addEventListener("click", sunset_link_clicked)
   document.getElementById('next-day').addEventListener("click", next_day_link_clicked)
+
+  // Save data to moonth data table row
+  document.getElementById('save-moonth-data-row').addEventListener("click", save_moonth_data_row)
+  
 
   if (debug) {
     $('#debug').show();
@@ -387,6 +424,47 @@ max_width: true
     console.log(new_date)
     event.preventDefault();
   }
+  function save_moonth_data_row() {
+    console.log('save moonth data row')
+    var row = document.createElement('tr')
+    var date = document.createElement('td')
+    date.innerHTML = d['date']
+    row.appendChild(date)
+    var sunset = document.createElement('td')
+    sunset.innerHTML = d['season_data']['sunset_deg']['time_string']
+    row.appendChild(sunset)
+    var sun = document.createElement('td')
+    sun.innerHTML = d['plots']['sun']['degrees']
+    row.appendChild(sun)
+    var moon = document.createElement('td')
+    moon.innerHTML = d['plots']['moon']['degrees']
+    row.appendChild(moon)
+    var mercury = document.createElement('td')
+    mercury.innerHTML = d['plots']['mercury']['degrees']
+    row.appendChild(mercury)
+    var venus = document.createElement('td')
+    venus.innerHTML = d['plots']['venus']['degrees']
+    row.appendChild(venus)
+    var mars = document.createElement('td')
+    mars.innerHTML = d['plots']['mars']['degrees']
+    row.appendChild(mars)
+    var jupiter = document.createElement('td')
+    jupiter.innerHTML = d['plots']['jupiter']['degrees']
+    row.appendChild(jupiter)
+    var saturn = document.createElement('td')
+    saturn.innerHTML = d['plots']['saturn']['degrees']
+    row.appendChild(saturn)
+    var uranus = document.createElement('td')
+    uranus.innerHTML = d['plots']['uranus']['degrees']
+    row.appendChild(uranus)
+    var neptune = document.createElement('td')
+    neptune.innerHTML = d['plots']['neptune']['degrees']
+    row.appendChild(neptune)
+    var pluto = document.createElement('td')
+    pluto.innerHTML = d['plots']['pluto']['degrees']
+    row.appendChild(pluto)
+    document.getElementById('moonth-data-table').appendChild(row)
+  }
 
   //////////
   // FUNCTIONS 
@@ -400,7 +478,8 @@ max_width: true
     update_clock()
   }
 
-  // Function that is run when location is retrieved from the browser
+  ////////// UPDATE THE CLOCK //////////
+  // Whenever the clock updates, this is the method to call
 	function update_clock() {
 		if (navigator.geolocation) {
 			navigator.geolocation.getCurrentPosition(got_location, no_location);
@@ -432,21 +511,24 @@ max_width: true
     $('#location-status').hide();
     console.log('got location');
 
-    // Location info
+    // DATA SETUP 
     if (d['d_initialized'] == undefined) {
       d = {
-        d_initialized: true,
+        d_initialized: true, // so  we only create this once
         location_available: true,
         lat: pos.coords.latitude,
         long: pos.coords.longitude,
-        plots: {},
-        moon_data: {}
+        clock_initialized: false, // so we can load the clock all at once
+        plots: {}, // where things go on the clock
+        season_data: {}, // stuff that changes slowly over the year
+        moonth_data: {}, // stuff that changes over a moonth / lunation
+        sky_data: {}, // what's above the horizon? what can we see in the sky?
       }
     }
-
     d = configure_clock(d);
 
-    // Get seasonal data first to figure out the time of sunset
+    ////////// THE LIST OF STEPS //////////
+    // 1 - Get seasonal data first to figure out the time of sunset
     get_seasonal_data(d).then((d) => {
       console.log('get_seasonal_data')
       $('#current_time').html(d['current_time']['time_string'])      
@@ -455,19 +537,24 @@ max_width: true
                           d['current_time'],
                           d, 'planets_relative_to_aries')
 
-    // Combine seasonal and current time data
+    // 2 - Combine seasonal and current time data
     }).then((d) => {
       console.log('get_sun_at_datetime (current_time)')
       return combine_seasonal_and_planet_data(d)
 
-    // Plot the moments on the clock
+    // 3 - Plot the moments on the clock
     }).then((d) => {
       return plot_moments_on_clock(d)  
 
-    // Plot the planets on the clock
+    // 4 - Plot the planets on the clock
     }).then((d) => {             
       return plot_objects_on_clock(d)  
 
+    // 5 - Plot the Moon on the clock
+    }).then((d) => {
+      return plot_moon_on_clock(d)  
+
+    // 6 - Cleanup and wait for next update
     }).then((d) => {
       console.log('got_location complete')
       console.log(d)
@@ -478,19 +565,17 @@ max_width: true
       }
 
       return d
+
+    // If there were errors
     }).catch((err) => {
       console.log('error in got_location')
       console.log(err)
     })
   }
 
+  // TIME SETUP
   function configure_clock(d) {
-    // Dates and times
-    console.log('configure_clock')
-
     if (time_input_type == 'manual' && $('#date-and-time').val().length > 0) {
-      console.log('manual time')
-      console.log($('#date-and-time').val())
       try {
         var ts = Date.parse($('#date-and-time').val())
         d['now'] = new Date(ts)
@@ -499,18 +584,15 @@ max_width: true
       catch {
         d['now'] = new Date();
         d['date'] = moment(d['now']).format('YYYY-MM-DD')
-        // d['date'] = d['now'].toISOString().split('T')[0]
         time_input_type = 'auto'
       }
     } else if (time_input_type == 'one-time') {
-
       time_input_type = 'auto'
     } else {
       d['now'] = new Date();
       d['date'] = moment(d['now']).format('YYYY-MM-DD')
       time_input_type = 'auto'
     }
-    console.log('date: ' + d['date'])
     let hours = d['now'].getHours();
     let minutes = d['now'].getMinutes();
     let seconds = d['now'].getSeconds();
@@ -526,8 +608,8 @@ max_width: true
     return d;
   }
 
-  // 1 
-  // Figure out how to orient the clock by season by using sunrise and sunset data
+  ////////// CLOCK FUNCTIONS //////////
+  // 1 - Figure out how to orient the clock by season by using sunrise and sunset data
   // Previously called get_sun_data and get_rising_setting_for_sun_and_moon
   // Passed next to get_astrology_data
   async function get_seasonal_data(d) {
@@ -546,6 +628,22 @@ max_width: true
           'sunset_datetime': new Date(Date.parse(d['date'] + 'T' + json['sunset'] + ':00')),
           'solarnoon_datetime': new Date(Date.parse(d['date'] + 'T' + json['solar_noon'] + ':00')),
           'sun_relative_to_aries': null
+        }
+        d['moonth_data'] = {
+          'moon_data': {
+            altitude: json['moon_altitude'],
+            angle: json['moon_angle'],
+            azimuth: json['moon_azimuth'],
+            distance: json['moon_distance'],
+            illumination: json['moon_illumination_percentage'],
+            parallactic_angle: json['moon_parallactic_angle'],
+            phase_rough: json['moon_phase'],
+            status: json['moon_status'],
+            moonrise_deg: convert_24h_time_to_clockwise_degrees_hash(json['moonrise']),
+            moonset_deg: convert_24h_time_to_clockwise_degrees_hash(json['moonset']),
+            moonrise_datetime: new Date(Date.parse(d['date'] + 'T' + json['moonrise'] + ':00')),
+            moonset_datetime: new Date(Date.parse(d['date'] + 'T' + json['moonset'] + ':00')),
+          },
         }
         $('#date').html(d['date'])
 
@@ -614,11 +712,12 @@ max_width: true
     )
   }
 
+  // 3 - after we have stuff about seasons and the planets
   async function combine_seasonal_and_planet_data(d) {
     // Figure out where Aries 0 degrees is
     sun = d['planets_relative_to_aries']['api'][0]
-    d['season_data']['aries_relative_to_year'] = positive_modulo(-sun['fullDegree'], 360)
-    $('#aries_relative_to_year').html(Number(360 / d['season_data']['aries_relative_to_year']).toFixed(2) + "%")
+    d['season_data']['aries_relative_to_year'] = positive_modulo(360-sun['fullDegree'], 360)
+    $('#aries_relative_to_year').html(Number(d['season_data']['aries_relative_to_year']*100/360).toFixed(2) + "%")
 
     // Map the sun relative to Aries
     d['season_data']['sun_relative_to_aries'] = positive_modulo(-d['season_data']['aries_relative_to_year'], 360)
@@ -646,7 +745,7 @@ max_width: true
     return d
   }
 
-  // Plot moments of the day
+  // 4 - Plot moments of the day
   async function plot_moments_on_clock(d) {
     d['moments'] = {
       sunrise: convert_moment_time_string_to_clock_degrees(d['season_data']['sunrise_deg']['time_string']),
@@ -660,22 +759,22 @@ max_width: true
     return d
   }
   
-  // Plot the moon and planets
+  // 5 - Plot the moon and planets
   async function plot_objects_on_clock(d) {
     // Figure out where the sun is relative to Aries (this is the season)
     var sun = d['planets_relative_to_aries']['api'][0]
 
     var sun_is_visible = false
-    // if (d['plot_offset'] > d['moments']['sunrise']['clockwise_degrees'] || d['plot_offset'] < d['moments']['sunset']['clockwise_degrees']) {
-      //sun_is_visible = true
-    //}
+    if (d['plot_offset'] > 270 || d['plot_offset'] < 90) {
+      sun_is_visible = true
+    }
     $('#sun_debug').html(convert_clockwise_degrees_to_24h_time(d['plots']['sun']['degrees']) + "🕰️, " + Number(d['plots']['sun']['degrees']).toFixed(2) + "&deg;" + (sun_is_visible ? ", visible" : ''))
 
 
     // Figure out where the sun is relative to Aries (this is the season)
     var planets = d['planets_relative_to_aries']['api']
 
-    // Plot all the other objects relative to the sun
+    // Plot all the objects relative to the sun
     for (let i = 1; i < planets.length; i++) {
       var planet = planets[i]
 
@@ -689,9 +788,9 @@ max_width: true
       var relative_to_aries_clockwise = positive_modulo(-planet['fullDegree'], 360)
       var degrees_relative_to_sun_clockwise = positive_modulo(planet['fullDegree'] - sun['fullDegree'], 360)
       var is_visible = false 
-      // if (planet_degrees > d['moments']['sunrise']['clockwise_degrees'] || planet_degrees < d['moments']['sunset']['clockwise_degrees']) {
-      //   is_visible = true 
-      //}
+      if (planet_degrees > 270 || planet_degrees < 90) {
+         is_visible = true 
+      }
       var to_plot = {
         'name': planet['name'],
         'token': planet['name'].toLowerCase(),
@@ -707,8 +806,19 @@ max_width: true
     return d
   }
 
+
+  // 6 - Plot all the moon and lunation stuff
+  async function plot_moon_on_clock(d) {
+    console.log('plot_moon_on_clock')
+    $('#moon_phase_rough_debug').html(d['moonth_data']['moon_data']['phase_rough'])
+    $('#moon_status_debug').html(d['moonth_data']['moon_data']['status'])
+    $('#moon_illumination_debug').html(d['moonth_data']['moon_data']['illumination']+"%")
+    $('#moon_parallactic_angle_debug').html(Number(d['moonth_data']['moon_data']['parallactic_angle']).toFixed(2)+"&deg;")
+    return d
+  }
+
   $(document).ready(function () {
     $(window).bind('resize', scale_the_clock);
-    update_clock();
+    auto_date_and_time();
   });
 </script>
