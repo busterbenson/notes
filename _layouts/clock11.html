@@ -11,6 +11,8 @@ max_width: true
 
   body {
     width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
     font-family: Helvetica, sans-serif;
     background-color: #2244a3;
     color: #fff;
@@ -18,26 +20,6 @@ max_width: true
 
   #fullscreen {
     margin: 37px !important;
-  }
-
-  #clock-canvas {
-    position: relative;
-    margin: 0 auto;
-    max-width: 1000px;
-    max-height: 1000px;
-    min-width: 100px;
-    min-height: 100px;
-    padding: 0;
-  }
-
-  #clock {
-    position: relative;
-    background-size: contain;
-    width: 100%;
-    max-width: 1000px;
-    margin: 0;
-    padding: 0;
-    z-index: 1;
   }
 
   a#get-location-link {
@@ -71,132 +53,48 @@ max_width: true
     font-size: 12px;
     padding-top: 3px;
   }
-
-  #stars,
-  #earth,
-  #sky,
-  #seasons_dandelion,
-  #seasons_earth_tilt,
-  #precession_background,
-  #precession_foreground,
-  #sun,
-  #moon,
-  #seasons_wrapper,
-  #zodiac_wrapper,
-  #mercury,
-  #venus,
-  #mars,
-  #jupiter,
-  #saturn,
-  #uranus,
-  #neptune,
-  #pluto {
+  #navigation-and-links, a {
+    margin-top: 1em;
+    z-index: 100;
+  }
+  #clock-canvas {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 1000px;
+    min-width: 100px;
+    min-height: 100px;
+    padding: 0;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+  }
+  #clock {
+    position: relative;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+  }
+  #hand-1, #hand-2, #hand-3, #hand-4, #hand-5, #hand-6, #hand-7, #hand-8, #hand-9, #hand-10 {
     position: absolute;
     width: 100%;
     height: 100%;
     max-width: 1000px;
     max-height: 1000px;
-    margin: 0 auto;
     padding: 0;
-  }
-
-  /* z-index is 50 if not retro, and 150 if it is retro */
-  #mercury,
-  #venus,
-  #mars,
-  #jupiter,
-  #saturn {
-    z-index: 50;
-    display: none;
-  }
-
-  #sun {
     background-size: contain;
-    z-index: 100;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    pointer-events: none;
   }
-
-  #moon {
-    background-size: contain;
-    z-index: 200;
-  }
-
-  #earth {
-    background-image: url("/assets/images/clock/8/horizon.png");
-    background-size: contain;
-    z-index: 0;
-    opacity: 0.7;
-  }
-
-  #stars {
-    background-image: url("/assets/images/clock/8/constellations.png");
-    background-size: contain;
-    z-index: -10;
-  }
-
-  #sky {
-    background-image: url("/assets/images/clock/8/sky.png");
-    background-size: contain;
-    z-index: 0;
-    opacity: 0;
-  }
-
-  #seasons_dandelion {
-    background-image: url("/assets/images/clock/8/seasons-cycle.png");
-    background-size: contain;
-    z-index: 0;
-  }
-
-  #seasons_earth_tilt {
-    background-image: url("/assets/images/clock/8/seasons-earth-tilt.png");
-    background-size: contain;
-    z-index: 0;
-  }
-
-  #precession_background {
-    background-image: url("/assets/images/clock/8/precession-background.png");
-    background-size: contain;
-    z-index: 0;
-  }
-
-  #precession_foreground {
-    background-image: url("/assets/images/clock/8/precession-foreground.png");
-    background-size: contain;
-    z-index: 0;
-  }
-
-  #mercury {
-    background-image: url("/assets/images/clock/8/planet-mercury.png");
-    background-size: contain;
-  }
-
-  #venus {
-    background-image: url("/assets/images/clock/8/planet-venus.png");
-    background-size: contain;
-  }
-
-  #mars {
-    background-image: url("/assets/images/clock/8/planet-mars.png");
-    background-size: contain;
-  }
-
-  #jupiter {
-    background-image: url("/assets/images/clock/8/planet-jupiter.png");
-    background-size: contain;
-  }
-
-  #saturn {
-    background-image: url("/assets/images/clock/8/planet-saturn.png");
-    background-size: contain;
-  }
-
-  #uranus,
-  #neptune,
-  #pluto {
-    display: none;
-  }
-
-  #zodiac_wrapper {
-    display: block;
+  #moonth-data {
+    padding-top: 50px;
   }
 </style>
 
@@ -205,61 +103,74 @@ max_width: true
     Click to <a href="#" id="get-location-link">load 🌞 and 🌛 and ✨ data from the universe</a>. 
   </div>
   <div id="location-not-available"></div>
-  <div><input id="date-and-time" /></div>
-  <div id="date-links">
-    <span id="prev-day"><a href="#" id="load-pref-day" class="date-link">Previous Day</a></span> •
-    <span id="right-now"><a href="#" id="load-right-now" class="date-link">Right Now</a></span> •
-    <span id="this-sunset"><a href="#" id="load-sunset" class="date-link">Sunset at <span id="time_of_sunset"></span></a></span> •
-    <span id="next-day"><a href="#" id="load-next-day" class="date-link">Next Day</a></span>
+  <div id="navigation-and-links">
+    <div><input id="date-and-time" /></div>
+    <div id="date-links">
+      <span id="prev-day"><a href="#" id="load-pref-day" class="date-link">Previous Day</a></span> •
+      <span id="right-now"><a href="#" id="load-right-now" class="date-link">Right Now</a></span> •
+      <span id="this-sunset"><a href="#" id="load-sunset" class="date-link">Sunset at <span id="time_of_sunset"></span></a></span> •
+      <span id="next-day"><a href="#" id="load-next-day" class="date-link">Next Day</a></span>
+    </div>
   </div>
   <div id="clock-canvas">
     <div id="clock">
+      <div id="hand-1"></div>
+      <div id="hand-2"></div>
+      <div id="hand-3"></div>
+      <div id="hand-4"></div>
+      <div id="hand-5"></div>
+      <div id="hand-6"></div>
+      <div id="hand-7"></div>
+      <div id="hand-8"></div>
+      <div id="hand-9"></div>
+      <div id="hand-10"></div>
     </div>
-    <div id="moonth-data">
-      <table id="moonth-data-table">
-        <tr>
-          <!-- Sunset at	Sun zodiac	Moon zodiac	Mercury zodiac	Venus zodiac	Mars zodiac	Jupiter zodiac	Saturn zodiac -->
-          <td>Date</td>
-          <td>Time</td>
-          <td>Sun</td>
-          <td>Moon</td>
-          <td>Mercury</td>
-          <td>Venus</td>
-          <td>Mars</td>
-          <td>Jupiter</td>
-          <td>Saturn</td>
-          <td>Uranus</td>
-          <td>Neptune</td>
-          <td>Pluto</td>
-        </tr>
-      </table>
-      <div><a href="#" id="save-moonth-data-row" class="date-link">Save Data To Row</a></div>
-    </div>
-    <div id="debug">
-      <div>Date: <span id="date"></span></div>
-      <div>Current time: <span id="current_time"></span></div>
-      <div>Countdown to Spring Equinox: <span id="aries_relative_to_year"></span></div>
-      <hr />
-      <div>Sun: <span id="sun_debug"></span></div>
-      <div>Sunrise: <span id="sunrise_debug"></span></div>
-      <div>High Noon: <span id="highnoon_debug"></span></div>
-      <div>Sunset: <span id="sunset_debug"></span></div>
-      <hr />
-      <div>Moon: <span id="moon_debug"></span></div>
-      <div>Moon Status: <span id="moon_status_debug"></span></div>
-      <div>Moon Phase: <span id="moon_phase_rough_debug"></span></div>
-      <div>Moon Illumination: <span id="moon_illumination_debug"></span></div>
-      <div>Moon Parallactic Angel: <span id="moon_parallactic_angle_debug"></span></div>
-      <hr />
-      <div>Mercury: <span id="mercury_debug"></span></div>
-      <div>Venus: <span id="venus_debug"></span></div>
-      <div>Mars: <span id="mars_debug"></span></div>
-      <div>Jupiter: <span id="jupiter_debug"></span></div>
-      <div>Saturn: <span id="saturn_debug"></span></div>
-      <div>Uranus: <span id="uranus_debug"></span></div>
-      <div>Neptune: <span id="neptune_debug"></span></div>
-      <div>Pluto: <span id="pluto_debug"></span></div>
-    </div>
+  </div>
+
+  <div id="moonth-data">
+    <table id="moonth-data-table">
+      <tr>
+        <!-- Sunset at	Sun zodiac	Moon zodiac	Mercury zodiac	Venus zodiac	Mars zodiac	Jupiter zodiac	Saturn zodiac -->
+        <td>Date</td>
+        <td>Time</td>
+        <td>Sun</td>
+        <td>Moon</td>
+        <td>Mercury</td>
+        <td>Venus</td>
+        <td>Mars</td>
+        <td>Jupiter</td>
+        <td>Saturn</td>
+        <td>Uranus</td>
+        <td>Neptune</td>
+        <td>Pluto</td>
+      </tr>
+    </table>
+    <div><a href="#" id="save-moonth-data-row" class="date-link">Save Data To Row</a></div>
+  </div>
+  <div id="debug">
+    <div>Date: <span id="date"></span></div>
+    <div>Current time: <span id="current_time"></span></div>
+    <div>Countdown to Spring Equinox: <span id="aries_relative_to_year"></span></div>
+    <hr />
+    <div>Sun: <span id="sun_debug"></span></div>
+    <div>Sunrise: <span id="sunrise_debug"></span></div>
+    <div>High Noon: <span id="highnoon_debug"></span></div>
+    <div>Sunset: <span id="sunset_debug"></span></div>
+    <hr />
+    <div>Moon: <span id="moon_debug"></span></div>
+    <div>Moon Status: <span id="moon_status_debug"></span></div>
+    <div>Moon Phase: <span id="moon_phase_rough_debug"></span></div>
+    <div>Moon Illumination: <span id="moon_illumination_debug"></span></div>
+    <div>Moon Parallactic Angel: <span id="moon_parallactic_angle_debug"></span></div>
+    <hr />
+    <div>Mercury: <span id="mercury_debug"></span></div>
+    <div>Venus: <span id="venus_debug"></span></div>
+    <div>Mars: <span id="mars_debug"></span></div>
+    <div>Jupiter: <span id="jupiter_debug"></span></div>
+    <div>Saturn: <span id="saturn_debug"></span></div>
+    <div>Uranus: <span id="uranus_debug"></span></div>
+    <div>Neptune: <span id="neptune_debug"></span></div>
+    <div>Pluto: <span id="pluto_debug"></span></div>
   </div>
 
 </div>
@@ -279,7 +190,8 @@ max_width: true
 
   // Global variables
   var location_available = null;
-  var debug = true; 
+  var debug = false; 
+  var data_controls = false;
   var clock_width = null;
   var time_input_type = 'auto' // 'manual', 'one-time'
   var current_time = new Date()
@@ -309,11 +221,16 @@ max_width: true
   // Save data to moonth data table row
   document.getElementById('save-moonth-data-row').addEventListener("click", save_moonth_data_row)
   
-
   if (debug) {
     $('#debug').show();
   } else {
     $('#debug').hide();
+  }
+
+  if (data_controls) {
+    $('#moonth-data').show();
+  } else {
+    $('#moonth-data').hide();
   }
 
   //////////
@@ -397,6 +314,7 @@ max_width: true
     
     moment().format("dddd, MMMM Do YYYY, h:mm:ss a"); 
     manual_date_and_time()
+    console.log(new_date)
     event.preventDefault();
   }
   function right_now_link_clicked() {
@@ -413,6 +331,7 @@ max_width: true
     var new_date = new Date(ts) 
     $('#date-and-time').val(new_date)
     manual_date_and_time()
+    console.log(new_date)
     event.preventDefault();
   }
   function next_day_link_clicked() {
@@ -796,8 +715,13 @@ max_width: true
       var relative_to_aries_clockwise = positive_modulo(-planet['fullDegree'], 360)
       var degrees_relative_to_sun_clockwise = positive_modulo(planet['fullDegree'] - sun['fullDegree'], 360)
       var is_visible = false 
+      var is_above_horizon = false
       if (planet_degrees > 270 || planet_degrees < 90) {
-         is_visible = true 
+         is_above_horizon = true
+         // Give 10 extra degrees from the horizon for them to become visible, and at night only
+         if (!sun_is_visible && (planet_degrees > 280 || planet_degrees < 80)) {
+           is_visible = true
+         }   
       }
       var to_plot = {
         'name': planet['name'],
@@ -806,11 +730,295 @@ max_width: true
         'relative_to_sun_clockwise': degrees_relative_to_sun_clockwise,
         'degrees': positive_modulo(planet_degrees, 360),
         'is_visible': is_visible,
+        'is_above_horizon': is_above_horizon,
         'api': planet,
       }
       d['plots'][planet['name'].toLowerCase()] = to_plot
-      $('#' + to_plot['token'] + '_debug').html(convert_clockwise_degrees_to_24h_time(to_plot['degrees']) +"🕰️, "+ Number(to_plot['degrees']).toFixed(2)+"&deg;"+(is_visible ? ", visible" : ''))
+      $('#' + to_plot['token'] + '_debug').html(convert_clockwise_degrees_to_24h_time(to_plot['degrees']) +"🕰️, "+ Number(to_plot['degrees']).toFixed(2)+"&deg;"+(is_above_horizon ? ', above horizon' : '')+(is_visible ? ", visible" : ''))
     }
+
+    // Figure out which concentric circle they need to be plotted on
+    console.log('Figure out which concentric circle they need to be plotted on')
+    var month = d['date'].split('-')[1]
+    d['circle_plot'] = {
+      'sun': null,
+    }
+    // Moon and planets are determined by their phase
+    // In the array: 
+    // moon, relative to sun = ['new', 'full']
+    // planets, furthest distance relative to sun = ['direct', 'retrograde']
+    var month_to_default_sun_circle = {
+      '01': {
+        'sun': -2,
+        'moon': [-6,6],
+        'mercury': [-1,1],
+        'venus': [-2,2],
+        'mars': [-3,3],
+        'jupiter': [-4,4],
+        'saturn': [-5,5],
+        'uranus': [-6,6],
+        'neptune': [-6,6],
+        'pluto': [-7,7],
+      },
+      '02': {
+        'sun': -1,
+        'moon': [-4,4],
+        'mercury': [-1,1],
+        'venus': [-1,1],
+        'mars': [-2,2],
+        'jupiter': [-2,2],
+        'saturn': [-3,3],
+        'uranus': [-4,4],
+        'neptune': [-5,5],
+        'pluto': [-6,6],
+      },
+      '03': {
+        'sun': 0,
+        'moon': [0,0], // eclipse season
+        'mercury': [0,0],
+        'venus': [0,0],
+        'mars': [0,0],
+        'jupiter': [0,0],
+        'saturn': [0,0],
+        'uranus': [0,0],
+        'neptune': [0,0],
+        'pluto': [0,0],
+      },  
+      '04': {
+        'sun': 1,
+        'moon': [4,-4],
+        'mercury': [1,-1],
+        'venus': [1,-1],
+        'mars': [2,-2],
+        'jupiter': [2,-2],
+        'saturn': [3,-3],
+        'uranus': [-4,4],
+        'neptune': [-5,5],
+        'pluto': [-6,6],
+      },
+      '05': {
+        'sun': 2,
+        'moon': [6,-6],
+        'mercury': [1,-1],
+        'venus': [2,-2],
+        'mars': [3,-3],
+        'jupiter': [4,-4],
+        'saturn': [5,-5],
+        'uranus': [6,-6],
+        'neptune': [6,-6],
+        'pluto': [7,-7],
+      },
+      '06': { // summer solstice
+        'sun': 3,
+        'moon': [8,-8],
+        'mercury': [2,-2],
+        'venus': [3,-3],
+        'mars': [4,-4],
+        'jupiter': [5,-5],
+        'saturn': [6,-6],
+        'uranus': [7,-7],
+        'neptune': [8,-8],
+        'pluto': [9,-9],
+      },
+      '07': {
+        'sun': 2,
+        'moon': [6,-6],
+        'mercury': [1,-1],
+        'venus': [2,-2],
+        'mars': [3,-3],
+        'jupiter': [4,-4],
+        'saturn': [5,-5],
+        'uranus': [6,-6],
+        'neptune': [6,-6],
+        'pluto': [7,-7],
+      },
+      '08': {
+        'sun': 1,
+        'moon': [4,-4],
+        'mercury': [1,-1],
+        'venus': [1,-1],
+        'mars': [2,-2],
+        'jupiter': [2,-2],
+        'saturn': [3,-3],
+        'uranus': [4,-4],
+        'neptune': [5,-5],
+        'pluto': [5,-5],
+      },
+      '09': {
+        'sun': 0,
+        'moon': [0,0], // eclipse season
+        'mercury': [0,0],
+        'venus': [0,0],
+        'mars': [0,0],
+        'jupiter': [0,0],
+        'saturn': [0,0],
+        'uranus': [0,0],
+        'neptune': [0,0],
+        'pluto': [0,0],
+      },
+      '10': {
+        'sun': -1,
+        'moon': [-4,4],
+        'mercury': [-1,1],
+        'venus': [-1,1],
+        'mars': [-2,2],
+        'jupiter': [-2,2],
+        'saturn': [-3,3],
+        'uranus': [-4,4],
+        'neptune': [-5,5],
+        'pluto': [-5,5],
+      },
+      '11': {
+        'sun': -2,
+        'moon': [-6,6],
+        'mercury': [-1,1],
+        'venus': [-2,2],
+        'mars': [-3,3],
+        'jupiter': [-4,4],
+        'saturn': [-5,5],
+        'uranus': [-6,6],
+        'neptune': [-6,6],
+        'pluto': [-7,7],
+      },
+      '12': { // winter solstice
+        'sun': -3,
+        'moon': [-8,8],
+        'mercury': [-2,2],
+        'venus': [-3,3],
+        'mars': [-4,4],
+        'jupiter': [-5,5],
+        'saturn': [-6,6],
+        'uranus': [-7,7],
+        'neptune': [-8,8],
+        'pluto': [-9,9],
+      },
+    }
+    // Sun goes somewhere on line -3 to 3.
+    d['circle_plot']['sun'] = month_to_default_sun_circle[month]['sun']
+    console.log("The sun goes on line: " + d['circle_plot']['sun'])
+    $('#sun_debug').html($('#sun_debug').html()+", line "+d['circle_plot']['sun'])
+    var hands = ['sun','moon']
+
+    // The moon can go +8 or -8 relative to sun. Most extreme at summer and winter solstice.
+    var moon_range = month_to_default_sun_circle[month]['moon']
+    // Waxing gibbous (half-full to full)
+    d['moonth_data']['moon_data']['illumination'] = parseInt(d['moonth_data']['moon_data']['illumination'])
+    if (d['moonth_data']['moon_data']['illumination'] > 50) {
+      console.log("Waxing gibbous")
+      d['circle_plot']['moon'] = d['circle_plot']['sun']+Math.round(moon_range[1]*((d['moonth_data']['moon_data']['illumination']-50)/50))
+    // Waxing crescent (new to half-full)
+    } else if (d['moonth_data']['moon_data']['illumination'] > 0) {
+      console.log("Waxing crescent")
+      d['circle_plot']['moon'] = d['circle_plot']['sun']+Math.round(moon_range[0]*((50-d['moonth_data']['moon_data']['illumination'])/50))
+    // Waning crescent (half-full to new)
+    } else if (d['moonth_data']['moon_data']['illumination'] > -50) {
+      console.log("Waning crescent")
+      d['circle_plot']['moon'] = d['circle_plot']['sun']+Math.round(moon_range[0]*((50+d['moonth_data']['moon_data']['illumination'])/50))
+    // Waning gibbous (full to half-full)
+    } else if (d['moonth_data']['moon_data']['illumination'] > -100) {
+      console.log("Waning gibbous")
+      d['circle_plot']['moon'] = d['circle_plot']['sun']+Math.round(moon_range[1]*((-d['moonth_data']['moon_data']['illumination']-50)/50))
+    } else {
+      console.log("MOON OUT OF BOUNDS! "+d['moonth_data']['moon_data']['illumination'])
+    }
+    console.log("The moon goes on line: " + d['circle_plot']['moon'])
+    $('#moon_debug').html($('#moon_debug').html()+", line "+d['circle_plot']['moon'])
+
+    // The INNER planets have increasingly wider ranges as they get further from the sun.
+    for (let planet of ['mercury', 'venus']) {
+      var planet_range = month_to_default_sun_circle[month][planet]
+      var percent_full = 1
+      // Calculate how full the planet is 100% = full, 0% = new
+      // Mercury can be up to 28 degrees away from the sun (half-Mercury)
+      // Venus can be up to 48 degrees away from the sun (half-Venus)
+      if (planet == 'mercury') {
+        var degrees_extended = d['plots'][planet]['relative_to_sun_clockwise']
+        var planet_range_value = d['plots'][planet]['api']['isRetro']=='true' ? planet_range[1] : planet_range[0]
+        if (degrees_extended >= 360-14) {
+          d['circle_plot'][planet] = d['circle_plot']['sun']+Math.round(planet_range_value*(360-degrees_extended)/14)
+        } else if (degrees_extended >= 360-28) {
+          d['circle_plot'][planet] = d['circle_plot']['sun']+Math.round(planet_range_value*(346-degrees_extended)/14)
+        } else if (degrees_extended >= 14) {
+          d['circle_plot'][planet] = d['circle_plot']['sun']+Math.round(planet_range_value*(degrees_extended-14)/14)
+        } else { // degrees_extended >= 0
+          d['circle_plot'][planet] = d['circle_plot']['sun']+Math.round(planet_range_value*degrees_extended/14)
+        }
+       } else if (planet == 'venus') {
+        if (degrees_extended >= 360-24) {
+          d['circle_plot'][planet] = d['circle_plot']['sun']+Math.round(planet_range_value*(360-degrees_extended)/24)
+        } else if (degrees_extended >= 360-28) {
+          d['circle_plot'][planet] = d['circle_plot']['sun']+Math.round(planet_range_value*(336-degrees_extended)/24)
+        } else if (degrees_extended >= 24) {
+          d['circle_plot'][planet] = d['circle_plot']['sun']+Math.round(planet_range_value*(degrees_extended-24)/24)
+        } else { // degrees_extended >= 0
+          d['circle_plot'][planet] = d['circle_plot']['sun']+Math.round(planet_range_value*degrees_extended/24)
+        }
+      }
+
+      // Calculate which line they're on
+      if (d['plots'][planet]['api']['isRetro']=='true') {
+        console.log("The " + planet + " is retro. ")
+        hands.unshift(planet)
+      } else {
+        console.log("The " + planet + " is direct. ")
+        hands.push(planet)
+      }
+      $('#' + planet + '_debug').html($('#' + planet + '_debug').html()+", line "+d['circle_plot'][planet])
+    }
+
+    // The OUTER planets have increasingly wider ranges as they get further from the sun.
+    for (let planet of ['mars', 'jupiter', 'saturn', 'uranus', 'neptune', 'pluto']) {
+      var planet_range = month_to_default_sun_circle[month][planet]
+      var percent_full = 1
+      // Calculate how full the planet is 100% = full, 0% = new
+      // Planets are half-full when they are 90 degrees away from the sun
+      var degrees_extended = d['plots'][planet]['relative_to_sun_clockwise']
+      var planet_range_value = d['plots'][planet]['api']['isRetro']=='true' ? planet_range[1] : planet_range[0]
+      if (degrees_extended >= 360-90) {
+        d['circle_plot'][planet] = d['circle_plot']['sun']+Math.round(planet_range_value*(360-degrees_extended)/90)
+      } else if (degrees_extended >= 360-180) {
+        d['circle_plot'][planet] = d['circle_plot']['sun']+Math.round(planet_range_value*(180-degrees_extended)/90)
+      } else if (degrees_extended >= 90) {
+        d['circle_plot'][planet] = d['circle_plot']['sun']+Math.round(planet_range_value*(degrees_extended-90)/90)
+      } else { // degrees_extended >= 0
+        d['circle_plot'][planet] = d['circle_plot']['sun']+Math.round(planet_range_value*degrees_extended/90)
+      }
+
+      // Calculate which line they're on
+      if (d['plots'][planet]['api']['isRetro']=='true') {
+        console.log("The " + planet + " is retro. ")
+      } else {
+        console.log("The " + planet + " is direct. ")
+      }
+      hands.push(planet)
+      $('#' + planet + '_debug').html($('#' + planet + '_debug').html()+", line "+d['circle_plot'][planet])
+    }
+    var planet_to_image_path = {
+      'sun': 'sun', 'moon': 'moon', 'mercury': 'planet', 'venus': 'planet', 'mars': 'planet', 'jupiter': 'planet', 'saturn': 'planet', 'uranus': 'planet', 'neptune': 'planet', 'pluto': 'planet'
+    }
+    // add the hands in the order they should be drawn
+    var order = 1
+    var zindex = 10
+    for (let planet of hands) {
+      console.log("Adding " + planet + " to the clock")
+      var div_id = '#hand-'+order.toString()
+      $(div_id).attr('v-planet', planet)
+      $(div_id).css('background-image', `url('/assets/images/clock/11/${planet_to_image_path[planet]}/4000_${planet_to_image_path[planet]}_${d['circle_plot'][planet]}.png')`)
+      
+      // console.log("Background image for "+div_id+" set to: "+$(div_id).css('background-image'))
+      
+      // console.log("/assets/images/clock/11/"+planet_to_image_path[planet]+"/4000_"+planet_to_image_path[planet]+"_"+d['circle_plot'][planet]+".png")
+
+      var angle = d['plots'][planet]['degrees']
+      debug ? console.log('ROTATING '+planet+" by "+angle) : null 
+      var rotate_string = "rotate(" + parseInt(angle) + "deg)";
+      $(div_id).css('transform', rotate_string);
+      $(div_id).css('z-index', 0-order);
+  
+      //$('#hand-'+order.toString()).html('&nbsp;');
+      order += 1
+    }
+
     return d
   }
 
