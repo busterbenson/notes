@@ -680,6 +680,14 @@ max_width: true
       sunset: convert_moment_time_string_to_clock_degrees(d['season_data']['sunset_deg']['time_string']),
     }
 
+    // Example: Sun is at 30 degrees, sunrise varies seasonally, sunset is always 90°
+    console.log(`Sun: ${d['plots']['sun']['degrees']}`)
+    console.log(`Sunrise: ${d['moments']['sunrise']['clockwise_degrees']}`)
+    console.log(`Sunset: ${d['moments']['sunset']['clockwise_degrees']}`)
+    const backgroundColor = getBackgroundColor(d['plots']['sun']['degrees'], d['moments']['sunrise']['clockwise_degrees'], d['moments']['sunset']['clockwise_degrees']);
+    console.log(`Background color: ${backgroundColor}`); // Returns a warm tone transitioning towards midday
+    $('body').css('background-color', backgroundColor);
+
     $('#sunrise_debug').html(d['season_data']['sunrise_deg']['time_string'] + "🕰️, " + d['moments']['sunrise']['clockwise_degrees'] + "&deg;")
     $('#highnoon_debug').html(d['season_data']['solar_noon_deg']['time_string'] + "🕰️, " + d['moments']['solar_noon']['clockwise_degrees'] + "&deg;")
     $('#sunset_debug').html(d['season_data']['sunset_deg']['time_string'] + "🕰️, " + d['moments']['sunset']['clockwise_degrees'] + "&deg;")
@@ -1031,6 +1039,84 @@ max_width: true
     $('#moon_illumination_debug').html(d['moonth_data']['moon_data']['illumination']+"%")
     $('#moon_parallactic_angle_debug').html(Number(d['moonth_data']['moon_data']['parallactic_angle']).toFixed(2)+"&deg;")
     return d
+  }
+
+  function getBackgroundColor(sunAngle, sunriseAngle, sunsetAngle) {
+    // Normalize sun angle to a 0-1 scale across the day cycle
+    let normalized = ((sunAngle - sunriseAngle + 360) % 360) / ((sunsetAngle - sunriseAngle + 360) % 360);
+    normalized = Math.max(0, Math.min(1, normalized)); // Clamp between 0 and 1
+
+    console.log(`Normalized angle: ${normalized}`);
+    console.log(`Sun Angle: ${sunAngle}`);
+    console.log(`Sunrise Angle: ${sunriseAngle}`);
+    console.log(`Sunset Angle: ${sunsetAngle}`);
+
+    // Define colors based on sun position
+    const colors = {
+      night: "#112266",     // Deep Blue (Midnight)
+      dawn: "#1C3D88",      // Muted Dark Blue (Twilight)
+      sunrise: "#2244A3",   // Main Blue Tone (Morning Transition)
+      noon: "#4466CC",      // Brighter Blue (Midday)
+      sunset: "#2A50B3",    // Rich Deep Blue (Golden Hour)
+      evening: "#1A3C80",   // Darkened Blue (Early Night)
+      preSunrise: "#C77966", // Muted peach with warmth (Just before Sunrise)
+      postSunrise: "#B87C84", // Soft dusky pink with warmth (Just after Sunrise)
+      preSunset: "#E07A5F", // Deep Orange (Just before Sunset)
+      postSunset: "#D9534F"  // Soft Red (Just after Sunset)
+    };
+
+    let color;
+
+    // Helper function to handle circular angle comparisons
+    function isBetween(angle, start, end) {
+        return (start <= end) ? (angle >= start && angle <= end) : (angle >= start || angle <= end);
+    }
+
+    // Determine background based on time of day
+    //if (isBetween(sunAngle, sunsetAngle, sunriseAngle)) {
+      //console.log("1 - Night");
+      //color = colors.night;
+    //} else 
+    if (isBetween(sunAngle, sunriseAngle - 5, sunriseAngle)) {
+      console.log("2 - Pre-Sunrise Glow");
+      color = interpolateColor(colors.dawn, colors.preSunrise, (sunAngle - (sunriseAngle - 5)) / 5);
+    } else if (isBetween(sunAngle, sunriseAngle, sunriseAngle + 5)) {
+      console.log("3 - Post-Sunrise Warmth");
+      color = interpolateColor(colors.preSunrise, colors.postSunrise, (sunAngle - sunriseAngle) / 5);
+    } else if (isBetween(sunAngle, sunriseAngle + 5, 45)) {
+      console.log("4 - Morning");
+      color = interpolateColor(colors.sunrise, colors.noon, (sunAngle - (sunriseAngle + 5)) / (45 - (sunriseAngle + 5)));
+      } else if (isBetween(sunAngle, sunsetAngle - 5, sunsetAngle)) {
+      console.log("6 - Pre-Sunset Glow");
+      color = interpolateColor(colors.sunset, colors.preSunset, (sunAngle - (sunsetAngle - 5)) / 5);
+    } else if (isBetween(sunAngle, 45, 90)) {
+      console.log("5 - Midday to Sunset");
+      color = interpolateColor(colors.noon, colors.sunset, (sunAngle - 45) / (90 - 45));
+    } else if (isBetween(sunAngle, sunsetAngle, sunsetAngle + 5)) {
+      console.log("7 - Post-Sunset Warmth");
+      color = interpolateColor(colors.preSunset, colors.postSunset, (sunAngle - sunsetAngle) / 5);
+    } else if (isBetween(sunAngle, sunsetAngle + 5, sunriseAngle)) {
+      console.log("8 - Night");
+      color = colors.night;
+    } else {
+      console.log("9 - Fallback Night");
+      color = colors.night;
+    }
+
+    return color;
+  }
+
+  // Function to smoothly blend two colors based on a ratio (0-1)
+  function interpolateColor(color1, color2, factor) {
+    const hex = (c) => parseInt(c, 16);
+    const r1 = hex(color1.slice(1, 3)), g1 = hex(color1.slice(3, 5)), b1 = hex(color1.slice(5, 7));
+    const r2 = hex(color2.slice(1, 3)), g2 = hex(color2.slice(3, 5)), b2 = hex(color2.slice(5, 7));
+    
+    const r = Math.round(r1 + (r2 - r1) * factor);
+    const g = Math.round(g1 + (g2 - g1) * factor);
+    const b = Math.round(b1 + (b2 - b1) * factor);
+
+    return `rgb(${r}, ${g}, ${b})`;
   }
 
   $(document).ready(function () {
