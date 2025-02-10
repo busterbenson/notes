@@ -97,6 +97,18 @@ max_width: true
   #moonth-data {
     padding-top: 50px;
   }
+  #clock-preferences {
+    margin-top: 50px;
+  }
+  .show-hand {
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+    box-sizing: border-box;
+  }
+  .hidden {
+    display: none;
+  }
 </style>
 
 <div id="quirky-clock">
@@ -108,8 +120,10 @@ max_width: true
     <div><input id="date-and-time" /></div>
     <div id="date-links">
       <span id="prev-day"><a href="#" id="load-pref-day" class="date-link">Previous Day</a></span> •
+      <span id="prev-hour"><a href="#" id="load-pref-hour" class="date-link">Previous Hour</a></span> •
       <span id="right-now"><a href="#" id="load-right-now" class="date-link">Right Now</a></span> •
       <span id="this-sunset"><a href="#" id="load-sunset" class="date-link">Sunset at <span id="time_of_sunset"></span></a></span> •
+      <span id="next-hour"><a href="#" id="load-next-hour" class="date-link">Next Hour</a></span> •
       <span id="next-day"><a href="#" id="load-next-day" class="date-link">Next Day</a></span>
     </div>
   </div>
@@ -126,6 +140,18 @@ max_width: true
       <div id="hand-9"></div>
       <div id="hand-10"></div>
     </div>
+  </div>
+  <div id="clock-preferences">
+    <div class="show-hand"><input type="checkbox" id="show-sun" name="sun" checked> Show Sun</div>
+    <div class="show-hand"><input type="checkbox" id="show-moon" name="moon" checked> Show Moon</div>
+    <div class="show-hand"><input type="checkbox" id="show-mercury" name="mercury" checked> Show Mercury</div>
+    <div class="show-hand"><input type="checkbox" id="show-venus" name="venus" checked> Show Venus</div>
+    <div class="show-hand"><input type="checkbox" id="show-mars" name="mars" checked> Show Mars</div>
+    <div class="show-hand"><input type="checkbox" id="show-jupiter" name="jupiter" checked> Show Jupiter</div>
+    <div class="show-hand"><input type="checkbox" id="show-saturn" name="saturn" checked> Show Saturn</div>
+    <div class="show-hand"><input type="checkbox" id="show-uranus" name="uranus" checked> Show Uranus</div>
+    <div class="show-hand"><input type="checkbox" id="show-neptune" name="neptune" checked> Show Neptune</div>
+    <div class="show-hand"><input type="checkbox" id="show-pluto" name="pluto" checked> Show Pluto</div>
   </div>
 
   <div id="moonth-data">
@@ -214,10 +240,24 @@ max_width: true
   });
 
   // Re-calculate the clock with the given date and time
-  document.getElementById('prev-day').addEventListener("click",prev_day_link_clicked)
+  document.getElementById('prev-day').addEventListener("click", prev_day_link_clicked)
+  document.getElementById('prev-hour').addEventListener("click",prev_hour_link_clicked)
   document.getElementById('right-now').addEventListener("click", right_now_link_clicked)
   document.getElementById('this-sunset').addEventListener("click", sunset_link_clicked)
+  document.getElementById('next-hour').addEventListener("click", next_hour_link_clicked)
   document.getElementById('next-day').addEventListener("click", next_day_link_clicked)
+
+  // Event listeners for showing hands
+  document.getElementById('show-sun').addEventListener("change", show_hide_hand.bind(null, 'sun'))
+  document.getElementById('show-moon').addEventListener("change", show_hide_hand.bind(null, 'moon'))
+  document.getElementById('show-mercury').addEventListener("change", show_hide_hand.bind(null, 'mercury'))
+  document.getElementById('show-venus').addEventListener("change", show_hide_hand.bind(null, 'venus'))
+  document.getElementById('show-mars').addEventListener("change", show_hide_hand.bind(null, 'mars'))
+  document.getElementById('show-jupiter').addEventListener("change", show_hide_hand.bind(null, 'jupiter'))
+  document.getElementById('show-saturn').addEventListener("change", show_hide_hand.bind(null, 'saturn'))
+  document.getElementById('show-uranus').addEventListener("change", show_hide_hand.bind(null, 'uranus'))
+  document.getElementById('show-neptune').addEventListener("change", show_hide_hand.bind(null, 'neptune'))
+  document.getElementById('show-pluto').addEventListener("change", show_hide_hand.bind(null, 'pluto'))
 
   // Save data to moonth data table row
   document.getElementById('save-moonth-data-row').addEventListener("click", save_moonth_data_row)
@@ -311,13 +351,26 @@ max_width: true
     new_date.setDate(new_date.getDate() - 1)
 
     $('#date-and-time').val(new_date)
-    //$('#date-and-time').val(moment(new_date).format("ddd MMMM Do YYYY, HH:mm:ss (z)"))
     
     moment().format("dddd, MMMM Do YYYY, h:mm:ss a"); 
     manual_date_and_time()
     console.log(new_date)
     event.preventDefault();
   }
+  function prev_hour_link_clicked() {
+    console.log('previous hour link clicked')
+    var datetime = $('#date-and-time')
+    var ts = Date.parse($('#date-and-time').val())
+    var new_date = new Date(ts)
+    new_date.setHours(new_date.getHours() - 1)
+
+    $('#date-and-time').val(new_date)
+    
+    moment().format("dddd, MMMM Do YYYY, h:mm:ss a"); 
+    manual_date_and_time()
+    console.log(new_date)
+    event.preventDefault();
+  }  
   function right_now_link_clicked() {
     console.log('right now link clicked')
     $('#date-and-time').val("")
@@ -330,6 +383,17 @@ max_width: true
     var ts = Date.parse(d['season_data']['sunset_datetime'])
     console.log("sunset time: " + String(ts))
     var new_date = new Date(ts) 
+    $('#date-and-time').val(new_date)
+    manual_date_and_time()
+    console.log(new_date)
+    event.preventDefault();
+  }
+  function next_hour_link_clicked() {
+    console.log('next hour link clicked')
+    var datetime = $('#date-and-time')
+    var ts = Date.parse($('#date-and-time').val())
+    var new_date = new Date(ts) 
+    new_date.setHours(new_date.getHours() + 1)
     $('#date-and-time').val(new_date)
     manual_date_and_time()
     console.log(new_date)
@@ -386,6 +450,16 @@ max_width: true
     pluto.innerHTML = d['plots']['pluto']['degrees']
     row.appendChild(pluto)
     document.getElementById('moonth-data-table').appendChild(row)
+  }
+  function show_hide_hand(hand) {
+    console.log('show/hide hand: ' + hand)
+    var hand_element = document.querySelector("[v-planet='" + hand + "']");
+    if ($(hand_element).hasClass('hidden')) {
+      $(hand_element).removeClass('hidden')
+    } else {
+      $(hand_element).addClass('hidden')
+    }  
+    //$('#' + hand + '-hand').toggleClass('hidden')
   }
 
   //////////
