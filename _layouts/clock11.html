@@ -26,10 +26,13 @@ max_width: true
   a#get-location-link {
     color: #fff;
   }
-  #date-links {
+  #hidden-date-links, #visible-date-links {
     font-size: 12px;
     margin-bottom: 2em;
     padding: 5px 0;
+  }
+  #hidden-date-links {
+    display: none;
   }
   a.date-link {
     color: #ddd;
@@ -118,7 +121,11 @@ max_width: true
   <div id="location-not-available"></div>
   <div id="navigation-and-links">
     <div><input id="date-and-time" /></div>
-    <div id="date-links">
+    <div id="hidden-date-links">
+      <span><a href="#" id="show-controls" class="date-link">Show controls</a></span>
+    </div>
+    <div id="visible-date-links">
+      <span><a href="#" id="hide-controls" class="date-link">Hide</a></span> •
       <span id="prev-day"><a href="#" id="load-pref-day" class="date-link">Previous Day</a></span> •
       <span id="prev-hour"><a href="#" id="load-pref-hour" class="date-link">Previous Hour</a></span> •
       <span id="right-now"><a href="#" id="load-right-now" class="date-link">Right Now</a></span> •
@@ -247,6 +254,10 @@ max_width: true
   document.getElementById('next-hour').addEventListener("click", next_hour_link_clicked)
   document.getElementById('next-day').addEventListener("click", next_day_link_clicked)
 
+  // Event listeners for showing controls
+  document.getElementById('show-controls').addEventListener("click", show_controls)
+  document.getElementById('hide-controls').addEventListener("click", hide_controls)
+
   // Event listeners for showing hands
   document.getElementById('show-sun').addEventListener("change", show_hide_hand.bind(null, 'sun'))
   document.getElementById('show-moon').addEventListener("change", show_hide_hand.bind(null, 'moon'))
@@ -343,6 +354,20 @@ max_width: true
 
   //////////
   // EVENTS
+  function show_controls() {
+    console.log('show controls')
+    $('#hidden-date-links').hide();
+    $('#visible-date-links').show();
+    $('#clock-preferences').show();
+    event.preventDefault();
+  }
+  function hide_controls() {
+    console.log('hide controls')
+    $('#hidden-date-links').show();
+    $('#visible-date-links').hide();
+    $('#clock-preferences').hide();
+    event.preventDefault();
+  }
   function prev_day_link_clicked() {
     console.log('previous day link clicked')
     var datetime = $('#date-and-time')
