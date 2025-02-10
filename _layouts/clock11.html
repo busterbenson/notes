@@ -1003,7 +1003,7 @@ max_width: true
       $('#' + planet + '_debug').html($('#' + planet + '_debug').html()+", line "+d['circle_plot'][planet])
     }
     var planet_to_image_path = {
-      'sun': 'sun', 'moon': 'moon', 'mercury': 'planet', 'venus': 'planet', 'mars': 'planet', 'jupiter': 'planet', 'saturn': 'planet', 'uranus': 'planet', 'neptune': 'planet', 'pluto': 'planet'
+      'sun': 'v2/sun/sun', 'moon': 'v2/moon/moon', 'mercury': 'v2/planets/planets', 'venus': 'v2/planets/planets', 'mars': 'v2/planets/planets', 'jupiter': 'v2/planets/planets', 'saturn': 'v2/planets/planets', 'uranus': 'v2/planets/planets', 'neptune': 'v2/planets/planets', 'pluto': 'v2/planets/planets'
     }
     // add the hands in the order they should be drawn
     var order = 1
@@ -1012,7 +1012,7 @@ max_width: true
       console.log("Adding " + planet + " to the clock")
       var div_id = '#hand-'+order.toString()
       $(div_id).attr('v-planet', planet)
-      $(div_id).css('background-image', `url('/assets/images/clock/11/${planet_to_image_path[planet]}/4000_${planet_to_image_path[planet]}_${d['circle_plot'][planet]}.png')`)
+      $(div_id).css('background-image', `url('/assets/images/clock/11/${planet_to_image_path[planet]}_${d['circle_plot'][planet]}.png')`)
       
       // console.log("Background image for "+div_id+" set to: "+$(div_id).css('background-image'))
       
