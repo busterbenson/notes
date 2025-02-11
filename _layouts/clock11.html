@@ -224,7 +224,7 @@ max_width: true
 
   // Global variables
   var location_available = null;
-  var debug = false; 
+  var debug = true; 
   var data_controls = false;
   var clock_width = null;
   var time_input_type = 'auto' // 'manual', 'one-time'
@@ -1116,7 +1116,7 @@ max_width: true
       $('#' + planet + '_debug').html($('#' + planet + '_debug').html()+", line "+d['circle_plot'][planet])
     }
     var planet_to_image_path = {
-      'sun': 'v2/sun/sun', 'moon': 'v2/moon/moon', 'mercury': 'v2/planets/planets', 'venus': 'v2/planets/planets', 'mars': 'v2/planets/planets', 'jupiter': 'v2/planets/planets', 'saturn': 'v2/planets/planets', 'uranus': 'v2/planets/planets', 'neptune': 'v2/planets/planets', 'pluto': 'v2/planets/planets'
+      'sun': 'v2/sun/sun', 'moon': 'v2/moon/full/moon', 'mercury': 'v2/planets/planets', 'venus': 'v2/planets/planets', 'mars': 'v2/planets/planets', 'jupiter': 'v2/planets/planets', 'saturn': 'v2/planets/planets', 'uranus': 'v2/planets/planets', 'neptune': 'v2/planets/planets', 'pluto': 'v2/planets/planets'
     }
     // add the hands in the order they should be drawn
     var order = 1
