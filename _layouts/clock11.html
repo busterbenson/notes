@@ -224,7 +224,7 @@ max_width: true
 
   // Global variables
   var location_available = null;
-  var debug = false; 
+  var debug = true; 
   var data_controls = false;
   var clock_width = null;
   var time_input_type = 'auto' // 'manual', 'one-time'
@@ -1019,7 +1019,7 @@ max_width: true
     d['circle_plot']['sun'] = month_to_default_sun_circle[month]['sun']
     // console.log("The sun goes on line: " + d['circle_plot']['sun'])
     $('#sun_debug').html($('#sun_debug').html()+", line "+d['circle_plot']['sun'])
-    var hands = ['sun','moon']
+    var hands = ['moon', 'sun']
 
     // The moon can go +8 or -8 relative to sun. Most extreme at summer and winter solstice.
     var moon_range = month_to_default_sun_circle[month]['moon']
@@ -1080,7 +1080,7 @@ max_width: true
       // Calculate which line they're on
       if (d['plots'][planet]['api']['isRetro']=='true') {
         // console.log("The " + planet + " is retro. ")
-        hands.unshift(planet)
+        hands.splice(1, 0, planet);
       } else {
         // console.log("The " + planet + " is direct. ")
         hands.push(planet)
