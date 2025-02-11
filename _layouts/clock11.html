@@ -1118,13 +1118,22 @@ max_width: true
     var planet_to_image_path = {
       'sun': 'v2/sun/sun', 'moon': 'v2/moon/full/moon', 'mercury': 'v2/planets/planets', 'venus': 'v2/planets/planets', 'mars': 'v2/planets/planets', 'jupiter': 'v2/planets/planets', 'saturn': 'v2/planets/planets', 'uranus': 'v2/planets/planets', 'neptune': 'v2/planets/planets', 'pluto': 'v2/planets/planets'
     }
+    var moon_to_image_path = {
+      'NEW_MOON': 'v2/moon/new/moon', 'WAXING_CRESCENT': 'v2/moon/waxing_crescent/moon', 'FIRST_QUARTER': 'v2/moon/first_quarter/moon', 'WAXING_GIBBOUS': 'v2/moon/waxing_gibbous/moon', 'FULL_MOON': 'v2/moon/full/moon', 'WANING_GIBBOUS': 'v2/moon/waning_gibbous/moon', 'LAST_QUARTER': 'v2/moon/third_quarter/moon', 'WANING_CRESCENT': 'v2/moon/waning_crescent/moon'
+    }
     // add the hands in the order they should be drawn
     var order = 1
     var zindex = 10
     for (let planet of hands) {
       var div_id = '#hand-'+order.toString()
       $(div_id).attr('v-planet', planet)
-      $(div_id).css('background-image', `url('/assets/images/clock/11/${planet_to_image_path[planet]}_${d['circle_plot'][planet]}.png')`)
+      if (planet == 'moon') {
+        var phase = d['moonth_data']['moon_data']['phase_rough']  
+        $(div_id).css('background-image', `url('/assets/images/clock/11/${moon_to_image_path[phase]}_${d['circle_plot'][planet]}.png')`)
+      
+      } else {
+        $(div_id).css('background-image', `url('/assets/images/clock/11/${planet_to_image_path[planet]}_${d['circle_plot'][planet]}.png')`)
+      }
       
       // console.log("Background image for "+div_id+" set to: "+$(div_id).css('background-image'))
       
