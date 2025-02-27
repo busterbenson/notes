@@ -84,7 +84,7 @@ max_width: true
     z-index: 1;
   }
   #hand-1, #hand-2, #hand-3, #hand-4, #hand-5, #hand-6, #hand-7, #hand-8, #hand-9, #hand-10,
-  #hand-sunrise, #hand-sunset {
+  #hand-sunrise, #hand-sunset, #hand-constellations {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -149,6 +149,7 @@ max_width: true
 
       <div id="hand-sunrise"></div>
       <div id="hand-sunset"></div>
+      <div id="hand-constellations"></div>
 
     </div>
   </div>
@@ -784,6 +785,13 @@ max_width: true
       'degrees': positive_modulo(d['plot_offset'], 360),
       'api': sun,
     }
+    d['plots']['constellations'] = {
+      'name': 'Constellations',
+      'token': 'constellations',
+      'relative_to_aries_clockwise': 0,
+      'relative_to_sun_clockwise': -d['plots']['sun']['relative_to_aries_clockwise'],
+      'degrees': positive_modulo(-d['plots']['sun']['degrees']+d['plot_offset'], 360)
+    }
     return d
   }
 
@@ -800,15 +808,8 @@ max_width: true
 
     // Calculate how to balance sunrise and sunset on each side of the clock.
     var sunrise_sunset_offset = (90 - (360-d['moments']['sunrise']['clockwise_degrees']))/2
-    // console.log('sunrise_sunset_offset: '+sunrise_sunset_offset)
-    // console.log('new sunrise: '+(d['moments']['sunrise']['clockwise_degrees']-sunrise_sunset_offset))
-    // console.log('new sunset: '+(d['moments']['sunset']['clockwise_degrees']-sunrise_sunset_offset))
     d['moments']['sunrise']['clockwise_degrees'] = d['moments']['sunrise']['clockwise_degrees']-sunrise_sunset_offset
     d['moments']['sunset']['clockwise_degrees'] = d['moments']['sunset']['clockwise_degrees']-sunrise_sunset_offset
-    // console.log('old plot_offset: ')
-    // console.log(d['plot_offset'])
-    // console.log('new plot_offset: ')
-    // console.log(d['plot_offset']-sunrise_sunset_offset)
 
     // Shift the plot offset to balance the sunrise and sunset  
     d['plot_offset'] = d['plot_offset']-sunrise_sunset_offset
@@ -1142,12 +1143,18 @@ max_width: true
     $(sunrise_div_id).css('transform', rotate_string);
     $(sunrise_div_id).css('z-index',0);
 
-
     var sunset_div_id = '#hand-sunset'
     $(sunset_div_id).css('background-image', `url('/assets/images/clock/11/v2/sun/sunrise.png')`)
     var rotate_string = "rotate(" + parseInt(sunset_degrees) + "deg)";
     $(sunset_div_id).css('transform', rotate_string);
     $(sunset_div_id).css('z-index',0);
+
+    var constellations_div_id = '#hand-constellations'
+    $(constellations_div_id).css('background-image', `url('/assets/images/clock/11/v2/constellations.png')`)
+    var rotate_string = "rotate(" + parseInt(d['plots']['constellations']['degrees']) + "deg)";
+    $(constellations_div_id).css('transform', rotate_string);
+    $(constellations_div_id).css('z-index',-100);
+    $(constellations_div_id).css('opacity',0.8);
 
     var order = 1
     var zindex = 10
