@@ -1,0 +1,1256 @@
+---
+title: Quirky Clock
+layout: fullscreen
+max_width: true
+---
+
+<style>
+  * {
+    background: transparent;
+  }
+
+  body {
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    font-family: Helvetica, sans-serif;
+    background-color: #ddd;
+    //background-color: #2244a3;
+    color: #fff;
+  }
+
+  #fullscreen {
+    margin: 37px !important;
+  }
+
+  a#get-location-link {
+    color: #fff;
+  }
+  #hidden-date-links, #visible-date-links {
+    font-size: 12px;
+    margin-bottom: 2em;
+    padding: 5px 0;
+  }
+  #hidden-date-links {
+    display: none;
+  }
+  a.date-link {
+    color: #ddd;
+  }
+  input#date-and-time {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    color: #fff;
+    border: 0 solid #000;
+    border-bottom: 1px solid #fff;
+  }
+  #debug {
+    margin-top: 2em;
+  }
+  #moonth-data-table td {
+    border: 1px solid #fff;
+    padding: 5px;
+    font-size: 12px;
+  }
+  #save-moonth-data-row {
+    font-size: 12px;
+    padding-top: 3px;
+  }
+  #navigation-and-links, a {
+    margin-top: 1em;
+    z-index: 100;
+  }
+  #clock-canvas {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 2000px;
+    max-height: 2000px;
+    min-width: 100px;
+    min-height: 100px;
+    padding: 0;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+  }
+  #clock {
+    position: relative;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    max-width: 2000px;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+  }
+  #hand-1, #hand-2, #hand-3, #hand-4, #hand-5, #hand-6, #hand-7, #hand-8, #hand-9, #hand-10 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 2000px;
+    max-height: 2000px;
+    padding: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    pointer-events: none;
+  }
+  #moonth-data {
+    padding-top: 50px;
+  }
+  #clock-preferences {
+    margin-top: 50px;
+  }
+  .show-hand {
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+    box-sizing: border-box;
+  }
+  .hidden {
+    display: none;
+  }
+</style>
+
+<div id="quirky-clock">
+  <div id="location-status">
+    Click to <a href="#" id="get-location-link">load 🌞 and 🌛 and ✨ data from the universe</a>. 
+  </div>
+  <div id="location-not-available"></div>
+  <div id="navigation-and-links">
+    <div><input id="date-and-time" /></div>
+    <div id="hidden-date-links">
+      <span><a href="#" id="show-controls" class="date-link">Show controls</a></span>
+    </div>
+    <div id="visible-date-links">
+      <span><a href="#" id="hide-controls" class="date-link">Hide</a></span> •
+      <span id="prev-day"><a href="#" id="load-pref-day" class="date-link">Previous Day</a></span> •
+      <span id="prev-hour"><a href="#" id="load-pref-hour" class="date-link">Previous Hour</a></span> •
+      <span id="right-now"><a href="#" id="load-right-now" class="date-link">Right Now</a></span> •
+      <span id="this-sunset"><a href="#" id="load-sunset" class="date-link">Sunset at <span id="time_of_sunset"></span></a></span> •
+      <span id="next-hour"><a href="#" id="load-next-hour" class="date-link">Next Hour</a></span> •
+      <span id="next-day"><a href="#" id="load-next-day" class="date-link">Next Day</a></span>
+    </div>
+  </div>
+  <div id="clock-canvas">
+    <div id="clock">
+      <div id="hand-1"></div>
+      <div id="hand-2"></div>
+      <div id="hand-3"></div>
+      <div id="hand-4"></div>
+      <div id="hand-5"></div>
+      <div id="hand-6"></div>
+      <div id="hand-7"></div>
+      <div id="hand-8"></div>
+      <div id="hand-9"></div>
+      <div id="hand-10"></div>
+    </div>
+  </div>
+  <div id="clock-preferences">
+    <div class="show-hand"><input type="checkbox" id="show-sun" name="sun" checked> Show Sun</div>
+    <div class="show-hand"><input type="checkbox" id="show-moon" name="moon" checked> Show Moon</div>
+    <div class="show-hand"><input type="checkbox" id="show-mercury" name="mercury" checked> Show Mercury</div>
+    <div class="show-hand"><input type="checkbox" id="show-venus" name="venus" checked> Show Venus</div>
+    <div class="show-hand"><input type="checkbox" id="show-mars" name="mars" checked> Show Mars</div>
+    <div class="show-hand"><input type="checkbox" id="show-jupiter" name="jupiter" checked> Show Jupiter</div>
+    <div class="show-hand"><input type="checkbox" id="show-saturn" name="saturn" checked> Show Saturn</div>
+    <div class="show-hand"><input type="checkbox" id="show-uranus" name="uranus" checked> Show Uranus</div>
+    <div class="show-hand"><input type="checkbox" id="show-neptune" name="neptune" checked> Show Neptune</div>
+    <div class="show-hand"><input type="checkbox" id="show-pluto" name="pluto" checked> Show Pluto</div>
+  </div>
+
+  <div id="moonth-data">
+    <table id="moonth-data-table">
+      <tr>
+        <!-- Sunset at	Sun zodiac	Moon zodiac	Mercury zodiac	Venus zodiac	Mars zodiac	Jupiter zodiac	Saturn zodiac -->
+        <td>Date</td>
+        <td>Time</td>
+        <td>Sun</td>
+        <td>Moon</td>
+        <td>Mercury</td>
+        <td>Venus</td>
+        <td>Mars</td>
+        <td>Jupiter</td>
+        <td>Saturn</td>
+        <td>Uranus</td>
+        <td>Neptune</td>
+        <td>Pluto</td>
+      </tr>
+    </table>
+    <div><a href="#" id="save-moonth-data-row" class="date-link">Save Data To Row</a></div>
+  </div>
+  <div id="debug">
+    <div>Date: <span id="date"></span></div>
+    <div>Current time: <span id="current_time"></span></div>
+    <div>Countdown to Spring Equinox: <span id="aries_relative_to_year"></span></div>
+    <hr />
+    <div>Sun: <span id="sun_debug"></span></div>
+    <div>Sunrise: <span id="sunrise_debug"></span></div>
+    <div>High Noon: <span id="highnoon_debug"></span></div>
+    <div>Sunset: <span id="sunset_debug"></span></div>
+    <hr />
+    <div>Moon: <span id="moon_debug"></span></div>
+    <div>Moon Status: <span id="moon_status_debug"></span></div>
+    <div>Moon Phase: <span id="moon_phase_rough_debug"></span></div>
+    <div>Moon Illumination: <span id="moon_illumination_debug"></span></div>
+    <div>Moon Parallactic Angel: <span id="moon_parallactic_angle_debug"></span></div>
+    <hr />
+    <div>Mercury: <span id="mercury_debug"></span></div>
+    <div>Venus: <span id="venus_debug"></span></div>
+    <div>Mars: <span id="mars_debug"></span></div>
+    <div>Jupiter: <span id="jupiter_debug"></span></div>
+    <div>Saturn: <span id="saturn_debug"></span></div>
+    <div>Uranus: <span id="uranus_debug"></span></div>
+    <div>Neptune: <span id="neptune_debug"></span></div>
+    <div>Pluto: <span id="pluto_debug"></span></div>
+  </div>
+
+</div>
+
+<script type="text/javascript">
+
+  // 1. Get the time of sunset and the degrees relative to aries(clockwise) and the day length. What can I do with these three thing ? I can get the offset for the sun's location at sunset in order to pin it to 90 degrees (clockwise). That also determines the season / the zodiac.
+  // - get_seasonal_data (d['season_data']['sunset_time']) # not yet relative to current sun location
+  // If I get the sun's location relative to Aries at sunset time, then I know when in the year it is.
+
+  // 2. Get the current time and map it to the clock by converting the time of sunset to the current time, where 360 degrees = 24 hours.Or should it be slightly more ? How would this work around midnight ? What would shift ? At midnight, the time of sunset would shift(maybe a minute) and so the sun might move backwards a degree.Is that possible ? Because when days are getting longer.I guess technically I could make 360 degrees equal the exact amount of time until the next sunset.That could be improved later.
+  // - current_time_degrees_relative_to_sunset = the number of degrees that the sun is away from sunset, and the amount that all other objects should be shifted by, relative to the sun's current offset and planet's position relative to Aries.
+
+  // 3. Place the sun according to time, and figure out what degree that corresponds to.
+
+  // 4. Then map the rest of the moon and planets relative to the sun based on their position relative to Aries.
+
+  // Global variables
+  var location_available = null;
+  var debug = false; 
+  var data_controls = false;
+  var clock_width = null;
+  var time_input_type = 'auto' // 'manual', 'one-time'
+  var current_time = new Date()
+  var d = {}
+
+  // A way to manually check location
+  var get_location_button = document.getElementById('get-location-link');
+  get_location_button.onclick = update_clock;
+
+  // DYNAMIC LINKS
+  // Re-calculate the clock with the given date and time
+  var date_and_time_button = document.getElementById('date-and-time');
+  date_and_time_button.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      // console.log("Manual time!");
+      manual_date_and_time()
+      event.preventDefault();
+    }
+  });
+
+  // Re-calculate the clock with the given date and time
+  document.getElementById('prev-day').addEventListener("click", prev_day_link_clicked)
+  document.getElementById('prev-hour').addEventListener("click",prev_hour_link_clicked)
+  document.getElementById('right-now').addEventListener("click", right_now_link_clicked)
+  document.getElementById('this-sunset').addEventListener("click", sunset_link_clicked)
+  document.getElementById('next-hour').addEventListener("click", next_hour_link_clicked)
+  document.getElementById('next-day').addEventListener("click", next_day_link_clicked)
+
+  // Event listeners for showing controls
+  document.getElementById('show-controls').addEventListener("click", show_controls)
+  document.getElementById('hide-controls').addEventListener("click", hide_controls)
+
+  // Event listeners for showing hands
+  document.getElementById('show-sun').addEventListener("change", show_hide_hand.bind(null, 'sun'))
+  document.getElementById('show-moon').addEventListener("change", show_hide_hand.bind(null, 'moon'))
+  document.getElementById('show-mercury').addEventListener("change", show_hide_hand.bind(null, 'mercury'))
+  document.getElementById('show-venus').addEventListener("change", show_hide_hand.bind(null, 'venus'))
+  document.getElementById('show-mars').addEventListener("change", show_hide_hand.bind(null, 'mars'))
+  document.getElementById('show-jupiter').addEventListener("change", show_hide_hand.bind(null, 'jupiter'))
+  document.getElementById('show-saturn').addEventListener("change", show_hide_hand.bind(null, 'saturn'))
+  document.getElementById('show-uranus').addEventListener("change", show_hide_hand.bind(null, 'uranus'))
+  document.getElementById('show-neptune').addEventListener("change", show_hide_hand.bind(null, 'neptune'))
+  document.getElementById('show-pluto').addEventListener("change", show_hide_hand.bind(null, 'pluto'))
+
+  // Save data to moonth data table row
+  document.getElementById('save-moonth-data-row').addEventListener("click", save_moonth_data_row)
+  
+  if (debug) {
+    $('#debug').show();
+  } else {
+    $('#debug').hide();
+  }
+
+  if (data_controls) {
+    $('#moonth-data').show();
+  } else {
+    $('#moonth-data').hide();
+  }
+
+  //////////
+  // HELPERS
+
+  // Pad hour, minute, and seconds numbers
+  function format_time(number) {
+    return number < 10 ? '0' + number : number;
+  }
+
+  // Scales the clock to be a square based on the width of the clock
+  function scale_the_clock() {
+    clock_width = $('#clock').width();
+    $("#clock").css('height', clock_width);
+  }
+
+  // 
+  function convert_24h_time_to_clockwise_degrees_hash(time_string) {
+    var time_bits = time_string.split(':');
+    var hour = parseInt(time_bits[0]);
+    var minute = parseInt(time_bits[1]);
+    clockwise_degrees = (hour * 15) + (minute / 4)
+    return {
+      time_string: time_string,
+      clockwise_degrees: positive_modulo(clockwise_degrees, 360)
+    }
+  }
+
+  function convert_clockwise_degrees_to_24h_time(degrees) {
+    var hour = Math.floor(degrees / 15);
+    var minute = Number((degrees % 15) * 4).toFixed(0);
+    return format_time(hour) + ':' + format_time(minute);
+  }
+
+  // Takes api object from astrologyapi.com and plots it to clock
+  function convert_fulldegrees_to_clockwise_offset_to_sunset(planet, d) {
+    var clockwise_degrees = positive_modulo(-planet['fullDegree'], 360)
+    var sunset_offset = d['season_data']['sun_offset_to_pin_90_deg']
+    return {
+      'full_degree_counter_clockwise': planet['fullDegree'],
+      'full_degree_clockwise': positive_modulo(-planet['fullDegree'],360),
+      'relative_to_aries': clockwise_degrees,
+      'sunset_offset': sunset_offset,
+      'relative_to_sunset': positive_modulo((clockwise_degrees + sunset_offset), 360)
+    }
+  }
+
+  // Take a time, like sunset, or sunrise, and plot it on the clock relative to sunset
+  function convert_moment_time_string_to_clock_degrees(moment_time_string) {
+    // Sunset to degrees relative to midnight
+    if (!d['season_data']['midnight_degrees']) {
+      var sunset_time_bits = d['season_data']['sunset_deg']['time_string'].split(':')
+      // This calculates how many degrees to offset everything to make sunset 90°
+      d['season_data']['midnight_degrees'] = positive_modulo(90 - ((sunset_time_bits[0] * 15) + (sunset_time_bits[1] * 0.25)), 360)
+    } 
+
+    // Midnight Degrees=90+(7×15)=90+105=195 Degrees.
+    var moment_time_bits = moment_time_string.split(':')
+    var moment_degrees = positive_modulo(d['season_data']['midnight_degrees'] + (moment_time_bits[0] * 15) + (moment_time_bits[1] * 0.25),360)
+
+    return {
+      original_time_string: moment_time_string,
+      clockwise_degrees: moment_degrees,
+    }
+  }
+
+  function positive_modulo(num, mod) {
+    return ((num % mod) + mod) % mod
+  }
+
+  //////////
+  // EVENTS
+  function show_controls() {
+    // console.log('show controls')
+    $('#hidden-date-links').hide();
+    $('#visible-date-links').show();
+    $('#clock-preferences').show();
+    event.preventDefault();
+  }
+  function hide_controls() {
+    // console.log('hide controls')
+    $('#hidden-date-links').show();
+    $('#visible-date-links').hide();
+    $('#clock-preferences').hide();
+    event.preventDefault();
+  }
+  function prev_day_link_clicked() {
+    // console.log('previous day link clicked')
+    var datetime = $('#date-and-time')
+    var ts = Date.parse($('#date-and-time').val())
+    var new_date = new Date(ts)
+    new_date.setDate(new_date.getDate() - 1)
+
+    $('#date-and-time').val(new_date)
+    
+    moment().format("dddd, MMMM Do YYYY, h:mm:ss a"); 
+    manual_date_and_time()
+    console.log(new_date)
+    event.preventDefault();
+  }
+  function prev_hour_link_clicked() {
+    // console.log('previous hour link clicked')
+    var datetime = $('#date-and-time')
+    var ts = Date.parse($('#date-and-time').val())
+    var new_date = new Date(ts)
+    new_date.setHours(new_date.getHours() - 1)
+
+    $('#date-and-time').val(new_date)
+    
+    moment().format("dddd, MMMM Do YYYY, h:mm:ss a"); 
+    manual_date_and_time()
+    // console.log(new_date)
+    event.preventDefault();
+  }  
+  function right_now_link_clicked() {
+    // console.log('right now link clicked')
+    $('#date-and-time').val("")
+    auto_date_and_time()
+    event.preventDefault();
+  }
+  function sunset_link_clicked() {
+    // console.log('this sunset link clicked')
+    var datetime = $('#date-and-time')
+    var ts = Date.parse(d['season_data']['sunset_datetime'])
+    // console.log("sunset time: " + String(ts))
+    var new_date = new Date(ts) 
+    $('#date-and-time').val(new_date)
+    manual_date_and_time()
+    // console.log(new_date)
+    event.preventDefault();
+  }
+  function next_hour_link_clicked() {
+    // console.log('next hour link clicked')
+    var datetime = $('#date-and-time')
+    var ts = Date.parse($('#date-and-time').val())
+    var new_date = new Date(ts) 
+    new_date.setHours(new_date.getHours() + 1)
+    $('#date-and-time').val(new_date)
+    manual_date_and_time()
+    // console.log(new_date)
+    event.preventDefault();
+  }
+  function next_day_link_clicked() {
+    // console.log('next day link clicked')
+    var datetime = $('#date-and-time')
+    var ts = Date.parse($('#date-and-time').val())
+    var new_date = new Date(ts) 
+    new_date.setDate(new_date.getDate() + 1)
+    $('#date-and-time').val(new_date)
+    manual_date_and_time()
+    // console.log(new_date)
+    event.preventDefault();
+  }
+  function save_moonth_data_row() {
+    // console.log('save moonth data row')
+    var row = document.createElement('tr')
+    var date = document.createElement('td')
+    date.innerHTML = d['date']
+    row.appendChild(date)
+    var sunset = document.createElement('td')
+    sunset.innerHTML = d['season_data']['sunset_deg']['time_string']
+    row.appendChild(sunset)
+    var sun = document.createElement('td')
+    sun.innerHTML = d['plots']['sun']['degrees']
+    row.appendChild(sun)
+    var moon = document.createElement('td')
+    moon.innerHTML = d['plots']['moon']['degrees']
+    row.appendChild(moon)
+    var mercury = document.createElement('td')
+    mercury.innerHTML = d['plots']['mercury']['degrees']
+    row.appendChild(mercury)
+    var venus = document.createElement('td')
+    venus.innerHTML = d['plots']['venus']['degrees']
+    row.appendChild(venus)
+    var mars = document.createElement('td')
+    mars.innerHTML = d['plots']['mars']['degrees']
+    row.appendChild(mars)
+    var jupiter = document.createElement('td')
+    jupiter.innerHTML = d['plots']['jupiter']['degrees']
+    row.appendChild(jupiter)
+    var saturn = document.createElement('td')
+    saturn.innerHTML = d['plots']['saturn']['degrees']
+    row.appendChild(saturn)
+    var uranus = document.createElement('td')
+    uranus.innerHTML = d['plots']['uranus']['degrees']
+    row.appendChild(uranus)
+    var neptune = document.createElement('td')
+    neptune.innerHTML = d['plots']['neptune']['degrees']
+    row.appendChild(neptune)
+    var pluto = document.createElement('td')
+    pluto.innerHTML = d['plots']['pluto']['degrees']
+    row.appendChild(pluto)
+    document.getElementById('moonth-data-table').appendChild(row)
+  }
+  function show_hide_hand(hand) {
+    // console.log('show/hide hand: ' + hand)
+    var hand_element = document.querySelector("[v-planet='" + hand + "']");
+    if ($(hand_element).hasClass('hidden')) {
+      $(hand_element).removeClass('hidden')
+    } else {
+      $(hand_element).addClass('hidden')
+    }  
+    //$('#' + hand + '-hand').toggleClass('hidden')
+  }
+
+  //////////
+  // FUNCTIONS 
+
+  function manual_date_and_time() {
+    time_input_type = 'manual' 
+    update_clock()
+  }
+  function auto_date_and_time() {
+    time_input_type = 'auto'
+    update_clock()
+  }
+
+  ////////// UPDATE THE CLOCK //////////
+  // Whenever the clock updates, this is the method to call
+	function update_clock() {
+		if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(got_location, no_location);
+      
+    // got_location({'coords': {'latitude': 37.8573003, 'longitude': -122.2784977}})
+		} else {
+			$('#location-status').html("Please allow location to be accessed and reload the page.");
+			$('#location-not-available').html("no 1: "+navigator.geolocation);
+			console.log('location not available: using pacific time');
+			// lat: 37.8573003, long: -122.2784977
+			got_location({'coords': {'latitude': 37.8573003, 'longitude': -122.2784977}})
+			location_available = false;
+		};
+	}
+
+  // LOCATION: NO -  When we don't have a location
+  // Called from update_clock()
+  function no_location(err) {
+    location_available = false;
+    $('#location-status').html("Please allow location to be accessed and reload the page.");
+    $('#location-not-available').html("geolocation error: " + `ERROR(${err.code}): ${err.message}`);
+    console.log('location not available');
+    window.setTimeout(update_clock, 60000);
+  };
+
+  // LOCATION: YES - Update the clock with the location
+  // Called from update_clock()
+  function got_location(pos) {
+    $('#location-status').hide();
+    // console.log('got_location()');
+
+    // DATA SETUP 
+    if (d['d_initialized'] == undefined) {
+      d = {
+        d_initialized: true, // so  we only create this once
+        location_available: true,
+        lat: pos.coords.latitude,
+        long: pos.coords.longitude,
+        clock_initialized: false, // so we can load the clock all at once
+        plots: {}, // where things go on the clock
+        season_data: {}, // stuff that changes slowly over the year
+        moonth_data: {}, // stuff that changes over a moonth / lunation
+        sky_data: {}, // what's above the horizon? what can we see in the sky?
+      }
+    }
+    d = configure_clock(d);
+
+    ////////// THE LIST OF STEPS //////////
+    // 1 - Get seasonal data first to figure out the time of sunset
+    get_seasonal_data(d).then((d) => {
+      $('#current_time').html(d['current_time']['time_string'])      
+      $('#sun_relative_to_midnight').html(d['current_time']['clockwise_degrees'])
+      return get_sun_at_datetime(d['season_data']['date'],
+                          d['current_time'],
+                          d, 'planets_relative_to_aries')
+
+    // 2 - Combine seasonal and current time data
+    }).then((d) => {
+      // console.log('get_sun_at_datetime (current_time)')
+      return combine_seasonal_and_planet_data(d)
+
+    // 3 - Plot the moments on the clock
+    }).then((d) => {
+      return plot_moments_on_clock(d)  
+
+    // 4 - Plot the planets on the clock
+    }).then((d) => {             
+      return plot_objects_on_clock(d)  
+
+    // 5 - Plot the Moon on the clock
+    }).then((d) => {
+      return plot_moon_on_clock(d)  
+
+    // 6 - Cleanup and wait for next update
+    }).then((d) => {
+
+      // Keep updating the clock
+      if (time_input_type == 'auto') {
+        window.setTimeout(update_clock, 60000);
+      }
+
+      return d
+
+    // If there were errors
+    }).catch((err) => {
+      console.log('error in got_location')
+      console.log(err)
+    })
+  }
+
+  // TIME SETUP
+  function configure_clock(d) {
+    if (debug) {
+      console.log('configure_clock()') 
+      console.log(d)
+    }
+    if (time_input_type == 'manual' && $('#date-and-time').val().length > 0) {
+      try {
+        var ts = Date.parse($('#date-and-time').val())
+        d['now'] = new Date(ts)
+        d['date'] = moment(d['now']).format('YYYY-MM-DD')
+      }
+      catch {
+        d['now'] = new Date();
+        d['date'] = moment(d['now']).format('YYYY-MM-DD')
+        time_input_type = 'auto'
+      }
+    } else if (time_input_type == 'one-time') {
+      time_input_type = 'auto'
+    } else {
+      d['now'] = new Date();
+      d['date'] = moment(d['now']).format('YYYY-MM-DD')
+      time_input_type = 'auto'
+    }
+    let hours = d['now'].getHours();
+    let minutes = d['now'].getMinutes();
+    let seconds = d['now'].getSeconds();
+    if (debug) {
+      console.log('NOW: '+d['now'])
+    }
+    // NOW: Thu Jan 30 2025 19:54:04 GMT-0800 (Pacific Standard Time)
+    // NEW: 
+    d['current_time'] = convert_24h_time_to_clockwise_degrees_hash(format_time(hours) + ":" + format_time(minutes) + ":" + format_time(seconds))
+    $('#date-and-time').val(d['now'])
+
+    d['timezone_offset'] = -d['now'].getTimezoneOffset() / 60;
+    d['yesterday'] = new Date();
+    d['yesterday'].setDate(d['now'].getDate() - 1)
+    d['tomorrow'] = new Date();
+    d['tomorrow'].setDate(d['now'].getDate() + 1);
+
+    return d;
+  }
+
+  ////////// CLOCK FUNCTIONS //////////
+  // 1 - Figure out how to orient the clock by season by using sunrise and sunset data
+  // Previously called get_sun_data and get_rising_setting_for_sun_and_moon
+  // Passed next to get_astrology_data
+  async function get_seasonal_data(d) {
+    if (debug) {
+      console.log('get_seasonal_data()')
+    }
+    var url = "https://api.ipgeolocation.io/astronomy?apiKey=7af9a1e42c9a41f9b2e099f8776575d6&lat=" + d['lat'] + "&long=" + d['long'] + "&date=" + d['date']
+    return await fetch(url)
+      .then((response) => response.json())
+      .then(function (json) {
+        d['season_data_api'] = json
+        d['season_data'] = {
+          'date': d['date'],
+          'day_length_deg': convert_24h_time_to_clockwise_degrees_hash(json['day_length']),
+          'solar_noon_deg': convert_24h_time_to_clockwise_degrees_hash(json['solar_noon']),
+          'sunrise_deg': convert_24h_time_to_clockwise_degrees_hash(json['sunrise']),
+          'sunset_deg': convert_24h_time_to_clockwise_degrees_hash(json['sunset']),
+          'sunrise_datetime': new Date(Date.parse(d['date'] + 'T' + json['sunrise'] + ':00')),
+          'sunset_datetime': new Date(Date.parse(d['date'] + 'T' + json['sunset'] + ':00')),
+          'solarnoon_datetime': new Date(Date.parse(d['date'] + 'T' + json['solar_noon'] + ':00')),
+          'sun_relative_to_aries': null
+        }
+        d['moonth_data'] = {
+          'moon_data': {
+            altitude: json['moon_altitude'],
+            angle: json['moon_angle'],
+            azimuth: json['moon_azimuth'],
+            distance: json['moon_distance'],
+            illumination: json['moon_illumination_percentage'],
+            parallactic_angle: json['moon_parallactic_angle'],
+            phase_rough: json['moon_phase'],
+            status: json['moon_status'],
+            moonrise_deg: convert_24h_time_to_clockwise_degrees_hash(json['moonrise']),
+            moonset_deg: convert_24h_time_to_clockwise_degrees_hash(json['moonset']),
+            moonrise_datetime: new Date(Date.parse(d['date'] + 'T' + json['moonrise'] + ':00')),
+            moonset_datetime: new Date(Date.parse(d['date'] + 'T' + json['moonset'] + ':00')),
+          },
+        }
+        $('#date').html(d['date'])
+
+        // Not used at the moment
+        // The sun's current position relative to Aries = high noon (say it's 283)
+        // The day length divided by 2 can be used to map 90 degrees to sunrise and 90 degrees to sunset in both directions
+        // - say that the day length is 9 hours and 37 minutes, and the night length is therefore 14 hours and 23 minutes
+        // - so 180 degrees = 9:37, or 577 minutes, which means each degree between 193 and 360 and 0 and 13 is 2.989 minutes per degree
+        // - similarly, at night, between 13 and 193 degrees, or 863 minutes, each degree is 4.78 minutes
+
+        return d
+      });
+  }
+
+  // 2 - comes after get_seasonal_data
+  async function get_sun_at_datetime(date, time, d, hash_token) {
+    if (debug) {
+      console.log('get_sun_at_datetime()')
+    }
+    const user_id = '{{ site.env.ASTROLOGY_USER_ID }}';
+    const api_key = '{{ site.env.ASTROLOGY_API_KEY }}';
+    const auth = "Basic " + btoa(user_id + ":" + api_key);
+    const date_bits = date.split("-");
+    const time_bits = time['time_string'].split(":");
+
+    // house_type: Default : "placidus" // koch/topocentric/poryphry/equal_house/whole_sign
+    d[hash_token] = {}
+    d[hash_token]['params'] = {
+      'day': date_bits[2],
+      'month': date_bits[1],
+      'year': date_bits[0],
+      'hour': time_bits[0],
+      'min': time_bits[1],
+      'lat': d['lat'],
+      'lon': d['long'],
+      'tzone': d['timezone_offset'],
+      'house_type': 'whole_sign' // placidus/whole_sign 
+    }
+
+    // https://astrologyapi.com/western-api-docs/api-ref/74/planets/tropical
+    // {
+    // 	"name": "Sun",
+    // 	"fullDegree": 259.3692854715937, // relative degrees from Aries 0 
+    // 	"normDegree": 19.369285471593685, // relative degrees from the sign it's currently in
+    // 	"speed": 1.0163786145803477,
+    // 	"isRetro": "false",
+    // 	"sign": "Sagittarius",
+    // 	"house": 11
+    // },
+    var planet_request = $.ajax({
+      url: "https://json.astrologyapi.com/v1/planets/tropical",
+      method: "POST",
+      dataType: 'json',
+      headers: {
+        "authorization": auth,
+        "Content-Type": 'application/json'
+      },
+      data: JSON.stringify(d[hash_token]['params'])
+    });
+    return await planet_request.then(
+      async function (resp) {
+        d[hash_token]['api'] = resp
+        return d
+      },
+      async function (err) {
+        d[hash_token]['error'] = err
+        return d
+      }
+    )
+  }
+
+  // 3 - after we have stuff about seasons and the planets
+  async function combine_seasonal_and_planet_data(d) {
+    if (debug) {
+      console.log('combine_seasonal_and_planet_data()')
+    }
+    // Figure out where Aries 0 degrees is
+    sun = d['planets_relative_to_aries']['api'][0]
+    d['season_data']['aries_relative_to_year'] = positive_modulo(360-sun['fullDegree'], 360)
+    $('#aries_relative_to_year').html(Number(d['season_data']['aries_relative_to_year']*100/360).toFixed(2) + "%")
+
+    // Map the sun relative to Aries
+    d['season_data']['sun_relative_to_aries'] = positive_modulo(-d['season_data']['aries_relative_to_year'], 360)
+    $('#sun_relative_to_aries').html(d['season_data']['sun_relative_to_aries'])
+
+    // Figure out where the sun is relative to the day
+    $('#time_of_sunset').html(d['season_data']['sunset_deg']['time_string'])
+    d['season_data']['current_time_relative_to_midnight'] = d['current_time']['clockwise_degrees']
+
+    // Then, where it is relative to the sunset
+    d['plot_offset'] = positive_modulo(
+      (
+        90 +
+        d['season_data']['current_time_relative_to_midnight'] -
+        d['season_data']['sunset_deg']['clockwise_degrees']
+      ), 360)
+
+    d['plots']['sun'] = {
+      'name': 'Sun',
+      'token': 'sun',
+      'relative_to_aries_clockwise': d['season_data']['sun_relative_to_aries'],
+      'relative_to_sun_clockwise': 0,
+      'degrees': positive_modulo(d['plot_offset'], 360),
+      'api': sun,
+    }
+    return d
+  }
+
+  // 4 - Plot moments of the day
+  async function plot_moments_on_clock(d) {
+    if (debug) {
+      console.log('plot_moments_on_clock()')
+    }
+    d['moments'] = {
+      sunrise: convert_moment_time_string_to_clock_degrees(d['season_data']['sunrise_deg']['time_string']),
+      solar_noon: convert_moment_time_string_to_clock_degrees(d['season_data']['solar_noon_deg']['time_string']),
+      sunset: convert_moment_time_string_to_clock_degrees(d['season_data']['sunset_deg']['time_string']),
+    }
+
+    // Calculate how to balance sunrise and sunset on each side of the clock.
+    var sunrise_sunset_offset = (90 - (360-d['moments']['sunrise']['clockwise_degrees']))/2
+    console.log('sunrise_sunset_offset: '+sunrise_sunset_offset)
+    console.log('new sunrise: '+(d['moments']['sunrise']['clockwise_degrees']-sunrise_sunset_offset))
+    console.log('new sunset: '+(d['moments']['sunset']['clockwise_degrees']-sunrise_sunset_offset))
+    d['moments']['sunrise']['clockwise_degrees'] = d['moments']['sunrise']['clockwise_degrees']-sunrise_sunset_offset
+    d['moments']['sunset']['clockwise_degrees'] = d['moments']['sunset']['clockwise_degrees']-sunrise_sunset_offset
+    console.log('old plot_offset: ')
+    console.log(d['plot_offset'])
+    console.log('new plot_offset: ')
+    console.log(d['plot_offset']-sunrise_sunset_offset)
+
+    // Shift the plot offset to balance the sunrise and sunset  
+    d['plot_offset'] = d['plot_offset']-sunrise_sunset_offset
+    d['plots']['sun']['degrees'] = d['plots']['sun']['degrees']-sunrise_sunset_offset
+
+    // Calculate the background color based on the sun's position and the sunrise and sunset times.
+    const backgroundColor = getBackgroundColor(d['plots']['sun']['degrees'], d['moments']['sunrise']['clockwise_degrees'], d['moments']['sunset']['clockwise_degrees']);
+    // console.log(`Background color: ${backgroundColor}`); // Returns a warm tone transitioning towards midday
+    $('body').css('background-color', backgroundColor);
+
+    $('#sunrise_debug').html(d['season_data']['sunrise_deg']['time_string'] + "🕰️, " + d['moments']['sunrise']['clockwise_degrees'] + "&deg;")
+    $('#highnoon_debug').html(d['season_data']['solar_noon_deg']['time_string'] + "🕰️, " + d['moments']['solar_noon']['clockwise_degrees'] + "&deg;")
+    $('#sunset_debug').html(d['season_data']['sunset_deg']['time_string'] + "🕰️, " + d['moments']['sunset']['clockwise_degrees'] + "&deg;")
+    return d
+  }
+  
+  // 5 - Plot the moon and planets
+  async function plot_objects_on_clock(d) {
+    if (debug) {
+      console.log('plot_objects_on_clock()')
+    }
+    // Figure out where the sun is relative to Aries (this is the season)
+    var sun = d['planets_relative_to_aries']['api'][0]
+
+    var sun_is_visible = false
+    if (d['plot_offset'] > 270 || d['plot_offset'] < 90) {
+      sun_is_visible = true
+    }
+    $('#sun_debug').html(convert_clockwise_degrees_to_24h_time(d['plots']['sun']['degrees']) + "🕰️, " + Number(d['plots']['sun']['degrees']).toFixed(2) + "&deg;" + (sun_is_visible ? ", visible" : ''))
+
+    // Figure out where the sun is relative to Aries (this is the season)
+    var planets = d['planets_relative_to_aries']['api']
+
+    // Plot all the objects relative to the sun
+    for (let i = 1; i < planets.length; i++) {
+      var planet = planets[i]
+
+      // Relative to the sun, based on both of their relative position to Aries.
+      // If the sun is at 283 deg relative to Aries (Jan 5th), and the Moon is new, so a bit larger (290), then degrees relative to the sun clockwise is 290 - 283, or 7 degrees. 
+
+      // (Sun relative to Aries, clockwise) - (Object relative to Aries, clockwise)
+      // + (Sun's current offset from sunset)
+      // Modulo 360
+      var planet_degrees = (sun['fullDegree'] - planet['fullDegree']) + d['plot_offset']
+      var relative_to_aries_clockwise = positive_modulo(-planet['fullDegree'], 360)
+      var degrees_relative_to_sun_clockwise = positive_modulo(planet['fullDegree'] - sun['fullDegree'], 360)
+      var is_visible = false 
+      var is_above_horizon = false
+      if (planet_degrees > 270 || planet_degrees < 90) {
+         is_above_horizon = true
+         // Give 10 extra degrees from the horizon for them to become visible, and at night only
+         if (!sun_is_visible && (planet_degrees > 280 || planet_degrees < 80)) {
+           is_visible = true
+         }   
+      }
+      var to_plot = {
+        'name': planet['name'],
+        'token': planet['name'].toLowerCase(),
+        'relative_to_aries_clockwise': relative_to_aries_clockwise,
+        'relative_to_sun_clockwise': degrees_relative_to_sun_clockwise,
+        'degrees': positive_modulo(planet_degrees, 360),
+        'is_visible': is_visible,
+        'is_above_horizon': is_above_horizon,
+        'api': planet,
+      }
+      d['plots'][planet['name'].toLowerCase()] = to_plot
+      $('#' + to_plot['token'] + '_debug').html(convert_clockwise_degrees_to_24h_time(to_plot['degrees']) +"🕰️, "+ Number(to_plot['degrees']).toFixed(2)+"&deg;"+(is_above_horizon ? ', above horizon' : '')+(is_visible ? ", visible" : ''))
+    }
+
+    // Figure out which concentric circle they need to be plotted on
+    // console.log('Figure out which concentric circle they need to be plotted on')
+    var month = d['date'].split('-')[1]
+    d['circle_plot'] = {
+      'sun': null,
+    }
+    // Moon and planets are determined by their phase
+    // In the array: 
+    // moon, relative to sun = ['new', 'full']
+    // planets, furthest distance relative to sun = ['direct', 'retrograde']
+    var month_to_default_sun_circle = {
+      '01': {
+        'sun': -2,
+        'moon': [-6,6],
+        'mercury': [-1,1],
+        'venus': [-2,2],
+        'mars': [-3,3],
+        'jupiter': [-4,4],
+        'saturn': [-5,5],
+        'uranus': [-6,6],
+        'neptune': [-6,6],
+        'pluto': [-7,7],
+      },
+      '02': {
+        'sun': -1,
+        'moon': [-4,4],
+        'mercury': [-1,1],
+        'venus': [-1,1],
+        'mars': [-2,2],
+        'jupiter': [-2,2],
+        'saturn': [-3,3],
+        'uranus': [-4,4],
+        'neptune': [-5,5],
+        'pluto': [-6,6],
+      },
+      '03': {
+        'sun': 0,
+        'moon': [0,0], // eclipse season
+        'mercury': [0,0],
+        'venus': [0,0],
+        'mars': [0,0],
+        'jupiter': [0,0],
+        'saturn': [0,0],
+        'uranus': [0,0],
+        'neptune': [0,0],
+        'pluto': [0,0],
+      },  
+      '04': {
+        'sun': 1,
+        'moon': [4,-4],
+        'mercury': [1,-1],
+        'venus': [1,-1],
+        'mars': [2,-2],
+        'jupiter': [2,-2],
+        'saturn': [3,-3],
+        'uranus': [-4,4],
+        'neptune': [-5,5],
+        'pluto': [-6,6],
+      },
+      '05': {
+        'sun': 2,
+        'moon': [6,-6],
+        'mercury': [1,-1],
+        'venus': [2,-2],
+        'mars': [3,-3],
+        'jupiter': [4,-4],
+        'saturn': [5,-5],
+        'uranus': [6,-6],
+        'neptune': [6,-6],
+        'pluto': [7,-7],
+      },
+      '06': { // summer solstice
+        'sun': 3,
+        'moon': [8,-8],
+        'mercury': [2,-2],
+        'venus': [3,-3],
+        'mars': [4,-4],
+        'jupiter': [5,-5],
+        'saturn': [6,-6],
+        'uranus': [7,-7],
+        'neptune': [8,-8],
+        'pluto': [9,-9],
+      },
+      '07': {
+        'sun': 2,
+        'moon': [6,-6],
+        'mercury': [1,-1],
+        'venus': [2,-2],
+        'mars': [3,-3],
+        'jupiter': [4,-4],
+        'saturn': [5,-5],
+        'uranus': [6,-6],
+        'neptune': [6,-6],
+        'pluto': [7,-7],
+      },
+      '08': {
+        'sun': 1,
+        'moon': [4,-4],
+        'mercury': [1,-1],
+        'venus': [1,-1],
+        'mars': [2,-2],
+        'jupiter': [2,-2],
+        'saturn': [3,-3],
+        'uranus': [4,-4],
+        'neptune': [5,-5],
+        'pluto': [5,-5],
+      },
+      '09': {
+        'sun': 0,
+        'moon': [0,0], // eclipse season
+        'mercury': [0,0],
+        'venus': [0,0],
+        'mars': [0,0],
+        'jupiter': [0,0],
+        'saturn': [0,0],
+        'uranus': [0,0],
+        'neptune': [0,0],
+        'pluto': [0,0],
+      },
+      '10': {
+        'sun': -1,
+        'moon': [-4,4],
+        'mercury': [-1,1],
+        'venus': [-1,1],
+        'mars': [-2,2],
+        'jupiter': [-2,2],
+        'saturn': [-3,3],
+        'uranus': [-4,4],
+        'neptune': [-5,5],
+        'pluto': [-5,5],
+      },
+      '11': {
+        'sun': -2,
+        'moon': [-6,6],
+        'mercury': [-1,1],
+        'venus': [-2,2],
+        'mars': [-3,3],
+        'jupiter': [-4,4],
+        'saturn': [-5,5],
+        'uranus': [-6,6],
+        'neptune': [-6,6],
+        'pluto': [-7,7],
+      },
+      '12': { // winter solstice
+        'sun': -3,
+        'moon': [-8,8],
+        'mercury': [-2,2],
+        'venus': [-3,3],
+        'mars': [-4,4],
+        'jupiter': [-5,5],
+        'saturn': [-6,6],
+        'uranus': [-7,7],
+        'neptune': [-8,8],
+        'pluto': [-9,9],
+      },
+    }
+    // Sun goes somewhere on line -3 to 3.
+    d['circle_plot']['sun'] = month_to_default_sun_circle[month]['sun']
+    // console.log("The sun goes on line: " + d['circle_plot']['sun'])
+    $('#sun_debug').html($('#sun_debug').html()+", line "+d['circle_plot']['sun'])
+    var hands = ['moon', 'sun']
+
+    // The moon can go +8 or -8 relative to sun. Most extreme at summer and winter solstice.
+    var moon_range = month_to_default_sun_circle[month]['moon']
+    // Waxing gibbous (half-full to full)
+    d['moonth_data']['moon_data']['illumination'] = parseInt(d['moonth_data']['moon_data']['illumination'])
+    if (d['moonth_data']['moon_data']['illumination'] > 50) {
+      // console.log("Waxing gibbous")
+      d['circle_plot']['moon'] = d['circle_plot']['sun']+Math.round(moon_range[1]*((d['moonth_data']['moon_data']['illumination']-50)/50))
+    // Waxing crescent (new to half-full)
+    } else if (d['moonth_data']['moon_data']['illumination'] > 0) {
+      // console.log("Waxing crescent")
+      d['circle_plot']['moon'] = d['circle_plot']['sun']+Math.round(moon_range[0]*((50-d['moonth_data']['moon_data']['illumination'])/50))
+    // Waning crescent (half-full to new)
+    } else if (d['moonth_data']['moon_data']['illumination'] > -50) {
+      // console.log("Waning crescent")
+      d['circle_plot']['moon'] = d['circle_plot']['sun']+Math.round(moon_range[0]*((50+d['moonth_data']['moon_data']['illumination'])/50))
+    // Waning gibbous (full to half-full)
+    } else if (d['moonth_data']['moon_data']['illumination'] > -100) {
+      // console.log("Waning gibbous")
+      d['circle_plot']['moon'] = d['circle_plot']['sun']+Math.round(moon_range[1]*((-d['moonth_data']['moon_data']['illumination']-50)/50))
+    } else {
+      // console.log("MOON OUT OF BOUNDS! "+d['moonth_data']['moon_data']['illumination'])
+    }
+    // console.log("The moon goes on line: " + d['circle_plot']['moon'])
+    $('#moon_debug').html($('#moon_debug').html()+", line "+d['circle_plot']['moon'])
+
+    // The INNER planets have increasingly wider ranges as they get further from the sun.
+    for (let planet of ['mercury', 'venus']) {
+      var planet_range = month_to_default_sun_circle[month][planet]
+      var percent_full = 1
+      // Calculate how full the planet is 100% = full, 0% = new
+      // Mercury can be up to 28 degrees away from the sun (half-Mercury)
+      // Venus can be up to 48 degrees away from the sun (half-Venus)
+      if (planet == 'mercury') {
+        var degrees_extended = d['plots'][planet]['relative_to_sun_clockwise']
+        var planet_range_value = d['plots'][planet]['api']['isRetro']=='true' ? planet_range[1] : planet_range[0]
+        if (degrees_extended >= 360-14) {
+          d['circle_plot'][planet] = d['circle_plot']['sun']+Math.round(planet_range_value*(360-degrees_extended)/14)
+        } else if (degrees_extended >= 360-28) {
+          d['circle_plot'][planet] = d['circle_plot']['sun']+Math.round(planet_range_value*(346-degrees_extended)/14)
+        } else if (degrees_extended >= 14) {
+          d['circle_plot'][planet] = d['circle_plot']['sun']+Math.round(planet_range_value*(degrees_extended-14)/14)
+        } else { // degrees_extended >= 0
+          d['circle_plot'][planet] = d['circle_plot']['sun']+Math.round(planet_range_value*degrees_extended/14)
+        }
+       } else if (planet == 'venus') {
+        if (degrees_extended >= 360-24) {
+          d['circle_plot'][planet] = d['circle_plot']['sun']+Math.round(planet_range_value*(360-degrees_extended)/24)
+        } else if (degrees_extended >= 360-28) {
+          d['circle_plot'][planet] = d['circle_plot']['sun']+Math.round(planet_range_value*(336-degrees_extended)/24)
+        } else if (degrees_extended >= 24) {
+          d['circle_plot'][planet] = d['circle_plot']['sun']+Math.round(planet_range_value*(degrees_extended-24)/24)
+        } else { // degrees_extended >= 0
+          d['circle_plot'][planet] = d['circle_plot']['sun']+Math.round(planet_range_value*degrees_extended/24)
+        }
+      }
+
+      // Calculate which line they're on
+      if (d['plots'][planet]['api']['isRetro']=='true') {
+        // console.log("The " + planet + " is retro. ")
+        hands.splice(1, 0, planet);
+      } else {
+        // console.log("The " + planet + " is direct. ")
+        hands.push(planet)
+      }
+      $('#' + planet + '_debug').html($('#' + planet + '_debug').html()+", line "+d['circle_plot'][planet])
+    }
+
+    // The OUTER planets have increasingly wider ranges as they get further from the sun.
+    for (let planet of ['mars', 'jupiter', 'saturn', 'uranus', 'neptune', 'pluto']) {
+      var planet_range = month_to_default_sun_circle[month][planet]
+      var percent_full = 1
+      // Calculate how full the planet is 100% = full, 0% = new
+      // Planets are half-full when they are 90 degrees away from the sun
+      var degrees_extended = d['plots'][planet]['relative_to_sun_clockwise']
+      var planet_range_value = d['plots'][planet]['api']['isRetro']=='true' ? planet_range[1] : planet_range[0]
+      if (degrees_extended >= 360-90) {
+        d['circle_plot'][planet] = d['circle_plot']['sun']+Math.round(planet_range_value*(360-degrees_extended)/90)
+      } else if (degrees_extended >= 360-180) {
+        d['circle_plot'][planet] = d['circle_plot']['sun']+Math.round(planet_range_value*(180-degrees_extended)/90)
+      } else if (degrees_extended >= 90) {
+        d['circle_plot'][planet] = d['circle_plot']['sun']+Math.round(planet_range_value*(degrees_extended-90)/90)
+      } else { // degrees_extended >= 0
+        d['circle_plot'][planet] = d['circle_plot']['sun']+Math.round(planet_range_value*degrees_extended/90)
+      }
+      hands.push(planet)
+      $('#' + planet + '_debug').html($('#' + planet + '_debug').html()+", line "+d['circle_plot'][planet])
+    }
+    var planet_to_image_path = {
+      'sun': 'v2/sun/sun', 'moon': 'v2/moon/full/moon', 'mercury': 'v2/planets/planets', 'venus': 'v2/planets/planets', 'mars': 'v2/planets/planets', 'jupiter': 'v2/planets/planets', 'saturn': 'v2/planets/planets', 'uranus': 'v2/planets/planets', 'neptune': 'v2/planets/planets', 'pluto': 'v2/planets/planets'
+    }
+    var moon_to_image_path = {
+      'NEW_MOON': 'v2/moon/new/moon', 'WAXING_CRESCENT': 'v2/moon/waxing_crescent/moon', 'FIRST_QUARTER': 'v2/moon/first_quarter/moon', 'WAXING_GIBBOUS': 'v2/moon/waxing_gibbous/moon', 'FULL_MOON': 'v2/moon/full/moon', 'WANING_GIBBOUS': 'v2/moon/waning_gibbous/moon', 'LAST_QUARTER': 'v2/moon/third_quarter/moon', 'WANING_CRESCENT': 'v2/moon/waning_crescent/moon'
+    }
+    // add the hands in the order they should be drawn
+    var order = 1
+    var zindex = 10
+    for (let planet of hands) {
+      var div_id = '#hand-'+order.toString()
+      $(div_id).attr('v-planet', planet)
+      if (planet == 'moon') {
+        var phase = d['moonth_data']['moon_data']['phase_rough']  
+        $(div_id).css('background-image', `url('/assets/images/clock/11/${moon_to_image_path[phase]}_${d['circle_plot'][planet]}.png')`)
+      
+      } else {
+        $(div_id).css('background-image', `url('/assets/images/clock/11/${planet_to_image_path[planet]}_${d['circle_plot'][planet]}.png')`)
+      }
+      
+      // console.log("Background image for "+div_id+" set to: "+$(div_id).css('background-image'))
+      
+      // console.log("/assets/images/clock/11/"+planet_to_image_path[planet]+"/4000_"+planet_to_image_path[planet]+"_"+d['circle_plot'][planet]+".png")
+
+      var angle = d['plots'][planet]['degrees']
+      debug ? console.log('ROTATING '+planet+" by "+angle) : null 
+      var rotate_string = "rotate(" + parseInt(angle) + "deg)";
+      $(div_id).css('transform', rotate_string);
+      $(div_id).css('z-index', 0-order);
+  
+      //$('#hand-'+order.toString()).html('&nbsp;');
+      order += 1
+    }
+
+    return d
+  }
+
+
+  // 6 - Plot all the moon and lunation stuff
+  async function plot_moon_on_clock(d) {
+    // console.log('plot_moon_on_clock()')
+    $('#moon_phase_rough_debug').html(d['moonth_data']['moon_data']['phase_rough'])
+    $('#moon_status_debug').html(d['moonth_data']['moon_data']['status'])
+    $('#moon_illumination_debug').html(d['moonth_data']['moon_data']['illumination']+"%")
+    $('#moon_parallactic_angle_debug').html(Number(d['moonth_data']['moon_data']['parallactic_angle']).toFixed(2)+"&deg;")
+    return d
+  }
+
+  function getBackgroundColor(sunAngle, sunriseAngle, sunsetAngle) {
+    // Normalize sun angle to a 0-1 scale across the day cycle
+    let normalized = ((sunAngle - sunriseAngle + 360) % 360) / ((sunsetAngle - sunriseAngle + 360) % 360);
+    normalized = Math.max(0, Math.min(1, normalized)); // Clamp between 0 and 1
+
+    // console.log(`Normalized angle: ${normalized}`);
+    // console.log(`Sun Angle: ${sunAngle}`);
+    // console.log(`Sunrise Angle: ${sunriseAngle}`);
+    // console.log(`Sunset Angle: ${sunsetAngle}`);
+
+    // Define colors based on sun position
+    const colors = {
+      night: "#112266",     // Deep Blue (Midnight)
+      dawn: "#1C3D88",      // Muted Dark Blue (Twilight)
+      sunrise: "#2244A3",   // Main Blue Tone (Morning Transition)
+      noon: "#4466CC",      // Brighter Blue (Midday)
+      sunset: "#2A50B3",    // Rich Deep Blue (Golden Hour)
+      evening: "#1A3C80",   // Darkened Blue (Early Night)
+      preSunrise: "#C77966", // Muted peach with warmth (Just before Sunrise)
+      postSunrise: "#B87C84", // Soft dusky pink with warmth (Just after Sunrise)
+      preSunset: "#E07A5F", // Deep Orange (Just before Sunset)
+      postSunset: "#D9534F"  // Soft Red (Just after Sunset)
+    };
+
+    let color;
+
+    // Helper function to handle circular angle comparisons
+    function isBetween(angle, start, end) {
+        return (start <= end) ? (angle >= start && angle <= end) : (angle >= start || angle <= end);
+    }
+
+    // Determine background based on time of day
+    //if (isBetween(sunAngle, sunsetAngle, sunriseAngle)) {
+      //console.log("1 - Night");
+      //color = colors.night;
+    //} else 
+    if (isBetween(sunAngle, sunriseAngle - 5, sunriseAngle)) {
+      // console.log("2 - Pre-Sunrise Glow");
+      color = interpolateColor(colors.dawn, colors.preSunrise, (sunAngle - (sunriseAngle - 5)) / 5);
+    } else if (isBetween(sunAngle, sunriseAngle, sunriseAngle + 5)) {
+      // console.log("3 - Post-Sunrise Warmth");
+      color = interpolateColor(colors.preSunrise, colors.postSunrise, (sunAngle - sunriseAngle) / 5);
+    } else if (isBetween(sunAngle, sunriseAngle + 5, 45)) {
+      // console.log("4 - Morning");
+      color = interpolateColor(colors.sunrise, colors.noon, (sunAngle - (sunriseAngle + 5)) / (45 - (sunriseAngle + 5)));
+      } else if (isBetween(sunAngle, sunsetAngle - 5, sunsetAngle)) {
+      // console.log("6 - Pre-Sunset Glow");
+      color = interpolateColor(colors.sunset, colors.preSunset, (sunAngle - (sunsetAngle - 5)) / 5);
+    } else if (isBetween(sunAngle, 45, 90)) {
+      // console.log("5 - Midday to Sunset");
+      color = interpolateColor(colors.noon, colors.sunset, (sunAngle - 45) / (90 - 45));
+    } else if (isBetween(sunAngle, sunsetAngle, sunsetAngle + 5)) {
+      // console.log("7 - Post-Sunset Warmth");
+      color = interpolateColor(colors.preSunset, colors.postSunset, (sunAngle - sunsetAngle) / 5);
+    } else if (isBetween(sunAngle, sunsetAngle + 5, sunriseAngle)) {
+      // console.log("8 - Night");
+      color = colors.night;
+    } else {
+      // console.log("9 - Fallback Night");
+      color = colors.night;
+    }
+
+    return color;
+  }
+
+  // Function to smoothly blend two colors based on a ratio (0-1)
+  function interpolateColor(color1, color2, factor) {
+    const hex = (c) => parseInt(c, 16);
+    const r1 = hex(color1.slice(1, 3)), g1 = hex(color1.slice(3, 5)), b1 = hex(color1.slice(5, 7));
+    const r2 = hex(color2.slice(1, 3)), g2 = hex(color2.slice(3, 5)), b2 = hex(color2.slice(5, 7));
+    
+    const r = Math.round(r1 + (r2 - r1) * factor);
+    const g = Math.round(g1 + (g2 - g1) * factor);
+    const b = Math.round(b1 + (b2 - b1) * factor);
+
+    return `rgb(${r}, ${g}, ${b})`;
+  }
+
+  $(document).ready(function () {
+    $(window).bind('resize', scale_the_clock);
+    auto_date_and_time();
+  });
+</script>
