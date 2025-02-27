@@ -15,7 +15,6 @@ max_width: true
     margin: 0 auto;
     font-family: Helvetica, sans-serif;
     background-color: #ddd;
-    //background-color: #2244a3;
     color: #fff;
   }
 
@@ -84,7 +83,8 @@ max_width: true
     padding: 0;
     z-index: 1;
   }
-  #hand-1, #hand-2, #hand-3, #hand-4, #hand-5, #hand-6, #hand-7, #hand-8, #hand-9, #hand-10 {
+  #hand-1, #hand-2, #hand-3, #hand-4, #hand-5, #hand-6, #hand-7, #hand-8, #hand-9, #hand-10,
+  #hand-sunrise, #hand-sunset {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -146,6 +146,10 @@ max_width: true
       <div id="hand-8"></div>
       <div id="hand-9"></div>
       <div id="hand-10"></div>
+
+      <div id="hand-sunrise"></div>
+      <div id="hand-sunset"></div>
+
     </div>
   </div>
   <div id="clock-preferences">
@@ -796,15 +800,15 @@ max_width: true
 
     // Calculate how to balance sunrise and sunset on each side of the clock.
     var sunrise_sunset_offset = (90 - (360-d['moments']['sunrise']['clockwise_degrees']))/2
-    console.log('sunrise_sunset_offset: '+sunrise_sunset_offset)
-    console.log('new sunrise: '+(d['moments']['sunrise']['clockwise_degrees']-sunrise_sunset_offset))
-    console.log('new sunset: '+(d['moments']['sunset']['clockwise_degrees']-sunrise_sunset_offset))
+    // console.log('sunrise_sunset_offset: '+sunrise_sunset_offset)
+    // console.log('new sunrise: '+(d['moments']['sunrise']['clockwise_degrees']-sunrise_sunset_offset))
+    // console.log('new sunset: '+(d['moments']['sunset']['clockwise_degrees']-sunrise_sunset_offset))
     d['moments']['sunrise']['clockwise_degrees'] = d['moments']['sunrise']['clockwise_degrees']-sunrise_sunset_offset
     d['moments']['sunset']['clockwise_degrees'] = d['moments']['sunset']['clockwise_degrees']-sunrise_sunset_offset
-    console.log('old plot_offset: ')
-    console.log(d['plot_offset'])
-    console.log('new plot_offset: ')
-    console.log(d['plot_offset']-sunrise_sunset_offset)
+    // console.log('old plot_offset: ')
+    // console.log(d['plot_offset'])
+    // console.log('new plot_offset: ')
+    // console.log(d['plot_offset']-sunrise_sunset_offset)
 
     // Shift the plot offset to balance the sunrise and sunset  
     d['plot_offset'] = d['plot_offset']-sunrise_sunset_offset
@@ -1129,7 +1133,22 @@ max_width: true
     var moon_to_image_path = {
       'NEW_MOON': 'v2/moon/new/moon', 'WAXING_CRESCENT': 'v2/moon/waxing_crescent/moon', 'FIRST_QUARTER': 'v2/moon/first_quarter/moon', 'WAXING_GIBBOUS': 'v2/moon/waxing_gibbous/moon', 'FULL_MOON': 'v2/moon/full/moon', 'WANING_GIBBOUS': 'v2/moon/waning_gibbous/moon', 'LAST_QUARTER': 'v2/moon/third_quarter/moon', 'WANING_CRESCENT': 'v2/moon/waning_crescent/moon'
     }
-    // add the hands in the order they should be drawn
+    // Plot the sunrise and sunset hands
+    var sunrise_degrees = d['moments']['sunrise']['clockwise_degrees']  
+    var sunset_degrees = d['moments']['sunset']['clockwise_degrees']
+    var sunrise_div_id = '#hand-sunrise'
+    $(sunrise_div_id).css('background-image', `url('/assets/images/clock/11/v2/sun/sunrise.png')`)
+    var rotate_string = "rotate(" + parseInt(sunrise_degrees) + "deg)";
+    $(sunrise_div_id).css('transform', rotate_string);
+    $(sunrise_div_id).css('z-index',0);
+
+
+    var sunset_div_id = '#hand-sunset'
+    $(sunset_div_id).css('background-image', `url('/assets/images/clock/11/v2/sun/sunrise.png')`)
+    var rotate_string = "rotate(" + parseInt(sunset_degrees) + "deg)";
+    $(sunset_div_id).css('transform', rotate_string);
+    $(sunset_div_id).css('z-index',0);
+
     var order = 1
     var zindex = 10
     for (let planet of hands) {
