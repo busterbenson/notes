@@ -84,7 +84,8 @@ max_width: true
     z-index: 1;
   }
   #hand-1, #hand-2, #hand-3, #hand-4, #hand-5, #hand-6, #hand-7, #hand-8, #hand-9, #hand-10,
-  #hand-sunrise, #hand-sunset, #hand-constellations {
+  #hand-sunrise, #hand-sunset, #hand-constellations,
+  #label-hand-1, #label-hand-2, #label-hand-3, #label-hand-4, #label-hand-5, #label-hand-6, #label-hand-7, #label-hand-8, #label-hand-9, #label-hand-10 {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -136,6 +137,17 @@ max_width: true
   </div>
   <div id="clock-canvas">
     <div id="clock">
+      <div id="label-hand-1"></div>
+      <div id="label-hand-2"></div>
+      <div id="label-hand-3"></div>
+      <div id="label-hand-4"></div>
+      <div id="label-hand-5"></div>
+      <div id="label-hand-6"></div>
+      <div id="label-hand-7"></div>
+      <div id="label-hand-8"></div>
+      <div id="label-hand-9"></div>
+      <div id="label-hand-10"></div>
+
       <div id="hand-1"></div>
       <div id="hand-2"></div>
       <div id="hand-3"></div>
@@ -229,7 +241,7 @@ max_width: true
 
   // Global variables
   var location_available = null;
-  var debug = false; 
+  var debug = true; 
   var data_controls = false;
   var clock_width = null;
   var time_input_type = 'auto' // 'manual', 'one-time'
@@ -485,10 +497,13 @@ max_width: true
   function show_hide_hand(hand) {
     // console.log('show/hide hand: ' + hand)
     var hand_element = document.querySelector("[v-planet='" + hand + "']");
+    var hand_label_element = document.querySelector("[v-planet-label='" + hand + "']");
     if ($(hand_element).hasClass('hidden')) {
       $(hand_element).removeClass('hidden')
+      $(hand_label_element).removeClass('hidden')
     } else {
       $(hand_element).addClass('hidden')
+      $(hand_label_element).addClass('hidden')
     }  
     //$('#' + hand + '-hand').toggleClass('hidden')
   }
@@ -959,8 +974,8 @@ max_width: true
         'jupiter': [5,-5],
         'saturn': [6,-6],
         'uranus': [7,-7],
-        'neptune': [8,-8],
-        'pluto': [9,-9],
+        'neptune': [7,-7],
+        'pluto': [7,-7],
       },
       '07': {
         'sun': 2,
@@ -1031,8 +1046,8 @@ max_width: true
         'jupiter': [-5,5],
         'saturn': [-6,6],
         'uranus': [-7,7],
-        'neptune': [-8,8],
-        'pluto': [-9,9],
+        'neptune': [-7,7],
+        'pluto': [-7,7],
       },
     }
     // Sun goes somewhere on line -3 to 3.
@@ -1160,7 +1175,9 @@ max_width: true
     var zindex = 10
     for (let planet of hands) {
       var div_id = '#hand-'+order.toString()
+      var label_div_id = '#label-hand-'+order.toString()
       $(div_id).attr('v-planet', planet)
+      $(label_div_id).attr('v-planet-label', planet)
       if (planet == 'moon') {
         var phase = d['moonth_data']['moon_data']['phase_rough']  
         $(div_id).css('background-image', `url('/assets/images/clock/11/${moon_to_image_path[phase]}_${d['circle_plot'][planet]}.png')`)
@@ -1169,15 +1186,22 @@ max_width: true
         $(div_id).css('background-image', `url('/assets/images/clock/11/${planet_to_image_path[planet]}_${d['circle_plot'][planet]}.png')`)
       }
       
-      // console.log("Background image for "+div_id+" set to: "+$(div_id).css('background-image'))
-      
-      // console.log("/assets/images/clock/11/"+planet_to_image_path[planet]+"/4000_"+planet_to_image_path[planet]+"_"+d['circle_plot'][planet]+".png")
-
+      // Rotate the planets to their correct position
       var angle = d['plots'][planet]['degrees']
       debug ? console.log('ROTATING '+planet+" by "+angle) : null 
       var rotate_string = "rotate(" + parseInt(angle) + "deg)";
       $(div_id).css('transform', rotate_string);
       $(div_id).css('z-index', 0-order);
+
+      // Labels for the planets
+      if (planet != 'sun' && planet != 'moon') {
+        console.log(planet+' label'+": "+order)
+        $(label_div_id).css('background-image', `url('/assets/images/clock/11/v2/planets/${planet}-label.png')`)
+        $(label_div_id).css('transform', rotate_string);
+        $(label_div_id).css('z-index', 10);
+        $(label_div_id).css('opacity',0.7);
+      }
+
   
       //$('#hand-'+order.toString()).html('&nbsp;');
       order += 1
