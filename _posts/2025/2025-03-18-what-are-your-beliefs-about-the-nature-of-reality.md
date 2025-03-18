@@ -1,22 +1,20 @@
 ---
 title        : "What are your beliefs about the nature of reality?"
-link         : 
+link         : https://medium.com/@buster/what-are-your-beliefs-about-the-nature-of-reality-524b010d75e6
 author       : me
 
 one_liner    : "Discover your cosmic worldview with this short two-step interview"
 image			   : 
 piles			   : ['self-reflection']
 comment_link : 
-redirect		 : false
+redirect		 : true
 ---
 
 This short interview is designed to be a fun way to help you identify your fundamental beliefs about the nature of reality (aka your cosmology), and attempts to get kind of specific about it. It's not meant to be a comprehensive survey of all possible cosmologies, but rather a tool to help you identify your own cosmology and perhaps to spark a fun conversation with others.
 
-## STEP 1: Find your cosmology with this short interview
+## STEP 1: Identify your beliefs about the nature of reality at a high level
 
 Start at **Question 1**. Follow the instructions after each answer until you reach your initial cosmology. Then proceed to **Step 2** to refine your result.
-
-### Interview questions
 
 **1.** *Does your view of the universe include any kind of higher power or supernatural force (such as a God, gods, or spiritual energy) that is separate from ourselves?*  
    - **Yes** – go to **Question 2**.  
