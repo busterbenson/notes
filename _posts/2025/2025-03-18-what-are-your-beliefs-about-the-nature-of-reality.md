@@ -18,7 +18,7 @@ Start at **Question 1**. Follow the instructions after each answer until you rea
 
 ### Interview questions
 
-**1.** *Does your view of the universe include any kind of higher power or supernatural force (such as a God, gods, or spiritual energy)?*  
+**1.** *Does your view of the universe include any kind of higher power or supernatural force (such as a God, gods, or spiritual energy) that is separate from ourselves?*  
    - **Yes** – go to **Question 2**.  
    - **No** – go to **Question 11**.
 
