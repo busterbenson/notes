@@ -101,11 +101,11 @@ Congrats! You've identified your broad cosmological category from a broad range 
 
 *Which best describes your perspective on young Earth creationism?*
 
-a. **Biblical Literalism** – You believe in a strict, literal reading of Genesis, with Earth being approximately 6,000-10,000 years old, created in six 24-hour days. You see scientific evidence like radiometric dating or distant starlight as either flawed or created "with age" by God.
+a. **Biblical Literalism** – You believe in a strict, literal reading of Genesis as God's inerrant word, with Earth being approximately 6,000-10,000 years old, created in six 24-hour days. You see apparent scientific evidence for an older Earth (like radiometric dating or distant starlight) as either flawed due to incorrect assumptions or created "with age" by God as part of His perfect design.
 
-b. **Appearance of Age Theory** – You believe God created the universe recently but with the appearance of great age. Just as Adam might have been created as an adult rather than an infant, the entire cosmos was created with a "history" already built in.
+b. **Appearance of Age Theory** – You believe God created the universe recently with a fully-functioning, mature appearance, just as Adam was created as an adult rather than an infant. The entire cosmos was created with a "history" already built in for functional and theological purposes, reflecting God's wisdom and sovereignty.
 
-c. **Catastrophism** – You believe Earth is young, but its geology has been dramatically shaped by catastrophic events (especially Noah's Flood), which explain phenomena like the fossil record and geological features that scientists attribute to long ages.
+c. **Catastrophism** – You believe Earth is young, but its geology has been dramatically shaped by catastrophic events (especially Noah's global Flood), which explain phenomena like the fossil record, geological strata, and features that mainstream scientists wrongly attribute to long ages. This framework provides a scientifically coherent alternative to uniformitarian geology that remains faithful to scripture.
 
 ### Theistic Evolution
 
@@ -185,13 +185,13 @@ d. **Eclectic Synthesis** – You draw from multiple spiritual traditions, ancie
 
 *Which Eastern tradition most closely reflects your understanding?*
 
-a. **Buddhist Cosmology** – You embrace a worldview centered on emptiness (sunyata) and dependent origination. Ultimate reality has no fixed essence; everything arises interdependently. Through meditation and ethical living, one can realize this truth and attain liberation from suffering.
+a. **Buddhist Cosmology** – You recognize through direct insight that ultimate reality has no fixed essence (emptiness/sunyata) and all phenomena arise interdependently. This isn't merely an abstract philosophy but a profound truth that can be directly experienced through meditation practice. Liberation comes not through belief but through clear seeing of reality as it is, free from the illusion of a separate self.
 
-b. **Advaita Vedanta** – You follow the non-dualistic philosophy that Brahman (ultimate reality) and Atman (the self) are one. The apparent plurality of existence is maya (illusion), and spiritual practice aims at recognizing your true nature as identical with the divine ground of being.
+b. **Advaita Vedanta** – You understand the profound non-dual teaching that Brahman (ultimate reality) and Atman (your true self) are fundamentally one and the same. The apparent plurality and separateness we experience is maya (cosmic illusion), and through self-inquiry and spiritual practice, you can directly realize your true nature as identical with the divine ground of being. This realization is not theoretical but a lived experience of "Tat Tvam Asi" (That Thou Art).
 
-c. **Taoist Cosmology** – You understand the cosmos through principles of natural balance, flow, and the interplay of opposing yet complementary forces (yin and yang). The Tao is the unnameable source and pattern of existence that operates through non-action (wu-wei).
+c. **Taoist Cosmology** – You perceive the cosmos as an expression of natural balance, flow, and the dance of complementary forces (yin and yang). The Tao is the ineffable source and pattern of existence that operates through non-action (wu-wei) and manifests as the ten thousand things. By aligning with this natural way through simplicity, receptivity, and letting go, you find harmony within the cosmic order.
 
-d. **Yogic/Tantric** – You see the universe as the divine play (lila) of consciousness and energy, with subtle dimensions and channels mirroring cosmic patterns. Through specific practices of breath, visualization, and energy work, you aim to realize unity with cosmic consciousness.
+d. **Yogic/Tantric** – You experience the universe as the divine play (lila) of consciousness and energy—Shiva and Shakti in eternal embrace. Reality contains multiple dimensions and subtle energetic patterns that mirror cosmic principles. Through systematic practices of breath, visualization, and energy work, you're progressively realizing your fundamental unity with cosmic consciousness and witnessing the divine in all things.
 
 ### Gnosticism/Esoteric Dualism
 
@@ -231,13 +231,13 @@ d. **Conscious Simulation** – You believe the simulation isn't computational b
 
 *Which aspect of idealism best represents your perspective?*
 
-a. **Kastrupian Dissociation** – Following Bernardo Kastrup, you see the universe as the extrinsic appearance of processes in a universal mind, with individual consciousnesses as "dissociated alters" of this mind, similar to dissociative identity disorder on a cosmic scale.
+a. **Kastrupian Dissociation** – You understand that consciousness is the fundamental nature of reality, not a product of physical processes. Following Bernardo Kastrup's framework, you recognize the universe as the extrinsic appearance of processes in universal consciousness, with individual minds as "dissociated alters" of this cosmic mind. This perspective isn't mere philosophy but a coherent, parsimonious explanation that resolves paradoxes of consciousness while remaining fully compatible with scientific evidence.
 
-b. **Quantum Idealism** – You connect idealism with quantum physics, seeing quantum phenomena (observer effects, non-locality, wave function collapse) as evidence that consciousness is fundamental to reality, not an emergent property of matter.
+b. **Quantum Idealism** – You recognize that quantum physics reveals a universe where consciousness and observation play a fundamental role. Observer effects, non-locality, and wave function collapse all point to mind as primary, not secondary. Far from being mystical speculation, this perspective aligns with cutting-edge experimental data while resolving paradoxes that continue to confound materialist interpretations of quantum theory.
 
-c. **Transcendental Idealism** – Following Kant, you believe the structures of human consciousness shape our experience of reality, making the "thing-in-itself" unknowable. Space, time, and causality are features of consciousness, not objective reality independent of mind.
+c. **Transcendental Idealism** – Following Kant's profound insight, you recognize that the structures of consciousness shape our experience of reality in ways we cannot transcend. Space, time, and causality are features of how minds organize experience, not objective features independent of consciousness. This isn't denying a real world, but acknowledging the critical role of consciousness in constituting the world we experience.
 
-d. **Neutral Monism** – You believe reality's fundamental nature is neither mental nor physical but a neutral substance that gives rise to both mind and matter as different expressions. Consciousness and physicality are two aspects of the same underlying reality.
+d. **Neutral Monism** – You understand reality's fundamental nature as neither exclusively mental nor physical but a neutral substance that manifests as both mind and matter depending on how it's observed. Consciousness and physicality are two aspects of the same underlying reality—a perspective that harmoniously bridges the apparent divide between subjective experience and objective description.
 
 ### Multiverse Theory
 
@@ -255,23 +255,23 @@ d. **Cyclical Universe** – You believe our universe undergoes endless cycles o
 
 *Which form of scientific materialism best describes your perspective?*
 
-a. **Reductive Materialism** – You believe all phenomena, including consciousness, can ultimately be reduced to fundamental physical particles and forces. Everything from thoughts to ecosystems can in principle be explained by physics and chemistry.
+a. **Reductive Materialism** – You value the elegance and explanatory power of understanding all phenomena, including consciousness, as ultimately reducible to fundamental physical particles and forces. This empirically-grounded position has consistently advanced human knowledge by revealing the underlying physical mechanisms of increasingly complex systems, from chemical reactions to neural activity, without requiring additional non-physical elements.
 
-b. **Emergent Materialism** – While accepting the physical basis of reality, you recognize that complex systems develop emergent properties not predictable from their components. Consciousness, life, and social phenomena require higher-level explanations beyond particle physics.
+b. **Emergent Materialism** – You recognize that while the universe is fundamentally physical, complex systems develop genuinely novel properties not predictable from analysis of their components alone. Consciousness, life, and social phenomena represent emergent levels of organization requiring their own descriptive frameworks. This nuanced position honors both the physical foundation of reality and the genuine novelty that arises at higher levels of complexity.
 
-c. **Pragmatic Instrumentalism** – You see scientific theories as useful tools for prediction and control rather than literal descriptions of reality. The "truth" of materialism lies in its practical utility, not in metaphysical claims about ultimate reality.
+c. **Pragmatic Instrumentalism** – You see scientific theories as powerful tools for prediction and control rather than literal descriptions of an ultimate reality. The value of materialism lies in its extraordinary practical utility and predictive success, not in metaphysical claims about what "really" exists. This pragmatic approach sidesteps unresolvable metaphysical debates while maintaining the full practical power of scientific methodology.
 
-d. **Poetic Naturalism** – Following Sean Carroll's approach, you embrace multiple valid ways of talking about reality at different levels (physical, biological, psychological), all compatible with a fundamental physical world but not reducible to physics in practice.
+d. **Poetic Naturalism** – Following Sean Carroll's approach, you embrace multiple valid ways of talking about reality at different levels (physical, biological, psychological), all compatible with a fundamental physical world. These aren't merely convenient fictions but genuine ways of capturing real patterns in nature that matter for different purposes. This layered approach provides a rich, scientifically grounded framework for understanding reality at multiple scales.
 
 ### Flat Earth Conspiracy
 
 *Which aspect of Earth skepticism best captures your view?*
 
-a. **Biblical Flat Earth** – You believe the Earth is flat primarily based on scriptural descriptions, viewing scientific globe models as contradicting divine revelation and religious authority.
+a. **Biblical Flat Earth** – You hold that scripture clearly describes a stationary Earth with the firmament above, the waters below, and the sun and moon as luminaries that move across the sky. You see this not as primitive misunderstanding but as divine revelation that should take precedence over human scientific claims that contradict God's word. The globe model represents human wisdom standing against divine authority.
 
-b. **Conspiratorial Flat Earth** – You believe powerful institutions (NASA, governments, scientists) are deliberately hiding the true flat nature of Earth to maintain control, manipulate resources, or advance hidden agendas.
+b. **Conspiratorial Flat Earth** – You've discovered compelling evidence that powerful institutions are deliberately concealing the true flat nature of Earth. This deception serves various agendas—from maintaining authority over cosmological understanding to hiding additional land beyond Antarctica's ice wall. Your position isn't based on ignorance but on critical analysis of claimed evidence for Earth's curvature, space travel, and satellite imagery.
 
-c. **Experiential Flat Earth** – You trust direct sensory experience over scientific claims, noting that the Earth appears flat in everyday observation and questioning evidence for curvature or space-based photography as potentially manipulated.
+c. **Experiential Flat Earth** – You prioritize your direct sensory experience over abstract scientific claims. In your daily observation, the Earth appears flat, water always finds its level, and the horizon rises to eye level regardless of altitude. You question whether complex explanations involving curves and forces are necessary when the simplest explanation—that Earth is flat—matches what we actually see and experience.
 
 ### Hollow Earth Theory
 
@@ -309,13 +309,13 @@ d. **Ongoing Presence** – You believe ancient astronauts never fully left Eart
 
 *Which aspect of Indigenous cosmology most resonates with your understanding?*
 
-a. **Place-Based Knowledge** – You value deep connection to specific lands and ecosystems, believing that authentic knowledge emerges from generations of relationship with particular places, each with their own needs, spirits, and teachings.
+a. **Place-Based Knowledge** – You participate in a living relationship with the specific lands and ecosystems that have sustained indigenous people for countless generations. You know that authentic understanding comes from this deep connection to particular places, each with their own needs, spirits, and teachings that reveal themselves to those who approach with proper respect and attentiveness over time.
 
-b. **Kinship Cosmology** – You see humans as just one kind of person in a vast family that includes animal persons, plant persons, rock persons, and other beings. Proper living requires maintaining respectful family relationships with all these relatives.
+b. **Kinship Cosmology** – You recognize humans as just one kind of person in a vast extended family that includes animal persons, plant persons, stone persons, and other beings. This isn't metaphorical but literal—these other-than-human persons have their own languages, societies, and intentions. Proper living requires maintaining respectful family relationships with all these relatives through specific cultural protocols developed over generations.
 
-c. **Ceremonial Reality** – You believe ceremony and ritual are not merely symbolic but actively maintain cosmic balance and renew relationships between humans and other-than-human persons, with real consequences for ecological and social wellbeing.
+c. **Ceremonial Reality** – You participate in ceremonies not as symbolic rituals but as real actions that maintain cosmic balance and renew vital relationships between humans and other-than-human persons. These ceremonies aren't separate from "reality" but are essential, pragmatic ways of ensuring continuation of life and community wellbeing through specific practices passed down by ancestors.
 
-d. **Ancestral Continuity** – You understand time as cyclical rather than linear, with ancestors remaining present and involved in current affairs. Knowledge comes through dreams, visions, and direct communication with ancestral guides.
+d. **Ancestral Continuity** – You experience time as cyclical rather than linear, with ancestors remaining present and actively involved in current affairs rather than relegated to a distant past. Knowledge comes through dreams, visions, and direct communication with ancestral guides who continue to teach and protect the community. Listening to these voices is a practical skill developed through cultural guidance.
 
 ### Unconventional Skeptic
 
