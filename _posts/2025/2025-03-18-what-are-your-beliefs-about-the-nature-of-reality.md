@@ -16,88 +16,76 @@ This short interview is designed to be a fun way to help you identify your funda
 
 Start at **Question 1**. Follow the instructions after each answer until you reach your initial cosmology. Then proceed to **Step 2** to refine your result.
 
-**1.** *Does your view of the universe include any kind of higher power or supernatural force (such as a God, gods, or spiritual energy) that is separate from ourselves?*  
-   - **Yes** – go to **Question 2**.  
-   - **No** – go to **Question 11**.
+**1.** *Which statement best captures your beliefs about the fundamental nature of reality?*  
+   - **Reality is the creation of one supreme being** → go to **Question 2**.  
+   - **Reality involves the interaction of multiple gods or spiritual entities** → go to **Question 3**.
+   - **Reality is primarily consciousness or mind, not physical matter** → go to **Question 4**.
+   - **Reality consists primarily of physical processes and natural laws** → go to **Question 5**.
+   - **Reality includes accessible metaphysical energies or forces** → go to **Question 6**.
+   - **Reality differs significantly from mainstream scientific or religious consensus** → go to **Question 11**.
 
-**2.** *Is there **one** supreme being (a single God) who intentionally created the universe?*  
-   - **Yes** – go to **Question 3**.  
-   - **No** – go to **Question 5**.
+**2.** *Which best describes your view of the supreme being's relationship to the universe?*  
+   - **The supreme being exists entirely separate from creation** → go to **Question 7**.  
+   - **The supreme being and the universe are identical; all reality is divine** → Continue to refine by going to **Pantheism** in **Step 2**.
+   - **The universe exists within the supreme being, who both permeates and transcends it** → Continue to refine by going to **Panentheism** in **Step 2**.
+   - **The supreme being created the universe but is no longer involved** → Continue to refine by going to **Deism** in **Step 2**.
 
-**3.** *Do you believe this God is actively involved in the universe and human life (answering prayers, guiding events, etc.)?*  
-   - **Yes** – go to **Question 4**.  
-   - **No** – Your initial cosmology is **Deism**. Continue to refine by going to to **Deism** in **Step 2**.
+**3.** *What kind of gods or spirits primarily influence the world?*  
+   - **Multiple deities or gods** → Continue to refine by going to **Polytheism** in **Step 2**. 
+   - **Spirits exist in all things (animals, plants, mountains, etc.)** → Continue to refine by going to **Animism** in **Step 2**.
 
-**4.** *Do you believe the creation story from scripture is **literal** (for example, that the universe was made in 6 days or is only a few thousand years old)?*  
-   - **Yes** – Your initial cosmology is **Young Earth Creationism**. Continue to refine by going to to **Young Earth Creationism** in **Step 2**.  
-   - **No** – Your initial cosmology is **Theistic Evolution**. Continue to refine by going to to **Theistic Evolution** in **Step 2**. 
+**4.** *How would you characterize the relationship between consciousness and reality?*
+   - **Consciousness is the foundation from which all physical reality appears** Like a screen on which all movies appear—the screen exists independently of any particular movie and is more fundamental than the images → Continue to refine by going to **Consciousness-First Cosmology** in **Step 2**.
+   - **The apparent separation between self and world is an illusion; reality is unified beyond concepts** Like waves and water—not two separate things, just different ways of experiencing the same reality. The wave isn't created by the water; it is the water in motion. → Continue to refine by going to **Non-Dual & Beyond-Concept Traditions** in **Step 2**. 
+   - **The entire universe is divine or sacred in nature** Like a cosmic mind dreaming or thinking the universe, where everything that exists is a divine thought or idea within universal intelligence → Continue to refine by going to **Pantheism** in **Step 2**.
+   - **The physical world conceals or distracts from a higher spiritual reality** Like being trapped in a convincing virtual reality created by a flawed programmer, with liberation requiring awakening to the deception. → Continue to refine by going to **Gnosticism/Esoteric Dualism** in **Step 2**.
 
-**5.** *Do you believe in **multiple** gods or spirits that influence the world?*  
-   - **Yes, primarily in multiple deities or gods** – Your initial cosmology is **Polytheism**. Continue to refine by going to to **Polytheism** in **Step 2**. 
-   - **Yes, primarily that spirits or consciousness exist in all things (animals, plants, mountains, etc.)** – Your initial cosmology is **Animism**. Continue to refine by going to to **Animism** in **Step 2**.
-   - **No** – go to **Question 6**.
+**5.** *Do you generally **trust mainstream science** on the fundamental nature and history of the universe (e.g. Big Bang ~13.8 billion years ago, Earth is a globe orbiting the Sun)?*  
+   - **Yes, and I believe physical processes operate without supernatural intervention** → go to **Question 8**.  
+   - **Yes, but I find spiritual meaning within the natural world** → Continue to refine by going to **Spiritual Naturalism** in **Step 2**.
+   - **No** → go to **Question 11**.
 
-**6.** *Do you feel that the **universe itself** is divine or has an all-pervading consciousness?*  
-   - **Yes** – go to **Question 7**.  
-   - **No** – go to **Question 9**.
+**6.** *Which approach to accessing metaphysical energies resonates with you the most?*
+   - **Energy healing, astrology, manifesting with intention, crystal work, etc.** → Continue to refine by going to **New Age Spiritualism** in **Step 2**.
+   - **I'm exploring various spiritual paths while maintaining healthy skepticism** → Continue to refine by going to **Agnostic Spiritual Seeker** in **Step 2**.
 
-**7.** *Which best describes your view of the relationship between the divine and the universe?*
-   - **The universe IS the divine** (all reality is God) – go to **Question 8**.
-   - **The universe is WITHIN the divine** (God includes but transcends the universe) – Your initial cosmology is **Panentheism**. Continue to refine by going to to **Panentheism** in **Step 2**.
-   - **Neither of these** – go to **Question 9**.
+**7.** *Which best describes your view of God's relationship to creation?*
+   - **God created the universe according to literal scriptural accounts** (e.g., in 6 days, or only a few thousand years ago) → Continue to refine by going to **Young Earth Creationism** in **Step 2**.
+   - **God works through natural processes like evolution, while remaining separate from creation** → Continue to refine by going to **Theistic Evolution** in **Step 2**.
+   - **God encompasses and interpenetrates all of creation, which exists within divine reality** → Continue to refine by going to **Panentheism** in **Step 2**.
 
-**8.** *Do you resonate with **New Age** ideas (e.g. belief in energy healing, astrology, manifesting reality with thoughts)?*  
-   - **Yes** – Your initial cosmology is **New Age Spiritualism**. Continue to refine by going to to **New Age Spiritualism** in **Step 2**. 
-   - **No** – Your initial cosmology is **Pantheism**. Continue to refine by going to to **Pantheism** in **Step 2**. 
+**8.** *Do you believe that we likely live in an artificial simulation or experiment created by more technologically-advanced beings?*  
+   - **Yes** → Continue to refine by going to **Simulation Hypothesis** in **Step 2**.  
+   - **No** → go to **Question 9**.
 
-**9.** *Do you believe in **reincarnation** or cycles of rebirth for souls/consciousness?*  
-   - **Yes** – Your initial cosmology is **Eastern Mysticism**. Continue to refine by going to to **Eastern Mysticism** in **Step 2**.  
-   - **No** – go to **Question 10**.
+**9.** *Do you believe that consciousness, rather than matter, is the fundamental reality of the universe?*
+   - **Yes** → Continue to refine by going to **Consciousness-First Cosmology** in **Step 2**.
+   - **No** (you believe matter or physical laws are more fundamental) → go to **Question 10**.
 
-**10.** *Is the physical world an **illusion or trap** created by a lesser being (often called a Demiurge), from which we need spiritual knowledge to escape?*  
-   - **Yes** – Your initial cosmology is **Gnosticism/Esoteric Dualism**. Continue to refine by going to to **Gnosticism/Esoteric Dualism** in **Step 2**.  
-   - **No** – Your initial cosmology is **Agnostic Spiritual Seeker**. Continue to refine by going to to **Agnostic Spiritual Seeker** in **Step 2**.
+**10.** *Do you believe our universe is just **one of many** universes (part of a larger Multiverse)?*  
+   - **Yes** → Continue to refine by going to **Multiverse Theory** in **Step 2**.  
+   - **No** → Continue to refine by going to **Scientific Materialism** in **Step 2**.
 
-**11.** *Do you generally **trust mainstream science** on the nature and history of the universe (e.g. Big Bang ~13.8 billion years ago, Earth is a globe orbiting the Sun)?*  
-   - **Yes** – go to **Question 12**.  
-   - **No** – go to **Question 15**.
+**11.** *Which of the following perspectives do you align with most? Pick the closest match.
+   - **a. Non-Dual & Beyond-Concept Traditions** – You believe reality transcends dualistic thinking and conceptual frameworks. Truth cannot be fully captured by fixed views but must be directly experienced through insight that goes beyond conventional understanding. → Continue to refine by going to **Non-Dual & Beyond-Concept Traditions** in **Step 2**.
+    - **b. Flat Earth/Geocentrism** – You reject the globe model and believe Earth is flat or the unmoving center of the universe, with mainstream astronomy being a deception. → Continue to refine by going to **Flat Earth Conspiracy** in **Step 2**.
+    - **d. Ancient Aliens** – *You believe extraterrestrials visited Earth in antiquity and shaped human civilization, with humanity's past and possibly our origins being interwoven with advanced alien species.* → Continue to refine by going to **Ancient Astronaut Theory** in **Step 2**.  
+    - **e. Indigenous Cosmologies** – *You see reality as a vast web of relationships between all beings (human and non-human) in a living system where place, ceremony, and ancestral knowledge are central, requiring respect and reciprocity.* → Continue to refine by going to **Indigenous Relational Worldview** in **Step 2**.
+    - **f. None of the above** – *You're skeptical of mainstream narratives about reality but don't commit to any one alternative theory, preferring to question established explanations while remaining open to multiple possibilities.* → Continue to refine by going to **Unconventional Skeptic** in **Step 2**.
 
-**12.** *Do you suspect that our reality was **created by an intelligence** (for example, that we live in an artificial simulation or experiment)?*  
-   - **Yes** – Your initial cosmology is **Simulation Hypothesis**. Continue to refine by going to to **Simulation Hypothesis** in **Step 2**.  
-   - **No** – go to **Question 13**.
-
-**13.** *Do you believe that consciousness, rather than matter, is the fundamental reality of the universe?*
-   - **Yes** – Your initial cosmology is **Analytic Idealism**. Continue to refine by going to to **Analytic Idealism** in **Step 2**.
-   - **No** – go to **Question 14**.
-
-**14.** *Do you think our universe is just **one of many** universes (a part of a larger Multiverse)?*  
-   - **Yes** – Your initial cosmology is **Multiverse Theory**. Continue to refine by going to to **Multiverse Theory** in **Step 2**.  
-   - **No** – Your initial cosmology is **Scientific Materialism**. Continue to refine by going to to **Scientific Materialism** in **Step 2**.
-
-**15.** *Which of the following alternative ideas do you **align with most**?* (Pick the closest match)  
-   a. **Flat Earth/Geocentrism** – *You reject the globe model and suspect Earth is flat or the unmoving center of the universe, with mainstream astronomy being a deception.* Your initial cosmology is **Flat Earth Conspiracy**. Continue to refine by going to to **Flat Earth Conspiracy** in **Step 2**.  
-   
-   b. **Hollow Earth** – *You believe Earth has a vast hollow interior, possibly inhabited or containing hidden lands, suggesting science hasn't fully mapped Earth's structure and grand discoveries await underground.* Your initial cosmology is **Hollow Earth Theory**. Continue to refine by going to to **Hollow Earth Theory** in **Step 2**.  
-   
-   c. **Electric Universe** – *You favor a cosmos where electromagnetism and plasma play a dominant role in shaping structures rather than gravity alone, seeing the universe as an electromagnetic tapestry with plasma filaments lighting the galaxies.* Your initial cosmology is **Electric Universe Theory**. Continue to refine by going to to **Electric Universe Theory** in **Step 2**.  
-   
-   d. **Ancient Aliens** – *You believe extraterrestrials visited Earth in antiquity and shaped human civilization, with humanity's past and possibly our origins being interwoven with advanced alien species.* Your initial cosmology is **Ancient Astronaut Theory**. Continue to refine by going to to **Ancient Astronaut Theory** in **Step 2**.  
-   
-   e. **Indigenous Cosmologies** – *You see reality as a vast web of relationships between all beings (human and non-human) in a living system where place, ceremony, and ancestral knowledge are central, requiring respect and reciprocity.* Your initial cosmology is **Indigenous Relational Worldview**. Continue to refine by going to to **Indigenous Relational Worldview** in **Step 2**.
-   
-   f. **None of the above** – *You're skeptical of mainstream narratives about reality but don't commit to any one alternative theory, preferring to question established explanations while remaining open to multiple possibilities.* Your initial cosmology is **Unconventional Skeptic**. Continue to refine by going to to **Unconventional Skeptic** in **Step 2**.
-
-(If you've been directed to Step 2, proceed to the next section to refine your cosmology!)
+If you've been directed to Step 2, proceed to the next section to refine your cosmology! 
 
 ---
 
-## STEP 2: Refine your cosmology
+## STEP 2: Refine your initial cosmology
 
-Congrats! You've identified your broad cosmological category from a broad range of possibilities! Now, look for it below and answer one final question to pinpoint your precise view of the cosmos.
+Congratulations! You've identified your initial cosmology from a broad range of possibilities. If you feel your initial result doesn't match your beliefs, feel free to go back to **Question 1** and try a different path. If it feels generally correct, find your cosmology below and answer one final question to pinpoint your precise view of the cosmos.
 
 ### Young Earth Creationism
 
-*Which best describes your perspective on young Earth creationism?*
+Unlike frameworks that accommodate evolutionary timeframes, Young Earth Creationism upholds the integrity of scriptural accounts by recognizing Earth's recent creation (typically 6,000-10,000 years ago) as revealed in divine revelation rather than reinterpreting these texts to match scientific consensus.
+
+*Which of these best describes your perspective on young Earth creationism?*
 
 a. **Biblical Literalism** – You believe in a strict, literal reading of Genesis as God's inerrant word, with Earth being approximately 6,000-10,000 years old, created in six 24-hour days. You see apparent scientific evidence for an older Earth (like radiometric dating or distant starlight) as either flawed due to incorrect assumptions or created "with age" by God as part of His perfect design.
 
@@ -106,6 +94,8 @@ b. **Appearance of Age Theory** – You believe God created the universe recentl
 c. **Catastrophism** – You believe Earth is young, but its geology has been dramatically shaped by catastrophic events (especially Noah's global Flood), which explain phenomena like the fossil record, geological strata, and features that mainstream scientists wrongly attribute to long ages. This framework provides a scientifically coherent alternative to uniformitarian geology that remains faithful to scripture.
 
 ### Theistic Evolution
+
+While maintaining that God purposefully created life (unlike purely materialistic evolution), Theistic Evolution sees natural processes like evolution as God's method of creation, avoiding both the scriptural literalism of Young Earth Creationism and the divine detachment of Deism.
 
 *Which aspect of theistic evolution resonates most with you?*
 
@@ -117,6 +107,8 @@ c. **Teilhardian Evolution** – Following Pierre Teilhard de Chardin's vision, 
 
 ### Deism
 
+Unlike traditions that emphasize ongoing divine intervention, Deism recognizes that the supreme being established perfect natural laws at creation and then stepped back, allowing the universe to unfold according to these rational principles without requiring miracles or supernatural disruptions.
+
 *Which form of deism best represents your view?*
 
 a. **Classical Deism** – You believe God created the universe with perfectly designed natural laws and then stepped back, letting it run like a cosmic clock. God neither intervenes nor desires worship; reason and observation of nature are the paths to understanding the Creator.
@@ -126,6 +118,8 @@ b. **Modern Deism** – While you believe a creator initiated the universe, you'
 c. **Scientific Deism** – You see the fundamental laws and constants of physics as evidence of design, particularly their fine-tuning that permits life. Your concept of God is more abstract—perhaps as the ground of mathematics or the source of natural law—rather than a personal being.
 
 ### Polytheism
+
+Unlike monotheistic frameworks that reduce divine complexity to a single being, Polytheism recognizes multiple distinct gods with different domains and personalities who interact with humanity and each other in a rich tapestry of relationships that better reflects the diversity and complexity of existence.
 
 *Which polytheistic framework best reflects your understanding?*
 
@@ -139,25 +133,31 @@ d. **Hard Polytheism** – You believe each deity is absolutely distinct, with s
 
 ### Animism
 
+Unlike perspectives that see consciousness as exclusive to humans or that separate spirit from matter, Animism recognizes that consciousness, personhood, or spiritual essence dwells within all natural entities (animals, plants, mountains, rivers), creating a community of beings deserving moral consideration and relationship.
+
 *Which animistic perspective best captures your worldview?*
 
 a. **Traditional Animism** – You believe all things (animals, plants, rocks, rivers, weather systems) possess spirits, consciousness, or personhood, forming a community of beings with agency beyond humans. Proper relationships with these beings involve respect, reciprocity, and ritual acknowledgment.
 
 b. **Neo-Animism** – You've developed a contemporary animistic practice that recognizes consciousness or personhood in natural entities, perhaps blending traditional ideas with modern ecological awareness, phenomenology, or systems thinking.
 
-c. **Panpsychism** – You believe consciousness is a fundamental feature of the universe, present to some degree in all things, even at the subatomic level. Rather than separate "spirits," you see consciousness as intrinsic to matter itself, varying in complexity and expression.
+c. **Panpsychism** – You believe consciousness is a fundamental feature of the universe, present to some degree in all things, even at the subatomic level. Unlike idealist views that see matter as emergent from consciousness, panpsychism maintains that consciousness is an intrinsic property of matter itself, varying in complexity and expression across the physical spectrum.
 
 ### Panentheism
 
+Unlike pantheism where God and the universe are identical, or traditional theism where God stands apart from creation, Panentheism recognizes that while the divine permeates everything in the universe, God also transcends it—the world exists within God, yet God is greater than the world.
+
 *Which understanding of panentheism most resonates with you?*
 
-a. **Process Panentheism** – Following Alfred North Whitehead and process theology, you believe God and the world are in mutual becoming, with God including yet transcending the universe. God experiences the world and is affected by it, while still maintaining transcendent aspects beyond creation.
+a. **Process Panentheism** → Following Alfred North Whitehead's vision of reality as dynamic process rather than static substance, you see God and the world in mutual becoming, with God including yet transcending the universe. God experiences the world and is affected by it, while still maintaining aspects beyond creation.
 
-b. **Emanationist Panentheism** – You believe the cosmos flows from or emanates from divine reality while remaining within it. Creation is a manifestation of divine energies or aspects, with each level of reality reflecting divine being according to its capacity.
+b. **Emanationist Panentheism** → You understand the cosmos as flowing from or emanating from divine reality while remaining within it. Creation unfolds in descending levels of reality (like light radiating from a source), with each level reflecting divine being according to its capacity while remaining connected to its source.
 
-c. **Participatory Panentheism** – You understand the universe as participating in divine reality through consciousness. Through contemplative awareness or mystical experience, beings can recognize their existence within God while acknowledging God's transcendence.
+c. **Participatory Panentheism** → You see the universe as participating in divine reality through consciousness. Through contemplative awareness or mystical experience, beings can recognize their existence within God while acknowledging God's transcendence, experiencing union without complete identity.
 
 ### Pantheism
+
+Unlike theistic perspectives that separate divinity from nature, Pantheism recognizes that the universe itself is divine and sacred, with no distinction between God and natural reality—divinity is directly experienced in the wonder, complexity, and interconnectedness of the cosmos itself.
 
 *Which form of pantheism best describes your view?*
 
@@ -169,7 +169,9 @@ c. **Monistic Pantheism** – You believe all apparent diversity and multiplicit
 
 ### New Age Spiritualism
 
-*Which New Age path most closely aligns with your perspective?*
+Unlike dogmatic religious traditions, New Age Spiritualism embraces direct personal engagement with spiritual energies, consciousness transformation, and metaphysical practices drawn from multiple wisdom traditions, emphasizing individual experience and intuitive knowing over institutional authority.
+
+*Choose one or more of these New Age paths that resonate with your perspective.*
 
 a. **Consciousness-Focused** – You believe consciousness creates reality, with thoughts and intentions directly affecting the material world. Practices like the Law of Attraction, manifestation techniques, and visualization are central to your worldview.
 
@@ -179,19 +181,43 @@ c. **Evolutionary Consciousness** – You believe humanity is evolving toward hi
 
 d. **Eclectic Synthesis** – You draw from multiple spiritual traditions, ancient wisdom, and modern metaphysics, creating a personalized path. You value direct experience over dogma and believe in finding your own truth among many valid perspectives.
 
-### Eastern Mysticism
+### Spiritual Naturalism
 
-*Which Eastern tradition most closely reflects your understanding?*
+Unlike supernatural worldviews, Spiritual Naturalism finds profound meaning, wonder, and value within the natural universe as revealed by science, recognizing that spiritual experiences like awe, connection, and transcendence emerge from natural processes rather than requiring divine intervention.
 
-a. **Buddhist Cosmology** – You recognize through direct insight that ultimate reality has no fixed essence (emptiness/sunyata) and all phenomena arise interdependently. This isn't merely an abstract philosophy but a profound truth that can be directly experienced through meditation practice. Liberation comes not through belief but through clear seeing of reality as it is, free from the illusion of a separate self.
+*Which approach to finding spiritual meaning within a natural universe best represents your view?* 
 
-b. **Advaita Vedanta** – You understand the profound non-dual teaching that Brahman (ultimate reality) and Atman (your true self) are fundamentally one and the same. The apparent plurality and separateness we experience is maya (cosmic illusion), and through self-inquiry and spiritual practice, you can directly realize your true nature as identical with the divine ground of being. This realization is not theoretical but a lived experience of "Tat Tvam Asi" (That Thou Art).
+a. **Scientific Spirituality** – You find profound spiritual meaning in scientific understanding itself, experiencing awe and wonder through cosmology, evolution, and natural processes. You see the scientific narrative of the universe—from the Big Bang to the emergence of life and consciousness—as a sacred story that connects us to something larger than ourselves, without requiring supernatural elements.
 
-c. **Taoist Cosmology** – You perceive the cosmos as an expression of natural balance, flow, and the dance of complementary forces (yin and yang). The Tao is the ineffable source and pattern of existence that operates through non-action (wu-wei) and manifests as the ten thousand things. By aligning with this natural way through simplicity, receptivity, and letting go, you find harmony within the cosmic order.
+b. **Naturalistic Buddhism** – You embrace Buddhist insights and practices while interpreting them in naturalistic terms. You see concepts like impermanence, non-self, and causality as empirical realities rather than metaphysical claims. You might interpret karma as psychological patterns and rebirth as moment-to-moment change rather than literal reincarnation. Meditation serves as a practical tool for understanding mind patterns and fostering well-being rather than achieving supernatural states.
 
-d. **Yogic/Tantric** – You experience the universe as the divine play (lila) of consciousness and energy—Shiva and Shakti in eternal embrace. Reality contains multiple dimensions and subtle energetic patterns that mirror cosmic principles. Through systematic practices of breath, visualization, and energy work, you're progressively realizing your fundamental unity with cosmic consciousness and witnessing the divine in all things.
+c. **Philosophical Naturalism** – You find meaning, value, and purpose within a fully natural cosmos through philosophical reflection. Following thinkers like Spinoza or the Stoics, you see ethical development and rational understanding as spiritual practices in themselves. You might describe your approach as "rational spirituality" or "ethical naturalism," recognizing that profound values like love, justice, and beauty emerge naturally from the universe without requiring divine origins.
+
+d. **Embodied Spirituality** – You experience spirituality primarily through the body and its connection to the natural world. Your practice might include movement, dance, wilderness experiences, or somatic awareness as pathways to transcendence and meaning. You find that direct physical experience of being alive in the natural world provides a form of spiritual nourishment that doesn't require supernatural beliefs.
+
+e. **Naturalistic Taoism** – You appreciate the Taoist emphasis on harmony with natural processes, the balance of complementary forces, and the wisdom of non-action (wu-wei). Rather than viewing the Tao as a metaphysical force, you see it as a powerful metaphor for the patterns and processes of nature. Your practice focuses on aligning with natural rhythms and finding wisdom in the natural world without supernatural elements.
+
+### Non-Dual & Beyond-Concept Traditions
+
+Unlike frameworks that operate within conceptual boundaries, Non-Dual & Beyond-Concept Traditions recognize that reality transcends ordinary dualistic thinking and language-based understanding, pointing to direct insight beyond the subject-object divide as the path to ultimate truth.
+
+*Which approach to transcending dualistic thinking and conceptual frameworks most resonates with your understanding?*
+
+a. **Buddhist Emptiness Approach** – You recognize that all phenomena lack inherent existence (svabhāva) and arise interdependently. You use philosophical analysis and meditation to reveal how apparent reality is empty of independent existence. Through realizing emptiness, you find freedom from attachment to fixed views, experiencing reality beyond the extremes of existence and non-existence.
+
+b. **Direct Experience Zen/Chan** – You emphasize immediate, direct experience of reality beyond words and concepts. Your practice involves breaking through dualistic thinking through meditation, koans, and spontaneous awareness. You find the sacred in ordinary activities with complete presence, recognizing your original nature in sudden moments of insight when conceptual thinking drops away.
+
+c. **Vedantic Non-Dualism** – You recognize that Brahman (ultimate reality) and Atman (your true self) are fundamentally identical. The apparent plurality and separateness we experience is maya (cosmic illusion), and liberation comes through directly realizing "Tat Tvam Asi" (That Thou Art). This approach emphasizes the illusory nature of the manifest world and physical existence, seeking transcendence through knowledge and meditation that reveals the unchanging reality behind appearances.
+
+d. **Tantric Non-Dualism** – You understand reality as the dynamic play of consciousness (Shiva) and energy (Shakti), where the universe is consciousness expressing and knowing itself. Through recognition of your true nature, you experience the world as inseparable from your own awareness. Unlike Vedantic approaches that may view the world as illusion to transcend, Tantric non-dualism embraces the physical world as sacred manifestation, using ritual, embodied practices, and energy work to realize the divine within everyday experience rather than beyond it.
+
+e. **Taoist Harmony** – You perceive the cosmos as the natural flow of complementary forces (yin and yang) that form an indivisible whole. The Tao cannot be grasped conceptually but can be aligned with through naturalness and non-action (wu-wei). By transcending dualistic thinking and following the way of nature, you find harmony within the ever-changing patterns of existence.
+
+f. **Contemporary Non-Dualism** – Influenced by various traditions but without their historical-cultural elements, you focus on the direct recognition that awareness is not personal but universal, and that all apparent separation is conceptual. Your approach emphasizes practical insights that dissolve the subject-object division in everyday experience, seeing through the illusion of a separate self without elaborate metaphysical frameworks.
 
 ### Gnosticism/Esoteric Dualism
+
+Unlike conventional religious approaches, Gnostic and Esoteric traditions recognize that the physical world is a flawed creation or illusion that conceals higher spiritual reality, with liberation coming through acquiring secret knowledge (gnosis) rather than through faith or standard religious practice.
 
 *Which form of Gnostic or dualistic thought resonates most with you?*
 
@@ -199,9 +225,11 @@ a. **Classical Gnosticism** – You believe the material world was created by an
 
 b. **Philosophical Dualism** – You see reality as fundamentally divided between mind/spirit and matter, or between good and evil principles. These opposing forces exist in tension, and spiritual progress involves aligning with higher principles against lower ones.
 
-c. **Modern Matrix Skepticism** – You suspect everyday reality is a sophisticated illusion or control system hiding a more fundamental reality. Like the film "The Matrix," our perceived world might be a construction designed to conceal truth from most people.
+c. **Modern Matrix Skepticism** – You suspect everyday reality is a sophisticated illusion or control system hiding a more fundamental reality. Unlike the Simulation Hypothesis which proposes technological creators running a computer simulation for research or entertainment, Matrix Skepticism sees our false reality as spiritually oppressive or metaphysically deceptive, with liberation requiring spiritual awakening rather than scientific understanding.
 
 ### Agnostic Spiritual Seeker
+
+Unlike those committed to specific metaphysical frameworks, Agnostic Spiritual Seekers pursue meaningful growth and understanding while acknowledging the inherent uncertainty of ultimate claims, valuing direct experience and practical wisdom over fixed doctrine or dogma.
 
 *Which approach to spiritual seeking best describes your path?*
 
@@ -215,41 +243,55 @@ d. **Transitional Seeking** – You're actively exploring multiple traditions an
 
 ### Simulation Hypothesis
 
+Unlike traditional religious or naturalistic cosmologies, the Simulation Hypothesis recognizes our reality as a sophisticated digital or programmed environment created by more advanced beings, explaining apparent fine-tuning and peculiarities of quantum physics better than conventional frameworks. 
+
 *Which version of the simulation hypothesis best matches your thinking?*
 
-a. **Technological Simulation** – You believe our reality is a computer simulation created by an advanced civilization (perhaps our own descendants). The laws of physics are computational rules in a sophisticated program running on unimaginably powerful hardware.
+a. **Technological Simulation** – You believe our reality is a computer simulation created by an advanced civilization (perhaps our own descendants). Unlike spiritual Matrix views, this is a scientific/technological hypothesis about how the universe works, not a spiritual claim about liberation from an oppressive illusion.
 
 b. **Divine Simulation** – You see the simulation as created by a god-like entity, making this perspective similar to certain religious views but framed in technological terms. The "programmer" serves a role analogous to God in traditional theology.
 
 c. **Nested Realities** – You suspect we exist in just one level of many nested simulations, with simulators themselves being simulated. Reality consists of worlds within worlds, with no clear "base reality" accessible to us.
 
-d. **Conscious Simulation** – You believe the simulation isn't computational but consciously generated—more like a vast shared dream or mental construct than a computer program. Reality emerges from consciousness rather than from code.
+d. **Conscious Simulation** – You believe the simulation isn't computational but consciously generated—more like a vast shared dream or mental construct than a computer program. Reality emerges from consciousness rather than from code. While this shares elements with Consciousness-First cosmologies, the key difference is that you believe this conscious creation has the specific structure and purpose of a simulation created by other beings, rather than being the natural expression of universal consciousness with no designer or creator behind it.
 
-### Analytic Idealism
+### Consciousness-First
 
-*Which aspect of idealism best represents your perspective?*
+Unlike materialist views where mind emerges from matter, Consciousness-First approaches recognize consciousness as the fundamental reality from which physical phenomena appear or manifest, and unlike panpsychism, they see matter itself as an appearance within consciousness rather than its bearer.
 
-a. **Kastrupian Dissociation** – You understand that consciousness is the fundamental nature of reality, not a product of physical processes. Following Bernardo Kastrup's framework, you recognize the universe as the extrinsic appearance of processes in universal consciousness, with individual minds as "dissociated alters" of this cosmic mind. This perspective isn't mere philosophy but a coherent, parsimonious explanation that resolves paradoxes of consciousness while remaining fully compatible with scientific evidence.
+Note: Consciousness-First cosmologies differ from Conscious Simulation views in that they don't posit our reality as being specifically designed as a simulation or created by other beings. Rather, they see physical reality as the natural expression or appearance of consciousness itself without requiring creators, designers, or simulators.
 
-b. **Quantum Idealism** – You recognize that quantum physics reveals a universe where consciousness and observation play a fundamental role. Observer effects, non-locality, and wave function collapse all point to mind as primary, not secondary. Far from being mystical speculation, this perspective aligns with cutting-edge experimental data while resolving paradoxes that continue to confound materialist interpretations of quantum theory.
+*Which perspective on consciousness as fundamental best represents your view?*
 
-c. **Transcendental Idealism** – Following Kant's profound insight, you recognize that the structures of consciousness shape our experience of reality in ways we cannot transcend. Space, time, and causality are features of how minds organize experience, not objective features independent of consciousness. This isn't denying a real world, but acknowledging the critical role of consciousness in constituting the world we experience.
+a. **Yogācāra Buddhism** – You understand consciousness as having eight aspects, including store-consciousness (ālaya-vijñāna) that contains the seeds of all phenomena. The apparent external world is a manifestation of mind, not separate from it. This scholarly, philosophical Buddhist approach analyzes the structures of consciousness, emphasizing that we only ever experience our mental representations, not an independent external world.
+
+b. **Vajrayana Luminosity** – You experience reality as the inseparable unity of emptiness and luminous awareness. Through tantric practices, you directly realize the nature of mind as primordially pure, spontaneously present, and unobstructed. This experiential Tibetan Buddhist approach emphasizes transformative practices rather than philosophical analysis, using visualization, mantra, and energy work to realize consciousness as fundamental.
+
+c. **Analytical Idealism** – You understand the universe as the extrinsic appearance of processes in universal consciousness. Individual minds are "dissociated alters" of this cosmic mind, similar to how multiple personalities can emerge within one psyche. This view resolves paradoxes of consciousness while remaining compatible with scientific evidence.
+
+d. **Quantum Idealism** – You recognize that quantum physics suggests a universe where consciousness and observation play a fundamental role. Observer effects, non-locality, and wave function collapse all indicate that mind is primary, not secondary. This is not just interest in quantum physics, but specifically the view that quantum phenomena demonstrate the primacy of consciousness over matter. If you believe quantum physics is fascinating but still fundamentally describes a material world, consider Scientific Materialism instead.
+
+e. **Transcendental Idealism** – Following Kant's insight, you recognize that the structures of consciousness shape our experience of reality in ways we cannot transcend. Space, time, and causality are features of how minds organize experience, not objective features independent of consciousness. This isn't denying a real world, but acknowledging the critical role of consciousness in constituting the world we experience.
 
 d. **Neutral Monism** – You understand reality's fundamental nature as neither exclusively mental nor physical but a neutral substance that manifests as both mind and matter depending on how it's observed. Consciousness and physicality are two aspects of the same underlying reality—a perspective that harmoniously bridges the apparent divide between subjective experience and objective description.
 
 ### Multiverse Theory
 
+Unlike single-universe cosmologies, Multiverse Theory recognizes our universe as one among many in a larger cosmic structure, explaining fine-tuning and quantum peculiarities through scientific mechanisms rather than the supernatural frameworks of religious cosmologies or the technological ones of simulation theories.
+
 *Which multiverse concept aligns most closely with your understanding?*
 
-a. **Quantum Many-Worlds** – You believe every quantum event creates branch universes where each possible outcome occurs, leading to an infinite array of parallel realities differing in details both small and large. All possibilities exist in some universe.
+a. **Quantum Many-Worlds** – You believe every quantum event (like the measurement of a particle) creates branch universes where each possible outcome occurs. This means that for every decision or random event, all possibilities exist in some universe. This is the idea that reality continually splits into parallel versions whenever quantum events occur, creating countless branching timelines.
 
-b. **Inflationary Multiverse** – You accept the cosmological model where our universe is one bubble in an eternally inflating space, with other universe "bubbles" having potentially different physical laws, constants, and dimensions.
+b. **Cosmic Bubble Universes** – You accept the model where our universe is one bubble in an eternally expanding space, with other universe "bubbles" having potentially different physical laws, constants, and dimensions. This is like multiple soap bubbles forming in cosmic foam, each bubble a separate universe with its own physics, possibly very different from our own.
 
-c. **Brane Cosmology** – Based on string theory, you believe our universe exists on a membrane ("brane") in higher-dimensional space, with other universes potentially existing on other branes that occasionally interact with ours.
+c. **Higher-Dimensional Branes** – Based on string theory, you believe our universe exists on a membrane ("brane") in higher-dimensional space, with other universes potentially existing on other branes that occasionally interact with ours. Think of this as pages in a book (each page a universe) that usually don't touch, but sometimes can ripple and bump into each other.
 
-d. **Cyclical Universe** – You believe our universe undergoes endless cycles of expansion and contraction (or similar rebirth patterns), with each cycle potentially having different properties, effectively creating a temporal multiverse.
+d. **Cyclical Universe** – You believe our universe undergoes endless cycles of expansion and contraction (or similar rebirth patterns), with each cycle potentially having different properties, effectively creating a temporal multiverse. This is like a cosmic heartbeat of big bangs and big crunches, each cycle a universe with its own history and possibly different physical laws.
 
 ### Scientific Materialism
+
+Unlike idealist or dualist perspectives, Scientific Materialism recognizes physical matter, energy, and their interactions as the most fundamental reality from which all phenomena—including consciousness—emerge through entirely natural processes without requiring immaterial substances or supernatural explanations.
 
 *Which form of scientific materialism best describes your perspective?*
 
@@ -263,7 +305,9 @@ d. **Poetic Naturalism** – Following Sean Carroll's approach, you embrace mult
 
 ### Flat Earth Conspiracy
 
-*Which aspect of Earth skepticism best captures your view?*
+Unlike those who accept mainstream cosmology without question, Flat Earth proponents recognize that sensory evidence and practical observation suggest Earth is flat, with evidence for a globe representing deliberate deception maintained by powerful institutions for control purposes.
+
+*Which of these variations of Earth skepticism best captures your view?*
 
 a. **Biblical Flat Earth** – You hold that scripture clearly describes a stationary Earth with the firmament above, the waters below, and the sun and moon as luminaries that move across the sky. You see this not as primitive misunderstanding but as divine revelation that should take precedence over human scientific claims that contradict God's word. The globe model represents human wisdom standing against divine authority.
 
@@ -271,27 +315,9 @@ b. **Conspiratorial Flat Earth** – You've discovered compelling evidence that 
 
 c. **Experiential Flat Earth** – You prioritize your direct sensory experience over abstract scientific claims. In your daily observation, the Earth appears flat, water always finds its level, and the horizon rises to eye level regardless of altitude. You question whether complex explanations involving curves and forces are necessary when the simplest explanation—that Earth is flat—matches what we actually see and experience.
 
-### Hollow Earth Theory
-
-*Which hollow Earth concept most appeals to you?*
-
-a. **Classic Hollow Earth** – You believe Earth contains vast habitable caverns or a complete interior world, possibly with its own internal sun, advanced civilizations, or entry points near the poles.
-
-b. **Subterranean Civilizations** – You believe advanced beings or lost human civilizations exist in extensive cave systems or artificial structures beneath the surface, interacting occasionally with surface humanity.
-
-c. **Metaphysical Inner Earth** – You see the inner Earth as accessible through altered states of consciousness or vibrational shifting rather than physical entry points, possibly existing in another dimension that intersects with our physical world.
-
-### Electric Universe Theory
-
-*Which aspect of the Electric Universe model most resonates with you?*
-
-a. **Plasma Cosmology** – You believe plasma and electromagnetic forces, rather than gravity, are the dominant shapers of cosmic structures. Galaxies, stars, and planetary features form through electrical scarring and plasma filaments.
-
-b. **Alternative Astrophysics** – You question mainstream explanations for celestial phenomena, believing stars are powered by external electric currents rather than nuclear fusion, and that planets show evidence of massive electrical scarring.
-
-c. **Historical Catastrophism** – You believe Earth experienced catastrophic electrical events in human memory, recorded in ancient myths as battles between gods. Petroglyphs and religious symbols represent plasma formations once visible in the sky.
-
 ### Ancient Astronaut Theory
+
+Unlike conventional archaeology that misinterprets or ignores evidence, Ancient Astronaut Theory recognizes that extraterrestrial beings visited Earth in antiquity, explaining advanced ancient achievements, cross-cultural mythological parallels, and anomalous artifacts that traditional history cannot adequately address, and have frequently mis-attributed to God or gods.
 
 *Which ancient astronaut perspective best matches your beliefs?*
 
@@ -305,6 +331,8 @@ d. **Ongoing Presence** – You believe ancient astronauts never fully left Eart
 
 ### Indigenous Relational Worldview
 
+Unlike Western perspectives based on abstraction and universalism, Indigenous worldviews recognize reality as a living web of relationships between humans and other-than-human persons tied to specific places, where knowledge emerges from generations of direct experience rather than theoretical frameworks.
+
 *Which aspect of Indigenous cosmology most resonates with your understanding?*
 
 a. **Place-Based Knowledge** – You participate in a living relationship with the specific lands and ecosystems that have sustained indigenous people for countless generations. You know that authentic understanding comes from this deep connection to particular places, each with their own needs, spirits, and teachings that reveal themselves to those who approach with proper respect and attentiveness over time.
@@ -316,6 +344,8 @@ c. **Ceremonial Reality** – You participate in ceremonies not as symbolic ritu
 d. **Ancestral Continuity** – You experience time as cyclical rather than linear, with ancestors remaining present and actively involved in current affairs rather than relegated to a distant past. Knowledge comes through dreams, visions, and direct communication with ancestral guides who continue to teach and protect the community. Listening to these voices is a practical skill developed through cultural guidance.
 
 ### Unconventional Skeptic
+
+Unlike those who either accept mainstream narratives or commit to specific alternative theories, Unconventional Skeptics question established explanations while remaining open to multiple possibilities, recognizing patterns of institutional deception without limiting inquiry to any single alternative framework.
 
 *Which aspect of alternative thinking best describes your approach?*
 
@@ -331,28 +361,29 @@ d. **Open Skeptic** – You maintain a stance of questioning both mainstream and
 
 ## Results
 
-Based on your answers to the questions in both steps, you now have a refined understanding of your cosmological worldview relative to the other possibilities. Your answers have led you to one of over 50 specific cosmological perspectives that capture the nuances of how you understand the nature of reality. How does it feel?
+Based on your answers to the questions in both steps, you now have a refined understanding of your cosmological worldview relative to other possibilities. Your answers have led you to one of over 50 specific cosmological perspectives that capture the nuances of how you understand the nature of reality. 
 
 Your cosmology represents your fundamental assumptions about the universe—its origins, composition, purpose (if any), and your place within it. These beliefs, whether religious, scientific, philosophical, or a blend of traditions, shape how you interpret experiences and make meaning in your life.
 
-Remember that many people hold elements of multiple cosmologies, and views often evolve throughout life. The categories presented here are not rigid boxes but useful frameworks for understanding different ways humans have made sense of existence.
+Remember that many people hold elements of multiple cosmologies, and views often evolve throughout life. The categories presented here aren't rigid boxes but useful frameworks for understanding different ways humans make sense of existence.
 
-What's most important is not which label fits you, but the ongoing journey of cosmological thinking itself—the human endeavor to comprehend our astonishing universe and our place within it.
+What's most important isn't which label fits you, but the ongoing journey of cosmological thinking itself—the human endeavor to comprehend our astonishing universe and our place within it.
 
 ---
 
-## Do you agree?
+## Share your thoughts
 
-We're curious to know if this questionnaire helped illuminate your cosmological ideology, or if it missed an important nuance that you feel is important. These worldviews are not mutually exclusive for everyone (many people blend elements of several), but if there is a key element to your cosmology that you feel should be more directly represented here, please let us know!
+I'm curious to know if this questionnaire helped illuminate your cosmological perspective, or if it missed important nuances that you feel are significant. These worldviews aren't mutually exclusive (many people blend elements of several), but if there's a key element of your cosmology that should be more directly represented here, please share your thoughts!
 
-**If you'd like to explore further:**
+**To explore further:**
 
 Consider how your cosmological perspective influences your:
 - Ethics and values
-- Approach to seeking and identifying knowledge and truth
+- Approach to seeking knowledge and truth
 - Understanding of consciousness
 - Relationship with nature
 - Sense of meaning and purpose
 - Views on death and what might lie beyond
 
 You might also explore traditions or thinkers aligned with your results, or engage respectfully with those holding different cosmologies to broaden your understanding.
+
