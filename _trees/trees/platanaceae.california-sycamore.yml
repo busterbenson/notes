@@ -1,0 +1,245 @@
+tree:
+  common_name: "California-sycamore"
+  scientific_name: "Platanus racemosa"
+  family: "Platanaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A tall, deciduous tree with distinctive mottled bark that peels away in patches of white, tan, and brown. The California Sycamore has large, maple-like leaves with 3-5 lobes and fuzzy, round seed balls that hang on stringy stems."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Mottled, peeling bark with patches of white, tan, and brown; large maple-like leaves with 3-5 lobes"
+    secondary_markers: "Round, spiky seed balls that hang from branches; broad, spreading crown; often grows near water"
+    seasonal_markers: "Bright green leaves in spring, yellowing in fall; bare branches with hanging seed balls in winter"
+    similar_species_differentiation: "Unlike London Plane Tree, has larger leaves and more irregular branching; unlike maples, has multiple round seed balls instead of winged seeds"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple leaves
+        notes: "Large, hand-shaped leaves with pointed lobes"
+      
+      - feature_id: "LEAF-SHAPE-05"  # Lobed
+        notes: "Leaves have 3-5 pointed lobes like a big hand"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Bark peels off in patches showing different colors underneath"
+        
+      - feature_id: "FRUIT-TYPE-05"  # Produces seed pods
+        notes: "Round, spiky seed balls that hang from branches"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        exceptions: "Sometimes splits into multiple trunks close to the ground if damaged when young"
+        notes: "Usually has one main trunk that grows tall before branching"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        exceptions: "May grow irregularly if space is limited or near water"
+        notes: "Develops a broad, rounded shape with wide-spreading branches"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        exceptions: "May be shorter in dry areas or urban settings"
+        notes: "Typically grows 30-80 feet tall, sometimes reaching over 100 feet"
+      
+    sometimes_true:
+      - feature_id: "TREE-TRUNK-02"  # Multiple trunks
+        conditions: "When damaged young or growing in groups along streams"
+        notes: "Can form multiple trunks growing from a single base"
+      
+      - feature_id: "LEAF-COLOR-04"  # Silver undersides
+        conditions: "When leaves are young or during dry conditions"
+        notes: "Leaf undersides may appear whitish or silvery"
+      
+      - feature_id: "BARK-COLOR-02"  # White bark
+        conditions: "When outer bark has recently peeled"
+        notes: "Inner bark can appear bright white in patches"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops leaves in fall and winter"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has broad leaves, never needles"
+      
+      - feature_id: "FRUIT-TYPE-01"  # Acorns present
+        notes: "Produces round seed balls, never acorns"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Puzzle piece bark with different colors"
+    memorable_comparison: "The bark looks like camouflage or puzzle pieces in white, tan, and brown"
+    touch_tip: "The leaves feel fuzzy underneath and rough on top, like sandpaper"
+    smell_tip: "The leaves have a mild, fresh smell when crushed - not strong but pleasant"
+    fun_fact: "California Sycamores can live for 150 years or more! Native Americans used the leaves to wrap food for cooking, like nature's cooking foil."
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the bark. Does it have patches of different colors like camouflage?"
+        yes_next: 2
+        no_next: "Not a California Sycamore - try looking at maple or oak trees"
+      - step: 2
+        instruction: "Look at the leaves. Are they big and shaped like a hand with pointy fingers (3-5 lobes)?"
+        yes_next: 3
+        no_next: "Not a California Sycamore - check if it's a London Plane Tree with smaller leaves"
+      - step: 3
+        instruction: "Do you see round, spiky balls hanging from branches like little ornaments?"
+        yes_next: "You found a California Sycamore!"
+        no_next: "Look in different seasons - seed balls appear in summer and hang on through winter"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Bright green leaves emerge; tree grows rapidly"
+      reproductive_activity: "Tiny green flowers appear in clusters"
+      identification_tips: "Look for the fresh, bright green leaves with fuzzy undersides"
+      kid_friendly_tip: "In spring, leaves pop out like little green hands reaching for the sun"
+    
+    - season: "Summer" 
+      visual_changes: "Full crown of large green leaves; some leaves may drop during drought"
+      reproductive_activity: "Round seed balls develop and grow larger"
+      identification_tips: "Look for the large, hand-shaped leaves and developing seed balls"
+      kid_friendly_tip: "In summer, find the spiky seed balls growing - they look like little green pom-poms"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow to light brown before falling"
+      reproductive_activity: "Seed balls mature and begin to break apart"
+      identification_tips: "Peeling bark is more noticeable as leaves drop"
+      kid_friendly_tip: "Watch the leaves turn yellow and fall like giant confetti"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches with persistent seed balls; patchy bark highly visible"
+      reproductive_activity: "Seed balls slowly break apart releasing seeds"
+      identification_tips: "Easiest to see the distinctive mottled bark and hanging seed balls"
+      kid_friendly_tip: "Look for the spiky brown balls hanging like Christmas ornaments on bare branches"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Mottled white, tan, and brown peeling bark"
+      reliability: "Very high"
+      visibility: "High - visible from a distance"
+    - feature: "Large, maple-like leaves with 3-5 pointed lobes"
+      reliability: "High"
+      visibility: "High during growing season"
+    - feature: "Round, spiky seed balls hanging from branches"
+      reliability: "Very high"
+      visibility: "Medium to high when present"
+    - feature: "Often found near streams or water sources"
+      reliability: "Medium"
+      visibility: "Requires knowing location context"
+    
+  look_alike_species:
+    - species: "London Plane Tree (Platanus × acerifolia)"
+      differences: "London Plane has smaller leaves with less pointed lobes; bark peels in smaller patches; often planted in rows in cities"
+      identification_tip: "California Sycamore has more irregular branching and larger leaves with deeper cuts between lobes"
+    
+    - species: "Bigleaf Maple (Acer macrophyllum)"
+      differences: "Bigleaf Maple has opposite leaves (growing in pairs) and produces winged seeds (helicopter seeds) instead of round balls"
+      identification_tip: "Check how leaves grow on branches - sycamore leaves alternate sides, maple leaves grow in pairs"
+  
+  cultural_significance:
+    - culture: "Chumash and other California Native American tribes"
+      physical_uses:
+        - "Used large leaves to wrap food for cooking in earth ovens, like nature's cooking foil"
+        - "Made medicine from the bark to treat skin problems and wounds"
+        - "Used the wood to make bowls, utensils, and small canoes for fishing"
+      symbolic_meaning:
+        - "Tree represented resilience because it grows back strongly after floods and fire"
+        - "The tree's presence indicated good water sources for establishing villages"
+    
+    - culture: "Spanish and Mexican settlers"
+      physical_uses:
+        - "Used wood for making furniture and tool handles"
+        - "Planted trees to mark boundaries of properties and ranches"
+      symbolic_meaning:
+        - "Trees became landmarks and meeting places for communities"
+    
+    - culture: "Modern Californians"
+      physical_uses:
+        - "Planted for shade in parks and large yards"
+        - "Wood used for unique furniture and art pieces"
+      symbolic_meaning:
+        - "Symbol of California's riparian (river) ecosystems"
+        - "Represents connection to water in a dry landscape"
+    
+  cultural_ecological_notes:
+    - "Provides important habitat for birds and wildlife, especially cavity-nesting birds"
+    - "Stabilizes stream banks and prevents erosion with extensive root systems"
+    - "Leaves decompose quickly, adding nutrients back to soil"
+    - "Hosts many native insects that are important food for birds"
+    
+  range_within_california:
+    - "Native to central and southern California, from the Sacramento Valley to northern Baja California"
+    - "Common along streams, rivers, and moist areas in valleys and foothills"
+    - "Found at elevations from sea level to about 4,000 feet"
+    - "Most abundant in coastal areas and along the western edge of the Central Valley"
+    
+  physical_characteristics:
+    height_range: "30-80 feet tall, sometimes reaching over 100 feet"
+    growth_rate: "Fast - can grow 2-3 feet per year in good conditions"
+    crown_spread: "30-50 feet wide with spreading branches"
+    lifespan: "150-200 years for healthy trees in good locations"
+    trunk_diameter: "Up to 5 feet across for old trees"
+    root_system: "Wide-spreading and deep, especially near water sources"
+    toxicity: "Hairs on leaves and stems can irritate skin, eyes, and lungs in sensitive people"
+    
+  conservation_status:
+    status: "Not endangered, but riparian habitat is threatened"
+    threats: 
+      - "Loss of riparian habitat due to development, agriculture, and water diversion"
+      - "Fungal diseases"
+      - "Drought and climate change impacts"
+    protection_efforts: 
+      - "Protected in many stream and river conservation areas"
+      - "Increasingly used in restoration projects"
+      - "Valued in urban forestry programs for shade and wildlife benefits"
+    
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: BARK-TEXT-03"  # Peeling bark
+      - "feature_id: LEAF-SHAPE-05"  # Lobed leaves
+    confirmation_features:
+      - "feature_id: FRUIT-TYPE-05"  # Seed pods (round balls)
+      - "feature_id: HABITAT-WATER-01"  # Riparian habitat
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-02", "BARK-TEXT-03"]  # Rounded crown, peeling bark
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SHAPE-05", "FRUIT-TYPE-05"]  # Lobed leaves, seed balls
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-02", "BARK-COLOR-02"]  # Serrated edges, white inner bark
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-01", "LEAF-SHAPE-05", "BARK-TEXT-03"]
+        notes: "Fresh green leaves make shape easy to identify"
+      summer:
+        reliability: "Very high"
+        key_features: ["LEAF-SHAPE-05", "FRUIT-TYPE-05", "BARK-TEXT-03"]
+        notes: "Full leaf development and seed balls present"
+      fall:
+        reliability: "Medium" 
+        key_features: ["LEAF-FALL-01", "FRUIT-TYPE-05", "BARK-TEXT-03"]
+        notes: "Yellowing leaves and persistent seed balls"
+      winter:
+        reliability: "High"
+        key_features: ["BARK-TEXT-03", "FRUIT-TYPE-05"]
+        notes: "Bare branches highlight the distinctive bark and hanging seed balls"
+    misidentification_risks: 
+      - "London Plane Tree (Platanus × acerifolia) - has similar but less dramatic peeling bark"
+      - "Bigleaf Maple (Acer macrophyllum) - has similar leaf shape but opposite arrangement and different fruits"
+      - "American Sycamore (Platanus occidentalis) - not native to California but sometimes planted; has less deeply lobed leaves"
+      
+  wildlife_value:
+    food_source:
+      - "Seeds provide food for birds and small mammals"
+      - "Leaves feed many caterpillars and other insects that birds depend on"
+    habitat_provided:
+      - "Old sycamores with hollows provide nesting sites for woodpeckers, owls, and other birds"
+      - "Branches provide nesting spots for many songbirds"
+      - "Fallen leaves create habitat for ground insects and decomposers"
+    ecosystem_role: "Important component of riparian ecosystems; stabilizes stream banks and creates shade that helps keep water temperatures cool for fish"

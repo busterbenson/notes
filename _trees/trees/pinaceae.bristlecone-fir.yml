@@ -1,0 +1,234 @@
+tree:
+  common_name: "Bristlecone Fir"
+  scientific_name: "Abies bracteata"
+  family: "Pinaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A rare evergreen tree with sharp, spine-tipped needles that grow densely around the branches. Most recognizable by its unique cones with long, bristle-like bracts that stick out like spikes or whiskers, giving the tree its common name."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Cones with long, spiky bracts protruding 1-2 inches; sharp, spine-tipped needles"
+    secondary_markers: "Narrow, columnar shape; grows only in the Santa Lucia Mountains of California"
+    seasonal_markers: "New growth appears in spring; cones mature in fall of the first year"
+    similar_species_differentiation: "Unlike other firs, has cones with long protruding bristles and sharply pointed needles; grows only in a small area of coastal mountains"
+  
+  # Core features section
+  features:
+    always_true:
+      # Reference features.yml IDs with tree-specific notes
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles year-round"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Needles grow individually around the twig, not in bundles"
+      
+      - feature_id: "CONE-POS-01"  # Upright cones
+        notes: "Cones stand upright on branches like candles"
+      
+      - feature_id: "NEEDLE-FEAT-01"  # Sharp pointed
+        notes: "Needles have sharp, spiny tips that can prick your finger"
+      
+    usually_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        exceptions: "May occasionally develop multiple trunks if damaged"
+        notes: "Typically grows with one straight main trunk"
+      
+      - feature_id: "TREE-FORM-04"  # Columnar form
+        exceptions: "Shape may vary somewhat based on growing conditions"
+        notes: "Usually has a narrow, column-like shape"
+      
+    sometimes_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees"
+        notes: "Bark is smooth and gray when the tree is young"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Mature trees"
+        notes: "Bark becomes ridged and furrowed with age"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        conditions: "When needles are crushed"
+        notes: "Crushed needles have a sharp, citrusy smell"
+    
+    never_true:
+      # Features explicitly absent that help differentiation
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all needles seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Never has needles growing in pairs or bundles"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Cones with long spikes or whiskers sticking out between the scales"
+    memorable_comparison: "The cones look like they have a bad hair day with spiky whiskers sticking out all over"
+    touch_tip: "Be careful! The needles have sharp points that can poke you if you grab them"
+    smell_tip: "Gently crush a needle to smell a fresh, lemony scent, but don't poke yourself"
+    fun_fact: "Bristlecone Fir is one of the rarest trees in the world and grows wild only in one small area of California mountains!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, check where you are. Bristlecone Fir only grows wild in the Santa Lucia Mountains of central California coast."
+        yes_next: 2
+        no_next: "Not a wild Bristlecone Fir - they only grow naturally in one small area (though some are planted in gardens)"
+      - step: 2
+        instruction: "Carefully touch a needle (watch out for the sharp tip!). Are the needles stiff with a sharp, spiny point?"
+        yes_next: 3
+        no_next: "Not a Bristlecone Fir - other firs have softer needle tips"
+      - step: 3
+        instruction: "If it's fall and you can see cones, do they have long spiky bristles sticking out between the scales?"
+        yes_next: "You found a Bristlecone Fir!"
+        no_next: "If there are no cones, look at the overall shape - Bristlecone Fir is often narrow and columnar"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New, bright green growth appears at branch tips"
+      reproductive_activity: "Pollen cones release yellow pollen; female cones begin to form"
+      identification_tips: "Fresh growth contrasts with older needles; may see pollen release"
+      kid_friendly_tip: "In spring, the tips of branches get bright new baby needles and tiny new cones start to grow"
+    
+    - season: "Summer" 
+      visual_changes: "New growth matures to match older needles"
+      reproductive_activity: "Cones continue developing, long bracts become more noticeable"
+      identification_tips: "Developing cones with distinctive long bracts become visible"
+      kid_friendly_tip: "By summer, you can start to see the special spiky cones growing bigger"
+    
+    - season: "Fall"
+      visual_changes: "No color change as it remains evergreen"
+      reproductive_activity: "Cones mature with fully developed, protruding bracts"
+      identification_tips: "Mature cones with long bracts are highly distinctive"
+      kid_friendly_tip: "Fall is the best time to see the fully grown cones with their crazy spiky whiskers"
+    
+    - season: "Winter"
+      visual_changes: "Evergreen foliage remains"
+      reproductive_activity: "Cones break apart on the tree, releasing seeds"
+      identification_tips: "Look for cone remnants and distinctive growth form"
+      kid_friendly_tip: "In winter, the cones break apart and drop their seeds, but the tree keeps its sharp green needles"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Cones with long, bristle-like bracts protruding 1-2 inches"
+      reliability: "Very high"
+      visibility: "Good when cones are present in summer/fall"
+    - feature: "Sharp, spine-tipped needles"
+      reliability: "High"
+      visibility: "Easy to observe with careful touching"
+    - feature: "Santa Lucia Mountains location"
+      reliability: "Very high"
+      visibility: "Determined by geographic location"
+    - feature: "Narrow, columnar growth form"
+      reliability: "Medium"
+      visibility: "Observable from a distance"
+    
+  look_alike_species:
+    - species: "White Fir (Abies concolor)"
+      differences: "White Fir has softer, blunt needle tips and cones without protruding bracts; more widespread distribution"
+      identification_tip: "If the needles have soft tips and the cones don't have spiky projections, it's likely a White Fir"
+    
+    - species: "Red Fir (Abies magnifica)"
+      differences: "Red Fir has stouter needles, larger cones without long protruding bracts, and reddish bark"
+      identification_tip: "Red Fir grows at higher elevations in the Sierra Nevada, not on the central coast"
+    
+  cultural_ecological_notes:
+    - "Extremely limited range - one of the rarest conifers in North America"
+    - "Grows primarily on steep, rocky slopes in canyons"
+    - "Adapted to the central California coastal climate with summer fog"
+    - "Seeds provide food for birds and small mammals"
+    
+  range_within_california:
+    - "Endemic to the Santa Lucia Mountains in Monterey County"
+    - "Small isolated populations in steep canyons of the central coast"
+    - "Typically grows at elevations between 2,500-5,000 feet"
+    - "Most populations are in the Ventana Wilderness"
+    
+  # Physical characteristics section
+  physical_characteristics:
+    height_range: "60-100 feet when mature"
+    growth_rate: "Slow, especially in natural settings"
+    crown_spread: "15-25 feet at maturity"
+    lifespan: "200-300 years"
+    trunk_diameter: "1-3 feet at maturity"
+    root_system: "Deep, adapted to rocky slopes"
+    toxicity: "Generally non-toxic but sharp needles may cause physical injury"
+  
+  # Cultural significance section
+  cultural_significance:
+    - culture: "Esselen and Salinan peoples"
+      physical_uses:
+        - "Limited historical use due to remote habitat"
+        - "Some evidence suggests pitch was used for waterproofing"
+      symbolic_meaning:
+        - "Trees growing in difficult rocky terrain represented endurance and resilience"
+    
+    - culture: "Modern conservation"
+      physical_uses:
+        - "Protected as a rare species; seed collection for conservation"
+        - "Studied by botanists for understanding plant adaptation"
+      symbolic_meaning:
+        - "Represents the unique biodiversity of the Santa Lucia Mountains"
+        - "Symbol of California's endemic plant heritage"
+    
+    - culture: "Botanical history"
+      physical_uses:
+        - "Collected by early botanists for scientific study"
+        - "Occasionally grown in botanical gardens and arboretums"
+      symbolic_meaning:
+        - "Named for the long bracts on its cones, which reminded botanists of bristles"
+        - "Represents botanical discovery and California's plant diversity"
+  
+  # Conservation status section
+  conservation_status:
+    status: "Vulnerable due to extremely limited range"
+    threats: "Wildfires, climate change, drought"
+    protection_efforts: "Protected within Los Padres National Forest and Ventana Wilderness; seed collection for conservation"
+  
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: NEEDLE-FEAT-01"  # Sharp pointed
+      - "feature_id: CONE-POS-01"  # Upright cones
+    
+    confirmation_features:
+      - "feature_id: GEO-REGION-02"  # Central California
+      - "feature_id: SENSORY-SMELL-01"  # Aromatic leaves
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-04", "LEAF-TYPE-02"]  # Columnar form, evergreen
+      
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-ARRANGE-01", "NEEDLE-FEAT-01"]  # Single needles, sharp pointed
+      
+      - distance: "close_inspection"
+        features_to_check: ["CONE-POS-01", "SENSORY-SMELL-01"]  # Upright cones, aromatic
+    
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["NEEDLE-FEAT-01", "TREE-FORM-04"]
+        notes: "Without cones, rely on needle characteristics and tree form"
+      
+      summer:
+        reliability: "High"
+        key_features: ["NEEDLE-FEAT-01", "CONE-POS-01"]
+        notes: "Developing cones begin to show characteristic bracts"
+      
+      fall:
+        reliability: "Very high" 
+        key_features: ["CONE-POS-01", "NEEDLE-FEAT-01"]
+        notes: "Mature cones with long bracts are highly distinctive"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["NEEDLE-FEAT-01", "TREE-FORM-04"]
+        notes: "After cones disintegrate, rely on needle characteristics and form"
+    
+    misidentification_risks:
+      - "Without cones, could be confused with other fir species"
+      - "Young trees may not yet display the characteristic narrow form"

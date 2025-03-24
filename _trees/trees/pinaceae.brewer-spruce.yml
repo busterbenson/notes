@@ -1,0 +1,236 @@
+tree:
+  common_name: "Brewer Spruce"
+  scientific_name: "Picea breweriana"
+  family: "Pinaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A rare and distinctive spruce tree known for its graceful, weeping branchlets that hang down like curtains. The dark green needles have two white lines underneath, and the tree produces long, narrow cones that hang from the drooping branches."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Distinctive drooping branchlets that hang down like curtains; dark green needles with two white stripes underneath"
+    secondary_markers: "Short needles arranged in brush-like clusters; slender, hanging cones 3-6 inches long"
+    seasonal_markers: "New growth appears in spring; cones mature by fall"
+    similar_species_differentiation: "Unlike Engelmann Spruce, has dramatically drooping branches; unlike hemlocks, has needles all around the twig (not in a flat plane)"
+  
+  # Core features section
+  features:
+    always_true:
+      # Reference features.yml IDs with tree-specific notes
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles year-round"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Needles attach one at a time all around the twig"
+      
+      - feature_id: "BRANCH-ANGLE-03"  # Drooping branches
+        notes: "The most distinctive feature - branches hang down dramatically like curtains"
+      
+      - feature_id: "NEEDLE-FEAT-03"  # White lines below
+        notes: "Needles have two white stripes on the underside"
+    
+    usually_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        exceptions: "May occasionally develop multiple trunks if damaged"
+        notes: "Typically grows with one main trunk"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        exceptions: "Older trees may develop a more irregular crown"
+        notes: "Has a pyramid shape with a distinctive weeping appearance"
+      
+      - feature_id: "CONE-POS-02"  # Hanging cones
+        exceptions: "Some cones may be partially hidden in the drooping foliage"
+        notes: "Cones hang down from branches"
+      
+    sometimes_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees"
+        notes: "Bark is relatively smooth when the tree is young"
+      
+      - feature_id: "BARK-COLOR-03"  # Red bark
+        conditions: "Young trees often show reddish bark"
+        notes: "Young bark has a reddish tint"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Mature trees"
+        notes: "Bark becomes scaly and develops furrows with age"
+    
+    never_true:
+      # Features explicitly absent that help differentiation
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all needles seasonally"
+      
+      - feature_id: "NEEDLE-SHAPE-01"  # Flat needles
+        notes: "Needles are not flat but four-sided in cross-section"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Branches that droop down like a weeping willow, but with evergreen needles"
+    memorable_comparison: "Looks like a Christmas tree that's crying or wearing long, droopy curtains"
+    touch_tip: "The needles feel slightly prickly but not too sharp, and the branches hang down so low you can touch them"
+    smell_tip: "Crush a needle gently to release a mild, fresh evergreen scent"
+    fun_fact: "Brewer Spruce is one of the rarest trees in North America and grows almost nowhere else in the world except the mountains of northern California and southern Oregon!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the tree's shape. Do the branches droop down dramatically like a weeping willow or curtains?"
+        yes_next: 2
+        no_next: "Not a Brewer Spruce - look for a different kind of spruce or fir"
+      - step: 2
+        instruction: "Look at the needles. Are they dark green, short (about 1 inch), and grow all around the twig (not just on the sides)?"
+        yes_next: 3
+        no_next: "Not a Brewer Spruce - if needles are flat and only grow on sides of twig, it might be a hemlock"
+      - step: 3
+        instruction: "Turn over a needle. Does it have two white stripes on the underside?"
+        yes_next: "You found a Brewer Spruce!"
+        no_next: "Check for slender cones about 3-6 inches long, which would confirm Brewer Spruce"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New, lighter green growth appears at branch tips"
+      reproductive_activity: "Tiny purple-red female cones form; yellow pollen cones release pollen"
+      identification_tips: "Look for contrast between new growth and older needles"
+      kid_friendly_tip: "In spring, the tips of branches get bright new baby needles that look like tiny green stars"
+    
+    - season: "Summer" 
+      visual_changes: "New growth darkens to match older needles"
+      reproductive_activity: "Young cones grow larger and change from purple-red to light brown"
+      identification_tips: "Developing cones become more noticeable"
+      kid_friendly_tip: "By summer, the baby cones grow from tiny purple things into longer brown ones"
+    
+    - season: "Fall"
+      visual_changes: "No color change as it remains evergreen"
+      reproductive_activity: "Cones mature and open to release seeds"
+      identification_tips: "Mature cones with open scales are visible"
+      kid_friendly_tip: "In fall, the cones open up like pine cones to let their seeds fly out in the wind"
+    
+    - season: "Winter"
+      visual_changes: "Evergreen foliage may collect snow, making the drooping branches even more dramatic"
+      reproductive_activity: "Dormant, no reproductive activity"
+      identification_tips: "Hanging branches with snow are especially distinctive"
+      kid_friendly_tip: "In winter, snow piles up on the drooping branches making them droop even more"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Dramatically drooping branchlets hanging like curtains"
+      reliability: "Very high"
+      visibility: "Easily visible from a distance"
+    - feature: "Short, dark green needles with white stripes underneath"
+      reliability: "High"
+      visibility: "Visible with close inspection"
+    - feature: "Slender, cylindrical cones 3-6 inches long"
+      reliability: "High (when present)"
+      visibility: "Visible when mature in fall"
+    - feature: "Growing in northern California or southern Oregon mountains"
+      reliability: "High"
+      visibility: "Determined by location"
+    
+  look_alike_species:
+    - species: "Engelmann Spruce (Picea engelmannii)"
+      differences: "Engelmann Spruce lacks the distinctive drooping branches; has bluish needles; grows at higher elevations"
+      identification_tip: "If branches stick out rather than hang down like curtains, it's likely an Engelmann Spruce"
+    
+    - species: "Mountain Hemlock (Tsuga mertensiana)"
+      differences: "Mountain Hemlock has flatter sprays of needles, shorter cones, and a drooping top leader"
+      identification_tip: "If needles are arranged in a flattened pattern and the tree top droops over, it's probably a hemlock"
+    
+  cultural_ecological_notes:
+    - "One of the rarest conifers in North America with a very limited range"
+    - "Considered a 'relict' species - a living fossil from ancient forests that survived the ice ages"
+    - "Grows in remote mountain areas often on steep, rocky slopes"
+    - "Seeds provide food for birds and small mammals"
+    
+  range_within_california:
+    - "Limited to the Klamath Mountain region in far northern California"
+    - "Most common in the Siskiyou Mountains and nearby ranges"
+    - "Typically grows at elevations between 4,000-7,000 feet"
+    - "Often found on north-facing slopes and in cool, moist mountain ravines"
+    
+  # Physical characteristics section
+  physical_characteristics:
+    height_range: "60-100 feet when mature"
+    growth_rate: "Very slow, less than 12 inches per year"
+    crown_spread: "15-30 feet at maturity"
+    lifespan: "400-500+ years"
+    trunk_diameter: "2-3 feet at maturity"
+    root_system: "Moderately deep with lateral spread"
+    toxicity: "Generally non-toxic"
+  
+  # Cultural significance section
+  cultural_significance:
+    - culture: "Karuk people"
+      physical_uses:
+        - "Used branches with needles for purification ceremonies"
+        - "Collected pitch for water-proofing and healing purposes"
+      symbolic_meaning:
+        - "The tree's rarity and distinctive form represented uniqueness and special wisdom"
+    
+    - culture: "Modern conservation"
+      physical_uses:
+        - "Valued as an ornamental tree in botanical gardens"
+        - "Seeds collected for conservation and replanting efforts"
+      symbolic_meaning:
+        - "Represents biodiversity conservation and the unique plants of the Klamath region"
+    
+    - culture: "Scientific community"
+      physical_uses:
+        - "Studied for insights into climate change adaptation and plant evolution"
+        - "Monitored for understanding rare species conservation"
+      symbolic_meaning:
+        - "Symbolizes botanical discovery and the continuing exploration of North American flora"
+  
+  # Conservation status section
+  conservation_status:
+    status: "Species of conservation concern due to limited range"
+    threats: "Climate change, increasing fire severity, logging in some areas"
+    protection_efforts: "Protected in Klamath National Forest and Six Rivers National Forest; seed banking programs"
+  
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: BRANCH-ANGLE-03"  # Drooping branches
+      - "feature_id: NEEDLE-ARRANGE-01"  # Single needles
+    
+    confirmation_features:
+      - "feature_id: NEEDLE-FEAT-03"  # White lines below
+      - "feature_id: GEO-REGION-01"  # Northern California
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["BRANCH-ANGLE-03", "TREE-FORM-01"]  # Drooping branches, pyramidal shape
+      
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-ARRANGE-01", "CONE-POS-02"]  # Single needles, hanging cones
+      
+      - distance: "close_inspection"
+        features_to_check: ["NEEDLE-FEAT-03", "NEEDLE-SHAPE-02"]  # White lines below, square needles
+    
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["BRANCH-ANGLE-03", "NEEDLE-ARRANGE-01"]
+        notes: "New growth provides good identification clues"
+      
+      summer:
+        reliability: "High"
+        key_features: ["BRANCH-ANGLE-03", "NEEDLE-FEAT-03"]
+        notes: "Fully developed needles show distinctive white lines"
+      
+      fall:
+        reliability: "Very high" 
+        key_features: ["BRANCH-ANGLE-03", "CONE-POS-02"]
+        notes: "Mature cones add definitive identification feature"
+      
+      winter:
+        reliability: "High"
+        key_features: ["BRANCH-ANGLE-03", "LEAF-TYPE-02"]
+        notes: "Drooping branches often collect snow, making them more dramatic"
+    
+    misidentification_risks:
+      - "Could be confused with other spruces if the drooping branches aren't noticed"
+      - "Young trees may not yet display the dramatic weeping form"

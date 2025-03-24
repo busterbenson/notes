@@ -9,9 +9,9 @@ tree:
   # Identification path guides the decision tree
   identification_path:
     primary_markers: "Hanging cones with unique 'mouse tails' (three-pointed bracts) sticking out between scales; soft, flat needles growing all around the branch"
-    secondary_markers: "Pointed buds; reddish-brown bark with deep grooves; triangle shape when young, becoming more open as it gets older"
+    secondary_markers: "Dark green needles (not blue-gray); pointed buds; reddish-brown bark with deep grooves; triangle shape when young, becoming more open as it gets older"
     seasonal_markers: "Cones ripen in late summer; needles stay on the tree all year"
-    similar_species_differentiation: "Unlike true firs, cones hang down (don't stand up) and stay whole (don't break apart on the tree); unlike spruces, has flat, bendy needles that aren't sharp or square-shaped when you look at the end"
+    similar_species_differentiation: "Unlike Rocky Mountain Douglas-fir, has dark green (not blue-gray) needles and grows in coastal or western mountain areas; unlike true firs, cones hang down (don't stand up) and stay whole (don't break apart on the tree); unlike spruces, has flat, bendy needles that aren't sharp or square-shaped when you look at the end"
   
   # Core features section
   features:
@@ -27,6 +27,9 @@ tree:
       
       - feature_id: "CONE-POS-02"  # Hanging cones
         notes: "Cones always hang down from branches, never stand upright"
+        
+      - feature_id: "LEAF-COLOR-01"  # Dark green
+        notes: "Needles are dark green, not blue-gray like Rocky Mountain Douglas-fir"
       
     usually_true:
       - feature_id: "TREE-TRUNK-01"  # Single trunk
@@ -80,7 +83,7 @@ tree:
   
   # Kid-friendly identification section
   kid_friendly_identification:
-    primary_identifier: "Cones with little three-pronged 'mouse tails' sticking out between the scales"
+    primary_identifier: "Cones with little three-pronged 'mouse tails' sticking out between the scales, and dark green needles"
     memorable_comparison: "The cones look like they have tiny mouse tails or pitchforks hiding between the scales!"
     touch_tip: "The needles feel soft and flat, not sharp or pokey like spruce trees"
     smell_tip: "Gently crush a needle to smell a sweet, slightly lemony scent"
@@ -93,13 +96,17 @@ tree:
         yes_next: 2
         no_next: "Probably not a Douglas-fir - try another type of evergreen tree"
       - step: 2
-        instruction: "Look at the needles. Are they flat, soft, and growing all around the branch (not in bunches)?"
+        instruction: "Look at the needles. Are they flat, soft, dark green in color, and growing all around the branch (not in bunches)?"
         yes_next: 3
-        no_next: "Not a Douglas-fir - if needles are in bunches, check pine trees; if needles are sharp and stiff, check spruce trees"
+        no_next: "Not a Coast Douglas-fir - if needles are blue-gray, it might be Rocky Mountain Douglas-fir; if needles are in bunches, check pine trees; if needles are sharp and stiff, check spruce trees"
       - step: 3
         instruction: "Look for cones on the ground or hanging from branches. Do they have three-pronged 'mouse tails' sticking out between the scales?"
-        yes_next: "You found a Douglas-fir!"
+        yes_next: 4
         no_next: "If the cones don't have 'mouse tails,' it might be a different evergreen tree - check hemlock or true fir"
+      - step: 4
+        instruction: "Are you near the coast or in the western mountains of California?"
+        yes_next: "You found a Coast Douglas-fir!"
+        no_next: "If you're in the eastern mountains of California, it might be a Rocky Mountain Douglas-fir instead"
   
   # Seasonal changes - separate entry for each season
   seasonal_timeline:
@@ -132,7 +139,7 @@ tree:
     - feature: "Cones with 'mouse tail' bracts sticking out between scales"
       reliability: "Very high"
       visibility: "Medium - need to find cones"
-    - feature: "Soft, flat needles growing all around the branch"
+    - feature: "Soft, flat needles growing all around the branch with dark green color (not blue-gray)"
       reliability: "High"
       visibility: "Medium - need to look at branch ends"
     - feature: "Sharp, pointed reddish-brown buds at branch ends"
@@ -141,8 +148,15 @@ tree:
     - feature: "Deep grooved, reddish-brown bark on older trees"
       reliability: "High"
       visibility: "High - can see from some distance"
+    - feature: "Geographic location - near the coast or in western mountain ranges of California"
+      reliability: "High"
+      visibility: "Determined by location"
     
   look_alike_species:
+    - species: "Rocky Mountain Douglas-fir (Pseudotsuga menziesii var. glauca)"
+      differences: "Rocky Mountain Douglas-fir has blue-gray needles rather than dark green; generally smaller in height; found in eastern mountain ranges and adapted to drier, colder climates"
+      identification_tip: "If the needles have a blue-gray color and you're in eastern California mountains away from the coast, it's likely the Rocky Mountain variety"
+    
     - species: "True Firs (Abies species)"
       differences: "True firs have cones that stand upright and break apart on the tree; cones don't have the 'mouse tail' bracts; needles tend to be arranged more flatly along branches"
       identification_tip: "If the cones stand upright instead of hanging down, or if they break apart on the tree rather than falling whole, it's likely a true fir"
@@ -191,9 +205,10 @@ tree:
     
   range_within_california:
     - "Common along the northern California coast and nearby mountains"
-    - "Found in the Klamath Mountains and northern Sierra Nevada"
+    - "Found in the Klamath Mountains and western slopes of the Sierra Nevada"
     - "Grows in mixed evergreen forests, sometimes making forests of just Douglas-firs"
     - "Likes areas with more moisture and cool, mild temperatures"
+    - "Primarily found in western California mountain ranges (contrasting with Rocky Mountain Douglas-fir in eastern ranges)"
     
   physical_characteristics:
     height_range: "100-250 feet tall (as tall as a 25-story building), sometimes over 300 feet"
@@ -221,9 +236,11 @@ tree:
       - "feature_id: LEAF-TYPE-02"  # Evergreen
       - "feature_id: NEEDLE-ARRANGE-01"  # Single needles
       - "feature_id: CONE-POS-02"  # Hanging cones
+      - "feature_id: LEAF-COLOR-01"  # Dark green
     confirmation_features:
       - "feature_id: NEEDLE-SHAPE-01"  # Flat needles
       - "feature_id: CONE-FEAT-02"  # Unique three-pointed bracts
+      - "feature_id: GEO-REGION-01"  # Northern California
     observation_sequence:
       - distance: "from_far_away"
         features_to_check: ["TREE-SIZE-03", "TREE-FORM-01"]  # Tall tree, pyramidal shape

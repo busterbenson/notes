@@ -1,0 +1,225 @@
+tree:
+  common_name: "Blue Oak"
+  scientific_name: "Quercus douglasii"
+  family: "Fagaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A deciduous oak with distinctive blue-gray leaves that have rounded lobes. The bark is light gray and shallowly furrowed, and the tree often has a broad, rounded crown perfect for shade."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Blue-gray leaf color; rounded leaf lobes without bristle tips"
+    secondary_markers: "Light gray bark with shallow furrows; acorns with shallow, warty cups"
+    seasonal_markers: "Leaves drop in late fall; new blue-gray leaves emerge in spring; acorns mature in one year each fall"
+    similar_species_differentiation: "Unlike Valley Oak, has smaller, blue-gray leaves with less deeply cut lobes; unlike Black Oak, has rounded lobes without bristles"
+  
+  # Core features section
+  features:
+    always_true:
+      # Reference features.yml IDs with tree-specific notes
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops all its leaves in late fall and winter"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Each leaf is a single piece, not divided into smaller leaflets"
+      
+      - feature_id: "LEAF-SHAPE-05"  # Lobed
+        notes: "Leaves have rounded wavy edges or lobes"
+      
+    usually_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        exceptions: "May occasionally develop multiple trunks when damaged or growing in poor conditions"
+        notes: "Typically grows with one main trunk"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        exceptions: "Young trees have a more oval shape; trees in crowded forests may have more irregular crowns"
+        notes: "Mature trees develop a broad, rounded canopy in open areas"
+      
+    sometimes_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees"
+        notes: "Bark is relatively smooth when the tree is young"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Mature trees"
+        notes: "Bark develops shallow furrows and becomes rough with age"
+      
+      - feature_id: "HABITAT-WATER-03"  # Dry slope habitat
+        conditions: "Common in foothill habitats but also grows in valley floors"
+        notes: "Often found on dry slopes in the foothills"
+    
+    never_true:
+      # Features explicitly absent that help differentiation
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops leaves in winter, never stays green year-round"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has leaves divided into separate leaflets"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Blue-gray colored leaves that look like wavy-edged mittens"
+    memorable_comparison: "The leaves look like little blue-gray mittens with rounded bumps"
+    touch_tip: "The leaves feel leathery but not super stiff, and the rounded lobes never poke you"
+    smell_tip: "The leaves don't have a strong smell, but you can try crushing one to see"
+    fun_fact: "Blue Oaks can live for over 500 years, and they're experts at surviving California's hot, dry summers!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the leaf color. Are they a dusty blue-gray color instead of bright green?"
+        yes_next: 2
+        no_next: "Not a Blue Oak - check other oak species"
+      - step: 2
+        instruction: "Look at the leaf shape. Do the leaves have rounded lobes with no pokey tips?"
+        yes_next: 3
+        no_next: "If the lobes have bristles at the tips, it might be a Black Oak instead"
+      - step: 3
+        instruction: "In fall, look for acorns. Are they about an inch long with a shallow, warty cup?"
+        yes_next: "You found a Blue Oak!"
+        no_next: "If the acorns are different, or if the leaves are much bigger with deeper lobes, it might be a Valley Oak"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New blue-gray leaves emerge; tree leafs out later than many other deciduous trees"
+      reproductive_activity: "Small flowers appear on hanging catkins; female flowers are tiny and hard to see"
+      identification_tips: "Fresh blue-gray foliage is most distinctive at this time"
+      kid_friendly_tip: "In spring, the baby leaves come out looking like tiny blue mittens"
+    
+    - season: "Summer" 
+      visual_changes: "Leaves fully developed with distinctive blue-gray color"
+      reproductive_activity: "Acorns continue developing, growing larger"
+      identification_tips: "Blue-gray color stands out compared to other oaks"
+      kid_friendly_tip: "During hot summer days, the blue leaves help the tree stay cool"
+    
+    - season: "Fall"
+      visual_changes: "Leaves may turn slightly yellow or brown before falling; typically less colorful fall display than some oaks"
+      reproductive_activity: "Acorns mature and drop from the tree"
+      identification_tips: "Look for mature acorns with shallow, warty cups"
+      kid_friendly_tip: "Fall is acorn time! Look for acorns with shallow, bumpy cups like tiny hats"
+    
+    - season: "Winter"
+      visual_changes: "Loses all leaves; bare branches reveal the tree's shape"
+      reproductive_activity: "Dormant, no reproductive activity"
+      identification_tips: "Light gray bark and tree shape remain visible"
+      kid_friendly_tip: "In winter, the tree takes a nap and drops all its leaves until spring"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Blue-gray leaf color"
+      reliability: "Very high"
+      visibility: "Easily visible from distance during growing season"
+    - feature: "Rounded leaf lobes without bristle tips"
+      reliability: "High"
+      visibility: "Visible with close examination of leaves"
+    - feature: "Light gray bark with shallow furrows"
+      reliability: "Medium"
+      visibility: "Visible on trunk year-round"
+    
+  look_alike_species:
+    - species: "Valley Oak (Quercus lobata)"
+      differences: "Valley Oak has larger leaves with more deeply cut lobes and a greener color; often grows much larger"
+      identification_tip: "If the leaves are very large and deeply cut like fingers, it's more likely a Valley Oak"
+    
+    - species: "Black Oak (Quercus kelloggii)"
+      differences: "Black Oak has pointed lobes with bristle tips and leaves turn orange-yellow in fall"
+      identification_tip: "If the leaf lobes have pointy bristles at the tips, it's not a Blue Oak"
+    
+  cultural_ecological_notes:
+    - "Acorns were an important food source for indigenous California peoples"
+    - "One of the most drought-tolerant oaks in California"
+    - "Provides essential wildlife habitat and food for many animals"
+    - "Often found in oak savanna landscapes with grassy understory"
+    
+  range_within_california:
+    - "Endemic to California - doesn't grow naturally anywhere else in the world"
+    - "Common in the foothills surrounding the Central Valley"
+    - "Found in Coast Ranges and Sierra foothills up to about 4,000 feet elevation"
+    
+  # Physical characteristics section
+  physical_characteristics:
+    height_range: "30-60 feet when mature"
+    growth_rate: "Slow to moderate, less than 12 inches per year"
+    crown_spread: "40-70 feet at maturity"
+    lifespan: "200-600 years"
+    trunk_diameter: "1-3 feet at maturity"
+    root_system: "Deep taproot with extensive lateral roots"
+    toxicity: "Acorns contain tannins that need to be leached before eating; not highly toxic"
+  
+  # Cultural significance section
+  cultural_significance:
+    - culture: "Miwok people"
+      physical_uses:
+        - "Gathered blue oak acorns to make flour for bread and mush"
+        - "Used the hard wood to make tools for everyday use"
+      symbolic_meaning:
+        - "The oak's strength represented resilience through hardship like drought"
+    
+    - culture: "Yokuts people"
+      physical_uses:
+        - "Collected and processed acorns as a staple food"
+        - "Used oak galls (round growths on leaves caused by wasps) for medicine"
+      symbolic_meaning:
+        - "Oak trees were gathering places for community events and storytelling"
+    
+    - culture: "Patwin people"
+      physical_uses:
+        - "Harvested acorns in fall as a primary food source"
+        - "Used the wood for making fire"
+      symbolic_meaning:
+        - "The oak represented nourishment and sustained life through difficult times"
+  
+  # Conservation status section
+  conservation_status:
+    status: "Of conservation concern - not endangered but declining in some areas"
+    threats: "Development in foothill areas, lack of natural regeneration, sudden oak death in some regions"
+    protection_efforts: "Conservation easements, private land conservation programs, and replanting efforts in some areas"
+  
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-SHAPE-05"  # Lobed
+      - "feature_id: LEAF-COMPLEX-01"  # Simple broadleaf
+    
+    confirmation_features:
+      - "feature_id: FRUIT-TYPE-01"  # Acorns present
+      - "feature_id: TREE-SIZE-02"  # Medium tree
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-02", "LEAF-TYPE-01"]  # Rounded crown, deciduous
+      
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SHAPE-05", "LEAF-COMPLEX-01"]  # Lobed, simple leaves
+      
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-01", "BARK-TEXT-02"]  # Acorns, furrowed bark
+    
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["LEAF-SHAPE-05", "LEAF-COMPLEX-01"]
+        notes: "New blue-gray foliage is most distinctive"
+      
+      summer:
+        reliability: "High"
+        key_features: ["LEAF-SHAPE-05", "LEAF-COMPLEX-01"]
+        notes: "Full blue-gray canopy is easily visible"
+      
+      fall:
+        reliability: "High" 
+        key_features: ["FRUIT-TYPE-01", "LEAF-TYPE-01"]
+        notes: "Acorns present; leaves begin to drop"
+      
+      winter:
+        reliability: "Low"
+        key_features: ["LEAF-TYPE-01", "TREE-FORM-02"]
+        notes: "Leaf fall complete; harder to identify without leaves"
+    
+    misidentification_risks:
+      - "Could be confused with Valley Oak, especially at a distance"
+      - "Young trees without full blue-gray coloration may be harder to identify"

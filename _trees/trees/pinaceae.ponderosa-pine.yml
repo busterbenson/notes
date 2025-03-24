@@ -1,0 +1,298 @@
+tree:
+  common_name: "Ponderosa Pine"
+  scientific_name: "Pinus ponderosa"
+  family: "Pinaceae"
+  
+  # Basic summary
+  summary: "The Ponderosa Pine is a tall evergreen tree with long needles in bundles of three and reddish-orange to yellow puzzle-piece bark that smells like vanilla or butterscotch. It has prickly cones and can grow to over 200 feet tall, making it one of the most important pine trees in western forests."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Needles in bundles of three; puzzle-piece bark pattern in orange-brown or yellow-orange colors; vanilla/butterscotch smell in bark cracks"
+    secondary_markers: "Reddish-orange to yellow puzzle-piece bark; cones with sharp, outward-pointing prickles that feel painful when touched"
+    seasonal_markers: "Little seasonal change; stays green year-round; yellow pollen in spring; cones mature in fall"
+    similar_species_differentiation: "Unlike Jeffrey Pine, has sharp prickly cones that hurt when touched (Jeffrey Pine cones are gentler); unlike Sugar Pine, has needles in threes not fives; unlike Knobcone Pine, has larger cones that fall off the tree"
+  
+  features:
+    always_true:
+      # Fundamental traits
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles all year round"
+        
+      - feature_id: "NEEDLE-ARRANGE-03"  # Needles in threes
+        notes: "Always grows three needles bundled together in each fascicle"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Young trees are triangle-shaped; older trees have a more rounded, open crown"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Grows 60-200 feet tall (up to 20 stories high)"
+      
+      - feature_id: "BARK-TEXT-04"  # Plated bark
+        notes: "Bark breaks into large, flat, puzzle-like plates with age"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Naturally grows in mountain forests throughout the western United States"
+      
+      - feature_id: "ECO-LIFE-01"  # Long-lived
+        notes: "Can live 300-600 years, with some trees surviving even longer"
+        
+    usually_true:
+      # Features with exceptions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Grows with a straight, tall single trunk most of the time"
+        exceptions: "May fork or grow multiple trunks if damaged by lightning, fire, or other injuries"
+      
+      - feature_id: "NEEDLE-SIZE-03"  # Long needles
+        notes: "Needles typically 5-10 inches long, somewhat twisted"
+        exceptions: "Can be shorter in very harsh growing conditions or higher elevations"
+      
+      - feature_id: "CONE-SIZE-02"  # Medium cones
+        notes: "Cones are typically 3-6 inches long"
+        exceptions: "Size can vary based on growing conditions"
+      
+      - feature_id: "SENSORY-SMELL-02"  # Aromatic bark
+        notes: "Bark often has a vanilla or butterscotch smell when sniffed deeply in cracks"
+        exceptions: "Sometimes smells more like turpentine or resin, especially when wet"
+    
+    sometimes_true:
+      # Features that vary
+      - feature_id: "BARK-COLOR-03"  # Red bark
+        conditions: "Mature trees, especially in sunlight"
+        notes: "Bark develops a distinctive reddish-orange to yellow color as the tree ages"
+      
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        conditions: "Young trees"
+        notes: "Bark is grayish-black on young trees before puzzle pattern develops"
+      
+      - feature_id: "CONE-FEAT-01"  # Persistent cones
+        conditions: "After seeds are released"
+        notes: "Empty cones often remain on ground for years"
+      
+      - feature_id: "GEO-ELEV-02"  # Mid-elevation
+        conditions: "Lower range of habitat"
+        notes: "Found at 2,000-7,000 feet in most mountain ranges"
+      
+      - feature_id: "ECO-ADAPT-03"  # Fire resistant
+        conditions: "Mature trees"
+        notes: "Thick bark helps protect older trees from fire"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        conditions: "Established trees"
+        notes: "Can survive periods of drought better than many other trees"
+    
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all needles seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Always has three needles per bundle, never two"
+      
+      - feature_id: "NEEDLE-ARRANGE-04"  # Needles in fives
+        notes: "Always has three needles per bundle, never five"
+      
+      - feature_id: "CONE-POS-01"  # Upright cones
+        notes: "Cones always point outward or hang down, never grow upright"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Produces inconspicuous pollen cones, not showy flowers"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Orange-brown puzzle piece bark and prickly cones"
+    memorable_comparison: "The bark looks like puzzle pieces in different shades of orange, brown and yellow"
+    touch_tip: "Be careful touching the cones - their prickles are sharp and can poke your fingers!"
+    smell_tip: "Sniff in a crack of the bark (don't scratch it) - you might smell vanilla, butterscotch, or sometimes turpentine"
+    fun_fact: "The bark of older Ponderosa Pines can smell like vanilla or butterscotch cookies! The Ponderosa Pine is sometimes called the 'Yellow Pine' or 'Western Yellow Pine' because of its yellowish bark and wood."
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, count the needles in a bundle. Do you find exactly 3 needles growing together in each group?"
+        yes_next: 2
+        no_next: "Not a Ponderosa Pine - if there are 5 needles per bundle, check Sugar Pine; if 2 needles, check other pines"
+      - step: 2
+        instruction: "Look at the bark on the trunk. Does it have a pattern that looks like puzzle pieces in yellow, orange, or reddish-brown colors?"
+        yes_next: 3
+        no_next: "Might not be a Ponderosa Pine - check other pine trees"
+      - step: 3
+        instruction: "Find a cone on the tree or ground. CAREFULLY touch the prickles - do they feel sharp and poke your finger?"
+        yes_next: "You found a Ponderosa Pine!"
+        no_next: "If the prickles are soft and don't hurt, it's probably a Jeffrey Pine"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New needle growth appears, often slightly lighter green than older needles"
+      reproductive_activity: "Small purple-red pollen cones release yellow pollen; female cones begin forming"
+      identification_tips: "Look for bright green new needle growth and yellow pollen release"
+      kid_friendly_tip: "In spring, new needles grow and the tree makes yellow pollen that blows in the wind like dust"
+    
+    - season: "Summer" 
+      visual_changes: "New needles reach full size, color darkens; young seed cones growing"
+      reproductive_activity: "Young seed cones continue developing, remain closed"
+      identification_tips: "Green developing cones visible, about the size of a small apple"
+      kid_friendly_tip: "Baby cones are growing in summer - they're green and have sharp prickles"
+    
+    - season: "Fall"
+      visual_changes: "Some older needles yellow and fall; cones begin to ripen and open"
+      reproductive_activity: "Cones mature, turn brown, and open to release seeds with wings"
+      identification_tips: "Look for open or opening brown cones with seeds"
+      kid_friendly_tip: "In fall, the cones turn brown and open up to let their seeds fly away with little wings"
+    
+    - season: "Winter"
+      visual_changes: "Tree remains green; empty opened cones may persist"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Distinctive form and bark visible; opened cones may persist on branches"
+      kid_friendly_tip: "Even in winter, Ponderosa Pines stay green when other trees lose their leaves"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Needles in bundles of three"
+      reliability: "Very high"
+      visibility: "Medium - need to look closely at needles"
+    - feature: "Puzzle-piece bark pattern in orange-brown colors"
+      reliability: "Very high"
+      visibility: "Easy - visible from nearby on mature trees"
+    - feature: "Cones with sharp, prickly scales"
+      reliability: "High"
+      visibility: "Easy - can be tested by careful touch"
+    - feature: "Vanilla or butterscotch smell in bark cracks"
+      reliability: "Medium"
+      visibility: "Requires getting close and sniffing"
+    
+  look_alike_species:
+    - species: "Jeffrey Pine (Pinus jeffreyi)"
+      differences: "Jeffrey Pine has gentler, non-prickly cone scales that don't hurt when touched, and bark that consistently smells like vanilla or butterscotch"
+      identification_tip: "The 'prickle test' - Ponderosa Pine cones have sharp prickles that hurt your fingers, and the bark smell is more variable"
+    - species: "Sugar Pine (Pinus lambertiana)"
+      differences: "Sugar Pine has needles in bundles of five (not three) and much longer cones (10-20 inches)"
+      identification_tip: "Count the needles - Ponderosa Pine always has three needles per bundle, Sugar Pine has five"
+    - species: "Knobcone Pine (Pinus attenuata)"
+      differences: "Knobcone Pine has smaller cones that stay closed and attached to branches for many years"
+      identification_tip: "Ponderosa Pine cones fall off after releasing seeds; Knobcone Pine cones stay attached to the branches for years"
+    
+  cultural_ecological_notes:
+    - "Important food source for wildlife; many birds and mammals eat the seeds"
+    - "Fire-adapted with thick bark that helps protect mature trees from low-intensity fires"
+    - "Creates important forest habitat across much of western North America"
+    - "Used commercially for lumber due to its straight grain and workability"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Washoe and Paiute"
+      physical_uses:
+        - "Collected and ate the nutritious seeds as a food source"
+        - "Used the sticky sap to waterproof baskets and as a glue"
+        - "Made tea from needles for treating colds and coughs"
+      symbolic_meaning:
+        - "The tall, straight growth of the trees represented strength and resilience"
+        - "Used trees as landmarks for navigation across their territory"
+        - "Connected the sweet smell of the bark with healing properties"
+    
+    - culture: "Sierra Miwok and Maidu"
+      physical_uses:
+        - "Gathered pine nuts in fall as a food source"
+        - "Used the pitch for waterproofing baskets and canoes"
+        - "Made a salve from the sap to help heal cuts and wounds"
+      symbolic_meaning:
+        - "Featured the tree in stories about the origins of their lands"
+        - "Used parts of the tree in coming-of-age ceremonies"
+        - "The long life of the trees represented continuity across generations"
+    
+    - culture: "California Settlers and Pioneers"
+      physical_uses:
+        - "Used the strong wood for building houses, barns, and mining structures"
+        - "Harvested resin for making turpentine and other products"
+        - "Used the straight trunks for telegraph poles and railroad ties"
+      symbolic_meaning:
+        - "The tree became a symbol of the abundant natural resources of the West"
+        - "Represented the promise of new beginnings in the California forests"
+        - "Featured in artwork depicting the western landscape"
+    
+    - culture: "Modern Forest Management"
+      physical_uses:
+        - "Harvested sustainably for lumber, paper products, and biomass"
+        - "Manages trees for ecosystem health and fire resistance"
+        - "Studies the species as an indicator of climate change impacts"
+      symbolic_meaning:
+        - "Represents the importance of sustainable forestry practices"
+        - "Symbolizes the interconnected nature of forest ecosystems"
+        - "Used in education about western forest ecology and conservation"
+    
+  range_within_california:
+    - "Widespread throughout the Sierra Nevada mountain range"
+    - "Found in the Klamath Range and Cascade Range of Northern California"
+    - "Present in the mountains of Southern California"
+    - "Grows at elevations from 2,000 to 7,000 feet in most areas"
+    - "Prefers sunny locations with well-drained soils"
+    
+  physical_characteristics:
+    height_range: "60-200 feet tall (about as tall as a 6-20 story building)"
+    growth_rate: "Moderate to fast for a pine tree"
+    crown_spread: "25-35 feet wide at maturity"
+    lifespan: "300-600 years, with some living even longer"
+    trunk_diameter: "3-5 feet across (wider than a dining table)"
+    root_system: "Deep taproot with spreading lateral roots"
+    toxicity: "Not toxic, though resin may cause skin irritation in sensitive people"
+    
+  conservation_status:
+    status: "Least Concern (still common in natural range)"
+    threats: 
+      - "Climate change causing increased drought stress"
+      - "Bark beetle outbreaks during extended drought periods"
+      - "High-severity wildfires that kill even mature trees"
+      - "Human development in some parts of its range"
+    protection_efforts:
+      - "Protected in national parks and wilderness areas"
+      - "Forest management to reduce overcrowding and fire risk"
+      - "Selective harvesting to maintain forest health"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: NEEDLE-ARRANGE-03"  # Needles in threes
+    confirmation_features:
+      - "feature_id: BARK-COLOR-03"  # Red bark
+      - "feature_id: BARK-TEXT-04"  # Plated bark
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-03", "TREE-FORM-01"]  # Tall tree, pyramidal shape
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-ARRANGE-03", "BARK-COLOR-03"]  # Needles in threes, reddish bark
+      - distance: "close_inspection"
+        features_to_check: ["SENSORY-SMELL-02", "CONE-SIZE-02"]  # Aromatic bark, medium cones
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-03", "BARK-COLOR-03"]
+        notes: "New needle growth at branch tips; pollen cones visible"
+      
+      summer:
+        reliability: "Very high" 
+        key_features: ["NEEDLE-ARRANGE-03", "CONE-SIZE-02"]
+        notes: "Developing green cones visible; full needle growth"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["NEEDLE-ARRANGE-03", "BARK-COLOR-03"]
+        notes: "Cones opening; some needle drop but mostly green"
+      
+      winter:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-03", "BARK-TEXT-04"]
+        notes: "Remains green; puzzle-like bark pattern visible"
+    misidentification_risks: 
+      - "Very similar to Jeffrey Pine, best distinguished by cone prickles and less consistent vanilla smell"
+      - "Young trees before bark develops puzzle pattern may be harder to identify"
+      - "Ponderosa-Jeffrey hybrid zones exist in some areas, showing mixed characteristics"
+  
+  wildlife_value:
+    food_source:
+      - "Seeds are an important food source for squirrels, chipmunks, birds, and bears"
+      - "Provides food and shelter for many different animals"
+    habitat_provided:
+      - "Large trees provide nesting sites for birds of prey and other birds"
+      - "Dead snags provide homes for woodpeckers and other cavity-nesting species"
+      - "Provides shade and shelter for forest undergrowth and animals"
+    ecosystem_role: "Important component of many western forest types; helps stabilize mountain slopes and watershed areas"

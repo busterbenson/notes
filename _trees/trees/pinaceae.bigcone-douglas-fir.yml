@@ -1,0 +1,233 @@
+tree:
+  common_name: "Bigcone Douglas-fir"
+  scientific_name: "Pseudotsuga macrocarpa"
+  family: "Pinaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A tall evergreen tree native to Southern California mountains, distinguished by its massive cones that are much larger than other Douglas-firs. It has flat, soft needles that radiate around the twig and thick, fire-resistant bark that helps it survive in fire-prone regions."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Exceptionally large cones (4-8 inches long) with three-pointed 'mouse tail' bracts; flat needles radiating around twig"
+    secondary_markers: "Very thick, deeply furrowed bark; grows in Southern California mountains"
+    seasonal_markers: "Cones mature in late summer and fall; needles remain year-round"
+    similar_species_differentiation: "Unlike Coast Douglas-fir, has much larger cones and is found only in Southern California; unlike pines, needles grow individually, not in bundles"
+  
+  # Core features section
+  features:
+    always_true:
+      # Reference features.yml IDs with tree-specific notes
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles year-round"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Needles grow individually from the branch, not in bundles"
+      
+      - feature_id: "CONE-POS-02"  # Hanging cones
+        notes: "Cones hang down from branches rather than standing upright"
+      
+      - feature_id: "CONE-SIZE-03"  # Large cones
+        notes: "Produces exceptionally large cones (4-8 inches long)"
+      
+    usually_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        exceptions: "May occasionally develop multiple trunks if damaged"
+        notes: "Typically grows with one sturdy main trunk"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        exceptions: "Older trees may develop a more irregular crown in exposed sites"
+        notes: "Has a triangular or pyramid shape, especially when young"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        exceptions: "Young trees have smoother bark"
+        notes: "Develops exceptionally thick, deeply furrowed bark with age"
+      
+    sometimes_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Only on very young trees"
+        notes: "Bark is relatively smooth only when the tree is very young"
+      
+      - feature_id: "ECO-ADAPT-03"  # Fire resistant
+        conditions: "Mature trees with thick bark"
+        notes: "Thick bark provides good protection from moderate fires"
+    
+    never_true:
+      # Features explicitly absent that help differentiation
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all its needles seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Never has needles growing in pairs or bundles like pine trees"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Huge cones with little 'mouse tails' sticking out between the scales"
+    memorable_comparison: "The cones are as big as a large pinecone, but with special little 'tails' peeking out"
+    touch_tip: "The needles feel soft and flat, but the cones have thick, hard scales"
+    smell_tip: "Gently crush a needle to smell a sweet, piney scent"
+    fun_fact: "Bigcone Douglas-fir trees can survive forest fires because they grow super thick bark - like wearing a fire-proof jacket!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, check if you're in Southern California mountains. Bigcone Douglas-fir only grows there!"
+        yes_next: 2
+        no_next: "Not a Bigcone Douglas-fir - they only grow in Southern California"
+      - step: 2
+        instruction: "Look for really big cones on the ground (about as long as your hand). Do they have three-pointed 'mouse tail' bracts sticking out between the scales?"
+        yes_next: 3
+        no_next: "Not a Bigcone Douglas-fir - check regular Douglas-fir or another conifer"
+      - step: 3
+        instruction: "Look at the tree trunk. Is the bark very thick with deep grooves like a maze?"
+        yes_next: "You found a Bigcone Douglas-fir!"
+        no_next: "If the bark is thinner or the tree is young, check if you can find more cones to confirm"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New growth appears at branch tips in a lighter green color"
+      reproductive_activity: "Pollen cones release yellow pollen; female cones begin forming"
+      identification_tips: "Contrast between new growth and older needles; pollen release may be visible"
+      kid_friendly_tip: "In spring, the tips of branches get bright new baby needles that are lighter green"
+    
+    - season: "Summer" 
+      visual_changes: "New growth matures to match older needles"
+      reproductive_activity: "Young cones continue growing larger"
+      identification_tips: "Developing cones become more noticeable as they grow"
+      kid_friendly_tip: "Summer is when the baby cones grow bigger - they're green at first"
+    
+    - season: "Fall"
+      visual_changes: "No color change as it remains evergreen"
+      reproductive_activity: "Cones mature and begin to open, eventually falling from the tree"
+      identification_tips: "Look for mature brown cones on the tree and ground"
+      kid_friendly_tip: "Fall is the best time to find the fully grown, brown cones that have fallen to the ground"
+    
+    - season: "Winter"
+      visual_changes: "Evergreen foliage remains; may collect snow in higher elevations"
+      reproductive_activity: "Dormant, no reproductive activity"
+      identification_tips: "Distinctive form and evergreen nature visible against winter landscape"
+      kid_friendly_tip: "Even in winter when other trees lose their leaves, this tree stays green"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Very large cones (4-8 inches) with three-pronged bracts"
+      reliability: "Very high"
+      visibility: "Medium - need to find cones"
+    - feature: "Thick, deeply furrowed bark on mature trees"
+      reliability: "High"
+      visibility: "Easy to observe on trunk"
+    - feature: "Southern California mountain location"
+      reliability: "Very high"
+      visibility: "Determined by geographic location"
+    - feature: "Flat, soft needles radiating around twig"
+      reliability: "High"
+      visibility: "Observable on lower branches"
+    
+  look_alike_species:
+    - species: "Coast Douglas-fir (Pseudotsuga menziesii var. menziesii)"
+      differences: "Bigcone Douglas-fir has much larger cones (4-8 inches vs. 2-4 inches); thicker bark; grows only in Southern California mountains"
+      identification_tip: "If the cones are smaller than your hand or you're in Northern California, it's likely a Coast Douglas-fir"
+    
+    - species: "White Fir (Abies concolor)"
+      differences: "White Fir has upright cones without 'mouse tail' bracts; needles appear more flattened along branch; often has more blue-gray foliage"
+      identification_tip: "If the cones stand upright on top of branches and don't have 'mouse tails,' it's a White Fir"
+    
+  cultural_ecological_notes:
+    - "Adapted to fire ecology with thick bark that helps it survive moderate intensity fires"
+    - "Endemic to Southern California - doesn't grow naturally anywhere else in the world"
+    - "Populations are scattered and isolated in mountain canyon habitats"
+    - "The large seeds provide food for wildlife including squirrels, birds, and small mammals"
+    
+  range_within_california:
+    - "Found only in Southern California mountain ranges"
+    - "Common in the San Gabriel, San Bernardino, and San Jacinto Mountains"
+    - "Also occurs in the Santa Ana Mountains and Mt. Pinos region"
+    - "Typically grows at elevations between 3,000-8,000 feet"
+    
+  # Physical characteristics section
+  physical_characteristics:
+    height_range: "50-100 feet when mature"
+    growth_rate: "Moderate, slower than Coast Douglas-fir"
+    crown_spread: "30-40 feet at maturity"
+    lifespan: "250-500 years"
+    trunk_diameter: "2-5 feet at maturity"
+    root_system: "Deep taproot with widespread lateral roots"
+    toxicity: "Generally non-toxic but sap may cause skin irritation in sensitive individuals"
+  
+  # Cultural significance section
+  cultural_significance:
+    - culture: "Tongva (Gabrielino) people"
+      physical_uses:
+        - "Used the pitch (sticky sap) as a waterproof sealant"
+        - "Wood was used for construction and making tools"
+      symbolic_meaning:
+        - "The tree's ability to survive fires represented resilience and endurance"
+    
+    - culture: "Cahuilla people"
+      physical_uses:
+        - "Collected and used the sap for medicinal purposes"
+        - "Used the wood for building materials"
+      symbolic_meaning:
+        - "Trees that grew in difficult mountain terrain symbolized strength and adaptability"
+    
+    - culture: "Modern forest ecology"
+      physical_uses:
+        - "Studied as an example of fire adaptation in Mediterranean climates"
+        - "Seeds and cones collected for reforestation efforts"
+      symbolic_meaning:
+        - "Represents the unique biodiversity of Southern California mountains"
+  
+  # Conservation status section
+  conservation_status:
+    status: "Species of conservation concern due to limited range and threats"
+    threats: "Climate change, increasing fire intensity, drought stress, urban development"
+    protection_efforts: "Protected in Angeles, San Bernardino, and Cleveland National Forests"
+  
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: CONE-SIZE-03"  # Large cones
+      - "feature_id: CONE-POS-02"  # Hanging cones
+    
+    confirmation_features:
+      - "feature_id: NEEDLE-ARRANGE-01"  # Single needles
+      - "feature_id: BARK-TEXT-02"  # Furrowed bark
+      - "feature_id: GEO-REGION-03"  # Southern California
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-01", "LEAF-TYPE-02"]  # Pyramidal shape, evergreen
+      
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-ARRANGE-01", "BARK-TEXT-02"]  # Single needles, furrowed bark
+      
+      - distance: "close_inspection"
+        features_to_check: ["CONE-SIZE-03", "CONE-POS-02"]  # Large cones, hanging cones
+    
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["LEAF-TYPE-02", "NEEDLE-ARRANGE-01", "BARK-TEXT-02"]
+        notes: "Without cones, rely on needle arrangement and bark texture"
+      
+      summer:
+        reliability: "Medium"
+        key_features: ["NEEDLE-ARRANGE-01", "BARK-TEXT-02"]
+        notes: "Developing cones provide additional confirmation"
+      
+      fall:
+        reliability: "Very high" 
+        key_features: ["CONE-SIZE-03", "CONE-POS-02"]
+        notes: "Mature cones are highly distinctive"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["LEAF-TYPE-02", "BARK-TEXT-02"]
+        notes: "Rely on bark texture and evergreen nature when cones may be absent"
+    
+    misidentification_risks:
+      - "Could be confused with Coast Douglas-fir if cones aren't present for comparison"
+      - "Young trees without cones might be confused with other conifers"

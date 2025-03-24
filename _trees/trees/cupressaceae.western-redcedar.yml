@@ -1,0 +1,225 @@
+tree:
+  common_name: "Western Redcedar"
+  scientific_name: "Thuja plicata"
+  family: "Cupressaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A tall tree with reddish-brown bark that peels in thin strips and scale-like leaves arranged in flat, drooping sprays. The branches spread out like fans and it has small oblong cones with thin scales."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Scale-like leaves that form flat, drooping sprays; trees smell spicy and sweet when crushed"
+    secondary_markers: "Reddish-brown fibrous bark; branches that fan out and droop at the ends; flattened sprays of leaves"
+    seasonal_markers: "Tiny brownish cones visible in late summer through winter; new growth appears brighter green in spring"
+    similar_species_differentiation: "Unlike Incense-cedar, has flatter sprays of leaves and lacks white X markings underneath; unlike Alaska-cedar, branches fan out instead of drooping like sad arms"
+  
+  # Core features section
+  features:
+    always_true:
+      # Reference features.yml IDs with tree-specific notes
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its leaves all year long"
+      
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        notes: "Tiny, overlapping scaled leaves that form flat sprays"
+      
+      - feature_id: "BARK-TEXT-06"  # Fibrous bark
+        notes: "Bark peels off in long, thin strips like shredded paper"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        notes: "Leaves smell spicy and sweet when crushed"
+        
+    usually_true:
+      # Include age, season, or condition-dependent features
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        exceptions: "May develop multiple trunks when damaged or growing in unusual conditions"
+        notes: "Usually grows as one main trunk"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        exceptions: "Older trees may have irregular crowns, especially in forests"
+        notes: "Triangle-shaped, especially when young"
+      
+    sometimes_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "BARK-COLOR-03"  # Red bark
+        conditions: "Mature trees in sunny locations"
+        notes: "Bark can be more reddish-brown on older trees or where exposed to sun"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        conditions: "Mature trees in ideal growing conditions"
+        notes: "Can grow very tall (over 150 feet) in good conditions"
+      
+    never_true:
+      # Features explicitly absent that help differentiation
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all its leaves seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Does not have individual needles - only scale-like leaves"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Flat, fan-like branches with tiny scales for leaves"
+    memorable_comparison: "Looks like a giant fan made of lots of tiny green scales"
+    touch_tip: "The leaves feel soft and flat when you stroke them from the base to the tip"
+    smell_tip: "Gently squeeze a small bit of foliage and smell a sweet, fresh scent like forest air"
+    fun_fact: "Western Redcedar trees can live for more than 1,000 years—that's older than Sleeping Beauty in her longest nap!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, check the leaves. Are they tiny scales that overlap like fish scales and form flat sprays?"
+        yes_next: 2
+        no_next: "Not a Western Redcedar - might be a tree with needles instead"
+      - step: 2
+        instruction: "Gently squeeze some of the leaves and smell them. Do they have a nice, sweet forest smell?"
+        yes_next: 3
+        no_next: "Could be a different cedar or cypress - check the bark"
+      - step: 3
+        instruction: "Look at the bark. Is it reddish-brown and does it peel off in thin strips like string or paper?"
+        yes_next: "You found a Western Redcedar!"
+        no_next: "Might be Alaska-cedar or Atlantic White-cedar - check if the branches droop down"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Bright yellow-green new growth appears at branch tips"
+      reproductive_activity: "Small yellow pollen cones release pollen"
+      identification_tips: "Look for the contrast between new bright growth and older dark green foliage"
+      kid_friendly_tip: "In spring, look for bright green 'tips' on the branches, like the tree is growing new fingernails!"
+    
+    - season: "Summer" 
+      visual_changes: "Consistent dark green color throughout"
+      reproductive_activity: "Small seed cones start to develop"
+      identification_tips: "Full, lush appearance with fan-like sprays clearly visible"
+      kid_friendly_tip: "In summer, the tree is a deep green color all over, and small cones start to grow"
+    
+    - season: "Fall"
+      visual_changes: "No color change but sometimes inner foliage may brown slightly"
+      reproductive_activity: "Cones mature to a light brown color"
+      identification_tips: "Mature cones are visible on branch ends"
+      kid_friendly_tip: "While other trees change colors, this one stays green, but you might see small brown cones"
+    
+    - season: "Winter"
+      visual_changes: "Foliage remains but may look slightly darker"
+      reproductive_activity: "Mature cones remain, seeds may be released"
+      identification_tips: "Fan-like branch pattern is easier to see when deciduous trees are bare"
+      kid_friendly_tip: "In winter, the tree keeps its green leaves when other trees lose theirs"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Fan-like sprays of scale leaves"
+      reliability: "Very high"
+      visibility: "Easy to see from nearby"
+    - feature: "Reddish-brown, fibrous bark that peels in strips"
+      reliability: "High"
+      visibility: "Need to look at trunk closely"
+    - feature: "Sweet, spicy smell when foliage is crushed"
+      reliability: "Very high"
+      visibility: "Requires interaction"
+    
+  look_alike_species:
+    - species: "Incense-cedar (Calocedrus decurrens)"
+      differences: "Incense-cedar has thicker, more upright sprays and forms a narrow column; its scales have white X patterns underneath"
+      identification_tip: "If the sprays are thick and stand upright instead of drooping, and the tree is shaped like a column, it's likely Incense-cedar"
+    
+    - species: "Alaska-cedar (Callitropsis nootkatensis)"
+      differences: "Alaska-cedar has droopier, weeping branches that hang down like they're sad; its foliage is more blue-green"
+      identification_tip: "If the whole tree looks droopy and sad, with branches hanging down, it's probably Alaska-cedar"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Coast Salish Peoples"
+      physical_uses:
+        - "Used the wood to build big canoes that could hold 30-50 people"
+        - "Made house posts, totem poles, and boxes from the straight-grained wood"
+        - "Wove the inner bark into mats, baskets, hats, and even clothing"
+      symbolic_meaning:
+        - "Called the 'Tree of Life' because it provided so many necessary things"
+        - "Believed the tree had special powers that could protect and heal people"
+    
+    - culture: "Nuu-chah-nulth Peoples"
+      physical_uses:
+        - "Stripped thin strips of bark to make beautiful waterproof hats and baskets"
+        - "Used the wood to carve paddles and ceremonial masks"
+        - "Made rope from the twisted bark for fishing and hunting"
+      symbolic_meaning:
+        - "Respected as a giving tree that provided materials for almost every part of life"
+        - "Used in purification ceremonies because of its cleansing smell"
+    
+  cultural_ecological_notes:
+    - "One of the most important trees for Pacific Northwest Indigenous peoples, used for everything from homes to tools to medicine"
+    - "The soft, rot-resistant wood is still used today for decks, fences, and outdoor buildings"
+    - "Provides homes for many forest animals in its deep bark and wide branches"
+    
+  range_within_california:
+    - "Grows mostly in the northwestern corner of California in moist coastal forests"
+    - "Found in Del Norte, Humboldt, and Mendocino counties where there's plenty of rain"
+    - "Prefers damp, shady places where fog is common"
+    
+  physical_characteristics:
+    height_range: "Can grow 150-200 feet tall in ideal conditions, about as tall as a 15-20 story building"
+    growth_rate: "Moderate growth, a bit faster when young"
+    crown_spread: "30-60 feet wide, about as wide as a school bus or two"
+    lifespan: "Can live 800-1,000+ years, longer than 10 human lifetimes"
+    trunk_diameter: "3-10 feet across, sometimes bigger than a car tire"
+    root_system: "Wide-spreading, shallow roots that help it find water"
+    toxicity: "Safe to touch but not to eat; some people may get skin irritation from the oils"
+    
+  conservation_status:
+    status: "Not endangered in California, but old-growth forests are much rarer than they used to be"
+    threats: "Logging of old trees, climate change making conditions drier, forest fires"
+    protection_efforts: "Some old-growth forests are protected in parks and reserves"
+    
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: LEAF-FORM-05"  # Scale-like leaves
+      - "feature_id: SENSORY-SMELL-01"  # Aromatic leaves
+    confirmation_features:
+      - "feature_id: BARK-TEXT-06"  # Fibrous bark
+      - "feature_id: BARK-COLOR-03"  # Red bark
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-01", "LEAF-TYPE-02"]  # Pyramidal shape, evergreen
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-FORM-05", "BRANCH-ANGLE-02"]  # Scale-like leaves, ascending branches
+      - distance: "close_inspection"
+        features_to_check: ["SENSORY-SMELL-01", "BARK-TEXT-06"]  # Aromatic leaves, fibrous bark
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "LEAF-FORM-05", "SENSORY-SMELL-01"]
+        notes: "New growth adds bright contrast to older foliage"
+      summer:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "LEAF-FORM-05", "BARK-TEXT-06"]
+        notes: "Full foliage makes fan-like sprays very visible"
+      fall:
+        reliability: "High" 
+        key_features: ["LEAF-TYPE-02", "LEAF-FORM-05", "CONE-SIZE-01"]
+        notes: "Small cones may be visible; foliage remains green"
+      winter:
+        reliability: "Very high"
+        key_features: ["LEAF-TYPE-02", "TREE-FORM-01", "SENSORY-SMELL-01"]
+        notes: "Evergreen nature stands out when deciduous trees are bare"
+    misidentification_risks:
+      - species: "Incense-cedar"
+        confusion_points: "Similar scale-like leaves but more upright and less fan-like"
+        key_differentiators: "Lacks fan-like branches; has white X patterns under scales"
+      - species: "Alaska-cedar"
+        confusion_points: "Similar aromatic smell and scale-like leaves"
+        key_differentiators: "Has distinctly drooping branches with a weeping appearance"
+      
+  wildlife_value:
+    - "Many birds nest in its branches, protected by the thick foliage"
+    - "Black bears sometimes use the soft bark to make dens"
+    - "Deer and elk eat the leaves when other food is scarce in winter"
+    - "The leaves and wood provide homes for many insects and small forest animals"
+    
+  propagation_information:
+    - "Grows best from seeds collected from cones in fall or winter"
+    - "Likes moist, cool conditions with some shade when young"
+    - "Can also grow from cuttings taken in late fall or winter"
+    - "Takes many years to reach full size, but can live for centuries"

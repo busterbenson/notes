@@ -1,0 +1,230 @@
+tree:
+  common_name: "Valley Oak"
+  scientific_name: "Quercus lobata"
+  family: "Fagaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A majestic deciduous oak with deeply lobed leaves that can look like green mittens with long fingers. It has a massive trunk and broadly spreading crown, often growing to be the largest oak in California."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Very deeply lobed leaves with rounded lobes; massive spreading branches on mature trees"
+    secondary_markers: "Light gray, deeply checkered bark; acorns with long, pointed tips and scaly cups"
+    seasonal_markers: "Leaves turn yellow-brown in fall and drop; spring brings new bright green growth; acorns mature in fall"
+    similar_species_differentiation: "Unlike Blue Oak, has larger, more deeply-lobed green leaves (not blue-gray); unlike Oregon White Oak, has more narrow, deeply divided leaf segments"
+  
+  # Core features section
+  features:
+    always_true:
+      # Reference features.yml IDs with tree-specific notes
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops all its leaves in winter"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Each leaf is a single piece, not divided into separate leaflets"
+      
+      - feature_id: "LEAF-SHAPE-05"  # Lobed
+        notes: "Leaves have deep rounded lobes that look like fingers"
+      
+    usually_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        exceptions: "May occasionally develop multiple trunks after damage or from sprouting"
+        notes: "Typically grows with one massive main trunk"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        exceptions: "Very old trees may have more irregular crowns with some dead branches"
+        notes: "Develops a broad, spreading rounded crown with age"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        exceptions: "Trees in poor growing conditions may remain smaller"
+        notes: "One of the largest oaks, often reaching impressive heights"
+      
+    sometimes_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees"
+        notes: "Bark is relatively smooth when the tree is young"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Mature trees"
+        notes: "Bark develops deep checkered grooves with age"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        conditions: "Often found near seasonal streams or areas with high water table"
+        notes: "Commonly grows where it can access underground water"
+    
+    never_true:
+      # Features explicitly absent that help differentiation
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops leaves in winter, never stays green year-round"
+      
+      - feature_id: "LEAF-EDGE-05"  # Spiny edge
+        notes: "Leaf lobes are always rounded, never spiny or bristle-tipped"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Leaves with deep round-edged cuts that look like green mittens with long fingers"
+    memorable_comparison: "Imagine a giant tree with leaves shaped like mittens that have really long, skinny fingers"
+    touch_tip: "The leaves feel smooth and not too thick, and the edges are wavy like gentle hills"
+    smell_tip: "The leaves don't have a strong smell, but the oak itself has a woody, earthy scent"
+    fun_fact: "Valley Oaks can live for over 600 years and grow trunks so thick that 10 kids holding hands might not be able to reach around them!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the leaf shape. Do the leaves have deep cuts that make them look like green mittens with long fingers?"
+        yes_next: 2
+        no_next: "Not a Valley Oak - check if it might be another oak species"
+      - step: 2
+        instruction: "Is the tree very large with big branches that reach out wide from the trunk?"
+        yes_next: 3
+        no_next: "Might be a young Valley Oak or another oak species - check the leaves more carefully"
+      - step: 3
+        instruction: "In fall, look for long acorns with pointy tips. Do the acorns have scaly cups and are they about 1-2 inches long?"
+        yes_next: "You found a Valley Oak!"
+        no_next: "If the acorns are different, check if the tree might be a Blue Oak (which has bluer leaves) or an Oregon Oak"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Bright green new leaves emerge; tree leafs out after winter dormancy"
+      reproductive_activity: "Catkins (dangling male flowers) appear; tiny female flowers emerge"
+      identification_tips: "Fresh bright green leaves with deep lobes are easier to identify"
+      kid_friendly_tip: "In spring, tiny new green leaves pop out that will grow into big mitten shapes"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of deeply lobed green leaves"
+      reproductive_activity: "Acorns develop and grow larger"
+      identification_tips: "Massive, spreading crown creates distinctive silhouette"
+      kid_friendly_tip: "In summer, the tree makes cool shade that can cover a whole playground"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow-brown before falling; typically not bright fall colors"
+      reproductive_activity: "Acorns mature and drop from the tree"
+      identification_tips: "Distinctive long, pointed acorns with scaly cups"
+      kid_friendly_tip: "Fall is acorn hunting time! Look for acorns with pointed tips like tiny hats"
+    
+    - season: "Winter"
+      visual_changes: "Loses all leaves; bare massive branches reveal the spreading structure"
+      reproductive_activity: "Dormant, no reproductive activity"
+      identification_tips: "Massive spreading branches and deeply furrowed bark remain visible"
+      kid_friendly_tip: "In winter, you can see all the giant branches reaching out like arms"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Deeply lobed leaves with rounded edges"
+      reliability: "Very high"
+      visibility: "Easily visible during growing season"
+    - feature: "Massive trunk with deeply furrowed bark"
+      reliability: "High"
+      visibility: "Visible year-round on mature trees"
+    - feature: "Long acorns with pointed tips"
+      reliability: "High (when present)"
+      visibility: "Good in fall when acorns mature"
+    
+  look_alike_species:
+    - species: "Blue Oak (Quercus douglasii)"
+      differences: "Blue Oak has blue-gray leaves that are smaller and less deeply lobed; generally smaller tree"
+      identification_tip: "Valley Oak leaves are larger, greener, and more deeply cut than Blue Oak leaves"
+    
+    - species: "Oregon White Oak (Quercus garryana)"
+      differences: "Oregon White Oak has more leathery leaves with broader lobes that aren't cut as deeply"
+      identification_tip: "Valley Oak leaf lobes are narrower and more deeply cut, like long skinny fingers"
+    
+  cultural_ecological_notes:
+    - "Acorns were a staple food for California indigenous peoples"
+    - "Provides habitat for over 300 wildlife species"
+    - "Often grows in grassy savanna landscapes of California's valleys"
+    - "Has declined significantly due to agricultural clearing and urban development"
+    
+  range_within_california:
+    - "Endemic to California - grows naturally only in California's valleys and foothills"
+    - "Common throughout the Central Valley, Sacramento Valley, and San Joaquin Valley"
+    - "Found in valleys of the Coast Ranges and western foothills of the Sierra Nevada"
+    - "Generally grows below 2,000 feet elevation in valley bottoms and gentle slopes"
+    
+  # Physical characteristics section
+  physical_characteristics:
+    height_range: "40-100 feet when mature"
+    growth_rate: "Moderate, about 12-24 inches per year when young"
+    crown_spread: "60-100 feet at maturity"
+    lifespan: "300-600 years"
+    trunk_diameter: "4-7 feet at maturity (some giants reach 10+ feet)"
+    root_system: "Deep taproot with extensive lateral roots"
+    toxicity: "Acorns contain tannins that need to be leached before eating; not highly toxic"
+  
+  # Cultural significance section
+  cultural_significance:
+    - culture: "Miwok people"
+      physical_uses:
+        - "Gathered valley oak acorns as a primary food source"
+        - "Made acorn flour by grinding and leaching the acorns, then cooking into bread or soup"
+      symbolic_meaning:
+        - "The massive tree represented strength, longevity, and connection to the land"
+    
+    - culture: "Yokuts people"
+      physical_uses:
+        - "Collected acorns in traditional gathering baskets in fall"
+        - "Used oak wood for tool handles and cooking utensils"
+      symbolic_meaning:
+        - "Valley Oaks were gathering places for community meetings and ceremonies"
+    
+    - culture: "Ohlone people"
+      physical_uses:
+        - "Harvested acorns as a staple food, storing them in special granaries"
+        - "Used the wood for making tools and cooking fires"
+      symbolic_meaning:
+        - "The valley oak was seen as a provider and nurturer, giving both food and shelter"
+  
+  # Conservation status section
+  conservation_status:
+    status: "Of conservation concern - has declined significantly from historical range"
+    threats: "Agricultural conversion, urban development, poor natural regeneration, climate change"
+    protection_efforts: "Legal protection in many areas; restoration programs; conservation easements"
+  
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-SHAPE-05"  # Lobed
+      - "feature_id: TREE-SIZE-03"  # Tall tree
+    
+    confirmation_features:
+      - "feature_id: FRUIT-TYPE-01"  # Acorns present
+      - "feature_id: BARK-TEXT-02"  # Furrowed bark
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-02", "TREE-SIZE-03"]  # Rounded crown, tall tree
+      
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SHAPE-05", "LEAF-COMPLEX-01"]  # Lobed, simple leaves
+      
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-01", "BARK-TEXT-02"]  # Acorns, furrowed bark
+    
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-SHAPE-05", "LEAF-COMPLEX-01", "TREE-SIZE-03"]
+        notes: "Fresh leaf growth makes identification easier"
+      
+      summer:
+        reliability: "High"
+        key_features: ["LEAF-SHAPE-05", "LEAF-COMPLEX-01", "TREE-SIZE-03"]
+        notes: "Full canopy and massive size are distinctive"
+      
+      fall:
+        reliability: "Very high" 
+        key_features: ["FRUIT-TYPE-01", "LEAF-SHAPE-05", "TREE-SIZE-03"]
+        notes: "Acorns present; leaves begin to drop"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["TREE-SIZE-03", "TREE-FORM-02", "BARK-TEXT-02"]
+        notes: "Massive branching pattern and bark visible without leaves"
+    
+    misidentification_risks:
+      - "Young trees might be confused with other white oaks before developing massive size"
+      - "Could be confused with Oregon White Oak where ranges overlap"

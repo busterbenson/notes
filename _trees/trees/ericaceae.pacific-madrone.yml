@@ -1,0 +1,224 @@
+tree:
+  common_name: "Pacific Madrone"
+  scientific_name: "Arbutus menziesii"
+  family: "Ericaceae"
+  
+  # Basic summary
+  summary: "A distinctive broadleaf evergreen tree with smooth, peeling cinnamon-red bark and leathery dark green leaves. It produces clusters of urn-shaped white flowers followed by bright red berries in fall."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Smooth, peeling reddish-orange bark; glossy, leathery evergreen leaves"
+    secondary_markers: "White bell-shaped flowers in spring; clusters of bright red berries in fall"
+    seasonal_markers: "New bark peeling to reveal smooth red-orange surface in summer; red berries visible in fall and winter"
+    similar_species_differentiation: "Unlike Toyon, has smooth peeling bark and larger, more oval leaves; unlike Manzanita, grows as a large tree rather than shrub"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its dark green leaves year-round"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Each leaf is a single undivided oval shape"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow one at a time along the branches, not opposite each other"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Outer bark peels in thin sheets to reveal smooth reddish surface underneath"
+      
+      - feature_id: "BARK-COLOR-03"  # Reddish bark
+        notes: "Distinctive cinnamon-red to orange color where bark has recently peeled"
+      
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        exceptions: "Sometimes develops multiple trunks after damage or in certain growing conditions"
+        notes: "Typically grows with one main trunk, especially in forest settings"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        exceptions: "Young trees or those in dense forests can have a more narrow shape"
+        notes: "Mature trees in open areas develop a broad, rounded crown"
+      
+    sometimes_true:
+      - feature_id: "LEAF-COLOR-04"  # Silver undersides
+        conditions: "More visible on mature leaves in dry conditions"
+        notes: "Undersides of leaves can appear slightly lighter or silvery-green"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Newly exposed bark after peeling"
+        notes: "Fresh bark is smooth and polished-looking before weathering"
+      
+      - feature_id: "TREE-FORM-05"  # Irregular crown
+        conditions: "Trees growing on exposed sites or with multiple trunks"
+        notes: "Can develop twisted, irregular shapes in windy coastal areas"
+      
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Doesn't drop all leaves seasonally like oak or maple trees"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has broad leaves, not needles like pine or fir trees"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Produces berries, not cones like evergreen conifers"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Smooth, peeling red-orange bark that feels cool to touch"
+    memorable_comparison: "Looks like a tree that's peeling from a sunburn, showing bright red-orange skin underneath"
+    touch_tip: "The bark feels smooth and cool like plastic, while the leaves feel stiff and leathery like fake plant leaves"
+    smell_tip: "No strong smell, but the leaves have a faint earthy scent if you gently crush them"
+    fun_fact: "The bark peels off in curly strips that native peoples sometimes used as emergency bandages to wrap small cuts!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "Look at the tree's bark. Is it peeling to show smooth red or orange patches underneath?"
+        yes_next: 2
+        no_next: "Not a Pacific Madrone - try checking for manzanita which is smaller or another tree"
+      - step: 2
+        instruction: "Check the leaves. Are they thick, shiny and dark green like plastic plant leaves?"
+        yes_next: 3
+        no_next: "Not a Pacific Madrone - might be a different evergreen tree"
+      - step: 3
+        instruction: "Is it a full-sized tree (taller than a house) with either white flowers or red berries depending on the season?"
+        yes_next: "You found a Pacific Madrone!"
+        no_next: "Might be a manzanita shrub, which is like a mini-version of madrone"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Clusters of small white bell-shaped flowers appear on branch tips"
+      reproductive_activity: "Flowers attract many pollinators including bees and hummingbirds"
+      identification_tips: "Look for hanging clusters of small white flowers that look like tiny upside-down bells"
+      kid_friendly_tip: "In spring, look for bunches of little white bells hanging from the branches"
+    
+    - season: "Summer" 
+      visual_changes: "Old bark peels away revealing fresh, smooth reddish bark"
+      reproductive_activity: "Green berries begin to develop from pollinated flowers"
+      identification_tips: "Peeling bark is most visible in summer heat"
+      kid_friendly_tip: "Summer is when the tree 'peels its sunburn' showing bright red-orange skin"
+    
+    - season: "Fall"
+      visual_changes: "Berries ripen to bright red-orange"
+      reproductive_activity: "Ripe berries attract birds that help spread seeds"
+      identification_tips: "Bright clusters of red berries stand out against dark green leaves"
+      kid_friendly_tip: "Look for bunches of bright red berries that look like tiny Christmas ornaments"
+    
+    - season: "Winter"
+      visual_changes: "Some berries may remain into winter if not eaten by birds"
+      reproductive_activity: "Dormant; some berries may persist"
+      identification_tips: "Evergreen leaves and smooth red bark are standout features in winter"
+      kid_friendly_tip: "When other trees are bare, madrone still has green leaves and sometimes red berries"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Smooth, peeling bark revealing red-orange surface"
+      reliability: "Very high"
+      visibility: "High - visible from distance"
+    - feature: "Leathery, dark green oval leaves"
+      reliability: "High"
+      visibility: "Medium - need to look at branch"
+    - feature: "White flower clusters or red berries (seasonal)"
+      reliability: "High (when present)"
+      visibility: "Medium - need to look at branch tips"
+    
+  look_alike_species:
+    - species: "Manzanita (Arctostaphylos spp.)"
+      differences: "Manzanitas are shrubs or small trees, rarely exceeding 20 feet tall; madrones grow to 50-100 feet; manzanitas have smaller leaves"
+      identification_tip: "If it's taller than a house with big leaves, it's probably madrone, not manzanita"
+    
+    - species: "Toyon (Heteromeles arbutifolia)"
+      differences: "Toyon has rough bark instead of smooth peeling bark; toyon leaves have serrated edges while madrone has smooth leaf edges"
+      identification_tip: "Check the bark - if it's rough and doesn't peel to show red, it's probably toyon"
+    
+  cultural_significance:
+    - culture: "Coast Miwok and Pomo Peoples"
+      physical_uses:
+        - "Used the hard wood to make tools like digging sticks and spoons"
+        - "Collected berries for food and sometimes made cider-like drinks"
+      symbolic_meaning:
+        - "Considered a beautiful tree that showed the changing seasons with its flowers and berries"
+    
+    - culture: "Karuk and Yurok Peoples"
+      physical_uses:
+        - "Used the fruit in soups and meat dishes for flavoring"
+        - "Made tea from the leaves to treat stomach problems"
+      symbolic_meaning:
+        - "Valued for its beauty and usefulness throughout the year"
+    
+  cultural_ecological_notes:
+    - "Provides important winter food for birds when berries persist"
+    - "Supports pollinators in spring with abundant nectar-rich flowers"
+    - "Fire-adapted with ability to resprout from root crown after fires"
+    
+  range_within_california:
+    - "Common along the coastal ranges from northern to central California"
+    - "Found in the Sierra Nevada foothills at lower elevations"
+    - "Prefers well-drained soils on slopes and in mixed woodlands"
+    
+  physical_characteristics:
+    height_range: "50-100 feet tall, sometimes reaching 125 feet in perfect conditions"
+    growth_rate: "Moderate to slow"
+    crown_spread: "30-60 feet wide in open settings"
+    lifespan: "200-400 years"
+    trunk_diameter: "Up to 3-4 feet across in older trees"
+    root_system: "Extensive but sensitive to disturbance"
+    toxicity: "Non-toxic berries, but large quantities may cause stomach upset in children"
+    
+  conservation_status:
+    status: "Secure in wild habitats but declining in urban areas"
+    threats: 
+      - "Vulnerable to fungal disease (madrone canker)"
+      - "Development pressure in coastal areas"
+      - "Difficulty transplanting"
+    protection_efforts: 
+      - "Native plant societies encourage preservation"
+      - "Limited native plant nurseries offer seedlings"
+      - "Included in some forest conservation efforts"
+    
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: LEAF-COMPLEX-01"  # Simple broadleaf
+      - "feature_id: BARK-COLOR-03"  # Reddish bark
+    confirmation_features:
+      - "feature_id: BARK-TEXT-03"  # Peeling bark
+      - "feature_id: FRUIT-TYPE-03"  # Berries present
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-02", "LEAF-TYPE-02"]  # Rounded crown, evergreen
+      - distance: "from_nearby"
+        features_to_check: ["BARK-COLOR-03", "BARK-TEXT-03"]  # Reddish bark, peeling bark
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-COMPLEX-01", "LEAF-ARRANGE-01"]  # Simple leaves, alternate arrangement
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "BARK-TEXT-03", "FLOWER-TYPE-01"]
+        notes: "White flower clusters provide additional confirmation"
+      summer:
+        reliability: "Very high"
+        key_features: ["LEAF-TYPE-02", "BARK-TEXT-03", "BARK-COLOR-03"]
+        notes: "Fresh peeling bark most visible"
+      fall:
+        reliability: "Very high"
+        key_features: ["LEAF-TYPE-02", "BARK-TEXT-03", "FRUIT-TYPE-03"]
+        notes: "Red berries provide excellent confirmation"
+      winter:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "BARK-TEXT-03", "BARK-COLOR-03"]
+        notes: "Evergreen nature stands out when deciduous trees are bare"
+    misidentification_risks: 
+      - "Toyon (Heteromeles arbutifolia) has similar berries but rough bark"
+      - "Manzanita (Arctostaphylos spp.) has similar bark but smaller size and different leaf shape"
+      
+  wildlife_value:
+    food_source:
+      - "Berries eaten by many bird species including American robins, varied thrushes, and band-tailed pigeons"
+      - "Flowers provide nectar for hummingbirds, bees, and butterflies"
+    habitat_provided:
+      - "Dense evergreen foliage offers year-round shelter for birds"
+      - "Fallen logs and hollows in older trees create homes for small mammals, insects, and fungi"
+    ecosystem_role: "Important component of mixed evergreen forests; maintains forest diversity and provides wildlife food and shelter year-round"

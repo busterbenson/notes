@@ -1,0 +1,272 @@
+tree:
+  common_name: "Giant Sequoia"
+  scientific_name: "Sequoiadendron giganteum"
+  family: "Cupressaceae"
+  
+  # Basic summary information
+  summary: "An incredibly massive evergreen tree with a huge trunk that can grow wider than a car is long and as tall as a 25-story building. Has distinctive reddish-brown, spongy bark and small, scale-like, spiky leaves that grow all around the twigs. Makes woody cones about the size of a chicken egg."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Massive trunk with reddish-brown, fibrous bark; scale-like, spiky leaves growing all around branches; columnar shape with rounded top on mature trees"
+    secondary_markers: "Egg-sized woody cones; spongy, fire-resistant bark up to 2 feet thick; tiny scale-like leaves that are prickly to touch"
+    seasonal_markers: "Stays green all year; small cones can stay on tree for many years; releases seeds after fire or when cones dry out"
+    similar_species_differentiation: "Unlike Coast Redwood, has spiky (not flat) leaves and much fatter trunk compared to height; unlike Incense-cedar, has rounded not flattened sprays of foliage and larger, rounder cones"
+  
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its leaves all year round"
+      
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        notes: "Tiny, pointy, scale-like leaves that wrap around the twig (not flat sprays)"
+      
+      - feature_id: "BARK-COLOR-03"  # Red bark
+        notes: "Distinctive reddish-brown, cinnamon-colored bark"
+      
+      - feature_id: "BARK-TEXT-06"  # Fibrous bark
+        notes: "Very thick, spongy bark with deep grooves"
+      
+      - feature_id: "ECO-ADAPT-03"  # Fire resistant
+        notes: "Special thick bark that protects the tree from forest fires"
+      
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one massive main trunk"
+        exceptions: "Sometimes develops multiple trunks if damaged when young"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Usually grows 150-250+ feet tall, among the tallest trees in the world"
+        exceptions: "Young trees or trees in poor growing conditions may be shorter"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Young trees have a pyramid or Christmas tree shape"
+        exceptions: "Very old trees develop a more rounded top with a columnar trunk"
+      
+      - feature_id: "CONE-SIZE-02"  # Medium cones
+        notes: "Makes woody, egg-sized cones (about 2-3 inches long)"
+        exceptions: "Size can vary slightly depending on growing conditions"
+      
+    sometimes_true:
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        conditions: "When damaged by fire or lightning"
+        notes: "Can develop multiple trunks after damage to the main trunk"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        conditions: "Very old trees"
+        notes: "As trees age, the top often becomes more rounded rather than pointed"
+      
+      - feature_id: "CONE-FEAT-01"  # Persistent cones
+        conditions: "Older trees"
+        notes: "Cones can stay closed on the tree for many years"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        conditions: "When leaves are crushed"
+        notes: "Mild, earthy, somewhat sweet smell when leaves are crushed"
+      
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all its leaves in fall"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Does not have needle-like leaves; has small, scale-like leaves instead"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Never has needles growing in pairs or clusters"
+      
+      - feature_id: "NEEDLE-SHAPE-01"  # Flat needles
+        notes: "Doesn't have flat needle-like leaves like Coast Redwood"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Super fat tree trunk with red, spongy bark and tiny spiky leaves"
+    memorable_comparison: "The trunk is so wide that 10-15 kids holding hands might be needed to reach around it! The bark is squishy like a giant sponge."
+    touch_tip: "Gently touch the bark - it feels soft and spongy, and if you're careful you can push your finger into it a little bit"
+    smell_tip: "Crush a leaf gently for a mild, sweet woodsy scent"
+    fun_fact: "Giant Sequoias can live for over 3,000 years! Their bark is so thick (up to 2 feet) that they usually survive forest fires that kill other trees. One tree called 'General Sherman' is the largest tree in the world by volume - it contains enough wood to build 120 houses!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the trunk. Is it extremely wide and covered with reddish-brown, spongy-looking bark?"
+        yes_next: 2
+        no_next: "Probably not a Giant Sequoia - try another evergreen tree"
+      - step: 2
+        instruction: "Look at the leaves. Are they tiny, scale-like, and a bit spiky when you touch them gently?"
+        yes_next: 3
+        no_next: "Not a Giant Sequoia - if the needles are flat and soft, check Coast Redwood"
+      - step: 3
+        instruction: "Look for cones on the tree or ground. Are they about the size of a chicken egg (2-3 inches) and woody?"
+        yes_next: 4
+        no_next: "If the cones are tiny (grape-sized), it might be a Coast Redwood instead"
+      - step: 4
+        instruction: "Where are you? Giant Sequoias grow naturally only in the Sierra Nevada mountains of California."
+        yes_next: "You found a Giant Sequoia!"
+        no_next: "If you're near the coast, it's more likely a Coast Redwood, which looks similar"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New growth appears at branch tips with slightly lighter green color"
+      reproductive_activity: "Tiny pollen cones release yellow pollen; new seed cones begin forming"
+      identification_tips: "Look for the contrast between light green new growth and older darker foliage"
+      kid_friendly_tip: "In spring, look for bright green new growth at the tips of branches - like the tree is growing tiny new fingers!"
+    
+    - season: "Summer" 
+      visual_changes: "New growth darkens to match the rest of the foliage; tree has full set of leaves"
+      reproductive_activity: "Seed cones continue developing, staying green"
+      identification_tips: "Dark green color throughout; visible developing cones"
+      kid_friendly_tip: "In summer, everything is dark green and the baby cones are growing bigger"
+    
+    - season: "Fall"
+      visual_changes: "No significant color change as it remains evergreen"
+      reproductive_activity: "Cones begin to mature but usually stay closed"
+      identification_tips: "Stays green while other types of trees change color and lose leaves"
+      kid_friendly_tip: "While other trees turn yellow, orange, and red in fall, Giant Sequoias stay green all year long"
+    
+    - season: "Winter"
+      visual_changes: "Foliage stays dark green; snow may collect on branches"
+      reproductive_activity: "Tree rests; cones remain on tree"
+      identification_tips: "Distinctive shape stands out in winter landscape"
+      kid_friendly_tip: "Even in snowy winter, Giant Sequoia stays green - sometimes snow makes the branches look like they're decorated for the holidays!"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Massive trunk with reddish-brown, fibrous bark"
+      reliability: "Very high"
+      visibility: "High - visible from a distance"
+    - feature: "Tiny, scale-like, somewhat prickly leaves"
+      reliability: "High"
+      visibility: "Medium - need to look at branches up close"
+    - feature: "Egg-sized woody cones"
+      reliability: "High (when present)"
+      visibility: "Medium - may need to look for fallen cones on the ground"
+    - feature: "Enormously thick, spongy bark"
+      reliability: "Very high"
+      visibility: "High - can see from a fair distance"
+    
+  look_alike_species:
+    - species: "Coast Redwood (Sequoia sempervirens)"
+      differences: "Coast Redwood has flat, soft needles (not spiky scales); much smaller cones (grape-sized); narrower trunk compared to height; grows along the coast, not in mountains"
+      identification_tip: "If the leaves are flat and soft like fern fronds, and the cones are small like grapes, it's likely a Coast Redwood"
+    
+    - species: "Incense-cedar (Calocedrus decurrens)"
+      differences: "Incense-cedar has flattened sprays of scale leaves; distinctive 'duck-bill' shaped cones; strong pencil-like smell; much narrower trunk"
+      identification_tip: "If the foliage is in flat sprays like fans and smells strongly like pencil shavings, it's likely an Incense-cedar"
+    
+    - species: "Giant Redwood/Dawn Redwood (Metasequoia glyptostroboides)"
+      differences: "Dawn Redwood drops all its needles in fall; has needles growing in pairs directly opposite each other; not native to California"
+      identification_tip: "If the tree drops all its needles in fall, it's Dawn Redwood (not Giant Sequoia)"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Mono (Monache)"
+      physical_uses:
+        - "Used fallen pieces of bark for making shelters, since the bark is naturally waterproof"
+        - "Made baskets and small water containers from the roots because they're flexible and strong"
+        - "Used the wood only from fallen trees since the living trees were considered special"
+      symbolic_meaning:
+        - "Considered Giant Sequoias as ancient beings that deserved great respect"
+        - "Connected the trees with ideas of immortality and long life"
+        - "Believed the trees held wisdom from watching over the land for thousands of years"
+    
+    - culture: "Tule River Tribe"
+      physical_uses:
+        - "Used fallen bark pieces to cover simple summer houses"
+        - "Made hunting tools from the wood of fallen trees or branches"
+        - "Used the sap mixed with other plants for treating skin problems"
+      symbolic_meaning:
+        - "Considered the Giant Sequoia groves as sacred spaces for special ceremonies"
+        - "Saw the trees as connection between earth and sky world in their beliefs"
+        - "Valued the trees' resilience through fire as a symbol of strength and endurance"
+    
+    - culture: "Early European Settlers"
+      physical_uses:
+        - "Cut down many trees for lumber, though the wood was brittle and often shattered when trees fell"
+        - "Used the wood mostly for fence posts, shingles, and grape stakes"
+        - "Later established tourist attractions around the biggest trees"
+      symbolic_meaning:
+        - "Represented America's natural wonders and national pride"
+        - "The enormous size symbolized the grand, expansive nature of the American West"
+        - "Named many of the largest trees after American heroes and leaders"
+    
+  cultural_ecological_notes:
+    - "Creates special forest environments where certain plants and animals thrive"
+    - "The massive trunks provide homes for many forest animals, even when the trees are still alive"
+    - "Seeds need fire to help them sprout - they germinate best in soil that's been cleared by fire"
+    - "Provides important shelter for wildlife during harsh winter conditions"
+    
+  range_within_california:
+    - "Grows naturally only in about 75 groves on the western slopes of the Sierra Nevada mountains"
+    - "Found at elevations between 4,000-8,000 feet, where there's enough moisture and good soil"
+    - "Most groves are now protected in National Parks and National Forests"
+    - "Grows in mixed forests with White Fir, Sugar Pine, and Ponderosa Pine"
+    
+  physical_characteristics:
+    height_range: "150-250+ feet tall (height of a 15-25 story building)"
+    growth_rate: "Moderate, about 1-2 feet per year when young, slowing as it ages"
+    crown_spread: "20-60 feet wide at maturity"
+    lifespan: "2,000-3,500+ years (among the longest-lived organisms on Earth)"
+    trunk_diameter: "20-35 feet across (wider than many bedrooms)"
+    root_system: "Surprisingly shallow for such a large tree, but spreads out very wide"
+    toxicity: "Not toxic; generally safe to touch though the scale-like leaves can be prickly"
+    
+  conservation_status:
+    status: "Protected but vulnerable to climate change and altered fire patterns"
+    threats:
+      - "Climate change causing less snowpack and more drought stress"
+      - "Changes in forest fire patterns - both too many and too few fires can be harmful"
+      - "Air pollution affecting growth in some areas"
+      - "Past logging removed many trees (though most remaining groves are now protected)"
+    protection_efforts:
+      - "Most groves protected in National Parks and National Forests"
+      - "Controlled burns to reduce dangerous fuel buildup and help seed regeneration"
+      - "Scientific monitoring of how trees are responding to changing climate conditions"
+      - "Efforts to grow Giant Sequoias in botanical gardens worldwide for conservation"
+    
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: LEAF-FORM-05"  # Scale-like leaves
+      - "feature_id: BARK-COLOR-03"  # Red bark
+    confirmation_features:
+      - "feature_id: BARK-TEXT-06"  # Fibrous bark
+      - "feature_id: CONE-SIZE-02"  # Medium cones
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-03", "BARK-COLOR-03"]  # Tall tree, red bark
+      - distance: "from_nearby"
+        features_to_check: ["BARK-TEXT-06", "TREE-TRUNK-01"]  # Fibrous bark, massive single trunk
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-FORM-05", "CONE-SIZE-02"]  # Scale-like leaves, medium cones
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "BARK-TEXT-06", "LEAF-FORM-05"]
+        notes: "New light green growth contrasts with older darker foliage"
+      summer:
+        reliability: "High"
+        key_features: ["LEAF-FORM-05", "BARK-COLOR-03", "CONE-SIZE-02"]
+        notes: "Developing cones visible on mature trees"
+      fall:
+        reliability: "High" 
+        key_features: ["LEAF-TYPE-02", "BARK-COLOR-03", "LEAF-FORM-05"]
+        notes: "Remains evergreen while deciduous trees change color"
+      winter:
+        reliability: "Very high"
+        key_features: ["LEAF-TYPE-02", "BARK-COLOR-03", "BARK-TEXT-06"]
+        notes: "Evergreen nature stands out in winter landscape"
+    misidentification_risks:
+      - "Coast Redwood - similar reddish bark but has flat soft needles and smaller cones; grows along coast not in mountains"
+      - "Incense-cedar - has scale-like leaves but in flat sprays, not all around the twig; much smaller trunk"
+      - "Young Giant Sequoia saplings may be confused with young Incense-cedar but have more prickly foliage"
+      
+  wildlife_value:
+    food_source:
+      - "Seeds eaten by Douglas squirrels and some birds, though not a major food source"
+      - "Provides modest food but tremendous shelter value to wildlife"
+    habitat_provided:
+      - "Thick bark creates many tiny habitats for insects, spiders, and other small animals"
+      - "Large trees, even when living, often have hollow areas that provide shelter for mammals and birds"
+      - "Fallen trees create long-lasting habitat on the forest floor for many decades"
+    ecosystem_role: "Acts as a keystone species that helps define the entire forest ecosystem; relies on periodic fire for regeneration and healthy forest structure"

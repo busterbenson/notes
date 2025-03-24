@@ -1,0 +1,217 @@
+tree:
+  common_name: "California White Fir"
+  scientific_name: "Abies concolor"
+  family: "Pinaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A tall evergreen tree with long, curved, blue-green needles that sweep upward like smiles on the branches. The bark is smooth and gray on young trees, becoming deeply furrowed as it matures."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Blue-green curved needles that point upward; soft needles with rounded (not sharp) tips"
+    secondary_markers: "Upright cylindrical cones on upper branches; smooth gray bark on young trees that becomes deeply furrowed with age"
+    seasonal_markers: "Bright blue-green new growth in spring; cones mature and disintegrate on the tree in fall"
+    similar_species_differentiation: "Unlike Noble Fir, has longer needles (2-3 inches); unlike Douglas-fir, has upright cones rather than hanging cones with 'mouse tail' bracts"
+  
+  # Core features section
+  features:
+    always_true:
+      # Reference features.yml IDs with tree-specific notes
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles year-round"
+      
+      - feature_id: "NEEDLE-SHAPE-01"  # Flat needles
+        notes: "Soft, flat needles that bend easily between your fingers"
+      
+      - feature_id: "CONE-POS-01"  # Upright cones
+        notes: "Cones stand straight up like candles on the upper branches"
+      
+    usually_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        exceptions: "May occasionally develop multiple trunks if the main leader is damaged"
+        notes: "Typically grows with one straight main trunk"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        exceptions: "Very old trees may develop a more irregular crown"
+        notes: "Has a triangle or Christmas tree shape, especially when young"
+      
+    sometimes_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees before bark develops texture"
+        notes: "Bark is smooth and gray when the tree is young"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Mature trees"
+        notes: "Bark becomes deeply grooved and rough as the tree gets older"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        conditions: "When needles are crushed"
+        notes: "Crushed needles have a lemony or citrusy smell"
+    
+    never_true:
+      # Features explicitly absent that help differentiation
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all its needles at once seasonally"
+      
+      - feature_id: "NEEDLE-FEAT-01"  # Sharp pointed
+        notes: "Needles have blunt, rounded tips that are soft, not sharp or pokey"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Blue-green needles that curve upward like smiles"
+    memorable_comparison: "The needles look like tiny blue-green smiles all over the branches"
+    touch_tip: "The needles feel soft and flat, not pokey, and bend easily between your fingers"
+    smell_tip: "Gently crush a needle to smell a hint of lemon or Christmas tree scent"
+    fun_fact: "White Firs can live for more than 300 years - that's older than the United States!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the needles. Do they curve upward like smiles and have a blue-green color?"
+        yes_next: 2
+        no_next: "Not a White Fir - try Douglas-fir or another conifer"
+      - step: 2
+        instruction: "Gently feel a needle. Is it flat and soft, not pokey on the end?"
+        yes_next: 3
+        no_next: "Not a White Fir - check if it might be a spruce with pokey needles"
+      - step: 3
+        instruction: "Look up high in the tree during summer or fall. Can you see cones standing straight up like candles on the branches?"
+        yes_next: "You found a White Fir!"
+        no_next: "Might still be a White Fir, but check the bark - is it gray with deep grooves on older trees?"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Bright blue-green new growth appears at branch tips"
+      reproductive_activity: "Pollen cones release yellow pollen; female cones begin to form"
+      identification_tips: "Look for the contrast between new growth (brighter blue) and older needles"
+      kid_friendly_tip: "In spring, the tips of branches get bright new 'baby needles' that are a lighter blue-green"
+    
+    - season: "Summer" 
+      visual_changes: "New growth matures to match older needles"
+      reproductive_activity: "Upright green or purple cones develop on upper branches"
+      identification_tips: "Look for cylindrical upright cones 3-5 inches long"
+      kid_friendly_tip: "Look high up in the tree for green or purple cones standing up like birthday candles"
+    
+    - season: "Fall"
+      visual_changes: "No color change as it remains evergreen"
+      reproductive_activity: "Cones mature and begin to break apart while still on the tree"
+      identification_tips: "Mature cones turn brown before disintegrating on the tree"
+      kid_friendly_tip: "Unlike maple trees that drop colorful leaves, this tree stays green all fall"
+    
+    - season: "Winter"
+      visual_changes: "Snow may collect on the flat needle sprays"
+      reproductive_activity: "Dormant, no reproductive activity"
+      identification_tips: "Blue-green color stands out against other trees and snow"
+      kid_friendly_tip: "The blue-green needles look extra pretty when covered with snow"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Flat, curved, blue-green needles 2-3 inches long"
+      reliability: "Very high"
+      visibility: "Easy to see from nearby"
+    - feature: "Upright cylindrical cones on upper branches"
+      reliability: "High"
+      visibility: "Visible from ground in summer/fall, but high in tree"
+    - feature: "Citrus or sweet scent when needles are crushed"
+      reliability: "Medium"
+      visibility: "Requires interaction"
+    
+  look_alike_species:
+    - species: "Douglas-fir (Pseudotsuga menziesii)"
+      differences: "Douglas-fir has hanging cones with three-pointed bracts that look like mouse tails; White Fir has upright cones"
+      identification_tip: "If the cones hang down instead of standing up, and have little 'mouse tails' sticking out, it's a Douglas-fir"
+    
+    - species: "Noble Fir (Abies procera)"
+      differences: "Noble Fir has shorter, stiffer needles that curve upward more dramatically and often has a bluish bloom"
+      identification_tip: "White Fir needles are longer (2-3 inches) and more gently curved than Noble Fir needles"
+    
+  cultural_ecological_notes:
+    - "The wood is valued for construction lumber and paper production"
+    - "Indigenous peoples used the pitch (sap) as a waterproofing agent and healing salve for wounds"
+    - "Provides important winter habitat for wildlife, especially birds and squirrels"
+    
+  range_within_california:
+    - "Common throughout the Sierra Nevada at middle to high elevations"
+    - "Also found in the Transverse and Peninsular Ranges of Southern California"
+    - "Generally grows between 5,000-9,000 feet elevation"
+    
+  # Physical characteristics section
+  physical_characteristics:
+    height_range: "130-200 feet when mature"
+    growth_rate: "Moderate, about 12-24 inches per year when young"
+    crown_spread: "20-30 feet wide at maturity"
+    lifespan: "300-400 years"
+    trunk_diameter: "4-6 feet at maturity"
+    root_system: "Moderately deep but spreading widely"
+    toxicity: "Generally non-toxic but sap may cause skin irritation in sensitive individuals"
+  
+  # Cultural significance section
+  cultural_significance:
+    - culture: "Western Mono (Monache) people"
+      physical_uses:
+        - "Used the pitch (sticky sap) to waterproof baskets"
+        - "Applied warmed sap to cuts and sores as a healing salve"
+      symbolic_meaning:
+        - "The tall, straight growth represented resilience and reaching toward the sky"
+    
+    - culture: "Miwok people"
+      physical_uses:
+        - "Collected and chewed the sap like gum"
+        - "Used the branches as a cleansing agent in sweatlodges"
+      symbolic_meaning:
+        - "Evergreen trees like this represented life continuing through harsh winters"
+  
+  # Conservation status section
+  conservation_status:
+    status: "Secure - not threatened or endangered"
+    threats: "Climate change may shift its preferred elevation range higher; intense wildfires can damage mature trees"
+    protection_efforts: "Protected in national parks and forests throughout its range"
+  
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: NEEDLE-SHAPE-01"  # Flat needles
+      - "feature_id: CONE-POS-01"  # Upright cones
+    
+    confirmation_features:
+      - "feature_id: SENSORY-SMELL-01"  # Aromatic leaves
+      - "feature_id: NEEDLE-SIZE-02"  # Medium needles
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-01", "LEAF-TYPE-02"]  # Pyramidal shape, evergreen
+      
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-SHAPE-01", "NEEDLE-SIZE-02"]  # Flat needles, medium length
+      
+      - distance: "close_inspection"
+        features_to_check: ["NEEDLE-FEAT-03", "SENSORY-SMELL-01"]  # White lines below, aromatic
+    
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "NEEDLE-SHAPE-01", "TREE-FORM-01"]
+        notes: "New growth provides color contrast"
+      
+      summer:
+        reliability: "Very high"
+        key_features: ["CONE-POS-01", "NEEDLE-SHAPE-01", "NEEDLE-SIZE-02"]
+        notes: "Cones are visible on upper branches"
+      
+      fall:
+        reliability: "High" 
+        key_features: ["LEAF-TYPE-02", "NEEDLE-SHAPE-01", "CONE-POS-01"]
+        notes: "Mature cones turn brown before disintegrating"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["LEAF-TYPE-02", "TREE-FORM-01", "NEEDLE-SHAPE-01"]
+        notes: "Blue-green color stands out in winter landscape"
+    
+    misidentification_risks:
+      - "Can be confused with other fir species, especially at a distance"
+      - "Young trees might be mistaken for Douglas-fir until cones develop"

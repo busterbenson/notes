@@ -1,0 +1,225 @@
+tree:
+  common_name: "Canyon Live Oak"
+  scientific_name: "Quercus chrysolepis"
+  family: "Fagaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "An evergreen oak with thick, leathery leaves that are green on top and golden-fuzzy underneath. The bark is gray and smooth on young trees, becoming thick and furrowed with age."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Leaves with golden or silvery fuzz on the underside; thick, leathery leaves that stay on the tree year-round"
+    secondary_markers: "Acorns with thick, fuzzy cups that almost look like little bowls; gray bark that becomes furrowed with age"
+    seasonal_markers: "New leaves appear in spring with extra golden fuzz; acorns mature in fall over 2 years"
+    similar_species_differentiation: "Unlike Coast Live Oak, has yellow-golden fuzz on leaf undersides rather than whitish; leaves are not as spiny on the edges"
+  
+  # Core features section
+  features:
+    always_true:
+      # Reference features.yml IDs with tree-specific notes
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its leaves throughout the year"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Each leaf is a single piece, not divided into smaller leaflets"
+      
+      - feature_id: "LEAF-COLOR-04"  # Silver undersides
+        notes: "Leaf bottoms have yellow-gold to silvery fuzz, especially when young"
+      
+    usually_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        exceptions: "Often grows with multiple trunks in shrub form at higher elevations or exposed sites"
+        notes: "Usually develops a single main trunk in favorable growing conditions"
+      
+      - feature_id: "LEAF-EDGE-01"  # Entire leaf edge
+        exceptions: "Young trees or vigorous new growth may have spiny leaf edges"
+        notes: "Mature leaves typically have smooth edges"
+      
+    sometimes_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees"
+        notes: "Bark is smooth and gray when the tree is young"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Mature trees"
+        notes: "Bark becomes thick with grooves as the tree gets older"
+      
+      - feature_id: "LEAF-EDGE-05"  # Spiny edge
+        conditions: "Young trees or new growth, especially on lower branches"
+        notes: "Some leaves may have spiny edges, especially on younger trees"
+    
+    never_true:
+      # Features explicitly absent that help differentiation
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all leaves seasonally"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has leaves divided into separate leaflets"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Leaves that are shiny green on top but gold or silver fuzzy underneath"
+    memorable_comparison: "The leaves are like green mittens with golden fuzzy linings"
+    touch_tip: "The leaves feel thick and leathery, like a plastic plant, but the undersides feel soft and fuzzy"
+    smell_tip: "The leaves don't have a strong smell, but if you crush an oak leaf it may smell slightly bitter"
+    fun_fact: "These trees can grow in the strangest places, even out of rocky cliffs, which is why they're called 'canyon' oaks!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, pick up a leaf and flip it over. Does it have gold or silver fuzz on the bottom side?"
+        yes_next: 2
+        no_next: "Not a Canyon Live Oak - check other oak species"
+      - step: 2
+        instruction: "Look at the leaf shape. Is it oval with a pointed tip, and do the edges have no spines or just a few spines?"
+        yes_next: 3
+        no_next: "Might be a Coast Live Oak if it has lots of spiny edges"
+      - step: 3
+        instruction: "In fall, look for acorns with thick, fuzzy or warty cups. Are the cups like little fuzzy bowls?"
+        yes_next: "You found a Canyon Live Oak!"
+        no_next: "Check the trunk - Canyon Live Oaks have gray bark that gets grooved as they age"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaves emerge with bright gold-fuzzy undersides"
+      reproductive_activity: "Tiny flowers appear on long catkins; female flowers are small and hard to see"
+      identification_tips: "New growth is often copper-colored or reddish before turning green"
+      kid_friendly_tip: "In spring, look for the baby leaves that are extra fuzzy and sometimes reddish"
+    
+    - season: "Summer" 
+      visual_changes: "New leaves mature to dark green with golden undersides"
+      reproductive_activity: "Acorns from last year's flowers continue developing"
+      identification_tips: "Full, leafy crown with consistent golden undersides visible when breeze flips leaves"
+      kid_friendly_tip: "On windy days, you can see flashes of gold when the leaves flip over"
+    
+    - season: "Fall"
+      visual_changes: "No color change as it remains evergreen"
+      reproductive_activity: "Acorns mature and drop from the tree"
+      identification_tips: "Look for distinctive thick, cup-shaped acorn caps with fuzzy or warty texture"
+      kid_friendly_tip: "Fall is acorn treasure hunt time! Look for acorns with fuzzy cups like tiny bowls"
+    
+    - season: "Winter"
+      visual_changes: "Stays green while deciduous trees are bare"
+      reproductive_activity: "Dormant, no reproductive activity"
+      identification_tips: "Evergreen nature makes it stand out among deciduous oaks"
+      kid_friendly_tip: "This tree keeps its leaves all winter when other oak trees drop theirs"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Golden-fuzzy underside of leaves"
+      reliability: "Very high"
+      visibility: "Easy to see when leaves move in wind or when examined closely"
+    - feature: "Thick, warty acorn cups"
+      reliability: "High (when acorns are present)"
+      visibility: "Good in fall when acorns mature"
+    - feature: "Gray bark becoming furrowed with age"
+      reliability: "Medium"
+      visibility: "Easy to observe on trunk"
+    
+  look_alike_species:
+    - species: "Coast Live Oak (Quercus agrifolia)"
+      differences: "Coast Live Oak has whitish (not golden) undersides and more consistently spiny leaf edges"
+      identification_tip: "Look at leaf undersides - Coast Live Oak is grayish-white, not golden-fuzzy"
+    
+    - species: "Interior Live Oak (Quercus wislizeni)"
+      differences: "Interior Live Oak has shinier leaves without the golden underside and generally more holly-like spiny edges"
+      identification_tip: "If leaf undersides aren't golden-fuzzy, it's probably Interior Live Oak"
+    
+  cultural_ecological_notes:
+    - "Acorns were a staple food for many indigenous California tribes"
+    - "Provides essential habitat and food for many wildlife species"
+    - "Extremely drought-tolerant and fire-adapted, with thick bark that protects from fire"
+    - "Can live for hundreds of years, with some specimens over 500 years old"
+    
+  range_within_california:
+    - "Widespread throughout the foothills of the Sierra Nevada and Coast Ranges"
+    - "Common in steep, rocky canyons and mountain slopes"
+    - "Found from near sea level up to about 9,000 feet elevation"
+    
+  # Physical characteristics section
+  physical_characteristics:
+    height_range: "20-60 feet when mature (can be shrubby at higher elevations)"
+    growth_rate: "Slow, typically less than 12 inches per year"
+    crown_spread: "40-70 feet at maturity in open growth"
+    lifespan: "300-500 years"
+    trunk_diameter: "1-4 feet at maturity"
+    root_system: "Deep taproot with extensive lateral roots"
+    toxicity: "Acorns contain bitter tannins that need to be leached before eating; not highly toxic"
+  
+  # Cultural significance section
+  cultural_significance:
+    - culture: "Miwok people"
+      physical_uses:
+        - "Gathered acorns as a primary food source, making acorn flour for bread and soup"
+        - "Used the hard wood for tools like pestles for grinding acorns"
+      symbolic_meaning:
+        - "The oak's strength and endurance symbolized stability and resilience"
+    
+    - culture: "Pomo people"
+      physical_uses:
+        - "Collected acorns for food, storing them in specially built granaries"
+        - "Used the leaves medicinally for treating skin conditions"
+      symbolic_meaning:
+        - "Oak trees were considered important family gathering places that connected generations"
+    
+    - culture: "Yokuts people"
+      physical_uses:
+        - "Made acorn mush, a staple food that provided nutrition year-round"
+        - "Used oak bark to create a dye for baskets and other crafts"
+      symbolic_meaning:
+        - "Oak trees represented abundance and were honored in thanksgiving ceremonies"
+  
+  # Conservation status section
+  conservation_status:
+    status: "Secure - not threatened or endangered"
+    threats: "Climate change, sudden oak death in some regions, development in foothill areas"
+    protection_efforts: "Protected in many parks and national forests; restoration efforts in some areas"
+  
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: LEAF-COLOR-04"  # Silver undersides
+      - "feature_id: LEAF-COMPLEX-01"  # Simple broadleaf
+    
+    confirmation_features:
+      - "feature_id: FRUIT-TYPE-01"  # Acorns present
+      - "feature_id: BARK-TEXT-02"  # Furrowed bark
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-02", "LEAF-TYPE-02"]  # Rounded crown, evergreen
+      
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-COLOR-04", "LEAF-COMPLEX-01"]  # Silver undersides, simple leaves
+      
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-01", "LEAF-EDGE-01"]  # Acorns, entire leaf edge
+    
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "LEAF-COLOR-04"]
+        notes: "New growth shows enhanced golden fuzz"
+      
+      summer:
+        reliability: "High"
+        key_features: ["LEAF-COLOR-04", "LEAF-COMPLEX-01"]
+        notes: "Full canopy makes it easier to identify"
+      
+      fall:
+        reliability: "Very high" 
+        key_features: ["FRUIT-TYPE-01", "LEAF-TYPE-02", "LEAF-COLOR-04"]
+        notes: "Acorns with distinctive cups are present"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["LEAF-TYPE-02", "LEAF-COLOR-04"]
+        notes: "Evergreen nature distinguishes from deciduous oaks"
+    
+    misidentification_risks:
+      - "Could be confused with Coast Live Oak or Interior Live Oak in casual observation"
+      - "Young specimens with spiny leaves may be harder to distinguish from other live oaks"
