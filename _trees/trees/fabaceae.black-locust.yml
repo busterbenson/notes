@@ -1,0 +1,282 @@
+tree:
+  common_name: "Black Locust"
+  scientific_name: "Robinia pseudoacacia"
+  family: "Fabaceae"
+  
+  # Basic summary information
+  summary: "A medium to large deciduous tree with compound leaves, fragrant white flower clusters, and rough, deeply furrowed bark. It grows quickly and has thorny branches and brown seed pods."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Compound leaves with oval leaflets arranged in pairs; deeply furrowed, rope-like bark; thorns on branches"
+    secondary_markers: "Hanging clusters of fragrant white pea-like flowers in spring; flat brown seed pods in summer and fall"
+    seasonal_markers: "Bright white flowers in late spring; golden yellow fall color; seed pods often remain into winter"
+    similar_species_differentiation: "Unlike Honeylocust, has smaller thorns only in pairs at leaf bases; unlike other locusts, has white (not pink) flowers"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves in fall"
+        
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Leaves divided into 7-21 small oval leaflets arranged along a central stem"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves alternate along branches, not opposite or whorled"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        notes: "Deeply furrowed bark with rope-like ridges"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Paired thorns at leaf bases, especially on younger branches"
+      
+      - feature_id: "FRUIT-TYPE-05"  # Pods present
+        notes: "Produces flat brown seed pods 2-4 inches long"
+      
+      - feature_id: "ECO-WILD-01"  # Important for wildlife
+        notes: "Flowers attract pollinators; seeds and bark used by various wildlife"
+        
+      - feature_id: "SENSORY-SMELL-03"  # Fragrant flowers
+        notes: "White flower clusters have sweet fragrance similar to orange blossoms"
+
+    usually_true:
+      # Features that are primarily true, but have notable exceptions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with a single main trunk"
+        exceptions: "May develop multiple trunks, especially after damage or when sprouting from roots"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Typically reaches 40-80 feet in height at maturity"
+        exceptions: "May be shorter in poor conditions or when regularly cut back"
+      
+      - feature_id: "TREE-FORM-05"  # Irregular crown
+        notes: "Typically has somewhat open, irregular branch pattern"
+        exceptions: "May be more uniform in shape when grown in optimal conditions"
+
+    sometimes_true:
+      # Features that vary with age, season, or conditions
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        conditions: "After damage or from root sprouting"
+        notes: "Can form multiple trunks or thickets from root sprouts"
+      
+      - feature_id: "FLOWER-TIME-01"  # Spring flowering
+        conditions: "Late spring to early summer"
+        notes: "Produces hanging clusters of white pea-like flowers"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Autumn"
+        notes: "Leaves typically turn golden yellow before dropping"
+      
+      - feature_id: "WINTER-FEAT-02"  # Persistent fruits
+        conditions: "Some pods may remain through winter"
+        notes: "Empty seed pods sometimes stay on tree after leaves drop"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        conditions: "Established trees"
+        notes: "Becomes quite drought-tolerant once established"
+      
+      - feature_id: "BARK-TEXT-05"  # Shaggy bark
+        conditions: "Very old trees"
+        notes: "Bark can become more shaggy and deeply grooved with age"
+      
+      - feature_id: "HABITAT-LOC-03"  # Valley habitat
+        conditions: "Often planted or naturalized in valleys"
+        notes: "Can be found in valley bottoms and disturbed areas"
+
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Never keeps its leaves through winter"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has compound broadleaves, not needles"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Produces seed pods, not cones"
+      
+      - feature_id: "LEAF-SHAPE-05"  # Lobed
+        notes: "Has oval leaflets without lobes"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A tree with rows of small oval leaves along stems and thorns at the base of each leaf stem"
+    memorable_comparison: "The thorns are like guards protecting each leaf, and the bark looks like twisted ropes stuck together"
+    touch_tip: "Carefully feel the bark's deep grooves, but watch out for the sharp thorns on branches!"
+    smell_tip: "In spring, smell the sweet white flower clusters that hang like bunches of grapes"
+    fun_fact: "Black Locust wood is so strong and rot-resistant that fence posts made from it can last more than 100 years! Early American settlers used to say 'a locust fence post will outlast the hole it stands in.'"
+    
+    detective_steps:
+      - step: 1
+        instruction: "Look at the leaves. Do they have rows of small oval leaflets along a central stem (like a feather)?"
+        yes_next: 2
+        no_next: "Not a Black Locust - check trees with simple leaves instead of compound ones"
+      - step: 2
+        instruction: "Check near where leaf stems meet the branch. Do you see paired thorns? (Be careful not to touch them!)"
+        yes_next: 3
+        no_next: "Might not be a Black Locust - look for other trees with compound leaves but no thorns"
+      - step: 3
+        instruction: "Look at the bark. Is it deeply grooved with ridges that look like twisted ropes?"
+        yes_next: "You found a Black Locust! If it's spring, look for hanging clusters of white flowers that smell sweet."
+        no_next: "If the bark is smooth or scaly, it might be a different kind of tree. Check for seed pods in summer or fall."
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Leaves emerge late in spring; fragrant white flower clusters hang from branches"
+      reproductive_activity: "Flowers bloom and attract many bees and other pollinators"
+      identification_tips: "Hanging clusters of white flowers are distinctive and have sweet fragrance"
+      kid_friendly_tip: "In spring, look for bunches of white flowers that hang down and smell sweet like candy"
+    
+    - season: "Summer" 
+      visual_changes: "Full foliage of compound leaves; flat green seed pods develop"
+      reproductive_activity: "Seed pods grow and gradually turn from green to brown"
+      identification_tips: "Compound leaves fully developed; green pods becoming visible"
+      kid_friendly_tip: "By summer, you'll see flat green pods that look like green bean pods hanging on the tree"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn golden yellow; seed pods fully brown and mature"
+      reproductive_activity: "Seeds mature inside pods; some pods begin to split open"
+      identification_tips: "Yellow fall color and brown seed pods are distinctive"
+      kid_friendly_tip: "In fall, the leaves turn yellow like gold coins, and the seed pods turn brown"
+    
+    - season: "Winter"
+      visual_changes: "Tree loses all leaves; some seed pods may remain; thorns and furrowed bark clearly visible"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Distinctive furrowed bark; thorny twigs; some persistent seed pods"
+      kid_friendly_tip: "In winter with no leaves, you can easily see the thorns and deeply grooved bark that looks like twisted rope"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Compound leaves with oval leaflets"
+      reliability: "Very high"
+      visibility: "Easy - visible during growing season"
+    - feature: "Paired thorns at leaf bases"
+      reliability: "High"
+      visibility: "Medium - need to look carefully"
+    - feature: "Deeply furrowed bark with rope-like ridges"
+      reliability: "High"
+      visibility: "Easy - visible year-round"
+    - feature: "White flower clusters in spring"
+      reliability: "Very high (when present)"
+      visibility: "Easy - visible in late spring"
+    - feature: "Flat brown seed pods"
+      reliability: "High"
+      visibility: "Easy - visible summer through fall"
+    
+  look_alike_species:
+    - species: "Honeylocust (Gleditsia triacanthos)"
+      differences: "Honeylocust has smaller leaflets, larger branched thorns on trunk, and longer twisted seed pods"
+      identification_tip: "Black Locust thorns are only at leaf bases; Honeylocust often has large thorns along the trunk and branches"
+    - species: "Bristly Locust (Robinia hispida)"
+      differences: "Bristly Locust has pink flowers, is smaller, and has bristly hairs on twigs instead of hard thorns"
+      identification_tip: "If flowers are pink or purple instead of white, it's probably a different locust species"
+    
+  cultural_ecological_notes:
+    - "Nitrogen-fixing tree that improves soil fertility"
+    - "Can become invasive in some areas due to root sprouting"
+    - "Very resistant to rot, making the wood valuable for outdoor uses"
+    - "Flowers produce excellent honey prized by beekeepers"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Native American (Cherokee)"
+      physical_uses:
+        - "Used the strong, rot-resistant wood for bows, tool handles, and fence posts"
+        - "Made medicinal teas from bark and flowers for different ailments"
+        - "Crafted game pieces and small carvings from the hard wood"
+      symbolic_meaning:
+        - "Strong, durable wood symbolized strength and endurance"
+        - "Used in stories about resilience and adaptability to difficult conditions"
+    
+    - culture: "Early American Settlers"
+      physical_uses:
+        - "Prized the wood for fence posts, railroad ties, and ship building"
+        - "Planted as living fence rows with thorns serving as natural barriers"
+        - "Used flowers for making aromatic honey and sometimes fritters"
+      symbolic_meaning:
+        - "Represented frontier hardiness and self-sufficiency"
+        - "Its rapid growth symbolized new beginnings in a new land"
+    
+    - culture: "Modern Permaculture"
+      physical_uses:
+        - "Valued for improving soil through nitrogen fixation"
+        - "Used in restoration of damaged lands and mine reclamation"
+        - "Cultivated for sustainable, rot-resistant wood production"
+      symbolic_meaning:
+        - "Represents ecological healing and land regeneration"
+        - "Serves as an example of multi-functional plants that provide multiple benefits"
+    
+  range_within_california:
+    - "Not native to California but widely introduced and sometimes naturalized"
+    - "Found in urban areas as a street and park tree throughout the state"
+    - "Has escaped cultivation in some areas, particularly in northern California"
+    - "Can be found in riparian areas and disturbed sites at lower elevations"
+    - "More common in the northern and central regions than in southern desert areas"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "40-80 feet at maturity"
+    growth_rate: "Fast (can grow 2-4 feet per year in good conditions)"
+    crown_spread: "20-50 feet wide at maturity"
+    lifespan: "90-150 years"
+    trunk_diameter: "Up to 2-4 feet at maturity"
+    root_system: "Aggressive, with spreading surface roots that can sprout"
+    toxicity: "Bark, seeds, and leaves are toxic to horses, cattle, and humans if ingested in quantity"
+  
+  conservation_status:
+    status: "Least Concern (often considered invasive in North America)"
+    threats: 
+      - "No conservation concerns for the species as a whole"
+      - "Locust borer beetles can damage trees"
+      - "Witches' broom caused by virus can disfigure branches"
+    protection_efforts:
+      - "Not protected; control efforts in some natural areas"
+      - "New sterile cultivars being developed to reduce invasive potential"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-COMPLEX-02"  # Compound pinnate
+      - "feature_id: TWIG-FEAT-01"  # Thorns present
+    confirmation_features:
+      - "feature_id: BARK-TEXT-02"  # Furrowed bark
+      - "feature_id: FRUIT-TYPE-05"  # Pods present
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-TYPE-01", "TREE-FORM-05"]  # Deciduous, irregular crown
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-COMPLEX-02", "TWIG-FEAT-01"]  # Compound leaves, thorns
+      - distance: "close_inspection"
+        features_to_check: ["BARK-TEXT-02", "SENSORY-SMELL-03"]  # Furrowed bark, fragrant flowers
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["LEAF-COMPLEX-02", "FLOWER-TIME-01", "SENSORY-SMELL-03"]  # Compound leaves, spring flowering, fragrant
+        notes: "White fragrant flower clusters are highly distinctive"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-COMPLEX-02", "TWIG-FEAT-01", "FRUIT-TYPE-05"]  # Compound leaves, thorns, pods
+        notes: "Fully developed compound leaves with thorns at bases; green pods developing"
+      
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-FALL-01", "FRUIT-TYPE-05", "LEAF-COMPLEX-02"]  # Yellow fall color, pods, compound leaves
+        notes: "Golden yellow fall color; brown seed pods"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["BARK-TEXT-02", "TWIG-FEAT-01", "WINTER-FEAT-02"]  # Furrowed bark, thorns, persistent fruits
+        notes: "Deeply furrowed bark; paired thorns; sometimes persistent pods"
+    misidentification_risks: 
+      - "Honeylocust has similar compound leaves but with smaller leaflets and different thorn pattern"
+      - "Other Robinia species (New Mexico Locust, Bristly Locust) have pink flowers instead of white"
+      - "Young trees with smooth bark might be confused with other legume family trees"
+  
+  wildlife_value:
+    - "Flowers attract many pollinators, especially honeybees"
+    - "Seeds eaten by some birds and small mammals"
+    - "Older trees may provide cavity nesting sites for birds"
+    - "Fixes nitrogen in soil which benefits other plants"
+    - "Provides some browse for deer, though not preferred"

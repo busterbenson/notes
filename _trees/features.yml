@@ -1,0 +1,1927 @@
+# California Tree Identification Features
+# This file organizes features for identifying trees in California
+# Used as input for generating a kid-friendly decision tree
+
+# FEATURE METADATA
+# Each feature includes:
+# - id: Unique identifier code (format: CATEGORY-SUBGROUP-NUMBER, e.g., LEAF-SHAPE-01)
+# - description: What the feature describes
+# - reliability: How consistent this feature is for identification
+# - seasonal_visibility: When this feature can be observed
+# - age_dependency: Whether feature varies with tree age
+# - notes: Additional helpful information
+# - visibility: How easy it is to observe (1=obvious from distance, 4=requires close inspection)
+# - safety: Interaction guidance (look, touch-safe, smell-safe, caution, avoid)
+
+# ORGANIZATION BY OBSERVATION DISTANCE
+# Features are organized by how children naturally observe trees in the field
+
+observation_distance_groups:
+  from_far_away:  # Features visible from 10+ feet away
+    name: "Big Picture Features"
+    description: "What you can see without getting close"
+    members:
+      - tree_shape
+      - overall_size
+      - distinctive_colors
+      - branching_pattern
+    kid_friendly_note: "Start by standing back and looking at the whole tree!"
+    
+  from_nearby:  # Features visible from 3-10 feet
+    name: "Medium Distance Features"
+    description: "What you can see when standing near the tree"
+    members:
+      - bark_pattern
+      - leaf_arrangement
+      - overall_leaf_color
+    kid_friendly_note: "Now walk up to the tree, but don't touch yet - what do you notice?"
+    
+  close_inspection:  # Features requiring touching or close examination
+    name: "Detective Details"
+    description: "Things you need to look at closely or touch"
+    members:
+      - leaf_texture
+      - leaf_smell
+      - twig_features
+    kid_friendly_note: "Time to be a tree detective! Look closely and use your senses."
+
+# SEASONAL AVAILABILITY
+# Instead of rigid pathways, we'll track when features are most visible
+# This allows for more flexibility with evergreen trees and year-round identification
+
+seasonal_visibility:
+  year_round:
+    name: "Always Visible Features"
+    description: "Features you can see any time of year"
+    kid_friendly_note: "These are the tree's 'always there' features - like its basic shape, bark, and for evergreen trees, their leaves!"
+    examples:
+      - tree_shape
+      - bark_texture
+      - evergreen_foliage
+      - branch_patterns
+  
+  spring_highlights:
+    name: "Spring Special Features"
+    description: "Features that are especially useful in spring"
+    kid_friendly_note: "Spring is when many trees have flowers and bright new leaves!"
+    examples:
+      - flowers
+      - new_growth
+      - leaf_emergence
+  
+  summer_highlights:
+    name: "Summer Special Features"
+    description: "Features that are especially useful in summer"
+    kid_friendly_note: "Summer is when trees have their full-grown leaves and are starting to make fruits and seeds!"
+    examples:
+      - mature_leaves
+      - developing_fruits
+      - full_canopy
+  
+  fall_highlights:
+    name: "Fall Special Features"
+    description: "Features that are especially useful in fall"
+    kid_friendly_note: "Fall is when many trees change colors and drop their leaves and fruits!"
+    examples:
+      - leaf_color
+      - mature_fruits
+      - leaf_drop
+  
+  winter_highlights:
+    name: "Winter Special Features"
+    description: "Features that are especially useful in winter"
+    kid_friendly_note: "Winter is when you can see a tree's 'skeleton' and special winter features like buds!"
+    examples:
+      - buds
+      - bare_branches
+      - persistent_fruits
+
+# Feature groups
+# These groups define related sets of features that are conceptually connected
+# Groups are categorized by exclusivity type:
+# Classification certainty groups
+# These groups indicate how we classify features by their reliability for a species
+feature_certainty_groups:
+  always_true:
+    name: "Always True Features"
+    description: "Features that are consistently present in normal, healthy specimens"
+    notes: "These features are reliable identifiers and should be used as primary splitting points in decision trees"
+    
+  usually_true:
+    name: "Usually True Features"
+    description: "Features that are typically present but have notable exceptions"
+    notes: "These features are generally reliable but have documented exceptions that shouldn't eliminate the species entirely"
+    
+  sometimes_true:
+    name: "Sometimes True Features"
+    description: "Features that vary based on age, season, or growing conditions"
+    notes: "Include 'conditions' field when these features appear to explain when they're present"
+    
+  never_true:
+    name: "Never True Features"
+    description: "Features explicitly absent that help differentiate from similar species"
+    notes: "Include features whose absence is distinctive or would otherwise be expected"
+
+# 1. Strictly exclusive groups - only ONE feature can ever be true for a tree at any time
+strictly_exclusive_feature_groups:
+  leaf_persistence:
+    name: "Leaf Persistence Type"
+    description: "How a tree retains or sheds its leaves"
+    visibility: 1  # Easy to observe from distance
+    safety: "look"  # Observation only
+    decision_tree_priority: "high"  # Important early branch in decision tree
+    members:
+      - LEAF-TYPE-01  # Deciduous
+      - LEAF-TYPE-02  # Evergreen
+      - LEAF-TYPE-03  # Semi-evergreen
+    kid_friendly_note: "Do the leaves fall off in autumn (deciduous) or stay on all year (evergreen)?"
+  
+  basic_leaf_form:
+    name: "Basic Leaf Form"
+    description: "Primary leaf structure type"
+    visibility: 1  # Easy to observe from distance
+    safety: "look"  # Observation only
+    decision_tree_priority: "high"  # Important early branch in decision tree
+    members:
+      - LEAF-COMPLEX-01  # Simple broadleaf 
+      - LEAF-FORM-05  # Scale-like leaves
+      - NEEDLE-ARRANGE-01  # Single needles
+      - NEEDLE-ARRANGE-02  # Needles in pairs
+      - NEEDLE-ARRANGE-03  # Needles in threes
+      - NEEDLE-ARRANGE-04  # Needles in fives
+      - LEAF-COMPLEX-02  # Compound pinnate
+      - LEAF-COMPLEX-03  # Compound palmate
+      - LEAF-COMPLEX-04  # Compound bipinnate
+    kid_friendly_note: "What kind of leaves does the tree have? Regular leaves, tiny scales, or needles? If needles, count how many grow together in a bundle!"
+
+  leaf_arrangement:
+    name: "Leaf Arrangement"
+    description: "How leaves are arranged on stems"
+    visibility: 2  # Visible with minimal close inspection
+    safety: "look"  # Observation only
+    decision_tree_priority: "medium"  # Secondary branching in decision tree
+    members:
+      - LEAF-ARRANGE-01  # Alternate
+      - LEAF-ARRANGE-02  # Opposite
+      - LEAF-ARRANGE-03  # Whorled
+      - LEAF-ARRANGE-04  # Bundled
+    kid_friendly_note: "Look at how the leaves grow on the twigs. Do they grow across from each other (opposite), alternate sides (alternate), in circles (whorled), or in bundles?"
+  
+  cone_position:
+    name: "Cone Position"
+    description: "How cones are oriented on branches"
+    visibility: 2  # Visible with minimal close inspection
+    safety: "look"  # Observation only
+    decision_tree_priority: "medium"  # Secondary branching in decision tree
+    members:
+      - CONE-POS-01  # Upright cones
+      - CONE-POS-02  # Hanging cones
+    kid_friendly_note: "Do the cones point up like candles on a cake, or hang down like ornaments on a Christmas tree?"
+  
+  needle_shape:
+    name: "Needle Cross-section"
+    description: "The shape of needles in cross-section" 
+    visibility: 3  # Requires closer examination
+    safety: "touch-safe"  # Safe to handle gently
+    decision_tree_priority: "low"  # Advanced confirmation feature
+    members:
+      - NEEDLE-SHAPE-01  # Flat needles
+      - NEEDLE-SHAPE-02  # Square needles
+    kid_friendly_note: "Roll a needle between your fingers. Flat needles won't roll easily; square needles will roll smoothly."
+
+# 2. Life-stage dependent groups - features can change as the tree ages
+# A tree may exhibit different features at different life stages
+developmental_feature_groups:
+  bark_texture:
+    name: "Bark Texture"
+    description: "Texture characteristics of bark that may change with age"
+    visibility: 1  # Easy to observe from distance
+    safety: "touch-safe"  # Generally safe to touch
+    decision_tree_priority: "high"  # Important identification feature
+    members:
+      - BARK-TEXT-01  # Smooth bark
+      - BARK-TEXT-02  # Furrowed bark
+      - BARK-TEXT-03  # Peeling bark
+      - BARK-TEXT-04  # Plated bark
+      - BARK-TEXT-05  # Shaggy bark
+      - BARK-TEXT-06  # Fibrous bark
+    notes: "Many trees have smooth bark when young and develop texture with age"
+    kid_friendly_note: "Feel the tree's 'skin' - is it smooth like your skin, bumpy like a maze, peeling like a sunburn, or shaggy like a carpet?"
+  
+  tree_shape:
+    name: "Tree Shape"
+    description: "Overall tree shape that may change during growth"
+    visibility: 1  # Easy to observe from distance
+    safety: "look"  # Observation only
+    decision_tree_priority: "high"  # Important early branch in decision tree
+    members:
+      - TREE-FORM-01  # Pyramidal shape
+      - TREE-FORM-02  # Rounded crown
+      - TREE-FORM-03  # Weeping form
+      - TREE-FORM-04  # Columnar form
+      - TREE-FORM-05  # Irregular crown
+      - TREE-FORM-06  # Vase shaped
+      - TREE-FORM-07  # Flat topped
+    notes: "Trees often change from pyramidal to rounded or other forms as they mature"
+    kid_friendly_note: "What shape is the tree? Triangle (pyramidal), round ball, weeping like it's sad, tall and skinny (columnar), or flat on top like a table?"
+
+# 3. Variable/conditional groups - features that can vary by environmental conditions
+# A tree may potentially exhibit multiple features from these groups depending on conditions
+variable_feature_groups:
+  cone_size:
+    name: "Cone Size"
+    description: "Size classification of cones that may vary by conditions"
+    visibility: 2  # Visible with minimal close inspection
+    safety: "touch-safe"  # Generally safe to handle
+    decision_tree_priority: "medium"  # Secondary identification feature
+    members:
+      - CONE-SIZE-01  # Small cones (less than 1 inch)
+      - CONE-SIZE-02  # Medium cones (1-3 inches)
+      - CONE-SIZE-03  # Large cones (greater than 3 inches)
+    notes: "Cone size can vary based on growing conditions, though tends to have a typical range"
+    kid_friendly_note: "Compare cone size to your thumb (small), your whole hand (medium), or bigger than your hand (large)"
+  
+  cone_shape:
+    name: "Cone Shape"
+    description: "The general shape of cones"
+    visibility: 2  # Visible with minimal close inspection
+    safety: "touch-safe"  # Generally safe to handle
+    decision_tree_priority: "medium"  # Secondary identification feature
+    members:
+      - CONE-SHAPE-01  # Round cones
+      - CONE-SHAPE-02  # Elongated cones
+    notes: "Some species may produce cones with slightly variable shapes"
+    kid_friendly_note: "Are the cones round like balls or long like hot dogs?"
+
+# 4. Universal Features - Features that could apply to any tree regardless of other features
+# These don't belong to mutually exclusive groups and can be observed independently
+universal_feature_groups:
+  sensory_features:
+    name: "Sensory Features"
+    description: "Features that engage different senses"
+    visibility: 3  # Requires closer examination
+    safety: "varies"  # Depends on the specific feature
+    decision_tree_priority: "medium"  # Important for confirmation
+    members:
+      - SENSORY-SMELL-01  # Aromatic leaves
+      - SENSORY-SMELL-02  # Aromatic bark
+      - SENSORY-SMELL-03  # Fragrant flowers
+      - SENSORY-SMELL-05  # Unpleasant odor
+    notes: "Sensory features provide excellent confirmation identifiers"
+    kid_friendly_note: "Use your nose as a tree detective tool - many trees have distinctive smells"
+  
+  seasonal_identifiers:
+    name: "Seasonal Identifiers"
+    description: "Distinctive features that appear in specific seasons"
+    visibility: "varies"  # Depends on feature
+    safety: "look"  # Observation only
+    decision_tree_priority: "medium"  # Important for seasonal identification
+    members:
+      - LEAF-FALL-01  # Yellow fall color
+      - LEAF-FALL-02  # Red fall color
+      - LEAF-FALL-03  # Orange fall color
+      - FLOWER-TIME-01  # Spring flowering
+      - FLOWER-TIME-02  # Summer flowering
+      - FLOWER-TIME-03  # Fall flowering
+      - WINTER-FEAT-03  # Persistent leaves in winter
+    notes: "These features can be critical identifiers during specific seasons"
+    kid_friendly_note: "Trees change clothes with the seasons - what's your tree wearing now?"
+    
+  distinguishing_markers:
+    name: "Distinguishing Visual Markers"
+    description: "Highly visible, distinctive features useful for quick identification"
+    visibility: 1  # Easy to observe from distance
+    safety: "look"  # Observation only
+    decision_tree_priority: "high"  # Important early branch in decision tree
+    members:
+      - BARK-COLOR-02  # White bark
+      - BARK-COLOR-03  # Red bark
+      - BARK-COLOR-05  # Orange bark
+      - LEAF-COLOR-04  # Silver undersides (leaves)
+      - BRANCH-PATT-01  # Whorled branches
+      - TREE-FORM-03  # Weeping form (duplicated from tree_shape for visibility)
+    notes: "These features are often immediately recognizable even to beginners"
+    kid_friendly_note: "Look for the tree's special 'superpower' - something that makes it stand out from others"
+
+leaf_features:
+  leaf_type:
+    deciduous:
+      id: LEAF-TYPE-01
+      description: "Tree drops all leaves seasonally"
+      reliability: high
+      seasonal_visibility: "winter_highlights"
+      age_dependency: none
+      notes: "Definitive feature for species classification"
+      observation_distance: "from_far_away"
+      seasonal_best: "fall"
+    
+    evergreen:
+      id: LEAF-TYPE-02
+      description: "Tree retains leaves year-round"
+      reliability: high
+      seasonal_visibility: "year_round"
+      seasonal_note: "Most obvious in winter when deciduous trees are bare"
+      age_dependency: none
+      notes: "Definitive feature for species classification"
+      observation_distance: "from_far_away"
+    
+    semi_evergreen:
+      id: LEAF-TYPE-03
+      description: "Tree retains some leaves through winter"
+      reliability: medium
+      seasonal_visibility: "winter_highlights"
+      age_dependency: none
+      notes: "Can vary based on climate/conditions"
+      observation_distance: "from_far_away"
+      seasonal_best: "winter"
+  
+  leaf_complexity:
+    simple:
+      id: LEAF-COMPLEX-01
+      description: "Leaf blade is undivided"
+      reliability: high
+      seasonal_visibility: "growing_season"
+      age_dependency: none
+      notes: "Fundamental leaf trait"
+      observation_distance: "from_nearby"
+      seasonal_best: "summer"
+    
+    compound_pinnate:
+      id: LEAF-COMPLEX-02
+      description: "Leaflets arranged along central axis"
+      reliability: high
+      seasonal_visibility: "growing_season"
+      age_dependency: none
+      notes: "Fundamental leaf trait"
+      observation_distance: "from_nearby"
+      seasonal_best: "summer"
+    
+    compound_palmate:
+      id: LEAF-COMPLEX-03
+      description: "Leaflets radiate from central point"
+      reliability: high
+      seasonal_visibility: "growing_season"
+      age_dependency: none
+      notes: "Fundamental leaf trait"
+      observation_distance: "from_nearby"
+      seasonal_best: "summer"
+    
+    compound_bipinnate:
+      id: LEAF-COMPLEX-04
+      description: "Twice divided compound leaf"
+      reliability: high
+      seasonal_visibility: "growing_season"
+      age_dependency: none
+      notes: "Fundamental leaf trait"
+      observation_distance: "from_nearby"
+      seasonal_best: "summer"
+  
+  leaf_arrangement:
+    alternate:
+      id: LEAF-ARRANGE-01
+      description: "Leaves alternate on stem"
+      reliability: high
+      seasonal_visibility: "growing season"
+      age_dependency: none
+      notes: "Fundamental structural trait"
+      observation_distance: "from_nearby"
+    
+    opposite:
+      id: LEAF-ARRANGE-02
+      description: "Leaves directly across from each other"
+      reliability: high
+      seasonal_visibility: "growing season"
+      age_dependency: none
+      notes: "Fundamental structural trait"
+      observation_distance: "from_nearby"
+    
+    whorled:
+      id: LEAF-ARRANGE-03
+      description: "Three or more leaves at same node"
+      reliability: high
+      seasonal_visibility: "growing season"
+      age_dependency: none
+      notes: "Fundamental structural trait"
+      observation_distance: "from_nearby"
+    
+    bundled:
+      id: LEAF-ARRANGE-04
+      description: "Leaves in clusters/bundles"
+      reliability: high
+      seasonal_visibility: "growing season"
+      age_dependency: none
+      notes: "Common in pines/needle trees"
+      observation_distance: "from_nearby"
+  
+  leaf_shape:
+    oval:
+      id: LEAF-SHAPE-01
+      description: "Egg-shaped leaf"
+      reliability: medium
+      seasonal_visibility: "growing season"
+      age_dependency: none
+      notes: "Can vary within species"
+      observation_distance: "from_nearby"
+    
+    linear:
+      id: LEAF-SHAPE-02
+      description: "Long, narrow leaf"
+      reliability: medium
+      seasonal_visibility: "growing season"
+      age_dependency: none
+      notes: "Can vary within species"
+      observation_distance: "from_nearby"
+    
+    lanceolate:
+      id: LEAF-SHAPE-03
+      description: "Lance-shaped leaf"
+      reliability: medium
+      seasonal_visibility: "growing season"
+      age_dependency: none
+      notes: "Can vary within species"
+      observation_distance: "from_nearby"
+    
+    heart_shaped:
+      id: LEAF-SHAPE-04
+      description: "Leaf with heart-shaped base"
+      reliability: medium
+      seasonal_visibility: "growing season"
+      age_dependency: none
+      notes: "Can vary within species"
+      observation_distance: "from_nearby"
+    
+    lobed:
+      id: LEAF-SHAPE-05
+      description: "Leaf with distinct lobes"
+      reliability: medium
+      seasonal_visibility: "growing season"
+      age_dependency: none
+      notes: "Depth/number of lobes may vary"
+      observation_distance: "from_nearby"
+    
+    oblong:
+      id: LEAF-SHAPE-06
+      description: "Rectangular with rounded ends"
+      reliability: medium
+      seasonal_visibility: "growing season"
+      age_dependency: none
+      notes: "Can vary within species"
+      observation_distance: "from_nearby"
+    
+    fan_shaped:
+      id: LEAF-SHAPE-07
+      description: "Widening from base to broad tip"
+      reliability: high
+      seasonal_visibility: "growing season"
+      age_dependency: none
+      notes: "Distinctive shape (e.g., Ginkgo)"
+      observation_distance: "from_nearby"
+    
+    scale_like:
+      id: LEAF-FORM-05
+      description: "Tiny overlapping scales"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Common in cypresses/cedars"
+      observation_distance: "from_nearby"
+  
+  leaf_edge:
+    entire:
+      id: LEAF-EDGE-01
+      description: "Smooth leaf edge"
+      reliability: medium
+      seasonal_visibility: "growing season"
+      age_dependency: none
+      notes: "Can vary within species"
+      observation_distance: "close_inspection"
+    
+    serrated:
+      id: LEAF-EDGE-02
+      description: "Saw-toothed edge"
+      reliability: medium
+      seasonal_visibility: "growing season"
+      age_dependency: none
+      notes: "Can vary within species"
+      observation_distance: "close_inspection"
+    
+    doubly_serrated:
+      id: LEAF-EDGE-03
+      description: "Two sizes of teeth"
+      reliability: medium
+      seasonal_visibility: "growing season"
+      age_dependency: none
+      notes: "Can vary within species"
+      observation_distance: "close_inspection"
+    
+    wavy:
+      id: LEAF-EDGE-04
+      description: "Undulating edge"
+      reliability: medium
+      seasonal_visibility: "growing season"
+      age_dependency: none
+      notes: "Can vary within species"
+      observation_distance: "close_inspection"
+    
+    spiny:
+      id: LEAF-EDGE-05
+      description: "Sharp spines on edge"
+      reliability: high
+      seasonal_visibility: "growing season"
+      age_dependency: none
+      notes: "Distinctive feature (e.g., holly)"
+      observation_distance: "from_nearby"
+      safety: "touch-caution"
+  
+  leaf_color:
+    dark_green:
+      id: LEAF-COLOR-01
+      description: "Deep green color"
+      reliability: medium
+      seasonal_visibility: "growing season"
+      age_dependency: none
+      notes: "Can vary with conditions"
+      observation_distance: "from_nearby"
+    
+    light_green:
+      id: LEAF-COLOR-02
+      description: "Pale green color"
+      reliability: medium
+      seasonal_visibility: "growing season"
+      age_dependency: none
+      notes: "Can vary with conditions"
+      observation_distance: "from_nearby"
+    
+    blue_green:
+      id: LEAF-COLOR-03
+      description: "Bluish tint to green"
+      reliability: medium
+      seasonal_visibility: "growing season"
+      age_dependency: none
+      notes: "Can vary with conditions"
+      observation_distance: "from_nearby"
+    
+    silver_undersides:
+      id: LEAF-COLOR-04
+      description: "Light/silver leaf underside"
+      reliability: medium
+      seasonal_visibility: "growing season"
+      age_dependency: none
+      notes: "Distinctive feature when present"
+      observation_distance: "from_nearby"
+    
+    purple_red:
+      id: LEAF-COLOR-05
+      description: "Reddish/purple leaves"
+      reliability: medium
+      seasonal_visibility: "growing season"
+      age_dependency: none
+      notes: "Can be seasonal or cultivar-specific"
+      observation_distance: "from_nearby"
+  
+  fall_color:
+    yellow_fall_color:
+      id: LEAF-FALL-01
+      description: "Leaves turn yellow in fall"
+      reliability: medium
+      seasonal_visibility: "fall_highlights"
+      age_dependency: none
+      notes: "Can vary with conditions"
+      observation_distance: "from_far_away"
+    
+    red_fall_color:
+      id: LEAF-FALL-02
+      description: "Leaves turn red in fall"
+      reliability: medium
+      seasonal_visibility: "fall_highlights"
+      age_dependency: none
+      notes: "Can vary with conditions"
+      observation_distance: "from_far_away"
+    
+    orange_fall_color:
+      id: LEAF-FALL-03
+      description: "Leaves turn orange in fall"
+      reliability: medium
+      seasonal_visibility: "fall_highlights"
+      age_dependency: none
+      notes: "Can vary with conditions"
+      observation_distance: "from_far_away"
+    
+    purple_fall_color:
+      id: LEAF-FALL-04
+      description: "Leaves turn purple in fall"
+      reliability: medium
+      seasonal_visibility: "fall_highlights"
+      age_dependency: none
+      notes: "Can vary with conditions"
+      observation_distance: "from_far_away"
+    
+    brown_fall_color:
+      id: LEAF-FALL-05
+      description: "Leaves turn brown in fall"
+      reliability: medium
+      seasonal_visibility: "fall_highlights"
+      age_dependency: none
+      notes: "Can vary with conditions"
+      observation_distance: "from_far_away"
+    
+    no_fall_color:
+      id: LEAF-FALL-06
+      description: "No significant color change"
+      reliability: medium
+      seasonal_visibility: "fall_highlights"
+      age_dependency: none
+      notes: "Common in evergreens"
+      observation_distance: "from_far_away"
+
+needle_features:
+  arrangement:
+    single_needles:
+      id: NEEDLE-ARRANGE-01
+      description: "Needles attach individually"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Fundamental structural trait"
+      observation_distance: "from_nearby"
+    
+    needles_in_pairs:
+      id: NEEDLE-ARRANGE-02
+      description: "Two needles per bundle"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Key pine identification feature"
+      observation_distance: "from_nearby"
+    
+    needles_in_threes:
+      id: NEEDLE-ARRANGE-03
+      description: "Three needles per bundle"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Key pine identification feature"
+      observation_distance: "from_nearby"
+    
+    needles_in_fives:
+      id: NEEDLE-ARRANGE-04
+      description: "Five needles per bundle"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Key pine identification feature"
+      observation_distance: "from_nearby"
+    
+    needles_in_fours:
+      id: NEEDLE-ARRANGE-05
+      description: "Four needles per bundle"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Less common but important identification feature"
+      observation_distance: "from_nearby"
+      kid_friendly_note: "Count the needles in each bundle - if you find four, that's a special clue!"
+    
+    clustered_needles:
+      id: NEEDLE-ARRANGE-06
+      description: "Multiple needles clustered on short shoots"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Distinctive feature in larches and cedars"
+      observation_distance: "from_nearby"
+      kid_friendly_note: "Some trees have lots of needles growing together in little tufts!"
+    
+    whorled_needles:
+      id: NEEDLE-ARRANGE-07
+      description: "Needles radiating in circles around branch"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Distinctive pattern in some conifers"
+      observation_distance: "from_nearby"
+      kid_friendly_note: "These needles grow in circles around the branch like tiny green stars!"
+    
+    flattened_spray_needles:
+      id: NEEDLE-ARRANGE-08
+      description: "Needles opposite each other in flat sprays"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Common in hemlock and some firs"
+      observation_distance: "from_nearby"
+      kid_friendly_note: "The needles line up neatly on both sides of the branch like a fern!"
+  
+  characteristics:
+    short_needles:
+      id: NEEDLE-SIZE-01
+      description: "Needles <2 inches"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Can vary with conditions"
+      observation_distance: "from_nearby"
+    
+    medium_needles:
+      id: NEEDLE-SIZE-02
+      description: "Needles 2-5 inches"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Can vary with conditions"
+      observation_distance: "from_nearby"
+    
+    long_needles:
+      id: NEEDLE-SIZE-03
+      description: "Needles >5 inches"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Can vary with conditions"
+      observation_distance: "from_far_away"
+    
+    flat_needles:
+      id: NEEDLE-SHAPE-01
+      description: "Needles flat in cross-section"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Key conifer identification feature"
+      observation_distance: "close_inspection"
+      safety: "touch-safe"
+    
+    square_needles:
+      id: NEEDLE-SHAPE-02
+      description: "Needles square in cross-section"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Key spruce identification feature"
+      observation_distance: "close_inspection"
+      safety: "touch-safe"
+    
+    sharp_pointed:
+      id: NEEDLE-FEAT-01
+      description: "Needles with sharp tips"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Can vary within species"
+      observation_distance: "close_inspection"
+      safety: "touch-caution"
+    
+    soft_flexible:
+      id: NEEDLE-FEAT-02
+      description: "Needles bend easily"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Can vary within species"
+      observation_distance: "close_inspection"
+      safety: "touch-safe"
+    
+    white_lines_below:
+      id: NEEDLE-FEAT-03
+      description: "Needles with white stomatal lines"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Key fir identification feature"
+      observation_distance: "close_inspection"
+      safety: "touch-safe"
+
+reproductive_features:
+  flower_features:
+    showy_flowers:
+      id: FLOWER-SIZE-01
+      description: "Large, noticeable flowers"
+      reliability: high
+      seasonal_visibility: "spring_highlights"
+      age_dependency: mature
+      notes: "Distinctive when present"
+      observation_distance: "from_far_away"
+    
+    inconspicuous_flowers:
+      id: FLOWER-SIZE-02
+      description: "Small, easily missed flowers"
+      reliability: medium
+      seasonal_visibility: "spring_highlights"
+      age_dependency: mature
+      notes: "Common in many trees"
+      observation_distance: "close_inspection"
+    
+    catkins_present:
+      id: FLOWER-TYPE-01
+      description: "Produces hanging catkins"
+      reliability: high
+      seasonal_visibility: "spring_highlights"
+      age_dependency: mature
+      notes: "Common in certain families"
+      observation_distance: "from_nearby"
+    
+    spring_flowering:
+      id: FLOWER-TIME-01
+      description: "Flowers in spring"
+      reliability: medium
+      seasonal_visibility: "spring_highlights"
+      age_dependency: mature
+      notes: "Timing can vary with climate"
+      observation_distance: "from_nearby"
+    
+    summer_flowering:
+      id: FLOWER-TIME-02
+      description: "Flowers in summer"
+      reliability: medium
+      seasonal_visibility: "summer_highlights"
+      age_dependency: mature
+      notes: "Timing can vary with climate"
+      observation_distance: "from_nearby"
+    
+    fall_flowering:
+      id: FLOWER-TIME-03
+      description: "Flowers in fall"
+      reliability: high
+      seasonal_visibility: "fall_highlights"
+      age_dependency: mature
+      notes: "Unusual timing is distinctive"
+      observation_distance: "from_nearby"
+    
+    winter_flowering:
+      id: FLOWER-TIME-04
+      description: "Flowers in winter"
+      reliability: high
+      seasonal_visibility: "winter_highlights"
+      age_dependency: mature
+      notes: "Unusual timing is distinctive"
+      observation_distance: "from_nearby"
+  
+  flower_color:
+    white_flowers:
+      id: FLOWER-COLOR-01
+      description: "White flower color"
+      reliability: medium
+      seasonal_visibility: "spring_highlights"
+      age_dependency: mature
+      notes: "Can vary within species"
+      observation_distance: "from_nearby"
+    
+    pink_flowers:
+      id: FLOWER-COLOR-02
+      description: "Pink flower color"
+      reliability: medium
+      seasonal_visibility: "spring_highlights"
+      age_dependency: mature
+      notes: "Can vary within species"
+      observation_distance: "from_nearby"
+    
+    red_flowers:
+      id: FLOWER-COLOR-03
+      description: "Red flower color"
+      reliability: medium
+      seasonal_visibility: "spring_highlights"
+      age_dependency: mature
+      notes: "Can vary within species"
+      observation_distance: "from_nearby"
+    
+    yellow_flowers:
+      id: FLOWER-COLOR-04
+      description: "Yellow flower color"
+      reliability: medium
+      seasonal_visibility: "spring_highlights"
+      age_dependency: mature
+      notes: "Can vary within species"
+      observation_distance: "from_nearby"
+  
+  fruit_features:
+    acorns_present:
+      id: FRUIT-TYPE-01
+      description: "Produces acorns"
+      reliability: high
+      seasonal_visibility: "fall_highlights"
+      age_dependency: mature
+      notes: "Definitive oak identifier"
+      observation_distance: "from_nearby"
+    
+    winged_seeds:
+      id: FRUIT-TYPE-02
+      description: "Seeds with wings/helicopter"
+      reliability: high
+      seasonal_visibility: "summer_highlights"
+      age_dependency: mature
+      notes: "Distinctive feature"
+      observation_distance: "from_nearby"
+    
+    berries_present:
+      id: FRUIT-TYPE-03
+      description: "Produces berry-like fruits"
+      reliability: high
+      seasonal_visibility: "summer_highlights"
+      age_dependency: mature
+      notes: "Distinctive feature"
+      observation_distance: "from_nearby"
+    
+    nuts_present:
+      id: FRUIT-TYPE-04
+      description: "Produces nuts"
+      reliability: high
+      seasonal_visibility: "fall_highlights"
+      age_dependency: mature
+      notes: "Distinctive feature"
+      observation_distance: "from_nearby"
+    
+    pods_present:
+      id: FRUIT-TYPE-05
+      description: "Produces seed pods"
+      reliability: high
+      seasonal_visibility: "summer_highlights"
+      age_dependency: mature
+      notes: "Distinctive feature"
+      observation_distance: "from_nearby"
+    
+    fleshy_cones:
+      id: FRUIT-TYPE-06
+      description: "Berry-like cones (fleshy aril or drupe-like structures)"
+      reliability: high
+      seasonal_visibility: "fall_highlights"
+      age_dependency: mature
+      notes: "Common in junipers and yews"
+      observation_distance: "from_nearby"
+      kid_friendly_note: "These look like berries but are actually special cones - some are safe to touch but not eat!"
+    
+    drupes:
+      id: FRUIT-TYPE-07
+      description: "Fleshy fruits with a hard stone containing the seed"
+      reliability: high
+      seasonal_visibility: "summer_highlights" 
+      age_dependency: mature
+      notes: "Found in cherries, madrones, and dogwoods"
+      observation_distance: "from_nearby"
+      kid_friendly_note: "These fruits have a juicy outside and a hard seed inside - like tiny peaches!"
+    
+    paired_samaras:
+      id: FRUIT-TYPE-08
+      description: "Paired winged helicopter-like fruits"
+      reliability: high
+      seasonal_visibility: "summer_highlights"
+      age_dependency: mature
+      notes: "Distinctive feature of maples" 
+      observation_distance: "from_nearby"
+      kid_friendly_note: "These seeds spin like helicopter propellers when they fall!"
+    
+    capsules:
+      id: FRUIT-TYPE-09
+      description: "Dry fruits that split to release seeds"
+      reliability: high
+      seasonal_visibility: "fall_highlights"
+      age_dependency: mature
+      notes: "Common in willows and poplars"
+      observation_distance: "from_nearby"
+      kid_friendly_note: "These fruits crack open like tiny treasure chests to let the seeds escape!"
+    
+    persistent_fruit:
+      id: FRUIT-FEAT-01
+      description: "Fruits remain long after ripening"
+      reliability: high
+      seasonal_visibility: "winter_highlights"
+      age_dependency: mature
+      notes: "Distinctive feature"
+      observation_distance: "from_nearby"
+  
+  cone_features:
+    woody_cones:
+      id: CONE-TYPE-01
+      description: "Hard, woody cone structure"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: mature
+      notes: "Distinctive feature"
+      observation_distance: "from_nearby"
+    
+    small_cones:
+      id: CONE-SIZE-01
+      description: "Cones <1 inch"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: mature
+      notes: "Size can vary with conditions"
+      observation_distance: "from_nearby"
+    
+    medium_cones:
+      id: CONE-SIZE-02
+      description: "Cones 1-3 inches"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: mature
+      notes: "Size can vary with conditions"
+      observation_distance: "from_nearby"
+    
+    large_cones:
+      id: CONE-SIZE-03
+      description: "Cones >3 inches"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: mature
+      notes: "Size can vary with conditions"
+      observation_distance: "from_far_away"
+    
+    upright_cones:
+      id: CONE-POS-01
+      description: "Cones stand upright on branch"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: mature
+      notes: "Key fir identification feature"
+      observation_distance: "from_nearby"
+    
+    hanging_cones:
+      id: CONE-POS-02
+      description: "Cones hang down from branch"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: mature
+      notes: "Common in many conifers"
+      observation_distance: "from_nearby"
+    
+    round_cones:
+      id: CONE-SHAPE-01
+      description: "Spherical cone shape"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: mature
+      notes: "Distinctive feature"
+      observation_distance: "from_nearby"
+    
+    elongated_cones:
+      id: CONE-SHAPE-02
+      description: "Cylindrical cone shape"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: mature
+      notes: "Common in many conifers"
+      observation_distance: "from_nearby"
+    
+    persistent_cones:
+      id: CONE-FEAT-01
+      description: "Cones remain on tree for years"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: mature
+      notes: "Distinctive feature"
+      observation_distance: "from_nearby"
+    
+    cones_on_trunk:
+      id: CONE-FEAT-02
+      description: "Cones attach to main trunk"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: mature
+      notes: "Rare, highly distinctive feature"
+      observation_distance: "from_nearby"
+
+bark_features:
+  texture:
+    smooth_bark:
+      id: BARK-TEXT-01
+      description: "Bark without deep furrows"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: variable
+      notes: "Often age-dependent"
+      observation_distance: "from_nearby"
+    
+    furrowed_bark:
+      id: BARK-TEXT-02
+      description: "Bark with deep ridges/furrows"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: "usually mature"
+      notes: "Often age-dependent"
+      observation_distance: "from_nearby"
+    
+    peeling_bark:
+      id: BARK-TEXT-03
+      description: "Bark peels in sheets/strips"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: variable
+      notes: "Distinctive feature"
+      observation_distance: "from_nearby"
+    
+    plated_bark:
+      id: BARK-TEXT-04
+      description: "Bark in flat, plate-like sections"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: "usually mature"
+      notes: "Distinctive feature"
+      observation_distance: "from_nearby"
+    
+    shaggy_bark:
+      id: BARK-TEXT-05
+      description: "Bark with loose, shaggy strips"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: "usually mature"
+      notes: "Distinctive feature"
+      observation_distance: "from_nearby"
+    
+    fibrous_bark:
+      id: BARK-TEXT-06
+      description: "Stringy, fibrous texture"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: variable
+      notes: "Distinctive feature"
+      observation_distance: "from_nearby"
+  
+  color:
+    gray_bark:
+      id: BARK-COLOR-01
+      description: "Predominately gray coloration"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: variable
+      notes: "Color can vary with age/conditions"
+      observation_distance: "from_nearby"
+    
+    white_bark:
+      id: BARK-COLOR-02
+      description: "Predominately white coloration"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: variable
+      notes: "Distinctive feature"
+      observation_distance: "from_far_away"
+    
+    red_bark:
+      id: BARK-COLOR-03
+      description: "Reddish bark coloration"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: variable
+      notes: "Distinctive feature"
+      observation_distance: "from_nearby"
+    
+    brown_bark:
+      id: BARK-COLOR-04
+      description: "Brown bark coloration"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: variable
+      notes: "Common coloration"
+      observation_distance: "from_nearby"
+    
+    orange_bark:
+      id: BARK-COLOR-05
+      description: "Orange bark coloration"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: variable
+      notes: "Distinctive feature"
+      observation_distance: "from_far_away"
+    
+    black_bark:
+      id: BARK-COLOR-06
+      description: "Very dark/black bark"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: variable
+      notes: "Distinctive feature"
+      observation_distance: "from_nearby"
+  
+  patterns:
+    horizontal_lines:
+      id: BARK-PATT-01
+      description: "Distinctive horizontal markings"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: variable
+      notes: "Distinctive feature"
+      observation_distance: "from_nearby"
+    
+    lenticels_present:
+      id: BARK-PATT-02
+      description: "Raised pores visible in bark"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: variable
+      notes: "Distinctive feature"
+      observation_distance: "close_inspection"
+
+growth_form:
+  tree_shape:
+    pyramidal_shape:
+      id: TREE-FORM-01
+      description: "Conical/triangular outline"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: "usually young"
+      notes: "Often changes with age"
+      observation_distance: "from_far_away"
+    
+    rounded_crown:
+      id: TREE-FORM-02
+      description: "Rounded outline"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: "usually mature"
+      notes: "Common mature form"
+      observation_distance: "from_far_away"
+    
+    weeping_form:
+      id: TREE-FORM-03
+      description: "Branches hang downward"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: variable
+      notes: "Distinctive feature"
+      observation_distance: "from_far_away"
+    
+    columnar_form:
+      id: TREE-FORM-04
+      description: "Narrow, upright shape"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: variable
+      notes: "Can be natural or cultivated form"
+      observation_distance: "from_far_away"
+    
+    irregular_crown:
+      id: TREE-FORM-05
+      description: "Asymmetrical, irregular shape"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: "usually mature"
+      notes: "Common in coastal/exposed trees"
+      observation_distance: "from_far_away"
+    
+    vase_shaped:
+      id: TREE-FORM-06
+      description: "Narrow base, wider top"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: "usually mature"
+      notes: "Common in certain species"
+      observation_distance: "from_far_away"
+    
+    flat_topped:
+      id: TREE-FORM-07
+      description: "Crown with flat upper surface"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: "usually mature"
+      notes: "Distinctive when present"
+      observation_distance: "from_far_away"
+  
+  trunk_form:
+    single_trunk:
+      id: TREE-TRUNK-01
+      description: "One main trunk"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: variable
+      notes: "Common in many tree species"
+      observation_distance: "from_nearby"
+      identification_note: "Consider as 'usually true' rather than 'always true' for most species, as many trees can develop forked or multiple trunks due to damage or environmental conditions"
+    
+    multi_trunked:
+      id: TREE-TRUNK-02
+      description: "Multiple main trunks"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: variable
+      notes: "Distinctive feature when present"
+      observation_distance: "from_nearby"
+      identification_note: "Can be a primary characteristic of certain species, but also consider as 'usually true' or 'sometimes true' as growth form can vary with conditions"
+  
+  size:
+    short_tree:
+      id: TREE-SIZE-01
+      description: "Mature height <20 feet"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: mature
+      notes: "Key size classification"
+      observation_distance: "from_far_away"
+      kid_friendly_note: "About as tall as a one-story house"
+    
+    medium_tree:
+      id: TREE-SIZE-02
+      description: "Mature height 20-50 feet"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: mature
+      notes: "Key size classification"
+      observation_distance: "from_far_away"
+      kid_friendly_note: "About as tall as a two or three-story house"
+    
+    tall_tree:
+      id: TREE-SIZE-03
+      description: "Mature height >50 feet"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: mature
+      notes: "Key size classification"
+      observation_distance: "from_far_away"
+      kid_friendly_note: "As tall as a four-story building or taller"
+
+branch_features:
+  branch_angle:
+    horizontal_branches:
+      id: BRANCH-ANGLE-01
+      description: "Branches grow straight out"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: variable
+      notes: "Can vary with conditions"
+      observation_distance: "from_nearby"
+    
+    ascending_branches:
+      id: BRANCH-ANGLE-02
+      description: "Branches angle upward"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: variable
+      notes: "Can vary with conditions"
+      observation_distance: "from_nearby"
+    
+    drooping_branches:
+      id: BRANCH-ANGLE-03
+      description: "Branches angle downward"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: variable
+      notes: "Can vary with conditions"
+      observation_distance: "from_nearby"
+    
+    whorled_branches:
+      id: BRANCH-PATT-01
+      description: "Branches in distinct circles"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: variable
+      notes: "Key pine/fir identification feature"
+      observation_distance: "from_nearby"
+      kid_friendly_note: "Branches grow like the spokes of a wheel around the trunk"
+  
+  twig_features:
+    twigs_zigzag:
+      id: TWIG-FORM-01
+      description: "Twigs change direction at nodes"
+      reliability: high
+      seasonal_visibility: "winter_highlights"
+      age_dependency: variable
+      notes: "Distinctive feature"
+      observation_distance: "from_nearby"
+      kid_friendly_note: "Twigs zig-zag like a lightning bolt"
+    
+    twigs_straight:
+      id: TWIG-FORM-02
+      description: "Twigs grow in straight lines"
+      reliability: medium
+      seasonal_visibility: "winter_highlights"
+      age_dependency: variable
+      notes: "Common pattern"
+      observation_distance: "from_nearby"
+    
+    stout_twigs:
+      id: TWIG-SIZE-01
+      description: "Thick, sturdy twigs"
+      reliability: medium
+      seasonal_visibility: "winter_highlights"
+      age_dependency: variable
+      notes: "Can vary with conditions"
+      observation_distance: "from_nearby"
+    
+    slender_twigs:
+      id: TWIG-SIZE-02
+      description: "Thin, delicate twigs"
+      reliability: medium
+      seasonal_visibility: "winter_highlights"
+      age_dependency: variable
+      notes: "Can vary with conditions"
+      observation_distance: "from_nearby"
+    
+    thorns_present:
+      id: TWIG-FEAT-01
+      description: "Has thorns/spines on branches"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: variable
+      notes: "Distinctive feature when present"
+      observation_distance: "from_nearby"
+      safety: "touch-caution"
+      kid_friendly_note: "Watch out! These twigs have sharp points"
+
+winter_features:
+  bud_features:
+    distinctive_buds:
+      id: WINTER-BUD-01
+      description: "Buds with unique shape/size"
+      reliability: high
+      seasonal_visibility: "winter_highlights"
+      age_dependency: variable
+      notes: "Key winter identification feature"
+      observation_distance: "close_inspection"
+      kid_friendly_note: "These buds look special or different from most tree buds"
+    
+    terminal_bud_present:
+      id: WINTER-BUD-02
+      description: "Has end bud on twigs"
+      reliability: high
+      seasonal_visibility: "winter_highlights"
+      age_dependency: variable
+      notes: "Key winter identification feature"
+      observation_distance: "close_inspection"
+      kid_friendly_note: "Look for a bud at the very tip of each twig"
+    
+    opposite_buds:
+      id: WINTER-BUD-03
+      description: "Buds directly across from each other"
+      reliability: high
+      seasonal_visibility: "winter_highlights"
+      age_dependency: variable
+      notes: "Key winter identification feature"
+      observation_distance: "close_inspection"
+      kid_friendly_note: "Buds grow in pairs facing each other"
+    
+    alternate_buds:
+      id: WINTER-BUD-04
+      description: "Buds staggered along twig"
+      reliability: high
+      seasonal_visibility: "winter_highlights"
+      age_dependency: variable
+      notes: "Key winter identification feature"
+      observation_distance: "close_inspection"
+      kid_friendly_note: "Buds zigzag up the twig, not directly across from each other"
+    
+    bud_scales_present:
+      id: WINTER-BUD-05
+      description: "Buds covered with scales"
+      reliability: medium
+      seasonal_visibility: "winter_highlights"
+      age_dependency: variable
+      notes: "Common feature"
+      observation_distance: "close_inspection"
+      kid_friendly_note: "Buds have tiny overlapping plates like armor"
+    
+    naked_buds:
+      id: WINTER-BUD-06
+      description: "Buds without scales"
+      reliability: high
+      seasonal_visibility: "winter_highlights"
+      age_dependency: variable
+      notes: "Distinctive feature when present"
+      observation_distance: "close_inspection"
+      kid_friendly_note: "Buds look fuzzy instead of having scales"
+  
+  winter_visibility:
+    catkins_in_winter:
+      id: WINTER-FEAT-01
+      description: "Catkins present in winter"
+      reliability: high
+      seasonal_visibility: "winter_highlights"
+      age_dependency: variable
+      notes: "Distinctive feature when present"
+      observation_distance: "from_nearby"
+      kid_friendly_note: "Look for hanging fuzzy tassels in winter"
+    
+    persistent_fruits:
+      id: WINTER-FEAT-02
+      description: "Fruits remain in winter"
+      reliability: high
+      seasonal_visibility: "winter_highlights"
+      age_dependency: variable
+      notes: "Distinctive feature when present"
+      observation_distance: "from_nearby"
+      kid_friendly_note: "Tree keeps its fruits or seed pods even in winter"
+    
+    persistent_leaves:
+      id: WINTER-FEAT-03
+      description: "Some leaves remain in winter"
+      reliability: high
+      seasonal_visibility: "winter_highlights"
+      age_dependency: variable
+      notes: "Distinctive feature when present"
+      observation_distance: "from_nearby"
+      kid_friendly_note: "This tree keeps some of its leaves when others drop theirs"
+
+habitat_features:
+  location:
+    coastal_habitat:
+      id: HABITAT-LOC-01
+      description: "Grows along coast"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: mature
+      notes: "Natural range indicator"
+      observation_distance: "from_context"
+      kid_friendly_note: "Look for this tree near the ocean or beaches"
+    
+    mountain_habitat:
+      id: HABITAT-LOC-02
+      description: "Grows in mountains"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: mature
+      notes: "Natural range indicator"
+      observation_distance: "from_context"
+      kid_friendly_note: "Look for this tree in mountain areas, often at higher elevations"
+    
+    valley_habitat:
+      id: HABITAT-LOC-03
+      description: "Grows in valleys"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: mature
+      notes: "Natural range indicator"
+      observation_distance: "from_context"
+      kid_friendly_note: "Look for this tree in flat valley areas between mountains"
+    
+    desert_edge_habitat:
+      id: HABITAT-LOC-04
+      description: "Grows in desert transitions"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: mature
+      notes: "Natural range indicator"
+      observation_distance: "from_context"
+      kid_friendly_note: "Look for this tree where green areas meet drier desert areas"
+  
+  human_contact:
+    urban_tolerant:
+      id: HABITAT-HUMAN-01
+      description: "Thrives in urban settings"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: mature
+      notes: "Planted range indicator"
+      observation_distance: "from_context"
+      kid_friendly_note: "You can find this tree in cities and towns, in parks and along streets"
+  
+  water_relationship:
+    riparian_habitat:
+      id: HABITAT-WATER-01
+      description: "Grows along watercourses"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: mature
+      notes: "Natural range indicator"
+      observation_distance: "from_context"
+      kid_friendly_note: "Look for this tree near rivers, streams, or creeks"
+    
+    wetland_habitat:
+      id: HABITAT-WATER-02
+      description: "Grows in wet/boggy areas"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: mature
+      notes: "Natural range indicator"
+      observation_distance: "from_context"
+      kid_friendly_note: "This tree likes really wet, muddy areas like marshes or swamps"
+    
+    dry_slope_habitat:
+      id: HABITAT-WATER-03
+      description: "Grows on dry hillsides"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: mature
+      notes: "Natural range indicator"
+      observation_distance: "from_context"
+      kid_friendly_note: "Look for this tree on sunny, dry hillsides"
+
+sensory_features:
+  smell:
+    aromatic_leaves:
+      id: SENSORY-SMELL-01
+      description: "Leaves fragrant when crushed"
+      reliability: high
+      seasonal_visibility: "growing season"
+      age_dependency: none
+      notes: "Distinctive feature when present"
+      observation_distance: "close_inspection"
+      safety: "smell-safe"
+    
+    aromatic_bark:
+      id: SENSORY-SMELL-02
+      description: "Bark fragrant when scratched"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Distinctive feature when present"
+      observation_distance: "close_inspection"
+      safety: "smell-safe"
+    
+    fragrant_flowers:
+      id: SENSORY-SMELL-03
+      description: "Flowers have strong scent"
+      reliability: high
+      seasonal_visibility: "flowering season"
+      age_dependency: mature
+      notes: "Distinctive feature when present"
+      observation_distance: "close_inspection"
+      safety: "smell-safe"
+    
+    fragrant_fruits:
+      id: SENSORY-SMELL-04
+      description: "Fruits have strong scent"
+      reliability: high
+      seasonal_visibility: "fruiting season"
+      age_dependency: mature
+      notes: "Distinctive feature when present"
+      observation_distance: "close_inspection"
+      safety: "smell-safe"
+    
+    unpleasant_odor:
+      id: SENSORY-SMELL-05
+      description: "Parts have foul smell"
+      reliability: high
+      seasonal_visibility: "variable"
+      age_dependency: variable
+      notes: "Distinctive feature when present"
+      observation_distance: "close_inspection"
+      safety: "smell-safe"
+  
+  secretions:
+    milky_sap:
+      id: SENSORY-SEC-01
+      description: "Produces white sap when cut"
+      reliability: high
+      seasonal_visibility: "growing season"
+      age_dependency: none
+      notes: "Distinctive feature when present"
+      observation_distance: "close_inspection"
+      safety: "touch-caution"
+      kid_friendly_note: "If you carefully break a leaf or twig, white liquid like milk comes out"
+    
+    colored_sap:
+      id: SENSORY-SEC-02
+      description: "Produces colored sap when cut"
+      reliability: high
+      seasonal_visibility: "growing season"
+      age_dependency: none
+      notes: "Distinctive feature when present"
+      observation_distance: "close_inspection"
+      safety: "touch-caution"
+      kid_friendly_note: "If you carefully break a leaf or twig, colored liquid comes out"
+    
+    bitter_taste:
+      id: SENSORY-TASTE-01
+      description: "Parts have bitter taste"
+      reliability: high
+      seasonal_visibility: "growing season"
+      age_dependency: none
+      notes: "Distinctive but use caution testing"
+      observation_distance: "close_inspection"
+      safety: "varies"
+      kid_friendly_note: "CAUTION: Only taste if an adult says it's safe - some parts may taste very bitter"
+
+# Geographic markers (California-specific)
+geographic_features:
+  regions:
+    northern_california:
+      id: GEO-REGION-01
+      description: "Found in Northern California"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Distribution information"
+      observation_distance: "from_context"
+      kid_friendly_note: "Look for this tree in the northern part of California, like around San Francisco and further north"
+    
+    central_california:
+      id: GEO-REGION-02
+      description: "Found in Central California"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Distribution information"
+      observation_distance: "from_context"
+      kid_friendly_note: "Look for this tree in the middle part of California, like around Fresno and Bakersfield"
+    
+    southern_california:
+      id: GEO-REGION-03
+      description: "Found in Southern California"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Distribution information"
+      observation_distance: "from_context"
+      kid_friendly_note: "Look for this tree in the southern part of California, like around Los Angeles and San Diego"
+  
+  elevation:
+    low_elevation:
+      id: GEO-ELEV-01
+      description: "Grows below 1000 feet"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Distribution information"
+      observation_distance: "from_context"
+      kid_friendly_note: "Look for this tree at lower elevations, like near the coast or in valleys"
+    
+    mid_elevation:
+      id: GEO-ELEV-02
+      description: "Grows between 1000-5000 feet"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Distribution information"
+      observation_distance: "from_context"
+      kid_friendly_note: "Look for this tree at middle elevations, like in foothills or lower mountains"
+    
+    high_elevation:
+      id: GEO-ELEV-03
+      description: "Grows above 5000 feet"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Distribution information"
+      observation_distance: "from_context"
+      kid_friendly_note: "Look for this tree high up in the mountains where it might snow in winter"
+
+# Note: Kid-friendly identification features are not structured in the features.yml file
+# Instead, they are included as open-ended descriptive text in each tree file's kid_friendly_identification section
+# This allows for more creative, tree-specific descriptions that can be tailored to each species
+
+# Ecological traits
+ecological_features:
+  relationships:
+    nitrogen_fixing:
+      id: ECO-REL-01
+      description: "Improves soil fertility"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Ecological trait"
+      observation_distance: "from_context"
+      kid_friendly_note: "This tree helps make the soil healthier for other plants to grow nearby"
+  
+  growth_patterns:
+    fast_growing:
+      id: ECO-GROWTH-01
+      description: "Quick growth rate"
+      reliability: medium
+      seasonal_visibility: "growing season"
+      age_dependency: variable
+      notes: "Can vary with conditions"
+      observation_distance: "from_context"
+      kid_friendly_note: "This tree grows quickly, like a kid having a growth spurt"
+    
+    slow_growing:
+      id: ECO-GROWTH-02
+      description: "Slow growth rate"
+      reliability: medium
+      seasonal_visibility: "growing season"
+      age_dependency: variable
+      notes: "Can vary with conditions"
+      observation_distance: "from_context"
+      kid_friendly_note: "This tree grows very slowly, taking many years to get big"
+  
+  lifespan:
+    long_lived:
+      id: ECO-LIFE-01
+      description: "Lives >100 years"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: mature
+      notes: "Life history trait"
+      observation_distance: "from_context"
+      kid_friendly_note: "This tree can live for hundreds of years, as old as your great-great-grandparents and beyond"
+    
+    short_lived:
+      id: ECO-LIFE-02
+      description: "Lives <50 years"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: mature
+      notes: "Life history trait"
+      observation_distance: "from_context"
+      kid_friendly_note: "This tree has a shorter life, about as long as a human lifespan"
+  
+  origin:
+    native_to_california:
+      id: ECO-ORIGIN-01
+      description: "Indigenous to region"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Distribution trait"
+      observation_distance: "from_context"
+      kid_friendly_note: "This tree has been growing wild in California for thousands of years"
+    
+    introduced_species:
+      id: ECO-ORIGIN-02
+      description: "Not indigenous to region"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Distribution trait"
+      observation_distance: "from_context"
+      kid_friendly_note: "This tree was brought to California from somewhere else in the world"
+  
+  adaptations:
+    drought_tolerant:
+      id: ECO-ADAPT-01
+      description: "Survives with little water"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: "usually mature"
+      notes: "Can vary with conditions"
+      observation_distance: "from_context"
+      kid_friendly_note: "This tree is like a camel - it can live with very little water"
+    
+    shade_tolerant:
+      id: ECO-ADAPT-02
+      description: "Grows well in shade"
+      reliability: medium
+      seasonal_visibility: "growing season"
+      age_dependency: variable
+      notes: "Can vary with conditions"
+      observation_distance: "from_context"
+      kid_friendly_note: "This tree is happy even in shady spots where there's not much sunlight"
+    
+    fire_resistant:
+      id: ECO-ADAPT-03
+      description: "Survives fires well"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: "usually mature"
+      notes: "Ecological trait"
+      observation_distance: "from_context"
+      kid_friendly_note: "This tree has special thick bark that helps protect it from forest fires"
+  
+  safety:
+    poisonous_parts:
+      id: ECO-SAFETY-01
+      description: "Contains toxic compounds"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: none
+      notes: "Safety information"
+      observation_distance: "from_context"
+      safety: "touch-caution"
+      kid_friendly_note: "NEVER eat parts of this tree - they can make you sick"
+  
+  human_use:
+    edible_parts:
+      id: ECO-USE-01
+      description: "Has edible components"
+      reliability: high
+      seasonal_visibility: "variable"
+      age_dependency: "usually mature"
+      notes: "Cultural/usage information"
+      observation_distance: "from_context"
+      safety: "varies"
+      kid_friendly_note: "Some parts of this tree can be eaten when prepared properly - like the nuts, fruits, or sap"
+    
+    medicinal_uses:
+      id: ECO-USE-02
+      description: "Traditional healing uses"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: "usually mature"
+      notes: "Cultural/usage information"
+      observation_distance: "from_context"
+      kid_friendly_note: "Native people used parts of this tree to make medicines"
+    
+    wood_uses:
+      id: ECO-USE-03
+      description: "Valuable wood properties"
+      reliability: high
+      seasonal_visibility: "year_round"
+      age_dependency: "mature"
+      notes: "Cultural/economic information"
+      observation_distance: "from_context"
+      kid_friendly_note: "The wood from this tree is used to make things like furniture, houses, or boats"
+  
+  ecology:
+    wildlife_value:
+      id: ECO-WILD-01
+      description: "Important for wildlife"
+      reliability: medium
+      seasonal_visibility: "year_round"
+      age_dependency: "usually mature"
+      notes: "Ecological trait"
+      observation_distance: "from_context"
+      kid_friendly_note: "This tree provides homes and food for many animals like birds, squirrels, and insects"
+    
+    pollinator_friendly:
+      id: ECO-WILD-02
+      description: "Attracts bees and butterflies"
+      reliability: high
+      seasonal_visibility: "spring_highlights"
+      age_dependency: mature
+      notes: "Ecological trait"
+      observation_distance: "from_context"
+      kid_friendly_note: "When this tree has flowers, it helps feed bees, butterflies, and other pollinators"
+    
+    allergen:
+      id: ECO-HEALTH-01
+      description: "Produces allergenic pollen"
+      reliability: medium
+      seasonal_visibility: "spring_highlights"
+      age_dependency: mature
+      notes: "Health information"
+      observation_distance: "from_context"
+      kid_friendly_note: "This tree releases pollen that can make some people sneeze or have itchy eyes"

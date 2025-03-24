@@ -1,0 +1,231 @@
+tree:
+  common_name: "Arizona Alder"
+  scientific_name: "Alnus oblongifolia"
+  family: "Betulaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A water-loving tree with smooth gray bark and long oval leaves with wavy edges. Makes tiny woody cone-like fruits that look like little pinecones."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Grows near streams and water in mountains; smooth grayish bark; elongated oval leaves with wavy edges"
+    secondary_markers: "Small woody cone-like fruits (about the size of your little fingernail); catkins (hanging fuzzy flower clusters) in spring"
+    seasonal_markers: "Spring brings hanging catkins; summer has full leafy branches; fall shows pale yellow leaves before dropping; winter reveals smooth gray branches and small cone-like fruits"
+    similar_species_differentiation: "Smoother bark and smaller leaves than White Alder; cone-like fruits are smaller than other alders"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops all its leaves in fall and grows new ones in spring"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple leaves
+        notes: "Each leaf is a single piece, not made up of smaller leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate leaf arrangement
+        notes: "Leaves grow one at a time along the twigs, not across from each other"
+      
+      - feature_id: "LEAF-SHAPE-01"  # Oval leaves
+        notes: "Leaves are oval-shaped, longer than they are wide"
+      
+      - feature_id: "LEAF-EDGE-04"  # Wavy leaf edges
+        notes: "Leaf edges have small waves and tiny teeth"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        notes: "Almost always grows right next to streams or wet areas in mountains"
+        
+      - feature_id: "FRUIT-TYPE-01"  # Produces small woody cone-like fruits
+        notes: "Makes little woody cone-like fruits that look like tiny pinecones"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk rather than multiple"
+        exceptions: "Can sometimes split into multiple trunks if damaged when young"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Bark stays relatively smooth even on older trees"
+        exceptions: "Very old trees can develop light fissures (cracks) but still smoother than most trees"
+    
+    sometimes_true:
+      - feature_id: "LEAF-COLOR-01"  # Dark green leaves
+        conditions: "During summer when fully grown"
+        notes: "Leaves are a glossy green during summer"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "In autumn before leaves drop"
+        notes: "Leaves turn pale yellow in fall before dropping"
+      
+      - feature_id: "FLOWER-TYPE-01"  # Catkins present
+        conditions: "Early spring before leaves fully emerge"
+        notes: "Long, dangling catkins (fuzzy clusters) appear in early spring"
+      
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        conditions: "Most trees, especially when mature"
+        notes: "Bark is typically smooth and gray"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Never keeps its leaves year-round; always drops them in fall"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Does not have big, colorful flowers - just small dangling catkins"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Never has thorns or spines on any part of the tree"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Grows right next to streams in the mountains, with smooth gray bark"
+    memorable_comparison: "Its little woody 'cones' look like tiny baby pinecones, but they grow on a tree with regular leaves!"
+    touch_tip: "Feel the bark - it's smoother than most trees, almost slippery when wet"
+    smell_tip: "The bark has a fresh, earthy smell if you gently scratch and sniff it"
+    fun_fact: "Alder trees are super helpers! Their roots have special bacteria that put nitrogen in the soil to help other plants grow better - like natural fertilizer!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, check where you are. Are you near a stream or water in the mountains?"
+        yes_next: 2
+        no_next: "Not likely Arizona Alder - they love to have their feet wet!"
+      - step: 2
+        instruction: "Look at the bark. Is it fairly smooth and gray, not rough or deeply cracked?"
+        yes_next: 3
+        no_next: "Probably not Arizona Alder - look for a tree with smoother bark"
+      - step: 3
+        instruction: "Check the leaves (in spring/summer). Are they oval-shaped with slightly wavy edges?"
+        yes_next: 4
+        no_next: "Could be another kind of water-loving tree"
+      - step: 4
+        instruction: "Look for tiny cone-like fruits about the size of your pinky fingernail. Do you see any on the branches or ground below?"
+        yes_next: "You found an Arizona Alder!"
+        no_next: "If it's spring, look for hanging catkins instead. If it's winter, check for small cone-like fruits on branches."
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaves begin to emerge; long hanging catkins (like fuzzy brown worms) appear"
+      reproductive_activity: "Male catkins release pollen; female flowers develop into small green cones"
+      identification_tips: "Hanging catkins are very noticeable in early spring before leaves fully emerge"
+      kid_friendly_tip: "Look for hanging fuzzy 'worms' (catkins) in spring before the leaves get big"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of glossy green oval leaves"
+      reproductive_activity: "Small green woody cones continue developing"
+      identification_tips: "Smooth gray bark and shiny leaves make this tree stand out along streams"
+      kid_friendly_tip: "In summer, find it by the stream with full green leaves and smooth gray trunk"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn pale yellow before dropping"
+      reproductive_activity: "Woody cones mature to brown color"
+      identification_tips: "Small brown woody cone-like fruits become more visible as leaves drop"
+      kid_friendly_tip: "Look for small woody 'pinecones' and yellow leaves in fall"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches with small cone-like fruits remaining"
+      reproductive_activity: "Dormant; cone-like fruits persist on branches"
+      identification_tips: "Smooth gray bark and persistent small cone-like fruits help identify in winter"
+      kid_friendly_tip: "Find it by its smooth gray bark and tiny 'pinecones' hanging on bare branches"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Grows next to streams or wet areas in mountains"
+      reliability: "Very high"
+      visibility: "Easy to observe"
+    - feature: "Smooth gray bark even on mature trees"
+      reliability: "High"
+      visibility: "Easy to observe"
+    - feature: "Small woody cone-like fruits (about 1/2 inch long)"
+      reliability: "Very high"
+      visibility: "Easy to spot when present"
+    - feature: "Oval leaves with slightly wavy edges"
+      reliability: "High"
+      visibility: "Need to look closely at leaves"
+    
+  look_alike_species:
+    - species: "White Alder (Alnus rhombifolia)"
+      differences: "White Alder has slightly rounder leaves and darker bark when mature; Arizona Alder's leaves have more wavy edges"
+      identification_tip: "Arizona Alder is found at higher mountain elevations (5,000-8,000 feet); White Alder is typically at lower elevations"
+    
+    - species: "Red Alder (Alnus rubra)"
+      differences: "Red Alder has much more reddish bark and is found mainly along the Pacific coast, not in Arizona or New Mexico"
+      identification_tip: "Red Alder leaves have rolled-under edges, while Arizona Alder edges are flatter"
+  
+  cultural_ecological_notes:
+    - "Native peoples used the bark for dyes, creating reddish-brown colors for baskets and cloth"
+    - "The wood was sometimes carved into small tools and utensils"
+    - "Helps prevent erosion along mountain streams with its strong root system"
+    - "Provides shade that keeps water cooler for fish and other stream animals"
+    
+  range_within_california:
+    - "Not common in California; occasionally found in eastern mountains bordering Arizona"
+    - "Primarily native to Arizona, New Mexico, and northern Mexico mountain streams"
+    - "Prefers high elevation stream corridors (5,000-8,000 feet)"
+    
+  physical_characteristics:
+    height_range: "30-50 feet tall (about as tall as a 3-4 story building)"
+    growth_rate: "Grows at medium speed, adding about 1-2 feet per year when young"
+    crown_spread: "15-30 feet wide when mature"
+    lifespan: "60-100 years"
+    trunk_diameter: "1-2 feet across when fully grown"
+    root_system: "Shallow but wide-spreading, especially near water"
+    toxicity: "Not toxic to people or animals"
+    
+  conservation_status:
+    status: "Not threatened; stable populations"
+    threats: "Drought and stream degradation can affect habitat"
+    protection_efforts: "Protected within stream management zones in forest areas"
+    
+  cultural_significance:
+    - culture: "Apache and other Southwestern tribes"
+      physical_uses:
+        - "Used the bark to make a reddish-brown dye for baskets and fabric"
+        - "Made medicine from the bark to treat skin problems and fevers"
+      symbolic_meaning:
+        - "Seen as a guardian of water sources in dry regions"
+        - "The tree's ability to clean soil was recognized long before modern science understood nitrogen fixation"
+    
+    - culture: "Early Western settlers"
+      physical_uses:
+        - "Used the straight branches for fence posts near streams"
+        - "Carved the soft wood into bowls and small tools"
+      symbolic_meaning:
+        - "Marked reliable water sources in dry mountain areas"
+  
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: HABITAT-WATER-01"  # Riparian habitat
+      - "feature_id: BARK-TEXT-01"  # Smooth bark
+    confirmation_features:
+      - "feature_id: FRUIT-TYPE-01"  # Produces cone-like fruits
+      - "feature_id: LEAF-SHAPE-01"  # Oval leaves 
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["HABITAT-WATER-01", "TREE-FORM-02"]  # Riparian habitat, rounded crown
+      - distance: "from_nearby"
+        features_to_check: ["BARK-TEXT-01", "BARK-COLOR-01"]  # Smooth bark, gray color
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-01", "LEAF-EDGE-04"]  # Cone-like fruits, wavy leaf edges
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["FLOWER-TYPE-01", "LEAF-ARRANGE-01"]  # Catkins, alternate leaves
+        notes: "Hanging catkins make spring identification easy"
+      summer:
+        reliability: "Medium"
+        key_features: ["LEAF-SHAPE-01", "BARK-TEXT-01"]  # Oval leaves, smooth bark
+        notes: "Full leaf canopy may make cone-like fruits harder to spot"
+      fall:
+        reliability: "High" 
+        key_features: ["LEAF-FALL-01", "FRUIT-TYPE-01"]  # Yellow fall color, cone-like fruits
+        notes: "Cone-like fruits more visible as leaves drop"
+      winter:
+        reliability: "High"
+        key_features: ["BARK-TEXT-01", "FRUIT-TYPE-01"]  # Smooth bark, cone-like fruits
+        notes: "Persistent cone-like fruits and smooth bark make winter ID possible"
+    misidentification_risks:
+      - species: "White Alder (Alnus rhombifolia)"
+        distinguishing_features: "Arizona Alder has smoother bark, more wavy leaf edges, higher elevation habitat"
+      - species: "Birch trees (Betula species)"
+        distinguishing_features: "Birches have more peeling/papery bark and lack the woody cone-like fruits"

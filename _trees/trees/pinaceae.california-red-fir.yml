@@ -1,0 +1,274 @@
+tree:
+  common_name: "California Red Fir"
+  scientific_name: "Abies magnifica"
+  family: "Pinaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A beautiful, perfectly shaped evergreen tree with a pointed top and bluish-green needles that curve upward around the branch. Has reddish-brown bark that gets thick and chunky as it grows older and large, upright barrel-shaped cones (as big as a soda can) that break apart while still on the tree."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Thick, upward-curving bluish-green needles arranged like bottle brushes around branches; large upright barrel-shaped cones"
+    secondary_markers: "Perfect triangle tree shape with pointed top; reddish-brown chunky bark on older trees"
+    seasonal_markers: "Cones break apart on the tree in late summer/fall, leaving the middle spike"
+    similar_species_differentiation: "Unlike White Fir, has needles that curve upward more strongly around branches; unlike Douglas-fir, has upright cones that break apart on the tree instead of falling whole"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles for several years"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Needles grow one at a time on the branch, not in bunches"
+      
+      - feature_id: "CONE-POS-01"  # Upright cones
+        notes: "Cones stand straight up on branches, never hang down"
+      
+      - feature_id: "CONE-SHAPE-02"  # Elongated cones
+        notes: "Cones shaped like barrels or cylinders"
+        
+      - feature_id: "CONE-SIZE-03"  # Large cones
+        notes: "Cones usually 5-9 inches long (about the size of a soda can)"
+      
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one straight main trunk"
+        exceptions: "Sometimes gets multiple trunks if damaged when young"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Perfect triangle shape like a Christmas tree"
+        exceptions: "Very old trees might get a more rounded or flat-topped shape"
+      
+      - feature_id: "BARK-COLOR-03"  # Red bark
+        notes: "Older trees get reddish-brown bark"
+        exceptions: "Young trees have gray to gray-brown bark"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Usually grows 60-150 feet tall (as tall as a 10-15 story building)"
+        exceptions: "May be shorter in tough growing spots or when young"
+      
+    sometimes_true:
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees that aren't old yet"
+        notes: "Bark is smoother with little bumps of sticky sap when young"
+      
+      - feature_id: "BARK-TEXT-04"  # Plated bark
+        conditions: "Older trees"
+        notes: "Gets thick, chunky pieces of bark as it ages"
+      
+      - feature_id: "NEEDLE-COLOR-03"  # Blue-green
+        conditions: "Normal needle color"
+        notes: "Needles have a bluish tint to their green color"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        conditions: "When needles are crushed"
+        notes: "Nice, Christmas tree smell when needles are crushed"
+      
+    never_true:
+      - feature_id: "CONE-POS-02"  # Hanging cones
+        notes: "Cones never hang down; they always stand up straight"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Never has needles growing in pairs"
+      
+      - feature_id: "NEEDLE-ARRANGE-03"  # Needles in threes
+        notes: "Never has needles growing in groups of three"
+      
+      - feature_id: "NEEDLE-ARRANGE-04"  # Needles in fives
+        notes: "Never has needles growing in groups of five"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Bluish-green needles that curve upward like little brushes"
+    memorable_comparison: "The needles look like they're giving the branch a hug, curving up all around it!"
+    touch_tip: "The needles feel stiff but not super sharp, and they curve upward when you touch them"
+    smell_tip: "Gently crush a needle to smell a fresh, Christmas tree scent"
+    fun_fact: "California Red Fir cones don't fall off the tree whole! Instead, they stand up like candles and then break apart into hundreds of scales that float down separately, leaving just a spike on the branch."
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the overall shape. Is it a tall, perfect Christmas tree shape with a pointed top?"
+        yes_next: 2
+        no_next: "Probably not a California Red Fir - try another evergreen tree"
+      - step: 2
+        instruction: "Look at the needles. Do they curve upward around the branch like they're giving the branch a hug?"
+        yes_next: 3
+        no_next: "Not a California Red Fir - if needles are in bunches, check pine trees; if needles are flat along the branch, check other fir trees"
+      - step: 3
+        instruction: "Look for cones at the top of the tree or on the ground. Do the cones stand straight up on the branches (not hang down)?"
+        yes_next: 4
+        no_next: "Not a California Red Fir - if cones hang down, check Douglas-fir or spruce"
+      - step: 4
+        instruction: "Check the bark on an older tree. Is it reddish-brown with thick, chunky pieces?"
+        yes_next: "You found a California Red Fir!"
+        no_next: "If the bark isn't reddish, it might be White Fir or another fir tree"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New light green growth appears at branch tips; buds swell and open"
+      reproductive_activity: "Tiny pollen cones release yellow dust; female cones start forming"
+      identification_tips: "Look for bright light green new growth against older blue-green needles"
+      kid_friendly_tip: "In spring, look for bright green new needle growth at the branch tips - like little green candles!"
+    
+    - season: "Summer" 
+      visual_changes: "New growth turns darker to match older needles; cones get bigger at the top of tree"
+      reproductive_activity: "Cones keep growing and become easier to see"
+      identification_tips: "Fully formed upright cones (as big as soda cans) become visible on upper branches"
+      kid_friendly_tip: "Summer is when you can spot the big upright cones near the top of the tree - they look like candles on a cake!"
+    
+    - season: "Fall"
+      visual_changes: "Needles stay mostly the same color; cones turn brown and start breaking apart"
+      reproductive_activity: "Cones break apart on the tree, dropping seeds and scales but leaving the middle spike"
+      identification_tips: "Look for cone pieces scattered on the ground beneath the tree; spiky centers stay on branches"
+      kid_friendly_tip: "In fall, the cones break apart like pinecone explosions, scattering scales and seeds everywhere!"
+    
+    - season: "Winter"
+      visual_changes: "Needles stay blue-green; cone spikes might stay on branches"
+      reproductive_activity: "Tree rests; buds might start forming for next year"
+      identification_tips: "Triangle shape and blue-green needles stand out against snow"
+      kid_friendly_tip: "Even in winter snow, Red Fir keeps its blue-green color and perfect Christmas tree shape"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Upright, barrel-shaped cones as big as soda cans"
+      reliability: "Very high"
+      visibility: "Medium - need to find cones, which are often high in the tree"
+    - feature: "Bluish-green needles curving upward around branches"
+      reliability: "High"
+      visibility: "Medium - need to look at a branch up close"
+    - feature: "Reddish-brown bark with thick chunky pieces on older trees"
+      reliability: "High"
+      visibility: "High - can see from some distance on older trees"
+    - feature: "Perfect Christmas tree triangle shape"
+      reliability: "Medium"
+      visibility: "High - can see from far away"
+    
+  look_alike_species:
+    - species: "White Fir (Abies concolor)"
+      differences: "White Fir has flatter needles that don't curve up as much; usually has smaller cones (3-5 inches); needles look more silvery-blue"
+      identification_tip: "If the needles are flatter along the branch rather than curving strongly upward, and the cones are smaller, it's likely White Fir"
+    
+    - species: "Noble Fir (Abies procera)"
+      differences: "Noble Fir has more tightly packed, blue needles that curve upward even more; cones have little 'wings' sticking out between scales"
+      identification_tip: "If the cone has little 'wings' sticking out between the scales, it's a Noble Fir, not Red Fir"
+    
+    - species: "Douglas-fir (Pseudotsuga menziesii)"
+      differences: "Douglas-fir has hanging (not upright) cones with 'mouse tails' sticking out; cones fall off whole rather than breaking apart; bark has deep grooves rather than chunky pieces"
+      identification_tip: "If the cones hang down instead of standing upright, it's not a true fir tree at all"
+    
+  cultural_significance:
+    - culture: "Western Mono"
+      physical_uses:
+        - "Used sticky sap as medicine for cuts, burns, and sores"
+        - "Used branches for bedding and sweat lodge floors because they smell nice"
+        - "Sometimes made hunting tools from the wood"
+      symbolic_meaning:
+        - "The tree's height and straight growth showed reaching up toward the sky world"
+        - "Showed toughness through hard conditions because it grows high in the mountains"
+    
+    - culture: "Washoe"
+      physical_uses:
+        - "Put fresh sticky sap on wounds to clean them and help them heal"
+        - "Used bark and wood for fires, especially high in the mountains"
+        - "Used branches to line food storage pits and make temporary shelters"
+      symbolic_meaning:
+        - "Connected with cleanliness and purifying because of its good smell"
+        - "Showed how to be tough in difficult environments"
+    
+    - culture: "Sierra Nevada Settlers"
+      physical_uses:
+        - "Liked the wood for building because it has straight grain and doesn't split easily"
+        - "Used as Christmas trees and holiday decorations because of its perfect shape"
+        - "Used for lumber, railroad ties, and making paper"
+      symbolic_meaning:
+        - "Became a symbol of Christmas and winter celebrations"
+        - "Represented the beautiful, untouched wilderness of the high Sierra mountains"
+    
+  cultural_ecological_notes:
+    - "Gives homes to many wild animals, especially in high mountain forests"
+    - "Seeds are important food for squirrels, chipmunks, and many birds"
+    - "Thick branches and needles give animals shelter during cold mountain winters"
+    - "Roots help hold soil on steep mountain slopes and stop erosion"
+    
+  range_within_california:
+    - "Mostly grows in the Sierra Nevada mountains, between 5,000-9,000 feet high"
+    - "Also found in the southern Cascade Range and Klamath Mountains"
+    - "Sometimes grows in pure Red Fir forests or mixes with White Fir, Jeffrey Pine, and Lodgepole Pine"
+    - "Likes well-drained soil and cool, snowy mountain weather"
+    
+  physical_characteristics:
+    height_range: "60-150 feet tall (about as tall as a 15-story building), sometimes reaching 200 feet"
+    growth_rate: "Grows slowly, about 8-12 inches per year when young"
+    crown_spread: "20-40 feet wide when fully grown (about as wide as a school bus is long)"
+    lifespan: "300-500 years old, with some trees living over 600 years"
+    trunk_diameter: "3-6 feet across (wider than a car tire)"
+    root_system: "Medium-deep roots that spread out wide"
+    toxicity: "Not poisonous; needles have been used for tea but might cause upset stomach if you drink too much"
+    
+  conservation_status:
+    status: "Tree numbers are stable; not in danger of disappearing"
+    threats:
+      - "Climate change affecting where it can grow and changing snow patterns"
+      - "Worse forest fires than in the past"
+      - "Bark beetles might attack trees during droughts"
+    protection_efforts:
+      - "Protected in national parks and wilderness areas"
+      - "Included in plans for managing high mountain Sierra forests"
+      - "Scientists studying how the trees might adapt to climate change"
+    
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: NEEDLE-ARRANGE-01"  # Single needles
+      - "feature_id: CONE-POS-01"  # Upright cones
+    confirmation_features:
+      - "feature_id: CONE-SIZE-03"  # Large cones
+      - "feature_id: BARK-COLOR-03"  # Red bark
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-03", "TREE-FORM-01"]  # Tall tree, pyramidal shape
+      - distance: "from_nearby"
+        features_to_check: ["CONE-POS-01", "BARK-COLOR-03"]  # Upright cones, red bark
+      - distance: "close_inspection"
+        features_to_check: ["NEEDLE-COLOR-03", "CONE-SIZE-03"]  # Blue-green needles, large cones
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["NEEDLE-ARRANGE-01", "TREE-FORM-01", "NEEDLE-COLOR-03"]
+        notes: "New growth and yellow pollen give extra clues"
+      summer:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-01", "CONE-POS-01", "CONE-SIZE-03"]
+        notes: "Big upright cones make it easy to identify"
+      fall:
+        reliability: "High" 
+        key_features: ["NEEDLE-ARRANGE-01", "CONE-POS-01", "BARK-COLOR-03"]
+        notes: "Look for cone pieces under the tree and spikes left on branches"
+      winter:
+        reliability: "Medium"
+        key_features: ["NEEDLE-ARRANGE-01", "TREE-FORM-01", "BARK-COLOR-03"]
+        notes: "Triangle shape and reddish bark help identify it in winter"
+    misidentification_risks:
+      - "White Fir - looks similar but has flatter needles and smaller cones"
+      - "Noble Fir - similar but has little 'wings' sticking out of its cones"
+      - "Shasta Red Fir - very close relative that some consider just a variety of Red Fir"
+      
+  propagation_information:
+    seed_collection: "Collect brown cones in late summer before they break apart; dry them to get the seeds"
+    germination: "Seeds need 30-60 days of cold (like being in a refrigerator); best planted in spring"
+    planting_tips: "Grows best in soil that drains well but stays a bit moist; likes partial shade when young"
+    growth_notes: "Grows slowly for the first few years; eventually grows a strong central trunk"
+    
+  wildlife_value:
+    food_source:
+      - "Seeds eaten by Douglas squirrels, chipmunks, and birds like nuthatches and chickadees"
+      - "Deer sometimes eat the needles but don't really prefer them"
+    habitat_provided:
+      - "Thick branches give nesting places for many bird species, including owls and grosbeaks"
+      - "Older trees with holes provide shelter for small mammals and birds"
+      - "Fallen logs create important homes on the forest floor for small mammals, salamanders, and bugs"
+    ecosystem_role: "Very important tree in high Sierra Nevada mountain forests; helps create habitat for many different plants and animals"

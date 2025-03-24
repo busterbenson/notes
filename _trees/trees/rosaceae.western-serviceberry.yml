@@ -1,0 +1,316 @@
+tree:
+  common_name: "Western Serviceberry"
+  scientific_name: "Amelanchier alnifolia"
+  family: "Rosaceae"
+  
+  # Basic summary information
+  summary: "Western Serviceberry is a deciduous multi-stemmed shrub or small tree that produces showy white flowers in spring and edible purple-black berries in summer. Native to mountain regions of western North America, it's valued for wildlife habitat, erosion control, and its edible fruits."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Clusters of 5-petaled white flowers in spring followed by purple-black berries in summer"
+    secondary_markers: "Oval leaves with serrated edges primarily at the top half; smooth gray bark"
+    seasonal_markers: "Spring white flowers; summer berries; yellow to red fall color"
+    similar_species_differentiation: "Distinguished from other Amelanchier species by its western range and oval leaves with teeth primarily on the upper half"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all leaves in fall"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple
+        notes: "Leaves are undivided, not compound"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves arranged alternately along stems"
+      
+      - feature_id: "LEAF-SHAPE-01"  # Oval
+        notes: "Oval to roundish leaf shape, often with serrated edges only on the upper half"
+      
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        notes: "Smooth grayish-brown bark, sometimes with subtle vertical striping"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Bark remains relatively smooth even with age"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Native to mountains of northern and eastern California"
+      
+      - feature_id: "ECO-WILD-01"  # Important for wildlife
+        notes: "Berries are an important food source for birds and mammals"
+      
+      - feature_id: "ECO-USE-01"  # Edible parts
+        notes: "Berries are edible and were an important food source for indigenous peoples"
+        
+    usually_true:
+      # Features that are primarily true but may have exceptions
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        notes: "Typically grows as a multi-stemmed shrub or small tree"
+        exceptions: "In some managed landscape settings may be pruned to a more tree-like single-trunk form"
+    
+    sometimes_true:
+      # Features that vary with age, season, or conditions
+      - feature_id: "TREE-SIZE-01"  # Short tree
+        conditions: "Most specimens"
+        notes: "Usually 6-15 feet tall, occasionally reaching 20 feet in ideal conditions"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        conditions: "Mature specimens in open settings"
+        notes: "Develops rounded crown when growing as a small tree rather than a shrub"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        conditions: "Spring flowering season"
+        notes: "Produces clusters of white 5-petaled flowers, quite showy when in full bloom"
+      
+      - feature_id: "FRUIT-TYPE-03"  # Berries present
+        conditions: "Summer fruiting season"
+        notes: "Produces edible purple-black pome fruits (similar to small blueberries) in summer"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Fall, especially in sunny locations"
+        notes: "Leaves often turn yellow in fall"
+      
+      - feature_id: "LEAF-FALL-02"  # Red fall color
+        conditions: "Fall, particularly in certain soil types"
+        notes: "Leaves sometimes turn orange to reddish in fall"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        conditions: "Often found in moister sites"
+        notes: "Frequently grows near streams or in areas with good soil moisture"
+      
+      - feature_id: "GEO-ELEV-02"  # Mid-elevation
+        conditions: "Most common habitat"
+        notes: "Typically found at elevations of 2,000-8,000 feet in California"
+    
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops leaves in fall; never evergreen"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Leaves are always simple, never compound"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has broad leaves, not needles"
+      
+      - feature_id: "CONE-SIZE-01"  # Small cones
+        notes: "Produces berries, not cones"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        notes: "Bark remains relatively smooth, never deeply furrowed"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "White spring flowers like tiny stars followed by purple-black berries in summer"
+    memorable_comparison: "In spring it's covered with clouds of little white star-shaped flowers, then in summer it transforms to make juicy purple-black berries that look like wild blueberries"
+    touch_tip: "The leaves feel slightly fuzzy on the bottom side like soft animal ears"
+    smell_tip: "The flowers have a light sweet smell in spring - take a gentle sniff like you're trying to catch a flower's whisper"
+    fun_fact: "People who lived here long ago mixed these berries with meat to make a special traveling food called pemmican that wouldn't spoil all winter! Birds and bears love these berries so much that they sometimes eat the entire year's crop in just a few days, having their own berry festival."
+    
+    detective_steps:
+      - step: 1
+        instruction: "In spring, does it have bunches of small white flowers that look like stars?"
+        yes_next: 2
+        no_next: "If it's summer, check if it has small purple berries that look like blueberries"
+      - step: 2
+        instruction: "Look at the leaves - are they oval-shaped with tiny notches along the edges, especially toward the top of the leaf?"
+        yes_next: 3
+        no_next: "Not a Western Serviceberry - look for other bushes with different leaves"
+      - step: 3
+        instruction: "Is it a bush or small tree (shorter than a house) with smooth grayish bark?"
+        yes_next: "You found a Western Serviceberry!"
+        no_next: "Might be another bush with white flowers - check the bark and size"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Leaves appear, quickly followed by clusters of white flowers"
+      reproductive_activity: "Flowers bloom for 1-2 weeks in early spring"
+      identification_tips: "Clusters of 5-petaled white flowers covering branches, often before leaves fully grow"
+      kid_friendly_tip: "In spring, the branches are covered with bunches of little white flowers that look like tiny stars"
+    
+    - season: "Summer" 
+      visual_changes: "Full leaf growth; berries form and change color from green to red to purple-black"
+      reproductive_activity: "Fruits grow and ripen throughout summer"
+      identification_tips: "Look for clusters of berries changing from green to red to purple-black"
+      kid_friendly_tip: "Summer is berry time! The fruits start green, turn red, and finally dark purple when they're ripe to eat"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow to orange-red before dropping off"
+      reproductive_activity: "Any leftover fruits may stay on and shrivel up"
+      identification_tips: "Yellow to reddish fall leaf colors; smooth gray bark becomes more visible as leaves fall"
+      kid_friendly_tip: "Leaves turn pretty colors in fall - yellow, orange, or sometimes red - before falling off"
+    
+    - season: "Winter"
+      visual_changes: "No leaves, showing smooth gray bark and thin twigs"
+      reproductive_activity: "Resting; flower buds form for next spring"
+      identification_tips: "Thin gray twigs with small, pointed buds growing in zigzag pattern"
+      kid_friendly_tip: "In winter, you can see its smooth gray bark and skinny branches with tiny pointed buds"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Clusters of 5-petaled white flowers in spring"
+      reliability: "Very high (spring only)"
+      visibility: "Easy - visible from a distance when in bloom"
+    - feature: "Purple-black berries in summer"
+      reliability: "High (summer only)"
+      visibility: "Medium - visible from nearby"
+    - feature: "Oval leaves with teeth mainly on upper half"
+      reliability: "High"
+      visibility: "Medium - need to look closely at leaves"
+    - feature: "Multi-stemmed growth with smooth gray bark"
+      reliability: "Medium"
+      visibility: "Easy - visible from nearby"
+    
+  look_alike_species:
+    - species: "Eastern Serviceberry (Amelanchier canadensis)"
+      differences: "Western Serviceberry has oval leaves with teeth primarily on the upper half; Eastern species has teeth along entire margin"
+      identification_tip: "Check the range - Eastern Serviceberry is not native to California"
+    - species: "Chokecherry (Prunus virginiana)"
+      differences: "Chokecherry has elongated flower clusters (racemes) and more elongated leaves with finer teeth"
+      identification_tip: "Serviceberry has rounder, clustered flowers and fruits grow in smaller clusters"
+    
+  cultural_ecological_notes:
+    - "Also called Saskatoon, serviceberry, juneberry, or shadbush in different regions"
+    - "Effective for erosion control on slopes due to fibrous root system"
+    - "Bears, birds, and other wildlife rely heavily on the nutritious berries"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Northern Paiute"
+      physical_uses:
+        - "Harvested berries as critical fruit source, especially in mountainous regions"
+        - "Dried berries on specialized mats for winter storage"
+        - "Used straight stems for arrow shafts prized for accuracy"
+      symbolic_meaning:
+        - "Bright white blossoms symbolized purity and renewal"
+        - "Spring flowering marked beginning of new seasonal cycles"
+        - "Berry color progression (green→red→purple) represented life stages in teachings"
+    
+    - culture: "Western Shoshone"
+      physical_uses:
+        - "Created dart-like game implements from straight young stems"
+        - "Harvested berries using specific gathering baskets"
+        - "Preserved berries through sun-drying techniques"
+      symbolic_meaning:
+        - "Used stem-based games to teach children hand-eye coordination with ceremonial significance"
+        - "Associated plant with harmony due to summer ripening during inter-tribal gatherings"
+        - "Viewed shared berry patches as neutral zones for peaceful exchange"
+    
+    - culture: "Sierra Miwok"
+      physical_uses:
+        - "Used flowering timing as phenological indicator for planting crops"
+        - "Prepared specific food recipes combining berries with other seasonal foods"
+      symbolic_meaning:
+        - "Considered the plant a living calendar marking seasonal transitions"
+        - "Featured serviceberry in teachings about nature's rhythms"
+        - "Associated berry ripening with community gathering times"
+    
+    - culture: "Modoc and Klamath"
+      physical_uses:
+        - "Dried berries on distinctive reed mats using specific techniques"
+        - "Made medicinal preparations from bark and roots for stomach ailments"
+        - "Created special tools for efficient berry harvesting"
+      symbolic_meaning:
+        - "Preserved fruits symbolized foresight and preparation for winter hardship"
+        - "Used as teaching example of planning ahead in youth education"
+        - "Featured in stories about survival through harsh seasons"
+    
+    - culture: "Interior Salish"
+      physical_uses:
+        - "Mixed berries with salmon fat and dried meat to create pemmican"
+        - "Used wood for specific implements requiring hardness and straight grain"
+        - "Applied medicines from roots to aid women after childbirth"
+      symbolic_meaning:
+        - "Pemmican represented connection between forest and river resources"
+        - "Plant's dual medicine and food uses symbolized completeness"
+        - "Hard wood carried inherent qualities of accuracy and truth-seeking"
+    
+    - culture: "Contemporary Native Practices"
+      physical_uses:
+        - "Harvest straight young stems for basketry elements"
+        - "Continue traditional food preparation methods in cultural revitalization"
+      symbolic_meaning:
+        - "Basket designs carry specific cultural stories and tribal identity"
+        - "Plant remains symbol of indigenous food sovereignty"
+    
+    - culture: "European Settlers"
+      physical_uses:
+        - "Used berries for jams and preserves"
+        - "Incorporated wood into pioneer tool handles"
+      symbolic_meaning:
+        - "Named 'serviceberry' as it bloomed when ground thawed for burial services"
+        - "Associated with memorial traditions and seasonal transitions"
+    
+  range_within_california:
+    - "Found primarily in northern and eastern California mountains"
+    - "Common in the Sierra Nevada, Cascades, and North Coast ranges"
+    - "Typically at elevations of 2,000-8,000 feet"
+    - "Often grows in moist areas near streams or meadows"
+    
+  # Decision tree placement
+  physical_characteristics:
+    height_range: "6-20 feet"
+    growth_rate: "Slow to moderate"
+    crown_spread: "4-15 feet at maturity"
+    lifespan: "30-70 years in typical conditions"
+    trunk_diameter: "Up to 10 inches at maturity"
+    root_system: "Moderately deep, fibrous with some lateral spread"
+    toxicity: "Non-toxic; fruits are edible and nutritious"
+    fruit_type: "Small pome (apple-family fruit), not a true berry"
+
+  conservation_status:
+    status: "Secure - Widespread and abundant"
+    threats: 
+      - "Habitat conversion in lower elevation areas"
+      - "Competition from invasive species in disturbed areas"
+      - "Fire suppression in some habitat types can reduce regeneration"
+    protection_efforts:
+      - "Often included in native plant restoration projects"
+      - "Popular in native plant landscaping for habitat value"
+      - "Widely used in erosion control on slopes"
+
+  propagation_information:
+    seed_germination: "Seeds require cold stratification for 3-4 months"
+    planting_recommendations: "Spring planting recommended in well-drained soils"
+    landscape_uses: "Valuable for wildlife gardens, hedgerows, and native landscapes"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: TREE-SIZE-01"  # Short tree
+    confirmation_features:
+      - "feature_id: FLOWER-SIZE-01"  # Showy flowers
+      - "feature_id: FRUIT-TYPE-03"  # Berries present
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-01", "TREE-TRUNK-02"]  # Short tree, multi-trunked
+      - distance: "from_nearby"
+        features_to_check: ["FLOWER-SIZE-01", "FRUIT-TYPE-03"]  # Showy flowers, berries (seasonal)
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-SHAPE-01", "BARK-TEXT-01"]  # Oval leaves, smooth bark
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["FLOWER-SIZE-01", "LEAF-TYPE-01"]
+        notes: "White flower clusters make this easy to identify in spring"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["FRUIT-TYPE-03", "LEAF-SHAPE-01"]
+        notes: "Purple-black berries are distinctive in summer"
+      
+      fall:
+        reliability: "Medium"
+        key_features: ["LEAF-FALL-01", "LEAF-FALL-02"]
+        notes: "Yellow to reddish fall color; check leaf shape and bark"
+      
+      winter:
+        reliability: "Low"
+        key_features: ["TREE-TRUNK-02", "BARK-TEXT-01"]
+        notes: "Multi-stemmed form and smooth gray bark; check bud arrangement"
+    misidentification_risks: 
+      - "Chokecherry has elongated flower clusters, not flat-topped clusters like serviceberry"
+      - "Wild plums have single flowers rather than clusters, and thorns on branches"
+      - "Elderberry has compound leaves, not simple leaves"

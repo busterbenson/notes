@@ -1,0 +1,227 @@
+tree:
+  common_name: "Atlantic White-cedar"
+  scientific_name: "Chamaecyparis thyoides"
+  family: "Cupressaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A slender evergreen tree with soft, blue-green scale-like leaves arranged in flat sprays. Has small round cones about the size of a pea and stringy reddish-brown bark when mature."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Blue-green scale-like leaves in flat sprays; strong cedar smell when crushed"
+    secondary_markers: "Small round bluish cones about 1/4 inch across; reddish shredding bark on older trees"
+    seasonal_markers: "Little seasonal change; stays evergreen year-round with tiny round cones developing in summer"
+    similar_species_differentiation: "Bluer foliage and rounder cones than Northern White-cedar; has scale-like leaves instead of needles like pines"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its leaf scales all year without seasonal dropping"
+      
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        notes: "Tiny overlapping scales form flat sprays like fern fronds"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Scales grow in pairs opposite each other on the twigs"
+      
+      - feature_id: "LEAF-COLOR-03"  # Blue-green
+        notes: "Foliage has a distinct bluish-green color"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        notes: "Strong cedar smell when foliage is crushed"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with one main straight trunk"
+        exceptions: "Can occasionally form multiple trunks if damaged when young"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Usually has a narrow conical or pyramid shape"
+        exceptions: "May become more irregular in very old specimens or in windy sites"
+      
+      - feature_id: "CONE-SHAPE-01"  # Round cones
+        notes: "Produces small spherical cones about 1/4 inch in diameter"
+        exceptions: "Cones may not be present on very young trees"
+    
+    sometimes_true:
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees"
+        notes: "Bark starts smooth and reddish on young trees"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        conditions: "Mature trees"
+        notes: "Bark becomes shreddy and peels in thin strips on older trees"
+      
+      - feature_id: "BARK-COLOR-03"  # Red bark
+        conditions: "Especially visible on mature trees"
+        notes: "Bark has a reddish-brown color"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all its foliage seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Does not have true needles - only scale-like leaves"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Never produces large, noticeable flowers"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Soft, bluish-green scaly leaves that look like flat fans or feathers"
+    memorable_comparison: "The branches feel like soft, flat fish scales arranged in fans"
+    touch_tip: "Gently touch the sprays of leaves - they feel soft and flat, not poky like pine needles"
+    smell_tip: "Carefully crush a tiny bit of the leaves and smell the strong cedar scent - like a cedar chest or pencil shavings"
+    fun_fact: "The wood from this tree is super rot-resistant! Early American settlers used it to make wooden water pipes that lasted more than 100 years underground!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the leaves. Do they look like tiny scales forming flat, fan-like sprays?"
+        yes_next: 2
+        no_next: "If the tree has needles instead of scales, it's not an Atlantic White-cedar"
+      - step: 2
+        instruction: "Look at the color of the leaf sprays. Are they blue-green, almost with a silverish tint?"
+        yes_next: 3
+        no_next: "If they're bright green or yellowish-green, it might be a different cedar relative"
+      - step: 3
+        instruction: "Very carefully crush a tiny bit of the foliage between your fingers and smell. Is there a strong cedar scent?"
+        yes_next: 4
+        no_next: "If there's no smell or a different smell, it might be another conifer"
+      - step: 4
+        instruction: "Look for tiny round cones about the size of a pea. Can you spot any on the branches?"
+        yes_next: "You found an Atlantic White-cedar!"
+        no_next: "If no cones are visible, check the bark - on older trees it should be reddish and slightly shreddy"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New growth appears at branch tips with slightly brighter blue-green color"
+      reproductive_activity: "Tiny pollen cones release yellow pollen"
+      identification_tips: "Look for contrast between new growth and older foliage"
+      kid_friendly_tip: "In spring, you might see tiny yellow pollen cones and fresh blue-green growth at the tips"
+    
+    - season: "Summer" 
+      visual_changes: "Consistent blue-green color throughout"
+      reproductive_activity: "Small seed cones begin forming, starting green then turning bluish"
+      identification_tips: "Tiny blue-green cones become visible"
+      kid_friendly_tip: "Look for tiny round cones starting to grow - they're about the size of a pea"
+    
+    - season: "Fall"
+      visual_changes: "No color change; remains blue-green"
+      reproductive_activity: "Cones mature and turn brown, opening to release seeds"
+      identification_tips: "Open cones are more visible against the evergreen foliage"
+      kid_friendly_tip: "While other trees change color, these stay the same blue-green with tiny brown cones"
+    
+    - season: "Winter"
+      visual_changes: "Remains evergreen; no change in appearance"
+      reproductive_activity: "Dormant; some spent cones may remain on branches"
+      identification_tips: "Blue-green color stands out against winter landscape"
+      kid_friendly_tip: "These trees stay green all winter when many other trees lose their leaves"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Scale-like blue-green leaves in flattened sprays"
+      reliability: "Very high"
+      visibility: "Easy to observe"
+    - feature: "Strong cedar aroma when foliage is crushed"
+      reliability: "Very high"
+      visibility: "Requires touch and smell"
+    - feature: "Small round cones about 1/4 inch in diameter"
+      reliability: "High"
+      visibility: "Need to look closely to spot"
+    - feature: "Reddish-brown, shredded bark on mature trees"
+      reliability: "Medium"
+      visibility: "Visible on older trees"
+    
+  look_alike_species:
+    - species: "Northern White-cedar (Thuja occidentalis)"
+      differences: "Atlantic White-cedar has more blue-green foliage and rounder cones; Northern White-cedar has flatter sprays and more elongated cones"
+      identification_tip: "Crush a bit of foliage - Atlantic White-cedar has a stronger, spicier scent"
+    
+    - species: "Port Orford-cedar (Chamaecyparis lawsoniana)"
+      differences: "Port Orford-cedar is much larger and has more drooping branch tips; primarily found in western North America"
+      identification_tip: "Atlantic White-cedar has a more slender form and is typically found in wet eastern habitats"
+  
+  cultural_ecological_notes:
+    - "Early American boat builders prized the wood for its resistance to rot"
+    - "Native Americans used the wood for canoes, housing, and baskets"
+    - "Provides important habitat for numerous bird species"
+    - "Historically was much more common but was heavily logged"
+    
+  range_within_california:
+    - "Not native to California but occasionally cultivated in gardens"
+    - "Naturally found along the Atlantic coast from Maine to Florida"
+    - "In California, typically planted in botanic gardens or as an ornamental"
+    
+  physical_characteristics:
+    height_range: "40-80 feet tall (about as tall as a 4-8 story building)"
+    growth_rate: "Moderate growth rate of 1-2 feet per year"
+    crown_spread: "10-20 feet wide at maturity"
+    lifespan: "200-500 years under good conditions"
+    trunk_diameter: "1-2 feet across when mature"
+    root_system: "Shallow but wide-spreading in wet soils"
+    toxicity: "Not toxic to people or animals"
+    
+  conservation_status:
+    status: "Not threatened in most of its range; some local populations are vulnerable"
+    threats: "Wetland drainage, development, and sea level rise"
+    protection_efforts: "Some dedicated preserves protect remaining old-growth stands on the East Coast"
+  
+  cultural_significance:
+    - culture: "Native American tribes of the Atlantic Coast"
+      physical_uses:
+        - "Made durable canoes from the straight trunks"
+        - "Used the wood for house posts because it doesn't rot in wet ground"
+        - "Created medicine from the leaves for colds and fevers"
+      symbolic_meaning:
+        - "The tree's ability to live in swamps was seen as a symbol of adaptability"
+        - "Its long life represented endurance and strength"
+    
+    - culture: "Early American colonists"
+      physical_uses:
+        - "Built wooden water pipes that stayed underground for over 100 years!"
+        - "Made roof shingles that lasted for decades without rotting"
+        - "Used the straight trunks for ship masts and boat parts"
+      symbolic_meaning:
+        - "Represented valuable natural resources of the New World"
+  
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: LEAF-FORM-05"  # Scale-like leaves
+      - "feature_id: LEAF-COLOR-03"  # Blue-green
+    confirmation_features:
+      - "feature_id: SENSORY-SMELL-01"  # Aromatic leaves
+      - "feature_id: CONE-SHAPE-01"  # Round cones
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-TYPE-02", "TREE-FORM-01"]  # Evergreen, pyramidal shape
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-FORM-05", "LEAF-COLOR-03"]  # Scale-like leaves, blue-green
+      - distance: "close_inspection"
+        features_to_check: ["SENSORY-SMELL-01", "CONE-SHAPE-01"]  # Aromatic when crushed, round cones
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "LEAF-FORM-05", "LEAF-COLOR-03"]
+        notes: "New growth provides good color contrast"
+      summer:
+        reliability: "High"
+        key_features: ["LEAF-FORM-05", "CONE-SHAPE-01"]
+        notes: "Developing cones are visible"
+      fall:
+        reliability: "High" 
+        key_features: ["LEAF-TYPE-02", "LEAF-COLOR-03"]
+        notes: "Blue-green color stands out as deciduous trees change color"
+      winter:
+        reliability: "Very high"
+        key_features: ["LEAF-TYPE-02", "TREE-FORM-01"]
+        notes: "Evergreen nature makes it stand out in winter"
+    misidentification_risks:
+      - species: "Northern White-cedar (Thuja occidentalis)"
+        distinguishing_features: "More blue-green foliage and rounder cones in Atlantic White-cedar"
+      - species: "Arborvitae cultivars (Thuja species)"
+        distinguishing_features: "Atlantic White-cedar has stronger aroma and bluer foliage"

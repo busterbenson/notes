@@ -1,0 +1,282 @@
+tree:
+  common_name: "California Fan Palm"
+  scientific_name: "Washingtonia filifera"
+  family: "Arecaceae"
+  
+  # Basic summary information
+  summary: "California's only native palm tree, with a thick trunk and large fan-shaped fronds that spread like an open hand. Wild trees often have a distinctive 'skirt' of dead fronds hanging down the trunk."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Tall palm with large fan-shaped leaves and often a 'skirt' of dead fronds hanging down the trunk"
+    secondary_markers: "Thick trunk, gray-green fan-shaped fronds, thin filaments hanging from leaf edges"
+    seasonal_markers: "Black berries in large clusters hanging beneath the fronds in late summer and fall"
+    similar_species_differentiation: "Unlike Mexican Fan Palm, has a thicker trunk and shorter overall height; Mexican Fan Palm is thinner and taller"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its large fronds year-round"
+        
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape (actually columnar with crown)
+        notes: "Single thick trunk topped with a crown of spreading fronds"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "California's only native palm species"
+      
+      - feature_id: "HABITAT-LOC-04"  # Desert edge habitat
+        notes: "Naturally grows in desert oases and canyons with groundwater"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        notes: "Requires access to groundwater in its natural state"
+      
+      - feature_id: "GEO-REGION-03"  # Southern California
+        notes: "Native to Southern California desert regions"
+    
+    usually_true:
+      # Features that are primarily true, but have notable exceptions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Almost always develops a single thick trunk"
+        exceptions: "May occasionally form multiple trunks if the main growing tip is damaged"
+      
+      - feature_id: "BARK-TEXT-06"  # Fibrous bark
+        notes: "Trunk covered with fibrous leaf bases creating a rough texture"
+        exceptions: "On landscape specimens, old frond bases may be removed showing a smoother trunk"
+    
+    sometimes_true:
+      # Features that vary with age, season, or conditions
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Only when dead leaf bases have been removed from the trunk"
+        notes: "Trunk becomes smooth gray-brown when leaf bases are cleaned off"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        conditions: "Young to middle-aged specimens or those in less ideal conditions"
+        notes: "Can be 20-40 feet tall in younger specimens or poor growing conditions"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        conditions: "Mature specimens in good growing conditions"
+        notes: "Can reach 60+ feet in height with adequate water"
+      
+      - feature_id: "FRUIT-TYPE-03"  # Berries present
+        conditions: "Late summer to fall on mature trees"
+        notes: "Produces clusters of small black berry-like fruits hanging below the crown"
+      
+      - feature_id: "ECO-WILD-02"  # Pollinator friendly
+        conditions: "When flowering"
+        notes: "Flowers attract bees and other insects during bloom time"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        conditions: "Once established and with access to deep groundwater"
+        notes: "Can survive in extremely hot, dry conditions if roots reach water"
+    
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Does not drop its fronds seasonally; remains evergreen"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        notes: "Fronds stay green until they die; don't change color seasonally"
+      
+      - feature_id: "CONE-SIZE-01"  # Small cones
+        notes: "Produces berry-like fruits, not cones"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has fan-shaped fronds, not needles"
+      
+      - feature_id: "BARK-COLOR-02"  # White bark
+        notes: "Trunk is gray-brown, never white"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A tall palm tree with big fan-shaped leaves that spread out like an open hand"
+    memorable_comparison: "Wild ones look like they're wearing a grass skirt made of dead brown leaves hanging down the trunk"
+    touch_tip: "The leaves have thin strings hanging from the edges like loose threads on a piece of cloth"
+    smell_tip: "The flowers have a light sweet smell in spring, and the fruit has a date-like smell when ripe"
+    fun_fact: "This is the only palm tree that's originally from California! Native Americans used almost every part of this tree - eating the fruits, weaving the leaves into baskets, and using the fibers for sandals and rope. In the wild, these palms show where water is hiding underground in the desert!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, is it a palm tree with big leaves shaped like fans or hands?"
+        yes_next: 2
+        no_next: "Not a California Fan Palm - palm trees have one thick trunk and big fan or feather leaves"
+      - step: 2
+        instruction: "Look at the trunk. Is it thick (like a trash can) with maybe a 'skirt' of dead brown leaves hanging down?"
+        yes_next: 3
+        no_next: "Might be a Mexican Fan Palm - they're skinnier and taller"
+      - step: 3
+        instruction: "Check the leaf edges. Do they have stringy fibers hanging from them like loose threads?"
+        yes_next: "You found a California Fan Palm!"
+        no_next: "Might be another type of palm - California Fan Palms have stringy threads on their leaf edges"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New fronds emerge from the center of the crown"
+      reproductive_activity: "Large flower clusters develop hanging below the fronds"
+      identification_tips: "Look for cream-colored flower stalks emerging"
+      kid_friendly_tip: "In spring, look for new bright green leaves growing from the center and long flower bunches hanging down"
+    
+    - season: "Summer" 
+      visual_changes: "Full crown of fronds; flower clusters develop into green fruits"
+      reproductive_activity: "Fruits begin to develop and grow"
+      identification_tips: "Green fruit clusters become visible below the crown"
+      kid_friendly_tip: "The tree grows bunches of small green fruits that hang down like grape clusters"
+    
+    - season: "Fall"
+      visual_changes: "Fruits ripen to black; older fronds may turn brown"
+      reproductive_activity: "Fruits ripen fully and begin to drop"
+      identification_tips: "Black fruit clusters; some brown fronds in the skirt"
+      kid_friendly_tip: "The fruits turn black like berries, and some of the older leaves turn brown"
+    
+    - season: "Winter"
+      visual_changes: "Crown remains green; may have fewer fruits"
+      reproductive_activity: "Dormant; no flowering or fruiting"
+      identification_tips: "Green crown stands out in desert landscape"
+      kid_friendly_tip: "Still green in winter when many other plants look dry and brown"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Single thick trunk"
+      reliability: "Very high"
+      visibility: "Easy - visible from a distance"
+    - feature: "Fan-shaped fronds in a crown at the top"
+      reliability: "Very high"
+      visibility: "Easy - visible from a distance"
+    - feature: "Skirt of dead fronds (in wild specimens)"
+      reliability: "High"
+      visibility: "Easy - visible from a distance"
+    - feature: "Stringy fibers on leaf edges"
+      reliability: "High"
+      visibility: "Medium - need to be fairly close"
+    
+  look_alike_species:
+    - species: "Mexican Fan Palm (Washingtonia robusta)"
+      differences: "Mexican Fan Palm is taller and skinnier with a more slender trunk; California Fan Palm has a thicker trunk and is usually shorter"
+      identification_tip: "If the trunk is skinny like a telephone pole rather than thick like a barrel, it's probably a Mexican Fan Palm"
+    - species: "Mediterranean Fan Palm (Chamaerops humilis)"
+      differences: "Mediterranean Fan Palm is much smaller and often grows in clusters with multiple stems"
+      identification_tip: "If it's short (under 15 feet) and has multiple trunks growing together, it's a Mediterranean Fan Palm"
+    
+  cultural_ecological_notes:
+    - "The only palm native to western North America, historically creating important oasis habitats in the desert"
+    - "Indicates the presence of water or high water tables in desert regions"
+    - "Provides shelter, nesting sites, and food for many desert animals"
+    - "Dead fronds create microhabitats for birds, reptiles, and insects"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Cahuilla"
+      physical_uses:
+        - "Ate the sweet fruit fresh or dried it like raisins, also ground the seeds into flour for nutritious food"
+        - "Used fronds for making baskets, roofing for homes, sandals, and mats"
+        - "Created strong cordage from fibers pulled from the leaf edges"
+        - "Built platforms in the palms to harvest fruit and to see long distances"
+      symbolic_meaning:
+        - "Considered the palm a symbol of life in the desert, marking reliable water sources"
+        - "Included palm trees in creation stories as gifts from the creator"
+        - "Used palm groves as important gathering places and landmarks"
+    
+    - culture: "Kumeyaay"
+      physical_uses:
+        - "Harvested fruits as an important food source, often toasting the seeds for flavor"
+        - "Wove fronds into baskets, nets, and cradles for babies"
+        - "Built temporary shelters using dried palm fronds"
+        - "Used the strong fibers from leaf edges to make hunting nets"
+      symbolic_meaning:
+        - "Viewed palms as symbols of endurance in harsh conditions"
+        - "Recognized oases as sacred gathering places with special protection"
+        - "Included palms in stories about finding water and survival"
+    
+    - culture: "Serrano"
+      physical_uses:
+        - "Made medicinal tea from the seeds to treat various ailments"
+        - "Crafted ceremonial objects and household tools from various palm parts"
+        - "Wove sleeping mats and protection against the desert sun from the fronds"
+      symbolic_meaning:
+        - "Considered palm groves as natural meeting places between tribal areas"
+        - "Used palm parts in coming-of-age ceremonies"
+        - "Saw the tall trunks as connection points between earth and sky"
+    
+    - culture: "Desert California Tribes (General)"
+      physical_uses:
+        - "Used dead frond skirts as natural shelter material and for catching fire embers"
+        - "Created tools, cooking implements, and carrying containers from various palm parts"
+        - "Harvested palm heart (the growing tip) as emergency food in dire circumstances"
+      symbolic_meaning:
+        - "Regarded palm oases as neutral territory for inter-tribal meetings"
+        - "Used palm locations as key navigation markers in the desert"
+        - "Included palms in storytelling as symbols of finding life-giving water"
+    
+    - culture: "Modern California"
+      physical_uses:
+        - "Planted widely as ornamental trees in parks and landscaping"
+        - "Used as symbolic markers of Southern California identity"
+      symbolic_meaning:
+        - "Represent the iconic Southern California landscape in media and art"
+        - "Serve as symbols of desert oases and natural springs"
+    
+  range_within_california:
+    - "Native to desert oases in the Colorado Desert, especially around Palm Springs, Joshua Tree, and Anza-Borrego"
+    - "Found naturally in canyons where underground water comes to the surface"
+    - "Occurs in scattered groups in the Coachella Valley and parts of Imperial County"
+    - "Widely planted ornamentally throughout Southern California"
+    
+  # Decision tree placement
+  physical_characteristics:
+    height_range: "30-60 feet"
+    growth_rate: "Moderate"
+    crown_spread: "10-15 feet at maturity"
+    lifespan: "80-250 years"
+    trunk_diameter: "2-3 feet in diameter"
+    root_system: "Deep, extensive roots that seek groundwater"
+    toxicity: "Not toxic, fruits are edible"
+  
+  conservation_status:
+    status: "Uncommon in the wild but not endangered"
+    threats: 
+      - "Groundwater depletion in desert regions"
+      - "Development of desert springs and oases"
+      - "Invasive species in oasis ecosystems"
+    protection_efforts:
+      - "Protected populations in national and state parks"
+      - "Habitat restoration in some desert oases"
+      - "Cultivation and replanting programs"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: TREE-FORM-01"  # Pyramidal/columnar form
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+    confirmation_features:
+      - "feature_id: LEAF-SHAPE-07"  # Fan-shaped
+      - "feature_id: BARK-TEXT-06"  # Fibrous bark
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-01", "LEAF-TYPE-02"]  # Palm form, evergreen
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SHAPE-07", "BARK-TEXT-06"]  # Fan-shaped leaves, fibrous trunk
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-03", "SENSORY-SMELL-04"]  # Berries, fragrant fruits
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["TREE-FORM-01", "LEAF-SHAPE-07"]
+        notes: "Look for emerging flower clusters beneath the fronds"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["TREE-FORM-01", "LEAF-SHAPE-07", "ECO-WILD-02"]
+        notes: "Green developing fruits in clusters; full crown of fronds"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["TREE-FORM-01", "LEAF-SHAPE-07", "FRUIT-TYPE-03"]
+        notes: "Black ripe fruits in clusters; distinctive against desert landscape"
+      
+      winter:
+        reliability: "High"
+        key_features: ["TREE-FORM-01", "LEAF-TYPE-02"]
+        notes: "Green crown stands out in winter desert; skirt of dead fronds"
+    misidentification_risks: 
+      - "Mexican Fan Palm is similar but with thinner trunk and taller growth"
+      - "Mediterranean Fan Palm is much smaller with multiple trunks"

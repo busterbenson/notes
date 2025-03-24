@@ -1,0 +1,281 @@
+tree:
+  common_name: "Coast Redwood"
+  scientific_name: "Sequoia sempervirens"
+  family: "Cupressaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "The tallest type of tree in the world, growing as high as a 35-story building with a narrow, straight shape and reddish-brown spongy bark. Has flat, soft, leaf-like needles growing in a feather pattern and small round cones about the size of a grape."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Extremely tall tree with soft, flat needles in feather-like pattern; thick, spongy reddish-brown bark"
+    secondary_markers: "Small round woody cones about the size of a grape; narrow tree top with branches that point upward"
+    seasonal_markers: "Stays green all year; small cones ripen in fall; new growth in spring is lighter green"
+    similar_species_differentiation: "Unlike Giant Sequoia, has flat needles (not spiky) and much smaller cones; unlike Dawn Redwood, keeps its needles all year round (doesn't drop them in fall)"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles all year round"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Needles grow one by one, not in bunches"
+      
+      - feature_id: "NEEDLE-SHAPE-01"  # Flat needles
+        notes: "Needles are flat like tiny ribbons, not round or square"
+      
+      - feature_id: "BARK-COLOR-03"  # Red bark
+        notes: "Eye-catching reddish-brown bark"
+      
+      - feature_id: "BARK-TEXT-06"  # Fibrous bark
+        notes: "Thick, deeply grooved bark that feels spongy"
+      
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one straight main trunk"
+        exceptions: "Sometimes grows multiple trunks if damaged, or new trunks sprout from the base"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Usually grows 70-380+ feet tall, taller than any other kind of tree in the world"
+        exceptions: "Young trees or trees growing in bad spots may be shorter"
+      
+      - feature_id: "TREE-FORM-04"  # Columnar form
+        notes: "Usually has a narrow, straight shape like a tall column"
+        exceptions: "May become more irregular in shape when very old or damaged"
+      
+      - feature_id: "NEEDLE-FEAT-02"  # Soft flexible
+        notes: "Needles feel soft and bendy when touched"
+        exceptions: "Some needles may be slightly stiffer, especially older ones"
+      
+    sometimes_true:
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        conditions: "When new trunks grow from the base of old trees, after fire, or other damage"
+        notes: "Can grow multiple trunks from its base"
+      
+      - feature_id: "NEEDLE-FEAT-03"  # White lines below
+        conditions: "Underside of needles"
+        notes: "Needles may have whitish stripes on their undersides"
+      
+      - feature_id: "CONE-SIZE-01"  # Small cones
+        conditions: "Older trees"
+        notes: "Makes small woody cones about the size of a grape"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        conditions: "When needles are crushed"
+        notes: "Mild, earthy, somewhat sweet smell when needles are crushed"
+      
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all its needles in fall (unlike Dawn Redwood)"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Never has needles growing in pairs"
+      
+      - feature_id: "NEEDLE-ARRANGE-03"  # Needles in threes
+        notes: "Never has needles growing in groups of three"
+      
+      - feature_id: "NEEDLE-ARRANGE-04"  # Needles in fives
+        notes: "Never has needles growing in groups of five"
+      
+      - feature_id: "CONE-SIZE-03"  # Large cones
+        notes: "Never makes large cones (unlike Giant Sequoia with its golf-ball sized cones)"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Super tall tree with soft, feathery needles and spongy reddish-brown bark"
+    memorable_comparison: "The bark feels like a giant sponge, and the tree is so tall it can reach higher than a 30-story building!"
+    touch_tip: "Gently touch the bark - it feels soft and spongy, like you could squeeze it like a kitchen sponge"
+    smell_tip: "Crush a needle gently to smell a mild, sweet woodsy scent"
+    fun_fact: "Coast Redwoods can live for more than 2,000 years! That's older than almost anything built by humans. They're so good at surviving fires that they often live through forest fires that kill other trees. They can even grow new trunks from their base if the main trunk gets hurt!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the overall size. Is it an extremely tall tree with reddish-brown bark?"
+        yes_next: 2
+        no_next: "Probably not a Coast Redwood - try another evergreen tree"
+      - step: 2
+        instruction: "Touch the bark if you can reach it. Does it feel spongy and soft, with deep grooves?"
+        yes_next: 3
+        no_next: "Not a Coast Redwood - if the bark is flaky or hard, check other evergreen trees"
+      - step: 3
+        instruction: "Look at the needles. Are they flat, soft, and arranged like feathers?"
+        yes_next: 4
+        no_next: "Not a Coast Redwood - if needles grow in bunches or are tiny and overlapping, check other trees"
+      - step: 4
+        instruction: "Look for cones on the tree or ground. Are they small (about the size of a grape) and woody?"
+        yes_next: "You found a Coast Redwood!"
+        no_next: "If the cones are bigger than a ping pong ball, it might be a Giant Sequoia or another type of tree"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New growth appears at branch tips with lighter green color than older needles"
+      reproductive_activity: "Tiny pollen cones release yellow dust; female cones start forming"
+      identification_tips: "Look for the difference between fresh light green growth and older darker needles"
+      kid_friendly_tip: "In spring, look for bright green new growth at the tips of branches - it looks like the tree is growing little green fingers!"
+    
+    - season: "Summer" 
+      visual_changes: "New growth turns darker to match older needles; tree has full set of needles"
+      reproductive_activity: "Cones keep growing, staying green"
+      identification_tips: "Dark green color all over; small growing cones if you look closely"
+      kid_friendly_tip: "Summer is when the whole tree looks dark green, and tiny green cones start growing"
+    
+    - season: "Fall"
+      visual_changes: "Some older inside needles might turn yellow and fall; tree stays mostly green"
+      reproductive_activity: "Cones turn brown and open to drop seeds"
+      identification_tips: "Look for open brown cones and tiny seeds on the ground under the tree"
+      kid_friendly_tip: "In fall, the tiny cones open up and drop seeds smaller than a grain of rice!"
+    
+    - season: "Winter"
+      visual_changes: "Needles stay dark green; empty cones might stay on the tree"
+      reproductive_activity: "Tree rests; some cones might keep growing slowly"
+      identification_tips: "Reddish bark stands out in winter; stays green when other trees are bare"
+      kid_friendly_tip: "Even in winter, Coast Redwood stays green while other trees lose their leaves"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Spongy, reddish-brown bark"
+      reliability: "Very high"
+      visibility: "High - can see from a fair distance away"
+    - feature: "Flat, soft needles in feather-like patterns"
+      reliability: "High"
+      visibility: "Medium - need to look at branches up close"
+    - feature: "Small (grape-sized) round woody cones"
+      reliability: "High (when present)"
+      visibility: "Low - cones are often high up or hard to find"
+    - feature: "Super tall with straight, narrow shape"
+      reliability: "High"
+      visibility: "High - can see from far away"
+    
+  look_alike_species:
+    - species: "Giant Sequoia (Sequoiadendron giganteum)"
+      differences: "Giant Sequoia has spiky, prickly leaves (not flat needles); much bigger cones (golf ball sized); thicker trunk compared to height; grows in Sierra Nevada mountains, not along coast"
+      identification_tip: "If the needles are small and prickly (not flat and soft), and the cones are bigger than a golf ball, it's likely Giant Sequoia"
+    
+    - species: "Dawn Redwood (Metasequoia glyptostroboides)"
+      differences: "Dawn Redwood drops all its needles in fall; has needles growing opposite each other (Coast Redwood's alternate); usually not as tall; not native to California"
+      identification_tip: "If the tree drops all its needles in fall, it's Dawn Redwood (not Coast Redwood)"
+    
+    - species: "Douglas-fir (Pseudotsuga menziesii)"
+      differences: "Douglas-fir has special hanging cones with three-pointed 'mouse tails'; needles grow all around the branch rather than in flat rows; bark isn't as spongy or red"
+      identification_tip: "If the cones have little 'mouse tails' sticking out between the scales, it's Douglas-fir, not Redwood"
+    
+  cultural_significance:
+    - culture: "Coast Miwok"
+      physical_uses:
+        - "Used the wood to build houses with planks and canoes because it's straight and doesn't rot easily"
+        - "Took strips of bark to cover roofs and build shelters"
+        - "Used roots and fibers to make baskets because they're bendy and strong"
+      symbolic_meaning:
+        - "Saw the trees as symbols of long life since they're some of the oldest living things"
+        - "Believed the tree's height connected the earth and sky in their spiritual beliefs"
+    
+    - culture: "Yurok"
+      physical_uses:
+        - "Main building material for traditional houses, sweat lodges, and special ceremony buildings"
+        - "Made canoes from single big logs for fishing and traveling on water"
+        - "Used bark for roofs and to make rope"
+      symbolic_meaning:
+        - "Thought of the trees as living ancestors that watched their tribe's history"
+        - "Important in their creation stories and teachings about how all things are connected"
+        - "Trees with special shapes were used as sacred places for prayer and ceremonies"
+    
+    - culture: "Ohlone"
+      physical_uses:
+        - "Used the wood to build homes and storage buildings"
+        - "Made rope from bark fibers and sometimes clothing"
+        - "Used sticky sap and bark to treat skin problems as medicine"
+      symbolic_meaning:
+        - "Connected the trees with forever and staying strong through hard times"
+        - "Respected the trees as living beings with spirits"
+    
+  cultural_ecological_notes:
+    - "Creates special forest environments with unusual plants that grow in deep shade"
+    - "Fallen logs make important homes for many forest floor animals"
+    - "Tree tops support special communities of plants and animals, including some that live their whole lives in the treetops"
+    - "Needles catch fog and drip water to the ground, giving moisture to the surrounding forest, especially during dry summers"
+    
+  range_within_california:
+    - "Originally from a narrow strip along the coast from Oregon border down to Monterey County"
+    - "Usually found within about 30 miles of the coast where summer fog is common"
+    - "Most common in northern coast areas, especially Humboldt and Del Norte counties"
+    - "Likes protected valleys, north-facing hillsides, and places with moisture year-round"
+    
+  physical_characteristics:
+    height_range: "70-380+ feet tall (taller than any other tree type on Earth)"
+    growth_rate: "Grows fast, 2-6 feet per year in good conditions when young"
+    crown_spread: "30-90 feet wide when fully grown (as wide as a basketball court)"
+    lifespan: "1,200-2,200+ years (older than many ancient human civilizations)"
+    trunk_diameter: "10-22 feet across (wider than a car is long)"
+    root_system: "Shallow but spreads out wide; doesn't have a deep main root"
+    toxicity: "Not poisonous; some parts were used as medicine by Native Americans"
+    
+  conservation_status:
+    status: "Not endangered but people are concerned about protecting it; lost much habitat in the past"
+    threats:
+      - "Cutting down old-growth forests in the past (most big old trees are now protected)"
+      - "Building houses and developments in areas where they grow"
+      - "Climate change affecting fog patterns and rainfall"
+      - "Changes in forest fires - more intense fires now than in the past"
+    protection_efforts:
+      - "Many old redwood forests protected in state and national parks"
+      - "Conservation groups buying land with old-growth redwoods to protect them"
+      - "Scientists studying how climate change affects redwoods"
+      - "Better logging practices in younger redwood forests"
+    
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: NEEDLE-SHAPE-01"  # Flat needles
+      - "feature_id: BARK-COLOR-03"  # Red bark
+    confirmation_features:
+      - "feature_id: BARK-TEXT-06"  # Fibrous bark
+      - "feature_id: TREE-SIZE-03"  # Tall tree
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-03", "TREE-FORM-04"]  # Tall tree, columnar form
+      - distance: "from_nearby"
+        features_to_check: ["BARK-COLOR-03", "BARK-TEXT-06"]  # Red bark, fibrous texture
+      - distance: "close_inspection"
+        features_to_check: ["NEEDLE-SHAPE-01", "CONE-SIZE-01"]  # Flat needles, small cones
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["NEEDLE-SHAPE-01", "BARK-COLOR-03", "BARK-TEXT-06"]
+        notes: "New light green growth stands out against older darker needles"
+      summer:
+        reliability: "High"
+        key_features: ["NEEDLE-SHAPE-01", "BARK-COLOR-03", "TREE-SIZE-03"]
+        notes: "Even dark green color throughout the tree"
+      fall:
+        reliability: "High" 
+        key_features: ["LEAF-TYPE-02", "BARK-COLOR-03", "CONE-SIZE-01"]
+        notes: "Brown open cones visible; stays green while other trees change color"
+      winter:
+        reliability: "Very high"
+        key_features: ["LEAF-TYPE-02", "BARK-COLOR-03", "BARK-TEXT-06"]
+        notes: "Green needles stand out when trees that lose their leaves are bare"
+    misidentification_risks:
+      - "Giant Sequoia - similar red bark but has spiky leaves and bigger cones; grows in mountains not coast"
+      - "Dawn Redwood - looks similar but drops all its needles in fall"
+      - "Douglas-fir - can be very tall too but has different bark and cones with 'mouse tails'"
+      
+  propagation_information:
+    seed_collection: "Collect brown cones in fall; dry in paper bags to get the tiny seeds out"
+    germination: "Seeds don't grow well; best planted fresh on damp soil and not covered"
+    planting_tips: "Likes cool, damp conditions with some shade when young; needs protection from dry winds"
+    growth_notes: "Can also grow from cuttings, which works better than growing from seeds"
+    
+  wildlife_value:
+    food_source:
+      - "Seeds eaten by small birds and animals, but not a major food source because the seeds are so tiny"
+      - "Animals rarely eat the needles because they don't taste good"
+    habitat_provided:
+      - "Old trees provide important nesting spots for endangered birds like marbled murrelets and spotted owls"
+      - "Thick tree cover makes the forest floor cool and damp, perfect for frogs and salamanders"
+      - "Fallen logs create homes for salamanders, bugs, and small animals"
+      - "Cracks and holes in the bark give shelter to bats, insects, and birds"
+    ecosystem_role: "Super important tree that creates unique forest environments; catches fog on its needles which drips to the ground, adding water to the ecosystem"

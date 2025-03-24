@@ -1,0 +1,298 @@
+tree:
+  common_name: "California Buckeye"
+  scientific_name: "Aesculus californica"
+  family: "Sapindaceae"
+  
+  # Basic summary information
+  summary: "A distinctive deciduous tree or large shrub with palmately compound leaves having 5-7 leaflets arranged like fingers on a hand. It produces showy, fragrant white flower spikes in spring and large, pear-shaped seed pods containing smooth brown seeds (buckeyes)."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Palmately compound leaves with 5-7 leaflets arranged like fingers on a hand; smooth gray bark"
+    secondary_markers: "Showy white flower clusters in spring; large pear-shaped seed pods with big, shiny seeds in fall"
+    seasonal_markers: "Loses leaves early in summer during drought; striking white flower spikes in spring; bare branches with hanging seed pods in late summer and fall"
+    similar_species_differentiation: "Only buckeye species native to California; distinctive early summer leaf drop while other deciduous trees still have leaves"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves, often in summer before other deciduous trees"
+        
+      - feature_id: "LEAF-COMPLEX-03"  # Compound palmate
+        notes: "Leaves divided into 5-7 leaflets all originating from one point, like fingers on a hand"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves grow in pairs, directly across from each other on branches"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Produces large, upright clusters of fragrant white flowers"
+      
+      - feature_id: "FRUIT-TYPE-07"  # Drupes
+        notes: "Produces large pear-shaped seed pods containing 1-3 large, smooth, shiny brown seeds"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Native and endemic to California"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        notes: "Highly adapted to California's dry summers by dropping leaves early"
+      
+      - feature_id: "ECO-SAFETY-01"  # Poisonous parts
+        notes: "Seeds, leaves, and flowers contain toxic compounds, especially to honeybees"
+
+    usually_true:
+      # Features that are primarily true, but have notable exceptions
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        notes: "Often grows with multiple trunks or a large, shrubby form"
+        exceptions: "Can sometimes develop a single main trunk, especially in open settings"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Usually grows 15-40 feet tall"
+        exceptions: "May be smaller and more shrub-like in poor conditions"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Typically has smooth gray bark"
+        exceptions: "Can develop some shallow fissures with age"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Typically has a broad, rounded crown"
+        exceptions: "May be more irregular in dense settings or on slopes"
+
+    sometimes_true:
+      # Features that vary with age, season, or conditions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        conditions: "Some mature specimens in open conditions"
+        notes: "Can develop a single main trunk in favorable conditions"
+      
+      - feature_id: "FLOWER-TIME-01"  # Spring flowering
+        conditions: "Spring season (April to May)"
+        notes: "Produces showy flower clusters in spring"
+      
+      - feature_id: "WINTER-FEAT-02"  # Persistent fruits
+        conditions: "Fall through winter"
+        notes: "Empty seed pods may remain on branches through winter"
+      
+      - feature_id: "HABITAT-LOC-02"  # Mountain habitat
+        conditions: "Lower mountain slopes"
+        notes: "Can be found in foothill woodlands and lower mountains"
+      
+      - feature_id: "LEAF-FALL-05"  # Brown fall color
+        conditions: "During summer drought"
+        notes: "Leaves often turn brown rather than colorful before dropping"
+      
+      - feature_id: "HABITAT-WATER-03"  # Dry slope habitat
+        conditions: "Common growing site"
+        notes: "Often found on dry canyon slopes and hillsides"
+
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops leaves, never evergreen"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has compound broadleaves, not needles"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Produces seed pods, not cones"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Has palmately compound leaves, not pinnate"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Leaves with 5-7 leaflets all spreading from one point, like fingers on a hand"
+    memorable_comparison: "Its flower clusters look like white candles standing up all over the tree in spring, and its seeds look like smooth brown chestnuts"
+    touch_tip: "Feel the smooth, leathery leaves and, in fall, the super smooth, shiny brown seeds that look like polished wood"
+    smell_tip: "In spring, carefully smell the sweet fragrance of the white flower clusters (but don't touch the flowers to your face)"
+    fun_fact: "California Buckeye is a time traveler among trees! It wakes up super early in spring with bright green leaves, then goes to sleep early by dropping its leaves in summer when it's hot and dry - while other trees are still wide awake with green leaves. The big shiny seeds were carried by Native American kids as lucky charms, and they feel cool and smooth in your pocket!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "Look at the leaves. Do they have 5-7 leaflets all spreading out from one point like fingers on a hand?"
+        yes_next: 2
+        no_next: "Not a California Buckeye - check trees with different leaf patterns"
+      - step: 2
+        instruction: "In spring, does it have tall clusters of white flowers standing up like candles? Or in summer, is it already dropping its leaves when other trees are still green?"
+        yes_next: 3
+        no_next: "Might not be a California Buckeye - check for other trees with hand-like leaves"
+      - step: 3
+        instruction: "In late summer or fall, does it have large, pear-shaped pods with big, shiny brown seeds inside that look like chestnuts?"
+        yes_next: "You found a California Buckeye!"
+        no_next: "If it has different fruits or no fruits visible, check the bark - California Buckeye has fairly smooth gray bark"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Among first trees to leaf out with bright green, palmately compound leaves; later develops showy spikes of fragrant white flowers"
+      reproductive_activity: "Flowers bloom, attracting native insects but potentially harmful to honeybees"
+      identification_tips: "Very distinctive with fresh green hand-like leaves and tall, candle-like white flower clusters"
+      kid_friendly_tip: "In spring, look for the leaflets arranged like a hand and pretty white flower bunches that stand up like candles"
+    
+    - season: "Summer" 
+      visual_changes: "Leaves often turn brown and drop by mid to late summer; green seed pods developing"
+      reproductive_activity: "Seed pods grow and develop through summer"
+      identification_tips: "Distinctive for losing leaves in summer while other deciduous trees remain green; developing green pods visible"
+      kid_friendly_tip: "By summer, the leaves often turn brown and drop off - it goes to sleep early while other trees stay awake!"
+    
+    - season: "Fall"
+      visual_changes: "Leafless with tan or brown seed pods that split open to reveal large, smooth brown seeds"
+      reproductive_activity: "Pods split open, releasing seeds"
+      identification_tips: "Distinctive pods and large, shiny seeds; often already leafless for months"
+      kid_friendly_tip: "In fall, look for the split-open pods with big, smooth brown seeds that look like shiny chestnuts"
+    
+    - season: "Winter"
+      visual_changes: "Remains leafless; some pods may persist; gray bark and opposite branching pattern visible"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Gray bark, opposite branching pattern, and sometimes persistent empty seed pods"
+      kid_friendly_tip: "In winter, look for the smooth gray bark and branches that grow in pairs across from each other"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Palmately compound leaves with 5-7 leaflets"
+      reliability: "Very high"
+      visibility: "Easy - visible during growing season"
+    - feature: "Opposite leaf arrangement"
+      reliability: "High"
+      visibility: "Medium - need to look at branching pattern"
+    - feature: "Early leaf drop (often by mid-summer)"
+      reliability: "High"
+      visibility: "Very noticeable in summer landscape"
+    - feature: "Tall white flower clusters in spring"
+      reliability: "Very high (when present)"
+      visibility: "Easy - visible from a distance"
+    - feature: "Large, pear-shaped seed pods"
+      reliability: "High"
+      visibility: "Easy - visible late summer through fall"
+    - feature: "Smooth, shiny brown seeds"
+      reliability: "Very high (when present)"
+      visibility: "Easy - distinctive when pods split open"
+    
+  look_alike_species:
+    - species: "Ohio Buckeye (Aesculus glabra)"
+      differences: "Not native to California; has yellower flowers and more pointed leaflets"
+      identification_tip: "California Buckeye has whiter flowers and grows wild only in California"
+    - species: "Horse Chestnut (Aesculus hippocastanum)"
+      differences: "Horse Chestnut is a larger tree with larger leaves, spiky (not smooth) seed pods, and doesn't drop leaves in summer"
+      identification_tip: "Horse Chestnut keeps its leaves all summer and has spiny seed pods; California Buckeye has smooth pods and drops leaves early"
+    
+  cultural_ecological_notes:
+    - "Early summer leaf drop is an adaptation to California's dry summers, conserving water"
+    - "Flowers provide nectar for native butterflies, moths, and hummingbirds"
+    - "Toxic compounds in nectar can be harmful to non-native honeybees"
+    - "Seeds were used by Native Americans after special processing to remove toxins"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Miwok"
+      physical_uses:
+        - "Crushed seeds and plant parts to stun fish in small streams for easier catching"
+        - "Leached and processed seeds as emergency food during food shortages"
+        - "Used branches for certain tools and implements"
+      symbolic_meaning:
+        - "Seeds carried as lucky objects and used in games"
+        - "Tree's adaptation to drought symbolized resilience in difficult times"
+        - "Early flowering represented renewal and seasonal change"
+    
+    - culture: "Pomo"
+      physical_uses:
+        - "Created fishing implements using buckeye wood"
+        - "Processed seeds through extended leaching to remove toxins for food"
+        - "Made soap-like cleansers from certain plant parts"
+      symbolic_meaning:
+        - "Used distinctive seasonal patterns in stories about natural cycles"
+        - "Smooth seeds used in some ceremonies and as game pieces"
+        - "Early leaf drop featured in teachings about preparation and adaptation"
+    
+    - culture: "Costanoan/Ohlone"
+      physical_uses:
+        - "Used seeds and plant materials to stun fish in small pools"
+        - "Created tools from the hard wood"
+        - "Processed seeds through multiple leachings for emergency food"
+      symbolic_meaning:
+        - "Featured in stories about resource management through changing seasons"
+        - "Seeds carried as lucky objects, especially by children"
+        - "Early flowering used as seasonal marker for traditional calendar"
+    
+    - culture: "Early California Settlers"
+      physical_uses:
+        - "Sometimes used as an ornamental tree around homesteads"
+        - "Wood occasionally used for small carved items"
+        - "Learned fish-stunning techniques from indigenous peoples"
+      symbolic_meaning:
+        - "Represented the unique flora of their new California home"
+        - "Seeds sometimes kept as curiosities and natural toys for children"
+    
+  range_within_california:
+    - "Endemic to California - doesn't grow naturally outside the state"
+    - "Found in the Coast Ranges, Sierra Nevada foothills, and Central Valley"
+    - "Common in oak woodlands, mixed woodlands, and chaparral edges"
+    - "Typically found below 4,000 feet elevation"
+    - "Often grows in dry canyons, on slopes, and near seasonal streams"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "15-40 feet, occasionally taller"
+    growth_rate: "Moderate"
+    crown_spread: "30-60 feet at maturity"
+    lifespan: "Up to 250 years"
+    trunk_diameter: "Can reach 1-2 feet in diameter"
+    root_system: "Deep taproot with spreading lateral roots"
+    toxicity: "All parts contain toxic glycosides; seeds, flowers, and leaves are poisonous if eaten"
+  
+  conservation_status:
+    status: "Secure within its range"
+    threats: 
+      - "Habitat loss to development in foothill areas"
+      - "Climate change may affect flowering times and pollinator relationships"
+      - "Some woodland conversion to agriculture"
+    protection_efforts:
+      - "Protected in many parks and natural areas"
+      - "Increasingly used in native plant landscaping"
+      - "Some oak woodland conservation efforts benefit California Buckeye"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-COMPLEX-03"  # Compound palmate
+      - "feature_id: LEAF-ARRANGE-02"  # Opposite
+    confirmation_features:
+      - "feature_id: FLOWER-SIZE-01"  # Showy flowers
+      - "feature_id: FRUIT-TYPE-07"  # Drupes
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-TYPE-01", "FLOWER-SIZE-01"]  # Deciduous, showy flowers
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-COMPLEX-03", "LEAF-ARRANGE-02"]  # Compound palmate, opposite
+      - distance: "close_inspection"
+        features_to_check: ["BARK-TEXT-01", "FRUIT-TYPE-07"]  # Smooth bark, drupes
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["LEAF-COMPLEX-03", "FLOWER-SIZE-01"]  # Compound palmate, showy flowers
+        notes: "Distinctive white flower clusters and fresh green palmately compound leaves"
+      
+      summer:
+        reliability: "Very high" 
+        key_features: ["LEAF-TYPE-01", "FRUIT-TYPE-07"]  # Deciduous, drupes
+        notes: "Early leaf drop distinctive; green developing seed pods"
+      
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-01", "FRUIT-TYPE-07"]  # Deciduous, drupes
+        notes: "Leafless with distinctive seed pods containing large shiny seeds"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["LEAF-TYPE-01", "BARK-TEXT-01", "WINTER-FEAT-02"]  # Deciduous, smooth bark, persistent fruits
+        notes: "Leafless with smooth gray bark; sometimes persistent empty seed pods"
+    misidentification_risks: 
+      - "No other California native trees have similar palmate leaf arrangement"
+      - "Introduced horse chestnuts and buckeyes have similar leaves but different fruit and don't drop leaves in summer"
+      - "Young California Buckeyes without flowers or fruit might be confused with certain shrubs"
+  
+  wildlife_value:
+    - "Native butterfly and moth caterpillars may feed on leaves"
+    - "Native specialist pollinators visit flowers, though toxic to honeybees"
+    - "Seeds occasionally eaten by squirrels and other animals despite toxicity"
+    - "Provides shade and habitat in otherwise dry woodland environments"
+    - "Part of oak woodland ecosystems important to many wildlife species"

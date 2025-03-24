@@ -1,0 +1,224 @@
+tree:
+  common_name: "Atlas Cedar"
+  scientific_name: "Cedrus atlantica"
+  family: "Pinaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A majestic evergreen tree with blue-green needles growing in tufts along the branches. It has distinctive upright barrel-shaped cones that stand like candles and develops a flat-topped crown when mature."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Blue-green needles in clusters (rosettes) on short shoots; upright barrel-shaped cones"
+    secondary_markers: "Needles are stiff and somewhat prickly; older trees develop a distinctive flat-topped crown"
+    seasonal_markers: "Little seasonal change; stays evergreen with new growth appearing lighter green in spring"
+    similar_species_differentiation: "Stiffer needles and more upright branches than Deodar Cedar; needles grow in clusters unlike pines, which grow in bundles"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles year-round for several years before shedding"
+      
+      - feature_id: "NEEDLE-ARRANGE-06"  # Clustered needles
+        notes: "Needles grow in tufts or clusters on short shoots"
+      
+      - feature_id: "CONE-POS-01"  # Upright cones
+        notes: "Cones stand upright on the branches like candles"
+      
+      - feature_id: "CONE-SHAPE-02"  # Elongated cones
+        notes: "Cones are barrel-shaped, about 2-4 inches long"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with one main trunk"
+        exceptions: "Can sometimes develop multiple leaders if the main leader is damaged"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Young trees have a symmetrical conical shape"
+        exceptions: "Older trees often develop a flat top and more spreading form"
+      
+      - feature_id: "LEAF-COLOR-03"  # Blue-green
+        notes: "Needles typically have a blue-green color"
+        exceptions: "Some cultivated varieties can have deeper blue or greener needles"
+    
+    sometimes_true:
+      - feature_id: "TREE-FORM-07"  # Flat topped
+        conditions: "Mature trees, usually over 30 years old"
+        notes: "Older trees develop a distinctive flat or slightly rounded top instead of pointed"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Older trees"
+        notes: "Bark becomes rough and fissured with age"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees"
+        notes: "Bark is relatively smooth on young trees"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all needles seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Unlike pines, needles are not in bundles of specific numbers but in tufts"
+      
+      - feature_id: "CONE-POS-02"  # Hanging cones
+        notes: "Cones never hang downward like most pine or spruce cones"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Blue-green needles growing in tufts like little stars, with cones standing up like candles"
+    memorable_comparison: "Its needles grow in pom-poms and the cones stand up straight instead of hanging down"
+    touch_tip: "Careful! The needles are stiff and can poke - gently touch the sides of needles rather than the tips"
+    smell_tip: "Crush a needle gently to smell a woody, slightly sweet scent like a forest after rain"
+    fun_fact: "Atlas Cedars can live for over 1,000 years! The oldest ones grow in the Atlas Mountains of Morocco, which is how they got their name."
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at how the needles grow. Do they come out in little tufts or clusters along the branches?"
+        yes_next: 2
+        no_next: "If the needles grow singly or in bundles of exact numbers (like 2 or 5), it's not an Atlas Cedar"
+      - step: 2
+        instruction: "Look at the color of the needles. Are they blue-green or silvery-blue rather than dark green?"
+        yes_next: 3
+        no_next: "If they're dark green without any blue tint, it might be a different cedar species"
+      - step: 3
+        instruction: "If there are cones, look at how they're positioned. Do they stand upright on the branches instead of hanging down?"
+        yes_next: 4
+        no_next: "If the cones hang down, it's not an Atlas Cedar - try checking for Deodar Cedar or another conifer"
+      - step: 4
+        instruction: "Look at the overall tree shape. If it's older, does it have a flat top rather than a pointy top?"
+        yes_next: "You found an Atlas Cedar!"
+        no_next: "It could still be a young Atlas Cedar - check other features like needle color and arrangement"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New growth appears at branch tips as lighter green needles"
+      reproductive_activity: "Pollen cones may appear, releasing yellow pollen"
+      identification_tips: "The contrast between new growth and older needles is noticeable"
+      kid_friendly_tip: "Look for lighter green, soft new needles at the tips in spring"
+    
+    - season: "Summer" 
+      visual_changes: "Consistent blue-green color throughout with mature needles"
+      reproductive_activity: "Female cones begin to develop, standing upright"
+      identification_tips: "Developing cones become more visible"
+      kid_friendly_tip: "Young cones look like little green eggs standing up on branches"
+    
+    - season: "Fall"
+      visual_changes: "No color change; remains blue-green"
+      reproductive_activity: "Cones continue to mature but won't release seeds yet"
+      identification_tips: "No fall color change helps distinguish from deciduous trees"
+      kid_friendly_tip: "While other trees change color, Atlas Cedar stays blue-green"
+    
+    - season: "Winter"
+      visual_changes: "Remains evergreen; no change in appearance"
+      reproductive_activity: "Dormant; cones remain closed during winter"
+      identification_tips: "Distinctive silhouette and upright cones visible against winter sky"
+      kid_friendly_tip: "Look for the tree shape against the sky - flat top on older trees is easy to spot"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Needles growing in tufts or clusters (not in specific numbered bundles)"
+      reliability: "Very high"
+      visibility: "Easy to observe"
+    - feature: "Blue-green needle color"
+      reliability: "High"
+      visibility: "Visible from distance"
+    - feature: "Upright barrel-shaped cones (when present)"
+      reliability: "Very high"
+      visibility: "Need to look closely to spot"
+    - feature: "Flat-topped crown on mature trees"
+      reliability: "Medium"
+      visibility: "Visible on older trees"
+    
+  look_alike_species:
+    - species: "Deodar Cedar (Cedrus deodara)"
+      differences: "Deodar Cedar has drooping branch tips and softer, longer needles; Atlas Cedar has stiffer needles and more upright branch tips"
+      identification_tip: "Look at the branch tips - if they droop downward like they're tired, it's likely Deodar Cedar"
+    
+    - species: "Lebanon Cedar (Cedrus libani)"
+      differences: "Very similar, but Lebanon Cedar often has darker green needles and typically develops a flat top earlier"
+      identification_tip: "These are hard to tell apart - Lebanon Cedar is less commonly planted in California"
+  
+  cultural_ecological_notes:
+    - "Sacred tree in North African cultures where it's native"
+    - "Wood historically used for temples and palaces"
+    - "Popular ornamental and shade tree in parks and large gardens"
+    - "Can tolerate drought once established, making it suitable for California's climate"
+    
+  range_within_california:
+    - "Not native to California but widely planted as an ornamental"
+    - "Thrives in Mediterranean climate regions of the state"
+    - "Often planted in parks, campuses, and large gardens throughout California"
+    
+  physical_characteristics:
+    height_range: "40-60 feet tall in cultivation (up to 100 feet in perfect conditions)"
+    growth_rate: "Moderate growth of about 1-2 feet per year"
+    crown_spread: "30-40 feet wide when mature"
+    lifespan: "Up to 1,000 years in native habitat; 100-150 years in landscape"
+    trunk_diameter: "3-5 feet across when mature"
+    root_system: "Deep taproot with spreading lateral roots"
+    toxicity: "Non-toxic to humans and animals"
+    
+  conservation_status:
+    status: "Vulnerable in native range in North Africa"
+    threats: "Climate change, logging, and fire in native habitats"
+    protection_efforts: "Protected in national parks in Morocco and Algeria"
+  
+  kid_friendly_cultural_significance:
+    - culture: "Berber people of North Africa"
+      physical_uses:
+        - "Used the strong wood to build homes and important buildings"
+        - "Made furniture and tools from the durable wood"
+        - "Created medicine from the aromatic needles for chest colds"
+      symbolic_meaning:
+        - "Seen as a symbol of strength and endurance because of its long life"
+        - "The tree's ability to withstand harsh mountain conditions represented resilience"
+    
+    - culture: "Modern California gardeners"
+      physical_uses:
+        - "Planted for shade in parks and large yards"
+        - "Used as a landmark tree or focal point in landscape design"
+        - "Provides shelter and food for birds and wildlife"
+      symbolic_meaning:
+        - "Represents connection to ancient Mediterranean landscapes"
+  
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: NEEDLE-ARRANGE-06"  # Clustered needles
+      - "feature_id: CONE-POS-01"  # Upright cones
+    confirmation_features:
+      - "feature_id: LEAF-COLOR-03"  # Blue-green
+      - "feature_id: TREE-FORM-07"  # Flat topped (mature trees)
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-TYPE-02", "TREE-FORM-01", "TREE-FORM-07"]  # Evergreen, pyramidal or flat-topped
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-ARRANGE-06", "LEAF-COLOR-03"]  # Clustered needles, blue-green
+      - distance: "close_inspection"
+        features_to_check: ["CONE-POS-01", "CONE-SHAPE-02"]  # Upright cones, elongated barrel shape
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "NEEDLE-ARRANGE-06", "LEAF-COLOR-03"]
+        notes: "New growth provides good color contrast"
+      summer:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-06", "CONE-POS-01"]
+        notes: "Developing cones are visible"
+      fall:
+        reliability: "High" 
+        key_features: ["LEAF-TYPE-02", "NEEDLE-ARRANGE-06"]
+        notes: "Evergreen nature stands out as deciduous trees change color"
+      winter:
+        reliability: "Very high"
+        key_features: ["LEAF-TYPE-02", "TREE-FORM-07", "CONE-POS-01"]
+        notes: "Distinctive silhouette and upright cones visible against winter sky"
+    misidentification_risks:
+      - species: "Deodar Cedar (Cedrus deodara)"
+        distinguishing_features: "Atlas Cedar has stiffer needles and more upright branches vs. Deodar's drooping branches"
+      - species: "Lebanon Cedar (Cedrus libani)"
+        distinguishing_features: "Very similar species - Atlas Cedar often has bluer needles"

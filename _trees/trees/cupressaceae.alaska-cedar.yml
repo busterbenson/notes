@@ -1,0 +1,334 @@
+tree:
+  common_name: "Alaska-cedar"
+  scientific_name: "Callitropsis nootkatensis"
+  family: "Cupressaceae"
+  
+  # Basic summary information
+  summary: "A tall, narrow evergreen tree with droopy branch tips that hang down and tiny overlapping leaves in flat layers. The bark is thin, peels in strips, and is grayish-brown. Native to the Pacific Northwest and planted in gardens in northern California."
+  
+  # Identification priority
+  # This section helps guide the decision tree by highlighting the most distinctive features
+  identification_path:
+    primary_markers: "Droopy branch tips that look like they're hanging down; strong woody smell when leaves are crushed"
+    secondary_markers: "Tiny blue-green overlapping leaves in flat layers; shreddy gray-brown bark on older trees"
+    seasonal_markers: "Stays green all year; small round seed cones on older trees"
+    similar_species_differentiation: "Unlike Port Orford-cedar, has droopy branch tips; unlike Western Redcedar, has rounder cones and bluer leaves"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change - only include feature_id and species-specific notes
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its leaves all year round without big changes"
+        
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        notes: "Tiny overlapping leaves that look like fish scales in flat layers"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Small leaves grow in pairs facing each other on the twigs"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        notes: "Strong, spicy woody smell when leaves are crushed"
+      
+      - feature_id: "TREE-FORM-03"  # Weeping form
+        notes: "Branch tips droop down like they're tired or sad"
+      
+      - feature_id: "BRANCH-ANGLE-03"  # Drooping branches
+        notes: "Branches hang downward, especially at the tips"
+      
+      - feature_id: "NEEDLE-FEAT-03"  # White lines below
+        notes: "Leaves have whitish or bluish marks on their undersides"
+      
+      - feature_id: "NEEDLE-ARRANGE-08"  # Flattened spray needles
+        notes: "Leaves grow in flat, fan-like patterns"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Grown trees reach 60-100 feet tall (as high as a 10-story building)"
+      
+      - feature_id: "ECO-GROWTH-02"  # Slow growing
+        notes: "Grows slowly, taking many years to get big"
+      
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        notes: "Grayish-brown bark that gets shreddy as it gets older"
+      
+      - feature_id: "ECO-LIFE-01"  # Long-lived
+        notes: "Can live for over 1,000 years in the best places - older than 10 grandparents!"
+      
+      - feature_id: "ECO-WILD-01"  # Important for wildlife
+        notes: "Gives homes and food to birds and small animals"
+      
+      - feature_id: "ECO-USE-03"  # Valuable wood properties
+        notes: "Wood doesn't rot easily, so it's good for building and carving"
+    
+    usually_true:
+      # Features that are primarily true but may have exceptions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk"
+        exceptions: "Sometimes gets multiple trunks if it's damaged or growing in a tough spot"
+    
+    sometimes_true:
+      # Features that vary with age, season, or conditions - include feature_id, conditions, and notes
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees that are still growing"
+        notes: "Bark is smoother when the tree is young"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        conditions: "Older trees"
+        notes: "Bark peels in strips and looks shreddy on older trees"
+      
+      - feature_id: "BARK-TEXT-06"  # Fibrous bark
+        conditions: "Older trees"
+        notes: "Bark gets stringy and breaks into thin strips as the tree ages"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        conditions: "Young trees growing in open spaces"
+        notes: "Young trees look like Christmas trees with a triangle shape"
+      
+      - feature_id: "CONE-SIZE-01"  # Small cones
+        conditions: "Older trees when making seeds"
+        notes: "Makes small round cones about the size of a marble"
+      
+      - feature_id: "CONE-SHAPE-01"  # Round cones
+        conditions: "Older trees when making seeds"
+        notes: "Cones are round like balls rather than long"
+      
+      - feature_id: "LEAF-COLOR-03"  # Blue-green
+        conditions: "More blue in young trees and shady spots"
+        notes: "Leaves may look bluish-green, especially new growth"
+      
+      - feature_id: "HABITAT-LOC-01"  # Coastal habitat
+        conditions: "When planted in gardens in California"
+        notes: "Can grow near the coast when people plant it"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "Only in gardens, not wild"
+        notes: "Found in northern California in gardens and parks where people plant it"
+      
+      - feature_id: "GEO-ELEV-02"  # Mid-elevation
+        conditions: "When planted in California"
+        notes: "Usually found in lower mountain areas in California"
+      
+      - feature_id: "ECO-ADAPT-03"  # Fire resistant
+        conditions: "Older trees with thick bark"
+        notes: "Older trees can survive some fires because of their bark"
+      
+      - feature_id: "ECO-USE-02"  # Medicinal uses
+        conditions: "Traditional Native American uses"
+        notes: "Native American tribes used parts of this tree as medicine"
+    
+    never_true:
+      # Features explicitly absent - include only those important for differentiation
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all its leaves in fall"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Only makes small cones, not colorful flowers"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Never has thorns or sharp points on branches"
+      
+      - feature_id: "CONE-SIZE-03"  # Large cones
+        notes: "Never makes big cones; cones stay small (smaller than a ping pong ball)"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Has tiny overlapping leaves, not paired needle-like leaves"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Not originally from California; only found in gardens where people plant it"
+      
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        notes: "Doesn't usually grow with multiple trunks"
+      
+      - feature_id: "BARK-COLOR-03"  # Red bark
+        notes: "Bark is gray-brown, never red (unlike Western Redcedar)"
+  
+  # Kid-friendly identification - expanded with open-ended, creative descriptions
+  kid_friendly_identification:
+    primary_identifier: "Drooping branch tips that look sad or sleepy"
+    memorable_comparison: "Looks like a Christmas tree that's taking a nap with its branches hanging down like droopy arms"
+    touch_tip: "The leaves feel like tiny overlapping fish scales or dragon skin"
+    smell_tip: "Crush a small leaf to smell a spicy scent, like a Christmas tree but stronger and with a hint of ginger"
+    fun_fact: "Alaska-cedar's wood is so strong that fallen trees can stay solid for hundreds of years! Trees that fell over before your grandparents were born can still be found in forests today."
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the shape. Does it have droopy branch tips like it's tired?"
+        yes_next: 2
+        no_next: "Not an Alaska-cedar - try looking for other trees with branches that stick straight out"
+      - step: 2
+        instruction: "Look closely at the leaves. Are they tiny flat pieces that overlap like fish scales?"
+        yes_next: 3
+        no_next: "Not an Alaska-cedar - check if it has needle-like leaves instead"
+      - step: 3
+        instruction: "Carefully crush a small leaf and smell. Does it have a spicy smell?"
+        yes_next: "You found an Alaska-cedar!"
+        no_next: "Might be another type of cedar - check if the branches point up instead of down"
+  regional_notes:
+    - region: "Northern California"
+      notes: "Planted in parks and gardens; not found growing wild"
+      locations: "Often found in bigger gardens and parks with evergreen tree collections"
+    - region: "Pacific Northwest"
+      notes: "Native to coastal Alaska and the Pacific Northwest where it grows well in cool, damp forests"
+      locations: "Common along the coast from Oregon to Alaska"
+      
+  confirmation_checklist:
+    - feature: "Tiny overlapping leaves in flat layers"
+      reliability: "High"
+      visibility: "Medium - need to look closely"
+    - feature: "Strong, spicy wood smell when leaves are crushed"
+      reliability: "Very high"
+      visibility: "Need to crush a leaf to check"
+    - feature: "Branch tips that droop down"
+      reliability: "Very high"
+      visibility: "Easy to see from far away"
+    - feature: "Small, round cones (if present)"
+      reliability: "Medium"
+      visibility: "Need to look closely"
+    
+  look_alike_species:
+    - species: "Port Orford-cedar (Chamaecyparis lawsoniana)"
+      differences: "Port Orford-cedar has branches that point up and bluer leaves; cones are a bit bigger"
+      identification_tip: "If the branches point up instead of drooping down, it's likely Port Orford-cedar"
+    - species: "Western Redcedar (Thuja plicata)"
+      differences: "Western Redcedar has branches that stick out sideways, redder shreddy bark, and butterfly-shaped white marks under the leaves"
+      identification_tip: "Western Redcedar's branches stick out flat, not drooping down, and its bark is more reddish"
+      
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New growth shows up at branch tips with lighter green color"
+      reproductive_activity: "Tiny yellow pollen cones release yellow dust"
+      identification_tips: "Look for the difference between new lighter growth and older darker leaves"
+      kid_friendly_tip: "Look for tiny yellow bumps at the tips of branches that release yellow powder (this is pollen that helps the tree make baby trees)"
+    
+    - season: "Summer" 
+      visual_changes: "Even blue-green color all over the tree"
+      reproductive_activity: "Seed cones grow and start getting bigger"
+      identification_tips: "Blue-green color looks different from other evergreen trees"
+      kid_friendly_tip: "Notice how the blue-green color of the leaves looks different from other nearby trees"
+    
+    - season: "Fall"
+      visual_changes: "Stays green while other trees change color"
+      reproductive_activity: "Ripe cones open to drop seeds"
+      identification_tips: "Easy to spot when other trees are turning yellow and red"
+      kid_friendly_tip: "While other trees turn yellow and red and lose their leaves, Alaska-cedar stays the same green color"
+    
+    - season: "Winter"
+      visual_changes: "Keeps all its leaves but stops growing until spring"
+      reproductive_activity: "Resting, no cones growing or releasing pollen"
+      identification_tips: "Easier to spot when trees without year-round leaves are bare"
+      kid_friendly_tip: "Still has its green scaly leaves when other trees have lost all their leaves"
+      
+  cultural_ecological_notes:
+    - "Wood is special to Native Americans of the Pacific Northwest because it lasts a long time and is good for carving"
+    - "Used to make canoe paddles, tools with handles, and special ceremonial items"
+    - "Also called Yellow Cedar even though it's not a true cedar"
+    - "Gives homes and food to birds and small animals"
+    - "Grows so slowly that cutting down too many can harm the population"
+    
+  range_within_california:
+    - "Not originally from California but planted in northern parts of the state"
+    - "Likes cool, wet places with enough rain"
+    - "Usually found in lower mountain areas when planted in gardens"
+    - "Grows best near the coast in Northern California"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Tlingit"
+      physical_uses:
+        - "Carved the strong inner wood to make special masks, house posts, and canoe paddles that didn't rot in saltwater"
+        - "Burned wood shavings during cleansing ceremonies because of their nice spicy smell"
+        - "Made healing tea from the inner bark to help with coughs and breathing problems"
+        - "Wove strips of flexible bark into rain hats and baskets that kept water out"
+      symbolic_meaning:
+        - "The tree's long life made it a symbol of living forever and passing wisdom through generations"
+        - "Yellow-gold heart of the wood stood for wealth and spiritual richness"
+        - "Sweet-smelling smoke was thought to carry prayers up to the spirit world"
+        - "Straight-growing trunk represented living an honest and dignified life"
+    
+    - culture: "Haida"
+      physical_uses:
+        - "Made important ceremonial objects from the wood, which has straight grain and is easy to carve"
+        - "Used strips of inner bark to make rope and weaving materials"
+        - "Put soft inner bark on wounds and skin problems to help them heal"
+      symbolic_meaning:
+        - "Saw the tree as a living symbol of strength and protection"
+        - "Believed the wood could protect against harmful spirits"
+        - "Marked special sacred places with these trees for ceremonies"
+    
+    - culture: "Tsimshian"
+      physical_uses:
+        - "Made special tools from the wood because it doesn't rot easily"
+        - "Used bark in complex weaving and to keep bugs away from stored items"
+      symbolic_meaning:
+        - "Connected the tree with cleansing and purification"
+        - "Used in coming-of-age ceremonies to represent strength and toughness"
+        - "Used tree images in stories about overcoming hard times"
+    
+    - culture: "Northwest Coast (General)"
+      physical_uses:
+        - "Made special Chilkat ceremonial blankets using bark strips mixed with mountain goat wool"
+        - "Built special boxes from single pieces of wood bent into shape for keeping valuable things"
+      symbolic_meaning:
+        - "Tree stood for the connection between earth and sky in their understanding of the world"
+        - "Special patterns woven with cedar bark told family stories and histories"
+        - "Tree's ability to grow in tough coastal areas showed how to adapt to challenges"
+    
+  # Additional physical characteristics not captured in features
+  physical_characteristics:
+    height_range: "60–100 feet (as tall as a 10-story building)"
+    growth_rate: "Grows slowly"
+    crown_spread: "20-30 feet wide when fully grown (about as wide as a school bus is long)"
+    lifespan: "Can live over 1,000 years in the best places"
+    trunk_diameter: "Up to 5 feet across when fully grown (wider than a car tire)"
+    root_system: "Roots grow out wide but not too deep"
+    toxicity: "Not poisonous to people or animals"
+    
+  conservation_status:
+    status: "Near Threatened (at some risk of becoming endangered)"
+    threats: 
+      - "Climate change affecting where it can grow"
+      - "Many Alaska-cedars dying in parts of its native range"
+      - "Grows so slowly that it's hard to recover after fires or logging"
+    protection_efforts:
+      - "Scientists watching tree populations in Alaska and British Columbia"
+      - "Research on how to help the trees adapt to changing climate"
+      - "Collecting and saving seeds to preserve the species"
+    
+  # Decision tree mapping - helps with algorithm creation
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: LEAF-FORM-05"  # Scale-like leaves
+      - "feature_id: TREE-FORM-03"  # Weeping form
+      - "feature_id: BRANCH-ANGLE-03"  # Drooping branches
+    confirmation_features:
+      - "feature_id: SENSORY-SMELL-01"  # Aromatic leaves
+      - "feature_id: BARK-TEXT-03"  # Peeling bark
+      - "feature_id: BARK-TEXT-06"  # Fibrous bark
+      - "feature_id: NEEDLE-ARRANGE-08"  # Flattened spray needles
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-03", "LEAF-TYPE-02", "TREE-SIZE-03"]  # Weeping form, evergreen, tall tree
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-FORM-05", "LEAF-COLOR-03", "BRANCH-ANGLE-03", "BARK-TEXT-06"]  # Scale-like leaves, blue-green, drooping branches, fibrous bark
+      - distance: "close_inspection"
+        features_to_check: ["SENSORY-SMELL-01", "LEAF-ARRANGE-02", "NEEDLE-ARRANGE-08", "NEEDLE-FEAT-03"]  # Cedar scent, leaf arrangement, flattened sprays, white lines
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "LEAF-FORM-05", "TREE-FORM-03"]
+        notes: "New growth and yellow pollen cones help confirm identification"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-TYPE-02", "LEAF-FORM-05", "LEAF-COLOR-03"]
+        notes: "Blue-green color easier to see compared to other evergreen trees"
+      
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "LEAF-FORM-05", "TREE-FORM-03"]
+        notes: "Stands out when trees that lose leaves turn yellow and red"
+      
+      winter:
+        reliability: "Very high"
+        key_features: ["LEAF-TYPE-02", "TREE-FORM-03", "SENSORY-SMELL-01"]
+        notes: "Easier to spot the droopy shape when other trees have lost their leaves"
+    misidentification_risks: "Most often mixed up with Port Orford-cedar or Western Redcedar"

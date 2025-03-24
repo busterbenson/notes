@@ -1,0 +1,302 @@
+tree:
+  common_name: "California Black Oak"
+  scientific_name: "Quercus kelloggii"
+  family: "Fagaceae"
+  
+  # Basic summary information
+  summary: "A large deciduous oak with deeply lobed, shiny dark green leaves that turn beautiful gold to orange colors in fall. It has thick, dark, furrowed bark and produces large acorns with a deep cup."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Deciduous oak with large, deeply lobed, bristle-tipped leaves; dark, heavily furrowed bark"
+    secondary_markers: "Leaves turn gold to orange in fall; large acorns with deep, scaly cups"
+    seasonal_markers: "Vibrant fall color; drops all leaves in winter; produces acorns in fall"
+    similar_species_differentiation: "Unlike Live Oaks, loses leaves in winter; unlike Valley Oak, has shiny, bristle-tipped lobes on leaves"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves in fall"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple
+        notes: "Leaves are undivided, not compound"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves arranged alternately along branches"
+      
+      - feature_id: "LEAF-SHAPE-05"  # Lobed
+        notes: "Leaves have deep lobes with pointed, bristle tips"
+      
+      - feature_id: "FRUIT-TYPE-01"  # Acorns present
+        notes: "Produces large acorns with deep, scaly cups"
+      
+      - feature_id: "BARK-COLOR-06"  # Black bark
+        notes: "Dark brown to nearly black bark, especially on mature trees"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        notes: "Deeply furrowed bark with ridges"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Native to California mountains and foothills"
+      
+      - feature_id: "ECO-WILD-01"  # Important for wildlife
+        notes: "Acorns are critical food source for many wildlife species"
+
+    usually_true:
+      # Features that are primarily true, but have notable exceptions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with one main trunk"
+        exceptions: "May form multiple trunks after damage or in certain growing conditions"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Mature trees typically have a broad, rounded crown"
+        exceptions: "Shape may be more irregular in dense forests or on exposed sites"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Usually grows 30-80 feet tall"
+        exceptions: "May be shorter in poor conditions"
+      
+      - feature_id: "LEAF-FALL-03"  # Orange fall color
+        notes: "Typically turns orange to golden in autumn"
+        exceptions: "Fall color can vary from yellow to red depending on conditions"
+
+    sometimes_true:
+      # Features that vary with age, season, or conditions
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        conditions: "After fire or damage"
+        notes: "Can form multiple trunks, especially after disturbance"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Some trees or in certain years"
+        notes: "May turn more yellow than orange in some conditions"
+      
+      - feature_id: "LEAF-FALL-02"  # Red fall color
+        conditions: "Some trees or in certain years"
+        notes: "May develop reddish tones especially in certain conditions"
+      
+      - feature_id: "HABITAT-LOC-02"  # Mountain habitat
+        conditions: "Upper elevations of range"
+        notes: "Found in lower mountain forests and slopes"
+      
+      - feature_id: "GEO-ELEV-02"  # Mid elevation
+        conditions: "Typical elevation range"
+        notes: "Often found at middle elevations (1,000-5,000 feet)"
+      
+      - feature_id: "TREE-FORM-05"  # Irregular crown
+        conditions: "Trees in dense stands or exposed sites"
+        notes: "May have more irregular shape in crowded or exposed conditions"
+
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops leaves in winter, never evergreen"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has broad leaves, not needles"
+      
+      - feature_id: "LEAF-EDGE-05"  # Spiny
+        notes: "Has bristle tips on lobes, but not spiny edges like some evergreen oaks"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Produces acorns, not cones"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Large, shiny, deeply-cut leaves with bristle tips on the points"
+    memorable_comparison: "The leaves look like big hands with pointy fingers, and they turn Halloween colors (orange and gold) in fall"
+    touch_tip: "Feel how thick and shiny the leaves are - they're tough like leather"
+    smell_tip: "Crush a leaf gently to smell a mild oak scent, like a forest after rain"
+    fun_fact: "California Black Oak acorns were super important food for Native Americans, but they had to leach out the bitter-tasting tannins first. They did this by crushing the acorns and rinsing them many times with water in special sand basins. These oaks can live as long as 500 years - that's about 7 human lifetimes!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "Look at the leaves. Are they big (about as long as your hand) with deep cuts creating pointy lobes with little bristles at the tips?"
+        yes_next: 2
+        no_next: "Not a California Black Oak - check other oak trees with different leaf shapes"
+      - step: 2
+        instruction: "Does the tree lose all its leaves in winter? In fall, do the leaves turn golden or orange?"
+        yes_next: 3
+        no_next: "Not a California Black Oak - check evergreen oaks that keep their leaves year-round"
+      - step: 3
+        instruction: "Look at the bark. Is it dark (blackish-brown) and deeply grooved, like dark puzzle pieces?"
+        yes_next: "You found a California Black Oak! If it's fall, look for acorns with deep, scaly cups."
+        no_next: "If the bark is lighter colored or smoother, it might be a different type of oak"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Leaves emerge late in spring, bright green with reddish tint; catkins (male flowers) hang down"
+      reproductive_activity: "Wind-pollinated flowers appear; male flowers are hanging catkins, female flowers tiny and hard to see"
+      identification_tips: "Look for new leaf growth and hanging yellowish-green catkins"
+      kid_friendly_tip: "In spring, watch for the baby leaves that start out pinkish-red, and long yellow dangling pollen tassels"
+    
+    - season: "Summer" 
+      visual_changes: "Leaves reach full size and mature to dark, shiny green; young acorns developing"
+      reproductive_activity: "Acorns continue to develop but remain green"
+      identification_tips: "Full dark green leaves; developing acorns visible but still green"
+      kid_friendly_tip: "By summer, the leaves are dark green and you can spot the young green acorns with their scaly caps"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn golden yellow to rich orange; acorns mature to brown and drop"
+      reproductive_activity: "Acorns fully mature and fall from tree"
+      identification_tips: "Bright fall color with mature acorns; one of the most colorful native California oaks in fall"
+      kid_friendly_tip: "Fall is the most spectacular time - leaves turn sunset colors and brown acorns rain down"
+    
+    - season: "Winter"
+      visual_changes: "Tree loses all leaves, showing branch structure; dark bark stands out"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Bare branches; dark furrowed bark; leaf buds preparing for spring"
+      kid_friendly_tip: "In winter, the tree goes to sleep, dropping all its leaves to show its dark, deeply cracked bark"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Large, deeply lobed leaves with bristle tips"
+      reliability: "Very high"
+      visibility: "Easy - visible during growing season"
+    - feature: "Deciduous habit (drops leaves in fall)"
+      reliability: "Very high"
+      visibility: "Obvious in fall and winter"
+    - feature: "Dark, deeply furrowed bark"
+      reliability: "High"
+      visibility: "Easy - visible year-round"
+    - feature: "Orange to golden fall color"
+      reliability: "High"
+      visibility: "Easy - visible in fall"
+    - feature: "Large acorns with deep, scaly cups"
+      reliability: "Very high (when present)"
+      visibility: "Easy to spot in late summer and fall"
+    
+  look_alike_species:
+    - species: "Interior Live Oak (Quercus wislizeni)"
+      differences: "Interior Live Oak is evergreen, keeping its smaller, less deeply lobed leaves year-round"
+      identification_tip: "If the tree keeps green leaves through winter, it's not a California Black Oak"
+    - species: "Valley Oak (Quercus lobata)"
+      differences: "Valley Oak has rounded lobes without bristle tips, lighter bark, and grows in valley bottoms"
+      identification_tip: "Check leaf lobes - Valley Oak has rounded lobes without bristle tips; Black Oak has pointed lobes with bristles"
+    - species: "Oregon White Oak (Quercus garryana)"
+      differences: "Oregon White Oak has more rounded lobes without bristles and lighter-colored bark"
+      identification_tip: "Oregon White Oak leaves have rounded lobes; Black Oak has pointed lobes with bristles"
+    
+  cultural_ecological_notes:
+    - "Forms important wildlife habitat in mixed hardwood and conifer forests"
+    - "Provides shelter and food for over 100 wildlife species"
+    - "Helps prevent erosion on hillsides with its deep root system"
+    - "Often found with conifers, madrones, and other oaks in mixed forests"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Miwok"
+      physical_uses:
+        - "Harvested acorns as a staple food source, leaching tannins before grinding into flour"
+        - "Made special baskets specifically for acorn gathering and processing"
+        - "Used bark for medicinal treatments, especially for skin issues"
+      symbolic_meaning:
+        - "Viewed these trees as generous providers, feeding both people and animals"
+        - "Used in coming-of-age ceremonies due to their strength and long life"
+        - "Featured in creation stories as symbols of endurance and life cycles"
+    
+    - culture: "Pomo"
+      physical_uses:
+        - "Developed specific grinding techniques for Black Oak acorns"
+        - "Created leaching basins of clean sand to remove bitter tannins"
+        - "Used the acorn flour to make several food varieties, including bread, soup, and porridge"
+      symbolic_meaning:
+        - "Honored oak trees in seasonal celebrations marking harvest time"
+        - "Associated certain trees with family lineages and territorial boundaries"
+        - "Used fallen oak branches in specific ceremonies symbolizing connection to place"
+    
+    - culture: "Maidu"
+      physical_uses:
+        - "Preferred Black Oak acorns for their flavor and oil content"
+        - "Built special granaries for storing acorns through winter"
+        - "Used oak wood for specific tool handles requiring strength"
+      symbolic_meaning:
+        - "Incorporated oak cycles into cultural calendars and seasonal observances"
+        - "Treated large old trees as significant landmarks and meeting places"
+        - "Viewed brilliant fall colors as symbols of transformation and renewal"
+    
+    - culture: "Early California Settlers"
+      physical_uses:
+        - "Used the hard wood for wagon parts, furniture, and flooring"
+        - "Harvested for firewood due to its high heat value"
+        - "Sometimes used bark for tanning leather"
+      symbolic_meaning:
+        - "Viewed oak landscapes as signs of fertile soil for farming"
+        - "Used large trees as boundary markers and meeting spots"
+    
+  range_within_california:
+    - "Found in foothills and mountains throughout much of California"
+    - "Common in the Sierra Nevada foothills and lower mountains"
+    - "Grows in the Coast Ranges from Mendocino County southward"
+    - "Present in the Transverse and Peninsular ranges of southern California"
+    - "Typically found at elevations between 500-6,000 feet"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "30-80 feet, occasionally taller"
+    growth_rate: "Moderate"
+    crown_spread: "40-70 feet at maturity"
+    lifespan: "200-500 years"
+    trunk_diameter: "Up to 3-4 feet at maturity"
+    root_system: "Deep taproot with extensive lateral roots"
+    toxicity: "Acorns contain tannins that must be leached before human consumption; not immediately toxic but bitter"
+  
+  conservation_status:
+    status: "Least Concern, though some populations declining"
+    threats: 
+      - "Sudden Oak Death (Phytophthora ramorum) in some areas"
+      - "Development and habitat loss in foothill regions"
+      - "Climate change may affect regeneration and range"
+      - "High-severity fires can kill mature trees"
+    protection_efforts:
+      - "Monitoring for Sudden Oak Death"
+      - "Oak woodland conservation initiatives in many counties"
+      - "Restoration efforts in some areas"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-SHAPE-05"  # Lobed
+    confirmation_features:
+      - "feature_id: LEAF-FALL-03"  # Orange fall color
+      - "feature_id: FRUIT-TYPE-01"  # Acorns
+      - "feature_id: BARK-COLOR-06"  # Black bark
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-TYPE-01", "TREE-FORM-02"]  # Deciduous, rounded crown
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SHAPE-05", "BARK-COLOR-06"]  # Lobed leaves, black bark
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-02", "FRUIT-TYPE-01"]  # Serrated edge, acorns
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["LEAF-SHAPE-05", "FLOWER-TIME-01"]  # Lobed leaves, spring flowering
+        notes: "New leaf growth and catkins visible"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-SHAPE-05", "BARK-COLOR-06"]  # Lobed leaves, black bark
+        notes: "Full-sized leaves and developing acorns"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["LEAF-FALL-03", "FRUIT-TYPE-01"]  # Orange fall color, acorns
+        notes: "One of the most colorful native oaks in fall; mature acorns"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["LEAF-TYPE-01", "BARK-COLOR-06", "BARK-TEXT-02"]  # Deciduous, black bark, furrowed bark
+        notes: "Leafless with distinctive dark, furrowed bark"
+    misidentification_risks: 
+      - "Can be confused with Interior Live Oak before leaf drop, but that species retains leaves in winter"
+      - "May be confused with Valley Oak, but leaf lobe tips and bark color are different"
+      - "Oregon White Oak has similar habitat but more rounded leaf lobes without bristles"
+  
+  wildlife_value:
+    - "Acorns are a critical food source for birds (especially jays, woodpeckers, and wild turkeys)"
+    - "Mammals including deer, bears, squirrels, and rodents rely heavily on acorns"
+    - "Provides important nesting habitat for many bird species"
+    - "Cavities in mature trees provide homes for owls, woodpeckers, and small mammals"
+    - "Leaves host many native butterfly and moth caterpillars"
