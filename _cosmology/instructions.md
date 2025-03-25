@@ -37,6 +37,8 @@ The questionnaire uses a decision tree structure optimized for efficient filteri
 2. It uses a hierarchical structure where related cosmologies share branches until their distinguishing characteristics
 3. Each question typically has 2-6 options that effectively sort the remaining cosmologies
 4. Most paths require only 3-5 questions to reach a specific worldview
+5. All questions should be numbered as whole integers, renumbered if there are gaps or if some questions are presented as non-integers
+6. Make sure all references to the questions are also updated if the numbering is updated
 
 This structure was developed by analyzing a comprehensive matrix of 68 cosmologies and 78 belief characteristics, identifying which characteristics have the highest "filtering power" at each decision point.
 

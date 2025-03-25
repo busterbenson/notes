@@ -1,0 +1,133 @@
+Q1. Do you believe Earth is a globe?
+├── No → Q2. What is your primary reason?
+│   ├── Biblical authority → Biblical Flat Earth
+│   ├── Institutional conspiracy → Conspiratorial Flat Earth
+│   └── Direct personal observation → Experiential Flat Earth
+│
+└── Yes → Q3. What do you recognize as most fundamental to reality?
+    ├── Consciousness or mind → Q4. Self-world relationship?
+    │   ├── Non-dual/not separate → Q11. Which non-dual tradition?
+    │   │   ├── Buddhist emptiness → Buddhist Emptiness
+    │   │   ├── Zen direct experience → Direct Experience Zen
+    │   │   ├── Vedantic self=ultimate → Vedantic Non-Dualism
+    │   │   ├── Tantric approach → Tantric Non-Dualism
+    │   │   ├── Taoist harmony → Taoist Harmony
+    │   │   └── Contemporary awareness → Contemporary Non-Dualism
+    │   │
+    │   └── Distinct but consciousness primary → Q12. Consciousness-physical relation?
+    │       ├── Physical as manifestation of mind → Q22. Which approach?
+    │       │   ├── Yogacara Buddhist → Yogācāra Buddhism
+    │       │   ├── Vajrayana luminosity → Vajrayana Luminosity
+    │       │   ├── Mind as cosmic alters → Analytical Idealism
+    │       │   ├── Quantum physics showing mind's primacy → Quantum Idealism
+    │       │   ├── Mind's structures shaping experience → Transcendental Idealism
+    │       │   └── Mental/physical as neutral substance → Neutral Monism
+    │       │
+    │       └── Physical world as deceptive → Q23. Nature of deception?
+    │           ├── Created by flawed demiurge → Classical Gnosticism
+    │           ├── Reality divided spirit/matter → Philosophical Dualism
+    │           └── Reality as control system → Modern Matrix Skepticism
+    │
+    ├── Matter and physical processes → Q5. Earth's age?
+    │   ├── Young (< 10,000 years) → Q13. How created?
+    │   │   ├── With apparent age → Appearance of Age
+    │   │   ├── Global catastrophes → Catastrophism
+    │   │   └── Six literal days → Biblical Literalism
+    │   │
+    │   └── Ancient (billions of years) → Q14. Divine reality?
+    │       ├── No divine reality → Q24. Complex phenomena?
+    │       │   ├── Reducible to physical → Reductive Materialism
+    │       │   ├── Novel emerging properties → Emergent Materialism
+    │       │   ├── Scientific theories as tools → Pragmatic Instrumentalism
+    │       │   └── Multiple valid descriptions → Poetic Naturalism
+    │       │
+    │       └── Some divine reality → Q25. God-universe relationship?
+    │           ├── God separate from creation → Q26. Divine intervention?
+    │           │   ├── No intervention after creation → Q28. Deistic approach?
+    │           │   │   ├── Classical view → Classical Deism
+    │           │   │   ├── Limited interaction → Modern Deism
+    │           │   │   └── Abstract ground of law → Scientific Deism
+    │           │   │
+    │           │   └── Active intervention → Q29. Deity count?
+    │           │       ├── One supreme being → Q30. God's role in evolution?
+    │           │       │   ├── Minimal intervention → Evolutionary Creationism
+    │           │       │   ├── Key moments → Progressive Creation
+    │           │       │   └── Spiritual direction → Teilhardian Evolution
+    │           │       │
+    │           │       └── Multiple deities → Q31. Relationship to deities?
+    │           │           ├── Focus on one, acknowledge many → Henotheism
+    │           │           └── Equal recognition → Q32. Polytheistic approach?
+    │           │               ├── Reconstructing ancient → Reconstructionist Polytheism
+    │           │               ├── Classical mythic → Classical Polytheism
+    │           │               └── Absolute distinctness → Hard Polytheism
+    │           │
+    │           └── God identical with universe → Q27. Pantheistic approach?
+    │               ├── Scientific approach → Scientific Pantheism
+    │               ├── All diversity illusory → Monistic Pantheism
+    │               └── Same substance (Spinozan) → Classical Pantheism
+    │
+    ├── Simulated or programmed → Q6. Simulation nature?
+    │   ├── Technological/computational → Technological Simulation
+    │   ├── Created by god-like entities → Divine Simulation
+    │   ├── Nested realities → Nested Realities
+    │   └── Consciously generated → Conscious Simulation
+    │
+    ├── Multiple universes → Q7. Multiverse type?
+    │   ├── Quantum branching → Quantum Many-Worlds
+    │   ├── Bubble universes → Cosmic Bubble Universes
+    │   ├── Branes in higher dimensions → Higher-Dimensional Branes
+    │   └── Cyclical big bangs → Cyclical Universe
+    │
+    ├── Spiritual or energetic forces → Q8. Primary focus?
+    │   ├── New Age approaches → Q15. Which focus?
+    │   │   ├── Consciousness creates reality → NA Consciousness-Focused
+    │   │   ├── Energy/vibrational → NA Energy-Based
+    │   │   ├── Evolving consciousness → NA Evolutionary Consciousness
+    │   │   └── Eclectic synthesis → NA Eclectic Synthesis
+    │   │
+    │   ├── Spirits in all things → Q16. Animist perspective?
+    │   │   ├── Traditional animism → Traditional Animism
+    │   │   ├── Contemporary ecological → Neo-Animism
+    │   │   └── Consciousness in matter → Panpsychism
+    │   │
+    │   ├── Indigenous knowledge → Q17. Central aspect?
+    │   │   ├── Place-based knowledge → Place-Based Knowledge
+    │   │   ├── Kinship with non-humans → Kinship Cosmology
+    │   │   ├── Ceremonies maintaining balance → Ceremonial Reality
+    │   │   └── Ancestors present → Ancestral Continuity
+    │   │
+    │   ├── Reality from primordial void → Q33. Daoist perspective?
+    │   │   ├── Natural process & spontaneity → Natural Process & Spontaneity
+    │   │   ├── Pattern correspondence → Pattern Correspondence & Complementarity
+    │   │   └── Holistic practice → Integral Cultivation
+    │   │
+    │   └── Divine permeating/transcending → Q18. Panentheism approach?
+    │       ├── Process-based → Process Panentheism
+    │       ├── Emanating from divine → Emanationist Panentheism
+    │       └── Participating in divine → Participatory Panentheism
+    │
+    ├── Open to multiple perspectives → Q9. Skeptical approach?
+    │   ├── Spiritual meaning in nature → Q19. Spiritual naturalist?
+    │   │   ├── Awe in science → Scientific Spirituality
+    │   │   ├── Naturalistic Buddhism → Naturalistic Buddhism
+    │   │   ├── Philosophical meaning → Philosophical Naturalism
+    │   │   ├── Embodied experience → Embodied Spirituality
+    │   │   └── Natural Taoism → Naturalistic Taoism
+    │   │
+    │   ├── Open to spiritual possibilities → Q20. Agnostic approach?
+    │   │   ├── Mystical beyond comprehension → Mystical Agnosticism
+    │   │   ├── Focus on what works → Pragmatic Spirituality
+    │   │   ├── Philosophical inquiry → Philosophical Spirituality
+    │   │   └── Exploring traditions → Perpetual Inquiry
+    │   │
+    │   └── Questioning mainstream → Q21. Unconventional focus?
+    │       ├── Alternative history → Hidden History Researcher
+    │       ├── Questioning physics → Alternative Physics Explorer
+    │       ├── Hidden power structures → Conspiracy Analyst
+    │       └── Multiple alternatives → Open Skeptic
+    │
+    └── Extraterrestrial influence → Q10. Most significant aspect?
+        ├── Human origins/evolution → Intervention Origins
+        ├── Ancient technology → Technological Guidance
+        ├── Religious foundations → Religious Foundations
+        └── Ongoing presence → Ongoing Presence
