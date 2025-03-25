@@ -375,12 +375,12 @@ Each tree file must include ALL of the following sections in this order:
 8. **Look-Alike Species**
    - Similar species with specific differences and identification tips
 
-9. **Cultural Significance**
+9. **Cultural/Ecological Notes**
+    - Brief ecological role information
+
+10. **Cultural Significance**
    - Organized by cultural group, each with physical_uses and symbolic_meaning subsections
    - Specific, well-researched information
-
-10. **Cultural/Ecological Notes**
-    - Brief ecological role information
 
 11. **Range Within California**
     - Geographic distribution details
@@ -440,5 +440,34 @@ Before completing each tree profile, verify:
    - Features at multiple observation distances are included with simple viewing instructions
    - Features in always_true do not have contradictory features in any other section
    - Comparisons use relatable analogies ("hugs the branch" vs. "sticks straight out")
+
+6. **Track which trees are complete and which still need to be generated**
+   - After every tree file is created, updated, moved, or deleted, reflect the change in tree-tracking.md as well
+
+## Maintaining Consistency Between Tree-tracking.md and Path Files
+
+Tree-tracking.md serves as the master list and source of truth for all trees included in this project. This is critical for maintaining consistency across all identification paths.
+
+### Key Guidelines:
+
+1. **Source of Truth**: tree-tracking.md is the definitive reference for:
+   - Which trees are included in the project (total count)
+   - How trees are categorized (broadleaf, conifer, etc.)
+   - Which trees should appear in each path
+
+2. **Path File Structure**:
+   - Each path file (e.g., broadleaf-path.md) must account for ALL trees in its category as listed in tree-tracking.md
+   - The tree count in each path file must match the corresponding count in tree-tracking.md
+   - If a tree is listed in tree-tracking.md but lacks a detailed description in the path file, note this in the path file's "Notes About Tree Classifications" section
+
+3. **Count Verification Process**:
+   - When updating any path file, verify the tree counts match tree-tracking.md
+   - If there's a discrepancy, assume tree-tracking.md is correct unless specifically determined otherwise
+   - NEVER remove trees from the path files to make counts match - instead, add the missing trees or note which trees need future detailed descriptions
+
+4. **Resolving Inconsistencies**:
+   - If a discrepancy is found, document it in the "Notes About Tree Classifications" section of the path file
+   - If a tree appears to be incorrectly classified, confirm with botanical references before making changes
+   - Any changes to tree classification should be updated in both tree-tracking.md and the appropriate path files
 
 By following these comprehensive guidelines, you'll create standardized, accurate tree profiles that support the generation of an effective, kid-friendly decision tree for California tree identification.
