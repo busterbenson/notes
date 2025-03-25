@@ -96,6 +96,11 @@ Q1. Do you believe Earth is a globe?
     │   │   ├── Ceremonies maintaining balance → Ceremonial Reality
     │   │   └── Ancestors present → Ancestral Continuity
     │   │
+    │   ├── Reality from primordial void → Q33. Daoist perspective?
+    │   │   ├── Natural process & spontaneity → Natural Process & Spontaneity
+    │   │   ├── Pattern correspondence → Pattern Correspondence & Complementarity
+    │   │   └── Holistic practice → Integral Cultivation
+    │   │
     │   └── Divine permeating/transcending → Q18. Panentheism approach?
     │       ├── Process-based → Process Panentheism
     │       ├── Emanating from divine → Emanationist Panentheism
@@ -113,7 +118,7 @@ Q1. Do you believe Earth is a globe?
     │   │   ├── Mystical beyond comprehension → Mystical Agnosticism
     │   │   ├── Focus on what works → Pragmatic Spirituality
     │   │   ├── Philosophical inquiry → Philosophical Spirituality
-    │   │   └── Exploring traditions → Transitional Seeking
+    │   │   └── Exploring traditions → Perpetual Inquiry
     │   │
     │   └── Questioning mainstream → Q21. Unconventional focus?
     │       ├── Alternative history → Hidden History Researcher
