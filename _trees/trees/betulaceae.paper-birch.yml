@@ -1,0 +1,310 @@
+tree:
+  common_name: "Paper Birch"
+  scientific_name: "Betula papyrifera"
+  family: "Betulaceae"
+  
+  # Basic summary information
+  summary: "A medium-sized deciduous tree known for its distinctive chalky white bark that peels in horizontal, paper-like strips. Has oval to triangular leaves with doubly serrated edges, and produces long, dangling catkins in spring. The bright golden-yellow fall color stands out vividly against the white bark."
+  
+  identification_path:
+    primary_markers: "Chalky white bark that peels in horizontal paper-like strips; bright golden-yellow fall foliage"
+    secondary_markers: "Oval to triangular leaves with doubly serrated edges; alternate leaf arrangement; dangling male catkins in spring"
+    seasonal_markers: "Catkins in spring; golden-yellow autumn color; striking white bark visible year-round but especially prominent in winter"
+    similar_species_differentiation: "Unlike European White Birch, has more peeling bark; unlike River Birch, has white (not reddish-brown) bark; unlike Gray Birch, bark peels more readily in paper-like strips"
+  
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves in fall"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Each leaf is one piece, not divided into smaller leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow in an alternating pattern along branches, not directly across from each other"
+      
+      - feature_id: "LEAF-EDGE-03"  # Doubly serrated
+        notes: "Leaf edges have teeth of two different sizes, like a saw with small and big teeth"
+      
+      - feature_id: "BARK-COLOR-02"  # White bark
+        notes: "Has striking white bark, especially noticeable on trunk and main branches"
+      
+      - feature_id: "FLOWER-TYPE-01"  # Catkins present
+        notes: "Produces hanging catkins in spring"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        notes: "Leaves turn bright golden-yellow in fall"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with one main trunk"
+        exceptions: "May develop multiple trunks if damaged when young or growing in challenging conditions"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Mature trees typically reach 50-70 feet tall (about as tall as a 5-7 story building)"
+        exceptions: "May remain smaller in poor growing conditions or at the edge of its range"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Bark peels in horizontal, paper-like strips"
+        exceptions: "Very young trees may have smooth bark that hasn't yet developed the characteristic peeling"
+      
+      - feature_id: "BRANCH-ANGLE-02"  # Ascending branches
+        notes: "Branches typically angle upward, especially on young trees"
+        exceptions: "Lower branches on mature trees may become more horizontal or even slightly drooping"
+    
+    sometimes_true:
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Very young trees"
+        notes: "Young trees have smooth bark before developing the characteristic peeling"
+      
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        conditions: "Very young trees or inner/older bark layers"
+        notes: "Young trees may have grayish bark before turning white; inner bark layers revealed when outer bark peels may appear darker"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "In cooler mountain regions and northern areas"
+        notes: "Native to northern North America and can grow in cooler parts of Northern California"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "When planted in suitable locations with cooler temperatures"
+        notes: "Can be grown in urban settings in cooler climate zones"
+      
+      - feature_id: "TWIG-SIZE-02"  # Slender twigs
+        conditions: "Most branches, especially younger growth"
+        notes: "Has delicate, slender twigs, especially at branch tips"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops all its leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has compound leaves"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves are always arranged alternately, never opposite"
+      
+      - feature_id: "BARK-COLOR-03"  # Red bark
+        notes: "Bark is white to grayish, never reddish like River Birch"
+      
+      - feature_id: "GEO-REGION-03"  # Southern California
+        notes: "Does not naturally occur or grow well in Southern California's hot climate"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Peeling, paper-like white bark that you can gently peel like nature's paper"
+    memorable_comparison: "The tree looks like it's wrapped in white paper that's peeling off in strips"
+    touch_tip: "Gently touch the bark - it feels like thin layers of paper that can peel away"
+    smell_tip: "The bark doesn't have a strong smell, but the leaves have a fresh, green scent"
+    fun_fact: "People have used paper birch bark for thousands of years to make canoes, containers, and even to write on - it's nature's paper!"
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the bark. Is it white with horizontal lines and peeling like paper?"
+        yes_next: 2
+        no_next: "Not a Paper Birch - their white, peeling bark is their most noticeable feature"
+      - step: 2
+        instruction: "Look at a leaf. Is it shaped like a pointed egg with tiny double teeth all around the edges?"
+        yes_next: 3
+        no_next: "Might be another type of birch or tree - check the leaf shape and edge carefully"
+      - step: 3
+        instruction: "How are the leaves arranged on the branch? Do they alternate (zigzag pattern) rather than grow directly across from each other?"
+        yes_next: 4
+        no_next: "Not a Paper Birch - their leaves grow in an alternating pattern"
+      - step: 4
+        instruction: "In spring, do you see long, dangling catkins that look like little caterpillars hanging from branches?"
+        yes_next: "You found a Paper Birch!"
+        no_next: "It might still be a Paper Birch, but look for catkins in spring to be sure"
+  
+  regional_notes:
+    - region: "Northern California"
+      notes: "Grows in cooler mountain areas and north coastal regions"
+      locations: "Found in higher elevation forests and some cooler landscapes"
+    - region: "Central California"
+      notes: "Struggles in most parts of Central California due to heat"
+      locations: "Rare; occasional in higher, cooler areas of the Sierra Nevada"
+    - region: "Southern California"
+      notes: "Generally not suitable for Southern California's climate"
+      locations: "Not typically found; cannot tolerate the heat and dry conditions"
+      
+  confirmation_checklist:
+    - feature: "White bark that peels in paper-like strips"
+      reliability: "Very high"
+      visibility: "Visible from a distance"
+    - feature: "Oval to triangular leaves with doubly serrated edges"
+      reliability: "High"
+      visibility: "Need to look closely at leaves"
+    - feature: "Alternate leaf arrangement"
+      reliability: "High"
+      visibility: "Need to look at branches closely"
+    - feature: "Bright golden-yellow fall color"
+      reliability: "High (fall only)"
+      visibility: "Visible from a distance in fall"
+    - feature: "Hanging catkins in spring"
+      reliability: "High (spring only)"
+      visibility: "Visible from nearby in spring"
+    
+  look_alike_species:
+    - species: "European White Birch (Betula pendula)"
+      differences: "European White Birch has less peeling bark and more weeping form; often has black diamond-shaped marks on trunk; twigs are more pendulous (drooping)"
+      identification_tip: "If the tree has very droopy branches and the white bark doesn't peel off in papers, it's probably European White Birch"
+    - species: "Gray Birch (Betula populifolia)"
+      differences: "Gray Birch is smaller with chalky white bark that doesn't peel as much; has more triangular leaves; often grows at angles rather than straight"
+      identification_tip: "Gray Birch bark feels chalky but doesn't peel off in nice paper strips like Paper Birch"
+    - species: "River Birch (Betula nigra)"
+      differences: "River Birch has peeling bark but it's reddish-brown to cinnamon colored, not white; prefers wet areas"
+      identification_tip: "If the peeling bark is reddish-brown rather than white, it's River Birch"
+    - species: "Quaking Aspen (Populus tremuloides)"
+      differences: "Quaking Aspen has smooth white-ish bark but it doesn't peel in paper-like strips; leaves are more rounded and tremble in the breeze; leaf stems are flattened"
+      identification_tip: "Aspen bark is smooth and doesn't peel like paper; its leaves 'quake' or tremble in even slight breezes"
+    
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaves emerge light green; hanging male catkins release yellow pollen; smaller female catkins develop"
+      reproductive_activity: "Male catkins release pollen; female catkins receive pollen and begin developing seeds"
+      identification_tips: "Long, dangling male catkins are distinctive in spring"
+      kid_friendly_tip: "In spring, look for hanging 'caterpillar' flowers (catkins) that dangle from branches and release yellow pollen"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of dark green leaves; female catkins mature into small cylindrical structures containing many tiny winged seeds"
+      reproductive_activity: "Seeds develop in cylindrical female catkins"
+      identification_tips: "White bark contrasts with dark green leaves; small cylindrical seed catkins visible"
+      kid_friendly_tip: "In summer, the white bark stands out against the green leaves, like a tree wearing a white t-shirt with green sleeves"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn bright golden-yellow; seeds are released from catkins"
+      reproductive_activity: "Seeds disperse with wind"
+      identification_tips: "Golden-yellow leaves against white bark create a stunning contrast"
+      kid_friendly_tip: "In fall, the leaves turn bright yellow like golden coins, making a beautiful contrast against the white trunk"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches reveal full extent of white peeling bark; dark, slender buds visible"
+      reproductive_activity: "Dormant; male catkins that will open in spring are already formed"
+      identification_tips: "White peeling bark stands out dramatically in winter landscape"
+      kid_friendly_tip: "In winter, the white bark looks extra bright against dark tree trunks or snow - like a tree wearing a white winter coat"
+      
+  cultural_ecological_notes:
+    - "Pioneer species that helps establish forests after disturbances like fire"
+    - "Seeds eaten by many bird species, especially small songbirds"
+    - "Bark provides food for deer and moose in winter in northern regions"
+    - "Dead trees provide important habitat for cavity-nesting birds"
+    - "Prefers cool, moist conditions but can tolerate some drought when established"
+    
+  range_within_california:
+    - "Native to northern parts of North America including small areas of Northern California"
+    - "Can be grown in cooler mountain regions of Northern California"
+    - "Not suitable for Central Valley or Southern California due to heat intolerance"
+    - "Prefers areas with cold winters and cool summers"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Indigenous Peoples of North America"
+      physical_uses:
+        - "Made canoes by stretching large sheets of bark over wooden frames"
+        - "Created containers, baskets, and storage vessels from folded bark"
+        - "Used as writing material and for making maps and records"
+        - "Made waterproof coverings for shelters and wigwams"
+        - "Created torches by rolling bark and soaking in tree resins"
+      symbolic_meaning:
+        - "The white bark represented purity and light in the forest"
+        - "The tree's adaptability symbolized resilience and survival"
+        - "Paper birch was seen as a giving tree that provided essential materials"
+        - "Considered a tree of utility that sustained life through its many uses"
+    
+    - culture: "Early European Settlers"
+      physical_uses:
+        - "Learned canoe-making techniques from Indigenous peoples"
+        - "Used wood for furniture, tool handles, and fuel"
+        - "Made small items like spoons, toys, and containers"
+        - "Tapped for sap (similar to maple) though less commonly"
+        - "Used bark for fire starter as it burns even when wet"
+      symbolic_meaning:
+        - "Represented the frontier wilderness of North America"
+        - "The distinctive white trunks became iconic markers of northern forests"
+        - "Symbolized adaptability and pioneer spirit"
+        - "The tree became associated with the cultural meeting of Indigenous and European traditions"
+    
+    - culture: "Modern American/Canadian"
+      physical_uses:
+        - "Wood used for furniture, veneer, plywood, and pulp for paper"
+        - "Bark used for craft items and decorative purposes"
+        - "Planted as ornamental landscape tree"
+        - "Used for specialty items like canoe replicas and traditional crafts"
+        - "Provides sustainable material for modern products with traditional designs"
+      symbolic_meaning:
+        - "Symbol of northern forests and wilderness areas"
+        - "Represents heritage crafts and traditional knowledge"
+        - "The distinctive white bark symbolizes the beauty of northern landscapes"
+        - "Often featured in artwork, photography, and regional identity in northern states"
+    
+  # Additional physical characteristics
+  physical_characteristics:
+    height_range: "50-70 feet, occasionally taller (about as tall as a 5-7 story building)"
+    growth_rate: "Medium to fast, about 1-2 feet per year when young"
+    crown_spread: "25-45 feet when mature (about as wide as a 2-car garage)"
+    lifespan: "Relatively short-lived, typically 80-100 years"
+    trunk_diameter: "1-2 feet in diameter when mature (about as wide as a dinner plate)"
+    root_system: "Moderately shallow, spreading root system"
+    toxicity: "Not toxic to humans or animals"
+    
+  conservation_status:
+    status: "Secure in most of its range; common and abundant"
+    threats: 
+      - "Bronze birch borer insect can cause significant damage or death"
+      - "Climate change may reduce suitable habitat in southern parts of its range"
+      - "Susceptible to drought and heat stress outside its natural range"
+      - "Leaf spot diseases can cause early leaf drop in wet conditions"
+    protection_efforts:
+      - "No special protection needed as the species is abundant"
+      - "Considered for managed migration and conservation in northern areas facing climate change"
+      - "Research into more resistant varieties for landscape use"
+    
+  # Decision tree mapping
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: BARK-COLOR-02"  # White bark
+      - "feature_id: BARK-TEXT-03"  # Peeling bark
+      - "feature_id: LEAF-ARRANGE-01"  # Alternate
+    confirmation_features:
+      - "feature_id: LEAF-EDGE-03"  # Doubly serrated
+      - "feature_id: LEAF-FALL-01"  # Yellow fall color
+      - "feature_id: FLOWER-TYPE-01"  # Catkins present
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["BARK-COLOR-02", "TREE-SIZE-02", "LEAF-FALL-01"]  # White bark, medium tree, yellow fall color
+      - distance: "from_nearby"
+        features_to_check: ["BARK-TEXT-03", "LEAF-ARRANGE-01", "LEAF-EDGE-03"]  # Peeling bark, alternate arrangement, doubly serrated edges
+      - distance: "close_inspection"
+        features_to_check: ["FLOWER-TYPE-01", "TWIG-SIZE-02"]  # Catkins, slender twigs
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["BARK-COLOR-02", "BARK-TEXT-03", "FLOWER-TYPE-01"]
+        notes: "White peeling bark and distinctive catkins make spring identification straightforward"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["BARK-COLOR-02", "BARK-TEXT-03", "LEAF-EDGE-03"]
+        notes: "White bark, leaf characteristics, and developing seed catkins help with summer ID"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["BARK-COLOR-02", "BARK-TEXT-03", "LEAF-FALL-01"]
+        notes: "Combination of white bark and golden-yellow fall color is highly distinctive"
+      
+      winter:
+        reliability: "Very high"
+        key_features: ["BARK-COLOR-02", "BARK-TEXT-03"]
+        notes: "White peeling bark is extremely prominent and distinctive in winter"
+    misidentification_risks: "Most often confused with other birch species or sometimes with aspen"
+
+  wildlife_value:
+    nesting_sites: "Provides nesting sites for many birds, including woodpeckers in older trees"
+    food_source: "Seeds eaten by many small birds; buds and twigs eaten by grouse and other birds; bark eaten by mammals in winter"
+    shelter: "Provides cover for birds and small mammals"
+    ecological_notes: "Important pioneer species after disturbances; helps establish forest conditions"
+    
+  propagation_information:
+    growing_conditions: "Prefers moist, acidic, well-drained soil; needs cool conditions"
+    water_needs: "Moderate to high; does not tolerate prolonged drought"
+    planting_tips: "Plant in full sun to partial shade; protect from hot afternoon sun in warmer areas"
+    maintenance: "Keep well-watered during establishment; protect from borers with proper care"
+    special_notes: "Best in cool climate regions; not suitable for hot areas; consider heat-tolerant birch species like River Birch for warmer regions"

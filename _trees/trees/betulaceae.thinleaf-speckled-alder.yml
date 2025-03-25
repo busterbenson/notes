@@ -1,0 +1,249 @@
+tree:
+  common_name: Thinleaf Speckled Alder
+  scientific_name: Alnus incana subsp. tenuifolia
+  family: Betulaceae
+  native: false
+
+  summary: Thinleaf Speckled Alder is a multi-stemmed deciduous tree or large shrub known for its dark bark with distinctive horizontal lenticels (speckles) and double-toothed leaves with rusty hairs along the veins underneath. Native to western North America from Alaska to New Mexico in mountain regions, it produces male catkins that emerge very early in spring before leaves appear, and female catkins that develop into small, persistent woody cones. While not native to California, this adaptable riparian species may occasionally be found in specialized wetland gardens or restoration projects.
+
+  identification_path:
+    primary_markers: "Dark bark with distinctive horizontal light-colored speckles; small woody cone-like fruits that persist through winter"
+    secondary_markers: "Oval leaves with doubly-serrated edges (big teeth with smaller teeth); rusty hairs along veins underneath leaves"
+    seasonal_markers: "Male catkins appear very early in spring before leaves; leaves turn yellow to brown in fall; woody cone-like fruits visible all winter"
+    similar_species_differentiation: "Unlike White Alder, has multiple trunks and rusty hairs on leaf undersides; unlike Red Alder, has more prominent bark speckles and grows in mountains not coastal areas"
+
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01" 
+        notes: "Loses all its leaves each fall"
+      - feature_id: "LEAF-ARRANGEMENT-02"
+        notes: "Leaves grow alternately along branches, not in pairs"
+      - feature_id: "LEAF-MARGIN-03"
+        notes: "Leaf edges have double rows of teeth (big teeth with smaller teeth on them)"
+      - feature_id: "BARK-PATT-02" 
+        notes: "Bark has distinctive horizontal light-colored dots or speckles"
+      - feature_id: "FLOWER-TYPE-01"
+        notes: "Produces hanging catkins that release pollen in early spring"
+    
+    usually_true:
+      - feature_id: "TREE-SIZE-01"
+        notes: "Usually grows as a small tree under 30 feet tall"
+        exceptions: "In ideal conditions with plenty of water, can occasionally reach medium size"
+      - feature_id: "TREE-TRUNK-02"
+        notes: "Usually grows with multiple trunks rather than a single main trunk"
+        exceptions: "Occasionally can have a more dominant single trunk, especially when young"
+      - feature_id: "LEAF-FALL-01"
+        notes: "Leaves typically turn yellow in the fall"
+        exceptions: "In some conditions or certain years, may turn more brownish"
+      - feature_id: "HABITAT-04"
+        notes: "Loves to grow along streams, rivers, and wet areas"
+        exceptions: "Occasionally found in drier sites if there's enough soil moisture"
+      - feature_id: "ECO-REL-01"
+        notes: "Has special root nodules that add nutrients to the soil"
+        exceptions: "This benefit may be reduced in very poor or disturbed soils"
+    
+    sometimes_true:
+      - feature_id: "TREE-SIZE-02"
+        conditions: "In ideal growing conditions with consistent moisture"
+        notes: "Can occasionally reach medium height (30-50 feet)"
+      - feature_id: "HABITAT-WATER-02"
+        conditions: "When growing in very wet or poorly drained areas"
+        notes: "Can be found in boggy or marshy areas with standing water"
+      - feature_id: "LEAF-FALL-05"
+        conditions: "Depending on weather conditions and specific trees"
+        notes: "Leaves may turn brown instead of yellow before falling"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"
+        notes: "Never keeps its leaves year-round - always drops them in fall"
+      - feature_id: "TREE-SIZE-03"
+        notes: "Never grows into a large tree (over 50 feet)"
+      - feature_id: "FRUIT-TYPE-08"
+        notes: "Never produces winged seed pairs like maple trees do"
+      - feature_id: "HABITAT-03"
+        notes: "Not commonly found in city parks or urban areas in California"
+
+  kid_friendly_identification:
+    primary_identifier: "Dark bark covered in light-colored horizontal speckles or dots"
+    memorable_comparison: "The bark looks like someone splattered light paint dots all over a dark trunk"
+    touch_tip: "The leaves feel slightly fuzzy underneath where the rusty-colored hairs grow along the veins"
+    smell_tip: "The leaves don't have a strong smell, but if you gently crush one, you might notice a mild earthy scent"
+    fun_fact: "This tree is like a superhero for soil! Its roots have special powers that grab nitrogen from the air and turn it into plant food that helps other plants grow better!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the bark. Do you see light-colored horizontal dots or speckles on dark bark?"
+        yes_next: 2
+        no_next: "Probably not a Thinleaf Speckled Alder. Look for other alder species."
+      - step: 2
+        instruction: "Check the leaves. Are the edges jagged with double rows of teeth (big teeth with little teeth on them)?"
+        yes_next: 3
+        no_next: "Probably not a Thinleaf Speckled Alder. Check if it's a different alder species."
+      - step: 3
+        instruction: "Look at the underside of the leaves. Can you see rusty-colored hairs along the veins?"
+        yes_next: 4
+        no_next: "Might be a different alder species. Check for other clues."
+      - step: 4
+        instruction: "Does the tree have small woody cone-like fruits (about fingertip-sized) that stay on the branches?"
+        yes_next: "You found a Thinleaf Speckled Alder!"
+        no_next: "If it's spring or early summer, the cones might not have formed yet. Check the other features again."
+
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Male catkins elongate and release yellow pollen before leaves appear, hanging in reddish-brown clusters"
+      reproductive_activity: "Female catkins are smaller and stand upright on branches"
+      identification_tips: "In native areas, this tree often flowers while there's still snow on the ground"
+      kid_friendly_tip: "Look for the dangling catkins that look like tiny hanging worms before the leaves come out"
+    
+    - season: "Summer"
+      visual_changes: "Leaves reach their full dark green color with distinctive rusty hairs along veins underneath"
+      reproductive_activity: "Female catkins develop into small green cone-like structures"
+      identification_tips: "The doubly-serrated leaf edges and rusty hairs underneath are key identification features"
+      kid_friendly_tip: "Turn over a leaf to find the rusty-colored hairs along the lines (veins) underneath"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow to brown before dropping, often later than many other trees"
+      reproductive_activity: "The small cone-like fruits turn brown and remain attached to branches"
+      identification_tips: "The speckled bark becomes more visible as leaves drop"
+      kid_friendly_tip: "Look for the small brown cone-like fruits that stay on the tree and the speckled bark"
+    
+    - season: "Winter"
+      visual_changes: "The dark bark with prominent light-colored horizontal lenticels is clearly visible"
+      reproductive_activity: "Small woody cone-like fruits persist on bare branches"
+      identification_tips: "Multiple stems create an interesting silhouette against the winter sky"
+      kid_friendly_tip: "Look for the speckled bark and tiny brown 'pinecones' that stay on the branches all winter"
+
+  confirmation_checklist:
+    - feature: "Dark bark with prominent horizontal lenticels (speckles)"
+      reliability: "Very high"
+      visibility: "High - visible from several feet away"
+    - feature: "Doubly-serrated leaf edges (big teeth with smaller teeth)"
+      reliability: "High"
+      visibility: "Medium - need to look closely at leaf edges"
+    - feature: "Rusty hairs along veins on leaf undersides"
+      reliability: "Very high"
+      visibility: "Medium - need to turn leaves over to see"
+    - feature: "Small woody cone-like fruits that persist through winter"
+      reliability: "High"
+      visibility: "Medium - visible once you know what to look for"
+    - feature: "Typically multi-stemmed growth habit"
+      reliability: "Medium"
+      visibility: "High - visible from a distance"
+    - feature: "Often found in wet areas, typically alongside streams or in boggy locations"
+      reliability: "Medium"
+      visibility: "High - check the growing location"
+
+  look_alike_species:
+    - species: "White Alder (Alnus rhombifolia)"
+      differences: "Native to California; single-trunked tree rather than multi-stemmed; smoother gray bark; more finely toothed leaves without rusty hairs beneath"
+      identification_tip: "If it has a single trunk and lacks rusty hairs on leaf undersides, it's likely White Alder"
+    
+    - species: "Red Alder (Alnus rubra)"
+      differences: "Native to coastal California; larger tree with distinctive reddish inner bark when scratched; less prominent lenticels on bark"
+      identification_tip: "If it's growing near the coast and has reddish color under the bark when scratched, it's likely Red Alder"
+    
+    - species: "Smooth Alder (Alnus serrulata)"
+      differences: "Eastern native with similar growth habit but single-toothed leaf margins and less pronounced bark speckles"
+      identification_tip: "If leaf edges have only one set of teeth (not double teeth), it might be Smooth Alder"
+    
+    - species: "Green Alder (Alnus viridis)"
+      differences: "Similar mountain habitat but with glossier leaves that are bright green on both sides without rusty hairs underneath"
+      identification_tip: "If leaves are shiny green on both sides without rusty hairs, it could be Green Alder"
+    
+    - species: "European Alder (Alnus glutinosa)"
+      differences: "Has more rounded leaves with less prominent double serration; bark lacks the distinctive speckled appearance"
+      identification_tip: "If leaves are more rounded and the bark lacks obvious speckles, it might be European Alder"
+
+  cultural_significance:
+    - culture: "Indigenous Peoples of the Rocky Mountains"
+      physical_uses:
+        - "Used the bark to make medicine for fevers, stomachaches, and healing wounds"
+        - "Made red dye from the inner bark for coloring baskets and clothes"
+        - "Carved the wood to make tools and handles for various implements"
+      symbolic_meaning:
+        - "Valued for its connection to water and life-giving properties"
+        - "Recognized as a helper plant that improves soil for other plants to grow"
+    
+    - culture: "Alaskan Native Peoples"
+      physical_uses:
+        - "Used the wood for smoking salmon and other foods"
+        - "Made tools and small carvings from the wood"
+        - "Used parts of the tree for treating various ailments"
+      symbolic_meaning:
+        - "Associated with healthy streams and good fishing areas"
+        - "Valued for its reliability in providing materials even in harsh environments"
+    
+    - culture: "Modern Environmental Education"
+      physical_uses:
+        - "Used in stream restoration projects to prevent erosion and improve water quality"
+        - "Planted to help heal damaged wetlands and improve soil"
+      symbolic_meaning:
+        - "Represents the importance of healthy streams and wetlands"
+        - "Shows how some plants can help improve soil and create better conditions for other plants"
+
+  physical_characteristics:
+    height: "15-25 feet"
+    width: "10-20 feet"
+    growth_rate: "Medium to fast growing, especially with plenty of water"
+    lifespan: "40-60 years on average"
+    bark: "Dark gray to reddish-brown with prominent horizontal lenticels (speckles)"
+    leaves: "Oval to elliptical, 2-4 inches long, doubly serrated edges, with rusty hairs along veins underneath"
+    flowers: "Male flowers in hanging reddish-brown catkins; female flowers in smaller upright catkins"
+    fruit: "Small woody cone-like structures (strobiles) about 1/2-3/4 inch long"
+    seeds: "Small winged nutlets released from woody cones"
+    root_system: "Fibrous, extensive root system that spreads widely and helps prevent erosion"
+    suitable_for_public_spaces: true
+
+  conservation_status:
+    status: "Not listed as threatened or endangered"
+    threats: "Wetland destruction, stream channelization, and climate change in some parts of its range"
+    protection_efforts: "Included in many riparian restoration projects to stabilize streambanks and improve water quality"
+
+  decision_tree_placement:
+    primary_split_features:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+      - feature_id: "BARK-PATT-02"  # Lenticels present
+      - feature_id: "FLOWER-TYPE-01"  # Catkins present
+    
+    confirmation_features:
+      - feature_id: "LEAF-MARGIN-03"  # Doubly serrate
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-TRUNK-02", "HABITAT-04"]  # Multi-trunked, Riparian
+      - distance: "from_nearby"
+        features_to_check: ["BARK-PATT-02", "FRUIT-TYPE-07"]  # Lenticels, Woody cone-like fruit
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-MARGIN-03", "SPECIAL-03"]  # Double serrate, Rusty hairs
+    
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["FLOWER-TYPE-01", "BARK-PATT-02"]  # Catkins, Lenticels
+        notes: "Early-appearing catkins are distinctive identification features"
+      summer:
+        reliability: "Very high"
+        key_features: ["LEAF-MARGIN-03", "SPECIAL-03", "BARK-PATT-02"]  # Double serrate, Rusty hairs, Lenticels
+        notes: "Full leaf development makes identification most reliable"
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-FALL-01", "FRUIT-TYPE-07", "BARK-PATT-02"]  # Yellow fall, Woody fruits, Lenticels
+        notes: "Persistent woody fruits and visible bark speckles help identification as leaves fall"
+      winter:
+        reliability: "Medium"
+        key_features: ["BARK-PATT-02", "FRUIT-TYPE-07", "TREE-TRUNK-02"]  # Lenticels, Woody fruits, Multi-trunked
+        notes: "Distinctive speckled bark and persistent woody cone-like fruits aid winter identification"
+    
+    misidentification_risks:
+      - "May be confused with other alder species, especially White Alder and Red Alder in California"
+      - "Young trees might be mistaken for birch species, but alders have woody cone-like fruits instead of catkins"
+      - "In winter, the multi-stemmed habit might resemble some willows, but the speckled bark and persistent cone-like fruits distinguish it"
+
+  wildlife_value: 
+    - "Seeds provide food for many songbirds, especially finches like pine siskins, redpolls, and goldfinches"
+    - "Dense multi-stemmed growth offers shelter and nesting sites for small mammals and birds"
+    - "Serves as a host plant for various butterfly and moth caterpillars"
+    - "Beavers eat the stems and use them to build dams"
+    - "The special root nodules add nutrients to the soil, helping the whole ecosystem"
+    - "In wet areas, roots hold the soil along stream banks and create habitat for fish and other water creatures"

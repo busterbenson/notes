@@ -1,0 +1,323 @@
+tree:
+  common_name: "Ginkgo"
+  scientific_name: "Ginkgo biloba"
+  family: "Ginkgoaceae"
+  
+  # Basic summary information
+  summary: "A living fossil tree with unique fan-shaped leaves that turn bright yellow in fall. It has a distinctive upright growth pattern, with males and females on separate trees. Female trees produce smelly fruits, so male trees are usually planted in cities. Extremely long-lived and resistant to pests, pollution, and disease."
+  
+  # Identification priority
+  identification_path:
+    primary_markers: "Unique fan-shaped leaves with parallel veins and a notch in the middle; bright golden yellow fall color"
+    secondary_markers: "Irregular, often upright growth form; gray, ridged bark on older trees; male trees lack fruits"
+    seasonal_markers: "Spectacular golden-yellow fall color; female trees have smelly round fruits in fall"
+    similar_species_differentiation: "No other tree has the same fan-shaped leaves with parallel veins; maidenhair fern has similar leaf shape but is a small ground-growing plant"
+  
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops all its leaves in fall"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Leaves are single, not divided into smaller leaflets"
+      
+      - feature_id: "LEAF-SHAPE-07"  # Fan-shaped
+        notes: "Leaves are shaped like small fans or the leaflets of maidenhair fern"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        notes: "Leaves turn bright golden yellow in fall"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        notes: "Bark develops vertical ridges or furrows with age"
+      
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        notes: "Bark is grayish-brown"
+      
+      - feature_id: "ECO-LIFE-01"  # Long-lived
+        notes: "Can live for over 1,000 years in the right conditions"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        notes: "Native to China, not native to California"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with one main trunk"
+        exceptions: "May occasionally develop multiple trunks, especially if damaged when young"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Usually grows 50-80 feet tall (as high as an 8-story building) when mature"
+        exceptions: "May stay smaller in poor conditions or confined spaces; some dwarf cultivars exist"
+      
+      - feature_id: "TREE-FORM-05"  # Irregular crown
+        notes: "Often has an irregular, somewhat pyramidal or upright oval form"
+        exceptions: "Shape varies with age and cultivar; some varieties have more uniform shapes"
+      
+      - feature_id: "FRUIT-TYPE-07"  # Drupes
+        notes: "Female trees produce fleshy, smelly fruits containing a single seed"
+        exceptions: "Male trees produce no fruits; only sexually mature trees (20+ years) produce reproductive structures"
+    
+    sometimes_true:
+      - feature_id: "BRANCH-ANGLE-01"  # Horizontal branches
+        conditions: "Especially on older trees"
+        notes: "Main branches often grow at right angles to the trunk"
+      
+      - feature_id: "BRANCH-PATT-01"  # Whorled branches
+        conditions: "On younger trees and some cultivars"
+        notes: "Branches may grow in approximate whorls or rings"
+      
+      - feature_id: "TWIG-SIZE-02"  # Slender twigs
+        conditions: "Generally on all trees"
+        notes: "Twigs are relatively thin"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "Male trees in urban settings"
+        notes: "Very tolerant of urban pollution, compacted soil, and poor conditions"
+      
+      - feature_id: "GEO-REGION-03"  # Southern California
+        conditions: "Planted in gardens and parks"
+        notes: "Common ornamental tree in Southern California landscapes"
+      
+      - feature_id: "GEO-REGION-02"  # Central California
+        conditions: "Planted in gardens and parks"
+        notes: "Common in Central California landscapes"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "Planted in gardens and parks"
+        notes: "Common in Northern California landscapes"
+      
+      - feature_id: "SENSORY-SMELL-05"  # Unpleasant odor
+        conditions: "Female trees when fruits are present and decomposing"
+        notes: "Fallen fruits have a very strong, unpleasant smell like vomit or rancid butter"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops all its leaves in fall"
+      
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        notes: "Never has scale-like leaves, only distinctive fan-shaped leaves"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Never has needle-like leaves"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Never has thorns or spines"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Not originally from California; brought from China"
+  
+  # Kid-friendly identification - expanded with open-ended, creative descriptions
+  kid_friendly_identification:
+    primary_identifier: "Leaves shaped like tiny fans with a split down the middle"
+    memorable_comparison: "The leaves look exactly like the leaflets of a maidenhair fern, which is why ginkgo is also called the maidenhair tree"
+    touch_tip: "Feel the leaf - it's smooth with lines running from the stem to the edge like the folds of a paper fan"
+    smell_tip: "Leaves have no special smell, but NEVER smell the fruits from female trees - they smell really stinky, like old cheese or throw-up!"
+    fun_fact: "Ginkgos are living fossils that have barely changed in 200 million years - they lived with the dinosaurs and survived when most other plants couldn't!"
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the leaf shape. Are the leaves fan-shaped with a split in the middle, like a tiny hand fan?"
+        yes_next: 2
+        no_next: "Not a Ginkgo - no other tree has fan-shaped leaves like this"
+      - step: 2
+        instruction: "Check the leaf veins. Do they run straight out from the stem to the edge, like the spokes of a tiny umbrella?"
+        yes_next: 3
+        no_next: "Not a Ginkgo - ginkgo leaves have veins that run straight from the stem to the edge"
+      - step: 3
+        instruction: "In fall, look at the leaf color. Do all the leaves turn bright gold-yellow (not red or orange)?"
+        yes_next: 4
+        no_next: "Might not be a Ginkgo - they turn bright golden yellow in fall"
+      - step: 4
+        instruction: "Look at the bark of a mature tree. Is it gray with ridges or furrows?"
+        yes_next: "You found a Ginkgo!"
+        no_next: "If the tree is young, the bark might still be smooth - but the fan-shaped leaves mean it's definitely a Ginkgo"
+  
+  regional_notes:
+    - region: "Southern California"
+      notes: "Common in landscapes; provides good shade; tolerant of urban conditions"
+      locations: "Found in parks, gardens, and as street trees"
+    - region: "Central California"
+      notes: "Grows well in most areas; especially valued for fall color"
+      locations: "Common in parks, along city streets, and in gardens"
+    - region: "Northern California"
+      notes: "Common urban tree; tolerates foggy coastal areas"
+      locations: "Frequently used as street tree and in parks"
+      
+  confirmation_checklist:
+    - feature: "Fan-shaped leaves with a notch in the middle"
+      reliability: "Very high"
+      visibility: "Easy to see from nearby"
+    - feature: "Parallel veins in leaves (not branching like other trees)"
+      reliability: "Very high"
+      visibility: "Need to look at leaves closely"
+    - feature: "Bright golden-yellow fall color (in autumn)"
+      reliability: "Very high"
+      visibility: "Visible from far away in fall"
+    - feature: "Gray bark with vertical ridges on older trees"
+      reliability: "Medium"
+      visibility: "Need to look at trunk"
+    
+  look_alike_species:
+    - species: "None - No other tree species"
+      differences: "Ginkgo leaves are completely unique among trees"
+      identification_tip: "If you see fan-shaped leaves on a tree, it's definitely a ginkgo - no other tree has similar leaves"
+    - species: "Maidenhair Fern (Adiantum species)"
+      differences: "Not a tree but a small fern growing on the ground; similar leaf shape but much smaller plant"
+      identification_tip: "If it's a small plant growing on the ground, it's a fern - not a ginkgo tree"
+      
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Leaves emerge light green and gradually darken; male trees may have small pollen structures"
+      reproductive_activity: "Male trees release pollen; female trees develop tiny immature fruits"
+      identification_tips: "Young leaves are smaller but still have the distinctive fan shape"
+      kid_friendly_tip: "In spring, the baby ginkgo leaves unfold like tiny green fans"
+    
+    - season: "Summer" 
+      visual_changes: "Full, medium to dark green foliage; female trees have developing green fruits"
+      reproductive_activity: "Female trees develop small green fruits that are still firm"
+      identification_tips: "Mature leaves with distinctive fan shape are easy to identify"
+      kid_friendly_tip: "In summer, the leaves are fully grown and look like perfect green paper fans"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn bright golden yellow, often all at once; female trees have mature, smelly fruits"
+      reproductive_activity: "Fruits on female trees mature and fall, causing strong odor"
+      identification_tips: "Brilliant yellow color and distinctive leaf shape make fall identification easy"
+      kid_friendly_tip: "In fall, all the leaves turn bright gold, like the tree is covered in yellow coins, and then they all drop quickly, sometimes even on the same day!"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches; distinctive twig pattern visible"
+      reproductive_activity: "Dormant; no visible reproductive structures"
+      identification_tips: "Small spurs along branches where leaves were attached; gray, ridged bark on mature trees"
+      kid_friendly_tip: "In winter, look for a tree with gray, ridged bark and small bumps along the branches where next year's leaves will grow"
+      
+  cultural_ecological_notes:
+    - "Extremely resistant to pests, diseases, and pollution"
+    - "One of few trees to survive the atomic bombing of Hiroshima - some trees regrew after being burned"
+    - "Almost went extinct in the wild but was preserved in temple gardens in China"
+    - "Male trees are usually planted in cities to avoid the smelly fruits produced by females"
+    - "Can live for over 1,000 years; some trees in China are more than 2,500 years old"
+    
+  range_within_california:
+    - "Planted throughout California in urban settings"
+    - "Tolerates most climate zones, from cool coastal areas to hot inland valleys"
+    - "Does best with adequate water but tolerates drought once established"
+    - "Grows in most soil types, even poor or compacted urban soils"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Traditional Chinese"
+      physical_uses:
+        - "Seeds (nuts) eaten as a delicacy after cooking"
+        - "Leaves used in traditional medicine for memory and circulation"
+        - "Wood used for specialty items like game boards"
+        - "Seeds used in many festival foods and dishes"
+      symbolic_meaning:
+        - "Symbol of longevity, strength, and resilience"
+        - "Represents unity of opposites - the split leaf represents yin and yang"
+        - "Considered a 'living fossil' connecting the present to ancient times"
+        - "Often planted at temples and sacred sites for their spiritual significance"
+    
+    - culture: "Japanese"
+      physical_uses:
+        - "Seeds used in traditional dishes, especially for special occasions"
+        - "Planted as temple trees and in formal gardens"
+        - "Leaf extracts used in traditional health practices"
+      symbolic_meaning:
+        - "Symbol of endurance and hope (ginkgo trees survived the atomic bombing of Hiroshima)"
+        - "Represents unchanging friendship and love that endures through time"
+        - "The leaf shape is a popular motif in art, often representing balance"
+        - "Often given as a symbol of vitality and long life"
+    
+    - culture: "Modern Western"
+      physical_uses:
+        - "Leaf extracts used in supplements believed to help memory and circulation"
+        - "Planted as street trees for pollution tolerance and fall color"
+        - "Used in landscaping for distinctive appearance"
+        - "Leaf shape popular in jewelry and decorative arts"
+      symbolic_meaning:
+        - "Symbol of resilience and urban adaptability"
+        - "Represents connecting to ancient wisdom and history"
+        - "The distinctive leaf shape often symbolizes uniqueness and individuality"
+        - "Sometimes given as a symbol of hope and environmental endurance"
+    
+    - culture: "Modern California Landscape"
+      physical_uses:
+        - "Commonly planted as street and park trees"
+        - "Used for shade and fall color in urban settings"
+        - "Valued for pollution tolerance in city environments"
+        - "Planted in areas with limited space due to varieties with narrow forms"
+      symbolic_meaning:
+        - "Symbol of urban resilience and adaptation"
+        - "Represents biodiversity and the value of preserving ancient species"
+        - "Golden fall color symbolizes seasonal change and natural cycles"
+        - "Often planted to commemorate special events due to its longevity"
+    
+  # Additional physical characteristics not captured in features
+  physical_characteristics:
+    height_range: "50-80 feet (as tall as a 5-8 story building)"
+    growth_rate: "Slow to moderate, about 1 foot per year when young"
+    crown_spread: "30-40 feet wide when mature (about as wide as a small house)"
+    lifespan: "Extremely long-lived, typically over 1,000 years in native habitats"
+    trunk_diameter: "3-4 feet across when fully grown (about as wide as a car tire)"
+    root_system: "Deep and sometimes wide-spreading, relatively resistant to root damage"
+    toxicity: "Seed pulp can cause skin irritation; raw seeds contain toxins that are removed by cooking"
+    
+  conservation_status:
+    status: "Common in cultivation but endangered in the wild"
+    threats: 
+      - "Wild populations in China severely reduced by habitat loss"
+      - "Very few truly wild trees remain (most are from cultivated stock)"
+      - "Limited genetic diversity in cultivated populations"
+    protection_efforts:
+      - "Conservation efforts in China to protect remaining wild populations"
+      - "Seed banking and conservation plantings to preserve genetic diversity"
+      - "Protected as a living fossil with scientific importance"
+    
+  # Decision tree mapping - helps with algorithm creation
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-SHAPE-07"  # Fan-shaped
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-FALL-01"  # Yellow fall color
+    confirmation_features:
+      - "feature_id: BARK-TEXT-02"  # Furrowed bark
+      - "feature_id: TREE-FORM-05"  # Irregular crown
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-03", "TREE-FORM-05", "LEAF-FALL-01"]  # Tall tree, irregular form, yellow fall color
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SHAPE-07", "LEAF-COMPLEX-01", "BARK-TEXT-02"]  # Fan-shaped leaves, simple leaves, furrowed bark
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-ARRANGE-01", "TWIG-SIZE-02"]  # Alternate leaf arrangement, slender twigs
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-SHAPE-07", "LEAF-COMPLEX-01"]
+        notes: "Distinctive leaf shape makes spring identification reliable"
+      
+      summer:
+        reliability: "Very high" 
+        key_features: ["LEAF-SHAPE-07", "LEAF-COMPLEX-01", "BARK-TEXT-02"]
+        notes: "Fully developed leaves with distinctive shape make summer identification easy"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["LEAF-SHAPE-07", "LEAF-FALL-01", "SENSORY-SMELL-05"]
+        notes: "Golden yellow fan-shaped leaves are unmistakable in fall; female trees have distinctive smelly fruits"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["BARK-TEXT-02", "TREE-FORM-05", "BRANCH-ANGLE-01"]
+        notes: "Without leaves, rely on bark texture, growth form, and branch pattern"
+    misidentification_risks: "Almost no risk of misidentification due to unique leaf shape"
+
+  wildlife_value:
+    nesting_sites: "Birds may nest in branches"
+    food_source: "Seeds eaten by some wildlife in native range, but not significant in California"
+    shelter: "Provides seasonal shade and shelter"
+    ecological_notes: "Has limited wildlife value compared to native species, but does provide habitat structure"
+    
+  propagation_information:
+    growing_conditions: "Adaptable to most soils; prefers full sun"
+    water_needs: "Moderate when young; drought-tolerant once established"
+    planting_tips: "Plant male trees to avoid smelly fruits; allow room for growth"
+    maintenance: "Generally low-maintenance; prune when young to establish good structure"
+    special_notes: "Many cultivars available including narrow columnar forms for small spaces; 'Autumn Gold' and 'Princeton Sentry' are popular male cultivars"

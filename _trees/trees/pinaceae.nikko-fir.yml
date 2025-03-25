@@ -1,0 +1,243 @@
+tree:
+  common_name: Nikko Fir
+  scientific_name: Abies homolepis
+  family: Pinaceae
+  native: false
+
+  summary: Nikko Fir is an elegant tree from Japan that has been planted in California gardens and parks. It has a triangle shape like a Christmas tree, dark green needles with silvery-white stripes underneath, and standing-up purple-brown cones that turn brown as they grow. This medium to large tree that stays green all year is popular because it looks pretty, can grow in different types of soil, and doesn't mind air pollution, which makes it good for city parks.
+
+  identification_path:
+    primary_markers: "Triangle-shaped tree that stays green all year; soft, flat needles with silvery-white stripes underneath"
+    secondary_markers: "Purple-brown cones that stand up on branches; smooth gray bark on young trees that gets grooved as it grows older"
+    seasonal_markers: "Bright green new growth at branch tips in spring; upright purple-brown cones in summer and fall"
+    similar_species_differentiation: "Unlike White Fir, has dark green needles with distinct silvery-white stripes underneath, not bluish all over; unlike Grand Fir, needles aren't arranged as clearly in two rows"
+
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles all year round"
+      
+      - feature_id: "LEAF-SHAPE-21"  # Needle-like
+        notes: "Has soft, flat needle-like leaves"
+      
+      - feature_id: "TREE-SHAPE-01"  # Pyramidal/conical
+        notes: "Shaped like a triangle or Christmas tree"
+      
+      - feature_id: "CONE-POSITION-01"  # Upright
+        notes: "Cones stand up straight on the branches like little purple-brown candles"
+    
+    usually_true:
+      - feature_id: "TREE-SIZE-03"  # Large (50-100 feet)
+        notes: "Usually grows as tall as a 5-story building"
+        exceptions: "In some places with poor soil or not enough water, might only grow to medium size"
+      
+      - feature_id: "NEEDLE-ARRANGEMENT-04"  # Spirally arranged but appearing flattened
+        notes: "Needles grow all around the branch but look like they're spreading flat"
+        exceptions: "On some fast-growing or very young branches, the needle arrangement might look more spiral than flat"
+      
+      - feature_id: "NEEDLE-COLOR-04"  # Dark green above, silvery-white bands below
+        notes: "Needles are dark green on top with two silvery-white stripes underneath"
+        exceptions: "New growth in spring is lighter green before darkening"
+      
+      - feature_id: "HABITAT-05"  # Planted in landscapes
+        notes: "Usually found in parks, gardens, and college campuses"
+        exceptions: "Not often found in forests or wild areas in California"
+    
+    sometimes_true:
+      - feature_id: "TREE-SIZE-02"  # Medium (30-50 feet)
+        conditions: "When growing in poor soil, limited space, or drier conditions"
+        notes: "Can be as small as 3-story building size"
+      
+      - feature_id: "BARK-TEXTURE-05"  # Furrowed or ridged
+        conditions: "Older trees"
+        notes: "Bark develops grooves and cracks as the tree gets older"
+      
+      - feature_id: "HABITAT-03"  # Urban areas
+        conditions: "Sometimes planted in city parks or large yards"
+        notes: "Can handle city air pollution better than many other trees that stay green all year"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all its needles in the fall like maple or oak trees do"
+      
+      - feature_id: "NEEDLE-ARRANGEMENT-05"  # Clustered in bundles
+        notes: "Needles are never grouped in bundles like pine trees"
+      
+      - feature_id: "CONE-POSITION-02"  # Hanging/pendulous
+        notes: "Cones never hang down from branches like on spruce or hemlock trees"
+      
+      - feature_id: "HABITAT-02"  # Forests (in California)
+        notes: "Not found growing wild in California forests, only where people have planted them"
+
+  kid_friendly_identification:
+    primary_identifier: "Triangle-shaped tree with soft, flat needles that have silvery-white stripes underneath"
+    memorable_comparison: "Looks like a Christmas tree with two-toned needles - dark green on top and silvery underneath"
+    touch_tip: "The needles feel soft and flat when you touch them gently, not prickly like some other evergreen trees"
+    smell_tip: "If you gently crush a needle, it has a mild, pleasant forest smell"
+    fun_fact: "This tree is named after a beautiful mountain area in Japan called Nikko where there are famous shrines and temples!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the tree's shape. Is it shaped like a triangle or Christmas tree?"
+        yes_next: 2
+        no_next: "Probably not a Nikko Fir - try looking at other trees!"
+      - step: 2
+        instruction: "Look at a branch up close. Are the needles flat and soft (not sharp and poky)?"
+        yes_next: 3
+        no_next: "Not a Nikko Fir - try looking at pine or spruce trees instead"
+      - step: 3
+        instruction: "Turn a needle over. Do you see silvery-white stripes underneath the dark green needle?"
+        yes_next: 4
+        no_next: "Not a Nikko Fir - could be another kind of fir tree"
+      - step: 4
+        instruction: "In summer or fall, look for purple-brown cones standing up on the upper branches (like little candles)"
+        yes_next: "You found a Nikko Fir!"
+        no_next: "It might still be a Nikko Fir, but you'd need to check in another season when cones are visible"
+
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Bright green new growth appears at the tips of branches"
+      reproductive_activity: "Small yellow male pollen cones and tiny new female cones start to form"
+      identification_tips: "Look for the contrast between bright new growth and older dark green needles"
+      kid_friendly_tip: "In spring, the branch tips look like they've been dipped in light green paint!"
+    
+    - season: "Summer"
+      visual_changes: "All needles become uniformly dark green with silvery undersides"
+      reproductive_activity: "Female cones grow larger and develop a distinctive purple-brown color"
+      identification_tips: "Look for upright purple-brown cones on upper branches"
+      kid_friendly_tip: "Look up in the tree for purple-brown cones standing up like birthday candles"
+    
+    - season: "Fall"
+      visual_changes: "The tree stays dark green while other trees change color"
+      reproductive_activity: "Cones mature and start to fall apart on the tree to release seeds"
+      identification_tips: "The contrast with colorful deciduous trees makes identification easier"
+      kid_friendly_tip: "While other trees turn red and yellow, this tree stays green like it's not participating in fall"
+    
+    - season: "Winter"
+      visual_changes: "The dark green needles provide color in the winter landscape"
+      reproductive_activity: "No reproductive activity - the tree is resting"
+      identification_tips: "The triangle shape may be more visible, especially if snow highlights the branches"
+      kid_friendly_tip: "If it snows, the snow sits on the branches making it look like a frosted Christmas tree"
+
+  confirmation_checklist:
+    - feature: "Triangle or Christmas tree shape"
+      reliability: "High"
+      visibility: "Easy to see from far away"
+    
+    - feature: "Flat, soft needles about as long as your thumb"
+      reliability: "Very high"
+      visibility: "Need to look up close"
+    
+    - feature: "Needles dark green on top with two silvery-white stripes underneath"
+      reliability: "Very high" 
+      visibility: "Need to turn needles over to see"
+    
+    - feature: "Purple-brown cones standing upright on upper branches"
+      reliability: "High (when present)"
+      visibility: "Medium - need to look carefully in upper branches"
+    
+    - feature: "Smooth grayish bark on young trees, becoming grooved with age"
+      reliability: "Medium"
+      visibility: "Easy to see on trunk"
+
+  look_alike_species:
+    - species: "White Fir (Abies concolor)"
+      differences: "White Fir has longer, more curved needles that are bluish-green to silvery on both sides, without the distinct white stripes underneath"
+      identification_tip: "Turn over a needle - White Fir doesn't have the two clear silvery-white stripes underneath"
+    
+    - species: "Grand Fir (Abies grandis)"
+      differences: "Grand Fir has similar flat needles but they are glossy green on top and white below, and arranged more clearly in two rows"
+      identification_tip: "Grand Fir's needles line up in more obvious rows, like a neat part in your hair"
+    
+    - species: "Momi Fir (Abies firma)"
+      differences: "Another Japanese fir that looks similar but has needles with notched tips and more grooved twigs"
+      identification_tip: "Look at the tip of a needle - Momi Fir has a tiny notch at the end"
+    
+    - species: "Noble Fir (Abies procera)"
+      differences: "Has bluish-green needles that curve upward more noticeably and has larger cones"
+      identification_tip: "Noble Fir needles curve up like they're giving the branch a hug, and the cones are bigger"
+
+  cultural_significance:
+    - culture: "Japanese"
+      physical_uses:
+        - "Wood is used for building houses and making furniture because it's strong and straight"
+        - "Sometimes used for making paper in Japan"
+      symbolic_meaning:
+        - "In Japan, it's one of the five sacred trees of Kiso, which are special protected trees"
+        - "Named after the Nikko region, home to famous shrines and temples that millions of people visit"
+    
+    - culture: "American Landscape Design"
+      physical_uses:
+        - "Planted in parks and big gardens as a decorative tree"
+        - "Used to create formal garden designs because of its neat triangle shape"
+      symbolic_meaning:
+        - "Represents the sharing of plants between Japan and America that has made American gardens more diverse and interesting"
+
+  range_within_california: "Not native to California. Only found where people have planted it in parks, college campuses, and botanical gardens. Grows better in cooler parts of California where there's more rain. Prefers sunny or partly shady spots and can grow in many types of soil."
+
+  physical_characteristics:
+    height: "40-80 feet (as tall as a 4-8 story building)"
+    width: "20-30 feet (as wide as a small house)"
+    growth_rate: "Medium - grows about 12 inches per year"
+    lifespan: "Can live 100-150 years in good conditions"
+    bark: "Smooth and gray when young, developing grooves and cracks as it gets older"
+    leaves: "Flat needles, about as long as your thumb, dark green above with two silvery-white stripes below"
+    flowers: "Not true flowers - has small yellow pollen cones and upright seed cones"
+    fruit: "Upright purple-brown cones, 3-4 inches long (about as long as your finger), turning brown as they mature"
+    seeds: "Small winged seeds that can spin like helicopter blades when falling"
+    trunk_diameter: "Can grow 1-2 feet across (about as wide as a dinner plate)"
+    root_system: "Moderately deep with wide spreading roots"
+    toxicity: "Not poisonous, but sap might irritate sensitive skin"
+    suitable_for_public_spaces: true
+
+  conservation_status:
+    status: "Near Threatened in its native Japan"
+    threats: "Habitat loss in Japan due to development and logging"
+    protection_efforts: "Protected in national parks and forest reserves in Japan; not of conservation concern in California where it exists only as a planted tree"
+
+  decision_tree_placement:
+    primary_split_features:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+      - feature_id: "LEAF-SHAPE-21"  # Needle-like
+      - feature_id: "TREE-SHAPE-01"  # Pyramidal/conical
+    
+    confirmation_features:
+      - feature_id: "NEEDLE-COLOR-04"  # Dark green with silver bands beneath
+      - feature_id: "CONE-POSITION-01"  # Upright cones
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SHAPE-01", "LEAF-TYPE-02"]  # Triangle shape, evergreen
+      
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-ARRANGEMENT-04", "NEEDLE-COLOR-04"]  # Flattened appearance, two-toned needles
+      
+      - distance: "close_inspection"
+        features_to_check: ["CONE-POSITION-01", "BARK-TEXTURE-05"]  # Upright cones, bark texture
+    
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "TREE-SHAPE-01", "NEEDLE-COLOR-04"]
+        notes: "New growth provides good color contrast for identification"
+      
+      summer:
+        reliability: "Very high"
+        key_features: ["NEEDLE-COLOR-04", "CONE-POSITION-01", "TREE-SHAPE-01"]
+        notes: "Purple-brown upright cones are distinctive and visible"
+      
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "NEEDLE-COLOR-04", "CONE-POSITION-01"]
+        notes: "Stands out among trees that lose their leaves or change color"
+      
+      winter:
+        reliability: "Medium-high"
+        key_features: ["LEAF-TYPE-02", "TREE-SHAPE-01", "NEEDLE-COLOR-04"]
+        notes: "Triangle shape more visible when deciduous trees are bare"
+    
+    misidentification_risks:
+      - "Could be confused with other fir species, especially White Fir or Grand Fir"
+      - "Young trees might be harder to differentiate from other young evergreens"
+
+  wildlife_value: "As a non-native tree in California, Nikko Fir doesn't have the same relationships with local wildlife as native trees. However, it can still be helpful to animals. Birds may use the dense branches for shelter and nesting spots, especially in winter. Some birds might eat the seeds, though they're not a major food source for California wildlife. The tree might also have insects living on it that birds and other small animals can eat. While not as valuable to local wildlife as native trees, it can still provide some homes and food for animals in city and suburban areas."

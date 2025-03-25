@@ -1,0 +1,296 @@
+tree:
+  common_name: "Manchurian Birch"
+  scientific_name: "Betula platyphylla var. mandshurica"
+  family: "Betulaceae"
+  
+  # Basic summary information
+  summary: "A medium-sized deciduous tree with striking white bark that peels in horizontal paper-like strips. Has triangular to diamond-shaped leaves with doubly serrated edges and a long pointed tip. Native to northeastern Asia including Manchuria, Korea, and Japan, it's valued for its elegant form, brilliant golden-yellow fall color, and distinctive white bark."
+  
+  # Identification priority path
+  identification_path:
+    primary_markers: "Bright white bark that peels in thin horizontal strips; triangular to diamond-shaped leaves with doubly serrated edges and drawn-out pointed tips"
+    secondary_markers: "Alternate leaf arrangement; dangling male catkins in spring; slender branches often with pendulous tips; golden-yellow fall color"
+    seasonal_markers: "Catkins appear before leaves in spring; brilliant golden-yellow autumn foliage; white bark particularly striking in winter landscape"
+    similar_species_differentiation: "More triangular leaves than Paper Birch; has whiter bark than Asian White Birch; more upright form than European Birch; larger leaves than Japanese White Birch"
+  
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves in fall"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Each leaf is one piece, not divided into smaller leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow in an alternating pattern along branches"
+      
+      - feature_id: "LEAF-EDGE-03"  # Doubly serrated
+        notes: "Leaf edges have teeth of two different sizes"
+      
+      - feature_id: "BARK-COLOR-02"  # White bark
+        notes: "Has brilliant white bark, especially noticeable on trunk and main branches"
+      
+      - feature_id: "FLOWER-TYPE-01"  # Catkins present
+        notes: "Produces hanging catkins in spring"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        notes: "Leaves turn brilliant golden-yellow in fall"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        notes: "Not native to California; originally from northeastern Asia"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with one main trunk"
+        exceptions: "May develop multiple trunks if damaged when young"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Mature trees typically reach 30-60 feet tall"
+        exceptions: "May remain smaller in poor growing conditions or at the edge of its range"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Bark peels in thin horizontal, paper-like strips"
+        exceptions: "Very young trees may have smooth bark that hasn't yet developed the characteristic peeling"
+      
+      - feature_id: "BRANCH-ANGLE-02"  # Ascending branches
+        notes: "Main branches typically angle upward"
+        exceptions: "Branch tips may become somewhat pendulous, especially in older specimens"
+    
+    sometimes_true:
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Very young trees"
+        notes: "Young trees have smooth bark before developing the characteristic peeling"
+      
+      - feature_id: "TREE-FORM-03"  # Weeping form
+        conditions: "Some mature specimens, especially in open settings"
+        notes: "Can develop somewhat pendulous branch tips, though not as weeping as European Birch"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "When planted in suitable locations with well-drained soil"
+        notes: "Can be grown in urban settings in cooler climate zones of California"
+      
+      - feature_id: "TWIG-SIZE-02"  # Slender twigs
+        conditions: "Especially on younger growth and outer branches"
+        notes: "Has delicate, slender twigs, particularly at branch tips"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops all its leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has compound leaves"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves are always arranged alternately, never opposite"
+      
+      - feature_id: "GEO-REGION-03"  # Southern California
+        notes: "Does not grow well in Southern California's hot climate"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Never has thorns or spines on any part of the tree"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Bright white bark that peels in paper-thin strips like nature's stickers"
+    memorable_comparison: "The trunk looks like it's covered in white paper that's peeling off in strips"
+    touch_tip: "Gently touch the bark - it feels smooth and the paper-thin pieces peel away easily"
+    smell_tip: "The leaves have a fresh, slightly sweet scent when crushed"
+    fun_fact: "In its native Asia, people have used the paper-like bark for thousands of years to write messages on - it was like natural paper before paper was invented!"
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the bark. Is it bright white with thin papery strips peeling off?"
+        yes_next: 2
+        no_next: "Not a Manchurian Birch - their bright white, peeling bark is their most noticeable feature"
+      - step: 2
+        instruction: "Look at a leaf. Is it shaped like a triangle or diamond with a long pointed tip and double-toothed edges?"
+        yes_next: 3
+        no_next: "Might be another type of birch - check the leaf shape carefully"
+      - step: 3
+        instruction: "How are the leaves arranged on the branch? Do they alternate (zigzag pattern) rather than grow directly across from each other?"
+        yes_next: 4
+        no_next: "Not a Manchurian Birch - their leaves grow in an alternating pattern"
+      - step: 4
+        instruction: "In spring, do you see long, dangling catkins hanging from branches? In fall, are the leaves bright golden-yellow?"
+        yes_next: "You found a Manchurian Birch!"
+        no_next: "It might still be a Manchurian Birch, but look for catkins in spring or yellow leaves in fall to be sure"
+  
+  # Seasonal timeline
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Male catkins appear before leaves emerge; new leaves unfold light green and slightly sticky; female catkins develop"
+      reproductive_activity: "Male catkins release pollen; female catkins are pollinated by wind"
+      identification_tips: "Long, dangling male catkins (2-3 inches) are distinctive in early spring"
+      kid_friendly_tip: "In spring, look for hanging 'caterpillar' flowers (catkins) that dangle from branches before the leaves come out"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of medium to dark green leaves; female catkins mature into small cylindrical structures"
+      reproductive_activity: "Seeds develop within small, erect cylindrical female catkins"
+      identification_tips: "White bark contrasts with green leaves; triangular leaf shape with long pointed tip is distinctive"
+      kid_friendly_tip: "In summer, the bright white bark looks like a cool white t-shirt against the green leafy 'sleeves'"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn brilliant golden-yellow; seeds are released from mature female catkins"
+      reproductive_activity: "Small winged seeds disperse with wind"
+      identification_tips: "Brilliant golden-yellow leaves create striking contrast against white bark"
+      kid_friendly_tip: "In fall, the leaves turn bright golden-yellow like treasure coins growing on a white tree trunk"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches reveal full extent of brilliant white bark; male catkins for next spring already formed"
+      reproductive_activity: "Dormant; next year's catkins are present but remain closed"
+      identification_tips: "Bright white peeling bark is highly visible and distinctive in winter landscape"
+      kid_friendly_tip: "In winter, the white bark looks extra bright against dark tree trunks or snow - like a white ghost tree in the forest"
+      
+  confirmation_checklist:
+    - feature: "Bright white bark that peels in paper-thin horizontal strips"
+      reliability: "Very high"
+      visibility: "Visible from a distance"
+    - feature: "Triangular to diamond-shaped leaves with doubly serrated edges and long pointed tip"
+      reliability: "High"
+      visibility: "Need to look closely at leaves"
+    - feature: "Alternate leaf arrangement"
+      reliability: "High"
+      visibility: "Need to look at branches closely"
+    - feature: "Brilliant golden-yellow fall color"
+      reliability: "High (fall only)"
+      visibility: "Visible from a distance in fall"
+    - feature: "Hanging catkins in spring"
+      reliability: "High (spring only)"
+      visibility: "Visible from nearby in spring"
+    
+  look_alike_species:
+    - species: "Paper Birch (Betula papyrifera)"
+      differences: "Manchurian Birch has more triangular leaves with longer pointed tips; often has more upright growth habit"
+      identification_tip: "Compare leaf shapes - Manchurian Birch leaves are more triangular with a long drawn-out tip"
+    - species: "European White Birch (Betula pendula)"
+      differences: "European White Birch has more pendulous branches and often has black diamond-shaped marks on the trunk"
+      identification_tip: "European Birch has more dramatically weeping branches and usually darker marks on the trunk"
+    - species: "Japanese White Birch (Betula platyphylla var. japonica)"
+      differences: "Very similar but Japanese White Birch typically has smaller leaves and is shorter in stature"
+      identification_tip: "Hard to distinguish without expert knowledge; Manchurian Birch typically has larger leaves and grows taller"
+    - species: "Asian White Birch (Betula platyphylla)"
+      differences: "Manchurian Birch is a variety of Asian White Birch but has brighter white bark and larger leaves"
+      identification_tip: "Manchurian Birch is distinguished by especially white bark and larger leaf size"
+    
+  cultural_ecological_notes:
+    - "Fast-growing tree that helps reestablish forests after disturbance in its native range"
+    - "Bark contains betulin, a compound with medicinal properties"
+    - "Seeds provide important food for small birds, especially finches"
+    - "Tolerates poor soil conditions but prefers well-drained sites"
+    - "More resistant to bronze birch borer than many other white-barked birches"
+    - "Valuable tree for reforestation in cold northern regions"
+    
+  range_within_california:
+    - "Not native to California"
+    - "Can be grown in cooler northern and mountain regions of the state"
+    - "Not suitable for hot inland valleys or Southern California"
+    - "Requires cooler temperatures and adequate moisture"
+    - "Best in areas with cold winters and moderate summers"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Manchurian/Northern Chinese"
+      physical_uses:
+        - "Used the bark for writing material and creating containers"
+        - "Made medicinal preparations from the bark to treat skin conditions"
+        - "Harvested sap in spring for drinking and as a tonic"
+        - "Used wood for carving, furniture and tool handles"
+        - "Bark used for waterproofing roofs and canoes"
+      symbolic_meaning:
+        - "Symbolized purity and cleansing due to its white color"
+        - "Associated with the changing seasons and renewal"
+        - "The peeling bark represented shedding the old to make way for new growth"
+        - "Often planted near homes for protection and good fortune"
+    
+    - culture: "Korean Traditional"
+      physical_uses:
+        - "Bark used for making traditional paper products"
+        - "Created medicine from bark for fever and inflammation"
+        - "Produced dyes from different parts of the tree"
+        - "Made containers and craft items from the bark"
+        - "Used branches for basketry and household items"
+      symbolic_meaning:
+        - "Represented resilience and ability to thrive in harsh conditions"
+        - "Associated with purification and spiritual cleansing"
+        - "White color symbolized clarity and pure intentions"
+        - "Seen as a connection between earth and heaven due to its height and light color"
+    
+    - culture: "Contemporary Landscape Design"
+      physical_uses:
+        - "Valued specimen tree for parks and large gardens"
+        - "Used for its architectural form and striking bark in landscape design"
+        - "Planted as a focal point for winter interest"
+        - "Good choice for naturalistic woodland gardens"
+        - "Used in groupings to create striking visual effects"
+      symbolic_meaning:
+        - "Represents elegance and simplicity in modern design"
+        - "The white bark symbolizes light in dark winter landscapes"
+        - "Golden fall color represents seasonal beauty and change"
+        - "Valued for creating peaceful, contemplative spaces"
+    
+  # Additional physical characteristics not captured in features
+  physical_characteristics:
+    height_range: "30-60 feet tall (about as tall as a 3-6 story building)"
+    growth_rate: "Fast growing, about 1-2 feet per year when young"
+    crown_spread: "20-35 feet wide when mature (about as wide as a large room)"
+    lifespan: "Moderate lifespan, typically 80-100 years"
+    trunk_diameter: "1-2 feet in diameter when mature"
+    root_system: "Moderately shallow, spreading root system"
+    toxicity: "Not toxic to humans or animals"
+    
+  conservation_status:
+    status: "Secure in its native range; widely cultivated"
+    threats: 
+      - "Bronze birch borer (though more resistant than many birches)"
+      - "Climate change may affect suitable habitat range"
+      - "Susceptible to drought and heat stress outside its natural range"
+      - "Leaf spot diseases in wet conditions"
+    protection_efforts:
+      - "No special protection needed as the species is abundant in its native range"
+      - "Selection of pest-resistant varieties for landscape use"
+      - "Research into more climate-adapted varieties"
+    
+  # Decision tree mapping - helps with algorithm creation
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: BARK-COLOR-02"  # White bark
+      - "feature_id: BARK-TEXT-03"  # Peeling bark
+      - "feature_id: LEAF-ARRANGE-01"  # Alternate
+    confirmation_features:
+      - "feature_id: LEAF-EDGE-03"  # Doubly serrated
+      - "feature_id: LEAF-FALL-01"  # Yellow fall color
+      - "feature_id: FLOWER-TYPE-01"  # Catkins present
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["BARK-COLOR-02", "TREE-SIZE-02", "LEAF-FALL-01"]  # White bark, medium tree, yellow fall color
+      - distance: "from_nearby"
+        features_to_check: ["BARK-TEXT-03", "LEAF-ARRANGE-01", "LEAF-EDGE-03"]  # Peeling bark, alternate arrangement, doubly serrated edges
+      - distance: "close_inspection"
+        features_to_check: ["FLOWER-TYPE-01", "TWIG-SIZE-02"]  # Catkins, slender twigs
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["BARK-COLOR-02", "BARK-TEXT-03", "FLOWER-TYPE-01"]
+        notes: "White peeling bark and distinctive catkins make spring identification straightforward"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["BARK-COLOR-02", "BARK-TEXT-03", "LEAF-EDGE-03"]
+        notes: "White bark, leaf characteristics, and developing seed catkins help with summer ID"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["BARK-COLOR-02", "BARK-TEXT-03", "LEAF-FALL-01"]
+        notes: "Combination of white bark and brilliant golden-yellow fall color is highly distinctive"
+      
+      winter:
+        reliability: "Very high"
+        key_features: ["BARK-COLOR-02", "BARK-TEXT-03"]
+        notes: "Bright white peeling bark is extremely prominent and distinctive in winter"
+    misidentification_risks: "Most often confused with other white-barked birch species"
+
+  wildlife_value:
+    - "Seeds eaten by small birds including finches, chickadees, and siskins"
+    - "Buds and catkins provide winter food for birds"
+    - "Young twigs occasionally browsed by deer and moose in native range"
+    - "Provides nesting sites for various birds, especially in older trees"
+    - "Supports various moth and butterfly larvae that are food for birds"

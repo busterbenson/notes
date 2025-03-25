@@ -1,0 +1,274 @@
+tree:
+  common_name: "California Torreya"
+  scientific_name: "Torreya californica"
+  family: "Taxaceae"
+  
+  # Basic summary
+  summary: "An evergreen conifer with stiff, sharp-pointed needles that smell strong when crushed. It produces unique olive-shaped seeds covered by a fleshy purple coating when ripe. The tree grows with a narrow, pyramid shape when young but becomes more irregular with age."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Stiff, shiny dark green needles about 1-2 inches long with very sharp points; strong, distinctive smell when needles are crushed"
+    secondary_markers: "Olive-shaped seeds with fleshy purple covering when ripe; needles arranged in two flat rows along branches; grows in shady, moist canyons"
+    seasonal_markers: "No seasonal leaf change; seeds mature and turn purple in fall"
+    similar_species_differentiation: "Unlike Pacific Yew, has much sharper needle points and larger olive-like seeds instead of red berry-like structures; unlike young Coast Redwood, has stiffer, sharper needles arranged in flat rows"
+  
+  # Core features
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles year-round"
+      
+      - feature_id: "NEEDLE-SHAPE-01"  # Flat needles
+        notes: "Needles are flat but with very sharp, pointed tips"
+      
+      - feature_id: "NEEDLE-ARRANGE-08"  # Flattened spray needles
+        notes: "Needles arranged in two flat rows along the branches like a comb"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        notes: "Strong, distinctive smell when needles are crushed - similar to tomato plants or citrus"
+        
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Native to California coast ranges and Sierra foothills"
+
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with a single straight trunk"
+        exceptions: "Can occasionally develop multiple stems, especially after damage"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Usually grows 15-60 feet tall"
+        exceptions: "May be smaller in deep shade or poor conditions"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Has a narrow, pyramid shape when young"
+        exceptions: "Becomes more irregular with age or in deep shade"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Young trees have smooth gray-green bark"
+        exceptions: "Older trees develop more texture and reddish-brown color"
+
+    sometimes_true:
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        conditions: "Older trees"
+        notes: "Bark on mature trees may peel in thin strips"
+      
+      - feature_id: "FRUIT-TYPE-07"  # Drupes
+        conditions: "Female trees in fall (seeds with fleshy covering)"
+        notes: "Produces olive-shaped seeds covered with fleshy purple coating when ripe"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        conditions: "Often found near streams in moist canyons"
+        notes: "Prefers shady, moist growing conditions"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "Found in Coast Ranges from Monterey to Mendocino"
+        notes: "Common in coastal mountains of northern California"
+      
+      - feature_id: "HABITAT-LOC-02"  # Mountain habitat
+        conditions: "Sierra Nevada foothills"
+        notes: "Found in the foothills of the Sierra Nevada mountains"
+
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Always keeps its needles, never drops them all at once"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Has needles, not broad leaves"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Produces fleshy seed structures, not woody cones"
+      
+      - feature_id: "FRUIT-TYPE-03"  # Berries present
+        notes: "Produces fleshy-covered seeds that look like olives, not true berries"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Very sharp, pointy needles that can poke through clothing, arranged in flat rows along the branches"
+    memorable_comparison: "The needles look like tiny swords arranged like the teeth of a comb, and they're so sharp they can poke through your shirt if you're not careful!"
+    touch_tip: "Be very careful - don't grab branches with bare hands because the needles are extremely sharp. Instead, gently touch just one needle on its side with a single finger."
+    smell_tip: "With an adult's help, crush just one needle and sniff carefully - it smells like a mix of tomatoes and citrus, very different from other evergreen trees"
+    fun_fact: "This tree is a living fossil! Trees very similar to the California Torreya were growing when dinosaurs roamed the earth. Also, its wood is so hard and dense that it doesn't float in water like most woods - it sinks!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at how the needles are arranged - are they in flat rows along the sides of the branch like a comb?"
+        yes_next: 2
+        no_next: "Not a California Torreya - check other evergreen trees"
+      - step: 2
+        instruction: "CAREFULLY touch the needle tip with one finger - is it extremely sharp and pointy? (Be very careful!)"
+        yes_next: 3
+        no_next: "Probably not a Torreya - if needles are soft-tipped, check Pacific Yew instead"
+      - step: 3
+        instruction: "With an adult's help, gently crush one needle and smell it - does it have a strong, unusual smell unlike regular pine trees?"
+        yes_next: "You found a California Torreya!"
+        no_next: "Might be another conifer with sharp needles - check with an adult"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New growth appears as lighter green needle tips; small pollen structures may be visible on male trees"
+      reproductive_activity: "Male trees release pollen; female trees develop small seed structures"
+      identification_tips: "Look for contrasting new growth at branch tips and small pollen structures on male trees"
+      kid_friendly_tip: "In spring, look for the bright green new growth at the tips of branches - they're like tiny green candles on the ends!"
+    
+    - season: "Summer" 
+      visual_changes: "Uniform dark green throughout; developing seeds growing larger"
+      reproductive_activity: "Seed structures continue developing, growing larger"
+      identification_tips: "Shiny dark green needles are distinctive; developing seeds may be visible on female trees"
+      kid_friendly_tip: "In summer, the tree looks dark green and shiny, and you might see green olive-shaped seeds starting to grow"
+    
+    - season: "Fall"
+      visual_changes: "No color change; seeds mature and develop purple fleshy covering"
+      reproductive_activity: "Seeds mature and may drop to ground"
+      identification_tips: "Look for purple olive-like seeds; tree remains evergreen with no color change"
+      kid_friendly_tip: "In fall, look for seeds that look like small purple olives - but don't eat them! They're for animals and new trees."
+    
+    - season: "Winter"
+      visual_changes: "Remains dark green; no seasonal changes visible"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Dark green needles and overall shape stand out against deciduous trees"
+      kid_friendly_tip: "Even in winter when other trees lose their leaves, the California Torreya stays green with all its sharp needles"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Stiff, sharp-pointed needles arranged in flat rows"
+      reliability: "Very high"
+      visibility: "Easy to see but be careful touching"
+    - feature: "Strong, distinctive smell when needles are crushed"
+      reliability: "Very high"
+      visibility: "Requires interaction - crush and smell"
+    - feature: "Purple, olive-shaped seeds if present in fall"
+      reliability: "High (when present)"
+      visibility: "Medium - visible on female trees in season"
+    - feature: "Growing in shady, moist forest habitat"
+      reliability: "Medium"
+      visibility: "Requires knowledge of surrounding area"
+    
+  look_alike_species:
+    - species: "Pacific Yew (Taxus brevifolia)"
+      differences: "Pacific Yew has softer, less pointy needles and produces bright red berry-like structures instead of olive-like seeds"
+      identification_tip: "If the needles don't hurt when you touch them, and the fruit is red, it's likely Pacific Yew, not Torreya"
+    - species: "Coast Redwood (Sequoia sempervirens) saplings"
+      differences: "Young redwoods have softer needles arranged all around the twig, not in flat rows, and have red-brown spongy bark"
+      identification_tip: "Redwood needles are softer and arranged differently; bark is redder and spongier"
+    - species: "Western Hemlock (Tsuga heterophylla)"
+      differences: "Hemlock has tiny, soft needles with rounded tips and a drooping top branch"
+      identification_tip: "If the tree has a droopy top and small soft needles, it's Hemlock, not Torreya"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Pomo"
+      physical_uses:
+        - "Used the hard, strong wood to make hunting tools that needed to be durable"
+        - "Carved the straight-grained wood into bows for hunting"
+        - "Occasionally used ground seeds as a paste for treating skin conditions"
+      symbolic_meaning:
+        - "The tree's long life represented strength and endurance"
+        - "The sharp needles symbolized protection against harmful spirits"
+        - "The tree's ability to grow in deep shade represented resilience"
+    
+    - culture: "Northern Sierra Miwok"
+      physical_uses:
+        - "Crafted the dense wood into special tools that required strength"
+        - "Used the wood for making hunting implements"
+        - "Sometimes used parts of the tree in traditional medicine"
+      symbolic_meaning:
+        - "The sharp needles represented the need for caution and awareness in the forest"
+        - "Featured in stories about forest wisdom and paying attention to small details"
+        - "The unique smell taught children about using all senses when identifying plants"
+    
+    - culture: "Yokut"
+      physical_uses:
+        - "Carved the wood to make tools for hunting and food preparation"
+        - "Sometimes used crushed needles in medicinal teas for treating colds"
+        - "Used wood for making ceremonial items"
+      symbolic_meaning:
+        - "The distinctive seeds were considered valuable and special"
+        - "The tree's ability to thrive in deep shade symbolized finding strength in difficult places"
+        - "Featured in teachings about the special qualities of different forest plants"
+    
+  cultural_ecological_notes:
+    - "Provides shelter and food for forest animals, especially squirrels that eat the seeds"
+    - "Can grow in very deep shade where few other trees can survive"
+    - "Part of the understory in mixed evergreen forests"
+    - "Seeds are dispersed by animals who eat the fleshy covering"
+    - "An unusual conifer that produces fleshy seed coverings rather than cones"
+    
+  range_within_california:
+    - "Found in the Coast Ranges from Santa Cruz County north to Mendocino County"
+    - "Also grows in the Sierra Nevada foothills from Tulare County to Yuba County"
+    - "Usually found at elevations between 100-6,500 feet"
+    - "Prefers shady, moist canyons and slopes, often near streams"
+    - "Typically grows as an understory tree beneath taller species"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "15-60 feet (about 2-6 stories tall)"
+    growth_rate: "Slow"
+    crown_spread: "10-30 feet at maturity"
+    lifespan: "Up to 500 years"
+    trunk_diameter: "Up to 2 feet across"
+    root_system: "Moderate depth with spreading roots"
+    toxicity: "Seeds contain mildly toxic compounds - do not eat"
+  
+  conservation_status:
+    status: "Not endangered but uncommon throughout its range"
+    threats: 
+      - "Habitat loss from development and logging"
+      - "Climate change potentially affecting suitable habitat"
+      - "Fire suppression that may reduce new tree growth"
+      - "Potential susceptibility to sudden oak death pathogen"
+    protection_efforts:
+      - "Protected in several state and national parks and forests"
+      - "Included in forest conservation plans"
+      - "Research into propagation techniques"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: NEEDLE-SHAPE-01"  # Flat needles
+      - "feature_id: NEEDLE-ARRANGE-08"  # Flattened spray needles
+    confirmation_features:
+      - "feature_id: SENSORY-SMELL-01"  # Aromatic leaves
+      - "feature_id: FRUIT-TYPE-07"  # Drupes (fleshy seed covering)
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-TYPE-02", "TREE-FORM-01"]  # Evergreen, Pyramidal shape
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-ARRANGE-08", "NEEDLE-SHAPE-01"]  # Flattened spray needles, Flat needles
+      - distance: "close_inspection"
+        features_to_check: ["SENSORY-SMELL-01", "FRUIT-TYPE-07"]  # Aromatic leaves, Drupes
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-08", "NEEDLE-SHAPE-01"]
+        notes: "New growth and male pollen structures provide additional confirmation"
+      
+      summer:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-08", "NEEDLE-SHAPE-01"]
+        notes: "Dark green flat needles in rows are most obvious"
+      
+      fall:
+        reliability: "Very high" 
+        key_features: ["FRUIT-TYPE-07", "NEEDLE-ARRANGE-08"]
+        notes: "Distinctive purple olive-like seeds make fall identification easiest"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["NEEDLE-ARRANGE-08", "TREE-FORM-01"]
+        notes: "Look for flat needle arrangement and conical form"
+    misidentification_risks: 
+      - "Pacific Yew has similar needle arrangement but softer needles and red berry-like structures"
+      - "Young Coast Redwood has softer needles arranged differently and reddish bark"
+      - "Western Hemlock has shorter, softer needles and drooping leader at top"
+  
+  wildlife_value:
+    food_source:
+      - "Seeds eaten by squirrels and other small mammals"
+      - "Provides browse for deer in winter when other food is scarce"
+    habitat_provided:
+      - "Dense evergreen foliage provides shelter for birds and small animals"
+      - "Shade creates cool microhabitat for forest floor species"
+    ecosystem_role: "Part of the diverse understory in mixed conifer forests; can grow in deep shade where few other trees survive"

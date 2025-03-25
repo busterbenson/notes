@@ -1,0 +1,229 @@
+tree:
+  common_name: "Murray's Birch"
+  scientific_name: "Betula murrayana"
+  family: "Betulaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A medium-sized tree with bright white bark that peels in horizontal, paper-like sheets. Has diamond-shaped or triangular leaves with tiny teeth along the edges, and dangling catkins in spring that look like fuzzy caterpillars."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Bright white bark that peels in horizontal paper-like sheets; diamond-shaped leaves with double-toothed edges"
+    secondary_markers: "Medium-sized tree with oval to pyramidal shape; alternate leaf arrangement"
+    seasonal_markers: "Dangling male catkins in spring; clear yellow fall color"
+    similar_species_differentiation: "Unlike Paper Birch, has more diamond-shaped leaves; unlike European White Birch, has doubly-toothed leaf edges"
+  
+  # Core features section
+  features:
+    always_true:
+      # Reference features.yml IDs with tree-specific notes
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops all leaves in fall and grows new ones each spring"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow singly along branches in a zigzag pattern, not in pairs"
+      
+      - feature_id: "BARK-COLOR-02"  # White bark
+        notes: "Bright white bark that stands out in the landscape"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Bark peels in horizontal paper-like layers or sheets"
+    
+    usually_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        exceptions: "May remain smaller in poor growing conditions or when young"
+        notes: "Usually grows 30-50 feet tall at maturity"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        exceptions: "May be more pyramidal when young"
+        notes: "Forms an oval to rounded shape with maturity"
+      
+      - feature_id: "LEAF-EDGE-03"  # Doubly serrated
+        exceptions: "Some leaves may show less distinct double serration"
+        notes: "Leaf edges have two sets of teeth - larger teeth with smaller teeth on them"
+      
+      - feature_id: "LEAF-SHAPE-05"  # Lobed
+        exceptions: "Shape can vary somewhat within the same tree"
+        notes: "Leaves typically diamond-shaped or triangular"
+    
+    sometimes_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "TREE-SIZE-01"  # Small tree
+        conditions: "When young or in poor growing conditions"
+        notes: "May stay under 30 feet tall in some landscape settings"
+      
+      - feature_id: "FLOWER-TYPE-01"  # Catkins present
+        conditions: "During spring flowering season"
+        notes: "Male catkins are long and hanging; female catkins are shorter and upright"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "In autumn before leaf drop"
+        notes: "Leaves turn clear yellow in fall"
+    
+    never_true:
+      # Features explicitly absent that help differentiation
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops leaves in fall; never stays green year-round"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves never grow in pairs across from each other on branches"
+      
+      - feature_id: "BARK-COLOR-06"  # Black bark
+        notes: "Bark is always white, never dark"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Bright white bark that peels like paper and diamond-shaped leaves with tiny teeth"
+    memorable_comparison: "The bark looks like you could write on it just like paper!"
+    touch_tip: "The bark feels smooth and papery, and you can gently peel small pieces"
+    smell_tip: "The leaves don't have a strong smell when crushed"
+    fun_fact: "This tree is like a 'super tree' that scientists made by combining two different kinds of birch trees to make one that grows better in warm places like California!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the bark. Is it bright white and peeling in thin paper-like strips?"
+        yes_next: 2
+        no_next: "Not a Murray's Birch - might be a different kind of tree"
+      - step: 2
+        instruction: "Look at a leaf. Is it shaped like a diamond or triangle with tiny teeth all around the edges?"
+        yes_next: 3
+        no_next: "Might be a different kind of birch - check the leaf shape again"
+      - step: 3
+        instruction: "Is the tree medium-sized (about as tall as a three-story building) with a rounded or oval shape?"
+        yes_next: "You found a Murray's Birch!"
+        no_next: "Might be another type of white-barked birch - check with an adult"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New light green leaves emerge; male and female catkins appear"
+      reproductive_activity: "Male catkins are long and pendulous; female catkins are shorter and upright"
+      identification_tips: "Catkins and new leaf growth help with spring identification"
+      kid_friendly_tip: "In spring, look for hanging 'caterpillars' (catkins) and fresh light green leaves"
+    
+    - season: "Summer" 
+      visual_changes: "Leaves mature to dark green; white bark stands out against the green foliage"
+      reproductive_activity: "Female catkins develop into cylindrical structures containing seeds"
+      identification_tips: "Diamond-shaped leaves and white bark are key identification features"
+      kid_friendly_tip: "In summer, the white bark looks extra bright against the dark green leaves"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn clear yellow before dropping"
+      reproductive_activity: "Seeds mature and are dispersed by wind"
+      identification_tips: "Yellow fall color and white bark help with identification"
+      kid_friendly_tip: "In fall, the leaves turn yellow like lemon drops before they fall off"
+    
+    - season: "Winter"
+      visual_changes: "Leafless branches reveal the tree's structure; white bark is highly visible"
+      reproductive_activity: "Dormant, with small tight buds along branches"
+      identification_tips: "White peeling bark is the key identification feature in winter"
+      kid_friendly_tip: "In winter, the white bark looks beautiful against dark or snowy backgrounds"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Bright white bark that peels in horizontal paper-like sheets"
+      reliability: "Very high"
+      visibility: "High - visible from a distance"
+    - feature: "Diamond-shaped or triangular leaves with doubly serrated edges"
+      reliability: "High"
+      visibility: "Medium - need to examine leaves"
+    - feature: "Medium-sized tree with oval to pyramidal shape"
+      reliability: "Medium"
+      visibility: "High - overall form visible from a distance"
+    - feature: "Male and female catkins in spring"
+      reliability: "High"
+      visibility: "Medium - visible in spring only"
+    
+  look_alike_species:
+    - species: "Paper Birch (Betula papyrifera)"
+      differences: "Has similar white, peeling bark, but typically has more oval leaves rather than diamond-shaped"
+      identification_tip: "Compare leaf shapes - Paper Birch leaves are more oval, Murray's Birch leaves are more diamond-shaped"
+    
+    - species: "European White Birch (Betula pendula)"
+      differences: "Has more drooping branches; leaves have single teeth rather than double teeth on edges"
+      identification_tip: "Look at leaf edges - European White Birch has simple teeth, Murray's Birch has double teeth"
+    
+    - species: "Kenai Birch (Betula papyrifera var. kenaica)"
+      differences: "Very similar but has smaller leaves and is less common in California landscapes"
+      identification_tip: "Kenai Birch is rarely planted in California; Murray's Birch is more common in landscapes"
+
+  cultural_ecological_notes:
+    - "Hybrid cultivar developed for improved heat and disease resistance"
+    - "Primarily planted as an ornamental tree in parks, gardens, and urban landscapes"
+    - "Provides some habitat and food resources for birds and small mammals"
+    
+  range_within_california:
+    - "Not native to California, only found as a planted ornamental"
+    - "Planted throughout many parts of California in residential areas and parks"
+    - "Performs best in areas with cooler summer temperatures and adequate moisture"
+    
+  cultural_significance:
+    - culture: "Modern Horticulture"
+      physical_uses:
+        - "Planted as an ornamental shade tree in parks and gardens"
+        - "Used in urban landscaping for its striking white bark"
+      symbolic_meaning:
+        - "Represents modern horticultural innovation in tree breeding"
+        - "Symbolizes adaptation to changing climate conditions in landscaping"
+    
+    - culture: "Contemporary Landscape Design"
+      physical_uses:
+        - "Used as a focal point in landscape designs for its distinctive bark"
+        - "Planted to provide gentle shade and visual interest in yards and parks"
+      symbolic_meaning:
+        - "Represents the blend of aesthetic beauty with practical adaptability"
+        - "Symbolizes the bridging of traditional birch beauty with modern growing conditions"
+
+  physical_characteristics:
+    height_range: "30-50 feet tall"
+    growth_rate: "Medium - about 1-2 feet per year"
+    crown_spread: "20-35 feet wide"
+    lifespan: "40-70 years"
+    trunk_diameter: "Up to 1-2 feet at maturity"
+    root_system: "Moderately shallow, spreading"
+    toxicity: "No significant toxicity"
+
+  conservation_status:
+    status: "Not evaluated - cultivated hybrid"
+    threats: "Bronze birch borer and birch leaf miner can affect health"
+    protection_efforts: "As a cultivated hybrid, not subject to conservation programs"
+
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+      - feature_id: "BARK-COLOR-02"  # White bark
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+    confirmation_features:
+      - feature_id: "LEAF-EDGE-03"  # Doubly serrated
+      - feature_id: "LEAF-SHAPE-05"  # Lobed (diamond-shaped)
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["BARK-COLOR-02", "TREE-SIZE-02"]  # White bark, medium size
+      - distance: "from_nearby"
+        features_to_check: ["BARK-TEXT-03", "LEAF-ARRANGE-01"]  # Peeling bark, alternate leaves
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-03", "LEAF-SHAPE-05"]  # Doubly serrated edges, diamond shape
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["BARK-COLOR-02", "BARK-TEXT-03", "FLOWER-TYPE-01"]
+        notes: "Catkins and new leaf growth help with spring identification"
+      summer:
+        reliability: "High"
+        key_features: ["BARK-COLOR-02", "LEAF-SHAPE-05", "LEAF-EDGE-03"]
+        notes: "Fully developed leaves and distinctive bark make summer identification reliable"
+      fall:
+        reliability: "High" 
+        key_features: ["BARK-COLOR-02", "LEAF-FALL-01", "BARK-TEXT-03"]
+        notes: "Yellow fall color combined with white bark is distinctive"
+      winter:
+        reliability: "Medium"
+        key_features: ["BARK-COLOR-02", "BARK-TEXT-03"]
+        notes: "White peeling bark is key winter identification feature"
+    misidentification_risks:
+      - "Paper Birch - has more oval leaves rather than diamond-shaped"
+      - "European White Birch - has single-toothed leaf edges"
+      - "Kenai Birch - very similar but less common in California"

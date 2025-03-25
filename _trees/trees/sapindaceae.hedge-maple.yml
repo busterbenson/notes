@@ -1,0 +1,305 @@
+tree:
+  common_name: "Hedge Maple"
+  scientific_name: "Acer campestre"
+  family: "Sapindaceae"
+  
+  # Basic summary information
+  summary: "A small to medium-sized deciduous tree with a dense, rounded crown and distinctive small, five-lobed leaves. Native to Europe and western Asia, it is valued for its tolerance of poor soils, pollution, and pruning, making it an excellent choice for hedges, screens, and urban landscapes. Its adaptability, reliable yellow fall color, and compact size make it a versatile landscape tree throughout much of California."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Small, five-lobed maple leaves with rounded lobes and smooth margins; leaves grow opposite each other on branches; dense, rounded crown"
+    secondary_markers: "Corky ridges often develop on twigs and younger branches; small green-yellow flowers in spring; paired winged seeds (helicopter seeds) with wings spreading horizontally"
+    seasonal_markers: "Reliable yellow fall color; small green flowers in spring appear with the leaves; winged seed pairs mature in fall"
+    similar_species_differentiation: "Unlike most maples, leaf edges are mostly smooth (not serrated); smaller leaves than many maples; distinctive corky bark on twigs helps distinguish from other small maples"
+  
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves in fall"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Leaves are single, not divided into smaller leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves grow directly across from each other on stems"
+      
+      - feature_id: "LEAF-SHAPE-05"  # Lobed
+        notes: "Leaves have 5 rounded lobes"
+      
+      - feature_id: "FRUIT-TYPE-08"  # Paired samaras
+        notes: "Produces winged seeds in pairs that spread horizontally"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        notes: "Native to Europe and western Asia; not native to California"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk"
+        exceptions: "May develop multiple trunks, especially if damaged when young or grown as a hedge"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Usually reaches 25-35 feet tall"
+        exceptions: "Can stay smaller (15-20 feet) in poor conditions or when regularly pruned"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Often has a dense, rounded form"
+        exceptions: "Shape can vary with pruning or growing conditions"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        notes: "Develops shallow furrows and ridges with age"
+        exceptions: "Bark remains relatively smooth when young"
+    
+    sometimes_true:
+      - feature_id: "LEAF-COLOR-01"  # Dark green
+        conditions: "During summer growing season"
+        notes: "Mature leaves are typically medium to dark green"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Most trees in fall"
+        notes: "Typically turns yellow in autumn"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "When planted in suitable locations"
+        notes: "Tolerates urban conditions, pollution, and compacted soils better than many trees"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        conditions: "Once established"
+        notes: "Becomes fairly drought-tolerant after establishment"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "In gardens and landscapes with suitable conditions"
+        notes: "Grows well in Northern California's climate"
+      
+      - feature_id: "GEO-REGION-02"  # Central California
+        conditions: "In suitable landscape settings"
+        notes: "Adapts well to Central California with proper care"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops all its leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has compound leaves"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves are always opposite, never alternate"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Never has thorns or spines"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Small maple leaves with 5 roundish lobes and smooth edges (not jagged or toothed)"
+    memorable_comparison: "The leaves look like little maple leaves with rounded mittens instead of pointy fingers"
+    touch_tip: "Feel the leaf - it's smooth on the edges, unlike most maple leaves that have tiny teeth"
+    smell_tip: "The leaves don't have a strong smell, but you can feel how they're thicker and tougher than many maple leaves"
+    fun_fact: "Hedge Maple is super tough! It can be shaped like a hedge wall (that's how it got its name), and its twigs grow special bumpy cork ridges that feel rough - like they're wearing armor!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the size of the tree - is it medium-sized (about as tall as a two-story house)?"
+        yes_next: 2
+        no_next: "If it's a very tall tree, it might not be a Hedge Maple"
+      - step: 2
+        instruction: "Look at the leaves. Are they small maple leaves with 5 roundish lobes that aren't pointy?"
+        yes_next: 3
+        no_next: "Not a Hedge Maple - most other maples have more pointed lobes"
+      - step: 3
+        instruction: "Check the edges of the leaves. Are they mostly smooth without tiny teeth?"
+        yes_next: 4
+        no_next: "Not a Hedge Maple - most other maples have toothed leaf edges"
+      - step: 4
+        instruction: "Look at how the leaves grow on the branches. Do they grow in pairs directly across from each other?"
+        yes_next: "You found a Hedge Maple!"
+        no_next: "Not a Hedge Maple - all maples have opposite leaves"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaves emerge light green; small yellowish-green flowers appear with the developing leaves"
+      reproductive_activity: "Small flowers bloom and are pollinated by wind and insects"
+      identification_tips: "Look for the small five-lobed leaves with rounded lobes emerging, and inconspicuous green-yellow flowers"
+      kid_friendly_tip: "In spring, look for the small, fresh green leaves unfurling and tiny greenish flowers that aren't very showy"
+    
+    - season: "Summer" 
+      visual_changes: "Leaves mature to medium or dark green; developing paired samaras (winged seeds)"
+      reproductive_activity: "Winged seed pairs develop"
+      identification_tips: "Dense, rounded crown with dark green leaves; look for developing winged seeds"
+      kid_friendly_tip: "In summer, the tree makes a nice round shape with deep green leaves that give good shade"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow; winged seeds mature"
+      reproductive_activity: "Seeds fully mature and may begin to drop"
+      identification_tips: "Reliable yellow fall color; horizontally spreading samaras"
+      kid_friendly_tip: "In fall, the leaves turn a cheery yellow color, and you can find the mature helicopter seeds that spin down when they fall"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches reveal opposite branching pattern; corky ridges on twigs more visible"
+      reproductive_activity: "Dormant"
+      identification_tips: "Look for opposite buds, corky ridges on twigs, and compact branching pattern"
+      kid_friendly_tip: "In winter, you can see the branches grow in pairs, and feel the cool bumpy ridges on the smaller branches"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Small five-lobed leaves with rounded lobes"
+      reliability: "Very high"
+      visibility: "Easy to see from nearby"
+    - feature: "Smooth leaf margins (no teeth)"
+      reliability: "High"
+      visibility: "Need to look at leaves closely"
+    - feature: "Opposite leaf arrangement"
+      reliability: "Very high"
+      visibility: "Need to look at branches closely"
+    - feature: "Corky ridges on twigs and small branches"
+      reliability: "High"
+      visibility: "Need to look closely"
+    - feature: "Dense, rounded crown"
+      reliability: "Medium"
+      visibility: "Visible from a distance"
+    
+  look_alike_species:
+    - species: "Field Maple (Acer campestre)"
+      differences: "Same species, just different common name used in Europe"
+      identification_tip: "These are the same tree, just different names"
+    - species: "Norway Maple (Acer platanoides)"
+      differences: "Norway Maple has larger leaves with pointed lobes, milky sap when leaf stem is broken, and grows much larger"
+      identification_tip: "Break a leaf stem - Norway Maple has milky sap; Hedge Maple has clear sap"
+    - species: "Rocky Mountain Maple (Acer glabrum)"
+      differences: "Rocky Mountain Maple has toothed leaf margins and more pointed lobes"
+      identification_tip: "Check leaf edges - Rocky Mountain Maple has distinct teeth; Hedge Maple has smooth margins"
+    
+  cultural_ecological_notes:
+    - "Extremely adaptable to different soil conditions, including alkaline, clay, and compacted soils"
+    - "More pollution-tolerant than many other maple species"
+    - "Responds well to pruning, including shearing as a formal hedge"
+    - "Dense canopy provides good shade and wind protection"
+    - "Relatively drought-tolerant once established"
+    - "Low-maintenance landscape tree with few pest or disease problems"
+    
+  range_within_california:
+    - "Not native to California but widely planted as an ornamental and street tree"
+    - "Performs well in most regions of California except desert areas"
+    - "Suitable for coastal areas, valleys, and foothills"
+    - "Thrives in Northern and Central California"
+    - "Can be grown in Southern California but may need more water in hotter inland areas"
+    - "Tolerates urban conditions well, making it common in city landscapes"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "25-35 feet tall (about as tall as a two to three-story house)"
+    growth_rate: "Slow to moderate, about 12 inches per year"
+    crown_spread: "25-35 feet wide when mature"
+    lifespan: "Can live 150-200 years with proper care"
+    trunk_diameter: "Usually 1-2 feet across when mature"
+    root_system: "Relatively shallow but wide-spreading, not usually invasive"
+    toxicity: "Not toxic to humans or pets"
+  
+  # Cultural significance section
+  cultural_significance:
+    # Organized by culture
+    - culture: "European"
+      physical_uses:
+        - "Traditionally used for hedgerows and field boundaries (hence the name 'Hedge Maple')"
+        - "Wood used for tool handles, bowls, and small turned items"
+        - "Used for firewood and charcoal production"
+        - "Leaves and young shoots sometimes fed to livestock"
+      symbolic_meaning:
+        - "Symbol of durability and adaptability"
+        - "Represented property boundaries and land management"
+        - "Associated with practical, working landscapes"
+        - "In some folklore, believed to have protective qualities when planted near homes"
+    
+    - culture: "Modern Urban Forestry"
+      physical_uses:
+        - "Planted as street trees in challenging urban sites"
+        - "Used in parking lot islands and other tough growing locations"
+        - "Incorporated into urban redevelopment projects"
+        - "Valued for providing shade and reducing urban heat islands"
+      symbolic_meaning:
+        - "Represents urban resilience and adaptation"
+        - "Symbol of thriving despite challenging conditions"
+        - "Exemplifies the concept of 'right tree, right place' in urban design"
+        - "Demonstrates how introduced species can serve important ecological functions"
+    
+    - culture: "Contemporary California"
+      physical_uses:
+        - "Used as a drought-tolerant shade tree once established"
+        - "Planted for privacy screens and property boundaries"
+        - "Included in sustainable landscape designs"
+        - "Selected for spaces where a smaller tree is needed"
+      symbolic_meaning:
+        - "Represents adaptability to changing climate conditions"
+        - "Symbol of water-wise landscaping choices"
+        - "Reflects California's history of incorporating plants from Mediterranean climates"
+  
+  # Conservation status section
+  conservation_status:
+    status: "Not threatened in cultivation; Least Concern in native range"
+    threats: "No significant threats in cultivation; habitat loss in parts of native range"
+    protection_efforts: "Commonly cultivated worldwide; some old specimens protected as heritage trees in Europe"
+  
+  # Kid-friendly cultural significance
+  kid_friendly_cultural_significance:
+    - "In Europe, farmers used to plant these trees in rows to create living fences between fields"
+    - "The wood is very hard and was used to make toys, bowls, and tool handles"
+    - "People planted these trees near their homes because they're tough and can handle poor soil and city pollution"
+    - "Hedge Maples can be trimmed into fun shapes, like walls, arches, or even animal shapes in formal gardens"
+    - "Because they're smaller trees, they're perfect for planting near playgrounds or in smaller yards where big trees wouldn't fit"
+  
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-SHAPE-05"  # Lobed
+      - "feature_id: LEAF-ARRANGE-02"  # Opposite
+      - "feature_id: TREE-SIZE-02"  # Medium tree
+    
+    confirmation_features:
+      - "feature_id: LEAF-FALL-01"  # Yellow fall color
+      - "feature_id: FRUIT-TYPE-08"  # Paired samaras
+      - "feature_id: BARK-TEXT-02"  # Furrowed bark
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-02", "TREE-FORM-02"]  # Medium tree, rounded form
+      
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SHAPE-05", "LEAF-ARRANGE-02"]  # Rounded lobed leaves, opposite arrangement
+      
+      - distance: "close_inspection"
+        features_to_check: ["BARK-TEXT-02", "FRUIT-TYPE-08"]  # Furrowed bark, paired winged seeds
+    
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["FLOWER-TIME-01", "LEAF-ARRANGE-02"]
+        notes: "Young leaves and small green-yellow flowers"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-SHAPE-05", "LEAF-ARRANGE-02", "TREE-FORM-02"]
+        notes: "Full foliage shows characteristic leaf shape and arrangement"
+      
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-FALL-01", "LEAF-SHAPE-05"]
+        notes: "Yellow fall color combined with distinctive leaf shape"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["BARK-TEXT-02", "TREE-SIZE-02", "TREE-FORM-02"]
+        notes: "Branching pattern, corky twigs, and medium size help with winter identification"
+    
+    misidentification_risks:
+      - "Most often confused with Norway Maple (Acer platanoides)"
+      - "Can be mistaken for Field Maple (same species, different common name)"
+      - "Sometimes confused with Rocky Mountain Maple (Acer glabrum)"
+  
+  # Wildlife value section
+  wildlife_value:
+    - "Seeds eaten by birds and small mammals"
+    - "Flowers provide nectar and pollen for bees and other insects"
+    - "Dense foliage provides shelter and nesting sites for birds"
+    - "Supports various insects that serve as food for birds"
+    - "Provides shade and shelter for ground-dwelling animals"
+    - "Fallen leaves contribute to soil organic matter"

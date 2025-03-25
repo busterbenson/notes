@@ -1,0 +1,247 @@
+tree:
+  common_name: Smooth Alder
+  scientific_name: Alnus serrulata
+  family: Betulaceae
+  native: false
+
+  summary: Smooth Alder is a multi-stemmed deciduous shrub or small tree native to eastern North America, characterized by its smooth grayish-brown bark with distinctive horizontal lenticels, oval serrated leaves, and woody cone-like fruits. Typically growing 10-25 feet tall, it naturally forms thickets along streambanks, pond margins, and wetlands. Though not native to California, it might occasionally be planted in the state's landscapes with consistent moisture, valued for its ability to fix nitrogen, stabilize riparian areas, and provide wildlife habitat.
+
+  identification_path:
+    primary_markers: "Multi-stemmed shrub or small tree with smooth grayish-brown bark featuring horizontal lenticels"
+    secondary_markers: "Oval to oblong finely serrated leaves; small woody cone-like fruits that persist through winter"
+    seasonal_markers: "Drooping male catkins in early spring; yellow fall color"
+    similar_species_differentiation: "Unlike White Alder, multi-stemmed rather than single-trunked; unlike Red Alder, doesn't have rusty hairs on leaf undersides; unlike Green Alder, has less sharply serrated leaf edges"
+
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"
+        notes: "Loses all its leaves each fall"
+      - feature_id: "LEAF-ARRANGEMENT-02"
+        notes: "Leaves grow alternately along branches, not in pairs"
+      - feature_id: "LEAF-SHAPE-01"
+        notes: "Leaves are oval to elliptical in shape"
+      - feature_id: "FRUIT-TYPE-05"
+        notes: "Produces small woody cone-like structures that stay on the branches"
+      - feature_id: "HABITAT-04"
+        notes: "Naturally grows in wet areas near water"
+    
+    usually_true:
+      - feature_id: "TREE-SIZE-01"
+        notes: "Typically grows as a small tree or shrub under 30 feet tall"
+        exceptions: "In ideal conditions, may occasionally reach medium size"
+      - feature_id: "TREE-TRUNK-02"
+        notes: "Grows with multiple stems rather than a single main trunk"
+        exceptions: "Sometimes can develop a more dominant central trunk with age"
+      - feature_id: "LEAF-MARGIN-02"
+        notes: "Leaf edges have small, fine teeth all around"
+        exceptions: "Teeth may be more or less pronounced depending on growing conditions"
+      - feature_id: "BARK-TEXTURE-01"
+        notes: "Bark remains relatively smooth even as tree ages"
+        exceptions: "Older specimens may develop slight roughness at the base"
+    
+    sometimes_true:
+      - feature_id: "LEAF-FALL-01"
+        conditions: "Depending on fall weather conditions"
+        notes: "Leaves may turn yellow before dropping"
+      - feature_id: "HABITAT-05"
+        conditions: "When deliberately planted in wet garden areas"
+        notes: "May be found in designed landscapes with adequate moisture"
+      - feature_id: "LEAF-TEXTURE-02"
+        conditions: "Particularly along veins on the underside of leaves"
+        notes: "Leaves may have some fine hairs, especially along veins underneath"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"
+        notes: "Never keeps its leaves through winter - always drops them in fall"
+      - feature_id: "LEAF-ARRANGEMENT-01"
+        notes: "Leaves never grow in pairs opposite each other on the branches"
+      - feature_id: "TREE-SIZE-03"
+        notes: "Never grows into a large tree over 50 feet tall"
+      - feature_id: "HABITAT-02"
+        notes: "Not found growing naturally in California forests"
+
+  kid_friendly_identification:
+    primary_identifier: "Smooth grayish-brown bark with horizontal dash-like marks"
+    memorable_comparison: "The bark looks like it has tiny dash marks drawn all over it with a pencil!"
+    touch_tip: "The leaves feel slightly rough on top but have soft fuzzy hairs along the veins underneath"
+    smell_tip: "The leaves don't have a strong smell, but they might have a slight fresh, green scent if crushed"
+    fun_fact: "This tree is like a superhero for soil! Its roots have special powers that can grab nitrogen from the air and turn it into plant food that helps other plants grow better!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, check where the tree is growing. Is it near water like a stream, pond, or wet area?"
+        yes_next: 2
+        no_next: "Probably not a Smooth Alder - they love having their feet wet!"
+      - step: 2
+        instruction: "Look at the trunk. Does the tree have multiple stems instead of one main trunk?"
+        yes_next: 3
+        no_next: "Might be a different alder species - check White Alder which has a single trunk."
+      - step: 3
+        instruction: "Examine the bark. Is it smooth with horizontal lines that look like little dashes?"
+        yes_next: 4
+        no_next: "Probably not a Smooth Alder. Check other alder species with different bark."
+      - step: 4
+        instruction: "Look for small woody cone-like fruits about the size of your fingernail. Do you see any hanging on the branches?"
+        yes_next: "You found a Smooth Alder!"
+        no_next: "If it's early spring, the cones might have released their seeds. Check other features again."
+
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Drooping yellowish-brown male catkins elongate and release pollen before leaves fully develop"
+      reproductive_activity: "Female flowers develop into small upright structures that will become cone-like fruits"
+      identification_tips: "One of the earliest flowering trees, often blooming before many others leaf out"
+      kid_friendly_tip: "In spring, look for hanging yellow-brown catkins that look like little caterpillars dangling from the branches"
+    
+    - season: "Summer"
+      visual_changes: "Dark green, slightly glossy leaves create a dense canopy"
+      reproductive_activity: "Female flowers develop into small green cone-like structures that gradually mature"
+      identification_tips: "The multi-stemmed form creating thickets in wet areas is distinctive"
+      kid_friendly_tip: "In summer, look at how the tree grows in a bushy clump with many stems instead of one main trunk"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow, though often not spectacularly, before dropping"
+      reproductive_activity: "Woody cone-like fruits turn brown and remain on the branches"
+      identification_tips: "Leaf drop typically occurs relatively early compared to other deciduous trees"
+      kid_friendly_tip: "In fall, the leaves turn yellow and drop, leaving behind tiny brown wooden 'cones' that stay on the branches"
+    
+    - season: "Winter"
+      visual_changes: "Smooth grayish-brown bark with horizontal lenticels becomes clearly visible"
+      reproductive_activity: "Woody cone-like seed structures persist on bare branches; new male catkins form but remain tight"
+      identification_tips: "The persistent woody cone-like fruits and smooth bark with horizontal lenticels are key winter features"
+      kid_friendly_tip: "In winter, look for the small brown 'cones' still hanging on the bare branches and the dash marks on the smooth bark"
+
+  confirmation_checklist:
+    - feature: "Multi-stemmed growth form, often forming thickets"
+      reliability: "High"
+      visibility: "High - visible from a distance"
+    - feature: "Smooth, thin, grayish-brown bark with horizontal lenticels"
+      reliability: "Very high"
+      visibility: "Medium - need to look closely at bark characteristics"
+    - feature: "Oval to oblong leaves, 2-4 inches long, with finely serrated margins"
+      reliability: "High"
+      visibility: "Medium - need to examine leaf shape and edges"
+    - feature: "Leaves dark green above, paler beneath with hair along veins"
+      reliability: "Medium"
+      visibility: "Low - requires turning leaves over to examine"
+    - feature: "Woody cone-like fruits that persist year-round"
+      reliability: "Very high"
+      visibility: "Medium - small but distinctive once spotted"
+    - feature: "Found in wet areas, often along waterways"
+      reliability: "High"
+      visibility: "High - habitat is an important clue"
+
+  look_alike_species:
+    - species: "White Alder (Alnus rhombifolia)"
+      differences: "Native to California; single-trunked tree rather than multi-stemmed; lacks hairy leaf undersides; grows much larger (to 80 feet)"
+      identification_tip: "If it has a single main trunk and is growing as a tall tree, it's likely White Alder, not Smooth Alder"
+    
+    - species: "Red Alder (Alnus rubra)"
+      differences: "Native to coastal California; has reddish inner bark when scratched; larger tree form with more pointed leaves; leaf undersides have rusty hairs"
+      identification_tip: "If you gently scratch the bark and see a reddish color underneath, it's probably Red Alder"
+    
+    - species: "Italian Alder (Alnus cordata)"
+      differences: "Non-native ornamental; heart-shaped leaves; larger tree form rather than shrubby"
+      identification_tip: "If the leaves are shaped like Valentine hearts and it grows as a single-trunk tree, it's likely Italian Alder"
+    
+    - species: "Green Alder (Alnus viridis)"
+      differences: "Smaller shrub; more mountain habitat; sharply serrated leaves"
+      identification_tip: "If the teeth on the leaf edges are very sharp and pointy, it might be Green Alder"
+    
+    - species: "European Alder (Alnus glutinosa)"
+      differences: "Non-native; notched leaf tips; more tree-like form"
+      identification_tip: "If the leaf tips have a small notch (like someone took a tiny bite out of them), it's probably European Alder"
+
+  cultural_significance:
+    - culture: "Native American Tribes of Eastern North America"
+      physical_uses:
+        - "Used the bark to make medicine for fevers, headaches, and other ailments"
+        - "Made a reddish-brown dye from the bark for coloring baskets and clothing"
+        - "Used the wood for carving small items and tools"
+      symbolic_meaning:
+        - "Respected as a healing plant that grows where water and land meet"
+        - "Valued for its ability to support other plants by improving the soil"
+    
+    - culture: "Early American Settlers"
+      physical_uses:
+        - "Used the bark as a remedy for various health problems"
+        - "Made charcoal from the wood for gunpowder production"
+        - "Used the wood for smoking meats to add flavor"
+      symbolic_meaning:
+        - "Recognized as a marker of good farmland, as it indicated reliable water sources"
+        - "Valued as a practical plant with multiple uses for frontier living"
+    
+    - culture: "Modern Ecological Restoration"
+      physical_uses:
+        - "Planted to stabilize streambanks and prevent erosion"
+        - "Used in wetland restoration projects to improve water quality"
+        - "Planted in rain gardens to manage stormwater runoff"
+      symbolic_meaning:
+        - "Represents the importance of riparian (streamside) vegetation for healthy watersheds"
+        - "Symbolizes the connection between water quality and plant communities"
+
+  physical_characteristics:
+    height: "10-25 feet (occasionally to 30 feet)"
+    width: "10-20 feet"
+    growth_rate: "Medium to fast, especially with plenty of water"
+    lifespan: "40-60 years in good conditions"
+    bark: "Smooth, thin, grayish-brown with horizontal lenticels"
+    leaves: "Oval to oblong, 2-4 inches long, finely serrated margins"
+    flowers: "Yellow-brown male catkins 2-3 inches long; smaller female catkins"
+    fruit: "Woody cone-like structures (strobiles) that persist year-round"
+    seeds: "Small winged nutlets released from the woody cone-like fruits"
+    root_system: "Shallow, fibrous, and wide-spreading; adapts well to wet soils and helps prevent erosion"
+    suitable_for_public_spaces: true
+
+  conservation_status:
+    status: "Not threatened; listed as Least Concern"
+    threats: "Wetland destruction and development in some parts of its range"
+    protection_efforts: "Included in many riparian restoration projects; no specific conservation measures needed"
+
+  decision_tree_placement:
+    primary_split_features:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+      - feature_id: "FRUIT-TYPE-05"  # Cone-like
+      - feature_id: "BARK-TEXTURE-01"  # Smooth
+    
+    confirmation_features:
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+      - feature_id: "HABITAT-04"  # Riparian areas
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-TRUNK-02", "HABITAT-04"]  # Multi-trunked, Riparian
+      - distance: "from_nearby"
+        features_to_check: ["BARK-TEXTURE-01", "FRUIT-TYPE-05"]  # Smooth bark, Cone-like fruit
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-MARGIN-02", "LEAF-TEXTURE-02"]  # Serrated margin, Hairy texture
+    
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["FLOWER-TYPE-01", "BARK-TEXTURE-01", "TREE-TRUNK-02"]
+        notes: "Early-flowering catkins make spring identification distinctive"
+      summer:
+        reliability: "Medium"
+        key_features: ["LEAF-SHAPE-01", "LEAF-MARGIN-02", "TREE-TRUNK-02"]
+        notes: "Multi-stemmed growth habit and leaf features are key in summer"
+      fall:
+        reliability: "Medium"
+        key_features: ["LEAF-FALL-01", "FRUIT-TYPE-05", "BARK-TEXTURE-01"]
+        notes: "Early leaf drop reveals persistent cone-like fruits and distinctive bark"
+      winter:
+        reliability: "High"
+        key_features: ["BARK-TEXTURE-01", "FRUIT-TYPE-05", "TREE-TRUNK-02"]
+        notes: "Smooth bark with horizontal lenticels and persistent cone-like fruits are excellent winter identifiers"
+    
+    misidentification_risks:
+      - "May be confused with other alder species, especially White and Red Alder in California"
+      - "Young specimens might have less pronounced bark characteristics"
+      - "Leaf hairiness can vary depending on growing conditions"
+
+  wildlife_value: 
+    - "Seeds provide food for birds like goldfinches, siskins, and redpolls, especially in winter"
+    - "Early-spring catkins offer valuable pollen for bees and other insects when few other flowers are available"
+    - "Leaves host butterfly and moth caterpillars, including the unusual carnivorous Harvester butterfly"
+    - "Dense thickets create excellent cover and nesting sites for birds and small mammals"
+    - "Roots help stabilize streambanks, creating habitat for aquatic species"
+    - "Beavers use the stems and branches for food and dam construction"

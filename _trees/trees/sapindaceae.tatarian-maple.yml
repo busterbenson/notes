@@ -1,0 +1,234 @@
+tree:
+  common_name: "Tatarian Maple"
+  scientific_name: "Acer tataricum"
+  family: "Sapindaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A small tree or large shrub known for its bright red winged seeds that look like tiny butterfly wings in summer. Usually grows with multiple stems and has simple, oval leaves with small teeth along the edges, not the deeply lobed shape of typical maple leaves."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Bright red winged seeds (samaras) in summer; small tree with multiple stems"
+    secondary_markers: "Oval to oblong leaves with serrated edges, not deeply lobed; opposite leaf arrangement"
+    seasonal_markers: "Small greenish-yellow flowers in spring; yellow to red fall color"
+    similar_species_differentiation: "Unlike Amur Maple, leaves are not deeply lobed; unlike Boxelder, has simple (not compound) leaves"
+  
+  # Core features section
+  features:
+    always_true:
+      # Reference features.yml IDs with tree-specific notes
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops all leaves in fall and grows new ones each spring"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves grow in pairs directly across from each other on branches"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated
+        notes: "Leaf edges have small teeth all around, like tiny saw blades"
+      
+      - feature_id: "FRUIT-TYPE-08"  # Paired samaras
+        notes: "Seeds grow in joined pairs with wings that turn bright red in summer"
+    
+    usually_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "TREE-SIZE-01"  # Small tree
+        exceptions: "Can occasionally grow larger in ideal conditions"
+        notes: "Usually stays under 25 feet tall"
+      
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        exceptions: "Sometimes trained to have a single trunk in landscapes"
+        notes: "Typically grows with multiple stems from the base"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        exceptions: "Fall color can vary based on weather and growing conditions"
+        notes: "Leaves typically turn yellow to gold in autumn"
+      
+      - feature_id: "LEAF-SHAPE-01"  # Oval
+        exceptions: "Some leaves may have shallow lobes"
+        notes: "Leaves are mostly oval to oblong in shape"
+    
+    sometimes_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "LEAF-FALL-02"  # Red fall color
+        conditions: "In cool autumn weather with sunny days"
+        notes: "Leaves may develop orange to red colors in fall in good conditions"
+      
+      - feature_id: "LEAF-SHAPE-05"  # Lobed
+        conditions: "On some branches or in certain growing conditions"
+        notes: "Some leaves may develop shallow lobes, but not as deeply cut as other maples"
+      
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        conditions: "When pruned and trained in landscape settings"
+        notes: "Can be grown with a single trunk if pruned when young"
+    
+    never_true:
+      # Features explicitly absent that help differentiation
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops leaves in fall; never stays green year-round"
+      
+      - feature_id: "TREE-SIZE-03"  # Large tree
+        notes: "Never grows into a large tree; stays relatively small"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Unlike Boxelder maple, never has compound leaves with multiple leaflets"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Bright red helicopter seeds that look like tiny butterfly wings in summer"
+    memorable_comparison: "The red seeds look like strawberry-colored helicopter propellers"
+    touch_tip: "The leaves feel a bit rough, and the edges have tiny bumps you can feel with your fingertip"
+    smell_tip: "The leaves don't have a strong smell when crushed"
+    fun_fact: "This maple is super tough! It can survive freezing cold winters in its home country and still handle hot California summers when other trees would get sick."
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at how the leaves are arranged on the branches. Do they grow in pairs, directly opposite each other?"
+        yes_next: 2
+        no_next: "Not a Tatarian Maple - might be an oak or other tree with alternate leaves"
+      - step: 2
+        instruction: "Look at the shape of the leaves. Are they oval with small teeth along the edges (not deeply cut like a typical maple leaf)?"
+        yes_next: 3
+        no_next: "Not a Tatarian Maple - might be another type of maple with lobed leaves"
+      - step: 3
+        instruction: "In summer, do you see bright red winged seeds (like little red helicopters)? In winter, is it a small tree with multiple trunks?"
+        yes_next: "You found a Tatarian Maple!"
+        no_next: "Might be a different maple - check the seed color and size again"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New bright green leaves emerge; clusters of small greenish-yellow flowers appear"
+      reproductive_activity: "Flowers develop after leaves emerge, appearing in upright clusters at branch tips"
+      identification_tips: "Not very distinctive in spring; look for opposite leaf arrangement and oval leaf shape"
+      kid_friendly_tip: "In spring, look for the small clusters of yellowish-green flowers after the leaves appear"
+    
+    - season: "Summer" 
+      visual_changes: "Leaves mature to dark green; bright red winged seeds develop and become very noticeable"
+      reproductive_activity: "Samaras (winged seeds) mature and turn bright red, the most distinctive feature"
+      identification_tips: "The bright red samaras make summer identification easy and reliable"
+      kid_friendly_tip: "Summer is when you'll see the cool bright red helicopter seeds - they look like red butterfly wings!"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow to red-orange before dropping"
+      reproductive_activity: "Seeds begin to drop and disperse by wind"
+      identification_tips: "Fall color and remnants of red samaras help with identification"
+      kid_friendly_tip: "In fall, the leaves turn yellow, orange, or sometimes red before they drop"
+    
+    - season: "Winter"
+      visual_changes: "Multi-stemmed growth habit becomes more visible; branch pattern shows opposite arrangement"
+      reproductive_activity: "Dormant, no reproductive activity"
+      identification_tips: "Look for the multi-stemmed habit and opposite branching pattern"
+      kid_friendly_tip: "In winter when the leaves are gone, you can see how the tree often grows with several trunks like a big bush"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Bright red samaras (winged seeds) in summer"
+      reliability: "Very high"
+      visibility: "High - visually striking when present"
+    - feature: "Small tree or large shrub, typically under 25 feet tall"
+      reliability: "High"
+      visibility: "High - overall size is easy to observe"
+    - feature: "Oval to oblong leaves with serrated edges, not deeply lobed"
+      reliability: "High"
+      visibility: "Medium - need to look at leaf shape"
+    - feature: "Opposite leaf arrangement"
+      reliability: "High"
+      visibility: "Medium - check branch closely"
+    
+  look_alike_species:
+    - species: "Amur Maple (Acer ginnala)"
+      differences: "Amur Maple has more deeply three-lobed leaves; leaves have a stronger fragrance when crushed; typically smaller overall"
+      identification_tip: "Compare leaf shapes - Amur Maple leaves have deeper divisions than Tatarian Maple"
+    
+    - species: "Boxelder (Acer negundo)"
+      differences: "Boxelder has compound leaves divided into 3-7 leaflets, rather than the simple leaves of Tatarian Maple"
+      identification_tip: "Check if the leaf is simple (one piece) or compound (multiple leaflets)"
+    
+    - species: "Hedge Maple (Acer campestre)"
+      differences: "Has distinctly lobed leaves while Tatarian Maple leaves are usually unlobed or only shallowly lobed; samaras are not as brightly colored"
+      identification_tip: "Look at the leaf shape and the color of the samaras in summer"
+    
+    - species: "Japanese Maple (Acer palmatum)"
+      differences: "Has more deeply divided, delicate leaves; often has red foliage; usually smaller with a more refined look"
+      identification_tip: "Japanese Maple leaves are much more finely cut than the simple Tatarian Maple leaves"
+
+  cultural_ecological_notes:
+    - "Adaptable to various soil conditions, including alkaline soils"
+    - "Moderately drought tolerant once established"
+    - "Resistant to urban stresses like pollution and compacted soils"
+    
+  range_within_california:
+    - "Not native to California but planted throughout the state in landscape settings"
+    - "Performs well in most of California except the hottest desert regions"
+    - "More common in Northern and Central California than in southernmost regions"
+    
+  cultural_significance:
+    - culture: "Eastern European"
+      physical_uses:
+        - "Traditionally used for windbreaks and hedgerows in native range"
+        - "Wood has been used for small implements and as fuel"
+      symbolic_meaning:
+        - "Represents adaptability to harsh conditions in its native range"
+        - "Named for its origin in the Tatary region of central Asia"
+    
+    - culture: "Modern California Landscape Design"
+      physical_uses:
+        - "Used as an ornamental small tree in gardens and parks"
+        - "Planted for seasonal interest, especially bright red samaras in summer"
+      symbolic_meaning:
+        - "Represents resource efficiency in modern sustainable landscaping"
+        - "Symbolizes adaptability to urban conditions"
+
+  physical_characteristics:
+    height_range: "15-25 feet tall"
+    growth_rate: "Medium - about 1 foot per year"
+    crown_spread: "15-20 feet wide"
+    lifespan: "60-80 years"
+    trunk_diameter: "Usually multiple trunks up to 8 inches each"
+    root_system: "Moderate, not especially aggressive"
+    toxicity: "No significant toxicity"
+
+  conservation_status:
+    status: "Not listed as threatened or endangered"
+    threats: "No significant threats to the species as a whole"
+    protection_efforts: "Common in cultivation; not requiring special conservation efforts"
+
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+      - feature_id: "FRUIT-TYPE-08"  # Paired samaras
+    confirmation_features:
+      - feature_id: "TREE-SIZE-01"  # Small tree
+      - feature_id: "LEAF-SHAPE-01"  # Oval
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-01", "TREE-TRUNK-02"]  # Small tree, multi-trunked
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-ARRANGE-02", "FRUIT-TYPE-08"]  # Opposite arrangement, paired samaras
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-SHAPE-01", "LEAF-EDGE-02"]  # Oval shape, serrated edge
+    seasonal_identification:
+      spring:
+        reliability: "Low"
+        key_features: ["LEAF-TYPE-01", "LEAF-ARRANGE-02", "LEAF-SHAPE-01"]
+        notes: "Not very distinctive in spring; rely on leaf arrangement and shape"
+      summer:
+        reliability: "Very high"
+        key_features: ["FRUIT-TYPE-08", "LEAF-ARRANGE-02", "LEAF-SHAPE-01"]
+        notes: "Bright red samaras make summer identification reliable and easy"
+      fall:
+        reliability: "Medium" 
+        key_features: ["LEAF-FALL-01", "LEAF-ARRANGE-02", "LEAF-SHAPE-01"]
+        notes: "Fall color combined with leaf shape aids identification"
+      winter:
+        reliability: "Low"
+        key_features: ["TREE-SIZE-01", "TREE-TRUNK-02", "LEAF-ARRANGE-02"]
+        notes: "Multi-stemmed habit and opposite branching help with winter identification"
+    misidentification_risks:
+      - "Amur Maple - has more deeply lobed leaves"
+      - "Boxelder - has compound rather than simple leaves"
+      - "Hedge Maple - has more distinctly lobed leaves"
+      - "Japanese Maple - has more finely cut, delicate leaves"

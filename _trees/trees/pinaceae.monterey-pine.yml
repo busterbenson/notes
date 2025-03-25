@@ -1,0 +1,292 @@
+tree:
+  common_name: "Monterey Pine"
+  scientific_name: "Pinus radiata"
+  family: "Pinaceae"
+  
+  # Basic summary information
+  summary: "A fast-growing pine native to a small area of California's central coast, with distinctive needles in bundles of three, large asymmetrical cones, and an open, spreading crown. It's one of the most widely planted pines in the world despite its limited natural range."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Needles in bundles of three (sometimes two); large, asymmetrical cones that remain attached to branches for years; broad, spreading crown"
+    secondary_markers: "Bright green, rather soft needles about 4-6 inches long; reddish-brown, furrowed bark; cones with uneven development on windward vs. leeward sides"
+    seasonal_markers: "Minimal seasonal change as an evergreen; new growth in spring appears as lighter green 'candles'"
+    similar_species_differentiation: "Unlike Bishop Pine, has larger cones; unlike Knobcone Pine, cones are not attached to the trunk; unlike Ponderosa Pine, has shorter needles and cones remain attached longer"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles year-round"
+        
+      - feature_id: "NEEDLE-ARRANGE-03"  # Needles in threes
+        notes: "Primarily has three needles per bundle (fascicle), though occasionally two"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Produces hard, woody seed cones"
+      
+      - feature_id: "CONE-FEAT-01"  # Persistent cones
+        notes: "Cones often remain on tree for several years"
+      
+      - feature_id: "CONE-SIZE-03"  # Large cones
+        notes: "Cones typically 3-7 inches long"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Native to a small area of California's central coast"
+      
+      - feature_id: "NEEDLE-SIZE-02"  # Medium needles
+        notes: "Needles typically 4-6 inches long"
+
+    usually_true:
+      # Features that are primarily true, but have notable exceptions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with a single main trunk"
+        exceptions: "May develop multiple trunks after damage or in very wind-exposed sites"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Usually grows to 50-100 feet tall"
+        exceptions: "May be shorter in very exposed coastal sites or much taller in optimal growing conditions"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Often develops a broad, rounded or flat-topped crown with age"
+        exceptions: "Young trees are more conical; trees in windy sites develop asymmetrical crowns"
+      
+      - feature_id: "NEEDLE-FEAT-02"  # Soft flexible
+        notes: "Needles are relatively soft and flexible compared to many other pines"
+        exceptions: "Older needles may become stiffer"
+
+    sometimes_true:
+      # Features that vary with age, season, or conditions
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        conditions: "Young trees"
+        notes: "Young trees have a more conical or pyramidal shape"
+      
+      - feature_id: "TREE-FORM-05"  # Irregular crown
+        conditions: "Trees growing in windy coastal locations"
+        notes: "Often develops asymmetrical crown in response to prevailing winds"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Mature trees"
+        notes: "Bark becomes deeply furrowed with age"
+      
+      - feature_id: "BARK-COLOR-03"  # Red bark
+        conditions: "Typical bark color"
+        notes: "Bark is usually reddish-brown"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        conditions: "Occasional variation"
+        notes: "Some fascicles may contain only two needles instead of three"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        conditions: "When needles are crushed"
+        notes: "Needles release a fresh pine scent when crushed"
+      
+      - feature_id: "HABITAT-LOC-01"  # Coastal habitat
+        conditions: "Native habitat"
+        notes: "In its native range, grows along the coast"
+
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all needles seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-04"  # Needles in fives
+        notes: "Never has five needles per fascicle"
+      
+      - feature_id: "CONE-POS-01"  # Upright cones
+        notes: "Cones point outward or downward, never upright"
+      
+      - feature_id: "CONE-FEAT-02"  # Cones on trunk
+        notes: "Cones grow on branches, not directly on the trunk"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A pine tree with bright green needles in bundles of three and large woody cones that look different on each side"
+    memorable_comparison: "The tree looks like it's wearing a big green puffy coat, and its cones look like little spiky pineapples stuck to the branches for years"
+    touch_tip: "The needles feel softer and more flexible than many other pines - they bend easily when you touch them gently"
+    smell_tip: "Carefully smell the needles for a fresh, sweet pine scent (no need to crush them)"
+    fun_fact: "Monterey Pine may be rare in the wild, growing naturally in just three tiny spots on California's coast, but it's one of the most widely planted trees in the world! In countries like New Zealand, Chile, and Australia, it's grown on huge tree farms covering millions of acres - that's even more than all the forests in some U.S. states!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, check the needles. Do they grow in bundles of 3 (three needles connected at the base)?"
+        yes_next: 2
+        no_next: "If there are 2 needles per bundle, check Bishop Pine; if 5 needles, it might be Sugar Pine"
+      - step: 2
+        instruction: "Look at the cones on the tree or on the ground. Are they large (bigger than a lemon) with spiky bumps that are bigger on one side than the other?"
+        yes_next: 3
+        no_next: "If cones are smaller or grow directly on the trunk, check Knobcone Pine"
+      - step: 3
+        instruction: "Are the needles bright green and softer/more flexible than typical pine needles?"
+        yes_next: "You found a Monterey Pine!"
+        no_next: "If needles are stiff and sharp, check Ponderosa Pine; if the tree is growing far from the coast, it might be another three-needle pine"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New needle growth appears as light green 'candles' at branch tips; male pollen cones produce yellow pollen"
+      reproductive_activity: "Male cones release pollen; female cones begin development"
+      identification_tips: "Look for bright green new growth at branch tips and small yellow pollen cones"
+      kid_friendly_tip: "In spring, look for bright green 'candles' growing at the tips of branches - these will become new needles"
+    
+    - season: "Summer" 
+      visual_changes: "New needles mature to bright green; developing cones become visible"
+      reproductive_activity: "Young cones grow larger and begin to develop woody scales"
+      identification_tips: "Young cones are green to purplish, becoming woody by late summer"
+      kid_friendly_tip: "By summer, the new needles have grown out and small green or purple baby cones start to form"
+    
+    - season: "Fall"
+      visual_changes: "Little visible change; some older needles may yellow and drop"
+      reproductive_activity: "Cones continue to mature but typically remain closed"
+      identification_tips: "Older needles may drop, creating a layer of needle litter beneath tree"
+      kid_friendly_tip: "Fall is quiet time for Monterey Pine - it stays green while other trees change color"
+    
+    - season: "Winter"
+      visual_changes: "No significant changes; remains evergreen"
+      reproductive_activity: "Dormant; no reproductive activity until late winter"
+      identification_tips: "Evergreen form stands out when deciduous trees are bare; persistent cones remain visible"
+      kid_friendly_tip: "In winter, it keeps its green needles when other trees lose their leaves"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Needles in bundles of three (occasionally two)"
+      reliability: "Very high"
+      visibility: "Medium - need to look closely"
+    - feature: "Large, asymmetrical cones with uneven development"
+      reliability: "High"
+      visibility: "Easy to spot if present"
+    - feature: "Relatively soft, bright green needles"
+      reliability: "Medium"
+      visibility: "Easy to observe with handling"
+    - feature: "Reddish-brown, furrowed bark on mature trees"
+      reliability: "Medium"
+      visibility: "Easy to observe on trunk"
+    
+  look_alike_species:
+    - species: "Bishop Pine (Pinus muricata)"
+      differences: "Bishop Pine has needles primarily in bundles of two (not three) and smaller cones with knobby protrusions"
+      identification_tip: "Count the needles in each bundle - Monterey Pine usually has three, Bishop Pine has two"
+    - species: "Knobcone Pine (Pinus attenuata)"
+      differences: "Knobcone Pine has cones that often grow directly on the trunk and remain closed for many years"
+      identification_tip: "Monterey Pine cones grow on branches, not on the main trunk like Knobcone Pine"
+    - species: "Ponderosa Pine (Pinus ponderosa)"
+      differences: "Ponderosa Pine has longer, stiffer needles, vanilla-scented bark, and cones that fall off after releasing seeds"
+      identification_tip: "Monterey Pine needles are softer and shorter, and its cones stay attached to branches longer"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Rumsen Ohlone"
+      physical_uses:
+        - "Collected pine nuts from cones as a food source"
+        - "Used pitch as a waterproof sealant for canoes and baskets"
+        - "Burned the wood for warmth and cooking"
+        - "Made a healing salve from pine pitch for cuts and skin problems"
+      symbolic_meaning:
+        - "The tree's ability to thrive in harsh coastal winds symbolized resilience and adaptation"
+        - "Used in stories about the special plants of their homeland"
+    
+    - culture: "Early California Settlers"
+      physical_uses:
+        - "Used the wood for construction of early buildings, fences, and furniture"
+        - "Planted as windbreaks around homesteads and farms"
+        - "Harvested for firewood in coastal communities"
+        - "Used the quick growth to establish shade and shelter"
+      symbolic_meaning:
+        - "Became associated with the distinctive landscape of the Monterey Peninsula"
+        - "Represented the unique character of central California's coastline"
+    
+    - culture: "Modern California"
+      physical_uses:
+        - "Widely planted as ornamental trees in parks and gardens"
+        - "Used for erosion control along coastlines"
+        - "Valued as wildlife habitat in conservation areas"
+        - "Seeds collected for international forestry programs"
+      symbolic_meaning:
+        - "Iconic symbol of the Monterey Peninsula and central California coast"
+        - "Featured in art and literature as a symbol of California's natural heritage"
+        - "Represents conservation challenges as native groves are threatened"
+    
+  cultural_ecological_notes:
+    - "One of the most widely planted pine species in the world, particularly in the Southern Hemisphere"
+    - "Critically important in commercial forestry in countries like New Zealand, Chile, and Australia"
+    - "Dramatic difference between its limited natural range and its global cultivation"
+    - "Adapts quickly to coastal conditions with salt spray and wind"
+    - "Highly susceptible to pine pitch canker disease, threatening natural populations"
+    
+  range_within_california:
+    - "Native population restricted to three small areas: Año Nuevo, Monterey Peninsula, and Cambria"
+    - "Total native range along central coast spans less than 25 miles total"
+    - "Two island populations on Guadalupe and Cedros Islands off Baja California"
+    - "Widely planted throughout coastal and central California as an ornamental tree"
+    - "Grows particularly well in foggy coastal areas with mild temperatures"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "50-100 feet in native habitat; up to 200 feet in optimal growing conditions"
+    growth_rate: "Fast, often growing 3-6 feet per year when young"
+    crown_spread: "30-50 feet at maturity"
+    lifespan: "80-150 years"
+    trunk_diameter: "2-4 feet at maturity"
+    root_system: "Moderately deep with widespread lateral roots"
+    toxicity: "Not toxic, though some people may have skin sensitivity to sap"
+  
+  conservation_status:
+    status: "Endangered in its natural habitat"
+    threats: 
+      - "Extremely limited natural range"
+      - "Pine pitch canker fungal disease"
+      - "Development pressure in coastal California"
+      - "Climate change altering fog patterns vital to its survival"
+      - "Increased wildfire risk"
+    protection_efforts:
+      - "Native stands protected in state parks and ecological reserves"
+      - "Seed banking projects to preserve genetic diversity"
+      - "Research into disease-resistant varieties"
+      - "Restoration projects in natural habitat"
+      - "Efforts to limit development in remaining native stands"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: NEEDLE-ARRANGE-03"  # Needles in threes
+    confirmation_features:
+      - "feature_id: CONE-SIZE-03"  # Large cones
+      - "feature_id: NEEDLE-FEAT-02"  # Soft flexible
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-TYPE-02", "TREE-FORM-02"]  # Evergreen, rounded crown
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-ARRANGE-03", "CONE-SIZE-03"]  # Needles in threes, large cones
+      - distance: "close_inspection"
+        features_to_check: ["NEEDLE-FEAT-02", "BARK-COLOR-03"]  # Soft flexible needles, red bark
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-03", "NEEDLE-FEAT-02"]
+        notes: "New growth candles and pollen cones visible"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["NEEDLE-ARRANGE-03", "CONE-SIZE-03"]
+        notes: "Developing cones may be visible"
+      
+      fall:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-03", "CONE-FEAT-01"]
+        notes: "Persistent cones remain on tree"
+      
+      winter:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-03", "CONE-FEAT-01"]
+        notes: "Remains green through winter; persistent cones visible"
+    misidentification_risks: 
+      - "Could be confused with other three-needle pines like Knobcone Pine or Ponderosa Pine"
+      - "Young trees before cones develop may be difficult to distinguish from other pine species"
+      - "Occasionally produces two-needle fascicles that could be confused with Bishop Pine"
+  
+  wildlife_value:
+    - "Seeds eaten by many birds, including jays and nutcrackers"
+    - "Provides nesting habitat for numerous bird species, including raptors"
+    - "Offers shelter for small mammals in coastal areas"
+    - "Creates microhabitats for understory plants and fungi"
+    - "In its native range, supports several rare and endemic species"

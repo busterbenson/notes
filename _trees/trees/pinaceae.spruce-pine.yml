@@ -1,0 +1,238 @@
+tree:
+  common_name: Spruce Pine
+  scientific_name: Pinus glabra
+  family: Pinaceae
+  native: false
+
+  summary: Spruce Pine is a medium-sized tree with thin, bendy needles that grow in pairs and small cones with tiny prickles. Despite its name, it's not a spruce but a true pine that naturally grows in wet areas along streams in the southeastern United States. It has smoother bark than most pines and can grow in shadier spots where other pines might not do well. Though not originally from California and rare to find here, it might occasionally be planted in gardens.
+
+  identification_path:
+    primary_markers: "Thin, flexible needles that grow in pairs; smoother bark than most pine trees"
+    secondary_markers: "Small pine cones (about the size of a chicken egg) with tiny prickles; needles about as long as your finger"
+    seasonal_markers: "Light green 'candles' of new growth in spring; small round pollen cones release yellow dust"
+    similar_species_differentiation: "Unlike Slash Pine, has shorter needles and smaller cones; unlike Monterey Pine, has needles in pairs instead of groups of three"
+
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles all year round"
+      
+      - feature_id: "LEAF-SHAPE-21"  # Needle-like
+        notes: "Has thin, flexible needle-like leaves"
+      
+      - feature_id: "NEEDLE-ARRANGEMENT-05"  # Clustered in bundles
+        notes: "Needles grow in small bundles attached at the same point"
+      
+      - feature_id: "CONE-POSITION-02"  # Hanging/pendulous
+        notes: "Cones hang down from the branches"
+    
+    usually_true:
+      - feature_id: "TREE-SIZE-03"  # Large (50-100 feet)
+        notes: "Can grow as tall as a 5-6 story building"
+        exceptions: "In poor growing conditions or limited space, might stay smaller"
+      
+      - feature_id: "TREE-SHAPE-01"  # Pyramidal/conical
+        notes: "Often grows in a Christmas tree shape, especially when young"
+        exceptions: "Older trees may become more irregular in shape with a more open crown"
+      
+      - feature_id: "NEEDLE-BUNDLE-01"  # Needles in pairs
+        notes: "Needles grow in bundles of two"
+        exceptions: "Occasionally might find a bundle with three needles, but this is uncommon"
+      
+      - feature_id: "HABITAT-05"  # Planted in landscapes
+        notes: "In California, only found where people have planted it"
+        exceptions: "Very uncommon in California landscapes"
+    
+    sometimes_true:
+      - feature_id: "TREE-SIZE-02"  # Medium (30-50 feet)
+        conditions: "When growing in poor soil, limited space, or outside its native range"
+        notes: "Might only grow as tall as a 3-4 story building"
+      
+      - feature_id: "BARK-TEXTURE-05"  # Furrowed or ridged
+        conditions: "Older trees"
+        notes: "Bark develops some grooves and cracks as the tree ages"
+      
+      - feature_id: "HABITAT-04"  # Riparian areas
+        conditions: "In its native range"
+        notes: "Naturally grows near streams and in wet bottomlands in southeastern U.S."
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all its needles at once in fall like maple or oak trees"
+      
+      - feature_id: "NEEDLE-BUNDLE-02"  # Needles in groups of 3
+        notes: "Does not normally have three needles in a bundle like some other pines"
+      
+      - feature_id: "NEEDLE-BUNDLE-03"  # Needles in groups of 5
+        notes: "Never has five needles in a bundle like White Pine"
+      
+      - feature_id: "HABITAT-02"  # Forests (in California)
+        notes: "Not found growing wild in California forests, only where people have planted it"
+
+  kid_friendly_identification:
+    primary_identifier: "Thin, bendy pine needles that grow in pairs"
+    memorable_comparison: "It has the smoothest bark of almost any pine tree - more like a maple tree's bark than a typical scratchy pine"
+    touch_tip: "The needles are soft and bendy - you can fold them without breaking them, unlike many other pines with stiff, poky needles"
+    smell_tip: "Gently crush a needle to smell a fresh pine scent that's milder than many other pine trees"
+    fun_fact: "Its name is super confusing! It's called 'Spruce Pine' but it's actually a true pine tree, not a spruce at all!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at how the needles grow. Do they come in pairs (just two needles growing from the same spot)?"
+        yes_next: 2
+        no_next: "Probably not a Spruce Pine - count how many needles are in each bundle"
+      - step: 2
+        instruction: "Try bending a needle gently. Does it bend easily without breaking?"
+        yes_next: 3
+        no_next: "Probably not a Spruce Pine - many other pines have stiffer needles"
+      - step: 3
+        instruction: "Look at the bark. Is it smoother than most pine trees you've seen?"
+        yes_next: 4
+        no_next: "Might not be a Spruce Pine - most other pines have rougher, more deeply grooved bark"
+      - step: 4
+        instruction: "Look for pine cones. Are they small (about the size of a chicken egg) with tiny prickles?"
+        yes_next: "You found a Spruce Pine!"
+        no_next: "If the cones are much bigger or have large, sharp prickles, it's probably a different pine"
+
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Light green 'candles' of new growth appear at the tips of branches"
+      reproductive_activity: "Small yellow male pollen cones release pollen, and tiny female cones begin to form"
+      identification_tips: "The light green new growth stands out against the darker older needles"
+      kid_friendly_tip: "In spring, look for what tree experts call 'candles' - the light green new shoots at the branch tips that look like little birthday candles!"
+    
+    - season: "Summer"
+      visual_changes: "New needles grow to their full length (about as long as your finger) and turn darker green"
+      reproductive_activity: "First-year cones grow bigger, while cones from last year continue developing"
+      identification_tips: "By mid-summer, all needles are dark green and the tree has a full appearance"
+      kid_friendly_tip: "In summer, the new needles finish growing and aren't so bright green anymore"
+    
+    - season: "Fall"
+      visual_changes: "The tree stays green while deciduous trees change color and lose leaves"
+      reproductive_activity: "Second-year cones turn from green to light brown and open to release seeds on dry days"
+      identification_tips: "Easier to spot against colorful deciduous trees; look for small brown cones"
+      kid_friendly_tip: "In fall, the little cones turn brown and open up like flower petals to let the seeds fly out"
+    
+    - season: "Winter"
+      visual_changes: "Keeps green needles all winter, though some older needles might drop"
+      reproductive_activity: "Dormant - no reproductive activity"
+      identification_tips: "The evergreen form stands out among leafless deciduous trees"
+      kid_friendly_tip: "In winter, this tree keeps its green needles when many other trees are bare"
+
+  confirmation_checklist:
+    - feature: "Needles in pairs, thin and bendy, about as long as your finger"
+      reliability: "Very high"
+      visibility: "Medium - need to look closely at branches"
+    
+    - feature: "Small cones (about the size of a chicken egg) with tiny prickles"
+      reliability: "High (when present)"
+      visibility: "Medium - may need to look carefully in the tree"
+    
+    - feature: "Bark smoother than most pines, especially when young"
+      reliability: "Medium-high"
+      visibility: "Easy to see on trunk"
+    
+    - feature: "Less densely branched than many pines, with a somewhat irregular shape as it grows older"
+      reliability: "Medium"
+      visibility: "Visible from a distance"
+
+  look_alike_species:
+    - species: "Slash Pine (Pinus elliottii)"
+      differences: "Slash Pine has much longer needles (as long as your hand) and larger cones (as big as a small apple)"
+      identification_tip: "If the needles are longer than your finger or the cones bigger than an egg, it's probably not Spruce Pine"
+    
+    - species: "Loblolly Pine (Pinus taeda)"
+      differences: "More commonly planted, with much longer needles (as long as a pencil) in clusters of three instead of two"
+      identification_tip: "Count the needles in each bundle - Loblolly has three per bundle, Spruce Pine has two"
+    
+    - species: "Virginia Pine (Pinus virginiana)"
+      differences: "Looks similar but has shorter, twisted needles that are more rigid and don't bend easily"
+      identification_tip: "Try to bend a needle - Virginia Pine needles are stiffer and often twisted"
+    
+    - species: "Monterey Pine (Pinus radiata)"
+      differences: "Common in California, with needles typically in threes (occasionally pairs) and larger cones with more pronounced prickles"
+      identification_tip: "Monterey Pine has bigger, more prickly cones and usually has three needles per bundle"
+
+  cultural_significance:
+    - culture: "Southeastern United States"
+      physical_uses:
+        - "Wood has been used for building houses and making paper, though less commonly than other pine species"
+        - "Not widely used for timber because the wood isn't as strong or rot-resistant as other pines"
+      symbolic_meaning:
+        - "Less culturally important in its native range than other pines like Longleaf Pine"
+    
+    - culture: "Modern Landscaping"
+      physical_uses:
+        - "Sometimes planted in wet areas where other pines might not grow well"
+        - "Used in some gardens because it can grow in partial shade unlike most other pines"
+      symbolic_meaning:
+        - "Represents the diversity of pine tree adaptations - showing that not all pines need full sun and dry conditions"
+
+  range_within_california: "Not native to California. In California, it would be a very uncommon tree, maybe found in botanical gardens or special tree collections. If planted, it would grow best in cooler coastal areas or foothills with extra watering, especially in places with some afternoon shade."
+
+  physical_characteristics:
+    height: "60-80 feet in its native range (as tall as a 6-8 story building), but likely smaller in California"
+    width: "20-35 feet (about as wide as a two-car garage)"
+    growth_rate: "Medium - grows about 12-24 inches per year when young"
+    lifespan: "Can live 100-150 years in good conditions"
+    bark: "Smoother than most pines when young, becoming moderately grooved with age but still less rough than many pines"
+    leaves: "Thin, flexible needles in pairs, about as long as your finger (2-3 inches)"
+    flowers: "Not true flowers - has small yellowish pollen cones in spring"
+    fruit: "Small pine cones about the size of a chicken egg (1.5-2.5 inches long) with tiny prickles on the scales"
+    seeds: "Small winged seeds that can fly in the wind like little helicopters"
+    trunk_diameter: "Can grow 1-2 feet across (about as wide as a dinner plate)"
+    root_system: "Moderately deep with wide spreading roots"
+    toxicity: "Not poisonous, but sap is sticky and can be hard to wash off clothes and skin"
+    suitable_for_public_spaces: "Limited - uncommon in California and needs specific growing conditions"
+
+  conservation_status:
+    status: "Not threatened or endangered"
+    threats: "Has a small natural range limited to the southeastern United States"
+    protection_efforts: "No specific conservation programs needed as it's still common in its native range"
+
+  decision_tree_placement:
+    primary_split_features:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+      - feature_id: "LEAF-SHAPE-21"  # Needle-like
+      - feature_id: "NEEDLE-ARRANGEMENT-05"  # Clustered in bundles
+    
+    confirmation_features:
+      - feature_id: "NEEDLE-BUNDLE-01"  # Needles in pairs
+      - feature_id: "BARK-TEXTURE-01"  # Smooth bark (relatively)
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SHAPE-01", "LEAF-TYPE-02"]  # Pyramidal shape, evergreen
+      
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-BUNDLE-01", "BARK-TEXTURE-01"]  # Needles in pairs, relatively smooth bark
+      
+      - distance: "close_inspection"
+        features_to_check: ["NEEDLE-LENGTH-02", "CONE-SIZE-02"]  # Medium needle length, small cones
+    
+    seasonal_identification:
+      spring:
+        reliability: "Medium-high"
+        key_features: ["LEAF-TYPE-02", "NEEDLE-BUNDLE-01", "GROWTH-PATTERN-02"]
+        notes: "New growth 'candles' and pollen cones provide additional confirmation"
+      
+      summer:
+        reliability: "High"
+        key_features: ["NEEDLE-BUNDLE-01", "BARK-TEXTURE-01", "CONE-SIZE-02"]
+        notes: "Fully developed needles and growing cones are visible"
+      
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "NEEDLE-BUNDLE-01", "CONE-SIZE-02"]
+        notes: "Mature cones are present and some may be open"
+      
+      winter:
+        reliability: "Medium-high"
+        key_features: ["LEAF-TYPE-02", "TREE-SHAPE-01", "NEEDLE-BUNDLE-01"]
+        notes: "Evergreen form stands out against deciduous trees"
+    
+    misidentification_risks:
+      - "Could be confused with other two-needle pines, especially Virginia Pine"
+      - "Younger specimens may be harder to distinguish from other pine species"
+
+  wildlife_value: "In its home region, Spruce Pine provides food and shelter for wildlife. Birds like woodpeckers, nuthatches, chickadees, and finches eat the seeds, as do squirrels and chipmunks. Birds make nests in the branches, and the tree provides a safe place for many animals to hide. Because it can grow in shadier spots, it helps create forest homes with different layers where many types of animals can live. In California, where it would be rarely planted, it could still help local birds and small mammals, though not as much as trees that naturally grow in California. Its ability to grow in partial shade means it could be part of garden designs that mimic natural forests with trees of different heights."

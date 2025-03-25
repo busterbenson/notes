@@ -1,0 +1,286 @@
+tree:
+  common_name: "Chinese Elm"
+  scientific_name: "Ulmus parvifolia"
+  family: "Ulmaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A medium-sized tree with beautiful mottled bark that flakes off in colorful puzzle-like patches of gray, green, orange, and brown. It has small, glossy dark green leaves with toothed edges and an arching, vase-shaped canopy."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Distinctive mottled, exfoliating bark in multiple colors; small, shiny leaves with simple teeth"
+    secondary_markers: "Vase-shaped or rounded crown; zigzag twig pattern; small round seeds with a notch"
+    seasonal_markers: "Semi-evergreen nature (keeps some leaves in mild winters); late summer to fall flowering"
+    similar_species_differentiation: "Has much more colorful, peeling bark than American Elm; has smaller, glossier leaves than most elms; lacks corky wings on branches that Cedar Elm has"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-COMPLEX-01"  # Simple
+        notes: "Leaves are single pieces, not made of smaller leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow in a zigzag pattern along branches, not in pairs"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated
+        notes: "Leaf edges have small teeth"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Bark flakes off in puzzle-like patches revealing multiple colors"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        notes: "Not native to California; originally from China and other parts of Asia"
+    
+    usually_true:
+      - feature_id: "LEAF-TYPE-03"  # Semi-evergreen
+        notes: "Often keeps some leaves through winter in mild climates"
+        exceptions: "Drops leaves in colder areas or harsh winters"
+      
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk"
+        exceptions: "Can develop multiple trunks if pruned or damaged when young"
+      
+      - feature_id: "TREE-FORM-06"  # Vase shaped
+        notes: "Develops a graceful vase shape with arching branches as it matures"
+        exceptions: "Young trees may have a more irregular form"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Typically grows 40-50 feet tall"
+        exceptions: "Can remain smaller in poor conditions or in cultivated dwarf varieties"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        notes: "Once established, can tolerate periods of drought"
+        exceptions: "Young trees need regular water during establishment"
+    
+    sometimes_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        conditions: "In colder climates or harsh winters"
+        notes: "May drop all leaves in cold weather"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "In autumn, particularly in cooler climates"
+        notes: "May develop yellow to reddish-brown fall color before leaf drop"
+      
+      - feature_id: "FLOWER-TIME-03"  # Fall flowering
+        conditions: "Late summer to fall"
+        notes: "Produces small, inconspicuous greenish flowers"
+      
+      - feature_id: "TWIG-FORM-01"  # Twigs zigzag
+        conditions: "More noticeable on younger branches"
+        notes: "Twigs grow in a zigzag pattern between leaf nodes"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "Often found in city environments"
+        notes: "Tolerates pollution, compacted soil, and urban conditions well"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Not truly evergreen; will drop leaves in cold weather"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has compound leaves, only simple leaves"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves never grow directly across from each other"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Never has thorns or spines on branches"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Colorful peeling bark that looks like puzzle pieces in oranges, grays, greens, and browns"
+    memorable_comparison: "The bark looks like someone started peeling off stickers or puzzle pieces to reveal different colors underneath"
+    touch_tip: "Feel how smooth and small the leaves are - they're glossy like they've been polished"
+    smell_tip: "The leaves don't have a strong smell, but the bark has a subtle woody scent"
+    fun_fact: "Chinese Elm trees are sometimes called 'lacebark elms' because their peeling bark reveals a pattern that looks like colorful lace! They're also super tough trees that can live for hundreds of years, even in city pollution that makes other trees sick."
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the bark. Does it have colorful patches where it's peeling, with orange, brown, gray, and greenish colors showing through?"
+        yes_next: 2
+        no_next: "If the bark is solid gray or brown without colorful patches, it's probably a different elm species"
+      - step: 2
+        instruction: "Check the leaves. Are they small (about the size of your thumb or a bit bigger), dark green, and shiny?"
+        yes_next: 3
+        no_next: "If the leaves are large, rough, or dull, check for American Elm or Cedar Elm"
+      - step: 3
+        instruction: "Look at the tree shape. Does it have a graceful vase shape with branches that arch upward and outward?"
+        yes_next: 4
+        no_next: "It still might be a Chinese Elm - especially if it's young. Check the colorful peeling bark again"
+      - step: 4
+        instruction: "If it's winter in a mild area, does the tree still have some of its leaves when other trees are bare?"
+        yes_next: "You found a Chinese Elm!"
+        no_next: "It could still be a Chinese Elm, especially if the weather is cold. Look at the colorful peeling bark"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaves emerge bright green; may leaf out later than deciduous trees if it kept winter leaves"
+      reproductive_activity: "No flowering in spring (unlike most other elms)"
+      identification_tips: "Colorful peeling bark visible; new leaves are bright green and glossy"
+      kid_friendly_tip: "In spring, look for bright new green leaves and the colorful bark that's peeling like puzzle pieces"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of small, dark green glossy leaves"
+      reproductive_activity: "Small flower buds form late in summer"
+      identification_tips: "Glossy leaves and distinctive bark pattern; graceful vase shape"
+      kid_friendly_tip: "In summer, notice how shiny the leaves are, almost like they've been polished"
+    
+    - season: "Fall"
+      visual_changes: "May develop yellow to reddish-brown fall color, or may stay green in mild climates"
+      reproductive_activity: "Small, inconspicuous greenish flowers appear; followed by round, flat, notched seeds"
+      identification_tips: "Fall flowering and seed production; colorful bark more noticeable as some leaves drop"
+      kid_friendly_tip: "In fall, this tree makes tiny flowers and seeds when most other trees are just dropping leaves"
+    
+    - season: "Winter"
+      visual_changes: "May keep some leaves in mild winter climates; otherwise shows bare branch structure"
+      reproductive_activity: "Seeds may persist into winter"
+      identification_tips: "Semi-evergreen nature in mild areas; mottled, colorful bark most visible in winter"
+      kid_friendly_tip: "In winter, this tree might keep some of its leaves when other trees go bare, and you can really see its colorful peeling bark"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Mottled, exfoliating bark with multiple colors"
+      reliability: "Very high"
+      visibility: "Easy to observe"
+    - feature: "Small, glossy leaves with toothed edges"
+      reliability: "High"
+      visibility: "Need to look closely"
+    - feature: "Vase-shaped or rounded crown"
+      reliability: "Medium"
+      visibility: "Visible from a distance on mature trees"
+    - feature: "Semi-evergreen habit in mild climates"
+      reliability: "Medium"
+      visibility: "Observable in winter"
+    
+  look_alike_species:
+    - species: "American Elm (Ulmus americana)"
+      differences: "American Elm has larger, rougher leaves and does not have colorful, exfoliating bark"
+      identification_tip: "Chinese Elm bark peels in colorful patches; American Elm bark has vertical furrows"
+    
+    - species: "Cedar Elm (Ulmus crassifolia)"
+      differences: "Cedar Elm has rough-textured leaves and corky wings on branches; lacks the colorful peeling bark"
+      identification_tip: "Chinese Elm has smooth, glossy leaves and colorful peeling bark; Cedar Elm has rough leaves"
+    
+    - species: "Zelkova (Zelkova serrata)"
+      differences: "Zelkova has similar leaf size but smoother bark without the colorful peeling pattern"
+      identification_tip: "Chinese Elm's peeling, multi-colored bark is not present on Zelkova"
+  
+  cultural_ecological_notes:
+    - "Very adaptable tree that tolerates urban pollution, drought, and poor soils"
+    - "Less susceptible to Dutch elm disease than American Elm"
+    - "Popular street and landscape tree due to its adaptability and beauty"
+    - "Provides food and habitat for various wildlife species"
+    
+  cultural_significance:
+    - culture: "Traditional Chinese Culture"
+      physical_uses:
+        - "Used the strong, flexible wood for furniture and tool handles"
+        - "Made bonsai trees from Chinese Elm due to its small leaves and attractive bark"
+        - "Used in traditional medicine to treat skin conditions and wounds"
+      symbolic_meaning:
+        - "Symbolizes resilience and adaptability due to its toughness"
+        - "Represents balance and harmony in traditional garden design"
+    
+    - culture: "American Urban Planners"
+      physical_uses:
+        - "Planted widely as a replacement for American Elms lost to Dutch elm disease"
+        - "Used as street trees because they tolerate pollution and poor soil"
+        - "Valued for shade in hot urban environments"
+      symbolic_meaning:
+        - "Represents urban resilience and adaptation to challenging conditions"
+        - "Symbolizes hope for restoring tree canopy in cities affected by tree disease"
+    
+    - culture: "Bonsai Artists Worldwide"
+      physical_uses:
+        - "One of the most popular species for beginner bonsai because it's forgiving and adaptable"
+        - "Used to demonstrate various bonsai styles due to its flexible growth habit"
+        - "Valued for its attractive bark that shows age well even in miniature form"
+      symbolic_meaning:
+        - "Represents the patient art of working with nature"
+        - "Symbolizes the ability to thrive despite constraints"
+  
+  range_within_california:
+    - "Not native to California"
+    - "Widely planted throughout the state in urban areas"
+    - "Grows well in most regions from coastal areas to inland valleys"
+    - "More likely to be semi-evergreen in Southern California and coastal areas"
+    
+  physical_characteristics:
+    height_range: "40-50 feet tall"
+    growth_rate: "Moderate to fast; about 1-3 feet per year"
+    crown_spread: "35-45 feet wide at maturity"
+    lifespan: "50-150 years, potentially longer"
+    trunk_diameter: "1-2 feet when mature"
+    root_system: "Moderately deep with wide-spreading lateral roots"
+    toxicity: "Not toxic to humans or animals"
+    
+  conservation_status:
+    status: "Not threatened in native range"
+    threats: "No major threats; resistant to many diseases that affect other elms"
+    protection_efforts: "No specific protection efforts as it is not endangered"
+  
+  kid_friendly_cultural_significance:
+    - culture: "Chinese People"
+      physical_uses:
+        - "Used the strong wood to make furniture and tools that last a long time"
+        - "Made tiny bonsai trees that look like miniature versions of full-sized trees"
+        - "Made medicine from the bark and leaves to help heal skin problems"
+      symbolic_meaning:
+        - "Admired the tree for being tough and able to live in difficult places"
+        - "Believed the tree showed how to be flexible but strong - bending in storms but not breaking"
+    
+    - culture: "City Tree Planters"
+      physical_uses:
+        - "Planted along streets because it can handle car exhaust that makes other trees sick"
+        - "Used to create shade in hot cities where other trees might die"
+        - "Chosen because it doesn't break sidewalks as badly as some other trees"
+      symbolic_meaning:
+        - "Represents how cities can still have beautiful trees even with pollution"
+        - "Reminds us that some trees can adapt to live alongside people in busy cities"
+  
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-03"  # Semi-evergreen
+      - "feature_id: BARK-TEXT-03"  # Peeling bark
+      - "feature_id: LEAF-EDGE-02"  # Serrated
+    confirmation_features:
+      - "feature_id: LEAF-COMPLEX-01"  # Simple
+      - "feature_id: TREE-FORM-06"  # Vase shaped
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-06", "LEAF-TYPE-03"]  # Vase shaped, semi-evergreen
+      - distance: "from_nearby"
+        features_to_check: ["BARK-TEXT-03", "LEAF-EDGE-02"]  # Peeling bark, serrated leaves
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-ARRANGE-01", "TWIG-FORM-01"]  # Alternate leaves, zigzag twigs
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["BARK-TEXT-03", "LEAF-COMPLEX-01"]
+        notes: "Colorful peeling bark and fresh new leaves are distinctive"
+      summer:
+        reliability: "High"
+        key_features: ["LEAF-EDGE-02", "TREE-FORM-06"]
+        notes: "Small, glossy leaves and vase shape are distinctive"
+      fall:
+        reliability: "Very high"
+        key_features: ["FLOWER-TIME-03", "BARK-TEXT-03"]
+        notes: "Fall flowering and colorful bark pattern distinctive"
+      winter:
+        reliability: "Very high"
+        key_features: ["LEAF-TYPE-03", "BARK-TEXT-03"]
+        notes: "May retain some leaves in mild winters; colorful peeling bark most visible"
+    misidentification_risks:
+      - species: "American Elm (Ulmus americana)"
+        distinguishing_features: "Chinese Elm has glossy leaves and peeling colorful bark; American Elm has larger, rougher leaves and ridged gray bark"
+      - species: "Zelkova (Zelkova serrata)"
+        distinguishing_features: "Chinese Elm has distinctive peeling bark with multiple colors; Zelkova has smoother bark without the puzzle-piece peeling pattern"
+  
+  wildlife_value:
+    - "Seeds eaten by birds and small mammals"
+    - "Provides nesting sites for birds"
+    - "Leaves are food for various butterfly and moth caterpillars"
+    - "Bark texture creates habitat for insects and spiders"
+    - "Semi-evergreen nature provides winter shelter for birds in mild climates"

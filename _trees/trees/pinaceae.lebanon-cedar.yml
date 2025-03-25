@@ -1,0 +1,248 @@
+tree:
+  common_name: "Lebanon Cedar"
+  scientific_name: "Cedrus libani"
+  family: "Pinaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A majestic evergreen tree with dark green needles in clusters and a distinctive broad, flat-topped crown when mature. It has upright barrel-shaped cones and develops a massive, straight trunk with spreading horizontal branches that create a layered appearance."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Dark green needles in clusters (rosettes) on short shoots; distinctive flat-topped crown when mature"
+    secondary_markers: "Upright barrel-shaped cones; horizontal branching pattern forming distinct tiers or layers"
+    seasonal_markers: "Little seasonal change; stays evergreen with new growth appearing lighter green in spring"
+    similar_species_differentiation: "More horizontal branches and darker green needles than Atlas Cedar; lacks the drooping branch tips of Deodar Cedar; needles grow in clusters unlike pines, which grow in bundles"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles year-round for several years before shedding"
+      
+      - feature_id: "NEEDLE-ARRANGE-06"  # Clustered needles
+        notes: "Needles grow in tufts or clusters on short shoots"
+      
+      - feature_id: "CONE-POS-01"  # Upright cones
+        notes: "Cones stand upright on the branches like candles"
+      
+      - feature_id: "CONE-SHAPE-02"  # Elongated cones
+        notes: "Cones are barrel-shaped, about 3-5 inches long"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        notes: "Not native to California; originally from Lebanon, Syria, and Turkey"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with one main trunk that is straight and massive"
+        exceptions: "Can sometimes develop multiple leaders if the main leader is damaged"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Young trees have a symmetrical conical shape"
+        exceptions: "Mature trees develop a distinctive flat-topped crown with spreading branches"
+      
+      - feature_id: "LEAF-COLOR-01"  # Dark green
+        notes: "Needles typically have a darker green color than other cedar species"
+        exceptions: "New growth appears lighter green"
+      
+      - feature_id: "BRANCH-ANGLE-01"  # Horizontal branches
+        notes: "Branches grow horizontally in distinct tiers or layers"
+        exceptions: "Young trees may have more upward-angled branches"
+    
+    sometimes_true:
+      - feature_id: "TREE-FORM-07"  # Flat topped
+        conditions: "Mature trees, usually over 20-30 years old"
+        notes: "Develops a distinctive flat or slightly rounded top instead of pointed"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Older trees"
+        notes: "Bark becomes rough, fissured, and scaly with age, dark grayish-brown"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees"
+        notes: "Bark is relatively smooth and gray on young trees"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all needles seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Unlike pines, needles are not in bundles of specific numbers but in tufts"
+      
+      - feature_id: "BRANCH-ANGLE-03"  # Drooping branches
+        notes: "Does not have the drooping branch tips characteristic of Deodar Cedar"
+      
+      - feature_id: "CONE-POS-02"  # Hanging cones
+        notes: "Cones never hang downward like most pine or spruce cones"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Dark green needles growing in tufts like little stars, with a flat top on older trees"
+    memorable_comparison: "It looks like a giant tree with shelves or layers of branches sticking out, and when it gets old, the top becomes flat like a table"
+    touch_tip: "Careful! The needles are stiff and can poke - gently touch the sides of needles rather than the tips"
+    smell_tip: "Crush a needle gently to smell a wonderful woody, resinous scent like a forest"
+    fun_fact: "Lebanon Cedars can live for over 1,000 years! They're mentioned in ancient stories and religious texts, and the flag of Lebanon features this majestic tree as its national symbol."
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at how the needles grow. Do they come out in little tufts or clusters along the branches?"
+        yes_next: 2
+        no_next: "If the needles grow singly or in bundles of exact numbers (like 2 or 5), it's not a Lebanon Cedar"
+      - step: 2
+        instruction: "Look at the color of the needles. Are they dark green rather than blue-green or silvery?"
+        yes_next: 3
+        no_next: "If they're blue-green or silvery, it might be an Atlas Cedar"
+      - step: 3
+        instruction: "Check the branches. Do they grow straight out rather than drooping at the tips?"
+        yes_next: 4
+        no_next: "If the branch tips droop downward, it's probably a Deodar Cedar"
+      - step: 4
+        instruction: "If the tree is mature, look at its overall shape. Does it have a flat top rather than a pointy top?"
+        yes_next: "You found a Lebanon Cedar!"
+        no_next: "It could still be a young Lebanon Cedar - check other features like needle color and branch angle"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New growth appears at branch tips as lighter green needles"
+      reproductive_activity: "Pollen cones may appear, releasing yellow pollen"
+      identification_tips: "The contrast between new growth and older needles is noticeable"
+      kid_friendly_tip: "Look for lighter green, soft new needles at the tips in spring"
+    
+    - season: "Summer" 
+      visual_changes: "Consistent dark green color throughout with mature needles"
+      reproductive_activity: "Female cones begin to develop, standing upright"
+      identification_tips: "Distinctive layered branch structure is most visible"
+      kid_friendly_tip: "Young cones look like little green eggs standing up on branches"
+    
+    - season: "Fall"
+      visual_changes: "No color change; remains dark green"
+      reproductive_activity: "Cones mature to brown color but won't release seeds until second year"
+      identification_tips: "No fall color change helps distinguish from deciduous trees"
+      kid_friendly_tip: "While other trees change color, Lebanon Cedar stays dark green"
+    
+    - season: "Winter"
+      visual_changes: "Remains evergreen; no change in appearance"
+      reproductive_activity: "Mature cones may disintegrate on the tree, releasing seeds"
+      identification_tips: "Distinctive silhouette with flat top and horizontal branches visible against winter sky"
+      kid_friendly_tip: "Look for the tree's flat top and layer-cake shape against the winter sky"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Needles growing in tufts or clusters (not in specific numbered bundles)"
+      reliability: "Very high"
+      visibility: "Easy to observe"
+    - feature: "Dark green needle color (not blue-green)"
+      reliability: "High"
+      visibility: "Visible from distance"
+    - feature: "Horizontal branches growing in layers or tiers"
+      reliability: "High"
+      visibility: "Visible from distance"
+    - feature: "Upright barrel-shaped cones (when present)"
+      reliability: "Very high"
+      visibility: "Need to look closely to spot"
+    - feature: "Flat-topped crown on mature trees"
+      reliability: "High"
+      visibility: "Visible on older trees from distance"
+    
+  look_alike_species:
+    - species: "Atlas Cedar (Cedrus atlantica)"
+      differences: "Atlas Cedar often has blue-green needles and a less pronounced flat top; Lebanon Cedar has darker green needles and more distinctly tiered branches"
+      identification_tip: "Focus on needle color - Lebanon Cedar's are darker green without the bluish tint of Atlas Cedar"
+    
+    - species: "Deodar Cedar (Cedrus deodara)"
+      differences: "Deodar Cedar has drooping branch tips and a more weeping form; Lebanon Cedar has horizontal branches that don't droop at the tips"
+      identification_tip: "Look at the branch tips - if they droop downward like they're tired, it's likely Deodar Cedar"
+  
+  cultural_ecological_notes:
+    - "One of the oldest continuously referenced trees in human history, mentioned in the Epic of Gilgamesh and many religious texts"
+    - "Sacred tree in many ancient Middle Eastern cultures and traditions"
+    - "Wood historically used for temples, palaces, and ships due to its durability and fragrance"
+    - "National emblem of Lebanon, featured on the country's flag"
+    - "Can tolerate drought once established, making it suitable for California's Mediterranean climate"
+    
+  range_within_california:
+    - "Not native to California but occasionally planted as an ornamental specimen tree"
+    - "Thrives in Mediterranean climate regions of the state"
+    - "Less commonly planted than Atlas Cedar or Deodar Cedar in California"
+    - "Usually found in botanical gardens, arboretums, and large estate gardens"
+    
+  physical_characteristics:
+    height_range: "40-80 feet tall in cultivation (up to 130 feet in native habitat)"
+    growth_rate: "Slow to moderate growth of about 1 foot per year"
+    crown_spread: "30-50 feet wide when mature"
+    lifespan: "Up to 1,000+ years in native habitat; 150-300 years in landscape"
+    trunk_diameter: "3-6 feet across when mature"
+    root_system: "Deep taproot with spreading lateral roots"
+    toxicity: "Non-toxic to humans and animals"
+    
+  conservation_status:
+    status: "Vulnerable in native range"
+    threats: "Climate change, logging, habitat fragmentation, and fire in native habitats"
+    protection_efforts: "Protected in national parks and reserves in Lebanon, Syria, and Turkey"
+    notes: "Wild populations significantly reduced from historical range"
+  
+  wildlife_value:
+    - "Seeds eaten by birds and small mammals"
+    - "Dense foliage provides nesting sites and shelter for birds"
+    - "Older trees with furrowed bark create habitat for insects and small creatures"
+    - "Provides winter shelter for many animals when other trees are bare"
+  
+  kid_friendly_cultural_significance:
+    - culture: "Ancient Lebanon and Middle East"
+      physical_uses:
+        - "Used the durable wood to build King Solomon's Temple and other important buildings"
+        - "Made ships that sailed the Mediterranean Sea thousands of years ago"
+        - "Created special oils from the aromatic wood for ceremonies and medicine"
+      symbolic_meaning:
+        - "Seen as a symbol of strength, eternity, and resilience"
+        - "Considered a sacred tree connected to the divine in many ancient cultures"
+        - "Represented power and nobility due to its majestic appearance"
+    
+    - culture: "Modern Lebanon"
+      physical_uses:
+        - "Featured on the national flag as a symbol of the country"
+        - "Protected in reserves as a national treasure"
+        - "Used in traditional crafts and as a tourist attraction"
+      symbolic_meaning:
+        - "Represents national identity and pride"
+        - "Symbolizes resilience, like the Lebanese people who have survived many conflicts"
+  
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: NEEDLE-ARRANGE-06"  # Clustered needles
+      - "feature_id: BRANCH-ANGLE-01"  # Horizontal branches
+    confirmation_features:
+      - "feature_id: LEAF-COLOR-01"  # Dark green
+      - "feature_id: TREE-FORM-07"  # Flat topped (mature trees)
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-TYPE-02", "TREE-FORM-01", "TREE-FORM-07"]  # Evergreen, pyramidal when young, flat-topped when mature
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-ARRANGE-06", "BRANCH-ANGLE-01", "LEAF-COLOR-01"]  # Clustered needles, horizontal branches, dark green
+      - distance: "close_inspection"
+        features_to_check: ["CONE-POS-01", "CONE-SHAPE-02"]  # Upright cones, elongated barrel shape
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "NEEDLE-ARRANGE-06", "LEAF-COLOR-01"]
+        notes: "New growth provides good color contrast with darker mature needles"
+      summer:
+        reliability: "High"
+        key_features: ["BRANCH-ANGLE-01", "NEEDLE-ARRANGE-06", "CONE-POS-01"]
+        notes: "Horizontal branches and developing cones are visible"
+      fall:
+        reliability: "High" 
+        key_features: ["LEAF-TYPE-02", "BRANCH-ANGLE-01", "TREE-FORM-07"]
+        notes: "Evergreen nature stands out as deciduous trees change color"
+      winter:
+        reliability: "Very high"
+        key_features: ["LEAF-TYPE-02", "TREE-FORM-07", "BRANCH-ANGLE-01"]
+        notes: "Distinctive silhouette with flat top and horizontal branches visible against winter sky"
+    misidentification_risks:
+      - species: "Atlas Cedar (Cedrus atlantica)"
+        distinguishing_features: "Lebanon Cedar has darker green needles vs Atlas Cedar's blue-green; Lebanon Cedar has more pronounced horizontal branching"
+      - species: "Deodar Cedar (Cedrus deodara)"
+        distinguishing_features: "Lebanon Cedar lacks the drooping branch tips characteristic of Deodar Cedar; has more horizontal branching pattern"

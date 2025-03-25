@@ -1,0 +1,281 @@
+tree:
+  common_name: "Yellow Birch"
+  scientific_name: "Betula alleghaniensis"
+  family: "Betulaceae"
+  
+  # Basic summary
+  summary: "Yellow Birch is a medium to large deciduous tree with shiny yellow-bronze bark that peels in thin, curly, horizontal strips. It has oval, double-toothed leaves that turn golden-yellow in fall, and produces small winged seeds in cylindrical catkins. When scratched, the twigs have a wintergreen scent."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Shiny, yellowish to bronze bark that peels in thin, horizontal, papery strips; wintergreen scent when twigs are scratched"
+    secondary_markers: "Oval, double-toothed leaves; male and female catkins; golden-yellow fall color"
+    seasonal_markers: "Dangling male catkins visible in winter; female catkins develop in spring; bright golden-yellow fall color"
+    similar_species_differentiation: "Unlike Sweet Birch, has yellowish (not reddish-brown) bark; unlike Paper Birch, bark is yellowish bronze rather than white and peels in smaller, curlier strips; unlike River Birch, has wintergreen scent and more yellowish bark"
+  
+  features:
+    always_true:
+      # Fundamental traits
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all leaves in fall"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple leaves
+        notes: "Leaves are single, not compound"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate arrangement
+        notes: "Leaves grow in an alternating pattern along the branches"
+      
+      - feature_id: "LEAF-EDGE-03"  # Doubly serrated
+        notes: "Leaf edges have double teeth, with small teeth on larger teeth"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves/twigs
+        notes: "Twigs and bark have a wintergreen scent when scratched"
+      
+    usually_true:
+      # Features with exceptions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with one main trunk"
+        exceptions: "May develop multiple trunks if damaged or in poor growing conditions"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Usually reaches 60-80 feet tall (about as tall as a 6-8 story building)"
+        exceptions: "May remain smaller in poor conditions or at the edge of its range"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Mature trees typically develop a rounded or spreading crown"
+        exceptions: "Shape can vary in forest settings where it may grow more narrowly"
+      
+      - feature_id: "BARK-COLOR-05"  # Yellow to bronze bark
+        notes: "Distinctive yellowish to bronze bark color"
+        exceptions: "Very old trees may develop darker, more plate-like bark at the base"
+    
+    sometimes_true:
+      # Features that vary
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees"
+        notes: "Bark is relatively smooth when very young"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        conditions: "As trees mature"
+        notes: "Bark develops characteristic thin, curly, horizontal peeling strips"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        conditions: "In California"
+        notes: "Not native to California but occasionally planted as an ornamental"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Fall season"
+        notes: "Leaves turn golden-yellow before falling"
+      
+      - feature_id: "FLOWER-TYPE-01"  # Catkins present
+        conditions: "Spring and winter"
+        notes: "Male catkins visible in winter; female catkins develop in spring"
+    
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops its leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has compound leaves"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves never grow directly across from each other"
+      
+      - feature_id: "BARK-COLOR-02"  # White bark
+        notes: "Unlike Paper Birch, never has white bark"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Flowers are in the form of catkins, never showy"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Shiny, golden-yellow to bronze bark that peels in thin curly strips like ribbons"
+    memorable_comparison: "The bark looks like golden paper curls, like when you curl ribbons with scissors"
+    touch_tip: "Gently scratch a twig and smell - it has a minty wintergreen smell like chewing gum!"
+    smell_tip: "The bark and twigs smell like wintergreen gum or mint when scratched"
+    fun_fact: "Yellow Birch can live up to 300 years - that's as old as the United States! Its wood is used to make ice cream sticks, and the sap can be boiled down to make syrup like maple syrup but with a wintergreen flavor!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the bark. Is it yellowish-bronze color that peels in thin, curly, horizontal strips?"
+        yes_next: 2
+        no_next: "Not a Yellow Birch - if the bark is white, check Paper Birch; if reddish, check River Birch or Sweet Birch"
+      - step: 2
+        instruction: "Carefully scratch a twig and smell it. Does it smell like wintergreen gum or mint toothpaste?"
+        yes_next: 3
+        no_next: "Probably not a Yellow Birch - if no wintergreen smell, check other birches"
+      - step: 3
+        instruction: "Look at the leaves (in growing season). Are they oval with double-toothed edges (tiny teeth on bigger teeth)?"
+        yes_next: "You found a Yellow Birch!"
+        no_next: "Double-check by looking for small hanging catkins (spring) or golden-yellow fall color (autumn)"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Leaf buds break open; new leaves appear with lighter green color; female catkins develop"
+      reproductive_activity: "Male catkins release pollen; female catkins are pollinated and begin to develop into seed structures"
+      identification_tips: "Both male and female catkins visible; new leaf growth"
+      kid_friendly_tip: "In spring, look for dangling catkins and brand new light green leaves unfolding"
+    
+    - season: "Summer" 
+      visual_changes: "Full leaf development; deep green, oval leaves; catkins develop into cylindrical seed structures"
+      reproductive_activity: "Seed catkins mature throughout summer"
+      identification_tips: "Yellow bark and mature leaves with double-serrated edges"
+      kid_friendly_tip: "In summer, the leaves are fully grown and deep green, and the seed catkins look like little green pinecones"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn brilliant golden-yellow; mature seed catkins break apart to release seeds"
+      reproductive_activity: "Seeds are released from catkins and dispersed by wind"
+      identification_tips: "Golden-yellow fall color and seed release"
+      kid_friendly_tip: "In fall, the leaves turn a beautiful gold color, and the catkins break apart to release tiny seeds with wings"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches reveal yellow, peeling bark; male catkins form for next spring"
+      reproductive_activity: "Male catkins present and dormant until spring"
+      identification_tips: "Yellowish peeling bark most visible; male catkins present on branches"
+      kid_friendly_tip: "In winter, you can really see the golden curly bark, and the branches have small hanging catkins waiting for spring"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Yellowish to bronze peeling bark in thin horizontal strips"
+      reliability: "Very high"
+      visibility: "High - visible year-round, especially on mid-sized trees"
+    - feature: "Wintergreen scent when twigs or bark are scratched"
+      reliability: "High"
+      visibility: "Requires scratching and smelling"
+    - feature: "Oval leaves with double-toothed edges"
+      reliability: "High"
+      visibility: "Visible during growing season"
+    - feature: "Golden-yellow fall color"
+      reliability: "Medium"
+      visibility: "Only visible in fall"
+    
+  look_alike_species:
+    - species: "Sweet Birch (Betula lenta)"
+      differences: "Sweet Birch has darker, reddish-brown to almost black bark that doesn't peel as much, though it also has wintergreen scent"
+      identification_tip: "Yellow Birch has more yellow-colored, more extensively peeling bark"
+    - species: "Paper Birch (Betula papyrifera)"
+      differences: "Paper Birch has white bark that peels in larger sheets, and lacks the wintergreen scent"
+      identification_tip: "Check bark color (yellow vs. white) and scratch a twig to check for wintergreen scent"
+    - species: "River Birch (Betula nigra)"
+      differences: "River Birch has reddish-brown, shaggy bark and lacks the wintergreen scent"
+      identification_tip: "Yellow Birch has more yellowish bark and has wintergreen scent when scratched"
+    
+  cultural_ecological_notes:
+    - "Important food source for many wildlife species"
+    - "Seeds are eaten by many bird species including goldfinches, chickadees, and redpolls"
+    - "Buds, catkins, and bark are food for grouse, deer, and hare"
+    - "Helps stabilize soils and prevent erosion in its native range"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Indigenous Peoples of Northeastern North America"
+      physical_uses:
+        - "Used the bark to make waterproof coverings for canoes and wigwams"
+        - "Made containers and baskets from the bark"
+        - "Boiled the sap to make a sweet syrup with wintergreen flavor"
+      symbolic_meaning:
+        - "Represented adaptability and resourcefulness in traditional stories"
+        - "Birch trees were seen as providers, offering many useful materials"
+        - "The distinctive peeling bark was associated with renewal and layers of knowledge"
+    
+    - culture: "Early American Settlers"
+      physical_uses:
+        - "Used the hard, strong wood for furniture, flooring, and tool handles"
+        - "Made tea from twigs and bark for treating colds and fevers"
+        - "Used as a pioneer timber tree for building in the Northeast"
+      symbolic_meaning:
+        - "Represented the bounty of the northeastern forests"
+        - "Golden bark associated with prosperity and value"
+        - "Featured in regional art and craft traditions"
+    
+    - culture: "Modern Woodworking"
+      physical_uses:
+        - "Prized wood for high-end furniture, cabinets, and interior finishing"
+        - "Used for musical instruments due to its resonant properties"
+        - "Harvested sustainably for specialized wood products"
+      symbolic_meaning:
+        - "Represents quality craftsmanship in woodworking traditions"
+        - "Symbolizes the value of traditional materials in modern design"
+        - "Used in education about sustainable forestry practices"
+    
+  range_within_california:
+    - "Not native to California; natural range is in northeastern North America"
+    - "Occasionally planted as an ornamental tree in cooler parts of Northern California"
+    - "Requires cool, moist conditions; struggles in hot, dry California climates"
+    - "Prefers acidic, well-drained soils with consistent moisture"
+    - "Rarely planted in Southern California due to climate incompatibility"
+    
+  physical_characteristics:
+    height_range: "60-80 feet tall, occasionally to 100 feet (about as tall as a 6-10 story building)"
+    growth_rate: "Medium; grows about 12-24 inches per year when young"
+    crown_spread: "30-50 feet wide at maturity"
+    lifespan: "150-300 years under favorable conditions"
+    trunk_diameter: "2-3 feet across (about as wide as a dining table)"
+    root_system: "Moderately shallow but widespread; adaptable to various soil types"
+    toxicity: "Not toxic to humans or animals"
+    
+  conservation_status:
+    status: "Not listed as threatened or endangered"
+    threats: 
+      - "Logging pressure for valuable wood"
+      - "Climate change potentially reducing suitable habitat"
+      - "Bronze birch borer and other insect pests in stressed trees"
+      - "Birch dieback disease in some regions"
+    protection_efforts:
+      - "Sustainable forestry management practices in its native range"
+      - "Seed collection and preservation projects"
+      - "Research into climate change adaptability"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: BARK-TEXT-03"  # Peeling bark
+      - "feature_id: BARK-COLOR-05"  # Yellow to bronze bark
+    confirmation_features:
+      - "feature_id: SENSORY-SMELL-01"  # Aromatic leaves/twigs
+      - "feature_id: LEAF-EDGE-03"  # Doubly serrated
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-02", "TREE-SIZE-03"]  # Rounded crown, tall tree
+      - distance: "from_nearby"
+        features_to_check: ["BARK-COLOR-05", "BARK-TEXT-03"]  # Yellow bark, peeling bark
+      - distance: "close_inspection"
+        features_to_check: ["SENSORY-SMELL-01", "LEAF-EDGE-03"]  # Wintergreen smell, double-serrated edges
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["BARK-COLOR-05", "FLOWER-TYPE-01"]
+        notes: "Catkins and new leaf growth assist identification"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["BARK-COLOR-05", "LEAF-EDGE-03"]
+        notes: "Full leaf development shows characteristic leaf shape and serration"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["LEAF-FALL-01", "BARK-COLOR-05"]
+        notes: "Golden-yellow fall color combined with distinctive bark"
+      
+      winter:
+        reliability: "High"
+        key_features: ["BARK-COLOR-05", "WINTER-FEAT-01"]
+        notes: "Yellowish peeling bark and persistent male catkins are distinctive"
+    misidentification_risks: 
+      - "Can be confused with Sweet Birch if not checking bark color carefully"
+      - "Young trees may have less developed bark characteristics"
+      - "Fall color alone is not sufficient for identification"
+  
+  wildlife_value:
+    food_source:
+      - "Seeds eaten by many birds including chickadees, finches, and redpolls"
+      - "Buds, catkins, and young twigs browsed by grouse, deer, and hare"
+      - "Bark sometimes eaten by porcupines and beaver"
+      - "Sap tapped by yellow-bellied sapsuckers and later used by hummingbirds"
+    habitat_provided:
+      - "Cavities in older trees provide nesting sites for many bird species"
+      - "Branches provide perching and nesting sites for songbirds"
+      - "Peeling bark provides shelter for many small insects and spiders"
+    ecosystem_role: "In its native range, serves as both a pioneer and climax species in forest succession; important component of northern hardwood forests and contributes to biodiversity"

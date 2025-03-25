@@ -1,0 +1,288 @@
+tree:
+  common_name: "Lodgepole Pine"
+  scientific_name: "Pinus contorta"
+  family: "Pinaceae"
+  
+  # Basic summary information
+  summary: "A versatile and widely distributed pine tree with short needles in bundles of two, small prickly cones that often remain closed for years, and thin, scaly bark. It forms dense, even-aged stands after fire and can grow as a tall, straight tree or as a twisted, stunted form depending on its environment."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Needles in bundles of two, short (1-3 inches); small egg-shaped cones with prickly scales; thin, scaly bark that's orange-brown inside cracks"
+    secondary_markers: "Often grows in dense, even-aged stands; slender trunk and narrow crown in forests; small cones often remain attached and closed for many years"
+    seasonal_markers: "Minimal seasonal change as an evergreen; new growth in spring appears as light green 'candles'"
+    similar_species_differentiation: "Unlike Ponderosa Pine, has much shorter needles and smaller cones; unlike Jeffrey Pine, has prickly cones and shorter needles; unlike Shore Pine (a subspecies), grows straight and tall rather than twisted and spreading"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles year-round"
+        
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Has two needles per bundle (fascicle)"
+      
+      - feature_id: "NEEDLE-SIZE-01"  # Short needles
+        notes: "Needles typically 1-3 inches long"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Produces hard, woody seed cones"
+      
+      - feature_id: "CONE-SIZE-01"  # Small cones
+        notes: "Cones typically 1-2 inches long"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Native to California and much of western North America"
+      
+      - feature_id: "ECO-ADAPT-03"  # Fire resistant
+        notes: "Highly adapted to fire ecology; some varieties have serotinous cones that require heat to open"
+
+    usually_true:
+      # Features that are primarily true, but have notable exceptions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with a single main trunk"
+        exceptions: "May develop multiple trunks after damage or in harsh conditions"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Usually grows to 40-80 feet tall in forest settings"
+        exceptions: "May be shorter in harsh alpine or coastal environments; coastal variety (Shore Pine) is often shorter and twisted"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "In forests, typically has a narrow, conical crown"
+        exceptions: "Open-grown trees may have broader crowns; Shore Pine variety often has irregular form"
+      
+      - feature_id: "CONE-FEAT-01"  # Persistent cones
+        notes: "Cones often remain on tree for many years, especially serotinous varieties"
+        exceptions: "Some populations have cones that open and release seeds without fire"
+
+    sometimes_true:
+      # Features that vary with age, season, or conditions
+      - feature_id: "BARK-TEXT-04"  # Plated bark
+        conditions: "Mature trees"
+        notes: "Bark forms thin, scaly plates"
+      
+      - feature_id: "BARK-COLOR-04"  # Brown bark
+        conditions: "Typical bark color"
+        notes: "Bark is usually grayish-brown with orange-brown inner layers visible in cracks"
+      
+      - feature_id: "TREE-FORM-05"  # Irregular crown
+        conditions: "Shore Pine variety or trees in harsh environments"
+        notes: "Shore Pine (coastal variety) often develops a twisted, irregular form"
+      
+      - feature_id: "HABITAT-LOC-02"  # Mountain habitat
+        conditions: "Common growing location"
+        notes: "Often found in mountain forests, particularly in the Sierra Nevada"
+      
+      - feature_id: "GEO-ELEV-03"  # High elevation
+        conditions: "Sierra Nevada variety"
+        notes: "In the Sierra Nevada, often grows at elevations between 6,000-11,000 feet"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        conditions: "When needles are crushed"
+        notes: "Needles release a resinous pine scent when crushed"
+
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all needles seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-03"  # Needles in threes
+        notes: "Always has two needles per bundle, never three"
+      
+      - feature_id: "NEEDLE-ARRANGE-04"  # Needles in fives
+        notes: "Always has two needles per bundle, never five"
+      
+      - feature_id: "CONE-SIZE-03"  # Large cones
+        notes: "Never produces large cones; cones are always relatively small"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A pine tree with short needles that grow in pairs and small pinecones with prickly points that often stay on the tree for years"
+    memorable_comparison: "The needles look like short green pencils that always come in pairs, and the small pinecones are like spiky eggs that often stay stuck to the branches for a long time"
+    touch_tip: "The needles are stiff but not super sharp, and they always grow in pairs - if you hold a bundle, you'll feel exactly two needles"
+    smell_tip: "Crush a needle gently to smell a fresh pine scent"
+    fun_fact: "Lodgepole Pines are fire superheroes! Their pinecones have a special superpower - they're sealed shut with a sticky resin and can stay closed for 20 years or more, waiting for a forest fire. When fire comes, the heat melts the resin and the cones pop open like popcorn, dropping seeds onto the freshly cleared ground. This is why you often see thousands of baby Lodgepole Pines all the same size growing together after a fire - they're all fire babies!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, check the needles. Do they grow in bundles of exactly 2 (just two needles connected at the base) and are they short (only about 1-3 inches long)?"
+        yes_next: 2
+        no_next: "Not a Lodgepole Pine - if needles are in bundles of 3 or 5, or if they're much longer than 3 inches, check other pine species"
+      - step: 2
+        instruction: "Look at the cones on the tree or on the ground. Are they small (about the size of an egg), egg-shaped, with prickly points on the scales?"
+        yes_next: 3
+        no_next: "If cones are larger or don't have prickly points, check other pine species"
+      - step: 3
+        instruction: "Look at how the trees are growing. Are there many trees of the same size growing close together, or is the tree growing in a mountain or forest setting?"
+        yes_next: "You found a Lodgepole Pine!"
+        no_next: "If you're near the coast and the tree is twisted and spreading rather than straight, it might be Shore Pine (a type of Lodgepole Pine)"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New needle growth appears as light green 'candles' at branch tips; male pollen cones produce yellow pollen"
+      reproductive_activity: "Male cones release pollen; female cones begin development"
+      identification_tips: "Look for bright green new growth and yellowish pollen cones"
+      kid_friendly_tip: "In spring, look for light green 'candles' growing at the tips of branches - these will become new needles"
+    
+    - season: "Summer" 
+      visual_changes: "New needles mature to match older foliage; young cones become visible"
+      reproductive_activity: "Young cones grow and develop, turning from green to brown"
+      identification_tips: "Young cones visible on branches; trees may grow new height during summer"
+      kid_friendly_tip: "By summer, the new needles have grown out and baby pinecones start to form"
+    
+    - season: "Fall"
+      visual_changes: "Little visible change; some older needles may yellow and drop"
+      reproductive_activity: "Cones mature but often remain closed"
+      identification_tips: "Mature brown cones visible; some needle drop creates a layer of needle litter"
+      kid_friendly_tip: "In fall, some of the oldest needles turn yellow and fall off, but the tree stays mostly green"
+    
+    - season: "Winter"
+      visual_changes: "No significant changes; remains evergreen"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Distinctive form remains visible all winter; persistent cones remain attached"
+      kid_friendly_tip: "In winter, it keeps its green needles when other trees lose their leaves"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Needles in bundles of two"
+      reliability: "Very high"
+      visibility: "Easy to observe"
+    - feature: "Short needles (1-3 inches)"
+      reliability: "High"
+      visibility: "Easy to observe"
+    - feature: "Small, egg-shaped cones with prickly scales"
+      reliability: "High"
+      visibility: "Easy to spot if present"
+    - feature: "Thin, scaly bark with orange-brown inner layers"
+      reliability: "Medium"
+      visibility: "Observable on mature trees"
+    
+  look_alike_species:
+    - species: "Ponderosa Pine (Pinus ponderosa)"
+      differences: "Ponderosa Pine has much longer needles (5-10 inches), larger cones (3-6 inches), and puzzle-piece bark with vanilla/butterscotch scent"
+      identification_tip: "Lodgepole Pine needles are much shorter and cones much smaller than Ponderosa Pine"
+    - species: "Jeffrey Pine (Pinus jeffreyi)"
+      differences: "Jeffrey Pine has much longer needles (5-10 inches), larger cones (5-10 inches) that are not prickly, and puzzle-piece bark with vanilla scent"
+      identification_tip: "Lodgepole Pine needles are much shorter and cones are much smaller than Jeffrey Pine"
+    - species: "Jack Pine (Pinus banksiana)"
+      differences: "Jack Pine is not native to California, has curved needles, and curved, asymmetrical cones"
+      identification_tip: "Lodgepole Pine has straighter needles and more symmetrical cones than Jack Pine"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Northern Paiute"
+      physical_uses:
+        - "Used the straight trunks to make the center poles of traditional dwellings"
+        - "Harvested cambium (inner bark layer) as a food source in spring"
+        - "Made a tea from needles rich in vitamin C to prevent scurvy"
+        - "Used pitch as a waterproofing agent and adhesive"
+      symbolic_meaning:
+        - "Associated with survival and adaptability due to its presence in harsh environments"
+        - "Featured in stories about forest regeneration after fire"
+        - "The tree's ability to grow straight in dense stands symbolized unity and cooperation"
+    
+    - culture: "Sierra Miwok"
+      physical_uses:
+        - "Harvested the seeds as a food source"
+        - "Used the straight trunks for construction of structures"
+        - "Created medicinal preparations from the pitch for treating cuts and wounds"
+        - "Made tools from the hard, straight-grained wood"
+      symbolic_meaning:
+        - "Represented resilience due to its ability to regenerate after fire"
+        - "Symbolized the importance of community in cultural stories (relating to how the trees grow together in stands)"
+        - "Used as a teaching example of adaptation to challenging environments"
+    
+    - culture: "Early Western Settlers"
+      physical_uses:
+        - "Used widely for constructing log cabins due to straight, uniform trunks"
+        - "Made mine timbers and railroad ties from the wood"
+        - "Used as fence posts and poles due to natural preservatives in the wood"
+        - "Harvested for firewood in high mountain communities"
+      symbolic_meaning:
+        - "Named 'Lodgepole' because Native Americans used the straight trunks for tepee poles"
+        - "Became associated with pioneer resilience in western mountain regions"
+        - "Symbolized the abundance of timber resources in the West"
+    
+  cultural_ecological_notes:
+    - "Critical species in post-fire forest regeneration"
+    - "Forms dense, even-aged stands that provide important wildlife habitat"
+    - "Has multiple varieties adapted to different environments (Sierra Nevada mountains, coastal areas, etc.)"
+    - "Serotinous cones (in some varieties) represent an important evolutionary adaptation to fire"
+    - "Plays a key role in watershed protection in mountain environments"
+    
+  range_within_california:
+    - "Found throughout the Sierra Nevada, typically at elevations between 6,000-11,000 feet"
+    - "Occurs in the Cascade Range and Klamath Mountains in northern California"
+    - "Coastal variety (Shore Pine) found along the northern California coast"
+    - "Present in the Transverse and Peninsular Ranges of southern California"
+    - "One of the most widespread pines in California with different varieties adapted to different environments"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "40-80 feet for inland variety; 20-40 feet for coastal Shore Pine"
+    growth_rate: "Moderate to fast after fire; slow in mature stands"
+    crown_spread: "15-30 feet at maturity"
+    lifespan: "150-200 years, occasionally to 400+ years"
+    trunk_diameter: "1-2 feet at maturity"
+    root_system: "Moderately shallow but widespread, adapted to various soil types"
+    toxicity: "Not toxic, though sap may cause skin irritation in sensitive individuals"
+  
+  conservation_status:
+    status: "Secure overall; abundant throughout its range"
+    threats: 
+      - "Increased fire severity changing natural regeneration patterns"
+      - "Mountain pine beetle outbreaks"
+      - "Climate change potentially affecting suitable habitat"
+      - "Blister rust affecting some populations"
+    protection_efforts:
+      - "Protected in numerous national and state forests and parks"
+      - "Natural fire management programs allowing for natural regeneration"
+      - "Research into climate adaptation and pest resistance"
+      - "Sustainable forestry practices in managed stands"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: NEEDLE-ARRANGE-02"  # Needles in pairs
+    confirmation_features:
+      - "feature_id: NEEDLE-SIZE-01"  # Short needles
+      - "feature_id: CONE-SIZE-01"  # Small cones
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-01", "LEAF-TYPE-02"]  # Pyramidal shape, evergreen
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-ARRANGE-02", "NEEDLE-SIZE-01"]  # Needles in pairs, short needles
+      - distance: "close_inspection"
+        features_to_check: ["CONE-SIZE-01", "BARK-TEXT-04"]  # Small cones, plated bark
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-02", "NEEDLE-SIZE-01"]
+        notes: "New growth candles and pollen cones visible"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["NEEDLE-ARRANGE-02", "CONE-SIZE-01"]
+        notes: "Developing cones may be visible"
+      
+      fall:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-02", "CONE-SIZE-01"]
+        notes: "Mature cones visible; some needle drop may occur"
+      
+      winter:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-02", "LEAF-TYPE-02"]
+        notes: "Remains green through winter; persistent cones visible"
+    misidentification_risks: 
+      - "Could be confused with other two-needle pines, particularly when young"
+      - "Shore Pine variety with twisted form might not be immediately recognized as related to forest Lodgepole Pine"
+      - "Young trees before developing distinctive character may be harder to identify"
+  
+  wildlife_value:
+    - "Seeds eaten by numerous birds, particularly Clark's nutcracker and various finches"
+    - "Red squirrels and chipmunks harvest and cache the seeds"
+    - "Dense stands provide cover for deer, elk, and numerous bird species"
+    - "Needles and buds browsed by grouse and deer, especially in winter"
+    - "Standing dead trees (snags) provide important habitat for woodpeckers and cavity-nesting birds"

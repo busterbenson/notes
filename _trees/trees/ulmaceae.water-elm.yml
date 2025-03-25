@@ -1,0 +1,291 @@
+tree:
+  common_name: "Water-elm"
+  scientific_name: "Planera aquatica"
+  family: "Ulmaceae"
+  
+  # Basic summary information
+  summary: "A small to medium-sized deciduous tree found in wetland areas that resembles elms but with smaller, more asymmetrical leaves and distinctive warty fruits. Has shaggy, peeling bark on mature trees and grows primarily in swamps, floodplains, and along stream banks where it can tolerate periodic flooding."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Small to medium deciduous tree with elm-like leaves; grows in wet areas and swamps; has shaggy, peeling bark on mature specimens"
+    secondary_markers: "Leaves are asymmetrical at base, smaller than American elm (2-3 inches long); small nutlets covered in warty projections; often multi-trunked growth form"
+    seasonal_markers: "Flowers appear before leaves in early spring; fruits mature by late spring; yellow fall color; distinctive branch structure visible in winter"
+    similar_species_differentiation: "Unlike true elms, has warty fruits instead of flat, winged samaras; smaller leaves than American elm; rougher texture to bark than hackberry"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Has undivided leaf blades"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow alternately along stems, not opposite or in whorls"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        notes: "Strongly associated with water - swamps, floodplains, stream edges"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated
+        notes: "Leaf edges have small, sharp teeth"
+    
+    usually_true:
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Usually grows 30-40 feet tall (occasionally to 50 feet)"
+        exceptions: "May be shorter in poor conditions or when young"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Usually has a rounded, somewhat irregular crown"
+        exceptions: "Shape can be influenced by crowding and growing conditions"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Bark often peels or flakes on mature trees"
+        exceptions: "Young trees have smoother bark that develops flaking character with age"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        notes: "Leaves typically turn yellow in autumn"
+        exceptions: "Fall color may be less vibrant in some years depending on conditions"
+    
+    sometimes_true:
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        conditions: "Often in swampy conditions or after damage"
+        notes: "Can develop multiple trunks, especially in wet areas"
+      
+      - feature_id: "HABITAT-WATER-02"  # Wetland habitat
+        conditions: "In low-lying areas with poor drainage"
+        notes: "Often found in true wetlands and seasonally flooded areas"
+      
+      - feature_id: "TWIG-FORM-01"  # Twigs zigzag
+        conditions: "On newer growth"
+        notes: "Twigs may have a slight zigzag pattern between leaf nodes"
+      
+      - feature_id: "BARK-TEXT-05"  # Shaggy bark
+        conditions: "On older trees"
+        notes: "Bark can become quite shaggy with age, especially on larger specimens"
+    
+    never_true:
+      - feature_id: "FRUIT-TYPE-02"  # Winged seeds
+        notes: "Never produces winged seeds like true elms (Ulmus species)"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        notes: "Never drought tolerant; requires consistent moisture"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Never has leaves arranged opposite each other"
+      
+      - feature_id: "HABITAT-LOC-04"  # Desert edge habitat
+        notes: "Never found in dry or desert-like conditions"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "A medium-sized tree that loves to grow with its feet wet - you'll find it in swamps and along streams with its slightly rough, peeling bark"
+    memorable_comparison: "The leaves look like mini versions of American elm leaves, and the little fruits are bumpy like tiny warts instead of flat like elm seeds"
+    touch_tip: "Feel the bark - on older trees it peels and flakes off in thin strips"
+    smell_tip: "The leaves don't have a strong smell when crushed"
+    fun_fact: "Water-elm is perfectly happy having wet feet! It can survive in swamps where the ground is underwater for weeks or months at a time. Its wood is so rot-resistant that it was sometimes used for underwater parts of buildings and structures."
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, check where the tree is growing. Is it in a wet area, like near a stream or in a swamp?"
+        yes_next: 2
+        no_next: "Probably not a Water-elm - they almost always grow in wet places"
+      - step: 2
+        instruction: "Look at the tree size. Is it medium-sized (about 30-40 feet tall) with a somewhat rounded crown?"
+        yes_next: 3
+        no_next: "Might be a young Water-elm or another water-loving tree - check more features"
+      - step: 3
+        instruction: "Look at the leaves. Are they alternate (not opposite), simple (not compound), with toothed edges and an asymmetrical base?"
+        yes_next: 4
+        no_next: "Not a Water-elm - check other water-loving trees like willows or river birch"
+      - step: 4
+        instruction: "Check the bark. Is it grayish-brown and somewhat flaky or shaggy on older parts of the tree?"
+        yes_next: 5
+        no_next: "Might not be a Water-elm - check the fruits if present"
+      - step: 5
+        instruction: "If it's spring, look for small fruits with bumpy warts (not flat, winged seeds like elms)"
+        yes_next: "You found a Water-elm!"
+        no_next: "Look for other clues like the overall shape and habitat - it might be a Water-elm or a related species"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Small, inconspicuous reddish-brown flowers appear before leaves; leaves emerge light green; small warty fruits develop by late spring"
+      reproductive_activity: "Flowers February to April; fruits mature May to June"
+      identification_tips: "Look for the small warty fruits that appear in clusters - they're distinctive and unlike true elm seeds"
+      kid_friendly_tip: "In spring, look for tiny reddish flowers before the leaves come out, then small bumpy fruits that look like little warty balls"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of medium green leaves; fruits may persist early in season"
+      reproductive_activity: "Fruiting complete; seeds may germinate if conditions are right"
+      identification_tips: "Identified by leaf shape and arrangement; look for the asymmetrical leaf base typical of the elm family"
+      kid_friendly_tip: "Summer is when Water-elm has all its leaves out, making a nice shady spot over the water"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow before falling; branch structure starts to become visible"
+      reproductive_activity: "Dormant; flower buds forming for next spring"
+      identification_tips: "Look for yellow fall color and the distinctive branching pattern becoming visible as leaves drop"
+      kid_friendly_tip: "In fall, the leaves turn yellow like little golden coins before dropping to the ground or water"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches reveal growth form; grayish-brown bark more visible"
+      reproductive_activity: "Dormant; flower buds present"
+      identification_tips: "Identified by bark texture, overall form, and habitat; flaky bark and wetland habitat are key clues"
+      kid_friendly_tip: "Even in winter when the tree is bare, you can recognize Water-elm by its flaky bark and because it's standing in or very near water"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Growing in wetland, swamp, or floodplain habitat"
+      reliability: "Very high"
+      visibility: "High - important contextual clue"
+    - feature: "Alternate, simple leaves with serrated edges and asymmetrical base"
+      reliability: "High"
+      visibility: "Medium - need to examine leaves up close"
+    - feature: "Warty, nutlet-like fruits (not winged like true elms)"
+      reliability: "Very high (when present)"
+      visibility: "Medium - need to look closely in spring/early summer"
+    - feature: "Grayish-brown, somewhat flaky or shaggy bark on mature trees"
+      reliability: "Medium-high"
+      visibility: "Medium - visible from moderate distance"
+    
+  look_alike_species:
+    - species: "American Elm (Ulmus americana)"
+      differences: "American Elm grows larger (60-100 feet tall); has winged seeds (samaras), not warty fruits; more uniform vase-shaped crown; bark develops deep furrows rather than becoming shaggy"
+      identification_tip: "If the tree has flat, winged seeds instead of warty fruits, and is much taller with a vase-like shape, it's likely an American Elm, not Water-elm"
+    
+    - species: "Winged Elm (Ulmus alata)"
+      differences: "Winged Elm has corky, wing-like growths on twigs (Water-elm lacks these); produces typical elm samaras (winged seeds); tolerates drier conditions; leaves are slightly smaller"
+      identification_tip: "Look for the distinctive corky 'wings' on branches of Winged Elm - Water-elm lacks these completely"
+    
+    - species: "Hackberry (Celtis occidentalis)"
+      differences: "Hackberry has distinctive warty bark but smoother overall texture; produces small, berry-like fruits (drupes), not warty nutlets; leaves more elongated with less prominent teeth; more drought-tolerant"
+      identification_tip: "If the tree has berry-like fruits instead of warty nutlets, and has distinctive warty/bumpy bark rather than shaggy/flaky bark, it's likely a Hackberry"
+    
+    - species: "Sugarberry (Celtis laevigata)"
+      differences: "Sugarberry has smoother bark; produces berry-like fruits; leaves are more narrow with finer teeth or nearly smooth margins; often grows in similar wet habitats but tolerates drier conditions"
+      identification_tip: "If the leaves have fewer, finer teeth and the tree produces berry-like fruits, it's likely a Sugarberry, not Water-elm"
+    
+  cultural_ecological_notes:
+    - "Provides important structure and habitat in wetland ecosystems"
+    - "Root systems help stabilize banks along waterways and in swampy areas"
+    - "Seeds and buds provide food for various wildlife species, especially waterfowl"
+    - "Serves as host plant for certain insects and provides nesting habitat for birds"
+    - "Important component of southern floodplain forests and swamp ecosystems"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Native American"
+      physical_uses:
+        - "Limited use for tools and implements due to its tough, rot-resistant wood"
+        - "Some evidence of medicinal use of bark for various ailments"
+        - "Wood occasionally used for underwater structures due to rot resistance"
+        - "Branches sometimes used for basic tools and implements"
+      symbolic_meaning:
+        - "Associated with water and wetland resources"
+        - "Represented adaptation to challenging conditions"
+        - "Connected to wetland ecosystem knowledge and understanding"
+        - "Less documented cultural significance compared to other wetland trees"
+    
+    - culture: "Early American Settlers"
+      physical_uses:
+        - "Wood occasionally used for fence posts and pieces requiring rot-resistance"
+        - "Limited timber use due to relatively small size and often crooked growth"
+        - "Sometimes used for underwater portions of structures in wet areas"
+        - "Occasionally used for tool handles and wooden implements"
+      symbolic_meaning:
+        - "Indicator of wetland areas that might be suitable for rice cultivation"
+        - "Often viewed as a marker of poorly drained land unsuitable for farming"
+        - "Represented the challenges of settling in swampy southeastern regions"
+        - "Associated with flood-prone areas to be avoided for permanent settlement"
+    
+    - culture: "Southern Forest Ecology"
+      physical_uses:
+        - "Important component in wetland ecosystem restoration"
+        - "Used in some streambank stabilization projects"
+        - "Provides wildlife habitat in managed wetland systems"
+        - "Contributes to native plant diversity in restoration efforts"
+      symbolic_meaning:
+        - "Represents the uniqueness of southern floodplain forest ecosystems"
+        - "Serves as an indicator species for healthy wetland systems"
+        - "Symbolizes adaptation to specialized ecological niches"
+        - "Demonstrates the diversity of the elm family beyond common elm species"
+    
+  range_within_california:
+    - "Extremely limited presence in California; not native to the state"
+    - "May occasionally be found in specialized collections or botanical gardens"
+    - "Native range is primarily in the southeastern United States"
+    - "Not commonly planted or naturalized in California due to specific habitat requirements"
+    - "Poorly adapted to California's predominantly Mediterranean climate"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "30-40 feet tall, occasionally reaching 50 feet (about as tall as a 3-4 story building)"
+    growth_rate: "Moderate growth rate in suitable conditions"
+    crown_spread: "20-30 feet wide when mature (about as wide as a two-car garage)"
+    lifespan: "Moderate lifespan of 80-100 years"
+    trunk_diameter: "1-2 feet in diameter when mature (about as wide as a dinner plate)"
+    root_system: "Adapted to wetland conditions with some flood tolerance; relatively shallow and spreading"
+    toxicity: "Not known to be toxic to humans or animals"
+    
+  conservation_status:
+    status: "Not listed as threatened or endangered; considered secure within its native range"
+    threats:
+      - "Wetland drainage and development"
+      - "Alteration of natural flood regimes"
+      - "Climate change potentially affecting hydrological patterns"
+      - "Conversion of bottomland hardwood forests to agriculture"
+    protection_efforts:
+      - "Indirectly protected through wetland conservation efforts"
+      - "Preserved in some nature reserves and protected floodplain forests"
+      - "Limited specific conservation programs targeting the species"
+      - "Benefits from general wetland protection policies and regulations"
+    
+  # Decision tree mapping section
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: HABITAT-WATER-01"  # Riparian habitat
+      - "feature_id: LEAF-COMPLEX-01"  # Simple broadleaf
+    confirmation_features:
+      - "feature_id: BARK-TEXT-03"  # Peeling bark
+      - "feature_id: LEAF-EDGE-02"  # Serrated
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-02", "HABITAT-WATER-01"]  # Medium tree, riparian habitat
+      - distance: "from_nearby"
+        features_to_check: ["BARK-TEXT-03", "LEAF-ARRANGE-01"]  # Peeling bark, alternate leaves
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-02", "LEAF-COMPLEX-01"]  # Serrated edges, simple leaves
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["HABITAT-WATER-01", "LEAF-COMPLEX-01"]
+        notes: "Warty fruits appear and are distinctive from elm samaras"
+      summer:
+        reliability: "Medium"
+        key_features: ["LEAF-COMPLEX-01", "LEAF-ARRANGE-01", "HABITAT-WATER-01"]
+        notes: "Full leaf development; identified by leaf characteristics and habitat"
+      fall:
+        reliability: "Medium" 
+        key_features: ["LEAF-FALL-01", "HABITAT-WATER-01"]
+        notes: "Yellow fall color; habitat remains the key identifier"
+      winter:
+        reliability: "Medium-low"
+        key_features: ["BARK-TEXT-03", "HABITAT-WATER-01"]
+        notes: "Bark texture and wetland habitat are primary winter identification features"
+    misidentification_risks:
+      - "American Elm - much larger with vase-shaped crown and winged seeds"
+      - "Hackberry - has small berry-like fruits and distinctive warty bark texture"
+      - "Sugarberry - similar habitat but smoother leaves and berry-like fruits"
+      
+  wildlife_value:
+    - "Seeds eaten by various wetland birds, especially waterfowl"
+    - "Buds and young leaves browsed by deer"
+    - "Provides nesting habitat for various birds, particularly those that prefer wetland edges"
+    - "Branch structure offers perching sites for birds hunting over water"
+    - "Contributes to overall wetland ecosystem structure and diversity"
+    - "Fallen branches in streams create microhabitats for fish and aquatic invertebrates"
+    - "Shade from trees helps maintain cool water temperatures for aquatic species"
+    - "Root systems create underwater habitat structure in seasonally flooded areas"

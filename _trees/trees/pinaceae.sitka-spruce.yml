@@ -1,0 +1,307 @@
+tree:
+  common_name: "Sitka Spruce"
+  scientific_name: "Picea sitchensis"
+  family: "Pinaceae"
+  
+  # Basic summary information
+  summary: "A towering coastal evergreen tree with sharp, bluish-green needles and thin, flaky, purplish-gray bark. Produces hanging, papery cones and grows primarily in foggy coastal areas, where it can reach massive sizes with buttressed trunks."
+  
+  # Identification priority path
+  identification_path:
+    primary_markers: "Sharp, bluish-green needles that are square in cross-section; thin, flaky, purplish-gray bark; grows in foggy coastal areas"
+    secondary_markers: "Buttressed base on large trees; hanging papery cones 2-4 inches long; flat, stiff branches"
+    seasonal_markers: "New bright green growth in spring; brown mature cones in fall; stays green year-round"
+    similar_species_differentiation: "Unlike Douglas-fir, has square needles and no 3-pronged bracts in cones; unlike Coast Redwood, has sharp needles and thinner bark; unlike other spruces, grows mainly in coastal fog belt"
+  
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needle-like leaves all year round"
+        
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Needles grow individually, not in bundles"
+      
+      - feature_id: "NEEDLE-SHAPE-02"  # Square needles
+        notes: "Needles are four-sided and can be rolled between fingers"
+      
+      - feature_id: "CONE-POS-02"  # Hanging cones
+        notes: "Cones hang down from branches like ornaments"
+      
+      - feature_id: "NEEDLE-FEAT-01"  # Sharp pointed
+        notes: "Needles are very sharp and prickly to touch"
+      
+      - feature_id: "HABITAT-LOC-01"  # Coastal habitat
+        notes: "Grows primarily in the foggy coastal zone within a few miles of the ocean"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk"
+        exceptions: "May occasionally develop multiple trunks if damaged"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Forms a pyramid or cone shape when young and in open areas"
+        exceptions: "Older trees and those in forests often have irregular crowns with the lower branches lost"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Typically grows very tall, 150-200 feet or more"
+        exceptions: "Trees exposed to strong ocean winds may be shorter and shaped by the wind"
+      
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        notes: "Bark is typically gray with purplish tones"
+        exceptions: "Young trees may have more reddish bark"
+    
+    sometimes_true:
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees"
+        notes: "Bark starts out relatively smooth when tree is young"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        conditions: "Mature trees"
+        notes: "Older trees have bark that flakes off in thin, small scales"
+      
+      - feature_id: "CONE-SIZE-02"  # Medium cones
+        conditions: "When producing cones"
+        notes: "Produces slender cones 2-4 inches long"
+      
+      - feature_id: "LEAF-COLOR-03"  # Blue-green
+        conditions: "Varies with light conditions"
+        notes: "Needles often have a blue-green color, especially in full sun"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "Natural range"
+        notes: "Found naturally in coastal Northern California, especially Del Norte and Humboldt counties"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all its needles seasonally"
+      
+      - feature_id: "CONE-POS-01"  # Upright cones
+        notes: "Cones never stand upright on branches"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Never has needles growing in bundles or pairs"
+      
+      - feature_id: "GEO-ELEV-03"  # High elevation
+        notes: "Doesn't grow naturally at high elevations; prefers coastal areas"
+      
+      - feature_id: "HABITAT-WATER-03"  # Dry slope habitat
+        notes: "Never grows naturally in dry areas; requires coastal humidity"
+  
+  # Kid-friendly identification - expanded with creative descriptions
+  kid_friendly_identification:
+    primary_identifier: "Super sharp blue-green needles that will definitely poke you if you grab them"
+    memorable_comparison: "Like a Christmas tree with tiny swords for needles that grows where it can drink fog every day"
+    touch_tip: "Gently touch ONE needle (don't grab!) - it will feel sharp and stiff like a little pin"
+    smell_tip: "Carefully crush a needle to smell a strong, fresh scent like Christmas trees but more sour"
+    fun_fact: "Sitka Spruce wood is so special that it's used to make the soundboards (the part that makes the sound) for the best pianos, guitars, and violins in the world! When you hear beautiful music, you might be listening to the sound of a Sitka Spruce tree!"
+    detective_steps:
+      - step: 1
+        instruction: "First, are you near the foggy coast of Northern California? Sitka Spruce loves to live where it's foggy and close to the ocean."
+        yes_next: 2
+        no_next: "If you're far from the coast or fog, it's probably not a Sitka Spruce"
+      - step: 2
+        instruction: "Look at a branch. Do the needles stick out all around it like bottle brushes and look blue-green?"
+        yes_next: 3
+        no_next: "If needles are flat or in bunches, it might be a different evergreen tree"
+      - step: 3
+        instruction: "CAREFULLY touch just the tip of ONE needle. Is it VERY sharp and stiff like a pin? (Be careful!)"
+        yes_next: 4
+        no_next: "If needles are soft or flexible, it might be a different spruce or fir"
+      - step: 4
+        instruction: "Look at the bark. Is it thin and flaky with a grayish-purple color?"
+        yes_next: "You found a Sitka Spruce!"
+        no_next: "If the bark is thick, reddish, or deeply furrowed, it might be a Douglas-fir or redwood"
+  
+  regional_notes:
+    - region: "Northern California Coast"
+      notes: "Common in Del Norte and Humboldt counties within a few miles of the ocean"
+      locations: "Most abundant in coastal forests with fog influence"
+    - region: "Central and Southern California Coast"
+      notes: "Not naturally found south of Mendocino County"
+      locations: "May be planted in parks and gardens but not native"
+      
+  confirmation_checklist:
+    - feature: "Square, extremely sharp needles"
+      reliability: "Very high"
+      visibility: "Requires careful touch (be cautious!)"
+    - feature: "Thin, flaky, purplish-gray bark"
+      reliability: "High"
+      visibility: "Visible from nearby"
+    - feature: "Growing in coastal foggy areas"
+      reliability: "Very high"
+      visibility: "Determined by location"
+    - feature: "Hanging papery cones 2-4 inches long (when present)"
+      reliability: "High"
+      visibility: "Visible during cone season (fall)"
+    - feature: "Buttressed trunk base on large trees"
+      reliability: "Medium"
+      visibility: "Visible on mature trees"
+    
+  look_alike_species:
+    - species: "Douglas-fir (Pseudotsuga menziesii)"
+      differences: "Douglas-fir has softer, flat needles (not square); distinctive 3-pronged bracts in cones; deeper furrowed bark"
+      identification_tip: "If needles are soft and flat (not sharp and square), it's likely Douglas-fir"
+    - species: "Coast Redwood (Sequoia sempervirens)"
+      differences: "Coast Redwood has much thicker, fibrous, reddish bark; flat, soft needles; completely different cone structure"
+      identification_tip: "Redwoods have soft needles and distinctive reddish, thick, stringy bark"
+    - species: "Engelmann Spruce (Picea engelmannii)"
+      differences: "Engelmann Spruce grows at high elevations in mountains, not coastal areas; has bluer needles"
+      identification_tip: "Location is key - Sitka is coastal, Engelmann is high mountain"
+      
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Bright green new growth emerges at branch tips; may develop small pollen cones"
+      reproductive_activity: "Yellow pollen cones release pollen; small purplish seed cones begin to form"
+      identification_tips: "New growth provides bright color contrast with older blue-green needles"
+      kid_friendly_tip: "In spring, the tips of branches grow bright green new needles that look softer than the older blue ones"
+    
+    - season: "Summer" 
+      visual_changes: "New growth hardens and gradually darkens; developing seed cones grow larger"
+      reproductive_activity: "Seed cones continue to develop, changing from purple to green to light brown"
+      identification_tips: "Growing cones and consistent blue-green needle color"
+      kid_friendly_tip: "By summer, the baby needles have grown up and turned sharp like the others, and the cones are getting bigger"
+    
+    - season: "Fall"
+      visual_changes: "Consistent blue-green color; mature cones turn brown and open their scales"
+      reproductive_activity: "Cones open and release winged seeds on the wind"
+      identification_tips: "Open brown cones with thin papery scales"
+      kid_friendly_tip: "In fall, the cones turn brown and open up like tiny wooden flowers to let their seeds fly away"
+    
+    - season: "Winter"
+      visual_changes: "Remains evergreen; empty cones may persist on branches"
+      reproductive_activity: "Dormant; may begin forming next year's reproductive buds"
+      identification_tips: "Sharp needles, distinctive bark, and coastal habitat"
+      kid_friendly_tip: "In winter, it stays green when other trees lose their leaves, and you can still see the pointy needles and flaky bark"
+      
+  cultural_ecological_notes:
+    - "One of the most important commercial timber trees in the Pacific Northwest"
+    - "Creates important coastal forest habitat for many species, including the marbled murrelet (an endangered seabird)"
+    - "Tolerates salt spray and constant fog better than most large conifers"
+    - "Can live for over 700 years and reach enormous sizes in protected areas"
+    - "Often the tallest tree species in coastal forests"
+    
+  range_within_california:
+    - "Found naturally only in a narrow coastal strip in the northwesternmost part of California"
+    - "Most common in Del Norte and Humboldt counties, within about 10 miles of the coast"
+    - "Requires cool, humid conditions with summer fog"
+    - "Not found naturally south of Mendocino County"
+    - "Prefers low elevations, typically below 1,500 feet"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Tolowa"
+      physical_uses:
+        - "Used the straight-grained wood for building canoes and houses"
+        - "Made rope and fishing line from root fibers that were strong and flexible"
+        - "Harvested pitch (sap) to waterproof baskets and canoes"
+        - "Used inner bark as emergency food during food shortages"
+      symbolic_meaning:
+        - "The tree's massive size represented strength and endurance"
+        - "Valued as a provider of materials essential for coastal living"
+        - "Featured in stories about the importance of coastal resources"
+    
+    - culture: "Yurok"
+      physical_uses:
+        - "Carved house planks and canoe parts from the straight-grained wood"
+        - "Used split roots to create strong cordage and basketry materials"
+        - "Made tools from the hard wood, including fishing implements"
+        - "Created medicine from the pitch for treating cuts and skin problems"
+      symbolic_meaning:
+        - "Considered a guardian of the coast that withstands ocean storms"
+        - "The tall trees were seen as connections between earth and sky"
+        - "The tree's ability to grow in difficult coastal conditions symbolized resilience"
+    
+    - culture: "Early Coastal Settlers"
+      physical_uses:
+        - "Highly prized for shipbuilding because of its strong, lightweight wood"
+        - "Used for airplane construction during World Wars (including the famous Spruce Goose)"
+        - "Harvested for paper pulp production and general construction"
+        - "Selected for musical instrument soundboards due to its special acoustic properties"
+      symbolic_meaning:
+        - "Symbolized the richness of coastal forest resources"
+        - "Associated with the maritime industries of the Pacific Coast"
+        - "Valued as an indicator of the foggy coastal climate zone"
+    
+    - culture: "Modern Instrument Makers"
+      physical_uses:
+        - "Selected specifically for making guitar, violin, and piano soundboards"
+        - "Chosen for its perfect combination of strength and lightness"
+        - "Carefully harvested with attention to grain direction and quality"
+        - "Often air-dried for years before being crafted into instruments"
+      symbolic_meaning:
+        - "Represents the highest quality in acoustic instruments"
+        - "Valued for its ability to transmit sound beautifully"
+        - "Celebrated as a tree that can literally "sing" in its afterlife as an instrument"
+    
+  # Additional physical characteristics not captured in features
+  physical_characteristics:
+    height_range: "150-230 feet tall (about as tall as a 15-23 story building), occasionally taller"
+    growth_rate: "Fast for a conifer, especially in favorable coastal conditions"
+    crown_spread: "30-60 feet wide when fully grown"
+    lifespan: "500-700+ years"
+    trunk_diameter: "5-8 feet across when mature (wider than a car)"
+    root_system: "Wide-spreading but not especially deep, often with buttressed base"
+    toxicity: "Not toxic, though sharp needles can cause physical injury"
+    
+  conservation_status:
+    status: "Secure in core range; not threatened overall"
+    threats: 
+      - "Climate change affecting coastal fog patterns"
+      - "Logging pressure for valuable wood"
+      - "Development in coastal areas"
+      - "Limited California range increases local vulnerability"
+    protection_efforts:
+      - "Protected in Redwood National and State Parks"
+      - "Special consideration for old-growth stands"
+      - "Research on climate adaptation and fog dependence"
+    
+  # Decision tree mapping - helps with algorithm creation
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: NEEDLE-ARRANGE-01"  # Single needles
+      - "feature_id: NEEDLE-SHAPE-02"  # Square needles
+      - "feature_id: HABITAT-LOC-01"  # Coastal habitat
+    confirmation_features:
+      - "feature_id: CONE-POS-02"  # Hanging cones
+      - "feature_id: BARK-TEXT-03"  # Peeling bark
+      - "feature_id: NEEDLE-FEAT-01"  # Sharp pointed
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-01", "TREE-SIZE-03", "HABITAT-LOC-01"]  # Pyramidal shape, tall tree, coastal habitat
+      - distance: "from_nearby"
+        features_to_check: ["BARK-COLOR-01", "BARK-TEXT-03", "NEEDLE-ARRANGE-01"]  # Gray bark, peeling bark, single needles
+      - distance: "close_inspection"
+        features_to_check: ["NEEDLE-SHAPE-02", "NEEDLE-FEAT-01", "LEAF-COLOR-03"]  # Square needles, sharp pointed, blue-green
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["NEEDLE-SHAPE-02", "HABITAT-LOC-01", "LEAF-COLOR-03"]
+        notes: "New growth provides color contrast with older needles"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["NEEDLE-FEAT-01", "BARK-TEXT-03", "HABITAT-LOC-01"]
+        notes: "Sharp needles and distinctive bark in coastal setting"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["CONE-POS-02", "NEEDLE-SHAPE-02", "HABITAT-LOC-01"]
+        notes: "Mature cones add definitive identification feature"
+      
+      winter:
+        reliability: "High"
+        key_features: ["NEEDLE-FEAT-01", "BARK-COLOR-01", "HABITAT-LOC-01"]
+        notes: "Sharp needles and bark visible year-round; coastal location key"
+    misidentification_risks:
+      - species: "Douglas-fir (Pseudotsuga menziesii)"
+        distinguishing_features: "Sitka has square, sharper needles; thinner, flakier bark; coastal habitat"
+      - species: "Engelmann Spruce (Picea engelmannii)"
+        distinguishing_features: "Sitka is coastal; Engelmann is high mountain; Sitka has less blue coloration"
+  
+  wildlife_value:
+    - "Seeds are eaten by many birds and small mammals"
+    - "Dense branches provide nesting sites for birds, including the endangered marbled murrelet"
+    - "Deer and elk browse young seedlings and lower branches"
+    - "Provides important old-growth habitat structure in coastal forests"
+    - "Large old trees develop cavities used by wildlife for shelter"

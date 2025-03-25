@@ -1,0 +1,279 @@
+tree:
+  common_name: "California Black Walnut"
+  scientific_name: "Juglans californica"
+  family: "Juglandaceae"
+  
+  # Basic summary
+  summary: "A medium-sized deciduous tree with compound pinnate leaves and distinctive round, hard-shelled nuts. The tree has furrowed dark bark and an open, spreading crown with a short trunk often branching close to the ground."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Compound leaves with 11-19 leaflets that smell spicy when crushed; round, green walnuts in summer that turn brown and hard when ripe"
+    secondary_markers: "Dark, deeply furrowed bark; often grows with multiple trunks or branches low to the ground; small tree with spreading crown"
+    seasonal_markers: "Hanging catkins in spring; green walnuts in summer; yellow fall foliage; distinctive branch pattern visible in winter"
+    similar_species_differentiation: "Unlike English walnut, has smaller nuts with thicker shells; unlike black walnut (Juglans nigra), has smaller leaflets and typically grows as a smaller tree"
+  
+  # Core features
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Leaves divided into 11-19 leaflets arranged along a central stem"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow alternating along branches, not directly across from each other"
+      
+      - feature_id: "FRUIT-TYPE-04"  # Nuts present
+        notes: "Produces round, hard-shelled nuts with thick husks that are smaller than commercial walnuts"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        notes: "Leaves have a strong, spicy smell when crushed"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Native and endemic to Southern California"
+
+    usually_true:
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        notes: "Often grows with multiple trunks or branches low to ground"
+        exceptions: "Can sometimes develop a single main trunk, especially in open settings"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Usually grows 15-30 feet tall"
+        exceptions: "May be smaller in poor conditions or taller in ideal conditions"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        notes: "Develops deep ridges and dark bark with age"
+        exceptions: "Young trees have smoother bark"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Typically has a broad, rounded to spreading crown"
+        exceptions: "Shape can be more irregular when growing in dense settings"
+
+    sometimes_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        conditions: "Some mature specimens in open conditions"
+        notes: "Can develop a single main trunk in favorable conditions"
+      
+      - feature_id: "FLOWER-TYPE-01"  # Catkins present
+        conditions: "Spring flowering period"
+        notes: "Male flowers hang in long catkins; female flowers are small and less noticeable"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Fall season"
+        notes: "Leaves typically turn yellow before dropping"
+      
+      - feature_id: "HABITAT-LOC-03"  # Valley habitat
+        conditions: "Often found in valleys and canyon bottoms"
+        notes: "Common in riparian woodlands and valley slopes"
+      
+      - feature_id: "GEO-REGION-03"  # Southern California
+        conditions: "Native range"
+        notes: "Primarily found in Southern California coastal regions"
+
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops leaves in fall, never evergreen"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has compound leaves, not needles"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Produces nuts, not cones"
+      
+      - feature_id: "LEAF-COMPLEX-03"  # Compound palmate
+        notes: "Has pinnately compound leaves, not palmately compound"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Leaves with many small leaflets along a central stem, like feathers, and round walnuts that stain your hands brown if you pick them up without gloves"
+    memorable_comparison: "The leaves look like green feathers, and the walnuts are like tough little green balls that turn brown and hard, smaller than the walnuts you buy at the store"
+    touch_tip: "Feel the leaves - they're slightly fuzzy and smell spicy when you gently rub them. The bark feels rough and bumpy like alligator skin."
+    smell_tip: "Gently crush a leaf and smell the spicy, almost citrusy scent - but be careful, as the smell might stick to your fingers"
+    fun_fact: "The California Black Walnut makes a special dark juice in its nuts and leaves that was used by Native Americans to dye baskets and color skin for ceremonies. If you touch the green nut husks, your fingers will turn brown and stay that way for days - like nature's finger paint that doesn't wash off!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "Look at the leaves. Do they have 11-19 smaller leaflets arranged like a feather along a central stem?"
+        yes_next: 2
+        no_next: "Not a California Black Walnut - check trees with different leaf patterns"
+      - step: 2
+        instruction: "Gently rub a leaf and smell your fingers. Do they smell spicy or lemony?"
+        yes_next: 3
+        no_next: "Might not be a California Black Walnut - check other trees with similar leaves"
+      - step: 3
+        instruction: "In summer or fall, do you see round, green or brown nuts about the size of a small bouncy ball?"
+        yes_next: "You found a California Black Walnut!"
+        no_next: "If it's not nut season, check the bark - California Black Walnut has dark bark with deep grooves like alligator skin"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New bright green compound leaves emerge; long hanging male catkins develop"
+      reproductive_activity: "Male flowers release pollen; small female flowers appear"
+      identification_tips: "Long yellow-green hanging catkins (male flowers) are very distinctive; fresh compound leaves"
+      kid_friendly_tip: "In spring, look for the long dangly 'green worms' (catkins) hanging from branches and new feather-like leaves"
+    
+    - season: "Summer" 
+      visual_changes: "Full dark green leafy canopy; small round green nuts developing"
+      reproductive_activity: "Nuts grow and develop green husks"
+      identification_tips: "Green round nuts about the size of a ping pong ball; full compound leaves"
+      kid_friendly_tip: "In summer, look for small green round nuts that will stain your hands brown if you touch them"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow and drop; nuts turn brown and fall from tree"
+      reproductive_activity: "Nuts mature and drop to ground"
+      identification_tips: "Yellow compound leaves; brown nuts with staining husks"
+      kid_friendly_tip: "In fall, the leaves turn yellow, and the nuts turn brown with a hard shell inside the husk"
+    
+    - season: "Winter"
+      visual_changes: "Leafless with distinctive branching pattern; dark furrowed bark"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Multiple trunks or low branching habit; deeply furrowed dark bark"
+      kid_friendly_tip: "In winter, look for the dark, bumpy bark and branches that spread out wide like arms reaching for the sun"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Compound leaves with 11-19 leaflets"
+      reliability: "Very high"
+      visibility: "Easy - visible during growing season"
+    - feature: "Spicy, aromatic scent when leaves are crushed"
+      reliability: "High"
+      visibility: "Requires interaction - crush and smell"
+    - feature: "Round walnuts with thick husks"
+      reliability: "Very high (when present)"
+      visibility: "Easy - visible in summer and fall"
+    - feature: "Dark, deeply furrowed bark on older trees"
+      reliability: "High"
+      visibility: "Easy - visible year-round"
+    - feature: "Often multi-trunked or branching low to ground"
+      reliability: "Medium"
+      visibility: "Easy - visible from overall shape"
+    
+  look_alike_species:
+    - species: "English Walnut (Juglans regia)"
+      differences: "English Walnut has larger nuts with thinner shells, smoother and lighter colored bark, and is typically larger"
+      identification_tip: "California Black Walnut has smaller nuts and darker, more deeply furrowed bark"
+    - species: "Eastern Black Walnut (Juglans nigra)"
+      differences: "Eastern Black Walnut grows much taller (up to 100 feet), has more leaflets (15-23), and larger nuts"
+      identification_tip: "California Black Walnut is a smaller tree usually under 30 feet with fewer leaflets"
+    - species: "Northern California Walnut (Juglans hindsii)"
+      differences: "Northern California Walnut grows taller, has larger nuts, and is native to Northern California"
+      identification_tip: "California Black Walnut is smaller with a more shrubby growth habit and is found in Southern California"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Chumash"
+      physical_uses:
+        - "Collected and processed the nuts as a food source after leaching out bitter compounds"
+        - "Used husks to make brown-black dye for baskets and other materials"
+        - "Created medicine from the bark and leaves for skin conditions"
+      symbolic_meaning:
+        - "Tree represented the balance of bitter and sweet in life, as the nuts are edible but require work to prepare"
+        - "The tough nut shell symbolized protection and resilience"
+        - "The staining property connected to body painting traditions for ceremonies"
+    
+    - culture: "Tongva"
+      physical_uses:
+        - "Gathered and processed nuts for food using stone tools to crack shells"
+        - "Made dark dye from husks for coloring baskets and ceremonial items"
+        - "Used leaves for medicinal teas and poultices"
+      symbolic_meaning:
+        - "Featured in stories about resourcefulness and preparation"
+        - "The tree's ability to thrive in dry conditions symbolized adaptation to challenging environments"
+        - "The natural dye represented permanence and transformation"
+    
+    - culture: "Early California Settlers"
+      physical_uses:
+        - "Harvested wood for furniture and gunstocks"
+        - "Sometimes collected nuts for food during lean times"
+        - "Used husks for home dyeing of fabric and leather"
+      symbolic_meaning:
+        - "Represented the abundance and usefulness of native California plants"
+        - "Valued as a reminder of familiar Eastern walnuts"
+    
+  cultural_ecological_notes:
+    - "Provides important habitat and food for wildlife"
+    - "Helps stabilize soil in canyon and riverside areas"
+    - "One of the few native nut trees in Southern California"
+    - "Adapted to survive seasonal drought conditions"
+    
+  range_within_california:
+    - "Native primarily to Southern California"
+    - "Found in Los Angeles, Orange, Riverside, San Bernardino, San Diego, and Ventura counties"
+    - "Often grows in riparian woodlands, canyon bottoms, and foothill slopes"
+    - "Typically found below 3,000 feet elevation"
+    - "Increasingly rare in natural habitat due to urban development"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "15-30 feet, occasionally taller"
+    growth_rate: "Moderate"
+    crown_spread: "30-60 feet at maturity"
+    lifespan: "Up to 100 years"
+    trunk_diameter: "Can reach 1-2 feet in diameter"
+    root_system: "Deep taproot with spreading lateral roots"
+    toxicity: "Husks contain juglone, which can cause skin staining and irritation; some people may be allergic to pollen"
+  
+  conservation_status:
+    status: "Special concern - declining populations"
+    threats: 
+      - "Habitat loss to urban development"
+      - "Hybridization with other walnut species"
+      - "Thousand Cankers Disease affects walnut trees"
+      - "Climate change and extended drought"
+    protection_efforts:
+      - "Protected in some county and state preserves"
+      - "Increasingly used in native plant restoration projects"
+      - "Seed collection and propagation efforts by botanical gardens"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-COMPLEX-02"  # Compound pinnate
+      - "feature_id: FRUIT-TYPE-04"  # Nuts present
+    confirmation_features:
+      - "feature_id: SENSORY-SMELL-01"  # Aromatic leaves
+      - "feature_id: BARK-TEXT-02"  # Furrowed bark
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-02", "TREE-SIZE-02"]  # Rounded crown, medium tree
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-COMPLEX-02", "BARK-TEXT-02"]  # Compound pinnate, furrowed bark
+      - distance: "close_inspection"
+        features_to_check: ["SENSORY-SMELL-01", "FRUIT-TYPE-04"]  # Aromatic leaves, nuts
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-COMPLEX-02", "FLOWER-TYPE-01"]  # Compound pinnate, catkins
+        notes: "Catkins and emerging compound leaves are distinctive"
+      
+      summer:
+        reliability: "Very high" 
+        key_features: ["LEAF-COMPLEX-02", "FRUIT-TYPE-04"]  # Compound pinnate, nuts
+        notes: "Green developing nuts and full compound leaves"
+      
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-FALL-01", "FRUIT-TYPE-04"]  # Yellow fall color, nuts
+        notes: "Yellow leaves and mature nuts with staining husks"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["TREE-TRUNK-02", "BARK-TEXT-02"]  # Multi-trunked, furrowed bark
+        notes: "Multiple trunks or low branching with dark furrowed bark"
+    misidentification_risks: 
+      - "Can be confused with other walnut species, especially Northern California Walnut (Juglans hindsii)"
+      - "Young trees without nuts might be confused with other pinnately compound leaf trees"
+      - "Hybrids with other walnut species may show intermediate characteristics"
+  
+  wildlife_value:
+    food_source:
+      - "Nuts provide food for squirrels, woodpeckers, and other wildlife"
+      - "Fallen nuts feed many ground animals"
+    habitat_provided:
+      - "Dense branching provides nesting sites for birds"
+      - "Supports various native caterpillars and insects"
+      - "Fallen leaves create habitat for insects and small animals"
+    ecosystem_role: "Important component of riparian and foothill ecosystems; deep roots help stabilize soil in canyon habitats"

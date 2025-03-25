@@ -1,0 +1,321 @@
+tree:
+  common_name: "Green Alder"
+  scientific_name: "Alnus viridis"
+  family: "Betulaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A deciduous shrub or small tree that forms thickets along mountain streams, on steep slopes, and in subalpine regions. Features oval to elliptical, sharply toothed leaves that are bright green on both sides. Produces dangling male catkins in spring and distinctive woody cone-like seed structures."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Shrubby growth form; bright green leaves on both sides; grows in mountain habitats"
+    secondary_markers: "Small woody cone-like seed clusters; dangling catkins in spring; sharply toothed leaf edges"
+    seasonal_markers: "Yellow hanging catkins in late winter/early spring; cone-like seed structures visible year-round; bright green leaves in summer that turn yellow in fall"
+    similar_species_differentiation: "Unlike White Alder, tends to be shrubby rather than a single-trunked tree; unlike Red Alder, has bright green leaves without rusty undersides; unlike Mountain Alder (A. incana), has glossier, more evenly toothed leaves"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Leaves not divided into leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow in zigzag pattern"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated
+        notes: "Sharp teeth along margins"
+      
+      - feature_id: "TREE-TRUNK-02"  # Multi-stemmed
+        notes: "Typically grows as a shrub with multiple stems"
+      
+      - feature_id: "ECO-REL-01"  # Nitrogen fixing
+        notes: "Improves soil fertility"
+      
+      - feature_id: "FLOWER-TYPE-01"  # Catkins present
+        notes: "Produces dangling catkin flowers"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        notes: "Grows in wet areas"
+      
+      - feature_id: "HABITAT-LOC-02"  # Mountain habitat
+        notes: "Found in high elevation regions"
+      
+      - feature_id: "GEO-ELEV-03"  # High elevation
+        notes: "Found at high elevations, typically above 4,000 feet"
+    
+    usually_true:
+      - feature_id: "TREE-SIZE-01"  # Small tree
+        notes: "Typically 6-15 feet tall"
+        exceptions: "Can occasionally grow to 20-25 feet tall in ideal conditions"
+      
+      - feature_id: "LEAF-COLOR-02"  # Light green
+        notes: "Bright green color on both leaf surfaces"
+        exceptions: "May be darker or duller in poor growing conditions"
+      
+      - feature_id: "TREE-FORM-05"  # Irregular crown
+        notes: "Forms a thicket or clump rather than a single crown"
+        exceptions: "May appear more tree-like with a defined crown when isolated"
+    
+    sometimes_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        conditions: "When growing as a tree form rather than shrub"
+        notes: "Can occasionally grow to small tree 20-25 feet tall"
+      
+      - feature_id: "HABITAT-LOC-01"  # Coastal habitat
+        conditions: "Sitka Alder subspecies found near northwest coast"
+        notes: "Some subspecies found in coastal mountains"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "Limited distribution in mountainous areas"
+        notes: "Found in parts of Northern California mountains"
+      
+      - feature_id: "BARK-COLOR-03"  # Reddish twigs
+        conditions: "New growth"
+        notes: "New growth can have reddish coloration"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Fall season"
+        notes: "Leaves turn yellow before dropping"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops leaves in fall"
+      
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        notes: "Has broad leaves, not tiny scales"
+      
+      - feature_id: "HABITAT-WATER-03"  # Dry slope habitat
+        notes: "Requires consistent moisture"
+      
+      - feature_id: "HABITAT-LOC-03"  # Valley habitat
+        notes: "Not found in low valley regions"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        notes: "Requires consistent moisture"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "A bushy tree with bright green leaves that grows in mountains and has tiny wooden cones"
+    memorable_comparison: "This tree is like a big shrub with leaves that look like they've been cut with tiny scissors all around the edges"
+    touch_tip: "Feel the leaf - both sides are smooth and bright green, unlike other alders that might feel fuzzy underneath"
+    smell_tip: "Crush a leaf gently to smell a mild, fresh scent"
+    fun_fact: "Green Alders are mountain climbers! They grow at higher elevations than most other trees and help hold the soil on steep slopes to prevent landslides"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "Where are you? Green Alder grows in mountains, often near streams or on steep slopes."
+        yes_next: 2
+        no_next: "If you're not in a mountain area, it's probably not a Green Alder"
+      - step: 2
+        instruction: "Is it a bushy shrub or small tree that grows in a clump rather than having one main trunk?"
+        yes_next: 3
+        no_next: "Not a Green Alder - they usually grow with multiple stems like a shrub"
+      - step: 3
+        instruction: "Look at the leaves. Are they bright green on both sides with sharp teeth all around the edges?"
+        yes_next: 4
+        no_next: "If leaves are fuzzy underneath or don't have toothed edges, it's probably not a Green Alder"
+      - step: 4
+        instruction: "Can you find tiny woody cone-like structures about the size of a small marble on the branches?"
+        yes_next: "You found a Green Alder!"
+        no_next: "If it's spring, look for hanging yellow catkins instead. If neither is visible, it might be another mountain shrub"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Yellow male catkins appear and release pollen; female flowers develop; new bright green leaves emerge"
+      reproductive_activity: "Male catkins release pollen; female flowers are pollinated"
+      identification_tips: "Dangling yellow catkins are distinctive"
+      kid_friendly_tip: "In spring, look for yellow 'caterpillars' hanging down (these are the flowers) and fresh green leaves just starting to grow"
+    
+    - season: "Summer" 
+      visual_changes: "Full foliage of bright green leaves; small green cone-like seed structures develop"
+      reproductive_activity: "Seed cones continue to develop and begin to harden"
+      identification_tips: "Look for bright green leaves and developing cone-like structures"
+      kid_friendly_tip: "By summer, the bush is covered with bright green leaves and you can spot tiny green 'cones' growing"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow before dropping; seed cones mature to brown"
+      reproductive_activity: "Seed cones mature and begin to open to release seeds"
+      identification_tips: "Yellow fall color; mature brown cones"
+      kid_friendly_tip: "In fall, the leaves turn yellow like lemon drops, and the little cones turn brown and woody"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches with woody brown cones remaining"
+      reproductive_activity: "Dormant; male catkins for next spring begin to form late winter"
+      identification_tips: "Persistent woody cones remain on bare branches; new catkins start forming late winter"
+      kid_friendly_tip: "Even after the leaves fall off, you can see the little brown cones still hanging on the branches"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Shrubby, multi-stemmed growth form"
+      reliability: "High"
+      visibility: "Visible from a distance"
+    - feature: "Small woody cone-like structures on branches"
+      reliability: "Very high"
+      visibility: "Visible up close year-round"
+    - feature: "Growing in mountain habitat or near water"
+      reliability: "Very high"
+      visibility: "Determined by location"
+    - feature: "Bright green leaves on both sides"
+      reliability: "High"
+      visibility: "Visible from nearby during growing season"
+    - feature: "Leaves with sharp, regular teeth around edges"
+      reliability: "High"
+      visibility: "Need to look closely at leaves"
+    - feature: "Dangling yellow catkins in spring"
+      reliability: "Very high"
+      visibility: "Seasonal - spring only"
+    
+  look_alike_species:
+    - species: "White Alder (Alnus rhombifolia)"
+      differences: "White Alder is a taller single-trunked tree with light gray bark; found at lower elevations"
+      identification_tip: "Green Alder typically grows as a shrub in mountain habitats; White Alder is a proper tree at lower elevations"
+    
+    - species: "Red Alder (Alnus rubra)"
+      differences: "Red Alder is a larger tree with rusty hairs on leaf undersides; grows mainly near coast at lower elevations"
+      identification_tip: "Green Alder leaves are bright green on both sides without rusty hairs underneath"
+    
+    - species: "Mountain Alder (Alnus incana)"
+      differences: "Similar mountain habitat but Mountain Alder leaves have more irregular teeth and whitish undersides"
+      identification_tip: "Check leaf undersides - Green Alder lacks whitish or rusty coloration underneath"
+    
+    - species: "Sitka Alder (Alnus viridis ssp. sinuata)"
+      differences: "Sitka Alder is actually a subspecies of Green Alder found more commonly along northwest coast"
+      identification_tip: "Similar features but Sitka Alder tends to grow in more coastal mountain settings"
+    
+  cultural_ecological_notes:
+    - "Critical for stabilizing mountain slopes and preventing erosion"
+    - "Pioneer species in disturbed areas, especially after landslides or fires"
+    - "Nitrogen-fixing roots improve soil fertility for other plants"
+    - "Creates thickets that provide shelter for wildlife"
+    - "Leaves that fall in streams are important food for aquatic insects"
+    - "Important for revegetation projects in mountainous regions"
+    
+  range_within_california:
+    - "Limited distribution in Northern California, primarily in mountainous areas"
+    - "Found in the Klamath Range, Cascade Mountains, and northern Sierra Nevada"
+    - "Typically grows above 4,000 feet elevation"
+    - "Most common in cold mountain habitats with adequate moisture"
+    - "Not widely distributed in California compared to its range in other western states"
+    
+  # Physical characteristics section
+  physical_characteristics:
+    height_range: "6-15 feet tall (occasionally up to 25 feet)"
+    growth_rate: "Moderate to fast growing"
+    crown_spread: "Forms thickets that can spread widely"
+    lifespan: "30-50 years"
+    trunk_diameter: "Multiple stems typically 2-4 inches across"
+    root_system: "Extensive spreading roots that help hold mountain soil in place"
+    toxicity: "Not poisonous to humans or animals"
+  
+  # Cultural significance section
+  cultural_significance:
+    # Organized by culture
+    - culture: "Indigenous Mountain Tribes"
+      physical_uses:
+        - "Used the bark to make dyes for baskets and other items"
+        - "Made medicinal teas from the bark to treat various ailments"
+        - "Used small branches for basketry and tool making"
+        - "Thickets provided shelter and protection while traveling in mountains"
+      symbolic_meaning:
+        - "Associated with mountain water sources and healing properties"
+        - "Valued for improving soil and helping other plants grow"
+        - "Represented resilience and ability to thrive in harsh environments"
+        - "Used in teachings about interdependent relationships in nature"
+    
+    - culture: "Early Mountain Settlers"
+      physical_uses:
+        - "Used as fuel wood when camping or traveling in mountains"
+        - "Recognized as an indicator of stable slopes and good water sources"
+        - "Occasionally used for small implements and tool handles"
+        - "Branches sometimes used for temporary shelters"
+      symbolic_meaning:
+        - "Represented the hardiness needed to survive in mountain environments"
+        - "Associated with reliable water sources in mountainous terrain"
+        - "Recognized for its role in preventing erosion and landslides"
+    
+    - culture: "Modern Conservation"
+      physical_uses:
+        - "Used extensively in mountain revegetation projects"
+        - "Planted to stabilize slopes and prevent erosion"
+        - "Integrated into watershed protection plans"
+        - "Studied for its nitrogen-fixing properties"
+      symbolic_meaning:
+        - "Represents the importance of pioneer species in ecological restoration"
+        - "Symbol of ecosystem services provided by seemingly modest plants"
+        - "Exemplifies plant adaptations to challenging environments"
+  
+  # Conservation status section
+  conservation_status:
+    status: "Least Concern (common in its range and not threatened)"
+    threats: "Climate change affecting mountain habitats; development in some mountain areas; changing precipitation patterns"
+    protection_efforts: "Used in mountain revegetation projects; protected in national forests and parks; part of watershed management in mountain regions"
+  
+  # Kid-friendly cultural significance
+  kid_friendly_cultural_significance:
+    - "Native American tribes knew that Green Alder meant clean water was nearby"
+    - "The roots of Green Alder have special bacteria that help make the soil better for other plants"
+    - "People who live in mountains appreciate how Green Alder helps keep soil from washing away during rainstorms"
+    - "Its thickets provide safe places for small animals to hide from predators"
+    - "Because it can grow after landslides and fires, it helps mountains heal after natural disasters"
+  
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: HABITAT-LOC-02"  # Mountain habitat
+      - "feature_id: TREE-TRUNK-02"  # Multi-stemmed
+    
+    confirmation_features:
+      - "feature_id: LEAF-EDGE-02"  # Serrated
+      - "feature_id: FLOWER-TYPE-01"  # Catkins present
+      - "feature_id: ECO-REL-01"  # Nitrogen fixing
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["HABITAT-LOC-02", "TREE-TRUNK-02", "TREE-SIZE-01"]  # Mountain habitat, multi-stemmed, small size
+      
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-COLOR-02", "LEAF-ARRANGE-01"]  # Light green leaves, alternate arrangement
+      
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-02", "FLOWER-TYPE-01"]  # Serrated edges, catkins
+    
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["FLOWER-TYPE-01", "LEAF-TYPE-01", "HABITAT-LOC-02"]
+        notes: "Yellow catkins and location in mountain habitat make spring identification straightforward"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-COLOR-02", "LEAF-EDGE-02", "TREE-TRUNK-02"]
+        notes: "Bright green leaves on both sides, shrubby growth form"
+      
+      fall:
+        reliability: "Medium"
+        key_features: ["LEAF-FALL-01", "HABITAT-LOC-02", "TREE-TRUNK-02"]
+        notes: "Yellow fall color and woody cones help with identification"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["TREE-TRUNK-02", "HABITAT-LOC-02"]
+        notes: "Persistent woody cones on bare branches; mountain habitat"
+    
+    misidentification_risks:
+      - "Most often confused with other alder species"
+      - "Sometimes mistaken for willows or other mountain shrubs from a distance"
+      - "Various subspecies of Green Alder can be difficult to distinguish from each other"
+  
+  # Wildlife value section
+  wildlife_value:
+    - "Provides shelter for small mammals and birds"
+    - "Seeds eaten by birds and small mammals"
+    - "Leaves are food for various moth and butterfly larvae"
+    - "Thickets protect understory plants and provide nesting habitat"
+    - "Helps maintain soil quality for surrounding ecosystem"
+    - "Young twigs browsed by deer and other herbivores"

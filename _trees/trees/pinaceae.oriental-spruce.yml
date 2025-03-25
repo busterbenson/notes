@@ -1,0 +1,267 @@
+tree:
+  common_name: Oriental Spruce
+  scientific_name: Picea orientalis
+  family: Pinaceae
+  native: false
+
+  summary: Oriental Spruce is a slow-growing, densely-branched coniferous evergreen tree native to the Caucasus Mountains and northeastern Turkey. It's characterized by its narrow pyramidal shape, exceptionally short dark green needles, and small purplish-brown cones. This elegant tree is valued in California landscapes for its compact growth habit, rich foliage color, and ornamental appeal. It's more heat and drought tolerant than many other spruce species, making it suitable for selected locations throughout the state.
+
+  identification_path:
+    primary_markers: "Exceptionally short dark green needles (1/4 to 1/2 inch) - the shortest of any spruce species"
+    secondary_markers: "Dense, compact growth habit with very tight branching; small purplish-brown cones hanging from branches"
+    seasonal_markers: "Consistent dark green color year-round; purplish young cones visible in summer and fall"
+    similar_species_differentiation: "Unlike Norway Spruce, has much shorter needles and smaller cones; unlike Colorado Blue Spruce, has dark green (not bluish) needles that are less sharp"
+
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02" # Evergreen
+        notes: "Keeps its needles year-round without seasonal leaf drop"
+      
+      - feature_id: "NEEDLE-SHAPE-02" # Square needles
+        notes: "Needles have four sides and will roll between your fingers"
+      
+      - feature_id: "TREE-FORM-01" # Pyramidal/conical
+        notes: "Grows in a classic Christmas tree shape with a single straight leader"
+      
+      - feature_id: "CONE-POS-02" # Hanging/pendulous
+        notes: "Cones dangle down from branches rather than pointing upward"
+    
+    usually_true:
+      - feature_id: "TREE-SIZE-03" # Large (50-100 feet)
+        notes: "Can grow 40-60 feet tall in gardens, up to 100 feet in its native habitat"
+        exceptions: "In California gardens, often stays smaller due to climate and confined root space"
+      
+      - feature_id: "NEEDLE-ARRANGE-01" # Single needles
+        notes: "Needles attach individually to the twig, spirally arranged all around"
+        exceptions: "Occasionally needles may appear more flattened on some branches due to light exposure"
+      
+      - feature_id: "NEEDLE-COLOR-01" # Dark green
+        notes: "Needles have a rich, dark green color with glossy appearance"
+        exceptions: "New growth is slightly lighter green in spring"
+      
+      - feature_id: "HABITAT-05" # Planted in landscapes
+        notes: "In California, found in planned gardens, parks, and arboretums"
+        exceptions: "Not commonly found in all landscape settings due to specific growing requirements"
+    
+    sometimes_true:
+      - feature_id: "TREE-SIZE-02" # Medium (30-50 feet)
+        conditions: "Young trees or those in less favorable growing conditions"
+        notes: "May stay under 50 feet tall in urban settings or dry areas"
+      
+      - feature_id: "BARK-TEXT-02" # Furrowed bark
+        conditions: "Older, mature specimens"
+        notes: "Bark develops cracks and ridges with age"
+      
+      - feature_id: "HABITAT-03" # Urban areas
+        conditions: "When planted in city parks, botanical gardens, or large urban landscapes"
+        notes: "Tolerates urban conditions better than many spruce species"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01" # Deciduous
+        notes: "Never drops all its needles seasonally"
+      
+      - feature_id: "NEEDLE-COLOR-03" # Blue-green
+        notes: "Never has the blue or silver color seen in Colorado Blue Spruce"
+      
+      - feature_id: "CONE-POS-01" # Upright cones
+        notes: "Cones always hang down, never stand upright like fir cones"
+      
+      - feature_id: "HABITAT-02" # Forests
+        notes: "Not naturalized in California forests, only found in cultivated settings"
+
+  kid_friendly_identification:
+    primary_identifier: "Super tiny, short dark green needles - the shortest of any spruce tree!"
+    memorable_comparison: "Imagine a Christmas tree with the world's tiniest needles, like short green eyelashes"
+    touch_tip: "The needles feel softer than other spruce trees and won't poke you as much"
+    smell_tip: "Gently rub a bit of foliage and smell - it has a fresh, clean pine scent but isn't as strong as other spruces"
+    fun_fact: "This tree comes from mountains between Turkey and Russia, and its needles are so short they make the tree look extra fluffy and soft, like a green teddy bear!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, check if the tree is shaped like a Christmas tree (pyramidal) and stays green all year"
+        yes_next: 2
+        no_next: "Not an Oriental Spruce - look for deciduous trees if leaves change and fall off"
+      
+      - step: 2
+        instruction: "Look closely at the needles. Are they super short (about the size of a grain of rice) and dark green?"
+        yes_next: 3
+        no_next: "Not an Oriental Spruce - check Colorado Blue Spruce if needles are blue, or Norway Spruce if needles are longer"
+      
+      - step: 3
+        instruction: "Is the tree extremely dense with branches growing very close together, making it look fluffy and full?"
+        yes_next: 4
+        no_next: "Might be another spruce species with a more open growth habit"
+      
+      - step: 4
+        instruction: "In fall, do you see small purplish-brown cones hanging from the branches?"
+        yes_next: "You found an Oriental Spruce!"
+        no_next: "Might still be Oriental Spruce if it's not old enough to make cones yet"
+
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New, bright green growth appears at the tips of branches"
+      reproductive_activity: "Small, yellowish male pollen cones and tiny upright female cones begin to form"
+      identification_tips: "Look for the contrast between lighter new growth and darker older needles"
+      kid_friendly_tip: "In spring, watch for the tree's branch tips to grow new light green 'fingers' that will darken later"
+    
+    - season: "Summer"
+      visual_changes: "Foliage darkens to a rich, glossy green color"
+      reproductive_activity: "Female cones turn downward and develop a distinctive purple-brown color"
+      identification_tips: "The exceptionally short needles and dense growth habit are clear in summer"
+      kid_friendly_tip: "Summer is when you can see tiny purple-brown cones developing - they look like little hanging chocolate drops!"
+    
+    - season: "Fall"
+      visual_changes: "Needles maintain their dark green color unlike deciduous trees"
+      reproductive_activity: "Cones mature, turn brown, and begin to open to release seeds"
+      identification_tips: "The contrast between this evergreen and colorful deciduous trees makes identification easier"
+      kid_friendly_tip: "While other trees change colors in fall, this tree stays dark green and holds its tiny cones"
+    
+    - season: "Winter"
+      visual_changes: "Retains dark green needles providing winter color"
+      reproductive_activity: "Dormant, with some mature cones still attached"
+      identification_tips: "Dense, symmetrical, pyramidal shape may collect snow beautifully"
+      kid_friendly_tip: "In winter, this tree looks like the perfect Christmas tree, especially pretty when snow sits on its branches"
+
+  confirmation_checklist:
+    - feature: "Very short needles (1/4 to 1/2 inch long)"
+      reliability: "Very high"
+      visibility: "Medium - need to look closely to appreciate the small size"
+    
+    - feature: "Dark glossy green needles arranged spirally around the twig"
+      reliability: "High"
+      visibility: "High - visible from a distance"
+    
+    - feature: "Needles are blunt-tipped and less sharply pointed than other spruces"
+      reliability: "High"
+      visibility: "Low - requires handling needles to check"
+    
+    - feature: "Small cones (2-4 inches long) that hang down from branches"
+      reliability: "High" 
+      visibility: "Medium - visible when present during summer/fall"
+    
+    - feature: "Dense, compact growth habit with limited gaps in the foliage"
+      reliability: "High"
+      visibility: "High - visible from a distance"
+    
+    - feature: "Narrow pyramidal form with horizontal to slightly drooping branches"
+      reliability: "High"
+      visibility: "High - visible from a distance"
+
+  look_alike_species:
+    - species: "Norway Spruce (Picea abies)"
+      differences: "Has longer needles (1/2 to 1 inch), larger cones (4-7 inches), and more pendulous branches"
+      identification_tip: "Norway Spruce is more common in landscapes and has distinctly drooping branch tips that Oriental Spruce lacks"
+    
+    - species: "Black Spruce (Picea mariana)"
+      differences: "Has shorter, bluish-green needles and smaller cones, but is rarely planted in California"
+      identification_tip: "Black Spruce has a scruffier appearance and is almost never seen in California landscapes"
+    
+    - species: "Colorado Blue Spruce (Picea pungens)"
+      differences: "Has distinctly blue-gray needles, sharper needle tips, and more rigid branches"
+      identification_tip: "If the needles look blue or silver and feel sharp to touch, it's Colorado Blue Spruce not Oriental"
+    
+    - species: "White Spruce (Picea glauca)"
+      differences: "Has longer needles with a whitish bloom and emits a strong, unpleasant odor when crushed"
+      identification_tip: "Crush a few needles - if they smell skunky or cat-like, it's White Spruce not Oriental"
+    
+    - species: "Engelmann Spruce (Picea engelmannii)"
+      differences: "Has bluish-green needles, grows at high elevations, and has a more open habit"
+      identification_tip: "Engelmann Spruce has a less dense, more open appearance than the compact Oriental Spruce"
+
+  cultural_significance:
+    - culture: "Caucasus Mountain Region"
+      physical_uses:
+        - "Wood used for general construction and building homes in its native region"
+        - "Highly prized for making musical instruments, especially violins, due to its acoustic properties"
+      symbolic_meaning:
+        - "Represents the rich forest diversity of the mountainous regions between Europe and Asia"
+        - "In Georgia and Turkey, considered a symbol of the mountain landscapes and forest heritage"
+    
+    - culture: "Western Landscape Design"
+      physical_uses:
+        - "Used as an ornamental specimen tree and focal point in formal gardens"
+        - "Planted in collections of rare conifers in arboretums and botanical gardens"
+      symbolic_meaning:
+        - "Represents botanical exploration and the introduction of exotic plants to Western gardens"
+        - "Valued as a symbol of refinement and botanical knowledge among conifer enthusiasts"
+    
+    - culture: "California Garden Traditions"
+      physical_uses:
+        - "Planted as a landscape specimen in cooler regions of the state"
+        - "Used in conifer collections and demonstration gardens for educational purposes"
+      symbolic_meaning:
+        - "Exemplifies the California tradition of growing plants from around the world"
+        - "Represents the bridging of climates - bringing cool-climate trees to California's diverse growing zones"
+
+  physical_characteristics:
+    height: "40-60 feet in cultivation (up to 100 feet in native habitat)"
+    width: "15-25 feet"
+    bark: "Smooth and grayish when young, becoming fissured and scaly with age"
+    leaves: "Very short needles, 1/4 to 1/2 inch long, dark glossy green, blunt-tipped"
+    flowers: "Small, inconspicuous yellow pollen cones and reddish-purple seed cones"
+    fruit: "Small cylindrical cones, 2-4 inches long, purplish-brown when young, brown at maturity"
+    seeds: "Small winged seeds released when cones open"
+    growth_rate: "Slow, typically less than 12 inches per year"
+    lifespan: "120-150 years in favorable conditions"
+    root_system: "Moderately shallow with widespread lateral roots"
+    suitable_for_public_spaces: true
+
+  conservation_status: 
+    status: "Not threatened globally but some local populations face pressure"
+    threats: "Logging in parts of its native range; climate change affecting mountain habitats"
+    protection_efforts: "Protected in some nature reserves in Georgia and Turkey; widely cultivated worldwide"
+
+  range_within_california:
+    - "Not native to California, planted as an ornamental in urban areas, parks, and botanical gardens"
+    - "Performs best in coastal Northern California and higher elevation areas with cooler summers"
+    - "Has better heat and drought tolerance than many other spruce species"
+    - "Found primarily in specialty collections, arboreta, and in the gardens of conifer enthusiasts"
+
+  decision_tree_placement:
+    primary_split_features:
+      - feature_id: "LEAF-TYPE-02" # Evergreen
+      - feature_id: "NEEDLE-SHAPE-02" # Square needles
+      - feature_id: "CONE-POS-02" # Hanging cones
+      - feature_id: "NEEDLE-SIZE-01" # Short needles
+    
+    confirmation_features:
+      - feature_id: "TREE-FORM-01" # Pyramidal shape
+      - feature_id: "NEEDLE-COLOR-01" # Dark green
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-01", "LEAF-TYPE-02"] # Pyramidal shape, Evergreen
+      
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-COLOR-01", "TREE-TRUNK-01"] # Dark green needles, Single trunk
+      
+      - distance: "close_inspection"
+        features_to_check: ["NEEDLE-SIZE-01", "NEEDLE-SHAPE-02"] # Short needles, Square needles
+    
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "NEEDLE-SIZE-01", "TREE-FORM-01"]
+        notes: "New growth at branch tips provides additional confirmation"
+      
+      summer:
+        reliability: "Very high"
+        key_features: ["NEEDLE-SIZE-01", "NEEDLE-COLOR-01", "CONE-POS-02"]
+        notes: "Developing purplish cones are distinctive in summer"
+      
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "NEEDLE-SIZE-01", "CONE-POS-02"]
+        notes: "Mature cones and consistent evergreen color make fall identification reliable"
+      
+      winter:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "TREE-FORM-01", "NEEDLE-SIZE-01"]
+        notes: "Distinctive pyramidal form stands out when deciduous trees are bare"
+
+  wildlife_value: 
+    - "As a non-native ornamental tree in California, Oriental Spruce doesn't have strong ecological relationships with local wildlife"
+    - "The dense evergreen foliage provides good shelter and nesting sites for birds, especially in winter"
+    - "Seeds may be eaten by songbirds and small mammals, though they're not a major food source"
+    - "The tight branching pattern creates protected microhabitats that shield small animals from weather and predators"
+    - "While not as valuable to California wildlife as native trees, it still contributes some habitat benefits in urban settings"

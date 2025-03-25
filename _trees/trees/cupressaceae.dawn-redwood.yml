@@ -1,0 +1,280 @@
+tree:
+  common_name: "Dawn Redwood"
+  scientific_name: "Metasequoia glyptostroboides"
+  family: "Cupressaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A deciduous conifer with feathery, bright green needles arranged in opposite pairs along the twigs. It has a distinctive conical shape with a buttressed trunk base, and turns rusty orange-brown in fall before dropping its needles."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Deciduous conifer that drops its needles in fall; feathery bright green needles arranged in opposite pairs along twigs"
+    secondary_markers: "Conical shape with straight central trunk; buttressed, flaring trunk base; rusty orange-brown fall color"
+    seasonal_markers: "Bright green spring growth; drops all needles in fall after turning orange-brown; bare branches in winter with prominent buds"
+    similar_species_differentiation: "Unlike Bald Cypress, has opposite (not alternate) needle arrangement; unlike Coast Redwood, drops all needles in winter; unlike Larch, has broader trunk base"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops all its needles in fall"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Needles grow individually along the branch, not in clusters"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Needles and twigs grow in pairs, directly across from each other"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Has a conical or pyramid shape with a straight central leader"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        notes: "Not native to California; originally from China"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with one main trunk"
+        exceptions: "Can occasionally develop multiple trunks if the main leader is damaged"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Can grow quite tall (70-100 feet) when mature"
+        exceptions: "Younger specimens are much shorter; growth rate depends on conditions"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        notes: "Bark develops vertical furrows and becomes shreddy with age"
+        exceptions: "Young trees have smoother bark"
+      
+      - feature_id: "LEAF-FALL-05"  # Brown fall color
+        notes: "Typically turns rusty orange-brown before dropping needles"
+        exceptions: "Color intensity varies by growing conditions and yearly weather"
+    
+    sometimes_true:
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees"
+        notes: "Bark is relatively smooth on young trees before developing furrows"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        conditions: "Mature trees"
+        notes: "Older bark sometimes peels in long strips"
+      
+      - feature_id: "CONE-SIZE-01"  # Small cones
+        conditions: "Mature trees"
+        notes: "Produces small (about 1 inch) hanging cones"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        conditions: "When planted in landscape settings"
+        notes: "Often planted near water features where it grows well"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops all needles in fall"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Needles and twigs always grow in opposite pairs, never alternating"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Needles grow singly along the twigs, not in bundles like pines"
+      
+      - feature_id: "CONE-POS-01"  # Upright cones
+        notes: "Cones hang down, never stand upright"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "A conifer (like a Christmas tree) that surprisingly drops all its needles in fall after turning orange-brown"
+    memorable_comparison: "It looks like a Christmas tree in summer but then gets fall colors and goes bare in winter - it's like a tree that can't decide if it's an evergreen or not!"
+    touch_tip: "The needles are soft and feathery - gently run your fingers along a branch to feel them"
+    smell_tip: "Crush a needle gently to smell a fresh, slightly sweet scent"
+    fun_fact: "Dawn Redwoods are living fossils! Scientists thought they were extinct and only found as fossils until 1944 when living trees were discovered in China. It's like finding a real dinosaur alive today!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the overall tree shape. Is it shaped like a Christmas tree (cone or pyramid shape)?"
+        yes_next: 2
+        no_next: "If it has a different shape, it's probably not a Dawn Redwood"
+      - step: 2
+        instruction: "Look at how the small branches and needles grow. Do they grow in pairs exactly opposite each other (like when you hold your arms straight out to your sides)?"
+        yes_next: 3
+        no_next: "If the branches and needles grow in an alternating pattern, check for Bald Cypress instead"
+      - step: 3
+        instruction: "If it's fall, are the needles turning rusty orange-brown? Or if it's winter, did it drop all its needles?"
+        yes_next: 4
+        no_next: "If it stays green all winter with needles, it's probably a different conifer like pine or spruce"
+      - step: 4
+        instruction: "Look at the base of the trunk. Does it flare out widely at the bottom, almost like tree legs or buttresses?"
+        yes_next: "You found a Dawn Redwood!"
+        no_next: "It might be a Larch or Bald Cypress - check the branch pattern and trunk shape again"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Bright green, feathery new needles emerge, giving the tree a fresh, soft appearance"
+      reproductive_activity: "May produce small pollen cones at branch tips"
+      identification_tips: "Bright green new growth and opposite needle arrangement are distinctive"
+      kid_friendly_tip: "In spring, it grows bright green, soft new needles that look like tiny feathers"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of bright to medium green feathery needles; distinctive conical shape"
+      reproductive_activity: "Small, rounded seed cones may be visible, hanging from branches"
+      identification_tips: "Opposite needle arrangement and pyramidal shape; fluted trunk base"
+      kid_friendly_tip: "In summer, it looks like a regular evergreen tree with bright green, feathery branches"
+    
+    - season: "Fall"
+      visual_changes: "Needles turn rusty orange-brown before dropping; gradually becomes bare"
+      reproductive_activity: "Seed cones mature; typically sparse cone production in cultivation"
+      identification_tips: "Fall color change and needle drop is very distinctive among conifers"
+      kid_friendly_tip: "In fall, it does something surprising - its needles turn orange-brown and fall off!"
+    
+    - season: "Winter"
+      visual_changes: "Completely bare of needles; shows attractive branching pattern and bark"
+      reproductive_activity: "Dormant; small buds visible along branches"
+      identification_tips: "Bare branches with opposite branching pattern; distinctive trunk shape"
+      kid_friendly_tip: "In winter, it's totally bare like a regular tree - not green like other Christmas trees"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Opposite needle and branch arrangement"
+      reliability: "Very high"
+      visibility: "Need to look closely at branches"
+    - feature: "Deciduous habit - drops needles in fall"
+      reliability: "Very high"
+      visibility: "Obvious in fall and winter"
+    - feature: "Conical shape with straight central trunk"
+      reliability: "High"
+      visibility: "Visible from a distance"
+    - feature: "Buttressed, flaring trunk base"
+      reliability: "High"
+      visibility: "Need to check base of mature trees"
+    
+  look_alike_species:
+    - species: "Bald Cypress (Taxodium distichum)"
+      differences: "Bald Cypress has alternate (not opposite) needles and branches; often grows \"knees\" from roots in wet areas"
+      identification_tip: "Dawn Redwood branches grow in pairs directly across from each other; Bald Cypress branches alternate along the stem"
+    
+    - species: "Coast Redwood (Sequoia sempervirens)"
+      differences: "Coast Redwood is evergreen and keeps its needles year-round; has larger trunk and reddish bark"
+      identification_tip: "Dawn Redwood drops all needles in fall; Coast Redwood stays green all winter"
+    
+    - species: "Western Larch (Larix occidentalis)"
+      differences: "Larch has needles in clusters on short shoots; trunk doesn't flare as widely at base"
+      identification_tip: "Dawn Redwood has opposite needles along the branch; Larch has needles in circular clusters on short shoots"
+  
+  cultural_ecological_notes:
+    - "A 'living fossil' once thought to be extinct until discovered alive in China in 1944"
+    - "Widely planted as an ornamental due to its interesting seasonal changes and attractive form"
+    - "Can tolerate wet soils and temporary flooding"
+    - "Fast-growing and adaptable to many urban conditions"
+    
+  cultural_significance:
+    - culture: "Ancient Chinese"
+      physical_uses:
+        - "Used the rot-resistant wood for building and construction"
+        - "Planted near temples and sacred areas"
+        - "Used in traditional medicine for various ailments"
+      symbolic_meaning:
+        - "Represented resilience and long life as it was known to live for centuries"
+        - "Considered a connection to the prehistoric world"
+    
+    - culture: "Modern Botanical Science"
+      physical_uses:
+        - "Studied extensively as a living example of an ancient tree lineage"
+        - "Seeds distributed worldwide to botanical gardens for conservation"
+        - "Used in research on plant evolution and climate adaptation"
+      symbolic_meaning:
+        - "Represents the importance of conservation and biodiversity"
+        - "Symbolizes scientific discovery and the ongoing exploration of nature"
+    
+    - culture: "Contemporary Landscape Design"
+      physical_uses:
+        - "Planted as a specimen tree in parks and large gardens"
+        - "Used in rain gardens and bioswales for water management"
+        - "Selected for urban settings due to pollution tolerance"
+      symbolic_meaning:
+        - "Represents seasonality and the changing natural cycles"
+        - "Connects modern landscapes to ancient natural history"
+  
+  range_within_california:
+    - "Not native to California"
+    - "Planted as an ornamental tree in parks, gardens, and public spaces"
+    - "Grows well in many areas of the state with adequate moisture"
+    - "Common in arboretums and botanical gardens"
+    
+  physical_characteristics:
+    height_range: "70-100 feet tall at maturity"
+    growth_rate: "Fast; 2-3 feet per year when young"
+    crown_spread: "25-35 feet wide when mature"
+    lifespan: "Can live several hundred years"
+    trunk_diameter: "3-6 feet at maturity with a buttressed base"
+    root_system: "Deep central taproot with spreading lateral roots"
+    toxicity: "Not toxic to humans or animals"
+    
+  conservation_status:
+    status: "Endangered in native range in China"
+    threats: "Habitat loss and limited natural population in the wild"
+    protection_efforts: "Protected in nature reserves in China; widely cultivated worldwide"
+  
+  kid_friendly_cultural_significance:
+    - culture: "Scientists and Plant Explorers"
+      physical_uses:
+        - "Collected seeds to save this rare tree from extinction"
+        - "Planted the trees in parks and gardens around the world so everyone could see this special tree"
+        - "Studied the tree to learn how plants lived millions of years ago"
+      symbolic_meaning:
+        - "The tree is like a time machine that shows us what the world looked like when dinosaurs lived"
+        - "Reminds us that we might find amazing discoveries when we explore nature carefully"
+    
+    - culture: "Chinese People"
+      physical_uses:
+        - "Protected the last wild trees growing in remote mountain valleys"
+        - "Used the strong wood to build houses and boats that wouldn't rot in water"
+        - "Planted these trees near special places like temples"
+      symbolic_meaning:
+        - "The trees show that some living things can survive for millions of years if we protect them"
+        - "Reminds us that even things that seem lost forever might still be found"
+  
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-ARRANGE-02"  # Opposite
+      - "feature_id: TREE-FORM-01"  # Pyramidal shape
+    confirmation_features:
+      - "feature_id: LEAF-FALL-05"  # Brown fall color
+      - "feature_id: TREE-TRUNK-01"  # Single trunk with buttressed base
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-01", "LEAF-TYPE-01"]  # Pyramidal shape, deciduous in fall/winter
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-ARRANGE-02", "TREE-TRUNK-01"]  # Opposite arrangement, single trunk
+      - distance: "close_inspection"
+        features_to_check: ["NEEDLE-ARRANGE-01", "LEAF-FALL-05"]  # Single needles, brown fall color
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-ARRANGE-02", "NEEDLE-ARRANGE-01", "TREE-FORM-01"]
+        notes: "Fresh green growth and opposite arrangement are distinctive"
+      summer:
+        reliability: "High"
+        key_features: ["LEAF-ARRANGE-02", "TREE-FORM-01", "TREE-TRUNK-01"]
+        notes: "Opposite needle arrangement and buttressed trunk base"
+      fall:
+        reliability: "Very high" 
+        key_features: ["LEAF-TYPE-01", "LEAF-FALL-05", "LEAF-ARRANGE-02"]
+        notes: "Orange-brown color and needle drop very distinctive"
+      winter:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-01", "TREE-FORM-01", "TREE-TRUNK-01"]
+        notes: "Bare branches with opposite buds; distinctive trunk form"
+    misidentification_risks:
+      - species: "Bald Cypress (Taxodium distichum)"
+        distinguishing_features: "Dawn Redwood has opposite needle arrangement; Bald Cypress has alternate arrangement"
+      - species: "Western Larch (Larix occidentalis)"
+        distinguishing_features: "Dawn Redwood has needles along the branches; Larch has needles in circular tufts"
+      - species: "Coast Redwood (Sequoia sempervirens)"
+        distinguishing_features: "Dawn Redwood is deciduous; Coast Redwood is evergreen"
+  
+  wildlife_value:
+    - "Provides nesting sites for birds"
+    - "Seeds occasionally eaten by birds and small mammals"
+    - "Not a significant food source for most California wildlife"
+    - "Dense branching provides cover and shelter for birds"

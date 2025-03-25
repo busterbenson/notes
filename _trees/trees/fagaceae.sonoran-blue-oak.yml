@@ -1,0 +1,272 @@
+tree:
+  common_name: Sonoran Blue Oak
+  scientific_name: Quercus oblongifolia
+  family: Fagaceae
+  native: false
+
+  summary: Sonoran Blue Oak is a medium-sized, semi-evergreen to evergreen oak native to the southwestern United States and northern Mexico, distinguished by its distinctive blue-gray foliage and adaptation to arid environments. With oblong leaves featuring smooth or slightly wavy margins (unlike the lobed leaves of many oaks), this drought-tolerant tree forms a rounded crown with spreading branches. While not native to California, it may occasionally be found as an ornamental in southern California gardens, valued for its distinctive color and ability to thrive in hot, dry conditions.
+
+  identification_path:
+    primary_markers: "Distinctive blue-gray, oblong leaves with smooth or slightly wavy margins (not lobed like most oaks)"
+    secondary_markers: "Light gray to whitish-gray bark; small acorns with shallow cups; rounded crown"
+    seasonal_markers: "Usually keeps its blue-gray leaves year-round; yellow catkins in spring; acorns mature in fall"
+    similar_species_differentiation: "Unlike California's Blue Oak, keeps most leaves year-round and has unlobed leaves; unlike Coast Live Oak, has blue-gray (not dark green) leaves"
+
+  features:
+    always_true:
+      - feature_id: "LEAF-SHAPE-01" # Elliptical
+        notes: "Leaves are oblong to oval-shaped without lobes or deep teeth"
+      
+      - feature_id: "LEAF-ARRANGE-01" # Alternate
+        notes: "Leaves grow in an alternating pattern along branches, not in pairs"
+      
+      - feature_id: "FRUIT-TYPE-01" # Acorns
+        notes: "Produces small acorns with shallow, scaly cups covering about 1/3 of the nut"
+      
+      - feature_id: "LEAF-COLOR-03" # Blue-green
+        notes: "Distinctive blue-gray leaf color that stands out from other trees"
+    
+    usually_true:
+      - feature_id: "LEAF-TYPE-02" # Evergreen
+        notes: "Typically keeps most of its leaves year-round"
+        exceptions: "May drop some or most leaves during severe drought or cold"
+      
+      - feature_id: "TREE-SIZE-02" # Medium
+        notes: "Generally grows 15-40 feet tall in maturity"
+        exceptions: "May stay smaller in poor conditions or with limited water"
+      
+      - feature_id: "TREE-FORM-02" # Rounded crown
+        notes: "Forms a rounded shape with spreading branches"
+        exceptions: "Shape can vary based on growing conditions and available space"
+      
+      - feature_id: "BARK-COLOR-01" # Gray
+        notes: "Bark is light gray to whitish-gray in color"
+        exceptions: "Older trees may develop darker patches in furrowed areas"
+    
+    sometimes_true:
+      - feature_id: "LEAF-TYPE-01" # Deciduous
+        conditions: "During severe drought or unusual cold"
+        notes: "May drop a significant portion of leaves under stress conditions"
+      
+      - feature_id: "TREE-SIZE-01" # Small
+        conditions: "Young trees or those growing in harsh conditions"
+        notes: "May remain under 15 feet tall in poor growing conditions"
+      
+      - feature_id: "HABITAT-05" # Planted in landscapes
+        conditions: "When used in drought-tolerant landscaping in Southern California"
+        notes: "Occasionally planted in gardens that emphasize water conservation"
+      
+      - feature_id: "HABITAT-01" # Dry habitats
+        conditions: "When planted in appropriate xeriscapes"
+        notes: "Thrives in dry, sunny locations with well-drained soil"
+    
+    never_true:
+      - feature_id: "LEAF-SHAPE-05" # Lobed
+        notes: "Unlike many other oaks, never has lobed leaves with deep indentations"
+      
+      - feature_id: "LEAF-ARRANGE-02" # Opposite
+        notes: "Leaves never grow in pairs directly across from each other"
+      
+      - feature_id: "TREE-SIZE-03" # Large
+        notes: "Never reaches heights above 50 feet even in ideal conditions"
+      
+      - feature_id: "HABITAT-02" # Forests
+        notes: "Not naturalized in California forests, only found in cultivated settings"
+
+  kid_friendly_identification:
+    primary_identifier: "Blue-gray leaves that look like they've been dusted with powder, with smooth edges (not bumpy like most oaks)"
+    memorable_comparison: "The leaves look like blue-gray oval potato chips, and the tree looks like it's wearing a silvery-blue cloud"
+    touch_tip: "The leaves feel thick and leathery, like stiff paper, and they're smooth around the edges"
+    smell_tip: "If you gently crush a leaf, there's a mild earthy smell, but it's not very strong"
+    fun_fact: "This tree is like a camel - it can live in hot, dry deserts where many other trees can't survive! It comes from places in Arizona and Mexico where it can get super hot and hardly ever rains."
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, check if the tree has acorns or acorn cups below it - all oaks make acorns"
+        yes_next: 2
+        no_next: "If no acorns, look for other clues or check in fall when acorns appear"
+      
+      - step: 2
+        instruction: "Look at the leaves. Are they a distinctive blue-gray color (like they've been dusted with powder)?"
+        yes_next: 3
+        no_next: "Not a Sonoran Blue Oak - check Blue Oak if in California or Coast Live Oak if dark green"
+      
+      - step: 3
+        instruction: "Check the leaf shape. Do the leaves have smooth edges or just small waves (not deep lobes or sharp teeth)?"
+        yes_next: 4
+        no_next: "Not a Sonoran Blue Oak - most other oaks have lobed or toothed leaves"
+      
+      - step: 4
+        instruction: "Is the tree keeping its leaves year-round (except maybe in very harsh conditions)?"
+        yes_next: "You found a Sonoran Blue Oak!"
+        no_next: "Might be California's Blue Oak, which drops its leaves in winter"
+
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaves emerge with bright blue-gray color; tree typically retains old leaves until new ones develop"
+      reproductive_activity: "Yellow catkins (male flowers) appear, releasing pollen; female flowers are tiny and reddish"
+      identification_tips: "Hanging yellow catkins combined with blue-gray foliage make spring identification straightforward"
+      kid_friendly_tip: "In spring, look for hanging yellow 'caterpillars' (catkins) that shake in the breeze and spread pollen"
+    
+    - season: "Summer"
+      visual_changes: "Foliage maintains its distinctive blue-gray color; provides light, dappled shade"
+      reproductive_activity: "Acorns begin developing and growing in size"
+      identification_tips: "The blue-gray color becomes more distinctive as summer heat intensifies"
+      kid_friendly_tip: "During hot summer days, these trees stay nice and blue-gray, and you can see tiny green acorns starting to grow"
+    
+    - season: "Fall"
+      visual_changes: "Retains most foliage; some leaves may drop if drought-stressed"
+      reproductive_activity: "Acorns mature to a rich brown color"
+      identification_tips: "Mature acorns with shallow cups help distinguish from other oak species"
+      kid_friendly_tip: "Fall is when the acorns turn brown and ripen - they have shallow caps that look like tiny berets!"
+    
+    - season: "Winter"
+      visual_changes: "Maintains foliage unless experiencing severe cold or drought"
+      reproductive_activity: "Dormant; leaf buds may begin to swell late in winter"
+      identification_tips: "Evergreen nature distinguishes it from deciduous oaks; blue-gray color remains distinctive"
+      kid_friendly_tip: "Unlike many oaks that lose their leaves in winter, this tree usually keeps its blue-gray leaves all year round"
+
+  confirmation_checklist:
+    - feature: "Blue-gray, oblong leaves with smooth or slightly wavy margins (not lobed)"
+      reliability: "Very high"
+      visibility: "High - distinctive color visible from a distance"
+    
+    - feature: "Leaves typically 1-2 inches long, leathery in texture"
+      reliability: "High"
+      visibility: "Medium - requires closer inspection"
+    
+    - feature: "Light gray to whitish-gray bark, becoming somewhat furrowed with age"
+      reliability: "Medium"
+      visibility: "Medium - visible on trunk and major branches"
+    
+    - feature: "Small to medium-sized acorns with shallow, scaly cups"
+      reliability: "High"
+      visibility: "Medium - visible in fall and winter"
+    
+    - feature: "Rounded crown with spreading branches"
+      reliability: "Medium"
+      visibility: "High - overall form visible from a distance"
+    
+    - feature: "Semi-evergreen to evergreen habit"
+      reliability: "High"
+      visibility: "High - especially noticeable in winter"
+
+  look_alike_species:
+    - species: "Blue Oak (Quercus douglasii)"
+      differences: "Native to California with similar blue-gray foliage but has lobed leaves and is deciduous rather than evergreen"
+      identification_tip: "Blue Oak loses all its leaves in winter and has distinct lobes on leaf edges, unlike Sonoran Blue Oak's smooth-edged leaves"
+    
+    - species: "Arizona White Oak (Quercus arizonica)"
+      differences: "Has larger, more toothed leaves that are more green than blue; leaf undersides are densely hairy"
+      identification_tip: "If the leaf undersides are fuzzy and white-hairy, it's likely Arizona White Oak, not Sonoran Blue Oak"
+    
+    - species: "Gray Oak (Quercus grisea)"
+      differences: "Similar but with more obovate leaves (wider at tip) and typically grows at higher elevations"
+      identification_tip: "Gray Oak leaves tend to be wider toward the tip, while Sonoran Blue Oak leaves are more evenly oblong"
+    
+    - species: "Engelmann Oak (Quercus engelmannii)"
+      differences: "Native to southern California with similar blue-gray coloration but larger leaves with more pronounced teeth"
+      identification_tip: "Engelmann Oak has larger leaves with small but noticeable teeth, unlike the smooth-margined Sonoran Blue Oak"
+    
+    - species: "Coast Live Oak (Quercus agrifolia)"
+      differences: "Native to California with glossy, dark green, holly-like leaves with spiny margins"
+      identification_tip: "Coast Live Oak leaves are much darker green (not blue-gray) and have distinctly spiny edges"
+
+  cultural_significance:
+    - culture: "Tohono O'odham and Other Indigenous Peoples"
+      physical_uses:
+        - "Acorns were harvested, processed to remove bitterness, and ground into meal for food"
+        - "Wood used for tools, building materials, and as fuel for cooking fires"
+      symbolic_meaning:
+        - "Represented resilience and survival in harsh desert environments"
+        - "Served as a marker for reliable seasonal food sources in desert ecosystems"
+    
+    - culture: "Ranching Communities"
+      physical_uses:
+        - "Valued for providing shade for livestock in hot desert environments"
+        - "Dense wood used for fence posts and tool handles"
+      symbolic_meaning:
+        - "Symbolized oases of shelter in harsh landscapes"
+        - "Marked potential water sources in arid regions"
+    
+    - culture: "Modern Sustainable Landscaping"
+      physical_uses:
+        - "Used in water-wise landscape designs for drought tolerance"
+        - "Planted to create natural-looking shade in xeriscaping projects"
+      symbolic_meaning:
+        - "Represents adaptation to climate change and water scarcity"
+        - "Symbolizes the beauty of native and climate-appropriate plants"
+
+  physical_characteristics:
+    height: "15-40 feet"
+    width: "15-40 feet"
+    bark: "Light gray to whitish-gray, becoming furrowed and somewhat scaly with age"
+    leaves: "Blue-gray, oblong to elliptical, 1-2 inches long, with smooth or slightly wavy margins"
+    flowers: "Inconspicuous; male flowers in hanging yellow catkins, female flowers tiny and reddish"
+    fruit: "Small to medium-sized acorns (0.5-1 inch long) with shallow, scaly cups"
+    seeds: "Single acorn seed, maturing in one year"
+    growth_rate: "Slow to moderate, typically less than 12 inches per year"
+    lifespan: "Long-lived, potentially 200-300 years in favorable conditions"
+    root_system: "Deep taproot with spreading lateral roots, adapted to access limited water"
+    suitable_for_public_spaces: true
+
+  conservation_status: 
+    status: "Not listed as threatened or endangered but facing localized pressures"
+    threats: "Climate change, habitat loss to development, poor regeneration in some areas, fire suppression altering habitat"
+    protection_efforts: "Protected in some nature preserves and national parks within its native range"
+
+  range_within_california:
+    - "Not native to California"
+    - "Occasionally planted as an ornamental in dry southern California landscapes"
+    - "Best suited to areas with conditions similar to its native range – hot, dry areas with well-drained soils"
+    - "Would not be found naturally in California forests or wildlands"
+
+  decision_tree_placement:
+    primary_split_features:
+      - feature_id: "FRUIT-TYPE-01" # Acorns
+      - feature_id: "LEAF-COLOR-03" # Blue-green
+      - feature_id: "LEAF-SHAPE-01" # Elliptical/oblong
+      - feature_id: "LEAF-TYPE-02" # Evergreen
+    
+    confirmation_features:
+      - feature_id: "LEAF-EDGE-01" # Entire/smooth
+      - feature_id: "BARK-COLOR-01" # Gray
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-COLOR-03", "TREE-FORM-02"] # Blue-green color, Rounded form
+      
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SHAPE-01", "LEAF-EDGE-01"] # Elliptical leaves, Smooth edges
+      
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-01", "LEAF-TYPE-02"] # Acorns, Evergreen nature
+    
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-COLOR-03", "FLOWER-TIME-01", "LEAF-TYPE-02"]
+        notes: "Yellow catkins combined with blue-gray evergreen foliage make spring identification reliable"
+      
+      summer:
+        reliability: "High"
+        key_features: ["LEAF-COLOR-03", "LEAF-SHAPE-01", "LEAF-EDGE-01"]
+        notes: "Blue-gray foliage with unlobed, smooth-edged leaves distinctive in summer heat"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["FRUIT-TYPE-01", "LEAF-COLOR-03", "LEAF-TYPE-02"]
+        notes: "Mature acorns plus retained blue-gray foliage make fall identification straightforward"
+      
+      winter:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "LEAF-COLOR-03", "LEAF-EDGE-01"]
+        notes: "Evergreen nature with blue-gray, smooth-edged leaves distinguishes from deciduous oaks in winter"
+
+  wildlife_value: 
+    - "Acorns provide valuable food for birds such as jays, woodpeckers, and wild turkeys"
+    - "Small mammals including squirrels and mice collect and cache the acorns"
+    - "In its native range, deer and other herbivores browse the foliage"
+    - "Provides nesting sites for various birds in its spreading branches"
+    - "Creates dappled shade that generates cooler microhabitats beneath the canopy"
+    - "Even as non-native specimens in California, they would provide similar wildlife benefits"

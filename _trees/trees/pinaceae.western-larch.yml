@@ -1,0 +1,275 @@
+tree:
+  common_name: "Western Larch"
+  scientific_name: "Larix occidentalis"
+  family: "Pinaceae"
+  
+  # Basic summary
+  summary: "Western Larch is a tall, deciduous conifer with soft, light green needles that grow in clusters on short spurs and turn bright gold before dropping in fall. It has reddish-brown, deeply furrowed bark and small upright cones with distinctive protruding bracts. Unlike most evergreen trees, it loses all its needles each winter."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Soft, light green needles in clusters of 15-30 on short spurs; deciduous habit (drops all needles in fall); bright golden-yellow fall color"
+    secondary_markers: "Tall, straight trunk with reddish-brown, deeply furrowed bark; small, upright cones with protruding bracts; pyramidal shape with a straight central leader"
+    seasonal_markers: "Brilliant golden-yellow fall color; bare branches in winter unlike other conifers; bright green new growth in spring"
+    similar_species_differentiation: "Unlike pines, has needles in clusters of many (not 2-5) on short spurs; unlike other conifers, drops all needles in fall; unlike other larches, has reddish bark and grows in western mountains"
+  
+  features:
+    always_true:
+      # Fundamental traits
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Unlike most conifers, drops all its needles each fall"
+        
+      - feature_id: "NEEDLE-ARRANGE-06"  # Clustered needles
+        notes: "Needles grow in clusters of 15-30 on short, stubby spurs along the branches"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Has a triangular or cone shape with a strong central leader"
+      
+      - feature_id: "CONE-POS-01"  # Upright cones
+        notes: "Small cones (1-1.5 inches) grow upright on branches, not hanging down"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        notes: "Thick bark with deep grooves and ridges"
+      
+    usually_true:
+      # Features with exceptions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with one straight, tall main trunk"
+        exceptions: "May develop multiple trunks if damaged by fire, lightning, or other injuries"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Usually reaches 100-180 feet tall (as tall as a 10-18 story building)"
+        exceptions: "May be shorter in harsh conditions or higher elevations"
+      
+      - feature_id: "BARK-COLOR-03"  # Red bark
+        notes: "Bark is typically reddish-brown"
+        exceptions: "Young trees have grayish bark; very old trees may appear more brown than red"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        notes: "Needles turn brilliant golden-yellow in fall before dropping"
+        exceptions: "Color intensity can vary with weather conditions"
+    
+    sometimes_true:
+      # Features that vary
+      - feature_id: "ECO-ADAPT-03"  # Fire resistant
+        conditions: "Mature trees"
+        notes: "Older trees develop thick bark that helps them survive low-intensity fires"
+      
+      - feature_id: "BARK-TEXT-04"  # Plated bark
+        conditions: "Very old trees"
+        notes: "The oldest trees develop thick plates between furrows"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        conditions: "In California"
+        notes: "Native to parts of northern California but introduced elsewhere in the state"
+      
+      - feature_id: "GEO-ELEV-03"  # High elevation
+        conditions: "Throughout range"
+        notes: "Often found at elevations between 2,000-7,000 feet"
+    
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops all needles in fall, unlike most conifers"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Never has needles in pairs like pines"
+      
+      - feature_id: "NEEDLE-ARRANGE-03"  # Needles in threes
+        notes: "Never has needles in groups of three like some pines"
+      
+      - feature_id: "NEEDLE-ARRANGE-04"  # Needles in fives
+        notes: "Never has needles in groups of five like white pines"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Has small, inconspicuous pollen and seed cones, not showy flowers"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Soft, light green needles in clusters like little brushes that turn bright gold in fall and then all fall off"
+    memorable_comparison: "It's like a Halloween costume - a pine tree dressed up as a maple tree that changes color and loses all its 'leaves' in fall!"
+    touch_tip: "The needles are super soft, not prickly like most pine trees - they feel like a soft paintbrush on your skin"
+    smell_tip: "The needles have a fresh, piney smell but not as strong as pine trees"
+    fun_fact: "Western Larch is a tree superhero! It can live for 700 years, survive forest fires with its thick bark, and grow over 150 feet tall - that's as tall as a 15-story building! And it's one of the few trees that's both a conifer (like Christmas trees) AND deciduous (loses all its needles in winter)!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at how the needles grow. Do you see them growing in little bunches like tiny brushes along the branches?"
+        yes_next: 2
+        no_next: "Not a Western Larch - if needles grow singly or in groups of 2-5, check other conifers"
+      - step: 2
+        instruction: "If it's fall, check the needle color. Are they turning bright golden-yellow (like a yellow crayon)?"
+        yes_next: 3
+        no_next: "If it's not fall, look for light green, soft needles and check the bark"
+      - step: 3
+        instruction: "Check the bark on the trunk. Is it reddish-brown with deep grooves, looking a bit like puzzle pieces?"
+        yes_next: "You found a Western Larch!"
+        no_next: "Might be another larch species or a different conifer - check the cone shape and location"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New, light green, soft needles emerge from the bare branches; small, reddish female cones develop"
+      reproductive_activity: "Produces small male pollen cones and reddish female seed cones"
+      identification_tips: "The fresh, bright green needle clusters contrast with most darker evergreen conifers"
+      kid_friendly_tip: "In spring, the tree 'wakes up' with bright green, super soft new needles growing all over the previously bare branches"
+    
+    - season: "Summer" 
+      visual_changes: "Needles are fully developed and light green; cones mature and become woody"
+      reproductive_activity: "Cones continue to develop and mature"
+      identification_tips: "Light green needle color and upright cones are distinctive"
+      kid_friendly_tip: "In summer, the tree is covered with soft, light green needles and small wooden cones that stand up on the branches"
+    
+    - season: "Fall"
+      visual_changes: "Needles turn brilliant golden-yellow before dropping; cones may begin to open"
+      reproductive_activity: "Seeds mature in cones and may begin to be released"
+      identification_tips: "Golden fall color is unique among conifers and highly distinctive"
+      kid_friendly_tip: "In fall, the whole tree turns a beautiful golden-yellow color, like it's made of sunshine, before all the needles fall off"
+    
+    - season: "Winter"
+      visual_changes: "Completely bare branches; some cones may persist"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "The only conifer with no needles in winter; distinctive silhouette"
+      kid_friendly_tip: "In winter, it looks like a completely bare tree with no needles at all - very different from other pine trees!"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Needles in clusters on short spurs"
+      reliability: "Very high"
+      visibility: "High - visible during growing season"
+    - feature: "Deciduous habit - drops all needles in fall"
+      reliability: "Very high"
+      visibility: "Obvious in fall and winter"
+    - feature: "Reddish-brown, deeply furrowed bark"
+      reliability: "High"
+      visibility: "Visible year-round on mature trees"
+    - feature: "Bright golden-yellow fall color"
+      reliability: "High"
+      visibility: "Highly visible but only in fall"
+    
+  look_alike_species:
+    - species: "Subalpine Larch (Larix lyallii)"
+      differences: "Subalpine Larch grows at higher elevations, has woollier young twigs, and is generally smaller"
+      identification_tip: "Western Larch is taller, has smoother twigs, and typically grows at lower elevations"
+    - species: "Lodgepole Pine (Pinus contorta)"
+      differences: "Lodgepole Pine has needles in pairs, is evergreen, and has asymmetrical cones"
+      identification_tip: "Western Larch has many needles in clusters, drops them in fall, and has symmetrical upright cones"
+    - species: "Tamarack/Eastern Larch (Larix laricina)"
+      differences: "Tamarack is smaller, has bluish-green needles, and is native to eastern North America"
+      identification_tip: "Western Larch is much taller, has light green needles, and grows in western mountains"
+    
+  cultural_ecological_notes:
+    - "Fire-adapted species with thick bark that allows mature trees to survive low to moderate-intensity fires"
+    - "Important for wildlife habitat and watershed protection in mountain forests"
+    - "Among the most shade-intolerant trees in its range, requiring open conditions to regenerate"
+    - "Deep root system helps prevent soil erosion on mountain slopes"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Indigenous Peoples of the Inland Northwest"
+      physical_uses:
+        - "Used the strong, rot-resistant wood for building material and tools"
+        - "Made tea from the bark for treating colds and sore throats"
+        - "Collected and chewed the sweet-tasting sap as a treat or medicine"
+      symbolic_meaning:
+        - "The annual cycle of needle growth and loss represented the cycles of life"
+        - "Trees that survived fires were seen as symbols of resilience and strength"
+        - "Featured in stories about seasonal change and adaptation"
+    
+    - culture: "Early European Settlers and Logging Industry"
+      physical_uses:
+        - "Harvested for strong, durable lumber used in buildings, railroad ties, and ships"
+        - "Used the rot-resistant wood for fence posts and mine timbers"
+        - "Extracted a substance called arabinogalactan from the wood for use in food and medicine"
+      symbolic_meaning:
+        - "Represented the wealth and resources of the western forests"
+        - "Became a symbol of the logging industry in the Inland Northwest"
+        - "The tree's uniqueness as a deciduous conifer made it notable in regional identity"
+    
+    - culture: "Modern Forestry and Conservation"
+      physical_uses:
+        - "Cultivated for timber production due to its straight growth and valuable wood"
+        - "Used in reforestation projects following wildfires"
+        - "Studied for its adaptation to fire and climate change"
+      symbolic_meaning:
+        - "Represents fire ecology and forest renewal in educational programs"
+        - "Symbolizes the unique biodiversity of western mountain forests"
+        - "Used in conservation education about forest ecosystems and climate change"
+    
+  range_within_california:
+    - "Native only to the northernmost parts of California"
+    - "Primarily found in Siskiyou and Modoc counties in far northern California"
+    - "Requires cool, somewhat moist mountain habitats"
+    - "Generally found at elevations between 2,000-7,000 feet"
+    - "Sometimes planted as an ornamental in cooler regions of Northern California"
+    
+  physical_characteristics:
+    height_range: "100-180 feet tall (about as tall as a 10-18 story building)"
+    growth_rate: "Moderate to fast for a conifer; can grow 1-2 feet per year when young"
+    crown_spread: "30-60 feet wide at maturity"
+    lifespan: "400-700 years, with some trees living even longer"
+    trunk_diameter: "3-5 feet across (about as wide as a dining table or car tire)"
+    root_system: "Deep, strong taproot with spreading lateral roots"
+    toxicity: "Not toxic to humans or animals"
+    
+  conservation_status:
+    status: "Not listed as threatened or endangered"
+    threats: 
+      - "High-severity wildfires that kill even mature trees"
+      - "Climate change potentially altering suitable habitat"
+      - "Mountain pine beetle and larch casebearer insect pests"
+      - "Competing vegetation following fire suppression"
+    protection_efforts:
+      - "Protected in national parks and wilderness areas within its range"
+      - "Research into fire ecology and climate change adaptation"
+      - "Some selective harvesting practices designed to mimic natural disturbance patterns"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: NEEDLE-ARRANGE-06"  # Clustered needles
+    confirmation_features:
+      - "feature_id: TREE-SIZE-03"  # Tall tree
+      - "feature_id: BARK-COLOR-03"  # Red bark
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-01", "LEAF-TYPE-01"]  # Pyramidal shape, deciduous
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-ARRANGE-06", "BARK-COLOR-03"]  # Clustered needles, red bark
+      - distance: "close_inspection"
+        features_to_check: ["CONE-POS-01", "NEEDLE-FEAT-02"]  # Upright cones, soft needles
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-06", "TREE-FORM-01"]
+        notes: "Fresh green needle growth on previously bare branches is distinctive"
+      
+      summer:
+        reliability: "Medium" 
+        key_features: ["NEEDLE-ARRANGE-06", "CONE-POS-01"]
+        notes: "Light green needle color and upright cones aid identification"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["LEAF-FALL-01", "LEAF-TYPE-01"]
+        notes: "Golden color and needle drop are unique among conifers"
+      
+      winter:
+        reliability: "Very high"
+        key_features: ["LEAF-TYPE-01", "TREE-FORM-01"]
+        notes: "Only conifer with completely bare branches in winter"
+    misidentification_risks: 
+      - "In summer, could be confused with other conifers if not observing the needle arrangement carefully"
+      - "Very young trees may not yet show the characteristic reddish bark"
+      - "Can be confused with other larch species, though they have different ranges"
+  
+  wildlife_value:
+    food_source:
+      - "Seeds eaten by crossbills, chickadees, nuthatches, and squirrels"
+      - "Buds and twigs browsed by grouse, deer, and elk in spring"
+      - "Needles sometimes eaten by porcupines and snowshoe hares"
+    habitat_provided:
+      - "Large trees provide nesting sites for many bird species including hawks and owls"
+      - "Dead trees (snags) offer critical habitat for cavity-nesting birds and mammals"
+      - "Fallen logs create important habitat for small mammals, amphibians, and insects"
+    ecosystem_role: "Important component of mixed conifer forests in western mountains; contributes to forest diversity; enhances forest resilience through fire adaptation"

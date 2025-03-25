@@ -1,0 +1,284 @@
+tree:
+  common_name: "Monterey Cypress"
+  scientific_name: "Cupressus macrocarpa"
+  family: "Cupressaceae"
+  
+  # Basic summary information
+  summary: "A uniquely shaped, wind-sculpted evergreen tree native to a tiny area of California's central coast. It has scale-like leaves that form dense sprays, rounded cones, and a distinctive silhouette shaped by coastal winds."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Irregular, flat-topped crown with spreading branches; scale-like leaves forming dense sprays; rounded, woody cones about 1-2 inches in size"
+    secondary_markers: "Gray-brown, furrowed bark that splits into flat ridges; foliage typically gray-green; distinctive wind-swept appearance"
+    seasonal_markers: "Minimal seasonal change as an evergreen; pollen cones release yellow pollen in late winter/early spring"
+    similar_species_differentiation: "Unlike Incense-cedar, has rounded rather than flattened sprays; unlike Italian Cypress, grows wide rather than columnar; unlike Arizona Cypress, has darker green rather than blue-green foliage"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its scale-like leaves year-round"
+        
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        notes: "Has tiny overlapping scales forming sprays rather than needle-like leaves"
+      
+      - feature_id: "CONE-SIZE-02"  # Medium cones
+        notes: "Produces woody cones about 1-2 inches in diameter"
+      
+      - feature_id: "CONE-SHAPE-01"  # Round cones
+        notes: "Cones are rounded or slightly oblong, not elongated"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Produces hard, woody seed cones that stay closed for years"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Native to a tiny area of California's central coast near Monterey"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        notes: "Foliage releases a strong, pleasant cypress scent when crushed"
+
+    usually_true:
+      # Features that are primarily true, but have notable exceptions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with a single main trunk"
+        exceptions: "May develop multiple trunks after injury or in exposed coastal settings"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Usually grows to 40-70 feet tall in cultivation"
+        exceptions: "Can be shorter in very windy coastal locations or much taller in protected settings"
+      
+      - feature_id: "TREE-FORM-07"  # Flat topped
+        notes: "Often develops a broad, flat-topped crown, especially in native habitat"
+        exceptions: "Young trees or those in protected areas may be more conical or rounded"
+      
+      - feature_id: "LEAF-COLOR-03"  # Blue-green
+        notes: "Foliage is typically a grayish blue-green color"
+        exceptions: "May appear darker green in shadier locations or more gray in exposed sites"
+
+    sometimes_true:
+      # Features that vary with age, season, or conditions
+      - feature_id: "TREE-FORM-05"  # Irregular crown
+        conditions: "Trees growing in windy coastal locations"
+        notes: "Often develops dramatically windswept, asymmetrical form in exposed coastal settings"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Mature trees"
+        notes: "Bark becomes more deeply furrowed with age"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        conditions: "Young trees in protected locations"
+        notes: "Young trees often have a more conical or pyramid shape"
+      
+      - feature_id: "BARK-COLOR-04"  # Brown bark
+        conditions: "Typical bark color"
+        notes: "Bark is usually grayish-brown"
+      
+      - feature_id: "HABITAT-LOC-01"  # Coastal habitat
+        conditions: "Native habitat"
+        notes: "In its native range, grows exclusively along the coast in a very small area"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "Widely planted in urban settings"
+        notes: "Often planted as an ornamental tree in parks and large gardens"
+
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all leaves seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has scale-like leaves, not needles"
+      
+      - feature_id: "TREE-FORM-03"  # Weeping form
+        notes: "Never has a weeping growth habit with drooping branches"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Produces only small, inconspicuous pollen cones, not showy flowers"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A tree with tiny scale-like leaves that looks like it's been blown sideways by the wind"
+    memorable_comparison: "It looks like a tree that's standing in a very windy place with its arms stretched out and its hair blown to one side"
+    touch_tip: "The leaves feel like tiny overlapping fish scales arranged in flat sprays"
+    smell_tip: "Gently rub the leaves to smell a fresh, lemony-cedar scent (don't break or crush them)"
+    fun_fact: "Monterey Cypress trees only grow naturally along a tiny stretch of California's coast, less than 4 miles long! That makes their natural home smaller than most city parks. Outside this tiny area, people have planted them all over the world, from New Zealand to Great Britain, where they grow much bigger than in their windswept home."
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the overall shape. Does the tree have a broad, flat top or look like it's been blown sideways by the wind?"
+        yes_next: 2
+        no_next: "If it's tall and narrow like a column, it might be Italian Cypress; if it has a normal cone shape, check other cypress species"
+      - step: 2
+        instruction: "Look closely at the leaves. Are they tiny scales that overlap like fish scales, making flat sprays rather than needles?"
+        yes_next: 3
+        no_next: "Not a cypress - check if it has needles instead"
+      - step: 3
+        instruction: "Check the cones. Are they round, about the size of a ping-pong ball, with bumpy scales?"
+        yes_next: "You found a Monterey Cypress!"
+        no_next: "It could be another cypress species - check the overall color and shape"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New growth appears as slightly brighter green at branch tips"
+      reproductive_activity: "Male cones release yellow pollen; female cones begin development"
+      identification_tips: "Watch for yellowish pollen cones and bright green new growth"
+      kid_friendly_tip: "In spring, tiny yellow pollen cones might cover the tree and make yellow dust when you shake a branch"
+    
+    - season: "Summer" 
+      visual_changes: "Foliage matures to consistent blue-green color; young cones grow larger"
+      reproductive_activity: "Female cones continue developing, turning from green to brown"
+      identification_tips: "Young green cones become visible as they develop"
+      kid_friendly_tip: "Look for baby cones that start green and slowly turn woody and brown like tiny round pinecones"
+    
+    - season: "Fall"
+      visual_changes: "No color change as it remains evergreen; mature cones become woody"
+      reproductive_activity: "Cones mature but typically remain closed"
+      identification_tips: "Mature cones turn brown and woody, with raised scales"
+      kid_friendly_tip: "Unlike many trees, this one stays the exact same color in fall - no reds or yellows, just the same gray-green all year long"
+    
+    - season: "Winter"
+      visual_changes: "No significant changes; remains evergreen"
+      reproductive_activity: "New pollen cones form for next spring"
+      identification_tips: "Distinctive silhouette stands out when deciduous trees are bare"
+      kid_friendly_tip: "In winter, small yellowish pollen cones start to form, getting ready to release pollen in early spring"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Scale-like leaves in dense sprays"
+      reliability: "Very high"
+      visibility: "Medium - need to look closely"
+    - feature: "Round, woody cones about 1-2 inches across"
+      reliability: "High"
+      visibility: "Easy to spot if present"
+    - feature: "Flat-topped or wind-sculpted crown form"
+      reliability: "Medium"
+      visibility: "Easy - visible from a distance"
+    - feature: "Aromatic foliage when crushed"
+      reliability: "High"
+      visibility: "Requires interaction"
+    
+  look_alike_species:
+    - species: "Italian Cypress (Cupressus sempervirens)"
+      differences: "Italian Cypress grows in a tall, narrow column, while Monterey Cypress spreads wide with a flat or irregular top"
+      identification_tip: "If it looks like a tall green column reaching straight up, it's Italian Cypress, not Monterey Cypress"
+    - species: "Arizona Cypress (Cupressus arizonica)"
+      differences: "Arizona Cypress has more blue-gray or silvery foliage and often a more conical shape"
+      identification_tip: "Monterey Cypress is darker green, while Arizona Cypress looks more silvery-blue"
+    - species: "Incense-cedar (Calocedrus decurrens)"
+      differences: "Incense-cedar has flatter sprays with leaves in distinct pairs and a more columnar growth habit"
+      identification_tip: "Monterey Cypress has rounded sprays rather than the flat, fern-like sprays of Incense-cedar"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Ohlone (Rumsen and Costanoan)"
+      physical_uses:
+        - "Used wood for building small watercraft and tools"
+        - "Burned branches and wood for ceremonial smudging and purification"
+        - "Made tea from small amounts of foliage to treat colds"
+      symbolic_meaning:
+        - "Trees represented strength against adversity, as they survive harsh coastal winds"
+        - "Regarded as spiritual guardians of the coastline"
+    
+    - culture: "Early California Settlers"
+      physical_uses:
+        - "Used the rot-resistant wood for fence posts and boat building"
+        - "Planted as windbreaks to protect homes and crops from strong coastal winds"
+        - "Made furniture from larger specimens"
+      symbolic_meaning:
+        - "Became a symbol of the rugged California coast in art and literature"
+        - "The wind-twisted forms represented California's unique character and beauty"
+    
+    - culture: "Modern California"
+      physical_uses:
+        - "Planted extensively as ornamental trees in parks and large gardens"
+        - "Used as a windbreak tree for coastal properties"
+        - "Wood used for decorative carvings and some furniture"
+      symbolic_meaning:
+        - "Become iconic symbols of the Monterey Peninsula and central California coast"
+        - "Featured in many paintings and photographs, representing California's natural beauty"
+        - "Their rare natural status has made them symbols of California's unique ecosystems"
+    
+  cultural_ecological_notes:
+    - "One of the rarest trees in the wild, with only two native stands covering less than 10 acres"
+    - "Despite its rarity in nature, it's grown successfully worldwide in coastal regions with similar climates"
+    - "The windswept forms of the native trees are considered among the most picturesque in nature"
+    - "Important habitat for birds and wildlife in its native coastal ecosystem"
+    - "Can live for hundreds of years, with some specimens over 300 years old"
+    
+  range_within_california:
+    - "Native population restricted to two small areas on the Monterey Peninsula: Cypress Point and Point Lobos"
+    - "Total native range spans less than 4 miles of coastline"
+    - "Widely planted throughout coastal California as an ornamental tree"
+    - "Grows particularly well in foggy coastal areas from Northern to Southern California"
+    - "Thrives in locations with summer fog and mild winters"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "40-70 feet in cultivation; 20-40 feet in native habitat"
+    growth_rate: "Moderate to fast"
+    crown_spread: "30-60 feet at maturity"
+    lifespan: "200-300 years"
+    trunk_diameter: "2-3 feet at maturity"
+    root_system: "Wide-spreading, somewhat shallow in coastal conditions"
+    toxicity: "Not toxic, though pollen may cause allergic reactions in sensitive individuals"
+  
+  conservation_status:
+    status: "Endangered in its natural habitat"
+    threats: 
+      - "Extremely limited natural range"
+      - "Cypress canker fungal disease"
+      - "Wildfire risk in increasingly dry climate"
+      - "Sea level rise threatening coastal habitat"
+      - "Development pressure on remaining natural stands"
+    protection_efforts:
+      - "Native stands protected in Point Lobos State Natural Reserve"
+      - "Seed collection and cultivation programs for genetic conservation"
+      - "Disease-resistant strains being developed to combat cypress canker"
+      - "Strict protection of remaining natural trees"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: LEAF-FORM-05"  # Scale-like leaves
+    confirmation_features:
+      - "feature_id: CONE-SHAPE-01"  # Round cones
+      - "feature_id: TREE-FORM-07"  # Flat topped
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-07", "TREE-FORM-05"]  # Flat topped, irregular crown
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-FORM-05", "LEAF-COLOR-03"]  # Scale-like leaves, blue-green
+      - distance: "close_inspection"
+        features_to_check: ["SENSORY-SMELL-01", "CONE-SHAPE-01"]  # Aromatic leaves, round cones
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-FORM-05", "TREE-FORM-07"]
+        notes: "Yellow pollen cones may be visible"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-FORM-05", "CONE-SHAPE-01"]
+        notes: "Developing green cones may be visible"
+      
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-FORM-05", "TREE-FORM-07"]
+        notes: "Stands out as evergreen when deciduous trees change color"
+      
+      winter:
+        reliability: "High"
+        key_features: ["LEAF-FORM-05", "TREE-FORM-07"]
+        notes: "Remains green through winter; distinctive form visible"
+    misidentification_risks: 
+      - "Could be confused with other cypress species, particularly Arizona Cypress"
+      - "Young specimens before developing characteristic form might resemble other members of Cupressaceae family"
+      - "In landscape settings, could be confused with other cypress cultivars"
+  
+  wildlife_value:
+    - "Provides nesting sites for birds, particularly raptors"
+    - "Seeds eaten by various birds and small mammals"
+    - "Dense foliage offers shelter for many bird species"
+    - "In native habitat, supports unique coastal ecosystem"
+    - "Old trees often develop cavities that provide homes for wildlife"

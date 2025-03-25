@@ -1,0 +1,268 @@
+tree:
+  common_name: "Vine Maple"
+  scientific_name: "Acer circinatum"
+  family: "Sapindaceae"
+  
+  # Basic summary information
+  summary: "A small deciduous tree or large shrub native to the Pacific Northwest, characterized by its vine-like growth pattern in shady conditions and multiple trunks. Distinguished by its rounded leaves with 7-9 pointed lobes arranged in a circular pattern and spectacular fall colors ranging from yellow to deep crimson. While native to northwestern California, it's considered non-native to most of the state where it may be found as an ornamental planting valued for shade tolerance, attractive form, and brilliant autumn display."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Rounded leaves with 7-9 pointed lobes in a circular pattern; opposite leaf arrangement"
+    secondary_markers: "Multiple slender trunks; smooth greenish to reddish bark on young stems"
+    seasonal_markers: "Brilliant yellow to red fall color; reddish-purple flowers in spring"
+    similar_species_differentiation: "Unlike Japanese Maple, has less deeply divided leaves; unlike Bigleaf Maple, much smaller size; unlike Douglas and Rocky Mountain Maple, has 7-9 lobes rather than 3-5"
+  
+  # Core features section
+  features:
+    always_true:
+      # Reference features.yml IDs with tree-specific notes
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves in fall"
+        
+      - feature_id: "LEAF-ARRANGEMENT-01"  # Opposite
+        notes: "Leaves grow in pairs directly across from each other on branches"
+      
+      - feature_id: "LEAF-SHAPE-05"  # Lobed
+        notes: "Leaves have 7-9 pointed lobes arranged in a circular pattern"
+      
+      - feature_id: "LEAF-MARGIN-02"  # Serrated
+        notes: "Leaf edges have fine teeth"
+      
+      - feature_id: "FRUIT-TYPE-08"  # Paired samaras
+        notes: "Produces double-winged seeds that spread at nearly 180-degree angles"
+      
+    usually_true:
+      # Features that are primarily true, but have notable exceptions
+      - feature_id: "TREE-SIZE-01"  # Small (under 30 feet)
+        notes: "Typically grows 10-25 feet tall"
+        exceptions: "Can occasionally reach 35 feet in ideal conditions"
+      
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        notes: "Usually grows with multiple stems"
+        exceptions: "May occasionally grow with a more defined central trunk in open areas"
+      
+      - feature_id: "TREE-FORM-05"  # Irregular crown
+        notes: "Typically has an irregular, spreading crown"
+        exceptions: "Form can be more uniform when grown in open areas with even light"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Bark is typically smooth, especially on younger stems"
+        exceptions: "Older trunks may develop some subtle texture"
+      
+      - feature_id: "LEAF-FALL-02"  # Red fall color
+        notes: "Leaves often turn vibrant red in autumn"
+        exceptions: "Fall color can vary based on growing conditions and genetics"
+
+    sometimes_true:
+      # Features that vary with age, season, or conditions
+      - feature_id: "TREE-FORM-03"  # Weeping form
+        conditions: "When growing in deep shade"
+        notes: "Can develop a graceful, arching form with branches that droop toward the ground"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Depending on growing conditions and genetics"
+        notes: "Leaves may turn bright yellow instead of or in addition to red"
+      
+      - feature_id: "LEAF-FALL-03"  # Orange fall color
+        conditions: "Depending on growing conditions and genetics"
+        notes: "Leaves may develop orange tones in fall"
+      
+      - feature_id: "HABITAT-04"  # Riparian areas
+        conditions: "In native range"
+        notes: "Often found along streams and in moist areas"
+      
+      - feature_id: "ECO-ADAPT-02"  # Shade tolerant
+        conditions: "Especially as understory in coniferous forests"
+        notes: "Can grow well in deep shade when adequate moisture is available"
+    
+    never_true:
+      # Features explicitly absent that help differentiation
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops leaves in fall, never retains year-round"
+      
+      - feature_id: "TREE-SIZE-03"  # Large (50-100 feet)
+        notes: "Never grows to the height of large trees"
+      
+      - feature_id: "LEAF-EDGE-05"  # Spiny
+        notes: "Leaf edges have small teeth but never spines"
+      
+      - feature_id: "CONE-SIZE-01"  # Small cones
+        notes: "Produces winged seeds, not cones"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Round leaves with 7-9 pointed fingers arranged in a circle"
+    memorable_comparison: "Leaves look like small green hands with skinny fingers spread out in a circle"
+    touch_tip: "The bark feels smooth, and younger branches may be green or reddish"
+    smell_tip: "The leaves don't have a strong smell"
+    fun_fact: "In shady forests, its branches can grow so long and flexible that they sometimes touch the ground and grow new roots - that's how it got its name!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "Look at how the leaves grow on the branches. Do they grow in pairs, directly across from each other?"
+        yes_next: 2
+        no_next: "Not a Vine Maple - check trees with alternating leaves"
+      - step: 2
+        instruction: "Look at the leaf shape. Are they round overall with 7-9 pointed lobes like a star or a hand with skinny fingers?"
+        yes_next: 3
+        no_next: "Not a Vine Maple - check other maple trees with different leaf shapes"
+      - step: 3
+        instruction: "Is it a small tree or large shrub with multiple trunks?"
+        yes_next: "You found a Vine Maple!"
+        no_next: "Might be another maple species - check if it's a larger tree"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaves emerge bright green to reddish; small reddish-purple flowers appear in hanging clusters"
+      reproductive_activity: "Flowers bloom and are pollinated by insects"
+      identification_tips: "Look for the delicate new leaves and small, hanging flower clusters"
+      kid_friendly_tip: "In spring, look for the new baby leaves that might be reddish at first, and tiny purple-red flowers hanging down"
+    
+    - season: "Summer" 
+      visual_changes: "Leaves reach full dark green color with circular shape and 7-9 pointed lobes"
+      reproductive_activity: "Paired winged seeds develop, spreading at nearly 180-degree angles"
+      identification_tips: "Fully developed leaves with their characteristic circular shape; developing paired samaras"
+      kid_friendly_tip: "By summer, the leaves are fully grown and deep green, and you'll start to see the helicopter seeds forming"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow, orange, or bright red, often varying on the same tree"
+      reproductive_activity: "Seeds mature and disperse, spinning as they descend"
+      identification_tips: "Spectacular fall color stands out; mature seeds spinning down like helicopters"
+      kid_friendly_tip: "Fall is when Vine Maple puts on its best show with amazing colors - yellows, oranges, and fiery reds!"
+    
+    - season: "Winter"
+      visual_changes: "Tree loses all leaves, revealing graceful branching structure; young stems often bright green or reddish"
+      reproductive_activity: "Dormant; new buds prepare for spring"
+      identification_tips: "Multiple slender trunks and thin, often colorful branches; opposite branching pattern"
+      kid_friendly_tip: "In winter, look for the smooth green or red branches - they sometimes look like they're reaching out like arms"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Circular leaves with 7-9 pointed lobes arranged like fingers on a hand"
+      reliability: "Very high"
+      visibility: "Easy - visible from nearby"
+    - feature: "Opposite leaf arrangement (leaves growing in pairs)"
+      reliability: "High"
+      visibility: "Medium - need to be near the tree"
+    - feature: "Small tree or shrub form, typically with multiple trunks"
+      reliability: "High"
+      visibility: "Easy - visible from a distance"
+    - feature: "Paired winged seeds that spread at wide angles (nearly 180 degrees)"
+      reliability: "High (when present)"
+      visibility: "Medium - need to look carefully in summer/fall"
+    - feature: "Brilliant fall color ranging from yellow to orange to red"
+      reliability: "High (in fall)"
+      visibility: "Easy - visible from a distance in fall"
+    
+  look_alike_species:
+    - species: "Japanese Maple (Acer palmatum)"
+      differences: "Japanese maple has more deeply divided leaf lobes with a more refined growth habit; typically more intensely cultivated with many ornamental varieties"
+      identification_tip: "Vine maple leaves tend to be more circular in overall shape with sharper teeth on the edges"
+    - species: "Bigleaf Maple (Acer macrophyllum)"
+      differences: "Bigleaf maple grows much larger (60-100 feet tall), with leaves that can be 6-12 inches across; usually has a single trunk"
+      identification_tip: "Vine maple is much smaller in overall size and leaf size than bigleaf maple"
+    - species: "Douglas Maple (Acer glabrum)"
+      differences: "Douglas maple leaves usually have only 3-5 lobes (not 7-9) and often appears more tree-like than shrub-like"
+      identification_tip: "Count the leaf lobes - vine maple typically has 7-9 lobes, while Douglas maple has fewer"
+    
+  cultural_ecological_notes:
+    - "Branches can root where they touch the ground in shade, creating thickets"
+    - "Thrives as an understory tree beneath conifers"
+    - "Provides excellent erosion control along streams"
+    - "Adaptable to different light conditions when given adequate moisture"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Indigenous Peoples of the Pacific Northwest"
+      physical_uses:
+        - "Used the flexible wood for making bows, snowshoe frames, and fishing nets"
+        - "Branches and stems used for basket rims and handles for tools"
+        - "Made medicinal teas from bark for treating colds and digestive issues"
+      symbolic_meaning:
+        - "Represented adaptability due to its ability to grow in different forms"
+        - "The arching, rooting branches symbolized connection to both sky and earth"
+    
+    - culture: "Modern Horticulture"
+      physical_uses:
+        - "Valued landscaping plant for native gardens and shade plantings"
+        - "Used in erosion control on stream banks"
+        - "Planted for fall color displays in parks and gardens"
+      symbolic_meaning:
+        - "Celebrated as a symbol of Northwest forests"
+        - "Represents the connection between forest understory and canopy layers"
+    
+  range_within_california:
+    - "Found natively only in the northwestern corner of California in Del Norte, Siskiyou, and Humboldt counties"
+    - "Occurs primarily in moist forests, often along streams or on north-facing slopes"
+    - "Typically found below 5,000 feet elevation in its native range"
+    - "May be planted as an ornamental elsewhere in California, primarily in northern and coastal regions"
+    - "Requires more moisture than many California habitats naturally provide"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "10-25 feet, occasionally to 35 feet"
+    growth_rate: "Moderate"
+    crown_spread: "15-20 feet wide at maturity"
+    lifespan: "Up to 100 years"
+    trunk_diameter: "Usually multiple slender trunks, 3-6 inches in diameter"
+    root_system: "Moderately shallow, can develop adventitious roots where branches touch ground"
+    toxicity: "Not toxic to humans or animals"
+  
+  conservation_status:
+    status: "Not threatened (Least Concern)"
+    threats: 
+      - "Habitat loss from development in parts of range"
+      - "Climate change with longer dry periods may impact southern populations"
+    protection_efforts:
+      - "Protected in many national forests and parks"
+      - "Increasingly used in native plant restoration projects"
+      
+  decision_tree_path:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-ARRANGEMENT-01"  # Opposite
+      - "feature_id: LEAF-SHAPE-05"  # Lobed
+    confirmation_features:
+      - "feature_id: TREE-SIZE-01"  # Small tree
+      - "feature_id: FRUIT-TYPE-08"  # Paired samaras
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-TYPE-01", "TREE-SIZE-01", "TREE-FORM-05"]  # Deciduous, small tree, irregular crown
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SHAPE-05", "LEAF-ARRANGEMENT-01"]  # Lobed leaves, opposite arrangement
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-08", "LEAF-MARGIN-02"]  # Paired samaras, serrated edge
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["FLOWER-TIME-01", "LEAF-ARRANGEMENT-01"]
+        notes: "Look for small reddish-purple flowers and emerging leaves"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-ARRANGEMENT-01", "LEAF-SHAPE-05", "FRUIT-TYPE-08"]
+        notes: "Full-sized leaves with 7-9 lobes and developing winged seeds are distinctive"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["LEAF-FALL-01", "LEAF-FALL-02", "LEAF-FALL-03", "FRUIT-TYPE-08"]
+        notes: "Vibrant fall colors make identification easier; mature helicopter seeds"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["TREE-FORM-05", "BARK-TEXT-01", "TREE-TRUNK-02"]
+        notes: "Multiple slender trunks and smooth greenish to reddish young branches"
+    misidentification_risks: 
+      - "Can be confused with Japanese maple, but vine maple has more pointed leaf lobes"
+      - "Sometimes mistaken for small bigleaf maple specimens, but leaf size is much smaller"
+      - "Douglas maple has similar growth habit but fewer leaf lobes"
+  
+  wildlife_value:
+    - "Seeds eaten by small mammals and birds including finches, grosbeaks, and quail"
+    - "Flowers provide nectar for native bees and other pollinators"
+    - "Dense growth provides cover for small birds and mammals"
+    - "Leaves feed various caterpillars and insects, which in turn support insectivorous birds"
+    - "Host plant for several butterfly species including the western tiger swallowtail"
+    - "Dense thickets provide protection and bedding areas for deer"

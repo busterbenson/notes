@@ -1,0 +1,287 @@
+tree:
+  common_name: "Western Hemlock"
+  scientific_name: "Tsuga heterophylla"
+  family: "Pinaceae"
+  
+  # Basic summary information
+  summary: "A graceful evergreen tree with a drooping leader (top), short, flat needles arranged in feathery sprays, and small oval cones. Distinguished by its lacy appearance and preference for cool, moist forests."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Drooping, flexible top (leader); short, flat needles of varying lengths arranged in feather-like sprays; delicate, graceful appearance"
+    secondary_markers: "Thin bark with reddish-brown furrows; small oval cones about 3/4 inch long; grows in moist, shady forests"
+    seasonal_markers: "Minimal seasonal change as an evergreen; new growth in spring appears as bright green at branch tips"
+    similar_species_differentiation: "Unlike Mountain Hemlock, has needles arranged in flat sprays rather than all around the twig; unlike Douglas-fir, has shorter needles and drooping leader; unlike Grand Fir, has needles of varying lengths and a drooping top"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles year-round"
+        
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has individual needles attached singly to the twig, not in bundles"
+      
+      - feature_id: "NEEDLE-ARRANGE-08"  # Flattened spray needles
+        notes: "Needles arranged in flat, feathery sprays"
+      
+      - feature_id: "TREE-FORM-03"  # Weeping form
+        notes: "Top of tree (leader) and branch tips droop downward"
+      
+      - feature_id: "CONE-POS-02"  # Hanging cones
+        notes: "Cones hang down from branches"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Native to northern California forests"
+      
+      - feature_id: "NEEDLE-SHAPE-01"  # Flat needles
+        notes: "Needles are flat rather than square in cross-section"
+      
+      - feature_id: "NEEDLE-SIZE-01"  # Short needles
+        notes: "Needles typically short, about 1/4 to 3/4 inch long"
+
+    usually_true:
+      # Features that are primarily true, but have notable exceptions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with a single main trunk"
+        exceptions: "May develop multiple trunks after damage"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Usually grows to 100-180 feet tall at maturity"
+        exceptions: "May be shorter in suboptimal conditions or young forests"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Forms a narrow, pyramidal crown with a drooping top"
+        exceptions: "Old trees may become more irregular in dense forests"
+      
+      - feature_id: "ECO-ADAPT-02"  # Shade tolerant
+        notes: "Highly shade-tolerant, often growing in the understory"
+        exceptions: "Can grow in full sun in very moist conditions"
+
+    sometimes_true:
+      # Features that vary with age, season, or conditions
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees"
+        notes: "Bark is relatively smooth when young"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Older trees"
+        notes: "Bark develops reddish-brown furrows with age"
+      
+      - feature_id: "BARK-COLOR-03"  # Red bark
+        conditions: "Mature trees"
+        notes: "Inner bark often has a reddish-brown color"
+      
+      - feature_id: "CONE-SIZE-01"  # Small cones
+        conditions: "Mature cones"
+        notes: "Cones typically small, about 3/4 to 1 inch long"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "Natural range"
+        notes: "In California, found primarily in northern regions"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        conditions: "Common growing location"
+        notes: "Often found near streams or in moist forest settings"
+
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all needles seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Needles attach singly, never in bundles"
+      
+      - feature_id: "CONE-POS-01"  # Upright cones
+        notes: "Cones always hang down, never stand upright"
+      
+      - feature_id: "NEEDLE-SHAPE-02"  # Square needles
+        notes: "Needles are flat, never square in cross-section"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A graceful tree with a droopy top, short flat needles arranged like fern fronds, and tiny pinecones"
+    memorable_comparison: "It looks like a Christmas tree that's taking a little bow, with branches like soft, flat, green feathers"
+    touch_tip: "The needles are soft and flat, arranged in sprays like tiny ferns - run your fingers along them gently"
+    smell_tip: "Crush a few needles very gently to smell a fresh, slightly sweet forest scent"
+    fun_fact: "Western Hemlock can be a forest superhero because it grows in the shade of other trees! Unlike many trees that need lots of sunlight, Western Hemlock can grow up in the dark shadows of the forest under bigger trees. And it has a funny habit - it often grows on top of fallen logs or stumps, so you might see one with roots that look like stilts or legs reaching down to the ground!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the top of the tree. Does it droop downward like it's taking a bow instead of pointing straight up?"
+        yes_next: 2
+        no_next: "Not a Western Hemlock - if the top points straight up, check if it might be a fir or spruce"
+      - step: 2
+        instruction: "Look closely at the needles. Do they form flat, feathery sprays like fern fronds with needles of different lengths along each twig?"
+        yes_next: 3
+        no_next: "If the needles stick out all around the twig like bottle brushes, check Mountain Hemlock; if they're all the same length, it might be another conifer"
+      - step: 3
+        instruction: "Check the cones if you can see them. Are they very small (about the size of a grape) and hanging down?"
+        yes_next: "You found a Western Hemlock!"
+        no_next: "If the cones are larger or point upward, it's probably another conifer species"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New needle growth appears bright green at branch tips; small pollen cones may be visible"
+      reproductive_activity: "Pollen cones release yellow pollen; female cones begin development"
+      identification_tips: "Bright green new growth contrasts with older darker green needles"
+      kid_friendly_tip: "In spring, look for bright green new tips at the ends of branches, like tiny green paintbrushes"
+    
+    - season: "Summer" 
+      visual_changes: "New needles mature to match older foliage; small developing cones become visible"
+      reproductive_activity: "Young seed cones grow and begin to mature"
+      identification_tips: "Small green to purple-brown developing cones may be visible"
+      kid_friendly_tip: "By summer, tiny cones about the size of grapes start to form and hang down from branches"
+    
+    - season: "Fall"
+      visual_changes: "Little visible change in foliage; mature cones turn brown"
+      reproductive_activity: "Cones mature and release seeds with winged attachments"
+      identification_tips: "Brown mature cones open to release seeds before winter"
+      kid_friendly_tip: "In fall, the small brown cones open up to let their seeds fly away with tiny wings"
+    
+    - season: "Winter"
+      visual_changes: "No significant changes; remains evergreen"
+      reproductive_activity: "Dormant; some open cones may persist on branches"
+      identification_tips: "Graceful drooping form and lacy appearance distinctive year-round"
+      kid_friendly_tip: "In winter, it stays green and keeps its droopy top when other trees lose their leaves"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Drooping leader (top of tree)"
+      reliability: "Very high"
+      visibility: "Easy - visible from a distance"
+    - feature: "Needles arranged in flat sprays along branches"
+      reliability: "Very high"
+      visibility: "Easy to observe"
+    - feature: "Needles of varying lengths along twigs"
+      reliability: "High"
+      visibility: "Medium - need to look closely"
+    - feature: "Small, hanging cones"
+      reliability: "High"
+      visibility: "Medium - need to look for them"
+    
+  look_alike_species:
+    - species: "Mountain Hemlock (Tsuga mertensiana)"
+      differences: "Mountain Hemlock has needles growing all around the twig (not in flat sprays), more bluish foliage, and grows at higher elevations"
+      identification_tip: "Western Hemlock needles form flat, feathery sprays, while Mountain Hemlock needles stick out all around the twig like bottle brushes"
+    - species: "Douglas-fir (Pseudotsuga menziesii)"
+      differences: "Douglas-fir has longer needles, distinctive cones with three-pronged bracts, and a straighter top"
+      identification_tip: "Western Hemlock has a droopy top and shorter needles arranged in flatter sprays than Douglas-fir"
+    - species: "Grand Fir (Abies grandis)"
+      differences: "Grand Fir has needles of uniform length arranged in flat sprays, upright cones, and a non-drooping leader"
+      identification_tip: "Western Hemlock has needles of varied lengths, a droopy top, and small hanging cones (not upright)"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Yurok"
+      physical_uses:
+        - "Used the bark for tanning hides and making a reddish-brown dye"
+        - "Made a medicinal tea from the needles rich in vitamin C"
+        - "Used branches for bedding material in temporary shelters"
+        - "Harvested the cambium (inner bark layer) as an emergency food source"
+      symbolic_meaning:
+        - "Associated with adaptability due to its ability to grow in the shadow of other trees"
+        - "Featured in stories about forest relationships and interdependence"
+    
+    - culture: "Tolowa"
+      physical_uses:
+        - "Collected and ground the inner bark in times of food scarcity"
+        - "Used the boughs for ceremonial sweeping and cleansing"
+        - "Made a medicine for colds and sore throats from the needles"
+        - "Used the wood for making tools and implements"
+      symbolic_meaning:
+        - "Represented patience and resilience in traditional stories"
+        - "The tree's ability to grow in shade symbolized finding strength in difficult circumstances"
+    
+    - culture: "Early California Loggers and Settlers"
+      physical_uses:
+        - "Harvested for lumber, though it was considered less valuable than other conifers"
+        - "Used the bark as a source of tannin for leather making"
+        - "Made boxes, crates, and indoor construction material from the wood"
+      symbolic_meaning:
+        - "Often seen as a marker of rich, productive forest land"
+        - "Represented the abundant timber resources of the Pacific Northwest"
+    
+  cultural_ecological_notes:
+    - "Often grows on 'nurse logs' (fallen trees), creating distinctive stilted root systems"
+    - "Highly shade tolerant, able to grow in the understory and eventually replace other tree species"
+    - "Important component of old-growth forest ecosystems in northern California"
+    - "Bark and needles are acidic, influencing soil chemistry beneath the tree"
+    - "Provides food and habitat for numerous forest birds, mammals, and insects"
+    
+  range_within_california:
+    - "Found primarily in the northwestern corner of California"
+    - "Common in the Klamath Mountains and northern Coast Ranges"
+    - "Grows in the coastal fog belt from Del Norte to Sonoma counties"
+    - "Prefers cool, moist environments with significant rainfall or fog"
+    - "Typically found below 3,500 feet elevation in California"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "100-180 feet at maturity; occasionally to 250 feet"
+    growth_rate: "Moderate to fast in favorable conditions"
+    crown_spread: "25-35 feet at maturity"
+    lifespan: "400-500+ years"
+    trunk_diameter: "2-4 feet at maturity; occasionally larger"
+    root_system: "Shallow and spreading, often establishing on decomposing logs"
+    toxicity: "Not toxic, though some people may be allergic to the pollen"
+  
+  conservation_status:
+    status: "Secure in most of its range"
+    threats: 
+      - "Logging of old-growth forests"
+      - "Climate change causing drier conditions outside its moisture tolerance"
+      - "Potential for disease or insect outbreaks with warming temperatures"
+      - "Fire suppression altering natural forest succession patterns"
+    protection_efforts:
+      - "Protected in numerous national and state forests and parks"
+      - "Old-growth forest conservation efforts benefit this species"
+      - "Sustainable forestry practices in managed stands"
+      - "Research into climate change adaptation strategies"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: TREE-FORM-03"  # Weeping form
+    confirmation_features:
+      - "feature_id: NEEDLE-ARRANGE-08"  # Flattened spray needles
+      - "feature_id: CONE-SIZE-01"  # Small cones
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-03", "LEAF-TYPE-02"]  # Weeping form, evergreen
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-ARRANGE-08", "NEEDLE-SIZE-01"]  # Flattened spray needles, short needles
+      - distance: "close_inspection"
+        features_to_check: ["CONE-SIZE-01", "CONE-POS-02"]  # Small cones, hanging cones
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["TREE-FORM-03", "NEEDLE-ARRANGE-08"]
+        notes: "New growth visible at branch tips"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["NEEDLE-ARRANGE-08", "CONE-SIZE-01"]
+        notes: "Developing cones may be visible"
+      
+      fall:
+        reliability: "High"
+        key_features: ["TREE-FORM-03", "NEEDLE-ARRANGE-08"]
+        notes: "Mature cones may be present before winter"
+      
+      winter:
+        reliability: "High"
+        key_features: ["TREE-FORM-03", "NEEDLE-ARRANGE-08"]
+        notes: "Distinctive form and needle arrangement visible year-round"
+    misidentification_risks: 
+      - "Could be confused with Mountain Hemlock in areas where ranges overlap"
+      - "Young trees may resemble young Grand Fir before developing distinctive drooping leader"
+      - "From a distance, might be mistaken for Douglas-fir without close inspection of needles and cones"
+  
+  wildlife_value:
+    - "Seeds eaten by chickadees, nuthatches, crossbills, and other birds"
+    - "Foliage provides food for grouse and deer"
+    - "Provides nesting habitat for numerous birds, including marbled murrelets"
+    - "Bark used by nesting birds for building material"
+    - "Dense shade creates cool microhabitats for amphibians and other forest creatures"

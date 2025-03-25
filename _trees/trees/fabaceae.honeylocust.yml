@@ -1,0 +1,304 @@
+tree:
+  common_name: "Honeylocust"
+  scientific_name: "Gleditsia triacanthos"
+  family: "Fabaceae"
+  
+  # Basic summary information
+  summary: "A medium to large deciduous tree with delicate, fern-like compound leaves, branched thorns on the trunk and branches, and long twisted seed pods. Features a broad, open canopy with dappled shade and attractive yellow fall color."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Bipinnately compound leaves with small leaflets; large branched thorns on trunk and branches; long, twisted, flat seed pods"
+    secondary_markers: "Rough, flaky bark; broad, open canopy with zigzag branches; yellow fall color"
+    seasonal_markers: "Small, greenish-yellow flowers in spring; long seed pods turning brown and often persisting through winter"
+    similar_species_differentiation: "Unlike Black Locust, has branched thorns on trunk and smaller leaflets; unlike Kentucky Coffeetree, has thorns and twisted pods (not thick woody pods)"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves in fall"
+        
+      - feature_id: "LEAF-COMPLEX-03"  # Compound bipinnate
+        notes: "Leaves are typically bipinnately compound with small leaflets 0.5-1.5 inches long"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves alternate along branches"
+      
+      - feature_id: "BARK-TEXT-03"  # Flaky/scaly bark
+        notes: "Bark is grayish-brown and breaks into long, narrow, flaky plates"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Large, branched thorns on trunk and branches, often 3-6 inches long"
+      
+      - feature_id: "FRUIT-TYPE-05"  # Pods present
+        notes: "Produces distinctive flattened, twisted, reddish-brown seed pods 12-18 inches long"
+      
+      - feature_id: "ECO-WILD-01"  # Important for wildlife
+        notes: "Flowers attract pollinators; seeds and pods eaten by wildlife; provides habitat"
+        
+      - feature_id: "TREE-FORM-02"  # Open crown
+        notes: "Broad, open, somewhat irregular crown with dappled shade"
+
+    usually_true:
+      # Features that are primarily true, but have notable exceptions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with a single main trunk"
+        exceptions: "May develop multiple trunks, especially after damage"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Typically reaches 60-80 feet in height at maturity"
+        exceptions: "May be shorter in poor conditions or when regularly pruned"
+      
+      - feature_id: "TREE-FORM-04"  # Rounded crown
+        notes: "Typically has a rounded to vase-shaped crown"
+        exceptions: "More irregular in dense stands or adverse conditions"
+
+    sometimes_true:
+      # Features that vary with age, season, or conditions
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        conditions: "After damage or when grown in certain landscape settings"
+        notes: "Can form multiple trunks under some conditions"
+      
+      - feature_id: "FLOWER-TIME-01"  # Spring flowering
+        conditions: "Late spring"
+        notes: "Produces small, inconspicuous greenish-yellow flowers in racemes"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Autumn"
+        notes: "Leaves typically turn bright yellow before dropping"
+      
+      - feature_id: "WINTER-FEAT-02"  # Persistent fruits
+        conditions: "Pods often remain through winter"
+        notes: "Twisted seed pods sometimes stay on tree after leaves drop"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        conditions: "Established trees"
+        notes: "Becomes quite drought-tolerant once established"
+      
+      - feature_id: "BARK-TEXT-04"  # Ridged bark
+        conditions: "Older trees"
+        notes: "Bark becomes more deeply ridged with age"
+      
+      - feature_id: "HABITAT-LOC-03"  # Valley habitat
+        conditions: "Often found in river valleys and bottomlands"
+        notes: "Naturally grows in rich, moist bottomlands but adaptable to many sites"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        conditions: "Some leaves on the same tree"
+        notes: "Some leaves may be once-compound (pinnate) while others are twice-compound (bipinnate)"
+
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Never keeps its leaves through winter"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has compound broadleaves, not needles"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Produces seed pods, not cones"
+      
+      - feature_id: "LEAF-SHAPE-05"  # Lobed
+        notes: "Has small, oval to oblong leaflets without lobes"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A tree with feathery leaves made of tiny leaflets, big branched thorns on the trunk, and long twisted seed pods that look like leather strips"
+    memorable_comparison: "The thorns are like medieval weapons growing right out of the trunk, and the seed pods look like long, twisted leather belts hanging from the branches"
+    touch_tip: "Feel the flaky, rough bark, but be VERY careful to avoid the large, sharp thorns!"
+    smell_tip: "In spring, you might smell a faint sweet fragrance from the tiny flower clusters"
+    fun_fact: "The Honeylocust's thorns can grow up to 6 inches long and often branch into multiple points like a tiny tree of spikes! These evolved to protect the tree from extinct giant ground sloths and mammoths that used to eat its leaves and pods millions of years ago."
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look for feathery leaves made of many tiny leaflets arranged along stems (like a fern frond)"
+        yes_next: 2
+        no_next: "Not a Honeylocust - look for trees with different leaf arrangements"
+      - step: 2
+        instruction: "Check the trunk and branches for large thorns (sometimes 3-6 inches long) that often branch into multiple points"
+        yes_next: 3
+        no_next: "Might be a thornless Honeylocust variety or another tree with compound leaves"
+      - step: 3
+        instruction: "In summer or fall, look for long (10-18 inches), flat, twisted seed pods that look like leather straps"
+        yes_next: "You found a Honeylocust! The combination of feathery leaves, large thorns, and twisted pods is unique."
+        no_next: "If no pods are visible, check again in late summer or fall when they develop"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Delicate light green leaves emerge late in spring; small, inconspicuous greenish-yellow flower clusters appear"
+      reproductive_activity: "Flowers bloom and attract many pollinators including bees"
+      identification_tips: "Late leafing out; delicate, feathery foliage; small flower clusters"
+      kid_friendly_tip: "In spring, the leaves unfold like tiny green feathers all over the tree, and you might spot small clusters of yellowish-green flowers"
+    
+    - season: "Summer" 
+      visual_changes: "Full foliage of fern-like compound leaves creating dappled shade; long green seed pods begin to develop"
+      reproductive_activity: "Seed pods grow throughout summer, gradually turning from green to reddish-brown"
+      identification_tips: "Fully developed compound leaves; green pods becoming visible; thorns prominent on trunk and branches"
+      kid_friendly_tip: "By summer, the tree is full of feathery green leaves that make spotted shadows on the ground, and long flat pods start growing"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn bright golden yellow; seed pods fully brown and mature, often with a twist"
+      reproductive_activity: "Seeds mature inside pods; pods begin to dry out"
+      identification_tips: "Yellow fall color and brown twisted seed pods are distinctive"
+      kid_friendly_tip: "In fall, the leaves turn bright yellow like gold coins, and the seed pods look like twisted, flat, leather belts"
+    
+    - season: "Winter"
+      visual_changes: "Tree loses all leaves; many seed pods remain hanging; thorns and zigzag branch pattern clearly visible"
+      reproductive_activity: "Dormant; pods gradually release seeds or drop"
+      identification_tips: "Distinctive branching pattern; large thorns on trunk and branches; persistent twisted seed pods"
+      kid_friendly_tip: "In winter with no leaves, you can easily see the big thorns sticking out of the trunk and branches, and many twisted pods still hanging from the branches"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Bipinnately compound leaves with small leaflets"
+      reliability: "Very high"
+      visibility: "Easy - visible during growing season"
+    - feature: "Large branched thorns on trunk and branches"
+      reliability: "High (except in thornless varieties)"
+      visibility: "Easy - visible year-round"
+    - feature: "Long, twisted, flat seed pods"
+      reliability: "Very high (when present)"
+      visibility: "Easy - visible summer through winter"
+    - feature: "Flaky, grayish-brown bark"
+      reliability: "High"
+      visibility: "Easy - visible year-round"
+    - feature: "Open, spreading crown with zigzag branches"
+      reliability: "Medium"
+      visibility: "Medium - need to observe overall form"
+    
+  look_alike_species:
+    - species: "Black Locust (Robinia pseudoacacia)"
+      differences: "Black Locust has once-compound leaves with larger leaflets, smaller thorns only at leaf bases, and shorter pods"
+      identification_tip: "Honeylocust thorns are larger, often branched, and grow directly from trunk and branches; leaflets are smaller"
+    - species: "Kentucky Coffeetree (Gymnocladus dioicus)"
+      differences: "Kentucky Coffeetree has similar compound leaves but lacks thorns and has thick woody pods, not twisted flat ones"
+      identification_tip: "If no thorns are present and pods are thick and woody rather than flat and twisted, it's likely a Kentucky Coffeetree"
+    - species: "Yellowwood (Cladrastis kentukea)"
+      differences: "Yellowwood has similar compound leaves but no thorns, smooth bark, and hanging clusters of white flowers"
+      identification_tip: "Lack of thorns and different bark texture distinguish Yellowwood from Honeylocust"
+    
+  cultural_ecological_notes:
+    - "Adaptable to urban conditions including pollution, salt, and compacted soils"
+    - "Casts light, dappled shade that allows grass to grow beneath"
+    - "Can become naturalized in some areas but generally less aggressive than Black Locust"
+    - "Thornless and fruitless cultivars are commonly planted for landscape use"
+    - "Historically, the sweet pulp in pods was used as food and for brewing beer by Native Americans"
+    
+  range_within_california:
+    - "Not native to California but widely introduced as a landscape and street tree"
+    - "Found in urban areas throughout the state as an ornamental"
+    - "Particularly common in Central Valley cities and suburban areas"
+    - "Adaptable to both inland valleys and coastal areas with adequate water"
+    - "Generally does not naturalize extensively in California wildlands"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "60-80 feet at maturity"
+    growth_rate: "Moderate to fast (1-2 feet per year in good conditions)"
+    crown_spread: "30-70 feet wide at maturity"
+    lifespan: "120-150 years"
+    trunk_diameter: "Up to 2-3 feet at maturity"
+    root_system: "Moderately deep, widely spreading, somewhat aggressive"
+    toxicity: "No significant toxicity to humans; pods can cause digestive upset if consumed in quantity"
+  
+  # Cultural significance section
+  cultural_significance:
+    # Organized by culture
+    - culture: "Native American"
+      physical_uses:
+        - "Used the sweet pulp from pods for food and to brew a beer-like beverage"
+        - "Made bows and tools from the hard, durable wood"
+        - "Used thorns as pins, awls, and small tools"
+      symbolic_meaning:
+        - "Represented protection and defense with its formidable thorns"
+        - "Associated with strength and resilience due to its adaptability"
+    
+    - culture: "Early American Settlers"
+      physical_uses:
+        - "Prized the wood for fence posts, farm implements, and furniture"
+        - "Used as natural fencing with thorns serving as barriers for livestock"
+        - "Utilized pods as supplemental livestock feed"
+      symbolic_meaning:
+        - "Represented frontier resourcefulness"
+        - "Its thorny nature symbolized the hardships of pioneer life"
+    
+    - culture: "Modern Urban Forestry"
+      physical_uses:
+        - "Widely planted as street trees for shade, especially thornless cultivars"
+        - "Used in parking lots and plazas for its tolerance of harsh conditions"
+        - "Utilized in restoration of disturbed sites due to adaptability"
+      symbolic_meaning:
+        - "Represents urban resilience and adaptability to tough conditions"
+        - "Symbolizes the balance between nature and human development"
+  
+  # Conservation status section
+  conservation_status:
+    status: "Least Concern globally; some concern for wild populations in parts of native range"
+    threats: "Loss of bottomland habitat in native range; mimosa webworm can damage ornamental plantings; cankers and leaf spot diseases in some regions"
+    protection_efforts: "No special protection needed for the species as a whole; some habitat conservation in bottomland forests of eastern United States"
+  
+  # Kid-friendly cultural significance
+  kid_friendly_cultural_significance:
+    - "Native Americans used the sweet pulp inside the pods to make a sweet drink and food"
+    - "The incredibly hard thorns were sometimes used as pins or small tools by early settlers"
+    - "The tree's name comes from the sweet pulp inside the pods - it's not made of honey, but the pulp tastes sweet!"
+    - "The thorns evolved to protect the tree from giant extinct animals like mammoths and giant ground sloths that used to eat its leaves"
+    - "Landscape designers love to plant thornless varieties of this tree because its light, feathery leaves create dappled shade that's perfect for picnics - grass can still grow underneath!"
+  
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-COMPLEX-03"  # Compound bipinnate
+      - "feature_id: TWIG-FEAT-01"  # Thorns present
+    
+    confirmation_features:
+      - "feature_id: FRUIT-TYPE-05"  # Pods present
+      - "feature_id: TREE-FORM-02"  # Open crown
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-TYPE-01", "TREE-FORM-02"]  # Deciduous, open crown
+      
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-COMPLEX-03", "TWIG-FEAT-01"]  # Bipinnate leaves, thorns
+      
+      - distance: "close_inspection"
+        features_to_check: ["BARK-TEXT-03", "FRUIT-TYPE-05"]  # Flaky/scaly bark, pods
+    
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["LEAF-COMPLEX-03", "TWIG-FEAT-01"]  # Bipinnate leaves, thorns
+        notes: "Delicate, fern-like foliage; thorns on trunk are distinctive"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-COMPLEX-03", "TWIG-FEAT-01", "FRUIT-TYPE-05"]  # Bipinnate leaves, thorns, pods
+        notes: "Fully developed compound leaves with dappled shade; thorns; developing pods"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["LEAF-FALL-01", "FRUIT-TYPE-05", "TWIG-FEAT-01"]  # Yellow fall color, pods, thorns
+        notes: "Golden yellow fall color; twisted brown seed pods; thorns"
+      
+      winter:
+        reliability: "High"
+        key_features: ["BARK-TEXT-03", "TWIG-FEAT-01", "WINTER-FEAT-02"]  # Flaky bark, thorns, persistent fruits
+        notes: "Flaky bark; large thorns on trunk and branches; persistent twisted pods"
+    
+    misidentification_risks: 
+      - "Thornless cultivars might be confused with Kentucky Coffeetree or Yellowwood"
+      - "Young trees with less developed thorns might be confused with other legume family trees"
+      - "Can be confused with Black Locust, though Honeylocust has more delicate leaves and different thorn pattern"
+  
+  # Wildlife value section
+  wildlife_value:
+    - "Flowers provide nectar and pollen for bees and other insects"
+    - "Pods contain sweet pulp eaten by many mammals including deer, squirrels, rabbits, and opossums"
+    - "Seeds eaten by various birds and small mammals"
+    - "Provides nesting sites for birds, especially in mature trees"
+    - "Dappled shade creates diverse understory habitat"
+    - "Thorns may provide protection for some nesting birds"

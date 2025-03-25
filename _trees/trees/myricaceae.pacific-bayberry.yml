@@ -1,0 +1,277 @@
+tree:
+  common_name: "Pacific Bayberry"
+  scientific_name: "Morella californica"
+  family: "Myricaceae"
+  
+  # Basic summary information
+  summary: "An evergreen shrub or small tree with glossy aromatic leaves, waxy berries, and a rounded growth form. It grows along the coast and has leathery, toothed leaves that release a pleasant scent when crushed."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Evergreen, leathery leaves with small teeth toward the tip; strong aromatic scent when leaves are crushed; small waxy berries"
+    secondary_markers: "Grows as a shrub or small tree; leaves clustered at branch tips; grows primarily in coastal areas"
+    seasonal_markers: "Waxy purple-black berries present in late summer and fall; inconspicuous flowers in spring"
+    similar_species_differentiation: "Unlike California Bay Laurel, has smaller leaves with teeth only on upper half; unlike wax myrtle, has broader leaves and grows exclusively along the Pacific coast"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its leaves year-round"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple
+        notes: "Leaves are simple, not divided into leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves alternate along branches"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        notes: "Leaves release a pleasant, resinous fragrance when crushed"
+      
+      - feature_id: "FRUIT-TYPE-03"  # Berries present
+        notes: "Produces small, waxy, purple-black berries"
+      
+      - feature_id: "HABITAT-LOC-01"  # Coastal habitat
+        notes: "Grows primarily in coastal areas, often within sight of the ocean"
+
+    usually_true:
+      # Features that are primarily true, but have notable exceptions
+      - feature_id: "TREE-SIZE-01"  # Short tree
+        notes: "Usually grows as a large shrub or small tree 6-30 feet tall"
+        exceptions: "May be shorter in exposed coastal sites or taller in protected areas"
+      
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        notes: "Typically grows with multiple stems from the base"
+        exceptions: "May occasionally develop a more dominant central trunk in some conditions"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Usually has a rounded to spreading growth form"
+        exceptions: "Shape can be influenced by coastal winds or surrounding vegetation"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated
+        notes: "Leaves have small teeth on upper half toward the tip"
+        exceptions: "Some leaves may have fewer or less noticeable teeth"
+
+    sometimes_true:
+      # Features that vary with age, season, or conditions
+      - feature_id: "FLOWER-TIME-01"  # Spring flowering
+        conditions: "Spring"
+        notes: "Small, inconspicuous flowers appear in spring"
+      
+      - feature_id: "FRUIT-FEAT-01"  # Persistent fruit
+        conditions: "Winter"
+        notes: "Berries sometimes persist into winter"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young stems"
+        notes: "Young branches have smooth, gray-brown bark"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Older stems and trunks"
+        notes: "Older stems develop shallow vertical furrows"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        conditions: "Established plants"
+        notes: "Becomes drought-tolerant once established"
+
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all leaves seasonally"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has compound leaves, always simple"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Produces berries, not cones"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Never produces large, showy flowers"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A bushy evergreen shrub with shiny leaves that smell amazing when you crush them, and small waxy purple-black berries"
+    memorable_comparison: "The leaves look like small, shiny green spoons with tiny teeth around the edges, and they smell like a mix of bayberry candles and Christmas trees"
+    touch_tip: "Feel the thick, leathery leaves - they're stiff and smooth with a waxy feel"
+    smell_tip: "Gently crush a leaf and smell the wonderful aromatic scent - it's used in candles and soaps!"
+    fun_fact: "The waxy coating on the berries was once collected to make bayberry candles that smell amazing when burned! These special candles were treasured because they didn't produce black smoke like regular candles made from animal fat."
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, check where it's growing. Is it near the coast, often within sight of the ocean or in coastal forests?"
+        yes_next: 2
+        no_next: "Probably not Pacific Bayberry - it's almost always found near the coast"
+      - step: 2
+        instruction: "Look at the leaves. Are they evergreen, leathery, and spoon-shaped with small teeth only near the tips?"
+        yes_next: 3
+        no_next: "Not Pacific Bayberry - check other coastal shrubs or trees"
+      - step: 3
+        instruction: "Gently crush a leaf and smell it. Does it have a strong, pleasant aromatic scent?"
+        yes_next: "You found Pacific Bayberry! If it's late summer or fall, look for small waxy purple-black berries on female plants."
+        no_next: "If there's little to no scent, it might be a different coastal shrub - check wax myrtle or other coastal plants"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New growth appears at branch tips; inconspicuous flowers develop"
+      reproductive_activity: "Male plants produce small catkins; female plants produce tiny flowers"
+      identification_tips: "Fresh growth at branch tips; subtle yellow-green flowers on separate male and female plants"
+      kid_friendly_tip: "In spring, look for bright green new leaves at the tips of branches and tiny yellow-green flowers"
+    
+    - season: "Summer" 
+      visual_changes: "Full foliage of glossy green leaves; berries begin to develop on female plants"
+      reproductive_activity: "Berries grow and begin to ripen"
+      identification_tips: "Developing berries on female plants; aromatic foliage"
+      kid_friendly_tip: "By summer, the leaves are dark green and shiny, and female plants start growing small green berries"
+    
+    - season: "Fall"
+      visual_changes: "Berries mature to purple-black with waxy coating; foliage remains green"
+      reproductive_activity: "Berries fully mature"
+      identification_tips: "Mature waxy purple-black berries on female plants; evergreen foliage remains unchanged"
+      kid_friendly_tip: "In fall, look for small purple-black berries covered with a waxy coating that looks frosty"
+    
+    - season: "Winter"
+      visual_changes: "Evergreen foliage persists; some berries may remain"
+      reproductive_activity: "Dormant; some berries may persist"
+      identification_tips: "Evergreen nature makes it stand out when deciduous plants are bare"
+      kid_friendly_tip: "In winter, it keeps its green leaves when many other plants lose theirs, and you might still see some berries"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Aromatic leaves when crushed"
+      reliability: "Very high"
+      visibility: "Requires interaction with plant"
+    - feature: "Coastal habitat location"
+      reliability: "Very high"
+      visibility: "Easy - check surrounding environment"
+    - feature: "Leathery, alternate leaves with teeth toward tip"
+      reliability: "High"
+      visibility: "Easy - visible year-round"
+    - feature: "Small waxy berries (on female plants)"
+      reliability: "High (when present)"
+      visibility: "Medium - visible in late summer and fall"
+    - feature: "Multi-stemmed growth habit"
+      reliability: "Medium"
+      visibility: "Easy - visible from distance"
+    
+  look_alike_species:
+    - species: "California Bay Laurel (Umbellularia californica)"
+      differences: "California Bay has larger leaves with no teeth and a much stronger, more pungent aroma; Bay grows much taller"
+      identification_tip: "Pacific Bayberry leaves have teeth toward the tip; Bay Laurel leaves don't have teeth and have a much stronger scent"
+    - species: "Southern Wax Myrtle (Morella cerifera)"
+      differences: "Southern Wax Myrtle is found in southeastern US; very similar but with narrower leaves"
+      identification_tip: "Geographic location is key - Pacific Bayberry is only found along the Pacific coast"
+    - species: "Coffeeberry (Frangula californica)"
+      differences: "Coffeeberry has similar leaf shape but lacks aromatic scent and has different berries"
+      identification_tip: "Crush a leaf - Pacific Bayberry has a distinct pleasant aroma; Coffeeberry lacks this scent"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Native American (Coast Miwok and other coastal tribes)"
+      physical_uses:
+        - "Used waxy berries to make candles and for waterproofing"
+        - "Made medicinal teas from leaves to treat colds and fevers"
+        - "Used aromatic leaves in steam baths and for spiritual cleansing"
+      symbolic_meaning:
+        - "Connection to coastal ecosystems and environments"
+        - "Represented cleansing and purification in some traditions"
+    
+    - culture: "Early American Settlers"
+      physical_uses:
+        - "Harvested waxy berries to make fragrant bayberry candles"
+        - "Used leaves and berries in early folk medicines"
+        - "Added leaves to cooking to flavor meat and fish"
+      symbolic_meaning:
+        - "Bayberry candles became associated with Christmas and good luck"
+        - "Burning bayberry candles on Christmas Eve or New Year's Eve was said to bring prosperity"
+    
+    - culture: "Modern Plant Enthusiasts"
+      physical_uses:
+        - "Grown as a native landscape plant in coastal gardens"
+        - "Used in habitat restoration of coastal areas"
+        - "Harvested for natural wreath-making and holiday decorations"
+      symbolic_meaning:
+        - "Represents sustainable native landscaping and habitat conservation"
+        - "Connection to traditional seasonal celebrations through its scent"
+    
+  cultural_ecological_notes:
+    - "Important component of coastal scrub and forest edge habitats"
+    - "Nitrogen-fixing plant that improves soil fertility"
+    - "Provides food and shelter for coastal wildlife"
+    - "Helps stabilize coastal dunes and prevent erosion"
+    - "Tolerant of salt spray and coastal conditions"
+    
+  range_within_california:
+    - "Found along the coast from Northern to Central California"
+    - "Grows primarily within a few miles of the ocean"
+    - "Common in coastal scrub, dunes, and edges of coastal forests"
+    - "Prefers foggy areas with moderate temperatures"
+    - "Usually found below 500 feet elevation"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "6-30 feet at maturity"
+    growth_rate: "Moderate (1-2 feet per year in good conditions)"
+    crown_spread: "6-15 feet wide at maturity"
+    lifespan: "50-75 years"
+    trunk_diameter: "Multiple stems usually 2-6 inches in diameter"
+    root_system: "Moderately deep with nitrogen-fixing nodules"
+    toxicity: "Not toxic to humans, though berries are not commonly eaten"
+  
+  conservation_status:
+    status: "Secure - common within its coastal range"
+    threats: 
+      - "Coastal development and habitat loss"
+      - "Climate change affecting coastal fog patterns"
+      - "Invasive species in coastal habitats"
+    protection_efforts:
+      - "Inclusion in coastal habitat restoration projects"
+      - "Growing use in native plant landscaping"
+      - "Protection within coastal parks and preserves"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: SENSORY-SMELL-01"  # Aromatic leaves
+      - "feature_id: HABITAT-LOC-01"  # Coastal habitat
+    confirmation_features:
+      - "feature_id: FRUIT-TYPE-03"  # Berries present
+      - "feature_id: TREE-SIZE-01"  # Short tree
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-TYPE-02", "TREE-SIZE-01"]  # Evergreen, short tree/shrub
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-EDGE-02", "LEAF-ARRANGE-01"]  # Serrated leaves, alternate
+      - distance: "close_inspection"
+        features_to_check: ["SENSORY-SMELL-01", "FRUIT-TYPE-03"]  # Aromatic leaves, berries
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["LEAF-TYPE-02", "SENSORY-SMELL-01", "HABITAT-LOC-01"]  # Evergreen, aromatic, coastal
+        notes: "New growth and small flowers; evergreen nature and aromatic leaves are key identifiers"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["SENSORY-SMELL-01", "LEAF-EDGE-02", "FRUIT-TYPE-03"]  # Aromatic, serrated, berries
+        notes: "Developing berries; fragrant leaves with teeth toward tip"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["FRUIT-TYPE-03", "SENSORY-SMELL-01", "HABITAT-LOC-01"]  # Berries, aromatic, coastal
+        notes: "Mature waxy berries are distinctive; evergreen aromatic foliage"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["LEAF-TYPE-02", "TREE-TRUNK-02", "SENSORY-SMELL-01"]  # Evergreen, multi-trunk, aromatic
+        notes: "Evergreen nature stands out in winter; aromatic leaves remain key identifier"
+    misidentification_risks: 
+      - "California Bay Laurel has similar aromatic leaves but no teeth and a stronger aroma"
+      - "Coffeeberry has similar growth form but non-aromatic leaves"
+      - "Wax Myrtles from other regions look very similar but grow in different locations"
+  
+  wildlife_value:
+    - "Berries eaten by many bird species including waxwings and thrushes"
+    - "Dense foliage provides nesting habitat for small birds"
+    - "Nitrogen-fixing roots improve soil for surrounding plants"
+    - "Provides cover and shelter for small mammals and birds in coastal areas"
+    - "Flowers support native pollinators including bees and small insects"

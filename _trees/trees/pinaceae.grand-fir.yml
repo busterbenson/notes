@@ -1,0 +1,288 @@
+tree:
+  common_name: "Grand Fir"
+  scientific_name: "Abies grandis"
+  family: "Pinaceae"
+  
+  # Basic summary information
+  summary: "A tall, fragrant evergreen tree with flattened needles arranged in a distinct horizontal pattern, upright purple-green cones, and smooth bark with resin blisters. It grows in moist forests and is known for its symmetrical form and shiny, dark green needles."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Flat needles arranged in horizontal sprays; needles have two white lines on underside; upright cones; strong citrus-like scent when needles are crushed"
+    secondary_markers: "Smooth gray bark with resin blisters; needles of two distinct lengths; cones grow upright on branches and disintegrate on the tree"
+    seasonal_markers: "Minimal seasonal change as an evergreen; new growth in spring appears lighter green; pollen cones release yellow pollen in spring"
+    similar_species_differentiation: "Unlike White Fir, has a stronger citrus scent and needles noticeably arranged in horizontal planes; unlike Douglas-fir, has upright cones that disintegrate on the tree rather than hanging cones"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles year-round"
+        
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has individual needles attached singly to the twig"
+      
+      - feature_id: "NEEDLE-ARRANGE-08"  # Flattened spray needles
+        notes: "Needles distinctly arranged in horizontal or flattened sprays"
+      
+      - feature_id: "CONE-POS-01"  # Upright cones
+        notes: "Cones grow upright on branches like candles"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Native to northern California and the Pacific Northwest"
+      
+      - feature_id: "NEEDLE-SHAPE-01"  # Flat needles
+        notes: "Needles are flat and flexible, not square or rigid"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        notes: "Needles release a strong citrus-like scent when crushed"
+
+    usually_true:
+      # Features that are primarily true, but have notable exceptions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with a single straight main trunk"
+        exceptions: "May develop multiple trunks after damage"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Usually grows to 100-200 feet tall at maturity"
+        exceptions: "May be shorter in suboptimal conditions"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Forms a symmetrical, conical crown"
+        exceptions: "Old trees or those in dense forests may have a more irregular crown"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Bark remains relatively smooth even on mature trees"
+        exceptions: "Very old trees may develop some furrowing at the base"
+
+    sometimes_true:
+      # Features that vary with age, season, or conditions
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        conditions: "Typical bark color"
+        notes: "Bark is usually gray with resin blisters"
+      
+      - feature_id: "HABITAT-LOC-02"  # Mountain habitat
+        conditions: "In parts of its range"
+        notes: "Sometimes found in lower mountain areas"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        conditions: "Common growing location"
+        notes: "Often found in moist areas near streams"
+      
+      - feature_id: "CONE-SIZE-02"  # Medium cones
+        conditions: "Mature cones"
+        notes: "Cones typically 2-4 inches long"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "Natural range"
+        notes: "In California, found primarily in the northern part of the state"
+      
+      - feature_id: "NEEDLE-FEAT-03"  # White lines below
+        conditions: "Underside of needles"
+        notes: "Needles have two distinct white lines on the underside"
+
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all needles seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Needles attach singly, never in bundles"
+      
+      - feature_id: "CONE-POS-02"  # Hanging cones
+        notes: "Cones always grow upright, never hang down"
+      
+      - feature_id: "NEEDLE-SHAPE-02"  # Square needles
+        notes: "Needles are always flat, never square in cross-section"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A tall evergreen tree with flat needles arranged in neat horizontal rows that make the branches look like flat ferns"
+    memorable_comparison: "The branches look like perfect flat fans or combs, and if you crush a needle, it smells like oranges or lemons"
+    touch_tip: "The needles are soft and flat - they won't poke you like spruce or some other evergreens"
+    smell_tip: "Gently crush a needle and smell a wonderful citrus scent like lemons or oranges"
+    fun_fact: "Grand Fir trees are scent magicians! When you crush their needles, they release a smell like lemons or oranges - completely different from what you'd expect from a pine-looking tree. Grand Firs can also grow incredibly tall - up to 250 feet, which is like stacking 25 school buses on top of each other! Their pinecones are special too - instead of falling to the ground whole like most pinecones, they break apart piece by piece while still on the tree, like a nature puzzle coming undone."
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at how the needles are arranged on the branches. Do they spread out to the sides in flat, horizontal sprays like fern fronds?"
+        yes_next: 2
+        no_next: "Not a Grand Fir - if needles stick out all around the twig, check spruce or another conifer"
+      - step: 2
+        instruction: "Gently crush a needle and smell it. Does it have a strong, pleasant citrus smell like lemons or oranges?"
+        yes_next: 3
+        no_next: "If it smells more like regular pine or has no strong smell, check another fir species"
+      - step: 3
+        instruction: "Look for cones on the tree. Do they stand upright on top of branches (like candles on a cake) rather than hanging down? They might be greenish-purple when young."
+        yes_next: "You found a Grand Fir!"
+        no_next: "If the cones hang down, check Douglas-fir; if there are no cones but the other features match, look for cone scales on the ground (Grand Fir cones fall apart on the tree)"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New needle growth appears as bright light green at branch tips; pollen cones release yellow pollen"
+      reproductive_activity: "Pollen cones release pollen; female cones begin development high in the crown"
+      identification_tips: "Bright green new growth contrasts with older darker green needles"
+      kid_friendly_tip: "In spring, look for bright lime-green new shoots at the tips of branches, and tiny yellow pollen cones that make yellow dust when you touch them"
+    
+    - season: "Summer" 
+      visual_changes: "New needles mature to match older foliage; young seed cones visible growing upright on upper branches"
+      reproductive_activity: "Seed cones grow and develop, typically green to purplish"
+      identification_tips: "Upright green to purple cones becoming visible on upper branches"
+      kid_friendly_tip: "By summer, you can see purple-green pinecones standing up like little soldiers on the upper branches"
+    
+    - season: "Fall"
+      visual_changes: "Little visible change in foliage; cones mature and begin to disintegrate"
+      reproductive_activity: "Mature cones break apart on the tree, releasing seeds with winged attachments"
+      identification_tips: "Look for disintegrating cones and scales scattered beneath tree"
+      kid_friendly_tip: "In fall, something magical happens - instead of falling off whole, the pinecones break apart piece by piece while still on the tree!"
+    
+    - season: "Winter"
+      visual_changes: "No significant changes; remains evergreen"
+      reproductive_activity: "Dormant"
+      identification_tips: "Distinctive flat needle arrangement remains visible year-round"
+      kid_friendly_tip: "In winter, it stays green when other trees lose their leaves, and the flat, fan-like branches might collect snow in pretty patterns"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Needles arranged in horizontal, flattened sprays"
+      reliability: "Very high"
+      visibility: "Easy to observe"
+    - feature: "Strong citrus scent when needles are crushed"
+      reliability: "Very high"
+      visibility: "Requires interaction"
+    - feature: "Two white lines on underside of needles"
+      reliability: "High"
+      visibility: "Need to flip needles to observe"
+    - feature: "Upright cones (when present) that disintegrate on the tree"
+      reliability: "High"
+      visibility: "Seasonal and may be high in the tree"
+    
+  look_alike_species:
+    - species: "White Fir (Abies concolor)"
+      differences: "White Fir has a less distinctive horizontal needle arrangement, less citrusy scent, and needles are more uniform in length and more blue-gray in color"
+      identification_tip: "Grand Fir has a stronger citrus smell and more distinctly flattened needle arrangement compared to White Fir"
+    - species: "Douglas-fir (Pseudotsuga menziesii)"
+      differences: "Douglas-fir has hanging cones with distinctive three-pronged bracts, not upright cones; needles are arranged all around the twig, not in flattened sprays"
+      identification_tip: "Grand Fir has upright cones and flattened needle arrangement; Douglas-fir has hanging cones with three-pronged bracts"
+    - species: "Western Hemlock (Tsuga heterophylla)"
+      differences: "Western Hemlock has much shorter needles of unequal length, a drooping leader (top), and tiny hanging cones"
+      identification_tip: "Grand Fir has an upright leader, larger upright cones, and needles that are longer than Western Hemlock"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Coast Salish"
+      physical_uses:
+        - "Used pitch as a healing salve for cuts, burns, and skin problems"
+        - "Made a tea from young needles rich in vitamin C to prevent colds"
+        - "Used branches for ceremonial cleansing and purification rituals"
+        - "Made bedding material from boughs, utilizing the pleasant scent"
+      symbolic_meaning:
+        - "The strong, pleasant scent was associated with cleansing and healing in spiritual practices"
+        - "Represented strength and longevity in cultural stories"
+        - "Used to symbolize purification and protection in ceremonial contexts"
+    
+    - culture: "Karuk"
+      physical_uses:
+        - "Harvested pitch for waterproofing baskets and canoes"
+        - "Created medicines from the sap to treat respiratory ailments"
+        - "Used the aromatic needles for treating headaches and clearing sinuses"
+        - "Made temporary shelters using the branches for roofing"
+      symbolic_meaning:
+        - "Featured in stories about forest healing and medicine"
+        - "The distinctive scent represented the healing power of the forest"
+        - "Associated with winter ceremonies due to its evergreen nature"
+    
+    - culture: "Early Lumber Industry"
+      physical_uses:
+        - "Harvested for construction lumber, particularly for interior woodwork"
+        - "Used for paper pulp production"
+        - "Wood utilized for making crates, boxes, and general construction"
+        - "Planted as an ornamental tree in parks and large gardens"
+      symbolic_meaning:
+        - "Represented the abundant timber resources of the Pacific Northwest"
+        - "A symbol of the region's economic growth through forestry"
+        - "Featured in early promotional materials for western settlement"
+    
+  cultural_ecological_notes:
+    - "Important component of moist mixed conifer forests in the Pacific Northwest"
+    - "Provides habitat and food for numerous wildlife species"
+    - "More shade-tolerant than many conifers, allowing it to grow in the understory"
+    - "Often grows alongside species like Douglas-fir, Western Hemlock, and Western Redcedar"
+    - "Plays a role in forest succession, often following pioneer species"
+    
+  range_within_california:
+    - "Found in the northwestern corner of California, particularly in Del Norte, Humboldt, and Siskiyou counties"
+    - "Common in the Klamath Mountains and northern Coast Ranges"
+    - "Prefers moist, cool environments with significant rainfall"
+    - "Typically found below 5,000 feet elevation in California"
+    - "Often grows in river valleys and on lower mountain slopes"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "100-200 feet, occasionally to 250 feet"
+    growth_rate: "Moderate to fast"
+    crown_spread: "25-35 feet at maturity"
+    lifespan: "300-400+ years"
+    trunk_diameter: "3-5 feet at maturity"
+    root_system: "Moderately deep with widespread lateral roots"
+    toxicity: "Not toxic, though the sap may cause skin irritation in sensitive individuals"
+  
+  conservation_status:
+    status: "Secure in most of its range"
+    threats: 
+      - "Climate change potentially reducing suitable habitat"
+      - "Increased severity of forest fires"
+      - "Logging of old-growth forests"
+      - "Various pest and disease issues, including spruce budworm"
+    protection_efforts:
+      - "Protected in numerous national and state forests and parks"
+      - "Sustainable forestry practices in managed stands"
+      - "Research into climate adaptation strategies"
+      - "Seed banking for genetic conservation"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: NEEDLE-ARRANGE-08"  # Flattened spray needles
+    confirmation_features:
+      - "feature_id: SENSORY-SMELL-01"  # Aromatic leaves
+      - "feature_id: CONE-POS-01"  # Upright cones
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-01", "LEAF-TYPE-02"]  # Pyramidal shape, evergreen
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-ARRANGE-08", "NEEDLE-FEAT-03"]  # Flattened spray needles, white lines below
+      - distance: "close_inspection"
+        features_to_check: ["SENSORY-SMELL-01", "CONE-POS-01"]  # Aromatic leaves, upright cones
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-08", "SENSORY-SMELL-01"]
+        notes: "New growth visible at branch tips"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["NEEDLE-ARRANGE-08", "CONE-POS-01"]
+        notes: "Developing cones may be visible"
+      
+      fall:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-08", "SENSORY-SMELL-01"]
+        notes: "Disintegrating cones may be visible in tree or cone scales on ground"
+      
+      winter:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-08", "TREE-FORM-01"]
+        notes: "Distinctive form and needle arrangement visible year-round"
+    misidentification_risks: 
+      - "Could be confused with other true firs, particularly White Fir in areas where ranges overlap"
+      - "Young trees before developing distinctive character may be harder to distinguish from other conifers"
+      - "From a distance, might be mistaken for Douglas-fir without close inspection of needles and cones"
+  
+  wildlife_value:
+    - "Seeds eaten by birds, squirrels, and chipmunks"
+    - "Needles browsed by deer and elk during winter"
+    - "Provides nesting habitat for numerous bird species, including eagles and owls"
+    - "Branches and foliage provide shelter for birds and small mammals"
+    - "Fallen trees create important habitat structures in forest ecosystems"

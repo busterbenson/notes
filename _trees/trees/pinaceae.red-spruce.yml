@@ -1,0 +1,245 @@
+tree:
+  common_name: Red Spruce
+  scientific_name: Picea rubens
+  family: Pinaceae
+  native: false
+
+  summary: Red Spruce is a medium to large coniferous evergreen tree native to northeastern North America. It features a pyramidal crown when young, becoming more irregular with age, and derives its name from its reddish-brown bark and distinctive reddish twigs. Characterized by its short, sharp, yellowish-green to dark green needles and small reddish-brown cones, this tree is a key species in the Appalachian and New England forests. It's rarely planted in California due to its preference for cool, humid climates with abundant rainfall.
+
+  identification_path:
+    primary_markers: "Short, square, yellowish-green to dark green needles; distinctive reddish-brown twigs and branches"
+    secondary_markers: "Small hanging cones (1.5-2.5 inches long); reddish-brown thin scaly bark"
+    seasonal_markers: "New light green growth at branch tips in spring; small purplish cones forming in spring, maturing to reddish-brown in fall"
+    similar_species_differentiation: "Unlike Sitka Spruce, lacks bluish-white bloom on needles; unlike Norway Spruce, has much smaller cones and lacks drooping branch tips"
+
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"
+        notes: "Keeps its needles year-round"
+      - feature_id: "LEAF-SHAPE-21"
+        notes: "Has sharp, pointy needles instead of flat leaves"
+      - feature_id: "TREE-SHAPE-01"
+        notes: "Grows in a triangle or Christmas tree shape"
+      - feature_id: "CONE-POSITION-02"
+        notes: "Cones hang down from branches instead of standing up"
+    
+    usually_true:
+      - feature_id: "TREE-SIZE-03"
+        notes: "Grows into a large tree 50-100 feet tall in its native habitat"
+        exceptions: "In California, may remain smaller due to climate stress, or when young"
+      - feature_id: "NEEDLE-ARRANGEMENT-01"
+        notes: "Needles grow all around the twig in a spiral pattern"
+        exceptions: "On flatter, horizontal branches, needles may appear to be arranged in two rows"
+      - feature_id: "NEEDLE-COLOR-01"
+        notes: "Needles are typically dark green"
+        exceptions: "New growth is lighter green, and some trees may have more yellowish-green needles"
+      - feature_id: "HABITAT-05"
+        notes: "In California, found mostly in planned gardens or arboretums"
+        exceptions: "Rarely found outside of specialized collections in California"
+    
+    sometimes_true:
+      - feature_id: "TREE-SIZE-02"
+        conditions: "When young or growing in poor conditions"
+        notes: "May remain medium-sized (30-50 feet) rather than reaching full height"
+      - feature_id: "BARK-TEXTURE-05"
+        conditions: "On older trees, especially near the base"
+        notes: "Bark may develop deeper ridges or furrows with age"
+      - feature_id: "NEEDLE-COLOR-02"
+        conditions: "Depending on growing conditions and individual tree genetics"
+        notes: "Some trees may have more yellowish-green needles rather than dark green"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"
+        notes: "Never drops all its needles at once - keeps them year-round"
+      - feature_id: "NEEDLE-COLOR-05"
+        notes: "Needles are never blue or silver colored like some other spruce species"
+      - feature_id: "CONE-POSITION-01"
+        notes: "Cones never stand upright on branches - they always hang down"
+      - feature_id: "HABITAT-02"
+        notes: "Does not grow naturally in California forests"
+
+  kid_friendly_identification:
+    primary_identifier: "Reddish-brown twigs and branches with short, sharp green needles"
+    memorable_comparison: "The branches look like they've been dipped in rust-colored paint!"
+    touch_tip: "Gently roll a needle between your fingers - it feels square, not flat, like a tiny 4-sided pencil"
+    smell_tip: "If you gently crush a needle, it has a fresh, piney smell without being too strong"
+    fun_fact: "This tree's wood is used to make musical instruments like violins and guitars because it helps create beautiful sounds when it vibrates!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, check if it's an evergreen tree with a Christmas tree shape. Does it have needles instead of broad leaves?"
+        yes_next: 2
+        no_next: "Not a Red Spruce. Look for a conifer (evergreen) tree instead."
+      - step: 2
+        instruction: "Look at how the needles attach to the branch. Do they grow directly from the branch (not in bundles or clusters)?"
+        yes_next: 3
+        no_next: "Not a Red Spruce. If needles grow in bundles, it might be a pine tree."
+      - step: 3
+        instruction: "Pick a twig and look at its color. Is it a reddish-brown color?"
+        yes_next: 4
+        no_next: "Probably not a Red Spruce. Check other spruce species."
+      - step: 4
+        instruction: "Gently roll a needle between your fingers. Does it feel square (with 4 sides) rather than flat?"
+        yes_next: "You found a Red Spruce! In California, these are rare, so you're lucky to see one!"
+        no_next: "If the needle feels flat, it's probably a different kind of evergreen tree."
+
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New, light green growth appears at the tips of branches"
+      reproductive_activity: "Small yellow-brown male pollen cones release pollen; female cones begin forming as small, purplish structures"
+      identification_tips: "The contrast between new light green growth and older darker needles is distinctive"
+      kid_friendly_tip: "Look for the bright green new growth at the tips of branches - it looks like the tree is getting a spring haircut!"
+    
+    - season: "Summer"
+      visual_changes: "New growth darkens to match the yellowish-green to dark green of older needles"
+      reproductive_activity: "Young cones grow larger and begin developing their reddish-brown color"
+      identification_tips: "The reddish twigs contrast nicely with the dark green needles"
+      kid_friendly_tip: "In summer, the baby cones start growing bigger and turning from purple to brown"
+    
+    - season: "Fall"
+      visual_changes: "The tree maintains its evergreen appearance while other trees lose their leaves"
+      reproductive_activity: "Cones mature to reddish-brown and begin to open, releasing seeds"
+      identification_tips: "Mature cones and the consistent green color make identification easier when deciduous trees are bare"
+      kid_friendly_tip: "In fall, look for small brown cones hanging from branches like tiny Christmas ornaments"
+    
+    - season: "Winter"
+      visual_changes: "Evergreen foliage provides year-round color; may collect snow on branches"
+      reproductive_activity: "Dormant until spring; some cones may remain on the tree"
+      identification_tips: "The reddish-brown twigs become more noticeable against the snow and dark needles"
+      kid_friendly_tip: "In winter, this tree stays green when many others are bare, and the reddish branches look extra red against the snow"
+
+  confirmation_checklist:
+    - feature: "Short to medium length yellowish-green to dark green needles (0.5-0.75 inches)"
+      reliability: "High"
+      visibility: "Medium - need to look closely at needle characteristics"
+    - feature: "Square needles in cross-section that can be rolled between fingers"
+      reliability: "Very high"
+      visibility: "Low - requires close examination and touch"
+    - feature: "Reddish-brown twigs and smaller branches"
+      reliability: "Very high"
+      visibility: "Medium - visible upon closer inspection"
+    - feature: "Small cones (1.5-2.5 inches) hanging from branches"
+      reliability: "High"
+      visibility: "Medium - seasonal and may require looking up into the tree"
+    - feature: "Reddish-brown to gray-brown thin, scaly bark"
+      reliability: "Medium"
+      visibility: "Medium - more distinctive on mature trees"
+    - feature: "Needles tend to point forward along the twig"
+      reliability: "Medium"
+      visibility: "Low - requires close observation"
+
+  look_alike_species:
+    - species: "Sitka Spruce (Picea sitchensis)"
+      differences: "Has flatter, sharper needles with a distinctive bluish-white bloom; grows naturally in coastal California with larger cones"
+      identification_tip: "If the needles have a bluish-white color and the tree is growing near the coast, it's likely Sitka Spruce"
+    
+    - species: "Engelmann Spruce (Picea engelmannii)"
+      differences: "Found in high mountains of California with bluish-green needles and more pendulous branchlets"
+      identification_tip: "If growing at high elevation in California and has bluish-green needles, it's probably Engelmann Spruce"
+    
+    - species: "Norway Spruce (Picea abies)"
+      differences: "Common ornamental with longer needles, much larger cones (4-7 inches), and distinctively drooping branch tips"
+      identification_tip: "If the branch tips droop down like they're tired and the cones are large, it's likely Norway Spruce"
+    
+    - species: "White Spruce (Picea glauca)"
+      differences: "Has whitish or bluish-green needles with a strong, unpleasant smell when crushed"
+      identification_tip: "If crushing a needle gives a strong 'cat pee' smell, it's probably White Spruce, not Red Spruce"
+    
+    - species: "Black Spruce (Picea mariana)"
+      differences: "Similar size cones but they persist on branches for many years; grows in boggy areas and is rarely planted in California"
+      identification_tip: "If the tree has many years' worth of small cones still attached to branches, it might be Black Spruce"
+
+  cultural_significance:
+    - culture: "Musical Instrument Makers"
+      physical_uses:
+        - "Use the wood to make soundboards for violins, guitars, and pianos because it vibrates in a special way"
+        - "Choose this wood for its straight grain and light weight, making it perfect for instruments"
+        - "Value the acoustic properties that help create beautiful tones in stringed instruments"
+      symbolic_meaning:
+        - "Consider this tree a symbol of musical tradition and craftsmanship"
+        - "Value its connection to creating beautiful music that brings joy to people"
+    
+    - culture: "Native American Peoples of the Northeast"
+      physical_uses:
+        - "Used the sticky sap to waterproof canoes and other items"
+        - "Made medicine from the bark and needles for colds and sore muscles"
+        - "Used the roots to sew and tie together birch bark for canoes and containers"
+      symbolic_meaning:
+        - "Viewed the evergreen nature as a symbol of endurance through harsh winters"
+        - "Recognized the tree as an important provider of shelter and materials in winter"
+    
+    - culture: "Early American Settlers"
+      physical_uses:
+        - "Used the strong, straight-grained wood for building houses and ships"
+        - "Made paper from the wood pulp"
+        - "Used the sap for wound healing and treating colds"
+      symbolic_meaning:
+        - "Saw the tree as representing the rugged, resilient spirit of northeastern forests"
+        - "Associated the tree with survival through harsh New England winters"
+
+  physical_characteristics:
+    height: "60-80 feet (occasionally to 100+ feet) in native range"
+    width: "20-30 feet"
+    growth_rate: "Slow to moderate, especially when young"
+    lifespan: "300-400 years in ideal conditions"
+    bark: "Thin and scaly, reddish-brown to gray-brown color"
+    leaves: "Short, four-sided needles, 0.5-0.75 inches long, yellowish-green to dark green"
+    flowers: "Small, inconspicuous male and female cones"
+    fruit: "Ovoid to cylindrical cones, 1.5-2.5 inches long, initially purplish-green, maturing to reddish-brown"
+    seeds: "Small, winged seeds released from mature cones"
+    root_system: "Shallow and widespread, with larger roots extending outward rather than downward"
+    suitable_for_public_spaces: false
+
+  conservation_status:
+    status: "Least Concern globally, though declining in parts of its range"
+    threats: "Climate change, acid rain, and spruce budworm outbreaks are impacting some populations"
+    protection_efforts: "Some forests with Red Spruce are protected in national forests and parks in the eastern United States"
+
+  decision_tree_placement:
+    primary_split_features:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+      - feature_id: "LEAF-SHAPE-21"  # Needle-like
+      - feature_id: "CONE-POSITION-02"  # Hanging cones
+    
+    confirmation_features:
+      - feature_id: "NEEDLE-ATTRIBUTE-05"  # Square needles
+      - feature_id: "TWIG-COLOR-02"  # Reddish-brown twigs
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SHAPE-01", "LEAF-TYPE-02"]  # Pyramidal, Evergreen
+      - distance: "from_nearby"
+        features_to_check: ["TWIG-COLOR-02", "CONE-SIZE-02"]  # Reddish twigs, Medium cones
+      - distance: "close_inspection"
+        features_to_check: ["NEEDLE-ATTRIBUTE-05", "NEEDLE-SIZE-01"]  # Square needles, Short needles
+    
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["LEAF-TYPE-02", "TWIG-COLOR-02", "NEW-GROWTH-01"]
+        notes: "New growth and developing cones provide additional identification features"
+      summer:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "TWIG-COLOR-02", "CONE-POSITION-02"]
+        notes: "Fully developed needles and growing cones make summer identification reliable"
+      fall:
+        reliability: "Very high"
+        key_features: ["LEAF-TYPE-02", "CONE-MATURE-01", "TWIG-COLOR-02"]
+        notes: "Mature cones and consistent evergreen foliage make fall identification ideal"
+      winter:
+        reliability: "Medium"
+        key_features: ["LEAF-TYPE-02", "TWIG-COLOR-02", "TREE-SHAPE-01"]
+        notes: "Evergreen nature and reddish twigs help with winter identification"
+    
+    misidentification_risks:
+      - "Commonly confused with other spruce species, especially when immature"
+      - "Twig color can vary with age and growing conditions"
+      - "Rarely encountered in California, so unfamiliarity may lead to misidentification"
+
+  wildlife_value: 
+    - "In its native forests, provides nesting sites for many birds including warblers and thrushes"
+    - "Seeds are an important food source for red squirrels, crossbills, and other seed-eating birds"
+    - "Dense evergreen branches offer shelter for birds and small animals during winter"
+    - "Serves as a host plant for various moth species in its native range"
+    - "In California, where it's rarely planted, offers some habitat for local birds that use it for perching and shelter"
+    - "Less valuable to California wildlife than native conifers since local animals didn't evolve with this tree"

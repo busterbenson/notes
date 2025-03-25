@@ -1,0 +1,312 @@
+tree:
+  common_name: "Tanoak"
+  scientific_name: "Notholithocarpus densiflorus"
+  family: "Fagaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "An evergreen tree with shiny, leathery leaves that have toothed edges and tiny hairs underneath. The bark is gray-brown with deep furrows, and it produces acorns with fuzzy caps. Native to coastal forests and mountains of California."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Leathery oval leaves with pointed teeth along the edges; leaves stay on year-round; acorns with fuzzy caps"
+    secondary_markers: "Gray-brown bark with deep grooves; leaves with fuzzy undersides; straight veins on leaves that end in the teeth"
+    seasonal_markers: "Long dangling yellow flower clusters in spring; acorns develop in summer and fall; stays green all year"
+    similar_species_differentiation: "Unlike most oaks, keeps its leaves year-round; unlike madrone, has toothed leaves not smooth-edged; acorn caps are fuzzier than true oak acorns"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its leaves all year round without dropping them in fall"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Each leaf is a single piece, not divided into leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow in a zigzag pattern along the twigs, not directly across from each other"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated
+        notes: "Leaf edges have small, sharp teeth pointing outward"
+      
+      - feature_id: "LEAF-SHAPE-03"  # Lanceolate
+        notes: "Leaves are oval-shaped and pointed at the tip like a lance"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        notes: "Bark has deep grooves and rough ridges"
+      
+      - feature_id: "FRUIT-TYPE-01"  # Acorns present
+        notes: "Produces acorns with fuzzy cups that look like tiny burs"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Naturally grows wild in California forests"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Grows up to 100 feet tall (about as tall as a 10-story building)"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk"
+        exceptions: "Can develop multiple trunks if the main trunk is damaged or if it grows as a shrub in some conditions"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Top of the tree usually forms a round, full shape"
+        exceptions: "May be more irregular in shape when growing in dense forests or windy locations"
+    
+    sometimes_true:
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        conditions: "Young trees"
+        notes: "Younger trees often have a more triangular or pyramid shape"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        conditions: "When growing as a large shrub in tough conditions"
+        notes: "In some places, especially after fire or in poor soil, may grow as a shrub or smaller tree"
+      
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        conditions: "Younger trees"
+        notes: "Bark is more gray when the tree is young"
+      
+      - feature_id: "BARK-COLOR-04"  # Brown bark
+        conditions: "Older trees"
+        notes: "Bark becomes more reddish-brown as the tree ages"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "Within its natural range"
+        notes: "Common in coastal forests of Northern California"
+      
+      - feature_id: "GEO-REGION-02"  # Central California
+        conditions: "Within its natural range"
+        notes: "Found in forests of Central California coast ranges"
+      
+      - feature_id: "HABITAT-LOC-01"  # Coastal habitat
+        conditions: "In its native range"
+        notes: "Often grows in coastal mountains and forests near the ocean"
+      
+      - feature_id: "HABITAT-LOC-02"  # Mountain habitat
+        conditions: "In its native range"
+        notes: "Also grows in mountain forests away from the coast"
+      
+      - feature_id: "ECO-ADAPT-03"  # Fire resistant
+        conditions: "Mature trees with thick bark"
+        notes: "Older trees with thick bark can sometimes survive small fires"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Does not drop all its leaves in fall; keeps them year-round"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has leaves divided into multiple leaflets"
+      
+      - feature_id: "LEAF-EDGE-01"  # Entire
+        notes: "Leaf edges always have teeth, never smooth"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has broad leaves, not needles"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Makes acorns, not cones"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Shiny, leathery leaves with tiny teeth along the edges"
+    memorable_comparison: "The leaves feel like stiff leather with a fuzzy bottom side, and the acorns wear tiny fuzzy hats"
+    touch_tip: "Feel both sides of a leaf - the top is smooth and shiny, but the bottom side feels fuzzy like velvet"
+    smell_tip: "Crush a leaf gently to smell a mild, earthy scent"
+    fun_fact: "Tanoak acorns were one of the most important foods for many California Native American tribes and were made into a special flour for bread and soup!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "Look at the tree's leaves. Are they stiff, shiny on top, and have tiny pointed teeth along the edges?"
+        yes_next: 2
+        no_next: "Not a tanoak - look for another tree"
+      - step: 2
+        instruction: "Turn over a leaf. Is the bottom side covered with tiny fuzzy hairs that make it look whitish or golden?"
+        yes_next: 3
+        no_next: "Not a tanoak - try looking at a madrone or oak tree instead"
+      - step: 3
+        instruction: "Look at the bark. Is it deeply grooved with gray to reddish-brown color?"
+        yes_next: 4
+        no_next: "Might be another type of oak or tree in the oak family"
+      - step: 4
+        instruction: "If it's fall, look for acorns with fuzzy caps that look like tiny hedgehogs. Do you see any?"
+        yes_next: "You found a tanoak!"
+        no_next: "If it's not acorn season, look for old acorn caps on the ground. If you can't find any, check the leaf veins - they should run straight from the middle to each tooth on the edge."
+  
+  # Seasonal timeline
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaves emerge with lighter green color; long, drooping yellow flower clusters appear"
+      reproductive_activity: "Male flowers release yellow pollen; female flowers begin to form"
+      identification_tips: "Yellow hanging flower chains (catkins) make the tree look like it's decorated with fuzzy golden strings"
+      kid_friendly_tip: "Look for long, dangling yellow 'caterpillars' hanging from branches - these are the flowers!"
+    
+    - season: "Summer" 
+      visual_changes: "Leaves darken to deep green; new acorns start developing"
+      reproductive_activity: "Acorns grow bigger; female flowers develop into young acorns"
+      identification_tips: "Look for young developing acorns with their fuzzy caps"
+      kid_friendly_tip: "Spot the baby acorns wearing their fuzzy caps like tiny berets"
+    
+    - season: "Fall"
+      visual_changes: "Stays green while other trees change color; acorns mature and drop"
+      reproductive_activity: "Acorns mature and fall to the ground"
+      identification_tips: "Ripe acorns on the tree and ground; distinctive among trees that are changing color"
+      kid_friendly_tip: "While other trees turn red and gold, tanoak stays green. Look for fallen acorns on the ground too!"
+    
+    - season: "Winter"
+      visual_changes: "Keeps its leaves while many other trees are bare"
+      reproductive_activity: "Dormant, no reproductive activity"
+      identification_tips: "Easier to identify when deciduous trees are bare"
+      kid_friendly_tip: "This tree keeps its green leaves even during winter when most trees have lost theirs"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Leathery leaves with teeth along the edges"
+      reliability: "High"
+      visibility: "Easy to see"
+    - feature: "Fuzzy, whitish or golden undersides of leaves"
+      reliability: "Very high"
+      visibility: "Need to turn leaf over"
+    - feature: "Straight leaf veins that end at each tooth"
+      reliability: "High"
+      visibility: "Need to look closely"
+    - feature: "Acorns with fuzzy, bristly caps (when present)"
+      reliability: "Very high"
+      visibility: "Seasonal - summer through fall"
+    - feature: "Deeply furrowed gray-brown bark"
+      reliability: "Medium"
+      visibility: "Easy to see on mature trees"
+    
+  look_alike_species:
+    - species: "Coast Live Oak (Quercus agrifolia)"
+      differences: "Coast Live Oak has leaves that curl under at the edges and a less hairy underside; acorn caps have flat scales, not fuzzy bristles"
+      identification_tip: "Turn over a leaf - tanoak has much fuzzier underside and straighter leaf edges"
+    
+    - species: "Pacific Madrone (Arbutus menziesii)"
+      differences: "Madrone has smooth-edged leaves (no teeth), reddish peeling bark, and produces red berries, not acorns"
+      identification_tip: "Check the leaf edges - madrone has smooth edges with no teeth, unlike tanoak"
+    
+    - species: "Canyon Live Oak (Quercus chrysolepis)"
+      differences: "Canyon Live Oak can have smooth or toothed leaves, golden fuzzy undersides, but its acorn caps have flat scales, not bristly hairs"
+      identification_tip: "Look at the acorns if present - tanoak caps are bristly; canyon live oak caps have flat scales"
+    
+  cultural_ecological_notes:
+    - "One of the most important food trees for California Native American tribes"
+    - "Provides homes for many birds and mammals"
+    - "Currently threatened by Sudden Oak Death disease"
+    - "Helps build healthy forest soils"
+    - "Regrows quickly after fire, often as a large shrub before returning to tree form"
+    
+  range_within_california:
+    - "Found in coastal mountains from central California up to the Oregon border"
+    - "Grows in mixed evergreen forests with Douglas-fir, madrone, and true oaks"
+    - "Most common in the Coast Ranges and the western side of the Sierra Nevada"
+    - "Grows from near sea level up to about 5,000 feet elevation"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Pomo"
+      physical_uses:
+        - "Collected acorns as their main food staple, leaching out the bitter taste with water before making flour"
+        - "Made special baskets to store tanoak acorns because they were considered the best-tasting acorns"
+        - "Used the bark to make a medicine for stomach problems and sore throats"
+        - "Created special tools just for harvesting and processing tanoak acorns"
+      symbolic_meaning:
+        - "Tanoak was seen as a generous provider that helped communities survive through winter"
+        - "Special songs and stories told about the tree's connection to people and animals"
+        - "Harvest time was marked with ceremonies thanking the tree for providing food"
+        - "Tree represented the idea of community gathering and preparing together"
+    
+    - culture: "Karuk"
+      physical_uses:
+        - "Made a special bread from tanoak acorns that could be stored for long periods"
+        - "Used tanoak leaves to line cooking baskets and food storage areas"
+        - "Created a medicine from the bark for skin problems"
+        - "Used tanoak wood for making specific tools"
+      symbolic_meaning:
+        - "The tanoak was considered a sacred provider of life-sustaining food"
+        - "Included in creation stories as a gift from the Creator to the people"
+        - "Tree represented the connection between generations, as harvesting knowledge was passed down"
+        - "Acorn harvesting brought families together in shared work"
+    
+    - culture: "Yurok"
+      physical_uses:
+        - "Made acorn soup, a daily food that was central to their diet"
+        - "Used tanoak wood to make special stirring paddles for cooking acorn mush"
+        - "Created storage containers from tanoak bark"
+        - "Used parts of the tree for various medicines"
+      symbolic_meaning:
+        - "Tanoak connected people to their ancestors through traditional harvesting practices"
+        - "The yearly acorn harvest was a central event that structured community life"
+        - "Tree symbolized abundance and proper care of the land"
+        - "Stories taught children about the importance of respecting the tanoak trees"
+    
+    - culture: "Miwok"
+      physical_uses:
+        - "Made both flour and oil from tanoak acorns"
+        - "Used special leaching techniques to make acorns taste better than other oak species"
+        - "Created specific cooking tools from tanoak wood"
+        - "Used tanoak to make fires for certain ceremonies"
+      symbolic_meaning:
+        - "Tanoak was central in stories about how humans should live in balance with nature"
+        - "Treated harvest areas with special care, returning to the same family gathering spots for generations"
+        - "Acorn gathering time was a social time for teaching traditional knowledge to children"
+        - "Tree represented the ideal of taking only what was needed and ensuring future harvests"
+  
+  # Additional physical characteristics
+  physical_characteristics:
+    height_range: "40–100 feet (as tall as a 3-10 story building)"
+    growth_rate: "Medium to fast, especially when regrowing after fire"
+    crown_spread: "30-60 feet wide (about as wide as a school bus is long)"
+    lifespan: "Up to 250 years in good conditions"
+    trunk_diameter: "Up to 4 feet across (about as wide as a bathtub)"
+    root_system: "Deep taproot with spreading side roots"
+    toxicity: "Raw acorns contain tannins that taste bitter and can upset your stomach if eaten without proper preparation"
+    
+  conservation_status:
+    status: "Vulnerable (at risk of becoming endangered)"
+    threats: 
+      - "Sudden Oak Death disease is killing millions of tanoak trees"
+      - "Land development disturbing forest habitats"
+      - "Climate change affecting suitable growing areas"
+      - "Severe fires that kill even mature trees"
+    protection_efforts:
+      - "Scientists researching ways to fight Sudden Oak Death"
+      - "Working to protect remaining healthy forests"
+      - "Seed collection to preserve genetic diversity"
+      - "Education about the importance of tanoak in forest ecosystems"
+    
+  # Decision tree mapping
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: LEAF-COMPLEX-01"  # Simple broadleaf
+      - "feature_id: LEAF-EDGE-02"  # Serrated
+      - "feature_id: FRUIT-TYPE-01"  # Acorns present
+    confirmation_features:
+      - "feature_id: BARK-TEXT-02"  # Furrowed bark
+      - "feature_id: LEAF-SHAPE-03"  # Lanceolate
+      - "feature_id: ECO-ORIGIN-01"  # Native to California
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-02", "LEAF-TYPE-02", "TREE-SIZE-03"]  # Rounded crown, evergreen, tall tree
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-EDGE-02", "BARK-TEXT-02", "LEAF-COMPLEX-01"]  # Serrated edge, furrowed bark, simple leaves
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-01", "LEAF-SHAPE-03", "LEAF-ARRANGE-01"]  # Acorns, lanceolate leaves, alternate arrangement
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "LEAF-EDGE-02", "FLOWER-TYPE-01"]
+        notes: "Long yellow catkins (flower clusters) make spring identification easier"
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-TYPE-02", "LEAF-EDGE-02", "LEAF-COMPLEX-01"]
+        notes: "Developing acorns becoming visible"
+      fall:
+        reliability: "Very high"
+        key_features: ["LEAF-TYPE-02", "FRUIT-TYPE-01", "LEAF-EDGE-02"]
+        notes: "Mature acorns with distinctive fuzzy caps are excellent identifiers"
+      winter:
+        reliability: "Medium"
+        key_features: ["LEAF-TYPE-02", "LEAF-EDGE-02", "BARK-TEXT-02"]
+        notes: "Evergreen nature stands out when deciduous trees are bare"
+    misidentification_risks: "Most often confused with coast live oak, canyon live oak, or interior live oak"

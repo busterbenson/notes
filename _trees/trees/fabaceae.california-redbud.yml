@@ -1,0 +1,306 @@
+tree:
+  common_name: "California Redbud"
+  scientific_name: "Cercis occidentalis"
+  family: "Fabaceae"
+  
+  # Basic summary
+  summary: "A small, multi-trunked deciduous tree or large shrub with heart-shaped leaves and stunning magenta flowers that bloom directly on branches before leaves appear in spring. It produces flat, papery seedpods that start green, turn reddish-purple, then brown."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Bright magenta pea-like flowers growing directly on bare branches in early spring; perfect heart-shaped leaves; flat, papery seedpods"
+    secondary_markers: "Multi-trunked growth form; smooth gray bark on young trees; blue-green to green heart-shaped leaves with smooth edges"
+    seasonal_markers: "Spectacular pink-purple flowers in early spring before leaves; green heart-shaped leaves in summer; yellow to orange fall color; seedpods persist into winter"
+    similar_species_differentiation: "Unlike Eastern Redbud (Cercis canadensis), California Redbud has smaller, more blue-green leaves and is more drought-tolerant; unlike other heart-shaped leaf trees, has distinctive pea-like flowers and flat seedpods"
+  
+  # Core features
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Leaves are simple, not divided into leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow alternating along branches, not directly across from each other"
+      
+      - feature_id: "LEAF-SHAPE-04"  # Heart-shaped
+        notes: "Leaves have a distinctive heart shape with a rounded base and pointed tip"
+      
+      - feature_id: "LEAF-EDGE-01"  # Entire/smooth
+        notes: "Leaf edges are smooth without teeth or lobes"
+      
+      - feature_id: "FRUIT-TYPE-05"  # Pods present
+        notes: "Produces flat, papery seed pods (legumes) 2-4 inches long"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Native to California foothills and mountains"
+
+    usually_true:
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        notes: "Typically grows with multiple stems from the base"
+        exceptions: "Can occasionally develop a single main trunk, especially when pruned"
+      
+      - feature_id: "TREE-SIZE-01"  # Small tree
+        notes: "Usually grows 10-20 feet tall"
+        exceptions: "May be smaller in poor conditions or slightly larger in ideal settings"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Smooth gray bark when young"
+        exceptions: "Older trees develop slightly rough or furrowed bark"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Usually develops a rounded or vase-shaped crown"
+        exceptions: "Shape can be more irregular when growing in dense settings"
+
+    sometimes_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        conditions: "When pruned or in open conditions"
+        notes: "Can be trained to grow with a single trunk"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        conditions: "Early spring before leaf emergence"
+        notes: "Bright magenta to pink pea-like flowers bloom directly on branches and trunk"
+      
+      - feature_id: "LEAF-COLOR-03"  # Blue-green
+        conditions: "During growing season, especially in drier conditions"
+        notes: "Leaves often have a blue-green tint in full summer"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Fall season"
+        notes: "Leaves turn yellow to gold before dropping"
+      
+      - feature_id: "LEAF-FALL-03"  # Orange fall color
+        conditions: "Fall season, depending on conditions"
+        notes: "Can sometimes show orange or reddish tints in fall"
+      
+      - feature_id: "WINTER-FEAT-02"  # Persistent fruits
+        conditions: "Winter after fruiting"
+        notes: "Brown seedpods often remain on branches through winter"
+      
+      - feature_id: "HABITAT-LOC-02"  # Mountain habitat
+        conditions: "Lower mountain slopes"
+        notes: "Often found on foothills and lower mountain slopes"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        conditions: "Can be found near seasonal streams"
+        notes: "Sometimes grows along canyon bottoms and seasonal watercourses"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        conditions: "Once established"
+        notes: "Adapted to California's dry summers once roots are established"
+
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops leaves in fall, never evergreen"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated edge
+        notes: "Leaf edges are always smooth, never toothed"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has broad leaves, not needles"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Produces seedpods, not cones"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Branches covered with bright pink-purple flowers in spring before leaves appear, followed by perfect heart-shaped leaves"
+    memorable_comparison: "In spring, it looks like someone hung tiny pink butterflies all over the branches; the leaves are shaped just like Valentine's Day hearts"
+    touch_tip: "Feel the smooth, heart-shaped leaves - they're not fuzzy, just smooth like paper. The flat seedpods feel like thin paper too."
+    smell_tip: "The flowers have a light sweet smell if you gently sniff them, but they're more special to look at than to smell"
+    fun_fact: "The flowers grow right out of the branches and even the trunk, not just at the tips! This special way of flowering is called 'cauliflory' and makes it look like the tree is wearing a coat of pink butterflies in spring."
+    
+    detective_steps:
+      - step: 1
+        instruction: "In spring, do you see a small tree with bright pink-purple flowers growing directly on the bare branches?"
+        yes_next: 2
+        no_next: "If it's not spring, go to step 2. If it is spring and no pink flowers, not a California Redbud."
+      - step: 2
+        instruction: "Look at the leaves. Are they shaped exactly like a Valentine's heart with smooth edges (no teeth)?"
+        yes_next: 3
+        no_next: "Not a California Redbud - check trees with different leaf shapes"
+      - step: 3
+        instruction: "Do you see flat, papery pods that are green, reddish-purple, or brown, about 2-4 inches long?"
+        yes_next: "You found a California Redbud!"
+        no_next: "If it's winter or early spring, check if it has multiple trunks and look for any remaining brown seedpods from last year"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Stunning magenta to pink flowers appear directly on branches before leaves; heart-shaped leaves emerge with a reddish tint after flowering"
+      reproductive_activity: "Flowers bloom from February to April; pollination by bees and other insects"
+      identification_tips: "The bright pink flowers growing directly on bare branches are unmistakable and make this one of the easiest trees to identify in spring"
+      kid_friendly_tip: "In spring, it looks like someone hung tiny pink butterflies all over the bare branches - it's so bright you can see it from far away!"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of blue-green to green heart-shaped leaves; green seedpods develop and gradually turn reddish-purple"
+      reproductive_activity: "Seedpods develop and mature throughout summer"
+      identification_tips: "Heart-shaped leaves with smooth edges; developing flat seedpods"
+      kid_friendly_tip: "In summer, look for perfect heart-shaped leaves and flat green pods that look like paper bookmarks hanging from branches"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow to orange before dropping; seedpods turn brown"
+      reproductive_activity: "Seedpods fully mature and may begin to split open"
+      identification_tips: "Yellow to orange heart-shaped leaves; brown papery seedpods"
+      kid_friendly_tip: "In fall, the heart-shaped leaves turn yellow like gold coins, and the seedpods turn brown like paper lunch bags"
+    
+    - season: "Winter"
+      visual_changes: "Leafless with smooth gray branches; may retain some brown seedpods"
+      reproductive_activity: "Dormant; flower buds form for next spring"
+      identification_tips: "Multiple trunks; zigzag branching pattern; persistent seedpods; heart-shaped leaf buds"
+      kid_friendly_tip: "In winter, look for the zigzag branches and any leftover flat brown pods still hanging on the tree"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Heart-shaped leaves with smooth edges"
+      reliability: "Very high"
+      visibility: "Easy - visible during growing season"
+    - feature: "Magenta flowers growing directly on branches"
+      reliability: "Very high (when present)"
+      visibility: "Easy - highly visible in early spring"
+    - feature: "Flat, papery seedpods"
+      reliability: "High"
+      visibility: "Easy - visible from summer through winter"
+    - feature: "Multi-trunked growth habit"
+      reliability: "Medium"
+      visibility: "Easy - visible year-round"
+    - feature: "Smooth gray bark on younger stems"
+      reliability: "Medium"
+      visibility: "Easy - visible year-round"
+    
+  look_alike_species:
+    - species: "Eastern Redbud (Cercis canadensis)"
+      differences: "Eastern Redbud has larger leaves that are more green than blue-green, grows larger (20-30 feet), and prefers moister conditions"
+      identification_tip: "California Redbud has smaller, more blue-green leaves and is more drought-tolerant"
+    - species: "Western Redbud (Cercis canadensis var. texensis)"
+      differences: "Western Redbud has glossier leaves and is native to Texas and neighboring states"
+      identification_tip: "California Redbud is native to California and has more blue-green, less glossy leaves"
+    - species: "Katsura Tree (Cercidiphyllum japonicum)"
+      differences: "Katsura also has heart-shaped leaves but grows much larger, has opposite leaves, and lacks the pea-like flowers"
+      identification_tip: "California Redbud has alternate leaves (not opposite) and distinctive magenta pea-shaped flowers in spring"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Miwok"
+      physical_uses:
+        - "Harvested young seedpods as a food source in spring"
+        - "Used flexible young branches for basket-making frames and handles"
+        - "Created a reddish-purple dye from the bark for coloring baskets"
+      symbolic_meaning:
+        - "The early blooming flowers signaled the transition from winter to spring and the beginning of gathering season"
+        - "The heart-shaped leaves were associated with well-being and vitality"
+    
+    - culture: "Cahuilla"
+      physical_uses:
+        - "Collected and ate young seedpods raw or cooked"
+        - "Harvested straight branches for arrow shafts and tool handles"
+        - "Made tea from flowers and bark for treating fevers and congestion"
+      symbolic_meaning:
+        - "The brilliant spring flowers represented renewal and healing"
+        - "Featured in stories about the return of spring after winter"
+    
+    - culture: "Paiute"
+      physical_uses:
+        - "Gathered young seedpods as a spring food"
+        - "Wove branches into baskets and cradleboards"
+        - "Used wood for making small tools and implements"
+      symbolic_meaning:
+        - "The tree's dramatic transformation from bare branches to brilliant flowers symbolized life's transformations"
+        - "Associated with healing and rejuvenation"
+    
+    - culture: "Early California Settlers"
+      physical_uses:
+        - "Planted as ornamental shrubs for spring color"
+        - "Sometimes used the hard wood for small turned items"
+        - "Occasionally used flowers in spring salads"
+      symbolic_meaning:
+        - "A sign of spring and the end of winter"
+        - "Valued for bringing color to the landscape after winter"
+    
+  cultural_ecological_notes:
+    - "Provides critical early-season nectar for native bees, butterflies, and hummingbirds"
+    - "Seeds eaten by birds and small mammals"
+    - "Deep root system helps prevent erosion on slopes"
+    - "Nitrogen-fixing ability improves soil fertility"
+    - "Resprouts vigorously after fire, aiding in habitat recovery"
+    
+  range_within_california:
+    - "Native to the Sierra Nevada foothills from 500 to 4,000 feet elevation"
+    - "Found throughout the Coast Ranges from northern to southern California"
+    - "Present in the Transverse Ranges and inland valleys"
+    - "Absent from the immediate coast and desert regions"
+    - "Common in chaparral, oak woodlands, and foothill woodlands"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "10-20 feet, occasionally taller"
+    growth_rate: "Moderate"
+    crown_spread: "10-15 feet at maturity"
+    lifespan: "40-150 years"
+    trunk_diameter: "Multiple trunks typically 2-6 inches in diameter each"
+    root_system: "Moderately deep, spreading roots with nitrogen-fixing nodules"
+    toxicity: "Seeds contain slightly toxic compounds if eaten in quantity; safe to touch"
+  
+  conservation_status:
+    status: "Secure in native range"
+    threats: 
+      - "Habitat loss in some urban-adjacent foothill areas"
+      - "Climate change may affect flowering timing and habitat range"
+      - "Occasional browsing pressure from deer in wildland-urban interface"
+    protection_efforts:
+      - "Protected in many state and regional parks"
+      - "Increasingly used in native plant restoration projects"
+      - "Popular in drought-tolerant landscaping, helping promote awareness"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-SHAPE-04"  # Heart-shaped
+      - "feature_id: FRUIT-TYPE-05"  # Pods present
+    confirmation_features:
+      - "feature_id: FLOWER-SIZE-01"  # Showy flowers
+      - "feature_id: TREE-TRUNK-02"  # Multi-trunked
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["FLOWER-SIZE-01", "TREE-SIZE-01"]  # Showy flowers, small tree
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SHAPE-04", "FRUIT-TYPE-05"]  # Heart-shaped leaves, pods
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-01", "BARK-TEXT-01"]  # Smooth leaf edges, smooth bark
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["FLOWER-SIZE-01", "TREE-TRUNK-02"]  # Showy flowers, multi-trunked
+        notes: "The magenta flowers on bare branches are unmistakable in spring"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-SHAPE-04", "LEAF-EDGE-01", "FRUIT-TYPE-05"]  # Heart-shaped, smooth edge, pods
+        notes: "Heart-shaped leaves with smooth edges and developing seedpods"
+      
+      fall:
+        reliability: "Medium"
+        key_features: ["LEAF-FALL-01", "LEAF-SHAPE-04", "FRUIT-TYPE-05"]  # Yellow fall color, heart-shaped, pods
+        notes: "Yellow heart-shaped leaves and brown seedpods"
+      
+      winter:
+        reliability: "Low"
+        key_features: ["TREE-TRUNK-02", "WINTER-FEAT-02"]  # Multi-trunked, persistent fruits
+        notes: "Multiple trunks, zigzag branching pattern, and persistent seedpods"
+    misidentification_risks: 
+      - "Can be confused with Eastern Redbud (Cercis canadensis) in landscape settings"
+      - "Heart-shaped leaves might be mistaken for other heart-leaved trees when not flowering"
+      - "Young plants without flowers or seedpods may be difficult to identify"
+  
+  wildlife_value:
+    food_source:
+      - "Flowers provide critical early-season nectar for native bees, butterflies, and hummingbirds"
+      - "Seeds eaten by birds and small mammals including finches and quail"
+      - "Foliage occasionally browsed by deer"
+    habitat_provided:
+      - "Dense branching provides nesting sites for small birds"
+      - "Host plant for several butterfly species including Henry's Elfin"
+      - "Provides modest shade and shelter for wildlife"
+    ecosystem_role: "Nitrogen-fixing legume that improves soil fertility; early spring flowers support pollinators when few other sources are available"

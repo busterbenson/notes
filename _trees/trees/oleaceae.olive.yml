@@ -1,0 +1,344 @@
+tree:
+  common_name: "Olive"
+  scientific_name: "Olea europaea"
+  family: "Oleaceae"
+  
+  # Basic summary information
+  summary: "A small to medium-sized evergreen tree with narrow, silvery-gray leaves and a gnarly, twisted trunk that becomes more sculptural with age. It produces small white flowers and green fruits that ripen to black or purple. Olive trees are extremely long-lived and drought-tolerant, originally from the Mediterranean region."
+  
+  # Identification priority
+  identification_path:
+    primary_markers: "Silvery-gray, narrow leaves with dark green tops and silvery undersides; twisted, gnarled trunk on older trees"
+    secondary_markers: "Small white flowers in spring; green to black olive fruits; overall silvery appearance in breeze"
+    seasonal_markers: "Small creamy-white flower clusters in spring; green to black olive fruits in fall; evergreen silvery foliage all year"
+    similar_species_differentiation: "Similar silvery look to Russian olive but without thorns; narrower leaves than bay laurel; more twisted trunk than most other small evergreen trees"
+  
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its leaves all year round"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Leaves are single, not divided into leaflets"
+      
+      - feature_id: "LEAF-SHAPE-02"  # Linear
+        notes: "Leaves are narrow and elongated"
+      
+      - feature_id: "LEAF-EDGE-01"  # Entire
+        notes: "Leaf edges are smooth without teeth or lobes"
+      
+      - feature_id: "LEAF-COLOR-04"  # Silver undersides
+        notes: "Leaf undersides are distinctly silvery"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves grow in pairs directly across from each other"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        notes: "Native to Mediterranean region, not native to California"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        notes: "Extremely drought-tolerant once established"
+      
+      - feature_id: "ECO-LIFE-01"  # Long-lived
+        notes: "Can live for hundreds or even thousands of years"
+    
+    usually_true:
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Usually grows 20-30 feet tall (about as tall as a 3-story building)"
+        exceptions: "May stay smaller in containers or with pruning; much older specimens can be larger"
+      
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually develops one main trunk"
+        exceptions: "Often becomes multi-trunked with age or when pruned"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Typically forms a rounded, somewhat open crown"
+        exceptions: "Shape varies with age and pruning; very old trees can be irregular"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        notes: "Bark becomes deeply furrowed and gnarly with age"
+        exceptions: "Young trees have smoother bark"
+      
+      - feature_id: "FRUIT-TYPE-03"  # Berries present
+        notes: "Produces olive fruits (technically drupes)"
+        exceptions: "Fruitless cultivars exist; some years may have little fruit production"
+    
+    sometimes_true:
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        conditions: "With age or when pruned a certain way"
+        notes: "May develop multiple trunks, especially older specimens"
+      
+      - feature_id: "TREE-SIZE-01"  # Short tree
+        conditions: "When grown in containers or heavily pruned"
+        notes: "Can be maintained as a smaller tree or large shrub"
+      
+      - feature_id: "TREE-FORM-05"  # Irregular crown
+        conditions: "Very old specimens"
+        notes: "Ancient trees often develop unique, irregular shapes"
+      
+      - feature_id: "FLOWER-COLOR-01"  # White flowers
+        conditions: "Spring flowering period"
+        notes: "Produces small creamy-white flowers"
+      
+      - feature_id: "FLOWER-TIME-01"  # Spring flowering
+        conditions: "Usually late spring"
+        notes: "Flowers typically appear in spring"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "When planted in well-drained soil"
+        notes: "Commonly planted in gardens and landscapes"
+      
+      - feature_id: "GEO-REGION-03"  # Southern California
+        conditions: "Widely planted in Southern California"
+        notes: "Very common in Southern California landscapes"
+      
+      - feature_id: "GEO-REGION-02"  # Central California
+        conditions: "Common in Central Valley and coastal areas"
+        notes: "Grown commercially and as landscape trees"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "Planted in milder areas"
+        notes: "Grows in warmer parts of Northern California"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all its leaves seasonally"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has compound leaves"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Never has thorns or spines (unlike Russian olive)"
+      
+      - feature_id: "HABITAT-WATER-02"  # Wetland habitat
+        notes: "Never grows in wet or boggy conditions"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Never produces large, showy flowers"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Not native to California; comes from Mediterranean"
+  
+  # Kid-friendly identification - expanded with open-ended, creative descriptions
+  kid_friendly_identification:
+    primary_identifier: "Silvery-gray leaves that flash silver in the breeze, with a twisted, gnarly trunk that looks old and wise"
+    memorable_comparison: "Looks like a tree wearing silver jewelry, with a trunk that twists and turns like it's dancing in slow motion"
+    touch_tip: "The leaves feel leathery on top but soft and fuzzy underneath, like stroking a cat's ear"
+    smell_tip: "Crush a leaf gently to smell a faint, pleasant herbal scent (but be gentle - don't damage the tree!)"
+    fun_fact: "Some olive trees are over 2,000 years old! That means they were alive when the Romans were building the Colosseum and Jesus was walking around. The olives you eat at pizza parties come from trees just like this one!"
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the leaves. Are they narrow, with dark green tops and silvery-gray undersides?"
+        yes_next: 2
+        no_next: "Not an olive tree - try looking at trees with different leaf colors"
+      - step: 2
+        instruction: "Check how the leaves grow on the branches. Do they grow in pairs facing each other (opposite)?"
+        yes_next: 3
+        no_next: "Not an olive tree - try trees with opposite leaf arrangements"
+      - step: 3
+        instruction: "Look at the trunk, especially on older trees. Is it twisted and gnarly with deep furrows in the bark?"
+        yes_next: 4
+        no_next: "If it's a young tree, the trunk might not be twisted yet. Look for olive fruits or the overall silvery appearance."
+      - step: 4
+        instruction: "Depending on the season, do you see small white flowers (spring) or small green to black fruits (fall)?"
+        yes_next: "You found an olive tree!"
+        no_next: "It still might be an olive tree, especially if it's not flowering or fruiting season, or if it's a fruitless variety"
+  
+  regional_notes:
+    - region: "Southern California"
+      notes: "Very common landscape tree; also grown commercially"
+      locations: "Found in gardens, parks, and commercial olive groves"
+    - region: "Central California"
+      notes: "Important commercial crop; common in landscapes"
+      locations: "Many commercial groves in Central Valley; also in gardens"
+    - region: "Northern California"
+      notes: "Grows in warmer areas; increasing commercial production"
+      locations: "Found in gardens and increasing number of orchards"
+      
+  confirmation_checklist:
+    - feature: "Silvery-gray, narrow leaves with silver undersides"
+      reliability: "Very high"
+      visibility: "Easy to see from nearby"
+    - feature: "Twisted, gnarled trunk (on older trees)"
+      reliability: "High"
+      visibility: "Obvious on mature specimens"
+    - feature: "Small white flowers in spring"
+      reliability: "Medium"
+      visibility: "Need to look closely during flowering"
+    - feature: "Green to black olive fruits (on fruiting varieties)"
+      reliability: "Very high"
+      visibility: "Easily visible when present"
+    - feature: "Opposite leaf arrangement"
+      reliability: "High"
+      visibility: "Need to look at branch closely"
+    
+  look_alike_species:
+    - species: "Russian Olive (Elaeagnus angustifolia)"
+      differences: "Russian Olive has thorny branches; narrower, more silvery leaves; yellow-silver fruits instead of green-black"
+      identification_tip: "If it has thorns or spines on the branches, it's Russian Olive, not true Olive"
+    - species: "California Bay Laurel (Umbellularia californica)"
+      differences: "Bay has broader, aromatic leaves with strong smell; smoother bark; different fruits"
+      identification_tip: "Crush a leaf gently - if it has a strong aromatic smell like eucalyptus or bay seasoning, it's Bay Laurel, not Olive"
+    - species: "Silverberry (Elaeagnus spp.)"
+      differences: "Silverberry has more silvery leaves on both sides and sweet-smelling flowers; usually smaller and more shrub-like"
+      identification_tip: "If the plant is more shrub-like with extremely silvery leaves on both sides, it's likely a Silverberry"
+      
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaf growth may appear; small white flower clusters form"
+      reproductive_activity: "Produces small, fragrant white flower clusters"
+      identification_tips: "Flowers are distinctive when present"
+      kid_friendly_tip: "In spring, the tree makes bunches of tiny white flowers that look like miniature bouquets"
+    
+    - season: "Summer" 
+      visual_changes: "Full foliage with silvery appearance; small green fruits developing"
+      reproductive_activity: "Green olive fruits grow and develop"
+      identification_tips: "Green fruits begin to be visible"
+      kid_friendly_tip: "Summer is when baby olives start to grow - they're small and green, not ready to eat yet!"
+    
+    - season: "Fall"
+      visual_changes: "Fruits change from green to purple-black when ripe"
+      reproductive_activity: "Olive fruits ripen, changing color"
+      identification_tips: "Ripe fruits are very distinctive"
+      kid_friendly_tip: "In fall, the olives turn from green to purple-black, just like the ones in jars at the store"
+    
+    - season: "Winter"
+      visual_changes: "Retains silvery-green foliage"
+      reproductive_activity: "Dormant; some fruits may remain on tree"
+      identification_tips: "Evergreen nature and silver color stand out in winter"
+      kid_friendly_tip: "Even in winter, olive trees keep their silvery leaves while many other trees are bare"
+      
+  cultural_ecological_notes:
+    - "One of the most ancient cultivated trees, with specimens over 2,000 years old still producing fruit"
+    - "Extremely drought-tolerant once established"
+    - "Pollen can cause allergies in some people"
+    - "Fallen fruits can stain pavements and be messy in landscape settings"
+    - "Fruitless varieties are available for landscape use"
+    
+  range_within_california:
+    - "Not native but widely planted throughout warmer parts of California"
+    - "Commercial production centered in Central Valley"
+    - "Grows best in areas with hot, dry summers and mild winters"
+    - "Sensitive to prolonged frost below 15°F"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Ancient Mediterranean"
+      physical_uses:
+        - "Olives eaten as important food source"
+        - "Olive oil used for cooking, lamps, and medicine"
+        - "Wood carved into bowls, spoons, and religious items"
+        - "Leaves used in traditional medicine for fever and inflammation"
+      symbolic_meaning:
+        - "Symbol of peace, wisdom, and long life"
+        - "Sacred to Athena in Greek mythology"
+        - "Represented wealth and prosperity"
+        - "Olive branch used as symbol of peace and victory"
+    
+    - culture: "Abrahamic Religious Traditions"
+      physical_uses:
+        - "Olive oil used in religious ceremonies and anointings"
+        - "Wood used for carvings and religious artifacts"
+        - "Branches used in religious festivals and celebrations"
+      symbolic_meaning:
+        - "Mentioned frequently in Bible, Torah, and Quran"
+        - "Symbol of God's peace after the Great Flood (dove with olive branch)"
+        - "Represents divine blessing and favor"
+        - "Symbol of the Holy Spirit in Christian tradition"
+    
+    - culture: "Mediterranean Culinary"
+      physical_uses:
+        - "Olives cured and eaten as staple food"
+        - "Olive oil as foundation of Mediterranean cooking"
+        - "Wood used as premium cooking fuel for flavor"
+        - "Leaves sometimes used in cooking for flavor"
+      symbolic_meaning:
+        - "Represents the 'Mediterranean diet' and healthy eating"
+        - "Symbol of hospitality and welcoming"
+        - "Represents cultural heritage and tradition"
+        - "Associated with longevity and good health"
+    
+    - culture: "California Agriculture"
+      physical_uses:
+        - "Grown commercially for table olives and oil"
+        - "Planted as drought-tolerant landscape trees"
+        - "Used in xeriscaping and water-wise gardens"
+        - "Featured in California wine country landscapes"
+      symbolic_meaning:
+        - "Represents California's Mediterranean climate and lifestyle"
+        - "Symbol of California's agricultural diversity"
+        - "Emblematic of California's connection to Mediterranean cultures"
+        - "Associated with California's artisanal food movements"
+    
+  # Additional physical characteristics not captured in features
+  physical_characteristics:
+    height_range: "20-30 feet typically (as tall as a 2-3 story building)"
+    growth_rate: "Slow, about 6-12 inches per year"
+    crown_spread: "20-30 feet wide when mature"
+    lifespan: "Extremely long-lived, potentially thousands of years"
+    trunk_diameter: "1-3 feet across when mature, wider in ancient specimens"
+    root_system: "Deep taproot with extensive spreading roots for drought tolerance"
+    toxicity: "Not toxic, though raw olives are extremely bitter and inedible without processing"
+    
+  conservation_status:
+    status: "Secure in cultivation; some ancient trees protected"
+    threats: 
+      - "Xylella fastidiosa bacterial disease in Europe (not yet widespread in California)"
+      - "Olive fruit fly pest can damage commercial crops"
+      - "Climate change may alter suitable growing regions"
+    protection_efforts:
+      - "Many ancient trees in Mediterranean protected as heritage landmarks"
+      - "Research into disease-resistant varieties"
+      - "Increasing awareness of historic olive trees' cultural value"
+    
+  # Decision tree mapping - helps with algorithm creation
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-COLOR-04"  # Silver undersides
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: LEAF-ARRANGE-02"  # Opposite
+    confirmation_features:
+      - "feature_id: LEAF-SHAPE-02"  # Linear
+      - "feature_id: FRUIT-TYPE-03"  # Berries present
+      - "feature_id: BARK-TEXT-02"  # Furrowed bark
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-COLOR-04", "TREE-FORM-02", "LEAF-TYPE-02"]  # Silver leaves, rounded crown, evergreen
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SHAPE-02", "LEAF-ARRANGE-02", "BARK-TEXT-02"]  # Linear leaves, opposite arrangement, furrowed bark
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-01", "FRUIT-TYPE-03", "FLOWER-COLOR-01"]  # Entire leaf edge, olive fruits, white flowers
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-COLOR-04", "LEAF-ARRANGE-02", "FLOWER-COLOR-01"]
+        notes: "Silver leaves, opposite arrangement, and small white flowers"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-COLOR-04", "LEAF-ARRANGE-02", "FRUIT-TYPE-03"]
+        notes: "Silver leaves, opposite arrangement, and developing green fruits"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["LEAF-COLOR-04", "FRUIT-TYPE-03", "LEAF-TYPE-02"]
+        notes: "Silver leaves, ripening fruits changing color, evergreen nature"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["LEAF-TYPE-02", "LEAF-COLOR-04", "BARK-TEXT-02"]
+        notes: "Evergreen silver leaves and distinctive twisted bark"
+    misidentification_risks: "Most often confused with Russian Olive, silverberry, or bay laurel"
+
+  wildlife_value:
+    nesting_sites: "Dense branching provides good nesting sites for birds"
+    food_source: "Ripe fruits eaten by birds, especially starlings and jays"
+    shelter: "Provides year-round cover for birds"
+    ecological_notes: "Though non-native, provides habitat value in urban areas; fruits support some bird species"
+    
+  propagation_information:
+    growing_conditions: "Needs full sun and well-drained soil"
+    water_needs: "Extremely drought-tolerant once established"
+    planting_tips: "Plant in sunniest location available with excellent drainage"
+    maintenance: "Prune to maintain desired size and shape; can be heavily pruned if needed"
+    special_notes: "Consider fruitless varieties near patios or walkways to avoid fruit drop mess"

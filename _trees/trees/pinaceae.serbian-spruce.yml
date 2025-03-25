@@ -1,0 +1,270 @@
+tree:
+  common_name: Serbian Spruce
+  scientific_name: Picea omorika
+  family: Pinaceae
+  native: false
+
+  summary: Serbian Spruce is an elegant, slender evergreen conifer with a distinctive narrow, spire-like silhouette and remarkable two-toned needles that are dark green above and silvery-white below. Native to a small region between Bosnia and Serbia, this endangered species in its homeland is valued in California landscapes for its graceful form, drooping branchlets, and adaptability to various growing conditions. Its striking columnar shape and bicolor needles make it one of the most easily identifiable spruce species.
+
+  identification_path:
+    primary_markers: "Distinctive two-tone needles (dark green above, silvery-white below); narrow, spire-like or rocket shape"
+    secondary_markers: "Gracefully drooping branchlets; flat needles that are square in cross-section"
+    seasonal_markers: "Consistent foliage color year-round; small purplish cones in summer turning brown in fall"
+    similar_species_differentiation: "Unlike Norway Spruce, has a narrower shape and two-tone needles; unlike Colorado Blue Spruce, has drooping twigs and green/silver (not uniformly blue) needles"
+
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02" # Evergreen
+        notes: "Keeps its needles all year round without seasonal leaf drop"
+      
+      - feature_id: "NEEDLE-SHAPE-02" # Square needles
+        notes: "Needles are square in cross-section though flatter than other spruces"
+      
+      - feature_id: "TREE-FORM-04" # Columnar form
+        notes: "Grows tall and narrow like a rocket or church spire"
+      
+      - feature_id: "CONE-POS-02" # Hanging cones
+        notes: "Cones dangle down from branches rather than pointing upward"
+      
+      - feature_id: "LEAF-COLOR-04" # Silver undersides
+        notes: "Needles have a striking two-tone appearance: dark green on top, silvery-white beneath"
+    
+    usually_true:
+      - feature_id: "TREE-SIZE-03" # Large (50-100 feet)
+        notes: "Typically grows 50-60 feet tall in cultivation, potentially taller in ideal conditions"
+        exceptions: "Often remains smaller in California landscapes due to climate and growing conditions"
+      
+      - feature_id: "NEEDLE-ARRANGE-01" # Single needles
+        notes: "Needles attach individually to the twig, spirally arranged"
+        exceptions: "May appear more flattened on some branches due to the way they twist to show silver undersides"
+      
+      - feature_id: "BRANCH-ANGLE-03" # Drooping branches
+        notes: "Branches and especially the branchlets hang down gracefully"
+        exceptions: "Main scaffold branches are more horizontal, with only the smaller branches and twigs drooping"
+      
+      - feature_id: "HABITAT-05" # Planted in landscapes
+        notes: "In California, found in planned gardens, parks, and botanical collections"
+        exceptions: "Uncommonly found outside of specialty gardens and collections"
+    
+    sometimes_true:
+      - feature_id: "TREE-SIZE-02" # Medium (30-50 feet)
+        conditions: "Young trees or those in less favorable growing conditions"
+        notes: "May remain under 50 feet in urban settings or during first decades of growth"
+      
+      - feature_id: "BARK-TEXT-01" # Smooth bark
+        conditions: "Young trees before bark develops texture"
+        notes: "Bark is relatively smooth when young"
+      
+      - feature_id: "BARK-TEXT-03" # Peeling bark
+        conditions: "Older, mature specimens"
+        notes: "Bark becomes scaly and slightly peeling with age"
+      
+      - feature_id: "HABITAT-03" # Urban areas
+        conditions: "When planted in city parks, botanical gardens, or large urban landscapes"
+        notes: "Tolerates urban conditions better than many spruce species"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01" # Deciduous
+        notes: "Never drops all its needles seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-02" # Needles in clusters/bundles
+        notes: "Needles are always attached individually, never in bundles like pines"
+      
+      - feature_id: "CONE-POS-01" # Upright cones
+        notes: "Cones always hang down, never stand upright like fir cones"
+      
+      - feature_id: "HABITAT-02" # Forests
+        notes: "Not naturalized in California forests, only found in cultivated settings"
+
+  kid_friendly_identification:
+    primary_identifier: "Two-tone needles - dark green on top and silvery-white underneath, like tiny green coats with silver linings"
+    memorable_comparison: "Shaped like a rocket ship ready for takeoff - tall and super skinny!"
+    touch_tip: "The needles feel softer and less pokey than other spruce trees, and the branches are slightly droopy like they're taking a bow"
+    smell_tip: "When you gently rub the needles, they have a fresh, light pine scent - not as strong as other spruces"
+    fun_fact: "This tree's natural home is smaller than many state parks! It comes from a tiny area between Bosnia and Serbia where it survived the Ice Age hiding in special mountain valleys when many other trees disappeared!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, check if the tree is shaped like a tall rocket ship or church spire - very tall and skinny"
+        yes_next: 2
+        no_next: "Not a Serbian Spruce - check Norway Spruce if it's more Christmas tree shaped"
+      
+      - step: 2
+        instruction: "Look at the needles from different angles. Do they look dark green from above but flash silvery-white when you look up at them from below?"
+        yes_next: 3
+        no_next: "Not a Serbian Spruce - check Colorado Blue Spruce if needles are blue all over"
+      
+      - step: 3
+        instruction: "Look at the branches and twigs. Do the smaller branches droop down gracefully like they're tired or bowing?"
+        yes_next: 4
+        no_next: "Might be another spruce species with more horizontal branches"
+      
+      - step: 4
+        instruction: "In summer or fall, do you see small cones (about the size of your thumb) hanging from branches?"
+        yes_next: "You found a Serbian Spruce!"
+        no_next: "Might still be Serbian Spruce if it's not old enough to make cones yet"
+
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New, bright green growth appears at branch tips, contrasting with older, darker needles"
+      reproductive_activity: "Small male pollen cones release yellow pollen; purple-brown female cones begin forming"
+      identification_tips: "The narrow, spire-like shape and two-tone needles remain distinctive year-round"
+      kid_friendly_tip: "In spring, look for fresh light green tips on branches, like the tree is growing tiny green fingers"
+    
+    - season: "Summer"
+      visual_changes: "New growth matures and darkens; contrast between dark upper surfaces and silvery undersides is most pronounced"
+      reproductive_activity: "Young purple-brown female cones continue developing on upper branches"
+      identification_tips: "The two-tone needles are most visible when summer breezes flip them around"
+      kid_friendly_tip: "Summer is when you can see the cones growing - they look like little purple pinecones hanging from branches!"
+    
+    - season: "Fall"
+      visual_changes: "Needles maintain their dark green and silver coloration; cones turn light brown"
+      reproductive_activity: "Cones mature and open to release winged seeds"
+      identification_tips: "The contrast with colorful deciduous trees makes this evergreen easy to spot"
+      kid_friendly_tip: "While other trees change colors in fall, this tree stays green and silver, and its little cones open up to let seeds fly away"
+    
+    - season: "Winter"
+      visual_changes: "Retains dark green and silver needles; narrow form may catch snow beautifully"
+      reproductive_activity: "Dormant; empty cones may remain on tree"
+      identification_tips: "The distinctive narrow silhouette and evergreen foliage stand out in winter landscapes"
+      kid_friendly_tip: "In winter, this tree looks extra special when snow sits on its branches - like a skinny green rocket wearing a white snow coat!"
+
+  confirmation_checklist:
+    - feature: "Distinctive two-tone needles: dark green above, silvery-white below"
+      reliability: "Very high"
+      visibility: "High - visible when breeze moves branches"
+    
+    - feature: "Narrow, columnar or spire-like shape"
+      reliability: "Very high"
+      visibility: "High - visible from a distance"
+    
+    - feature: "Drooping branchlets and twigs"
+      reliability: "High"
+      visibility: "Medium - need to observe branch structure"
+    
+    - feature: "Small hanging cones (1-2 inches long)"
+      reliability: "High" 
+      visibility: "Medium - visible when present during summer/fall"
+    
+    - feature: "Thin, scaly, reddish-brown bark on mature trees"
+      reliability: "Medium"
+      visibility: "Medium - need to look at trunk"
+    
+    - feature: "Needles flatter than most spruces but still square in cross-section"
+      reliability: "High"
+      visibility: "Low - requires close examination"
+
+  look_alike_species:
+    - species: "Norway Spruce (Picea abies)"
+      differences: "Has a broader pyramidal shape, longer cones (4-6 inches), and lacks the distinct silver underside of needles"
+      identification_tip: "Norway Spruce has dramatically drooping main branches and a much wider shape than the rocket-like Serbian Spruce"
+    
+    - species: "Colorado Blue Spruce (Picea pungens)"
+      differences: "Has a broader pyramidal shape, stiffer/sharper needles with uniform blue-gray color (not two-toned), and horizontal branches"
+      identification_tip: "If the needles are uniformly blue and very sharp to touch, it's Colorado Blue Spruce not Serbian Spruce"
+    
+    - species: "White Fir (Abies concolor)"
+      differences: "Has flat needles (not square in cross-section), upright cones, and silvery-blue color on both sides of needles (not just undersides)"
+      identification_tip: "Check the cones - if they stand upright like candles instead of hanging down, it's a fir not a spruce"
+    
+    - species: "Oriental Spruce (Picea orientalis)"
+      differences: "Has very short needles but lacks the striking two-tone coloration; has a somewhat broader habit"
+      identification_tip: "Oriental Spruce has tiny dark green needles but without the silver undersides of Serbian Spruce"
+
+  cultural_significance:
+    - culture: "Balkan Peninsula Native Region"
+      physical_uses:
+        - "Wood historically used for construction and fine carpentry when available"
+        - "Used traditionally for musical instruments due to its resonant qualities"
+      symbolic_meaning:
+        - "Symbol of resilience and survival against odds in its native region"
+        - "Represents natural heritage in Serbia and Bosnia where it is highly protected"
+    
+    - culture: "Western Horticulture"
+      physical_uses:
+        - "Used as an ornamental specimen tree for its elegant columnar form"
+        - "Planted as narrow vertical accents in small garden spaces"
+      symbolic_meaning:
+        - "Example of conservation through cultivation as it's now grown worldwide"
+        - "Represents the value of preserving biodiversity through garden collections"
+    
+    - culture: "Conservation Biology"
+      physical_uses:
+        - "Subject of seed collection and propagation efforts to maintain genetic diversity"
+        - "Used in botanical garden collections for education and research"
+      symbolic_meaning:
+        - "Living example of a relict species that survived ice ages in isolated microhabitats"
+        - "Symbol of the importance of protecting even small habitat areas for rare species"
+
+  physical_characteristics:
+    height: "50-60 feet typically in cultivation (up to 100 feet in ideal conditions)"
+    width: "10-20 feet (very narrow for its height)"
+    bark: "Thin, scaly, reddish-brown; smoother on young trees"
+    leaves: "Flat needles, square in cross-section, dark green above with silvery-white bands beneath, 1/2 to 3/4 inch long"
+    flowers: "Small, inconspicuous yellow pollen cones and red-purple seed cones"
+    fruit: "Small hanging cones, 1-2 inches long, purple when young, maturing to light brown"
+    seeds: "Small, winged seeds released from mature cones"
+    growth_rate: "Slow to moderate, typically 6-12 inches per year"
+    lifespan: "100-150 years in favorable conditions"
+    root_system: "Moderately shallow with widespread lateral roots"
+    suitable_for_public_spaces: true
+
+  conservation_status: 
+    status: "Endangered (IUCN Red List) in its native range"
+    threats: "Limited natural range (less than 150 acres), climate change, forest fires, historical logging"
+    protection_efforts: "Protected in nature reserves in Serbia and Bosnia; widely cultivated worldwide in gardens and arboretums"
+
+  range_within_california:
+    - "Not native to California, cultivated as an ornamental tree"
+    - "Most successful in coastal and northern regions with moderate temperatures"
+    - "Found primarily in botanical gardens including UC Berkeley Botanical Garden and San Francisco Botanical Garden"
+    - "Occasionally used in larger home landscapes and parks where vertical accents are desired"
+
+  decision_tree_placement:
+    primary_split_features:
+      - feature_id: "LEAF-TYPE-02" # Evergreen
+      - feature_id: "NEEDLE-SHAPE-02" # Square needles
+      - feature_id: "TREE-FORM-04" # Columnar form
+      - feature_id: "LEAF-COLOR-04" # Silver undersides
+    
+    confirmation_features:
+      - feature_id: "BRANCH-ANGLE-03" # Drooping branches
+      - feature_id: "CONE-POS-02" # Hanging cones
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-04", "LEAF-TYPE-02"] # Columnar form, Evergreen
+      
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-COLOR-04", "BRANCH-ANGLE-03"] # Silver undersides, Drooping branches
+      
+      - distance: "close_inspection"
+        features_to_check: ["NEEDLE-SHAPE-02", "CONE-POS-02"] # Square needles, Hanging cones
+    
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["TREE-FORM-04", "LEAF-COLOR-04", "LEAF-TYPE-02"]
+        notes: "New growth at branch tips provides color contrast but doesn't change overall identification features"
+      
+      summer:
+        reliability: "Very high"
+        key_features: ["LEAF-COLOR-04", "TREE-FORM-04", "CONE-POS-02"]
+        notes: "Purple developing cones and pronounced silver needle undersides most visible in summer"
+      
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "LEAF-COLOR-04", "CONE-POS-02"]
+        notes: "Mature cones and distinctive two-tone needle pattern remain visible"
+      
+      winter:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "TREE-FORM-04", "LEAF-COLOR-04"]
+        notes: "Narrow columnar form and evergreen nature stand out in winter landscape"
+
+  wildlife_value: 
+    - "In California landscapes, Serbian Spruce provides sheltered nesting sites for small birds"
+    - "Its dense evergreen foliage offers winter protection from harsh weather and predators"
+    - "The seeds from its cones may be eaten by native birds like finches, chickadees, and nuthatches"
+    - "While not as ecologically valuable as native trees, its narrow form takes up less space while still providing vertical habitat"
+    - "The unique structure offers perching spots for birds and creates microhabitats in urban gardens"

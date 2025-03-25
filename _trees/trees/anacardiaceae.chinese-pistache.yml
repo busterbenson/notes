@@ -1,0 +1,298 @@
+tree:
+  common_name: "Chinese Pistache"
+  scientific_name: "Pistacia chinensis"
+  family: "Anacardiaceae"
+  
+  # Basic summary (2-3 sentences)
+  summary: "A medium-sized deciduous tree with attractive compound leaves that turn brilliant red, orange, and yellow in fall. It has a rounded, umbrella-like canopy and distinctively textured gray-brown bark. Widely planted in California landscapes for its outstanding fall color and heat tolerance."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Compound leaves with 10-16 pointed leaflets arranged along a central stem; spectacular red-orange fall color; round umbrella-like canopy"
+    secondary_markers: "Gray-brown bark with distinctive texture that resembles alligator skin when mature; tiny green flowers in spring; small berry-like fruits on female trees that turn red then blue-purple"
+    seasonal_markers: "Bright red-orange-yellow fall foliage; small clusters of fruits on female trees turning from red to blue-purple in late fall; bare winter branches with distinctive silhouette"
+    similar_species_differentiation: "Unlike sumac, has rounder leaflets and more tree-like form; unlike ash trees, leaflets have smooth edges without teeth; unlike true pistache (nut tree), produces inedible berry-like fruits"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops all its leaves in fall and grows new ones in spring"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Leaves divided into multiple leaflets along a central stem"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow in a zigzag pattern along branches, not across from each other"
+      
+      - feature_id: "LEAF-EDGE-01"  # Entire
+        notes: "Leaflet edges are smooth without teeth"
+      
+      - feature_id: "LEAF-FALL-02"  # Red fall color
+        notes: "Leaves turn brilliant red, orange, and yellow in fall"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Tree forms a rounded, umbrella-like shape when mature"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        notes: "Grows well in cities and towns, even in tough conditions"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        notes: "Can survive with little water once established"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk"
+        exceptions: "Can occasionally develop multiple trunks, especially if damaged when young"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Typically grows 30-40 feet tall (about as tall as a 3-4 story building)"
+        exceptions: "May be smaller in poor growing conditions or when young"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        notes: "Bark develops distinct furrows and ridges as it matures"
+        exceptions: "Young trees have smoother bark"
+    
+    sometimes_true:
+      - feature_id: "FRUIT-TYPE-03"  # Berries present
+        conditions: "Only on female trees in late summer through fall"
+        notes: "Female trees produce small berry-like fruits that change from red to blue-purple"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees"
+        notes: "Bark is smoother when the tree is young"
+      
+      - feature_id: "LEAF-FALL-03"  # Orange fall color
+        conditions: "Fall season"
+        notes: "Leaves often show orange colors alongside red in fall"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Fall season"
+        notes: "Some leaves may turn bright yellow in fall"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "Where planted in landscapes"
+        notes: "Planted in Northern California cities and towns"
+      
+      - feature_id: "GEO-REGION-02"  # Central California
+        conditions: "Where planted in landscapes"
+        notes: "Common in Central California landscapes, especially in the Central Valley"
+      
+      - feature_id: "GEO-REGION-03"  # Southern California
+        conditions: "Where planted in landscapes"
+        notes: "Widely planted in Southern California urban areas"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops its leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Never has simple undivided leaves"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves never grow directly across from each other"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Never produces large, colorful flowers"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Not native to California; originally from China"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Compound leaves with multiple pointed leaflets along a central stem; amazing red and orange fall color"
+    memorable_comparison: "In fall, the leaves look like they're on fire with bright red and orange flames; the bark on older trees looks like alligator skin"
+    touch_tip: "The leaves feel smooth and slightly leathery, and the bark feels bumpy like dinosaur skin on older trees"
+    smell_tip: "Crush a leaf gently to smell a mild, slightly sweet scent"
+    fun_fact: "Chinese Pistache trees put on one of the most spectacular fall color shows in California - like fireworks in slow motion! The tree is related to mangoes and cashews, but its tiny fruits are only good for birds to eat, not people."
+    
+    detective_steps:
+      - step: 1
+        instruction: "Look at the leaves. Are they compound (divided into smaller leaflets along a central stem)?"
+        yes_next: 2
+        no_next: "Not a Chinese Pistache - look for a tree with compound leaves"
+      - step: 2
+        instruction: "Check the leaflets. Do they have smooth edges without teeth, and are they pointed at the tips?"
+        yes_next: 3
+        no_next: "Might be an ash tree or another compound-leaf tree if the leaflets have toothed edges"
+      - step: 3
+        instruction: "Look at the overall tree shape. Does it have a rounded, umbrella-like shape?"
+        yes_next: 4
+        no_next: "Could be another tree with compound leaves - check other features"
+      - step: 4
+        instruction: "In fall, do the leaves turn bright red, orange, and yellow?"
+        yes_next: 5
+        no_next: "If it's not fall yet, check the bark. On older trees, does it have a distinct pattern that looks like alligator skin?"
+      - step: 5
+        instruction: "Look at where the tree is growing. Is it planted in a yard, park, or along a street rather than in a wild forest?"
+        yes_next: "You found a Chinese Pistache!"
+        no_next: "Chinese Pistache trees are almost always planted by people, not found in wild areas"
+  
+  # Seasonal timeline
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New bright green compound leaves emerge; tiny green or red flowers appear in clusters"
+      reproductive_activity: "Small green or reddish flowers bloom on separate male and female trees"
+      identification_tips: "Fresh bright green compound leaves are distinctive; tiny flowers visible on close inspection"
+      kid_friendly_tip: "In spring, look for the bright green 'feather' leaves and tiny flowers that are so small you might need to look closely to see them!"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of dark green compound leaves; female trees start developing small fruits"
+      reproductive_activity: "Female trees develop small green fruits that gradually turn red"
+      identification_tips: "Dense canopy of dark green compound leaves; female trees have small developing fruits"
+      kid_friendly_tip: "During summer, the tree provides nice shade with its umbrella-shaped top and dark green leaves"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn spectacular shades of red, orange, and yellow; fruits on female trees turn from red to blue-purple"
+      reproductive_activity: "Fruits fully mature on female trees"
+      identification_tips: "Fall color is the most distinctive and recognizable feature"
+      kid_friendly_tip: "Fall is when this tree really shows off! The leaves turn amazing fire colors - red, orange, and yellow - making it easy to spot"
+    
+    - season: "Winter"
+      visual_changes: "Leaves drop, revealing branching pattern; some dried fruits may persist on female trees"
+      reproductive_activity: "Dormant; flower buds form for next spring"
+      identification_tips: "Distinctive branching pattern and bark become visible; look for any remaining dried fruits on female trees"
+      kid_friendly_tip: "After the leaves fall off, you can see the nice rounded shape of the branches and the interesting texture of the bark"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Compound leaves with multiple smooth-edged leaflets"
+      reliability: "Very high"
+      visibility: "Easy to see during growing season"
+    - feature: "Brilliant red-orange fall color"
+      reliability: "Very high"
+      visibility: "Extremely noticeable in fall"
+    - feature: "Rounded, umbrella-like tree shape"
+      reliability: "High"
+      visibility: "Visible from a distance"
+    - feature: "Textured, alligator-like bark on mature trees"
+      reliability: "High"
+      visibility: "Visible up close"
+    - feature: "Small berry-like fruits on female trees"
+      reliability: "Medium"
+      visibility: "Visible up close, but only on female trees"
+    
+  look_alike_species:
+    - species: "Sumac species (Rhus species)"
+      differences: "Sumacs are usually more shrub-like and shorter; have more elongated and serrated leaflets; often have fuzzy stems"
+      identification_tip: "Chinese Pistache is a proper tree with a single trunk and rounder leaflets, while sumacs are often more shrub-like with multiple stems"
+    
+    - species: "Ash trees (Fraxinus species)"
+      differences: "Ash trees have opposite leaves (directly across from each other); leaflets typically have toothed edges; different fruit type (winged samaras)"
+      identification_tip: "Check leaf arrangement - Chinese Pistache has alternate leaves while ash trees have opposite leaves"
+    
+    - species: "True Pistache/Pistachio (Pistacia vera)"
+      differences: "True pistachio is grown as a crop tree and produces edible nuts in shells; has slightly different leaflet shape"
+      identification_tip: "Chinese Pistache produces small inedible berry-like fruits, not edible pistachios in shells"
+    
+  cultural_ecological_notes:
+    - "Native to China, Taiwan, and other parts of Asia"
+    - "Extremely adaptable to urban conditions, including poor soil and air pollution"
+    - "Provides excellent shade and wildlife value for birds that eat the fruits"
+    - "One of the most reliable trees for fall color in warm California climates"
+    - "Increasingly popular as a drought-tolerant landscape tree"
+    
+  range_within_california:
+    - "Not native to California but widely planted throughout the state"
+    - "Especially common in Central Valley cities and towns"
+    - "Grows well in most California climate zones, including hot inland areas"
+    - "Frequently planted as a street tree, in parks, and in residential yards"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Chinese Traditional"
+      physical_uses:
+        - "Used the hard, close-grained wood for furniture and tool handles"
+        - "Extracted a resin from the tree for traditional waterproofing and sealing"
+        - "Made a traditional dye from various parts of the tree"
+        - "Used parts of the tree in traditional medicine to help with swelling"
+      symbolic_meaning:
+        - "In its native China, associated with longevity due to its toughness and long life"
+        - "Fall colors celebrated as a symbol of change and the cycle of seasons"
+        - "Valued for its ability to thrive in difficult conditions, representing resilience"
+        - "Featured in traditional landscape paintings representing the autumn season"
+    
+    - culture: "California Urban Planning"
+      physical_uses:
+        - "Widely planted as street trees for shade and fall color"
+        - "Used in drought-tolerant landscape designs to reduce water use"
+        - "Planted in parks and public spaces for seasonal interest"
+        - "Selected for parking lots and plazas because of its urban tolerance and moderate size"
+      symbolic_meaning:
+        - "Represents successful adaptation of non-native species to California's climate"
+        - "Symbolizes sustainable landscaping practices in dry regions"
+        - "Fall color brings seasonal awareness to regions where seasons are less distinct"
+        - "Often highlighted in community tree programs as an ideal urban tree"
+    
+    - culture: "Modern Environmental Design"
+      physical_uses:
+        - "Incorporated into water-wise landscape designs as a drought-tolerant shade tree"
+        - "Used to create seasonal interest in public spaces and commercial developments"
+        - "Planted to increase urban canopy and reduce heat island effect"
+        - "Selected for school campuses and playgrounds for its durability and shade"
+      symbolic_meaning:
+        - "Represents balance between ornamental value and environmental adaptability"
+        - "Used as an educational example of trees that provide multiple ecosystem services"
+        - "Fall color celebration serves as a community connection to seasonal changes"
+        - "Increasingly seen as a symbol of climate-appropriate landscaping"
+  
+  # Additional physical characteristics
+  physical_characteristics:
+    height_range: "30-40 feet (about as tall as a 3-4 story building)"
+    growth_rate: "Medium, growing 1-2 feet per year when young"
+    crown_spread: "25-35 feet wide (about as wide as a school bus is long)"
+    lifespan: "Up to 100+ years in good conditions"
+    trunk_diameter: "Up to 2 feet across (about as wide as a car tire)"
+    root_system: "Moderately deep and widespread; somewhat drought-tolerant"
+    toxicity: "Generally not toxic, though related to poison ivy and poison oak; some people may have mild skin irritation from the sap"
+    
+  conservation_status:
+    status: "Not evaluated for conservation (cultivated ornamental)"
+    threats: 
+      - "No significant threats to the species globally"
+      - "In cultivation, may face challenges from pests and diseases common to urban environments"
+      - "Climate change may affect suitable growing regions"
+      - "Urban heat and drought can stress trees in some locations"
+    protection_efforts:
+      - "Widely cultivated and not in need of conservation efforts for the species"
+      - "Included in urban forest diversity initiatives"
+      - "Research on drought tolerance and urban adaptability"
+      - "Selection of improved cultivars for urban conditions"
+    
+  # Decision tree mapping
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-COMPLEX-02"  # Compound pinnate
+      - "feature_id: LEAF-EDGE-01"  # Entire
+      - "feature_id: LEAF-FALL-02"  # Red fall color
+    confirmation_features:
+      - "feature_id: TREE-FORM-02"  # Rounded crown
+      - "feature_id: BARK-TEXT-02"  # Furrowed bark
+      - "feature_id: ECO-ADAPT-01"  # Drought tolerant
+      - "feature_id: HABITAT-HUMAN-01"  # Urban tolerant
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-02", "LEAF-TYPE-01", "LEAF-FALL-02"]  # Rounded crown, deciduous, red fall color
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-COMPLEX-02", "LEAF-EDGE-01", "BARK-TEXT-02"]  # Compound leaves, entire edge, furrowed bark
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-03", "LEAF-ARRANGE-01"]  # Berries on female trees, alternate arrangement
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["LEAF-COMPLEX-02", "LEAF-EDGE-01", "TREE-FORM-02"]
+        notes: "Fresh compound leaves emerging; tiny flowers may be visible"
+      summer:
+        reliability: "Medium" 
+        key_features: ["LEAF-COMPLEX-02", "LEAF-EDGE-01", "TREE-FORM-02"]
+        notes: "Full canopy of dark green compound leaves; developing fruits on female trees"
+      fall:
+        reliability: "Very high"
+        key_features: ["LEAF-FALL-02", "LEAF-FALL-03", "LEAF-FALL-01"]
+        notes: "Spectacular fall color makes fall identification extremely reliable"
+      winter:
+        reliability: "Low"
+        key_features: ["TREE-FORM-02", "BARK-TEXT-02"]
+        notes: "Distinctive branching pattern and bark; dried fruits may persist on female trees"
+    misidentification_risks: "Most often confused with sumac species, ash trees, or the true pistachio"

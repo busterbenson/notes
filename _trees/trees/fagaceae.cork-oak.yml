@@ -1,0 +1,296 @@
+tree:
+  common_name: "Cork Oak"
+  scientific_name: "Quercus suber"
+  family: "Fagaceae"
+  
+  # Basic summary (2-3 sentences)
+  summary: "A medium to large evergreen oak tree with uniquely thick, spongy bark that is harvested as commercial cork. It has leathery oval leaves with spiny edges and produces acorns like other oaks. Native to the Mediterranean region but planted in California for its drought tolerance and distinctive appearance."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Extremely thick, spongy bark with deep fissures; evergreen oval leaves with spiny edges; acorns with distinctive scaly cups"
+    secondary_markers: "Gray-brown bark that becomes corky and thick with age; leathery leaves with pale undersides; round crown with spreading branches"
+    seasonal_markers: "Evergreen foliage year-round; acorns mature in fall; inconspicuous green-yellow flowers in spring"
+    similar_species_differentiation: "Unlike Coast Live Oak, has distinctively thick, corky bark; unlike Holly Oak, has less spiny leaf edges and thicker bark; unlike deciduous oaks, keeps leaves year-round"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its leaves all year round without seasonal dropping"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Each leaf is a single piece, not divided into leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow in a zigzag pattern along branches, not across from each other"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        notes: "Bark has deep grooves and an unusual thick, spongy texture"
+      
+      - feature_id: "FRUIT-TYPE-01"  # Acorns present
+        notes: "Produces acorns like other oak trees"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        notes: "Can survive with little water once established"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk"
+        exceptions: "Can sometimes develop multiple trunks, especially if damaged when young"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Tree top typically forms a rounded shape when mature"
+        exceptions: "Shape can vary based on growing conditions and pruning"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Typically grows 30-60 feet tall (about as tall as a 3-6 story building)"
+        exceptions: "May be smaller in poor growing conditions or when young"
+      
+      - feature_id: "LEAF-EDGE-05"  # Spiny
+        notes: "Leaf edges usually have small spiny teeth"
+        exceptions: "Teeth may be less prominent on older trees or in shady conditions"
+    
+    sometimes_true:
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        conditions: "Older trees in ideal growing conditions"
+        notes: "Can grow up to 60-70 feet tall in ideal conditions"
+      
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        conditions: "When cork layer is removed or on young trees"
+        notes: "Underlying bark is grayish before thick cork develops"
+      
+      - feature_id: "BARK-COLOR-04"  # Brown bark
+        conditions: "Mature cork layer"
+        notes: "Thick cork bark often has a reddish-brown color"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "When planted in landscapes"
+        notes: "Adapts well to urban conditions when given enough space"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "Where planted in landscapes"
+        notes: "Planted in Northern California in suitable microclimates"
+      
+      - feature_id: "GEO-REGION-02"  # Central California
+        conditions: "Where planted in landscapes"
+        notes: "Common in Central California landscapes"
+      
+      - feature_id: "GEO-REGION-03"  # Southern California
+        conditions: "Where planted in landscapes"
+        notes: "Planted in Southern California, especially in areas with Mediterranean climate"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all its leaves seasonally; keeps them year-round"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has compound leaves with multiple leaflets"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Flowers are small and inconspicuous, not showy"
+      
+      - feature_id: "HABITAT-WATER-02"  # Wetland habitat
+        notes: "Doesn't grow in wet areas or marshes"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Not native to California; originally from Mediterranean region (Spain, Portugal, North Africa)"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Amazingly thick, spongy bark that feels like a cork bulletin board"
+    memorable_comparison: "The bark looks and feels like the cork boards you pin notes to at school, and the leaves are tough and leathery with prickly edges"
+    touch_tip: "The bark feels soft and squishy like a sponge or foam - you can gently press your finger into it and it springs back"
+    smell_tip: "The leaves have a mild, woody scent if you crush them gently"
+    fun_fact: "Cork Oak trees give us the real cork used for bottle stoppers and bulletin boards! The special thick bark can be harvested without hurting the tree, and it grows back every 9-12 years like a renewable resource."
+    
+    detective_steps:
+      - step: 1
+        instruction: "Look at the bark. Is it extremely thick and spongy-looking with deep cracks and a texture like a cork bulletin board?"
+        yes_next: 2
+        no_next: "Not a Cork Oak - no other tree has such thick, corky bark"
+      - step: 2
+        instruction: "Check the leaves. Are they leathery, oval-shaped, and evergreen with some small spiny teeth along the edges?"
+        yes_next: 3
+        no_next: "Might be another type of oak tree or evergreen tree"
+      - step: 3
+        instruction: "Look for acorns or acorn cups under the tree (especially in fall). Do you see acorns with scaly cups like other oak trees?"
+        yes_next: 4
+        no_next: "If it's not acorn season, check if the tree stays green all year and has thick, corky bark"
+      - step: 4
+        instruction: "Where is the tree growing? Is it planted in a yard, park, or landscape rather than in a wild forest?"
+        yes_next: 5
+        no_next: "Cork Oaks are not native to California, so they're almost always planted by people"
+      - step: 5
+        instruction: "If you can reach the bark safely, gently press your finger against it. Does it feel springy and spongy, unlike regular hard tree bark?"
+        yes_next: "You found a Cork Oak!"
+        no_next: "If the bark is hard rather than spongy, it's probably another type of oak tree"
+  
+  # Seasonal timeline
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Fresh new leaves may emerge; small yellowish-green flowers appear"
+      reproductive_activity: "Produces inconspicuous pollen-bearing and seed-bearing flowers"
+      identification_tips: "Thick, corky bark is the best identifier; look for small catkin-like flowers if present"
+      kid_friendly_tip: "In spring, you might see tiny yellow-green flowers hanging down, and some fresh new leaves growing, but the super spongy bark is still the best way to spot it!"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of dark green, leathery leaves; acorns begin to develop"
+      reproductive_activity: "Acorns grow larger throughout summer"
+      identification_tips: "Thick, corky bark and leathery evergreen leaves; developing acorns"
+      kid_friendly_tip: "During summer, the tree is covered with tough, leathery green leaves, and baby acorns start growing in their little cups"
+    
+    - season: "Fall"
+      visual_changes: "No major leaf color change; acorns mature and may begin to drop"
+      reproductive_activity: "Acorns fully mature and drop from the tree"
+      identification_tips: "Mature acorns; unchanging evergreen foliage stands out as deciduous trees change color"
+      kid_friendly_tip: "While other trees turn red and yellow and lose their leaves in fall, the Cork Oak stays green and drops its acorns"
+    
+    - season: "Winter"
+      visual_changes: "Retains green leaves through winter with minimal change"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Evergreen nature stands out when deciduous trees are bare; thick distinctive bark"
+      kid_friendly_tip: "Even in winter, the Cork Oak keeps its green leaves when many other trees are bare, and its spongy cork bark is easy to spot year-round"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Thick, spongy, deeply fissured bark"
+      reliability: "Very high"
+      visibility: "Very easy to see"
+    - feature: "Leathery evergreen leaves with somewhat spiny edges"
+      reliability: "High"
+      visibility: "Easy to see during all seasons"
+    - feature: "Acorns with scaly cups (when present)"
+      reliability: "High"
+      visibility: "Visible in fall"
+    - feature: "Rounded crown with spreading branches"
+      reliability: "Medium"
+      visibility: "Visible from a distance"
+    - feature: "Leaves with pale undersides"
+      reliability: "Medium"
+      visibility: "Need to look at leaf undersides"
+    
+  look_alike_species:
+    - species: "Coast Live Oak (Quercus agrifolia)"
+      differences: "Coast Live Oak has darker, harder bark without the thick, corky texture; leaves often more curved and cupped"
+      identification_tip: "The Cork Oak's uniquely thick, spongy bark is the most reliable way to tell it apart from Coast Live Oak"
+    
+    - species: "Holly Oak (Quercus ilex)"
+      differences: "Holly Oak has smoother, harder bark, not thick and corky; often has more strongly toothed holly-like leaves, especially when young"
+      identification_tip: "Cork Oak has much thicker, spongier bark than Holly Oak, which has relatively thin bark"
+    
+    - species: "Interior Live Oak (Quercus wislizeni)"
+      differences: "Interior Live Oak has thinner, harder bark; smaller and often more prominently toothed leaves"
+      identification_tip: "The Cork Oak's bark is much thicker and spongier than the relatively thin bark of Interior Live Oak"
+    
+  cultural_ecological_notes:
+    - "Native to Mediterranean regions of Europe and North Africa"
+    - "The thick bark protects the tree from fire, a useful adaptation in dry climates"
+    - "Bark harvesting for cork is sustainable and doesn't harm the tree"
+    - "Acorns provide food for wildlife"
+    - "Well-adapted to hot, dry conditions with seasonal rainfall"
+    
+  range_within_california:
+    - "Not native to California but planted in many areas with Mediterranean climates"
+    - "Grows well in coastal and inland areas with moderate temperatures"
+    - "Most successful in regions with winter rainfall and dry summers"
+    - "Often planted in parks, large gardens, and as specimen trees"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Mediterranean (Spain/Portugal)"
+      physical_uses:
+        - "Harvested cork bark is used to make wine bottle stoppers, the tree's most famous product"
+        - "Cork is also used for flooring, bulletin boards, instrument parts, and many other products"
+        - "The wood is used for furniture and flooring when trees are harvested at the end of their life"
+        - "Acorns traditionally fed to pigs to produce high-quality ham in Spain and Portugal"
+      symbolic_meaning:
+        - "Symbolizes sustainability as one of the earliest renewable resources (bark regrows after harvest)"
+        - "Cork oak landscapes called 'dehesas' or 'montados' represent cultural heritage and traditional management"
+        - "Trees often symbolize family legacy as they can live for hundreds of years through multiple generations"
+        - "The ancient cork oak forests represent the harmony between human use and nature conservation"
+    
+    - culture: "California Wine Industry"
+      physical_uses:
+        - "Cork harvested from plantations in Portugal and Spain is essential for traditional wine bottling"
+        - "Some experimental cork oak groves established in California to explore local cork production"
+        - "Trees planted as ornamentals at some wineries to showcase the source of wine corks"
+        - "Used in demonstration gardens to show the connection between wine production and cork oak trees"
+      symbolic_meaning:
+        - "Represents the traditional methods of wine production and storage"
+        - "Symbolizes the connection between California's Mediterranean climate and European wine traditions"
+        - "The tree literally connects the bottles of California wine to Mediterranean traditions through cork stoppers"
+        - "Some view planting cork oaks as a symbol of sustainability in wine production"
+    
+    - culture: "California Sustainable Landscaping"
+      physical_uses:
+        - "Planted as a drought-tolerant shade tree in large landscapes"
+        - "Used in Mediterranean-themed gardens to create authentic atmosphere"
+        - "Provides wildlife habitat in urban areas"
+        - "Used in educational gardens to demonstrate renewable resources"
+      symbolic_meaning:
+        - "Represents water-wise landscaping adapted to California's dry climate"
+        - "Symbolizes the cultural and ecological connections between California and Mediterranean regions"
+        - "Used as an example of trees that provide both ecological and commercial benefits"
+        - "Demonstrates how human uses and nature conservation can work together"
+  
+  # Additional physical characteristics
+  physical_characteristics:
+    height_range: "30-60 feet (about as tall as a 3-6 story building)"
+    growth_rate: "Slow to moderate, growing less than a foot per year"
+    crown_spread: "30-40 feet wide (about as wide as a school bus is long)"
+    lifespan: "150-250 years, with some trees living over 300 years"
+    trunk_diameter: "Up to 4 feet across (about as wide as a refrigerator)"
+    root_system: "Deep taproot with widespread lateral roots; drought-adapted"
+    toxicity: "Not toxic, though acorns contain tannins that are bitter and should not be eaten raw"
+    
+  conservation_status:
+    status: "Least Concern (not threatened globally, though some native habitats are declining)"
+    threats: 
+      - "Loss of traditional cork oak landscapes in Mediterranean countries"
+      - "Cork market competition from synthetic stoppers"
+      - "Diseases, particularly oak sudden death syndrome in some areas"
+      - "Climate change causing more severe droughts in native range"
+    protection_efforts:
+      - "Sustainable cork harvesting practices preserve trees and traditional landscapes"
+      - "Marketing efforts to promote natural cork over synthetic alternatives"
+      - "Research on disease resistance and drought tolerance"
+      - "Protection of traditional cork oak woodlands in Portugal and Spain"
+    
+  # Decision tree mapping
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: BARK-TEXT-02"  # Furrowed bark
+      - "feature_id: FRUIT-TYPE-01"  # Acorns present
+      - "feature_id: LEAF-EDGE-05"  # Spiny
+    confirmation_features:
+      - "feature_id: LEAF-COMPLEX-01"  # Simple broadleaf
+      - "feature_id: TREE-FORM-02"  # Rounded crown
+      - "feature_id: ECO-ADAPT-01"  # Drought tolerant
+      - "feature_id: LEAF-ARRANGE-01"  # Alternate
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-02", "LEAF-TYPE-02", "TREE-SIZE-02"]  # Rounded crown, evergreen, medium tree
+      - distance: "from_nearby"
+        features_to_check: ["BARK-TEXT-02", "FRUIT-TYPE-01", "LEAF-COMPLEX-01"]  # Furrowed bark, acorns, simple leaves
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-05", "LEAF-ARRANGE-01"]  # Spiny edge, alternate arrangement
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["BARK-TEXT-02", "LEAF-TYPE-02", "LEAF-COMPLEX-01"]
+        notes: "Distinctive bark and evergreen nature make spring identification reliable"
+      summer:
+        reliability: "High" 
+        key_features: ["BARK-TEXT-02", "LEAF-EDGE-05", "LEAF-TYPE-02"]
+        notes: "Thick cork bark is the most distinctive feature year-round"
+      fall:
+        reliability: "Very high"
+        key_features: ["BARK-TEXT-02", "FRUIT-TYPE-01", "LEAF-TYPE-02"]
+        notes: "Presence of acorns and evergreen nature when deciduous trees change color"
+      winter:
+        reliability: "High"
+        key_features: ["BARK-TEXT-02", "LEAF-TYPE-02"]
+        notes: "Evergreen nature stands out when deciduous trees are bare; thick bark is always distinctive"
+    misidentification_risks: "Most often confused with other evergreen oak species, particularly Holly Oak and Coast Live Oak"

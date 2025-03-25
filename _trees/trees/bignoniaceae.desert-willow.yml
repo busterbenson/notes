@@ -1,0 +1,340 @@
+tree:
+  common_name: "Desert Willow"
+  scientific_name: "Chilopsis linearis"
+  family: "Bignoniaceae"
+  
+  # Basic summary information
+  summary: "A small, drought-loving deciduous tree with long, thin willow-like leaves and beautiful trumpet-shaped flowers in shades of pink, purple, and white. Despite its name, it's not a true willow but belongs to the same family as catalpa and jacaranda. Native to desert washes in southwestern United States."
+  
+  # Identification priority
+  identification_path:
+    primary_markers: "Long, narrow willow-like leaves; showy pink to purple trumpet-shaped flowers; grows in dry, sunny locations"
+    secondary_markers: "Twisted, gnarly trunk and branches; long slender seed pods that look like bean pods; peeling, gray-brown bark"
+    seasonal_markers: "Colorful flowers from late spring through summer; long seed pods remain through winter; drops leaves in fall"
+    similar_species_differentiation: "Similar willow-like leaves to true willows, but has showy trumpet flowers and grows in dry places, unlike true willows that need lots of water"
+  
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves in the fall"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Leaves are single, not divided into multiple leaflets"
+      
+      - feature_id: "LEAF-SHAPE-02"  # Linear
+        notes: "Leaves are long, narrow, and willow-like"
+      
+      - feature_id: "LEAF-EDGE-01"  # Entire
+        notes: "Leaf edges are smooth with no teeth or lobes"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Produces noticeable trumpet-shaped flowers"
+      
+      - feature_id: "FRUIT-TYPE-05"  # Pods present
+        notes: "Forms long, narrow seed pods after flowering"
+      
+      - feature_id: "TREE-SIZE-01"  # Short tree
+        notes: "Usually grows 15-25 feet tall (about as tall as a 2-story house)"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Native to desert regions of southeastern California"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        notes: "Very drought-tolerant once established"
+      
+      - feature_id: "HABITAT-WATER-03"  # Dry slope habitat
+        notes: "Naturally grows in dry washes and desert slopes"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk"
+        exceptions: "Often develops multiple trunks, especially if damaged when young"
+      
+      - feature_id: "TREE-FORM-05"  # Irregular crown
+        notes: "Forms an irregular, somewhat open crown"
+        exceptions: "Shape can vary considerably based on growing conditions"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Bark often peels in thin strips"
+        exceptions: "Young trees may have smoother bark"
+      
+      - feature_id: "FLOWER-COLOR-02"  # Pink flowers
+        notes: "Flowers are typically shades of pink to lavender"
+        exceptions: "Some varieties have white or deeper purple flowers"
+    
+    sometimes_true:
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        conditions: "When grown in harsh conditions or if damaged"
+        notes: "May develop a multi-trunked form"
+      
+      - feature_id: "FLOWER-TIME-02"  # Summer flowering
+        conditions: "During hot months"
+        notes: "Main flowering period is often summer"
+      
+      - feature_id: "FLOWER-TIME-01"  # Spring flowering
+        conditions: "In warmer areas or during warm springs"
+        notes: "May start flowering in late spring"
+      
+      - feature_id: "WINTER-FEAT-02"  # Persistent fruits
+        conditions: "Fall through winter"
+        notes: "Seed pods often remain on tree through winter"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "When planted in well-drained soil"
+        notes: "Often used in drought-tolerant landscaping"
+      
+      - feature_id: "GEO-REGION-03"  # Southern California
+        conditions: "Native and widely planted in Southern California deserts"
+        notes: "Common in southeastern California desert regions"
+      
+      - feature_id: "GEO-REGION-02"  # Central California
+        conditions: "Planted in gardens and landscapes"
+        notes: "Can be grown in hot, dry areas of Central California"
+      
+      - feature_id: "FLOWER-COLOR-03"  # Red/purple flowers
+        conditions: "Some varieties or growing conditions"
+        notes: "Some trees produce darker purple-tinted flowers"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops its leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has compound leaves"
+      
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        notes: "Has long, narrow leaves, not tiny scales"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        notes: "Unlike true willows, doesn't grow along permanent water sources"
+      
+      - feature_id: "HABITAT-WATER-02"  # Wetland habitat
+        notes: "Never grows in wetlands; prefers dry conditions"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Never has thorns or spines"
+  
+  # Kid-friendly identification - expanded with open-ended, creative descriptions
+  kid_friendly_identification:
+    primary_identifier: "Long, skinny leaves like a willow tree, but with pretty pink trumpet flowers that grow in dry places"
+    memorable_comparison: "The flowers look like little pink trumpets or orchids, and the tree is tough enough to live in the desert!"
+    touch_tip: "The leaves feel slightly rough and papery; the bark feels flaky and peels off in strips"
+    smell_tip: "Some people think the flowers smell sweet, like honey or vanilla (but not everyone can smell it)"
+    fun_fact: "Desert Willow isn't a true willow at all! It's named 'Desert Willow' because it has long skinny leaves like a willow tree, but it's actually related to trumpet vines and jacaranda trees."
+    detective_steps:
+      - step: 1
+        instruction: "First, notice where the tree is growing. Is it in a dry, sunny place, not near water?"
+        yes_next: 2
+        no_next: "If it's growing near water, it might be a true willow, not a Desert Willow"
+      - step: 2
+        instruction: "Look at the leaves. Are they long, narrow, and willow-like, but growing on somewhat twisted branches?"
+        yes_next: 3
+        no_next: "Not a Desert Willow - try looking at trees with similar leaf shapes"
+      - step: 3
+        instruction: "Check for flowers or seed pods. Do you see trumpet-shaped pink or purple flowers, or long skinny seed pods?"
+        yes_next: 4
+        no_next: "If it's not flowering season, look for long bean-like seed pods or check the tree's overall size (usually smaller than true willows)"
+      - step: 4
+        instruction: "Look at the trunk and bark. Is the trunk often twisted with gray-brown peeling bark?"
+        yes_next: "You found a Desert Willow!"
+        no_next: "Maybe a different type of flowering tree - check a tree guidebook"
+  
+  regional_notes:
+    - region: "Southern California"
+      notes: "Native to southeastern desert regions; commonly planted in dry gardens"
+      locations: "Found in desert washes, ravines, and increasingly in drought-tolerant landscapes"
+    - region: "Central California"
+      notes: "Not native but planted as a drought-tolerant ornamental"
+      locations: "Found in xeriscape gardens and low-water landscapes"
+    - region: "Northern California"
+      notes: "Less common; needs hot summers to thrive"
+      locations: "Occasionally in drought-tolerant gardens in hotter inland areas"
+      
+  confirmation_checklist:
+    - feature: "Long, narrow willow-like leaves"
+      reliability: "High"
+      visibility: "Easy to see from nearby"
+    - feature: "Pink to purple trumpet-shaped flowers (spring/summer)"
+      reliability: "Very high"
+      visibility: "Visible from a distance when in bloom"
+    - feature: "Long, slender seed pods"
+      reliability: "High"
+      visibility: "Visible when present, especially after leaves drop"
+    - feature: "Twisted, gnarly growth habit"
+      reliability: "Medium"
+      visibility: "Noticeable when looking at the whole tree"
+    - feature: "Growing in a dry location, not near water"
+      reliability: "High"
+      visibility: "Obvious from context"
+    
+  look_alike_species:
+    - species: "True Willows (Salix species)"
+      differences: "True willows grow near water, not in dry areas; have catkins instead of showy flowers; more flexible branches"
+      identification_tip: "If it's growing near water and has fuzzy catkins instead of trumpet flowers, it's a true willow"
+    - species: "Catalpa (Catalpa species)"
+      differences: "Catalpa has much larger, heart-shaped leaves; larger white flowers with purple spots; thicker seed pods"
+      identification_tip: "If the leaves are big and heart-shaped instead of long and narrow, it's probably a Catalpa"
+    - species: "Russian Olive (Elaeagnus angustifolia)"
+      differences: "Has silvery-gray leaves; small, fragrant yellow flowers; olive-like fruits; often thorny"
+      identification_tip: "If the leaves are silvery-gray and it has olive-like fruits, it's Russian Olive"
+      
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Leaf buds break and light green leaves emerge; flower buds develop"
+      reproductive_activity: "Begins flowering in late spring in most areas"
+      identification_tips: "Early flowers start to appear as leaves are developing"
+      kid_friendly_tip: "In spring, the tree wakes up with fresh green leaves and starts to make pretty trumpet flowers"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of narrow green leaves"
+      reproductive_activity: "Peak flowering period with lots of blooms; early seed pods begin to develop"
+      identification_tips: "Showy flowers are most distinctive feature in summer"
+      kid_friendly_tip: "Summer is when the tree makes the most flowers - it can be covered in pink trumpets!"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow before dropping"
+      reproductive_activity: "Seed pods mature and begin to dry out; may still have some late flowers"
+      identification_tips: "Long seed pods become more visible as leaves drop"
+      kid_friendly_tip: "In fall, the leaves turn yellow and fall off, and you can see lots of long, skinny seed pods that look like green beans"
+    
+    - season: "Winter"
+      visual_changes: "Leafless with twisted, gnarly branches"
+      reproductive_activity: "Dry seed pods often remain on branches"
+      identification_tips: "Seed pods on bare branches; distinctive growth form"
+      kid_friendly_tip: "In winter, you can see the tree's twisted branches and long seed pods that look like bean pods hanging from the bare branches"
+      
+  cultural_ecological_notes:
+    - "Naturally grows in desert washes that have water occasionally but are dry most of the time"
+    - "Provides important shade and nesting sites for desert birds"
+    - "Flowers attract hummingbirds, native bees, and butterflies"
+    - "Very water-efficient once established, making it good for drought-prone areas"
+    - "Often used in erosion control in desert landscapes"
+    
+  range_within_california:
+    - "Native to southeastern California desert regions"
+    - "Found naturally in the Mojave and Sonoran Deserts"
+    - "Increasingly planted throughout Southern and Central California in drought-tolerant landscapes"
+    - "Can be grown in most regions with good drainage and hot summers"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Native American (Southwestern)"
+      physical_uses:
+        - "Flexible branches used to make baskets and hunting bows"
+        - "Wood used for building shelters and fuel"
+        - "Flowers and leaves used to make medicinal teas for coughs and colds"
+        - "Seeds sometimes eaten in times of scarcity"
+      symbolic_meaning:
+        - "Associated with finding water in desert regions"
+        - "Represents resilience and survival in harsh conditions"
+        - "Used in ceremonies related to water and fertility"
+        - "Seen as a bridge between desert and riparian worlds"
+    
+    - culture: "Southwestern United States"
+      physical_uses:
+        - "Popular in xeriscape and drought-tolerant landscaping"
+        - "Used as a shade tree in hot, sunny areas"
+        - "Planted for erosion control along drainage areas"
+        - "Wood occasionally used for small craft items"
+      symbolic_meaning:
+        - "Symbol of desert beauty and adaptation"
+        - "Represents the merging of beauty and toughness"
+        - "Increasingly associated with sustainable landscaping"
+        - "Becoming an icon of smart desert gardening"
+    
+    - culture: "Mexican Border Regions"
+      physical_uses:
+        - "Planted as a boundary marker along property lines"
+        - "Used medicinally for treating various ailments"
+        - "Flowers used in some traditional teas"
+        - "Planted to attract hummingbirds, which are culturally significant"
+      symbolic_meaning:
+        - "Associated with desert life and resilience"
+        - "Represents the beauty hidden in seemingly harsh landscapes"
+        - "Seen as a provider of life and beauty in difficult places"
+        - "Used in stories about finding resources in challenging environments"
+    
+    - culture: "California Modern Landscape"
+      physical_uses:
+        - "Featured in water-wise demonstration gardens"
+        - "Planted as an accent tree in drought-tolerant designs"
+        - "Used to create habitat for native wildlife in urban settings"
+        - "Incorporated into rain gardens and bioswales for seasonal water collection"
+      symbolic_meaning:
+        - "Represents the shift toward sustainable, climate-appropriate landscaping"
+        - "Symbol of California's adaptation to drought conditions"
+        - "Embodies the beauty of native and adapted plants"
+        - "Used to educate about water conservation and native plant benefits"
+    
+  # Additional physical characteristics not captured in features
+  physical_characteristics:
+    height_range: "15-25 feet (about as tall as a 2-story house)"
+    growth_rate: "Moderate, about 1-2 feet per year when young"
+    crown_spread: "15-20 feet wide when mature"
+    lifespan: "40-150 years, depending on conditions"
+    trunk_diameter: "Up to 1 foot across when fully grown"
+    root_system: "Deep, searching taproot with spreading surface roots"
+    toxicity: "Not toxic to humans or pets"
+    
+  conservation_status:
+    status: "Secure in the wild; not endangered"
+    threats: 
+      - "Over-collection of wild plants for landscaping in some areas"
+      - "Habitat loss due to development in desert regions"
+      - "Changes in water flow patterns in desert washes"
+    protection_efforts:
+      - "Increased propagation by nurseries reduces collection pressure"
+      - "Used in restoration projects in disturbed desert areas"
+      - "Protection in some desert preserves and national parks"
+    
+  # Decision tree mapping - helps with algorithm creation
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-SHAPE-02"  # Linear
+      - "feature_id: FLOWER-SIZE-01"  # Showy flowers
+      - "feature_id: HABITAT-WATER-03"  # Dry slope habitat
+    confirmation_features:
+      - "feature_id: FRUIT-TYPE-05"  # Pods present
+      - "feature_id: TREE-SIZE-01"  # Short tree
+      - "feature_id: ECO-ADAPT-01"  # Drought tolerant
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-01", "TREE-FORM-05", "FLOWER-SIZE-01"]  # Short tree, irregular crown, showy flowers
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SHAPE-02", "LEAF-EDGE-01", "FLOWER-COLOR-02"]  # Linear leaves, entire edge, pink flowers
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-05", "BARK-TEXT-03", "HABITAT-WATER-03"]  # Pods, peeling bark, dry habitat
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["LEAF-SHAPE-02", "LEAF-TYPE-01", "FLOWER-SIZE-01"]
+        notes: "Developing leaves and early flowers are helpful identifiers"
+      
+      summer:
+        reliability: "Very high" 
+        key_features: ["FLOWER-SIZE-01", "FLOWER-COLOR-02", "LEAF-SHAPE-02"]
+        notes: "Abundant flowers make summer identification very reliable"
+      
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-SHAPE-02", "FRUIT-TYPE-05", "LEAF-TYPE-01"]
+        notes: "Seed pods and yellowing leaves before leaf drop"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["FRUIT-TYPE-05", "TREE-FORM-05", "WINTER-FEAT-02"]
+        notes: "Persistent seed pods and gnarly growth form aid winter ID"
+    misidentification_risks: "Most often confused with true willows, but habitat and flowers distinguish it clearly"
+
+  wildlife_value:
+    nesting_sites: "Branches provide good nesting sites for desert birds"
+    food_source: "Flowers provide nectar for hummingbirds, bees, and butterflies"
+    shelter: "Offers shade and protection for wildlife in desert areas"
+    ecological_notes: "Important plant in desert wash ecosystems; one of few trees in harsh desert environments"
+    
+  propagation_information:
+    growing_conditions: "Needs full sun and well-drained soil"
+    water_needs: "Very drought-tolerant once established; needs occasional deep watering"
+    planting_tips: "Plant in a hot, sunny location with excellent drainage"
+    maintenance: "Little pruning needed; can be cut back if it gets too large"
+    special_notes: "Can be grown in large containers; avoid overwatering as it can cause root rot"

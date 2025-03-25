@@ -1,0 +1,272 @@
+tree:
+  common_name: "Sweet Birch"
+  scientific_name: "Betula lenta"
+  family: "Betulaceae"
+  
+  # Basic summary information
+  summary: "Sweet Birch is a medium-sized deciduous tree known for its dark, shiny bark that resembles cherry bark and its distinctive wintergreen aroma when twigs are scratched. Not native to California, it features simple, ovate to oblong leaves with finely doubly-serrated margins arranged alternately on branches. The tree produces both male and female catkins and yields small, winged nutlets in cone-like structures. While primarily found in the eastern United States, it occasionally appears as an ornamental specimen in California's cooler regions."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Dark, shiny reddish-brown to black bark that doesn't peel; strong wintergreen scent when twigs are scratched"
+    secondary_markers: "Ovate leaves with doubly-serrated edges; horizontal lenticels on bark"
+    seasonal_markers: "Pendulous male catkins in spring; yellow fall color; visible catkin buds in winter"
+    similar_species_differentiation: "Unlike River Birch, lacks peeling bark; unlike Black Cherry, has wintergreen scent and produces catkins, not cherries"
+
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01" # Deciduous
+        notes: "Loses all its leaves in fall"
+        
+      - feature_id: "LEAF-ARRANGEMENT-02" # Alternate
+        notes: "Leaves grow in an alternating pattern along branches"
+      
+      - feature_id: "LEAF-MARGIN-03" # Doubly serrate
+        notes: "Leaf edges have double rows of tooth-like serrations (big teeth with smaller teeth on them)"
+      
+      - feature_id: "SENSORY-SMELL-02" # Aromatic bark/twigs
+        notes: "Strong wintergreen aroma when bark or twigs are scratched"
+      
+      - feature_id: "FLOWER-TYPE-01" # Catkins present
+        notes: "Produces male and female catkins in spring"
+    
+    usually_true:
+      - feature_id: "TREE-SIZE-02" # Medium (30-50 feet)
+        notes: "Typically grows 30-50 feet tall"
+        exceptions: "May be smaller in poor conditions or larger in ideal settings"
+      
+      - feature_id: "LEAF-SHAPE-01" # Ovate
+        notes: "Leaves are oval to oblong with pointed tips"
+        exceptions: "Leaf shape can vary slightly depending on growing conditions"
+      
+      - feature_id: "LEAF-FALL-01" # Yellow fall color
+        notes: "Leaves typically turn golden yellow in autumn"
+        exceptions: "Color intensity varies with growing conditions"
+      
+      - feature_id: "BARK-COLOR-06" # Dark/black bark
+        notes: "Bark is dark reddish-brown to nearly black"
+        exceptions: "Young trees may have lighter colored bark"
+      
+      - feature_id: "HABITAT-05" # Planted in landscapes
+        notes: "In California, found in gardens and landscapes in cool areas"
+        exceptions: "Rare in hotter regions of California"
+    
+    sometimes_true:
+      - feature_id: "TREE-SIZE-03" # Large (50-100 feet)
+        conditions: "In optimal growing conditions over many decades"
+        notes: "Can reach larger size in ideal habitat"
+      
+      - feature_id: "LEAF-FALL-03" # Orange fall color
+        conditions: "In some years or growing conditions"
+        notes: "Leaves may develop orange tints in addition to yellow"
+      
+      - feature_id: "HABITAT-03" # Urban areas
+        conditions: "In cooler urban areas with adequate moisture"
+        notes: "Sometimes planted in parks and gardens in urban settings"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02" # Evergreen
+        notes: "Never keeps its leaves through winter"
+      
+      - feature_id: "BARK-TEXT-03" # Peeling bark
+        notes: "Unlike many other birches, bark does not peel"
+      
+      - feature_id: "BARK-COLOR-02" # White bark
+        notes: "Never has white bark like paper birch"
+      
+      - feature_id: "HABITAT-02" # Forests (in California)
+        notes: "Not found growing wild in California forests"
+
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Dark bark that smells like wintergreen gum when scratched"
+    memorable_comparison: "The bark looks like smooth, dark chocolate and smells like mint gum"
+    touch_tip: "The bark feels smooth and firm - it doesn't peel like other birches"
+    smell_tip: "With an adult's help, gently scratch a twig and smell the mint-like scent"
+    fun_fact: "People once made wintergreen candy and soda from this tree's sap! The wintergreen smell comes from the same natural chemical that's in mint gum."
+    
+    detective_steps:
+      - step: 1
+        instruction: "Look at the bark. Is it dark brown to almost black and smooth (not peeling)?"
+        yes_next: 2
+        no_next: "Probably not a Sweet Birch - check other birch trees with different bark"
+      - step: 2
+        instruction: "With an adult's help, gently scratch a twig with your fingernail and smell it. Does it smell like wintergreen gum or mint?"
+        yes_next: 3
+        no_next: "Not a Sweet Birch - check Black Cherry or other trees with dark bark"
+      - step: 3
+        instruction: "Look at the leaf edges. Do they have double rows of tiny teeth (like a saw blade with big and small teeth)?"
+        yes_next: "You found a Sweet Birch!"
+        no_next: "Might be another tree with dark bark - check the leaf shape and edges again"
+  
+  # Seasonal timeline
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Pendulous male catkins 2-3 inches long appear in groups; smaller upright female catkins develop; new leaves emerge light green"
+      reproductive_activity: "Male catkins release pollen; female catkins are pollinated by wind"
+      identification_tips: "Look for dangling male catkins and emerging leaves; wintergreen scent is strong in new growth"
+      kid_friendly_tip: "In spring, look for hanging 'caterpillar-like' catkins before or with the new leaves coming out"
+    
+    - season: "Summer" 
+      visual_changes: "Leaves reach full deep green color; female catkins develop into small cone-like structures"
+      reproductive_activity: "Female catkins mature into small erect seed-bearing structures"
+      identification_tips: "Look for deep green, doubly-serrated leaves and dark, non-peeling bark"
+      kid_friendly_tip: "By summer, the leaves are fully grown and dark green, and you can still smell the minty scent if you scratch a twig"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn golden yellow, occasionally with orange tints; cone-like structures release winged seeds"
+      reproductive_activity: "Seeds disperse by wind from mature cone-like fruit structures"
+      identification_tips: "Yellow fall color and dark, non-peeling bark remain distinctive features"
+      kid_friendly_tip: "In fall, the leaves turn golden yellow and small winged seeds fly away from the little cone-like fruits"
+    
+    - season: "Winter"
+      visual_changes: "Leafless state reveals smooth dark bark with lenticels; male catkins for next spring visible on branch tips"
+      reproductive_activity: "Dormant; male catkins formed for following spring"
+      identification_tips: "The dark, smooth, non-peeling bark and winter catkin buds are key identification features"
+      kid_friendly_tip: "In winter, look for the smooth, dark bark without any peeling, and tiny catkins waiting for spring"
+
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Dark, shiny, reddish-brown to black bark that does not peel"
+      reliability: "Very high"
+      visibility: "Easy - visible from nearby"
+    - feature: "Strong wintergreen scent when twigs are scratched or broken"
+      reliability: "Very high"
+      visibility: "Requires interaction - need to scratch and smell"
+    - feature: "Ovate to oblong leaves with doubly-serrated edges"
+      reliability: "High"
+      visibility: "Medium - need to examine leaves up close"
+    - feature: "Alternate leaf arrangement"
+      reliability: "High"
+      visibility: "Medium - need to be near the tree"
+    - feature: "Pendulous male catkins and smaller upright female catkins in spring"
+      reliability: "High (when present)"
+      visibility: "Easy - visible from nearby in spring"
+    - feature: "Yellow fall foliage"
+      reliability: "Medium"
+      visibility: "Easy - visible from a distance in fall"
+    
+  look_alike_species:
+    - species: "Black Cherry (Prunus serotina)"
+      differences: "Has similar dark bark with horizontal lenticels, but lacks the wintergreen scent; has elongated leaves with small, incurved teeth rather than doubly-serrated margins; produces true cherries, not catkins"
+      identification_tip: "Scratch a twig - Black Cherry has an almond-like scent rather than wintergreen"
+    - species: "River Birch (Betula nigra)"
+      differences: "Has distinctive peeling, reddish-brown bark unlike Sweet Birch's non-peeling bark; lacks the wintergreen scent"
+      identification_tip: "River Birch bark peels in curly paper-like sheets with a cinnamon color"
+    - species: "Yellow Birch (Betula alleghaniensis)"
+      differences: "Has yellowish, peeling bark; similar wintergreen scent but usually less intense; generally taller"
+      identification_tip: "Yellow Birch has golden-yellow, peeling bark rather than dark, smooth bark"
+    
+  cultural_ecological_notes:
+    - "Native to eastern North America, only found in California as an ornamental planting"
+    - "Contains methyl salicylate (oil of wintergreen) in its bark and twigs, historically used for flavoring and medicine"
+    - "Requires moist, well-drained, acidic soils and is somewhat sensitive to drought and heat"
+    - "Performs best in coastal or mountain microclimates in California"
+    - "Has historically been tapped like maple trees to make birch beer and syrup"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Indigenous Peoples of Eastern North America"
+      physical_uses:
+        - "Made tea from the bark to treat colds, stomach problems, and pain"
+        - "Used the sap to make a sweet drink similar to maple syrup"
+        - "Created medicine for muscle aches by soaking bark in water"
+        - "Carved the wood for spoons, bowls, and cooking tools"
+      symbolic_meaning:
+        - "Valued for bringing wellness and relief from pain in healing traditions"
+        - "Represented the sweetness of life through its sap used in beverages"
+        - "Seen as a provider of both food and medicine in one tree"
+    
+    - culture: "Early American Settlers"
+      physical_uses:
+        - "Distilled oil of wintergreen from the bark and sap for medicine and flavoring"
+        - "Tapped trees to make birch beer, a fermented drink"
+        - "Used the wood for furniture, flooring, and tool handles"
+        - "Made a tea from new twigs and buds to treat colds and fevers"
+      symbolic_meaning:
+        - "Represented self-sufficiency and resourcefulness for frontier families"
+        - "Symbolized the ability to make medicine from natural resources"
+    
+    - culture: "19th Century Commercial"
+      physical_uses:
+        - "Harvested extensively for commercial production of oil of wintergreen"
+        - "Used the fine-grained wood for high-quality furniture"
+        - "Finished the wood to resemble cherry or mahogany for cabinetry"
+      symbolic_meaning:
+        - "Represented America's natural pharmacy before synthetic medicines"
+        - "Became a symbol of unsustainable harvesting as wild populations were depleted"
+    
+  range_within_california:
+    - "Not native to California - found only as an ornamental planting"
+    - "Occasionally found in botanical gardens, arboreta, and some residential landscapes"
+    - "Most successful in coastal areas with moderate temperatures and consistent moisture"
+    - "Also grows in northern mountain regions that resemble its native eastern habitat"
+    - "Rare in southern and central valley regions due to heat and drought sensitivity"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "30-60 feet (about as tall as a 5-6 story building)"
+    growth_rate: "Moderate"
+    crown_spread: "20-40 feet wide at maturity"
+    lifespan: "Up to 250 years"
+    trunk_diameter: "1-2 feet across when mature"
+    root_system: "Moderately shallow, spreading root system"
+    toxicity: "Not toxic to humans or animals"
+  
+  conservation_status:
+    status: "Not threatened"
+    threats: 
+      - "No major threats to the species in its native range"
+      - "Climate change may affect habitat suitability in parts of its range"
+      - "In California, restricted by climate and soil requirements"
+    protection_efforts:
+      - "Common within its native range and not requiring special conservation efforts"
+      - "Used in eastern forest restoration projects"
+      - "Seeds and genetic material preserved in seed banks"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-ARRANGEMENT-02"  # Alternate
+      - "feature_id: SENSORY-SMELL-02"  # Aromatic bark/twigs
+    confirmation_features:
+      - "feature_id: BARK-COLOR-06"  # Dark/black bark
+      - "feature_id: LEAF-MARGIN-03"  # Doubly serrate
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-TYPE-01", "TREE-SIZE-02"]  # Deciduous, medium tree
+      - distance: "from_nearby"
+        features_to_check: ["BARK-COLOR-06", "LEAF-ARRANGEMENT-02"]  # Dark bark, alternate leaves
+      - distance: "close_inspection"
+        features_to_check: ["SENSORY-SMELL-02", "LEAF-MARGIN-03"]  # Wintergreen scent, doubly serrate
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["FLOWER-TYPE-01", "SENSORY-SMELL-02"]
+        notes: "Catkins and strong wintergreen scent in new growth"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["SENSORY-SMELL-02", "LEAF-MARGIN-03"]
+        notes: "Distinctive scent and doubly-serrated leaf margins"
+      
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-FALL-01", "SENSORY-SMELL-02"]
+        notes: "Yellow fall color and wintergreen scent"
+      
+      winter:
+        reliability: "High"
+        key_features: ["BARK-COLOR-06", "SENSORY-SMELL-02"]
+        notes: "Dark, non-peeling bark and wintergreen scent remain year-round"
+    misidentification_risks: 
+      - "Black Cherry has similar bark but lacks wintergreen scent"
+      - "Other birches typically have peeling or white bark unlike Sweet Birch"
+  
+  wildlife_value:
+    - "Seeds eaten by finches, chickadees, and other small songbirds"
+    - "Buds, catkins, and young twigs browsed by deer and rabbits"
+    - "Serves as a larval host for several butterfly and moth species, including the mourning cloak butterfly"
+    - "Young trees with thin bark may be used by woodpeckers"
+    - "In California landscapes, contributes to urban biodiversity by providing food and habitat for birds and insect pollinators"
+    - "Native trees generally offer greater ecological benefits to local wildlife than non-native Sweet Birch"

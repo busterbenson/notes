@@ -1,0 +1,340 @@
+tree:
+  common_name: "European Aspen"
+  scientific_name: "Populus tremula"
+  family: "Salicaceae"
+  
+  # Basic summary information
+  summary: "A medium-sized deciduous tree with smooth, greenish-white bark and round leaves that tremble in the slightest breeze. Known for its flattened leaf stalks that cause the distinctive leaf movement, bright yellow fall color, and ability to grow in colonies from connected roots."
+  
+  # Identification priority
+  identification_path:
+    primary_markers: "Round leaves that tremble in light wind; smooth, greenish-white bark with diamond-shaped dark marks"
+    secondary_markers: "Flattened leaf stalks; trees often growing in connected groups; straight, slender trunk"
+    seasonal_markers: "Bright yellow fall color; catkins before leaves appear in spring"
+    similar_species_differentiation: "Very similar to Quaking Aspen but with slightly larger leaves; unlike birches, has no peeling bark; unlike cottonwoods, has smaller, rounder leaves"
+  
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops all its leaves in fall after they turn golden yellow"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Each leaf is a single piece, not divided into leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow in a zigzag pattern along the twigs, not directly across from each other"
+      
+      - feature_id: "BARK-COLOR-02"  # White bark
+        notes: "Smooth, greenish-white bark, especially on younger parts of the tree"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Bark stays smooth even on mature trees, especially in upper portions"
+      
+      - feature_id: "LEAF-SHAPE-01"  # Oval/Round
+        notes: "Leaves are round to oval with a blunt tip"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated
+        notes: "Leaf edges have small, rounded teeth all around"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        notes: "Leaves turn bright golden yellow in autumn"
+      
+      - feature_id: "ECO-REL-01"  # Beneficial to ecosystem
+        notes: "Can spread underground to create a whole grove of trees that are all connected"
+      
+      - feature_id: "FLOWER-TYPE-01"  # Catkins present
+        notes: "Produces dangling catkins in early spring before leaves appear"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        notes: "Not native to California; originally from Europe and parts of Asia"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one straight, slender trunk"
+        exceptions: "Sometimes sends up multiple trunks from the same root system, especially after disturbance"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Develops a rounded or oval-shaped crown when mature"
+        exceptions: "Trees in dense forests may have narrower, less developed crowns"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Typically grows 65-100 feet tall (about as tall as a 6-10 story building)"
+        exceptions: "May remain shorter in harsh conditions or when young"
+    
+    sometimes_true:
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Very old trees or at the base of large trees"
+        notes: "The lower part of old trees may develop blackish fissures"
+      
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        conditions: "Lower trunk of mature trees"
+        notes: "The bark near the base may become grayer with age"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        conditions: "When planted in suitable areas"
+        notes: "Often found near streams and in moist areas"
+      
+      - feature_id: "FRUIT-TYPE-02"  # Winged seeds
+        conditions: "After flowering in spring"
+        notes: "Produces tiny seeds with cottony fluff that floats in the air"
+      
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        conditions: "After disturbance or damage"
+        notes: "May grow multiple trunks from the same root system, especially after being cut or burned"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "When planted in appropriate locations"
+        notes: "Can be used in landscaping if given enough space and proper conditions"
+      
+      - feature_id: "LEAF-COLOR-04"  # Silver undersides
+        conditions: "Mature leaves"
+        notes: "Leaf undersides may have a slightly silvery appearance"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Never keeps its leaves through winter"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Bark doesn't peel in curls or strips like birch trees"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Never has thorns or spines on branches"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Never produces cones; makes catkins and cottony seeds instead"
+      
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        notes: "Has flat, broad leaves, not tiny scales"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has round leaves, not needles"
+      
+      - feature_id: "LEAF-EDGE-01"  # Entire margin
+        notes: "Leaf edges always have teeth, never smooth"
+  
+  # Kid-friendly identification - expanded with open-ended, creative descriptions
+  kid_friendly_identification:
+    primary_identifier: "Round leaves that dance and flutter even in the gentlest breeze"
+    memorable_comparison: "The leaves look like tiny green dinner plates that never stop wiggling and dancing in the wind"
+    touch_tip: "The bark feels smooth and cool like paper, and the leaf stalks are flat like tiny ribbons"
+    smell_tip: "The leaves don't have a strong smell, but new buds in spring can smell a bit sweet"
+    fun_fact: "European Aspens are super social trees! They can grow a whole family of trees all connected underground by their roots. When you see a group of aspens with similar size, they might all be brothers and sisters from the same parent plant!"
+    detective_steps:
+      - step: 1
+        instruction: "Look at the bark. Is it smooth and greenish-white with dark diamond shapes on it?"
+        yes_next: 2
+        no_next: "If the bark is rough, peeling, or dark brown, it's probably not a European Aspen"
+      - step: 2
+        instruction: "Look at the leaves. Are they round with small teeth around the edges?"
+        yes_next: 3
+        no_next: "If the leaves are long, pointy, or have deep lobes, it's not a European Aspen"
+      - step: 3
+        instruction: "Watch the leaves when there's a breeze. Do they tremble and flutter noticeably even in very light wind?"
+        yes_next: "You may have found a European Aspen! (It looks very similar to Quaking Aspen, so it's hard to be sure without more experience)"
+        no_next: "If the leaves stay mostly still in light wind, it might be a different type of tree"
+      
+  confirmation_checklist:
+    - feature: "Smooth greenish-white bark with dark diamond-shaped lenticels"
+      reliability: "Very high"
+      visibility: "Easy to see from far away"
+    - feature: "Round leaves with small teeth that tremble noticeably in breeze"
+      reliability: "Very high"
+      visibility: "Medium - need to look at leaves and wait for wind"
+    - feature: "Trees often growing in groups with similar size"
+      reliability: "High"
+      visibility: "Easy to see from far away"
+    - feature: "Bright yellow fall color (in autumn)"
+      reliability: "Very high"
+      visibility: "Very easy to spot from far away in fall"
+    
+  look_alike_species:
+    - species: "Quaking Aspen (Populus tremuloides)"
+      differences: "Quaking Aspen is the American counterpart and looks extremely similar; European Aspen may have slightly larger leaves with blunter teeth"
+      identification_tip: "Very difficult to tell apart from Quaking Aspen for most people; European Aspen is not common in California except where planted"
+    - species: "Bigtooth Aspen (Populus grandidentata)"
+      differences: "Bigtooth Aspen has larger, more pronounced teeth on leaf edges"
+      identification_tip: "European Aspen has smaller, more regular teeth around leaf edges"
+    - species: "Paper Birch (Betula papyrifera)"
+      differences: "Paper Birch has peeling white bark and more triangular leaves"
+      identification_tip: "If the bark peels like paper, it's a birch, not an aspen"
+      
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Catkins appear before leaves; then small leaves emerge and expand quickly"
+      reproductive_activity: "Produces dangling catkins in early spring"
+      identification_tips: "Catkins appear before leaves; look for small, developing leaves"
+      kid_friendly_tip: "In spring, look for fuzzy 'caterpillars' hanging down before the leaves come out"
+    
+    - season: "Summer" 
+      visual_changes: "Full crown of round green leaves that flutter in the wind"
+      reproductive_activity: "Catkins mature and release tiny seeds with cottony fluff"
+      identification_tips: "The constant movement of leaves in any breeze is very distinctive"
+      kid_friendly_tip: "In summer, the leaves never stop moving - they shake and shimmer like they're always applauding"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn bright golden-yellow, creating spectacular displays"
+      reproductive_activity: "No reproductive activity; tree prepares for dormancy"
+      identification_tips: "One of the brightest yellow fall colors in the landscape"
+      kid_friendly_tip: "In fall, the whole tree turns golden-yellow like treasure!"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches with smooth pale bark stand out against other trees"
+      reproductive_activity: "Dormant; flower buds develop for next spring"
+      identification_tips: "Pale trunks and branches are distinctive in winter landscape"
+      kid_friendly_tip: "In winter, the pale trunks look like skinny ghosts standing in the forest"
+      
+  cultural_ecological_notes:
+    - "Important pioneer species in Europe, often first to colonize disturbed areas"
+    - "Can grow in a wide range of soils and conditions but prefers moist areas"
+    - "A single root system can create a whole grove of connected trees"
+    - "Provides habitat for many European birds, insects, and mammals"
+    - "Bark contains compounds similar to aspirin used in traditional medicine"
+    - "Short-lived trunks (60-80 years) but root systems can persist for centuries"
+    
+  range_within_california:
+    - "Not native to California"
+    - "Occasionally planted as an ornamental or in landscape settings"
+    - "Not widely established or naturalized in California"
+    - "When planted, does best in cooler, moister areas of the state"
+    - "Similar ecological role to the native Quaking Aspen, which is more common"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "European Forest Traditions"
+      physical_uses:
+        - "Used the wood for matches, paper pulp, and packing materials"
+        - "Made wooden shoes and clogs from the soft, easy-to-carve wood"
+        - "Created charcoal from the wood for artwork and filtration"
+        - "Used the bark for making medicinal teas for pain and fever"
+      symbolic_meaning:
+        - "The trembling leaves were believed to represent constant conversation with nature spirits"
+        - "In some traditions, thought to protect against evil because the leaves never stop moving"
+        - "Used as a symbol of resilience due to its ability to regrow after being cut down"
+        - "The yellow autumn color was associated with the sun and harvest celebrations"
+    
+    - culture: "Nordic Countries"
+      physical_uses:
+        - "Used for sauna benches because the wood doesn't splinter when wet"
+        - "Made food storage containers that added no taste to the contents"
+        - "Created traditional wooden toys and small carvings"
+        - "Used in traditional construction for interior elements and parts of buildings"
+      symbolic_meaning:
+        - "Featured in folk songs and poetry about the sounds of aspen leaves in the wind"
+        - "Connected to myths about trees that can communicate through their rustling leaves"
+        - "Associated with change and transformation due to dramatic seasonal color changes"
+        - "In some stories, seen as a tree that bridges the human world and spirit world"
+    
+    - culture: "Traditional European Medicine"
+      physical_uses:
+        - "Used bark extracts to make medicines for reducing fever and pain"
+        - "Created poultices from the inner bark to treat skin conditions"
+        - "Made teas from the buds to treat winter coughs and congestion"
+        - "Chewed young twigs as a natural toothbrush and mouth cleanser"
+      symbolic_meaning:
+        - "Associated with healing and purification in folk remedies"
+        - "Considered a 'protective' tree that could ward off illness when planted near homes"
+        - "Connected with resilience and rejuvenation because of rapid regrowth"
+        - "Used in ceremonies about health restoration and transformation"
+  
+  kid_friendly_cultural_significance:
+    - culture: "European Forest People"
+      physical_uses:
+        - "Made matches and paper from the wood because it's soft and light"
+        - "Carved wooden toys like dolls and animals from the easy-to-cut wood"
+        - "Used the bark to make medicine for headaches and fevers"
+        - "Built light objects like baskets and boxes from the bendy branches"
+      symbolic_meaning:
+        - "Believed the constantly moving leaves helped keep away bad dreams"
+        - "Used the sound of aspen leaves to tell when rain was coming"
+        - "Taught children that trees that grow together as a family are stronger"
+        - "Told stories about the aspen's golden fall color being the sun's treasure"
+    
+    - culture: "Nordic Countries"
+      physical_uses:
+        - "Used the special wood for benches in saunas because it doesn't get too hot or splinter"
+        - "Made food containers that didn't make the food taste like wood"
+        - "Created special whistles from hollow branches to call animals or signal others"
+        - "Used branches to make brooms for special cleaning before holidays"
+      symbolic_meaning:
+        - "Wrote songs about the whispering sound aspen leaves make in the wind"
+        - "Believed aspens could share secrets through their connected roots"
+        - "Used the trees as landmarks because they're easy to spot with their pale trunks"
+        - "Told stories about how the aspen learned to dance from watching children play"
+  
+  # Additional physical characteristics
+  physical_characteristics:
+    height_range: "65-100 feet tall (about as tall as a 6-10 story building)"
+    growth_rate: "Fast growing; can add 2-3 feet per year when young"
+    crown_spread: "25-40 feet wide when fully grown"
+    lifespan: "Individual trunks live 60-80 years; root systems can live much longer"
+    trunk_diameter: "1-2.5 feet across when mature"
+    root_system: "Extensive, with spreading roots that can send up new trees"
+    toxicity: "Not toxic to people or animals"
+    
+  conservation_status:
+    status: "Least Concern (common and widespread in native range)"
+    threats: 
+      - "Urban development in some regions"
+      - "Climate change affecting distribution in some areas"
+      - "Not threatened as a species"
+      - "Some browsing pressure from deer and other wildlife"
+    protection_efforts:
+      - "No specific conservation measures needed"
+      - "Sometimes used in habitat restoration projects"
+      - "Valued in reforestation after disturbances"
+      - "Protected in some nature reserves within native range"
+    
+  # Decision tree mapping
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: BARK-COLOR-02"  # White bark
+      - "feature_id: BARK-TEXT-01"  # Smooth bark
+      - "feature_id: LEAF-SHAPE-01"  # Oval/Round leaves
+    confirmation_features:
+      - "feature_id: LEAF-EDGE-02"  # Serrated
+      - "feature_id: LEAF-FALL-01"  # Yellow fall color
+      - "feature_id: FLOWER-TYPE-01"  # Catkins present
+      - "feature_id: ECO-REL-01"  # Growing in connected groves
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["BARK-COLOR-02", "TREE-FORM-02", "LEAF-TYPE-01"]  # White bark, rounded crown, deciduous
+      - distance: "from_nearby"
+        features_to_check: ["BARK-TEXT-01", "LEAF-SHAPE-01", "LEAF-EDGE-02"]  # Smooth bark, round leaves, serrated edges
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-ARRANGE-01", "FRUIT-TYPE-02"]  # Alternate leaf arrangement, cottony seeds when present
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["FLOWER-TYPE-01", "BARK-COLOR-02", "BARK-TEXT-01"]
+        notes: "Catkins and emerging leaves; pale bark visible year-round"
+      
+      summer:
+        reliability: "Very high" 
+        key_features: ["LEAF-SHAPE-01", "LEAF-EDGE-02", "BARK-COLOR-02"]
+        notes: "Fluttering round leaves and pale bark make summer identification easy"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["LEAF-FALL-01", "BARK-COLOR-02", "ECO-REL-01"]
+        notes: "Golden-yellow fall color is unmistakable, especially in groves"
+      
+      winter:
+        reliability: "High"
+        key_features: ["BARK-COLOR-02", "BARK-TEXT-01", "ECO-REL-01"]
+        notes: "Pale trunks stand out in winter landscape"
+    misidentification_risks:
+      - species: "Quaking Aspen (Populus tremuloides)"
+        distinguishing_features: "Very similar; European Aspen might have slightly larger leaves with blunter teeth"
+      - species: "Paper Birch (Betula papyrifera)"
+        distinguishing_features: "Paper Birch has peeling bark and more triangular leaves"
+      - species: "Bigtooth Aspen (Populus grandidentata)"
+        distinguishing_features: "Bigtooth Aspen has larger, more pronounced teeth on leaf edges"
+  
+  wildlife_value:
+    - "Provides nesting sites for many bird species"
+    - "Leaves are food for various caterpillars and insects"
+    - "Seeds feed birds and small mammals"
+    - "Bark is eaten by deer, elk, and other browsers in winter"
+    - "Dead trees create important habitat for cavity-nesting birds"
+    - "Young suckers provide browse for deer and other herbivores"

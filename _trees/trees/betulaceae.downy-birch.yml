@@ -1,0 +1,277 @@
+tree:
+  common_name: "Downy Birch"
+  scientific_name: "Betula pubescens"
+  family: "Betulaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A deciduous tree with white to grayish bark that doesn't peel as much as paper birch. It has oval to diamond-shaped leaves with doubly serrated edges, and young twigs and leaf stems covered with tiny soft hairs (giving it the 'downy' name)."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "White to grayish bark; oval leaves with double-toothed edges; soft hairs on young twigs and leaf stems"
+    secondary_markers: "Triangular or diamond-shaped leaves; yellowish-brown male catkins in spring; small, upright female seed catkins"
+    seasonal_markers: "Bright yellow fall color; male catkins visible all winter; new leaves have soft hairy texture in spring"
+    similar_species_differentiation: "Less peeling bark than Paper Birch; softer, hairier twigs than Silver Birch; rounder leaves than River Birch"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple
+        notes: "Leaves are single pieces, not made of smaller leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow in an alternating pattern along the branches, not in pairs"
+      
+      - feature_id: "LEAF-EDGE-03"  # Doubly serrated
+        notes: "Leaf edges have double teeth (small teeth on larger teeth)"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        notes: "Not native to California; originally from Europe, Asia, and northern Africa"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Often grows with one main trunk"
+        exceptions: "Can develop multiple stems, especially after damage"
+      
+      - feature_id: "BARK-COLOR-02"  # White bark
+        notes: "Bark is white to grayish-white"
+        exceptions: "Base of trunk often darker; young trees have reddish-brown bark"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Typically reaches 40-60 feet tall"
+        exceptions: "May remain smaller in poor conditions"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        notes: "Leaves typically turn bright yellow in fall"
+        exceptions: "Color intensity can vary depending on weather conditions"
+    
+    sometimes_true:
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        conditions: "When damaged or in certain growing conditions"
+        notes: "May grow with multiple stems from base"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        conditions: "Mature trees, but less pronounced than in Paper Birch"
+        notes: "Bark may peel slightly in thin horizontal strips"
+      
+      - feature_id: "FLOWER-TYPE-01"  # Catkins present
+        conditions: "Spring for female catkins; male catkins visible from fall through spring"
+        notes: "Produces hanging male catkins and upright female catkins"
+      
+      - feature_id: "HABITAT-WATER-02"  # Wetland habitat
+        conditions: "In its native range"
+        notes: "Often found in moist areas, bogs, and cool valleys"
+      
+      - feature_id: "TWIG-FORM-01"  # Twigs zigzag
+        conditions: "More noticeable in winter"
+        notes: "Twigs often grow in a slight zigzag pattern"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops its leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has compound leaves"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves never grow directly across from each other"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Never develops thorns or spines"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "White to grayish bark and soft, fuzzy young twigs and leaf stems"
+    memorable_comparison: "The young twigs and leaf stems feel like they have baby-soft fuzz on them - that's why it's called 'downy'"
+    touch_tip: "Gently feel the young twigs and leaf stems - they should feel soft and fuzzy like a stuffed animal"
+    smell_tip: "The leaves have a mild, fresh scent when crushed"
+    fun_fact: "Downy Birch trees can easily grow where other trees struggle! They're one of the first trees to grow back after a forest fire, and they can even grow in boggy areas where their roots are almost completely underwater!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "Look at the bark. Is it white to grayish-white but not peeling much?"
+        yes_next: 2
+        no_next: "If the bark peels a lot in thin curls, check for Paper Birch instead"
+      - step: 2
+        instruction: "Gently touch the young twigs or leaf stems. Do they feel slightly fuzzy or hairy?"
+        yes_next: 3
+        no_next: "If the twigs are smooth and have no hairs, check for Silver Birch or other birches"
+      - step: 3
+        instruction: "Look at the leaf shape. Are they oval to diamond-shaped with double-toothed edges?"
+        yes_next: 4
+        no_next: "If the leaves have a different shape, it might be another birch species"
+      - step: 4
+        instruction: "If it's fall, are the leaves turning yellow? In spring, do you see hanging catkins?"
+        yes_next: "You found a Downy Birch!"
+        no_next: "It still might be a Downy Birch, but check that it has both white bark and fuzzy twigs"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaves emerge light green with soft hairy texture; male catkins elongate and release pollen; small female catkins appear"
+      reproductive_activity: "Male catkins release pollen; female catkins are pollinated by wind"
+      identification_tips: "Downy texture on new growth; both male and female catkins visible"
+      kid_friendly_tip: "In spring, look for the fuzzy new leaves and yellowish 'worm-like' pollen catkins hanging down"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of medium green leaves; female catkins develop into small cone-like structures"
+      reproductive_activity: "Female catkins mature into seed-bearing structures"
+      identification_tips: "Fully developed leaves; white bark contrasts with green leaves"
+      kid_friendly_tip: "In summer, the leaves are fully grown but you can still feel the softness on leaf stems"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn bright yellow; small seed catkins mature and break apart to release seeds"
+      reproductive_activity: "Seeds disperse from mature female catkins; new male catkins begin forming for next year"
+      identification_tips: "Bright yellow fall color; new male catkins visible for next spring"
+      kid_friendly_tip: "In fall, the leaves turn bright yellow like sunshine, and you can see next year's catkins starting to form"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches reveal white bark and dark twigs; male catkins persist through winter"
+      reproductive_activity: "Dormant; male catkins wait until spring to release pollen"
+      identification_tips: "White bark stands out in winter landscape; male catkins visible; fine branching pattern"
+      kid_friendly_tip: "In winter, you can easily see the white trunk and branches against the sky, with little catkins hanging like decorations"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "White to grayish bark that doesn't peel much"
+      reliability: "High"
+      visibility: "Visible from a distance"
+    - feature: "Soft downy hairs on young twigs and leaf stems"
+      reliability: "Very high"
+      visibility: "Need close inspection and touch"
+    - feature: "Oval to diamond-shaped leaves with double-toothed edges"
+      reliability: "High"
+      visibility: "Need to observe leaves up close"
+    - feature: "Catkins present in spring (both male and female)"
+      reliability: "High (seasonal)"
+      visibility: "Male catkins easily visible; female catkins smaller"
+    
+  look_alike_species:
+    - species: "Paper Birch (Betula papyrifera)"
+      differences: "Paper Birch has more dramatically peeling bark that comes off in paper-like sheets; twigs less hairy"
+      identification_tip: "Downy Birch twigs feel soft and fuzzy; Paper Birch bark peels much more extensively"
+    
+    - species: "Silver Birch (Betula pendula)"
+      differences: "Silver Birch has more diamond-shaped leaves, smoother twigs, and often more pendulous branches"
+      identification_tip: "Silver Birch twigs are smooth and often have small resin dots; Downy Birch twigs feel fuzzy"
+    
+    - species: "River Birch (Betula nigra)"
+      differences: "River Birch has salmon to cinnamon-colored peeling bark and more triangular leaves"
+      identification_tip: "River Birch bark has a distinct pinkish to reddish-brown color, not white like Downy Birch"
+  
+  cultural_ecological_notes:
+    - "Tolerates wet, boggy soils where many other trees struggle"
+    - "Pioneer species that helps reestablish forests after disturbances"
+    - "Supports many insects, birds, and mammals in its native range"
+    - "Wood used traditionally for furniture, tools, and firewood"
+    
+  cultural_significance:
+    - culture: "Northern European Peoples"
+      physical_uses:
+        - "Used the wood for furniture, tool handles, and turning"
+        - "Made brooms from the twigs and branches"
+        - "Used the bark for waterproofing roofs"
+        - "Made a medicinal tea from the leaves to treat inflammation"
+      symbolic_meaning:
+        - "Associated with new beginnings and purification"
+        - "Connected to fertility and springtime in folk traditions"
+    
+    - culture: "Scottish and Irish Traditions"
+      physical_uses:
+        - "Used the wood for cradles and children's toys"
+        - "Made traditional canoe-like boats (currachs) with birch frames"
+        - "Created medicinal oils and teas from bark and leaves"
+      symbolic_meaning:
+        - "Symbol of youth, rebirth, and adaptation"
+        - "In Celtic tradition, associated with beginnings and inception"
+    
+    - culture: "Contemporary Landscape Design"
+      physical_uses:
+        - "Planted for ornamental value in parks and gardens"
+        - "Used in naturalistic landscape designs"
+        - "Selected for boggy areas or rain gardens"
+      symbolic_meaning:
+        - "Represents northern forest aesthetics"
+        - "Adds winter interest through white bark"
+  
+  range_within_california:
+    - "Not native to California"
+    - "Occasionally planted as an ornamental tree"
+    - "Not widely established in California's wild areas"
+    - "More successful in cooler, moister northern areas of the state"
+    
+  physical_characteristics:
+    height_range: "40-60 feet tall"
+    growth_rate: "Moderate to fast; 1-2 feet per year"
+    crown_spread: "20-30 feet wide at maturity"
+    lifespan: "60-90 years"
+    trunk_diameter: "1-2 feet when mature"
+    root_system: "Shallow and wide-spreading"
+    toxicity: "Not toxic to humans or animals"
+    
+  conservation_status:
+    status: "Not threatened (Least Concern)"
+    threats: "No major threats in native range"
+    protection_efforts: "No specific protection efforts needed"
+  
+  kid_friendly_cultural_significance:
+    - culture: "People in Northern Europe"
+      physical_uses:
+        - "Made toys and baby cribs from the soft wood"
+        - "Used the bendy branches to make baskets and brooms for sweeping"
+        - "Collected special juice (sap) from the tree in spring to make a sweet drink"
+        - "Used the bark to make containers that wouldn't leak"
+      symbolic_meaning:
+        - "People thought the tree brought good luck to new babies"
+        - "The tree's ability to grow where other trees can't showed that even in tough places, life can thrive"
+  
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: BARK-COLOR-02"  # White bark
+      - "feature_id: LEAF-EDGE-03"  # Doubly serrated
+    confirmation_features:
+      - "feature_id: TWIG-TEXT-01"  # Downy twigs
+      - "feature_id: FLOWER-TYPE-01"  # Catkins present
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-TYPE-01", "BARK-COLOR-02", "TREE-SIZE-02"]  # Deciduous, white bark, medium tree
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-EDGE-03", "FLOWER-TYPE-01"]  # Doubly serrated leaves, catkins
+      - distance: "close_inspection"
+        features_to_check: ["TWIG-TEXT-01", "LEAF-ARRANGE-01"]  # Downy twigs, alternate leaves
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["FLOWER-TYPE-01", "TWIG-TEXT-01", "BARK-COLOR-02"]
+        notes: "Catkins and downy new growth are distinctive"
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-EDGE-03", "BARK-COLOR-02", "TWIG-TEXT-01"]
+        notes: "Leaf shape and edges, plus downy twigs and leaf stems"
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-FALL-01", "BARK-COLOR-02", "TWIG-TEXT-01"]
+        notes: "Yellow fall color, white bark, downy twigs"
+      winter:
+        reliability: "Medium"
+        key_features: ["BARK-COLOR-02", "FLOWER-TYPE-01", "TWIG-TEXT-01"]
+        notes: "White bark, persistent male catkins, downy twigs"
+    misidentification_risks: 
+      - species: "Paper Birch (Betula papyrifera)"
+        distinguishing_features: "Downy Birch has much less peeling bark and hairier twigs than Paper Birch"
+      - species: "Silver Birch (Betula pendula)"
+        distinguishing_features: "Downy Birch has hairier twigs and more oval leaves than the smoother-twigged Silver Birch"
+      - species: "River Birch (Betula nigra)"
+        distinguishing_features: "Downy Birch has white bark; River Birch has salmon to cinnamon-colored peeling bark"
+  
+  wildlife_value:
+    - "Seeds eaten by finches, siskins, and other small birds"
+    - "Foliage is food for many moth caterpillars"
+    - "Supports various insects that are food for birds"
+    - "Provides nesting sites for smaller birds"
+    - "Older trees with cavities offer homes for woodpeckers and other cavity-nesting birds"

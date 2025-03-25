@@ -1,0 +1,290 @@
+tree:
+  common_name: "Black Spruce"
+  scientific_name: "Picea mariana"
+  family: "Pinaceae"
+  
+  # Basic summary
+  summary: "A small to medium-sized evergreen tree with a narrow, spire-like shape and short, bluish-green needles. It has distinctive small, roundish cones that stay on the tree for many years, and thin scaly bark with a grayish-black color that gives the tree its name."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Short bluish-green needles that grow singly from the twigs; small, round-oval purple-brown cones that stay on the tree for years; narrow spire-like shape"
+    secondary_markers: "Needles are square in cross-section and can be rolled between fingers; thin scaly bark with dark grayish-black color; often grows in boggy or wet areas"
+    seasonal_markers: "Little seasonal change as it's evergreen year-round; new growth appears as lighter green in spring"
+    similar_species_differentiation: "Unlike White Spruce, has shorter needles and smaller cones that remain on the tree longer; unlike firs, has square (not flat) needles and hanging (not upright) cones"
+  
+  # Core features
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles year-round"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Needles attach individually to the twig, not in bundles or clusters"
+      
+      - feature_id: "NEEDLE-SHAPE-02"  # Square needles
+        notes: "Needles are square in cross-section and roll easily between fingers"
+      
+      - feature_id: "CONE-POS-02"  # Hanging cones
+        notes: "Cones hang downward from branches"
+      
+      - feature_id: "CONE-FEAT-01"  # Persistent cones
+        notes: "Cones remain on the tree for many years, even after releasing seeds"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Grows in a narrow, spire-like pyramid shape"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with one main trunk"
+        exceptions: "In harsh environments like bogs, may develop a more irregular or shrubby form"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Usually grows 30-50 feet tall in favorable conditions"
+        exceptions: "Often much shorter (15-30 feet) in boggy areas or harsh environments"
+      
+      - feature_id: "BARK-COLOR-06"  # Black bark
+        notes: "Bark is typically a dark grayish-black color"
+        exceptions: "Young trees may have somewhat lighter grayish bark"
+      
+      - feature_id: "CONE-SIZE-01"  # Small cones
+        notes: "Produces small, round-oval cones about 1/2 to 1 1/2 inches long"
+        exceptions: "Size can vary slightly depending on growing conditions"
+      
+      - feature_id: "NEEDLE-SIZE-01"  # Short needles
+        notes: "Needles are typically short, only about 1/4 to 3/4 inch long"
+        exceptions: "May be slightly longer in optimal growing conditions"
+    
+    sometimes_true:
+      - feature_id: "HABITAT-WATER-02"  # Wetland habitat
+        conditions: "In much of its natural range"
+        notes: "Often grows in wet, boggy areas and can tolerate poor drainage"
+      
+      - feature_id: "TREE-FORM-05"  # Irregular crown
+        conditions: "In harsh environments like bogs or very cold areas"
+        notes: "May develop a more irregular shape in difficult growing conditions"
+      
+      - feature_id: "TREE-SIZE-01"  # Short tree
+        conditions: "In bogs, very cold areas, or other harsh environments"
+        notes: "May remain quite small (under 20 feet) in difficult growing conditions"
+      
+      - feature_id: "BARK-TEXT-04"  # Plated bark
+        conditions: "Older trees"
+        notes: "Bark develops small, thin, flaky plates with age"
+      
+      - feature_id: "BRANCH-ANGLE-03"  # Drooping branches
+        conditions: "Lower branches, especially on older trees"
+        notes: "Lower branches often droop downward"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all needles seasonally"
+      
+      - feature_id: "NEEDLE-SHAPE-01"  # Flat needles
+        notes: "Needles are square, not flat like fir needles"
+      
+      - feature_id: "CONE-POS-01"  # Upright cones
+        notes: "Cones never stand upright on branches like fir cones"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Never becomes a large, tall tree like many other conifers"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A small Christmas tree shape with short blue-green needles and tiny round purplish-brown cones that stay on the tree for years and years"
+    memorable_comparison: "Looks like a skinny Christmas tree wearing lots of little round earrings (the cones) all over its branches"
+    touch_tip: "Gently touch the needles - they're short and stiff, and if you roll them between your fingers, they'll spin because they're square instead of flat"
+    smell_tip: "Carefully crush a needle to smell a fresh, piney scent that's not as strong as some other evergreens"
+    fun_fact: "Black Spruce can grow in places that are frozen most of the year! It can survive in areas so cold that the ground stays frozen under the surface even in summer (called permafrost). It's one of the northernmost trees in North America - like a tree superhero with cold superpowers!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the tree's shape. Is it narrow and spire-like, almost like a tall, skinny Christmas tree?"
+        yes_next: 2
+        no_next: "If it's wide or has a rounded shape, it's probably not a Black Spruce"
+      - step: 2
+        instruction: "Look at the needles. Are they short (shorter than your pinky finger nail) and bluish-green?"
+        yes_next: 3
+        no_next: "If the needles are long or bright green, it's probably a different spruce or conifer"
+      - step: 3
+        instruction: "Try rolling a needle between your fingers. Does it roll easily (because it's square)?"
+        yes_next: 4
+        no_next: "If it doesn't roll easily because it's flat, it might be a fir rather than a spruce"
+      - step: 4
+        instruction: "Look for small round-oval cones that hang down. Are there lots of small cones, some of which look old and weathered?"
+        yes_next: "You found a Black Spruce! The persistent cones that stay on for years are a great clue."
+        no_next: "If there are no small, old cones visible, it might be another spruce species - check the bark to see if it's dark and thin with small scales"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New growth emerges at branch tips as light green, eventually darkening; small purple-red female cones and yellow male pollen cones may appear"
+      reproductive_activity: "Male cones release yellow pollen; female cones begin to develop"
+      identification_tips: "New growth lighter in color at branch tips; possible pollen release from male cones"
+      kid_friendly_tip: "In spring, look for light green new growth at the tips of branches - like the tree is getting a fresh green manicure!"
+    
+    - season: "Summer" 
+      visual_changes: "Needles all reach mature bluish-green color; new cones turn from purplish to brown"
+      reproductive_activity: "Young cones continue to mature"
+      identification_tips: "Uniform blue-green color; developing cones becoming woody"
+      kid_friendly_tip: "By summer, all the needles are the same dark blue-green color, and you can see new little brown cones growing"
+    
+    - season: "Fall"
+      visual_changes: "No color change as it remains evergreen; older cones may begin to open and release seeds"
+      reproductive_activity: "Mature cones begin to release seeds"
+      identification_tips: "No seasonal color change helps distinguish from deciduous trees"
+      kid_friendly_tip: "While other trees change color in fall, Black Spruce stays the same dark blue-green"
+    
+    - season: "Winter"
+      visual_changes: "No major change; may collect snow on branches"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Narrow spire shape and short needles distinctive against winter landscape"
+      kid_friendly_tip: "In winter, the narrow shape helps it shed snow, and you can still see all those little round cones hanging on the branches"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Short, bluish-green needles that roll easily between fingers"
+      reliability: "Very high"
+      visibility: "Medium - need to be close enough to see the needles"
+    - feature: "Small, round-oval cones that persist for many years"
+      reliability: "Very high"
+      visibility: "Medium - visible when present"
+    - feature: "Narrow, spire-like shape"
+      reliability: "High"
+      visibility: "High - visible from a distance"
+    - feature: "Dark grayish-black, thin scaly bark"
+      reliability: "High" 
+      visibility: "Medium - need to look at trunk"
+    - feature: "Often found in wet or boggy areas (in natural settings)"
+      reliability: "Medium"
+      visibility: "High - based on surrounding environment"
+    
+  look_alike_species:
+    - species: "White Spruce (Picea glauca)"
+      differences: "White Spruce has longer needles (up to 1 inch); larger cones (1-2.5 inches) that fall after seeds are released; often grows in drier sites"
+      identification_tip: "If the tree has larger cones and longer needles, and doesn't keep old cones on the branches for years, it's likely White Spruce"
+    
+    - species: "Norway Spruce (Picea abies)"
+      differences: "Norway Spruce grows much larger; has much longer needles and very large cones (4-7 inches); more pendulous branch tips"
+      identification_tip: "If it's a large tree with long drooping branches and big cones, it's probably Norway Spruce, not Black Spruce"
+    
+    - species: "Red Spruce (Picea rubens)"
+      differences: "Red Spruce has longer yellow-green needles; larger cones; reddish bark and twigs; typically grows in well-drained mountain soils"
+      identification_tip: "If the needles are yellowish-green rather than bluish and the twigs have a reddish tint, it's likely Red Spruce"
+    
+  cultural_significance:
+    - culture: "Northern Native American tribes (Cree, Inuit, Montagnais)"
+      physical_uses:
+        - "Used roots to lace together birch bark for canoes, baskets, and containers"
+        - "Made tea from needles as a source of vitamin C to prevent scurvy"
+        - "Used branches for bedding and floor covering in shelters"
+        - "Made poultices from heated needles for muscle pain and respiratory problems"
+      symbolic_meaning:
+        - "Symbolized resilience and adaptation to harsh environments"
+        - "Represented the ability to thrive with very little"
+    
+    - culture: "Early Fur Traders and Settlers"
+      physical_uses:
+        - "Used the straight stems for tent poles and temporary structures"
+        - "Made tea from needles to prevent scurvy during winter"
+        - "Used small trees as Christmas trees in northern regions"
+        - "Used wood for fuel in areas where few trees grew"
+      symbolic_meaning:
+        - "Represented survival in the harsh northern wilderness"
+        - "Symbolized the boundary between habitable and uninhabitable lands"
+    
+    - culture: "Paper and Forestry Industry"
+      physical_uses:
+        - "Harvested extensively for pulpwood to make paper"
+        - "Used for plywood, lumber, and poles in construction"
+        - "Planted for reforestation of northern forests"
+        - "Cultivated for Christmas trees and ornamental plantings"
+      symbolic_meaning:
+        - "Represents renewable forest resources in northern regions"
+        - "Symbolizes the resilience of working forests"
+    
+  cultural_ecological_notes:
+    - "Provides critical habitat for wildlife in northern boreal forests"
+    - "Often grows in carbon-rich peat bogs, helping store large amounts of carbon"
+    - "Seeds provide food for red squirrels, crossbills, and other northern wildlife"
+    - "Dense branches provide winter shelter for birds and small mammals"
+    - "Helps stabilize soil in wetland areas"
+    
+  range_within_california:
+    - "Not native to California"
+    - "Occasionally planted as an ornamental in cooler, moister parts of Northern California"
+    - "Struggles in most of California's hot, dry climate"
+    - "Native to northern North America, from Alaska across Canada to the northeastern United States"
+    
+  physical_characteristics:
+    height_range: "30-50 feet tall in favorable conditions, often 15-30 feet in bogs (about as tall as a 3-5 story building)"
+    growth_rate: "Slow, typically growing less than 12 inches per year"
+    crown_spread: "10-20 feet wide (about the width of a small room)"
+    lifespan: "Up to 200-250 years in favorable conditions"
+    trunk_diameter: "Usually 6-12 inches across in mature trees (about as wide as a dinner plate)"
+    root_system: "Shallow and spreading, adapted to grow in wet soils and permafrost"
+    toxicity: "Not toxic to humans or animals"
+    
+  conservation_status:
+    status: "Least Concern - abundant and widespread in northern regions"
+    threats:
+      - "Climate change leading to drying of northern wetlands"
+      - "Increased risk of forest fires in warmer, drier conditions"
+      - "Spruce budworm outbreaks"
+      - "Commercial harvesting for paper pulp and lumber"
+    protection_efforts:
+      - "Protected in many northern wetland preserves and parks"
+      - "Sustainable forestry practices in managed forests"
+      - "Research on climate adaptation strategies"
+    
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: NEEDLE-ARRANGE-01"  # Single needles
+      - "feature_id: NEEDLE-SHAPE-02"  # Square needles
+    confirmation_features:
+      - "feature_id: CONE-SIZE-01"  # Small cones
+      - "feature_id: CONE-FEAT-01"  # Persistent cones
+      - "feature_id: BARK-COLOR-06"  # Black bark
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-TYPE-02", "TREE-FORM-01", "TREE-SIZE-02"]  # Evergreen, pyramidal, medium size
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-SIZE-01", "CONE-SIZE-01", "CONE-FEAT-01"]  # Short needles, small cones, persistent cones
+      - distance: "close_inspection"
+        features_to_check: ["NEEDLE-SHAPE-02", "BARK-COLOR-06"]  # Square needles, black bark
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "NEEDLE-ARRANGE-01", "CONE-FEAT-01"]
+        notes: "New growth provides good contrast; possible pollen release"
+      summer:
+        reliability: "High"
+        key_features: ["NEEDLE-SIZE-01", "NEEDLE-SHAPE-02", "CONE-SIZE-01"]
+        notes: "Full development of needles and new cones"
+      fall:
+        reliability: "High" 
+        key_features: ["LEAF-TYPE-02", "CONE-FEAT-01", "TREE-FORM-01"]
+        notes: "Evergreen nature stands out as deciduous trees change color"
+      winter:
+        reliability: "Very high"
+        key_features: ["TREE-FORM-01", "CONE-FEAT-01", "NEEDLE-SIZE-01"]
+        notes: "Distinctive narrow spire shape and persistent cones visible against winter landscape"
+    misidentification_risks:
+      - "White Spruce - similar but with longer needles and larger cones that don't persist as long"
+      - "Red Spruce - similar but with yellowish-green needles and reddish twigs"
+      - "Various fir species - similar overall appearance but have flat needles and upright cones"
+      
+  wildlife_value:
+    food_source:
+      - "Seeds eaten by red squirrels, crossbills, and other seed-eating birds"
+      - "Grouse eat the needles in winter when other food is scarce"
+      - "Snowshoe hares sometimes browse on seedlings and lower branches"
+      - "Porcupines may eat the inner bark in winter"
+    habitat_provided:
+      - "Dense evergreen branches provide critical winter shelter for birds"
+      - "Lower branches near snow level create protected areas for small mammals"
+      - "Older trees with damaged tops may provide nesting cavities"
+      - "Creates cool, shaded areas in bogs and wetlands for specialized species"
+    ecosystem_role: "Keystone species in northern boreal forests and bogs; helps maintain wetland conditions; contributes to carbon storage in peat soils; supports specialized northern wildlife"

@@ -1,0 +1,336 @@
+tree:
+  common_name: "Jacaranda"
+  scientific_name: "Jacaranda mimosifolia"
+  family: "Bignoniaceae"
+  
+  # Basic summary information
+  summary: "A medium-sized deciduous tree famous for its stunning cloud-like display of purple-blue flowers in late spring. It has delicate, fern-like leaves divided into many small leaflets, and a spreading, umbrella-shaped crown. After flowering, it produces flat, woody seed pods that look like large brown discs."
+  
+  # Identification priority
+  identification_path:
+    primary_markers: "Showy clusters of purple-blue trumpet-shaped flowers covering the tree in late spring; fern-like feathery leaves"
+    secondary_markers: "Gray bark with distinctive diamond-pattern cracks; flat, round, woody seed pods; umbrella-shaped crown"
+    seasonal_markers: "Covered in purple-blue flowers in late spring; seed pods visible in summer and fall; may temporarily lose leaves in winter"
+    similar_species_differentiation: "No other common landscape trees have the combination of purple-blue flowers and fern-like compound leaves; purple flowers are much bluer than similar-colored Eastern Redbuds"
+  
+  features:
+    always_true:
+      - feature_id: "LEAF-COMPLEX-04"  # Compound bipinnate
+        notes: "Leaves are divided twice, creating a delicate, fern-like appearance"
+        
+      - feature_id: "FLOWER-COLOR-03"  # Red/purple flowers
+        notes: "Flowers are blue-purple (violet) in color"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Produces masses of noticeable, showy flowers"
+      
+      - feature_id: "FRUIT-TYPE-05"  # Pods present
+        notes: "Forms flat, round, woody seed pods after flowering"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Forms an umbrella-like, broadly rounded canopy"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Usually grows 25-40 feet tall (about as tall as a 3-4 story building)"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        notes: "Native to South America (Argentina, Bolivia), not native to California"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves grow in pairs directly across from each other on stems"
+    
+    usually_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Usually drops leaves in winter, especially after cold weather"
+        exceptions: "May keep some leaves in very mild winters or protected locations"
+      
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk"
+        exceptions: "May develop multiple trunks if damaged when young"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        notes: "Bark develops distinctive diamond-pattern cracks with age"
+        exceptions: "Young trees have smoother bark"
+      
+      - feature_id: "FLOWER-TIME-01"  # Spring flowering
+        notes: "Usually flowers in late spring (May-June)"
+        exceptions: "May have a second, smaller bloom in fall in some areas"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        notes: "Can handle periods of drought once established"
+        exceptions: "Young trees need regular water; extreme drought affects flowering"
+    
+    sometimes_true:
+      - feature_id: "LEAF-TYPE-03"  # Semi-evergreen
+        conditions: "In coastal or mild winter areas"
+        notes: "May keep some leaves through winter in mild climates"
+      
+      - feature_id: "WINTER-FEAT-02"  # Persistent fruits
+        conditions: "Fall through winter"
+        notes: "Seed pods often remain on tree through winter"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees"
+        notes: "Bark is smoother on young trees and branches"
+      
+      - feature_id: "FLOWER-TIME-03"  # Fall flowering
+        conditions: "In certain climates, particularly coastal areas"
+        notes: "May have a second, smaller flowering period in fall"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "When planted in landscapes with adequate water"
+        notes: "Common street tree in urban areas"
+      
+      - feature_id: "GEO-REGION-03"  # Southern California
+        conditions: "Widely planted in Southern California"
+        notes: "Very common in Southern California, especially around Los Angeles"
+      
+      - feature_id: "GEO-REGION-02"  # Central California
+        conditions: "In warmer areas"
+        notes: "Found in Central California where winters are mild"
+      
+      - feature_id: "GEO-ELEV-01"  # Low elevation
+        conditions: "Below 2,000 feet"
+        notes: "Most commonly planted at lower elevations"
+    
+    never_true:
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Never has simple leaves; always compound"
+      
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        notes: "Never has scale-like leaves"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Never has needles"
+      
+      - feature_id: "LEAF-EDGE-05"  # Spiny
+        notes: "Leaf edges are never spiny"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Never has thorns or spines"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Not native to California; comes from South America"
+      
+      - feature_id: "GEO-ELEV-03"  # High elevation
+        notes: "Not suitable for high mountain elevations in California"
+  
+  # Kid-friendly identification - expanded with open-ended, creative descriptions
+  kid_friendly_identification:
+    primary_identifier: "Purple-blue flowers that cover the whole tree like a purple cloud, with leaves that look like ferns"
+    memorable_comparison: "The tree looks like it's covered in purple butterflies when in bloom, and its leaves look like green feathers"
+    touch_tip: "The leaves feel light and feathery; each big leaf is made up of many tiny leaflets"
+    smell_tip: "The flowers have a light sweet smell, but you might need to pick up a fallen flower to smell it"
+    fun_fact: "Jacaranda flowers can cover the ground with a purple carpet! In some places, people say that if a Jacaranda flower falls on your head while you're studying, you'll pass your test!"
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the whole tree shape. Does it have a wide, umbrella-like crown with feathery-looking leaves?"
+        yes_next: 2
+        no_next: "Not a Jacaranda - look for trees with different leaf types or shapes"
+      - step: 2
+        instruction: "Check if the leaves are very feathery, like ferns, divided into many small leaflets"
+        yes_next: 3
+        no_next: "Not a Jacaranda - try trees with compound feathery leaves"
+      - step: 3
+        instruction: "In late spring, does it have masses of purple-blue flowers covering the branches?"
+        yes_next: 4
+        no_next: "If it's not flowering season, look for flat, round seed pods or check the leaf arrangement (pairs facing each other)"
+      - step: 4
+        instruction: "Are the flowers trumpet-shaped with five petals, and purple-blue in color?"
+        yes_next: "You found a Jacaranda!"
+        no_next: "Not a Jacaranda - check the flower shape and color again"
+  
+  regional_notes:
+    - region: "Southern California"
+      notes: "Very common street tree, especially in Los Angeles; iconic in many neighborhoods"
+      locations: "Found throughout cities, parks, and residential areas"
+    - region: "Central California"
+      notes: "Grows well in Valley areas with hot summers and mild winters"
+      locations: "Found in parks, campuses, and as street trees"
+    - region: "Northern California"
+      notes: "Less common due to cooler winters; found in milder areas"
+      locations: "Mostly in protected, sunny spots in urban areas"
+      
+  confirmation_checklist:
+    - feature: "Purple-blue trumpet-shaped flowers (spring)"
+      reliability: "Very high"
+      visibility: "Visible from far away when in bloom"
+    - feature: "Feathery, fern-like compound leaves"
+      reliability: "Very high"
+      visibility: "Easy to see from nearby"
+    - feature: "Flat, round, woody seed pods"
+      reliability: "High"
+      visibility: "Visible when present, especially after leaves drop"
+    - feature: "Gray bark with diamond-pattern cracks"
+      reliability: "Medium"
+      visibility: "Need to look at trunk of mature trees"
+    
+  look_alike_species:
+    - species: "Eastern Redbud (Cercis canadensis)"
+      differences: "Redbud has simple heart-shaped leaves, not feathery compound ones; pink-purple flowers, not blue-purple; flowers appear before leaves"
+      identification_tip: "If it has heart-shaped leaves instead of feathery ones, it's likely a Redbud"
+    - species: "Tree Wisteria (Wisteria species)"
+      differences: "Wisteria is a vine that can be trained as a small tree; has hanging clusters of flowers; compound leaves with fewer, larger leaflets"
+      identification_tip: "Wisteria flowers hang down in clusters like grapes; Jacaranda flowers face upward like trumpets"
+    - species: "Royal Poinciana (Delonix regia)"
+      differences: "Has similar feathery leaves but with bright orange-red flowers, not purple; only grows in hottest parts of Southern California"
+      identification_tip: "If the flowers are orange-red instead of purple-blue, it's a Royal Poinciana"
+      
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Leaf buds break and feathery leaves emerge; flower buds develop"
+      reproductive_activity: "Massive flowering occurs in late spring (May-June)"
+      identification_tips: "The purple flower display is most distinctive feature"
+      kid_friendly_tip: "Watch for the tree to transform from bare branches to a purple cloud in spring!"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of feathery green leaves"
+      reproductive_activity: "Flowers fade; flat seed pods begin to develop"
+      identification_tips: "Feathery leaves and developing seed pods"
+      kid_friendly_tip: "After the flowers fall, look for the flat round seed pods that look like wooden coins"
+    
+    - season: "Fall"
+      visual_changes: "Leaves may begin to yellow and drop in late fall"
+      reproductive_activity: "Seed pods mature and dry out; occasional second bloom in some areas"
+      identification_tips: "Seed pods are distinctive; some trees may have a smaller second flowering"
+      kid_friendly_tip: "The flat seed pods turn woody and brown, and might make a rattling sound if you shake them gently"
+    
+    - season: "Winter"
+      visual_changes: "May lose most or all leaves, especially after cold weather"
+      reproductive_activity: "Seed pods often remain on branches"
+      identification_tips: "Seed pods on bare branches are distinctive"
+      kid_friendly_tip: "In winter, you might see the round seed pods hanging from bare branches like Christmas ornaments"
+      
+  cultural_ecological_notes:
+    - "Can create a slippery surface when flowers fall on sidewalks"
+    - "Spectacular when planted along streets, creating purple-blue tunnels when in bloom"
+    - "Shallow roots make it suitable for planting near structures"
+    - "Provides dappled shade with its umbrella-like crown"
+    - "Flowers attract bees, butterflies, and hummingbirds"
+    
+  range_within_california:
+    - "Widely planted in Southern California, especially Los Angeles area"
+    - "Common in Central Valley cities and towns"
+    - "Less common in Northern California and cooler coastal areas"
+    - "Rarely found in mountain regions or areas with regular frost"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "South American (Argentina/Bolivia)"
+      physical_uses:
+        - "Wood used for furniture and small decorative items"
+        - "Planted as ornamental street trees in native range"
+        - "Used medicinally in folk traditions for treating wounds"
+      symbolic_meaning:
+        - "Symbol of spring and renewal"
+        - "Associated with good fortune and prosperity"
+        - "Represents wisdom and intelligence in some traditions"
+        - "Called 'jacarandá' which means 'fragrant' in Guarani language"
+    
+    - culture: "Southern California"
+      physical_uses:
+        - "Planted extensively as street trees and in public spaces"
+        - "Used to create shady boulevards and avenues"
+        - "Fallen flowers used in temporary art or decoration"
+        - "Featured in many paintings and photographs of Los Angeles"
+      symbolic_meaning:
+        - "Iconic symbol of Los Angeles and Southern California"
+        - "Associated with exam time at universities (bloom coincides with finals)"
+        - "Symbolizes the beauty and exotic nature of California landscapes"
+        - "Featured in songs, poems, and stories about Los Angeles"
+    
+    - culture: "Australian"
+      physical_uses:
+        - "Widely planted along streets in Sydney and Brisbane"
+        - "Used as flowering shade trees in public spaces"
+        - "Featured in garden designs for seasonal color impact"
+      symbolic_meaning:
+        - "In Sydney, associated with end of school year and exams"
+        - "Symbol of prosperity, as they're often planted in affluent areas"
+        - "Known as 'exam trees' or 'wisdom trees' by students"
+        - "Appearing in dreams said to mean good fortune is coming"
+    
+    - culture: "Global Garden Culture"
+      physical_uses:
+        - "Planted as specimen trees for dramatic flowering effect"
+        - "Used to create seasonal color highlights in large gardens"
+        - "Featured in botanical gardens worldwide as example of tropical flora"
+        - "Fallen flowers sometimes collected for potpourri or dried arrangements"
+      symbolic_meaning:
+        - "Represents exotic beauty and tropical elegance"
+        - "Symbol of springtime renewal and flourishing"
+        - "In garden design, represents a touch of the extraordinary"
+        - "In flower language, represents wisdom, wealth, and good luck"
+    
+  # Additional physical characteristics not captured in features
+  physical_characteristics:
+    height_range: "25-40 feet (about as tall as a 3-4 story building)"
+    growth_rate: "Moderate to fast, about 1-3 feet per year when young"
+    crown_spread: "25-35 feet wide when mature (about as wide as a two-car garage)"
+    lifespan: "50-75 years in good conditions"
+    trunk_diameter: "1-2 feet across when fully grown"
+    root_system: "Moderately shallow but not aggressive"
+    toxicity: "Not toxic to humans or pets"
+    
+  conservation_status:
+    status: "Not endangered; secure in cultivation"
+    threats: 
+      - "Susceptible to frost damage in colder regions"
+      - "Can suffer from extended drought"
+      - "May be affected by some fungal diseases in humid conditions"
+    protection_efforts:
+      - "Selection of more cold-hardy varieties for marginal growing areas"
+      - "In its native Argentina, wild populations are monitored"
+      - "Many historic specimens in California are preserved as heritage trees"
+    
+  # Decision tree mapping - helps with algorithm creation
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-COMPLEX-04"  # Compound bipinnate
+      - "feature_id: FLOWER-COLOR-03"  # Red/purple flowers
+      - "feature_id: FLOWER-SIZE-01"  # Showy flowers
+    confirmation_features:
+      - "feature_id: FRUIT-TYPE-05"  # Pods present
+      - "feature_id: LEAF-ARRANGE-02"  # Opposite
+      - "feature_id: TREE-FORM-02"  # Rounded crown
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["FLOWER-COLOR-03", "TREE-FORM-02", "TREE-SIZE-02"]  # Purple flowers, rounded crown, medium tree
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-COMPLEX-04", "LEAF-ARRANGE-02", "FLOWER-SIZE-01"]  # Compound bipinnate, opposite, showy flowers
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-05", "BARK-TEXT-02", "FLOWER-TIME-01"]  # Pods, furrowed bark, spring flowering
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["FLOWER-COLOR-03", "FLOWER-SIZE-01", "LEAF-COMPLEX-04"]
+        notes: "Purple-blue flowers and feathery leaves are unmistakable in spring"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-COMPLEX-04", "LEAF-ARRANGE-02", "FRUIT-TYPE-05"]
+        notes: "Feathery compound leaves and developing seed pods are distinctive"
+      
+      fall:
+        reliability: "Medium"
+        key_features: ["LEAF-COMPLEX-04", "FRUIT-TYPE-05", "TREE-FORM-02"]
+        notes: "Seed pods and feathery leaves, sometimes a second bloom"
+      
+      winter:
+        reliability: "Low"
+        key_features: ["FRUIT-TYPE-05", "BARK-TEXT-02", "WINTER-FEAT-02"]
+        notes: "Seed pods on bare branches; bark pattern helps identify in winter"
+    misidentification_risks: "Most often confused with other purple-flowering trees like Eastern Redbud, but leaf differences are clear"
+
+  wildlife_value:
+    nesting_sites: "Branches provide good nesting sites for birds"
+    food_source: "Flowers provide nectar for bees, butterflies, and hummingbirds"
+    shelter: "Feathery foliage offers good hiding places for birds"
+    ecological_notes: "Though non-native, provides some habitat value in urban areas; flowers support pollinators"
+    
+  propagation_information:
+    growing_conditions: "Prefers full sun and well-drained soil"
+    water_needs: "Moderate water needs; drought-tolerant once established"
+    planting_tips: "Plant in a warm, sunny location protected from frost"
+    maintenance: "Little pruning needed; fallen flowers can be slippery on walkways"
+    special_notes: "Drops flowers and leaves which require cleanup; not suitable for small spaces when mature"

@@ -1,0 +1,246 @@
+tree:
+  common_name: Norway Spruce
+  scientific_name: Picea abies
+  family: Pinaceae
+  native: false
+
+  summary: Norway Spruce is a large, pyramidal evergreen conifer with dark green needles and distinctive drooping branch tips, especially on mature trees. Native to northern and central Europe, it's widely planted in California as an ornamental tree, windbreak, and Christmas tree. It features sharp, four-sided needles arranged around the twigs and large cylindrical cones that hang down from branches. This adaptable tree performs best in cooler regions of California with adequate moisture.
+
+  identification_path:
+    primary_markers: "Drooping branch tips, especially on lower branches; dark green, sharp needles"
+    secondary_markers: "Large (4-7 inch) hanging cones; pyramid shape with dense branching often reaching to the ground"
+    seasonal_markers: "No seasonal leaf color change; large brown cones visible in fall and winter"
+    similar_species_differentiation: "Unlike Blue Spruce, has dark green (not blue-silver) needles; unlike White Fir, has hanging (not upright) cones; unlike Douglas-fir, lacks 3-pointed bracts on cones"
+
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"
+        notes: "Keeps its needles year-round"
+      - feature_id: "LEAF-SHAPE-21"
+        notes: "Has sharp, pointy needles instead of flat leaves"
+      - feature_id: "TREE-SHAPE-01"
+        notes: "Grows in a triangle or Christmas tree shape"
+      - feature_id: "CONE-POSITION-02"
+        notes: "Cones hang down from branches instead of standing up"
+    
+    usually_true:
+      - feature_id: "TREE-SIZE-03"
+        notes: "Grows into a large tree 50-100 feet tall in good conditions"
+        exceptions: "May be smaller when young or growing in poor conditions"
+      - feature_id: "NEEDLE-ARRANGEMENT-01"
+        notes: "Needles grow all around the twig in a spiral pattern"
+        exceptions: "On horizontal branches, needles may appear to be arranged in two rows"
+      - feature_id: "NEEDLE-COLOR-01"
+        notes: "Needles are typically dark green"
+        exceptions: "New growth is lighter green, and some trees may have slightly yellowish-green needles"
+      - feature_id: "HABITAT-05"
+        notes: "In California, found in parks, gardens, and Christmas tree farms"
+        exceptions: "Sometimes escapes cultivation in areas with suitable climate"
+    
+    sometimes_true:
+      - feature_id: "TREE-SIZE-02"
+        conditions: "When young or growing in poor conditions"
+        notes: "May remain medium-sized (30-50 feet) rather than reaching full height"
+      - feature_id: "BARK-TEXTURE-05"
+        conditions: "On older trees, especially near the base"
+        notes: "Bark may develop ridges or furrows with age"
+      - feature_id: "HABITAT-03"
+        conditions: "Often planted as an ornamental or shade tree"
+        notes: "Can be found in urban parks, campuses, and large gardens"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"
+        notes: "Never drops all its needles at once - keeps them year-round"
+      - feature_id: "NEEDLE-COLOR-05"
+        notes: "Needles are never blue or silver colored like Blue Spruce"
+      - feature_id: "CONE-POSITION-01"
+        notes: "Cones never stand upright on branches - they always hang down"
+      - feature_id: "HABITAT-02"
+        notes: "Does not grow naturally in California forests"
+
+  kid_friendly_identification:
+    primary_identifier: "Drooping branch tips that look tired or sleepy"
+    memorable_comparison: "The branches look like they're taking a nap at the ends!"
+    touch_tip: "Gently roll a needle between your fingers - it feels square and not flat, like a tiny 4-sided pencil"
+    smell_tip: "If you gently crush a needle, it has a nice Christmas tree smell"
+    fun_fact: "This tree's wood was used by famous violin makers hundreds of years ago to make instruments that are worth millions of dollars today!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, check if it's an evergreen tree with a Christmas tree shape. Does it have needles instead of broad leaves?"
+        yes_next: 2
+        no_next: "Not a Norway Spruce. Look for a conifer (evergreen) tree instead."
+      - step: 2
+        instruction: "Look at the branches, especially the lower ones. Do the tips droop down like they're tired?"
+        yes_next: 3
+        no_next: "Probably not a Norway Spruce. Check other evergreen trees with more upright branches."
+      - step: 3
+        instruction: "Look closely at the needles. Are they dark green and growing all around the twigs?"
+        yes_next: 4
+        no_next: "Might be a different spruce. If the needles are blue-silver, check Blue Spruce instead."
+      - step: 4
+        instruction: "If it's fall or winter, look for large cones (longer than your hand) hanging down from branches. Do you see any?"
+        yes_next: "You found a Norway Spruce!"
+        no_next: "It might still be a Norway Spruce, but check the drooping branch tips again to be sure."
+
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New, bright light green growth appears at the tips of branches"
+      reproductive_activity: "Male pollen cones release yellow pollen; small purplish-green female cones begin to form"
+      identification_tips: "The contrast between bright new growth and older dark green needles is distinctive"
+      kid_friendly_tip: "Look for the light green new growth at the tips - it's like the tree is getting spring highlights in its hair!"
+    
+    - season: "Summer"
+      visual_changes: "New growth darkens to match the deep green of older needles"
+      reproductive_activity: "Young cones grow larger and hang downward from branches"
+      identification_tips: "The dark green needles and developing cones are good identification features"
+      kid_friendly_tip: "In summer, the baby cones are growing bigger and starting to dangle like ornaments"
+    
+    - season: "Fall"
+      visual_changes: "The tree stays dark green while other trees change color and lose leaves"
+      reproductive_activity: "Cones mature to light brown and begin to open, releasing seeds"
+      identification_tips: "Large brown cones and drooping branch tips stand out as deciduous trees lose leaves"
+      kid_friendly_tip: "While other trees are changing colors, this one stays green, and you can see its big brown cones"
+    
+    - season: "Winter"
+      visual_changes: "Maintains dark green color; branch tips droop more when weighted with snow"
+      reproductive_activity: "Dormant until spring; mature cones may persist on the tree"
+      identification_tips: "Drooping branch habit is most visible in winter, especially with snow"
+      kid_friendly_tip: "In winter, the droopy branches might collect snow, making them droop even more like they're really sleepy"
+
+  confirmation_checklist:
+    - feature: "Dark green, square needles about 1/2 to 1 inch long"
+      reliability: "High"
+      visibility: "Medium - need to look closely at needle characteristics"
+    - feature: "Needles arranged all around the twig"
+      reliability: "High"
+      visibility: "Medium - visible upon close inspection"
+    - feature: "Distinctive drooping branch tips, especially on lower branches"
+      reliability: "Very high"
+      visibility: "High - visible from a distance on mature trees"
+    - feature: "Large cylindrical cones (4-7 inches long) that hang downward"
+      reliability: "Very high"
+      visibility: "Medium to high - seasonal but very distinctive when present"
+    - feature: "Pyramidal shape with dense branching often reaching to the ground"
+      reliability: "High"
+      visibility: "High - visible from a distance"
+    - feature: "Reddish-brown to purplish-gray bark that breaks into thin plates"
+      reliability: "Medium"
+      visibility: "Medium - more distinctive on mature trees"
+
+  look_alike_species:
+    - species: "Blue Spruce (Picea pungens)"
+      differences: "Has distinctive blue-silver needles rather than dark green; sharper, more painful needles; more rigid branch structure"
+      identification_tip: "If the needles are blue-silver instead of dark green, it's likely Blue Spruce"
+    
+    - species: "White Spruce (Picea glauca)"
+      differences: "Shorter needles; smaller cones (1-2 inches); more upright branch tips; less dramatic 'weeping' habit"
+      identification_tip: "If the branch tips don't droop and the cones are small, it's probably White Spruce"
+    
+    - species: "Sitka Spruce (Picea sitchensis)"
+      differences: "Flatter needles with sharp points; found primarily in coastal foggy areas; has distinctive bluish-white appearance"
+      identification_tip: "If growing near the coast and the needles have a bluish-white bloom, it's likely Sitka Spruce"
+    
+    - species: "Douglas-fir (Pseudotsuga menziesii)"
+      differences: "Has softer, flat needles; distinctive cones with 3-pointed bracts sticking out; not a true spruce"
+      identification_tip: "If you can see little 'mouse tails' (3-pointed bracts) sticking out from the cone scales, it's Douglas-fir"
+    
+    - species: "White Fir (Abies concolor)"
+      differences: "Has flat needles arranged more horizontally; cones stand upright on branches (not hanging); softer needles"
+      identification_tip: "If the cones stand upright on branches instead of hanging down, it's a fir, not a spruce"
+
+  cultural_significance:
+    - culture: "Traditional European Woodworkers"
+      physical_uses:
+        - "Used to make violins and other musical instruments because the wood vibrates in a special way"
+        - "Built houses, barns, and boats from the strong straight wood"
+        - "Made furniture using the light-colored, fine-grained wood"
+      symbolic_meaning:
+        - "Represented the durability and practicality of Northern European craftsmanship"
+        - "Symbolized resilience through harsh winters and challenging conditions"
+    
+    - culture: "European Christmas Traditions"
+      physical_uses:
+        - "Traditionally used as Christmas trees before the custom spread around the world"
+        - "Branches used to make wreaths and holiday decorations"
+        - "Used to mark important winter celebrations and holidays"
+      symbolic_meaning:
+        - "Represented everlasting life with its year-round green needles"
+        - "Symbolized hope during the darkest days of winter"
+        - "Connected to celebrations of life continuing even in the coldest season"
+    
+    - culture: "Musical Instrument Makers"
+      physical_uses:
+        - "Used for the soundboards of violins, including the famous Stradivarius instruments"
+        - "Chosen for its excellent resonance and acoustic properties"
+        - "Still used today for high-quality pianos, violins, and guitars"
+      symbolic_meaning:
+        - "Associated with the pursuit of perfect sound quality and craftsmanship"
+        - "Represents the connection between nature and beautiful music"
+
+  physical_characteristics:
+    height: "40-80 feet in landscapes (up to 150 feet in native habitats)"
+    width: "20-40 feet"
+    growth_rate: "Medium to fast, growing 1-2 feet per year when young"
+    lifespan: "200-300 years in good conditions"
+    bark: "Young trees have thin, reddish-brown bark; mature trees develop scaly, purplish-gray to brown bark"
+    leaves: "Dark green needles, 1/2 to 1 inch long, sharp-pointed and square in cross-section"
+    flowers: "Small, inconspicuous male and female cones"
+    fruit: "Large cylindrical cones, 4-7 inches long, that hang down from branches"
+    seeds: "Small, winged seeds released from mature cones"
+    root_system: "Moderately deep with widespread lateral roots that can extend far beyond the drip line"
+    suitable_for_public_spaces: true
+
+  conservation_status:
+    status: "Least Concern globally, with stable populations"
+    threats: "Climate change may affect southern populations; bark beetle outbreaks increasing with warming conditions"
+    protection_efforts: "Widely cultivated with no specific conservation measures needed; common in forestry plantations"
+
+  decision_tree_placement:
+    primary_split_features:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+      - feature_id: "LEAF-SHAPE-21"  # Needle-like
+      - feature_id: "TREE-FORM-03"  # Weeping form (at branch tips)
+    
+    confirmation_features:
+      - feature_id: "CONE-POSITION-02"  # Hanging cones
+      - feature_id: "CONE-SIZE-03"  # Large cones
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SHAPE-01", "TREE-FORM-03"]  # Pyramidal, Weeping tips
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-COLOR-01", "CONE-SIZE-03"]  # Dark green, Large cones
+      - distance: "close_inspection"
+        features_to_check: ["NEEDLE-ATTRIBUTE-05", "CONE-POSITION-02"]  # Square needles, Hanging cones
+    
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["TREE-FORM-03", "LEAF-TYPE-02", "NEW-GROWTH-01"]
+        notes: "New growth provides color contrast but may temporarily obscure the drooping branch habit"
+      summer:
+        reliability: "High"
+        key_features: ["TREE-FORM-03", "NEEDLE-COLOR-01", "CONE-DEVELOP-01"]
+        notes: "Developing cones and consistent dark green color aid identification"
+      fall:
+        reliability: "Very high"
+        key_features: ["CONE-MATURE-01", "TREE-FORM-03", "LEAF-TYPE-02"]
+        notes: "Mature cones and drooping branch tips are highly distinctive in fall"
+      winter:
+        reliability: "High"
+        key_features: ["TREE-FORM-03", "LEAF-TYPE-02", "TREE-SHAPE-01"]
+        notes: "Drooping branch habit is most pronounced in winter, especially with snow weight"
+    
+    misidentification_risks:
+      - "Young trees may not yet display the characteristic drooping branch tips"
+      - "Can be confused with other spruce species when cones are absent"
+      - "Branch drooping can be subtle on some specimens or cultivars"
+
+  wildlife_value: 
+    - "Dense year-round foliage provides important shelter for birds, especially in winter"
+    - "Seeds are eaten by squirrels, finches, siskins, and other seed-eating birds"
+    - "The branches create protected nesting sites for many bird species"
+    - "Large trees may serve as perching or hunting spots for hawks and owls"
+    - "Provides winter cover for small mammals like rabbits, especially when branches reach the ground"
+    - "Though not native to California, mature trees still create valuable habitat in urban environments"

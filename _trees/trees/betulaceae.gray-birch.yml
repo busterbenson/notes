@@ -1,0 +1,303 @@
+tree:
+  common_name: "Gray Birch"
+  scientific_name: "Betula populifolia"
+  family: "Betulaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A short-lived, slender deciduous tree with distinctive chalky white bark that doesn't peel extensively. Features triangular leaves with long pointed tips and doubly serrated edges. Often grows in a leaning or multi-stemmed form, frequently colonizing disturbed areas in northeastern North America."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Chalky white bark with dark horizontal lines (lenticels) that doesn't peel extensively; triangular leaves with long, tapering points"
+    secondary_markers: "Often grows at an angle or with multiple stems; leaves with double-toothed edges; black triangular markings at branch bases"
+    seasonal_markers: "Yellow fall foliage; visible horizontal dark lines on white bark year-round; dangling catkins in spring"
+    similar_species_differentiation: "Unlike Paper Birch, bark doesn't peel in paper-like strips; unlike European White Birch, has less weeping form; unlike River Birch, has white (not reddish-brown) bark"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Each leaf is one piece, not divided into smaller leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow in an alternating pattern along branches"
+      
+      - feature_id: "LEAF-EDGE-03"  # Doubly serrated
+        notes: "Leaf edges have teeth of two different sizes"
+      
+      - feature_id: "BARK-COLOR-02"  # White bark
+        notes: "Has distinctive chalky white bark"
+      
+      - feature_id: "FLOWER-TYPE-01"  # Catkins present
+        notes: "Produces hanging catkins in spring"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        notes: "Leaves turn yellow in fall"
+    
+    usually_true:
+      - feature_id: "TREE-SIZE-01"  # Small tree
+        notes: "Typically grows 20-40 feet tall"
+        exceptions: "May remain even smaller in extremely poor conditions"
+      
+      - feature_id: "TREE-FORM-05"  # Irregular crown
+        notes: "Often grows with an irregular form, frequently leaning"
+        exceptions: "Can occasionally develop a more symmetrical form in ideal growing conditions"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Bark remains relatively smooth compared to other birches"
+        exceptions: "Older trees may develop some cracking at the base"
+    
+    sometimes_true:
+      - feature_id: "TREE-TRUNK-02"  # Multiple trunks
+        conditions: "Often when growing in disturbed areas or poor conditions"
+        notes: "Frequently develops multiple stems, especially when growing in challenging environments"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        conditions: "Older trees or damaged areas"
+        notes: "May develop some peeling in small sections, but not extensively like Paper Birch"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "When planted in suitable locations"
+        notes: "Can be grown in urban settings with proper care"
+      
+      - feature_id: "ECO-ADAPT-04"  # Poor soil tolerant
+        conditions: "Natural habitat often includes poor, sandy, or disturbed soils"
+        notes: "Can thrive in disturbed areas with low soil quality"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops its leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has compound leaves"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves are always arranged alternately, never opposite"
+      
+      - feature_id: "BARK-COLOR-03"  # Red bark
+        notes: "Bark is white to grayish, never reddish"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Not native to California; naturally occurs in northeastern North America"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "A small tree with bright white bark marked with dark horizontal lines that look like smiles"
+    memorable_comparison: "The tree often leans like it's tired, with chalk-white bark that has dark dash marks like someone drew them with a marker"
+    touch_tip: "Feel the bark - it's smooth and chalky, but doesn't peel off in big strips like paper birch"
+    smell_tip: "The leaves have a mild, fresh scent when crushed"
+    fun_fact: "Gray Birch is a pioneer tree - that means it's really good at growing in places where other trees can't, like after a forest fire or where land has been cleared. It helps prepare the soil for bigger trees to grow later!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the bark. Is it bright white with dark horizontal stripes or dashes?"
+        yes_next: 2
+        no_next: "Probably not a Gray Birch - their white bark with dark lines is their most noticeable feature"
+      - step: 2
+        instruction: "Look at the shape of the tree. Does it often lean to one side or have multiple trunks rather than growing straight up?"
+        yes_next: 3
+        no_next: "It might still be a Gray Birch, but they often grow at angles rather than straight"
+      - step: 3
+        instruction: "Check a leaf. Does it have a triangle shape with a long pointed tip, like a stretched-out triangle?"
+        yes_next: 4
+        no_next: "Might be another type of birch - Gray Birch leaves have distinctive long, pointed tips"
+      - step: 4
+        instruction: "Look closely at the leaf edges. Do they have tiny double teeth, like a saw with small and big teeth?"
+        yes_next: "You found a Gray Birch!"
+        no_next: "Not a Gray Birch - their leaves have distinct double-toothed edges"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaves emerge light green; hanging male catkins release yellow pollen; smaller female catkins develop"
+      reproductive_activity: "Male catkins release pollen; female catkins receive pollen and begin developing seeds"
+      identification_tips: "Drooping male catkins; fresh triangular leaves with pointed tips emerging"
+      kid_friendly_tip: "In spring, look for hanging 'caterpillar' flowers (catkins) and new little triangle-shaped leaves"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of dark green triangular leaves; female catkins mature into small cylindrical structures"
+      reproductive_activity: "Seeds develop in cylindrical female catkins"
+      identification_tips: "White bark with dark horizontal lines contrasts with dark green triangular leaves"
+      kid_friendly_tip: "In summer, the tree is covered with triangle-shaped leaves, and its white trunk really stands out"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow; winged seeds are released from catkins"
+      reproductive_activity: "Seeds disperse with wind"
+      identification_tips: "Yellow fall color; distinctive shape of leaves remains obvious"
+      kid_friendly_tip: "In fall, the leaves turn yellow like lemon drops, and tiny seeds with wings float away in the wind"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches reveal white bark with dark horizontal lines; slender buds visible on branches"
+      reproductive_activity: "Dormant; male catkins that will open in spring are already formed"
+      identification_tips: "White bark with dark horizontal lines is highly visible in winter; often has a leaning growth habit"
+      kid_friendly_tip: "In winter, you can easily see the white trunk with dark lines like someone drew on it with a marker"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Chalky white bark with distinct horizontal dark lines (lenticels)"
+      reliability: "Very high"
+      visibility: "Visible from a distance"
+    - feature: "Triangular leaves with long-pointed tips and double-toothed edges"
+      reliability: "High"
+      visibility: "Need to look closely at leaves"
+    - feature: "Often growing at an angle or with multiple trunks"
+      reliability: "Medium"
+      visibility: "Visible from a distance"
+    - feature: "Dark triangular markings at branch bases"
+      reliability: "High"
+      visibility: "Need to look at branch junctions closely"
+    - feature: "Yellow fall color"
+      reliability: "Medium (fall only)"
+      visibility: "Visible from a distance in fall"
+    
+  look_alike_species:
+    - species: "Paper Birch (Betula papyrifera)"
+      differences: "Paper Birch has bark that peels in paper-like strips; generally larger; more oval leaves without the long-pointed tip; usually straighter growth"
+      identification_tip: "If the bark peels easily in paper-like strips, it's Paper Birch, not Gray Birch"
+    
+    - species: "European White Birch (Betula pendula)"
+      differences: "European White Birch has more pendulous (weeping) branches; more diamond-shaped leaves; generally grows taller and straighter"
+      identification_tip: "Gray Birch lacks the distinctive drooping branch tips of European White Birch"
+    
+    - species: "River Birch (Betula nigra)"
+      differences: "River Birch has peeling bark that's reddish-brown to cinnamon colored, not white; prefers wet areas"
+      identification_tip: "If the peeling bark is reddish-brown rather than white, it's River Birch"
+    
+    - species: "Quaking Aspen (Populus tremuloides)"
+      differences: "Quaking Aspen has smoother white bark without prominent horizontal lines; more rounded leaves that tremble in the breeze; leaf stems are flattened"
+      identification_tip: "Aspen lacks the distinctive horizontal dark lines on the white bark that Gray Birch has"
+    
+  cultural_ecological_notes:
+    - "Pioneer species that quickly colonizes disturbed areas, abandoned fields, and burned sites"
+    - "Important succession species that helps establish woodland conditions for longer-lived trees"
+    - "Seeds provide food for small birds, especially pine siskins, redpolls, and chickadees"
+    - "Buds and twigs browsed by deer, moose, and snowshoe hares in its native range"
+    - "Relatively short-lived tree that prepares sites for longer-lived forest species"
+    
+  range_within_california:
+    - "Not native to California"
+    - "Occasionally planted as an ornamental in northern parts of the state"
+    - "Poorly adapted to California's Mediterranean climate"
+    - "Requires regular water if planted in California's dry climate"
+    - "Not commonly planted outside botanical gardens or specialty collections"
+    
+  # Physical characteristics section
+  physical_characteristics:
+    height_range: "20-40 feet, occasionally taller"
+    growth_rate: "Fast, about 1-3 feet per year when young"
+    crown_spread: "15-30 feet when mature"
+    lifespan: "Short-lived, typically 30-50 years"
+    trunk_diameter: "Usually less than 1 foot in diameter"
+    root_system: "Shallow, spreading root system"
+    toxicity: "Not toxic to humans or animals"
+  
+  # Cultural significance section
+  cultural_significance:
+    # Organized by culture
+    - culture: "Indigenous Peoples of Northeastern North America"
+      physical_uses:
+        - "Used for various utensils and small crafts"
+        - "Bark used for small containers, though less extensively than Paper Birch"
+        - "Wood used for fuel and small implements"
+        - "Sometimes used for medicinal purposes, including treatments for various ailments"
+      symbolic_meaning:
+        - "Recognized as a pioneer species that helped heal disturbed landscapes"
+        - "Valued for its ability to grow in challenging conditions"
+        - "Considered less significant culturally than Paper Birch, which had more extensive uses"
+    
+    - culture: "Early European Settlers"
+      physical_uses:
+        - "Used for firewood due to good burning properties"
+        - "Made into tool handles, wooden implements, and small furniture"
+        - "Used for fence posts and other farm purposes"
+        - "Sometimes tapped for sap, though yielding less than Sugar Maple"
+      symbolic_meaning:
+        - "Recognized as an indicator of poor or previously farmed soil"
+        - "Valued as a fast-growing tree for reclaiming abandoned farmland"
+        - "Appreciated for its decorative qualities in the landscape"
+    
+    - culture: "Modern Northeastern United States"
+      physical_uses:
+        - "Used for ornamental landscaping, especially in naturalized settings"
+        - "Wood occasionally used for pulp and paper products"
+        - "Valued for restoration of disturbed sites"
+        - "Sometimes used for specialty wood products and crafts"
+      symbolic_meaning:
+        - "Symbol of ecological succession and forest regeneration"
+        - "Represents the resilience of nature and ability to reclaim disturbed land"
+        - "Valued in ecological restoration for its pioneering abilities"
+  
+  # Conservation status section
+  conservation_status:
+    status: "Secure in its native range; common and abundant"
+    threats: "Bronze birch borer can cause significant damage or death; climate change may affect distribution in parts of its range"
+    protection_efforts: "No special protection needed as the species is abundant in its native range; used in some reforestation and land reclamation projects"
+  
+  # Kid-friendly cultural significance
+  kid_friendly_cultural_significance:
+    - "Native American children used to make toys and small items from birch branches and bark"
+    - "Early settlers knew that when they saw Gray Birch growing, it meant the land was starting to heal after being cleared"
+    - "The thin, flexible branches were sometimes used to make brooms and whisks"
+    - "Birds love to eat the tiny seeds that fall from the tree in autumn and winter"
+    - "The wood burns well even when freshly cut, so it was important for early settlers who needed firewood quickly"
+  
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: BARK-COLOR-02"  # White bark
+      - "feature_id: TREE-SIZE-01"  # Small tree
+      - "feature_id: TREE-FORM-05"  # Irregular crown
+    
+    confirmation_features:
+      - "feature_id: LEAF-EDGE-03"  # Doubly serrated
+      - "feature_id: LEAF-FALL-01"  # Yellow fall color
+      - "feature_id: FLOWER-TYPE-01"  # Catkins present
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["BARK-COLOR-02", "TREE-SIZE-01", "TREE-FORM-05"]  # White bark, small tree, irregular form
+      
+      - distance: "from_nearby"
+        features_to_check: ["BARK-TEXT-01", "LEAF-ARRANGE-01"]  # Smooth bark, alternate arrangement
+      
+      - distance: "close_inspection"
+        features_to_check: ["FLOWER-TYPE-01", "LEAF-EDGE-03"]  # Catkins, doubly serrated edges
+    
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["BARK-COLOR-02", "FLOWER-TYPE-01"]
+        notes: "White bark with dark horizontal lines and distinctive catkins make spring identification straightforward"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["BARK-COLOR-02", "LEAF-EDGE-03"]
+        notes: "White bark with dark horizontal lines, triangular leaves with double-toothed edges"
+      
+      fall:
+        reliability: "High"
+        key_features: ["BARK-COLOR-02", "LEAF-FALL-01"]
+        notes: "White bark with dark horizontal lines and yellow fall color"
+      
+      winter:
+        reliability: "Very high"
+        key_features: ["BARK-COLOR-02", "TREE-FORM-05"]
+        notes: "White bark with dark horizontal lines and irregular growth form are distinctive in winter"
+    
+    misidentification_risks:
+      - "Most often confused with other birch species, especially Paper Birch"
+      - "Sometimes mistaken for young Quaking Aspen from a distance"
+      - "European White Birch sometimes confused with Gray Birch"
+  
+  # Wildlife value section
+  wildlife_value:
+    - "Seeds eaten by small birds including chickadees, pine siskins, and redpolls"
+    - "Buds and twigs browsed by deer and rabbits"
+    - "Provides nesting sites for various songbirds"
+    - "Cavity-nesting birds may use older trees"
+    - "Important pioneer species after disturbances"
+    - "Helps establish woodland conditions for later successional species"

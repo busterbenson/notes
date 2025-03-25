@@ -1,0 +1,294 @@
+tree:
+  common_name: "Gray Pine"
+  scientific_name: "Pinus sabiniana"
+  family: "Pinaceae"
+  
+  # Basic summary
+  summary: "A distinctive pine tree with sparse, gray-green foliage and massive, heavy cones. Its very long needles grow in bundles of three, and it has a unique Y-shaped growth pattern that makes it easy to recognize from a distance. Native people valued its large, nutritious seeds as an important food source."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Y-shaped growth form with widely spaced branches; large, heavy cones (6-10 inches); very long needles (8-12 inches) in bundles of three"
+    secondary_markers: "Sparse, gray-green foliage; thick, scaly gray-brown bark; grows in dry foothill areas"
+    seasonal_markers: "Stays green year-round; large cones mature in fall and can stay on the tree for years"
+    similar_species_differentiation: "Unlike Ponderosa Pine, has Y-shaped growth form and much sparser foliage; unlike Coulter Pine, grows in lower elevations and has less massive cones"
+  
+  # Core features
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles all year round"
+        
+      - feature_id: "NEEDLE-ARRANGE-03"  # Needles in threes
+        notes: "Exactly three needles growing together in each bundle, an important way to identify it"
+      
+      - feature_id: "TREE-FORM-05"  # Irregular crown 
+        notes: "Has a unique shape with spreading branches and often forms a Y-shaped trunk"
+      
+      - feature_id: "NEEDLE-SIZE-03"  # Long needles
+        notes: "Very long needles, 8-12 inches (as long as your forearm), are bluish-gray green"
+      
+      - feature_id: "BARK-COLOR-04"  # Brown bark
+        notes: "Bark is gray-brown with plate-like scales"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Naturally grows in the foothills surrounding California's Central Valley"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        notes: "Grows well in dry, hot areas with little water"
+      
+    usually_true:
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Usually grows 40-80 feet tall (about as tall as a 4-8 story building)"
+        exceptions: "Can sometimes be shorter in very harsh conditions"
+      
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually starts with a single trunk"
+        exceptions: "Often forks into a Y-shape partway up, forming what looks like two main trunks"
+      
+      - feature_id: "CONE-SIZE-03"  # Large cones
+        notes: "Makes very large, heavy cones 6-10 inches long (about as long as a piece of printer paper)"
+        exceptions: "Size can vary based on growing conditions"
+    
+    sometimes_true:
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees only"
+        notes: "Bark is smoother and grayish when the tree is young"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Older trees"
+        notes: "Bark gets deep grooves and scaly plates as the tree ages"
+      
+      - feature_id: "SENSORY-SEC-01"  # Milky sap
+        conditions: "When branches or trunk are damaged"
+        notes: "Produces sticky, fragrant resin when wounded"
+      
+      - feature_id: "GEO-ELEV-02"  # Mid-elevation
+        conditions: "Where it most commonly grows"
+        notes: "Usually found at 500-3,000 feet up in foothill areas"
+      
+      - feature_id: "ECO-USE-03"  # Valuable wood properties
+        conditions: "Mature trees"
+        notes: "Wood is not highly valued for lumber but is used for firewood"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        conditions: "When needles are crushed"
+        notes: "Crushing needles releases a strong pine scent"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all needles seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Always has three needles per bundle, never two"
+      
+      - feature_id: "NEEDLE-ARRANGE-04"  # Needles in fives
+        notes: "Always has three needles per bundle, never five"
+      
+      - feature_id: "CONE-POS-01"  # Upright cones
+        notes: "Cones always hang down, never grow upright"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Produces small pollen cones, not showy flowers"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Y-shaped trunk and big, heavy pine cones"
+    memorable_comparison: "This tree looks like it's holding up its arms in a big Y shape, and its cones are so heavy they could bonk you on the head if they fell!"
+    touch_tip: "Count the needles in each bundle - if you find exactly three very long needles growing together, it might be a Gray Pine"
+    smell_tip: "The needles smell like strong pine when you gently crush them (don't break them!)"
+    fun_fact: "Native Americans called this the 'digger pine' because they used special digging tools to harvest the fallen cones for their nutritious seeds. The cones are so heavy they've been known to dent car hoods when they fall in parking lots!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "Look at the tree's shape. Does it have a Y-shaped trunk or branches that spread out widely?"
+        yes_next: 2
+        no_next: "Not a Gray Pine - look for trees with a more regular shape"
+      - step: 2
+        instruction: "Grab a needle bundle and count - are there exactly 3 needles in each bunch?"
+        yes_next: 3
+        no_next: "Not a Gray Pine - if there are 2 or 5 needles in each bunch, it's a different pine tree"
+      - step: 3
+        instruction: "Are the needles very long (8-12 inches, longer than your hand) and gray-green in color?"
+        yes_next: 4
+        no_next: "Might be a Ponderosa Pine, which has shorter, more yellow-green needles"
+      - step: 4
+        instruction: "Look for big, heavy cones that are 6-10 inches long. Can you find any on the tree or on the ground nearby?"
+        yes_next: "You found a Gray Pine!"
+        no_next: "It might still be a Gray Pine if it's not cone season, check for the other features again"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New needle growth begins; small male pollen cones release yellow dust"
+      reproductive_activity: "Pollen is released; tiny female cones begin forming"
+      identification_tips: "Yellow pollen may be visible on branches; needles look their brightest"
+      kid_friendly_tip: "In spring, the tree makes tiny yellow pollen bumps that release dust like little smoke bombs!"
+    
+    - season: "Summer" 
+      visual_changes: "Needles reach full size; young cones continue growing"
+      reproductive_activity: "Young cones growing larger"
+      identification_tips: "Distinctive gray-green color and Y-shape stand out against other pines"
+      kid_friendly_tip: "In summer, the baby cones grow bigger - they're green and hard, like unripe fruit"
+    
+    - season: "Fall"
+      visual_changes: "Second-year cones turn brown and begin to open"
+      reproductive_activity: "Mature cones release seeds"
+      identification_tips: "Large brown cones may be visible hanging from branches or on the ground"
+      kid_friendly_tip: "Fall is cone season! Look for the huge brown cones falling to the ground - they're as big as a banana!"
+    
+    - season: "Winter"
+      visual_changes: "Tree stays green; old cones may remain on tree"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Y-shaped form is more visible when other deciduous trees are bare"
+      kid_friendly_tip: "Even in winter, Gray Pines stay green, and their big cones might still be hanging on the branches"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Y-shaped growth form with spreading branches"
+      reliability: "Very high"
+      visibility: "Easy - can see from a distance"
+    - feature: "Needles in bundles of three"
+      reliability: "Very high"
+      visibility: "Medium - need to look closely at needles"
+    - feature: "Very long needles (8-12 inches)"
+      reliability: "High"
+      visibility: "Medium - can see from nearby"
+    - feature: "Large, heavy cones (6-10 inches)"
+      reliability: "Very high"
+      visibility: "Easy - can see from nearby when present"
+    
+  look_alike_species:
+    - species: "Ponderosa Pine (Pinus ponderosa)"
+      differences: "Ponderosa Pine has shorter needles (5-10 inches), straighter trunk, denser foliage, and bark that smells like vanilla or butterscotch when warm"
+      identification_tip: "If the tree has a straight trunk instead of a Y-shape, and denser foliage, it's likely Ponderosa Pine"
+    - species: "Coulter Pine (Pinus coulteri)"
+      differences: "Coulter Pine has even larger, heavier spiny cones (10-14 inches), grows at higher elevations, and has denser crown"
+      identification_tip: "Gray Pine has a more open, sparse crown and grows at lower elevations than Coulter Pine"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Miwok"
+      physical_uses:
+        - "Collected fallen cones and extracted the large, nutritious seeds (pine nuts) for food"
+        - "Roasted seeds over coals and ground them into flour for making bread and mush"
+        - "Used the strong, straight-grained wood for tool handles and construction"
+        - "Made tea from young needles to treat colds and respiratory issues"
+      symbolic_meaning:
+        - "The tree's resilience in harsh conditions symbolized strength and endurance"
+        - "Told stories about how the tree's strong roots hold the soil together on steep hillsides"
+        - "Used in coming-of-age ceremonies, teaching young people about finding food in nature"
+    
+    - culture: "Yokuts"
+      physical_uses:
+        - "Harvested pine nuts as a staple food source, especially important during winter months"
+        - "Used special digging tools to extract fallen cones from the ground"
+        - "Burned the pitch (sap) as incense during spiritual ceremonies"
+        - "Created pitch medicine for treating cuts, sores, and respiratory ailments"
+      symbolic_meaning:
+        - "The Y-shaped growth represented life's different paths and choices"
+        - "Included Gray Pine in creation stories as one of the first plants"
+        - "Used the tree's cycle of cone production to teach about planning and patience"
+    
+    - culture: "Paiute"
+      physical_uses:
+        - "Gathered pine nuts each fall as an essential part of their seasonal food cycle"
+        - "Used sap as waterproofing for baskets and as an adhesive for tools"
+        - "Made a type of chewing gum from the hardened sap"
+        - "Created special tools specifically for harvesting and processing pine nuts"
+      symbolic_meaning:
+        - "The Gray Pine's ability to survive drought represented resilience and adaptation"
+        - "Passed knowledge about pine nut harvesting through generations as cultural heritage"
+        - "Used pine nut gathering time as an opportunity for family bonding and storytelling"
+    
+    - culture: "California's Early Settlers"
+      physical_uses:
+        - "Used the wood primarily for firewood since it was too pitchy and knotty for good lumber"
+        - "Occasionally used the seeds as emergency food when other supplies were low"
+        - "Used the sap as an antiseptic for wounds and to start fires in wet conditions"
+      symbolic_meaning:
+        - "Saw the tree as a marker of poor soil quality (where farming would be difficult)"
+        - "Considered it less valuable than other pines due to its irregular growth and poor lumber quality"
+        - "Viewed it as a signature species of California's foothill landscapes"
+    
+  cultural_ecological_notes:
+    - "Seeds were an important food source for many California Native American tribes"
+    - "Provides nesting sites for birds and food for wildlife including squirrels and jays"
+    - "Adapted to fire ecology, with thick bark that helps protect it during wildfires"
+    
+  range_within_california:
+    - "Common in the foothills surrounding California's Central Valley"
+    - "Grows in the Coast Ranges, Sierra Nevada foothills, and Tehachapi Mountains"
+    - "Usually found at elevations between 500-3,000 feet"
+    - "Prefers dry, hot slopes with poor, rocky soil"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "40-80 feet tall (about as tall as a 4-8 story building)"
+    growth_rate: "Medium"
+    crown_spread: "30-50 feet wide when fully grown"
+    lifespan: "150-200 years"
+    trunk_diameter: "Up to 3 feet across (about as wide as a big hula hoop)"
+    root_system: "Deep taproot with spreading side roots to find water in dry conditions"
+    toxicity: "Sticky sap may cause skin irritation in some people"
+  
+  conservation_status:
+    status: "Least Concern (common within its range)"
+    threats: 
+      - "Habitat loss due to development in foothill areas"
+      - "Severe wildfires that kill even mature trees"
+      - "Climate change effects, especially extended drought stress"
+    protection_efforts:
+      - "Protected in some state parks and conservation areas"
+      - "Some restoration projects include Gray Pine as a native species"
+      - "Fire management to prevent catastrophic wildfires"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: NEEDLE-ARRANGE-03"  # Needles in threes
+    confirmation_features:
+      - "feature_id: NEEDLE-SIZE-03"  # Long needles
+      - "feature_id: TREE-FORM-05"  # Irregular crown
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-05", "TREE-SIZE-02"]  # Irregular crown, Medium tree
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-SIZE-03", "CONE-SIZE-03"]  # Long needles, Large cones
+      - distance: "close_inspection"
+        features_to_check: ["NEEDLE-ARRANGE-03", "SENSORY-SMELL-01"]  # Needles in threes, Aromatic leaves
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-03", "TREE-FORM-05"]
+        notes: "Pollen cones might be visible; bright new growth at branch tips"
+      
+      summer:
+        reliability: "Very high" 
+        key_features: ["NEEDLE-ARRANGE-03", "NEEDLE-SIZE-03"]
+        notes: "Distinctive gray-green color and sparse foliage stands out"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["NEEDLE-ARRANGE-03", "CONE-SIZE-03"]
+        notes: "Large cones maturing and becoming more visible"
+      
+      winter:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-03", "TREE-FORM-05"]
+        notes: "Y-shaped form more visible; large cones may still be present"
+    misidentification_risks: 
+      - "Ponderosa Pine has three needles but straighter trunk, denser foliage, and different bark"
+      - "Coulter Pine has huge spiny cones but grows at higher elevations and has denser foliage"
+      - "Knobcone Pine has smaller cones that stay closed for many years and usually grows in dense stands"
+  
+  wildlife_value:
+    food_source:
+      - "Large, nutritious seeds are eaten by many animals including scrub jays, squirrels, and woodpeckers"
+      - "Small mammals gnaw on bark and twigs during food scarcity"
+      - "Provides habitat for insects that are food for birds"
+    habitat_provided:
+      - "Birds often nest in the Y-shaped trunk junctions"
+      - "Open structure allows many birds to perch and hunt from branches"
+      - "Fallen needles create shelter for small ground animals and insects"
+    ecosystem_role: "Creates unique ecological niches in foothill woodlands; adapted to periodic fire that helps maintain the ecosystem"

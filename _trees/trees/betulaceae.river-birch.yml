@@ -1,0 +1,234 @@
+tree:
+  common_name: "River Birch"
+  scientific_name: "Betula nigra"
+  family: "Betulaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A medium-sized tree with striking reddish-brown to cinnamon-colored bark that peels in curly, papery layers. The leaves are triangular to diamond-shaped with tiny double teeth along the edges, and the tree often grows with multiple trunks."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Reddish-brown to cinnamon-colored bark that peels in curly, papery strips; often has multiple trunks"
+    secondary_markers: "Triangular to diamond-shaped leaves with doubly serrated edges; alternate leaf arrangement"
+    seasonal_markers: "Long hanging catkins in spring; golden yellow fall color"
+    similar_species_differentiation: "Unlike Paper Birch, has reddish-brown (not white) bark; unlike alders, has peeling bark rather than smooth gray bark"
+  
+  # Core features section
+  features:
+    always_true:
+      # Reference features.yml IDs with tree-specific notes
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops all leaves in fall and grows new ones each spring"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow singly along branches in a zigzag pattern, not in pairs"
+      
+      - feature_id: "BARK-COLOR-03"  # Red bark
+        notes: "Distinctive cinnamon to reddish-brown color that stands out in the landscape"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Bark peels in curly, papery strips or sheets"
+    
+    usually_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        exceptions: "Can grow larger in ideal conditions"
+        notes: "Usually grows 40-70 feet tall at maturity"
+      
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        exceptions: "Can occasionally grow with a single trunk, especially when pruned young"
+        notes: "Often grows with multiple trunks or branches low to the ground"
+      
+      - feature_id: "LEAF-EDGE-03"  # Doubly serrated
+        exceptions: "Some leaves may have less distinct double serration"
+        notes: "Leaf edges have small teeth with even smaller teeth on them"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        exceptions: "Color intensity varies based on weather conditions"
+        notes: "Leaves typically turn golden yellow in fall"
+    
+    sometimes_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "TREE-SIZE-03"  # Large tree
+        conditions: "In ideal growing conditions with plenty of water"
+        notes: "Can grow larger in optimal conditions, especially near water"
+      
+      - feature_id: "FLOWER-TYPE-01"  # Catkins present
+        conditions: "During spring flowering season"
+        notes: "Long hanging male catkins (2-3 inches) and smaller upright female catkins"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        conditions: "When planted in appropriate locations in California"
+        notes: "In California, often planted near water features in landscapes"
+    
+    never_true:
+      # Features explicitly absent that help differentiation
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops leaves in fall; never stays green year-round"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves never grow in pairs across from each other on branches"
+      
+      - feature_id: "BARK-COLOR-02"  # White bark
+        notes: "Unlike Paper Birch, never has white bark"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Reddish-brown bark that peels in curly ribbons like cinnamon rolls"
+    memorable_comparison: "The bark looks like curly ribbons or peeling cinnamon sticks"
+    touch_tip: "The bark feels papery and can peel off in thin sheets, but be gentle!"
+    smell_tip: "The bark doesn't have a strong smell"
+    fun_fact: "This tree is called River Birch because it loves to grow near water! It's tough enough to handle flooding, which would kill many other trees."
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the bark. Is it a cinnamon or reddish-brown color that peels in curly strips like ribbons?"
+        yes_next: 2
+        no_next: "Not a River Birch - if the bark is white, it might be a different kind of birch"
+      - step: 2
+        instruction: "Look at how the tree is growing. Does it have multiple trunks or branches that start low to the ground?"
+        yes_next: 3
+        no_next: "Might still be a River Birch - check the leaves"
+      - step: 3
+        instruction: "Look at a leaf. Is it shaped like a triangle or diamond with tiny teeth all around the edges?"
+        yes_next: "You found a River Birch!"
+        no_next: "Might be a different tree - check the leaf shape again"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New light green leaves emerge; long hanging male catkins appear"
+      reproductive_activity: "Male catkins release yellow pollen; smaller female catkins form"
+      identification_tips: "The peeling bark and catkins are key identification features"
+      kid_friendly_tip: "In spring, look for hanging 'caterpillar' catkins and fresh green leaves"
+    
+    - season: "Summer" 
+      visual_changes: "Leaves mature to medium green; cinnamon-colored bark stands out against green foliage"
+      reproductive_activity: "Female catkins develop into small cylindrical structures containing seeds"
+      identification_tips: "The distinctive bark and fully developed leaves aid identification"
+      kid_friendly_tip: "In summer, the curly cinnamon bark looks extra pretty against the green leaves"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn golden yellow before dropping"
+      reproductive_activity: "Seeds mature and begin to disperse in the wind"
+      identification_tips: "Fall color and distinctive bark help with identification"
+      kid_friendly_tip: "In fall, the leaves turn yellow like gold coins before they fall off"
+    
+    - season: "Winter"
+      visual_changes: "Without leaves, the peeling cinnamon-colored bark is more visible and striking"
+      reproductive_activity: "Dormant; next year's catkins begin forming"
+      identification_tips: "The peeling, reddish-brown bark is highly visible and distinctive"
+      kid_friendly_tip: "In winter without leaves, you can really see the cool curly bark"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Reddish-brown to cinnamon-colored bark that peels in curly strips"
+      reliability: "High"
+      visibility: "High - visible from a distance"
+    - feature: "Often grows with multiple trunks or branches low to the ground"
+      reliability: "Medium"
+      visibility: "High - visible from a distance"
+    - feature: "Triangular to diamond-shaped leaves with doubly serrated edges"
+      reliability: "High"
+      visibility: "Medium - need to examine leaves"
+    - feature: "Alternate leaf arrangement in a zigzag pattern"
+      reliability: "High"
+      visibility: "Medium - check branch closely"
+    
+  look_alike_species:
+    - species: "Paper Birch (Betula papyrifera)"
+      differences: "Paper Birch has white bark, not reddish-brown; often has a single trunk rather than multiple stems; less heat tolerant"
+      identification_tip: "Check the bark color - Paper Birch is white, River Birch is cinnamon-colored"
+    
+    - species: "White Alder (Alnus rhombifolia)"
+      differences: "Has smooth gray bark that doesn't peel; produces distinctive woody cone-like fruits; leaves have simple serrations"
+      identification_tip: "Touch the bark - Alder bark doesn't peel off in paper-like strips"
+    
+    - species: "Paperbark Maple (Acer griseum)"
+      differences: "Has similar exfoliating cinnamon-colored bark but has opposite leaf arrangement and compound leaves with three leaflets"
+      identification_tip: "Check how leaves grow - Paperbark Maple leaves grow in pairs opposite each other"
+    
+    - species: "Red Alder (Alnus rubra)"
+      differences: "Has smooth grayish bark that may be mottled but doesn't peel in papery strips; produces cone-like fruits rather than catkins"
+      identification_tip: "Look for cone-like fruits on alders versus catkins on birches"
+
+  cultural_ecological_notes:
+    - "Excellent tree for controlling erosion along streams and wet areas"
+    - "One of the most heat-tolerant birch species, making it suitable for various California climates"
+    - "Tolerates periodic flooding better than most landscape trees"
+    
+  range_within_california:
+    - "Not native to California but planted as an ornamental throughout the state"
+    - "Can be grown in most regions of California where adequate water is available"
+    - "One of the few birch species that can tolerate the heat of the Central Valley and parts of Southern California"
+    
+  cultural_significance:
+    - culture: "Eastern Native American Tribes"
+      physical_uses:
+        - "Bark was used for making baskets, containers, and covering small canoes"
+        - "Wood was used for tools, bowls, and paddles"
+      symbolic_meaning:
+        - "Connected to water and adaptability in challenging environments"
+        - "Associated with renewal because it quickly regrows after fires or floods"
+    
+    - culture: "Modern Landscape Design"
+      physical_uses:
+        - "Planted for erosion control along waterways"
+        - "Used as an ornamental specimen tree for its unique bark"
+      symbolic_meaning:
+        - "Represents adaptability in changing climate conditions"
+        - "Symbol of resilience during environmental stress"
+
+  physical_characteristics:
+    height_range: "40-70 feet tall"
+    growth_rate: "Medium to fast - about 1-2 feet per year when young"
+    crown_spread: "30-50 feet wide"
+    lifespan: "60-100 years"
+    trunk_diameter: "Up to 2-3 feet, often with multiple trunks"
+    root_system: "Shallow to moderately deep, spreading"
+    toxicity: "No significant toxicity"
+
+  conservation_status:
+    status: "Not listed as threatened or endangered"
+    threats: "No significant threats to the species as a whole"
+    protection_efforts: "Common and abundant in native range; widely cultivated"
+
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+      - feature_id: "BARK-COLOR-03"  # Red bark
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+    confirmation_features:
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+      - feature_id: "LEAF-EDGE-03"  # Doubly serrated
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["BARK-COLOR-03", "TREE-TRUNK-02"]  # Red bark, multi-trunked
+      - distance: "from_nearby"
+        features_to_check: ["BARK-TEXT-03", "LEAF-ARRANGE-01"]  # Peeling bark, alternate leaves
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-03"]  # Doubly serrated edges
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["BARK-COLOR-03", "BARK-TEXT-03", "FLOWER-TYPE-01"]
+        notes: "Catkins and new leaf growth help with spring identification"
+      summer:
+        reliability: "High"
+        key_features: ["BARK-COLOR-03", "BARK-TEXT-03", "LEAF-EDGE-03"]
+        notes: "Full leaf development makes identification easier"
+      fall:
+        reliability: "High" 
+        key_features: ["BARK-COLOR-03", "LEAF-FALL-01", "BARK-TEXT-03"]
+        notes: "Golden fall color combined with distinctive bark"
+      winter:
+        reliability: "High"
+        key_features: ["BARK-COLOR-03", "BARK-TEXT-03", "TREE-TRUNK-02"]
+        notes: "Peeling cinnamon bark is most visible and distinctive in winter"
+    misidentification_risks:
+      - "Paper Birch - has white rather than cinnamon-colored bark"
+      - "White Alder - has smooth rather than peeling bark"
+      - "Paperbark Maple - has opposite rather than alternate leaves"
+      - "Red Alder - has smooth bark and cone-like fruits"

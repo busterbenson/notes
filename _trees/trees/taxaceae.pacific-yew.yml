@@ -1,0 +1,286 @@
+tree:
+  common_name: "Pacific Yew"
+  scientific_name: "Taxus brevifolia"
+  family: "Taxaceae"
+  
+  # Basic summary information
+  summary: "A slow-growing understory evergreen tree with flat, dark green needles arranged in two rows, distinctive reddish-purple, flaky bark, and unique red berry-like structures containing seeds instead of cones. Its wood is extremely strong, and it contains compounds used in cancer treatment."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Flat needles arranged in two rows along twigs; red berry-like structures (arils) containing single seeds; distinctive reddish-purple, flaky or scaly bark"
+    secondary_markers: "Small size, often growing as an understory tree; scattered, irregular branching pattern; extremely hard, dense wood"
+    seasonal_markers: "Berry-like red arils present in late summer through fall; new growth in spring slightly lighter green"
+    similar_species_differentiation: "Unlike hemlocks, has no cones and has bright red berry-like seed coverings; unlike redwood or California Torreya, has softer, less pointed needles arranged more distinctly in two rows"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles year-round"
+        
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has individual needles attached singly to the twig"
+      
+      - feature_id: "NEEDLE-ARRANGE-08"  # Flattened spray needles
+        notes: "Needles arranged in a flattened spray, appearing to grow in two rows"
+      
+      - feature_id: "FRUIT-TYPE-06"  # Fleshy cones
+        notes: "Produces red, berry-like structures (arils) that surround a single seed instead of cones"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Native to forests of northern California and the Pacific Northwest"
+      
+      - feature_id: "NEEDLE-SHAPE-01"  # Flat needles
+        notes: "Needles are flat rather than square in cross-section"
+      
+      - feature_id: "NEEDLE-SIZE-01"  # Short needles
+        notes: "Needles typically less than 1 inch long"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Distinctive thin bark that peels or flakes in irregular patches"
+
+    usually_true:
+      # Features that are primarily true, but have notable exceptions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with a single main trunk"
+        exceptions: "May develop multiple trunks, especially after damage"
+      
+      - feature_id: "TREE-SIZE-01"  # Short tree
+        notes: "Usually grows to 15-45 feet tall"
+        exceptions: "Can occasionally reach 60 feet in optimal conditions"
+      
+      - feature_id: "TREE-FORM-05"  # Irregular crown
+        notes: "Generally has an irregular, open growth form without a strong central leader"
+        exceptions: "Young trees may be more symmetrical; very old trees can be quite gnarled"
+      
+      - feature_id: "BARK-COLOR-03"  # Red bark
+        notes: "Bark is typically a distinctive reddish-purple color"
+        exceptions: "Color may vary from reddish-brown to purplish, especially in different lighting"
+
+    sometimes_true:
+      # Features that vary with age, season, or conditions
+      - feature_id: "HABITAT-LOC-02"  # Mountain habitat
+        conditions: "In parts of its range"
+        notes: "Often found in mountain forests, but also in coastal forests"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        conditions: "Frequently found along streams"
+        notes: "Often grows near streams or in moist forest understory"
+      
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        conditions: "After damage or in some growing conditions"
+        notes: "Can develop multiple trunks, especially after top damage"
+      
+      - feature_id: "LEAF-COLOR-01"  # Dark green
+        conditions: "Mature foliage"
+        notes: "Needles are typically dark green above, lighter below"
+      
+      - feature_id: "ECO-ADAPT-02"  # Shade tolerant
+        conditions: "Typical growing pattern"
+        notes: "Highly shade-tolerant, often growing in understory of larger trees"
+
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all needles seasonally"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Does not produce woody cones; instead has berry-like arils"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Needles attach singly, never in bundles"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Never has a strongly pyramidal or conical form like many conifers"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A small tree with dark green flat needles in two rows and bright red berry-like fruits (but not real berries)"
+    memorable_comparison: "The branches look like flat green ferns, and in fall they're decorated with bright red 'cups' holding single seeds that look like tiny olives"
+    touch_tip: "The needles are soft and flat - not sharp or pokey at all - and feel like a flattened fern branch"
+    smell_tip: "The needles don't have a strong smell, but they feel soft when you touch them gently"
+    fun_fact: "Pacific Yew is like a superhero tree - it contains a special substance called taxol that doctors use to make medicine that fights cancer! Scientists discovered this in the 1960s, and it's helped save many lives. The tree grows super slowly but can live for hundreds of years, and its wood is so strong that Native Americans used it to make bows, paddles, and tools."
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the needles. Are they flat, soft (not pokey), and arranged in two rows along the twig like a flat fern frond?"
+        yes_next: 2
+        no_next: "Not a Pacific Yew - if the needles are sharp and pokey, check spruce; if they're in bundles, check pines"
+      - step: 2
+        instruction: "Look at the bark. Is it thin and flaky with a reddish-purple color underneath?"
+        yes_next: 3
+        no_next: "It might be hemlock or another conifer - Pacific Yew has very distinctive thin, flaky, reddish-purple bark"
+      - step: 3
+        instruction: "In late summer or fall, do you see bright red berry-like cups with seeds, rather than cones? (Or is it a small understory tree with the right needles and bark?)"
+        yes_next: "You found a Pacific Yew!"
+        no_next: "If it has small cones instead of red berry-like structures, it might be hemlock or another conifer"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New needle growth appears as slightly lighter green at branch tips"
+      reproductive_activity: "Pollen is released from small, inconspicuous male structures"
+      identification_tips: "New growth slightly brighter green; look for reddish-purple flaky bark"
+      kid_friendly_tip: "In spring, look for light green new growth at the tips of branches, like tiny green paintbrushes"
+    
+    - season: "Summer" 
+      visual_changes: "New growth matures to match older foliage; seed structures begin developing"
+      reproductive_activity: "Seeds develop inside green arils that will later turn red"
+      identification_tips: "Green developing arils may be visible on female trees"
+      kid_friendly_tip: "By summer, you might see small green berry-like structures forming on female trees"
+    
+    - season: "Fall"
+      visual_changes: "Seed arils mature and turn bright red; no needle color change"
+      reproductive_activity: "Arils fully mature, attracting birds that eat them and disperse seeds"
+      identification_tips: "Bright red arils are very distinctive and a key identification feature"
+      kid_friendly_tip: "In fall, look for bright red 'cups' holding dark seeds - they look like little red candies but are NOT for eating!"
+    
+    - season: "Winter"
+      visual_changes: "Remains evergreen; most arils have been eaten by birds or fallen"
+      reproductive_activity: "Dormant; no significant reproductive activity"
+      identification_tips: "Distinctive bark and needle arrangement remain visible"
+      kid_friendly_tip: "In winter, it keeps its green needles when other trees lose their leaves; look for the special reddish-purple flaky bark"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Flat needles arranged in two rows"
+      reliability: "Very high"
+      visibility: "Easy to observe"
+    - feature: "Reddish-purple flaky bark"
+      reliability: "High"
+      visibility: "Easy to observe on trunk"
+    - feature: "Red berry-like arils (in season)"
+      reliability: "Very high"
+      visibility: "Easy to spot when present (late summer/fall)"
+    - feature: "Small understory tree with irregular branching"
+      reliability: "Medium"
+      visibility: "Context-based observation"
+    
+  look_alike_species:
+    - species: "Western Hemlock (Tsuga heterophylla)"
+      differences: "Western Hemlock has tiny cones (not red arils), a drooping leader, and finer needles with a small stalk"
+      identification_tip: "Pacific Yew has red berry-like structures instead of cones and reddish-purple flaky bark"
+    - species: "California Torreya (Torreya californica)"
+      differences: "California Torreya has stiffer, sharply pointed needles that smell like tomatoes when crushed"
+      identification_tip: "Pacific Yew needles are softer, not sharp-pointed, and don't have a strong smell when crushed"
+    - species: "Redwood (Sequoia sempervirens)"
+      differences: "Redwood grows much larger, has reddish-brown fibrous bark, and produces woody cones"
+      identification_tip: "Pacific Yew stays small, has unique flaky reddish-purple bark, and has red berry-like arils instead of cones"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Karuk"
+      physical_uses:
+        - "Made hunting bows from the incredibly strong wood"
+        - "Crafted paddles and digging tools from the hard, durable wood"
+        - "Used the bark and needles to make a medicinal tea for various ailments"
+        - "Created special ceremonial objects from the wood, which was considered spiritually powerful"
+      symbolic_meaning:
+        - "Respected as a powerful medicine tree with strong healing properties"
+        - "The tree's ability to grow slowly but live long symbolized patience and endurance"
+        - "Used in stories teaching about the balance between strength and flexibility"
+    
+    - culture: "Yurok"
+      physical_uses:
+        - "Crafted hunting bows that were highly prized and traded"
+        - "Made specialized fishing hooks and harpoons from the wood"
+        - "Created small storage containers from the bark"
+        - "Used parts of the tree in medicinal preparations for pain relief"
+      symbolic_meaning:
+        - "Associated with protection and strength in traditional stories"
+        - "The red arils were featured in stories about transformation and rebirth"
+        - "Considered a tree with strong spirit power because of its medicine properties"
+    
+    - culture: "Modern Medicine"
+      physical_uses:
+        - "Bark harvested to extract taxol, a powerful anti-cancer compound"
+        - "Used in the development of treatments for breast, ovarian, and other cancers"
+        - "Became a model for creating synthetic versions of the cancer-fighting chemicals"
+      symbolic_meaning:
+        - "Represents the healing power of nature and the importance of forest conservation"
+        - "Symbolizes hope in the fight against cancer"
+        - "Became an icon for the value of preserving biodiversity for medical discoveries"
+    
+  cultural_ecological_notes:
+    - "One of the slowest growing trees in North America, sometimes growing less than an inch in diameter over 100 years"
+    - "Can live 400+ years despite its small size"
+    - "The wood is exceptionally hard, strong and resistant to decay"
+    - "Important food source for birds who eat the fleshy red arils and disperse the seeds"
+    - "Bark contains taxol, which became an important cancer treatment medicine"
+    
+  range_within_california:
+    - "Found in northern California forests, particularly in coastal and mountain regions"
+    - "Present in the Klamath Mountains and northern Coast Ranges"
+    - "Scattered populations in the northern Sierra Nevada"
+    - "Usually found as an understory tree in moist, shaded forest areas"
+    - "Often grows along streams or in ravines"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "15-45 feet, occasionally to 60 feet"
+    growth_rate: "Very slow, often less than 1 inch diameter growth per century"
+    crown_spread: "10-20 feet at maturity"
+    lifespan: "400-800 years"
+    trunk_diameter: "1-2 feet at maturity"
+    root_system: "Moderately deep with spreading lateral roots"
+    toxicity: "Most parts are toxic if eaten, especially the seeds, though the red aril flesh is not; foliage toxic to livestock"
+  
+  conservation_status:
+    status: "Species of concern in parts of its range"
+    threats: 
+      - "Historical overharvesting for taxol extraction"
+      - "Habitat loss from logging, development, and land conversion"
+      - "Climate change altering suitable habitat conditions"
+      - "Slow growth and reproduction rate limiting recovery"
+    protection_efforts:
+      - "Protected in many national forests and parks"
+      - "Development of synthetic taxol to reduce harvesting pressure"
+      - "Cultivation programs for medicinal purposes"
+      - "Special forest management practices to protect understory yew trees"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: FRUIT-TYPE-06"  # Fleshy cones (arils)
+    confirmation_features:
+      - "feature_id: NEEDLE-ARRANGE-08"  # Flattened spray needles
+      - "feature_id: BARK-COLOR-03"  # Red bark
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-01", "TREE-FORM-05"]  # Short tree, irregular crown
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-ARRANGE-08", "BARK-COLOR-03"]  # Flattened spray needles, red bark
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-06", "BARK-TEXT-03"]  # Fleshy arils, peeling bark
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["NEEDLE-ARRANGE-08", "BARK-COLOR-03"]
+        notes: "New growth slightly lighter green"
+      
+      summer:
+        reliability: "Medium" 
+        key_features: ["NEEDLE-ARRANGE-08", "BARK-COLOR-03"]
+        notes: "Green developing arils may be visible"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["FRUIT-TYPE-06", "NEEDLE-ARRANGE-08"]
+        notes: "Red arils are highly distinctive"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["NEEDLE-ARRANGE-08", "BARK-COLOR-03"]
+        notes: "Bark and needle arrangement remain distinctive"
+    misidentification_risks: 
+      - "Could be confused with hemlock species, especially when arils are not present"
+      - "Young California Torreya trees might look similar until needles are examined closely"
+      - "In northern California, could be confused with western redcedar seedlings or small shrubs"
+  
+  wildlife_value:
+    - "Red arils eaten by many bird species, particularly thrushes, robins, and waxwings"
+    - "Seeds dispersed by birds throughout the forest"
+    - "Dense foliage provides excellent cover for small birds and mammals"
+    - "Old trees provide nesting cavities and shelter for wildlife"
+    - "Important component of diverse forest understory habitats"

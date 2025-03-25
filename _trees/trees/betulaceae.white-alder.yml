@@ -1,0 +1,322 @@
+tree:
+  common_name: "White Alder"
+  scientific_name: "Alnus rhombifolia"
+  family: "Betulaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A deciduous riparian tree with smooth light gray bark and shiny green leaves with finely toothed edges. It produces dangling male catkins in spring and distinctive woody cone-like seed structures that persist on the branches. Native to stream and riverbanks throughout California."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Grows along waterways; smooth light gray bark; leaves with small, regular teeth along edges"
+    secondary_markers: "Small woody cone-like seed clusters that stay on branches; dangling catkins in spring; thin oval-shaped leaves"
+    seasonal_markers: "Yellow hanging catkins in late winter/early spring; cone-like seed structures visible year-round; bright green leaves in spring and summer, turning yellow or yellow-brown in fall"
+    similar_species_differentiation: "Unlike Red Alder, has lighter gray bark without orange tones and lacks rust-colored hairs on leaf undersides; unlike Arizona Alder, has smaller leaves with finer teeth"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops all its leaves in fall and grows new ones in spring"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Each leaf is a single piece, not divided into smaller leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow in a zigzag pattern along branches, not directly across from each other"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated
+        notes: "Leaf edges have small, fine teeth all the way around"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Bark is mostly smooth without deep grooves or peeling strips"
+      
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        notes: "Bark is light grayish in color"
+      
+      - feature_id: "FLOWER-TYPE-01"  # Catkins present
+        notes: "Makes long, dangling flower structures called catkins in early spring"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        notes: "Grows along streams, rivers, and in wet areas"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Naturally grows wild in California"
+      
+      - feature_id: "ECO-REL-01"  # Nitrogen fixing
+        notes: "Helps make soil healthier for other plants by adding nitrogen"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk"
+        exceptions: "Can sometimes have multiple trunks when growing in wet or disturbed areas"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Usually grows 30-80 feet tall (about as tall as a 3-8 story building)"
+        exceptions: "May be shorter in tough growing conditions or when young"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Top of the tree usually forms a rounded dome shape"
+        exceptions: "May be more irregular or narrow when crowded among other trees"
+    
+    sometimes_true:
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Very old trees"
+        notes: "Bark may develop some shallow grooves and cracks as trees age"
+      
+      - feature_id: "WINTER-FEAT-01"  # Catkins in winter
+        conditions: "Late winter before leaves appear"
+        notes: "Male catkins start developing in winter and open in early spring"
+      
+      - feature_id: "HABITAT-LOC-01"  # Coastal habitat
+        conditions: "Within its natural range"
+        notes: "Can be found in coastal areas where there are streams"
+      
+      - feature_id: "HABITAT-LOC-02"  # Mountain habitat
+        conditions: "Within its natural range near water"
+        notes: "Grows in mountain streams and canyons"
+      
+      - feature_id: "HABITAT-LOC-03"  # Valley habitat
+        conditions: "Within its natural range near water"
+        notes: "Common along valley rivers and streams"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "Within its natural range"
+        notes: "Found throughout Northern California along waterways"
+      
+      - feature_id: "GEO-REGION-02"  # Central California
+        conditions: "Within its natural range"
+        notes: "Common in Central California along streams and rivers"
+      
+      - feature_id: "GEO-REGION-03"  # Southern California
+        conditions: "Within its natural range"
+        notes: "Grows in Southern California mountains and valleys near water"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Fall season"
+        notes: "Leaves often turn yellow before falling"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops its leaves in fall; never stays green all year"
+      
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        notes: "Has flat, broad leaves, not tiny scales"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has broad leaves, not needles"
+      
+      - feature_id: "BARK-COLOR-03"  # Red bark
+        notes: "Bark is gray, never reddish"
+      
+      - feature_id: "HABITAT-WATER-03"  # Dry slope habitat
+        notes: "Never grows in dry places; always near water"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        notes: "Needs regular water and doesn't survive in dry conditions"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A tree that grows next to water with smooth gray bark and tiny woody cones"
+    memorable_comparison: "The smooth gray bark looks like elephant skin, and the little hard cones look like tiny pinecones but grow on a leafy tree"
+    touch_tip: "Feel the smooth gray bark - it feels cool and sometimes has bumpy patches that feel like Braille"
+    smell_tip: "Crush a leaf gently to smell a mild, fresh scent"
+    fun_fact: "White Alder is a superhero tree! Its roots make special food for the soil that helps other plants grow better, and it helps keep stream banks from washing away during floods."
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look where the tree is growing. Is it right next to a stream, river, or in a wet area?"
+        yes_next: 2
+        no_next: "Probably not a White Alder - they almost always grow near water"
+      - step: 2
+        instruction: "Check the bark. Is it smooth and light gray, like elephant skin?"
+        yes_next: 3
+        no_next: "Might be another kind of tree - try looking at willows or cottonwoods instead"
+      - step: 3
+        instruction: "Look closely at the leaves. Are they oval-shaped with tiny teeth all along the edges?"
+        yes_next: 4
+        no_next: "Not a White Alder - check for other trees that grow near water"
+      - step: 4
+        instruction: "Look for tiny woody cone-like structures about the size of a marble. Can you find any on the branches or on the ground below?"
+        yes_next: "You found a White Alder!"
+        no_next: "If it's early spring, look for long, dangling yellow catkins instead. If neither is visible, check the leaf arrangement - they should grow in a zigzag pattern along the branch"
+  
+  # Seasonal timeline
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New bright green leaves emerge; male catkins elongate and release yellow pollen"
+      reproductive_activity: "Male catkins release pollen; female flowers develop into tiny green cones"
+      identification_tips: "Yellow dangling catkins are distinctive in early spring before leaves fully develop"
+      kid_friendly_tip: "Look for long yellow 'caterpillars' hanging down (these are the flowers) and fresh green leaves just starting to grow"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of green leaves; small green cone-like seed structures develop"
+      reproductive_activity: "Seed cones continue to grow and begin to harden"
+      identification_tips: "Look for small green cone-like structures developing on the branches"
+      kid_friendly_tip: "The tree is fully dressed in green leaves, and you can spot tiny green 'pine cones' growing (but it's not really a pine!)"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow to yellow-brown before dropping; seed cones mature to brown"
+      reproductive_activity: "Seed cones mature and begin to open to release seeds"
+      identification_tips: "Brown woody cones are distinctive; yellow fall color"
+      kid_friendly_tip: "Leaves turn yellow like lemon drops, and the little cones turn brown and woody like tiny pinecones"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches; woody brown cones remain on the tree"
+      reproductive_activity: "Male catkins for next spring begin to form late in winter"
+      identification_tips: "Persistent woody cones remain on bare branches; new catkins start forming late winter"
+      kid_friendly_tip: "After the leaves fall off, you can see the little brown cones still hanging on the branches like tiny Christmas ornaments"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Smooth, light gray bark"
+      reliability: "High"
+      visibility: "Easy to see"
+    - feature: "Small woody cone-like structures on branches"
+      reliability: "Very high"
+      visibility: "Visible year-round"
+    - feature: "Growing close to water"
+      reliability: "Very high"
+      visibility: "Easy to observe location"
+    - feature: "Leaves with fine, regular teeth around edges"
+      reliability: "High"
+      visibility: "Need to look closely at leaves"
+    - feature: "Dangling yellow catkins in spring"
+      reliability: "Very high"
+      visibility: "Seasonal - early spring only"
+    
+  look_alike_species:
+    - species: "Red Alder (Alnus rubra)"
+      differences: "Red Alder has bark with orange or rusty tones, rusty hairs on leaf veins underneath, and grows mainly near the coast"
+      identification_tip: "Check the leaf undersides - White Alder lacks rusty hairs along the veins, and its bark is grayer"
+    
+    - species: "Arizona Alder (Alnus oblongifolia)"
+      differences: "Arizona Alder has larger leaves with coarser teeth and is found mainly in Southern California mountains"
+      identification_tip: "White Alder leaves are smaller with finer, more regular teeth around the edges"
+    
+    - species: "Mountain Alder (Alnus incana ssp. tenuifolia)"
+      differences: "Mountain Alder is usually shorter, often multi-trunked, with more deeply toothed leaves, and grows at higher elevations"
+      identification_tip: "White Alder is taller, usually single-trunked, and has more delicate leaf teeth"
+    
+  cultural_ecological_notes:
+    - "Critical for stabilizing stream banks and preventing erosion"
+    - "Provides shade that keeps water cool for fish and other aquatic animals"
+    - "Nitrogen-fixing roots improve soil fertility for other plants"
+    - "Leaves that fall in streams are important food for aquatic insects"
+    - "Creates habitat for birds and other wildlife"
+    
+  range_within_california:
+    - "Found throughout California along streams, rivers, and wet areas"
+    - "Grows from sea level up to about 8,000 feet elevation"
+    - "Common in coastal areas, Central Valley, Sierra foothills, and mountains"
+    - "Most widespread alder species in California"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Miwok"
+      physical_uses:
+        - "Used the bark to make a reddish-brown dye for baskets and other items"
+        - "Made a tea from the bark to treat upset stomachs and fevers"
+        - "Carved the soft wood into bowls, spoons, and other tools"
+        - "Used branches for building temporary shelters near fishing spots"
+      symbolic_meaning:
+        - "The tree was connected with water and life-giving properties"
+        - "Associated with healing because of its medicinal bark"
+        - "Valued as a marker of good fishing locations along streams"
+        - "Represented the idea of helping others grow, like how alder helps other plants by improving soil"
+    
+    - culture: "Cahuilla"
+      physical_uses:
+        - "Made a special red dye from the bark for coloring baskets and clothing"
+        - "Created skin washes from the bark to treat rashes and wounds"
+        - "Used the wood to make tools for working with food"
+        - "Made a tea from the bark to reduce fevers and inflammation"
+      symbolic_meaning:
+        - "The tree represented the connection between water and life"
+        - "Valued in stories about proper care of waterways"
+        - "Used as an example of a helper that makes the community stronger"
+        - "Taught children about the tree's role in keeping water clean"
+    
+    - culture: "Chumash"
+      physical_uses:
+        - "Used the wood to smoke fish, giving it a special flavor"
+        - "Made a reddish color for basket decorations from the bark"
+        - "Created tools and utensils from the wood"
+        - "Used as firewood for certain cooking methods"
+      symbolic_meaning:
+        - "The tree's growth along water represented the boundaries between worlds"
+        - "Featured in stories about water spirits and beings"
+        - "Used as an example of living in the right place to be helpful"
+        - "Taught lessons about the importance of clean water sources"
+    
+    - culture: "Nisenan"
+      physical_uses:
+        - "Used the sticky buds to treat wounds and skin problems"
+        - "Made a special tea from the bark for colds and coughs"
+        - "Carved the soft wood into ceremonial objects"
+        - "Used branches and twigs for special baskets"
+      symbolic_meaning:
+        - "Believed the tree had special powers for cleaning and purifying"
+        - "Connected with water spirits in traditional stories"
+        - "Represented the giving nature of the earth to provide for people"
+        - "Used the tree's relationship with water to teach about proper management of resources"
+  
+  # Additional physical characteristics
+  physical_characteristics:
+    height_range: "30-80 feet (about as tall as a 3-8 story building)"
+    growth_rate: "Fast growing, can grow 3-4 feet per year when young"
+    crown_spread: "20-40 feet wide (about the size of a small house)"
+    lifespan: "Up to 100 years, though usually less in the wild"
+    trunk_diameter: "Up to 3 feet across (about as wide as a washing machine)"
+    root_system: "Extensive spreading roots that help hold stream banks in place"
+    toxicity: "Not poisonous to humans or animals"
+    
+  conservation_status:
+    status: "Least Concern (common and not threatened)"
+    threats: 
+      - "Stream channelization and flood control projects"
+      - "Development that removes riparian vegetation"
+      - "Drought and changing rainfall patterns due to climate change"
+      - "Competition from invasive species in some areas"
+    protection_efforts:
+      - "Stream restoration projects often include planting White Alders"
+      - "Protected in riparian conservation areas"
+      - "Used in erosion control projects"
+      - "Watershed management to maintain natural stream flows"
+    
+  # Decision tree mapping
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: HABITAT-WATER-01"  # Riparian habitat
+      - "feature_id: BARK-TEXT-01"  # Smooth bark
+      - "feature_id: BARK-COLOR-01"  # Gray bark
+    confirmation_features:
+      - "feature_id: LEAF-EDGE-02"  # Serrated
+      - "feature_id: FLOWER-TYPE-01"  # Catkins present
+      - "feature_id: ECO-ORIGIN-01"  # Native to California
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["HABITAT-WATER-01", "TREE-FORM-02", "TREE-SIZE-02"]  # Riparian habitat, rounded crown, medium tree
+      - distance: "from_nearby"
+        features_to_check: ["BARK-TEXT-01", "BARK-COLOR-01", "LEAF-COMPLEX-01"]  # Smooth bark, gray bark, simple leaves
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-02", "LEAF-ARRANGE-01", "FLOWER-TYPE-01"]  # Serrated edge, alternate arrangement, catkins
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["FLOWER-TYPE-01", "LEAF-TYPE-01", "BARK-TEXT-01"]
+        notes: "Dangling yellow catkins make spring identification easy and reliable"
+      summer:
+        reliability: "High" 
+        key_features: ["HABITAT-WATER-01", "LEAF-EDGE-02", "BARK-TEXT-01"]
+        notes: "Green cone-like structures developing on branches are good identifiers"
+      fall:
+        reliability: "Medium"
+        key_features: ["LEAF-FALL-01", "LEAF-EDGE-02", "HABITAT-WATER-01"]
+        notes: "Yellow fall color and woody cones help with identification"
+      winter:
+        reliability: "Medium"
+        key_features: ["BARK-TEXT-01", "HABITAT-WATER-01", "WINTER-FEAT-01"]
+        notes: "Persistent woody cones on bare branches; late winter catkins"
+    misidentification_risks: "Most often confused with other alder species or sometimes birches"

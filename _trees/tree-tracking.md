@@ -7,67 +7,44 @@ This comprehensive tree identification guide aims to include profiles for all tr
 
 ## ✅ Completed Tree Profiles (165)
 
-### Conifers (60)
+### Conifers (42)
 - Alaska-cedar (Callitropsis nootkatensis) - *Cupressaceae*
 - Arizona Cypress (Cupressus arizonica) - *Cupressaceae*
-- Atlantic White-cedar (Chamaecyparis thyoides) - *Cupressaceae*
-- Atlas Cedar (Cedrus atlantica) - *Pinaceae*
-- Balsam Fir (Abies balsamea) - *Pinaceae*
 - Bigcone Douglas-fir (Pseudotsuga macrocarpa) - *Pinaceae*
 - Bishop Pine (Pinus muricata) - *Pinaceae*
 - Brewer Spruce (Picea breweriana) - *Pinaceae*
-- Bristlecone Fir (Abies bracteata) - *Pinaceae*
 - California Red Fir (Abies magnifica) - *Pinaceae*
 - California Torreya (Torreya californica) - *Taxaceae*
 - California White Fir (Abies concolor var. lowiana) - *Pinaceae*
-- Caucasian Fir (Abies nordmanniana) - *Pinaceae*
 - Chinese-fir (Cunninghamia lanceolata) - *Cupressaceae*
 - Coast Douglas-fir (Pseudotsuga menziesii var. menziesii) - *Pinaceae*
 - Coast Redwood (Sequoia sempervirens) - *Cupressaceae*
+- Common Cypress Genus (Cupressus spp.) - *Cupressaceae* [includes 5 species: Atlantic White-cedar, Eastern Redcedar, Italian Cypress, Monterey Cypress, Northern White-cedar, Port Orford-cedar]
 - Dawn Redwood (Metasequoia glyptostroboides) - *Cupressaceae*
-- Deodar Cedar (Cedrus deodara) - *Pinaceae*
-- Eastern Redcedar (Juniperus virginiana) - *Cupressaceae*
-- Engelmann Spruce (Picea engelmannii) - *Pinaceae*
-- European Silver Fir (Abies alba) - *Pinaceae*
-- Fraser Fir (Abies fraseri) - *Pinaceae*
 - Giant Sequoia (Sequoiadendron giganteum) - *Cupressaceae*
 - Grand Fir (Abies grandis) - *Pinaceae*
 - Gray Pine (Pinus sabiniana) - *Pinaceae*
 - Incense-cedar (Calocedrus decurrens) - *Cupressaceae*
-- Italian Cypress (Cupressus sempervirens) - *Cupressaceae*
 - Japanese-cedar (Cryptomeria japonica) - *Cupressaceae*
 - Jeffrey Pine (Pinus jeffreyi) - *Pinaceae*
 - Knobcone Pine (Pinus attenuata) - *Pinaceae*
-- Lebanon Cedar (Cedrus libani) - *Pinaceae*
+- Less Common Fir Species (Abies spp.) - *Pinaceae* [includes 8 species: Balsam, Bristlecone, Caucasian, European Silver, Fraser, Nikko, Noble, Pacific Silver, Subalpine]
+- Less Common Pine Species (Pinus spp.) - *Pinaceae* [includes 2 species: Spruce Pine, Western White]
+- Less Common Spruce Species (Picea spp.) - *Pinaceae* [includes 7 species: Black, Blue, Engelmann, Norway, Oriental, Red, Serbian, White]
 - Lodgepole Pine (Pinus contorta) - *Pinaceae*
-- Monterey Cypress (Cupressus macrocarpa) - *Cupressaceae*
 - Monterey Pine (Pinus radiata) - *Pinaceae*
 - Mountain Hemlock (Tsuga mertensiana) - *Pinaceae*
-- Nikko Fir (Abies homolepis) - *Pinaceae*
-- Noble Fir (Abies procera) - *Pinaceae*
-- Northern White-cedar (Thuja occidentalis) - *Cupressaceae*
-- Norway Spruce (Picea abies) - *Pinaceae*
-- Oriental Spruce (Picea orientalis) - *Pinaceae*
-- Pacific Silver Fir (Abies amabilis) - *Pinaceae*
-- Red Spruce (Picea rubens) - *Pinaceae*
-- Serbian Spruce (Picea omorika) - *Pinaceae*
 - Pacific Yew (Taxus brevifolia) - *Taxaceae*
 - Ponderosa Pine (Pinus ponderosa) - *Pinaceae*
-- Port Orford-cedar (Chamaecyparis lawsoniana) - *Cupressaceae*
 - Rocky Mountain Douglas-fir (Pseudotsuga menziesii var. glauca) - *Pinaceae*
 - Sitka Spruce (Picea sitchensis) - *Pinaceae*
-- Subalpine Fir (Abies lasiocarpa) - *Pinaceae*
 - Sugar Pine (Pinus lambertiana) - *Pinaceae*
 - Torrey Pine (Pinus torreyana) - *Pinaceae*
+- True Cedar Genus (Cedrus spp.) - *Pinaceae* [includes 3 species: Atlas Cedar, Deodar Cedar, Lebanon Cedar]
 - Western Hemlock (Tsuga heterophylla) - *Pinaceae*
 - Western Juniper (Juniperus occidentalis) - *Cupressaceae*
-- Western Redcedar (Thuja plicata) - *Cupressaceae*
 - Western Larch (Larix occidentalis) - *Pinaceae*
-- Western White Pine (Pinus monticola) - *Pinaceae*
-- White Spruce (Picea glauca) - *Pinaceae*
-- Black Spruce (Picea mariana) - *Pinaceae*
-- Blue Spruce (Picea pungens) - *Pinaceae*
-- Spruce Pine (Pinus glabra) - *Pinaceae*
+- Western Redcedar (Thuja plicata) - *Cupressaceae*
 
 ### Broadleaf Trees (82)
 - Alder Whitebeam (Sorbus alnifolia) - *Rosaceae*

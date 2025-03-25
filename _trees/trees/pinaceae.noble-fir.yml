@@ -1,0 +1,281 @@
+tree:
+  common_name: "Noble Fir"
+  scientific_name: "Abies procera"
+  family: "Pinaceae"
+  
+  # Basic summary information
+  summary: "A tall, majestic evergreen tree with a straight trunk, symmetrical pyramid shape, and bluish-green needles that curve upward. It has distinctive upright cones that sit on branches like candles and smooth gray bark with resin blisters."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Bluish-green needles that curve upward and appear to grow from the sides of branches; upright cylindrical cones; symmetric pyramid shape"
+    secondary_markers: "Smooth gray bark on younger trees; flat needles with rounded tips; needles often appear frosted"
+    seasonal_markers: "Bright blue-green new growth in spring; upright purple-green cones in summer turning brown in fall"
+    similar_species_differentiation: "Unlike White Fir, has bluer needles and grows taller; unlike Douglas-fir, has upright cones and no hanging 'mouse tail' bracts"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles year-round"
+        
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Needles attach individually to branches, not in bundles or clusters"
+      
+      - feature_id: "NEEDLE-SHAPE-01"  # Flat needles
+        notes: "Needles are flat, not square in cross-section"
+      
+      - feature_id: "NEEDLE-FEAT-03"  # White lines below
+        notes: "Needles have white stomatal bands on their undersides"
+      
+      - feature_id: "CONE-POS-01"  # Upright cones
+        notes: "Cones stand upright on branches like candles, never hanging down"
+      
+      - feature_id: "NEEDLE-ARRANGE-08"  # Flattened spray needles
+        notes: "Needles appear to come from sides of branches in a flattened arrangement"
+
+    usually_true:
+      # Features that are primarily true, but have notable exceptions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with a straight, single main trunk"
+        exceptions: "May develop forked or multiple trunks after damage"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "In mature forests reaches 150-250 feet tall"
+        exceptions: "Much shorter when young or in poor conditions"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Has a symmetrical, triangle shape with evenly spaced whorls of branches"
+        exceptions: "May become more irregular in very old trees or after storm damage"
+      
+      - feature_id: "CONE-SIZE-03"  # Large cones
+        notes: "Produces large cones 4-6 inches long"
+        exceptions: "Cones may be smaller in poor growing conditions"
+
+    sometimes_true:
+      # Features that vary with age, season, or conditions
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees and upper trunk"
+        notes: "Bark is smooth with resin blisters when young"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Older trees, especially at base"
+        notes: "Bark becomes more furrowed and reddish-brown with age, especially at base"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        conditions: "When needles are crushed"
+        notes: "Needles release a pleasant, sweet pine scent when crushed"
+      
+      - feature_id: "GEO-ELEV-03"  # High elevation
+        conditions: "In its native range"
+        notes: "Often found at higher elevations (3,000-5,000 feet) in its native range"
+      
+      - feature_id: "HABITAT-LOC-02"  # Mountain habitat
+        conditions: "In its natural range"
+        notes: "Naturally grows in mountainous areas"
+      
+      - feature_id: "LEAF-COLOR-03"  # Blue-green
+        conditions: "Especially in new growth"
+        notes: "Foliage often has a distinctive bluish tint, especially in new growth"
+
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all its needles seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Never has needles in bundles like pines"
+      
+      - feature_id: "CONE-POS-02"  # Hanging cones
+        notes: "Never has downward hanging cones"
+      
+      - feature_id: "NEEDLE-SHAPE-02"  # Square needles
+        notes: "Needles are always flat, never square in cross-section"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A Christmas tree shape with bluish-green needles that curve upward and cones that stand up on the branches like candles"
+    memorable_comparison: "The needles look like they're doing a wave, curving up from the branch like they're cheering"
+    touch_tip: "Feel the needles - they're flat and bendy, not sharp, and have white stripes on the bottom"
+    smell_tip: "Crush a needle gently and smell the sweet pine scent"
+    fun_fact: "Noble Firs are one of the most popular Christmas trees because their strong branches can hold heavy ornaments without drooping! They're also one of the tallest trees in the Northwest and can grow as tall as a 25-story building!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "Look at the tree shape. Is it perfectly triangle-shaped (like a Christmas tree) with branches in neat layers?"
+        yes_next: 2
+        no_next: "Might not be a Noble Fir - check other evergreen trees"
+      - step: 2
+        instruction: "Look at the needles. Do they curve upward like they're smiling, and do they mostly grow from the sides of the branch (not all around)?"
+        yes_next: 3
+        no_next: "Probably not a Noble Fir - check firs with different needle arrangements"
+      - step: 3
+        instruction: "If it has cones, do they stand upright on the branches like candles on a cake (not hanging down)?"
+        yes_next: "You found a Noble Fir! Notice the blue-green color of the needles that makes this tree special."
+        no_next: "If the cones hang down, it's probably a different evergreen tree like a hemlock or spruce."
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Bright blue-green new growth emerges at branch tips; male pollen cones release yellow pollen"
+      reproductive_activity: "Male cones release pollen; female cones begin to form"
+      identification_tips: "New growth is lighter blue-green and softer than older needles"
+      kid_friendly_tip: "In spring, look for light green new needles at the tips of branches that are softer than the older needles"
+    
+    - season: "Summer" 
+      visual_changes: "New growth hardens off; upright female cones grow and turn from purple-green to light brown"
+      reproductive_activity: "Cones grow to full size but remain closed"
+      identification_tips: "Upright, green-purple cones are very distinctive"
+      kid_friendly_tip: "By summer, you can see green-purple cones standing up on branches like birthday candles"
+    
+    - season: "Fall"
+      visual_changes: "No needle color change; cones mature and turn brown"
+      reproductive_activity: "Cones mature; scales begin to break apart to release seeds"
+      identification_tips: "Brown upright cones; consistent blue-green color while deciduous trees change"
+      kid_friendly_tip: "In fall, the cones turn brown while the needles stay blue-green"
+    
+    - season: "Winter"
+      visual_changes: "Remains green; most cone scales have fallen, leaving spikes on branches"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Distinctive blue-green color stands out in winter; perfect pyramid shape often bears snow well"
+      kid_friendly_tip: "In winter, the blue-green color looks bright against the snow, and you might see the cone spikes left on branches after seeds are released"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Upward curving bluish-green needles"
+      reliability: "Very high"
+      visibility: "Easy - visible year-round"
+    - feature: "Needles growing from sides of branch in a flattened spray"
+      reliability: "High"
+      visibility: "Medium - need to look at branch arrangement"
+    - feature: "Upright cones"
+      reliability: "Very high (when present)"
+      visibility: "Easy - visible summer through fall"
+    - feature: "Perfect pyramid shape with layers of branches"
+      reliability: "High"
+      visibility: "Easy - visible from distance"
+    - feature: "White bands on undersides of needles"
+      reliability: "Very high"
+      visibility: "Medium - need to flip needles to see"
+    
+  look_alike_species:
+    - species: "White Fir (Abies concolor)"
+      differences: "White Fir has longer, straighter needles that are more silver-gray than blue; usually shorter overall height"
+      identification_tip: "Noble Fir needles curve upward more distinctly and have a bluer color"
+    - species: "Douglas-fir (Pseudotsuga menziesii)"
+      differences: "Douglas-fir has hanging cones with distinctive 'mouse tail' bracts; softer needles that grow all around the twig"
+      identification_tip: "If cones hang down instead of standing up, it's not a true fir like Noble Fir"
+    - species: "Grand Fir (Abies grandis)"
+      differences: "Grand Fir has flatter, more horizontally spreading needles that are glossy green, not blue-green"
+      identification_tip: "Grand Fir needles lie flatter and have a more yellow-green color compared to blue-green Noble Fir"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Native American (Pacific Northwest tribes)"
+      physical_uses:
+        - "Used resin from bark blisters to treat cuts and wounds"
+        - "Made tea from needles that's rich in vitamin C to prevent colds"
+        - "Used the strong, straight-grained wood for building and tools"
+      symbolic_meaning:
+        - "The tall, straight growth represented reaching toward the sky and spiritual growth"
+        - "Featured in stories about persistence through harsh mountain winters"
+    
+    - culture: "Modern Christmas Tree Tradition"
+      physical_uses:
+        - "One of the most prized Christmas trees due to strong branches and perfect shape"
+        - "Used for holiday wreaths and garlands that stay fresh for weeks"
+        - "Harvested for boughs sold in florist industry for arrangements"
+      symbolic_meaning:
+        - "Represents the holiday spirit with its perfect Christmas tree shape"
+        - "Symbolizes evergreen hope during winter with its year-round greenery"
+    
+    - culture: "Northwest Forestry"
+      physical_uses:
+        - "Harvested for strong, straight-grained lumber used in construction"
+        - "Used for paper products due to long wood fibers"
+        - "Planted in reforestation projects in mountain areas"
+      symbolic_meaning:
+        - "Represents the majesty of Northwest forests"
+        - "Symbolizes sustainable forestry when properly managed"
+    
+  cultural_ecological_notes:
+    - "Important component of high-elevation forest ecosystems"
+    - "Provides shelter and food for mountain wildlife including birds and small mammals"
+    - "Seeds are food source for squirrels, chipmunks, and seed-eating birds"
+    - "Thrives in cool, moist environments with adequate snowpack"
+    - "Natural component of mixed-conifer old-growth forests"
+    
+  range_within_california:
+    - "Native to northern California in the Klamath Mountains region"
+    - "Found naturally in a small area of northwestern California"
+    - "Grows at elevations between 5,000-8,000 feet in California mountains"
+    - "Cultivated as an ornamental and Christmas tree throughout cooler parts of the state"
+    - "Prefers areas with abundant moisture and cool temperatures"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "150-250 feet at maturity in the wild, 40-70 feet in cultivation"
+    growth_rate: "Moderate (1-2 feet per year in good conditions)"
+    crown_spread: "20-30 feet wide at maturity"
+    lifespan: "350-500 years"
+    trunk_diameter: "Up to 5-8 feet at maturity"
+    root_system: "Moderately deep with wide-spreading lateral roots"
+    toxicity: "Not toxic, though resin may cause skin irritation in sensitive individuals"
+  
+  conservation_status:
+    status: "Least Concern - stable in its native range"
+    threats: 
+      - "Climate change causing shifts in suitable habitat"
+      - "Susceptible to root disease in poorly drained soils"
+      - "Christmas tree harvesting in wild stands (though mostly grown on plantations now)"
+    protection_efforts:
+      - "Protected in national parks and wilderness areas"
+      - "Seed banking for preservation of genetic diversity"
+      - "Sustainable Christmas tree farming to reduce pressure on wild populations"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: NEEDLE-ARRANGE-01"  # Single needles
+      - "feature_id: CONE-POS-01"  # Upright cones
+    confirmation_features:
+      - "feature_id: NEEDLE-FEAT-03"  # White lines below
+      - "feature_id: NEEDLE-ARRANGE-08"  # Flattened spray needles
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-TYPE-02", "TREE-FORM-01"]  # Evergreen, pyramidal shape
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-ARRANGE-08", "LEAF-COLOR-03"]  # Flattened needle spray, blue-green
+      - distance: "close_inspection"
+        features_to_check: ["NEEDLE-FEAT-03", "CONE-POS-01"]  # White lines, upright cones
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "LEAF-COLOR-03", "NEEDLE-ARRANGE-08"]  # Evergreen, blue-green, flattened spray
+        notes: "New growth is lighter blue-green and distinctive"
+      
+      summer:
+        reliability: "Very high" 
+        key_features: ["CONE-POS-01", "LEAF-COLOR-03", "NEEDLE-ARRANGE-01"]  # Upright cones, blue-green, single needles
+        notes: "Upright cones are very distinctive and easy to identify"
+      
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "CONE-POS-01", "NEEDLE-FEAT-03"]  # Evergreen, upright cones, white lines
+        notes: "Brown cones standing upright are distinctive; blue-green color stands out as deciduous trees change"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["TREE-FORM-01", "NEEDLE-ARRANGE-08", "LEAF-COLOR-03"]  # Pyramidal, flattened spray, blue-green
+        notes: "Perfect pyramid shape; blue-green needles distinctive in winter landscape"
+    misidentification_risks: 
+      - "Other true firs (Abies species) have similar upright cones but different needle arrangements"
+      - "White Fir has similar growth form but grayer, longer needles that don't curve up as much"
+      - "Grand Fir has similar needle arrangement but greener color without the blue tint"
+  
+  wildlife_value:
+    - "Seeds eaten by squirrels, chipmunks, and birds like crossbills and chickadees"
+    - "Branches provide nesting sites for many forest birds"
+    - "Provides winter shelter for deer, elk, and mountain wildlife"
+    - "Bark becomes habitat for insects, which feed woodpeckers and other birds"
+    - "Fallen needles create acidic soil favored by woodland plants like huckleberries"

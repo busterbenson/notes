@@ -1,0 +1,278 @@
+tree:
+  common_name: "Joshua Tree"
+  scientific_name: "Yucca brevifolia"
+  family: "Asparagaceae"
+  
+  # Basic summary
+  summary: "A distinctive desert tree with spiky sword-like leaves clustered at the ends of thick, twisted branches. The Joshua Tree has a unique growth pattern with arms that split and branch in unusual directions, creating shapes that can look like a person with arms raised."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Spiky clusters of sharp, dagger-shaped leaves at the ends of thick branches that grow in unusual, twisted patterns"
+    secondary_markers: "Pale green-gray leaves with sharp points; tree branches in unusual patterns with Y-shaped splits"
+    seasonal_markers: "White or cream-colored bell-shaped flowers appear in spring; large oval fruits in summer"
+    similar_species_differentiation: "Much larger than other yucca plants; has a thick, tree-like trunk rather than growing from ground level like Mojave Yucca"
+  
+  # Core features
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its spiky leaves year-round"
+        
+      - feature_id: "TREE-FORM-05"  # Irregular crown
+        notes: "Grows in unusual branching patterns that look like raised arms"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Native to the Mojave Desert in California"
+      
+      - feature_id: "HABITAT-LOC-04"  # Desert habitat
+        notes: "Grows in desert regions, especially the Mojave Desert"
+      
+      - feature_id: "GEO-REGION-03"  # Southern California
+        notes: "Native to Southern California desert regions"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually starts with a single trunk before branching"
+        exceptions: "May occasionally form multiple trunks if damaged"
+      
+      - feature_id: "BARK-TEXT-06"  # Fibrous bark
+        notes: "Trunk covered with rough, fibrous, shaggy bark"
+        exceptions: "Very young trees may have smoother bark before it develops texture"
+    
+    sometimes_true:
+      - feature_id: "TREE-SIZE-01"  # Short tree
+        conditions: "Young specimens or those in harsh growing conditions"
+        notes: "Can be under 20 feet tall when young or growing in poor conditions"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        conditions: "Mature specimens in typical growing conditions"
+        notes: "Usually reaches 20-40 feet at maturity"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        conditions: "Spring blooming season, usually February to April"
+        notes: "Produces clusters of creamy white, bell-shaped flowers at branch tips"
+      
+      - feature_id: "FRUIT-TYPE-03"  # Fruits present
+        conditions: "Late spring through summer after flowering"
+        notes: "Produces large, dry, oblong fruits with black seeds"
+      
+      - feature_id: "ECO-WILD-02"  # Pollinator friendly
+        conditions: "When flowering"
+        notes: "Flowers attract specialized yucca moths that pollinate the tree"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        conditions: "Once established"
+        notes: "Can survive extreme desert conditions with little water"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Does not drop its leaves seasonally; remains evergreen"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        notes: "Leaves don't change color seasonally"
+      
+      - feature_id: "CONE-SIZE-01"  # Small cones
+        notes: "Doesn't produce cones; produces fruits with seeds"
+      
+      - feature_id: "BARK-COLOR-02"  # White bark
+        notes: "Bark is gray-brown to black, never white"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A desert tree with spiky bunches of sharp, sword-like leaves at the ends of thick branches that twist and turn like arms reaching up to the sky"
+    memorable_comparison: "Looks like a tree from a Dr. Seuss book, with branches going in crazy directions, each with a pineapple-like cluster of spiky leaves at the end"
+    touch_tip: "Be super careful! The leaves are very sharp like swords. You can gently touch the thick trunk, which feels rough and shaggy like an old rope"
+    smell_tip: "The flowers have a light sweet smell in spring, but they're often too high to reach"
+    fun_fact: "The Joshua Tree got its name because early Mormon settlers thought it looked like the Biblical figure Joshua raising his arms to the sky in prayer! These amazing trees can live for hundreds of years in the desert, and they depend on just one special kind of moth to make their seeds!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, are you in a desert area in Southern California? Joshua Trees only grow in certain desert areas."
+        yes_next: 2
+        no_next: "Not likely to be a Joshua Tree - they only grow naturally in desert areas, especially the Mojave Desert"
+      - step: 2
+        instruction: "Look at the shape. Does it have thick branches that go in different directions with bunches of spiky leaves at the ends?"
+        yes_next: 3
+        no_next: "Might be another type of yucca or desert plant - Joshua Trees have a special branching pattern"
+      - step: 3
+        instruction: "Check the leaves. Are they stiff, sword-like spikes that grow in dense clusters at the branch tips?"
+        yes_next: "You found a Joshua Tree!"
+        no_next: "Probably another desert plant - Joshua Trees have very distinctive spiky leaf clusters"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Clusters of white, bell-shaped flowers appear at the ends of branches"
+      reproductive_activity: "Flowers bloom and are pollinated by specialized yucca moths"
+      identification_tips: "Look for creamy white flower clusters on mature trees"
+      kid_friendly_tip: "In spring, look for bunches of white flowers that look like bells hanging from the ends of branches"
+    
+    - season: "Summer" 
+      visual_changes: "Green fruit pods develop after flowering; leaves remain green-gray"
+      reproductive_activity: "Fruits mature and begin to dry"
+      identification_tips: "Look for large, green, oval-shaped fruits developing at branch ends"
+      kid_friendly_tip: "After the flowers are gone, green fruit pods about the size of small lemons grow in their place"
+    
+    - season: "Fall"
+      visual_changes: "Fruits dry out and may begin to split open; leaves remain unchanged"
+      reproductive_activity: "Seeds mature inside fruits and may begin to disperse"
+      identification_tips: "Look for brown, dried fruit pods; overall appearance remains the same"
+      kid_friendly_tip: "The fruits turn brown and start to crack open, but the tree still looks the same otherwise"
+    
+    - season: "Winter"
+      visual_changes: "No significant changes from fall; stays green-gray"
+      reproductive_activity: "Dormant; no flowering or fruiting"
+      identification_tips: "Easiest to identify by distinctive branching pattern when no flowers or fruits are present"
+      kid_friendly_tip: "Even in winter when other plants look dead, the Joshua Tree keeps its spiky green leaves"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Spiky, dagger-like leaves in clusters at branch tips"
+      reliability: "Very high"
+      visibility: "Easy - visible from a distance"
+    - feature: "Unusual branching pattern with Y-shaped splits"
+      reliability: "Very high"
+      visibility: "Easy - visible from a distance"
+    - feature: "Thick, shaggy trunk with fibrous bark"
+      reliability: "High"
+      visibility: "Easy - visible from a nearby position"
+    - feature: "Growing in Mojave Desert habitat"
+      reliability: "Very high"
+      visibility: "Requires knowing your location"
+    
+  look_alike_species:
+    - species: "Mojave Yucca (Yucca schidigera)"
+      differences: "Much smaller than Joshua Tree, usually without a tree-like trunk; leaves grow in rosettes at ground level or on very short trunks"
+      identification_tip: "If it's short with sword-like leaves coming mainly from ground level, it's probably Mojave Yucca, not a Joshua Tree"
+    - species: "Soaptree Yucca (Yucca elata)"
+      differences: "Has a more slender trunk and more flexible, thinner leaves; grows in different desert regions"
+      identification_tip: "Joshua Trees have thicker trunks and more rigid, thicker leaves than Soaptree Yucca"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Serrano"
+      physical_uses:
+        - "Harvested the flower buds and fruits for food, either roasting them or eating them raw"
+        - "Made sandals and rope from the strong fibers in the leaves"
+        - "Used the seeds to make a nutritious flour for making bread and porridge"
+        - "Made emergency containers from the dried flower stalks"
+      symbolic_meaning:
+        - "Featured in creation stories about how the desert and its plants came to be"
+        - "Viewed as a guardian of the desert, standing tall through harsh conditions"
+        - "Used as landmarks for navigation across the desert landscape"
+    
+    - culture: "Cahuilla"
+      physical_uses:
+        - "Collected the seeds to grind into flour for making cakes"
+        - "Wove the leaf fibers into strong nets and trap lines for catching animals"
+        - "Used the tough, pointed leaves to make tools for basket weaving"
+        - "Made emergency containers and tools from various parts of the tree"
+      symbolic_meaning:
+        - "Represented perseverance and the ability to thrive despite difficult conditions"
+        - "Used in coming-of-age ceremonies for young people"
+        - "Featured in traditional stories about the value of standing firm against adversity"
+    
+    - culture: "Western Shoshone"
+      physical_uses:
+        - "Harvested the flowers and buds as a springtime food source"
+        - "Used fibers from the leaves to weave strong sandals that could withstand the rocky desert"
+        - "Made ropes and cordage from the leaf fibers"
+        - "Used the roots to make soap for washing"
+      symbolic_meaning:
+        - "Represented resilience and the importance of finding your own path"
+        - "Considered the unusual branching pattern a reminder that life doesn't always follow a straight line"
+        - "Featured in stories teaching respect for desert life and survival"
+    
+    - culture: "Modern California"
+      physical_uses:
+        - "Protected as iconic symbols of the California desert in national and state parks"
+        - "Valued for tourism and recreation, bringing visitors to the desert"
+      symbolic_meaning:
+        - "Represents the unique character and beauty of the California desert"
+        - "Serves as a symbol of environmental conservation and climate change concerns"
+        - "Featured in countless photographs, paintings, and films representing the American Southwest"
+    
+  cultural_ecological_notes:
+    - "Critical part of the Mojave Desert ecosystem, providing habitat and food for many desert animals and insects"
+    - "The specialized relationship with yucca moths is one of nature's most famous examples of co-evolution - each depends completely on the other"
+    - "Helps prevent soil erosion in the desert with its extensive root system"
+    - "Serves as an indicator of the health of the Mojave Desert ecosystem"
+    
+  range_within_california:
+    - "Found primarily in the Mojave Desert region of Southern California"
+    - "Common in Joshua Tree National Park and surrounding areas"
+    - "Occurs at elevations between 2,000 and 6,000 feet"
+    - "Most abundant in flat desert valleys and gentle slopes"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "15-40 feet, occasionally up to 50 feet"
+    growth_rate: "Very slow, about 3 inches per year"
+    crown_spread: "15-30 feet at maturity"
+    lifespan: "150-500 years"
+    trunk_diameter: "1-3 feet in diameter"
+    root_system: "Wide-spreading with a deep taproot for stability and water access"
+    toxicity: "Not toxic, but sharp leaves can cause painful puncture wounds"
+  
+  conservation_status:
+    status: "Growing concern; being considered for protection under the Endangered Species Act"
+    threats: 
+      - "Climate change causing increased temperatures and reduced rainfall in its habitat"
+      - "Expanding development in desert regions"
+      - "Invasive grasses increasing wildfire risk"
+      - "Slow reproduction rate making recovery difficult"
+    protection_efforts:
+      - "Protected within Joshua Tree National Park and other preserved areas"
+      - "Research on climate adaptation and assisted migration"
+      - "Seed banking to preserve genetic diversity"
+      - "Educational campaigns about their ecological importance"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: TREE-FORM-05"  # Irregular growth form
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+    confirmation_features:
+      - "feature_id: HABITAT-LOC-04"  # Desert habitat
+      - "feature_id: GEO-REGION-03"  # Southern California
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-05", "LEAF-TYPE-02"]  # Irregular form, evergreen
+      - distance: "from_nearby"
+        features_to_check: ["TREE-TRUNK-01", "BARK-TEXT-06"]  # Single trunk, fibrous bark
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-05", "ECO-ORIGIN-01"]  # Spiny leaf edges, native to California
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["TREE-FORM-05", "FLOWER-SIZE-01"]
+        notes: "Look for distinctive white flower clusters at the ends of branches"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["TREE-FORM-05", "FRUIT-TYPE-03"]
+        notes: "Look for green fruit pods developing after flowers fade"
+      
+      fall:
+        reliability: "High"
+        key_features: ["TREE-FORM-05", "LEAF-TYPE-02"]
+        notes: "Distinctive shape and evergreen nature stand out in the desert landscape"
+      
+      winter:
+        reliability: "High"
+        key_features: ["TREE-FORM-05", "LEAF-TYPE-02"]
+        notes: "Evergreen with distinctive branching pattern clearly visible"
+    misidentification_risks: 
+      - "Mojave Yucca is smaller without the tree-like branching pattern"
+      - "Soaptree Yucca has a more slender, less branched form"
+  
+  wildlife_value:
+    food_source:
+      - "Flowers provide food for the specialized yucca moth and other insects"
+      - "Seeds are eaten by small rodents and birds"
+      - "Dead portions provide shelter and food for desert insects"
+    habitat_provided:
+      - "Birds including Scott's orioles and ladder-backed woodpeckers nest in the branches"
+      - "Desert night lizards live in fallen leaves and debris at the base"
+      - "Provides shade and shelter for many desert animals"
+    ecosystem_role: "Keystone species in the Mojave Desert; creates microhabitats with shade and moisture retention that support numerous other organisms"

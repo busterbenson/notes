@@ -1,0 +1,277 @@
+tree:
+  common_name: "Clammy Locust"
+  scientific_name: "Robinia viscosa"
+  family: "Fabaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A small deciduous tree with pink to rose-purple flowers and compound leaves made up of oval leaflets. It has sticky, hairy twigs and seedpods, and small thorns on its branches and trunk."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Pink to rose-purple pea-like flowers in drooping clusters; compound leaves with 11-25 oval leaflets; sticky, hairy twigs"
+    secondary_markers: "Small thorns on branches and trunk; flat, hairy seedpods; sticky feel to young growth"
+    seasonal_markers: "Showy pink flowers in late spring to early summer; yellow fall color; distinctive compound leaves"
+    similar_species_differentiation: "Pink flowers unlike Black Locust's white flowers; smaller and less thorny than Black Locust; stickier twigs and seedpods than New Mexico Locust"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Leaves made up of 11-25 small oval leaflets arranged along a central stem"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow in an alternating pattern along the branches, not in pairs"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Has small pairs of thorns at the base of each leaf and sometimes on the trunk"
+      
+      - feature_id: "SENSORY-SEC-01"  # Sticky surfaces
+        notes: "Young branches, leaf stems, and seedpods are covered with sticky hairs"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        notes: "Not native to California; originally from the Appalachian Mountain region of eastern North America"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Often grows with one main trunk"
+        exceptions: "Frequently develops multiple stems, especially after damage"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Typically develops a rounded or spreading crown"
+        exceptions: "Shape can be irregular, especially in crowded conditions"
+      
+      - feature_id: "TREE-SIZE-01"  # Short tree
+        notes: "Usually a small tree, 20-30 feet tall"
+        exceptions: "May grow taller in ideal conditions or remain shrub-like in poor conditions"
+      
+      - feature_id: "FLOWER-COLOR-02"  # Pink flowers
+        notes: "Flowers are typically pink to rose-purple"
+        exceptions: "Color intensity can vary; occasionally pale pink to nearly white in some varieties"
+    
+    sometimes_true:
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        conditions: "After damage or in certain growing conditions"
+        notes: "May grow as a multi-stemmed small tree or large shrub"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Older trees"
+        notes: "Bark becomes furrowed with age"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Fall season"
+        notes: "Leaves typically turn yellow before dropping"
+      
+      - feature_id: "FLOWER-TIME-02"  # Summer flowering
+        conditions: "Late spring to early summer"
+        notes: "Produces showy clusters of pink flowers"
+      
+      - feature_id: "ECO-REL-01"  # Nitrogen fixing
+        conditions: "Like other legumes, can fix nitrogen in the soil"
+        notes: "Has root nodules that host nitrogen-fixing bacteria"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops its leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple
+        notes: "Never has simple leaves, always compound"
+      
+      - feature_id: "FLOWER-COLOR-01"  # White flowers
+        notes: "Unlike Black Locust, does not have white flowers"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Never grows into a large tree"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Pink pea-like flowers and leaves made of many little leaflets; sticky, hairy twigs that feel like they have glue on them"
+    memorable_comparison: "The sticky twigs feel like they've been coated with maple syrup, and the pretty pink flowers look like sweet peas growing in clusters"
+    touch_tip: "Carefully feel the young twigs - they're sticky like they have maple syrup on them! But watch out for the small thorns on the branches"
+    smell_tip: "The flowers have a sweet scent in spring"
+    fun_fact: "This tree is called 'Clammy' Locust because of its sticky twigs and seedpods - 'clammy' means sticky or damp to the touch. The stickiness comes from tiny hairs that produce a glue-like substance that can catch small insects!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the leaves. Are they made up of many small oval leaflets (like 11-25) along a central stem?"
+        yes_next: 2
+        no_next: "If the tree has simple leaves (just one leaf blade), it's not a locust tree"
+      - step: 2
+        instruction: "Carefully touch a young twig or seedpod. Does it feel sticky, like it has syrup or glue on it?"
+        yes_next: 3
+        no_next: "If the twigs aren't sticky, check for Black Locust which has white flowers and isn't sticky"
+      - step: 3
+        instruction: "If it's spring or early summer, look for flowers. Are they pink to purple and hanging in clusters?"
+        yes_next: 4
+        no_next: "If it has white flowers, it's likely Black Locust; if no flowers are visible, check for thorns and sticky seedpods"
+      - step: 4
+        instruction: "Look for small thorns at the base of leaves or on branches. Can you find them?"
+        yes_next: "You found a Clammy Locust!"
+        no_next: "It might still be Clammy Locust with less noticeable thorns - check the sticky twigs and pink flowers again"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Leaves emerge late in spring; pink flower clusters appear after the leaves develop"
+      reproductive_activity: "Flowers bloom, attracting many bees and butterflies"
+      identification_tips: "Late leafing compared to many trees; pink flower clusters are very distinctive"
+      kid_friendly_tip: "In spring, look for the pretty pink flower bunches that hang down like clusters of sweet peas"
+    
+    - season: "Summer" 
+      visual_changes: "Full foliage of compound leaves; flat seedpods begin to form after flowering"
+      reproductive_activity: "Flat, hairy seedpods develop and mature"
+      identification_tips: "Compound leaves and developing seedpods; sticky twigs and pods"
+      kid_friendly_tip: "In summer, look for the sticky seedpods that feel like they have maple syrup on them"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow before dropping; seedpods become brown"
+      reproductive_activity: "Seedpods fully mature and eventually split to release seeds"
+      identification_tips: "Yellow fall color and persistent seedpods"
+      kid_friendly_tip: "The leaves turn yellow in fall, and you can see the brown seedpods hanging on the tree"
+    
+    - season: "Winter"
+      visual_changes: "Loses all leaves, revealing branch structure; seedpods may persist"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Zigzag branching pattern; thorns and persistent seedpods visible"
+      kid_friendly_tip: "In winter, you can see the zigzag pattern of the branches and maybe some leftover seedpods"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Compound leaves with 11-25 small oval leaflets"
+      reliability: "Very high"
+      visibility: "Easy to observe during growing season"
+    - feature: "Sticky, hairy twigs and seedpods"
+      reliability: "Very high"
+      visibility: "Need to touch to confirm"
+    - feature: "Pink to rose-purple flowers in hanging clusters (spring/summer)"
+      reliability: "Very high"
+      visibility: "Very visible when in bloom"
+    - feature: "Small thorns at leaf bases and sometimes on trunk"
+      reliability: "High"
+      visibility: "Need to look closely"
+    
+  look_alike_species:
+    - species: "Black Locust (Robinia pseudoacacia)"
+      differences: "Black Locust has white flowers, larger thorns, and is not sticky; grows much larger"
+      identification_tip: "Clammy Locust has pink flowers and sticky twigs; Black Locust has white flowers and non-sticky twigs"
+    
+    - species: "New Mexico Locust (Robinia neomexicana)"
+      differences: "New Mexico Locust has similar pink flowers but less sticky growth; native to southwestern US"
+      identification_tip: "Clammy Locust twigs are much stickier than New Mexico Locust"
+    
+    - species: "Bristly Locust (Robinia hispida)"
+      differences: "Bristly Locust has reddish-brown bristles rather than sticky hairs; often shorter and more shrub-like"
+      identification_tip: "Clammy Locust has sticky hairs; Bristly Locust has non-sticky bristles"
+  
+  cultural_ecological_notes:
+    - "A nitrogen-fixing tree that can improve soil fertility"
+    - "Flowers provide nectar for pollinators including bees and butterflies"
+    - "More resistant to locust borer insects than Black Locust"
+    - "Can spread by root suckers, sometimes forming thickets"
+    
+  cultural_significance:
+    - culture: "Appalachian Mountain Communities"
+      physical_uses:
+        - "Used the hard, rot-resistant wood for fence posts and tool handles"
+        - "Made bows from the strong, flexible wood"
+        - "Used flowers to make sweet-smelling decorations and fragrant water"
+      symbolic_meaning:
+        - "Represented the beauty and resilience of mountain landscapes"
+        - "The sticky nature of the tree was associated with persistence and holding on"
+    
+    - culture: "Early American Botanists"
+      physical_uses:
+        - "Introduced to European gardens as an ornamental tree"
+        - "Studied for its nitrogen-fixing properties"
+        - "Used in early experiments with hybridizing trees"
+      symbolic_meaning:
+        - "Represented the unique flora of the Appalachian region"
+        - "Valued as an example of American botanical diversity"
+    
+    - culture: "Modern Gardeners"
+      physical_uses:
+        - "Planted as an ornamental tree for its showy pink flowers"
+        - "Used in difficult sites where soil improvement is needed"
+        - "Grown in wildlife gardens to attract pollinators"
+      symbolic_meaning:
+        - "Represents native American plant heritage"
+        - "Valued for its ability to thrive in poor conditions"
+  
+  range_within_california:
+    - "Not native to California"
+    - "Occasionally planted as an ornamental in gardens"
+    - "Not widely established in California's wild areas"
+    - "Can be found in botanical gardens and arboretums"
+    
+  physical_characteristics:
+    height_range: "20-30 feet tall"
+    growth_rate: "Moderate; about 1-2 feet per year"
+    crown_spread: "15-25 feet wide at maturity"
+    lifespan: "40-80 years"
+    trunk_diameter: "Usually less than 1 foot in diameter"
+    root_system: "Shallow, spreading, with tendency to sucker"
+    toxicity: "Seeds and inner bark contain toxins that can cause digestive problems if eaten"
+    
+  conservation_status:
+    status: "Not threatened in native range"
+    threats: "No major threats; relatively uncommon but stable"
+    protection_efforts: "No specific protection efforts needed as it is not endangered"
+  
+  kid_friendly_cultural_significance:
+    - culture: "People of the Appalachian Mountains"
+      physical_uses:
+        - "Used the strong wood to make fence posts and tool handles that wouldn't rot in the rain"
+        - "Made bows for hunting from the springy wood"
+        - "Used the sweet-smelling flowers to make the house smell nice"
+      symbolic_meaning:
+        - "The beautiful tree showed that even sticky, thorny things can be lovely and useful"
+        - "People admired how the tree could grow in poor soil where other trees couldn't"
+  
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-COMPLEX-02"  # Compound pinnate
+      - "feature_id: SENSORY-SEC-01"  # Sticky surfaces
+    confirmation_features:
+      - "feature_id: FLOWER-COLOR-02"  # Pink flowers
+      - "feature_id: TWIG-FEAT-01"  # Thorns present
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-TYPE-01", "TREE-SIZE-01", "TREE-FORM-02"]  # Deciduous, small tree, rounded crown
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-COMPLEX-02", "FLOWER-COLOR-02"]  # Compound leaves, pink flowers
+      - distance: "close_inspection"
+        features_to_check: ["SENSORY-SEC-01", "TWIG-FEAT-01"]  # Sticky surfaces, thorns
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["FLOWER-COLOR-02", "LEAF-COMPLEX-02", "SENSORY-SEC-01"]
+        notes: "Pink flower clusters and sticky new growth are distinctive"
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-COMPLEX-02", "SENSORY-SEC-01", "TWIG-FEAT-01"]
+        notes: "Compound leaves, sticky twigs and seedpods"
+      fall:
+        reliability: "Medium"
+        key_features: ["LEAF-FALL-01", "LEAF-COMPLEX-02", "SENSORY-SEC-01"]
+        notes: "Yellow fall color, compound leaves, persistent sticky seedpods"
+      winter:
+        reliability: "Medium"
+        key_features: ["TWIG-FEAT-01", "SENSORY-SEC-01"]
+        notes: "Thorns and zigzag branching pattern; some sticky seedpods may persist"
+    misidentification_risks: 
+      - species: "Black Locust (Robinia pseudoacacia)"
+        distinguishing_features: "Clammy Locust has pink flowers and sticky twigs; Black Locust has white flowers and non-sticky twigs"
+      - species: "New Mexico Locust (Robinia neomexicana)"
+        distinguishing_features: "Clammy Locust has much stickier twigs and seedpods than New Mexico Locust"
+      - species: "Bristly Locust (Robinia hispida)"
+        distinguishing_features: "Clammy Locust has sticky hairs; Bristly Locust has non-sticky bristles"
+  
+  wildlife_value:
+    - "Flowers provide nectar for bees, butterflies, and hummingbirds"
+    - "Seeds eaten by some birds and small mammals"
+    - "Foliage eaten by deer and rabbits"
+    - "Like other legumes, enriches soil through nitrogen fixation"

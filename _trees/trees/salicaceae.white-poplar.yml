@@ -1,0 +1,277 @@
+tree:
+  common_name: "White Poplar"
+  scientific_name: "Populus alba"
+  family: "Salicaceae"
+  
+  # Basic summary
+  summary: "White Poplar is a fast-growing deciduous tree known for its distinctive white to silvery-gray bark and leaves that are dark green on top but bright white and fuzzy underneath. When the wind blows, the leaves flip to reveal their white undersides, creating a striking, flickering effect. It has a broad, irregular crown and produces fluffy catkins in spring."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Leaves with bright white, felt-like undersides; smooth white to silvery-gray bark on upper trunk and branches; leaves often maple-like with 3-5 lobes"
+    secondary_markers: "Broad, irregular crown shape; bark on lower trunk becomes deeply furrowed with age; white fuzzy shoots in spring"
+    seasonal_markers: "Fluffy catkins appear in early spring before leaves; summer shows striking contrast between dark green upper leaf surface and white undersides; yellowish fall color"
+    similar_species_differentiation: "Unlike Quaking Aspen, has distinctly lobed leaves (not oval) with white undersides (not just pale green); unlike Silver Maple, has smooth white bark on upper branches; unlike other poplars, has bright white leaf undersides"
+  
+  features:
+    always_true:
+      # Fundamental traits
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all leaves in fall"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple leaves
+        notes: "Leaves are not compound (each leaf is a single unit)"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate arrangement
+        notes: "Leaves grow in an alternating pattern along the branches"
+      
+      - feature_id: "LEAF-COLOR-04"  # Silver undersides
+        notes: "Bright white, felt-like fuzzy covering on leaf undersides"
+      
+      - feature_id: "BARK-COLOR-02"  # White bark
+        notes: "Upper trunk and branches have distinctive white to silvery-gray bark"
+      
+    usually_true:
+      # Features with exceptions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with one main trunk"
+        exceptions: "May sucker from roots creating multiple trunks, especially after damage"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Usually reaches 60-80 feet tall (about as tall as a 6-8 story building)"
+        exceptions: "May be shorter in poor conditions or when heavily pruned"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Mature trees typically develop a broad, somewhat irregular rounded crown"
+        exceptions: "Shape can vary greatly depending on growing conditions and pruning"
+      
+      - feature_id: "LEAF-SHAPE-05"  # Lobed
+        notes: "Leaves typically have 3-5 shallow to moderately deep lobes"
+        exceptions: "Leaves on young shoots or sprouts may be more deeply lobed, while mature leaves may have more shallow lobes"
+    
+    sometimes_true:
+      # Features that vary
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Upper trunk and branches, and young trees"
+        notes: "Bark is smooth and white to silvery-gray on upper parts of the tree"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Lower trunk of mature trees"
+        notes: "Bark on lower trunk becomes deeply furrowed and darkens with age"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        conditions: "In California"
+        notes: "Not native to California; introduced from Europe and Asia"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Fall season"
+        notes: "Leaves typically turn yellow before falling, though color is often not vibrant"
+      
+      - feature_id: "FLOWER-TYPE-01"  # Catkins present
+        conditions: "Early spring"
+        notes: "Produces catkins in early spring before leaves emerge"
+    
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops its leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has compound leaves"
+      
+      - feature_id: "FRUIT-TYPE-01"  # Acorns present
+        notes: "Never produces acorns"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Never produces showy flowers, only catkins"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Leaves with bright white fuzzy undersides that show when the wind blows, and smooth white bark"
+    memorable_comparison: "The leaves look like they're wearing white fuzzy mittens underneath, and when the wind blows, it looks like the tree is waving with white mittens!"
+    touch_tip: "Feel the underside of a leaf - it's soft and fuzzy like a stuffed animal, while the top is smooth"
+    smell_tip: "The leaves don't have a strong smell, but the sticky buds in spring have a faint sweet smell"
+    fun_fact: "White Poplar trees are like nature's magic show! When the wind blows, the leaves flip to show their bright white undersides, making the whole tree look like it's flickering between green and silver. This is why people sometimes call it the 'silver-leaf poplar' or 'dancing tree'!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the tree's bark. Is the bark on the upper trunk and branches smooth and white or silvery-gray?"
+        yes_next: 2
+        no_next: "Might not be a White Poplar - check other trees with silver leaf undersides"
+      - step: 2
+        instruction: "Look at a leaf. Is the top green but the bottom covered with bright white fuzzy material that feels like felt?"
+        yes_next: 3
+        no_next: "Not a White Poplar - if leaves are silver on both sides, check Russian Olive; if just pale green underneath, check aspens"
+      - step: 3
+        instruction: "Check the leaf shape. Does it have lobes (sections) somewhat like a maple leaf rather than being oval or heart-shaped?"
+        yes_next: "You found a White Poplar!"
+        no_next: "If leaves aren't lobed but have white undersides, check other poplar species"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Red-purple catkins appear before leaves; new leaves unfold with white, fuzzy coating; young shoots covered with white fuzz"
+      reproductive_activity: "Male and female catkins open (on separate trees); wind carries pollen to female trees"
+      identification_tips: "Catkins and white fuzzy new growth are distinctive"
+      kid_friendly_tip: "In spring, look for fuzzy 'caterpillar-like' flowers hanging down before the leaves come out, and new twigs covered with white fuzz like cotton candy"
+    
+    - season: "Summer" 
+      visual_changes: "Full leaf development; dark green leaf tops contrast with white undersides, creating flickering effect in breeze"
+      reproductive_activity: "Female trees develop cotton-like seeds that are released and carried by wind"
+      identification_tips: "White leaf undersides are very distinctive and visible when wind blows"
+      kid_friendly_tip: "In summer, stand under the tree on a breezy day and watch how the leaves flash white when they flip upside down - it looks like magic!"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow before falling; white bark becomes more noticeable as leaves drop"
+      reproductive_activity: "No reproductive activity; seed dispersal completed"
+      identification_tips: "Yellow fall color and white bark visible as leaves fall"
+      kid_friendly_tip: "In fall, the leaves turn yellow like butter before dropping off, making it easier to see the white bark on the branches"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches reveal white to silvery-gray bark; buds form for next spring"
+      reproductive_activity: "Dormant; catkin buds present for next spring"
+      identification_tips: "White bark stands out in winter landscape"
+      kid_friendly_tip: "In winter, the white bark really stands out against other trees, looking silvery-white like it's covered in frost even when it's not"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Bright white, felt-like undersides of leaves"
+      reliability: "Very high"
+      visibility: "High - especially visible when windy"
+    - feature: "White to silvery-gray smooth bark on upper trunk and branches"
+      reliability: "High"
+      visibility: "Visible year-round, most obvious in winter"
+    - feature: "Maple-like leaves with 3-5 lobes"
+      reliability: "High"
+      visibility: "Visible during growing season"
+    - feature: "Deeply furrowed dark bark at base of mature trees"
+      reliability: "Medium"
+      visibility: "Visible year-round on mature trees"
+    
+  look_alike_species:
+    - species: "Silver Maple (Acer saccharinum)"
+      differences: "Silver Maple has more deeply cut leaves with silver (not white) undersides and brown bark (not white); produces winged seeds, not catkins"
+      identification_tip: "Check bark color (brown vs. white) and leaf underside texture (silvery but not felt-like in Silver Maple)"
+    - species: "Quaking Aspen (Populus tremuloides)"
+      differences: "Quaking Aspen has round to oval leaves (not lobed) with pale green (not white) undersides and smooth green twigs (not white and fuzzy)"
+      identification_tip: "Look for lobed leaf shape and felt-like white undersides in White Poplar"
+    - species: "Silver Poplar (Populus alba var. pyramidalis)"
+      differences: "Silver Poplar is actually a variety of White Poplar with more upright, columnar growth habit, but otherwise similar characteristics"
+      identification_tip: "Silver Poplar has a distinctly upright, narrow form compared to the broader crown of typical White Poplar"
+    
+  cultural_ecological_notes:
+    - "Fast-growing and widely adaptable to different soil types"
+    - "Extensive root system can be invasive, often sending up suckers far from the parent tree"
+    - "Drought and pollution tolerant once established, making it useful in challenging urban environments"
+    - "Can become invasive in riparian areas where it outcompetes native vegetation"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Ancient Mediterranean"
+      physical_uses:
+        - "Used the soft wood for shields, crates, and other lightweight items"
+        - "Made charcoal from the wood for specific metalworking processes"
+        - "Planted for fast-growing shade and windbreaks"
+      symbolic_meaning:
+        - "Associated with Hercules, who was said to wear a crown of poplar leaves"
+        - "The white undersides of leaves represented the duality of the underworld and our world"
+        - "The rustling sound of leaves was thought to be whispers from the spirit world"
+    
+    - culture: "European Folklore"
+      physical_uses:
+        - "Used the bark and leaves in traditional remedies for fever and inflammation"
+        - "Planted along roads and property boundaries as fast-growing markers"
+        - "Wood was used for matches, paper pulp, and other non-durable goods"
+      symbolic_meaning:
+        - "The white and green leaves represented the changing of seasons and passage of time"
+        - "Associated with protection and endurance in some traditions"
+        - "The flickering leaves were seen as signs of coming weather changes"
+    
+    - culture: "American Settlement Period"
+      physical_uses:
+        - "Planted as fast-growing shade trees around homesteads"
+        - "Used as windbreaks and for erosion control"
+        - "Wood was used for crates, boxes, and rough construction"
+      symbolic_meaning:
+        - "Represented quick establishment of settlements in harsh conditions"
+        - "The distinctive white bark provided a touch of beauty in developing landscapes"
+        - "Widely planted shade trees became symbols of established communities"
+    
+  range_within_california:
+    - "Not native to California; introduced from Europe and Asia"
+    - "Widely planted in urban and residential areas throughout California"
+    - "Naturalized in some riparian areas where it can spread aggressively"
+    - "Adapts to a wide range of conditions from coastal to inland areas"
+    - "Grows well in Central Valley and other agricultural regions"
+    
+  physical_characteristics:
+    height_range: "60-80 feet tall (about as tall as a 6-8 story building)"
+    growth_rate: "Very fast; can grow 3-5 feet per year when young"
+    crown_spread: "40-60 feet wide at maturity"
+    lifespan: "70-100 years under favorable conditions"
+    trunk_diameter: "2-3 feet across (about as wide as a car tire)"
+    root_system: "Extensive, shallow, and spreading; often produces suckers"
+    toxicity: "Not toxic to humans or animals"
+    
+  conservation_status:
+    status: "Not of conservation concern; considered invasive in some areas"
+    threats: 
+      - "Susceptible to various canker diseases"
+      - "Poplar rust and leaf spot diseases in humid areas"
+      - "Prone to branch breakage in storms due to brittle wood"
+      - "Can become a nuisance due to invasive root systems and suckering"
+    protection_efforts:
+      - "None; control efforts are more common due to invasive tendencies"
+      - "Sometimes removed from sensitive riparian areas to allow native vegetation to recover"
+      - "Research into disease resistance for urban planting use"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-COLOR-04"  # Silver undersides
+      - "feature_id: BARK-COLOR-02"  # White bark
+    confirmation_features:
+      - "feature_id: LEAF-SHAPE-05"  # Lobed
+      - "feature_id: FLOWER-TYPE-01"  # Catkins present
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-02", "LEAF-COLOR-04"]  # Rounded crown, silver undersides
+      - distance: "from_nearby"
+        features_to_check: ["BARK-COLOR-02", "LEAF-SHAPE-05"]  # White bark, lobed leaves
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-COLOR-04", "BARK-TEXT-01"]  # Silver undersides, smooth bark
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["FLOWER-TYPE-01", "LEAF-COLOR-04"]
+        notes: "Catkins and new white fuzzy growth are distinctive"
+      
+      summer:
+        reliability: "Very high" 
+        key_features: ["LEAF-COLOR-04", "BARK-COLOR-02"]
+        notes: "White leaf undersides and bark are very distinctive"
+      
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-FALL-01", "BARK-COLOR-02"]
+        notes: "Yellow fall color and white bark"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["BARK-COLOR-02", "BARK-TEXT-01"]
+        notes: "White bark is distinctive but must be distinguished from birches"
+    misidentification_risks: 
+      - "Could be confused with birch trees if only looking at bark color"
+      - "Hybrid poplars may have some similar characteristics"
+      - "Leaf shape can vary considerably even on the same tree"
+  
+  wildlife_value:
+    food_source:
+      - "Catkins provide early spring food for birds"
+      - "Foliage browsed by deer and other mammals"
+      - "Bark and twigs eaten by rabbits, beavers, and other rodents"
+    habitat_provided:
+      - "Nesting sites for various birds, especially cavity nesters in older trees"
+      - "Shelter for many wildlife species"
+      - "Root systems can provide bank stabilization along waterways"
+    ecosystem_role: "In its native range, serves as pioneer species in disturbed areas; in California, can provide wildlife habitat but may displace native vegetation in some settings"

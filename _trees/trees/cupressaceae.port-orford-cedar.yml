@@ -1,0 +1,330 @@
+tree:
+  common_name: "Port Orford-cedar"
+  scientific_name: "Chamaecyparis lawsoniana"
+  family: "Cupressaceae"
+  
+  # Basic summary information
+  summary: "A tall evergreen tree with upward-pointing branches and flat, fan-like sprays of blue-green leaves. The bark is reddish-brown, thin, and peels in vertical strips. Native to southwest Oregon and northwest California, it has a strong ginger-like smell when the leaves are crushed."
+  
+  # Identification priority
+  # This section helps guide the decision tree by highlighting the most distinctive features
+  identification_path:
+    primary_markers: "Flat, fan-like sprays of blue-green scale-like leaves; strong ginger-lemon smell when leaves are crushed"
+    secondary_markers: "Upward-pointing branches that don't droop; reddish-brown bark that peels in strips"
+    seasonal_markers: "Stays green all year; small round seed cones with pointed bumps"
+    similar_species_differentiation: "Unlike Alaska-cedar, branches point up rather than drooping; unlike Western Redcedar, has rounder cones with pointy bumps and bluer leaves"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change - only include feature_id and species-specific notes
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its leaves all year round without changing color or dropping"
+        
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        notes: "Tiny overlapping leaves that look like fish scales arranged in flat fans"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Small leaves grow in pairs facing each other on the twigs"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        notes: "Strong, spicy ginger-lemon smell when leaves are crushed"
+      
+      - feature_id: "BRANCH-ANGLE-02"  # Ascending branches
+        notes: "Branches point upward toward the sky instead of drooping"
+      
+      - feature_id: "NEEDLE-FEAT-03"  # White lines below
+        notes: "Leaves have white X-shaped or diamond patterns on their undersides"
+      
+      - feature_id: "NEEDLE-ARRANGE-08"  # Flattened spray needles
+        notes: "Leaves grow in flat, fan-like patterns"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Grown trees reach 150-200 feet tall (as high as a 20-story building)"
+      
+      - feature_id: "ECO-LIFE-01"  # Long-lived
+        notes: "Can live for over 500 years in the wild - older than the United States has existed!"
+      
+      - feature_id: "BARK-COLOR-03"  # Red bark
+        notes: "Reddish-brown bark, especially visible in strips when it peels"
+      
+      - feature_id: "ECO-WILD-01"  # Important for wildlife
+        notes: "Provides homes and food for many birds and small animals"
+      
+      - feature_id: "CONE-SHAPE-01"  # Round cones
+        notes: "Makes small round cones with pointed bumps"
+      
+      - feature_id: "ECO-USE-03"  # Valuable wood properties
+        notes: "Wood smells nice and lasts a long time without rotting"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Naturally grows in northwest California forests"
+    
+    usually_true:
+      # Features that are primarily true but may have exceptions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk"
+        exceptions: "Sometimes grows with multiple trunks if damaged or growing in a tough spot"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Grows in a triangle or Christmas tree shape"
+        exceptions: "Very old trees or trees in crowded forests may lose the perfect triangle shape"
+    
+    sometimes_true:
+      # Features that vary with age, season, or conditions - include feature_id, conditions, and notes
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees that are still growing"
+        notes: "Bark is smoother when the tree is young"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        conditions: "Older trees"
+        notes: "Bark peels in vertical strips on older trees"
+      
+      - feature_id: "CONE-SIZE-01"  # Small cones
+        conditions: "Older trees when making seeds"
+        notes: "Makes small round cones about 1/3 inch across (size of a pea)"
+      
+      - feature_id: "LEAF-COLOR-03"  # Blue-green
+        conditions: "Most noticeable in full sun"
+        notes: "Leaves have a blue-green color, especially when growing in sunny spots"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Very old trees"
+        notes: "Bark develops shallow grooves and ridges as trees get very old"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "Native range and gardens"
+        notes: "Found naturally in northwest California and sometimes planted in other areas"
+      
+      - feature_id: "GEO-ELEV-02"  # Mid-elevation
+        conditions: "In natural range"
+        notes: "Usually grows in lower mountain areas up to about 5,000 feet"
+      
+      - feature_id: "ECO-ADAPT-03"  # Fire resistant
+        conditions: "Older trees with thicker bark"
+        notes: "Older trees can survive some fires because of their bark"
+      
+      - feature_id: "HABITAT-LOC-01"  # Coastal habitat
+        conditions: "In natural range"
+        notes: "Naturally grows within about 50 miles of the ocean"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        conditions: "Often in natural range"
+        notes: "Often found growing near streams and in moist canyons"
+    
+    never_true:
+      # Features explicitly absent - include only those important for differentiation
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all its leaves in fall"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Only makes small cones, not colorful flowers"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Never has thorns or sharp points on branches"
+      
+      - feature_id: "CONE-SIZE-03"  # Large cones
+        notes: "Never makes big cones; cones stay very small (smaller than a grape)"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Has tiny overlapping leaves, not paired needle-like leaves"
+      
+      - feature_id: "TREE-FORM-03"  # Weeping form
+        notes: "Branches point up or stick out, never drooping like Alaska-cedar"
+      
+      - feature_id: "BRANCH-ANGLE-03"  # Drooping branches
+        notes: "Branches don't droop down (unlike Alaska-cedar)"
+  
+  # Kid-friendly identification - expanded with open-ended, creative descriptions
+  kid_friendly_identification:
+    primary_identifier: "Branches that point upward with flat, fan-like leaf sprays"
+    memorable_comparison: "Looks like a Christmas tree holding its branches up to catch raindrops"
+    touch_tip: "The leaf sprays feel flat like little fans or tiny green hands with lots of fingers"
+    smell_tip: "Crush a small bit of foliage to smell a spicy, lemony-ginger scent - like Christmas cookies!"
+    fun_fact: "Port Orford-cedar wood is so special that it's used to make the most expensive pencils in the world and even Japanese temples that have stood for hundreds of years!"
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the branches. Do they point upward instead of drooping down?"
+        yes_next: 2
+        no_next: "If branches droop down, it might be Alaska-cedar instead"
+      - step: 2
+        instruction: "Look closely at the leaves. Are they tiny flat pieces arranged in fan-like sprays?"
+        yes_next: 3
+        no_next: "Not a Port Orford-cedar - check if it has needle-like leaves instead"
+      - step: 3
+        instruction: "Carefully crush a small leaf and smell. Does it have a spicy, ginger-lemon smell?"
+        yes_next: "You found a Port Orford-cedar!"
+        no_next: "Might be Western Redcedar or another cedar-like tree"
+  
+  regional_notes:
+    - region: "Northern California"
+      notes: "Native to northwest corner of California; sometimes planted in gardens elsewhere"
+      locations: "Found naturally in Del Norte and Siskiyou counties, especially in moist areas"
+    - region: "Oregon"
+      notes: "Native to southwestern Oregon where most wild trees grow"
+      locations: "Most common along coastal mountains in Curry, Coos, and Josephine counties"
+      
+  confirmation_checklist:
+    - feature: "Flat, fan-like sprays of scale-like leaves"
+      reliability: "High"
+      visibility: "Medium - need to look closely"
+    - feature: "Strong, spicy ginger-lemon smell when leaves are crushed"
+      reliability: "Very high"
+      visibility: "Need to crush a leaf to check"
+    - feature: "Branches that point upward or outward (not drooping)"
+      reliability: "Very high"
+      visibility: "Easy to see from far away"
+    - feature: "Small, round cones with pointed bumps (if present)"
+      reliability: "Medium"
+      visibility: "Need to look closely and may be too high to see"
+    
+  look_alike_species:
+    - species: "Alaska-cedar (Callitropsis nootkatensis)"
+      differences: "Alaska-cedar has drooping branch tips, less blue leaves, and slightly different smell"
+      identification_tip: "If the branches droop down instead of pointing up, it's likely Alaska-cedar"
+    - species: "Western Redcedar (Thuja plicata)"
+      differences: "Western Redcedar has branch sprays that look like stacked butterfly wings, yellower-green color, and brown oval cones"
+      identification_tip: "Western Redcedar doesn't have the strong blue-green color and its cones are elongated, not round"
+    - species: "Incense-cedar (Calocedrus decurrens)"
+      differences: "Incense-cedar has flattened sprays that look like strings of beads, and its cones are elongated"
+      identification_tip: "Incense-cedar's leaf sprays aren't fan-shaped, and it has a different smell"
+      
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New growth appears at branch tips with lighter blue-green color"
+      reproductive_activity: "Tiny yellow pollen cones release yellow dust in late spring"
+      identification_tips: "Look for the contrast between new growth and older foliage"
+      kid_friendly_tip: "Look for the lighter colored new growth at the tips, like the tree is getting new fingers"
+    
+    - season: "Summer" 
+      visual_changes: "Consistent blue-green color throughout the tree"
+      reproductive_activity: "Seed cones develop and begin maturing after pollination"
+      identification_tips: "Blue-green color stands out against other evergreen trees"
+      kid_friendly_tip: "In summer, this tree looks more blue than most other evergreens nearby"
+    
+    - season: "Fall"
+      visual_changes: "No color change as it remains evergreen"
+      reproductive_activity: "Seed cones mature and open to release tiny seeds"
+      identification_tips: "Distinctive blue-green color when other trees are changing color"
+      kid_friendly_tip: "While other trees turn red and yellow, Port Orford-cedar stays the same blue-green color"
+    
+    - season: "Winter"
+      visual_changes: "Foliage remains but growth is dormant"
+      reproductive_activity: "Dormant, no reproductive activity"
+      identification_tips: "Easier to identify when deciduous trees are bare"
+      kid_friendly_tip: "Even in winter, this tree keeps all its leaves when many other trees are bare"
+      
+  cultural_ecological_notes:
+    - "Native to a very small area in northwest California and southwest Oregon"
+    - "Roots can be attacked by a water mold that kills the trees, causing many to die"
+    - "Wood is extremely valuable for building because it's strong, light, and doesn't rot"
+    - "Can live for hundreds of years in the wild"
+    - "Provides homes for wildlife and helps protect soil from erosion"
+    
+  range_within_california:
+    - "Naturally grows only in Del Norte and Siskiyou counties in the northwest corner of California"
+    - "Found in moist mountain areas, often near streams or in sheltered canyons"
+    - "Usually grows between 2,000-5,000 feet elevation in California"
+    - "Sometimes planted as an ornamental tree in parks and gardens elsewhere in northern California"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Tolowa"
+      physical_uses:
+        - "Used the strong, rot-resistant wood to build canoes that could travel along the coast"
+        - "Made hunting and fishing tools from the wood"
+        - "Used the bark for making simple containers and coverings"
+      symbolic_meaning:
+        - "The tree represented strength and resilience because it grows in difficult mountain areas"
+        - "The pleasant scent of the wood was connected to purification in some ceremonies"
+    
+    - culture: "Karuk"
+      physical_uses:
+        - "Made ceremonial items from the aromatic wood"
+        - "Used branches as natural air fresheners in living spaces"
+        - "Burned small amounts of wood to create pleasant-smelling smoke for ceremonies"
+      symbolic_meaning:
+        - "The tree's long life represented continuity and connection to ancestors"
+        - "Fragrant wood was associated with cleansing and healing energy"
+    
+    - culture: "Japanese (Contemporary)"
+      physical_uses:
+        - "Highly valued for building temples and shrines because the wood is similar to their native hinoki cypress"
+        - "Used to make special musical instruments like harps and piano soundboards"
+        - "Crafted into ceremonial boxes and chests for important belongings"
+      symbolic_meaning:
+        - "The clean scent represents purity and cleanliness"
+        - "The durability of the wood symbolizes permanence and stability"
+        - "The trees are respected for their age and stately appearance"
+    
+    - culture: "European American (Historical)"
+      physical_uses:
+        - "Wood was highly prized for building boats and ships because it resists rot in saltwater"
+        - "Used for arrow shafts, battery separators, and other specialty items"
+        - "Made into venetian blinds, storage chests, and fine furniture"
+      symbolic_meaning:
+        - "Became a symbol of valuable natural resources in the Pacific Northwest"
+        - "The tree's rarity in a small range made it represent the unique character of the region"
+    
+  # Additional physical characteristics not captured in features
+  physical_characteristics:
+    height_range: "150-200 feet (as tall as a 20-story building)"
+    growth_rate: "Moderate growth, faster than Alaska-cedar"
+    crown_spread: "30-40 feet wide when fully grown (about as wide as a school bus is long)"
+    lifespan: "Can live 500-600 years in the wild"
+    trunk_diameter: "Up to 6 feet across when fully grown (wider than a car tire)"
+    root_system: "Shallow, spreading roots that need moist soil"
+    toxicity: "Not poisonous to people or animals"
+    
+  conservation_status:
+    status: "Near Threatened (at risk of becoming endangered)"
+    threats: 
+      - "Root disease (Phytophthora lateralis) that kills trees by attacking their roots"
+      - "Logging of old-growth forests where the largest trees grow"
+      - "Climate change may affect where it can grow in the future"
+      - "Limited natural range makes it vulnerable to local disasters"
+    protection_efforts:
+      - "Growing disease-resistant varieties through breeding programs"
+      - "Rules about moving soil and plants to prevent spreading the root disease"
+      - "Special protected areas in forests where the trees grow naturally"
+      - "Seed collection programs to preserve genetic diversity"
+    
+  # Decision tree mapping - helps with algorithm creation
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: LEAF-FORM-05"  # Scale-like leaves
+      - "feature_id: BRANCH-ANGLE-02"  # Ascending branches
+      - "feature_id: LEAF-COLOR-03"  # Blue-green
+    confirmation_features:
+      - "feature_id: SENSORY-SMELL-01"  # Aromatic leaves
+      - "feature_id: BARK-TEXT-03"  # Peeling bark
+      - "feature_id: NEEDLE-ARRANGE-08"  # Flattened spray needles
+      - "feature_id: CONE-SHAPE-01"  # Round cones
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-01", "LEAF-TYPE-02", "TREE-SIZE-03"]  # Pyramidal shape, evergreen, tall tree
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-FORM-05", "LEAF-COLOR-03", "BRANCH-ANGLE-02", "BARK-COLOR-03"]  # Scale-like leaves, blue-green, ascending branches, red bark
+      - distance: "close_inspection"
+        features_to_check: ["SENSORY-SMELL-01", "LEAF-ARRANGE-02", "NEEDLE-ARRANGE-08", "NEEDLE-FEAT-03"]  # Spicy smell, leaf arrangement, flattened sprays, white lines
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "LEAF-FORM-05", "TREE-FORM-01"]
+        notes: "New growth and pollen cones provide additional confirmation"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-TYPE-02", "LEAF-FORM-05", "LEAF-COLOR-03"]
+        notes: "Blue-green color more visible against other conifers"
+      
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "LEAF-FORM-05", "BRANCH-ANGLE-02"]
+        notes: "Evergreen nature stands out as deciduous trees change color"
+      
+      winter:
+        reliability: "Very high"
+        key_features: ["LEAF-TYPE-02", "TREE-FORM-01", "SENSORY-SMELL-01"]
+        notes: "Easier to spot when deciduous trees are bare"
+    misidentification_risks: "Most often confused with Alaska-cedar, Western Redcedar, or Incense-cedar"

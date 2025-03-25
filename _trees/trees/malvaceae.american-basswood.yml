@@ -1,0 +1,317 @@
+tree:
+  common_name: "American Basswood"
+  scientific_name: "Tilia americana"
+  family: "Malvaceae"
+  
+  # Basic summary information
+  summary: "A majestic deciduous tree with large, heart-shaped leaves and sweetly fragrant pale yellow flowers that attract bees. Native to eastern North America but occasionally planted in California landscapes and parks. Valued for its soft, workable wood, bee-friendly flowers, and attractive dense shade."
+  
+  identification_path:
+    primary_markers: "Large heart-shaped leaves with toothed edges and an asymmetrical base; distinctive paper-like bract attached to flower and seed clusters; fragrant yellow flowers in drooping clusters"
+    secondary_markers: "Smooth gray bark when young developing shallow furrows with age; lopsided leaf base (one side of leaf attaches to stem slightly lower than other side); pale yellow flowers with long flower stalks attached to pale green leaf-like bracts"
+    seasonal_markers: "Fragrant yellow flower clusters in early summer; heart-shaped leaves turning yellow in fall; unique winged bracts with seed clusters persisting into fall and winter"
+    similar_species_differentiation: "Distinguished from European Linden by larger leaves and less dense branching habit; unlike cottonwoods, has heart-shaped leaves with asymmetrical bases and distinctive flower bracts; unlike mulberries, has leaves without lobes and produces winged seed clusters"
+  
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves in fall"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Leaves are single pieces, not divided into leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow alternately along branches"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated
+        notes: "Leaf edges have fine, sharp teeth"
+      
+      - feature_id: "LEAF-SHAPE-04"  # Heart-shaped
+        notes: "Leaves have distinctive heart shape with an asymmetrical base"
+      
+      - feature_id: "SENSORY-SMELL-03"  # Fragrant flowers
+        notes: "Flowers have a sweet, honey-like fragrance"
+      
+      - feature_id: "FLOWER-COLOR-04"  # Yellow flowers
+        notes: "Produces pale yellow, highly fragrant flowers"
+      
+      - feature_id: "FLOWER-TIME-02"  # Summer flowering
+        notes: "Blooms in early summer, later than many flowering trees"
+      
+      - feature_id: "ECO-WILD-02"  # Pollinator friendly
+        notes: "Flowers are extremely attractive to bees and other pollinators"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk"
+        exceptions: "May occasionally develop multiple trunks, especially if damaged when young"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Crown typically forms a broad, rounded shape"
+        exceptions: "Crown shape can vary based on growing conditions"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Mature trees typically reach 50-80 feet in height"
+        exceptions: "May be shorter in poor growing conditions or when young"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Bark is smooth and gray when young"
+        exceptions: "Develops shallow furrows with age"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        notes: "Leaves typically turn yellow in fall"
+        exceptions: "Fall color can be muted in some conditions"
+    
+    sometimes_true:
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        conditions: "When young or in poor growing conditions"
+        notes: "May remain under 50 feet in height when young or in less ideal settings"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Older, mature trees"
+        notes: "Develops shallow to moderate furrows as it ages"
+      
+      - feature_id: "FRUIT-TYPE-02"  # Winged seeds
+        conditions: "Summer through fall and sometimes winter"
+        notes: "Produces distinctive round fruits with attached wing-like bracts"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "Where planted in landscapes"
+        notes: "Occasionally planted in Northern California parks and gardens"
+      
+      - feature_id: "GEO-REGION-02"  # Central California
+        conditions: "Where planted in landscapes"
+        notes: "Sometimes planted in Central California in parks or larger landscapes"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        conditions: "In its native range"
+        notes: "In eastern North America, often found naturally in moist, rich soil near water"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "When planted in California landscapes"
+        notes: "Tolerates urban conditions reasonably well in suitable climate zones"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops its leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has compound leaves"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Never has needle-like leaves"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Not native to California; originally from eastern North America"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Heart-shaped leaves with uneven bottoms, and flower stalks attached to special pale green 'wings'"
+    memorable_comparison: "The leaves look like valentine hearts with crooked bottoms, and the flowers and seeds hang from pale green paper airplane wings"
+    touch_tip: "The leaves feel slightly fuzzy underneath but smooth on top"
+    smell_tip: "When the tree has flowers in early summer, they smell super sweet like honey - bees love them!"
+    fun_fact: "Basswood flowers are so sweet and produce so much nectar that beekeepers love to put their beehives near basswood trees to make special basswood honey. The wood is super soft and easy to carve, so many people use it to make musical instruments, toys, and even to carve sculptures!"
+    detective_steps:
+      - step: 1
+        instruction: "Look at the leaves - are they shaped like valentine hearts with one side of the bottom slightly lower than the other (asymmetrical)?"
+        yes_next: 2
+        no_next: "This is probably not a basswood - check for different leaf shapes"
+      - step: 2
+        instruction: "In early summer, do you see clusters of pale yellow flowers hanging down with a special pale green leaf-like 'wing' attached to each flower stalk?"
+        yes_next: 3
+        no_next: "If it's not flowering season, check if it's a tall tree with a rounded crown and smooth to lightly furrowed bark"
+      - step: 3
+        instruction: "Are the leaves fairly large (4-8 inches long), with tiny teeth around the edges?"
+        yes_next: 4
+        no_next: "If the leaves are much smaller or have big jagged teeth, it might be another tree with heart-shaped leaves"
+      - step: 4
+        instruction: "Is the tree growing in a park, yard, or landscape setting (not a wild forest in California)?"
+        yes_next: "You found an American Basswood!"
+        no_next: "Basswoods are not native to California, so they're usually only found where people have planted them"
+  
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Buds open and new leaves emerge, starting with a light green color"
+      reproductive_activity: "Flower buds form as leaves develop"
+      identification_tips: "Look for the emerging heart-shaped leaves with asymmetrical bases"
+      kid_friendly_tip: "In spring, watch for the valentine-shaped leaves popping out from the buds"
+    
+    - season: "Summer" 
+      visual_changes: "Full, dark green foliage; distinctive drooping clusters of pale yellow flowers with attached pale green bracts appear in early summer"
+      reproductive_activity: "Flowers bloom, attracting many bees and pollinators; small round nuts develop after flowering"
+      identification_tips: "Fragrant yellow flower clusters with unique wing-like bracts make summer identification easy"
+      kid_friendly_tip: "Summer is when the tree makes super-sweet smelling flowers that bees absolutely love! Look for the special pale green 'wings' attached to the flower stalks"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow; small round nut-like fruits attached to wing-like bracts persist"
+      reproductive_activity: "Seeds mature; bracts act as wings to help disperse seeds by wind"
+      identification_tips: "Yellow fall color and distinctive fruit-bract combinations hanging from branches"
+      kid_friendly_tip: "In fall, the leaves turn yellow, and you can see the seeds hanging from those special 'paper airplane' wings that help them fly in the wind"
+    
+    - season: "Winter"
+      visual_changes: "Branches bare; some fruits and bracts may persist; reddish buds visible"
+      reproductive_activity: "Dormant; fruit bracts may remain attached and help with winter seed dispersal"
+      identification_tips: "Smooth to lightly furrowed gray bark; zigzag twigs with reddish buds; sometimes persistent fruit bracts"
+      kid_friendly_tip: "In winter, look for the zigzag pattern of the twigs and reddish buds; sometimes you can still see some of the seed 'airplanes' hanging on the bare branches"
+      
+  confirmation_checklist:
+    - feature: "Heart-shaped leaves with asymmetrical base"
+      reliability: "Very high"
+      visibility: "Easy to see during growing season"
+    - feature: "Pale yellow fragrant flowers with wing-like bracts"
+      reliability: "Very high (when flowering)"
+      visibility: "Very noticeable during flowering season"
+    - feature: "Seed clusters attached to persistent pale green bracts"
+      reliability: "High"
+      visibility: "Visible from summer through fall and sometimes winter"
+    - feature: "Smooth gray bark on young trees, shallow furrows on older trees"
+      reliability: "Medium"
+      visibility: "Visible year-round"
+    - feature: "Zigzag twigs with reddish buds in winter"
+      reliability: "Medium"
+      visibility: "Visible in winter upon close inspection"
+    
+  look_alike_species:
+    - species: "European Linden/Littleleaf Linden (Tilia cordata)"
+      differences: "European Linden has smaller leaves (2-3 inches) compared to American Basswood (4-8 inches); European species has a more compact form with denser branching"
+      identification_tip: "Check leaf size - American Basswood leaves are noticeably larger"
+    
+    - species: "Silver Linden (Tilia tomentosa)"
+      differences: "Silver Linden has distinctive silvery-white leaf undersides; American Basswood leaf undersides are lighter green but not silvery-white"
+      identification_tip: "Turn over a leaf - Silver Linden undersides look almost white, while American Basswood are just slightly paler green"
+    
+    - species: "Cottonwood (Populus species)"
+      differences: "Cottonwoods have triangular to diamond-shaped leaves without the distinctive asymmetrical base; lack the wing-like bracts with flower/seed clusters"
+      identification_tip: "Check for the asymmetrical leaf base (one side attaches lower than the other) characteristic of basswood"
+    
+  cultural_ecological_notes:
+    - "Native to eastern North America; occasionally planted in California landscapes"
+    - "Flowers are an important nectar source for honey bees and other pollinators"
+    - "Wood is light, soft and easily worked, valued for carving and instruments"
+    - "Can live for 200+ years in favorable conditions"
+    - "Nicknamed 'bee tree' for its exceptional bee-attracting flowers"
+    
+  range_within_california:
+    - "Not native to California but occasionally planted as a landscape or park tree"
+    - "Most common in public gardens, arboretums, and parks"
+    - "Prefers areas with adequate moisture; struggles in hot, dry areas"
+    - "Performs better in Northern California and coastal areas than in hot interior valleys"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Eastern Woodland Native American Tribes"
+      physical_uses:
+        - "Inner bark fiber used for making strong cordage and rope"
+        - "Sap sometimes collected for making sweet syrup (though less commonly than maple)"
+        - "Leaves used as wrapping material for cooking foods"
+        - "Wood used for carved utensils, bowls, and ceremonial objects"
+      symbolic_meaning:
+        - "Associated with fertility and abundance due to its prolific flowers and bee attraction"
+        - "Represented the unity of earth and sky in some tribal stories"
+        - "Heart-shaped leaves connected to teachings about compassion and emotional balance"
+        - "Used as a teaching tree for youth about the importance of pollinators"
+    
+    - culture: "Early American Settlers"
+      physical_uses:
+        - "Soft, easily worked wood used for furniture, wooden utensils, and boxes"
+        - "Carved wooden bowls and spoons commonly made from basswood"
+        - "Honey from basswood flowers prized for its distinct flavor"
+        - "Inner bark used medicinally for burns and inflammations"
+      symbolic_meaning:
+        - "Represented craftsmanship and practical skills in frontier communities"
+        - "Signified the transition from spring to summer when in bloom"
+        - "Honey production represented the sweet rewards of summer"
+    
+    - culture: "Artistic and Craft Traditions"
+      physical_uses:
+        - "Preferred wood for hand carving due to its fine grain and workability"
+        - "Used for musical instrument components, especially piano keys historically"
+        - "Chosen for wooden toys and models requiring detailed carving"
+        - "Inner bark historically used for weaving mats and baskets"
+      symbolic_meaning:
+        - "Represents the connection between natural materials and human creativity"
+        - "Associated with musical traditions through its use in instruments"
+        - "Symbolizes the passing down of craft skills through generations"
+    
+    - culture: "Modern Beekeeping"
+      physical_uses:
+        - "Valued as a premier honey source tree"
+        - "Planted specifically for honey production"
+        - "Basswood honey produced as a specialty varietal honey"
+      symbolic_meaning:
+        - "Represents the vital connection between trees and pollinators"
+        - "Symbolizes the sweet rewards of ecological relationships"
+        - "Used as an educational example of mutually beneficial relationships in nature"
+  
+  # Additional physical characteristics
+  physical_characteristics:
+    height_range: "50-80 feet, occasionally reaching 100+ feet (as tall as a 5-10 story building)"
+    growth_rate: "Medium to fast, growing 13-24 inches per year when young"
+    crown_spread: "30-50 feet wide at maturity"
+    lifespan: "200+ years under good conditions"
+    trunk_diameter: "2-4 feet across at maturity"
+    root_system: "Moderately deep with widespread lateral roots"
+    toxicity: "Non-toxic; flowers, young leaves, and sap actually edible"
+    
+  conservation_status:
+    status: "Not of conservation concern in California (introduced ornamental)"
+    threats: 
+      - "Susceptibility to Japanese beetles where present"
+      - "Aphids sometimes cause cosmetic issues"
+      - "Some sensitivity to prolonged drought"
+      - "Not invasive in California"
+    protection_efforts:
+      - "No specific conservation efforts in California"
+      - "In eastern native range, included in urban forest diversity efforts"
+      - "Sometimes selected for honey production potential in sustainable agriculture"
+    
+  # Decision tree mapping
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-SHAPE-04"  # Heart-shaped
+      - "feature_id: SENSORY-SMELL-03"  # Fragrant flowers
+      - "feature_id: TREE-SIZE-03"  # Tall tree
+    confirmation_features:
+      - "feature_id: LEAF-COMPLEX-01"  # Simple broadleaf
+      - "feature_id: LEAF-EDGE-02"  # Serrated
+      - "feature_id: FLOWER-COLOR-04"  # Yellow flowers
+      - "feature_id: FLOWER-TIME-02"  # Summer flowering
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-03", "TREE-FORM-02", "FLOWER-COLOR-04"]  # Tall tree, rounded crown, yellow flowers
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SHAPE-04", "LEAF-EDGE-02", "FRUIT-TYPE-02"]  # Heart-shaped leaves, serrated edge, winged seeds
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-ARRANGE-01", "SENSORY-SMELL-03"]  # Alternate arrangement, fragrant flowers
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["LEAF-SHAPE-04", "LEAF-EDGE-02", "LEAF-ARRANGE-01"]
+        notes: "Emerging heart-shaped leaves with asymmetrical bases aid spring identification"
+      summer:
+        reliability: "Very High" 
+        key_features: ["SENSORY-SMELL-03", "FLOWER-COLOR-04", "FRUIT-TYPE-02"]
+        notes: "Fragrant flower clusters with unique bracts make summer identification very reliable"
+      fall:
+        reliability: "Medium-High"
+        key_features: ["LEAF-FALL-01", "FRUIT-TYPE-02", "LEAF-SHAPE-04"]
+        notes: "Yellow fall color, distinctive fruits with bracts, and heart-shaped leaves aid fall identification"
+      winter:
+        reliability: "Low-Medium"
+        key_features: ["TREE-FORM-02", "BARK-TEXT-01", "FRUIT-TYPE-02"]
+        notes: "Zigzag twigs with reddish buds and sometimes persistent fruits with bracts help with winter identification"
+    misidentification_risks: "Most often confused with other Tilia species, especially European Linden (Tilia cordata)"
+
+  wildlife_value:
+    nesting_sites: "Provides nesting sites for many songbird species"
+    food_source: "Seeds eaten by birds, squirrels, and chipmunks; early flowers provide nectar for bees"
+    shelter: "Dense summer foliage provides cover for birds and small animals"
+    ecological_notes: "In its native range, supports many insect species that are food for birds"
+    
+  propagation_information:
+    growing_conditions: "Adaptable to various soil types but prefers moist, slightly acidic soil"
+    water_needs: "Moderate to high; tolerates occasional flooding but also some drought when established"
+    planting_tips: "Plant in full sun to partial shade; provides best fall color in full sun"
+    maintenance: "Prune in summer or fall to avoid excessive sap flow; remove dead or crossing branches"
+    special_notes: "Many cultivars available with different growth habits and fall color intensity; some varieties more suitable for urban conditions"

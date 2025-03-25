@@ -1,0 +1,280 @@
+tree:
+  common_name: "Wych Elm"
+  scientific_name: "Ulmus glabra"
+  family: "Ulmaceae"
+  
+  # Basic summary
+  summary: "The Wych Elm is a large deciduous tree with a broad, rounded crown and spreading branches. It has large, rough, double-toothed leaves that are asymmetrical at the base, and produces circular winged seeds. The bark is gray-brown and develops deep furrows with age."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Large (3-6 inch), rough leaves with double-toothed edges and asymmetrical bases; branches spread widely with a broad crown; twigs not winged"
+    secondary_markers: "Gray-brown bark with deep furrows on mature trees; flat, circular winged seeds (samaras); leaves rough to touch on top surface"
+    seasonal_markers: "Small reddish-purple flowers in tight clusters in early spring before leaves appear; seeds mature and drop by late spring; leaves turn yellow in fall"
+    similar_species_differentiation: "Unlike American Elm, has rougher, wider leaves with shorter stalks; unlike Winged Elm, lacks corky wings on branches and has much larger leaves; unlike English Elm, has more spreading form rather than upright vase shape"
+  
+  features:
+    always_true:
+      # Fundamental traits
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves in fall"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple leaves
+        notes: "Leaves are single, not compound"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate arrangement
+        notes: "Leaves grow in an alternating pattern along the branches"
+      
+      - feature_id: "LEAF-EDGE-03"  # Doubly serrated
+        notes: "Leaf edges have double teeth, with small teeth on larger teeth"
+      
+      - feature_id: "LEAF-SHAPE-01"  # Oval
+        notes: "Leaves are oval to obovate (wider near the tip) with pointed tips"
+      
+    usually_true:
+      # Features with exceptions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with one main trunk that divides into spreading branches"
+        exceptions: "May develop multiple trunks if damaged or coppiced"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Usually reaches 60-100 feet tall (about as tall as a 6-10 story building)"
+        exceptions: "May be smaller in poor conditions or when affected by disease"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Mature trees typically develop a broad, rounded crown"
+        exceptions: "Shape can vary with growing conditions or in forest settings"
+      
+      - feature_id: "LEAF-SIZE-03"  # Large leaves
+        notes: "Leaves are typically 3-6 inches long, larger than many other elms"
+        exceptions: "Size can vary with growing conditions"
+    
+    sometimes_true:
+      # Features that vary
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees"
+        notes: "Bark is relatively smooth when young"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Mature trees"
+        notes: "Bark develops deep furrows as the tree ages"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        conditions: "In California"
+        notes: "Not native to California but occasionally planted as an ornamental"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Fall season"
+        notes: "Leaves typically turn yellow before falling"
+      
+      - feature_id: "FRUIT-TYPE-02"  # Winged seeds
+        conditions: "Spring after flowering"
+        notes: "Produces flat, circular winged seeds (samaras)"
+    
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops its leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has compound leaves"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves never grow directly across from each other"
+      
+      - feature_id: "BRANCH-FEAT-01"  # Corky wings
+        notes: "Unlike Winged Elm, never develops corky wings on branches"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Flowers are small and inconspicuous"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Very large, rough leaves with uneven bases (one side comes down lower on the leaf stem than the other)"
+    memorable_comparison: "The leaves look like big, rough sandpaper sheets with edges that look like tiny shark teeth on bigger shark teeth"
+    touch_tip: "Gently feel the leaf surface - it's rough like fine sandpaper on top and a bit fuzzy underneath"
+    smell_tip: "The leaves don't have a strong smell, but they do have a slightly earthy scent if you crush them"
+    fun_fact: "Wych Elm is the only elm native to Scotland, and its name 'wych' comes from an old English word meaning 'pliable' - because its wood was used to make bows and wheels!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the leaves. Are they large (bigger than your hand), rough, and have double-toothed edges (tiny teeth on bigger teeth)?"
+        yes_next: 2
+        no_next: "Not a Wych Elm - check other elm species or trees with similar leaves"
+      - step: 2
+        instruction: "Look at the base of the leaf where it meets the stem. Is one side lower than the other (asymmetrical)?"
+        yes_next: 3
+        no_next: "Might not be a Wych Elm - check other trees with similar leaves"
+      - step: 3
+        instruction: "Check the branches. Do they spread out widely without any corky wings or ridges along them?"
+        yes_next: "You found a Wych Elm!"
+        no_next: "If there are corky wings on the branches, it might be a Winged Elm instead"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Small reddish-purple flowers appear before leaves; new leaves unfold and winged seeds develop"
+      reproductive_activity: "Flowers in early spring; seeds mature and drop by late spring"
+      identification_tips: "Flowers and seed development are distinctive; look for leaf buds opening after flowering"
+      kid_friendly_tip: "In spring, look for little reddish flower clusters before the leaves come out, then round, flat seeds that can float like tiny frisbees"
+    
+    - season: "Summer" 
+      visual_changes: "Full leaf development; deep green, rough-textured leaves form a dense canopy"
+      reproductive_activity: "No reproductive activity; seed dispersal completed"
+      identification_tips: "Large, rough, asymmetrical leaves are key identifiers"
+      kid_friendly_tip: "In summer, the tree has big, dark green leaves that feel rough like sandpaper when you touch them"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow before falling"
+      reproductive_activity: "No reproductive activity"
+      identification_tips: "Yellow fall color; leaf shape still visible before falling"
+      kid_friendly_tip: "In fall, the leaves turn yellow like butter before dropping off"
+    
+    - season: "Winter"
+      visual_changes: "Bare spreading branches reveal the broad crown structure"
+      reproductive_activity: "Flower buds form for next spring"
+      identification_tips: "Spreading branch structure and fat, blunt buds are distinctive"
+      kid_friendly_tip: "In winter, look for fat, round buds at the ends of branches that will become flowers in spring"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Large (3-6 inch), rough leaves with double-toothed edges"
+      reliability: "Very high"
+      visibility: "High - visible during growing season"
+    - feature: "Asymmetrical leaf bases (one side lower than the other)"
+      reliability: "High"
+      visibility: "Medium - need to look closely at leaf attachment"
+    - feature: "Broad, rounded crown with spreading branches"
+      reliability: "Medium"
+      visibility: "High - visible from a distance on mature trees"
+    - feature: "No corky wings on branches (unlike Winged Elm)"
+      reliability: "High"
+      visibility: "Medium - need to check branches closely"
+    
+  look_alike_species:
+    - species: "American Elm (Ulmus americana)"
+      differences: "American Elm has smoother leaves, more vase-like shape, and longer leaf stems"
+      identification_tip: "Wych Elm leaves are much rougher to touch and have shorter stems"
+    - species: "English Elm (Ulmus procera)"
+      differences: "English Elm has a more upright, vase-like shape and smaller leaves"
+      identification_tip: "Wych Elm has a broader, more spreading habit and larger leaves"
+    - species: "Winged Elm (Ulmus alata)"
+      differences: "Winged Elm has distinctive corky wings on branches and much smaller leaves"
+      identification_tip: "Check for absence of wings on branches and much larger leaf size in Wych Elm"
+    
+  cultural_ecological_notes:
+    - "Provides important habitat for many bird species and insects"
+    - "Less susceptible to Dutch elm disease than some other elm species, though still vulnerable"
+    - "Deep root system helps prevent soil erosion on slopes"
+    - "Native to Europe and parts of Asia, not California"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Scottish and Northern European"
+      physical_uses:
+        - "Used the tough, flexible wood for wheel hubs, cart wheels, and boat parts"
+        - "Made rope from the inner bark by soaking it in water"
+        - "Used for furniture and flooring due to its attractive grain patterns"
+      symbolic_meaning:
+        - "Associated with strength and resilience in folklore"
+        - "In Scotland, known as the 'tree of knowledge' in some traditions"
+        - "Believed to protect against witchcraft when planted near homes"
+    
+    - culture: "Traditional Medicine"
+      physical_uses:
+        - "Bark used to treat inflammation and skin conditions"
+        - "Made poultices from inner bark for wounds and burns"
+        - "Created teas from bark to help with digestive issues"
+      symbolic_meaning:
+        - "Represented healing and recovery in traditional medicine systems"
+        - "Associated with purification and cleansing properties"
+        - "Connected to renewal and rebirth in seasonal folklore"
+    
+    - culture: "Modern Horticulture"
+      physical_uses:
+        - "Planted as an ornamental tree for its distinctive form and foliage"
+        - "Selected cultivars with resistance to Dutch elm disease are grown"
+        - "Used in parks and large gardens for shade and aesthetic appeal"
+      symbolic_meaning:
+        - "Represents conservation efforts to preserve elm genetics"
+        - "Symbolizes resilience in the face of introduced diseases"
+        - "Used in education about native European tree diversity"
+    
+  range_within_california:
+    - "Not native to California; natural range is in Europe and western Asia"
+    - "Occasionally planted as an ornamental tree in California landscapes"
+    - "Adapts best to northern and coastal areas of California with cooler, moister conditions"
+    - "Can struggle in hot, dry regions of Southern California"
+    - "Prefers deep, rich, well-drained soils but can tolerate various soil types"
+    
+  physical_characteristics:
+    height_range: "60-100 feet tall (about as tall as a 6-10 story building)"
+    growth_rate: "Medium to fast; can grow 12-24 inches per year when young"
+    crown_spread: "40-50 feet wide at maturity"
+    lifespan: "80-150 years under favorable conditions if not affected by disease"
+    trunk_diameter: "2-3 feet across (about as wide as a big dining table)"
+    root_system: "Deep and wide-spreading; adaptable to different soil types"
+    toxicity: "Not toxic to humans or animals"
+    
+  conservation_status:
+    status: "Not formally listed but declining in native range"
+    threats: 
+      - "Dutch elm disease has severely reduced populations in native range"
+      - "Elm bark beetles which spread the disease"
+      - "Climate change potentially altering suitable habitat"
+      - "Urban development and habitat fragmentation"
+    protection_efforts:
+      - "Breeding programs for disease-resistant varieties"
+      - "Seed collection and preservation projects"
+      - "Protection of mature specimens in some conservation areas"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-SIZE-03"  # Large leaves
+      - "feature_id: LEAF-EDGE-03"  # Doubly serrated
+    confirmation_features:
+      - "feature_id: TREE-FORM-02"  # Rounded crown
+      - "feature_id: LEAF-SHAPE-01"  # Oval
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-02", "TREE-SIZE-03"]  # Rounded crown, tall tree
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SIZE-03", "LEAF-ARRANGE-01"]  # Large leaves, alternate arrangement
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-03", "LEAF-SHAPE-01"]  # Doubly serrated, oval shape
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["LEAF-SIZE-03", "FRUIT-TYPE-02"]
+        notes: "Flowers, emerging leaves, and seeds make identification easier"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-SIZE-03", "LEAF-EDGE-03"]
+        notes: "Full leaf development shows characteristic leaf shape and serration"
+      
+      fall:
+        reliability: "Medium"
+        key_features: ["LEAF-FALL-01", "TREE-FORM-02"]
+        notes: "Yellow fall color; leaf shape still visible before falling"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["TREE-FORM-02", "TWIG-FORM-01"]
+        notes: "Spreading branch structure and winter buds are helpful identifiers"
+    misidentification_risks: 
+      - "Can be confused with other large-leaved elm species if not comparing leaf texture"
+      - "Young trees may not yet have developed broad, spreading form"
+      - "Cultivated varieties may have slightly different characteristics from wild trees"
+  
+  wildlife_value:
+    food_source:
+      - "Seeds eaten by various birds and small mammals"
+      - "Leaves serve as food for many moth and butterfly caterpillars"
+      - "Supports numerous aphid species which in turn feed ladybugs and birds"
+    habitat_provided:
+      - "Dense branching provides nesting sites for many bird species"
+      - "Rough bark provides habitat for insects and spiders"
+      - "Cavities in older trees provide homes for cavity-nesting birds and mammals"
+    ecosystem_role: "In its native range, serves as a keystone species supporting diverse insect populations; these insects in turn support birds and other wildlife creating an important food web"

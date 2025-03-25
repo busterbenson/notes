@@ -1,0 +1,268 @@
+tree:
+  common_name: Seaside Alder
+  scientific_name: Alnus maritima
+  family: Betulaceae
+  native: false
+
+  summary: Seaside Alder is a rare, deciduous small tree or large shrub with glossy dark green leaves and distinctive cone-like fruits. Unique among North American alders for its fall flowering season (rather than spring), this species naturally occurs in only three small, disjunct populations in the eastern United States. Though not native to California, it's occasionally planted as an ornamental in wetland gardens and moist landscape areas where its unusual fall blooming habit and adaptability to wet soils make it valuable.
+
+  identification_path:
+    primary_markers: "Glossy dark green, elliptical leaves with finely toothed margins; fall flowering (September-October) unlike other alders"
+    secondary_markers: "Woody cone-like fruits that persist through winter; grows in wet or consistently moist areas"
+    seasonal_markers: "Fall-flowering catkins; late-season green leaves when other deciduous trees change color"
+    similar_species_differentiation: "Unlike other alders (Red, White, European), flowers in fall not spring; leaves more glossy than other alder species"
+
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01" # Deciduous
+        notes: "Loses its leaves each fall but stays green later than many deciduous trees"
+      
+      - feature_id: "LEAF-ARRANGE-01" # Alternate
+        notes: "Leaves grow in an alternating pattern along the branches, not in pairs"
+      
+      - feature_id: "FRUIT-TYPE-01" # Cone-like
+        notes: "Produces woody, pine cone-like fruits called strobiles that stay on the tree through winter"
+      
+      - feature_id: "FLOWER-TIME-03" # Fall flowering
+        notes: "Unusual fall flowering period (September-October), unlike most alders that flower in spring"
+    
+    usually_true:
+      - feature_id: "TREE-SIZE-01" # Small (under 30 feet)
+        notes: "Typically grows 15-30 feet tall"
+        exceptions: "May stay smaller in container plantings or poor soil conditions"
+      
+      - feature_id: "LEAF-EDGE-02" # Serrated
+        notes: "Leaf edges have fine teeth all around the margin"
+        exceptions: "Teeth may be less obvious on some leaves, especially when young"
+      
+      - feature_id: "BARK-TEXT-01" # Smooth
+        notes: "Bark is typically smooth and gray on younger trees and branches"
+        exceptions: "Develops shallow fissures with age on older trunks"
+      
+      - feature_id: "HABITAT-WATER-01" # Riparian habitat
+        notes: "Naturally occurs near water and prefers wet or consistently moist soils"
+        exceptions: "Can tolerate brief dry periods in cultivated settings with proper care"
+    
+    sometimes_true:
+      - feature_id: "TREE-TRUNK-02" # Multi-trunked
+        conditions: "Often depends on how it was grown and pruned"
+        notes: "Can develop multiple stems, especially when grown as a large shrub"
+      
+      - feature_id: "HABITAT-05" # Planted in landscapes
+        conditions: "When used in specialty gardens focused on wetland plants"
+        notes: "Occasionally found in botanical gardens or water-friendly landscapes in California"
+      
+      - feature_id: "BARK-TEXT-02" # Furrowed bark
+        conditions: "On older, mature specimens"
+        notes: "Bark develops shallow fissures with age but never deeply furrowed"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02" # Evergreen
+        notes: "Always drops its leaves in fall/winter, though later than many deciduous trees"
+      
+      - feature_id: "LEAF-ARRANGE-02" # Opposite
+        notes: "Leaves are always arranged alternately, never in pairs opposite each other"
+      
+      - feature_id: "FLOWER-TIME-01" # Spring flowering
+        notes: "Unlike most alders, never flowers in spring - only produces catkins in fall"
+      
+      - feature_id: "HABITAT-02" # Forests
+        notes: "Not naturalized in California forests, and would only be found in cultivated settings"
+
+  kid_friendly_identification:
+    primary_identifier: "Shiny, dark green leaves that have tiny teeth around the edges, and it makes flowers in the fall instead of spring!"
+    memorable_comparison: "The leaves look like shiny green potato chips with jagged edges, and its cone-like fruits look like tiny brown pinecones stuck to the branches"
+    touch_tip: "The leaves feel smooth and leathery, almost plastic-like when you touch them"
+    smell_tip: "The leaves don't have a strong smell, but if you gently scratch the twig, you might notice a mild, earthy scent"
+    fun_fact: "This tree is super rare in the wild! It only grows naturally in three tiny spots in the whole United States, and scientists think it used to grow everywhere but survived the Ice Age in just these three hiding spots!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, check if the tree is small (about as tall as a one-story house) and growing near water or in a wet area"
+        yes_next: 2
+        no_next: "Probably not a Seaside Alder - check trees that prefer drier locations"
+      
+      - step: 2
+        instruction: "Look at the leaves. Are they shiny dark green with tiny teeth around the edges, arranged alternately (not in pairs) on the branches?"
+        yes_next: 3
+        no_next: "Not a Seaside Alder - check other alders if leaves are duller or other trees if leaves are in pairs"
+      
+      - step: 3
+        instruction: "What time of year is it? If it's fall (September-October), do you see dangling, yellow-brown catkins (like tiny worms hanging down)?"
+        yes_next: 4
+        no_next: "If it's not fall, look for small, woody cone-like fruits on the branches about the size of your fingertip"
+      
+      - step: 4
+        instruction: "Do you see small woody cone-like fruits about the size of your fingertip, or catkins if it's fall?"
+        yes_next: "You found a Seaside Alder!"
+        no_next: "Might be a young Seaside Alder that hasn't made fruits yet, or another type of alder"
+
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New bright green leaves emerge and expand; no flowering occurs"
+      reproductive_activity: "Unlike other alders, no flowering happens in spring"
+      identification_tips: "Woody cone-like fruits from previous fall may still be present on branches"
+      kid_friendly_tip: "In spring, it grows new bright green leaves but doesn't make flowers yet - that comes in fall!"
+    
+    - season: "Summer"
+      visual_changes: "Leaves mature to glossy dark green with prominent veins; dense, rounded canopy forms"
+      reproductive_activity: "Flower buds begin to form late in the season"
+      identification_tips: "Glossy leaves are distinctive; lack of catkins differentiates from other alders that flowered in spring"
+      kid_friendly_tip: "Summer is when the leaves look their shiniest, like they've been polished!"
+    
+    - season: "Fall"
+      visual_changes: "Leaves remain green longer than many deciduous trees; minimal fall color before dropping"
+      reproductive_activity: "Male catkins elongate and release pollen; female flowers develop into new cone-like structures"
+      identification_tips: "Fall flowering is the most distinctive feature - yellow-brown dangling catkins appear September-October"
+      kid_friendly_tip: "Fall is this tree's special time! While other trees are changing colors, this one is making flowers - long dangling catkins that look like tiny worms hanging from branches"
+    
+    - season: "Winter"
+      visual_changes: "Leafless with distinctive woody cone-like fruits visible on branches"
+      reproductive_activity: "Dormant; cone-like fruits mature and remain attached"
+      identification_tips: "Smooth gray bark and persistent woody cone-like fruits are key winter identification features"
+      kid_friendly_tip: "In winter after the leaves fall, you can easily see the tiny brown 'pinecones' hanging on the branches"
+
+  confirmation_checklist:
+    - feature: "Glossy dark green, elliptical leaves with finely toothed margins"
+      reliability: "High"
+      visibility: "High - easily seen during growing season"
+    
+    - feature: "Alternate leaf arrangement (not opposite)"
+      reliability: "High"
+      visibility: "Medium - requires looking at branch pattern"
+    
+    - feature: "Smooth, gray to brown bark"
+      reliability: "Medium" 
+      visibility: "Medium - need to look at trunk and branches"
+    
+    - feature: "Fall flowering habit (September-October)"
+      reliability: "Very high"
+      visibility: "High in fall, not visible other seasons"
+    
+    - feature: "Woody cone-like fruits that persist through winter"
+      reliability: "High"
+      visibility: "Medium - visible close-up from fall through winter"
+    
+    - feature: "Small tree or large shrub form, often multi-stemmed"
+      reliability: "Medium"
+      visibility: "High - overall shape visible from distance"
+    
+    - feature: "Found in wet areas or irrigated landscape settings"
+      reliability: "High"
+      visibility: "High - location is an important clue"
+
+  look_alike_species:
+    - species: "Red Alder (Alnus rubra)"
+      differences: "Much larger tree (often 60-100 feet tall); flowers in spring; leaves less glossy; inner bark reddens when exposed to air"
+      identification_tip: "Red Alder is much taller and doesn't flower in fall; check for reddening when bark is scratched"
+    
+    - species: "White Alder (Alnus rhombifolia)"
+      differences: "Common in California; flowers in spring; leaves less glossy and more pointed; less tolerance for standing water"
+      identification_tip: "White Alder is more common in California and flowers in spring, not fall"
+    
+    - species: "Italian Alder (Alnus cordata)"
+      differences: "Heart-shaped leaves; larger size; spring flowering; more commonly planted in California landscapes"
+      identification_tip: "If the leaves are heart-shaped rather than oval/elliptical, it's probably Italian Alder"
+    
+    - species: "European Alder (Alnus glutinosa)"
+      differences: "Rounded leaves with notched tips; spring flowering; more common in cultivation"
+      identification_tip: "European Alder has distinctly notched leaf tips, almost as if someone took a small bite out of each leaf"
+
+  cultural_significance:
+    - culture: "Native American"
+      physical_uses:
+        - "Limited documented traditional uses due to its extremely restricted natural range"
+        - "Like other alders, may have been used for medicinal purposes where available"
+      symbolic_meaning:
+        - "May have represented adaptation and survival in challenging environments"
+        - "Could have been recognized as an indicator of reliable water sources"
+    
+    - culture: "Scientific Community"
+      physical_uses:
+        - "Used in research studying plant evolution and climate change adaptation"
+        - "Cultivated in botanical gardens for education and conservation purposes"
+      symbolic_meaning:
+        - "Represents the concept of glacial refugia - places where plants survived ice ages"
+        - "Symbolizes the importance of conserving rare species with limited distributions"
+    
+    - culture: "Modern Landscape Design"
+      physical_uses:
+        - "Used in wetland restoration projects to stabilize soil and improve water quality"
+        - "Planted in rain gardens and bioswales to help manage stormwater"
+      symbolic_meaning:
+        - "Exemplifies the growing appreciation for native and rare plant species in landscaping"
+        - "Represents the ecological value of plants that can thrive in difficult wet conditions"
+
+  physical_characteristics:
+    height: "15-30 feet"
+    width: "15-25 feet"
+    bark: "Smooth, thin, gray to brown, developing shallow fissures with age"
+    leaves: "Elliptical to oblong, glossy dark green, 2-4 inches long, finely toothed"
+    flowers: "Male catkins appear in fall (September-October), unusual for alders"
+    fruit: "Woody cone-like structures (strobiles) that persist through winter"
+    seeds: "Small, winged nutlets released from mature cone-like fruits"
+    growth_rate: "Moderate, typically 1-2 feet per year in good conditions"
+    lifespan: "40-60 years"
+    root_system: "Shallow, spreading, with nitrogen-fixing nodules"
+    suitable_for_public_spaces: true
+
+  conservation_status: 
+    status: "Globally rare (G3 - Vulnerable)"
+    threats: "Limited natural populations face habitat loss, stream channelization, and limited genetic diversity"
+    protection_efforts: "Protected in some nature preserves; cultivated in botanical gardens and arboretums for conservation"
+
+  range_within_california:
+    - "Not native to California"
+    - "Found only in cultivated settings such as botanical gardens and specialty collections"
+    - "Can adapt to various California regions when given adequate moisture"
+    - "Most likely to be found in demonstration gardens focused on wetland plants or rare species"
+
+  decision_tree_placement:
+    primary_split_features:
+      - feature_id: "LEAF-TYPE-01" # Deciduous
+      - feature_id: "FRUIT-TYPE-01" # Cone-like
+      - feature_id: "FLOWER-TIME-03" # Fall flowering
+      - feature_id: "HABITAT-WATER-01" # Riparian habitat
+    
+    confirmation_features:
+      - feature_id: "LEAF-EDGE-02" # Serrated
+      - feature_id: "TREE-SIZE-01" # Small tree
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-01", "HABITAT-WATER-01"] # Small size, Wet habitat
+      
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-EDGE-02", "LEAF-ARRANGE-01"] # Serrated leaves, Alternate arrangement
+      
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-01", "FLOWER-TIME-03"] # Cone-like fruits, Fall flowering (if in season)
+    
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["LEAF-ARRANGE-01", "FRUIT-TYPE-01", "HABITAT-WATER-01"]
+        notes: "Cone-like fruits from previous year may still be present; lack of spring catkins distinguishes from other alders"
+      
+      summer:
+        reliability: "Medium"
+        key_features: ["LEAF-EDGE-02", "LEAF-ARRANGE-01", "HABITAT-WATER-01"]
+        notes: "Glossy leaves are distinctive but may require comparison with other alders"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["FLOWER-TIME-03", "LEAF-TYPE-01", "FRUIT-TYPE-01"]
+        notes: "Fall flowering is unique and makes identification straightforward during September-October"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["FRUIT-TYPE-01", "TREE-SIZE-01", "HABITAT-WATER-01"]
+        notes: "Persistent cone-like fruits and growth habit in wet areas help with winter identification"
+
+  wildlife_value: 
+    - "Has symbiotic relationships with nitrogen-fixing bacteria in root nodules, improving soil fertility"
+    - "Seeds provide food for birds like finches, chickadees, and small mammals"
+    - "Foliage may be browsed by deer and other herbivores in its native range"
+    - "Provides nesting sites for birds and cover for small mammals"
+    - "In wetland settings, helps stabilize soil and reduce erosion"
+    - "Fall flowering provides pollen when many other plants have finished flowering, supporting late-season insects"

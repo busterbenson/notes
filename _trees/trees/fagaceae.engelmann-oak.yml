@@ -1,0 +1,283 @@
+tree:
+  common_name: "Engelmann Oak"
+  scientific_name: "Quercus engelmannii"
+  family: "Fagaceae"
+  
+  # Basic summary
+  summary: "A medium-sized oak with distinctive blue-gray leaves that have smooth or slightly wavy edges. Native to Southern California's foothills, it forms open woodlands with a broad, spreading crown and light gray bark that becomes increasingly furrowed with age."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Blue-gray leaves with smooth or slightly wavy edges; open, spreading crown"
+    secondary_markers: "Gray-brown furrowed bark; oblong acorns with shallow caps covering about 1/3 of nut"
+    seasonal_markers: "Semi-deciduous but maintains most leaves year-round; acorns mature in fall"
+    similar_species_differentiation: "Unlike Coast Live Oak, has smooth (not spiny) leaf edges and blue-gray (not dark green) leaves"
+  
+  # Core features
+  features:
+    always_true:
+      - feature_id: "LEAF-COMPLEX-01"  # Simple
+        notes: "Leaves are undivided, not compound"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves arranged alternately along stems"
+      
+      - feature_id: "LEAF-SHAPE-01"  # Oval
+        notes: "Oval to oblong leaf shape with rounded tips"
+      
+      - feature_id: "LEAF-EDGE-01"  # Entire
+        notes: "Leaf edges smooth or with small, shallow teeth"
+      
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        notes: "Gray to gray-brown bark"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Broad, rounded crown with spreading branches"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Native to Southern California"
+      
+      - feature_id: "ECO-WILD-01"  # Important for wildlife
+        notes: "Provides vital food and habitat for numerous animals"
+    
+    usually_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Generally maintains leaves year-round"
+        exceptions: "May lose some leaves during cold periods or drought, making it technically semi-deciduous"
+      
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Often develops a single main trunk, particularly in open areas"
+        exceptions: "Frequently develops multiple trunks, especially in response to fire or damage"
+      
+      - feature_id: "LEAF-COLOR-03"  # Blue-green
+        notes: "Distinctive blue-gray-green leaf coloration"
+        exceptions: "New growth may appear more silvery; color can vary with sun exposure"
+    
+    sometimes_true:
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        conditions: "Trees that have experienced fire or damage; trees in exposed locations"
+        notes: "Often forms multiple trunks from the base, creating a broad crown"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees before bark develops texture"
+        notes: "Young trees have relatively smooth bark"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Mature trees"
+        notes: "Develops vertically furrowed bark with age"
+      
+      - feature_id: "FRUIT-TYPE-01"  # Acorns present
+        conditions: "Mature trees during fall season"
+        notes: "Produces oblong acorns with shallow, warty cups covering about 1/3 of nut"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        conditions: "Mature specimens in average conditions"
+        notes: "Typically 25-50 feet tall, but can vary with conditions"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        conditions: "Established trees"
+        notes: "Well-adapted to seasonal drought once established"
+    
+    never_true:
+      - feature_id: "LEAF-EDGE-05"  # Spiny
+        notes: "Never has holly-like spines along leaf margins, unlike Coast Live Oak"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has broad leaves, not needles"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Has inconspicuous catkins, not showy flowers"
+      
+      - feature_id: "CONE-SIZE-01"  # Small cones
+        notes: "Produces acorns, not cones"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Blue-gray leaves with smooth edges"
+    memorable_comparison: "Leaves look like oval blue-gray paddle shapes, not spiky like other oak trees"
+    touch_tip: "Feel how thick and leathery the leaves are - they're tough like plastic and help the tree save water during hot summers"
+    smell_tip: "Crush a leaf gently to smell a mild woody scent"
+    fun_fact: "These trees are sometimes called 'Blue Oaks' because their special bluish leaves help them survive hot, dry summers. Some Engelmann Oaks are over 300 years old - they were growing before the United States was even a country!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the leaves. Are they blue-gray-green with smooth or only slightly wavy edges (not spiky)?"
+        yes_next: 2
+        no_next: "Not an Engelmann Oak - if leaves are dark green with spiky edges, check Coast Live Oak"
+      - step: 2
+        instruction: "Look at the tree shape. Is it medium-sized with a broad, open crown that lets light through?"
+        yes_next: 3
+        no_next: "Might not be an Engelmann Oak - check other oak species"
+      - step: 3
+        instruction: "Check where the tree is growing. Is it on a hillside or in a valley away from the immediate coast in Southern California?"
+        yes_next: "You found an Engelmann Oak!"
+        no_next: "Might be another oak species since Engelmann Oaks only grow in Southern California foothills"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaf growth emerges, slightly lighter and more silvery in color"
+      reproductive_activity: "Male catkins (pollen structures) appear, releasing yellow pollen"
+      identification_tips: "Look for hanging yellow-green catkins and new leaf growth"
+      kid_friendly_tip: "In spring, look for bright new leaves and hanging yellow 'tassels' that spread pollen"
+    
+    - season: "Summer" 
+      visual_changes: "Leaves reach full size with mature blue-gray-green color"
+      reproductive_activity: "Small acorns developing but still green"
+      identification_tips: "Blue-gray leaf color most distinctive; small developing acorns visible"
+      kid_friendly_tip: "Summer is when the leaves turn their special blue-gray color to help the tree save water"
+    
+    - season: "Fall"
+      visual_changes: "Acorns turn brown and mature; tree maintains most of its leaves"
+      reproductive_activity: "Acorns ripen and drop from tree"
+      identification_tips: "Look for fallen acorns beneath the tree; still maintains most leaves"
+      kid_friendly_tip: "Fall is acorn season! Look for acorns on the ground - they have caps that cover just the top like little hats"
+    
+    - season: "Winter"
+      visual_changes: "May lose some leaves during cold periods but generally stays leafy"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "More open appearance if some leaves drop; new buds forming"
+      kid_friendly_tip: "While other trees might lose all their leaves, Engelmann Oak keeps most of its leaves through winter"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Blue-gray-green leaves with smooth or slightly wavy edges"
+      reliability: "Very high"
+      visibility: "Easy - visible from a distance"
+    - feature: "Gray-brown furrowed bark on mature trees"
+      reliability: "High"
+      visibility: "Medium - need to be near the tree"
+    - feature: "Oblong acorns with caps covering about 1/3 of nut (if in season)"
+      reliability: "High"
+      visibility: "Medium - need to look closely"
+    - feature: "Open, spreading crown letting light through"
+      reliability: "Medium"
+      visibility: "Easy - visible from a distance"
+    
+  look_alike_species:
+    - species: "Coast Live Oak (Quercus agrifolia)"
+      differences: "Coast Live Oak has darker green leaves with spiny edges, more dense crown, and typically grows closer to the coast"
+      identification_tip: "If leaves are dark green with pointed, spiny edges, it's likely Coast Live Oak, not Engelmann Oak"
+    - species: "Interior Live Oak (Quercus wislizeni)"
+      differences: "Interior Live Oak has smaller, shinier dark green leaves with more pronounced teeth on the edges"
+      identification_tip: "Interior Live Oak leaves are shinier, darker green, and often more pointed than Engelmann Oak's blue-gray leaves"
+    - species: "Scrub Oak (Quercus berberidifolia)"
+      differences: "Scrub Oak is a shrub rather than a tree, rarely exceeding 15 feet, with more rigid, often prickly leaves"
+      identification_tip: "If it's shrubby and short rather than a full tree, it's likely Scrub Oak, not Engelmann Oak"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Kumeyaay"
+      physical_uses:
+        - "Harvested acorns as primary food staple using specialized techniques to leach bitter tannins"
+        - "Created specific grinding tools for oak acorn processing, often found near groves"
+        - "Used fallen branches as fuel for cooking fires"
+      symbolic_meaning:
+        - "Considered oak groves meeting places where tribal councils would gather"
+        - "Incorporated the tree's drought resistance into stories teaching resilience"
+        - "Used oak distribution to define territorial boundaries between bands"
+    
+    - culture: "Luiseño/Juaneño"
+      physical_uses:
+        - "Processed acorns into a nutritious flour for making porridge and flat bread"
+        - "Used oak wood for making tools requiring strength and heat resistance"
+        - "Harvested oak galls for medicine and natural dyes"
+      symbolic_meaning:
+        - "Held acorn harvesting ceremonies to mark seasonal transitions"
+        - "Considered certain old oak trees as sacred places for important rituals"
+        - "Included oaks in creation stories as providers of sustenance"
+    
+    - culture: "Cahuilla"
+      physical_uses:
+        - "Developed specialized storage structures for keeping acorns safe from pests"
+        - "Used oak bark tea as medicine for stomach problems and skin wounds"
+        - "Created specific recipes combining acorn flour with other native plants"
+      symbolic_meaning:
+        - "Named family groups after specific places where oak trees grew abundantly"
+        - "Used oak wood for ceremonial fires believed to carry prayers upward"
+        - "Regarded the oak's ability to survive drought as a lesson in perseverance"
+    
+  cultural_ecological_notes:
+    - "Engelmann Oak woodlands are among the most endangered vegetation communities in California"
+    - "The trees can live for 350+ years with trunks over 4 feet in diameter"
+    - "Provides critical habitat for numerous bird species including acorn woodpeckers and oak titmice"
+    - "Historical range has been reduced by approximately 75-90% due to development and agriculture"
+    
+  range_within_california:
+    - "Limited to Southern California, primarily in San Diego, Riverside, and Orange counties"
+    - "Most common in inland valleys and foothills east of the coast, at elevations of 500-4,000 feet"
+    - "Forms open woodlands rather than dense forests, often mixed with grasslands"
+    - "Prefers well-drained soils on gentle slopes and valley bottoms"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "25-50 feet"
+    growth_rate: "Slow"
+    crown_spread: "40-60 feet at maturity"
+    lifespan: "200-350 years in ideal conditions"
+    trunk_diameter: "Up to 4 feet in diameter at maturity"
+    root_system: "Deep taproot with extensive lateral roots"
+    toxicity: "Acorns contain tannins that are toxic raw but can be processed for food"
+  
+  conservation_status:
+    status: "Near Threatened (IUCN)"
+    threats: 
+      - "Urban and agricultural development destroying habitat"
+      - "Poor natural regeneration due to cattle grazing and non-native grass competition"
+      - "Oak pests and diseases including Gold-spotted Oak Borer"
+      - "Climate change impacts including prolonged drought and increased fire frequency"
+    protection_efforts:
+      - "Habitat protection through land trusts and preserves"
+      - "Regeneration projects with seedling protection"
+      - "Local ordinances protecting heritage oak trees"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-COLOR-03"  # Blue-green
+      - "feature_id: LEAF-EDGE-01"  # Entire
+    confirmation_features:
+      - "feature_id: FRUIT-TYPE-01"  # Acorns
+      - "feature_id: BARK-TEXT-02"  # Furrowed bark
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-02", "TREE-SIZE-02"]  # Rounded crown, medium tree
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-COLOR-03", "LEAF-EDGE-01"]  # Blue-green leaves, smooth edges
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-SHAPE-01", "FRUIT-TYPE-01"]  # Oval leaves, acorns if present
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-COLOR-03", "LEAF-EDGE-01"]
+        notes: "Look for new leaf growth and catkins"
+      
+      summer:
+        reliability: "Very high" 
+        key_features: ["LEAF-COLOR-03", "LEAF-EDGE-01", "TREE-FORM-02"]
+        notes: "Blue-gray color most distinctive; developing acorns may be visible"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["LEAF-COLOR-03", "LEAF-EDGE-01", "FRUIT-TYPE-01"]
+        notes: "Mature acorns present; maintains leaves while deciduous trees change color"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["LEAF-COLOR-03", "TREE-FORM-02"]
+        notes: "May lose some leaves but generally maintains most foliage"
+    misidentification_risks: 
+      - "Most commonly confused with Coast Live Oak, which has spiny, darker green leaves"
+      - "Interior Live Oak has smaller, shinier leaves with more pronounced teeth"
+      - "Scrub Oak is shrubby and shorter with more rigid leaves"
+      - "Oracle Oak (natural hybrid with Scrub Oak) shows intermediate characteristics"
+  
+  wildlife_value:
+    food_source:
+      - "Acorns provide critical food for birds like acorn woodpeckers, jays, and band-tailed pigeons"
+      - "Mammals including deer, squirrels, and mice rely on acorns for food"
+      - "Insect larvae developing in leaves and bark feed birds and other predators"
+    habitat_provided:
+      - "Cavities in older trees provide nesting sites for birds and shelter for mammals"
+      - "Branches support nests for hawks, owls, and songbirds"
+      - "Partially open canopy allows diverse understory plants to grow, creating layered habitat"
+    ecosystem_role: "Keystone species that supports dozens of wildlife species; creates woodland structure that allows diverse plants and animals to thrive"

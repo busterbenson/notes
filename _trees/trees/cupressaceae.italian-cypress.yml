@@ -1,0 +1,344 @@
+tree:
+  common_name: "Italian Cypress"
+  scientific_name: "Cupressus sempervirens"
+  family: "Cupressaceae"
+  
+  # Basic summary information
+  summary: "A very tall, skinny evergreen tree that looks like a dark green column or exclamation point. It has tiny overlapping scale-like leaves and smooth bark that cracks as it gets older. Often planted in rows as living fence posts or to make gardens look fancy."
+  
+  # Identification priority
+  identification_path:
+    primary_markers: "Very tall, narrow shape like a skinny column or green rocket; branches grow straight up against the trunk"
+    secondary_markers: "Tiny overlapping scale-like leaves; dark green to blue-green color; rounded cones about the size of a golf ball"
+    seasonal_markers: "Stays the same dark green all year with little seasonal change"
+    similar_species_differentiation: "Much skinnier than other cypress trees; grows straight up like a green pencil, while most other conifers spread out more"
+  
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its leaves all year round without changing color"
+        
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        notes: "Tiny overlapping leaves that look like fish scales"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Small leaves grow in pairs facing each other"
+      
+      - feature_id: "TREE-FORM-04"  # Columnar form
+        notes: "Grows tall and skinny like a green pencil or rocket"
+      
+      - feature_id: "BRANCH-ANGLE-02"  # Ascending branches
+        notes: "Branches grow upward close to the trunk"
+      
+      - feature_id: "LEAF-COLOR-01"  # Dark green
+        notes: "Rich dark green leaves that sometimes look a bit bluish"
+      
+      - feature_id: "CONE-SHAPE-01"  # Round cones
+        notes: "Round or egg-shaped cones with bumpy scales"
+      
+      - feature_id: "NEEDLE-ARRANGE-08"  # Flattened spray needles
+        notes: "Scale-like leaves in flat, overlapping patterns"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Can grow up to 60-80 feet tall (as high as an 8-story building)"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        notes: "Leaves smell spicy and fresh when crushed"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        notes: "Native to southern Europe (especially Italy) and western Asia, brought to California by people"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        notes: "Can survive with very little water once established"
+      
+      - feature_id: "ECO-LIFE-01"  # Long-lived
+        notes: "Can live for hundreds of years in the right conditions"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk"
+        exceptions: "Occasionally has multiple trunks if damaged when young"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Bark is fairly smooth, especially on younger parts"
+        exceptions: "Gets more furrowed and rough as it ages"
+      
+      - feature_id: "CONE-SIZE-02"  # Medium cones
+        notes: "Produces cones about the size of a golf ball (1-2 inches)"
+        exceptions: "Cones may be smaller on stressed trees or in poor conditions"
+    
+    sometimes_true:
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Older trees, especially at the base"
+        notes: "Bark develops vertical cracks and shallow furrows with age"
+      
+      - feature_id: "BARK-COLOR-04"  # Brown bark
+        conditions: "Older trees"
+        notes: "Bark turns more brown-gray with age"
+      
+      - feature_id: "CONE-COLOR-01"  # Gray-brown cones
+        conditions: "Mature cones"
+        notes: "Cones start green but turn gray-brown when ripe"
+      
+      - feature_id: "LEAF-COLOR-03"  # Blue-green
+        conditions: "Some varieties and growing conditions"
+        notes: "Some trees have more blue-green foliage, especially certain varieties"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "When planted in landscapes"
+        notes: "Often planted in cities and towns as ornamental trees"
+      
+      - feature_id: "HABITAT-WATER-03"  # Dry slope habitat
+        conditions: "Well-drained soils"
+        notes: "Thrives on dry hillsides with good drainage"
+      
+      - feature_id: "GEO-REGION-03"  # Southern California
+        conditions: "Widely planted in southern California"
+        notes: "Common in Southern California landscapes"
+      
+      - feature_id: "GEO-REGION-02"  # Central California
+        conditions: "Often planted in gardens and landscapes"
+        notes: "Found in Central California in gardens and along roads"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "Planted in warmer areas of Northern California"
+        notes: "Can be found in Northern California in protected areas"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all its leaves in fall"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Only makes small cones, not colorful flowers"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Never develops a rounded shape; stays column-like"
+      
+      - feature_id: "TREE-FORM-03"  # Weeping form
+        notes: "Branches grow upward, never droop down"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Never has thorns or sharp points on branches"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Not originally from California; brought from Europe"
+      
+      - feature_id: "LEAF-FORM-01"  # Simple broadleaf
+        notes: "Has tiny scales, not broad leaves"
+  
+  # Kid-friendly identification - expanded with open-ended, creative descriptions
+  kid_friendly_identification:
+    primary_identifier: "Super skinny, tall tree that looks like a green rocket or pencil pointing to the sky"
+    memorable_comparison: "Looks like a soldier standing at attention - tall, straight, and never spreading out"
+    touch_tip: "The leaves feel like tiny bumpy scales, almost like a bumpy plastic toy"
+    smell_tip: "Crush a tiny bit of foliage to smell a fresh, spicy scent like cleaning supplies or air freshener"
+    fun_fact: "Italian Cypress trees can live for 1,000 years! Some in Italy are as old as castles and were planted when knights and kings ruled the land."
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the shape. Is it super skinny and tall like a green pencil standing on end?"
+        yes_next: 2
+        no_next: "Not an Italian Cypress - look for trees that spread out more"
+      - step: 2
+        instruction: "Look closely at the leaves. Are they tiny overlapping scales instead of needles or flat leaves?"
+        yes_next: 3
+        no_next: "Not an Italian Cypress - check for trees with different leaf types"
+      - step: 3
+        instruction: "Check if the branches grow upward close to the trunk instead of spreading out"
+        yes_next: 4
+        no_next: "Not an Italian Cypress - try another cypress with spreading branches"
+      - step: 4
+        instruction: "Very gently crush a tiny bit of foliage between your fingers. Does it smell fresh and spicy?"
+        yes_next: "You found an Italian Cypress!"
+        no_next: "This might be a different type of columnar evergreen"
+  
+  regional_notes:
+    - region: "Southern California"
+      notes: "Very common in landscapes; grows well in hot, dry conditions"
+      locations: "Found in formal gardens, along driveways, and in cemeteries"
+    - region: "Central California"
+      notes: "Often planted as landscaping or windbreaks"
+      locations: "Common in parks, gardens, and formal landscapes"
+    - region: "Northern California"
+      notes: "Less common but found in warmer, drier areas"
+      locations: "Mostly in protected areas with good drainage"
+      
+  confirmation_checklist:
+    - feature: "Extremely narrow, columnar shape"
+      reliability: "Very high"
+      visibility: "Easy to see from far away"
+    - feature: "Tiny scale-like leaves in tight formations"
+      reliability: "High"
+      visibility: "Need to look closely"
+    - feature: "Branches grow upward, hugging the trunk"
+      reliability: "Very high"
+      visibility: "Easy to see from nearby"
+    - feature: "Round, woody cones (if present)"
+      reliability: "Medium"
+      visibility: "Only visible on mature trees"
+    
+  look_alike_species:
+    - species: "Arizona Cypress (Cupressus arizonica)"
+      differences: "Arizona Cypress is more blue-gray and usually wider/less columnar; often has whitish resin dots on its cones"
+      identification_tip: "If it's more blue-gray and not perfectly columnar, it's likely Arizona Cypress"
+    - species: "Leyland Cypress (× Cuprocyparis leylandii)"
+      differences: "Leyland Cypress has a more pyramidal shape that's wider at the base; softer-feeling foliage"
+      identification_tip: "If it gets wider at the bottom instead of being the same width all the way up, it's probably Leyland Cypress"
+    - species: "Eastern Red Cedar (Juniperus virginiana)"
+      differences: "Eastern Red Cedar has blue berry-like cones instead of woody round cones; often more pyramidal in shape"
+      identification_tip: "Look for blue berries instead of woody cones, and a less perfect column shape"
+      
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New growth appears as slightly lighter green at branch tips"
+      reproductive_activity: "Produces small pollen cones that release yellow pollen"
+      identification_tips: "The contrast between new and old growth can be visible"
+      kid_friendly_tip: "Look for tiny yellow bumps that make pollen dust if you tap them (but don't breathe it in!)"
+    
+    - season: "Summer" 
+      visual_changes: "Foliage is consistent dark green throughout"
+      reproductive_activity: "Female cones begin to develop if pollinated"
+      identification_tips: "Column shape stands out against other garden trees"
+      kid_friendly_tip: "Notice how it stays the same dark green while other trees might fade in the summer heat"
+    
+    - season: "Fall"
+      visual_changes: "Stays the same dark green while other trees change color"
+      reproductive_activity: "Cones continue to mature, changing from green to brown"
+      identification_tips: "Distinctive among trees that are changing color"
+      kid_friendly_tip: "When other trees turn yellow, orange, and red, the Italian Cypress stays dark green"
+    
+    - season: "Winter"
+      visual_changes: "No change in appearance; remains evergreen"
+      reproductive_activity: "Cones may open to release seeds"
+      identification_tips: "Stands out against bare deciduous trees"
+      kid_friendly_tip: "Looks exactly the same as in summer while many other trees lose their leaves"
+      
+  cultural_ecological_notes:
+    - "Planted as windbreaks because they can block wind like a wall"
+    - "Often used in formal gardens and to mark entrances or line driveways"
+    - "Very common in cemeteries as symbols of eternal life"
+    - "Needs very little water once established, making it good for dry California gardens"
+    - "Provides nesting sites for birds but not much food for wildlife"
+    
+  range_within_california:
+    - "Planted throughout California in gardens and landscapes"
+    - "Grows best in areas with hot, dry summers and mild winters"
+    - "Can be found in most urban and suburban areas"
+    - "Thrives in USDA Hardiness Zones 7-10 in California"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Ancient Roman"
+      physical_uses:
+        - "Used wood for building small items that needed to resist rotting"
+        - "Planted as windbreaks to protect crops and gardens"
+        - "Made special boxes for important items from the fragrant wood"
+      symbolic_meaning:
+        - "Associated with Pluto, the god of the underworld, because of their dark color"
+        - "Planted near tombs as symbols of mourning and eternal life"
+        - "The tall straight shape symbolized the path between earth and heaven"
+        - "Used branches at funerals to honor the dead"
+    
+    - culture: "Renaissance Italian"
+      physical_uses:
+        - "Carved the wood to make musical instruments like lutes and harpsichords"
+        - "Used to create formal garden designs, especially in fancy villa gardens"
+        - "Planted along roads and villa entrances to create impressive avenues"
+      symbolic_meaning:
+        - "Represented perfect formal order and human control over nature"
+        - "Seen as symbols of welcome and protection for visitors"
+        - "Their vertical shape symbolized reaching toward heaven and eternal life"
+        - "Used in paintings as symbols of civilized, ordered landscapes"
+    
+    - culture: "Mediterranean Traditional"
+      physical_uses:
+        - "Used leaves and young branches to make healing teas for coughs"
+        - "Burned the wood for its pleasant smell during special ceremonies"
+        - "Made fence posts and tool handles from the rot-resistant wood"
+      symbolic_meaning:
+        - "Symbolized protection and watchfulness due to their sentinel-like appearance"
+        - "Connected with grief and remembrance, often planted in memorial gardens"
+        - "The everlasting green color represented immortality and resilience"
+    
+    - culture: "California Landscape"
+      physical_uses:
+        - "Planted to create living walls for privacy and noise reduction"
+        - "Used as dramatic vertical accents in garden design"
+        - "Planted in rows to mark property boundaries and create windbreaks"
+      symbolic_meaning:
+        - "Represents Mediterranean elegance and European garden traditions"
+        - "Often associated with formal, high-status gardens and estates"
+        - "The dramatic shape symbolizes sophistication and precision in landscape design"
+        - "In cemeteries, represents eternal life and the journey of the soul"
+    
+  # Additional physical characteristics not captured in features
+  physical_characteristics:
+    height_range: "30-60 feet (as tall as a 6-story building)"
+    growth_rate: "Moderate, about 1-2 feet per year when young"
+    crown_spread: "Only 3-5 feet wide (about as wide as a doorway)"
+    lifespan: "Can live 150+ years, with some specimens over 1,000 years old"
+    trunk_diameter: "1-2 feet across when fully grown (about as wide as a dinner plate)"
+    root_system: "Deep taproot with spreading side roots"
+    toxicity: "Not poisonous, but some people may get skin irritation from the sap"
+    
+  conservation_status:
+    status: "Not threatened in cultivation; secure status"
+    threats: 
+      - "Susceptible to cypress canker fungus that can kill trees"
+      - "Can be damaged by severe cold in northern areas"
+      - "May face challenges with increasing drought in some areas"
+    protection_efforts:
+      - "Selection of disease-resistant varieties for planting"
+      - "Research into drought tolerance and disease resistance"
+      - "In its native Mediterranean habitat, some old groves are protected as cultural heritage"
+    
+  # Decision tree mapping - helps with algorithm creation
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: LEAF-FORM-05"  # Scale-like leaves
+      - "feature_id: TREE-FORM-04"  # Columnar form
+    confirmation_features:
+      - "feature_id: SENSORY-SMELL-01"  # Aromatic leaves
+      - "feature_id: CONE-SHAPE-01"  # Round cones
+      - "feature_id: BRANCH-ANGLE-02"  # Ascending branches
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-04", "LEAF-TYPE-02", "TREE-SIZE-03"]  # Columnar form, evergreen, tall tree
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-FORM-05", "LEAF-COLOR-01", "BRANCH-ANGLE-02"]  # Scale-like leaves, dark green, ascending branches
+      - distance: "close_inspection"
+        features_to_check: ["SENSORY-SMELL-01", "LEAF-ARRANGE-02", "NEEDLE-ARRANGE-08"]  # Aromatic, leaf arrangement, flattened sprays
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["TREE-FORM-04", "LEAF-FORM-05", "LEAF-TYPE-02"]
+        notes: "Columnar shape and scale-like leaves are consistent identifiers"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["TREE-FORM-04", "LEAF-COLOR-01", "LEAF-FORM-05"]
+        notes: "Dark green color and narrow form stand out in summer landscapes"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["TREE-FORM-04", "LEAF-TYPE-02", "LEAF-COLOR-01"]
+        notes: "Stands out dramatically when deciduous trees change color"
+      
+      winter:
+        reliability: "Very high"
+        key_features: ["TREE-FORM-04", "LEAF-TYPE-02", "TREE-SIZE-03"]
+        notes: "Extremely distinctive when deciduous trees are bare"
+    misidentification_risks: "Most often confused with other columnar evergreens like Leyland Cypress or Arizona Cypress"
+
+  wildlife_value:
+    nesting_sites: "Dense foliage provides protected nesting sites for small birds"
+    food_source: "Limited food value; small amounts of seeds eaten by some birds"
+    shelter: "Provides year-round shelter from weather and predators for small birds"
+    ecological_notes: "Not as valuable for wildlife as native trees, but still provides some habitat value in urban areas"
+    
+  propagation_information:
+    growing_conditions: "Prefers full sun and well-drained soil"
+    water_needs: "Drought-tolerant once established; needs regular water when young"
+    planting_tips: "Plant at least 3 feet apart when creating a hedge or screen"
+    maintenance: "Needs very little pruning to maintain its natural columnar shape"
+    special_notes: "Can suffer from overwatering; plant in a spot with good drainage"

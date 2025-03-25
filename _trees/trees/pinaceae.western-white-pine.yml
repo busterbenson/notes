@@ -1,0 +1,284 @@
+tree:
+  common_name: "Western White Pine"
+  scientific_name: "Pinus monticola"
+  family: "Pinaceae"
+  
+  # Basic summary information
+  summary: "A tall, straight-trunked pine tree with bluish-green needles in bundles of five, slender cylindrical cones, and smooth gray bark when young that develops square plates with age. It grows in mountain forests and has a symmetrical, conical crown."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Needles in bundles of five, straight, slender, and bluish-green; cylindrical cones 5-10 inches long; symmetrical crown with regular branching pattern"
+    secondary_markers: "Smooth gray bark on young trees that develops into square plates; straight trunk; relatively thin, flexible needles compared to other pines"
+    seasonal_markers: "Minimal seasonal change as an evergreen; new growth in spring appears as light green 'candles'"
+    similar_species_differentiation: "Unlike Sugar Pine, has smaller cones without curved scales; unlike Whitebark Pine, grows taller with a straighter trunk and has longer cones; unlike Torrey Pine, has much thinner, more delicate needles"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles year-round"
+        
+      - feature_id: "NEEDLE-ARRANGE-04"  # Needles in fives
+        notes: "Always has five needles per bundle (fascicle)"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Produces hard, woody seed cones"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Native to mountain forests of California and the Pacific Northwest"
+      
+      - feature_id: "HABITAT-LOC-02"  # Mountain habitat
+        notes: "Primarily grows in mountain forests"
+      
+      - feature_id: "NEEDLE-FEAT-02"  # Soft flexible
+        notes: "Needles are relatively soft and flexible compared to many pines"
+
+    usually_true:
+      # Features that are primarily true, but have notable exceptions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with a single straight main trunk"
+        exceptions: "May develop multiple trunks after damage or in harsh conditions"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Usually grows to 100-150 feet tall at maturity"
+        exceptions: "May be shorter at higher elevations or in poor growing conditions"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Forms a symmetrical, conical crown when young and middle-aged"
+        exceptions: "Old trees may develop a flatter or more irregular crown"
+      
+      - feature_id: "CONE-SIZE-03"  # Large cones
+        notes: "Cones typically 5-10 inches long"
+        exceptions: "Size can vary with growing conditions"
+
+    sometimes_true:
+      # Features that vary with age, season, or conditions
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees"
+        notes: "Bark is relatively smooth and gray when young"
+      
+      - feature_id: "BARK-TEXT-04"  # Plated bark
+        conditions: "Mature trees"
+        notes: "Bark develops distinctive square or rectangular plates with age"
+      
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        conditions: "Typical bark color"
+        notes: "Bark is usually grayish to gray-brown"
+      
+      - feature_id: "NEEDLE-COLOR-03"  # Blue-green
+        conditions: "Typical needle color"
+        notes: "Needles often have a bluish-green color"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        conditions: "When needles are crushed"
+        notes: "Needles release a sweet pine scent when crushed"
+      
+      - feature_id: "GEO-ELEV-03"  # High elevation
+        conditions: "Typical growing range"
+        notes: "Often found at elevations between 4,000-10,000 feet"
+
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all needles seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Always has five needles per bundle, never two"
+      
+      - feature_id: "NEEDLE-ARRANGE-03"  # Needles in threes
+        notes: "Always has five needles per bundle, never three"
+      
+      - feature_id: "CONE-POS-01"  # Upright cones
+        notes: "Cones hang down or point outward, never upright"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A tall, straight pine tree with bluish-green needles that come in bundles of five and long, slender cones"
+    memorable_comparison: "The needles look like thin blue-green paintbrushes with exactly five bristles in each group, and the cones are shaped like cucumbers hanging from the branches"
+    touch_tip: "The needles are soft and flexible - gently run your fingers along them and notice they don't poke you like some pine needles do"
+    smell_tip: "Carefully smell the needles for a sweet, clean pine scent (no need to crush them)"
+    fun_fact: "Western White Pine trees can live for over 500 years and grow as tall as a 15-story building! They're sometimes called the 'aristocrat of pines' because they grow so straight and tall with such beautiful blue-green needles. Unfortunately, many of these trees have gotten sick from a disease called white pine blister rust that people accidentally brought from Europe over 100 years ago. Scientists and forest rangers are working hard to find and grow trees that can fight off this disease!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, check the needles. Do they grow in bundles of exactly 5 (five needles connected at the base) and are they thin, straight, and bluish-green?"
+        yes_next: 2
+        no_next: "Not a Western White Pine - if there are 2 or 3 needles per bundle, it's another pine species; if needles are very thick, check Sugar Pine or Torrey Pine"
+      - step: 2
+        instruction: "Look at the tree's overall shape. Is it tall and straight with a regular, cone-shaped crown and branches that grow in distinct whorls around the trunk?"
+        yes_next: 3
+        no_next: "Might be another five-needle pine - if very irregular or growing at very high elevations, check Whitebark Pine"
+      - step: 3
+        instruction: "If you can see the cones, are they long (5-10 inches), slender, and straight (not curved)? Is the tree growing in a mountain forest?"
+        yes_next: "You found a Western White Pine!"
+        no_next: "If the cones are much larger with curved scales, it might be a Sugar Pine; if they're smaller, check Whitebark Pine"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New needle growth appears as light green 'candles' at branch tips; male pollen cones produce yellow pollen"
+      reproductive_activity: "Male cones release pollen; female cones begin development"
+      identification_tips: "Look for bright green new growth at branch tips and small yellow pollen cones"
+      kid_friendly_tip: "In spring, look for light green 'candles' growing at the tips of branches - these will become new needles"
+    
+    - season: "Summer" 
+      visual_changes: "New needles mature to bluish-green; developing cones become visible"
+      reproductive_activity: "Young cones grow larger and begin to develop woody scales"
+      identification_tips: "Young green to purple cones becoming visible; bluish-green needles distinctive"
+      kid_friendly_tip: "By summer, the new needles have grown out and you can see green banana-shaped baby cones forming"
+    
+    - season: "Fall"
+      visual_changes: "Little visible change; some older needles may yellow and drop"
+      reproductive_activity: "Cones mature, open, and release seeds with winged attachments"
+      identification_tips: "Mature open cones may be visible before falling; some needle yellowing"
+      kid_friendly_tip: "In fall, the cones open up like wooden flowers to release seeds with little wings that spin as they fly away"
+    
+    - season: "Winter"
+      visual_changes: "No significant changes; remains evergreen"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Evergreen form stands out against winter landscape; symmetrical crown distinctive"
+      kid_friendly_tip: "In winter, it keeps its blue-green needles when other trees lose their leaves"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Needles in bundles of five"
+      reliability: "Very high"
+      visibility: "Easy to observe"
+    - feature: "Thin, straight, bluish-green needles"
+      reliability: "High"
+      visibility: "Easy to observe"
+    - feature: "Cylindrical cones 5-10 inches long"
+      reliability: "High"
+      visibility: "Medium - need cones to be present"
+    - feature: "Square-plated bark on mature trees"
+      reliability: "Medium"
+      visibility: "Easy to observe on mature specimens"
+    
+  look_alike_species:
+    - species: "Sugar Pine (Pinus lambertiana)"
+      differences: "Sugar Pine has much longer cones (10-20 inches) with distinctive curved scales, and generally grows larger"
+      identification_tip: "Western White Pine cones are smaller and straight, not curved like Sugar Pine's distinctive long, pendant cones"
+    - species: "Whitebark Pine (Pinus albicaulis)"
+      differences: "Whitebark Pine has shorter, stouter needles, much shorter cones, and grows as a shorter, often multi-stemmed tree at higher elevations"
+      identification_tip: "Western White Pine grows taller and straighter with longer cones than Whitebark Pine"
+    - species: "Limber Pine (Pinus flexilis)"
+      differences: "Limber Pine has stouter, more rigid needles, shorter cones, and extremely flexible branches that can be tied in knots without breaking"
+      identification_tip: "Western White Pine has more slender, bluish needles and longer cones than Limber Pine"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Nez Perce"
+      physical_uses:
+        - "Harvested pine nuts as a supplementary food source"
+        - "Collected pitch for starting fires and sealing containers"
+        - "Made a tea from needles as a source of vitamin C"
+        - "Used the inner bark as an emergency food in times of scarcity"
+      symbolic_meaning:
+        - "Tall, straight growth represented reaching toward the sky world"
+        - "Associated with strength and adaptability to harsh mountain environments"
+        - "Featured in stories teaching about preparation and resilience"
+    
+    - culture: "Klamath and Modoc"
+      physical_uses:
+        - "Used pitch as a healing salve for wounds and skin conditions"
+        - "Collected seeds as a seasonal food"
+        - "Created shelter in winter by using boughs for bedding"
+        - "Made a medicinal tea from young needles for treating colds"
+      symbolic_meaning:
+        - "Respected for its long life and ability to weather mountain storms"
+        - "Seeds represented abundance and preparation for winter"
+        - "Used as a directional marker in traditional navigation"
+    
+    - culture: "Early Forest Rangers and Conservationists"
+      physical_uses:
+        - "Valued for high-quality lumber used in doors, windows, and furniture"
+        - "Used for making match sticks due to straight grain and even burning qualities"
+        - "Planted in reforestation projects for wildlife habitat and watershed protection"
+      symbolic_meaning:
+        - "Became a symbol of the mountain West and high-elevation forests"
+        - "Represented the challenge of forest conservation as blister rust disease spread"
+        - "Featured in early U.S. Forest Service education and conservation materials"
+    
+  cultural_ecological_notes:
+    - "Important component of mixed-conifer mountain forests"
+    - "Provides food and habitat for numerous birds and small mammals"
+    - "Highly susceptible to white pine blister rust, an introduced fungal disease"
+    - "Seeds are an important food source for Clark's nutcrackers and other wildlife"
+    - "Plays a role in natural forest succession after fires and other disturbances"
+    
+  range_within_california:
+    - "Found throughout the Sierra Nevada range, primarily at middle to upper elevations"
+    - "Occurs in the Klamath Mountains and Cascades in northern California"
+    - "Grows in scattered locations in the North Coast Ranges"
+    - "Typically found between 4,000-10,000 feet elevation"
+    - "Prefers well-drained soils in mixed conifer forests"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "100-150 feet at maturity; occasionally to 200 feet"
+    growth_rate: "Moderate, faster in youth and slower with age"
+    crown_spread: "20-35 feet at maturity"
+    lifespan: "350-500+ years"
+    trunk_diameter: "2-4 feet at maturity"
+    root_system: "Moderately deep with widespread lateral roots"
+    toxicity: "Not toxic to humans or animals"
+  
+  conservation_status:
+    status: "Vulnerable due to disease but not threatened overall"
+    threats: 
+      - "White pine blister rust (introduced fungal disease)"
+      - "Mountain pine beetle outbreaks"
+      - "Climate change potentially reducing suitable habitat"
+      - "High-severity fires"
+    protection_efforts:
+      - "Selective breeding programs for rust-resistant trees"
+      - "Conservation of natural stands in national parks and wilderness areas"
+      - "Research into disease resistance and climate adaptation"
+      - "Seed collection and preservation of genetic diversity"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: NEEDLE-ARRANGE-04"  # Needles in fives
+    confirmation_features:
+      - "feature_id: NEEDLE-FEAT-02"  # Soft flexible needles
+      - "feature_id: HABITAT-LOC-02"  # Mountain habitat
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-01", "LEAF-TYPE-02"]  # Pyramidal shape, evergreen
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-ARRANGE-04", "NEEDLE-COLOR-03"]  # Needles in fives, blue-green
+      - distance: "close_inspection"
+        features_to_check: ["NEEDLE-FEAT-02", "CONE-SIZE-03"]  # Soft flexible needles, large cones
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-04", "TREE-FORM-01"]
+        notes: "New growth candles and pollen cones visible"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["NEEDLE-ARRANGE-04", "NEEDLE-COLOR-03"]
+        notes: "Developing cones may be visible"
+      
+      fall:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-04", "CONE-SIZE-03"]
+        notes: "Mature cones may be present before falling"
+      
+      winter:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-04", "TREE-FORM-01"]
+        notes: "Evergreen form and needle arrangement distinctive year-round"
+    misidentification_risks: 
+      - "Could be confused with other five-needle pines, particularly Sugar Pine, Whitebark Pine, or Limber Pine"
+      - "Young trees before developing distinctive bark and form may be harder to distinguish"
+      - "In areas where ranges overlap, careful examination of cones and needle characteristics is needed"
+  
+  wildlife_value:
+    - "Seeds eaten by Clark's nutcracker, chickadees, nuthatches, and other birds"
+    - "Squirrels and chipmunks harvest and cache seeds"
+    - "Provides nesting habitat for numerous bird species"
+    - "Bark and wood provide habitat for insects, which in turn feed woodpeckers and other birds"
+    - "Provides cover and thermal protection for deer and other mammals in winter"

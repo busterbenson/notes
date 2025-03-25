@@ -1,0 +1,284 @@
+tree:
+  common_name: Trident Maple
+  scientific_name: Acer buergerianum
+  family: Sapindaceae
+  native: false
+
+  summary: Trident Maple is a small to medium-sized deciduous tree known for its distinctive three-lobed leaves resembling a trident or pitchfork. Native to eastern Asia, it develops attractive exfoliating bark with age, revealing orange-brown inner layers. While not native to California, it's valued in landscapes for its moderate size, excellent fall color ranging from yellow to red, tolerance of urban conditions, and year-round ornamental qualities. Popular as both a street tree and specimen planting, it's also prized in bonsai cultivation for its small leaves, interesting bark texture, and responsive nature to pruning techniques.
+
+  identification_path:
+    primary_markers: "Distinctive three-lobed leaves shaped like a pitchfork or trident with pointed tips; leaves grow in opposite pairs"
+    secondary_markers: "Exfoliating bark on mature trees revealing orange-brown inner layers; small to medium size with neat, rounded form"
+    seasonal_markers: "Orange to red fall color; reddish flowers in spring; paired winged seeds (helicopter seeds) in summer and fall"
+    similar_species_differentiation: "Unlike Japanese Maple, has just three lobes with minimal serration; unlike Paperbark Maple, has simple leaves not compound leaves with three leaflets"
+
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01" # Deciduous
+        notes: "Drops all its leaves in fall after showing colorful orange to red display"
+      
+      - feature_id: "LEAF-ARRANGE-02" # Opposite
+        notes: "Leaves grow in pairs directly across from each other on the branches"
+      
+      - feature_id: "LEAF-SHAPE-05" # Lobed
+        notes: "Leaves have three distinct pointed lobes resembling a trident or pitchfork"
+      
+      - feature_id: "FRUIT-TYPE-08" # Paired samaras
+        notes: "Produces pairs of winged seeds (samaras) that spin like helicopters when they fall"
+    
+    usually_true:
+      - feature_id: "TREE-SIZE-02" # Medium (30-50 feet)
+        notes: "Typically grows 20-30 feet tall, occasionally reaches 40-45 feet in ideal conditions"
+        exceptions: "Often smaller in containers or when grown as bonsai"
+      
+      - feature_id: "TREE-TRUNK-02" # Multi-trunked
+        notes: "Often develops multiple trunks, especially when trained that way"
+        exceptions: "Can have a single trunk when pruned for street tree use or formally trained"
+      
+      - feature_id: "LEAF-FALL-03" # Orange fall color
+        notes: "Leaves typically turn orange in autumn"
+        exceptions: "Fall color varies from yellow to red depending on climate and growing conditions"
+      
+      - feature_id: "BARK-TEXT-03" # Peeling bark
+        notes: "Mature trees develop exfoliating bark that peels in thin flakes"
+        exceptions: "Young trees have smooth gray bark without peeling"
+      
+      - feature_id: "HABITAT-05" # Planted in landscapes
+        notes: "In California, found in planned landscapes, not growing wild"
+        exceptions: "Not typically found in all landscape settings"
+    
+    sometimes_true:
+      - feature_id: "TREE-SIZE-01" # Small (under 30 feet)
+        conditions: "When young or grown in containers or as bonsai"
+        notes: "Can remain under 20 feet tall in some landscape situations"
+      
+      - feature_id: "TREE-TRUNK-01" # Single trunk
+        conditions: "When trained as a standard tree form"
+        notes: "Street tree specimens are often pruned to maintain a single trunk"
+      
+      - feature_id: "LEAF-FALL-02" # Red fall color
+        conditions: "In certain climate conditions or specific cultivars"
+        notes: "Some trees develop bright red rather than orange fall color"
+      
+      - feature_id: "HABITAT-03" # Urban areas
+        conditions: "When used as street trees or in urban parks"
+        notes: "Tolerates urban conditions well, making it suitable for city plantings"
+      
+      - feature_id: "SENSORY-SMELL-01" # Aromatic leaves
+        conditions: "When crushed or during hot days"
+        notes: "Leaves may have a mild, pleasant aroma when crushed"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02" # Evergreen
+        notes: "Always drops its leaves in fall, never retains them through winter"
+      
+      - feature_id: "LEAF-COMPLEX-02" # Compound pinnate
+        notes: "Always has simple leaves (not compound with multiple leaflets)"
+      
+      - feature_id: "TREE-SIZE-03" # Large (50-100 feet)
+        notes: "Never reaches heights above 50 feet even in ideal conditions"
+      
+      - feature_id: "FRUIT-TYPE-01" # Cones
+        notes: "As a flowering tree, never produces cones (which are only found on conifers)"
+
+  kid_friendly_identification:
+    primary_identifier: "Leaves with three points that look like tiny pitchforks or the letter 'W' with a stem"
+    memorable_comparison: "The tree looks like it's wearing thousands of tiny wizard tridents for leaves!"
+    touch_tip: "The leaves feel smooth with just a few tiny teeth on the edges, and older trees have bark that peels like paper"
+    smell_tip: "If you gently crush a leaf, it might have a light, sweet maple smell (but it's not very strong)"
+    fun_fact: "This tree is a superhero of the plant world - it can grow in tough city conditions where other trees would get sick, and it's also a favorite for making bonsai (tiny trees in pots) because its leaves stay small and neat!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, check if the leaves grow in pairs directly across from each other on the branch (opposite arrangement)"
+        yes_next: 2
+        no_next: "Not a Trident Maple - check trees with alternating leaves"
+      
+      - step: 2
+        instruction: "Look at the leaf shape. Does each leaf have exactly three pointed tips like a pitchfork or the letter 'W'?"
+        yes_next: 3
+        no_next: "Not a Trident Maple - check Japanese Maple if leaves have more than three points"
+      
+      - step: 3
+        instruction: "Is the tree small to medium sized with a neat, rounded shape (not very tall or skinny)?"
+        yes_next: 4
+        no_next: "Might be another maple species that grows larger"
+      
+      - step: 4
+        instruction: "If it's fall, are the leaves turning yellow-orange to red? If it's an older tree, does the bark peel in thin flakes showing orange-brown underneath?"
+        yes_next: "You found a Trident Maple!"
+        no_next: "Might still be a Trident Maple if it's young or not fall season yet"
+
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaves emerge with a reddish tint before turning green"
+      reproductive_activity: "Small clusters of reddish flowers appear, usually after leaves emerge"
+      identification_tips: "Young leaves are smaller but already show the distinctive three-lobed pattern"
+      kid_friendly_tip: "In spring, tiny new leaves appear with a reddish color, along with small bunches of reddish flowers"
+    
+    - season: "Summer"
+      visual_changes: "Leaves reach their full dark green color; tree forms a dense, rounded canopy"
+      reproductive_activity: "Paired winged seeds (samaras) begin developing"
+      identification_tips: "Fully developed three-lobed leaves with minimal serration are distinctive"
+      kid_friendly_tip: "During summer, the tree is covered with dark green three-pointed leaves that provide nice shade"
+    
+    - season: "Fall"
+      visual_changes: "Leaves transform to yellow-orange or bright red; dense canopy becomes a colorful display"
+      reproductive_activity: "Winged seed pairs mature and begin to drop, spinning as they fall"
+      identification_tips: "Fall color combined with the three-lobed leaf shape is very distinctive"
+      kid_friendly_tip: "Fall is when this tree puts on its best show - the leaves turn bright orange or red, and helicopter seeds spin down"
+    
+    - season: "Winter"
+      visual_changes: "After leaf drop, the branching structure is visible; exfoliating bark most noticeable"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Opposite branching pattern and exfoliating bark on mature specimens help winter identification"
+      kid_friendly_tip: "In winter, you can see the neat branches growing in pairs, and on older trees, the cool peeling bark is easier to spot"
+
+  confirmation_checklist:
+    - feature: "Leaves with three distinct lobes resembling a trident or pitchfork"
+      reliability: "Very high"
+      visibility: "High - visible throughout growing season"
+    
+    - feature: "Opposite leaf arrangement"
+      reliability: "High"
+      visibility: "Medium - requires looking at branch pattern"
+    
+    - feature: "Minimal serration (fewer teeth) compared to other maples"
+      reliability: "High"
+      visibility: "Medium - requires closer inspection of leaf edges"
+    
+    - feature: "Exfoliating bark on mature specimens"
+      reliability: "Medium"
+      visibility: "Medium - only present on older trees"
+    
+    - feature: "Small to medium size (typically 20-30 feet tall)"
+      reliability: "Medium"
+      visibility: "High - overall size visible from distance"
+    
+    - feature: "Paired winged seeds (samaras)"
+      reliability: "High"
+      visibility: "Medium - visible when present in summer/fall"
+    
+    - feature: "Dense, rounded crown"
+      reliability: "Medium"
+      visibility: "High - overall form visible from distance"
+
+  look_alike_species:
+    - species: "Hedge Maple (Acer campestre)"
+      differences: "Has five rounded lobes (not three pointed lobes) and does not develop the same exfoliating bark pattern"
+      identification_tip: "Count the leaf lobes - Hedge Maple has five shallow rounded lobes, while Trident Maple has just three pointed lobes"
+    
+    - species: "Japanese Maple (Acer palmatum)"
+      differences: "Has more deeply dissected leaves with 5-7 lobes and more prominent serrations; typically smaller with more delicate branching"
+      identification_tip: "Japanese Maple leaves are more deeply cut with finer, lacy edges and more lobes than Trident Maple's simpler three-lobed leaves"
+    
+    - species: "Tatarian Maple (Acer tataricum)"
+      differences: "Has oval to oblong leaves without distinct lobes; bright red samaras in summer"
+      identification_tip: "Tatarian Maple lacks the three-pointed lobes, having simpler oval leaves without distinct points"
+    
+    - species: "Paperbark Maple (Acer griseum)"
+      differences: "Has compound leaves with three separate leaflets (not simple three-lobed leaves); more dramatically peeling cinnamon-colored bark"
+      identification_tip: "Look closely at the leaves - Paperbark Maple's leaf is actually three separate leaflets, not one leaf with three lobes"
+    
+    - species: "Field Maple (Acer campestre)"
+      differences: "Has five rounded lobes rather than three pointed lobes; less dramatic fall color"
+      identification_tip: "Field Maple has rounder, less pointy lobes and more of them (five instead of three)"
+
+  cultural_significance:
+    - culture: "East Asian (Chinese, Japanese, Korean)"
+      physical_uses:
+        - "Widely used in the art of bonsai for its small leaves and ability to develop character with age"
+        - "Wood traditionally used for small implements, tool handles, and decorative items"
+      symbolic_meaning:
+        - "Symbolizes resilience and adaptability due to its ability to thrive in challenging conditions"
+        - "In garden design, represents the balance of strength and grace with its sturdy trunk and delicate leaves"
+    
+    - culture: "Contemporary Urban Design"
+      physical_uses:
+        - "Planted as street trees and in urban plazas for shade and aesthetic appeal"
+        - "Used in corporate and commercial landscapes as low-maintenance ornamental trees"
+      symbolic_meaning:
+        - "Represents the integration of Asian design elements into Western landscapes"
+        - "Symbolizes the value of adaptability in harsh urban environments"
+    
+    - culture: "California Landscape Design"
+      physical_uses:
+        - "Used in drought-tolerant landscapes once established"
+        - "Planted for fall color in regions where many native trees lack dramatic autumn displays"
+      symbolic_meaning:
+        - "Represents the California tradition of incorporating plants from Mediterranean and Asian climates"
+        - "Embodies the balance between ornamental appeal and practical adaptability to local conditions"
+
+  physical_characteristics:
+    height: "20-30 feet (occasionally to 40-45 feet)"
+    width: "15-25 feet"
+    bark: "Gray-brown, developing exfoliating quality with age revealing orange-brown inner layers"
+    leaves: "Three-lobed, 1.5-3 inches long, resembling a trident or pitchfork, dark green with minimal serration"
+    flowers: "Small, reddish, in clusters, appearing in spring after leaves emerge"
+    fruit: "Paired winged samaras, approximately 1 inch long"
+    seeds: "Flat, winged seeds that disperse by wind"
+    growth_rate: "Slow to moderate, typically 8-12 inches per year"
+    lifespan: "60-100 years in favorable conditions"
+    root_system: "Moderately shallow but not aggressive; generally non-invasive"
+    suitable_for_public_spaces: true
+
+  conservation_status: 
+    status: "Not listed as threatened or endangered"
+    threats: "No significant threats to the species as a whole"
+    protection_efforts: "Commonly cultivated worldwide, helping preserve genetic diversity"
+
+  range_within_california:
+    - "Not native to California"
+    - "Widely planted throughout the state, particularly in coastal and valley regions"
+    - "Performs well in most California regions except high mountain and desert areas"
+    - "Common in urban and suburban landscapes, parks, commercial properties, and as street trees"
+
+  decision_tree_placement:
+    primary_split_features:
+      - feature_id: "LEAF-TYPE-01" # Deciduous
+      - feature_id: "LEAF-ARRANGE-02" # Opposite
+      - feature_id: "LEAF-SHAPE-05" # Lobed
+      - feature_id: "FRUIT-TYPE-08" # Paired samaras
+    
+    confirmation_features:
+      - feature_id: "BARK-TEXT-03" # Peeling bark
+      - feature_id: "TREE-SIZE-02" # Medium size
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-02", "TREE-FORM-02"] # Medium size, Rounded form
+      
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-ARRANGE-02", "LEAF-SHAPE-05"] # Opposite arrangement, Lobed leaves
+      
+      - distance: "close_inspection"
+        features_to_check: ["BARK-TEXT-03", "FRUIT-TYPE-08"] # Peeling bark, Paired samaras
+    
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["LEAF-SHAPE-05", "LEAF-ARRANGE-02", "FLOWER-TIME-01"]
+        notes: "Young leaves already show the distinctive three-lobed pattern; small reddish flowers appear"
+      
+      summer:
+        reliability: "High"
+        key_features: ["LEAF-SHAPE-05", "LEAF-ARRANGE-02", "FRUIT-TYPE-08"]
+        notes: "Fully developed leaves and developing samaras make summer identification reliable"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["LEAF-FALL-03", "LEAF-FALL-02", "LEAF-SHAPE-05"]
+        notes: "Fall color combined with distinctive leaf shape makes autumn identification straightforward"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["BARK-TEXT-03", "TREE-FORM-02"]
+        notes: "Opposite branching pattern and exfoliating bark on mature specimens help winter identification"
+
+  wildlife_value: 
+    - "Provides modest wildlife benefits in landscape settings despite not being native"
+    - "Seeds are eaten by various birds including finches, chickadees, and small mammals like squirrels"
+    - "Flowers provide nectar for bees and other pollinators in early spring"
+    - "Dense foliage and branching pattern offer nesting sites and shelter for birds"
+    - "As the tree matures, it may develop small cavities that provide habitat for cavity-nesting birds"
+    - "Contributes to urban biodiversity and provides more ecological value than non-vegetated areas"

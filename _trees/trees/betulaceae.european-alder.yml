@@ -1,0 +1,331 @@
+tree:
+  common_name: "European Alder"
+  scientific_name: "Alnus glutinosa"
+  family: "Betulaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A deciduous tree with rounded, dark green leaves that have notched tips and wavy, toothed edges. It produces dangling yellow-brown catkins in spring and small woody cone-like fruits that persist on the branches. Usually found near water, with greenish-brown bark that develops rectangular plates as it ages."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Rounded leaves with notched tips; grows near water; small woody cone-like fruits that look like tiny pinecones"
+    secondary_markers: "Purple buds in winter; greenish-brown to gray bark that develops rectangular plates with age; sticky young leaves in spring"
+    seasonal_markers: "Long yellow-brown catkins in early spring; leaves turn yellowish-brown in fall; woody cones and purple buds visible in winter"
+    similar_species_differentiation: "Unlike White Alder, has more rounded leaves with distinct notches at the tips; unlike Red Alder, lacks rusty hairs on leaf undersides and has more rounded leaves"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops all its leaves in fall and grows new ones in spring"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple
+        notes: "Each leaf is a single piece, not made of smaller leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow in an alternating pattern along branches, not in pairs"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated
+        notes: "Leaf edges have small teeth with a slightly wavy appearance"
+      
+      - feature_id: "FLOWER-TYPE-01"  # Catkins present
+        notes: "Produces dangling catkins in early spring"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        notes: "Loves growing near streams, rivers, and other wet areas"
+      
+      - feature_id: "ECO-REL-01"  # Nitrogen fixing
+        notes: "Has special root bacteria that add nutrients to soil, helping other plants grow"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        notes: "Not native to California; originally from Europe, western Asia, and northern Africa"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        notes: "Often grows with several main trunks rather than a single one"
+        exceptions: "Can have a single trunk, especially when growing in more open areas"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Develops a rounded crown when mature"
+        exceptions: "May have a more irregular shape when growing in crowded areas"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Usually grows 40-70 feet tall (about as tall as a 4-7 story building)"
+        exceptions: "May be shorter in tough growing conditions or when young"
+      
+      - feature_id: "LEAF-SHAPE-01"  # Oval/rounded leaves
+        notes: "Leaves are rounded with a notched tip"
+        exceptions: "Leaf shape can vary somewhat, but generally rounded"
+    
+    sometimes_true:
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees"
+        notes: "Bark is smooth and greenish-brown on young trees"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Older trees"
+        notes: "Bark develops rectangular plates or scales with age"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "In autumn before leaves drop"
+        notes: "Leaves turn yellowish-brown in fall"
+      
+      - feature_id: "WINTER-FEAT-01"  # Catkins in winter
+        conditions: "Late winter before leaves appear"
+        notes: "Male catkins start forming in winter and open in early spring"
+      
+      - feature_id: "SENSORY-SEC-01"  # Sticky sap
+        conditions: "Young leaves in spring"
+        notes: "New leaves feel sticky to the touch due to resin"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "When planted in landscaped areas"
+        notes: "Can adapt to urban environments if enough water is available"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Never keeps its leaves through winter; always drops them in fall"
+      
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        notes: "Never has tiny scale-like leaves; only has normal broad leaves"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has broad leaves, not needles"
+      
+      - feature_id: "HABITAT-WATER-03"  # Dry slope habitat
+        notes: "Never grows in dry areas; always requires consistent moisture"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        notes: "Not adapted to dry conditions; needs plenty of water"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Round leaves with a little notch at the tip that look like someone took a tiny bite from them"
+    memorable_comparison: "The leaves look like green pancakes with tiny teeth around the edges and a bite taken out of the top"
+    touch_tip: "The leaves feel sturdy and a little wavy, and young leaves might feel sticky like they have maple syrup on them"
+    smell_tip: "Crush a leaf gently to smell a mild, fresh scent"
+    fun_fact: "European Alder is a superpower tree! Its roots have special bacteria that can pull nitrogen from the air and turn it into natural plant food in the soil. It's like a natural fertilizer factory! The wood is also special because it doesn't rot underwater - it was used to build the foundations of old buildings in Venice, Italy, and they're still standing after hundreds of years!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, check where the tree is growing. Is it near water like a stream, pond, or in a wet area?"
+        yes_next: 2
+        no_next: "If it's in a dry area, it's probably not a European Alder"
+      - step: 2
+        instruction: "Look at the leaves. Are they rounded with a small notch at the tip, like someone took a tiny bite out of them?"
+        yes_next: 3
+        no_next: "If the leaves don't have a notched tip, it might be a different kind of alder"
+      - step: 3
+        instruction: "Look for small woody cone-like fruits about the size of a marble. Can you find any on the tree or on the ground underneath?"
+        yes_next: 4
+        no_next: "If it's early spring, look for hanging catkins instead"
+      - step: 4
+        instruction: "If it's winter, check for purple buds on the branches. Can you see them?"
+        yes_next: "You found a European Alder!"
+        no_next: "Check the bark - on mature trees, it should have rectangular plates or scales"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Yellow-brown catkins dangle from branches; sticky new leaves emerge with bright green color"
+      reproductive_activity: "Male catkins release yellow pollen; small female flowers develop into tiny green cone-like structures"
+      identification_tips: "Catkins and sticky new leaves are very noticeable in early spring"
+      kid_friendly_tip: "In spring, look for long, dangling 'caterpillars' (catkins) hanging from branches and sticky new leaves that feel like they have maple syrup on them"
+    
+    - season: "Summer" 
+      visual_changes: "Full crown of dark green rounded leaves; small green cone-like fruits develop"
+      reproductive_activity: "Small cone-like fruits continue to develop and mature"
+      identification_tips: "Dark green rounded leaves with notched tips are good summer identifiers"
+      kid_friendly_tip: "In summer, the tree is covered with dark green 'pancake' leaves with a bite taken out of the top"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow-brown before dropping; cone-like fruits turn woody and brown"
+      reproductive_activity: "Woody cone-like fruits fully mature to brown"
+      identification_tips: "Brown woody cone-like fruits become more visible as leaves fall"
+      kid_friendly_tip: "The leaves turn yellowish-brown and fall off, leaving behind tiny wooden 'pine cones' that aren't really pine cones!"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches with persistent small cone-like fruits; distinctive purple buds visible"
+      reproductive_activity: "Dormant; cone-like fruits from previous year remain on branches; new catkins begin forming"
+      identification_tips: "Purple buds and persistent woody cones help identify in winter"
+      kid_friendly_tip: "Look for small brown 'pine cones' and purple buds on the bare branches in winter"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Rounded leaves with notched tips"
+      reliability: "Very high"
+      visibility: "Need to look closely at leaves"
+    - feature: "Small woody cone-like fruits"
+      reliability: "Very high"
+      visibility: "Visible year-round"
+    - feature: "Growing near water"
+      reliability: "High"
+      visibility: "Easy to observe location"
+    - feature: "Purple buds in winter"
+      reliability: "High"
+      visibility: "Seasonal - winter only"
+    - feature: "Yellow-brown catkins in early spring"
+      reliability: "Very high"
+      visibility: "Seasonal - early spring only"
+    
+  look_alike_species:
+    - species: "White Alder (Alnus rhombifolia)"
+      differences: "White Alder has more oval leaves with pointed tips rather than notched, and lighter gray bark"
+      identification_tip: "European Alder leaves have a distinctive notch at the tip, like someone took a small bite out of them"
+    
+    - species: "Red Alder (Alnus rubra)"
+      differences: "Red Alder has more pointed leaves, rusty hairs on leaf undersides, and reddish-brown bark with white patches"
+      identification_tip: "European Alder has rounder leaves with notched tips and lacks rusty hairs underneath"
+    
+    - species: "Black Alder (Alnus glutinosa 'Imperialis')"
+      differences: "Black Alder is a cultivar of European Alder with deeply cut, feathery leaves"
+      identification_tip: "Regular European Alder has simple, rounded leaves, not deeply cut ones"
+  
+  cultural_ecological_notes:
+    - "One of the few trees that can grow with its roots in standing water for long periods"
+    - "Improves soil quality through nitrogen fixation"
+    - "Helps prevent erosion along streams with its strong root system"
+    - "Wood is resistant to rot when kept underwater"
+    - "Provides habitat for birds and aquatic insects"
+    - "Traditional uses include wood for underwater foundations and bark for dyes and medicines"
+    
+  range_within_california:
+    - "Not native to California but has been introduced in some areas"
+    - "Found primarily in northern parts of the state in wet areas"
+    - "Grows best in areas with consistent moisture, particularly along waterways"
+    - "Often planted as an ornamental or for stream bank stabilization"
+    - "Less common than native alder species like White Alder and Red Alder"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "European Traditional"
+      physical_uses:
+        - "Used the bark to make a reddish-brown dye for fabrics and leather"
+        - "Carved wooden clogs and other items from the water-resistant wood"
+        - "Made medicine from the bark to treat fevers and inflammation"
+        - "Used the wood for underwater foundations and water pipes because it doesn't rot when submerged"
+      symbolic_meaning:
+        - "The tree's ability to grow in water represented adaptability and resilience"
+        - "Associated with protection and healing in folk medicine"
+        - "In some regions, considered a magical tree that could help see through deception"
+        - "Represented the balance between land and water environments"
+    
+    - culture: "Celtic Traditions"
+      physical_uses:
+        - "Used the wood to make shields and other protective items"
+        - "Created whistles and flutes from the branches"
+        - "Used the bark as a treatment for various skin conditions"
+        - "Made a tea from the bark to reduce fevers"
+      symbolic_meaning:
+        - "Associated with fire and air elements due to its relationship with water"
+        - "Represented balance between opposing forces in nature"
+        - "Connected to protection against negative energies"
+        - "Featured in stories about magical transformations"
+    
+    - culture: "Modern Environmental"
+      physical_uses:
+        - "Planted along stream banks to prevent erosion"
+        - "Used in land reclamation projects to improve poor soils"
+        - "Planted as a windbreak tree in wet areas"
+        - "Used in wetland restoration projects"
+      symbolic_meaning:
+        - "Represents ecosystem rehabilitation and healing damaged land"
+        - "Symbolizes the importance of wetland conservation"
+        - "Demonstrates the interconnectedness of species in healthy ecosystems"
+        - "Shows how plants can improve soil for greater biodiversity"
+  
+  kid_friendly_cultural_significance:
+    - culture: "European People"
+      physical_uses:
+        - "Used the special wood that doesn't rot underwater to build houses in Venice, Italy that stood in water"
+        - "Made a reddish-brown color from the bark to dye clothes and leather"
+        - "Carved wooden shoes (clogs) that people wore to keep their feet dry in muddy places"
+        - "Created medicine from the bark to help when people had fevers or felt sick"
+      symbolic_meaning:
+        - "The tree showed people how to be strong even when surrounded by challenges (like growing in water)"
+        - "Taught children that some plants are helpers that make the environment better for others"
+        - "Used in stories to show how land and water are connected and both important"
+        - "Helped people understand that standing in wet places can still make you strong"
+    
+    - culture: "Environmental Scientists"
+      physical_uses:
+        - "Plant these trees to stop soil from washing away during floods"
+        - "Use them to clean up damaged land because they make the soil healthier"
+        - "Plant them as living walls to block strong winds in wet areas"
+        - "Use the trees to filter water and keep rivers and streams cleaner"
+      symbolic_meaning:
+        - "Show how one helpful species can make a whole area better for plants and animals"
+        - "Use the tree as an example of natural cooperation (between the tree and bacteria in its roots)"
+        - "Teach kids that wetlands are special places that need protection"
+        - "Show how plants and water work together in a healthy environment"
+  
+  # Additional physical characteristics
+  physical_characteristics:
+    height_range: "40-70 feet tall (about as tall as a 4-7 story building)"
+    growth_rate: "Fast-growing, can add 2-3 feet per year when young"
+    crown_spread: "20-40 feet wide when fully grown"
+    lifespan: "60-120 years"
+    trunk_diameter: "1-2 feet across when mature"
+    root_system: "Extensive, shallow but wide-spreading, can grow in waterlogged soils"
+    toxicity: "Not toxic to humans or animals"
+    
+  conservation_status:
+    status: "Least Concern (common and widespread in its native range)"
+    threats: 
+      - "Phytophthora disease affecting some populations"
+      - "Habitat loss in some regions due to drainage of wetlands"
+      - "Climate change-induced drought in some areas"
+    protection_efforts:
+      - "Used in riparian restoration projects"
+      - "Valued for wetland conservation due to its soil-improving properties"
+      - "Often planted to stabilize stream banks and prevent erosion"
+    
+  # Decision tree mapping
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: HABITAT-WATER-01"  # Riparian habitat
+      - "feature_id: LEAF-SHAPE-01"  # Oval/rounded leaves
+    confirmation_features:
+      - "feature_id: FLOWER-TYPE-01"  # Catkins present
+      - "feature_id: LEAF-EDGE-02"  # Serrated edges
+      - "feature_id: ECO-REL-01"  # Nitrogen fixing
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["HABITAT-WATER-01", "TREE-FORM-02"]  # Riparian habitat, rounded crown
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SHAPE-01", "LEAF-EDGE-02"]  # Oval/rounded leaves, serrated edges
+      - distance: "close_inspection"
+        features_to_check: ["FLOWER-TYPE-01", "WINTER-FEAT-01"]  # Catkins, winter features
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["FLOWER-TYPE-01", "SENSORY-SEC-01", "LEAF-SHAPE-01"]  # Catkins, sticky leaves, oval shape
+        notes: "Catkins and new sticky leaves make spring identification easy"
+      summer:
+        reliability: "Medium"
+        key_features: ["LEAF-SHAPE-01", "FRUIT-TYPE-01", "HABITAT-WATER-01"]  # Oval leaves, fruits, riparian habitat
+        notes: "Dark green rounded leaves with notched tips are distinctive"
+      fall:
+        reliability: "Medium" 
+        key_features: ["LEAF-FALL-01", "FRUIT-TYPE-01", "LEAF-SHAPE-01"]  # Yellow fall color, fruits, leaf shape
+        notes: "Cone-like fruits more visible as leaves drop"
+      winter:
+        reliability: "High"
+        key_features: ["FRUIT-TYPE-01", "WINTER-FEAT-01", "WINTER-BUD-01"]  # Fruits, winter catkins, distinctive buds
+        notes: "Persistent cone-like fruits and purple buds make winter ID reliable"
+    misidentification_risks:
+      - species: "White Alder (Alnus rhombifolia)"
+        distinguishing_features: "European Alder has rounded leaves with notched tips; White Alder has more oval leaves with pointed tips"
+      - species: "Red Alder (Alnus rubra)"
+        distinguishing_features: "European Alder lacks the rusty hairs on leaf undersides that Red Alder has, and has more rounded leaves with notched tips"
+      - species: "Black Alder cultivar (Alnus glutinosa 'Imperialis')"
+        distinguishing_features: "European Alder has simple rounded leaves; the ornamental Black Alder cultivar has deeply cut, feathery leaves"
+  
+  wildlife_value:
+    - "Seeds eaten by many birds including finches, siskins, and redpolls"
+    - "Catkins provide early spring food for birds"
+    - "Dense branching offers nesting sites and cover for birds"
+    - "Leaves provide food for various caterpillars and other insects"
+    - "Roots and fallen debris create habitat for aquatic species"
+    - "Helps stabilize stream banks, improving fish habitat"

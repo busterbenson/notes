@@ -1,0 +1,286 @@
+tree:
+  common_name: "White Spruce"
+  scientific_name: "Picea glauca"
+  family: "Pinaceae"
+  
+  # Basic summary
+  summary: "White Spruce is a medium to tall evergreen tree with short, stiff, blue-green needles that grow singly (not in bundles) and point outward in all directions around the twig. It has drooping, papery cones and gray to brown bark that forms thin, flaky scales."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Blue-green needles pointing in all directions around the twig; square-shaped needles that roll easily between fingers; papery, drooping cones"
+    secondary_markers: "Gray to brown thin, flaky bark; cone scales with smooth, rounded edges (not jagged); needles have a skunk-like smell when crushed"
+    seasonal_markers: "Minimal seasonal change; stays green year-round; small purple-red female cones appear in spring, mature to light brown by fall"
+    similar_species_differentiation: "Unlike Engelmann Spruce, White Spruce needles have a stronger skunk-like smell when crushed; unlike Sitka Spruce, White Spruce needles are more blue-green and cones have smoother edges; unlike Norway Spruce, White Spruce has shorter cones and branches don't droop as dramatically"
+  
+  features:
+    always_true:
+      # Fundamental traits
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles all year round"
+        
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Needles attach individually to the twig, not in bundles"
+      
+      - feature_id: "NEEDLE-SHAPE-02"  # Square needles
+        notes: "Needles have a square cross-section and roll easily between fingers"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Has a triangle or cone shape, especially when young"
+      
+      - feature_id: "CONE-POS-02"  # Hanging cones
+        notes: "Cones dangle downward from branches"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        notes: "Crushed needles have a strong, unpleasant skunk-like smell"
+      
+    usually_true:
+      # Features with exceptions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with one main trunk"
+        exceptions: "May develop multiple trunks if damaged or when growing in the open"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Usually reaches 40-60 feet tall (about as tall as a 4-6 story building)"
+        exceptions: "Can reach up to 100 feet in ideal conditions or stay smaller in harsh environments"
+      
+      - feature_id: "CONE-SIZE-01"  # Small cones
+        notes: "Cones are typically 1-2 inches long"
+        exceptions: "Size can vary based on growing conditions"
+      
+      - feature_id: "LEAF-COLOR-03"  # Blue-green
+        notes: "Needles typically have a blue-green or gray-green color"
+        exceptions: "Can appear more green in shade or during rapid growth periods"
+    
+    sometimes_true:
+      # Features that vary
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees"
+        notes: "Bark is relatively smooth when young"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        conditions: "Mature trees"
+        notes: "Bark develops thin, flaky scales as the tree ages"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        conditions: "In California"
+        notes: "Not native to California but sometimes planted as an ornamental or in forestry projects"
+      
+      - feature_id: "ECO-ADAPT-02"  # Shade tolerant
+        conditions: "Young trees"
+        notes: "Young trees can grow in partial shade, but prefer full sun as they mature"
+      
+      - feature_id: "GEO-ELEV-02"  # Mid-elevation
+        conditions: "When planted in California"
+        notes: "When grown in California, usually found at middle elevations in cooler regions"
+    
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all needles seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Needles always grow singly, never in bundles"
+      
+      - feature_id: "NEEDLE-ARRANGE-03"  # Needles in threes
+        notes: "Needles always grow singly, never in bundles"
+      
+      - feature_id: "NEEDLE-ARRANGE-04"  # Needles in fives
+        notes: "Needles always grow singly, never in bundles"
+      
+      - feature_id: "CONE-POS-01"  # Upright cones
+        notes: "Cones always hang down, never stand upright"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Produces only small, inconspicuous cones, not showy flowers"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Pointy blue-green needles that grow all around the twig and roll between your fingers"
+    memorable_comparison: "The needles look like tiny swords sticking out in all directions, and they feel square when you roll them"
+    touch_tip: "Gently roll a needle between your fingers - it should roll easily because it's square shaped!"
+    smell_tip: "Carefully crush a needle and take a quick sniff - it has a strong smell like a skunk or cat pee!"
+    fun_fact: "White Spruce is super tough! It can survive in places that are freezing cold for most of the year. Some White Spruce trees can live for over 300 years - that's older than the United States!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, check how the needles grow. Do they stick out all around the twig like tiny swords pointing in every direction?"
+        yes_next: 2
+        no_next: "Not a White Spruce - if needles are flat and spread out in two rows, check other evergreens"
+      - step: 2
+        instruction: "Gently roll a needle between your fingers. Does it roll easily because it has four sides (square shaped)?"
+        yes_next: 3
+        no_next: "Not a White Spruce - if needles are flat and don't roll easily, check firs or hemlocks"
+      - step: 3
+        instruction: "Carefully crush a needle and take a quick sniff. Does it have a strong, stinky smell (like a skunk or cat pee)?"
+        yes_next: "You found a White Spruce!"
+        no_next: "Might be another spruce species - check the cones"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New needle growth appears, often brighter green than older needles"
+      reproductive_activity: "Small purple-red female cones form at branch tips; yellow pollen is released from male cones"
+      identification_tips: "Look for bright new growth at branch tips and small colorful cones"
+      kid_friendly_tip: "In spring, look for the bright green new needle growth and tiny purple-red baby cones at the tips of branches"
+    
+    - season: "Summer" 
+      visual_changes: "New needles mature to blue-green color; cones grow larger and turn from purple-red to green"
+      reproductive_activity: "Cones continue developing, changing from purple-red to green as they grow"
+      identification_tips: "Developing green cones make identification easier"
+      kid_friendly_tip: "By summer, the tiny cones grow bigger and change from purple-red to green, like they're ripening"
+    
+    - season: "Fall"
+      visual_changes: "Some older needles yellow and drop; cones mature and open"
+      reproductive_activity: "Cones turn brown, open to release seeds, which are carried by small wings"
+      identification_tips: "Open, light brown cones hanging from branches are distinctive"
+      kid_friendly_tip: "In fall, the cones turn brown and open up to let their seeds fly away with tiny wings attached"
+    
+    - season: "Winter"
+      visual_changes: "Tree remains green; empty opened cones may stay on the tree"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Blue-green needle color often stands out against snow"
+      kid_friendly_tip: "Even in winter, White Spruce stays green when other trees lose their leaves, and its blue-green color looks pretty against the snow"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Square needles that roll easily between fingers"
+      reliability: "Very high"
+      visibility: "Medium - need to touch and roll the needles"
+    - feature: "Stinky, skunk-like smell when needles are crushed"
+      reliability: "High"
+      visibility: "Requires crushing needles and smelling"
+    - feature: "Needles pointing in all directions around the twig"
+      reliability: "High"
+      visibility: "Easy to see from nearby"
+    - feature: "Small, drooping cones with smooth-edged scales"
+      reliability: "High"
+      visibility: "Visible when cones are present (summer through winter)"
+    
+  look_alike_species:
+    - species: "Engelmann Spruce (Picea engelmannii)"
+      differences: "Engelmann Spruce has less aromatic needles, often grows at higher elevations, and has cone scales with slightly jagged edges"
+      identification_tip: "The 'smell test' - White Spruce needles have a stronger skunk-like smell when crushed"
+    - species: "Sitka Spruce (Picea sitchensis)"
+      differences: "Sitka Spruce has flatter needles, cone scales with jagged edges, and prefers coastal environments"
+      identification_tip: "White Spruce has more blue-green needles and is found in inland areas, not coastal regions"
+    - species: "Norway Spruce (Picea abies)"
+      differences: "Norway Spruce has longer cones (4-7 inches), more dramatically drooping branches, and darker green needles"
+      identification_tip: "White Spruce has smaller cones (1-2 inches) and more upward-pointing branches than Norway Spruce"
+    
+  cultural_ecological_notes:
+    - "Provides important shelter and nesting sites for birds and small mammals"
+    - "Seeds are eaten by squirrels, chickadees, crossbills, and other wildlife"
+    - "Tolerant of harsh winter conditions, making it an important northern forest species"
+    - "Can form pure stands or mix with other conifers and hardwoods in forest communities"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Indigenous Peoples of Canada and Alaska"
+      physical_uses:
+        - "Used the roots for lashing and weaving baskets and containers"
+        - "Made tea from needles for treating colds and providing vitamin C"
+        - "Used spruce pitch as a waterproofing material and for treating wounds"
+      symbolic_meaning:
+        - "The evergreen nature of the tree represented endurance through harsh winters"
+        - "Featured in stories about resilience and adaptation to difficult conditions"
+        - "Considered a provider tree that offers many useful materials"
+    
+    - culture: "Early European Settlers"
+      physical_uses:
+        - "Used the wood for building homes, barns, and boats"
+        - "Made spruce beer from new growth tips, which helped prevent scurvy"
+        - "Used the pitch for sealing boats and treating various ailments"
+      symbolic_meaning:
+        - "Represented the ability to thrive in harsh frontier conditions"
+        - "Became a symbol of Christmas traditions when brought to new settlements"
+        - "Signified the bounty of the northern forests"
+    
+    - culture: "Modern Forestry"
+      physical_uses:
+        - "Harvested for paper products, lumber, and musical instruments"
+        - "Used for Christmas trees and ornamental plantings"
+        - "Studied as an indicator species for climate change in northern regions"
+      symbolic_meaning:
+        - "Represents the importance of sustainable forest management"
+        - "Symbolizes adaptability to changing environmental conditions"
+        - "Used in education about boreal forest ecosystems"
+    
+  range_within_california:
+    - "Not native to California but occasionally planted as an ornamental or in forestry projects"
+    - "When planted, grows best in cooler, mountainous regions of Northern California"
+    - "Requires adequate moisture and prefers well-drained soils"
+    - "Not commonly found in Southern California due to heat and drought"
+    - "Generally performs better in areas with cold winters and moderate summers"
+    
+  physical_characteristics:
+    height_range: "40-60 feet typically, up to 100 feet in ideal conditions (about as tall as a 4-10 story building)"
+    growth_rate: "Slow to moderate, typically growing 12-24 inches per year when young"
+    crown_spread: "15-20 feet wide at maturity"
+    lifespan: "200-300 years under favorable conditions"
+    trunk_diameter: "1-2 feet across (about as wide as a dinner plate)"
+    root_system: "Shallow, widely spreading roots that adapt to different soil conditions"
+    toxicity: "Not toxic, though sap may cause skin irritation in sensitive people"
+    
+  conservation_status:
+    status: "Least Concern (abundant in its native range)"
+    threats: 
+      - "Climate change potentially shifting suitable habitat northward"
+      - "Spruce budworm outbreaks that can defoliate and kill trees"
+      - "Bark beetle attacks during periods of stress"
+      - "Limited adaptability to rapidly warming conditions in southern parts of range"
+    protection_efforts:
+      - "Protected in national parks and wilderness areas within its native range"
+      - "Included in forest management plans in its native range"
+      - "Seed collection for preservation and future restoration projects"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: NEEDLE-ARRANGE-01"  # Single needles
+      - "feature_id: NEEDLE-SHAPE-02"  # Square needles
+    confirmation_features:
+      - "feature_id: SENSORY-SMELL-01"  # Aromatic leaves
+      - "feature_id: CONE-SIZE-01"  # Small cones
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-01", "LEAF-TYPE-02"]  # Pyramidal shape, evergreen
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-ARRANGE-01", "LEAF-COLOR-03"]  # Single needles, blue-green
+      - distance: "close_inspection"
+        features_to_check: ["NEEDLE-SHAPE-02", "SENSORY-SMELL-01"]  # Square needles, aromatic
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-01", "LEAF-COLOR-03"]
+        notes: "New growth and small purple-red cones provide additional confirmation"
+      
+      summer:
+        reliability: "Very high" 
+        key_features: ["NEEDLE-SHAPE-02", "CONE-SIZE-01"]
+        notes: "Developing green cones and mature needles make identification easier"
+      
+      fall:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-01", "CONE-POS-02"]
+        notes: "Open brown cones hanging from branches are distinctive"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["NEEDLE-SHAPE-02", "TREE-FORM-01"]
+        notes: "Blue-green color and conical shape visible against snow"
+    misidentification_risks: 
+      - "Can be confused with other spruce species, particularly Engelmann Spruce"
+      - "Young trees before cone production may be harder to identify"
+      - "Cultivated varieties may show slightly different characteristics from wild trees"
+  
+  wildlife_value:
+    food_source:
+      - "Seeds are eaten by squirrels, chipmunks, and many bird species"
+      - "Grouse feed on winter buds and needles when other food is scarce"
+      - "Young twigs and bark may be eaten by rabbits, hares, and porcupines in winter"
+    habitat_provided:
+      - "Dense branches provide shelter for birds and small mammals, especially in winter"
+      - "Mature trees provide nesting sites for many bird species"
+      - "Fallen needles create acidic soil conditions that support unique understory plants"
+    ecosystem_role: "Important component of boreal and mixed coniferous forests; provides year-round shelter and food for wildlife in harsh northern environments"

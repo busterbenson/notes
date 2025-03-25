@@ -1,0 +1,290 @@
+tree:
+  common_name: "American Elm"
+  scientific_name: "Ulmus americana"
+  family: "Ulmaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A large deciduous tree with a distinctive vase-shaped crown and gracefully arching branches that droop at the tips. It has doubly serrated, oval to elliptical leaves with asymmetrical bases, and bark that develops deep furrows and distinctive interlacing ridges with age."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Classic vase-shaped form with arching branches that droop at the tips; leaves with uneven bases and double-toothed edges"
+    secondary_markers: "Grayish-brown bark with diamond-pattern furrows; small winged seeds (samaras) that form in spring"
+    seasonal_markers: "Reddish-purple flowers appear before leaves in early spring; winged samaras mature in late spring; yellow fall color"
+    similar_species_differentiation: "More drooping branch tips than Dutch Elm; larger leaves than Siberian Elm; more deeply fissured bark than Chinese Elm"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops all leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple
+        notes: "Leaves are single pieces, not made of smaller leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow in an alternating pattern along branches, not in pairs"
+      
+      - feature_id: "LEAF-EDGE-03"  # Doubly serrated
+        notes: "Leaf edges have two sizes of teeth (large teeth with smaller teeth on them)"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        notes: "Not native to California; native to eastern North America"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk that divides into scaffold branches"
+        exceptions: "Can develop multiple trunks if damaged when young"
+      
+      - feature_id: "TREE-FORM-06"  # Vase shaped
+        notes: "Develops the classic elm vase shape with upward arching branches that spread widely, with drooping tips"
+        exceptions: "Young trees may have a more pyramidal or irregular form"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Can grow 60-100 feet tall at maturity"
+        exceptions: "May remain smaller in poor conditions or when affected by Dutch elm disease"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        notes: "Mature trees develop deep furrows with distinctive crossing ridges creating a diamond pattern"
+        exceptions: "Young trees have smoother bark"
+    
+    sometimes_true:
+      - feature_id: "FLOWER-TIME-01"  # Spring flowering
+        conditions: "Early spring before leaves fully emerge"
+        notes: "Produces small, inconspicuous reddish-purple clustered flowers"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees"
+        notes: "Bark is relatively smooth and grayish-brown when young"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Fall, but can vary with weather conditions"
+        notes: "Leaves typically turn yellow to golden in fall"
+      
+      - feature_id: "FRUIT-TYPE-02"  # Winged seeds
+        conditions: "Late spring"
+        notes: "Produces small, oval samaras (winged seeds) that are notched at the tip"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "Often planted in urban environments"
+        notes: "Historically common in urban settings but highly susceptible to Dutch elm disease"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has compound leaves"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves never grow directly across from each other"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Never has thorns or spines on branches"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Leaves with uneven bases (one side attaches lower than the other) and double-toothed edges"
+    memorable_comparison: "Looks like a giant fountain with branches that sweep up and then droop down at the ends"
+    touch_tip: "Feel the leaves - they're slightly rough on top, like fine sandpaper"
+    smell_tip: "The leaves don't have a strong smell when crushed"
+    fun_fact: "American Elms used to line streets all across America, making beautiful green tunnels when their branches met overhead. Sadly, many have been lost to a disease carried by tiny beetles, but scientists are working hard to protect the remaining trees and breed new ones that can fight off the disease!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the overall tree shape. Does it have a vase-like shape with branches that go up and then arch outward and down?"
+        yes_next: 2
+        no_next: "If the shape is different, it might not be an American Elm"
+      - step: 2
+        instruction: "Check the leaves. Are they oval-shaped with uneven bases (one side of the leaf attaches lower than the other)?"
+        yes_next: 3
+        no_next: "If the leaf bases are even, it's probably not an elm"
+      - step: 3
+        instruction: "Look closely at the leaf edges. Do they have double teeth (big teeth with smaller teeth on them)?"
+        yes_next: 4
+        no_next: "If the edges have simple teeth or no teeth, it's probably not an American Elm"
+      - step: 4
+        instruction: "If it's a mature tree, does it have grayish-brown bark with deep crisscrossing furrows?"
+        yes_next: "You found an American Elm!"
+        no_next: "It might be a young American Elm or a different elm species"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Small reddish-purple flower clusters appear before leaves; leaves emerge light green; flat, oval winged seeds develop"
+      reproductive_activity: "Flowers bloom in early spring and are pollinated by wind; seeds form quickly thereafter"
+      identification_tips: "Flowers before leaves is distinctive; classic vase shape becomes more apparent with leaf emergence"
+      kid_friendly_tip: "In spring, look for tiny reddish flower bunches before the leaves come out, and later the small, round, flat seeds with papery wings"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of dark green leaves creates dense shade; samaras may fall by early summer"
+      reproductive_activity: "Seeds mature and disperse with wind"
+      identification_tips: "Vase-shaped crown with dense foliage; leaf shape and arrangement"
+      kid_friendly_tip: "In summer, notice how much cool shade the tree makes with its big leafy branches that spread out like an umbrella"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow to golden before falling"
+      reproductive_activity: "Dormant, no reproductive activity"
+      identification_tips: "Leaf color change; leaf shape and double-toothed edges still visible"
+      kid_friendly_tip: "In fall, the leaves turn golden-yellow before dropping, and you can see the tree's amazing branch pattern starting to show"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches reveal the vase-shaped silhouette and branching pattern with distinctive drooping branch tips"
+      reproductive_activity: "Dormant, flower buds start developing late in winter"
+      identification_tips: "Distinctive vase-shaped form most visible in winter; look for deeply furrowed bark with diamond pattern"
+      kid_friendly_tip: "In winter, you can see the tree's beautiful shape that looks like a fountain or fireworks frozen in place"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Vase-shaped crown with arching branches that droop at the tips"
+      reliability: "High"
+      visibility: "Visible from a distance on mature trees"
+    - feature: "Leaves with asymmetrical bases and double-toothed edges"
+      reliability: "Very high"
+      visibility: "Need to look closely"
+    - feature: "Deep furrows in bark with interlacing ridges forming diamond patterns"
+      reliability: "High"
+      visibility: "Observable from nearby"
+    - feature: "Small, oval winged seeds (samaras) in spring"
+      reliability: "High (seasonal)"
+      visibility: "Need to look closely"
+    
+  look_alike_species:
+    - species: "Dutch Elm (Ulmus × hollandica)"
+      differences: "Dutch Elm typically has more upright branches with less drooping tips and slightly different bark patterns"
+      identification_tip: "American Elm branches have more distinctly drooping outer branches than Dutch Elm"
+    
+    - species: "Chinese Elm (Ulmus parvifolia)"
+      differences: "Chinese Elm has smaller, glossier leaves and distinctive mottled, exfoliating bark with multiple colors"
+      identification_tip: "American Elm has larger leaves and deeply furrowed bark rather than the peeling, colorful bark of Chinese Elm"
+    
+    - species: "Siberian Elm (Ulmus pumila)"
+      differences: "Siberian Elm has smaller, more symmetrical leaves with single-toothed edges and a less pronounced vase shape"
+      identification_tip: "American Elm has larger leaves with distinctly uneven bases and doubly serrated edges"
+    
+    - species: "Slippery Elm (Ulmus rubra)"
+      differences: "Slippery Elm has larger, rougher leaves, more hairy buds, and inner bark that is slippery and fragrant when wet"
+      identification_tip: "Feel the leaf - American Elm leaves are rough only on top, while Slippery Elm leaves are rough on both sides"
+  
+  cultural_ecological_notes:
+    - "Historically one of the most important street and shade trees across eastern North America"
+    - "Extremely vulnerable to Dutch elm disease, caused by a fungus spread by bark beetles"
+    - "Provides habitat for birds and insects when healthy"
+    - "Deep shade tree with strong, flexible wood historically used for furniture, flooring, and hockey sticks"
+    
+  cultural_significance:
+    - culture: "Native American Tribes"
+      physical_uses:
+        - "Inner bark used for cordage and binding materials"
+        - "Decoctions of bark used for treating coughs and sore throats"
+        - "Wood used for tools, bows, and canoe frames due to its flexibility"
+      symbolic_meaning:
+        - "Symbolized strength and resilience in some tribal cultures"
+        - "Used in some healing ceremonies and medicine traditions"
+    
+    - culture: "Early American Settlers"
+      physical_uses:
+        - "Planted extensively along streets and in town squares"
+        - "Wood used for furniture, flooring, and wheel hubs due to its strength and resistance to splitting"
+        - "Used in agricultural implements and shipbuilding"
+      symbolic_meaning:
+        - "Represented civic pride and community investment in beautification"
+        - "Became symbolic of small-town American main streets"
+    
+    - culture: "Modern Communities"
+      physical_uses:
+        - "Historically defining elements of urban canopies"
+        - "Remnant trees preserved as heritage landmarks"
+        - "New disease-resistant cultivars planted to restore urban forests"
+      symbolic_meaning:
+        - "Symbolizes resilience and the fight against invasive pests and diseases"
+        - "Represents the importance of urban forest diversity and conservation"
+  
+  range_within_california:
+    - "Not native to California"
+    - "Historically planted in parks and as street trees"
+    - "Found in older neighborhoods and established parks in urban areas"
+    - "Not commonly planted now due to disease concerns"
+    - "More resistant cultivars occasionally planted in landscape settings"
+    
+  physical_characteristics:
+    height_range: "60-100 feet tall when mature"
+    growth_rate: "Moderate to fast; can grow 1-3 feet per year when young"
+    crown_spread: "50-70 feet wide at maturity"
+    lifespan: "Could live 200-300 years but often succumbs to disease earlier"
+    trunk_diameter: "3-6 feet when mature"
+    root_system: "Moderately deep, widespread and adaptable to various soils"
+    toxicity: "Not toxic to humans or animals"
+    
+  conservation_status:
+    status: "Not listed but populations severely reduced by Dutch elm disease"
+    threats: "Extremely vulnerable to Dutch elm disease (Ophiostoma ulmi and O. novo-ulmi)"
+    protection_efforts: "Breeding programs to develop disease-resistant cultivars; fungicide treatments for valuable specimens; removal of infected trees to slow disease spread"
+  
+  kid_friendly_cultural_significance:
+    - culture: "Town Planners"
+      physical_uses:
+        - "Planted along streets to make shady tunnels for people to walk through"
+        - "Put in parks and town squares to give gathering places for communities"
+        - "Used the strong wood to make furniture, floors, and even hockey sticks"
+      symbolic_meaning:
+        - "Showed how a town cared about making beautiful, shady streets for everyone"
+        - "Now reminds us that we need to protect trees from diseases and pests"
+    
+    - culture: "Native American Tribes"
+      physical_uses:
+        - "Used the inner bark to make rope and string for tying things together"
+        - "Made medicine from the bark to help with coughs and sore throats"
+        - "Used the bendable wood to make tools and parts for canoes"
+      symbolic_meaning:
+        - "Represented strength and flexibility - being strong but able to bend without breaking"
+        - "Taught the importance of using natural resources wisely"
+  
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-EDGE-03"  # Doubly serrated
+      - "feature_id: TREE-FORM-06"  # Vase shaped
+    confirmation_features:
+      - "feature_id: LEAF-COMPLEX-01"  # Simple
+      - "feature_id: BARK-TEXT-02"  # Furrowed bark
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-06", "TREE-SIZE-03"]  # Vase shaped, tall tree
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-EDGE-03", "BARK-TEXT-02"]  # Doubly serrated leaves, furrowed bark
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-ARRANGE-01", "LEAF-ASYMMETRY"]  # Alternate leaves, asymmetrical leaf base
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["FLOWER-TIME-01", "FRUIT-TYPE-02", "TREE-FORM-06"]
+        notes: "Flowers before leaves and developing samaras are distinctive"
+      summer:
+        reliability: "High"
+        key_features: ["LEAF-EDGE-03", "TREE-FORM-06", "TREE-SIZE-03"]
+        notes: "Vase shape, leaf characteristics, and size are good identifiers"
+      fall:
+        reliability: "Medium"
+        key_features: ["LEAF-FALL-01", "LEAF-EDGE-03", "TREE-FORM-06"]
+        notes: "Leaf color change, shape, and doubly toothed edges"
+      winter:
+        reliability: "Medium"
+        key_features: ["TREE-FORM-06", "BARK-TEXT-02"]
+        notes: "Vase shape and bark pattern most visible in winter"
+    misidentification_risks:
+      - species: "Dutch Elm (Ulmus × hollandica)"
+        distinguishing_features: "American Elm has more drooping branch tips; Dutch Elm branches arch up more"
+      - species: "Chinese Elm (Ulmus parvifolia)"
+        distinguishing_features: "American Elm lacks the colorful, peeling bark of Chinese Elm and has larger, rougher leaves"
+      - species: "Slippery Elm (Ulmus rubra)"
+        distinguishing_features: "American Elm leaves are rough primarily on top side only; Slippery Elm has rough leaves on both sides"
+  
+  wildlife_value:
+    - "Seeds eaten by birds and small mammals"
+    - "Leaves are food for many butterfly and moth caterpillars"
+    - "Provides nesting sites for birds in its branches"
+    - "Supports various insects that are food for birds"
+    - "Cavity-nesting birds often use older trees with hollows"
+    - "Provides shade and shelter for various woodland wildlife when used in forest settings"

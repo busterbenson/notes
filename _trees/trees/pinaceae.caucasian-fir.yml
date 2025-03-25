@@ -1,0 +1,262 @@
+tree:
+  common_name: "Caucasian Fir"
+  scientific_name: "Abies nordmanniana"
+  family: "Pinaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A beautiful evergreen tree with soft, dark green needles arranged in a flat pattern along the branches. It has a perfect pyramid shape with horizontal branches, and smooth gray bark that develops resin blisters."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Flat, soft needles arranged in a brush-like pattern along the branches; upright barrel-shaped cones"
+    secondary_markers: "Perfect pyramid shape with horizontal branches; needles have white lines on their undersides"
+    seasonal_markers: "Little seasonal change; stays evergreen year-round with new growth appearing lighter green in spring"
+    similar_species_differentiation: "Needles are longer and more lustrous than other firs; regularly spaced horizontal branches create a more perfect pyramid shape"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles year-round for several years before shedding"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Needles grow individually along the branches, not in clusters or bundles"
+      
+      - feature_id: "NEEDLE-SHAPE-01"  # Flat needles
+        notes: "Needles are flat, not square in cross-section"
+      
+      - feature_id: "NEEDLE-FEAT-03"  # White lines below
+        notes: "Needles have two white bands on their undersides"
+      
+      - feature_id: "CONE-POS-01"  # Upright cones
+        notes: "Cones stand upright on the branches like tiny barrels or cylinders"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with one main straight trunk"
+        exceptions: "Can sometimes develop multiple leaders if the main leader is damaged"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Forms a nearly perfect triangle shape with evenly spaced branches"
+        exceptions: "Very old trees may develop a more rounded or irregular crown"
+      
+      - feature_id: "BRANCH-ANGLE-01"  # Horizontal branches
+        notes: "Branches grow straight out from the trunk in regular tiers"
+        exceptions: "Lower branches may droop slightly with age"
+      
+      - feature_id: "NEEDLE-SIZE-01"  # Short needles
+        notes: "Needles are usually 1-1.5 inches long"
+        exceptions: "Length can vary slightly based on growing conditions"
+    
+    sometimes_true:
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees and upper trunk"
+        notes: "Bark is smooth with resin blisters when young"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Older trees, especially near the base"
+        notes: "Bark becomes more ridged and furrowed with age"
+      
+      - feature_id: "CONE-SIZE-02"  # Medium cones
+        conditions: "Mature trees, usually visible in summer and fall"
+        notes: "Produces barrel-shaped cones about 4-6 inches long"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        conditions: "All Caucasian Firs in California"
+        notes: "Not native to California; originally from the Caucasus Mountains between the Black and Caspian Seas"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all needles seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Needles always grow singly, never in bundles like pines"
+      
+      - feature_id: "CONE-POS-02"  # Hanging cones
+        notes: "Cones never hang downward like spruce or hemlock cones"
+      
+      - feature_id: "NEEDLE-SHAPE-02"  # Square needles
+        notes: "Needles are flat, never square in cross-section like spruce"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Perfect Christmas tree shape with soft, flat needles that grow like combs along the branches"
+    memorable_comparison: "Branches look like green combs with the needles all neatly lined up in rows"
+    touch_tip: "The needles are soft to touch, not prickly - gently run your fingers along a branch to feel them"
+    smell_tip: "Crush a needle gently to smell a pleasant, citrusy forest scent"
+    fun_fact: "Caucasian Firs are one of the most popular Christmas trees because of their perfect shape and needles that don't fall off easily! They're like nature's ready-made Christmas trees."
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the overall tree shape. Is it a perfect triangle (pyramid) shape with evenly spaced branches?"
+        yes_next: 2
+        no_next: "If the tree has a different shape, it's probably not a Caucasian Fir"
+      - step: 2
+        instruction: "Look at how the needles grow. Are they flat and arranged in neat rows along both sides of the branches like a comb?"
+        yes_next: 3
+        no_next: "If the needles stick out all around the branch or grow in bundles, it's not a Caucasian Fir"
+      - step: 3
+        instruction: "Gently turn over a needle. Can you see two white lines on the underside?"
+        yes_next: 4
+        no_next: "If there are no white lines on the needle undersides, try checking for Noble Fir or Grand Fir"
+      - step: 4
+        instruction: "If there are cones, do they stand upright on the branches (not hanging down)?"
+        yes_next: "You found a Caucasian Fir!"
+        no_next: "If the cones hang down, it's not a fir tree - check for spruce or hemlock"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New growth emerges at branch tips as light green, soft shoots"
+      reproductive_activity: "Male pollen cones release yellow pollen; female cones begin forming"
+      identification_tips: "The contrast between new light green growth and older dark green needles is noticeable"
+      kid_friendly_tip: "Look for bright green new 'fingers' of growth at the tips of branches in spring"
+    
+    - season: "Summer" 
+      visual_changes: "New growth hardens and darkens to match older needles"
+      reproductive_activity: "Female cones grow larger and stand upright on upper branches"
+      identification_tips: "Upright green or purplish cones become more visible"
+      kid_friendly_tip: "You might see green or purple upright cones that look like little barrels standing on the branches"
+    
+    - season: "Fall"
+      visual_changes: "No color change; remains dark green"
+      reproductive_activity: "Cones mature and begin to break apart while still on the tree"
+      identification_tips: "The pyramid shape stands out as deciduous trees lose their leaves"
+      kid_friendly_tip: "While other trees change colors and lose leaves, the Caucasian Fir stays green like it's wearing the same outfit all year!"
+    
+    - season: "Winter"
+      visual_changes: "Remains evergreen; no change in appearance"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Pyramid shape and evergreen foliage are distinctive in winter landscape"
+      kid_friendly_tip: "Even in winter, this tree keeps its perfect Christmas tree shape and green needles"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Perfect pyramid shape with horizontal branches"
+      reliability: "High"
+      visibility: "Easy to see from a distance"
+    - feature: "Flat needles arranged in comb-like pattern"
+      reliability: "Very high"
+      visibility: "Need to be fairly close to tree"
+    - feature: "White lines on needle undersides"
+      reliability: "Very high"
+      visibility: "Need to examine needles closely"
+    - feature: "Upright cones when present"
+      reliability: "Very high"
+      visibility: "Visible when mature cones are present"
+    
+  look_alike_species:
+    - species: "Nordmann Fir (Abies nordmanniana subsp. nordmanniana)"
+      differences: "Actually the same species, just a different subspecies name - they are identical"
+      identification_tip: "These are the same tree, just called by different names"
+    
+    - species: "Noble Fir (Abies procera)"
+      differences: "Noble Fir has bluer foliage, more rigid branches, and needles that curve upward more"
+      identification_tip: "If the needles curve upward strongly and the foliage looks bluish, it might be a Noble Fir"
+    
+    - species: "White Fir (Abies concolor)"
+      differences: "White Fir has longer needles that stick out more from the branch and more bluish-gray color"
+      identification_tip: "White Fir needles point more upward and outward, while Caucasian Fir needles lie flatter along the branch"
+  
+  cultural_ecological_notes:
+    - "Popular ornamental tree, especially for Christmas trees"
+    - "Provides winter shelter for birds and small mammals"
+    - "Seeds are eaten by birds and small mammals"
+    - "In its native range, forests of these trees help prevent soil erosion on mountain slopes"
+    
+  cultural_significance:
+    - culture: "European Christmas Traditions"
+      physical_uses:
+        - "One of the most popular Christmas trees due to good needle retention and strong branches for ornaments"
+        - "Used as a landscape tree in parks and large yards"
+        - "Wood sometimes used for construction in its native regions"
+      symbolic_meaning:
+        - "Represents the evergreen nature of hope during winter"
+        - "Perfect pyramid shape symbolizes reaching toward heaven in Christian traditions"
+    
+    - culture: "Native Caucasus Mountain People"
+      physical_uses:
+        - "Used the wood for building homes and tools"
+        - "Collected resin for waterproofing and healing wounds"
+        - "Used branches for shelter and bedding"
+      symbolic_meaning:
+        - "Represented strength and endurance through harsh winters"
+        - "Evergreen nature symbolized eternal life and resilience"
+  
+  range_within_california:
+    - "Not native to California but planted as an ornamental tree"
+    - "Grows best in cooler areas of Northern and Central California with adequate moisture"
+    - "Often found in parks, gardens, and Christmas tree farms"
+    - "Requires moderate water and doesn't do well in hot, dry areas"
+    
+  physical_characteristics:
+    height_range: "40-60 feet tall in cultivation (up to 200 feet in native habitat)"
+    growth_rate: "Slow to moderate, about 1 foot per year"
+    crown_spread: "20-30 feet wide when mature"
+    lifespan: "Up to 150-200 years"
+    trunk_diameter: "1-2 feet across when mature"
+    root_system: "Moderately deep with wide spreading lateral roots"
+    toxicity: "Not toxic to humans or pets, though eating large amounts of needles may cause stomach upset"
+    
+  conservation_status:
+    status: "Least Concern globally, not native to California"
+    threats: "In native range, threatened by logging and climate change"
+    protection_efforts: "Protected in national parks in Georgia and Russia; widely cultivated worldwide"
+  
+  kid_friendly_cultural_significance:
+    - culture: "Christmas Celebrations"
+      physical_uses:
+        - "One of the best Christmas trees because the needles stay on longer and don't drop all over your floor!"
+        - "Strong branches can hold lots of ornaments and lights"
+        - "The spacing between branches makes it easy to hang ornaments"
+      symbolic_meaning:
+        - "Evergreen trees like this one remind us that green life continues even in winter"
+        - "The triangle shape points up like an arrow to the sky, which some people see as pointing to heaven"
+  
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: NEEDLE-ARRANGE-01"  # Single needles
+      - "feature_id: NEEDLE-SHAPE-01"  # Flat needles
+    confirmation_features:
+      - "feature_id: TREE-FORM-01"  # Pyramidal shape
+      - "feature_id: NEEDLE-FEAT-03"  # White lines below
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-TYPE-02", "TREE-FORM-01"]  # Evergreen, pyramidal
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-ARRANGE-01", "NEEDLE-SHAPE-01"]  # Single needles, flat
+      - distance: "close_inspection"
+        features_to_check: ["NEEDLE-FEAT-03", "CONE-POS-01"]  # White lines below, upright cones
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "NEEDLE-SHAPE-01", "NEEDLE-FEAT-03"]
+        notes: "New growth provides good color contrast with older needles"
+      summer:
+        reliability: "Very high"
+        key_features: ["NEEDLE-ARRANGE-01", "NEEDLE-SHAPE-01", "CONE-POS-01"]
+        notes: "Cones may be visible on mature trees"
+      fall:
+        reliability: "High" 
+        key_features: ["LEAF-TYPE-02", "TREE-FORM-01", "NEEDLE-FEAT-03"]
+        notes: "Evergreen nature stands out as deciduous trees change color"
+      winter:
+        reliability: "Very high"
+        key_features: ["LEAF-TYPE-02", "TREE-FORM-01", "NEEDLE-SHAPE-01"]
+        notes: "Perfect pyramid shape and evergreen nature very distinctive in winter"
+    misidentification_risks:
+      - species: "Noble Fir (Abies procera)"
+        distinguishing_features: "Caucasian Fir has flatter needle arrangement; Noble Fir has more upward-pointing needles and bluer color"
+      - species: "White Fir (Abies concolor)"
+        distinguishing_features: "Caucasian Fir needles are shorter and arranged more flatly; White Fir has longer, more irregular needle arrangement"
+      - species: "Grand Fir (Abies grandis)"
+        distinguishing_features: "Caucasian Fir has shorter needles and more perfect pyramid shape; Grand Fir has longer needles and less regular branching"
+  
+  wildlife_value:
+    - "Seeds eaten by birds including finches, chickadees, and siskins"
+    - "Dense evergreen foliage provides winter shelter for birds and small mammals"
+    - "Branch structure provides nesting sites for birds"
+    - "Fresh spring growth may be browsed by deer in some areas"

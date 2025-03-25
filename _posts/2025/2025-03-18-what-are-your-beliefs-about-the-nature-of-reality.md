@@ -1,13 +1,13 @@
 ---
 title        : "What are your beliefs about the nature of reality?"
-link         : https://medium.com/@buster/what-are-your-beliefs-about-the-nature-of-reality-524b010d75e6
+slink         : https://buster.substack.com/p/what-are-your-beliefs-about-the-nature?utm_source=activity_item
 author       : me
 
 one_liner    : "Discover your cosmic worldview with this short two-step interview"
 image			   : 
 piles			   : ['self-reflection']
 comment_link : 
-redirect		 : true
+redirect     : false
 ---
 
 This short interview is designed to be a fun way to help you identify your fundamental beliefs about the nature of reality (aka your cosmology), and attempts to get kind of specific about it. It's not meant to be a comprehensive survey of all possible cosmologies, but rather a tool to help you identify your own cosmology and perhaps to spark a fun conversation with others.
@@ -17,32 +17,34 @@ This short interview is designed to be a fun way to help you identify your funda
 Start at **Question 1**. Follow the instructions after each answer until you reach your initial cosmology. Then proceed to **Step 2** to refine your result.
 
 **1.** *Which statement best captures your beliefs about the fundamental nature of reality?*  
-   - **Reality is the creation of one supreme being** → go to **Question 2**.  
-   - **Reality involves the interaction of multiple gods or spiritual entities** → go to **Question 3**.
-   - **Reality is primarily consciousness or mind, not physical matter** → go to **Question 4**.
-   - **Reality consists primarily of physical processes and natural laws** → go to **Question 5**.
-   - **Reality includes accessible metaphysical energies or forces** → go to **Question 6**.
-   - **Reality differs significantly from mainstream scientific or religious consensus** → go to **Question 11**.
+   - Reality is the creation of **one supreme being** → go to **Question 2**.  
+   - Reality involves the interaction of **multiple gods or spiritual entities** → go to **Question 3**.
+   - Reality, God, the supreme being, Source, the universe, etc are all **synonyms for the same thing** → Continue to refine by going to **Pantheism** in **Step 2**.
+   - Reality consists primarily of **physical processes and natural laws** → go to **Question 5**.
+   - Reality is primarily **consciousness or mind**, not physical matter → go to **Question 4**.
+   - None of the above, but reality does have **accessible metaphysical energies or supernatural forces** that go beyond what can be strictly defined as natural → go to **Question 6**.
+   - None of the above, but I do have beliefs about reality that differ significantly from mainstream scientific or religious consensus → go to **Question 11**.
+   - I don't really have any strong beliefs about the nature of reality → go to **Question 12**.
 
 **2.** *Which best describes your view of the supreme being's relationship to the universe?*  
-   - **The supreme being exists entirely separate from creation** → go to **Question 7**.  
-   - **The supreme being and the universe are identical; all reality is divine** → Continue to refine by going to **Pantheism** in **Step 2**.
-   - **The universe exists within the supreme being, who both permeates and transcends it** → Continue to refine by going to **Panentheism** in **Step 2**.
-   - **The supreme being created the universe but is no longer involved** → Continue to refine by going to **Deism** in **Step 2**.
+   - The supreme being exists **entirely separate from creation** → go to **Question 7**.  
+   - The universe exists **within the supreme being**, who both permeates and transcends it → Continue to refine by going to **Panentheism** in **Step 2**.
+   - The supreme being created the universe but is no longer involved → Continue to refine by going to **Deism** in **Step 2**.
 
 **3.** *What kind of gods or spirits primarily influence the world?*  
    - **Multiple deities or gods** → Continue to refine by going to **Polytheism** in **Step 2**. 
-   - **Spirits exist in all things (animals, plants, mountains, etc.)** → Continue to refine by going to **Animism** in **Step 2**.
+   - **Nature spirits exist in all things (animals, plants, mountains, etc.)** → Continue to refine by going to **Animism** in **Step 2**.
 
 **4.** *How would you characterize the relationship between consciousness and reality?*
    - **Consciousness is the foundation from which all physical reality appears** Like a screen on which all movies appear—the screen exists independently of any particular movie and is more fundamental than the images → Continue to refine by going to **Consciousness-First Cosmology** in **Step 2**.
    - **The apparent separation between self and world is an illusion; reality is unified beyond concepts** Like waves and water—not two separate things, just different ways of experiencing the same reality. The wave isn't created by the water; it is the water in motion. → Continue to refine by going to **Non-Dual & Beyond-Concept Traditions** in **Step 2**. 
    - **The entire universe is divine or sacred in nature** Like a cosmic mind dreaming or thinking the universe, where everything that exists is a divine thought or idea within universal intelligence → Continue to refine by going to **Pantheism** in **Step 2**.
+   - **Reality is a vast web of relationships between all beings** (human and non-human) in a living system where place, ceremony, and ancestral knowledge are central, requiring respect and reciprocity. → Continue to refine by going to **Indigenous Relational Worldview** in **Step 2**.
    - **The physical world conceals or distracts from a higher spiritual reality** Like being trapped in a convincing virtual reality created by a flawed programmer, with liberation requiring awakening to the deception. → Continue to refine by going to **Gnosticism/Esoteric Dualism** in **Step 2**.
 
 **5.** *Do you generally **trust mainstream science** on the fundamental nature and history of the universe (e.g. Big Bang ~13.8 billion years ago, Earth is a globe orbiting the Sun)?*  
-   - **Yes, and I believe physical processes operate without supernatural intervention** → go to **Question 8**.  
-   - **Yes, but I find spiritual meaning within the natural world** → Continue to refine by going to **Spiritual Naturalism** in **Step 2**.
+   - **Yes**, and I believe physical processes operate **without the need for supernatural meaning** to be applied → go to **Question 8**.  
+   - **Yes**, and I find **spiritual meaning within the natural world** → Continue to refine by going to **Spiritual Naturalism** in **Step 2**.
    - **No** → go to **Question 11**.
 
 **6.** *Which approach to accessing metaphysical energies resonates with you the most?*
@@ -50,28 +52,23 @@ Start at **Question 1**. Follow the instructions after each answer until you rea
    - **I'm exploring various spiritual paths while maintaining healthy skepticism** → Continue to refine by going to **Agnostic Spiritual Seeker** in **Step 2**.
 
 **7.** *Which best describes your view of God's relationship to creation?*
-   - **God created the universe according to literal scriptural accounts** (e.g., in 6 days, or only a few thousand years ago) → Continue to refine by going to **Young Earth Creationism** in **Step 2**.
-   - **God works through natural processes like evolution, while remaining separate from creation** → Continue to refine by going to **Theistic Evolution** in **Step 2**.
-   - **God encompasses and interpenetrates all of creation, which exists within divine reality** → Continue to refine by going to **Panentheism** in **Step 2**.
+   - God created the universe according to **literal scriptural accounts** (e.g., in 6 days, or only a few thousand years ago) → Continue to refine by going to **Young Earth Creationism** in **Step 2**.
+   - God **works through natural processes** like evolution, while remaining separate from creation** → Continue to refine by going to **Theistic Evolution** in **Step 2**.
 
 **8.** *Do you believe that we likely live in an artificial simulation or experiment created by more technologically-advanced beings?*  
    - **Yes** → Continue to refine by going to **Simulation Hypothesis** in **Step 2**.  
-   - **No** → go to **Question 9**.
-
-**9.** *Do you believe that consciousness, rather than matter, is the fundamental reality of the universe?*
-   - **Yes** → Continue to refine by going to **Consciousness-First Cosmology** in **Step 2**.
-   - **No** (you believe matter or physical laws are more fundamental) → go to **Question 10**.
+   - **No** → go to **Question 10**.
 
 **10.** *Do you believe our universe is just **one of many** universes (part of a larger Multiverse)?*  
    - **Yes** → Continue to refine by going to **Multiverse Theory** in **Step 2**.  
    - **No** → Continue to refine by going to **Scientific Materialism** in **Step 2**.
 
 **11.** *Which of the following perspectives do you align with most? Pick the closest match.
-   - **a. Non-Dual & Beyond-Concept Traditions** – You believe reality transcends dualistic thinking and conceptual frameworks. Truth cannot be fully captured by fixed views but must be directly experienced through insight that goes beyond conventional understanding. → Continue to refine by going to **Non-Dual & Beyond-Concept Traditions** in **Step 2**.
-    - **b. Flat Earth/Geocentrism** – You reject the globe model and believe Earth is flat or the unmoving center of the universe, with mainstream astronomy being a deception. → Continue to refine by going to **Flat Earth Conspiracy** in **Step 2**.
-    - **d. Ancient Aliens** – *You believe extraterrestrials visited Earth in antiquity and shaped human civilization, with humanity's past and possibly our origins being interwoven with advanced alien species.* → Continue to refine by going to **Ancient Astronaut Theory** in **Step 2**.  
-    - **e. Indigenous Cosmologies** – *You see reality as a vast web of relationships between all beings (human and non-human) in a living system where place, ceremony, and ancestral knowledge are central, requiring respect and reciprocity.* → Continue to refine by going to **Indigenous Relational Worldview** in **Step 2**.
-    - **f. None of the above** – *You're skeptical of mainstream narratives about reality but don't commit to any one alternative theory, preferring to question established explanations while remaining open to multiple possibilities.* → Continue to refine by going to **Unconventional Skeptic** in **Step 2**.
+    - **Flat Earth/Geocentrism** – You reject the globe model and believe Earth is flat or the unmoving center of the universe, with mainstream astronomy being a deception. → Continue to refine by going to **Flat Earth Conspiracy** in **Step 2**.
+    - **Ancient Aliens** – *You believe extraterrestrials visited Earth in antiquity and shaped human civilization, with humanity's past and possibly our origins being interwoven with advanced alien species.* → Continue to refine by going to **Ancient Astronaut Theory** in **Step 2**.  
+    - **None of the above** – *You're skeptical of mainstream narratives about reality but don't commit to any one alternative theory, preferring to question established explanations while remaining open to multiple possibilities.* → Continue to refine by going to **Unconventional Skeptic** in **Step 2**.
+
+**12.** [Add instructions here acknowledging this perspective as valid, and gently suggesting that they go back to question 1 and take a path "just for fun" to see if anything resonates.]
 
 If you've been directed to Step 2, proceed to the next section to refine your cosmology! 
 
@@ -167,6 +164,8 @@ b. **Scientific Pantheism** – You revere the universe and nature as revealed b
 
 c. **Monistic Pantheism** – You believe all apparent diversity and multiplicity are ultimately illusory; there is only one reality, and that reality is divine. Individual existence is a kind of dream or misperception of the fundamental oneness.
 
+d. If none of these categories quite fit, check out the section on **Spiritual Naturalism**.
+
 ### New Age Spiritualism
 
 Unlike dogmatic religious traditions, New Age Spiritualism embraces direct personal engagement with spiritual energies, consciousness transformation, and metaphysical practices drawn from multiple wisdom traditions, emphasizing individual experience and intuitive knowing over institutional authority.
@@ -196,6 +195,8 @@ c. **Philosophical Naturalism** – You find meaning, value, and purpose within 
 d. **Embodied Spirituality** – You experience spirituality primarily through the body and its connection to the natural world. Your practice might include movement, dance, wilderness experiences, or somatic awareness as pathways to transcendence and meaning. You find that direct physical experience of being alive in the natural world provides a form of spiritual nourishment that doesn't require supernatural beliefs.
 
 e. **Naturalistic Taoism** – You appreciate the Taoist emphasis on harmony with natural processes, the balance of complementary forces, and the wisdom of non-action (wu-wei). Rather than viewing the Tao as a metaphysical force, you see it as a powerful metaphor for the patterns and processes of nature. Your practice focuses on aligning with natural rhythms and finding wisdom in the natural world without supernatural elements.
+
+d. If none of these categories quite fit, check out the section on **Pantheism**.
 
 ### Non-Dual & Beyond-Concept Traditions
 

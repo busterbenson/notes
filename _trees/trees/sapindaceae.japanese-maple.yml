@@ -1,0 +1,317 @@
+tree:
+  common_name: "Japanese Maple"
+  scientific_name: "Acer palmatum"
+  family: "Sapindaceae"
+  
+  # Basic summary information
+  summary: "A small, elegant deciduous tree with delicate star-shaped leaves that often have five to seven pointed lobes. Known for beautiful fall colors ranging from yellow to bright red to deep purple. Many varieties exist with different leaf shapes, colors, and growth habits, from upright trees to weeping forms."
+  
+  # Identification priority
+  identification_path:
+    primary_markers: "Star-shaped leaves with 5-7 pointed lobes; smooth gray bark; brilliant fall colors in reds, oranges or purples"
+    secondary_markers: "Small tree with graceful branches; leaves arranged opposite each other on twigs; paired winged seeds (samaras)"
+    seasonal_markers: "Often has reddish or purple leaves in spring and summer (many varieties); spectacular fall colors; delicate branching pattern visible in winter"
+    similar_species_differentiation: "Unlike other maples, typically much smaller; has more delicate leaves with deeper lobes; many varieties have red or purple leaves year-round"
+  
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves in fall"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Leaves are single, not divided into smaller leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves grow directly across from each other on stems"
+      
+      - feature_id: "LEAF-SHAPE-05"  # Lobed
+        notes: "Leaves have 5-7 pointed lobes arranged like a star"
+      
+      - feature_id: "FRUIT-TYPE-08"  # Paired samaras
+        notes: "Produces winged seeds in pairs at an angle to each other"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Bark remains relatively smooth even on older trees"
+      
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        notes: "Bark is grayish, sometimes with slight green tint on younger branches"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        notes: "Native to Japan, Korea, and China; not native to California"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk"
+        exceptions: "May develop multiple trunks, especially in some varieties or if damaged when young"
+      
+      - feature_id: "TREE-SIZE-01"  # Short tree
+        notes: "Usually stays under 20 feet tall (about as tall as a two-story house)"
+        exceptions: "Some varieties can reach 30 feet; dwarf varieties may stay under 10 feet"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Often has a rounded or dome-shaped form"
+        exceptions: "Some varieties have weeping, upright, or spreading forms"
+      
+      - feature_id: "LEAF-FALL-02"  # Red fall color
+        notes: "Most varieties turn bright red to deep crimson in fall"
+        exceptions: "Some varieties turn orange, yellow, or purple instead"
+    
+    sometimes_true:
+      - feature_id: "LEAF-COLOR-05"  # Purple-red
+        conditions: "Many red or purple-leafed varieties throughout growing season"
+        notes: "Leaf color depends on variety - may be green, red, purple, or variegated"
+      
+      - feature_id: "LEAF-COLOR-01"  # Dark green
+        conditions: "Green-leafed varieties during growing season"
+        notes: "Standard varieties have green leaves, often with red edges"
+      
+      - feature_id: "TREE-FORM-03"  # Weeping form
+        conditions: "Certain varieties like 'Crimson Queen', 'Waterfall', or 'Tamukeyama'"
+        notes: "Some varieties have gracefully drooping branches"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated
+        conditions: "Most varieties"
+        notes: "Leaf edges typically have small teeth along the lobes"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "When planted in suitable locations with some protection"
+        notes: "Popular in gardens, patios, and landscaped areas"
+      
+      - feature_id: "GEO-REGION-03"  # Southern California
+        conditions: "In appropriate microclimates with afternoon shade"
+        notes: "Can struggle in hot, dry conditions of inland Southern California"
+      
+      - feature_id: "GEO-REGION-02"  # Central California
+        conditions: "In gardens with some afternoon shade"
+        notes: "Prefers protected locations in Central California"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "In gardens and landscapes"
+        notes: "Does well in Northern California's cooler, moister climate"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops all its leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has compound leaves"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves are always opposite, never alternate"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Never has thorns or spines"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Not originally from California; brought from Japan and East Asia"
+  
+  # Kid-friendly identification - expanded with open-ended, creative descriptions
+  kid_friendly_identification:
+    primary_identifier: "Star-shaped leaves with 5-7 pointed lobes, often in beautiful colors like red or purple"
+    memorable_comparison: "The leaves look like tiny red or green stars with pointy tips"
+    touch_tip: "Feel the leaf - it's thin and delicate, like paper, with little points all around the edge"
+    smell_tip: "Crush a leaf gently and smell - it has a light, fresh scent"
+    fun_fact: "There are over 1,000 different types of Japanese maples, with leaves ranging from normal green to bright red, deep purple, and even types with pink and white patches!"
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the size. Is it a small tree or large shrub, usually not taller than a two-story house?"
+        yes_next: 2
+        no_next: "Might not be a Japanese Maple - they're usually small trees"
+      - step: 2
+        instruction: "Look at the leaves. Are they star-shaped with 5-7 pointy lobes like a pointy hand?"
+        yes_next: 3
+        no_next: "Not a Japanese Maple - check trees with star-shaped leaves"
+      - step: 3
+        instruction: "Check how the leaves grow on the branch. Do they grow directly opposite each other, not in a zigzag pattern?"
+        yes_next: 4
+        no_next: "Not a Japanese Maple - they have opposite leaves"
+      - step: 4
+        instruction: "Look at the leaf color. Is it red, purple, or green (sometimes with red edges)?"
+        yes_next: "You found a Japanese Maple!"
+        no_next: "Might not be a Japanese Maple - they typically have green, red, or purple leaves"
+  
+  regional_notes:
+    - region: "Southern California"
+      notes: "Needs afternoon shade and protection from hot, dry winds"
+      locations: "Found in gardens, patios, and landscaped areas with some shelter"
+    - region: "Central California"
+      notes: "Grows well with afternoon shade in hotter areas"
+      locations: "Common in gardens and as understory trees"
+    - region: "Northern California"
+      notes: "Thrives in cooler coastal and foothill areas"
+      locations: "Popular in gardens and landscapes"
+      
+  confirmation_checklist:
+    - feature: "Star-shaped leaves with 5-7 pointed lobes"
+      reliability: "Very high"
+      visibility: "Easy to see from nearby"
+    - feature: "Opposite leaf arrangement"
+      reliability: "Very high"
+      visibility: "Need to look at branches closely"
+    - feature: "Small size and graceful branching"
+      reliability: "High"
+      visibility: "Visible from far away"
+    - feature: "Red, purple, or green leaves (depending on variety)"
+      reliability: "High"
+      visibility: "Easy to see from far away"
+    
+  look_alike_species:
+    - species: "Other Maple Species (Acer species)"
+      differences: "Other maples are typically much larger trees; have less deeply cut leaf lobes; usually only have green leaves during growing season"
+      identification_tip: "If it's a large tree with less fancy, mostly green leaves, it's probably a different maple species"
+    - species: "Sweetgum (Liquidambar styraciflua)"
+      differences: "Has star-shaped leaves but they are arranged alternately (not opposite); produces spiky ball-like fruits"
+      identification_tip: "If the leaves aren't directly across from each other on the twig, or if you see spiky ball fruits, it's sweetgum not Japanese maple"
+    - species: "Red-Leaf Varieties of Other Trees"
+      differences: "Other red-leaf trees like purple leaf plum have different leaf shapes; not star-like with multiple pointed lobes"
+      identification_tip: "Check the leaf shape - Japanese maples have distinct star-shaped leaves with 5-7 pointed lobes"
+      
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaves emerge in bright colors - red, pink, or light green depending on variety"
+      reproductive_activity: "Small, inconspicuous flowers appear with the leaves"
+      identification_tips: "Fresh leaf color is often brightest in spring"
+      kid_friendly_tip: "In spring, the new leaves unfold like tiny colorful stars - red varieties look like they're covered in little red stars!"
+    
+    - season: "Summer" 
+      visual_changes: "Leaf color may deepen or fade depending on variety and sun exposure"
+      reproductive_activity: "Develops paired winged seeds (samaras)"
+      identification_tips: "Full summer foliage shows variety-specific characteristics"
+      kid_friendly_tip: "In summer, the tree is fully covered with star-shaped leaves that provide nice shade, and you might see pairs of helicopter seeds forming"
+    
+    - season: "Fall"
+      visual_changes: "Spectacular color change to bright reds, oranges, or yellows"
+      reproductive_activity: "Seeds mature and may begin to drop"
+      identification_tips: "Fall color is a key identifier"
+      kid_friendly_tip: "Fall is when Japanese maples put on their best show - the leaves turn amazing colors like bright red, orange, or yellow, making the tree look like it's on fire!"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches reveal elegant branching pattern"
+      reproductive_activity: "Dormant; may retain some dried seeds"
+      identification_tips: "Delicate branch structure and smooth gray bark are visible"
+      kid_friendly_tip: "In winter, you can see the beautiful pattern of branches - some varieties have branches that droop like a waterfall and others grow more upright"
+      
+  cultural_ecological_notes:
+    - "Provides dappled shade for shade-loving plants beneath"
+    - "Seeds provide some food for birds and small mammals"
+    - "Low water needs once established, though not truly drought-tolerant"
+    - "Many varieties have been cultivated for centuries in Japan"
+    - "Often used in Japanese gardens and bonsai"
+    
+  range_within_california:
+    - "Planted throughout California in suitable microclimates"
+    - "Does best in partial shade, especially with afternoon protection in hot areas"
+    - "Prefers well-drained soil with some organic matter"
+    - "More common in coastal and northern regions than hot inland areas"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Japanese"
+      physical_uses:
+        - "Extensively used in traditional Japanese gardens as focal points"
+        - "Cultivated as bonsai specimens for centuries"
+        - "Different varieties selected for specific garden effects"
+        - "Used to mark seasonal changes, especially fall color"
+      symbolic_meaning:
+        - "Symbol of elegance, grace, and the beauty of impermanence"
+        - "The changing leaf colors represent the passage of seasons and time"
+        - "In Buddhism, the red leaves symbolize the changing nature of life"
+        - "Different varieties represent different aspects of nature's beauty"
+    
+    - culture: "Western Garden Tradition"
+      physical_uses:
+        - "Planted as specimen trees in prominent garden locations"
+        - "Used in containers and patios for small spaces"
+        - "Incorporated in Asian-inspired garden designs"
+        - "Selected for ornamental characteristics in landscape design"
+      symbolic_meaning:
+        - "Symbol of exotic beauty and collecting rare plant varieties"
+        - "Represents attention to detail and appreciation of subtle beauty"
+        - "Often associated with meditation and peaceful garden spaces"
+        - "Fall color symbolizes the beauty found in seasonal changes"
+    
+    - culture: "Modern California Landscape"
+      physical_uses:
+        - "Used as accent trees in shady or protected garden spots"
+        - "Planted in containers for patios and small spaces"
+        - "Incorporated into water-conscious landscapes for beauty with moderate water use"
+        - "Used to create visual interest with color and texture"
+      symbolic_meaning:
+        - "Represents the blending of Eastern and Western garden traditions in California"
+        - "Symbol of horticultural sophistication and garden design"
+        - "The many varieties symbolize diversity and individual expression"
+        - "Represents the balance of delicate beauty and resilience"
+    
+  # Additional physical characteristics not captured in features
+  physical_characteristics:
+    height_range: "10-25 feet (about as tall as a one to two-story house)"
+    growth_rate: "Slow, about 1 foot or less per year"
+    crown_spread: "10-25 feet wide when mature (about as wide as a large room)"
+    lifespan: "Can live 60-100 years with proper care"
+    trunk_diameter: "Usually less than 1 foot across even when mature (about as wide as a dinner plate)"
+    root_system: "Relatively shallow, fibrous roots; not usually invasive"
+    toxicity: "Not toxic to humans or pets"
+    
+  conservation_status:
+    status: "Secure in cultivation; not endangered"
+    threats: 
+      - "Susceptible to sunburn in hot, exposed locations"
+      - "Can suffer from verticillium wilt disease"
+      - "Sensitive to extreme drought"
+      - "Some wild populations in native range declining due to habitat loss"
+    protection_efforts:
+      - "Preservation of cultivar diversity through botanical gardens"
+      - "Some conservation of wild populations in Japan and China"
+      - "Not a significant conservation concern as widely cultivated"
+    
+  # Decision tree mapping - helps with algorithm creation
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-SHAPE-05"  # Lobed
+      - "feature_id: LEAF-ARRANGE-02"  # Opposite
+      - "feature_id: TREE-SIZE-01"  # Short tree
+    confirmation_features:
+      - "feature_id: LEAF-FALL-02"  # Red fall color
+      - "feature_id: FRUIT-TYPE-08"  # Paired samaras
+      - "feature_id: BARK-TEXT-01"  # Smooth bark
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-01", "TREE-FORM-02", "LEAF-COLOR-05"]  # Small tree, rounded form, often red leaves
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SHAPE-05", "LEAF-ARRANGE-02", "BARK-TEXT-01"]  # Star-shaped leaves, opposite arrangement, smooth bark
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-02", "FRUIT-TYPE-08"]  # Serrated leaf edges, paired winged seeds
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-SHAPE-05", "LEAF-ARRANGE-02", "LEAF-COLOR-05"]
+        notes: "New leaf color and shape are distinctive in spring"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-SHAPE-05", "LEAF-ARRANGE-02", "TREE-SIZE-01"]
+        notes: "Full foliage shows characteristic leaf shape and arrangement"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["LEAF-FALL-02", "LEAF-SHAPE-05", "FRUIT-TYPE-08"]
+        notes: "Fall color combined with leaf shape and winged seeds makes identification easy"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["BARK-TEXT-01", "TREE-SIZE-01", "TREE-FORM-02"]
+        notes: "Delicate branching pattern, smooth bark, and small size are helpful winter identifiers"
+    misidentification_risks: "Most often confused with other maple species or occasionally with sweetgum"
+
+  wildlife_value:
+    nesting_sites: "Small birds may nest in the branches"
+    food_source: "Seeds eaten by some birds and small mammals"
+    shelter: "Dense foliage provides seasonal shelter for birds"
+    ecological_notes: "Non-native but provides some habitat value; not invasive"
+    
+  propagation_information:
+    growing_conditions: "Prefers well-drained, slightly acidic soil with organic matter"
+    water_needs: "Moderate; needs regular water, especially when young"
+    planting_tips: "Plant in locations protected from hot afternoon sun and strong winds"
+    maintenance: "Minimal pruning needed; remove dead or crossing branches in winter"
+    special_notes: "Many cultivars available with different leaf colors, shapes, and growth habits; some dwarf varieties grow well in containers"

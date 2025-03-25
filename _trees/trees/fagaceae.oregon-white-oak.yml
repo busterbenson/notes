@@ -1,0 +1,280 @@
+tree:
+  common_name: "Oregon White Oak"
+  scientific_name: "Quercus garryana"
+  family: "Fagaceae"
+  
+  # Basic summary information
+  summary: "A deciduous oak tree with deeply lobed leaves, grayish-white bark, and acorns with shallow cups. It grows in woodland areas, has a broad, rounded crown, and can live for hundreds of years."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Deeply lobed leaves with rounded lobes (never pointed); grayish-white, furrowed bark; acorns with shallow cups"
+    secondary_markers: "Rounded, spreading crown on mature trees; leaves clustered at branch ends; bright green leaves that turn golden-brown in fall"
+    seasonal_markers: "Hanging male catkins in spring; acorns maturing in fall; golden-brown fall color"
+    similar_species_differentiation: "Unlike Blue Oak, has deeper and more numerous leaf lobes; unlike Valley Oak, has more compact growth form and less deeply furrowed bark"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all leaves in fall"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple
+        notes: "Leaves are simple, not divided into separate leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves alternate along branches, not opposite"
+      
+      - feature_id: "LEAF-SHAPE-05"  # Lobed
+        notes: "Leaves deeply lobed with 5-9 rounded lobes, never pointed"
+      
+      - feature_id: "FRUIT-TYPE-01"  # Acorns present
+        notes: "Produces acorns with shallow, scaly cups"
+      
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        notes: "Bark is grayish-white and furrowed"
+
+    usually_true:
+      # Features that are primarily true, but have notable exceptions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with a single main trunk"
+        exceptions: "May develop multiple trunks after damage or when growing in open areas"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Typically reaches 50-80 feet in height at maturity"
+        exceptions: "May be shorter in poor conditions or in its shrubby form at higher elevations"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Develops a broad, rounded crown when mature, especially in open areas"
+        exceptions: "Crown shape may be narrower or irregular in forest settings"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        notes: "Bark develops shallow furrows with age"
+        exceptions: "Young trees have smoother bark"
+
+    sometimes_true:
+      # Features that vary with age, season, or conditions
+      - feature_id: "FLOWER-TIME-01"  # Spring flowering
+        conditions: "Spring as new leaves emerge"
+        notes: "Male flowers appear as drooping yellow-green catkins"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Fall"
+        notes: "Leaves turn golden-brown or yellow-brown before dropping"
+      
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        conditions: "When damaged or growing in open areas"
+        notes: "Can develop multiple trunks from the base"
+      
+      - feature_id: "HABITAT-LOC-02"  # Mountain habitat
+        conditions: "At higher elevations"
+        notes: "Can grow as a shrubby form at higher elevations"
+      
+      - feature_id: "TREE-SIZE-01"  # Short tree
+        conditions: "In shrubby form at elevation or in poor conditions"
+        notes: "Can be much shorter (20-30 feet) in harsh conditions"
+
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Never keeps its leaves through winter"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has compound leaves, always simple"
+      
+      - feature_id: "LEAF-EDGE-05"  # Spiny
+        notes: "Leaf lobes are always rounded, never spiny or pointed"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Produces acorns, not cones"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A tree with leaves that look like they have big rounded bites taken out of them, light gray bark, and acorns with shallow cups"
+    memorable_comparison: "The leaves look like they've been cut with rounded cookie cutters on both sides"
+    touch_tip: "Feel the thick, leathery leaves - they're stiff but not prickly"
+    smell_tip: "Crush a leaf gently and notice the leaf has very little smell compared to other oaks"
+    fun_fact: "Oregon White Oaks can live to be over 500 years old! The acorns were so important to Native Americans that they carefully managed oak woodlands with controlled fires to make sure the trees produced lots of acorns every year."
+    
+    detective_steps:
+      - step: 1
+        instruction: "Look at the leaf shape. Do the leaves have deep rounded lobes (like smooth waves) around the edges, never sharp points?"
+        yes_next: 2
+        no_next: "Not an Oregon White Oak - check other oak species with pointed lobes or trees with different leaf shapes"
+      - step: 2
+        instruction: "Look at the bark color. Is it light grayish-white with shallow grooves?"
+        yes_next: 3
+        no_next: "Might be a different oak species - check Blue Oak or Valley Oak which have different bark"
+      - step: 3
+        instruction: "Look for acorns (in summer and fall). Do they have shallow cups that cover only the bottom quarter of the acorn?"
+        yes_next: "You found an Oregon White Oak! Note where it grows - they often grow in grassy woodlands or savannas."
+        no_next: "If it's spring with no acorns, check for the pale green leaves with rounded lobes and male catkins hanging down like small worms."
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaves emerge light green; male flowers appear as drooping yellow-green catkins"
+      reproductive_activity: "Male catkins release pollen; small female flowers develop at leaf axils"
+      identification_tips: "Catkins and new leaf growth; bright green color of new leaves"
+      kid_friendly_tip: "In spring, look for hanging yellow-green catkins that dangle like little worms and bright green new leaves"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of bright to dark green leaves; acorns begin developing"
+      reproductive_activity: "Acorns grow and develop"
+      identification_tips: "Fully developed lobed leaves; developing acorns becoming visible"
+      kid_friendly_tip: "By summer, the leaves are dark green and stiff, and you can see small green acorns starting to grow"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn golden-brown; acorns mature and drop"
+      reproductive_activity: "Acorns mature and fall from tree"
+      identification_tips: "Golden-brown fall color and mature acorns are distinctive"
+      kid_friendly_tip: "In fall, the leaves turn golden-brown like caramel, and the acorns turn brown and fall to the ground"
+    
+    - season: "Winter"
+      visual_changes: "Tree loses all leaves; branch pattern and gray bark clearly visible"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Distinctive gray bark and growth form; sometimes persistent dried leaves"
+      kid_friendly_tip: "In winter with no leaves, you can see the light gray bark and the twisty branch pattern"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Deeply lobed leaves with rounded (not pointed) lobes"
+      reliability: "Very high"
+      visibility: "Easy - visible during growing season"
+    - feature: "Grayish-white, lightly furrowed bark"
+      reliability: "High"
+      visibility: "Easy - visible year-round"
+    - feature: "Acorns with shallow cups"
+      reliability: "High (when present)"
+      visibility: "Medium - visible in late summer and fall"
+    - feature: "Rounded crown shape in open-grown trees"
+      reliability: "Medium"
+      visibility: "Easy - visible from distance"
+    - feature: "Golden-brown fall color"
+      reliability: "Medium"
+      visibility: "Only visible in fall"
+    
+  look_alike_species:
+    - species: "Blue Oak (Quercus douglasii)"
+      differences: "Oregon White Oak has deeper and more numerous leaf lobes; Blue Oak has blue-green leaves with shallower lobes"
+      identification_tip: "Blue Oak leaves have a bluish-green color and less deeply cut lobes"
+    - species: "Valley Oak (Quercus lobata)"
+      differences: "Valley Oak grows much larger with more deeply furrowed bark and a more open crown"
+      identification_tip: "Valley Oak has more deeply furrowed darker bark and often grows in valley bottoms"
+    - species: "California Black Oak (Quercus kelloggii)"
+      differences: "California Black Oak has pointed lobes on leaves, not rounded; darker bark"
+      identification_tip: "If the leaf lobes have pointed tips like a star, it's likely California Black Oak, not Oregon White Oak"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Native American (Kalapuya, Chinook, and other Pacific Northwest tribes)"
+      physical_uses:
+        - "Harvested acorns as a major food staple after leaching out the bitter tannins"
+        - "Used oak wood for tools, bowls, and other implements"
+        - "Collected oak galls to make medicine and dyes"
+      symbolic_meaning:
+        - "Represented strength, endurance, and provision as a critical food source"
+        - "Featured in creation stories and cultural traditions"
+        - "Managed oak woodlands with fire to increase acorn production"
+    
+    - culture: "Early American Settlers"
+      physical_uses:
+        - "Used the strong, durable wood for wagon wheels, barrels, and furniture"
+        - "Cleared some oak woodlands for agriculture while keeping some trees for shade"
+        - "Valued the trees as markers of good agricultural land"
+      symbolic_meaning:
+        - "Represented the fertility and productivity of the land"
+        - "Shade trees became social gathering places and landmarks"
+    
+    - culture: "Modern Conservation"
+      physical_uses:
+        - "Protected in restoration projects focusing on oak woodland habitats"
+        - "Planted in native landscape projects"
+        - "Studied for climate adaptation as temperatures rise"
+      symbolic_meaning:
+        - "Symbolizes native biodiversity and healthy ecosystems"
+        - "Represents the historical ecology of the Pacific Northwest"
+        - "Connection to indigenous land management practices"
+    
+  cultural_ecological_notes:
+    - "Keystone species in oak woodland ecosystems"
+    - "Acorns are critical food for many wildlife species"
+    - "Historically maintained by Native American burning practices"
+    - "Mature trees provide essential habitat for many bird and mammal species"
+    - "Oak woodlands are among the most biodiverse ecosystems in the region"
+    
+  range_within_california:
+    - "Found in northern California, particularly in foothills and valleys"
+    - "Common in the northern Coast Ranges and Klamath Mountains"
+    - "Grows primarily below 5,000 feet elevation"
+    - "Often found in oak savannas and woodlands"
+    - "Usually grows in well-drained soils, tolerates seasonal drought"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "50-80 feet at maturity (can be shorter at high elevations)"
+    growth_rate: "Slow to moderate (less than 1 foot per year)"
+    crown_spread: "40-80 feet wide at maturity in open areas"
+    lifespan: "400-500+ years"
+    trunk_diameter: "Up to 3-5 feet at maturity"
+    root_system: "Deep taproot with extensive lateral roots"
+    toxicity: "Acorns contain tannins that are toxic if eaten raw, but safe after proper preparation"
+  
+  conservation_status:
+    status: "Decreasing - oak woodland habitat is declining"
+    threats: 
+      - "Habitat loss due to development and agriculture"
+      - "Climate change affecting suitable habitat range"
+      - "Fire suppression leading to encroachment by conifers"
+      - "Sudden Oak Death (though less susceptible than some oak species)"
+    protection_efforts:
+      - "Oak woodland conservation programs"
+      - "Restoration projects focusing on oak savanna habitat"
+      - "Cultural burns and prescribed fire to maintain oak woodland structure"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-SHAPE-05"  # Lobed
+      - "feature_id: FRUIT-TYPE-01"  # Acorns
+    confirmation_features:
+      - "feature_id: BARK-COLOR-01"  # Gray bark
+      - "feature_id: LEAF-EDGE-01"  # Rounded lobes (using "entire" as proxy for rounded edges)
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-TYPE-01", "TREE-FORM-02"]  # Deciduous, rounded crown
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SHAPE-05", "BARK-COLOR-01"]  # Lobed leaves, gray bark
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-01", "LEAF-EDGE-01"]  # Acorns, rounded lobes
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["FLOWER-TIME-01", "LEAF-SHAPE-05"]  # Spring flowering, lobed leaves
+        notes: "Catkins and fresh green leaves are distinctive"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-SHAPE-05", "BARK-COLOR-01", "FRUIT-TYPE-01"]  # Lobed leaves, gray bark, acorns
+        notes: "Fully developed lobed leaves; developing acorns"
+      
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-FALL-01", "FRUIT-TYPE-01", "LEAF-SHAPE-05"]  # Yellow fall color, acorns, lobed leaves
+        notes: "Golden-brown fall color; mature acorns"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["BARK-COLOR-01", "TREE-FORM-02"]  # Gray bark, rounded crown
+        notes: "Distinctive gray bark and growth form help with winter identification"
+    misidentification_risks: 
+      - "Other oak species have similar lobed leaves, but usually with more pointed lobes"
+      - "Blue Oak has similar bark but less deeply lobed leaves with bluer color"
+      - "Valley Oak grows larger with more deeply furrowed bark"
+  
+  wildlife_value:
+    - "Acorns are essential food for many wildlife species including birds, deer, and small mammals"
+    - "Provides nesting habitat for many bird species"
+    - "Supports over 300 species of insects which feed birds and other wildlife"
+    - "Mature trees often develop cavities used by cavity-nesting birds and mammals"
+    - "Leaves support numerous butterfly and moth species including California Sister butterfly"

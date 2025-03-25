@@ -1,0 +1,325 @@
+tree:
+  common_name: "Water Birch"
+  scientific_name: "Betula occidentalis"
+  family: "Betulaceae"
+  
+  # Basic summary information
+  summary: "A small to medium-sized deciduous tree with shiny reddish-brown to black bark that peels in thin horizontal strips. It has small, ovate to triangular leaves with sharp double-toothed edges and produces slender cylindrical catkins. Native to mountainous stream banks and wet areas in western North America, including parts of California."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Grows along waterways; shiny reddish-brown to black bark that peels in horizontal strips; small oval to triangular leaves with doubly-toothed edges"
+    secondary_markers: "Multiple slender trunks; dangling catkins in spring; small upright female catkins developing into cylindrical seed structures"
+    seasonal_markers: "Yellow-brown hanging male catkins in spring; bright green leaves in summer turning yellow in fall; distinctive dark, shiny bark visible year-round"
+    similar_species_differentiation: "Unlike paper birch, has darker bark without bright white color; unlike alders, has peeling bark and lacks woody cone-like seed structures; typically smaller than most other birches"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops all its leaves in fall and grows new ones in spring"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Each leaf is a single piece, not divided into smaller leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow in a zigzag pattern along branches, not directly across from each other"
+      
+      - feature_id: "LEAF-EDGE-03"  # Doubly serrated
+        notes: "Leaf edges have small teeth that themselves have smaller teeth"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Bark peels in thin horizontal strips or layers"
+      
+      - feature_id: "BARK-COLOR-06"  # Dark bark
+        notes: "Bark is shiny reddish-brown to nearly black in color"
+      
+      - feature_id: "FLOWER-TYPE-01"  # Catkins present
+        notes: "Makes long, dangling male flower structures and smaller upright female catkins in spring"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        notes: "Grows along streams, rivers, and in wet areas"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Naturally grows wild in some parts of California"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-02"  # Multiple trunks
+        notes: "Usually grows with multiple slender trunks or stems from the base"
+        exceptions: "Can sometimes have a single trunk when young or in less ideal conditions"
+      
+      - feature_id: "TREE-SIZE-01"  # Small tree
+        notes: "Usually grows 10-25 feet tall (about as tall as a 1-2 story building)"
+        exceptions: "May reach 30-40 feet in ideal conditions"
+      
+      - feature_id: "TREE-FORM-05"  # Irregular crown
+        notes: "Top of the tree usually forms an irregular, somewhat open crown"
+        exceptions: "May be more rounded or narrow when crowded among other trees"
+    
+    sometimes_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        conditions: "Young trees or in certain growing conditions"
+        notes: "May grow with a single trunk when young or in specific situations"
+      
+      - feature_id: "WINTER-FEAT-01"  # Catkins in winter
+        conditions: "Late winter before leaves appear"
+        notes: "Male catkins start developing in winter and open in early spring"
+      
+      - feature_id: "HABITAT-LOC-02"  # Mountain habitat
+        conditions: "Within its natural range near water"
+        notes: "Most common in mountain canyons and streams at higher elevations"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "Within its natural range"
+        notes: "Found in parts of Northern California along mountain streams"
+      
+      - feature_id: "GEO-REGION-03"  # Southern California
+        conditions: "Within its natural range"
+        notes: "Found in some mountain areas of Southern California near water"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Fall season"
+        notes: "Leaves turn bright yellow before falling"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops its leaves in fall; never stays green all year"
+      
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        notes: "Has flat, broad leaves, not tiny scales"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has broad leaves, not needles"
+      
+      - feature_id: "BARK-COLOR-02"  # White bark
+        notes: "Bark is dark reddish-brown to black, never white or light-colored like paper birch"
+      
+      - feature_id: "HABITAT-LOC-01"  # Dry slope habitat
+        notes: "Never grows in dry places; always near water"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        notes: "Needs regular water and doesn't survive in dry conditions"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "A small tree that grows near water with shiny dark bark that peels in thin strips like paper"
+    memorable_comparison: "The bark looks like thin sheets of shiny dark chocolate that are peeling off the tree"
+    touch_tip: "Gently touch the bark - it feels smooth and papery where it's peeling, and you can sometimes carefully peel a small piece yourself"
+    smell_tip: "If you crush a leaf gently, it has a mild, pleasant scent"
+    fun_fact: "Water Birch trees are like nature's water markers! They show you where to find water in mountains and forests. Native Americans and early settlers would look for these trees when they needed to find drinking water!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look where the tree is growing. Is it right next to a stream, river, or in a wet area in the mountains?"
+        yes_next: 2
+        no_next: "Probably not a Water Birch - they almost always grow near water in mountainous areas"
+      - step: 2
+        instruction: "Check the bark. Is it dark reddish-brown to black and peeling in thin strips like peeling paper?"
+        yes_next: 3
+        no_next: "Might be another kind of tree - try looking at alders or willows instead"
+      - step: 3
+        instruction: "Look closely at the leaves. Are they small, oval to triangular-shaped with jagged teeth along the edges?"
+        yes_next: 4
+        no_next: "Not a Water Birch - check for other trees that grow near water"
+      - step: 4
+        instruction: "Is the tree fairly small (about the size of a big bush to a single-story house) with several trunks coming from the base?"
+        yes_next: "You found a Water Birch!"
+        no_next: "If it's spring, look for long, dangling catkins. If it's a large tree with white bark, it might be a different kind of birch."
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New bright green leaves emerge; male catkins elongate and release yellow pollen; small upright female catkins appear"
+      reproductive_activity: "Male catkins release pollen; female catkins are pollinated and begin developing seeds"
+      identification_tips: "Yellow-brown dangling male catkins are distinctive in early spring; new leaves are bright green and sticky"
+      kid_friendly_tip: "Look for long yellow-brown 'caterpillars' hanging down (these are the flowers) and sticky new leaves that are bright green"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of green leaves; female catkins develop into small cylindrical seed structures"
+      reproductive_activity: "Seed structures continue to develop and mature"
+      identification_tips: "Shiny dark bark with peeling strips; fully developed leaves with double-toothed edges"
+      kid_friendly_tip: "The tree is covered in green leaves, and you can see small 'seed tubes' growing where the flowers were. The dark peeling bark is easy to spot!"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn bright yellow before dropping; seed catkins mature and begin to release tiny winged seeds"
+      reproductive_activity: "Seed catkins break apart and release seeds that are carried by wind"
+      identification_tips: "Bright yellow fall color; dark bark with horizontal lenticels (small lines); cylindrical seed catkins"
+      kid_friendly_tip: "Leaves turn bright yellow like lemon drops, and tiny seeds with wings float away from the tree like little helicopters"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches; distinctive dark bark remains visible"
+      reproductive_activity: "Male catkins for next spring begin to form late in winter"
+      identification_tips: "Distinctive dark peeling bark; slender twigs with small buds; developing male catkins appear late winter"
+      kid_friendly_tip: "After the leaves fall off, you can easily see the dark peeling bark that looks like chocolate paper. The tree gets ready for spring by growing flower buds in late winter."
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Dark reddish-brown to black peeling bark"
+      reliability: "Very high"
+      visibility: "Easy to see year-round"
+    - feature: "Growing close to water in mountainous areas"
+      reliability: "Very high"
+      visibility: "Easy to observe location"
+    - feature: "Multiple slender trunks from base"
+      reliability: "High"
+      visibility: "Easy to see from a distance"
+    - feature: "Small oval to triangular leaves with double-toothed edges"
+      reliability: "High"
+      visibility: "Need to look closely at leaves"
+    - feature: "Dangling yellow-brown male catkins in spring"
+      reliability: "Very high" 
+      visibility: "Seasonal - spring only"
+    
+  look_alike_species:
+    - species: "Paper Birch (Betula papyrifera)"
+      differences: "Paper Birch has white bark that peels in large sheets, grows taller (40-70 feet), and is less common in California"
+      identification_tip: "Water Birch has dark reddish-brown to black bark, not white, and is typically smaller"
+    
+    - species: "Red Alder (Alnus rubra)"
+      differences: "Red Alder has gray-green bark with white patches that doesn't peel, produces woody cone-like seed structures, and grows much larger"
+      identification_tip: "Water Birch has peeling bark and cylindrical seed catkins, not woody cones"
+    
+    - species: "White Alder (Alnus rhombifolia)"
+      differences: "White Alder has smooth gray bark, woody cone-like seed structures, and leaves with simpler teeth"
+      identification_tip: "Water Birch has peeling dark bark and doubly-toothed leaf edges"
+    
+    - species: "Mountain Alder (Alnus incana ssp. tenuifolia)"
+      differences: "Mountain Alder has gray bark that doesn't peel, woody cone-like seed structures, and grows in similar habitats"
+      identification_tip: "Water Birch has distinctive peeling dark bark and lacks the woody cone-like seed structures of alders"
+    
+  cultural_ecological_notes:
+    - "Important for stabilizing stream banks and preventing erosion in mountain watersheds"
+    - "Provides critical shade that keeps mountain streams cool for fish and aquatic life"
+    - "Fallen leaves contribute nutrients to stream ecosystems"
+    - "Browsed by deer, elk, and moose, especially in winter"
+    - "Seeds are an important food source for small birds and mammals"
+    - "Creates nesting habitat for songbirds and shelter for various wildlife"
+    - "Often found growing alongside willows, cottonwoods, and alders in riparian communities"
+    - "Can resprout after fire, making it important for post-disturbance recovery"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Northern Paiute"
+      physical_uses:
+        - "Used the flexible branches for making baskets and small items"
+        - "Made a medicinal tea from the bark to treat fevers and stomach problems"
+        - "Used the bark for waterproof coverings on temporary shelters"
+        - "Crafted containers from the bark for storing food and small items"
+      symbolic_meaning:
+        - "The tree was considered a reliable indicator of clean water sources"
+        - "Associated with healing and purification"
+        - "Featured in stories about survival and finding water in dry lands"
+        - "Represented adaptability and resilience in harsh environments"
+    
+    - culture: "Washoe"
+      physical_uses:
+        - "Harvested the sap for medicinal uses and as a natural sweetener"
+        - "Used the bark to create water-resistant containers"
+        - "Made tools and implements from the wood"
+        - "Created dyes from the bark for decorating baskets"
+      symbolic_meaning:
+        - "The tree represented the connection between mountains and water"
+        - "Valued as a guardian of fresh water in traditional stories"
+        - "Used to teach children about the importance of water sources"
+        - "Symbolized renewal through its seasonal changes"
+    
+    - culture: "Modoc"
+      physical_uses:
+        - "Used the flexible young branches for basket making"
+        - "Created medicinal preparations from the bark and leaves"
+        - "Used the wood for tool handles and small implements"
+        - "Harvested the inner bark as an emergency food source"
+      symbolic_meaning:
+        - "The tree was connected with water spirits in traditional beliefs"
+        - "Featured in stories about finding water during times of drought"
+        - "Represented reliability and the promise of life-giving water"
+        - "Used as a teaching example about living in balance with natural resources"
+    
+    - culture: "Western Settlers"
+      physical_uses:
+        - "Used as an indicator species to locate reliable water sources"
+        - "Harvested the wood for tool handles and fence posts"
+        - "Used the branches for making brooms and brushes"
+        - "Sometimes tapped for sap, though less productive than eastern birches"
+      symbolic_meaning:
+        - "Represented a welcome sign of water in dry western landscapes"
+        - "Associated with survival and finding necessities in harsh environments"
+        - "Valued as a marker of good camping or settlement locations"
+        - "Symbolized the presence of vital resources in otherwise challenging terrain"
+  
+  range_within_california:
+    - "Limited distribution in California, mainly in northeastern and eastern mountain regions"
+    - "Found in the Sierra Nevada, Cascade Range, and some desert mountain ranges"
+    - "Grows primarily at elevations between 4,000-8,000 feet"
+    - "Most common in Modoc, Lassen, Plumas, and Inyo counties"
+    - "Extends east into Nevada and north through Oregon, Washington, and into Canada"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "10-25 feet typically, up to 40 feet in ideal conditions (about as tall as a 1-3 story building)"
+    growth_rate: "Moderate to fast growing, can grow 1-2 feet per year when young"
+    crown_spread: "10-20 feet wide (about the size of a small room)"
+    lifespan: "40-80 years in favorable conditions"
+    trunk_diameter: "Up to 1 foot across for main trunks (about as wide as a dinner plate)"
+    root_system: "Moderately deep with spreading lateral roots that help stabilize stream banks"
+    toxicity: "Not poisonous to humans or animals"
+    
+  conservation_status:
+    status: "Secure in most of its range, though locally vulnerable in California"
+    threats: 
+      - "Habitat loss due to development in mountain areas"
+      - "Stream alteration and water diversion projects"
+      - "Climate change affecting mountain watersheds and water availability"
+      - "Grazing pressure in some areas"
+    protection_efforts:
+      - "Protected in riparian conservation zones on public lands"
+      - "Included in stream restoration projects in mountain watersheds"
+      - "Monitored as an indicator species for healthy mountain stream systems"
+      - "Protected in some National Forest and Park Service management plans"
+    
+  # Decision tree mapping
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: HABITAT-WATER-01"  # Riparian habitat
+      - "feature_id: BARK-TEXT-03"  # Peeling bark
+      - "feature_id: BARK-COLOR-06"  # Dark bark
+    confirmation_features:
+      - "feature_id: LEAF-EDGE-03"  # Doubly serrated
+      - "feature_id: FLOWER-TYPE-01"  # Catkins present
+      - "feature_id: TREE-TRUNK-02"  # Multiple trunks
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["HABITAT-WATER-01", "TREE-FORM-05", "TREE-SIZE-01"]  # Riparian habitat, irregular crown, small tree
+      - distance: "from_nearby"
+        features_to_check: ["BARK-TEXT-03", "BARK-COLOR-06", "TREE-TRUNK-02"]  # Peeling bark, dark bark, multiple trunks
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-03", "LEAF-ARRANGE-01", "FLOWER-TYPE-01"]  # Doubly serrated edge, alternate arrangement, catkins
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["FLOWER-TYPE-01", "LEAF-TYPE-01", "BARK-TEXT-03"]
+        notes: "Dangling male catkins and new bright green leaves make spring identification easy and reliable"
+      summer:
+        reliability: "High" 
+        key_features: ["HABITAT-WATER-01", "LEAF-EDGE-03", "BARK-TEXT-03"]
+        notes: "Dark peeling bark and doubly-toothed leaf edges are distinctive"
+      fall:
+        reliability: "Medium-high"
+        key_features: ["LEAF-FALL-01", "LEAF-EDGE-03", "BARK-TEXT-03"]
+        notes: "Bright yellow fall color and distinctive bark help with identification"
+      winter:
+        reliability: "Medium"
+        key_features: ["BARK-TEXT-03", "HABITAT-WATER-01", "TREE-TRUNK-02"]
+        notes: "Distinctive dark peeling bark remains visible; multiple slender trunks"
+    misidentification_risks: "Most often confused with other birch species or sometimes alders"
+  
+  wildlife_value:
+    - "Seeds provide food for many small birds including finches, chickadees, and siskins"
+    - "Buds and catkins eaten by grouse and other birds in winter and spring"
+    - "Browsed by deer, elk, and moose, especially in winter when other food is scarce"
+    - "Serves as a larval host for various butterfly and moth species"
+    - "Provides nesting sites for small songbirds"
+    - "Fallen branches in streams create microhabitats for fish and aquatic invertebrates"
+    - "Shade from trees helps maintain cool water temperatures needed by native trout"
+    - "Root systems stabilize streambanks, creating undercut banks that provide fish habitat"

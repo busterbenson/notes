@@ -1,0 +1,295 @@
+tree:
+  common_name: "Waterlocust"
+  scientific_name: "Gleditsia aquatica"
+  family: "Fabaceae"
+  
+  # Basic summary information
+  summary: "A medium-sized deciduous tree with compound leaves, thorny branches, and distinctive flattened seed pods. Native to the southeastern United States, it thrives in wet areas and floodplains, adapting perfectly to seasonal flooding. Distinguished by its shorter, often solitary thorns and shorter seed pods compared to its close relative, the Honeylocust."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Compound leaves with small oval leaflets; often solitary thorns on branches; grows in wet habitats"
+    secondary_markers: "Single or non-branched thorns; short, oval-shaped seed pods; typically found near water"
+    seasonal_markers: "Small, inconspicuous greenish flowers in spring; seed pods turning reddish-brown in fall"
+    similar_species_differentiation: "Unlike Honeylocust (G. triacanthos), has shorter, less branched thorns and shorter seed pods; unlike Black Locust, has smaller, less fragrant flowers and single (not paired) thorns"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves in fall"
+        
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Leaves divided into small oval leaflets arranged along a central stem"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves alternate along branches, not opposite or whorled"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Single or unbranched thorns along branches and sometimes on trunk"
+      
+      - feature_id: "FRUIT-TYPE-05"  # Pods present
+        notes: "Produces flat, oval seed pods 1-2 inches long"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        notes: "Naturally grows along waterways, floodplains, and wet areas"
+      
+      - feature_id: "HABITAT-WATER-02"  # Wetland habitat
+        notes: "Thrives in seasonally flooded areas and swamps"
+      
+      - feature_id: "ECO-WILD-01"  # Important for wildlife
+        notes: "Seeds provide food for waterfowl and other wildlife; offers shelter in wetland habitats"
+
+    usually_true:
+      # Features that are primarily true, but have notable exceptions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with a single main trunk"
+        exceptions: "May occasionally develop multiple trunks, especially after damage"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Typically reaches 30-60 feet in height at maturity"
+        exceptions: "May be shorter in poor conditions or taller in optimal habitats"
+      
+      - feature_id: "TREE-FORM-05"  # Irregular crown
+        notes: "Typically has somewhat open, irregular branch pattern"
+        exceptions: "May be more uniform in shape when grown in open areas"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        notes: "Mature trees have gray-brown bark with shallow furrows"
+        exceptions: "Young trees have smoother bark"
+
+    sometimes_true:
+      # Features that vary with age, season, or conditions
+      - feature_id: "FLOWER-TIME-01"  # Spring flowering
+        conditions: "Late spring"
+        notes: "Produces small, inconspicuous greenish flowers in racemes"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Autumn"
+        notes: "Leaves typically turn yellow before dropping"
+      
+      - feature_id: "WINTER-FEAT-02"  # Persistent fruits
+        conditions: "Some pods may remain through winter"
+        notes: "Empty seed pods sometimes stay on tree after leaves drop"
+      
+      - feature_id: "ECO-ADAPT-03"  # Flood tolerant
+        conditions: "Most of its life"
+        notes: "Well-adapted to seasonal flooding and wet conditions"
+      
+      - feature_id: "BARK-COLOR-04"  # Brown bark
+        conditions: "Mature trees"
+        notes: "Bark becomes more brown-gray with age"
+
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Never keeps its leaves through winter"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has compound broadleaves, not needles"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Produces seed pods, not cones"
+      
+      - feature_id: "LEAF-SHAPE-05"  # Lobed
+        notes: "Has oval leaflets without lobes"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A tree with many tiny leaflets on each leaf stem that grows near water and has single thorns on its branches"
+    memorable_comparison: "The thorns are like single guardians protecting the tree, and the seed pods look like small, flat ovals - much shorter than the long, twisted pods of its cousin, the Honeylocust"
+    touch_tip: "Feel the bark but be careful of the thorns! Notice how the tree is happy growing where its feet get wet."
+    smell_tip: "The flowers are small and don't have a strong smell, but they help produce the interesting seed pods"
+    fun_fact: "Waterlocust is like a superhero tree that can breathe underwater! It can survive having its roots completely flooded for weeks or even months, making it perfect for swampy areas where other trees would drown."
+    
+    detective_steps:
+      - step: 1
+        instruction: "Look at where the tree is growing. Is it near water, in a floodplain, or in a swampy area?"
+        yes_next: 2
+        no_next: "Probably not a Waterlocust - they almost always grow where it's wet"
+      - step: 2
+        instruction: "Look at the leaves. Do they have many small oval leaflets along a central stem (like a feather)?"
+        yes_next: 3
+        no_next: "Not a Waterlocust - check trees with different leaf patterns"
+      - step: 3
+        instruction: "Check the branches. Do you see single (not branched or paired) thorns growing from them?"
+        yes_next: "You found a Waterlocust! If it's summer or fall, look for small oval seed pods about 1-2 inches long."
+        no_next: "If the thorns are large and branched like a deer's antler, it might be a Honeylocust instead. If thorns are paired, it might be a Black Locust."
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Leaves emerge late in spring; small greenish flower clusters appear"
+      reproductive_activity: "Flowers bloom and attract pollinators"
+      identification_tips: "Small, inconspicuous greenish flowers in racemes; new compound leaves unfurling"
+      kid_friendly_tip: "In spring, look for the tiny new leaves unfolding and small greenish flowers that are easy to miss"
+    
+    - season: "Summer" 
+      visual_changes: "Full foliage of compound leaves; flat oval seed pods develop"
+      reproductive_activity: "Seed pods grow and gradually ripen"
+      identification_tips: "Compound leaves fully developed; green pods becoming visible"
+      kid_friendly_tip: "By summer, you'll see flat oval pods that look like small green versions of lima beans"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow; seed pods fully brown and mature"
+      reproductive_activity: "Seeds mature inside pods; pods may begin to drop"
+      identification_tips: "Yellow fall color and reddish-brown seed pods are distinctive"
+      kid_friendly_tip: "In fall, the leaves turn yellow like little golden coins, and the seed pods turn reddish-brown"
+    
+    - season: "Winter"
+      visual_changes: "Tree loses all leaves; some seed pods may remain; thorns clearly visible"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Thorny twigs; sometimes persistent seed pods; often in flooded areas"
+      kid_friendly_tip: "In winter with no leaves, you can easily see the thorns and the tree might be standing in water"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Compound leaves with small oval leaflets"
+      reliability: "Very high"
+      visibility: "Easy - visible during growing season"
+    - feature: "Single, unbranched thorns on branches"
+      reliability: "High"
+      visibility: "Medium - need to look carefully"
+    - feature: "Oval seed pods 1-2 inches long"
+      reliability: "High"
+      visibility: "Easy - visible summer through fall"
+    - feature: "Growing in wet habitat or floodplain"
+      reliability: "Very high"
+      visibility: "Easy - visible by location"
+    - feature: "Gray-brown bark with shallow furrows"
+      reliability: "Medium"
+      visibility: "Easy - visible year-round on mature trees"
+    
+  look_alike_species:
+    - species: "Honeylocust (Gleditsia triacanthos)"
+      differences: "Honeylocust has larger, often branched thorns and longer, twisted seed pods (10-18 inches); more drought-tolerant and less restricted to wet areas"
+      identification_tip: "Waterlocust has shorter seed pods (1-2 inches) and thrives in wet conditions; Honeylocust has longer pods and can grow in drier sites"
+    - species: "Black Locust (Robinia pseudoacacia)"
+      differences: "Black Locust has paired thorns at leaf bases, not single thorns along branches; has fragrant white flower clusters; and rougher, more deeply furrowed bark"
+      identification_tip: "Look for paired vs. single thorns, and Black Locust doesn't specifically prefer wet habitats like Waterlocust does"
+    
+  cultural_ecological_notes:
+    - "Nitrogen-fixing tree that improves soil fertility in wetland ecosystems"
+    - "Adapted to survive extended periods of flooding"
+    - "Seeds provide food for waterfowl and other wildlife"
+    - "Important component of southern floodplain forests"
+    - "Helps stabilize soil along waterways and prevent erosion"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Native American"
+      physical_uses:
+        - "Used the tough wood for tool handles and small watercraft"
+        - "Seeds sometimes collected as emergency food"
+        - "Thorns occasionally used for pins or small tools"
+        - "Wood used for items that needed to resist rot in wet conditions"
+      symbolic_meaning:
+        - "Represented resilience and the ability to thrive in challenging conditions"
+        - "Associated with waterways and riparian ecosystems"
+        - "Symbolized adaptation to changing water levels and seasonal floods"
+        - "Connected to wetland knowledge and resources"
+    
+    - culture: "Early American Settlers"
+      physical_uses:
+        - "Wood used for fence posts in wet areas where other woods would rot"
+        - "Sometimes planted to help control soil erosion along waterways"
+        - "Provided wood for specialized uses in wet environments"
+        - "Occasionally used for boat-building components that needed water resistance"
+      symbolic_meaning:
+        - "Represented adaptation to difficult conditions"
+        - "Marked boundaries of navigable waters and floodplains"
+        - "Served as natural indicators of land prone to flooding"
+        - "Symbolized the challenges of settling in wetland areas"
+    
+    - culture: "Modern Conservation"
+      physical_uses:
+        - "Planted for wetland restoration projects"
+        - "Used in riparian buffers to prevent erosion and filter runoff"
+        - "Valuable for creating wildlife habitat in wetland areas"
+        - "Studied for flood adaptation mechanisms"
+      symbolic_meaning:
+        - "Represents the importance of preserving wetland ecosystems"
+        - "Symbolizes natural flood control and water quality improvement"
+        - "Demonstrates specialized adaptation to challenging environments"
+        - "Illustrates the value of native species in ecosystem restoration"
+    
+  range_within_california:
+    - "Not native to California"
+    - "Rarely cultivated in California due to specific habitat requirements"
+    - "May occasionally be found in botanical collections or specialized wetland restoration projects"
+    - "Native range is southeastern United States, primarily along the Gulf Coast and Mississippi River Valley"
+    - "Would only thrive in permanently wet areas if introduced to California"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "30-60 feet at maturity (about as tall as a 3-6 story building)"
+    growth_rate: "Moderate to fast in suitable conditions"
+    crown_spread: "20-40 feet wide at maturity (about as wide as a two-car garage)"
+    lifespan: "80-120 years"
+    trunk_diameter: "Up to 1-2 feet at maturity (about as wide as a dinner plate)"
+    root_system: "Extensive and well-adapted to wet soils and periodic flooding"
+    toxicity: "No significant toxicity reported, but thorns can cause physical injury"
+  
+  conservation_status:
+    status: "Least Concern (secure within native range)"
+    threats: 
+      - "Wetland drainage and development in native range"
+      - "Alteration of natural flooding regimes by dams and levees"
+      - "Climate change could affect flood patterns and habitat suitability"
+      - "Conversion of wetlands to agriculture"
+    protection_efforts:
+      - "Protected in some wetland conservation areas within its native range"
+      - "Benefits from wetland protection and restoration efforts"
+      - "Not of major conservation concern in California as it's not native"
+      - "Included in some southeastern U.S. wetland restoration projects"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-COMPLEX-02"  # Compound pinnate
+      - "feature_id: TWIG-FEAT-01"  # Thorns present
+      - "feature_id: HABITAT-WATER-01"  # Riparian habitat
+    confirmation_features:
+      - "feature_id: FRUIT-TYPE-05"  # Pods present
+      - "feature_id: HABITAT-WATER-02"  # Wetland habitat
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-TYPE-01", "HABITAT-WATER-01"]  # Deciduous, riparian habitat
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-COMPLEX-02", "TWIG-FEAT-01"]  # Compound leaves, thorns
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-05", "BARK-TEXT-02"]  # Seed pods, furrowed bark
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["LEAF-COMPLEX-02", "FLOWER-TIME-01", "HABITAT-WATER-01"]  # Compound leaves, spring flowering, riparian
+        notes: "New leaves emerging; small, inconspicuous flowers"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-COMPLEX-02", "TWIG-FEAT-01", "FRUIT-TYPE-05"]  # Compound leaves, thorns, pods
+        notes: "Fully developed compound leaves with thorns; green pods developing"
+      
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-FALL-01", "FRUIT-TYPE-05", "HABITAT-WATER-01"]  # Yellow fall color, pods, riparian
+        notes: "Yellow fall color; reddish-brown seed pods"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["TWIG-FEAT-01", "HABITAT-WATER-01", "WINTER-FEAT-02"]  # Thorns, riparian, persistent fruits
+        notes: "Thorns; sometimes persistent pods; often in flooded areas"
+    misidentification_risks: 
+      - "Honeylocust has similar compound leaves but with larger, often branched thorns and longer, twisted seed pods"
+      - "Black Locust has paired thorns at leaf bases rather than single thorns along branches"
+      - "Young trees with smooth bark might be confused with other legume family trees"
+  
+  wildlife_value:
+    - "Seeds eaten by waterfowl and small mammals"
+    - "Provides habitat for various wetland birds"
+    - "Offers shelter for fish during flooding events"
+    - "Fixes nitrogen in soil which benefits other plants"
+    - "Flowers support various pollinator species"
+    - "Helps maintain healthy wetland ecosystems"
+    - "Fallen leaves contribute nutrients to wetland and aquatic food webs"
+    - "Thorny branches provide protected nesting sites for birds"

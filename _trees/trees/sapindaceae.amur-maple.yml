@@ -1,0 +1,317 @@
+tree:
+  common_name: "Amur Maple"
+  scientific_name: "Acer ginnala"
+  family: "Sapindaceae"
+  
+  # Basic summary information
+  summary: "A small, multi-stemmed deciduous tree or large shrub with a rounded crown and three-lobed leaves. It is especially valued for its brilliant scarlet to burgundy fall color and is often used as an ornamental in smaller landscapes."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Small three-lobed maple leaves with elongated middle lobe and finely serrated edges; leaves grow opposite each other on the branches"
+    secondary_markers: "Small, fragrant yellowish-white flowers in clusters in late spring; paired winged seeds with wings spreading nearly 180 degrees"
+    seasonal_markers: "Brilliant scarlet to burgundy fall color; reddish samaras in summer; fragrant flowers in late spring"
+    similar_species_differentiation: "Smaller and more compact than most maples; three-lobed leaves distinguish it from most other maples; more winter-hardy than Japanese maple"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves in fall"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple
+        notes: "Leaves are single pieces, not made of smaller leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves grow in pairs directly across from each other on the branches"
+      
+      - feature_id: "LEAF-SHAPE-05"  # Lobed
+        notes: "Leaves have 3 lobes with elongated middle lobe"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated
+        notes: "Leaf edges have small tooth-like serrations"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        notes: "Not native to California; native to northeastern Asia"
+      
+      - feature_id: "FRUIT-TYPE-08"  # Paired samaras
+        notes: "Produces double-winged helicopter-like seeds with wings spreading at nearly 180 degrees"
+
+    usually_true:
+      # Features that are primarily true, but have notable exceptions
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        notes: "Usually grows with multiple stems from the base"
+        exceptions: "Can be trained to a single trunk when young"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Typically has a rounded or spreading crown"
+        exceptions: "Shape can vary with pruning or growing conditions"
+      
+      - feature_id: "TREE-SIZE-01"  # Short tree
+        notes: "Usually grows 15-25 feet tall"
+        exceptions: "May occasionally reach 30 feet in ideal conditions"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Bark remains relatively smooth for most of its life"
+        exceptions: "May develop slight furrows with age"
+      
+      - feature_id: "LEAF-FALL-02"  # Red fall color
+        notes: "Leaves typically turn brilliant scarlet to burgundy in fall"
+        exceptions: "Fall color can vary with growing conditions"
+
+    sometimes_true:
+      # Features that vary with age, season, or conditions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        conditions: "When trained as a young tree"
+        notes: "Can be pruned to develop as a single-trunked specimen"
+      
+      - feature_id: "FLOWER-TIME-01"  # Spring flowering
+        conditions: "Late spring"
+        notes: "Produces small, fragrant yellowish-white flowers in clusters"
+      
+      - feature_id: "SENSORY-SMELL-03"  # Fragrant flowers
+        conditions: "During flowering period in late spring"
+        notes: "Flowers have a sweet, pleasant fragrance"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "When established"
+        notes: "Tolerates urban conditions well once established"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        conditions: "When mature and established"
+        notes: "Becomes relatively drought-tolerant once established"
+
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Never keeps its leaves through winter"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves never grow in alternate pattern"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has broad leaves, not needles"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Never reaches tall tree status (over 50 feet)"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Small maple leaves with three pointed lobes (the middle one is longer) that grow in pairs"
+    memorable_comparison: "Leaves look like tiny maple leaves with three fingers, with the middle finger stretching out longer"
+    touch_tip: "Feel how smooth the leaves are on top and slightly fuzzy underneath when young"
+    smell_tip: "In late spring, smell the sweet fragrance of the small white flowers"
+    fun_fact: "In fall, Amur Maple leaves turn bright fire-engine red - some of the reddest fall color of any tree! Its helicopter seeds spread out almost in a straight line, unlike most maples where the seeds form a V-shape."
+    
+    detective_steps:
+      - step: 1
+        instruction: "Look at the size of the tree. Is it small (about the size of a large shrub or small tree, not taller than a two-story house)?"
+        yes_next: 2
+        no_next: "If it's a larger tree, it's probably not an Amur Maple"
+      - step: 2
+        instruction: "Check the leaves. Are they small maple leaves with three pointy lobes, with the middle lobe longer than the side lobes?"
+        yes_next: 3
+        no_next: "If the leaves have 5 or more lobes or all the lobes are the same size, it's probably a different maple"
+      - step: 3
+        instruction: "Look at how the leaves grow. Do they grow in pairs, directly across from each other on the branches?"
+        yes_next: 4
+        no_next: "If the leaves alternate along the branch, it's not a maple"
+      - step: 4
+        instruction: "If it's fall, are the leaves turning bright scarlet red? If it's summer, do you see paired helicopter seeds that spread out almost in a straight line?"
+        yes_next: "You found an Amur Maple!"
+        no_next: "It might still be an Amur Maple, but you should check with an adult to be sure"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Leaves emerge light green; small, fragrant yellowish-white flowers appear in clusters in late spring"
+      reproductive_activity: "Flowers bloom and are pollinated by insects and wind"
+      identification_tips: "Look for small emerging leaves with three lobes and fragrant flower clusters"
+      kid_friendly_tip: "In spring, look for the sweet-smelling tiny white flowers that grow in bunches"
+    
+    - season: "Summer" 
+      visual_changes: "Leaves deepen to dark green; reddish winged seed pairs develop"
+      reproductive_activity: "Seeds develop throughout summer"
+      identification_tips: "Three-lobed leaves are fully developed; paired samaras with widely spread wings become visible"
+      kid_friendly_tip: "By summer, you can see the helicopter seeds growing in pairs that spread out almost in a straight line"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn brilliant scarlet to burgundy red; winged seeds may still be present"
+      reproductive_activity: "Seeds mature and disperse with wind"
+      identification_tips: "Spectacular red fall color stands out; mature seeds spinning down"
+      kid_friendly_tip: "Fall is when this tree really shows off with its fire-engine red leaves! It's one of the reddest trees in fall."
+    
+    - season: "Winter"
+      visual_changes: "Tree loses all leaves, revealing fine branching pattern with opposite arrangement"
+      reproductive_activity: "Dormant; buds prepare for spring"
+      identification_tips: "Look for opposite branching pattern, small size, and often multiple stems"
+      kid_friendly_tip: "In winter, you can see how the branches grow in pairs, directly across from each other"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Three-lobed leaves with elongated middle lobe"
+      reliability: "Very high"
+      visibility: "Medium - need to be near the tree"
+    - feature: "Leaves grow in pairs opposite each other"
+      reliability: "High"
+      visibility: "Medium - need to be near the tree"
+    - feature: "Small tree size (15-25 feet tall)"
+      reliability: "High"
+      visibility: "Easy - visible from a distance"
+    - feature: "Brilliant red fall color (seasonal)"
+      reliability: "High"
+      visibility: "Easy - visible from a distance in fall"
+    - feature: "Paired samaras with wings spreading nearly 180 degrees"
+      reliability: "High (seasonal)"
+      visibility: "Medium - need to look carefully"
+    
+  look_alike_species:
+    - species: "Japanese Maple (Acer palmatum)"
+      differences: "Japanese Maple has more deeply cut leaves with 5-7 lobes, more delicate branching, and is less cold-hardy"
+      identification_tip: "Count the lobes - Amur Maple typically has 3 lobes while Japanese Maple usually has 5 or more"
+    
+    - species: "Tatarian Maple (Acer tataricum)"
+      differences: "Tatarian Maple has similar size but leaves are not distinctly lobed, just coarsely toothed"
+      identification_tip: "Amur Maple has distinctive three-lobed leaves; Tatarian Maple leaves lack prominent lobes"
+    
+    - species: "Trident Maple (Acer buergerianum)"
+      differences: "Trident Maple has three-lobed leaves but with less serration and smoother edges"
+      identification_tip: "Check the leaf edges - Amur Maple has finely serrated edges; Trident Maple edges are smoother"
+    
+    - species: "Rocky Mountain Maple (Acer glabrum)"
+      differences: "Rocky Mountain Maple is native to western mountains, has 3-5 lobed leaves with more coarsely toothed edges"
+      identification_tip: "Rocky Mountain Maple has more coarsely toothed leaf margins and is typically found in mountain habitats"
+  
+  cultural_ecological_notes:
+    - "Excellent small ornamental tree for urban landscapes"
+    - "Provides food for birds and insects"
+    - "Drought-tolerant once established, making it suitable for water-conscious landscaping"
+    - "Can be invasive in parts of eastern U.S. but not reported as invasive in California"
+    - "Useful for screening, borders, and small spaces where larger maples wouldn't fit"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Traditional Asian Cultures"
+      physical_uses:
+        - "Wood used for small items, tools, and specialty products in native range"
+        - "Bark used in traditional Chinese medicine for various remedies"
+        - "Used for attractive, drought-resistant landscaping in arid regions"
+      symbolic_meaning:
+        - "Fall color represents transformation and the beauty in change"
+        - "Valued for its resilience in harsh conditions"
+    
+    - culture: "North American Landscape Design"
+      physical_uses:
+        - "Introduced to North America in the 1860s as an ornamental"
+        - "Frequently used in small gardens and urban settings where space is limited"
+        - "Popular as a bonsai specimen due to small leaves and natural compact form"
+        - "Used in hedges, screens, and borders"
+      symbolic_meaning:
+        - "Represents adaptability to challenging urban conditions"
+        - "Celebrated for bringing dramatic fall color to small spaces"
+    
+    - culture: "Modern Gardening"
+      physical_uses:
+        - "Used in water-wise landscapes due to drought tolerance once established"
+        - "Planted as a small shade tree for patios and small yards"
+        - "Selected for windbreaks and privacy screens"
+        - "Used in containers and raised planters in urban settings"
+      symbolic_meaning:
+        - "Exemplifies the 'right-sized' tree philosophy in sustainable landscaping"
+        - "Demonstrates how non-native species can provide ecological benefits when used appropriately"
+    
+  range_within_california:
+    - "Not native but planted throughout California as an ornamental"
+    - "Performs best in northern and central California"
+    - "Can struggle in hottest parts of Southern California"
+    - "Prefers well-drained soil with consistent moisture when young"
+    - "Does well in full sun to partial shade"
+    - "Suitable for USDA hardiness zones 3-8, including mountain areas of California"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "15-25 feet tall, occasionally to 30 feet"
+    growth_rate: "Moderate (1-2 feet per year when young)"
+    crown_spread: "15-25 feet wide at maturity"
+    lifespan: "60-100 years"
+    trunk_diameter: "Usually less than 1 foot in diameter"
+    root_system: "Moderately shallow, fibrous"
+    toxicity: "Not known to be toxic to humans or animals"
+  
+  conservation_status:
+    status: "Not listed (Least Concern in native range)"
+    threats: 
+      - "No significant threats in cultivation"
+      - "Has become invasive in parts of eastern United States"
+    protection_efforts:
+      - "Not requiring protection as an ornamental species"
+      - "Being monitored in regions where it has shown invasive tendencies"
+  
+  kid_friendly_cultural_significance:
+    - culture: "Garden Designers"
+      physical_uses:
+        - "Planted in small yards where big trees won't fit"
+        - "Used to make beautiful fall colors in parks"
+        - "Grown as tiny bonsai trees that look like miniature versions of bigger trees"
+      symbolic_meaning:
+        - "Shows that small things can be just as beautiful as big things"
+        - "Teaches us that trees don't need much water once they're grown up"
+    
+    - culture: "Home Gardeners"
+      physical_uses:
+        - "Planted to create shade for small patios"
+        - "Used to block the view of neighbors' yards for privacy"
+        - "Grown as a colorful tree that changes with the seasons"
+      symbolic_meaning:
+        - "Helps people remember that trees from other countries can be helpful in our gardens"
+        - "Shows that even small trees can make a big difference in making our homes prettier"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-ARRANGE-02"  # Opposite
+      - "feature_id: LEAF-SHAPE-05"  # Lobed
+    confirmation_features:
+      - "feature_id: TREE-SIZE-01"  # Short tree
+      - "feature_id: FRUIT-TYPE-08"  # Paired samaras
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-01", "TREE-FORM-02"]  # Short tree, rounded crown
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SHAPE-05", "LEAF-ARRANGE-02"]  # Lobed leaves, opposite arrangement
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-08", "LEAF-EDGE-02"]  # Paired samaras, serrated edge
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["FLOWER-TIME-01", "LEAF-ARRANGE-02"]
+        notes: "Fragrant flower clusters and emerging three-lobed leaves"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-ARRANGE-02", "LEAF-SHAPE-05", "FRUIT-TYPE-08"]
+        notes: "Three-lobed leaves with longer middle lobe and widely spread samaras are distinctive"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["LEAF-FALL-02", "LEAF-SHAPE-05"]
+        notes: "Brilliant scarlet to burgundy fall color is highly distinctive"
+      
+      winter:
+        reliability: "Low"
+        key_features: ["TREE-SIZE-01", "TREE-TRUNK-02"]
+        notes: "Small size, opposite branching pattern, and often multiple stems"
+    misidentification_risks: 
+      - species: "Japanese Maple (Acer palmatum)"
+        distinguishing_features: "Amur Maple has three lobes; Japanese Maple typically has 5 or more lobes and more delicate branching"
+      - species: "Tatarian Maple (Acer tataricum)"
+        distinguishing_features: "Amur Maple has clearly lobed leaves; Tatarian Maple leaves lack distinct lobes"
+      - species: "Rocky Mountain Maple (Acer glabrum)"
+        distinguishing_features: "Amur Maple has finer serrations on leaf edges; Rocky Mountain Maple has more coarsely toothed leaves"
+  
+  wildlife_value:
+    - "Seeds eaten by birds and small mammals"
+    - "Flowers provide nectar for bees and other pollinators in late spring"
+    - "Dense branching provides nesting sites for small birds"
+    - "Leaves support various insects, including caterpillars"
+    - "Creates shelter and cover for small animals in urban and suburban settings"

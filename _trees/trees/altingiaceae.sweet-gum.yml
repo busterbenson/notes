@@ -1,0 +1,338 @@
+tree:
+  common_name: "Sweet Gum"
+  scientific_name: "Liquidambar styraciflua"
+  family: "Altingiaceae"
+  
+  # Basic summary information
+  summary: "A medium to large deciduous tree with star-shaped leaves that turn brilliant fall colors of red, orange, purple, and yellow. It produces distinctive spiky, ball-shaped seed pods that fall to the ground and is often planted as a street or shade tree. The tree gets its name from the sweet-smelling gum or sap that oozes from the bark if it's wounded."
+  
+  # Identification priority
+  identification_path:
+    primary_markers: "Star-shaped leaves with 5-7 pointed lobes; spiky, ball-shaped seed pods; spectacular fall color in reds, oranges, and purples"
+    secondary_markers: "Corky ridges on twigs and branches; straight, tall trunk with gray-brown bark that develops deep furrows with age"
+    seasonal_markers: "Amazing multicolored fall foliage; spiky seed pods that persist through winter; star-shaped leaves in summer"
+    similar_species_differentiation: "Similar star-shaped leaves to maples, but sweet gum leaves are arranged alternately on the stem (not opposite); spiky seed balls are completely unique"
+  
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops all its leaves in the fall"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Leaves are single, not divided into leaflets"
+      
+      - feature_id: "LEAF-SHAPE-05"  # Lobed
+        notes: "Leaves have 5-7 pointed star-like lobes"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow in a staggered pattern along stems"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated
+        notes: "Leaf edges have small teeth"
+      
+      - feature_id: "FRUIT-TYPE-03"  # Berries present
+        notes: "Produces spiky, ball-shaped seed pods"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Forms a broad, rounded, symmetrical crown"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Can grow 60-75 feet tall (as high as a 7-story building)"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        notes: "Native to eastern United States, not native to California"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one straight main trunk"
+        exceptions: "May develop multiple trunks if damaged when young"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        notes: "Bark develops deep furrows with age"
+        exceptions: "Young trees have smoother bark"
+      
+      - feature_id: "LEAF-FALL-02"  # Red fall color
+        notes: "Leaves usually turn brilliant red in fall"
+        exceptions: "May be orange, yellow, or purple depending on conditions"
+      
+      - feature_id: "WINTER-FEAT-02"  # Persistent fruits
+        notes: "Spiky seed balls often remain on the tree into winter"
+        exceptions: "Some may drop earlier, especially in storms"
+    
+    sometimes_true:
+      - feature_id: "LEAF-FALL-03"  # Orange fall color
+        conditions: "Depending on weather conditions and specific tree"
+        notes: "Leaves may turn bright orange in fall"
+      
+      - feature_id: "LEAF-FALL-04"  # Purple fall color
+        conditions: "Depending on weather conditions and specific tree"
+        notes: "Leaves may turn purple in fall"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Depending on weather conditions and specific tree"
+        notes: "Leaves may turn yellow in fall"
+      
+      - feature_id: "SENSORY-SEC-02"  # Colored sap
+        conditions: "When bark is wounded"
+        notes: "May produce amber-colored fragrant sap"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees"
+        notes: "Bark is smoother on young trees"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "When planted in landscapes with adequate water"
+        notes: "Common street and shade tree in urban areas"
+      
+      - feature_id: "GEO-REGION-03"  # Southern California
+        conditions: "Planted in landscapes"
+        notes: "Found as a landscape tree in Southern California"
+      
+      - feature_id: "GEO-REGION-02"  # Central California
+        conditions: "Planted in landscapes"
+        notes: "Found as a landscape tree in Central California"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "Planted in landscapes"
+        notes: "Found as a landscape tree in Northern California"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops its leaves in fall"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Never has opposite leaves (unlike maples)"
+      
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        notes: "Has star-shaped leaves, not tiny scales"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Never has thorns or spines on branches"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Not native to California; comes from eastern United States"
+  
+  # Kid-friendly identification - expanded with open-ended, creative descriptions
+  kid_friendly_identification:
+    primary_identifier: "Star-shaped leaves and spiky ball seed pods that hurt if you step on them barefoot"
+    memorable_comparison: "The leaves look like starfish with 5-7 arms, and the seed pods look like tiny spiky maces from a medieval knight"
+    touch_tip: "Carefully pick up a seed pod (don't squeeze too hard!) to feel the spiky texture; leaves feel smooth but slightly leathery"
+    smell_tip: "If you find a broken twig, you might smell a sweet, pleasant scent from the sap"
+    fun_fact: "The spiky seed pods are called 'gumballs' or 'space bugs' by kids who play with them. Sweet gum trees can have beautiful rainbow-colored leaves in fall, with different branches showing red, orange, yellow, and purple all at the same time!"
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the leaves. Are they shaped like stars with 5-7 pointed lobes?"
+        yes_next: 2
+        no_next: "Not a Sweet Gum - try maples for similar star-shaped leaves"
+      - step: 2
+        instruction: "Check how the leaves grow on the branches. Are they staggered (alternate) instead of paired (opposite)?"
+        yes_next: 3
+        no_next: "Not a Sweet Gum - might be a maple which has opposite leaves"
+      - step: 3
+        instruction: "Look on the ground or in the tree for spiky ball-shaped seed pods about the size of a ping pong ball"
+        yes_next: 4
+        no_next: "If it's early in the season, the pods might not have formed yet. Check the twigs for corky ridges."
+      - step: 4
+        instruction: "In fall, do the leaves turn bright colors like red, orange, purple, or yellow?"
+        yes_next: "You found a Sweet Gum!"
+        no_next: "If it's not fall yet, look for the distinctive spiky seed pods and star-shaped leaves"
+  
+  regional_notes:
+    - region: "Southern California"
+      notes: "Commonly planted street and park tree; good fall color in areas with mild temperature shifts"
+      locations: "Found in parks, campuses, and as street trees"
+    - region: "Central California"
+      notes: "Popular landscape tree; excellent fall color in Valley areas"
+      locations: "Common in parks and residential areas"
+    - region: "Northern California"
+      notes: "Widespread as an ornamental; reliable fall color in many areas"
+      locations: "Found in parks, campuses, and residential neighborhoods"
+      
+  confirmation_checklist:
+    - feature: "Star-shaped leaves with 5-7 points"
+      reliability: "Very high"
+      visibility: "Easy to see from nearby"
+    - feature: "Spiky ball-shaped seed pods"
+      reliability: "Very high"
+      visibility: "Visible when present on tree or ground"
+    - feature: "Brilliant fall colors (red, orange, purple)"
+      reliability: "High"
+      visibility: "Very noticeable in fall"
+    - feature: "Straight trunk with furrowed bark"
+      reliability: "Medium"
+      visibility: "Need to look at trunk of mature trees"
+    - feature: "Corky ridges on twigs"
+      reliability: "High"
+      visibility: "Need to look closely at branches"
+    
+  look_alike_species:
+    - species: "Maple Trees (Acer species)"
+      differences: "Maples have opposite leaves (pairs directly across from each other); don't have spiky seed balls but winged 'helicopter' seeds"
+      identification_tip: "If the leaves grow opposite each other instead of alternate, it's a maple, not a sweet gum"
+    - species: "Sycamore/Plane Tree (Platanus species)"
+      differences: "Sycamore leaves are less deeply lobed; bark peels in patches showing light colors beneath; has hanging round seed balls that aren't spiky"
+      identification_tip: "Sycamores have peeling bark with light patches and fuzzy (not spiky) seed balls"
+    - species: "London Plane Tree (Platanus × acerifolia)"
+      differences: "Similar sized tree but with less pointed leaf lobes; peeling bark; fuzzy not spiky seed balls"
+      identification_tip: "If the bark peels in patches and the seed balls aren't spiky, it's a London Plane not a Sweet Gum"
+      
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaves emerge light green; small flowers appear"
+      reproductive_activity: "Produces small, inconspicuous greenish flowers"
+      identification_tips: "Young star-shaped leaves; last year's seed pods may still be visible"
+      kid_friendly_tip: "In spring, look for bright green baby star leaves and maybe some leftover spiky balls from last year"
+    
+    - season: "Summer" 
+      visual_changes: "Deep green star-shaped leaves form a dense canopy"
+      reproductive_activity: "Green seed pods develop and grow"
+      identification_tips: "Glossy star-shaped leaves and developing seed pods"
+      kid_friendly_tip: "Summer is when the tree has full-grown dark green star leaves and the new spiky balls start to grow"
+    
+    - season: "Fall"
+      visual_changes: "Spectacular color change to red, orange, purple, and yellow"
+      reproductive_activity: "Seed pods mature and begin to dry"
+      identification_tips: "Fall color and mature seed pods are most distinctive"
+      kid_friendly_tip: "Fall is the most amazing time - the leaves turn rainbow colors and the spiky balls turn brown"
+    
+    - season: "Winter"
+      visual_changes: "Loses leaves, revealing branching pattern and seed pods"
+      reproductive_activity: "Dried seed pods often remain on tree"
+      identification_tips: "Persistent seed pods on bare branches; corky twigs"
+      kid_friendly_tip: "In winter, the tree loses its leaves but keeps its spiky balls. Look for star-shaped leaf buds getting ready for spring."
+      
+  cultural_ecological_notes:
+    - "Spiky seed pods can be painful to step on barefoot and can create litter problems in landscape settings"
+    - "Provides excellent shade in summer due to dense foliage"
+    - "Birds, especially finches, eat the seeds from the pods"
+    - "Fall color can be spectacular even in mild-winter areas of California"
+    - "Root system can lift sidewalks, so best planted away from pavement"
+    
+  range_within_california:
+    - "Not native but widely planted throughout California in urban and suburban areas"
+    - "Performs best in areas with well-defined seasons to trigger fall color"
+    - "Grows in most climate zones in California as a landscape tree"
+    - "Requires adequate watering in hot, dry areas"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Native American (Southeastern US)"
+      physical_uses:
+        - "Sap used as a chewing gum and for treating wounds"
+        - "Wood used for furniture, boxes, and barrels"
+        - "Bark and roots used to make medicinal teas"
+        - "Resin used as a fixative for scents and medicines"
+      symbolic_meaning:
+        - "Sweet aromatic sap represented the sweetness of life"
+        - "Star-shaped leaves associated with celestial symbols"
+        - "Used in healing ceremonies for its fragrant properties"
+        - "The many colors of autumn leaves represented life's diversity"
+    
+    - culture: "Early American"
+      physical_uses:
+        - "Sap used as a natural chewing gum called 'gum-wax'"
+        - "Wood used for furniture, veneer, and barrel making"
+        - "Dried seed pods used in craft projects and decorations"
+        - "Used medicinally as a balm for skin conditions"
+      symbolic_meaning:
+        - "Represented resilience due to resistance to forest fires"
+        - "Fall colors celebrated in autumn festivals and gatherings"
+        - "Planted as commemorative trees marking special events"
+        - "Named 'sweet-gum' for its pleasant-smelling sap"
+    
+    - culture: "Modern Urban Design"
+      physical_uses:
+        - "Planted as street trees for shade and fall color"
+        - "Used as specimen trees in parks and campuses"
+        - "Seed pods used in holiday and craft decorations"
+        - "Wood still used for furniture and interior finishes"
+      symbolic_meaning:
+        - "Symbol of autumn and seasonal change in urban settings"
+        - "Represents successful adaptation of native trees to urban environments"
+        - "Often associated with campus settings and academic institutions"
+        - "Spectacular fall display symbolizes nature's beauty in cities"
+    
+    - culture: "California Landscape"
+      physical_uses:
+        - "Planted for reliable fall color in California landscapes"
+        - "Used as shade trees in parks and residential areas"
+        - "Fruitless varieties developed to reduce seed pod litter"
+        - "Seed pods sometimes collected for craft projects"
+      symbolic_meaning:
+        - "Brings eastern US autumn colors to California settings"
+        - "Represents the blending of plants from different regions in California gardens"
+        - "Symbol of seasonal change in areas with subtle seasons"
+        - "Often viewed with mixed feelings due to beautiful leaves but problematic seed pods"
+    
+  # Additional physical characteristics not captured in features
+  physical_characteristics:
+    height_range: "60-75 feet (as tall as a 6-7 story building)"
+    growth_rate: "Moderate to fast, about 1-2 feet per year when young"
+    crown_spread: "40-50 feet wide when mature (about as wide as a large house)"
+    lifespan: "Can live 150+ years under good conditions"
+    trunk_diameter: "2-3 feet across when fully grown"
+    root_system: "Shallow to moderate depth, can damage pavement"
+    toxicity: "Not toxic to humans or pets, though the sap may cause skin irritation in sensitive individuals"
+    
+  conservation_status:
+    status: "Secure in its native range; not endangered"
+    threats: 
+      - "No major threats in cultivation"
+      - "In native habitat, faces pressure from development and land use changes"
+      - "May be impacted by climate change in some regions"
+    protection_efforts:
+      - "Widely cultivated, reducing pressure on wild populations"
+      - "Use in urban forestry projects helps maintain the species"
+      - "Development of cultivars with reduced fruit for urban settings"
+    
+  # Decision tree mapping - helps with algorithm creation
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-SHAPE-05"  # Lobed
+      - "feature_id: FRUIT-TYPE-03"  # Berries present
+      - "feature_id: LEAF-FALL-02"  # Red fall color
+    confirmation_features:
+      - "feature_id: LEAF-ARRANGE-01"  # Alternate
+      - "feature_id: TREE-FORM-02"  # Rounded crown
+      - "feature_id: TREE-SIZE-03"  # Tall tree
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-02", "TREE-SIZE-03", "LEAF-FALL-02"]  # Rounded crown, tall tree, red fall color
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SHAPE-05", "FRUIT-TYPE-03", "LEAF-ARRANGE-01"]  # Star-shaped leaves, spiky balls, alternate arrangement
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-02", "WINTER-FEAT-02", "BARK-TEXT-02"]  # Serrated edges, persistent fruits, furrowed bark
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["LEAF-SHAPE-05", "LEAF-ARRANGE-01", "WINTER-FEAT-02"]
+        notes: "Look for star-shaped leaves and potentially leftover seed pods"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-SHAPE-05", "LEAF-ARRANGE-01", "FRUIT-TYPE-03"]
+        notes: "Distinctive star-shaped leaves and developing seed pods"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["LEAF-FALL-02", "LEAF-SHAPE-05", "FRUIT-TYPE-03"]
+        notes: "Fall color and mature seed pods make fall identification easy"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["FRUIT-TYPE-03", "WINTER-FEAT-02", "BARK-TEXT-02"]
+        notes: "Spiky seed pods often persist through winter; check bark and twigs"
+    misidentification_risks: "Most often confused with maples, but leaf arrangement (alternate vs. opposite) and seed pods distinguish them"
+
+  wildlife_value:
+    nesting_sites: "Dense branching provides good nesting sites for birds"
+    food_source: "Seeds eaten by birds, especially finches and songbirds"
+    shelter: "Provides cover and nesting habitat for various birds and small mammals"
+    ecological_notes: "Though non-native, provides habitat value in urban areas; helps support bird populations"
+    
+  propagation_information:
+    growing_conditions: "Prefers full sun and moist, well-drained soil"
+    water_needs: "Moderate water needs; tolerates some drought once established"
+    planting_tips: "Plant away from sidewalks, patios, and high-traffic areas to avoid issues with seed pods"
+    maintenance: "Consider fruitless varieties if seed pod cleanup is a concern"
+    special_notes: "Fall color is best in areas with temperature shifts between summer and fall"

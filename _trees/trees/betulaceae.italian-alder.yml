@@ -1,0 +1,297 @@
+tree:
+  common_name: "Italian Alder"
+  scientific_name: "Alnus cordata"
+  family: "Betulaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A fast-growing deciduous tree with distinctive heart-shaped leaves that are glossy dark green and sharply toothed. It produces catkins in early spring and small woody cone-like fruits that persist through winter. Native to southern Italy and Corsica, it's valued for its attractive foliage, ability to fix nitrogen, and tolerance of poor soils."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Heart-shaped leaves with pointed tips; glossy dark green foliage; small woody cone-like fruits"
+    secondary_markers: "Pyramidal to rounded form; relatively smooth gray bark; yellow-brown male catkins in spring"
+    seasonal_markers: "Dangling catkins in early spring; glossy green leaves through summer; yellow fall color; persistent woody cones in winter"
+    similar_species_differentiation: "Unlike other alders, has distinctly heart-shaped leaf bases and more glossy foliage; retains leaves later in fall than many alders"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops all its leaves in fall and grows new ones in spring"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple
+        notes: "Each leaf is a single piece, not made of smaller leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow in an alternating pattern along branches, not in pairs"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated
+        notes: "Leaf edges have sharp, fine teeth around the entire margin"
+      
+      - feature_id: "FLOWER-TYPE-01"  # Catkins present
+        notes: "Produces hanging yellow-brown catkins in early spring"
+      
+      - feature_id: "FRUIT-TYPE-01"  # Produces small woody cone-like fruits
+        notes: "Makes distinctive woody cone-like fruits that look like tiny pinecones"
+      
+      - feature_id: "ECO-REL-01"  # Nitrogen fixing
+        notes: "Has special root bacteria that add nutrients to soil, helping other plants grow"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        notes: "Not native to California; originally from southern Italy and Corsica"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk"
+        exceptions: "Can sometimes develop multiple trunks, especially if damaged when young"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Young trees have a pyramidal shape"
+        exceptions: "Becomes more rounded or oval-shaped with age"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Usually grows 40-60 feet tall (about as tall as a 4-6 story building)"
+        exceptions: "May be shorter in tough growing conditions or when young"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Bark is relatively smooth when young and middle-aged"
+        exceptions: "Develops shallow fissures with age but remains smoother than many alders"
+    
+    sometimes_true:
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        conditions: "Mature trees"
+        notes: "Crown becomes more rounded or oval-shaped with age"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Older trees"
+        notes: "Bark develops shallow fissures and plates with age"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "In autumn before leaves drop"
+        notes: "Leaves turn yellow to golden-brown in fall, often late in the season"
+      
+      - feature_id: "WINTER-FEAT-01"  # Catkins in winter
+        conditions: "Late winter before leaves appear"
+        notes: "Male catkins start forming in winter and open in early spring"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "When planted in landscaped areas"
+        notes: "Adapts well to urban environments and tolerates pollution"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Never keeps its leaves through winter; always drops them in fall"
+      
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        notes: "Never has tiny scale-like leaves; only has normal broad leaves"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has broad leaves, not needles"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Never has big, colorful flowers - just small dangling catkins"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Heart-shaped leaves that are extra shiny, like they've been polished"
+    memorable_comparison: "The leaves look like valentine hearts with pointed tips and shiny green surfaces"
+    touch_tip: "The leaves feel smooth and leathery, almost plastic-like when you touch them"
+    smell_tip: "Crush a leaf gently to smell a mild, fresh scent"
+    fun_fact: "Italian Alder is a superhero tree with special powers! It can grow in places where other trees can't, like poor soil. It has special bacteria in its roots that act like tiny factories, taking nitrogen from the air and turning it into natural plant food in the soil. This helps not just the alder but all the plants growing nearby!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the leaves. Are they heart-shaped with a glossy, shiny surface?"
+        yes_next: 2
+        no_next: "If the leaves aren't heart-shaped or aren't shiny, it might be a different kind of alder"
+      - step: 2
+        instruction: "Look for small woody cone-like fruits about the size of a marble. Can you find any on the tree or on the ground underneath?"
+        yes_next: 3
+        no_next: "If it's early spring, look for hanging catkins instead"
+      - step: 3
+        instruction: "Check the bark. Is it relatively smooth and gray?"
+        yes_next: 4
+        no_next: "If the bark is very rough or deeply furrowed, it might be an older tree or a different species"
+      - step: 4
+        instruction: "Does the tree have a pyramid shape (when young) or rounded crown (when older)?"
+        yes_next: "You found an Italian Alder!"
+        no_next: "Check the leaf edges - they should have small, sharp teeth all around"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Yellow-brown catkins dangle from branches; new leaves emerge bright green and glossy"
+      reproductive_activity: "Male catkins release pollen; small female flowers develop into tiny green cone-like structures"
+      identification_tips: "Catkins and fresh glossy leaves are very noticeable in early spring"
+      kid_friendly_tip: "In spring, look for hanging yellow-brown 'caterpillars' (catkins) and shiny new leaves that look freshly polished"
+    
+    - season: "Summer" 
+      visual_changes: "Full crown of glossy dark green heart-shaped leaves; small green cone-like fruits develop"
+      reproductive_activity: "Small cone-like fruits continue to develop and mature"
+      identification_tips: "Glossy heart-shaped leaves are distinctive throughout summer"
+      kid_friendly_tip: "In summer, the tree is covered with shiny green heart shapes that look like they've been polished"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow to golden-brown before dropping, often late in the season; cone-like fruits turn woody and brown"
+      reproductive_activity: "Woody cone-like fruits fully mature to brown"
+      identification_tips: "Often holds leaves later than other deciduous trees; woody cone-like fruits become more visible as leaves fall"
+      kid_friendly_tip: "The leaves turn yellow like gold coins before falling off, often later than other trees"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches with persistent small cone-like fruits; reddish-brown buds visible"
+      reproductive_activity: "Dormant; cone-like fruits from previous year remain on branches; new catkins begin forming"
+      identification_tips: "Distinctive buds and persistent woody cones help identify in winter"
+      kid_friendly_tip: "Look for small brown 'pine cones' and reddish buds on the bare branches in winter"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Heart-shaped leaves with pointed tips"
+      reliability: "Very high"
+      visibility: "Easy to observe during growing season"
+    - feature: "Glossy dark green leaves"
+      reliability: "High"
+      visibility: "Easy to observe during growing season"
+    - feature: "Small woody cone-like fruits"
+      reliability: "Very high"
+      visibility: "Visible year-round"
+    - feature: "Relatively smooth gray bark"
+      reliability: "Medium"
+      visibility: "Easy to observe up close"
+    - feature: "Yellow-brown catkins in early spring"
+      reliability: "Very high"
+      visibility: "Seasonal - early spring only"
+    
+  look_alike_species:
+    - species: "European Alder (Alnus glutinosa)"
+      differences: "European Alder has more rounded leaves with notched or indented tips rather than pointed; leaves are not as glossy"
+      identification_tip: "Italian Alder leaves have distinct heart-shaped bases and pointed tips without indentations"
+    
+    - species: "Red Alder (Alnus rubra)"
+      differences: "Red Alder has rusty hairs on leaf undersides, reddish inner bark when scratched, and leaves lacking heart-shaped bases"
+      identification_tip: "Check leaf shape and scratch bark - Italian Alder lacks the distinctive red inner bark of Red Alder"
+    
+    - species: "Common Hazel (Corylus avellana)"
+      differences: "Though also heart-shaped, hazel leaves are more wrinkled, less glossy, and the tree produces hazelnuts instead of woody cones"
+      identification_tip: "Look for the cone-like fruits and smoother, glossier leaves on Italian Alder"
+  
+  cultural_ecological_notes:
+    - "Fast-growing tree that can add 2-3 feet in height per year when young"
+    - "Improves soil quality through nitrogen fixation"
+    - "Tolerant of urban pollution, making it valuable for city plantings"
+    - "Good choice for sites with poor soil conditions where other trees might struggle"
+    - "Effective for erosion control due to strong root system"
+    - "Can withstand both drought and periodic flooding once established"
+    
+  range_within_california:
+    - "Not native to California but planted as an ornamental and for land reclamation"
+    - "Grows well in most regions of the state below 6,000 feet elevation"
+    - "Particularly successful in coastal and inland valley regions"
+    - "Tolerates a wide range of soil types, including clay and alkaline soils"
+    - "Can be found in parks, along streets, and in landscaped areas throughout the state"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Southern Italian"
+      physical_uses:
+        - "Used the hard wood for tool handles and agricultural implements"
+        - "Created furniture from the easily worked wood"
+        - "Planted for windbreaks and to stabilize slopes"
+        - "Used bark for tanning leather"
+      symbolic_meaning:
+        - "Represented resilience and adaptability due to its ability to grow in poor conditions"
+        - "Associated with fertility and renewal in traditional beliefs"
+        - "Considered a tree that nurtures the land around it"
+        - "Planting an alder near farms was thought to improve harvests"
+    
+    - culture: "Modern Environmental"
+      physical_uses:
+        - "Planted for land reclamation on disturbed sites"
+        - "Used in agroforestry systems to improve soil for other crops"
+        - "Grown as windbreaks and privacy screens"
+        - "Planted for rapid carbon sequestration due to fast growth"
+      symbolic_meaning:
+        - "Represents ecological restoration and healing damaged landscapes"
+        - "Symbolizes cooperation between species (tree and nitrogen-fixing bacteria)"
+        - "Demonstrates the value of introduced species that provide ecological benefits"
+        - "Shows how trees can improve conditions for the broader ecosystem"
+  
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "40-60 feet tall (about as tall as a 4-6 story building)"
+    growth_rate: "Fast-growing, can add 2-3 feet per year when young"
+    crown_spread: "25-35 feet wide when fully grown"
+    lifespan: "60-120 years"
+    trunk_diameter: "1-2 feet across when mature"
+    root_system: "Wide-spreading, relatively shallow but vigorous"
+    toxicity: "Not toxic to humans or animals"
+  
+  # Kid-friendly cultural significance
+  kid_friendly_cultural_significance:
+    - "In Italy, people planted these trees near farms because they noticed crops grew better around them (because of the tree's nitrogen-fixing abilities)"
+    - "The wood is strong but easy to carve, so it was popular for making wooden tools and bowls"
+    - "Italian Alders can grow super fast - sometimes adding as much height in one year as you might grow in 2-3 years!"
+    - "Scientists now plant these trees to help clean up land that's been damaged by pollution or mining"
+    - "The heart-shaped leaves were sometimes used in traditional Valentine's Day decorations in parts of southern Europe"
+  
+  # Conservation status section
+  conservation_status:
+    status: "Least Concern (widespread and common in its native range)"
+    threats: "No major threats to wild populations; climate change may affect distribution in parts of its native range"
+    protection_efforts: "Common in cultivation but no specific conservation measures needed; valued for land restoration and agroforestry projects"
+  
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-SHAPE-04"  # Heart-shaped leaves
+      - "feature_id: LEAF-COMPLEX-01"  # Simple leaves
+    
+    confirmation_features:
+      - "feature_id: FLOWER-TYPE-01"  # Catkins present
+      - "feature_id: FRUIT-TYPE-01"  # Cone-like fruits
+      - "feature_id: ECO-REL-01"  # Nitrogen fixing
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-01", "TREE-FORM-02"]  # Pyramidal to rounded crown
+      
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SHAPE-04", "BARK-TEXT-01"]  # Heart-shaped leaves, smooth bark
+      
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-01", "LEAF-EDGE-02"]  # Cone-like fruits, serrated edges
+    
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["FLOWER-TYPE-01", "LEAF-SHAPE-04", "LEAF-COLOR-01"]  # Catkins, heart-shaped leaves, dark green
+        notes: "Catkins and glossy new leaves make spring identification reliable"
+      
+      summer:
+        reliability: "High"
+        key_features: ["LEAF-SHAPE-04", "LEAF-COLOR-01", "FRUIT-TYPE-01"]  # Heart-shaped leaves, dark green, cone-like fruits
+        notes: "Glossy heart-shaped leaves are distinctive"
+      
+      fall:
+        reliability: "Medium" 
+        key_features: ["LEAF-FALL-01", "FRUIT-TYPE-01", "LEAF-SHAPE-04"]  # Yellow fall color, cone-like fruits, heart-shaped leaves
+        notes: "Often holds leaves later than other deciduous trees; cone-like fruits visible"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["FRUIT-TYPE-01", "WINTER-FEAT-01", "BARK-TEXT-01"]  # Cone-like fruits, winter catkins, smooth bark
+        notes: "Persistent cone-like fruits and winter buds help with identification"
+    
+    misidentification_risks:
+      - "Most often confused with European Alder (Alnus glutinosa) which has more rounded leaves with notched tips"
+      - "Can be mistaken for Red Alder (Alnus rubra), which has different leaf shape and reddish inner bark"
+      - "Sometimes confused with Common Hazel (Corylus avellana), which has similar leaves but produces nuts"
+  
+  # Wildlife value section
+  wildlife_value:
+    - "Seeds provide food for small birds including finches and siskins"
+    - "Catkins offer early season food source for pollinators"
+    - "Foliage hosts various caterpillars and other insect larvae"
+    - "Dense branching provides nesting sites for birds"
+    - "Improves soil for other plants through nitrogen fixation"
+    - "Provides shade and shelter for wildlife in urban settings"

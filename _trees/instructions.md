@@ -470,4 +470,37 @@ Tree-tracking.md serves as the master list and source of truth for all trees inc
    - If a tree appears to be incorrectly classified, confirm with botanical references before making changes
    - Any changes to tree classification should be updated in both tree-tracking.md and the appropriate path files
 
+5. **Genus-First Approach**:
+   - For rare species or those with subtle distinctions, use a genus-level approach
+   - Group similar species at the genus level when they meet these criteria:
+     a) Rarely encountered in California
+     b) Difficult to distinguish at the species level (especially for children)
+     c) Share distinctive genus-level characteristics
+   - When using genus-level groupings:
+     a) List all included species in both tree-tracking.md and path files
+     b) Focus on genus-level identification characteristics
+     c) Add detailed genus description sections to path files
+     d) Update tree counts throughout all related files
+     
+   - **Implemented Genus Groups**:
+     - **Broadleaf Trees**:
+       - Birch Genus (Betula spp.) - 9 species
+       - Less Common Alder Species (Alnus spp.) - 6 species
+       - Elm Genus (Ulmus spp.) - 7 species
+       - Less Common Maple Species (Acer spp.) - 2 species
+     
+     - **Conifer Trees**:
+       - Common Cypress Genus (Cupressus spp.) - 6 species
+       - Less Common Fir Species (Abies spp.) - 8 species
+       - Less Common Pine Species (Pinus spp.) - 2 species
+       - Less Common Spruce Species (Picea spp.) - 7 species
+       - True Cedar Genus (Cedrus spp.) - 3 species
+       
+   - **Genus Description Format**:
+     Each genus group should include:
+     a) Common characteristics shared by all species in the genus
+     b) Complete list of included species with brief distinguishing features
+     c) Identification tips focusing on genus-level recognition
+     d) Notes on where these species are most likely to be encountered
+
 By following these comprehensive guidelines, you'll create standardized, accurate tree profiles that support the generation of an effective, kid-friendly decision tree for California tree identification.

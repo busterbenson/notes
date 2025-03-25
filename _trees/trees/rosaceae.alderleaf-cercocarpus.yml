@@ -1,0 +1,308 @@
+tree:
+  common_name: "Alderleaf Cercocarpus"
+  scientific_name: "Cercocarpus montanus"
+  family: "Rosaceae"
+  
+  # Basic summary information
+  summary: "A drought-tolerant, deciduous large shrub or small tree native to dry mountain slopes in western North America, including parts of California. Distinguished by its alder-like leaves with prominent veins and feathery, twisted, long-tailed fruits. Important for wildlife habitat and erosion control on dry slopes."
+  
+  identification_path:
+    primary_markers: "Alder-like, wedge-shaped leaves with prominent straight veins and toothed edges above the middle; distinctive twisted feathery tails on seeds"
+    secondary_markers: "Gray-brown flaky bark; wedge-shaped leathery leaves with dark green upper surface and pale, hairy lower surface; grows in dry, rocky mountain habitats"
+    seasonal_markers: "Small cream to yellowish flowers in spring; feathery, twisted seed tails in summer; gray leafless branches in winter"
+    similar_species_differentiation: "Distinguished from true alders by growing in dry habitats, having thicker leaves, and producing long feathery seed tails instead of woody cones; distinguished from birchleaf mountain mahogany by its alder-like leaves rather than birch-like leaves"
+  
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses leaves in fall, though may hold them later in dry years"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Leaves are single pieces, not divided into leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow alternately along the stems"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated
+        notes: "Leaf edges have teeth, primarily in the upper half of the leaf"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Native to dry mountain slopes in parts of California"
+      
+      - feature_id: "ECO-WILD-01"  # Important for wildlife
+        notes: "Provides valuable browse for deer and other wildlife"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        notes: "Highly adapted to survive in dry conditions"
+      
+      - feature_id: "HABITAT-WATER-03"  # Dry slope habitat
+        notes: "Typically grows on dry, rocky slopes"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        notes: "Usually grows as a multi-stemmed shrub or small tree"
+        exceptions: "Occasionally develops a more dominant central trunk in older specimens"
+      
+      - feature_id: "TREE-SIZE-01"  # Short tree
+        notes: "Usually remains under 20 feet tall, often 6-15 feet"
+        exceptions: "Can reach larger sizes in ideal conditions"
+      
+      - feature_id: "TREE-FORM-05"  # Irregular crown
+        notes: "Typically develops an irregular, somewhat rounded crown"
+        exceptions: "Form varies based on growing conditions"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Bark typically becomes flaky or shreddy with age"
+        exceptions: "Young stems have smoother bark"
+    
+    sometimes_true:
+      - feature_id: "FLOWER-SIZE-02"  # Inconspicuous flowers
+        conditions: "Spring flowering season"
+        notes: "Produces small, cream to yellowish flowers that lack petals"
+      
+      - feature_id: "HABITAT-LOC-02"  # Mountain habitat
+        conditions: "Most common native habitat"
+        notes: "Found in mountainous areas, particularly on dry slopes"
+      
+      - feature_id: "HABITAT-LOC-04"  # Desert edge habitat
+        conditions: "In some parts of its range"
+        notes: "Can be found in transitional zones between mountains and desert areas"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "Limited parts of its native range"
+        notes: "Found in some mountain areas of Northern California"
+      
+      - feature_id: "GEO-REGION-02"  # Central California
+        conditions: "Within its native range"
+        notes: "Found in mountain areas of Central California"
+      
+      - feature_id: "GEO-REGION-03"  # Southern California
+        conditions: "Within its native range" 
+        notes: "Found in mountain areas of Southern California"
+      
+      - feature_id: "GEO-ELEV-02"  # Mid-elevation
+        conditions: "Most common elevation range"
+        notes: "Typically found at elevations of 3,000-9,000 feet"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always deciduous, though may hold leaves late in dry years"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has broad leaves, not needles"
+      
+      - feature_id: "FRUIT-TYPE-01"  # Acorns present
+        notes: "Never produces acorns"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        notes: "Does not grow in wet riparian areas; prefers dry sites"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Leaves that look like little fans with straight lines (veins) and teeth at the top edge, and seeds with long curly feathery tails"
+    memorable_comparison: "The leaves look like tiny handheld fans, and the seeds look like they're wearing funny curly pigtails that twist and wave in the wind"
+    touch_tip: "The leaves feel leathery and a bit stiff on top, but the undersides feel fuzzy like a soft blanket"
+    smell_tip: "The leaves have a faint pleasant smell, especially when crushed"
+    fun_fact: "The seeds of this plant have special curly tails that work like drills! When the wind blows them to the ground, the tails twist and untwist with changes in moisture, drilling the seed into the soil to help it grow in dry, rocky places."
+    detective_steps:
+      - step: 1
+        instruction: "Is the plant growing in a dry, sunny place on a mountain slope or hillside?"
+        yes_next: 2
+        no_next: "If it's growing in a wet area by a stream, it's probably not an Alderleaf Cercocarpus"
+      - step: 2
+        instruction: "Look at the leaves - are they shaped like little fans with straight lines (veins) running from the narrow bottom to the wider top, with teeth only at the top half?"
+        yes_next: 3
+        no_next: "If the leaves have a different shape or teeth all around the edge, it might be another plant"
+      - step: 3
+        instruction: "Is it a shrub or small tree (shorter than a one-story house) with multiple stems?"
+        yes_next: 4
+        no_next: "If it's a tall tree with a single trunk, it's probably not an Alderleaf Cercocarpus"
+      - step: 4
+        instruction: "In late spring or summer, do you see seeds with long (1-2 inch) feathery, twisted tails attached to them?"
+        yes_next: "You found an Alderleaf Cercocarpus!"
+        no_next: "If it's not seed season, turn over a leaf - if the bottom is paler and slightly fuzzy, it might be an Alderleaf Cercocarpus"
+  
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaves emerge with a light green color; small, cream to yellowish flowers appear"
+      reproductive_activity: "Flowers bloom, typically without showy petals"
+      identification_tips: "Look for new wedge-shaped leaves with prominent straight veins and small flowers"
+      kid_friendly_tip: "In spring, look for new fan-shaped leaves and tiny flowers without petals - they're not showy but bees still visit them!"
+    
+    - season: "Summer" 
+      visual_changes: "Leaves reach full size and darken to leathery dark green on top, pale and fuzzy underneath; feathery seed tails develop"
+      reproductive_activity: "Seeds develop their distinctive long, feathery, twisted tails"
+      identification_tips: "The distinctive feathery seed tails make summer identification easy"
+      kid_friendly_tip: "In summer, look for the funny twisted 'pigtails' on the seeds that help them drill into the ground"
+    
+    - season: "Fall"
+      visual_changes: "Leaves may turn yellowish to brown before falling; seed tails may persist"
+      reproductive_activity: "Seeds disperse, carried by wind with their feathery tails"
+      identification_tips: "Combination of wedge-shaped leaves and any remaining feathery seed tails"
+      kid_friendly_tip: "In fall, the leaves turn yellow or brown, and the seeds fly away with their feathery tails to find new places to grow"
+    
+    - season: "Winter"
+      visual_changes: "Leaves drop, revealing gray-brown branches and flaky bark"
+      reproductive_activity: "Dormant during winter"
+      identification_tips: "Multiple stems, flaky bark, and often some persistent seed tails"
+      kid_friendly_tip: "In winter, you might still find some curly seed tails attached to the bare branches"
+      
+  confirmation_checklist:
+    - feature: "Wedge-shaped leaves with teeth at the top half"
+      reliability: "High"
+      visibility: "Easy to see up close during growing season"
+    - feature: "Long, feathery, twisted seed tails"
+      reliability: "Very high"
+      visibility: "Very noticeable when present in summer"
+    - feature: "Prominent straight veins in leaves"
+      reliability: "High"
+      visibility: "Visible upon close inspection of leaves"
+    - feature: "Multi-stemmed growth form"
+      reliability: "Medium"
+      visibility: "Visible from a distance"
+    - feature: "Grows in dry, rocky mountain habitats"
+      reliability: "High"
+      visibility: "Habitat is a good indicator"
+    
+  look_alike_species:
+    - species: "Birchleaf Mountain Mahogany (Cercocarpus betuloides)"
+      differences: "Birchleaf Mountain Mahogany has smaller, more birch-like leaves compared to the alder-like leaves of C. montanus; both have similar feathery seed tails"
+      identification_tip: "Check the leaf shape - more rounded for birchleaf, more wedge-shaped for alderleaf"
+    
+    - species: "White Alder (Alnus rhombifolia)"
+      differences: "White Alder grows near water, not on dry slopes; produces woody cone-like fruits rather than feathery seed tails"
+      identification_tip: "Check the habitat (wet vs. dry) and look for feathery seed tails versus woody cones"
+    
+    - species: "Curl-leaf Mountain Mahogany (Cercocarpus ledifolius)"
+      differences: "Curl-leaf Mountain Mahogany has evergreen leaves with edges that curl under, while Alderleaf Cercocarpus has deciduous flat leaves"
+      identification_tip: "Check if the leaves stay on all winter (curl-leaf) or drop in fall (alderleaf)"
+    
+  cultural_ecological_notes:
+    - "Also called Mountain Mahogany, though not related to true mahogany"
+    - "Nitrogen-fixing plant that improves soil fertility"
+    - "Important browse plant for deer and other wildlife"
+    - "Wood is extremely dense and hard, sinking in water"
+    - "Adapted to survive wildfires by resprouting from the base"
+    
+  range_within_california:
+    - "Native to mountainous areas throughout much of California"
+    - "Common in the Coast Ranges, Sierra Nevada foothills, and mountains of Southern California"
+    - "Typically found on dry, rocky slopes at elevations of 3,000-9,000 feet"
+    - "Often grows in chaparral, pine-oak woodland, and pinyon-juniper communities"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Native American - Southern California Tribes"
+      physical_uses:
+        - "Hard wood used for tool handles, digging sticks, and hunting implements"
+        - "Dense wood favored for fire-starting tools due to its hardness"
+        - "Bark sometimes used for medicinal teas to treat stomach ailments"
+        - "Straight stems used for arrow shafts by some tribes"
+      symbolic_meaning:
+        - "Represented resilience due to its ability to thrive in harsh conditions"
+        - "Seeds with distinctive tails featured in children's stories about plant dispersal"
+        - "Plant's drought tolerance symbolized survival through hardship"
+        - "Used in teaching about respectful harvesting practices for sustainable use"
+    
+    - culture: "Native American - Great Basin Tribes"
+      physical_uses:
+        - "Wood used for bow-making by some tribes"
+        - "Dense wooden implements used in ceremonial contexts"
+        - "Root and bark preparations used to treat rheumatism"
+        - "Hard wood used for specialized tools requiring strength and durability"
+      symbolic_meaning:
+        - "Plant's ability to improve soil through nitrogen fixation represented sharing and community support"
+        - "Featured in stories about adaptation and survival in challenging environments"
+        - "Used as a teaching example of plants that give back to the earth"
+    
+    - culture: "Early Western Settlers"
+      physical_uses:
+        - "Dense wood used for tool handles and fence posts"
+        - "Sometimes used as firewood, though difficult to cut"
+        - "Recognized as valuable forage for livestock"
+      symbolic_meaning:
+        - "Represented the hardiness needed for frontier life"
+        - "Appreciated as an indicator of resilient native ecosystems"
+    
+    - culture: "Modern Environmental Management"
+      physical_uses:
+        - "Used in habitat restoration projects for dry slopes"
+        - "Planted for erosion control in fire-prone areas"
+        - "Valued in native plant gardens for drought tolerance"
+        - "Used in watershed protection projects"
+      symbolic_meaning:
+        - "Represents sustainable, climate-appropriate landscaping"
+        - "Symbol of fire-adapted native ecosystems"
+        - "Used as an educational example of plant adaptations to drought"
+  
+  # Additional physical characteristics
+  physical_characteristics:
+    height_range: "6-15 feet typically, occasionally to 20 feet"
+    growth_rate: "Slow to moderate"
+    crown_spread: "6-12 feet at maturity"
+    lifespan: "50-100+ years"
+    trunk_diameter: "Multiple stems usually 2-6 inches in diameter"
+    root_system: "Deep, extensive root system adapted to access limited moisture"
+    toxicity: "Non-toxic"
+    
+  conservation_status:
+    status: "Secure - Common within its range"
+    threats: 
+      - "Habitat loss from development in some foothill areas"
+      - "Altered fire regimes may affect regeneration in some areas"
+      - "Climate change may shift suitable habitat zones"
+    protection_efforts:
+      - "Protected in various public lands throughout its range"
+      - "Used in native plant restoration projects"
+      - "Included in conservation plans for dry mountain ecosystems"
+    
+  # Decision tree mapping
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: TREE-SIZE-01"  # Short tree
+      - "feature_id: ECO-ADAPT-01"  # Drought tolerant
+      - "feature_id: HABITAT-WATER-03"  # Dry slope habitat
+    confirmation_features:
+      - "feature_id: LEAF-COMPLEX-01"  # Simple broadleaf
+      - "feature_id: LEAF-EDGE-02"  # Serrated
+      - "feature_id: TREE-TRUNK-02"  # Multi-trunked
+      - "feature_id: ECO-ORIGIN-01"  # Native to California
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-01", "TREE-TRUNK-02", "TREE-FORM-05"]  # Short tree, multi-trunked, irregular crown
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-COMPLEX-01", "LEAF-EDGE-02", "BARK-TEXT-03"]  # Simple leaves, serrated edge, peeling bark
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-ARRANGE-01", "HABITAT-WATER-03"]  # Alternate arrangement, dry slope habitat
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["LEAF-COMPLEX-01", "FLOWER-SIZE-02", "LEAF-EDGE-02"]
+        notes: "New leaves and small flowers help with spring identification"
+      summer:
+        reliability: "Very High" 
+        key_features: ["LEAF-COMPLEX-01", "LEAF-EDGE-02"]
+        notes: "Distinctive feathery seed tails make summer identification reliable"
+      fall:
+        reliability: "Medium"
+        key_features: ["LEAF-FALL-01", "TREE-TRUNK-02"]
+        notes: "Check for any remaining seed tails and leaf shape"
+      winter:
+        reliability: "Low"
+        key_features: ["TREE-TRUNK-02", "BARK-TEXT-03", "HABITAT-WATER-03"]
+        notes: "Multi-stemmed form, flaky bark, and habitat help with winter identification"
+    misidentification_risks: "Most often confused with other Cercocarpus species, particularly Birchleaf Mountain Mahogany (C. betuloides)"
+
+  wildlife_value:
+    nesting_sites: "Dense branching provides nesting sites for small birds"
+    food_source: "Leaves and young twigs browsed by deer, bighorn sheep, and other ungulates"
+    shelter: "Provides cover for small mammals and birds"
+    ecological_notes: "Highly valuable for wildlife in dry mountain ecosystems; nitrogen-fixing ability improves soil for other plants"
+    
+  propagation_information:
+    growing_conditions: "Prefers well-drained, rocky or sandy soils with low fertility"
+    water_needs: "Low; very drought-tolerant once established"
+    planting_tips: "Plant in full sun on slopes or well-drained areas; avoid heavy clay soils"
+    maintenance: "Requires minimal maintenance; can be pruned to shape or rejuvenate"
+    special_notes: "Excellent choice for dry, difficult sites and native landscaping; good for erosion control on slopes"

@@ -1,0 +1,234 @@
+tree:
+  common_name: "Resin Birch"
+  scientific_name: "Betula resinifera"
+  family: "Betulaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A medium-sized tree with bright white bark that peels off in thin papery layers. Distinguished by its sticky (resinous) buds and twigs, and oval to triangular leaves with tiny double teeth along the edges."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "White peeling bark in horizontal papery strips; sticky (resinous) buds and twigs"
+    secondary_markers: "Oval to triangular leaves with doubly serrated edges; alternate leaf arrangement"
+    seasonal_markers: "Long hanging catkins in spring; bright golden-yellow fall color"
+    similar_species_differentiation: "Unlike Paper Birch, has stickier buds and twigs; unlike European Birch, lacks black diamond-shaped marks on trunk"
+  
+  # Core features section
+  features:
+    always_true:
+      # Reference features.yml IDs with tree-specific notes
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops all leaves in fall and grows new ones each spring"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow singly along branches, not in pairs"
+      
+      - feature_id: "BARK-COLOR-02"  # White bark
+        notes: "Bright white bark that peels in thin horizontal layers like paper"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Bark peels in thin papery strips that can be gently pulled off"
+    
+    usually_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        exceptions: "Can grow larger in ideal conditions in its native range"
+        notes: "Usually grows 40-80 feet tall at maturity"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        exceptions: "May be more pyramidal when young or in dense stands"
+        notes: "Forms an oval to rounded shape with maturity"
+      
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        exceptions: "Can occasionally develop multiple trunks, especially if damaged"
+        notes: "Typically grows with one main trunk"
+      
+      - feature_id: "LEAF-EDGE-03"  # Doubly serrated
+        exceptions: "Some leaves may have less distinct double serration"
+        notes: "Leaf edges have tiny teeth with even smaller teeth on them"
+    
+    sometimes_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "In autumn before leaf drop"
+        notes: "Leaves turn bright golden-yellow in fall"
+      
+      - feature_id: "TREE-SIZE-03"  # Large tree
+        conditions: "In ideal growing conditions in native range"
+        notes: "Can grow larger in optimal conditions"
+      
+      - feature_id: "FLOWER-TYPE-01"  # Catkins present
+        conditions: "During spring flowering season"
+        notes: "Long hanging male catkins (3-4 inches) and smaller upright female catkins"
+    
+    never_true:
+      # Features explicitly absent that help differentiation
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops leaves in fall; never stays green year-round"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves never grow in pairs across from each other on branches"
+      
+      - feature_id: "BARK-COLOR-03"  # Red bark
+        notes: "Unlike River Birch, never has reddish or cinnamon-colored bark"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Bright white bark that peels off in thin layers like paper"
+    memorable_comparison: "The bark looks like you could write a letter on it!"
+    touch_tip: "The buds and young twigs feel sticky, like they have tree sap on them"
+    smell_tip: "The sticky buds and twigs have a light piney smell if you sniff carefully"
+    fun_fact: "This tree comes from Alaska, where people used to make canoes, baskets, and even houses from the bark because it's waterproof and doesn't rot easily!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the bark. Is it bright white and peeling off in thin paper-like strips?"
+        yes_next: 2
+        no_next: "Not a Resin Birch - might be another type of tree"
+      - step: 2
+        instruction: "Carefully touch a small twig or bud. Does it feel sticky like it has sap on it?"
+        yes_next: 3
+        no_next: "Might be a Paper Birch instead of a Resin Birch - they look very similar"
+      - step: 3
+        instruction: "Look at a leaf. Is it shaped like a pointed oval with tiny double teeth along the edges?"
+        yes_next: "You found a Resin Birch!"
+        no_next: "Might be another type of birch - check the leaf shape again"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New light green leaves emerge; long hanging male catkins (3-4 inches) appear"
+      reproductive_activity: "Male catkins release yellow pollen; small upright female catkins form"
+      identification_tips: "The sticky buds are particularly noticeable as they open"
+      kid_friendly_tip: "In spring, look for long catkins hanging down like fuzzy caterpillars"
+    
+    - season: "Summer" 
+      visual_changes: "Leaves mature to dark green; white bark stands out against green foliage"
+      reproductive_activity: "Female catkins develop into small cylindrical structures containing seeds"
+      identification_tips: "The resinous, sticky buds and twigs become more noticeable"
+      kid_friendly_tip: "In summer, the white bark looks bright against the green leaves"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn bright golden yellow before dropping"
+      reproductive_activity: "Winged seeds are released from mature female catkins and blown by wind"
+      identification_tips: "Golden fall color and seed release help with identification"
+      kid_friendly_tip: "In fall, the leaves look like golden coins before they drop to the ground"
+    
+    - season: "Winter"
+      visual_changes: "White peeling bark becomes more visible without leaves"
+      reproductive_activity: "Dormant, but next year's catkins begin forming"
+      identification_tips: "Sticky buds are easily visible along bare branches"
+      kid_friendly_tip: "In winter, you can see the white trunk and branches better without leaves"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "White bark that peels in horizontal papery strips"
+      reliability: "High"
+      visibility: "High - visible from a distance"
+    - feature: "Sticky (resinous) buds and twigs"
+      reliability: "High"
+      visibility: "Medium - need to touch or look closely"
+    - feature: "Oval to triangular leaves with doubly serrated edges"
+      reliability: "High"
+      visibility: "Medium - need to examine leaves"
+    - feature: "Alternate leaf arrangement"
+      reliability: "High"
+      visibility: "Medium - check how leaves are attached"
+    
+  look_alike_species:
+    - species: "Paper Birch (Betula papyrifera)"
+      differences: "Very similar but lacks the distinctively sticky buds and twigs; more commonly planted in California"
+      identification_tip: "Touch the buds - Paper Birch buds aren't as sticky as Resin Birch buds"
+    
+    - species: "European White Birch (Betula pendula)"
+      differences: "Has more drooping branches, less peeling bark, and distinctive black diamond-shaped marks on the trunk"
+      identification_tip: "Look for black diamond shapes on the trunk - these are present on European Birch but not on Resin Birch"
+    
+    - species: "River Birch (Betula nigra)"
+      differences: "Has cinnamon to reddish-brown peeling bark instead of white bark"
+      identification_tip: "Check the bark color - River Birch bark is reddish-brown, not white"
+    
+    - species: "Quaking Aspen (Populus tremuloides)"
+      differences: "Has smooth white-green bark that doesn't peel and round leaves that quiver in the breeze"
+      identification_tip: "Try to peel a small bit of bark - Aspen bark doesn't peel in paper-like strips"
+
+  cultural_ecological_notes:
+    - "Adapted to harsh northern climates but struggles in hot areas of California"
+    - "Pioneer species that quickly colonizes disturbed areas after fires"
+    - "In California, mostly found in botanical gardens or cooler mountain regions"
+    
+  range_within_california:
+    - "Not native to California but occasionally planted in cooler mountain regions of Northern California"
+    - "Rarely found in Central Valley or Southern California due to heat sensitivity"
+    - "Requires cooler temperatures and adequate moisture to thrive"
+    
+  cultural_significance:
+    - culture: "Alaska Native Peoples"
+      physical_uses:
+        - "Bark was used to make canoes, containers, and baskets"
+        - "Wood was used for tools, sleds, and snowshoes"
+      symbolic_meaning:
+        - "Represents renewal and adaptability due to its pioneer growth after forest fires"
+        - "Associated with survival skills and resourcefulness"
+    
+    - culture: "Modern Landscape Design"
+      physical_uses:
+        - "Planted as an ornamental specimen tree for its striking white bark"
+        - "Used in naturalistic landscape designs in cooler California regions"
+      symbolic_meaning:
+        - "Represents northern forests and cool mountain environments"
+        - "Symbol of adaptability to harsh conditions"
+
+  physical_characteristics:
+    height_range: "40-80 feet tall"
+    growth_rate: "Medium to fast - about 1-2 feet per year when young"
+    crown_spread: "20-40 feet wide"
+    lifespan: "60-100 years"
+    trunk_diameter: "Up to 1-2 feet"
+    root_system: "Moderately shallow, spreading"
+    toxicity: "No significant toxicity"
+
+  conservation_status:
+    status: "Not listed as threatened or endangered"
+    threats: "Climate warming may affect southern distribution"
+    protection_efforts: "Common and abundant in native range"
+
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+      - feature_id: "BARK-COLOR-02"  # White bark
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+    confirmation_features:
+      - feature_id: "LEAF-EDGE-03"  # Doubly serrated
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["BARK-COLOR-02", "TREE-SIZE-02"]  # White bark, medium size
+      - distance: "from_nearby"
+        features_to_check: ["BARK-TEXT-03", "LEAF-ARRANGE-01"]  # Peeling bark, alternate leaves
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-03", "SENSORY-SEC-02"]  # Doubly serrated, resinous buds
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["BARK-COLOR-02", "BARK-TEXT-03", "FLOWER-TYPE-01"]
+        notes: "Catkins and new leaf growth help with spring identification"
+      summer:
+        reliability: "High"
+        key_features: ["BARK-COLOR-02", "BARK-TEXT-03", "LEAF-EDGE-03"]
+        notes: "Full leaf development makes identification easier"
+      fall:
+        reliability: "High" 
+        key_features: ["BARK-COLOR-02", "LEAF-FALL-01", "BARK-TEXT-03"]
+        notes: "Golden fall color combined with white bark is distinctive"
+      winter:
+        reliability: "Medium"
+        key_features: ["BARK-COLOR-02", "BARK-TEXT-03"]
+        notes: "White bark remains visible, buds are sticky"
+    misidentification_risks:
+      - "Paper Birch - very similar but lacks sticky buds and twigs"
+      - "European White Birch - has black markings on trunk"
+      - "River Birch - has reddish-brown rather than white bark"
+      - "Quaking Aspen - has smooth rather than peeling bark"

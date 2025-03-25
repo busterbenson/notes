@@ -1,0 +1,277 @@
+tree:
+  common_name: "Pacific Dogwood"
+  scientific_name: "Cornus nuttallii"
+  family: "Cornaceae"
+  
+  # Basic summary information
+  summary: "A small to medium-sized deciduous tree with large, showy white flower-like bracts, bright red fruit clusters, and distinctive parallel-veined leaves. It grows in forests as an understory tree and has smooth gray bark."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Large white 'flowers' (actually bracts) that appear in spring and sometimes again in fall; oval leaves with strongly parallel veins; bright red berry clusters"
+    secondary_markers: "Smooth gray bark; opposite leaf arrangement; tiered branching pattern; red to purple fall color"
+    seasonal_markers: "Showy white bracts in spring; bright red berries in fall; red-purple fall foliage"
+    similar_species_differentiation: "Unlike Eastern Flowering Dogwood, has 4-7 bracts (not 4) and grows taller; unlike Kousa Dogwood, has bracts that appear with or before leaves, not after"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all leaves in fall"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple
+        notes: "Leaves are simple, not divided into leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves grow directly across from each other on branches"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Has large white bracts that look like flower petals surrounding tiny true flowers"
+      
+      - feature_id: "FRUIT-TYPE-03"  # Berries present
+        notes: "Produces clusters of bright red berry-like fruits"
+      
+      - feature_id: "BRANCH-PATT-01"  # Whorled branches
+        notes: "Branches often grow in tiers or layers, creating a distinctive horizontal pattern"
+
+    usually_true:
+      # Features that are primarily true, but have notable exceptions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with a single, straight main trunk"
+        exceptions: "May develop multiple trunks after damage or in poor growing conditions"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Typically reaches 15-40 feet in height at maturity"
+        exceptions: "May be shorter in poor conditions or more shrub-like after damage"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Usually has a pyramidal to rounded shape with horizontal branching layers"
+        exceptions: "Shape may be irregular in deep shade or when crowded"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Bark is typically smooth and gray"
+        exceptions: "May develop slight furrows with age but remains relatively smooth"
+
+    sometimes_true:
+      # Features that vary with age, season, or conditions
+      - feature_id: "FLOWER-TIME-01"  # Spring flowering
+        conditions: "Spring (April-May)"
+        notes: "Main flowering period with large white bracts"
+      
+      - feature_id: "FLOWER-TIME-03"  # Fall flowering
+        conditions: "Early fall (September-October)"
+        notes: "Sometimes produces a second, smaller set of flowers in fall"
+      
+      - feature_id: "LEAF-FALL-02"  # Red fall color
+        conditions: "Fall"
+        notes: "Leaves often turn reddish-purple before dropping"
+      
+      - feature_id: "HABITAT-LOC-02"  # Mountain habitat
+        conditions: "In parts of its range"
+        notes: "Can be found in mountain forests, particularly in middle elevations"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        conditions: "In parts of its range"
+        notes: "Sometimes found along streams and in moist areas"
+
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Never keeps its leaves through winter"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has compound leaves, always simple"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Never has alternate leaf arrangement, always opposite"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Produces berries, not cones"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A tree with big white 'flowers' (actually special leaves called bracts) that look like stars, and bright red berries in clusters"
+    memorable_comparison: "The white bracts look like a star or flower cutout made of paper - they're flat and have perfect pointed tips"
+    touch_tip: "Feel the leaves - they have lines (veins) that run parallel like train tracks from the base to the tip"
+    smell_tip: "The flowers don't have a strong smell, but the leaves sometimes have a slightly sweet scent when crushed"
+    fun_fact: "Pacific Dogwood flowers aren't really flowers! The big white parts that look like petals are actually modified leaves called bracts. The real flowers are the tiny yellow parts in the middle. It's like wearing a fancy costume to look bigger and more noticeable to pollinators!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look for a small tree growing under bigger trees in the forest. Does it have a layer-cake pattern of horizontal branches?"
+        yes_next: 2
+        no_next: "Might not be a Pacific Dogwood - look for trees with more horizontal branching"
+      - step: 2
+        instruction: "Look at the leaves. Do they grow exactly opposite each other and have strong parallel veins that curve like train tracks from the base to the tip?"
+        yes_next: 3
+        no_next: "Not a Pacific Dogwood - check other forest trees with different leaf patterns"
+      - step: 3
+        instruction: "In spring or sometimes fall, does it have large white star-shaped 'flowers' with 4-7 pointed bracts, or in late summer/fall does it have bright red berry clusters?"
+        yes_next: "You found a Pacific Dogwood! If the white parts are 4-6 inches across and look like a star, you're definitely right."
+        no_next: "If it's not flowering or fruiting season, check the smooth gray bark and the leaf arrangement to help identify it"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Large white flower-like bracts appear; new leaves emerge light green"
+      reproductive_activity: "Showy white bracts surround small true flowers in the center"
+      identification_tips: "White bracts are very distinctive and showy against greening forest"
+      kid_friendly_tip: "In spring, look for big white stars against the green forest - these are the showiest part of the tree"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of dark green leaves; bracts fall; green fruits begin to develop"
+      reproductive_activity: "Fruits grow and develop into clusters"
+      identification_tips: "Opposite leaves with distinctive parallel venation; developing fruit clusters"
+      kid_friendly_tip: "By summer, the white star-like parts are gone, but you can see clusters of small green berries forming"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn reddish-purple; fruits mature to bright red; sometimes a second set of white bracts appears"
+      reproductive_activity: "Fruits mature; occasional second flowering"
+      identification_tips: "Bright red fruit clusters and fall leaf color; sometimes second set of bracts"
+      kid_friendly_tip: "In fall, look for bright red berry clusters that look like tiny apples in bunches, and sometimes the tree makes a second batch of white stars"
+    
+    - season: "Winter"
+      visual_changes: "Tree loses all leaves; distinctive branching pattern clearly visible"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Tiered, horizontal branching pattern; smooth gray bark; opposite branching and buds"
+      kid_friendly_tip: "In winter with no leaves, you can see how the branches grow in flat layers like a series of platforms"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Large white bracts (4-7, usually 6) in spring"
+      reliability: "Very high (when present)"
+      visibility: "Easy - visible from distance during flowering"
+    - feature: "Opposite leaves with parallel veins"
+      reliability: "Very high"
+      visibility: "Easy - visible during growing season"
+    - feature: "Tiered, horizontal branching pattern"
+      reliability: "High"
+      visibility: "Easy - visible year-round"
+    - feature: "Bright red fruit clusters in fall"
+      reliability: "High (when present)"
+      visibility: "Medium - visible in late summer and fall"
+    - feature: "Smooth gray bark"
+      reliability: "Medium"
+      visibility: "Easy - visible year-round"
+    
+  look_alike_species:
+    - species: "Eastern Flowering Dogwood (Cornus florida)"
+      differences: "Pacific Dogwood is taller, has more bracts (4-7 vs. consistently 4), and larger individual fruits"
+      identification_tip: "Pacific Dogwood typically has 6 bracts, while Eastern Flowering Dogwood always has 4"
+    - species: "Kousa Dogwood (Cornus kousa)"
+      differences: "Pacific Dogwood flowers appear with or before leaves; Kousa Dogwood flowers after leaves are fully expanded"
+      identification_tip: "Kousa Dogwood has bumpy raspberry-like fruit clusters, not individual berries"
+    - species: "Mountain Dogwood (C. nuttallii var. goldringii)"
+      differences: "Mountain Dogwood is a variety of Pacific Dogwood with yellower bracts and more shrubby form"
+      identification_tip: "Considered a variety of the same species, distinguished mainly by mountain habitat and form"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Native American (Pacific Northwest tribes)"
+      physical_uses:
+        - "Used the strong, hard wood for making tools, bows, and arrow shafts"
+        - "Created dye from the bark for basket-making materials"
+        - "Made pegs and stakes from the wood for construction"
+      symbolic_meaning:
+        - "Associated with spring renewal due to its early, showy flowering"
+        - "Wood strength symbolized endurance and resilience"
+    
+    - culture: "Early American Settlers"
+      physical_uses:
+        - "Used the hard, dense wood for tool handles and machinery parts"
+        - "Planted as an ornamental around homesteads"
+        - "Used bark in folk medicine as a substitute for quinine"
+      symbolic_meaning:
+        - "Represented the beauty of the Pacific Northwest forests"
+        - "Flowering time used as an indicator for planting crops"
+    
+    - culture: "Modern Horticulture"
+      physical_uses:
+        - "Grown as a prized native ornamental tree in gardens"
+        - "Used in native plant restoration projects"
+        - "Valued as a shade-tolerant understory tree in landscape design"
+      symbolic_meaning:
+        - "State flower of British Columbia, symbolizing regional identity"
+        - "Represents the understory beauty of Pacific Northwest forests"
+    
+  cultural_ecological_notes:
+    - "Important component of mixed forest understory ecosystems"
+    - "Provides food for many birds and mammals through its fruits"
+    - "Adds spring beauty to forests before canopy trees leaf out"
+    - "Helps maintain forest structure with multi-layered canopy"
+    - "Susceptible to dogwood anthracnose fungus, which has impacted populations"
+    
+  range_within_california:
+    - "Found in northern and central California mountains"
+    - "Common in the Coast Ranges and western slopes of the Sierra Nevada"
+    - "Grows primarily in mixed evergreen and deciduous forests"
+    - "Often found as an understory tree in redwood and mixed conifer forests"
+    - "Range extends from sea level to about 5,000 feet elevation"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "15-40 feet at maturity"
+    growth_rate: "Moderate (1-2 feet per year in good conditions)"
+    crown_spread: "15-30 feet wide at maturity"
+    lifespan: "80-125 years"
+    trunk_diameter: "Up to 1-2 feet at maturity"
+    root_system: "Moderately deep, spreading"
+    toxicity: "Not toxic to humans, though fruits are not commonly eaten"
+  
+  conservation_status:
+    status: "Declining in parts of its range due to disease"
+    threats: 
+      - "Dogwood anthracnose fungal disease (Discula destructiva)"
+      - "Habitat loss in portions of its range"
+      - "Climate change affecting suitable habitat"
+    protection_efforts:
+      - "Research into disease-resistant strains"
+      - "Inclusion in forest conservation efforts"
+      - "Propagation and planting in suitable habitats"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-ARRANGE-02"  # Opposite
+      - "feature_id: FLOWER-SIZE-01"  # Showy flowers
+    confirmation_features:
+      - "feature_id: BRANCH-PATT-01"  # Whorled branches
+      - "feature_id: FRUIT-TYPE-03"  # Berries present
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["FLOWER-SIZE-01", "TREE-FORM-01"]  # Showy flowers, pyramidal shape
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-ARRANGE-02", "BRANCH-PATT-01"]  # Opposite leaves, whorled branches
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-03", "LEAF-COMPLEX-01"]  # Berries, simple leaves
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["FLOWER-SIZE-01", "LEAF-ARRANGE-02", "LEAF-COMPLEX-01"]  # Showy flowers, opposite, simple
+        notes: "Large white bracts are highly distinctive and make spring identification very reliable"
+      
+      summer:
+        reliability: "Medium" 
+        key_features: ["LEAF-ARRANGE-02", "BRANCH-PATT-01", "FRUIT-TYPE-03"]  # Opposite, whorled branches, berries
+        notes: "Developing fruit clusters; opposite leaves with parallel veins; tiered branching"
+      
+      fall:
+        reliability: "High"
+        key_features: ["FRUIT-TYPE-03", "LEAF-FALL-02", "LEAF-ARRANGE-02"]  # Berries, red fall color, opposite
+        notes: "Bright red fruit clusters and fall color; sometimes second flowering"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["BRANCH-PATT-01", "TREE-FORM-01", "BARK-TEXT-01"]  # Whorled branches, pyramidal, smooth bark
+        notes: "Distinctive tiered branching pattern; opposite buds; smooth gray bark"
+    misidentification_risks: 
+      - "Other dogwood species have similar features but fewer or different arrangement of bracts"
+      - "When not flowering, may be confused with other opposite-leaved forest trees"
+      - "In fall, second flowering may be less showy and harder to recognize"
+  
+  wildlife_value:
+    - "Fruits eaten by many bird species including robins, thrushes, and waxwings"
+    - "Deer and small mammals browse on leaves and twigs"
+    - "Flowers provide nectar for bees, butterflies, and other insects"
+    - "Dense branching provides nesting sites for small birds"
+    - "Fallen leaves enrich forest soil when they decompose"

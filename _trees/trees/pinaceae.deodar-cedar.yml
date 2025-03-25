@@ -1,0 +1,271 @@
+tree:
+  common_name: "Deodar Cedar"
+  scientific_name: "Cedrus deodara"
+  family: "Pinaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A majestic evergreen tree with blue-green needles in clusters and gracefully drooping branch tips. It forms a broad pyramid shape with a straight central trunk, and has upright barrel-shaped cones that sit like candles on the branches."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Blue-green needles in clusters on short shoots; distinctively drooping branch tips"
+    secondary_markers: "Broad pyramid shape; upright barrel-shaped cones; needles of various lengths (3/4 to 2 inches)"
+    seasonal_markers: "Little seasonal change; stays evergreen with new growth appearing lighter green in spring"
+    similar_species_differentiation: "Distinguished from Atlas Cedar by its drooping branch tips; from Lebanon Cedar by its more weeping form and bluer foliage; has needle clusters unlike pines with needles in bundles"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles year-round for several years before shedding"
+      
+      - feature_id: "NEEDLE-ARRANGE-06"  # Clustered needles
+        notes: "Needles grow in tufts or clusters on short shoots"
+      
+      - feature_id: "BRANCH-ANGLE-03"  # Drooping branches
+        notes: "Branch tips droop distinctively, giving a weeping appearance"
+      
+      - feature_id: "CONE-POS-01"  # Upright cones
+        notes: "Cones stand upright on the branches like candles"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        notes: "Not native to California; originally from the western Himalayas"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with one main straight trunk"
+        exceptions: "Can sometimes develop multiple leaders if the main leader is damaged"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Forms a broad, symmetrical pyramid shape"
+        exceptions: "Very old trees may develop a more flat-topped or irregular crown"
+      
+      - feature_id: "LEAF-COLOR-03"  # Blue-green
+        notes: "Needles typically have a blue-green or silvery-green color"
+        exceptions: "Color intensity varies by variety and growing conditions"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Can grow quite tall (40-70 feet) in good conditions"
+        exceptions: "May stay smaller in poor conditions or in dwarf cultivars"
+    
+    sometimes_true:
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees"
+        notes: "Bark is relatively smooth and gray on young trees"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Older trees"
+        notes: "Bark becomes rough and fissured with age"
+      
+      - feature_id: "CONE-SIZE-02"  # Medium cones
+        conditions: "Mature trees in cone-producing years"
+        notes: "Produces barrel-shaped cones about 3-5 inches long"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "When planted in suitable urban settings"
+        notes: "Tolerates urban conditions if given adequate space and water"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all needles seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Unlike pines, needles are not in bundles of specific numbers but in tufts"
+      
+      - feature_id: "CONE-POS-02"  # Hanging cones
+        notes: "Cones never hang downward like pine or spruce cones"
+      
+      - feature_id: "TREE-FORM-07"  # Flat topped
+        notes: "Young and middle-aged trees are never flat-topped"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "A Christmas-tree shape with droopy branch tips, like it's tired or sad"
+    memorable_comparison: "Its branches droop at the ends like they're tired, and the needles grow in little tufts like tiny star bursts"
+    touch_tip: "The needles are softer than they look - gently touch the sides rather than the pointy tips"
+    smell_tip: "Crush a needle gently to smell a sweet, resiny scent like a forest"
+    fun_fact: "Deodar Cedar's name comes from the Sanskrit word 'devadaru,' which means 'timber of the gods.' In India, these trees are sacred and often planted around temples. Some Deodar Cedars can live for over 1,000 years!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the branch tips. Do they droop downward like they're tired or sad?"
+        yes_next: 2
+        no_next: "If the branch tips point up or straight out, it might be a different cedar species"
+      - step: 2
+        instruction: "Look at how the needles grow. Are they in tufts or clusters along the branches, like little stars?"
+        yes_next: 3
+        no_next: "If the needles grow singly or in exact bundles (like 2 or 5), it's not a cedar"
+      - step: 3
+        instruction: "Check the color of the needles. Are they blue-green or silvery-green?"
+        yes_next: 4
+        no_next: "If they're dark green without any blue tint, it might be a different cedar species"
+      - step: 4
+        instruction: "If there are cones, do they stand upright on the branches instead of hanging down?"
+        yes_next: "You found a Deodar Cedar!"
+        no_next: "If the cones hang down, it's not a cedar - try checking for a pine or spruce"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New growth appears at branch tips as lighter green, soft needles"
+      reproductive_activity: "Male pollen cones may appear, releasing yellow pollen"
+      identification_tips: "The contrast between new growth and older needles is noticeable"
+      kid_friendly_tip: "In spring, look for lighter green 'baby needles' growing at the tips of branches"
+    
+    - season: "Summer" 
+      visual_changes: "New growth hardens off to match older needles; consistent blue-green color"
+      reproductive_activity: "Female cones begin to develop, standing upright"
+      identification_tips: "Drooping branch tips and blue-green color are distinctive"
+      kid_friendly_tip: "The droopy branch tips look extra droopy in summer when they're full of needles"
+    
+    - season: "Fall"
+      visual_changes: "No color change; remains blue-green"
+      reproductive_activity: "Cones continue to mature but won't release seeds yet"
+      identification_tips: "Evergreen nature stands out as deciduous trees change color"
+      kid_friendly_tip: "While other trees change colors, Deodar Cedar stays the same blue-green"
+    
+    - season: "Winter"
+      visual_changes: "Remains evergreen; no change in appearance"
+      reproductive_activity: "Mature cones may break apart on the tree, dispersing seeds"
+      identification_tips: "Drooping branch form and pyramid shape visible against winter sky"
+      kid_friendly_tip: "In winter, you can really see its droopy branch tips against the sky"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Distinctively drooping branch tips"
+      reliability: "Very high"
+      visibility: "Easy to observe from a distance"
+    - feature: "Needles in tufts or clusters"
+      reliability: "Very high"
+      visibility: "Need to look closely"
+    - feature: "Blue-green needle color"
+      reliability: "High"
+      visibility: "Visible from a distance in good light"
+    - feature: "Upright cones (when present)"
+      reliability: "Very high"
+      visibility: "Need to look closely to spot"
+    
+  look_alike_species:
+    - species: "Atlas Cedar (Cedrus atlantica)"
+      differences: "Atlas Cedar has stiffer, more upright branches; Deodar Cedar has distinctly drooping branch tips"
+      identification_tip: "If the branch tips droop like they're tired, it's likely Deodar Cedar; if they're more upright, it's Atlas Cedar"
+    
+    - species: "Lebanon Cedar (Cedrus libani)"
+      differences: "Lebanon Cedar has a more horizontal branching pattern and may develop a flat top earlier; Deodar Cedar has more weeping form"
+      identification_tip: "Deodar Cedar has a more graceful, drooping form compared to the stiffer Lebanon Cedar"
+    
+    - species: "Blue Atlas Cedar (Cedrus atlantica 'Glauca')"
+      differences: "Blue Atlas Cedar has intensely blue needles and more upright branches; Deodar Cedar has droopier branch tips"
+      identification_tip: "Blue Atlas Cedar is more intensely blue and has stiffer branches that don't droop at the tips"
+  
+  cultural_ecological_notes:
+    - "Sacred tree in Himalayan cultures where it's native"
+    - "Wood historically valued for its durability and fragrance"
+    - "Popular ornamental tree in parks, campuses, and large yards"
+    - "More drought-tolerant than many conifers once established"
+    
+  cultural_significance:
+    - culture: "Himalayan Peoples"
+      physical_uses:
+        - "Used the durable wood to build temples, palaces, and important buildings"
+        - "Made furniture, boats, and bridges from the rot-resistant wood"
+        - "Used the aromatic wood for incense and to deter insects"
+      symbolic_meaning:
+        - "Considered sacred and associated with divine presence in Hindu and Buddhist traditions"
+        - "The tree's long life symbolized eternal wisdom and endurance"
+    
+    - culture: "British Colonial India"
+      physical_uses:
+        - "Used the wood extensively for building railways and colonial architecture"
+        - "Planted in hill stations as reminders of European landscapes"
+        - "Used medicinally for treating fevers and skin conditions"
+      symbolic_meaning:
+        - "Represented the majestic beauty of the Himalayan landscape"
+        - "Became associated with imperial power and order"
+    
+    - culture: "California Landscapers"
+      physical_uses:
+        - "Planted as a grand specimen tree in parks and estates"
+        - "Used as living Christmas trees that can be planted afterward"
+        - "Selected for drought-tolerant landscaping"
+      symbolic_meaning:
+        - "Represents exotic beauty in designed landscapes"
+        - "Associated with holiday traditions and celebrations"
+  
+  range_within_california:
+    - "Not native to California"
+    - "Widely planted throughout the state as an ornamental"
+    - "Grows well in Mediterranean climate regions of the state"
+    - "Thrives in full sun with good drainage"
+    
+  physical_characteristics:
+    height_range: "40-70 feet tall in cultivation (up to 150-200 feet in native habitat)"
+    growth_rate: "Moderate to fast; 1-2 feet per year when young"
+    crown_spread: "30-40 feet wide when mature"
+    lifespan: "Up to 1,000 years in native habitat; typically 150-200 years in landscape"
+    trunk_diameter: "2-5 feet across when mature"
+    root_system: "Deep taproot with spreading lateral roots"
+    toxicity: "Non-toxic to humans and animals"
+    
+  conservation_status:
+    status: "Near Threatened in native range"
+    threats: "Logging, climate change, and fire in native habitats"
+    protection_efforts: "Protected in national parks in India and Pakistan; widely cultivated worldwide"
+  
+  kid_friendly_cultural_significance:
+    - culture: "People of India and Nepal"
+      physical_uses:
+        - "Used the strong, bug-resistant wood to build temples where people pray"
+        - "Made furniture and boats that last a long time because the wood is special"
+        - "Burned little pieces of the wood during special ceremonies because it smells nice"
+      symbolic_meaning:
+        - "Believed these trees were special and holy because they're so beautiful and live so long"
+        - "Planted the trees around temples because they thought the trees connected earth to heaven"
+  
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: NEEDLE-ARRANGE-06"  # Clustered needles
+      - "feature_id: BRANCH-ANGLE-03"  # Drooping branches
+    confirmation_features:
+      - "feature_id: LEAF-COLOR-03"  # Blue-green
+      - "feature_id: CONE-POS-01"  # Upright cones
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-TYPE-02", "TREE-FORM-01", "BRANCH-ANGLE-03"]  # Evergreen, pyramidal, drooping branches
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-ARRANGE-06", "LEAF-COLOR-03"]  # Clustered needles, blue-green
+      - distance: "close_inspection"
+        features_to_check: ["CONE-POS-01", "CONE-SHAPE-02"]  # Upright cones, elongated barrel shape
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "NEEDLE-ARRANGE-06", "BRANCH-ANGLE-03"]
+        notes: "New growth provides good color contrast"
+      summer:
+        reliability: "Very high"
+        key_features: ["BRANCH-ANGLE-03", "NEEDLE-ARRANGE-06", "LEAF-COLOR-03"]
+        notes: "Drooping branch tips most visible with full foliage"
+      fall:
+        reliability: "High" 
+        key_features: ["LEAF-TYPE-02", "BRANCH-ANGLE-03", "NEEDLE-ARRANGE-06"]
+        notes: "Evergreen nature stands out as deciduous trees change color"
+      winter:
+        reliability: "Very high"
+        key_features: ["LEAF-TYPE-02", "BRANCH-ANGLE-03", "TREE-FORM-01"]
+        notes: "Distinctive drooping form visible against winter sky"
+    misidentification_risks:
+      - species: "Atlas Cedar (Cedrus atlantica)"
+        distinguishing_features: "Deodar Cedar has distinctively drooping branch tips; Atlas Cedar has more upright branches"
+      - species: "Lebanon Cedar (Cedrus libani)"
+        distinguishing_features: "Deodar Cedar has more pronounced drooping branch tips; Lebanon Cedar has more horizontal branching"
+      - species: "Blue Spruce (Picea pungens)"
+        distinguishing_features: "Deodar Cedar has needles in clusters; Blue Spruce has single needles and hanging cones"
+  
+  wildlife_value:
+    - "Seeds eaten by birds and small mammals"
+    - "Dense foliage provides nesting sites and shelter for birds"
+    - "Older trees with furrowed bark create habitat for insects"
+    - "Provides winter shelter for many animals when other trees are bare"

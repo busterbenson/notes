@@ -1,0 +1,281 @@
+tree:
+  common_name: "Balsam Fir"
+  scientific_name: "Abies balsamea"
+  family: "Pinaceae"
+  
+  # Basic summary
+  summary: "A pyramid-shaped evergreen tree with dark green, flat needles arranged in a brush-like pattern on the branches. Has smooth bark with resin blisters, upright purple-blue cones, and a distinctive sweet balsam fragrance when needles are crushed."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Flat, dark green needles arranged in a brush-like pattern around the twig; strong balsam fragrance when needles are crushed"
+    secondary_markers: "Smooth gray bark with raised resin blisters; upright purple-blue cones that disintegrate on the tree; pyramid shape with a spire-like top"
+    seasonal_markers: "Bright lime-green new growth in spring; minimal seasonal change as it's evergreen year-round"
+    similar_species_differentiation: "Unlike spruces, has flat (not square) needles that don't roll between fingers; unlike pines, needles grow singly (not in bundles); unlike other firs, has very aromatic needles and smaller size"
+  
+  # Core features
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles year-round"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Needles attach individually to the branch, not in bundles or clusters"
+      
+      - feature_id: "NEEDLE-SHAPE-01"  # Flat needles
+        notes: "Needles are flat and won't roll between fingers"
+      
+      - feature_id: "NEEDLE-FEAT-03"  # White lines below
+        notes: "Needles have two silvery-white lines on the underside"
+      
+      - feature_id: "CONE-POS-01"  # Upright cones
+        notes: "Cones stand upright on the branches like candles or Christmas ornaments"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        notes: "Needles have a strong, sweet balsam fragrance when crushed"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one straight main trunk"
+        exceptions: "Can sometimes develop multiple leaders if the top gets damaged"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Grows in a distinctive pyramid shape with a pointed top"
+        exceptions: "Very old trees may have a more rounded or irregular crown"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Usually grows 40-60 feet tall in favorable conditions"
+        exceptions: "May be much shorter (20-30 feet) in tough growing conditions or when young"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Bark is typically smooth with resin blisters"
+        exceptions: "Very old trees can develop slightly rougher bark with age"
+      
+    sometimes_true:
+      - feature_id: "SENSORY-SEC-02"  # Colored sap
+        conditions: "When bark or blisters are broken"
+        notes: "Clear, sticky resin oozes from broken bark or resin blisters"
+      
+      - feature_id: "CONE-SIZE-02"  # Medium cones
+        conditions: "Mature female trees during cone-bearing years"
+        notes: "Produces upright purple-blue cones 2-4 inches long"
+      
+      - feature_id: "HABITAT-LOC-02"  # Mountain habitat
+        conditions: "In California, typically only in mountains or planted in cool regions"
+        notes: "Prefers cool, moist mountain environments"
+      
+      - feature_id: "CONE-FEAT-01"  # Persistent cones
+        conditions: "After cones mature on female trees"
+        notes: "Cones disintegrate on the tree, leaving just the central spike"
+      
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all needles seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Never has needles growing in bundles like pines"
+      
+      - feature_id: "NEEDLE-SHAPE-02"  # Square needles
+        notes: "Never has square needles like spruce trees"
+      
+      - feature_id: "CONE-POS-02"  # Hanging cones
+        notes: "Cones never hang down like in spruces, pines, and hemlocks"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Flat, soft needles with white stripes underneath that smell amazing when gently crushed"
+    memorable_comparison: "The needles are arranged like the bristles of a flat hair brush, and they smell like Christmas trees and forest candy mixed together!"
+    touch_tip: "Gently feel the needles - they're soft and flat, not pokey or sharp like spruce or pine needles"
+    smell_tip: "Carefully crush a needle between your fingers to release the wonderful sweet forest smell that's used in air fresheners and Christmas decorations"
+    fun_fact: "The bumps on the bark are tiny bubbles of sweet-smelling sap called 'blisters.' This sap was collected by pioneers to treat cuts and scrapes, and today it's used to make Christmas-scented products!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, gently touch the needles. Are they flat and soft, not sharp or prickly?"
+        yes_next: 2
+        no_next: "If they're sharp and prickly, it's probably a spruce, not a Balsam Fir"
+      - step: 2
+        instruction: "Look at how needles attach to the branch. Do they grow singly, not in clusters or bundles?"
+        yes_next: 3
+        no_next: "If needles grow in bundles (2, 3, or 5), it's a pine tree, not a Balsam Fir"
+      - step: 3
+        instruction: "Flip over a needle. Do you see two white lines on the bottom side?"
+        yes_next: 4
+        no_next: "If there are no white lines, it's not a Balsam Fir"
+      - step: 4
+        instruction: "Gently crush a needle and smell it. Does it have a really strong, sweet forest smell?"
+        yes_next: "You found a Balsam Fir!"
+        no_next: "If it doesn't have a strong sweet smell, it might be another type of fir tree"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Bright lime-green new growth appears at the branch tips; buds open"
+      reproductive_activity: "Small pollen cones may release yellow pollen; young upright seed cones begin to form"
+      identification_tips: "The contrast between new light green growth and older darker needles is noticeable"
+      kid_friendly_tip: "In spring, look for bright green baby needles forming at the tips of branches - they look like tiny green candles!"
+    
+    - season: "Summer" 
+      visual_changes: "Dark green needles throughout; seed cones develop and grow upright on branches"
+      reproductive_activity: "Young seed cones mature, turning from greenish to purple-blue"
+      identification_tips: "Look for the upright purple-blue cones growing on upper branches"
+      kid_friendly_tip: "Summer is when you might see purple cones standing up like little soldiers on the branches"
+    
+    - season: "Fall"
+      visual_changes: "No color change as it stays dark green; mature cones may begin to disintegrate"
+      reproductive_activity: "Cones break apart while still on the tree, releasing seeds"
+      identification_tips: "The tree remains green while deciduous trees change color"
+      kid_friendly_tip: "While other trees are changing colors, Balsam Fir stays green - and some cones might be falling apart on the tree"
+    
+    - season: "Winter"
+      visual_changes: "No visible change; remains dark green throughout winter"
+      reproductive_activity: "Dormant; will begin new cone development in spring"
+      identification_tips: "Pyramid shape and dark green color stand out against snow or gray winter skies"
+      kid_friendly_tip: "In winter, the tree looks like a perfect Christmas tree with snow on its branches - that's why it's often used as a Christmas tree!"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Flat needles with white lines underneath"
+      reliability: "Very high"
+      visibility: "Medium - need to look at needles up close"
+    - feature: "Strong balsam fragrance when needles are crushed"
+      reliability: "Very high"
+      visibility: "Requires interaction - crushing needles"
+    - feature: "Upright purple-blue cones (when present)"
+      reliability: "High"
+      visibility: "Medium - need to look for cones on upper branches"
+    - feature: "Smooth gray bark with resin blisters"
+      reliability: "High" 
+      visibility: "Medium - need to examine trunk"
+    - feature: "Perfect pyramid shape with spire-like top"
+      reliability: "Medium"
+      visibility: "High - visible from distance"
+    
+  look_alike_species:
+    - species: "White Fir (Abies concolor)"
+      differences: "White Fir has longer, blue-gray needles (not dark green); needles are less fragrant; grows much larger; bark becomes deeply furrowed with age"
+      identification_tip: "If the needles are longer, blue-gray rather than dark green, and less fragrant, it's likely White Fir"
+    
+    - species: "Grand Fir (Abies grandis)"
+      differences: "Grand Fir grows much larger; has glossier, longer needles; needles are arranged more distinctly in two flat rows; less strongly fragrant"
+      identification_tip: "If the tree is very tall with flatter needle arrangement and less fragrance, it's probably Grand Fir"
+    
+    - species: "Fraser Fir (Abies fraseri)"
+      differences: "Very similar but Fraser Fir needles are often shorter and more crowded; only found planted as Christmas trees in California (native to Appalachian Mountains)"
+      identification_tip: "These are very similar - Fraser Fir is rarely found in natural settings in California"
+    
+  cultural_significance:
+    - culture: "Eastern Woodland Native American tribes"
+      physical_uses:
+        - "Used the sap as a natural glue and to waterproof canoes, baskets, and shoes"
+        - "Made tea from the needles that's rich in vitamin C to prevent scurvy in winter"
+        - "Used the wood to make hunting bows and lightweight paddles"
+        - "Applied the sap to cuts, burns, and sores as a healing salve"
+      symbolic_meaning:
+        - "Considered the tree a symbol of longevity and health because it stays green all year"
+        - "Used branches in purification ceremonies because of the strong aromatic qualities"
+    
+    - culture: "Early European settlers in North America"
+      physical_uses:
+        - "Collected the sap to make 'Canada balsam,' a medicine for colds and sore throats"
+        - "Stuffed pillows and mattresses with needles for their pleasant scent and supposed health benefits"
+        - "Used branches for making fragrant Christmas wreaths and decorations"
+        - "Made aromatic sachets from the needles to put in drawers and keep clothes fresh"
+      symbolic_meaning:
+        - "Symbolized healing and comfort in the harsh wilderness"
+        - "Associated with Christmas and winter celebrations"
+    
+    - culture: "Modern forest product industry"
+      physical_uses:
+        - "One of the most popular Christmas trees because of its perfect shape and wonderful smell"
+        - "Used to make essential oils for perfumes, air fresheners, and candles"
+        - "Wood used for making paper pulp, boxes, and crates"
+        - "Sap still used in making some traditional medicines and in microscope slide preparation"
+      symbolic_meaning:
+        - "Represents the Christmas season and winter holidays"
+        - "Symbol of forest freshness and natural fragrance"
+    
+  cultural_ecological_notes:
+    - "Provides important winter shelter for birds and small mammals when other trees have lost their leaves"
+    - "Seeds are eaten by red squirrels, chipmunks, and certain songbirds"
+    - "Needles are high in vitamin C and were used to prevent scurvy in winter"
+    - "Young trees grow in the shade of larger trees, helping maintain continuous forest cover"
+    - "The aromatic compounds that make the tree smell good also help protect it from some insects and diseases"
+    
+  range_within_california:
+    - "Not native to California - naturally grows in northeastern North America"
+    - "Occasionally planted as an ornamental tree in cooler, moister parts of Northern California"
+    - "Sometimes grown on Christmas tree farms throughout Northern California"
+    - "Struggles in most of California's hot, dry climate except in higher mountain areas"
+    - "More commonly found as cut Christmas trees than as living landscape trees in California"
+    
+  physical_characteristics:
+    height_range: "40-60 feet tall in favorable conditions (about as tall as a 4-6 story building)"
+    growth_rate: "Moderate, growing about 12-18 inches per year when young"
+    crown_spread: "20-25 feet wide at the base (about the width of a two-car garage)"
+    lifespan: "150-200 years in natural forests (older than your great-great-grandparents)"
+    trunk_diameter: "1-2 feet across when mature (about as wide as a dinner plate)"
+    root_system: "Shallow and wide-spreading, making it vulnerable to drought and wind"
+    toxicity: "Not toxic to humans; needles and sap have been used medicinally"
+    
+  conservation_status:
+    status: "Not threatened; abundant in its native range"
+    threats:
+      - "Spruce budworm outbreaks can cause widespread mortality"
+      - "Climate change may reduce suitable habitat as temperatures warm"
+      - "Struggles when planted outside its natural range in warmer climates"
+    protection_efforts:
+      - "No specific protection efforts as it's common in its native range"
+      - "Many Christmas tree growers are using sustainable practices for Balsam Fir cultivation"
+    
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: NEEDLE-ARRANGE-01"  # Single needles
+      - "feature_id: CONE-POS-01"  # Upright cones
+    confirmation_features:
+      - "feature_id: NEEDLE-SHAPE-01"  # Flat needles
+      - "feature_id: SENSORY-SMELL-01"  # Aromatic leaves
+      - "feature_id: NEEDLE-FEAT-03"  # White lines below
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-TYPE-02", "TREE-FORM-01"]  # Evergreen, pyramidal shape
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-ARRANGE-01", "CONE-POS-01"]  # Single needles, upright cones
+      - distance: "close_inspection"
+        features_to_check: ["NEEDLE-FEAT-03", "SENSORY-SMELL-01"]  # White lines underneath, aromatic when crushed
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "NEEDLE-ARRANGE-01", "SENSORY-SMELL-01"]
+        notes: "New growth provides good contrast with older needles"
+      summer:
+        reliability: "Very high"
+        key_features: ["CONE-POS-01", "NEEDLE-SHAPE-01", "NEEDLE-FEAT-03"]
+        notes: "Upright cones are visible, making identification easier"
+      fall:
+        reliability: "High" 
+        key_features: ["LEAF-TYPE-02", "TREE-FORM-01", "SENSORY-SMELL-01"]
+        notes: "Evergreen nature stands out as deciduous trees change color"
+      winter:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "TREE-FORM-01", "SENSORY-SMELL-01"]
+        notes: "Perfect pyramid shape stands out in winter landscapes"
+    misidentification_risks:
+      - "White Fir - larger tree with blue-gray needles and less fragrance"
+      - "Fraser Fir - extremely similar but with shorter, more crowded needles"
+      - "Grand Fir - larger tree with glossier needles arranged more distinctly in two rows"
+      
+  wildlife_value:
+    food_source:
+      - "Red squirrels and chipmunks eat the seeds from cones"
+      - "Moose and deer sometimes browse on the twigs and foliage in winter"
+      - "Spruce grouse and other birds eat the needles and buds"
+      - "Black bears sometimes use the trees for cover near feeding areas"
+    habitat_provided:
+      - "Dense branches provide winter shelter for birds like chickadees and finches"
+      - "Lower branches provide cover for snowshoe hares and other small mammals"
+      - "Provides nesting sites for many forest birds"
+      - "Fallen needles create acidic soil conditions for specialized forest plants"
+    ecosystem_role: "Important component of northern coniferous forests; provides year-round cover in mixed forests; contributes to soil acidification through needle drop"

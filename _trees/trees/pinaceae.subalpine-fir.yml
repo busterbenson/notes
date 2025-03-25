@@ -1,0 +1,303 @@
+tree:
+  common_name: "Subalpine Fir"
+  scientific_name: "Abies lasiocarpa"
+  family: "Pinaceae"
+  
+  # Basic summary information
+  summary: "A high-mountain evergreen tree with a narrow, spire-like crown that tapers to a skinny, pointed top. Has short, crowded, blue-green needles that curve upward and purplish-gray bark with resin blisters. Produces upright dark purple cones."
+  
+  # Identification priority path
+  identification_path:
+    primary_markers: "Narrow, spire-like shape with skinny pointed top; short, crowded needles that curve upward; grows at high elevations"
+    secondary_markers: "Smooth purplish-gray bark with resin blisters; upright dark purple cones; flat needles with white lines underneath"
+    seasonal_markers: "Bluish new growth in spring; dark purple upright cones in summer; remains evergreen in winter"
+    similar_species_differentiation: "Unlike Pacific Silver Fir, has narrower crown and shorter needles; unlike Mountain Hemlock, has upright cones and needles all around the twig; unlike Engelmann Spruce, has flat (not square) needles"
+  
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles year-round"
+        
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Needles attach individually to branches, not in bundles"
+      
+      - feature_id: "NEEDLE-SHAPE-01"  # Flat needles
+        notes: "Needles are flat, not square in cross-section"
+      
+      - feature_id: "NEEDLE-FEAT-03"  # White lines below
+        notes: "Needles have two white bands on their undersides"
+      
+      - feature_id: "CONE-POS-01"  # Upright cones
+        notes: "Cones stand upright like candles on branches"
+      
+      - feature_id: "HABITAT-LOC-02"  # Mountain habitat
+        notes: "Grows in high mountains, often near treeline"
+      
+      - feature_id: "GEO-ELEV-03"  # High elevation
+        notes: "Found at high elevations, often above 8,000 feet"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with one straight trunk"
+        exceptions: "May develop multiple trunks in harsh conditions or after damage"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Has a narrow, spire-like pyramidal shape with a distinctly pointed top"
+        exceptions: "May be more irregular or stunted at treeline"
+      
+      - feature_id: "TREE-SIZE-01"  # Short tree
+        notes: "Usually grows 20-50 feet tall in its high-elevation habitat"
+        exceptions: "Can reach 60-100 feet in more favorable conditions at lower elevations"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Bark remains relatively smooth, with resin blisters"
+        exceptions: "May develop shallow furrows at the base of old trees"
+    
+    sometimes_true:
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        conditions: "Mature trees"
+        notes: "Bark is typically purplish-gray to gray"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        conditions: "When needles are crushed"
+        notes: "Needles have a pleasant balsam scent when crushed"
+      
+      - feature_id: "CONE-SIZE-02"  # Medium cones
+        conditions: "When producing cones"
+        notes: "Produces dark purple upright cones 2-4 inches long"
+      
+      - feature_id: "LEAF-COLOR-03"  # Blue-green
+        conditions: "Varies with light conditions"
+        notes: "Needles often have a blue-green color, especially at high elevations"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "Limited range in California"
+        notes: "In California, found only in the northern mountains"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all its needles seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Never has needles in bundles like pines"
+      
+      - feature_id: "CONE-POS-02"  # Hanging cones
+        notes: "Never has cones that hang down from branches"
+      
+      - feature_id: "NEEDLE-SHAPE-02"  # Square needles
+        notes: "Needles are always flat, never square in cross-section"
+      
+      - feature_id: "HABITAT-LOC-01"  # Coastal habitat
+        notes: "Never grows naturally in coastal areas"
+  
+  # Kid-friendly identification - expanded with creative descriptions
+  kid_friendly_identification:
+    primary_identifier: "A skinny Christmas tree that grows on high mountaintops with a very pointy top"
+    memorable_comparison: "Looks like a rocket ship or church steeple with its super narrow, pointy shape"
+    touch_tip: "The needles feel soft, not prickly, and they're crowded together like lots of tiny green fingers pointing up"
+    smell_tip: "Gently crush a needle to smell a sweet Christmas tree scent"
+    fun_fact: "Subalpine Fir trees are mountain climbers! They grow higher up mountains than almost any other tree in California - sometimes right at the edge where trees can't grow any higher. They're shaped like a narrow rocket ship to shed snow and survive fierce mountain winds!"
+    detective_steps:
+      - step: 1
+        instruction: "First, check where you are. Are you high in the mountains, near where trees stop growing (treeline)?"
+        yes_next: 2
+        no_next: "If you're in lower forests or valleys, it's probably not a Subalpine Fir"
+      - step: 2
+        instruction: "Look at the tree's shape. Does it have a very narrow, spire-like shape with a skinny, pointed top?"
+        yes_next: 3
+        no_next: "If it has a broader or rounded crown, it might be a different kind of fir or spruce"
+      - step: 3
+        instruction: "Look at the needles. Are they short (about 1 inch), flat, and do they curve upward around the twig?"
+        yes_next: 4
+        no_next: "If needles are long, sharp, or arranged in a flat spray, it might be a different evergreen tree"
+      - step: 4
+        instruction: "If you can see them, do the cones stand upright on branches (not hang down) and have a dark purple color?"
+        yes_next: "You found a Subalpine Fir!"
+        no_next: "If cones hang down or the tree doesn't match these features, it might be another mountain evergreen"
+  
+  regional_notes:
+    - region: "Sierra Nevada"
+      notes: "Found in the highest elevations, often just below treeline"
+      locations: "Most common in central and northern Sierra Nevada above 8,000 feet"
+    - region: "Cascade Range"
+      notes: "Occurs at high elevations, especially on Mount Shasta and nearby peaks"
+      locations: "Look near treeline and in protected basins"
+    - region: "Klamath Mountains"
+      notes: "Present on higher peaks"
+      locations: "Found near summits of the highest mountains in the region"
+      
+  confirmation_checklist:
+    - feature: "Narrow, spire-like shape with distinctly pointed top"
+      reliability: "Very high"
+      visibility: "Easy to see from a distance"
+    - feature: "Short, upward-curving needles crowded around the twig"
+      reliability: "High"
+      visibility: "Visible with close examination"
+    - feature: "Smooth purplish-gray bark with resin blisters"
+      reliability: "Medium"
+      visibility: "Visible up close"
+    - feature: "Growing at high elevation, often near treeline"
+      reliability: "High"
+      visibility: "Determined by location"
+    - feature: "Upright dark purple cones (when present)"
+      reliability: "Very high (seasonal)"
+      visibility: "Visible when present"
+    
+  look_alike_species:
+    - species: "Pacific Silver Fir (Abies amabilis)"
+      differences: "Pacific Silver Fir has a broader crown, longer needles, and typically grows at lower elevations than Subalpine Fir"
+      identification_tip: "Subalpine Fir has a much narrower, spire-like crown and a more distinctly pointed top"
+    - species: "Mountain Hemlock (Tsuga mertensiana)"
+      differences: "Mountain Hemlock has a drooping leader (top), hanging cones, and needles primarily arranged to sides of twigs"
+      identification_tip: "Subalpine Fir has a straight, pointed top and upright cones; hemlock often has a drooping top"
+    - species: "Engelmann Spruce (Picea engelmannii)"
+      differences: "Engelmann Spruce has square, sharp needles that can be rolled between fingers and hanging cones"
+      identification_tip: "Gently roll a needle - Subalpine Fir needles are flat and won't roll; spruce needles are square and will roll easily"
+      
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Bright bluish-green new growth appears at branch tips; pollen is released from small pollen cones"
+      reproductive_activity: "Male pollen cones release yellow pollen; tiny purplish female cones begin to form"
+      identification_tips: "New growth contrasts with older, darker needles"
+      kid_friendly_tip: "In spring, the tips of branches grow new blue-green baby needles that are softer than the older ones"
+    
+    - season: "Summer" 
+      visual_changes: "New growth matures; upright dark purple cones develop on upper branches"
+      reproductive_activity: "Female cones grow and mature, remaining upright on branches"
+      identification_tips: "Distinctive upright purple cones are excellent identification features"
+      kid_friendly_tip: "By summer, you can see dark purple cones standing up like birthday candles on the upper branches"
+    
+    - season: "Fall"
+      visual_changes: "No change in needle color; cones mature and begin to disintegrate"
+      reproductive_activity: "Cones break apart on the tree to release seeds; they disintegrate rather than falling whole"
+      identification_tips: "Cone scales fall to the ground, leaving only the central axis on the tree"
+      kid_friendly_tip: "In fall, the purple cones break apart like puzzles while still on the tree, dropping their pieces to the ground"
+    
+    - season: "Winter"
+      visual_changes: "Remains evergreen; narrow spire shape sheds snow effectively"
+      reproductive_activity: "Dormant; cone axes may remain visible on branches"
+      identification_tips: "Distinctive narrow spire shape stands out in snowy landscapes"
+      kid_friendly_tip: "In winter, snow slides off its skinny, rocket-ship shape, and it stays green when many other plants are bare"
+      
+  cultural_ecological_notes:
+    - "Adapted to survive in some of the harshest tree-growing environments in North America"
+    - "Important for protecting high mountain watersheds and preventing erosion"
+    - "One of the last tree species encountered when hiking upward toward mountain peaks"
+    - "Provides critical wildlife habitat in high elevation forests"
+    - "Forms krummholz (stunted, wind-shaped) forms at the absolute upper limits of tree growth"
+    
+  range_within_california:
+    - "Found at high elevations (typically 8,000-11,000 feet) in California mountains"
+    - "Present in the Sierra Nevada, especially in the central and northern portions"
+    - "Occurs on Mount Shasta and other high peaks of the Cascade Range"
+    - "Limited populations on the highest peaks of the Klamath Mountains"
+    - "Often found just below treeline, where forests transition to alpine meadows"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Mountain Tribes (Mono, Washoe)"
+      physical_uses:
+        - "Used the sticky resin as a waterproofing agent and adhesive"
+        - "Made medicinal tea from the needles rich in vitamin C"
+        - "Collected pitch for treating wounds and skin conditions"
+        - "Used wood for small tools and implements when available"
+      symbolic_meaning:
+        - "Represented resilience and survival in harsh conditions"
+        - "Marked the transition zone between forest and alpine worlds"
+        - "Featured in stories about the spirits of high places"
+    
+    - culture: "Early Mountain Explorers"
+      physical_uses:
+        - "Used branches for emergency shelter in high mountains"
+        - "Made tea from needles to prevent scurvy during long expeditions"
+        - "Relied on as a distinctive landmark for navigation in alpine regions"
+        - "Used resin for treating wounds and cold sores"
+      symbolic_meaning:
+        - "Symbolized the rugged wilderness of high mountain environments"
+        - "Marked the highest forest zone in mountaineering lore"
+        - "Represented the frontier between accessible and challenging terrain"
+    
+    - culture: "Modern Conservation"
+      physical_uses:
+        - "Studied as an indicator species for climate change impacts"
+        - "Used in revegetation of disturbed high-elevation sites"
+        - "Seeds collected for conservation and restoration projects"
+        - "Branches and needles analyzed to monitor air quality at high elevations"
+      symbolic_meaning:
+        - "Represents fragile high-elevation ecosystems"
+        - "Symbolizes adaptation to extreme environmental conditions"
+        - "Used as an emblem for high mountain conservation efforts"
+    
+  # Additional physical characteristics not captured in features
+  physical_characteristics:
+    height_range: "20-50 feet in harsh conditions, up to 100 feet in favorable sites"
+    growth_rate: "Very slow, especially at high elevations"
+    crown_spread: "10-20 feet wide when mature"
+    lifespan: "200-250 years, with some reaching 300+ years"
+    trunk_diameter: "1-2 feet diameter at maturity"
+    root_system: "Shallow, spreading roots adapted to thin mountain soils"
+    toxicity: "Not toxic, though resin may cause skin irritation in some people"
+    
+  conservation_status:
+    status: "Secure overall, but vulnerable to climate change impacts"
+    threats: 
+      - "Climate warming reducing suitable habitat at current elevations"
+      - "Increasing wildfire frequency and severity"
+      - "Mountain pine beetle and other insects expanding range upward"
+      - "Air pollution impacts at high elevations"
+    protection_efforts:
+      - "Protected in wilderness areas and national parks"
+      - "Monitored as an indicator species for climate change effects"
+      - "Included in high-elevation ecosystem conservation planning"
+      - "Seed collection for preservation of genetic diversity"
+    
+  # Decision tree mapping - helps with algorithm creation
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: HABITAT-LOC-02"  # Mountain habitat
+      - "feature_id: NEEDLE-ARRANGE-01"  # Single needles
+      - "feature_id: CONE-POS-01"  # Upright cones
+    confirmation_features:
+      - "feature_id: NEEDLE-FEAT-03"  # White lines below
+      - "feature_id: GEO-ELEV-03"  # High elevation
+      - "feature_id: TREE-FORM-01"  # Pyramidal shape
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-01", "HABITAT-LOC-02", "GEO-ELEV-03"]  # Pyramidal shape, mountain habitat, high elevation
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-TYPE-02", "BARK-TEXT-01", "CONE-POS-01"]  # Evergreen, smooth bark, upright cones
+      - distance: "close_inspection"
+        features_to_check: ["NEEDLE-SHAPE-01", "NEEDLE-FEAT-03", "NEEDLE-ARRANGE-01"]  # Flat needles, white lines below, single needles
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["TREE-FORM-01", "LEAF-TYPE-02", "LEAF-COLOR-03"]  # Pyramidal, evergreen, blue-green
+        notes: "New growth provides color contrast with older needles"
+      
+      summer:
+        reliability: "Very high" 
+        key_features: ["CONE-POS-01", "TREE-FORM-01", "NEEDLE-ARRANGE-01"]  # Upright cones, pyramidal, single needles
+        notes: "Distinctive purple upright cones are excellent identification features"
+      
+      fall:
+        reliability: "Medium"
+        key_features: ["TREE-FORM-01", "NEEDLE-SHAPE-01", "HABITAT-LOC-02"]  # Pyramidal, flat needles, mountain habitat
+        notes: "Disintegrating cones may provide additional identification clues"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["TREE-FORM-01", "LEAF-TYPE-02", "GEO-ELEV-03"]  # Pyramidal, evergreen, high elevation
+        notes: "Narrow spire shape distinctive in winter mountain landscapes"
+    misidentification_risks:
+      - species: "Pacific Silver Fir (Abies amabilis)"
+        distinguishing_features: "Subalpine Fir has narrower crown, shorter needles, and grows at higher elevations"
+      - species: "Mountain Hemlock (Tsuga mertensiana)"
+        distinguishing_features: "Subalpine Fir has upright (not hanging) cones and a straight (not drooping) leader"
+  
+  wildlife_value:
+    - "Seeds eaten by birds, squirrels, and chipmunks"
+    - "Needles and twigs browsed by mountain goats, bighorn sheep, and deer"
+    - "Dense branches provide shelter for birds and small mammals in harsh mountain winters"
+    - "Provides nesting habitat for high-elevation bird species"
+    - "Forms part of critical wildlife corridor at upper forest elevations"

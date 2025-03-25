@@ -1,0 +1,288 @@
+tree:
+  common_name: "Canyon Maple"
+  scientific_name: "Acer grandidentatum"
+  family: "Sapindaceae"
+  
+  # Basic summary information
+  summary: "A small to medium-sized deciduous tree with distinctive lobed leaves that turn brilliant orange-red in fall. Often found in canyons and on mountain slopes, it has a rounded crown, smooth gray bark when young, and paired helicopter-like seeds."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Distinctive palmate (hand-shaped) leaves with 3-5 lobes and large, pointed teeth; paired winged seeds (samaras); opposite branching pattern"
+    secondary_markers: "Smooth gray bark on young trees; brilliant orange-red fall color; grows in canyons and on mountain slopes in western states"
+    seasonal_markers: "Green leaves in spring and summer; bright orange-red fall color; bare branches with opposite buds in winter"
+    similar_species_differentiation: "Unlike Bigleaf Maple, has smaller leaves with deeper lobes and teeth; unlike Rocky Mountain Maple, grows taller with a single trunk rather than a multi-stemmed shrub"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops all leaves seasonally in fall"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple leaf
+        notes: "Has undivided leaf blades, not compound leaves"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves and branches grow directly across from each other, not alternating"
+      
+      - feature_id: "LEAF-SHAPE-05"  # Lobed
+        notes: "Leaves have distinct lobes, usually 3-5, resembling fingers on a hand"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Native to parts of eastern California and the western United States"
+      
+      - feature_id: "FRUIT-TYPE-08"  # Paired samaras
+        notes: "Produces paired, winged seeds (samaras) that resemble helicopter propellers"
+      
+      - feature_id: "WINTER-BUD-03"  # Opposite buds
+        notes: "Winter buds arranged oppositely on twigs"
+
+    usually_true:
+      # Features that are primarily true, but have notable exceptions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with a single main trunk"
+        exceptions: "May occasionally develop multiple trunks, especially after damage"
+      
+      - feature_id: "TREE-SIZE-01"  # Short tree
+        notes: "Usually grows to 20-35 feet tall"
+        exceptions: "Can occasionally reach 50 feet in optimal conditions"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Generally develops a rounded crown shape"
+        exceptions: "May be more irregular in very steep terrain or when crowded"
+      
+      - feature_id: "LEAF-FALL-02"  # Red fall color
+        notes: "Leaves typically turn brilliant orange-red in autumn"
+        exceptions: "Fall color can vary with growing conditions, occasionally more yellow or orange"
+
+    sometimes_true:
+      # Features that vary with age, season, or conditions
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees"
+        notes: "Bark is smooth and gray when young"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Older trees"
+        notes: "Bark becomes more furrowed with age"
+      
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        conditions: "Typical bark color"
+        notes: "Bark is usually gray to grayish-brown"
+      
+      - feature_id: "HABITAT-LOC-02"  # Mountain habitat
+        conditions: "Common growing location"
+        notes: "Often found in mountain canyons and on slopes"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        conditions: "Preferred habitat in drier regions"
+        notes: "Often grows near streams in canyons in arid regions"
+      
+      - feature_id: "LEAF-FALL-03"  # Orange fall color
+        conditions: "Depending on weather conditions"
+        notes: "Leaves may turn more orange than red in some years"
+
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Never keeps its leaves year-round"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has compound leaves with leaflets along a central stalk"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves and branches never grow in an alternate pattern"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Never grows to heights greater than about 50 feet"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A small tree with maple leaves that have big, pointy teeth and turn bright orange-red in fall"
+    memorable_comparison: "The leaves look like small hands with 3-5 fingers, and each finger has big pointy teeth; in fall they turn the color of a bright orange-red sunset"
+    touch_tip: "The leaves feel smooth on top but might have small hairs on the bottom side"
+    smell_tip: "Crush a leaf gently to smell a mild, sweet scent"
+    fun_fact: "Canyon Maple trees are masters of hiding! They love to grow in sheltered mountain canyons where they can find more water and stay protected from harsh weather. In these secret canyon homes, they create spectacular autumn shows with their bright orange-red leaves. They're like nature's hidden treasure that reward hikers who explore deep into the mountains!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, check if the branches grow directly opposite each other (not alternating). Do they grow in pairs across from each other on the twigs?"
+        yes_next: 2
+        no_next: "Not a Canyon Maple - if branches alternate, check oak or other non-maple species"
+      - step: 2
+        instruction: "Look at a leaf. Does it have a shape like a hand with 3-5 lobes (fingers) and big, pointy teeth along the edges?"
+        yes_next: 3
+        no_next: "If leaves are much larger with softer lobes, check Bigleaf Maple; if leaves are compound with separate leaflets, check ash or other species"
+      - step: 3
+        instruction: "Is it a small tree (about 20-35 feet tall) growing in a mountain canyon or on a rocky slope? In fall, do the leaves turn bright orange-red?"
+        yes_next: "You found a Canyon Maple!"
+        no_next: "If it's very small and shrub-like with multiple stems, check Rocky Mountain Maple; if it's a large tree with bigger leaves, check Bigleaf Maple"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaves emerge light green; small, inconspicuous flowers appear before or with the leaves"
+      reproductive_activity: "Flowers bloom, typically yellowish-green and in small clusters"
+      identification_tips: "Fresh, bright green leaves and opposite branching pattern distinctive"
+      kid_friendly_tip: "In spring, look for small, bright green baby leaves that unfold like tiny hands"
+    
+    - season: "Summer" 
+      visual_changes: "Leaves mature to deep green; winged seed pairs (samaras) develop"
+      reproductive_activity: "Paired winged seeds (samaras) grow and mature"
+      identification_tips: "Look for lobed leaves with large teeth and developing paired seed 'helicopters'"
+      kid_friendly_tip: "By summer, you can see the seeds growing in pairs - they look like tiny helicopter propellers"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn brilliant orange-red before dropping; seeds may disperse"
+      reproductive_activity: "Seeds fully mature and are dispersed by wind"
+      identification_tips: "Brilliant fall color is distinctive; paired samaras often still visible"
+      kid_friendly_tip: "In fall, the leaves put on a color show, turning bright orange-red before falling off"
+    
+    - season: "Winter"
+      visual_changes: "Leafless; opposite branching pattern clearly visible; buds prominent"
+      reproductive_activity: "Dormant"
+      identification_tips: "Opposite branching and buds are key winter identification features"
+      kid_friendly_tip: "In winter, all the leaves fall off, but you can still identify it by the branches that grow in pairs across from each other"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Opposite branching pattern"
+      reliability: "Very high"
+      visibility: "Easy to observe year-round"
+    - feature: "Lobed leaves with large teeth"
+      reliability: "Very high"
+      visibility: "Easy to observe during growing season"
+    - feature: "Paired winged seeds (samaras)"
+      reliability: "High"
+      visibility: "Visible when present (summer to fall)"
+    - feature: "Bright orange-red fall color"
+      reliability: "High"
+      visibility: "Very noticeable in autumn"
+    
+  look_alike_species:
+    - species: "Bigleaf Maple (Acer macrophyllum)"
+      differences: "Bigleaf Maple has much larger leaves (8-12 inches across), grows much taller (up to 100 feet), and has shallower lobes with smaller teeth"
+      identification_tip: "Canyon Maple leaves are much smaller with deeper lobes and larger teeth compared to Bigleaf Maple"
+    - species: "Rocky Mountain Maple (Acer glabrum)"
+      differences: "Rocky Mountain Maple typically grows as a multi-stemmed shrub rather than a tree, has smaller leaves, and often has three distinct lobes"
+      identification_tip: "Canyon Maple is usually a single-trunked small tree, while Rocky Mountain Maple is often a shrub with multiple stems"
+    - species: "Box Elder (Acer negundo)"
+      differences: "Box Elder has compound leaves with 3-5 separate leaflets, not simple lobed leaves"
+      identification_tip: "Canyon Maple has simple leaves with lobes, while Box Elder has compound leaves with completely separate leaflets"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Native American - Southern Paiute"
+      physical_uses:
+        - "Harvested sap for making a sweet syrup, though less abundantly than eastern maples"
+        - "Used the hard wood for making tools and implements"
+        - "Made a medicinal tea from the bark for treating colds"
+        - "Utilized the wood for fuel in high elevation areas"
+      symbolic_meaning:
+        - "Associated with the changing seasons and cycles of life due to dramatic fall color"
+        - "Representative of mountain canyon ecosystems in traditional knowledge"
+        - "Considered a marker of water sources in dry regions"
+    
+    - culture: "Native American - Ute"
+      physical_uses:
+        - "Carved the dense wood into bowls and other household items"
+        - "Made medicinal preparations from the bark for treating skin problems"
+        - "Used branches for making bows when preferred woods weren't available"
+        - "Harvested sap as a sweet food source in spring"
+      symbolic_meaning:
+        - "Respected for its adaptability to harsh conditions"
+        - "Featured in stories about finding resources in difficult environments"
+        - "Used as a seasonal indicator for traditional activities"
+    
+    - culture: "Early Western Settlers"
+      physical_uses:
+        - "Used the hard wood for tool handles and furniture"
+        - "Planted as an ornamental shade tree around homesteads"
+        - "Harvested for firewood in mountain communities"
+        - "Used as a source of syrup in areas where eastern maples weren't available"
+      symbolic_meaning:
+        - "Became associated with autumn beauty in western mountains"
+        - "Represented the familiar comforts of eastern states in new western territories"
+        - "Symbolized hidden resources in seemingly barren landscapes"
+    
+  cultural_ecological_notes:
+    - "Important component of mountain canyon ecosystems"
+    - "Provides food for wildlife through seeds, buds, and as a host for insects"
+    - "Contributes to slope stability in steep canyon environments"
+    - "Tolerant of alkaline soils, unlike many other maple species"
+    - "Closely related to Sugar Maple of eastern forests but adapted to drier western conditions"
+    
+  range_within_california:
+    - "Limited distribution in eastern California, primarily in the White and Inyo Mountains"
+    - "Found in mountain canyons and slopes, particularly where moisture is available"
+    - "More common in neighboring states of Nevada, Utah, Arizona, and New Mexico"
+    - "Typically grows at elevations between 4,000-8,000 feet"
+    - "Often found in riparian zones within otherwise dry landscapes"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "20-35 feet, occasionally to 50 feet"
+    growth_rate: "Slow to moderate"
+    crown_spread: "15-30 feet at maturity"
+    lifespan: "80-120 years"
+    trunk_diameter: "1-2 feet at maturity"
+    root_system: "Moderately deep, widespread"
+    toxicity: "Not toxic to humans, though horses may be sensitive to large quantities of leaves"
+  
+  conservation_status:
+    status: "Secure in most of its range, uncommon in California"
+    threats: 
+      - "Climate change affecting water availability in canyon habitats"
+      - "Habitat loss in some regions due to development"
+      - "Fire regime changes in mountain ecosystems"
+      - "Limited California distribution makes local populations vulnerable"
+    protection_efforts:
+      - "Protected in various national forests and public lands"
+      - "Increased use in native plant landscaping for water conservation"
+      - "Seed collection for conservation and restoration projects"
+      - "Research into climate adaptation and drought tolerance"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-ARRANGE-02"  # Opposite
+    confirmation_features:
+      - "feature_id: LEAF-SHAPE-05"  # Lobed
+      - "feature_id: FRUIT-TYPE-08"  # Paired samaras
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-01", "TREE-FORM-02"]  # Short tree, rounded crown
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-ARRANGE-02", "LEAF-SHAPE-05"]  # Opposite, lobed
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-02", "FRUIT-TYPE-08"]  # Serrated edge, paired samaras
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-ARRANGE-02", "LEAF-SHAPE-05"]
+        notes: "New leaves emerging, opposite branching pattern clear"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-ARRANGE-02", "FRUIT-TYPE-08"]
+        notes: "Mature leaves and developing samaras visible"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["LEAF-FALL-02", "LEAF-FALL-03"]
+        notes: "Brilliant fall color is highly distinctive"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["LEAF-ARRANGE-02", "WINTER-BUD-03"]
+        notes: "Opposite branching and buds visible when leafless"
+    misidentification_risks: 
+      - "Could be confused with other maple species, particularly Rocky Mountain Maple"
+      - "Young trees might be mistaken for shrubs before developing tree form"
+      - "In areas where ranges overlap with other maples, careful leaf examination needed"
+  
+  wildlife_value:
+    - "Seeds eaten by birds and small mammals"
+    - "Buds and young twigs browsed by deer"
+    - "Flowers provide nectar for bees and other pollinators"
+    - "Leaves serve as food for various caterpillars and insects"
+    - "Creates understory habitat in canyon ecosystems"

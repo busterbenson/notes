@@ -1,0 +1,286 @@
+tree:
+  common_name: "Mountain Hemlock"
+  scientific_name: "Tsuga mertensiana"
+  family: "Pinaceae"
+  
+  # Basic summary information
+  summary: "A beautiful high-elevation evergreen tree with a distinctive drooping leader (top), bluish-green needles that grow all around the twig (not just on two sides), and small oval cones. It thrives in deep snow and is often bent or twisted by snow loads."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Drooping leader (top of tree); needles growing all around twig rather than in flat sprays; bluish-green foliage"
+    secondary_markers: "Small oval cones about 1-3 inches long; thin, scaly, purplish-gray bark; graceful branching pattern"
+    seasonal_markers: "Minimal seasonal change as an evergreen; new growth in spring appears as lighter green at branch tips"
+    similar_species_differentiation: "Unlike Western Hemlock, has needles growing all around twigs (not in flat sprays); unlike Subalpine Fir, has drooping leader and hanging cones; unlike Engelmann Spruce, has more flexible, less sharp needles"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles year-round"
+        
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has individual needles attached singly to the twig, not in bundles"
+      
+      - feature_id: "TREE-FORM-03"  # Weeping form
+        notes: "Top of tree (leader) and branch tips droop downward"
+      
+      - feature_id: "CONE-POS-02"  # Hanging cones
+        notes: "Cones hang down from branches"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Native to high mountains of California and Pacific Northwest"
+      
+      - feature_id: "NEEDLE-SHAPE-01"  # Flat needles
+        notes: "Needles are flat rather than square in cross-section"
+      
+      - feature_id: "HABITAT-LOC-02"  # Mountain habitat
+        notes: "Grows in high mountain environments, typically above 5,000 feet elevation"
+      
+      - feature_id: "NEEDLE-SIZE-01"  # Short needles
+        notes: "Needles typically less than 1 inch long"
+
+    usually_true:
+      # Features that are primarily true, but have notable exceptions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with a single main trunk"
+        exceptions: "May develop multiple trunks after snow damage or at timberline"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Usually grows to 40-90 feet tall"
+        exceptions: "Much shorter at high elevations and timberline, where it may be almost shrub-like"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Forms a narrow, conical shape, wider at base"
+        exceptions: "Trees at high elevations may be irregular, stunted, or shrubby due to harsh conditions"
+      
+      - feature_id: "LEAF-COLOR-03"  # Blue-green
+        notes: "Foliage typically has a bluish-green color"
+        exceptions: "May appear more green in shadier locations"
+
+    sometimes_true:
+      # Features that vary with age, season, or conditions
+      - feature_id: "TREE-FORM-05"  # Irregular crown
+        conditions: "Trees growing at timberline or in heavy snow areas"
+        notes: "May develop twisted, irregular form in response to snow load and harsh conditions"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees"
+        notes: "Bark is smooth when young"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Older trees"
+        notes: "Bark develops shallow furrows with age"
+      
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        conditions: "Typical bark color"
+        notes: "Bark is usually purplish-gray to reddish-brown"
+      
+      - feature_id: "CONE-SIZE-02"  # Medium cones
+        conditions: "Mature cones"
+        notes: "Cones typically 1-3 inches long"
+      
+      - feature_id: "GEO-ELEV-03"  # High elevation
+        conditions: "Typical growing range"
+        notes: "Usually found above 5,000 feet in California"
+
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all needles seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Needles attach singly, never in bundles"
+      
+      - feature_id: "NEEDLE-ARRANGE-08"  # Flattened spray needles
+        notes: "Needles grow all around twig, not in flat sprays like Western Hemlock"
+      
+      - feature_id: "CONE-POS-01"  # Upright cones
+        notes: "Cones always hang down, never stand upright"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A tree with a droopy top that looks like it's nodding, bluish-green needles growing all around the twigs, and small hanging cones"
+    memorable_comparison: "It looks like a Christmas tree that's sleepy and nodding its head, with soft blue-green needles and tiny pinecones hanging like ornaments"
+    touch_tip: "The needles feel soft and slightly curved, not pokey like spruce - you can gently run your finger along a branch"
+    smell_tip: "Carefully smell the needles for a fresh, clean mountain scent (don't crush them)"
+    fun_fact: "Mountain Hemlocks are snow champions! They live where snow can pile up 20 feet deep in winter. Their flexible branches bend instead of breaking under heavy snow, and their narrow, droopy shape helps snow slide off instead of weighing them down. Some Mountain Hemlocks can survive being buried in snow for 8 months of the year!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the top of the tree. Does it droop downward instead of pointing straight up?"
+        yes_next: 2
+        no_next: "Not a Mountain Hemlock - check if it might be a fir or spruce with a straight-up top"
+      - step: 2
+        instruction: "Look closely at the needles. Do they stick out all around the twig (like bottle brushes) rather than forming flat sprays?"
+        yes_next: 3
+        no_next: "Might be Western Hemlock, which has needles in flat, feathery sprays"
+      - step: 3
+        instruction: "Are the needles soft, bluish-green, and growing in high mountains where there's lots of snow in winter?"
+        yes_next: "You found a Mountain Hemlock!"
+        no_next: "If the needles are sharp and prickly, check Engelmann Spruce; if you're at lower elevations, it might be another conifer"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New needle growth appears lighter green at branch tips; snow gradually melts away"
+      reproductive_activity: "Pollen cones release yellow pollen; female cones begin development"
+      identification_tips: "New growth stands out as bright green against older bluish-green needles"
+      kid_friendly_tip: "In spring, look for bright green baby needles at the tips of branches as the snow melts away"
+    
+    - season: "Summer" 
+      visual_changes: "New growth matures to match older foliage; young cones are visible"
+      reproductive_activity: "Female cones grow larger and begin to mature"
+      identification_tips: "Young purplish cones visible on branches; drooping leader distinctive"
+      kid_friendly_tip: "By summer, you can see small purple-brown cones hanging from the branches"
+    
+    - season: "Fall"
+      visual_changes: "Little visible change; preparations for winter dormancy"
+      reproductive_activity: "Cones mature and release seeds with winged attachments"
+      identification_tips: "Mature brown cones may open to release seeds before winter"
+      kid_friendly_tip: "In fall, the small cones open up to let their seeds fly away on tiny wings before the snow comes"
+    
+    - season: "Winter"
+      visual_changes: "Often partially or completely buried in deep snow"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Graceful form with snow load; branches bend but rarely break"
+      kid_friendly_tip: "In winter, these trees might be completely buried in snow, with only their tops sticking out!"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Drooping leader (top of tree)"
+      reliability: "Very high"
+      visibility: "Easy - visible from a distance"
+    - feature: "Needles growing all around twig (not in flat sprays)"
+      reliability: "High"
+      visibility: "Medium - need to look closely"
+    - feature: "Bluish-green needle color"
+      reliability: "Medium"
+      visibility: "Easy to observe"
+    - feature: "High elevation habitat (usually above 5,000 feet)"
+      reliability: "High"
+      visibility: "Context-based observation"
+    
+  look_alike_species:
+    - species: "Western Hemlock (Tsuga heterophylla)"
+      differences: "Western Hemlock has needles arranged in flat sprays, grows at lower elevations, and has a greener color"
+      identification_tip: "Mountain Hemlock needles stick out all around the twig, while Western Hemlock needles form flat, feathery sprays"
+    - species: "Subalpine Fir (Abies lasiocarpa)"
+      differences: "Subalpine Fir has an upright, spire-like top (not drooping) and upright cones that disintegrate on the tree"
+      identification_tip: "If the top points straight up like a spire and you see upright cones, it's likely Subalpine Fir, not Mountain Hemlock"
+    - species: "Engelmann Spruce (Picea engelmannii)"
+      differences: "Engelmann Spruce has stiff, sharp needles that are square in cross-section and a straight top"
+      identification_tip: "Gently touch the needles - Mountain Hemlock needles are softer and flatter, while Spruce needles are sharp and pokey"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Washoe"
+      physical_uses:
+        - "Used branches to make beds and shelters in high mountain camps"
+        - "Collected resin for waterproofing and medicine"
+        - "Made tea from needles as a treatment for colds and respiratory problems"
+      symbolic_meaning:
+        - "Tree represented endurance and resilience in harsh conditions"
+        - "Featured in stories about surviving winter and adapting to difficult environments"
+    
+    - culture: "Sierra Miwok"
+      physical_uses:
+        - "Collected branches for ceremonial decorations"
+        - "Used pitch for healing salves and as an adhesive"
+        - "Made temporary shelters with boughs when traveling in high country"
+      symbolic_meaning:
+        - "Regarded as a guardian of high mountain places"
+        - "Associated with ability to bend without breaking under life's pressures"
+    
+    - culture: "Mountain Climbers and Alpinists"
+      physical_uses:
+        - "Used branches as emergency bedding material on expeditions"
+        - "Recognized as a reliable indicator of snow depth and avalanche risk"
+        - "Used as a landmarking tree for navigation in alpine environments"
+      symbolic_meaning:
+        - "Became a symbol of perseverance in challenging alpine conditions"
+        - "Represents the beauty and harshness of high mountain environments"
+        - "Featured in artwork and photography celebrating mountain wilderness"
+    
+  cultural_ecological_notes:
+    - "Specially adapted to deep snow areas with a short growing season"
+    - "Branches can bend under heavy snow without breaking"
+    - "Provides important habitat for high elevation birds and mammals"
+    - "Often grows in scenic subalpine parklands visited by hikers and skiers"
+    - "Plays an important role in stabilizing soil in high mountain areas"
+    
+  range_within_california:
+    - "Found in high elevations of the Sierra Nevada range"
+    - "Present in the Klamath Mountains and northern Coast Ranges"
+    - "Occurs in scattered populations in the southern Cascades"
+    - "Typically grows between 5,000-10,000 feet elevation"
+    - "Often forms the upper timberline in many California mountain areas"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "40-90 feet at lower elevations; 15-30 feet near timberline"
+    growth_rate: "Very slow, especially at high elevations"
+    crown_spread: "15-30 feet at maturity"
+    lifespan: "300-800 years, occasionally to 1,000 years"
+    trunk_diameter: "1-3 feet at maturity"
+    root_system: "Shallow but widespread, adapted to shallow mountain soils"
+    toxicity: "Not toxic to humans or animals"
+  
+  conservation_status:
+    status: "Not threatened overall, though some populations may be vulnerable"
+    threats: 
+      - "Climate change reducing suitable high-elevation habitat"
+      - "Increased fire intensity and frequency"
+      - "Recreational development in subalpine areas"
+      - "Potential for pest or disease outbreaks with warming temperatures"
+    protection_efforts:
+      - "Many populations protected in national parks and wilderness areas"
+      - "Research on climate change impacts to high elevation forests"
+      - "Seed collection and preservation of genetic diversity"
+      - "Protection of subalpine ecosystems in conservation planning"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: TREE-FORM-03"  # Weeping form
+    confirmation_features:
+      - "feature_id: NEEDLE-ARRANGE-01"  # Single needles
+      - "feature_id: HABITAT-LOC-02"  # Mountain habitat
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-03", "LEAF-TYPE-02"]  # Weeping form, evergreen
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-COLOR-03", "NEEDLE-SIZE-01"]  # Blue-green, short needles
+      - distance: "close_inspection"
+        features_to_check: ["NEEDLE-SHAPE-01", "CONE-POS-02"]  # Flat needles, hanging cones
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["TREE-FORM-03", "LEAF-COLOR-03"]
+        notes: "New growth visible at branch tips"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["NEEDLE-ARRANGE-01", "CONE-POS-02"]
+        notes: "Developing cones may be visible"
+      
+      fall:
+        reliability: "High"
+        key_features: ["TREE-FORM-03", "CONE-POS-02"]
+        notes: "Mature cones may be present before winter"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["TREE-FORM-03", "LEAF-TYPE-02"]
+        notes: "Often partially buried by snow in natural habitat"
+    misidentification_risks: 
+      - "Could be confused with Western Hemlock in areas where ranges overlap"
+      - "Young trees before developing distinctive form might resemble other conifers"
+      - "At timberline where trees are stunted, growth form may be less distinctive"
+  
+  wildlife_value:
+    - "Seeds eaten by finches, chickadees, and small mammals"
+    - "Foliage provides food for grouse and other birds"
+    - "Dense branches offer nesting habitat for high-elevation birds"
+    - "Provides shelter for pikas, marmots, and other alpine mammals"
+    - "Old trees develop cavities important for wildlife nesting and shelter"

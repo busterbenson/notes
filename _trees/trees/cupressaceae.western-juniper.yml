@@ -1,0 +1,320 @@
+tree:
+  common_name: "Western Juniper"
+  scientific_name: "Juniperus occidentalis"
+  family: "Cupressaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A tough, drought-resistant evergreen tree with shreddy reddish-brown bark and tiny, scale-like blue-green leaves. It has a twisted, gnarly shape when old and produces small, berry-like blue cones. Native to dry, high-elevation areas of California and the Great Basin."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Twisted, gnarly growth form; shreddy reddish-brown bark that peels in strips; tiny scale-like blue-green leaves"
+    secondary_markers: "Round, berry-like blue seed cones; strong, spicy smell when leaves are crushed; often grows in dry, rocky areas"
+    seasonal_markers: "Blue 'berries' (actually cones) in late summer and fall; same appearance year-round as it's evergreen"
+    similar_species_differentiation: "Unlike California Juniper, has larger berry-like cones and grows at higher elevations; unlike Sierra Juniper, has a single trunk rather than multiple trunks"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its leaves all year round with no seasonal shedding"
+      
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        notes: "Has tiny overlapping leaves that look like scales covering the twigs"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Bark shreds into thin strips and peels off the trunk"
+      
+      - feature_id: "BARK-COLOR-03"  # Red bark
+        notes: "Bark is a distinctive reddish-brown color"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        notes: "Leaves have a strong, spicy smell when crushed"
+      
+      - feature_id: "FRUIT-TYPE-06"  # Fleshy cones
+        notes: "Makes round, berry-like blue cones instead of woody cones"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        notes: "Can survive with very little water in dry conditions"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Naturally grows wild in California"
+      
+      - feature_id: "TREE-FORM-05"  # Irregular crown
+        notes: "Has a crooked, twisted shape especially when old"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk, especially when young"
+        exceptions: "Very old trees may split into multiple trunks after hundreds of years"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Usually grows 15-50 feet tall (as tall as a 2-4 story building)"
+        exceptions: "In very harsh conditions may stay smaller, more like a large shrub"
+      
+      - feature_id: "GEO-ELEV-03"  # High elevation
+        notes: "Usually grows in mountains above 4,000 feet elevation"
+        exceptions: "Sometimes found at lower elevations in very dry areas"
+    
+    sometimes_true:
+      - feature_id: "TREE-SIZE-01"  # Short tree
+        conditions: "Very old trees in harsh environments"
+        notes: "In tough growing spots with little water and high winds, may grow as a short, twisted tree"
+      
+      - feature_id: "TREE-FORM-07"  # Flat topped
+        conditions: "Very old trees exposed to wind"
+        notes: "Old trees in windy spots often develop flat tops"
+      
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        conditions: "Very old specimens or damaged trees"
+        notes: "May develop multiple trunks when very old or after being damaged"
+      
+      - feature_id: "HABITAT-LOC-04"  # Desert edge habitat
+        conditions: "Eastern side of its range"
+        notes: "Grows at the edges of desert areas in eastern California"
+      
+      - feature_id: "HABITAT-LOC-02"  # Mountain habitat
+        conditions: "Throughout its range"
+        notes: "Common in high mountain areas with rocky soil"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "Within its natural range"
+        notes: "Found in northeastern California mountains"
+      
+      - feature_id: "GEO-REGION-02"  # Central California
+        conditions: "Within its natural range"
+        notes: "Found in central eastern California mountains"
+      
+      - feature_id: "ECO-LIFE-01"  # Long-lived
+        conditions: "Trees in protected areas"
+        notes: "Can live over 1,000 years in the right conditions"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all its leaves seasonally"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Never produces hard, woody cones like pines or firs"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Never makes large, colorful flowers"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        notes: "Doesn't grow along streams or rivers"
+      
+      - feature_id: "HABITAT-WATER-02"  # Wetland habitat
+        notes: "Never found in wet areas or marshes"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Doesn't have flat, broad leaves"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Twisted, gnarly tree with shreddy reddish bark and tiny scale-like leaves"
+    memorable_comparison: "Looks like a tree from a fairy tale that's been twisted by the wind, with bark that peels like cinnamon sticks"
+    touch_tip: "Feel the scaly leaves - they're prickly but not as sharp as pine needles"
+    smell_tip: "Rub the leaves gently between your fingers to smell a strong, spicy scent like a Christmas wreath"
+    fun_fact: "Western Junipers can live over 1,000 years! The oldest ones are older than castles, and Native Americans used their berries for medicine and to flavor food."
+    
+    detective_steps:
+      - step: 1
+        instruction: "Look at the tree's shape. Is it twisted and gnarly like a tree from a magical story?"
+        yes_next: 2
+        no_next: "Probably not a Western Juniper - look for another tree"
+      - step: 2
+        instruction: "Check the bark. Is it reddish-brown and peeling off in strips like cinnamon?"
+        yes_next: 3
+        no_next: "Might be another type of juniper or cedar - look at the leaves"
+      - step: 3
+        instruction: "Look closely at the leaves. Are they tiny scales that overlap, covering the twigs like tiny green dragon scales?"
+        yes_next: 4
+        no_next: "Not a juniper - check if it has needles or flat leaves instead"
+      - step: 4
+        instruction: "Gently rub some leaves between your fingers and smell. Does it have a strong, spicy smell?"
+        yes_next: 5
+        no_next: "Might be a different kind of evergreen tree with scale leaves"
+      - step: 5
+        instruction: "If it's fall, look for blue berry-like cones. Can you find any?"
+        yes_next: "You found a Western Juniper!"
+        no_next: "Look at where you are - if you're in a dry, rocky area in the mountains of eastern California, it's probably a Western Juniper"
+  
+  # Seasonal timeline
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New growth appears with slightly brighter green color"
+      reproductive_activity: "Tiny pollen cones release yellow pollen on male trees"
+      identification_tips: "Look for yellow pollen cones on male trees; female trees have small green berry-like cones starting to form"
+      kid_friendly_tip: "In spring, you might see a cloud of yellow pollen if you shake a branch on a male tree (trees have boy and girl versions!)"
+    
+    - season: "Summer" 
+      visual_changes: "Growth continues; berry-like cones grow but stay green"
+      reproductive_activity: "Female cones continue to develop, still green in color"
+      identification_tips: "Look for green berry-like cones on female trees"
+      kid_friendly_tip: "Look for tiny green 'berries' (really baby cones) that are still growing"
+    
+    - season: "Fall"
+      visual_changes: "Berry-like cones turn blue when ripe; tree stays green"
+      reproductive_activity: "Cones fully mature and turn blue; seeds develop"
+      identification_tips: "Blue berry-like cones are very distinctive"
+      kid_friendly_tip: "The 'berries' turn blue like little blueberries - these are actually its cones with seeds inside!"
+    
+    - season: "Winter"
+      visual_changes: "No major changes; stays green year-round"
+      reproductive_activity: "Blue cones may persist through winter"
+      identification_tips: "Twisted form more visible against winter skies; blue cones may still be present"
+      kid_friendly_tip: "While other trees lose their leaves, juniper keeps its scaly green leaves all winter long"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Scale-like blue-green leaves in sprays"
+      reliability: "High"
+      visibility: "Need to look closely"
+    - feature: "Reddish-brown, shreddy bark"
+      reliability: "Very high"
+      visibility: "Easy to see"
+    - feature: "Strong, spicy smell when leaves are crushed"
+      reliability: "Very high"
+      visibility: "Need to crush leaves to detect"
+    - feature: "Twisted, gnarly growth form (especially in older trees)"
+      reliability: "High"
+      visibility: "Visible from a distance"
+    - feature: "Blue berry-like cones (when present)"
+      reliability: "Very high"
+      visibility: "Seasonal - fall through winter"
+    
+  look_alike_species:
+    - species: "California Juniper (Juniperus californica)"
+      differences: "California Juniper has smaller berry-like cones, usually grows at lower elevations, and often has multiple trunks from the base"
+      identification_tip: "Western Juniper usually has a single trunk and grows at higher elevations in the mountains"
+    
+    - species: "Sierra Juniper (Juniperus grandis)"
+      differences: "Sierra Juniper typically grows with multiple trunks from the base and has slightly different scale-like leaves"
+      identification_tip: "Western Juniper tends to grow with a single trunk when young and has a more tree-like form"
+    
+    - species: "Rocky Mountain Juniper (Juniperus scopulorum)"
+      differences: "Rocky Mountain Juniper has smaller 'berries' and less shreddy bark; not common in California"
+      identification_tip: "Western Juniper has especially shreddy bark and larger berry-like cones"
+    
+  cultural_ecological_notes:
+    - "Important food source for birds and small mammals"
+    - "Provides shelter for wildlife in harsh landscapes"
+    - "Wood is naturally resistant to rot and insects"
+    - "Often the only tree species in dry, high-elevation areas"
+    - "Some ranchers consider it invasive because it spreads into grazing lands"
+    
+  range_within_california:
+    - "Common in northeastern California mountains"
+    - "Found in the eastern Sierra Nevada and Modoc Plateau"
+    - "Grows in high, dry areas with rocky soil"
+    - "Usually found above 4,000 feet elevation"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Northern Paiute"
+      physical_uses:
+        - "Harvested the blue berries to make a tea for colds and coughs"
+        - "Crushed berries into a paste for skin problems and wounds"
+        - "Made a special body wash from the leaves that helped keep insects away"
+        - "Used the rot-resistant wood to make fence posts and tools"
+      symbolic_meaning:
+        - "The twisted trees showed how to stay strong even when life is difficult"
+        - "Used juniper in purification ceremonies before important events"
+        - "Valued the tree for surviving in harsh places where little else grows"
+        - "Taught children that the tree's ability to grow from cracks in rocks showed resourcefulness"
+    
+    - culture: "Modoc"
+      physical_uses:
+        - "Boiled juniper berries to make a drink that helped with stomachaches"
+        - "Burned the wood in special ceremonies because of its sweet smell"
+        - "Used the shreddy bark to make soft bedding material"
+        - "Made cough medicine by steeping berries in water"
+      symbolic_meaning:
+        - "The long-lived trees connected people to their ancestors"
+        - "Respected the tree's tough survival in harsh conditions"
+        - "Used the tree as an example of endurance in stories for children"
+        - "Saw the tree as a teacher of patience because it grows so slowly"
+    
+    - culture: "Washoe"
+      physical_uses:
+        - "Collected berries to flavor meat and other foods"
+        - "Made tea from the berries to treat colds and flu"
+        - "Used wood for carving tools and small items"
+        - "Burned branches to purify spaces before ceremonies"
+      symbolic_meaning:
+        - "Believed juniper had protective powers against negative energy"
+        - "The tree's strange twisted shapes featured in traditional stories"
+        - "Used as a symbol of perseverance and survival"
+        - "Ancient trees were respected as wise elders of the plant world"
+        
+    - culture: "Shoshone"
+      physical_uses:
+        - "Ground dried berries into flour to mix with other foods"
+        - "Made a pain-relieving poultice from mashed berries for sore muscles"
+        - "Used the rot-resistant wood for building"
+        - "Created a hair wash from the leaves and berries"
+      symbolic_meaning:
+        - "The juniper was considered a protector tree that watched over people"
+        - "Twisted old trees marked places of special power on the landscape"
+        - "Included in origin stories about how the people came to live in their lands"
+        - "Symbolized the ability to thrive with very little - an important survival lesson"
+  
+  # Additional physical characteristics
+  physical_characteristics:
+    height_range: "15-50 feet (about as tall as a 2-4 story building)"
+    growth_rate: "Very slow, often less than 6 inches per year"
+    crown_spread: "15-30 feet wide (about as wide as a large living room)"
+    lifespan: "Up to 1,000+ years for the oldest specimens"
+    trunk_diameter: "Up to 4 feet across in very old trees (about as wide as a refrigerator)"
+    root_system: "Wide-spreading but not very deep, good at finding water in rocky soil"
+    toxicity: "Generally not toxic, though eating too many berries might upset your stomach"
+    
+  conservation_status:
+    status: "Least Concern (population is stable)"
+    threats: 
+      - "Severe wildfires can kill even mature trees"
+      - "Climate change affecting suitable habitat"
+      - "Sometimes cut down to create more grazing land"
+      - "Drought can affect seedling survival"
+    protection_efforts:
+      - "Protected in national forests and parks"
+      - "Some very old trees are recognized as special heritage trees"
+      - "Research on role in desert ecosystems"
+      - "Monitoring spread into rangelands"
+    
+  # Decision tree mapping
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: LEAF-FORM-05"  # Scale-like leaves
+      - "feature_id: BARK-TEXT-03"  # Peeling bark
+      - "feature_id: BARK-COLOR-03"  # Red bark
+    confirmation_features:
+      - "feature_id: FRUIT-TYPE-06"  # Fleshy cones
+      - "feature_id: TREE-FORM-05"  # Irregular crown
+      - "feature_id: SENSORY-SMELL-01"  # Aromatic leaves
+      - "feature_id: ECO-ADAPT-01"  # Drought tolerant
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-05", "LEAF-TYPE-02", "TREE-SIZE-02"]  # Irregular crown, evergreen, medium tree
+      - distance: "from_nearby"
+        features_to_check: ["BARK-TEXT-03", "BARK-COLOR-03", "LEAF-FORM-05"]  # Peeling bark, red bark, scale-like leaves
+      - distance: "close_inspection"
+        features_to_check: ["SENSORY-SMELL-01", "FRUIT-TYPE-06", "LEAF-FORM-05"]  # Aromatic smell, berry-like cones, scale-like leaves
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["LEAF-TYPE-02", "BARK-TEXT-03", "BARK-COLOR-03"]
+        notes: "Pollen cones may be visible on male trees"
+      summer:
+        reliability: "Medium" 
+        key_features: ["LEAF-TYPE-02", "BARK-TEXT-03", "TREE-FORM-05"]
+        notes: "Green developing berry-like cones may be visible on female trees"
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "FRUIT-TYPE-06", "BARK-COLOR-03"]
+        notes: "Blue berry-like cones are distinctive and excellent identifiers"
+      winter:
+        reliability: "Medium"
+        key_features: ["LEAF-TYPE-02", "TREE-FORM-05", "BARK-TEXT-03"]
+        notes: "Twisted form and evergreen nature stand out in winter landscapes"
+    misidentification_risks: "Most often confused with other juniper species, especially California Juniper"

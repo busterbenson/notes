@@ -1,0 +1,307 @@
+tree:
+  common_name: "Crape Myrtle"
+  scientific_name: "Lagerstroemia indica"
+  family: "Lythraceae"
+  
+  # Basic summary (2-3 sentences)
+  summary: "A small deciduous tree or large shrub known for its spectacular summer flowers in shades of pink, purple, red, or white. It has distinctive smooth, peeling bark that creates a mottled, multicolored pattern and small, oval leaves that turn orange-red in fall. Widely planted throughout California for its long-lasting summer blooms and drought tolerance."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Showy clusters of crinkled flowers in summer; smooth, peeling bark with mottled pattern; multi-stemmed growth habit"
+    secondary_markers: "Small oval leaves arranged opposite each other; seed capsules that persist through winter; orange-red fall color"
+    seasonal_markers: "Vibrant flowers in summer; attractive peeling bark visible year-round; seed capsules persist in winter; orange-red fall color"
+    similar_species_differentiation: "Unlike eastern redbud, blooms in summer rather than spring; unlike lilac, has peeling bark and summer rather than spring flowers; unlike bottlebrush, has deciduous leaves and different flower structure"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops all its leaves in fall and grows new ones in spring"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Each leaf is a single piece, not divided into leaflets"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Produces large, colorful flower clusters"
+      
+      - feature_id: "FLOWER-TIME-02"  # Summer flowering
+        notes: "Blooms throughout summer and sometimes into early fall"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Bark peels naturally to create a smooth, mottled pattern"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        notes: "Grows well in cities and towns, even in tough conditions"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        notes: "Can survive with little water once established"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        notes: "Usually grows with multiple main trunks from the base"
+        exceptions: "Can be trained to grow with a single trunk by pruning"
+      
+      - feature_id: "TREE-SIZE-01"  # Short tree
+        notes: "Usually stays under 20 feet tall (about as tall as a 2-story house)"
+        exceptions: "Some varieties can grow taller, especially in ideal conditions"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves typically grow in pairs opposite each other"
+        exceptions: "Sometimes leaf arrangement appears mixed or irregular"
+      
+      - feature_id: "LEAF-FALL-03"  # Orange fall color
+        notes: "Leaves typically turn orange-red in fall"
+        exceptions: "Fall color can vary based on climate and growing conditions"
+    
+    sometimes_true:
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        conditions: "When older or certain varieties"
+        notes: "Some varieties can grow to 20-25 feet tall"
+      
+      - feature_id: "LEAF-FALL-02"  # Red fall color
+        conditions: "Fall season depending on variety and weather"
+        notes: "Some varieties show more red fall color"
+      
+      - feature_id: "FLOWER-COLOR-01"  # White flowers
+        conditions: "White-flowering varieties"
+        notes: "Some varieties have pure white flowers"
+      
+      - feature_id: "FLOWER-COLOR-02"  # Pink flowers
+        conditions: "Pink-flowering varieties"
+        notes: "Many varieties have pink flowers in various shades"
+      
+      - feature_id: "FLOWER-COLOR-03"  # Red flowers
+        conditions: "Red-flowering varieties"
+        notes: "Some varieties have bright red or dark red flowers"
+      
+      - feature_id: "WINTER-FEAT-02"  # Persistent fruits
+        conditions: "Winter season"
+        notes: "Seed capsules often remain on the tree through winter"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "Where planted in landscapes"
+        notes: "Planted in Northern California cities and towns"
+      
+      - feature_id: "GEO-REGION-02"  # Central California
+        conditions: "Where planted in landscapes"
+        notes: "Common in Central California landscapes"
+      
+      - feature_id: "GEO-REGION-03"  # Southern California
+        conditions: "Where planted in landscapes"
+        notes: "Widely planted in Southern California, especially popular in hot areas"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops its leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has compound leaves with multiple leaflets"
+      
+      - feature_id: "HABITAT-WATER-02"  # Wetland habitat
+        notes: "Doesn't grow in wet areas or marshes"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Not native to California; originally from China and other Asian countries"
+      
+      - feature_id: "FRUIT-TYPE-01"  # Acorns present
+        notes: "Never produces acorns"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Crinkly paper-like flowers in bright colors growing in big clusters in summer"
+    memorable_comparison: "The flowers look like bunches of colorful, crinkled tissue paper, and the smooth peeling bark looks like a puzzle with different colored pieces"
+    touch_tip: "The bark feels smooth, and you might see it peeling naturally like puzzle pieces"
+    smell_tip: "The flowers have a light, sweet smell if you sniff them gently"
+    fun_fact: "Crape Myrtle trees can bloom for up to 120 days - that's 4 whole months of flowers! Also, the name comes from the crinkly flowers that look like crepe paper."
+    
+    detective_steps:
+      - step: 1
+        instruction: "In summer, look for a small tree covered with bunches of colorful, crinkly flowers. Do you see a tree with pink, purple, red, or white flower clusters?"
+        yes_next: 2
+        no_next: "If it's not summer, look for other features. If it is summer and the tree isn't flowering, it's probably not a Crape Myrtle"
+      - step: 2
+        instruction: "Check the bark. Is it smooth with patches of different colors like tan, gray, and cinnamon-brown, and does it peel naturally?"
+        yes_next: 3
+        no_next: "Check if it might be another flowering tree or shrub"
+      - step: 3
+        instruction: "Look at how it grows. Does it have several trunks growing from the base rather than one main trunk?"
+        yes_next: 4
+        no_next: "It might be a Crape Myrtle trained to a single trunk, or it could be another flowering tree"
+      - step: 4
+        instruction: "Look at the leaves. Are they small, oval-shaped, and mostly growing in pairs opposite each other on the branches?"
+        yes_next: 5
+        no_next: "Might be another flowering tree or shrub"
+      - step: 5
+        instruction: "Where is it growing? Is it planted in a yard, park, or along a street in a sunny spot?"
+        yes_next: "You found a Crape Myrtle!"
+        no_next: "Crape Myrtles are almost always planted by people in sunny spots, not found in wild areas or deep shade"
+  
+  # Seasonal timeline
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New bright green leaves emerge; no flowers yet"
+      reproductive_activity: "Leaf and bud development, but no flowering"
+      identification_tips: "Smooth, peeling bark is distinctive; look for old seed capsules from previous year that may still be present"
+      kid_friendly_tip: "In spring, you'll see fresh green leaves popping out, but no flowers yet. The cool puzzle-like bark is still easy to spot!"
+    
+    - season: "Summer" 
+      visual_changes: "Full of large, colorful flower clusters; dense green foliage"
+      reproductive_activity: "Peak flowering; can bloom for months in warm weather"
+      identification_tips: "Showy flower display makes summer identification extremely easy"
+      kid_friendly_tip: "Summer is when Crape Myrtles put on their best show! The flowers look like bunches of crinkled tissue paper in bright colors"
+    
+    - season: "Fall"
+      visual_changes: "Flowers may continue into early fall; leaves turn orange-red; seed capsules develop"
+      reproductive_activity: "Flowers fade and develop into round seed capsules"
+      identification_tips: "Combination of fading flowers, fall color, and developing seed capsules"
+      kid_friendly_tip: "In fall, the leaves turn pretty orange and red colors, and the flowers are replaced by little round seed pods that look like tiny brown balls"
+    
+    - season: "Winter"
+      visual_changes: "Leaves drop; seed capsules persist; peeling bark more visible"
+      reproductive_activity: "Dormant; persistent seed capsules remain on branches"
+      identification_tips: "Smooth, mottled peeling bark is most visible; persistent seed capsules"
+      kid_friendly_tip: "After the leaves fall off, you can really see the beautiful peeling bark that looks like a puzzle, and the tiny round seed pods stay on the branches"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Clusters of crinkly flowers in summer"
+      reliability: "Very high"
+      visibility: "Very easy to see during bloom time"
+    - feature: "Smooth, peeling bark with mottled colors"
+      reliability: "Very high"
+      visibility: "Easy to see year-round"
+    - feature: "Multiple trunks growing from base"
+      reliability: "High"
+      visibility: "Visible from a distance"
+    - feature: "Small, oval leaves growing in pairs"
+      reliability: "High"
+      visibility: "Visible up close during growing season"
+    - feature: "Round seed capsules that persist in winter"
+      reliability: "Medium"
+      visibility: "Visible up close in fall and winter"
+    
+  look_alike_species:
+    - species: "Eastern Redbud (Cercis canadensis)"
+      differences: "Redbud blooms in early spring before leaves appear, has heart-shaped leaves, and different bark; Crape Myrtle blooms in summer"
+      identification_tip: "Crape Myrtle has summer flowers and peeling bark, while Redbud has spring flowers and smoother bark"
+    
+    - species: "Lilac (Syringa species)"
+      differences: "Lilacs bloom in spring rather than summer; have different bark without the peeling pattern; flowers have different structure"
+      identification_tip: "Crape Myrtle blooms in summer and has peeling, mottled bark; lilacs bloom in spring and have grayish, non-peeling bark"
+    
+    - species: "Bottlebrush (Callistemon species)"
+      differences: "Bottlebrush has evergreen needle-like leaves and brush-shaped red flowers; completely different bark"
+      identification_tip: "Crape Myrtle has deciduous oval leaves and clusters of crinkly flowers, not brush-like flowers"
+    
+  cultural_ecological_notes:
+    - "Native to China, Korea, Japan, and India"
+    - "Extremely heat and drought tolerant once established"
+    - "Provides nectar for butterflies, bees, and hummingbirds"
+    - "Many varieties available with different flower colors and sizes"
+    - "Can be pruned to different forms - tree form, multi-stemmed, or shrub"
+    
+  range_within_california:
+    - "Not native to California but widely planted throughout the state"
+    - "Especially common in Central Valley and Southern California where heat promotes better flowering"
+    - "Grows well in most California climate zones, particularly in hot inland areas"
+    - "Often planted in residential yards, street medians, and commercial landscapes"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Chinese Traditional"
+      physical_uses:
+        - "Used bark and flowers in traditional medicine to reduce swelling and treat mouth sores"
+        - "Made a dye from the flowers for coloring fabrics"
+        - "Carved the hard wood for decorative items and tool handles"
+        - "Planted near homes for ornamental value and summer shade"
+      symbolic_meaning:
+        - "Associated with elegance and grace in traditional gardens"
+        - "Represents beauty that persists even in harsh conditions"
+        - "Summer blooming symbolized the vitality of summer season"
+        - "Featured in poems and paintings celebrating summer beauty"
+    
+    - culture: "Southern United States"
+      physical_uses:
+        - "Widely planted as ornamental trees throughout the southern states"
+        - "Used as boundary markers between properties"
+        - "Planted to provide color in hot summer landscapes"
+        - "Wood sometimes used for small decorative items and wood turning"
+      symbolic_meaning:
+        - "Often called 'the lilac of the South' for its cultural significance in southern gardens"
+        - "Became a symbol of traditional southern landscapes and gardens"
+        - "Often associated with home and family, commonly planted near houses"
+        - "The practice of heavy pruning became a cultural tradition in some areas"
+    
+    - culture: "California Landscape Design"
+      physical_uses:
+        - "Planted in water-wise landscaping as drought-tolerant flowering trees"
+        - "Used as focal points in yards and gardens for summer interest"
+        - "Incorporated into street plantings and median strips in hot areas"
+        - "Trained into different forms - from small trees to shrubs - for different landscape needs"
+      symbolic_meaning:
+        - "Represents successful adaptation of ornamental plants to California's dry climate"
+        - "Symbolic of summer beauty in landscapes, providing color when many other plants have finished blooming"
+        - "Featured in Mediterranean and drought-tolerant garden designs as an example of beauty without high water use"
+        - "Different colored varieties used to express personal style and preferences in landscaping"
+  
+  # Additional physical characteristics
+  physical_characteristics:
+    height_range: "15-25 feet (about as tall as a 1-2 story house)"
+    growth_rate: "Medium, growing 1-2 feet per year when young"
+    crown_spread: "15-20 feet wide (about as wide as a large room)"
+    lifespan: "Up to 50+ years in good conditions"
+    trunk_diameter: "Multi-stemmed with trunks up to 6-8 inches across (about as wide as a soup can)"
+    root_system: "Moderately deep and not aggressive; unlikely to damage sidewalks or foundations"
+    toxicity: "Not toxic to humans or animals"
+    
+  conservation_status:
+    status: "Not evaluated for conservation (cultivated ornamental)"
+    threats: 
+      - "No significant threats to the species globally"
+      - "In cultivation, may face some issues with powdery mildew in humid areas"
+      - "Some susceptibility to aphids and other common garden pests"
+      - "Over-pruning in landscape maintenance can reduce flowering and tree health"
+    protection_efforts:
+      - "Widely cultivated and not in need of conservation efforts"
+      - "Development of disease-resistant varieties"
+      - "Research on drought tolerance and urban adaptability"
+      - "Education on proper pruning practices to maintain tree health"
+    
+  # Decision tree mapping
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: FLOWER-SIZE-01"  # Showy flowers
+      - "feature_id: FLOWER-TIME-02"  # Summer flowering
+      - "feature_id: BARK-TEXT-03"  # Peeling bark
+    confirmation_features:
+      - "feature_id: TREE-TRUNK-02"  # Multi-trunked
+      - "feature_id: TREE-SIZE-01"  # Short tree
+      - "feature_id: LEAF-ARRANGE-02"  # Opposite
+      - "feature_id: WINTER-FEAT-02"  # Persistent fruits
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["FLOWER-SIZE-01", "TREE-SIZE-01", "TREE-TRUNK-02"]  # Showy flowers, short tree, multi-trunked
+      - distance: "from_nearby"
+        features_to_check: ["BARK-TEXT-03", "FLOWER-TIME-02", "LEAF-ARRANGE-02"]  # Peeling bark, summer flowering, opposite leaves
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-COMPLEX-01", "WINTER-FEAT-02", "LEAF-FALL-03"]  # Simple leaves, persistent fruits, orange fall color
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["BARK-TEXT-03", "TREE-TRUNK-02", "LEAF-ARRANGE-02"]
+        notes: "Peeling bark and multi-stem habit help with spring identification"
+      summer:
+        reliability: "Very high"
+        key_features: ["FLOWER-SIZE-01", "FLOWER-TIME-02", "BARK-TEXT-03"]
+        notes: "Summer flowers make identification extremely reliable"
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-FALL-03", "BARK-TEXT-03", "WINTER-FEAT-02"]
+        notes: "Fall color, persistent seed capsules, and distinctive bark are good identifiers"
+      winter:
+        reliability: "Medium"
+        key_features: ["BARK-TEXT-03", "TREE-TRUNK-02", "WINTER-FEAT-02"]
+        notes: "Peeling bark, multi-stem growth, and persistent seed capsules aid winter identification"
+    misidentification_risks: "Most often confused with redbud, lilac, or other small flowering trees and shrubs"

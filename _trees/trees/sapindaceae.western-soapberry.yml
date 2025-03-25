@@ -1,0 +1,277 @@
+tree:
+  common_name: "Western Soapberry"
+  scientific_name: "Sapindus drummondii"
+  family: "Sapindaceae"
+  
+  # Basic summary
+  summary: "Western Soapberry is a medium-sized deciduous tree with compound leaves containing 8-15 pointed leaflets arranged along a central stem. It produces clusters of small white flowers followed by round, golden-amber, translucent berries that contain a natural soap. The tree has an irregular rounded crown and gray to brown bark with shallow ridges."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Compound leaves with 8-15 pointed leaflets arranged along a central stem; translucent golden-amber berries that persist into winter; leaflets often slightly curved or sickle-shaped"
+    secondary_markers: "Gray to brown bark with shallow ridges; irregular rounded crown; small white flowers in clusters at branch tips"
+    seasonal_markers: "White flower clusters in late spring; golden-amber berries persist into winter; yellow fall color"
+    similar_species_differentiation: "Unlike ash trees, leaflets have smooth edges without teeth; unlike Black Locust, lacks thorns and has larger leaflets; unlike Tree of Heaven, has fewer leaflets and rounded berries instead of winged seeds"
+  
+  features:
+    always_true:
+      # Fundamental traits
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all leaves in fall"
+        
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate leaves
+        notes: "Leaves are compound with 8-15 leaflets arranged along a central stem"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate arrangement
+        notes: "Leaves grow in an alternating pattern along the branches"
+      
+      - feature_id: "LEAF-EDGE-01"  # Entire margins
+        notes: "Leaflets have smooth edges without teeth"
+      
+      - feature_id: "FRUIT-TYPE-03"  # Berry-like fruits
+        notes: "Produces round, golden-amber, translucent berries that contain saponins (natural soap)"
+      
+    usually_true:
+      # Features with exceptions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with one main trunk"
+        exceptions: "May develop multiple trunks especially if damaged when young"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Usually reaches 25-50 feet tall (about as tall as a 2-5 story building)"
+        exceptions: "Can be smaller in poor conditions or at the edge of its range"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Mature trees typically develop a rounded, sometimes irregular crown"
+        exceptions: "Shape can vary based on growing conditions and age"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        notes: "Leaves typically turn yellow before falling"
+        exceptions: "Fall color can be muted or brief depending on weather conditions"
+    
+    sometimes_true:
+      # Features that vary
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees"
+        notes: "Bark is relatively smooth when young"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Mature trees"
+        notes: "Bark develops shallow furrows as the tree ages"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        conditions: "In California"
+        notes: "Not native to California but occasionally planted as an ornamental or street tree"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        conditions: "Established trees"
+        notes: "Once established, can tolerate periods of drought"
+      
+      - feature_id: "WINTER-FEAT-02"  # Persistent fruits
+        conditions: "Winter months"
+        notes: "Berries often remain on the tree into winter"
+    
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops its leaves in fall"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated edges
+        notes: "Leaflet margins are always smooth, never toothed"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Never has thorns or spines on branches"
+      
+      - feature_id: "SENSORY-SEC-01"  # Milky sap
+        notes: "Does not produce milky sap when cut"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Compound leaves with many smooth-edged leaflets, and golden see-through berries that contain natural soap"
+    memorable_comparison: "The leaves look like little feathers, and the golden berries look like tiny marbles that can actually make bubbles if you squish them in water!"
+    touch_tip: "The leaves feel smooth along the edges (no teeth), and if you rub the berries in water between your hands, they can make bubbles like soap"
+    smell_tip: "The crushed berries have a slight sweet smell; the leaves don't have a strong scent"
+    fun_fact: "The berries contain natural soap! Native Americans and pioneers used to crush the berries in water to wash clothes and make bubbles. The name 'soapberry' comes from these special bubbling berries!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the leaves. Do they have 8-15 smaller leaflets growing along a central stem (like a feather)?"
+        yes_next: 2
+        no_next: "Not a Western Soapberry - if leaves are simple (not compound), check other trees"
+      - step: 2
+        instruction: "Check the edges of the leaflets. Are they smooth without any teeth along the edges?"
+        yes_next: 3
+        no_next: "Probably not a Western Soapberry - if leaflets have toothed edges, check ash trees"
+      - step: 3
+        instruction: "If it's fall or winter, look for golden, round, somewhat see-through berries. Do you see them?"
+        yes_next: "You found a Western Soapberry!"
+        no_next: "It still might be a Western Soapberry, especially if it's spring or summer. Check the overall shape (rounded) and gray-brown bark"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New compound leaves emerge; small white flowers develop in clusters at branch tips"
+      reproductive_activity: "Produces clusters of small white flowers that attract pollinators"
+      identification_tips: "Flower clusters and newly emerging compound leaves are distinctive"
+      kid_friendly_tip: "In spring, look for the clusters of tiny white flowers at the tips of branches, and new feather-like leaves unfolding"
+    
+    - season: "Summer" 
+      visual_changes: "Full leaf development; berries begin forming after flower pollination"
+      reproductive_activity: "Flowers fade and berries begin to develop, starting green and turning golden as they mature"
+      identification_tips: "Compound leaves fully developed; developing berries visible"
+      kid_friendly_tip: "In summer, the tree is covered with dark green compound leaves, and you can watch the small berries start to grow and change from green to golden"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow before falling; berries fully mature to golden-amber and become translucent"
+      reproductive_activity: "Berries fully mature and become translucent"
+      identification_tips: "Yellow fall color and distinctive golden, translucent berries"
+      kid_friendly_tip: "In fall, the leaves turn yellow, and the berries become golden and see-through, like little amber marbles"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches; berries often persist on branches even after leaves have fallen"
+      reproductive_activity: "Dormant; berries may persist throughout winter"
+      identification_tips: "Persistent berries are a key winter identification feature"
+      kid_friendly_tip: "In winter, you can spot this tree by looking for the clusters of golden berries that stay on the bare branches like decorations"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Compound leaves with 8-15 smooth-edged leaflets"
+      reliability: "Very high"
+      visibility: "High - visible during growing season"
+    - feature: "Golden, translucent, round berries"
+      reliability: "Very high"
+      visibility: "High - visible from fall through winter"
+    - feature: "Gray to brown bark with shallow furrows"
+      reliability: "Medium"
+      visibility: "Visible year-round but similar to other trees"
+    - feature: "Foaming berries when crushed in water"
+      reliability: "Very high"
+      visibility: "Requires testing berries in water"
+    
+  look_alike_species:
+    - species: "Ash trees (Fraxinus species)"
+      differences: "Ash trees have opposite leaves (not alternate) and leaflets with toothed edges; produce winged seeds (not berries)"
+      identification_tip: "Check leaf arrangement (alternate in Soapberry, opposite in Ash) and leaflet edges (smooth in Soapberry, toothed in Ash)"
+    - species: "Black Locust (Robinia pseudoacacia)"
+      differences: "Black Locust has thorns along branches, leaflets are more rounded, and produces long seed pods (not berries)"
+      identification_tip: "Western Soapberry lacks thorns and has golden berries instead of seed pods"
+    - species: "Tree of Heaven (Ailanthus altissima)"
+      differences: "Tree of Heaven has more leaflets (15-30), leaflets have distinctive glandular teeth at base, and has a strong unpleasant odor"
+      identification_tip: "Western Soapberry has fewer leaflets with no teeth, lacks the unpleasant odor, and produces berries instead of winged seeds"
+    
+  cultural_ecological_notes:
+    - "Fruits provide food for wildlife, particularly birds"
+    - "Flowers attract many pollinators including bees and butterflies"
+    - "Tolerant of alkaline soils, drought, and urban conditions"
+    - "Deep root system helps prevent soil erosion"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Indigenous Peoples of the Southwest"
+      physical_uses:
+        - "Used the berries as a natural soap for washing clothes and hair"
+        - "Made jewelry and decorative items from the hard seeds inside the berries"
+        - "Created medicinal remedies from various parts of the tree"
+      symbolic_meaning:
+        - "The cleansing properties of the berries represented purification"
+        - "Featured in stories about resourcefulness and using nature's gifts"
+        - "The sweet berries that made soap symbolized how something pleasant could also be practical"
+    
+    - culture: "Early American Settlers"
+      physical_uses:
+        - "Used the berries as soap when commercial soap was unavailable"
+        - "Made fishing line floats from the lightweight berries"
+        - "Used the hard wood for tool handles and fence posts"
+      symbolic_meaning:
+        - "Represented self-sufficiency and making use of natural resources"
+        - "The soap-producing tree was valued for its practical applications"
+        - "Featured in pioneer stories about adaptation to frontier life"
+    
+    - culture: "Modern Urban Landscaping"
+      physical_uses:
+        - "Planted as drought-tolerant ornamental and shade trees"
+        - "Used in low-maintenance xeriscaping designs"
+        - "Valued for wildlife habitat creation in urban settings"
+      symbolic_meaning:
+        - "Represents sustainable landscaping practices"
+        - "Symbolizes the connection between urban environments and native ecology"
+        - "Used in education about drought-tolerant and adaptable native species"
+    
+  range_within_california:
+    - "Not native to California; natural range is in southwestern United States"
+    - "Occasionally planted as an ornamental tree in California landscapes"
+    - "Adapts well to drier regions of California due to drought tolerance"
+    - "Prefers full sun and well-drained soils"
+    - "Can tolerate hot, dry conditions once established"
+    
+  physical_characteristics:
+    height_range: "25-50 feet tall (about as tall as a 2-5 story building)"
+    growth_rate: "Moderate; grows about 12-24 inches per year when young"
+    crown_spread: "25-30 feet wide at maturity"
+    lifespan: "50-100 years under favorable conditions"
+    trunk_diameter: "1-2 feet across (about as wide as a dinner plate)"
+    root_system: "Deep and spreading; drought-adapted"
+    toxicity: "Berries contain saponins that can cause stomach upset if eaten in quantity; safe to handle but not to eat"
+    
+  conservation_status:
+    status: "Not listed as threatened or endangered"
+    threats: 
+      - "Habitat loss in parts of its native range"
+      - "Climate change potentially altering suitable habitat"
+      - "Limited genetic diversity in some planted populations"
+      - "Competition from invasive species in some areas"
+    protection_efforts:
+      - "Included in native plant restoration projects in its natural range"
+      - "Promoted as a drought-tolerant native alternative to invasive ornamentals"
+      - "Seed collection and preservation programs"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-COMPLEX-02"  # Compound pinnate
+      - "feature_id: FRUIT-TYPE-03"  # Berry-like fruits
+    confirmation_features:
+      - "feature_id: LEAF-EDGE-01"  # Entire margins
+      - "feature_id: LEAF-ARRANGE-01"  # Alternate arrangement
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-02", "TREE-SIZE-02"]  # Rounded crown, medium tree
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-COMPLEX-02", "FRUIT-TYPE-03"]  # Compound leaves, berry-like fruits
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-01", "LEAF-ARRANGE-01"]  # Entire margins, alternate arrangement
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["LEAF-COMPLEX-02", "FLOWER-SIZE-02"]
+        notes: "Flower clusters and emerging compound leaves"
+      
+      summer:
+        reliability: "Medium" 
+        key_features: ["LEAF-COMPLEX-02", "LEAF-EDGE-01"]
+        notes: "Fully developed compound leaves with smooth-edged leaflets"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["FRUIT-TYPE-03", "LEAF-FALL-01"]
+        notes: "Golden translucent berries and yellow fall color"
+      
+      winter:
+        reliability: "High"
+        key_features: ["WINTER-FEAT-02", "FRUIT-TYPE-03"]
+        notes: "Persistent golden berries on otherwise bare branches"
+    misidentification_risks: 
+      - "Could be confused with ash trees if not checking leaf arrangement (opposite vs. alternate)"
+      - "Young trees without berries may be harder to identify"
+      - "Can be confused with other compound-leaved trees if not noting the smooth leaflet edges"
+  
+  wildlife_value:
+    food_source:
+      - "Berries eaten by various bird species including robins and cedar waxwings"
+      - "Flowers provide nectar for bees, butterflies, and other pollinators"
+      - "Seeds occasionally eaten by small mammals"
+    habitat_provided:
+      - "Branches provide nesting sites for various birds"
+      - "Dense foliage offers cover for birds and small mammals"
+      - "Serves as host plant for some butterfly species"
+    ecosystem_role: "In its native range, provides food and habitat for wildlife while stabilizing soils in often harsh, dry environments; serves as a pioneer species in disturbed areas"

@@ -47,7 +47,12 @@ If your tree has any of these obvious features, you might have a quick match!
 🔍 Where are you standing?
 │
 ├── **I'm looking at a tree up close**
-│   └── Use the leaf type paths above based on what you see
+│   ├── Use the leaf type paths above based on what you see
+│   └── **Or focus on other features**
+│       ├── I can see cones, berries, or nuts → Go to [CONE BERRIES NUTS PATH](#cone_berries_nuts_path)
+│       ├── I can see flowers → Go to [FLOWER PATH](#flower_path)
+│       ├── I can see fruit → Go to [FRUIT PATH](#fruit_path)
+│       └── No leaves, flowers, cones, fruit → Go to [NO FEATURES PATH](#no_features_path)
 │
 └── **I'm looking at a tree from a distance**
     ├── **What season is it?**
@@ -696,6 +701,97 @@ Remember to always respect trees when identifying them - don't break branches or
 - Deciduous trees have no leaves; focus on bark, buds, and overall form
 - Evergreen broadleaf trees keep their leaves
 - Some trees may have persistent fruits or interesting bark features
+
+## CONE_BERRIES_NUTS_PATH
+
+*For trees with distinctive cones, berries, or nuts*
+
+These reproductive structures can help you identify trees even when leaves are hard to see or not present.
+
+### Cones
+- **Upright cones** (pointing up): Likely true firs (White Fir, Red Fir)
+- **Hanging cones** (pointing down): Likely pines, spruces, or Douglas-fir
+- **Very long cones** (10-20 inches): Sugar Pine 
+- **Cones stuck to trunk**: Knobcone Pine
+- **Duck-bill shaped cones**: Incense-cedar
+- **Berry-like "cones"**: Juniper species
+
+### Berries
+- **Red berries with peeling red bark**: Pacific Madrone
+- **Blue-black berries**: Western Serviceberry
+- **White berries with dark spot**: Dogwood
+
+### Nuts and Seeds
+- **Acorns**: Oak species (check cup and acorn shape)
+- **Helicopter seeds in pairs**: Maple species
+- **Round spiny balls**: California Buckeye or Sweetgum
+- **Hard nuts with green husk**: California Black Walnut
+
+For detailed identification paths based on these features, see the [REPRODUCTIVE FEATURES PATH](reproductive-features-path.md).
+
+## FLOWER_PATH
+
+*For trees with distinctive flowers*
+
+Flowers can be very helpful for identification, especially in spring.
+
+### Showy Flowers
+- **Pink/magenta flowers before leaves**: Western Redbud
+- **White flat "flowers" (actually bracts)**: Pacific Dogwood 
+- **Creamy white spikes**: California Buckeye
+- **Purple-blue trumpet flowers**: Jacaranda (ornamental)
+
+### Less Obvious Flowers
+- **Hanging catkins**: Alder, Birch, Oak (spring)
+- **Small yellow clusters**: California Laurel
+- **Yellow pollen cones**: Conifers releasing pollen
+
+For detailed identification paths based on flowers, see the [REPRODUCTIVE FEATURES PATH](reproductive-features-path.md).
+
+## FRUIT_PATH
+
+*For trees with distinctive fruits*
+
+Fruits help with identification in summer and fall.
+
+### Pod-like Fruits
+- **Flat reddish pods**: Western Redbud
+- **Spiky ball pods**: California Buckeye, Sweetgum
+
+### Winged Seeds
+- **Paired "helicopter" seeds**: Maples
+- **Paddle-shaped wings**: Ash trees
+- **Cottony seeds**: Cottonwood, Willow
+
+### Fleshy Fruits
+- **Small apple-like fruits**: Crabapple
+- **Olive-like fruits**: California Laurel
+
+For detailed identification paths based on fruits, see the [REPRODUCTIVE FEATURES PATH](reproductive-features-path.md).
+
+## NO_FEATURES_PATH
+
+*For trees with limited identifying features*
+
+When leaves, flowers, and fruits aren't visible:
+
+### Focus on Bark
+- **Puzzle-piece pattern**: Sycamore
+- **Peeling red bark**: Madrone
+- **White bark**: Birch, Aspen
+- **Spongy red bark**: Redwood, Sequoia
+
+### Tree Form
+- **Perfect pyramid**: Fir, Spruce
+- **Weeping form**: Willow
+- **Massive spreading crown**: Valley Oak
+
+### Ground Clues
+- **Fallen acorns**: Oak species
+- **Fallen cones**: Conifer species
+- **Distinctive smell in leaf litter**: Eucalyptus, Bay Laurel
+
+For detailed identification approaches with limited features, see the [REPRODUCTIVE FEATURES PATH](reproductive-features-path.md).
 
 ## MORE RESOURCES
 

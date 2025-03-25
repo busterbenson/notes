@@ -1,0 +1,252 @@
+tree:
+  common_name: Slippery Elm
+  scientific_name: Ulmus rubra
+  family: Ulmaceae
+  native: false
+
+  summary: Slippery Elm is a tree that loses its leaves in winter and is shaped like a vase or fountain. It has big leaves that feel rough like sandpaper on both sides, with jagged double teeth around the edges. The tree gets its name from its special inner bark that feels slippery and gooey when wet - which has been used as medicine for hundreds of years! Though not originally from California, you might find it in parks and old neighborhoods, where you can recognize it by its large, rough leaves and deeply grooved bark.
+
+  identification_path:
+    primary_markers: "Vase-shaped tree with large leaves (as long as your hand) that feel rough like sandpaper on BOTH sides"
+    secondary_markers: "Leaves have jagged double teeth around the edges and one side of the leaf base is bigger than the other"
+    seasonal_markers: "Small reddish-green flower clusters in early spring before leaves appear; flat, round, papery seeds in late spring"
+    similar_species_differentiation: "Unlike American Elm, has rough leaves on both sides, not just the top; unlike Chinese Elm, has much larger leaves and lacks patchy, peeling bark"
+
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves in fall"
+      
+      - feature_id: "LEAF-ARRANGEMENT-02"  # Alternate
+        notes: "Leaves grow one after another along the branch, not in pairs"
+      
+      - feature_id: "LEAF-SHAPE-01"  # Elliptical
+        notes: "Leaves are oval-shaped with a pointed tip"
+      
+      - feature_id: "LEAF-MARGIN-03"  # Doubly serrate
+        notes: "Leaf edges have jagged teeth with smaller teeth on them - like big teeth with little teeth"
+      
+      - feature_id: "TREE-SHAPE-03"  # Vase-shaped
+        notes: "Grows in a shape like a fountain or vase, wider at the top than the bottom"
+    
+    usually_true:
+      - feature_id: "TREE-SIZE-03"  # Large (50-100 feet)
+        notes: "Often grows as tall as a 5-story building"
+        exceptions: "In dry areas or poor soil, might stay smaller"
+      
+      - feature_id: "BARK-TEXTURE-05"  # Furrowed or ridged
+        notes: "Bark has deep grooves and flat ridges"
+        exceptions: "Young trees have smoother bark before developing the deep grooves"
+      
+      - feature_id: "LEAF-TEXTURE-02"  # Rough or hairy
+        notes: "Leaves feel like sandpaper on both top and bottom"
+        exceptions: "New spring leaves start out softer before becoming rough"
+      
+      - feature_id: "HABITAT-05"  # Planted in landscapes
+        notes: "In California, only found where people have planted it"
+        exceptions: "Not common in newer California landscapes"
+    
+    sometimes_true:
+      - feature_id: "TREE-SIZE-02"  # Medium (30-50 feet)
+        conditions: "When growing in poor soil, limited space, or dry conditions"
+        notes: "Might only grow as tall as a 3-4 story building"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "In autumn before leaves drop"
+        notes: "Leaves turn dull yellow in fall, but not as bright as many other trees"
+      
+      - feature_id: "HABITAT-03"  # Urban areas
+        conditions: "Often planted in older city parks and neighborhoods"
+        notes: "Can handle city conditions better than some other trees"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Never stays green all year - always drops its leaves in fall"
+      
+      - feature_id: "LEAF-ARRANGEMENT-01"  # Opposite
+        notes: "Leaves never grow in pairs directly across from each other"
+      
+      - feature_id: "LEAF-TEXTURE-01"  # Smooth or glossy
+        notes: "Leaves are never smooth - always rough like sandpaper"
+      
+      - feature_id: "HABITAT-02"  # Forests (in California)
+        notes: "Not found growing wild in California forests, only where people have planted it"
+
+  kid_friendly_identification:
+    primary_identifier: "Big leaves that feel like sandpaper on BOTH sides"
+    memorable_comparison: "The tree looks like a fountain with branches spraying up and out from the trunk"
+    touch_tip: "Gently feel both sides of a leaf - they're rough like sandpaper or a cat's tongue, and much rougher than most other tree leaves"
+    smell_tip: "No special smell in the leaves, but if you could see the inner bark (don't hurt the tree to check!), it would be reddish and feel slippery when wet"
+    fun_fact: "The inner bark makes a slippery, gooey substance that Native Americans and early settlers used as medicine for sore throats and upset stomachs. Even today, some throat lozenges still use Slippery Elm!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the tree's shape. Does it grow like a fountain or vase, with branches arching up and out?"
+        yes_next: 2
+        no_next: "Probably not a Slippery Elm - look at other trees"
+      - step: 2
+        instruction: "Look at the leaves. Are they big (longer than your hand) with jagged double teeth around the edges?"
+        yes_next: 3
+        no_next: "Not a Slippery Elm - try a different elm or other tree"
+      - step: 3
+        instruction: "Feel both sides of a leaf. Are they both rough like sandpaper?"
+        yes_next: 4
+        no_next: "Not a Slippery Elm - could be American Elm which is only rough on top"
+      - step: 4
+        instruction: "Look at the base of the leaf where it attaches to the stem. Is one side bigger than the other (asymmetrical)?"
+        yes_next: "You found a Slippery Elm!"
+        no_next: "Probably not a Slippery Elm - most elms have uneven leaf bases"
+
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "First small reddish-green flower clusters appear along branches, then small new leaves emerge light green and grow quickly"
+      reproductive_activity: "Flowers bloom before leaves emerge; flat, round, papery seeds (samaras) develop and mature by late spring"
+      identification_tips: "Look for clusters of small flowers, followed by papery seeds, then rapidly growing leaves"
+      kid_friendly_tip: "In spring, look for tiny reddish flowers before the leaves come out, then lots of little round, flat 'helicopter' seeds"
+    
+    - season: "Summer"
+      visual_changes: "Leaves reach full size (as long as your hand) and dark green color, forming a dense leafy canopy"
+      reproductive_activity: "Seeds have typically fallen by early summer"
+      identification_tips: "Look for the large, rough leaves and the distinctive vase shape of the crown"
+      kid_friendly_tip: "In summer, the tree is full of big, sandpapery leaves that make a shady canopy"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn dull yellow before dropping from the tree"
+      reproductive_activity: "No reproductive activity"
+      identification_tips: "Fall color is not impressive - just a dull yellow before leaves drop"
+      kid_friendly_tip: "In fall, the leaves turn yellow but not bright gold like some trees - more like the color of butter that's been left out too long"
+    
+    - season: "Winter"
+      visual_changes: "After leaves drop, the fountain or vase shape is easy to see"
+      reproductive_activity: "Flower buds develop for next spring"
+      identification_tips: "Look for the graceful, arching branch structure and deeply furrowed bark"
+      kid_friendly_tip: "In winter when the leaves are gone, you can see the pretty fountain shape of the branches"
+
+  confirmation_checklist:
+    - feature: "Big leaves (as long as your hand) that feel rough like sandpaper on both sides"
+      reliability: "Very high"
+      visibility: "Easy to see and feel during growing season"
+    
+    - feature: "Leaf edges with double teeth (big teeth with little teeth on them)"
+      reliability: "High"
+      visibility: "Need to look closely at leaf edges"
+    
+    - feature: "Leaf bases uneven, with one side bigger than the other"
+      reliability: "High"
+      visibility: "Need to look at where leaf attaches to stem"
+    
+    - feature: "Tree shaped like a vase or fountain"
+      reliability: "Medium-high"
+      visibility: "Visible from a distance, especially in winter"
+    
+    - feature: "Gray-brown bark with deep grooves"
+      reliability: "Medium"
+      visibility: "Easy to see on trunk"
+
+  look_alike_species:
+    - species: "American Elm (Ulmus americana)"
+      differences: "Slippery Elm leaves are rough on both sides, while American Elm leaves are rough only on top; Slippery Elm has larger leaves and hairier buds"
+      identification_tip: "Feel the underside of a leaf - if it's smooth, it's American Elm; if rough like sandpaper, it's Slippery Elm"
+    
+    - species: "Chinese Elm (Ulmus parvifolia)"
+      differences: "Slippery Elm has much larger, rougher leaves and lacks the patchy, peeling bark of Chinese Elm which has much smaller, smoother leaves"
+      identification_tip: "Chinese Elm has pretty, patchy bark that peels in small pieces revealing orange underneath, while Slippery Elm has deeply grooved bark"
+    
+    - species: "Siberian Elm (Ulmus pumila)"
+      differences: "Slippery Elm has larger leaves with more pronounced double teeth and rougher texture; Siberian Elm has smaller, smoother leaves"
+      identification_tip: "Siberian Elm leaves are much smaller (about half the size) and less rough than Slippery Elm"
+    
+    - species: "English Elm (Ulmus procera)"
+      differences: "Slippery Elm has rougher leaves and less corky twigs, plus a more vase-shaped form"
+      identification_tip: "English Elm grows more upright like a column, while Slippery Elm spreads out like a fountain"
+
+  cultural_significance:
+    - culture: "Native American"
+      physical_uses:
+        - "Inner bark was used to make a soothing medicine for sore throats, coughs, and stomach problems"
+        - "Used to treat wounds and burns by applying the slippery substance from the bark directly to the skin"
+      symbolic_meaning:
+        - "Respected as an important healing tree that provides medicine for many ailments"
+    
+    - culture: "Early American Settlers"
+      physical_uses:
+        - "Adopted the medicinal uses from Native Americans for treating illness"
+        - "Used the strong wood to make furniture, flooring, fence posts, and tool handles"
+      symbolic_meaning:
+        - "Represented a valuable natural pharmacy in frontier regions where doctors were scarce"
+    
+    - culture: "Modern Herbal Medicine"
+      physical_uses:
+        - "Still used today in throat lozenges and herbal supplements for sore throats"
+        - "Used in some natural remedies for digestive problems"
+      symbolic_meaning:
+        - "Represents the connection between traditional knowledge and modern herbal medicine"
+
+  range_within_california: "Not native to California. In California, it's not commonly planted and mostly found in older parks, botanical gardens, and established neighborhoods. More likely to be found in Northern California where there's more rain, but can grow in other parts of the state with proper care. Prefers spots with good soil and regular water."
+
+  physical_characteristics:
+    height: "40-60 feet (as tall as a 4-6 story building), sometimes reaching 80 feet"
+    width: "30-50 feet (about as wide as a house)"
+    growth_rate: "Medium to fast - can grow 12-24 inches per year when young"
+    lifespan: "Can live 200+ years in good conditions, but often shorter in urban areas"
+    bark: "Gray-brown with deep grooves and flat ridges; inner bark is reddish and feels slippery when wet"
+    leaves: "Oval with pointed tip, 4-8 inches long (as long as your hand), rough on both sides, with double-toothed edges"
+    flowers: "Small, reddish-green clusters that appear before leaves in early spring"
+    fruit: "Flat, round, papery seeds (samaras) about the size of a dime with a seed in the center"
+    seeds: "Central seed surrounded by a papery wing that helps it float on the wind"
+    trunk_diameter: "Can grow 2-3 feet across (about as wide as a beach ball)"
+    root_system: "Moderately deep with wide spreading roots"
+    toxicity: "Not poisonous - inner bark is actually used as medicine"
+    suitable_for_public_spaces: "Yes, but with care to place it where it has enough room and water"
+
+  conservation_status:
+    status: "Not endangered but populations have declined"
+    threats: "Dutch elm disease has killed many trees, though it's somewhat more resistant than American Elm"
+    protection_efforts: "Some communities protect mature specimens; research continues on disease-resistant varieties"
+
+  decision_tree_placement:
+    primary_split_features:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+      - feature_id: "TREE-SHAPE-03"  # Vase-shaped
+      - feature_id: "LEAF-TEXTURE-02"  # Rough or hairy
+    
+    confirmation_features:
+      - feature_id: "LEAF-MARGIN-03"  # Doubly serrate
+      - feature_id: "LEAF-SHAPE-01"  # Elliptical
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SHAPE-03", "LEAF-TYPE-01"]  # Vase-shaped form, deciduous
+      
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SIZE-03", "LEAF-MARGIN-03"]  # Large leaves, doubly serrated margins
+      
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-TEXTURE-02", "LEAF-BASE-02"]  # Rough texture, asymmetrical base
+    
+    seasonal_identification:
+      spring:
+        reliability: "Medium-high"
+        key_features: ["TREE-SHAPE-03", "FLOWER-COLOR-03", "FRUIT-TYPE-04"]
+        notes: "Early flowers and developing samaras are distinctive"
+      
+      summer:
+        reliability: "Very high"
+        key_features: ["LEAF-TEXTURE-02", "LEAF-SIZE-03", "LEAF-MARGIN-03"]
+        notes: "Full-sized rough leaves with double-toothed margins are very distinctive"
+      
+      fall:
+        reliability: "Medium"
+        key_features: ["LEAF-FALL-01", "LEAF-TEXTURE-02", "TREE-SHAPE-03"]
+        notes: "Dull yellow fall color not as helpful as leaf texture for identification"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["TREE-SHAPE-03", "BARK-TEXTURE-05"]
+        notes: "Vase shape and furrowed bark help with winter identification"
+    
+    misidentification_risks:
+      - "Most easily confused with American Elm, which has leaves smooth underneath"
+      - "Other elm species may look similar from a distance"
+
+  wildlife_value: "Even though it's not from California originally, Slippery Elm can help wildlife if planted in gardens and parks. Birds and small animals like squirrels eat the seeds. Many kinds of butterfly and moth caterpillars eat the leaves, including the pretty Question Mark and Mourning Cloak butterflies. Birds build nests in the branches, and older trees with holes in them provide homes for animals that need tree cavities. Deer sometimes eat the leaves and twigs, especially in winter when food is scarce. The rough bark is home to insects that birds can eat. While not as helpful to California wildlife as trees that naturally grow here, it still provides food and shelter for many animals in city and suburban areas."

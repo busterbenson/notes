@@ -1,0 +1,314 @@
+tree:
+  common_name: "Fullmoon Maple"
+  scientific_name: "Acer japonicum"
+  family: "Sapindaceae"
+  
+  # Basic summary information
+  summary: "A small to medium-sized deciduous maple native to Japan with distinctive rounded, deeply-lobed leaves that resemble a full moon in outline. Known for spectacular fall colors ranging from golden yellow to crimson, delicate spring flowers, and an elegant, layered growth habit. Prized in Japanese gardens for centuries and now valued in ornamental landscapes worldwide."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Rounded leaves with 9-11 deep lobes radiating from a central point; leaves grow opposite each other on branches; brilliant fall colors ranging from yellow to red and purple"
+    secondary_markers: "Small tree with elegant, spreading form; smooth gray bark; paired winged seeds (helicopter seeds); red flowers in spring"
+    seasonal_markers: "Reddish flowers in spring; deep green summer foliage; spectacular fall colors; attractive branching pattern visible in winter"
+    similar_species_differentiation: "Unlike Japanese maple (Acer palmatum), has more rounded leaves with less pointed lobes; unlike most larger maples, has more deeply divided leaves with a circular outline"
+  
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves in fall"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Leaves are single, not divided into smaller leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves grow directly across from each other on stems"
+      
+      - feature_id: "LEAF-SHAPE-05"  # Lobed
+        notes: "Leaves have 9-11 lobes that radiate from a central point, forming a circular outline"
+      
+      - feature_id: "FRUIT-TYPE-08"  # Paired samaras
+        notes: "Produces winged seeds in pairs that spread at wide angles"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Bark remains relatively smooth even on older trees"
+      
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        notes: "Bark is grayish, sometimes with slight green tint on younger branches"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        notes: "Native to Japan; not native to California"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk"
+        exceptions: "May develop multiple trunks, especially if damaged when young"
+      
+      - feature_id: "TREE-SIZE-01"  # Short tree
+        notes: "Usually stays under 20 feet tall"
+        exceptions: "Can occasionally reach 25-30 feet in ideal conditions"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Often has a rounded, spreading form"
+        exceptions: "Shape can vary somewhat depending on growing conditions"
+      
+      - feature_id: "LEAF-FALL-03"  # Orange fall color
+        notes: "Most commonly turns orange to red in fall"
+        exceptions: "Fall color may be yellow or purple in some specimens or conditions"
+    
+    sometimes_true:
+      - feature_id: "LEAF-COLOR-01"  # Dark green
+        conditions: "During summer growing season"
+        notes: "Mature leaves are typically medium to dark green"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Some trees or in certain years"
+        notes: "Fall color may begin as yellow before turning orange or red"
+      
+      - feature_id: "LEAF-FALL-02"  # Red fall color
+        conditions: "Many trees, especially in cooler conditions"
+        notes: "Vibrant red fall color is common in good growing conditions"
+      
+      - feature_id: "LEAF-FALL-04"  # Purple fall color
+        conditions: "Some trees or in certain years"
+        notes: "Leaves may develop purple tones, especially late in the fall season"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "When planted in suitable locations with some protection"
+        notes: "Can thrive in urban settings if given proper conditions"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "In gardens and landscapes with suitable conditions"
+        notes: "Does best in Northern California's cooler, moister climate"
+      
+      - feature_id: "GEO-REGION-02"  # Central California
+        conditions: "In gardens with afternoon shade and adequate moisture"
+        notes: "Can grow in Central California with proper care and siting"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops all its leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has compound leaves"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves are always opposite, never alternate"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Never has thorns or spines"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Not originally from California; native to Japan"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Round leaves that look like little full moons with deep cuts, like moon craters"
+    memorable_comparison: "The leaves look like paper cutout decorations with deep cuts around the edges"
+    touch_tip: "Feel the leaf - it's soft and slightly fuzzy, especially on the underside"
+    smell_tip: "Crush a leaf gently - it has a mild, pleasant green scent"
+    fun_fact: "This tree is called a Fullmoon Maple because when you hold up a leaf, it looks like a full moon with deep cuts (like moon craters) radiating from the center. In fall, these moon-shaped leaves turn brilliant colors like red, orange, and purple!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, check if it's a small tree with branches that spread out in layers"
+        yes_next: 2
+        no_next: "Might not be a Fullmoon Maple - they're usually small trees"
+      - step: 2
+        instruction: "Look at the leaves. Are they round like a circle with deep cuts that go almost to the center?"
+        yes_next: 3
+        no_next: "Not a Fullmoon Maple - check trees with star-shaped leaves"
+      - step: 3
+        instruction: "Check how the leaves grow on the branch. Do they grow directly opposite each other, not in a zigzag pattern?"
+        yes_next: 4
+        no_next: "Not a Fullmoon Maple - they have opposite leaves"
+      - step: 4
+        instruction: "Count the lobes (points) on the leaf. Does it have 9-11 lobes arranged in a circle?"
+        yes_next: "You found a Fullmoon Maple!"
+        no_next: "Might be a different type of maple - Fullmoon Maples have more lobes than most other maples"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Reddish flowers appear before or with emerging leaves; new leaves unfold with a reddish tint before turning green"
+      reproductive_activity: "Small, purplish-red flowers appear in hanging clusters"
+      identification_tips: "Look for delicate flowers and fresh leaf growth with slight red coloration"
+      kid_friendly_tip: "In spring, look for tiny reddish flowers hanging down and fresh green leaves that might have red edges"
+    
+    - season: "Summer" 
+      visual_changes: "Leaves mature to medium or dark green; developing paired samaras (winged seeds)"
+      reproductive_activity: "Winged seed pairs develop and mature"
+      identification_tips: "Full summer foliage with paired seeds developing"
+      kid_friendly_tip: "By summer, the leaves are fully grown and deep green, creating nice shade"
+    
+    - season: "Fall"
+      visual_changes: "Spectacular color change to yellow, orange, red, or purple; winged seeds mature"
+      reproductive_activity: "Seeds fully mature and may begin to drop"
+      identification_tips: "Fall color is a key identifier"
+      kid_friendly_tip: "Fall is the best time to see Fullmoon Maples - their leaves turn amazing colors like yellow, orange, and red, sometimes all on the same tree!"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches reveal elegant branching pattern"
+      reproductive_activity: "Dormant; may retain some dried seeds"
+      identification_tips: "Look for opposite buds and smooth gray bark"
+      kid_friendly_tip: "In winter, you can see the beautiful pattern of branches and smooth gray bark"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Round leaves with 9-11 deep lobes"
+      reliability: "Very high"
+      visibility: "Easy to see from nearby"
+    - feature: "Opposite leaf arrangement"
+      reliability: "Very high"
+      visibility: "Need to look at branches closely"
+    - feature: "Small size with elegant spreading form"
+      reliability: "High"
+      visibility: "Visible from a distance"
+    - feature: "Spectacular fall colors (yellow, orange, red, or purple)"
+      reliability: "High"
+      visibility: "Easy to see from far away in fall"
+    
+  look_alike_species:
+    - species: "Japanese Maple (Acer palmatum)"
+      differences: "Japanese maple has more star-shaped leaves with pointed lobes; Fullmoon Maple has more rounded lobes and a more circular overall leaf shape"
+      identification_tip: "Count the lobes - Fullmoon Maple typically has 9-11 lobes while Japanese Maple usually has 5-7"
+    - species: "Korean Maple (Acer pseudosieboldianum)"
+      differences: "Very similar but Korean Maple has slightly more pointed leaf lobes; difficult to distinguish without close inspection"
+      identification_tip: "Korean Maple leaves tend to be slightly less circular in overall outline"
+    - species: "Vine Maple (Acer circinatum)"
+      differences: "Native to Pacific Northwest; similar rounded leaves but usually has 7-9 lobes; often grows as a multi-stemmed shrub"
+      identification_tip: "Vine Maple often has more irregular growth habit and is native to North America, while Fullmoon Maple is from Japan"
+    
+  cultural_ecological_notes:
+    - "Provides dappled shade for shade-loving plants beneath"
+    - "Seeds provide some food for birds and small mammals"
+    - "Low water needs once established, though not truly drought-tolerant"
+    - "Valued in Japanese gardens for centuries"
+    - "Often used as a focal point in garden design"
+    - "Less common in cultivation than Japanese Maple (Acer palmatum)"
+    
+  range_within_california:
+    - "Not native to California but cultivated in gardens with suitable conditions"
+    - "Most successful in Northern California's coastal and foothill regions"
+    - "Can be grown in Central California with afternoon shade"
+    - "Difficult to grow in hot, dry areas of Southern California"
+    - "Found primarily in Japanese gardens, arboretums, and specialty landscapes"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "8-20 feet (about as tall as a one to two-story house)"
+    growth_rate: "Slow, about 6-12 inches per year"
+    crown_spread: "15-25 feet wide when mature"
+    lifespan: "Can live 60-100 years with proper care"
+    trunk_diameter: "Usually less than 1 foot across even when mature"
+    root_system: "Relatively shallow, fibrous roots; not usually invasive"
+    toxicity: "Not toxic to humans or pets"
+  
+  # Cultural significance section
+  cultural_significance:
+    # Organized by culture
+    - culture: "Japanese"
+      physical_uses:
+        - "Valued specimen tree in traditional Japanese gardens"
+        - "Sometimes used for bonsai cultivation"
+        - "Planted at temples and in contemplative gardens"
+        - "Used to mark seasonal transitions, especially autumn"
+      symbolic_meaning:
+        - "Symbol of the changing seasons, especially autumn's beauty"
+        - "Represents the Japanese concept of 'mono no aware' - the pathos of impermanence"
+        - "The circular leaf shape represents wholeness and completion"
+        - "Fall colors symbolize the beauty found in life's transitions"
+    
+    - culture: "Western Garden Tradition"
+      physical_uses:
+        - "Planted as a specimen tree in Japanese-inspired gardens"
+        - "Used in woodland gardens and naturalistic landscapes"
+        - "Valued by collectors of unusual maple varieties"
+        - "Often included in garden designs emphasizing seasonal interest"
+      symbolic_meaning:
+        - "Represents sophistication in garden design"
+        - "Symbol of appreciation for subtle natural beauty"
+        - "Often associated with Japanese aesthetic principles"
+        - "Embodies the beauty of autumn and seasonal transitions"
+    
+    - culture: "Contemporary California"
+      physical_uses:
+        - "Used as a focal point in shade gardens"
+        - "Planted in Japanese-inspired garden designs"
+        - "Included in collections of ornamental maples"
+        - "Valued for adding fall color to the landscape"
+      symbolic_meaning:
+        - "Represents cross-cultural plant appreciation"
+        - "Symbol of garden design that transcends native-only plantings"
+        - "Reflects California's history of bringing together plants from worldwide sources"
+  
+  # Conservation status section
+  conservation_status:
+    status: "Not threatened in cultivation; Least Concern in native habitat"
+    threats: "Sensitive to drought and heat stress; may suffer from leaf scorch in exposed locations; potential vulnerability to certain maple diseases and pests"
+    protection_efforts: "Preserved in botanical collections and arboretums; various cultivars maintain genetic diversity"
+  
+  # Kid-friendly cultural significance
+  kid_friendly_cultural_significance:
+    - "In Japan, families often visit parks and gardens in fall just to see maple trees like this one change colors"
+    - "The rounded, deeply cut leaves look like beautiful paper cutouts and have inspired art and crafts for centuries"
+    - "Japanese children learn to recognize the changing seasons by watching trees like this one transform throughout the year"
+    - "In Japan, special maple-viewing parties called 'momijigari' are held when the leaves turn bright colors in autumn"
+    - "The tree is often planted near temples and in special gardens designed for quiet contemplation and appreciation of nature"
+  
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-SHAPE-05"  # Lobed
+      - "feature_id: LEAF-ARRANGE-02"  # Opposite
+      - "feature_id: TREE-SIZE-01"  # Short tree
+    
+    confirmation_features:
+      - "feature_id: LEAF-FALL-03"  # Orange fall color
+      - "feature_id: FRUIT-TYPE-08"  # Paired samaras
+      - "feature_id: BARK-TEXT-01"  # Smooth bark
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-01", "TREE-FORM-02"]  # Small tree, rounded form
+      
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SHAPE-05", "LEAF-ARRANGE-02", "BARK-TEXT-01"]  # Rounded lobed leaves, opposite arrangement, smooth bark
+      
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-02", "FRUIT-TYPE-08"]  # Serrated leaf edges, paired winged seeds
+    
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["FLOWER-TIME-01", "LEAF-ARRANGE-02"]
+        notes: "Reddish flowers and emerging leaves are distinctive"
+      
+      summer:
+        reliability: "Medium" 
+        key_features: ["LEAF-SHAPE-05", "LEAF-ARRANGE-02", "TREE-SIZE-01"]
+        notes: "Full foliage shows characteristic leaf shape and arrangement"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["LEAF-FALL-03", "LEAF-FALL-02", "LEAF-SHAPE-05"]
+        notes: "Fall color combined with distinctive leaf shape makes identification easy"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["BARK-TEXT-01", "TREE-SIZE-01", "TREE-FORM-02"]
+        notes: "Branching pattern, smooth bark, and small size help with winter identification"
+    
+    misidentification_risks:
+      - "Most often confused with Japanese Maple (Acer palmatum)"
+      - "Can be mistaken for Korean Maple (Acer pseudosieboldianum)"
+      - "Sometimes confused with Vine Maple (Acer circinatum)"
+  
+  # Wildlife value section
+  wildlife_value:
+    - "Seeds eaten by some birds and small mammals"
+    - "Dense foliage provides seasonal shelter for birds"
+    - "May support some native insect species even as a non-native plant"
+    - "Creates microhabitat for shade-loving plants beneath canopy"
+    - "Not a primary wildlife tree but offers some habitat value"
+    - "Fallen leaves contribute to soil organic matter"

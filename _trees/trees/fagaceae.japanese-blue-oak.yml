@@ -1,0 +1,232 @@
+tree:
+  common_name: "Japanese Blue Oak"
+  scientific_name: "Quercus glauca"
+  family: "Fagaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "An evergreen oak with distinctive bluish-green, leathery leaves that are serrated edges. The bark is dark gray and smooth when young, becoming furrowed with age, and the tree forms a dense, rounded crown with horizontal branching."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Glossy, blue-green leaves with serrated edges; evergreen habit"
+    secondary_markers: "Dark gray bark; acorns with cup covering 1/3 of nut; new growth often with reddish tint"
+    seasonal_markers: "New foliage appears in spring with reddish or bronze coloration; acorns mature in autumn of the second year"
+    similar_species_differentiation: "Unlike Coast Live Oak, has less spiny leaf margins and more bluish color; unlike Cork Oak, has thinner bark and more serrated leaf edges"
+  
+  # Core features section
+  features:
+    always_true:
+      # Reference features.yml IDs with tree-specific notes
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Retains leaves year-round, shedding older leaves gradually"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Each leaf is a single piece, not divided into smaller leaflets"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated
+        notes: "Leaf edges have sharp, fine teeth, especially on the upper half"
+      
+    usually_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        exceptions: "May occasionally develop multiple trunks when damaged or grown in poor conditions"
+        notes: "Typically grows with one main upright trunk"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        exceptions: "Young trees have a more oval shape; can be pruned into different forms"
+        notes: "Mature trees develop a dense, rounded canopy with horizontal branching"
+      
+      - feature_id: "LEAF-COLOR-03"  # Blue-green
+        exceptions: "New leaves often have reddish or bronze tint; color intensity varies with growing conditions"
+        notes: "Mature leaves have a distinctive blue-green color on the upper surface"
+      
+    sometimes_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees"
+        notes: "Bark is relatively smooth when the tree is young"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Mature trees"
+        notes: "Bark develops shallow furrows and becomes rougher with age"
+      
+      - feature_id: "HABITAT-WATER-03"  # Dry slope habitat
+        conditions: "Adaptable but prefers well-drained soil in California landscapes"
+        notes: "Can grow in various conditions but does best in protected locations"
+    
+    never_true:
+      # Features explicitly absent that help differentiation
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all leaves seasonally; retains foliage year-round"
+      
+      - feature_id: "LEAF-SHAPE-05"  # Lobed
+        notes: "Leaves never have lobes; margins are serrated but not lobed"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Shiny blue-green leaves with tiny teeth along the edges"
+    memorable_comparison: "The leaves look like small, blue-green canoes with tiny teeth along the sides"
+    touch_tip: "The leaves feel thick and leathery, like stiff paper, and are smooth on the top surface"
+    smell_tip: "The leaves don't have a strong smell unless crushed"
+    fun_fact: "Japanese Blue Oaks can live for over 200 years and were traditionally used in Japan to grow shiitake mushrooms on their wood!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the leaf color. Are they a shiny blue-green color?"
+        yes_next: 2
+        no_next: "Not a Japanese Blue Oak - check other oak species"
+      - step: 2
+        instruction: "Look at the leaf edges. Do they have tiny teeth (especially on the upper half) instead of lobes?"
+        yes_next: 3
+        no_next: "If the leaves have lobes, it might be a different oak species"
+      - step: 3
+        instruction: "Check if the tree keeps its leaves all year. Does it stay green in winter?"
+        yes_next: "You found a Japanese Blue Oak!"
+        no_next: "If it drops all its leaves in winter, it's not a Japanese Blue Oak"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New growth emerges, often with reddish or bronze coloration; older leaves remain on tree"
+      reproductive_activity: "Small yellowish catkins (male flowers) appear; female flowers are tiny and inconspicuous"
+      identification_tips: "Look for the contrast between new reddish growth and older blue-green leaves"
+      kid_friendly_tip: "In spring, look for the baby leaves that start out reddish before turning blue-green"
+    
+    - season: "Summer" 
+      visual_changes: "New leaves mature to blue-green color; dense canopy provides good shade"
+      reproductive_activity: "Fertilized female flowers develop into small acorns that continue growing"
+      identification_tips: "Fully developed blue-green foliage is most distinctive at this time"
+      kid_friendly_tip: "During summer, the tree has a full head of blue-green leaves that provide nice cool shade"
+    
+    - season: "Fall"
+      visual_changes: "Little change in leaf color; remains evergreen"
+      reproductive_activity: "Acorns from previous year's flowers mature and drop"
+      identification_tips: "Look for mature acorns with cups covering about 1/3 of the nut"
+      kid_friendly_tip: "Fall is acorn time! Look for acorns with shallow cups like tiny hats"
+    
+    - season: "Winter"
+      visual_changes: "Retains leaves; may drop some older foliage"
+      reproductive_activity: "Dormant, though retains developing acorns from previous spring's flowers"
+      identification_tips: "Evergreen habit distinguishes it from deciduous oaks"
+      kid_friendly_tip: "While other oaks take a winter nap and drop their leaves, this tree stays green all winter"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Evergreen habit with blue-green leaves"
+      reliability: "Very high"
+      visibility: "Easily visible from distance year-round"
+    - feature: "Serrated leaf margins, especially on upper half"
+      reliability: "High"
+      visibility: "Visible with close examination of leaves"
+    - feature: "Smooth upper leaf surface with glossy appearance"
+      reliability: "High"
+      visibility: "Visible with close examination of leaves"
+    
+  look_alike_species:
+    - species: "Coast Live Oak (Quercus agrifolia)"
+      differences: "Coast Live Oak has more deeply toothed or spiny leaf margins and lacks the blue-green coloration"
+      identification_tip: "If the leaves are very spiny and dark green (not blue-green), it's more likely a Coast Live Oak"
+    
+    - species: "Cork Oak (Quercus suber)"
+      differences: "Cork Oak has thicker, corky bark and less serrated leaf margins"
+      identification_tip: "Check the bark - Cork Oak has distinctively thick, spongy bark unlike Japanese Blue Oak"
+    
+  cultural_ecological_notes:
+    - "Native to East Asia, including Japan, China, Korea, and Taiwan"
+    - "Traditionally used in Japan for growing shiitake mushrooms on fallen logs"
+    - "Wood is valued for furniture, tools, and construction in its native range"
+    - "Acorns were traditionally used as food by indigenous peoples in its native range after processing"
+    - "Provides shelter and food for birds and small mammals in landscape settings"
+    
+  range_within_california:
+    - "Not native to California but cultivated as an ornamental and shade tree"
+    - "Grows best in coastal and foothill regions with mild climates"
+    - "Tolerates urban conditions and can be found in parks, gardens, and as a street tree"
+    - "Most common in central and southern California landscapes"
+    
+  # Physical characteristics section
+  physical_characteristics:
+    height_range: "30-50 feet when mature"
+    growth_rate: "Moderate, about 12-24 inches per year in good conditions"
+    crown_spread: "30-40 feet at maturity"
+    lifespan: "200-300 years"
+    trunk_diameter: "1-2 feet at maturity"
+    root_system: "Moderately deep with wide-spreading lateral roots"
+    toxicity: "Acorns contain tannins that need to be leached before eating; not highly toxic"
+  
+  # Cultural significance section
+  cultural_significance:
+    - culture: "Japanese"
+      physical_uses:
+        - "Traditionally used for growing shiitake mushrooms on fallen logs"
+        - "Wood used for furniture, agricultural tools, and boat building"
+      symbolic_meaning:
+        - "Symbolized strength and longevity in traditional Japanese culture"
+    
+    - culture: "Chinese"
+      physical_uses:
+        - "Wood used for construction and furniture"
+        - "Acorns processed as food in some regions after removing tannins"
+      symbolic_meaning:
+        - "Associated with endurance and stability in landscape design"
+    
+    - culture: "Korean"
+      physical_uses:
+        - "Wood used for tools and household items"
+        - "Bark sometimes used in traditional medicine"
+      symbolic_meaning:
+        - "Represented persistence and reliability in traditional stories"
+  
+  # Conservation status section
+  conservation_status:
+    status: "Not threatened in its native range; cultivated specimen in California"
+    threats: "No significant threats in California; may face pressure from development and climate change in native range"
+    protection_efforts: "Commonly cultivated as an ornamental, helping to preserve the species outside its native range"
+  
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: LEAF-EDGE-02"  # Serrated
+      - "feature_id: LEAF-COMPLEX-01"  # Simple broadleaf
+    
+    confirmation_features:
+      - "feature_id: FRUIT-TYPE-01"  # Acorns present
+      - "feature_id: TREE-SIZE-02"  # Medium tree
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-02", "LEAF-TYPE-02"]  # Rounded crown, evergreen
+      
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-EDGE-02", "LEAF-COMPLEX-01"]  # Serrated, simple leaves
+      
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-01", "LEAF-COLOR-03"]  # Acorns, blue-green leaves
+    
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-COLOR-03", "LEAF-EDGE-02"]
+        notes: "New reddish growth contrasts with mature blue-green leaves"
+      
+      summer:
+        reliability: "Very high"
+        key_features: ["LEAF-COLOR-03", "LEAF-EDGE-02"]
+        notes: "Full blue-green canopy is easily visible"
+      
+      fall:
+        reliability: "High" 
+        key_features: ["FRUIT-TYPE-01", "LEAF-TYPE-02"]
+        notes: "Acorns present; maintains evergreen foliage"
+      
+      winter:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "TREE-FORM-02"]
+        notes: "Evergreen habit distinguishes from deciduous oaks"
+    
+    misidentification_risks:
+      - "Could be confused with other evergreen oaks, especially when young"
+      - "Leaf coloration can vary with growing conditions, making identification more challenging"
+      - "Cultivated specimens may have different growth forms depending on pruning and care"

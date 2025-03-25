@@ -1,0 +1,253 @@
+tree:
+  common_name: "Siberian Elm"
+  scientific_name: "Ulmus pumila"
+  family: "Ulmaceae"
+  native: false
+
+  summary: "Siberian Elm is a medium to large deciduous tree with a rounded, somewhat irregular crown. Known for its exceptional tolerance to drought, poor soils, and urban pollution, it was widely planted throughout the United States, including California, for shade and windbreaks. Distinguished by its small, single-toothed leaves and prolific seed production, this fast-growing tree has become invasive in many regions. While valued historically for its hardiness in harsh conditions, it's now often discouraged in new plantings due to its aggressive spread, brittle wood, and pest susceptibility."
+
+  identification_path:
+    primary_markers: "Small (1-3 inch) elliptical leaves with single-toothed edges; slightly asymmetrical leaf bases"
+    secondary_markers: "Abundant round, flat winged seeds in spring; gray-brown bark with shallow furrows"
+    seasonal_markers: "One of the earliest trees to flower and produce seeds in spring; yellow fall color"
+    similar_species_differentiation: "Unlike American Elm, has a rounded (not vase-shaped) crown and single-toothed (not double-toothed) leaf edges; unlike Chinese Elm, produces seeds in spring not fall"
+
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"
+        notes: "Loses all its leaves each fall"
+      - feature_id: "LEAF-ARRANGEMENT-02"
+        notes: "Leaves grow alternately along branches, not in pairs"
+      - feature_id: "LEAF-SHAPE-01"
+        notes: "Leaves are oval to elliptical in shape"
+      - feature_id: "FRUIT-TYPE-08"
+        notes: "Produces flat, circular seeds with a papery wing around them"
+      - feature_id: "TREE-SHAPE-02"
+        notes: "Grows with a rounded to somewhat irregular crown"
+    
+    usually_true:
+      - feature_id: "TREE-SIZE-03"
+        notes: "Grows into a large tree 50-70 feet tall in good conditions"
+        exceptions: "May remain smaller in very poor growing conditions or when young"
+      - feature_id: "LEAF-MARGIN-02"
+        notes: "Leaf edges have small, single teeth all around"
+        exceptions: "Some leaves may have less pronounced teeth"
+      - feature_id: "LEAF-FALL-01"
+        notes: "Leaves typically turn yellow in the fall"
+        exceptions: "May turn brown without much color in drought conditions"
+      - feature_id: "HABITAT-05"
+        notes: "Commonly found in planted landscapes, parks, and urban areas"
+        exceptions: "May spread into disturbed natural areas where it becomes invasive"
+    
+    sometimes_true:
+      - feature_id: "TREE-SIZE-02"
+        conditions: "When young, stressed, or in poor growing conditions"
+        notes: "May stay medium-sized (30-50 feet) rather than reaching full height"
+      - feature_id: "BARK-TEXTURE-05"
+        conditions: "On older trees, especially near the base"
+        notes: "Bark may develop deeper furrows with age"
+      - feature_id: "HABITAT-03"
+        conditions: "Especially tolerant of urban conditions"
+        notes: "Often found along city streets and in industrial areas"
+      - feature_id: "HABITAT-01"
+        conditions: "When it escapes cultivation"
+        notes: "Can invade disturbed areas, old fields, and roadsides"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"
+        notes: "Never keeps its leaves through winter - always drops them in fall"
+      - feature_id: "LEAF-MARGIN-03"
+        notes: "Never has double-toothed leaf edges like most other elm species"
+      - feature_id: "TREE-SHAPE-03"
+        notes: "Never grows with the distinctive vase shape of American Elm"
+      - feature_id: "HABITAT-02"
+        notes: "Does not grow naturally in undisturbed California forests"
+
+  kid_friendly_identification:
+    primary_identifier: "Small leaves with tiny single teeth along the edges"
+    memorable_comparison: "The seeds look like little green frisbees with a bump in the middle"
+    touch_tip: "The leaves feel a bit rough like fine sandpaper, but not as scratchy as other elm trees"
+    smell_tip: "The leaves don't have a strong smell, but they might have a slight fresh, green scent if crushed"
+    fun_fact: "This tree grows super fast - sometimes more than 3 feet in a single year! That's about as tall as you might grow in 3 whole years!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, check the leaves. Are they small (about as long as your thumb) with tiny teeth all around the edges?"
+        yes_next: 2
+        no_next: "Probably not a Siberian Elm. If the leaves are larger or have double teeth, check other elm species."
+      - step: 2
+        instruction: "Look at how the leaves grow on the branch. Do they alternate sides along the branch (not grow in pairs)?"
+        yes_next: 3
+        no_next: "Not a Siberian Elm. If leaves grow in pairs opposite each other, it's a different tree family."
+      - step: 3
+        instruction: "If it's spring, do you see lots of flat, round, papery seeds that look like little green frisbees?"
+        yes_next: 4
+        no_next: "It might still be Siberian Elm, but in a different season. Check the other features."
+      - step: 4
+        instruction: "Look at the overall tree shape. Does it have a rounded crown rather than a vase shape with drooping branches?"
+        yes_next: "You found a Siberian Elm!"
+        no_next: "If the tree has a vase shape with arching branches, it might be American Elm instead."
+
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "One of the earliest trees to leaf out; produces light green leaves shortly after flowering"
+      reproductive_activity: "Small reddish-green flowers appear before leaves; abundant circular winged seeds mature and disperse widely"
+      identification_tips: "The profuse seed production in spring is a key identification feature"
+      kid_friendly_tip: "In spring, look for tons of little round, flat seeds that spin like helicopters when they fall"
+    
+    - season: "Summer"
+      visual_changes: "Full crown of dark green, small leaves creates moderate shade"
+      reproductive_activity: "No flowering or fruiting activity after spring seed dispersal"
+      identification_tips: "The small size of the leaves (1-3 inches) compared to other elms is distinctive"
+      kid_friendly_tip: "In summer, notice how the leaves are smaller than other elm trees - about the size of your thumb"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow, sometimes with brownish tones, and fall earlier than many other trees"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Earlier leaf drop and less vibrant fall color than many other deciduous trees"
+      kid_friendly_tip: "In fall, the leaves turn yellow but not bright colors like red or orange before dropping"
+    
+    - season: "Winter"
+      visual_changes: "Reveals irregular branching pattern and somewhat rounded crown"
+      reproductive_activity: "Flower buds become visible late in winter, getting ready for early spring bloom"
+      identification_tips: "Zigzag pattern of twigs and rounded (not vase-shaped) crown help winter identification"
+      kid_friendly_tip: "In winter, look for the zigzag pattern of the small branches and the rounded shape of the whole tree"
+
+  confirmation_checklist:
+    - feature: "Small leaves (1-3 inches) with single-toothed edges"
+      reliability: "Very high"
+      visibility: "Medium - need to look closely at leaf characteristics"
+    - feature: "Slightly asymmetrical leaf bases"
+      reliability: "Medium"
+      visibility: "Low - requires close examination"
+    - feature: "Circular winged seeds that mature in spring"
+      reliability: "Very high"
+      visibility: "High - very noticeable when present in spring"
+    - feature: "Gray-brown bark with shallow, irregular furrows"
+      reliability: "Medium"
+      visibility: "Medium - more distinctive on mature trees"
+    - feature: "Rounded, somewhat irregular crown (not vase-shaped)"
+      reliability: "High"
+      visibility: "High - visible from a distance"
+    - feature: "Zigzag pattern on twigs"
+      reliability: "High"
+      visibility: "Low - requires close inspection"
+    - feature: "Rapid growth rate"
+      reliability: "High"
+      visibility: "Low - observed over time rather than immediately visible"
+
+  look_alike_species:
+    - species: "American Elm (Ulmus americana)"
+      differences: "Has a more distinctly vase-shaped crown with drooping branch tips; larger leaves with doubly serrated edges; more deeply furrowed bark with diamond patterns"
+      identification_tip: "If the tree has a vase shape with arching branches that droop at the tips, it's likely American Elm"
+    
+    - species: "Chinese Elm (Ulmus parvifolia)"
+      differences: "Has smaller, glossier leaves; distinctive mottled, exfoliating bark showing multiple colors; flowers and fruits in fall rather than spring"
+      identification_tip: "If the bark flakes off in patches showing orange, green, and gray colors, it's Chinese Elm"
+    
+    - species: "Dutch Elm (Ulmus × hollandica)"
+      differences: "Has a more pronounced vase shape; leaves with double-toothed edges; more substantial bark furrows; generally grows larger at maturity"
+      identification_tip: "If the leaf edges have two sizes of teeth (big teeth with smaller teeth on them), it's probably not Siberian Elm"
+    
+    - species: "Slippery Elm (Ulmus rubra)"
+      differences: "Has larger, roughly textured leaves; double-toothed margins; inner bark is slippery and aromatic when wet"
+      identification_tip: "If the leaves feel very rough like coarse sandpaper and are larger, it might be Slippery Elm"
+    
+    - species: "English Elm (Ulmus minor)"
+      differences: "Has larger leaves with more prominent veins; bark develops deeper furrows; more upright form; leaves have more deeply doubly-serrated edges"
+      identification_tip: "If the tree has a more columnar shape and the leaves have very obvious veins, it might be English Elm"
+
+  cultural_significance:
+    - culture: "Dust Bowl Era Farmers"
+      physical_uses:
+        - "Planted as windbreaks to protect farms and homes from dust storms"
+        - "Used to create living fences and property boundaries"
+        - "Grown for shade around farmhouses in areas where few trees survived"
+      symbolic_meaning:
+        - "Represented hope and perseverance during tough times"
+        - "Symbolized the human ability to adapt to harsh conditions"
+    
+    - culture: "Urban Planners of the Early-Mid 1900s"
+      physical_uses:
+        - "Planted along city streets because it could handle pollution and poor soil"
+        - "Used to create quick shade in new neighborhoods"
+        - "Chosen for parks and public spaces when fast growth was important"
+      symbolic_meaning:
+        - "Represented a practical approach to urban greening"
+        - "Symbolized resilience in tough urban conditions"
+    
+    - culture: "Traditional Chinese Medicine"
+      physical_uses:
+        - "Used bark and leaves to make medicines for various ailments"
+        - "Applied to treat skin problems and digestive issues"
+        - "Made into teas and poultices for healing"
+      symbolic_meaning:
+        - "Connected to ideas about plants that thrive in harsh conditions having strong healing properties"
+        - "Valued for its ability to grow quickly and provide medicine where needed"
+
+  physical_characteristics:
+    height: "40-60 feet (occasionally up to 70 feet)"
+    width: "35-50 feet"
+    growth_rate: "Very fast, often growing 3 feet or more per year when young"
+    lifespan: "50-70 years, shorter than many other large shade trees"
+    bark: "Gray-brown with shallow, irregular furrows in mature trees"
+    leaves: "Elliptical to ovate, 1-3 inches long, single-toothed margins, slightly asymmetrical base"
+    flowers: "Small, inconspicuous reddish-green clusters in early spring"
+    fruit: "Flat, circular samaras (winged seeds) about 1/2 inch diameter"
+    seeds: "Small, central seed within a circular papery wing"
+    root_system: "Moderately deep but extensive, sometimes invasive to plumbing systems"
+    suitable_for_public_spaces: false
+
+  conservation_status:
+    status: "Not threatened in its native range, but considered invasive in many parts of North America"
+    threats: "No significant threats to the species; quite the opposite - it threatens native ecosystems"
+    protection_efforts: "Often targeted for removal in natural areas to protect native plant communities"
+
+  decision_tree_placement:
+    primary_split_features:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+      - feature_id: "LEAF-MARGIN-02"  # Single-toothed
+      - feature_id: "LEAF-SIZE-01"  # Small leaves
+    
+    confirmation_features:
+      - feature_id: "FRUIT-TYPE-08"  # Paired samaras
+      - feature_id: "TREE-SHAPE-02"  # Rounded shape
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SHAPE-02", "TREE-SIZE-03"]  # Rounded, Large
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SIZE-01", "BARK-TEXT-05"]  # Small leaves, Furrowed bark
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-MARGIN-02", "LEAF-BASE-02"]  # Single-toothed, Asymmetrical base
+    
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["FRUIT-TYPE-08", "FLOWER-TIME-01", "LEAF-MARGIN-02"]
+        notes: "Abundant seed production in spring makes identification highly reliable"
+      summer:
+        reliability: "High"
+        key_features: ["LEAF-SIZE-01", "LEAF-MARGIN-02", "TREE-SHAPE-02"]
+        notes: "Small leaves with single teeth and the rounded crown aid summer identification"
+      fall:
+        reliability: "Medium"
+        key_features: ["LEAF-FALL-01", "TREE-SHAPE-02", "BARK-TEXT-05"]
+        notes: "Yellow fall color is less distinctive, but leaf shape and crown form help"
+      winter:
+        reliability: "Medium"
+        key_features: ["TREE-SHAPE-02", "TWIG-PATTERN-02", "BARK-TEXT-05"]
+        notes: "Zigzag twig pattern and rounded crown aid winter identification"
+    
+    misidentification_risks:
+      - "Often confused with other elm species, especially when young"
+      - "Leaf size and crown shape can vary depending on growing conditions"
+      - "Hybridizes with other elm species, creating intermediate forms that are difficult to identify"
+
+  wildlife_value: 
+    - "Seeds provide food for birds and small mammals, including finches, sparrows, and squirrels"
+    - "Creates nesting sites for birds in urban and suburban areas"
+    - "Offers perching locations for birds in developed areas with limited tree cover"
+    - "Serves as a host plant for some butterfly and moth caterpillars"
+    - "Less valuable to native wildlife than native trees since they didn't evolve together"
+    - "Can harm wildlife habitat when it invades natural areas and displaces native plants"

@@ -1,0 +1,250 @@
+tree:
+  common_name: Striped Maple
+  scientific_name: Acer pensylvanicum
+  family: Sapindaceae
+  native: false
+
+  summary: Striped Maple is a small deciduous understory tree recognized by its distinctive green bark with white vertical stripes. Native to eastern North America but not California, it features three-lobed leaves with finely serrated edges arranged in opposite pairs. The tree produces hanging clusters of yellow-green flowers in spring and paired winged seeds (samaras) typical of maples. Its attractive bark, shade tolerance, and vibrant yellow fall color make it an occasional ornamental specimen in California gardens with adequate moisture and shade.
+
+  identification_path:
+    primary_markers: "Green bark with white vertical stripes; small tree size (under 25 feet)"
+    secondary_markers: "Three-lobed leaves with finely serrated edges; opposite leaf arrangement"
+    seasonal_markers: "Hanging clusters of yellow-green flowers in spring; bright yellow fall color"
+    similar_species_differentiation: "Unlike Mountain Maple, has striped bark; unlike Japanese Maple, has exactly three lobes per leaf; unlike Red Maple, has green bark with white stripes instead of grayish bark"
+
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"
+        notes: "Loses all its leaves each fall"
+      - feature_id: "LEAF-ARRANGEMENT-01"
+        notes: "Leaves grow in pairs directly across from each other on branches"
+      - feature_id: "LEAF-SHAPE-05"
+        notes: "Leaves have three pointed lobes like a goose's foot"
+      - feature_id: "FRUIT-TYPE-08"
+        notes: "Produces pairs of winged seeds that spin like helicopters"
+      - feature_id: "BARK-COLOR-05"
+        notes: "Has distinctive green bark with white vertical stripes"
+    
+    usually_true:
+      - feature_id: "TREE-SIZE-01"
+        notes: "Typically grows as a small tree under 30 feet tall"
+        exceptions: "In ideal conditions in its native range, may occasionally grow taller"
+      - feature_id: "LEAF-FALL-01"
+        notes: "Leaves typically turn bright yellow in fall"
+        exceptions: "In some conditions or certain years, may show orange tints"
+      - feature_id: "LEAF-MARGIN-02"
+        notes: "Leaf edges have fine teeth all around the margin"
+        exceptions: "Teeth may be more or less pronounced depending on growing conditions"
+      - feature_id: "HABITAT-05"
+        notes: "In California, found only as an ornamental planting in gardens"
+        exceptions: "Rarely seen except in specialty gardens or collections"
+    
+    sometimes_true:
+      - feature_id: "TREE-TRUNK-02"
+        conditions: "Depending on growing conditions and age"
+        notes: "May develop multiple trunks or stems, especially if damaged"
+      - feature_id: "HABITAT-03"
+        conditions: "When deliberately planted in suitable urban areas"
+        notes: "Can be found in city parks or botanical gardens with proper conditions"
+      - feature_id: "LEAF-FALL-03"
+        conditions: "Depending on fall weather conditions and stress factors"
+        notes: "Leaves may develop orange tints along with yellow fall color"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"
+        notes: "Never keeps its leaves through winter - always drops them in fall"
+      - feature_id: "BARK-COLOR-02"
+        notes: "Base bark is never completely white - always green with white stripes"
+      - feature_id: "TREE-SIZE-03"
+        notes: "Never grows into a large tree over 50 feet tall"
+      - feature_id: "HABITAT-02"
+        notes: "Not found growing naturally in California forests"
+
+  kid_friendly_identification:
+    primary_identifier: "Green bark with white stripes running up and down the trunk"
+    memorable_comparison: "The trunk and branches look like they're wearing green and white striped pajamas!"
+    touch_tip: "The bark feels smooth and cool to touch, almost like plastic"
+    smell_tip: "The leaves don't have a strong smell, but if crushed they have a mild, fresh scent"
+    fun_fact: "This tree is nicknamed 'moosewood' because moose love to eat its bark and twigs in winter!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the bark. Is it green with white stripes going up and down?"
+        yes_next: 2
+        no_next: "Not a Striped Maple. No other tree has green bark with white stripes like this!"
+      - step: 2
+        instruction: "Look at how the leaves grow on the branches. Do they grow in pairs, directly across from each other?"
+        yes_next: 3
+        no_next: "Not a Striped Maple. Check trees with alternate leaf arrangements instead."
+      - step: 3
+        instruction: "Count the lobes on each leaf. Does each leaf have exactly three pointed lobes?"
+        yes_next: 4
+        no_next: "Probably not Striped Maple. If it has more lobes, check other maple species."
+      - step: 4
+        instruction: "Is it a small tree, growing in a shady spot, maybe under bigger trees?"
+        yes_next: "You found a Striped Maple! In California, these are rare finds mostly in special gardens."
+        no_next: "It could still be a Striped Maple, but these trees usually prefer shade and don't get very tall."
+
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaves emerge with a reddish tint before turning green"
+      reproductive_activity: "Delicate yellow-green flowers hang in drooping clusters 3-5 inches long"
+      identification_tips: "The vertically striped bark stands out more when surrounded by fresh spring growth"
+      kid_friendly_tip: "In spring, look for dangling clusters of yellow-green flowers that hang down like little chandeliers"
+    
+    - season: "Summer"
+      visual_changes: "Three-lobed leaves are fully developed, dark green, and arranged in opposite pairs"
+      reproductive_activity: "Paired winged seeds (samaras) develop and begin to mature"
+      identification_tips: "The green and white striped bark is distinctive even when tree is fully leafed out"
+      kid_friendly_tip: "In summer, look for the helicopter seeds growing in pairs, and the cool striped bark that glows in shady spots"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn bright yellow, sometimes with orange tints"
+      reproductive_activity: "Winged seeds may persist on the tree or begin to drop and spin away"
+      identification_tips: "Yellow leaves create a striking contrast with the green and white striped bark"
+      kid_friendly_tip: "In fall, the bright yellow leaves make the green striped trunk look even more special and colorful"
+    
+    - season: "Winter"
+      visual_changes: "After leaves drop, the green bark with white vertical stripes becomes the main feature"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "The slender branch structure with opposite buds and striped bark is unmistakable in winter"
+      kid_friendly_tip: "In winter, the striped trunk and branches really stand out when there are no leaves - like a striped candy cane in the woods!"
+
+  confirmation_checklist:
+    - feature: "Green bark with distinctive white vertical stripes"
+      reliability: "Very high"
+      visibility: "High - visible from several feet away"
+    - feature: "Three-lobed leaves with finely serrated margins"
+      reliability: "High"
+      visibility: "Medium - need to look at leaf shape and edges"
+    - feature: "Opposite leaf arrangement"
+      reliability: "Very high"
+      visibility: "Medium - need to observe branch pattern"
+    - feature: "Small tree, typically under 25 feet tall"
+      reliability: "High"
+      visibility: "High - overall size is apparent"
+    - feature: "Slender profile, often growing in shaded areas"
+      reliability: "Medium"
+      visibility: "Medium - growth habit is a supporting feature"
+    - feature: "Paired, winged seeds (samaras) typical of maples"
+      reliability: "High"
+      visibility: "Medium - seasonal and may require looking up into the tree"
+    - feature: "Yellow fall foliage"
+      reliability: "Medium"
+      visibility: "High - but seasonal"
+
+  look_alike_species:
+    - species: "Mountain Maple (Acer spicatum)"
+      differences: "Similar size and habitat but lacks the distinctive striped bark; has more upright flower clusters instead of pendulous ones"
+      identification_tip: "If the bark is not green with white stripes, but leaf shape and size are similar, it might be Mountain Maple"
+    
+    - species: "Japanese Maple (Acer palmatum)"
+      differences: "Has more deeply divided leaves with 5-7 lobes; lacks the striped bark; often has more red/purple coloration"
+      identification_tip: "If the leaves have more than three lobes and the tree lacks striped bark, it's probably a Japanese Maple"
+    
+    - species: "Vine Maple (Acer circinatum)"
+      differences: "Has more circular leaves with 7-9 shallow lobes; lacks the distinctive striped bark"
+      identification_tip: "If the leaves are almost circular with many shallow lobes, it's likely Vine Maple"
+    
+    - species: "Pacific Dogwood (Cornus nuttallii)"
+      differences: "Has opposite simple leaves but lacks lobes; has distinctive large white bracts around small flowers; lacks the striped bark"
+      identification_tip: "If it has opposite leaves without lobes and white flower-like bracts in spring, it's Pacific Dogwood"
+    
+    - species: "Young Red Maple (Acer rubrum)"
+      differences: "May have somewhat similar leaf shape but lacks the distinctive green bark with white stripes; bark is smooth and grayish"
+      identification_tip: "If the leaves look similar but the bark is grayish without green and white stripes, it's probably a young Red Maple"
+
+  cultural_significance:
+    - culture: "Indigenous Peoples of Eastern North America"
+      physical_uses:
+        - "Used the wood to make bows and arrows because it's strong but flexible"
+        - "Made various medicines from the bark and leaves to treat kidney problems and colds"
+        - "Created special tools and implements from the straight-grained wood"
+      symbolic_meaning:
+        - "Valued for its distinctive appearance in the forest understory"
+        - "Connected to knowledge of forest medicines and woodland resources"
+    
+    - culture: "Early American Settlers"
+      physical_uses:
+        - "Called it 'whistlewood' because children made whistles from the hollowed branches"
+        - "Used the fine-grained wood for small decorative items and inlay work"
+        - "Made specialized wooden tools and handles from the straight-grained wood"
+      symbolic_meaning:
+        - "Associated with woodland crafts and practical forest knowledge"
+        - "Represented resourcefulness and connection to the forest environment"
+    
+    - culture: "Modern Garden Enthusiasts"
+      physical_uses:
+        - "Planted as a special ornamental tree for its unique striped bark"
+        - "Used in shade gardens to create woodland atmosphere and year-round interest"
+        - "Featured in specialty arboretums and botanical collections"
+      symbolic_meaning:
+        - "Represents botanical diversity and appreciation of unique tree characteristics"
+        - "Symbolizes the beauty of understory trees that thrive in the shade of forests"
+
+  physical_characteristics:
+    height: "15-25 feet"
+    width: "10-20 feet"
+    growth_rate: "Slow to moderate growth"
+    lifespan: "60-80 years in good conditions"
+    bark: "Smooth green with distinctive white vertical stripes"
+    leaves: "Three-lobed, 4-6 inches long, finely serrated edges, opposite arrangement"
+    flowers: "Yellow-green in pendulous racemes, 3-5 inches long"
+    fruit: "Paired samaras (winged seeds) in hanging clusters"
+    seeds: "Flat, winged seeds that disperse by wind"
+    root_system: "Relatively shallow, wide-spreading fibrous root system"
+    suitable_for_public_spaces: true
+
+  conservation_status:
+    status: "Not listed as threatened or endangered"
+    threats: "Habitat loss in parts of its native range; climate change may affect southern populations"
+    protection_efforts: "Protected in various forest preserves and parks in its native range"
+
+  decision_tree_placement:
+    primary_split_features:
+      - feature_id: "BARK-COLOR-05"  # Green bark
+      - feature_id: "BARK-PATT-01"  # Striped pattern
+      - feature_id: "LEAF-ARRANGEMENT-01"  # Opposite
+    
+    confirmation_features:
+      - feature_id: "LEAF-SHAPE-05"  # Lobed
+      - feature_id: "TREE-SIZE-01"  # Small
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-01", "HABITAT-05"]  # Small size, Planted
+      - distance: "from_nearby"
+        features_to_check: ["BARK-COLOR-05", "BARK-PATT-01"]  # Green bark, Striped
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-ARRANGEMENT-01", "LEAF-SHAPE-05"]  # Opposite, Lobed
+    
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["BARK-COLOR-05", "BARK-PATT-01", "FLOWER-ARRANGE-02"]
+        notes: "Hanging flower clusters and emerging leaves with the distinctive bark make spring identification reliable"
+      summer:
+        reliability: "Very high"
+        key_features: ["BARK-COLOR-05", "BARK-PATT-01", "LEAF-SHAPE-05"]
+        notes: "Fully developed leaves and the distinctive bark make summer identification straightforward"
+      fall:
+        reliability: "Very high"
+        key_features: ["LEAF-FALL-01", "BARK-COLOR-05", "BARK-PATT-01"]
+        notes: "Yellow fall color contrasting with the striped bark is highly distinctive"
+      winter:
+        reliability: "Very high"
+        key_features: ["BARK-COLOR-05", "BARK-PATT-01", "LEAF-ARRANGEMENT-01"]
+        notes: "Striped bark is most visible and obvious in winter, making identification very reliable"
+    
+    misidentification_risks:
+      - "No other maple species has green bark with white stripes, making misidentification unlikely"
+      - "Distinctive bark pattern is maintained year-round, even on young branches"
+      - "In California, only found in cultivation, not in wild settings"
+
+  wildlife_value: 
+    - "Seeds provide food for birds like finches, grosbeaks, and chickadees"
+    - "In its native range, moose, deer, and rabbits browse on twigs, leaves, and bark"
+    - "Flowers provide nectar for bees, butterflies, and other pollinators"
+    - "Leaves support caterpillars of various moth species"
+    - "Provides good perching spots for small birds in garden settings"
+    - "Less valuable to California wildlife than native trees but still contributes to urban habitat diversity"

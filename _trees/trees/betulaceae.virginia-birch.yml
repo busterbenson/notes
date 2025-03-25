@@ -1,0 +1,261 @@
+tree:
+  common_name: "Virginia Birch"
+  scientific_name: "Betula lenta var. uber"
+  family: "Betulaceae"
+  
+  # Basic summary information
+  summary: "A critically endangered variety of Sweet Birch found naturally only in Smyth County, Virginia. This small deciduous tree or multi-stemmed shrub features dark, non-peeling bark with horizontal lenticels, ovate leaves with doubly-serrated margins, and a distinctive wintergreen aroma when twigs are scratched. With only a single small natural population, it's occasionally found in botanical collections and specialized gardens outside its native range, including California, where it requires cool, moist conditions to thrive."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Dark brown to almost black bark that doesn't peel; strong wintergreen scent when twigs are scratched"
+    secondary_markers: "Ovate leaves with doubly-serrated edges; horizontal lenticels on bark"
+    seasonal_markers: "Pendulous male catkins in spring; yellow fall color; visible catkin buds in winter"
+    similar_species_differentiation: "Unlike Sweet Birch, smaller with more shrub-like form; unlike River Birch, lacks peeling bark; unlike Black Cherry, has wintergreen scent and produces catkins, not cherries"
+  
+  # Core features section
+  features:
+    always_true:
+      # Reference features.yml IDs with tree-specific notes
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves in fall"
+        
+      - feature_id: "LEAF-ARRANGEMENT-02"  # Alternate
+        notes: "Leaves grow in an alternating pattern along branches"
+      
+      - feature_id: "LEAF-MARGIN-03"  # Doubly serrate
+        notes: "Leaf edges have double rows of tooth-like serrations (big teeth with smaller teeth on them)"
+      
+      - feature_id: "SENSORY-SMELL-02"  # Aromatic bark/twigs
+        notes: "Strong wintergreen aroma when bark or twigs are scratched"
+      
+      - feature_id: "FLOWER-TYPE-01"  # Catkins present
+        notes: "Produces male and female catkins in spring"
+      
+    usually_true:
+      # Features that are primarily true, but have notable exceptions
+      - feature_id: "TREE-SIZE-01"  # Small (under 30 feet)
+        notes: "Typically grows 20-40 feet tall"
+        exceptions: "May occasionally be smaller in poor conditions"
+      
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        notes: "Often grows with multiple stems in a shrub-like form"
+        exceptions: "Can occasionally have a more defined central trunk"
+      
+      - feature_id: "LEAF-SHAPE-01"  # Ovate
+        notes: "Leaves are typically oval to oblong with pointed tips"
+        exceptions: "Leaf shape can vary slightly depending on growing conditions"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        notes: "Leaves typically turn golden yellow in autumn"
+        exceptions: "Color intensity varies with growing conditions"
+      
+      - feature_id: "BARK-PATT-02"  # Lenticels present
+        notes: "Horizontal lenticels (small breathing pores) visible on bark"
+        exceptions: "May be less prominent on very young stems"
+
+    sometimes_true:
+      # Features that vary with age, season, or conditions
+      - feature_id: "TREE-SIZE-02"  # Medium (30-50 feet)
+        conditions: "In optimal growing conditions over many decades"
+        notes: "Can occasionally reach larger size in ideal habitat"
+      
+      - feature_id: "LEAF-FALL-03"  # Orange fall color
+        conditions: "In some years or growing conditions"
+        notes: "Leaves may develop orange tints in addition to yellow"
+      
+      - feature_id: "HABITAT-05"  # Planted in landscapes
+        conditions: "In botanical gardens and specialized collections"
+        notes: "Sometimes planted in arboreta and collections focused on rare species"
+    
+    never_true:
+      # Features explicitly absent that help differentiation
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Never keeps its leaves through winter"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Unlike many other birches, bark does not peel"
+      
+      - feature_id: "BARK-COLOR-02"  # White bark
+        notes: "Never has white bark like paper birch"
+      
+      - feature_id: "HABITAT-02"  # Forests (in California)
+        notes: "Not found growing wild in California forests"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Dark bark that smells like wintergreen gum when scratched"
+    memorable_comparison: "The bark looks like smooth, dark chocolate and smells like mint gum"
+    touch_tip: "Gently touch the smooth, dark bark - it doesn't peel like other birches"
+    smell_tip: "With an adult's help, gently scratch a twig and smell the mint-like scent"
+    fun_fact: "This tree is super rare in nature - there are only a few wild ones in the whole world, all growing in one small area in Virginia!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "Look at the bark. Is it dark brown to almost black and smooth (not peeling)?"
+        yes_next: 2
+        no_next: "Probably not a Virginia Birch - check other birch trees with different bark"
+      - step: 2
+        instruction: "With an adult's help, gently scratch a twig with your fingernail and smell it. Does it smell like wintergreen gum or mint?"
+        yes_next: 3
+        no_next: "Not a Virginia Birch - check black cherry or other trees with dark bark"
+      - step: 3
+        instruction: "Look at the leaf edges. Do they have double rows of tiny teeth (like a saw blade with big and small teeth)?"
+        yes_next: "You found a Virginia Birch! This is a very rare tree!"
+        no_next: "Might be another tree with dark bark - check the leaf shape and edges again"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Pendulous male catkins 2-3 inches long appear in groups; smaller upright female catkins develop; new leaves emerge light green"
+      reproductive_activity: "Male catkins release pollen; female catkins are pollinated by wind"
+      identification_tips: "Look for dangling male catkins and emerging leaves; wintergreen scent is strong in new growth"
+      kid_friendly_tip: "In spring, look for hanging 'caterpillar-like' catkins before or with the new leaves coming out"
+    
+    - season: "Summer" 
+      visual_changes: "Leaves reach full deep green color; female catkins develop into small cone-like structures"
+      reproductive_activity: "Female catkins mature into small erect seed-bearing structures"
+      identification_tips: "Look for deep green, doubly-serrated leaves and dark, non-peeling bark"
+      kid_friendly_tip: "By summer, the leaves are fully grown and dark green, and you can still smell the minty scent if you scratch a twig"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn golden yellow, occasionally with orange tints; cone-like structures release winged seeds"
+      reproductive_activity: "Seeds disperse by wind from mature cone-like fruit structures"
+      identification_tips: "Yellow fall color and dark, non-peeling bark remain distinctive features"
+      kid_friendly_tip: "In fall, the leaves turn golden yellow and small winged seeds fly away from the little cone-like fruits"
+    
+    - season: "Winter"
+      visual_changes: "Leafless state reveals smooth dark bark with lenticels; male catkins for next spring visible on branch tips"
+      reproductive_activity: "Dormant; male catkins formed for following spring"
+      identification_tips: "The dark, smooth, non-peeling bark and winter catkin buds are key identification features"
+      kid_friendly_tip: "In winter, look for the smooth, dark bark without any peeling, and tiny catkins waiting for spring"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Dark, non-peeling bark with horizontal lenticels"
+      reliability: "Very high"
+      visibility: "Easy - visible from nearby"
+    - feature: "Strong wintergreen scent when twigs or bark are scratched"
+      reliability: "Very high"
+      visibility: "Requires interaction - need to scratch and smell"
+    - feature: "Ovate to oblong leaves with doubly-serrated edges"
+      reliability: "High"
+      visibility: "Medium - need to examine leaves up close"
+    - feature: "Alternate leaf arrangement"
+      reliability: "High"
+      visibility: "Medium - need to be near the tree"
+    - feature: "Small to medium size, often multi-stemmed"
+      reliability: "Medium"
+      visibility: "Easy - visible from a distance"
+    
+  look_alike_species:
+    - species: "Sweet Birch (Betula lenta)"
+      differences: "The parent species, very similar but typically larger with a more tree-like form; otherwise nearly identical with the same wintergreen scent"
+      identification_tip: "Virginia Birch is typically smaller with a more shrubby growth habit than Sweet Birch"
+    - species: "Black Cherry (Prunus serotina)"
+      differences: "Has similar dark bark with horizontal lenticels, but lacks the wintergreen scent; produces true cherries, not catkins"
+      identification_tip: "Scratch a twig - Black Cherry has an almond-like scent rather than wintergreen"
+    - species: "River Birch (Betula nigra)"
+      differences: "Has distinctive peeling, reddish-brown bark unlike Virginia Birch's non-peeling bark; lacks the wintergreen scent"
+      identification_tip: "River Birch bark peels in curly paper-like sheets with a cinnamon color"
+    
+  cultural_ecological_notes:
+    - "One of the rarest trees in North America with fewer than 1,000 trees existing in the wild"
+    - "An important conservation success story after near extinction"
+    - "Requires acidic soil and consistent moisture to thrive"
+    - "Contains methyl salicylate (wintergreen oil) in its bark and twigs"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Conservation Biology"
+      physical_uses:
+        - "Used as a case study in the conservation of endangered plant species"
+        - "Propagated in botanical gardens to preserve genetic diversity"
+        - "Used in education about biodiversity and rare species protection"
+      symbolic_meaning:
+        - "Represents the importance of protecting rare botanical varieties"
+        - "Symbolizes successful conservation intervention"
+    
+    - culture: "Traditional Uses (like Sweet Birch)"
+      physical_uses:
+        - "Bark traditionally used for pain relief and fever reduction"
+        - "Used as a flavoring agent due to wintergreen compounds"
+        - "Made into tea for treating colds and other ailments"
+      symbolic_meaning:
+        - "Valued for its medicinal properties in traditional medicine"
+        - "Represents plants with both practical and medicinal uses"
+    
+  range_within_california:
+    - "Not native to California and not found in the wild"
+    - "Occasionally found in botanical gardens, arboreta, and specialized collections"
+    - "Most successful in coastal areas with moderate temperatures and consistent moisture"
+    - "Also grows in northern mountain regions where conditions resemble its native habitat"
+    - "Requires special care and specific growing conditions in California"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "20-40 feet (smaller than typical Sweet Birch)"
+    growth_rate: "Slow to moderate"
+    crown_spread: "15-30 feet wide at maturity"
+    lifespan: "Up to 100 years"
+    trunk_diameter: "Can reach 8-12 inches on mature specimens"
+    root_system: "Moderately shallow, fibrous root system"
+    toxicity: "Not known to be toxic to humans or animals"
+  
+  conservation_status:
+    status: "Critically endangered"
+    threats: 
+      - "Extremely limited genetic diversity due to small population"
+      - "Habitat loss and modification in its tiny native range"
+      - "Potential disease susceptibility due to limited genetic variation"
+    protection_efforts:
+      - "Protected wild population in Virginia"
+      - "Propagation in botanical gardens to preserve genetic diversity"
+      - "Ongoing monitoring of wild population"
+      
+  decision_tree_path:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-ARRANGEMENT-02"  # Alternate
+      - "feature_id: SENSORY-SMELL-02"  # Aromatic bark
+    confirmation_features:
+      - "feature_id: BARK-PATT-02"  # Lenticels present
+      - "feature_id: LEAF-MARGIN-03"  # Doubly serrate
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-TYPE-01", "TREE-SIZE-01", "TREE-TRUNK-02"]  # Deciduous, small tree, multi-trunked
+      - distance: "from_nearby"
+        features_to_check: ["BARK-PATT-02", "BARK-COLOR-06"]  # Lenticels, dark bark
+      - distance: "close_inspection"
+        features_to_check: ["SENSORY-SMELL-02", "LEAF-MARGIN-03"]  # Wintergreen scent, doubly serrate
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["FLOWER-TYPE-01", "SENSORY-SMELL-02"]
+        notes: "Catkins and strong wintergreen scent in new growth"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["SENSORY-SMELL-02", "LEAF-MARGIN-03"]
+        notes: "Distinctive scent and doubly-serrated leaf margins"
+      
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-FALL-01", "SENSORY-SMELL-02"]
+        notes: "Yellow fall color and wintergreen scent"
+      
+      winter:
+        reliability: "High"
+        key_features: ["BARK-PATT-02", "SENSORY-SMELL-02"]
+        notes: "Dark, non-peeling bark with lenticels and wintergreen scent remain year-round"
+    misidentification_risks: 
+      - "Sweet Birch is nearly identical but usually larger with more tree-like form"
+      - "Black Cherry has similar bark but lacks wintergreen scent"
+      - "Other birches typically have peeling or white bark unlike Virginia Birch"
+  
+  wildlife_value:
+    - "Seeds eaten by finches, chickadees, and other small songbirds"
+    - "Catkins and buds may be browsed by deer and small mammals"
+    - "Serves as larval host for some butterfly and moth species"
+    - "Contributes to urban biodiversity in landscape settings"
+    - "Due to rarity, overall wildlife contribution is limited, but individual specimens provide valuable resources"

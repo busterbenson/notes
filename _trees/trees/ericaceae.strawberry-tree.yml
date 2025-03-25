@@ -1,0 +1,322 @@
+tree:
+  common_name: "Strawberry Tree"
+  scientific_name: "Arbutus unedo"
+  family: "Ericaceae"
+  
+  # Basic summary information
+  summary: "A small evergreen tree with peeling cinnamon-colored bark, leathery dark green leaves, and unique fruits that look like strawberries. It has small white bell-shaped flowers and red-orange fruits that can appear on the tree at the same time, making it especially decorative."
+  
+  # Identification priority
+  identification_path:
+    primary_markers: "Peeling reddish-brown bark; distinctive red-orange round fruits that look like strawberries or tiny oranges"
+    secondary_markers: "Bell-shaped white or pinkish flowers; leathery dark green leaves with serrated edges; fruits and flowers often present simultaneously"
+    seasonal_markers: "White flowers in fall and winter; bright red-orange fruits mature in fall but can persist through winter"
+    similar_species_differentiation: "Unlike Pacific Madrone, has smaller leaves and fruits; unlike manzanitas, grows taller and has distinctly strawberry-like fruits instead of small berries"
+  
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its leaves all year round"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Leaves are single, not divided into smaller leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow in a staggered pattern along branches"
+      
+      - feature_id: "LEAF-SHAPE-01"  # Oval
+        notes: "Leaves are oval to oblong"
+      
+      - feature_id: "LEAF-COLOR-01"  # Dark green
+        notes: "Leaves are deep green and glossy on top"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated
+        notes: "Leaf edges have small teeth all around"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Bark peels in thin sheets or flakes"
+      
+      - feature_id: "BARK-COLOR-03"  # Red bark
+        notes: "Bark is reddish-brown to cinnamon-colored"
+      
+      - feature_id: "FRUIT-TYPE-03"  # Berries present
+        notes: "Produces round, bumpy, strawberry-like fruits"
+      
+      - feature_id: "FLOWER-SIZE-02"  # Inconspicuous flowers
+        notes: "Small bell-shaped flowers hang in clusters"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        notes: "Native to Mediterranean regions, not native to California"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk"
+        exceptions: "May develop multiple trunks, especially if damaged when young"
+      
+      - feature_id: "TREE-SIZE-01"  # Short tree
+        notes: "Usually grows 15-30 feet tall (about as tall as a two-story house)"
+        exceptions: "Can occasionally grow larger in perfect conditions"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Forms a rounded, sometimes spreading shape"
+        exceptions: "Shape can vary with age and growing conditions"
+      
+      - feature_id: "FLOWER-COLOR-01"  # White flowers
+        notes: "Flowers are typically white or cream-colored"
+        exceptions: "Flowers may have pinkish tints especially as they age"
+      
+      - feature_id: "FLOWER-TIME-03"  # Fall flowering
+        notes: "Typically flowers in fall through early winter"
+        exceptions: "Flowering time can vary with climate"
+    
+    sometimes_true:
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        conditions: "Once established"
+        notes: "Can survive with minimal water once roots are well established"
+      
+      - feature_id: "FLOWER-TIME-04"  # Winter flowering
+        conditions: "In milder climates or during warm winters"
+        notes: "Flowering can extend into winter months"
+      
+      - feature_id: "WINTER-FEAT-02"  # Persistent fruits
+        conditions: "If not eaten by birds"
+        notes: "Fruits can remain on the tree through winter"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "When planted in landscapes with well-drained soil"
+        notes: "Common in parks and gardens"
+      
+      - feature_id: "GEO-REGION-03"  # Southern California
+        conditions: "Planted in gardens and parks"
+        notes: "Very common landscape tree in Southern California"
+      
+      - feature_id: "GEO-REGION-02"  # Central California
+        conditions: "Planted in gardens and parks"
+        notes: "Common in Central California landscapes"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "Planted in gardens and parks"
+        notes: "Common in Northern California landscapes where it does well in the climate"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all its leaves seasonally"
+      
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        notes: "Has broad leaves, not tiny scales"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Never has thorns or spines"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Not originally from California; native to Mediterranean regions"
+  
+  # Kid-friendly identification - expanded with open-ended, creative descriptions
+  kid_friendly_identification:
+    primary_identifier: "Red-orange fruits that look just like strawberries or small bumpy oranges"
+    memorable_comparison: "A tree that grows strawberries on its branches instead of on the ground!"
+    touch_tip: "Feel the bark - it's peeling and papery like sunburned skin, and the color is like cinnamon"
+    smell_tip: "Crush a leaf gently and smell a light, pleasant scent like tea leaves"
+    fun_fact: "This tree is nicknamed the 'unedo' because ancient Romans said 'unum edo' meaning 'I eat only one' - the fruits look better than they taste!"
+    detective_steps:
+      - step: 1
+        instruction: "First, look for peeling reddish-brown bark that looks like cinnamon. Can you see bark peeling in thin layers?"
+        yes_next: 2
+        no_next: "Not a Strawberry Tree - look for trees with peeling cinnamon-colored bark"
+      - step: 2
+        instruction: "Look at the leaves. Are they dark green, shiny, and leathery with toothed edges?"
+        yes_next: 3
+        no_next: "Not a Strawberry Tree - check for evergreen trees with leathery dark green leaves"
+      - step: 3
+        instruction: "Look for round, bumpy red or orange fruits that look like strawberries, especially in fall and winter. Do you see any?"
+        yes_next: "You found a Strawberry Tree!"
+        no_next: 4
+      - step: 4
+        instruction: "Look for small, hanging white bell-shaped flowers, especially in fall. Do you see these?"
+        yes_next: "You found a Strawberry Tree - the fruits will come later!"
+        no_next: "It might be a Strawberry Tree, but come back in fall to check for flowers or fruits"
+  
+  regional_notes:
+    - region: "Southern California"
+      notes: "Very common in landscapes; thrives in the Mediterranean-like climate"
+      locations: "Found in parks, gardens, and as street trees"
+    - region: "Central California"
+      notes: "Grows well in most areas with good drainage"
+      locations: "Common in parks and gardens"
+    - region: "Northern California"
+      notes: "Common in urban landscapes, especially in coastal areas with mild climates"
+      locations: "Found in parks and gardens"
+      
+  confirmation_checklist:
+    - feature: "Peeling cinnamon-red bark"
+      reliability: "Very high"
+      visibility: "Easy to see from nearby"
+    - feature: "Red-orange strawberry-like fruits (fall and winter)"
+      reliability: "Very high"
+      visibility: "Visible from nearby when present"
+    - feature: "Small white bell-shaped flowers (fall)"
+      reliability: "High"
+      visibility: "Need to look at branches closely"
+    - feature: "Leathery, toothed dark green leaves"
+      reliability: "Medium"
+      visibility: "Need to look closely at leaves"
+    
+  look_alike_species:
+    - species: "Pacific Madrone (Arbutus menziesii)"
+      differences: "Native to California; grows much larger; has bigger leaves and larger, smoother orange-red fruits"
+      identification_tip: "If it's a tall tree with very large leaves and bigger, smoother fruits, it's likely a Pacific Madrone"
+    - species: "Manzanita (Arctostaphylos species)"
+      differences: "Usually shrub-sized; smaller, rounder leaves; smaller, smoother berries; more twisted growth habit"
+      identification_tip: "If it's shorter with very twisty branches and small round berries, it's probably a manzanita"
+    - species: "Chinese Photinia (Photinia serratifolia)"
+      differences: "Has similar leaves but lacks the peeling bark; produces small dark berries, not strawberry-like fruits"
+      identification_tip: "If the bark doesn't peel and the fruits are small dark berries, it's likely a photinia"
+      
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaf growth appears, slightly lighter green than older leaves"
+      reproductive_activity: "Previous year's fruits may still be present; flowers have fallen"
+      identification_tips: "Peeling bark and evergreen nature easiest to observe"
+      kid_friendly_tip: "In spring, look for the cinnamon-colored peeling bark and shiny green leaves - some old fruits might still be on the tree"
+    
+    - season: "Summer" 
+      visual_changes: "Full, dark green mature foliage; previous fruits have fallen or been eaten"
+      reproductive_activity: "Developing flower buds may be visible late in summer"
+      identification_tips: "Distinctive bark and leaf characteristics best for summer identification"
+      kid_friendly_tip: "In summer, the tree rests from making fruits and flowers and focuses on growing its shiny green leaves"
+    
+    - season: "Fall"
+      visual_changes: "New flowers appear in clusters; fruits begin to develop and turn from green to yellow to orange to red"
+      reproductive_activity: "Main flowering period; early fruit development"
+      identification_tips: "Flowers and developing fruits often present simultaneously - a key identifier"
+      kid_friendly_tip: "Fall is the most exciting time - the tree makes white bell-shaped flowers AND starts growing new strawberry-like fruits at the same time!"
+    
+    - season: "Winter"
+      visual_changes: "Remains evergreen; mature red fruits often present; some flowers may persist"
+      reproductive_activity: "Fruits fully mature; late flowers may still appear"
+      identification_tips: "Red fruits against dark green leaves are most distinctive winter feature"
+      kid_friendly_tip: "In winter, the bright red strawberry-like fruits really stand out against the dark green leaves, making the tree easy to find"
+      
+  cultural_ecological_notes:
+    - "Provides winter food for birds when many other food sources are scarce"
+    - "Flowers provide nectar for bees and other insects during fall when few other plants are flowering"
+    - "Well-adapted to Mediterranean climates with dry summers and mild, wet winters"
+    - "Relatively fire-resistant compared to many other landscape plants"
+    - "Closely related to native California madrones and manzanitas"
+    
+  range_within_california:
+    - "Planted throughout California in gardens and parks"
+    - "Thrives especially well in coastal and Mediterranean climate zones"
+    - "Grows best with good drainage; doesn't like soggy soils"
+    - "Prefers full sun to light shade"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Mediterranean Traditional"
+      physical_uses:
+        - "Fruits used to make jams, jellies, and even a type of brandy in Portugal called 'medronho'"
+        - "Wood used for small crafts and tool handles"
+        - "Bark and leaves used in traditional leather tanning due to high tannin content"
+        - "Used medicinally for digestive and urinary issues in folk medicine"
+      symbolic_meaning:
+        - "Symbol of unified opposites because flowers and fruits appear on the tree at the same time"
+        - "In some regions, represents endurance and resilience due to its drought tolerance"
+        - "The name 'unedo' comes from a Latin phrase meaning 'I eat only one' - suggesting both temptation and restraint"
+        - "Often planted near homes as a symbol of abundance and hospitality"
+    
+    - culture: "Modern California Landscape"
+      physical_uses:
+        - "Planted as a drought-tolerant ornamental in water-conscious gardens"
+        - "Used as a privacy screen or decorative accent in yards"
+        - "Sometimes grown in large containers on patios"
+        - "Incorporated into fire-resistant landscape designs"
+      symbolic_meaning:
+        - "Represents the successful adaptation of Mediterranean plants to California's climate"
+        - "Symbol of sustainable landscaping practices"
+        - "The year-round interest (flowers, fruits, bark) represents balance and continuous beauty in garden design"
+        - "Sometimes used to reference California's connection to Mediterranean cultures and cuisine"
+    
+    - culture: "Spanish and Portuguese"
+      physical_uses:
+        - "Fruits fermented to make alcoholic beverages including medronho (Portugal) and madroño (Spain)"
+        - "Fruits used in traditional desserts and preserves"
+        - "Honey made from the flowers is prized for its distinctive flavor"
+        - "Branches sometimes used in floral arrangements for their unique texture and color"
+      symbolic_meaning:
+        - "The madroño (Spanish name) is featured on Madrid's coat of arms with a bear reaching for its fruit"
+        - "Represents wilderness abundance and the relationship between humans and nature"
+        - "Used in folk tales to symbolize unexpected sweetness or hidden treasures"
+        - "The simultaneous fruits and flowers symbolize year-round productivity and abundance"
+    
+  # Additional physical characteristics not captured in features
+  physical_characteristics:
+    height_range: "15-30 feet (about as tall as a two-story house)"
+    growth_rate: "Slow to moderate, about 1 foot per year"
+    crown_spread: "15-30 feet wide when mature (about as wide as a large room)"
+    lifespan: "Can live 200+ years in native habitat; typically 50-150 years in cultivation"
+    trunk_diameter: "1-2 feet across when fully grown (about as wide as a dinner plate)"
+    root_system: "Deep, relatively non-invasive roots that help it survive drought"
+    toxicity: "Not toxic to humans, though eating too many fruits can cause stomach upset"
+    
+  conservation_status:
+    status: "Secure in cultivation; not endangered"
+    threats: 
+      - "Susceptible to root rot in poorly drained soils"
+      - "Can suffer dieback in extreme or prolonged drought"
+      - "Occasionally affected by fungal leaf diseases in humid conditions"
+    protection_efforts:
+      - "Selection of more drought-tolerant varieties for planting in California"
+      - "In its native Mediterranean range, some protection efforts exist for wild populations"
+      - "Not a significant conservation concern as it's widely cultivated"
+    
+  # Decision tree mapping - helps with algorithm creation
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: BARK-TEXT-03"  # Peeling bark
+      - "feature_id: BARK-COLOR-03"  # Red bark
+      - "feature_id: FRUIT-TYPE-03"  # Berries present (strawberry-like)
+    confirmation_features:
+      - "feature_id: LEAF-COLOR-01"  # Dark green
+      - "feature_id: LEAF-EDGE-02"  # Serrated
+      - "feature_id: FLOWER-TIME-03"  # Fall flowering
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-01", "TREE-FORM-02", "LEAF-TYPE-02"]  # Small tree, rounded form, evergreen
+      - distance: "from_nearby"
+        features_to_check: ["BARK-TEXT-03", "BARK-COLOR-03", "FRUIT-TYPE-03"]  # Peeling bark, red bark, strawberry fruits
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-02", "FLOWER-SIZE-02", "LEAF-COMPLEX-01"]  # Serrated leaf edges, small flowers, simple leaves
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["BARK-TEXT-03", "BARK-COLOR-03", "LEAF-TYPE-02"]
+        notes: "Bark characteristics and evergreen nature are most reliable in spring"
+      
+      summer:
+        reliability: "Medium" 
+        key_features: ["BARK-TEXT-03", "BARK-COLOR-03", "LEAF-COLOR-01"]
+        notes: "Bark and leaf characteristics are most reliable in summer"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["FLOWER-SIZE-02", "FLOWER-COLOR-01", "FRUIT-TYPE-03"]
+        notes: "Combination of flowers and developing fruits is unmistakable in fall"
+      
+      winter:
+        reliability: "High"
+        key_features: ["FRUIT-TYPE-03", "LEAF-TYPE-02", "BARK-TEXT-03"]
+        notes: "Red fruits against evergreen foliage and distinctive bark are reliable winter identifiers"
+    misidentification_risks: "Most often confused with Pacific Madrone, manzanitas, or less commonly with photinias"
+
+  wildlife_value:
+    nesting_sites: "Dense evergreen foliage provides good nesting sites for birds"
+    food_source: "Fruits eaten by birds; flowers provide nectar for bees, butterflies, and hummingbirds"
+    shelter: "Provides year-round shelter from weather and predators"
+    ecological_notes: "Though non-native, provides valuable winter food source and fall nectar source for native wildlife"
+    
+  propagation_information:
+    growing_conditions: "Prefers well-drained soil; tolerates poor soils including clay if drainage is adequate"
+    water_needs: "Low to moderate; drought-tolerant once established"
+    planting_tips: "Plant in full sun to light shade; avoid waterlogged areas"
+    maintenance: "Generally low-maintenance; occasional pruning to shape if desired"
+    special_notes: "Several cultivars available including compact forms; 'Compacta' is smaller and more shrub-like; 'Elfin King' is a dwarf form"

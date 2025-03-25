@@ -1,0 +1,287 @@
+tree:
+  common_name: "New Mexico Locust"
+  scientific_name: "Robinia neomexicana"
+  family: "Fabaceae"
+  
+  # Basic summary information
+  summary: "A small deciduous tree or large shrub with feathery compound leaves, showy pink to purple flower clusters, and thorny branches. It has smooth gray bark when young that becomes furrowed with age and produces flat seed pods."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Compound leaves with small oval leaflets arranged in pairs; bright pink to rose-purple flowers in hanging clusters; thorns in pairs at leaf bases"
+    secondary_markers: "Gray bark that starts smooth and becomes more furrowed with age; flat brown seed pods; often grows with multiple stems"
+    seasonal_markers: "Showy pink-purple flowers in late spring; yellow fall leaf color; seed pods persist into winter"
+    similar_species_differentiation: "Unlike Black Locust, has pink-purple (not white) flowers; unlike Bristly Locust, has hard thorns (not soft bristles); smaller overall size than both"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves in fall"
+        
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Leaves divided into 9-21 small oval leaflets arranged along a central stem"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves alternate along branches"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Paired thorns at leaf bases on branches"
+      
+      - feature_id: "FRUIT-TYPE-05"  # Pods present
+        notes: "Produces flat brown seed pods 2-3 inches long"
+      
+      - feature_id: "FLOWER-COLOR-02"  # Pink flowers
+        notes: "Flowers are pink to purple, never white"
+      
+      - feature_id: "ECO-WILD-01"  # Important for wildlife
+        notes: "Flowers attract many pollinators like bees and hummingbirds"
+        
+      - feature_id: "SENSORY-SMELL-03"  # Fragrant flowers
+        notes: "Flower clusters have sweet fragrance"
+
+    usually_true:
+      # Features that are primarily true, but have notable exceptions
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        notes: "Usually grows as a multi-stemmed shrub or small tree"
+        exceptions: "May occasionally develop a more dominant single trunk in ideal conditions"
+      
+      - feature_id: "TREE-SIZE-01"  # Short tree
+        notes: "Typically reaches 10-25 feet in height at maturity"
+        exceptions: "May be taller in ideal growing conditions"
+      
+      - feature_id: "TREE-FORM-05"  # Irregular crown
+        notes: "Typically has open, irregular branch pattern"
+        exceptions: "May be more rounded in optimal growing conditions"
+
+    sometimes_true:
+      # Features that vary with age, season, or conditions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        conditions: "In older specimens or in open areas with ideal conditions"
+        notes: "Can occasionally develop a more dominant single trunk"
+      
+      - feature_id: "FLOWER-TIME-01"  # Spring flowering
+        conditions: "Late spring to early summer"
+        notes: "Produces hanging clusters of pink to purple pea-like flowers"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Autumn"
+        notes: "Leaves typically turn yellow before dropping"
+      
+      - feature_id: "WINTER-FEAT-02"  # Persistent fruits
+        conditions: "Some pods may remain through winter"
+        notes: "Empty seed pods sometimes stay on tree after leaves drop"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        conditions: "Established trees"
+        notes: "Becomes drought-tolerant once established"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees"
+        notes: "Bark is relatively smooth when young"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Older trees"
+        notes: "Bark becomes more furrowed with age"
+      
+      - feature_id: "HABITAT-LOC-02"  # Mountain habitat
+        conditions: "Native to mountainous regions of southwestern US"
+        notes: "Often found in mountain canyons and slopes in its native range"
+
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Never keeps its leaves through winter"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has compound broadleaves, not needles"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Produces seed pods, not cones"
+      
+      - feature_id: "FLOWER-COLOR-01"  # White flowers
+        notes: "Always has pink to purple flowers, never white"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A small tree with pretty pink-purple flowers and rows of small oval leaves along stems, plus sharp thorns at each leaf base"
+    memorable_comparison: "The pink-purple flowers look like bunches of small sweet peas hanging from the branches"
+    touch_tip: "Carefully feel the smooth gray bark on the trunk, but watch out for the sharp thorns on branches!"
+    smell_tip: "In spring, smell the sweet pink flower clusters that hang down like bunches of grapes"
+    fun_fact: "This tree's pink flowers are full of sweet nectar that attracts hummingbirds! Native Americans used to make bows from the strong wood because it wouldn't break easily, even when bent a lot."
+    
+    detective_steps:
+      - step: 1
+        instruction: "Look at the size. Is it a small tree (about as tall as a one-story house) or large shrub with multiple trunks?"
+        yes_next: 2
+        no_next: "If it's much taller, it might be a different locust tree"
+      - step: 2
+        instruction: "Look at the leaves. Do they have rows of small oval leaflets along a central stem (like a feather)?"
+        yes_next: 3
+        no_next: "Not a New Mexico Locust - check trees with simple leaves instead of compound ones"
+      - step: 3
+        instruction: "Check for flower color. Are the flowers pink to purple (not white)?"
+        yes_next: "You found a New Mexico Locust! Look for the paired thorns at leaf bases to be sure."
+        no_next: "If flowers are white, it might be a Black Locust instead"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Leaves emerge in spring; showy pink to purple flower clusters hang from branches"
+      reproductive_activity: "Flowers bloom and attract many pollinators including hummingbirds"
+      identification_tips: "Hanging clusters of pink-purple flowers are highly distinctive"
+      kid_friendly_tip: "In spring, look for bunches of pretty pink flowers that hang down like clusters of grapes"
+    
+    - season: "Summer" 
+      visual_changes: "Full foliage of compound leaves; flat green seed pods develop"
+      reproductive_activity: "Seed pods grow and gradually turn from green to brown"
+      identification_tips: "Compound leaves fully developed; green pods becoming visible"
+      kid_friendly_tip: "By summer, you'll see flat green pods that look like green bean pods hanging on the tree"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow; seed pods fully brown and mature"
+      reproductive_activity: "Seeds mature inside pods; pods begin to split open"
+      identification_tips: "Yellow fall color and brown seed pods"
+      kid_friendly_tip: "In fall, the leaves turn yellow like gold coins, and the seed pods turn brown"
+    
+    - season: "Winter"
+      visual_changes: "Tree loses all leaves; some seed pods may remain; thorns clearly visible"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Multiple stems; gray bark; thorny twigs; some persistent seed pods"
+      kid_friendly_tip: "In winter with no leaves, you can easily see the thorns and the multiple trunks growing from the base"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Pink to purple flower clusters"
+      reliability: "Very high"
+      visibility: "Easy - visible during flowering season"
+    - feature: "Compound leaves with oval leaflets"
+      reliability: "Very high"
+      visibility: "Easy - visible during growing season"
+    - feature: "Paired thorns at leaf bases"
+      reliability: "High"
+      visibility: "Medium - need to look carefully"
+    - feature: "Multiple stems growing from base"
+      reliability: "High"
+      visibility: "Easy - visible year-round"
+    - feature: "Flat brown seed pods"
+      reliability: "High"
+      visibility: "Easy - visible summer through fall"
+    
+  look_alike_species:
+    - species: "Black Locust (Robinia pseudoacacia)"
+      differences: "Black Locust has white flowers (not pink), grows much taller, and usually has a single trunk"
+      identification_tip: "If the flowers are white instead of pink-purple, it's Black Locust"
+    - species: "Bristly Locust (Robinia hispida)"
+      differences: "Bristly Locust has soft bristly hairs on twigs rather than hard thorns"
+      identification_tip: "If the stems have soft red bristles instead of hard thorns, it's Bristly Locust"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Native American (Apache and Navajo)"
+      physical_uses:
+        - "Made strong bows from the hard wood that could bend without breaking"
+        - "Used the wood for tool handles, arrow shafts, and hunting implements"
+        - "Created durable fence posts and construction materials from the rot-resistant wood"
+      symbolic_meaning:
+        - "Valued the tree's strength and flexibility as a symbol of resilience"
+        - "Incorporated in stories about adaptation to harsh environments"
+    
+    - culture: "Southwestern Settlers"
+      physical_uses:
+        - "Used the durable wood for fence posts and tool handles"
+        - "Planted as natural fencing due to thorny branches"
+        - "Harvested flowers for making jellies and syrups"
+      symbolic_meaning:
+        - "Represented beauty in harsh conditions, as it blooms colorfully in rocky areas"
+        - "Symbolized self-sufficiency and making the most of limited resources"
+    
+    - culture: "Modern Conservation"
+      physical_uses:
+        - "Planted for erosion control on mountain slopes"
+        - "Used in habitat restoration projects"
+        - "Grown as an ornamental for its showy flowers and drought tolerance"
+      symbolic_meaning:
+        - "Represents the importance of native species in ecosystem restoration"
+        - "Symbolizes adaptation to challenging environments"
+    
+  cultural_ecological_notes:
+    - "Nitrogen-fixing tree that improves soil fertility"
+    - "Native to southwestern mountains and canyon areas"
+    - "Important nectar source for pollinators including hummingbirds"
+    - "Highly resistant to drought once established"
+    - "Can form thickets through root suckering"
+    
+  range_within_california:
+    - "Not native to California but occasionally planted in gardens"
+    - "Found mostly in cultivated settings rather than wild areas"
+    - "More common in inland areas with hot, dry summers"
+    - "Grows well in mountain and foothill regions of the state"
+    - "Not invasive in California, unlike its relative the Black Locust"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "10-25 feet at maturity"
+    growth_rate: "Moderate to fast (1-2 feet per year in good conditions)"
+    crown_spread: "10-20 feet wide at maturity"
+    lifespan: "40-80 years"
+    trunk_diameter: "Up to 8-12 inches at maturity"
+    root_system: "Spreading, with tendency to produce suckers"
+    toxicity: "Bark, seeds, and leaves contain toxins and should not be eaten"
+  
+  conservation_status:
+    status: "Least Concern - common in its native range"
+    threats: 
+      - "No major conservation concerns"
+      - "Locust borers can damage wood"
+      - "Can be affected by leaf miners and other insects"
+    protection_efforts:
+      - "No specific protection needed as population is stable"
+      - "Valued for restoration of disturbed areas in its native range"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-COMPLEX-02"  # Compound pinnate
+      - "feature_id: FLOWER-COLOR-02"  # Pink flowers
+    confirmation_features:
+      - "feature_id: TWIG-FEAT-01"  # Thorns present
+      - "feature_id: TREE-TRUNK-02"  # Multi-trunked
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-01", "TREE-TRUNK-02"]  # Short tree, multi-trunked
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-COMPLEX-02", "TWIG-FEAT-01"]  # Compound leaves, thorns
+      - distance: "close_inspection"
+        features_to_check: ["FLOWER-COLOR-02", "SENSORY-SMELL-03"]  # Pink flowers, fragrant
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["LEAF-COMPLEX-02", "FLOWER-COLOR-02", "SENSORY-SMELL-03"]  # Compound leaves, pink flowers, fragrant
+        notes: "Pink-purple flower clusters are highly distinctive and easiest identification feature"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-COMPLEX-02", "TWIG-FEAT-01", "FRUIT-TYPE-05"]  # Compound leaves, thorns, pods
+        notes: "Fully developed compound leaves with thorns at bases; green pods developing"
+      
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-FALL-01", "FRUIT-TYPE-05", "LEAF-COMPLEX-02"]  # Yellow fall color, pods, compound leaves
+        notes: "Yellow fall color; brown seed pods"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["TREE-TRUNK-02", "TWIG-FEAT-01", "WINTER-FEAT-02"]  # Multi-trunked, thorns, persistent fruits
+        notes: "Multiple stems; thorny twigs; sometimes persistent pods"
+    misidentification_risks: 
+      - "Black Locust has white flowers and grows much taller"
+      - "Bristly Locust has soft bristles instead of thorns on branches"
+      - "Desert Sweet Acacia has similar compound leaves but yellow ball-shaped flowers"
+  
+  wildlife_value:
+    - "Flowers attract bees, butterflies, and hummingbirds"
+    - "Seeds eaten by some birds and small mammals"
+    - "Dense growth provides good cover for birds and small animals"
+    - "Fixes nitrogen in soil which benefits other plants"
+    - "Thorns provide protected nesting sites for small birds"

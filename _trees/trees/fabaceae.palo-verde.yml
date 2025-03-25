@@ -1,0 +1,324 @@
+tree:
+  common_name: "Palo Verde"
+  scientific_name: "Parkinsonia species"
+  family: "Fabaceae"
+  
+  # Basic summary information
+  summary: "A small desert tree with a striking bright green trunk and branches that perform photosynthesis. It has tiny, delicate leaflets that drop during drought periods, and produces masses of bright yellow flowers in spring. Named 'Palo Verde' meaning 'green stick' in Spanish, this tree is highly adapted to desert conditions with thorny branches and drought-deciduous leaves."
+  
+  # Identification priority
+  identification_path:
+    primary_markers: "Bright green trunk and branches; tiny compound leaves; thorny branches; masses of yellow flowers in spring"
+    secondary_markers: "Feathery appearance; thin, upright growth habit; peeling thin bark; often leafless during dry periods"
+    seasonal_markers: "Spectacular yellow flower display in spring; may drop leaves in summer drought or winter"
+    similar_species_differentiation: "Green bark distinguishes from most other small trees; smaller and more delicate leaflets than mesquite; thorny branches unlike desert willow"
+  
+  features:
+    always_true:
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Leaves divided into many tiny leaflets"
+        
+      - feature_id: "BARK-COLOR-05"  # Green bark
+        notes: "Trunk and branches are bright green and perform photosynthesis"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Branches have sharp thorns"
+      
+      - feature_id: "FLOWER-COLOR-04"  # Yellow flowers
+        notes: "Produces bright yellow flowers"
+      
+      - feature_id: "TREE-SIZE-01"  # Short tree
+        notes: "Usually grows 15-30 feet tall (about as tall as a 2-story house)"
+      
+      - feature_id: "FRUIT-TYPE-05"  # Pods present
+        notes: "Produces bean-like seed pods after flowering"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        notes: "Extremely drought-tolerant"
+      
+      - feature_id: "HABITAT-WATER-03"  # Dry slope habitat
+        notes: "Naturally grows in dry, arid conditions"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually starts with one main trunk"
+        exceptions: "Often develops multiple trunks or branches low to the ground"
+      
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Typically drops leaves during drought or winter"
+        exceptions: "May keep some leaves in mild conditions with adequate water"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Some species are native to California deserts"
+        exceptions: "Some commonly planted species or hybrids are from Arizona or Mexico"
+      
+      - feature_id: "FLOWER-TIME-01"  # Spring flowering
+        notes: "Usually flowers profusely in spring"
+        exceptions: "May have some flowers at other times, especially after rain"
+    
+    sometimes_true:
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        conditions: "Especially with age or when damaged"
+        notes: "May grow as multi-trunked small tree"
+      
+      - feature_id: "TREE-FORM-05"  # Irregular crown
+        conditions: "Older specimens often develop irregular forms"
+        notes: "May have an irregular, somewhat open crown"
+      
+      - feature_id: "LEAF-TYPE-03"  # Semi-evergreen
+        conditions: "In mild winter areas with adequate water"
+        notes: "May retain some leaves year-round in favorable conditions"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "When planted in well-drained soil"
+        notes: "Increasingly used in drought-tolerant landscaping"
+      
+      - feature_id: "GEO-REGION-03"  # Southern California
+        conditions: "Native to and planted in desert regions"
+        notes: "Common in southeastern California deserts"
+      
+      - feature_id: "GEO-REGION-02"  # Central California
+        conditions: "Planted in hot, dry areas as ornamental"
+        notes: "Used in drought-tolerant landscapes"
+      
+      - feature_id: "FLOWER-TIME-02"  # Summer flowering
+        conditions: "After summer rains or in cultivated settings"
+        notes: "May have a second, smaller bloom after rains"
+    
+    never_true:
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        notes: "Has compound leaves with distinct leaflets, not scales"
+      
+      - feature_id: "HABITAT-WATER-02"  # Wetland habitat
+        notes: "Never grows in wet or boggy conditions"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        notes: "Not found along permanent water courses"
+      
+      - feature_id: "LEAF-COLOR-01"  # Dark green
+        notes: "Leaves are typically bright to yellowish-green, not dark"
+  
+  # Kid-friendly identification - expanded with open-ended, creative descriptions
+  kid_friendly_identification:
+    primary_identifier: "Smooth green trunk and branches with sharp thorns and tiny feathery leaves"
+    memorable_comparison: "The green trunk looks like it's been painted with bright green paint, and in spring it's covered with so many yellow flowers it looks like a yellow explosion!"
+    touch_tip: "Be very careful of the sharp thorns! Look but don't touch the branches. The leaves are tiny and feathery."
+    smell_tip: "The flowers have a light sweet smell when blooming heavily in spring"
+    fun_fact: "Palo Verde trees don't need leaves to make their food! Their green trunks and branches can do photosynthesis, which is why they can drop their leaves when it's too hot and dry and still survive. They're like the desert's super-survivors!"
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the trunk and branches. Are they bright green, not brown or gray like most trees?"
+        yes_next: 2
+        no_next: "Not a Palo Verde - try looking at trees with different colored bark"
+      - step: 2
+        instruction: "Check for thorns along the branches (but don't touch!). Are there sharp thorns sticking out?"
+        yes_next: 3
+        no_next: "Not a Palo Verde - try looking at other desert trees"
+      - step: 3
+        instruction: "Look at the leaves (if present). Are they made up of many tiny leaflets giving a feathery appearance?"
+        yes_next: 4
+        no_next: "Not a Palo Verde - check other thorny desert trees"
+      - step: 4
+        instruction: "In spring, does it have lots of bright yellow flowers? In summer or fall, does it have bean-like seed pods?"
+        yes_next: "You found a Palo Verde!"
+        no_next: "If it's not flowering season, the bright green trunk and thorns are still good clues that it's a Palo Verde"
+  
+  regional_notes:
+    - region: "Southern California"
+      notes: "Native to southeastern desert regions; increasingly used in landscaping"
+      locations: "Common in Colorado and Mojave Deserts; planted in drought-tolerant landscapes"
+    - region: "Central California"
+      notes: "Not native but planted as ornamental drought-resistant tree"
+      locations: "Found in hot inland areas in drought-tolerant landscapes"
+    - region: "Northern California"
+      notes: "Less common; used occasionally in hot inland areas"
+      locations: "Limited to landscape use in warmest regions"
+      
+  confirmation_checklist:
+    - feature: "Bright green trunk and branches"
+      reliability: "Very high"
+      visibility: "Easy to see from far away"
+    - feature: "Sharp thorns on branches"
+      reliability: "High"
+      visibility: "Visible from nearby"
+    - feature: "Tiny compound leaves with multiple leaflets"
+      reliability: "High"
+      visibility: "Need to look closely, especially since leaves may be absent"
+    - feature: "Yellow flowers in spring"
+      reliability: "Very high"
+      visibility: "Extremely visible when in bloom"
+    - feature: "Bean-like seed pods"
+      reliability: "Medium"
+      visibility: "Visible when present after flowering"
+    
+  look_alike_species:
+    - species: "Desert Ironwood (Olneya tesota)"
+      differences: "Ironwood has gray-green bark, not bright green; denser foliage; bluish-pink flowers; much harder wood"
+      identification_tip: "If the bark is gray-green instead of bright green, and the flowers are purplish instead of yellow, it's probably Ironwood"
+    - species: "Mesquite (Prosopis species)"
+      differences: "Mesquite has brown bark, not green; larger leaflets; longer, straighter seed pods; often more spreading habit"
+      identification_tip: "If it has brown bark instead of green, with larger leaflets, it's likely a mesquite"
+    - species: "Jerusalem Thorn (Parkinsonia aculeata)"
+      differences: "This is actually a species of Palo Verde with longer leaves and more drooping branches; technically a Palo Verde but sometimes distinguished"
+      identification_tip: "If the leaves have longer straps with tiny leaflets along them, it's specifically the Jerusalem Thorn type of Palo Verde"
+      
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Dramatic bloom of bright yellow flowers; new leaf growth"
+      reproductive_activity: "Mass flowering, usually March-May"
+      identification_tips: "Yellow flower display is unmistakable"
+      kid_friendly_tip: "In spring, the tree puts on a yellow flower show so bright it looks like a yellow explosion!"
+    
+    - season: "Summer" 
+      visual_changes: "May drop leaves during hot, dry periods; seed pods develop"
+      reproductive_activity: "Seed pods mature; may have second smaller bloom after summer rains"
+      identification_tips: "Green trunk and branches; seed pods; possibly leafless"
+      kid_friendly_tip: "During hot summer days, the tree might drop its tiny leaves but stays alive because its green trunk and branches can make food from sunlight"
+    
+    - season: "Fall"
+      visual_changes: "May regrow leaves if moisture is available; seed pods dry and may drop"
+      reproductive_activity: "Seed dispersal from dried pods"
+      identification_tips: "Green branches; dry seed pods; may be leafless or with some foliage"
+      kid_friendly_tip: "In fall, look for dried bean-like pods that rattle in the wind, with seeds inside that might grow into new trees"
+    
+    - season: "Winter"
+      visual_changes: "May be leafless or have reduced foliage"
+      reproductive_activity: "Dormant; no flowering"
+      identification_tips: "Green trunk and branches; thorns; typically few or no leaves"
+      kid_friendly_tip: "Even in winter when the tree might look bare, you can tell it's a Palo Verde because the trunk and branches stay bright green"
+      
+  cultural_ecological_notes:
+    - "Important nurse plant in desert ecosystems, providing shelter for young cactus and other plants"
+    - "Provides crucial shade and resources in harsh desert environments"
+    - "Flowers support native bee populations and other pollinators"
+    - "Seeds eaten by birds and desert wildlife"
+    - "Very shallow roots that spread widely to capture rainwater"
+    
+  range_within_california:
+    - "Blue Palo Verde (Parkinsonia florida) is native to southeastern California deserts"
+    - "Found naturally in the Colorado Desert and parts of the Mojave Desert"
+    - "Increasingly planted throughout Southern California in drought-tolerant landscapes"
+    - "Can be grown in hot inland areas of Central California"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Native American (Southwestern)"
+      physical_uses:
+        - "Seeds collected, ground, and used as food in emergencies"
+        - "Flowers sometimes eaten fresh or dried for later use"
+        - "Wood used for tools and small items due to hardness"
+        - "Thorny branches sometimes used as natural fencing"
+      symbolic_meaning:
+        - "Associated with spring renewal in desert environments"
+        - "Yellow flowers represented the return of warmth and abundance"
+        - "Green year-round branches symbolized life persisting through hardship"
+        - "Featured in origin stories and seasonal celebrations"
+    
+    - culture: "Mexican/Southwestern"
+      physical_uses:
+        - "Wood used for carvings and small decorative items"
+        - "Branches sometimes used for shade structures"
+        - "Seeds occasionally used in traditional foods"
+        - "Flowers used in seasonal celebrations"
+      symbolic_meaning:
+        - "Represents the beauty and resilience of desert landscapes"
+        - "Yellow blooms celebrated as sign of desert springtime"
+        - "Symbol of adaptation and thriving despite harsh conditions"
+        - "Associated with desert heritage and cultural identity"
+    
+    - culture: "Desert Ecology Education"
+      physical_uses:
+        - "Featured in desert botanical gardens as key native species"
+        - "Used in habitat restoration projects"
+        - "Planted to demonstrate desert plant adaptations"
+        - "Included in ethnobotanical educational programs"
+      symbolic_meaning:
+        - "Represents desert plant adaptations and survival strategies"
+        - "Showcases the 'nurse plant' ecological relationship"
+        - "Symbol of desert biodiversity and ecological interactions"
+        - "Used to teach about photosynthetic stems as adaptation"
+    
+    - culture: "Sustainable Landscaping"
+      physical_uses:
+        - "Featured in xeriscapes and drought-tolerant gardens"
+        - "Planted for dappled shade in hot climates"
+        - "Used as specimen trees in desert-themed landscapes"
+        - "Included in habitat gardens for native pollinators"
+      symbolic_meaning:
+        - "Represents water-wise landscaping principles"
+        - "Symbol of working with nature rather than against it"
+        - "Embodies the beauty of native, adapted plants"
+        - "Signifies shift toward climate-appropriate landscaping"
+    
+  # Additional physical characteristics not captured in features
+  physical_characteristics:
+    height_range: "15-30 feet (as tall as a 1-2 story house)"
+    growth_rate: "Moderate, about 1-2 feet per year when young"
+    crown_spread: "15-25 feet wide when mature"
+    lifespan: "Can live 100-200 years"
+    trunk_diameter: "Up to 1.5 feet across when fully grown"
+    root_system: "Shallow but widespread to capture surface water"
+    toxicity: "Not generally toxic but thorns can cause injury"
+    
+  conservation_status:
+    status: "Secure in native range; not endangered"
+    threats: 
+      - "Habitat loss due to development in desert regions"
+      - "Potential climate change impacts on desert rainfall patterns"
+      - "Competition from invasive species in some areas"
+    protection_efforts:
+      - "Protected in national parks and preserves within native range"
+      - "Used in desert restoration projects"
+      - "Cultivated widely, reducing pressure on wild populations"
+    
+  # Decision tree mapping - helps with algorithm creation
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: BARK-COLOR-05"  # Green bark
+      - "feature_id: TWIG-FEAT-01"  # Thorns present
+      - "feature_id: LEAF-COMPLEX-02"  # Compound pinnate
+    confirmation_features:
+      - "feature_id: FLOWER-COLOR-04"  # Yellow flowers
+      - "feature_id: TREE-SIZE-01"  # Short tree
+      - "feature_id: HABITAT-WATER-03"  # Dry slope habitat
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["BARK-COLOR-05", "TREE-SIZE-01", "FLOWER-COLOR-04"]  # Green bark, short tree, yellow flowers
+      - distance: "from_nearby"
+        features_to_check: ["TWIG-FEAT-01", "LEAF-COMPLEX-02", "TREE-FORM-05"]  # Thorns, compound leaves, irregular form
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-05", "LEAF-TYPE-01", "HABITAT-WATER-03"]  # Seed pods, deciduous, dry habitat
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["FLOWER-COLOR-04", "BARK-COLOR-05", "LEAF-COMPLEX-02"]
+        notes: "Yellow flowers, green bark, and compound leaves make spring identification certain"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["BARK-COLOR-05", "FRUIT-TYPE-05", "TWIG-FEAT-01"]
+        notes: "Green bark, seed pods, and thorns; may be leafless in drought"
+      
+      fall:
+        reliability: "Medium"
+        key_features: ["BARK-COLOR-05", "TWIG-FEAT-01", "FRUIT-TYPE-05"]
+        notes: "Green bark, thorns, and dried seed pods; possibly few leaves"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["BARK-COLOR-05", "TWIG-FEAT-01", "TREE-SIZE-01"]
+        notes: "Green bark and thorns are key winter identifiers"
+    misidentification_risks: "Most often confused with Desert Ironwood or Mesquite but distinguished by green bark"
+
+  wildlife_value:
+    nesting_sites: "Branch structure provides good nesting sites for desert birds"
+    food_source: "Seeds eaten by birds and small mammals; flowers important for native bees"
+    shelter: "Provides crucial shade and habitat in desert environments"
+    ecological_notes: "Critical 'nurse plant' that shelters young cacti and other plants; keystone desert species"
+    
+  propagation_information:
+    growing_conditions: "Requires full sun and excellent drainage"
+    water_needs: "Extremely drought-tolerant once established"
+    planting_tips: "Plant in the hottest, driest part of the landscape"
+    maintenance: "Little maintenance needed; can be pruned to enhance structure if desired"
+    special_notes: "Germinates readily from seed; consider placement carefully due to thorns"

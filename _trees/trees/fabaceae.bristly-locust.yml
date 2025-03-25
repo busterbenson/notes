@@ -1,0 +1,292 @@
+tree:
+  common_name: "Bristly Locust"
+  scientific_name: "Robinia hispida"
+  family: "Fabaceae"
+  
+  # Basic summary information
+  summary: "A small tree or large shrub with compound leaves, showy clusters of pink to rose-purple flowers, and distinctive reddish-brown bristly hairs covering the stems and seed pods. Unlike Black Locust, it rarely grows taller than 10 feet and is notable for its fuzzy stems rather than sharp thorns."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Compound leaves with oval leaflets arranged along a stem; stems and seed pods covered with reddish-brown bristly hairs; showy pink to rose-purple flowers in hanging clusters"
+    secondary_markers: "Typically small, often growing as a multi-stemmed shrub; seed pods covered with bristles; lacks the prominent thorns of other locusts"
+    seasonal_markers: "Beautiful pink flower clusters in late spring; brown bristly seed pods in summer and fall; yellow fall color"
+    similar_species_differentiation: "Unlike Black Locust, has pink (not white) flowers and bristly hairs instead of thorns; unlike New Mexico Locust, has bristly stems and stays smaller"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves in fall"
+        
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Leaves divided into 7-19 small oval leaflets arranged along a central stem"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves alternate along branches, not opposite or whorled"
+      
+      - feature_id: "TWIG-FEAT-01"  # Bristly hairs
+        notes: "Twigs and stems covered with distinctive reddish-brown bristly hairs"
+      
+      - feature_id: "FLOWER-COLOR-02"  # Pink flowers
+        notes: "Produces clusters of showy pink to rose-purple flowers"
+      
+      - feature_id: "FRUIT-TYPE-05"  # Pods present
+        notes: "Produces flat seed pods covered with bristly hairs"
+      
+      - feature_id: "TREE-SIZE-01"  # Short tree
+        notes: "Rarely grows taller than 8-10 feet, often shrub-like"
+    
+    usually_true:
+      # Features that are primarily true, but have notable exceptions
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        notes: "Typically grows as a multi-stemmed shrub or small tree"
+        exceptions: "Can occasionally develop a more tree-like form with a single main stem"
+      
+      - feature_id: "TREE-FORM-05"  # Irregular crown
+        notes: "Usually has an irregular, somewhat spreading growth habit"
+        exceptions: "May be more uniform when carefully pruned in landscape settings"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        notes: "Generally tolerant of dry conditions once established"
+        exceptions: "Prefers moderate moisture in very hot regions"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Flowers are typically large and showy in hanging clusters"
+        exceptions: "Flower display may be reduced in poor growing conditions"
+    
+    sometimes_true:
+      # Features that vary with age, season, or conditions
+      - feature_id: "FLOWER-TIME-01"  # Spring flowering
+        conditions: "Late spring to early summer"
+        notes: "Produces hanging clusters of pink to purple pea-like flowers"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Autumn"
+        notes: "Leaves typically turn yellow before dropping"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young stems beneath the bristles"
+        notes: "Has relatively smooth bark under the bristly covering"
+      
+      - feature_id: "ECO-REL-01"  # Nitrogen fixing
+        conditions: "When root nodules develop with proper bacteria"
+        notes: "Like other legumes, can fix nitrogen from the air to improve soil"
+      
+      - feature_id: "SENSORY-SMELL-03"  # Fragrant flowers
+        conditions: "During bloom time"
+        notes: "Flowers have a sweet, pleasant fragrance"
+    
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Never keeps its leaves through winter"
+      
+      - feature_id: "LEAF-SHAPE-05"  # Lobed
+        notes: "Leaflets are oval, not lobed"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Never grows into a large tree like Black Locust"
+      
+      - feature_id: "FLOWER-COLOR-01"  # White flowers
+        notes: "Never has white flowers like Black Locust"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A small tree or shrub with pretty pink flowers and stems covered in reddish-brown fuzzy bristles that look like tiny hairs"
+    memorable_comparison: "The stems look like they're covered in reddish-brown pipe cleaners or fuzzy caterpillars"
+    touch_tip: "Gently feel the bristly hairs on the stems - they're fuzzy but not as sharp as real thorns"
+    smell_tip: "When it's blooming, smell the sweet fragrance of the pink flower clusters"
+    fun_fact: "Even though it's called 'Bristly Locust,' this plant is more like a big shrub than a tree, and those bristles are its way of saying 'please don't eat me' to hungry animals!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "Look at the size. Is it small (shorter than a one-story house) and often growing with multiple stems like a big shrub?"
+        yes_next: 2
+        no_next: "If it's tall with a single trunk, it's probably a different locust species"
+      - step: 2
+        instruction: "Look at the stems and branches. Are they covered with reddish-brown bristly hairs that look fuzzy?"
+        yes_next: 3
+        no_next: "If it has sharp thorns instead of bristles, it might be Black Locust or another locust species"
+      - step: 3
+        instruction: "When it's flowering, are the flowers pink to purple (not white)?"
+        yes_next: 4
+        no_next: "If the flowers are white, it's probably Black Locust"
+      - step: 4
+        instruction: "Check the leaves. Are they made up of small oval leaflets arranged along a central stem?"
+        yes_next: "You found a Bristly Locust!"
+        no_next: "If the leaves are different, it might be another shrub with pink flowers"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Leaves emerge light green; showy pink to purple flower clusters appear in late spring"
+      reproductive_activity: "Flowers bloom and attract many bees and butterflies"
+      identification_tips: "Beautiful hanging clusters of pink to purple flowers are very distinctive"
+      kid_friendly_tip: "In spring, this plant puts on a beautiful show with hanging bunches of pink flowers that look like sweet pea blossoms"
+    
+    - season: "Summer" 
+      visual_changes: "Full foliage of compound leaves; bristly seed pods develop"
+      reproductive_activity: "Seed pods continue to develop"
+      identification_tips: "Bristly stems and developing bristly seed pods are good identifiers"
+      kid_friendly_tip: "By summer, you'll see fuzzy brown seed pods forming - they look like hairy green beans!"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow; seed pods fully mature and turn brown"
+      reproductive_activity: "Seeds mature inside pods"
+      identification_tips: "Yellow fall color, mature bristly pods, and bristly stems"
+      kid_friendly_tip: "In fall, the leaves turn yellow and the fuzzy seed pods turn completely brown"
+    
+    - season: "Winter"
+      visual_changes: "Loses leaves; bristly stems and some seed pods may remain visible"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Multi-stemmed form and persistent bristly stems"
+      kid_friendly_tip: "In winter with no leaves, you can still identify it by the reddish-brown fuzzy stems"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Compound leaves with small oval leaflets"
+      reliability: "High"
+      visibility: "Medium - need to see leaves"
+    - feature: "Reddish-brown bristly hairs on stems"
+      reliability: "Very high"
+      visibility: "High - easily visible year-round"
+    - feature: "Pink to purple flowers in clusters (when present)"
+      reliability: "Very high"
+      visibility: "High - very noticeable when blooming"
+    - feature: "Multi-stemmed, shrubby growth habit"
+      reliability: "High"
+      visibility: "Medium - overall form is visible"
+    - feature: "Bristly seed pods"
+      reliability: "High (when present)"
+      visibility: "Medium - visible when present"
+    
+  look_alike_species:
+    - species: "Black Locust (Robinia pseudoacacia)"
+      differences: "Black Locust grows much larger (40-80 feet); has white flowers; has paired thorns instead of bristles; has much less hairy pods"
+      identification_tip: "If it has white flowers and sharp thorns instead of bristles, it's Black Locust, not Bristly Locust"
+    - species: "New Mexico Locust (Robinia neomexicana)"
+      differences: "New Mexico Locust grows taller (15-25 feet); has paired thorns; has pink flowers but less bristly stems and pods"
+      identification_tip: "New Mexico Locust has thorns and is less bristly; it's like a cross between Black and Bristly Locust"
+    - species: "Wisteria (Wisteria species)"
+      differences: "Wisteria is a vine, not a shrub; has similar colored flowers but they grow in longer, hanging clusters; has twining stems, not bristly ones"
+      identification_tip: "If it's climbing and has very long flower clusters, it's probably Wisteria, not Bristly Locust"
+    
+  cultural_ecological_notes:
+    - "Fixes nitrogen in the soil, improving fertility for other plants"
+    - "Flowers attract many pollinators, especially bees and butterflies"
+    - "Can spread by underground roots, forming thickets that prevent erosion"
+    - "Tolerates poor soils and difficult growing conditions"
+    - "Less invasive than its relative Black Locust"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Appalachian Mountain communities"
+      physical_uses:
+        - "Used the flowers to make fritters and sweet treats"
+        - "Planted to stabilize eroded slopes after mining or logging"
+        - "Used as a natural barrier due to its dense, bristly growth"
+        - "Cultivated as an ornamental for its beautiful flowers"
+      symbolic_meaning:
+        - "Represented beauty thriving in harsh conditions"
+        - "Symbolized resilience in difficult mountain environments"
+    
+    - culture: "Native plant gardeners"
+      physical_uses:
+        - "Planted to attract pollinators, especially native bees and butterflies"
+        - "Used in erosion control on difficult slopes and banks"
+        - "Grown as ornamental specimen for spring color"
+        - "Used in naturalized gardens for wildlife habitat"
+      symbolic_meaning:
+        - "Represents the beauty of native plants in designed landscapes"
+        - "Symbolizes the connection between gardens and natural ecosystems"
+    
+    - culture: "Sustainable land management"
+      physical_uses:
+        - "Planted for soil improvement through nitrogen fixation"
+        - "Used in reclamation of degraded lands like old mines"
+        - "Incorporated in hedgerows and wildlife corridors"
+        - "Serves as undergrowth in forest edge habitats"
+      symbolic_meaning:
+        - "Represents healing of damaged landscapes"
+        - "Symbolizes the integration of beauty and function in ecosystem restoration"
+    
+  range_within_california:
+    - "Not native to California but occasionally planted as an ornamental"
+    - "Native to southeastern United States"
+    - "Can be found in gardens and landscapes throughout cooler parts of California"
+    - "Sometimes used in erosion control plantings"
+    - "Performs best in areas with moderate moisture and not extreme heat"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "6-10 feet tall, occasionally to 15 feet (about as tall as a one-story room)"
+    growth_rate: "Moderate to fast, growing 1-2 feet per year in good conditions"
+    crown_spread: "6-10 feet wide (about the size of a small room)"
+    lifespan: "20-30 years, longer with good care"
+    trunk_diameter: "Multiple stems each 2-4 inches across (about as wide as a soda can)"
+    root_system: "Spreading, with ability to sucker and form colonies"
+    toxicity: "Seeds and inner bark contain toxins that can cause digestive upset if eaten in quantity"
+  
+  conservation_status:
+    status: "Not threatened; common in cultivation"
+    threats: 
+      - "No major conservation concerns"
+      - "Some locust borers can damage stems"
+      - "May be affected by various fungal diseases"
+    protection_efforts:
+      - "No special protection measures needed as it's common in its native range"
+      - "Propagated and preserved in native plant collections"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-COMPLEX-02"  # Compound pinnate
+      - "feature_id: TWIG-FEAT-01"  # Bristly hairs
+    confirmation_features:
+      - "feature_id: FLOWER-COLOR-02"  # Pink flowers
+      - "feature_id: TREE-SIZE-01"  # Short tree
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-01", "TREE-TRUNK-02", "FLOWER-COLOR-02"]  # Short tree, multi-trunked, pink flowers
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-COMPLEX-02", "TWIG-FEAT-01"]  # Compound leaves, bristly hairs
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-05", "SENSORY-SMELL-03"]  # Bristly pods, fragrant flowers
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["FLOWER-COLOR-02", "TWIG-FEAT-01", "LEAF-COMPLEX-02"]
+        notes: "Pink flower clusters are highly distinctive"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-COMPLEX-02", "TWIG-FEAT-01", "FRUIT-TYPE-05"]
+        notes: "Bristly stems and developing bristly pods"
+      
+      fall:
+        reliability: "Medium"
+        key_features: ["LEAF-FALL-01", "FRUIT-TYPE-05", "TWIG-FEAT-01"]
+        notes: "Yellow fall color; mature bristly pods"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["TREE-SIZE-01", "TREE-TRUNK-02", "TWIG-FEAT-01"]
+        notes: "Small size, multi-stemmed form, and persistent bristly stems"
+    misidentification_risks: 
+      - "Black Locust has white flowers and thorns instead of bristles"
+      - "New Mexico Locust is larger with thorns and less bristly stems"
+      - "Various flowering shrubs may look similar when in bloom"
+  
+  wildlife_value:
+    food_source:
+      - "Flowers visited by many bees, butterflies, and hummingbirds"
+      - "Seeds eaten by some birds and small mammals"
+      - "Leaves occasionally browsed by deer, though not preferred"
+      - "Nitrogen-rich root nodules improve soil for other plants"
+    habitat_provided:
+      - "Dense growth provides cover for small birds and mammals"
+      - "Thickets create protected nesting areas for birds"
+      - "Early spring flowers provide important nectar for pollinators"
+      - "Roots help stabilize soil on slopes"
+    ecosystem_role: "Pioneer species that can colonize disturbed sites; improves soil through nitrogen fixation; provides nectar for pollinators; creates thicket habitat for wildlife"

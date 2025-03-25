@@ -1,0 +1,297 @@
+tree:
+  common_name: "Arizona Cypress"
+  scientific_name: "Cupressus arizonica"
+  family: "Cupressaceae"
+  
+  # Basic summary (2-3 sentences)
+  summary: "A medium-sized evergreen tree with blue-gray or silver-gray scale-like leaves and shreddy reddish-brown bark. It has a dense, pyramid-shaped crown when young that becomes more irregular with age. Native to the southwestern United States and Mexico, it's widely planted in California landscapes."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Blue-gray to silver-gray scale-like leaves; shreddy reddish-brown bark; round woody cones about the size of a marble"
+    secondary_markers: "Dense pyramid shape when young; strong cedar-like scent when foliage is crushed; small bumps (glands) on the back of scale leaves"
+    seasonal_markers: "No major seasonal changes as it stays evergreen year-round; woody cones persist on branches"
+    similar_species_differentiation: "Bluer foliage than many other cypresses; unlike Italian Cypress, has a broader pyramid shape rather than narrow column; unlike Monterey Cypress, has more blue-gray rather than bright green foliage"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its leaves all year round without seasonal dropping"
+      
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        notes: "Tiny overlapping leaves that look like fish scales covering the twigs"
+      
+      - feature_id: "LEAF-COLOR-03"  # Blue-green
+        notes: "Leaves have a distinctive blue-gray to silver-gray color"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Bark peels off in thin, shreddy strips"
+      
+      - feature_id: "BARK-COLOR-03"  # Red bark
+        notes: "Bark is reddish-brown in color"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        notes: "Leaves have a strong cedar-like smell when crushed"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Produces hard, woody, round seed cones"
+      
+      - feature_id: "CONE-SIZE-01"  # Small cones
+        notes: "Cones are small, about the size of a marble (1/2 to 1 inch across)"
+      
+      - feature_id: "CONE-SHAPE-01"  # Round cones
+        notes: "Cones are nearly round, not elongated"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk"
+        exceptions: "May occasionally develop multiple trunks, especially if damaged when young"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Usually has a pyramid or Christmas tree shape, especially when young"
+        exceptions: "Older trees may become more irregular or rounded on top"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Typically grows 30-50 feet tall (as tall as a 3-5 story building)"
+        exceptions: "Can be smaller in poor conditions or when pruned in landscapes"
+    
+    sometimes_true:
+      - feature_id: "TREE-SIZE-01"  # Short tree
+        conditions: "When young or growing in difficult conditions"
+        notes: "May stay under 20 feet tall in some landscape settings"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        conditions: "Older trees or those pruned in landscapes"
+        notes: "Crown may become more rounded or irregular with age"
+      
+      - feature_id: "BARK-TEXT-06"  # Fibrous bark
+        conditions: "Older trees"
+        notes: "Bark becomes more fibrous and stringy with age"
+      
+      - feature_id: "HABITAT-LOC-04"  # Desert edge habitat
+        conditions: "In its native range"
+        notes: "Naturally grows in dry mountain areas at the edges of desert regions"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "When planted in landscapes"
+        notes: "Grows well in cities and towns where people plant it"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        conditions: "Established trees"
+        notes: "Once established, can survive with very little water"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all its leaves seasonally"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Never has broad, flat leaves; only has scale-like leaves"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Never produces large, colorful flowers"
+      
+      - feature_id: "HABITAT-WATER-02"  # Wetland habitat
+        notes: "Doesn't grow in wet areas or marshes"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Not native to California, but is planted there; originally from Arizona, New Mexico, Texas, and Mexico"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Blue-gray or silver-gray scale-like leaves and shreddy reddish-brown bark"
+    memorable_comparison: "Looks like a Christmas tree wearing a silvery-blue costume with reddish-brown bark that peels like cinnamon sticks"
+    touch_tip: "The foliage feels softer than most evergreens, not prickly, and the bark feels rough and shaggy"
+    smell_tip: "Gently rub the leaves to smell a strong, spicy scent like cedar chest wood"
+    fun_fact: "Arizona Cypress can survive in super hot, dry places that would kill most other trees! Its blue-gray color actually helps reflect sunlight to keep it cooler in the desert heat."
+    
+    detective_steps:
+      - step: 1
+        instruction: "Look at the tree's color from a distance. Does it have blue-gray or silvery foliage that stands out from other trees?"
+        yes_next: 2
+        no_next: "Probably not an Arizona Cypress - check other cypress or juniper trees"
+      - step: 2
+        instruction: "Check the bark. Is it reddish-brown and peeling off in thin, shreddy strips?"
+        yes_next: 3
+        no_next: "Might be another blue-colored evergreen - check blue spruce or some junipers"
+      - step: 3
+        instruction: "Look closely at the leaves. Are they tiny scales that overlap like fish scales rather than needles?"
+        yes_next: 4
+        no_next: "Not an Arizona Cypress - check if it has needles instead of scales"
+      - step: 4
+        instruction: "Gently rub some leaves and smell your fingers. Do they have a strong, spicy cedar smell?"
+        yes_next: 5
+        no_next: "Might be a different cypress or cedar - check for other identifying features"
+      - step: 5
+        instruction: "Look for small round woody cones about the size of a marble. Can you find any on the tree or on the ground below?"
+        yes_next: "You found an Arizona Cypress!"
+        no_next: "If the tree has all other features but no cones, it still might be an Arizona Cypress, especially if it's young or recently pruned"
+  
+  # Seasonal timeline
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New growth at branch tips may be slightly lighter blue-green"
+      reproductive_activity: "Tiny male pollen cones release yellow pollen; female cones begin to form"
+      identification_tips: "Look for small yellow pollen cones that release pollen when touched"
+      kid_friendly_tip: "In spring, some branches might have tiny yellow bumps that puff out yellow dust (pollen) if you tap them - but don't breathe it in!"
+    
+    - season: "Summer" 
+      visual_changes: "Consistent blue-gray color; young cones start growing"
+      reproductive_activity: "Young seed cones grow and start to develop"
+      identification_tips: "Young green cones visible on some branches"
+      kid_friendly_tip: "The tree stays blue-gray and you might see small green round bumps starting to grow - these are baby cones"
+    
+    - season: "Fall"
+      visual_changes: "No color change; seed cones begin to mature"
+      reproductive_activity: "Seed cones start turning from green to brown"
+      identification_tips: "Cones changing from green to woody brown"
+      kid_friendly_tip: "While other trees change color, this one stays the same blue-gray shade, and the little green cones turn brown like tiny wooden balls"
+    
+    - season: "Winter"
+      visual_changes: "No change from fall; keeps all its foliage"
+      reproductive_activity: "Mature cones may open during dry periods to release seeds"
+      identification_tips: "Evergreen nature stands out when deciduous trees are bare"
+      kid_friendly_tip: "This tree keeps its blue-gray 'clothes' on all winter while other trees lose their leaves"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Blue-gray to silver-gray scale-like foliage"
+      reliability: "Very high"
+      visibility: "Visible from a distance"
+    - feature: "Shreddy, reddish-brown bark"
+      reliability: "High"
+      visibility: "Easy to see up close"
+    - feature: "Strong cedar-like smell when foliage is crushed"
+      reliability: "Very high"
+      visibility: "Requires interaction"
+    - feature: "Small round woody cones (when present)"
+      reliability: "High"
+      visibility: "Need to look closely"
+    - feature: "Pyramid shape (especially in young trees)"
+      reliability: "Medium"
+      visibility: "Visible from a distance"
+    
+  look_alike_species:
+    - species: "Italian Cypress (Cupressus sempervirens)"
+      differences: "Italian Cypress has a very narrow, columnar shape like a green pillar; Arizona Cypress is broader and more pyramid-shaped with bluer foliage"
+      identification_tip: "If the tree is very tall and skinny like a green column, it's probably Italian Cypress, not Arizona Cypress"
+    
+    - species: "Monterey Cypress (Cupressus macrocarpa)"
+      differences: "Monterey Cypress has bright green (not blue-gray) foliage and a more irregular, wind-swept form when mature"
+      identification_tip: "Arizona Cypress has distinctly blue-gray foliage compared to the bright green of Monterey Cypress"
+    
+    - species: "Blue Juniper varieties (Juniperus species)"
+      differences: "Junipers often have berry-like soft cones rather than woody round cones; many have more needle-like juvenile foliage"
+      identification_tip: "Check the cones - Arizona Cypress has woody, round cones rather than soft, berry-like cones"
+    
+  cultural_ecological_notes:
+    - "Drought-resistant tree that needs very little water once established"
+    - "Provides good shelter for birds and wildlife in dry areas"
+    - "Often planted as a windbreak or screen in hot, dry regions"
+    - "Wood is naturally rot-resistant but not commonly harvested"
+    - "Several cultivars with enhanced blue or silver foliage are popular in landscapes"
+    
+  range_within_california:
+    - "Not native to California but widely planted in landscapes"
+    - "Grows well in hot, dry areas like Southern California and Central Valley"
+    - "Tolerates many soil types including alkaline and poor soils"
+    - "Often planted in parks, gardens, and as street trees"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Southwestern Native American Groups"
+      physical_uses:
+        - "Used wood for building material because it resists rot and insects"
+        - "Made a tea from the leaves to treat colds and fevers"
+        - "Burned leaves and twigs in ceremonies for their fragrant smoke"
+        - "Used branches for making tools and bows"
+      symbolic_meaning:
+        - "Tree represented strength and survival in harsh conditions"
+        - "Considered a tree of protection in some traditions"
+        - "Its ability to survive drought symbolized resilience"
+        - "Included in stories about adapting to challenging environments"
+    
+    - culture: "Hispanic/Mexican American"
+      physical_uses:
+        - "Planted as living fences and windbreaks around homesteads"
+        - "Used wood for carving religious figures and small items"
+        - "Made a chest rub from leaves mixed with other plants for congestion"
+        - "Used resin as a natural glue and waterproofing material"
+      symbolic_meaning:
+        - "Often planted in cemeteries where it symbolized eternal life"
+        - "The evergreen nature represented constancy and faith"
+        - "Included in traditional home gardens for protection and good fortune"
+        - "Featured in stories about survival and determination"
+    
+    - culture: "Modern California Landscaping"
+      physical_uses:
+        - "Widely planted as drought-resistant ornamental trees in yards and parks"
+        - "Used as privacy screens and windbreaks in dry regions"
+        - "Planted to reduce erosion on dry slopes"
+        - "Selected for blue foliage to add color contrast in landscape designs"
+      symbolic_meaning:
+        - "Represents water-wise gardening and sustainability"
+        - "Symbolizes adaptation to California's drought challenges"
+        - "Used in xeriscaping (low-water landscaping) as an example of drought-adaptation"
+        - "Increasingly popular as awareness of water conservation grows"
+  
+  # Additional physical characteristics
+  physical_characteristics:
+    height_range: "30-50 feet (about as tall as a 3-5 story building)"
+    growth_rate: "Moderate, growing 1-2 feet per year when young"
+    crown_spread: "15-25 feet wide when mature (about the width of a two-car garage)"
+    lifespan: "Up to 150 years in good conditions"
+    trunk_diameter: "Up to 2 feet across (about as wide as a car tire)"
+    root_system: "Moderately deep with spreading roots, good for stabilizing soil"
+    toxicity: "Not toxic to humans, but consuming large amounts of foliage may upset stomach"
+    
+  conservation_status:
+    status: "Least Concern (not threatened in its native range)"
+    threats: 
+      - "Habitat loss in some parts of its native range"
+      - "Climate change affecting suitable habitat"
+      - "Wildfire in extreme drought conditions"
+      - "Cypress canker disease in some areas"
+    protection_efforts:
+      - "Protection in national forests and parks within its native range"
+      - "Cultivation of many varieties preserves genetic diversity"
+      - "Research on disease resistance and drought tolerance"
+      - "Use in restoration projects in suitable areas"
+    
+  # Decision tree mapping
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: LEAF-FORM-05"  # Scale-like leaves
+      - "feature_id: LEAF-COLOR-03"  # Blue-green
+      - "feature_id: BARK-COLOR-03"  # Red bark
+    confirmation_features:
+      - "feature_id: BARK-TEXT-03"  # Peeling bark
+      - "feature_id: CONE-SHAPE-01"  # Round cones
+      - "feature_id: SENSORY-SMELL-01"  # Aromatic leaves
+      - "feature_id: ECO-ADAPT-01"  # Drought tolerant
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-COLOR-03", "TREE-FORM-01", "LEAF-TYPE-02"]  # Blue-green, pyramidal shape, evergreen
+      - distance: "from_nearby"
+        features_to_check: ["BARK-COLOR-03", "BARK-TEXT-03", "LEAF-FORM-05"]  # Red bark, peeling bark, scale-like leaves
+      - distance: "close_inspection"
+        features_to_check: ["SENSORY-SMELL-01", "CONE-SHAPE-01", "CONE-SIZE-01"]  # Aromatic smell, round cones, small cones
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "LEAF-COLOR-03", "LEAF-FORM-05"]
+        notes: "Male pollen cones may provide additional confirmation"
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-COLOR-03", "BARK-COLOR-03", "TREE-FORM-01"]
+        notes: "Blue color more distinctive compared to other trees at this time"
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "LEAF-COLOR-03", "BARK-COLOR-03"]
+        notes: "Evergreen nature stands out as deciduous trees change color"
+      winter:
+        reliability: "Very high"
+        key_features: ["LEAF-TYPE-02", "LEAF-COLOR-03", "CONE-SHAPE-01"]
+        notes: "Easier to identify when deciduous trees are bare"
+    misidentification_risks: "Most often confused with other cypress species, blue junipers, or sometimes blue spruces"

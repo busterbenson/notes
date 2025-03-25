@@ -1,0 +1,301 @@
+tree:
+  common_name: "European Silver Fir"
+  scientific_name: "Abies alba"
+  family: "Pinaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A majestic evergreen conifer native to mountainous regions of central and southern Europe, reaching heights of 150-200 feet. Distinguished by its silvery-white underside of needles, cylindrical upright cones, and smooth gray bark that becomes fissured with age."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Flat, dark green needles with two silvery-white bands on undersides; needles arranged in a comb-like pattern along branches"
+    secondary_markers: "Upright cylindrical cones (4-6 inches long); smooth gray bark on young trees that develops fissures and becomes grayish-brown with age"
+    seasonal_markers: "Fresh light green growth in spring; cones mature from greenish to brown and disintegrate on the tree in fall"
+    similar_species_differentiation: "Unlike White Fir (Abies concolor), has more distinct silvery-white bands on needle undersides; unlike Douglas-fir, has upright cones without 'mouse tail' bracts"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles year-round, typically for 8-12 years before shedding"
+      
+      - feature_id: "NEEDLE-SHAPE-01"  # Flat needles
+        notes: "Soft, flat needles with distinctly grooved upper surface and two silvery-white stomatal bands beneath"
+      
+      - feature_id: "CONE-POS-01"  # Upright cones
+        notes: "Cones stand straight up on branches, cylindrical in shape, 4-6 inches long"
+      
+      - feature_id: "NEEDLE-FEAT-03"  # White lines below
+        notes: "Needles have two very distinct silvery-white bands on the undersides"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        notes: "Not native to California; native to mountainous regions of central and southern Europe"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with one straight main trunk"
+        exceptions: "May occasionally develop multiple trunks if the main leader is damaged"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Maintains a classic pyramidal or conical shape throughout most of its life"
+        exceptions: "Very old trees may develop a more flattened or irregular crown"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Mature trees can reach 150-200 feet in height"
+        exceptions: "May remain smaller in cultivation or poor growing conditions"
+    
+    sometimes_true:
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees before bark develops texture"
+        notes: "Bark is smooth and silvery-gray when the tree is young"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Mature trees"
+        notes: "Bark becomes fissured and grayish-brown as the tree ages"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        conditions: "When needles are crushed"
+        notes: "Crushed needles have a pleasant resinous, balsamic scent"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "When planted in landscapes"
+        notes: "Most likely to be found in botanical gardens and arboreta in cooler regions of California"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all its needles at once seasonally"
+      
+      - feature_id: "NEEDLE-FEAT-01"  # Sharp pointed
+        notes: "Needles have notched or slightly rounded tips, not sharp or pokey"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Not native to California; native to Europe"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Flat needles with silvery-white stripes underneath like tiny racing stripes"
+    memorable_comparison: "The needles are arranged like the teeth of a comb on the branches"
+    touch_tip: "The needles feel soft and flat, not pokey, and you can bend them without breaking"
+    smell_tip: "Gently crush a needle to smell a sweet, Christmas tree-like scent"
+    fun_fact: "European Silver Firs can live for over 500 years - that's older than the United States! In Europe, they grow so tall that you'd need to climb 15-20 stories to reach the top of the biggest ones."
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the needles. Are they flat and arranged in neat rows along the sides of the branches like a comb?"
+        yes_next: 2
+        no_next: "Not a European Silver Fir - try another conifer"
+      - step: 2
+        instruction: "Turn over a branch. Do the needles have silvery-white stripes underneath?"
+        yes_next: 3
+        no_next: "Not a European Silver Fir - check if it might be another fir species"
+      - step: 3
+        instruction: "Look up high in the tree during summer or fall. Can you see tall, cylinder-shaped cones standing straight up on the branches?"
+        yes_next: 4
+        no_next: "Might still be a European Silver Fir, but check the bark - is it gray with shallow grooves on older trees?"
+      - step: 4
+        instruction: "Is the tree growing in a botanical garden, park, or ornamental landscape in California? (Not growing wild in a forest)"
+        yes_next: "You found a European Silver Fir!"
+        no_next: "European Silver Firs aren't native to California, so they're usually only found where people have planted them"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Light green new growth appears at branch tips"
+      reproductive_activity: "Small male (pollen) cones appear at branch tips; female cones begin forming higher in the crown"
+      identification_tips: "Look for the contrast between bright new growth and older, darker needles"
+      kid_friendly_tip: "In spring, the tips of branches get bright new 'baby needles' that are a lighter green color"
+    
+    - season: "Summer" 
+      visual_changes: "New growth matures to match older needles"
+      reproductive_activity: "Upright green to purplish cones develop on upper branches"
+      identification_tips: "Look for cylindrical upright cones 4-6 inches long"
+      kid_friendly_tip: "Look high up in the tree for tall green or purple cones standing up like candles on a cake"
+    
+    - season: "Fall"
+      visual_changes: "No color change as it remains evergreen"
+      reproductive_activity: "Cones mature to brown and begin to disintegrate on the tree"
+      identification_tips: "Mature cones turn brown and release seeds while still on the tree"
+      kid_friendly_tip: "Unlike maple trees that drop colorful leaves, this tree stays green all fall but its cones break apart to release seeds"
+    
+    - season: "Winter"
+      visual_changes: "Snow may collect on the flat needle arrangements"
+      reproductive_activity: "Dormant, no reproductive activity"
+      identification_tips: "Dark green foliage with silver undersides contrasts with snowy landscapes"
+      kid_friendly_tip: "The dark green needles with white underneath look extra pretty when covered with snow"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Flat needles with two silvery-white bands underneath, arranged in flat sprays"
+      reliability: "Very high"
+      visibility: "Easy to see from nearby"
+    - feature: "Upright cylindrical cones 4-6 inches long"
+      reliability: "High"
+      visibility: "Visible from ground in summer/fall, but high in tree"
+    - feature: "Resinous, balsamic scent when needles are crushed"
+      reliability: "Medium"
+      visibility: "Requires interaction"
+    - feature: "Needles arranged in a comb-like pattern"
+      reliability: "High"
+      visibility: "Visible from nearby"
+    
+  look_alike_species:
+    - species: "White Fir (Abies concolor)"
+      differences: "White Fir has longer needles with less distinct silvery bands and more blue-green color; European Silver Fir has more clearly defined silvery-white stripes on needle undersides"
+      identification_tip: "European Silver Fir needles have more contrasting silver bands underneath and are typically arranged more flatly along the branches"
+    
+    - species: "Nordmann Fir (Abies nordmanniana)"
+      differences: "Nordmann Fir has glossier, darker green needles with less pronounced silver bands beneath"
+      identification_tip: "European Silver Fir has more distinct silver-white bands on the needle undersides than Nordmann Fir"
+    
+    - species: "Noble Fir (Abies procera)"
+      differences: "Noble Fir has stiffer, blue-green needles that curve upward more dramatically"
+      identification_tip: "European Silver Fir needles lie flatter along the branch in more of a comb-like pattern"
+    
+    - species: "Douglas-fir (Pseudotsuga menziesii)"
+      differences: "Douglas-fir has pendulous cones with distinctive three-pronged bracts; European Silver Fir has upright cones without bracts showing"
+      identification_tip: "Check the cones - upright without bracts for European Silver Fir, hanging with 'mouse tail' bracts for Douglas-fir"
+  
+  cultural_ecological_notes:
+    - "Historically used for timber, particularly for construction, furniture, and musical instruments due to its straight grain and resonance qualities"
+    - "Resin has been used in traditional medicine for treating respiratory ailments and as an antiseptic"
+    - "Provides important winter habitat for wildlife in its native European range"
+    - "Often used as Christmas trees in Europe"
+    - "Wood historically used for paper production and construction"
+    
+  range_within_california:
+    - "Not native to California but occasionally planted as an ornamental or specimen tree"
+    - "Uncommon in California landscapes and limited to areas with suitable cool, moist conditions"
+    - "Generally does not thrive in California's Mediterranean climate except in cooler coastal or mountainous areas"
+    - "Primarily found in botanical gardens, arboreta, and specialty conifer collections"
+    
+  # Cultural significance section
+  cultural_significance:
+    - culture: "European alpine communities"
+      physical_uses:
+        - "Used the timber for construction of buildings, particularly in mountainous regions"
+        - "Harvested resin (known as 'Strasburg turpentine') for medicinal purposes and varnishes"
+        - "Used as a traditional Christmas tree in parts of Europe"
+        - "Wood favored for making matchsticks due to its straight grain"
+      symbolic_meaning:
+        - "Symbolized longevity and resilience in harsh mountain conditions"
+        - "Featured in folklore and fairy tales of forested mountain regions"
+        - "Associated with ancient forest spirits and woodland deities in pre-Christian Europe"
+    
+    - culture: "Traditional European forestry"
+      physical_uses:
+        - "Prized for musical instrument construction, especially violins and pianos"
+        - "Used for interior woodwork in buildings"
+        - "Valued for fine furniture and cabinetry"
+        - "Historically used for masts of sailing ships due to its strength and straightness"
+      symbolic_meaning:
+        - "Represented sustainable forestry practices in parts of central Europe for centuries"
+        - "Symbol of responsible forest stewardship in the Black Forest region of Germany"
+        - "Associated with traditional craftsmanship and high-quality timber products"
+    
+    - culture: "Modern horticultural use"
+      physical_uses:
+        - "Planted as an ornamental specimen tree in large landscapes"
+        - "Used in botanical collections showcasing European forest species"
+        - "Appreciated for its stately form and height in formal garden design"
+      symbolic_meaning:
+        - "Represents connection to European forestry heritage"
+        - "Symbolizes the majesty of old-growth forests to modern urban dwellers"
+        - "Serves as an educational tool about European forest ecosystems"
+  
+  # Physical characteristics section
+  physical_characteristics:
+    height_range: "150-200 feet when mature in native range; typically smaller in cultivation"
+    growth_rate: "Moderate, about 12-24 inches per year when young"
+    crown_spread: "20-30 feet wide at maturity"
+    lifespan: "300-600 years"
+    trunk_diameter: "4-6 feet at maturity"
+    root_system: "Deep taproot with spreading lateral roots"
+    toxicity: "Generally non-toxic but sap may cause skin irritation in sensitive individuals"
+  
+  # Conservation status section
+  conservation_status:
+    status: "Least Concern globally, but rare in California as it's not native"
+    threats: 
+      - "Climate change affecting its native range in Europe"
+      - "Air pollution can damage needles and reduce vigor"
+      - "Limited habitat suitability in California restricts where it can be grown"
+    protection_efforts: "Protected in various European national parks and natural reserves; no specific conservation efforts in California"
+  
+  kid_friendly_cultural_significance:
+    - culture: "Mountain People in Europe"
+      physical_uses:
+        - "Built houses and barns from the strong, straight wood"
+        - "Made tiny, thin pieces of wood for matchsticks"
+        - "Used the sticky sap as medicine for coughs and cuts"
+        - "Brought the trees inside at Christmas time for decoration"
+      symbolic_meaning:
+        - "Believed the trees helped protect their villages from snow avalanches"
+        - "Thought that the trees' size and age showed how strong and patient nature can be"
+        - "Told stories about forest spirits who lived in the biggest, oldest trees"
+    
+    - culture: "Musical Instrument Makers"
+      physical_uses:
+        - "Used the special wood to make violins that sound beautiful"
+        - "Carved parts for pianos that need to be very precise"
+        - "Made wooden flutes and recorders from the straight-grained wood"
+      symbolic_meaning:
+        - "Valued the tree for its ability to carry beautiful sounds"
+        - "Passed down knowledge about which trees make the best instruments"
+        - "Believed trees that grow slowly in cool mountains make wood that creates the most special music"
+      
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: NEEDLE-SHAPE-01"  # Flat needles
+      - "feature_id: CONE-POS-01"  # Upright cones
+    
+    confirmation_features:
+      - "feature_id: NEEDLE-FEAT-03"  # White lines below
+      - "feature_id: SENSORY-SMELL-01"  # Aromatic leaves
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-01", "LEAF-TYPE-02"]  # Pyramidal shape, evergreen
+      
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-SHAPE-01", "NEEDLE-FEAT-03"]  # Flat needles, white lines below
+      
+      - distance: "close_inspection"
+        features_to_check: ["NEEDLE-FEAT-03", "SENSORY-SMELL-01"]  # White lines below, aromatic
+    
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "NEEDLE-SHAPE-01", "TREE-FORM-01"]
+        notes: "New growth provides color contrast"
+      
+      summer:
+        reliability: "Very high"
+        key_features: ["CONE-POS-01", "NEEDLE-SHAPE-01", "NEEDLE-FEAT-03"]
+        notes: "Cones are visible on upper branches"
+      
+      fall:
+        reliability: "High" 
+        key_features: ["LEAF-TYPE-02", "NEEDLE-SHAPE-01", "CONE-POS-01"]
+        notes: "Mature cones turn brown before disintegrating"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["LEAF-TYPE-02", "TREE-FORM-01", "NEEDLE-SHAPE-01"]
+        notes: "Dark green color stands out in winter landscape"
+    
+    misidentification_risks:
+      - species: "White Fir (Abies concolor)"
+        distinguishing_features: "European Silver Fir has more distinct silvery bands on undersides of needles; White Fir has more blue-green color"
+      - species: "Douglas-fir (Pseudotsuga menziesii)"
+        distinguishing_features: "European Silver Fir has upright cones without bracts; Douglas-fir has hanging cones with distinctive bracts"
+      - species: "Nordmann Fir (Abies nordmanniana)"
+        distinguishing_features: "European Silver Fir has more pronounced silver bands on needle undersides; Nordmann has glossier, darker needles"
+  
+  wildlife_value:
+    - "Seeds eaten by birds and small mammals in native range"
+    - "Dense evergreen foliage provides winter shelter for birds"
+    - "In Europe, supports specific insect species adapted to this tree"
+    - "Large old trees develop cavities used by nesting birds and mammals"
+    - "In California, primarily provides structural habitat as it's not part of the native ecosystem"

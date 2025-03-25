@@ -1,0 +1,290 @@
+tree:
+  common_name: "Blue Spruce"
+  scientific_name: "Picea pungens"
+  family: "Pinaceae"
+  
+  # Basic summary
+  summary: "A distinctive evergreen tree with a perfect pyramid shape and silvery-blue needles that stick out stiffly around the twigs. It has orange-brown bark that flakes into thin scales, hanging cylindrical cones, and sharp, pointed needles that have a distinctive blue color often visible from far away."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Striking silvery-blue needles that stick out all around the twig; symmetrical pyramid shape; sharp, stiff needles that are painful to the touch"
+    secondary_markers: "Needles that are square in cross-section and can be rolled between fingers; cylindrical hanging cones 3-4 inches long; orange-brown flaky bark"
+    seasonal_markers: "Little seasonal change as it's evergreen year-round; new growth appears at branch tips in spring as lighter blue-green"
+    similar_species_differentiation: "Unlike other spruces, has distinctly bluer needles; unlike firs, has painful pointed needles and hanging (not upright) cones"
+  
+  # Core features
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles year-round"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Needles attach individually to the twig, not in bundles or clusters"
+      
+      - feature_id: "NEEDLE-SHAPE-02"  # Square needles
+        notes: "Needles are square in cross-section and roll easily between fingers"
+      
+      - feature_id: "CONE-POS-02"  # Hanging cones
+        notes: "Cones hang downward from branches"
+      
+      - feature_id: "LEAF-COLOR-03"  # Blue-green
+        notes: "Needles have a distinctive silvery-blue to blue-green color"
+      
+      - feature_id: "NEEDLE-FEAT-01"  # Sharp pointed
+        notes: "Needles have very sharp, stiff points that can be painful to touch"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with one main trunk"
+        exceptions: "May occasionally develop multiple leaders if the top is damaged"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Grows in a very symmetrical, pyramid shape"
+        exceptions: "Shape may be less perfect in wild settings or with age"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Usually grows 30-60 feet tall in landscaped settings, taller in the wild"
+        exceptions: "Cultivated dwarf varieties stay much shorter"
+      
+      - feature_id: "BARK-COLOR-04"  # Brown bark
+        notes: "Bark is typically gray when young, becoming orange-brown and flaky with age"
+        exceptions: "Young trees have smoother, grayer bark"
+      
+      - feature_id: "CONE-SHAPE-02"  # Elongated cones
+        notes: "Produces cylindrical cones 3-4 inches long"
+        exceptions: "Cone size can vary somewhat with growing conditions"
+    
+    sometimes_true:
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees only"
+        notes: "Bark is relatively smooth when young"
+      
+      - feature_id: "BARK-TEXT-04"  # Plated bark
+        conditions: "Older trees"
+        notes: "Bark becomes scaly with thin plates as the tree ages"
+      
+      - feature_id: "HABITAT-LOC-02"  # Mountain habitat
+        conditions: "In its native range"
+        notes: "Naturally grows in mountain regions of the western United States"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        conditions: "When found in California landscapes"
+        notes: "Not native to California, but widely planted as an ornamental"
+      
+      - feature_id: "CONE-SIZE-03"  # Large cones
+        conditions: "On mature trees in good conditions"
+        notes: "Cones can reach 3-4 inches in length, larger than many other spruces"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all needles seasonally"
+      
+      - feature_id: "NEEDLE-SHAPE-01"  # Flat needles
+        notes: "Needles are square, not flat like fir needles"
+      
+      - feature_id: "CONE-POS-01"  # Upright cones
+        notes: "Cones never stand upright on branches like fir cones"
+      
+      - feature_id: "NEEDLE-FEAT-02"  # Soft flexible
+        notes: "Needles are never soft and flexible; always stiff and sharp"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Blue needles that stick out all around the twig and are super sharp - like blue hedgehog spikes all over the tree!"
+    memorable_comparison: "The tree looks like it's been painted with blue-silver paint, like the silvery tinsel on a Christmas tree"
+    touch_tip: "Be very careful! These needles are the sharpest of all spruces. Gently touch the side of a needle instead of the pointy end."
+    smell_tip: "Carefully crush a needle to smell a strong, fresh evergreen scent that might remind you of Christmas trees"
+    fun_fact: "Blue Spruce is Colorado's state tree! Its blue color comes from a special waxy coating that helps protect the tree in harsh mountain weather - like the tree is wearing its own sunscreen and raincoat all in one!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the tree's color from a distance. Does it have a distinctive silvery-blue color that stands out from other evergreens nearby?"
+        yes_next: 2
+        no_next: "If it's dark green without blue coloring, it's probably a different type of spruce or fir"
+      - step: 2
+        instruction: "Look at the tree shape. Is it a nearly perfect pyramid shape with horizontal branches?"
+        yes_next: 3
+        no_next: "If it has a different shape, like a rounded top or drooping branches, it's probably not a Blue Spruce"
+      - step: 3
+        instruction: "CAREFULLY touch the needles (don't grab them). Are they very sharp and stiff, almost like they could poke through your glove?"
+        yes_next: 4
+        no_next: "If the needles are soft or not painful to touch, it's probably a different evergreen tree"
+      - step: 4
+        instruction: "Try rolling a needle between your fingers. Does it roll easily (because it's square)?"
+        yes_next: "You found a Blue Spruce! The combination of blue color, sharp needles, and square shape is a perfect match."
+        no_next: "If it doesn't roll easily because it's flat, it might be a fir rather than a spruce"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New growth emerges at branch tips as light blue-green buds that expand into new needles; pollen cones may appear"
+      reproductive_activity: "Male cones release yellow pollen; female cones begin to develop"
+      identification_tips: "Look for lighter colored new growth at branch tips"
+      kid_friendly_tip: "In spring, look for the tips of branches turning a lighter blue-green color as new needles grow"
+    
+    - season: "Summer" 
+      visual_changes: "All needles reach mature silvery-blue color; young cones are light green to purplish"
+      reproductive_activity: "Young female cones continue to develop"
+      identification_tips: "Blue color most vibrant; developing cones visible"
+      kid_friendly_tip: "Summer is when the blue color really stands out and you might see young green or purple cones growing"
+    
+    - season: "Fall"
+      visual_changes: "No color change as it remains evergreen; cones mature to light brown"
+      reproductive_activity: "Cones mature and begin to open, releasing seeds"
+      identification_tips: "No seasonal color change; mature brown cones visible"
+      kid_friendly_tip: "While other trees change color in fall, Blue Spruce stays the same blue color, and its cones turn brown"
+    
+    - season: "Winter"
+      visual_changes: "No major change; snow may collect on branches highlighting the blue color against white snow"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Blue color often stands out more against winter landscape"
+      kid_friendly_tip: "In winter, the blue color looks even more magical against the snow, like a blue and white castle"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Silvery-blue needle color"
+      reliability: "Very high"
+      visibility: "High - visible from distance"
+    - feature: "Sharp, stiff needles that are painful to touch"
+      reliability: "Very high"
+      visibility: "Medium - need to touch carefully"
+    - feature: "Square needles that roll between fingers"
+      reliability: "High"
+      visibility: "Low - requires handling"
+    - feature: "Perfect pyramid shape"
+      reliability: "High" 
+      visibility: "High - visible from distance"
+    - feature: "Orange-brown, flaky bark on mature trees"
+      reliability: "Medium"
+      visibility: "Medium - need to observe trunk"
+    
+  look_alike_species:
+    - species: "Norway Spruce (Picea abies)"
+      differences: "Norway Spruce has dark green (not blue) needles; more pendulous branch tips; larger cones"
+      identification_tip: "If needles are dark green rather than blue and branch tips droop downward, it's likely Norway Spruce"
+    
+    - species: "Engelmann Spruce (Picea engelmannii)"
+      differences: "Engelmann Spruce has shorter, softer needles with less blue color; thinner bark; grows at higher elevations in the wild"
+      identification_tip: "If needles are less intensely blue and not as sharp, and the tree is growing at high elevation, it might be Engelmann Spruce"
+    
+    - species: "White Fir (Abies concolor)"
+      differences: "White Fir has flat (not square) needles arranged more horizontally; upright (not hanging) cones; softer needles"
+      identification_tip: "Try rolling a needle - if it doesn't roll easily and feels flat, it's probably a fir, not a spruce"
+    
+  cultural_significance:
+    - culture: "Ute and other Western Native American tribes"
+      physical_uses:
+        - "Used the strong, straight wood for tool handles and shelter frames"
+        - "Made tea from the needles as a source of vitamin C"
+        - "Applied the sap to cuts and wounds as a natural antiseptic"
+        - "Used the roots for weaving baskets and containers"
+      symbolic_meaning:
+        - "Blue color associated with sky and water in some tribal beliefs"
+        - "Evergreen nature symbolized endurance through harsh mountain winters"
+    
+    - culture: "American landscapers and gardeners"
+      physical_uses:
+        - "Extensively planted as ornamental trees for their blue color"
+        - "Used as living Christmas trees that can be planted after the holidays"
+        - "Planted as windbreaks and privacy screens"
+        - "Selected and bred for various blue colors and sizes for gardens"
+      symbolic_meaning:
+        - "State tree of Colorado, representing the beauty of the Rocky Mountains"
+        - "Symbol of mountain wilderness brought into urban settings"
+    
+    - culture: "Modern Christmas traditions"
+      physical_uses:
+        - "Popular as a premium Christmas tree due to perfect shape and blue color"
+        - "Branches used in holiday wreaths and decorations"
+        - "Growing as living Christmas trees that families can decorate for years"
+        - "Cultivated on Christmas tree farms for seasonal harvesting"
+      symbolic_meaning:
+        - "Represents winter celebrations and family traditions"
+        - "Blue color symbolizes winter sky and snow scenes"
+    
+  cultural_ecological_notes:
+    - "Creates important habitat for wildlife in mountain regions of its native range"
+    - "Provides shelter and nesting sites for birds, especially in winter"
+    - "Seeds are eaten by squirrels, birds, and small mammals"
+    - "Deep roots help prevent soil erosion on mountain slopes"
+    - "Tolerates urban pollution better than many other conifers"
+    
+  range_within_california:
+    - "Not native to California"
+    - "Widely planted as an ornamental tree in parks, campuses, and private gardens throughout the state"
+    - "Performs best in cooler regions of Northern California and mountain areas"
+    - "Can struggle in hot, dry parts of Southern California without adequate irrigation"
+    - "Native to the Rocky Mountain regions of the western United States"
+    
+  physical_characteristics:
+    height_range: "30-60 feet tall in landscapes, up to 75 feet in native range (about as tall as a 3-6 story building)"
+    growth_rate: "Slow to moderate, typically growing 6-12 inches per year"
+    crown_spread: "15-25 feet wide when mature (about the width of a two-car garage)"
+    lifespan: "80-150 years in favorable conditions"
+    trunk_diameter: "1-2 feet across when mature (about as wide as a dinner plate)"
+    root_system: "Deep taproot with spreading lateral roots, making it wind resistant"
+    toxicity: "Not toxic to humans or animals"
+    
+  conservation_status:
+    status: "Least Concern in its native range; common in cultivation"
+    threats:
+      - "Climate change bringing drier conditions to native mountain habitats"
+      - "Spruce beetle outbreaks becoming more frequent with warming temperatures"
+      - "Cytospora canker and other diseases in landscape settings"
+    protection_efforts:
+      - "Protected in national forests throughout its native range"
+      - "Development of disease-resistant cultivars for landscaping"
+      - "Research on climate adaptation for forest management"
+    
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: NEEDLE-ARRANGE-01"  # Single needles
+      - "feature_id: LEAF-COLOR-03"  # Blue-green
+    confirmation_features:
+      - "feature_id: NEEDLE-SHAPE-02"  # Square needles
+      - "feature_id: NEEDLE-FEAT-01"  # Sharp pointed
+      - "feature_id: TREE-FORM-01"  # Pyramidal shape
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-TYPE-02", "TREE-FORM-01", "LEAF-COLOR-03"]  # Evergreen, pyramidal, blue-green
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-ARRANGE-01", "CONE-POS-02"]  # Single needles, hanging cones
+      - distance: "close_inspection"
+        features_to_check: ["NEEDLE-SHAPE-02", "NEEDLE-FEAT-01"]  # Square needles, sharp pointed
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "LEAF-COLOR-03", "NEEDLE-FEAT-01"]
+        notes: "New growth provides good contrast at branch tips"
+      summer:
+        reliability: "Very high"
+        key_features: ["LEAF-COLOR-03", "NEEDLE-SHAPE-02", "TREE-FORM-01"]
+        notes: "Blue color most vivid; young cones may be visible"
+      fall:
+        reliability: "High" 
+        key_features: ["LEAF-TYPE-02", "LEAF-COLOR-03", "CONE-SHAPE-02"]
+        notes: "Blue color stands out as deciduous trees change color; mature cones visible"
+      winter:
+        reliability: "High"
+        key_features: ["LEAF-COLOR-03", "TREE-FORM-01", "NEEDLE-FEAT-01"]
+        notes: "Blue color often contrasts beautifully with snow"
+    misidentification_risks:
+      - "White Fir - similar blue-gray color but with flat needles and upright cones"
+      - "Other spruce species - similar growth habit but lacking the intense blue color"
+      - "Cultivated varieties of other conifers bred for blue color - check needle arrangement and cone position"
+      
+  wildlife_value:
+    food_source:
+      - "Seeds eaten by squirrels, crossbills, and other seed-eating birds"
+      - "Grouse and other birds eat buds and young growth"
+      - "Porcupines may eat the bark in winter"
+      - "Several butterfly and moth species use needles as larval food"
+    habitat_provided:
+      - "Dense branching provides excellent nesting sites for birds"
+      - "Year-round shelter for birds in winter"
+      - "Lower branches create protected areas used by rabbits and other small mammals"
+      - "Fallen needles create acidic soil conditions for specialized plants"
+    ecosystem_role: "In its native range, provides important wildlife habitat in mountain forests; in landscape settings, offers islands of habitat for birds and small animals in urban areas"

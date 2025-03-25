@@ -1,0 +1,330 @@
+tree:
+  common_name: "London Plane Tree"
+  scientific_name: "Platanus × acerifolia"
+  family: "Platanaceae"
+  
+  # Basic summary information
+  summary: "A large deciduous tree with distinctive camouflage-patterned bark that peels in patches to reveal cream, green, and tan colors underneath. It has large, maple-like leaves with 3-5 lobes and produces round, spiky seed balls that hang from branches. This hybrid tree is extremely popular for urban settings due to its tolerance of pollution, compacted soil, and pruning."
+  
+  # Identification priority
+  identification_path:
+    primary_markers: "Mottled bark that peels in patches revealing multiple colors; large maple-like leaves with 3-5 pointed lobes; round, spiky seed balls hanging from branches"
+    secondary_markers: "Very tall with widespread canopy; seeds balls often hanging in pairs or groups; flaking bark creates camouflage pattern"
+    seasonal_markers: "Round seed balls persist through winter; vibrant yellow-brown fall color; distinctive peeling bark visible year-round"
+    similar_species_differentiation: "Similar to American Sycamore but with more deeply lobed leaves and usually two seed balls per stem instead of one; similar leaf shape to maples but with alternate not opposite arrangement"
+  
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops all its leaves in the fall"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Leaves are single, not divided into leaflets"
+      
+      - feature_id: "LEAF-SHAPE-05"  # Lobed
+        notes: "Leaves have 3-5 pointed lobes resembling a maple leaf"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow in a staggered pattern along stems"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Bark peels in patches revealing multiple colors underneath"
+      
+      - feature_id: "FRUIT-TYPE-03"  # Berries present
+        notes: "Produces round, spiky seed balls about 1 inch in diameter"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Forms a broad, rounded canopy"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Grows 70-100 feet tall (as high as a 10-story building)"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        notes: "A hybrid tree first grown in Europe, not native to California"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk"
+        exceptions: "May develop multiple trunks if heavily pruned when young"
+      
+      - feature_id: "BARK-COLOR-04"  # Brown bark
+        notes: "Base bark color is brown to gray"
+        exceptions: "Constantly changing as outer bark peels away"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        notes: "Leaves usually turn yellow to yellow-brown in fall"
+        exceptions: "May show less fall color in mild climates"
+      
+      - feature_id: "WINTER-FEAT-02"  # Persistent fruits
+        notes: "Seed balls often remain on the tree into winter"
+        exceptions: "Some may drop earlier, especially in storms"
+    
+    sometimes_true:
+      - feature_id: "LEAF-FALL-05"  # Brown fall color
+        conditions: "Depending on weather conditions and location"
+        notes: "Leaves may turn brown in fall without much color"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "One of the most urban-tolerant trees"
+        notes: "Extremely common in cities and towns"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        conditions: "Can grow near streams and water"
+        notes: "Often planted near water in parks"
+      
+      - feature_id: "GEO-REGION-03"  # Southern California
+        conditions: "Planted in landscapes"
+        notes: "Common street tree in Southern California cities"
+      
+      - feature_id: "GEO-REGION-02"  # Central California
+        conditions: "Planted in landscapes"
+        notes: "Common street tree in Central California cities"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "Planted in landscapes"
+        notes: "Common street tree in Northern California cities"
+      
+      - feature_id: "BARK-COLOR-02"  # White bark
+        conditions: "When outer bark layers peel away"
+        notes: "Inner bark often appears creamy white to light green"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops its leaves in fall"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Never has opposite leaves (unlike maples)"
+      
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        notes: "Has large, broad leaves, not tiny scales"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Never has thorns or spines on branches"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Not native to California; it's a hybrid first developed in Europe"
+  
+  # Kid-friendly identification - expanded with open-ended, creative descriptions
+  kid_friendly_identification:
+    primary_identifier: "Bark that peels like puzzle pieces showing cream, green, and brown colors underneath, like camouflage"
+    memorable_comparison: "The tree looks like it's playing hide-and-seek with its camouflage pattern bark, and the seed balls look like tiny spiky planets hanging from the branches"
+    touch_tip: "The leaves feel rough like sandpaper; the bark feels smooth where it has freshly peeled"
+    smell_tip: "Crushing a leaf might give a faint earthy smell, but nothing strong or special"
+    fun_fact: "London Plane Trees were planted all over London and other big cities because they could survive in smoky, polluted air when other trees would die. The peeling bark helps the tree clean itself by shedding dirt and pollution!"
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the bark. Does it peel in patches showing cream, green, and brown colors underneath, creating a camouflage pattern?"
+        yes_next: 2
+        no_next: "Not a London Plane Tree - try looking at trees with different bark patterns"
+      - step: 2
+        instruction: "Look at the leaves (if present). Are they large, maple-like with 3-5 pointed lobes, growing alternately (not in pairs)?"
+        yes_next: 3
+        no_next: "Not a London Plane Tree - if the leaves grow in pairs directly opposite each other, it might be a maple"
+      - step: 3
+        instruction: "Check for round, spiky seed balls hanging from branches (especially visible in late summer through winter)"
+        yes_next: 4
+        no_next: "If it's early in the season, the seed balls might not be formed yet. Look for the distinctive camouflage bark."
+      - step: 4
+        instruction: "Is the tree very large, often planted along streets or in parks?"
+        yes_next: "You found a London Plane Tree!"
+        no_next: "If it's a smaller tree, it might be young or a different species"
+  
+  regional_notes:
+    - region: "Southern California"
+      notes: "Very common street and park tree in urban areas"
+      locations: "Found throughout cities, often in rows along boulevards"
+    - region: "Central California"
+      notes: "Popular street tree; tolerates heat and drought when established"
+      locations: "Common in Central Valley cities and towns"
+    - region: "Northern California"
+      notes: "Widely used street tree; handles variable conditions well"
+      locations: "Found in Bay Area cities and throughout Northern California urban areas"
+      
+  confirmation_checklist:
+    - feature: "Mottled, peeling bark with camouflage pattern"
+      reliability: "Very high"
+      visibility: "Easy to see from nearby"
+    - feature: "Large maple-like leaves with 3-5 lobes"
+      reliability: "High"
+      visibility: "Visible during growing season"
+    - feature: "Round, spiky seed balls"
+      reliability: "Very high"
+      visibility: "Visible when present on tree"
+    - feature: "Very tall with broad, spreading crown"
+      reliability: "Medium"
+      visibility: "Visible from a distance"
+    - feature: "Leaves arranged alternately on branches"
+      reliability: "High"
+      visibility: "Need to look closely at branches"
+    
+  look_alike_species:
+    - species: "American Sycamore (Platanus occidentalis)"
+      differences: "American Sycamore has less deeply lobed leaves; usually one seed ball per stem instead of pairs; tends to have more cream/white showing in bark"
+      identification_tip: "If the seed balls grow singly (not in pairs) and the leaves have shallow lobes, it's likely an American Sycamore"
+    - species: "California Sycamore (Platanus racemosa)"
+      differences: "California Sycamore has deeper spaces between leaf lobes; seed balls in strings of 3-7 instead of pairs; grows more irregularly"
+      identification_tip: "If the seed balls hang in strings of several (not pairs) and the tree has a more irregular shape, it's a California Sycamore"
+    - species: "Maple Trees (Acer species)"
+      differences: "Maples have opposite leaves (pairs directly across from each other); produce winged seed pairs ('helicopters'); don't have peeling, camouflage bark"
+      identification_tip: "If the leaves grow in pairs directly opposite each other, it's a maple, not a plane tree"
+      
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaves emerge light green; fuzzy green flowers appear"
+      reproductive_activity: "Produces small round fuzzy flower clusters"
+      identification_tips: "New leaf growth; distinctive bark remains visible"
+      kid_friendly_tip: "In spring, the tree gets new light green leaves and tiny fuzzy green flower balls"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of large green leaves; seed balls develop"
+      reproductive_activity: "Flower clusters develop into green seed balls"
+      identification_tips: "Full-sized leaves; developing seed balls; distinctive bark"
+      kid_friendly_tip: "In summer, the tree is covered with big green leaves and the spiky seed balls start to grow"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow-brown before dropping"
+      reproductive_activity: "Seed balls mature and start to break apart"
+      identification_tips: "Fall color change; mature seed balls; distinctive bark"
+      kid_friendly_tip: "The leaves turn yellow-brown in fall, and the seed balls turn from green to brown"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches reveal structure; seed balls often persist"
+      reproductive_activity: "Seed balls may remain on tree through winter"
+      identification_tips: "Persistent seed balls; very obvious peeling bark pattern"
+      kid_friendly_tip: "In winter, you can see the spiky seed balls hanging from bare branches, and the bark looks extra colorful"
+      
+  cultural_ecological_notes:
+    - "One of the most pollution-tolerant trees, making it popular for urban settings"
+    - "Can cause allergy problems due to tiny hairs from seed balls and young leaves"
+    - "Extensive root systems can lift sidewalks in constrained planting spaces"
+    - "Very long-lived trees that can survive over 200 years in urban settings"
+    - "Provides excellent shade due to large, spreading canopy"
+    
+  range_within_california:
+    - "Not native but planted throughout California in urban areas"
+    - "One of the most common street trees in California cities"
+    - "Thrives in most climates across the state except high mountains"
+    - "Performs well in coastal and inland areas"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "European Urban Planning"
+      physical_uses:
+        - "Planted extensively as street trees since the 1600s"
+        - "Used to create grand boulevards and avenues"
+        - "Planted in town squares and parks for shade"
+        - "Timber sometimes used for butcher blocks and furniture"
+      symbolic_meaning:
+        - "Symbol of successful urban forestry in harsh conditions"
+        - "Represents resilience and adaptability in city environments"
+        - "Associated with the greening of industrial European cities"
+        - "Named for London where it thrived despite coal-polluted air"
+    
+    - culture: "American Landscape Architecture"
+      physical_uses:
+        - "Used to create formal allées along grand boulevards"
+        - "Planted for quick-growing shade in city parks"
+        - "Featured in civic spaces to define public areas"
+        - "Used in large-scale urban renewal projects"
+      symbolic_meaning:
+        - "Represents civic pride and urban beautification"
+        - "Associated with Frederick Law Olmsted's landscape designs"
+        - "Symbol of durability in challenging urban settings"
+        - "Often planted as memorial or commemorative trees"
+    
+    - culture: "California Urban Forestry"
+      physical_uses:
+        - "Planted extensively as street trees throughout California cities"
+        - "Used in parking lots and plazas for shade"
+        - "Included in climate mitigation projects for cooling effects"
+        - "Planted along boulevards for grand visual statements"
+      symbolic_meaning:
+        - "Represents the European influence on California landscape design"
+        - "Symbol of established neighborhoods and historic districts"
+        - "Associated with civic improvement and urban livability"
+        - "Often used to create sense of place in commercial districts"
+    
+    - culture: "Modern Environmental Design"
+      physical_uses:
+        - "Valued for carbon sequestration in climate action plans"
+        - "Used for urban heat island mitigation"
+        - "Planted for stormwater management due to high water uptake"
+        - "Selected for air pollution filtering capabilities"
+      symbolic_meaning:
+        - "Represents the balance between tradition and modern environmental needs"
+        - "Symbol of cities' adaptation to climate challenges"
+        - "Increasingly seen as both problem (allergies, roots) and solution (cooling, carbon)"
+        - "Embodies the complexity of urban tree selection decisions"
+    
+  # Additional physical characteristics not captured in features
+  physical_characteristics:
+    height_range: "70-100 feet (as tall as a 7-10 story building)"
+    growth_rate: "Fast, about 2-3 feet per year when young"
+    crown_spread: "60-80 feet wide when mature (wider than a tennis court)"
+    lifespan: "Can live 150-200+ years under good conditions"
+    trunk_diameter: "4-8 feet across when fully grown (wider than a car)"
+    root_system: "Deep and widespread, can be aggressive near pavement"
+    toxicity: "Not toxic, but hairs from leaves and seed balls can cause respiratory irritation and allergies"
+    
+  conservation_status:
+    status: "Secure in cultivation; not endangered"
+    threats: 
+      - "Susceptible to anthracnose fungal disease in wet spring conditions"
+      - "Vulnerable to canker stain disease which can be fatal"
+      - "Urban stresses like soil compaction and limited root space"
+    protection_efforts:
+      - "Development of disease-resistant cultivars"
+      - "Urban forestry programs to ensure proper planting and care"
+      - "Historic tree preservation in many cities"
+    
+  # Decision tree mapping - helps with algorithm creation
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: BARK-TEXT-03"  # Peeling bark
+      - "feature_id: LEAF-SHAPE-05"  # Lobed
+      - "feature_id: FRUIT-TYPE-03"  # Berries present
+    confirmation_features:
+      - "feature_id: LEAF-ARRANGE-01"  # Alternate
+      - "feature_id: TREE-SIZE-03"  # Tall tree
+      - "feature_id: WINTER-FEAT-02"  # Persistent fruits
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-02", "TREE-SIZE-03", "BARK-TEXT-03"]  # Rounded crown, tall tree, peeling bark
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SHAPE-05", "FRUIT-TYPE-03", "BARK-COLOR-02"]  # Lobed leaves, seed balls, white/cream inner bark
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-ARRANGE-01", "LEAF-EDGE-02", "WINTER-FEAT-02"]  # Alternate arrangement, serrated edges, persistent fruits
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["BARK-TEXT-03", "LEAF-SHAPE-05", "LEAF-ARRANGE-01"]
+        notes: "Distinctive bark and emerging maple-like leaves with alternate arrangement"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-SHAPE-05", "BARK-TEXT-03", "FRUIT-TYPE-03"]
+        notes: "Full-sized leaves, distinctive bark, and developing seed balls"
+      
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-FALL-01", "FRUIT-TYPE-03", "BARK-TEXT-03"]
+        notes: "Yellow-brown fall color, mature seed balls, and distinctive bark"
+      
+      winter:
+        reliability: "Very high"
+        key_features: ["BARK-TEXT-03", "WINTER-FEAT-02", "TREE-FORM-02"]
+        notes: "Extremely distinctive bark pattern and persistent seed balls on bare branches"
+    misidentification_risks: "Most often confused with American Sycamore, California Sycamore, or maple trees"
+
+  wildlife_value:
+    nesting_sites: "Large branches provide good nesting sites for birds"
+    food_source: "Seeds eaten by some birds, especially finches and chickadees"
+    shelter: "Provides shade and cover for urban wildlife"
+    ecological_notes: "Though non-native, provides habitat value in urban areas; large size supports many birds"
+    
+  propagation_information:
+    growing_conditions: "Adaptable to many soil types; tolerates compaction"
+    water_needs: "Moderate water needs; somewhat drought-tolerant when established"
+    planting_tips: "Plant at least 20 feet from structures due to large size and root spread"
+    maintenance: "May need regular pruning in urban settings; prone to surface roots"
+    special_notes: "Notorious for producing allergenic particles; not recommended near buildings with outdoor air intakes"

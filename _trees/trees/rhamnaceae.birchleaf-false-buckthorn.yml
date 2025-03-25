@@ -1,0 +1,268 @@
+tree:
+  common_name: "Birchleaf False-buckthorn"
+  scientific_name: "Frangula betulifolia"
+  family: "Rhamnaceae"
+  
+  # Basic summary
+  summary: "A small deciduous tree or large shrub with birch-like oval leaves that have prominent parallel veins. It produces small star-shaped flowers that develop into red berries that turn black when ripe. The smooth gray bark and alternating leaves help identify this drought-tolerant species."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Oval to round birch-like leaves with prominent parallel veins; small red berries that turn black when ripe"
+    secondary_markers: "Smooth gray bark; alternating leaf arrangement; small star-shaped yellowish-green flowers; grows in dry washes and canyons"
+    seasonal_markers: "Yellow fall color; red to black berries in summer and fall; small yellowish-green flowers in spring"
+    similar_species_differentiation: "Unlike true buckthorns, lacks thorns; unlike birch trees, has alternate (not opposite) leaves and lacks the peeling bark; unlike cascara, leaves are more rounded and typically smaller"
+  
+  # Core features
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all leaves in winter and grows new ones in spring"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Leaves are all one piece, not divided into smaller leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow alternately along the stem, not directly across from each other"
+      
+      - feature_id: "LEAF-SHAPE-01"  # Oval
+        notes: "Leaves are oval to somewhat round, similar to birch leaves"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        notes: "Usually grows with multiple stems from the base"
+        exceptions: "Can occasionally have a single main trunk, especially when young"
+      
+      - feature_id: "TREE-SIZE-01"  # Short tree
+        notes: "Usually grows 6-15 feet tall, at the border between shrub and small tree"
+        exceptions: "May reach 20 feet in ideal conditions with plenty of water"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Bark is typically smooth with a gray color"
+        exceptions: "Very old stems may develop slight roughness"
+      
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        notes: "Bark is typically gray"
+        exceptions: "Young twigs can have a reddish tint"
+      
+    sometimes_true:
+      - feature_id: "FRUIT-TYPE-03"  # Berries present
+        conditions: "Summer through fall after flowering"
+        notes: "Small berry-like fruits that start red and ripen to black"
+      
+      - feature_id: "FLOWER-SIZE-02"  # Inconspicuous flowers
+        conditions: "Spring flowering season"
+        notes: "Small yellowish-green star-shaped flowers"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        conditions: "Often grows in dry washes, canyon bottoms, or near seasonal streams"
+        notes: "Prefers areas with at least some seasonal water but is drought-tolerant"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Autumn before leaf drop"
+        notes: "Leaves usually turn yellow before falling off in autumn"
+      
+      - feature_id: "HABITAT-LOC-04"  # Desert edge habitat
+        conditions: "Natural settings"
+        notes: "Often found in transition zones between desert and mountain areas"
+      
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Never keeps its leaves through winter in its native range"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Never grows into a large tree; stays small in stature"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Despite the 'buckthorn' name, does not have thorns or spines"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Never has peeling or exfoliating bark like true birch trees"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Round leaves with parallel lines (veins) that look like they're drawn with a ruler, and berries that change from red to black like tiny cherries"
+    memorable_comparison: "The leaves look like little green pancakes with lines drawn on them, and the berries look like miniature cherries that change color"
+    touch_tip: "Feel the leaf surface - it's slightly leathery but not stiff, and the lines (veins) are raised so you can feel them with your finger"
+    smell_tip: "The leaves don't have a strong smell, but if you gently crush one, you might notice a mild, earthy scent"
+    fun_fact: "This plant has special berries that change color as they grow up - from green to red to black - like they're getting a new outfit each time! Birds love to eat them and spread the seeds in their poop, planting new trees wherever they go."
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the size - is it a small tree or large shrub (not taller than your house)?"
+        yes_next: 2
+        no_next: "If it's a tall tree, it's not a Birchleaf False-buckthorn"
+      - step: 2
+        instruction: "Look at the leaves - are they oval to round with parallel lines (veins) running from the middle line to the edge?"
+        yes_next: 3
+        no_next: "If the leaves have a different pattern or shape, it's probably not a Birchleaf False-buckthorn"
+      - step: 3
+        instruction: "Check if the leaves alternate on the stem (not directly across from each other). Do they grow in an alternating pattern?"
+        yes_next: 4
+        no_next: "If leaves grow directly opposite each other, it's not a Birchleaf False-buckthorn"
+      - step: 4
+        instruction: "In summer or fall, look for small berries that may be red or black. Can you see any berries on the branches?"
+        yes_next: "You found a Birchleaf False-buckthorn!"
+        no_next: "If it's the right season and there are no berries, check the bark - is it smooth and gray? If yes, it might still be a Birchleaf False-buckthorn"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Leaves emerge light green; small yellowish-green star-shaped flowers appear"
+      reproductive_activity: "Flowers bloom, attracting small pollinators like bees and flies"
+      identification_tips: "Look for the small star-shaped flowers and the distinctive parallel veins on new leaves"
+      kid_friendly_tip: "In spring, look for tiny star-shaped yellowish-green flowers and fresh green leaves with lines drawn on them like ruled paper"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of deep green leaves; berries form and begin to turn from green to red"
+      reproductive_activity: "Flowers develop into berries that gradually ripen"
+      identification_tips: "Red berries and the fully developed leaves with parallel veins are distinctive"
+      kid_friendly_tip: "Summer brings small red berries that look like tiny cherries - but don't eat them! They're for birds"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow; berries ripen to black"
+      reproductive_activity: "Berries fully ripen and are eaten by birds, which disperse the seeds"
+      identification_tips: "Black berries and yellow leaves with their distinctive parallel veins"
+      kid_friendly_tip: "In fall, the berries turn black like little beads, and the leaves turn yellow before falling off"
+    
+    - season: "Winter"
+      visual_changes: "Loses all leaves; smooth gray branches visible; sometimes a few dried berries may persist"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Multiple smooth gray stems and alternating leaf buds are best winter identifiers"
+      kid_friendly_tip: "In winter, the tree takes a nap without any leaves, showing its smooth gray branches"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Oval to round leaves with distinct parallel veins"
+      reliability: "Very high"
+      visibility: "High - easily visible during growing season"
+    - feature: "Small red to black berries (when present)"
+      reliability: "High"
+      visibility: "Medium - need to look closely at branches"
+    - feature: "Alternate leaf arrangement"
+      reliability: "Very high"
+      visibility: "Medium - need to examine branch patterns"
+    - feature: "Multi-stemmed growth pattern"
+      reliability: "High" 
+      visibility: "High - visible from overall shape"
+    - feature: "Smooth gray bark"
+      reliability: "Medium"
+      visibility: "Medium - need to look at stems"
+    
+  look_alike_species:
+    - species: "Cascara (Frangula purshiana)"
+      differences: "Cascara grows larger (up to 30 feet); has more elongated, less round leaves; typically found in moister habitats"
+      identification_tip: "If it's a larger tree with more elongated leaves in a moist forest setting, it's likely Cascara rather than Birchleaf False-buckthorn"
+    
+    - species: "Alder-leaf Buckthorn (Rhamnus alnifolia)"
+      differences: "Alder-leaf Buckthorn has opposite leaves (not alternate); typically has thorns; more shrubby in form"
+      identification_tip: "Check leaf arrangement - if leaves grow opposite each other or if it has thorns, it's not Birchleaf False-buckthorn"
+    
+    - species: "Western River Birch (Betula occidentalis)"
+      differences: "River Birch has peeling or flaking bark; more serrated leaf edges; typically grows near permanent water sources"
+      identification_tip: "If the bark peels or flakes and the tree grows near year-round water, it's likely a birch, not False-buckthorn"
+    
+  cultural_significance:
+    - culture: "Southern California Native American tribes"
+      physical_uses:
+        - "Used the berries to make a dark purple-black dye for basket designs"
+        - "Made a mild tea from the bark to treat digestive problems"
+        - "Created handles for tools from the straight stems"
+        - "Used branches for making arrow shafts"
+      symbolic_meaning:
+        - "Valued as a reliable plant that survives in harsh dry conditions"
+        - "Used in stories about adaptation and resilience"
+    
+    - culture: "Southwestern herbalists"
+      physical_uses:
+        - "Used the bark to make a gentle laxative similar to cascara"
+        - "Created washes for skin problems from the leaves"
+        - "Made yellow dye from the leaves for natural fibers"
+      symbolic_meaning:
+        - "Represented gentleness and balance in healing traditions"
+        - "Valued for its ability to thrive in tough conditions"
+    
+  cultural_ecological_notes:
+    - "Provides important food for birds and wildlife through its berries"
+    - "Helps stabilize soil in dry washes and slopes with its root system"
+    - "Offers shade and shelter for small desert animals"
+    - "Drought-resistant species that can survive in harsh conditions"
+    - "Berries consumed by birds help spread seeds to new areas"
+    
+  range_within_california:
+    - "Found in Southern California mountains and desert transition zones"
+    - "Occurs in the eastern Sierra Nevada foothills"
+    - "Present in parts of the Mojave Desert, especially in washes and canyons"
+    - "Grows in the San Bernardino and San Gabriel Mountains"
+    - "Prefers elevations between 2,000-7,000 feet in California"
+    
+  physical_characteristics:
+    height_range: "6-15 feet tall, occasionally to 20 feet (about as tall as a one-story house)"
+    growth_rate: "Slow to moderate, growing about 6-12 inches per year"
+    crown_spread: "6-10 feet wide (about the size of a small bedroom)"
+    lifespan: "50-100 years (about as long as a human might live)"
+    trunk_diameter: "Usually multiple stems each 2-4 inches across (about as wide as your wrist or arm)"
+    root_system: "Extensive for its size, helping it survive drought conditions"
+    toxicity: "Berries may cause stomach upset if eaten in quantity but not severely toxic"
+    
+  conservation_status:
+    status: "Not threatened; stable in its native range"
+    threats:
+      - "Habitat loss due to urban development in some areas"
+      - "Climate change may affect its distribution over time"
+      - "Browsing by deer and livestock in some areas"
+    protection_efforts:
+      - "Protected in some national forest and park lands within its range"
+      - "Used in native plant restoration projects in appropriate habitats"
+      - "Promoted for waterwise landscaping in its native range"
+    
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: TREE-SIZE-01"  # Short tree
+      - "feature_id: LEAF-ARRANGE-01"  # Alternate
+    confirmation_features:
+      - "feature_id: FRUIT-TYPE-03"  # Berries present
+      - "feature_id: BARK-TEXT-01"  # Smooth bark
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-01", "TREE-TRUNK-02"]  # Short tree, multi-trunked
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SHAPE-01", "BARK-COLOR-01"]  # Oval leaves, gray bark
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-ARRANGE-01", "FRUIT-TYPE-03"]  # Alternate leaves, berries
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["LEAF-ARRANGE-01", "FLOWER-SIZE-02"]  # Alternate leaves, small flowers
+        notes: "New leaves and small flowers emerge"
+      summer:
+        reliability: "High"
+        key_features: ["LEAF-SHAPE-01", "FRUIT-TYPE-03"]  # Oval leaves, berries
+        notes: "Red berries and fully developed leaves make summer identification reliable"
+      fall:
+        reliability: "High" 
+        key_features: ["LEAF-FALL-01", "FRUIT-TYPE-03"]  # Yellow fall color, black berries
+        notes: "Black berries and yellow leaves aid in fall identification"
+      winter:
+        reliability: "Low"
+        key_features: ["TREE-TRUNK-02", "BARK-TEXT-01"]  # Multi-trunked, smooth bark
+        notes: "Without leaves, focus on the multi-stemmed habit and smooth gray bark"
+    misidentification_risks:
+      - "Cascara - larger tree with more elongated leaves in moister habitats"
+      - "Other buckthorns - may have thorns and opposite leaves"
+      - "Young birch trees - have peeling bark and more distinctly toothed leaf edges"
+      
+  wildlife_value:
+    food_source:
+      - "Berries eaten by many birds including thrushes, waxwings, and robins"
+      - "Deer and rabbits sometimes browse on the leaves and young stems"
+      - "Various butterfly species use it as a host plant for caterpillars"
+      - "Bees and other insects visit the flowers for nectar and pollen"
+    habitat_provided:
+      - "Dense branches provide nesting sites for small birds"
+      - "Offers cover for small mammals in desert transition areas"
+      - "Provides shade for lizards and other desert creatures"
+      - "Helps create microhabitats in harsh environments"
+    ecosystem_role: "Important food source for wildlife in dry transition zones; helps stabilize soil in washes and slopes; contributes to biodiversity in semi-arid environments"

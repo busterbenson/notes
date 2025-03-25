@@ -1,0 +1,308 @@
+tree:
+  common_name: "Kenai Birch"
+  scientific_name: "Betula papyrifera var. kenaica"
+  family: "Betulaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A distinctive Alaskan variety of paper birch with chalky white bark that peels in thin, paper-like layers. Features oval to triangular leaves with doubly serrated edges and grows with a more compact form than standard paper birch. Native to the Kenai Peninsula and south-central Alaska, with limited adaptability to California's varied climate."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Brilliant white bark that peels in horizontal, paper-like sheets; compact growth form; oval to triangular leaves with doubly serrated edges"
+    secondary_markers: "Dangling male catkins in spring; golden yellow fall color; dark horizontal lenticels on bark; smaller and more compact than standard paper birch"
+    seasonal_markers: "Yellow hanging catkins in spring; full canopy of dark green leaves in summer; striking golden-yellow fall foliage; distinctive white bark most prominent in winter"
+    similar_species_differentiation: "More compact growth form than standard paper birch; smaller leaves than European white birch; bright white bark unlike river birch's reddish-brown peeling bark; bark peels in larger sheets than gray birch"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops all its leaves each fall and grows new ones in spring"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Each leaf is a single piece, not divided into smaller leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow in a zigzag pattern along branches, not directly across from each other"
+      
+      - feature_id: "LEAF-EDGE-03"  # Doubly serrated
+        notes: "Leaf edges have teeth of two different sizes, creating a double-toothed pattern"
+      
+      - feature_id: "BARK-COLOR-02"  # White bark
+        notes: "Brilliant white bark, especially on trunk and major branches"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Bark peels in horizontal, thin paper-like sheets"
+      
+      - feature_id: "FLOWER-TYPE-01"  # Catkins present
+        notes: "Produces hanging catkins in spring"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        notes: "Foliage turns golden yellow in autumn"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with one main trunk"
+        exceptions: "May develop multiple trunks if damaged when young or growing in harsh conditions"
+      
+      - feature_id: "TREE-SIZE-01"  # Small tree
+        notes: "Usually grows 30-45 feet tall (about as tall as a 3-4 story building)"
+        exceptions: "May be larger in ideal growing conditions or smaller in poor conditions"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Forms a more rounded, oval crown that is denser than standard paper birch"
+        exceptions: "May be more irregular in extremely exposed locations or when crowded"
+      
+      - feature_id: "BRANCH-ANGLE-02"  # Ascending branches
+        notes: "Branches typically grow upward at a steeper angle than standard paper birch"
+        exceptions: "Lower branches on mature trees may become more horizontal"
+    
+    sometimes_true:
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Very young trees"
+        notes: "Young trees have smoother bark before developing characteristic peeling"
+      
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        conditions: "Very young trees or inner bark layers"
+        notes: "Young trees may have grayish bark before turning white; inner bark exposed when outer bark peels may appear darker"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "In cooler mountain regions with sufficient moisture"
+        notes: "Can survive in cooler parts of Northern California with proper conditions"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "When planted in suitable locations with cooler temperatures"
+        notes: "Can be grown in urban settings in cooler climate zones of California"
+      
+      - feature_id: "TWIG-SIZE-02"  # Slender twigs
+        conditions: "Most branches, especially younger growth"
+        notes: "Has fine, slender twigs, especially at branch tips"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops all its leaves in fall; never stays green year-round"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has compound leaves"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves are always arranged alternately, never opposite"
+      
+      - feature_id: "BARK-COLOR-03"  # Red bark
+        notes: "Bark is white to grayish, never reddish"
+      
+      - feature_id: "GEO-REGION-03"  # Southern California
+        notes: "Cannot survive in Southern California's hot, dry climate"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        notes: "Requires regular moisture and doesn't tolerate prolonged drought"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A tree with bright white bark that peels like paper, and triangular leaves with tiny teeth along the edges"
+    memorable_comparison: "The tree looks like it's wearing a white paper costume that's peeling off; the bark peels like nature's wrapping paper"
+    touch_tip: "Gently touch the bark - it feels like thin layers of paper that you can carefully peel away"
+    smell_tip: "The bark has little smell, but crush a leaf gently to enjoy a light, fresh scent"
+    fun_fact: "The Kenai Birch is like a forest superhero from Alaska! Its special white bark was used by Native Alaskans to make baskets, small containers, and even to write messages - it's nature's paper!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the bark. Is it bright white with paper-like strips peeling off?"
+        yes_next: 2
+        no_next: "Probably not a Kenai Birch - its white, peeling bark is its most obvious feature"
+      - step: 2
+        instruction: "Look at the shape of the tree. Is it smaller and more rounded than other birches you might have seen?"
+        yes_next: 3
+        no_next: "Might be another type of birch - Kenai Birch is usually smaller with a more rounded crown"
+      - step: 3
+        instruction: "Look at a leaf. Is it shaped like a pointed egg with tiny zigzag teeth all around the edges?"
+        yes_next: 4
+        no_next: "Probably not a Kenai Birch - check the leaf shape and double-toothed edges"
+      - step: 4
+        instruction: "Are the leaves arranged in a zigzag pattern along the branch (not directly across from each other)?"
+        yes_next: "You found a Kenai Birch! It's a special Alaskan variety of paper birch that's smaller and more compact"
+        no_next: "Not a Kenai Birch - all birches have alternating leaves in a zigzag pattern"
+  
+  # Seasonal timeline
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New bright green leaves emerge; long yellow-brown male catkins dangle from branches; smaller female catkins develop"
+      reproductive_activity: "Male catkins release pollen; female catkins receive pollen and begin developing seeds"
+      identification_tips: "Dangling male catkins are distinctive; new leaves are bright green"
+      kid_friendly_tip: "In spring, the tree grows long dangling 'caterpillars' (catkins) that release yellow pollen, and bright new green leaves appear"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of dark green leaves; female catkins develop into small cylindrical seed structures"
+      reproductive_activity: "Seeds develop and mature within female catkins"
+      identification_tips: "White bark contrasts with dark green leaves; cylindrical seed structures visible"
+      kid_friendly_tip: "In summer, the birch wears a full outfit of dark green leaves that make its white trunk stand out even more"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn bright golden-yellow; mature catkins release tiny winged seeds"
+      reproductive_activity: "Seeds disperse with the wind"
+      identification_tips: "Golden-yellow fall color is striking against white bark"
+      kid_friendly_tip: "In fall, the leaves turn bright golden-yellow like treasure against the white trunk - it's one of the most beautiful trees in autumn"
+    
+    - season: "Winter"
+      visual_changes: "Leafless branches reveal full extent of brilliant white bark; male catkins for next spring visible"
+      reproductive_activity: "Dormant; male catkins that will open in spring are already formed"
+      identification_tips: "White peeling bark is extremely conspicuous in winter landscape"
+      kid_friendly_tip: "In winter, the bright white bark stands out like a white crayon mark against the dark winter forest or snow"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Bright white bark that peels in paper-like strips"
+      reliability: "Very high"
+      visibility: "Visible from a distance"
+    - feature: "Compact, oval-rounded growth form"
+      reliability: "High"
+      visibility: "Visible from a distance"
+    - feature: "Oval to triangular leaves with double-toothed edges"
+      reliability: "High"
+      visibility: "Need to look closely at leaves"
+    - feature: "Alternate leaf arrangement"
+      reliability: "High"
+      visibility: "Need to look at branches closely"
+    - feature: "Golden-yellow fall color"
+      reliability: "High (fall only)"
+      visibility: "Visible from a distance in fall"
+    - feature: "Hanging catkins in spring"
+      reliability: "High (spring only)"
+      visibility: "Visible from nearby in spring"
+    
+  look_alike_species:
+    - species: "Paper Birch (Betula papyrifera)"
+      differences: "Standard paper birch grows taller (50-70 feet) with a more open crown; Kenai birch is more compact (30-45 feet) with a denser crown"
+      identification_tip: "Kenai birch has a more compact form, denser branching, and generally smaller stature than standard paper birch"
+    
+    - species: "European White Birch (Betula pendula)"
+      differences: "European white birch has more pendulous (weeping) branches, less peeling bark, and often has black diamond-shaped marks on the trunk"
+      identification_tip: "Look for the more upright branch structure of Kenai birch versus the drooping branches of European white birch"
+    
+    - species: "Gray Birch (Betula populifolia)"
+      differences: "Gray birch has chalky white bark that doesn't peel as extensively and has more triangular leaves; often grows at angles"
+      identification_tip: "Kenai birch bark peels in larger sheets than gray birch and has a more upright growth habit"
+    
+    - species: "River Birch (Betula nigra)"
+      differences: "River birch has cinnamon to reddish-brown peeling bark, not white bark; prefers wetter sites and is more heat-tolerant"
+      identification_tip: "The bright white bark of Kenai birch is very different from river birch's reddish-brown peeling bark"
+    
+  cultural_ecological_notes:
+    - "More cold-hardy than standard paper birch, adapted to harsh Alaskan conditions"
+    - "Seeds provide food for small birds and mammals"
+    - "Bark is resistant to winter damage and adapts well to snow loads"
+    - "Pioneer species that helps establish forests after disturbances"
+    - "Limited ecological role in California as it's not native to the state"
+    
+  range_within_california:
+    - "Not native to California"
+    - "Can be grown in cooler mountain and coastal regions of Northern California"
+    - "Requires cooler summers and adequate moisture to thrive"
+    - "Not suitable for Central Valley or Southern California's hot climate"
+    - "Best considered a specialty landscape tree for specific cool microclimates"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Dena'ina (Alaska Native people)"
+      physical_uses:
+        - "Used bark for small containers and baskets"
+        - "Created temporary shelters with birch bark coverings"
+        - "Made baby carriers and cradleboards from the bark"
+        - "Utilized as material for written communications"
+        - "Crafted storage containers for food and supplies"
+      symbolic_meaning:
+        - "Represented survival and adaptation to harsh environments"
+        - "Associated with practical knowledge and resourcefulness"
+        - "Connected to traditions of using what nature provides wisely"
+        - "Symbolized the continuity of knowledge across generations"
+    
+    - culture: "Early Alaskan Settlers"
+      physical_uses:
+        - "Used as firewood that burns hot even when somewhat damp"
+        - "Made containers and small household items from the bark"
+        - "Utilized the wood for tools, snowshoes, and sleds"
+        - "Used as emergency fire starter since the bark burns readily"
+        - "Harvested sap for syrup in small quantities (similar to maple syrup)"
+      symbolic_meaning:
+        - "Represented the frontier wilderness of Alaska"
+        - "Symbolized resilience in the face of harsh conditions"
+        - "White trunks became iconic markers of northern forests"
+        - "Represented a connection to traditional knowledge and survival skills"
+    
+    - culture: "Modern California Garden Culture"
+      physical_uses:
+        - "Grown as an ornamental specimen tree in cooler regions"
+        - "Valued for striking white bark in landscape design"
+        - "Used as a focal point in naturalistic garden designs"
+        - "Planted for brilliant fall color display"
+        - "Valued in gardens seeking to showcase trees from northern regions"
+      symbolic_meaning:
+        - "Represents northern wilderness and boreal landscapes"
+        - "Symbolizes adaptation and specialized ecological niches"
+        - "Evokes the beauty of Alaskan and northern forests"
+        - "Used to create sense of place and connection to northern ecosystems"
+  
+  # Additional physical characteristics
+  physical_characteristics:
+    height_range: "30-45 feet (about as tall as a 3-4 story building)"
+    growth_rate: "Medium, growing about 12-24 inches per year when young"
+    crown_spread: "20-35 feet wide at maturity (about the width of a large living room)"
+    lifespan: "60-80 years, shorter than many other tree species"
+    trunk_diameter: "12-18 inches in diameter when mature (about as wide as a large dinner plate)"
+    root_system: "Moderately shallow, spreading root system that may struggle in dry conditions"
+    toxicity: "Not toxic to humans or animals"
+    
+  conservation_status:
+    status: "Secure in native range; not threatened or endangered"
+    threats: 
+      - "Bronze birch borer insect can cause significant damage or death"
+      - "Climate change may reduce suitable habitat over time"
+      - "Heat stress in warmer regions of California"
+      - "Drought sensitivity limits planting locations"
+    protection_efforts:
+      - "No special protection needed in native range where it's abundant"
+      - "Selection of more resistant cultivars for landscape use"
+      - "Research into cold-adapted varieties for climate change resilience"
+  
+  # Decision tree mapping
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: BARK-COLOR-02"  # White bark
+      - "feature_id: BARK-TEXT-03"  # Peeling bark
+      - "feature_id: LEAF-ARRANGE-01"  # Alternate
+    confirmation_features:
+      - "feature_id: LEAF-EDGE-03"  # Doubly serrated
+      - "feature_id: LEAF-FALL-01"  # Yellow fall color
+      - "feature_id: TREE-SIZE-01"  # Small tree
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["BARK-COLOR-02", "TREE-SIZE-01", "TREE-FORM-02"]  # White bark, small tree, rounded crown
+      - distance: "from_nearby"
+        features_to_check: ["BARK-TEXT-03", "LEAF-ARRANGE-01", "LEAF-EDGE-03"]  # Peeling bark, alternate arrangement, doubly serrated
+      - distance: "close_inspection"
+        features_to_check: ["FLOWER-TYPE-01", "LEAF-COMPLEX-01"]  # Catkins, simple leaves
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["BARK-COLOR-02", "BARK-TEXT-03", "FLOWER-TYPE-01"]
+        notes: "White peeling bark and dangling catkins make spring identification straightforward"
+      summer:
+        reliability: "High" 
+        key_features: ["BARK-COLOR-02", "BARK-TEXT-03", "LEAF-EDGE-03"]
+        notes: "White bark, leaf characteristics, and developing seed catkins are key identifiers"
+      fall:
+        reliability: "Very high"
+        key_features: ["BARK-COLOR-02", "LEAF-FALL-01", "TREE-FORM-02"]
+        notes: "Golden-yellow fall color against white bark is striking and distinctive"
+      winter:
+        reliability: "Very high"
+        key_features: ["BARK-COLOR-02", "BARK-TEXT-03", "TREE-SIZE-01"]
+        notes: "White peeling bark is extremely prominent and distinctive in winter"
+    misidentification_risks: "Most often confused with standard paper birch or other white-barked birch species"
+
+  wildlife_value:
+    - "Seeds eaten by small birds including finches, chickadees, and siskins"
+    - "Buds and catkins provide winter food for birds"
+    - "Young twigs occasionally browsed by deer and moose in native range"
+    - "Provides nesting sites for various birds, especially in older trees"
+    - "Supports various moth and butterfly larvae that are food for birds"

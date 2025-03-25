@@ -1,0 +1,264 @@
+tree:
+  common_name: Paperbark Maple
+  scientific_name: Acer griseum
+  family: Sapindaceae
+  native: false
+
+  summary: Paperbark Maple is a small to medium-sized ornamental tree prized for its striking cinnamon to reddish-brown bark that peels in thin, papery layers. This deciduous tree features trifoliate compound leaves (three leaflets per leaf) that turn brilliant orange to scarlet red in fall. Native to central China and considered vulnerable in the wild, it's planted in California gardens as a specimen tree valued for its year-round ornamental qualities, particularly its distinctive exfoliating bark.
+
+  identification_path:
+    primary_markers: "Distinctive peeling, papery bark in cinnamon to reddish-brown colors; compound leaves with three leaflets"
+    secondary_markers: "Opposite leaf arrangement; brilliant orange to red fall color"
+    seasonal_markers: "Peeling bark visible year-round; fall brings bright orange-red leaves"
+    similar_species_differentiation: "Unlike River Birch, has compound leaves in groups of three rather than simple leaves; unlike Trident Maple, has compound leaves not lobed leaves"
+
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01" # Deciduous
+        notes: "Loses all its leaves in fall after turning brilliant colors"
+      
+      - feature_id: "LEAF-ARRANGE-02" # Opposite
+        notes: "Leaves grow in pairs directly across from each other on branches"
+      
+      - feature_id: "LEAF-COMPLEX-02" # Compound (trifoliate)
+        notes: "Each leaf is made up of three separate leaflets"
+      
+      - feature_id: "BARK-TEXT-03" # Papery, peeling
+        notes: "The bark peels in thin, curling layers like sheets of cinnamon-colored paper"
+      
+      - feature_id: "BARK-COLOR-05" # Reddish-brown
+        notes: "The bark has a rich cinnamon to reddish-brown color that stands out year-round"
+    
+    usually_true:
+      - feature_id: "TREE-SIZE-02" # Medium (30-50 feet)
+        notes: "Typically grows to 20-30 feet tall in gardens, occasionally reaching 40 feet"
+        exceptions: "May stay smaller in containers or poor growing conditions"
+      
+      - feature_id: "TREE-SHAPE-02" # Oval to pyramidal
+        notes: "Usually has an oval or somewhat pyramidal shape when mature"
+        exceptions: "Shape can vary based on growing conditions and pruning"
+      
+      - feature_id: "LEAF-FALL-03" # Orange fall color
+        notes: "Leaves typically turn bright orange in fall"
+        exceptions: "Sometimes more reddish depending on weather conditions"
+      
+      - feature_id: "HABITAT-05" # Planted in landscapes
+        notes: "Almost always found in planned gardens or landscapes in California"
+        exceptions: "Not typically found in wild areas in California"
+    
+    sometimes_true:
+      - feature_id: "TREE-SIZE-01" # Small (under 30 feet)
+        conditions: "Young trees or those in less optimal growing conditions"
+        notes: "May remain under 20 feet tall when young or grown in containers"
+      
+      - feature_id: "TREE-TRUNK-02" # Multi-trunked
+        conditions: "When trained as multi-stemmed or damaged when young"
+        notes: "Sometimes grown with multiple trunks for ornamental interest"
+      
+      - feature_id: "LEAF-FALL-02" # Red fall color
+        conditions: "Certain weather conditions may produce redder fall color"
+        notes: "In cooler fall temperatures, leaves may turn more scarlet than orange"
+      
+      - feature_id: "HABITAT-03" # Urban areas
+        conditions: "When planted in city parks or urban gardens"
+        notes: "Often used in city plantings where its moderate size and year-round interest are valued"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02" # Evergreen
+        notes: "Always drops its leaves in fall; never stays green all winter"
+      
+      - feature_id: "LEAF-SHAPE-05" # Lobed
+        notes: "Has compound leaves with three separate leaflets, not lobed leaves"
+      
+      - feature_id: "BARK-TEXT-01" # Smooth
+        notes: "Even young trees begin developing exfoliating bark; never has smooth bark like maples"
+      
+      - feature_id: "HABITAT-02" # Forests
+        notes: "Not found growing wild in California forests"
+
+  kid_friendly_identification:
+    primary_identifier: "Amazing peeling cinnamon-colored bark that looks like curling paper ribbons"
+    memorable_comparison: "The bark peels like sunburned skin and is the color of cinnamon sticks"
+    touch_tip: "The peeling bark feels papery and thin, like crispy autumn leaves"
+    smell_tip: "The bark doesn't have a strong smell, but the leaves might have a faint maple scent if crushed gently"
+    fun_fact: "This tree is like a living art show - it's constantly peeling its bark to reveal fresh cinnamon colors underneath, putting on a beautiful display all year long!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the bark. Is it peeling in thin, papery layers with cinnamon to reddish-brown color?"
+        yes_next: 2
+        no_next: "Not a Paperbark Maple - check birch trees if the bark is white and peeling"
+      
+      - step: 2
+        instruction: "Look at the leaves. Do they grow in pairs across from each other (opposite), and is each leaf made of three separate leaflets?"
+        yes_next: 3
+        no_next: "Not a Paperbark Maple - check Trident Maple if leaves are single with three lobes"
+      
+      - step: 3
+        instruction: "In fall, do the leaves turn bright orange to red colors?"
+        yes_next: "You found a Paperbark Maple!"
+        no_next: "Might be Three-flowered Maple - check if bark is less colorful"
+
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaves emerge with bronze-purple tints before turning green"
+      reproductive_activity: "Small, inconspicuous yellowish flowers appear briefly"
+      identification_tips: "Look for the contrast between new reddish leaves and the cinnamon bark"
+      kid_friendly_tip: "In spring, watch for new leaves that start out with a reddish tint, like they're blushing!"
+    
+    - season: "Summer"
+      visual_changes: "Leaves mature to dark green on top with a bluish-gray underside"
+      reproductive_activity: "Paired winged seeds (like little helicopters) develop and start to mature"
+      identification_tips: "The three-part leaves are fully developed and the exfoliating bark continues to be eye-catching"
+      kid_friendly_tip: "In summer, look for the clear pattern of three leaflets on each leaf and the always-cool peeling bark"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn brilliant orange to scarlet red before dropping"
+      reproductive_activity: "Mature winged seeds may spin down from the tree like helicopters"
+      identification_tips: "Fall color makes this tree easy to spot, and as leaves drop, the peeling bark becomes more visible"
+      kid_friendly_tip: "Fall is when this tree puts on its best color show with bright orange-red leaves that look like flames!"
+    
+    - season: "Winter"
+      visual_changes: "Tree is leafless, revealing its branching pattern and most prominently displaying its peeling bark"
+      reproductive_activity: "Dormant, no reproductive activity"
+      identification_tips: "The distinctive peeling, papery bark is most striking during winter months"
+      kid_friendly_tip: "Winter is when you can best see the tree's amazing peeling bark show - it's like the tree is unwrapping presents all winter long!"
+
+  confirmation_checklist:
+    - feature: "Distinctive peeling, papery bark in cinnamon to reddish-brown colors"
+      reliability: "Very high"
+      visibility: "High - visible from a distance"
+    
+    - feature: "Compound leaves with three distinct leaflets"
+      reliability: "High"
+      visibility: "Medium - need to look at leaves closely"
+    
+    - feature: "Opposite leaf arrangement (leaves grow in pairs across from each other)"
+      reliability: "High"
+      visibility: "Medium - need to check branching pattern"
+    
+    - feature: "Brilliant orange to red fall color"
+      reliability: "High"
+      visibility: "High - very obvious in fall"
+    
+    - feature: "Helicopter-like seeds (samaras) in pairs"
+      reliability: "Medium"
+      visibility: "Medium - need to look closely during late summer/fall"
+    
+    - feature: "Small to medium size (typically 20-30 feet tall)"
+      reliability: "Medium"
+      visibility: "High - visible from a distance"
+
+  look_alike_species:
+    - species: "Three-flowered Maple (Acer triflorum)"
+      differences: "Similar trifoliate leaves and peeling bark, but the bark is less dramatically cinnamon-colored and more grayish-brown"
+      identification_tip: "Paperbark Maple has much more colorful, cinnamon-red bark compared to the duller bark of Three-flowered Maple"
+    
+    - species: "River Birch (Betula nigra)"
+      differences: "Has exfoliating bark in salmon to cinnamon colors, but has simple (not compound) leaves arranged alternately on branches"
+      identification_tip: "Check the leaves - River Birch has single, toothed leaves while Paperbark Maple has leaves with three distinct leaflets"
+    
+    - species: "Trident Maple (Acer buergerianum)"
+      differences: "Has simple three-lobed leaves rather than compound leaves with three separate leaflets, and its bark exfoliates less dramatically"
+      identification_tip: "Trident Maple's leaves are connected in one piece with three points, while Paperbark Maple's leaves have three completely separate leaflets"
+    
+    - species: "Amur Maple (Acer ginnala)"
+      differences: "Has three-lobed leaves rather than trifoliate compound leaves, and lacks the distinctive exfoliating bark"
+      identification_tip: "Amur Maple doesn't have the amazing peeling bark that makes Paperbark Maple so special"
+
+  cultural_significance:
+    - culture: "Chinese"
+      physical_uses:
+        - "Wood has been traditionally used for carving small ornamental objects and boxes"
+        - "In its native range, occasionally used for specialty furniture pieces"
+      symbolic_meaning:
+        - "The peeling, renewing bark symbolizes letting go of the past and renewal"
+        - "Considered a symbol of resilience as it's vulnerable in the wild but adapts to various conditions"
+    
+    - culture: "Western Garden Traditions"
+      physical_uses:
+        - "Highly valued specimen tree in garden design for year-round ornamental interest"
+        - "Often used as a focal point in winter gardens when the bark is most visible"
+      symbolic_meaning:
+        - "Represents refined taste in garden design due to its unusual bark texture and color"
+        - "Often planted as a legacy or specimen tree that improves with age, symbolizing patience and long-term thinking"
+    
+    - culture: "California Garden Design"
+      physical_uses:
+        - "Used in Japanese-inspired gardens to provide year-round visual interest"
+        - "Planted near patios and walkways where its bark can be appreciated up close"
+      symbolic_meaning:
+        - "Embodies the appreciation for trees with multi-season appeal in California's diverse garden traditions"
+        - "Represents the blend of exotic and adapted species that characterize California landscaping"
+
+  physical_characteristics:
+    height: "20-30 feet (occasionally to 40 feet)"
+    width: "15-25 feet"
+    bark: "Cinnamon to reddish-brown, exfoliating in thin, papery layers"
+    leaves: "Compound with three leaflets; dark green above, bluish-gray beneath; 3-5 inches long"
+    flowers: "Small, inconspicuous yellowish flowers in spring"
+    fruit: "Paired winged seeds (samaras), 1-1.5 inches long"
+    growth_rate: "Slow, typically less than 12 inches per year"
+    lifespan: "60-100 years in cultivation"
+    root_system: "Moderately shallow, not aggressive"
+    suitable_for_public_spaces: true
+
+  conservation_status: 
+    status: "Vulnerable (VU) on IUCN Red List"
+    threats: "Habitat loss and fragmentation in its native range in central China"
+    protection_efforts: "Widely cultivated in gardens and arboretums worldwide, helping preserve the species outside its native range"
+
+  range_within_california:
+    - "Not native to California, but planted as an ornamental throughout the state"
+    - "Performs best in cooler coastal and mountain regions with moderate temperatures"
+    - "Can grow in warmer inland areas with afternoon shade"
+    - "Most commonly found in botanical gardens, arboretums, and residential landscapes"
+
+  decision_tree_placement:
+    primary_split_features:
+      - feature_id: "LEAF-TYPE-01" # Deciduous
+      - feature_id: "LEAF-COMPLEX-02" # Compound (trifoliate)
+      - feature_id: "LEAF-ARRANGE-02" # Opposite
+      - feature_id: "BARK-TEXT-03" # Papery, peeling
+    
+    confirmation_features:
+      - feature_id: "BARK-COLOR-05" # Reddish-brown
+      - feature_id: "LEAF-FALL-03" # Orange fall color
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["BARK-COLOR-05", "TREE-SIZE-02"] # Reddish-brown bark, Medium size
+      
+      - distance: "from_nearby"
+        features_to_check: ["BARK-TEXT-03", "LEAF-ARRANGE-02"] # Peeling bark, Opposite leaves
+      
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-COMPLEX-02"] # Compound (trifoliate)
+    
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["BARK-TEXT-03", "BARK-COLOR-05", "LEAF-COMPLEX-02"]
+        notes: "Newly emerging leaves with reddish tints and distinctive bark make spring identification reliable"
+      
+      summer:
+        reliability: "High"
+        key_features: ["BARK-TEXT-03", "BARK-COLOR-05", "LEAF-COMPLEX-02"]
+        notes: "Fully developed leaves showing three-leaflet pattern and distinctive bark"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["LEAF-FALL-03", "LEAF-FALL-02", "LEAF-COMPLEX-02"]
+        notes: "Orange to red fall color combined with three-leaflet pattern makes fall identification very reliable"
+      
+      winter:
+        reliability: "Very high"
+        key_features: ["BARK-TEXT-03", "BARK-COLOR-05"]
+        notes: "Leafless state makes the distinctive peeling, cinnamon-colored bark most visible and recognizable"
+
+  wildlife_value: 
+    - "As a non-native ornamental tree in California, Paperbark Maple doesn't have the same ecological relationships with local wildlife as native species"
+    - "The seeds may be eaten by some birds and small mammals"
+    - "Can provide nesting sites for birds, especially in urban settings where native options may be limited"
+    - "Its dense canopy offers shelter and perching spots for various bird species"
+    - "While it doesn't support as many insect species as native maples, it still contributes modestly to urban biodiversity"

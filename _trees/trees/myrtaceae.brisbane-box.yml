@@ -1,0 +1,326 @@
+tree:
+  common_name: "Brisbane Box"
+  scientific_name: "Lophostemon confertus"
+  family: "Myrtaceae"
+  
+  # Basic summary information
+  summary: "A medium to large evergreen tree with a dense, rounded crown of glossy dark green leaves. It has distinctive spongy, reddish-brown bark that peels in patches and clusters of small white, fluffy flowers. Native to eastern Australia, it's popular as a drought-tolerant street and shade tree in California cities."
+  
+  # Identification priority
+  identification_path:
+    primary_markers: "Spongy, reddish-brown bark that peels in patches; glossy, oval dark green leaves; dense rounded crown"
+    secondary_markers: "Small white flowers with many fluffy stamens; leathery leaf texture; leaves arranged in groups at branch tips"
+    seasonal_markers: "White, fluffy flowers in summer; consistent dark green foliage year-round"
+    similar_species_differentiation: "Similar to eucalyptus but with rounder leaves and redder bark; leaves don't have eucalyptus smell when crushed; dense shade unlike most eucalyptus"
+  
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its leaves all year round"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Leaves are single, not divided into leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow in a staggered pattern along branches"
+      
+      - feature_id: "LEAF-SHAPE-01"  # Oval
+        notes: "Leaves are oval to elliptical in shape"
+      
+      - feature_id: "LEAF-EDGE-01"  # Entire
+        notes: "Leaf edges are smooth without teeth or lobes"
+      
+      - feature_id: "LEAF-COLOR-01"  # Dark green
+        notes: "Leaves are glossy deep green on top"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Bark peels in patches revealing layers of different colors"
+      
+      - feature_id: "BARK-COLOR-03"  # Red bark
+        notes: "Bark is reddish-brown, especially when newly exposed"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Forms a dense, broadly rounded canopy"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        notes: "Native to eastern Australia, not native to California"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        notes: "Very drought-tolerant once established"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk"
+        exceptions: "May develop multiple trunks if damaged when young"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Usually grows 30-45 feet tall (about as tall as a 4-story building)"
+        exceptions: "Can reach 60 feet in ideal conditions"
+      
+      - feature_id: "FLOWER-COLOR-01"  # White flowers
+        notes: "Produces clusters of small white flowers"
+        exceptions: "Flowers may appear slightly cream-colored in some conditions"
+      
+      - feature_id: "FLOWER-TIME-02"  # Summer flowering
+        notes: "Usually flowers in summer"
+        exceptions: "Flowering time can vary with climate and conditions"
+    
+    sometimes_true:
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        conditions: "In ideal growing conditions, with age"
+        notes: "Can grow up to 60 feet tall in favorable settings"
+      
+      - feature_id: "FLOWER-TIME-01"  # Spring flowering
+        conditions: "In warmer areas or during warm springs"
+        notes: "May start flowering in late spring"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "When planted in landscapes with adequate drainage"
+        notes: "Common street and park tree in urban areas"
+      
+      - feature_id: "GEO-REGION-03"  # Southern California
+        conditions: "Planted in landscapes"
+        notes: "Common landscape tree in Southern California"
+      
+      - feature_id: "GEO-REGION-02"  # Central California
+        conditions: "Planted in landscapes"
+        notes: "Found as a landscape tree in Central California"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "Planted in milder areas"
+        notes: "Can be found in warmer parts of Northern California"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all its leaves seasonally"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has compound leaves"
+      
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        notes: "Has broad leaves, not tiny scales"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Never has thorns or spines"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Not native to California; comes from Australia"
+  
+  # Kid-friendly identification - expanded with open-ended, creative descriptions
+  kid_friendly_identification:
+    primary_identifier: "Reddish-brown bark that peels in puzzle-like pieces, with shiny dark green leaves"
+    memorable_comparison: "The bark looks like it's playing dress-up, peeling off old layers to show new reddish skin underneath"
+    touch_tip: "The leaves feel thick and leathery, like plastic plant leaves; the bark feels spongy when newly exposed"
+    smell_tip: "Unlike eucalyptus trees (which it looks similar to), the leaves don't have a strong smell when crushed"
+    fun_fact: "This tree is related to eucalyptus trees that koalas eat, but it's actually in the same family as cloves, allspice, and guava! It's called 'Brisbane Box' because it comes from Brisbane, Australia, and early settlers used its wood to make boxes."
+    detective_steps:
+      - step: 1
+        instruction: "Look at the bark. Is it reddish-brown and peeling in puzzle-piece patches?"
+        yes_next: 2
+        no_next: "Not a Brisbane Box - try trees with different bark patterns"
+      - step: 2
+        instruction: "Check the leaves. Are they shiny, dark green, and grouped near the ends of branches?"
+        yes_next: 3
+        no_next: "Not a Brisbane Box - check for trees with different leaf arrangements"
+      - step: 3
+        instruction: "Does the tree have a dense, rounded crown that provides good shade?"
+        yes_next: 4
+        no_next: "Might not be a Brisbane Box - check for trees with different shapes"
+      - step: 4
+        instruction: "Crush a leaf gently and smell it. Does it have no strong smell (unlike eucalyptus which smells strong)?"
+        yes_next: "You found a Brisbane Box!"
+        no_next: "If it has a strong eucalyptus smell, it's probably a eucalyptus tree, not a Brisbane Box"
+  
+  regional_notes:
+    - region: "Southern California"
+      notes: "Very common street and park tree; increasingly planted as drought-tolerant option"
+      locations: "Found in coastal and inland areas throughout Southern California cities"
+    - region: "Central California"
+      notes: "Growing in popularity as a drought-tolerant street tree"
+      locations: "Common in urban areas of the Central Valley"
+    - region: "Northern California"
+      notes: "Less common but found in warmer regions"
+      locations: "Mostly in urban areas with milder climates"
+      
+  confirmation_checklist:
+    - feature: "Peeling reddish-brown bark"
+      reliability: "Very high"
+      visibility: "Easy to see from nearby"
+    - feature: "Glossy dark green, oval leaves clustered at branch ends"
+      reliability: "High"
+      visibility: "Visible from ground level"
+    - feature: "Dense, rounded crown providing deep shade"
+      reliability: "High"
+      visibility: "Visible from a distance"
+    - feature: "Small white flowers with fluffy stamens (summer)"
+      reliability: "Medium"
+      visibility: "Need to look closely when in bloom"
+    
+  look_alike_species:
+    - species: "Eucalyptus species"
+      differences: "Eucalyptus leaves hang vertically, have strong aromatic smell, and often have blue-green color; bark peels in longer strips"
+      identification_tip: "If the leaves have a strong menthol smell when crushed, it's likely a eucalyptus, not a Brisbane Box"
+    - species: "Victorian Box (Pittosporum undulatum)"
+      differences: "Victorian Box has lighter green leaves, more fragrant flowers, and less distinctive bark"
+      identification_tip: "Victorian Box has very fragrant flowers and its bark doesn't peel in the distinctive reddish patches"
+    - species: "New Zealand Christmas Tree (Metrosideros excelsa)"
+      differences: "Has bright red brush-like flowers, more leathery leaves, and a more irregular growth habit"
+      identification_tip: "If it has bright red fluffy flowers, it's a New Zealand Christmas Tree, not a Brisbane Box"
+      
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Bright new leaf growth may appear at branch tips"
+      reproductive_activity: "Flower buds may begin to form"
+      identification_tips: "Fresh leaf growth at branch tips with slightly lighter color"
+      kid_friendly_tip: "In spring, look for baby leaves growing at the tips of branches - they might be brighter green than the older leaves"
+    
+    - season: "Summer" 
+      visual_changes: "Full, dark green foliage"
+      reproductive_activity: "Produces clusters of small white, fluffy flowers"
+      identification_tips: "White flowers with many stamens are distinctive"
+      kid_friendly_tip: "Summer is when you'll see bunches of tiny white flowers that look like little fireworks or sparklers"
+    
+    - season: "Fall"
+      visual_changes: "Little seasonal change; maintains dark green foliage"
+      reproductive_activity: "Small woody capsule fruits may develop"
+      identification_tips: "Stays green while deciduous trees change color"
+      kid_friendly_tip: "While other trees are turning colors and losing leaves, this tree stays green like it's ignoring fall!"
+    
+    - season: "Winter"
+      visual_changes: "Maintains evergreen foliage"
+      reproductive_activity: "Dormant; no flowering activity"
+      identification_tips: "Evergreen nature stands out when deciduous trees are bare"
+      kid_friendly_tip: "In winter, it's easy to spot because it keeps all its leaves when many other trees are bare"
+      
+  cultural_ecological_notes:
+    - "Excellent drought-tolerant shade tree for urban environments"
+    - "Less messy than eucalyptus with fewer dropped branches"
+    - "Provides good shade due to dense canopy"
+    - "Resistant to many pests and diseases"
+    - "Can tolerate poor soil and urban pollution"
+    
+  range_within_california:
+    - "Not native but widely planted throughout California in urban areas"
+    - "Most common in Southern California cities"
+    - "Growing in popularity in Central Valley cities"
+    - "Found in milder areas of Northern California"
+    - "Generally performs best in USDA zones 9-11"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Australian Aboriginal"
+      physical_uses:
+        - "Wood used for making tools and implements"
+        - "Bark sometimes used for temporary shelters"
+        - "Tree provides shade in hot environments"
+      symbolic_meaning:
+        - "Associated with waterways and fertile areas in native range"
+        - "Presence indicates reliable water in some regions"
+        - "Recognized as a gathering place due to its shade"
+    
+    - culture: "Australian Colonial"
+      physical_uses:
+        - "Timber used for construction and shipbuilding"
+        - "Wood used for furniture and tool handles due to strength"
+        - "Planted as shade trees in towns and homesteads"
+      symbolic_meaning:
+        - "Represented resilience in harsh conditions"
+        - "Planted as a reminder of eastern Australian landscapes"
+        - "Symbol of adaptation to challenging environments"
+    
+    - culture: "California Urban Planning"
+      physical_uses:
+        - "Widely planted as drought-tolerant street trees"
+        - "Used to create shade in parks and public spaces"
+        - "Planted as windbreaks and privacy screens"
+        - "Selected for urban heat island mitigation"
+      symbolic_meaning:
+        - "Represents the shift toward water-wise landscaping"
+        - "Symbol of climate-appropriate urban forestry"
+        - "Increasingly recognized as an icon of sustainable city planning"
+        - "Part of California's adoption of Australian plants for similar climates"
+    
+    - culture: "Modern Sustainable Landscaping"
+      physical_uses:
+        - "Featured in water-conservation demonstration gardens"
+        - "Used as shade trees in xeriscape designs"
+        - "Planted as long-lived canopy trees in urban settings"
+        - "Included in climate-adaptive landscape plans"
+      symbolic_meaning:
+        - "Represents successful adaptation of non-native trees to California's climate"
+        - "Symbol of smart tree selection for changing climate conditions"
+        - "Exemplifies the concept of 'right tree, right place' in urban forestry"
+        - "Demonstrates international sharing of sustainable plant solutions"
+    
+  # Additional physical characteristics not captured in features
+  physical_characteristics:
+    height_range: "30-45 feet typically, up to 60 feet (as tall as a 4-6 story building)"
+    growth_rate: "Moderate, about 1-2 feet per year when young"
+    crown_spread: "30-40 feet wide when mature (about as wide as a small house)"
+    lifespan: "50-150 years under good conditions"
+    trunk_diameter: "1-2 feet across when fully grown"
+    root_system: "Moderately deep, somewhat drought-tolerant once established"
+    toxicity: "Not known to be toxic to humans or pets"
+    
+  conservation_status:
+    status: "Not endangered; common in native range and in cultivation"
+    threats: 
+      - "No major threats in cultivation"
+      - "Some susceptibility to extended frost in colder areas"
+      - "In native habitat, faces some pressure from development"
+    protection_efforts:
+      - "Widely cultivated, reducing pressure on wild populations"
+      - "Increasing use in urban forestry programs for drought tolerance"
+      - "Selected as a climate-change adapted tree in many regions"
+    
+  # Decision tree mapping - helps with algorithm creation
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: BARK-TEXT-03"  # Peeling bark
+      - "feature_id: BARK-COLOR-03"  # Red bark
+    confirmation_features:
+      - "feature_id: LEAF-COLOR-01"  # Dark green
+      - "feature_id: TREE-FORM-02"  # Rounded crown
+      - "feature_id: LEAF-SHAPE-01"  # Oval
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-02", "LEAF-TYPE-02", "TREE-SIZE-02"]  # Rounded crown, evergreen, medium tree
+      - distance: "from_nearby"
+        features_to_check: ["BARK-TEXT-03", "BARK-COLOR-03", "LEAF-COLOR-01"]  # Peeling bark, red bark, dark green leaves
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-ARRANGE-01", "LEAF-EDGE-01", "LEAF-SHAPE-01"]  # Alternate arrangement, entire edge, oval shape
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "BARK-TEXT-03", "LEAF-COLOR-01"]
+        notes: "Evergreen nature, peeling bark, and dark green leaves are consistent identifiers"
+      
+      summer:
+        reliability: "Very high" 
+        key_features: ["FLOWER-COLOR-01", "BARK-TEXT-03", "LEAF-COLOR-01"]
+        notes: "White flowers, distinctive bark, and dark green leaves make summer identification easy"
+      
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "BARK-TEXT-03", "TREE-FORM-02"]
+        notes: "Evergreen nature stands out in fall as deciduous trees change color"
+      
+      winter:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "BARK-TEXT-03", "TREE-FORM-02"]
+        notes: "Evergreen foliage and distinctive bark help with winter identification"
+    misidentification_risks: "Most often confused with eucalyptus species, but leaf smell and arrangement differ"
+
+  wildlife_value:
+    nesting_sites: "Dense foliage provides good nesting sites for birds"
+    food_source: "Flowers provide nectar for bees and other pollinators"
+    shelter: "Provides year-round cover for birds and squirrels"
+    ecological_notes: "Though non-native, provides habitat value in urban areas; flowers support local pollinators"
+    
+  propagation_information:
+    growing_conditions: "Prefers full sun and well-drained soil"
+    water_needs: "Drought-tolerant once established; needs regular water when young"
+    planting_tips: "Plant in a sunny location with good air circulation"
+    maintenance: "Low maintenance; may need occasional pruning for clearance or shape"
+    special_notes: "Very adaptable to poor soils and urban conditions; excellent street tree choice"

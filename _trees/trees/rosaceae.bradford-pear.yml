@@ -1,0 +1,305 @@
+tree:
+  common_name: "Bradford Pear"
+  scientific_name: "Pyrus calleryana"
+  family: "Rosaceae"
+  
+  # Basic summary (2-3 sentences)
+  summary: "A deciduous ornamental tree with a rounded or oval shape and branches that grow in a distinctive upward pattern. It has glossy dark green leaves, a spectacular display of white flowers in early spring, and small brown fruits. Widely planted in California landscapes for its showy flowers and fall color."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Showy white flower clusters covering branches in early spring; glossy green leaves that are oval-shaped with finely toothed edges; upward-sweeping branch pattern"
+    secondary_markers: "Dark green leaves that turn purplish-red to bright red in fall; small apple-like fruits that are brown and about the size of a marble; smooth gray bark when young"
+    seasonal_markers: "Mass of white flowers in early spring before leaves appear; glossy green leaves in summer; bright red to purple fall color; bare branching pattern visible in winter"
+    similar_species_differentiation: "Unlike apple trees, has smaller, harder, inedible fruits; unlike flowering cherry, has oval leaves not elongated; unlike crabapple, has more upright branching pattern"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves in fall and grows new ones in spring"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Each leaf is a single piece, not divided into smaller leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow in a zigzag pattern along branches, not across from each other"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated
+        notes: "Leaf edges have tiny teeth all around"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Produces masses of noticeable white flowers in early spring"
+      
+      - feature_id: "FLOWER-COLOR-01"  # White flowers
+        notes: "Flowers are pure white with five petals"
+      
+      - feature_id: "FLOWER-TIME-01"  # Spring flowering
+        notes: "Blooms early in spring, often before leaves fully emerge"
+      
+      - feature_id: "LEAF-FALL-02"  # Red fall color
+        notes: "Leaves turn reddish to purplish-red in fall"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        notes: "Grows well in cities and landscaped areas"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk"
+        exceptions: "Older trees sometimes split into multiple trunks, especially in windy areas"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Crown typically forms a rounded or oval shape"
+        exceptions: "Shape can vary based on pruning or growing conditions"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Usually grows 25-35 feet tall (as tall as a 2-3 story building)"
+        exceptions: "Can be shorter in poor conditions or when young"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Bark is usually smooth, especially when young"
+        exceptions: "Develops some shallow fissures and roughness with age"
+    
+    sometimes_true:
+      - feature_id: "TREE-SIZE-01"  # Short tree
+        conditions: "When young or in poor growing conditions"
+        notes: "May stay under 20 feet tall when young or newly planted"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Older, mature trees"
+        notes: "Develops shallow grooves and fissures as it ages"
+      
+      - feature_id: "FRUIT-TYPE-03"  # Berries present
+        conditions: "Late summer through winter"
+        notes: "Produces small, hard, brown fruits that look like tiny apples or berries"
+      
+      - feature_id: "LEAF-FALL-03"  # Orange fall color
+        conditions: "Fall season, depending on weather conditions"
+        notes: "Sometimes leaves turn orange instead of or alongside red"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "Where planted in landscapes"
+        notes: "Planted in Northern California cities and towns"
+      
+      - feature_id: "GEO-REGION-02"  # Central California
+        conditions: "Where planted in landscapes"
+        notes: "Common in Central California landscapes"
+      
+      - feature_id: "GEO-REGION-03"  # Southern California
+        conditions: "Where planted in landscapes"
+        notes: "Planted in Southern California urban areas"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops its leaves in fall"
+      
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        notes: "Never has tiny scale-like leaves, only broad leaves"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Never has needle-like leaves"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Not native to California; originally from China"
+      
+      - feature_id: "FRUIT-TYPE-01"  # Acorns present
+        notes: "Never produces acorns"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Masses of white flowers covering the branches in early spring"
+    memorable_comparison: "In spring, it looks like it's covered in snow with all its white flowers, and in fall, its leaves look like they're on fire with bright red colors"
+    touch_tip: "The leaves feel smooth and shiny, like they've been polished"
+    smell_tip: "The flowers have a sweet smell, but some people think it smells a bit fishy or unpleasant up close"
+    fun_fact: "Bradford Pear trees can grow super fast - up to 3 feet in a single year when they're young! That's like growing as tall as you in just one year."
+    
+    detective_steps:
+      - step: 1
+        instruction: "In spring, look for a tree completely covered with white flowers before most other trees have leaves. Do you see a tree that looks like it's covered in snow?"
+        yes_next: 2
+        no_next: "If it's not spring, look for other features. If it is spring and no flowers are visible, it's probably not a Bradford Pear"
+      - step: 2
+        instruction: "Look at the leaves after they appear. Are they oval-shaped, glossy dark green, and have tiny teeth around the edges?"
+        yes_next: 3
+        no_next: "Check if it might be a flowering cherry or crabapple instead"
+      - step: 3
+        instruction: "Check how the branches grow. Do they sweep upward in a pattern that looks like a fan or the letter V?"
+        yes_next: 4
+        no_next: "Might be another flowering tree - check if it's a different pear variety or flowering fruit tree"
+      - step: 4
+        instruction: "In fall, do the leaves turn bright red to purple-red?"
+        yes_next: 5
+        no_next: "If it's not fall yet, look for small brown fruits about the size of a marble. If it's fall and the leaves turn yellow instead of red, it's probably not a Bradford Pear"
+      - step: 5
+        instruction: "Check where the tree is growing. Is it in a yard, park, or along a street rather than in a wild forest?"
+        yes_next: "You found a Bradford Pear!"
+        no_next: "Bradford Pears are almost always planted by people in cities and towns, not found in wild areas"
+  
+  # Seasonal timeline
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Covered with masses of white flowers before or as leaves emerge; new leaves unfold with bronze-reddish tint before turning green"
+      reproductive_activity: "Flowers bloom early in spring, attracting pollinators like bees"
+      identification_tips: "Mass flowering display is the most distinctive and recognizable feature"
+      kid_friendly_tip: "In spring, this tree puts on a spectacular white flower show that makes it look like it's covered in snow!"
+    
+    - season: "Summer" 
+      visual_changes: "Dark green, glossy leaves form a dense canopy; small green fruits begin developing"
+      reproductive_activity: "Flowers fade and small fruits develop and grow"
+      identification_tips: "Glossy, dark green leaves and upward-sweeping branch pattern"
+      kid_friendly_tip: "During summer, the tree wears shiny green leaves that look like they've been polished"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn bright red to purplish-red; small brown fruits fully mature"
+      reproductive_activity: "Fruits fully ripen but usually remain on tree"
+      identification_tips: "Brilliant fall color and presence of small brown fruits"
+      kid_friendly_tip: "The leaves turn amazing red and purple colors in fall, like they're on fire!"
+    
+    - season: "Winter"
+      visual_changes: "Branches bare, showing distinctive upward growth pattern; some brown fruits may remain"
+      reproductive_activity: "Dormant; flower buds form for next spring"
+      identification_tips: "Distinctive branching pattern becomes visible; some fruits may persist"
+      kid_friendly_tip: "After the leaves fall off, you can see how the branches grow upward in a special pattern, and sometimes small brown fruits stay on the branches"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "White five-petaled flowers in early spring"
+      reliability: "Very high"
+      visibility: "Very easy to see during bloom time"
+    - feature: "Glossy green oval leaves with finely toothed edges"
+      reliability: "High"
+      visibility: "Easy to see up close"
+    - feature: "Upward-sweeping branch pattern"
+      reliability: "High"
+      visibility: "Visible from a distance, especially in winter"
+    - feature: "Bright red to purple fall color"
+      reliability: "High"
+      visibility: "Very noticeable in fall"
+    - feature: "Small brown apple-like fruits"
+      reliability: "Medium"
+      visibility: "Visible up close, may not be present on all trees"
+    
+  look_alike_species:
+    - species: "Flowering Cherry (Prunus species)"
+      differences: "Flowering cherry has more elongated leaves, often with more prominent teeth; bark often has horizontal lines; flowers sometimes have pink tinge"
+      identification_tip: "Bradford Pear leaves are more oval and glossy, while cherry leaves are more elongated"
+    
+    - species: "Crabapple (Malus species)"
+      differences: "Crabapple has less glossy leaves, often with deeper teeth; branching is more horizontal; fruits are usually red or yellow rather than brown"
+      identification_tip: "Bradford Pear has more upright, V-shaped branching compared to the more spreading habit of crabapple"
+    
+    - species: "Other Pear species (Pyrus species)"
+      differences: "Other pears often produce larger, more edible fruits; may have slightly different leaf shapes and branching patterns"
+      identification_tip: "Bradford Pear is distinguished by its perfect oval shape when young and small, hard fruits that aren't good for eating"
+    
+  cultural_ecological_notes:
+    - "Originally from China, widely planted in U.S. landscapes since the 1960s"
+    - "Provides food for birds that eat the small fruits"
+    - "Can cross-pollinate with other pear varieties and become invasive in some regions"
+    - "Branches often break in storms, especially as trees age"
+    - "Popular as a street and landscape tree due to rapid growth and ornamental features"
+    
+  range_within_california:
+    - "Not native to California but widely planted in landscapes throughout the state"
+    - "Common in urban and suburban areas in all regions of California"
+    - "Grows well in most climate zones in California"
+    - "Often planted along streets, in parks, and residential yards"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "American Urban Landscaping"
+      physical_uses:
+        - "Widely planted as ornamental street trees in neighborhoods and business districts"
+        - "Used to create spring flowering displays in parks and public spaces"
+        - "Planted to provide shade and fall color in urban environments"
+        - "Selected for parking lots and commercial areas because of its neat appearance and tolerance of urban conditions"
+      symbolic_meaning:
+        - "Became a symbol of suburban development and planned communities"
+        - "The spectacular spring bloom represents renewal and the arrival of spring"
+        - "Often associated with newly developed neighborhoods and commercial areas"
+        - "Sometimes criticized as a symbol of cookie-cutter landscape design"
+    
+    - culture: "Environmental Management"
+      physical_uses:
+        - "Initially planted to replace American elm trees lost to Dutch elm disease"
+        - "Used in urban forestry programs to increase tree canopy and air quality"
+        - "Selected for urban heat island reduction in cities"
+        - "Used as a fast-growing shade tree in new developments"
+      symbolic_meaning:
+        - "Represents changing attitudes about native versus non-native landscaping"
+        - "Used as an educational example about the risks of overplanting single species"
+        - "Has become part of discussions about invasive ornamentals"
+        - "Symbolizes the trade-offs between quick results and long-term sustainability in urban forestry"
+    
+    - culture: "Seasonal Celebrations"
+      physical_uses:
+        - "Celebrated in spring festivals and cherry blossom events (even though it's not a cherry)"
+        - "Featured in community beautification programs"
+        - "Used in photography and art depicting seasonal changes"
+        - "Provides backdrop for spring outdoor events and gatherings"
+      symbolic_meaning:
+        - "Blooming trees mark the official arrival of spring in many communities"
+        - "Fall color is celebrated as part of autumn harvest themes"
+        - "Often planted at schools and churches as symbols of growth and renewal"
+        - "Featured in community celebrations of seasonal changes"
+  
+  # Additional physical characteristics
+  physical_characteristics:
+    height_range: "25-35 feet (about as tall as a 2-3 story building)"
+    growth_rate: "Fast, growing 2-3 feet per year when young"
+    crown_spread: "20-30 feet wide (about as wide as a two-car garage)"
+    lifespan: "15-25 years, shorter than many landscape trees"
+    trunk_diameter: "Up to 1.5 feet across (about as wide as a basketball)"
+    root_system: "Relatively shallow spreading roots"
+    toxicity: "Leaves and seeds contain small amounts of cyanide compounds but rarely cause problems"
+    
+  conservation_status:
+    status: "Not evaluated for conservation (cultivated ornamental)"
+    threats: 
+      - "Fire blight and other diseases can damage or kill trees"
+      - "Weak branch structure leads to breakage in storms"
+      - "Growing concern about invasive potential in some regions"
+      - "Short lifespan compared to many shade trees"
+    protection_efforts:
+      - "Development of improved cultivars with stronger branch structure"
+      - "Research on disease resistance"
+      - "In some areas, being replaced with native alternatives or stronger tree varieties"
+      - "Education about both benefits and drawbacks for urban planners"
+    
+  # Decision tree mapping
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: FLOWER-SIZE-01"  # Showy flowers
+      - "feature_id: FLOWER-COLOR-01"  # White flowers
+      - "feature_id: LEAF-FALL-02"  # Red fall color
+    confirmation_features:
+      - "feature_id: LEAF-COMPLEX-01"  # Simple broadleaf
+      - "feature_id: LEAF-ARRANGE-01"  # Alternate
+      - "feature_id: LEAF-EDGE-02"  # Serrated
+      - "feature_id: FLOWER-TIME-01"  # Spring flowering
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["FLOWER-SIZE-01", "FLOWER-COLOR-01", "TREE-FORM-02"]  # Showy flowers, white flowers, rounded crown
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-COMPLEX-01", "LEAF-EDGE-02", "BARK-TEXT-01"]  # Simple leaves, serrated edge, smooth bark
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-ARRANGE-01", "FRUIT-TYPE-03", "LEAF-FALL-02"]  # Alternate arrangement, berries, red fall color
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["FLOWER-SIZE-01", "FLOWER-COLOR-01", "FLOWER-TIME-01"]
+        notes: "Mass flowering makes spring identification extremely reliable"
+      summer:
+        reliability: "Medium" 
+        key_features: ["LEAF-COMPLEX-01", "LEAF-EDGE-02", "TREE-FORM-02"]
+        notes: "Glossy leaves and growth habit are key summer identifiers"
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-FALL-02", "LEAF-FALL-03", "FRUIT-TYPE-03"]
+        notes: "Bright fall color is distinctive; small fruits may be visible"
+      winter:
+        reliability: "Medium"
+        key_features: ["TREE-FORM-02", "BARK-TEXT-01", "FRUIT-TYPE-03"]
+        notes: "Branching pattern and any persistent fruits aid winter identification"
+    misidentification_risks: "Most often confused with flowering cherry, crabapple, or other ornamental fruit trees"

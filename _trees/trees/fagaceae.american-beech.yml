@@ -1,0 +1,307 @@
+tree:
+  common_name: "American Beech"
+  scientific_name: "Fagus grandifolia"
+  family: "Fagaceae"
+  
+  # Basic summary information
+  summary: "A stately deciduous tree with distinctive smooth, light gray bark that remains smooth even in old age. Features simple, elliptical leaves with prominent straight veins and toothed edges that turn golden bronze in fall. Native to eastern North America but occasionally planted as an ornamental in parks and large gardens in California."
+  
+  identification_path:
+    primary_markers: "Smooth, light gray bark that remains smooth even on large, old trees; elliptical leaves with straight, parallel veins extending to sharp teeth on leaf edge; slender, pointed cigar-shaped buds in winter"
+    secondary_markers: "Triangular, spiky husks containing small three-sided nuts; thin, paper-like leaves with finely toothed edges; golden bronze fall color"
+    seasonal_markers: "Delicate spring green leaves in spring; dense dark green summer foliage; golden bronze fall color; smooth gray bark visible year-round with zigzag twigs and long pointed buds in winter"
+    similar_species_differentiation: "Unlike European beech, has slightly larger leaves with more pronounced teeth; unlike hornbeam, bark remains smooth throughout life and never becomes fluted or muscled; unlike birches, does not have peeling bark"
+  
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves in fall, though sometimes young trees hold dead leaves through winter"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Leaves are single pieces, not divided into leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves arranged alternately along stems"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated
+        notes: "Leaf edges have sharp, fine teeth"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Bark remains distinctively smooth and gray throughout life"
+      
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        notes: "Light to medium gray bark color, often with subtle horizontal markings"
+      
+      - feature_id: "WINTER-BUD-01"  # Distinctive buds
+        notes: "Long, slender, pointed buds resembling small cigars"
+      
+      - feature_id: "WINTER-FEAT-03"  # Persistent leaves
+        notes: "Young trees often hold dead leaves through winter (marcescence)"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk"
+        exceptions: "May occasionally develop multiple trunks, especially if damaged when young"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Develops a broad, rounded crown with age"
+        exceptions: "Young trees have a more oval or pyramidal shape"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Mature trees typically reach 50-80 feet in height"
+        exceptions: "May be shorter in poor growing conditions or when young"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        notes: "Leaves typically turn golden bronze to yellow in fall"
+        exceptions: "Fall color may vary with climate conditions"
+      
+      - feature_id: "FRUIT-TYPE-04"  # Nuts present
+        notes: "Produces small triangular nuts in spiny husks"
+        exceptions: "Nut production varies by year and may be minimal on landscape trees in California"
+    
+    sometimes_true:
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        conditions: "When young or in poor growing conditions"
+        notes: "May be under 50 feet tall when young or in less ideal settings"
+      
+      - feature_id: "FLOWER-TYPE-01"  # Catkins present
+        conditions: "Spring flowering season"
+        notes: "Male flowers appear as small hanging catkins"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "Where planted in landscapes"
+        notes: "Occasionally planted in Northern California parks and gardens"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "When planted in suitable microclimates"
+        notes: "Can grow in urban settings if given adequate space and proper conditions"
+      
+      - feature_id: "TWIG-FORM-01"  # Twigs zigzag
+        conditions: "Visible in winter and early spring"
+        notes: "Twigs have a subtle zigzag pattern between buds"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always deciduous, though may retain dead leaves in winter"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Bark never peels or sheds, remaining smooth throughout life"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has broad leaves, not needles"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Not native to California; native to eastern North America"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Smooth, elephant-skin gray bark that stays smooth even on big trees, and leaves with straight lines running to tiny teeth"
+    memorable_comparison: "The bark looks like elephant skin - smooth and gray - and the leaves are shaped like pointy footballs with little teeth and straight lines that look like train tracks heading to each tooth"
+    touch_tip: "The leaves feel papery and thin, and the smooth bark feels cool to the touch, like touching a gray elephant"
+    smell_tip: "The leaves have a light fresh smell, especially when they first come out in spring"
+    fun_fact: "The bark of beech trees is so smooth and inviting that people have been carving their names and messages into beech trees for hundreds of years! Some old beech trees in forests back east are like nature's history books, with carvings from over 100 years ago still visible on the bark."
+    detective_steps:
+      - step: 1
+        instruction: "Look at the bark - is it smooth and gray, even on big trees, without any cracks or peeling?"
+        yes_next: 2
+        no_next: "If the bark is rough, furrowed, or peeling, it's not a beech tree"
+      - step: 2
+        instruction: "Look at the leaves - are they oval or football-shaped with straight, parallel lines (veins) running from the middle to small teeth at the edge?"
+        yes_next: 3
+        no_next: "If the leaves have a different shape or don't have straight veins running to teeth, it might be another tree with smooth bark"
+      - step: 3
+        instruction: "In winter, check the buds - are they long, pointed, and cigar-shaped (about 3/4 inch long)?"
+        yes_next: 4
+        no_next: "If it's not winter or the buds are short and round, check if the tree is growing in a park or garden setting, not a wild forest"
+      - step: 4
+        instruction: "Is the tree growing in a park, large garden, or landscape setting (not a wild forest in California)?"
+        yes_next: "You found an American Beech!"
+        no_next: "Beech trees are not native to California, so they're usually only found where people have planted them"
+  
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Buds open to reveal delicate, light green leaves with silky hairs along the edges when young; subtle male catkins may be visible"
+      reproductive_activity: "Flowers appear with the leaves; inconspicuous male and female flowers on the same tree"
+      identification_tips: "Look for the emerging leaves with straight veins and the distinctive smooth gray bark"
+      kid_friendly_tip: "In spring, beech trees have bright light green leaves that look almost translucent, like they're lit up from inside"
+    
+    - season: "Summer" 
+      visual_changes: "Leaves mature to a darker green with a glossy surface; dense canopy creates deep shade beneath"
+      reproductive_activity: "If pollinated, small spiny husks develop, containing triangular nuts"
+      identification_tips: "Glossy dark green leaves with straight veins and teeth; smooth gray bark remains distinctive"
+      kid_friendly_tip: "In summer, the leaves turn deeper green and make such thick shade underneath that it feels cool even on hot days"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn golden bronze to yellow before falling; open spiny husks may release triangular nuts"
+      reproductive_activity: "Nuts mature and fall from open husks"
+      identification_tips: "Golden bronze fall color; spiny husks with triangular nuts; smooth gray bark"
+      kid_friendly_tip: "In fall, the leaves turn a beautiful golden color like honey or toast, and you might find spiky seed cases that look like tiny hedgehogs with triangular nuts inside"
+    
+    - season: "Winter"
+      visual_changes: "Smooth gray bark stands out in winter landscape; zigzag twigs with long, pointed cigar-shaped buds; young trees often retain dead leaves"
+      reproductive_activity: "Dormant; flower buds form for next spring"
+      identification_tips: "Smooth gray bark; distinctive long, pointed buds; often some retained dead leaves on young trees"
+      kid_friendly_tip: "In winter, the smooth gray bark looks even more like elephant skin, and the pointy cigar-shaped buds are easy to spot on the zigzag branches"
+      
+  confirmation_checklist:
+    - feature: "Smooth, light gray bark"
+      reliability: "Very high"
+      visibility: "Very easy to see year-round"
+    - feature: "Elliptical leaves with straight veins running to teeth"
+      reliability: "High"
+      visibility: "Easy to see during growing season"
+    - feature: "Long, pointed buds in winter"
+      reliability: "High"
+      visibility: "Noticeable in winter"
+    - feature: "Golden bronze fall color"
+      reliability: "Medium"
+      visibility: "Noticeable in fall"
+    - feature: "Triangular nuts in spiny husks"
+      reliability: "Medium"
+      visibility: "Visible in fall when present, but may be sparse on landscape trees"
+    
+  look_alike_species:
+    - species: "European Beech (Fagus sylvatica)"
+      differences: "European Beech has slightly smaller, less toothed leaves and often has copper or purple-leaved cultivars; both have similar smooth gray bark"
+      identification_tip: "American Beech leaves are slightly larger with more pronounced teeth; if the leaves are purple or copper-colored, it's definitely European Beech"
+    
+    - species: "Hornbeam/Musclewood (Carpinus caroliniana)"
+      differences: "Hornbeam has fluted, muscle-like bark rather than smooth bark; leaves similar but typically smaller"
+      identification_tip: "Check the bark - smooth for beech, muscled or fluted for hornbeam"
+    
+    - species: "Gray Birch (Betula populifolia)"
+      differences: "Gray Birch has white to gray bark that peels in thin layers; more triangular leaves"
+      identification_tip: "Beech bark remains smooth and never peels; birch bark typically peels or flakes"
+    
+  cultural_ecological_notes:
+    - "Native to eastern North America; occasionally planted in California landscapes"
+    - "Extremely important wildlife tree in its native range, providing nuts for many animals"
+    - "Smooth bark is highly susceptible to carving, leading to historical 'arborglyph' traditions"
+    - "Can live for 300-400 years in favorable conditions"
+    - "Tends to develop surface roots that can make lawn maintenance difficult"
+    
+  range_within_california:
+    - "Not native to California but occasionally planted as a landscape or park tree"
+    - "Most common in public gardens, arboretums, and large parks"
+    - "Prefers cooler, moister areas; struggles in hot, dry parts of California"
+    - "Performs better in coastal and northern parts of the state"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Eastern Woodland Native American Tribes"
+      physical_uses:
+        - "Nuts harvested as a nutritious food source"
+        - "Wood used for cooking implements and tools"
+        - "Inner bark occasionally used in medicinal preparations"
+        - "Wood burned to smoke meat with a distinctive flavor"
+      symbolic_meaning:
+        - "Represented longevity due to the tree's long lifespan"
+        - "Smooth bark associated with clarity and truth in some tribal traditions"
+        - "Featured in stories teaching about wildlife relationships and seasonal cycles"
+        - "Nuts symbolized provision and abundance in lean times"
+    
+    - culture: "Early American Settlers"
+      physical_uses:
+        - "Nuts collected for food and sometimes pressed for oil"
+        - "Wood used for furniture, flooring, and tool handles"
+        - "Bark used in folk medicine for fever reduction"
+        - "Forest beech stands indicated fertile soil for potential farmland"
+      symbolic_meaning:
+        - "Represented stability and permanence due to long life and unchanging bark"
+        - "Carved names and dates served as living historical records"
+        - "Beech groves often preserved as special gathering places in communities"
+    
+    - culture: "Forestry and Ecology"
+      physical_uses:
+        - "Wood valued for furniture, flooring, and veneer"
+        - "Nuts support wildlife populations including bear, deer, and turkey"
+        - "Shade tolerance used in forest management strategies"
+        - "Studied for climate change impacts due to sensitivity to conditions"
+      symbolic_meaning:
+        - "Represents old-growth forest ecosystems in eastern North America"
+        - "Used as an indicator species for forest health and continuity"
+        - "Symbolizes the connectedness of forest systems through mycorrhizal networks"
+        - "Smooth bark that records human history represents the human-nature relationship"
+    
+    - culture: "European Heritage"
+      physical_uses:
+        - "Traditionally used for wood-turned bowls and kitchen implements"
+        - "Nuts sometimes roasted as coffee substitute historically"
+        - "Wood traditionally used for smoking foods"
+      symbolic_meaning:
+        - "Connected to ancient European folklore where beech was associated with written knowledge"
+        - "Name 'beech' is linguistically related to 'book' in several languages"
+        - "Sometimes planted as a heritage tree to connect with European ancestry"
+  
+  # Additional physical characteristics
+  physical_characteristics:
+    height_range: "50-80 feet, occasionally reaching 100+ feet (as tall as a 5-10 story building)"
+    growth_rate: "Slow to medium, growing 8-12 inches per year when young"
+    crown_spread: "40-60 feet wide at maturity"
+    lifespan: "300-400 years under good conditions"
+    trunk_diameter: "2-4 feet across at maturity"
+    root_system: "Shallow and widespread; often with surface roots"
+    toxicity: "Non-toxic; nuts are edible but rarely produced in quantity in California"
+    
+  conservation_status:
+    status: "Not of conservation concern in California (introduced ornamental)"
+    threats: 
+      - "In native range, threatened by beech bark disease"
+      - "Susceptibility to drought stress in California"
+      - "Climate change may further limit suitable habitat"
+      - "Not invasive in California"
+    protection_efforts:
+      - "No specific conservation efforts in California"
+      - "In eastern native range, subject of research regarding beech bark disease resistance"
+      - "Some historic specimens preserved in arboretums and historic sites"
+    
+  # Decision tree mapping
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: BARK-TEXT-01"  # Smooth bark
+      - "feature_id: BARK-COLOR-01"  # Gray bark
+      - "feature_id: TREE-SIZE-03"  # Tall tree
+    confirmation_features:
+      - "feature_id: LEAF-COMPLEX-01"  # Simple broadleaf
+      - "feature_id: LEAF-EDGE-02"  # Serrated
+      - "feature_id: WINTER-BUD-01"  # Distinctive buds
+      - "feature_id: WINTER-FEAT-03"  # Persistent leaves
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-03", "TREE-FORM-02", "BARK-COLOR-01"]  # Tall tree, rounded crown, gray bark
+      - distance: "from_nearby"
+        features_to_check: ["BARK-TEXT-01", "LEAF-EDGE-02", "LEAF-COMPLEX-01"]  # Smooth bark, serrated edge, simple leaves
+      - distance: "close_inspection"
+        features_to_check: ["WINTER-BUD-01", "LEAF-ARRANGE-01", "TWIG-FORM-01"]  # Distinctive buds, alternate arrangement, zigzag twigs
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["BARK-TEXT-01", "LEAF-COMPLEX-01", "LEAF-EDGE-02"]
+        notes: "Smooth bark and emerging leaves with straight veins to teeth make spring identification reliable"
+      summer:
+        reliability: "High" 
+        key_features: ["BARK-TEXT-01", "LEAF-COMPLEX-01", "LEAF-EDGE-02"]
+        notes: "Smooth gray bark and leaves with straight veins to teeth remain reliable summer identifiers"
+      fall:
+        reliability: "High"
+        key_features: ["BARK-TEXT-01", "LEAF-FALL-01", "FRUIT-TYPE-04"]
+        notes: "Smooth bark, golden fall color, and spiny husks with triangular nuts aid fall identification"
+      winter:
+        reliability: "Very High"
+        key_features: ["BARK-TEXT-01", "WINTER-BUD-01", "WINTER-FEAT-03"]
+        notes: "Distinctive smooth bark and long pointed buds make winter identification highly reliable"
+    misidentification_risks: "Most often confused with European Beech (Fagus sylvatica) which is more commonly planted in California landscapes"
+
+  wildlife_value:
+    nesting_sites: "Provides nesting sites for many bird species"
+    food_source: "Nuts eaten by squirrels, chipmunks, wild turkeys, and other wildlife where produced"
+    shelter: "Dense summer foliage provides cover for birds; cavities in older trees provide homes for various wildlife"
+    ecological_notes: "In its native range, beech nuts are a crucial wildlife food; in California, provides mostly shade and habitat structure"
+    
+  propagation_information:
+    growing_conditions: "Prefers deep, moist, well-drained, slightly acidic soils"
+    water_needs: "Moderate; does not tolerate drought well; needs regular water especially when young"
+    planting_tips: "Plant in partial shade in California; needs protection from hot afternoon sun"
+    maintenance: "Keep soil consistently moist; apply mulch to protect surface roots"
+    special_notes: "Surface roots can make lawn maintenance difficult; best in areas where roots can be left undisturbed"

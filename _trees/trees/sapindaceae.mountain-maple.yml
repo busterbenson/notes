@@ -1,0 +1,299 @@
+tree:
+  common_name: "Mountain Maple"
+  scientific_name: "Acer spicatum"
+  family: "Sapindaceae"
+  
+  # Basic summary information
+  summary: "A small, multi-stemmed understory tree or large shrub with three-lobed leaves, reddish twigs, and striking red fall foliage. Native to northeastern North America, it thrives in cool, moist mountain forests and along streams, rarely exceeding 25 feet in height."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Small, multi-stemmed deciduous tree with 3-lobed (occasionally 5-lobed) leaves; opposite branching pattern; leaves with coarse, irregular teeth"
+    secondary_markers: "Upright clusters of small greenish-yellow flowers in late spring; paired winged seeds (samaras) turning red before brown at maturity; red twigs"
+    seasonal_markers: "Brilliant red to orange fall color; flowers appear after leaves emerge in spring"
+    similar_species_differentiation: "Unlike Rocky Mountain Maple, has more distinctly 3-lobed leaves with coarser teeth; unlike Vine Maple, has more erect growth form and less deeply cut leaves"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves each fall"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple
+        notes: "Leaves are single pieces, not made of smaller leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves and branches grow directly opposite each other"
+      
+      - feature_id: "LEAF-SHAPE-05"  # Lobed
+        notes: "Leaves typically have 3 lobes, sometimes 5, with pointed tips"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated
+        notes: "Leaf edges have coarse, irregular teeth"
+      
+      - feature_id: "FRUIT-TYPE-08"  # Paired samaras
+        notes: "Produces double-winged helicopter-like seeds that turn red before maturing to brown"
+      
+      - feature_id: "WINTER-BUD-03"  # Opposite buds
+        notes: "Winter buds grow in pairs directly across from each other"
+
+    usually_true:
+      # Features that are primarily true, but have notable exceptions
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        notes: "Typically grows with multiple stems from the base"
+        exceptions: "Can occasionally develop into a small single-trunked tree in optimal conditions"
+      
+      - feature_id: "TREE-SIZE-01"  # Short tree
+        notes: "Usually grows 10-25 feet tall"
+        exceptions: "May be shorter in harsh conditions or slightly taller in perfect settings"
+      
+      - feature_id: "HABITAT-LOC-02"  # Mountain habitat
+        notes: "Typically grows in cool, moist mountain habitats"
+        exceptions: "Can be found at lower elevations in moist, shaded valleys and ravines"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        notes: "Leaves have a mild, sweet scent when crushed"
+        exceptions: "Scent may be faint in some trees or conditions"
+
+    sometimes_true:
+      # Features that vary with age, season, or conditions
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young stems and branches"
+        notes: "Bark is smooth on younger growth, becoming slightly furrowed with age"
+      
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        conditions: "Older stems"
+        notes: "Older stems develop grayish-brown bark"
+      
+      - feature_id: "BARK-COLOR-03"  # Red bark/twigs
+        conditions: "New twigs and young branches"
+        notes: "New growth is often reddish, especially in winter and early spring"
+      
+      - feature_id: "LEAF-FALL-02"  # Red fall color
+        conditions: "Fall season"
+        notes: "Leaves typically turn brilliant red to orange-red in autumn"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        conditions: "Common in parts of range"
+        notes: "Often found along streams and in moist ravines"
+      
+      - feature_id: "GEO-ELEV-03"  # High elevation
+        conditions: "In more southern parts of range"
+        notes: "Found at higher elevations, especially at southern limits of range"
+      
+      - feature_id: "FLOWER-TIME-01"  # Spring flowering
+        conditions: "Late spring after leaves emerge"
+        notes: "Produces upright clusters of small greenish-yellow flowers"
+
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Never keeps its leaves through winter"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has compound leaves with separate leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves and branches never grow in an alternate pattern"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Never grows into a large tree; stays small and often shrubby"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Never has thorns or spines on any part"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A small, bushy tree with 3-pointed leaves that turn bright red in fall"
+    memorable_comparison: "Leaves look like they have three fingers pointing outward, and in fall they turn as red as a stop sign"
+    touch_tip: "Feel the leaves - they have bumpy veins and rough teeth around the edges"
+    smell_tip: "Gently crush a leaf to smell a faint sweet scent"
+    fun_fact: "Mountain Maple's seeds turn bright red before they're fully ripe - like they're blushing! Later they turn brown and twirl down to the ground like little helicopters."
+    
+    detective_steps:
+      - step: 1
+        instruction: "Look at the overall size. Is it a small tree or large shrub with multiple stems growing from the base?"
+        yes_next: 2
+        no_next: "Probably not a Mountain Maple - check other maple species that grow larger"
+      - step: 2
+        instruction: "Check how the branches and leaves grow. Do they grow in pairs directly across from each other (opposite)?"
+        yes_next: 3
+        no_next: "Not a maple - look for trees with leaves that alternate along the branch"
+      - step: 3
+        instruction: "Look at the leaf shape. Do they have 3 main pointed lobes (sometimes 5) with jagged teeth around the edges?"
+        yes_next: 4
+        no_next: "Might be another maple species - check shape of lobes and leaf size"
+      - step: 4
+        instruction: "If it's fall, are the leaves turning bright red? In spring or summer, can you find pairs of winged seeds (samaras) that may be reddish?"
+        yes_next: "You found a Mountain Maple!"
+        no_next: "Look at the twigs - Mountain Maple often has reddish twigs, especially new growth"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Leaves emerge with a reddish tint before turning green; upright clusters of small greenish-yellow flowers appear after leaves unfold"
+      reproductive_activity: "Flowers bloom in late spring, typically May to June"
+      identification_tips: "Look for emerging leaves with 3 distinct lobes and flower clusters forming at branch tips"
+      kid_friendly_tip: "In spring, look for the new leaves that might be a bit reddish at first, and then small bunches of yellowish-green flowers"
+    
+    - season: "Summer" 
+      visual_changes: "Leaves reach full dark green color; winged seed pairs develop, often turning red before maturing to brown"
+      reproductive_activity: "Seeds develop throughout summer"
+      identification_tips: "Look for paired samaras (winged seeds) that often have a reddish color during development"
+      kid_friendly_tip: "By summer, the leaves are deep green and you'll see pairs of seeds forming - they often look red before turning brown"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn brilliant red to orange; seeds mature and disperse"
+      reproductive_activity: "Seeds fully mature and are dispersed by wind"
+      identification_tips: "The brilliant red fall color is distinctive; mature seeds spin to the ground like helicopters"
+      kid_friendly_tip: "Fall is when Mountain Maple puts on its best show - with bright red leaves and helicopter seeds spinning down"
+    
+    - season: "Winter"
+      visual_changes: "Drops all leaves; reddish twigs and opposite branching pattern stand out"
+      reproductive_activity: "Dormant"
+      identification_tips: "Look for opposite branching pattern, multiple stems, and often reddish twigs"
+      kid_friendly_tip: "In winter, look for the reddish twigs with opposite buds - they grow in pairs facing each other"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Small tree or shrub with multiple stems"
+      reliability: "High"
+      visibility: "Easy - visible from a distance"
+    - feature: "Opposite leaf arrangement"
+      reliability: "Very high"
+      visibility: "Medium - need to be near the tree"
+    - feature: "3-lobed leaves with coarse teeth"
+      reliability: "High"
+      visibility: "Medium - need to be near the tree"
+    - feature: "Red fall color"
+      reliability: "High"
+      visibility: "Easy - visible from a distance in fall"
+    - feature: "Reddish twigs, especially new growth"
+      reliability: "Medium"
+      visibility: "Medium - need to be near the tree"
+    
+  look_alike_species:
+    - species: "Rocky Mountain Maple (Acer glabrum)"
+      differences: "Rocky Mountain Maple leaves often have 5 shallower lobes with finer teeth; Mountain Maple typically has 3 more distinct lobes with coarser teeth"
+      identification_tip: "Check the leaf lobes - Mountain Maple usually has 3 main lobes with coarser teeth"
+    - species: "Vine Maple (Acer circinatum)"
+      differences: "Vine Maple has more deeply cut leaves with 7-9 lobes and often a somewhat trailing growth habit; Mountain Maple has 3-5 lobes and a more erect growth form"
+      identification_tip: "Count the lobes - Vine Maple has more lobes (7-9) than Mountain Maple (usually 3)"
+    - species: "Striped Maple (Acer pensylvanicum)"
+      differences: "Striped Maple has distinctive green bark with white stripes and leaves with fine, even serrations; Mountain Maple has brownish-gray bark and coarser teeth"
+      identification_tip: "Check the bark - Striped Maple has distinctive white striping, Mountain Maple does not"
+    
+  cultural_ecological_notes:
+    - "Thrives in the understory of mature forests where many other trees cannot grow"
+    - "Often one of the first woody plants to colonize gaps in the forest after disturbances"
+    - "Provides critical browse for deer, moose, and other herbivores"
+    - "Tolerant of heavy snow loads with its flexible multiple-stem growth habit"
+    - "Often indicates areas with reliable moisture and rich soil"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Native American - Ojibwe"
+      physical_uses:
+        - "Made medicinal teas from the inner bark for treating coughs and respiratory issues"
+        - "Used the flexible young stems for making baskets and small implements"
+        - "Collected sap, though with lower sugar content than sugar maple"
+        - "Made dyes from the bark for coloring crafts"
+      symbolic_meaning:
+        - "The tree's preference for cool, moist areas symbolized the importance of wetlands and water resources"
+        - "Represented adaptability and resourcefulness due to its ability to thrive in the understory"
+    
+    - culture: "Native American - Iroquois"
+      physical_uses:
+        - "Used the wood for carving small utensils and tools"
+        - "Made medicinal preparations from the bark for treating eye infections"
+        - "Created poultices from the leaves for treating inflammations"
+        - "Utilized the flexible branches for weaving into temporary structures"
+      symbolic_meaning:
+        - "Associated with transformation due to its dramatic seasonal color changes"
+        - "Used in teaching stories about adaptability and finding one's place"
+    
+    - culture: "Early European settlers"
+      physical_uses:
+        - "Used the hard wood for tool handles and small turned items"
+        - "Occasionally tapped for syrup, though rarely due to its small size and low sugar content"
+        - "Used the bark in folk remedies for various ailments"
+        - "Valued for its fall color in landscaping around homesteads"
+      symbolic_meaning:
+        - "Recognized as an indicator of fertile, moist soil for potential settlement"
+        - "Appreciated for providing autumn color in the mountains"
+    
+  range_within_california:
+    - "Not native to California - natural range is primarily northeastern North America"
+    - "From southeastern Canada and New England south through the Appalachian mountains"
+    - "Occasionally cultivated in California botanical gardens and arboretums"
+    - "Would only thrive in California's coolest, moistest mountain areas if planted"
+    - "Natural habitat is cool, moist forests, ravines, and north-facing slopes"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "10-25 feet, rarely to 30 feet"
+    growth_rate: "Slow to moderate"
+    crown_spread: "8-15 feet wide at maturity"
+    lifespan: "50-100 years"
+    trunk_diameter: "Usually multiple stems 2-6 inches across"
+    root_system: "Shallow to moderately deep, spreading"
+    toxicity: "Not toxic to humans or animals"
+  
+  conservation_status:
+    status: "Secure - common throughout its native range"
+    threats: 
+      - "Habitat loss due to development in some areas"
+      - "Climate change may impact mountain habitats and snow patterns"
+      - "Browsing pressure from deer in some areas"
+    protection_efforts:
+      - "Protected in many national forests and parks within its range"
+      - "Sometimes used in native species restoration projects"
+      - "Studied for adaptation to changing climate conditions"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-ARRANGE-02"  # Opposite
+      - "feature_id: TREE-TRUNK-02"  # Multi-trunked
+    confirmation_features:
+      - "feature_id: LEAF-SHAPE-05"  # Lobed
+      - "feature_id: FRUIT-TYPE-08"  # Paired samaras
+      - "feature_id: LEAF-FALL-02"  # Red fall color
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-01", "TREE-TRUNK-02"]  # Short tree, multi-stemmed
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-ARRANGE-02", "LEAF-SHAPE-05"]  # Opposite, lobed
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-02", "FRUIT-TYPE-08"]  # Serrated edge, paired samaras
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["LEAF-ARRANGE-02", "LEAF-SHAPE-05", "FLOWER-TIME-01"]
+        notes: "Look for opposite arrangement, 3-lobed leaves, and emerging flower clusters"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-SHAPE-05", "LEAF-EDGE-02", "FRUIT-TYPE-08"]
+        notes: "Mature 3-lobed leaves with coarse teeth and developing samaras"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["LEAF-FALL-02", "FRUIT-TYPE-08"]
+        notes: "Brilliant red fall color and mature samaras are distinctive"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["TREE-TRUNK-02", "WINTER-BUD-03", "BARK-COLOR-03"]
+        notes: "Multi-stemmed growth habit, opposite buds, and often reddish twigs"
+    misidentification_risks: 
+      - "Can be confused with other small maples, especially Rocky Mountain Maple"
+      - "Young Red Maple saplings might be confused with Mountain Maple but will grow much larger with time"
+      - "Maple-leaf Viburnum has similar leaves but has dark berries instead of winged seeds"
+  
+  wildlife_value:
+    - "Seeds eaten by small birds and rodents"
+    - "Twigs and leaves browsed by deer, moose, and snowshoe hares"
+    - "Flowers provide nectar for native bees and other pollinators"
+    - "Dense growth offers cover and nesting sites for birds"
+    - "Leaves support various caterpillars and other insect herbivores"

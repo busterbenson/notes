@@ -1,0 +1,315 @@
+tree:
+  common_name: "Heartleaf Birch"
+  scientific_name: "Betula cordifolia"
+  family: "Betulaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A deciduous tree with chalky white peeling bark and heart-shaped leaves with doubly serrated edges. Produces long catkins in spring and has a more northern and high-elevation distribution than many other birches. Native to northeastern North America including high mountains of New England and eastern Canada."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Chalky white peeling bark; distinctive heart-shaped leaf bases; doubly-serrated leaf margins"
+    secondary_markers: "Alternate leaf arrangement; long, dangling catkins in spring; medium-sized tree with upright form"
+    seasonal_markers: "Yellow fall foliage; dormant catkins visible in winter; white bark stands out in winter landscape"
+    similar_species_differentiation: "Has more heart-shaped leaf bases than Paper Birch; larger leaves than Gray Birch; whiter bark than Yellow Birch; not as weeping as European White Birch"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops all leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Leaves are single pieces, not made of smaller leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow in an alternating pattern along branches"
+      
+      - feature_id: "LEAF-EDGE-03"  # Doubly serrated
+        notes: "Leaf edges have teeth of two different sizes"
+      
+      - feature_id: "BARK-COLOR-02"  # White bark
+        notes: "Trunk and main branches have distinctive white bark"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Bark peels in paper-like strips"
+      
+      - feature_id: "FLOWER-TYPE-01"  # Catkins present
+        notes: "Produces hanging catkins in spring"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        notes: "Leaves turn bright yellow in fall"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with one main trunk"
+        exceptions: "Can form multiple stems in some conditions, especially after damage"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Usually reaches 40-70 feet tall at maturity"
+        exceptions: "May be shorter in poor conditions or at extremely high elevations"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Young trees have somewhat pyramidal form"
+        exceptions: "Becomes more rounded with age"
+      
+      - feature_id: "HABITAT-LOC-02"  # Mountain habitat
+        notes: "Common in high elevation mountain areas"
+        exceptions: "Also found at lower elevations in northern parts of range"
+    
+    sometimes_true:
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        conditions: "After damage or in exposed sites"
+        notes: "May develop multiple trunks in certain growing conditions"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        conditions: "Mature trees"
+        notes: "Crown becomes more rounded as tree matures"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Base of older trunks"
+        notes: "Base of trunk may develop shallow furrows with age"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "In cooler climates"
+        notes: "Can tolerate some urban conditions in cooler regions"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        conditions: "Within its natural range"
+        notes: "Sometimes found along streams and in moist areas"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops leaves in fall"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves never grow opposite each other"
+      
+      - feature_id: "BARK-COLOR-03"  # Red bark
+        notes: "Bark is white to chalky-white, never reddish"
+      
+      - feature_id: "HABITAT-WATER-03"  # Dry slope habitat
+        notes: "Prefers moist conditions, not dry sites"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Not native to California; native to northeastern North America"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "A white-barked tree with peeling paper bark and heart-shaped leaves"
+    memorable_comparison: "The bark looks like sheets of white paper peeling off, and the leaves have a valentine heart shape at the bottom"
+    touch_tip: "The bark feels like sheets of paper that can peel away in layers"
+    smell_tip: "Crush a leaf gently to smell a mild, fresh scent"
+    fun_fact: "Indigenous peoples used the bark of birch trees to make canoes, containers, and even to write messages on!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the bark. Is it white and peeling in paper-like strips?"
+        yes_next: 2
+        no_next: "Probably not a Heartleaf Birch - check other trees with different bark"
+      - step: 2
+        instruction: "Look at a leaf. Does it have a heart-shaped base where it connects to the stem?"
+        yes_next: 3
+        no_next: "Might be another type of birch - check Paper Birch which has more oval leaf bases"
+      - step: 3
+        instruction: "Check the leaf edges. Do they have small teeth with even smaller teeth in between (double teeth)?"
+        yes_next: 4
+        no_next: "Not a Heartleaf Birch - their leaves have distinctive double-toothed edges"
+      - step: 4
+        instruction: "Where are you? Heartleaf Birch grows in northeastern North America, especially in mountains."
+        yes_next: "You found a Heartleaf Birch!"
+        no_next: "If you're not in northeastern North America, it may be a different birch species or a planted specimen"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New bright green leaves emerge; long, dangling male catkins release yellow pollen; female catkins develop"
+      reproductive_activity: "Male catkins release pollen; female catkins are pollinated"
+      identification_tips: "Fresh leaves have fine soft hairs that may fall off as leaves mature"
+      kid_friendly_tip: "In spring, look for dangling 'caterpillar' flowers and new soft leaves with little heart-shaped bottoms"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of medium to dark green leaves; female catkins develop into small cylindrical structures with seeds"
+      reproductive_activity: "Seeds develop in cylindrical catkins"
+      identification_tips: "White bark contrasts with green leaves; heart-shaped leaf bases are distinctive"
+      kid_friendly_tip: "In summer, the white bark really stands out against the green leaves - look for leaf bottoms shaped like valentine hearts"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn bright golden-yellow; seeds are released from mature catkins"
+      reproductive_activity: "Seeds disperse on the wind"
+      identification_tips: "Dramatic contrast between yellow foliage and white trunk"
+      kid_friendly_tip: "In fall, the leaves turn bright yellow like golden hearts against the white trunk"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches reveal white peeling bark; male catkins for next year already formed"
+      reproductive_activity: "Dormant; next year's catkins already formed"
+      identification_tips: "White bark stands out against snow; distinctive branch pattern visible"
+      kid_friendly_tip: "In winter, you can see the beautiful white bark peeling like paper, with dark branches making pretty patterns against the sky"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "White bark that peels in paper-like strips"
+      reliability: "Very high"
+      visibility: "Visible from a distance"
+    - feature: "Heart-shaped leaf bases with doubly serrated edges"
+      reliability: "High"
+      visibility: "Need close examination"
+    - feature: "Catkins in spring"
+      reliability: "High (seasonal)"
+      visibility: "Visible from nearby in spring"
+    - feature: "Alternate leaf arrangement"
+      reliability: "High"
+      visibility: "Need close examination"
+    - feature: "Bright yellow fall color"
+      reliability: "Medium (seasonal)"
+      visibility: "Visible from a distance in fall"
+    
+  look_alike_species:
+    - species: "Paper Birch (Betula papyrifera)"
+      differences: "Paper Birch has more oval to triangular leaf bases; Heartleaf Birch has distinctly heart-shaped leaf bases"
+      identification_tip: "Check the leaf base shape - if it has a definite heart shape, it's likely Heartleaf Birch"
+    
+    - species: "European White Birch (Betula pendula)"
+      differences: "European White Birch has more pendulous/weeping branches; less pronounced heart-shaped leaf bases"
+      identification_tip: "European Birch has more diamond-shaped leaves and more weeping form"
+    
+    - species: "Gray Birch (Betula populifolia)"
+      differences: "Gray Birch is smaller, has triangular leaves without heart-shaped bases, and bark doesn't peel as easily"
+      identification_tip: "Gray Birch has more triangular leaves with longer pointed tips"
+    
+    - species: "Yellow Birch (Betula alleghaniensis)"
+      differences: "Yellow Birch has yellowish to bronze peeling bark, not white"
+      identification_tip: "If the bark has any yellowish or bronze tones, it's not Heartleaf Birch"
+    
+  cultural_ecological_notes:
+    - "Pioneer species that helps establish forests after disturbances"
+    - "Important food source for wildlife (seeds, buds, catkins)"
+    - "Provides nesting sites for many bird species"
+    - "Helps stabilize soil on mountain slopes"
+    - "Tolerant of cold, harsh conditions in northern forests"
+    
+  range_within_california:
+    - "Not native to California"
+    - "Occasionally planted as an ornamental in cooler northern regions"
+    - "Found only in cultivation, not naturalized in California"
+    - "Cannot compete with native California trees in natural settings"
+    - "Requires cooler, moister conditions than most of California can provide"
+    
+  # Physical characteristics section
+  physical_characteristics:
+    height_range: "40-70 feet tall"
+    growth_rate: "Moderate to fast (1-2 feet per year when young)"
+    crown_spread: "25-35 feet when mature"
+    lifespan: "80-140 years"
+    trunk_diameter: "1-2 feet at maturity"
+    root_system: "Moderately shallow, spreading"
+    toxicity: "Not toxic to humans or animals"
+  
+  # Cultural significance section
+  cultural_significance:
+    # Organized by culture
+    - culture: "Indigenous Peoples of Northeastern North America"
+      physical_uses:
+        - "Used bark for making canoes, containers, and shelter coverings"
+        - "Created intricate baskets and decorative items from bark"
+        - "Made medicinal preparations from bark and sap"
+        - "Used wood for tools, snowshoes, and domestic implements"
+      symbolic_meaning:
+        - "Regarded as a provider of essential materials for survival"
+        - "Birch bark's ability to burn even when wet symbolized resilience"
+        - "Association with origins stories and cultural narratives"
+        - "Birch forests seen as places of abundance and provision"
+    
+    - culture: "Early European Settlers"
+      physical_uses:
+        - "Harvested for firewood and lumber"
+        - "Made furniture and household items from the wood"
+        - "Used bark for kindling and quick-starting fires"
+        - "Tapped for sap, though less commonly than maples"
+      symbolic_meaning:
+        - "Represented the challenges and beauty of northern forests"
+        - "Distinctive white bark symbolized purity in folk traditions"
+        - "Recognized as an indicator of certain soil conditions"
+    
+    - culture: "Modern Conservation"
+      physical_uses:
+        - "Used in reforestation of northern woodland areas"
+        - "Cultivated as an ornamental landscape tree"
+        - "Wood used for specialty items, veneer, and pulp"
+        - "Studied for adaptations to cold northern environments"
+      symbolic_meaning:
+        - "Symbol of northern forest ecosystems"
+        - "Represents plant adaptations to harsh environments"
+        - "Featured in cultural imagery of northeastern landscapes"
+  
+  # Conservation status section
+  conservation_status:
+    status: "Generally secure in native range"
+    threats: "Climate change may reduce suitable habitat; bronze birch borer and other pests; susceptible to drought and heat stress"
+    protection_efforts: "No special conservation concerns in most of its range; managed within forest ecosystems"
+  
+  # Kid-friendly cultural significance
+  kid_friendly_cultural_significance:
+    - "Native American tribes made canoes from large pieces of birch bark, carefully removing it from the tree without killing it"
+    - "The bark was used like paper for writing messages, making maps, and creating beautiful artwork"
+    - "Special containers and baskets made from birch bark could hold water without leaking"
+    - "The wood burns well even when wet, making it valuable for starting fires in rainy weather"
+    - "Birch trees were sometimes called 'paper trees' by early settlers because of their useful bark"
+  
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: BARK-COLOR-02"  # White bark
+      - "feature_id: BARK-TEXT-03"  # Peeling bark
+      - "feature_id: LEAF-SHAPE-04"  # Heart-shaped
+    
+    confirmation_features:
+      - "feature_id: LEAF-EDGE-03"  # Doubly serrated
+      - "feature_id: LEAF-FALL-01"  # Yellow fall color
+      - "feature_id: FLOWER-TYPE-01"  # Catkins present
+    
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["BARK-COLOR-02", "TREE-SIZE-02", "TREE-FORM-02"]  # White bark, medium tree, rounded crown
+      
+      - distance: "from_nearby"
+        features_to_check: ["BARK-TEXT-03", "LEAF-ARRANGE-01"]  # Peeling bark, alternate arrangement
+      
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-SHAPE-04", "LEAF-EDGE-03"]  # Heart-shaped, doubly serrated
+    
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["BARK-COLOR-02", "FLOWER-TYPE-01", "BARK-TEXT-03"]
+        notes: "White peeling bark and distinctive catkins make spring identification straightforward"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["BARK-COLOR-02", "LEAF-SHAPE-04", "LEAF-EDGE-03"]
+        notes: "White bark and heart-shaped leaf bases with double teeth are distinctive"
+      
+      fall:
+        reliability: "High"
+        key_features: ["BARK-COLOR-02", "LEAF-FALL-01", "BARK-TEXT-03"]
+        notes: "White peeling bark with bright yellow fall foliage"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["BARK-COLOR-02", "BARK-TEXT-03"]
+        notes: "White peeling bark stands out in winter landscape"
+    
+    misidentification_risks:
+      - "Most often confused with Paper Birch (Betula papyrifera)"
+      - "Sometimes mistaken for other white-barked birches"
+      - "Leaf characters can be variable, making identification challenging"
+  
+  # Wildlife value section
+  wildlife_value:
+    - "Seeds eaten by many bird species including chickadees, finches, and redpolls"
+    - "Buds and catkins provide winter food for grouse and other birds"
+    - "Young saplings browsed by deer and moose"
+    - "Older trees provide homes for cavity-nesting birds"
+    - "Supports numerous insect species that are food for birds"
+    - "Provides nesting sites and shelter for various wildlife"

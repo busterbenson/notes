@@ -1,0 +1,288 @@
+tree:
+  common_name: "Fremont Cottonwood"
+  scientific_name: "Populus fremontii"
+  family: "Salicaceae"
+  
+  # Basic summary
+  summary: "A tall, fast-growing deciduous tree with triangular to heart-shaped leaves that shimmer and rustle in the breeze. Has light gray bark that becomes deeply furrowed with age, and produces fluffy white seeds that float through the air like cotton in spring."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Heart-shaped leaves with toothed edges that wiggle and make noise even in light breeze; light gray bark that becomes deeply furrowed on older trees"
+    secondary_markers: "Triangular leaf shape with flattened leaf stem that makes leaves 'dance' in wind; male and female trees with hanging catkins in spring"
+    seasonal_markers: "Bright yellow fall color; fluffy cotton-like seeds floating in air during late spring; leaf buds are sticky and fragrant in spring"
+    similar_species_differentiation: "Unlike other poplars (like Quaking Aspen), has more triangular/heart-shaped leaves rather than rounded; unlike cottonwoods from eastern states, has more wedge-shaped leaf bases"
+  
+  # Core features
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all leaves in fall and grows new ones in spring"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Leaves are all one piece, not divided into smaller leaflets"
+      
+      - feature_id: "LEAF-SHAPE-05"  # Lobed
+        notes: "Leaves have a triangular to heart shape with toothed edges"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated
+        notes: "Leaf edges have many small teeth like a saw"
+      
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        notes: "Light grayish-white bark, especially on younger trees"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk when young"
+        exceptions: "Can develop multiple trunks especially after damage or in wet areas with lots of space"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Usually grows 40-70 feet tall, sometimes up to 100 feet"
+        exceptions: "May be shorter when growing in poor soil or very dry spots"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Young trees have smooth gray bark"
+        exceptions: "Very young twigs may have a slight greenish tint"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Develops a wide, rounded shape when mature with plenty of space"
+        exceptions: "May have irregular shape if growing in crowded areas or after storm damage"
+      
+    sometimes_true:
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Older trees, usually trunks wider than a dinner plate"
+        notes: "Bark develops deep grooves and ridges with age"
+      
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        conditions: "After damage, or in very wet areas where trees have lots of space"
+        notes: "Can grow multiple trunks, especially near rivers"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        conditions: "When leaf buds open in spring; when leaves are crushed"
+        notes: "Sweet, balsam-like smell especially from sticky spring buds"
+      
+      - feature_id: "FRUIT-TYPE-09"  # Capsules
+        conditions: "Female trees in spring after flowering"
+        notes: "Green capsules split open to release tiny seeds with cotton-like fluff attached"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        conditions: "Wild trees (not planted in yards or parks)"
+        notes: "Naturally grows along rivers, streams, and other wet areas"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Autumn before leaf drop"
+        notes: "Leaves turn golden yellow before falling off in autumn"
+      
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Never keeps its leaves through winter"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has divided leaves with multiple leaflets"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Never has needle-like leaves; only broad, flat leaves"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Never produces cones; makes seeds in capsules with cotton-like fluff"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Triangle-shaped leaves that 'dance' and make rustling sounds in the wind"
+    memorable_comparison: "The leaves spin and wiggle like tiny windmills on their flat stems, and in spring the fluffy seeds look like it's snowing cotton balls!"
+    touch_tip: "Feel the leaf stem - it's flat instead of round, which is why the leaves wiggle so much in the breeze"
+    smell_tip: "In spring, carefully smell the sticky leaf buds - they have a sweet smell like honey or maple syrup"
+    fun_fact: "These trees can drink over 200 gallons of water every day! That's like filling up a bathtub daily. Their seeds are so light and fluffy they can float in the air for miles, which is why these trees are often the first to grow in new areas near water."
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the leaf shape - is it triangular or heart-shaped with toothed edges?"
+        yes_next: 2
+        no_next: "Not a Fremont Cottonwood - look at other deciduous trees"
+      - step: 2
+        instruction: "Make the 'wind test' - do the leaves dance and make noise even in a light breeze?"
+        yes_next: 3
+        no_next: "Might be another type of poplar - check the bark"
+      - step: 3
+        instruction: "Look at the tree bark - is it light gray, either smooth on young trees or deeply grooved on older ones?"
+        yes_next: 4
+        no_next: "Not a Fremont Cottonwood - might be another type of poplar or cottonwood"
+      - step: 4
+        instruction: "Is the tree growing near water like a river, stream, or in a wet area (unless it was planted in a yard)?"
+        yes_next: "You found a Fremont Cottonwood!"
+        no_next: "If it's not near water and wasn't planted by people, it's probably not a Fremont Cottonwood"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Sticky buds open into bright green leaves; drooping catkins (flower clusters) appear before leaves fully grow; females produce green seed capsules that later burst open with cottony seeds"
+      reproductive_activity: "Male trees produce reddish-purple hanging catkins; female trees produce greenish catkins that develop into seed capsules"
+      identification_tips: "Look for the hanging catkins, sticky leaf buds, and later the cottony seeds flying through the air"
+      kid_friendly_tip: "In spring, look for sticky buds, hanging catkins that look like fuzzy caterpillars, and later, fluffy white cotton floating everywhere!"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of triangular green leaves that rustle and shimmer in the wind; cottony seed dispersal ends"
+      reproductive_activity: "Seeds have already been released; tree focuses on growing"
+      identification_tips: "Identify by the dancing triangular leaves and the rustling sound in summer breezes"
+      kid_friendly_tip: "Summer is when you'll hear the leaves 'talking' in the wind - listen for the whispers and rustling sounds"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn bright golden yellow; eventually all leaves fall off for winter"
+      reproductive_activity: "Tree prepares for dormancy; next year's buds begin to form"
+      identification_tips: "The bright yellow fall color makes these trees easy to spot along streams and rivers"
+      kid_friendly_tip: "In fall, the tree puts on a golden light show! All the leaves turn bright yellow like they're trying to copy the sun"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches; gray bark more visible; pointed leaf buds visible on branches"
+      reproductive_activity: "Dormant; flower buds getting ready for spring"
+      identification_tips: "Look for the light gray bark, thick trunk, and pointed buds on bare branches"
+      kid_friendly_tip: "In winter, the tree takes a nap! Look for the light gray bark and pointy sleeping buds on the branches"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Triangular to heart-shaped leaves with toothed edges"
+      reliability: "Very high"
+      visibility: "High - easily visible during growing season"
+    - feature: "Leaves that dance and rustle in the breeze due to flattened leaf stems"
+      reliability: "Very high"
+      visibility: "High - can be observed and heard from a distance"
+    - feature: "Light gray bark, either smooth (young trees) or deeply furrowed (older trees)"
+      reliability: "High"
+      visibility: "Medium - need to look at trunk"
+    - feature: "Grows near water sources (in wild settings)"
+      reliability: "High" 
+      visibility: "Medium - requires knowledge of surrounding area"
+    - feature: "Cottony seeds in late spring (on female trees only)"
+      reliability: "Very high (when present)"
+      visibility: "High - very noticeable when released"
+    
+  look_alike_species:
+    - species: "Quaking Aspen (Populus tremuloides)"
+      differences: "Quaking Aspen has more rounded leaves (not triangular); usually grows at higher elevations in mountains; has whiter bark that doesn't get as deeply furrowed; typically smaller in overall size"
+      identification_tip: "If the leaves are more rounded than triangular and the tree is growing in mountains rather than valleys, it's likely Quaking Aspen"
+    
+    - species: "Black Cottonwood (Populus trichocarpa)"
+      differences: "Black Cottonwood has more elongated, not as triangular leaves; bark often darker gray to black; leaf undersides often have a whitish color; buds are very resinous and extra sticky"
+      identification_tip: "Check the leaf undersides - if they're whitish and the buds are super sticky/fragrant, it might be Black Cottonwood"
+    
+    - species: "Eastern Cottonwood (Populus deltoides)"
+      differences: "Not native to California but sometimes planted; very similar but leaf bases form a flatter angle (not as heart-shaped); leaf stems typically shorter"
+      identification_tip: "Native range differences; Fremont Cottonwood is native to the American West while Eastern Cottonwood is native to eastern United States"
+    
+  cultural_significance:
+    - culture: "Cahuilla"
+      physical_uses:
+        - "Used the wood to build shelters, especially framing for brush houses because it's straight and easy to work with"
+        - "Made household tools and containers from the wood"
+        - "Carved canoes from large trunks for crossing rivers and streams"
+        - "Used the sticky leaf buds to make a sweet-smelling medicine for colds and sore throats"
+      symbolic_meaning:
+        - "Respected the tree as a water finder - seeing these trees meant water was nearby"
+        - "Included in creation stories as one of the first trees to grow along waterways"
+    
+    - culture: "Kumeyaay"
+      physical_uses:
+        - "Made temporary shelters with the branches and leaves"
+        - "Used the stringy inner bark to make rope and cordage for tying things together"
+        - "Boiled parts of the bark to make a tea for reducing fevers"
+        - "Gathered the cotton-like fluff to help start fires (as tinder)" 
+      symbolic_meaning:
+        - "Considered the rustling sound of the leaves as messages from ancestors or nature spirits"
+        - "Used the tree as a geographic marker in traditional songs about sacred places"
+    
+    - culture: "Chumash"
+      physical_uses:
+        - "Made planks for building houses and canoes from the wood"
+        - "Used the cotton-like seed fluff for padding in baby cradles"
+        - "Mixed the sticky bud resin with other plants to make healing salves for skin problems"
+        - "Used branches and wood for cooking fires"
+      symbolic_meaning:
+        - "Saw the tree as a symbol of life and renewal due to its connection with water"
+        - "Featured in stories about the movement of water through the landscape"
+    
+  cultural_ecological_notes:
+    - "Creates important shady areas along streams and rivers, keeping water cool for fish"
+    - "Roots help hold stream banks in place during floods and prevent erosion"
+    - "Fallen leaves feed bugs and fish in streams, supporting the whole food web"
+    - "Dead or hollow trees provide homes for owls, woodpeckers, and many other animals"
+    - "Dropped branches and logs create important habitat in streams for fish to hide"
+    
+  range_within_california:
+    - "Found throughout California in areas with accessible groundwater, especially along streams and rivers"
+    - "Common in the Central Valley along the Sacramento and San Joaquin Rivers and their tributaries"
+    - "Grows in Southern California along the Santa Ana River and other waterways"
+    - "Present in riparian areas of the Sierra Nevada foothills up to about 6,500 feet elevation"
+    - "Can be found in desert regions but only where there's reliable water, like springs or oases"
+    
+  physical_characteristics:
+    height_range: "40-70 feet tall, sometimes up to 100 feet (about as tall as a 7-10 story building)"
+    growth_rate: "Very fast, can grow 3-6 feet per year when young with plenty of water"
+    crown_spread: "30-60 feet wide (as wide as a house or small playground)"
+    lifespan: "75-150 years (about as long as a human might live or a bit longer)"
+    trunk_diameter: "2-5 feet across (as wide as a dinner table)"
+    root_system: "Wide-spreading, shallow roots that seek out water; can extend twice as far as the branches"
+    toxicity: "Not poisonous; historically some parts were used as medicine by Native Americans"
+    
+  conservation_status:
+    status: "Not endangered as a species, but riparian habitat where it naturally grows has been greatly reduced"
+    threats:
+      - "Loss of natural river floodplains due to dams, flood control, and development"
+      - "Groundwater pumping that lowers water tables these trees depend on"
+      - "Replacement of native riparian areas with farms and urban development"
+      - "Climate change bringing more severe droughts to California"
+    protection_efforts:
+      - "Riparian habitat restoration projects along many California rivers and streams"
+      - "Use in erosion control and stream bank stabilization projects"
+      - "Protected status in many riparian conservation areas and wildlife refuges"
+      - "Replanting efforts as part of river restoration programs throughout the state"
+    
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-SHAPE-05"  # Lobed (triangular shape)
+      - "feature_id: HABITAT-WATER-01"  # Riparian habitat
+    confirmation_features:
+      - "feature_id: BARK-COLOR-01"  # Gray bark
+      - "feature_id: LEAF-EDGE-02"  # Serrated leaf edges
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-03", "TREE-FORM-02", "HABITAT-WATER-01"]  # Tall tree, rounded crown, riparian habitat
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SHAPE-05", "BARK-COLOR-01"]  # Triangular leaves, gray bark
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-02", "SENSORY-SMELL-01"]  # Serrated leaf edges, aromatic when crushed
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["FLOWER-TYPE-01", "SENSORY-SMELL-01", "FRUIT-TYPE-09"]  # Catkins, aromatic buds, seed capsules
+        notes: "Cottony seeds and catkins make spring identification easiest"
+      summer:
+        reliability: "High"
+        key_features: ["LEAF-SHAPE-05", "BARK-COLOR-01", "TREE-FORM-02"]  # Triangular leaves, gray bark, rounded crown
+        notes: "Dancing leaves and riparian habitat are key summer identifiers"
+      fall:
+        reliability: "High" 
+        key_features: ["LEAF-FALL-01", "HABITAT-WATER-01"]  # Yellow fall color, riparian habitat
+        notes: "Bright yellow color makes fall identification easy near water"
+      winter:
+        reliability: "Medium"
+        key_features: ["BARK-COLOR-01", "BARK-TEXT-02", "HABITAT-WATER-01"]  # Gray bark, furrowed texture, riparian habitat
+        notes: "More difficult in winter; focus on bark features and location near water"
+    misidentification_risks:
+      - "Quaking Aspen - similar family but has more rounded leaves and grows at higher elevations"
+      - "Black Cottonwood - similar but has whitish leaf undersides and darker bark"
+      - "Eastern Cottonwood - non-native species sometimes planted in landscapes"
+      
+  wildlife_value:
+    food_source:
+      - "Beavers eat the bark and use branches for building dams"
+      - "Deer and rabbits browse on young shoots and leaves"
+      - "Many birds eat the buds in winter and spring"
+      - "Fallen leaves feed stream insects that become food for fish"
+    habitat_provided:
+      - "Large dead limbs and hollow trunks provide homes for woodpeckers, owls, and other birds"
+      - "Dense foliage provides nesting sites for many songbirds"
+      - "Fallen logs in streams create important hiding places for fish"
+      - "Shady canopy keeps streams cool for fish and aquatic life"
+    ecosystem_role: "Keystone species in riparian ecosystems; creates habitat, prevents erosion, filters water, and supports biodiversity along waterways"

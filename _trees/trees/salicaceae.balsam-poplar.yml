@@ -1,0 +1,285 @@
+tree:
+  common_name: "Balsam Poplar"
+  scientific_name: "Populus balsamifera"
+  family: "Salicaceae"
+  
+  # Basic summary
+  summary: "A tall, fast-growing deciduous tree with oval to lance-shaped leaves that have a whitish underside. Known for its very aromatic, sticky leaf buds in spring, smooth grayish bark that develops furrows with age, and fluffy white seeds that float through the air."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Very fragrant, sticky leaf buds, especially in spring; oval to lance-shaped leaves (longer than they are wide) with whitish undersides"
+    secondary_markers: "Leaves flutter in the breeze due to flattened leaf stems; smooth gray-green bark on younger trees that becomes furrowed with age"
+    seasonal_markers: "Bright yellow fall color; extremely sticky and sweet-smelling buds in early spring; hanging catkins before leaves emerge"
+    similar_species_differentiation: "Unlike Quaking Aspen, has more elongated leaves (not rounded); unlike Fremont Cottonwood, leaves are more oval/elongated than triangular; similar to Balm-of-Gilead but with more elongated leaves"
+  
+  # Core features
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all leaves in fall and grows new ones in spring"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Leaves are all one piece, not divided into smaller leaflets"
+      
+      - feature_id: "LEAF-SHAPE-03"  # Lanceolate
+        notes: "Leaves are oval to lance-shaped, longer than they are wide, with pointed tips"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated
+        notes: "Leaf edges have fine teeth like a small saw"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        notes: "Very fragrant buds and young leaves, especially in spring"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk"
+        exceptions: "Can develop multiple trunks after damage or in wet areas"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Usually grows 50-80 feet tall"
+        exceptions: "May be shorter in poor growing conditions or when young"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Young trees have smooth greenish-gray bark"
+        exceptions: "Very young twigs may have a slightly reddish-brown tint"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Develops a broad, oval to rounded shape when mature"
+        exceptions: "May have irregular shape if growing in crowded areas"
+      
+      - feature_id: "LEAF-COLOR-04"  # Silver undersides
+        notes: "Underside of leaves are whitish or silvery"
+        exceptions: "Young leaves may have less distinct white undersides"
+      
+    sometimes_true:
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Older trees"
+        notes: "Bark develops shallow grooves and ridges with age"
+      
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        conditions: "After damage, or in very wet areas"
+        notes: "Can grow multiple trunks, especially near waterways"
+      
+      - feature_id: "FRUIT-TYPE-09"  # Capsules
+        conditions: "Female trees in spring after flowering"
+        notes: "Green capsules split to release tiny seeds with cotton-like fluff attached"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        conditions: "Wild trees (not planted in yards or parks)"
+        notes: "Naturally grows along rivers, streams, and wet areas"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Autumn before leaf drop"
+        notes: "Leaves turn golden yellow before falling off in autumn"
+      
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Never keeps its leaves through winter"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has divided leaves with multiple leaflets"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Never has needle-like leaves; only broad, flat leaves"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Never produces cones; makes seeds in capsules with cotton-like fluff"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Super-sticky, sweet-smelling buds in spring, and oval, pointed leaves with silver undersides that flutter in the wind"
+    memorable_comparison: "The sticky buds feel like nature's super glue and smell like sweet honey mixed with cough drops"
+    touch_tip: "Feel the leaf stem - it's flat instead of round, which is why the leaves dance in the breeze. In spring, carefully touch a bud - it's super sticky like syrup!"
+    smell_tip: "In spring, carefully smell the sticky buds - they have an amazing sweet, balsam smell that people use in perfumes and medicines"
+    fun_fact: "The super fragrant sticky stuff on the buds is called 'resin' and was collected by Native Americans and pioneers to make medicine for sore throats and chest colds. That's why it's called 'Balsam' Poplar!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, check the leaf shape - are they oval to lance-shaped (longer than wide) with pointed tips?"
+        yes_next: 2
+        no_next: "Not a Balsam Poplar - if they're more triangular or round, check other poplar species"
+      - step: 2
+        instruction: "Flip over a leaf - is the underside whitish or silvery?"
+        yes_next: 3
+        no_next: "Probably not a Balsam Poplar"
+      - step: 3
+        instruction: "In spring, check the buds - are they super sticky and smell sweet like honey or cough drops?"
+        yes_next: 4
+        no_next: "If it's spring and the buds aren't very sticky and fragrant, it's probably not a Balsam Poplar"
+      - step: 4
+        instruction: "Make the 'wind test' - do the leaves dance and make noise even in a light breeze?"
+        yes_next: "You found a Balsam Poplar!"
+        no_next: "If the leaves don't flutter easily, it might be another tree species"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Very sticky, fragrant buds open; hanging catkins appear before leaves fully emerge; leaves unfold with whitish undersides; females produce green seed capsules that later release cottony seeds"
+      reproductive_activity: "Male trees produce reddish-purple hanging catkins; female trees produce greenish catkins that develop into seed capsules"
+      identification_tips: "This is the best time to identify by the extremely aromatic sticky buds and catkins"
+      kid_friendly_tip: "Spring is the best time to smell the amazing sweet, sticky buds - they're like nature's perfume factory!"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of oval, pointed green leaves with white undersides that shimmer in the wind; cottony seed dispersal ends"
+      reproductive_activity: "Seeds have already been released; tree focuses on growing"
+      identification_tips: "Look for oval to lance-shaped leaves with white undersides that flutter in the breeze"
+      kid_friendly_tip: "In summer, watch how the leaves flip over and look silvery when the wind blows, making a soft rustling sound"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn bright golden yellow; eventually all leaves fall off for winter"
+      reproductive_activity: "Tree prepares for dormancy; next year's buds begin to form"
+      identification_tips: "The golden yellow fall color and oval-shaped leaves are good identifiers"
+      kid_friendly_tip: "In fall, the tree turns bright yellow like it's made of gold before dropping all its leaves"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches; bark more visible; sticky, fragrant buds visible on branches"
+      reproductive_activity: "Dormant; flower buds getting ready for spring"
+      identification_tips: "Look for the large, very sticky winter buds and grayish bark"
+      kid_friendly_tip: "In winter, look for the shiny, sticky buds on the bare branches - they're already making the sweet smell for spring"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Extremely fragrant, sticky leaf buds in spring"
+      reliability: "Very high"
+      visibility: "Medium - need to look at buds closely"
+    - feature: "Oval to lance-shaped leaves with whitish/silvery undersides"
+      reliability: "High"
+      visibility: "High - visible during growing season"
+    - feature: "Leaves that dance and rustle in the breeze due to flattened leaf stems"
+      reliability: "High"
+      visibility: "High - can be observed from a distance"
+    - feature: "Smooth greenish-gray bark on younger trees"
+      reliability: "Medium" 
+      visibility: "Medium - need to look at trunk"
+    - feature: "Cottony seeds in late spring (on female trees only)"
+      reliability: "High (when present)"
+      visibility: "High - very noticeable when released"
+    
+  look_alike_species:
+    - species: "Balm-of-Gilead Poplar (Populus × jackii)"
+      differences: "Balm-of-Gilead is actually a hybrid with Balsam Poplar as one parent; it has more heart-shaped, less elongated leaves; extremely similar otherwise"
+      identification_tip: "These are very hard to tell apart - Balsam Poplar leaves are more elongated (oval to lance-shaped) with less rounded bases"
+    
+    - species: "Eastern Cottonwood (Populus deltoides)"
+      differences: "Eastern Cottonwood has more triangular leaves with a straight or slightly curved base; buds are aromatic but not as strongly scented"
+      identification_tip: "If the leaves are more triangular with straight bases and the buds are less sticky and fragrant, it might be Eastern Cottonwood"
+    
+    - species: "Quaking Aspen (Populus tremuloides)"
+      differences: "Quaking Aspen has rounded leaves (not oval/elongated); buds are much less sticky and aromatic; typically smaller overall size"
+      identification_tip: "If the leaves are more circular and the buds aren't very sticky or fragrant, it's likely Quaking Aspen"
+    
+  cultural_significance:
+    - culture: "Indigenous peoples of Northern North America"
+      physical_uses:
+        - "Used the sticky bud resin as a healing salve for cuts, burns, and skin problems"
+        - "Made a tea from the inner bark to treat coughs, fevers, and lung problems"
+        - "Used the wood for making dugout canoes, paddles, and tools"
+        - "Burned the wood for smoking hides and fish because of its pleasant scent"
+      symbolic_meaning:
+        - "Viewed as a healing tree with special protective properties"
+        - "The sweet smell was associated with spiritual cleansing and renewal"
+    
+    - culture: "European settlers in North America"
+      physical_uses:
+        - "Collected the sticky buds to make 'Balm of Gilead' ointment for treating chest colds and skin conditions"
+        - "Used the wood for making paper, boxes, and rough lumber"
+        - "Planted as shade trees and windbreaks around homesteads"
+        - "Used the inner bark to make a tea for reducing fevers and treating coughs"
+      symbolic_meaning:
+        - "Named for its healing properties, referring to the biblical healing 'Balm of Gilead'"
+        - "Represented comfort and medicine in frontier conditions"
+    
+    - culture: "Modern herbalists"
+      physical_uses:
+        - "Harvest the sticky spring buds to make healing salves for sore muscles and skin issues"
+        - "Create chest rubs for colds and congestion from the aromatic bud resin"
+        - "Make cough syrups by infusing the buds in honey or syrup"
+        - "Use the buds to create tinctures for respiratory complaints"
+      symbolic_meaning:
+        - "Represents traditional plant knowledge and natural healing"
+        - "Symbol of the healing power of trees in modern herbal medicine"
+    
+  cultural_ecological_notes:
+    - "Creates important shade along waterways, keeping water cooler for fish"
+    - "Roots help prevent soil erosion along stream banks"
+    - "Fast-growing pioneer species that helps restore disturbed areas quickly"
+    - "Provides nesting sites for birds and food for many insects"
+    - "Fallen leaves feed soil organisms and aquatic ecosystems when near water"
+    
+  range_within_california:
+    - "Not native to California but occasionally planted in northern parts of the state"
+    - "Originally from northern and northeastern North America and Canada"
+    - "Can be found in urban and suburban plantings in cooler regions of California"
+    - "Sometimes used in restoration plantings in Northern California"
+    - "Prefers areas with cool summers and reliable moisture"
+    
+  physical_characteristics:
+    height_range: "50-80 feet tall (about as tall as a 5-8 story building)"
+    growth_rate: "Fast, often growing 2-4 feet per year when young with good water"
+    crown_spread: "30-50 feet wide (about the size of a small house footprint)"
+    lifespan: "70-100 years (shorter than many forest trees but longer than a human lifespan)"
+    trunk_diameter: "2-4 feet across (about as wide as a small dining table)"
+    root_system: "Wide-spreading, shallow roots that seek out water; can be invasive near pipes and foundations"
+    toxicity: "Not poisonous; the buds have been used medicinally for centuries"
+    
+  conservation_status:
+    status: "Not of conservation concern; abundant and widespread in its native range"
+    threats:
+      - "Susceptible to various canker diseases and poplar borers"
+      - "Hybridizes readily with other poplars, potentially diluting native poplar genetics"
+      - "Climate change may reduce suitable habitat in warmer regions"
+    protection_efforts:
+      - "No specific protection efforts needed for the species as a whole"
+      - "Sometimes included in riparian restoration projects in appropriate climates"
+    
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-SHAPE-03"  # Lanceolate
+      - "feature_id: SENSORY-SMELL-01"  # Aromatic leaves/buds
+    confirmation_features:
+      - "feature_id: LEAF-COLOR-04"  # Silver undersides
+      - "feature_id: LEAF-EDGE-02"  # Serrated leaf edges
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-03", "TREE-FORM-02", "LEAF-COLOR-04"]  # Tall tree, rounded crown, silver leaf undersides
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SHAPE-03", "BARK-COLOR-01"]  # Lanceolate leaves, gray bark
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-02", "SENSORY-SMELL-01"]  # Serrated leaf edges, aromatic buds/leaves
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["SENSORY-SMELL-01", "FLOWER-TYPE-01", "FRUIT-TYPE-09"]  # Aromatic buds, catkins, seed capsules
+        notes: "The extremely fragrant sticky buds make spring identification easiest"
+      summer:
+        reliability: "High"
+        key_features: ["LEAF-SHAPE-03", "LEAF-COLOR-04", "TREE-FORM-02"]  # Lanceolate leaves, silver undersides, rounded crown
+        notes: "Leaf shape and white undersides are key summer identifiers"
+      fall:
+        reliability: "Medium" 
+        key_features: ["LEAF-FALL-01", "LEAF-SHAPE-03"]  # Yellow fall color, elongated leaves
+        notes: "Yellow color and leaf shape help with fall identification"
+      winter:
+        reliability: "Medium"
+        key_features: ["SENSORY-SMELL-01", "BARK-COLOR-01", "BARK-TEXT-02"]  # Aromatic sticky buds, bark features
+        notes: "Large, sticky, fragrant winter buds are the best winter identifier"
+    misidentification_risks:
+      - "Balm-of-Gilead Poplar - extremely similar hybrid with more heart-shaped leaves"
+      - "Eastern Cottonwood - similar but with more triangular leaves"
+      - "Quaking Aspen - smaller tree with round leaves and less aromatic buds"
+      
+  wildlife_value:
+    food_source:
+      - "Beavers eat the bark and use branches for building dams"
+      - "Deer and moose browse on young shoots and leaves"
+      - "Porcupines sometimes eat the inner bark"
+      - "Many birds eat the seeds when released in spring"
+    habitat_provided:
+      - "Large dead limbs provide homes for cavity-nesting birds"
+      - "Dense foliage provides nesting sites for many songbirds"
+      - "Provides shade and shelter along waterways for many animals"
+      - "Fallen logs create homes for small mammals, amphibians, and insects"
+    ecosystem_role: "Fast-growing pioneer species that quickly stabilizes disturbed areas; helps prevent erosion along waterways; contributes to forest succession"

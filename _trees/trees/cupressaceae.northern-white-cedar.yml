@@ -1,0 +1,242 @@
+tree:
+  common_name: "Northern White-cedar"
+  scientific_name: "Thuja occidentalis"
+  family: "Cupressaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "An evergreen tree with a narrow, Christmas tree shape and flat, fan-like branches made of tiny overlapping scale-like leaves. The foliage feels soft to touch and has a pleasant spicy smell when crushed, while the reddish-brown bark peels in thin strips."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Flat, fan-like sprays of scale-like leaves; narrow pyramidal or columnar shape"
+    secondary_markers: "Yellow-green to dark green foliage; small elongated woody cones about 1/2 inch long"
+    seasonal_markers: "Bright yellow-green new growth in spring; slight bronzing of foliage possible in winter"
+    similar_species_differentiation: "Unlike junipers, has woody cones not blue berries; unlike Western Redcedar, stays smaller with less drooping branch tips"
+  
+  # Core features section
+  features:
+    always_true:
+      # Reference features.yml IDs with tree-specific notes
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its green foliage year-round, never drops all its leaves"
+      
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        notes: "Tiny overlapping scales that look like little green fish scales or roof shingles"
+      
+      - feature_id: "CONE-SIZE-01"  # Small cones
+        notes: "Produces small elongated woody cones about 1/2 inch long"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        notes: "Foliage has a pleasant spicy smell when crushed"
+    
+    usually_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        exceptions: "Some cultivated varieties may be more columnar or rounded"
+        notes: "Typically grows in a narrow pyramid or Christmas tree shape"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        exceptions: "In California, often remains smaller than in its native range"
+        notes: "Can grow 40-50 feet tall in ideal conditions"
+      
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        exceptions: "May occasionally develop multiple stems, especially if damaged"
+        notes: "Typically grows with one main trunk"
+      
+      - feature_id: "BARK-TEXT-06"  # Fibrous bark
+        exceptions: "Young trees may have smoother bark"
+        notes: "Bark becomes stringy and shredding with age"
+    
+    sometimes_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "TREE-SIZE-01"  # Small tree
+        conditions: "When young or in poor growing conditions"
+        notes: "May stay under 30 feet tall in many landscape settings"
+      
+      - feature_id: "TREE-FORM-04"  # Columnar form
+        conditions: "In certain cultivated varieties bred for narrow form"
+        notes: "Some garden varieties are bred to grow tall and very narrow"
+      
+      - feature_id: "LEAF-COLOR-03"  # Blue-green
+        conditions: "Some cultivated varieties have more bluish foliage"
+        notes: "Some garden varieties have bluish-tinged foliage"
+    
+    never_true:
+      # Features explicitly absent that help differentiation
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all its leaves seasonally; always stays green"
+      
+      - feature_id: "FRUIT-TYPE-06"  # Fleshy cones
+        notes: "Unlike junipers, never produces berry-like cones"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Never has true needles growing in bundles like pines"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Flat, fan-like branches that feel soft and made of tiny overlapping green scales"
+    memorable_comparison: "The branches look like flat green fans that a fairy might use"
+    touch_tip: "The branches feel soft and feathery, not prickly like some evergreens"
+    smell_tip: "Gently squeeze a branch and sniff - it has a nice spicy smell like cedar chest"
+    fun_fact: "This tree is called 'Tree of Life' because Native Americans taught early explorers how to use it as medicine to prevent a disease called scurvy!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the tree's shape. Is it narrow like a Christmas tree or tall column?"
+        yes_next: 2
+        no_next: "Not a Northern White-cedar - might be a different kind of evergreen"
+      - step: 2
+        instruction: "Look closely at the branches. Are they flat like fans with tiny scale-like leaves that overlap like fish scales?"
+        yes_next: 3
+        no_next: "Not a Northern White-cedar - might be a pine or fir with needles instead"
+      - step: 3
+        instruction: "Gently touch the branches. Do they feel soft, not prickly? And when you smell them, do they have a nice spicy scent?"
+        yes_next: "You found a Northern White-cedar!"
+        no_next: "Might be another scale-leaved evergreen - check the texture and smell again"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Bright yellow-green new growth appears at the tips of branches"
+      reproductive_activity: "Small pollen cones may appear, releasing yellow pollen"
+      identification_tips: "The contrast between bright new growth and older foliage helps identification"
+      kid_friendly_tip: "In spring, look for bright yellow-green 'tips' on the branches like they've been dipped in paint"
+    
+    - season: "Summer" 
+      visual_changes: "Foliage matures to a uniform green color; small green seed cones develop"
+      reproductive_activity: "Small green seed cones grow about 1/2 inch long with overlapping scales"
+      identification_tips: "Uniform green color and developing cones aid identification"
+      kid_friendly_tip: "In summer, tiny green cones start to grow that look like little eggs sitting upright on the branches"
+    
+    - season: "Fall"
+      visual_changes: "Tree remains evergreen with no significant color change"
+      reproductive_activity: "Seed cones mature to light brown and open to release winged seeds"
+      identification_tips: "Brown mature cones help with fall identification"
+      kid_friendly_tip: "In fall, the little cones turn brown and open up to let their seeds fly away in the wind"
+    
+    - season: "Winter"
+      visual_changes: "Maintains green foliage, though it may take on a slight bronze tint in cold weather"
+      reproductive_activity: "Dormant; brown seed cones remain on the tree"
+      identification_tips: "Evergreen nature stands out when deciduous trees are bare"
+      kid_friendly_tip: "In winter, it stays green when other trees lose their leaves, but might look a bit darker or bronzy"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Flat, fan-like sprays of scale-like leaves"
+      reliability: "Very high"
+      visibility: "High - distinctive branch form is easily observed"
+    - feature: "Narrow pyramidal or columnar shape"
+      reliability: "High"
+      visibility: "High - overall form visible from a distance"
+    - feature: "Pleasant spicy fragrance when foliage is crushed"
+      reliability: "High"
+      visibility: "Requires interaction - must crush foliage to smell"
+    - feature: "Small elongated woody cones about 1/2 inch long"
+      reliability: "High"
+      visibility: "Medium - need to look closely when cones are present"
+    
+  look_alike_species:
+    - species: "Western Redcedar (Thuja plicata)"
+      differences: "Much larger tree with more drooping branch tips and larger cones; leaves are more lustrous green"
+      identification_tip: "Western Redcedar has drooping branch tips like a weeping willow; Northern White-cedar branches are more stiff"
+    
+    - species: "Eastern Redcedar (Juniperus virginiana)"
+      differences: "Has blue berry-like cones rather than woody cones; has a stronger aromatic scent"
+      identification_tip: "Look for cones - junipers have blue berries, Northern White-cedar has small woody brown cones"
+    
+    - species: "Atlantic White-cedar (Chamaecyparis thyoides)"
+      differences: "Has more blue-green foliage and rounder cones, while Northern White-cedar has flatter sprays and more elongated cones"
+      identification_tip: "Atlantic White-cedar foliage has a bluish tint and the cones are rounder"
+    
+    - species: "Italian Cypress (Cupressus sempervirens)"
+      differences: "More strictly columnar with less distinct flat sprays and harder, round cones"
+      identification_tip: "Italian Cypress branches aren't flat and fan-like; they're more rounded in cross-section"
+
+  cultural_ecological_notes:
+    - "Wood is lightweight, aromatic, and exceptionally rot-resistant"
+    - "Widely used in its native range for canoes, posts, and outdoor construction"
+    - "Provides important winter cover for wildlife in its native range"
+    
+  range_within_california:
+    - "Not native to California, found only as a planted ornamental"
+    - "Performs best in cooler coastal or mountain areas of California"
+    - "Often used in gardens, parks, and as hedges throughout the state"
+    
+  cultural_significance:
+    - culture: "Native American Tribes of Northeastern North America"
+      physical_uses:
+        - "Bark and leaves used to make medicine for treating scurvy and other ailments"
+        - "Wood used for canoes, lodgepoles, and baskets"
+      symbolic_meaning:
+        - "Considered sacred in many tribal traditions for its healing properties"
+        - "Associated with long life and endurance due to its longevity"
+    
+    - culture: "Early European Settlers"
+      physical_uses:
+        - "Used medicinally after Native Americans taught settlers about its vitamin C content"
+        - "Wood used for fence posts, shingles, and outdoor furniture"
+      symbolic_meaning:
+        - "Named 'Arborvitae' meaning 'Tree of Life' due to its medicinal uses"
+        - "Became a symbol of survival in harsh conditions"
+    
+    - culture: "Modern Landscape Design"
+      physical_uses:
+        - "Planted as hedges, screens, and formal garden specimens"
+        - "Many cultivars developed for different shapes and sizes in landscapes"
+      symbolic_meaning:
+        - "Represents long-standing garden tradition (one of the first North American trees introduced to European gardens)"
+        - "Symbol of privacy and boundaries in modern landscape design"
+
+  physical_characteristics:
+    height_range: "40-50 feet tall in ideal conditions, often smaller in California"
+    growth_rate: "Slow to moderate - about 6-12 inches per year"
+    crown_spread: "10-15 feet wide"
+    lifespan: "Can live 400+ years in the wild; typically 50-100 years in landscapes"
+    trunk_diameter: "1-2 feet at maturity"
+    root_system: "Relatively shallow and fibrous"
+    toxicity: "Generally non-toxic, though the oil can cause skin irritation in sensitive individuals"
+
+  conservation_status:
+    status: "Not threatened or endangered"
+    threats: "In its native range - habitat loss, deer browsing, and climate change"
+    protection_efforts: "Populations are generally stable in its native range"
+
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+    confirmation_features:
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+      - feature_id: "CONE-SIZE-01"  # Small cones
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-01", "LEAF-TYPE-02"]  # Pyramidal shape, evergreen
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-FORM-05"]  # Scale-like leaves in flat sprays
+      - distance: "close_inspection"
+        features_to_check: ["SENSORY-SMELL-01", "CONE-SIZE-01"]  # Aromatic smell, small cones
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["LEAF-TYPE-02", "LEAF-FORM-05", "TREE-FORM-01"]
+        notes: "New growth helps identify but not dramatically different from other seasons"
+      summer:
+        reliability: "High"
+        key_features: ["LEAF-FORM-05", "CONE-SIZE-01", "TREE-FORM-01"]
+        notes: "Developing cones provide additional confirmation features"
+      fall:
+        reliability: "High" 
+        key_features: ["LEAF-TYPE-02", "LEAF-FORM-05", "CONE-SIZE-01"]
+        notes: "Mature cones provide additional confirmation features"
+      winter:
+        reliability: "Medium"
+        key_features: ["LEAF-TYPE-02", "TREE-FORM-01", "LEAF-FORM-05"]
+        notes: "Evergreen nature helps identify when deciduous trees are bare"
+    misidentification_risks:
+      - "Western Redcedar - larger with drooping branch tips"
+      - "Eastern Redcedar - has berry-like cones, not woody cones"
+      - "Atlantic White-cedar - has bluish foliage and rounder cones"
+      - "Italian Cypress - more columnar without flat fan-like branches"

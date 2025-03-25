@@ -1,0 +1,307 @@
+tree:
+  common_name: "Rocky Mountain Maple"
+  scientific_name: "Acer glabrum"
+  family: "Sapindaceae"
+  
+  # Basic summary information
+  summary: "A multi-stemmed, shrubby maple that sometimes grows into a small tree. Has distinctively lobed leaves with sharp teeth, opposite branching, and bright red twigs. Often grows in cool mountain areas, turning yellow to red in fall."
+  
+  # Identification priority path
+  identification_path:
+    primary_markers: "Multi-stemmed shrub or small tree with bright red twigs; opposite branches; leaves with 3-5 pointed lobes and sharp teeth"
+    secondary_markers: "Smooth gray bark; paired helicopter-like seeds; yellow to red fall color"
+    seasonal_markers: "Small greenish-yellow flowers in spring; bright red twigs visible year-round; brilliant fall colors"
+    similar_species_differentiation: "Unlike Canyon Maple, typically grows as a multi-stemmed shrub rather than a single-trunked tree; unlike Bigleaf Maple, has much smaller leaves and often red twigs"
+  
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops all leaves seasonally in fall"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple leaf
+        notes: "Has undivided leaf blades, not separate leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves and branches grow directly across from each other, not alternating"
+      
+      - feature_id: "LEAF-SHAPE-05"  # Lobed
+        notes: "Leaves have distinct lobes, usually 3-5, with pointy tips"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated
+        notes: "Leaf edges have sharp teeth all around the lobes"
+      
+      - feature_id: "FRUIT-TYPE-08"  # Paired samaras
+        notes: "Produces paired, winged seeds that spin like helicopter propellers"
+      
+      - feature_id: "WINTER-BUD-03"  # Opposite buds
+        notes: "Winter buds grow in pairs directly across from each other"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Native to California mountains and western states"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        notes: "Typically grows with multiple stems from the base"
+        exceptions: "Can occasionally develop into a small single-trunked tree in ideal conditions"
+      
+      - feature_id: "TREE-SIZE-01"  # Short tree
+        notes: "Usually grows 10-20 feet tall, more like a large shrub"
+        exceptions: "Can occasionally reach 25-30 feet in ideal conditions"
+      
+      - feature_id: "HABITAT-LOC-02"  # Mountain habitat
+        notes: "Grows in mountain areas and high elevations"
+        exceptions: "Sometimes found at lower elevations in cool, moist canyons"
+    
+    sometimes_true:
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young stems and branches"
+        notes: "Bark is smooth, especially on younger growth"
+      
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        conditions: "Older stems"
+        notes: "Older stems develop gray to grayish-brown bark"
+      
+      - feature_id: "BARK-COLOR-03"  # Red bark/twigs
+        conditions: "New twigs and young branches"
+        notes: "New growth is often bright red, especially when exposed to sun"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Fall season, depending on growing conditions"
+        notes: "Leaves can turn yellow in autumn"
+      
+      - feature_id: "LEAF-FALL-02"  # Red fall color
+        conditions: "Fall season, especially in sunny locations"
+        notes: "Leaves often turn red to orange-red in fall"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        conditions: "Common in mountain areas"
+        notes: "Often grows near streams and in moist areas in mountains"
+      
+      - feature_id: "GEO-ELEV-03"  # High elevation
+        conditions: "Often found at higher elevations"
+        notes: "Common at elevations between 5,000-10,000 feet"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Never keeps its leaves through winter"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has compound leaves with separate leaflets along a stem"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves and branches never grow in an alternate pattern"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Never grows into a large tree; stays small and often shrubby"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Never has thorns or spines on any part"
+  
+  # Kid-friendly identification - expanded with creative descriptions
+  kid_friendly_identification:
+    primary_identifier: "A small, bushy maple with bright red twigs and leaves with pointed fingers"
+    memorable_comparison: "Like a maple that never grew up - it stays small and bushy, often with red twigs that look like they've been painted"
+    touch_tip: "The leaves feel thin and papery with bumpy veins; the twigs are smooth and sometimes reddish"
+    smell_tip: "Crush a leaf gently to release a mild, sweet smell"
+    fun_fact: "Rocky Mountain Maple is a superhero tree! Its bright red twigs can protect themselves from getting sunburned - they make their own natural sunscreen by turning red in the sun!"
+    detective_steps:
+      - step: 1
+        instruction: "First, check if it's a small, bushy tree or shrub with multiple stems from the ground. Does it look more like a big bush than a tree with one trunk?"
+        yes_next: 2
+        no_next: "If it has a single trunk, it might be Canyon Maple or another maple species"
+      - step: 2
+        instruction: "Look at how the branches grow. Do they grow in pairs directly opposite each other on the stem?"
+        yes_next: 3
+        no_next: "If branches alternate sides, it's not a maple - check other shrubs"
+      - step: 3
+        instruction: "Check the leaves. Do they have 3-5 pointed 'fingers' (lobes) with sharp teeth along the edges?"
+        yes_next: 4
+        no_next: "If leaves aren't lobed like a hand with teeth, it might be another shrub"
+      - step: 4
+        instruction: "Look at the twigs, especially new growth. Are many of them reddish, particularly where they get lots of sun?"
+        yes_next: "You found a Rocky Mountain Maple!"
+        no_next: "If twigs aren't reddish and the plant is larger, check Canyon Maple or other maples"
+  
+  regional_notes:
+    - region: "Sierra Nevada"
+      notes: "Found in moist areas at middle to high elevations"
+      locations: "Look in shady canyons, near streams, and on cool mountain slopes"
+    - region: "Northern California"
+      notes: "Present in the Klamath Mountains and Cascade Range"
+      locations: "Most common in moist mountain areas above 5,000 feet"
+    - region: "Eastern California"
+      notes: "Occurs in the higher mountains of the eastern Sierra and White Mountains"
+      locations: "Usually in protected canyons and north-facing slopes"
+      
+  confirmation_checklist:
+    - feature: "Multi-stemmed growth habit (shrubby)"
+      reliability: "High"
+      visibility: "Easy to observe year-round"
+    - feature: "Opposite branching pattern"
+      reliability: "Very high"
+      visibility: "Easy to observe year-round"
+    - feature: "Lobed leaves with sharp teeth"
+      reliability: "Very high" 
+      visibility: "Easy to observe during growing season"
+    - feature: "Reddish twigs, especially new growth"
+      reliability: "Medium"
+      visibility: "Most visible on new growth in sunny locations"
+    - feature: "Paired winged seeds (helicopter seeds)"
+      reliability: "High"
+      visibility: "Visible when present (summer to fall)"
+    
+  look_alike_species:
+    - species: "Canyon Maple (Acer grandidentatum)"
+      differences: "Canyon Maple typically grows as a single-trunked small tree rather than a multi-stemmed shrub; has larger leaves"
+      identification_tip: "Rocky Mountain Maple is usually shrubby with multiple stems; Canyon Maple typically has a single trunk"
+    - species: "Bigleaf Maple (Acer macrophyllum)"
+      differences: "Bigleaf Maple has much larger leaves (8-12 inches across) and grows into a large tree (up to 100 feet tall)"
+      identification_tip: "Rocky Mountain Maple is much smaller in all aspects - smaller leaves, shorter height, and often shrubby"
+    - species: "Mountain Ninebark (Physocarpus monogynus)"
+      differences: "Mountain Ninebark has alternate (not opposite) branches and leaves with shallower lobes"
+      identification_tip: "Check the branching pattern - if branches alternate instead of growing in pairs, it's not Rocky Mountain Maple"
+      
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaves emerge reddish-green; small greenish-yellow flowers appear in clusters"
+      reproductive_activity: "Flowers bloom shortly after or with leaf emergence"
+      identification_tips: "Reddish new growth and opposite branching pattern are distinctive"
+      kid_friendly_tip: "In spring, look for tiny new red-green leaves and clusters of small yellowish flowers"
+    
+    - season: "Summer" 
+      visual_changes: "Leaves mature to green; winged seed pairs (samaras) develop"
+      reproductive_activity: "Paired winged seeds grow and mature during summer"
+      identification_tips: "Lobed leaves with sharp teeth and developing paired seed 'helicopters'"
+      kid_friendly_tip: "By summer, you'll see pairs of helicopter seeds starting to form and bright green leaves"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow to red before dropping; seeds disperse in the wind"
+      reproductive_activity: "Seeds fully mature and are carried away by wind"
+      identification_tips: "Yellow to red fall color; paired seeds often still visible"
+      kid_friendly_tip: "In fall, the leaves turn bright colors from yellow to red, and the helicopter seeds spin away in the wind"
+    
+    - season: "Winter"
+      visual_changes: "Leafless; reddish twigs and opposite branching pattern stand out"
+      reproductive_activity: "Dormant"
+      identification_tips: "Multiple stems, opposite branching pattern, and often reddish twigs"
+      kid_friendly_tip: "In winter, look for the red twigs without leaves and branches that grow in matching pairs"
+      
+  cultural_ecological_notes:
+    - "Important food source for wildlife, including birds, small mammals, and deer"
+    - "Provides cover and nesting habitat for small birds and mammals"
+    - "Adapted to survive harsh mountain winters and short growing seasons"
+    - "Often one of the first woody plants to recover after forest fires"
+    - "Can grow in poor soils and helps stabilize mountain slopes"
+    
+  range_within_california:
+    - "Found throughout the Sierra Nevada at middle to high elevations"
+    - "Present in the Klamath Mountains and Cascade Range in Northern California"
+    - "Scattered populations in the White and Inyo Mountains of Eastern California"
+    - "Typically grows at elevations between 5,000-10,000 feet"
+    - "More widespread throughout the Rocky Mountains and western states"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Western Shoshone"
+      physical_uses:
+        - "Used the straight young stems for making arrow shafts"
+        - "Created a medicinal tea from the bark for treating fevers and colds"
+        - "Made small tools and implements from the hard wood"
+        - "Used the flexible branches for making baskets and small structures"
+      symbolic_meaning:
+        - "The bright red twigs represented protection and health"
+        - "The tree's ability to survive harsh mountain conditions was respected"
+        - "Featured in stories about resilience and adaptation to challenging environments"
+    
+    - culture: "Northern Paiute"
+      physical_uses:
+        - "Harvested the inner bark as an emergency food source"
+        - "Made bows from larger stems when ideal woods weren't available"
+        - "Used branches for making shelters and snow shoes"
+        - "Created dyes from the bark for coloring baskets"
+      symbolic_meaning:
+        - "Connected to mountain spirits and high-elevation habitats"
+        - "Red twigs associated with blood and life force"
+        - "The tree's multi-stemmed growth represented community and family connections"
+    
+    - culture: "Sierra Nevada Settlers"
+      physical_uses:
+        - "Used the hard wood for tool handles and small carved items"
+        - "Made wooden skewers and pins from straight branches"
+        - "Harvested for firewood in mountain areas"
+        - "Made walking sticks and ski poles from straight stems"
+      symbolic_meaning:
+        - "Recognized as a sign of water sources in dry mountain areas"
+        - "Bright fall colors celebrated as part of mountain autumn traditions"
+        - "Associated with high mountain adventures and explorations"
+    
+  # Additional physical characteristics not captured in features
+  physical_characteristics:
+    height_range: "10-20 feet tall, occasionally to 30 feet (about as tall as a 1-2 story house)"
+    growth_rate: "Slow to moderate growth"
+    crown_spread: "8-15 feet wide when fully grown"
+    lifespan: "60-80 years"
+    trunk_diameter: "Usually multiple stems 2-6 inches across"
+    root_system: "Moderately deep, spreading"
+    toxicity: "Not toxic to humans or animals"
+    
+  conservation_status:
+    status: "Secure - common throughout its range"
+    threats: 
+      - "Climate change affecting mountain habitats and snow patterns"
+      - "Severe forest fires that burn root systems"
+      - "Development in some mountain areas"
+    protection_efforts:
+      - "Protected in national forests and wilderness areas"
+      - "Used in restoration projects after wildfires in mountain areas"
+      - "Studied for adaptation to changing climate conditions"
+    
+  # Decision tree mapping - helps with algorithm creation
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-ARRANGE-02"  # Opposite
+      - "feature_id: TREE-TRUNK-02"  # Multi-trunked
+    confirmation_features:
+      - "feature_id: LEAF-SHAPE-05"  # Lobed
+      - "feature_id: FRUIT-TYPE-08"  # Paired samaras
+      - "feature_id: BARK-COLOR-03"  # Red bark/twigs
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-01", "TREE-TRUNK-02"]  # Short tree, multi-stemmed
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-ARRANGE-02", "LEAF-SHAPE-05", "BARK-COLOR-03"]  # Opposite, lobed, red twigs
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-02", "FRUIT-TYPE-08"]  # Serrated edge, paired samaras
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-ARRANGE-02", "BARK-COLOR-03", "LEAF-SHAPE-05"]
+        notes: "New reddish growth, opposite branching, and emerging lobed leaves"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-SHAPE-05", "LEAF-EDGE-02", "FRUIT-TYPE-08"]
+        notes: "Mature lobed leaves with teeth and developing samaras"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["LEAF-FALL-01", "LEAF-FALL-02", "FRUIT-TYPE-08"]
+        notes: "Yellow to red fall color and mature samaras"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["TREE-TRUNK-02", "LEAF-ARRANGE-02", "BARK-COLOR-03"]
+        notes: "Multi-stemmed growth habit, opposite buds, and often reddish twigs"
+    misidentification_risks:
+      - species: "Canyon Maple (Acer grandidentatum)"
+        distinguishing_features: "Rocky Mountain Maple is multi-stemmed and shrubby; Canyon Maple typically has a single trunk"
+      - species: "Mountain Ninebark (Physocarpus monogynus)"
+        distinguishing_features: "Mountain Ninebark has alternate branching, not opposite like Rocky Mountain Maple"
+  
+  wildlife_value:
+    - "Seeds eaten by small birds and mammals"
+    - "Twigs and leaves browsed by deer and elk"
+    - "Provides nesting habitat for smaller birds"
+    - "Flowers provide nectar for native bees and other pollinators"
+    - "Dense growth offers cover for small animals in mountain areas"

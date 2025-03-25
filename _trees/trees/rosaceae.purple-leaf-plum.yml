@@ -1,0 +1,322 @@
+tree:
+  common_name: "Purple Leaf Plum"
+  scientific_name: "Prunus cerasifera"
+  family: "Rosaceae"
+  
+  # Basic summary information
+  summary: "A small deciduous tree with dark purple-red leaves, light pink to white spring flowers, and small round purple fruits. Popular in gardens and street plantings for its colorful leaves that add contrast to landscapes throughout the growing season."
+  
+  # Identification priority
+  identification_path:
+    primary_markers: "Dark purple-red leaves throughout the growing season; many small pink flowers that appear before the leaves in early spring"
+    secondary_markers: "Smooth dark bark with horizontal lines; small round purple fruits like tiny plums in summer; rounded crown shape"
+    seasonal_markers: "Pink flowers in early spring before leaves appear; purple-red leaves in summer; fruits in late summer"
+    similar_species_differentiation: "Unlike flowering cherry trees, keeps its purple-red leaf color all summer; unlike crabapples, has smooth (not rough) bark and purple (not green) leaves"
+  
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves in fall"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Leaves are single, not divided into smaller leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow in a staggered pattern along branches"
+      
+      - feature_id: "LEAF-SHAPE-01"  # Oval
+        notes: "Leaves are oval or slightly egg-shaped"
+      
+      - feature_id: "LEAF-COLOR-05"  # Purple-red
+        notes: "Leaves are dark reddish-purple throughout the growing season"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated
+        notes: "Leaf edges have small, sharp teeth all around"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Covered with many small but noticeable pink to white flowers"
+      
+      - feature_id: "FLOWER-TIME-01"  # Spring flowering
+        notes: "Flowers in early spring before leaves appear"
+      
+      - feature_id: "FRUIT-TYPE-03"  # Berries present
+        notes: "Produces small round plum-like fruits about the size of a large cherry"
+      
+      - feature_id: "BARK-PATT-01"  # Horizontal lines
+        notes: "Bark has distinctive horizontal lines or lenticels"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        notes: "Native to Asia and Europe, not native to California"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with one main trunk"
+        exceptions: "May develop multiple stems if damaged or pruned when young"
+      
+      - feature_id: "TREE-SIZE-01"  # Short tree
+        notes: "Usually grows 15-25 feet tall (about as tall as a two-story house)"
+        exceptions: "Can occasionally reach 30 feet in ideal conditions"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Forms a rounded, sometimes spreading shape"
+        exceptions: "Shape can be altered by pruning"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Bark is smooth, especially on younger trees"
+        exceptions: "May develop slight roughness with age"
+      
+      - feature_id: "BARK-COLOR-04"  # Brown bark
+        notes: "Bark is typically reddish-brown to dark brown"
+        exceptions: "May appear more grayish on older portions"
+    
+    sometimes_true:
+      - feature_id: "FLOWER-COLOR-01"  # White flowers
+        conditions: "Some varieties or in certain light conditions"
+        notes: "Flowers may be white or very light pink"
+      
+      - feature_id: "FLOWER-COLOR-02"  # Pink flowers
+        conditions: "Most common varieties"
+        notes: "Flowers are often light to medium pink"
+      
+      - feature_id: "SENSORY-SMELL-03"  # Fragrant flowers
+        conditions: "During full bloom"
+        notes: "Flowers have a light sweet fragrance"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "When planted in landscapes with adequate water"
+        notes: "Very common as street tree and in gardens"
+      
+      - feature_id: "GEO-REGION-03"  # Southern California
+        conditions: "Planted in gardens and parks"
+        notes: "Common landscape tree throughout Southern California"
+      
+      - feature_id: "GEO-REGION-02"  # Central California
+        conditions: "Planted in gardens and parks"
+        notes: "Common in Central California landscapes"
+      
+      - feature_id: "GEO-REGION-01"  # Northern California
+        conditions: "Planted in gardens and parks"
+        notes: "Common in Northern California landscapes"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops all its leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has compound leaves"
+      
+      - feature_id: "LEAF-COLOR-01"  # Dark green
+        notes: "Leaves are purple-red, not green"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Does not have thorns or spines"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Not originally from California; brought from Europe and Asia"
+  
+  # Kid-friendly identification - expanded with open-ended, creative descriptions
+  kid_friendly_identification:
+    primary_identifier: "Purple leaves (like permanent fall colors) and lots of pink flowers in early spring"
+    memorable_comparison: "It's like a tree wearing a purple costume all summer long when other trees wear green"
+    touch_tip: "Feel the leaf - it's smooth and a bit leathery, and check the edge which has tiny teeth like a tiny saw"
+    smell_tip: "In spring, smell the flowers for a sweet, light perfume (but not too close if you have allergies)"
+    fun_fact: "These trees are cousins of cherry trees, peach trees, and almond trees - they're all in the same plant family!"
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the leaf color. Are the leaves dark purple-red instead of green?"
+        yes_next: 2
+        no_next: "Not a Purple Leaf Plum - look for trees with purple leaves"
+      - step: 2
+        instruction: "Check the size of the tree. Is it small, about as tall as a two-story house or less?"
+        yes_next: 3
+        no_next: "Might be a different purple-leafed tree - Purple Leaf Plums are relatively small"
+      - step: 3
+        instruction: "Look at the bark. Is it smooth with horizontal lines that look like dashes?"
+        yes_next: 4
+        no_next: "Might not be a Purple Leaf Plum - check the bark pattern"
+      - step: 4
+        instruction: "In spring, look for pink or white flowers. In summer, look for small round purple fruits the size of large cherries."
+        yes_next: "You found a Purple Leaf Plum!"
+        no_next: "It might be a Purple Leaf Plum, but come back in spring to check for the flowers"
+  
+  regional_notes:
+    - region: "Southern California"
+      notes: "Very common in landscapes; flowers earlier than in northern areas"
+      locations: "Found in parks, gardens, and as street trees"
+    - region: "Central California"
+      notes: "Grows well in most areas with adequate water"
+      locations: "Common in parks, gardens, and as street trees"
+    - region: "Northern California"
+      notes: "Common in urban landscapes, flowers a bit later than southern regions"
+      locations: "Found in parks, gardens, and as street trees"
+      
+  confirmation_checklist:
+    - feature: "Purple-red leaves (not green)"
+      reliability: "Very high"
+      visibility: "Easy to see from far away"
+    - feature: "Pink flowers in early spring (before leaves)"
+      reliability: "Very high"
+      visibility: "Visible from far away when blooming"
+    - feature: "Small, round purple fruits in summer"
+      reliability: "High"
+      visibility: "Need to look at branches closely"
+    - feature: "Smooth bark with horizontal dash-like lines"
+      reliability: "High"
+      visibility: "Need to look at trunk"
+    
+  look_alike_species:
+    - species: "Flowering Plum (other Prunus varieties)"
+      differences: "May have green rather than purple leaves; flower color and fruit size can vary"
+      identification_tip: "If the leaves are green instead of purple, it's probably a different flowering plum variety"
+    - species: "Flowering Cherry (Prunus serrulata)"
+      differences: "Has green leaves, not purple; typically has more showy flowers; doesn't usually produce edible fruits"
+      identification_tip: "If it has green leaves and very showy flowers but no fruits, it's probably a flowering cherry"
+    - species: "Crabapple (Malus species)"
+      differences: "Has green leaves; produces apple-like fruits; bark is typically rougher"
+      identification_tip: "If the fruits look like tiny apples instead of plums, it's a crabapple"
+      
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Covered with pink to white flowers before leaves emerge; leaves emerge purple-red"
+      reproductive_activity: "Heavy flowering in early spring; pollination by bees and other insects"
+      identification_tips: "Flowers appear before leaves, making identification easy"
+      kid_friendly_tip: "In spring, it's covered with pink flowers before the purple leaves come out - like the tree is having a pink party!"
+    
+    - season: "Summer" 
+      visual_changes: "Full, dark purple-red foliage; fruits develop and ripen"
+      reproductive_activity: "Fruits mature to purple-red color"
+      identification_tips: "Purple leaf color is most distinctive feature in summer"
+      kid_friendly_tip: "In summer, it's easy to spot with its purple leaves when other trees are green, and it grows small purple fruits like tiny plums"
+    
+    - season: "Fall"
+      visual_changes: "Leaves may turn slightly more reddish before falling; fruit may persist"
+      reproductive_activity: "Fruit may remain on tree or drop"
+      identification_tips: "Purple leaf color persists until leaf drop"
+      kid_friendly_tip: "In fall, the purple leaves might turn a bit more red before they fall off the tree"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches; smooth bark more visible"
+      reproductive_activity: "Dormant, developing flower buds"
+      identification_tips: "Smooth bark with horizontal lines is most visible"
+      kid_friendly_tip: "In winter, all the leaves fall off and you can see the smooth bark with lines that look like dashes"
+      
+  cultural_ecological_notes:
+    - "Attracts pollinators like bees and butterflies when in bloom"
+    - "Fruits are edible but often not very tasty compared to commercial plums"
+    - "Birds may eat the fruits and spread seeds"
+    - "Used extensively in landscape design for its colorful foliage"
+    - "Many cultivated varieties exist with different flower colors and leaf shades"
+    
+  range_within_california:
+    - "Planted throughout California in gardens, parks and as street trees"
+    - "Grows well in most climate zones of California"
+    - "Prefers full sun but tolerates partial shade"
+    - "Needs moderate watering and well-drained soil"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Japanese"
+      physical_uses:
+        - "Planted for ornamental purposes during cherry blossom festivals"
+        - "Sometimes used as bonsai specimens"
+        - "Fruits occasionally used in preserves and jellies"
+      symbolic_meaning:
+        - "Related to cherry trees which symbolize the beauty and fragility of life"
+        - "Purple leaves represent uniqueness and standing out"
+        - "Early blooming flowers symbolize renewal and the arrival of spring"
+    
+    - culture: "European Garden Tradition"
+      physical_uses:
+        - "Planted as accent trees in formal gardens"
+        - "Used to add color contrast in landscape design"
+        - "Wood occasionally used for small woodworking projects"
+        - "Fruits sometimes used in jams and jellies"
+      symbolic_meaning:
+        - "Used to symbolize uniqueness and distinction in garden design"
+        - "The color purple traditionally associated with royalty and luxury"
+        - "Early blooming nature represents optimism and new beginnings"
+    
+    - culture: "Modern California Landscape"
+      physical_uses:
+        - "Commonly planted as street trees and in parking lots"
+        - "Used to add color diversity to predominantly green landscapes"
+        - "Planted for shade in small spaces where larger trees won't fit"
+        - "Used in water-conscious landscaping as relatively drought-tolerant once established"
+      symbolic_meaning:
+        - "Represents the diversity of plants that thrive in California's climate"
+        - "Symbol of adaptation - a tree from elsewhere that has found a home in California"
+        - "The purple color provides contrast and visual interest in urban settings"
+    
+  # Additional physical characteristics not captured in features
+  physical_characteristics:
+    height_range: "15-25 feet (about as tall as a two-story house)"
+    growth_rate: "Moderate to fast, about 1-2 feet per year when young"
+    crown_spread: "15-25 feet wide when mature (about as wide as a small room)"
+    lifespan: "Relatively short-lived, typically 20-40 years"
+    trunk_diameter: "8-12 inches across when fully grown (about as wide as a dinner plate)"
+    root_system: "Moderately shallow, not usually aggressive"
+    toxicity: "Leaves, seeds, and bark contain small amounts of compounds that can be toxic if eaten in large quantities (like many plants in the rose family)"
+    
+  conservation_status:
+    status: "Secure in cultivation; not endangered"
+    threats: 
+      - "Susceptible to various fungal diseases"
+      - "Can be attacked by aphids and scale insects"
+      - "May suffer during extended droughts"
+      - "Sometimes short-lived in urban settings"
+    protection_efforts:
+      - "Selection of disease-resistant varieties for planting"
+      - "Development of cultivars better adapted to local conditions"
+      - "Not a conservation concern as it's widely cultivated"
+    
+  # Decision tree mapping - helps with algorithm creation
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-COLOR-05"  # Purple-red
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: TREE-SIZE-01"  # Short tree
+    confirmation_features:
+      - "feature_id: FLOWER-TIME-01"  # Spring flowering
+      - "feature_id: BARK-PATT-01"  # Horizontal lines
+      - "feature_id: FRUIT-TYPE-03"  # Berries present (small plums)
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-COLOR-05", "TREE-SIZE-01", "TREE-FORM-02"]  # Purple leaves, small tree, rounded form
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-EDGE-02", "LEAF-COMPLEX-01", "BARK-PATT-01"]  # Serrated edges, simple leaves, bark with horizontal lines
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-03", "LEAF-ARRANGE-01"]  # Small plum fruits, alternate leaf arrangement
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["FLOWER-TIME-01", "FLOWER-SIZE-01", "FLOWER-COLOR-02"]
+        notes: "Pink flowers before leaf emergence make spring identification easy and reliable"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-COLOR-05", "FRUIT-TYPE-03", "LEAF-EDGE-02"]
+        notes: "Purple leaf color and developing fruits are distinctive"
+      
+      fall:
+        reliability: "Medium"
+        key_features: ["LEAF-COLOR-05", "LEAF-TYPE-01", "BARK-PATT-01"]
+        notes: "Purple leaves begin to fall; horizontal lines on bark become more visible"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["BARK-PATT-01", "TREE-SIZE-01", "TREE-FORM-02"]
+        notes: "Smooth bark with horizontal lines visible when tree is bare"
+    misidentification_risks: "Most often confused with other ornamental Prunus species, flowering cherries, or crabapples"
+
+  wildlife_value:
+    nesting_sites: "Small birds may nest in branches when tree has leaves"
+    food_source: "Flowers provide nectar for bees and other pollinators; fruits eaten by birds and some mammals"
+    shelter: "Provides seasonal shelter in spring through fall"
+    ecological_notes: "Though non-native, supports pollinators in urban settings and provides some habitat value"
+    
+  propagation_information:
+    growing_conditions: "Prefers well-drained soil and full sun"
+    water_needs: "Needs moderate water, especially when young"
+    planting_tips: "Best planted in late fall or winter when dormant"
+    maintenance: "May need occasional pruning to maintain shape; watch for disease issues"
+    special_notes: "Many cultivars available with variations in flower color and leaf shade; 'Thundercloud' and 'Krauter Vesuvius' are popular purple leaf varieties"
