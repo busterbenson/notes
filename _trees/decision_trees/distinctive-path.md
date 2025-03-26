@@ -22,7 +22,7 @@ What catches my eye about this tree?
 │   │   ├── They're ROUND or HEART-shaped → Go to Round/Heart-Shaped Leaves
 │   │   ├── They're LONG and NARROW (like ribbons) → Go to Narrow Leaves
 │   │   ├── They're made of many small parts (LEAFLETS) → Go to Compound Leaves
-│   │   ├── They have a special COLOR (purple, silver, etc.) → Go to Colorful Leaves
+│   │   ├── They have a special COLOR (purple, silver, blue, etc.) → Go to Colorful Leaves
 │   │   ├── They MOVE or SHIMMER easily in the breeze → Go to Dancing Leaves
 │   │   ├── They have FUZZY or HAIRY undersides → Go to Fuzzy-Leaf Trees
 │   │   ├── They have distinctive VEINS or PATTERNS → Go to Vein-Pattern Leaves
@@ -277,7 +277,8 @@ All California Trees (124 trees)
 │   │   ├── White Oak Group (leaves with rounded lobes)
 │   │   └── Black Oak Group (leaves with pointed, bristle-tipped lobes)
 │   │
-│   ├── Round or Heart-Shaped Leaves (8 trees)
+│   ├── Round or Heart-Shaped Leaves (9 trees)
+│   │   ├── Silver Dollar Gum (round, silver-blue leaves resembling coins)
 │   │   ├── Redbud Group (heart-shaped leaves)
 │   │   ├── Aspen Group (round leaves that quiver)
 │   │   ├── Catalpa (very large heart-shaped leaves)
@@ -289,6 +290,12 @@ All California Trees (124 trees)
 │   │   ├── Locust Group (pinnate compound leaves, sometimes with thorns)
 │   │   ├── California Buckeye (palmate compound leaves like a hand)
 │   │   └── Mimosa/Silk Tree (feathery, twice-compound leaves)
+│   │
+│   ├── Colorful Leaves (4 trees)
+│   │   ├── Silver Dollar Gum (round silver-blue leaves like coins)
+│   │   ├── Blue Gum Eucalyptus (blue-gray juvenile leaves)
+│   │   ├── Purple Leaf Plum (deep purple-red leaves)
+│   │   └── Japanese Maple (red or purple varieties)
 │   │
 │   ├── Long or Distinctive Needles (12 trees)
 │   │   ├── Super-Long Needle Pines: Gray Pine (10-12"), Coulter Pine, Jeffrey Pine
@@ -354,7 +361,7 @@ All California Trees (124 trees)
 │       ├── California Laurel (bay-like smell when crushed)
 │       ├── Walnut Group (spicy aroma when crushed)
 │       ├── Sweet Gum (aromatic when crushed)
-│       ├── Eucalyptus Group (strong medicinal smell)
+│       ├── Eucalyptus Group (strong medicinal smell - see Mint-Scented Trees for details)
 │       └── Camphor Tree (camphor smell when leaves crushed)
 │
 └── Trees with Distinctive Growth Forms (17 trees)
@@ -508,6 +515,18 @@ These Detective Paths ensure that EVERY California tree can be identified, even 
   - *Peels in irregular patches*
   - *Context: Coastal forests, well-drained slopes*
 
+- **Blue Gum Eucalyptus** (Eucalyptus globulus)
+  - *Smooth bark that peels in long strips revealing patches of blue, gray, cream, and tan colors*
+  - *Different colored layers create a mottled appearance*
+  - *Strong menthol smell from leaves when crushed*
+  - *Context: Widespread in coastal California, planted in groves*
+
+- **Red Gum Eucalyptus** (Eucalyptus camaldulensis)
+  - *Smooth bark with patches of cream, gray, and reddish colors that peel in sections*
+  - *More reddish tones than Blue Gum*
+  - *Narrower leaves that hang vertically*
+  - *Context: Common in Central and Southern California landscapes*
+
 - **Incense-cedar** (Calocedrus decurrens)
   - *Reddish-brown bark that shreds and peels in long strips*
   - *Fibrous texture*
@@ -601,6 +620,34 @@ These Detective Paths ensure that EVERY California tree can be identified, even 
   - *Deeply lobed with bristle tips on lobe points*
   - *Shiny dark green surface*
   - *Context: Widespread in mountain woodlands*
+
+### Colorful Leaves
+*These trees have leaves with unusual or striking colors*
+
+- **Silver Dollar Gum** (Eucalyptus polyanthemos)
+  - *Round, silver-blue leaves that resemble coins or silver dollars*
+  - *Leaves retain their round shape even when mature*
+  - *Gentle eucalyptus smell when crushed*
+  - *Smooth bark with patches of different colors*
+  - *Context: Common in landscaping and parks*
+
+- **Blue Gum Eucalyptus** (Eucalyptus globulus)
+  - *Distinctive blue-gray juvenile leaves different from sickle-shaped adult leaves*
+  - *Strong menthol smell when crushed*
+  - *Peeling bark revealing multiple colors*
+  - *Context: Widespread in coastal California*
+
+- **Purple Leaf Plum** (Prunus cerasifera)
+  - *Deep purple-red leaves throughout growing season*
+  - *Rounded to oval leaf shape*
+  - *Pink flowers in early spring before leaves emerge*
+  - *Context: Common ornamental in yards and streets*
+
+- **Japanese Maple** (Acer palmatum)
+  - *Delicate, star-shaped leaves in red, purple, or green varieties*
+  - *Some varieties maintain red/purple color all season*
+  - *Often smaller, ornamental trees with graceful form*
+  - *Context: Gardens and landscaped areas*
 
 ### Long or Distinctive Needles
 *These conifers have especially noteworthy needles*
@@ -785,6 +832,27 @@ These Detective Paths ensure that EVERY California tree can be identified, even 
   - *Smell released when foliage is crushed*
   - *Context: Mixed conifer forests*
 
+### Mint-Scented Trees
+*These trees have distinctive minty or medicinal smells*
+
+- **Blue Gum Eucalyptus** (Eucalyptus globulus)
+  - *Strong menthol or cough drop smell when leaves crushed*
+  - *Distinctive blue-gray juvenile leaves different from adult leaves*
+  - *Peeling bark in multiple colors*
+  - *Context: Coastal California, often in large stands*
+
+- **Red Gum Eucalyptus** (Eucalyptus camaldulensis)
+  - *Strong eucalyptus smell when leaves crushed*
+  - *Narrow, lance-shaped leaves that hang vertically*
+  - *Smooth bark with patches of red, white and gray*
+  - *Context: Common in Central and Southern California*
+
+- **Silver Dollar Gum** (Eucalyptus polyanthemos)
+  - *Milder eucalyptus smell than other species*
+  - *Round, silver-blue leaves resembling coins*
+  - *Leaves keep round shape even when mature*
+  - *Context: Common in parks and landscaping*
+
 ### Other Distinctive Scents
 *These trees have unique non-pine scents*
 
@@ -799,11 +867,23 @@ These Detective Paths ensure that EVERY California tree can be identified, even 
   - *Similar to commercial walnut but stronger*
   - *Context: Southern California woodlands*
 
-- **Eucalyptus** (various species)
-  - *Strong medicinal smell*
-  - *Distinctive menthol/camphor aroma*
-  - *Smell carries on the breeze*
-  - *Context: Planted throughout California*
+- **Blue Gum Eucalyptus** (Eucalyptus globulus)
+  - *Strong menthol or cough drop smell when leaves crushed*
+  - *Distinctive blue-gray juvenile leaves different from adult leaves*
+  - *Peeling bark in multiple colors*
+  - *Context: Coastal California, often in large stands*
+
+- **Red Gum Eucalyptus** (Eucalyptus camaldulensis)
+  - *Strong eucalyptus smell when leaves crushed*
+  - *Narrower leaves than Blue Gum*
+  - *Smooth bark with patches of red, white and gray*
+  - *Context: Common in Central and Southern California*
+
+- **Silver Dollar Gum** (Eucalyptus polyanthemos)
+  - *Milder eucalyptus smell than other species*
+  - *Round, silver-blue leaves resembling coins*
+  - *Leaves keep round shape even when mature*
+  - *Context: Common in parks and landscaping*
 
 ## Trees with Distinctive Growth Forms
 

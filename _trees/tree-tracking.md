@@ -204,13 +204,14 @@ This comprehensive tree identification guide aims to include profiles for all tr
 
 ## Statistics
 - **Total trees in original CSV**: 147 unique trees
-- **Additional popular landscape trees**: 16
-- **New grand total**: 145 trees
+- **Additional popular landscape trees**: 19
+- **New grand total**: 148 trees
   - Original 165 trees consolidated into 145 by grouping 24 rare species into 4 genus-level entries
-- **Completed profiles**: 145 (100%)
+  - Added 3 important Eucalyptus species common in California landscapes
+- **Completed profiles**: 148 (100%)
 - **Trees by leaf type**:
   - Conifer trees (with needles or scales): 60
-  - Broadleaf trees: 82
+  - Broadleaf trees: 85 (including 3 Eucalyptus species)
   - Other (Joshua Tree, California Fan Palm): 3
 
 > **Note about classifications**: For the decision tree guides, we include Joshua Tree and California Fan Palm in the Broadleaf Path since their leaf structures more closely resemble broad leaves than needles or scales from an identification perspective, though botanically they're monocots rather than true dicot broadleaf trees.
@@ -229,4 +230,4 @@ This comprehensive tree identification guide aims to include profiles for all tr
   - High-priority cultivated landscape trees: 0
   - Other non-native trees: 0
 
-Last updated: March 25, 2025 - Consolidated 24 rare species into 4 genus-level entries, reducing total tree count from 165 to 145 for improved accessibility while maintaining comprehensive coverage. PROJECT COMPLETED! 🎉
+Last updated: March 26, 2025 - Completed profiles for three important Eucalyptus species common in California landscapes: Blue Gum, Red Gum, and Silver Dollar Gum. PROJECT COMPLETED! 🎉

@@ -1,0 +1,278 @@
+tree:
+  common_name: "Blue Gum Eucalyptus"
+  scientific_name: "Eucalyptus globulus"
+  family: "Myrtaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A tall evergreen tree with smooth, peeling bark that reveals multiple colors and strongly aromatic leaves that smell like menthol or cough drops. It has distinctive blue-gray juvenile leaves that are different from the sickle-shaped adult leaves, and produces white flowers followed by woody seed capsules."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Smooth bark that peels in long strips revealing patches of blue, gray, cream, and tan colors; strong menthol smell from crushed leaves"
+    secondary_markers: "Different leaf shapes at different ages - round, waxy blue-gray juvenile leaves vs. long, sickle-shaped adult leaves; large, warty seed capsules with a flat top and conical base"
+    seasonal_markers: "White, puffy flowers in winter and spring; seed capsules visible year-round; bark peeling mostly in summer"
+    similar_species_differentiation: "Unlike Red Gum Eucalyptus, has waxy blue-gray juvenile leaves (not green) and larger seed capsules; unlike Silver Dollar Gum, has more elongated adult leaves and taller growth"
+  
+  # Core features section
+  features:
+    always_true:
+      # Reference features.yml IDs with tree-specific notes
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its leaves year-round"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple
+        notes: "Individual leaves are not divided into smaller leaflets"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Grows very tall, typically 150-180 feet (like a 15-18 story building)"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Bark peels off in long strips or sheets revealing multiple colors"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        notes: "Strong menthol or cough drop smell when leaves are crushed"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        notes: "Native to Australia but widely planted and naturalized in California"
+      
+    usually_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with a single straight trunk"
+        exceptions: "May develop multiple trunks if damaged or cut down and allowed to resprout"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Young trees have a cone-like shape, becoming more open and irregular with age"
+        exceptions: "Shape can vary with growing conditions and proximity to other trees"
+      
+      - feature_id: "LEAF-EDGE-01"  # Entire leaf edge
+        notes: "Leaves typically have smooth edges without teeth"
+        exceptions: "Occasional slight waviness but no distinct teeth or lobes"
+      
+      - feature_id: "ECO-GROWTH-01"  # Fast growing
+        notes: "Grows extremely quickly, often 6-10 feet per year when young"
+        exceptions: "Growth slows somewhat in very dry conditions or poor soils"
+      
+    sometimes_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "LEAF-SHAPE-03"  # Lanceolate
+        conditions: "Adult leaves"
+        notes: "Mature leaves are long, narrow and sickle-shaped"
+      
+      - feature_id: "LEAF-COLOR-03"  # Blue-green
+        conditions: "Juvenile leaves"
+        notes: "Young leaves have a distinctive blue-gray color and waxy coating"
+      
+      - feature_id: "LEAF-COLOR-01"  # Dark green
+        conditions: "Adult leaves"
+        notes: "Mature leaves are darker green and elongated"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        conditions: "Winter to spring"
+        notes: "Produces clusters of white, fluffy flowers"
+      
+      - feature_id: "FRUIT-TYPE-09"  # Capsules
+        conditions: "After flowering"
+        notes: "Forms woody, blue-gray seed capsules with a flat top"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        conditions: "Established trees"
+        notes: "Can survive dry periods once established"
+      
+      - feature_id: "HABITAT-LOC-01"  # Coastal habitat
+        conditions: "In California"
+        notes: "Often planted and naturalized along coastal areas"
+      
+    never_true:
+      # Features explicitly absent that help differentiation
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all leaves seasonally"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Never has compound leaves, always simple"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated
+        notes: "Edges are smooth, not toothed"
+      
+      - feature_id: "FRUIT-TYPE-01"  # Acorns
+        notes: "Never produces acorns, only woody capsules"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Peeling, colorful bark and strong medicine smell from leaves"
+    memorable_comparison: "The bark looks like it's peeling off in long ribbons, showing different colors underneath"
+    touch_tip: "Feel the smooth parts of the bark, and notice how the adult leaves are waxy and stiff"
+    smell_tip: "Gently crush a leaf between your fingers and smell - it's like cough drops or chest rub!"
+    fun_fact: "This tree can grow super fast - up to 10 feet in just one year! That's like growing as tall as your classroom ceiling every year."
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the bark. Is it peeling off in strips showing different colors underneath?"
+        yes_next: 2
+        no_next: "Might not be a Eucalyptus - check other trees with different bark"
+      - step: 2
+        instruction: "Carefully pick one leaf (don't take too many) and gently crush it between your fingers. Does it smell strongly like cough drops or medicine?"
+        yes_next: 3
+        no_next: "If it doesn't have a strong medicine smell, check other trees"
+      - step: 3
+        instruction: "Look for seed capsules on the tree or ground. Are they round and woody with a flat top, about the size of a marble?"
+        yes_next: "You found a Blue Gum Eucalyptus!"
+        no_next: "If the seed pods look different, it might be another type of Eucalyptus or a different tree"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaf growth; some flowers may still be present"
+      reproductive_activity: "Flowering may continue; young seed capsules developing"
+      identification_tips: "Good time to see both flowers and seed capsules together"
+      kid_friendly_tip: "In spring, you might see white, fluffy flowers that look like tiny cheerleader pom-poms"
+    
+    - season: "Summer" 
+      visual_changes: "Bark actively peeling; leaves fully developed"
+      reproductive_activity: "Seed capsules developing and maturing"
+      identification_tips: "Peeling bark is very noticeable in summer"
+      kid_friendly_tip: "Summer is when the bark peels the most, like the tree is taking off its jacket"
+    
+    - season: "Fall"
+      visual_changes: "Little change; remains evergreen"
+      reproductive_activity: "Seed capsules continue to mature"
+      identification_tips: "Stands out when deciduous trees lose leaves"
+      kid_friendly_tip: "While other trees lose their leaves in fall, the Eucalyptus stays green"
+    
+    - season: "Winter"
+      visual_changes: "New flowers appear; tree remains evergreen"
+      reproductive_activity: "Main flowering season; white puffy flowers visible"
+      identification_tips: "White flowers stand out against the green foliage"
+      kid_friendly_tip: "Look for white, fluffy flowers that bloom during winter when many other trees don't have flowers"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Peeling bark with multiple colors"
+      reliability: "High"
+      visibility: "Easy to see from nearby"
+    - feature: "Strong menthol smell from crushed leaves"
+      reliability: "Very high"
+      visibility: "Requires crushing a leaf"
+    - feature: "Distinctive blue-gray juvenile leaves (if present)"
+      reliability: "High"
+      visibility: "Medium - may need to look at younger branches or saplings"
+    - feature: "Large woody seed capsules with flat tops"
+      reliability: "High"
+      visibility: "Easy to spot if present on tree or ground"
+    
+  look_alike_species:
+    - species: "Red Gum Eucalyptus (Eucalyptus camaldulensis)"
+      differences: "Red Gum has more uniformly green leaves, redder and smoother bark, and smaller seed capsules; doesn't grow as tall as Blue Gum"
+      identification_tip: "If the bark has a reddish color and the juvenile leaves are green rather than blue-gray, it's likely Red Gum"
+    
+    - species: "Silver Dollar Gum (Eucalyptus polyanthemos)"
+      differences: "Silver Dollar Gum has rounder, silver-blue adult leaves that don't become elongated, and it doesn't grow as tall as Blue Gum"
+      identification_tip: "If the tree has round, silver-blue leaves even when mature, and is smaller in size, it's likely Silver Dollar Gum"
+    
+  cultural_ecological_notes:
+    - "Provides habitat for some bird species, especially larger birds like hawks and owls"
+    - "Leaves contain oils that make them slow to decompose"
+    - "Creates a distinct, strongly aromatic ecosystem where planted"
+    - "Controversial in California due to high water usage and fire risk"
+    
+  cultural_significance:
+    - culture: "Australian Aboriginal"
+      physical_uses:
+        - "Used leaves to treat colds, coughs, and fevers"
+        - "Made tools and weapons from the hard wood"
+        - "Created temporary shelters using large branches and bark"
+      symbolic_meaning:
+        - "The tree was associated with cleaning and purifying due to its strong smell"
+        - "Tall trees were used as landmarks for navigation"
+        - "Featured in creation stories about the landscape"
+    
+    - culture: "California Settlers"
+      physical_uses:
+        - "Planted as windbreaks around farms and properties"
+        - "Used the fast-growing trees for lumber and firewood"
+        - "Harvested oils from leaves for medicines and cleaning products"
+      symbolic_meaning:
+        - "Represented the optimism of creating new landscapes in California"
+        - "Became a distinctive part of California's coastal identity"
+        - "Now symbolizes debates about native versus non-native species"
+    
+    - culture: "Modern California"
+      physical_uses:
+        - "Oil used in cough drops, cleaning products, and aromatherapy"
+        - "Wood used for paper pulp, mulch, and biomass fuel"
+        - "Provides shade in parks and along streets"
+      symbolic_meaning:
+        - "Represents California's complex relationship with introduced species"
+        - "Featured in art and literature about California landscapes"
+        - "Symbolizes both environmental concerns and cultural heritage"
+    
+  range_within_california:
+    - "Common along the coast from Northern to Southern California"
+    - "Widely planted in the Bay Area and Central Coast"
+    - "Forms groves and forests in many coastal areas"
+    - "Thrives in the coastal fog belt where moisture is available"
+    - "Often found in parks, along roads, and in naturalized stands"
+    
+  physical_characteristics:
+    height_range: "150-180 feet tall (as tall as a 15-18 story building)"
+    growth_rate: "Very fast, 6-10 feet per year when young"
+    crown_spread: "40-75 feet wide when mature"
+    lifespan: "200-400 years under ideal conditions"
+    trunk_diameter: "4-7 feet across (wider than a dining table)"
+    root_system: "Extensive and aggressive, spreading far from the trunk"
+    toxicity: "Leaves contain oils that can be harmful if eaten in large quantities"
+    
+  conservation_status:
+    status: "Not threatened (abundant in introduced range)"
+    threats: 
+      - "Periodic removal in habitat restoration projects favoring native species"
+      - "Fire risk during drought conditions"
+      - "Public perception as an invasive species in some areas"
+    protection_efforts:
+      - "Protected in some historic plantings and groves"
+      - "Management to reduce fire risk in urban-wildland interfaces"
+      - "Research on ecological impacts and management approaches"
+    
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: BARK-TEXT-03"  # Peeling bark
+      - "feature_id: SENSORY-SMELL-01"  # Aromatic leaves
+    confirmation_features:
+      - "feature_id: LEAF-COLOR-03"  # Blue-green
+      - "feature_id: FRUIT-TYPE-09"  # Capsules
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-03", "TREE-FORM-01"]  # Tall tree, pyramidal shape
+      - distance: "from_nearby"
+        features_to_check: ["BARK-TEXT-03", "LEAF-COLOR-03"]  # Peeling bark, blue-green
+      - distance: "close_inspection"
+        features_to_check: ["SENSORY-SMELL-01", "FRUIT-TYPE-09"]  # Aromatic leaves, capsules
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["BARK-TEXT-03", "SENSORY-SMELL-01"]
+        notes: "Flowers may still be present; look for peeling bark"
+      summer:
+        reliability: "Very high"
+        key_features: ["BARK-TEXT-03", "LEAF-COLOR-03", "SENSORY-SMELL-01"]
+        notes: "Bark actively peeling; both juvenile and adult leaves visible"
+      fall:
+        reliability: "High" 
+        key_features: ["BARK-TEXT-03", "SENSORY-SMELL-01"]
+        notes: "Stands out as evergreen when deciduous trees lose leaves"
+      winter:
+        reliability: "High"
+        key_features: ["FLOWER-SIZE-01", "SENSORY-SMELL-01"]
+        notes: "White flowers visible; strong smell from leaves remains"
+    misidentification_risks:
+      - "Other Eucalyptus species share many features; look for specific combination of tall height, blue juvenile leaves, and large seed capsules"
+      - "Young trees before bark starts peeling may be harder to identify"
+      - "Can be confused with other aromatic trees, but the specific menthol smell is distinctive"
+  
+  wildlife_value:
+    - "Provides nesting sites for larger birds like hawks, owls, and herons"
+    - "Flowers produce nectar that attracts honeybees and some bird species"
+    - "Limited value for native California wildlife compared to native trees"
+    - "Can alter soil chemistry, affecting understory plants"

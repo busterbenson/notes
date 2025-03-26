@@ -1,0 +1,274 @@
+tree:
+  common_name: "Silver Dollar Gum"
+  scientific_name: "Eucalyptus polyanthemos"
+  family: "Myrtaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A medium-sized evergreen tree with distinctive round, silver-blue leaves that resemble coins or silver dollars. It has smooth, mottled bark that peels in patches to reveal gray, cream, and light brown colors, and produces small white flowers followed by tiny round seed capsules."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Round, silver-blue leaves that keep their coin-like shape even when mature; smooth bark in patches of gray, cream, and brown"
+    secondary_markers: "Moderate size with spreading canopy; mint-like eucalyptus smell when leaves are crushed; small round seed capsules"
+    seasonal_markers: "Clusters of small white flowers in spring to early summer; bark peeling most active in summer"
+    similar_species_differentiation: "Unlike Blue Gum Eucalyptus, has smaller, rounded leaves that stay round when mature and grows much smaller; unlike Red Gum Eucalyptus, has rounder, more silver-colored leaves"
+  
+  # Core features section
+  features:
+    always_true:
+      # Reference features.yml IDs with tree-specific notes
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its leaves year-round"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple
+        notes: "Individual leaves are not divided into smaller parts"
+      
+      - feature_id: "LEAF-COLOR-04"  # Silver undersides
+        notes: "Leaves have a distinct silver-blue color on both sides"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Bark peels in patches revealing multiple colors beneath"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        notes: "Leaves have a eucalyptus smell when crushed, milder than some species"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        notes: "Native to Australia but widely planted in California landscapes"
+      
+    usually_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Typically grows 30-50 feet tall (about 3-5 stories high)"
+        exceptions: "Can be smaller in poor growing conditions or when regularly pruned"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Develops a rounded to spreading crown"
+        exceptions: "Shape can vary with pruning or when grown in dense groups"
+      
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with a single main trunk"
+        exceptions: "May develop multiple trunks especially if damaged or cut"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        notes: "Survives well with little water once established"
+        exceptions: "Young trees need regular watering until established"
+      
+    sometimes_true:
+      # Include age, seasonal, or condition-dependent features
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        conditions: "Areas of older bark"
+        notes: "Some areas of bark appear grayish before peeling"
+      
+      - feature_id: "BARK-COLOR-04"  # Brown bark
+        conditions: "Areas of transitioning bark"
+        notes: "Some patches show light brown coloration"
+      
+      - feature_id: "FRUIT-TYPE-09"  # Capsules
+        conditions: "After flowering"
+        notes: "Small round seed capsules with pointed valves"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        conditions: "Spring to summer"
+        notes: "Clusters of small white flowers with many stamens"
+      
+      - feature_id: "HABITAT-HUMAN-01"  # Urban tolerant
+        conditions: "Planted settings"
+        notes: "Tolerates urban conditions well; often used in landscaping"
+      
+      - feature_id: "ECO-GROWTH-01"  # Fast growing
+        conditions: "Young trees with sufficient water"
+        notes: "Can grow quickly when young and well-watered"
+      
+    never_true:
+      # Features explicitly absent that help differentiation
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all leaves seasonally"
+      
+      - feature_id: "LEAF-SHAPE-03"  # Lanceolate
+        notes: "Adult leaves remain rounded, never becoming elongated or lance-shaped"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated
+        notes: "Leaf edges are always smooth, never toothed"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Never produces cones, only small seed capsules"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Round, silver-blue leaves that look like coins or silver dollars"
+    memorable_comparison: "The leaves look like a bunch of silver coins hanging from the branches"
+    touch_tip: "Feel how the leaves are stiff and waxy with a dusty blue-gray color"
+    smell_tip: "Gently crush a leaf between your fingers to smell the mint-like eucalyptus scent"
+    fun_fact: "This tree is popular for flower arrangements because the round silver leaves look beautiful in bouquets and last a long time after being cut!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "Look at the leaves. Are they round like coins and silver-blue in color?"
+        yes_next: 2
+        no_next: "Not a Silver Dollar Gum - if the leaves are long and narrow, check other eucalyptus trees"
+      - step: 2
+        instruction: "Check the size of the tree. Is it medium-sized (about as tall as a two-story house) with a rounded shape?"
+        yes_next: 3
+        no_next: "If it's very tall (like a 10-story building), it might be a different eucalyptus"
+      - step: 3
+        instruction: "Gently crush a leaf and smell it. Does it have a eucalyptus smell like mint or cough drops?"
+        yes_next: "You found a Silver Dollar Gum!"
+        no_next: "If there's no eucalyptus smell, check other trees with round leaves"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaf growth; flower buds developing"
+      reproductive_activity: "Flowers beginning to open in clusters"
+      identification_tips: "Good time to see both flower buds and the distinctive round leaves"
+      kid_friendly_tip: "In spring, look for clusters of tiny white flower buds forming"
+    
+    - season: "Summer" 
+      visual_changes: "Full leaf development; bark actively peeling"
+      reproductive_activity: "Full flowering; seed capsules beginning to form"
+      identification_tips: "White flowers stand out against the silver-blue leaves"
+      kid_friendly_tip: "Summer is when you'll see lots of tiny white flowers that look like little stars"
+    
+    - season: "Fall"
+      visual_changes: "Little change; remains evergreen"
+      reproductive_activity: "Seed capsules maturing"
+      identification_tips: "Silver-blue foliage stands out when deciduous trees change color"
+      kid_friendly_tip: "In fall, the tree stays silvery blue while other trees turn yellow, orange, or red"
+    
+    - season: "Winter"
+      visual_changes: "Little change; remains evergreen"
+      reproductive_activity: "Mostly dormant; mature seed capsules may release seeds"
+      identification_tips: "Distinctive round, silver leaves visible all winter"
+      kid_friendly_tip: "Even in winter, the tree keeps its silver-dollar shaped leaves"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Round, silver-blue leaves that look like coins"
+      reliability: "Very high"
+      visibility: "Easy to see from nearby"
+    - feature: "Smooth bark with patches of different colors"
+      reliability: "High"
+      visibility: "Easy to see from nearby"
+    - feature: "Eucalyptus smell from crushed leaves"
+      reliability: "High"
+      visibility: "Requires crushing a leaf"
+    - feature: "Medium size with spreading, rounded crown"
+      reliability: "Medium"
+      visibility: "Visible from a distance"
+    
+  look_alike_species:
+    - species: "Blue Gum Eucalyptus (Eucalyptus globulus)"
+      differences: "Blue Gum grows much taller (over 150 feet), has juvenile leaves that are blue but adult leaves that become long and sickle-shaped, and has much larger seed capsules"
+      identification_tip: "If the tree is very tall and has long, sickle-shaped adult leaves, it's likely Blue Gum"
+    
+    - species: "Red Gum Eucalyptus (Eucalyptus camaldulensis)"
+      differences: "Red Gum has long, narrow leaves that hang vertically, more reddish tones in its bark, and grows taller"
+      identification_tip: "If the leaves are long and narrow rather than round, it's likely Red Gum or another eucalyptus species"
+    
+  cultural_ecological_notes:
+    - "Popular ornamental tree in California landscapes"
+    - "Drought-tolerant once established"
+    - "Less invasive than some other eucalyptus species"
+    - "Provides limited habitat for native wildlife"
+    
+  cultural_significance:
+    - culture: "Australian Aboriginal"
+      physical_uses:
+        - "Used wood for tools and implements"
+        - "Made medicines from leaves for colds and fevers"
+        - "Collected sap to treat wounds and skin conditions"
+      symbolic_meaning:
+        - "Associated with dry woodland habitats where the tree naturally grows"
+        - "Used as a seasonal indicator in traditional knowledge systems"
+        - "Featured in stories about adapting to harsh conditions"
+    
+    - culture: "California Landscapers"
+      physical_uses:
+        - "Planted as ornamental shade trees in parks and gardens"
+        - "Used in drought-tolerant landscaping"
+        - "Harvested branches for floral arrangements"
+      symbolic_meaning:
+        - "Represents water-wise gardening and drought adaptation"
+        - "Valued for its unique silver foliage in garden design"
+        - "Symbolizes the blend of Australian and Californian garden traditions"
+    
+    - culture: "Floral Design Industry"
+      physical_uses:
+        - "Widely used in flower arrangements and bouquets"
+        - "Grown commercially for cut foliage"
+        - "Dried for long-lasting arrangements"
+      symbolic_meaning:
+        - "Represents longevity as the leaves hold their color and shape when dried"
+        - "Associated with contemporary, naturalistic floral design"
+        - "Used to signify adaptability and resilience in artistic compositions"
+    
+  range_within_california:
+    - "Common in urban and suburban landscapes throughout California"
+    - "Popular in Southern California and the Bay Area"
+    - "Frequently planted in parks, streets, and commercial landscapes"
+    - "Thrives in coastal and inland areas with Mediterranean climates"
+    - "Less commonly found in naturalized stands than Blue Gum"
+    
+  physical_characteristics:
+    height_range: "30-50 feet tall (about as tall as a 3-5 story building)"
+    growth_rate: "Moderate to fast for the first 10-15 years"
+    crown_spread: "20-35 feet wide when mature"
+    lifespan: "70-150 years under good conditions"
+    trunk_diameter: "1-2 feet across (about as wide as a small table)"
+    root_system: "Moderately deep and spreading"
+    toxicity: "Leaves contain oils that can be harmful if eaten in quantity"
+    
+  conservation_status:
+    status: "Not threatened (common in cultivation)"
+    threats: 
+      - "No significant threats to cultivated specimens"
+      - "Fire risk during drought conditions"
+      - "Occasional pest issues in stressed trees"
+    protection_efforts:
+      - "Maintained in established landscapes"
+      - "Selected for drought-resistant urban forestry"
+      - "Not typically subject to removal like some more invasive eucalyptus"
+    
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: LEAF-COLOR-04"  # Silver undersides
+      - "feature_id: LEAF-COMPLEX-01"  # Simple
+    confirmation_features:
+      - "feature_id: BARK-TEXT-03"  # Peeling bark
+      - "feature_id: SENSORY-SMELL-01"  # Aromatic leaves
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-02", "TREE-FORM-02"]  # Medium tree, rounded crown
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-COLOR-04", "BARK-TEXT-03"]  # Silver leaves, peeling bark
+      - distance: "close_inspection"
+        features_to_check: ["SENSORY-SMELL-01", "FRUIT-TYPE-09"]  # Aromatic leaves, capsules
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-COLOR-04", "FLOWER-SIZE-01"]
+        notes: "Flowers beginning to appear; silver foliage distinctive"
+      summer:
+        reliability: "Very high"
+        key_features: ["LEAF-COLOR-04", "FLOWER-SIZE-01", "BARK-TEXT-03"]
+        notes: "Full flowering; bark actively peeling"
+      fall:
+        reliability: "High" 
+        key_features: ["LEAF-COLOR-04", "FRUIT-TYPE-09"]
+        notes: "Silver foliage stands out when deciduous trees change color"
+      winter:
+        reliability: "High"
+        key_features: ["LEAF-COLOR-04", "LEAF-TYPE-02"]
+        notes: "Evergreen nature and silver foliage remain distinctive"
+    misidentification_risks:
+      - "Young Silver Dollar Gum might be confused with juvenile Blue Gum before the latter develops its elongated adult leaves"
+      - "From a distance, might be confused with other silver-leaved trees, though the round leaf shape is distinctive"
+      - "Various poplar species can have somewhat similar rounded leaves but lack the eucalyptus smell and peeling bark"
+  
+  wildlife_value:
+    - "Flowers provide nectar for honeybees and some native insects"
+    - "Limited nesting habitat for birds compared to larger eucalyptus species"
+    - "Not a significant food source for native California wildlife"
+    - "Provides shade and microclimate modification in urban settings"

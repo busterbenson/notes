@@ -187,6 +187,12 @@ tree:
         reliability: "Very high"
         key_features: ["LEAF-TYPE-02", "TREE-FORM-03", "SENSORY-SMELL-01"]
         notes: "Easier to spot the distinctive form when deciduous trees are bare"
+
+  wildlife_value:
+    - "Seeds eaten by some birds in its native range"
+    - "Dense evergreen foliage provides winter shelter for birds"
+    - "Not a significant food source for most California wildlife"
+    - "Primarily valuable as shelter rather than food for wildlife"
 ```
 
 ## Feature Classification Guidelines
