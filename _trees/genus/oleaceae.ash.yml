@@ -1,0 +1,237 @@
+genus:
+  common_name: "Ash"
+  scientific_name: "Fraxinus spp."
+  taxonomic_level: "genus"
+  family: "Oleaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "Deciduous trees with compound leaves arranged in opposite pairs along branches, giving a characteristic Y-shaped branching pattern. All ash trees produce winged seeds (samaras) that spiral through the air like helicopters, and most have grayish, furrowed bark."
+  
+  # Key species in this genus
+  included_species:
+    - name: "Oregon Ash"
+      scientific_name: "Fraxinus latifolia"
+      distinguishing_features: "5-7 broad, fuzzy leaflets; found in wet areas; the most common native ash in California"
+      california_context: "Native to northern California riparian areas and wetlands"
+    
+    - name: "White Ash" 
+      scientific_name: "Fraxinus americana"
+      distinguishing_features: "7-9 narrower, pointed leaflets with whitish undersides; more upright growth"
+      california_context: "Occasionally planted as a shade or street tree"
+    
+    - name: "Green Ash"
+      scientific_name: "Fraxinus pennsylvanica"
+      distinguishing_features: "7-9 leaflets with slightly toothed edges; each leaflet has a distinct stalk"
+      california_context: "Sometimes planted in parks and urban landscapes"
+    
+    - name: "Arizona Ash"
+      scientific_name: "Fraxinus velutina"
+      distinguishing_features: "3-5 leaflets; more drought-tolerant; smaller tree overall"
+      california_context: "Planted in Southern California as a landscape tree"
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Opposite branching pattern forming Y-shapes at branch tips; compound leaves with 5-9 leaflets; winged seeds that spin like helicopters"
+    secondary_markers: "Grayish-brown bark with diamond-shaped furrows; buds arranged opposite each other on twigs; leaflets with toothed edges"
+    seasonal_markers: "Spring: inconspicuous flowers before or with leaves; Summer: full green compound leaves; Fall: yellow to purple fall color and winged seeds; Winter: opposite buds and distinctive branching pattern"
+    similar_species_differentiation: "Unlike maples, which also have opposite branching, ash trees have compound leaves (not simple); unlike boxelder (a maple with compound leaves), ash leaflets are more regularly shaped and toothed"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "All ash trees lose their leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Leaves divided into multiple leaflets arranged along a central stem"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Opposite
+        notes: "Leaves and branches grow directly across from each other"
+      
+      - feature_id: "BRANCH-PATT-01"  # Opposite branches
+        notes: "Branches form distinctive Y-shapes, growing directly opposite each other"
+      
+      - feature_id: "FRUIT-TYPE-02"  # Winged seeds
+        notes: "Produces flat, winged seeds (samaras) that spin when falling"
+      
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Most ash trees develop a single main trunk"
+        exceptions: "May form multiple trunks when damaged or resprouting from stumps"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        notes: "Most mature ash trees have gray to grayish-brown bark with diamond-shaped furrows"
+        exceptions: "Young trees have smoother bark; intensity of furrows varies by species"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated edge
+        notes: "Leaflets typically have toothed (serrated) edges"
+        exceptions: "Teeth may be very fine or shallow in some species"
+      
+    sometimes_true:
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Many ash species in fall"
+        notes: "Many ash trees turn bright yellow in fall"
+      
+      - feature_id: "LEAF-FALL-04"  # Purple fall color
+        conditions: "White Ash particularly"
+        notes: "Some ash species, particularly White Ash, may show purplish fall colors"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        conditions: "Oregon Ash and some other species"
+        notes: "Some ash species naturally grow near water sources"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        conditions: "Most species in good conditions"
+        notes: "Most ash trees grow to medium size (40-80 feet tall)"
+      
+      - feature_id: "TREE-SIZE-03"  # Large tree
+        conditions: "White Ash in favorable conditions"
+        notes: "Some species like White Ash can grow quite large"
+      
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Ash trees are never evergreen, always losing leaves in fall"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Ash trees never have alternating leaf arrangement, always opposite"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Ash trees produce winged seeds, never cones"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Ash flowers are always small and inconspicuous, never showy"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Branches that grow in perfect Y-shapes with compound leaves on opposite sides"
+    memorable_comparison: "The branches look like someone holding their arms up in a Y shape, and the seeds spin down like helicopter propellers"
+    touch_tip: "Feel the twigs - they're sturdy and grow in exact opposite pairs, unlike most other trees"
+    smell_tip: "The leaves don't have a strong smell, but they usually feel a bit leathery"
+    fun_fact: "Ash trees make the best wood for baseball bats! About 75% of all baseball bats are made from ash because the wood is strong but flexes just enough to hit the ball really far!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "Look at how the branches grow. Do they form perfect Y-shapes with branches growing directly opposite each other?"
+        yes_next: 2
+        no_next: "Not an ash - most trees have alternate branching where branches zigzag instead of forming Ys"
+      - step: 2
+        instruction: "Look at the leaves. Are they compound (divided into 5-9 smaller leaflets along a central stem)?"
+        yes_next: 3
+        no_next: "Might be a maple, which also has opposite branches but simple leaves (except boxelder)"
+      - step: 3
+        instruction: "Look for seeds with wings (in summer and fall). Do they hang in clusters and spin like helicopters when they fall?"
+        yes_next: "You found an ash tree! Check the number of leaflets and where it's growing to figure out which kind."
+        no_next: "If it's winter or spring with no seeds visible, check for opposite buds on twigs and diamond-patterned bark"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Small purplish or greenish flowers appear before or with new leaves; new compound leaves emerge"
+      reproductive_activity: "Flowers bloom and release pollen; pollination occurs"
+      identification_tips: "Flowers may be visible before leaf-out; opposite branching pattern is clear"
+      kid_friendly_tip: "In spring, look for small purplish flower clusters and the first feathery leaves unfurling"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of dark green compound leaves; winged seeds develop"
+      reproductive_activity: "Seeds grow and mature"
+      identification_tips: "Fully developed opposite compound leaves; developing winged seeds"
+      kid_friendly_tip: "By summer, you'll see flat green seeds with wings forming in clusters"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow to purple; seeds mature and begin to drop"
+      reproductive_activity: "Seeds mature and disperse, spinning as they fall"
+      identification_tips: "Fall color and mature winged seeds are distinctive"
+      kid_friendly_tip: "In fall, the leaves turn bright colors, and you can throw the seeds up to watch them helicopter down"
+    
+    - season: "Winter"
+      visual_changes: "Trees lose all leaves; opposite branching pattern and buds clearly visible"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Opposite branching; stout twigs with opposite buds; sometimes persistent seeds"
+      kid_friendly_tip: "In winter with no leaves, you can easily see the branches forming perfect Ys with fat buds at the tips"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Compound leaves with opposite arrangement"
+      reliability: "Very high"
+      visibility: "Easy - visible during growing season"
+    - feature: "Y-shaped opposite branching pattern"
+      reliability: "Very high"
+      visibility: "Visible year-round, but clearest in winter"
+    - feature: "Winged seeds that spiral when falling"
+      reliability: "High (when present)"
+      visibility: "Visible in summer and fall"
+    - feature: "Grayish bark with diamond-shaped furrows"
+      reliability: "Medium"
+      visibility: "Visible on mature trees year-round"
+    
+  look_alikes:
+    - name: "Maple (Acer species)"
+      type: "genus"
+      differences: "Maples also have opposite branching but simple leaves (not compound), except for boxelder; maple seeds come in pairs, not clusters"
+      identification_tip: "If the leaves are simple (not divided into leaflets), it's a maple, not an ash"
+    
+    - name: "Boxelder Maple (Acer negundo)"
+      type: "species"
+      differences: "Boxelder is the only maple with compound leaves; it has 3-5 irregularly toothed or lobed leaflets; seeds in pairs, not clusters"
+      identification_tip: "Boxelder leaflets are often irregularly lobed; ash leaflets have more regular shapes with finer teeth"
+    
+    - name: "Elderberry (Sambucus species)"
+      type: "genus"
+      differences: "Elderberry is shrub-like with opposite compound leaves but produces berries, not winged seeds; has pithy stems"
+      identification_tip: "If it's more of a shrub than a tree and has berry clusters instead of winged seeds, it's elderberry not ash"
+    
+  cultural_ecological_notes:
+    - "Many ash species are important timber trees, valued for their strong yet flexible wood"
+    - "Native ash species are important components of riparian forest ecosystems"
+    - "Ash wood has been traditionally used for tool handles, sports equipment, and furniture"
+    - "Seeds provide important food for birds and small mammals"
+    - "Currently threatened by the emerald ash borer, an invasive insect pest"
+    
+  range_within_california:
+    - "Oregon Ash is the most common native ash, found primarily in northern California"
+    - "Oregon Ash grows naturally in riparian areas, wetlands, and places with high water tables"
+    - "Other ash species are planted as landscape and street trees throughout urban areas"
+    - "Arizona Ash is sometimes planted in drier regions of Southern California"
+    - "Green and White Ash are occasionally planted in parks and as street trees"
+    
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-COMPLEX-02"  # Compound pinnate
+      - "feature_id: LEAF-ARRANGE-02"  # Opposite
+    confirmation_features:
+      - "feature_id: FRUIT-TYPE-02"  # Winged seeds
+      - "feature_id: BRANCH-PATT-01"  # Opposite branches
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-02", "LEAF-TYPE-01"]  # Rounded crown, deciduous
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-COMPLEX-02", "LEAF-ARRANGE-02"]  # Compound leaves, opposite
+      - distance: "close_inspection"
+        features_to_check: ["BRANCH-PATT-01", "FRUIT-TYPE-02"]  # Y-shaped branching, winged seeds
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["LEAF-ARRANGE-02", "LEAF-COMPLEX-02"]  # Opposite, compound
+        notes: "New leaves and opposite branching pattern"
+      summer:
+        reliability: "High"
+        key_features: ["LEAF-COMPLEX-02", "LEAF-ARRANGE-02", "FRUIT-TYPE-02"]  # Compound, opposite, winged seeds
+        notes: "Full leafy canopy and developing winged seeds"
+      fall:
+        reliability: "High" 
+        key_features: ["LEAF-FALL-01", "FRUIT-TYPE-02"]  # Yellow fall color, winged seeds
+        notes: "Fall color and mature winged seeds"
+      winter:
+        reliability: "Medium"
+        key_features: ["BRANCH-PATT-01", "WINTER-BUD-03"]  # Opposite branching, opposite buds
+        notes: "Y-shaped branching pattern and opposite buds"
+
+  wildlife_value:
+    - "Seeds provide food for birds, squirrels, and other small mammals"
+    - "Leaves support many species of butterfly and moth caterpillars"
+    - "Provides nesting sites for various birds"
+    - "Native ash species help stabilize streambanks in riparian areas"
+    - "Fallen leaves enrich soil and aquatic ecosystems as they decompose"

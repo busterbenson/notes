@@ -1,0 +1,254 @@
+genus:
+  common_name: "Redbud"
+  scientific_name: "Cercis spp."
+  taxonomic_level: "genus"
+  family: "Fabaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "Small deciduous trees or large shrubs known for their spectacular pink to magenta flowers that bloom directly on branches before leaves appear in spring. All redbuds have perfect heart-shaped leaves with smooth edges and produce flat, papery seedpods."
+  
+  # Key species in this genus
+  included_species:
+    - name: "California Redbud"
+      scientific_name: "Cercis occidentalis"
+      distinguishing_features: "Smaller, more blue-green leaves; more drought-tolerant; usually grows as a multi-trunked shrub 10-20 feet tall"
+      california_context: "Native to Sierra Nevada foothills and Coast Ranges; adapted to California's dry summers"
+    
+    - name: "Eastern Redbud"
+      scientific_name: "Cercis canadensis"
+      distinguishing_features: "Larger, greener leaves; grows taller (20-30 feet); usually develops as a small tree rather than shrub"
+      california_context: "Planted in gardens and parks; prefers more water than the native California Redbud"
+    
+    - name: "Western Redbud"
+      scientific_name: "Cercis canadensis var. texensis"
+      distinguishing_features: "Glossier, often slightly thicker leaves; sometimes with wavy leaf margins"
+      california_context: "Occasionally planted in gardens; native to Texas and neighboring states"
+    
+    - name: "Chinese Redbud"
+      scientific_name: "Cercis chinensis"
+      distinguishing_features: "Larger, showier flowers; glossy leaves; often more shrub-like growth habit"
+      california_context: "Sometimes found in ornamental gardens and botanical collections"
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Bright pink-purple flowers growing directly on bare branches in early spring; perfect heart-shaped leaves with smooth edges; flat, papery seedpods"
+    secondary_markers: "Usually multi-trunked growth form; smooth gray bark on young trees; blue-green to green heart-shaped leaves"
+    seasonal_markers: "Spring: spectacular pink-purple flowers on bare branches; Summer: heart-shaped leaves and developing seedpods; Fall: yellow to orange fall color; Winter: persistent seedpods, zigzag branches"
+    similar_species_differentiation: "Unlike Katsura Tree (which also has heart-shaped leaves), Redbuds have alternate leaves (not opposite) and distinctive pea-like flowers; unlike Purple Leaf Plum, Redbuds have smooth-edged leaves and papery seedpods instead of fruits"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "All redbuds lose their leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Leaves are simple, not divided into leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow alternating along branches, not directly across from each other"
+      
+      - feature_id: "LEAF-SHAPE-04"  # Heart-shaped
+        notes: "All redbud species have distinctive heart-shaped leaves with a rounded base and pointed tip"
+      
+      - feature_id: "LEAF-EDGE-01"  # Entire/smooth
+        notes: "Leaf edges are smooth without teeth or lobes (occasionally slightly wavy in some varieties)"
+      
+      - feature_id: "FRUIT-TYPE-05"  # Pods present
+        notes: "All redbuds produce flat, papery seed pods (legumes) that start green, turn purplish, then brown"
+      
+    usually_true:
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        notes: "Many redbuds naturally grow with multiple stems from the base"
+        exceptions: "Eastern Redbud more commonly develops a single trunk; any redbud can be pruned to a single trunk"
+      
+      - feature_id: "TREE-SIZE-01"  # Small tree
+        notes: "Most redbuds grow 10-25 feet tall"
+        exceptions: "Some garden varieties are smaller, while Eastern Redbud can grow slightly larger under ideal conditions"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Most redbuds have smooth gray bark when young"
+        exceptions: "Older trees develop slightly rough or furrowed bark with age"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        notes: "Usually develops a rounded or vase-shaped crown"
+        exceptions: "Shape can be more irregular when growing in dense settings or when multi-trunked"
+    
+    sometimes_true:
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        conditions: "Early spring before leaf emergence"
+        notes: "Bright magenta to pink pea-like flowers bloom directly on branches and trunk"
+      
+      - feature_id: "LEAF-COLOR-03"  # Blue-green
+        conditions: "California Redbud specifically during growing season"
+        notes: "California Redbud leaves often have a blue-green tint in full summer"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        conditions: "Fall season"
+        notes: "Leaves typically turn yellow to gold before dropping"
+      
+      - feature_id: "LEAF-FALL-03"  # Orange fall color
+        conditions: "Fall season, depending on conditions and species"
+        notes: "Can sometimes show orange or reddish tints in fall"
+      
+      - feature_id: "WINTER-FEAT-02"  # Persistent fruits
+        conditions: "Winter after fruiting"
+        notes: "Brown seedpods often remain on branches through winter"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        conditions: "California Redbud specifically, once established"
+        notes: "California Redbud adapted to dry summers once roots are established; other species need more water"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "All redbuds drop leaves in fall, never evergreen"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated edge
+        notes: "Leaf edges are always smooth (sometimes wavy but not toothed)"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has broad leaves, not needles"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Produces seedpods, not cones"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Branches covered with bright pink-purple flowers in spring before leaves appear, followed by perfect heart-shaped leaves"
+    memorable_comparison: "In spring, it looks like someone hung tiny pink butterflies all over the branches; the leaves are shaped just like Valentine's Day hearts"
+    touch_tip: "Feel the smooth, heart-shaped leaves - they're not fuzzy, just smooth like paper. The flat seedpods feel like thin paper too."
+    smell_tip: "The flowers have a light sweet smell if you gently sniff them, but they're more special to look at than to smell"
+    fun_fact: "The flowers grow right out of the branches and even the trunk, not just at the tips! This special way of flowering is called 'cauliflory' and makes it look like the tree is wearing a coat of pink butterflies in spring."
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "In spring, do you see a small tree with bright pink-purple flowers growing directly on the bare branches?"
+        yes_next: 2
+        no_next: "If it's not spring, go to step 2. If it is spring and no pink flowers, not a redbud."
+      - step: 2
+        instruction: "Look at the leaves. Are they shaped exactly like a Valentine's heart with smooth edges (no teeth)?"
+        yes_next: 3
+        no_next: "Not a redbud - check trees with different leaf shapes"
+      - step: 3
+        instruction: "Do you see flat, papery pods that are green, reddish-purple, or brown, about 2-4 inches long?"
+        yes_next: "You found a redbud! Check the size and leaf color to tell which type it might be."
+        no_next: "If it's winter or early spring, check if it has multiple trunks and look for any remaining brown seedpods from last year"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Stunning magenta to pink flowers appear directly on branches before leaves; heart-shaped leaves emerge with a reddish tint after flowering"
+      reproductive_activity: "Flowers bloom from February to April; pollination by bees and other insects"
+      identification_tips: "The bright pink flowers growing directly on bare branches are unmistakable and make this one of the easiest trees to identify in spring"
+      kid_friendly_tip: "In spring, it looks like someone hung tiny pink butterflies all over the bare branches - it's so bright you can see it from far away!"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of heart-shaped leaves (blue-green in California Redbud, green in others); green seedpods develop and gradually turn reddish-purple"
+      reproductive_activity: "Seedpods develop and mature throughout summer"
+      identification_tips: "Heart-shaped leaves with smooth edges; developing flat seedpods"
+      kid_friendly_tip: "In summer, look for perfect heart-shaped leaves and flat green pods that look like paper bookmarks hanging from branches"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow to orange before dropping; seedpods turn brown"
+      reproductive_activity: "Seedpods fully mature and may begin to split open"
+      identification_tips: "Yellow to orange heart-shaped leaves; brown papery seedpods"
+      kid_friendly_tip: "In fall, the heart-shaped leaves turn yellow like gold coins, and the seedpods turn brown like paper lunch bags"
+    
+    - season: "Winter"
+      visual_changes: "Leafless with smooth gray branches; may retain some brown seedpods"
+      reproductive_activity: "Dormant; flower buds form for next spring"
+      identification_tips: "Often multi-trunked; zigzag branching pattern; persistent seedpods; heart-shaped leaf buds"
+      kid_friendly_tip: "In winter, look for the zigzag branches and any leftover flat brown pods still hanging on the tree"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Heart-shaped leaves with smooth edges"
+      reliability: "Very high"
+      visibility: "Easy - visible during growing season"
+    - feature: "Magenta flowers growing directly on branches"
+      reliability: "Very high (when present)"
+      visibility: "Easy - highly visible in early spring"
+    - feature: "Flat, papery seedpods"
+      reliability: "High"
+      visibility: "Easy - visible from summer through winter"
+    - feature: "Multi-trunked growth habit (especially California Redbud)"
+      reliability: "Medium"
+      visibility: "Easy - visible year-round"
+    - feature: "Smooth gray bark on younger stems"
+      reliability: "Medium"
+      visibility: "Easy - visible year-round"
+    
+  look_alikes:
+    - name: "Katsura Tree (Cercidiphyllum japonicum)"
+      type: "species"
+      differences: "Katsura also has heart-shaped leaves but grows much larger, has opposite leaves (not alternate), and lacks the pea-like flowers"
+      identification_tip: "Redbuds have alternate leaves (not opposite) and distinctive magenta pea-shaped flowers in spring"
+    
+    - name: "Purple Leaf Plum (Prunus cerasifera)"
+      type: "species"
+      differences: "Purple Leaf Plum has toothed leaf edges (not smooth) and produces fruits instead of flat pods; flowers grow at branch tips, not along branches"
+      identification_tip: "Redbuds have smooth-edged leaves, and their flowers grow directly on the branches, not just at the tips"
+    
+    - name: "Flowering Dogwood (Cornus species)"
+      type: "genus"
+      differences: "Dogwoods have opposite leaves (not alternate), and what look like 'flowers' are actually modified leaves surrounding small true flowers"
+      identification_tip: "Redbuds have alternate leaves and their pink flowers grow directly on the wood of branches and trunk"
+    
+  cultural_ecological_notes:
+    - "Native California Redbud was used by Indigenous peoples for basket making and food"
+    - "Redbuds provide critical early-season nectar for native bees, butterflies, and hummingbirds"
+    - "Seeds eaten by birds and small mammals"
+    - "All redbuds are members of the legume family and can improve soil by fixing nitrogen"
+    - "California Redbud is adapted to fire and resprouts vigorously after burning"
+    
+  range_within_california:
+    - "California Redbud is native to the Sierra Nevada foothills from 500 to 4,000 feet elevation"
+    - "California Redbud is found throughout the Coast Ranges from northern to southern California"
+    - "Eastern Redbud and other non-native species are planted in gardens throughout the state"
+    - "California Redbud is common in chaparral, oak woodlands, and foothill woodlands"
+    - "All redbuds prefer sunny to partly shaded locations with well-drained soil"
+    
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-SHAPE-04"  # Heart-shaped
+      - "feature_id: FRUIT-TYPE-05"  # Pods present
+    confirmation_features:
+      - "feature_id: FLOWER-SIZE-01"  # Showy flowers
+      - "feature_id: LEAF-EDGE-01"  # Smooth edge
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["FLOWER-SIZE-01", "TREE-SIZE-01"]  # Showy flowers, small tree
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SHAPE-04", "FRUIT-TYPE-05"]  # Heart-shaped leaves, pods
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-01", "LEAF-ARRANGE-01"]  # Smooth leaf edges, alternate arrangement
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["FLOWER-SIZE-01"]  # Showy flowers
+        notes: "The magenta flowers on bare branches are unmistakable in spring"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-SHAPE-04", "LEAF-EDGE-01", "FRUIT-TYPE-05"]  # Heart-shaped, smooth edge, pods
+        notes: "Heart-shaped leaves with smooth edges and developing seedpods"
+      
+      fall:
+        reliability: "Medium"
+        key_features: ["LEAF-FALL-01", "LEAF-SHAPE-04", "FRUIT-TYPE-05"]  # Yellow fall color, heart-shaped, pods
+        notes: "Yellow heart-shaped leaves and brown seedpods"
+      
+      winter:
+        reliability: "Low"
+        key_features: ["WINTER-FEAT-02"]  # Persistent fruits
+        notes: "Zigzag branching pattern and persistent seedpods"
+
+  wildlife_value:
+    - "Flowers provide critical early-season nectar for native bees, butterflies, and hummingbirds"
+    - "Seeds eaten by birds and small mammals including finches and quail"
+    - "Foliage occasionally browsed by deer"
+    - "Dense branching provides nesting sites for small birds"
+    - "Host plant for several butterfly species including Henry's Elfin"

@@ -7,7 +7,7 @@ This comprehensive tree identification guide aims to include profiles for all tr
 
 ## ✅ Completed Tree Profiles (165)
 
-### Conifers (42)
+### Individual Species Profiles (135)
 - Alaska-cedar (Callitropsis nootkatensis) - *Cupressaceae*
 - Arizona Cypress (Cupressus arizonica) - *Cupressaceae*
 - Bigcone Douglas-fir (Pseudotsuga macrocarpa) - *Pinaceae*
@@ -19,19 +19,17 @@ This comprehensive tree identification guide aims to include profiles for all tr
 - Chinese-fir (Cunninghamia lanceolata) - *Cupressaceae*
 - Coast Douglas-fir (Pseudotsuga menziesii var. menziesii) - *Pinaceae*
 - Coast Redwood (Sequoia sempervirens) - *Cupressaceae*
-- Common Cypress Genus (Cupressus spp.) - *Cupressaceae* [includes 5 species: Atlantic White-cedar, Eastern Redcedar, Italian Cypress, Monterey Cypress, Northern White-cedar, Port Orford-cedar]
 - Dawn Redwood (Metasequoia glyptostroboides) - *Cupressaceae*
 - Giant Sequoia (Sequoiadendron giganteum) - *Cupressaceae*
 - Grand Fir (Abies grandis) - *Pinaceae*
 - Gray Pine (Pinus sabiniana) - *Pinaceae*
 - Incense-cedar (Calocedrus decurrens) - *Cupressaceae*
+- Italian Cypress (Cupressus sempervirens) - *Cupressaceae*
 - Japanese-cedar (Cryptomeria japonica) - *Cupressaceae*
 - Jeffrey Pine (Pinus jeffreyi) - *Pinaceae*
 - Knobcone Pine (Pinus attenuata) - *Pinaceae*
-- Less Common Fir Species (Abies spp.) - *Pinaceae* [includes 8 species: Balsam, Bristlecone, Caucasian, European Silver, Fraser, Nikko, Noble, Pacific Silver, Subalpine]
-- Less Common Pine Species (Pinus spp.) - *Pinaceae* [includes 2 species: Spruce Pine, Western White]
-- Less Common Spruce Species (Picea spp.) - *Pinaceae* [includes 7 species: Black, Blue, Engelmann, Norway, Oriental, Red, Serbian, White]
 - Lodgepole Pine (Pinus contorta) - *Pinaceae*
+- Monterey Cypress (Cupressus macrocarpa) - *Cupressaceae*
 - Monterey Pine (Pinus radiata) - *Pinaceae*
 - Mountain Hemlock (Tsuga mertensiana) - *Pinaceae*
 - Pacific Yew (Taxus brevifolia) - *Taxaceae*
@@ -40,13 +38,10 @@ This comprehensive tree identification guide aims to include profiles for all tr
 - Sitka Spruce (Picea sitchensis) - *Pinaceae*
 - Sugar Pine (Pinus lambertiana) - *Pinaceae*
 - Torrey Pine (Pinus torreyana) - *Pinaceae*
-- True Cedar Genus (Cedrus spp.) - *Pinaceae* [includes 3 species: Atlas Cedar, Deodar Cedar, Lebanon Cedar]
 - Western Hemlock (Tsuga heterophylla) - *Pinaceae*
 - Western Juniper (Juniperus occidentalis) - *Cupressaceae*
 - Western Larch (Larix occidentalis) - *Pinaceae*
 - Western Redcedar (Thuja plicata) - *Cupressaceae*
-
-### Broadleaf Trees (82)
 - Alder Whitebeam (Sorbus alnifolia) - *Rosaceae*
 - Alderleaf Cercocarpus (Cercocarpus montanus) - *Rosaceae*
 - American Basswood (Tilia americana) - *Malvaceae*
@@ -56,7 +51,6 @@ This comprehensive tree identification guide aims to include profiles for all tr
 - Balm-of-Gilead Poplar (Populus × jackii) - *Salicaceae*
 - Balsam Poplar (Populus balsamifera) - *Salicaceae*
 - Bigleaf Maple (Acer macrophyllum) - *Sapindaceae*
-- Birch Genus (Betula spp.) - *Betulaceae* [includes 9 species: Downy, Gray, Heartleaf, Manchurian, Murray's, Resin, Sweet, Virginia, Yellow]
 - Birchleaf False-buckthorn (Frangula betulifolia) - *Rhamnaceae*
 - Black Locust (Robinia pseudoacacia) - *Fabaceae*
 - Blue Oak (Quercus douglasii) - *Fagaceae*
@@ -79,7 +73,6 @@ This comprehensive tree identification guide aims to include profiles for all tr
 - Cork Oak (Quercus suber) - *Fagaceae*
 - Crape Myrtle (Lagerstroemia indica) - *Lythraceae*
 - Desert Willow (Chilopsis linearis) - *Bignoniaceae*
-- Elm Genus (Ulmus spp.) - *Ulmaceae* [includes 7 species: Cedar, Dutch, September, Slippery, Water, Winged, Wych]
 - Engelmann Oak (Quercus engelmannii) - *Fagaceae*
 - European Aspen (Populus tremula) - *Salicaceae*
 - Fremont Cottonwood (Populus fremontii) - *Salicaceae*
@@ -92,8 +85,6 @@ This comprehensive tree identification guide aims to include profiles for all tr
 - Japanese Blue Oak (Quercus glauca) - *Fagaceae*
 - Japanese Maple (Acer palmatum) - *Sapindaceae*
 - Joshua Tree (Yucca brevifolia) - *Asparagaceae*
-- Less Common Alder Species (Alnus spp.) - *Betulaceae* [includes 6 species: European, Italian, Seaside, Smooth, Speckled, Thinleaf Speckled]
-- Less Common Maple Species (Acer spp.) - *Sapindaceae* [includes 2 species: Striped, Tatarian]
 - London Plane Tree (Platanus × acerifolia) - *Platanaceae*
 - Mountain Maple (Acer spicatum) - *Sapindaceae*
 - New Mexico Locust (Robinia neomexicana) - *Fabaceae*
@@ -132,6 +123,17 @@ This comprehensive tree identification guide aims to include profiles for all tr
 - Western Soapberry (Sapindus drummondii) - *Sapindaceae*
 - White Alder (Alnus rhombifolia) - *Betulaceae*
 - White Poplar (Populus alba) - *Salicaceae*
+
+### Genus-Level Groupings (30 species grouped into 7 genera)
+- Balsam Fir, Bristlecone Fir, Caucasian Fir, European Silver Fir, Fraser Fir, Nikko Fir, Noble Fir, Pacific Silver Fir, Subalpine Fir (9 species in *Abies* genus)
+- Spruce Pine, Western White Pine (2 species in *Pinus* genus)
+- Black Spruce, Blue Spruce, Engelmann Spruce, Norway Spruce, Oriental Spruce, Red Spruce, Serbian Spruce, White Spruce (8 species in *Picea* genus)
+- Atlas Cedar, Deodar Cedar, Lebanon Cedar (3 species in *Cedrus* genus)
+- Black Wattle, Silver Wattle, Bailey Acacia, Golden Wattle (4 species in *Acacia* genus)
+- Downy Birch, Gray Birch, Heartleaf Birch, Manchurian Birch, Murray's Birch, Resin Birch, Sweet Birch, Virginia Birch, Yellow Birch (9 species in *Betula* genus)
+- European Alder, Italian Alder, Seaside Alder, Smooth Alder, Speckled Alder, Thinleaf Speckled Alder (6 species in *Alnus* genus)
+- Cedar Elm, Dutch Elm, September Elm, Slippery Elm, Water Elm, Winged Elm, Wych Elm (7 species in *Ulmus* genus)
+- Striped Maple, Tatarian Maple (2 species in *Acer* genus)
 
 ## 🎉 ALL TREES COMPLETED! 🎉
 
@@ -204,14 +206,16 @@ This comprehensive tree identification guide aims to include profiles for all tr
 
 ## Statistics
 - **Total trees in original CSV**: 147 unique trees
-- **Additional popular landscape trees**: 19
-- **New grand total**: 148 trees
-  - Original 165 trees consolidated into 145 by grouping 24 rare species into 4 genus-level entries
-  - Added 3 important Eucalyptus species common in California landscapes
+- **Additional popular landscape trees**: 20
+- **New grand total**: 148 complete entries, representing 165 trees
+  - 135 individual species profiles
+  - 13 genus profiles covering 30 species
 - **Completed profiles**: 148 (100%)
+  - Individual species profiles: 135
+  - Genus profiles: 13 (covering 30 additional species)
 - **Trees by leaf type**:
   - Conifer trees (with needles or scales): 60
-  - Broadleaf trees: 85 (including 3 Eucalyptus species)
+  - Broadleaf trees: 86 (including 3 Eucalyptus species and Acacia genus)
   - Other (Joshua Tree, California Fan Palm): 3
 
 > **Note about classifications**: For the decision tree guides, we include Joshua Tree and California Fan Palm in the Broadleaf Path since their leaf structures more closely resemble broad leaves than needles or scales from an identification perspective, though botanically they're monocots rather than true dicot broadleaf trees.
@@ -222,12 +226,39 @@ This comprehensive tree identification guide aims to include profiles for all tr
 > - Elm Genus: Includes 7 rare elm species
 > - Less Common Maple Species: Includes 2 rare maple species
 >
-> These trees are either rarely encountered in California or lack distinctive features that would make them easily identifiable at the species level by children.
+> We also use genus-level entries for commonly planted groups with similar identifying characteristics:
+> - Acacia: Includes several species commonly planted in California landscapes (Black Wattle, Silver Wattle, Bailey Acacia, Golden Wattle)
+>
+> These trees are either rarely encountered in California, are frequently misidentified, or lack distinctive features that would make them easily identifiable at the species level by children.
+> 
+> **Note about genus file organization**: Genus-level tree profiles are stored in the `_trees/genus/` directory to distinguish them from species-level profiles in the `_trees/trees/` directory.
+
+## Genus Profiles Tracking
+
+This section tracks all genus-level groupings referenced in our guides, both existing and needed.
+
+### ✅ Completed Genus Profiles (13)
+- Acacia (Fabaceae) - Common landscape trees with yellow puffball flowers and feathery compound leaves (fabaceae.acacia.yml)
+- Maple (Sapindaceae) - Trees with star-shaped leaves, opposite branching, and helicopter seeds (sapindaceae.maple.yml)
+- Sycamore (Platanaceae) - Trees with mottled multi-colored bark, maple-like leaves, and ball-shaped fruits (platanaceae.sycamore.yml)
+- White Oak (Fagaceae) - Oak species with rounded leaf lobes without bristle tips (fagaceae.white-oak.yml)
+- Black Oak (Fagaceae) - Oak species with bristle-tipped leaf lobes and often glossy leaves (fagaceae.black-oak.yml)
+- Birch (Betulaceae) - Trees with papery, peeling bark and triangular, toothed leaves (betulaceae.birch.yml)
+- Redbud (Fabaceae) - Heart-shaped leaves and pink/magenta flowers that bloom directly on branches (fabaceae.redbud.yml)
+- Aspen (Salicaceae) - Round leaves that quiver in the breeze (salicaceae.aspen.yml)
+- Walnut (Juglandaceae) - Pinnate compound leaves with many leaflets and aromatic smell when crushed (juglandaceae.walnut.yml)
+- Ash (Oleaceae) - Opposite pinnate compound leaves with distinctive Y-shaped branching (oleaceae.ash.yml)
+- Locust (Fabaceae) - Pinnate compound leaves, thorns at leaf bases, and hanging clusters of fragrant flowers (fabaceae.locust.yml)
+- Madrone (Ericaceae) - Smooth, cool-to-touch peeling bark with reddish-orange color (ericaceae.madrone.yml)
+- Cypress (Cupressaceae) - Tightly packed scales forming rounded branchlets with woody, round cones (cupressaceae.cypress.yml)
+
+### 🔄 Genus Profiles To Create (0)
+*All genus profiles have been completed!*
+
+*These genus groupings should be moved to the _trees/genus directory with standardized profiles to help children identify trees at the genus level when species-level identification would be too challenging or unnecessary.*
 
 - **Remaining to create**: 0 (0%)
-  - High-priority California native trees: 0
-  - Other California native trees: 0
-  - High-priority cultivated landscape trees: 0
-  - Other non-native trees: 0
+  - Individual species profiles: 135 (all completed!)
+  - Genus profiles: 13 (all completed!)
 
-Last updated: March 26, 2025 - Completed profiles for three important Eucalyptus species common in California landscapes: Blue Gum, Red Gum, and Silver Dollar Gum. PROJECT COMPLETED! 🎉
+Last updated: March 26, 2025 - Renamed all genus profile files to use common names instead of scientific names (e.g., sapindaceae.maple.yml instead of sapindaceae.acer.yml) and updated the instructions.md file to reflect this naming convention for all future genus profiles. All genus profiles are now complete and consistently named.

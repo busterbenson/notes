@@ -1,0 +1,241 @@
+genus:
+  common_name: "Walnut"
+  scientific_name: "Juglans spp."
+  taxonomic_level: "genus"
+  family: "Juglandaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "Deciduous trees with compound pinnate leaves that have a distinctive spicy aroma when crushed. All walnuts produce round nuts with a green husk that turns brown-black at maturity, and they typically have rough, furrowed bark on mature trees."
+  
+  # Key species in this genus
+  included_species:
+    - name: "California Black Walnut"
+      scientific_name: "Juglans californica"
+      distinguishing_features: "Smaller tree (15-30 feet) often with multiple trunks; 11-19 leaflets; native to Southern California"
+      california_context: "Native to Southern California; increasingly rare in natural habitat due to urban development"
+    
+    - name: "Northern California Walnut"
+      scientific_name: "Juglans hindsii"
+      distinguishing_features: "Medium-sized tree (30-60 feet) with 13-21 leaflets; typically single-trunked; native to Northern California"
+      california_context: "Originally native to Sacramento Valley; now widely used as rootstock for English walnut"
+    
+    - name: "English Walnut"
+      scientific_name: "Juglans regia"
+      distinguishing_features: "Larger tree with fewer, larger leaflets; thinner-shelled, wrinkled nuts; lighter colored bark"
+      california_context: "Widely cultivated in commercial orchards throughout California for nut production"
+    
+    - name: "Eastern Black Walnut"
+      scientific_name: "Juglans nigra"
+      distinguishing_features: "Tall tree (up to 100 feet); 15-23 pointed leaflets; deeply furrowed dark bark"
+      california_context: "Sometimes planted as ornamental; not native to California"
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Compound pinnate leaves with multiple leaflets along a central stem; round nuts with green husks that turn brown-black when ripe; distinctive spicy-aromatic smell when leaves are crushed"
+    secondary_markers: "Rough, furrowed bark on mature trees; alternate leaf arrangement; yellow fall color"
+    seasonal_markers: "Spring: hanging catkins before or with new leaves; Summer: developing green nuts; Fall: yellow foliage and maturing brown nuts; Winter: distinctive furrowed bark"
+    similar_species_differentiation: "Unlike hickories (Carya), walnut leaflets have tiny teeth and leaves usually have an odd number of leaflets; unlike ash trees (Fraxinus), walnuts have alternate rather than opposite leaf arrangement"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "All walnuts lose their leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Leaves divided into multiple leaflets arranged along a central stem"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves arranged alternately along branches, not directly opposite each other"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        notes: "Leaves have a distinctive spicy smell when crushed"
+      
+      - feature_id: "FRUIT-TYPE-04"  # Nuts present
+        notes: "All species produce walnuts with a fleshy green husk that turns brown-black when ripe"
+      
+    usually_true:
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        notes: "Mature trees develop rough, furrowed bark"
+        exceptions: "Young trees have smoother bark; English Walnut may have lighter, less deeply furrowed bark"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated edge
+        notes: "Leaflets typically have finely toothed edges"
+        exceptions: "Teeth may be very small or less distinct in some species or conditions"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        notes: "Most walnuts turn yellow in fall before dropping leaves"
+        exceptions: "Color intensity varies by species and growing conditions"
+      
+    sometimes_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        conditions: "Northern California Walnut, English Walnut, and Eastern Black Walnut typically"
+        notes: "Many walnut species naturally grow with a single main trunk"
+      
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        conditions: "California Black Walnut often; others if damaged when young"
+        notes: "Some species, particularly California Black Walnut, commonly grow with multiple trunks"
+      
+      - feature_id: "FLOWER-TYPE-01"  # Catkins present
+        conditions: "Spring flowering period"
+        notes: "Male flowers hang in long catkins; female flowers are smaller and less conspicuous"
+      
+      - feature_id: "HABITAT-WATER-01"  # Riparian habitat
+        conditions: "Native species in natural settings"
+        notes: "Native California walnuts often found along streams and in riparian areas"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        conditions: "California Black Walnut and Northern California Walnut"
+        notes: "Native California species typically reach 15-60 feet tall"
+      
+      - feature_id: "TREE-SIZE-03"  # Large tree
+        conditions: "English Walnut and Eastern Black Walnut in good conditions"
+        notes: "Some species can grow into large trees exceeding 60 feet tall"
+      
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "All walnuts are deciduous, never evergreen"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Produce nuts, never cones"
+      
+      - feature_id: "LEAF-COMPLEX-03"  # Compound palmate
+        notes: "Leaves are always pinnately compound (feather-like), never palmately compound (hand-like)"
+      
+      - feature_id: "BRANCH-ARRANGE-01"  # Opposite branching
+        notes: "Branches and leaves are always arranged alternately, never opposite"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Feathery compound leaves with many leaflets along a central stem, and round nuts that stain your fingers dark brown if you touch the outer covering"
+    memorable_comparison: "The leaves look like green feathers, and the ripe nuts are like little round sports balls wearing brown-black jackets that will stain your hands like permanent marker"
+    touch_tip: "Feel the leaves - they're a bit leathery, and if you gently crush one, your fingers will smell spicy like furniture polish"
+    smell_tip: "Crush a leaf gently and sniff - the strong spicy smell is very distinctive and will help you identify any walnut tree"
+    fun_fact: "Walnut trees make a special chemical that can stain your hands dark brown and is actually used to make wood stain and hair dye! This chemical also keeps many other plants from growing underneath walnut trees - it's like the tree's invisible forcefield!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "Look at the leaves. Are they divided into many smaller leaflets arranged like a feather along a central stem?"
+        yes_next: 2
+        no_next: "Not a walnut - check trees with simple leaves or differently arranged compound leaves"
+      - step: 2
+        instruction: "Gently crush a leaf and smell it. Does it have a strong, spicy scent (like furniture polish)?"
+        yes_next: 3
+        no_next: "Probably not a walnut - try checking trees with compound leaves but no strong smell"
+      - step: 3
+        instruction: "Look for nuts on the tree or ground (in summer or fall). Are they round with a green or brown-black outer covering?"
+        yes_next: "You found a walnut tree! Check the size of the tree and number of leaflets to figure out which kind."
+        no_next: "If it's not nut season, check the bark - mature walnuts have rough, furrowed bark with deep grooves"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New compound leaves emerge; long hanging male catkins appear before or with new leaves"
+      reproductive_activity: "Male catkins release pollen; small female flowers develop at branch tips"
+      identification_tips: "Hanging catkins and emerging compound leaves are distinctive"
+      kid_friendly_tip: "In spring, look for long hanging 'green worms' (catkins) and new feathery leaves unfolding"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of dark green compound leaves; green round nuts developing"
+      reproductive_activity: "Nuts grow inside green husks"
+      identification_tips: "Fully developed compound leaves; green nuts becoming visible"
+      kid_friendly_tip: "Summer is when you'll see green round nuts growing - they start the size of marbles and grow to golf ball size"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow; nut husks turn from green to brown/black and may split"
+      reproductive_activity: "Nuts fully mature and fall to ground"
+      identification_tips: "Yellow fall color; mature nuts with staining husks"
+      kid_friendly_tip: "In fall, the leaves turn yellow and the nuts turn brown with dark coverings that can stain your hands"
+    
+    - season: "Winter"
+      visual_changes: "Trees lose all leaves; distinctive branch pattern and furrowed bark visible"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Furrowed bark; sometimes fallen nuts remain on ground"
+      kid_friendly_tip: "In winter with no leaves, you can see the rough bark that looks like alligator skin with deep grooves"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Compound leaves with multiple leaflets along a central stem"
+      reliability: "Very high"
+      visibility: "Easy - visible during growing season"
+    - feature: "Spicy, aromatic smell when leaves are crushed"
+      reliability: "Very high"
+      visibility: "Requires interaction - crush and smell"
+    - feature: "Round nuts with green husks that turn brown-black"
+      reliability: "High (when present)"
+      visibility: "Seasonal - summer and fall"
+    - feature: "Furrowed bark on mature trees"
+      reliability: "High"
+      visibility: "Visible year-round"
+    
+  look_alikes:
+    - name: "Hickory (Carya species)"
+      type: "genus"
+      differences: "Hickories have similar compound leaves but produce different nuts with 4-sectioned husks that split cleanly; bark often shaggy or plated rather than furrowed"
+      identification_tip: "Walnut leaves have a strong spicy smell when crushed; hickories don't. Walnut husks don't split into clean sections like hickory husks."
+    
+    - name: "Ash (Fraxinus species)"
+      type: "genus"
+      differences: "Ash trees have opposite leaves (paired across from each other) while walnuts have alternate leaves; ash produces winged seeds, not nuts"
+      identification_tip: "Check leaf arrangement - if leaves grow opposite each other (not alternating), it's an ash not a walnut"
+    
+    - name: "Ailanthus (Tree of Heaven)"
+      type: "species"
+      differences: "Similar compound leaves, but ailanthus has a small gland at the base of each leaflet and has an unpleasant smell"
+      identification_tip: "Crush a leaf - ailanthus has an unpleasant odor like rancid peanut butter, while walnut has a pleasant spicy smell"
+    
+  cultural_ecological_notes:
+    - "Native California walnuts are important components of riparian woodland ecosystems"
+    - "Historically used by Native Americans for food, dye, and medicine"
+    - "English Walnut is one of California's important agricultural crops"
+    - "Walnut wood is highly valued for furniture making and woodworking"
+    - "Fallen walnut leaves release compounds that inhibit growth of some other plants (allelopathy)"
+    
+  range_within_california:
+    - "California Black Walnut native to Southern California, particularly in Los Angeles, Orange, Riverside, San Bernardino, San Diego, and Ventura counties"
+    - "Northern California Walnut originally native to Sacramento Valley, primarily in Napa, Contra Costa, and Solano counties"
+    - "English Walnut widely cultivated throughout California's Central Valley for commercial nut production"
+    - "Native species generally found in riparian areas, stream sides, and valley bottoms"
+    - "Some species now have expanded ranges due to cultivation and naturalization"
+    
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-COMPLEX-02"  # Compound pinnate
+      - "feature_id: SENSORY-SMELL-01"  # Aromatic leaves
+    confirmation_features:
+      - "feature_id: FRUIT-TYPE-04"  # Nuts present
+      - "feature_id: BARK-TEXT-02"  # Furrowed bark
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-02", "LEAF-TYPE-01"]  # Rounded crown, deciduous
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-COMPLEX-02", "LEAF-ARRANGE-01"]  # Compound pinnate, alternate
+      - distance: "close_inspection"
+        features_to_check: ["SENSORY-SMELL-01", "FRUIT-TYPE-04"]  # Aromatic leaves, nuts
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["FLOWER-TYPE-01", "LEAF-COMPLEX-02"]  # Catkins, compound leaves
+        notes: "Male catkins and emerging compound leaves"
+      summer:
+        reliability: "Very high"
+        key_features: ["LEAF-COMPLEX-02", "SENSORY-SMELL-01", "FRUIT-TYPE-04"]  # Compound leaves, aromatic, nuts
+        notes: "Full leafy canopy and developing nuts make summer identification easy"
+      fall:
+        reliability: "High" 
+        key_features: ["LEAF-FALL-01", "FRUIT-TYPE-04"]  # Yellow fall color, nuts
+        notes: "Yellow leaves and mature nuts with staining husks"
+      winter:
+        reliability: "Medium"
+        key_features: ["BARK-TEXT-02"]  # Furrowed bark
+        notes: "Furrowed bark pattern is distinctive but requires experience"
+
+  wildlife_value:
+    - "Nuts provide important food for squirrels, woodpeckers, and other wildlife"
+    - "Leaves support various native caterpillar species"
+    - "Dense branching provides nesting sites for birds"
+    - "Fallen leaves create habitat for insects and small animals"
+    - "Deep roots help stabilize soil in canyon and riverside habitats"

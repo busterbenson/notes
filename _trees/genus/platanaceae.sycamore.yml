@@ -1,0 +1,206 @@
+genus:
+  common_name: "Sycamore"
+  scientific_name: "Platanus spp."
+  taxonomic_level: "genus"
+  family: "Platanaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "Tall trees with striking mottled bark that peels in patches to create a camouflage-like pattern of cream, tan, olive, and brown colors. Has large, maple-like lobed leaves and distinctive round, hanging seed balls."
+  
+  # Key species in this genus
+  included_species:
+    - name: "California Sycamore"
+      scientific_name: "Platanus racemosa"
+      distinguishing_features: "Native species with deeply lobed leaves; massive, spreading branches; typically grows near water"
+      california_context: "Native to riparian areas throughout Central and Southern California"
+    
+    - name: "London Plane Tree"
+      scientific_name: "Platanus × acerifolia"
+      distinguishing_features: "Hybrid species with less deeply lobed leaves; more upright growth; more pollution tolerant"
+      california_context: "Widely planted as street and park tree throughout California cities"
+    
+    - name: "American Sycamore"
+      scientific_name: "Platanus occidentalis"
+      distinguishing_features: "Less common in California; leaves less deeply lobed than California Sycamore"
+      california_context: "Occasionally planted in parks and large landscapes"
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Distinctive mottled bark that peels in patches revealing multiple colors (cream, tan, olive, brown); large maple-like lobed leaves; round, dangling seed balls"
+    secondary_markers: "Massive, wide-spreading canopy; often growing near water sources; large trunk diameter"
+    seasonal_markers: "Spring: young leaves unfolding; Summer: full canopy with large leaves; Fall: brown seed balls hanging; Winter: highly visible mottled bark and persistent seed balls"
+    similar_species_differentiation: "Leaves resemble maple but have alternate arrangement (not opposite); bark pattern is unique and unlike any other tree genus"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "BARK-COLOR-04"  # Mottled/multicolored bark
+        notes: "Bark peels in patches to create a camouflage pattern of multiple colors"
+      
+      - feature_id: "LEAF-EDGE-03"  # Lobed leaf edges
+        notes: "Leaves have 3-5 broad lobes, somewhat star-shaped"
+      
+      - feature_id: "FRUIT-TYPE-03"  # Ball-shaped fruits
+        notes: "Round seed balls hang from branches, often staying on the tree through winter"
+      
+    usually_true:
+      - feature_id: "HABITAT-01"  # Near water
+        notes: "Often found growing near streams, rivers or lakes, especially native species"
+        exceptions: "London Plane Tree is more drought tolerant and planted in many urban settings away from water"
+      
+      - feature_id: "TREE-SIZE-01"  # Very tall
+        notes: "Mature trees typically reach 70-100 feet in height"
+        exceptions: "Urban trees may be smaller due to pruning or growing conditions"
+      
+      - feature_id: "TREE-FORM-05"  # Wide spreading form
+        notes: "Typically develops massive, spreading branches with wide canopy"
+        exceptions: "London Plane Trees can be more upright, especially when young or in urban settings"
+      
+    sometimes_true:
+      - feature_id: "LEAF-SURFACE-01"  # Fuzzy leaf surface
+        conditions: "Young leaves in spring, undersides of leaves"
+        notes: "New leaves often have fine fuzz that may cause allergies in some people"
+      
+      - feature_id: "BRANCH-FEATURE-02"  # Multiple trunks
+        conditions: "Some California Sycamores, especially those that have been damaged"
+        notes: "May develop multiple trunks from the base"
+      
+      - feature_id: "TREE-TRUNK-03"  # Leaning trunk
+        conditions: "Trees growing near water or on slopes"
+        notes: "Trunks may develop interesting leaning or curving forms, especially near water"
+      
+    never_true:
+      - feature_id: "BRANCH-ARRANGE-01"  # Opposite branching
+        notes: "Sycamores always have alternate branching pattern, never opposite"
+      
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "All sycamores are deciduous, dropping their leaves in fall"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Peeling, multi-colored bark that looks like military camouflage"
+    memorable_comparison: "The bark looks like a puzzle with pieces missing, showing patches of different colors underneath"
+    touch_tip: "The bark feels smooth in newly exposed areas; older bark feels rough and flaky"
+    smell_tip: "Crushing the leaves might give a mild, fresh green smell, but not strongly scented"
+    fun_fact: "Sycamores are sometimes called 'ghost trees' because their white patches of bark seem to glow in the moonlight!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "Look at the bark - does it have a pattern of peeling patches with different colors (like cream, brown, and olive green)?"
+        yes_next: 2
+        no_next: "Probably not a sycamore - check birch if it has white peeling bark"
+      - step: 2
+        instruction: "Look at the leaves (if present) - are they large and shaped like a star with 3-5 broad lobes?"
+        yes_next: 3
+        no_next: "If leaves are similar but more pointy and opposite on the branch, check maple instead"
+      - step: 3
+        instruction: "Do you see round, ball-shaped seeds hanging from strings, or large tree growing near water?"
+        yes_next: "You found a sycamore tree!"
+        no_next: "If the tree has the right bark and leaves but no seed balls, it's still likely a sycamore - they might just not be visible yet"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaves emerge with a fine fuzz; light green color; mottled bark pattern visible"
+      reproductive_activity: "Small flowers develop but are not showy"
+      identification_tips: "Young leaves unfold with fuzzy texture; tree may look 'leafy' but not fully filled out"
+      kid_friendly_tip: "In spring, look for the light green fuzzy leaves just starting to grow"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy with large, maple-like leaves; mottled bark pattern visible"
+      reproductive_activity: "Green seed balls develop, hanging from branches"
+      identification_tips: "Massive, wide-spreading canopy; large leaves provide good shade"
+      kid_friendly_tip: "Sycamores make great shade trees in summer with their big leaves and wide branches"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow-brown and drop; seed balls turn brown and become more visible"
+      reproductive_activity: "Seed balls mature and some begin to break apart, releasing seeds"
+      identification_tips: "Brown seed balls hanging from branches; fall color less spectacular than maples"
+      kid_friendly_tip: "When the leaves fall, you can see the round seed balls that look like Christmas tree ornaments hanging from the branches"
+    
+    - season: "Winter"
+      visual_changes: "Leafless with very prominent mottled bark; persistent seed balls may remain"
+      reproductive_activity: "Dormant; some seed balls remain on tree through winter"
+      identification_tips: "Most distinctive in winter when bark pattern is highly visible"
+      kid_friendly_tip: "Winter is the best time to see the amazing camouflage pattern on the trunk and branches"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Mottled, multi-colored peeling bark"
+      reliability: "Very high"
+      visibility: "Highly visible from a distance"
+    - feature: "Large, maple-like leaves with alternate arrangement"
+      reliability: "High"
+      visibility: "Visible during growing season"
+    - feature: "Round seed balls hanging from branches"
+      reliability: "High when present"
+      visibility: "More visible after leaves drop"
+    
+  look_alike_species:
+    - species: "Maple (Acer species)"
+      differences: "Maple has opposite branching (sycamore is alternate); maple has winged 'helicopter' seeds (not balls); maple bark is not mottled"
+      identification_tip: "Check how the branches grow - if directly opposite each other, it's maple not sycamore"
+    
+    - species: "London Plane Tree (Platanus × acerifolia)"
+      differences: "This is actually a type of sycamore! Just a hybrid species with less deeply cut leaves than California Sycamore"
+      identification_tip: "If in an urban setting with less deeply lobed leaves, it's likely the London Plane Tree variety"
+    
+    - species: "Sweetgum (Liquidambar styraciflua)"
+      differences: "Sweetgum has star-shaped leaves with more pointed lobes; spiky not smooth seed balls; bark is not mottled"
+      identification_tip: "If the seed balls are spiky instead of smooth, it's sweetgum not sycamore"
+    
+  cultural_ecological_notes:
+    - "California Sycamore is culturally significant to many California Native American tribes"
+    - "Provides important habitat for wildlife, especially in riparian areas"
+    - "London Plane Tree widely planted in cities worldwide due to pollution tolerance"
+    - "Important for stabilizing stream banks and preventing erosion"
+    - "Provides critical shade over waterways, helping keep water temperatures cool for fish"
+    
+  range_within_california:
+    - "California Sycamore native to riparian corridors throughout Central and Southern California"
+    - "Found naturally along streams, rivers, and seasonally wet areas"
+    - "London Plane Tree widely planted as street and park tree in cities statewide"
+    - "Western Sycamore extends into northern Mexico and parts of Arizona"
+    - "Can be found from sea level to about 4,000 feet elevation"
+    
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: BARK-COLOR-04"  # Mottled/multicolored bark
+      - "feature_id: FRUIT-TYPE-03"  # Ball-shaped fruits
+    confirmation_features:
+      - "feature_id: LEAF-EDGE-03"  # Lobed leaf edges
+      - "feature_id: HABITAT-01"  # Near water
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["BARK-COLOR-04", "TREE-FORM-05"]  # Mottled bark, wide spreading form
+      - distance: "from_nearby"
+        features_to_check: ["FRUIT-TYPE-03", "LEAF-EDGE-03"]  # Ball fruits, lobed leaves
+      - distance: "close_inspection"
+        features_to_check: ["BRANCH-ARRANGE-02", "LEAF-SURFACE-01"]  # Alternate branching, fuzzy leaf surface
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["BARK-COLOR-04", "LEAF-SURFACE-01"]
+        notes: "Bark pattern and emerging fuzzy leaves"
+      summer:
+        reliability: "High"
+        key_features: ["BARK-COLOR-04", "LEAF-EDGE-03"]
+        notes: "Full leaf development and bark pattern"
+      fall:
+        reliability: "High" 
+        key_features: ["BARK-COLOR-04", "FRUIT-TYPE-03"]
+        notes: "Seed balls prominent as leaves drop"
+      winter:
+        reliability: "Very high"
+        key_features: ["BARK-COLOR-04", "FRUIT-TYPE-03"]
+        notes: "Most distinctive in winter when bark pattern fully exposed"
+
+  wildlife_value:
+    - "Provides nesting habitat for many bird species"
+    - "Seeds eaten by birds and small mammals"
+    - "Cavities in older trees provide homes for owls, woodpeckers, and squirrels"
+    - "Leaves support various caterpillar species that feed birds"
+    - "Shade from trees keeps streams cool for fish and aquatic life"
+    - "Fallen leaves provide habitat and food for aquatic insects in streams"

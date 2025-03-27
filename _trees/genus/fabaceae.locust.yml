@@ -1,0 +1,245 @@
+genus:
+  common_name: "Locust"
+  scientific_name: "Robinia spp."
+  taxonomic_level: "genus"
+  family: "Fabaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "Deciduous trees with compound pinnate leaves and thorns or bristles along branches. All locusts produce hanging clusters of fragrant, pea-like flowers (white or pink-purple) and flat seed pods, and have nitrogen-fixing roots that improve soil."
+  
+  # Key species in this genus
+  included_species:
+    - name: "Black Locust"
+      scientific_name: "Robinia pseudoacacia"
+      distinguishing_features: "White flower clusters; paired thorns at leaf bases; deeply furrowed rope-like bark; large tree (40-80 feet)"
+      california_context: "Widely planted throughout California; sometimes naturalizing in disturbed areas"
+    
+    - name: "New Mexico Locust" 
+      scientific_name: "Robinia neomexicana"
+      distinguishing_features: "Pink to purple flower clusters; paired thorns; smaller tree (10-25 feet); often multi-trunked"
+      california_context: "Occasionally planted in gardens, especially in drier inland areas"
+    
+    - name: "Bristly Locust"
+      scientific_name: "Robinia hispida"
+      distinguishing_features: "Pink-purple flowers; reddish bristles on branches (not hard thorns); small tree or shrub (6-10 feet)"
+      california_context: "Sometimes found in gardens as an ornamental"
+    
+    - name: "Clammy Locust"
+      scientific_name: "Robinia viscosa"
+      distinguishing_features: "Pink flowers; sticky/glandular twigs and seedpods; small thorns; medium tree (20-30 feet)"
+      california_context: "Occasionally planted in landscaped areas"
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Compound leaves with small oval leaflets arranged in pairs along a central stem; thorns or bristles on branches; hanging clusters of pea-like flowers; flat seed pods"
+    secondary_markers: "Yellow fall color; distinctive bark patterns ranging from smooth to deeply furrowed; sweet flower fragrance"
+    seasonal_markers: "Spring: showy flower clusters (white or pink); Summer: flat green seedpods develop; Fall: yellow foliage and brown seedpods; Winter: thorns visible on bare branches"
+    similar_species_differentiation: "Distinguished from Honeylocust by having paired thorns only at leaf bases (not large branched thorns along trunk); unlike most other trees with compound leaves, has distinct pea-like flowers"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "All locusts lose their leaves in fall"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound pinnate
+        notes: "Leaves divided into multiple small oval leaflets arranged along a central stem"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves arranged alternately along branches"
+      
+      - feature_id: "FRUIT-TYPE-05"  # Pods present
+        notes: "All locusts produce flat seed pods typical of the legume family"
+      
+      - feature_id: "SENSORY-SMELL-03"  # Fragrant flowers
+        notes: "Flower clusters have a sweet fragrance"
+      
+    usually_true:
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Most locusts have thorns or bristles, usually paired at leaf bases"
+        exceptions: "Some cultivated varieties may have fewer thorns; Bristly Locust has soft bristles instead of hard thorns"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        notes: "Most locusts turn yellow in fall before dropping leaves"
+        exceptions: "Color intensity varies by species and growing conditions"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        notes: "Most species become drought-tolerant once established"
+        exceptions: "Some species prefer more consistent moisture"
+      
+    sometimes_true:
+      - feature_id: "FLOWER-COLOR-01"  # White flowers
+        conditions: "Black Locust"
+        notes: "Black Locust has white flowers in hanging clusters"
+      
+      - feature_id: "FLOWER-COLOR-02"  # Pink flowers
+        conditions: "New Mexico Locust, Bristly Locust, Clammy Locust"
+        notes: "Several locust species have pink to rose-purple flowers"
+      
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        conditions: "Black Locust typically; others occasionally"
+        notes: "Some locust species naturally grow with a single main trunk"
+      
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        conditions: "New Mexico Locust, Bristly Locust typically; others sometimes"
+        notes: "Several species tend to grow with multiple stems from the base"
+      
+      - feature_id: "TREE-SIZE-03"  # Large tree
+        conditions: "Black Locust in good conditions"
+        notes: "Black Locust can grow quite large (40-80 feet)"
+      
+      - feature_id: "TREE-SIZE-01"  # Small tree
+        conditions: "New Mexico Locust, Bristly Locust, and sometimes Clammy Locust"
+        notes: "Several species remain relatively small"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Black Locust and older specimens of other species"
+        notes: "Bark often becomes furrowed with age, especially on Black Locust"
+      
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "All locusts are deciduous, never evergreen"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Produce seed pods, never cones"
+      
+      - feature_id: "FRUIT-TYPE-03"  # Berries
+        notes: "Never produce berries, always seed pods"
+      
+      - feature_id: "LEAF-COMPLEX-03"  # Compound palmate
+        notes: "Leaves are always pinnately compound (feather-like), never palmately compound (hand-like)"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Trees with rows of small oval leaves along stems and thorns or bristles at the base of each leaf stem"
+    memorable_comparison: "The leaves look like tiny green feathers, and the flower clusters hang down like bunches of sweet pea flowers"
+    touch_tip: "Carefully feel the bark, but watch out for the sharp thorns or bristles on branches!"
+    smell_tip: "In spring, smell the sweet flower clusters that hang like bunches of grapes"
+    fun_fact: "Locust trees are nitrogen-fixing superheroes that make the soil healthier for other plants! Their wood is so strong and rot-resistant that fence posts made from Black Locust can last more than 100 years - longer than metal posts!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "Look at the leaves. Do they have rows of small oval leaflets along a central stem (like a feather)?"
+        yes_next: 2
+        no_next: "Not a locust - check trees with simple leaves instead of compound ones"
+      - step: 2
+        instruction: "Check where the leaf stems meet the branch. Do you see thorns, short prickles, or bristly hairs?"
+        yes_next: 3
+        no_next: "Might not be a locust - look for other trees with compound leaves but no thorns"
+      - step: 3
+        instruction: "If it's spring, check the flower color. Is it white or pink-purple?"
+        yes_next: "You found a locust! White flowers mean Black Locust; pink flowers mean one of the other locust species."
+        no_next: "If there are no flowers, look for flat seedpods like bean pods. These are typical of all locust trees."
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Leaves emerge in spring; fragrant flower clusters (white or pink-purple) hang from branches"
+      reproductive_activity: "Flowers bloom and attract many pollinators, especially bees"
+      identification_tips: "Hanging clusters of fragrant flowers are very distinctive"
+      kid_friendly_tip: "In spring, look for bunches of sweet-smelling flowers hanging down like clusters of grapes"
+    
+    - season: "Summer" 
+      visual_changes: "Full foliage of compound leaves; flat green seed pods develop"
+      reproductive_activity: "Seed pods grow and gradually turn from green to brown"
+      identification_tips: "Compound leaves fully developed; green pods becoming visible"
+      kid_friendly_tip: "By summer, you'll see flat green pods that look like bean pods hanging on the tree"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow; seed pods fully brown and mature"
+      reproductive_activity: "Seeds mature inside pods; some pods begin to split open"
+      identification_tips: "Yellow fall color and brown seed pods are distinctive"
+      kid_friendly_tip: "In fall, the leaves turn yellow like gold coins, and the seed pods turn brown"
+    
+    - season: "Winter"
+      visual_changes: "Trees lose all leaves; some seed pods may remain; thorns and bark clearly visible"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Thorny twigs; distinctive bark; sometimes persistent seed pods"
+      kid_friendly_tip: "In winter with no leaves, you can easily see the thorns and the distinctive bark pattern"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Compound leaves with oval leaflets"
+      reliability: "Very high"
+      visibility: "Easy - visible during growing season"
+    - feature: "Thorns or bristles at leaf bases"
+      reliability: "High"
+      visibility: "Medium - need to look carefully"
+    - feature: "Hanging clusters of pea-like flowers"
+      reliability: "Very high (when present)"
+      visibility: "Easy - visible in spring"
+    - feature: "Flat seed pods"
+      reliability: "High"
+      visibility: "Easy - visible summer through fall"
+    
+  look_alikes:
+    - name: "Honeylocust (Gleditsia triacanthos)"
+      type: "species"
+      differences: "Honeylocust has smaller leaflets, large branched thorns on trunk and branches, and long twisted seed pods"
+      identification_tip: "Honeylocust thorns grow directly from the trunk and are often branched like miniature antlers; locust thorns are only at leaf bases"
+    
+    - name: "Ash (Fraxinus species)"
+      type: "genus"
+      differences: "Ash trees have opposite compound leaves (not alternate) and produce winged seeds instead of pods; no thorns"
+      identification_tip: "Check leaf arrangement - if leaves grow opposite each other (not alternating), it's likely an ash, not a locust"
+    
+    - name: "Kentucky Coffeetree (Gymnocladus dioicus)"
+      type: "species"
+      differences: "Has much larger compound leaves (sometimes doubly compound) with larger leaflets; no thorns; thicker seed pods"
+      identification_tip: "Kentucky Coffeetree has much larger, broader leaflets and no thorns"
+    
+  cultural_ecological_notes:
+    - "All locusts are members of the legume family and fix nitrogen in the soil"
+    - "Black Locust wood is extremely rot-resistant and valued for outdoor uses"
+    - "Flowers of all species provide important nectar for pollinators"
+    - "Some species (especially Black Locust) can spread aggressively by root suckers"
+    - "Seeds contain toxic compounds but are eaten by some wildlife"
+    
+  range_within_california:
+    - "None are native to California but several are planted and sometimes naturalized"
+    - "Black Locust is the most commonly planted, found throughout the state"
+    - "Ornamental species with pink flowers are mostly found in cultivated settings"
+    - "Most species adapt well to California's Mediterranean climate once established"
+    - "Black Locust has naturalized in some disturbed areas and can spread aggressively"
+    
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: LEAF-COMPLEX-02"  # Compound pinnate
+      - "feature_id: TWIG-FEAT-01"  # Thorns present
+    confirmation_features:
+      - "feature_id: FRUIT-TYPE-05"  # Pods present
+      - "feature_id: SENSORY-SMELL-03"  # Fragrant flowers
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-TYPE-01", "TREE-FORM-05"]  # Deciduous, irregular crown
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-COMPLEX-02", "TWIG-FEAT-01"]  # Compound leaves, thorns
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-05", "SENSORY-SMELL-03"]  # Pods, fragrant flowers
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["FLOWER-COLOR-01", "FLOWER-COLOR-02", "SENSORY-SMELL-03"]  # White/pink flowers, fragrant
+        notes: "Fragrant flower clusters make spring identification easiest"
+      summer:
+        reliability: "High"
+        key_features: ["LEAF-COMPLEX-02", "TWIG-FEAT-01", "FRUIT-TYPE-05"]  # Compound leaves, thorns, pods
+        notes: "Fully developed compound leaves with thorns at bases; developing pods"
+      fall:
+        reliability: "High" 
+        key_features: ["LEAF-FALL-01", "FRUIT-TYPE-05"]  # Yellow fall color, pods
+        notes: "Yellow fall color; mature brown seed pods"
+      winter:
+        reliability: "Medium"
+        key_features: ["TWIG-FEAT-01", "WINTER-FEAT-02"]  # Thorns, persistent fruits
+        notes: "Thorny twigs; sometimes persistent pods; distinctive bark"
+
+  wildlife_value:
+    - "Flowers provide abundant nectar for bees, butterflies, and sometimes hummingbirds"
+    - "Seeds eaten by some birds and small mammals despite toxicity"
+    - "Nitrogen-fixing roots improve soil for other plants"
+    - "Thorny branches provide protected nesting sites for small birds"
+    - "Older trees may develop cavities used by cavity-nesting birds"

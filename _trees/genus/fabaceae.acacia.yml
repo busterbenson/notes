@@ -1,0 +1,170 @@
+genus:
+  common_name: "Acacia"
+  scientific_name: "Acacia spp."
+  taxonomic_level: "genus"
+  family: "Fabaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "Trees with distinctive yellow puffball flowers and finely divided, feathery compound leaves. Commonly planted in California landscapes, especially coastal areas, with smooth gray bark and rounded canopies."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Bright yellow fuzzy puffball flowers covering the tree in winter or early spring; feathery, finely divided compound leaves that look lacy"
+    secondary_markers: "Smooth gray bark, often with vertical lenticels; flat seed pods; rounded crown shape"
+    seasonal_markers: "Winter to early spring blooming with masses of yellow flower balls; green foliage year-round"
+    similar_species_differentiation: "Unlike Mimosa, Acacias have yellow flowers (not pink/purple); unlike Gleditsia (Honeylocust), they have smaller, more finely divided leaflets and no thorns"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps green leaves year-round in California's climate"
+      
+      - feature_id: "LEAF-FORM-06"  # Compound leaves
+        notes: "Feathery compound leaves with many tiny leaflets"
+      
+      - feature_id: "FLOWER-COLOR-03"  # Yellow flowers
+        notes: "Bright yellow puffball flowers in clusters"
+      
+    sometimes_true:
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Most commonly planted species, particularly when young"
+        notes: "Typically smooth gray bark that may develop shallow fissures with age"
+      
+      - feature_id: "SENSORY-SMELL-04"  # Sweet scent
+        conditions: "During flowering period"
+        notes: "Many species have sweet-smelling flowers"
+      
+      - feature_id: "TREE-FORM-07"  # Umbrella shaped
+        conditions: "Mature trees in open settings"
+        notes: "Often develops a rounded or umbrella-like crown when mature"
+      
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "In California's climate, Acacias remain evergreen"
+      
+      - feature_id: "FLOWER-SIZE-02"  # Large individual flowers
+        notes: "Flowers form in small balls, not as individual large blooms"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Look for trees covered with fluffy yellow pom-poms for flowers"
+    memorable_comparison: "The leaves look like super-fine feathers, and the flowers look like tiny yellow cotton balls or fuzzy pompoms"
+    touch_tip: "The leaves feel soft and feathery - like a very delicate fern"
+    smell_tip: "When the tree is flowering, you might notice a sweet honey-like smell"
+    fun_fact: "In Australia (where most Acacias come from), they're called 'wattles' and are the national flower!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "Look at the leaves - are they feathery and delicate, made up of many tiny parts?"
+        yes_next: 2
+        no_next: "Probably not an Acacia - try Mimosa or Honey Locust if the leaves are similar but less fine"
+      - step: 2
+        instruction: "Do you see bright yellow fluffy ball-shaped flowers (or if no flowers, does it have smooth grayish bark)?"
+        yes_next: 3
+        no_next: "If the tree has pink fluffy flowers, it's probably a Mimosa tree instead"
+      - step: 3
+        instruction: "Are the flowers scattered all over the tree in little round yellow puffballs (not hanging in chains)?"
+        yes_next: "You found an Acacia tree!"
+        no_next: "If the yellow flowers hang in chains, it might be a Golden Chain Tree"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Yellow puffball flowers may still be present early in the season"
+      reproductive_activity: "Flowering often continues; small seed pods begin forming"
+      identification_tips: "Look for the combination of yellow flowers against the feathery foliage"
+      kid_friendly_tip: "The tree might look like it's covered in little yellow cotton balls or pompoms"
+    
+    - season: "Summer" 
+      visual_changes: "Consistent green foliage; seed pods developing"
+      reproductive_activity: "Flat seed pods mature and turn brown"
+      identification_tips: "Identified primarily by its feathery compound leaves and developing pods"
+      kid_friendly_tip: "Look for the super-feathery leaves that look like delicate green feathers"
+    
+    - season: "Fall"
+      visual_changes: "Remains green; may have mature seed pods"
+      reproductive_activity: "Seed pods fully mature and may begin to open"
+      identification_tips: "Flat seed pods help with identification in this season"
+      kid_friendly_tip: "Look for flat bean-like pods and the feathery leaves that stay green"
+    
+    - season: "Winter"
+      visual_changes: "Often bursts into bloom with bright yellow flower balls"
+      reproductive_activity: "Primary flowering season for many Acacia species in California"
+      identification_tips: "Most distinctive and easily identified when in bloom"
+      kid_friendly_tip: "Winter is often when Acacias put on their best flower show - look for trees covered in yellow pompoms!"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Finely divided feathery compound leaves with tiny leaflets"
+      reliability: "High"
+      visibility: "Easy to see from short distance"
+    - feature: "Yellow puffball flowers (when in bloom)"
+      reliability: "Very high"
+      visibility: "Highly visible, even from a distance"
+    - feature: "Smooth gray bark on trunk and branches"
+      reliability: "Medium"
+      visibility: "Need to look at trunk"
+    
+  look_alike_species:
+    - species: "Mimosa/Silk Tree (Albizia julibrissin)"
+      differences: "Mimosa has pink fluffy flowers, not yellow; leaves similar but often larger and less fine"
+      identification_tip: "If the fluffy flowers are pink instead of yellow, it's a Mimosa"
+    
+    - species: "Golden Chain Tree (Laburnum species)"
+      differences: "Has yellow flowers that hang in chains or clusters, not round balls; leaves have only 3 leaflets"
+      identification_tip: "Golden Chain Tree flowers hang down in chains rather than being round balls"
+    
+  cultural_ecological_notes:
+    - "Many Acacia species were introduced to California from Australia in the late 1800s"
+    - "Some species can become invasive in certain California habitats"
+    - "Provide winter nectar for bees when few other plants are flowering"
+    - "Used in gardens for their ornamental yellow flowers and drought tolerance"
+    
+  range_within_california:
+    - "Not native to California but widely planted throughout the state"
+    - "Most common in coastal areas from the Bay Area to Southern California"
+    - "Tolerates various soil types but prefers good drainage"
+    - "Generally found in urban and suburban landscapes rather than wild areas"
+    
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: FLOWER-COLOR-03"  # Yellow flowers
+      - "feature_id: LEAF-FORM-06"  # Compound leaves
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+    confirmation_features:
+      - "feature_id: BARK-TEXT-01"  # Smooth bark
+      - "feature_id: FRUIT-TYPE-07"  # Pod fruits
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["FLOWER-COLOR-03", "TREE-FORM-07"]  # Yellow flowers, rounded form
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-FORM-06", "BARK-TEXT-01"]  # Compound leaves, smooth bark
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-ARRANGE-02", "SENSORY-SMELL-04"]  # Leaf arrangement, sweet scent
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["FLOWER-COLOR-03", "LEAF-FORM-06"]
+        notes: "Yellow flowers make identification easy"
+      summer:
+        reliability: "Medium"
+        key_features: ["LEAF-FORM-06", "FRUIT-TYPE-07"]
+        notes: "Distinctive feathery leaves and seed pods"
+      fall:
+        reliability: "Medium" 
+        key_features: ["LEAF-FORM-06", "FRUIT-TYPE-07"]
+        notes: "Look for flat seed pods and evergreen feathery foliage"
+      winter:
+        reliability: "Very high"
+        key_features: ["FLOWER-COLOR-03", "LEAF-TYPE-02"]
+        notes: "One of few trees with bright yellow flowers in winter"
+
+  wildlife_value:
+    - "Flowers provide important nectar source for bees and other pollinators, especially in winter"
+    - "Dense foliage offers shelter for various bird species"
+    - "Seeds eaten by some bird species"
+    - "Flowers attract hummingbirds, butterflies, and other nectar-feeding wildlife"
+    - "Valuable as winter nectar source when few other plants are blooming"

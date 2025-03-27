@@ -1,0 +1,242 @@
+genus:
+  common_name: "Madrone"
+  scientific_name: "Arbutus spp."
+  taxonomic_level: "genus"
+  family: "Ericaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "Evergreen trees with smooth, peeling reddish-orange to cinnamon-colored bark that feels cool to the touch. All madrones have leathery dark green leaves, clusters of small white bell-shaped flowers, and round berries that turn orange to red when ripe."
+  
+  # Key species in this genus
+  included_species:
+    - name: "Pacific Madrone"
+      scientific_name: "Arbutus menziesii"
+      distinguishing_features: "Large tree (50-100 feet); large oval leaves with smooth edges; larger berries; native to California"
+      california_context: "Native to coastal ranges and foothills throughout northern and central California"
+    
+    - name: "Strawberry Tree" 
+      scientific_name: "Arbutus unedo"
+      distinguishing_features: "Smaller tree (15-30 feet); smaller leaves with toothed edges; strawberry-like bumpy red fruits; Mediterranean native"
+      california_context: "Commonly planted in gardens and landscapes throughout California"
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Smooth, peeling reddish-orange to cinnamon-colored bark; leathery evergreen leaves; bell-shaped flowers and red berries"
+    secondary_markers: "Cool-to-touch bark; multiple stems or trunks in some cases; flowers and fruits can appear simultaneously on Strawberry Tree"
+    seasonal_markers: "White flowers in spring (Pacific Madrone) or fall (Strawberry Tree); orange-red berries in fall and winter; bark peeling most visible in summer"
+    similar_species_differentiation: "Unlike manzanitas, grows as a tree rather than a shrub; unlike photinias, has distinctive peeling bark; unlike toyon, has smooth not rough bark"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "All madrones keep their leaves year-round"
+      
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Each leaf is a single piece, not divided into leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves grow alternately along branches, not opposite or whorled"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Bark peels in thin sheets or curls to reveal smooth surface underneath"
+      
+      - feature_id: "BARK-COLOR-03"  # Reddish bark
+        notes: "Fresh bark is reddish-orange to cinnamon-colored"
+      
+      - feature_id: "SENSORY-TOUCH-01"  # Smooth/cool bark
+        notes: "Bark feels unusually smooth and cool to the touch, like plastic"
+      
+      - feature_id: "FRUIT-TYPE-03"  # Berries present
+        notes: "Produces round berries that turn orange to red when ripe"
+      
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Often grows with a single main trunk, especially in forest settings"
+        exceptions: "May develop multiple trunks after damage or in certain growing conditions"
+      
+      - feature_id: "LEAF-COLOR-01"  # Dark green
+        notes: "Leaves are typically dark green and glossy"
+        exceptions: "New growth may be lighter; undersides sometimes lighter or silvery"
+      
+      - feature_id: "FLOWER-COLOR-01"  # White flowers
+        notes: "Flowers are typically white to cream-colored"
+        exceptions: "May have pinkish tints, especially as they age"
+      
+    sometimes_true:
+      - feature_id: "LEAF-EDGE-01"  # Smooth leaf edge
+        conditions: "Pacific Madrone"
+        notes: "Pacific Madrone has smooth or very slightly wavy leaf edges"
+      
+      - feature_id: "LEAF-EDGE-02"  # Serrated edge
+        conditions: "Strawberry Tree"
+        notes: "Strawberry Tree has toothed leaf edges"
+      
+      - feature_id: "TREE-SIZE-03"  # Large tree
+        conditions: "Pacific Madrone in good conditions"
+        notes: "Pacific Madrone can grow quite large (50-100 feet)"
+      
+      - feature_id: "TREE-SIZE-01"  # Small tree
+        conditions: "Strawberry Tree"
+        notes: "Strawberry Tree remains relatively small (15-30 feet)"
+      
+      - feature_id: "FLOWER-TIME-01"  # Spring flowering
+        conditions: "Pacific Madrone"
+        notes: "Pacific Madrone typically flowers in spring"
+      
+      - feature_id: "FLOWER-TIME-03"  # Fall flowering
+        conditions: "Strawberry Tree"
+        notes: "Strawberry Tree typically flowers in fall through early winter"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        conditions: "Pacific Madrone"
+        notes: "Pacific Madrone is native to California forests and woodlands"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Introduced species
+        conditions: "Strawberry Tree"
+        notes: "Strawberry Tree is native to Mediterranean regions, introduced to California"
+      
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Madrones are never deciduous, always evergreen"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Produce berries, never cones"
+      
+      - feature_id: "TWIG-FEAT-01"  # Thorns present
+        notes: "Never have thorns or spines"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Smooth, peeling reddish-orange bark that feels cool like plastic when you touch it"
+    memorable_comparison: "The tree looks like it's peeling from a sunburn, showing bright orange-red skin underneath"
+    touch_tip: "Feel the bark - it's unusually smooth and cool, like touching plastic instead of normal tree bark"
+    smell_tip: "The leaves have a faint earthy scent if you gently crush them, but not a strong smell"
+    fun_fact: "Madrone bark peels off in curly strips that Native Americans sometimes used as emergency bandages! And the wood is so hard that early settlers called the tree 'ironwood' because it would quickly dull their saw blades."
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "Look at the tree's bark. Is it peeling to show smooth red-orange or cinnamon patches underneath?"
+        yes_next: 2
+        no_next: "Not a madrone - try checking for manzanita which is smaller but similar"
+      - step: 2
+        instruction: "Touch the bark (where you can reach it safely). Does it feel unusually smooth and cool compared to other trees?"
+        yes_next: 3
+        no_next: "Probably not a madrone - other trees with peeling bark usually feel papery, not smooth and cool"
+      - step: 3
+        instruction: "Check the leaves. Are they thick, leathery, and glossy dark green?"
+        yes_next: "You've found a madrone! If it's a big tree with smooth-edged leaves, it's Pacific Madrone. If it's smaller with toothed leaves and strawberry-like fruits, it's a Strawberry Tree."
+        no_next: "Look again at the bark and leaves - madrones have distinctive peeling bark and thick evergreen leaves"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Pacific Madrone: clusters of small white bell-shaped flowers; Strawberry Tree: new leaf growth but usually no flowers"
+      reproductive_activity: "Pacific Madrone: flowering and pollination; Strawberry Tree: previous year's fruits may still be present"
+      identification_tips: "White flower clusters on Pacific Madrone are distinctive; both species show peeling bark"
+      kid_friendly_tip: "In spring, Pacific Madrone has bunches of little white flowers that look like tiny bells hanging upside-down"
+    
+    - season: "Summer" 
+      visual_changes: "Both species: bark peeling more visible in hot weather; green berries developing on Pacific Madrone"
+      reproductive_activity: "Pacific Madrone: green berries developing; Strawberry Tree: developing flower buds"
+      identification_tips: "Fresh peeling bark is most visible; smooth feel of bark is distinctive"
+      kid_friendly_tip: "Summer is when the trees 'peel their sunburn' showing bright red-orange skin underneath"
+    
+    - season: "Fall"
+      visual_changes: "Pacific Madrone: berries ripen to bright orange-red; Strawberry Tree: white flowers appear and fruits from previous year turn red"
+      reproductive_activity: "Pacific Madrone: berries fully ripen; Strawberry Tree: main flowering period and fruit ripening"
+      identification_tips: "Red berries on Pacific Madrone; flowers and fruits simultaneously on Strawberry Tree"
+      kid_friendly_tip: "Pacific Madrone has bright red berries in fall, while Strawberry Tree has both white flowers AND red fruits at the same time!"
+    
+    - season: "Winter"
+      visual_changes: "Both remain evergreen; some berries may persist; Strawberry Tree may still have some flowers"
+      reproductive_activity: "Both mostly dormant; Strawberry Tree may continue flowering in mild winters"
+      identification_tips: "Evergreen nature stands out when deciduous trees are bare; berries may persist"
+      kid_friendly_tip: "When other trees lose their leaves in winter, madrones stay green and may still have some colorful berries"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Smooth, peeling red-orange to cinnamon bark"
+      reliability: "Very high"
+      visibility: "Easy - visible from moderate distance"
+    - feature: "Cool, smooth feel of bark"
+      reliability: "Very high"
+      visibility: "Requires touching the tree"
+    - feature: "Leathery, evergreen leaves"
+      reliability: "High"
+      visibility: "Easy - visible during all seasons"
+    - feature: "White flowers and/or orange-red berries (seasonal)"
+      reliability: "High (when present)"
+      visibility: "Medium - need to check branches"
+    
+  look_alikes:
+    - name: "Manzanita (Arctostaphylos species)"
+      type: "genus"
+      differences: "Manzanitas are typically shrubs or small trees (rarely exceeding 20 feet); have smaller leaves; more crooked branching pattern"
+      identification_tip: "If it's a small shrub with very twisty red branches, it's probably a manzanita, not a madrone"
+    
+    - name: "Toyon (Heteromeles arbutifolia)"
+      type: "species"
+      differences: "Toyon has rough bark that doesn't peel (not smooth); typically smaller; red berries in clusters similar to madrone"
+      identification_tip: "If the bark is rough instead of smooth and peeling, it's likely toyon, not madrone"
+    
+    - name: "Chinese Photinia (Photinia serratifolia)"
+      type: "species"
+      differences: "Photinia has similar leaves but lacks the peeling bark; bark is grayish-brown, not reddish"
+      identification_tip: "If the bark doesn't peel and isn't reddish, but the leaves look similar, it might be a photinia"
+    
+  cultural_ecological_notes:
+    - "Pacific Madrone is a key component of mixed evergreen forests in California"
+    - "Both species provide important winter food for birds with their persistent berries"
+    - "Pacific Madrone is fire-adapted and can resprout from the root crown after fires"
+    - "Flowers provide nectar for bees, butterflies, and hummingbirds"
+    - "Hard, close-grained wood was historically used for tool handles and furniture"
+    
+  range_within_california:
+    - "Pacific Madrone is native along the coastal ranges from northern to central California and in Sierra foothills"
+    - "Strawberry Tree is widely planted throughout California in gardens, parks, and as street trees"
+    - "Pacific Madrone prefers well-drained slopes in mixed woodlands"
+    - "Strawberry Tree adapts well to various California climates and is drought-tolerant once established"
+    - "Both species prefer areas with good drainage and don't do well in poorly drained soils"
+    
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: BARK-TEXT-03"  # Peeling bark
+      - "feature_id: BARK-COLOR-03"  # Reddish bark
+    confirmation_features:
+      - "feature_id: SENSORY-TOUCH-01"  # Smooth/cool bark
+      - "feature_id: FRUIT-TYPE-03"  # Berries present
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-02", "LEAF-TYPE-02"]  # Rounded crown, evergreen
+      - distance: "from_nearby"
+        features_to_check: ["BARK-COLOR-03", "BARK-TEXT-03"]  # Reddish bark, peeling bark
+      - distance: "close_inspection"
+        features_to_check: ["SENSORY-TOUCH-01", "LEAF-COMPLEX-01"]  # Smooth/cool bark, simple leaves
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "BARK-TEXT-03", "FLOWER-TIME-01"]
+        notes: "Pacific Madrone flowers; both show peeling bark and evergreen leaves"
+      summer:
+        reliability: "Very high"
+        key_features: ["LEAF-TYPE-02", "BARK-TEXT-03", "BARK-COLOR-03"]
+        notes: "Fresh peeling bark most visible in summer heat"
+      fall:
+        reliability: "Very high" 
+        key_features: ["LEAF-TYPE-02", "FRUIT-TYPE-03", "FLOWER-TIME-03"]
+        notes: "Berries on Pacific Madrone; Strawberry Tree has both flowers and berries"
+      winter:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "BARK-TEXT-03", "BARK-COLOR-03"]
+        notes: "Evergreen nature stands out when deciduous trees are bare"
+
+  wildlife_value:
+    - "Berries provide important food for birds including American robins, varied thrushes, and band-tailed pigeons"
+    - "Flowers provide nectar for hummingbirds, bees, and butterflies"
+    - "Dense evergreen foliage offers year-round shelter for birds"
+    - "Older trees often develop hollows that provide homes for cavity-nesting birds and small mammals"
+    - "Fallen madrone leaves create habitat for insects and enrich the soil as they decompose"

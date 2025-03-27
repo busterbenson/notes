@@ -210,18 +210,18 @@ What catches my eye about this tree?
 
 ## Decision Tree Structure
 ```
-All California Trees (124 trees)
+California Trees (135 individual species + 13 genus groupings)
 │
-├── Trees with Striking Bark (35 trees)
+├── Trees with Striking Bark (35 individual species)
 │   │
-│   ├── White or Cream-Colored Bark (10 trees)
+│   ├── White or Cream-Colored Bark (10 species)
 │   │   ├── Paper Birch (peeling white paper-like bark)
 │   │   ├── Quaking Aspen (smooth white bark with black marks)
 │   │   ├── Sycamore Group (patchy white/cream bark): California Sycamore, London Plane Tree
 │   │   ├── White Poplar (white bark with diamond-shaped marks)
 │   │   └── White Alder (light gray to whitish smooth bark)
 │   │
-│   ├── Red or Orange Bark (8 trees)
+│   ├── Red or Orange Bark (8 species)
 │   │   ├── Pacific Madrone (smooth, peeling reddish-orange bark)
 │   │   ├── Strawberry Tree (peeling red-brown bark)
 │   │   ├── River Birch (peeling salmon-pink to reddish-brown bark)
@@ -230,7 +230,7 @@ All California Trees (124 trees)
 │   │   ├── Jeffrey Pine (similar to Ponderosa but with vanilla scent)
 │   │   └── Water Birch (shiny reddish-brown bark)
 │   │
-│   ├── Peeling or Flaking Bark (12 trees)
+│   ├── Peeling or Flaking Bark (12 species)
 │   │   ├── Paper Birch (peeling white paper-like bark)
 │   │   ├── Pacific Madrone (smooth, peeling reddish-orange bark)
 │   │   ├── River Birch (peeling salmon-pink to reddish-brown bark)
@@ -242,14 +242,14 @@ All California Trees (124 trees)
 │   │   ├── Western Redcedar (stringy, peeling bark)
 │   │   └── Coast Redwood (thick, fibrous, peeling bark)
 │   │
-│   ├── Puzzle-Piece or Patterned Bark (5 trees)
+│   ├── Puzzle-Piece or Patterned Bark (5 species)
 │   │   ├── Ponderosa Pine (puzzle-like plates with reddish-orange cracks)
 │   │   ├── Jeffrey Pine (similar to Ponderosa but with vanilla scent)
 │   │   ├── Alligator Juniper (distinctive checkered pattern)
 │   │   ├── Persimmon (distinctive blocky pattern like small squares)
 │   │   └── White Oak (light-colored bark with rectangular scales)
 │   │
-│   ├── Deeply Furrowed Bark (10 trees)
+│   ├── Deeply Furrowed Bark (10 species)
 │   │   ├── Valley Oak (deeply furrowed gray-brown bark)
 │   │   ├── Black Locust (deeply furrowed, rope-like bark)
 │   │   ├── Walnut Group (dark, deeply fissured bark)
@@ -261,65 +261,67 @@ All California Trees (124 trees)
 │   │   ├── Coast Live Oak (dark, furrowed bark)
 │   │   └── Black Oak (dark, deeply furrowed bark)
 │   │
-│   └── Unusual Color or Texture Bark (5 trees)
+│   └── Unusual Color or Texture Bark (5 species)
 │       ├── Palo Verde (smooth green bark that photosynthesizes)
 │       ├── American Beech (smooth, silver-gray bark)
 │       ├── Manzanita Group (smooth, burgundy-colored bark)
 │       ├── Crape Myrtle (smooth, mottled multi-colored bark)
 │       └── Madrone Group (smooth, cool-to-touch bark)
 │
-├── Trees with Distinctive Leaf or Needle Features (40 trees)
+├── Trees with Distinctive Leaf or Needle Features (32 individual species + 8 genus groupings)
 │   │
-│   ├── Star-Shaped or Lobed Leaves (17 trees)
-│   │   ├── Maple Group (various maple species with different sizes/shapes of lobed leaves)
+│   ├── Star-Shaped or Lobed Leaves (12 species + 5 genus groupings)
+│   │   ├── Individual Maple Species (Bigleaf Maple, Japanese Maple, and others)
+│   │   ├── Maple Genus (represents various maple species with different sizes/shapes of lobed leaves)
 │   │   ├── Sweet Gum (star-shaped with pointed lobes)
-│   │   ├── Sycamore Group (large, maple-like leaves)
-│   │   ├── White Oak Group (leaves with rounded lobes)
-│   │   └── Black Oak Group (leaves with pointed, bristle-tipped lobes)
+│   │   ├── Sycamore Genus (large, maple-like leaves)
+│   │   ├── White Oak Genus (leaves with rounded lobes)
+│   │   └── Black Oak Genus (leaves with pointed, bristle-tipped lobes)
 │   │
-│   ├── Round or Heart-Shaped Leaves (9 trees)
+│   ├── Round or Heart-Shaped Leaves (6 species + 3 genus groupings)
 │   │   ├── Silver Dollar Gum (round, silver-blue leaves resembling coins)
-│   │   ├── Redbud Group (heart-shaped leaves)
-│   │   ├── Aspen Group (round leaves that quiver)
+│   │   ├── Redbud Genus (heart-shaped leaves)
+│   │   ├── Aspen Genus (round leaves that quiver)
 │   │   ├── Catalpa (very large heart-shaped leaves)
-│   │   └── Birch Group (somewhat triangular to oval leaves)
+│   │   └── Birch Genus (somewhat triangular to oval leaves)
 │   │
-│   ├── Compound Leaves (Many Leaflets) (10 trees)
-│   │   ├── Walnut Group (pinnate compound leaves with many leaflets)
-│   │   ├── Ash Group (opposite pinnate compound leaves)
-│   │   ├── Locust Group (pinnate compound leaves, sometimes with thorns)
+│   ├── Compound Leaves (Many Leaflets) (8 species + 3 genus groupings)
+│   │   ├── Walnut Genus (pinnate compound leaves with many leaflets)
+│   │   ├── Ash Genus (opposite pinnate compound leaves)
+│   │   ├── Locust Genus (pinnate compound leaves, sometimes with thorns)
+│   │   ├── Acacia Genus (feathery, finely divided compound leaves)
 │   │   ├── California Buckeye (palmate compound leaves like a hand)
 │   │   └── Mimosa/Silk Tree (feathery, twice-compound leaves)
 │   │
-│   ├── Colorful Leaves (4 trees)
+│   ├── Colorful Leaves (4 species)
 │   │   ├── Silver Dollar Gum (round silver-blue leaves like coins)
 │   │   ├── Blue Gum Eucalyptus (blue-gray juvenile leaves)
 │   │   ├── Purple Leaf Plum (deep purple-red leaves)
 │   │   └── Japanese Maple (red or purple varieties)
 │   │
-│   ├── Long or Distinctive Needles (12 trees)
+│   ├── Long or Distinctive Needles (10 species + 2 genus groupings)
 │   │   ├── Super-Long Needle Pines: Gray Pine (10-12"), Coulter Pine, Jeffrey Pine
 │   │   ├── Bundle-Needle Pines: Sugar Pine (5 needles), Ponderosa (3 needles)
-│   │   ├── Soft-Needle Trees: White Fir, Red Fir
-│   │   └── Blue/Silver Needle Trees: Colorado Blue Spruce, Engelmann Spruce
+│   │   ├── Fir Species: White Fir, Red Fir
+│   │   └── Spruce Genus: Colorado Blue Spruce, Engelmann Spruce
 │   │
-│   ├── Fan-Like Scale Arrangements (8 trees)
+│   ├── Fan-Like Scale Arrangements (6 species + 1 genus grouping)
 │   │   ├── Western Redcedar (flat sprays with butterfly pattern)
 │   │   ├── Incense-cedar (flattened sprays with strong smell)
 │   │   ├── Giant Sequoia (awl-shaped scales forming rope-like branchlets)
 │   │   ├── Coast Redwood (flat sprays with two white lines beneath)
-│   │   └── Cypress Group (tightly packed scales forming rounded branchlets)
+│   │   └── Cypress Genus (tightly packed scales forming rounded branchlets)
 │   │
-│   └── Special Leaf Forms (5 trees)
+│   └── Special Leaf Forms (5 species)
 │       ├── Ginkgo (fan-shaped leaves with split ends)
 │       ├── Joshua Tree (dagger-like leaves in rosettes)
 │       ├── California Fan Palm (large fan-shaped fronds)
 │       ├── Pacific Yew (flat needles in two rows)
 │       └── Dawn Redwood (deciduous conifer with feathery needles)
 │
-├── Trees with Distinctive Cones, Flowers, or Fruits (30 trees)
+├── Trees with Distinctive Cones, Flowers, or Fruits (20 individual species + 10 genus groupings)
 │   │
-│   ├── Giant or Unusual Cones (8 trees)
+│   ├── Giant or Unusual Cones (8 species)
 │   │   ├── Sugar Pine (extremely long cones, 10-20 inches)
 │   │   ├── Coulter Pine (massive, heavy, spiny cones)
 │   │   ├── Giant Sequoia (small egg-shaped cones)
@@ -328,65 +330,71 @@ All California Trees (124 trees)
 │   │   ├── Lodgepole Pine (cones often remain closed for years)
 │   │   └── Bishop Pine (prickly cones often clustered on trunk)
 │   │
-│   ├── Showy Flower Trees (12 trees)
+│   ├── Showy Flower Trees (9 species + 3 genus groupings)
 │   │   ├── White Flowering Trees: Dogwood, Magnolia, Pear
-│   │   ├── Pink/Red Flowering Trees: Redbud, Cherry, Crabapple
+│   │   ├── Pink/Red Flowering Trees: Redbud Genus, Cherry, Crabapple
 │   │   ├── Purple/Blue Flowering Trees: Jacaranda, Desert Willow
-│   │   └── Yellow Flowering Trees: Palo Verde, Golden Chain Tree
+│   │   └── Yellow Flowering Trees: Palo Verde, Acacia Genus, Golden Chain Tree
 │   │
-│   ├── Trees with Distinctive Fruits (10 trees)
-│   │   ├── Oak Group (acorns)
-│   │   ├── Maple Group (winged "helicopter" seeds)
+│   ├── Trees with Distinctive Fruits (6 species + 4 genus groupings)
+│   │   ├── Oak Genus (acorns)
+│   │   ├── Maple Genus (winged "helicopter" seeds)
 │   │   ├── Sweet Gum (spiky ball fruits)
 │   │   ├── California Buckeye (large pear-shaped fruits)
-│   │   ├── Walnut Group (round nuts in green husks)
+│   │   ├── Walnut Genus (round nuts in green husks)
 │   │   ├── Strawberry Tree (round red fruits resembling strawberries)
-│   │   ├── Madrone (bright red berries)
+│   │   ├── Madrone Genus (bright red berries)
 │   │   └── Pacific Yew (red berry-like arils)
 │   │
-│   └── Cone Position or Arrangement (7 trees)
-│       ├── Upright-Cone Trees: Fir Group, Cedar Group
-│       ├── Hanging-Cone Trees: Spruce Group, Hemlock Group, Pine Group
-│       └── Persistent-Cone Trees: Cypress, Some Pines
+│   └── Cone Position or Arrangement (3 species + 4 genus groupings)
+│       ├── Upright-Cone Trees: Fir Genus, Cedar Genus
+│       ├── Hanging-Cone Trees: Spruce Genus, Hemlock Group, Pine Group
+│       └── Persistent-Cone Trees: Cypress Genus, Some Pines
 │
-├── Trees with Distinctive Scents (10 trees)
+├── Trees with Distinctive Scents (6 individual species + 4 genus groupings)
 │   │
-│   ├── Pine-Scented or Resinous Trees (5 trees)
+│   ├── Pine-Scented or Resinous Trees (3 species + 2 genus groupings)
 │   │   ├── Ponderosa Pine (turpentine scent)
 │   │   ├── Jeffrey Pine (distinctive vanilla/pineapple scent)
 │   │   ├── Incense-cedar (spicy, woodsy scent)
-│   │   └── True Cedar Group (aromatic wood and needles)
+│   │   └── Cedar Genus (aromatic wood and needles)
 │   │
-│   └── Other Distinctive Scents (5 trees)
+│   └── Other Distinctive Scents (3 species + 2 genus groupings)
 │       ├── California Laurel (bay-like smell when crushed)
-│       ├── Walnut Group (spicy aroma when crushed)
+│       ├── Walnut Genus (spicy aroma when crushed)
 │       ├── Sweet Gum (aromatic when crushed)
 │       ├── Eucalyptus Group (strong medicinal smell - see Mint-Scented Trees for details)
 │       └── Camphor Tree (camphor smell when leaves crushed)
 │
-└── Trees with Distinctive Growth Forms (17 trees)
+└── Trees with Distinctive Growth Forms (18 individual species + 3 genus groupings)
     │
-    ├── Christmas-Tree Form (Conical) (6 trees)
+    ├── Christmas-Tree Form (Conical) (5 species + 1 genus grouping)
     │   ├── Colorado Blue Spruce (perfect conical form with blue color)
     │   ├── Norway Spruce (classic Christmas tree shape with drooping branchlets)
     │   ├── Douglas-fir (conical form with soft needles)
     │   ├── Noble Fir (symmetrical with bluish needles and upright cones)
     │   └── Grand Fir (symmetrical with fragrant needles)
+    │    
+    ├── Desert-Adapted Trees (4 species)
+    │   ├── Joshua Tree (bizarre branching with rosettes of spiky leaves)
+    │   ├── Palo Verde (green-barked tree with minimal leaves)
+    │   ├── Mesquite (twisted form with feathery leaves and bean pods)
+    │   └── California Fan Palm (tall trunk with fan-shaped frond crown)
     │
-    ├── Columnar or Tall Form (5 trees)
+    ├── Columnar or Tall Form (5 species)
     │   ├── Italian Cypress (extremely narrow, columnar form)
     │   ├── Lombardy Poplar (narrow, columnar form)
     │   ├── Giant Sequoia (massive straight trunk with tapered crown)
     │   ├── Coast Redwood (extremely tall with narrow crown)
     │   └── Port Orford Cedar (narrowly conical form)
     │
-    ├── Weeping Form (4 trees)
+    ├── Weeping Form (4 species)
     │   ├── Weeping Willow (long, sweeping branches)
     │   ├── Weeping Cherry (ornamental with drooping branches)
     │   ├── Weeping Birch (pendulous branches)
     │   └── Weeping Giant Sequoia (rare form with drooping branchlets)
     │
-    └── Distinctive Silhouettes (8 trees)
+    └── Distinctive Silhouettes (7 species + 1 genus grouping)
         ├── Valley Oak (massive spreading crown with gnarled branches)
         ├── California Sycamore (broad, irregular crown with mottled bark)
         ├── Joshua Tree (uniquely branched desert tree)
@@ -394,7 +402,7 @@ All California Trees (124 trees)
         ├── Western Juniper (twisted, gnarly form in harsh environments)
         ├── Bristlecone Pine (ancient, twisted, weathered form)
         ├── California Fan Palm (tall trunk with fan-shaped crown)
-        └── Live Oak Group (broad, rounded evergreen crowns)
+        └── Live Oak Genus (broad, rounded evergreen crowns)
 ```
 
 ## Introduction
@@ -649,6 +657,18 @@ These Detective Paths ensure that EVERY California tree can be identified, even 
   - *Often smaller, ornamental trees with graceful form*
   - *Context: Gardens and landscaped areas*
 
+- **Olive** (Olea europaea)
+  - *Narrow, silvery-gray leaves with lighter undersides*
+  - *Leaves stay on the tree year-round*
+  - *Leaves look almost metallic in the breeze*
+  - *Context: Mediterranean climate areas, landscapes, olive farms*
+
+- **Ginkgo** (Ginkgo biloba)
+  - *Fan-shaped leaves with distinctive vein pattern*
+  - *Bright golden-yellow fall color*
+  - *No other tree has leaves remotely similar to this shape*
+  - *Context: Planted as street trees and in parks*
+
 ### Long or Distinctive Needles
 *These conifers have especially noteworthy needles*
 
@@ -759,6 +779,13 @@ These Detective Paths ensure that EVERY California tree can be identified, even 
 ### Showy Flower Trees
 *These trees have spectacular flowering displays*
 
+- **Southern Magnolia** (Magnolia grandiflora)
+  - *Enormous fragrant white flowers (8-12 inches across)*
+  - *Flowers like giant white cups with waxy petals*
+  - *Large, glossy dark green leaves with rusty-brown undersides*
+  - *Blooms stand out dramatically against the dark foliage*
+  - *Context: Planted in yards, parks and streets throughout California*
+
 - **Pacific Dogwood** (Cornus nuttallii)
   - *Large white "flowers" (actually modified leaves called bracts)*
   - *Flowers appear before or with leaves in spring*
@@ -772,15 +799,29 @@ These Detective Paths ensure that EVERY California tree can be identified, even 
   - *Context: Foothill woodlands*
 
 - **Jacaranda** (Jacaranda mimosifolia)
-  - *Spectacular purple-blue trumpet flowers*
-  - *Massive display covering the entire tree*
-  - *Fern-like, feathery leaves*
-  - *Context: Southern California urban areas*
+  - *Spectacular purple-blue trumpet flowers covering the entire tree*
+  - *Fern-like, feathery compound leaves (like delicate lace)*
+  - *Dramatic purple flower carpet forms under tree during bloom*
+  - *Distinctive flat, round seed pods*
+  - *Context: Southern California streets and parks*
 
 - **Palo Verde** (Parkinsonia species)
   - *Bright yellow flowers covering the entire tree*
   - *Flowers stand out against green bark*
   - *Context: Desert regions*
+
+- **Acacia** (Acacia species)
+  - *Bright yellow puffball-like flower clusters covering the tree*
+  - *Flowers form fuzzy spheres arranged along branches*
+  - *Feathery, finely divided compound leaves*
+  - *Blooms often appear in winter or early spring*
+  - *Context: Common in California coastal landscapes, especially the Bay Area*
+
+- **Crape Myrtle** (Lagerstroemia indica)
+  - *Clusters of crinkled, paper-like flowers in pink, red, purple, or white*
+  - *Long-lasting summer blooms (several months)*
+  - *Smooth, peeling multi-colored bark*
+  - *Context: Common in warmer parts of California*
 
 ### Trees with Distinctive Fruits
 *These trees have easily recognizable fruits or seeds*

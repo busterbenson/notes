@@ -1,0 +1,295 @@
+genus:
+  common_name: "Hemlock"
+  scientific_name: "Tsuga spp."
+  taxonomic_level: "genus"
+  family: "Pinaceae"
+  
+  # Basic summary
+  summary: "Graceful evergreen trees with short, flat needles and a distinctive drooping leader (top). Hemlocks have delicate, feathery foliage, small oval cones that hang down, and a lacy appearance. They prefer cool, moist forests and are often found in shady locations."
+  
+  # Key species in this genus
+  included_species:
+    - name: "Western Hemlock"
+      scientific_name: "Tsuga heterophylla"
+      distinguishing_features: "Needles arranged in flat, horizontal sprays; drooping leader; grows at lower elevations"
+      california_context: "Native to northwestern California in coastal forests and fog belts"
+    
+    - name: "Mountain Hemlock"
+      scientific_name: "Tsuga mertensiana"
+      distinguishing_features: "Needles growing all around the twig (not flat); bluish-green color; higher elevation species"
+      california_context: "Native to high-elevation forests in northern California mountains"
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Drooping, flexible top (leader); short, flat needles; delicate, graceful appearance with foliage hanging in feathery sprays"
+    secondary_markers: "Small oval cones that hang down; thin bark that becomes furrowed with age; often growing in shady, moist locations"
+    seasonal_markers: "Minimal seasonal change as evergreen; bright green new growth at branch tips in spring"
+    similar_species_differentiation: "Unlike firs, has hanging (not upright) cones and a drooping leader; unlike spruces, has flat (not square) needles and smaller cones; unlike Douglas-fir, has shorter needles and smaller cones without distinctive bracts"
+  
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles year-round"
+        
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Needles attach singly to the twig, not in bundles"
+      
+      - feature_id: "TREE-FORM-03"  # Weeping form
+        notes: "Leader (top of tree) and often branch tips droop downward"
+      
+      - feature_id: "CONE-POS-02"  # Hanging cones
+        notes: "Cones hang down from branches, never stand upright"
+      
+      - feature_id: "CONE-SIZE-01"  # Small cones
+        notes: "Cones are small, usually under 1 inch long"
+      
+      - feature_id: "NEEDLE-SIZE-01"  # Short needles
+        notes: "Needles are short, typically 1/4 to 3/4 inch long"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with a single main trunk"
+        exceptions: "May develop multiple trunks if damaged"
+      
+      - feature_id: "NEEDLE-SHAPE-01"  # Flat needles
+        notes: "Needles are typically flat, not square in cross-section"
+        exceptions: "Mountain Hemlock has more rounded needles than Western Hemlock"
+      
+      - feature_id: "ECO-ADAPT-02"  # Shade tolerant
+        notes: "Highly shade-tolerant, often growing in the understory"
+        exceptions: "Mountain Hemlock tends to grow in more open, subalpine conditions"
+    
+    sometimes_true:
+      - feature_id: "NEEDLE-ARRANGE-08"  # Flattened spray needles
+        conditions: "Western Hemlock"
+        notes: "Needles arranged in flat, feathery sprays on Western Hemlock"
+      
+      - feature_id: "NEEDLE-ARRANGE-03"  # Needles all around twig
+        conditions: "Mountain Hemlock"
+        notes: "Mountain Hemlock has needles growing all around the twig rather than in flat sprays"
+      
+      - feature_id: "NEEDLE-COLOR-03"  # Blue-green needles
+        conditions: "Mountain Hemlock"
+        notes: "Mountain Hemlock has distinctly bluish-green foliage"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        conditions: "Western Hemlock in favorable conditions"
+        notes: "Western Hemlock can grow very tall (over 150 feet) in good conditions"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        conditions: "Mountain Hemlock or Western Hemlock in less favorable conditions"
+        notes: "Mountain Hemlock typically reaches medium height (40-100 feet)"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all needles seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in bundles
+        notes: "Needles attach singly, never in bundles or clusters"
+      
+      - feature_id: "CONE-POS-01"  # Upright cones
+        notes: "Cones always hang down, never stand upright"
+      
+      - feature_id: "CONE-SIZE-03"  # Large cones
+        notes: "Cones are always small, never large like those of many pines or firs"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A tree with a droopy top and soft, short needles arranged like feathers"
+    memorable_comparison: "Looks like a Christmas tree that's taking a bow, with branches like delicate green feather dusters"
+    touch_tip: "Gently feel the needles - they're soft and flat, arranged like tiny fern leaves"
+    smell_tip: "Crush a needle gently to smell a fresh forest scent that's not very strong"
+    fun_fact: "Hemlocks are forest superheroes! Unlike most big trees that need lots of sun, Western Hemlock can grow up in the dark shadows underneath other trees. And they have a funny habit - they often grow on top of fallen logs or stumps, so as the old log rots away, the hemlock tree is left standing on stilts made of its own roots!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the top of the tree. Does it droop downward instead of pointing straight up?"
+        yes_next: 2
+        no_next: "Not a hemlock - if the top points straight up, check fir or spruce"
+      - step: 2
+        instruction: "Look at the needles. Are they short (shorter than your pinky finger) and soft?"
+        yes_next: 3
+        no_next: "If the needles are long or stiff and sharp, check other conifers like pine or spruce"
+      - step: 3
+        instruction: "For Western Hemlock: Do the needles form flat sprays like fern fronds? For Mountain Hemlock: Do the needles stick out all around the twig and look bluish-green?"
+        yes_next: 4
+        no_next: "If neither description matches, it might be another conifer"
+      - step: 4
+        instruction: "Check the cones if you can see them. Are they very small (about the size of a grape) and hanging down?"
+        yes_next: "You found a hemlock tree!"
+        no_next: "If the cones are large or pointing upward, it's probably another type of tree"
+  
+  # Seasonal timeline
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Bright green new growth appears at branch tips"
+      reproductive_activity: "Tiny pollen cones release yellow pollen; female cones begin forming"
+      identification_tips: "Look for contrast between new bright growth and older dark green needles"
+      kid_friendly_tip: "In spring, look for bright green tips at the ends of branches, like tiny green paintbrushes"
+    
+    - season: "Summer" 
+      visual_changes: "New needles mature to match older foliage; developing cones visible"
+      reproductive_activity: "Small seed cones grow and begin to mature"
+      identification_tips: "Small green to purple-brown developing cones may be visible"
+      kid_friendly_tip: "By summer, tiny cones about the size of grapes start to form and hang down from branches"
+    
+    - season: "Fall"
+      visual_changes: "Little visible change in foliage; cones mature to brown"
+      reproductive_activity: "Cones open to release seeds with small wings"
+      identification_tips: "Brown mature cones may be visible before dropping seeds"
+      kid_friendly_tip: "In fall, the small brown cones open up to let their seeds fly away with tiny wings"
+    
+    - season: "Winter"
+      visual_changes: "No significant changes; remains evergreen"
+      reproductive_activity: "Dormant; some open cones may persist"
+      identification_tips: "Graceful drooping form and lacy appearance distinctive in winter"
+      kid_friendly_tip: "In winter, hemlocks stay green and keep their droopy tops when other trees lose their leaves"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Drooping leader (top of tree)"
+      reliability: "Very high"
+      visibility: "Easy - visible from a distance"
+    - feature: "Short, flat needles"
+      reliability: "Very high"
+      visibility: "Medium - need to look at branches up close"
+    - feature: "Small, hanging cones (when present)"
+      reliability: "High"
+      visibility: "Medium - need to look for them"
+    - feature: "For Western Hemlock: Needles in flat sprays"
+      reliability: "Very high"
+      visibility: "Easy to observe up close"
+    - feature: "For Mountain Hemlock: Needles all around twig, bluish color"
+      reliability: "Very high"
+      visibility: "Easy to observe up close"
+    
+  look_alikes:
+    - name: "Douglas-fir (Pseudotsuga menziesii)"
+      type: "species"
+      differences: "Douglas-fir has longer needles, distinctive cones with three-pronged bracts, and usually a straighter top"
+      identification_tip: "Hemlocks have much smaller cones without the 'mouse tail' bracts, and usually have a drooping top"
+    
+    - name: "Fir trees (Abies species)"
+      type: "genus"
+      differences: "Firs have upright cones that break apart on the tree; non-drooping leader; needles typically all the same length"
+      identification_tip: "If the cones stand upright and the top of the tree points straight up, it's probably a fir not a hemlock"
+    
+    - name: "Spruce trees (Picea species)"
+      type: "genus"
+      differences: "Spruces have square, sharp needles that stick out all around the twig; hanging cones that are typically larger"
+      identification_tip: "Try rolling a needle between your fingers - spruce needles are square and roll easily, while hemlock needles are flat"
+    
+  cultural_significance:
+    - culture: "Indigenous Peoples of the Pacific Northwest"
+      physical_uses:
+        - "Used the bark for making a reddish-brown dye for baskets and clothing"
+        - "Made tea from needles that's rich in vitamin C to treat colds"
+        - "Harvested the inner bark as emergency food when other foods were scarce"
+        - "Used branches for bedding in temporary shelters because they're soft"
+      symbolic_meaning:
+        - "The tree represented patience and adaptability because it can grow in deep shade"
+        - "Featured in stories about forest relationships and helping each other"
+        - "Symbolized finding strength in difficult situations, like growing in the shadows"
+    
+    - culture: "Early California Settlers"
+      physical_uses:
+        - "Used the bark as a source of tannin for treating leather"
+        - "Harvested the wood for making boxes, paper, and building houses"
+        - "Used branches for temporary bedding and shelter in the woods"
+      symbolic_meaning:
+        - "Recognized as a sign of rich, productive forestland"
+        - "Represented the abundant timber resources of the Pacific Northwest"
+    
+    - culture: "Modern Forestry"
+      physical_uses:
+        - "Harvested for lumber, pulp, and paper production"
+        - "Used for making musical instruments because of its resonant qualities"
+        - "Important for reforestation of shady areas where other trees won't grow"
+      symbolic_meaning:
+        - "Represents the concept of forest succession and natural regrowth"
+        - "Symbolizes adaptation to challenging conditions"
+        - "Used in studies of climate change impacts on forest ecosystems"
+    
+  cultural_ecological_notes:
+    - "Often grows on 'nurse logs' (fallen trees), creating distinctive stilted root systems"
+    - "Western Hemlock is a climax species that eventually replaces Douglas-fir and other conifers in forest succession"
+    - "Mountain Hemlock is an important component of high-elevation subalpine forests"
+    - "Contributes to biodiversity by creating shady, cool microclimates in forests"
+    - "Bark and needles are acidic, influencing soil chemistry beneath the tree"
+    - "Important for watershed protection in mountain and coastal forests"
+    
+  range_within_california:
+    - "Western Hemlock is found in northwestern California coastal forests, particularly in humid areas with fog"
+    - "Mountain Hemlock grows at high elevations (usually above 5,000 feet) in the Klamath and Cascade mountains"
+    - "Western Hemlock typically grows below 3,500 feet elevation in California"
+    - "Both species are more abundant in Oregon and Washington than in California"
+    - "Ranges are limited by need for cool, moist conditions"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "40-180 feet depending on species and conditions (Western Hemlock grows taller than Mountain Hemlock)"
+    growth_rate: "Moderate; Western Hemlock grows faster than Mountain Hemlock"
+    crown_spread: "20-35 feet wide at maturity"
+    lifespan: "400-800+ years"
+    trunk_diameter: "2-4 feet at maturity; occasionally larger for Western Hemlock"
+    root_system: "Shallow and spreading, often establishing on decomposing logs"
+    toxicity: "Not toxic, though the eastern Hemlock species (not in California) shouldn't be confused with poisonous hemlock plant"
+  
+  conservation_status:
+    status: "Populations generally stable in California"
+    threats: 
+      - "Climate change leading to warmer, drier conditions outside their moisture tolerance"
+      - "Mountain Hemlock vulnerable to reduced snowpack at high elevations"
+      - "Western Hemlock may face challenges with increasing drought and fire frequency"
+      - "Logging of old-growth forests"
+    protection_efforts:
+      - "Protected in numerous national and state forests and parks"
+      - "Old-growth forest conservation efforts benefit these species"
+      - "Research into climate adaptation strategies for forest management"
+      - "Monitoring for potential disease or insect outbreaks with changing climate"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: TREE-FORM-03"  # Weeping form
+      - "feature_id: NEEDLE-SIZE-01"  # Short needles
+    confirmation_features:
+      - "feature_id: CONE-POS-02"  # Hanging cones
+      - "feature_id: CONE-SIZE-01"  # Small cones
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-03", "LEAF-TYPE-02"]  # Weeping form, evergreen
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-SIZE-01", "NEEDLE-SHAPE-01"]  # Short needles, flat needles
+      - distance: "close_inspection"
+        features_to_check: ["CONE-SIZE-01", "CONE-POS-02"]  # Small cones, hanging cones
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["TREE-FORM-03", "NEEDLE-SIZE-01"]
+        notes: "New growth visible at branch tips"
+      summer:
+        reliability: "High" 
+        key_features: ["NEEDLE-SIZE-01", "CONE-SIZE-01"]
+        notes: "Developing cones may be visible"
+      fall:
+        reliability: "High"
+        key_features: ["TREE-FORM-03", "NEEDLE-SIZE-01"]
+        notes: "Mature cones may be present before winter"
+      winter:
+        reliability: "High"
+        key_features: ["TREE-FORM-03", "LEAF-TYPE-02"]
+        notes: "Distinctive form and evergreen nature visible year-round"
+    misidentification_risks: 
+      - "From a distance, might be mistaken for Douglas-fir without close inspection of needles and cones"
+      - "Mountain and Western Hemlock might be confused with each other where ranges overlap"
+      - "Young trees may resemble young firs before developing distinctive drooping leader"
+  
+  wildlife_value:
+    - "Seeds eaten by chickadees, nuthatches, crossbills, and many other birds"
+    - "Foliage provides food for grouse, deer, and elk"
+    - "Provides nesting habitat for numerous birds, including the endangered marbled murrelet"
+    - "Dense foliage creates protective cover for birds and small mammals"
+    - "Old trees develop cavities used by woodpeckers and other cavity-nesting wildlife"
+    - "Creates cool, shady forest floor habitat beneficial for amphibians"
+    - "Fallen logs and branches contribute to important forest floor ecosystem structure"

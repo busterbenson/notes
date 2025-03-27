@@ -1,0 +1,215 @@
+genus:
+  common_name: "Maple"
+  scientific_name: "Acer spp."
+  taxonomic_level: "genus"
+  family: "Sapindaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "Trees with distinctively star-shaped or lobed leaves, often with spectacular fall color. Produce winged, paired seeds ('helicopters') that spin when falling, and typically have opposite branching pattern."
+  
+  # Key species in this genus
+  included_species:
+    - name: "Bigleaf Maple"
+      scientific_name: "Acer macrophyllum"
+      distinguishing_features: "Very large leaves (8-12 inches across) with 5 deep, pointed lobes"
+      california_context: "Native to coastal forests and stream sides; largest maple in California"
+    
+    - name: "Vine Maple"
+      scientific_name: "Acer circinatum"
+      distinguishing_features: "Smaller leaves with 7-9 shallow lobes; often multi-trunked, shrubby form"
+      california_context: "Native to northern California, forest understory"
+    
+    - name: "Japanese Maple"
+      scientific_name: "Acer palmatum"
+      distinguishing_features: "Delicate leaves with 5-9 pointed lobes; often deep red or purple varieties"
+      california_context: "Common ornamental in gardens; many cultivated varieties with different colors"
+    
+    - name: "Red Maple" 
+      scientific_name: "Acer rubrum"
+      distinguishing_features: "3-5 lobed leaves; early spring red flowers; red fall color"
+      california_context: "Planted in parks and landscapes throughout the state"
+    
+    - name: "Silver Maple"
+      scientific_name: "Acer saccharinum" 
+      distinguishing_features: "Deeply cut leaves with silvery undersides that flash in the breeze"
+      california_context: "Planted as a landscape and street tree in urban areas"
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Star-shaped or lobed leaves with pointed tips; opposite branching pattern (branches grow directly across from each other); paired 'helicopter' seeds"
+    secondary_markers: "Distinctive fall colors in many species; smooth gray bark on young trees"
+    seasonal_markers: "Spring: often red/yellow flowers before leaves; Summer: full star-shaped leaves; Fall: brilliant colors; Winter: opposite branching and paired buds"
+    similar_species_differentiation: "Star-shaped leaves similar to Sweetgum but Maples have opposite branches (Sweetgum alternate); Oak leaves have more rounded lobes and alternate branching"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-EDGE-03"  # Lobed leaf edges
+        notes: "All maples have leaves with distinct lobes, creating a star-like shape"
+      
+      - feature_id: "BRANCH-ARRANGE-01"  # Opposite branching
+        notes: "Branches and twigs grow directly across from each other, not staggered"
+      
+      - feature_id: "FRUIT-TYPE-04"  # Winged seeds
+        notes: "Form paired, winged 'helicopter' seeds that spin when falling"
+      
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Most maples grow with a single main trunk"
+        exceptions: "Vine Maple often grows with multiple trunks; some Japanese Maples cultivated to be multi-trunked"
+      
+      - feature_id: "LEAF-FALL-01"  # Fall color
+        notes: "Most maples display brilliant fall colors in reds, oranges, or yellows"
+        exceptions: "Some species in mild climates may not develop strong fall color every year"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Younger trees have smooth gray bark"
+        exceptions: "Older trees develop furrowed or plated bark patterns"
+      
+    sometimes_true:
+      - feature_id: "LEAF-COLOR-05"  # Red/purple leaf color
+        conditions: "Japanese Maple (especially cultivated varieties), Red Maple, and some other ornamental varieties"
+        notes: "Some species and varieties have red or purple leaves for part or all of the growing season"
+      
+      - feature_id: "FLOWER-TIMING-01"  # Early spring flowering
+        conditions: "Red Maple and Silver Maple particularly known for this"
+        notes: "Some species flower prominently in early spring before leaves emerge"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        conditions: "Mature Paperbark Maple specifically"
+        notes: "Paperbark Maple has distinctive cinnamon-colored peeling bark"
+      
+    never_true:
+      - feature_id: "LEAF-ARRANGE-02"  # Alternate leaf arrangement
+        notes: "Maples always have opposite leaves and branches, never alternate"
+      
+      - feature_id: "FRUIT-TYPE-02"  # Acorns
+        notes: "Maples produce winged seeds, never acorns (which are produced by oaks)"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Leaves shaped like stars with pointed tips"
+    memorable_comparison: "The leaves look like a star with points, and their seeds spin down like helicopter propellers"
+    touch_tip: "Feel along a branch - notice how the twigs and leaves grow directly opposite each other (not zigzagging)"
+    smell_tip: "Most maples don't have a strong smell, but in fall the leaves might have a sweet, earthy scent"
+    fun_fact: "If you find maple seeds ('helicopters'), toss them in the air and watch them spin down like helicopter blades!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "Look at the shape of the leaves - do they have multiple pointed lobes that make them look like a star?"
+        yes_next: 2
+        no_next: "Probably not a maple - check for oak if the lobes are rounded"
+      - step: 2
+        instruction: "Check how the branches grow - do they grow directly across from each other (opposite), not alternating sides?"
+        yes_next: 3
+        no_next: "Not a maple - maybe Sweetgum if the leaves are star-shaped but branches alternate"
+      - step: 3
+        instruction: "Look for seeds that come in pairs with wings (like helicopters). If it's not seed season, the opposite branching and star-shaped leaves are enough to identify it as maple!"
+        yes_next: "You found a maple tree!"
+        no_next: "If it's spring or summer, the tree may not have seeds yet, but it's still likely a maple if it has opposite branches and star-shaped leaves"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Many maples flower before leaves emerge; new leaves unfold with bright, fresh colors"
+      reproductive_activity: "Small flowers appear, often in red or yellow clusters"
+      identification_tips: "Red Maple and Silver Maple have especially showy red flowers in early spring"
+      kid_friendly_tip: "In spring, some maples look like they're covered in tiny red or yellow flowers before the leaves come out"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of green star-shaped leaves (or red/purple in some varieties)"
+      reproductive_activity: "Winged seed pairs (samaras) develop and begin to mature"
+      identification_tips: "Easiest to identify by the star-shaped leaves and opposite branching"
+      kid_friendly_tip: "Look for the classic star-shaped leaves and check if the branches grow opposite each other"
+    
+    - season: "Fall"
+      visual_changes: "Many species turn brilliant colors - reds, oranges, yellows"
+      reproductive_activity: "Seed pairs fully mature and begin to drop, spinning as they fall"
+      identification_tips: "Fall color and spinning 'helicopter' seeds make identification easy"
+      kid_friendly_tip: "This is when maples put on their best show with colorful leaves; look for the spinning 'helicopter' seeds too!"
+    
+    - season: "Winter"
+      visual_changes: "Most maples lose their leaves, showing distinctive opposite branching pattern"
+      reproductive_activity: "Dormant; paired buds visible on branches"
+      identification_tips: "Identify by opposite branching and opposite paired buds"
+      kid_friendly_tip: "Even without leaves, you can spot maples by looking at how the branches and buds grow directly across from each other"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Star-shaped or lobed leaves"
+      reliability: "Very high"
+      visibility: "Easy to see from short distance"
+    - feature: "Opposite branching pattern"
+      reliability: "Very high"
+      visibility: "Need to look at branch arrangement"
+    - feature: "Paired, winged seeds ('helicopters')"
+      reliability: "Very high (when present)"
+      visibility: "Seasonal; easy to see when present"
+    
+  look_alike_species:
+    - species: "Sweetgum (Liquidambar styraciflua)"
+      differences: "Sweetgum has alternate branching (not opposite); leaves have more uniformly pointed lobes; fruits are spiky balls, not winged seeds"
+      identification_tip: "Check branch arrangement - if branches alternate rather than grow opposite, it's not a maple"
+    
+    - species: "Sycamore (Platanus species)"
+      differences: "Sycamore has alternate branching; leaves are broader with less pointed lobes; distinctive mottled bark; round, hanging seed balls"
+      identification_tip: "Sycamores have distinctive patchy bark that maples lack"
+    
+    - species: "Oak (Quercus species)"
+      differences: "Oaks have alternate branching; lobes on leaves are usually more rounded; produce acorns, not winged seeds"
+      identification_tip: "If you see acorns or the lobes are rounded rather than pointed, it's likely an oak"
+    
+  cultural_ecological_notes:
+    - "Many maple species provide important habitat and food for wildlife"
+    - "Maple trees have been tapped for their sweet sap for centuries, especially Sugar Maple in eastern North America"
+    - "Various maple species are important timber trees, valued for furniture and flooring"
+    - "Japanese Maple has been cultivated for centuries in Japan for ornamental gardens"
+    - "Maple trees provide excellent shade in urban settings"
+    
+  range_within_california:
+    - "Native maples (Bigleaf Maple, Vine Maple) occur naturally in northern and coastal forest regions"
+    - "Cultivated maples of many species are planted throughout California in parks, gardens, and as street trees"
+    - "Bigleaf Maple is often found along streams and in moist mixed forests"
+    - "Japanese Maple is common in gardens and landscaped areas but not naturalized"
+    - "Various maple species are adaptable to different California climates, from coastal to inland valley regions"
+    
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-EDGE-03"  # Lobed leaf edges
+      - "feature_id: BRANCH-ARRANGE-01"  # Opposite branching
+    confirmation_features:
+      - "feature_id: FRUIT-TYPE-04"  # Winged seeds
+      - "feature_id: LEAF-FALL-01"  # Fall color
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-EDGE-03", "LEAF-FALL-01"]  # Lobed leaves, fall color
+      - distance: "from_nearby"
+        features_to_check: ["BRANCH-ARRANGE-01", "LEAF-SHAPE-01"]  # Opposite branching, leaf shape
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-04", "BARK-TEXT-01"]  # Winged seeds, bark texture
+    seasonal_identification:
+      spring:
+        reliability: "Medium to high"
+        key_features: ["FLOWER-TIMING-01", "BRANCH-ARRANGE-01"]
+        notes: "Some species have showy spring flowers; new leaves unfold"
+      summer:
+        reliability: "High"
+        key_features: ["LEAF-EDGE-03", "BRANCH-ARRANGE-01"]
+        notes: "Full leaf development makes star shape obvious"
+      fall:
+        reliability: "Very high" 
+        key_features: ["LEAF-FALL-01", "FRUIT-TYPE-04"]
+        notes: "Fall color and presence of helicopter seeds make identification easy"
+      winter:
+        reliability: "Medium"
+        key_features: ["BRANCH-ARRANGE-01"]
+        notes: "Opposite branching and paired buds visible when deciduous"
+
+  wildlife_value:
+    - "Seeds provide food for birds and small mammals"
+    - "Flowers provide early spring nectar for pollinators"
+    - "Leaves support many caterpillar species that are food for birds"
+    - "Provides nesting sites for birds"
+    - "Fallen leaves create habitat for small creatures and return nutrients to soil"

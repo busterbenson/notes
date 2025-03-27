@@ -1,0 +1,281 @@
+genus:
+  common_name: "Manzanita"
+  scientific_name: "Arctostaphylos spp."
+  taxonomic_level: "genus"
+  family: "Ericaceae"
+  
+  # Basic summary
+  summary: "Shrubs or small trees with distinctive smooth, burgundy to red-purple bark that peels in thin curls with age. Manzanitas have stiff, leathery evergreen leaves, clusters of urn-shaped flowers, and small apple-like berries that give them their Spanish name ('little apple')."
+  
+  # Key species in this genus
+  included_species:
+    - name: "Common Manzanita"
+      scientific_name: "Arctostaphylos manzanita"
+      distinguishing_features: "Can grow as a small tree up to 20 feet tall; larger, more oval leaves; white to pink flowers"
+      california_context: "Native to chaparral and woodland areas in Coast Ranges and Sierra foothills"
+    
+    - name: "Bigberry Manzanita"
+      scientific_name: "Arctostaphylos glauca"
+      distinguishing_features: "Larger fruits (about 1/2 inch); grayish-green leaves; can reach tree-like proportions"
+      california_context: "Native to central and southern California chaparral"
+    
+    - name: "Eastwood Manzanita"
+      scientific_name: "Arctostaphylos glandulosa"
+      distinguishing_features: "Sticky, glandular hairs on stems and leaves; more shrubby form"
+      california_context: "Native to coastal chaparral from Oregon to San Diego"
+    
+    - name: "Bearberry"
+      scientific_name: "Arctostaphylos uva-ursi"
+      distinguishing_features: "Low-growing groundcover; small rounded leaves; red berries"
+      california_context: "Native to mountains; often used in landscaping"
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Smooth, burgundy to red-purple bark that peels in thin curls; stiff, leathery evergreen leaves; distinctive branching pattern with twisting, sculptural limbs"
+    secondary_markers: "Bark feels cool to the touch; clusters of small, urn-shaped white to pink flowers; rounded red-brown berries"
+    seasonal_markers: "Early-blooming flowers in winter to early spring; berries mature in summer and may persist; distinctive bark visible year-round"
+    similar_species_differentiation: "Bark color and texture is similar to madrone (Arbutus), but manzanitas typically have smaller leaves and grow as shrubs or small trees rather than large trees"
+  
+  features:
+    always_true:
+      - feature_id: "BARK-COLOR-03"  # Red bark
+        notes: "Smooth bark in shades of burgundy, red-brown, or red-purple"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Bark is uniquely smooth and cool to the touch"
+      
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps leaves year-round"
+      
+      - feature_id: "LEAF-FORM-01"  # Simple broadleaf
+        notes: "Each leaf is a single piece, not divided into leaflets"
+      
+      - feature_id: "LEAF-EDGE-01"  # Smooth leaf edges
+        notes: "Most species have smooth or entire leaf margins"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Most common species are native to California"
+    
+    usually_true:
+      - feature_id: "TREE-SIZE-01"  # Small tree
+        notes: "Most often shrubs or small trees under 20 feet tall"
+        exceptions: "A few species can grow taller in ideal conditions"
+      
+      - feature_id: "TREE-TRUNK-02"  # Multiple trunks
+        notes: "Often grows with multiple stems from base"
+        exceptions: "Some species or individuals may develop a more tree-like form with a single trunk"
+      
+      - feature_id: "TREE-FORM-05"  # Irregular form
+        notes: "Typically has an irregular, sculptural form with twisting branches"
+        exceptions: "Cultivated varieties may be more uniform"
+    
+    sometimes_true:
+      - feature_id: "LEAF-COLOR-02"  # Gray-green leaves
+        conditions: "Some species, particularly those in drier habitats"
+        notes: "Leaves may have a gray-green or glaucous appearance"
+      
+      - feature_id: "HABITAT-LOC-07"  # Chaparral habitat
+        conditions: "In natural settings"
+        notes: "Many species are adapted to California's chaparral ecosystems"
+      
+      - feature_id: "HABITAT-WATER-03"  # Dry slopes
+        conditions: "In natural settings"
+        notes: "Often found on dry, exposed slopes"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all leaves seasonally"
+      
+      - feature_id: "LEAF-FORM-06"  # Compound leaves
+        notes: "Never has leaves divided into multiple leaflets"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Large showy flowers
+        notes: "Flowers are small and urn-shaped, never large and showy"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Smooth, reddish-purple bark that feels cool like plastic"
+    memorable_comparison: "The bark looks like polished cherry wood and feels smooth and cool like plastic"
+    touch_tip: "The bark feels surprisingly cool to touch, almost like touching plastic or metal"
+    smell_tip: "The leaves don't have a strong smell but might have a mild, pleasant scent"
+    fun_fact: "The name 'manzanita' means 'little apple' in Spanish because the berries look like tiny apples. Many Native California tribes used the berries to make a sweet cider-like drink!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "Look at the bark - is it smooth and reddish-purple like polished wood?"
+        yes_next: 2
+        no_next: "Not a manzanita - look for other trees or shrubs"
+      - step: 2
+        instruction: "Touch the bark - does it feel surprisingly cool, almost like plastic?"
+        yes_next: 3
+        no_next: "Might be madrone or another tree with similar bark"
+      - step: 3
+        instruction: "Look at the overall size - is it usually more of a shrub or small tree rather than a tall tree?"
+        yes_next: 4
+        no_next: "Might be madrone, which grows as a large tree"
+      - step: 4
+        instruction: "Check the leaves - are they small, stiff, and leathery?"
+        yes_next: "You found a manzanita!"
+        no_next: "Might be another plant with reddish bark"
+  
+  # Seasonal timeline
+  seasonal_timeline:
+    - season: "Winter"
+      visual_changes: "Often begins flowering in late winter"
+      reproductive_activity: "Pink or white urn-shaped flowers appear in clusters"
+      identification_tips: "One of the earliest flowering woody plants in California"
+      kid_friendly_tip: "Manzanitas are winter bloomers! Look for pretty pink or white bell-shaped flowers when many other plants are still dormant"
+    
+    - season: "Spring" 
+      visual_changes: "Finishing flowering; new leaf growth may appear"
+      reproductive_activity: "Flowers developing into young fruit"
+      identification_tips: "Look for small developing fruit after flowers fade"
+      kid_friendly_tip: "After the flowers are done, little green berries start to form where the flowers were"
+    
+    - season: "Summer"
+      visual_changes: "Fruits mature to red-brown color"
+      reproductive_activity: "Fruits fully develop"
+      identification_tips: "Distinctive red-brown berries visible"
+      kid_friendly_tip: "The berries turn red-brown and look like tiny apples - that's why they're called 'manzanita' or 'little apple' in Spanish"
+    
+    - season: "Fall"
+      visual_changes: "Little change as it's evergreen; some older leaves may drop"
+      reproductive_activity: "Fruits may persist or drop"
+      identification_tips: "Distinctive bark more visible as other plants lose leaves"
+      kid_friendly_tip: "Manzanitas stay green all year long and keep their smooth red bark that's cool to touch"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Smooth, burgundy to red-purple bark"
+      reliability: "Very high"
+      visibility: "Easy to see"
+    - feature: "Bark feels cool to the touch"
+      reliability: "Very high"
+      visibility: "Requires interaction"
+    - feature: "Stiff, leathery evergreen leaves"
+      reliability: "High"
+      visibility: "Easy to see and feel"
+    - feature: "Twisting, sculptural branching pattern"
+      reliability: "High"
+      visibility: "Visible from a distance"
+    
+  look_alikes:
+    - name: "Madrone (Arbutus species)"
+      type: "genus"
+      differences: "Madrone grows as a large tree (40-100 feet tall); has larger leaves; bark peels in larger patches"
+      identification_tip: "If it's a large tree with peeling red bark, it's likely madrone rather than manzanita"
+    
+    - name: "Toyon (Heteromeles arbutifolia)"
+      type: "species"
+      differences: "Toyon has serrated leaf edges and bright red berry clusters; bark is not as smoothly polished"
+      identification_tip: "Toyon has toothed leaf edges and clusters of bright red berries in winter"
+    
+    - name: "Red Twig Dogwood (Cornus sericea)"
+      type: "species"
+      differences: "Red Twig Dogwood has red stems but green bark on larger branches; opposite leaves; white flowers in flat clusters"
+      identification_tip: "Dogwood has opposite leaves and lacks the smooth, polished bark of manzanita"
+    
+  cultural_significance:
+    - culture: "California Native Tribes (Miwok, Pomo, Yokuts, others)"
+      physical_uses:
+        - "Made a refreshing cider-like drink from the berries"
+        - "Used the hard wood for tools, arrow shafts, and cooking utensils"
+        - "Made a medicine tea from leaves to treat poison oak and stomach problems"
+        - "Used as fuel for cooking fires because it burns hot and steady"
+      symbolic_meaning:
+        - "Represented endurance and survival through drought conditions"
+        - "The twisted growth represented adaptation to harsh conditions"
+        - "Featured in stories about resourcefulness and clever use of natural materials"
+    
+    - culture: "California Garden Design"
+      physical_uses:
+        - "Planted as drought-resistant ornamental shrubs and small trees"
+        - "Used as architectural focal points in native gardens"
+        - "Valued for providing winter flowers when little else is blooming"
+        - "Used in erosion control on dry slopes"
+      symbolic_meaning:
+        - "Symbolizes California's unique natural heritage"
+        - "Represents sustainable, water-wise landscaping"
+        - "The sculptural forms are valued for artistic quality in garden design"
+    
+  cultural_ecological_notes:
+    - "Extremely important plant for native pollinators, especially early in the season"
+    - "Berries provide food for birds and wildlife"
+    - "Deep roots help prevent erosion on steep slopes"
+    - "Adapted to fire ecology - many species resprout from underground burls after wildfire"
+    - "Some rare manzanita species exist only in tiny geographic areas"
+    - "Part of the chaparral plant community that's uniquely adapted to California's climate"
+    
+  range_within_california:
+    - "Found throughout California in appropriate habitats"
+    - "Different species adapted to different regions, from coastal bluffs to mountain slopes"
+    - "Most common in chaparral communities in coastal ranges and foothills"
+    - "Some species endemic to very small geographic areas"
+    - "Most abundant in areas with Mediterranean climate (dry summers, mild winters)"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "3-15 feet for most species, occasionally to 20 feet"
+    growth_rate: "Slow to moderate"
+    crown_spread: "3-15 feet, depending on species"
+    lifespan: "50-100+ years"
+    trunk_diameter: "Multiple stems, each 2-8 inches in diameter typically"
+    root_system: "Deep, extensive root system adapted to drought"
+    toxicity: "Not toxic, berries are edible though often dry and mealy"
+  
+  conservation_status:
+    status: "Varies by species - some common, others rare or endangered"
+    threats: 
+      - "Habitat loss due to development"
+      - "Climate change affecting suitable habitat"
+      - "Some species threatened by fungal pathogens"
+      - "Limited ranges for some endemic species"
+    protection_efforts:
+      - "Several species are protected in parks and preserves"
+      - "Special protection for rare species"
+      - "Increased use in native plant landscaping"
+      - "Cultivation of endangered species by native plant nurseries"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: BARK-COLOR-03"  # Red bark
+      - "feature_id: BARK-TEXT-01"  # Smooth bark
+      - "feature_id: TREE-SIZE-01"  # Small tree
+    confirmation_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: LEAF-EDGE-01"  # Smooth leaf edges
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-01", "TREE-FORM-05"]  # Small tree, irregular form
+      - distance: "from_nearby"
+        features_to_check: ["BARK-COLOR-03", "BARK-TEXT-01"]  # Red bark, smooth bark
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-TYPE-02", "LEAF-EDGE-01"]  # Evergreen, smooth leaf edges
+    seasonal_identification:
+      winter:
+        reliability: "Very high"
+        key_features: ["BARK-COLOR-03", "BARK-TEXT-01", "FLOWER-TIMING-01"]
+        notes: "Winter flowers are distinctive when present"
+      spring:
+        reliability: "High" 
+        key_features: ["BARK-COLOR-03", "BARK-TEXT-01", "LEAF-TYPE-02"]
+        notes: "Young fruits may be visible after flowering"
+      summer:
+        reliability: "High"
+        key_features: ["BARK-COLOR-03", "BARK-TEXT-01", "FRUIT-COLOR-02"]
+        notes: "Red-brown berries are distinctive when present"
+      fall:
+        reliability: "High"
+        key_features: ["BARK-COLOR-03", "BARK-TEXT-01", "LEAF-TYPE-02"]
+        notes: "Evergreen nature stands out as deciduous plants lose leaves"
+    misidentification_risks: 
+      - "Most often confused with madrone, which has similar bark but grows much larger"
+      - "Young plants might be confused with other chaparral shrubs"
+  
+  wildlife_value:
+    - "Flowers provide crucial early-season nectar for hummingbirds, bees, and butterflies"
+    - "Dense structure provides nesting habitat for birds"
+    - "Berries eaten by birds, including band-tailed pigeons, robins, and mockingbirds"
+    - "Berries also eaten by mammals including bears, foxes, and coyotes"
+    - "Provides cover for small mammals and birds"
+    - "Stabilizes soil on slopes, preventing erosion"

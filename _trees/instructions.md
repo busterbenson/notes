@@ -32,9 +32,31 @@ Each feature in features.yml has:
 - Safety information
 - Kid-friendly notes
 
-## Tree File Format - The Alaska Cedar Example
+## File Organization - Tree Species vs. Genus-Level Files
 
-For each tree, create a YAML file in the `trees/` directory with the format `trees/[family-name].[common-tree-name].yml` (with all words in lower-case and kebab-case). For example: `cupressaceae.alaska-cedar.yml`. This naming convention groups trees by family and makes it easier to find related species. Follow this structure, illustrated with the Alaska Cedar example:
+There are two types of tree profile files in this system:
+
+1. **Species-Level Files**: For individual tree species (e.g., Alaska Cedar, Coast Redwood)
+   - Stored in the `trees/` directory
+   - Format: `trees/[family-name].[common-tree-name].yml` (using lower-case and kebab-case)
+   - Example: `cupressaceae.alaska-cedar.yml`
+
+2. **Genus-Level Files**: For groups of related species treated collectively (e.g., Acacia, Maple)
+   - Stored in the `genus/` directory
+   - Format: `genus/[family-name].[common-name].yml` (using lower-case and kebab-case)
+   - Example: `fabaceae.acacia.yml` or `sapindaceae.maple.yml`
+   - Include a `taxonomic_level: "genus"` field in the YAML
+
+### When to Create Genus-Level Files
+Create genus-level files when:
+- Multiple similar species share key identifying features that children can easily recognize
+- Individual species would be difficult for children to distinguish
+- A group of trees is commonly referred to collectively (e.g., "Birch trees" rather than specific birch species)
+- Genus entries are referenced in distinctive-path.md or other guides
+
+### Species-Level File Format - The Alaska Cedar Example
+
+For individual tree species, create a YAML file in the `trees/` directory with the format described above. Follow this structure, illustrated with the Alaska Cedar example:
 
 ```yaml
 tree:
@@ -141,8 +163,9 @@ tree:
       reliability: "Very high"
       visibility: "Requires interaction"
     
-  look_alike_species:
-    - species: "Port Orford-cedar (Chamaecyparis lawsoniana)"
+  look_alikes:
+    - name: "Port Orford-cedar (Chamaecyparis lawsoniana)"
+      type: "species"
       differences: "Port Orford-cedar has more upright branches and foliage that is more bluish; cones are slightly larger"
       identification_tip: "If the branches point up instead of drooping down, it's likely Port Orford-cedar"
     
@@ -339,9 +362,48 @@ Each tree file must cover features from ALL of these categories:
    - When noting symbolic meanings, connect them to observable features kids can see
    - Be concise but specific, using concrete examples rather than abstract concepts
 
-## Required Sections for Each Tree File
+## Genus-Level File Format
 
-Each tree file must include ALL of the following sections in this order:
+For genus-level files, use the same structure as species-level files with these special considerations:
+
+```yaml
+genus:
+  common_name: "Maple"  # Use the genus common name without "Group" or "Genus" suffix
+  scientific_name: "Acer spp."  # Use "spp." to indicate multiple species
+  taxonomic_level: "genus"  # Always include this field to mark it as a genus-level file
+  family: "Sapindaceae"
+  
+  # Other sections remain the same, but with genus-wide focus
+  included_species:
+    - name: "Bigleaf Maple"
+      scientific_name: "Acer macrophyllum"
+      distinguishing_features: "Very large leaves (8-12 inches across) with 5 deep, pointed lobes"
+      california_context: "Native to coastal forests, often near streams"
+    
+    - name: "Vine Maple"
+      scientific_name: "Acer circinatum"
+      distinguishing_features: "Smaller leaves with 7-9 lobes; often multi-trunked"
+      california_context: "Native to northern California, forest understory"
+    
+    # Include 3-6 of the most common/important species to represent the genus
+```
+
+**Important Naming Conventions**:
+- File should be named using the family name and common name: `[family-name].[common-name].yml`
+- Example: `sapindaceae.maple.yml` (not `sapindaceae.acer.yml`)
+- Use kebab-case for multi-word common names: `fagaceae.white-oak.yml`
+- Always store genus-level files in the `genus/` directory
+
+In genus-level files:
+- Focus on shared characteristics that apply to most/all species in the genus
+- Highlight features that make the genus as a whole recognizable
+- Include an `included_species` section listing key representatives with brief distinguishing notes
+- When discussing "sometimes_true" features, indicate which species or subgroups show the trait
+- Create decision paths that help identify the genus without requiring species-level precision
+
+## Required Sections for Both Tree Species and Genus Files
+
+Each tree file (whether species or genus level) must include ALL of the following sections in this order:
 
 1. **Basic Information**
    - common_name
@@ -378,8 +440,8 @@ Each tree file must include ALL of the following sections in this order:
 7. **Confirmation Checklist**
    - Multiple distinctive features with reliability and visibility ratings
 
-8. **Look-Alike Species**
-   - Similar species with specific differences and identification tips
+8. **Look-Alikes**
+   - Similar species or genera with specific differences and identification tips
 
 9. **Cultural/Ecological Notes**
     - Brief ecological role information

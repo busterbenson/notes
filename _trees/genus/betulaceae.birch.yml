@@ -1,0 +1,220 @@
+genus:
+  common_name: "Birch"
+  scientific_name: "Betula spp."
+  taxonomic_level: "genus"
+  family: "Betulaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "Graceful trees with distinctive papery or peeling bark, often in white, cream, or coppery colors. Have triangular to oval leaves with doubly serrated edges and produce small, cone-like seed structures."
+  
+  # Key species in this genus
+  included_species:
+    - name: "Paper Birch"
+      scientific_name: "Betula papyrifera"
+      distinguishing_features: "White, paper-like bark that peels in horizontal sheets; triangular leaves"
+      california_context: "Planted as ornamental; native to northern North America"
+    
+    - name: "River Birch"
+      scientific_name: "Betula nigra"
+      distinguishing_features: "Salmon-pink to cinnamon-colored peeling bark; more heat tolerant than other birches"
+      california_context: "Planted in landscapes, especially in wetter areas"
+    
+    - name: "European White Birch"
+      scientific_name: "Betula pendula"
+      distinguishing_features: "White bark with black markings; delicate, drooping branches"
+      california_context: "Common ornamental in landscapes and gardens"
+    
+    - name: "Water Birch"
+      scientific_name: "Betula occidentalis"
+      distinguishing_features: "Reddish-brown to black bark; shrubby or small tree form"
+      california_context: "Native to mountain streams in eastern Sierra Nevada"
+    
+    - name: "Gray Birch"
+      scientific_name: "Betula populifolia"
+      distinguishing_features: "Chalky white bark that doesn't peel much; triangular leaves similar to aspen"
+      california_context: "Occasionally planted as ornamental"
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Distinctive papery or peeling bark, often in white, cream, or coppery colors; triangular to oval leaves with doubly serrated edges; slender, graceful form"
+    secondary_markers: "Catkins (hanging seed and pollen structures); alternate branching pattern; small, cone-like seed structures"
+    seasonal_markers: "Spring: dangling catkins and new leaves; Summer: full canopy; Fall: yellow foliage; Winter: distinctive bark and fine branching pattern"
+    similar_species_differentiation: "Aspens have similar leaves but bark is smoother, greenish-white without peeling; alders have similar catkins but bark is not papery or white"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "BARK-TEXT-03"  # Peeling or papery bark
+        notes: "Birches have distinctive bark that often peels in paper-like layers"
+      
+      - feature_id: "LEAF-EDGE-02"  # Toothed (serrated) leaf edges
+        notes: "Leaves have doubly serrated edges (small teeth on larger teeth)"
+      
+      - feature_id: "BRANCH-ARRANGE-02"  # Alternate branching
+        notes: "Branches grow in alternating pattern, not opposite each other"
+      
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with a single main trunk"
+        exceptions: "Sometimes develops multiple trunks, especially Water Birch and some ornamental varieties"
+      
+      - feature_id: "LEAF-SHAPE-06"  # Triangular or oval leaves
+        notes: "Leaves typically triangular to oval with pointed tips"
+        exceptions: "Some species have more oval or elongated leaves"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        notes: "Most birches turn bright yellow in fall"
+        exceptions: "Fall color may be less vibrant in mild climates or during drought"
+      
+    sometimes_true:
+      - feature_id: "BARK-COLOR-01"  # White or cream-colored bark
+        conditions: "Paper Birch, European White Birch, Gray Birch"
+        notes: "Several common species have striking white or cream-colored bark"
+      
+      - feature_id: "BARK-COLOR-02"  # Coppery or reddish bark
+        conditions: "River Birch, Water Birch"
+        notes: "Some species have distinctive salmon-pink, copper, or reddish-brown bark"
+      
+      - feature_id: "BRANCH-FEATURE-04"  # Drooping branches
+        conditions: "European White Birch ('Weeping' varieties especially)"
+        notes: "Some species and varieties have gracefully drooping branches"
+      
+      - feature_id: "TREE-FORM-06"  # Shrubby form
+        conditions: "Water Birch specifically, some other species when young"
+        notes: "Some birch species grow as large shrubs or small multi-trunked trees"
+      
+    never_true:
+      - feature_id: "LEAF-FORM-05"  # Compound leaves
+        notes: "Birches always have simple leaves, never compound (made of multiple leaflets)"
+      
+      - feature_id: "LEAF-EDGE-03"  # Lobed leaves
+        notes: "Birches have toothed leaves but never lobed (no deep indentations)"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Papery, peeling bark - often white like paper or salmon-colored"
+    memorable_comparison: "The bark looks like paper that's peeling off in strips or curls"
+    touch_tip: "The bark feels smooth and paper-like, and you might be able to gently peel a small piece off (but don't damage the tree!)"
+    smell_tip: "Birch leaves and twigs have a mild, fresh scent when crushed"
+    fun_fact: "Native Americans used birch bark to make canoes, containers, and even write messages on!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "Look at the bark - is it peeling in paper-like layers and white, cream, or coppery colored?"
+        yes_next: 2
+        no_next: "If bark is white but doesn't peel, check aspen instead; if bark peels but isn't white or coppery, check Madrone or Manzanita"
+      - step: 2
+        instruction: "Check the leaves - are they somewhat triangular or oval with toothed edges (like little saw teeth)?"
+        yes_next: 3
+        no_next: "If leaves are rounded or have different shape, it might not be a birch"
+      - step: 3
+        instruction: "Look for small, cone-like seed structures or long, dangling catkins (in spring)"
+        yes_next: "You've found a birch tree!"
+        no_next: "If the bark is peeling and papery with triangular toothed leaves, it's likely a birch even if you don't see the seed structures"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaves emerge with light green color; long, hanging catkins appear"
+      reproductive_activity: "Male catkins release pollen; female catkins begin developing into seed structures"
+      identification_tips: "Catkins are distinctive; new leaf growth with fresh green color"
+      kid_friendly_tip: "In spring, look for the dangling 'caterpillar-like' catkins hanging down from branches"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of green leaves; female catkins develop into small, cone-like seed structures"
+      reproductive_activity: "Seed structures mature throughout summer"
+      identification_tips: "Distinctive bark visible; full development of triangular leaves"
+      kid_friendly_tip: "Summer is when the leaves are fully grown, shaped like triangles with toothed edges"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn bright yellow and drop; seed structures may remain"
+      reproductive_activity: "Seeds disperse from cone-like structures"
+      identification_tips: "Bright yellow fall color; seeds being released from cone-like structures"
+      kid_friendly_tip: "Birch trees turn a beautiful golden yellow in fall, like they're made of gold!"
+    
+    - season: "Winter"
+      visual_changes: "Leafless, showing distinctive white or colorful bark and fine branching pattern"
+      reproductive_activity: "Dormant; male catkins for next year may be visible"
+      identification_tips: "Bark most distinctive in winter; fine branching pattern visible"
+      kid_friendly_tip: "Winter is the best time to see the beautiful bark - it really stands out when the leaves are gone"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Papery or peeling bark, often white or coppery"
+      reliability: "Very high"
+      visibility: "Easily visible from a distance"
+    - feature: "Triangular to oval leaves with doubly serrated edges"
+      reliability: "High"
+      visibility: "Visible during growing season"
+    - feature: "Small, cone-like seed structures"
+      reliability: "Medium to high"
+      visibility: "Seasonal; may need close inspection"
+    
+  look_alike_species:
+    - species: "Aspen (Populus species)"
+      differences: "Aspens have similar leaves but bark is smooth, doesn't peel, and is often greenish-white with black marks; leaves quiver in breeze"
+      identification_tip: "If the bark is smooth and doesn't peel in papery layers, it's likely aspen not birch"
+    
+    - species: "Alder (Alnus species)"
+      differences: "Alders have similar catkins and leaf shape but bark is not white or papery; produce woody 'cones' that remain on tree longer"
+      identification_tip: "Alder bark is usually grayish-brown and doesn't peel like birch bark"
+    
+    - species: "Poplar (Populus species)"
+      differences: "Poplars have similarly shaped leaves but bark is grayer, rougher, and develops furrows rather than peeling"
+      identification_tip: "Poplar leaves are often larger and bark doesn't have the paper-like quality of birch"
+    
+  cultural_ecological_notes:
+    - "Birch bark was traditionally used by Native Americans for canoes, containers, and writing material"
+    - "Birch trees host many insect species that provide food for birds"
+    - "Sap can be tapped similar to maple trees (mostly from Paper Birch)"
+    - "Known as 'pioneer species' that often grow in disturbed areas, helping forests regenerate"
+    - "Many birds eat birch seeds, including finches and redpolls"
+    
+  range_within_california:
+    - "Most birches in California are planted as ornamentals in parks, gardens, and landscapes"
+    - "Water Birch is the only naturally occurring birch in California, found along streams in the eastern Sierra Nevada"
+    - "Paper Birch and European White Birch are common landscape trees in cooler, northern parts of the state"
+    - "River Birch is increasingly planted in landscapes due to better heat tolerance than other species"
+    - "Birches generally prefer cooler climates with adequate moisture"
+    
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: BARK-TEXT-03"  # Peeling or papery bark
+      - "feature_id: BARK-COLOR-01"  # White or cream-colored bark (for some species)
+    confirmation_features:
+      - "feature_id: LEAF-SHAPE-06"  # Triangular or oval leaves
+      - "feature_id: LEAF-EDGE-02"  # Toothed leaf edges
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["BARK-COLOR-01", "TREE-FORM-01"]  # White bark, often upright form
+      - distance: "from_nearby"
+        features_to_check: ["BARK-TEXT-03", "LEAF-SHAPE-06"]  # Peeling bark, triangular leaves
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-02", "FRUIT-TYPE-05"]  # Doubly serrated edges, cone-like fruits
+    seasonal_identification:
+      spring:
+        reliability: "Medium to high"
+        key_features: ["BARK-TEXT-03", "FLOWER-TYPE-02"]
+        notes: "Catkins visible; new leaves emerging"
+      summer:
+        reliability: "High"
+        key_features: ["BARK-TEXT-03", "LEAF-SHAPE-06"]
+        notes: "Full leaf development; bark clearly visible"
+      fall:
+        reliability: "High" 
+        key_features: ["LEAF-FALL-01", "BARK-TEXT-03"]
+        notes: "Yellow fall color; distinctive bark"
+      winter:
+        reliability: "Very high"
+        key_features: ["BARK-TEXT-03", "BARK-COLOR-01"]
+        notes: "Most distinctive in winter when bark fully exposed"
+
+  wildlife_value:
+    - "Seeds provide food for many birds, including finches, siskins, and redpolls"
+    - "Foliage hosts many caterpillar species that are food for birds"
+    - "Young trees and twigs are browsed by deer and moose"
+    - "Provides nesting sites for small birds"
+    - "Fallen leaves decompose quickly, enriching forest soils"
+    - "Provides valuable wildlife habitat, especially in young forest stands"

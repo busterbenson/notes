@@ -1,0 +1,213 @@
+genus:
+  common_name: "Aspen"
+  scientific_name: "Populus spp. (Aspen Section)"
+  taxonomic_level: "genus"
+  family: "Salicaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "Trees with smooth, greenish-white to cream-colored bark with dark markings. Have distinctive round to somewhat triangular leaves that tremble or quiver in the slightest breeze, and often grow in connected groves."
+  
+  # Key species in this genus
+  included_species:
+    - name: "Quaking Aspen"
+      scientific_name: "Populus tremuloides"
+      distinguishing_features: "Most common aspen in California; round leaves with fine teeth; smooth white bark with dark marks; leaves 'quake' in breeze"
+      california_context: "Native to mountains throughout California; forms impressive groves"
+    
+    - name: "European Aspen" 
+      scientific_name: "Populus tremula"
+      distinguishing_features: "Similar to Quaking Aspen but with slightly larger leaves; dark marks on bark often more prominent"
+      california_context: "Occasionally planted as ornamental"
+    
+    - name: "Bigtooth Aspen"
+      scientific_name: "Populus grandidentata"
+      distinguishing_features: "Leaves have larger, more pronounced teeth; bark becomes darker and more furrowed with age"
+      california_context: "Rarely planted in California"
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Smooth, greenish-white to cream-colored bark; round to heart-shaped leaves that quiver or tremble in the slightest breeze; often grows in groves with multiple trees connected by roots"
+    secondary_markers: "Finely serrated leaf edges; leaves turn golden yellow in fall; straight, upright trunk"
+    seasonal_markers: "Spring: dangling catkins before leaves; Summer: full canopy of quivering leaves; Fall: brilliant golden yellow foliage; Winter: smooth white bark with dark markings"
+    similar_species_differentiation: "Similar white bark to birch, but aspen bark is smooth and doesn't peel in papery layers; leaves are rounder than birch or poplar"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "BARK-COLOR-01"  # White or cream-colored bark
+        notes: "Smooth, greenish-white to cream-colored bark with characteristic dark marks"
+      
+      - feature_id: "LEAF-MOTION-01"  # Leaves move easily in breeze
+        notes: "Leaves quiver or tremble in even the slightest breeze due to flattened leaf stalks"
+      
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Lose all leaves in winter"
+      
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with one straight, upright main trunk"
+        exceptions: "May have multiple trunks when damaged or in some landscape settings"
+      
+      - feature_id: "TREE-FORM-08"  # Grows in groves
+        notes: "Often grows in groves of multiple trees connected by roots (clonal colonies)"
+        exceptions: "Planted specimens may grow as isolated trees"
+      
+      - feature_id: "LEAF-FALL-01"  # Yellow fall color
+        notes: "Typically turns brilliant golden yellow in fall"
+        exceptions: "Color may be less vibrant in dry years or mild climates"
+      
+    sometimes_true:
+      - feature_id: "HABITAT-01"  # Near water
+        conditions: "In drier parts of their range, aspens often grow near water sources"
+        notes: "Often found near streams or in moist areas, particularly in the eastern Sierra Nevada"
+      
+      - feature_id: "HABITAT-03"  # Mountain areas
+        conditions: "Most common in mountain regions of California"
+        notes: "Quaking Aspen particularly common in mountain areas throughout the state"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium-sized tree
+        conditions: "In favorable conditions with adequate moisture"
+        notes: "Can grow to medium size (30-60 feet) in good conditions"
+      
+      - feature_id: "TREE-SIZE-03"  # Small tree
+        conditions: "In challenging sites or drier conditions"
+        notes: "May remain as smaller trees in harsh conditions"
+      
+    never_true:
+      - feature_id: "BARK-TEXT-03"  # Peeling or papery bark
+        notes: "Aspen bark is smooth and doesn't peel in papery layers like birch bark"
+      
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Aspens are always deciduous, never evergreen"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Leaves that 'dance' or tremble in the slightest breeze"
+    memorable_comparison: "The tree looks like it's always shivering or applauding, even in a tiny breeze"
+    touch_tip: "The bark feels smooth and powdery, almost like it's been painted"
+    smell_tip: "The leaves don't have a strong smell, just a fresh green scent"
+    fun_fact: "Aspen trees can grow connected by their roots, so what looks like a forest of trees might actually be one single organism!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "Look at the leaves - are they round or heart-shaped, and do they tremble or 'dance' in even the slightest breeze?"
+        yes_next: 2
+        no_next: "If leaves are triangular and don't tremble much, check Poplar or Birch instead"
+      - step: 2
+        instruction: "Check the bark - is it smooth and greenish-white to cream colored with dark marks (not peeling in papery layers)?"
+        yes_next: 3
+        no_next: "If bark peels in papery layers, check Birch instead"
+      - step: 3
+        instruction: "Are there several similar trees growing together in a group (especially in mountain areas)?"
+        yes_next: "You've found an Aspen grove!"
+        no_next: "If it's a single tree but has trembling round leaves and smooth white bark, it's still likely an Aspen"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Catkins appear before leaves; light green leaves emerge and begin quivering"
+      reproductive_activity: "Produces hanging catkins; releases fluffy seeds"
+      identification_tips: "Catkins and emerging leaves; smooth bark visible"
+      kid_friendly_tip: "In spring, look for dangling 'caterpillar-like' catkins before the leaves come out"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of quivering green leaves; smooth white bark visible"
+      reproductive_activity: "Seed dispersal complete; vegetative growth through root system"
+      identification_tips: "Quivering leaves in full display; smooth white bark with dark marks"
+      kid_friendly_tip: "Summer is the best time to see the leaves 'dancing' in the breeze"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn brilliant golden yellow; can create spectacular mountain displays"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Golden yellow fall color; groves can create massive golden patches on mountainsides"
+      kid_friendly_tip: "In fall, entire mountainsides can turn gold with aspen trees!"
+    
+    - season: "Winter"
+      visual_changes: "Leafless, showing smooth white bark with dark markings; straight upright form"
+      reproductive_activity: "Dormant; buds for next year visible"
+      identification_tips: "Bark most visible in winter; look for dark marks on white trunk"
+      kid_friendly_tip: "The smooth white bark with dark marks really stands out in winter when all the leaves are gone"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Round leaves that quiver in slight breeze"
+      reliability: "Very high"
+      visibility: "Motion visible even from distance in slight breeze"
+    - feature: "Smooth, greenish-white to cream bark with dark marks"
+      reliability: "High"
+      visibility: "Visible from moderate distance"
+    - feature: "Often grows in groves of similar trees"
+      reliability: "Medium to high"
+      visibility: "Visible from distance, especially in mountains"
+    
+  look_alikes:
+    - name: "Birch (Betula species)"
+      type: "genus"
+      differences: "Birches have similar light-colored bark but it peels in papery layers; leaves are more triangular and don't quiver as noticeably"
+      identification_tip: "If the bark peels in paper-like strips, it's birch not aspen"
+    
+    - name: "Poplar (other Populus species)"
+      type: "genus"
+      differences: "Other poplars have larger, more triangular leaves; bark often darker and more furrowed; typically larger trees"
+      identification_tip: "Poplar leaves are usually more pointed and triangular, less round than aspen"
+    
+    - name: "Cottonwood (Populus species)"
+      type: "genus"
+      differences: "Cottonwoods are in the same genus but have larger, more triangular leaves; bark becomes deeply furrowed with age"
+      identification_tip: "Cottonwoods typically grow much larger than aspens and often near water in valleys rather than mountains"
+    
+  cultural_ecological_notes:
+    - "Aspens are important cultural trees for many Native American tribes in the western United States"
+    - "Bark was traditionally used for medicinal purposes and to make a pain-relieving salve"
+    - "Wood is soft and not good for construction but was used for matches, paper, and other products"
+    - "Aspen groves provide important wildlife habitat and add spectacular fall color to mountain landscapes"
+    - "Considered a 'pioneer species' that can quickly grow in areas after disturbances like fires"
+    
+  range_within_california:
+    - "Quaking Aspen is widespread in mountain areas throughout California"
+    - "Particularly common in the Sierra Nevada, especially on the eastern slope"
+    - "Forms spectacular groves in the eastern Sierra and around mountain meadows"
+    - "Typically found at elevations from 5,000-10,000 feet"
+    - "European Aspen occasionally planted as ornamental but not native"
+    
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-MOTION-01"  # Leaves move easily in breeze
+      - "feature_id: BARK-COLOR-01"  # White or cream-colored bark
+    confirmation_features:
+      - "feature_id: LEAF-SHAPE-03"  # Round or heart-shaped leaves 
+      - "feature_id: TREE-FORM-08"  # Grows in groves
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-08", "LEAF-MOTION-01"]  # Groves, quivering leaves
+      - distance: "from_nearby"
+        features_to_check: ["BARK-COLOR-01", "LEAF-SHAPE-03"]  # White bark, round leaves
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-02", "BARK-TEXT-01"]  # Finely toothed edges, smooth bark
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["BARK-COLOR-01", "FLOWER-TYPE-02"]
+        notes: "Catkins visible; new leaves emerging"
+      summer:
+        reliability: "Very high"
+        key_features: ["LEAF-MOTION-01", "BARK-COLOR-01"]
+        notes: "Quivering leaves most noticeable"
+      fall:
+        reliability: "Very high" 
+        key_features: ["LEAF-FALL-01", "TREE-FORM-08"]
+        notes: "Golden yellow groves can be spectacular"
+      winter:
+        reliability: "Medium to high"
+        key_features: ["BARK-COLOR-01", "TREE-FORM-08"]
+        notes: "White bark visible; often in groves"
+
+  wildlife_value:
+    - "Provides critical habitat for many birds and mammals"
+    - "Beaver use aspen for food and dam construction"
+    - "Leaves are browsed by deer and other ungulates" 
+    - "Groves create rich understory habitat for diverse plants and animals"
+    - "Older trees with cavities provide homes for woodpeckers and other cavity-nesting birds"
+    - "Decaying fallen trees create habitat for insects, fungi, and small animals"

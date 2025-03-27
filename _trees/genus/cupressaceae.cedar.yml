@@ -1,0 +1,293 @@
+genus:
+  common_name: "Cedar"
+  scientific_name: "Various genera including Thuja, Calocedrus, Chamaecyparis"
+  taxonomic_level: "genus"
+  family: "Cupressaceae"
+  
+  # Basic summary
+  summary: "Aromatic evergreen trees with scale-like leaves arranged in flat, fan-like sprays. Cedars have fibrous, often reddish bark and distinctive fragrant foliage that gives off a pleasant smell when crushed. Despite their name, true cedars are actually in a different family (Pinaceae)."
+  
+  # Key species in this genus
+  included_species:
+    - name: "Western Redcedar"
+      scientific_name: "Thuja plicata"
+      distinguishing_features: "Fan-like sprays of scales; reddish, fibrous, shredding bark; small oblong cones"
+      california_context: "Native to northwestern California in moist, foggy coastal forests"
+    
+    - name: "Incense-cedar"
+      scientific_name: "Calocedrus decurrens"
+      distinguishing_features: "Strong pencil-like smell; reddish bark; duck-bill shaped cones; columnar form"
+      california_context: "Native to the Sierra Nevada and other mountain ranges; tolerates drier conditions"
+    
+    - name: "Alaska-cedar"
+      scientific_name: "Callitropsis nootkatensis"
+      distinguishing_features: "Drooping, weeping branch tips; blue-green scale leaves; strong spicy scent"
+      california_context: "Not native to California but cultivated in northern parts of the state"
+    
+    - name: "Port Orford-cedar"
+      scientific_name: "Chamaecyparis lawsoniana"
+      distinguishing_features: "Fernlike, drooping foliage; bluish-green scales; small round cones"
+      california_context: "Native to a small area in northwestern California and southwestern Oregon"
+    
+    - name: "Atlantic White-cedar"
+      scientific_name: "Chamaecyparis thyoides"
+      distinguishing_features: "Bluish-green scale leaves; small round cones; grows in wet, boggy areas"
+      california_context: "Not native to California; sometimes planted in gardens"
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Scale-like leaves in flat, fan-like arrangements; aromatic foliage with distinctive cedar smell when crushed; fibrous, often reddish bark"
+    secondary_markers: "Small cones that vary in shape by species; pyramidal to columnar form; flattened sprays of foliage"
+    seasonal_markers: "Minimal seasonal changes as evergreen; new growth in spring appears brighter green"
+    similar_species_differentiation: "Unlike true cedars (Cedrus), have scale-like leaves instead of needle clusters; unlike junipers, usually have flatter spray-like foliage and stronger 'cedar' scent; unlike cypress, usually have more fibrous bark and flatter foliage sprays"
+  
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its scale-like leaves year-round"
+        
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        notes: "Tiny overlapping scales rather than needle-like leaves"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic leaves
+        notes: "Pleasant, strong cedar scent when foliage is crushed"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk"
+        exceptions: "May develop multiple trunks when damaged or growing in unusual conditions"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Typically pyramidal or columnar in overall shape"
+        exceptions: "Shape may vary by species; Incense-cedar is narrowly columnar while others are more broadly pyramidal"
+      
+      - feature_id: "BARK-TEXT-06"  # Fibrous bark
+        notes: "Bark typically becomes fibrous and shredding with age"
+        exceptions: "Young trees have smoother bark; texture varies somewhat between species"
+    
+    sometimes_true:
+      - feature_id: "BARK-COLOR-03"  # Red bark
+        conditions: "Incense-cedar, Western Redcedar, and some others"
+        notes: "Many species develop reddish-brown bark, especially on older trees"
+      
+      - feature_id: "LEAF-COLOR-03"  # Blue-green foliage
+        conditions: "Alaska-cedar, Port Orford-cedar, and Atlantic White-cedar"
+        notes: "Some species have bluish-green foliage rather than pure green"
+      
+      - feature_id: "BRANCH-FEAT-05"  # Drooping branches
+        conditions: "Alaska-cedar is most distinctive; Port Orford-cedar somewhat drooping"
+        notes: "Some species have distinctly drooping branch tips"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        conditions: "Western Redcedar and Incense-cedar in ideal conditions"
+        notes: "Some species can grow very tall (over 150 feet)"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all leaves seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in bundles
+        notes: "Never has needle-like leaves in bundles or clusters"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Does not have individual needle-like leaves, only scales"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "Flat, fan-like sprays of tiny scale leaves that smell good when gently crushed"
+    memorable_comparison: "The branches look like flat green fans made of tiny overlapping fish scales"
+    touch_tip: "Gently feel the flat sprays - they're soft and not poky like pine or spruce needles"
+    smell_tip: "Carefully crush a tiny bit of foliage to smell a nice, fresh scent like a cedar chest or pencil shavings"
+    fun_fact: "The wood from these trees smells so good and lasts so long that people use it to make chests and closets that keep moths away from clothes and smell amazing for decades!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, check the leaves. Are they tiny scales that overlap like fish scales instead of needles?"
+        yes_next: 2
+        no_next: "Not a cedar - if it has needles, check pine, fir, or spruce"
+      - step: 2
+        instruction: "Look at how the scales are arranged. Do they form flat, fan-like sprays?"
+        yes_next: 3
+        no_next: "Might be juniper or cypress - check if scales stick out all around the twig"
+      - step: 3
+        instruction: "Gently crush a small bit of foliage and smell. Does it have a nice, pleasant cedar smell?"
+        yes_next: 4
+        no_next: "If no cedar smell, check other conifer options"
+      - step: 4
+        instruction: "Look at the bark. Is it reddish to reddish-brown and shredding into thin strips?"
+        yes_next: "You found a cedar tree!"
+        no_next: "If bark is different, check which specific cedar it might be, or if it's another tree family"
+  
+  # Seasonal timeline
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Bright light green new growth at branch tips"
+      reproductive_activity: "Tiny pollen cones release yellow pollen; seed cones begin forming"
+      identification_tips: "Look for contrast between bright new growth and older dark green foliage"
+      kid_friendly_tip: "In spring, look for bright green 'tips' on branches - like the tree is growing new fingernails!"
+    
+    - season: "Summer" 
+      visual_changes: "New growth darkens to match older foliage; overall rich green appearance"
+      reproductive_activity: "Seed cones develop and begin to mature"
+      identification_tips: "Distinctive foliage pattern clearly visible; developing cones may be present"
+      kid_friendly_tip: "Summer is when the baby growth grows up to match the older parts, and small cones start growing"
+    
+    - season: "Fall"
+      visual_changes: "No significant color change as it remains evergreen; cones mature"
+      reproductive_activity: "Cones mature and begin to open, releasing seeds"
+      identification_tips: "Mature cones visible; flat sprays of scales remain green while deciduous trees change color"
+      kid_friendly_tip: "While other trees turn red and yellow and lose leaves, cedars stay green with their fan-like branches"
+    
+    - season: "Winter"
+      visual_changes: "Remains green; mature cones may persist"
+      reproductive_activity: "Dormant phase; some species may retain open cones"
+      identification_tips: "Evergreen foliage stands out when deciduous trees are bare"
+      kid_friendly_tip: "In winter, cedars keep their green scales when most other trees have lost their leaves"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Scale-like leaves in flat, fan-like arrangements"
+      reliability: "Very high"
+      visibility: "Easy to see from nearby"
+    - feature: "Aromatic cedar scent when foliage is crushed"
+      reliability: "Very high"
+      visibility: "Requires interaction"
+    - feature: "Fibrous, often reddish bark"
+      reliability: "High"
+      visibility: "Visible from moderate distance on mature trees"
+    - feature: "Small cones (shape varies by species)"
+      reliability: "Medium"
+      visibility: "May require searching, often small or high in the tree"
+    
+  look_alikes:
+    - name: "True Cedars (Cedrus species)"
+      type: "genus"
+      differences: "True cedars have needle-like leaves in clusters, not scales; much larger woody cones; different overall branch structure"
+      identification_tip: "If it has actual needles instead of tiny scales, it's probably a true cedar or another conifer, not a cypress family cedar"
+    
+    - name: "Junipers (Juniperus species)"
+      type: "genus"
+      differences: "Junipers have scale or awl-like leaves that often grow all around the twig rather than in flat sprays; produce berry-like cone structures"
+      identification_tip: "If the foliage isn't arranged in flat fans and it has berry-like blue structures instead of woody cones, it's probably a juniper"
+    
+    - name: "Arborvitae (Thuja occidentalis)"
+      type: "species"
+      differences: "Arborvitae is closely related but typically smaller; often has yellowish-green foliage; common in landscaping"
+      identification_tip: "If it's a smaller tree with similar features often planted in yards and gardens, it might be arborvitae"
+    
+  cultural_significance:
+    - culture: "Pacific Northwest Indigenous Peoples"
+      physical_uses:
+        - "Used the strong, straight-grained wood to build canoes, houses, and totem poles"
+        - "Wove the inner bark into mats, baskets, clothing, and rope"
+        - "Made medicine from various parts to treat many health problems"
+        - "Used branches for ceremonial cleansing because of their good smell"
+      symbolic_meaning:
+        - "Many tribes called Western Redcedar the 'Tree of Life' because it provided so many necessities"
+        - "The tree represented generosity because it gave so many useful materials"
+        - "Used in purification ceremonies because of its fresh, clean scent"
+    
+    - culture: "Sierra Nevada Indigenous Peoples"
+      physical_uses:
+        - "Used incense-cedar wood for building, tools, and fire-making"
+        - "Applied sap as medicine for cuts and sores"
+        - "Used the aromatic wood and foliage in ceremonial contexts"
+        - "Made storage containers from the bark"
+      symbolic_meaning:
+        - "The strong scent connected to purification and protection"
+        - "The tree's long life represented endurance and resilience"
+    
+    - culture: "Early American Settlers"
+      physical_uses:
+        - "Prized the rot-resistant wood for fence posts, shingles, and railroad ties"
+        - "Used for boat building, especially in the Pacific Northwest"
+        - "Made furniture, especially chests that protect clothes from insects"
+        - "Used incense-cedar for pencil manufacturing"
+      symbolic_meaning:
+        - "Represented durability and practical value in frontier life"
+        - "The distinctive aroma became associated with cleanliness and preservation"
+    
+  cultural_ecological_notes:
+    - "Different cedar species occupy different ecological niches across California"
+    - "Western Redcedar prefers moist, foggy coastal forests"
+    - "Incense-cedar thrives in drier mountain forests of the Sierra Nevada"
+    - "Port Orford-cedar is limited to a small region in northwestern California"
+    - "Cedar forests provide important wildlife habitat for numerous species"
+    - "The rot-resistant wood creates long-lasting snags that benefit wildlife"
+    - "Old-growth cedar forests support unique ecosystems and biodiversity"
+    
+  range_within_california:
+    - "Western Redcedar grows in the northwestern coastal forests"
+    - "Incense-cedar is widespread in the Sierra Nevada and other mountain ranges"
+    - "Port Orford-cedar is native to a small area in Del Norte County"
+    - "Alaska-cedar and Atlantic White-cedar are not native but sometimes planted"
+    - "Each species has specific habitat requirements relating to moisture, elevation, and climate"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "40-200 feet, depending on species (Western Redcedar and Incense-cedar can exceed 150 feet)"
+    growth_rate: "Slow to moderate growth, varying by species"
+    crown_spread: "15-60 feet wide at maturity, depending on species"
+    lifespan: "400-1000+ years for some species"
+    trunk_diameter: "3-10 feet at maturity for larger species"
+    root_system: "Varies by species; generally moderately shallow and wide-spreading"
+    toxicity: "Not toxic but can cause skin irritation in sensitive individuals"
+  
+  conservation_status:
+    status: "Varies by species; Port Orford-cedar is of conservation concern"
+    threats: 
+      - "Port Orford-cedar root disease (Phytophthora lateralis)"
+      - "Increasing wildfire intensity and frequency"
+      - "Climate change affecting suitable habitat"
+      - "Over-harvesting of old-growth trees"
+    protection_efforts:
+      - "Port Orford-cedar breeding program for disease resistance"
+      - "Protection of remaining old-growth cedar forests"
+      - "Research into climate adaptation strategies"
+      - "Sustainable forestry practices for cedar harvest"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: LEAF-FORM-05"  # Scale-like leaves
+      - "feature_id: SENSORY-SMELL-01"  # Aromatic leaves
+    confirmation_features:
+      - "feature_id: BARK-TEXT-06"  # Fibrous bark
+      - "feature_id: BARK-COLOR-03"  # Red bark (for some species)
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-01", "LEAF-TYPE-02"]  # Pyramidal shape, evergreen
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-FORM-05", "BARK-TEXT-06"]  # Scale-like leaves, fibrous bark
+      - distance: "close_inspection"
+        features_to_check: ["SENSORY-SMELL-01", "LEAF-COLOR-03"]  # Cedar scent, possibly blue-green
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "LEAF-FORM-05", "SENSORY-SMELL-01"]
+        notes: "New growth provides color contrast"
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-FORM-05", "SENSORY-SMELL-01", "BARK-TEXT-06"]
+        notes: "Mature foliage pattern clearly visible"
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "LEAF-FORM-05", "SENSORY-SMELL-01"]
+        notes: "Evergreen nature stands out as deciduous trees change color"
+      winter:
+        reliability: "Very high"
+        key_features: ["LEAF-TYPE-02", "LEAF-FORM-05", "TREE-FORM-01"]
+        notes: "Distinctive form and evergreen foliage visible when deciduous trees are bare"
+    misidentification_risks: 
+      - "Most often confused with junipers, which have similar scale-like leaves but different arrangement"
+      - "Sometimes confused with true cedars (Cedrus), which have needle-like leaves in clusters"
+      - "Young trees might be confused with arborvitae in landscaped settings"
+  
+  wildlife_value:
+    - "Seeds are eaten by many bird species including finches, siskins, and chickadees"
+    - "Dense evergreen foliage provides crucial winter shelter for birds and small mammals"
+    - "Branches offer protected nesting sites for many bird species"
+    - "Deer and elk sometimes browse on lower foliage, especially in winter"
+    - "Bark provides habitat for many insects, which in turn feed birds"
+    - "Old trees with cavities support woodpeckers, owls, and other cavity-nesting species"
+    - "Fallen logs in cedar forests create important habitat for amphibians and small mammals"

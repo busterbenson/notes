@@ -1,0 +1,220 @@
+genus:
+  common_name: "Black Oak"
+  scientific_name: "Quercus spp. (Black Oak Section)"
+  taxonomic_level: "genus"
+  family: "Fagaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "Oak trees with distinctively pointed, bristle-tipped lobes on their leaves. Typically have darker, more furrowed bark than white oaks and produce more bitter acorns that take two years to mature."
+  
+  # Key species in this genus
+  included_species:
+    - name: "California Black Oak"
+      scientific_name: "Quercus kelloggii"
+      distinguishing_features: "Deciduous with deeply lobed leaves and prominent bristle tips; glossy dark green leaves"
+      california_context: "Native to mountain forests and woodlands throughout California"
+    
+    - name: "Coast Live Oak"
+      scientific_name: "Quercus agrifolia"
+      distinguishing_features: "Evergreen with cupped, spiny-edged leaves; dense, rounded crown"
+      california_context: "Native along California coast and foothills; iconic coastal oak"
+    
+    - name: "Interior Live Oak"
+      scientific_name: "Quercus wislizeni"
+      distinguishing_features: "Evergreen with smaller, flatter leaves than Coast Live Oak; bristle tips on some leaf edges"
+      california_context: "Native to Sierra foothills and interior regions"
+    
+    - name: "Canyon Live Oak"
+      scientific_name: "Quercus chrysolepis"
+      distinguishing_features: "Evergreen with yellow-gold fuzzy undersides on leaves; variable leaf shapes"
+      california_context: "Native to canyons and slopes throughout California mountains"
+    
+    - name: "Scrub Oak"
+      scientific_name: "Quercus berberidifolia"
+      distinguishing_features: "Shrubby growth habit; small, spiny evergreen leaves"
+      california_context: "Native to chaparral communities throughout California"
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Leaves with pointed lobes ending in bristle tips; acorns often with deeper cups; typically darker bark than white oaks"
+    secondary_markers: "Glossy leaves on many species; acorns take two years to mature; alternate branching pattern"
+    seasonal_markers: "Spring: new leaves unfurling, often with reddish tint; Summer: glossy dark green leaves; Fall: some species show red color before dropping leaves; Winter: some species evergreen, others show branch structure"
+    similar_species_differentiation: "Distinguished from White Oaks by bristle-tipped leaf lobes; acorns take two years to mature (vs. one for White Oaks); often have more glossy leaves"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "FRUIT-TYPE-02"  # Acorns
+        notes: "All oaks produce acorns, which are nuts with a cap or 'cup'"
+      
+      - feature_id: "BRANCH-ARRANGE-02"  # Alternate branching
+        notes: "Branches grow in alternating pattern, not opposite each other"
+      
+      - feature_id: "LEAF-EDGE-06"  # Bristle-tipped leaves
+        notes: "Leaves have either pointed lobes with bristle tips or spiny edges with bristle points"
+      
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one main trunk"
+        exceptions: "Scrub oak often multi-trunked; some species may develop multiple trunks if damaged when young"
+      
+      - feature_id: "BARK-TEXT-04"  # Furrowed bark
+        notes: "Mature trees develop dark, deeply furrowed bark"
+        exceptions: "Young trees have smoother bark; some species have less furrowed bark"
+      
+      - feature_id: "LEAF-SURFACE-03"  # Glossy leaves
+        notes: "Many black oak species have glossy, shiny leaf surfaces"
+        exceptions: "Some species like Canyon Live Oak have duller leaf surfaces, especially with age"
+      
+    sometimes_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        conditions: "California Black Oak drops its leaves in winter"
+        notes: "Some black oak species are winter deciduous"
+      
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        conditions: "Coast Live Oak, Interior Live Oak, Canyon Live Oak, and Scrub Oak keep leaves year-round"
+        notes: "Many California black oak species are evergreen, especially in milder climates"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium to large tree
+        conditions: "Most species except Scrub Oak"
+        notes: "Most black oak species grow into substantial trees"
+      
+      - feature_id: "TREE-FORM-06"  # Shrubby form
+        conditions: "Scrub Oak specifically"
+        notes: "Some black oak species have a shrubby growth habit rather than a tree form"
+      
+    never_true:
+      - feature_id: "LEAF-EDGE-03"  # Rounded lobes without bristles
+        notes: "Black oaks never have rounded lobes without bristle tips (a key difference from white oaks)"
+      
+      - feature_id: "BRANCH-ARRANGE-01"  # Opposite branching
+        notes: "Oaks always have alternate branching pattern, never opposite"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Leaves with pointed 'fingers' (lobes) that have tiny bristles at the tips"
+    memorable_comparison: "The leaves look like hands with fingers that each have a tiny hair at the tip"
+    touch_tip: "Feel the leaf edges carefully - you can feel the sharp bristle tips (but they're not usually painful)"
+    smell_tip: "The leaves might have a fresh, slightly bitter scent when crushed"
+    fun_fact: "Black Oak acorns are so bitter that Native Americans had to wash them many times to remove the bitterness before eating them!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "Look at the leaf shape - does it have pointed lobes with tiny bristles at the tips? Or spiny edges with bristles?"
+        yes_next: 2
+        no_next: "If the leaf lobes are rounded without bristles, check White Oak Group instead"
+      - step: 2
+        instruction: "Are the leaves shiny (glossy) on top, especially in summer?"
+        yes_next: 3
+        no_next: "If leaves have bristle tips but aren't shiny, it's still likely a Black Oak type"
+      - step: 3
+        instruction: "Look for acorns (in fall) - do they sit in deeper cups that might cover half or more of the nut?"
+        yes_next: "You've found a Black Oak!"
+        no_next: "If you can't find acorns, that's okay - the bristle-tipped leaves are the most important clue"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaves unfold, often with reddish tint; some species produce hanging catkins (pollen structures)"
+      reproductive_activity: "Produces inconspicuous flowers; pollen released from catkins"
+      identification_tips: "Young leaves already show bristle tips; reddish new growth on some species"
+      kid_friendly_tip: "In spring, new leaves might look reddish before turning green, but you can already see the bristle tips"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of mature leaves, often glossy dark green; acorns developing on some branches"
+      reproductive_activity: "First-year acorns begin developing; second-year acorns continue growing"
+      identification_tips: "Glossy appearance of leaves; bristle tips clearly visible"
+      kid_friendly_tip: "Summer is when the leaves are at their shiniest, like they've been polished"
+    
+    - season: "Fall"
+      visual_changes: "Deciduous species may turn red before dropping leaves; evergreen species maintain leaves; acorns mature"
+      reproductive_activity: "Second-year acorns fully mature and drop; first-year acorns persist through winter"
+      identification_tips: "Mature acorns present; deciduous species may show fall color"
+      kid_friendly_tip: "Fall is when you can find the mature acorns under Black Oak trees"
+    
+    - season: "Winter"
+      visual_changes: "Deciduous species lose leaves, showing branch structure; evergreen species keep their leaves"
+      reproductive_activity: "Dormant; first-year acorns remain small on evergreen species"
+      identification_tips: "Evergreen species easily identified by leaves; deciduous by bark and branch pattern"
+      kid_friendly_tip: "Some Black Oaks keep their leaves all winter (like Coast Live Oak), while others drop them (like California Black Oak)"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Leaves with pointed lobes and bristle tips"
+      reliability: "Very high"
+      visibility: "Easily visible during growing season"
+    - feature: "Glossy leaf surface on many species"
+      reliability: "Medium to high"
+      visibility: "Visible in good light conditions"
+    - feature: "Acorns with deeper cups (if present)"
+      reliability: "High"
+      visibility: "Seasonal; visible in late summer and fall"
+    
+  look_alike_species:
+    - species: "White Oak Group (Quercus species, white oak section)"
+      differences: "White oaks have rounded lobes without bristle tips; typically less glossy leaves; acorns mature in one year"
+      identification_tip: "If the leaf lobes are rounded without bristles, it's a white oak, not a black oak"
+    
+    - species: "Holly (Ilex species)"
+      differences: "Holly has spiny-edged leaves that are similar to some live oaks but produces red berries, not acorns"
+      identification_tip: "If you see red berries instead of acorns, it's holly not oak"
+    
+    - species: "Chestnut (Castanea species)"
+      differences: "Chestnut has toothed leaves that are longer and narrower than oak leaves; produces spiny bur fruits, not acorns"
+      identification_tip: "Chestnut leaves are more elongated with small regular teeth, not lobes with bristles"
+    
+  cultural_ecological_notes:
+    - "Black oaks are culturally significant to California Native American tribes, though acorns required more processing than white oaks"
+    - "Acorns were an important food source after leaching out the bitter tannins"
+    - "Wood from black oaks was used for tools, construction, and firewood"
+    - "Coast Live Oak provides important habitat in coastal ecosystems"
+    - "California Black Oak is a key species in mid-elevation forest communities"
+    
+  range_within_california:
+    - "California Black Oak found in mountain forests throughout the state, especially in Sierra Nevada"
+    - "Coast Live Oak common along coast from northern to southern California"
+    - "Interior Live Oak found in foothills of Sierra Nevada and interior valleys"
+    - "Canyon Live Oak grows in canyons and slopes throughout California mountains"
+    - "Scrub Oak common in chaparral communities across the state"
+    
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-EDGE-06"  # Bristle-tipped leaves
+      - "feature_id: FRUIT-TYPE-02"  # Acorns
+    confirmation_features:
+      - "feature_id: LEAF-SURFACE-03"  # Glossy leaves
+      - "feature_id: BARK-TEXT-04"  # Furrowed bark
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-TYPE-02", "TREE-FORM-04"]  # Many are evergreen, spreading form
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-EDGE-06", "LEAF-SURFACE-03"]  # Bristle tips, glossy surface
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-02", "BRANCH-ARRANGE-02"]  # Acorns, alternate branching
+    seasonal_identification:
+      spring:
+        reliability: "Medium to high"
+        key_features: ["LEAF-EDGE-06", "LEAF-SURFACE-03"]
+        notes: "New leaves show bristle tips; often with reddish tint"
+      summer:
+        reliability: "High"
+        key_features: ["LEAF-EDGE-06", "LEAF-SURFACE-03"]
+        notes: "Full leaf development with glossy appearance"
+      fall:
+        reliability: "Very high" 
+        key_features: ["FRUIT-TYPE-02", "LEAF-EDGE-06"]
+        notes: "Presence of acorns; distinctive leaf shape"
+      winter:
+        reliability: "Medium"
+        key_features: ["LEAF-TYPE-02", "BARK-TEXT-04"]
+        notes: "Evergreen species identified by leaves; deciduous by bark"
+
+  wildlife_value:
+    - "Acorns provide important food source for many wildlife species, including deer, squirrels, and birds"
+    - "Dense evergreen canopies provide nesting sites and shelter for birds"
+    - "Large, mature trees offer nesting cavities for owls, woodpeckers, and other cavity-nesters"
+    - "Oak leaves support many insect species that become food for birds"
+    - "Oak woodlands are among the most biodiverse ecosystems in California"
+    - "Even fallen leaves and branches create habitat for insects, fungi, and small animals"
