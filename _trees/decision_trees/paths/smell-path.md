@@ -2,6 +2,10 @@
 
 Crush a leaf or needle and smell it.
 
+**Special Feature Pages:**
+- [Eucalyptus Group](trees/eucalyptus-group.md) - Learn about the aromatic eucalyptus species
+- [Pine Group](trees/pine-group.md) - Discover how to identify pines by their distinctive scents
+
 ```
 ├── The LEAVES or NEEDLES SMELL interesting when crushed!
 │   ├── What TYPE of smell do they have?

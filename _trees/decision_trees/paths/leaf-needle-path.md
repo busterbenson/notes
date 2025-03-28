@@ -4,6 +4,10 @@ Look closely at the leaves or needles of your tree.
 
 **Special Feature Pages:**
 - [Redwood & Sequoia Group](trees/redwood-sequoia-group.md) - Compare the three majestic redwood-type trees
+- [Oak Group](trees/oak-group.md) - Identify various oak species by their distinctive leaves
+- [Pine Group](trees/pine-group.md) - Learn to tell pines apart by their needle bundles
+- [Maple Group](trees/maple-group.md) - Explore maples with their star-shaped leaves
+- [Eucalyptus Group](trees/eucalyptus-group.md) - Discover the aromatic introduced eucalyptus species
 
 ```
 ├── The LEAVES or NEEDLES look interesting!

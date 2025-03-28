@@ -1,50 +1,48 @@
-# Card 10110111.yml - The Clinging in Summer (Sage)
+# Card 10110111.yml - The Clinging Sage in Summer
 card:
   # Summary
-  binary:      "10110111"
-  decimal:     "183"
-  hexadecimal: "B7"
+  binary:      "10110111"  # 8-bit binary code
+  decimal:     "183"       # Decimal equivalent
+  hexadecimal: "B7"        # Hexadecimal equivalent
 
   # Basic Info
-  # These are crude associations, and will serve as inputs for the interpreted meaning 
   basic_info: 
-    desc: "This card represents the profound wisdom that emerges when we fully understand the nature of attachment and clarity. It embodies the paradox of double fire energy – the inner world of intuition and capacity mirroring the outer world of expectations and options – both illuminating and potentially consuming. In its Sage aspect in Summer, it reveals the transcendent understanding of how desire can be transformed into luminous insight."
+    desc: "The Clinging Sage represents the profound wisdom that emerges when we fully understand the nature of attachment and clarity. This card captures the essence of Hexagram 30 (Li/The Clinging) expressed through Summer's qualities of maturity and abundance. As the most integrated form of this hexagram, the Summer Sage embodies transcendent understanding of how desire can be transformed into luminous insight. With intuition and capacity but lacking ability in the inner world, and expectations and options but lacking support in the outer world, this figure navigates the paradox of double fire energy with wisdom. The sage recognizes that fire, like desire, can be both illuminating and consuming - appreciating its brightness without being burned by it."
     
-    keywords: ["wise illumination", "transcendent clarity", "enlightened attachment", "sage-like radiance", "profound brightness", "luminous understanding"]
-    symbols: ["summer lake reflecting twin flames", "full moon partially eclipsed by fire", "sage holding flame without burning", "fire contained in crystal vessel", "lightning illuminating night sky", "twin fires mirroring each other"]
+    keywords: ["Wise illumination", "Transcendent clarity", "Enlightened attachment", "Sage-like radiance", "Profound brightness", "Luminous understanding"]
+    symbols: ["Summer lake reflecting twin flames", "Full moon partially eclipsed by fire", "Sage holding flame without burning", "Fire contained in crystal vessel", "Lightning illuminating night sky", "Twin fires mirroring each other"]
   
-  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
-  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  # Direct Associations
   direct_associations:
-    archetype: "Sage" # Summer is the resonant season for this hexagram (Inner 1, Outer 1)
-    archetype_color: "Purple"
-    gender: "Feminine" # 4 bits set to 1 in positions 1-6: Fool and Sage are feminine
+    archetype: "Sage" # Summer is the resonant season for this hexagram
+    archetype_color: "Iridescent" # Sage: Iridescent, Fool: Turquoise, Hero: Gold, Monster: Purple
+    gender: "feminine" # With 4 bits set to 1, Sage is feminine
 
     ## Inner World (bits 1-3)
     inner_world:
-      color: "Magenta"
-      trigram: "Fire"
-      meaning: "Intuitive and resourceful but lacking practical skills; has the vision and space but needs help executing."
+      color: "Magenta" # From rgb_colors mapping
+      trigram: "☲" # From i_ching_trigrams mapping (Fire)
+      meaning: "Intuitive and resourceful but lacking practical skills; has the vision and space but needs help executing" # From composite_frameworks.inner_world.meanings
 
     ## Outer World (bits 4-6)
     outer_world:
-      color: "Magenta"
-      trigram: "Fire"
-      meaning: "Alignment with expectations and clear options, but lacking support; clear authorized path without assistance."
+      color: "Magenta" # From rgb_colors mapping
+      trigram: "☲" # From i_ching_trigrams mapping (Fire)
+      meaning: "Alignment with expectations and clear options, but lacking support; clear authorized path without assistance" # From composite_frameworks.outer_world.meanings
 
     ## Cycle (bits 7-8)
     cycle: 
-      season: "Summer"
-      tarot_suit: "Cups"
-      moon_phase: "Full Moon"
-      element: "Water"
+      season: "Summer" # From bit_definitions.bit78.meanings
+      tarot_suit: "Cups" # From bit_definitions.bit78.meanings
+      moon_phase: "Full Moon" # From bit_definitions.bit78.meanings
+      element: "Water" # From bit_definitions.bit78.meanings
 
     # Tarot
     tarot:
       card: "The Clinging" # The corresponding tarot card for bits 1-6
       cycle_suit: "Cups" # The corresponding tarot suit for bits 7-8
-      cycle_moon: "Full"
-      seasonal_expression: "The Clinging manifests profound wisdom in Summer as the Sage, revealing the transcendent understanding of how desire and attachment can be transformed into illumination when fully embraced and understood."
+      cycle_moon: "Full Moon"
+      seasonal_expression: "The Clinging energy expressed through the wisdom of the Sage, modified by Summer's qualities of maturity and abundance, creating a profound understanding of how desire and attachment can be transformed into illumination when fully embraced and understood."
 
     # Hexagram-related
     hexagram:
@@ -60,38 +58,25 @@ card:
         siddhi: "Rapture"
         meaning: "A journey from craving and attachment to buoyancy and delight and ultimately ecstatic union with the divine"
 
-  # Interpreted Meanings (combining all of the direct associations in various ways)
-  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  # Interpreted Meanings
   interpreted_meanings: 
     basic:
       name_6bit: "The Clinging"
-      name_8bit: "The Full Clinging"
+      name_8bit: "The Clinging Sage in Summer"
 
-    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
-    # Style guidelines: Inspired by the clear and simple design of the Rider Waite Smith deck, the 
-    # vibe of the Brady Tarot deck, and the humor and complexity of the Arcane Bullshit deck. 
-    # The card should use a limited color palette, lines as if created via risograph, be full-bleed, 
-    # include the name on the card, as well as the card_scene, some hint of the resonant season, and the universal symbol.
-    # The names of the cards should feel like they are part of a cohesive deck, and be completely devoid of cliches.
-    # Be sure to work in the colors (inner = foreground, outer = background) as well as the actual 8-bit binary code that this card represents.
+    # Oracle card creation
     oracle_card:
       card_name: "Illuminating Attachment"
+      # 4 bits set to 1, so Sage is feminine
       card_creature: "A female sage whose body appears to be made of living flame yet is not consumed, whose eyes contain the wisdom of understanding the true nature of desire, holding identical fires in each palm that mirror rather than oppose each other"
       question_posed: "What attachments in your life might become sources of wisdom if fully understood rather than simply indulged or rejected?"
       card_scene: "A serene female sage sits at the edge of a summer lake under the full moon, her body radiating with magenta light that neither burns nor consumes. In each palm she holds identical flames that mirror each other perfectly, suggesting the doubled fire energy of this card. The sage's expression shows neither craving nor aversion, but profound understanding of fire's dual nature as both illuminator and consumer. The full moon overhead is partially eclipsed, creating a perfect balance of light and shadow. The lake's surface reflects both the sage's twin flames and the eclipsed moon, creating a mandala-like pattern of mirrored illumination. Around her, moths and other night creatures are drawn to the light but appear to dance with it rather than being consumed. The sage sits within a circle of perfectly arranged crystal vessels, each containing a small flame that neither grows nor diminishes. The light from these vessels creates a boundary that feels like protection rather than limitation. In the distance, lightning briefly illuminates the summer sky, echoing the contained fire closer at hand. The sage's robes appear both solid and fluid, flowing like water yet radiant like flame, embodying the paradox of fire expressed through water. Several items that would normally burn – paper, wood, cloth – rest within the flames without being consumed, transformed into vessels for light rather than fuel for consumption. The entire scene conveys the transcendent understanding that emerges when we neither reject desire nor become consumed by it, but fully understand its nature as a potential source of illumination."
       universal_symbol: "The mirrored flames – identical fires that illuminate rather than oppose each other, representing the transformed understanding of desire and attachment"
       mood: "Profound clarity, transcendent understanding, the luminous wisdom that emerges when desire and attachment are neither indulged nor rejected but fully understood"
 
-      # USE THIS PROMPT TEMPLATE BUT FILL IN WITH SPECIFIC DETAILS FOR THIS CARD:
-      # Limited color risograph-style illustration of [short scene description].
-      # Use [INNER WORLD COLOR] for foreground elements (inner world) and [OUTER WORLD COLOR] for background/environment (outer world), with [ACCENT COLOR] for highlights.
-      # Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
-      # Include a clean, full-width title bar at the bottom, with centered 8-bit code "[XXXXXXXX]" and card title "[CARD TITLE]" in bold, without corner decorations or symbols.
-      # Feature [key symbolic elements, e.g., moon phase, animal companions, symbolic object].
-      # The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle seasonal/elemental references appropriate for [SEASON] (e.g., [Air/Winter], [Fire/Spring], [Water/Summer], [Earth/Fall]).
-      # Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean.
+      # Image generation prompt
       prompt_for_image_gen: "Limited color risograph-style illustration of a serene female sage sitting at the edge of a summer lake under a full moon, holding identical flames in each palm that mirror each other perfectly, her body radiating with light that neither burns nor consumes.
-      Use MAGENTA for foreground elements (inner world) and MAGENTA for background/environment (outer world), with deep purple and luminous white accents.
+      Use MAGENTA for foreground elements (inner world) and MAGENTA for background/environment (outer world), with iridescent and luminous white accents.
       Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
       Include a clean, full-width title bar at the bottom, with centered 8-bit code '10110111' and card title 'ILLUMINATING ATTACHMENT' in bold, without corner decorations or symbols.
       Feature a partially eclipsed full moon, a lake surface reflecting both flames and moon in a mandala pattern, moths dancing with light rather than burning in it, and crystal vessels containing small flames arranged in a circle.
@@ -107,15 +92,15 @@ card:
     same_card_spring: "10110110" # The Clinging in Spring (Monster)
         
     # Opposites
-    opposite: "01001000" # Detachment in Winter - illuminating attachment vs. cold detachment
+    opposite: "01001000" # The Abysmal in Winter - illuminating attachment vs. wise depth
     
     # Related thematically
-    thematic_pair: "11111111" # The Sun in Summer - complete illumination related to dual fire energy
+    thematic_pair: "11111111" # The Creative in Summer - complete illumination related to dual fire energy
     
-    # Complete cycle
-    full_cycle: ["10110111","10110101","10110100","10110110"] # The Clinging in all seasons
+    # Complete cycle - order depends on resonant season, always starts with Sage
+    full_cycle: ["10110111","10110101","10110100","10110110"] # Summer (Sage), Fall (Fool), Winter (Hero), Spring (Monster)
     
-  # Bit Values
+  # Bit Values - for reference and calculation
   bit_values:
     bit1: "1"  # Intuition
     bit2: "0"  # Ability
@@ -123,4 +108,30 @@ card:
     bit4: "1"  # Expectations
     bit5: "0"  # Support
     bit6: "1"  # Options
-    bit78: "11" # Cycle phase (Summer)
+    bit78: "11" # Cycle phase = Summer
+
+  # Fractal Manifestations
+  fractal_meanings:
+    quantum:
+      pattern: "Quantum entanglement where connected particles maintain perfect correlation regardless of distance"
+      insight: "True understanding of attachment reveals connections that transcend conventional separation"
+    
+    biological:
+      pattern: "Bioluminescence that transforms energy into light without generating destructive heat"
+      insight: "When properly understood, desire becomes a source of illumination rather than consumption"
+    
+    psychological:
+      pattern: "The transformation of intense desire into profound insight through meditative awareness"
+      insight: "By fully experiencing attachment without rejecting or clinging to it, wisdom naturally emerges"
+    
+    social:
+      pattern: "Communities centered around shared illumination rather than consuming resources"
+      insight: "Human connections that focus on mutual enlightenment create sustainable bonds beyond codependence"
+    
+    ecological:
+      pattern: "Forest ecosystems that depend on periodic fires for renewal without being consumed"
+      insight: "What appears destructive when misunderstood often reveals itself as essential for ongoing vitality"
+    
+    cosmic:
+      pattern: "Stars generating light and life through fusion without immediate self-destruction"
+      insight: "The universe itself demonstrates how controlled burning creates illumination that sustains rather than consumes"

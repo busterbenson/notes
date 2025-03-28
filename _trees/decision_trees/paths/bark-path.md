@@ -4,6 +4,8 @@ Look at the bark of your tree.
 
 **Special Feature Pages:**
 - [Redwood & Sequoia Group](trees/redwood-sequoia-group.md) - Compare the distinctive reddish, spongy bark of redwoods and sequoias
+- [White & Peeling Bark Group](trees/white-peeling-bark-group.md) - Identify trees with striking white or peeling bark
+- [Red & Orange Bark Group](trees/red-orange-bark-group.md) - Discover trees with warm-colored, eye-catching bark
 
 ```
 ├── The BARK looks interesting!

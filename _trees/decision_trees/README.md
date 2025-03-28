@@ -55,7 +55,24 @@ If no feature of the tree particularly stands out:
 3. Use multiple characteristics together to make an identification
 
 The guide also includes detailed leaf node files for notable tree groups:
+
+**Leaf & Needle Identification:**
 - [Redwood & Sequoia Group](paths/trees/redwood-sequoia-group.md) - A comprehensive comparison of three majestic California trees
+- [Oak Group](paths/trees/oak-group.md) - Identification guide for California's diverse oak species
+- [Pine Group](paths/trees/pine-group.md) - How to distinguish pine species by their needle bundles
+- [Maple Group](paths/trees/maple-group.md) - Guide to maples with their distinctive lobed leaves
+- [Eucalyptus Group](paths/trees/eucalyptus-group.md) - Identification of introduced eucalyptus species
+
+**Bark Identification:**
+- [White & Peeling Bark Group](paths/trees/white-peeling-bark-group.md) - Trees with striking white or peeling bark
+- [Red & Orange Bark Group](paths/trees/red-orange-bark-group.md) - Trees with warm-colored, distinctive bark
+
+**Fruit, Cone & Seed Identification:**
+- [Oak & Acorn Group](paths/trees/oak-acorn-group.md) - Identifying oaks by their distinctive acorns
+- [Winged Seed Group](paths/trees/winged-seed-group.md) - Trees with helicopter-like winged seeds
+
+**Flower Identification:**
+- [Flowering Trees Group](paths/trees/flowering-trees-group.md) - Guide to California's most spectacular flowering trees
 
 ## Notes
 

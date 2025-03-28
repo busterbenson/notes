@@ -2,6 +2,9 @@
 
 Look at the flowers of your tree.
 
+**Special Feature Pages:**
+- [Flowering Trees Group](trees/flowering-trees-group.md) - Explore spectacular flowering trees of California
+
 ```
 ├── The FLOWERS catch my eye!
 │   ├── What COLOR are the flowers?

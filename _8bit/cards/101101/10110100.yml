@@ -1,50 +1,48 @@
-# Card 10110100.yml - The Clinging in Winter (Hero)
+# Card 10110100.yml - The Clinging Hero in Winter
 card:
   # Summary
-  binary:      "10110100"
-  decimal:     "180"
-  hexadecimal: "B4"
+  binary:      "10110100"  # 8-bit binary code
+  decimal:     "180"       # Decimal equivalent
+  hexadecimal: "B4"        # Hexadecimal equivalent
 
   # Basic Info
-  # These are crude associations, and will serve as inputs for the interpreted meaning 
   basic_info: 
-    desc: "This card represents the masterful control and strategic harnessing of fire and clarity. It embodies the paradox of double fire energy – the inner world of intuition and capacity mirroring the outer world of expectations and options – approached with confident skill. In its Hero aspect in Winter, it reveals the powerful competence that emerges when we learn to direct and utilize brightness and attachment rather than being consumed by them."
+    desc: "The Clinging Hero represents the masterful control and strategic harnessing of fire and clarity. This card captures the essence of Hexagram 30 (Li/The Clinging) expressed through Winter's qualities of restraint and conservation. As the Hero in the cycle, this figure tackles brightness and attachment with tactical skill and confident mastery. With intuition and capacity but lacking ability in the inner world, and expectations and options but lacking support in the outer world, this figure harnesses the paradox of double fire energy with strategic precision. The hero transforms potentially destructive flame into purposeful illumination through practical techniques and disciplined action."
     
-    keywords: ["masterful illumination", "strategic brightness", "controlled fire", "skilled radiance", "directed clarity", "harnessed attachment"]
-    symbols: ["winter forge with focused flame", "new moon outlined in firelight", "blacksmith shaping metal with fire", "lamp illuminating snow path", "fire contained in precise vessel", "flame cutting through ice"]
+    keywords: ["Masterful illumination", "Strategic brightness", "Controlled fire", "Skilled radiance", "Directed clarity", "Harnessed attachment"]
+    symbols: ["Winter forge with focused flame", "New moon outlined in firelight", "Blacksmith shaping metal with fire", "Lamp illuminating snow path", "Fire contained in precise vessel", "Flame cutting through ice"]
   
-  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
-  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  # Direct Associations
   direct_associations:
-    archetype: "Hero" # Winter follows Fall in the cycle for this hexagram (Sage in Summer)
-    archetype_color: "Turquoise"
-    gender: "Masculine" # 4 bits set to 1 in positions 1-6: Hero and Monster are masculine
+    archetype: "Hero" # Determined by resonant season and seasonal cycle
+    archetype_color: "Gold" # Sage: Iridescent, Fool: Turquoise, Hero: Gold, Monster: Purple
+    gender: "masculine" # With 4 bits set to 1, Hero is masculine
 
     ## Inner World (bits 1-3)
     inner_world:
-      color: "Magenta"
-      trigram: "Fire"
-      meaning: "Intuitive and resourceful but lacking practical skills; has the vision and space but needs help executing."
+      color: "Magenta" # From rgb_colors mapping
+      trigram: "☲" # From i_ching_trigrams mapping (Fire)
+      meaning: "Intuitive and resourceful but lacking practical skills; has the vision and space but needs help executing" # From composite_frameworks.inner_world.meanings
 
     ## Outer World (bits 4-6)
     outer_world:
-      color: "Magenta"
-      trigram: "Fire"
-      meaning: "Alignment with expectations and clear options, but lacking support; clear authorized path without assistance."
+      color: "Magenta" # From rgb_colors mapping
+      trigram: "☲" # From i_ching_trigrams mapping (Fire)
+      meaning: "Alignment with expectations and clear options, but lacking support; clear authorized path without assistance" # From composite_frameworks.outer_world.meanings
 
     ## Cycle (bits 7-8)
     cycle: 
-      season: "Winter"
-      tarot_suit: "Swords"
-      moon_phase: "New Moon"
-      element: "Air"
+      season: "Winter" # From bit_definitions.bit78.meanings
+      tarot_suit: "Swords" # From bit_definitions.bit78.meanings
+      moon_phase: "New Moon" # From bit_definitions.bit78.meanings
+      element: "Air" # From bit_definitions.bit78.meanings
 
     # Tarot
     tarot:
       card: "The Clinging" # The corresponding tarot card for bits 1-6
       cycle_suit: "Swords" # The corresponding tarot suit for bits 7-8
-      cycle_moon: "New"
-      seasonal_expression: "The Clinging manifests masterful control in Winter as the Hero, skillfully directing the energy of fire and attachment toward precise purposes with confident expertise."
+      cycle_moon: "New Moon"
+      seasonal_expression: "The Clinging energy manifested as masterful control in Winter as the Hero, skillfully directing the energy of fire and attachment toward precise purposes with confident expertise."
 
     # Hexagram-related
     hexagram:
@@ -60,38 +58,25 @@ card:
         siddhi: "Rapture"
         meaning: "A journey from craving and attachment to buoyancy and delight and ultimately ecstatic union with the divine"
 
-  # Interpreted Meanings (combining all of the direct associations in various ways)
-  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  # Interpreted Meanings
   interpreted_meanings: 
     basic:
       name_6bit: "The Clinging"
-      name_8bit: "The New Clinging"
+      name_8bit: "The Clinging Hero in Winter"
 
-    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
-    # Style guidelines: Inspired by the clear and simple design of the Rider Waite Smith deck, the 
-    # vibe of the Brady Tarot deck, and the humor and complexity of the Arcane Bullshit deck. 
-    # The card should use a limited color palette, lines as if created via risograph, be full-bleed, 
-    # include the name on the card, as well as the card_scene, some hint of the resonant season, and the universal symbol.
-    # The names of the cards should feel like they are part of a cohesive deck, and be completely devoid of cliches.
-    # Be sure to work in the colors (inner = foreground, outer = background) as well as the actual 8-bit binary code that this card represents.
+    # Oracle card creation
     oracle_card:
       card_name: "Harnessed Fire"
+      # 4 bits set to 1, so Hero is masculine
       card_creature: "A masterful male smith who works confidently with twin flames, neither fearing nor worshipping their power but precisely controlling their energy to transform raw materials into tools of extraordinary precision and purpose"
       question_posed: "How might you skillfully direct your attachments and desires toward purposeful creation rather than being consumed by them?"
       card_scene: "A confident male blacksmith stands in a winter forge, the outside world covered in snow and darkness while his workspace glows with the precisely controlled magenta flames of twin forges. Unlike the female sage's contemplative holding or the female child's playful discovery, the smith actively directs these flames with skillful movements and specialized tools. His expression shows neither the detachment of wisdom nor the naivety of innocence, but rather the focused determination of expertise. The darkness outside is complete, with only the outline of a new moon visible against the night sky, creating a sharp contrast with the directed light within the forge. Through the open door, a path through the snow is visible, illuminated by carefully placed lamps that guide travelers safely through the winter night. The smith works simultaneously on two identical pieces of metal, heating them to precisely the same temperature in separate forges, creating mirrored objects that will function in perfect tandem. Around the forge, specialized tools hang in perfect order – tongs, hammers, quenching baths – each designed to work with fire in different ways. Ice crystals form on the edges of the forge's open windows, neither melting completely nor encroaching further inward, held in perfect balance by the smith's precise control of temperature. A complex mechanical device near completion sits on a workbench – a lantern of unprecedented design that will amplify and direct light with extraordinary precision. The smith wears protective gear that allows close work with dangerous flame without risk of harm, neither avoiding fire nor being consumed by it. The entire scene conveys the masterful competence that emerges when the energy of attachment and desire is neither rejected nor indulged, but skillfully directed toward purposeful creation."
       universal_symbol: "The smith's tongs – precise tools that allow engagement with fire without danger, representing the skilled harnessing of desire and attachment"
       mood: "Confident expertise, strategic control, the powerful competence that emerges when brightness and attachment are neither feared nor worshipped but masterfully directed"
 
-      # USE THIS PROMPT TEMPLATE BUT FILL IN WITH SPECIFIC DETAILS FOR THIS CARD:
-      # Limited color risograph-style illustration of [short scene description].
-      # Use [INNER WORLD COLOR] for foreground elements (inner world) and [OUTER WORLD COLOR] for background/environment (outer world), with [ACCENT COLOR] for highlights.
-      # Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
-      # Include a clean, full-width title bar at the bottom, with centered 8-bit code "[XXXXXXXX]" and card title "[CARD TITLE]" in bold, without corner decorations or symbols.
-      # Feature [key symbolic elements, e.g., moon phase, animal companions, symbolic object].
-      # The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle seasonal/elemental references appropriate for [SEASON] (e.g., [Air/Winter], [Fire/Spring], [Water/Summer], [Earth/Fall]).
-      # Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean.
+      # Image generation prompt
       prompt_for_image_gen: "Limited color risograph-style illustration of a confident male blacksmith standing in a winter forge, working with twin fires to create mirrored objects, precisely controlling the flames with specialized tools and skilled movements.
-      Use MAGENTA for foreground elements (inner world) and MAGENTA for background/environment (outer world), with turquoise and deep blue accents.
+      Use MAGENTA for foreground elements (inner world) and MAGENTA for background/environment (outer world), with gold and deep blue accents.
       Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
       Include a clean, full-width title bar at the bottom, with centered 8-bit code '10110100' and card title 'HARNESSED FIRE' in bold, without corner decorations or symbols.
       Feature a new moon outlined against night sky, a snowy path illuminated by carefully placed lamps, ice crystals forming perfect boundaries at forge edges, and specialized fire-working tools arranged in precise order.
@@ -107,15 +92,15 @@ card:
     same_card_spring: "10110110" # The Clinging in Spring (Monster)
         
     # Opposites
-    opposite: "01001011" # Detachment in Summer - harnessed fire vs. overwhelming detachment
+    opposite: "01001011" # The Abysmal in Summer - harnessed fire vs. masterful navigation
     
     # Related thematically
-    thematic_pair: "11111100" # The Sun in Winter - complete illumination related to dual fire energy
+    thematic_pair: "11111100" # The Creative in Winter - complete illumination related to harnessed fire
     
-    # Complete cycle
-    full_cycle: ["10110111","10110101","10110100","10110110"] # The Clinging in all seasons
+    # Complete cycle - order depends on resonant season, always starts with Sage
+    full_cycle: ["10110111","10110101","10110100","10110110"] # Summer (Sage), Fall (Fool), Winter (Hero), Spring (Monster)
     
-  # Bit Values
+  # Bit Values - for reference and calculation
   bit_values:
     bit1: "1"  # Intuition
     bit2: "0"  # Ability
@@ -123,4 +108,30 @@ card:
     bit4: "1"  # Expectations
     bit5: "0"  # Support
     bit6: "1"  # Options
-    bit78: "00" # Cycle phase (Winter)
+    bit78: "00" # Cycle phase = Winter
+
+  # Fractal Manifestations
+  fractal_meanings:
+    quantum:
+      pattern: "Controlled quantum excitation where energy states are precisely manipulated for specific outcomes"
+      insight: "Strategic mastery often involves directing potential energy toward intended results rather than suppressing it"
+    
+    biological:
+      pattern: "Metabolic processes that harness combustion energy for precise cellular functions"
+      insight: "Living systems demonstrate mastery by channeling the very forces that could destroy them into life-sustaining activities"
+    
+    psychological:
+      pattern: "The disciplined transformation of desire into focused creative work"
+      insight: "Strong attachments become most productive when consciously directed rather than either indulged or denied"
+    
+    social:
+      pattern: "Ceremonial fire keepers who maintain sacred flames through precise protocols across generations"
+      insight: "Cultures that sustain powerful symbols do so through disciplined practices that honor yet control their energy"
+    
+    ecological:
+      pattern: "Controlled burn practices that direct fire's transformative power to strengthen rather than destroy ecosystems"
+      insight: "What would be catastrophic if left wild often becomes regenerative when skillfully managed"
+    
+    cosmic:
+      pattern: "Nuclear fusion reactors attempting to harness the same processes that power stars"
+      insight: "Our greatest technological achievements often involve containing and directing forces that operate at cosmic scales"

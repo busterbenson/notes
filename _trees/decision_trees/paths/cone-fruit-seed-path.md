@@ -2,6 +2,12 @@
 
 Look at the cones, fruits, or seeds of your tree.
 
+**Special Feature Pages:**
+- [Oak & Acorn Group](trees/oak-acorn-group.md) - Identify oaks by their distinctive acorns
+- [Pine Group](trees/pine-group.md) - Learn about the various cone types across pine species
+- [Winged Seed Group](trees/winged-seed-group.md) - Discover trees with helicopter-like winged seeds
+- [Redwood & Sequoia Group](trees/redwood-sequoia-group.md) - Compare the distinctive cones of redwoods and sequoias
+
 ```
 ├── The CONES, FRUITS, or SEEDS catch my eye!
 │   ├── I see CONES → Go to Cone Features
