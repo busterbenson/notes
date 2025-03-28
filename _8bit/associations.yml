@@ -1,0 +1,1860 @@
+# 8-bit-oracle-base.yml - Universal card definitions and meanings
+version: "0.1.0"
+
+# Bit Definitions
+bit_definitions:
+  bit1:
+    bit_mask: "10000000"
+    position: 1
+    name: "Intuition"
+    domain: "Inner/Heart"
+    question: "Do you trust your natural instincts to direct you down the right path?"
+    meanings:
+      0: "No, intuition is not trusted or followed"
+      1: "Yes, intuition is trusted and followed"
+  bit2:
+    bit_mask: "01000000"
+    position: 2
+    name: "Ability"
+    domain: "Inner/Hands"
+    question: "Do you have the skills and know-how required to address this question on your own?"
+    meanings:
+      0: "No, required skills or know-how are lacking"
+      1: "Yes, required skills and know-how are present"
+  bit3:
+    bit_mask: "00100000"
+    position: 3
+    name: "Capacity"
+    domain: "Inner/Head"
+    question: "Do your current circumstances provide enough time, space, and resources to address this?"
+    meanings:
+      0: "No, circumstances do not provide sufficient resources"
+      1: "Yes, circumstances provide sufficient resources"
+  bit4:
+    bit_mask: "00010000"
+    position: 4
+    name: "Expectations"
+    domain: "Outer/Heart"
+    question: "Are you aligned with how cultural norms and expectations would want you to address this?"
+    meanings:
+      0: "No, not aligned with cultural norms and expectations"
+      1: "Yes, aligned with cultural norms and expectations"
+  bit5:
+    bit_mask: "00001000"
+    position: 5
+    name: "Support"
+    domain: "Outer/Hands"
+    question: "Do your closest relationships and community have your back in this?"
+    meanings:
+      0: "No, lacking support from relationships and community"
+      1: "Yes, supported by relationships and community"
+  bit6:
+    bit_mask: "00000100"
+    position: 6
+    name: "Options"
+    domain: "Outer/Head"
+    question: "Are the possible paths that you could choose from clear to you right now?"
+    meanings:
+      0: "No, possible paths are unclear"
+      1: "Yes, possible paths are clear"
+  bit78:
+    bit_mask: "00000011"
+    position: "7-8"
+    name: "Cycle Phase"
+    meanings:
+      "00":
+        phase: "New"
+        moon_phase: "New Moon"
+        season: "Winter"
+        tarot_suit: "Swords"
+        element: "Air"
+      "01":
+        phase: "Waxing"
+        moon_phase: "Waxing Moon"
+        season: "Spring"
+        tarot_suit: "Wands"
+        element: "Fire"
+      "11":
+        phase: "Full"
+        moon_phase: "Full Moon"
+        season: "Summer"
+        tarot_suit: "Cups"
+        element: "Water"
+      "10":
+        phase: "Waning"
+        moon_phase: "Waning Moon"
+        season: "Fall"
+        tarot_suit: "Pentacles"
+        element: "Earth"
+
+# Composite Frameworks
+composite_frameworks:
+  inner_world:
+    bits: "1-3"
+    bit_mask: "11100000"
+    description: "Relates to inner resources - intuition, ability, and capacity"
+    meanings:
+      "000": "Complete absence of inner resources; intuition, ability, and capacity are all absent"
+      "001": "Capacity to understand but lacking intuition and ability; can see what needs to be done but feels unable to act"
+      "010": "Technical ability present but lacking intuition and capacity; skilled execution without direction or resources"
+      "011": "Skilled and resourceful but lacks intuition; capable of executing but needs direction"
+      "100": "Strong intuition but lacking practical skills and resources; knows what feels right but can't manifest it"
+      "101": "Intuitive and resourceful but lacking practical skills; has the vision and space but needs help executing"
+      "110": "Intuitive and skilled but lacking resources; creative capacity limited by external constraints"
+      "111": "Complete presence of inner resources; self-sufficient, confident, and fully equipped"
+  outer_world:
+    bits: "4-6"
+    bit_mask: "00011100"
+    description: "Relates to outer resources - expectations, support, and options"
+    meanings:
+      "000": "Complete lack of outer resources; expectations, support, and options are all absent"
+      "001": "Clear options present, but lacking alignment with expectations and support"
+      "010": "Support present, but lacking alignment with expectations and clear options"
+      "011": "Support and options present, but misaligned with expectations; alternative paths with backing"
+      "100": "Alignment with expectations, but lacking support and clear options; conventional but adrift"
+      "101": "Alignment with expectations and clear options, but lacking support; clear authorized path without assistance"
+      "110": "Alignment with expectations and support, but unclear options; supported conventional path with limited choices"
+      "111": "Complete presence of outer resources; aligned with expectations, supported by others, with clear options"
+  heart:
+    bits: "1 & 4"
+    bit_mask: "10010000"
+    description: "Relates to emotional guidance - inner intuition and outer expectations"
+    meanings:
+      "00": "Neither inner intuition nor outer expectations provide emotional guidance"
+      "01": "Outer expectations provide guidance, but inner intuition is not trusted"
+      "10": "Inner intuition provides guidance, but not aligned with outer expectations"
+      "11": "Both inner intuition and outer expectations provide aligned emotional guidance"
+  hands:
+    bits: "2 & 5"
+    bit_mask: "01001000"
+    description: "Relates to practical assistance - inner ability and outer support"
+    meanings:
+      "00": "Neither inner ability nor outer support offer practical assistance"
+      "01": "Outer support present, but inner ability is lacking"
+      "10": "Inner ability present, but outer support is lacking"
+      "11": "Both inner ability and outer support offer practical assistance"
+  head:
+    bits: "3 & 6"
+    bit_mask: "00100100"
+    description: "Relates to mental clarity - inner capacity and outer options"
+    meanings:
+      "00": "Neither inner capacity nor outer options offer mental clarity"
+      "01": "Outer options are clear, but inner capacity is lacking"
+      "10": "Inner capacity present, but outer options are unclear"
+      "11": "Both inner capacity and outer options offer mental clarity"
+
+# 3-Bit Systems (applies to bits 1-3 and bits 4-6)
+
+# RGB Color System
+rgb_colors:
+  "000":
+    name: "Black"
+    rgb: "0,0,0"
+    qualities: "Void, absence, potential, darkness"
+  "001":
+    name: "Blue"
+    rgb: "0,0,255"
+    qualities: "Depth, calm, analytical, introspective"
+  "010":
+    name: "Green"
+    rgb: "0,255,0"
+    qualities: "Growth, practicality, abundance, nature"
+  "011":
+    name: "Cyan"
+    rgb: "0,255,255"
+    qualities: "Clarity, communication, fluidity, refreshing"
+  "100":
+    name: "Red"
+    rgb: "255,0,0"
+    qualities: "Passion, energy, intuition, vitality"
+  "101":
+    name: "Magenta"
+    rgb: "255,0,255"
+    qualities: "Transformation, spirituality, imagination"
+  "110":
+    name: "Yellow"
+    rgb: "255,255,0"
+    qualities: "Intellect, optimism, creativity, illumination"
+  "111":
+    name: "White"
+    rgb: "255,255,255"
+    qualities: "Wholeness, integration, unity, completion"
+
+# I Ching Trigram Definitions
+i_ching_trigrams:
+  "000":
+    name: "Earth"
+    trigram: ☷
+    alternative_name: "Kun"
+    qualities: "Receptive, yielding, responsive"
+  "001":
+    name: "Mountain"
+    trigram: ☶
+    alternative_name: "Gen"
+    qualities: "Stillness, stopping, resting"
+  "010":
+    name: "Water"
+    trigram: ☵
+    alternative_name: "Kan"
+    qualities: "Danger, pit, flowing downward"
+  "011":
+    name: "Thunder"
+    trigram: ☴
+    alternative_name: "Chen"
+    qualities: "Arousing, movement, action"
+  "100":
+    name: "Wind"
+    trigram: ☳
+    alternative_name: "Sun"
+    qualities: "Gentle, penetrating, gradual"
+  "101":
+    name: "Fire"
+    trigram: ☲
+    alternative_name: "Li"
+    qualities: "Clinging, clarity, brightness"
+  "110":
+    name: "Lake"
+    trigram: ☱
+    alternative_name: "Dui"
+    qualities: "Joyful, open, exchange"
+  "111":
+    name: "Heaven"
+    trigram: ☰
+    alternative_name: "Qian"
+    qualities: "Creative, strong, active"
+
+# Hexagram Reference - includes I Ching and Gene Keys
+hexagrams:
+  "000000":
+    i_ching:
+      number: 2
+      name: "Kun"
+      label: "The Receptive"
+      description: "Pure yin, yielding, responsive, accepting, following"
+    gene_key:
+      number: 2
+      shadow: "Dislocation"
+      gift: "Orientation"
+      siddhi: "Unity"
+      description: "A journey from feeling lost and disconnected to finding your true direction and ultimately experiencing oneness with all"
+  "000001":
+    i_ching:
+      number: 23
+      name: "Bo"
+      label: "Splitting Apart"
+      description: "Deterioration, erosion, gradual decay, falling away"
+    gene_key:
+      number: 23
+      shadow: "Complexity"
+      gift: "Simplicity"
+      siddhi: "Quintessence"
+      description: "A journey from mental complexity and confusion to elegant simplicity and ultimately the pure essence of being"
+  "000010":
+    i_ching:
+      number: 8
+      name: "Bi"
+      label: "Holding Together"
+      description: "Union, alliance, solidarity, working together"
+    gene_key:
+      number: 8
+      shadow: "Mediocrity"
+      gift: "Style"
+      siddhi: "Exquisiteness"
+      description: "A journey from average and unremarkable to distinctive style and ultimately the exquisite expression of your unique essence"
+  "000011":
+    i_ching:
+      number: 20
+      name: "Guan"
+      label: "Contemplation"
+      description: "Viewing, observing, reflecting, perspective"
+    gene_key:
+      number: 20
+      shadow: "Superficiality"
+      gift: "Self-Assurance"
+      siddhi: "Presence"
+      description: "A journey from shallow engagement to genuine confidence and ultimately complete embodied presence"
+  "000100":
+    i_ching:
+      number: 16
+      name: "Yu"
+      label: "Enthusiasm"
+      description: "Eagerness, joy, harmony, voluntary participation"
+    gene_key:
+      number: 16
+      shadow: "Indifference"
+      gift: "Versatility"
+      siddhi: "Mastery"
+      description: "A journey from emotional coldness to adaptability and ultimately complete mastery of skills and abilities"
+  "000101":
+    i_ching:
+      number: 35
+      name: "Jin"
+      label: "Progress"
+      description: "Advancing, flourishing, illumination, steady growth"
+    gene_key:
+      number: 35
+      shadow: "Hunger"
+      gift: "Adventure"
+      siddhi: "Boundlessness"
+      description: "A journey from insatiable craving to joyful exploration and ultimately experiencing the infinite abundance of life"
+  "000110":
+    i_ching:
+      number: 45
+      name: "Cui"
+      label: "Gathering Together"
+      description: "Assembly, accumulation, congregation, coming together"
+    gene_key:
+      number: 45
+      shadow: "Dominance"
+      gift: "Synarchy"
+      siddhi: "Communion"
+      description: "A journey from controlling others to harmonious leadership and ultimately deep spiritual connection with all beings"
+  "000111":
+    i_ching:
+      number: 12
+      name: "Pi"
+      label: "Standstill"
+      description: "Stagnation, obstruction, adversity, non-communication"
+    gene_key:
+      number: 12
+      shadow: "Vanity"
+      gift: "Discrimination"
+      siddhi: "Purity"
+      description: "A journey from self-absorption to discerning clarity and ultimately absolute purity of heart and intention"
+  "001000":
+    i_ching:
+      number: 15
+      name: "Qian"
+      label: "Modesty"
+      description: "Humility, reserve, moderation, keeping low profile"
+    gene_key:
+      number: 15
+      shadow: "Dullness"
+      gift: "Magnetism"
+      siddhi: "Florescence"
+      description: "A journey from lack of passion to natural attraction and ultimately radiant flowering of your true essence"
+  "001001":
+    i_ching:
+      number: 52
+      name: "Gen"
+      label: "Keeping Still"
+      description: "Stillness, stability, meditation, mountain"
+    gene_key:
+      number: 52
+      shadow: "Stress"
+      gift: "Restraint"
+      siddhi: "Stillness"
+      description: "A journey from tension and anxiety to calm self-discipline and ultimately perfect inner peace and tranquility"
+  "001010":
+    i_ching:
+      number: 39
+      name: "Jian"
+      label: "Obstruction"
+      description: "Hardship, difficulty, obstacles, challenging path"
+    gene_key:
+      number: 39
+      shadow: "Provocation"
+      gift: "Dynamism"
+      siddhi: "Liberation"
+      description: "A journey from reactivity and being triggered to focused dynamic action and ultimately complete liberation from limitation"
+  "001011":
+    i_ching:
+      number: 53
+      name: "Jian"
+      label: "Development"
+      description: "Gradual progress, slow growth, step-by-step advance"
+    gene_key:
+      number: 53
+      shadow: "Immaturity"
+      gift: "Expansion"
+      siddhi: "Superabundance"
+      description: "A journey from childish behavior to expansive growth and ultimately infinite creative abundance"
+  "001100":
+    i_ching:
+      number: 62
+      name: "Xiao Guo"
+      label: "Small Exceeding"
+      description: "Minor excess, slight imbalance, small surpassing"
+    gene_key:
+      number: 62
+      shadow: "Intellectualization"
+      gift: "Precision"
+      siddhi: "Impeccability"
+      description: "A journey from excessive mental analysis to focused accuracy and ultimately flawless perfection in every detail"
+  "001101":
+    i_ching:
+      number: 56
+      name: "Lü"
+      label: "The Wanderer"
+      description: "Traveling, impermanence, transience, temporary"
+    gene_key:
+      number: 56
+      shadow: "Distraction"
+      gift: "Enrichment"
+      siddhi: "Intoxication"
+      description: "A journey from mental scatter and diversions to deep enrichment of experience and ultimately divine ecstasy with life itself"
+  "001110":
+    i_ching:
+      number: 31
+      name: "Xian"
+      label: "Influence"
+      description: "Mutual attraction, wooing, stimulus, sensitivity"
+    gene_key:
+      number: 31
+      shadow: "Arrogance"
+      gift: "Leadership"
+      siddhi: "Humility"
+      description: "A journey from false pride to authentic guidance and ultimately genuine humility that inspires others"
+  "001111":
+    i_ching:
+      number: 33
+      name: "Dun"
+      label: "Retreat"
+      description: "Withdrawal, distancing, strategic yielding, stepping back"
+    gene_key:
+      number: 33
+      shadow: "Forgetting"
+      gift: "Mindfulness"
+      siddhi: "Revelation"
+      description: "A journey from amnesia and unawareness to present moment clarity and ultimately direct revelation of universal truth"
+  "010000":
+    i_ching:
+      number: 7
+      name: "Shi"
+      label: "The Army"
+      description: "Discipline, organization, coordinated force, leadership"
+    gene_key:
+      number: 7
+      shadow: "Division"
+      gift: "Guidance"
+      siddhi: "Virtue"
+      description: "A journey from separation and conflict to providing wise direction and ultimately embodying the highest moral excellence"
+  "010001":
+    i_ching:
+      number: 4
+      name: "Meng"
+      label: "Youthful Folly"
+      description: "Inexperience, learning process, beginning education"
+    gene_key:
+      number: 4
+      shadow: "Intolerance"
+      gift: "Understanding"
+      siddhi: "Forgiveness"
+      description: "A journey from judgment and rejection to compassionate comprehension and ultimately unconditional forgiveness"
+  "010010":
+    i_ching:
+      number: 29
+      name: "Kan"
+      label: "The Abysmal"
+      description: "Danger, water, repeated challenge, persistence through peril"
+    gene_key:
+      number: 29
+      shadow: "Half-heartedness"
+      gift: "Devotion"
+      siddhi: "Commitment"
+      description: "A journey from lack of dedication to full-hearted service and ultimately absolute commitment to your highest purpose"
+  "010011":
+    i_ching:
+      number: 59
+      name: "Huan"
+      label: "Dispersion"
+      description: "Dissolution, dispersal, scattering, overcoming barriers"
+    gene_key:
+      number: 59
+      shadow: "Dishonesty"
+      gift: "Intimacy"
+      siddhi: "Transparency"
+      description: "A journey from deception and secrecy to deep authentic connection and ultimately complete honesty and clarity"
+  "010100":
+    number: 40
+    name: "Jie"
+    label: "Deliverance"
+    description: "Release, liberation, resolution, untangling"
+  "010101":
+    i_ching:
+      number: 64
+      name: "Wei Ji"
+      label: "Before Completion"
+      description: "Not yet completed, transition, approaching the end"
+    gene_key:
+      number: 64
+      shadow: "Confusion"
+      gift: "Imagination"
+      siddhi: "Illumination"
+      description: "A journey from mental confusion to creative imagination and ultimately pure clarity and illumination - the starting point of transformation"
+  "010110":
+    i_ching:
+      number: 47
+      name: "Kun"
+      label: "Oppression"
+      description: "Exhaustion, confinement, feeling trapped, limitation"
+    gene_key:
+      number: 47
+      shadow: "Oppression"
+      gift: "Transmutation"
+      siddhi: "Liberation"
+      description: "A journey from feeling confined and limited to transforming difficulty into opportunity and ultimately absolute freedom"
+  "010111":
+    i_ching:
+      number: 6
+      name: "Song"
+      label: "Conflict"
+      description: "Dispute, contention, argument, controversy"
+    gene_key:
+      number: 6
+      shadow: "Conflict"
+      gift: "Diplomacy"
+      siddhi: "Peace"
+      description: "A journey from friction and antagonism to skillful mediation and ultimately profound harmony and peace"
+  "011000":
+    i_ching:
+      number: 46
+      name: "Sheng"
+      label: "Pushing Upward"
+      description: "Ascending, growth, advancement, gradual rising"
+    gene_key:
+      number: 46
+      shadow: "Seriousness"
+      gift: "Delight"
+      siddhi: "Ecstasy"
+      description: "A journey from heaviness and gravity to playful joy and ultimately transcendent rapture beyond conditions"
+  "011001":
+    i_ching:
+      number: 18
+      name: "Gu"
+      label: "Work on the Decayed"
+      description: "Correcting decay, repairing what's spoiled, reformation"
+    gene_key:
+      number: 18
+      shadow: "Judgment"
+      gift: "Integrity"
+      siddhi: "Perfection"
+      description: "A journey from criticism and condemnation to wholeness and authenticity and ultimately seeing the flawlessness in all things"
+  "011010":
+    i_ching:
+      number: 48
+      name: "Jing"
+      label: "The Well"
+      description: "Source, resource, structure, central point, community center"
+    gene_key:
+      number: 48
+      shadow: "Inadequacy"
+      gift: "Resourcefulness"
+      siddhi: "Wisdom"
+      description: "A journey from feelings of insufficiency to ingenious problem-solving and ultimately profound universal wisdom"
+  "011011":
+    i_ching:
+      number: 57
+      name: "Xun"
+      label: "The Gentle"
+      description: "Penetration, influence, adaptation, flexibility"
+    gene_key:
+      number: 57
+      shadow: "Unease"
+      gift: "Intuition"
+      siddhi: "Omniscience"
+      description: "A journey from restlessness and anxiety to intuitive knowing and ultimately universal consciousness and knowing"
+  "011100":
+    i_ching:
+      number: 32
+      name: "Heng"
+      label: "Duration"
+      description: "Perseverance, constancy, lasting, enduring value"
+    gene_key:
+      number: 32
+      shadow: "Failure"
+      gift: "Preservation"
+      siddhi: "Veneration"
+      description: "A journey from defeat and disappointment to maintaining what is valuable and ultimately deep reverence for all of life"
+  "011101":
+    i_ching:
+      number: 50
+      name: "Ding"
+      label: "The Cauldron"
+      description: "Transformation, cooking pot, establishing new order"
+    gene_key:
+      number: 50
+      shadow: "Corruption"
+      gift: "Equilibrium"
+      siddhi: "Harmony"
+      description: "A journey from moral decay and disorder to balanced forces and ultimately perfect universal harmony"
+  "011110":
+    i_ching:
+      number: 28
+      name: "Da Guo"
+      label: "Great Exceeding"
+      description: "Critical mass, excess, greatness, extraordinary time"
+    gene_key:
+      number: 28
+      shadow: "Purposelessness"
+      gift: "Totality"
+      siddhi: "Immortality"
+      description: "A journey from meaninglessness to full engagement and ultimately transcendence of time and death itself"
+  "011111":
+    i_ching:
+      number: 44
+      name: "Gou"
+      label: "Coming to Meet"
+      description: "Unexpected encounter, temptation, spontaneous connection"
+    gene_key:
+      number: 44
+      shadow: "Interference"
+      gift: "Teamwork"
+      siddhi: "Synarchy"
+      description: "A journey from disruption and meddling to collaborative cooperation and ultimately perfect group harmony"
+  "100000":
+    i_ching:
+      number: 24
+      name: "Fu"
+      label: "Return"
+      description: "Returning, renewal, recovery, turning point"
+    gene_key:
+      number: 24
+      shadow: "Addiction"
+      gift: "Invention"
+      siddhi: "Silence"
+      description: "A journey from compulsive patterns to creative breakthroughs and ultimately profound inner silence and peace"
+  "100001":
+    i_ching:
+      number: 27
+      name: "Yi"
+      label: "Providing Nourishment"
+      description: "Sustenance, nurturing, caring, proper nourishment"
+    gene_key:
+      number: 27
+      shadow: "Selfishness"
+      gift: "Altruism"
+      siddhi: "Selflessness"
+      description: "A journey from self-centered action to caring for others and ultimately complete liberation from self-concern"
+  "100010":
+    i_ching:
+      number: 3
+      name: "Zhun"
+      label: "Difficulty at the Beginning"
+      description: "Initial obstacles, challenging start, sprouting growth"
+    gene_key:
+      number: 3
+      shadow: "Chaos"
+      gift: "Innovation"
+      siddhi: "Innocence"
+      description: "A journey from disorder and confusion to original solutions and ultimately pure childlike spontaneity"
+  "100011":
+    i_ching:
+      number: 42
+      name: "Yi"
+      label: "Increase"
+      description: "Gain, benefit, expansion, addition, advantage"
+    gene_key:
+      number: 42
+      shadow: "Expectation"
+      gift: "Celebration"
+      siddhi: "Detachment"
+      description: "A journey from projecting into the future to enjoying the present moment and ultimately complete freedom from attachment"
+  "100100":
+    i_ching:
+      number: 51
+      name: "Zhen"
+      label: "Arousing"
+      description: "Shock, thunder, action, awakening, sudden change"
+    gene_key:
+      number: 51
+      shadow: "Agitation"
+      gift: "Initiative"
+      siddhi: "Awakening"
+      description: "A journey from restlessness and reactivity to bold action and ultimately spontaneous spiritual enlightenment"
+  "100101":
+    i_ching:
+      number: 21
+      name: "Shi He"
+      label: "Biting Through"
+      description: "Breaking through obstacles, enforcing justice, decisive action"
+    gene_key:
+      number: 21
+      shadow: "Control"
+      gift: "Authority"
+      siddhi: "Valor"
+      description: "A journey from domination and manipulation to natural leadership and ultimately selfless courage in the face of challenges"
+  "100110":
+    i_ching:
+      number: 17
+      name: "Sui"
+      label: "Following"
+      description: "Following, adapting, responding to circumstances"
+    gene_key:
+      number: 17
+      shadow: "Opinion"
+      gift: "Far-sightedness"
+      siddhi: "Omniscience"
+      description: "A journey from fixed viewpoints to expansive perspective and ultimately all-knowing universal vision"
+  "100111":
+    i_ching:
+      number: 25
+      name: "Wu Wang"
+      label: "Innocence"
+      description: "Spontaneity, naturalness, absence of guile, sincerity"
+    gene_key:
+      number: 25
+      shadow: "Constriction"
+      gift: "Acceptance"
+      siddhi: "Universal Love"
+      description: "A journey from narrowness and limitation to embracing what is and ultimately unconditional love for all beings"
+  "101000":
+    i_ching:
+      number: 36
+      name: "Ming Yi"
+      label: "Darkening of the Light"
+      description: "Concealment, adversity, subduing brightness, inner light"
+    gene_key:
+      number: 36
+      shadow: "Turbulence"
+      gift: "Humanity"
+      siddhi: "Compassion"
+      description: "A journey from emotional chaos to genuine care for others and ultimately boundless empathy for all suffering"
+  "101001":
+    i_ching:
+      number: 22
+      name: "Bi"
+      label: "Grace"
+      description: "Elegance, refinement, adornment, aesthetic beauty"
+    gene_key:
+      number: 22
+      shadow: "Dishonor"
+      gift: "Grace"
+      siddhi: "Graciousness"
+      description: "A journey from shame and disgrace to elegance and beauty and ultimately divine courtesy and respect for all life"
+  "101010":
+    i_ching:
+      number: 63
+      name: "Ji Ji"
+      label: "After Completion"
+      description: "Completion, fulfillment, success, accomplished task"
+    gene_key:
+      number: 63
+      shadow: "Doubt"
+      gift: "Inquiry"
+      siddhi: "Truth"
+      description: "A journey from skepticism and uncertainty to genuine questioning and ultimately direct realization of absolute truth"
+  "101011":
+    i_ching:
+      number: 37
+      name: "Jia Ren"
+      label: "The Family"
+      description: "Clan, domestic relationships, roles, family structure"
+    gene_key:
+      number: 37
+      shadow: "Weakness"
+      gift: "Equality"
+      siddhi: "Tenderness"
+      description: "A journey from feeling powerless to recognizing the essential worth of all people and ultimately gentle compassion toward all beings"
+  "101100":
+    i_ching:
+      number: 55
+      name: "Feng"
+      label: "Abundance"
+      description: "Prosperity, fullness, peak period, abundance"
+    gene_key:
+      number: 55
+      shadow: "Victimization"
+      gift: "Freedom"
+      siddhi: "Freedom"
+      description: "A journey from feeling oppressed to liberating yourself and ultimately absolute sovereignty of spirit"
+  "101101":
+    i_ching:
+      number: 30
+      name: "Li"
+      label: "The Clinging"
+      description: "Fire, attachment, brightness, clarity, dependence"
+    gene_key:
+      number: 30
+      shadow: "Desire"
+      gift: "Lightness"
+      siddhi: "Rapture"
+      description: "A journey from craving and attachment to buoyancy and delight and ultimately ecstatic union with the divine"
+  "101110":
+    i_ching:
+      number: 49
+      name: "Ge"
+      label: "Revolution"
+      description: "Molting, radical change, transformation, rebellion"
+    gene_key:
+      number: 49
+      shadow: "Reaction"
+      gift: "Revolution"
+      siddhi: "Rebirth"
+      description: "A journey from instinctive responses to conscious transformation and ultimately complete spiritual renewal"
+  "101111":
+    i_ching:
+      number: 13
+      name: "Tong Ren"
+      label: "Fellowship"
+      description: "Fellowship, community, connection, common cause"
+    gene_key:
+      number: 13
+      shadow: "Discord"
+      gift: "Discernment"
+      siddhi: "Empathy"
+      description: "A journey from disharmony and conflict to keen insight and ultimately profound understanding of others' feelings"
+  "110000":
+    i_ching:
+      number: 19
+      name: "Lin"
+      label: "Approach"
+      description: "Approaching, drawing near, advance, coming together"
+    gene_key:
+      number: 19
+      shadow: "Co-dependence"
+      gift: "Sensitivity"
+      siddhi: "Sacrifice"
+      description: "A journey from unhealthy attachments to attuned responsiveness and ultimately selfless surrender to the whole"
+  "110001":
+    i_ching:
+      number: 41
+      name: "Sun"
+      label: "Decrease"
+      description: "Reduction, simplification, lessening, diminishing"
+    gene_key:
+      number: 41
+      shadow: "Fantasy"
+      gift: "Anticipation"
+      siddhi: "Emanation"
+      description: "A journey from unrealistic imagination to positive expectation and ultimately becoming a pure channel for divine expression"
+  "110010":
+    i_ching:
+      number: 60
+      name: "Jie"
+      label: "Limitation"
+      description: "Restrictions, boundaries, moderation, discipline"
+    gene_key:
+      number: 60
+      shadow: "Limitation"
+      gift: "Realism"
+      siddhi: "Justice"
+      description: "A journey from feeling restricted to practical acceptance of reality and ultimately universal fairness and balance"
+  "110011":
+    i_ching:
+      number: 61
+      name: "Zhong Fu"
+      label: "Inner Truth"
+      description: "Inner sincerity, central truth, integrity, confidence"
+    gene_key:
+      number: 61
+      shadow: "Psychosis"
+      gift: "Inspiration"
+      siddhi: "Sanctity"
+      description: "A journey from mental fragmentation to creative insight and ultimately reverence for the divine in all things"
+  "110100":
+    i_ching:
+      number: 54
+      name: "Gui Mei"
+      label: "The Marrying Maiden"
+      description: "Marriage, union, relationship, hierarchical connection"
+    gene_key:
+      number: 54
+      shadow: "Greed"
+      gift: "Aspiration"
+      siddhi: "Ascension"
+      description: "A journey from selfish acquisition to noble ambition and ultimately transcendence of material limitations"
+  "110101":
+    i_ching:
+      number: 38
+      name: "Kui"
+      label: "Opposition"
+      description: "Contrast, polarity, divergent interests, difference"
+    gene_key:
+      number: 38
+      shadow: "Struggle"
+      gift: "Perseverance"
+      siddhi: "Honor"
+      description: "A journey from fighting against adversity to steadfast persistence and ultimately noble integrity in all actions"
+  "110110":
+    i_ching:
+      number: 58
+      name: "Dui"
+      label: "The Joyous"
+      description: "Pleasure, joy, satisfaction, delight, lake"
+    gene_key:
+      number: 58
+      shadow: "Dissatisfaction"
+      gift: "Vitality"
+      siddhi: "Bliss"
+      description: "A journey from perpetual discontentment to vibrant aliveness and ultimately transcendent joy beyond conditions"
+  "110111":
+    i_ching:
+      number: 10
+      name: "Lü"
+      label: "Treading"
+      description: "Conduct, careful progress, tread carefully, proceeding with caution"
+    gene_key:
+      number: 10
+      shadow: "Self-Obsession"
+      gift: "Naturalness"
+      siddhi: "Being"
+      description: "A journey from narcissistic focus to authentic behavior and ultimately pure presence beyond the self"
+  "111000":
+    i_ching:
+      number: 11
+      name: "Tai"
+      label: "Peace"
+      description: "Harmony, balance, prosperity, smooth flow, great potential"
+    gene_key:
+      number: 11
+      shadow: "Obscurity"
+      gift: "Idealism"
+      siddhi: "Light"
+      description: "A journey from confusion and darkness to visionary clarity and ultimately becoming a pure channel for divine light"
+  "111001":
+    i_ching:
+      number: 26
+      name: "Da Xu"
+      label: "The Taming Power of the Great"
+      description: "Restraint of strong forces, accumulation of energy, reserves"
+    gene_key:
+      number: 26
+      shadow: "Pride"
+      gift: "Artfulness"
+      siddhi: "Invisibility"
+      description: "A journey from ego inflation to skillful manipulation of energy and ultimately selfless service beyond recognition"
+  "111010":
+    i_ching:
+      number: 5
+      name: "Xu"
+      label: "Waiting"
+      description: "Patience, anticipation, nourishment, timing"
+    gene_key:
+      number: 5
+      shadow: "Impatience"
+      gift: "Patience"
+      siddhi: "Timelessness"
+      description: "A journey from restless urgency to calm waiting and ultimately freedom from the constraints of time"
+  "111011":
+    i_ching:
+      number: 9
+      name: "Xiao Xu"
+      label: "The Taming Power of the Small"
+      description: "Minor restraint, small accumulation, gentle influence"
+    gene_key:
+      number: 9
+      shadow: "Inertia"
+      gift: "Determination"
+      siddhi: "Invincibility"
+      description: "A journey from resistance to change to focused will and ultimately unstoppable spiritual force"
+  "111100":
+    i_ching:
+      number: 34
+      name: "Da Zhuang"
+      label: "The Power of the Great"
+      description: "Great strength, vigor, might, powerful momentum"
+    gene_key:
+      number: 34
+      shadow: "Force"
+      gift: "Strength"
+      siddhi: "Majesty"
+      description: "A journey from brute power and coercion to true inner power and ultimately magnificent sovereign presence"
+  "111101":
+    i_ching:
+      number: 14
+      name: "Da You"
+      label: "Possession in Great Measure"
+      description: "Great possession, abundance, great holdings"
+    gene_key:
+      number: 14
+      shadow: "Compromise"
+      gift: "Competence"
+      siddhi: "Bounteousness"
+      description: "A journey from selling yourself short to skilled mastery and ultimately overflowing abundance and prosperity"
+  "111110":
+    i_ching:
+      number: 43
+      name: "Guai"
+      label: "Breakthrough"
+      description: "Resolution, decisive action, breakthrough, determination"
+    gene_key:
+      number: 43
+      shadow: "Deafness"
+      gift: "Insight"
+      siddhi: "Epiphany"
+      description: "A journey from not listening to deep understanding and ultimately sudden revelation of universal truth"
+  "111111":
+    i_ching:
+      number: 1
+      name: "Qian"
+      label: "The Creative"
+      description: "Pure yang, creativity, strength, initiative, leadership"
+    gene_key:
+      number: 1
+      shadow: "Entropy"
+      gift: "Freshness"
+      siddhi: "Beauty"
+      description: "A journey from decay and disorder to renewal and perpetual freshness, ultimately revealing the inherent beauty in all things"
+
+# Elemental Associations
+elements:
+  "Air":
+    qualities: "Intellect, communication, ideas, movement"
+    direction: "East"
+    season: "Spring" # Note: These traditional associations differ from our system
+  "Fire":
+    qualities: "Energy, transformation, passion, intuition"
+    direction: "South"
+    season: "Summer"
+  "Water":
+    qualities: "Emotion, intuition, depth, flow"
+    direction: "West"
+    season: "Autumn" # Note: These traditional associations differ from our system
+  "Earth":
+    qualities: "Stability, grounding, nurturing, physical"
+    direction: "North"
+    season: "Winter" # Note: These traditional associations differ from our system
+
+# Tarot Card Correspondences (32 even-parity bit patterns)
+tarot_correspondences:
+  # These 32 patterns have even parity (even number of 1s)
+  # Each will appear in all four elemental cycles/suits
+  # Ordered by resource hierarchy (left-to-right bit significance)
+  
+  # 0 bits on
+  "000000":
+    card: "The Moon"
+    hebrew_letter: "ק (Qoph)"
+    hebrew_meaning: "Back of the head, unconscious mind"
+    description: "Represents darkness, the unconscious, and the hidden. The void, mystery, and that which cannot be clearly seen. Symbolizes confusion, illusion, and hidden dangers. The all-zeros pattern perfectly captures the absence of clarity and certainty - no resources activated means navigating in darkness."
+    symbols_rws:
+      - "Moon with face": "Illumination that only partially reveals, intuition vs. illusion"
+      - "Howling dogs/wolf": "Animal instincts awakened, primitive fears"
+      - "Crayfish emerging from water": "Unconscious mind rising to consciousness"
+      - "Towers in distance": "Boundaries between conscious and unconscious worlds"
+      - "Path between towers": "Journey through uncertainty and hidden dangers"
+      - "Drops of dew/water": "Psychic impressions, influence of unconscious on consciousness"
+    symbols_thoth:
+      - "Scarab beetle": "Symbol of transformation and rebirth from darkness"
+      - "Two canine figures (Anubis)": "Guardians of the underworld and hidden knowledge"
+      - "Path winding through darkness": "Journey through the unconscious realm"
+      - "Dark background with celestial elements": "Cosmic unconscious, the void of potential"
+      - "Lobster/crayfish": "Emergence from primordial waters of unconsciousness"
+      - "Moon phases": "Cycles of illumination and darkness, waxing and waning awareness"
+    
+  # 2 bits on
+  "110000":
+    card: "The Magician"
+    hebrew_letter: "ב (Beth)"
+    hebrew_meaning: "House, container, vessel for creation"
+    description: "Represents manifestation, skill, and creative power. Intuition + ability captures the essential tools of creation. The Magician has the inner resources to transform ideas into reality."
+    symbols_rws:
+      - "Figure with one arm raised": "Connection between heaven and earth, channeling divine energy"
+      - "Infinity symbol above head": "Infinite potential, eternal wisdom"
+      - "Table with four elemental tools": "Mastery of all elements and resources"
+      - "Red and white robes": "Integration of masculine and feminine energies"
+      - "Roses and lilies": "Passion and purity in creative expression"
+      - "Ouroboros belt": "Cyclical nature of creation and manifestation"
+    symbols_thoth:
+      - "Mercury figure": "Divine messenger, transformer of energies"
+      - "Caduceus wand": "Power to heal and transform, balanced energies"
+      - "Ape of Thoth": "Recorder of knowledge, shadow aspect of wisdom"
+      - "Tools of elements": "Command of all manifestation resources"
+      - "Figure performing juggling/magic": "Skill in manipulation of energies and matter"
+      - "Yellow background": "Intellectual power and mental illumination"
+  "101000":
+    card: "The High Priestess"
+    hebrew_letter: "ג (Gimel)"
+    hebrew_meaning: "Camel, bridge between worlds"
+    description: "Represents mystery, intuition, and the subconscious. Intuition + capacity captures her deep inner knowing and hidden wisdom. She accesses knowledge beyond the rational mind."
+    symbols_rws:
+      - "Seated female figure": "Calm receptivity, inner knowing"
+      - "Blue robe": "Depth of wisdom, spiritual understanding"
+      - "Crescent moon at feet": "Intuition, cycles, feminine wisdom"
+      - "Pomegranates on veil": "Fertility of mind, abundance of hidden knowledge"
+      - "Torah scroll/book": "Hidden wisdom, sacred knowledge"
+      - "Pillars (black and white)": "Duality, threshold between worlds"
+      - "Veil with palm leaves": "Boundary between conscious and unconscious"
+    symbols_thoth:
+      - "Goddess with bow": "Artemis/Diana, virgin goddess of intuition"
+      - "Camel crossing desert": "Journey between worlds, sustenance in barren places"
+      - "Blue and silver colors": "Intuition, moon energies, subconscious"
+      - "Web-like pattern": "Weaving of fate, interconnection of all knowledge"
+      - "Crystal sphere": "Clarity of inner vision, pure perception"
+      - "Water/waves": "Flow of unconscious, depth of intuition"
+  "100100":
+    card: "The Hermit"
+    hebrew_letter: "י (Yod)"
+    hebrew_meaning: "Hand, creative potential"
+    description: "Represents withdrawal, inner guidance, and wisdom. Intuition + expectations captures the search for higher truth through inner contemplation. The Hermit withdraws to find wisdom within."
+    symbols_rws:
+      - "Elderly figure in cloak": "Wisdom gained through experience and solitude"
+      - "Lantern with six-pointed star": "Light of truth and wisdom illuminating the darkness"
+      - "Staff": "Support on the spiritual journey, self-reliance"
+      - "Snowy/barren landscape": "Isolation, spiritual asceticism"
+      - "Gray beard": "Age, experience, the accumulated wisdom of time"
+      - "Standing on mountain peak": "Higher perspective, spiritual elevation"
+    symbols_thoth:
+      - "Figure with lamp": "Bringing light to darkness, illumination of truth"
+      - "Sperm/spermatozoa imagery": "Essential life force, potential for creation"
+      - "Cerberus/three-headed dog": "Guardian of hidden knowledge"
+      - "Staff with serpent": "Wisdom, healing, transformation"
+      - "Grain/wheat": "Harvest of wisdom, fertility of thought"
+      - "Hourglass": "Time, patience in spiritual development"
+  "100010":
+    card: "Ace"
+    sephirah: "Kether (Crown)"
+    sephirah_meaning: "Unity, pure potential, divine spark"
+    description: "Represents pure potential, beginnings, and essence. Intuition + support captures the seed with minimal backing. The Ace is the purest essence of an element, the spark that begins the journey."
+    symbols_rws:
+      - "Hand emerging from cloud": "Divine offering, gift from spiritual realm"
+      - "Single elemental symbol": "Pure essence of the element's energy"
+      - "Landscape appropriate to element": "Realm of manifestation for that energy"
+      - "Crown or divine light": "Connection to Kether, the highest divine source"
+      - "Yods/sparks of light": "Divine emanations, seeds of potential"
+    symbols_thoth:
+      - "Central symbolic object": "Pure concentrated essence of the element"
+      - "Radiating energy/light": "Emanation of force from a central point"
+      - "Geometric patterns": "Mathematical perfection of primal energy"
+      - "Vibrant color matching element": "Pure undiluted elemental energy"
+      - "Multiple smaller elements": "Fractal nature of manifestation from unity"
+  "100001":
+    card: "The Fool"
+    hebrew_letter: "א (Aleph)"
+    hebrew_meaning: "Ox, breath, primal creative force"
+    description: "Represents new beginnings, innocence, and spontaneity. Intuition + options perfectly captures the start of the journey with multiple paths ahead. The Fool steps forward guided by inner trust rather than experience."
+    symbols_rws:
+      - "Young figure walking": "Beginning of journey, carefree stepping into the unknown"
+      - "Small dog at heels": "Animal instincts, loyalty, natural wisdom"
+      - "White rose": "Purity of intention, innocence"
+      - "Mountain precipice": "Threshold between worlds, leap of faith"
+      - "Bundle on staff": "Few possessions, unencumbered by worldly concerns"
+      - "Sun shining": "Divine protection, optimism, clarity of vision"
+      - "Colorful clothing": "Joyful approach to life, unbounded by convention"
+    symbols_thoth:
+      - "Dancing figure": "Spontaneity, joyful engagement with life"
+      - "Tiger/leopard": "Primal energy, instinctual wisdom"
+      - "Butterfly": "Transformation, lightness of being"
+      - "Crocodile/dolphin": "Unconscious depths, evolutionary potential"
+      - "Spiral/vortex energy": "Creative force, primordial chaos"
+      - "Grapes/wine": "Dionysian ecstasy, divine intoxication"
+      - "Air elements": "Element of Aleph, intellectual potential"
+  "011000":
+    card: "Death"
+    hebrew_letter: "נ (Nun)"
+    hebrew_meaning: "Fish, movement, transformation"
+    description: "Represents transformation, endings, and new beginnings. Ability + capacity captures the skills and resources needed for profound change. Death represents the ability to completely transform through letting go of the old."
+    symbols_rws:
+      - "Skeleton with scythe": "Harvester of the old to make way for the new"
+      - "White horse": "Purity of purpose, unstoppable force of change"
+      - "King/authority figure fallen": "No power can resist transformation"
+      - "Rising sun": "New beginnings that follow endings"
+      - "Flag with rose": "Beauty and life that emerge after death"
+      - "Children/young people": "Renewal, innocence after transformation"
+    symbols_thoth:
+      - "Dancing skeleton": "Transformation as a dynamic process, not static"
+      - "Scythe/sickle": "Cutting away what is no longer needed"
+      - "Bubbles": "Transformation of consciousness, rebirth"
+      - "Fish imagery": "Connection to Nun (fish), moving through waters of change"
+      - "Scorpion": "Death and regeneration, transformation through crisis"
+      - "Eagle": "Higher perspective gained through transformation"
+  "010100":
+    card: "Two"
+    sephirah: "Chokmah (Wisdom)"
+    sephirah_meaning: "Divine masculine, wisdom, outward force"
+    description: "Represents duality, choice, and balance. Ability + expectations captures making choices within societal structures. The Two presents the first moment of decision on the journey."
+    symbols_rws:
+      - "Two of similar objects": "Duality, balance, partnership"
+      - "Figure balancing/juggling": "Making choices, weighing options"
+      - "Crossed elements": "Intersection of forces, union of opposites"
+      - "Symbol related to suit": "The elemental energy expressing as duality"
+      - "Background showing balance": "Harmony between opposing forces"
+    symbols_thoth:
+      - "Geometric arrangement of two": "Mathematical precision of duality"
+      - "Symbols of balance": "Equilibrium between opposing forces"
+      - "Element-specific symbols in pairs": "Dual aspect of the element's energy"
+      - "Symbol of Chokmah": "Connection to wisdom through duality"
+      - "Dynamic movement between two points": "Energy exchange in relationship"
+  "010010":
+    card: "The Hierophant"
+    hebrew_letter: "ו (Vav)"
+    hebrew_meaning: "Nail, connection, teaching"
+    description: "Represents tradition, conformity, and spiritual wisdom. Ability + support perfectly captures traditional knowledge backed by community. The Hierophant teaches established paths and collective wisdom."
+    symbols_rws:
+      - "Papal figure with triple crown": "Authority within spiritual tradition, established wisdom"
+      - "Two acolytes/pillars": "Transmission of wisdom to the next generation"
+      - "Keys crossed": "Access to spiritual mysteries through tradition"
+      - "Hand raised in blessing": "Conferring spiritual authority and guidance"
+      - "Throne between pillars": "Established position within structured system"
+      - "Religious vestments": "Ceremonial role, embodiment of tradition"
+    symbols_thoth:
+      - "Figure with staff/wand": "Authority to teach spiritual wisdom"
+      - "Pentagram/five-pointed star": "Divine wisdom expressed in material world"
+      - "Bull/ox imagery": "Connection to Taurus, stability of tradition"
+      - "Elephants": "Ancient wisdom, memory of tradition"
+      - "Window/doorway": "Portal to spiritual knowledge through tradition"
+      - "Crossed keys": "Access to mysteries through established channels"
+  "010001":
+    card: "The Hanged Man"
+    hebrew_letter: "מ (Mem)"
+    hebrew_meaning: "Water, womb, surrender"
+    description: "Represents surrender, new perspective, and sacrifice. Ability + options captures suspended action but with awareness of alternatives. The Hanged Man sees from a different angle but cannot yet act."
+    symbols_rws:
+      - "Man hanging upside-down": "Reversed perspective, surrender"
+      - "Halo/nimbus around head": "Spiritual illumination through surrender"
+      - "Tree/gallows shaped like Tau cross": "Sacrifice leading to spiritual rebirth"
+      - "Leg crossed to form figure 4": "Passive receptivity, stability in surrender"
+      - "Peaceful expression": "Willing sacrifice, acceptance"
+      - "Hands behind back": "Limitation leading to freedom"
+    symbols_thoth:
+      - "Figure suspended underwater": "Immersion in unconscious, surrender to flow"
+      - "Ankh/loop": "Life through sacrifice, initiation"
+      - "Serpents": "Wisdom gained through surrender"
+      - "Fish imagery": "Movement through waters of consciousness"
+      - "Reversal of normal position": "New perspective, different way of seeing"
+      - "Blue/green coloration": "Water element, depths of feeling and intuition"
+  "001100":
+    card: "The Emperor"
+    hebrew_letter: "ה (Heh)"
+    hebrew_meaning: "Window, revelation, authority"
+    description: "Represents authority, structure, and control. Capacity + expectations perfectly captures structured authority and rulership. The Emperor establishes order and builds stable foundations."
+    symbols_rws:
+      - "Bearded king on throne": "Established authority, masculine rulership"
+      - "Ram heads on throne": "Connection to Aries, initiative and leadership"
+      - "Ankh scepter": "Life-giving authority, power to create"
+      - "Orb/globe": "Worldly dominion, mastery of material realm"
+      - "Mountains behind": "Stability, permanence, strength"
+      - "Red robes": "Passion, activity, enforcing will"
+    symbols_thoth:
+      - "Ram/lamb imagery": "Aries energy, leadership and initiative"
+      - "Bee symbolism": "Organized society, hierarchy, productivity"
+      - "Geometric patterns": "Order imposed on chaos, rational structure"
+      - "Eagle": "Vision, perspective from leadership position"
+      - "Sphere and cross": "Dominion over material world"
+      - "Rigid posture": "Unbending authority, established order"
+  "001010":
+    card: "Five"
+    sephirah: "Geburah (Severity)"
+    sephirah_meaning: "Strength, judgment, restriction"
+    description: "Represents conflict, challenge, and adaptation. Capacity + support captures having some resources but facing difficulties. The Five represents the necessary struggles on the path to growth."
+    symbols_rws:
+      - "Five elements in conflict": "Challenge, disruption, competition"
+      - "Figures in struggle": "Conflict, testing, overcoming adversity"
+      - "Imbalanced arrangement": "Instability, temporary disorder"
+      - "Some elements falling/scattered": "Loss, change through difficulty"
+      - "Central focus of conflict": "The core challenge that must be faced"
+    symbols_thoth:
+      - "Five-pointed geometric pattern": "Mathematical structure of challenge"
+      - "Disruptive energy patterns": "Breaking of established forms"
+      - "Inverted/disrupted elements": "Upset of previous stability"
+      - "Mars symbolism": "Conflict, courage, necessary destruction"
+      - "Geburah imagery": "Severity, judgment, cutting away"
+      - "Element-specific challenge imagery": "How the element expresses through conflict"
+  "001001":
+    card: "The Tower"
+    hebrew_letter: "פ (Peh)"
+    hebrew_meaning: "Mouth, expression, destruction"
+    description: "Represents sudden change, revelation, and awakening. Capacity + options captures structures collapsing to reveal new paths. The Tower breaks down what is false to make way for truth."
+    symbols_rws:
+      - "Tower struck by lightning": "Sudden illumination, divine intervention, collapse of false structures"
+      - "People falling": "Downfall of ego, liberation through crisis"
+      - "Crown flying off top": "Loss of false authority, end of illusion"
+      - "Flames/fire": "Purification through ordeal, transformative energy"
+      - "Jagged rocks below": "Hard reality, painful but necessary foundation"
+      - "Dark sky": "Chaos preceding new order"
+    symbols_thoth:
+      - "Eye of Horus/Eye of Shiva": "Divine sight that destroys illusion"
+      - "Mouth/Peh imagery": "Power of speech/truth to destroy false structures"
+      - "Dove of peace": "Liberation that follows destruction"
+      - "Mars symbolism": "Destructive energy, war against falsehood"
+      - "Explosions/lightning": "Sudden revelation, instant transformation"
+      - "Serpent": "Kundalini energy rising, destruction as renewal"
+  "000110":
+    card: "Three"
+    sephirah: "Binah (Understanding)"
+    sephirah_meaning: "Divine feminine, understanding, form"
+    description: "Represents growth, expression, and creativity. Expectations + support captures early development within social structures. The Three represents the first flowering of stable creation."
+    symbols_rws:
+      - "Three figures in harmony": "Growth, cooperation, creative expression"
+      - "Garden/natural setting": "Fertility, abundance, manifestation"
+      - "Raised cups/elements": "Celebration, sharing, mutual support"
+      - "Triangular arrangement": "Stability, balance, completion of a cycle"
+      - "Symbol of abundance": "Fruition, initial success, creative results"
+      - "Bright colors": "Joy of creation, pleasure in growth"
+    symbols_thoth:
+      - "Triangular arrangement": "Stable form emerging from duality"
+      - "Three-fold symmetry": "Complete expression of elemental energy"
+      - "Lotus/flower imagery": "Blossoming, manifestation of potential"
+      - "Abundance symbols": "First fruits of creative effort"
+      - "Woman figure/feminine imagery": "Connection to Binah, form-giving principle"
+      - "Water/flowing imagery": "Emotional fulfillment, flow of creativity"
+  "000101":
+    card: "The Devil"
+    hebrew_letter: "ע (Ayin)"
+    hebrew_meaning: "Eye, perception, bondage"
+    description: "Represents bondage, materialism, and hidden forces. Expectations + options captures being trapped between social norms and illusory choices. The Devil represents the chains we create for ourselves."
+    symbols_rws:
+      - "Horned satyr figure": "The shadow self, primal instincts, material attachment"
+      - "Chained naked figures": "Bondage to material world, false limitations"
+      - "Inverted pentagram": "Matter over spirit, imbalanced priorities"
+      - "Torch pointing down": "Light focused on material rather than spiritual"
+      - "Half-human half-animal": "Lower nature, instinctual drives, unconscious desires"
+      - "Chains with loose fit": "Self-imposed limitations that could be escaped"
+    symbols_thoth:
+      - "Goat god figure": "Pan/Dionysus, primal creative force, desire"
+      - "Large phallus": "Generative power, creative force turned to material ends"
+      - "Eye in triangle": "Eye of Ayin, perception trapped in material sight"
+      - "Horns forming vesica piscis": "Sacred geometry of manifestation"
+      - "Rings/chains": "Circular imprisonment, repetitive patterns"
+      - "Hidden figures": "Unconscious forces, suppressed desires"
+  "000011":
+    card: "Wheel of Fortune"
+    hebrew_letter: "כ (Kaph)"
+    hebrew_meaning: "Palm of hand, grasping, fortune"
+    description: "Represents destiny, cycles, and turning points. Support + options captures how external forces shape our path. The Wheel reminds us that circumstances change in predictable cycles."
+    symbols_rws:
+      - "Great wheel": "Cycles of fortune, eternal return, karma"
+      - "Four creatures at corners": "Four fixed signs of zodiac, stability within change"
+      - "Sphinx atop wheel": "Wisdom that transcends cycles of change"
+      - "Serpent descending": "Involution of spirit into matter"
+      - "Anubis ascending": "Evolution back to spirit"
+      - "Hebrew letters YHVH": "Divine name, cosmic law governing change"
+      - "Alchemical symbols": "Transformation through cyclic processes"
+    symbols_thoth:
+      - "Ten-spoked wheel": "Complete cycle, manifestation through the ten Sephiroth"
+      - "Three animal figures": "Forces of stability, change, and balance"
+      - "Sphinx with sword": "Balance point, equilibrium in motion"
+      - "Monkey/Cynocephalus": "Instinctual nature rising and falling with fortune"
+      - "Spiral energy patterns": "Evolution through cycles"
+      - "Alchemical/elemental symbols": "Transmutation through cyclic experience"
+    
+  # 4 bits on
+  "111100":
+    card: "The Empress"
+    hebrew_letter: "ד (Daleth)"
+    hebrew_meaning: "Door, womb, fertility"
+    description: "Represents fertility, abundance, and nurturing. Complete inner world + expectations captures her creative abundance and natural flow. The Empress is the divine feminine that brings life forth."
+    symbols_rws:
+      - "Woman seated in lush garden": "Fertility, abundance, nurturing presence"
+      - "Crown of twelve stars": "Cosmic consciousness, zodiacal completeness"
+      - "Venus symbol": "Divine feminine, beauty, harmony"
+      - "Flowing water": "Life-giving nurturing energy"
+      - "Wheat/grain": "Abundance, harvest, material prosperity"
+      - "Heart-shaped shield": "Love as protection and guidance"
+      - "Cushioned throne": "Comfort, luxury, material well-being"
+    symbols_thoth:
+      - "Woman with wings": "Divine feminine principle, ascended nature"
+      - "Lotus/flower imagery": "Blossoming life, natural beauty"
+      - "Door/gateway": "Daleth, door of life, birth canal"
+      - "Pelican feeding young": "Self-sacrifice, nurturing"
+      - "Bees/honeycomb": "Sweet abundance, organization of nature"
+      - "Fruits and natural symbols": "Earth's bounty, natural cycles"
+      - "Venus/female symbols": "Love, beauty, attraction, fertility"
+  "111010":
+    card: "Temperance"
+    hebrew_letter: "ס (Samekh)"
+    hebrew_meaning: "Support, foundation, harmony"
+    description: "Represents balance, moderation, and harmony. Complete inner world + support captures intuitive harmony and balanced blending. Temperance brings different elements into perfect proportion."
+    symbols_rws:
+      - "Angel with one foot in water, one on land": "Balance between conscious and unconscious, material and spiritual"
+      - "Cup to cup water flow": "Circulation of energy, proper exchange and proportion"
+      - "Triangle in square on chest": "Integration of spirit (triangle) and matter (square)"
+      - "Path between mountains": "Middle way, balanced approach to extremes"
+      - "Solar disk on forehead": "Higher consciousness directing the blending process"
+      - "Wings": "Transcendent perspective that allows for perfect balance"
+    symbols_thoth:
+      - "Alchemical imagery": "Transmutation, combining elements in perfect proportion"
+      - "Two cups with flowing liquid": "Exchange of energies, proper circulation"
+      - "Rainbow": "Integration of all colors/aspects into harmony"
+      - "Caduceus/serpents": "Balanced opposites, healing through integration"
+      - "Central golden path": "Middle way between extremes, golden mean"
+      - "Arrows pointing in multiple directions": "Energy flowing in balanced exchange"
+  "111001":
+    card: "The Lovers"
+    hebrew_letter: "ז (Zayin)"
+    hebrew_meaning: "Sword, division, choice"
+    description: "Represents love, harmony, and choices. Complete inner world + options captures alignment of self with available paths. The Lovers represent meaningful choice based on values and authentic desire."
+    symbols_rws:
+      - "Man and woman": "Duality, partnership, union of opposites"
+      - "Angel above": "Divine blessing on union, higher guidance in choice"
+      - "Sun above": "Conscious awareness illuminating the choice"
+      - "Tree behind each figure": "Knowledge and life, individuation within unity"
+      - "Mountain in background": "Stability, foundation for relationship"
+      - "Nakedness": "Authenticity, vulnerability, honesty in relationship"
+    symbols_thoth:
+      - "Alchemical wedding imagery": "Sacred union, conjunction of opposites"
+      - "Cupid figure": "Love as transformative force, desire as guide"
+      - "Hermit figure": "Wisdom overseeing the process of union"
+      - "Orphic egg": "Cosmic potential created through union"
+      - "Twins": "Gemini correspondence, duality in harmony"
+      - "Caduceus/serpents": "Balanced energies intertwining, kundalini awakening"
+  "110110":
+    card: "Justice"
+    hebrew_letter: "ל (Lamed)"
+    hebrew_meaning: "Ox-goad, direction, teaching"
+    description: "Represents fairness, truth, and consequence. Intuition + ability + expectations + support captures balanced judgment with clarity. Justice weighs all factors to find equilibrium."
+    symbols_rws:
+      - "Woman with scales": "Balance, fairness, impartial judgment"
+      - "Sword pointing upward": "Clarity of mind, decisive action, truth"
+      - "Crown": "Authority to judge, higher perspective"
+      - "Red robe": "Active principle in judgment, passion for truth"
+      - "Gray pillars": "Stability, established order, structure of law"
+      - "Square clasp": "Order, structure, material world accountability"
+    symbols_thoth:
+      - "Woman with scales": "Balance of opposing forces, equilibrium"
+      - "Sword": "Discrimination, clarity, cutting through illusion"
+      - "Alpha and Omega": "Balance of beginning and end, complete cycle"
+      - "Libra scales": "Weighing of actions, karma, cause and effect"
+      - "Masks/faces": "Impartiality, seeing beyond personality"
+      - "Geometric patterns": "Mathematical precision of universal law"
+  "110101":
+    card: "Six"
+    sephirah: "Tiphareth (Beauty)"
+    sephirah_meaning: "Harmony, balance, heart center"
+    description: "Represents harmony, healing, and cooperation. Intuition + ability + expectations + options captures balance after challenge. The Six brings resolution and harmony after the conflict of the Five."
+    symbols_rws:
+      - "Six of similar elements": "Balance, harmony, integration after challenge"
+      - "Balanced arrangement": "Symmetry, equilibrium, resolution of conflict"
+      - "Center focus": "Connection to Tiphareth, heart center alignment"
+      - "Elements of giving/receiving": "Reciprocity, exchange, fair dealings"
+      - "Upward movement": "Progress after resolution, moving to higher state"
+      - "Suit-specific harmony imagery": "How harmony manifests in each element"
+    symbols_thoth:
+      - "Six-pointed geometric pattern": "Hexagram, symbol of harmony and balance"
+      - "Balanced arrangement": "Perfect equilibrium of forces"
+      - "Sun symbolism": "Connection to Tiphareth, central harmonizing force"
+      - "Reciprocal energy patterns": "Give and take, balanced exchange"
+      - "Successful combination of elements": "Resolution after the conflict of Five"
+      - "Element-specific harmony imagery": "Balance expressed through each suit"
+  "110011":
+    card: "The Chariot"
+    hebrew_letter: "ח (Cheth)"
+    hebrew_meaning: "Fence, field, controlled space"
+    description: "Represents control, willpower, and victory. Intuition + ability + support + options perfectly captures directed movement with purpose. The Chariot combines inner direction (intuition) with skill (ability), backing (support), and clear paths (options) to achieve controlled forward motion."
+    symbols_rws:
+      - "Armored figure in chariot": "Protected will, focused determination"
+      - "Two sphinxes/horses": "Opposing forces harnessed for forward movement"
+      - "Canopy of stars": "Cosmic protection, alignment with higher purpose"
+      - "Square on breastplate": "Ordered material forces controlled by will"
+      - "Wand/scepter": "Directed power, authority over movement"
+      - "Crown/laurel wreath": "Victory, successful mastery of opposing forces"
+    symbols_thoth:
+      - "Armored figure": "Protected consciousness, strength of will"
+      - "Chariot vehicle": "Means of progress through combined forces"
+      - "Four pillars/sphinxes": "Four elements harnessed for movement"
+      - "Wheel imagery": "Motion, the turning of the dharma wheel"
+      - "Cancer symbolism": "Connection to the sign of Cancer - protective shell"
+      - "Cup/Holy Grail": "Receptacle for divine will, vessel of purpose"
+  "101110":
+    card: "Seven"
+    sephirah: "Netzach (Victory)"
+    sephirah_meaning: "Victory, emotion, passion"
+    description: "Represents reflection, assessment, and revaluation. Intuition + capacity + expectations + support captures the moment of strategic pause. The Seven asks us to reflect before continuing forward."
+    symbols_rws:
+      - "Seven of similar elements": "Assessment, evaluation, introspection"
+      - "Figures in contemplation": "Taking stock, considering options"
+      - "Looking back at previous efforts": "Reflection on journey, considering what has worked"
+      - "Multiple options/paths": "Choices that arise from reflection"
+      - "Pause in activity": "Strategic delay, gathering information"
+      - "Suit-specific reflection imagery": "How assessment manifests in each element"
+    symbols_thoth:
+      - "Seven-pointed geometric pattern": "Complexity, deeper analysis"
+      - "Venus symbolism": "Connection to Netzach, emotional reflection"
+      - "Deceptive arrangement": "Things not being as they initially appear"
+      - "Multiple options": "Various paths forward after assessment"
+      - "Element-specific contemplation": "Reflection expressed through each suit"
+      - "Effort following success": "The work that comes after the harmony of Six"
+  "101101":
+    card: "Strength"
+    hebrew_letter: "ט (Teth)"
+    hebrew_meaning: "Snake, vitality, controlled power"
+    description: "Represents courage, patience, and soft control. Intuition + capacity + expectations + options captures gentle mastery through inner power. Strength represents control through compassion rather than force."
+    symbols_rws:
+      - "Woman closing lion's mouth": "Gentle control of wild forces, soft power"
+      - "Infinity symbol above head": "Endless source of inner strength, spiritual mastery"
+      - "White dress": "Purity of intention, innocent strength"
+      - "Flowers/garland": "Gentle approach, cultivation rather than domination"
+      - "Lion": "Raw instinctual energy, passion, courage"
+      - "Clear sky/sunshine": "Clarity of purpose, illuminated control"
+    symbols_thoth:
+      - "Woman with beast": "Integration of animal nature, taming of instincts"
+      - "Serpent imagery": "Kundalini energy controlled, Teth connection"
+      - "Lion/beast of passion": "Raw power channeled constructively"
+      - "Wheel/circle": "Cyclical nature of control and release"
+      - "Red/green color scheme": "Balance of passion and growth"
+      - "Rose symbolism": "Beauty emerging from mastery of lower nature"
+  "101011":
+    card: "The Star"
+    hebrew_letter: "צ (Tzaddi)"
+    hebrew_meaning: "Fish-hook, quest, revelation"
+    description: "Represents hope, inspiration, and serenity. Intuition + capacity + support + options captures the renewed guidance and possibility. The Star brings light after darkness and renewed faith."
+    symbols_rws:
+      - "Naked woman pouring water": "Natural truth, uncovered essence, replenishment"
+      - "Large central star": "Guiding light, hope, divine inspiration"
+      - "Seven smaller stars": "Seven classical planets, cosmic order"
+      - "Land and water receiving": "Nourishment of both conscious and unconscious"
+      - "Bird in tree": "Soul/spirit, freedom after restriction"
+      - "Pools of water": "Reflection, intuition, emotional healing"
+    symbols_thoth:
+      - "Nude female figure": "Natural truth revealed, authentic being"
+      - "Star configuration": "Cosmic guidance, universal connection"
+      - "Water flowing": "Renewal of life force, inspiration"
+      - "Butterfly/moth": "Transformation, emerging into light"
+      - "Aquarius imagery": "New age, humanitarian vision, future potential"
+      - "Crystal/jewels": "Clarity, purified understanding, crystallized wisdom"
+  "100111":
+    card: "Judgement"
+    hebrew_letter: "ש (Shin)"
+    hebrew_meaning: "Tooth, fire, divine transformation"
+    description: "Represents awakening, rebirth, and reckoning. Intuition + expectations + support + options captures the spiritual calling that brings renewal. Judgement represents hearing and answering the call to transformation."
+    symbols_rws:
+      - "Angel with trumpet": "Divine call, awakening, announcement of truth"
+      - "People rising from coffins": "Resurrection, spiritual rebirth, answering the call"
+      - "Arms raised in praise": "Surrender to higher truth, acceptance of transformation"
+      - "Mountains in background": "Obstacles overcome, higher perspective achieved"
+      - "Gray clouds/water": "Transition between states, dissolution of old forms"
+      - "Banner with cross": "Redemption, sacrifice leading to new life"
+    symbols_thoth:
+      - "Angel/cosmic figure": "Higher consciousness awakening lower forms"
+      - "Trumpet/horn": "Call to awakening, vibration that transforms"
+      - "Rising figures": "Resurrection, evolution to higher state"
+      - "Fire/flame imagery": "Purification, connection to Shin, transformative energy"
+      - "Child in center": "New life, purified consciousness, rebirth"
+      - "Geometric/crystalline patterns": "New order emerging from transformation"
+  "011110":
+    card: "Nine"
+    sephirah: "Yesod (Foundation)"
+    sephirah_meaning: "Foundation, unconscious, connection"
+    description: "Represents completion, fulfillment, and attainment. Ability + capacity + expectations + support captures the near-completion with integration of experience. The Nine brings the journey almost to its end."
+    symbols_rws:
+      - "Nine of similar elements": "Approaching completion, fulfillment"
+      - "Abundance displayed": "Rewards of the journey, fruits of labor"
+      - "Figures in contemplation": "Appreciation of achievement, taking stock"
+      - "Arrangement showing culmination": "The final stage before completion"
+      - "Moon symbols": "Connection to Yesod, unconscious foundation"
+      - "Suit-specific fulfillment imagery": "How completion manifests in each element"
+    symbols_thoth:
+      - "Nine-pointed geometric pattern": "Mathematical pattern of completion"
+      - "Moon symbolism": "Connection to Yesod, reflection of higher light"
+      - "Arrangement showing culmination": "Peak of achievement in the suit"
+      - "Fullness/ripeness imagery": "Maturity, readiness for harvest"
+      - "Satisfaction imagery": "Enjoyment of accomplishments"
+      - "Element-specific fulfillment": "How completion expresses through each suit"
+  "011101":
+    card: "Four"
+    sephirah: "Chesed (Mercy)"
+    sephirah_meaning: "Compassion, expansion, abundance"
+    description: "Represents stability, foundation, and structure. Ability + capacity + expectations + options captures the solid ground of established order. The Four builds the secure foundation needed for growth."
+    symbols_rws:
+      - "Four of similar elements": "Stability, foundation, established structure"
+      - "Square arrangement": "Order, material stability, balanced forces"
+      - "Fixed positions": "Reliable placement, secure boundaries"
+      - "Protective imagery": "Safeguarding resources, establishing security"
+      - "Jupiter symbols": "Connection to Chesed, abundance from order"
+      - "Suit-specific stability imagery": "How foundation manifests in each element"
+    symbols_thoth:
+      - "Four-pointed geometric pattern": "Square, mathematical stability"
+      - "Jupiter symbolism": "Connection to Chesed, expansion within order"
+      - "Fixed arrangement": "Solid structure, reliable formation"
+      - "Symmetrical design": "Balance of forces, equidistant support"
+      - "Fortification imagery": "Protection, boundaries, defined space"
+      - "Element-specific stability": "How structure expresses through each suit"
+  "011011":
+    card: "Ten"
+    sephirah: "Malkuth (Kingdom)"
+    sephirah_meaning: "Physical world, manifestation, completion"
+    description: "Represents culmination, transition, and completion. Ability + capacity + support + options captures the end of one cycle and preparation for the next. The Ten brings closure and transition."
+    symbols_rws:
+      - "Ten of similar elements": "Completion, culmination, full manifestation"
+      - "Tree of Life arrangement": "Full descent through all Sephiroth"
+      - "Complete scenario": "Final outcome, full results of the journey"
+      - "Transition imagery": "Ending that suggests new beginning"
+      - "Earth symbols": "Connection to Malkuth, material manifestation"
+      - "Suit-specific completion imagery": "How culmination manifests in each element"
+    symbols_thoth:
+      - "Ten-pointed geometric pattern": "Tree of Life completed, full manifestation"
+      - "Earth symbolism": "Connection to Malkuth, grounding of energy"
+      - "Complete cycle imagery": "Full expression of the suit's energy"
+      - "Transition markers": "Indications of the next cycle beginning"
+      - "Finality imagery": "Conclusion of the numbered sequence"
+      - "Element-specific completion": "How culmination expresses through each suit"
+  "010111":
+    card: "Eight"
+    sephirah: "Hod (Splendor)"
+    sephirah_meaning: "Intellect, communication, structure"
+    description: "Represents movement, momentum, and progress. Ability + all outer resources captures skilled advancement with complete external backing. The Eight shows mastery-in-motion as we progress."
+    symbols_rws:
+      - "Eight of similar elements": "Movement, progress, structured advancement"
+      - "Dynamic arrangement": "Active flow, energized motion"
+      - "Progress imagery": "Forward movement, development beyond the Seven"
+      - "Organizational structure": "Ordered advancement, methodical progress"
+      - "Mercury symbols": "Connection to Hod, intellectual organization"
+      - "Suit-specific movement imagery": "How progress manifests in each element"
+    symbols_thoth:
+      - "Eight-pointed geometric pattern": "Octagram, organized movement"
+      - "Mercury symbolism": "Connection to Hod, swift structured progress"
+      - "Dynamic flow indications": "Energy moving in organized patterns"
+      - "Mathematical precision": "Calculated advancement, precision in motion"
+      - "Transitional arrangement": "Movement between the Seven and Nine"
+      - "Element-specific progress": "How movement expresses through each suit"
+  "001111":
+    card: "The World"
+    hebrew_letter: "ת (Tav)"
+    hebrew_meaning: "Cross, mark, completion"
+    description: "Represents completion, fulfillment, and integration. Capacity + all outer resources captures the final integration and harmony. The World represents the successful conclusion of one journey before the next begins."
+    symbols_rws:
+      - "Dancing female figure": "Celebration of completion, integration of experience"
+      - "Wreath/ouroboros": "Completion of cycle, eternity, wholeness"
+      - "Four living creatures": "Integration of all elements, complete balance"
+      - "Wands/batons": "Achievement, mastery of material world"
+      - "Purple sash": "Connection of opposites, integration of polarities"
+      - "Egg-shaped wreath": "New potential within completion, seed of next cycle"
+    symbols_thoth:
+      - "Dancing figure": "Joy in completion, integrated movement"
+      - "Spiral patterns": "Evolution completed yet continuing"
+      - "Four elements/corners": "Balance of all forces, complete stability"
+      - "Saturn symbolism": "Culmination through limitation, final boundary"
+      - "Cosmic imagery": "Universal completion, microcosm reflects macrocosm"
+      - "Central mandala": "Integration of all aspects into perfect unity"
+    
+  # 6 bits on
+  "111111":
+    card: "The Sun"
+    hebrew_letter: "ר (Resh)"
+    hebrew_meaning: "Head, consciousness, illumination"
+    description: "Represents illumination, vitality, and success. All resources active perfectly captures complete clarity and joy. The Sun brings total illumination - the full realization of potential and truth."
+    symbols_rws:
+      - "Sun with face": "Complete consciousness, divine illumination"
+      - "Child on white horse": "Innocence and power united, pure joy"
+      - "Sunflowers": "Alignment with source of light, flourishing"
+      - "Red banner": "Vitality, passion, life force"
+      - "Walled garden": "Paradise regained, protected state of bliss"
+      - "Radiating rays": "Divine energy, blessing from above"
+    symbols_thoth:
+      - "Central sun disk": "Source of all light and life, complete consciousness"
+      - "Rays extending outward": "Divine illumination reaching everything"
+      - "Children dancing": "Pure joy, innocent celebration of life"
+      - "Rose patterns": "Beauty fully bloomed, love fully realized"
+      - "Orange/golden colors": "Vitality, abundance, solar energy"
+      - "Zodiac symbols": "Cosmic perfection, universal harmony"
+
+# Resonant Seasons and Archetypes
+# Determined by Inner World (bits 1-3) and Outer World (bits 4-6)
+# Inner: 0 if 2+ bits are 0, 1 if 2+ bits are 1
+# Outer: 0 if 2+ bits are 0, 1 if 2+ bits are 1
+
+# These combine to create a resonant season:
+# Inner-Outer = 0-0 → archetype 00 = Fool (gender neutral), archetype highlight color: Turquoise
+# Inner-Outer = 1-0 → archetype 10 = Hero (both masculine and feminine aspects), archetype highlight color: Gold
+# Inner-Outer = 1-1 → archetype 11 = Monster (gender neutral), archetype highlight color: Purple
+# Inner-Outer = 0-1 → archetype 01 = Sage (both masculine and feminine energies), archetype highlight color: Iridescent
+
+# The resonant_season determines when that card is a Sage.
+# The remaining archetypes are determined by the cycle of seasons
+# If their resonant_season is winter, that means that their 00000000 card is a sage, 
+# the 00000010 card is a fool (in spring), and they're a hero in the summer, and a monster in the fall.
+# If their resonant_season is summer, that means that 11111111 is a sage (in summer), a fool in the fall,
+# a hero in the winter, and a monster in the spring.
+
+resonant_seasons:
+  # Inner 0, Outer 0 = Winter (Sage)
+  "000000": 
+    resonant_season: "Winter"
+    description: "The Moon finds its most innocent expression in Winter as the Fool, embracing the darkness with beginner's mind and open curiosity."
+  "000001": 
+    searesonant_seasonson: "Winter"
+    description: "This pattern of splitting apart finds its freshest expression in Winter as the Fool, discovering new beginnings in apparent decay."
+  "000010": 
+    searesonant_seasonson: "Winter"
+    description: "Holding together despite scarcity finds its most innocent expression in Winter as the Fool, with naive trust in connection."
+  "000100": 
+    resonant_season: "Winter"
+    description: "Enthusiasm emerges with childlike wonder in Winter as the Fool, finding joy in emptiness without expectation."
+  "001000": 
+    resonant_season: "Winter"
+    description: "Modesty and humility express with innocent authenticity in Winter as the Fool, without calculation or strategy."
+  "001001": 
+    resonant_season: "Winter"
+    description: "Stillness and meditation appear as childlike presence in Winter as the Fool, simply being without spiritual pretense."
+  "001010": 
+    resonant_season: "Winter"
+    description: "Facing obstacles with naive courage and fresh perspective finds its purest expression in Winter as the Fool."
+  "001100": 
+    resonant_season: "Winter"
+    description: "The Emperor's energy finds unexpected expression in Winter as the Fool, with authority tempered by beginner's mind."
+  "010000": 
+    resonant_season: "Winter"
+    description: "The disciplined organization of forces appears with fresh spontaneity in Winter as the Fool, ordered yet unconstrained."
+  "010001": 
+    resonant_season: "Winter"
+    description: "Youthful learning reaches its most authentic expression in Winter as the Fool, embracing not-knowing with enthusiasm."
+  "010010": 
+    resonant_season: "Winter" 
+    description: "Facing danger with innocent courage finds its purest expression in Winter as the Fool, stepping forward without fear."
+  "010100": 
+    resonant_season: "Winter"
+    description: "The Two's balance of duality appears with playful curiosity in Winter as the Fool, dancing between opposites."
+  "100000": 
+    resonant_season: "Winter"
+    description: "The moment of return and renewal emerges with innocent wonder in Winter as the Fool, discovering the cycle anew."
+  "100001": 
+    resonant_season: "Winter"
+    description: "The nourishing energy of this pattern appears with generous innocence in Winter as the Fool, giving without calculation."
+  "100010": 
+    resonant_season: "Winter"
+    description: "Initial difficulty met with fresh optimism finds its truest expression in Winter as the Fool, unaware of impossibility."
+  "100100": 
+    resonant_season: "Winter"
+    description: "The Hermit's introspective journey begins with childlike wonder in Winter as the Fool, discovering inner landscapes."
+
+  # Inner 0, Outer 1 = Fall (Sage)
+  "000011":
+    resonant_season: "Fall"
+    description: "This energy of contemplation reveals profound wisdom in Fall as the Sage, finding deep understanding through patient observation."
+  "000101":
+    resonant_season: "Fall"
+    description: "The Devil's binding energy transforms into wisdom in Fall as the Sage, seeing how apparent limitations contain hidden teachings."
+  "000110":
+    resonant_season: "Fall"
+    description: "The Three's creative growth matures into wisdom in Fall as the Sage, with deep understanding of creation's cycles."
+  "000111":
+    resonant_season: "Fall"
+    description: "This pattern of standstill reveals profound insights in Fall as the Sage, understanding the value in stillness and patience."
+  "001011":
+    resonant_season: "Fall"
+    description: "Gradual development reveals its deeper patterns in Fall as the Sage, with transcendent understanding of growth processes."
+  "001101":
+    resonant_season: "Fall"
+    description: "The wandering energy finds its deeper purpose in Fall as the Sage, understanding the journey beyond mere movement."
+  "001110":
+    resonant_season: "Fall"
+    description: "Mutual influence reveals profound wisdom in Fall as the Sage, understanding the subtle patterns of relationship and exchange."
+  "001111":
+    resonant_season: "Fall"
+    description: "Strategic retreat reveals its deeper wisdom in Fall as the Sage, understanding when withdrawal serves the greater journey."
+  "010011":
+    resonant_season: "Fall"
+    description: "This pattern of dissolution reveals profound understanding in Fall as the Sage, seeing how breaking barriers leads to integration."
+  "010101":
+    resonant_season: "Fall"
+    description: "The approaching completion reveals timeless wisdom in Fall as the Sage, with mature understanding of transitions and cycles."
+  "010110":
+    resonant_season: "Fall"
+    description: "Liberation from constraint reveals profound insights in Fall as the Sage, with deep understanding of freedom's true nature."
+  "010111":
+    resonant_season: "Fall"
+    description: "The Eight's movement energy matures into wisdom in Fall as the Sage, revealing the deeper patterns within progress."
+  "100011":
+    resonant_season: "Fall"
+    description: "The energy of increase reveals its profound wisdom in Fall as the Sage, understanding the deeper patterns of growth and abundance."
+  "100101":
+    resonant_season: "Fall"
+    description: "Decisive breakthrough energy matures into wisdom in Fall as the Sage, revealing the deeper purpose beyond mere change."
+  "100110":
+    resonant_season: "Fall"
+    description: "Following reveals its deeper wisdom in Fall as the Sage, understanding the profound patterns of leadership and discipleship."
+  "100111":
+    resonant_season: "Fall"
+    description: "Judgement's awakening reveals timeless wisdom in Fall as the Sage, understanding the deeper patterns of transformation."
+
+  # Inner 1, Outer 1 = Summer (Sage)
+  "011011":
+    resonant_season: "Summer"
+    description: "The Ten's completion energy becomes excessive in Summer as the Monster, when fulfillment turns to rigid perfectionism."
+  "011101":
+    resonant_season: "Summer"
+    description: "The Four's stability becomes oppressive structure in Summer as the Monster, when order becomes tyrannical control."
+  "011110":
+    resonant_season: "Summer"
+    description: "The Nine's fulfillment becomes smothering in Summer as the Monster, when achievement becomes arrogant self-satisfaction."
+  "011111":
+    resonant_season: "Summer"
+    description: "This pattern of coming to meet becomes overwhelming in Summer as the Monster, when connection becomes possessive."
+  "101011":
+    resonant_season: "Summer"
+    description: "The Star's hopeful energy becomes blinding in Summer as the Monster, when inspiration becomes delusional fantasy."
+  "101101":
+    resonant_season: "Summer"
+    description: "Strength's control becomes domination in Summer as the Monster, when gentle mastery becomes ruthless power."
+  "101110":
+    resonant_season: "Summer"
+    description: "The Seven's reflection becomes obsessive analysis in Summer as the Monster, when assessment becomes paralysis."
+  "101111":
+    resonant_season: "Summer"
+    description: "This pattern of fellowship becomes codependency in Summer as the Monster, when community becomes stifling."
+  "110011":
+    resonant_season: "Summer"
+    description: "The Chariot's movement becomes reckless in Summer as the Monster, when controlled direction becomes destructive force."
+  "110101":
+    resonant_season: "Summer"
+    description: "The Six's harmony becomes artificial in Summer as the Monster, when balance becomes rigid conformity."
+  "110110":
+    resonant_season: "Summer"
+    description: "Justice's balance becomes punitive in Summer as the Monster, when fairness becomes merciless judgment."
+  "110111":
+    resonant_season: "Summer"
+    description: "This pattern of careful treading becomes paranoid in Summer as the Monster, when caution becomes debilitating fear."
+  "111011":
+    resonant_season: "Summer"
+    description: "The taming of small forces becomes manipulative in Summer as the Monster, when subtle control becomes exploitation."
+  "111101":
+    resonant_season: "Summer"
+    description: "Great possession becomes hoarding in Summer as the Monster, when abundance becomes greedy accumulation."
+  "111110":
+    resonant_season: "Summer"
+    description: "Breakthrough energy becomes destructive in Summer as the Monster, when resolution becomes violent upheaval."
+  "111111":
+    resonant_season: "Summer"
+    description: "The Sun's illumination becomes scorching in Summer as the Monster, when light becomes blinding and overwhelming."
+
+  # Inner 1, Outer 0 = Spring (Sage)
+  "011000":
+    resonant_season: "Spring"
+    description: "The upward growth energy finds its most powerful expression in Spring as the Hero, confidently directing ascension with skill."
+  "011001":
+    resonant_season: "Spring"
+    description: "Working on what is spoiled becomes masterful restoration in Spring as the Hero, skillfully transforming decay into renewal."
+  "011010":
+    resonant_season: "Spring"
+    description: "The Well's resource becomes powerful sustenance in Spring as the Hero, confidently directing life-giving waters with skill."
+  "011100":
+    resonant_season: "Spring"
+    description: "Duration and perseverance become masterful endurance in Spring as the Hero, skillfully maintaining momentum through challenges."
+  "101000":
+    resonant_season: "Spring"
+    description: "Light obscured becomes strategic illumination in Spring as the Hero, skillfully directing light precisely where needed."
+  "101001":
+    resonant_season: "Spring"
+    description: "Grace and beauty become powerful expressions in Spring as the Hero, confidently wielding aesthetic harmony with skill."
+  "101010":
+    resonant_season: "Spring"
+    description: "After completion becomes strategic transition in Spring as the Hero, skillfully directing movement from one cycle to the next."
+  "101100":
+    resonant_season: "Spring"
+    description: "Abundance becomes masterful prosperity in Spring as the Hero, confidently directing resources with skill and purpose."
+  "110000":
+    resonant_season: "Spring"
+    description: "The Magician's creative power reaches full mastery in Spring as the Hero, confidently manifesting with skill and purpose."
+  "110001":
+    resonant_season: "Spring"
+    description: "Decrease and simplification become strategic reduction in Spring as the Hero, skillfully removing what doesn't serve the goal."
+  "110010":
+    resonant_season: "Spring"
+    description: "Limitation becomes masterful boundary-setting in Spring as the Hero, confidently establishing parameters for success."
+  "110100":
+    resonant_season: "Spring"
+    description: "The marrying maiden energy becomes powerful alliance in Spring as the Hero, skillfully forging partnerships with purpose."
+  "111000":
+    resonant_season: "Spring"
+    description: "Peace and harmony become masterful orchestration in Spring as the Hero, confidently creating balance through skilled action."
+  "111001":
+    resonant_season: "Spring"
+    description: "The taming power of the great finds powerful expression in Spring as the Hero, skillfully directing enormous forces with precision."
+  "111010":
+    resonant_season: "Spring"
+    description: "Waiting becomes strategic patience in Spring as the Hero, confidently holding back until the perfect moment to act."
+  "111100":
+    resonant_season: "Spring"
+    description: "The power of the great reaches its most masterful expression in Spring as the Hero, wielding strength with perfect skill."
+
+# Divination Templates
+divination:
+  general_reading:
+    template: "This card represents {inner_world_state} paired with {outer_world_state} in a {cycle_phase} phase."
+  yes_no:
+    template: "The presence of {yes_count} 'yes' bits suggests {interpretation}."
+  musical:
+    template: "This card's musical pattern plays {notes}, creating a {quality} feeling."
+  tarot:
+    template: "This card corresponds to {tarot_card} in the {cycle_phase} aspect, suggesting {tarot_meaning}."

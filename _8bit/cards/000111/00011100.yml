@@ -1,0 +1,124 @@
+# Card 00011100.yml - Standstill in Winter (Fool)
+card:
+  # Summary
+  binary:      "00011100"
+  decimal:     "28"
+  hexadecimal: "1C"
+
+  # Basic Info
+  # These are crude associations, and will serve as inputs for the interpreted meaning 
+  basic_info: 
+    desc: "This card represents the innocent curiosity and fresh approach to periods of obstruction. It embodies the paradox of having abundant external resources yet experiencing inner emptiness, approached with a beginner's mind. In its Fool aspect, it reveals the childlike wonder that can emerge when we face apparent standstill without judgment or frustration."
+    
+    keywords: ["curious stillness", "innocent obstruction", "playful blockage", "childlike patience", "naive limitation", "stagnation wonder"]
+    symbols: ["winter pond with frozen surface", "new moon barely visible", "child at blocked crossroads", "snow preserving footprints", "frozen river meeting dam", "boundary stone covered in frost"]
+  
+  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
+  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  direct_associations:
+    archetype: "Fool" # Winter follows Fall in the cycle for this hexagram (Sage in Fall)
+    archetype_color: "Turquoise"
+
+    ## Inner World (bits 1-3)
+    inner_world:
+      color: "Black"
+      trigram: "Earth"
+      meaning: "Complete absence of inner resources; intuition, ability, and capacity are all absent."
+
+    ## Outer World (bits 4-6)
+    outer_world:
+      color: "White"
+      trigram: "Heaven"
+      meaning: "Complete presence of outer resources; expectations, support, and options are all present."
+
+    ## Cycle (bits 7-8)
+    cycle: 
+      season: "Winter"
+      tarot_suit: "Swords"
+      moon_phase: "New Moon"
+      element: "Air"
+
+    # Tarot
+    tarot:
+      card: "The Hanged Man" # The corresponding tarot card for bits 1-6 (using alternative mapping for odd-parity pattern)
+      cycle_suit: "Swords" # The corresponding tarot suit for bits 7-8
+      cycle_moon: "New"
+      seasonal_expression: "Standstill embraces innocent curiosity in Winter as the Fool, approaching blockage with beginner's mind and discovering unexpected possibilities in apparent obstruction."
+
+    # Hexagram-related
+    hexagram:
+      i_ching:
+        number: 12
+        name: "Pi (Standstill)"
+        meaning: "Stagnation, obstruction, adversity, non-communication"
+      gene_key:
+        number: 12
+        shadow: "Vanity"
+        gift: "Discrimination"
+        siddhi: "Purity"
+        meaning: "A journey from self-absorption to discerning clarity and ultimately absolute purity of heart and intention"
+
+  # Interpreted Meanings (combining all of the direct associations in various ways)
+  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  interpreted_meanings: 
+    basic:
+      name_6bit: "Standstill"
+      name_8bit: "The New Standstill"
+
+    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
+    # Style guidelines: Inspired by the clear and simple design of the Rider Waite Smith deck, the 
+    # vibe of the Brady Tarot deck, and the humor and complexity of the Arcane Bullshit deck. 
+    # The card should use a limited color palette, lines as if created via risograph, be full-bleed, 
+    # include the name on the card, as well as the card_scene, some hint of the resonant season, and the universal symbol.
+    # The names of the cards should feel like they are part of a cohesive deck, and be completely devoid of cliches.
+    # Be sure to work in the colors (inner = foreground, outer = background) as well as the actual 8-bit binary code that this card represents.
+    oracle_card:
+      card_name: "Curious Blockage"
+      card_creature: "A child explorer who encounters a massive wall of ice and instead of feeling frustrated, begins to study its patterns with wonder, discovering tiny ecosystems within the frozen barrier"
+      question_posed: "What might you discover if you approached your current obstacle with innocent curiosity rather than frustration?"
+      card_scene: "A young child stands before an enormous wall of ice in a winter landscape. Their eyes are wide with fascination rather than disappointment as they examine the intricate frost patterns that have formed across the barrier. A new moon is barely visible in the night sky, offering just enough light to illuminate the scene. The child carries numerous tools and resources in a backpack that seems almost too large - maps, compasses, climbing gear - yet stands perfectly still, more interested in the beauty of the obstruction than in finding a way past it. Their breath creates small clouds in the frigid air as they trace patterns on the ice with a mittened finger. Behind them, their footprints in the snow form a winding, exploratory path rather than a direct line, suggesting they've been playfully wandering. The barrier itself contains frozen insects, plants, and air bubbles that create miniature worlds within the ice. A boundary stone marking the edge of a territory is completely encased in frost, transforming it into a sculpture of crystalline beauty. The child's body appears hollow or translucent, contrasting with the solid, resource-rich environment around them. Near their feet, a frozen river meets the ice dam, and the child has begun to create a small snow sculpture mirroring the larger obstruction, playing with the concept rather than fighting against it."
+      universal_symbol: "The ice wall – seemingly impenetrable barrier that reveals hidden beauty and knowledge when examined closely rather than struggled against"
+      mood: "Innocent wonder, childlike curiosity, the fresh perspective that emerges when obstacles are approached without preconceptions or frustration"
+
+      # USE THIS PROMPT TEMPLATE BUT FILL IN WITH SPECIFIC DETAILS FOR THIS CARD:
+      # Limited color risograph-style illustration of [short scene description].
+      # Use [INNER WORLD COLOR] for foreground elements (inner world) and [OUTER WORLD COLOR] for background/environment (outer world), with [ACCENT COLOR] for highlights.
+      # Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      # Include a clean, full-width title bar at the bottom, with centered 8-bit code "[XXXXXXXX]" and card title "[CARD TITLE]" in bold, without corner decorations or symbols.
+      # Feature [key symbolic elements, e.g., moon phase, animal companions, symbolic object].
+      # The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle seasonal/elemental references appropriate for [SEASON] (e.g., [Air/Winter], [Fire/Spring], [Water/Summer], [Earth/Fall]).
+      # Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean.
+      prompt_for_image_gen: "Limited color risograph-style illustration of a child standing before an enormous wall of ice in a winter landscape, examining intricate frost patterns with fascination rather than disappointment.
+      Use BLACK for foreground elements (inner world) and WHITE for background/environment (outer world), with turquoise and deep blue accents.
+      Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '00011100' and card title 'CURIOUS BLOCKAGE' in bold, without corner decorations or symbols.
+      Feature a barely visible new moon, a child with translucent/hollow appearance, footprints forming winding patterns in snow, and a boundary stone encased in frost.
+      The scene should evoke the mood of innocent wonder and childlike curiosity, incorporating subtle seasonal/elemental references appropriate for Winter (Air/Winter symbols, crystalline patterns, breath visible in cold air, geometric snowflakes).
+      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
+      
+  # Related Cards
+  related_cards: 
+    # Season variations of the same card
+    same_card_fall: "00011101" # Standstill in Fall (Sage)
+    same_card_winter: "00011100" # Standstill in Winter (Fool) - this card
+    same_card_spring: "00011110" # Standstill in Spring (Hero)
+    same_card_summer: "00011111" # Standstill in Summer (Monster)
+        
+    # Opposites
+    opposite: "11100011" # Movement in Summer - curious stillness vs. overwhelming motion
+    
+    # Related thematically
+    thematic_pair: "00000000" # The Moon in Winter - mysterious stillness related to curious stillness
+    
+    # Complete cycle
+    full_cycle: ["00011101","00011100","00011110","00011111"] # Standstill in all seasons
+    
+  # Bit Values
+  bit_values:
+    bit1: "0"  # Intuition
+    bit2: "0"  # Ability
+    bit3: "0"  # Capacity
+    bit4: "1"  # Expectations
+    bit5: "1"  # Support
+    bit6: "1"  # Options
+    bit78: "00" # Cycle phase (Winter)

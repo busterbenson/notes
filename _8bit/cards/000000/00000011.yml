@@ -1,0 +1,124 @@
+# Card 00000011.yml - The Moon in Summer (Hero)
+card:
+  # Summary
+  binary:      "00000011"
+  decimal:     "3"
+  hexadecimal: "03"
+
+  # Basic Info
+  # These are crude associations, and will serve as inputs for the interpreted meaning 
+  basic_info: 
+    desc: "This card represents the darkness of The Moon now navigated with heroic skill and purpose. The mystery and uncertainty are not eliminated but masterfully engaged with confidence and strategic action. It embodies the skilled explorer who charts paths through the unknown."
+    
+    keywords: ["navigating darkness", "skilled exploration", "confident uncertainty", "masterful void", "strategic mystery", "heroic shadow work"]
+    symbols: ["full moon partially obscured", "explorer with compass", "mapped darkness", "skilled guide", "torch in shadow"]
+  
+  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
+  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  direct_associations:
+    archetype: "Hero" # Following the cycle from Winter (Sage) through Spring (Fool) to Summer (Hero)
+    archetype_color: "Gold"
+
+    ## Inner World (bits 1-3)
+    inner_world:
+      color: "Black"
+      trigram: "Earth"
+      meaning: "Complete absence of inner resources; intuition, ability, and capacity are all absent."
+
+    ## Outer World (bits 4-6)
+    outer_world:
+      color: "Black"
+      trigram: "Earth"
+      meaning: "Complete lack of outer resources; expectations, support, and options are all absent."
+
+    ## Cycle (bits 7-8)
+    cycle: 
+      season: "Summer"
+      tarot_suit: "Cups"
+      moon_phase: "Full Moon"
+      element: "Water"
+
+    # Tarot
+    tarot:
+      card: "The Moon" # The corresponding tarot card for bits 1-6
+      cycle_suit: "Cups" # The corresponding tarot suit for bits 7-8
+      cycle_moon: "Full"
+      seasonal_expression: "The Moon transforms into focused exploration in Summer as the Hero, navigating the darkness with skill and purpose."
+
+    # Hexagram-related
+    hexagram:
+      i_ching:
+        number: 2
+        name: "Kun (The Receptive)"
+        meaning: "Pure yin, yielding, responsive, accepting, following"
+      gene_key:
+        number: 2
+        shadow: "Dislocation"
+        gift: "Orientation"
+        siddhi: "Unity"
+        meaning: "Finding your true direction and experiencing oneness"
+
+  # Interpreted Meanings (combining all of the direct associations in various ways)
+  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  interpreted_meanings: 
+    basic:
+      name_6bit: "The Moon"
+      name_8bit: "The Full Moon"
+
+    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
+    # Style guidelines: Inspired by the clear and simple design of the Rider Waite Smith deck, the 
+    # vibe of the Brady Tarot deck, the mythology of Hilda, and the humor and complexity of the Arcane Bullshit deck. 
+    # The card should use a limited color palette, lines as if created via risograph, be full-bleed, 
+    # include the name on the card, as well as the card_scene, some hint of the resonant season, and the universal symbol.
+    # The names of the cards should feel like they are part of a cohesive deck, and be completely devoid of cliches.
+    # Be sure to work in the colors (inner = foreground, outer = background) as well as the actual 8-bit binary code that this 
+    oracle_card:
+      card_name: "Torchbearer"
+      card_creature: "A determined night explorer with eyes adjusted to darkness, carrying tools for mapping what cannot be fully seen"
+      question_posed: "How might you move confidently through uncertainty, using the absence of clarity as a space for directed creation?"
+      card_scene: "A figure in exploration gear moves purposefully through darkness, their face showing determined concentration rather than fear. They hold a specially designed torch that casts focused, directional light rather than diffuse illumination. In their other hand, they carry precise navigational instruments - a star chart, compass, and measuring tools designed specifically for dark terrain. A full moon shines through summer leaves overhead, its light creating distinctive shadow patterns that seem to form a map on the ground. The explorer is carefully adding to a partially completed chart, drawing the contours of darkness itself with confident strokes. Their footprints behind them glow slightly, marking a clear path for others to follow."
+      universal_symbol: "The torch - directed illumination that doesn't dispel mystery but allows navigation through it"
+      mood: "Purposeful exploration, masterful navigation, confident charting of the unknown"
+
+      # USE THIS PROMPT TEMPLATE BUT FILL IN WITH SPECIFIC DETAILS FOR THIS CARD:
+      # Limited color risograph-style illustration of [short scene description].
+      # Use [INNER WORLD COLOR] for foreground elements (inner world) and [OUTER WORLD COLOR] for background/environment (outer world), with [ACCENT COLOR] for highlights.
+      # Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      # Include a clean, full-width title bar at the bottom, with centered 8-bit code "[XXXXXXXX]" and card title "[CARD TITLE]" in bold, without corner decorations or symbols.
+      # Feature [key symbolic elements, e.g., moon phase, animal companions, symbolic object].
+      # The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle seasonal/elemental references appropriate for [SEASON] (e.g., [Air/Winter], [Fire/Spring], [Water/Summer], [Earth/Fall]).
+      # Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean.
+      prompt_for_image_gen: "Limited color risograph-style illustration of an explorer confidently navigating through darkness with specialized tools.
+      Use BLACK for foreground elements (inner world) and BLACK for background/environment (outer world), with gold and watery blue for highlights.
+      Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '00000011' and card title 'TORCHBEARER' in bold, without corner decorations or symbols.
+      Feature a full moon through summer leaves, a focused torch casting directional light, navigational instruments for darkness, and glowing footprints marking a path.
+      The scene should evoke the mood of purposeful exploration and masterful navigation, incorporating subtle seasonal/elemental references appropriate for Summer (Water/Summer symbols, flowing energy, confident direction).
+      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
+      
+  # Related Cards
+  related_cards: 
+    # Season variations of the same card
+    same_card_winter: "00000000" # The Moon in Winter (Sage)
+    same_card_spring: "00000010" # The Moon in Spring (Fool)
+    same_card_summer: "00000011" # The Moon in Summer (Hero) (this card)
+    same_card_fall: "00000001" # The Moon in Fall (Monster)
+        
+    # Opposites
+    opposite: "11111100" # The Sun in Winter - innocent clarity vs. masterful darkness
+    
+    # Related thematically
+    thematic_pair: "11000011" # The Magician in Summer - masterful manifestation related to masterful navigation
+    
+    # Complete cycle
+    full_cycle: ["00000000","00000010","00000011","00000001"] # The Moon in all seasons
+    
+  # Bit Values
+  bit_values:
+    bit1: "0"  # Intuition
+    bit2: "0"  # Ability
+    bit3: "0"  # Capacity
+    bit4: "0"  # Expectations
+    bit5: "0"  # Support
+    bit6: "0"  # Options
+    bit78: "11" # Cycle phase (Summer)

@@ -1,0 +1,120 @@
+# Example Card Format
+# This template provides the structure for creating new 8-bit Oracle cards
+
+# Card [XXXXXXXX].yml - [Card Name] in [Season] ([Archetype])
+card:
+  # Summary
+  binary:      "[XXXXXXXX]"  # 8-bit binary code
+  decimal:     "[DDD]"       # Decimal equivalent
+  hexadecimal: "[XX]"        # Hexadecimal equivalent
+
+  # Basic Info
+  # These are crude associations that serve as inputs for the interpreted meaning 
+  basic_info: 
+    desc: "[A paragraph describing the card's core energy and meaning - focus on the combination of hexagram energy with the seasonal/archetypal expression]"
+    
+    keywords: ["[keyword 1]", "[keyword 2]", "[keyword 3]", "[keyword 4]", "[keyword 5]", "[keyword 6]"]
+    symbols: ["[symbol 1]", "[symbol 2]", "[symbol 3]", "[symbol 4]", "[symbol 5]", "[symbol 6]"]
+  
+  # Direct Associations (these come directly from various associations to the bits and symbol systems)
+  # These are hard-coded into our system and are inputs used to generate interpreted meanings
+  direct_associations:
+    archetype: "[Sage/Fool/Hero/Monster]" # Determined by resonant season and seasonal cycle
+    archetype_color: "[Color]" # Sage: Iridescent, Fool: Turquoise, Hero: Gold, Monster: Purple
+
+    ## Inner World (bits 1-3)
+    inner_world:
+      color: "[Color]" # From rgb_colors mapping
+      trigram: "[Trigram]" # From i_ching_trigrams mapping
+      meaning: "[Inner world meaning]" # From composite_frameworks.inner_world.meanings
+
+    ## Outer World (bits 4-6)
+    outer_world:
+      color: "[Color]" # From rgb_colors mapping
+      trigram: "[Trigram]" # From i_ching_trigrams mapping
+      meaning: "[Outer world meaning]" # From composite_frameworks.outer_world.meanings
+
+    ## Cycle (bits 7-8)
+    cycle: 
+      season: "[Winter/Spring/Summer/Fall]" # From bit_definitions.bit78.meanings
+      tarot_suit: "[Swords/Wands/Cups/Pentacles]" # From bit_definitions.bit78.meanings
+      moon_phase: "[New/Waxing/Full/Waning] Moon" # From bit_definitions.bit78.meanings
+      element: "[Air/Fire/Water/Earth]" # From bit_definitions.bit78.meanings
+
+    # Tarot
+    tarot:
+      card: "[Card name]" # The corresponding tarot card for bits 1-6
+      cycle_suit: "[Suit]" # The corresponding tarot suit for bits 7-8
+      cycle_moon: "[Moon phase]"
+      seasonal_expression: "[Description of how this hexagram energy expresses in this season as this archetype]"
+
+    # Hexagram-related
+    hexagram:
+      i_ching:
+        number: [N]
+        name: "[Name]"
+        label: "[Label]"
+        description: "[Description]"
+      gene_key:
+        number: [N]
+        shadow: "[Shadow]"
+        gift: "[Gift]"
+        siddhi: "[Siddhi]"
+        meaning: "[Meaning]"
+
+  # Interpreted Meanings (combining all direct associations into a coherent whole)
+  # This is where the synthesis happens - integrating all direct associations
+  interpreted_meanings: 
+    basic:
+      name_6bit: "[Name based on hexagram]"
+      name_8bit: "[Name incorporating season]"
+
+    # Oracle card creation - captures the essence of all 8 bits and associations
+    # Follow style guidelines for consistent deck creation
+    oracle_card:
+      card_name: "[Evocative name for the card]"
+      # For the card_creature, use the gender determined by bit count:
+      # - For 3 or 5 bits set to 1: Hero and Monster are feminine, Fool and Sage are masculine
+      # - For 2 or 4 bits set to 1: Hero and Monster are masculine, Fool and Sage are feminine
+      # - For 0 or 6 bits set to 1: All archetypes are gender-neutral
+      card_creature: "[Description of the mythological figure or character that embodies this card's energy, with appropriate gender based on bit count]"
+      question_posed: "[Question this card asks the querent]"
+      card_scene: "[Detailed description of the card's imagery, incorporating all symbolic elements, colors, and archetype - maintain consistent gender representation]"
+      universal_symbol: "[Core symbol that captures the essence of this card]"
+      mood: "[Emotional/energetic quality of the card]"
+
+      # Image generation prompt - use this template but fill with specific details
+      prompt_for_image_gen: "Limited color risograph-style illustration of [short scene description].
+      Use [INNER WORLD COLOR] for foreground elements (inner world) and [OUTER WORLD COLOR] for background/environment (outer world), with [ACCENT COLOR] for highlights.
+      Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '[XXXXXXXX]' and card title '[CARD TITLE]' in bold, without corner decorations or symbols.
+      Feature [key symbolic elements, e.g., moon phase, animal companions, symbolic object].
+      The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle seasonal/elemental references appropriate for [SEASON].
+      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
+      
+  # Related Cards
+  related_cards: 
+    # Season variations of the same card
+    same_card_winter: "[XXXXXX00]" # The [Hexagram] in Winter
+    same_card_spring: "[XXXXXX10]" # The [Hexagram] in Spring
+    same_card_summer: "[XXXXXX11]" # The [Hexagram] in Summer
+    same_card_fall: "[XXXXXX01]" # The [Hexagram] in Fall
+        
+    # Opposites
+    opposite: "[Inverted binary]" # [Name of opposite card]
+    
+    # Related thematically
+    thematic_pair: "[Related binary]" # [Name of thematically related card]
+    
+    # Complete cycle - order depends on resonant season, always starts with Sage
+    full_cycle: ["[Sage card]","[Fool card]","[Hero card]","[Monster card]"] # The [Hexagram] in all seasons
+    
+  # Bit Values - for reference and calculation
+  bit_values:
+    bit1: "[0/1]"  # Intuition
+    bit2: "[0/1]"  # Ability
+    bit3: "[0/1]"  # Capacity
+    bit4: "[0/1]"  # Expectations
+    bit5: "[0/1]"  # Support
+    bit6: "[0/1]"  # Options
+    bit78: "[00/01/10/11]" # Cycle phase

@@ -1,0 +1,124 @@
+# Card 00000000.yml - The Moon in Winter (Sage)
+card:
+  # Summary
+  binary:      "00000000"
+  decimal:     "0"
+  hexadecimal: "00"
+
+  # Basic Info
+  # These are crude associations, and will serve as inputs for the interpreted meaning 
+  basic_info: 
+    desc: "This card represents the darkness of The Moon transformed into profound wisdom. The void is no longer feared but understood as the necessary space from which all forms emerge. It embodies the transcendent understanding that comes from fully accepting uncertainty and mystery as teachers."
+    
+    keywords: ["void wisdom", "transcendent darkness", "mystery as teacher", "sage of the unknown", "enlightened uncertainty", "absence as presence"]
+    symbols: ["empty circle", "void", "dark mirror", "night sky without stars", "new moon", "shadow sage"]
+  
+  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
+  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  direct_associations:
+    archetype: "Sage" # Winter is the resonant season for this hexagram (Inner 0, Outer 0)
+    archetype_color: "Iridescent"
+
+    ## Inner World (bits 1-3)
+    inner_world:
+      color: "Black"
+      trigram: "Earth"
+      meaning: "Complete absence of inner resources; intuition, ability, and capacity are all absent."
+
+    ## Outer World (bits 4-6)
+    outer_world:
+      color: "Black"
+      trigram: "Earth"
+      meaning: "Complete lack of outer resources; expectations, support, and options are all absent."
+
+    ## Cycle (bits 7-8)
+    cycle: 
+      season: "Winter"
+      tarot_suit: "Swords"
+      moon_phase: "New Moon"
+      element: "Air"
+
+    # Tarot
+    tarot:
+      card: "The Moon" # The corresponding tarot card for bits 1-6
+      cycle_suit: "Swords" # The corresponding tarot suit for bits 7-8
+      cycle_moon: "New"
+      seasonal_expression: "The Moon reveals profound wisdom in Winter as the Sage, understanding the void not as emptiness but as the ground of infinite potential."
+
+    # Hexagram-related
+    hexagram:
+      i_ching:
+        number: 2
+        name: "Kun (The Receptive)"
+        meaning: "Pure yin, yielding, responsive, accepting, following"
+      gene_key:
+        number: 2
+        shadow: "Dislocation"
+        gift: "Orientation"
+        siddhi: "Unity"
+        meaning: "Finding your true direction and experiencing oneness"
+
+  # Interpreted Meanings (combining all of the direct associations in various ways)
+  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  interpreted_meanings: 
+    basic:
+      name_6bit: "The Moon"
+      name_8bit: "The New Moon"
+
+    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
+    # Style guidelines: Inspired by the clear and simple design of the Rider Waite Smith deck, the 
+    # vibe of the Brady Tarot deck, and the humor and complexity of the Arcane Bullshit deck. 
+    # The card should use a limited color palette, lines as if created via risograph, be full-bleed, 
+    # include the name on the card, as well as the card_scene, some hint of the resonant season, and the universal symbol.
+    # The names of the cards should feel like they are part of a cohesive deck, and be completely devoid of cliches.
+    # Be sure to work in the colors (inner = foreground, outer = background) as well as the actual 8-bit binary code that this card represents.
+    oracle_card:
+      card_name: "Void Wisdom"
+      card_creature: "An ancient sage whose eyes reflect the darkness between stars and whose hands shape emptiness into form"
+      question_posed: "What insights emerge when you embrace uncertainty not as something to overcome but as the very ground of wisdom itself?"
+      card_scene: "An elderly sage sits in deep meditation upon pristine snow, the darkness of winter night surrounding them. Their eyes are closed, but a third eye on their forehead is open, revealing a miniature cosmos within. Their hands form a mudra that creates the perfect outline of emptiness in the air before them. Within this shaped void, subtle patterns emerge and dissolve - galaxies, seeds, mathematical equations. Above, a new moon forms a perfect empty circle in the sky. The sage's breath is visible in the cold air, but rather than dispersing, it forms crystalline geometric patterns that hang suspended. A dark mirror or pool beside them reflects nothing visible yet seems profoundly full."
+      universal_symbol: "The empty bowl - receptive wisdom that holds without grasping"
+      mood: "Transcendent understanding, profound acceptance, the peace of embracing mystery"
+
+      # USE THIS PROMPT TEMPLATE BUT FILL IN WITH SPECIFIC DETAILS FOR THIS CARD:
+      # Limited color risograph-style illustration of [short scene description].
+      # Use [INNER WORLD COLOR] for foreground elements (inner world) and [OUTER WORLD COLOR] for background/environment (outer world), with [ACCENT COLOR] for highlights.
+      # Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      # Include a clean, full-width title bar at the bottom, with centered 8-bit code "[XXXXXXXX]" and card title "[CARD TITLE]" in bold, without corner decorations or symbols.
+      # Feature [key symbolic elements, e.g., moon phase, animal companions, symbolic object].
+      # The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle seasonal/elemental references appropriate for [SEASON] (e.g., [Air/Winter], [Fire/Spring], [Water/Summer], [Earth/Fall]).
+      # Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean.
+      prompt_for_image_gen: "Limited color risograph-style illustration of an ancient sage meditating in winter night, forming a mudra that shapes emptiness.
+      Use BLACK for foreground elements (inner world) and BLACK for background/environment (outer world), with iridescent and crystalline blue accents.
+      Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '00000000' and card title 'VOID WISDOM' in bold, without corner decorations or symbols.
+      Feature a new moon as empty circle, third eye revealing cosmic patterns, geometric breath patterns crystallizing in cold air, and an empty bowl or dark mirror nearby.
+      The scene should evoke the mood of transcendent understanding and profound acceptance, incorporating subtle seasonal/elemental references appropriate for Winter (Air/Winter symbols, crystalline patterns, sacred geometry in snow and ice).
+      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
+      
+  # Related Cards
+  related_cards: 
+    # Season variations of the same card
+    same_card_winter: "00000000" # The Moon in Winter (Sage) - this card
+    same_card_spring: "00000010" # The Moon in Spring (Fool)
+    same_card_summer: "00000011" # The Moon in Summer (Hero)
+    same_card_fall: "00000001" # The Moon in Fall (Monster)
+        
+    # Opposites
+    opposite: "11111111" # The Sun in Summer - wise light vs. wise darkness
+    
+    # Related thematically
+    thematic_pair: "10000000" # High Priestess in Winter - intuitive mystery wisdom related to void wisdom
+    
+    # Complete cycle
+    full_cycle: ["00000000","00000010","00000011","00000001"] # The Moon in all seasons
+    
+  # Bit Values
+  bit_values:
+    bit1: "0"  # Intuition
+    bit2: "0"  # Ability
+    bit3: "0"  # Capacity
+    bit4: "0"  # Expectations
+    bit5: "0"  # Support
+    bit6: "0"  # Options
+    bit78: "00" # Cycle phase (Winter)

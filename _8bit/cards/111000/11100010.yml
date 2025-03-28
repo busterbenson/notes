@@ -1,0 +1,125 @@
+# Card 11100010.yml - Peace in Spring (Sage)
+card:
+  # Summary
+  binary:      "11100010"
+  decimal:     "226"
+  hexadecimal: "E2"
+
+  # Basic Info
+  # These are crude associations, and will serve as inputs for the interpreted meaning 
+  basic_info: 
+    desc: "This card represents the profound wisdom that emerges from inner abundance paired with external limitation. It embodies the paradox of having complete inner resources (intuition, ability, and capacity) while navigating a world with minimal external support. In its Sage aspect in Spring, it reveals the masterful orchestration of harmony through balancing inner light against outer darkness."
+    
+    keywords: ["wise harmony", "transcendent balance", "inner illumination", "sage-like orchestration", "profound peace", "radiant equilibrium"]
+    symbols: ["spring forest bathed in dawn light", "waxing moon illuminating shadow", "sage conducting invisible forces", "bridge connecting fertile and barren lands", "light emanating from within", "scattered resources arranged in perfect order"]
+  
+  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
+  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  direct_associations:
+    archetype: "Sage" # Spring is the resonant season for this hexagram (Inner 1, Outer 0)
+    archetype_color: "Gold"
+
+    ## Inner World (bits 1-3)
+    inner_world:
+      color: "White"
+      trigram: "Heaven"
+      meaning: "Complete presence of inner resources; self-sufficient, confident, and fully equipped."
+
+    ## Outer World (bits 4-6)
+    outer_world:
+      color: "Black"
+      trigram: "Earth"
+      meaning: "Complete lack of outer resources; expectations, support, and options are all absent."
+
+    ## Cycle (bits 7-8)
+    cycle: 
+      season: "Spring"
+      tarot_suit: "Wands"
+      moon_phase: "Waxing Moon"
+      element: "Fire"
+
+    # Tarot
+    tarot:
+      card: "Peace" # The corresponding tarot card for bits 1-6
+      cycle_suit: "Wands" # The corresponding tarot suit for bits 7-8
+      cycle_moon: "Waxing"
+      seasonal_expression: "Peace reveals profound wisdom in Spring as the Sage, orchestrating harmony through the masterful balancing of abundant inner resources despite external scarcity."
+
+    # Hexagram-related
+    hexagram:
+      i_ching:
+        number: 11
+        name: "Tai"
+        label: "Peace"
+        description: "Harmony, balance, prosperity, smooth flow, great potential"
+      gene_key:
+        number: 11
+        shadow: "Obscurity"
+        gift: "Idealism"
+        siddhi: "Light"
+        meaning: "A journey from confusion and darkness to visionary clarity and ultimately becoming a pure channel for divine light"
+
+  # Interpreted Meanings (combining all of the direct associations in various ways)
+  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  interpreted_meanings: 
+    basic:
+      name_6bit: "Peace"
+      name_8bit: "The Waxing Peace"
+
+    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
+    # Style guidelines: Inspired by the clear and simple design of the Rider Waite Smith deck, the 
+    # vibe of the Brady Tarot deck, and the humor and complexity of the Arcane Bullshit deck. 
+    # The card should use a limited color palette, lines as if created via risograph, be full-bleed, 
+    # include the name on the card, as well as the card_scene, some hint of the resonant season, and the universal symbol.
+    # The names of the cards should feel like they are part of a cohesive deck, and be completely devoid of cliches.
+    # Be sure to work in the colors (inner = foreground, outer = background) as well as the actual 8-bit binary code that this card represents.
+    oracle_card:
+      card_name: "Luminous Harmony"
+      card_creature: "A radiant sage who conducts unseen forces with subtle movements, creating perfect balance between realms of light and shadow, effortlessly weaving order from chaos through inner illumination rather than external power"
+      question_posed: "How might your inner resources provide the harmony you seek when the outside world offers little support?"
+      card_scene: "A serene sage stands at the boundary between two worlds in the gentle light of spring dawn. Their body glows with an internal luminescence, appearing almost translucent with white light while the world around them lies in darkness. A waxing moon hangs above, casting just enough light to reveal the stark contrast between the environments. On one side of the sage, barren land stretches toward the horizon with minimal vegetation and resources. On the other side, through what appears to be a permeable boundary of the sage's creation, lush spring growth flourishes. The sage makes no grand gestures but rather conducts with subtle finger movements, as if weaving invisible threads of harmony between the contrasting realms. Their eyes contain profound understanding, recognizing that balance emerges not from forcing change but from masterful orchestration of existing elements. Around their feet, scattered objects – stones, twigs, leaves – have arranged themselves in perfect geometric patterns that seem to radiate outward from where they stand. Despite the apparent poverty of resources in the environment, the sage has created a bridge of light that connects the realms of abundance and scarcity. Small creatures from both realms gather near, drawn to the harmony emanating from the sage's presence. The entire scene conveys that true peace comes not from external circumstances but from the masterful orchestration of inner resources against even the most challenging backdrop."
+      universal_symbol: "The conductor's hands – perfect harmony created not through force but through subtle direction and inner illumination"
+      mood: "Serene wisdom, masterful balance, the profound harmony that emerges when inner abundance gracefully accommodates external limitation"
+
+      # USE THIS PROMPT TEMPLATE BUT FILL IN WITH SPECIFIC DETAILS FOR THIS CARD:
+      # Limited color risograph-style illustration of [short scene description].
+      # Use [INNER WORLD COLOR] for foreground elements (inner world) and [OUTER WORLD COLOR] for background/environment (outer world), with [ACCENT COLOR] for highlights.
+      # Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      # Include a clean, full-width title bar at the bottom, with centered 8-bit code "[XXXXXXXX]" and card title "[CARD TITLE]" in bold, without corner decorations or symbols.
+      # Feature [key symbolic elements, e.g., moon phase, animal companions, symbolic object].
+      # The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle seasonal/elemental references appropriate for [SEASON] (e.g., [Air/Winter], [Fire/Spring], [Water/Summer], [Earth/Fall]).
+      # Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean.
+      prompt_for_image_gen: "Limited color risograph-style illustration of a luminous sage standing at the boundary between barren and fertile lands in spring dawn light, conducting harmony between realms with subtle gestures.
+      Use WHITE for foreground elements (inner world) and BLACK for background/environment (outer world), with gold and soft green accents.
+      Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '11100010' and card title 'LUMINOUS HARMONY' in bold, without corner decorations or symbols.
+      Feature a waxing moon, a bridge of light connecting contrasting realms, geometric patterns forming at the sage's feet, and small creatures gathering from both barren and fertile lands.
+      The scene should evoke the mood of serene wisdom and masterful balance, incorporating subtle seasonal/elemental references appropriate for Spring (Fire/Spring symbols, new growth emerging, dawn light, fire-like inner radiance).
+      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
+      
+  # Related Cards
+  related_cards: 
+    # Season variations of the same card
+    same_card_spring: "11100010" # Peace in Spring (Sage) - this card
+    same_card_summer: "11100011" # Peace in Summer (Fool)
+    same_card_fall: "11100001" # Peace in Fall (Hero)
+    same_card_winter: "11100000" # Peace in Winter (Monster)
+        
+    # Opposites
+    opposite: "00011101" # Standstill in Fall - luminous harmony vs. wise stillness
+    
+    # Related thematically
+    thematic_pair: "11111110" # The Sun in Spring - complete illumination related to inner light
+    
+    # Complete cycle
+    full_cycle: ["11100010","11100011","11100001","11100000"] # Peace in all seasons
+    
+  # Bit Values
+  bit_values:
+    bit1: "1"  # Intuition
+    bit2: "1"  # Ability
+    bit3: "1"  # Capacity
+    bit4: "0"  # Expectations
+    bit5: "0"  # Support
+    bit6: "0"  # Options
+    bit78: "10" # Cycle phase (Spring)

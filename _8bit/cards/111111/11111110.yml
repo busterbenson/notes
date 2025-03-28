@@ -1,0 +1,124 @@
+# Card 11111110.yml - The Sun in Spring (Fool)
+card:
+  # Summary
+  binary:      "11111110"
+  decimal:     "254"
+  hexadecimal: "FE"
+
+  # Basic Info
+  # These are crude associations, and will serve as inputs for the interpreted meaning 
+  basic_info: 
+    desc: "This card represents illumination with an innocent, fresh quality. All resources are present but expressed with beginner's mind - complete abilities experienced without expectation or attachment. It embodies the childlike wonder of seeing everything clearly for the first time."
+    
+    keywords: ["innocent clarity", "pure illumination", "childlike sight", "fresh perspective", "unfiltered perception", "dawn of understanding"]
+    symbols: ["spring sun", "fresh light on new blossoms", "child's eyes filled with sunlight", "crystal prism", "clear morning sky"]
+  
+  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
+  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  direct_associations:
+    archetype: "Fool" # Following the cycle from Summer (Sage) to Spring (Fool)
+    archetype_color: "Turquoise"
+
+    ## Inner World (bits 1-3)
+    inner_world:
+      color: "White"
+      trigram: "Heaven"
+      meaning: "Complete presence of inner resources; intuition, ability, and capacity are all present."
+
+    ## Outer World (bits 4-6)
+    outer_world:
+      color: "White"
+      trigram: "Heaven"
+      meaning: "Complete presence of outer resources; expectations, support, and options are all present."
+
+    ## Cycle (bits 7-8)
+    cycle: 
+      season: "Spring"
+      tarot_suit: "Wands"
+      moon_phase: "Waxing Moon"
+      element: "Fire"
+
+    # Tarot
+    tarot:
+      card: "The Sun" # The corresponding tarot card for bits 1-6
+      cycle_suit: "Wands" # The corresponding tarot suit for bits 7-8
+      cycle_moon: "Waxing"
+      seasonal_expression: "The Sun finds its most innocent expression in Spring as the Fool, bringing pure illumination with beginner's mind and childlike wonder."
+
+    # Hexagram-related
+    hexagram:
+      i_ching:
+        number: 1
+        name: "Qian (The Creative)"
+        meaning: "Pure yang, creativity, strength, initiative, leadership"
+      gene_key:
+        number: 1
+        shadow: "Entropy"
+        gift: "Freshness"
+        siddhi: "Beauty"
+        meaning: "A journey from decay and disorder to renewal and perpetual freshness, ultimately revealing the inherent beauty in all things"
+
+  # Interpreted Meanings (combining all of the direct associations in various ways)
+  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  interpreted_meanings: 
+    basic:
+      name_6bit: "The Sun"
+      name_8bit: "The Autumn Sun"
+
+    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
+    # Style guidelines: Inspired by the clear and simple design of the Rider Waite Smith deck, the 
+    # vibe of the Brady Tarot deck, the mythology of Hilda, and the humor and complexity of the Arcane Bullshit deck. 
+    # The card should use a limited color palette, lines as if created via risograph, be full-bleed, 
+    # include the name on the card, as well as the card_scene, some hint of the resonant season, and the universal symbol.
+    # The names of the cards should feel like they are part of a cohesive deck, and be completely devoid of cliches.
+    # Be sure to work in the colors (inner = foreground, outer = background) as well as the actual 8-bit binary code that this 
+    oracle_card:
+      card_name: "First Light"
+      card_creature: "A sunlit child exploring a spring landscape, discovering how light makes everything new"
+      question_posed: "What would you perceive if you could see everything clearly but without judgment or expectation?"
+      card_scene: "A child stands in a clearing surrounded by trees in spring bloom, their face and body illuminated by light filtering through fresh green leaves and colorful blossoms. The child's eyes are wide with wonder, reflecting perfect miniature suns. They hold a newly sprouted leaf up to the light, examining its intricate patterns with complete absorption. Each blossom around them acts as a natural stained glass, creating patches of colored light on the fresh grass. The child is reaching out to touch one particularly bright patch of light, with an expression suggesting they believe it might be something they can pick up and hold. A small prism hangs from a branch nearby, casting rainbow patterns that the child hasn't yet noticed but will soon discover."
+      universal_symbol: "The prism - pure light revealing its hidden complexity when experienced with fresh perception"
+      mood: "Innocent clarity, pristine awareness, the joy of unfiltered perception"
+
+      # USE THIS PROMPT TEMPLATE BUT FILL IN WITH SPECIFIC DETAILS FOR THIS CARD:
+      # Limited color risograph-style illustration of [short scene description].
+      # Use [INNER WORLD COLOR] for foreground elements (inner world) and [OUTER WORLD COLOR] for background/environment (outer world), with [ACCENT COLOR] for highlights.
+      # Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      # Include a clean, full-width title bar at the bottom, with centered 8-bit code "[XXXXXXXX]" and card title "[CARD TITLE]" in bold, without corner decorations or symbols.
+      # Feature [key symbolic elements, e.g., moon phase, animal companions, symbolic object].
+      # The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle seasonal/elemental references appropriate for [SEASON] (e.g., [Air/Winter], [Fire/Spring], [Water/Summer], [Earth/Fall]).
+      # Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean.
+      prompt_for_image_gen: "Limited color risograph-style illustration of a child in spring forest, face illuminated by light filtering through fresh blossoms and new leaves.
+      Use WHITE for foreground elements (inner world) and WHITE for background/environment (outer world), with turquoise and spring green accents.
+      Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '11111110' and card title 'FIRST LIGHT' in bold, without corner decorations or symbols.
+      Feature spring blossoms creating colored light patterns, a child examining a fresh leaf with wonder, a prism hanging from a branch, and patches of light on new grass.
+      The scene should evoke the mood of innocent clarity and pristine awareness, incorporating subtle seasonal/elemental references appropriate for Spring (Fire/Spring symbols, new growth, spring renewal).
+      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
+      
+  # Related Cards
+  related_cards: 
+    # Season variations of the same card
+    same_card_winter: "11111100" # The Sun in Winter (Hero)
+    same_card_spring: "11111110" # The Sun in Spring (Monster)
+    same_card_summer: "11111111" # The Sun in Summer (Sage)
+    same_card_spring: "11111101" # The Sun in Spring (Fool)
+        
+    # Opposites
+    opposite: "00000001" # The Moon in Spring - innocent darkness vs. innocent light
+    
+    # Related thematically
+    thematic_pair: "10100010" # High Priestess in Fall - intuitive mystery innocence related to clear perception
+    
+    # Complete cycle
+    full_cycle: ["11111111","11111110","11111100","11111101"] # The Sun in all seasons
+    
+  # Bit Values
+  bit_values:
+    bit1: "1"  # Intuition
+    bit2: "1"  # Ability
+    bit3: "1"  # Capacity
+    bit4: "1"  # Expectations
+    bit5: "1"  # Support
+    bit6: "1"  # Options
+    bit78: "10" # Cycle phase (Fall)

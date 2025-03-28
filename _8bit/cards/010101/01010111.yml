@@ -1,0 +1,124 @@
+# Card 01010111.yml - Before Completion in Summer (Monster)
+card:
+  # Summary
+  binary:      "01010111"
+  decimal:     "87"
+  hexadecimal: "57"
+
+  # Basic Info
+  # These are crude associations, and will serve as inputs for the interpreted meaning 
+  basic_info: 
+    desc: "This card represents the monstrous aspects that can emerge in the moments before completion when perfectionism becomes overwhelming. It embodies the shadow of near-completion that manifests as paralysis, obsessive refinement, and the inability to finalize due to fear of imperfection. In its Monster aspect, it shows how the pressure of culmination can transform skill into self-sabotage."
+    
+    keywords: ["crushing perfectionism", "completion anxiety", "paralytic refinement", "overwhelming culmination", "threshold terror", "pre-completion sabotage"]
+    symbols: ["full moon obscured by storm", "drowning in last details", "endlessly revised final draft", "overgrown maze with exit in sight", "broken tools at project's end", "reflection shattered at culmination"]
+  
+  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
+  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  direct_associations:
+    archetype: "Monster" # Following the cycle from Fall (Sage) through Winter (Fool) and Spring (Hero) to Summer (Monster)
+    archetype_color: "Purple"
+
+    ## Inner World (bits 1-3)
+    inner_world:
+      color: "Cyan"
+      trigram: "Thunder"
+      meaning: "Ability and capacity present but intuition absent; skilled execution and resources available but lacking inner direction."
+
+    ## Outer World (bits 4-6)
+    outer_world:
+      color: "Magenta"
+      trigram: "Fire"
+      meaning: "Expectations and options are clear, but lacking community support; clear socially authorized path without assistance."
+
+    ## Cycle (bits 7-8)
+    cycle: 
+      season: "Summer"
+      tarot_suit: "Cups"
+      moon_phase: "Full Moon"
+      element: "Water"
+
+    # Tarot
+    tarot:
+      card: "The World" # The corresponding tarot card for bits 1-6 (using alternative mapping for odd-parity pattern)
+      cycle_suit: "Cups" # The corresponding tarot suit for bits 7-8
+      cycle_moon: "Full"
+      seasonal_expression: "Before Completion becomes monstrous in Summer, when anxiety about perfection creates paralysis at the threshold of accomplishment, preventing final integration."
+
+    # Hexagram-related
+    hexagram:
+      i_ching:
+        number: 64
+        name: "Wei Ji (Before Completion)"
+        meaning: "Not yet completed, transition, approaching the end"
+      gene_key:
+        number: 64
+        shadow: "Confusion"
+        gift: "Imagination"
+        siddhi: "Illumination"
+        meaning: "A journey from mental confusion to creative imagination and ultimately pure clarity and illumination - the starting point of transformation"
+
+  # Interpreted Meanings (combining all of the direct associations in various ways)
+  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  interpreted_meanings: 
+    basic:
+      name_6bit: "Before Completion"
+      name_8bit: "The Full Threshold"
+
+    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
+    # Style guidelines: Inspired by the clear and simple design of the Rider Waite Smith deck, the 
+    # vibe of the Brady Tarot deck, and the humor and complexity of the Arcane Bullshit deck. 
+    # The card should use a limited color palette, lines as if created via risograph, be full-bleed, 
+    # include the name on the card, as well as the card_scene, some hint of the resonant season, and the universal symbol.
+    # The names of the cards should feel like they are part of a cohesive deck, and be completely devoid of cliches.
+    # Be sure to work in the colors (inner = foreground, outer = background) as well as the actual 8-bit binary code that this card represents.
+    oracle_card:
+      card_name: "Perfectionist's Paralysis"
+      card_creature: "A many-handed editor-beast who endlessly revises a nearly-complete work, with each new correction creating three new flaws requiring attention"
+      question_posed: "Where has your quest for perfection become a monster that prevents you from taking the final steps toward completion?"
+      card_scene: "A distorted figure sits at a desk overflowing with papers, drafts, and plans for a project that is 99% complete. The figure has sprouted multiple arms, each clutching different editing tools – red pens, scissors, correction fluid – that frantically make adjustments to work that is already exceptional. Their eyes have multiplied as well, each focusing obsessively on different microscopic flaws invisible to normal perception. The figure is surrounded by crumpled attempts at 'final drafts,' each discarded for increasingly trivial imperfections. A full moon is visible through a window, its light oppressively bright, revealing every flaw and imperfection with merciless clarity. What began as a simple project has become grotesquely complex, with layer upon layer of corrections obscuring the original vision. A doorway labeled 'COMPLETION' stands open nearby, but the path to it is blocked by stacks of revisions and refinements. The figure's shadow appears to be trying to pull them toward the door, but the conscious being remains fixed in place, paralyzed by fear that their work isn't perfect enough to share. A clock on the wall shows hands spinning backward, suggesting time wasted in endless refinement."
+      universal_symbol: "The red pen that never stops marking – perfectionism that prevents completion"
+      mood: "Crushing anxiety, perfectionist paralysis, the overwhelming pressure that transforms skill into self-sabotage"
+
+      # USE THIS PROMPT TEMPLATE BUT FILL IN WITH SPECIFIC DETAILS FOR THIS CARD:
+      # Limited color risograph-style illustration of [short scene description].
+      # Use [INNER WORLD COLOR] for foreground elements (inner world) and [OUTER WORLD COLOR] for background/environment (outer world), with [ACCENT COLOR] for highlights.
+      # Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      # Include a clean, full-width title bar at the bottom, with centered 8-bit code "[XXXXXXXX]" and card title "[CARD TITLE]" in bold, without corner decorations or symbols.
+      # Feature [key symbolic elements, e.g., moon phase, animal companions, symbolic object].
+      # The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle seasonal/elemental references appropriate for [SEASON] (e.g., [Air/Winter], [Fire/Spring], [Water/Summer], [Earth/Fall]).
+      # Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean.
+      prompt_for_image_gen: "Limited color risograph-style illustration of a distorted many-armed, many-eyed figure frantically making corrections to an already exceptional project, surrounded by mountains of crumpled 'final drafts.'
+      Use CYAN for foreground elements (inner world) and MAGENTA for background/environment (outer world), with deep purple and watery blue accents.
+      Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '01010111' and card title 'PERFECTIONIST'S PARALYSIS' in bold, without corner decorations or symbols.
+      Feature a full moon casting merciless light through window, editing tools creating more problems than they solve, a blocked doorway labeled 'COMPLETION', and a clock with hands spinning backward.
+      The scene should evoke the mood of crushing anxiety and perfectionist paralysis, incorporating subtle seasonal/elemental references appropriate for Summer (Water/Summer symbols, emotional overwhelm, the drowning feeling of being unable to complete what is nearly finished).
+      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
+      
+  # Related Cards
+  related_cards: 
+    # Season variations of the same card
+    same_card_fall: "01010101" # Before Completion in Fall (Sage)
+    same_card_winter: "01010100" # Before Completion in Winter (Fool)
+    same_card_spring: "01010110" # Before Completion in Spring (Hero)
+    same_card_summer: "01010111" # Before Completion in Summer (Monster) - this card
+        
+    # Opposites
+    opposite: "10101000" # After Completion in Winter - monstrous preparation vs. monstrous completion
+    
+    # Related thematically
+    thematic_pair: "11111111" # The Sun in Summer - overwhelmingly blinding clarity vs. overwhelmingly paralytic perfectionism
+    
+    # Complete cycle
+    full_cycle: ["01010101","01010100","01010110","01010111"] # Before Completion in all seasons
+    
+  # Bit Values
+  bit_values:
+    bit1: "0"  # Intuition
+    bit2: "1"  # Ability
+    bit3: "0"  # Capacity
+    bit4: "1"  # Expectations
+    bit5: "0"  # Support
+    bit6: "1"  # Options
+    bit78: "11" # Cycle phase (Summer)

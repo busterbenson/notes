@@ -1,0 +1,126 @@
+# Card 01001011.yml - The Abysmal in Summer (Hero)
+card:
+  # Summary
+  binary:      "01001011"
+  decimal:     "75"
+  hexadecimal: "4B"
+
+  # Basic Info
+  # These are crude associations, and will serve as inputs for the interpreted meaning 
+  basic_info: 
+    desc: "This card represents the masterful skill and confident navigation of dangerous waters. It embodies the paradox of double water energy – the inner world of technical ability mirroring the outer world of social support – approached with heroic competence. In its Hero aspect in Summer, it reveals powerful mastery of challenges through disciplined skill and strategic action."
+    
+    keywords: ["masterful navigation", "skilled challenge", "confident depths", "heroic water-crossing", "strategic peril", "expert danger"]
+    symbols: ["summer river with navigable rapids", "full moon illuminating safe passage", "captain steering through whirlpools", "boat built to withstand dangers", "mapped water route with markers", "water tamed through expertise"]
+  
+  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
+  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  direct_associations:
+    archetype: "Hero" # Summer follows Spring in the cycle for this hexagram (Sage in Winter)
+    archetype_color: "Purple"
+    gender: "Masculine" # 2 bits set to 1 in positions 1-6: Hero and Monster are masculine
+
+    ## Inner World (bits 1-3)
+    inner_world:
+      color: "Green"
+      trigram: "Water"
+      meaning: "Technical ability present but lacking intuition and capacity; skilled execution without direction or resources."
+
+    ## Outer World (bits 4-6)
+    outer_world:
+      color: "Green"
+      trigram: "Water"
+      meaning: "Support present, but lacking alignment with expectations and clear options."
+
+    ## Cycle (bits 7-8)
+    cycle: 
+      season: "Summer"
+      tarot_suit: "Cups"
+      moon_phase: "Full Moon"
+      element: "Water"
+
+    # Tarot
+    tarot:
+      card: "The Abysmal" # The corresponding tarot card for bits 1-6
+      cycle_suit: "Cups" # The corresponding tarot suit for bits 7-8
+      cycle_moon: "Full"
+      seasonal_expression: "The Abysmal manifests masterful skill in Summer as the Hero, navigating dangers and depths with confident expertise, mastering challenges through strategic action."
+
+    # Hexagram-related
+    hexagram:
+      i_ching:
+        number: 29
+        name: "Kan"
+        label: "The Abysmal"
+        description: "Danger, water, repeated challenge, persistence through peril"
+      gene_key:
+        number: 29
+        shadow: "Half-heartedness"
+        gift: "Devotion"
+        siddhi: "Commitment"
+        meaning: "A journey from lack of dedication to full-hearted service and ultimately absolute commitment to your highest purpose"
+
+  # Interpreted Meanings (combining all of the direct associations in various ways)
+  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  interpreted_meanings: 
+    basic:
+      name_6bit: "The Abysmal"
+      name_8bit: "The Full Abysmal"
+
+    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
+    # Style guidelines: Inspired by the clear and simple design of the Rider Waite Smith deck, the 
+    # vibe of the Brady Tarot deck, and the humor and complexity of the Arcane Bullshit deck. 
+    # The card should use a limited color palette, lines as if created via risograph, be full-bleed, 
+    # include the name on the card, as well as the card_scene, some hint of the resonant season, and the universal symbol.
+    # The names of the cards should feel like they are part of a cohesive deck, and be completely devoid of cliches.
+    # Be sure to work in the colors (inner = foreground, outer = background) as well as the actual 8-bit binary code that this card represents.
+    oracle_card:
+      card_name: "Masterful Navigation"
+      card_creature: "A confident male river captain whose skilled hands guide a perfectly designed vessel through twin whirlpools with precise control, neither fearing nor avoiding the danger but using its very energy to propel forward with purpose"
+      question_posed: "How might your technical abilities transform challenges into opportunities for masterful action?"
+      card_scene: "A focused male river captain stands at the helm of a precisely engineered vessel in the midst of a summer river's most dangerous stretch. Unlike the sage's still balance or the child's precarious curiosity, he actively navigates between twin whirlpools with confident expertise. His powerful frame is perfectly balanced against the rocking of the boat, muscles tensed in controlled readiness. A full moon illuminates the scene perfectly, revealing both the dangers and the narrow safe passage between them. The captain's hands grip specialized tools – a custom rudder and depth-measuring stick – that allow precise control in these treacherous waters. His vessel has been specifically designed for these conditions, with reinforced hulls and perfectly balanced weight distribution. The whirlpools themselves seem to respond to the captain's mastery, their energy actually helping to propel the boat forward rather than threatening to consume it. Along the riverbanks, careful observers can see markers and buoys placed by him during previous journeys, creating a mapped route through what appears to be impassable. Other vessels can be seen following at a safe distance, their occupants studying his techniques with admiration. The river's surface contains rapid currents, hidden rocks, and changing depths, yet the man's expression shows only focused determination and confident expertise. Strategic equipment is arranged within easy reach – emergency flotation, backup navigation tools, repair materials – prepared for any contingency yet not expecting disaster. The summer heat has made the river especially active, with increased flow and stronger whirlpools, yet this simply provides more energy for him to harness rather than avoid. The entire scene conveys the masterful skill that transforms challenges from obstacles into opportunities, not through avoiding danger but through strategic engagement and technical expertise."
+      universal_symbol: "The specialized rudder – the precisely designed tool that transforms dangerous currents into directional force when wielded with expertise"
+      mood: "Confident mastery, strategic expertise, the powerful competence that emerges when challenges and depths are approached with technical skill and tactical awareness"
+
+      # USE THIS PROMPT TEMPLATE BUT FILL IN WITH SPECIFIC DETAILS FOR THIS CARD:
+      # Limited color risograph-style illustration of [short scene description].
+      # Use [INNER WORLD COLOR] for foreground elements (inner world) and [OUTER WORLD COLOR] for background/environment (outer world), with [ACCENT COLOR] for highlights.
+      # Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      # Include a clean, full-width title bar at the bottom, with centered 8-bit code "[XXXXXXXX]" and card title "[CARD TITLE]" in bold, without corner decorations or symbols.
+      # Feature [key symbolic elements, e.g., moon phase, animal companions, symbolic object].
+      # The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle seasonal/elemental references appropriate for [SEASON] (e.g., [Air/Winter], [Fire/Spring], [Water/Summer], [Earth/Fall]).
+      # Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean.
+      prompt_for_image_gen: "Limited color risograph-style illustration of a focused male river captain standing at the helm of a precisely engineered vessel, actively navigating between twin whirlpools in a summer river with confident expertise and specialized tools.
+      Use GREEN for foreground elements (inner world) and GREEN for background/environment (outer world), with deep purple and light blue accents.
+      Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '01001011' and card title 'MASTERFUL NAVIGATION' in bold, without corner decorations or symbols.
+      Feature a full moon illuminating both dangers and safe passage, markers and buoys creating a mapped route through the river, the whirlpools' energy helping propel the boat forward, and other vessels following at a distance to learn the captain's techniques.
+      The scene should evoke the mood of confident mastery and strategic expertise, incorporating subtle seasonal/elemental references appropriate for Summer (Water/Summer symbols, heightened river activity from summer heat, the doubled water energy of summer season and water hexagram, flowing mastery).
+      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean. Clearly depict the captain as masculine, with strong features and confident posture."
+      
+  # Related Cards
+  related_cards: 
+    # Season variations of the same card
+    same_card_winter: "01001000" # The Abysmal in Winter (Sage)
+    same_card_spring: "01001010" # The Abysmal in Spring (Fool)
+    same_card_summer: "01001011" # The Abysmal in Summer (Hero) - this card
+    same_card_fall: "01001001" # The Abysmal in Fall (Monster)
+        
+    # Opposites
+    opposite: "10110100" # The Clinging in Winter - masterful navigation vs. harnessed fire
+    
+    # Related thematically
+    thematic_pair: "00000011" # The Moon in Summer - mysterious depths related to masterful navigation
+    
+    # Complete cycle
+    full_cycle: ["01001000","01001010","01001011","01001001"] # The Abysmal in all seasons
+    
+  # Bit Values
+  bit_values:
+    bit1: "0"  # Intuition
+    bit2: "1"  # Ability
+    bit3: "0"  # Capacity
+    bit4: "0"  # Expectations
+    bit5: "1"  # Support
+    bit6: "0"  # Options
+    bit78: "11" # Cycle phase (Summer)

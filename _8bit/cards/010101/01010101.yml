@@ -1,0 +1,124 @@
+# Card 01010101.yml - Before Completion in Fall (Sage)
+card:
+  # Summary
+  binary:      "01010101"
+  decimal:     "85"
+  hexadecimal: "55"
+
+  # Basic Info
+  # These are crude associations, and will serve as inputs for the interpreted meaning 
+  basic_info: 
+    desc: "This card represents the profound wisdom that emerges in the threshold state right before completion. It embodies the transcendent understanding of the final stages of a journey, when all elements are present but not yet fully integrated. In its Sage aspect, it reveals deep insight into the nature of preparation, transition, and the moment of potential realization."
+    
+    keywords: ["threshold wisdom", "penultimate insight", "almost-integration", "final gathering", "brink understanding", "pending synthesis"]
+    symbols: ["waning moon over gathering clouds", "autumn tree with last leaf", "key turning in lock", "nearly completed bridge", "final puzzle piece hovering", "hourglass with few grains remaining"]
+  
+  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
+  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  direct_associations:
+    archetype: "Sage" # Fall is the resonant season for this hexagram (Inner 0, Outer 1)
+    archetype_color: "Iridescent"
+
+    ## Inner World (bits 1-3)
+    inner_world:
+      color: "Cyan"
+      trigram: "Thunder"
+      meaning: "Ability and capacity present but intuition absent; skilled execution and resources available but lacking inner direction."
+
+    ## Outer World (bits 4-6)
+    outer_world:
+      color: "Magenta"
+      trigram: "Fire"
+      meaning: "Expectations and options are clear, but lacking community support; clear socially authorized path without assistance."
+
+    ## Cycle (bits 7-8)
+    cycle: 
+      season: "Fall"
+      tarot_suit: "Pentacles"
+      moon_phase: "Waning Moon"
+      element: "Earth"
+
+    # Tarot
+    tarot:
+      card: "The World" # The corresponding tarot card for bits 1-6 (using alternative mapping for odd-parity pattern)
+      cycle_suit: "Pentacles" # The corresponding tarot suit for bits 7-8
+      cycle_moon: "Waning"
+      seasonal_expression: "Before Completion reveals profound wisdom in Fall as the Sage, understanding the delicate balance of elements that must come together for final integration."
+
+    # Hexagram-related
+    hexagram:
+      i_ching:
+        number: 64
+        name: "Wei Ji (Before Completion)"
+        meaning: "Not yet completed, transition, approaching the end"
+      gene_key:
+        number: 64
+        shadow: "Confusion"
+        gift: "Imagination"
+        siddhi: "Illumination"
+        meaning: "A journey from mental confusion to creative imagination and ultimately pure clarity and illumination - the starting point of transformation"
+
+  # Interpreted Meanings (combining all of the direct associations in various ways)
+  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  interpreted_meanings: 
+    basic:
+      name_6bit: "Before Completion"
+      name_8bit: "The Waning Threshold"
+
+    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
+    # Style guidelines: Inspired by the clear and simple design of the Rider Waite Smith deck, the 
+    # vibe of the Brady Tarot deck, and the humor and complexity of the Arcane Bullshit deck. 
+    # The card should use a limited color palette, lines as if created via risograph, be full-bleed, 
+    # include the name on the card, as well as the card_scene, some hint of the resonant season, and the universal symbol.
+    # The names of the cards should feel like they are part of a cohesive deck, and be completely devoid of cliches.
+    # Be sure to work in the colors (inner = foreground, outer = background) as well as the actual 8-bit binary code that this card represents.
+    oracle_card:
+      card_name: "Threshold Guardian"
+      card_creature: "A sage with autumn-amber eyes who stands at the penultimate step, holding a crystalline vessel that's one drop short of overflowing"
+      question_posed: "What final element or insight needs integration before your current journey can reach its culmination?"
+      card_scene: "An ancient guardian figure stands on a stone threshold at the entrance to a circular temple, with one hand holding back the final golden-amber leaf of autumn from falling, keeping it suspended in perfect stillness. Behind them, a nearly-completed mosaic floor shows a complex pattern with only one piece missing – the piece is visible, hovering in the air above its destination. The sage's eyes reflect both the pattern as it currently exists and as it will be when complete. A waning moon hangs low in the sky, casting just enough light to illuminate the threshold's intricate markings. Around the temple, several hourglasses of different sizes all show nearly-depleted top chambers, with just a few grains yet to fall. The guardian wears robes embroidered with mathematical equations and alchemical formulas that seem to calculate the precise moment of completion. They hold a set of scales that's nearly but not quite in perfect balance, suggesting that the final adjustment is yet to come."
+      universal_symbol: "The threshold – the space between what is and what will be, where transformation is imminent but not yet manifest"
+      mood: "Anticipatory wisdom, contemplative patience, the profound understanding that comes at the edge of realization"
+
+      # USE THIS PROMPT TEMPLATE BUT FILL IN WITH SPECIFIC DETAILS FOR THIS CARD:
+      # Limited color risograph-style illustration of [short scene description].
+      # Use [INNER WORLD COLOR] for foreground elements (inner world) and [OUTER WORLD COLOR] for background/environment (outer world), with [ACCENT COLOR] for highlights.
+      # Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      # Include a clean, full-width title bar at the bottom, with centered 8-bit code "[XXXXXXXX]" and card title "[CARD TITLE]" in bold, without corner decorations or symbols.
+      # Feature [key symbolic elements, e.g., moon phase, animal companions, symbolic object].
+      # The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle seasonal/elemental references appropriate for [SEASON] (e.g., [Air/Winter], [Fire/Spring], [Water/Summer], [Earth/Fall]).
+      # Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean.
+      prompt_for_image_gen: "Limited color risograph-style illustration of a sage standing at a temple threshold, holding back the final autumn leaf from falling while a nearly-complete mosaic awaits its last piece.
+      Use CYAN for foreground elements (inner world) and MAGENTA for background/environment (outer world), with iridescent and amber-gold accents.
+      Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '01010101' and card title 'THRESHOLD GUARDIAN' in bold, without corner decorations or symbols.
+      Feature a waning moon illuminating the scene, nearly-balanced scales, multiple hourglasses with few grains remaining, and mathematical equations embroidered on robes.
+      The scene should evoke the mood of anticipatory wisdom and contemplative patience, incorporating subtle seasonal/elemental references appropriate for Fall (Earth/Fall symbols, the final moments of autumn before winter, the gathering of last elements before integration).
+      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
+      
+  # Related Cards
+  related_cards: 
+    # Season variations of the same card
+    same_card_fall: "01010101" # Before Completion in Fall (Sage) - this card
+    same_card_winter: "01010100" # Before Completion in Winter (Fool)
+    same_card_spring: "01010110" # Before Completion in Spring (Hero)
+    same_card_summer: "01010111" # Before Completion in Summer (Monster)
+        
+    # Opposites
+    opposite: "10101010" # After Completion in Spring - the threshold of completion vs. the threshold of beginning
+    
+    # Related thematically
+    thematic_pair: "00110101" # Death in Fall - transformation's wisdom related to threshold wisdom
+    
+    # Complete cycle
+    full_cycle: ["01010101","01010100","01010110","01010111"] # Before Completion in all seasons
+    
+  # Bit Values
+  bit_values:
+    bit1: "0"  # Intuition
+    bit2: "1"  # Ability
+    bit3: "0"  # Capacity
+    bit4: "1"  # Expectations
+    bit5: "0"  # Support
+    bit6: "1"  # Options
+    bit78: "01" # Cycle phase (Fall)

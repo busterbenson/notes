@@ -1,0 +1,126 @@
+# Card 10110110.yml - The Clinging in Spring (Monster)
+card:
+  # Summary
+  binary:      "10110110"
+  decimal:     "182"
+  hexadecimal: "B6"
+
+  # Basic Info
+  # These are crude associations, and will serve as inputs for the interpreted meaning 
+  basic_info: 
+    desc: "This card represents the overwhelming, consuming aspect of fire and attachment when they become destructive. It embodies the paradox of double fire energy – the inner world of intuition and capacity mirroring the outer world of expectations and options – intensified to the point of destruction. In its Monster aspect in Spring, it reveals how brightness can blind rather than illuminate and how attachment can consume rather than connect."
+    
+    keywords: ["consuming fire", "overwhelming brightness", "destructive attachment", "blinding illumination", "obsessive clarity", "devouring radiance"]
+    symbols: ["spring forest consumed by wildfire", "waxing moon eclipsed by flames", "beast trapped in circle of fire", "lantern shattered by its own flame", "blinding light obliterating shadows", "twin infernos feeding each other"]
+  
+  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
+  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  direct_associations:
+    archetype: "Monster" # Spring follows Winter in the cycle for this hexagram (Sage in Summer)
+    archetype_color: "Gold"
+    gender: "Masculine" # 4 bits set to 1 in positions 1-6: Hero and Monster are masculine
+
+    ## Inner World (bits 1-3)
+    inner_world:
+      color: "Magenta"
+      trigram: "Fire"
+      meaning: "Intuitive and resourceful but lacking practical skills; has the vision and space but needs help executing."
+
+    ## Outer World (bits 4-6)
+    outer_world:
+      color: "Magenta"
+      trigram: "Fire"
+      meaning: "Alignment with expectations and clear options, but lacking support; clear authorized path without assistance."
+
+    ## Cycle (bits 7-8)
+    cycle: 
+      season: "Spring"
+      tarot_suit: "Wands"
+      moon_phase: "Waxing Moon"
+      element: "Fire"
+
+    # Tarot
+    tarot:
+      card: "The Clinging" # The corresponding tarot card for bits 1-6
+      cycle_suit: "Wands" # The corresponding tarot suit for bits 7-8
+      cycle_moon: "Waxing"
+      seasonal_expression: "The Clinging transforms into its destructive shadow in Spring as the Monster, when fire and attachment become overwhelming and consuming, blinding rather than illuminating."
+
+    # Hexagram-related
+    hexagram:
+      i_ching:
+        number: 30
+        name: "Li"
+        label: "The Clinging"
+        description: "Fire, attachment, brightness, clarity, dependence"
+      gene_key:
+        number: 30
+        shadow: "Desire"
+        gift: "Lightness"
+        siddhi: "Rapture"
+        meaning: "A journey from craving and attachment to buoyancy and delight and ultimately ecstatic union with the divine"
+
+  # Interpreted Meanings (combining all of the direct associations in various ways)
+  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  interpreted_meanings: 
+    basic:
+      name_6bit: "The Clinging"
+      name_8bit: "The Waxing Clinging"
+
+    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
+    # Style guidelines: Inspired by the clear and simple design of the Rider Waite Smith deck, the 
+    # vibe of the Brady Tarot deck, and the humor and complexity of the Arcane Bullshit deck. 
+    # The card should use a limited color palette, lines as if created via risograph, be full-bleed, 
+    # include the name on the card, as well as the card_scene, some hint of the resonant season, and the universal symbol.
+    # The names of the cards should feel like they are part of a cohesive deck, and be completely devoid of cliches.
+    # Be sure to work in the colors (inner = foreground, outer = background) as well as the actual 8-bit binary code that this card represents.
+    oracle_card:
+      card_name: "Consuming Fire"
+      card_creature: "A beast-like man whose attachment to flame has transformed him into fire itself, no longer controlling or directing the flames but becoming indistinguishable from them, blinded by his own light and consuming everything in his path"
+      question_posed: "Where in your life might attachment and desire have become so intense that they are consuming rather than illuminating?"
+      card_scene: "A grotesquely transformed man stands at the center of a spring forest that has erupted into wildfire, his body no longer merely holding or directing twin flames but having become indistinguishable from fire itself. His form pulses with magenta energy that burns with uncontrolled intensity, consuming rather than illuminating. A waxing moon hangs in the sky but is nearly eclipsed by the smoke and flames rising from the conflagration below. The man's eyes emit such intense light that they paradoxically create blindness – unable to see beyond his own brilliance. Unlike the female sage who contains fire, the female child who plays with it, or the male smith who directs it, this male figure has surrendered identity to become the flame itself. His masculine features are both enhanced and distorted by the fire, creating a terrifying visage of uncontrolled power. Spring growth that should represent new life has become mere fuel for the all-consuming fire, flowers wilting into ash moments after blooming. Two distinct fires that began separately have grown to merge into a single overwhelming inferno, feeding and intensifying each other beyond any possibility of control. Shattered remains of lamps and vessels designed to safely contain flame lie at his feet, destroyed by the very energy they were meant to hold. His expression shows a mixture of ecstasy and agony – simultaneously entranced by and trapped within his own brilliance. Animals flee in terror as the fire spreads in all directions, caring nothing for boundaries or purpose, existing only to consume more. The entire scene conveys the dangerous transformation that occurs when attachment and desire grow so intense that they consume both their object and their subject, leaving only destruction in their wake."
+      universal_symbol: "The merged inferno – once-distinct flames that have combined into an uncontrollable conflagration, representing desire and attachment that have grown beyond all boundaries and purpose"
+      mood: "Overwhelming intensity, destructive consumption, the blinding force that emerges when brightness and attachment grow so powerful they consume everything, including themselves"
+
+      # USE THIS PROMPT TEMPLATE BUT FILL IN WITH SPECIFIC DETAILS FOR THIS CARD:
+      # Limited color risograph-style illustration of [short scene description].
+      # Use [INNER WORLD COLOR] for foreground elements (inner world) and [OUTER WORLD COLOR] for background/environment (outer world), with [ACCENT COLOR] for highlights.
+      # Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      # Include a clean, full-width title bar at the bottom, with centered 8-bit code "[XXXXXXXX]" and card title "[CARD TITLE]" in bold, without corner decorations or symbols.
+      # Feature [key symbolic elements, e.g., moon phase, animal companions, symbolic object].
+      # The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle seasonal/elemental references appropriate for [SEASON] (e.g., [Air/Winter], [Fire/Spring], [Water/Summer], [Earth/Fall]).
+      # Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean.
+      prompt_for_image_gen: "Limited color risograph-style illustration of a grotesquely transformed male figure at the center of a spring forest engulfed in wildfire, his body having become indistinguishable from the flames themselves, emitting light so intense it creates blindness.
+      Use MAGENTA for foreground elements (inner world) and MAGENTA for background/environment (outer world), with gold and intense orange-red accents.
+      Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '10110110' and card title 'CONSUMING FIRE' in bold, without corner decorations or symbols.
+      Feature a waxing moon nearly eclipsed by smoke and flames, spring flowers wilting into ash moments after blooming, shattered remains of vessels meant to contain fire, and animals fleeing in terror from the spreading conflagration.
+      The scene should evoke the mood of overwhelming intensity and destructive consumption, incorporating subtle seasonal/elemental references appropriate for Spring (Fire/Spring symbols, fire consuming spring growth, triple fire symbolism with spring's natural fire element amplified by the dual magenta fires).
+      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean. Clearly depict the figure as masculine, with strong but distorted masculine features as he merges with the fire."
+      
+  # Related Cards
+  related_cards: 
+    # Season variations of the same card
+    same_card_summer: "10110111" # The Clinging in Summer (Sage)
+    same_card_fall: "10110101" # The Clinging in Fall (Fool)
+    same_card_winter: "10110100" # The Clinging in Winter (Hero)
+    same_card_spring: "10110110" # The Clinging in Spring (Monster) - this card
+        
+    # Opposites
+    opposite: "01001001" # Detachment in Fall - consuming fire vs. wise detachment
+    
+    # Related thematically
+    thematic_pair: "11111110" # The Sun in Spring - complete illumination related to dual fire energy
+    
+    # Complete cycle
+    full_cycle: ["10110111","10110101","10110100","10110110"] # The Clinging in all seasons
+    
+  # Bit Values
+  bit_values:
+    bit1: "1"  # Intuition
+    bit2: "0"  # Ability
+    bit3: "1"  # Capacity
+    bit4: "1"  # Expectations
+    bit5: "0"  # Support
+    bit6: "1"  # Options
+    bit78: "10" # Cycle phase (Spring)

@@ -1,0 +1,124 @@
+# Card 00011101.yml - Standstill in Fall (Sage)
+card:
+  # Summary
+  binary:      "00011101"
+  decimal:     "29"
+  hexadecimal: "1D"
+
+  # Basic Info
+  # These are crude associations, and will serve as inputs for the interpreted meaning 
+  basic_info: 
+    desc: "This card represents the profound wisdom that emerges when we fully accept and understand periods of stagnation. It embodies the paradox of having abundant external resources yet experiencing inner emptiness that prevents movement. In its Sage aspect, it reveals the deep insights that can only be accessed through patient observation of apparent standstill."
+    
+    keywords: ["wise stillness", "transcendent obstruction", "profound blockage", "sagacious patience", "enlightened limitation", "stagnation wisdom"]
+    symbols: ["autumn pond with still surface", "waning moon reflected perfectly", "sage at blocked crossroads", "fallen leaves frozen in pattern", "river meeting dam", "ancient boundary stone"]
+  
+  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
+  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  direct_associations:
+    archetype: "Sage" # Fall is the resonant season for this hexagram (Inner 0, Outer 1)
+    archetype_color: "Iridescent"
+
+    ## Inner World (bits 1-3)
+    inner_world:
+      color: "Black"
+      trigram: "Earth"
+      meaning: "Complete absence of inner resources; intuition, ability, and capacity are all absent."
+
+    ## Outer World (bits 4-6)
+    outer_world:
+      color: "White"
+      trigram: "Heaven"
+      meaning: "Complete presence of outer resources; expectations, support, and options are all present."
+
+    ## Cycle (bits 7-8)
+    cycle: 
+      season: "Fall"
+      tarot_suit: "Pentacles"
+      moon_phase: "Waning Moon"
+      element: "Earth"
+
+    # Tarot
+    tarot:
+      card: "The Hanged Man" # The corresponding tarot card for bits 1-6 (using alternative mapping for odd-parity pattern)
+      cycle_suit: "Pentacles" # The corresponding tarot suit for bits 7-8
+      cycle_moon: "Waning"
+      seasonal_expression: "Standstill reveals profound wisdom in Fall as the Sage, understanding the value in stillness and the insights that emerge from suspended action."
+
+    # Hexagram-related
+    hexagram:
+      i_ching:
+        number: 12
+        name: "Pi (Standstill)"
+        meaning: "Stagnation, obstruction, adversity, non-communication"
+      gene_key:
+        number: 12
+        shadow: "Vanity"
+        gift: "Discrimination"
+        siddhi: "Purity"
+        meaning: "A journey from self-absorption to discerning clarity and ultimately absolute purity of heart and intention"
+
+  # Interpreted Meanings (combining all of the direct associations in various ways)
+  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  interpreted_meanings: 
+    basic:
+      name_6bit: "Standstill"
+      name_8bit: "The Waning Standstill"
+
+    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
+    # Style guidelines: Inspired by the clear and simple design of the Rider Waite Smith deck, the 
+    # vibe of the Brady Tarot deck, and the humor and complexity of the Arcane Bullshit deck. 
+    # The card should use a limited color palette, lines as if created via risograph, be full-bleed, 
+    # include the name on the card, as well as the card_scene, some hint of the resonant season, and the universal symbol.
+    # The names of the cards should feel like they are part of a cohesive deck, and be completely devoid of cliches.
+    # Be sure to work in the colors (inner = foreground, outer = background) as well as the actual 8-bit binary code that this card represents.
+    oracle_card:
+      card_name: "Insight of Stillness"
+      card_creature: "An elder observer whose eyes have seen countless rivers meet dams, whose hands rest perfectly still on a boundary stone that marks where movement must cease"
+      question_posed: "What wisdom might emerge if you fully accept and explore your current state of stagnation rather than struggling against it?"
+      card_scene: "An ancient sage sits perfectly still beside a blocked mountain pass in autumn. Before them, fallen leaves have arranged themselves in a perfect mandala pattern, having come to rest against an immovable stone barrier. A waning moon casts just enough light to illuminate the scene, its reflection perfectly undisturbed in a small pond nearby. The sage's eyes show neither frustration nor impatience, but rather profound understanding – as if the blockage itself contains secret knowledge. Their body appears empty, almost translucent, while the world around them teems with abundant resources and possibilities that cannot be accessed. At their feet lies a map showing many pathways, all currently obstructed. Their hands rest on a boundary stone carved with symbols of limitation from many cultures. Animals have gathered nearby, also motionless, as if learning from the sage's acceptance of standstill. The sage wears simple robes adorned with symbols of patience, and their expression suggests they've discovered something valuable precisely because movement has ceased."
+      universal_symbol: "The dam – the point where abundant flow meets complete stoppage, creating depth through restriction"
+      mood: "Profound acceptance, enlightened patience, the transcendent understanding that comes when one fully embraces necessary stagnation"
+
+      # USE THIS PROMPT TEMPLATE BUT FILL IN WITH SPECIFIC DETAILS FOR THIS CARD:
+      # Limited color risograph-style illustration of [short scene description].
+      # Use [INNER WORLD COLOR] for foreground elements (inner world) and [OUTER WORLD COLOR] for background/environment (outer world), with [ACCENT COLOR] for highlights.
+      # Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      # Include a clean, full-width title bar at the bottom, with centered 8-bit code "[XXXXXXXX]" and card title "[CARD TITLE]" in bold, without corner decorations or symbols.
+      # Feature [key symbolic elements, e.g., moon phase, animal companions, symbolic object].
+      # The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle seasonal/elemental references appropriate for [SEASON] (e.g., [Air/Winter], [Fire/Spring], [Water/Summer], [Earth/Fall]).
+      # Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean.
+      prompt_for_image_gen: "Limited color risograph-style illustration of an ancient sage sitting motionlessly beside a blocked mountain pass, with fallen leaves arranged in a perfect mandala pattern against an immovable stone barrier.
+      Use BLACK for foreground elements (inner world) and WHITE for background/environment (outer world), with iridescent and amber-gold accents.
+      Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '00011101' and card title 'INSIGHT OF STILLNESS' in bold, without corner decorations or symbols.
+      Feature a waning moon with perfect reflection in still pond, boundary stone carved with limitation symbols, motionless animals gathered nearby, and a map showing obstructed pathways.
+      The scene should evoke the mood of profound acceptance and enlightened patience, incorporating subtle seasonal/elemental references appropriate for Fall (Earth/Fall symbols, the acceptance of natural cycles ending, the earthly wisdom of knowing when to be still).
+      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
+      
+  # Related Cards
+  related_cards: 
+    # Season variations of the same card
+    same_card_fall: "00011101" # Standstill in Fall (Sage) - this card
+    same_card_winter: "00011100" # Standstill in Winter (Fool)
+    same_card_spring: "00011110" # Standstill in Spring (Hero)
+    same_card_summer: "00011111" # Standstill in Summer (Monster)
+        
+    # Opposites
+    opposite: "11100010" # Movement in Spring - wise stillness vs. wise motion
+    
+    # Related thematically
+    thematic_pair: "00000001" # The Moon in Fall - profound mystery related to profound stillness
+    
+    # Complete cycle
+    full_cycle: ["00011101","00011100","00011110","00011111"] # Standstill in all seasons
+    
+  # Bit Values
+  bit_values:
+    bit1: "0"  # Intuition
+    bit2: "0"  # Ability
+    bit3: "0"  # Capacity
+    bit4: "1"  # Expectations
+    bit5: "1"  # Support
+    bit6: "1"  # Options
+    bit78: "01" # Cycle phase (Fall)

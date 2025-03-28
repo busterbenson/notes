@@ -1,0 +1,125 @@
+# Card 11100011.yml - Peace in Summer (Fool)
+card:
+  # Summary
+  binary:      "11100011"
+  decimal:     "227"
+  hexadecimal: "E3"
+
+  # Basic Info
+  # These are crude associations, and will serve as inputs for the interpreted meaning 
+  basic_info: 
+    desc: "This card represents the innocent, playful curiosity that emerges when inner abundance meets external limitation. It embodies the paradox of having complete inner resources (intuition, ability, and capacity) approached with beginner's mind, while navigating a world with minimal external support. In its Fool aspect in Summer, it reveals joyful exploration and discovery through inner light, unhindered by outer darkness."
+    
+    keywords: ["playful harmony", "curious balance", "innocent illumination", "joyful orchestration", "childlike peace", "spontaneous equilibrium"]
+    symbols: ["summer meadow under moonlight", "full moon reflected in still pond", "child dancing between light and shadow", "garden blooming in barren landscape", "fireflies illuminating darkness", "simple treasures creating unexpected abundance"]
+  
+  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
+  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  direct_associations:
+    archetype: "Fool" # Summer follows Spring in the cycle for this hexagram (Sage in Spring)
+    archetype_color: "Purple"
+
+    ## Inner World (bits 1-3)
+    inner_world:
+      color: "White"
+      trigram: "Heaven"
+      meaning: "Complete presence of inner resources; self-sufficient, confident, and fully equipped."
+
+    ## Outer World (bits 4-6)
+    outer_world:
+      color: "Black"
+      trigram: "Earth"
+      meaning: "Complete lack of outer resources; expectations, support, and options are all absent."
+
+    ## Cycle (bits 7-8)
+    cycle: 
+      season: "Summer"
+      tarot_suit: "Cups"
+      moon_phase: "Full Moon"
+      element: "Water"
+
+    # Tarot
+    tarot:
+      card: "Peace" # The corresponding tarot card for bits 1-6
+      cycle_suit: "Cups" # The corresponding tarot suit for bits 7-8
+      cycle_moon: "Full"
+      seasonal_expression: "Peace transforms into innocent wonder in Summer as the Fool, joyfully exploring the spontaneous harmony that emerges when inner abundance meets external limitation with playful curiosity."
+
+    # Hexagram-related
+    hexagram:
+      i_ching:
+        number: 11
+        name: "Tai"
+        label: "Peace"
+        description: "Harmony, balance, prosperity, smooth flow, great potential"
+      gene_key:
+        number: 11
+        shadow: "Obscurity"
+        gift: "Idealism"
+        siddhi: "Light"
+        meaning: "A journey from confusion and darkness to visionary clarity and ultimately becoming a pure channel for divine light"
+
+  # Interpreted Meanings (combining all of the direct associations in various ways)
+  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  interpreted_meanings: 
+    basic:
+      name_6bit: "Peace"
+      name_8bit: "The Full Peace"
+
+    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
+    # Style guidelines: Inspired by the clear and simple design of the Rider Waite Smith deck, the 
+    # vibe of the Brady Tarot deck, and the humor and complexity of the Arcane Bullshit deck. 
+    # The card should use a limited color palette, lines as if created via risograph, be full-bleed, 
+    # include the name on the card, as well as the card_scene, some hint of the resonant season, and the universal symbol.
+    # The names of the cards should feel like they are part of a cohesive deck, and be completely devoid of cliches.
+    # Be sure to work in the colors (inner = foreground, outer = background) as well as the actual 8-bit binary code that this card represents.
+    oracle_card:
+      card_name: "Playful Balance"
+      card_creature: "A luminous child who dances between realms of light and shadow, effortlessly creating harmony through innocent joy rather than learned wisdom, their laughter alone causing flowers to bloom in barren soil"
+      question_posed: "What might emerge if you approached scarcity with the innocent abundance of beginner's mind rather than calculated strategy?"
+      card_scene: "A radiant child dances joyfully beneath the full summer moon, their body glowing with inner light that stands in stark contrast to the darkness surrounding them. The landscape appears divided into two distinct realms: one of apparent emptiness and limitation, the other blooming with unexpected abundance wherever the child's feet touch the ground. Unlike the careful orchestration of a sage, the child moves with spontaneous delight, seemingly unaware of the profound harmony they create through their innocent play. A full moon hangs overhead, reflecting perfectly in a small, still pond nearby, creating a mirror world between above and below. Fireflies swirl around the child, their lights complementing the child's inner radiance and illuminating small patches of the surrounding darkness. The child carries a simple stick that, when waved, leaves trails of light that linger momentarily in geometric patterns the child hadn't consciously intended to create. Simple objects—buttons, stones, leaves—have been arranged in a playful collection, yet somehow form a perfect mandala pattern that balances the energies of the contrasting realms. Small animals from both the fertile and barren landscapes have gathered to watch the child's dance, their natural wariness overcome by curiosity. Where the child has passed, footprints of light remain briefly before fading, but each has sparked a small bloom of growth in what was previously empty ground. Their expression is one of pure wonder, discovering rather than directing the harmony that emerges from their movement between inner abundance and outer limitation."
+      universal_symbol: "The spontaneous dance – effortless harmony created through joy and innocence rather than calculated wisdom"
+      mood: "Playful wonder, innocent balance, the joyful harmony that emerges when abundant inner resources meet external limitation through the lens of beginner's mind"
+
+      # USE THIS PROMPT TEMPLATE BUT FILL IN WITH SPECIFIC DETAILS FOR THIS CARD:
+      # Limited color risograph-style illustration of [short scene description].
+      # Use [INNER WORLD COLOR] for foreground elements (inner world) and [OUTER WORLD COLOR] for background/environment (outer world), with [ACCENT COLOR] for highlights.
+      # Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      # Include a clean, full-width title bar at the bottom, with centered 8-bit code "[XXXXXXXX]" and card title "[CARD TITLE]" in bold, without corner decorations or symbols.
+      # Feature [key symbolic elements, e.g., moon phase, animal companions, symbolic object].
+      # The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle seasonal/elemental references appropriate for [SEASON] (e.g., [Air/Winter], [Fire/Spring], [Water/Summer], [Earth/Fall]).
+      # Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean.
+      prompt_for_image_gen: "Limited color risograph-style illustration of a luminous child dancing joyfully between barren and fertile lands beneath a full summer moon, creating harmony through innocent play rather than conscious design.
+      Use WHITE for foreground elements (inner world) and BLACK for background/environment (outer world), with deep purple and soft blue accents.
+      Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '11100011' and card title 'PLAYFUL BALANCE' in bold, without corner decorations or symbols.
+      Feature a full moon perfectly reflected in a still pond, swirling fireflies, footprints of light sprouting flowers, and a collection of simple objects forming an accidental mandala pattern.
+      The scene should evoke the mood of playful wonder and innocent balance, incorporating subtle seasonal/elemental references appropriate for Summer (Water/Summer symbols, full moon, still water reflecting light, fluid dance movements).
+      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
+      
+  # Related Cards
+  related_cards: 
+    # Season variations of the same card
+    same_card_spring: "11100010" # Peace in Spring (Sage)
+    same_card_summer: "11100011" # Peace in Summer (Fool) - this card
+    same_card_fall: "11100001" # Peace in Fall (Hero)
+    same_card_winter: "11100000" # Peace in Winter (Monster)
+        
+    # Opposites
+    opposite: "00011100" # Standstill in Winter - playful balance vs. curious blockage
+    
+    # Related thematically
+    thematic_pair: "11111111" # The Sun in Summer - complete illumination related to inner light
+    
+    # Complete cycle
+    full_cycle: ["11100010","11100011","11100001","11100000"] # Peace in all seasons
+    
+  # Bit Values
+  bit_values:
+    bit1: "1"  # Intuition
+    bit2: "1"  # Ability
+    bit3: "1"  # Capacity
+    bit4: "0"  # Expectations
+    bit5: "0"  # Support
+    bit6: "0"  # Options
+    bit78: "11" # Cycle phase (Summer)

@@ -1,0 +1,125 @@
+# Card 00000001.yml - The Moon in Fall (Monster)
+card:
+  # Summary
+  binary:      "00000001"
+  decimal:     "1"
+  hexadecimal: "01"
+
+  # Basic Info
+  # These are crude associations, and will serve as inputs for the interpreted meaning 
+  basic_info: 
+    desc: "This card represents darkness and mystery intensified to overwhelming levels. The absence of resources becomes a monstrous void, a darkness so complete it consumes rather than merely obscures. It embodies the terror of absolute uncertainty and the madness that can come from prolonged disorientation."
+    
+    keywords: ["overwhelming darkness", "devouring void", "madness of uncertainty", "consuming mystery", "terror of the unknown", "lunar madness"]
+    symbols: ["waning moon obscured by storm clouds", "labyrinth without exit", "drowning in dark water", "eyes staring from darkness", "shattered compass"]
+  
+  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
+  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  direct_associations:
+    archetype: "Monster" # Following the cycle from Winter (Sage) through Spring (Fool) and Summer (Hero) to Fall (Monster)
+    archetype_color: "Purple"
+
+    ## Inner World (bits 1-3)
+    inner_world:
+      color: "Black"
+      trigram: "Earth"
+      meaning: "Complete absence of inner resources; intuition, ability, and capacity are all absent."
+
+    ## Outer World (bits 4-6)
+    outer_world:
+      color: "Black"
+      trigram: "Earth"
+      meaning: "Complete lack of outer resources; expectations, support, and options are all absent."
+
+    ## Cycle (bits 7-8)
+    cycle: 
+      season: "Fall"
+      tarot_suit: "Pentacles"
+      moon_phase: "Waning Moon"
+      element: "Earth"
+
+    # Tarot
+    tarot:
+      card: "The Moon" # The corresponding tarot card for bits 1-6
+      cycle_suit: "Pentacles" # The corresponding tarot suit for bits 7-8
+      cycle_moon: "Waning"
+      seasonal_expression: "The Moon's obscurity becomes overwhelming in Fall as the Monster, when darkness becomes a devouring void that consumes all certainty."
+
+    # Hexagram-related
+    hexagram:
+      i_ching:
+        number: 2
+        name: "Kun (The Receptive)"
+        meaning: "Pure yin, yielding, responsive, accepting, following"
+      gene_key:
+        number: 2
+        shadow: "Dislocation"
+        gift: "Orientation"
+        siddhi: "Unity"
+        meaning: "Finding your true direction and experiencing oneness"
+
+  # Interpreted Meanings (combining all of the direct associations in various ways)
+  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  interpreted_meanings: 
+    basic:
+      name_6bit: "The Moon"
+      name_8bit: "The Waning Moon"
+
+
+    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
+    # Style guidelines: Inspired by the clear and simple design of the Rider Waite Smith deck, the 
+    # vibe of the Brady Tarot deck, the mythology of Hilda, and the humor and complexity of the Arcane Bullshit deck. 
+    # The card should use a limited color palette, lines as if created via risograph, be full-bleed, 
+    # include the name on the card, as well as the card_scene, some hint of the resonant season, and the universal symbol.
+    # The names of the cards should feel like they are part of a cohesive deck, and be completely devoid of cliches.
+    # Be sure to work in the colors (inner = foreground, outer = background) as well as the actual 8-bit binary code that this 
+    oracle_card:
+      card_name: "Devouring Void"
+      card_creature: "A lunar abyss that has developed hunger, with countless eyes that float within darkness watching those who dare look too long"
+      question_posed: "What uncertainties have grown so overwhelming that they've begun to consume your sense of self and direction?"
+      card_scene: "A massive waning moon hangs in the autumn sky, but its surface appears like a swirling vortex of absolute darkness rather than reflecting any light. Beneath it, a figure stands half-submerged in dark water that seems to be flowing upward into the lunar void. The figure's lower body has already begun to dissolve into the darkness, their form becoming indistinct. Multiple pairs of eyes float within the darkness, all focused on the dissolving figure. Navigation tools - maps, compasses, star charts - are visible but warped beyond recognition or usefulness. Autumn leaves around the scene appear to be turning toward the void moon rather than falling naturally, their forms elongating unnaturally as if being pulled upward."
+      universal_symbol: "The whirlpool - the drawing inward and dissolution of form and identity"
+      mood: "Disorienting terror, dissolution of boundaries, the vertigo of absolute uncertainty"
+
+      # USE THIS PROMPT TEMPLATE BUT FILL IN WITH SPECIFIC DETAILS FOR THIS CARD:
+      # Limited color risograph-style illustration of [short scene description].
+      # Use [INNER WORLD COLOR] for foreground elements (inner world) and [OUTER WORLD COLOR] for background/environment (outer world), with [ACCENT COLOR] for highlights.
+      # Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      # Include a clean, full-width title bar at the bottom, with centered 8-bit code "[XXXXXXXX]" and card title "[CARD TITLE]" in bold, without corner decorations or symbols.
+      # Feature [key symbolic elements, e.g., moon phase, animal companions, symbolic object].
+      # The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle seasonal/elemental references appropriate for [SEASON] (e.g., [Air/Winter], [Fire/Spring], [Water/Summer], [Earth/Fall]).
+      # Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean.
+      prompt_for_image_gen: "Limited color risograph-style illustration of a figure dissolving into darkness below a vortex-like waning moon with floating eyes.
+      Use BLACK for foreground elements (inner world) and BLACK for background/environment (outer world), with deep purple and earthy amber accents.
+      Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '00000001' and card title 'DEVOURING VOID' in bold, without corner decorations or symbols.
+      Feature a whirlpool-like waning moon, warped navigation tools, multiple watching eyes in darkness, autumn leaves being pulled toward the void, and a half-dissolved figure in dark water.
+      The scene should evoke the mood of disorienting terror and boundary dissolution, incorporating subtle seasonal/elemental references appropriate for Fall (Earth/Fall symbols, autumn leaves, grounding energy becoming unstable).
+      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
+      
+  # Related Cards
+  related_cards: 
+    # Season variations of the same card
+    same_card_winter: "00000000" # The Moon in Winter (Sage)
+    same_card_spring: "00000010" # The Moon in Spring (Fool)
+    same_card_summer: "00000011" # The Moon in Summer (Hero)
+    same_card_fall: "00000001" # The Moon in Fall (Monster) (this card)
+        
+    # Opposites
+    opposite: "11111110" # The Sun in Fall - mature wisdom vs. innocent darkness
+    
+    # Related thematically
+    thematic_pair: "10000001" # High Priestess in Fall - intuitive mystery becoming overwhelming
+    
+    # Complete cycle
+    full_cycle: ["00000000","00000010","00000011","00000001"] # The Moon in all seasons
+    
+  # Bit Values
+  bit_values:
+    bit1: "0"  # Intuition
+    bit2: "0"  # Ability
+    bit3: "0"  # Capacity
+    bit4: "0"  # Expectations
+    bit5: "0"  # Support
+    bit6: "0"  # Options
+    bit78: "01" # Cycle phase (Spring)

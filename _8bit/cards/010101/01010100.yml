@@ -1,0 +1,124 @@
+# Card 01010100.yml - Before Completion in Winter (Fool)
+card:
+  # Summary
+  binary:      "01010100"
+  decimal:     "84"
+  hexadecimal: "54"
+
+  # Basic Info
+  # These are crude associations, and will serve as inputs for the interpreted meaning 
+  basic_info: 
+    desc: "This card represents the innocent curiosity of standing at the threshold before completion. With the playful energy of the Fool, it approaches the final stages of a journey with fresh wonder and openness. It embodies the childlike perspective that sees the penultimate moment not as a burden of unfinished work, but as an exciting space of possibility before closure."
+    
+    keywords: ["innocent threshold", "curious brink", "playful almost-completion", "fresh penultimate", "beginner's finale", "naive culmination"]
+    symbols: ["new moon behind clearing clouds", "child with almost-completed puzzle", "seedling about to break through soil", "doorway with key turning", "dawn just before sunrise", "final puzzle piece held with wonder"]
+  
+  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
+  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  direct_associations:
+    archetype: "Fool" # Following the cycle from Fall (Sage) to Winter (Fool)
+    archetype_color: "Turquoise"
+
+    ## Inner World (bits 1-3)
+    inner_world:
+      color: "Cyan"
+      trigram: "Thunder"
+      meaning: "Ability and capacity present but intuition absent; skilled execution and resources available but lacking inner direction."
+
+    ## Outer World (bits 4-6)
+    outer_world:
+      color: "Magenta"
+      trigram: "Fire"
+      meaning: "Expectations and options are clear, but lacking community support; clear socially authorized path without assistance."
+
+    ## Cycle (bits 7-8)
+    cycle: 
+      season: "Winter"
+      tarot_suit: "Swords"
+      moon_phase: "New Moon"
+      element: "Air"
+
+    # Tarot
+    tarot:
+      card: "The World" # The corresponding tarot card for bits 1-6 (using alternative mapping for odd-parity pattern)
+      cycle_suit: "Swords" # The corresponding tarot suit for bits 7-8
+      cycle_moon: "New"
+      seasonal_expression: "Before Completion finds its most innocent expression in Winter as the Fool, approaching the threshold of culmination with childlike wonder and fresh perspective."
+
+    # Hexagram-related
+    hexagram:
+      i_ching:
+        number: 64
+        name: "Wei Ji (Before Completion)"
+        meaning: "Not yet completed, transition, approaching the end"
+      gene_key:
+        number: 64
+        shadow: "Confusion"
+        gift: "Imagination"
+        siddhi: "Illumination"
+        meaning: "A journey from mental confusion to creative imagination and ultimately pure clarity and illumination - the starting point of transformation"
+
+  # Interpreted Meanings (combining all of the direct associations in various ways)
+  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  interpreted_meanings: 
+    basic:
+      name_6bit: "Before Completion"
+      name_8bit: "The New Threshold"
+
+    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
+    # Style guidelines: Inspired by the clear and simple design of the Rider Waite Smith deck, the 
+    # vibe of the Brady Tarot deck, and the humor and complexity of the Arcane Bullshit deck. 
+    # The card should use a limited color palette, lines as if created via risograph, be full-bleed, 
+    # include the name on the card, as well as the card_scene, some hint of the resonant season, and the universal symbol.
+    # The names of the cards should feel like they are part of a cohesive deck, and be completely devoid of cliches.
+    # Be sure to work in the colors (inner = foreground, outer = background) as well as the actual 8-bit binary code that this card represents.
+    oracle_card:
+      card_name: "Wonder's Edge"
+      card_creature: "A child with snow-crystal eyes who stands at a nearly-completed ice palace, marveling at the final turret about to be placed rather than rushing to finish"
+      question_posed: "How might you approach the final moments before completion with fresh eyes and childlike wonder rather than anxious hurrying?"
+      card_scene: "A young figure stands in a winter landscape before an elaborate ice palace that lacks only its crowning spire. Rather than hurrying to complete it, the child examines the final crystal piece with innocent fascination, turning it in the moonlight to see how it creates different patterns of refraction. The new moon casts just enough light through parting clouds to illuminate the scene with a silvery glow. The nearly-finished structure already shows open doorways and windows, but the child seems more interested in the beauty of the threshold moment than in crossing it to completion. Around them, geometric snowflakes arrange themselves in patterns that mirror the crystalline structure they're creating, suggesting a natural unfolding rather than forced completion. The child wears simple clothing without the regalia of achievement or striving. Their breath forms visible patterns in the cold air that seem to ask questions rather than make declarations. At their feet, a small animal companion (fox or rabbit) observes with equal curiosity, neither urging completion nor preventing it, simply present in the threshold moment."
+      universal_symbol: "The crystal – structure on the verge of final formation, where potential is most visible"
+      mood: "Innocent anticipation, threshold wonder, the fresh perspective that sees beauty in the moment just before culmination"
+
+      # USE THIS PROMPT TEMPLATE BUT FILL IN WITH SPECIFIC DETAILS FOR THIS CARD:
+      # Limited color risograph-style illustration of [short scene description].
+      # Use [INNER WORLD COLOR] for foreground elements (inner world) and [OUTER WORLD COLOR] for background/environment (outer world), with [ACCENT COLOR] for highlights.
+      # Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      # Include a clean, full-width title bar at the bottom, with centered 8-bit code "[XXXXXXXX]" and card title "[CARD TITLE]" in bold, without corner decorations or symbols.
+      # Feature [key symbolic elements, e.g., moon phase, animal companions, symbolic object].
+      # The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle seasonal/elemental references appropriate for [SEASON] (e.g., [Air/Winter], [Fire/Spring], [Water/Summer], [Earth/Fall]).
+      # Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean.
+      prompt_for_image_gen: "Limited color risograph-style illustration of a child with snow-crystal eyes examining the final piece of an almost-complete ice palace, marveling at its refractions in the moonlight.
+      Use CYAN for foreground elements (inner world) and MAGENTA for background/environment (outer world), with turquoise and crystalline white accents.
+      Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '01010100' and card title 'WONDER'S EDGE' in bold, without corner decorations or symbols.
+      Feature a new moon emerging from clouds, geometric snowflakes echoing the palace structure, breath patterns forming questions in cold air, and a curious fox or rabbit companion.
+      The scene should evoke the mood of innocent anticipation and threshold wonder, incorporating subtle seasonal/elemental references appropriate for Winter (Air/Winter symbols, crystalline forms, the clarity of thought that comes in the moment before completion).
+      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
+      
+  # Related Cards
+  related_cards: 
+    # Season variations of the same card
+    same_card_fall: "01010101" # Before Completion in Fall (Sage)
+    same_card_winter: "01010100" # Before Completion in Winter (Fool) - this card
+    same_card_spring: "01010110" # Before Completion in Spring (Hero)
+    same_card_summer: "01010111" # Before Completion in Summer (Monster)
+        
+    # Opposites
+    opposite: "10101011" # After Completion in Summer - innocent completion vs. innocent beginning
+    
+    # Related thematically
+    thematic_pair: "00000000" # The Moon in Winter - innocent mystery vs. innocent almost-completion
+    
+    # Complete cycle
+    full_cycle: ["01010101","01010100","01010110","01010111"] # Before Completion in all seasons
+    
+  # Bit Values
+  bit_values:
+    bit1: "0"  # Intuition
+    bit2: "1"  # Ability
+    bit3: "0"  # Capacity
+    bit4: "1"  # Expectations
+    bit5: "0"  # Support
+    bit6: "1"  # Options
+    bit78: "00" # Cycle phase (Winter)

@@ -1,0 +1,116 @@
+# Card 00000000.yml
+card:
+  # Summary
+  binary:      "00000000"
+  decimal:     "0"
+  hexadecimal: "00"
+
+  # Basic Info
+  # These are crude associations, and will serve as inputs for the interpreted meaning 
+  basic_info: 
+    desc: "This card represents darkness, the unconscious, and the hidden. The void, mystery, and that which cannot be clearly seen. Symbolizes confusion, illusion, and hidden dangers. The all-zeros pattern perfectly captures the absence of clarity and certainty - no resources activated means navigating in darkness."
+    
+    keywords: ["darkness", "unconscious", "illusion", "mystery", "confusion", "hidden forces"]
+    symbols:     ["empty circle", "void", "black hole", "night sky without stars"]
+  
+  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
+  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  direct_associations:
+    archetype: "The Fool" # Fool, Hero, Monster, Sage depending on resonant season for the hexagram
+    archetype_color: "Turquoise"
+    gender: "neutral" # neutral, masculine, or feminine. If total number of 1 bits is 3 or 5 = Hero and Monster are feminine and Fool/Sage are mascuine, 2 or 4 = Hero and Monster are masculine and Fool/Sage are feminine, 0-6 = neutral.  
+
+    ## Inner World (bits 1-3)
+    inner_world:
+      color:   "Black"
+      trigram: "Earth"
+
+    ## Outer World (bits 4-6)
+    outer_world:
+      color:   "Black"
+      trigram: "Earth"
+
+    ## Cycle (bits 7-8)
+    cycle: 
+      season:     "Winter"
+      tarot_suit: "Swords"
+      moon_phase: "New Moon"
+      element:    "Air"
+
+    # Tarot
+    tarot:
+      card:       "The Moon" # The corresponding tarot card for bits 1-6
+      cycle_suit: "Swords"   # The corresponding tarot suit for bits 7-8
+      cycle_moon: "New"
+
+    # Hexagram-related
+    hexagram:
+      i_ching:
+        number: 2
+        name: "Kun (The Receptive)"
+        meaning: "Pure yin, yielding, responsive, accepting, following"
+      gene_key:
+        number: 2
+        shadow: "Dislocation"
+        gift: "Orientation"
+        siddhi: "Unity"
+        meaning: "Finding your true direction and experiencing oneness"
+
+  # Interpreted Meanings (combining all of the direct associations in various ways)
+  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  interpreted_meanings: 
+    basic:
+      name_6bit: "The Moon"
+      name_8bit: "The New Moon"
+
+    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
+    # Style guidelines: Inspired by the clear and simple design of the Rider Waite Smith deck, the 
+    # vibe of the Brady Tarot deck, the mythology of Hilda, and the humor and complexity of the Arcane Bullshit deck. 
+    # The card should use a limited color palette, lines as if created via risograph, be full-bleed, 
+    # include the name on the card, as well as the card_scene, some hint of the resonant season, and the universal symbol.
+    # The names of the cards should feel like they are part of a cohesive deck, and be completely devoid of cliches.
+    # Be sure to work in the colors (inner = foreground, outer = background) as well as the actual 8-bit binary code that this 
+    oracle_card:
+      card_name: ""         # The card's name that captures the essence of all 8-bits of the card and its associations
+      card_creature: ""     # The mythological creature represented by the card
+      question_posed: ""    # The question the mythological creature asks
+      card_scene: ""        # Paint a picture of the scene depicted around the creature on the card
+      universal_symbol: ""  # The universal symbol represented by the card
+      mood: ""              # The mood of the card
+
+      # USE THIS PROMPT TEMPLATE BUT FILL IN WITH SPECIFIC DETAILS FOR THIS CARD:
+      # Limited color risograph-style illustration of [short scene description].
+      # Use [INNER WORLD COLOR] for foreground elements (inner world) and [OUTER WORLD COLOR] for background/environment (outer world), with [ARCHETYPE HIGHLIGHT COLOR] for highlights.
+      # Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      # Include a clean, full-width title bar at the bottom, with centered 8-bit code "[XXXXXXXX]" and card title "[CARD TITLE]" in bold, without corner decorations or symbols.
+      # Feature [key symbolic elements, e.g., moon phase, animal companions, symbolic object].
+      # The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle seasonal/elemental references appropriate for [SEASON] (e.g., [Air/Winter], [Fire/Spring], [Water/Summer], [Earth/Fall]).
+      # Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean.
+      prompt_for_image_gen: "" 
+      
+  # Related Cards
+  related_cards: 
+    # Season variations of the same card
+    same_card_spring: "00000000" # The Moon in Winter
+    same_card_spring: "00000010" # The Moon in Spring
+    same_card_summer: "00000011" # The Moon in Summer
+    same_card_autumn: "00000001" # The Moon in Autumn
+        
+    # Opposites
+    opposite:        "11111111" # The Sun - complete illumination vs. darkness
+    
+    # Related thematically
+    thematic_pair:   "10100000" # The High Priestess - mysteries of the unconscious
+    
+    # Complete cycle
+    full_cycle:      ["00000000","00000001","00000011","00000010"] # The Moon in all seasons
+    
+  # Bit Values
+  bit_values:
+    bit1:   "0"  # Intuition
+    bit2:   "0"  # Ability
+    bit3:   "0"  # Capacity
+    bit4:   "0"  # Expectations
+    bit5:   "0"  # Support
+    bit6:   "0"  # Options
+    bit78:  "00" # Cycle phase (Winter)
