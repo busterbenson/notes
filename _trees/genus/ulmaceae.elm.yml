@@ -1,0 +1,276 @@
+genus:
+  common_name: "Elm"
+  scientific_name: "Ulmus spp."
+  taxonomic_level: "genus"
+  family: "Ulmaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "Deciduous trees with distinctive asymmetrical leaves that have double-toothed edges and prominent veins. Elms produce papery, winged seeds that mature in spring before leaf-out, and typically develop a vase-shaped or umbrella-like crown with arching branches."
+  
+  # Key species in this genus
+  included_species:
+    - name: "American Elm"
+      scientific_name: "Ulmus americana"
+      distinguishing_features: "Classic vase-shaped form; large, asymmetrical leaves with rough texture"
+      california_context: "Not native but planted historically as street tree; many lost to Dutch elm disease"
+    
+    - name: "Chinese Elm"
+      scientific_name: "Ulmus parvifolia"
+      distinguishing_features: "Smaller leaves; mottled, peeling bark; more drought-tolerant; semi-evergreen in mild climates"
+      california_context: "Widely planted as ornamental and street tree throughout California; resistant to Dutch elm disease"
+    
+    - name: "Siberian Elm"
+      scientific_name: "Ulmus pumila"
+      distinguishing_features: "Smaller, smoother leaves; fast-growing; weedy; more drought-tolerant"
+      california_context: "Introduced as windbreak tree; now considered invasive in some areas"
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Asymmetrical leaf bases (one side of leaf attaches lower than other); double-toothed leaf edges; strong vase shape or rounded crown"
+    secondary_markers: "Rough or sandpaper-like leaf texture on many species; papery winged seeds in spring; alternate branching pattern"
+    seasonal_markers: "Spring: seeds appear before or with new leaves; Summer: full canopy with distinctive leaf shape; Fall: yellow fall color; Winter: zigzag twigs visible with pointed buds"
+    similar_species_differentiation: "Unlike hackberry, has more pronounced double-toothed leaf edges and rougher leaf texture; unlike beech, has asymmetrical leaf bases; unlike birch, has alternate not opposite buds and lacks white bark"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-EDGE-02"  # Toothed
+        notes: "Leaves have distinctive double-toothed or serrated edges"
+      
+      - feature_id: "LEAF-BASE-01"  # Asymmetrical
+        notes: "Leaf bases are uneven, with one side attaching lower on the leaf stem than the other"
+      
+      - feature_id: "BRANCH-ARRANGE-02"  # Alternate branching
+        notes: "Branches and leaves grow in an alternate pattern, not opposite"
+      
+      - feature_id: "FRUIT-TYPE-03"  # Winged seeds
+        notes: "Produces distinctive papery, circular or oval winged seeds (samara)"
+    
+    usually_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops leaves in fall in most climates"
+        exceptions: "Chinese Elm may be semi-evergreen in mild winter areas of southern California"
+      
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with a single main trunk"
+        exceptions: "May develop multiple trunks if damaged when young or in some landscape forms"
+      
+      - feature_id: "LEAF-SURFACE-01"  # Rough texture
+        notes: "Many species have sandpaper-like upper leaf surface"
+        exceptions: "Chinese Elm and some others have smoother leaf texture"
+    
+    sometimes_true:
+      - feature_id: "TREE-FORM-07"  # Vase-shaped
+        conditions: "American Elm specifically; open-grown trees"
+        notes: "Classic American Elm develops distinctive vase or umbrella shape"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        conditions: "Chinese Elm and others; mature specimens"
+        notes: "Many elm species develop rounded crowns with age"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        conditions: "Chinese Elm specifically"
+        notes: "Some species like Chinese Elm develop attractive mottled, peeling bark"
+      
+      - feature_id: "BARK-TEXT-02"  # Ridged bark
+        conditions: "American Elm and many other species"
+        notes: "Many elms develop ridged or furrowed bark with age"
+    
+    never_true:
+      - feature_id: "BRANCH-ARRANGE-01"  # Opposite branching
+        notes: "Never has opposite branching pattern, always alternate"
+      
+      - feature_id: "LEAF-EDGE-01"  # Entire
+        notes: "Never has smooth leaf edges without teeth"
+      
+      - feature_id: "LEAF-BASE-02"  # Symmetrical
+        notes: "Never has completely symmetrical leaf bases"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Leaves with uneven bases and edges that look like tiny saw teeth"
+    memorable_comparison: "Elm leaves look like they slid off-center - one side of the base is lower than the other, like the leaf is wearing its hat crooked"
+    touch_tip: "Feel the leaf - many elms have leaves that feel a bit like sandpaper on the top side"
+    smell_tip: "Elm leaves don't have a strong smell, but they might have a faint fresh, green scent when crushed"
+    fun_fact: "Elm trees used to line many streets in America, creating beautiful green tunnels, but a disease called Dutch elm disease killed many of them. The good news is that scientists are working on breeding elms that can resist the disease, and some like Chinese elm naturally fight it off!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "Look at the leaves - do they have uneven bases, where one side of the leaf connects lower than the other side?"
+        yes_next: 2
+        no_next: "If the leaf base is even on both sides, it's probably not an elm"
+      - step: 2
+        instruction: "Check the leaf edges - do they have tiny double teeth, like a saw with little teeth on top of bigger teeth?"
+        yes_next: 3
+        no_next: "If the edges are smooth or have simple teeth, it's likely not an elm"
+      - step: 3
+        instruction: "In spring, look for papery winged seeds that look like tiny round pancakes; in other seasons, does the tree have a vase shape or rounded crown?"
+        yes_next: "You found an elm! The leaf size and bark can help you figure out which kind."
+        no_next: "If the shape is very different and you don't see the seeds, check other deciduous trees"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Flowers and fruits appear before or with new leaves; winged seeds mature and drop; new leaves emerge"
+      reproductive_activity: "Small reddish-green flowers appear; quickly develop into papery winged seeds"
+      identification_tips: "Distinctive seeds are highly visible in early spring, often before leaves appear"
+      kid_friendly_tip: "In spring, elm trees make lots of little flat, round, papery seeds that twirl like helicopters when they fall"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of green leaves; distinctive tree shape visible"
+      reproductive_activity: "No reproductive activity; seed production complete"
+      identification_tips: "Asymmetrical leaf bases and double-toothed edges clearly visible"
+      kid_friendly_tip: "Summer is when you can easily see the elm's crooked-based leaves and how they're arranged along the branches"
+    
+    - season: "Fall"
+      visual_changes: "Leaves typically turn yellow before dropping; distinctive crown shape becomes more visible"
+      reproductive_activity: "Begins developing flower buds for next spring"
+      identification_tips: "Yellow fall color; increasingly visible branch structure"
+      kid_friendly_tip: "In fall, elm leaves turn yellow (not red or orange like maple leaves) before they drop to the ground"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches reveal zigzag pattern of twigs; pointed reddish buds"
+      reproductive_activity: "Flower buds continue developing; will open in early spring"
+      identification_tips: "Vase-shaped crown or rounded outline visible; distinctive zigzag twigs with pointed buds"
+      kid_friendly_tip: "In winter when the leaves are gone, you can see how elm twigs grow in a zigzag pattern, not straight lines"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Asymmetrical leaf bases"
+      reliability: "Very high"
+      visibility: "Medium - need to examine leaves"
+    - feature: "Double-toothed leaf edges"
+      reliability: "High"
+      visibility: "Medium - need to look closely at leaf edges"
+    - feature: "Alternate branching pattern"
+      reliability: "High"
+      visibility: "Medium - check twig arrangement"
+    - feature: "Papery winged seeds in spring"
+      reliability: "Very high"
+      visibility: "High when present, but seasonal"
+    
+  look_alikes:
+    - species: "Hackberry (Celtis occidentalis)"
+      differences: "Hackberry has similar asymmetrical leaves but with less pronounced teeth; often has warty bark; produces berry-like fruits, not winged seeds"
+      identification_tip: "If the leaf edges have simple teeth (not double teeth) and the tree produces berry-like fruits in fall, it's hackberry, not elm"
+    
+    - species: "Beech (Fagus species)"
+      differences: "Beech has symmetrical leaf bases; smoother bark; different fruits (nuts in spiny husks); distinctive winter buds"
+      identification_tip: "If the leaves have even bases and the bark is smooth and gray, it's likely a beech tree"
+    
+    - species: "Zelkova (Zelkova species)"
+      differences: "Zelkova has similar leaves but with more evenly serrated edges and more symmetrical bases; different growth habit with branches often starting higher on trunk"
+      identification_tip: "Zelkova trees often have a more uniformly vase-shaped appearance with branches starting higher on the trunk"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Native American Tribes"
+      physical_uses:
+        - "Used the inner bark as emergency food and for cordage materials"
+        - "Created medicines from the inner bark for coughs and digestive issues"
+        - "Made tools and utensils from the hard, strong wood"
+        - "Used the mucilaginous bark as a poultice for wounds and swellings"
+      symbolic_meaning:
+        - "Associated with healing and physical resilience in some tribal traditions"
+        - "Valued as provider trees during food shortages"
+        - "Used as meeting places due to their shade-giving properties"
+    
+    - culture: "Early American Settlers"
+      physical_uses:
+        - "Selected for street plantings due to fast growth and shade properties"
+        - "Used the strong, interlocking grain wood for wheel hubs, chair seats, and tool handles"
+        - "Harvested for furniture making, especially chair seats"
+        - "Prized as shade trees for public spaces and home landscapes"
+      symbolic_meaning:
+        - "Symbolized civic pride and community planning"
+        - "Associated with America's early landscape design and urban planning"
+        - "Featured prominently in town common areas and courthouse squares"
+    
+    - culture: "Modern California"
+      physical_uses:
+        - "Planted as drought-tolerant landscape trees, especially Chinese Elm"
+        - "Selected for urban shade development in park planning"
+        - "Used as specimens in disease-resistant cultivar development"
+        - "Valued for shade creation in hot urban environments"
+      symbolic_meaning:
+        - "Represents urban forestry and efforts to create livable cities"
+        - "Symbolizes resilience against disease and environmental challenges"
+        - "Featured in historical landscape renovation and tree selection programs"
+    
+  cultural_ecological_notes:
+    - "American Elm populations devastated by Dutch elm disease, an introduced fungal pathogen"
+    - "Chinese Elm and newer hybrid cultivars offer disease resistance alternatives"
+    - "Fast-growing Siberian Elm can become invasive in some environments"
+    - "Provides important habitat for many urban wildlife species"
+    - "Seeds are nutritious food source for birds and small mammals"
+    
+  range_within_california:
+    - "No elm species are native to California"
+    - "American Elm historically planted as street tree in northern California cities"
+    - "Chinese Elm widely planted throughout the state as ornamental and street tree"
+    - "Siberian Elm found as landscape and windbreak tree, sometimes naturalized"
+    - "Various hybrid and disease-resistant cultivars increasingly planted in urban forests"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "40-100 feet depending on species (American Elm tallest, Chinese Elm typically smaller)"
+    growth_rate: "Medium to fast; many grow 1-3 feet per year when young"
+    crown_spread: "30-70 feet at maturity"
+    lifespan: "80-150 years for healthy specimens"
+    trunk_diameter: "2-4 feet at maturity"
+    root_system: "Moderately deep with widespread lateral roots; sometimes problematic near sidewalks"
+    toxicity: "Not toxic to humans or animals; leaves and seeds edible but not particularly palatable"
+  
+  conservation_status:
+    status: "American Elm considered vulnerable due to Dutch elm disease; other species stable"
+    threats: 
+      - "Dutch elm disease continues to affect susceptible species"
+      - "Elm yellows phytoplasma causes additional disease concerns"
+      - "Elm leaf beetle and other insect pests can cause damage"
+      - "Urban stresses including pollution and confined root zones"
+    protection_efforts:
+      - "Development of disease-resistant cultivars"
+      - "Preservation of remaining mature American Elms"
+      - "Preventative fungicide treatments for valuable specimens"
+      - "Diversity in urban tree planting to avoid monocultures"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-BASE-01"  # Asymmetrical
+      - "feature_id: LEAF-EDGE-02"  # Toothed
+      - "feature_id: FRUIT-TYPE-03"  # Winged seeds
+    confirmation_features:
+      - "feature_id: LEAF-SURFACE-01"  # Rough texture
+      - "feature_id: TREE-FORM-07"  # Vase-shaped
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-07", "TREE-FORM-02"]  # Vase-shaped or rounded crown
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-EDGE-02", "LEAF-BASE-01"]  # Toothed edges, asymmetrical bases
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-SURFACE-01", "FRUIT-TYPE-03"]  # Rough texture, winged seeds
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["FRUIT-TYPE-03", "LEAF-BASE-01"]
+        notes: "Distinctive winged seeds make spring identification reliable"
+      summer:
+        reliability: "High"
+        key_features: ["LEAF-BASE-01", "LEAF-EDGE-02"]
+        notes: "Full leaf development allows clear view of distinctive characteristics"
+      fall:
+        reliability: "Medium to high" 
+        key_features: ["LEAF-BASE-01", "LEAF-FALL-01"]
+        notes: "Yellow fall color with asymmetrical leaves still visible"
+      winter:
+        reliability: "Medium"
+        key_features: ["TREE-FORM-07", "WINTER-TWIG-02"]
+        notes: "Vase-shaped crown and zigzag twigs provide winter identification clues"
+
+  wildlife_value:
+    - "Seeds provide important food for many bird species and small mammals"
+    - "Large trees provide nesting sites for numerous bird species, especially in urban areas"
+    - "Rough bark creates habitat for insects, which become food for birds"
+    - "Aphids that commonly feed on elms support ladybug populations"
+    - "Leaves support many butterfly and moth caterpillar species"

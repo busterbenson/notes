@@ -1,0 +1,274 @@
+genus:
+  common_name: "Juniper"
+  scientific_name: "Juniperus spp."
+  taxonomic_level: "genus"
+  family: "Cupressaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "Evergreen trees or shrubs with scale-like or needle-like leaves and distinctive blue-gray berry-like seed cones. Junipers have aromatic foliage, often with a strong scent, and typically grow in dry, rocky environments with excellent drought tolerance."
+  
+  # Key species in this genus
+  included_species:
+    - name: "Western Juniper"
+      scientific_name: "Juniperus occidentalis"
+      distinguishing_features: "Tree form with shreddy bark; scale-like leaves; light blue berries; twisted trunk"
+      california_context: "Native to northeastern California mountains and high desert environments"
+    
+    - name: "Eastern Redcedar"
+      scientific_name: "Juniperus virginiana"
+      distinguishing_features: "More upright, columnar form; darker green foliage; smaller berries; often planted"
+      california_context: "Not native but planted in California gardens and landscapes"
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Scale-like or tiny needle-like leaves with a strong aroma when crushed; blue berry-like seed cones; often growing in dry, rocky areas"
+    secondary_markers: "Twisted, irregular growth form; shreddy reddish-brown bark; drought-tolerant appearance"
+    seasonal_markers: "Minimal seasonal change as evergreen; berries mature from green to blue in fall and may persist through winter"
+    similar_species_differentiation: "Unlike cypresses, produces berry-like cones, not woody cones; unlike true cedars, has scale-like foliage and berry cones; strong distinctive aroma when foliage is crushed"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Retains foliage year-round"
+      
+      - feature_id: "FRUIT-TYPE-05"  # Berry-like cones
+        notes: "Produces distinctive blue, purple, or reddish berry-like seed cones (not true berries but fused cone scales)"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic foliage
+        notes: "Foliage has a distinctive strong aroma when crushed"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        notes: "Highly adapted to survive in dry conditions"
+    
+    usually_true:
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        notes: "Mature foliage typically has small, overlapping scale-like leaves"
+        exceptions: "Young plants or some species may have more needle-like foliage"
+      
+      - feature_id: "BARK-TEXT-03"  # Shreddy bark
+        notes: "Bark typically shreds or peels in thin strips"
+        exceptions: "Very young trees may have smoother bark"
+      
+      - feature_id: "TREE-FORM-05"  # Irregular form
+        notes: "Often develops twisted, irregular growth form, especially in harsh conditions"
+        exceptions: "Cultivated varieties and Eastern Redcedar may have more regular, columnar forms"
+    
+    sometimes_true:
+      - feature_id: "LEAF-FORM-01"  # Needle-like leaves
+        conditions: "Young trees or certain growth conditions"
+        notes: "Some junipers have sharp, needle-like leaves, especially when young"
+      
+      - feature_id: "TREE-FORM-06"  # Shrubby form
+        conditions: "Harsh growing conditions or certain species"
+        notes: "May grow as a multi-stemmed shrub rather than a tree in tough environments"
+      
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        conditions: "Harsh environments or after damage"
+        notes: "Often develops multiple trunks, especially in windy or harsh locations"
+      
+      - feature_id: "LEAF-COLOR-03"  # Blue-green color
+        conditions: "Varies by species and growing conditions"
+        notes: "Many junipers have blue-gray or silver-blue foliage, especially in dry conditions"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all foliage seasonally"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Never produces woody cones like pines or firs; only berry-like seed cones"
+      
+      - feature_id: "HABITAT-WATER-01"  # Water-loving
+        notes: "Never grows in wetlands or requires constant moisture"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Blue 'berries' and leaves that smell spicy when crushed"
+    memorable_comparison: "The blue 'berries' look like tiny blueberries growing on the branches, and the tree smells like a Christmas wreath when you crush the leaves"
+    touch_tip: "The scale-like leaves feel soft when you stroke them one way, but prickly when you stroke them the other way"
+    smell_tip: "Gently crush a few leaves between your fingers to smell the strong, spicy scent - like the smell of a cleaning product but natural!"
+    fun_fact: "The blue 'berries' aren't really berries at all - they're special cones where the scales grew together to look like berries! Birds love to eat them, and people use juniper berries to flavor gin, which is a grown-up drink."
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at where the tree is growing - is it in a dry, sunny, possibly rocky spot?"
+        yes_next: 2
+        no_next: "Junipers prefer dry places, so if it's in a wet area, check other evergreen trees"
+      - step: 2
+        instruction: "Look at the leaves - are they tiny scales (like fish scales) that cover the twigs, or very short needles?"
+        yes_next: 3
+        no_next: "If the needles are long or in bundles, it's probably a different evergreen"
+      - step: 3
+        instruction: "Gently crush a few leaves and smell them - do they have a strong, spicy scent?"
+        yes_next: 4
+        no_next: "If there's no strong smell, check cypress or cedar trees"
+      - step: 4
+        instruction: "Look for blue berry-like cones on the branches (they might be small) - can you find any?"
+        yes_next: "You found a juniper! Check the bark and shape to figure out which kind."
+        no_next: "If no berries are visible, it may be a juniper not in fruiting season, or a cypress - check the smell again"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Some new growth emerges, often with a lighter green color; pollen may be released from male cones"
+      reproductive_activity: "Male cones release yellow pollen; female cones begin forming"
+      identification_tips: "Pollen release may create yellow dusty appearance on some trees; look for contrast between old and new growth"
+      kid_friendly_tip: "In spring, some junipers release yellow pollen that might make you sneeze if you stand too close!"
+    
+    - season: "Summer" 
+      visual_changes: "Foliage reaches full development; young green berry-like cones becoming visible"
+      reproductive_activity: "Female cones continue developing, appearing as small green 'berries'"
+      identification_tips: "Look for green, unripe berry-like cones; drought-tolerant appearance stands out in dry summer"
+      kid_friendly_tip: "During summer, look for small green 'berries' starting to form - they're baby juniper cones!"
+    
+    - season: "Fall"
+      visual_changes: "Berry-like cones mature, turning from green to blue, purple, or reddish"
+      reproductive_activity: "Cones fully ripen but may remain on tree through winter"
+      identification_tips: "Blue ripe 'berries' are highly distinctive; no fall color change as it's evergreen"
+      kid_friendly_tip: "Fall is when the juniper 'berries' turn blue, like tiny blueberries on the branches"
+    
+    - season: "Winter"
+      visual_changes: "Remains evergreen; ripe berries may persist on branches"
+      reproductive_activity: "Dormant; some berries may remain from previous year"
+      identification_tips: "Evergreen nature and persistent berries make winter identification easy"
+      kid_friendly_tip: "In winter, junipers stay green when many trees lose their leaves, and birds like to eat the berries when other food is hard to find"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Scale-like or short needle-like leaves"
+      reliability: "High"
+      visibility: "Medium - need to look at branches up close"
+    - feature: "Strong aromatic smell when foliage is crushed"
+      reliability: "Very high"
+      visibility: "Requires interaction"
+    - feature: "Blue berry-like cones (when present)"
+      reliability: "Very high"
+      visibility: "Seasonal; visible when mature"
+    - feature: "Growing in dry, often rocky habitat"
+      reliability: "Medium to high"
+      visibility: "Easy to observe"
+    
+  look_alikes:
+    - species: "Cypress (Cupressus species)"
+      differences: "Cypress has similar scale-like leaves but produces woody cones, not berry-like cones; different aroma when crushed"
+      identification_tip: "If it has woody cones instead of 'berries', it's a cypress, not a juniper"
+    
+    - species: "Incense Cedar (Calocedrus decurrens)"
+      differences: "Incense Cedar has flat sprays of scale-like leaves; woody duck-bill shaped cones; different aroma"
+      identification_tip: "If the leaves grow in flat fan-like patterns and it has woody cones, it's cedar, not juniper"
+    
+    - species: "Arborvitae/Thuja (Thuja species)"
+      differences: "Arborvitae has flattened fan-like sprays of scales; different aroma; small woody cones"
+      identification_tip: "If the branches grow in flat sprays like fans, it's probably not a juniper"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Native Great Basin Tribes"
+      physical_uses:
+        - "Burned wood and leaves for ceremonial smudging to purify spaces"
+        - "Made tea from berries and leaves for colds and stomach problems"
+        - "Used the berries as a spice for flavoring meat"
+        - "Created tools and weapons from the hard, rot-resistant wood"
+      symbolic_meaning:
+        - "Associated with protection and spiritual cleansing"
+        - "Represented endurance in harsh conditions"
+        - "Featured in stories about surviving difficult times"
+        - "Used in coming-of-age ceremonies for young men"
+    
+    - culture: "Early Settlers"
+      physical_uses:
+        - "Used wood for fence posts because it resists rotting in soil"
+        - "Created furniture and chests from the aromatic wood"
+        - "Crushed berries for home remedies and flavoring"
+        - "Burned wood for smoking meat with its distinctive flavor"
+      symbolic_meaning:
+        - "Seen as a symbol of pioneer resilience"
+        - "Marked homesteads and property boundaries"
+        - "Associated with protection from harmful spirits in some folk traditions"
+    
+    - culture: "Modern Use"
+      physical_uses:
+        - "Harvests berries for flavoring gin and other foods"
+        - "Uses oil extracted from wood and leaves in perfumes and medicines"
+        - "Plants as drought-tolerant landscaping"
+        - "Creates bonsai specimens from naturally twisted forms"
+      symbolic_meaning:
+        - "Represents desert and high mountain ecosystems in art and literature"
+        - "Symbolizes resilience and adaptation to climate change"
+        - "Featured in xeriscaping and sustainable landscaping movements"
+    
+  cultural_ecological_notes:
+    - "Provides critical food and shelter for wildlife in harsh environments"
+    - "Some bird species like the juniper titmouse specially adapted to juniper woodlands"
+    - "Berries are important winter food source for birds when other foods are scarce"
+    - "Deep roots help stabilize soil in erosion-prone areas"
+    - "Historical range has expanded in some areas due to fire suppression and grazing changes"
+    
+  range_within_california:
+    - "Western Juniper native to northeastern California mountains and high desert"
+    - "Eastern Redcedar introduced as a landscape plant, not naturally occurring in California"
+    - "Various other juniper species and cultivars planted in gardens throughout the state"
+    - "Most abundant in Great Basin ecological regions east of the Sierra Nevada"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "10-60 feet depending on species and conditions"
+    growth_rate: "Slow; typically less than 12 inches per year"
+    crown_spread: "10-30 feet at maturity"
+    lifespan: "500-1000+ years for Western Juniper in good conditions"
+    trunk_diameter: "1-3 feet at maturity; old specimens can be larger"
+    root_system: "Extensive, deep root system for accessing limited water"
+    toxicity: "Not toxic to humans, though large amounts of berries may cause stomach upset; some species toxic to horses"
+  
+  conservation_status:
+    status: "Most species secure in natural range"
+    threats: 
+      - "Climate change affecting suitable habitat range"
+      - "Development in some areas of natural juniper woodland"
+      - "Invasive species competition in some habitats"
+    protection_efforts:
+      - "Conservation of old-growth juniper woodlands in specific preserves"
+      - "Research on climate adaptation and range shifts"
+      - "Use in restoration of degraded landscapes"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-FORM-05"  # Scale-like leaves
+      - "feature_id: FRUIT-TYPE-05"  # Berry-like cones
+      - "feature_id: SENSORY-SMELL-01"  # Aromatic leaves
+    confirmation_features:
+      - "feature_id: ECO-ADAPT-01"  # Drought tolerant
+      - "feature_id: BARK-TEXT-03"  # Shreddy bark
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-05", "ECO-ADAPT-01"]  # Irregular form, drought tolerant appearance
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-FORM-05", "BARK-TEXT-03"]  # Scale-like leaves, shreddy bark
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-05", "SENSORY-SMELL-01"]  # Berry-like cones, aromatic when crushed
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["LEAF-FORM-05", "SENSORY-SMELL-01"]
+        notes: "Pollen release may be visible; foliage characteristics and aroma reliable"
+      summer:
+        reliability: "Medium"
+        key_features: ["LEAF-FORM-05", "ECO-ADAPT-01"]
+        notes: "Drought-tolerant appearance distinctive in summer; young developing cones may be present"
+      fall:
+        reliability: "Very high" 
+        key_features: ["FRUIT-TYPE-05", "SENSORY-SMELL-01"]
+        notes: "Mature blue berry-like cones make fall identification easiest"
+      winter:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "FRUIT-TYPE-05"]
+        notes: "Evergreen nature with persistent berries distinctive in winter"
+
+  wildlife_value:
+    - "Berries eaten by many bird species including cedar waxwings, bluebirds, and robins"
+    - "Dense foliage provides important nesting and shelter for birds in harsh environments"
+    - "Shreddy bark used by birds for nesting material"
+    - "Provides cover and protection for small mammals and reptiles"
+    - "Ancient juniper snags create habitat for cavity-nesting birds and bats"
+    - "Creates microclimate beneath canopy where other plants can establish"

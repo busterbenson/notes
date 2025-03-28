@@ -1,0 +1,175 @@
+Filename,Scientific Genus,Common Genus,Status
+anacardiaceae.chinese-pistache.yml,Pistacia,Pistache,Updated
+asparagaceae.joshua-tree.yml,Yucca,Joshua Tree,Updated
+bignoniaceae.jacaranda.yml,Jacaranda,Jacaranda,Updated
+cupressaceae.alaska-cedar.yml,Callitropsis,Cedar,Updated
+cupressaceae.chinese-fir.yml,Cunninghamia,China-fir,Updated
+cupressaceae.dawn-redwood.yml,Metasequoia,Dawn Redwood,Updated
+cupressaceae.japanese-cedar.yml,Cryptomeria,Japanese Cedar,Updated
+fabaceae.palo-verde.yml,Parkinsonia,Palo Verde,Updated
+fagaceae.american-beech.yml,Fagus,Beech,Updated
+fagaceae.blue-oak.yml,Quercus,White Oak,Updated
+fagaceae.european-beech.yml,Fagus,Beech,Updated
+fagaceae.tanoak.yml,Notholithocarpus,Tanoak,Updated
+malvaceae.american-basswood.yml,Tilia,Basswood,Updated
+myricaceae.pacific-bayberry.yml,Morella,Bayberry,Updated
+myrtaceae.brisbane-box.yml,Lophostemon,Brisbane Box,Updated
+pinaceae.western-larch.yml,Larix,Larch,Updated
+rhamnaceae.birchleaf-false-buckthorn.yml,Frangula,Buckthorn,Updated
+rosaceae.alder-whitebeam.yml,Sorbus,Whitebeam,Updated
+rosaceae.alderleaf-cercocarpus.yml,Cercocarpus,Mountain Mahogany,Updated
+rosaceae.purple-leaf-plum.yml,Prunus,Cherry,Updated
+sapindaceae.western-soapberry.yml,Sapindus,Soapberry,Updated
+ulmaceae.water-elm.yml,Planera,Water Elm,Updated
+altingiaceae.sweet-gum.yml,Liquidambar,Sweet Gum,Unchanged
+arecaceae.california-fan-palm.yml,Washingtonia,Fan Palm,Unchanged
+betulaceae.arizona-alder.yml,Alnus,Alder,Unchanged
+betulaceae.downy-birch.yml,Betula,Birch,Unchanged
+betulaceae.european-alder.yml,Alnus,Alder,Unchanged
+betulaceae.gray-birch.yml,Betula,Birch,Unchanged
+betulaceae.green-alder.yml,Alnus,Alder,Unchanged
+betulaceae.heartleaf-birch.yml,Betula,Birch,Unchanged
+betulaceae.italian-alder.yml,Alnus,Alder,Unchanged
+betulaceae.kenai-birch.yml,Betula,Birch,Unchanged
+betulaceae.manchurian-birch.yml,Betula,Birch,Unchanged
+betulaceae.murrays-birch.yml,Betula,Birch,Unchanged
+betulaceae.paper-birch.yml,Betula,Birch,Unchanged
+betulaceae.red-alder.yml,Alnus,Alder,Unchanged
+betulaceae.resin-birch.yml,Betula,Birch,Unchanged
+betulaceae.river-birch.yml,Betula,Birch,Unchanged
+betulaceae.seaside-alder.yml,N/A,N/A,Unchanged
+betulaceae.smooth-alder.yml,N/A,N/A,Unchanged
+betulaceae.speckled-alder.yml,N/A,N/A,Unchanged
+betulaceae.sweet-birch.yml,Betula,Birch,Unchanged
+betulaceae.thinleaf-speckled-alder.yml,N/A,N/A,Unchanged
+betulaceae.virginia-birch.yml,Betula,Birch,Unchanged
+betulaceae.water-birch.yml,Betula,Birch,Unchanged
+betulaceae.white-alder.yml,Alnus,Alder,Unchanged
+betulaceae.yellow-birch.yml,Betula,Birch,Unchanged
+bignoniaceae.desert-willow.yml,Chilopsis,Desert Willow,Unchanged
+cornaceae.pacific-dogwood.yml,Cornus,Dogwood,Unchanged
+cupressaceae.arizona-cypress.yml,Cupressus,Cypress,Unchanged
+cupressaceae.atlantic-white-cedar.yml,Chamaecyparis,Cedar,Unchanged
+cupressaceae.coast-redwood.yml,Sequoia,Redwood,Unchanged
+cupressaceae.eastern-redcedar.yml,Juniperus,Juniper,Unchanged
+cupressaceae.giant-sequoia.yml,Sequoiadendron,Giant Sequoia,Unchanged
+cupressaceae.incense-cedar.yml,Calocedrus,Incense Cedar,Unchanged
+cupressaceae.italian-cypress.yml,Cupressus,Cypress,Unchanged
+cupressaceae.monterey-cypress.yml,Cupressus,Cypress,Unchanged
+cupressaceae.northern-white-cedar.yml,Thuja,Cedar,Unchanged
+cupressaceae.port-orford-cedar.yml,Chamaecyparis,Cedar,Unchanged
+cupressaceae.western-juniper.yml,Juniperus,Juniper,Unchanged
+cupressaceae.western-redcedar.yml,Thuja,Cedar,Unchanged
+ericaceae.pacific-madrone.yml,Arbutus,Madrone,Unchanged
+ericaceae.strawberry-tree.yml,Arbutus,Madrone,Unchanged
+fabaceae.black-locust.yml,Robinia,Locust,Unchanged
+fabaceae.bristly-locust.yml,Robinia,Locust,Unchanged
+fabaceae.california-redbud.yml,Cercis,Redbud,Unchanged
+fabaceae.clammy-locust.yml,Robinia,Locust,Unchanged
+fabaceae.honeylocust.yml,Gleditsia,Locust,Unchanged
+fabaceae.new-mexico-locust.yml,Robinia,Locust,Unchanged
+fabaceae.waterlocust.yml,Gleditsia,Locust,Unchanged
+fagaceae.california-black-oak.yml,Quercus,Black Oak,Unchanged
+fagaceae.canyon-live-oak.yml,Quercus,Live Oak,Unchanged
+fagaceae.coast-live-oak.yml,Quercus,Live Oak,Unchanged
+fagaceae.cork-oak.yml,Quercus,Oak,Unchanged
+fagaceae.engelmann-oak.yml,Quercus,White Oak,Unchanged
+fagaceae.japanese-blue-oak.yml,Quercus,Oak,Unchanged
+fagaceae.oregon-white-oak.yml,Quercus,White Oak,Unchanged
+fagaceae.sonoran-blue-oak.yml,N/A,N/A,Unchanged
+fagaceae.valley-oak.yml,Quercus,White Oak,Unchanged
+ginkgoaceae.ginkgo.yml,Ginkgo,Ginkgo,Unchanged
+juglandaceae.california-black-walnut.yml,Juglans,Walnut,Unchanged
+juglandaceae.northern-california-walnut.yml,Juglans,Walnut,Unchanged
+lauraceae.california-laurel.yml,Umbellularia,Bay Laurel,Unchanged
+lythraceae.crape-myrtle.yml,Lagerstroemia,Crape Myrtle,Unchanged
+magnoliaceae.southern-magnolia.yml,Magnolia,Magnolia,Unchanged
+myrtaceae.blue-gum-eucalyptus.yml,Eucalyptus,Eucalyptus,Unchanged
+myrtaceae.red-gum-eucalyptus.yml,Eucalyptus,Eucalyptus,Unchanged
+myrtaceae.silver-dollar-gum.yml,Eucalyptus,Eucalyptus,Unchanged
+oleaceae.olive.yml,Olea,Olive,Unchanged
+oleaceae.oregon-ash.yml,Fraxinus,Ash,Unchanged
+pinaceae.atlas-cedar.yml,Cedrus,True Cedar,Unchanged
+pinaceae.balsam-fir.yml,Abies,Fir,Unchanged
+pinaceae.bigcone-douglas-fir.yml,Pseudotsuga,Douglas-fir,Unchanged
+pinaceae.bishop-pine.yml,Pinus,Pine,Unchanged
+pinaceae.black-spruce.yml,Picea,Spruce,Unchanged
+pinaceae.blue-spruce.yml,Picea,Spruce,Unchanged
+pinaceae.brewer-spruce.yml,Picea,Spruce,Unchanged
+pinaceae.bristlecone-fir.yml,Abies,Fir,Unchanged
+pinaceae.california-red-fir.yml,Abies,Fir,Unchanged
+pinaceae.california-white-fir.yml,Abies,Fir,Unchanged
+pinaceae.caucasian-fir.yml,Abies,Fir,Unchanged
+pinaceae.coast-douglas-fir.yml,Pseudotsuga,Douglas-fir,Unchanged
+pinaceae.deodar-cedar.yml,Cedrus,True Cedar,Unchanged
+pinaceae.engelmann-spruce.yml,Picea,Spruce,Unchanged
+pinaceae.european-silver-fir.yml,Abies,Fir,Unchanged
+pinaceae.fraser-fir.yml,Abies,Fir,Unchanged
+pinaceae.grand-fir.yml,Abies,Fir,Unchanged
+pinaceae.gray-pine.yml,Pinus,Pine,Unchanged
+pinaceae.jeffrey-pine.yml,Pinus,Pine,Unchanged
+pinaceae.knobcone-pine.yml,Pinus,Pine,Unchanged
+pinaceae.lebanon-cedar.yml,Cedrus,True Cedar,Unchanged
+pinaceae.lodgepole-pine.yml,Pinus,Pine,Unchanged
+pinaceae.monterey-pine.yml,Pinus,Pine,Unchanged
+pinaceae.mountain-hemlock.yml,Tsuga,Hemlock,Unchanged
+pinaceae.nikko-fir.yml,N/A,N/A,Unchanged
+pinaceae.noble-fir.yml,Abies,Fir,Unchanged
+pinaceae.norway-spruce.yml,N/A,N/A,Unchanged
+pinaceae.oriental-spruce.yml,N/A,N/A,Unchanged
+pinaceae.pacific-silver-fir.yml,Abies,Fir,Unchanged
+pinaceae.ponderosa-pine.yml,Pinus,Pine,Unchanged
+pinaceae.red-spruce.yml,N/A,N/A,Unchanged
+pinaceae.rocky-mountain-douglas-fir.yml,Pseudotsuga,Douglas-fir,Unchanged
+pinaceae.serbian-spruce.yml,N/A,N/A,Unchanged
+pinaceae.sitka-spruce.yml,Picea,Spruce,Unchanged
+pinaceae.spruce-pine.yml,N/A,N/A,Unchanged
+pinaceae.subalpine-fir.yml,Abies,Fir,Unchanged
+pinaceae.sugar-pine.yml,Pinus,Pine,Unchanged
+pinaceae.torrey-pine.yml,Pinus,Pine,Unchanged
+pinaceae.western-hemlock.yml,Tsuga,Hemlock,Unchanged
+pinaceae.western-white-pine.yml,Pinus,Pine,Unchanged
+pinaceae.white-spruce.yml,Picea,Spruce,Unchanged
+platanaceae.california-sycamore.yml,Platanus,Sycamore,Unchanged
+platanaceae.london-plane-tree.yml,Platanus,Sycamore,Unchanged
+rosaceae.bradford-pear.yml,Pyrus,Pear,Unchanged
+rosaceae.western-serviceberry.yml,Amelanchier,Serviceberry,Unchanged
+salicaceae.balm-of-gilead-poplar.yml,Populus,Poplar,Unchanged
+salicaceae.balsam-poplar.yml,Populus,Poplar,Unchanged
+salicaceae.bigtooth-aspen.yml,Populus,Aspen,Unchanged
+salicaceae.european-aspen.yml,Populus,Poplar,Unchanged
+salicaceae.fremont-cottonwood.yml,Populus,Cottonwood,Unchanged
+salicaceae.quaking-aspen.yml,Populus,Aspen,Unchanged
+salicaceae.white-poplar.yml,Populus,Poplar,Unchanged
+sapindaceae.amur-maple.yml,Acer,Maple,Unchanged
+sapindaceae.bigleaf-maple.yml,Acer,Maple,Unchanged
+sapindaceae.black-maple.yml,Acer,Maple,Unchanged
+sapindaceae.california-buckeye.yml,Aesculus,Buckeye,Unchanged
+sapindaceae.canyon-maple.yml,Acer,Maple,Unchanged
+sapindaceae.chalk-maple.yml,Acer,Maple,Unchanged
+sapindaceae.fullmoon-maple.yml,Acer,Maple,Unchanged
+sapindaceae.hedge-maple.yml,Acer,Maple,Unchanged
+sapindaceae.japanese-maple.yml,Acer,Maple,Unchanged
+sapindaceae.mountain-maple.yml,Acer,Maple,Unchanged
+sapindaceae.norway-maple.yml,Acer,Maple,Unchanged
+sapindaceae.paperbark-maple.yml,N/A,N/A,Unchanged
+sapindaceae.red-maple.yml,Acer,Maple,Unchanged
+sapindaceae.rocky-mountain-maple.yml,Acer,Maple,Unchanged
+sapindaceae.shantung-maple.yml,Acer,Maple,Unchanged
+sapindaceae.silver-maple.yml,Acer,Maple,Unchanged
+sapindaceae.striped-maple.yml,N/A,N/A,Unchanged
+sapindaceae.sycamore-maple.yml,N/A,N/A,Unchanged
+sapindaceae.tatarian-maple.yml,Acer,Maple,Unchanged
+sapindaceae.trident-maple.yml,N/A,N/A,Unchanged
+sapindaceae.vine-maple.yml,Acer,Maple,Unchanged
+taxaceae.california-torreya.yml,Torreya,California Nutmeg,Unchanged
+taxaceae.pacific-yew.yml,Taxus,Yew,Unchanged
+ulmaceae.american-elm.yml,Ulmus,Elm,Unchanged
+ulmaceae.cedar-elm.yml,Ulmus,Elm,Unchanged
+ulmaceae.chinese-elm.yml,Ulmus,Elm,Unchanged
+ulmaceae.dutch-elm.yml,Ulmus,Elm,Unchanged
+ulmaceae.september-elm.yml,Ulmus,Elm,Unchanged
+ulmaceae.siberian-elm.yml,Ulmus,Elm,Unchanged
+ulmaceae.slippery-elm.yml,N/A,N/A,Unchanged
+ulmaceae.winged-elm.yml,Ulmus,Elm,Unchanged
+ulmaceae.wych-elm.yml,Ulmus,Elm,Unchanged

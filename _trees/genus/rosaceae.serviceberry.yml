@@ -1,0 +1,288 @@
+genus:
+  common_name: "Serviceberry"
+  scientific_name: "Amelanchier spp."
+  taxonomic_level: "genus"
+  family: "Rosaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "Small deciduous trees or shrubs with showy white flower clusters that bloom early in spring, often before leaves fully emerge. Serviceberries have smooth gray bark, simple oval to elliptical leaves with finely toothed margins, and produce small purple-blue berries that resemble blueberries."
+  
+  # Key species in this genus
+  included_species:
+    - name: "Western Serviceberry"
+      scientific_name: "Amelanchier alnifolia"
+      distinguishing_features: "Native shrub or small tree; broader leaves with teeth only on upper half"
+      california_context: "Native to mountains and foothills of California; traditional wild food source"
+    
+    - name: "Saskatoon Serviceberry"
+      scientific_name: "Amelanchier alnifolia var. semiintegrifolia"
+      distinguishing_features: "Coastal variant with larger fruit; taller growth habit in favorable conditions"
+      california_context: "Native to northern California coastal regions; important traditional food"
+    
+    - name: "Eastern Serviceberry"
+      scientific_name: "Amelanchier canadensis"
+      distinguishing_features: "More tree-like form; leaves finely toothed to the base; Eastern US native"
+      california_context: "Occasionally planted as ornamental in California landscapes"
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Early spring white flower clusters; oval finely toothed leaves; smooth gray bark; small purple-blue berries in summer"
+    secondary_markers: "Alternate branching; bronze to red new growth; fibrous medium-density wood; fine autumn colors"
+    seasonal_markers: "Spring: early white flower clusters; Summer: edible blue-purple berries; Fall: orange to red fall color; Winter: smooth gray bark with subtle striping"
+    similar_species_differentiation: "Unlike cherries, has finely toothed (not sharply serrated) leaf margins and lacks cherry's distinctive horizontal lenticels on bark; unlike crabapples, has smaller, more numerous flowers and blue (not red) fruits"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops leaves in fall"
+      
+      - feature_id: "BRANCH-ARRANGE-02"  # Alternate branching
+        notes: "Branches and leaves grow in an alternate pattern, not opposite"
+      
+      - feature_id: "LEAF-EDGE-02"  # Toothed
+        notes: "Leaves have fine teeth along margins, at least on the upper half"
+      
+      - feature_id: "FRUIT-TYPE-03"  # Berries
+        notes: "Produces small, round, purple-blue berries (technically pomes)"
+    
+    usually_true:
+      - feature_id: "TREE-SIZE-01"  # Small tree
+        notes: "Typically grows as a small tree or large shrub"
+        exceptions: "May remain shrubby in harsh conditions; occasionally taller in ideal settings"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Bark is typically smooth and gray"
+        exceptions: "May develop slight furrows with age but generally remains smooth"
+      
+      - feature_id: "FLOWER-COLOR-01"  # White flowers
+        notes: "Produces clusters of white flowers in early spring"
+        exceptions: "Very rarely may have slightly pinkish tinge"
+      
+      - feature_id: "LEAF-SHAPE-02"  # Oval leaves
+        notes: "Leaves typically oval to elliptical in shape"
+        exceptions: "Some variation in leaf shape between species and individuals"
+    
+    sometimes_true:
+      - feature_id: "TREE-TRUNK-02"  # Multiple trunks
+        conditions: "Often in natural settings or when grown as shrub"
+        notes: "May develop multiple stems, especially in the wild"
+      
+      - feature_id: "LEAF-COLOR-06"  # Red new growth
+        conditions: "Spring growth on some species/individuals"
+        notes: "New leaves may emerge with reddish or bronze coloration"
+      
+      - feature_id: "LEAF-FALL-04"  # Red-orange fall color
+        conditions: "Fall, with good conditions"
+        notes: "Often develops attractive red-orange fall color"
+      
+      - feature_id: "HABITAT-LOC-03"  # Forest edge
+        conditions: "Natural settings"
+        notes: "Commonly found along forest edges and in woodland openings"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Never retains leaves through winter"
+      
+      - feature_id: "LEAF-FORM-06"  # Compound leaves
+        notes: "Never has compound leaves, always simple"
+      
+      - feature_id: "BARK-TEXT-04"  # Deeply furrowed
+        notes: "Never develops deeply furrowed or platey bark"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Early spring white flower clusters and smooth gray bark with summer blueberry-like fruits"
+    memorable_comparison: "It's like a tree that can't decide if it wants to be a blueberry bush or a cherry tree - it has little white flowers like cherry but makes small blue berries!"
+    touch_tip: "Feel the smooth gray bark - it's cool to the touch and has subtle stripes as it grows"
+    smell_tip: "The flowers have a light, sweet fragrance in spring"
+    fun_fact: "Serviceberry has lots of fun nicknames like 'Juneberry' (because its berries ripen in June), 'Shadbush' (because it blooms when shad fish swim upstream to spawn), and even 'Saskatoon' in Canada. The berries are not only safe to eat but super tasty and nutritious - they taste like a mix of blueberry, cherry, and almond. Many birds, bears, and people love to collect them!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "Check when it flowers - does it have clusters of small white flowers very early in spring, often before other trees leaf out?"
+        yes_next: 2
+        no_next: "If it flowers later in spring or has different colored flowers, it might be another tree"
+      - step: 2
+        instruction: "Look at the bark - is it smooth and gray, sometimes with subtle stripes?"
+        yes_next: 3
+        no_next: "If the bark is rough, deeply furrowed, or peeling, it's likely not a serviceberry"
+      - step: 3
+        instruction: "Check for fruits in summer - are they small, round, and purple-blue like little blueberries (about 1/4 to 1/2 inch across)?"
+        yes_next: "You found a serviceberry! These berries are safe to eat and delicious when fully ripe."
+        no_next: "If the fruits are red, large, or a different shape, check other trees"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Early white flower clusters appear, often before leaves fully emerge; leaves emerge with bronze or reddish tint"
+      reproductive_activity: "Flowers attract early pollinators like bees and flies"
+      identification_tips: "One of the earliest flowering small trees; distinctive white flower clusters"
+      kid_friendly_tip: "In spring, serviceberry is one of the first trees to bloom, with clouds of white flowers that look like little stars"
+    
+    - season: "Summer" 
+      visual_changes: "Full leaf development; green berries develop and ripen to red, then blue-purple"
+      reproductive_activity: "Berries mature; eaten and dispersed by birds and mammals"
+      identification_tips: "Distinctive blue-purple berries resembling blueberries; fine-toothed oval leaves"
+      kid_friendly_tip: "By summer, the flowers turn into small fruits that change from green to red to blue-purple, and they're safe to taste when fully ripe!"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow, orange, or red before dropping"
+      reproductive_activity: "Dormant; most berries consumed by wildlife"
+      identification_tips: "Attractive fall color; smooth gray bark becomes more visible"
+      kid_friendly_tip: "In fall, serviceberry leaves turn beautiful colors like orange and red, similar to flames"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches reveal smooth gray bark often with subtle striping; slender buds visible"
+      reproductive_activity: "Dormant; flower buds developing for early spring bloom"
+      identification_tips: "Smooth gray bark; slender pointed buds; often multi-stemmed growth habit"
+      kid_friendly_tip: "In winter, you can see the smooth gray bark, and if you look closely, there are tiny buds ready to burst into flowers at the first sign of spring"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Early white flower clusters"
+      reliability: "Very high"
+      visibility: "Highly visible but seasonal (early spring)"
+    - feature: "Smooth gray bark"
+      reliability: "High"
+      visibility: "Easy to observe year-round"
+    - feature: "Blue-purple berries in summer"
+      reliability: "Very high"
+      visibility: "Highly visible but seasonal (summer)"
+    - feature: "Finely toothed oval leaves"
+      reliability: "High"
+      visibility: "Easy to observe during growing season"
+    
+  look_alikes:
+    - species: "Cherry (Prunus species)"
+      differences: "Cherries have more sharply toothed leaves; distinctive horizontal lenticels on bark; produce larger red or black fruits"
+      identification_tip: "If the bark has horizontal lines and the fruits are larger and red or black (not blue), it's likely a cherry, not a serviceberry"
+    
+    - species: "Crabapple (Malus species)"
+      differences: "Crabapples have more deeply toothed or lobed leaves; flowers often have pink tinge; fruits are red or yellow, not blue"
+      identification_tip: "If the flowers have a pink tone and the fruits are red or yellow apples (not blue berries), it's a crabapple"
+    
+    - species: "Hawthorn (Crataegus species)"
+      differences: "Hawthorns typically have thorns; more deeply lobed leaves; fruits remain red when ripe"
+      identification_tip: "If the tree has thorns along the branches and red berries, it's likely a hawthorn, not a serviceberry"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Native California Tribes"
+      physical_uses:
+        - "Harvested berries as an important fresh and dried food source"
+        - "Used straight branches for arrow shafts and tool handles"
+        - "Created tea from bark and roots for medicinal purposes"
+        - "Utilized wood for small carving projects and tools"
+      symbolic_meaning:
+        - "Signaled the return of spring and seasonal renewal"
+        - "Associated with the return of certain migratory animals"
+        - "Featured in stories about proper harvesting and respect for plants"
+        - "Represented reliability and seasonality in traditional knowledge"
+    
+    - culture: "Early Western Settlers"
+      physical_uses:
+        - "Harvested berries for pies, jams, and fresh eating"
+        - "Used hard, dense wood for tool handles"
+        - "Planted as ornamental trees near homesteads"
+        - "Recognized bloom time as important seasonal indicator"
+      symbolic_meaning:
+        - "Named 'serviceberry' as it bloomed when ground thawed enough for funeral services"
+        - "Represented pioneer resilience and resourcefulness"
+        - "Associated with seasonal markers and planting times"
+        - "Symbol of spring's reliable return after winter"
+    
+    - culture: "Modern California"
+      physical_uses:
+        - "Planted in native plant gardens and restoration projects"
+        - "Cultivated for ornamental value in landscapes"
+        - "Harvested for artisanal jams and preserves"
+        - "Included in wildlife habitat plantings"
+      symbolic_meaning:
+        - "Represents California's native plant heritage"
+        - "Symbolizes sustainable foraging and wild foods"
+        - "Featured in native plant education programs"
+        - "Associated with wildlife conservation efforts"
+    
+  cultural_ecological_notes:
+    - "Important food source for many bird species, including tanagers, orioles, and waxwings"
+    - "Early flowers provide crucial nectar for early-emerging pollinators"
+    - "Bears, coyotes, and other mammals feed on the fruits"
+    - "Often found in ecological transition zones between forest and meadow"
+    - "Fairly fire-resistant, capable of resprouting after moderate burns"
+    - "Berries are highly nutritious with antioxidant properties, traditional wild food source"
+    - "Adaptable to various soil conditions and elevations"
+    
+  range_within_california:
+    - "Western Serviceberry native to mountains and foothills throughout California"
+    - "Saskatoon variant more common in northern coastal mountains"
+    - "Found from sea level to about 8,000 feet elevation"
+    - "Most abundant in Sierra Nevada and Klamath ranges"
+    - "Occurs in chaparral, oak woodland, mixed conifer forest, and riparian areas"
+    - "Eastern species occasionally planted in gardens and parks"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "6-25 feet typically; occasionally to 40 feet in ideal conditions"
+    growth_rate: "Slow to moderate; typically less than 1 foot per year"
+    crown_spread: "6-15 feet at maturity"
+    lifespan: "40-150 years"
+    trunk_diameter: "4-12 inches typically; occasionally larger"
+    root_system: "Moderately deep, spreading fibrous roots; somewhat drought-tolerant when established"
+    toxicity: "Non-toxic; berries are edible and nutritious"
+  
+  conservation_status:
+    status: "Native species generally secure within their ranges"
+    threats: 
+      - "Habitat loss in some areas due to development"
+      - "Climate change may affect bloom timing and pollination"
+      - "Competition from invasive plants in some habitats"
+      - "Occasional susceptibility to fire blight and other diseases"
+    protection_efforts:
+      - "Protection within national forests and parks"
+      - "Inclusion in native plant restoration projects"
+      - "Cultivation in botanic gardens for conservation"
+      - "Research on climate impacts and adaptation"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+      - "feature_id: FLOWER-COLOR-01"  # White flowers
+      - "feature_id: FRUIT-TYPE-03"  # Berries
+    confirmation_features:
+      - "feature_id: BARK-TEXT-01"  # Smooth bark
+      - "feature_id: TREE-SIZE-01"  # Small tree
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["FLOWER-COLOR-01", "TREE-SIZE-01"]  # White flowers, small tree
+      - distance: "from_nearby"
+        features_to_check: ["BARK-TEXT-01", "LEAF-EDGE-02"]  # Smooth bark, toothed leaves
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-03", "FLOWER-TIMING-01"]  # Blue berries, early bloom
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["FLOWER-COLOR-01", "FLOWER-TIMING-01"]
+        notes: "Early white flowers highly distinctive"
+      summer:
+        reliability: "High"
+        key_features: ["FRUIT-TYPE-03", "LEAF-EDGE-02"]
+        notes: "Blue-purple berries and fine-toothed leaves distinctive"
+      fall:
+        reliability: "Medium to high" 
+        key_features: ["LEAF-FALL-04", "BARK-TEXT-01"]
+        notes: "Fall color and smooth bark provide identification clues"
+      winter:
+        reliability: "Medium"
+        key_features: ["BARK-TEXT-01", "TREE-SIZE-01"]
+        notes: "Smooth gray bark and slender buds help with winter identification"
+
+  wildlife_value:
+    - "Berries eaten by many bird species, including cedar waxwings, robins, grosbeaks, and tanagers"
+    - "Early flowers provide crucial nectar for native bees and other pollinators"
+    - "Leaves support caterpillars of various butterfly and moth species"
+    - "Berries also eaten by bears, foxes, squirrels, and other mammals"
+    - "Dense branching provides nesting sites for songbirds"
+    - "Important component of diverse woodland edge habitats"
+    - "Contributes to food web stability by providing early-season resources"

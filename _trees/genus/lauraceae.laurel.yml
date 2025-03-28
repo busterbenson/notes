@@ -1,0 +1,282 @@
+genus:
+  common_name: "California Laurel"
+  scientific_name: "Umbellularia californica"
+  taxonomic_level: "genus"
+  family: "Lauraceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "Evergreen tree with aromatic lance-shaped leaves that produce a strong pungent smell when crushed. California Laurel has smooth gray bark when young that becomes darker and furrowed with age, and produces small olive-like fruits that ripen from green to purple-black."
+  
+  # Key species in this genus
+  included_species:
+    - name: "California Laurel"
+      scientific_name: "Umbellularia californica"
+      distinguishing_features: "Highly aromatic leaves with pungent smell; smooth olive-like fruits; broad habitat range"
+      california_context: "Native throughout California; also called Bay Laurel, Oregon Myrtle, or Pepperwood"
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Strongly aromatic leaves with peppery, eucalyptus-like scent when crushed; lance-shaped evergreen leaves; small yellowish flowers in clusters; olive-like fruits"
+    secondary_markers: "Medium to large tree; smooth gray bark when young, becoming darker and furrowed with age; dense shade; leaves arranged alternately"
+    seasonal_markers: "Flowers in late winter to early spring; fruits mature in fall; evergreen year-round"
+    similar_species_differentiation: "Unlike bay laurel used in cooking, has stronger scent and thicker leaves; unlike eucalyptus, has solid (not sickle-shaped) lance-shaped leaves; unlike avocado, has much stronger aromatic scent and smaller fruits"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Retains leaves year-round"
+      
+      - feature_id: "LEAF-FEAT-01"  # Aromatic leaves
+        notes: "Leaves strongly aromatic when crushed, with distinct pungent smell"
+      
+      - feature_id: "LEAF-SHAPE-03"  # Lance-shaped
+        notes: "Leaves typically lance-shaped to elliptical"
+      
+      - feature_id: "FRUIT-TYPE-03"  # Berries
+        notes: "Produces olive-like fruits (drupes) that ripen from green to purple-black"
+    
+    usually_true:
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Typically grows as a medium-sized tree"
+        exceptions: "May remain shrubby in harsh conditions; occasionally very large in ideal settings"
+      
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Often develops a single main trunk"
+        exceptions: "May develop multiple trunks, especially after disturbance or in shrubby forms"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Bark typically smooth and gray when young"
+        exceptions: "Becomes darker and furrowed with age"
+      
+      - feature_id: "LEAF-COLOR-01"  # Deep green
+        notes: "Leaves typically deep green and shiny above, lighter beneath"
+        exceptions: "May appear yellowish in poor conditions"
+    
+    sometimes_true:
+      - feature_id: "TREE-SIZE-03"  # Large tree
+        conditions: "In favorable conditions, particularly near water"
+        notes: "Can grow into a large tree in ideal settings"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        conditions: "Mature trees in open settings"
+        notes: "Often develops a dense, rounded crown when growing in the open"
+      
+      - feature_id: "HABITAT-LOC-04"  # Riparian
+        conditions: "Often in moist areas"
+        notes: "Frequently found in riparian zones and along water courses"
+      
+      - feature_id: "HABITAT-LOC-07"  # Chaparral
+        conditions: "In drier areas"
+        notes: "Also found in chaparral communities in drier settings"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all leaves seasonally"
+      
+      - feature_id: "LEAF-FORM-06"  # Compound leaves
+        notes: "Never has compound leaves, always simple"
+      
+      - feature_id: "LEAF-HANG-02"  # Vertical orientation
+        notes: "Leaves never hang vertically like eucalyptus, always at an angle from branch"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Leaves that smell like spicy mint or eucalyptus when crushed"
+    memorable_comparison: "Sniff the leaves and they'll wake you up like smelling salts! It's like a natural nasal decongestant - sometimes called 'headache tree' because the smell can be so strong."
+    touch_tip: "Gently crush a leaf between your fingers and carefully smell - the aroma is powerful and distinctive!"
+    smell_tip: "The smell is like a mix of bay leaf (used in cooking), eucalyptus, and pepper"
+    fun_fact: "California Laurel leaves are so strong-smelling that breathing them in can clear your sinuses instantly! Native Americans would use the leaves to treat headaches by crushing them and inhaling the aroma, but they'd also place leaves around stored food to keep insects away. The wood is beautiful for carving and was once called 'California Myrtle' - furniture made from it can be incredibly beautiful."
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "Pick a leaf (with permission), gently crush it, and carefully smell - does it have a very strong, spicy scent that might make you sneeze?"
+        yes_next: 2
+        no_next: "If there's no strong smell or a different aroma, it's probably not California Laurel"
+      - step: 2
+        instruction: "Look at the leaves - are they dark green, shiny, and shaped like a lance or elongated oval?"
+        yes_next: 3
+        no_next: "If leaves are a different shape or arrangement, check other evergreen trees"
+      - step: 3
+        instruction: "In fall, look for small fruits that look like tiny green or purple-black olives"
+        yes_next: "You found a California Laurel tree! Also called Bay Laurel or Pepperwood."
+        no_next: "If it's not the right season for fruits, the leaf smell is your best identification clue"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Winter"
+      visual_changes: "Remains evergreen; flower buds may form"
+      reproductive_activity: "Flower buds develop for spring bloom"
+      identification_tips: "Evergreen nature; aromatic leaves provide year-round identification"
+      kid_friendly_tip: "In winter, California Laurel stays green when many other trees lose their leaves"
+    
+    - season: "Spring"
+      visual_changes: "Small yellowish flower clusters appear; new leaf growth emerges"
+      reproductive_activity: "Flowers bloom and are pollinated by various insects"
+      identification_tips: "Small yellowish-green flowers in umbel-like clusters; fresh leaf growth"
+      kid_friendly_tip: "In spring, look for clusters of small yellowish flowers that smell sweet and attract lots of insects"
+    
+    - season: "Summer" 
+      visual_changes: "New growth matures to match older foliage; small green fruits develop"
+      reproductive_activity: "Fruits continue developing throughout summer"
+      identification_tips: "Green developing fruits; full leaf development"
+      kid_friendly_tip: "By summer, small green fruits that look like tiny olives start to grow where the flowers were"
+    
+    - season: "Fall"
+      visual_changes: "Fruits mature from green to purple-black"
+      reproductive_activity: "Seeds mature; fruits may be eaten and dispersed by birds and mammals"
+      identification_tips: "Distinctive olive-like fruits turning purple-black when ripe"
+      kid_friendly_tip: "In fall, the little 'olive' fruits turn from green to purple-black, and birds love to eat them"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Strongly aromatic leaves when crushed"
+      reliability: "Very high"
+      visibility: "Requires interaction - crushing a leaf"
+    - feature: "Lance-shaped evergreen leaves"
+      reliability: "High"
+      visibility: "Easy to observe"
+    - feature: "Olive-like fruits (when present)"
+      reliability: "High"
+      visibility: "Seasonal - only visible in late summer and fall"
+    - feature: "Smooth gray bark when young, becoming furrowed with age"
+      reliability: "Medium to high"
+      visibility: "Easy to observe"
+    
+  look_alikes:
+    - species: "Bay Laurel (Laurus nobilis)"
+      differences: "Bay Laurel has a milder culinary scent; shorter, broader leaves; smaller mature size; not native to California"
+      identification_tip: "If the leaf smell is milder and more pleasant (like cooking spices) and the tree is smaller, it's likely Bay Laurel, not California Laurel"
+    
+    - species: "Eucalyptus (Eucalyptus species)"
+      differences: "Eucalyptus has sickle-shaped leaves that hang vertically; different bark that peels in strips; different menthol-like scent; seed capsules instead of berries"
+      identification_tip: "If the leaves hang down vertically and the bark peels in strips, it's eucalyptus, not California Laurel"
+    
+    - species: "Avocado (Persea americana)"
+      differences: "Avocado has larger, less aromatic leaves; much larger fruits; typically cultivated rather than wild in California"
+      identification_tip: "If the leaves have only a mild scent when crushed and the tree produces large avocado fruits, it's an avocado tree, not California Laurel"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "California Native Tribes"
+      physical_uses:
+        - "Used leaves medicinally to treat headaches, rheumatism, and respiratory issues"
+        - "Created infusions from leaves to treat stomachaches and colds"
+        - "Placed leaves around stored food as insect repellent"
+        - "Harvested wood for bowls, spoons, and other utensils"
+        - "Used in sweat lodge ceremonies for purification"
+      symbolic_meaning:
+        - "Associated with cleansing and purification"
+        - "Featured in healing ceremonies and practices"
+        - "Represented protection against illness and negative influences"
+        - "Used in various spiritual contexts by different tribes"
+    
+    - culture: "Early California Settlers"
+      physical_uses:
+        - "Harvested the beautiful wood for furniture making"
+        - "Used leaves as local substitute for culinary bay leaf"
+        - "Created medicinal preparations similar to indigenous uses"
+        - "Utilized as shade trees around homesteads"
+        - "Planted as windbreaks and boundary markers"
+      symbolic_meaning:
+        - "Represented California's unique flora"
+        - "Valued for both practical and aesthetic qualities"
+        - "Named 'Oregon Myrtle' in northern range, reflecting regional identity"
+        - "Appreciated for its enduring nature and drought resistance"
+    
+    - culture: "Modern California"
+      physical_uses:
+        - "Highly valued wood for artisanal woodworking and turning"
+        - "Used in native plant landscapes for drought tolerance"
+        - "Limited culinary use (stronger than traditional bay leaf)"
+        - "Essential oils extracted for aromatherapy"
+        - "Planted for erosion control and habitat restoration"
+      symbolic_meaning:
+        - "Symbolizes California's native plant heritage"
+        - "Represents adaptation to Mediterranean climate"
+        - "Featured in native plant education programs"
+        - "Used as teaching example of ethnobotanical connections"
+    
+  cultural_ecological_notes:
+    - "Important component of mixed evergreen forests and oak woodlands"
+    - "Fruits provide food for various bird species and mammals"
+    - "Allelopathic properties prevent many plants from growing beneath its canopy"
+    - "Adaptable to both moist and relatively dry conditions"
+    - "Fire-adapted with ability to resprout from base after burning"
+    - "Leaves contain compounds that repel insects and have antimicrobial properties"
+    - "Plays significant role in riparian habitat structure in many areas"
+    
+  range_within_california:
+    - "Widespread throughout Coast Ranges from San Diego to Oregon border"
+    - "Found in foothills of Sierra Nevada up to about 4,000 feet elevation"
+    - "Common in mixed evergreen forests and oak woodlands"
+    - "Present in riparian corridors throughout much of its range"
+    - "Extends into chaparral communities in many areas"
+    - "Forms dense stands in some coastal canyons and north-facing slopes"
+    - "Less common in Central Valley and desert regions"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "20-60 feet typically; occasionally to 100+ feet in ideal conditions"
+    growth_rate: "Moderate; typically 1-2 feet per year when young"
+    crown_spread: "20-50 feet at maturity"
+    lifespan: "150-200+ years"
+    trunk_diameter: "1-3 feet typically; occasionally larger"
+    root_system: "Deep and wide-spreading; drought-resistant when established"
+    toxicity: "Contains volatile oils that can cause headaches in sensitive individuals; not for culinary use in same quantities as true bay leaf"
+  
+  conservation_status:
+    status: "Common and secure throughout its range"
+    threats: 
+      - "Some habitat loss due to development in parts of range"
+      - "Susceptible to Sudden Oak Death in some areas"
+      - "Climate change may affect suitable habitat range long-term"
+      - "Fire suppression altering natural regeneration patterns in some areas"
+    protection_efforts:
+      - "Protected in numerous parks and preserves"
+      - "Included in native plant restoration projects"
+      - "Research on resistance to Sudden Oak Death"
+      - "Focus of ethnobotanical education programs"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-FEAT-01"  # Aromatic leaves
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: FRUIT-TYPE-03"  # Berries
+    confirmation_features:
+      - "feature_id: LEAF-SHAPE-03"  # Lance-shaped
+      - "feature_id: BARK-TEXT-01"  # Smooth bark
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-02", "LEAF-TYPE-02"]  # Medium tree, evergreen
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SHAPE-03", "BARK-TEXT-01"]  # Lance-shaped, smooth bark
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-FEAT-01", "FRUIT-TYPE-03"]  # Aromatic leaves, berries
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-FEAT-01", "FLOWER-FEAT-01"]
+        notes: "Distinctive flowers and aromatic leaves reliable for spring ID"
+      summer:
+        reliability: "High"
+        key_features: ["LEAF-FEAT-01", "LEAF-SHAPE-03"]
+        notes: "Aromatic leaves and developing fruits"
+      fall:
+        reliability: "Very high" 
+        key_features: ["FRUIT-TYPE-03", "LEAF-FEAT-01"]
+        notes: "Mature fruits and aromatic leaves make fall ID reliable"
+      winter:
+        reliability: "Medium to high"
+        key_features: ["LEAF-TYPE-02", "LEAF-FEAT-01"]
+        notes: "Evergreen nature and aromatic leaves provide winter ID"
+
+  wildlife_value:
+    - "Fruits eaten by various bird species including band-tailed pigeons and jays"
+    - "Provides nesting sites for many bird species"
+    - "Dense evergreen canopy creates shelter and shade for wildlife"
+    - "Some insect species have adapted to feed on leaves despite chemical defenses"
+    - "Contributes to structural diversity in forest and woodland habitats"
+    - "Allelopathic properties create unique understory conditions"
+    - "Provides shelter during winter when deciduous trees are bare"

@@ -1,0 +1,286 @@
+genus:
+  common_name: "Dogwood"
+  scientific_name: "Cornus spp."
+  taxonomic_level: "genus"
+  family: "Cornaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "Small to medium-sized deciduous trees or shrubs with showy white or pink floral bracts that appear like large flower petals. Dogwoods have distinctive opposite branching, leaves with prominent parallel veins that curve to follow the leaf margin, and produce clusters of small red or blue berries."
+  
+  # Key species in this genus
+  included_species:
+    - name: "Pacific Dogwood"
+      scientific_name: "Cornus nuttallii"
+      distinguishing_features: "Native tree with large white 'flowers' (actually bracts); taller growth form"
+      california_context: "Native to northern and central California forests; state flower of British Columbia"
+    
+    - name: "Flowering Dogwood"
+      scientific_name: "Cornus florida"
+      distinguishing_features: "Eastern US native; smaller than Pacific Dogwood; often pink-tinged bracts"
+      california_context: "Commonly planted ornamental in yards and gardens"
+    
+    - name: "Red-twig Dogwood"
+      scientific_name: "Cornus sericea"
+      distinguishing_features: "Bright red stems in winter; shrubby form; grows near water"
+      california_context: "Native to riparian areas; used in restoration and water-wise landscaping"
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Opposite branching and leaves; prominent curved veins in leaves; showy white or pink 'flowers' that are actually modified leaves (bracts)"
+    secondary_markers: "Layered horizontal branching pattern; small berries in clusters; smooth to slightly ridged bark"
+    seasonal_markers: "Spring: showy white or pink bracts; Summer: green with berries forming; Fall: often reddish-purple leaf color; Winter: distinctive opposite buds on bare branches"
+    similar_species_differentiation: "Unlike maples which also have opposite branching, dogwoods have simple (not lobed) leaves with distinctive curved veins and produce berries, not winged seeds"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops leaves in fall"
+      
+      - feature_id: "BRANCH-ARRANGE-01"  # Opposite branching
+        notes: "Branches and leaves grow in opposite pairs"
+      
+      - feature_id: "LEAF-VEIN-02"  # Curved veins
+        notes: "Distinctive leaf veins that curve to follow the leaf margin"
+      
+      - feature_id: "FRUIT-TYPE-03"  # Berries
+        notes: "Produces clusters of small berries (drupes)"
+    
+    usually_true:
+      - feature_id: "FLOWER-FEAT-01"  # Showy bracts
+        notes: "Has large, petal-like white or pink bracts surrounding tiny true flowers"
+        exceptions: "Red-twig dogwood has less showy flowers; may not flower well in shade"
+      
+      - feature_id: "TREE-SIZE-01"  # Small tree
+        notes: "Typically grows as a small tree or large shrub"
+        exceptions: "Pacific Dogwood can reach medium height in ideal conditions"
+      
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        notes: "Bark relatively smooth when young"
+        exceptions: "Develops blocks or scales with age"
+      
+      - feature_id: "BRANCH-FORM-01"  # Horizontal branching
+        notes: "Branches often grow in horizontal layers"
+        exceptions: "Shrubby species like red-twig dogwood more upright and dense"
+    
+    sometimes_true:
+      - feature_id: "BARK-COLOR-03"  # Reddish branches
+        conditions: "Red-twig dogwood specifically, especially in winter"
+        notes: "Some species have bright red twigs, particularly visible in winter"
+      
+      - feature_id: "FLOWER-COLOR-03"  # Pink flowers
+        conditions: "Some cultivated varieties"
+        notes: "Some ornamental varieties have pink rather than white bracts"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        conditions: "Mature trees in open settings"
+        notes: "Often develops a rounded crown when growing as a tree"
+      
+      - feature_id: "TREE-FORM-05"  # Irregular form
+        conditions: "Understory trees or shrubby species"
+        notes: "May have irregular or multi-stemmed form in forest settings"
+    
+    never_true:
+      - feature_id: "BRANCH-ARRANGE-02"  # Alternate branching
+        notes: "Never has alternate branching pattern, always opposite"
+      
+      - feature_id: "LEAF-FORM-06"  # Compound leaves
+        notes: "Never has compound leaves, always simple"
+      
+      - feature_id: "FRUIT-TYPE-01"  # Nuts/acorns
+        notes: "Never produces nuts or acorns, only berries"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Branches that grow in pairs and large white 'flowers' that aren't really flowers"
+    memorable_comparison: "The branches grow like arms reaching out in pairs, and what look like white flower petals are actually special leaves protecting the tiny true flowers in the center"
+    touch_tip: "Feel the leaf - run your finger along the veins that curve like arches following the edge of the leaf"
+    smell_tip: "Dogwood flowers have a light, sweet fragrance in spring"
+    fun_fact: "Dogwood trees play a trick on us! What looks like their pretty white or pink flowers aren't flowers at all - they're actually modified leaves called bracts. The real flowers are tiny and clustered in the middle. Also, their name doesn't come from dogs - it comes from an old English word 'dagwood' because their hard wood was used to make daggers and skewers!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "Look at how the branches grow - do they come out from the trunk in pairs, directly opposite each other?"
+        yes_next: 2
+        no_next: "If branches alternate sides or spiral around, it's not a dogwood"
+      - step: 2
+        instruction: "Check the leaves - do they have curved lines (veins) that follow the edge of the leaf, like railroad tracks curving around a mountain?"
+        yes_next: 3
+        no_next: "If the veins go straight to the edge or the leaf is divided into leaflets, it's probably not a dogwood"
+      - step: 3
+        instruction: "In spring, look for large white or pink 'flowers' with four or more petal-like parts; in summer and fall, look for small red or blue berries in clusters"
+        yes_next: "You found a dogwood! The size and shape can help you figure out which kind."
+        no_next: "If it's not the right season to see flowers or berries, check winter twigs for opposite buds"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Showy white or pink bracts appear before or with leaves; true flowers develop in center"
+      reproductive_activity: "Pollination of small true flowers in center of bracts"
+      identification_tips: "Distinctive large white or pink bracts make spring identification easy"
+      kid_friendly_tip: "In spring, dogwoods put on a beautiful show with big white or pink 'flowers' that look like stars against the forest"
+    
+    - season: "Summer" 
+      visual_changes: "Full leaf development; green berries begin forming; bracts fall away"
+      reproductive_activity: "Berries develop from pollinated flowers"
+      identification_tips: "Opposite leaves with distinctive curved veins; developing green berries"
+      kid_friendly_tip: "By summer, the white 'petals' are gone, and small green berries start to grow where the flowers were"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn reddish-purple before dropping; berries ripen to red or blue"
+      reproductive_activity: "Berries fully mature; eaten and dispersed by birds"
+      identification_tips: "Distinctive fall color; clusters of bright red or blue berries"
+      kid_friendly_tip: "In fall, dogwood leaves turn beautiful reddish-purple colors, and their berries ripen to bright red or blue like tiny little apples"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches reveal opposite branching pattern; distinctive flower buds at branch tips"
+      reproductive_activity: "Dormant; flower buds developed for next spring"
+      identification_tips: "Opposite buds and branches; flower buds often larger and button-shaped"
+      kid_friendly_tip: "In winter, you can see how the branches grow in pairs, and at the tips are round button-like buds that will become next spring's flowers"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Opposite branching pattern"
+      reliability: "Very high"
+      visibility: "Easy to observe year-round"
+    - feature: "Leaves with curved veins following margin"
+      reliability: "High"
+      visibility: "Requires close examination of leaves when present"
+    - feature: "Large white or pink bracts in spring"
+      reliability: "Very high"
+      visibility: "Highly visible but seasonal"
+    - feature: "Red or blue berries in clusters"
+      reliability: "High"
+      visibility: "Visible in late summer and fall"
+    
+  look_alikes:
+    - species: "Maple (Acer species)"
+      differences: "Maples have lobed leaves, not simple oval ones; produce winged seeds (samaras), not berries; lack the curved leaf veins"
+      identification_tip: "If the leaves are deeply lobed (like a hand) rather than oval, and the tree produces helicopter seeds instead of berries, it's a maple, not a dogwood"
+    
+    - species: "Viburnum (Viburnum species)"
+      differences: "Viburnums have similar opposite branching but lack the distinctive curved veins; flowers grow in rounded clusters, not with large bracts"
+      identification_tip: "If the flowers grow in rounded clusters without the large white or pink bracts surrounding them, it's likely a viburnum"
+    
+    - species: "Eastern Redbud (Cercis canadensis)"
+      differences: "Redbuds have heart-shaped leaves with alternate arrangement; flowers grow directly on branches; has pod-like fruits"
+      identification_tip: "If the flowers grow directly on the trunk and branches and the leaves are heart-shaped, it's a redbud, not a dogwood"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Native American Tribes"
+      physical_uses:
+        - "Used the hard wood for tool handles and implements"
+        - "Created bows and arrows from the straight branches"
+        - "Made medicinal preparations from bark for fevers and pain"
+        - "Harvested berries as emergency food (though not preferred)"
+      symbolic_meaning:
+        - "Associated with protection and safety in some traditions"
+        - "Featured in stories about forest renewal and spring"
+        - "Considered a sign of reliable seasonal change"
+        - "Used as an indicator of proper planting time"
+    
+    - culture: "Early American Settlers"
+      physical_uses:
+        - "Harvested for furniture making and tool handles"
+        - "Used in textile industry for shuttle making"
+        - "Planted as ornamental trees around homesteads"
+        - "Made medicinal teas and preparations from bark"
+      symbolic_meaning:
+        - "Associated with spring renewal and Easter traditions"
+        - "Symbolized durability and resilience"
+        - "Featured in folklore about timing of planting crops"
+        - "Represented the beauty of native American forests"
+    
+    - culture: "Modern California"
+      physical_uses:
+        - "Widely planted as ornamental and landscape trees"
+        - "Used in native plantings for habitat restoration"
+        - "Pacific Dogwood preserved in national and state parks"
+        - "Red-twig dogwood used in erosion control projects"
+      symbolic_meaning:
+        - "Represents California's native forest understory"
+        - "Symbolizes spring and forest renewal"
+        - "Featured in habitat conservation education"
+        - "Used as teaching example of forest succession and relationships"
+    
+  cultural_ecological_notes:
+    - "Pacific Dogwood is an important understory tree in California forests"
+    - "Berries provide food for many bird species, including evening grosbeaks, thrushes, and waxwings"
+    - "Flowers support many pollinators, including native bees and butterflies"
+    - "Red-twig dogwood helps stabilize stream banks and prevent erosion"
+    - "Many dogwoods, particularly Pacific Dogwood, can be susceptible to fungal diseases"
+    - "Often indicates moist, fertile soil conditions with partial shade"
+    
+  range_within_california:
+    - "Pacific Dogwood native to northern and central California forests, particularly in the Sierra Nevada and Coast Ranges"
+    - "Red-twig dogwood native to riparian areas throughout much of California"
+    - "Flowering and Kousa dogwoods planted as ornamentals throughout the state"
+    - "Most abundant in mixed conifer forests and areas with some summer moisture"
+    - "Less common in Southern California except as planted specimens"
+    - "Red-twig dogwood extends into higher elevation riparian areas"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "15-40 feet for tree forms; 6-12 feet for shrubby species"
+    growth_rate: "Slow to moderate; typically less than 1 foot per year"
+    crown_spread: "15-30 feet at maturity for tree forms"
+    lifespan: "80-100 years"
+    trunk_diameter: "6-12 inches typically; occasionally larger"
+    root_system: "Relatively shallow, fibrous, and spreading"
+    toxicity: "Berries may cause mild digestive upset if consumed in quantity but not seriously toxic"
+  
+  conservation_status:
+    status: "Native species generally secure within range, though Pacific Dogwood faces disease challenges"
+    threats: 
+      - "Dogwood anthracnose fungal disease"
+      - "Habitat loss in some areas"
+      - "Climate change affecting suitable habitat range"
+      - "Powdery mildew and other diseases in urban settings"
+    protection_efforts:
+      - "Protection within national and state forests"
+      - "Research on disease-resistant varieties"
+      - "Inclusion in native plant restoration projects"
+      - "Cultivation of disease-resistant native genotypes"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: BRANCH-ARRANGE-01"  # Opposite branching
+      - "feature_id: LEAF-VEIN-02"  # Curved veins
+      - "feature_id: FLOWER-FEAT-01"  # Showy bracts
+    confirmation_features:
+      - "feature_id: FRUIT-TYPE-03"  # Berries
+      - "feature_id: TREE-SIZE-01"  # Small tree
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["FLOWER-FEAT-01", "TREE-SIZE-01"]  # Showy bracts, small tree
+      - distance: "from_nearby"
+        features_to_check: ["BRANCH-ARRANGE-01", "BRANCH-FORM-01"]  # Opposite branching, horizontal form
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-VEIN-02", "FRUIT-TYPE-03"]  # Curved veins, berries
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["FLOWER-FEAT-01", "BRANCH-ARRANGE-01"]
+        notes: "Showy bracts make spring identification easy and reliable"
+      summer:
+        reliability: "High"
+        key_features: ["LEAF-VEIN-02", "BRANCH-ARRANGE-01"]
+        notes: "Full leaf development allows inspection of distinctive veins"
+      fall:
+        reliability: "High" 
+        key_features: ["FRUIT-TYPE-03", "LEAF-FALL-03"]
+        notes: "Red-purple fall color with berry clusters distinctive"
+      winter:
+        reliability: "Medium"
+        key_features: ["BRANCH-ARRANGE-01", "WINTER-BUD-03"]
+        notes: "Opposite buds and distinctive button-like flower buds at tips provide winter ID"
+
+  wildlife_value:
+    - "Berries eaten by many bird species, including robins, cedar waxwings, and thrushes"
+    - "Flowers provide nectar for butterflies, bees, and other pollinators"
+    - "Dense branching creates nesting sites for many songbirds"
+    - "Leaves support various moth and butterfly caterpillars"
+    - "Provides understory structure in forest habitats"
+    - "Adds to vertical forest diversity, important for various wildlife species"

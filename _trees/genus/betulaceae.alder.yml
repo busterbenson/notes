@@ -1,0 +1,272 @@
+genus:
+  common_name: "Alder"
+  scientific_name: "Alnus spp."
+  taxonomic_level: "genus"
+  family: "Betulaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "Deciduous trees that grow near water with toothed, oval leaves and distinctive small woody cone-like seed structures that remain on the tree year-round. Alders have smooth gray bark when young that develops rectangular plates with age, and produce hanging catkins in early spring before leaves emerge."
+  
+  # Key species in this genus
+  included_species:
+    - name: "Red Alder"
+      scientific_name: "Alnus rubra"
+      distinguishing_features: "Largest native alder; bark often with white patches; leaf edges curl under slightly"
+      california_context: "Common along streams and moist areas of coastal northern California"
+    
+    - name: "White Alder"
+      scientific_name: "Alnus rhombifolia"
+      distinguishing_features: "White patches on bark; lighter green leaves; grows in larger tree form"
+      california_context: "Most widespread California alder; found along streams throughout the state"
+    
+    - name: "Arizona Alder"
+      scientific_name: "Alnus oblongifolia"
+      distinguishing_features: "Longer, narrower leaves; more southern distribution; orange-brown twigs"
+      california_context: "Found mostly in southern California mountains near year-round water"
+    
+    - name: "Green Alder"
+      scientific_name: "Alnus viridis"
+      distinguishing_features: "More shrubby growth habit; smaller leaves; typically found at higher elevations"
+      california_context: "Mountain species found in subalpine environments in northern California"
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Small woody 'cones' (actually seed structures) that stay on the tree year-round; grows near water; toothed oval leaves"
+    secondary_markers: "Smooth gray bark often with white patches; catkins in early spring; leaf buds on short stalks"
+    seasonal_markers: "Spring: early flowering with hanging catkins before leaves; Summer: full green leaf canopy; Fall: yellow-brown fall color, not particularly showy; Winter: distinctive seed 'cones' visible on bare branches"
+    similar_species_differentiation: "Distinguished from birches by the woody cone-like seed structures and less papery bark; from poplars by rounder leaves and woody seed cones rather than cottony seeds"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Drops leaves every fall"
+      
+      - feature_id: "LEAF-EDGE-02"  # Toothed
+        notes: "Leaves have toothed or serrated edges"
+      
+      - feature_id: "FRUIT-TYPE-06"  # Woody "cones"
+        notes: "Produces distinctive small woody cone-like seed structures"
+      
+      - feature_id: "HABITAT-WATER-01"  # Water-loving
+        notes: "Almost always grows near streams, rivers, lakes or in wet soil"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with one main trunk, particularly in less crowded settings"
+        exceptions: "May develop multiple trunks if damaged or in shrubby species like Green Alder"
+      
+      - feature_id: "BARK-COLOR-02"  # Gray bark
+        notes: "Bark is typically gray, often with white patches or markings"
+        exceptions: "Very old trees may develop darker bark; some seasonal variation"
+      
+      - feature_id: "LEAF-SHAPE-01"  # Oval
+        notes: "Leaves are generally oval to round in shape"
+        exceptions: "Some species like Arizona Alder have more elongated leaves"
+    
+    sometimes_true:
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees and branches"
+        notes: "Young trees and upper branches have smooth bark"
+      
+      - feature_id: "BARK-TEXT-02"  # Furrowed bark
+        conditions: "Older trees, particularly lower trunk"
+        notes: "Older trees develop rectangular plates or shallow furrows on trunk"
+      
+      - feature_id: "TREE-FORM-06"  # Shrubby form
+        conditions: "Green Alder specifically; harsh conditions for other species"
+        notes: "Some species grow as large shrubs rather than trees"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        conditions: "Red Alder and White Alder in good growing conditions"
+        notes: "Can grow into substantial medium-sized trees in favorable locations"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Never keeps leaves year-round; always drops them in fall"
+      
+      - feature_id: "LEAF-EDGE-01"  # Entire
+        notes: "Leaves never have smooth edges; always toothed"
+      
+      - feature_id: "BARK-TEXT-03"  # Peeling bark
+        notes: "Bark does not peel in papery sheets like birches"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Little woody 'cones' that stay on the tree all year, even in winter when the leaves fall off"
+    memorable_comparison: "The tiny woody 'cones' look like miniature pinecones the size of your fingertip"
+    touch_tip: "Feel the leaves - they're slightly sticky or tacky to touch"
+    smell_tip: "No strong smell, but the crushed leaves have a mild green scent"
+    fun_fact: "Alders are super helpers in nature! Their roots have special bumps with bacteria inside that can take nitrogen from the air and put it in the soil like a natural fertilizer. This helps other plants grow better around them! They're also some of the first trees to grow back after a wildfire."
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, is the tree growing near water, like a stream, lake or in a wet area?"
+        yes_next: 2
+        no_next: "Probably not an alder - they almost always grow where it's wet"
+      - step: 2
+        instruction: "Look for small woody 'cones' about the size of your fingertip on the branches. Can you find them?"
+        yes_next: 3
+        no_next: "If no 'cones' are visible but it's growing near water, check for cottonwood or willow"
+      - step: 3
+        instruction: "Check the leaves - are they oval or rounded with toothed edges (like tiny sawteeth around the edge)?"
+        yes_next: "You found an alder! Check which kind by looking at the bark and leaf shape."
+        no_next: "If leaves aren't oval with toothed edges, it might be another type of water-loving tree"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Long hanging catkins appear before leaves; new leaves unfold with reddish tint turning green"
+      reproductive_activity: "Male catkins release yellow pollen; female catkins develop into future 'cones'"
+      identification_tips: "Early hanging catkins are distinctive; look for both male (long) and female (short) types"
+      kid_friendly_tip: "In early spring, look for dangling 'caterpillar' tassels called catkins that hang down before the leaves come out"
+    
+    - season: "Summer" 
+      visual_changes: "Full canopy of green leaves; woody 'cones' from previous year may still be present alongside new developing ones"
+      reproductive_activity: "Female catkins slowly transform into woody 'cones'"
+      identification_tips: "Look for sticky young leaves and both old and new developing cone-like structures"
+      kid_friendly_tip: "In summer, the leaves are full and green, and you can see both old brown 'mini-cones' and new green ones growing"
+    
+    - season: "Fall"
+      visual_changes: "Leaves turn yellow-brown before dropping; new woody 'cones' mature and turn brown"
+      reproductive_activity: "Seed 'cones' mature but remain closed"
+      identification_tips: "Fall color not vibrant; presence of newly matured brown woody 'cones'"
+      kid_friendly_tip: "Fall is when the leaves turn yellowish-brown and drop, but the little woody 'cones' stay on the tree"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches with persistent woody 'cones'; next year's catkin buds visible"
+      reproductive_activity: "Seed 'cones' may open and release seeds; new catkins begin to elongate late winter"
+      identification_tips: "Woody 'cones' very visible on bare branches; catkin buds start to develop"
+      kid_friendly_tip: "In winter when the tree has no leaves, it's easy to spot the tiny woody 'cones' on the bare branches"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Growing near water"
+      reliability: "Very high"
+      visibility: "Easy to observe from distance"
+    - feature: "Small woody 'cones' (seed structures)"
+      reliability: "Very high"
+      visibility: "Medium - need to look at branches"
+    - feature: "Toothed oval leaves (during growing season)"
+      reliability: "High"
+      visibility: "Medium - need to see leaves"
+    - feature: "Gray bark often with white patches"
+      reliability: "Medium"
+      visibility: "Easily visible on trunk"
+    
+  look_alikes:
+    - species: "Birch (Betula species)"
+      differences: "Birches have more papery or peeling bark; catkins that fall apart when mature rather than becoming woody; less association with water"
+      identification_tip: "If the bark peels in paper-like layers and there are no woody 'cones', it's likely a birch, not an alder"
+    
+    - species: "Cottonwood/Aspen (Populus species)"
+      differences: "Cottonwoods have more triangular or heart-shaped leaves; release cottony seeds rather than woody 'cones'; have flatter leaf stems that cause leaves to flutter"
+      identification_tip: "If leaves flutter in the breeze and there are no woody 'cones', it's likely a cottonwood"
+    
+    - species: "Willow (Salix species)"
+      differences: "Willows have longer, narrower leaves; produce cottony seeds; more flexible branches; no woody 'cones'"
+      identification_tip: "If leaves are long and narrow like little canoes, and there are no woody 'cones', it's likely a willow"
+    
+  cultural_ecological_notes:
+    - "Alders improve soil by fixing nitrogen through bacteria in root nodules"
+    - "Often first tree to colonize disturbed streambanks or areas after fire"
+    - "Wood resists rot when submerged underwater"
+    - "Various native tribes used alder for food, medicine, dyes, and woodworking"
+    - "Creates cooling shade over streams, helping fish such as salmon"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Native California Tribes"
+      physical_uses:
+        - "Made red-orange dye from bark for baskets and clothing"
+        - "Carved utensils, bowls, and baby cradles from the soft wood"
+        - "Used twigs to make brushes for painting designs"
+        - "Created medicinal tea from bark to treat digestive problems and skin conditions"
+      symbolic_meaning:
+        - "Considered a healing tree because of medicinal properties"
+        - "Associated with water and river spirits in stories"
+        - "Used in coming-of-age ceremonies by some coastal tribes"
+    
+    - culture: "Pacific Northwest Tribes"
+      physical_uses:
+        - "Carved masks, spoons, and bowls from the easily worked wood"
+        - "Smoked fish and meat with alder wood for flavor"
+        - "Boiled bark to make medicine for many ailments"
+        - "Used for steam in sweat lodge ceremonies"
+      symbolic_meaning:
+        - "Represented harmony with water and riverside environments"
+        - "Featured in creation stories of some tribes"
+        - "Symbolized healing and protection"
+    
+  range_within_california:
+    - "Red Alder found mostly along northern California coast"
+    - "White Alder widespread along streams throughout lower elevations"
+    - "Arizona Alder found in southern California mountains"
+    - "Green Alder occurs at higher elevations in northern mountains"
+    - "All species strongly associated with reliable water sources"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "20-80 feet depending on species (Green Alder smaller, Red Alder largest)"
+    growth_rate: "Fast - can grow 3-4 feet per year in good conditions"
+    crown_spread: "15-30 feet at maturity"
+    lifespan: "40-100 years (relatively short-lived for trees)"
+    trunk_diameter: "1-3 feet at maturity depending on species"
+    root_system: "Shallow, spreading, with nitrogen-fixing nodules; good at stabilizing streambanks"
+    toxicity: "Not toxic to humans; leaves slightly bitter tasting"
+  
+  conservation_status:
+    status: "Most species secure; common in appropriate habitat"
+    threats: 
+      - "Stream channelization and water diversion affecting habitat"
+      - "Development in riparian areas"
+      - "Climate change causing drought and altered stream flow patterns"
+    protection_efforts:
+      - "Streamside protection zones in many areas"
+      - "Riparian restoration projects often include alder planting"
+      - "Watershed management to maintain stream flows"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: FRUIT-TYPE-06"  # Woody "cones"
+      - "feature_id: HABITAT-WATER-01"  # Water-loving
+    confirmation_features:
+      - "feature_id: LEAF-EDGE-02"  # Toothed
+      - "feature_id: BARK-COLOR-02"  # Gray bark
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["HABITAT-WATER-01", "TREE-SIZE-02"]  # Near water, medium size
+      - distance: "from_nearby"
+        features_to_check: ["BARK-COLOR-02", "FRUIT-TYPE-06"]  # Gray bark, woody cones
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-EDGE-02", "LEAF-SHAPE-01"]  # Toothed edges, oval leaves
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["FRUIT-TYPE-06", "FLOWER-TYPE-04"]  # Woody cones, catkins
+        notes: "Distinctive catkins in early spring make identification easy"
+      summer:
+        reliability: "Medium"
+        key_features: ["LEAF-EDGE-02", "HABITAT-WATER-01"]
+        notes: "Full leaf development; proximity to water helps identification"
+      fall:
+        reliability: "Medium" 
+        key_features: ["FRUIT-TYPE-06", "LEAF-FALL-01"]
+        notes: "Yellow-brown fall color not distinctive but woody cones remain visible"
+      winter:
+        reliability: "High"
+        key_features: ["FRUIT-TYPE-06", "HABITAT-WATER-01"]
+        notes: "Woody cones very visible on bare branches"
+    misidentification_risks: 
+      - "May be confused with birch due to similar leaves and gray bark"
+      - "Young willows sometimes confused with alders in streamside settings"
+      - "Different alder species can be difficult to distinguish from each other"
+
+  wildlife_value:
+    - "Seeds eaten by songbirds like pine siskins, redpolls, and goldfinches"
+    - "Provides nesting sites for many riparian bird species"
+    - "Creates shade that cools stream water for fish like salmon and trout"
+    - "Leaves break down quickly in streams, providing food for aquatic insects"
+    - "Fallen trees in streams create important habitat structures for fish"
+    - "Nitrogen-fixing ability improves soil for other plants in the ecosystem"

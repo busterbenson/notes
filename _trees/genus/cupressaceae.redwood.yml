@@ -1,0 +1,271 @@
+genus:
+  common_name: "Redwood"
+  scientific_name: "Sequoia spp. and related genera"
+  taxonomic_level: "genus"
+  family: "Cupressaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "Extremely tall evergreen trees with fibrous, reddish-brown bark and soft, flat needles or small scale-like leaves. Redwoods include some of the tallest and largest trees on Earth, with distinctive cone shapes, fire-resistant bark, and the ability to grow for thousands of years."
+  
+  # Key species in this genus
+  included_species:
+    - name: "Coast Redwood"
+      scientific_name: "Sequoia sempervirens"
+      distinguishing_features: "Tallest tree species; flat, fern-like needle arrangement; grows in foggy coastal zones"
+      california_context: "Native to a narrow band along California's northern and central coast; needs fog moisture"
+    
+    - name: "Giant Sequoia"
+      scientific_name: "Sequoiadendron giganteum"
+      distinguishing_features: "Massive trunk diameter; scale-like leaves pressed against stems; largest tree by volume"
+      california_context: "Native to scattered groves in the Sierra Nevada mountains; needs snowy winters"
+    
+    - name: "Dawn Redwood"
+      scientific_name: "Metasequoia glyptostroboides"
+      distinguishing_features: "Deciduous unlike other redwoods; feathery appearance; needles in flat sprays"
+      california_context: "Not native to California but planted in parks and gardens; originally from China"
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Extremely tall stature (Coast Redwood, Giant Sequoia); fibrous, reddish-brown bark; conical shape in young trees"
+    secondary_markers: "Soft, flat needles or small scale-like leaves; rounded or barrel-shaped seed cones"
+    seasonal_markers: "Minimal seasonal change for Coast Redwood and Giant Sequoia (evergreen); Dawn Redwood changes from green to orange-brown before dropping needles in fall"
+    similar_species_differentiation: "Taller and more massive than other conifers; redder, more fibrous bark than most pines, firs or cedars; Coast Redwood has flat needle sprays, Giant Sequoia has tiny scale-like leaves"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "BARK-COLOR-03"  # Reddish-brown bark
+        notes: "Distinctively red-brown fibrous bark on all species"
+      
+      - feature_id: "BARK-TEXT-03"  # Fibrous bark
+        notes: "Thick, fibrous, almost spongy bark texture"
+      
+      - feature_id: "TREE-SIZE-03"  # Very tall potential
+        notes: "All can grow extremely tall, especially Coast Redwood and Giant Sequoia"
+      
+      - feature_id: "ECO-ADAPT-02"  # Fire adaptation
+        notes: "Thick bark provides fire resistance in all species"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually grows with one massive trunk, particularly Coast Redwood and Giant Sequoia"
+        exceptions: "Coast Redwood may grow in fairy rings (circles) from one original tree; sometimes multiple trunks after damage"
+      
+      - feature_id: "TREE-FORM-01"  # Conical form
+        notes: "Young to middle-aged trees have conical (triangle) shape"
+        exceptions: "Very old trees often have more irregular crowns with flat tops; Dawn Redwood more broadly conical"
+      
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Coast Redwood and Giant Sequoia keep their foliage year-round"
+        exceptions: "Dawn Redwood is deciduous, losing all needles in fall"
+    
+    sometimes_true:
+      - feature_id: "LEAF-FORM-01"  # Needle-like leaves
+        conditions: "Coast Redwood and Dawn Redwood"
+        notes: "Soft, flat needles arranged in flat sprays"
+      
+      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
+        conditions: "Giant Sequoia"
+        notes: "Tiny, pointed scale-like leaves that hug the stem"
+      
+      - feature_id: "GROWTH-HABIT-01"  # Clonal sprouting
+        conditions: "Coast Redwood particularly"
+        notes: "Can sprout new trees from roots, creating family circles"
+      
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        conditions: "Dawn Redwood only"
+        notes: "Dawn Redwood drops all needles in fall unlike other redwoods"
+      
+      - feature_id: "LEAF-FALL-03"  # Orange-brown fall color
+        conditions: "Dawn Redwood only"
+        notes: "Dawn Redwood turns orange-brown before losing needles in fall"
+    
+    never_true:
+      - feature_id: "LEAF-COMPLEX-02"  # Compound leaves
+        notes: "Never have compound leaves, only simple needles or scales"
+      
+      - feature_id: "TREE-SIZE-01"  # Small tree
+        notes: "Never remain small at maturity; all become large trees"
+      
+      - feature_id: "FLOWER-SIZE-01"  # Showy flowers
+        notes: "Never produce showy flowers, only inconspicuous pollen and seed cones"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Super tall trees with soft, reddish-brown bark that feels spongy"
+    memorable_comparison: "The bark is like a soft, spongy puzzle made of reddish-brown pieces; Coast Redwood can grow taller than a 30-story building!"
+    touch_tip: "Touch the bark gently - it feels soft and stringy, almost like the material stuffed inside pillows"
+    smell_tip: "Smell the bark if you can reach it - it has a sweet, woody scent"
+    fun_fact: "Redwoods are some of the oldest living things on Earth! Some Giant Sequoias were already growing when the ancient Egyptians built the pyramids more than 4,000 years ago. They can live so long because their thick, spongy bark protects them from fire and bugs!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, check the size - is it an extremely tall tree with a thick trunk?"
+        yes_next: 2
+        no_next: "If it's a smaller tree, it might be young or another type of conifer"
+      - step: 2
+        instruction: "Look at the bark - is it reddish-brown and soft-looking, almost spongy with long fibers?"
+        yes_next: 3
+        no_next: "If the bark is gray, smooth, or has hard plates, it's probably another type of tree"
+      - step: 3
+        instruction: "Check the leaves - Coast Redwood has flat needle sprays like ferns, Giant Sequoia has tiny scale-like leaves, and Dawn Redwood has feathery needles that drop in fall"
+        yes_next: "You found a redwood! Check which type based on the leaf shape and where it's growing"
+        no_next: "If the needles grow singly, in bundles, or look different than described, check other conifer types"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New growth emerges at branch tips, lighter green than older foliage; Coast Redwood and Giant Sequoia remain evergreen; Dawn Redwood leafs out with bright green needles"
+      reproductive_activity: "Pollen released from tiny male cones; female cones begin developing"
+      identification_tips: "Look for contrast between new light green growth and darker older foliage; pollen may dust surfaces below trees"
+      kid_friendly_tip: "In spring, look for bright green new growth at the branch tips - it looks fresh and soft compared to the older needles"
+    
+    - season: "Summer" 
+      visual_changes: "Full foliage development; consistent green color; some cones visible"
+      reproductive_activity: "Seed cones continue developing but remain closed"
+      identification_tips: "Look for the distinctive silhouette and full foliage; cones becoming more visible"
+      kid_friendly_tip: "Summer is when redwoods create their own weather - they catch fog in their branches and drip water to the ground like rain!"
+    
+    - season: "Fall"
+      visual_changes: "Coast Redwood and Giant Sequoia show minimal change; Dawn Redwood turns orange-brown before dropping needles"
+      reproductive_activity: "Seed cones mature and may begin to open"
+      identification_tips: "Dawn Redwood's fall color distinguishes it from other redwoods; mature cones visible"
+      kid_friendly_tip: "In fall, Coast Redwood and Giant Sequoia stay green, but Dawn Redwood turns orange-brown like a sunset before dropping its needles"
+    
+    - season: "Winter"
+      visual_changes: "Coast Redwood and Giant Sequoia remain green; Dawn Redwood loses all needles showing bare branches"
+      reproductive_activity: "Seed cones may release seeds during winter months"
+      identification_tips: "Evergreen nature makes Coast Redwood and Giant Sequoia stand out; Dawn Redwood is bare"
+      kid_friendly_tip: "In winter, Coast Redwood and Giant Sequoia keep their green leaves, but Dawn Redwood loses all its needles and takes a nap until spring"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Extremely tall with thick trunk"
+      reliability: "High for mature trees"
+      visibility: "Easily visible from distance"
+    - feature: "Reddish-brown, fibrous bark"
+      reliability: "Very high"
+      visibility: "Visible from nearby"
+    - feature: "Distinctive foliage type (flat sprays or scale-like)"
+      reliability: "High"
+      visibility: "Need to see branches up close"
+    - feature: "Rounded or barrel-shaped cones (if present)"
+      reliability: "High"
+      visibility: "May need to find fallen cones on ground"
+    
+  look_alikes:
+    - species: "Incense Cedar (Calocedrus decurrens)"
+      differences: "Smaller size; flattened scale-like foliage in fan shapes; more column-like form; different cone shape"
+      identification_tip: "Incense Cedar has overlapping scales in flat sprays and a strong incense smell when crushed"
+    
+    - species: "Western Redcedar (Thuja plicata)"
+      differences: "Smaller size; scale-like leaves in flat fan patterns; different bark texture; different cone shape"
+      identification_tip: "Western Redcedar has flat fan-like branchlets and a distinctive pineapple-cedar smell when crushed"
+    
+    - species: "Douglas-fir (Pseudotsuga menziesii)"
+      differences: "Smaller size; individual soft needles growing singly around twig; different bark; cones with distinctive 'mouse tail' bracts"
+      identification_tip: "Douglas-fir has soft individual needles and cones with three-pronged bracts sticking out like mouse tails"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Native California Tribes"
+      physical_uses:
+        - "Built houses, canoes, and tools from the split wood"
+        - "Used the bark fiber for making clothing and rope"
+        - "Created baskets from the roots and wood splints"
+        - "Extracted medicine from the bark and leaves"
+      symbolic_meaning:
+        - "Viewed as sacred beings that connected the earth to the sky"
+        - "Considered the elders of the forest because of their great age"
+        - "Featured in origin stories as steadfast protectors"
+        - "Used groves as meeting places for important gatherings"
+    
+    - culture: "Modern California"
+      physical_uses:
+        - "Harvested for decay-resistant lumber for outdoor building"
+        - "Created parks and reserves to protect remaining old-growth"
+        - "Planted as living climate change research subjects"
+        - "Protected watersheds with intact redwood forests"
+      symbolic_meaning:
+        - "Symbol of California's natural heritage and conservation values"
+        - "Represents resilience and long-term perspective"
+        - "Featured on state flag, license plates, and tourist materials"
+        - "Serves as icon for environmental protection movements"
+    
+  cultural_ecological_notes:
+    - "Coast Redwood forests create their own microclimate by capturing fog moisture"
+    - "Giant Sequoia requires periodic fire to reproduce successfully"
+    - "Redwoods have outlived ancient civilizations and witnessed thousands of years of history"
+    - "Ancient trees can weigh as much as 1,000 tons and contain enough wood to build dozens of houses"
+    - "Despite their great height, redwoods have surprisingly shallow root systems that spread widely"
+    
+  range_within_california:
+    - "Coast Redwood native to foggy coastal belt from Big Sur to Oregon border"
+    - "Giant Sequoia limited to about 75 groves on western slope of Sierra Nevada"
+    - "Dawn Redwood not native but planted in parks and gardens throughout the state"
+    - "Each species requires specific conditions - Coast Redwood needs fog, Giant Sequoia needs mountain conditions"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "Coast Redwood up to 380 feet; Giant Sequoia up to 310 feet; Dawn Redwood up to 120 feet"
+    growth_rate: "Moderate to fast depending on conditions; can grow 3-5 feet per year when young"
+    crown_spread: "40-60 feet at maturity for Coast Redwood and Dawn Redwood; up to 100 feet for Giant Sequoia"
+    lifespan: "Coast Redwood and Giant Sequoia 2,000-3,500+ years; Dawn Redwood 600+ years"
+    trunk_diameter: "Coast Redwood up to 22 feet; Giant Sequoia up to 30 feet; Dawn Redwood up to 7 feet"
+    root_system: "Surprisingly shallow but wide-spreading; no taproot; roots may extend 100+ feet from trunk"
+    toxicity: "Not toxic to humans or animals"
+  
+  conservation_status:
+    status: "Coast Redwood and Giant Sequoia: Endangered (IUCN); Dawn Redwood: Endangered in the wild"
+    threats: 
+      - "Historic logging has removed 95% of old-growth redwood forests"
+      - "Climate change affecting fog patterns for Coast Redwood"
+      - "High-severity wildfires threatening Giant Sequoia groves"
+      - "Limited natural range makes them vulnerable to environmental changes"
+    protection_efforts:
+      - "Extensive park system protecting remaining old-growth"
+      - "Reforestation efforts in logged areas"
+      - "Fire management in Giant Sequoia groves"
+      - "Scientific research on climate adaptation"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: TREE-SIZE-03"  # Very tall
+      - "feature_id: BARK-COLOR-03"  # Reddish-brown bark
+      - "feature_id: BARK-TEXT-03"  # Fibrous bark
+    confirmation_features:
+      - "feature_id: LEAF-FORM-01"  # Needle-like leaves for Coast Redwood and Dawn Redwood
+      - "feature_id: LEAF-FORM-05"  # Scale-like leaves for Giant Sequoia
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-03", "TREE-FORM-01"]  # Very tall, conical form
+      - distance: "from_nearby"
+        features_to_check: ["BARK-COLOR-03", "BARK-TEXT-03"]  # Reddish-brown, fibrous bark
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-FORM-01", "LEAF-FORM-05"]  # Needle arrangement or scale type
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["TREE-SIZE-03", "BARK-TEXT-03"]
+        notes: "New growth contrasts with older foliage"
+      summer:
+        reliability: "Very high"
+        key_features: ["TREE-SIZE-03", "BARK-COLOR-03", "LEAF-FORM-01"]
+        notes: "Full foliage development makes identification easiest"
+      fall:
+        reliability: "High" 
+        key_features: ["BARK-TEXT-03", "LEAF-FORM-01"]
+        notes: "Dawn Redwood's fall color distinguishes it from others"
+      winter:
+        reliability: "Medium"
+        key_features: ["TREE-SIZE-03", "BARK-TEXT-03"]
+        notes: "Coast Redwood and Giant Sequoia remain evergreen; Dawn Redwood is bare"
+
+  wildlife_value:
+    - "Old-growth redwoods provide crucial habitat for endangered species like marbled murrelet and spotted owl"
+    - "Thick canopies create cool, moist forest floor habitat for salamanders and other amphibians"
+    - "Fallen logs in streams create essential habitat for salmon and steelhead"
+    - "Fire scars and hollows in older trees create dens for various mammals"
+    - "Redwood forests support complex food webs and incredible biodiversity"
+    - "Some birds like warblers and kinglets specialize in feeding in the high canopy"

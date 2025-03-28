@@ -1,0 +1,283 @@
+genus:
+  common_name: "Buckeye"
+  scientific_name: "Aesculus spp."
+  taxonomic_level: "genus"
+  family: "Sapindaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "Deciduous trees or large shrubs with distinctive palm-shaped compound leaves having 5-7 leaflets arranged like fingers on a hand. Buckeyes produce showy upright clusters of flowers and distinctive smooth, round fruits with shiny brown seeds that resemble deer eyes (hence the name 'buckeye')."
+  
+  # Key species in this genus
+  included_species:
+    - name: "California Buckeye"
+      scientific_name: "Aesculus californica"
+      distinguishing_features: "Gray bark; creamy white flower clusters; leaves drop in summer during drought; native"
+      california_context: "California native found in foothills and valleys; adapted to summer drought"
+    
+    - name: "Ohio Buckeye"
+      scientific_name: "Aesculus glabra"
+      distinguishing_features: "Yellowish-green flowers; leaves with toothed margins; retains leaves through summer"
+      california_context: "Occasionally planted as ornamental; not native to California"
+    
+    - name: "Horse Chestnut"
+      scientific_name: "Aesculus hippocastanum"
+      distinguishing_features: "White flowers with yellow and pink markings; large sticky winter buds; larger fruits"
+      california_context: "Non-native ornamental planted in parks and gardens; related to true buckeyes"
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Palmate compound leaves with 5-7 leaflets radiating from a central point; showy upright flower clusters; distinctive round fruits with glossy brown seeds"
+    secondary_markers: "Opposite branching pattern; large, sticky winter buds; gray to brown bark"
+    seasonal_markers: "Spring: showy flower display; Summer: full leaf development (California Buckeye may drop leaves in drought); Fall: distinctive round fruits; Winter: large, prominent buds"
+    similar_species_differentiation: "Unlike maples, has compound leaves with leaflets radiating from a single point; unlike horse chestnuts, California Buckeye has white flowers without yellow markings and drops leaves in summer"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-FORM-06"  # Compound leaves
+        notes: "Has palmately compound leaves with 5-7 leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Palmate arrangement
+        notes: "Leaflets radiate from a central point like fingers on a hand"
+      
+      - feature_id: "BRANCH-ARRANGE-01"  # Opposite branching
+        notes: "Branches and buds grow in opposite pairs"
+      
+      - feature_id: "FRUIT-TYPE-01"  # Capsule fruits
+        notes: "Produces round, leathery capsule fruits containing large seeds"
+      
+      - feature_id: "TOXICITY-01"  # Toxic
+        notes: "Seeds, leaves, and other parts contain toxic compounds; should not be eaten"
+    
+    usually_true:
+      - feature_id: "TREE-SIZE-01"  # Small tree
+        notes: "Typically grows as a small tree or large shrub"
+        exceptions: "Horse chestnut can grow larger; some buckeyes may remain shrubby in harsh conditions"
+      
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Often develops a single main trunk"
+        exceptions: "May grow with multiple trunks, especially in shrubby forms"
+      
+      - feature_id: "FLOWER-POS-01"  # Upright flowers
+        notes: "Flower clusters stand upright at branch tips"
+        exceptions: "Some flower clusters may droop slightly when fully developed"
+    
+    sometimes_true:
+      - feature_id: "SUMMER-DECID-01"  # Summer deciduous
+        conditions: "California Buckeye specifically in dry conditions"
+        notes: "California Buckeye often drops leaves in summer as drought adaptation"
+      
+      - feature_id: "FLOWER-COLOR-01"  # White flowers
+        conditions: "California Buckeye and Horse Chestnut"
+        notes: "Several species have white or creamy-white flowers"
+      
+      - feature_id: "FLOWER-COLOR-02"  # Yellow-green flowers
+        conditions: "Ohio Buckeye and some other species"
+        notes: "Some species have yellowish-green flowers"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        conditions: "Mature trees in open settings"
+        notes: "Often develops a rounded crown when growing in the open"
+    
+    never_true:
+      - feature_id: "LEAF-FORM-01"  # Simple leaves
+        notes: "Never has simple leaves, always compound with multiple leaflets"
+      
+      - feature_id: "LEAF-ARRANGE-03"  # Pinnate arrangement
+        notes: "Leaflets never arranged along a central stem (pinnate); always radiating from a central point (palmate)"
+      
+      - feature_id: "BRANCH-ARRANGE-02"  # Alternate branching
+        notes: "Never has alternate branching pattern, always opposite"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Hand-shaped leaves with 5-7 'finger' leaflets and shiny brown seeds in round cases"
+    memorable_comparison: "The leaves look like a hand with 5-7 fingers spreading out from the palm, and the seeds look like the shiny brown eyes of a deer (that's why they're called 'buckeyes'!)"
+    touch_tip: "Feel the smooth, round fruit and the shiny seed inside (but remember not to eat it - buckeye seeds are poisonous!)"
+    smell_tip: "The flowers have a sweet, pleasant fragrance in spring"
+    fun_fact: "California Buckeye trees do something strange - they often drop their leaves in the middle of summer while other trees are still green! This helps them save water during California's dry summers. Native Americans found creative ways to use buckeye seeds - they would grind them up, leach out the poisons, and then use them for food. They also used crushed buckeye seeds to stun fish in small streams, making them easier to catch!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "Look at the leaves - do they have 5-7 'finger' leaflets spreading out from a central point, like a hand?"
+        yes_next: 2
+        no_next: "If leaves are simple (one piece) or have leaflets arranged along a stem, it's not a buckeye"
+      - step: 2
+        instruction: "Check how the branches grow - do they grow in pairs opposite each other, not alternating sides?"
+        yes_next: 3
+        no_next: "If branches alternate sides, it's not a buckeye - check maple or other trees"
+      - step: 3
+        instruction: "Look for round fruits with shiny brown seeds inside (in summer and fall), or clusters of white or yellowish flowers (in spring)"
+        yes_next: "You found a buckeye! If it drops leaves in summer, it's likely California Buckeye."
+        no_next: "If none of these features are present, check the season or look at other trees"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Leaves emerge; showy flower clusters bloom at branch tips"
+      reproductive_activity: "Clusters of white or yellowish flowers attract pollinators, especially hummingbirds"
+      identification_tips: "Distinctive upright flower clusters; fresh palmate leaves"
+      kid_friendly_tip: "In spring, buckeyes put on a beautiful flower show with clusters that look like candles standing up at the ends of branches"
+    
+    - season: "Summer" 
+      visual_changes: "Full leaf development; California Buckeye may drop leaves in drought; fruits begin developing"
+      reproductive_activity: "Fruits grow larger; pollinated flowers develop into green capsules"
+      identification_tips: "Summer leaf drop in California Buckeye is distinctive; developing green fruits"
+      kid_friendly_tip: "By summer, you can see the green round fruits growing, and California Buckeye might surprise you by dropping its leaves while other trees are still green"
+    
+    - season: "Fall"
+      visual_changes: "Fruits mature and open to reveal shiny brown seeds; leaves turn yellow before dropping (if not already dropped in summer)"
+      reproductive_activity: "Fruits split open; seeds drop to the ground"
+      identification_tips: "Distinctive round fruits with glossy brown seeds highly visible"
+      kid_friendly_tip: "In fall, the round fruit cases split open to show the shiny brown 'buckeye' seeds that look like deer eyes"
+    
+    - season: "Winter"
+      visual_changes: "Bare branches with large, sticky buds; distinctive opposite branching pattern visible"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Large, sticky winter buds; opposite branching pattern"
+      kid_friendly_tip: "In winter, look for the big, sticky buds at the ends of branches - they're getting ready for next spring's leaves and flowers"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Palmate compound leaves with 5-7 leaflets"
+      reliability: "Very high"
+      visibility: "Easy when leaves present"
+    - feature: "Opposite branching pattern"
+      reliability: "High"
+      visibility: "Medium - need to check branch arrangement"
+    - feature: "Round fruits with shiny brown seeds"
+      reliability: "Very high"
+      visibility: "Seasonal - only visible in late summer and fall"
+    - feature: "Showy upright flower clusters"
+      reliability: "High"
+      visibility: "Seasonal - only visible in spring"
+    
+  look_alikes:
+    - species: "Maple (Acer species)"
+      differences: "Maples have simple (not compound) leaves with similar palmate shape; produce winged seeds (samaras), not round capsules"
+      identification_tip: "If the leaves are single pieces (not divided into separate leaflets) and the tree produces helicopter-like winged seeds, it's a maple, not a buckeye"
+    
+    - species: "Poison Ivy (Toxicodendron radicans)"
+      differences: "Poison ivy has three leaflets, not 5-7; is a vine or shrub, not a tree; produces whitish berries, not large capsules"
+      identification_tip: "Buckeyes always have 5 or more leaflets, never just three, and grow as trees or large shrubs"
+    
+    - species: "Sweet Chestnut (Castanea species)"
+      differences: "Sweet chestnuts have simple, toothed leaves arranged alternately; spiny (not smooth) fruit husks; multiple smaller seeds"
+      identification_tip: "If the fruit has spines like a sea urchin and the leaves are single-bladed with toothed edges, it's a chestnut, not a buckeye"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Native California Tribes"
+      physical_uses:
+        - "Processed seeds as food after leaching out toxins"
+        - "Made soap from bark and seeds"
+        - "Used crushed seeds to stun fish in small streams for easier harvesting"
+        - "Created tools and utensils from the wood"
+        - "Made baskets incorporating buckeye shoots"
+      symbolic_meaning:
+        - "Represented adaptation to difficult conditions"
+        - "Featured in stories about resourcefulness and survival"
+        - "Valued for multiple uses despite toxic properties"
+        - "Associated with renewal due to its dramatic seasonal cycle"
+    
+    - culture: "Early California Settlers"
+      physical_uses:
+        - "Valued as shade trees in hot climates"
+        - "Used fallen branches for firewood"
+        - "Seeds sometimes carried as good luck charms"
+        - "Occasionally used for simple woodworking projects"
+      symbolic_meaning:
+        - "Considered a signature California tree"
+        - "Admired for beautiful spring displays and unusual summer dormancy"
+        - "Represented California's unique seasonal patterns"
+    
+    - culture: "Modern California"
+      physical_uses:
+        - "Planted as drought-adapted native landscape trees"
+        - "Featured in native plant restoration projects"
+        - "Seeds studied for potential medicinal compounds"
+        - "Used in native habitat gardens to support wildlife"
+      symbolic_meaning:
+        - "Symbolizes California's native plant heritage"
+        - "Represents drought adaptation and environmental resilience"
+        - "Featured in native plant education programs"
+        - "Celebrated for supporting native pollinators"
+    
+  cultural_ecological_notes:
+    - "California Buckeye is adapted to California's Mediterranean climate with summer drought"
+    - "Summer leaf drop is a drought-avoidance strategy that conserves water"
+    - "Flowers are important nectar sources for native butterflies, bees, and hummingbirds"
+    - "Seeds contain toxic compounds that can be harmful to honeybees when pollen and nectar options are limited"
+    - "Seeds are toxic to humans and many animals, but squirrels and some other wildlife can eat them"
+    - "Often grows along seasonal streams and in woodland edges throughout foothill regions"
+    
+  range_within_california:
+    - "California Buckeye is endemic to California, found in the Coast Ranges, Sierra foothills, and Central Valley"
+    - "Most abundant in oak woodland and chaparral habitats below 4,000 feet elevation"
+    - "Often grows along seasonal creeks and on north-facing slopes"
+    - "Absent from high mountains and desert regions"
+    - "Horse Chestnut and other non-native buckeyes are occasionally planted in parks and landscapes"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "15-40 feet typically; occasionally to 60 feet"
+    growth_rate: "Moderate; typically 1-2 feet per year when young"
+    crown_spread: "20-40 feet at maturity"
+    lifespan: "60-150 years"
+    trunk_diameter: "1-2 feet typically; occasionally larger"
+    root_system: "Deep taproot with spreading lateral roots; drought-adapted"
+    toxicity: "All parts toxic, especially seeds; contains glycosides including aesculin and saponins"
+  
+  conservation_status:
+    status: "California Buckeye is common within its range; not threatened"
+    threats: 
+      - "Some habitat loss due to development in foothill regions"
+      - "Climate change may affect suitable habitat range"
+      - "Occasionally affected by fungal pathogens in wet years"
+    protection_efforts:
+      - "Protected in numerous parks and reserves"
+      - "Increasing use in native plant landscaping"
+      - "Included in restoration of oak woodland habitats"
+      - "Research into drought adaptation mechanisms"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-FORM-06"  # Compound leaves
+      - "feature_id: LEAF-ARRANGE-02"  # Palmate arrangement
+      - "feature_id: BRANCH-ARRANGE-01"  # Opposite branching
+    confirmation_features:
+      - "feature_id: FRUIT-TYPE-01"  # Capsule fruits
+      - "feature_id: FLOWER-POS-01"  # Upright flowers
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-01", "SUMMER-DECID-01"]  # Small tree, summer deciduous (CA Buckeye)
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-ARRANGE-02", "BRANCH-ARRANGE-01"]  # Palmate arrangement, opposite branching
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-01", "TOXICITY-01"]  # Capsule fruits, toxic
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["FLOWER-POS-01", "LEAF-ARRANGE-02"]
+        notes: "Showy flower clusters and fresh palmate leaves distinctive"
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-FORM-06", "SUMMER-DECID-01"]
+        notes: "Summer leaf drop in California Buckeye is highly distinctive"
+      fall:
+        reliability: "Very high"
+        key_features: ["FRUIT-TYPE-01", "LEAF-ARRANGE-02"]
+        notes: "Distinctive fruits with shiny brown seeds highly visible"
+      winter:
+        reliability: "Medium"
+        key_features: ["BRANCH-ARRANGE-01", "WINTER-BUD-01"]
+        notes: "Opposite branching and large sticky buds provide winter ID clues"
+
+  wildlife_value:
+    - "Flowers provide important nectar for hummingbirds, butterflies, and native bees"
+    - "Seeds eaten by some squirrels and other rodents despite toxicity"
+    - "Dense canopy provides nesting sites for birds"
+    - "Contributes to diversity in oak woodland ecosystems"
+    - "Can be toxic to honeybees when they collect pollen and nectar exclusively from buckeye"
+    - "Provides habitat for various insects that serve as food for birds"

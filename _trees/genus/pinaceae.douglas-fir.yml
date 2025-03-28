@@ -1,0 +1,221 @@
+genus:
+  common_name: "Douglas-fir"
+  scientific_name: "Pseudotsuga spp."
+  taxonomic_level: "genus"
+  family: "Pinaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "Tall evergreen trees with distinctive cones that have unique three-pronged bracts sticking out between scales. Douglas-firs have soft, flat needles growing singly all around the twig and bark that develops deep furrows with age."
+  
+  # Key species in this genus
+  included_species:
+    - name: "Coast Douglas-fir"
+      scientific_name: "Pseudotsuga menziesii var. menziesii"
+      distinguishing_features: "Taller with faster growth; greener needles; grows in coastal areas with more rain"
+      california_context: "Native to coastal mountains and northern California; can grow to massive sizes"
+    
+    - name: "Rocky Mountain Douglas-fir"
+      scientific_name: "Pseudotsuga menziesii var. glauca"
+      distinguishing_features: "Shorter with slower growth; more blue-gray needles; more drought and cold tolerant"
+      california_context: "Found in drier mountain areas of eastern California; more compact form"
+    
+    - name: "Bigcone Douglas-fir"
+      scientific_name: "Pseudotsuga macrocarpa"
+      distinguishing_features: "Produces much larger cones; more drought-tolerant; grayish needles"
+      california_context: "Native only to southern California mountains; more limited range"
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Soft, flat needles growing singly around the twig; distinctive cones with three-pronged bracts sticking out"
+    secondary_markers: "Thick, deeply furrowed bark on mature trees; straight trunk with pyramid-shaped crown"
+    seasonal_markers: "Spring: new bright green growth; Summer: consistent deep green; Fall: no color change; Winter: remains evergreen"
+    similar_species_differentiation: "Unlike true firs, has cones that hang down with visible three-pointed bracts; unlike spruce, has soft flat needles not sharp square ones"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps needles year-round"
+      
+      - feature_id: "LEAF-FORM-01"  # Needle-like leaves
+        notes: "Has soft, flat needles"
+      
+      - feature_id: "LEAF-ARRANGE-02"  # Single needles
+        notes: "Needles grow singly (not in clusters) around the branch"
+      
+      - feature_id: "CONE-ATTACH-02"  # Hanging cones
+        notes: "Cones hang down from branches"
+      
+      - feature_id: "CONE-FEAT-01"  # Distinctive cone features
+        notes: "Three-pronged bracts stick out between cone scales like mouse tails"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Grows with a straight, single trunk"
+        exceptions: "May occasionally have double leaders if the top was damaged"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal
+        notes: "Grows in a pyramid or Christmas tree shape"
+        exceptions: "Very old trees may develop a more irregular crown; trees in dense forests may have smaller crowns"
+      
+      - feature_id: "TREE-SIZE-03"  # Large tree
+        notes: "Grows into a tall tree with substantial size"
+        exceptions: "Bigcone Douglas-fir and Rocky Mountain variety may be smaller in poor conditions"
+    
+    sometimes_true:
+      - feature_id: "BARK-TEXT-01"  # Smooth bark
+        conditions: "Young trees before bark develops texture"
+        notes: "Young trees have smooth gray-brown bark with resin blisters"
+      
+      - feature_id: "BARK-TEXT-04"  # Deeply furrowed bark
+        conditions: "Mature trees"
+        notes: "Older trees develop thick, deeply furrowed, cork-like bark"
+      
+      - feature_id: "LEAF-COLOR-03"  # Blue-green color
+        conditions: "Rocky Mountain Douglas-fir and sometimes Bigcone Douglas-fir"
+        notes: "Some varieties have blue-gray or gray-green needles"
+      
+      - feature_id: "CONE-SIZE-03"  # Large cones
+        conditions: "Bigcone Douglas-fir specifically"
+        notes: "Bigcone Douglas-fir has much larger cones than other varieties"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all needles seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-03"  # Needles in clusters
+        notes: "Needles never grow in bundles or clusters like pines"
+      
+      - feature_id: "CONE-ATTACH-01"  # Upright cones
+        notes: "Cones always hang down, never stand upright like true firs"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Cones with little 'mouse tails' sticking out between the scales"
+    memorable_comparison: "The cones look like they have tiny mice trying to hide inside, with just their tails sticking out!"
+    touch_tip: "Touch the needles - they're soft and flat, not prickly like spruce trees"
+    smell_tip: "Crush a needle gently to smell a sweet citrus scent, like lemons and oranges mixed together"
+    fun_fact: "Douglas-firs aren't true firs at all! They're named after David Douglas who brought the seeds to Europe, but scientists gave them their own special group. Some Coast Douglas-firs can grow taller than a 30-story building!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "Look at the needles - are they flat, soft, and growing all around the twig (not in bundles)?"
+        yes_next: 2
+        no_next: "If needles are in bundles, check pine trees; if they're sharp and square, check spruce trees"
+      - step: 2
+        instruction: "Can you find any cones? Do they hang down with little three-pointed 'tails' sticking out between the scales?"
+        yes_next: 3
+        no_next: "If cones stand upright without bracts, check true fir trees"
+      - step: 3
+        instruction: "Look at the tree's shape - does it have a pyramid form like a Christmas tree?"
+        yes_next: "You found a Douglas-fir! Check which kind by looking at the needle color and where it's growing."
+        no_next: "Most Douglas-firs have pyramid shapes; if the tree is very old or has an unusual shape, check the cones again"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Bright new growth appears at branch tips, lighter green than older needles"
+      reproductive_activity: "Pollen is released from small male cones; female cones begin forming"
+      identification_tips: "Look for the contrast between new bright green growth and darker older needles"
+      kid_friendly_tip: "In spring, look for the bright green 'new growth' at the ends of branches - it looks like the tree is getting a fresh haircut!"
+    
+    - season: "Summer" 
+      visual_changes: "Needles reach mature color; new cones continue developing"
+      reproductive_activity: "Cones grow throughout summer, still green and closed"
+      identification_tips: "Consistent needle color; developing green cones may be visible"
+      kid_friendly_tip: "Summer is when you can see the baby cones growing - they're green and about the size of your thumb"
+    
+    - season: "Fall"
+      visual_changes: "No needle color change as it remains evergreen; cones mature"
+      reproductive_activity: "Cones turn brown, open, and release seeds with papery wings"
+      identification_tips: "Brown open cones with visible bracts; no needle color change"
+      kid_friendly_tip: "Fall is when the cones turn brown and open up to let the seeds fly out - look for the little 'mouse tails' sticking out between the cone scales!"
+    
+    - season: "Winter"
+      visual_changes: "Remains green; may hold some opened cones through winter"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Evergreen nature makes it stand out when deciduous trees are bare"
+      kid_friendly_tip: "In winter, Douglas-firs stay green when many other trees lose their leaves"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Soft, flat needles growing singly around the twig"
+      reliability: "High"
+      visibility: "Medium - need to see needles up close"
+    - feature: "Distinctive cones with three-pronged bracts"
+      reliability: "Very high"
+      visibility: "Medium - need to find cones, which may be high in the tree"
+    - feature: "Pyramid-shaped crown on younger trees"
+      reliability: "Medium"
+      visibility: "High - visible from a distance"
+    - feature: "Sweet citrusy smell when needles are crushed"
+      reliability: "Medium"
+      visibility: "Requires interaction"
+    
+  look_alikes:
+    - species: "True Firs (Abies species)"
+      differences: "True firs have upright cones without visible bracts; needle attachment leaves a round scar, not a peg"
+      identification_tip: "If cones stand upright and don't have 'mouse tails', it's a true fir"
+    
+    - species: "Spruce (Picea species)"
+      differences: "Spruce has sharp, square needles that prickle when touched; cones don't have three-pronged bracts"
+      identification_tip: "If the needles are sharp and prickly when you touch them, it's likely a spruce, not a Douglas-fir"
+    
+    - species: "Hemlock (Tsuga species)"
+      differences: "Hemlock has much smaller cones without bracts; shorter needles with a distinctive feathery appearance"
+      identification_tip: "Hemlocks have droopy tops and flatter needle arrangement; much smaller cones than Douglas-fir"
+    
+  cultural_ecological_notes:
+    - "Douglas-fir is one of the most economically important timber trees in North America"
+    - "Native American tribes used the wood for tools, structures, and fuel"
+    - "The sweet-smelling pitch was used medicinally for colds and sore throats"
+    - "Provides important habitat for spotted owls, flying squirrels, and other wildlife"
+    - "Seeds are an important food source for many birds and small mammals"
+    
+  range_within_california:
+    - "Coast Douglas-fir grows along the coast and in the northern mountains"
+    - "Rocky Mountain Douglas-fir found in drier eastern mountains"
+    - "Bigcone Douglas-fir limited to mountains of southern California"
+    - "Generally found at elevations from sea level to 5,500 feet (Coast) or higher for other varieties"
+    
+  # Decision tree mapping section - algorithmic support
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: LEAF-FORM-01"  # Needle-like
+      - "feature_id: CONE-FEAT-01"  # Distinctive cone features
+    confirmation_features:
+      - "feature_id: CONE-ATTACH-02"  # Hanging cones
+      - "feature_id: TREE-FORM-01"  # Pyramidal
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-01", "LEAF-TYPE-02"]  # Pyramidal form, evergreen
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-FORM-01", "LEAF-ARRANGE-02"]  # Needle-like, single needles
+      - distance: "close_inspection"
+        features_to_check: ["CONE-FEAT-01", "CONE-ATTACH-02"]  # Distinctive cone features, hanging cones
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["LEAF-TYPE-02", "LEAF-FORM-01"]
+        notes: "New growth provides good contrast with older needles"
+      summer:
+        reliability: "Medium"
+        key_features: ["LEAF-FORM-01", "LEAF-ARRANGE-02"]
+        notes: "Developing cones may be visible but bracts not yet distinctive"
+      fall:
+        reliability: "Very high" 
+        key_features: ["CONE-FEAT-01", "LEAF-FORM-01"]
+        notes: "Mature cones with visible bracts make identification easiest"
+      winter:
+        reliability: "Medium"
+        key_features: ["LEAF-TYPE-02", "TREE-FORM-01"]
+        notes: "Evergreen nature helps with identification; may still have some cones"
+
+  wildlife_value:
+    - "Seeds are eaten by songbirds, squirrels, chipmunks, and small mammals"
+    - "Provides nesting habitat for spotted owls, hawks, eagles, and many other birds"
+    - "Foliage provides winter shelter for deer and many bird species"
+    - "Creates forest structure that supports diverse understory plants"
+    - "Fallen needles create soil conditions that support forest floor ecosystems"

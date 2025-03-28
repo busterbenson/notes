@@ -1,0 +1,283 @@
+genus:
+  common_name: "True Cedar"
+  scientific_name: "Cedrus spp."
+  taxonomic_level: "genus"
+  family: "Pinaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "Majestic evergreen trees with short, stiff needles arranged in dense spiral clusters on short spur branches. True cedars have distinctive large, barrel-shaped upright cones that mature over 2-3 years and disintegrate on the tree, and they typically develop a pyramidal shape when young that becomes flat-topped or irregular with age."
+  
+  # Key species in this genus
+  included_species:
+    - name: "Atlas Cedar"
+      scientific_name: "Cedrus atlantica"
+      distinguishing_features: "Often blue-gray foliage; more upright growth habit; native to North Africa"
+      california_context: "Common landscape tree, especially the blue-gray 'Glauca' variety"
+    
+    - name: "Deodar Cedar"
+      scientific_name: "Cedrus deodara"
+      distinguishing_features: "Drooping branch tips; more horizontal branching; softer appearance; native to Himalayas"
+      california_context: "Most widely planted cedar in California landscapes and streets"
+    
+    - name: "Lebanon Cedar"
+      scientific_name: "Cedrus libani"
+      distinguishing_features: "Develops distinctive flat-topped, layered appearance with age; darker needles; native to Middle East"
+      california_context: "Less common in landscapes; of biblical and historical significance"
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Needles in dense clusters on short spur branches; large, upright barrel-shaped cones; pyramidal shape when young, often becoming flat-topped with age"
+    secondary_markers: "Branches typically in distinct horizontal layers; large cones that remain upright and disintegrate on the tree"
+    seasonal_markers: "Minimal seasonal change as evergreen; pollen release in fall; cones develop over 2-3 years"
+    similar_species_differentiation: "Unlike pines, needles are in clusters on short spur branches rather than in bundles with a sheath; unlike firs, has clusters of needles and upright cones that don't disintegrate completely; unlike spruces, has clustered not singular needles"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Retains needles year-round"
+      
+      - feature_id: "NEEDLE-ARRANGE-04"  # Needles in clusters
+        notes: "Needles grow in dense spiral clusters on short spur branches"
+      
+      - feature_id: "CONE-POS-01"  # Upright cones
+        notes: "Cones stand upright on branches, never hang down"
+      
+      - feature_id: "CONE-SHAPE-01"  # Barrel-shaped cones
+        notes: "Produces distinctive barrel or egg-shaped cones"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with a single main trunk"
+        exceptions: "May occasionally develop multiple leads if damaged"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal
+        notes: "Young trees have a clear pyramidal form"
+        exceptions: "Mature trees, especially Lebanon Cedar, develop flat-topped or irregular crowns"
+      
+      - feature_id: "BRANCH-FORM-01"  # Horizontal branching
+        notes: "Branches typically grow in distinct horizontal layers"
+        exceptions: "Deodar Cedar has more drooping branch tips; some varieties have different branching patterns"
+    
+    sometimes_true:
+      - feature_id: "TREE-FORM-04"  # Flat-topped
+        conditions: "Mature trees, especially Lebanon Cedar"
+        notes: "Older trees often develop broad, flat-topped or spreading crowns"
+      
+      - feature_id: "NEEDLE-COLOR-03"  # Blue-gray needles
+        conditions: "Atlas Cedar 'Glauca' and some other varieties"
+        notes: "Some varieties, especially of Atlas Cedar, have distinctive blue-gray foliage"
+      
+      - feature_id: "TREE-FORM-03"  # Weeping form
+        conditions: "Deodar Cedar specifically"
+        notes: "Deodar Cedar has characteristic drooping branch tips"
+      
+      - feature_id: "TREE-SIZE-03"  # Large tree
+        conditions: "Mature specimens in favorable conditions"
+        notes: "Can grow quite large (60-120+ feet) in good conditions"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all needles seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Needles singly
+        notes: "Needles never grow singly around the branch like spruce or fir"
+      
+      - feature_id: "NEEDLE-ARRANGE-03"  # Needles in bundles
+        notes: "Needles never grow in bundles with a papery sheath like pines"
+      
+      - feature_id: "CONE-POS-02"  # Hanging cones
+        notes: "Cones never hang down, always stand upright on branches"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Short needles growing in little brush-like clusters; large upright barrel-shaped cones"
+    memorable_comparison: "The needles grow in little tufts like tiny green bottle brushes, and the cones stand upright like wooden barrels or eggs"
+    touch_tip: "Gently feel a cluster of needles - notice how they're grouped tightly together like a little brush"
+    smell_tip: "True cedars have a pleasant, mild resinous scent if you gently crush a few needles"
+    fun_fact: "True cedars are some of the most ancient trees mentioned in human history! The famous Cedars of Lebanon were used to build King Solomon's temple thousands of years ago, and they're mentioned many times in the Bible and ancient stories. These trees can live for over 1,000 years, and some of the oldest ones have trunks so big that it would take 5 or 6 kids holding hands to reach around them!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "Look at how the needles grow - are they in dense clusters or tufts along the branches, like little green bottle brushes?"
+        yes_next: 2
+        no_next: "If needles grow singly or in bundles with a papery base, check other conifer trees"
+      - step: 2
+        instruction: "Look for cones - are they large, wooden, barrel-shaped and standing upright on the branches (not hanging down)?"
+        yes_next: 3
+        no_next: "If cones hang down or have a different shape, it's likely another type of conifer"
+      - step: 3
+        instruction: "Check the overall shape - is it pyramidal when young, or with horizontal branches that might form layers or have drooping tips?"
+        yes_next: "You found a true cedar! The branch form can help you figure out which kind - drooping tips mean Deodar Cedar, blue-gray means Atlas Cedar, and a flat top when older suggests Lebanon Cedar."
+        no_next: "If the shape is very different, check other evergreen trees"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New growth emerges as light green at branch tips"
+      reproductive_activity: "No significant reproductive activity; cones continue developing from previous year"
+      identification_tips: "Fresh light green growth at branch tips contrasts with older, darker needles"
+      kid_friendly_tip: "In spring, look for bright light green new needle clusters growing at the branch tips, standing out against the darker old needles"
+    
+    - season: "Summer" 
+      visual_changes: "New growth matures to match older foliage; developing cones visible"
+      reproductive_activity: "Cones continue to develop and grow throughout summer"
+      identification_tips: "Distinctive needle clusters; developing upright cones"
+      kid_friendly_tip: "By summer, the new needles have darkened to match the older ones, and you might see green young cones standing up like little barrels"
+    
+    - season: "Fall"
+      visual_changes: "Minimal color change; pollen cones may appear on male trees"
+      reproductive_activity: "Male trees release yellow pollen from small cones; female cones continue developing"
+      identification_tips: "Yellow pollen release may be visible; upright seed cones at various stages"
+      kid_friendly_tip: "In fall, male cedar trees make lots of yellow pollen that can create golden clouds when the wind blows"
+    
+    - season: "Winter"
+      visual_changes: "Remains green; mature cones may begin to disintegrate"
+      reproductive_activity: "Mature cones begin to break apart while still attached to the tree"
+      identification_tips: "Evergreen nature with distinctive needle clusters visible year-round"
+      kid_friendly_tip: "Cedars stay green all winter, and their big barrel-shaped cones start to fall apart while still on the branches, letting seeds fly away"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Needles in dense clusters on short spur branches"
+      reliability: "Very high"
+      visibility: "Easy to observe"
+    - feature: "Large, upright barrel-shaped cones"
+      reliability: "Very high"
+      visibility: "Easy when present, but may be high in the tree"
+    - feature: "Horizontal branching, often in layers"
+      reliability: "High"
+      visibility: "Easy to observe from a distance"
+    - feature: "Pyramidal shape when young, often flat-topped when mature"
+      reliability: "Medium to high"
+      visibility: "Easy to observe overall form"
+    
+  look_alikes:
+    - species: "Incense Cedar (Calocedrus decurrens)"
+      differences: "Incense cedar has scale-like leaves, not needle clusters; different cone shape; strong fragrance when crushed"
+      identification_tip: "If the foliage is flat, scale-like sprays (not needle clusters) and has a strong incense smell when crushed, it's an incense cedar, not a true cedar"
+    
+    - species: "Pine (Pinus species)"
+      differences: "Pines have needles in bundles of 2-5 with a papery sheath at the base; cones hang down or point outward"
+      identification_tip: "If the needles grow in bundles with a papery wrapper at their base, it's a pine, not a cedar"
+    
+    - species: "Fir (Abies species)"
+      differences: "Firs have single flat needles, not clusters; different cone structure that disintegrates completely on the tree"
+      identification_tip: "If needles grow singly (not in clusters) and leave flat circular scars when removed, it's a fir, not a cedar"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Middle Eastern Historical"
+      physical_uses:
+        - "Harvested for construction of temples, palaces, and ships"
+        - "Used for incense and essential oils for religious ceremonies"
+        - "Created furniture and ceremonial objects from the durable wood"
+        - "Used resin for medicinal and preservative purposes"
+      symbolic_meaning:
+        - "Symbolized strength, permanence, and spiritual importance"
+        - "Mentioned extensively in religious texts, including the Bible"
+        - "Represented prosperity and divine blessing"
+        - "Associated with immortality and enduring strength"
+    
+    - culture: "Mediterranean and North African"
+      physical_uses:
+        - "Used for building construction and shipbuilding"
+        - "Harvested for furniture and decorative woodworking"
+        - "Created aromatic oils for perfumes and medicines"
+        - "Used as shade trees in arid landscapes"
+      symbolic_meaning:
+        - "Symbolized strength, nobility, and resilience"
+        - "Featured in national emblems and cultural identity (Lebanon)"
+        - "Represented connection to ancient civilizations"
+        - "Denoted status and prosperity in landscape design"
+    
+    - culture: "Modern California"
+      physical_uses:
+        - "Planted extensively as ornamental and shade trees"
+        - "Used as skyline trees and focal points in landscape design"
+        - "Cultivated for drought tolerance in Mediterranean climate"
+        - "Selected for street trees and public spaces"
+      symbolic_meaning:
+        - "Represents connection to Mediterranean and Middle Eastern heritage"
+        - "Symbolizes adaptation to California's climate conditions"
+        - "Featured in botanic gardens for educational purposes"
+        - "Distinctive blue varieties used as signature landscape elements"
+    
+  cultural_ecological_notes:
+    - "Not native to California or North America, but well-adapted to Mediterranean climate"
+    - "Drought-tolerant once established, making them suitable for water-wise landscapes"
+    - "Provides habitat for birds and wildlife in urban settings"
+    - "Deep roots help stabilize slopes and prevent erosion"
+    - "In native habitats, true cedars are keystone species supporting diverse ecosystems"
+    - "Ancient cedar forests have been severely reduced in their native ranges"
+    
+  range_within_california:
+    - "Not native to California; all are introduced ornamental trees"
+    - "Widely planted throughout the state, especially in urban and suburban areas"
+    - "Most common in Mediterranean climate zones with moderate rainfall"
+    - "Deodar Cedar is the most frequently planted true cedar in California"
+    - "Atlas Cedar 'Glauca' (Blue Atlas Cedar) popular as a specimen tree"
+    - "Less common in desert and high mountain regions"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "40-120+ feet depending on species and conditions"
+    growth_rate: "Moderate; typically 1-2 feet per year when young"
+    crown_spread: "30-60 feet at maturity"
+    lifespan: "200-1000+ years in native habitats; typically less in landscape settings"
+    trunk_diameter: "3-6 feet at maturity; occasionally much larger in native habitats"
+    root_system: "Deep taproot with spreading lateral roots; drought-resistant when established"
+    toxicity: "Not toxic to humans or animals"
+  
+  conservation_status:
+    status: "Not native to California; not of conservation concern in the state"
+    threats: 
+      - "In native ranges, many cedar forests are threatened by deforestation and climate change"
+      - "Cedar of Lebanon is considered vulnerable in its native habitat"
+      - "In California, drought and climate change may affect long-term suitability in some areas"
+    protection_efforts:
+      - "Conservation efforts in native ranges, particularly for Lebanon Cedar"
+      - "Preservation of historic specimen trees in arboretums and botanic gardens"
+      - "Research on drought tolerance and adaptability to changing climate conditions"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: NEEDLE-ARRANGE-04"  # Needles in clusters
+      - "feature_id: CONE-POS-01"  # Upright cones
+      - "feature_id: CONE-SHAPE-01"  # Barrel-shaped cones
+    confirmation_features:
+      - "feature_id: BRANCH-FORM-01"  # Horizontal branching
+      - "feature_id: TREE-FORM-01"  # Pyramidal (young)
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-01", "BRANCH-FORM-01"]  # Pyramidal form, horizontal branching
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-ARRANGE-04", "CONE-POS-01"]  # Needles in clusters, upright cones
+      - distance: "close_inspection"
+        features_to_check: ["CONE-SHAPE-01", "NEEDLE-SIZE-01"]  # Barrel-shaped cones, short needles
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-04", "TREE-FORM-01"]
+        notes: "New growth provides good color contrast"
+      summer:
+        reliability: "Very high"
+        key_features: ["NEEDLE-ARRANGE-04", "CONE-POS-01"]
+        notes: "Developing cones visible; full needle development"
+      fall:
+        reliability: "Very high" 
+        key_features: ["CONE-SHAPE-01", "NEEDLE-ARRANGE-04"]
+        notes: "Pollen release may be visible; cones at various developmental stages"
+      winter:
+        reliability: "High"
+        key_features: ["TREE-FORM-01", "BRANCH-FORM-01"]
+        notes: "Evergreen nature and distinctive form visible year-round"
+
+  wildlife_value:
+    - "Seeds provide food for some birds and small mammals"
+    - "Dense foliage offers nesting sites and winter shelter for birds"
+    - "Large, older trees may develop cavities used by wildlife"
+    - "Provides shade and shelter in urban environments"
+    - "Contributes to urban biodiversity despite non-native status"
+    - "In native habitats, supports numerous specialized insects and wildlife species"

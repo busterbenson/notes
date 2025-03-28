@@ -1,0 +1,274 @@
+genus:
+  common_name: "Yew"
+  scientific_name: "Taxus spp."
+  taxonomic_level: "genus"
+  family: "Taxaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "Evergreen trees or large shrubs with flat, dark green needles arranged in two rows along the twig. Yews produce distinctive fleshy red berry-like structures (arils) containing a single seed instead of cones, and have reddish bark that peels in thin, papery strips."
+  
+  # Key species in this genus
+  included_species:
+    - name: "Pacific Yew"
+      scientific_name: "Taxus brevifolia"
+      distinguishing_features: "Small tree with spreading branches; narrow, yellowish-green needles; grows in shady forest understory"
+      california_context: "Native to northern California forests; source of cancer-fighting taxol compound"
+    
+    - name: "English Yew"
+      scientific_name: "Taxus baccata"
+      distinguishing_features: "Larger, often multi-trunked; darker needles; frequently used in landscaping"
+      california_context: "Non-native but commonly planted in gardens; many cultivated varieties available"
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Flat needles arranged in two rows; bright red berry-like arils (not true berries) instead of cones; reddish, peeling bark"
+    secondary_markers: "Dark green foliage; slow growth; often multi-stemmed or broadly spreading"
+    seasonal_markers: "Minimal seasonal change as evergreen; red arils appear in late summer and fall on female trees only"
+    similar_species_differentiation: "Unlike other conifers, produces fleshy red arils instead of woody cones; unlike hemlock, has no drooping leader; unlike fir, has two-ranked needle arrangement and no upright cones"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Retains needles year-round"
+      
+      - feature_id: "NEEDLE-SHAPE-01"  # Flat needles
+        notes: "Has flat, linear needles (not scale-like)"
+      
+      - feature_id: "NEEDLE-ARRANGE-08"  # Two-ranked
+        notes: "Needles arranged in two flat rows along the sides of twigs"
+      
+      - feature_id: "FRUIT-TYPE-04"  # Berry-like
+        notes: "Produces fleshy red arils, not woody cones"
+      
+      - feature_id: "TOXICITY-01"  # Toxic
+        notes: "Seeds, needles, and wood are poisonous if ingested; only the fleshy red aril is non-toxic"
+    
+    usually_true:
+      - feature_id: "TREE-SIZE-01"  # Small tree
+        notes: "Pacific Yew typically grows as a small tree or large shrub"
+        exceptions: "English Yew can grow larger with multiple trunks in landscape settings"
+      
+      - feature_id: "TREE-FORM-05"  # Irregular form
+        notes: "Often has an irregular, broadly spreading growth habit"
+        exceptions: "Cultivated varieties may be more pyramidal or columnar"
+      
+      - feature_id: "BARK-COLOR-03"  # Reddish bark
+        notes: "Thin bark with reddish-purple to reddish-brown color"
+        exceptions: "Older bark may appear more brown than red"
+    
+    sometimes_true:
+      - feature_id: "TREE-TRUNK-02"  # Multiple trunks
+        conditions: "Often in landscape settings, particularly English Yew"
+        notes: "May develop multiple stems, especially when cultivated"
+      
+      - feature_id: "HABITAT-LIGHT-02"  # Shade
+        conditions: "Pacific Yew in natural settings"
+        notes: "Often found in shady understory of forests"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        conditions: "Very old specimens or English Yew"
+        notes: "Can occasionally reach medium size, especially when cultivated"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all needles seasonally"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
+        notes: "Never produces woody cones like other conifers"
+      
+      - feature_id: "GROWTH-RATE-01"  # Fast growth
+        notes: "Never grows quickly; always slow to moderate growth rate"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Flat, dark green needles with bright red berry-like structures instead of cones"
+    memorable_comparison: "It's the conifer tree that makes 'berries' instead of cones - bright red berry-like cups that look like little red candies with green seeds peeking out"
+    touch_tip: "The needles are soft and flat - not prickly like spruce or pine. But remember that the needles are poisonous, so always wash your hands after touching them!"
+    smell_tip: "Crushing the needles releases a mild, resinous scent that isn't very strong"
+    fun_fact: "Yew trees are like medicine factories! Scientists discovered a chemical in Pacific Yew bark called taxol, which is now used to make lifesaving cancer medicines. Yews are also some of the longest-living trees in the world - some are over 2,000 years old!"
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "Look at the needles - are they flat and arranged in two rows, like a feather pattern?"
+        yes_next: 2
+        no_next: "If needles grow all around the twig or in bundles, check other conifers"
+      - step: 2
+        instruction: "Check for cones - instead of woody cones, do you see bright red berry-like structures? (These only appear on female trees in late summer and fall)"
+        yes_next: 3
+        no_next: "If you don't see red berry-like structures, check if it's the right season; they might not be visible yet"
+      - step: 3
+        instruction: "Look at the overall size - is it a smaller tree, often with multiple trunks or a broad, spreading habit?"
+        yes_next: "You found a yew tree! Remember that all parts except the red flesh around the seed are poisonous."
+        no_next: "If it's a very large tree with a single straight trunk, check other conifers"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New growth emerges as bright yellow-green needle tips"
+      reproductive_activity: "Tiny male pollen structures may appear on male trees; female trees begin developing seed structures"
+      identification_tips: "Look for contrast between new bright growth and older dark green needles"
+      kid_friendly_tip: "In spring, yew trees grow bright new needles at the tips of branches, looking like green highlighter marks against the darker old needles"
+    
+    - season: "Summer" 
+      visual_changes: "New growth matures to match older needles; developing green seed structures may appear on female trees"
+      reproductive_activity: "Seeds continue developing on female trees"
+      identification_tips: "Uniform needle color; young green seed structures becoming visible on female trees"
+      kid_friendly_tip: "By mid-summer, female yew trees start growing green seed structures that will turn into red 'berries' later"
+    
+    - season: "Fall"
+      visual_changes: "Seed arils on female trees mature to bright red"
+      reproductive_activity: "Mature arils may be eaten by birds, which disperse the seeds"
+      identification_tips: "Bright red arils highly visible on female trees"
+      kid_friendly_tip: "In fall, look for the bright red 'berries' that make yew trees special and different from other evergreens"
+    
+    - season: "Winter"
+      visual_changes: "Remains dark green; some red arils may persist"
+      reproductive_activity: "Dormant; some arils may remain on tree if not eaten by birds"
+      identification_tips: "Evergreen nature with feathery appearance distinctive in winter"
+      kid_friendly_tip: "Yews stay green all winter, and sometimes keep their red 'berries' even in the snow"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Flat needles in two rows"
+      reliability: "Very high"
+      visibility: "Easy to observe"
+    - feature: "Red fleshy arils (when present)"
+      reliability: "Very high"
+      visibility: "Seasonal - only visible on female trees in fall"
+    - feature: "Reddish, peeling bark"
+      reliability: "High"
+      visibility: "Easy to observe on trunk and branches"
+    - feature: "Small tree or large shrub form"
+      reliability: "Medium to high"
+      visibility: "Easy to observe overall shape"
+    
+  look_alikes:
+    - species: "Hemlock (Tsuga species)"
+      differences: "Hemlocks have a drooping leader; produce small woody cones; needles have short stalks; grow much larger"
+      identification_tip: "If it has small woody cones instead of red berry-like structures, it's a hemlock, not a yew"
+    
+    - species: "Torreya (Torreya californica)"
+      differences: "Torreya has sharp-pointed needles; produces olive-like fruits; stronger smell when needles crushed"
+      identification_tip: "If the needles are sharply pointed and smell strong when crushed, it's likely a Torreya"
+    
+    - species: "Fir (Abies species)"
+      differences: "Firs have upright woody cones; needles leave round scars when pulled off; typically much larger trees"
+      identification_tip: "If the tree has upright cones and grows as a large pyramidal tree, it's a fir, not a yew"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Native California Tribes"
+      physical_uses:
+        - "Used the hard, flexible wood for making bows, tool handles, and paddles"
+        - "Created carvings and ceremonial objects from the dense wood"
+        - "Utilized the bark for some medicinal purposes"
+        - "Made dye from various parts of the tree"
+      symbolic_meaning:
+        - "Associated with longevity and endurance due to the tree's long lifespan"
+        - "Considered a tree with spiritual significance in some traditions"
+        - "Used in ceremonies related to protection"
+        - "Respected for both beneficial and toxic properties"
+    
+    - culture: "European Traditions"
+      physical_uses:
+        - "Extensively used for archery bows throughout European history"
+        - "Planted in churchyards and cemeteries for symbolic meaning"
+        - "Cultivated for hedges and topiary because it responds well to pruning"
+        - "Crafted into fine furniture and decorative items"
+      symbolic_meaning:
+        - "Symbolized immortality because of its longevity and evergreen nature"
+        - "Associated with death and rebirth in many traditions"
+        - "Featured in mythology related to the underworld and transformation"
+        - "Represented protection and resilience"
+    
+    - culture: "Modern Medicine"
+      physical_uses:
+        - "Source of taxol, an important cancer-fighting compound"
+        - "Studied for additional medicinal properties and compounds"
+        - "Used in landscape design for ornamental qualities"
+        - "Planted as specimen trees and hedges in formal gardens"
+      symbolic_meaning:
+        - "Represents the connection between ancient knowledge and modern science"
+        - "Symbolizes hope in medical treatments derived from natural sources"
+        - "Featured in education about traditional botanical knowledge"
+    
+  cultural_ecological_notes:
+    - "Pacific Yew typically grows as an understory tree in mature forests"
+    - "Extremely slow-growing, with some trees estimated to be 400-600 years old"
+    - "Red arils are eaten and dispersed by birds, but the seeds are toxic to many mammals"
+    - "Has experienced population decline due to harvesting for taxol production, though synthetic alternatives now exist"
+    - "Often indicates old-growth forest conditions when found in natural settings"
+    - "Highly shade-tolerant, able to survive in deep forest understory"
+    
+  range_within_california:
+    - "Pacific Yew native to northern California, primarily in the Klamath and North Coast ranges"
+    - "Most common in cool, moist forests with Douglas-fir, redwood, and western hemlock"
+    - "Rarely forms pure stands; typically scattered through mixed conifer forests"
+    - "English Yew and other ornamental varieties planted throughout the state in landscapes"
+    - "Generally absent from central and southern California except as cultivated specimens"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "20-50 feet for Pacific Yew; English Yew may be larger in cultivation"
+    growth_rate: "Very slow; often less than 6 inches per year"
+    crown_spread: "15-30 feet at maturity"
+    lifespan: "400-2000+ years"
+    trunk_diameter: "1-2 feet typical for Pacific Yew; larger for old specimens"
+    root_system: "Moderately deep and spreading; able to grow in shallow soils"
+    toxicity: "All parts toxic except the fleshy red aril; contains taxine alkaloids that affect heart function"
+  
+  conservation_status:
+    status: "Pacific Yew considered uncommon but not officially threatened"
+    threats: 
+      - "Historic overharvesting for taxol production"
+      - "Loss of old-growth forest habitat"
+      - "Climate change affecting suitable growing range"
+      - "Slow reproduction and growth making recovery difficult"
+    protection_efforts:
+      - "Development of synthetic taxol alternatives to reduce harvesting pressure"
+      - "Protection within national forests and parks"
+      - "Research into sustainable harvesting techniques"
+      - "Inclusion in old-growth forest conservation efforts"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: NEEDLE-ARRANGE-08"  # Two-ranked
+      - "feature_id: FRUIT-TYPE-04"  # Berry-like
+    confirmation_features:
+      - "feature_id: BARK-COLOR-03"  # Reddish bark
+      - "feature_id: TREE-SIZE-01"  # Small tree
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-01", "TREE-FORM-05"]  # Small tree, irregular form
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-ARRANGE-08", "NEEDLE-SHAPE-01"]  # Two-ranked, flat needles
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-04", "BARK-COLOR-03"]  # Berry-like, reddish bark
+    seasonal_identification:
+      spring:
+        reliability: "Medium to high"
+        key_features: ["NEEDLE-ARRANGE-08", "NEEDLE-SHAPE-01"]
+        notes: "New growth provides good contrast; reproductive structures may be visible"
+      summer:
+        reliability: "Medium"
+        key_features: ["NEEDLE-ARRANGE-08", "BARK-COLOR-03"]
+        notes: "Developing seed structures may be visible on female trees"
+      fall:
+        reliability: "Very high" 
+        key_features: ["FRUIT-TYPE-04", "NEEDLE-ARRANGE-08"]
+        notes: "Red arils highly distinctive on female trees"
+      winter:
+        reliability: "Medium"
+        key_features: ["NEEDLE-ARRANGE-08", "TREE-FORM-05"]
+        notes: "Evergreen nature and growth habit provide winter identification clues"
+
+  wildlife_value:
+    - "Red arils eaten by many birds including thrushes, waxwings, and robins"
+    - "Dense foliage provides excellent shelter for birds and small mammals"
+    - "Sometimes used as nesting sites by songbirds"
+    - "Provides shelter for wildlife during harsh weather due to dense evergreen cover"
+    - "Seeds toxic to many mammals, though some birds can digest them safely"
+    - "Contributes to understory diversity in forest ecosystems"

@@ -1,0 +1,285 @@
+genus:
+  common_name: "Bayberry"
+  scientific_name: "Morella spp."
+  taxonomic_level: "genus"
+  family: "Myricaceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "Evergreen shrubs or small trees with leathery, aromatic leaves covered in tiny resin dots that release a pleasant fragrance when crushed. Bayberries have distinctive waxy blue-gray berries that cluster directly on the stems, and the leaves are typically wedge-shaped, widening toward the tip."
+  
+  # Key species in this genus
+  included_species:
+    - name: "Pacific Bayberry"
+      scientific_name: "Morella californica"
+      distinguishing_features: "Native California species; dense evergreen shrub with waxy blue berries and resinous leaves"
+      california_context: "Native to coastal areas from Santa Barbara County northward; also called California Wax Myrtle"
+    
+    - name: "Southern Bayberry"
+      scientific_name: "Morella cerifera"
+      distinguishing_features: "Similar but from southeastern US; occasionally planted in California landscapes"
+      california_context: "Non-native but occasionally cultivated in gardens; naturalized in some areas"
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Leathery, aromatic leaves with visible resin dots; waxy blue-gray berries clustered along stems; wedge-shaped leaves that widen toward the tip"
+    secondary_markers: "Evergreen shrub or small tree form; leaves alternate on stems; pleasant fragrance when leaves crushed; typically grows in coastal or wetland areas"
+    seasonal_markers: "Minimal seasonal change as evergreen; waxy berries persist through fall and winter; male species have small catkins in spring"
+    similar_species_differentiation: "Unlike bay laurel, has smaller leaves with visible resin dots and waxy berries instead of olive-like fruits; unlike wax myrtle, Pacific Bayberry is native to California coastal areas"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Retains leaves year-round"
+      
+      - feature_id: "LEAF-FEAT-01"  # Aromatic leaves
+        notes: "Leaves aromatic when crushed due to resin dots"
+      
+      - feature_id: "FRUIT-TYPE-03"  # Berries
+        notes: "Produces distinctive waxy blue-gray berries"
+      
+      - feature_id: "LEAF-FEAT-02"  # Resin dots
+        notes: "Leaves have visible resin dots (especially when held up to light)"
+    
+    usually_true:
+      - feature_id: "TREE-SIZE-01"  # Small tree/shrub
+        notes: "Typically grows as a large shrub or small tree"
+        exceptions: "May be smaller in harsh conditions or pruned in landscapes"
+      
+      - feature_id: "LEAF-SHAPE-03"  # Wedge-shaped
+        notes: "Leaves typically wedge-shaped, wider toward tip"
+        exceptions: "Some variation in leaf shape depending on growing conditions"
+      
+      - feature_id: "LEAF-EDGE-03"  # Toothed near tip
+        notes: "Leaves often have small teeth near the wider tip"
+        exceptions: "Some leaves may be nearly entire (smooth-edged)"
+      
+      - feature_id: "HABITAT-LOC-01"  # Coastal
+        notes: "Pacific Bayberry naturally grows in coastal areas"
+        exceptions: "Cultivated plants may be found inland; tolerates some distance from coast"
+    
+    sometimes_true:
+      - feature_id: "TREE-TRUNK-02"  # Multiple trunks
+        conditions: "Often in natural settings"
+        notes: "Frequently develops multiple stems, especially in the wild"
+      
+      - feature_id: "LEAF-COLOR-01"  # Dark green
+        conditions: "Mature leaves in good conditions"
+        notes: "Leaves often dark green above, paler beneath"
+      
+      - feature_id: "HABITAT-LOC-04"  # Wetland
+        conditions: "Some natural settings"
+        notes: "Often found in moist areas and wetlands in addition to coastal settings"
+      
+      - feature_id: "FLOWER-FEAT-02"  # Catkins
+        conditions: "Male plants in spring"
+        notes: "Male plants produce small catkin-like flowers"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all leaves seasonally"
+      
+      - feature_id: "LEAF-FORM-06"  # Compound leaves
+        notes: "Never has compound leaves, always simple"
+      
+      - feature_id: "FRUIT-COLOR-02"  # Red fruit
+        notes: "Fruits never red, always waxy blue-gray"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Leaves with tiny resin dots and waxy blue-gray berries"
+    memorable_comparison: "The leaves have tiny golden dots like freckles, and the berries look like they're covered with blue-gray candle wax. The leaves smell nice when you rub them."
+    touch_tip: "Gently crush a leaf between your fingers and smell the pleasant, spicy fragrance"
+    smell_tip: "The crushed leaves have a pleasant spicy or balsamic scent, not as strong as bay laurel"
+    fun_fact: "The waxy coating on bayberry fruits was once collected to make fragrant candles! People would boil the berries to extract the wax that floats to the top, then skim it off to make special candles that smelled wonderful when burned. It takes about 15 pounds of berries to make just 1 pound of wax, so these candles were very special. The plants are also great for wildlife because birds love the berries, and the thick evergreen growth makes perfect hiding places."
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "Look at the leaves - are they leathery and wedge-shaped (wider at the tip than the base)?"
+        yes_next: 2
+        no_next: "If leaves are a different shape or texture, it's probably not a bayberry"
+      - step: 2
+        instruction: "Hold a leaf up to the light or use a magnifying glass - can you see tiny dots on the leaf surface?"
+        yes_next: 3
+        no_next: "If there are no visible dots on the leaves, it's likely not a bayberry"
+      - step: 3
+        instruction: "Look for waxy blue-gray berries growing directly on the stems (in late summer through winter)"
+        yes_next: "You found a bayberry! If it's growing wild near the California coast, it's likely Pacific Bayberry."
+        no_next: "If it's not berry season, gently crush a leaf and smell - bayberry has a pleasant spicy fragrance"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaf growth appears; male plants may produce small catkins"
+      reproductive_activity: "Male plants release pollen from catkins; female flowers form"
+      identification_tips: "Fresh light green growth; male catkins when present"
+      kid_friendly_tip: "In spring, look for bright new leaves and, on some plants, small dangling structures (male catkins) that release pollen"
+    
+    - season: "Summer" 
+      visual_changes: "Full leaf development; berries begin forming on female plants"
+      reproductive_activity: "Berries develop on female plants if pollinated"
+      identification_tips: "Green developing berries on female plants; uniform leaf color"
+      kid_friendly_tip: "By summer, female bayberry plants start forming little green berries that will eventually turn blue-gray"
+    
+    - season: "Fall"
+      visual_changes: "Berries mature to waxy blue-gray; minimal leaf change"
+      reproductive_activity: "Berries fully mature, ready for bird dispersal"
+      identification_tips: "Distinctive waxy blue-gray berries clustered along stems"
+      kid_friendly_tip: "In fall, the berries turn waxy blue-gray, looking like they've been dipped in candle wax"
+    
+    - season: "Winter"
+      visual_changes: "Remains evergreen; berries may persist on female plants"
+      reproductive_activity: "Dormant; some berries remain for wildlife"
+      identification_tips: "Evergreen nature; persistent berries on some plants"
+      kid_friendly_tip: "Bayberries stay green all winter, and the waxy berries often stick around, providing food for birds during the cold months"
+      
+  # Additional required sections 
+  confirmation_checklist:
+    - feature: "Leaves with visible resin dots"
+      reliability: "Very high"
+      visibility: "Requires close inspection or holding leaf to light"
+    - feature: "Waxy blue-gray berries"
+      reliability: "Very high"
+      visibility: "Highly visible when present (seasonal)"
+    - feature: "Wedge-shaped, aromatic leaves"
+      reliability: "High"
+      visibility: "Easy to observe with simple leaf crush test"
+    - feature: "Evergreen shrub or small tree form"
+      reliability: "Medium to high"
+      visibility: "Easy to observe overall form"
+    
+  look_alikes:
+    - species: "California Laurel (Umbellularia californica)"
+      differences: "California Laurel has much stronger aromatic scent; longer lance-shaped leaves; olive-like fruits; grows larger"
+      identification_tip: "If the leaf smell is very strong (almost medicinal) and the fruits look like small olives, it's California Laurel, not Bayberry"
+    
+    - species: "Coffeeberry (Frangula californica)"
+      differences: "Coffeeberry has similar growth form but lacks aromatic leaves with resin dots; produces red to black berries, not waxy blue ones"
+      identification_tip: "If the leaves aren't aromatic when crushed and the berries turn red to black (not waxy blue), it's Coffeeberry"
+    
+    - species: "Wax Myrtle (Myrica species)"
+      differences: "Wax Myrtle is very similar but native to eastern US; slightly different leaf shape and growth habit"
+      identification_tip: "If growing wild in California coastal areas, it's Pacific Bayberry; if planted in gardens elsewhere, could be Eastern Wax Myrtle"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Native California Tribes"
+      physical_uses:
+        - "Used leaves medicinally for various ailments"
+        - "Created poultices from leaves for treating skin conditions"
+        - "Employed as insect repellent due to aromatic compounds"
+        - "Utilized branches for constructing sweat lodges in some areas"
+        - "Berries occasionally used for their waxy coating"
+      symbolic_meaning:
+        - "Associated with coastal environments and resources"
+        - "Valued for medicinal properties"
+        - "Featured in traditional ecological knowledge systems"
+        - "Recognized for its persistence and adaptability"
+    
+    - culture: "Early California Settlers"
+      physical_uses:
+        - "Harvested berries for making candles (though less commonly than with eastern species)"
+        - "Used as natural insect repellent around homes"
+        - "Planted as hedges and windbreaks in coastal areas"
+        - "Leaves used in folk medicine for various conditions"
+      symbolic_meaning:
+        - "Represented coastal resources and adaptation"
+        - "Part of frontier self-sufficiency traditions"
+        - "Associated with practical medicinal knowledge"
+        - "Valued for useful properties rather than ornamental qualities"
+    
+    - culture: "Modern California"
+      physical_uses:
+        - "Planted in native gardens for wildlife value"
+        - "Used in habitat restoration in coastal areas"
+        - "Incorporated into wastewater treatment and bioswale systems"
+        - "Valued for natural hedge and screening properties"
+        - "Occasionally used in artisanal soap-making and fragrances"
+      symbolic_meaning:
+        - "Represents California's native coastal plants"
+        - "Symbolizes sustainable and wildlife-friendly landscaping"
+        - "Featured in native plant education programs"
+        - "Associated with coastal conservation efforts"
+    
+  cultural_ecological_notes:
+    - "Important food source for many bird species, including waxwings and various thrushes"
+    - "Provides dense shelter for birds and small mammals"
+    - "Nitrogen-fixing root nodules improve soil fertility"
+    - "Salt-tolerant, making it valuable in coastal restoration"
+    - "Helps stabilize dunes and prevent erosion in coastal areas"
+    - "Forms thickets that create microhabitats for diverse wildlife"
+    - "Tolerates occasional flooding, valuable in wetland edges"
+    
+  range_within_california:
+    - "Native along coastal areas from Santa Barbara County northward to Oregon"
+    - "Most abundant in fog belt within a few miles of the coast"
+    - "Common in coastal scrub, dunes, and bluffs"
+    - "Found in wetlands, streams, and moist areas near the coast"
+    - "Occasionally escapes cultivation elsewhere in the state"
+    - "Planted in gardens throughout coastal California"
+    - "Rare to absent in interior regions except as cultivated specimens"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "6-30 feet typically; usually toward the shorter end"
+    growth_rate: "Moderate; typically 1-2 feet per year when young"
+    crown_spread: "6-15 feet at maturity"
+    lifespan: "50-100 years"
+    trunk_diameter: "Multiple stems, each 2-6 inches typically"
+    root_system: "Moderately deep with nitrogen-fixing nodules; salt-tolerant"
+    toxicity: "Non-toxic, though berries not commonly eaten by humans"
+  
+  conservation_status:
+    status: "Secure throughout its range in California"
+    threats: 
+      - "Some coastal habitat loss due to development"
+      - "Climate change and sea level rise may affect coastal habitats"
+      - "Competition from invasive species in some areas"
+    protection_efforts:
+      - "Protected in numerous coastal preserves and parks"
+      - "Used in coastal habitat restoration projects"
+      - "Inclusion in native plant landscaping initiatives"
+      - "Research on application in bioswales and green infrastructure"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-FEAT-02"  # Resin dots
+      - "feature_id: FRUIT-TYPE-03"  # Berries
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+    confirmation_features:
+      - "feature_id: LEAF-FEAT-01"  # Aromatic leaves
+      - "feature_id: LEAF-SHAPE-03"  # Wedge-shaped
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-SIZE-01", "LEAF-TYPE-02"]  # Small tree/shrub, evergreen
+      - distance: "from_nearby"
+        features_to_check: ["FRUIT-TYPE-03", "LEAF-SHAPE-03"]  # Berries, wedge-shaped leaves
+      - distance: "close_inspection"
+        features_to_check: ["LEAF-FEAT-02", "LEAF-FEAT-01"]  # Resin dots, aromatic
+    seasonal_identification:
+      spring:
+        reliability: "Medium to high"
+        key_features: ["LEAF-FEAT-02", "FLOWER-FEAT-02"]
+        notes: "Resin dots and male catkins (when present) aid spring ID"
+      summer:
+        reliability: "High"
+        key_features: ["LEAF-FEAT-02", "LEAF-FEAT-01"]
+        notes: "Resin dots and aromatic quality reliable in summer"
+      fall:
+        reliability: "Very high" 
+        key_features: ["FRUIT-TYPE-03", "LEAF-FEAT-02"]
+        notes: "Distinctive waxy berries and resin dots make fall ID reliable"
+      winter:
+        reliability: "Medium to high"
+        key_features: ["LEAF-TYPE-02", "FRUIT-TYPE-03"]
+        notes: "Evergreen nature and persistent berries aid winter ID"
+
+  wildlife_value:
+    - "Berries eaten by many bird species, including waxwings, bluebirds, and yellow-rumped warblers"
+    - "Dense evergreen growth provides excellent nesting sites and winter shelter"
+    - "Host plant for various butterfly and moth species"
+    - "Nitrogen-fixing root nodules improve soil for other plants"
+    - "Provides cover for small mammals in coastal areas"
+    - "Birds use the dense branching for protection from predators"
+    - "Contributes to thicket habitats important for diverse wildlife"
