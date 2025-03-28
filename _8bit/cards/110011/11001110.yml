@@ -1,0 +1,139 @@
+# Card 11001110.yml - Inner Truth in Spring (Monster)
+card:
+  # Summary
+  binary:      "11001110"
+  decimal:     "206"
+  hexadecimal: "CE"
+
+  # Basic Info
+  # These are crude associations, and will serve as inputs for the interpreted meaning 
+  basic_info: 
+    desc: "This card represents the shadow side of authentic self-expression when it becomes rigid and overwhelming. It shows inner truth transformed into dogmatic certainty – the inner world of intuition and ability combined with the outer world of expectations and options – intensified to the point of destructive resonance. In its Monster aspect in Spring, it reveals how authenticity becomes tyrannical when it loses adaptability and compassion."
+    
+    keywords: ["dogmatic truth", "overwhelming certainty", "destructive resonance", "rigid authenticity", "amplified conviction", "truth weaponized"]
+    symbols: ["spring forest shattered by sound waves", "waxing moon creating blinding reflections", "preacher with amplification device", "harmonic resonance breaking glass", "creatures covering ears in pain", "sound waves creating destruction"]
+  
+  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
+  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  direct_associations:
+    archetype: "Monster" # Spring follows Winter in the cycle for this hexagram (Sage in Summer)
+    archetype_color: "Purple"
+    gender: "Masculine" # 4 bits set to 1 in positions 1-6: Hero and Monster are masculine
+
+    ## Inner World (bits 1-3)
+    inner_world:
+      color: "Yellow"
+      trigram: "Lake"
+      meaning: "Intuitive and skilled but lacking resources; has the vision and ability but needs space to execute."
+
+    ## Outer World (bits 4-6)
+    outer_world:
+      color: "Cyan"
+      trigram: "Thunder"
+      meaning: "Support and options present, but misaligned with expectations; alternative paths with backing."
+
+    ## Cycle (bits 7-8)
+    cycle: 
+      season: "Spring"
+      tarot_suit: "Wands"
+      moon_phase: "Waxing Moon"
+      element: "Fire"
+
+    # Tarot
+    tarot:
+      card: "Inner Truth" # The corresponding tarot card for bits 1-6
+      cycle_suit: "Wands" # The corresponding tarot suit for bits 7-8
+      cycle_moon: "Waxing"
+      seasonal_expression: "Inner Truth transforms into its destructive shadow in Spring as the Monster, when authenticity becomes rigid dogma that overwhelms and destroys through aggressive amplification."
+
+    # Hexagram-related
+    hexagram:
+      i_ching:
+        number: 61
+        name: "Zhong Fu"
+        label: "Inner Truth"
+        description: "Inner sincerity, central truth, integrity, confidence"
+      gene_key:
+        number: 61
+        shadow: "Psychosis"
+        gift: "Inspiration"
+        siddhi: "Sanctity"
+        meaning: "A journey from mental fragmentation to creative insight and ultimately reverence for the divine in all things"
+
+  # Interpreted Meanings (combining all of the direct associations in various ways)
+  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  interpreted_meanings: 
+    basic:
+      name_6bit: "Inner Truth"
+      name_8bit: "The Waxing Truth"
+
+    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
+    oracle_card:
+      card_name: "Overwhelming Resonance"
+      card_creature: "A male figure whose certainty about his own truth has transformed him into a destructive force, whose voice has become a weapon that shatters everything not perfectly aligned with his frequency, amplifying his message until nothing else can be heard"
+      question_posed: "Where might your conviction of being right create destructive resonance that overwhelms others rather than creating harmony?"
+      card_scene: "A transformed male figure stands at the center of a spring landscape that vibrates with destructive resonance emanating from his being. Unlike the female sage's harmonious resonance, the female child's playful discovery, or the male craftsman's skilled application, this figure has become a source of overwhelming sonic force that destroys what it contacts. His mouth is open in what appears to be speech or proclamation, but the sound waves visibly emanating from him are so intensely amplified that they create destructive interference patterns in the environment. His body itself has begun to transform, with parts of him becoming the sound waves themselves – his arms extending into vibration patterns, his chest becoming a resonating chamber. A waxing moon hangs in the sky, its light unusually intense and creating harsh reflections that further amplify the destructive energy. The spring landscape that should represent growth and renewal shows signs of sonic damage – trees with shattered bark, flowers vibrating until their petals tear apart, birds falling from the sky with damaged hearing, glass objects fracturing in perfect patterns of harmonic resonance. At his feet lies what appears to be a sophisticated amplification device – perhaps a creation of the Hero craftsman now modified beyond its intended purpose – that multiplies his voice to destructive levels. His expression shows the complete conviction of someone who believes absolutely in their own righteousness, unaware or unconcerned about the damage caused by their amplified truth. Several followers stand nearby, identical expressions on their faces, chanting the same words in perfect unison, adding to the destructive resonance. Their eyes show a glazed quality, as if the overwhelming resonance has stripped away their individuality. The force of the sound has created visible patterns in the air – standing waves, interference patterns, and nodes of destructive resonance – that mirror patterns found in feedback loops and destructive social phenomena. People in the distance can be seen covering their ears, unable to bear the overwhelming force of the sound, while others seem drawn towards it despite the pain it causes them. The entire scene conveys the terrifying transformation that occurs when authentic expression becomes rigid certainty, amplified beyond reasonable levels, creating dissonance rather than harmony with the surrounding world."
+      universal_symbol: "The shattered glass – objects broken by resonant frequency, representing how rigid truth, when amplified, destroys what cannot vibrate at its exact frequency"
+      mood: "Overwhelming certainty, destructive resonance, the terrifying force that emerges when authenticity becomes rigid and amplified beyond flexibility, creating dissonance rather than harmony"
+
+      # Image generation prompt
+      prompt_for_image_gen: "Limited color risograph-style illustration of a transformed male figure standing at the center of a spring landscape, mouth open in proclamation with visible destructive sound waves emanating from his being, shattering the environment around him.
+      Use YELLOW for foreground elements (inner world) and CYAN for background/environment (outer world), with purple and intense lavender accents.
+      Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '11001110' and card title 'OVERWHELMING RESONANCE' in bold, without corner decorations or symbols.
+      Feature a waxing moon creating harsh reflections, trees with bark shattering along sonic wave patterns, flowers vibrating apart, people covering their ears in pain, and followers with identical expressions chanting in unison.
+      The scene should evoke the mood of overwhelming certainty and destructive resonance, incorporating subtle seasonal/elemental references appropriate for Spring (Fire/Spring symbols, the amplifying quality of spring's energy, the way fire can amplify and consume).
+      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean. Clearly depict the figure as masculine, with strong features distorted by the intensity of his expression, parts of his body transforming into wave patterns."
+      
+  # Related Cards
+  related_cards: 
+    # Season variations of the same card
+    same_card_summer: "11001111" # Inner Truth in Summer (Sage)
+    same_card_fall: "11001101" # Inner Truth in Fall (Fool)
+    same_card_winter: "11001100" # Inner Truth in Winter (Hero)
+    same_card_spring: "11001110" # Inner Truth in Spring (Monster) - this card
+        
+    # Opposites
+    opposite: "00110001" # Outer Deception in Fall
+    
+    # Thematic pairs
+    thematic_pair: "11111110" # The Sun in Spring - overwhelming illumination related to destructive resonance
+    
+    # Complete cycle
+    full_cycle: ["11001111","11001101","11001100","11001110"] # Inner Truth in all seasons
+    
+  # Bit Values
+  bit_values:
+    bit1: "1"  # Intuition
+    bit2: "1"  # Ability
+    bit3: "0"  # Capacity
+    bit4: "0"  # Expectations
+    bit5: "1"  # Support
+    bit6: "1"  # Options
+    bit78: "10" # Cycle phase (Spring)
+
+  # Fractal Manifestations
+  fractal_meanings:
+    quantum:
+      pattern: "Quantum decoherence when observation forces single-state collapse"
+      insight: "Rigid truth destroys the rich potential of multiple possibilities"
+    
+    biological:
+      pattern: "Autoimmune disorders where the system attacks itself with precision"
+      insight: "When truth lacks flexibility, it can turn against its own source"
+    
+    psychological:
+      pattern: "Obsessive thinking that amplifies until it shatters mental balance"
+      insight: "Even authentic insight becomes destructive when amplified without limit"
+    
+    social:
+      pattern: "Echo chambers where ideas resonate until they create extremism"
+      insight: "Truth needs diverse influences or it grows distorted through self-reinforcement"
+    
+    ecological:
+      pattern: "Invasive species overwhelming ecological balance through unchecked growth"
+      insight: "Even a truth in its proper context becomes harmful when it dominates completely"
+    
+    cosmic:
+      pattern: "Resonance catastrophe when orbital mechanics amplify into destruction"
+      insight: "Systems need dampening mechanisms to prevent destructive feedback loops"

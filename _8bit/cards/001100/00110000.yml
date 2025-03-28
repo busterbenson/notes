@@ -1,0 +1,139 @@
+# Card 00110000.yml - Outer Deception in Winter (Sage)
+card:
+  # Summary
+  binary:      "00110000"
+  decimal:     "48"
+  hexadecimal: "30"
+
+  # Basic Info
+  # These are crude associations, and will serve as inputs for the interpreted meaning 
+  basic_info: 
+    desc: "This card represents the profound wisdom that emerges when one sees through deceptive appearances. It embodies the paradox of misaligned expression – the inner world of capacity without intuition or ability meeting the outer world of expectations without support or options – creating a facade that the sage penetrates. In its Sage aspect in Winter, it reveals the transcendent understanding of illusion and reality across all dimensions of existence."
+    
+    keywords: ["penetrating illusion", "unveiling deception", "seeing through appearances", "wisdom beyond facades", "discerning truth", "transcendent clarity"]
+    symbols: ["winter lake with deceptive ice thickness", "new moon revealing hidden shadows", "sage with mirror reflecting true forms", "mask falling away", "optical illusions in crystal formations", "transparent layers revealing depth"]
+  
+  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
+  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  direct_associations:
+    archetype: "Sage" # Winter is the resonant season for this hexagram (Inner 0, Outer 0)
+    archetype_color: "Turquoise"
+    gender: "Feminine" # 2 bits set to 1 in positions 1-6: Fool and Sage are feminine
+
+    ## Inner World (bits 1-3)
+    inner_world:
+      color: "Blue"
+      trigram: "Mountain"
+      meaning: "Capacity to understand but lacking intuition and ability; can see what needs to be done but feels unable to act."
+
+    ## Outer World (bits 4-6)
+    outer_world:
+      color: "Red"
+      trigram: "Wind"
+      meaning: "Alignment with expectations, but lacking support and clear options; conventional but adrift."
+
+    ## Cycle (bits 7-8)
+    cycle: 
+      season: "Winter"
+      tarot_suit: "Swords"
+      moon_phase: "New Moon"
+      element: "Air"
+
+    # Tarot
+    tarot:
+      card: "Outer Deception" # The corresponding tarot card for bits 1-6
+      cycle_suit: "Swords" # The corresponding tarot suit for bits 7-8
+      cycle_moon: "New"
+      seasonal_expression: "Outer Deception reveals profound wisdom in Winter as the Sage, showing the transcendent understanding of how appearances can mask reality across all scales of existence."
+
+    # Hexagram-related
+    hexagram:
+      i_ching:
+        number: 19
+        name: "Lin"
+        label: "Approach"
+        description: "Approaching, drawing near, advance, coming together"
+      gene_key:
+        number: 19
+        shadow: "Co-dependence"
+        gift: "Sensitivity"
+        siddhi: "Sacrifice"
+        meaning: "A journey from unhealthy attachments to attuned responsiveness and ultimately selfless surrender to the whole"
+
+  # Interpreted Meanings (combining all of the direct associations in various ways)
+  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  interpreted_meanings: 
+    basic:
+      name_6bit: "Outer Deception"
+      name_8bit: "The New Deception"
+
+    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
+    oracle_card:
+      card_name: "Penetrating Illusion"
+      card_creature: "A female sage whose eyes see through all deceptive layers, whose hands hold a crystal that reverses illusions, revealing the underlying patterns beneath appearances while herself remaining transparent as if made of clear ice"
+      question_posed: "Where might you benefit from seeing through appearances to perceive the reality beneath illusions?"
+      card_scene: "A serene female sage stands in a winter landscape of optical illusions and deceptive surfaces. Her form appears partially transparent, as if made of clear ice, embodying her ability to exist beyond the realm of appearances. Her penetrating gaze seems to look not at objects but through them, perceiving their underlying structure. In her hands she holds a remarkable crystal that acts as an illusion-reverser – when viewed through it, all deceptions become transparent, revealing the actual structures beneath. The winter landscape around her is filled with naturally occurring optical illusions – ice that appears solid but is dangerously thin in places, snow drifts that hide their true depth, shadows that seem to move independently of their sources. A new moon provides minimal light, casting subtle shadows that reveal contours invisible in direct illumination. The sage stands at the boundary between multiple realities – one side shows the world as it appears, with beautiful but deceptive ice formations, while the other side shows the same scene with all illusions stripped away, revealing both dangers and opportunities that were hidden. In the distance, people can be seen struggling with the illusions – some assuming thin ice is solid, others missing paths hidden by snow – while a few have noticed the sage and are approaching for guidance. Throughout the scene, at different scales, the same pattern of illusion/reality dualities manifests: microscopic ice crystals with hidden structural flaws, animals with camouflage being revealed by the sage's presence, distant astronomical phenomena whose light creates false impressions of their current state. Various tools for penetrating illusion lie nearby – mirrors positioned to reveal hidden angles, prisms separating light into constituent frequencies, lenses that correct for perceptual distortions. The sage's expression shows neither judgment nor surprise at the deceptions, but deep compassion for those still caught in illusions, having herself traversed the difficult journey from appearance to reality. The entire scene conveys the profound wisdom that emerges when one develops the capacity to see through deceptive appearances, perceiving the underlying patterns that unite seeming contradictions."
+      universal_symbol: "The transparency crystal – the tool that reverses illusion, representing the capacity to see through appearances to the underlying reality"
+      mood: "Penetrating clarity, transcendent insight, the profound understanding that emerges when one develops the capacity to see beyond appearances to the reality beneath"
+
+      # Image generation prompt
+      prompt_for_image_gen: "Limited color risograph-style illustration of a serene female sage standing in a winter landscape of optical illusions, her form partially transparent as if made of clear ice, holding a crystal that reverses illusions to reveal underlying structures.
+      Use BLUE for foreground elements (inner world) and RED for background/environment (outer world), with turquoise and cool silver accents.
+      Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '00110000' and card title 'PENETRATING ILLUSION' in bold, without corner decorations or symbols.
+      Feature a new moon casting subtle shadows, ice that appears solid but shows dangerous thinness when seen through the crystal, optical illusions in snow formations, and people in the distance struggling with deceptive appearances.
+      The scene should evoke the mood of penetrating clarity and transcendent insight, incorporating subtle seasonal/elemental references appropriate for Winter (Air/Winter symbols, the way ice creates optical illusions, how cold air allows for exceptional clarity of vision).
+      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean. Clearly depict the sage as feminine, with graceful features and a penetrating yet compassionate expression."
+      
+  # Related Cards
+  related_cards: 
+    # Season variations of the same card
+    same_card_winter: "00110000" # Outer Deception in Winter (Sage) - this card
+    same_card_spring: "00110010" # Outer Deception in Spring (Fool)
+    same_card_summer: "00110011" # Outer Deception in Summer (Hero)
+    same_card_fall: "00110001" # Outer Deception in Fall (Monster)
+        
+    # Opposites
+    opposite: "11001111" # Inner Truth in Summer - penetrating illusion vs. resonant truth
+    
+    # Thematic pairs
+    thematic_pair: "00000000" # The Moon in Winter - hidden mystery related to penetrating illusion
+    
+    # Complete cycle
+    full_cycle: ["00110000","00110010","00110011","00110001"] # Outer Deception in all seasons
+    
+  # Bit Values
+  bit_values:
+    bit1: "0"  # Intuition
+    bit2: "0"  # Ability
+    bit3: "1"  # Capacity
+    bit4: "1"  # Expectations
+    bit5: "0"  # Support
+    bit6: "0"  # Options
+    bit78: "00" # Cycle phase (Winter)
+
+  # Fractal Manifestations
+  fractal_meanings:
+    quantum:
+      pattern: "Quantum measurement problem - observation creating apparent but incomplete reality"
+      insight: "What we perceive as reality may be just one facet of a more complex underlying truth"
+    
+    biological:
+      pattern: "Mimicry and camouflage in organisms that appear as something they are not"
+      insight: "Nature itself uses deceptive appearances, teaching us to look beyond surface impressions"
+    
+    psychological:
+      pattern: "The persona - the social mask that often differs from our true psychological makeup"
+      insight: "We all present facades that may not reflect our inner reality, creating universal empathy"
+    
+    social:
+      pattern: "Institutional facades that project values different from operational realities"
+      insight: "Systems often develop presentational layers that obscure their actual functioning"
+    
+    ecological:
+      pattern: "Indicator species whose health or decline reveals hidden ecosystem conditions"
+      insight: "The visible aspects of systems may mislead unless we know which signs truly indicate health"
+    
+    cosmic:
+      pattern: "Light from distant stars showing past conditions rather than current reality"
+      insight: "Even our most direct perceptions may show us not what is, but what was"

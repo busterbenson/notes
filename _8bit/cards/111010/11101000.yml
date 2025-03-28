@@ -1,0 +1,111 @@
+# Card 11101000.yml - Patient Hero in Winter
+card:
+  # Summary
+  binary:      "11101000"  # 8-bit binary code
+  decimal:     "232"       # Decimal equivalent
+  hexadecimal: "E8"        # Hexadecimal equivalent
+
+  # Basic Info
+  basic_info: 
+    desc: "The Patient Hero represents masterful endurance and disciplined waiting. This card embodies Hexagram 5 (Waiting) expressed through Winter's qualities of stillness and conservation, creating a powerful figure who perseveres through the harshest conditions without wasted action. The Hero archetype transforms waiting into an act of courage and skill, holding steady when others would rush or retreat. With complete inner resources activated against a backdrop of minimal external support, this figure demonstrates that sometimes the most heroic action is knowing when not to act."
+    
+    keywords: ["Disciplined restraint", "Enduring vigilance", "Courageous patience", "Strategic stillness", "Powerful waiting", "Masterful timing"]
+    symbols: ["Snow-covered sentinel", "Frozen lake", "Hibernating bear", "Unmelted candle", "Coiled spring", "Suspended arrow"]
+  
+  # Direct Associations
+  direct_associations:
+    archetype: "Hero" # Determined by resonant season and seasonal cycle
+    archetype_color: "Gold" # Sage: Iridescent, Fool: Turquoise, Hero: Gold, Monster: Purple
+    gender: "masculine" # With 4 bits set to 1, Hero is masculine
+
+    ## Inner World (bits 1-3)
+    inner_world:
+      color: "White" # From rgb_colors mapping
+      trigram: "☰" # From i_ching_trigrams mapping (Heaven)
+      meaning: "Complete presence of inner resources; self-sufficient, confident, and fully equipped" # From composite_frameworks.inner_world.meanings
+
+    ## Outer World (bits 4-6)
+    outer_world:
+      color: "Green" # From rgb_colors mapping
+      trigram: "☵" # From i_ching_trigrams mapping (Water)
+      meaning: "Support present, but lacking alignment with expectations and clear options" # From composite_frameworks.outer_world.meanings
+
+    ## Cycle (bits 7-8)
+    cycle: 
+      season: "Winter" # From bit_definitions.bit78.meanings
+      tarot_suit: "Swords" # From bit_definitions.bit78.meanings
+      moon_phase: "New Moon" # From bit_definitions.bit78.meanings
+      element: "Air" # From bit_definitions.bit78.meanings
+
+    # Tarot
+    tarot:
+      card: "Five" # The corresponding tarot card for bits 1-6
+      cycle_suit: "Swords" # The corresponding tarot suit for bits 7-8
+      cycle_moon: "New Moon"
+      seasonal_expression: "The Five's energy of challenge and adaptation expressed through the masterful action of the Hero, modified by Winter's qualities of stillness and conservation, creating a powerful figure who turns waiting itself into a skillful act."
+
+    # Hexagram-related
+    hexagram:
+      i_ching:
+        number: 5
+        name: "Xu"
+        label: "Waiting"
+        description: "Patience, anticipation, nourishment, timing"
+      gene_key:
+        number: 5
+        shadow: "Impatience"
+        gift: "Patience"
+        siddhi: "Timelessness"
+        meaning: "A journey from restless urgency to calm waiting and ultimately freedom from the constraints of time"
+
+  # Interpreted Meanings
+  interpreted_meanings: 
+    basic:
+      name_6bit: "Waiting"
+      name_8bit: "Patient Hero in Winter"
+
+    # Oracle card creation
+    oracle_card:
+      card_name: "The Resolute Guardian"
+      # 4 bits set to 1, so Hero and Monster are masculine, Fool and Sage are feminine
+      card_creature: "A masculine hero with frost-rimmed armor, perfectly still and alert at his solitary post. His vital strength is evident, not in movement but in his unflinching vigilance despite the bitter cold. His breath forms delicate ice crystals in the air with each measured exhalation."
+      question_posed: "Where in your life does true strength require you to wait rather than act, and how can you transform that waiting into a heroic stance?"
+      card_scene: "A masculine warrior stands motionless at a snow-covered mountain pass as twilight falls. His armor gleams with a thin layer of frost that has formed during his long watch, yet his posture reveals no fatigue. One hand rests on his sheathed sword - ready but not drawn - while the other holds a lantern barely kindled, conserving its fuel for the moment when light will be most needed. Behind him stretches a frozen lake, its surface unbroken like a mirror reflecting the new moon barely visible in the darkening sky. A hibernating bear sleeps in a cave nearby, embodying the winter's lesson of strategic conservation. At the hero's feet, a small spring of water remains unfrozen, representing the vital force that persists even in deepest winter. His eyes scan the horizon with intense focus, waiting for precisely the right moment that only he will recognize."
+      universal_symbol: "A perfectly balanced sword standing upright on its point, defying gravity in complete stillness"
+      mood: "Disciplined alertness, focused restraint, unshakable determination"
+
+      # Image generation prompt
+      prompt_for_image_gen: "Limited color risograph-style illustration of a frost-covered warrior standing guard at a snowy mountain pass.
+      Use white for foreground elements (inner world) and green for background/environment (outer world), with deep blue and silver accents for highlights.
+      Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '11101000' and card title 'THE RESOLUTE GUARDIAN' in bold, without corner decorations or symbols.
+      Feature a frozen lake, new moon, sheathed sword, small lantern, and hibernating bear in a cave.
+      The scene should evoke the mood of disciplined alertness and unshakable determination, and incorporate subtle seasonal/elemental references appropriate for Winter.
+      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
+      
+  # Related Cards
+  related_cards: 
+    # Season variations of the same card
+    same_card_winter: "11101000" # Waiting in Winter
+    same_card_spring: "11101010" # Waiting in Spring
+    same_card_summer: "11101011" # Waiting in Summer
+    same_card_fall: "11101001" # Waiting in Fall
+        
+    # Opposites
+    opposite: "00010111" # Progress in Fall
+    
+    # Related thematically
+    thematic_pair: "11001100" # Inner Truth in Winter
+    
+    # Complete cycle - order depends on resonant season, always starts with Sage
+    full_cycle: ["11101010","11101001","11101000","11101011"] # Spring (Sage), Fall (Fool), Winter (Hero), Summer (Monster)
+    
+  # Bit Values - for reference and calculation
+  bit_values:
+    bit1: "1"  # Intuition
+    bit2: "1"  # Ability
+    bit3: "1"  # Capacity
+    bit4: "0"  # Expectations
+    bit5: "1"  # Support
+    bit6: "0"  # Options
+    bit78: "00" # Cycle phase = Winter

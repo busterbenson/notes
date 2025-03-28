@@ -1,0 +1,111 @@
+# Card 11101001.yml - Patient Fool in Fall
+card:
+  # Summary
+  binary:      "11101001"  # 8-bit binary code
+  decimal:     "233"       # Decimal equivalent
+  hexadecimal: "E9"        # Hexadecimal equivalent
+
+  # Basic Info
+  basic_info: 
+    desc: "The Patient Fool represents innocent waiting without expectation or calculation. This card embodies Hexagram 5 (Waiting) expressed through Fall's qualities of release and letting go, creating a childlike surrender to time's flow. The Fool archetype brings beginner's mind to the experience of waiting, finding joy and discovery in the process itself rather than fixating on outcomes. With strong inner resources but minimal external structure, this figure waits with playful curiosity rather than strategic intent."
+    
+    keywords: ["Innocent waiting", "Playful patience", "Present-moment awareness", "Surrendered curiosity", "Uncalculated timing", "Beginner's patience"]
+    symbols: ["Autumn leaves drifting", "Scarecrow in field", "Child watching clouds", "Half-empty nest", "Falling feather", "Tide pool"]
+  
+  # Direct Associations
+  direct_associations:
+    archetype: "Fool" # Determined by resonant season and seasonal cycle
+    archetype_color: "Turquoise" # Sage: Iridescent, Fool: Turquoise, Hero: Gold, Monster: Purple
+    gender: "masculine" # With 4 bits set to 1, Fool is masculine
+
+    ## Inner World (bits 1-3)
+    inner_world:
+      color: "White" # From rgb_colors mapping
+      trigram: "☰" # From i_ching_trigrams mapping (Heaven)
+      meaning: "Complete presence of inner resources; self-sufficient, confident, and fully equipped" # From composite_frameworks.inner_world.meanings
+
+    ## Outer World (bits 4-6)
+    outer_world:
+      color: "Green" # From rgb_colors mapping
+      trigram: "☵" # From i_ching_trigrams mapping (Water)
+      meaning: "Support present, but lacking alignment with expectations and clear options" # From composite_frameworks.outer_world.meanings
+
+    ## Cycle (bits 7-8)
+    cycle: 
+      season: "Fall" # From bit_definitions.bit78.meanings
+      tarot_suit: "Pentacles" # From bit_definitions.bit78.meanings
+      moon_phase: "Waning Moon" # From bit_definitions.bit78.meanings
+      element: "Earth" # From bit_definitions.bit78.meanings
+
+    # Tarot
+    tarot:
+      card: "Five" # The corresponding tarot card for bits 1-6
+      cycle_suit: "Pentacles" # The corresponding tarot suit for bits 7-8
+      cycle_moon: "Waning Moon"
+      seasonal_expression: "The Five's energy of challenge and adaptation expressed through the playful discovery of the Fool, modified by Fall's qualities of release and letting go, creating an innocent waiting that finds delight in the process."
+
+    # Hexagram-related
+    hexagram:
+      i_ching:
+        number: 5
+        name: "Xu"
+        label: "Waiting"
+        description: "Patience, anticipation, nourishment, timing"
+      gene_key:
+        number: 5
+        shadow: "Impatience"
+        gift: "Patience"
+        siddhi: "Timelessness"
+        meaning: "A journey from restless urgency to calm waiting and ultimately freedom from the constraints of time"
+
+  # Interpreted Meanings
+  interpreted_meanings: 
+    basic:
+      name_6bit: "Waiting"
+      name_8bit: "Patient Fool in Fall"
+
+    # Oracle card creation
+    oracle_card:
+      card_name: "The Wandering Dreamer"
+      # 4 bits set to 1, so Hero and Monster are masculine, Fool and Sage are feminine
+      card_creature: "A young male fool with tousled hair adorned with autumn leaves, lounging comfortably in a half-harvested field. His eyes follow the patterns of clouds and falling leaves with genuine wonder, completely unconcerned with time's passage."
+      question_posed: "How might you discover joy in the waiting itself, rather than fixating solely on what you're waiting for?"
+      card_scene: "A youthful male figure reclines in a golden autumn field, his back against a weathered scarecrow. He balances a red leaf on his fingertip, watching it spin with childlike fascination. Around him, the harvest is partially complete - some stalks stand tall while others lie cut, representing time's selective passage. In the background, a stream winds through the landscape, its banks littered with fallen leaves that drift slowly with the current. The waning moon is visible in the afternoon sky, matching the season's energy of gentle release. A small nest with one remaining egg sits nearby, symbolizing patient anticipation. The fool's pack lies open beside him, suggesting he has paused his journey not from weariness but from spontaneous delight in the moment."
+      universal_symbol: "A single autumn leaf suspended in mid-air, neither rising nor falling"
+      mood: "Relaxed curiosity, unhurried wonder, spontaneous attentiveness"
+
+      # Image generation prompt
+      prompt_for_image_gen: "Limited color risograph-style illustration of a young man relaxing in an autumn field.
+      Use white for foreground elements (inner world) and green for background/environment (outer world), with rusty orange and brown accents for highlights.
+      Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '11101001' and card title 'THE WANDERING DREAMER' in bold, without corner decorations or symbols.
+      Feature falling autumn leaves, a scarecrow, a waning moon, a half-harvested field, and a wandering stream with floating leaves.
+      The scene should evoke the mood of relaxed curiosity and unhurried wonder, and incorporate subtle seasonal/elemental references appropriate for Fall.
+      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
+      
+  # Related Cards
+  related_cards: 
+    # Season variations of the same card
+    same_card_winter: "11101000" # Waiting in Winter
+    same_card_spring: "11101010" # Waiting in Spring
+    same_card_summer: "11101011" # Waiting in Summer
+    same_card_fall: "11101001" # Waiting in Fall
+        
+    # Opposites
+    opposite: "00010110" # Progress in Summer
+    
+    # Related thematically
+    thematic_pair: "11001101" # Inner Truth in Fall
+    
+    # Complete cycle - order depends on resonant season, always starts with Sage
+    full_cycle: ["11101010","11101001","11101000","11101011"] # Spring (Sage), Fall (Fool), Winter (Hero), Summer (Monster)
+    
+  # Bit Values - for reference and calculation
+  bit_values:
+    bit1: "1"  # Intuition
+    bit2: "1"  # Ability
+    bit3: "1"  # Capacity
+    bit4: "0"  # Expectations
+    bit5: "1"  # Support
+    bit6: "0"  # Options
+    bit78: "01" # Cycle phase = Fall

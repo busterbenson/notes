@@ -1,0 +1,111 @@
+# Card 11101011.yml - Patient Monster in Summer
+card:
+  # Summary
+  binary:      "11101011"  # 8-bit binary code
+  decimal:     "235"       # Decimal equivalent
+  hexadecimal: "EB"        # Hexadecimal equivalent
+
+  # Basic Info
+  basic_info: 
+    desc: "The Patient Monster represents obsessive waiting taken to destructive extremes. This card embodies Hexagram 5 (Waiting) twisted by Summer's excessive energies, creating a figure consumed by anticipation to the point of paralysis. The Monster archetype transforms patience into a toxic fixation, waiting so long that opportunities wither and relationships decay. With powerful inner resources but distorted external connections, this figure demonstrates how even the virtue of patience can become monstrous when intensified beyond balance."
+    
+    keywords: ["Obsessive waiting", "Paralyzed anticipation", "Chronophobia", "Suspended animation", "Wasted opportunity", "Destructive delay"]
+    symbols: ["Stagnant pool", "Cracked hourglass", "Wilting plants", "Vulture perched", "Dried riverbed", "Chained figure"]
+  
+  # Direct Associations
+  direct_associations:
+    archetype: "Monster" # Determined by resonant season and seasonal cycle
+    archetype_color: "Purple" # Sage: Iridescent, Fool: Turquoise, Hero: Gold, Monster: Purple
+    gender: "masculine" # With 4 bits set to 1, Monster is masculine
+
+    ## Inner World (bits 1-3)
+    inner_world:
+      color: "White" # From rgb_colors mapping
+      trigram: "☰" # From i_ching_trigrams mapping (Heaven)
+      meaning: "Complete presence of inner resources; self-sufficient, confident, and fully equipped" # From composite_frameworks.inner_world.meanings
+
+    ## Outer World (bits 4-6)
+    outer_world:
+      color: "Green" # From rgb_colors mapping
+      trigram: "☵" # From i_ching_trigrams mapping (Water)
+      meaning: "Support present, but lacking alignment with expectations and clear options" # From composite_frameworks.outer_world.meanings
+
+    ## Cycle (bits 7-8)
+    cycle: 
+      season: "Summer" # From bit_definitions.bit78.meanings
+      tarot_suit: "Cups" # From bit_definitions.bit78.meanings
+      moon_phase: "Full Moon" # From bit_definitions.bit78.meanings
+      element: "Water" # From bit_definitions.bit78.meanings
+
+    # Tarot
+    tarot:
+      card: "Five" # The corresponding tarot card for bits 1-6
+      cycle_suit: "Cups" # The corresponding tarot suit for bits 7-8
+      cycle_moon: "Full Moon"
+      seasonal_expression: "The Five's energy of challenge and adaptation twisted by the monstrous shadow side, modified by Summer's qualities of excess and fullness, creating an obsessive waiting that becomes its own prison."
+
+    # Hexagram-related
+    hexagram:
+      i_ching:
+        number: 5
+        name: "Xu"
+        label: "Waiting"
+        description: "Patience, anticipation, nourishment, timing"
+      gene_key:
+        number: 5
+        shadow: "Impatience"
+        gift: "Patience"
+        siddhi: "Timelessness"
+        meaning: "A journey from restless urgency to calm waiting and ultimately freedom from the constraints of time"
+
+  # Interpreted Meanings
+  interpreted_meanings: 
+    basic:
+      name_6bit: "Waiting"
+      name_8bit: "Patient Monster in Summer"
+
+    # Oracle card creation
+    oracle_card:
+      card_name: "The Eternal Waiter"
+      # 4 bits set to 1, so Hero and Monster are masculine, Fool and Sage are feminine
+      card_creature: "A masculine figure grown gaunt from excessive stillness, trapped in his own waiting. His body is partially transformed into stone, with vines and moss growing over his lower half. His eyes remain fixed on a distant horizon that never changes, refusing to acknowledge the decay around him."
+      question_posed: "In what situation has your patience become a prison rather than a virtue, and how might you recognize when waiting has become destructive procrastination?"
+      card_scene: "Under the harsh glare of the summer full moon, a masculine figure sits on a throne-like rock beside a stagnant pool. His lower body has begun petrifying into stone, with small plants taking root in the cracks of his calcified legs. Around him, what was once a vibrant garden has withered in the excessive heat - flowers droop and fruit rots on vines, opportunities missed through excessive delay. A cracked hourglass lies shattered at his feet, the sand within hardened to glass from the intense heat. Water that once flowed freely through the garden has receded, leaving only a brackish pool where insects breed. Despite the decay surrounding him, the figure's gaze remains locked on the distant horizon, watching for a sign that may never come. His hands clutch a scroll so tightly the parchment has begun to tear, yet he refuses to unroll it to read its message. A vulture perches patiently nearby, embodying the predatory aspect of excessive waiting."
+      universal_symbol: "A cracked hourglass with the sand fused into immovable glass"
+      mood: "Obsessive fixation, paralyzed anticipation, stagnant intensity"
+
+      # Image generation prompt
+      prompt_for_image_gen: "Limited color risograph-style illustration of a half-petrified man on a stone throne beside a stagnant pool.
+      Use white for foreground elements (inner world) and green for background/environment (outer world), with deep purple and sickly yellow accents for highlights.
+      Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '11101011' and card title 'THE ETERNAL WAITER' in bold, without corner decorations or symbols.
+      Feature a full moon, cracked hourglass, withered plants, vulture, and mossy growth overtaking the figure's lower body.
+      The scene should evoke the mood of obsessive fixation and stagnant intensity, and incorporate subtle seasonal/elemental references appropriate for Summer.
+      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
+      
+  # Related Cards
+  related_cards: 
+    # Season variations of the same card
+    same_card_winter: "11101000" # Waiting in Winter
+    same_card_spring: "11101010" # Waiting in Spring
+    same_card_summer: "11101011" # Waiting in Summer
+    same_card_fall: "11101001" # Waiting in Fall
+        
+    # Opposites
+    opposite: "00010100" # Progress in Winter
+    
+    # Related thematically
+    thematic_pair: "11001111" # Inner Truth in Summer
+    
+    # Complete cycle - order depends on resonant season, always starts with Sage
+    full_cycle: ["11101010","11101001","11101000","11101011"] # Spring (Sage), Fall (Fool), Winter (Hero), Summer (Monster)
+    
+  # Bit Values - for reference and calculation
+  bit_values:
+    bit1: "1"  # Intuition
+    bit2: "1"  # Ability
+    bit3: "1"  # Capacity
+    bit4: "0"  # Expectations
+    bit5: "1"  # Support
+    bit6: "0"  # Options
+    bit78: "11" # Cycle phase = Summer

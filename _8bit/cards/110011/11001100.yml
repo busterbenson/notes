@@ -1,0 +1,139 @@
+# Card 11001100.yml - Inner Truth in Winter (Hero)
+card:
+  # Summary
+  binary:      "11001100"
+  decimal:     "204"
+  hexadecimal: "CC"
+
+  # Basic Info
+  # These are crude associations, and will serve as inputs for the interpreted meaning 
+  basic_info: 
+    desc: "This card represents the masterful embodiment of authentic self-expression in action. It shows inner truth manifesting as skilled performance – the inner world of intuition and ability aligned with the outer world of expectations and support – creating powerful resonant impact. In its Hero aspect in Winter, it reveals how integrity becomes a transformative force when embodied with confidence and expertise."
+    
+    keywords: ["embodied truth", "resonant mastery", "skilled integrity", "authentic action", "congruent performance", "truth in motion"]
+    symbols: ["winter forge with perfect acoustics", "new moon creating sharp shadows", "master craftsman using tuning instruments", "metal refined to perfect resonance", "concentric patterns in ice formations", "crystalline structures amplifying sound"]
+  
+  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
+  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  direct_associations:
+    archetype: "Hero" # Winter follows Fall in the cycle for this hexagram (Sage in Summer)
+    archetype_color: "Turquoise"
+    gender: "Masculine" # 4 bits set to 1 in positions 1-6: Hero and Monster are masculine
+
+    ## Inner World (bits 1-3)
+    inner_world:
+      color: "Yellow"
+      trigram: "Lake"
+      meaning: "Intuitive and skilled but lacking resources; has the vision and ability but needs space to execute."
+
+    ## Outer World (bits 4-6)
+    outer_world:
+      color: "Cyan"
+      trigram: "Thunder"
+      meaning: "Support and options present, but misaligned with expectations; alternative paths with backing."
+
+    ## Cycle (bits 7-8)
+    cycle: 
+      season: "Winter"
+      tarot_suit: "Swords"
+      moon_phase: "New Moon"
+      element: "Air"
+
+    # Tarot
+    tarot:
+      card: "Inner Truth" # The corresponding tarot card for bits 1-6
+      cycle_suit: "Swords" # The corresponding tarot suit for bits 7-8
+      cycle_moon: "New"
+      seasonal_expression: "Inner Truth manifests as masterful action in Winter as the Hero, embodying authenticity through skilled performance with precision and confidence."
+
+    # Hexagram-related
+    hexagram:
+      i_ching:
+        number: 61
+        name: "Zhong Fu"
+        label: "Inner Truth"
+        description: "Inner sincerity, central truth, integrity, confidence"
+      gene_key:
+        number: 61
+        shadow: "Psychosis"
+        gift: "Inspiration"
+        siddhi: "Sanctity"
+        meaning: "A journey from mental fragmentation to creative insight and ultimately reverence for the divine in all things"
+
+  # Interpreted Meanings (combining all of the direct associations in various ways)
+  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  interpreted_meanings: 
+    basic:
+      name_6bit: "Inner Truth"
+      name_8bit: "The New Truth"
+
+    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
+    oracle_card:
+      card_name: "Truth in Action"
+      card_creature: "A masterful male craftsman whose hands work with perfect precision, creating instruments that reveal the resonant frequency of all they touch, his entire being aligned in the service of bringing inner truth into physical form"
+      question_posed: "Where might your authentic self-expression become a transformative force through skilled action?"
+      card_scene: "A focused male craftsman works in a winter forge, the outside world crystalline with ice and snow while his workspace resonates with the precise sounds of his craft. Unlike the female sage's serene contemplation or the female child's innocent discovery, this man actively embodies truth through skilled action and applied mastery. His hands work with extraordinary precision on what appears to be a tuning instrument of unprecedented design – perhaps a tuning fork, bell, or stringed device – that will reveal the resonant frequency of anything it touches. The darkness outside is illuminated only by starlight and a thin crescent moon, with the forge itself creating a pocket of warmth and focused energy within the winter landscape. The craftsman's expression shows neither the detachment of wisdom nor the naivety of wonder, but rather the complete absorption of mastery – where authentic action flows without separation between doer and deed. Around the forge, various materials are arranged with perfect order – metals of different compositions, crystals of precise geometries, tools carefully calibrated – each selected for their acoustic properties. When struck or activated, they create harmonic overtones that seem to reveal their essential nature. Ice crystals form on the edges of the workshop windows, growing in patterns that precisely match the harmonic frequencies being produced inside – as if the sound waves themselves are organizing matter. The objects being crafted appear deceptively simple, yet contain sophisticated principles of resonance, harmonics, and wave propagation that the craftsman understands intuitively through years of dedicated practice. Apprentices watch from a respectful distance, attempting to mimic his techniques but unable to match the integrity of his approach – not because they lack skill, but because his work emerges from complete authenticity rather than mere technique. Various fields of resonant patterns are visible throughout the scene – sound waves in the air, harmonics in metal, crystal structures, architectural acoustics – all showing how the same patterns of truth manifest at different scales and in different materials. The entire scene conveys the transformative power that emerges when inner authenticity becomes embodied in skilled action – how truth becomes a transformative force in the world when expressed through mastery."
+      universal_symbol: "The resonant instrument – the tool that both detects and creates perfect harmony, representing how embodied authenticity transforms the material world"
+      mood: "Embodied mastery, resonant action, the transformative power that emerges when inner truth manifests through skilled performance and confident expertise"
+
+      # Image generation prompt
+      prompt_for_image_gen: "Limited color risograph-style illustration of a focused male craftsman working in a winter forge, crafting a sophisticated tuning instrument with extraordinary precision, his entire workspace organized around principles of acoustic resonance.
+      Use YELLOW for foreground elements (inner world) and CYAN for background/environment (outer world), with turquoise and crisp white accents.
+      Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '11001100' and card title 'TRUTH IN ACTION' in bold, without corner decorations or symbols.
+      Feature a new moon visible through window, ice crystals forming in resonant patterns, various metals and materials arranged in precise order, and apprentices watching the master's technique from a distance.
+      The scene should evoke the mood of embodied mastery and resonant action, incorporating subtle seasonal/elemental references appropriate for Winter (Air/Winter symbols, the way sound travels purely in cold air, the crystalline clarity of winter's acoustic properties).
+      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean. Clearly depict the craftsman as masculine, with strong features and an expression of focused determination."
+      
+  # Related Cards
+  related_cards: 
+    # Season variations of the same card
+    same_card_summer: "11001111" # Inner Truth in Summer (Sage)
+    same_card_fall: "11001101" # Inner Truth in Fall (Fool)
+    same_card_winter: "11001100" # Inner Truth in Winter (Hero) - this card
+    same_card_spring: "11001110" # Inner Truth in Spring (Monster)
+        
+    # Opposites
+    opposite: "00110011" # Outer Deception in Summer
+    
+    # Thematic pairs
+    thematic_pair: "11111100" # The Sun in Winter - skilled illumination related to embodied truth
+    
+    # Complete cycle
+    full_cycle: ["11001111","11001101","11001100","11001110"] # Inner Truth in all seasons
+    
+  # Bit Values
+  bit_values:
+    bit1: "1"  # Intuition
+    bit2: "1"  # Ability
+    bit3: "0"  # Capacity
+    bit4: "0"  # Expectations
+    bit5: "1"  # Support
+    bit6: "1"  # Options
+    bit78: "00" # Cycle phase (Winter)
+
+  # Fractal Manifestations
+  fractal_meanings:
+    quantum:
+      pattern: "Precision quantum measurement revealing true particle states"
+      insight: "Mastery allows us to perceive truth that remains hidden to casual observation"
+    
+    biological:
+      pattern: "Immune system precisely identifying self vs. non-self"
+      insight: "Truth in action requires discernment between authentic and inauthentic elements"
+    
+    psychological:
+      pattern: "Flow state where action and awareness merge into perfect performance"
+      insight: "Mastery happens when we embody truth so completely that we become the action itself"
+    
+    social:
+      pattern: "Leadership that embodies authentic values, creating organizational integrity"
+      insight: "True influence flows from congruence between proclaimed values and actual behavior"
+    
+    ecological:
+      pattern: "Keystone species that maintain ecosystem integrity through their actions"
+      insight: "Some truths must be actively maintained through continuous authentic engagement"
+    
+    cosmic:
+      pattern: "Stellar nucleosynthesis creating increasingly complex elements"
+      insight: "Truth expressed through mastery builds increasing complexity and possibility"

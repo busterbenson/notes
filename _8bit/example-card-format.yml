@@ -21,6 +21,7 @@ card:
   direct_associations:
     archetype: "[Sage/Fool/Hero/Monster]" # Determined by resonant season and seasonal cycle
     archetype_color: "[Color]" # Sage: Iridescent, Fool: Turquoise, Hero: Gold, Monster: Purple
+    gender: "[neutral/masculine/feminine]" # neutral, masculine, or feminine based on logic in associations.yml
 
     ## Inner World (bits 1-3)
     inner_world:
@@ -73,11 +74,12 @@ card:
     # Follow style guidelines for consistent deck creation
     oracle_card:
       card_name: "[Evocative name for the card]"
-      # For the card_creature, use the gender determined by bit count:
+      # GENDER ASSIGNMENT IS REQUIRED - count the 1s in bits 1-6 and apply the corresponding gender:
       # - For 3 or 5 bits set to 1: Hero and Monster are feminine, Fool and Sage are masculine
       # - For 2 or 4 bits set to 1: Hero and Monster are masculine, Fool and Sage are feminine
       # - For 0 or 6 bits set to 1: All archetypes are gender-neutral
-      card_creature: "[Description of the mythological figure or character that embodies this card's energy, with appropriate gender based on bit count]"
+      # Always use explicit gender terms like "feminine", "masculine", "female", "male" or "gender-neutral"
+      card_creature: "[Description of the mythological figure or character that embodies this card's energy, with EXPLICIT gender terms based on bit count]"
       question_posed: "[Question this card asks the querent]"
       card_scene: "[Detailed description of the card's imagery, incorporating all symbolic elements, colors, and archetype - maintain consistent gender representation]"
       universal_symbol: "[Core symbol that captures the essence of this card]"
