@@ -1,56 +1,56 @@
-# Card 11111100.yml - The Sun in Winter (Hero)
+# Card 11111100.yml - Creative Hero in Winter
 card:
   # Summary
-  binary:      "11111100"
-  decimal:     "252"
-  hexadecimal: "FC"
+  binary:      "11111100"  # 8-bit binary code
+  decimal:     "252"       # Decimal equivalent
+  hexadecimal: "FC"        # Hexadecimal equivalent
 
   # Basic Info
-  # These are crude associations, and will serve as inputs for the interpreted meaning 
   basic_info: 
-    desc: "This card represents illumination combined with masterful, directed action. All resources are present and purposefully deployed with skill and confidence. It embodies the heroic, triumphant expression of clarity used in service of achievement and creation."
+    desc: "The Creative Hero represents masterful manifestation and skilled creation. This card captures the essence of Hexagram 1 (Qian/The Creative) expressed through Winter's qualities of focus and crystallization. As the Hero in the cycle, this figure approaches creation with skill, precision, and strategic vision. With all resources fully activated and directed through Winter's clarity and focus, there is a powerful capacity to transform vision into reality through disciplined action. The heroism comes from the ability to bring creative potential into material form through masterful skill."
     
-    keywords: ["directed illumination", "masterful clarity", "confident achievement", "radiant action", "illuminated will", "triumphant light"]
-    symbols: ["winter sun", "warrior in sunlight", "solar chariot", "blooming through snow", "golden tools", "dawn of achievement"]
+    keywords: ["Masterful manifestation", "Skilled creation", "Strategic vision", "Creative discipline", "Directed power", "Purposeful genesis"]
+    symbols: ["Winter sun", "Diamond-like perfection", "Sculpted ice", "Golden tools", "Architectural blueprint", "Solar shield"]
   
-  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
-  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  # Direct Associations
   direct_associations:
-    archetype: "Hero" # Following the cycle from Summer (Sage) through Fall (Fool) to Winter (Hero)
-    archetype_color: "Gold"
+    archetype: "Hero" # Determined by resonant season and seasonal cycle
+    archetype_color: "Gold" # Sage: Iridescent, Fool: Turquoise, Hero: Gold, Monster: Purple
+    gender: "gender-neutral" # With 6 bits set to 1, all archetypes are gender-neutral
 
     ## Inner World (bits 1-3)
     inner_world:
-      color: "White"
-      trigram: "Heaven"
-      meaning: "Complete presence of inner resources; intuition, ability, and capacity are all present."
+      color: "White" # From rgb_colors mapping
+      trigram: "☰" # From i_ching_trigrams mapping (Heaven)
+      meaning: "Complete presence of inner resources; self-sufficient, confident, and fully equipped" # From composite_frameworks.inner_world.meanings
 
     ## Outer World (bits 4-6)
     outer_world:
-      color: "White"
-      trigram: "Heaven"
-      meaning: "Complete presence of outer resources; expectations, support, and options are all present."
+      color: "White" # From rgb_colors mapping
+      trigram: "☰" # From i_ching_trigrams mapping (Heaven)
+      meaning: "Complete presence of outer resources; aligned with expectations, supported by others, with clear options" # From composite_frameworks.outer_world.meanings
 
     ## Cycle (bits 7-8)
     cycle: 
-      season: "Winter"
-      tarot_suit: "Swords"
-      moon_phase: "New Moon"
-      element: "Air"
+      season: "Winter" # From bit_definitions.bit78.meanings
+      tarot_suit: "Swords" # From bit_definitions.bit78.meanings
+      moon_phase: "New Moon" # From bit_definitions.bit78.meanings
+      element: "Air" # From bit_definitions.bit78.meanings
 
     # Tarot
     tarot:
       card: "The Sun" # The corresponding tarot card for bits 1-6
       cycle_suit: "Swords" # The corresponding tarot suit for bits 7-8
-      cycle_moon: "New"
-      seasonal_expression: "The Sun finds masterful expression in Winter as the Hero, directing illumination with skill and purpose toward triumphant achievement."
+      cycle_moon: "New Moon"
+      seasonal_expression: "The Sun's energy of illumination expressed through the masterful action of the Hero, modified by Winter's qualities of focus and crystallization, creating a figure who transforms vision into reality through skilled creation."
 
     # Hexagram-related
     hexagram:
       i_ching:
         number: 1
-        name: "Qian (The Creative)"
-        meaning: "Pure yang, creativity, strength, initiative, leadership"
+        name: "Qian"
+        label: "The Creative"
+        description: "Pure yang, creativity, strength, initiative, leadership"
       gene_key:
         number: 1
         shadow: "Entropy"
@@ -58,62 +58,49 @@ card:
         siddhi: "Beauty"
         meaning: "A journey from decay and disorder to renewal and perpetual freshness, ultimately revealing the inherent beauty in all things"
 
-  # Interpreted Meanings (combining all of the direct associations in various ways)
-  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  # Interpreted Meanings
   interpreted_meanings: 
     basic:
-      name_6bit: "The Sun"
-      name_8bit: "The Winter Sun"
+      name_6bit: "The Creative"
+      name_8bit: "Creative Hero in Winter"
 
-    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
-    # Style guidelines: Inspired by the clear and simple design of the Rider Waite Smith deck, the 
-    # vibe of the Brady Tarot deck, the mythology of Hilda, and the humor and complexity of the Arcane Bullshit deck. 
-    # The card should use a limited color palette, lines as if created via risograph, be full-bleed, 
-    # include the name on the card, as well as the card_scene, some hint of the resonant season, and the universal symbol.
-    # The names of the cards should feel like they are part of a cohesive deck, and be completely devoid of cliches.
-    # Be sure to work in the colors (inner = foreground, outer = background) as well as the actual 8-bit binary code that this 
+    # Oracle card creation
     oracle_card:
-      card_name: "Golden Achievement"
-      card_creature: "A solar champion whose skillful hands shape light into form, creating with perfect confidence and masterful ability"
-      question_posed: "How might you direct your complete clarity and abundant resources toward meaningful achievement?"
-      card_scene: "A radiant figure stands in a snowy winter landscape, working with golden tools that seem to be extensions of their own hands. Every movement is purposeful and skilled as they shape light itself into tangible forms—architectural structures, art pieces, plants that bloom instantly despite the snow. The figure wears light as armor, not for protection but as a visible manifestation of inner strength. The winter sun casts long, precise shadows that the figure appears to be using as measuring tools. Their breath, visible in the cold air, forms geometric patterns that seem to be part of their creative process. Where the figure's feet touch the snow, it doesn't melt but rather crystallizes into more perfect, geometrically precise snowflakes. In their hands, they're creating a complex model or blueprint made entirely of light."
-      universal_symbol: "The lens - concentrated light focused with precision for maximum effect"
-      mood: "Directed mastery, confident creation, triumphant achievement through skill"
+      card_name: "The Master Builder"
+      # 6 bits set to 1, so all archetypes are gender-neutral
+      card_creature: "A gender-neutral creator whose hands shape light and matter with perfect skill and precision, neither masculine nor feminine but rather a pure embodiment of creative mastery. Their form combines the strength of a warrior with the precision of an artist, manifesting creative vision with disciplined expertise."
+      question_posed: "What vision are you ready to manifest through disciplined creation and masterful skill?"
+      card_scene: "A gender-neutral figure stands in a crystalline winter landscape, their form radiating clarity and purpose. They wear armor made of condensed light that serves as both protection and creative tool. In their hands, they manipulate floating geometric blueprints made of pure light, which immediately translate into physical form in the landscape around them. As they gesture, ice and snow reshape into intricate architectural structures, perfectly balanced between beauty and function. The winter sun casts long, precise shadows that the figure deliberately incorporates into their creation, using them as measuring tools and structural elements. Their breath, visible in the cold air, forms perfect geometric patterns that seem to solidify into crystalline structures before being integrated into the larger creation. Where they touch the ground, snow crystallizes into more perfect, geometrically precise patterns, enhancing rather than disrupting the natural environment. Around them, various precision tools float within easy reach – golden calipers, rulers, and chisels that seem to be extensions of their own being rather than separate implements. The entire scene communicates masterful creation – not through domination of materials, but through perfect understanding of their nature."
+      universal_symbol: "The precision lens - focusing creative energy with exact purpose and skill"
+      mood: "Masterful precision, creative discipline, strategic manifestation"
 
-      # USE THIS PROMPT TEMPLATE BUT FILL IN WITH SPECIFIC DETAILS FOR THIS CARD:
-      # Limited color risograph-style illustration of [short scene description].
-      # Use [INNER WORLD COLOR] for foreground elements (inner world) and [OUTER WORLD COLOR] for background/environment (outer world), with [ACCENT COLOR] for highlights.
-      # Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
-      # Include a clean, full-width title bar at the bottom, with centered 8-bit code "[XXXXXXXX]" and card title "[CARD TITLE]" in bold, without corner decorations or symbols.
-      # Feature [key symbolic elements, e.g., moon phase, animal companions, symbolic object].
-      # The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle seasonal/elemental references appropriate for [SEASON] (e.g., [Air/Winter], [Fire/Spring], [Water/Summer], [Earth/Fall]).
-      # Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean.
-      prompt_for_image_gen: "Limited color risograph-style illustration of a radiant figure shaping light with golden tools in a winter landscape.
-      Use WHITE for foreground elements (inner world) and WHITE for background/environment (outer world), with gold and crystalline blue accents.
+      # Image generation prompt
+      prompt_for_image_gen: "Limited color risograph-style illustration of a gender-neutral figure in light armor manipulating geometric blueprints in a winter landscape.
+      Use white for foreground elements (inner world) and white for background/environment (outer world), with gold and crystalline blue accents for highlights.
       Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
-      Include a clean, full-width title bar at the bottom, with centered 8-bit code '11111100' and card title 'GOLDEN ACHIEVEMENT' in bold, without corner decorations or symbols.
-      Feature light as armor, geometric breath patterns in cold air, winter sun casting precise shadows, perfect snowflake formations, and hands creating light blueprints.
-      The scene should evoke the mood of directed mastery and confident creation, incorporating subtle seasonal/elemental references appropriate for Winter (Air/Winter symbols, geometric precision, crystalline structures).
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '11111100' and card title 'THE MASTER BUILDER' in bold, without corner decorations or symbols.
+      Feature golden precision tools, light blueprints materializing into structures, geometric breath patterns, perfect snow crystals, and the new moon in a clear winter sky.
+      The scene should evoke the mood of masterful precision and creative discipline, and incorporate subtle seasonal/elemental references appropriate for Winter.
       Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
       
   # Related Cards
   related_cards: 
     # Season variations of the same card
-    same_card_winter: "11111100" # The Sun in Winter (Hero)
-    same_card_spring: "11111110" # The Sun in Spring (Monster)
-    same_card_summer: "11111111" # The Sun in Summer (Sage)
-    same_card_fall: "11111101" # The Sun in Fall (Fool)
+    same_card_winter: "11111100" # The Creative in Winter
+    same_card_spring: "11111110" # The Creative in Spring
+    same_card_summer: "11111111" # The Creative in Summer
+    same_card_fall: "11111101" # The Creative in Fall
         
     # Opposites
-    opposite: "00000011" # The Moon in Summer - heroic darkness vs. heroic light
+    opposite: "00000011" # The Receptive in Summer
     
     # Related thematically
-    thematic_pair: "11000000" # The Magician in Winter - masterful manifestation related to masterful clarity
+    thematic_pair: "01010100" # Before Completion in Winter
     
-    # Complete cycle
-    full_cycle: ["11111111","11111110","11111100","11111101"] # The Sun in all seasons
+    # Complete cycle - order depends on resonant season, always starts with Sage
+    full_cycle: ["11111111","11111101","11111100","11111110"] # Summer (Sage), Fall (Fool), Winter (Hero), Spring (Monster)
     
-  # Bit Values
+  # Bit Values - for reference and calculation
   bit_values:
     bit1: "1"  # Intuition
     bit2: "1"  # Ability
@@ -121,4 +108,4 @@ card:
     bit4: "1"  # Expectations
     bit5: "1"  # Support
     bit6: "1"  # Options
-    bit78: "00" # Cycle phase (Winter)
+    bit78: "00" # Cycle phase = Winter

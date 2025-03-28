@@ -1,108 +1,106 @@
-# Card 00110001.yml - Outer Deception in Fall (Monster)
+# Card 00110001.yml - Small Exceeding Monster in Fall
 card:
   # Summary
-  binary:      "00110001"
-  decimal:     "49"
-  hexadecimal: "31"
+  binary:      "00110001"  # 8-bit binary code
+  decimal:     "49"        # Decimal equivalent
+  hexadecimal: "31"        # Hexadecimal equivalent
 
   # Basic Info
-  # These are crude associations, and will serve as inputs for the interpreted meaning 
   basic_info: 
-    desc: "This card represents the shadow side of deceptive appearances when they consume identity itself. It shows the dangerous transformation when one becomes the illusion – the inner world of capacity without intuition or ability merged with the outer world of expectations without support or options – intensified to the point of complete disconnection from reality. In its Monster aspect in Fall, it reveals how facades can overwhelm authenticity until the mask consumes the wearer."
+    desc: "The Small Exceeding Monster represents the shadow of precision when it becomes excessive perfectionism. This card captures the essence of Hexagram 62 (Xiao Guo/Small Exceeding) expressed through Fall's qualities of decline and letting go. As the Monster in the cycle, this figure distorts precision into obsession, lost in minutiae while missing the whole. With inner capacity but no intuition or ability, and outer expectations without support or options, this figure becomes trapped in endless analysis and correction. The monster transforms refinement into a destructive force, where the pursuit of perfect detail becomes a prison."
     
-    keywords: ["consuming illusion", "lost in deception", "overwhelming facade", "identity consumed", "reality disconnection", "mask becoming face"]
-    symbols: ["autumn mirrors reflecting distortions", "waning moon with false coloration", "figure merged with multiple masks", "map completely replaced by territory", "creature consumed by its own camouflage", "hall of mirrors with no exit"]
+    keywords: ["Obsessive perfectionism", "Paralytic analysis", "Destructive precision", "Excessive refinement", "Detail fixation", "Self-defeating exactitude"]
+    symbols: ["Shattered measuring tools", "Autumn leaves obsessively arranged", "Broken clockwork", "Microscope showing flaws", "Endlessly corrected manuscript", "Forest missed for trees"]
   
-  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
-  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  # Direct Associations
   direct_associations:
-    archetype: "Monster" # Fall follows Summer in the cycle for this hexagram (Sage in Winter)
-    archetype_color: "Iridescent"
-    gender: "Masculine" # 2 bits set to 1 in positions 1-6: Hero and Monster are masculine
+    archetype: "Monster" # Determined by resonant season and seasonal cycle
+    archetype_color: "Purple" # Sage: Iridescent, Fool: Turquoise, Hero: Gold, Monster: Purple
+    gender: "masculine" # With 2 bits set to 1, Monster is masculine
 
     ## Inner World (bits 1-3)
     inner_world:
-      color: "Blue"
-      trigram: "Mountain"
-      meaning: "Capacity to understand but lacking intuition and ability; can see what needs to be done but feels unable to act."
+      color: "Blue" # From rgb_colors mapping
+      trigram: "☶" # From i_ching_trigrams mapping (Mountain)
+      meaning: "Capacity to understand but lacking intuition and ability; can see what needs to be done but feels unable to act" # From composite_frameworks.inner_world.meanings
 
     ## Outer World (bits 4-6)
     outer_world:
-      color: "Red"
-      trigram: "Wind"
-      meaning: "Alignment with expectations, but lacking support and clear options; conventional but adrift."
+      color: "Red" # From rgb_colors mapping
+      trigram: "☴" # From i_ching_trigrams mapping (Wind)
+      meaning: "Alignment with expectations, but lacking support and clear options; conventional but adrift" # From composite_frameworks.outer_world.meanings
 
     ## Cycle (bits 7-8)
     cycle: 
-      season: "Fall"
-      tarot_suit: "Pentacles"
-      moon_phase: "Waning Moon"
-      element: "Earth"
+      season: "Fall" # From bit_definitions.bit78.meanings
+      tarot_suit: "Pentacles" # From bit_definitions.bit78.meanings
+      moon_phase: "Waning Moon" # From bit_definitions.bit78.meanings
+      element: "Earth" # From bit_definitions.bit78.meanings
 
     # Tarot
     tarot:
-      card: "Outer Deception" # The corresponding tarot card for bits 1-6
+      card: "The Emperor" # The corresponding tarot card for bits 1-6
       cycle_suit: "Pentacles" # The corresponding tarot suit for bits 7-8
-      cycle_moon: "Waning"
-      seasonal_expression: "Outer Deception transforms into its destructive shadow in Fall as the Monster, when the gap between appearance and reality consumes identity itself, leaving nothing but facade."
+      cycle_moon: "Waning Moon"
+      seasonal_expression: "The Emperor's energy of structure and order twisted into excessive control and micromanagement in Fall as the Monster, creating a destructive pursuit of impossible standards where perfect precision becomes obsession."
 
     # Hexagram-related
     hexagram:
       i_ching:
-        number: 19
-        name: "Lin"
-        label: "Approach"
-        description: "Approaching, drawing near, advance, coming together"
+        number: 62
+        name: "Xiao Guo"
+        label: "Small Exceeding"
+        description: "Minor excess, slight imbalance, small surpassing"
       gene_key:
-        number: 19
-        shadow: "Co-dependence"
-        gift: "Sensitivity"
-        siddhi: "Sacrifice"
-        meaning: "A journey from unhealthy attachments to attuned responsiveness and ultimately selfless surrender to the whole"
+        number: 62
+        shadow: "Intellectualization"
+        gift: "Precision"
+        siddhi: "Impeccability"
+        meaning: "A journey from excessive mental analysis to focused accuracy and ultimately flawless perfection in every detail"
 
-  # Interpreted Meanings (combining all of the direct associations in various ways)
-  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  # Interpreted Meanings
   interpreted_meanings: 
     basic:
-      name_6bit: "Outer Deception"
-      name_8bit: "The Waning Deception"
+      name_6bit: "Small Exceeding"
+      name_8bit: "Small Exceeding Monster in Fall"
 
-    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
+    # Oracle card creation
     oracle_card:
-      card_name: "Consuming Facade"
-      card_creature: "A male figure whose identity has been consumed by his own deceptions, his body dissolving into hundreds of contradictory masks and reflections, unable to distinguish between the illusions he created and his actual self which has become lost in the process"
-      question_posed: "Where might you be in danger of becoming so identified with appearances that you lose connection with your authentic self?"
-      card_scene: "A grotesquely transformed male figure stands at the center of an autumn landscape that has become a hall of mirrors, his body no longer maintaining a coherent form but dissolving into countless masks, reflections, and constructed identities. Unlike the female sage's penetrating wisdom, the female child's innocent questioning, or the male hero's skilled navigation, this figure has lost all distinction between illusion and reality. His form appears to be composed entirely of masks and fragments of false personas that once served as tools but have now fused with his being. A waning moon hangs low in the sky, but its reflection appears in hundreds of mirrors throughout the scene, each showing a slightly different phase, color, or orientation – creating a visual cacophony where the true moon can no longer be identified. The autumn landscape itself seems uncertain of its nature – leaves appear frozen in mid-fall yet somehow still attached to branches, colors shift unpredictably, and physical laws seem to operate inconsistently in different parts of the scene. The figure's expression – or rather expressions, as his face constantly shifts between different masks – shows a desperate search for something solid amid the cascade of appearances. Tools similar to those carried by the Hero navigator lie shattered and useless at his feet, having failed when turned upon illusions that had been internalized rather than remaining external. Mirrors positioned throughout the scene create infinite regresses of reflection, with each iteration showing a slightly different version of the figure and landscape, suggesting the endless hall of distortion that opens when appearance fully disconnects from reality. Various natural and artificial objects in the scene demonstrate the same pattern of identity consumption – a chameleon that has shifted colors so many times it has lost its original form, buildings whose facades have grown to replace their actual structures, maps that have been altered to match inaccurate territories rather than representing reality. The entire scene conveys the terrifying transformation that occurs when the gap between appearance and reality grows so great that authentic identity is lost, leaving only a cascade of contradictory facades with nothing solid beneath."
-      universal_symbol: "The endless hall of mirrors – reflections creating infinite regress with each showing a different distortion, representing how identity dissolves when facades multiply without foundation"
-      mood: "Identity dissolution, consuming facade, the terrifying state that emerges when one becomes so identified with appearances that authentic self is lost entirely"
+      card_name: "The Obsessive Perfectionist"
+      # 2 bits set to 1, so Monster is masculine
+      card_creature: "A masculine figure consumed by the pursuit of impossible perfection, his mind splintered into endless analysis of minutiae. His form combines the rigidity of mountain with chaotic wind currents, embodying the destructive outcome when precision loses connection with purpose."
+      question_posed: "Where in your life has the pursuit of perfection become destructive rather than refining?"
+      card_scene: "A gaunt masculine figure sits hunched in an autumn workshop littered with abandoned projects, each discarded for imperceptible flaws. Unlike the sage's transcendent wisdom, the child's innocent discovery, or the hero's masterful achievement, this figure has become consumed by impossible standards of precision. His workspace is illuminated by the harsh light of a waning moon that casts exaggerated shadows, making every minor imperfection seem monstrous. His hands, once skilled, have become cramped into rigid claws from endless attempts at perfect execution, while his eyes are bloodshot from manic focus on details invisible to others. Around him, hundreds of autumn leaves have been meticulously arranged in patterns of decreasing size and increasing precision, yet he continues to tear apart his work at the slightest deviation. Measuring instruments of extraordinary sensitivity cover every surface – calipers that measure to microns, scales that detect the weight of dust, clocks that mark nanoseconds – yet all have been declared inadequate by their owner. The workshop floor is littered with manuscripts covered in obsessive corrections, projects abandoned just before completion, and precision tools thrown aside in frustration. In one corner stands a bookshelf filled with reference materials, each tome dog-eared and annotated to the point of illegibility. What began as the gift of precision has become its shadow of intellectualization – this figure has lost all perspective, missing the purpose of his work while drowning in analytical detail. Most disturbing is his expression – a mixture of suffering and compulsion that shows he cannot stop his pursuit of impossible standards despite knowing it destroys everything he creates. In the corner, a nearly finished clockwork masterpiece sits abandoned, a single imperceptible flaw having rendered months of work 'worthless' in his distorted perception."
+      universal_symbol: "The broken measuring tool – precision that has exceeded its useful limits and fractured under its own demanding standards"
+      mood: "Obsessive perfectionism, paralyzing analysis, the destructive state that emerges when refinement loses perspective and becomes an end in itself"
 
       # Image generation prompt
-      prompt_for_image_gen: "Limited color risograph-style illustration of a grotesquely transformed male figure at the center of an autumn landscape turned hall of mirrors, his body dissolving into countless contradictory masks and reflections, unable to maintain coherent form.
-      Use BLUE for foreground elements (inner world) and RED for background/environment (outer world), with iridescent and copper-brown accents.
+      prompt_for_image_gen: "Limited color risograph-style illustration of a gaunt masculine figure hunched over in an autumn workshop littered with abandoned projects and obsessively arranged autumn leaves, surrounded by ultra-precise measuring instruments.
+      Use blue for foreground elements (inner world) and red for background/environment (outer world), with purple and copper-brown accents for highlights.
       Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
-      Include a clean, full-width title bar at the bottom, with centered 8-bit code '00110001' and card title 'CONSUMING FACADE' in bold, without corner decorations or symbols.
-      Feature a waning moon reflected in multiple mirrors each showing different phases, autumn leaves frozen in mid-fall yet still attached to branches, shattered navigation tools at the figure's feet, and mirrors creating infinite regresses of reflection with slight differences in each iteration.
-      The scene should evoke the mood of identity dissolution and consuming facade, incorporating subtle seasonal/elemental references appropriate for Fall (Earth/Fall symbols, falling leaves that never quite land, the solid element of earth becoming unstable and shifting).
-      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean. Clearly depict the figure as masculine with features constantly shifting between different masks and identities."
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '00110001' and card title 'THE OBSESSIVE PERFECTIONIST' in bold, without corner decorations or symbols.
+      Feature hands cramped into rigid claws, bloodshot eyes, manuscripts covered in endless corrections, shattered precision tools, a nearly-finished clockwork abandoned for a single flaw, and the waning moon visible through a window.
+      The scene should evoke the mood of obsessive perfectionism and paralytic analysis, and incorporate subtle seasonal/elemental references appropriate for Fall.
+      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
       
   # Related Cards
   related_cards: 
     # Season variations of the same card
-    same_card_winter: "00110000" # Outer Deception in Winter (Sage)
-    same_card_spring: "00110010" # Outer Deception in Spring (Fool)
-    same_card_summer: "00110011" # Outer Deception in Summer (Hero)
-    same_card_fall: "00110001" # Outer Deception in Fall (Monster) - this card
+    same_card_winter: "00110000" # Small Exceeding in Winter
+    same_card_spring: "00110010" # Small Exceeding in Spring
+    same_card_summer: "00110011" # Small Exceeding in Summer
+    same_card_fall: "00110001" # Small Exceeding in Fall
         
     # Opposites
-    opposite: "11001110" # Inner Truth in Spring - consuming facade vs. overwhelming resonance
+    opposite: "11001110" # Inner Truth in Spring
     
-    # Thematic pairs
-    thematic_pair: "00000001" # The Moon in Fall - lost in mystery related to consuming facade
+    # Related thematically
+    thematic_pair: "00000001" # The Receptive in Fall
     
-    # Complete cycle
-    full_cycle: ["00110000","00110010","00110011","00110001"] # Outer Deception in all seasons
+    # Complete cycle - order depends on resonant season, always starts with Sage
+    full_cycle: ["00110000","00110010","00110011","00110001"] # Winter (Sage), Spring (Fool), Summer (Hero), Fall (Monster)
     
-  # Bit Values
+  # Bit Values - for reference and calculation
   bit_values:
     bit1: "0"  # Intuition
     bit2: "0"  # Ability
@@ -110,30 +108,30 @@ card:
     bit4: "1"  # Expectations
     bit5: "0"  # Support
     bit6: "0"  # Options
-    bit78: "01" # Cycle phase (Fall)
+    bit78: "01" # Cycle phase = Fall
 
   # Fractal Manifestations
   fractal_meanings:
     quantum:
-      pattern: "Quantum decoherence when observation system becomes too entangled with observed system"
-      insight: "When the observer becomes too involved with what's observed, both lose definition"
+      pattern: "The observer effect becoming so extreme it destroys the measurement itself"
+      insight: "When precision becomes too demanding, it collapses under its own requirements"
     
     biological:
-      pattern: "Parasites that so completely mimic host cells that the immune system itself is compromised"
-      insight: "Deception that penetrates too deeply destroys the very systems meant to detect it"
+      pattern: "Autoimmune disorders where the body's precision targeting system attacks healthy cells"
+      insight: "Systems of refinement that become so strict they destroy what they were meant to perfect"
     
     psychological:
-      pattern: "The false self becoming so elaborate that authentic identity is lost in performance"
-      insight: "Personas created for protection can eventually imprison what they were meant to protect"
+      pattern: "Obsessive-compulsive patterns where the mind's error-detection system becomes hypersensitive"
+      insight: "When our pursuit of improvement becomes disconnected from purpose, it transforms into self-sabotage"
     
     social:
-      pattern: "Institutions that become so committed to appearance that their original purpose is forgotten"
-      insight: "Systems designed to represent reality can eventually replace what they were meant to reflect"
+      pattern: "Bureaucracies that become so rule-bound they can no longer serve their original purpose"
+      insight: "Organizations focused on perfect process often lose sight of their reason for existing"
     
     ecological:
-      pattern: "Invasive species that so perfectly mimic native species they replace them entirely"
-      insight: "When imitation is too successful, it can erase what was being imitated"
+      pattern: "Monocultures that sacrifice resilience and diversity for standardized perfection"
+      insight: "Natural systems require variation and 'imperfection' to remain adaptable and sustainable"
     
     cosmic:
-      pattern: "Virtual realities that become indistinguishable from and preferred to actual reality"
-      insight: "Maps that replace territories ultimately leave us unable to navigate actual landscapes"
+      pattern: "The theoretical heat death of the universe - perfect thermal equilibrium as a state of maximum entropy"
+      insight: "Perfect order at one level of analysis can manifest as complete disorder at another scale"

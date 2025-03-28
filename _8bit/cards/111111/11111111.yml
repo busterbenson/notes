@@ -1,56 +1,56 @@
-# Card 11111111.yml - The Sun in Summer (Sage)
+# Card 11111111.yml - Creative Sage in Summer
 card:
   # Summary
-  binary:      "11111111"
-  decimal:     "255"
-  hexadecimal: "FF"
+  binary:      "11111111"  # 8-bit binary code
+  decimal:     "255"       # Decimal equivalent
+  hexadecimal: "FF"        # Hexadecimal equivalent
 
   # Basic Info
-  # These are crude associations, and will serve as inputs for the interpreted meaning 
   basic_info: 
-    desc: "This card represents illumination tempered with profound wisdom. All resources are present but expressed with transcendent understanding and mature perspective. It embodies enlightened clarity that sees both the particular and universal simultaneously."
+    desc: "The Creative Sage represents the pinnacle of integration and illumination. This card captures the essence of Hexagram 1 (Qian/The Creative) expressed through Summer's qualities of abundance and fulfillment. As the most integrated form of this hexagram, the Summer Sage embodies perfect clarity and transcendent understanding. With all resources fully activated and accessible, this figure represents consciousness that has achieved both complete individuation and universal perspective. The wisdom comes from the integration of all possibilities, seeing both particular details and universal patterns simultaneously."
     
-    keywords: ["enlightened clarity", "wise illumination", "transcendent sight", "mature perspective", "balanced awareness", "illuminated wisdom"]
-    symbols: ["summer sun at zenith", "prism dispersing light", "ancient sun dial", "ripened fruit in sunlight", "elder's eyes reflecting light"]
+    keywords: ["Transcendent clarity", "Enlightened awareness", "Integrated consciousness", "Cosmic perspective", "Mature illumination", "Perfect balance"]
+    symbols: ["Zenith sun", "Fractal pattern", "Prism dispersing light", "Ripe fruit", "Golden ratio", "Multifaceted eyes"]
   
-  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
-  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  # Direct Associations
   direct_associations:
-    archetype: "Sage" # Summer is the resonant season for this hexagram (Inner 1, Outer 1)
-    archetype_color: "Iridescent"
+    archetype: "Sage" # Determined by resonant season and seasonal cycle
+    archetype_color: "Iridescent" # Sage: Iridescent, Fool: Turquoise, Hero: Gold, Monster: Purple
+    gender: "gender-neutral" # With 6 bits set to 1, all archetypes are gender-neutral
 
     ## Inner World (bits 1-3)
     inner_world:
-      color: "White"
-      trigram: "Heaven"
-      meaning: "Complete presence of inner resources; intuition, ability, and capacity are all present."
+      color: "White" # From rgb_colors mapping
+      trigram: "☰" # From i_ching_trigrams mapping (Heaven)
+      meaning: "Complete presence of inner resources; self-sufficient, confident, and fully equipped" # From composite_frameworks.inner_world.meanings
 
     ## Outer World (bits 4-6)
     outer_world:
-      color: "White"
-      trigram: "Heaven"
-      meaning: "Complete presence of outer resources; expectations, support, and options are all present."
+      color: "White" # From rgb_colors mapping
+      trigram: "☰" # From i_ching_trigrams mapping (Heaven)
+      meaning: "Complete presence of outer resources; aligned with expectations, supported by others, with clear options" # From composite_frameworks.outer_world.meanings
 
     ## Cycle (bits 7-8)
     cycle: 
-      season: "Summer"
-      tarot_suit: "Cups"
-      moon_phase: "Full Moon"
-      element: "Water"
+      season: "Summer" # From bit_definitions.bit78.meanings
+      tarot_suit: "Cups" # From bit_definitions.bit78.meanings
+      moon_phase: "Full Moon" # From bit_definitions.bit78.meanings
+      element: "Water" # From bit_definitions.bit78.meanings
 
     # Tarot
     tarot:
       card: "The Sun" # The corresponding tarot card for bits 1-6
       cycle_suit: "Cups" # The corresponding tarot suit for bits 7-8
-      cycle_moon: "Full"
-      seasonal_expression: "The Sun reveals profound wisdom in Summer as the Sage, illuminating both the particular and universal with perfect clarity and transcendent understanding."
+      cycle_moon: "Full Moon"
+      seasonal_expression: "The Sun's energy of illumination expressed through the wisdom of the Sage, modified by Summer's qualities of abundance and fulfillment, creating a profound integration of universal awareness with particular attention."
 
     # Hexagram-related
     hexagram:
       i_ching:
         number: 1
-        name: "Qian (The Creative)"
-        meaning: "Pure yang, creativity, strength, initiative, leadership"
+        name: "Qian"
+        label: "The Creative"
+        description: "Pure yang, creativity, strength, initiative, leadership"
       gene_key:
         number: 1
         shadow: "Entropy"
@@ -58,62 +58,49 @@ card:
         siddhi: "Beauty"
         meaning: "A journey from decay and disorder to renewal and perpetual freshness, ultimately revealing the inherent beauty in all things"
 
-  # Interpreted Meanings (combining all of the direct associations in various ways)
-  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  # Interpreted Meanings
   interpreted_meanings: 
     basic:
-      name_6bit: "The Sun"
-      name_8bit: "The Full Sun"
+      name_6bit: "The Creative"
+      name_8bit: "Creative Sage in Summer"
 
-    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
-    # Style guidelines: Inspired by the clear and simple design of the Rider Waite Smith deck, the 
-    # vibe of the Brady Tarot deck, the mythology of Hilda, and the humor and complexity of the Arcane Bullshit deck. 
-    # The card should use a limited color palette, lines as if created via risograph, be full-bleed, 
-    # include the name on the card, as well as the card_scene, some hint of the resonant season, and the universal symbol.
-    # The names of the cards should feel like they are part of a cohesive deck, and be completely devoid of cliches.
-    # Be sure to work in the colors (inner = foreground, outer = background) as well as the actual 8-bit binary code that this 
+    # Oracle card creation
     oracle_card:
-      card_name: "Enlightened Clarity"
-      card_creature: "A solar sage whose eyes contain all possible perspectives, holding both detail and wholeness in perfect balance"
-      question_posed: "How might you integrate complete clarity with transcendent understanding, seeing both individual trees and the entire forest simultaneously?"
-      card_scene: "An elderly sage sits beneath a tree heavy with summer fruit, in a quality of light that suggests midday zenith. The sage's eyes appear multifaceted like a dragonfly's, suggesting the ability to see all perspectives simultaneously. Their hands hold a complex geometric object that resembles both a prism and a seed—light moves through it creating rainbow patterns that match the veining in the leaves above. A perfectly balanced sun is visible overhead, appearing neither harsh nor weak, but radiantly temperate. Around the sage, various instruments for measuring light—sundials, lenses, mirrors—are arranged in a pattern that suggests the golden ratio. Each tool captures light differently yet all work together in harmony. The sage's shadow is not dark but translucent, revealing deeper layers beneath the visible world."
-      universal_symbol: "The fractal - pattern that reveals whole systems within their smallest parts"
+      card_name: "The Radiant Integrator"
+      # 6 bits set to 1, so all archetypes are gender-neutral
+      card_creature: "A gender-neutral sage whose form seems to both embody and transcend light itself, appearing neither distinctly masculine nor feminine but rather as a perfect integration of all possible expressions. Their body seems composed of crystalline light structures that reflect and refract awareness in all directions simultaneously."
+      question_posed: "Where in your life are you ready to integrate all perspectives and possibilities into a unified vision that excludes nothing yet maintains perfect clarity?"
+      card_scene: "A gender-neutral sage sits in perfect meditation beneath a fruit-laden tree at the height of summer noon. Their form appears simultaneously solid and transparent, with skin that seems to contain fractal patterns that mirror both the cellular structure of the leaves above and the cosmic patterns of distant galaxies. Their eyes are multifaceted like a dragonfly's, suggesting the ability to perceive all perspectives simultaneously. Surrounding the sage is a perfectly arranged mandala of measuring instruments - sundials, prisms, lenses, and mirrors - each capturing light differently yet all working in harmonic resonance. The sage holds a geometric object that functions as both prism and seed, through which light passes and emerges as rainbow patterns that exactly match the veining in the leaves above and the root structure below. The summer sun directly overhead casts no harsh shadows but rather illuminates everything with perfect clarity, revealing the underlying patterns that connect all things. The sage's own shadow is not dark but translucent, revealing deeper dimensions beneath the visible world. Small creatures - butterflies, hummingbirds, bees - dance around the sage in patterns that trace out the golden ratio, neither drawn to nor repelled by the sage's presence but simply in perfect natural harmony with it."
+      universal_symbol: "The fractal - a pattern that reveals whole systems within their smallest parts, perfect self-similarity across all scales"
       mood: "Transcendent understanding, enlightened perspective, the peace of complete integration"
 
-      # USE THIS PROMPT TEMPLATE BUT FILL IN WITH SPECIFIC DETAILS FOR THIS CARD:
-      # Limited color risograph-style illustration of [short scene description].
-      # Use [INNER WORLD COLOR] for foreground elements (inner world) and [OUTER WORLD COLOR] for background/environment (outer world), with [ACCENT COLOR] for highlights.
-      # Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
-      # Include a clean, full-width title bar at the bottom, with centered 8-bit code "[XXXXXXXX]" and card title "[CARD TITLE]" in bold, without corner decorations or symbols.
-      # Feature [key symbolic elements, e.g., moon phase, animal companions, symbolic object].
-      # The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle seasonal/elemental references appropriate for [SEASON] (e.g., [Air/Winter], [Fire/Spring], [Water/Summer], [Earth/Fall]).
-      # Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean.
-      prompt_for_image_gen: "Limited color risograph-style illustration of an elderly sage with multifaceted eyes sitting beneath a summer tree, holding a geometric object that functions as both prism and seed.
-      Use WHITE for foreground elements (inner world) and WHITE for background/environment (outer world), with iridescent and watery blue highlights.
+      # Image generation prompt
+      prompt_for_image_gen: "Limited color risograph-style illustration of a gender-neutral sage with crystalline skin sitting beneath a summer tree, holding a geometric object that functions as both prism and seed.
+      Use white for foreground elements (inner world) and white for background/environment (outer world), with iridescent and golden accents for highlights.
       Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
-      Include a clean, full-width title bar at the bottom, with centered 8-bit code '11111111' and card title 'ENLIGHTENED CLARITY' in bold, without corner decorations or symbols.
-      Feature rainbow light patterns from the prism, translucent shadow revealing underlying patterns, measuring instruments arranged in golden ratio, and a zenith summer sun visible overhead.
-      The scene should evoke the mood of transcendent understanding and perfect integration, incorporating subtle seasonal/elemental references appropriate for Summer (Water/Summer symbols, fruition, balanced radiance).
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '11111111' and card title 'THE RADIANT INTEGRATOR' in bold, without corner decorations or symbols.
+      Feature multifaceted eyes, measuring instruments arranged in mandala form, rainbow light patterns, translucent shadow revealing patterns, and creatures tracing golden ratio patterns.
+      The scene should evoke the mood of transcendent understanding and perfect integration, and incorporate subtle seasonal/elemental references appropriate for Summer.
       Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
       
   # Related Cards
   related_cards: 
     # Season variations of the same card
-    same_card_summer: "11111111" # The Sun in Summer (Sage) - this card
-    same_card_fall: "11111101" # The Sun in Fall (Fool)
-    same_card_winter: "11111100" # The Sun in Winter (Hero)
-    same_card_spring: "11111110" # The Sun in Spring (Monster)
+    same_card_winter: "11111100" # The Creative in Winter
+    same_card_spring: "11111110" # The Creative in Spring
+    same_card_summer: "11111111" # The Creative in Summer
+    same_card_fall: "11111101" # The Creative in Fall
         
     # Opposites
-    opposite: "00000000" # The Moon in Winter - wise darkness vs. wise light
+    opposite: "00000000" # The Receptive in Winter
     
     # Related thematically
-    thematic_pair: "10111111" # High Priestess in Summer - intuitive mystery wisdom related to enlightened clarity
+    thematic_pair: "01010101" # Before Completion in Spring
     
-    # Complete cycle
-    full_cycle: ["11111111","11111101","11111100","11111110"] # The Sun in all seasons
+    # Complete cycle - order depends on resonant season, always starts with Sage
+    full_cycle: ["11111111","11111101","11111100","11111110"] # Summer (Sage), Fall (Fool), Winter (Hero), Spring (Monster)
     
-  # Bit Values
+  # Bit Values - for reference and calculation
   bit_values:
     bit1: "1"  # Intuition
     bit2: "1"  # Ability
@@ -121,4 +108,4 @@ card:
     bit4: "1"  # Expectations
     bit5: "1"  # Support
     bit6: "1"  # Options
-    bit78: "11" # Cycle phase (Summer)
+    bit78: "11" # Cycle phase = Summer

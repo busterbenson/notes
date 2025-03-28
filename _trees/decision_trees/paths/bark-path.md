@@ -2,6 +2,9 @@
 
 Look at the bark of your tree.
 
+**Special Feature Pages:**
+- [Redwood & Sequoia Group](trees/redwood-sequoia-group.md) - Compare the distinctive reddish, spongy bark of redwoods and sequoias
+
 ```
 ├── The BARK looks interesting!
 │   ├── What's the main COLOR of the bark?

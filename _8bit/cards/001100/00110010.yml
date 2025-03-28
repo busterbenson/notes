@@ -1,108 +1,106 @@
-# Card 00110010.yml - Outer Deception in Spring (Fool)
+# Card 00110010.yml - Small Exceeding Fool in Spring
 card:
   # Summary
-  binary:      "00110010"
-  decimal:     "50"
-  hexadecimal: "32"
+  binary:      "00110010"  # 8-bit binary code
+  decimal:     "50"        # Decimal equivalent
+  hexadecimal: "32"        # Hexadecimal equivalent
 
   # Basic Info
-  # These are crude associations, and will serve as inputs for the interpreted meaning 
   basic_info: 
-    desc: "This card represents the innocent first encounter with deceptive appearances. It embodies the childlike wonder of discovering that things are not as they seem – the inner world of capacity without intuition or ability meeting the outer world of expectations without support or options – approached with beginner's mind. In its Fool aspect in Spring, it reveals the confusion and wonder of first discovering the gap between appearance and reality."
+    desc: "The Small Exceeding Fool represents the childlike discovery of precision and detail. This card captures the essence of Hexagram 62 (Xiao Guo/Small Exceeding) expressed through Spring's qualities of growth and new beginnings. As the Fool in the cycle, this figure approaches precision with innocent wonder and playful experimentation. With inner capacity but no intuition or ability, and outer expectations without support or options, this figure encounters the delicate balance of slight imbalance with fresh eyes. The fool discovers the joy of small refinements without the burden of perfectionism."
     
-    keywords: ["discovering illusion", "first disillusionment", "naive questioning", "childlike confusion", "innocent doubt", "wonder at deception"]
-    symbols: ["spring mirage on horizon", "waxing moon creating false reflections", "child confronting first mask", "butterfly emerging different than expected", "spring puddles with deceptive depth", "transparent seedlings revealing inner structure"]
+    keywords: ["Playful precision", "Innocent attention", "Curious refinement", "Detail discovery", "Fresh exactitude", "Unfiltered observation"]
+    symbols: ["Magnifying glass", "Child's first measurement", "Butterfly wing pattern", "Spring buds unfurling", "New leaves with visible veins", "Sprouting seedling"]
   
-  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
-  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  # Direct Associations
   direct_associations:
-    archetype: "Fool" # Spring follows Winter in the cycle for this hexagram (Sage in Winter)
-    archetype_color: "Gold"
-    gender: "Feminine" # 2 bits set to 1 in positions 1-6: Fool and Sage are feminine
+    archetype: "Fool" # Determined by resonant season and seasonal cycle
+    archetype_color: "Turquoise" # Sage: Iridescent, Fool: Turquoise, Hero: Gold, Monster: Purple
+    gender: "feminine" # With 2 bits set to 1, Fool is feminine
 
     ## Inner World (bits 1-3)
     inner_world:
-      color: "Blue"
-      trigram: "Mountain"
-      meaning: "Capacity to understand but lacking intuition and ability; can see what needs to be done but feels unable to act."
+      color: "Blue" # From rgb_colors mapping
+      trigram: "☶" # From i_ching_trigrams mapping (Mountain)
+      meaning: "Capacity to understand but lacking intuition and ability; can see what needs to be done but feels unable to act" # From composite_frameworks.inner_world.meanings
 
     ## Outer World (bits 4-6)
     outer_world:
-      color: "Red"
-      trigram: "Wind"
-      meaning: "Alignment with expectations, but lacking support and clear options; conventional but adrift."
+      color: "Red" # From rgb_colors mapping
+      trigram: "☴" # From i_ching_trigrams mapping (Wind)
+      meaning: "Alignment with expectations, but lacking support and clear options; conventional but adrift" # From composite_frameworks.outer_world.meanings
 
     ## Cycle (bits 7-8)
     cycle: 
-      season: "Spring"
-      tarot_suit: "Wands"
-      moon_phase: "Waxing Moon"
-      element: "Fire"
+      season: "Spring" # From bit_definitions.bit78.meanings
+      tarot_suit: "Wands" # From bit_definitions.bit78.meanings
+      moon_phase: "Waxing Moon" # From bit_definitions.bit78.meanings
+      element: "Fire" # From bit_definitions.bit78.meanings
 
     # Tarot
     tarot:
-      card: "Outer Deception" # The corresponding tarot card for bits 1-6
+      card: "The Emperor" # The corresponding tarot card for bits 1-6
       cycle_suit: "Wands" # The corresponding tarot suit for bits 7-8
-      cycle_moon: "Waxing"
-      seasonal_expression: "Outer Deception transforms into innocent wonder in Spring as the Fool, approaching the discovery of appearances versus reality with childlike confusion and curiosity."
+      cycle_moon: "Waxing Moon"
+      seasonal_expression: "The Emperor's energy of structure and order expressed through the innocent discovery of the Fool, modified by Spring's qualities of growth and beginning, creating a playful exploration of precision and detail."
 
     # Hexagram-related
     hexagram:
       i_ching:
-        number: 19
-        name: "Lin"
-        label: "Approach"
-        description: "Approaching, drawing near, advance, coming together"
+        number: 62
+        name: "Xiao Guo"
+        label: "Small Exceeding"
+        description: "Minor excess, slight imbalance, small surpassing"
       gene_key:
-        number: 19
-        shadow: "Co-dependence"
-        gift: "Sensitivity"
-        siddhi: "Sacrifice"
-        meaning: "A journey from unhealthy attachments to attuned responsiveness and ultimately selfless surrender to the whole"
+        number: 62
+        shadow: "Intellectualization"
+        gift: "Precision"
+        siddhi: "Impeccability"
+        meaning: "A journey from excessive mental analysis to focused accuracy and ultimately flawless perfection in every detail"
 
-  # Interpreted Meanings (combining all of the direct associations in various ways)
-  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  # Interpreted Meanings
   interpreted_meanings: 
     basic:
-      name_6bit: "Outer Deception"
-      name_8bit: "The Waxing Deception"
+      name_6bit: "Small Exceeding"
+      name_8bit: "Small Exceeding Fool in Spring"
 
-    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
+    # Oracle card creation
     oracle_card:
-      card_name: "First Disillusionment"
-      card_creature: "A wide-eyed female child who has just discovered a fundamental deception, her fingers touching a mirage that dissolves at her touch, her expression a mixture of wonder, confusion, and the first dawning of a more complex understanding of reality"
-      question_posed: "Where might you recapture the moment of innocent questioning when you first realized things are not always as they appear?"
-      card_scene: "A young girl stands in a spring meadow, her hand reached out to touch what appeared to be a beautiful butterfly, only to discover it's an optical illusion created by intersecting light patterns. Unlike the female sage's penetrating wisdom or mastery of illusion, the child's expression shows the mixed emotions of first disillusionment – confusion, wonder, and the dawning of a more complex understanding. The waxing moon above creates multiple reflections in puddles scattered across the meadow, each showing a slightly different phase of the moon, creating a visual puzzle that challenges perception. Around her, spring brings forth numerous natural illusions – flowers that appear to be insects to attract pollinators, puddles that seem shallow but hide unexpected depths, and mirages forming on the warm horizon. The child holds a soap bubble wand, having just created bubbles that captured miniature rainbows only to pop and disappear moments later, teaching an early lesson about beauty and impermanence. Near her feet lies a colorful mask that she has just picked up and tried on, discovering for the first time the strange experience of presenting a different face to the world than what she feels inside. Other children play nearby, still fully immersed in games of pretend, untroubled by the boundaries between imagination and reality that she has just begun to question. Various toys and objects around her demonstrate principles of illusion – a kaleidoscope showing how simple elements create complex patterns, a half-glass of water that bends light to make a pencil appear broken, a spinning top that blurs into colors different from its actual surface. A small magnifying glass rests on a rock nearby – the first tool of investigation she has begun to use to examine whether things are truly as they appear. The entire scene captures the poignant moment of first encountering the gap between appearance and reality – a necessary disillusionment that is the beginning of wisdom, approached with the openness and wonder of a child rather than the cynicism that sometimes follows."
-      universal_symbol: "The popping bubble – the beautiful illusion that disappears when touched, representing the fragile nature of appearances when first examined"
-      mood: "Innocent wonder, confused questioning, the poignant discovery that emerges when childlike perception encounters the gap between appearance and reality"
+      card_name: "The Wonder Observer"
+      # 2 bits set to 1, so Fool is feminine
+      card_creature: "A feminine child with eyes full of wonder as she discovers the intricate details of the world for the first time. Her posture combines the curiosity of natural exploration with the unexpected stillness of intense focus, embodying the innocence that allows true seeing without preconception."
+      question_posed: "Where might approaching precision with childlike wonder and without perfectionism bring joy to your life?"
+      card_scene: "A young girl with flowing hair kneels in a spring meadow, completely absorbed in examining a butterfly that has landed on her finger. Unlike an adult scientist with years of taxonomic knowledge, she sees the butterfly's wing patterns with fresh eyes, noticing details that others might overlook through familiarity. Scattered around her are simple tools of measurement and observation – a magnifying glass, a ruler, a prism – all being used in playful ways that sometimes yield surprising insights precisely because they aren't bound by conventional methodology. The spring setting provides endless objects of fascination, from the geometric precision of unfurling leaves to the mathematical spirals of new fern fronds. The girl has created a small arrangement of objects sorted by almost imperceptible variations in color, size, and texture – a natural laboratory of observation without rigid categorization. The waxing moon is visible in the afternoon sky, and she has been using puddles of water as mirrors to observe it from multiple angles simultaneously. In the background, adult figures can be seen with their attention directed elsewhere, unaware of the world of minute details the child has discovered. Unlike the obsessive intellectualizer who gets lost in analysis, her face shows pure joy in discovery, her precision coming from fascination rather than need for control. A small notebook beside her contains drawings of her observations – not technically perfect but capturing essential details that more polished illustrations might miss."
+      universal_symbol: "The butterfly wing – intricate natural precision that reveals itself to patient, wonder-filled observation"
+      mood: "Innocent discovery, fascinated attention, the joy of seeing details freshly without preconception"
 
       # Image generation prompt
-      prompt_for_image_gen: "Limited color risograph-style illustration of a wide-eyed young girl in a spring meadow, her hand reaching toward what appeared to be a butterfly that dissolves into light patterns at her touch, her expression showing confusion and wonder.
-      Use BLUE for foreground elements (inner world) and RED for background/environment (outer world), with gold and bright spring green accents.
+      prompt_for_image_gen: "Limited color risograph-style illustration of a young girl with flowing hair kneeling in a spring meadow, absorbed in examining a butterfly that has landed on her finger.
+      Use blue for foreground elements (inner world) and red for background/environment (outer world), with turquoise and spring green accents for highlights.
       Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
-      Include a clean, full-width title bar at the bottom, with centered 8-bit code '00110010' and card title 'FIRST DISILLUSIONMENT' in bold, without corner decorations or symbols.
-      Feature a waxing moon creating multiple different reflections in puddles, soap bubbles carrying miniature rainbows before popping, a colorful mask lying at her feet, and other children still playing games of pretend in the background.
-      The scene should evoke the mood of innocent wonder and confused questioning, incorporating subtle seasonal/elemental references appropriate for Spring (Fire/Spring symbols, the way spring light creates mirages, how new growth can create deceptive impressions).
-      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean. Clearly depict the child as a young girl, with feminine features and an expression mixing wonder, confusion, and dawning realization."
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '00110010' and card title 'THE WONDER OBSERVER' in bold, without corner decorations or symbols.
+      Feature a magnifying glass, a collection of objects sorted by subtle variations, unfurling leaves with visible geometric patterns, and a waxing moon visible in the daytime sky.
+      The scene should evoke the mood of innocent discovery and fascinated attention, and incorporate subtle seasonal/elemental references appropriate for Spring.
+      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
       
   # Related Cards
   related_cards: 
     # Season variations of the same card
-    same_card_winter: "00110000" # Outer Deception in Winter (Sage)
-    same_card_spring: "00110010" # Outer Deception in Spring (Fool) - this card
-    same_card_summer: "00110011" # Outer Deception in Summer (Hero)
-    same_card_fall: "00110001" # Outer Deception in Fall (Monster)
+    same_card_winter: "00110000" # Small Exceeding in Winter
+    same_card_spring: "00110010" # Small Exceeding in Spring
+    same_card_summer: "00110011" # Small Exceeding in Summer
+    same_card_fall: "00110001" # Small Exceeding in Fall
         
     # Opposites
-    opposite: "11001101" # Inner Truth in Fall - first disillusionment vs. first resonance
+    opposite: "11001101" # Inner Truth in Fall
     
-    # Thematic pairs
-    thematic_pair: "00000010" # The Moon in Spring - discovering mystery related to first disillusionment
+    # Related thematically
+    thematic_pair: "00000010" # The Receptive in Spring
     
-    # Complete cycle
-    full_cycle: ["00110000","00110010","00110011","00110001"] # Outer Deception in all seasons
+    # Complete cycle - order depends on resonant season, always starts with Sage
+    full_cycle: ["00110000","00110010","00110011","00110001"] # Winter (Sage), Spring (Fool), Summer (Hero), Fall (Monster)
     
-  # Bit Values
+  # Bit Values - for reference and calculation
   bit_values:
     bit1: "0"  # Intuition
     bit2: "0"  # Ability
@@ -110,30 +108,30 @@ card:
     bit4: "1"  # Expectations
     bit5: "0"  # Support
     bit6: "0"  # Options
-    bit78: "10" # Cycle phase (Spring)
+    bit78: "10" # Cycle phase = Spring
 
   # Fractal Manifestations
   fractal_meanings:
     quantum:
-      pattern: "First observation collapsing quantum potentiality into specific reality"
-      insight: "Our initial encounter with reality shapes but also limits what we perceive as possible"
+      pattern: "First observation without measurement bias - the ability to see quantum phenomena before imposing classical expectations"
+      insight: "The freshest observations often come before we know what we're 'supposed' to see"
     
     biological:
-      pattern: "Infant recognition that objects continue to exist when not visible (object permanence)"
-      insight: "The fundamental realization that reality exists beyond our immediate perception"
+      pattern: "Child's first recognition of small differences between similar species that adults have stopped noticing"
+      insight: "Beginner's mind can perceive subtle variations that expertise often filters out as noise"
     
     psychological:
-      pattern: "Childhood discovery that others have different mental states than our own"
-      insight: "The crucial developmental moment when we realize not everyone experiences what we do"
+      pattern: "The transition from global perception to detail awareness in cognitive development"
+      insight: "Our ability to notice details emerges as a developmental stage, but childlike wonder can recover this fresh perception"
     
     social:
-      pattern: "First recognition that social norms often mask rather than express authentic feelings"
-      insight: "The dawning awareness that social interactions involve performance and interpretation"
+      pattern: "Children noticing social dynamics and inconsistencies that adults have learned to overlook"
+      insight: "Innocent observation often cuts through social pretense to see actual patterns of interaction"
     
     ecological:
-      pattern: "Spring mirages where ecosystem appears restored before actual recovery"
-      insight: "Initial appearances of health or decline may misrepresent actual system conditions"
+      pattern: "Spring's revelation of precise ecological relationships as systems reactivate after winter"
+      insight: "Periods of renewal reveal the intricate connections that remain hidden in more stable times"
     
     cosmic:
-      pattern: "The false horizon effect where cosmos appears to have a boundary or edge"
-      insight: "Our perceptual limits create artificial boundaries where none actually exist"
+      pattern: "The beginner astronomer seeing celestial details that professionals may overlook through familiarity"
+      insight: "Fresh eyes sometimes perceive patterns that expertise has filtered out through categorical thinking"

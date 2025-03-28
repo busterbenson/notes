@@ -1,119 +1,106 @@
-# Card 00000011.yml - The Moon in Summer (Hero)
+# Card 00000011.yml - Receptive Hero in Summer
 card:
   # Summary
-  binary:      "00000011"
-  decimal:     "3"
-  hexadecimal: "03"
+  binary:      "00000011"  # 8-bit binary code
+  decimal:     "3"         # Decimal equivalent
+  hexadecimal: "03"        # Hexadecimal equivalent
 
   # Basic Info
-  # These are crude associations, and will serve as inputs for the interpreted meaning 
   basic_info: 
-    desc: "This card represents the darkness of The Moon now navigated with heroic skill and purpose. The mystery and uncertainty are not eliminated but masterfully engaged with confidence and strategic action. It embodies the skilled explorer who charts paths through the unknown."
+    desc: "The Receptive Hero represents masterful yielding and strategic receptivity. This card captures the essence of Hexagram 2 (Kun/The Receptive) expressed through Summer's qualities of abundance and fulfillment. As the Hero in the cycle, this figure approaches receptivity as a skill to be mastered, cultivating the power of perfect response. With no inner or outer resources activated but acting within Summer's vibrant energy, there is a paradoxical strength in complete surrender. The heroism comes from transforming receptivity into a form of power."
     
-    keywords: ["navigating darkness", "skilled exploration", "confident uncertainty", "masterful void", "strategic mystery", "heroic shadow work"]
-    symbols: ["full moon partially obscured", "explorer with compass", "mapped darkness", "skilled guide", "torch in shadow"]
+    keywords: ["Strategic yielding", "Masterful receptivity", "Conscious surrender", "Receptive strength", "Skilled emptiness", "Powerful vacuity"]
+    symbols: ["Still lake reflecting moon", "Open chalice", "Full-bloom lotus", "Cupped hands", "Empty throne", "Mirrored shield"]
   
-  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
-  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  # Direct Associations
   direct_associations:
-    archetype: "Hero" # Following the cycle from Winter (Sage) through Spring (Fool) to Summer (Hero)
-    archetype_color: "Gold"
+    archetype: "Hero" # Determined by resonant season and seasonal cycle
+    archetype_color: "Gold" # Sage: Iridescent, Fool: Turquoise, Hero: Gold, Monster: Purple
+    gender: "gender-neutral" # With 0 bits set to 1, all archetypes are gender-neutral
 
     ## Inner World (bits 1-3)
     inner_world:
-      color: "Black"
-      trigram: "Earth"
-      meaning: "Complete absence of inner resources; intuition, ability, and capacity are all absent."
+      color: "Black" # From rgb_colors mapping
+      trigram: "☷" # From i_ching_trigrams mapping (Earth)
+      meaning: "Complete absence of inner resources; intuition, ability, and capacity are all absent" # From composite_frameworks.inner_world.meanings
 
     ## Outer World (bits 4-6)
     outer_world:
-      color: "Black"
-      trigram: "Earth"
-      meaning: "Complete lack of outer resources; expectations, support, and options are all absent."
+      color: "Black" # From rgb_colors mapping
+      trigram: "☷" # From i_ching_trigrams mapping (Earth)
+      meaning: "Complete lack of outer resources; expectations, support, and options are all absent" # From composite_frameworks.outer_world.meanings
 
     ## Cycle (bits 7-8)
     cycle: 
-      season: "Summer"
-      tarot_suit: "Cups"
-      moon_phase: "Full Moon"
-      element: "Water"
+      season: "Summer" # From bit_definitions.bit78.meanings
+      tarot_suit: "Cups" # From bit_definitions.bit78.meanings
+      moon_phase: "Full Moon" # From bit_definitions.bit78.meanings
+      element: "Water" # From bit_definitions.bit78.meanings
 
     # Tarot
     tarot:
       card: "The Moon" # The corresponding tarot card for bits 1-6
       cycle_suit: "Cups" # The corresponding tarot suit for bits 7-8
-      cycle_moon: "Full"
-      seasonal_expression: "The Moon transforms into focused exploration in Summer as the Hero, navigating the darkness with skill and purpose."
+      cycle_moon: "Full Moon"
+      seasonal_expression: "The Moon's energy of mystery and the unconscious expressed through the masterful action of the Hero, modified by Summer's qualities of abundance and fulfillment, creating a figure who transforms yielding into a form of power."
 
     # Hexagram-related
     hexagram:
       i_ching:
         number: 2
-        name: "Kun (The Receptive)"
-        meaning: "Pure yin, yielding, responsive, accepting, following"
+        name: "Kun"
+        label: "The Receptive"
+        description: "Pure yin, yielding, responsive, accepting, following"
       gene_key:
         number: 2
         shadow: "Dislocation"
         gift: "Orientation"
         siddhi: "Unity"
-        meaning: "Finding your true direction and experiencing oneness"
+        meaning: "A journey from feeling lost and disconnected to finding your true direction and ultimately experiencing oneness with all"
 
-  # Interpreted Meanings (combining all of the direct associations in various ways)
-  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  # Interpreted Meanings
   interpreted_meanings: 
     basic:
-      name_6bit: "The Moon"
-      name_8bit: "The Full Moon"
+      name_6bit: "The Receptive"
+      name_8bit: "Receptive Hero in Summer"
 
-    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
-    # Style guidelines: Inspired by the clear and simple design of the Rider Waite Smith deck, the 
-    # vibe of the Brady Tarot deck, the mythology of Hilda, and the humor and complexity of the Arcane Bullshit deck. 
-    # The card should use a limited color palette, lines as if created via risograph, be full-bleed, 
-    # include the name on the card, as well as the card_scene, some hint of the resonant season, and the universal symbol.
-    # The names of the cards should feel like they are part of a cohesive deck, and be completely devoid of cliches.
-    # Be sure to work in the colors (inner = foreground, outer = background) as well as the actual 8-bit binary code that this 
+    # Oracle card creation
     oracle_card:
-      card_name: "Torchbearer"
-      card_creature: "A determined night explorer with eyes adjusted to darkness, carrying tools for mapping what cannot be fully seen"
-      question_posed: "How might you move confidently through uncertainty, using the absence of clarity as a space for directed creation?"
-      card_scene: "A figure in exploration gear moves purposefully through darkness, their face showing determined concentration rather than fear. They hold a specially designed torch that casts focused, directional light rather than diffuse illumination. In their other hand, they carry precise navigational instruments - a star chart, compass, and measuring tools designed specifically for dark terrain. A full moon shines through summer leaves overhead, its light creating distinctive shadow patterns that seem to form a map on the ground. The explorer is carefully adding to a partially completed chart, drawing the contours of darkness itself with confident strokes. Their footprints behind them glow slightly, marking a clear path for others to follow."
-      universal_symbol: "The torch - directed illumination that doesn't dispel mystery but allows navigation through it"
-      mood: "Purposeful exploration, masterful navigation, confident charting of the unknown"
+      card_name: "The Perfect Vessel"
+      # 0 bits set to 1, so all archetypes are gender-neutral
+      card_creature: "A gender-neutral warrior-sage whose power comes not from force but from perfect receptivity. Their body has been trained to absolute stillness and response, able to receive and redirect any energy without resistance. Neither distinctly masculine nor feminine, they embody the heroic aspect of yielding."
+      question_posed: "What situation in your life requires the strength to receive completely rather than to act or resist?"
+      card_scene: "A gender-neutral figure stands in a summer lake under the full moon, their body poised in perfect balance. Their clothing is minimal – loose garments that flow with the water rather than resist it. Around them, the water mirrors the night sky so perfectly that the boundary between above and below seems to vanish, suggesting infinite depth in both directions. The figure holds their hands cupped to form a perfect vessel, which somehow manages to collect both water from below and moonlight from above. Their expression shows intense concentration, suggesting that this receptivity requires great skill rather than passivity. Surrounding the lake, summer flowers are in full bloom, their cups open to the night. In the background stands an empty throne carved from stone, suggesting that true power rests in the ability to remain unfilled and receptive. The figure's body casts no shadow, as if they have become so receptive that they no longer disrupt the flow of light and energy around them."
+      universal_symbol: "A perfect, empty vessel that can receive anything without being changed or diminished by it"
+      mood: "Poised receptivity, strategic stillness, balanced power"
 
-      # USE THIS PROMPT TEMPLATE BUT FILL IN WITH SPECIFIC DETAILS FOR THIS CARD:
-      # Limited color risograph-style illustration of [short scene description].
-      # Use [INNER WORLD COLOR] for foreground elements (inner world) and [OUTER WORLD COLOR] for background/environment (outer world), with [ACCENT COLOR] for highlights.
-      # Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
-      # Include a clean, full-width title bar at the bottom, with centered 8-bit code "[XXXXXXXX]" and card title "[CARD TITLE]" in bold, without corner decorations or symbols.
-      # Feature [key symbolic elements, e.g., moon phase, animal companions, symbolic object].
-      # The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle seasonal/elemental references appropriate for [SEASON] (e.g., [Air/Winter], [Fire/Spring], [Water/Summer], [Earth/Fall]).
-      # Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean.
-      prompt_for_image_gen: "Limited color risograph-style illustration of an explorer confidently navigating through darkness with specialized tools.
-      Use BLACK for foreground elements (inner world) and BLACK for background/environment (outer world), with gold and watery blue for highlights.
+      # Image generation prompt
+      prompt_for_image_gen: "Limited color risograph-style illustration of a gender-neutral figure standing in a lake under the full moon, hands cupped to form a vessel.
+      Use black for foreground elements (inner world) and black for background/environment (outer world), with gold and deep blue accents for highlights.
       Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
-      Include a clean, full-width title bar at the bottom, with centered 8-bit code '00000011' and card title 'TORCHBEARER' in bold, without corner decorations or symbols.
-      Feature a full moon through summer leaves, a focused torch casting directional light, navigational instruments for darkness, and glowing footprints marking a path.
-      The scene should evoke the mood of purposeful exploration and masterful navigation, incorporating subtle seasonal/elemental references appropriate for Summer (Water/Summer symbols, flowing energy, confident direction).
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '00000011' and card title 'THE PERFECT VESSEL' in bold, without corner decorations or symbols.
+      Feature a perfect mirror reflection of sky in water, full moon, blooming summer flowers, and an empty stone throne.
+      The scene should evoke the mood of poised receptivity and balanced power, and incorporate subtle seasonal/elemental references appropriate for Summer.
       Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
       
   # Related Cards
   related_cards: 
     # Season variations of the same card
-    same_card_winter: "00000000" # The Moon in Winter (Sage)
-    same_card_spring: "00000010" # The Moon in Spring (Fool)
-    same_card_summer: "00000011" # The Moon in Summer (Hero) (this card)
-    same_card_fall: "00000001" # The Moon in Fall (Monster)
+    same_card_winter: "00000000" # The Receptive in Winter
+    same_card_spring: "00000010" # The Receptive in Spring
+    same_card_summer: "00000011" # The Receptive in Summer
+    same_card_fall: "00000001" # The Receptive in Fall
         
     # Opposites
-    opposite: "11111100" # The Sun in Winter - innocent clarity vs. masterful darkness
+    opposite: "11111100" # The Creative in Winter
     
     # Related thematically
-    thematic_pair: "11000011" # The Magician in Summer - masterful manifestation related to masterful navigation
+    thematic_pair: "00110011" # Small Exceeding in Summer
     
-    # Complete cycle
-    full_cycle: ["00000000","00000010","00000011","00000001"] # The Moon in all seasons
+    # Complete cycle - order depends on resonant season, always starts with Sage
+    full_cycle: ["00000000","00000010","00000011","00000001"] # Winter (Sage), Spring (Fool), Summer (Hero), Fall (Monster)
     
-  # Bit Values
+  # Bit Values - for reference and calculation
   bit_values:
     bit1: "0"  # Intuition
     bit2: "0"  # Ability
@@ -121,4 +108,4 @@ card:
     bit4: "0"  # Expectations
     bit5: "0"  # Support
     bit6: "0"  # Options
-    bit78: "11" # Cycle phase (Summer)
+    bit78: "11" # Cycle phase = Summer

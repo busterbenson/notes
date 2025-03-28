@@ -2,6 +2,9 @@
 
 Look closely at the leaves or needles of your tree.
 
+**Special Feature Pages:**
+- [Redwood & Sequoia Group](trees/redwood-sequoia-group.md) - Compare the three majestic redwood-type trees
+
 ```
 ├── The LEAVES or NEEDLES look interesting!
 │   ├── What's the BASIC TYPE of leaf/needle?

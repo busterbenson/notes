@@ -1,56 +1,56 @@
-# Card 11111110.yml - The Sun in Spring (Fool)
+# Card 11111110.yml - Creative Monster in Spring
 card:
   # Summary
-  binary:      "11111110"
-  decimal:     "254"
-  hexadecimal: "FE"
+  binary:      "11111110"  # 8-bit binary code
+  decimal:     "254"       # Decimal equivalent
+  hexadecimal: "FE"        # Hexadecimal equivalent
 
   # Basic Info
-  # These are crude associations, and will serve as inputs for the interpreted meaning 
   basic_info: 
-    desc: "This card represents illumination with an innocent, fresh quality. All resources are present but expressed with beginner's mind - complete abilities experienced without expectation or attachment. It embodies the childlike wonder of seeing everything clearly for the first time."
+    desc: "The Creative Monster represents creativity taken to overwhelming excess. This card captures the essence of Hexagram 1 (Qian/The Creative) twisted by Spring's qualities of growth and expansion, creating a figure whose creative power has become uncontrollable and destructive. As the Monster in the cycle, this figure embodies what happens when creative energy lacks restraint - a force that creates so prolifically that it overwhelms and destroys. With all resources fully activated but distorted by Spring's unbounded energy, there is a terrifying power that creates without limit or discrimination."
     
-    keywords: ["innocent clarity", "pure illumination", "childlike sight", "fresh perspective", "unfiltered perception", "dawn of understanding"]
-    symbols: ["spring sun", "fresh light on new blossoms", "child's eyes filled with sunlight", "crystal prism", "clear morning sky"]
+    keywords: ["Excessive creation", "Overwhelming growth", "Unrestrained genesis", "Destructive abundance", "Chaotic manifestation", "Cancerous generation"]
+    symbols: ["Wildfire", "Spring flood", "Mutating cells", "Nuclear explosion", "Uncontrolled vines", "Exponential fractal"]
   
-  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
-  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  # Direct Associations
   direct_associations:
-    archetype: "Fool" # Following the cycle from Summer (Sage) to Spring (Fool)
-    archetype_color: "Turquoise"
+    archetype: "Monster" # Determined by resonant season and seasonal cycle
+    archetype_color: "Purple" # Sage: Iridescent, Fool: Turquoise, Hero: Gold, Monster: Purple
+    gender: "gender-neutral" # With 6 bits set to 1, all archetypes are gender-neutral
 
     ## Inner World (bits 1-3)
     inner_world:
-      color: "White"
-      trigram: "Heaven"
-      meaning: "Complete presence of inner resources; intuition, ability, and capacity are all present."
+      color: "White" # From rgb_colors mapping
+      trigram: "☰" # From i_ching_trigrams mapping (Heaven)
+      meaning: "Complete presence of inner resources; self-sufficient, confident, and fully equipped" # From composite_frameworks.inner_world.meanings
 
     ## Outer World (bits 4-6)
     outer_world:
-      color: "White"
-      trigram: "Heaven"
-      meaning: "Complete presence of outer resources; expectations, support, and options are all present."
+      color: "White" # From rgb_colors mapping
+      trigram: "☰" # From i_ching_trigrams mapping (Heaven)
+      meaning: "Complete presence of outer resources; aligned with expectations, supported by others, with clear options" # From composite_frameworks.outer_world.meanings
 
     ## Cycle (bits 7-8)
     cycle: 
-      season: "Spring"
-      tarot_suit: "Wands"
-      moon_phase: "Waxing Moon"
-      element: "Fire"
+      season: "Spring" # From bit_definitions.bit78.meanings
+      tarot_suit: "Wands" # From bit_definitions.bit78.meanings
+      moon_phase: "Waxing Moon" # From bit_definitions.bit78.meanings
+      element: "Fire" # From bit_definitions.bit78.meanings
 
     # Tarot
     tarot:
       card: "The Sun" # The corresponding tarot card for bits 1-6
       cycle_suit: "Wands" # The corresponding tarot suit for bits 7-8
-      cycle_moon: "Waxing"
-      seasonal_expression: "The Sun finds its most innocent expression in Spring as the Fool, bringing pure illumination with beginner's mind and childlike wonder."
+      cycle_moon: "Waxing Moon"
+      seasonal_expression: "The Sun's energy of illumination twisted by the monstrous shadow, modified by Spring's qualities of growth and expansion, creating a figure whose creative power manifests as destructive excess."
 
     # Hexagram-related
     hexagram:
       i_ching:
         number: 1
-        name: "Qian (The Creative)"
-        meaning: "Pure yang, creativity, strength, initiative, leadership"
+        name: "Qian"
+        label: "The Creative"
+        description: "Pure yang, creativity, strength, initiative, leadership"
       gene_key:
         number: 1
         shadow: "Entropy"
@@ -58,62 +58,49 @@ card:
         siddhi: "Beauty"
         meaning: "A journey from decay and disorder to renewal and perpetual freshness, ultimately revealing the inherent beauty in all things"
 
-  # Interpreted Meanings (combining all of the direct associations in various ways)
-  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  # Interpreted Meanings
   interpreted_meanings: 
     basic:
-      name_6bit: "The Sun"
-      name_8bit: "The Autumn Sun"
+      name_6bit: "The Creative"
+      name_8bit: "Creative Monster in Spring"
 
-    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
-    # Style guidelines: Inspired by the clear and simple design of the Rider Waite Smith deck, the 
-    # vibe of the Brady Tarot deck, the mythology of Hilda, and the humor and complexity of the Arcane Bullshit deck. 
-    # The card should use a limited color palette, lines as if created via risograph, be full-bleed, 
-    # include the name on the card, as well as the card_scene, some hint of the resonant season, and the universal symbol.
-    # The names of the cards should feel like they are part of a cohesive deck, and be completely devoid of cliches.
-    # Be sure to work in the colors (inner = foreground, outer = background) as well as the actual 8-bit binary code that this 
+    # Oracle card creation
     oracle_card:
-      card_name: "First Light"
-      card_creature: "A sunlit child exploring a spring landscape, discovering how light makes everything new"
-      question_posed: "What would you perceive if you could see everything clearly but without judgment or expectation?"
-      card_scene: "A child stands in a clearing surrounded by trees in spring bloom, their face and body illuminated by light filtering through fresh green leaves and colorful blossoms. The child's eyes are wide with wonder, reflecting perfect miniature suns. They hold a newly sprouted leaf up to the light, examining its intricate patterns with complete absorption. Each blossom around them acts as a natural stained glass, creating patches of colored light on the fresh grass. The child is reaching out to touch one particularly bright patch of light, with an expression suggesting they believe it might be something they can pick up and hold. A small prism hangs from a branch nearby, casting rainbow patterns that the child hasn't yet noticed but will soon discover."
-      universal_symbol: "The prism - pure light revealing its hidden complexity when experienced with fresh perception"
-      mood: "Innocent clarity, pristine awareness, the joy of unfiltered perception"
+      card_name: "The Unrestrained Generator"
+      # 6 bits set to 1, so all archetypes are gender-neutral
+      card_creature: "A gender-neutral entity whose creative power has grown beyond control, neither masculine nor feminine but rather a pure embodiment of excessive generation. Their form constantly produces new growths and manifestations that overwhelm both their own body and everything around them in a terrifying display of creation without restraint."
+      question_posed: "Where in your life has creative power become excessive, generating so much that it threatens to overwhelm and destroy what you value?"
+      card_scene: "A gender-neutral figure stands in a spring landscape that is being overwhelmed by their own creative power. Their body appears to be constantly generating new growth – vines, branches, fractal patterns that extend outward at an alarming rate, consuming available space. The figure's form is difficult to discern beneath these proliferating manifestations, as if their essential self is being overwhelmed by their own creations. Around them, what began as a verdant spring scene has become chaotic – flowers grow to enormous proportions before withering under their own weight, trees sprout and split their trunks from too-rapid growth, and small creatures multiply beyond sustainable numbers. The waxing moon overhead seems to pulse in rhythm with the excessive growth below. The figure's hands continuously generate swirling energies that immediately manifest as physical forms, creating faster than natural processes can sustain. Their eyes show a mixture of creative ecstasy and horror at being unable to stop the process they've initiated. The ground beneath them cracks from the pressure of too many roots seeking purchase, while the air is thick with pollen, seeds, and spores – creation seeking yet more opportunities to replicate beyond bounds."
+      universal_symbol: "A nuclear reaction - creative power beyond control, generation that destroys through excess"
+      mood: "Overwhelming abundance, uncontrolled genesis, terrifying fertility"
 
-      # USE THIS PROMPT TEMPLATE BUT FILL IN WITH SPECIFIC DETAILS FOR THIS CARD:
-      # Limited color risograph-style illustration of [short scene description].
-      # Use [INNER WORLD COLOR] for foreground elements (inner world) and [OUTER WORLD COLOR] for background/environment (outer world), with [ACCENT COLOR] for highlights.
-      # Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
-      # Include a clean, full-width title bar at the bottom, with centered 8-bit code "[XXXXXXXX]" and card title "[CARD TITLE]" in bold, without corner decorations or symbols.
-      # Feature [key symbolic elements, e.g., moon phase, animal companions, symbolic object].
-      # The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle seasonal/elemental references appropriate for [SEASON] (e.g., [Air/Winter], [Fire/Spring], [Water/Summer], [Earth/Fall]).
-      # Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean.
-      prompt_for_image_gen: "Limited color risograph-style illustration of a child in spring forest, face illuminated by light filtering through fresh blossoms and new leaves.
-      Use WHITE for foreground elements (inner world) and WHITE for background/environment (outer world), with turquoise and spring green accents.
+      # Image generation prompt
+      prompt_for_image_gen: "Limited color risograph-style illustration of a gender-neutral figure generating excessive growth that overwhelms a spring landscape.
+      Use white for foreground elements (inner world) and white for background/environment (outer world), with purple and intense spring green accents for highlights.
       Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
-      Include a clean, full-width title bar at the bottom, with centered 8-bit code '11111110' and card title 'FIRST LIGHT' in bold, without corner decorations or symbols.
-      Feature spring blossoms creating colored light patterns, a child examining a fresh leaf with wonder, a prism hanging from a branch, and patches of light on new grass.
-      The scene should evoke the mood of innocent clarity and pristine awareness, incorporating subtle seasonal/elemental references appropriate for Spring (Fire/Spring symbols, new growth, spring renewal).
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '11111110' and card title 'THE UNRESTRAINED GENERATOR' in bold, without corner decorations or symbols.
+      Feature a figure with fractal growths continuously emerging from their body, oversized flowers collapsing under their weight, splitting tree trunks, a waxing moon, and cracking ground from excessive root growth.
+      The scene should evoke the mood of overwhelming abundance and uncontrolled genesis, and incorporate subtle seasonal/elemental references appropriate for Spring.
       Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
       
   # Related Cards
   related_cards: 
     # Season variations of the same card
-    same_card_winter: "11111100" # The Sun in Winter (Hero)
-    same_card_spring: "11111110" # The Sun in Spring (Monster)
-    same_card_summer: "11111111" # The Sun in Summer (Sage)
-    same_card_spring: "11111101" # The Sun in Spring (Fool)
+    same_card_winter: "11111100" # The Creative in Winter
+    same_card_spring: "11111110" # The Creative in Spring
+    same_card_summer: "11111111" # The Creative in Summer
+    same_card_fall: "11111101" # The Creative in Fall
         
     # Opposites
-    opposite: "00000001" # The Moon in Spring - innocent darkness vs. innocent light
+    opposite: "00000001" # The Receptive in Fall
     
     # Related thematically
-    thematic_pair: "10100010" # High Priestess in Fall - intuitive mystery innocence related to clear perception
+    thematic_pair: "01010110" # Before Completion in Spring
     
-    # Complete cycle
-    full_cycle: ["11111111","11111110","11111100","11111101"] # The Sun in all seasons
+    # Complete cycle - order depends on resonant season, always starts with Sage
+    full_cycle: ["11111111","11111101","11111100","11111110"] # Summer (Sage), Fall (Fool), Winter (Hero), Spring (Monster)
     
-  # Bit Values
+  # Bit Values - for reference and calculation
   bit_values:
     bit1: "1"  # Intuition
     bit2: "1"  # Ability
@@ -121,4 +108,4 @@ card:
     bit4: "1"  # Expectations
     bit5: "1"  # Support
     bit6: "1"  # Options
-    bit78: "10" # Cycle phase (Fall)
+    bit78: "10" # Cycle phase = Spring

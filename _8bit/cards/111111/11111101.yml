@@ -1,56 +1,56 @@
-# Card 11111101.yml - The Sun in Fall (Monster)
+# Card 11111101.yml - Creative Fool in Fall
 card:
   # Summary
-  binary:      "11111101"
-  decimal:     "253"
-  hexadecimal: "FD"
+  binary:      "11111101"  # 8-bit binary code
+  decimal:     "253"       # Decimal equivalent
+  hexadecimal: "FD"        # Hexadecimal equivalent
 
   # Basic Info
-  # These are crude associations, and will serve as inputs for the interpreted meaning 
   basic_info: 
-    desc: "This card represents illumination turned excessive and overwhelming. All resources are present at their maximum intensity, creating a state where brightness becomes blinding, clarity becomes searing, and abundance becomes too much to contain or control."
+    desc: "The Creative Fool represents innocent creativity and playful abundance. This card captures the essence of Hexagram 1 (Qian/The Creative) expressed through Fall's qualities of release and letting go, creating a figure who approaches creativity with childlike wonder and spontaneity. As the Fool in the cycle, this figure embodies the innocent joy of discovery, finding delight in the process of creation without concern for outcomes. With all resources fully activated but expressed through Fall's energy of release, there is a playful engagement with infinite possibility that retains the innocence of a beginner's mind."
     
-    keywords: ["excessive illumination", "blinding light", "overwhelming clarity", "scorching truth", "too much revelation", "merciless exposure"]
-    symbols: ["autumn sun", "desert mirage", "burning lens", "falling leaves scorched by light", "harsh reaping light", "overwhelming abundance"]
+    keywords: ["Playful creativity", "Innocent abundance", "Spontaneous generation", "Joyful discovery", "Childlike wonder", "Unfiltered expression"]
+    symbols: ["Harvest cornucopia", "Autumn leaves dancing", "Child's kaleidoscope", "Improvised toy", "Colorful tapestry", "Windblown seeds"]
   
-  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
-  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  # Direct Associations
   direct_associations:
-    archetype: "Monster" # Following the cycle from Summer (Sage) through Spring (Fool) and Winter (Hero) to Fall (Monster)
-    archetype_color: "Purple"
+    archetype: "Fool" # Determined by resonant season and seasonal cycle
+    archetype_color: "Turquoise" # Sage: Iridescent, Fool: Turquoise, Hero: Gold, Monster: Purple
+    gender: "gender-neutral" # With 6 bits set to 1, all archetypes are gender-neutral
 
     ## Inner World (bits 1-3)
     inner_world:
-      color: "White"
-      trigram: "Heaven"
-      meaning: "Complete presence of inner resources; intuition, ability, and capacity are all present."
+      color: "White" # From rgb_colors mapping
+      trigram: "☰" # From i_ching_trigrams mapping (Heaven)
+      meaning: "Complete presence of inner resources; self-sufficient, confident, and fully equipped" # From composite_frameworks.inner_world.meanings
 
     ## Outer World (bits 4-6)
     outer_world:
-      color: "White"
-      trigram: "Heaven"
-      meaning: "Complete presence of outer resources; expectations, support, and options are all present."
+      color: "White" # From rgb_colors mapping
+      trigram: "☰" # From i_ching_trigrams mapping (Heaven)
+      meaning: "Complete presence of outer resources; aligned with expectations, supported by others, with clear options" # From composite_frameworks.outer_world.meanings
 
     ## Cycle (bits 7-8)
     cycle: 
-      season: "Fall"
-      tarot_suit: "Pentacles"
-      moon_phase: "Waning Moon"
-      element: "Earth"
+      season: "Fall" # From bit_definitions.bit78.meanings
+      tarot_suit: "Pentacles" # From bit_definitions.bit78.meanings
+      moon_phase: "Waning Moon" # From bit_definitions.bit78.meanings
+      element: "Earth" # From bit_definitions.bit78.meanings
 
     # Tarot
     tarot:
       card: "The Sun" # The corresponding tarot card for bits 1-6
       cycle_suit: "Pentacles" # The corresponding tarot suit for bits 7-8
-      cycle_moon: "Waning"
-      seasonal_expression: "The Sun's illumination becomes overwhelming in Fall as the Monster, when light becomes harsh and excessively revealing."
+      cycle_moon: "Waning Moon"
+      seasonal_expression: "The Sun's energy of illumination expressed through the playful discovery of the Fool, modified by Fall's qualities of release and letting go, creating a childlike joy in creative expression."
 
     # Hexagram-related
     hexagram:
       i_ching:
         number: 1
-        name: "Qian (The Creative)"
-        meaning: "Pure yang, creativity, strength, initiative, leadership"
+        name: "Qian"
+        label: "The Creative"
+        description: "Pure yang, creativity, strength, initiative, leadership"
       gene_key:
         number: 1
         shadow: "Entropy"
@@ -58,62 +58,49 @@ card:
         siddhi: "Beauty"
         meaning: "A journey from decay and disorder to renewal and perpetual freshness, ultimately revealing the inherent beauty in all things"
 
-  # Interpreted Meanings (combining all of the direct associations in various ways)
-  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  # Interpreted Meanings
   interpreted_meanings: 
     basic:
-      name_6bit: "The Sun"
-      name_8bit: "The Autumn Sun"
+      name_6bit: "The Creative"
+      name_8bit: "Creative Fool in Fall"
 
-    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
-    # Style guidelines: Inspired by the clear and simple design of the Rider Waite Smith deck, the 
-    # vibe of the Brady Tarot deck, the mythology of Hilda, and the humor and complexity of the Arcane Bullshit deck. 
-    # The card should use a limited color palette, lines as if created via risograph, be full-bleed, 
-    # include the name on the card, as well as the card_scene, some hint of the resonant season, and the universal symbol.
-    # The names of the cards should feel like they are part of a cohesive deck, and be completely devoid of cliches.
-    # Be sure to work in the colors (inner = foreground, outer = background) as well as the actual 8-bit binary code that this 
+    # Oracle card creation
     oracle_card:
-      card_name: "Merciless Exposure"
-      card_creature: "A solar tyrant whose gaze leaves nothing hidden and whose light transforms everything it touches into distorted versions of themselves"
-      question_posed: "What truths have become so overwhelming that they've distorted your ability to function within normal boundaries?"
-      card_scene: "A terrifying autumn sun dominates the entire upper portion of the scene, its rays so intense they appear to be physically pressing down on the landscape below. The sun's face is multi-eyed and unblinking, examining everything with merciless scrutiny. Falling leaves freeze mid-air, caught in the harsh light that reveals every imperfection and flaw. Harvest fields bend and crack under the pressure of too much illumination, with fruits and grains bursting open, revealing too much of their inner structure. The relentless sunlight has turned autumn's natural decay into something grotesque and accelerated. At the center, a figure stands with arms raised not in celebration but in surrender, their shadow burned away to nothing beneath them. Their form appears to be gradually dissolving in the relentless exposure, features running like wax but still somehow conscious and aware of their dissolution."
-      universal_symbol: "The magnifying glass - truth intensified beyond utility, detail that destroys the whole"
-      mood: "Merciless intensity, the paralysis of too much awareness, beauty that destroys through its excess"
+      card_name: "The Joyful Creator"
+      # 6 bits set to 1, so all archetypes are gender-neutral
+      card_creature: "A gender-neutral child-like being whose form shifts and morphs with each creative impulse, neither distinctly masculine nor feminine but rather a spontaneous expression of creative joy. Their body seems composed of autumn light and scattered leaves, constantly reconfiguring into new shapes and patterns with innocent delight."
+      question_posed: "Where in your life might you benefit from approaching creation with a beginner's mind, finding joy in the process rather than focusing on outcomes?"
+      card_scene: "A gender-neutral child-like figure dances through a fall meadow at harvest time, their body seeming to form and reform from swirling autumn leaves and golden light. Their appearance shifts fluidly between different ages, forms, and expressions, maintaining only the consistent quality of innocent joy. Around them, the meadow brims with abundance – ripe fruits, colorful leaves, and harvest bounty – all of which the figure interacts with in spontaneous play. They capture falling leaves and reshape them into improvised toys and temporary sculptures before releasing them back to the wind. In one hand, they hold a kaleidoscope through which they occasionally peer, delighted by each new pattern that emerges. Their laughter seems to manifest visibly as bursts of light that cause nearby seeds to sprout briefly into fantastical plants before returning to seed form. A waning moon hangs in the afternoon sky, its partial illumination creating shadows that the figure incorporates into their creative play. Everywhere the figure touches, colors become more vibrant and textures more intricate, not through conscious effort but simply as a natural expression of their joyful presence. Their footsteps leave temporary mandalas in the earth, complex patterns that slowly fade back to natural terrain."
+      universal_symbol: "The kaleidoscope - endless new patterns formed from the same elements, each configuration a temporary joy"
+      mood: "Spontaneous delight, innocent wonder, playful discovery"
 
-      # USE THIS PROMPT TEMPLATE BUT FILL IN WITH SPECIFIC DETAILS FOR THIS CARD:
-      # Limited color risograph-style illustration of [short scene description].
-      # Use [INNER WORLD COLOR] for foreground elements (inner world) and [OUTER WORLD COLOR] for background/environment (outer world), with [ACCENT COLOR] for highlights.
-      # Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
-      # Include a clean, full-width title bar at the bottom, with centered 8-bit code "[XXXXXXXX]" and card title "[CARD TITLE]" in bold, without corner decorations or symbols.
-      # Feature [key symbolic elements, e.g., moon phase, animal companions, symbolic object].
-      # The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle seasonal/elemental references appropriate for [SEASON] (e.g., [Air/Winter], [Fire/Spring], [Water/Summer], [Earth/Fall]).
-      # Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean.
-      prompt_for_image_gen: "Limited color risograph-style illustration of a figure surrendering beneath a multi-eyed, dominating autumn sun with distorted, over-exposed landscape.
-      Use WHITE for foreground elements (inner world) and WHITE for background/environment (outer world), with intense purple and earthy amber accents.
+      # Image generation prompt
+      prompt_for_image_gen: "Limited color risograph-style illustration of a gender-neutral child-like figure dancing through a fall harvest meadow, their body partially formed from swirling leaves and light.
+      Use white for foreground elements (inner world) and white for background/environment (outer world), with turquoise and warm autumn orange/yellow accents for highlights.
       Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
-      Include a clean, full-width title bar at the bottom, with centered 8-bit code '11111101' and card title 'MERCILESS EXPOSURE' in bold, without corner decorations or symbols.
-      Feature suspended falling leaves caught in harsh light, harvest fields cracking under exposure, fruits bursting to reveal inner structure, and the figure beginning to dissolve under scrutiny.
-      The scene should evoke the mood of merciless intensity and beautiful destruction, incorporating subtle seasonal/elemental references appropriate for Fall (Earth/Fall symbols, excessive revelation, harvest distortion).
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '11111101' and card title 'THE JOYFUL CREATOR' in bold, without corner decorations or symbols.
+      Feature a waning moon, improvised leaf sculptures, a kaleidoscope, footprints forming mandala patterns, and bursts of light causing fantastical temporary growth.
+      The scene should evoke the mood of spontaneous delight and playful discovery, and incorporate subtle seasonal/elemental references appropriate for Fall.
       Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
       
   # Related Cards
   related_cards: 
     # Season variations of the same card
-    same_card_winter: "11111100" # The Sun in Winter (Hero)
-    same_card_spring: "11111110" # The Sun in Spring (Monster)
-    same_card_summer: "11111111" # The Sun in Summer (Sage)
-    same_card_fall: "11111101" # The Sun in Fall (Fool)
+    same_card_winter: "11111100" # The Creative in Winter
+    same_card_spring: "11111110" # The Creative in Spring
+    same_card_summer: "11111111" # The Creative in Summer
+    same_card_fall: "11111101" # The Creative in Fall
         
     # Opposites
-    opposite: "00000010" # The Moon in Fall - monstrous darkness vs. monstrous light
+    opposite: "00000010" # The Receptive in Spring
     
     # Related thematically
-    thematic_pair: "01010001" # Death in Spring - overwhelming transformation related to overwhelming clarity
+    thematic_pair: "01010101" # Before Completion in Fall
     
-    # Complete cycle
-    full_cycle: ["11111111","11111110","11111100","11111101"] # The Sun in all seasons
+    # Complete cycle - order depends on resonant season, always starts with Sage
+    full_cycle: ["11111111","11111101","11111100","11111110"] # Summer (Sage), Fall (Fool), Winter (Hero), Spring (Monster)
     
-  # Bit Values
+  # Bit Values - for reference and calculation
   bit_values:
     bit1: "1"  # Intuition
     bit2: "1"  # Ability
@@ -121,4 +108,4 @@ card:
     bit4: "1"  # Expectations
     bit5: "1"  # Support
     bit6: "1"  # Options
-    bit78: "01" # Cycle phase (Spring)
+    bit78: "01" # Cycle phase = Fall

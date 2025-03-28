@@ -1,119 +1,106 @@
-# Card 00000010.yml - The Moon in Spring (Fool)
+# Card 00000010.yml - Receptive Fool in Spring
 card:
   # Summary
-  binary:      "00000010"
-  decimal:     "2"
-  hexadecimal: "02"
+  binary:      "00000010"  # 8-bit binary code
+  decimal:     "2"         # Decimal equivalent
+  hexadecimal: "02"        # Hexadecimal equivalent
 
   # Basic Info
-  # These are crude associations, and will serve as inputs for the interpreted meaning 
   basic_info: 
-    desc: "This card represents darkness with an innocent, fresh quality. The absence of resources is experienced with beginner's mind - a darkness approached with curiosity rather than fear. It embodies the childlike wonder of exploring the unknown with open awareness."
+    desc: "The Receptive Fool represents innocent openness and childlike receptivity. This card captures the essence of Hexagram 2 (Kun/The Receptive) expressed through Spring's qualities of awakening and new beginnings. As the Fool in the cycle, this figure approaches receptivity with an innocent mind, completely open to what comes without judgment or expectation. With no inner or outer resources activated, but emerging into Spring's energy, there is a playful curiosity about surrendering to the flow of life. The innocence comes from approaching emptiness as an adventure rather than a strategy."
     
-    keywords: ["innocent darkness", "curious void", "beginner's mystery", "fresh exploration", "open uncertainty", "naive wonder"]
-    symbols: ["waxing moon", "child in shadow", "sprouting seed in darkness", "dawn's first hint", "playful exploration"]
+    keywords: ["Innocent openness", "Playful surrender", "Childlike receptivity", "Beginner's mind", "Unfiltered experience", "Spontaneous yielding"]
+    symbols: ["Empty cup", "New seedling", "Crescent moon", "Clear spring", "Child's open arms", "Hatching egg"]
   
-  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
-  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  # Direct Associations
   direct_associations:
-    archetype: "Fool" # Following the cycle from Winter (Sage) to Spring (Fool)
-    archetype_color: "Turquoise"
+    archetype: "Fool" # Determined by resonant season and seasonal cycle
+    archetype_color: "Turquoise" # Sage: Iridescent, Fool: Turquoise, Hero: Gold, Monster: Purple
+    gender: "gender-neutral" # With 0 bits set to 1, all archetypes are gender-neutral
 
     ## Inner World (bits 1-3)
     inner_world:
-      color: "Black"
-      trigram: "Earth"
-      meaning: "Complete absence of inner resources; intuition, ability, and capacity are all absent."
+      color: "Black" # From rgb_colors mapping
+      trigram: "☷" # From i_ching_trigrams mapping (Earth)
+      meaning: "Complete absence of inner resources; intuition, ability, and capacity are all absent" # From composite_frameworks.inner_world.meanings
 
     ## Outer World (bits 4-6)
     outer_world:
-      color: "Black"
-      trigram: "Earth"
-      meaning: "Complete lack of outer resources; expectations, support, and options are all absent."
+      color: "Black" # From rgb_colors mapping
+      trigram: "☷" # From i_ching_trigrams mapping (Earth)
+      meaning: "Complete lack of outer resources; expectations, support, and options are all absent" # From composite_frameworks.outer_world.meanings
 
     ## Cycle (bits 7-8)
     cycle: 
-      season: "Spring"
-      tarot_suit: "Wands"
-      moon_phase: "Waxing Moon"
-      element: "Fire"
+      season: "Spring" # From bit_definitions.bit78.meanings
+      tarot_suit: "Wands" # From bit_definitions.bit78.meanings
+      moon_phase: "Waxing Moon" # From bit_definitions.bit78.meanings
+      element: "Fire" # From bit_definitions.bit78.meanings
 
     # Tarot
     tarot:
       card: "The Moon" # The corresponding tarot card for bits 1-6
       cycle_suit: "Wands" # The corresponding tarot suit for bits 7-8
-      cycle_moon: "Waxing"
-      seasonal_expression: "The Moon finds its most innocent expression in Spring as the Fool, embracing the darkness with beginner's mind and open curiosity."
+      cycle_moon: "Waxing Moon"
+      seasonal_expression: "The Moon's energy of mystery and the unconscious expressed through the innocent openness of the Fool, modified by Spring's qualities of new beginnings and growth, creating a childlike wonder in the face of the unknown."
 
     # Hexagram-related
     hexagram:
       i_ching:
         number: 2
-        name: "Kun (The Receptive)"
-        meaning: "Pure yin, yielding, responsive, accepting, following"
+        name: "Kun"
+        label: "The Receptive"
+        description: "Pure yin, yielding, responsive, accepting, following"
       gene_key:
         number: 2
         shadow: "Dislocation"
         gift: "Orientation"
         siddhi: "Unity"
-        meaning: "Finding your true direction and experiencing oneness"
+        meaning: "A journey from feeling lost and disconnected to finding your true direction and ultimately experiencing oneness with all"
 
-  # Interpreted Meanings (combining all of the direct associations in various ways)
-  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  # Interpreted Meanings
   interpreted_meanings: 
     basic:
-      name_6bit: "The Moon"
-      name_8bit: "The Waxing Moon"
+      name_6bit: "The Receptive"
+      name_8bit: "Receptive Fool in Spring"
 
-    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
-    # Style guidelines: Inspired by the clear and simple design of the Rider Waite Smith deck, the 
-    # vibe of the Brady Tarot deck, the mythology of Hilda, and the humor and complexity of the Arcane Bullshit deck. 
-    # The card should use a limited color palette, lines as if created via risograph, be full-bleed, 
-    # include the name on the card, as well as the card_scene, some hint of the resonant season, and the universal symbol.
-    # The names of the cards should feel like they are part of a cohesive deck, and be completely devoid of cliches.
-    # Be sure to work in the colors (inner = foreground, outer = background) as well as the actual 8-bit binary code that this 
+    # Oracle card creation
     oracle_card:
-      card_name: "Unwritten Beginning"
-      card_creature: "A moon-pale child with curious eyes that reflect starlight even where there are no stars"
-      question_posed: "What might emerge if you step into darkness without assuming it's something to fear?"
-      card_scene: "A child with luminous skin stands at the edge of an undefined void, their posture suggesting eager curiosity rather than hesitation. Spring's first green shoots break through dark soil around their feet, with tiny sprouts reaching toward the darkness rather than away from it. Above, a waxing moon provides just enough light to see the child's wide, wondering eyes and reaching hands. The child holds a simple magnifying glass, using it not to illuminate but to better examine the textures of shadow. Their shadow, cast by the waxing moon, appears to have a life of its own, forming new shapes that the child doesn't notice but that suggest growth and possibility."
-      universal_symbol: "The empty circle - potential before form, the space that precedes creation"
-      mood: "Innocent curiosity, threshold anticipation, the peculiar silence before first words"
+      card_name: "The Empty Canvas"
+      # 0 bits set to 1, so all archetypes are gender-neutral
+      card_creature: "A gender-neutral youth with features that could belong to any age or gender, covered in morning dew and flower petals. Their expression is one of pure wonder and openness, arms spread wide as if to embrace whatever the universe might bring. Their body seems almost translucent in the spring light, like a being newly formed and not yet fully defined."
+      question_posed: "How might approaching life with beginner's mind and innocent receptivity reveal possibilities that your experience and expectations have been hiding from you?"
+      card_scene: "A gender-neutral youthful figure stands in a meadow at dawn, their arms outstretched like a young tree reaching for the sun. Their clothing is minimal and undefined, neither masculine nor feminine in style, and so pale it seems to blend with their skin. Around them, the grass is wet with morning dew, reflecting the first light of day in countless tiny mirrors. The figure's shadow is barely visible, as if they have not yet accumulated enough substance to cast a full one. A crescent moon still hangs in the pale sky, though fading as dawn strengthens. Nearby, a clear spring bubbles up from the earth, forming a small pool where the figure's reflection appears sometimes clear and sometimes rippled, never quite fixed. Small seedlings push up through the soil around their bare feet, mirroring their own emergent quality. The figure holds an empty canvas and brush, but shows no sign of concern about what to paint – they seem content to simply receive whatever impressions come, with complete trust in the process."
+      universal_symbol: "A blank canvas, pristine and full of potential"
+      mood: "Innocent wonder, open curiosity, joyful acceptance"
 
-      # USE THIS PROMPT TEMPLATE BUT FILL IN WITH SPECIFIC DETAILS FOR THIS CARD:
-      # Limited color risograph-style illustration of [short scene description].
-      # Use [INNER WORLD COLOR] for foreground elements (inner world) and [OUTER WORLD COLOR] for background/environment (outer world), with [ACCENT COLOR] for highlights.
-      # Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
-      # Include a clean, full-width title bar at the bottom, with centered 8-bit code "[XXXXXXXX]" and card title "[CARD TITLE]" in bold, without corner decorations or symbols.
-      # Feature [key symbolic elements, e.g., moon phase, animal companions, symbolic object].
-      # The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle seasonal/elemental references appropriate for [SEASON] (e.g., [Air/Winter], [Fire/Spring], [Water/Summer], [Earth/Fall]).
-      # Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean.
-      prompt_for_image_gen: "Limited color risograph-style illustration of a luminous child standing at the threshold of darkness with curious wonder.
-      Use BLACK for foreground elements (inner world) and BLACK for background/environment (outer world), with turquoise and spring green accents.
+      # Image generation prompt
+      prompt_for_image_gen: "Limited color risograph-style illustration of a gender-neutral youthful figure standing in a morning meadow with arms outstretched.
+      Use black for foreground elements (inner world) and black for background/environment (outer world), with turquoise and pale yellow accents for highlights.
       Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
-      Include a clean, full-width title bar at the bottom, with centered 8-bit code '00000010' and card title 'UNWRITTEN BEGINNING' in bold, without corner decorations or symbols.
-      Feature a waxing moon, spring shoots emerging from dark soil, a child with a magnifying glass examining darkness, and a shadow with its own emergent forms.
-      The scene should evoke the mood of innocent curiosity and threshold anticipation, incorporating subtle seasonal/elemental references appropriate for Spring (Fire/Spring symbols, new growth, budding potential).
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '00000010' and card title 'THE EMPTY CANVAS' in bold, without corner decorations or symbols.
+      Feature dew-covered grass, a crescent moon, a clear spring, emerging seedlings, and a blank canvas held by the figure.
+      The scene should evoke the mood of innocent wonder and joyful acceptance, and incorporate subtle seasonal/elemental references appropriate for Spring.
       Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
       
   # Related Cards
   related_cards: 
     # Season variations of the same card
-    same_card_winter: "00000000" # The Moon in Winter (Sage)
-    same_card_spring: "00000010" # The Moon in Spring (Fool) (this card)
-    same_card_summer: "00000011" # The Moon in Summer (Hero)
-    same_card_fall: "00000001" # The Moon in Fall (Monster)
+    same_card_winter: "00000000" # The Receptive in Winter
+    same_card_spring: "00000010" # The Receptive in Spring
+    same_card_summer: "00000011" # The Receptive in Summer
+    same_card_fall: "00000001" # The Receptive in Fall
         
     # Opposites
-    opposite: "11111101" # The Sun in Spring - heroic clarity vs. monstrous darkness
+    opposite: "11111101" # The Creative in Fall
     
     # Related thematically
-    thematic_pair: "10000010" # High Priestess in Spring - intuitive mystery with fresh perspective
+    thematic_pair: "00110010" # Small Exceeding in Spring
     
-    # Complete cycle
-    full_cycle: ["00000000","00000010","00000011","00000001"] # The Moon in all seasons
+    # Complete cycle - order depends on resonant season, always starts with Sage
+    full_cycle: ["00000000","00000010","00000011","00000001"] # Winter (Sage), Spring (Fool), Summer (Hero), Fall (Monster)
     
-  # Bit Values
+  # Bit Values - for reference and calculation
   bit_values:
     bit1: "0"  # Intuition
     bit2: "0"  # Ability
@@ -121,4 +108,4 @@ card:
     bit4: "0"  # Expectations
     bit5: "0"  # Support
     bit6: "0"  # Options
-    bit78: "10" # Cycle phase (Fall)
+    bit78: "10" # Cycle phase = Spring

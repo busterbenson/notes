@@ -54,6 +54,9 @@ If no feature of the tree particularly stands out:
 2. Follow the more technical, detailed identification path
 3. Use multiple characteristics together to make an identification
 
+The guide also includes detailed leaf node files for notable tree groups:
+- [Redwood & Sequoia Group](paths/trees/redwood-sequoia-group.md) - A comprehensive comparison of three majestic California trees
+
 ## Notes
 
 This guide uses a "What catches your eye?" approach rather than traditional taxonomic keys, making it more accessible for beginners. The hierarchical structure helps users narrow down possibilities based on observable features, regardless of botanical knowledge.

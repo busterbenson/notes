@@ -1,108 +1,106 @@
-# Card 00110000.yml - Outer Deception in Winter (Sage)
+# Card 00110000.yml - Small Exceeding Sage in Winter
 card:
   # Summary
-  binary:      "00110000"
-  decimal:     "48"
-  hexadecimal: "30"
+  binary:      "00110000"  # 8-bit binary code
+  decimal:     "48"        # Decimal equivalent
+  hexadecimal: "30"        # Hexadecimal equivalent
 
   # Basic Info
-  # These are crude associations, and will serve as inputs for the interpreted meaning 
   basic_info: 
-    desc: "This card represents the profound wisdom that emerges when one sees through deceptive appearances. It embodies the paradox of misaligned expression – the inner world of capacity without intuition or ability meeting the outer world of expectations without support or options – creating a facade that the sage penetrates. In its Sage aspect in Winter, it reveals the transcendent understanding of illusion and reality across all dimensions of existence."
+    desc: "The Small Exceeding Sage represents the wisdom of precision and subtle refinement. This card captures the essence of Hexagram 62 (Xiao Guo/Small Exceeding) expressed through Winter's qualities of clarity and subtlety. As the most integrated form of this hexagram, the Winter Sage embodies the transcendent understanding that comes from meticulous attention to detail without obsession. With inner capacity but no intuition or ability, and outer expectations without support or options, this figure navigates the delicate balance of slight imbalance with deep wisdom. The sage understands how small refinements can lead to perfection without getting lost in intellectualization."
     
-    keywords: ["penetrating illusion", "unveiling deception", "seeing through appearances", "wisdom beyond facades", "discerning truth", "transcendent clarity"]
-    symbols: ["winter lake with deceptive ice thickness", "new moon revealing hidden shadows", "sage with mirror reflecting true forms", "mask falling away", "optical illusions in crystal formations", "transparent layers revealing depth"]
+    keywords: ["Refined precision", "Subtle wisdom", "Meticulous awareness", "Balanced detail", "Transcendent accuracy", "Measured perfection"]
+    symbols: ["Snowflake crystal", "Watchmaker's tools", "Perfect balance scale", "Winter frost patterns", "Surgeon's hands", "Mathematical formula"]
   
-  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
-  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  # Direct Associations
   direct_associations:
-    archetype: "Sage" # Winter is the resonant season for this hexagram (Inner 0, Outer 0)
-    archetype_color: "Turquoise"
-    gender: "Feminine" # 2 bits set to 1 in positions 1-6: Fool and Sage are feminine
+    archetype: "Sage" # Determined by resonant season and seasonal cycle
+    archetype_color: "Iridescent" # Sage: Iridescent, Fool: Turquoise, Hero: Gold, Monster: Purple
+    gender: "feminine" # With 2 bits set to 1, Sage is feminine
 
     ## Inner World (bits 1-3)
     inner_world:
-      color: "Blue"
-      trigram: "Mountain"
-      meaning: "Capacity to understand but lacking intuition and ability; can see what needs to be done but feels unable to act."
+      color: "Blue" # From rgb_colors mapping
+      trigram: "☶" # From i_ching_trigrams mapping (Mountain)
+      meaning: "Capacity to understand but lacking intuition and ability; can see what needs to be done but feels unable to act" # From composite_frameworks.inner_world.meanings
 
     ## Outer World (bits 4-6)
     outer_world:
-      color: "Red"
-      trigram: "Wind"
-      meaning: "Alignment with expectations, but lacking support and clear options; conventional but adrift."
+      color: "Red" # From rgb_colors mapping
+      trigram: "☴" # From i_ching_trigrams mapping (Wind)
+      meaning: "Alignment with expectations, but lacking support and clear options; conventional but adrift" # From composite_frameworks.outer_world.meanings
 
     ## Cycle (bits 7-8)
     cycle: 
-      season: "Winter"
-      tarot_suit: "Swords"
-      moon_phase: "New Moon"
-      element: "Air"
+      season: "Winter" # From bit_definitions.bit78.meanings
+      tarot_suit: "Swords" # From bit_definitions.bit78.meanings
+      moon_phase: "New Moon" # From bit_definitions.bit78.meanings
+      element: "Air" # From bit_definitions.bit78.meanings
 
     # Tarot
     tarot:
-      card: "Outer Deception" # The corresponding tarot card for bits 1-6
+      card: "The Emperor" # The corresponding tarot card for bits 1-6
       cycle_suit: "Swords" # The corresponding tarot suit for bits 7-8
-      cycle_moon: "New"
-      seasonal_expression: "Outer Deception reveals profound wisdom in Winter as the Sage, showing the transcendent understanding of how appearances can mask reality across all scales of existence."
+      cycle_moon: "New Moon"
+      seasonal_expression: "The Emperor's energy of structure and order expressed through the wisdom of the Sage, modified by Winter's qualities of clarity and precision, creating a profound understanding of how careful refinement leads to perfection."
 
     # Hexagram-related
     hexagram:
       i_ching:
-        number: 19
-        name: "Lin"
-        label: "Approach"
-        description: "Approaching, drawing near, advance, coming together"
+        number: 62
+        name: "Xiao Guo"
+        label: "Small Exceeding"
+        description: "Minor excess, slight imbalance, small surpassing"
       gene_key:
-        number: 19
-        shadow: "Co-dependence"
-        gift: "Sensitivity"
-        siddhi: "Sacrifice"
-        meaning: "A journey from unhealthy attachments to attuned responsiveness and ultimately selfless surrender to the whole"
+        number: 62
+        shadow: "Intellectualization"
+        gift: "Precision"
+        siddhi: "Impeccability"
+        meaning: "A journey from excessive mental analysis to focused accuracy and ultimately flawless perfection in every detail"
 
-  # Interpreted Meanings (combining all of the direct associations in various ways)
-  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  # Interpreted Meanings
   interpreted_meanings: 
     basic:
-      name_6bit: "Outer Deception"
-      name_8bit: "The New Deception"
+      name_6bit: "Small Exceeding"
+      name_8bit: "Small Exceeding Sage in Winter"
 
-    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
+    # Oracle card creation
     oracle_card:
-      card_name: "Penetrating Illusion"
-      card_creature: "A female sage whose eyes see through all deceptive layers, whose hands hold a crystal that reverses illusions, revealing the underlying patterns beneath appearances while herself remaining transparent as if made of clear ice"
-      question_posed: "Where might you benefit from seeing through appearances to perceive the reality beneath illusions?"
-      card_scene: "A serene female sage stands in a winter landscape of optical illusions and deceptive surfaces. Her form appears partially transparent, as if made of clear ice, embodying her ability to exist beyond the realm of appearances. Her penetrating gaze seems to look not at objects but through them, perceiving their underlying structure. In her hands she holds a remarkable crystal that acts as an illusion-reverser – when viewed through it, all deceptions become transparent, revealing the actual structures beneath. The winter landscape around her is filled with naturally occurring optical illusions – ice that appears solid but is dangerously thin in places, snow drifts that hide their true depth, shadows that seem to move independently of their sources. A new moon provides minimal light, casting subtle shadows that reveal contours invisible in direct illumination. The sage stands at the boundary between multiple realities – one side shows the world as it appears, with beautiful but deceptive ice formations, while the other side shows the same scene with all illusions stripped away, revealing both dangers and opportunities that were hidden. In the distance, people can be seen struggling with the illusions – some assuming thin ice is solid, others missing paths hidden by snow – while a few have noticed the sage and are approaching for guidance. Throughout the scene, at different scales, the same pattern of illusion/reality dualities manifests: microscopic ice crystals with hidden structural flaws, animals with camouflage being revealed by the sage's presence, distant astronomical phenomena whose light creates false impressions of their current state. Various tools for penetrating illusion lie nearby – mirrors positioned to reveal hidden angles, prisms separating light into constituent frequencies, lenses that correct for perceptual distortions. The sage's expression shows neither judgment nor surprise at the deceptions, but deep compassion for those still caught in illusions, having herself traversed the difficult journey from appearance to reality. The entire scene conveys the profound wisdom that emerges when one develops the capacity to see through deceptive appearances, perceiving the underlying patterns that unite seeming contradictions."
-      universal_symbol: "The transparency crystal – the tool that reverses illusion, representing the capacity to see through appearances to the underlying reality"
-      mood: "Penetrating clarity, transcendent insight, the profound understanding that emerges when one develops the capacity to see beyond appearances to the reality beneath"
+      card_name: "The Precise Observer"
+      # 2 bits set to 1, so Sage is feminine
+      card_creature: "A feminine sage with eyes that can perceive the smallest details and hands that can adjust the most intricate mechanisms with perfect accuracy. Her form combines the stability of a mountain with the gentle movement of wind, embodying the capacity to observe with perfect precision while maintaining a holistic perspective."
+      question_posed: "Where in your life might perfect attention to detail lead to wisdom rather than obsession?"
+      card_scene: "A feminine sage sits in a winter observatory, her silver-streaked hair flowing around her face like wind currents made visible. Before her is a table with an array of precision instruments – scales that can measure a snowflake's weight, lenses that reveal a crystal's atomic structure, clocks that mark microseconds. The sage holds a perfect snowflake between delicate fingers, studying its intricate pattern with eyes that miss nothing yet remain soft with wonder rather than rigid with analysis. Around her, winter air provides perfect clarity, each breath visible as precisely formed frost patterns that echo fractal mathematics. The walls of her observatory are transparent, revealing a winter landscape where small details tell important stories – animal tracks that reveal precise movements, ice formations that show exact temperature changes, star positions that allow perfect navigation. On scrolls nearby are mathematical formulas and diagrams showing the balance points of complex systems where tiny adjustments create harmony. Unlike the obsessive intellectualizer who gets lost in details, the sage's expression shows transcendent understanding – she sees how each small refinement contributes to the whole without becoming fixated on perfection for its own sake. Her hands occasionally make microscopic adjustments to the instruments around her, each movement precise yet relaxed, showing mastery that comes from understanding rather than rigid control. The new moon visible through the observatory dome provides just enough light to work by, emphasizing how minimal input can be sufficient when precision guides action."
+      universal_symbol: "The perfect snowflake – naturally occurring precision that combines mathematical exactitude with ephemeral beauty"
+      mood: "Refined awareness, transcendent precision, the peace of perfectly balanced details"
 
       # Image generation prompt
-      prompt_for_image_gen: "Limited color risograph-style illustration of a serene female sage standing in a winter landscape of optical illusions, her form partially transparent as if made of clear ice, holding a crystal that reverses illusions to reveal underlying structures.
-      Use BLUE for foreground elements (inner world) and RED for background/environment (outer world), with turquoise and cool silver accents.
+      prompt_for_image_gen: "Limited color risograph-style illustration of a feminine sage with silver-streaked hair studying a perfect snowflake in a winter observatory filled with precision instruments.
+      Use blue for foreground elements (inner world) and red for background/environment (outer world), with iridescent and silver accents for highlights.
       Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
-      Include a clean, full-width title bar at the bottom, with centered 8-bit code '00110000' and card title 'PENETRATING ILLUSION' in bold, without corner decorations or symbols.
-      Feature a new moon casting subtle shadows, ice that appears solid but shows dangerous thinness when seen through the crystal, optical illusions in snow formations, and people in the distance struggling with deceptive appearances.
-      The scene should evoke the mood of penetrating clarity and transcendent insight, incorporating subtle seasonal/elemental references appropriate for Winter (Air/Winter symbols, the way ice creates optical illusions, how cold air allows for exceptional clarity of vision).
-      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean. Clearly depict the sage as feminine, with graceful features and a penetrating yet compassionate expression."
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '00110000' and card title 'THE PRECISE OBSERVER' in bold, without corner decorations or symbols.
+      Feature precision scales, measuring instruments, mathematical diagrams, visible breath forming frost patterns, and a new moon visible through a glass dome.
+      The scene should evoke the mood of refined awareness and transcendent precision, and incorporate subtle seasonal/elemental references appropriate for Winter.
+      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
       
   # Related Cards
   related_cards: 
     # Season variations of the same card
-    same_card_winter: "00110000" # Outer Deception in Winter (Sage) - this card
-    same_card_spring: "00110010" # Outer Deception in Spring (Fool)
-    same_card_summer: "00110011" # Outer Deception in Summer (Hero)
-    same_card_fall: "00110001" # Outer Deception in Fall (Monster)
+    same_card_winter: "00110000" # Small Exceeding in Winter
+    same_card_spring: "00110010" # Small Exceeding in Spring
+    same_card_summer: "00110011" # Small Exceeding in Summer
+    same_card_fall: "00110001" # Small Exceeding in Fall
         
     # Opposites
-    opposite: "11001111" # Inner Truth in Summer - penetrating illusion vs. resonant truth
+    opposite: "11001111" # Inner Truth in Summer
     
-    # Thematic pairs
-    thematic_pair: "00000000" # The Moon in Winter - hidden mystery related to penetrating illusion
+    # Related thematically
+    thematic_pair: "00000000" # The Receptive in Winter
     
-    # Complete cycle
-    full_cycle: ["00110000","00110010","00110011","00110001"] # Outer Deception in all seasons
+    # Complete cycle - order depends on resonant season, always starts with Sage
+    full_cycle: ["00110000","00110010","00110011","00110001"] # Winter (Sage), Spring (Fool), Summer (Hero), Fall (Monster)
     
-  # Bit Values
+  # Bit Values - for reference and calculation
   bit_values:
     bit1: "0"  # Intuition
     bit2: "0"  # Ability
@@ -110,30 +108,30 @@ card:
     bit4: "1"  # Expectations
     bit5: "0"  # Support
     bit6: "0"  # Options
-    bit78: "00" # Cycle phase (Winter)
+    bit78: "00" # Cycle phase = Winter
 
   # Fractal Manifestations
   fractal_meanings:
     quantum:
-      pattern: "Quantum measurement problem - observation creating apparent but incomplete reality"
-      insight: "What we perceive as reality may be just one facet of a more complex underlying truth"
+      pattern: "Heisenberg's uncertainty principle - perfect precision possible in one dimension requires accepting uncertainty in another"
+      insight: "True precision understands its own limits and works within them rather than fighting against them"
     
     biological:
-      pattern: "Mimicry and camouflage in organisms that appear as something they are not"
-      insight: "Nature itself uses deceptive appearances, teaching us to look beyond surface impressions"
+      pattern: "Enzyme lock-and-key mechanisms that require perfect molecular fit to catalyze reactions"
+      insight: "Nature uses precise forms rather than brute force to accomplish its most important processes"
     
     psychological:
-      pattern: "The persona - the social mask that often differs from our true psychological makeup"
-      insight: "We all present facades that may not reflect our inner reality, creating universal empathy"
+      pattern: "The distinction between perfectionism (obsessive, fear-driven) and precision (attentive, value-driven)"
+      insight: "Healthy precision comes from loving attention rather than anxiety about imperfection"
     
     social:
-      pattern: "Institutional facades that project values different from operational realities"
-      insight: "Systems often develop presentational layers that obscure their actual functioning"
+      pattern: "Fine-tuned rules and expectations that create functional order without excessive control"
+      insight: "The most effective systems use minimal but precise regulation rather than overwhelming force"
     
     ecological:
-      pattern: "Indicator species whose health or decline reveals hidden ecosystem conditions"
-      insight: "The visible aspects of systems may mislead unless we know which signs truly indicate health"
+      pattern: "Keystone species whose specific properties maintain ecosystem balance with minimal intervention"
+      insight: "Small but perfectly positioned elements can maintain harmony in complex systems"
     
     cosmic:
-      pattern: "Light from distant stars showing past conditions rather than current reality"
-      insight: "Even our most direct perceptions may show us not what is, but what was"
+      pattern: "The precise physical constants that allow our universe to exist in its current form"
+      insight: "The entire cosmos depends on perfect calibration of fundamental forces that exceed neither too much nor too little"

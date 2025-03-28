@@ -1,108 +1,106 @@
-# Card 00110011.yml - Outer Deception in Summer (Hero)
+# Card 00110011.yml - Small Exceeding Hero in Summer
 card:
   # Summary
-  binary:      "00110011"
-  decimal:     "51"
-  hexadecimal: "33"
+  binary:      "00110011"  # 8-bit binary code
+  decimal:     "51"        # Decimal equivalent
+  hexadecimal: "33"        # Hexadecimal equivalent
 
   # Basic Info
-  # These are crude associations, and will serve as inputs for the interpreted meaning 
   basic_info: 
-    desc: "This card represents the masterful navigation of deceptive appearances. It embodies the skilled discernment that can operate effectively within illusions – the inner world of capacity without intuition or ability meeting the outer world of expectations without support or options – approached with confident expertise. In its Hero aspect in Summer, it reveals how one can master the territory between appearance and reality."
+    desc: "The Small Exceeding Hero represents masterful precision and expert refinement. This card captures the essence of Hexagram 62 (Xiao Guo/Small Exceeding) expressed through Summer's qualities of maturity and abundance. As the Hero in the cycle, this figure approaches precision with skill, confidence, and purpose. With inner capacity but no intuition or ability, and outer expectations without support or options, this figure has developed mastery in working with the delicate balance of slight imbalance. The hero transforms precision from theory into practical achievement through disciplined attention to detail."
     
-    keywords: ["navigating illusion", "skilled discernment", "strategic penetration", "masterful insight", "confident detection", "expert unveiling"]
-    symbols: ["summer mirage with navigable path", "full moon revealing true distances", "detective with revealing lens", "map showing apparent vs actual territories", "expert guide through deceptive terrain", "instruments measuring facade vs reality"]
+    keywords: ["Masterful precision", "Expert refinement", "Skilled accuracy", "Purposeful detail", "Confident exactitude", "Practical perfection"]
+    symbols: ["Surgeon's hands", "Master craftsman's tools", "Perfect measurement", "Summer fruit at peak ripeness", "Calibration instrument", "Perfectly balanced scale"]
   
-  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
-  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  # Direct Associations
   direct_associations:
-    archetype: "Hero" # Summer follows Spring in the cycle for this hexagram (Sage in Winter)
-    archetype_color: "Purple"
-    gender: "Masculine" # 2 bits set to 1 in positions 1-6: Hero and Monster are masculine
+    archetype: "Hero" # Determined by resonant season and seasonal cycle
+    archetype_color: "Gold" # Sage: Iridescent, Fool: Turquoise, Hero: Gold, Monster: Purple
+    gender: "masculine" # With 2 bits set to 1, Hero is masculine
 
     ## Inner World (bits 1-3)
     inner_world:
-      color: "Blue"
-      trigram: "Mountain"
-      meaning: "Capacity to understand but lacking intuition and ability; can see what needs to be done but feels unable to act."
+      color: "Blue" # From rgb_colors mapping
+      trigram: "☶" # From i_ching_trigrams mapping (Mountain)
+      meaning: "Capacity to understand but lacking intuition and ability; can see what needs to be done but feels unable to act" # From composite_frameworks.inner_world.meanings
 
     ## Outer World (bits 4-6)
     outer_world:
-      color: "Red"
-      trigram: "Wind"
-      meaning: "Alignment with expectations, but lacking support and clear options; conventional but adrift."
+      color: "Red" # From rgb_colors mapping
+      trigram: "☴" # From i_ching_trigrams mapping (Wind)
+      meaning: "Alignment with expectations, but lacking support and clear options; conventional but adrift" # From composite_frameworks.outer_world.meanings
 
     ## Cycle (bits 7-8)
     cycle: 
-      season: "Summer"
-      tarot_suit: "Cups"
-      moon_phase: "Full Moon"
-      element: "Water"
+      season: "Summer" # From bit_definitions.bit78.meanings
+      tarot_suit: "Cups" # From bit_definitions.bit78.meanings
+      moon_phase: "Full Moon" # From bit_definitions.bit78.meanings
+      element: "Water" # From bit_definitions.bit78.meanings
 
     # Tarot
     tarot:
-      card: "Outer Deception" # The corresponding tarot card for bits 1-6
+      card: "The Emperor" # The corresponding tarot card for bits 1-6
       cycle_suit: "Cups" # The corresponding tarot suit for bits 7-8
-      cycle_moon: "Full"
-      seasonal_expression: "Outer Deception manifests as masterful action in Summer as the Hero, demonstrating skilled navigation through illusions and deceptive appearances with confidence and expertise."
+      cycle_moon: "Full Moon"
+      seasonal_expression: "The Emperor's energy of structure and order expressed through the masterful action of the Hero, modified by Summer's qualities of abundance and fulfillment, creating a figure who achieves practical perfection through disciplined skill."
 
     # Hexagram-related
     hexagram:
       i_ching:
-        number: 19
-        name: "Lin"
-        label: "Approach"
-        description: "Approaching, drawing near, advance, coming together"
+        number: 62
+        name: "Xiao Guo"
+        label: "Small Exceeding"
+        description: "Minor excess, slight imbalance, small surpassing"
       gene_key:
-        number: 19
-        shadow: "Co-dependence"
-        gift: "Sensitivity"
-        siddhi: "Sacrifice"
-        meaning: "A journey from unhealthy attachments to attuned responsiveness and ultimately selfless surrender to the whole"
+        number: 62
+        shadow: "Intellectualization"
+        gift: "Precision"
+        siddhi: "Impeccability"
+        meaning: "A journey from excessive mental analysis to focused accuracy and ultimately flawless perfection in every detail"
 
-  # Interpreted Meanings (combining all of the direct associations in various ways)
-  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  # Interpreted Meanings
   interpreted_meanings: 
     basic:
-      name_6bit: "Outer Deception"
-      name_8bit: "The Full Deception"
+      name_6bit: "Small Exceeding"
+      name_8bit: "Small Exceeding Hero in Summer"
 
-    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
+    # Oracle card creation
     oracle_card:
-      card_name: "Illusion Navigator"
-      card_creature: "A confident male figure who moves with perfect skill through a landscape of deceptions and mirages, using specialized tools to detect false appearances, guiding others safely through terrain where nothing is quite what it seems"
-      question_posed: "How might you develop expertise in navigating the gap between appearances and reality in your life?"
-      card_scene: "A focused male figure traverses a summer landscape filled with optical illusions, mirages, and deceptive appearances. Unlike the female sage's transparent wisdom or the female child's confused wonder, this man actively navigates the territory between appearance and reality with confident expertise. His movements show perfect precision as he steps surely across what appears to be solid ground but reveals dangerous sinkholes to the untrained eye. The full moon overhead illuminates everything with unusual clarity, yet creates multiple shadow patterns that further complicate perception for the inexperienced. The man carries an assortment of specialized tools for detecting and measuring the gap between appearance and reality – perhaps instruments for detecting hidden structures, gauges that measure true versus apparent distance, or lenses that reveal spectra invisible to the naked eye. He uses these with the easy competence of long practice. The summer landscape itself seems to shimmer with heat mirages, creating false horizons and phantom water sources that would fatally mislead the unprepared traveler. Yet the navigator has marked a safe path through this deceptive terrain with subtle indicators that would be invisible to those without training. Several people follow behind him at a distance, clearly relying on his expertise to traverse the dangerous landscape safely. They carry supplies and equipment, suggesting this navigation has substantial practical purpose rather than being merely theoretical. The man's expression shows neither the sage's compassionate detachment nor the child's confusion, but rather the intense concentration of someone performing difficult work that has become second nature through mastery. Various natural phenomena in the scene demonstrate principles of illusion – heat mirages creating false water, plants mimicking more dangerous species for protection, animals with camouflage that makes them nearly invisible until the navigator points them out. The entire scene conveys the powerful competence that emerges when one develops practical mastery in discerning truth from illusion – not merely seeing through deception philosophically, but developing functional expertise in navigating landscapes where appearance differs from reality."
-      universal_symbol: "The navigator's compass – the specialized tool that maintains true direction despite deceptive surroundings, representing the capacity to maintain orientation in the midst of illusion"
-      mood: "Masterful discernment, confident navigation, the powerful competence that emerges when one develops practical expertise in distinguishing appearance from reality"
+      card_name: "The Master Calibrator"
+      # 2 bits set to 1, so Hero is masculine
+      card_creature: "A masculine craftsman whose hands achieve perfect precision through years of devoted practice, neither overworking nor underworking his materials. His movements combine decisiveness with restraint, embodying the heroic mastery of knowing exactly when and where to apply just the right amount of force."
+      question_posed: "Where might you apply masterful precision to achieve practical excellence rather than theoretical perfection?"
+      card_scene: "A masculine figure works in a summer workshop open to the abundant natural world, his practiced hands making minute adjustments to a complex mechanism with confident precision. Unlike the sage's contemplative wisdom or the child's innocent discovery, his focus is on practical achievement through disciplined attention to detail. Around him are examples of his craft – objects that demonstrate perfect balance between form and function, neither overdone nor underdeveloped. His workbench contains an array of specialized tools, each worn in exactly the right places from years of use, showing that mastery comes through practical application rather than theoretical knowledge. The summer setting, with its full moon visible through the open workshop door, emphasizes that this precision occurs at the peak of natural abundance – not the first experimental growth of spring nor the concentrated essence of winter, but the mature fullness of summer. The craftsman's body shows evidence of years of practice – perhaps calluses on hands, or muscles developed through repetitive skilled movements. Unlike the obsessive perfectionist who gets lost in minutiae, his movements are efficient and purposeful, showing that his precision serves practical goals rather than theoretical ideals. Around his workshop, various calibration instruments maintain perfect accuracy – scales balanced to the microgram, levels that detect the slightest deviation, gauges that measure to fractions of a millimeter. The objects of his craft are being prepared for actual use, not merely display – their precision serves functional purpose in the world."
+      universal_symbol: "The perfectly calibrated scale – precision maintained in perfect balance, neither excessive nor insufficient"
+      mood: "Masterful skill, confident precision, the satisfying excellence that emerges from practical attention to detail"
 
       # Image generation prompt
-      prompt_for_image_gen: "Limited color risograph-style illustration of a confident male figure traversing a summer landscape filled with optical illusions and mirages, using specialized instruments to detect false appearances while guiding others safely through deceptive terrain.
-      Use BLUE for foreground elements (inner world) and RED for background/environment (outer world), with deep purple and silver-blue accents.
+      prompt_for_image_gen: "Limited color risograph-style illustration of a masculine craftsman in a summer workshop making precise adjustments to a complex mechanism with confident hands.
+      Use blue for foreground elements (inner world) and red for background/environment (outer world), with gold and warm amber accents for highlights.
       Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
-      Include a clean, full-width title bar at the bottom, with centered 8-bit code '00110011' and card title 'ILLUSION NAVIGATOR' in bold, without corner decorations or symbols.
-      Feature a full moon creating multiple shadow patterns, heat mirages creating false horizons, a specialized compass or detection tool in the navigator's hand, subtle trail markers visible only to the trained eye, and followers at a distance relying on his expertise.
-      The scene should evoke the mood of masterful discernment and confident navigation, incorporating subtle seasonal/elemental references appropriate for Summer (Water/Summer symbols, the way water creates reflection and refraction, how summer heat creates natural mirages).
-      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean. Clearly depict the navigator as masculine, with strong features and an expression of focused concentration."
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '00110011' and card title 'THE MASTER CALIBRATOR' in bold, without corner decorations or symbols.
+      Feature specialized tools worn in exactly the right places, perfect calibration instruments, completed work showing ideal balance of form and function, and a full moon visible through the open workshop door.
+      The scene should evoke the mood of masterful skill and confident precision, and incorporate subtle seasonal/elemental references appropriate for Summer.
+      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
       
   # Related Cards
   related_cards: 
     # Season variations of the same card
-    same_card_winter: "00110000" # Outer Deception in Winter (Sage)
-    same_card_spring: "00110010" # Outer Deception in Spring (Fool)
-    same_card_summer: "00110011" # Outer Deception in Summer (Hero) - this card
-    same_card_fall: "00110001" # Outer Deception in Fall (Monster)
+    same_card_winter: "00110000" # Small Exceeding in Winter
+    same_card_spring: "00110010" # Small Exceeding in Spring
+    same_card_summer: "00110011" # Small Exceeding in Summer
+    same_card_fall: "00110001" # Small Exceeding in Fall
         
     # Opposites
-    opposite: "11001100" # Inner Truth in Winter - navigating illusion vs. embodying truth
+    opposite: "11001100" # Inner Truth in Winter
     
-    # Thematic pairs
-    thematic_pair: "00000011" # The Moon in Summer - mastering mystery related to navigating illusion
+    # Related thematically
+    thematic_pair: "00000011" # The Receptive in Summer
     
-    # Complete cycle
-    full_cycle: ["00110000","00110010","00110011","00110001"] # Outer Deception in all seasons
+    # Complete cycle - order depends on resonant season, always starts with Sage
+    full_cycle: ["00110000","00110010","00110011","00110001"] # Winter (Sage), Spring (Fool), Summer (Hero), Fall (Monster)
     
-  # Bit Values
+  # Bit Values - for reference and calculation
   bit_values:
     bit1: "0"  # Intuition
     bit2: "0"  # Ability
@@ -110,30 +108,30 @@ card:
     bit4: "1"  # Expectations
     bit5: "0"  # Support
     bit6: "0"  # Options
-    bit78: "11" # Cycle phase (Summer)
+    bit78: "11" # Cycle phase = Summer
 
   # Fractal Manifestations
   fractal_meanings:
     quantum:
-      pattern: "Quantum tunneling - particles navigating apparent barriers through alternate pathways"
-      insight: "What seems impossible within one framework may be navigable through different approaches"
+      pattern: "Precision instruments that can detect and measure quantum phenomena at the limits of observation"
+      insight: "Masterful precision often involves knowing exactly where the boundaries of measurement lie"
     
     biological:
-      pattern: "Immune system distinguishing harmful mimics from benign proteins"
-      insight: "Sophisticated biological systems develop precise methods to detect deception"
+      pattern: "Surgical techniques that require micron-level accuracy to repair delicate structures"
+      insight: "In some domains, practical mastery requires a precision beyond what intuition alone can provide"
     
     psychological:
-      pattern: "Trained awareness that can detect subtle inconsistencies in behavior versus stated intent"
-      insight: "With practice, we can develop refined perception of misalignments in human communication"
+      pattern: "The expert diagnostician who can detect subtle patterns of behavior that indicate specific conditions"
+      insight: "Developed expertise combines precision with practical knowledge in ways that pure analysis cannot"
     
     social:
-      pattern: "Cultural expertise that can navigate complex social codes while maintaining authenticity"
-      insight: "Skilled social navigation allows functioning within social illusions without being defined by them"
+      pattern: "Diplomatic negotiations where exactly calibrated language prevents conflict while achieving goals"
+      insight: "Social mastery often involves precise calibration of communication to specific contexts"
     
     ecological:
-      pattern: "Indigenous knowledge that identifies hidden resources in apparently barren landscapes"
-      insight: "Deep familiarity with systems reveals resources and dangers invisible to casual observation"
+      pattern: "The precise management of controlled burns that maintain rather than damage ecosystems"
+      insight: "Some interventions require exact calibration to maintain balance rather than create harm"
     
     cosmic:
-      pattern: "Navigation techniques that account for visual distortions in astronomical observation"
-      insight: "By understanding the specific ways perception distorts reality, we can compensate mathematically"
+      pattern: "Astronomical instruments calibrated to detect variations at the edge of measurable phenomena"
+      insight: "Our ability to understand cosmic patterns depends on instruments of precisely calibrated accuracy"
