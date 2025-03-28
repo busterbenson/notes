@@ -1,6 +1,8 @@
 tree:
   common_name: "Dutch Elm"
   scientific_name: "Ulmus × hollandica"
+  scientific_genus: "Ulmus"
+  common_genus: "Elm"
   family: "Ulmaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -149,7 +151,7 @@ tree:
       reliability: "High (seasonal)"
       visibility: "Need to look closely"
     
-  look_alike_species:
+  look_alikes:
     - species: "American Elm (Ulmus americana)"
       differences: "American Elm often has more drooping branch tips and more deeply fissured, grayish bark"
       identification_tip: "Dutch Elm branches typically arch up more than American Elm, which has more drooping outer branches"

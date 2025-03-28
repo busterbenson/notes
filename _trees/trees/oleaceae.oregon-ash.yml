@@ -1,6 +1,8 @@
 tree:
   common_name: "Oregon Ash"
   scientific_name: "Fraxinus latifolia"
+  scientific_genus: "Fraxinus"
+  common_genus: "Ash"
   family: "Oleaceae"
   
   # Basic summary information
@@ -154,7 +156,7 @@ tree:
       reliability: "High"
       visibility: "Easy - check surrounding habitat"
     
-  look_alike_species:
+  look_alikes:
     - species: "White Ash (Fraxinus americana)"
       differences: "Oregon Ash has broader, fuzzy leaflets; White Ash has 7-9 narrower, smooth leaflets"
       identification_tip: "Oregon Ash leaflets are usually fuzzy underneath and broader than other ash species"

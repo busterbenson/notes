@@ -137,7 +137,7 @@ genus:
       reliability: "High when present"
       visibility: "More visible after leaves drop"
     
-  look_alike_species:
+  look_alikes:
     - species: "Maple (Acer species)"
       differences: "Maple has opposite branching (sycamore is alternate); maple has winged 'helicopter' seeds (not balls); maple bark is not mottled"
       identification_tip: "Check how the branches grow - if directly opposite each other, it's maple not sycamore"

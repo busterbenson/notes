@@ -1,6 +1,8 @@
 tree:
   common_name: "Noble Fir"
   scientific_name: "Abies procera"
+  scientific_genus: "Abies"
+  common_genus: "Fir"
   family: "Pinaceae"
   
   # Basic summary information
@@ -158,7 +160,7 @@ tree:
       reliability: "Very high"
       visibility: "Medium - need to flip needles to see"
     
-  look_alike_species:
+  look_alikes:
     - species: "White Fir (Abies concolor)"
       differences: "White Fir has longer, straighter needles that are more silver-gray than blue; usually shorter overall height"
       identification_tip: "Noble Fir needles curve upward more distinctly and have a bluer color"

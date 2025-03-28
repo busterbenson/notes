@@ -1,6 +1,8 @@
 tree:
   common_name: "Alderleaf Cercocarpus"
   scientific_name: "Cercocarpus montanus"
+  scientific_genus: "Cercocarpus"
+  common_genus: "Mountain Mahogany"
   family: "Rosaceae"
   
   # Basic summary information
@@ -164,7 +166,7 @@ tree:
       reliability: "High"
       visibility: "Habitat is a good indicator"
     
-  look_alike_species:
+  look_alikes:
     - species: "Birchleaf Mountain Mahogany (Cercocarpus betuloides)"
       differences: "Birchleaf Mountain Mahogany has smaller, more birch-like leaves compared to the alder-like leaves of C. montanus; both have similar feathery seed tails"
       identification_tip: "Check the leaf shape - more rounded for birchleaf, more wedge-shaped for alderleaf"

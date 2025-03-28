@@ -1,6 +1,8 @@
 tree:
   common_name: "California Red Fir"
   scientific_name: "Abies magnifica"
+  scientific_genus: "Abies"
+  common_genus: "Fir"
   family: "Pinaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -146,7 +148,7 @@ tree:
       reliability: "Medium"
       visibility: "High - can see from far away"
     
-  look_alike_species:
+  look_alikes:
     - species: "White Fir (Abies concolor)"
       differences: "White Fir has flatter needles that don't curve up as much; usually has smaller cones (3-5 inches); needles look more silvery-blue"
       identification_tip: "If the needles are flatter along the branch rather than curving strongly upward, and the cones are smaller, it's likely White Fir"

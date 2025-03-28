@@ -1,6 +1,8 @@
 tree:
   common_name: "Ginkgo"
   scientific_name: "Ginkgo biloba"
+  scientific_genus: "Ginkgo"
+  common_genus: "Ginkgo"
   family: "Ginkgoaceae"
   
   # Basic summary information
@@ -155,7 +157,7 @@ tree:
       reliability: "Medium"
       visibility: "Need to look at trunk"
     
-  look_alike_species:
+  look_alikes:
     - species: "None - No other tree species"
       differences: "Ginkgo leaves are completely unique among trees"
       identification_tip: "If you see fan-shaped leaves on a tree, it's definitely a ginkgo - no other tree has similar leaves"

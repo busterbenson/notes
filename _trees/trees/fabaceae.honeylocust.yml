@@ -1,6 +1,8 @@
 tree:
   common_name: "Honeylocust"
   scientific_name: "Gleditsia triacanthos"
+  scientific_genus: "Gleditsia"
+  common_genus: "Locust"
   family: "Fabaceae"
   
   # Basic summary information
@@ -168,7 +170,7 @@ tree:
       reliability: "Medium"
       visibility: "Medium - need to observe overall form"
     
-  look_alike_species:
+  look_alikes:
     - species: "Black Locust (Robinia pseudoacacia)"
       differences: "Black Locust has once-compound leaves with larger leaflets, smaller thorns only at leaf bases, and shorter pods"
       identification_tip: "Honeylocust thorns are larger, often branched, and grow directly from trunk and branches; leaflets are smaller"

@@ -1,6 +1,8 @@
 tree:
   common_name: "Palo Verde"
   scientific_name: "Parkinsonia species"
+  scientific_genus: "Parkinsonia"
+  common_genus: "Palo Verde"
   family: "Fabaceae"
   
   # Basic summary information
@@ -151,7 +153,7 @@ tree:
       reliability: "Medium"
       visibility: "Visible when present after flowering"
     
-  look_alike_species:
+  look_alikes:
     - species: "Desert Ironwood (Olneya tesota)"
       differences: "Ironwood has gray-green bark, not bright green; denser foliage; bluish-pink flowers; much harder wood"
       identification_tip: "If the bark is gray-green instead of bright green, and the flowers are purplish instead of yellow, it's probably Ironwood"

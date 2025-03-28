@@ -149,7 +149,7 @@ tree:
       reliability: "Medium"
       visibility: "High - visible from a distance"
 
-  look_alike_species:
+  look_alikes:
     - species: "Three-flowered Maple (Acer triflorum)"
       differences: "Similar trifoliate leaves and peeling bark, but the bark is less dramatically cinnamon-colored and more grayish-brown"
       identification_tip: "Paperbark Maple has much more colorful, cinnamon-red bark compared to the duller bark of Three-flowered Maple"

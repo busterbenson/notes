@@ -1,6 +1,8 @@
 tree:
   common_name: "Norway Maple"
   scientific_name: "Acer platanoides"
+  scientific_genus: "Acer"
+  common_genus: "Maple"
   family: "Sapindaceae"
   
   # Basic summary information
@@ -150,7 +152,7 @@ tree:
       reliability: "Medium"
       visibility: "Noticeable when standing under the tree"
     
-  look_alike_species:
+  look_alikes:
     - species: "Sugar Maple (Acer saccharum)"
       differences: "Sugar Maple lacks milky sap; has rounded notches between leaf lobes (not pointed); typically has more vibrant orange-red fall color"
       identification_tip: "Break a leaf stem - Norway Maple leaks white sap, Sugar Maple doesn't; also look at the spaces between lobes - Sugar Maple has rounded notches"

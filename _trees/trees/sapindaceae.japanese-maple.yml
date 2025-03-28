@@ -1,6 +1,8 @@
 tree:
   common_name: "Japanese Maple"
   scientific_name: "Acer palmatum"
+  scientific_genus: "Acer"
+  common_genus: "Maple"
   family: "Sapindaceae"
   
   # Basic summary information
@@ -155,7 +157,7 @@ tree:
       reliability: "High"
       visibility: "Easy to see from far away"
     
-  look_alike_species:
+  look_alikes:
     - species: "Other Maple Species (Acer species)"
       differences: "Other maples are typically much larger trees; have less deeply cut leaf lobes; usually only have green leaves during growing season"
       identification_tip: "If it's a large tree with less fancy, mostly green leaves, it's probably a different maple species"

@@ -1,6 +1,8 @@
 tree:
   common_name: "Bigcone Douglas-fir"
   scientific_name: "Pseudotsuga macrocarpa"
+  scientific_genus: "Pseudotsuga"
+  common_genus: "Douglas-fir"
   family: "Pinaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -125,7 +127,7 @@ tree:
       reliability: "High"
       visibility: "Observable on lower branches"
     
-  look_alike_species:
+  look_alikes:
     - species: "Coast Douglas-fir (Pseudotsuga menziesii var. menziesii)"
       differences: "Bigcone Douglas-fir has much larger cones (4-8 inches vs. 2-4 inches); thicker bark; grows only in Southern California mountains"
       identification_tip: "If the cones are smaller than your hand or you're in Northern California, it's likely a Coast Douglas-fir"

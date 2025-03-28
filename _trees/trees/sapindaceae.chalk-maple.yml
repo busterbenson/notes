@@ -1,6 +1,8 @@
 tree:
   common_name: "Chalk Maple"
   scientific_name: "Acer leucoderme"
+  scientific_genus: "Acer"
+  common_genus: "Maple"
   family: "Sapindaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -159,7 +161,7 @@ tree:
       reliability: "Very high"
       visibility: "Medium - need to be near the tree"
     
-  look_alike_species:
+  look_alikes:
     - species: "Sugar Maple (Acer saccharum)"
       differences: "Sugar Maple grows much larger, has deeper leaf lobes, and bark is not as white"
       identification_tip: "Chalk Maple is much smaller and has whiter bark than Sugar Maple"

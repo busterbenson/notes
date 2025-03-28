@@ -1,6 +1,8 @@
 tree:
   common_name: "American Beech"
   scientific_name: "Fagus grandifolia"
+  scientific_genus: "Fagus"
+  common_genus: "Beech"
   family: "Fagaceae"
   
   # Basic summary information
@@ -160,7 +162,7 @@ tree:
       reliability: "Medium"
       visibility: "Visible in fall when present, but may be sparse on landscape trees"
     
-  look_alike_species:
+  look_alikes:
     - species: "European Beech (Fagus sylvatica)"
       differences: "European Beech has slightly smaller, less toothed leaves and often has copper or purple-leaved cultivars; both have similar smooth gray bark"
       identification_tip: "American Beech leaves are slightly larger with more pronounced teeth; if the leaves are purple or copper-colored, it's definitely European Beech"

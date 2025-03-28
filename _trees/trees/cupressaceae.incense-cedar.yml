@@ -1,6 +1,8 @@
 tree:
   common_name: "Incense-cedar"
   scientific_name: "Calocedrus decurrens"
+  scientific_genus: "Calocedrus"
+  common_genus: "Incense Cedar"
   family: "Cupressaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -143,7 +145,7 @@ tree:
       reliability: "High (when present)"
       visibility: "Medium - need to look for cones on mature trees"
     
-  look_alike_species:
+  look_alikes:
     - species: "Western Redcedar (Thuja plicata)"
       differences: "Western Redcedar has rosebud-shaped cones (not duck-bill shaped); foliage typically has a less intense fragrance; bark is more grayish-brown rather than reddish"
       identification_tip: "If the cones look like tiny rosebuds instead of duck bills, and the smell is milder, it's likely Western Redcedar"

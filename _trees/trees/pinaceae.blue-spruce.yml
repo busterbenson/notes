@@ -1,6 +1,8 @@
 tree:
   common_name: "Blue Spruce"
   scientific_name: "Picea pungens"
+  scientific_genus: "Picea"
+  common_genus: "Spruce"
   family: "Pinaceae"
   
   # Basic summary
@@ -160,7 +162,7 @@ tree:
       reliability: "Medium"
       visibility: "Medium - need to observe trunk"
     
-  look_alike_species:
+  look_alikes:
     - species: "Norway Spruce (Picea abies)"
       differences: "Norway Spruce has dark green (not blue) needles; more pendulous branch tips; larger cones"
       identification_tip: "If needles are dark green rather than blue and branch tips droop downward, it's likely Norway Spruce"

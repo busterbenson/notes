@@ -1,6 +1,8 @@
 tree:
   common_name: "Vine Maple"
   scientific_name: "Acer circinatum"
+  scientific_genus: "Acer"
+  common_genus: "Maple"
   family: "Sapindaceae"
   
   # Basic summary information
@@ -156,7 +158,7 @@ tree:
       reliability: "High (in fall)"
       visibility: "Easy - visible from a distance in fall"
     
-  look_alike_species:
+  look_alikes:
     - species: "Japanese Maple (Acer palmatum)"
       differences: "Japanese maple has more deeply divided leaf lobes with a more refined growth habit; typically more intensely cultivated with many ornamental varieties"
       identification_tip: "Vine maple leaves tend to be more circular in overall shape with sharper teeth on the edges"

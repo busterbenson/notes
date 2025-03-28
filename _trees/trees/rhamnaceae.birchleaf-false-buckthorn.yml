@@ -1,6 +1,8 @@
 tree:
   common_name: "Birchleaf False-buckthorn"
   scientific_name: "Frangula betulifolia"
+  scientific_genus: "Frangula"
+  common_genus: "Buckthorn"
   family: "Rhamnaceae"
   
   # Basic summary
@@ -150,7 +152,7 @@ tree:
       reliability: "Medium"
       visibility: "Medium - need to look at stems"
     
-  look_alike_species:
+  look_alikes:
     - species: "Cascara (Frangula purshiana)"
       differences: "Cascara grows larger (up to 30 feet); has more elongated, less round leaves; typically found in moister habitats"
       identification_tip: "If it's a larger tree with more elongated leaves in a moist forest setting, it's likely Cascara rather than Birchleaf False-buckthorn"

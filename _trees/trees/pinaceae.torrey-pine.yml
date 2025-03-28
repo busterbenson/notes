@@ -1,6 +1,8 @@
 tree:
   common_name: "Torrey Pine"
   scientific_name: "Pinus torreyana"
+  scientific_genus: "Pinus"
+  common_genus: "Pine"
   family: "Pinaceae"
   
   # Basic summary information
@@ -150,7 +152,7 @@ tree:
       reliability: "Very high for wild trees"
       visibility: "Context-based observation"
     
-  look_alike_species:
+  look_alikes:
     - species: "Sugar Pine (Pinus lambertiana)"
       differences: "Sugar Pine has much longer cones (10-20 inches) with distinctive curved scales, thinner needles, and grows in mountains, not coastal areas"
       identification_tip: "Torrey Pine has shorter cones and much thicker needles; it grows only in coastal locations"

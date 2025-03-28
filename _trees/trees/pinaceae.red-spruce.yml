@@ -128,7 +128,7 @@ tree:
       reliability: "Medium"
       visibility: "Low - requires close observation"
 
-  look_alike_species:
+  look_alikes:
     - species: "Sitka Spruce (Picea sitchensis)"
       differences: "Has flatter, sharper needles with a distinctive bluish-white bloom; grows naturally in coastal California with larger cones"
       identification_tip: "If the needles have a bluish-white color and the tree is growing near the coast, it's likely Sitka Spruce"

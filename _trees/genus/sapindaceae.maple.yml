@@ -147,7 +147,7 @@ genus:
       reliability: "Very high (when present)"
       visibility: "Seasonal; easy to see when present"
     
-  look_alike_species:
+  look_alikes:
     - species: "Sweetgum (Liquidambar styraciflua)"
       differences: "Sweetgum has alternate branching (not opposite); leaves have more uniformly pointed lobes; fruits are spiky balls, not winged seeds"
       identification_tip: "Check branch arrangement - if branches alternate rather than grow opposite, it's not a maple"

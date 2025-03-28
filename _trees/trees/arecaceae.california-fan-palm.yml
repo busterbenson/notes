@@ -1,6 +1,8 @@
 tree:
   common_name: "California Fan Palm"
   scientific_name: "Washingtonia filifera"
+  scientific_genus: "Washingtonia"
+  common_genus: "Fan Palm"
   family: "Arecaceae"
   
   # Basic summary information
@@ -150,7 +152,7 @@ tree:
       reliability: "High"
       visibility: "Medium - need to be fairly close"
     
-  look_alike_species:
+  look_alikes:
     - species: "Mexican Fan Palm (Washingtonia robusta)"
       differences: "Mexican Fan Palm is taller and skinnier with a more slender trunk; California Fan Palm has a thicker trunk and is usually shorter"
       identification_tip: "If the trunk is skinny like a telephone pole rather than thick like a barrel, it's probably a Mexican Fan Palm"

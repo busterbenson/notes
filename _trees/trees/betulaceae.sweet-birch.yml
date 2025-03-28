@@ -1,6 +1,8 @@
 tree:
   common_name: "Sweet Birch"
   scientific_name: "Betula lenta"
+  scientific_genus: "Betula"
+  common_genus: "Birch"
   family: "Betulaceae"
   
   # Basic summary information
@@ -146,7 +148,7 @@ tree:
       reliability: "Medium"
       visibility: "Easy - visible from a distance in fall"
     
-  look_alike_species:
+  look_alikes:
     - species: "Black Cherry (Prunus serotina)"
       differences: "Has similar dark bark with horizontal lenticels, but lacks the wintergreen scent; has elongated leaves with small, incurved teeth rather than doubly-serrated margins; produces true cherries, not catkins"
       identification_tip: "Scratch a twig - Black Cherry has an almond-like scent rather than wintergreen"

@@ -1,6 +1,8 @@
 tree:
   common_name: "Strawberry Tree"
   scientific_name: "Arbutus unedo"
+  scientific_genus: "Arbutus"
+  common_genus: "Madrone"
   family: "Ericaceae"
   
   # Basic summary information
@@ -161,7 +163,7 @@ tree:
       reliability: "Medium"
       visibility: "Need to look closely at leaves"
     
-  look_alike_species:
+  look_alikes:
     - species: "Pacific Madrone (Arbutus menziesii)"
       differences: "Native to California; grows much larger; has bigger leaves and larger, smoother orange-red fruits"
       identification_tip: "If it's a tall tree with very large leaves and bigger, smoother fruits, it's likely a Pacific Madrone"

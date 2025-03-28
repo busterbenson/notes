@@ -1,6 +1,8 @@
 tree:
   common_name: "September Elm"
   scientific_name: "Ulmus serotina"
+  scientific_genus: "Ulmus"
+  common_genus: "Elm"
   family: "Ulmaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -136,7 +138,7 @@ tree:
       reliability: "Medium"
       visibility: "Medium - need to look at trunk up close"
     
-  look_alike_species:
+  look_alikes:
     - species: "American Elm (Ulmus americana)"
       differences: "Very similar appearance but flowers in spring, not fall; has more pronounced drooping branch tips"
       identification_tip: "Check flowering time - spring for American Elm, fall for September Elm"

@@ -1,6 +1,8 @@
 tree:
   common_name: "Kenai Birch"
   scientific_name: "Betula papyrifera var. kenaica"
+  scientific_genus: "Betula"
+  common_genus: "Birch"
   family: "Betulaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -170,7 +172,7 @@ tree:
       reliability: "High (spring only)"
       visibility: "Visible from nearby in spring"
     
-  look_alike_species:
+  look_alikes:
     - species: "Paper Birch (Betula papyrifera)"
       differences: "Standard paper birch grows taller (50-70 feet) with a more open crown; Kenai birch is more compact (30-45 feet) with a denser crown"
       identification_tip: "Kenai birch has a more compact form, denser branching, and generally smaller stature than standard paper birch"

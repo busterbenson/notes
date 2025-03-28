@@ -1,6 +1,8 @@
 tree:
   common_name: "Siberian Elm"
   scientific_name: "Ulmus pumila"
+  scientific_genus: "Ulmus"
+  common_genus: "Elm"
   family: "Ulmaceae"
   native: false
 
@@ -136,7 +138,7 @@ tree:
       reliability: "High"
       visibility: "Low - observed over time rather than immediately visible"
 
-  look_alike_species:
+  look_alikes:
     - species: "American Elm (Ulmus americana)"
       differences: "Has a more distinctly vase-shaped crown with drooping branch tips; larger leaves with doubly serrated edges; more deeply furrowed bark with diamond patterns"
       identification_tip: "If the tree has a vase shape with arching branches that droop at the tips, it's likely American Elm"

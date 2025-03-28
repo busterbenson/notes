@@ -1,6 +1,8 @@
 tree:
   common_name: "Murray's Birch"
   scientific_name: "Betula murrayana"
+  scientific_genus: "Betula"
+  common_genus: "Birch"
   family: "Betulaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -136,7 +138,7 @@ tree:
       reliability: "High"
       visibility: "Medium - visible in spring only"
     
-  look_alike_species:
+  look_alikes:
     - species: "Paper Birch (Betula papyrifera)"
       differences: "Has similar white, peeling bark, but typically has more oval leaves rather than diamond-shaped"
       identification_tip: "Compare leaf shapes - Paper Birch leaves are more oval, Murray's Birch leaves are more diamond-shaped"

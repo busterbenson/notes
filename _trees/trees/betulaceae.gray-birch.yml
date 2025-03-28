@@ -1,6 +1,8 @@
 tree:
   common_name: "Gray Birch"
   scientific_name: "Betula populifolia"
+  scientific_genus: "Betula"
+  common_genus: "Birch"
   family: "Betulaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -154,7 +156,7 @@ tree:
       reliability: "Medium (fall only)"
       visibility: "Visible from a distance in fall"
     
-  look_alike_species:
+  look_alikes:
     - species: "Paper Birch (Betula papyrifera)"
       differences: "Paper Birch has bark that peels in paper-like strips; generally larger; more oval leaves without the long-pointed tip; usually straighter growth"
       identification_tip: "If the bark peels easily in paper-like strips, it's Paper Birch, not Gray Birch"

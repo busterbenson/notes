@@ -107,7 +107,7 @@ genus:
       reliability: "Medium"
       visibility: "Need to look at trunk"
     
-  look_alike_species:
+  look_alikes:
     - species: "Mimosa/Silk Tree (Albizia julibrissin)"
       differences: "Mimosa has pink fluffy flowers, not yellow; leaves similar but often larger and less fine"
       identification_tip: "If the fluffy flowers are pink instead of yellow, it's a Mimosa"

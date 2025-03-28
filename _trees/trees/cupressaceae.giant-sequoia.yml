@@ -1,6 +1,8 @@
 tree:
   common_name: "Giant Sequoia"
   scientific_name: "Sequoiadendron giganteum"
+  scientific_genus: "Sequoiadendron"
+  common_genus: "Giant Sequoia"
   family: "Cupressaceae"
   
   # Basic summary information
@@ -144,7 +146,7 @@ tree:
       reliability: "Very high"
       visibility: "High - can see from a fair distance"
     
-  look_alike_species:
+  look_alikes:
     - species: "Coast Redwood (Sequoia sempervirens)"
       differences: "Coast Redwood has flat, soft needles (not spiky scales); much smaller cones (grape-sized); narrower trunk compared to height; grows along the coast, not in mountains"
       identification_tip: "If the leaves are flat and soft like fern fronds, and the cones are small like grapes, it's likely a Coast Redwood"

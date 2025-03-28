@@ -1,6 +1,8 @@
 tree:
   common_name: "Bishop Pine"
   scientific_name: "Pinus muricata"
+  scientific_genus: "Pinus"
+  common_genus: "Pine"
   family: "Pinaceae"
   
   # Basic summary information
@@ -160,7 +162,7 @@ tree:
       reliability: "Medium"
       visibility: "Context-based observation"
     
-  look_alike_species:
+  look_alikes:
     - species: "Monterey Pine (Pinus radiata)"
       differences: "Monterey Pine has larger cones (3-6 inches) with less prominent knobs and generally grows larger"
       identification_tip: "Bishop Pine cones are smaller and knobby; its form is often more irregular than Monterey Pine"

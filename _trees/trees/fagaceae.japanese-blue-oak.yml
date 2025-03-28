@@ -1,6 +1,8 @@
 tree:
   common_name: "Japanese Blue Oak"
   scientific_name: "Quercus glauca"
+  scientific_genus: "Quercus"
+  common_genus: "Oak"
   family: "Fagaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -123,7 +125,7 @@ tree:
       reliability: "High"
       visibility: "Visible with close examination of leaves"
     
-  look_alike_species:
+  look_alikes:
     - species: "Coast Live Oak (Quercus agrifolia)"
       differences: "Coast Live Oak has more deeply toothed or spiny leaf margins and lacks the blue-green coloration"
       identification_tip: "If the leaves are very spiny and dark green (not blue-green), it's more likely a Coast Live Oak"

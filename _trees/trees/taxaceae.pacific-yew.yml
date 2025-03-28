@@ -1,6 +1,8 @@
 tree:
   common_name: "Pacific Yew"
   scientific_name: "Taxus brevifolia"
+  scientific_genus: "Taxus"
+  common_genus: "Yew"
   family: "Taxaceae"
   
   # Basic summary information
@@ -157,7 +159,7 @@ tree:
       reliability: "Medium"
       visibility: "Context-based observation"
     
-  look_alike_species:
+  look_alikes:
     - species: "Western Hemlock (Tsuga heterophylla)"
       differences: "Western Hemlock has tiny cones (not red arils), a drooping leader, and finer needles with a small stalk"
       identification_tip: "Pacific Yew has red berry-like structures instead of cones and reddish-purple flaky bark"

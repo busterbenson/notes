@@ -1,6 +1,8 @@
 tree:
   common_name: "Mountain Maple"
   scientific_name: "Acer spicatum"
+  scientific_genus: "Acer"
+  common_genus: "Maple"
   family: "Sapindaceae"
   
   # Basic summary information
@@ -172,7 +174,7 @@ tree:
       reliability: "Medium"
       visibility: "Medium - need to be near the tree"
     
-  look_alike_species:
+  look_alikes:
     - species: "Rocky Mountain Maple (Acer glabrum)"
       differences: "Rocky Mountain Maple leaves often have 5 shallower lobes with finer teeth; Mountain Maple typically has 3 more distinct lobes with coarser teeth"
       identification_tip: "Check the leaf lobes - Mountain Maple usually has 3 main lobes with coarser teeth"

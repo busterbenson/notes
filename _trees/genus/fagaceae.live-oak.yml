@@ -23,11 +23,6 @@ genus:
       scientific_name: "Quercus wislizeni"
       distinguishing_features: "Shiny, dark green leaves with smoother undersides; smaller acorns; often grows inland"
       california_context: "Common in inland foothill woodlands of the Sierra Nevada and inner Coast Ranges"
-    
-    - name: "Engelmann Oak"
-      scientific_name: "Quercus engelmannii"
-      distinguishing_features: "Blue-green leaves with smooth edges; lighter gray bark; more open crown"
-      california_context: "Limited to Southern California, primarily in San Diego County"
   
   # Identification path
   identification_path:

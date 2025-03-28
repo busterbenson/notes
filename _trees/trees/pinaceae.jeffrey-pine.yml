@@ -1,6 +1,8 @@
 tree:
   common_name: "Jeffrey Pine"
   scientific_name: "Pinus jeffreyi"
+  scientific_genus: "Pinus"
+  common_genus: "Pine"
   family: "Pinaceae"
   
   # Basic summary information
@@ -164,7 +166,7 @@ tree:
       reliability: "High"
       visibility: "Easy - requires touching cones"
     
-  look_alike_species:
+  look_alikes:
     - species: "Ponderosa Pine (Pinus ponderosa)"
       differences: "Ponderosa Pine has sharper, prickly cone scales that can hurt when touched and bark that smells more like turpentine than vanilla"
       identification_tip: "The 'touch test' - Jeffrey Pine cones have gentle prickles that won't hurt your fingers, and the bark smells sweeter"

@@ -1,6 +1,8 @@
 tree:
   common_name: "Red Alder"
   scientific_name: "Alnus rubra"
+  scientific_genus: "Alnus"
+  common_genus: "Alder"
   family: "Betulaceae"
   
   # Basic summary information
@@ -150,7 +152,7 @@ tree:
       reliability: "High"
       visibility: "Easy to observe"
     
-  look_alike_species:
+  look_alikes:
     - species: "White Alder (Alnus rhombifolia)"
       differences: "White Alder lacks the reddish inner bark; has flatter leaf edges and grows at higher elevations inland"
       identification_tip: "Scratch the bark - if no reddish color appears, it's probably White Alder"

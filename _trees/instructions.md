@@ -6,6 +6,9 @@ You will generate individual tree species profile files using the standardized s
 ## How These Files Will Be Used
 The generated files will form the foundation of a tree-identification decision tree that will help children without specialized botanical knowledge to identify California trees using visual cues. The system is designed to work year-round and for trees of all ages. These instructions focus solely on generating the tree profile files, not the decision tree itself.
 
+# Scripts
+When scripts are created to help update or fix files in some way, always put them in the _trees/scripts directory, list them below, and include a brief explanation for what they were created to do and if they completed the task they were designed to do.
+
 ## Features.yml Structure and IDs
 
 The `features.yml` file contains a comprehensive taxonomy of tree identification features organized into categories, each with a standardized ID format (e.g., LEAF-TYPE-01, BARK-TEXT-03):

@@ -1,6 +1,8 @@
 tree:
   common_name: "Fraser Fir"
   scientific_name: "Abies fraseri"
+  scientific_genus: "Abies"
+  common_genus: "Fir"
   family: "Pinaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -152,7 +154,7 @@ tree:
       reliability: "Very high (seasonal)"
       visibility: "Visible when present"
     
-  look_alike_species:
+  look_alikes:
     - species: "Balsam Fir (Abies balsamea)"
       differences: "Balsam Fir has longer needles without notched tips and grows in northeastern U.S. and Canada, not southern Appalachians"
       identification_tip: "Check needle tips - Fraser Fir has distinctly notched tips; also, Fraser Fir grows only in southern Appalachians"

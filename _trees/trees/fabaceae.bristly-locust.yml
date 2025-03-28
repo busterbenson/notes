@@ -1,6 +1,8 @@
 tree:
   common_name: "Bristly Locust"
   scientific_name: "Robinia hispida"
+  scientific_genus: "Robinia"
+  common_genus: "Locust"
   family: "Fabaceae"
   
   # Basic summary information
@@ -161,7 +163,7 @@ tree:
       reliability: "High (when present)"
       visibility: "Medium - visible when present"
     
-  look_alike_species:
+  look_alikes:
     - species: "Black Locust (Robinia pseudoacacia)"
       differences: "Black Locust grows much larger (40-80 feet); has white flowers; has paired thorns instead of bristles; has much less hairy pods"
       identification_tip: "If it has white flowers and sharp thorns instead of bristles, it's Black Locust, not Bristly Locust"

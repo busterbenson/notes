@@ -1,6 +1,8 @@
 tree:
   common_name: "Balsam Fir"
   scientific_name: "Abies balsamea"
+  scientific_genus: "Abies"
+  common_genus: "Fir"
   family: "Pinaceae"
   
   # Basic summary
@@ -152,7 +154,7 @@ tree:
       reliability: "Medium"
       visibility: "High - visible from distance"
     
-  look_alike_species:
+  look_alikes:
     - species: "White Fir (Abies concolor)"
       differences: "White Fir has longer, blue-gray needles (not dark green); needles are less fragrant; grows much larger; bark becomes deeply furrowed with age"
       identification_tip: "If the needles are longer, blue-gray rather than dark green, and less fragrant, it's likely White Fir"

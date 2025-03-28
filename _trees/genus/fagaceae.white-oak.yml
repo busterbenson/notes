@@ -147,7 +147,7 @@ genus:
       reliability: "High for mature trees"
       visibility: "Visible year-round"
     
-  look_alike_species:
+  look_alikes:
     - species: "Black Oak Group (Quercus species, black oak section)"
       differences: "Black oaks have bristle tips at the ends of leaf lobes; typically more glossy leaves; acorns mature in two years"
       identification_tip: "If the leaf lobes end in tiny bristles or hair-like points, it's a black oak, not a white oak"

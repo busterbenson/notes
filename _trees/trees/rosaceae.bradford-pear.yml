@@ -1,6 +1,8 @@
 tree:
   common_name: "Bradford Pear"
   scientific_name: "Pyrus calleryana"
+  scientific_genus: "Pyrus"
+  common_genus: "Pear"
   family: "Rosaceae"
   
   # Basic summary (2-3 sentences)
@@ -179,7 +181,7 @@ tree:
       reliability: "Medium"
       visibility: "Visible up close, may not be present on all trees"
     
-  look_alike_species:
+  look_alikes:
     - species: "Flowering Cherry (Prunus species)"
       differences: "Flowering cherry has more elongated leaves, often with more prominent teeth; bark often has horizontal lines; flowers sometimes have pink tinge"
       identification_tip: "Bradford Pear leaves are more oval and glossy, while cherry leaves are more elongated"

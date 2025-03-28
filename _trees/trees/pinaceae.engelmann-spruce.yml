@@ -1,6 +1,8 @@
 tree:
   common_name: "Engelmann Spruce"
   scientific_name: "Picea engelmannii"
+  scientific_genus: "Picea"
+  common_genus: "Spruce"
   family: "Pinaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -132,7 +134,7 @@ tree:
       reliability: "Very high (when present)"
       visibility: "Visible from nearby"
     
-  look_alike_species:
+  look_alikes:
     - species: "White Fir (Abies concolor)"
       differences: "White Fir has flat needles that can't be rolled, softer to touch, and upright cones that disintegrate on the tree"
       identification_tip: "If the needles are flat (not square) and soft, and cones stand up like candles, it's a fir, not a spruce"

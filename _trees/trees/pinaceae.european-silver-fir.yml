@@ -1,6 +1,8 @@
 tree:
   common_name: "European Silver Fir"
   scientific_name: "Abies alba"
+  scientific_genus: "Abies"
+  common_genus: "Fir"
   family: "Pinaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -138,7 +140,7 @@ tree:
       reliability: "High"
       visibility: "Visible from nearby"
     
-  look_alike_species:
+  look_alikes:
     - species: "White Fir (Abies concolor)"
       differences: "White Fir has longer needles with less distinct silvery bands and more blue-green color; European Silver Fir has more clearly defined silvery-white stripes on needle undersides"
       identification_tip: "European Silver Fir needles have more contrasting silver bands underneath and are typically arranged more flatly along the branches"

@@ -1,6 +1,8 @@
 tree:
   common_name: "Eastern Redcedar"
   scientific_name: "Juniperus virginiana"
+  scientific_genus: "Juniperus"
+  common_genus: "Juniper"
   family: "Cupressaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -165,7 +167,7 @@ tree:
       reliability: "Medium"
       visibility: "Visible from a distance"
     
-  look_alike_species:
+  look_alikes:
     - species: "Western Juniper (Juniperus occidentalis)"
       differences: "Western Juniper develops a twisted, gnarly shape and grows mostly in eastern California at high elevations"
       identification_tip: "Eastern Redcedar has a more regular, columnar or pyramidal form, especially when young"

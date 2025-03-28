@@ -1,6 +1,8 @@
 tree:
   common_name: "Alder Whitebeam"
   scientific_name: "Sorbus alnifolia"
+  scientific_genus: "Sorbus"
+  common_genus: "Whitebeam"
   family: "Rosaceae"
   
   # Basic summary information
@@ -171,7 +173,7 @@ tree:
       reliability: "Medium"
       visibility: "Visible up close year-round"
     
-  look_alike_species:
+  look_alikes:
     - species: "European Whitebeam (Sorbus aria)"
       differences: "European Whitebeam has more oval leaves with less pronounced teeth and whitish undersides; fruits are usually darker red"
       identification_tip: "Alder Whitebeam has more deeply toothed leaf margins and brighter orange-red fruits"

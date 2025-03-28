@@ -1,6 +1,8 @@
 tree:
   common_name: "Lebanon Cedar"
   scientific_name: "Cedrus libani"
+  scientific_genus: "Cedrus"
+  common_genus: "True Cedar"
   family: "Pinaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -145,7 +147,7 @@ tree:
       reliability: "High"
       visibility: "Visible on older trees from distance"
     
-  look_alike_species:
+  look_alikes:
     - species: "Atlas Cedar (Cedrus atlantica)"
       differences: "Atlas Cedar often has blue-green needles and a less pronounced flat top; Lebanon Cedar has darker green needles and more distinctly tiered branches"
       identification_tip: "Focus on needle color - Lebanon Cedar's are darker green without the bluish tint of Atlas Cedar"

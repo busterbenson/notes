@@ -1,6 +1,8 @@
 tree:
   common_name: "European Alder"
   scientific_name: "Alnus glutinosa"
+  scientific_genus: "Alnus"
+  common_genus: "Alder"
   family: "Betulaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -168,7 +170,7 @@ tree:
       reliability: "Very high"
       visibility: "Seasonal - early spring only"
     
-  look_alike_species:
+  look_alikes:
     - species: "White Alder (Alnus rhombifolia)"
       differences: "White Alder has more oval leaves with pointed tips rather than notched, and lighter gray bark"
       identification_tip: "European Alder leaves have a distinctive notch at the tip, like someone took a small bite out of them"

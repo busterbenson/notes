@@ -1,6 +1,8 @@
 tree:
   common_name: "Rocky Mountain Douglas-fir"
   scientific_name: "Pseudotsuga menziesii var. glauca"
+  scientific_genus: "Pseudotsuga"
+  common_genus: "Douglas-fir"
   family: "Pinaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -125,7 +127,7 @@ tree:
       reliability: "High"
       visibility: "Determined by location"
     
-  look_alike_species:
+  look_alikes:
     - species: "Coast Douglas-fir (Pseudotsuga menziesii var. menziesii)"
       differences: "Coast Douglas-fir has darker green needles without the blue-gray color; generally grows taller and in milder coastal areas"
       identification_tip: "If the tree has green rather than blue-gray needles and you're near the coast, it's likely the coast variety"

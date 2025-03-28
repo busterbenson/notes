@@ -1,6 +1,8 @@
 tree:
   common_name: "European Aspen"
   scientific_name: "Populus tremula"
+  scientific_genus: "Populus"
+  common_genus: "Poplar"
   family: "Salicaceae"
   
   # Basic summary information
@@ -147,7 +149,7 @@ tree:
       reliability: "Very high"
       visibility: "Very easy to spot from far away in fall"
     
-  look_alike_species:
+  look_alikes:
     - species: "Quaking Aspen (Populus tremuloides)"
       differences: "Quaking Aspen is the American counterpart and looks extremely similar; European Aspen may have slightly larger leaves with blunter teeth"
       identification_tip: "Very difficult to tell apart from Quaking Aspen for most people; European Aspen is not common in California except where planted"

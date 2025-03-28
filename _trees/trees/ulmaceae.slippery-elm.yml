@@ -143,7 +143,7 @@ tree:
       reliability: "Medium"
       visibility: "Easy to see on trunk"
 
-  look_alike_species:
+  look_alikes:
     - species: "American Elm (Ulmus americana)"
       differences: "Slippery Elm leaves are rough on both sides, while American Elm leaves are rough only on top; Slippery Elm has larger leaves and hairier buds"
       identification_tip: "Feel the underside of a leaf - if it's smooth, it's American Elm; if rough like sandpaper, it's Slippery Elm"

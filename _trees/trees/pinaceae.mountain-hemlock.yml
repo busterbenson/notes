@@ -1,6 +1,8 @@
 tree:
   common_name: "Mountain Hemlock"
   scientific_name: "Tsuga mertensiana"
+  scientific_genus: "Tsuga"
+  common_genus: "Hemlock"
   family: "Pinaceae"
   
   # Basic summary information
@@ -161,7 +163,7 @@ tree:
       reliability: "High"
       visibility: "Context-based observation"
     
-  look_alike_species:
+  look_alikes:
     - species: "Western Hemlock (Tsuga heterophylla)"
       differences: "Western Hemlock has needles arranged in flat sprays, grows at lower elevations, and has a greener color"
       identification_tip: "Mountain Hemlock needles stick out all around the twig, while Western Hemlock needles form flat, feathery sprays"

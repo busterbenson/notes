@@ -151,7 +151,7 @@ tree:
       reliability: "High"
       visibility: "High - especially noticeable in winter"
 
-  look_alike_species:
+  look_alikes:
     - species: "Blue Oak (Quercus douglasii)"
       differences: "Native to California with similar blue-gray foliage but has lobed leaves and is deciduous rather than evergreen"
       identification_tip: "Blue Oak loses all its leaves in winter and has distinct lobes on leaf edges, unlike Sonoran Blue Oak's smooth-edged leaves"

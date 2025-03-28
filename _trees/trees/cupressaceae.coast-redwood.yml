@@ -1,6 +1,8 @@
 tree:
   common_name: "Coast Redwood"
   scientific_name: "Sequoia sempervirens"
+  scientific_genus: "Sequoia"
+  common_genus: "Redwood"
   family: "Cupressaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -149,7 +151,7 @@ tree:
       reliability: "High"
       visibility: "High - can see from far away"
     
-  look_alike_species:
+  look_alikes:
     - species: "Giant Sequoia (Sequoiadendron giganteum)"
       differences: "Giant Sequoia has spiky, prickly leaves (not flat needles); much bigger cones (golf ball sized); thicker trunk compared to height; grows in Sierra Nevada mountains, not along coast"
       identification_tip: "If the needles are small and prickly (not flat and soft), and the cones are bigger than a golf ball, it's likely Giant Sequoia"

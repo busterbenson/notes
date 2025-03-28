@@ -1,6 +1,8 @@
 tree:
   common_name: "River Birch"
   scientific_name: "Betula nigra"
+  scientific_genus: "Betula"
+  common_genus: "Birch"
   family: "Betulaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -136,7 +138,7 @@ tree:
       reliability: "High"
       visibility: "Medium - check branch closely"
     
-  look_alike_species:
+  look_alikes:
     - species: "Paper Birch (Betula papyrifera)"
       differences: "Paper Birch has white bark, not reddish-brown; often has a single trunk rather than multiple stems; less heat tolerant"
       identification_tip: "Check the bark color - Paper Birch is white, River Birch is cinnamon-colored"

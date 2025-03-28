@@ -1,6 +1,8 @@
 tree:
   common_name: "Olive"
   scientific_name: "Olea europaea"
+  scientific_genus: "Olea"
+  common_genus: "Olive"
   family: "Oleaceae"
   
   # Basic summary information
@@ -172,7 +174,7 @@ tree:
       reliability: "High"
       visibility: "Need to look at branch closely"
     
-  look_alike_species:
+  look_alikes:
     - species: "Russian Olive (Elaeagnus angustifolia)"
       differences: "Russian Olive has thorny branches; narrower, more silvery leaves; yellow-silver fruits instead of green-black"
       identification_tip: "If it has thorns or spines on the branches, it's Russian Olive, not true Olive"

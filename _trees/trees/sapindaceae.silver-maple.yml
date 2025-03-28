@@ -1,6 +1,8 @@
 tree:
   common_name: "Silver Maple"
   scientific_name: "Acer saccharinum"
+  scientific_genus: "Acer"
+  common_genus: "Maple"
   family: "Sapindaceae"
   
   # Basic summary information
@@ -156,7 +158,7 @@ tree:
       reliability: "High"
       visibility: "Visible from nearby"
     
-  look_alike_species:
+  look_alikes:
     - species: "Red Maple (Acer rubrum)"
       differences: "Red Maple has less deeply cut leaf lobes; green rather than silvery undersides; shorter leaf stems; often has red leaf stems; typically shows bright red fall color"
       identification_tip: "Silver Maple leaves have deeper cuts between lobes and flash silver underneath; they also 'dance' more in the breeze due to longer stems"

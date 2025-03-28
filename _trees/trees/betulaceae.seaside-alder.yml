@@ -151,7 +151,7 @@ tree:
       reliability: "High"
       visibility: "High - location is an important clue"
 
-  look_alike_species:
+  look_alikes:
     - species: "Red Alder (Alnus rubra)"
       differences: "Much larger tree (often 60-100 feet tall); flowers in spring; leaves less glossy; inner bark reddens when exposed to air"
       identification_tip: "Red Alder is much taller and doesn't flower in fall; check for reddening when bark is scratched"

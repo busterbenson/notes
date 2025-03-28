@@ -1,6 +1,8 @@
 tree:
   common_name: "California-sycamore"
   scientific_name: "Platanus racemosa"
+  scientific_genus: "Platanus"
+  common_genus: "Sycamore"
   family: "Platanaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -131,7 +133,7 @@ tree:
       reliability: "Medium"
       visibility: "Requires knowing location context"
     
-  look_alike_species:
+  look_alikes:
     - species: "London Plane Tree (Platanus × acerifolia)"
       differences: "London Plane has smaller leaves with less pointed lobes; bark peels in smaller patches; often planted in rows in cities"
       identification_tip: "California Sycamore has more irregular branching and larger leaves with deeper cuts between lobes"

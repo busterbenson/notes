@@ -1,6 +1,8 @@
 tree:
   common_name: "Cedar Elm"
   scientific_name: "Ulmus crassifolia"
+  scientific_genus: "Ulmus"
+  common_genus: "Elm"
   family: "Ulmaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -153,7 +155,7 @@ tree:
       reliability: "High"
       visibility: "Need to look closely"
     
-  look_alike_species:
+  look_alikes:
     - species: "Winged Elm (Ulmus alata)"
       differences: "Winged Elm has more pronounced, broader corky wings on branches and larger leaves"
       identification_tip: "Cedar Elm has smaller leaves that feel rougher, and its corky wings are usually less dramatic"

@@ -1,6 +1,8 @@
 tree:
   common_name: "Chinese Elm"
   scientific_name: "Ulmus parvifolia"
+  scientific_genus: "Ulmus"
+  common_genus: "Elm"
   family: "Ulmaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -153,7 +155,7 @@ tree:
       reliability: "Medium"
       visibility: "Observable in winter"
     
-  look_alike_species:
+  look_alikes:
     - species: "American Elm (Ulmus americana)"
       differences: "American Elm has larger, rougher leaves and does not have colorful, exfoliating bark"
       identification_tip: "Chinese Elm bark peels in colorful patches; American Elm bark has vertical furrows"

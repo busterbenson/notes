@@ -1,6 +1,8 @@
 tree:
   common_name: "Monterey Pine"
   scientific_name: "Pinus radiata"
+  scientific_genus: "Pinus"
+  common_genus: "Pine"
   family: "Pinaceae"
   
   # Basic summary information
@@ -162,7 +164,7 @@ tree:
       reliability: "Medium"
       visibility: "Easy to observe on trunk"
     
-  look_alike_species:
+  look_alikes:
     - species: "Bishop Pine (Pinus muricata)"
       differences: "Bishop Pine has needles primarily in bundles of two (not three) and smaller cones with knobby protrusions"
       identification_tip: "Count the needles in each bundle - Monterey Pine usually has three, Bishop Pine has two"

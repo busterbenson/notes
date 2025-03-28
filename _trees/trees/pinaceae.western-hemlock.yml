@@ -1,6 +1,8 @@
 tree:
   common_name: "Western Hemlock"
   scientific_name: "Tsuga heterophylla"
+  scientific_genus: "Tsuga"
+  common_genus: "Hemlock"
   family: "Pinaceae"
   
   # Basic summary information
@@ -161,7 +163,7 @@ tree:
       reliability: "High"
       visibility: "Medium - need to look for them"
     
-  look_alike_species:
+  look_alikes:
     - species: "Mountain Hemlock (Tsuga mertensiana)"
       differences: "Mountain Hemlock has needles growing all around the twig (not in flat sprays), more bluish foliage, and grows at higher elevations"
       identification_tip: "Western Hemlock needles form flat, feathery sprays, while Mountain Hemlock needles stick out all around the twig like bottle brushes"

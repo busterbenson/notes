@@ -1,6 +1,8 @@
 tree:
   common_name: "Cork Oak"
   scientific_name: "Quercus suber"
+  scientific_genus: "Quercus"
+  common_genus: "Oak"
   family: "Fagaceae"
   
   # Basic summary (2-3 sentences)
@@ -170,7 +172,7 @@ tree:
       reliability: "Medium"
       visibility: "Need to look at leaf undersides"
     
-  look_alike_species:
+  look_alikes:
     - species: "Coast Live Oak (Quercus agrifolia)"
       differences: "Coast Live Oak has darker, harder bark without the thick, corky texture; leaves often more curved and cupped"
       identification_tip: "The Cork Oak's uniquely thick, spongy bark is the most reliable way to tell it apart from Coast Live Oak"

@@ -11,28 +11,18 @@ genus:
   included_species:
     - name: "California Black Oak"
       scientific_name: "Quercus kelloggii"
-      distinguishing_features: "Deciduous with deeply lobed leaves and prominent bristle tips; glossy dark green leaves"
+      distinguishing_features: "Deciduous with deeply lobed leaves and prominent bristle tips; glossy dark green leaves; vibrant fall colors"
       california_context: "Native to mountain forests and woodlands throughout California"
-    
-    - name: "Coast Live Oak"
-      scientific_name: "Quercus agrifolia"
-      distinguishing_features: "Evergreen with cupped, spiny-edged leaves; dense, rounded crown"
-      california_context: "Native along California coast and foothills; iconic coastal oak"
-    
-    - name: "Interior Live Oak"
-      scientific_name: "Quercus wislizeni"
-      distinguishing_features: "Evergreen with smaller, flatter leaves than Coast Live Oak; bristle tips on some leaf edges"
-      california_context: "Native to Sierra foothills and interior regions"
-    
-    - name: "Canyon Live Oak"
-      scientific_name: "Quercus chrysolepis"
-      distinguishing_features: "Evergreen with yellow-gold fuzzy undersides on leaves; variable leaf shapes"
-      california_context: "Native to canyons and slopes throughout California mountains"
     
     - name: "Scrub Oak"
       scientific_name: "Quercus berberidifolia"
       distinguishing_features: "Shrubby growth habit; small, spiny evergreen leaves"
       california_context: "Native to chaparral communities throughout California"
+      
+    - name: "Japanese Blue Oak"
+      scientific_name: "Quercus glauca"
+      distinguishing_features: "Evergreen with serrated leaf edges and blue-green coloration; pointed leaf tips"
+      california_context: "Planted ornamentally in some California landscapes"
   
   # Identification path guides the decision tree
   identification_path:
@@ -72,8 +62,8 @@ genus:
         notes: "Some black oak species are winter deciduous"
       
       - feature_id: "LEAF-TYPE-02"  # Evergreen
-        conditions: "Coast Live Oak, Interior Live Oak, Canyon Live Oak, and Scrub Oak keep leaves year-round"
-        notes: "Many California black oak species are evergreen, especially in milder climates"
+        conditions: "Scrub Oak keeps leaves year-round"
+        notes: "Some black oak species are evergreen or semi-evergreen, especially in milder climates"
       
       - feature_id: "TREE-SIZE-02"  # Medium to large tree
         conditions: "Most species except Scrub Oak"
@@ -137,7 +127,7 @@ genus:
       visual_changes: "Deciduous species lose leaves, showing branch structure; evergreen species keep their leaves"
       reproductive_activity: "Dormant; first-year acorns remain small on evergreen species"
       identification_tips: "Evergreen species easily identified by leaves; deciduous by bark and branch pattern"
-      kid_friendly_tip: "Some Black Oaks keep their leaves all winter (like Coast Live Oak), while others drop them (like California Black Oak)"
+      kid_friendly_tip: "Most Black Oaks drop their leaves in winter (like California Black Oak), though some smaller oak shrubs (like Scrub Oak) keep some leaves year-round"
       
   # Additional required sections 
   confirmation_checklist:
@@ -151,7 +141,7 @@ genus:
       reliability: "High"
       visibility: "Seasonal; visible in late summer and fall"
     
-  look_alike_species:
+  look_alikes:
     - species: "White Oak Group (Quercus species, white oak section)"
       differences: "White oaks have rounded lobes without bristle tips; typically less glossy leaves; acorns mature in one year"
       identification_tip: "If the leaf lobes are rounded without bristles, it's a white oak, not a black oak"
@@ -168,14 +158,13 @@ genus:
     - "Black oaks are culturally significant to California Native American tribes, though acorns required more processing than white oaks"
     - "Acorns were an important food source after leaching out the bitter tannins"
     - "Wood from black oaks was used for tools, construction, and firewood"
-    - "Coast Live Oak provides important habitat in coastal ecosystems"
+    - "Blue Oaks provide important habitat in foothill ecosystems"
     - "California Black Oak is a key species in mid-elevation forest communities"
     
   range_within_california:
     - "California Black Oak found in mountain forests throughout the state, especially in Sierra Nevada"
-    - "Coast Live Oak common along coast from northern to southern California"
-    - "Interior Live Oak found in foothills of Sierra Nevada and interior valleys"
-    - "Canyon Live Oak grows in canyons and slopes throughout California mountains"
+    - "Blue Oak common in foothill woodlands in the Coast Ranges and Sierra foothills"
+    - "Engelmann Oak limited to southern California, particularly San Diego County"
     - "Scrub Oak common in chaparral communities across the state"
     
   # Decision tree mapping section - algorithmic support

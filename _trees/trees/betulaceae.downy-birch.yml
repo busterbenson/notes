@@ -1,6 +1,8 @@
 tree:
   common_name: "Downy Birch"
   scientific_name: "Betula pubescens"
+  scientific_genus: "Betula"
+  common_genus: "Birch"
   family: "Betulaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -149,7 +151,7 @@ tree:
       reliability: "High (seasonal)"
       visibility: "Male catkins easily visible; female catkins smaller"
     
-  look_alike_species:
+  look_alikes:
     - species: "Paper Birch (Betula papyrifera)"
       differences: "Paper Birch has more dramatically peeling bark that comes off in paper-like sheets; twigs less hairy"
       identification_tip: "Downy Birch twigs feel soft and fuzzy; Paper Birch bark peels much more extensively"

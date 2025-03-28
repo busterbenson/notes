@@ -1,6 +1,8 @@
 tree:
   common_name: "Resin Birch"
   scientific_name: "Betula resinifera"
+  scientific_genus: "Betula"
+  common_genus: "Birch"
   family: "Betulaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -136,7 +138,7 @@ tree:
       reliability: "High"
       visibility: "Medium - check how leaves are attached"
     
-  look_alike_species:
+  look_alikes:
     - species: "Paper Birch (Betula papyrifera)"
       differences: "Very similar but lacks the distinctively sticky buds and twigs; more commonly planted in California"
       identification_tip: "Touch the buds - Paper Birch buds aren't as sticky as Resin Birch buds"

@@ -1,6 +1,8 @@
 tree:
   common_name: "Lodgepole Pine"
   scientific_name: "Pinus contorta"
+  scientific_genus: "Pinus"
+  common_genus: "Pine"
   family: "Pinaceae"
   
   # Basic summary information
@@ -158,7 +160,7 @@ tree:
       reliability: "Medium"
       visibility: "Observable on mature trees"
     
-  look_alike_species:
+  look_alikes:
     - species: "Ponderosa Pine (Pinus ponderosa)"
       differences: "Ponderosa Pine has much longer needles (5-10 inches), larger cones (3-6 inches), and puzzle-piece bark with vanilla/butterscotch scent"
       identification_tip: "Lodgepole Pine needles are much shorter and cones much smaller than Ponderosa Pine"

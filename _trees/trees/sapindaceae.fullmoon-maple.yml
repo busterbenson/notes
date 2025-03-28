@@ -1,6 +1,8 @@
 tree:
   common_name: "Fullmoon Maple"
   scientific_name: "Acer japonicum"
+  scientific_genus: "Acer"
+  common_genus: "Maple"
   family: "Sapindaceae"
   
   # Basic summary information
@@ -168,7 +170,7 @@ tree:
       reliability: "High"
       visibility: "Easy to see from far away in fall"
     
-  look_alike_species:
+  look_alikes:
     - species: "Japanese Maple (Acer palmatum)"
       differences: "Japanese maple has more star-shaped leaves with pointed lobes; Fullmoon Maple has more rounded lobes and a more circular overall leaf shape"
       identification_tip: "Count the lobes - Fullmoon Maple typically has 9-11 lobes while Japanese Maple usually has 5-7"

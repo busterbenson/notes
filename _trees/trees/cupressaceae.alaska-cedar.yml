@@ -1,6 +1,8 @@
 tree:
   common_name: "Alaska-cedar"
   scientific_name: "Callitropsis nootkatensis"
+  scientific_genus: "Callitropsis"
+  common_genus: "Cedar"
   family: "Cupressaceae"
   
   # Basic summary information

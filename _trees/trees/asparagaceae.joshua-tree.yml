@@ -1,6 +1,8 @@
 tree:
   common_name: "Joshua Tree"
   scientific_name: "Yucca brevifolia"
+  scientific_genus: "Yucca"
+  common_genus: "Joshua Tree"
   family: "Asparagaceae"
   
   # Basic summary
@@ -141,7 +143,7 @@ tree:
       reliability: "Very high"
       visibility: "Requires knowing your location"
     
-  look_alike_species:
+  look_alikes:
     - species: "Mojave Yucca (Yucca schidigera)"
       differences: "Much smaller than Joshua Tree, usually without a tree-like trunk; leaves grow in rosettes at ground level or on very short trunks"
       identification_tip: "If it's short with sword-like leaves coming mainly from ground level, it's probably Mojave Yucca, not a Joshua Tree"

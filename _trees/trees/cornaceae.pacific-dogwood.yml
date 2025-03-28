@@ -1,6 +1,8 @@
 tree:
   common_name: "Pacific Dogwood"
   scientific_name: "Cornus nuttallii"
+  scientific_genus: "Cornus"
+  common_genus: "Dogwood"
   family: "Cornaceae"
   
   # Basic summary information
@@ -154,7 +156,7 @@ tree:
       reliability: "Medium"
       visibility: "Easy - visible year-round"
     
-  look_alike_species:
+  look_alikes:
     - species: "Eastern Flowering Dogwood (Cornus florida)"
       differences: "Pacific Dogwood is taller, has more bracts (4-7 vs. consistently 4), and larger individual fruits"
       identification_tip: "Pacific Dogwood typically has 6 bracts, while Eastern Flowering Dogwood always has 4"

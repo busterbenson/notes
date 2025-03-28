@@ -1,6 +1,8 @@
 tree:
   common_name: "Chinese Pistache"
   scientific_name: "Pistacia chinensis"
+  scientific_genus: "Pistacia"
+  common_genus: "Pistache"
   family: "Anacardiaceae"
   
   # Basic summary (2-3 sentences)
@@ -172,7 +174,7 @@ tree:
       reliability: "Medium"
       visibility: "Visible up close, but only on female trees"
     
-  look_alike_species:
+  look_alikes:
     - species: "Sumac species (Rhus species)"
       differences: "Sumacs are usually more shrub-like and shorter; have more elongated and serrated leaflets; often have fuzzy stems"
       identification_tip: "Chinese Pistache is a proper tree with a single trunk and rounder leaflets, while sumacs are often more shrub-like with multiple stems"

@@ -1,6 +1,8 @@
 tree:
   common_name: "Subalpine Fir"
   scientific_name: "Abies lasiocarpa"
+  scientific_genus: "Abies"
+  common_genus: "Fir"
   family: "Pinaceae"
   
   # Basic summary information
@@ -143,7 +145,7 @@ tree:
       reliability: "Very high (seasonal)"
       visibility: "Visible when present"
     
-  look_alike_species:
+  look_alikes:
     - species: "Pacific Silver Fir (Abies amabilis)"
       differences: "Pacific Silver Fir has a broader crown, longer needles, and typically grows at lower elevations than Subalpine Fir"
       identification_tip: "Subalpine Fir has a much narrower, spire-like crown and a more distinctly pointed top"

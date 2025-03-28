@@ -1,6 +1,8 @@
 tree:
   common_name: "Balsam Poplar"
   scientific_name: "Populus balsamifera"
+  scientific_genus: "Populus"
+  common_genus: "Poplar"
   family: "Salicaceae"
   
   # Basic summary
@@ -157,7 +159,7 @@ tree:
       reliability: "High (when present)"
       visibility: "High - very noticeable when released"
     
-  look_alike_species:
+  look_alikes:
     - species: "Balm-of-Gilead Poplar (Populus × jackii)"
       differences: "Balm-of-Gilead is actually a hybrid with Balsam Poplar as one parent; it has more heart-shaped, less elongated leaves; extremely similar otherwise"
       identification_tip: "These are very hard to tell apart - Balsam Poplar leaves are more elongated (oval to lance-shaped) with less rounded bases"

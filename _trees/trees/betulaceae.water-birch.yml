@@ -1,6 +1,8 @@
 tree:
   common_name: "Water Birch"
   scientific_name: "Betula occidentalis"
+  scientific_genus: "Betula"
+  common_genus: "Birch"
   family: "Betulaceae"
   
   # Basic summary information
@@ -170,7 +172,7 @@ tree:
       reliability: "Very high" 
       visibility: "Seasonal - spring only"
     
-  look_alike_species:
+  look_alikes:
     - species: "Paper Birch (Betula papyrifera)"
       differences: "Paper Birch has white bark that peels in large sheets, grows taller (40-70 feet), and is less common in California"
       identification_tip: "Water Birch has dark reddish-brown to black bark, not white, and is typically smaller"

@@ -1,6 +1,8 @@
 tree:
   common_name: "Black Locust"
   scientific_name: "Robinia pseudoacacia"
+  scientific_genus: "Robinia"
+  common_genus: "Locust"
   family: "Fabaceae"
   
   # Basic summary information
@@ -164,7 +166,7 @@ tree:
       reliability: "High"
       visibility: "Easy - visible summer through fall"
     
-  look_alike_species:
+  look_alikes:
     - species: "Honeylocust (Gleditsia triacanthos)"
       differences: "Honeylocust has smaller leaflets, larger branched thorns on trunk, and longer twisted seed pods"
       identification_tip: "Black Locust thorns are only at leaf bases; Honeylocust often has large thorns along the trunk and branches"

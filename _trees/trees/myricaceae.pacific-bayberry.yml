@@ -1,6 +1,8 @@
 tree:
   common_name: "Pacific Bayberry"
   scientific_name: "Morella californica"
+  scientific_genus: "Morella"
+  common_genus: "Bayberry"
   family: "Myricaceae"
   
   # Basic summary information
@@ -154,7 +156,7 @@ tree:
       reliability: "Medium"
       visibility: "Easy - visible from distance"
     
-  look_alike_species:
+  look_alikes:
     - species: "California Bay Laurel (Umbellularia californica)"
       differences: "California Bay has larger leaves with no teeth and a much stronger, more pungent aroma; Bay grows much taller"
       identification_tip: "Pacific Bayberry leaves have teeth toward the tip; Bay Laurel leaves don't have teeth and have a much stronger scent"

@@ -1,6 +1,8 @@
 tree:
   common_name: "California Black Oak"
   scientific_name: "Quercus kelloggii"
+  scientific_genus: "Quercus"
+  common_genus: "Black Oak"
   family: "Fagaceae"
   
   # Basic summary information
@@ -167,7 +169,7 @@ tree:
       reliability: "Very high (when present)"
       visibility: "Easy to spot in late summer and fall"
     
-  look_alike_species:
+  look_alikes:
     - species: "Interior Live Oak (Quercus wislizeni)"
       differences: "Interior Live Oak is evergreen, keeping its smaller, less deeply lobed leaves year-round"
       identification_tip: "If the tree keeps green leaves through winter, it's not a California Black Oak"

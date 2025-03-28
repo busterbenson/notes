@@ -1,6 +1,8 @@
 tree:
   common_name: "Japanese-cedar"
   scientific_name: "Cryptomeria japonica"
+  scientific_genus: "Cryptomeria"
+  common_genus: "Japanese Cedar"
   family: "Cupressaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -146,7 +148,7 @@ tree:
       reliability: "High"
       visibility: "High - visible from distance"
     
-  look_alike_species:
+  look_alikes:
     - species: "Coast Redwood (Sequoia sempervirens)"
       differences: "Redwood has flat, soft needles (not awl-shaped); much taller; bark is more spongy; cones are smaller"
       identification_tip: "If the needles are flat and soft rather than awl-shaped and slightly prickly, it's likely a redwood"

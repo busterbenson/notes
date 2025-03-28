@@ -1,6 +1,8 @@
 tree:
   common_name: "London Plane Tree"
   scientific_name: "Platanus × acerifolia"
+  scientific_genus: "Platanus"
+  common_genus: "Sycamore"
   family: "Platanaceae"
   
   # Basic summary information
@@ -157,7 +159,7 @@ tree:
       reliability: "High"
       visibility: "Need to look closely at branches"
     
-  look_alike_species:
+  look_alikes:
     - species: "American Sycamore (Platanus occidentalis)"
       differences: "American Sycamore has less deeply lobed leaves; usually one seed ball per stem instead of pairs; tends to have more cream/white showing in bark"
       identification_tip: "If the seed balls grow singly (not in pairs) and the leaves have shallow lobes, it's likely an American Sycamore"

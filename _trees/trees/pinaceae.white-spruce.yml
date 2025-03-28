@@ -1,6 +1,8 @@
 tree:
   common_name: "White Spruce"
   scientific_name: "Picea glauca"
+  scientific_genus: "Picea"
+  common_genus: "Spruce"
   family: "Pinaceae"
   
   # Basic summary
@@ -157,7 +159,7 @@ tree:
       reliability: "High"
       visibility: "Visible when cones are present (summer through winter)"
     
-  look_alike_species:
+  look_alikes:
     - species: "Engelmann Spruce (Picea engelmannii)"
       differences: "Engelmann Spruce has less aromatic needles, often grows at higher elevations, and has cone scales with slightly jagged edges"
       identification_tip: "The 'smell test' - White Spruce needles have a stronger skunk-like smell when crushed"

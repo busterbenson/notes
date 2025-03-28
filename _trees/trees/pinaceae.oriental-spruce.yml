@@ -147,7 +147,7 @@ tree:
       reliability: "High"
       visibility: "High - visible from a distance"
 
-  look_alike_species:
+  look_alikes:
     - species: "Norway Spruce (Picea abies)"
       differences: "Has longer needles (1/2 to 1 inch), larger cones (4-7 inches), and more pendulous branches"
       identification_tip: "Norway Spruce is more common in landscapes and has distinctly drooping branch tips that Oriental Spruce lacks"

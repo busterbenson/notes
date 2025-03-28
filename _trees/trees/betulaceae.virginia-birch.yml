@@ -1,6 +1,8 @@
 tree:
   common_name: "Virginia Birch"
   scientific_name: "Betula lenta var. uber"
+  scientific_genus: "Betula"
+  common_genus: "Birch"
   family: "Betulaceae"
   
   # Basic summary information
@@ -148,7 +150,7 @@ tree:
       reliability: "Medium"
       visibility: "Easy - visible from a distance"
     
-  look_alike_species:
+  look_alikes:
     - species: "Sweet Birch (Betula lenta)"
       differences: "The parent species, very similar but typically larger with a more tree-like form; otherwise nearly identical with the same wintergreen scent"
       identification_tip: "Virginia Birch is typically smaller with a more shrubby growth habit than Sweet Birch"

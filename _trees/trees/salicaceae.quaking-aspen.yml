@@ -1,6 +1,8 @@
 tree:
   common_name: "Quaking Aspen"
   scientific_name: "Populus tremuloides"
+  scientific_genus: "Populus"
+  common_genus: "Aspen"
   family: "Salicaceae"
   
   # Basic summary information
@@ -164,7 +166,7 @@ tree:
       reliability: "Very high"
       visibility: "Very easy to spot from far away in fall"
     
-  look_alike_species:
+  look_alikes:
     - species: "Paper Birch (Betula papyrifera)"
       differences: "Paper Birch has peeling white bark that comes off in strips; triangular or egg-shaped leaves, not round"
       identification_tip: "If the bark peels like paper, it's a birch, not an aspen"

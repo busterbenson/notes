@@ -1,6 +1,8 @@
 tree:
   common_name: "Western Serviceberry"
   scientific_name: "Amelanchier alnifolia"
+  scientific_genus: "Amelanchier"
+  common_genus: "Serviceberry"
   family: "Rosaceae"
   
   # Basic summary information
@@ -163,7 +165,7 @@ tree:
       reliability: "Medium"
       visibility: "Easy - visible from nearby"
     
-  look_alike_species:
+  look_alikes:
     - species: "Eastern Serviceberry (Amelanchier canadensis)"
       differences: "Western Serviceberry has oval leaves with teeth primarily on the upper half; Eastern species has teeth along entire margin"
       identification_tip: "Check the range - Eastern Serviceberry is not native to California"

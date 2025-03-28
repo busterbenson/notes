@@ -1,6 +1,8 @@
 tree:
   common_name: "Winged Elm"
   scientific_name: "Ulmus alata"
+  scientific_genus: "Ulmus"
+  common_genus: "Elm"
   family: "Ulmaceae"
   
   # Basic summary
@@ -148,7 +150,7 @@ tree:
       reliability: "High"
       visibility: "Seasonal - only visible in spring"
     
-  look_alike_species:
+  look_alikes:
     - species: "American Elm (Ulmus americana)"
       differences: "American Elm has larger leaves (4-6 inches) and lacks the corky wings on branches; typically larger overall"
       identification_tip: "Check for wings on branches - American Elm doesn't have them"

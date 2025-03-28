@@ -1,6 +1,8 @@
 tree:
   common_name: "Amur Maple"
   scientific_name: "Acer ginnala"
+  scientific_genus: "Acer"
+  common_genus: "Maple"
   family: "Sapindaceae"
   
   # Basic summary information
@@ -165,7 +167,7 @@ tree:
       reliability: "High (seasonal)"
       visibility: "Medium - need to look carefully"
     
-  look_alike_species:
+  look_alikes:
     - species: "Japanese Maple (Acer palmatum)"
       differences: "Japanese Maple has more deeply cut leaves with 5-7 lobes, more delicate branching, and is less cold-hardy"
       identification_tip: "Count the lobes - Amur Maple typically has 3 lobes while Japanese Maple usually has 5 or more"

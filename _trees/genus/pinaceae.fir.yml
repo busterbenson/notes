@@ -4,302 +4,280 @@ genus:
   taxonomic_level: "genus"
   family: "Pinaceae"
   
-  # Basic summary
-  summary: "Tall, cone-shaped evergreen trees with flat, soft needles that grow singly on the twigs. Firs have distinctive upright cones that break apart while still on the tree, and their needles typically look as if they're arranged in flat rows on either side of the branch."
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "Tall, pyramid-shaped evergreen trees with short, flat, soft needles arranged singly around the twig. Firs have distinctive upright cones that disintegrate on the tree rather than falling whole, and smooth bark with resin blisters when young that develops into thick plates with age."
   
   # Key species in this genus
   included_species:
-    - name: "California Red Fir"
-      scientific_name: "Abies magnifica"
-      distinguishing_features: "Bluish-green needles that curve upward around the branch; large upright cones; reddish-brown chunky bark"
-      california_context: "Native to the Sierra Nevada mountains at elevations of 5,000-9,000 feet"
-    
     - name: "White Fir"
       scientific_name: "Abies concolor"
-      distinguishing_features: "Flat, silvery-blue needles; smaller cones than Red Fir; gray to white-gray bark"
-      california_context: "Widespread in mountain forests throughout California, often at slightly lower elevations than Red Fir"
+      distinguishing_features: "Blue-gray needles curving upward; pale gray bark; grows in drier conditions than other firs"
+      california_context: "Widespread in Sierra Nevada and mountains of southern California"
+    
+    - name: "Red Fir"
+      scientific_name: "Abies magnifica"
+      distinguishing_features: "Shorter, blunter needles arranged like bottle brushes around twig; reddish bark; higher elevation"
+      california_context: "Forms pure stands at high elevations in Sierra Nevada; important timber tree"
     
     - name: "Grand Fir"
       scientific_name: "Abies grandis"
-      distinguishing_features: "Shiny dark green needles on top, white lines beneath; needles form flat sprays; citrus scent when crushed"
-      california_context: "Native to the northern coastal mountains and Klamath region"
+      distinguishing_features: "Flattened needle arrangement; glossy dark green needles with white lines beneath; found in moister areas"
+      california_context: "Native to northwestern California in coastal forests"
     
     - name: "Noble Fir"
       scientific_name: "Abies procera"
-      distinguishing_features: "Blue-green needles that curve upward strongly; cones have distinctive bracts sticking out between scales"
-      california_context: "Native to Oregon and Washington; occasionally planted in California"
-    
-    - name: "Subalpine Fir"
-      scientific_name: "Abies lasiocarpa" 
-      distinguishing_features: "Narrow, spire-like crown; short blue-green needles; grows at very high elevations"
-      california_context: "Found in the highest parts of the Sierra Nevada and Klamath mountains near treeline"
+      distinguishing_features: "Bluish needles that curve upward; distinctive purple cones; very symmetrical growth"
+      california_context: "Native to high elevations in northwestern California and Oregon"
   
-  # Identification path
+  # Identification path guides the decision tree
   identification_path:
-    primary_markers: "Flat, soft single needles arranged to look like they're in rows on either side of the branch; upright cones that break apart on the tree rather than falling whole"
-    secondary_markers: "Perfect conical shape with horizontal branches; smooth bark when young that develops resin blisters; soft needles that aren't poky"
-    seasonal_markers: "No significant seasonal changes as evergreen; new growth in spring is lighter green"
-    similar_species_differentiation: "Unlike spruces, fir needles are flat (not square) and soft (not sharp); unlike pines, needles are single (not in bundles); unlike Douglas-fir, true firs have upright cones that break apart on the tree"
+    primary_markers: "Flat, soft needles growing singly (not in bundles) with distinctive round scars when removed; upright cones that disintegrate on the tree"
+    secondary_markers: "Strong pyramid shape with whorled branches; needles often appear arranged in flat sprays"
+    seasonal_markers: "Minimal seasonal change as evergreen; new growth in spring is lighter green; cones mature in late summer and fall apart on the tree"
+    similar_species_differentiation: "Unlike pines, needles grow singly, not in bundles; unlike spruces, needles are flat and soft, not square and sharp; unlike Douglas-fir, cones stand upright and disintegrate on the tree"
   
+  # Core features section
   features:
     always_true:
       - feature_id: "LEAF-TYPE-02"  # Evergreen
-        notes: "Keeps its needles for several years"
-        
-      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
-        notes: "Needles grow one at a time, not in bundles"
+        notes: "Retains needles year-round"
       
-      - feature_id: "CONE-POS-01"  # Upright cones
-        notes: "Cones stand upright on branches, never hang down"
+      - feature_id: "LEAF-FORM-01"  # Needle-like leaves
+        notes: "Has flat, soft needles"
       
-      - feature_id: "CONE-PERSIST-01"  # Breaking apart on tree
-        notes: "Cones break apart while still on the branch, leaving only the central spike"
+      - feature_id: "LEAF-ARRANGE-02"  # Single needles
+        notes: "Needles grow singly around the branch, not in bundles"
       
-      - feature_id: "TREE-FORM-01"  # Pyramidal shape
-        notes: "Grows in a pyramidal or Christmas tree shape"
+      - feature_id: "CONE-ATTACH-01"  # Upright cones
+        notes: "Cones stand upright on branches like candles"
+      
+      - feature_id: "CONE-FEAT-02"  # Disintegrating cones
+        notes: "Cones break apart on the tree rather than falling whole"
     
     usually_true:
       - feature_id: "TREE-TRUNK-01"  # Single trunk
-        notes: "Usually grows with one straight main trunk"
-        exceptions: "May develop multiple leaders if damaged when young"
+        notes: "Typically grows with a single straight trunk"
+        exceptions: "May occasionally fork or develop multiple leaders if the top is damaged"
       
-      - feature_id: "BRANCH-ANGLE-03"  # Horizontal branches
-        notes: "Primary branches typically grow at right angles to the trunk"
-        exceptions: "May droop slightly, especially in older trees or with snow load"
+      - feature_id: "TREE-FORM-01"  # Pyramidal
+        notes: "Strong pyramid or Christmas tree shape, especially when young"
+        exceptions: "Very old trees may develop more irregular crowns; trees in dense forests may have smaller crowns"
       
-      - feature_id: "NEEDLE-TEXT-01"  # Soft needles
-        notes: "Needles are typically soft and not sharp to touch"
-        exceptions: "Some species may have slightly stiffer needles, but still not sharp like spruce"
+      - feature_id: "BARK-TEXT-01"  # Smooth bark when young
+        notes: "Young trees have smooth bark with resin blisters"
+        exceptions: "Older trees develop more furrowed or plated bark"
     
     sometimes_true:
-      - feature_id: "NEEDLE-COLOR-03"  # Blue-green needles
-        conditions: "California Red Fir, White Fir, Noble Fir, Subalpine Fir"
-        notes: "Some species have distinctive blue-green or silvery-blue needles"
+      - feature_id: "LEAF-COLOR-03"  # Blue-green color
+        conditions: "White Fir and Noble Fir particularly"
+        notes: "Some species have distinctive blue-gray or silver-blue foliage"
       
-      - feature_id: "NEEDLE-COLOR-01"  # Dark green needles
-        conditions: "Grand Fir and other species"
-        notes: "Some species have darker green needles"
+      - feature_id: "BARK-TEXT-04"  # Furrowed bark
+        conditions: "Mature trees"
+        notes: "Older trees develop thick bark with furrows or rectangular plates"
       
-      - feature_id: "TREE-SIZE-03"  # Tall tree
-        conditions: "Mature trees in good conditions"
-        notes: "Can grow very tall, particularly in favorable habitats"
+      - feature_id: "BARK-COLOR-03"  # Reddish bark
+        conditions: "Red Fir specifically"
+        notes: "Some species like Red Fir have distinctly reddish bark"
       
-      - feature_id: "BARK-TEXT-08"  # Resin blisters
-        conditions: "Younger trees and upper parts of mature trees"
-        notes: "Small sap-filled blisters on smooth areas of bark"
-      
-      - feature_id: "SENSORY-SMELL-01"  # Aromatic
-        conditions: "When needles are crushed"
-        notes: "Pleasant scent when needles are crushed, with some species having citrus notes"
+      - feature_id: "TREE-SIZE-03"  # Very tall
+        conditions: "Mature trees in favorable conditions"
+        notes: "Can grow extremely tall in good conditions, especially White Fir and Red Fir"
     
     never_true:
       - feature_id: "LEAF-TYPE-01"  # Deciduous
         notes: "Never drops all needles seasonally"
       
-      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in bundles
-        notes: "Never has needles growing in bundles or clusters"
+      - feature_id: "NEEDLE-ARRANGE-03"  # Needles in bundles
+        notes: "Needles never grow in bundles like pines"
       
-      - feature_id: "CONE-POS-02"  # Hanging cones
-        notes: "Never has cones that hang down from branches"
+      - feature_id: "CONE-ATTACH-02"  # Hanging cones
+        notes: "Cones never hang down, always stand upright on branches"
   
-  # Kid-friendly identification
+  # Kid-friendly identification section
   kid_friendly_identification:
-    primary_identifier: "Soft, flat needles arranged like they're parting their hair down the middle of the branch"
-    memorable_comparison: "The branches look like flat green combs with the needles combed neatly to each side"
-    touch_tip: "Gently feel a needle - it will feel flat and soft, not sharp or poky like other evergreen trees"
-    smell_tip: "Crush a needle to smell a fresh, sweet Christmas tree scent (some might smell lemony!)"
-    fun_fact: "Fir cones stand straight up like candles on a birthday cake and never fall off whole! Instead, they break apart scale by scale while still on the tree, leaving just a spike sticking up."
+    primary_identifier: "Upright cones that stand like candles and fall apart on the tree"
+    memorable_comparison: "Fir trees look like perfect Christmas trees with a triangle shape, and their cones stand up like birthday candles on a cake"
+    touch_tip: "Touch the needles gently - they're soft and flat, not prickly like spruce, and if you try to pick one off it doesn't leave a little woody peg behind"
+    smell_tip: "Crush a needle gently to smell a sweet, fresh scent like Christmas trees"
+    fun_fact: "Fir cones are special - they stand straight up like rockets ready for liftoff, and they never fall from the tree whole! Instead, they break apart scale by scale while still on the branch, letting their seeds fly away in the wind. That's why you rarely find whole fir cones on the ground."
     
+    # Detective steps walk children through identification
     detective_steps:
       - step: 1
-        instruction: "Look at the overall shape - is it a perfect Christmas tree shape with a straight pointy top?"
+        instruction: "First, look at the overall shape - does it have a perfect Christmas tree triangle shape with branches in clear layers (whorls)?"
         yes_next: 2
-        no_next: "Might not be a fir - check other evergreen trees"
+        no_next: "If the shape is more irregular or rounded, check other evergreen trees"
       - step: 2
-        instruction: "Look at the needles. Are they flat and soft (not square and poky)?"
+        instruction: "Look at the needles - are they flat, soft, and growing singly (not in bundles) with white lines underneath?"
         yes_next: 3
-        no_next: "If needles are poky and roll easily between fingers, it's probably a spruce"
+        no_next: "If needles grow in bundles, check pine trees; if they're sharp and square, check spruce trees"
       - step: 3
-        instruction: "Check how the needles are arranged. Do they look combed to the sides of the branch like a part in someone's hair?"
-        yes_next: 4
-        no_next: "If needles stick out all around the twig, check spruce"
-      - step: 4
-        instruction: "If you can see any cones, do they stand straight up (not hang down) on the branches?"
-        yes_next: "You found a fir tree!"
-        no_next: "If cones hang down, it's probably spruce, Douglas-fir, or hemlock"
+        instruction: "Can you find any cones? Do they stand straight up on the branches or can you see their remains (they fall apart on the tree)?"
+        yes_next: "You found a fir tree! The needle color and arrangement can help you figure out which kind."
+        no_next: "If no cones are visible, gently pull a needle off and look at the attachment point - firs leave a round, suction-cup like scar, not a woody peg"
   
-  # Seasonal timeline
+  # Seasonal changes - separate entry for each season
   seasonal_timeline:
     - season: "Spring"
-      visual_changes: "Light green new growth at branch tips"
-      reproductive_activity: "Pollen cones release yellow pollen; young seed cones begin forming"
-      identification_tips: "Look for contrast between new and old growth; tiny young cones forming"
-      kid_friendly_tip: "In spring, look for bright green baby needles at the tips of branches, like little green flames"
+      visual_changes: "New growth emerges at branch tips, lighter green than older needles; pollen cones may appear"
+      reproductive_activity: "Pollen release from small male cones; female cones begin developing upright on upper branches"
+      identification_tips: "Look for the contrast between bright new growth and darker older needles"
+      kid_friendly_tip: "In spring, look for the bright light green new growth at the tips of branches - it looks like the tree is getting fresh green finger-tips"
     
     - season: "Summer" 
-      visual_changes: "New growth darkens to match older needles; cones grow larger"
-      reproductive_activity: "Seed cones continue developing, becoming more visible"
-      identification_tips: "Upright green to purple immature cones visible on upper branches"
-      kid_friendly_tip: "Summer is when you can spot green or purple cones standing up like birthday candles on the branches"
+      visual_changes: "New growth darkens to match older needles; upright green or purplish cones develop"
+      reproductive_activity: "Cones grow larger, remain upright and tightly closed"
+      identification_tips: "Upright cones becoming more visible; uniform needle color"
+      kid_friendly_tip: "By summer, you can spot the upright green or purple cones standing like candles on the upper branches"
     
     - season: "Fall"
-      visual_changes: "Needles stay green; cones mature and start breaking apart"
-      reproductive_activity: "Cones turn brown, open, and begin shedding scales and seeds while still on the tree"
-      identification_tips: "Look for brown cones breaking apart and cone scales scattered on the ground beneath the tree"
-      kid_friendly_tip: "In fall, the cones turn brown and start falling apart piece by piece, leaving spikes sticking up"
+      visual_changes: "Minimal color change as it remains evergreen; cones mature and begin to break apart"
+      reproductive_activity: "Cones mature and begin disintegrating, releasing seeds with papery wings"
+      identification_tips: "Disintegrating cones; some needle drop from interior branches is normal"
+      kid_friendly_tip: "In fall, watch for the cones starting to break apart while still on the tree - they never fall whole!"
     
     - season: "Winter"
-      visual_changes: "Needles remain green; cone spikes remain on branches"
-      reproductive_activity: "Dormant; cone spikes from previous year often visible"
-      identification_tips: "Distinctive conical form stands out when deciduous trees are bare"
-      kid_friendly_tip: "Even in winter snow, fir trees keep their perfect Christmas tree shape and green needles"
+      visual_changes: "Remains green; cone axes (central parts) may remain on branches after scales fall off"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Evergreen nature makes identification easier when deciduous trees are bare"
+      kid_friendly_tip: "Firs stay green all winter, and you might see the bare 'spikes' where cones used to be before they broke apart"
       
-  # Additional required sections
+  # Additional required sections 
   confirmation_checklist:
-    - feature: "Flat, soft needles arranged in flat rows on branches"
-      reliability: "Very high"
-      visibility: "Requires close inspection"
-    - feature: "Upright cones that break apart on the tree (when present)"
-      reliability: "Very high"
-      visibility: "Medium - need to find cones, which are often high in the tree"
-    - feature: "Perfect conical shape with horizontal branches"
+    - feature: "Flat, soft needles growing singly"
       reliability: "High"
-      visibility: "Visible from a distance"
-    - feature: "Smooth bark with resin blisters on younger trees"
-      reliability: "Medium"
-      visibility: "Requires close inspection"
+      visibility: "Medium - need to look at needles up close"
+    - feature: "Upright cones or evidence of disintegrated cones"
+      reliability: "Very high"
+      visibility: "Medium to low - cones are often high in the tree"
+    - feature: "Strong pyramid shape with whorled branches"
+      reliability: "High"
+      visibility: "Easy to observe from distance"
+    - feature: "Round leaf scars (not pegs) when needles are removed"
+      reliability: "Very high"
+      visibility: "Requires interaction - pulling a needle"
     
   look_alikes:
-    - name: "Spruce (Picea species)"
-      type: "genus"
-      differences: "Spruce needles are square (not flat), sharp to touch, and grow all around the twig; cones hang down and fall intact"
-      identification_tip: "If the needles are poky and roll easily between your fingers, it's spruce; if soft and flat, it's fir"
+    - species: "Spruce (Picea species)"
+      differences: "Spruce has sharp, square needles that are prickly to touch; when needles are pulled off, they leave woody pegs; cones hang down"
+      identification_tip: "If the needles are sharp and prickly when touched, and leave little pegs when pulled off, it's a spruce, not a fir"
     
-    - name: "Douglas-fir (Pseudotsuga menziesii)"
-      type: "species"
-      differences: "Despite the name, Douglas-fir is not a true fir; has hanging cones with distinctive 'mouse tail' bracts that don't break apart"
-      identification_tip: "If the cones hang down and have three-pointed bracts sticking out, it's Douglas-fir, not true fir"
+    - species: "Douglas-fir (Pseudotsuga menziesii)"
+      differences: "Not a true fir despite the name; cones hang down with distinctive 3-pronged bracts; needles leave a small peg-like projection when pulled off"
+      identification_tip: "If the cones hang down and have mouse-tail-like bracts sticking out between scales, it's a Douglas-fir, not a true fir"
     
-    - name: "Hemlock (Tsuga species)"
-      type: "genus"
-      differences: "Hemlock has tiny needles with short stalks; drooping branch tips; small hanging cones"
-      identification_tip: "Hemlock foliage is more delicate and feathery looking; branch tips droop downward"
+    - species: "Hemlock (Tsuga species)"
+      differences: "Hemlocks have shorter needles, drooping leader (top), and tiny hanging cones; more delicate appearance"
+      identification_tip: "If the tree has a drooping or nodding top and tiny cones that hang down, it's likely a hemlock"
     
   cultural_significance:
-    - culture: "Native American Tribes (Various)"
+    # Organized by culture
+    - culture: "Native California Tribes"
       physical_uses:
-        - "Used sap as medicine for cuts, burns, and skin problems"
-        - "Gathered young shoots and inner bark as emergency food in some regions"
-        - "Used branches for bedding and to line floors because they smell nice"
-        - "Made tea from needles for treating colds and as a source of vitamin C"
+        - "Used the soft, fragrant boughs for bedding material"
+        - "Made tea from needles rich in vitamin C for colds and scurvy"
+        - "Collected resin for waterproofing and adhesives"
+        - "Used straight-grained wood for tools and structures"
       symbolic_meaning:
-        - "Represented longevity and strength because of straight growth and long life"
-        - "Featured in stories about endurance through harsh winters"
-        - "Used in purification ceremonies through burning of needles"
+        - "Associated with winter ceremonies in some tribes"
+        - "Used branches for purification rituals and cleansing"
+        - "Viewed as protective trees because of their strong, straight growth"
     
-    - culture: "Western Settlers"
+    - culture: "Early Settlers"
       physical_uses:
-        - "Harvested as Christmas trees because of perfect conical shape"
-        - "Used the straight-grained wood for building and lumber"
-        - "Used branches and needles for holiday decorations"
-        - "Extracted oils for perfumes and air fresheners"
+        - "Harvested for lumber, particularly for construction and boxes"
+        - "Used boughs for stuffing mattresses and pillows"
+        - "Collected pitch for making candles and waterproofing"
+        - "Planted as windbreaks and property markers"
       symbolic_meaning:
-        - "Symbolizes Christmas and winter celebrations"
-        - "Represented the untamed wilderness of mountain regions"
-        - "Associated with purity and freshness because of its scent"
+        - "Associated with Christmas and winter celebrations"
+        - "Represented bounty of the forest in frontier culture"
     
-    - culture: "Modern Forestry"
+    - culture: "Modern California"
       physical_uses:
-        - "Grown for paper production and construction lumber"
-        - "Cultivated specially for the Christmas tree industry"
-        - "Essential components of high-elevation forest ecosystems"
-        - "Sometimes planted for erosion control on mountain slopes"
+        - "Popular Christmas trees, especially White Fir and Noble Fir"
+        - "Harvested for lumber in sustainable forestry"
+        - "Essential component of mixed conifer forest ecosystems"
+        - "Studied as indicators of climate change impacts"
       symbolic_meaning:
-        - "Represents forest health and biodiversity"
-        - "Used as indicators of climate change in mountain ecosystems"
-        - "Symbols of conservation efforts in high mountain forests"
+        - "Symbolizes pristine mountain wilderness"
+        - "Associated with winter holidays and celebrations"
+        - "Represents forest conservation and ecosystem health"
     
   cultural_ecological_notes:
-    - "Important habitat trees for many birds and small mammals in mountain forests"
-    - "Seeds are vital food for squirrels, chipmunks, and seed-eating birds"
-    - "Provides critical shelter for wildlife during harsh mountain winters"
-    - "Fallen needles create acidic soil that supports unique forest floor plants"
-    - "Different fir species occupy different elevation zones, creating diverse habitat types"
-    - "Old growth fir forests support rare and specialized species"
+    - "Different fir species occupy distinct elevation zones in mountain forests"
+    - "Provides important habitat for spotted owls, flying squirrels, and many other wildlife species"
+    - "Creates shade that helps maintain snow pack and regulate water flow in watersheds"
+    - "More sensitive to air pollution and drought than some other conifers"
+    - "Seeds are important food for squirrels, chipmunks, and many birds"
     
   range_within_california:
-    - "Different fir species naturally occupy different elevation zones in California mountains"
-    - "White Fir is widespread throughout mid-elevation mountain forests"
-    - "Red Fir dominates higher elevations in the Sierra Nevada"
-    - "Grand Fir is found mainly in northern coastal mountains"
-    - "Subalpine Fir occurs near treeline in the highest mountain zones"
-    - "Various non-native fir species are planted in parks and as Christmas trees"
+    - "White Fir widespread throughout Sierra Nevada and mountains of southern California"
+    - "Red Fir forms pure stands at higher elevations, especially in central and northern Sierra Nevada"
+    - "Grand Fir limited to northwest coastal California"
+    - "Noble Fir native to high elevations in extreme northwest California"
+    - "Various non-native fir species planted as ornamentals throughout the state"
     
   # Physical characteristics
   physical_characteristics:
-    height_range: "60-200 feet, depending on species (as tall as a 15-20 story building)"
-    growth_rate: "Slow to moderate, about 8-24 inches per year when young"
-    crown_spread: "20-30 feet wide at maturity for most species"
-    lifespan: "300-500+ years, with some trees living over 600 years"
-    trunk_diameter: "2-6 feet at maturity (as wide as a car tire or bigger)"
-    root_system: "Moderately deep with wide lateral spread"
-    toxicity: "Not toxic, though sap may cause skin irritation in sensitive individuals"
+    height_range: "60-200 feet depending on species (White Fir and Red Fir can exceed 200 feet)"
+    growth_rate: "Moderate; typically 1-2 feet per year when young"
+    crown_spread: "20-40 feet at maturity"
+    lifespan: "300-700+ years depending on species"
+    trunk_diameter: "3-6 feet at maturity"
+    root_system: "Moderately deep with spreading lateral roots"
+    toxicity: "Not toxic; needles high in vitamin C and can be used for tea"
   
   conservation_status:
-    status: "Most California fir species are stable, though habitat changes are occurring"
+    status: "Most California native species secure within natural range"
     threats: 
-      - "Climate change affecting suitable habitat and snowpack patterns"
-      - "Increased severity and frequency of wildfires"
-      - "Bark beetle outbreaks during extended drought periods"
-      - "Air pollution damage in some regions"
+      - "Climate change affecting suitable habitat range and fire patterns"
+      - "Bark beetle outbreaks during drought periods"
+      - "High-severity wildfire in dense stands with accumulated fuels"
+      - "Air pollution affects some species, particularly at higher elevations"
     protection_efforts:
-      - "Protected in national parks, wilderness areas, and national forests"
-      - "Research into climate adaptation strategies"
-      - "Fire management planning to protect old-growth stands"
-      - "Monitoring for early detection of pest outbreaks"
+      - "Inclusion in national parks and wilderness areas"
+      - "Research on climate adaptation and fire resilience"
+      - "Forest management to reduce stand density and fire risk"
       
   decision_tree_placement:
     primary_split_features:
-      - "feature_id: NEEDLE-ARRANGE-01"  # Single needles
-      - "feature_id: CONE-POS-01"  # Upright cones
-      - "feature_id: TREE-FORM-01"  # Pyramidal shape
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: LEAF-FORM-01"  # Needle-like
+      - "feature_id: CONE-ATTACH-01"  # Upright cones
     confirmation_features:
-      - "feature_id: NEEDLE-TEXT-01"  # Soft needles
-      - "feature_id: CONE-PERSIST-01"  # Breaking apart on tree
+      - "feature_id: CONE-FEAT-02"  # Disintegrating cones
+      - "feature_id: TREE-FORM-01"  # Pyramidal
     observation_sequence:
       - distance: "from_far_away"
-        features_to_check: ["TREE-FORM-01", "BRANCH-ANGLE-03"]  # Pyramidal shape, horizontal branches
+        features_to_check: ["TREE-FORM-01", "LEAF-TYPE-02"]  # Pyramidal form, evergreen
       - distance: "from_nearby"
-        features_to_check: ["NEEDLE-ARRANGE-01", "CONE-POS-01"]  # Single needles, upright cones
+        features_to_check: ["LEAF-FORM-01", "LEAF-ARRANGE-02"]  # Needle-like, single arrangement
       - distance: "close_inspection"
-        features_to_check: ["NEEDLE-TEXT-01", "BARK-TEXT-08"]  # Soft needles, resin blisters
+        features_to_check: ["CONE-ATTACH-01", "CONE-FEAT-02"]  # Upright cones, disintegrating
     seasonal_identification:
       spring:
-        reliability: "Medium"
-        key_features: ["NEEDLE-ARRANGE-01", "TREE-FORM-01", "NEEDLE-TEXT-01"]
-        notes: "New growth provides color contrast"
+        reliability: "Medium to high"
+        key_features: ["LEAF-TYPE-02", "TREE-FORM-01"]
+        notes: "New growth provides good contrast"
       summer:
-        reliability: "High" 
-        key_features: ["NEEDLE-ARRANGE-01", "CONE-POS-01", "CONE-PERSIST-01"]
-        notes: "Developing cones make identification easier"
-      fall:
         reliability: "High"
-        key_features: ["NEEDLE-ARRANGE-01", "CONE-POS-01", "CONE-PERSIST-01"]
-        notes: "Breaking cones are distinctive; scales visible under tree"
+        key_features: ["CONE-ATTACH-01", "LEAF-ARRANGE-02"]
+        notes: "Developing upright cones most visible"
+      fall:
+        reliability: "Very high" 
+        key_features: ["CONE-FEAT-02", "LEAF-ARRANGE-02"]
+        notes: "Disintegrating cones distinctive; evergreen nature evident"
       winter:
         reliability: "Medium"
-        key_features: ["NEEDLE-ARRANGE-01", "TREE-FORM-01", "NEEDLE-TEXT-01"]
-        notes: "Distinctive form visible when deciduous trees are bare"
-    misidentification_risks: 
-      - "Most often confused with spruce trees - check if needles are soft/flat (fir) or sharp/square (spruce)"
-      - "Commonly confused with Douglas-fir, which is not a true fir - check cone position and persistence"
-      - "Young trees might be confused with other conifers before distinctive features develop"
-  
+        key_features: ["LEAF-TYPE-02", "TREE-FORM-01"]
+        notes: "Evergreen pyramidal form stands out against deciduous trees"
+
   wildlife_value:
-    - "Seeds are important food for squirrels, chickadees, nuthatches, crossbills, and other seed-eating birds"
-    - "Dense evergreen foliage provides crucial winter shelter for many bird species"
-    - "Branches offer protected nesting sites for birds like owls, chickadees, and nuthatches"
-    - "Old trees develop cavities used by woodpeckers and other cavity-nesting wildlife"
-    - "Red squirrels often build nests in dense fir branches"
-    - "Large, old fir trees are especially valuable wildlife habitat"
-    - "Deer and elk sometimes browse on seedlings and lower branches"
+    - "Seeds are important food for red squirrels, Douglas squirrels, chipmunks, and many bird species"
+    - "Dense branches provide shelter and nesting sites for many birds including owls"
+    - "Mature trees with cavities create homes for woodpeckers, flying squirrels, and other forest animals"
+    - "Fallen needles create soil conditions that support forest floor ecosystems"
+    - "Shade from fir forests helps maintain cool stream temperatures for fish"
+    - "Winter foliage provides food for deer and elk when other food is scarce"

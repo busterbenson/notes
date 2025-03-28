@@ -1,6 +1,8 @@
 tree:
   common_name: "Western Soapberry"
   scientific_name: "Sapindus drummondii"
+  scientific_genus: "Sapindus"
+  common_genus: "Soapberry"
   family: "Sapindaceae"
   
   # Basic summary
@@ -148,7 +150,7 @@ tree:
       reliability: "Very high"
       visibility: "Requires testing berries in water"
     
-  look_alike_species:
+  look_alikes:
     - species: "Ash trees (Fraxinus species)"
       differences: "Ash trees have opposite leaves (not alternate) and leaflets with toothed edges; produce winged seeds (not berries)"
       identification_tip: "Check leaf arrangement (alternate in Soapberry, opposite in Ash) and leaflet edges (smooth in Soapberry, toothed in Ash)"

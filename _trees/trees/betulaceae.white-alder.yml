@@ -1,6 +1,8 @@
 tree:
   common_name: "White Alder"
   scientific_name: "Alnus rhombifolia"
+  scientific_genus: "Alnus"
+  common_genus: "Alder"
   family: "Betulaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -185,7 +187,7 @@ tree:
       reliability: "Very high"
       visibility: "Seasonal - early spring only"
     
-  look_alike_species:
+  look_alikes:
     - species: "Red Alder (Alnus rubra)"
       differences: "Red Alder has bark with orange or rusty tones, rusty hairs on leaf veins underneath, and grows mainly near the coast"
       identification_tip: "Check the leaf undersides - White Alder lacks rusty hairs along the veins, and its bark is grayer"

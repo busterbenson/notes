@@ -1,6 +1,8 @@
 tree:
   common_name: "Engelmann Oak"
   scientific_name: "Quercus engelmannii"
+  scientific_genus: "Quercus"
+  common_genus: "White Oak"
   family: "Fagaceae"
   
   # Basic summary
@@ -154,7 +156,7 @@ tree:
       reliability: "Medium"
       visibility: "Easy - visible from a distance"
     
-  look_alike_species:
+  look_alikes:
     - species: "Coast Live Oak (Quercus agrifolia)"
       differences: "Coast Live Oak has darker green leaves with spiny edges, more dense crown, and typically grows closer to the coast"
       identification_tip: "If leaves are dark green with pointed, spiny edges, it's likely Coast Live Oak, not Engelmann Oak"

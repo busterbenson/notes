@@ -1,6 +1,8 @@
 tree:
   common_name: "Bristlecone Fir"
   scientific_name: "Abies bracteata"
+  scientific_genus: "Abies"
+  common_genus: "Fir"
   family: "Pinaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -125,7 +127,7 @@ tree:
       reliability: "Medium"
       visibility: "Observable from a distance"
     
-  look_alike_species:
+  look_alikes:
     - species: "White Fir (Abies concolor)"
       differences: "White Fir has softer, blunt needle tips and cones without protruding bracts; more widespread distribution"
       identification_tip: "If the needles have soft tips and the cones don't have spiky projections, it's likely a White Fir"

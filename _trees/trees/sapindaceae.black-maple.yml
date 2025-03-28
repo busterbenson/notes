@@ -1,6 +1,8 @@
 tree:
   common_name: "Black Maple"
   scientific_name: "Acer nigrum"
+  scientific_genus: "Acer"
+  common_genus: "Maple"
   family: "Sapindaceae"
   
   # Basic summary information
@@ -167,7 +169,7 @@ tree:
       reliability: "Very high (when present)"
       visibility: "Easy to spot when mature in fall"
     
-  look_alike_species:
+  look_alikes:
     - species: "Sugar Maple (Acer saccharum)"
       differences: "Very similar, but Sugar Maple has more deeply cut leaf lobes, smoother leaf undersides, and leaf edges that don't droop as much"
       identification_tip: "Feel the leaf underside - Black Maple is fuzzy, while Sugar Maple is mostly smooth"

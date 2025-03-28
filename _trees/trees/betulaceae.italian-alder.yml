@@ -1,6 +1,8 @@
 tree:
   common_name: "Italian Alder"
   scientific_name: "Alnus cordata"
+  scientific_genus: "Alnus"
+  common_genus: "Alder"
   family: "Betulaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -161,7 +163,7 @@ tree:
       reliability: "Very high"
       visibility: "Seasonal - early spring only"
     
-  look_alike_species:
+  look_alikes:
     - species: "European Alder (Alnus glutinosa)"
       differences: "European Alder has more rounded leaves with notched or indented tips rather than pointed; leaves are not as glossy"
       identification_tip: "Italian Alder leaves have distinct heart-shaped bases and pointed tips without indentations"

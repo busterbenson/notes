@@ -1,6 +1,8 @@
 tree:
   common_name: "Atlantic White-cedar"
   scientific_name: "Chamaecyparis thyoides"
+  scientific_genus: "Chamaecyparis"
+  common_genus: "Cedar"
   family: "Cupressaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -135,7 +137,7 @@ tree:
       reliability: "Medium"
       visibility: "Visible on older trees"
     
-  look_alike_species:
+  look_alikes:
     - species: "Northern White-cedar (Thuja occidentalis)"
       differences: "Atlantic White-cedar has more blue-green foliage and rounder cones; Northern White-cedar has flatter sprays and more elongated cones"
       identification_tip: "Crush a bit of foliage - Atlantic White-cedar has a stronger, spicier scent"

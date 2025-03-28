@@ -1,6 +1,8 @@
 tree:
   common_name: "Purple Leaf Plum"
   scientific_name: "Prunus cerasifera"
+  scientific_genus: "Prunus"
+  common_genus: "Cherry"
   family: "Rosaceae"
   
   # Basic summary information
@@ -164,7 +166,7 @@ tree:
       reliability: "High"
       visibility: "Need to look at trunk"
     
-  look_alike_species:
+  look_alikes:
     - species: "Flowering Plum (other Prunus varieties)"
       differences: "May have green rather than purple leaves; flower color and fruit size can vary"
       identification_tip: "If the leaves are green instead of purple, it's probably a different flowering plum variety"

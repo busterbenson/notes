@@ -1,6 +1,8 @@
 tree:
   common_name: "Manchurian Birch"
   scientific_name: "Betula platyphylla var. mandshurica"
+  scientific_genus: "Betula"
+  common_genus: "Birch"
   family: "Betulaceae"
   
   # Basic summary information
@@ -157,7 +159,7 @@ tree:
       reliability: "High (spring only)"
       visibility: "Visible from nearby in spring"
     
-  look_alike_species:
+  look_alikes:
     - species: "Paper Birch (Betula papyrifera)"
       differences: "Manchurian Birch has more triangular leaves with longer pointed tips; often has more upright growth habit"
       identification_tip: "Compare leaf shapes - Manchurian Birch leaves are more triangular with a long drawn-out tip"

@@ -1,6 +1,8 @@
 tree:
   common_name: "Canyon Live Oak"
   scientific_name: "Quercus chrysolepis"
+  scientific_genus: "Quercus"
+  common_genus: "Live Oak"
   family: "Fagaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -119,7 +121,7 @@ tree:
       reliability: "Medium"
       visibility: "Easy to observe on trunk"
     
-  look_alike_species:
+  look_alikes:
     - species: "Coast Live Oak (Quercus agrifolia)"
       differences: "Coast Live Oak has whitish (not golden) undersides and more consistently spiny leaf edges"
       identification_tip: "Look at leaf undersides - Coast Live Oak is grayish-white, not golden-fuzzy"

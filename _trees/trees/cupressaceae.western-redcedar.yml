@@ -1,6 +1,8 @@
 tree:
   common_name: "Western Redcedar"
   scientific_name: "Thuja plicata"
+  scientific_genus: "Thuja"
+  common_genus: "Cedar"
   family: "Cupressaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -118,7 +120,7 @@ tree:
       reliability: "Very high"
       visibility: "Requires interaction"
     
-  look_alike_species:
+  look_alikes:
     - species: "Incense-cedar (Calocedrus decurrens)"
       differences: "Incense-cedar has thicker, more upright sprays and forms a narrow column; its scales have white X patterns underneath"
       identification_tip: "If the sprays are thick and stand upright instead of drooping, and the tree is shaped like a column, it's likely Incense-cedar"

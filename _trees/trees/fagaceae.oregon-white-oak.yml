@@ -1,6 +1,8 @@
 tree:
   common_name: "Oregon White Oak"
   scientific_name: "Quercus garryana"
+  scientific_genus: "Quercus"
+  common_genus: "White Oak"
   family: "Fagaceae"
   
   # Basic summary information
@@ -154,7 +156,7 @@ tree:
       reliability: "Medium"
       visibility: "Only visible in fall"
     
-  look_alike_species:
+  look_alikes:
     - species: "Blue Oak (Quercus douglasii)"
       differences: "Oregon White Oak has deeper and more numerous leaf lobes; Blue Oak has blue-green leaves with shallower lobes"
       identification_tip: "Blue Oak leaves have a bluish-green color and less deeply cut lobes"

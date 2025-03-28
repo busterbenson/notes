@@ -1,6 +1,8 @@
 tree:
   common_name: "Coast Live Oak"
   scientific_name: "Quercus agrifolia"
+  scientific_genus: "Quercus"
+  common_genus: "Live Oak"
   family: "Fagaceae"
   
   # Basic summary information
@@ -166,7 +168,7 @@ tree:
       reliability: "Medium"
       visibility: "Easy - visible from a distance"
     
-  look_alike_species:
+  look_alikes:
     - species: "Interior Live Oak (Quercus wislizeni)"
       differences: "Interior Live Oak has less spiny leaf margins, smoother leaf undersides, and is found in drier inland areas"
       identification_tip: "Coast Live Oak leaves are more holly-like with curved edges and fuzzy undersides"

@@ -1,6 +1,8 @@
 tree:
   common_name: "Blue Gum Eucalyptus"
   scientific_name: "Eucalyptus globulus"
+  scientific_genus: "Eucalyptus"
+  common_genus: "Eucalyptus"
   family: "Myrtaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -161,7 +163,7 @@ tree:
       reliability: "High"
       visibility: "Easy to spot if present on tree or ground"
     
-  look_alike_species:
+  look_alikes:
     - species: "Red Gum Eucalyptus (Eucalyptus camaldulensis)"
       differences: "Red Gum has more uniformly green leaves, redder and smoother bark, and smaller seed capsules; doesn't grow as tall as Blue Gum"
       identification_tip: "If the bark has a reddish color and the juvenile leaves are green rather than blue-gray, it's likely Red Gum"

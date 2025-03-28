@@ -1,6 +1,8 @@
 tree:
   common_name: "Tanoak"
   scientific_name: "Notholithocarpus densiflorus"
+  scientific_genus: "Notholithocarpus"
+  common_genus: "Tanoak"
   family: "Fagaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -175,7 +177,7 @@ tree:
       reliability: "Medium"
       visibility: "Easy to see on mature trees"
     
-  look_alike_species:
+  look_alikes:
     - species: "Coast Live Oak (Quercus agrifolia)"
       differences: "Coast Live Oak has leaves that curl under at the edges and a less hairy underside; acorn caps have flat scales, not fuzzy bristles"
       identification_tip: "Turn over a leaf - tanoak has much fuzzier underside and straighter leaf edges"

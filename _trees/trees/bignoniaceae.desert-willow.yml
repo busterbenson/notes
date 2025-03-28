@@ -1,6 +1,8 @@
 tree:
   common_name: "Desert Willow"
   scientific_name: "Chilopsis linearis"
+  scientific_genus: "Chilopsis"
+  common_genus: "Desert Willow"
   family: "Bignoniaceae"
   
   # Basic summary information
@@ -167,7 +169,7 @@ tree:
       reliability: "High"
       visibility: "Obvious from context"
     
-  look_alike_species:
+  look_alikes:
     - species: "True Willows (Salix species)"
       differences: "True willows grow near water, not in dry areas; have catkins instead of showy flowers; more flexible branches"
       identification_tip: "If it's growing near water and has fuzzy catkins instead of trumpet flowers, it's a true willow"

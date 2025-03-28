@@ -1,6 +1,8 @@
 tree:
   common_name: "Northern White-cedar"
   scientific_name: "Thuja occidentalis"
+  scientific_genus: "Thuja"
+  common_genus: "Cedar"
   family: "Cupressaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -136,7 +138,7 @@ tree:
       reliability: "High"
       visibility: "Medium - need to look closely when cones are present"
     
-  look_alike_species:
+  look_alikes:
     - species: "Western Redcedar (Thuja plicata)"
       differences: "Much larger tree with more drooping branch tips and larger cones; leaves are more lustrous green"
       identification_tip: "Western Redcedar has drooping branch tips like a weeping willow; Northern White-cedar branches are more stiff"

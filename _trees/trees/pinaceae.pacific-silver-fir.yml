@@ -1,6 +1,8 @@
 tree:
   common_name: "Pacific Silver Fir"
   scientific_name: "Abies amabilis"
+  scientific_genus: "Abies"
+  common_genus: "Fir"
   family: "Pinaceae"
   
   # Basic summary information
@@ -154,7 +156,7 @@ tree:
       reliability: "Medium"
       visibility: "Easy - visible up close"
     
-  look_alike_species:
+  look_alikes:
     - species: "Grand Fir (Abies grandis)"
       differences: "Grand Fir has flatter needle arrangement along branch (not bottle brush); slightly longer needles; grows at lower elevations"
       identification_tip: "Pacific Silver Fir needles curve upward more and stick out all around the twig; Grand Fir needles part in two distinct rows"

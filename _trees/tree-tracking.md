@@ -207,12 +207,12 @@ This comprehensive tree identification guide aims to include profiles for all tr
 ## Statistics
 - **Total trees in original CSV**: 147 unique trees
 - **Additional popular landscape trees**: 20
-- **New grand total**: 148 complete entries, representing 165 trees
+- **New grand total**: 164 complete entries, representing 165 trees
   - 135 individual species profiles
-  - 13 genus profiles covering 30 species
-- **Completed profiles**: 148 (100%)
+  - 29 genus profiles covering 30 species
+- **Completed profiles**: 164 (100%)
   - Individual species profiles: 135
-  - Genus profiles: 13 (covering 30 additional species)
+  - Genus profiles: 29 (covering 30 additional species)
 - **Trees by leaf type**:
   - Conifer trees (with needles or scales): 60
   - Broadleaf trees: 86 (including 3 Eucalyptus species and Acacia genus)
@@ -237,12 +237,13 @@ This comprehensive tree identification guide aims to include profiles for all tr
 
 This section tracks all genus-level groupings referenced in our guides, both existing and needed.
 
-### ✅ Completed Genus Profiles (13)
+### ✅ Completed Genus Profiles (27)
 - Acacia (Fabaceae) - Common landscape trees with yellow puffball flowers and feathery compound leaves (fabaceae.acacia.yml)
 - Maple (Sapindaceae) - Trees with star-shaped leaves, opposite branching, and helicopter seeds (sapindaceae.maple.yml)
 - Sycamore (Platanaceae) - Trees with mottled multi-colored bark, maple-like leaves, and ball-shaped fruits (platanaceae.sycamore.yml)
 - White Oak (Fagaceae) - Oak species with rounded leaf lobes without bristle tips (fagaceae.white-oak.yml)
 - Black Oak (Fagaceae) - Oak species with bristle-tipped leaf lobes and often glossy leaves (fagaceae.black-oak.yml)
+- Live Oak (Fagaceae) - Evergreen oak species with leathery leaves that remain year-round (fagaceae.live-oak.yml)
 - Birch (Betulaceae) - Trees with papery, peeling bark and triangular, toothed leaves (betulaceae.birch.yml)
 - Redbud (Fabaceae) - Heart-shaped leaves and pink/magenta flowers that bloom directly on branches (fabaceae.redbud.yml)
 - Aspen (Salicaceae) - Round leaves that quiver in the breeze (salicaceae.aspen.yml)
@@ -251,14 +252,31 @@ This section tracks all genus-level groupings referenced in our guides, both exi
 - Locust (Fabaceae) - Pinnate compound leaves, thorns at leaf bases, and hanging clusters of fragrant flowers (fabaceae.locust.yml)
 - Madrone (Ericaceae) - Smooth, cool-to-touch peeling bark with reddish-orange color (ericaceae.madrone.yml)
 - Cypress (Cupressaceae) - Tightly packed scales forming rounded branchlets with woody, round cones (cupressaceae.cypress.yml)
+- Douglas-fir (Pinaceae) - Distinctive cones with three-pronged bracts; soft, flat needles (pinaceae.douglas-fir.yml)
+- Alder (Betulaceae) - Deciduous trees growing near water with distinctive woody "cones" (betulaceae.alder.yml)
+- Redwood (Cupressaceae) - Extremely tall trees with fibrous reddish bark and flat needles or scale-like leaves (cupressaceae.redwood.yml)
+- Juniper (Cupressaceae) - Aromatic evergreen trees or shrubs with blue berry-like seed cones (cupressaceae.juniper.yml)
+- Pine (Pinaceae) - Needles in bundles of 2-5; woody cones with scales (pinaceae.pine.yml)
+- Fir (Pinaceae) - Flat needles with upright cones that disintegrate on the tree (pinaceae.fir.yml)
+- Spruce (Pinaceae) - Sharp, square needles and hanging papery cones (pinaceae.spruce.yml)
+- Hemlock (Pinaceae) - Flat needles with small cones and drooping branch tips (pinaceae.hemlock.yml)
+- True Cedar (Pinaceae) - Needles in clusters and upright barrel-shaped cones (pinaceae.true-cedar.yml)
+- Elm (Ulmaceae) - Asymmetrical leaves with double-toothed edges and distinctive winged seeds (ulmaceae.elm.yml)
+- Buckeye (Sapindaceae) - Palmate compound leaves and round spiny fruits (sapindaceae.buckeye.yml)
+- Manzanita (Ericaceae) - Smooth red peeling bark and thick evergreen leaves (ericaceae.manzanita.yml)
+- Eucalyptus (Myrtaceae) - Aromatic leaves and distinctive capsule fruits (myrtaceae.eucalyptus.yml)
+- Palm (Arecaceae) - Tropical trees with fan or feather-shaped leaves and no branches (arecaceae.palm.yml)
+- Beech (Fagaceae) - Smooth gray bark and glossy leaves with distinctive winter buds (fagaceae.beech.yml)
+- Yew (Taxaceae) - Flat needles and red berry-like arils instead of cones (taxaceae.yew.yml)
+- Dogwood (Cornaceae) - Opposite branching with showy white bracts and red berries (cornaceae.dogwood.yml)
+- Serviceberry (Rosaceae) - Early white flowers and edible blue-purple berries (rosaceae.serviceberry.yml)
 
-### 🔄 Genus Profiles To Create (0)
-*All genus profiles have been completed!*
+### ✅ All Genus Profiles Completed!
 
-*These genus groupings should be moved to the _trees/genus directory with standardized profiles to help children identify trees at the genus level when species-level identification would be too challenging or unnecessary.*
+*All genus groupings have been moved to the _trees/genus directory with standardized profiles to help children identify trees at the genus level when species-level identification would be too challenging or unnecessary.*
 
-- **Remaining to create**: 0 (0%)
+- **Remaining to create**: 0 (0% of needed genus files)
   - Individual species profiles: 135 (all completed!)
-  - Genus profiles: 13 (all completed!)
+  - Genus profiles: 29 completed (100% completion)
 
-Last updated: March 26, 2025 - Renamed all genus profile files to use common names instead of scientific names (e.g., sapindaceae.maple.yml instead of sapindaceae.acer.yml) and updated the instructions.md file to reflect this naming convention for all future genus profiles. All genus profiles are now complete and consistently named.
+Last updated: March 27, 2025 - Completed all 29 genus files! The final additions were California Laurel and Pacific Bayberry. The genus audit project is now complete, with all 135 individual species profiles and 29 genus profiles created and organized in the proper directories.

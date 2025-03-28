@@ -4,312 +4,290 @@ genus:
   taxonomic_level: "genus"
   family: "Pinaceae"
   
-  # Basic summary
-  summary: "Evergreen trees with needle-like leaves that grow in bundles of 2, 3, or 5, wrapped together at the base. Pines have distinctive woody cones with overlapping scales, and most have scaly or plated bark. They're found throughout California in many different habitats, from coastal areas to high mountains."
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "Evergreen trees with needles grouped in bundles of 2-5, held together at the base by a small papery sheath. Pines produce woody cones with overlapping scales, and often have distinctive flaky bark that forms puzzle-like patterns on older trees."
   
   # Key species in this genus
   included_species:
     - name: "Ponderosa Pine"
       scientific_name: "Pinus ponderosa"
-      distinguishing_features: "Needles in bundles of 3; orange-brown puzzle-piece bark; vanilla/butterscotch smell; prickly cones"
-      california_context: "Common in Sierra Nevada and other mountain ranges at middle elevations"
+      distinguishing_features: "Long needles in bundles of 3; bark smells like vanilla or butterscotch when warm; large prickly cones"
+      california_context: "Common throughout mountains; important timber tree; distinctive puzzle-piece bark"
     
     - name: "Jeffrey Pine"
       scientific_name: "Pinus jeffreyi"
-      distinguishing_features: "Needles in bundles of 3; similar to Ponderosa but with non-prickly cones; strong vanilla smell"
-      california_context: "Higher elevations in the Sierra Nevada and mountains of southern California"
+      distinguishing_features: "Similar to Ponderosa but with stronger vanilla scent; cones without sharp prickles"
+      california_context: "Higher elevation relative of Ponderosa; dominates eastern Sierra forests"
     
     - name: "Sugar Pine"
       scientific_name: "Pinus lambertiana"
-      distinguishing_features: "Needles in bundles of 5; extremely long cones (10-20 inches); horizontal branches"
-      california_context: "Mid to high elevations in the Sierra Nevada and Klamath mountains"
+      distinguishing_features: "Extremely long cones (10-20 inches); needles in bundles of 5; drooping branches"
+      california_context: "Tallest pine species; produces world's longest cones; mostly in Sierra Nevada"
     
     - name: "Lodgepole Pine"
       scientific_name: "Pinus contorta"
-      distinguishing_features: "Needles in bundles of 2; small, prickly cones; often grows in dense stands"
-      california_context: "High mountains, especially around meadows and lakes in the Sierra Nevada"
+      distinguishing_features: "Short needles in bundles of 2; small prickly cones that may stay closed for years"
+      california_context: "Forms dense forests at high elevations; adapted to regenerate after fires"
     
     - name: "Monterey Pine"
       scientific_name: "Pinus radiata"
-      distinguishing_features: "Needles in bundles of 3; asymmetrical cones that stay on tree for years"
-      california_context: "Native only to small areas on the central coast, but widely planted"
+      distinguishing_features: "Needles in bundles of 3; asymmetrical growth; cones remain on branches for years"
+      california_context: "Native only to small areas near Monterey, but widely planted in landscapes"
   
-  # Identification path
+  # Identification path guides the decision tree
   identification_path:
-    primary_markers: "Needles growing in bundles of 2, 3, or 5 (not single needles); woody cones with overlapping scales"
-    secondary_markers: "Evergreen trees with generally straight trunks; resinous wood and needles; flaky or plated bark patterns"
-    seasonal_markers: "Minimal seasonal change as evergreen; male pollen cones shed yellow pollen in spring; woody cones mature over 2-3 years"
-    similar_species_differentiation: "Unlike spruces and firs, needles grow in bundles, not singly; unlike cedars, have needle-like leaves, not scale-like leaves; cone shape and needle count differentiates between pine species"
+    primary_markers: "Needles in bundles of 2-5, joined at base by papery sheath; woody cones with overlapping scales"
+    secondary_markers: "Flaking bark often in puzzle-piece pattern; branching typically in whorls around the trunk"
+    seasonal_markers: "Minimal seasonal change as evergreen; male pollen cones release yellow pollen in spring; seed cones develop over 2-3 years"
+    similar_species_differentiation: "Unlike firs and spruces, needles grow in bundles, not singly; unlike true cedars, needles are longer and not in dense clusters on short shoots"
   
+  # Core features section
   features:
     always_true:
       - feature_id: "LEAF-TYPE-02"  # Evergreen
-        notes: "Keeps needles year-round, though older needles eventually fall and are replaced"
-        
-      - feature_id: "NEEDLE-ARRANGE-05"  # Needles in bundles
-        notes: "Needles always grow in bundles (fascicles), never singly"
+        notes: "Retains needles year-round, though older needles fall off gradually"
       
-      - feature_id: "CONE-SHAPE-03"  # Woody cones
+      - feature_id: "LEAF-FORM-01"  # Needle-like leaves
+        notes: "Has needle-like leaves rather than broad leaves"
+      
+      - feature_id: "NEEDLE-ARRANGE-03"  # Needles in bundles
+        notes: "Needles always grow in bundles of 2-5 (number varies by species)"
+      
+      - feature_id: "CONE-TYPE-01"  # Woody cones
         notes: "Produces woody seed cones with overlapping scales"
-      
-      - feature_id: "ECO-ORIGIN-01"  # Native to California
-        notes: "Many species native to California and important in natural ecosystems"
     
     usually_true:
       - feature_id: "TREE-TRUNK-01"  # Single trunk
-        notes: "Usually grows with one main trunk"
-        exceptions: "May develop multiple trunks if damaged when young"
+        notes: "Typically grows with a single straight trunk"
+        exceptions: "May occasionally fork or have multiple stems if damaged when young"
       
-      - feature_id: "TREE-FORM-01"  # Pyramidal shape
-        notes: "Young trees typically have a pyramidal or conical shape"
-        exceptions: "Shape varies by species; older trees often develop broader, flatter crowns"
+      - feature_id: "TREE-FORM-01"  # Pyramidal
+        notes: "Young trees typically have a pyramid or Christmas tree shape"
+        exceptions: "Older trees often develop flat or rounded tops; some species naturally more irregular"
       
-      - feature_id: "SENSORY-SMELL-01"  # Aromatic
-        notes: "Most pines have aromatic needles and sometimes bark"
-        exceptions: "Strength and type of scent varies considerably by species"
+      - feature_id: "BARK-TEXT-05"  # Puzzle-piece bark
+        notes: "Many pines develop distinctive puzzle-piece pattern bark with age"
+        exceptions: "Young trees have smoother bark; pattern varies by species"
     
     sometimes_true:
-      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
-        conditions: "Species like Lodgepole Pine, Bishop Pine"
-        notes: "Some species have needles that grow in bundles of 2"
-      
-      - feature_id: "NEEDLE-ARRANGE-03"  # Needles in threes
-        conditions: "Species like Ponderosa Pine, Jeffrey Pine, Monterey Pine"
-        notes: "Some species have needles that grow in bundles of 3"
-      
-      - feature_id: "NEEDLE-ARRANGE-04"  # Needles in fives
-        conditions: "Species like Sugar Pine, Western White Pine"
-        notes: "Some species have needles that grow in bundles of 5"
-      
-      - feature_id: "NEEDLE-SIZE-03"  # Long needles
-        conditions: "Species like Ponderosa, Jeffrey, and Coulter Pines"
-        notes: "Some species have long needles (5-10 inches)"
-      
-      - feature_id: "NEEDLE-SIZE-02"  # Medium needles
-        conditions: "Species like Monterey, Bishop, and Torrey Pines"
-        notes: "Some species have medium-length needles (3-5 inches)"
-      
       - feature_id: "NEEDLE-SIZE-01"  # Short needles
-        conditions: "Species like Lodgepole, Whitebark, and some Pinyon pines"
-        notes: "Some species have shorter needles (1-3 inches)"
+        conditions: "Species like Lodgepole Pine"
+        notes: "Some pine species have shorter needles (1-3 inches)"
       
-      - feature_id: "BARK-COLOR-03"  # Red bark
-        conditions: "Species like Ponderosa and Jeffrey Pines"
-        notes: "Some species develop reddish or orange-brown bark"
+      - feature_id: "NEEDLE-SIZE-02"  # Long needles
+        conditions: "Species like Ponderosa, Jeffrey, and Sugar Pine"
+        notes: "Some species have very long needles (5-10+ inches)"
+      
+      - feature_id: "CONE-SIZE-01"  # Small cones
+        conditions: "Species like Lodgepole Pine"
+        notes: "Some species produce smaller cones (1-3 inches)"
       
       - feature_id: "CONE-SIZE-03"  # Large cones
         conditions: "Species like Sugar Pine, Coulter Pine"
-        notes: "Some species have very large cones"
+        notes: "Some species produce very large cones (6-20+ inches)"
+      
+      - feature_id: "SENSORY-SMELL-01"  # Aromatic bark/needles
+        conditions: "Especially Ponderosa and Jeffrey Pine"
+        notes: "Some species have distinctively fragrant bark or needles"
     
     never_true:
       - feature_id: "LEAF-TYPE-01"  # Deciduous
-        notes: "Never drops all needles seasonally"
+        notes: "Never drops all needles at once seasonally"
       
       - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
-        notes: "Never has needles growing individually (not in bundles)"
+        notes: "Needles never grow singly, always in bundles"
       
-      - feature_id: "LEAF-FORM-05"  # Scale-like leaves
-        notes: "Never has scale-like leaves, only true needles"
-      
-      - feature_id: "CONE-POS-01"  # Upright cones
-        notes: "Cones never grow upright on branches"
+      - feature_id: "CONE-ATTACH-01"  # Upright cones
+        notes: "Cones always point downward or outward, never stand upright on branches"
   
-  # Kid-friendly identification
+  # Kid-friendly identification section
   kid_friendly_identification:
-    primary_identifier: "Needles that grow in bundles of 2, 3, or 5 from the same point on the branch"
-    memorable_comparison: "The needles look like bunches of long green straws or spaghetti tied together at the bottom"
-    touch_tip: "Gently feel a bundle of needles - notice how they're all attached at the base in a little papery wrapper"
-    smell_tip: "Crush a needle gently to smell a fresh, piney Christmas tree scent"
-    fun_fact: "Pine trees make two completely different kinds of cones! The small, papery ones that release yellow pollen, and the big woody ones that hold the seeds. Only the woody ones are what most people think of as 'pinecones'!"
+    primary_identifier: "Needles that grow in bundles of 2-5 like little brush bunches"
+    memorable_comparison: "Pine needles grow in little bunches like tiny broom bristles held together at the bottom"
+    touch_tip: "Carefully feel a bundle of needles - notice how they're grouped together like a tiny paintbrush"
+    smell_tip: "Gently crush a few needles and smell - many pines have a clean, fresh scent like pine-scented cleaners"
+    fun_fact: "Some pine trees make cones that stay tightly closed for years, waiting for a forest fire to open them! The heat from the fire melts the sticky resin holding the cone scales shut, and the seeds pop out to grow in the freshly cleared soil. It's like the tree's special fire-proof safe for its seeds!"
     
+    # Detective steps walk children through identification
     detective_steps:
       - step: 1
-        instruction: "First, check if the tree has needles instead of broad leaves or tiny scales"
+        instruction: "First, check the needles - do they grow in bundles of 2-5 needles held together at the base?"
         yes_next: 2
-        no_next: "Not a pine - if it has broad leaves, check deciduous trees; if it has tiny scales, check cedar or cypress"
+        no_next: "If needles grow singly around the twig, check spruce or fir trees"
       - step: 2
-        instruction: "Look at how the needles grow. Do they come in bundles where multiple needles (2, 3, or 5) are attached at the same point?"
+        instruction: "Count how many needles are in each bundle - is it 2, 3, or 5? This helps figure out which pine it is"
         yes_next: 3
-        no_next: "Not a pine - if needles grow singly, check fir, spruce, or hemlock"
+        no_next: "If you can't find clear bundles, check other evergreen trees"
       - step: 3
-        instruction: "Count the needles in a bundle. Are there 2, 3, or 5 needles in each group?"
-        yes_next: 4
-        no_next: "Unusual number - double-check your count or look at a different bundle"
-      - step: 4
-        instruction: "Check the cones if you can see them. Are they woody with overlapping scales (not berry-like or with wing-like parts)?"
-        yes_next: "You found a pine tree! Count the needles to figure out which kind."
-        no_next: "If cones are very different, check other conifer types"
+        instruction: "Look for cones - pine cones have woody overlapping scales like layered armor"
+        yes_next: "You found a pine tree! Count the needles and check the cones to figure out which kind."
+        no_next: "If no cones are visible, it's still likely a pine if the needles are in bundles"
   
-  # Seasonal timeline
+  # Seasonal changes - separate entry for each season
   seasonal_timeline:
     - season: "Spring"
-      visual_changes: "New needle growth appears; male cones release yellow pollen"
-      reproductive_activity: "Male cones shed pollen; female cones begin forming"
-      identification_tips: "Look for bright green new needle growth at branch tips and yellow pollen"
-      kid_friendly_tip: "In spring, pine trees make baby needles and lots of yellow dust (pollen) that can cover cars and puddles"
+      visual_changes: "New growth appears as light green 'candles' at branch tips; small pollen cones release yellow dust"
+      reproductive_activity: "Male cones release pollen; female cones begin developing after pollination"
+      identification_tips: "Look for 'candles' of new growth and yellow pollen release; contrast between new and old needles"
+      kid_friendly_tip: "In spring, look for light green 'candles' growing at the branch tips - they're the new needle bundles growing in!"
     
     - season: "Summer" 
-      visual_changes: "New growth hardens; first-year cones grow larger"
-      reproductive_activity: "Young seed cones continue developing"
-      identification_tips: "New and old needle growth visible; developing green cones may be visible"
-      kid_friendly_tip: "By summer, the new needles have grown bigger and small green pinecones are growing"
+      visual_changes: "New growth matures to match older needles; first-year cones continue growing"
+      reproductive_activity: "Female cones grow larger but remain closed"
+      identification_tips: "Consistent needle color; developing green or purple first-year cones may be visible"
+      kid_friendly_tip: "By summer, the new 'candles' have opened into full needle bundles, and small green baby cones might be growing"
     
     - season: "Fall"
-      visual_changes: "Some older needles yellow and drop; second-year cones mature"
-      reproductive_activity: "Mature cones open to release seeds with wings"
-      identification_tips: "Look for open or opening mature cones and some needle drop"
-      kid_friendly_tip: "In fall, the older needles turn yellow and drop, while the pinecones open up to let their seeds fly away"
+      visual_changes: "Older interior needles may yellow and drop; otherwise minimal color change"
+      reproductive_activity: "Second-year cones nearing maturity, changing from green to brown"
+      identification_tips: "Some needle drop from interior branches is normal; look for cones at different stages"
+      kid_friendly_tip: "In fall, some of the inner, older needles might turn yellow and drop, but the tree stays mostly green"
     
     - season: "Winter"
-      visual_changes: "Tree remains green; some empty cones may persist"
-      reproductive_activity: "Dormant; no reproductive activity"
-      identification_tips: "Distinctive silhouette and needle bundles visible year-round"
-      kid_friendly_tip: "Even in winter, pines stay green and you can still identify them by their needle bundles"
+      visual_changes: "Remains green; mature cones may open and release seeds or stay on branches"
+      reproductive_activity: "Mature cones may release seeds during dry periods"
+      identification_tips: "Evergreen nature makes identification easier when deciduous trees are bare"
+      kid_friendly_tip: "Pines stay green all winter, and their cones often stay on the branches where you can see them easily"
       
-  # Additional required sections
+  # Additional required sections 
   confirmation_checklist:
-    - feature: "Needles in bundles of 2, 3, or 5"
+    - feature: "Needles in bundles of 2-5"
       reliability: "Very high"
       visibility: "Medium - need to look closely at needles"
     - feature: "Woody cones with overlapping scales"
-      reliability: "Very high"
-      visibility: "Medium - may need to search for cones"
-    - feature: "Evergreen nature"
       reliability: "High"
-      visibility: "Easy - visible year-round"
-    - feature: "Distinctive bark patterns (varies by species)"
+      visibility: "Medium - need to find cones, which may be high in the tree or on ground"
+    - feature: "Flaking, often puzzle-piece bark pattern on larger trees"
+      reliability: "Medium to high"
+      visibility: "Easy to observe on trunk"
+    - feature: "Branching in distinct whorls around trunk"
       reliability: "Medium"
-      visibility: "Easy - visible on trunk"
+      visibility: "Best observed from a distance"
     
   look_alikes:
-    - name: "Fir trees (Abies species)"
-      type: "genus"
-      differences: "Firs have single needles that grow directly from the twig, not in bundles; cones grow upright and break apart on the tree"
-      identification_tip: "If needles grow singly (not in bundles) and the cones stand upright, it's a fir not a pine"
+    - species: "Fir (Abies species)"
+      differences: "Fir needles grow singly, not in bundles; fir cones stand upright and disintegrate on tree; bark typically smoother"
+      identification_tip: "If needles grow singly (not in bundles) and cones stand upright on branches, it's a fir, not a pine"
     
-    - name: "Spruce trees (Picea species)"
-      type: "genus"
-      differences: "Spruces have single, sharp needles that grow on small peg-like projections all around the twig; hanging cones"
-      identification_tip: "Spruce needles are short, sharp, and grow singly all around the twig, not in bundles like pines"
+    - species: "Spruce (Picea species)"
+      differences: "Spruce needles grow singly around the twig; are stiffer, sharper, and four-sided; cones hang down but have thinner scales"
+      identification_tip: "If needles grow singly, are sharp and prickly when touched, and leave peg-like projections when removed from the twig, it's a spruce"
     
-    - name: "Douglas-fir (Pseudotsuga menziesii)"
-      type: "species"
-      differences: "Douglas-fir has single needles, not in bundles; distinctive cones with three-pointed bracts"
-      identification_tip: "If the cones have little 'mouse tails' sticking out between the scales, it's a Douglas-fir, not a pine"
+    - species: "True Cedar (Cedrus species)"
+      differences: "Cedar needles grow in dense clusters on short shoots along the branch; cones stand upright; different overall appearance"
+      identification_tip: "If needles grow in small rosette-like clusters along the branches, it's a cedar, not a pine"
     
   cultural_significance:
-    - culture: "Native California Tribes"
+    # Organized by culture
+    - culture: "Native Sierra Tribes"
       physical_uses:
-        - "Collected pine nuts as an important food source, especially from Pinyon Pines"
-        - "Used the sticky sap as glue, waterproofing, and medicine for cuts and sores"
-        - "Made tea from needles that's rich in vitamin C"
-        - "Used the wood for building shelters, tools, and dugout canoes"
+        - "Harvested nutritious pine nuts, especially from Sugar Pine and Pinyon Pine"
+        - "Created pitch for waterproofing baskets and canoes"
+        - "Used needles to make healing teas for colds and breathing problems"
+        - "Built shelters and made tools from the straight-grained wood"
       symbolic_meaning:
-        - "Many tribes saw pine trees as symbols of strength and longevity"
-        - "Pine nuts represented abundance and sustenance in many cultures"
-        - "Featured in creation stories and traditional knowledge about seasons"
+        - "Considered provider trees because of their food and medicine"
+        - "Used pine branches in winter ceremonies for purification"
+        - "Included in stories teaching survival skills to children"
+        - "Marked seasonal cycles through pine nut harvesting time"
     
-    - culture: "California Settlers"
+    - culture: "Early Settlers"
       physical_uses:
-        - "Harvested pine trees for lumber to build homes, mines, and railroads"
-        - "Used pine resin for making turpentine, pitch, and other products"
-        - "Planted certain species like Monterey Pine for windbreaks and decoration"
-        - "Used pine boughs for holiday decorations"
+        - "Harvested for building construction, furniture, and railroad ties"
+        - "Used pitch for starting fires and making turpentine"
+        - "Created medicines from the sap and inner bark"
+        - "Consumed pine nuts as an important trail food"
       symbolic_meaning:
-        - "Represented the abundant natural resources of California's forests"
-        - "Became symbols of the western landscape in art and literature"
-        - "Christmas trees and holiday traditions centered around certain pine species"
+        - "Associated with frontier expansion and resource abundance"
+        - "Symbolized strength and resilience in harsh environments"
+        - "Featured in early California promotional materials"
     
-    - culture: "Modern Forestry"
+    - culture: "Modern California"
       physical_uses:
-        - "Grown commercially for timber, paper products, and biomass"
-        - "Used in reforestation and forest restoration projects"
-        - "Studied as indicators of climate change and forest health"
-        - "Planted for erosion control and watershed protection"
+        - "Harvested sustainably for lumber and paper products"
+        - "Cultivated for Christmas trees and landscape specimens"
+        - "Studied for adaptations to drought and fire"
+        - "Protected in parks and reserves for recreation"
       symbolic_meaning:
-        - "Represent sustainable forestry practices and forest management"
-        - "Symbolize the importance of forest conservation and biodiversity"
-        - "Used in education about forest ecosystems and natural cycles"
+        - "Represents California's forest heritage and mountain landscapes"
+        - "Symbolizes wilderness, outdoor recreation, and conservation"
+        - "Featured in forest ecology education and habitat restoration"
     
   cultural_ecological_notes:
-    - "Different pine species occupy different ecological niches across California"
-    - "Many pine species are adapted to fire and need it for reproduction"
-    - "Pine seeds are important food sources for wildlife including birds, squirrels, and bears"
-    - "Some species like Ponderosa Pine have thick bark that helps protect them from fire"
-    - "Pine forests create distinct habitats that support diverse plant and animal communities"
-    - "Pine needles create acidic soil conditions that favor certain understory plants"
+    - "Pine forests are adapted to regular fire cycles, with many species requiring fire for reproduction"
+    - "Provides crucial habitat for many wildlife species from squirrels to spotted owls"
+    - "Many birds depend on pine seeds, including Clark's nutcrackers that help disperse seeds"
+    - "Pine forests help protect watersheds and prevent erosion in mountain environments"
+    - "Some species like Ponderosa contain chemicals that make them more resistant to beetle attacks"
     
   range_within_california:
-    - "Found throughout California in diverse habitats from coast to mountains"
-    - "Lower elevation species include Gray Pine, Monterey Pine, and Bishop Pine"
-    - "Mid-elevation species include Ponderosa Pine, Jeffrey Pine, and Sugar Pine"
-    - "High elevation species include Lodgepole Pine, Western White Pine, and Whitebark Pine"
-    - "Some species like Torrey Pine have very limited natural ranges but are widely planted"
-    - "Different species adapted to different climate and soil conditions"
+    - "Different pine species occupy different elevation zones and habitats"
+    - "Ponderosa and Jeffrey Pines dominate middle-elevation forests across mountains"
+    - "Lodgepole Pine forms dense stands at higher elevations, especially in Sierra Nevada"
+    - "Sugar Pine occurs throughout the Sierra Nevada and Klamath mountains"
+    - "Monterey Pine native only to three small coastal areas but widely planted elsewhere"
+    - "Bishop and Torrey Pines have very limited natural ranges along coast"
     
   # Physical characteristics
   physical_characteristics:
-    height_range: "30-200+ feet depending on species (Sugar Pine can exceed 200 feet)"
-    growth_rate: "Slow to moderate, depending on species and conditions"
-    crown_spread: "20-60 feet wide at maturity, varying by species"
-    lifespan: "100-1000+ years, with Sugar Pine and other species living for centuries"
-    trunk_diameter: "1-8 feet at maturity, depending on species"
-    root_system: "Varies by species; many have deep taproots with spreading lateral roots"
-    toxicity: "Not toxic, though resin may cause skin irritation in sensitive individuals"
+    height_range: "40-200+ feet depending on species (Sugar Pine tallest, Lodgepole typically shorter)"
+    growth_rate: "Moderate; typically 1-2 feet per year when young"
+    crown_spread: "20-60 feet at maturity"
+    lifespan: "200-500+ years depending on species"
+    trunk_diameter: "2-8 feet at maturity depending on species"
+    root_system: "Typically deep taproot with spreading lateral roots"
+    toxicity: "Not toxic to humans; needles and inner bark edible but resinous"
   
   conservation_status:
-    status: "Varies by species; some common, others rare or threatened"
+    status: "Varies by species; most common species secure, some rare species threatened"
     threats: 
-      - "Climate change affecting suitable habitat and increasing drought stress"
-      - "Bark beetle outbreaks killing millions of trees during droughts"
-      - "High-severity wildfires that kill even fire-adapted species"
-      - "White pine blister rust affecting five-needle pines"
-      - "Development and habitat loss in some areas"
+      - "Climate change affecting suitable habitat range"
+      - "Bark beetle outbreaks killing millions of trees"
+      - "High-severity wildfire in forests with accumulated fuels"
+      - "Habitat loss from development in some areas"
     protection_efforts:
-      - "Protected in national parks, wilderness areas, and reserves"
-      - "Forest management to reduce overcrowding and fire risk"
-      - "Breeding programs for disease resistance in some species"
-      - "Research into climate adaptation strategies"
+      - "Fire management to reduce catastrophic wildfires"
+      - "Forest thinning to improve resilience to beetles and fire"
+      - "Protection of rare species in preserves and parks"
+      - "Research on drought and beetle resistance"
       
   decision_tree_placement:
     primary_split_features:
+      - "feature_id: NEEDLE-ARRANGE-03"  # Needles in bundles
       - "feature_id: LEAF-TYPE-02"  # Evergreen
-      - "feature_id: NEEDLE-ARRANGE-05"  # Needles in bundles
+      - "feature_id: CONE-TYPE-01"  # Woody cones
     confirmation_features:
-      - "feature_id: CONE-SHAPE-03"  # Woody cones
+      - "feature_id: BARK-TEXT-05"  # Puzzle-piece bark
+      - "feature_id: TREE-FORM-01"  # Pyramidal (young trees)
     observation_sequence:
       - distance: "from_far_away"
-        features_to_check: ["TREE-FORM-01", "LEAF-TYPE-02"]  # Pyramidal shape, evergreen
+        features_to_check: ["TREE-FORM-01", "LEAF-TYPE-02"]  # Pyramidal form, evergreen
       - distance: "from_nearby"
-        features_to_check: ["NEEDLE-ARRANGE-05", "BARK-TEXT-04"]  # Needles in bundles, plated bark
+        features_to_check: ["BARK-TEXT-05", "CONE-TYPE-01"]  # Puzzle-piece bark, woody cones
       - distance: "close_inspection"
-        features_to_check: ["NEEDLE-ARRANGE-02", "NEEDLE-ARRANGE-03", "NEEDLE-ARRANGE-04"]  # Specific needle bundle counts
+        features_to_check: ["NEEDLE-ARRANGE-03", "NEEDLE-SIZE-01"]  # Needle bundles, size
     seasonal_identification:
       spring:
         reliability: "High"
-        key_features: ["NEEDLE-ARRANGE-05", "SENSORY-SMELL-01"]
-        notes: "New growth and pollen cones provide additional clues"
+        key_features: ["NEEDLE-ARRANGE-03", "LEAF-TYPE-02"]
+        notes: "Spring 'candles' of new growth and pollen cones distinctive"
       summer:
-        reliability: "Very high" 
-        key_features: ["NEEDLE-ARRANGE-05", "CONE-SHAPE-03"]
-        notes: "Developing cones visible; all foliage fully developed"
+        reliability: "Very high"
+        key_features: ["NEEDLE-ARRANGE-03", "CONE-TYPE-01"]
+        notes: "Full needle development and visible cones make summer identification easy"
       fall:
-        reliability: "High"
-        key_features: ["NEEDLE-ARRANGE-05", "CONE-SHAPE-03"]
-        notes: "Mature cones may be open; some needle drop but remains mostly green"
+        reliability: "High" 
+        key_features: ["NEEDLE-ARRANGE-03", "CONE-TYPE-01"]
+        notes: "Some interior needle drop normal but still evergreen; cones often visible"
       winter:
         reliability: "High"
-        key_features: ["NEEDLE-ARRANGE-05", "LEAF-TYPE-02"]
-        notes: "Remains green; needle bundles visible year-round"
-    misidentification_risks: 
-      - "Species within the pine genus can be confused with each other - count needles carefully"
-      - "Young trees before developing distinctive features may be harder to identify"
-      - "Hybrid zones exist between some pine species, showing mixed characteristics"
-  
+        key_features: ["LEAF-TYPE-02", "NEEDLE-ARRANGE-03"]
+        notes: "Evergreen nature with bundled needles distinctive in winter"
+
   wildlife_value:
-    - "Seeds are crucial food sources for many birds, squirrels, chipmunks, and small mammals"
-    - "Large pines provide important nesting sites for birds of prey and many songbirds"
-    - "Bark provides shelter for many insects, which in turn feed woodpeckers and other birds"
-    - "Dense foliage provides cover and thermal protection for wildlife"
-    - "Fallen needles create forest floor habitat for small creatures and contribute to soil development"
-    - "Pine species in different habitats support distinct wildlife communities adapted to those environments"
+    - "Seeds (pine nuts) are crucial food for many birds and mammals"
+    - "Clark's Nutcrackers have co-evolved with some pine species to disperse seeds"
+    - "Large pines provide important nesting sites for birds of prey and cavity-nesters"
+    - "Bark provides habitat for many insects, which become food for woodpeckers"
+    - "Dense pine forests create sheltered habitat for deer and other mammals"
+    - "Fallen needles create acidic soil conditions that support specific plant communities"

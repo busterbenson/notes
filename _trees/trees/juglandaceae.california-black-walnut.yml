@@ -1,6 +1,8 @@
 tree:
   common_name: "California Black Walnut"
   scientific_name: "Juglans californica"
+  scientific_genus: "Juglans"
+  common_genus: "Walnut"
   family: "Juglandaceae"
   
   # Basic summary
@@ -151,7 +153,7 @@ tree:
       reliability: "Medium"
       visibility: "Easy - visible from overall shape"
     
-  look_alike_species:
+  look_alikes:
     - species: "English Walnut (Juglans regia)"
       differences: "English Walnut has larger nuts with thinner shells, smoother and lighter colored bark, and is typically larger"
       identification_tip: "California Black Walnut has smaller nuts and darker, more deeply furrowed bark"

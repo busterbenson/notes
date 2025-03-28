@@ -1,6 +1,8 @@
 tree:
   common_name: "Fremont Cottonwood"
   scientific_name: "Populus fremontii"
+  scientific_genus: "Populus"
+  common_genus: "Cottonwood"
   family: "Salicaceae"
   
   # Basic summary
@@ -157,7 +159,7 @@ tree:
       reliability: "Very high (when present)"
       visibility: "High - very noticeable when released"
     
-  look_alike_species:
+  look_alikes:
     - species: "Quaking Aspen (Populus tremuloides)"
       differences: "Quaking Aspen has more rounded leaves (not triangular); usually grows at higher elevations in mountains; has whiter bark that doesn't get as deeply furrowed; typically smaller in overall size"
       identification_tip: "If the leaves are more rounded than triangular and the tree is growing in mountains rather than valleys, it's likely Quaking Aspen"

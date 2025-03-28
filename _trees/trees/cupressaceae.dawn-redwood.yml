@@ -1,6 +1,8 @@
 tree:
   common_name: "Dawn Redwood"
   scientific_name: "Metasequoia glyptostroboides"
+  scientific_genus: "Metasequoia"
+  common_genus: "Dawn Redwood"
   family: "Cupressaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -146,7 +148,7 @@ tree:
       reliability: "High"
       visibility: "Need to check base of mature trees"
     
-  look_alike_species:
+  look_alikes:
     - species: "Bald Cypress (Taxodium distichum)"
       differences: "Bald Cypress has alternate (not opposite) needles and branches; often grows \"knees\" from roots in wet areas"
       identification_tip: "Dawn Redwood branches grow in pairs directly across from each other; Bald Cypress branches alternate along the stem"

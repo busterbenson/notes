@@ -1,6 +1,8 @@
 tree:
   common_name: "Clammy Locust"
   scientific_name: "Robinia viscosa"
+  scientific_genus: "Robinia"
+  common_genus: "Locust"
   family: "Fabaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -152,7 +154,7 @@ tree:
       reliability: "High"
       visibility: "Need to look closely"
     
-  look_alike_species:
+  look_alikes:
     - species: "Black Locust (Robinia pseudoacacia)"
       differences: "Black Locust has white flowers, larger thorns, and is not sticky; grows much larger"
       identification_tip: "Clammy Locust has pink flowers and sticky twigs; Black Locust has white flowers and non-sticky twigs"

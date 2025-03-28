@@ -1,6 +1,8 @@
 tree:
   common_name: "Ponderosa Pine"
   scientific_name: "Pinus ponderosa"
+  scientific_genus: "Pinus"
+  common_genus: "Pine"
   family: "Pinaceae"
   
   # Basic summary
@@ -161,7 +163,7 @@ tree:
       reliability: "Medium"
       visibility: "Requires getting close and sniffing"
     
-  look_alike_species:
+  look_alikes:
     - species: "Jeffrey Pine (Pinus jeffreyi)"
       differences: "Jeffrey Pine has gentler, non-prickly cone scales that don't hurt when touched, and bark that consistently smells like vanilla or butterscotch"
       identification_tip: "The 'prickle test' - Ponderosa Pine cones have sharp prickles that hurt your fingers, and the bark smell is more variable"

@@ -1,6 +1,8 @@
 tree:
   common_name: "Bigtooth Aspen"
   scientific_name: "Populus grandidentata"
+  scientific_genus: "Populus"
+  common_genus: "Aspen"
   family: "Salicaceae"
   
   # Basic summary information
@@ -151,7 +153,7 @@ tree:
       reliability: "Very high"
       visibility: "Very easy to spot from far away in fall"
     
-  look_alike_species:
+  look_alikes:
     - species: "Quaking Aspen (Populus tremuloides)"
       differences: "Quaking Aspen has smaller, more rounded leaves with much finer teeth; slightly smaller overall size"
       identification_tip: "Look for the much larger, irregular teeth on Bigtooth Aspen leaves - they're its namesake feature"

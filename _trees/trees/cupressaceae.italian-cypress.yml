@@ -1,6 +1,8 @@
 tree:
   common_name: "Italian Cypress"
   scientific_name: "Cupressus sempervirens"
+  scientific_genus: "Cupressus"
+  common_genus: "Cypress"
   family: "Cupressaceae"
   
   # Basic summary information
@@ -176,7 +178,7 @@ tree:
       reliability: "Medium"
       visibility: "Only visible on mature trees"
     
-  look_alike_species:
+  look_alikes:
     - species: "Arizona Cypress (Cupressus arizonica)"
       differences: "Arizona Cypress is more blue-gray and usually wider/less columnar; often has whitish resin dots on its cones"
       identification_tip: "If it's more blue-gray and not perfectly columnar, it's likely Arizona Cypress"

@@ -1,6 +1,8 @@
 tree:
   common_name: "Chinese-fir"
   scientific_name: "Cunninghamia lanceolata"
+  scientific_genus: "Cunninghamia"
+  common_genus: "China-fir"
   family: "Cupressaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -146,7 +148,7 @@ tree:
       reliability: "Medium"
       visibility: "More noticeable on mature trees"
     
-  look_alike_species:
+  look_alikes:
     - species: "Japanese Cedar (Cryptomeria japonica)"
       differences: "Japanese Cedar has spiral needles that curve inward toward the shoot; Chinese-fir needles stick out more and are flatter"
       identification_tip: "Chinese-fir needles are flatter and stiffer; Japanese Cedar needles curve inward more"

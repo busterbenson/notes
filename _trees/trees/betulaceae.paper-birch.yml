@@ -1,6 +1,8 @@
 tree:
   common_name: "Paper Birch"
   scientific_name: "Betula papyrifera"
+  scientific_genus: "Betula"
+  common_genus: "Birch"
   family: "Betulaceae"
   
   # Basic summary information
@@ -142,7 +144,7 @@ tree:
       reliability: "High (spring only)"
       visibility: "Visible from nearby in spring"
     
-  look_alike_species:
+  look_alikes:
     - species: "European White Birch (Betula pendula)"
       differences: "European White Birch has less peeling bark and more weeping form; often has black diamond-shaped marks on trunk; twigs are more pendulous (drooping)"
       identification_tip: "If the tree has very droopy branches and the white bark doesn't peel off in papers, it's probably European White Birch"

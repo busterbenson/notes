@@ -154,7 +154,7 @@ tree:
       reliability: "High"
       visibility: "Low - requires close examination"
 
-  look_alike_species:
+  look_alikes:
     - species: "Norway Spruce (Picea abies)"
       differences: "Has a broader pyramidal shape, longer cones (4-6 inches), and lacks the distinct silver underside of needles"
       identification_tip: "Norway Spruce has dramatically drooping main branches and a much wider shape than the rocket-like Serbian Spruce"

@@ -1,6 +1,8 @@
 tree:
   common_name: "New Mexico Locust"
   scientific_name: "Robinia neomexicana"
+  scientific_genus: "Robinia"
+  common_genus: "Locust"
   family: "Fabaceae"
   
   # Basic summary information
@@ -168,7 +170,7 @@ tree:
       reliability: "High"
       visibility: "Easy - visible summer through fall"
     
-  look_alike_species:
+  look_alikes:
     - species: "Black Locust (Robinia pseudoacacia)"
       differences: "Black Locust has white flowers (not pink), grows much taller, and usually has a single trunk"
       identification_tip: "If the flowers are white instead of pink-purple, it's Black Locust"

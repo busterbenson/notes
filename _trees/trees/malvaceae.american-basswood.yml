@@ -1,6 +1,8 @@
 tree:
   common_name: "American Basswood"
   scientific_name: "Tilia americana"
+  scientific_genus: "Tilia"
+  common_genus: "Basswood"
   family: "Malvaceae"
   
   # Basic summary information
@@ -171,7 +173,7 @@ tree:
       reliability: "Medium"
       visibility: "Visible in winter upon close inspection"
     
-  look_alike_species:
+  look_alikes:
     - species: "European Linden/Littleleaf Linden (Tilia cordata)"
       differences: "European Linden has smaller leaves (2-3 inches) compared to American Basswood (4-8 inches); European species has a more compact form with denser branching"
       identification_tip: "Check leaf size - American Basswood leaves are noticeably larger"

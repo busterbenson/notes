@@ -1,6 +1,8 @@
 tree:
   common_name: "Deodar Cedar"
   scientific_name: "Cedrus deodara"
+  scientific_genus: "Cedrus"
+  common_genus: "True Cedar"
   family: "Pinaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -146,7 +148,7 @@ tree:
       reliability: "Very high"
       visibility: "Need to look closely to spot"
     
-  look_alike_species:
+  look_alikes:
     - species: "Atlas Cedar (Cedrus atlantica)"
       differences: "Atlas Cedar has stiffer, more upright branches; Deodar Cedar has distinctly drooping branch tips"
       identification_tip: "If the branch tips droop like they're tired, it's likely Deodar Cedar; if they're more upright, it's Atlas Cedar"

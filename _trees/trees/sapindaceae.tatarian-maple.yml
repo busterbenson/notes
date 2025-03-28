@@ -1,6 +1,8 @@
 tree:
   common_name: "Tatarian Maple"
   scientific_name: "Acer tataricum"
+  scientific_genus: "Acer"
+  common_genus: "Maple"
   family: "Sapindaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -136,7 +138,7 @@ tree:
       reliability: "High"
       visibility: "Medium - check branch closely"
     
-  look_alike_species:
+  look_alikes:
     - species: "Amur Maple (Acer ginnala)"
       differences: "Amur Maple has more deeply three-lobed leaves; leaves have a stronger fragrance when crushed; typically smaller overall"
       identification_tip: "Compare leaf shapes - Amur Maple leaves have deeper divisions than Tatarian Maple"

@@ -1,6 +1,8 @@
 tree:
   common_name: "Waterlocust"
   scientific_name: "Gleditsia aquatica"
+  scientific_genus: "Gleditsia"
+  common_genus: "Locust"
   family: "Fabaceae"
   
   # Basic summary information
@@ -160,7 +162,7 @@ tree:
       reliability: "Medium"
       visibility: "Easy - visible year-round on mature trees"
     
-  look_alike_species:
+  look_alikes:
     - species: "Honeylocust (Gleditsia triacanthos)"
       differences: "Honeylocust has larger, often branched thorns and longer, twisted seed pods (10-18 inches); more drought-tolerant and less restricted to wet areas"
       identification_tip: "Waterlocust has shorter seed pods (1-2 inches) and thrives in wet conditions; Honeylocust has longer pods and can grow in drier sites"

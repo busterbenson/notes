@@ -1,6 +1,8 @@
 tree:
   common_name: "Black Spruce"
   scientific_name: "Picea mariana"
+  scientific_genus: "Picea"
+  common_genus: "Spruce"
   family: "Pinaceae"
   
   # Basic summary
@@ -160,7 +162,7 @@ tree:
       reliability: "Medium"
       visibility: "High - based on surrounding environment"
     
-  look_alike_species:
+  look_alikes:
     - species: "White Spruce (Picea glauca)"
       differences: "White Spruce has longer needles (up to 1 inch); larger cones (1-2.5 inches) that fall after seeds are released; often grows in drier sites"
       identification_tip: "If the tree has larger cones and longer needles, and doesn't keep old cones on the branches for years, it's likely White Spruce"

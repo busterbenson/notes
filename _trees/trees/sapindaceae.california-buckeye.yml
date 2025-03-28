@@ -1,6 +1,8 @@
 tree:
   common_name: "California Buckeye"
   scientific_name: "Aesculus californica"
+  scientific_genus: "Aesculus"
+  common_genus: "Buckeye"
   family: "Sapindaceae"
   
   # Basic summary information
@@ -167,7 +169,7 @@ tree:
       reliability: "Very high (when present)"
       visibility: "Easy - distinctive when pods split open"
     
-  look_alike_species:
+  look_alikes:
     - species: "Ohio Buckeye (Aesculus glabra)"
       differences: "Not native to California; has yellower flowers and more pointed leaflets"
       identification_tip: "California Buckeye has whiter flowers and grows wild only in California"

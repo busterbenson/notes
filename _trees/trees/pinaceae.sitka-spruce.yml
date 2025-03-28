@@ -1,6 +1,8 @@
 tree:
   common_name: "Sitka Spruce"
   scientific_name: "Picea sitchensis"
+  scientific_genus: "Picea"
+  common_genus: "Spruce"
   family: "Pinaceae"
   
   # Basic summary information
@@ -137,7 +139,7 @@ tree:
       reliability: "Medium"
       visibility: "Visible on mature trees"
     
-  look_alike_species:
+  look_alikes:
     - species: "Douglas-fir (Pseudotsuga menziesii)"
       differences: "Douglas-fir has softer, flat needles (not square); distinctive 3-pronged bracts in cones; deeper furrowed bark"
       identification_tip: "If needles are soft and flat (not sharp and square), it's likely Douglas-fir"

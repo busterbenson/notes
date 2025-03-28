@@ -1,6 +1,8 @@
 tree:
   common_name: "Western Juniper"
   scientific_name: "Juniperus occidentalis"
+  scientific_genus: "Juniperus"
+  common_genus: "Juniper"
   family: "Cupressaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -182,7 +184,7 @@ tree:
       reliability: "Very high"
       visibility: "Seasonal - fall through winter"
     
-  look_alike_species:
+  look_alikes:
     - species: "California Juniper (Juniperus californica)"
       differences: "California Juniper has smaller berry-like cones, usually grows at lower elevations, and often has multiple trunks from the base"
       identification_tip: "Western Juniper usually has a single trunk and grows at higher elevations in the mountains"

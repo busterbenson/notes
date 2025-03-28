@@ -1,6 +1,8 @@
 tree:
   common_name: "Southern Magnolia"
   scientific_name: "Magnolia grandiflora"
+  scientific_genus: "Magnolia"
+  common_genus: "Magnolia"
   family: "Magnoliaceae"
   
   # Basic summary information
@@ -170,7 +172,7 @@ tree:
       reliability: "Medium"
       visibility: "Need to look at trunk"
     
-  look_alike_species:
+  look_alikes:
     - species: "Little Gem Magnolia (Magnolia grandiflora 'Little Gem')"
       differences: "Same species but much smaller in all aspects; grows as a large shrub or small tree"
       identification_tip: "If it's less than 20 feet tall with all the same features, it might be this dwarf variety"

@@ -1,6 +1,8 @@
 tree:
   common_name: "White Poplar"
   scientific_name: "Populus alba"
+  scientific_genus: "Populus"
+  common_genus: "Poplar"
   family: "Salicaceae"
   
   # Basic summary
@@ -148,7 +150,7 @@ tree:
       reliability: "Medium"
       visibility: "Visible year-round on mature trees"
     
-  look_alike_species:
+  look_alikes:
     - species: "Silver Maple (Acer saccharinum)"
       differences: "Silver Maple has more deeply cut leaves with silver (not white) undersides and brown bark (not white); produces winged seeds, not catkins"
       identification_tip: "Check bark color (brown vs. white) and leaf underside texture (silvery but not felt-like in Silver Maple)"

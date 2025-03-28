@@ -1,6 +1,8 @@
 tree:
   common_name: "Blue Oak"
   scientific_name: "Quercus douglasii"
+  scientific_genus: "Quercus"
+  common_genus: "White Oak"
   family: "Fagaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -119,7 +121,7 @@ tree:
       reliability: "Medium"
       visibility: "Visible on trunk year-round"
     
-  look_alike_species:
+  look_alikes:
     - species: "Valley Oak (Quercus lobata)"
       differences: "Valley Oak has larger leaves with more deeply cut lobes and a greener color; often grows much larger"
       identification_tip: "If the leaves are very large and deeply cut like fingers, it's more likely a Valley Oak"

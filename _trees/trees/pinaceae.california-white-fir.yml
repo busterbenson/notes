@@ -1,6 +1,8 @@
 tree:
   common_name: "California White Fir"
   scientific_name: "Abies concolor"
+  scientific_genus: "Abies"
+  common_genus: "Fir"
   family: "Pinaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -119,7 +121,7 @@ tree:
       reliability: "Medium"
       visibility: "Requires interaction"
     
-  look_alike_species:
+  look_alikes:
     - species: "Douglas-fir (Pseudotsuga menziesii)"
       differences: "Douglas-fir has hanging cones with three-pointed bracts that look like mouse tails; White Fir has upright cones"
       identification_tip: "If the cones hang down instead of standing up, and have little 'mouse tails' sticking out, it's a Douglas-fir"

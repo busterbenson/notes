@@ -1,6 +1,8 @@
 tree:
   common_name: "Silver Dollar Gum"
   scientific_name: "Eucalyptus polyanthemos"
+  scientific_genus: "Eucalyptus"
+  common_genus: "Eucalyptus"
   family: "Myrtaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -157,7 +159,7 @@ tree:
       reliability: "Medium"
       visibility: "Visible from a distance"
     
-  look_alike_species:
+  look_alikes:
     - species: "Blue Gum Eucalyptus (Eucalyptus globulus)"
       differences: "Blue Gum grows much taller (over 150 feet), has juvenile leaves that are blue but adult leaves that become long and sickle-shaped, and has much larger seed capsules"
       identification_tip: "If the tree is very tall and has long, sickle-shaped adult leaves, it's likely Blue Gum"

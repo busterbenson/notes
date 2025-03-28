@@ -133,7 +133,7 @@ tree:
       reliability: "Medium"
       visibility: "High - but seasonal"
 
-  look_alike_species:
+  look_alikes:
     - species: "Mountain Maple (Acer spicatum)"
       differences: "Similar size and habitat but lacks the distinctive striped bark; has more upright flower clusters instead of pendulous ones"
       identification_tip: "If the bark is not green with white stripes, but leaf shape and size are similar, it might be Mountain Maple"

@@ -1,6 +1,8 @@
 tree:
   common_name: "Yellow Birch"
   scientific_name: "Betula alleghaniensis"
+  scientific_genus: "Betula"
+  common_genus: "Birch"
   family: "Betulaceae"
   
   # Basic summary
@@ -151,7 +153,7 @@ tree:
       reliability: "Medium"
       visibility: "Only visible in fall"
     
-  look_alike_species:
+  look_alikes:
     - species: "Sweet Birch (Betula lenta)"
       differences: "Sweet Birch has darker, reddish-brown to almost black bark that doesn't peel as much, though it also has wintergreen scent"
       identification_tip: "Yellow Birch has more yellow-colored, more extensively peeling bark"

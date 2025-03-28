@@ -1,6 +1,8 @@
 tree:
   common_name: "Heartleaf Birch"
   scientific_name: "Betula cordifolia"
+  scientific_genus: "Betula"
+  common_genus: "Birch"
   family: "Betulaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -165,7 +167,7 @@ tree:
       reliability: "Medium (seasonal)"
       visibility: "Visible from a distance in fall"
     
-  look_alike_species:
+  look_alikes:
     - species: "Paper Birch (Betula papyrifera)"
       differences: "Paper Birch has more oval to triangular leaf bases; Heartleaf Birch has distinctly heart-shaped leaf bases"
       identification_tip: "Check the leaf base shape - if it has a definite heart shape, it's likely Heartleaf Birch"

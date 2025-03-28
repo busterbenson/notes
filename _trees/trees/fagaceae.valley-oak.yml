@@ -1,6 +1,8 @@
 tree:
   common_name: "Valley Oak"
   scientific_name: "Quercus lobata"
+  scientific_genus: "Quercus"
+  common_genus: "White Oak"
   family: "Fagaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -123,7 +125,7 @@ tree:
       reliability: "High (when present)"
       visibility: "Good in fall when acorns mature"
     
-  look_alike_species:
+  look_alikes:
     - species: "Blue Oak (Quercus douglasii)"
       differences: "Blue Oak has blue-gray leaves that are smaller and less deeply lobed; generally smaller tree"
       identification_tip: "Valley Oak leaves are larger, greener, and more deeply cut than Blue Oak leaves"

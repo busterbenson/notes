@@ -163,7 +163,7 @@ tree:
       reliability: "Medium"
       visibility: "High - overall form visible from distance"
 
-  look_alike_species:
+  look_alikes:
     - species: "Hedge Maple (Acer campestre)"
       differences: "Has five rounded lobes (not three pointed lobes) and does not develop the same exfoliating bark pattern"
       identification_tip: "Count the leaf lobes - Hedge Maple has five shallow rounded lobes, while Trident Maple has just three pointed lobes"

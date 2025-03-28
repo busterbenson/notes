@@ -1,6 +1,8 @@
 tree:
   common_name: "Brewer Spruce"
   scientific_name: "Picea breweriana"
+  scientific_genus: "Picea"
+  common_genus: "Spruce"
   family: "Pinaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -129,7 +131,7 @@ tree:
       reliability: "High"
       visibility: "Determined by location"
     
-  look_alike_species:
+  look_alikes:
     - species: "Engelmann Spruce (Picea engelmannii)"
       differences: "Engelmann Spruce lacks the distinctive drooping branches; has bluish needles; grows at higher elevations"
       identification_tip: "If branches stick out rather than hang down like curtains, it's likely an Engelmann Spruce"

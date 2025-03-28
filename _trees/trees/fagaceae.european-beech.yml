@@ -1,6 +1,8 @@
 tree:
   common_name: "European Beech"
   scientific_name: "Fagus sylvatica"
+  scientific_genus: "Fagus"
+  common_genus: "Beech"
   family: "Fagaceae"
   
   # Basic summary information
@@ -167,7 +169,7 @@ tree:
       reliability: "Very high"
       visibility: "Very obvious in purple-leaved varieties"
     
-  look_alike_species:
+  look_alikes:
     - species: "American Beech (Fagus grandifolia)"
       differences: "American Beech has slightly larger leaves with more pronounced teeth and less wavy edges; both have similar smooth gray bark"
       identification_tip: "European Beech leaves have more wavy edges between the teeth; if the leaves are purple or copper-colored, it's definitely European Beech"

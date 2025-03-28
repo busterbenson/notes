@@ -140,7 +140,7 @@ tree:
       reliability: "Medium"
       visibility: "Easy to see on trunk"
 
-  look_alike_species:
+  look_alikes:
     - species: "White Fir (Abies concolor)"
       differences: "White Fir has longer, more curved needles that are bluish-green to silvery on both sides, without the distinct white stripes underneath"
       identification_tip: "Turn over a needle - White Fir doesn't have the two clear silvery-white stripes underneath"

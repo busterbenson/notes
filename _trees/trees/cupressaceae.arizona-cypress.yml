@@ -1,6 +1,8 @@
 tree:
   common_name: "Arizona Cypress"
   scientific_name: "Cupressus arizonica"
+  scientific_genus: "Cupressus"
+  common_genus: "Cypress"
   family: "Cupressaceae"
   
   # Basic summary (2-3 sentences)
@@ -171,7 +173,7 @@ tree:
       reliability: "Medium"
       visibility: "Visible from a distance"
     
-  look_alike_species:
+  look_alikes:
     - species: "Italian Cypress (Cupressus sempervirens)"
       differences: "Italian Cypress has a very narrow, columnar shape like a green pillar; Arizona Cypress is broader and more pyramid-shaped with bluer foliage"
       identification_tip: "If the tree is very tall and skinny like a green column, it's probably Italian Cypress, not Arizona Cypress"

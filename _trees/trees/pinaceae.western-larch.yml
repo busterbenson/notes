@@ -1,6 +1,8 @@
 tree:
   common_name: "Western Larch"
   scientific_name: "Larix occidentalis"
+  scientific_genus: "Larix"
+  common_genus: "Larch"
   family: "Pinaceae"
   
   # Basic summary
@@ -147,7 +149,7 @@ tree:
       reliability: "High"
       visibility: "Highly visible but only in fall"
     
-  look_alike_species:
+  look_alikes:
     - species: "Subalpine Larch (Larix lyallii)"
       differences: "Subalpine Larch grows at higher elevations, has woollier young twigs, and is generally smaller"
       identification_tip: "Western Larch is taller, has smoother twigs, and typically grows at lower elevations"

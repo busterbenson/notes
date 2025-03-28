@@ -1,6 +1,8 @@
 tree:
   common_name: "Jacaranda"
   scientific_name: "Jacaranda mimosifolia"
+  scientific_genus: "Jacaranda"
+  common_genus: "Jacaranda"
   family: "Bignoniaceae"
   
   # Basic summary information
@@ -165,7 +167,7 @@ tree:
       reliability: "Medium"
       visibility: "Need to look at trunk of mature trees"
     
-  look_alike_species:
+  look_alikes:
     - species: "Eastern Redbud (Cercis canadensis)"
       differences: "Redbud has simple heart-shaped leaves, not feathery compound ones; pink-purple flowers, not blue-purple; flowers appear before leaves"
       identification_tip: "If it has heart-shaped leaves instead of feathery ones, it's likely a Redbud"

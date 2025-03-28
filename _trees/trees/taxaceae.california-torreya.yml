@@ -1,6 +1,8 @@
 tree:
   common_name: "California Torreya"
   scientific_name: "Torreya californica"
+  scientific_genus: "Torreya"
+  common_genus: "California Nutmeg"
   family: "Taxaceae"
   
   # Basic summary
@@ -145,7 +147,7 @@ tree:
       reliability: "Medium"
       visibility: "Requires knowledge of surrounding area"
     
-  look_alike_species:
+  look_alikes:
     - species: "Pacific Yew (Taxus brevifolia)"
       differences: "Pacific Yew has softer, less pointy needles and produces bright red berry-like structures instead of olive-like seeds"
       identification_tip: "If the needles don't hurt when you touch them, and the fruit is red, it's likely Pacific Yew, not Torreya"

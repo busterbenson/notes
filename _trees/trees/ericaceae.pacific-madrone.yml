@@ -1,6 +1,8 @@
 tree:
   common_name: "Pacific Madrone"
   scientific_name: "Arbutus menziesii"
+  scientific_genus: "Arbutus"
+  common_genus: "Madrone"
   family: "Ericaceae"
   
   # Basic summary
@@ -124,7 +126,7 @@ tree:
       reliability: "High (when present)"
       visibility: "Medium - need to look at branch tips"
     
-  look_alike_species:
+  look_alikes:
     - species: "Manzanita (Arctostaphylos spp.)"
       differences: "Manzanitas are shrubs or small trees, rarely exceeding 20 feet tall; madrones grow to 50-100 feet; manzanitas have smaller leaves"
       identification_tip: "If it's taller than a house with big leaves, it's probably madrone, not manzanita"

@@ -1,6 +1,8 @@
 tree:
   common_name: "Crape Myrtle"
   scientific_name: "Lagerstroemia indica"
+  scientific_genus: "Lagerstroemia"
+  common_genus: "Crape Myrtle"
   family: "Lythraceae"
   
   # Basic summary (2-3 sentences)
@@ -181,7 +183,7 @@ tree:
       reliability: "Medium"
       visibility: "Visible up close in fall and winter"
     
-  look_alike_species:
+  look_alikes:
     - species: "Eastern Redbud (Cercis canadensis)"
       differences: "Redbud blooms in early spring before leaves appear, has heart-shaped leaves, and different bark; Crape Myrtle blooms in summer"
       identification_tip: "Crape Myrtle has summer flowers and peeling bark, while Redbud has spring flowers and smoother bark"

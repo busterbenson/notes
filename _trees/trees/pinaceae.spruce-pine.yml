@@ -136,7 +136,7 @@ tree:
       reliability: "Medium"
       visibility: "Visible from a distance"
 
-  look_alike_species:
+  look_alikes:
     - species: "Slash Pine (Pinus elliottii)"
       differences: "Slash Pine has much longer needles (as long as your hand) and larger cones (as big as a small apple)"
       identification_tip: "If the needles are longer than your finger or the cones bigger than an egg, it's probably not Spruce Pine"

@@ -1,6 +1,8 @@
 tree:
   common_name: "California Laurel"
   scientific_name: "Umbellularia californica"
+  scientific_genus: "Umbellularia"
+  common_genus: "Bay Laurel"
   family: "Lauraceae"
   
   # Basic summary information
@@ -167,7 +169,7 @@ tree:
       reliability: "High"
       visibility: "Medium - need to look closely"
     
-  look_alike_species:
+  look_alikes:
     - species: "Madrone (Arbutus menziesii)"
       differences: "Madrone has peeling reddish bark and rounded leaves without the strong scent"
       identification_tip: "Crush a leaf - California Laurel has a strong peppery scent that Madrone lacks"

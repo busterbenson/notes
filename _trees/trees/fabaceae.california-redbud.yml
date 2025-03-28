@@ -1,6 +1,8 @@
 tree:
   common_name: "California Redbud"
   scientific_name: "Cercis occidentalis"
+  scientific_genus: "Cercis"
+  common_genus: "Redbud"
   family: "Fabaceae"
   
   # Basic summary
@@ -170,7 +172,7 @@ tree:
       reliability: "Medium"
       visibility: "Easy - visible year-round"
     
-  look_alike_species:
+  look_alikes:
     - species: "Eastern Redbud (Cercis canadensis)"
       differences: "Eastern Redbud has larger leaves that are more green than blue-green, grows larger (20-30 feet), and prefers moister conditions"
       identification_tip: "California Redbud has smaller, more blue-green leaves and is more drought-tolerant"

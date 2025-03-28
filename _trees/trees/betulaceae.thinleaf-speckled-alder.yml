@@ -133,7 +133,7 @@ tree:
       reliability: "Medium"
       visibility: "High - check the growing location"
 
-  look_alike_species:
+  look_alikes:
     - species: "White Alder (Alnus rhombifolia)"
       differences: "Native to California; single-trunked tree rather than multi-stemmed; smoother gray bark; more finely toothed leaves without rusty hairs beneath"
       identification_tip: "If it has a single trunk and lacks rusty hairs on leaf undersides, it's likely White Alder"

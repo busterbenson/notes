@@ -1,6 +1,8 @@
 tree:
   common_name: "Wych Elm"
   scientific_name: "Ulmus glabra"
+  scientific_genus: "Ulmus"
+  common_genus: "Elm"
   family: "Ulmaceae"
   
   # Basic summary
@@ -151,7 +153,7 @@ tree:
       reliability: "High"
       visibility: "Medium - need to check branches closely"
     
-  look_alike_species:
+  look_alikes:
     - species: "American Elm (Ulmus americana)"
       differences: "American Elm has smoother leaves, more vase-like shape, and longer leaf stems"
       identification_tip: "Wych Elm leaves are much rougher to touch and have shorter stems"

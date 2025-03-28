@@ -1,6 +1,8 @@
 tree:
   common_name: "Shantung Maple"
   scientific_name: "Acer truncatum"
+  scientific_genus: "Acer"
+  common_genus: "Maple"
   family: "Sapindaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -136,7 +138,7 @@ tree:
       reliability: "Medium"
       visibility: "High - visible from a distance"
     
-  look_alike_species:
+  look_alikes:
     - species: "Norway Maple (Acer platanoides)"
       differences: "Norway Maple has larger leaves with pointier lobes and milky sap when leaf stems are broken; typically grows larger"
       identification_tip: "Break a leaf stem - Norway Maple will leak milky white sap, Shantung Maple won't"

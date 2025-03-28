@@ -1,6 +1,8 @@
 tree:
   common_name: "Water-elm"
   scientific_name: "Planera aquatica"
+  scientific_genus: "Planera"
+  common_genus: "Water Elm"
   family: "Ulmaceae"
   
   # Basic summary information
@@ -150,7 +152,7 @@ tree:
       reliability: "Medium-high"
       visibility: "Medium - visible from moderate distance"
     
-  look_alike_species:
+  look_alikes:
     - species: "American Elm (Ulmus americana)"
       differences: "American Elm grows larger (60-100 feet tall); has winged seeds (samaras), not warty fruits; more uniform vase-shaped crown; bark develops deep furrows rather than becoming shaggy"
       identification_tip: "If the tree has flat, winged seeds instead of warty fruits, and is much taller with a vase-like shape, it's likely an American Elm, not Water-elm"

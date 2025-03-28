@@ -1,6 +1,8 @@
 tree:
   common_name: "Sugar Pine"
   scientific_name: "Pinus lambertiana"
+  scientific_genus: "Pinus"
+  common_genus: "Pine"
   family: "Pinaceae"
   
   # Basic summary information
@@ -160,7 +162,7 @@ tree:
       reliability: "High"
       visibility: "Easy - can see from a distance"
     
-  look_alike_species:
+  look_alikes:
     - species: "Western White Pine (Pinus monticola)"
       differences: "Western White Pine has much shorter cones (5-10 inches, about as long as your hand) and usually grows higher up in mountains"
       identification_tip: "Sugar Pine cones are way longer - at least 10 inches and often much more"

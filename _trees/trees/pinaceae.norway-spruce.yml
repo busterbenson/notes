@@ -128,7 +128,7 @@ tree:
       reliability: "Medium"
       visibility: "Medium - more distinctive on mature trees"
 
-  look_alike_species:
+  look_alikes:
     - species: "Blue Spruce (Picea pungens)"
       differences: "Has distinctive blue-silver needles rather than dark green; sharper, more painful needles; more rigid branch structure"
       identification_tip: "If the needles are blue-silver instead of dark green, it's likely Blue Spruce"

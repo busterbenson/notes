@@ -1,6 +1,8 @@
 tree:
   common_name: "Gray Pine"
   scientific_name: "Pinus sabiniana"
+  scientific_genus: "Pinus"
+  common_genus: "Pine"
   family: "Pinaceae"
   
   # Basic summary
@@ -158,7 +160,7 @@ tree:
       reliability: "Very high"
       visibility: "Easy - can see from nearby when present"
     
-  look_alike_species:
+  look_alikes:
     - species: "Ponderosa Pine (Pinus ponderosa)"
       differences: "Ponderosa Pine has shorter needles (5-10 inches), straighter trunk, denser foliage, and bark that smells like vanilla or butterscotch when warm"
       identification_tip: "If the tree has a straight trunk instead of a Y-shape, and denser foliage, it's likely Ponderosa Pine"

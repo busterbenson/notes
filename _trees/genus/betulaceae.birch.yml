@@ -151,7 +151,7 @@ genus:
       reliability: "Medium to high"
       visibility: "Seasonal; may need close inspection"
     
-  look_alike_species:
+  look_alikes:
     - species: "Aspen (Populus species)"
       differences: "Aspens have similar leaves but bark is smooth, doesn't peel, and is often greenish-white with black marks; leaves quiver in breeze"
       identification_tip: "If the bark is smooth and doesn't peel in papery layers, it's likely aspen not birch"

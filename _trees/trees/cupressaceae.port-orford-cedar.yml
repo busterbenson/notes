@@ -1,6 +1,8 @@
 tree:
   common_name: "Port Orford-cedar"
   scientific_name: "Chamaecyparis lawsoniana"
+  scientific_genus: "Chamaecyparis"
+  common_genus: "Cedar"
   family: "Cupressaceae"
   
   # Basic summary information
@@ -177,7 +179,7 @@ tree:
       reliability: "Medium"
       visibility: "Need to look closely and may be too high to see"
     
-  look_alike_species:
+  look_alikes:
     - species: "Alaska-cedar (Callitropsis nootkatensis)"
       differences: "Alaska-cedar has drooping branch tips, less blue leaves, and slightly different smell"
       identification_tip: "If the branches droop down instead of pointing up, it's likely Alaska-cedar"

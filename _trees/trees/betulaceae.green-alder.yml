@@ -1,6 +1,8 @@
 tree:
   common_name: "Green Alder"
   scientific_name: "Alnus viridis"
+  scientific_genus: "Alnus"
+  common_genus: "Alder"
   family: "Betulaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -170,7 +172,7 @@ tree:
       reliability: "Very high"
       visibility: "Seasonal - spring only"
     
-  look_alike_species:
+  look_alikes:
     - species: "White Alder (Alnus rhombifolia)"
       differences: "White Alder is a taller single-trunked tree with light gray bark; found at lower elevations"
       identification_tip: "Green Alder typically grows as a shrub in mountain habitats; White Alder is a proper tree at lower elevations"

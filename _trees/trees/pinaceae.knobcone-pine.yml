@@ -1,6 +1,8 @@
 tree:
   common_name: "Knobcone Pine"
   scientific_name: "Pinus attenuata"
+  scientific_genus: "Pinus"
+  common_genus: "Pine"
   family: "Pinaceae"
   
   # Basic summary information
@@ -165,7 +167,7 @@ tree:
       reliability: "Medium"
       visibility: "Context-based observation"
     
-  look_alike_species:
+  look_alikes:
     - species: "Bishop Pine (Pinus muricata)"
       differences: "Bishop Pine has needles in bundles of two, not three, and its cones are usually smaller"
       identification_tip: "Count the needles in a bundle - Knobcone Pine always has three"

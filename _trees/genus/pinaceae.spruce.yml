@@ -4,301 +4,281 @@ genus:
   taxonomic_level: "genus"
   family: "Pinaceae"
   
-  # Basic summary
-  summary: "Conical evergreen trees with stiff, sharp needles that grow singly (not in bundles) around the entire twig. Spruce trees have distinctive hanging cones and needles that are square in cross-section, which makes them roll easily between your fingers."
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "Pyramid-shaped evergreen trees with sharp, stiff needles that grow singly around the twig and leave distinctive peg-like projections when removed. Spruces have hanging paper-like cones, often whorled branching that tends to be horizontal or slightly upturned, and bark that breaks into small scales or plates."
   
   # Key species in this genus
   included_species:
-    - name: "Colorado Blue Spruce"
-      scientific_name: "Picea pungens"
-      distinguishing_features: "Striking blue-silver color; stiff, sharp needles; perfect conical form"
-      california_context: "Not native to California but commonly planted as ornamental tree in parks and yards"
+    - name: "Sitka Spruce"
+      scientific_name: "Picea sitchensis"
+      distinguishing_features: "Sharp needles with silvery-blue undersides; thin, scaly bark; grows in coastal fog belt"
+      california_context: "Native to northern California coast; needs fog moisture and cool conditions"
     
     - name: "Engelmann Spruce"
       scientific_name: "Picea engelmannii"
-      distinguishing_features: "Bluish-green, softer needles; more slender form; grows at high elevations"
-      california_context: "Native to California's high mountain forests in the Sierra Nevada"
+      distinguishing_features: "Blue-green needles; grows at high elevations; cones at top of tree; more narrow form"
+      california_context: "Found in high Sierra Nevada and other mountain ranges; important in subalpine forests"
     
-    - name: "Sitka Spruce"
-      scientific_name: "Picea sitchensis"
-      distinguishing_features: "Flattened needles with sharp points; largest spruce species; thrives in coastal fog"
-      california_context: "Native to a narrow band along northern California coast in misty, foggy areas"
+    - name: "Brewer Spruce"
+      scientific_name: "Picea breweriana"
+      distinguishing_features: "Distinctive weeping branches; dark green or blue-green needles; very limited range"
+      california_context: "Rare native species limited to Klamath mountains in northwest California and southwest Oregon"
     
-    - name: "Norway Spruce"
-      scientific_name: "Picea abies"
-      distinguishing_features: "Dark green needles; distinctive drooping branchlets; classic Christmas tree form"
-      california_context: "Not native but commonly planted in parks and as Christmas trees"
+    - name: "Blue Spruce"
+      scientific_name: "Picea pungens"
+      distinguishing_features: "Intensely blue-gray needles; very sharp and stiff; popular in landscapes"
+      california_context: "Not native but widely planted in gardens and parks throughout California"
   
-  # Identification path
+  # Identification path guides the decision tree
   identification_path:
-    primary_markers: "Sharp, stiff needles growing singly (not in bundles) around the twig; needles square in cross-section and roll easily between fingers; hanging cones that fall intact"
-    secondary_markers: "Conical shape with horizontal branches; rough bark with small, thin scales; small woody projections (sterigmata) left on twigs when needles fall"
-    seasonal_markers: "No significant seasonal changes as evergreen; pollen cones in spring; seed cones develop through summer"
-    similar_species_differentiation: "Unlike firs, spruce needles are sharp (not soft), grow on small peg-like projections, and leave rough projections on the twig when removed; unlike pines, needles are single (not in bundles)"
+    primary_markers: "Sharp, stiff needles that grow singly around the twig and are square in cross-section; leave peg-like projections when removed"
+    secondary_markers: "Hanging papery cones; typically pyramid shape with horizontal branches in layers; scaly bark"
+    seasonal_markers: "Minimal seasonal change as evergreen; pollen cones release yellow pollen in spring; seed cones develop over summer, mature in fall"
+    similar_species_differentiation: "Unlike firs, has sharp prickly needles that leave pegs when pulled off and cones that hang down; unlike pines, needles grow singly, not in bundles; unlike hemlock, has stiffer needles and more regular branching"
   
+  # Core features section
   features:
     always_true:
       - feature_id: "LEAF-TYPE-02"  # Evergreen
-        notes: "Keeps its needles year-round"
-        
-      - feature_id: "NEEDLE-ARRANGE-03"  # Single needles all around twig
-        notes: "Needles grow singly and stick out all around the twig"
+        notes: "Retains needles year-round"
       
-      - feature_id: "NEEDLE-SHAPE-01"  # Square needles
-        notes: "Needles are square or 4-sided in cross-section, not flat"
+      - feature_id: "LEAF-FORM-01"  # Needle-like leaves
+        notes: "Has stiff, pointed needles"
       
-      - feature_id: "NEEDLE-ATTACH-03"  # Peg-like attachments
-        notes: "Needles attach to small woody pegs that remain after needles fall"
+      - feature_id: "LEAF-ARRANGE-02"  # Single needles
+        notes: "Needles grow singly around the branch, not in bundles"
       
-      - feature_id: "TREE-FORM-01"  # Pyramidal shape
-        notes: "Grows in a pyramidal or conical shape"
+      - feature_id: "CONE-ATTACH-02"  # Hanging cones
+        notes: "Cones hang down from branches, never stand upright"
       
-      - feature_id: "CONE-POS-01"  # Hanging cones
-        notes: "Cones hang down from branches"
-      
-      - feature_id: "CONE-PERSIST-02"  # Falling intact
-        notes: "Cones fall from the tree intact rather than breaking apart"
+      - feature_id: "SENSORY-TOUCH-02"  # Prickly
+        notes: "Needles are sharp and prickly when touched"
     
     usually_true:
       - feature_id: "TREE-TRUNK-01"  # Single trunk
-        notes: "Usually grows with one straight main trunk"
-        exceptions: "May develop multiple leaders after damage to the top"
+        notes: "Typically grows with a single straight trunk"
+        exceptions: "May occasionally fork if the top is damaged"
       
-      - feature_id: "BRANCH-ANGLE-03"  # Horizontal branches
-        notes: "Primary branches typically grow at right angles to the trunk"
-        exceptions: "May droop or sweep upward at the tips, especially in species like Norway Spruce"
+      - feature_id: "TREE-FORM-01"  # Pyramidal
+        notes: "Strong pyramid or Christmas tree shape, especially when young"
+        exceptions: "Very old trees may lose lower branches or develop more irregular crowns"
       
-      - feature_id: "NEEDLE-TEXT-02"  # Stiff needles
-        notes: "Needles are typically stiff and sharp"
-        exceptions: "Some species like Engelmann Spruce have somewhat softer needles"
+      - feature_id: "LEAF-COLOR-03"  # Blue-green color
+        notes: "Many species have blue-green or silvery-blue needles"
+        exceptions: "Some species or individuals may be more green than blue"
     
     sometimes_true:
-      - feature_id: "NEEDLE-COLOR-04"  # Blue-green needles
-        conditions: "Colorado Blue Spruce and to a lesser extent Engelmann Spruce"
-        notes: "Some species have distinctive blue-silver or blue-green needles"
+      - feature_id: "BARK-TEXT-02"  # Scaly bark
+        conditions: "Most mature trees"
+        notes: "Bark typically breaks into small scales or plates"
       
-      - feature_id: "NEEDLE-COLOR-01"  # Dark green needles
-        conditions: "Norway Spruce and many other species"
-        notes: "Some species have darker green needles"
+      - feature_id: "TREE-FORM-03"  # Weeping form
+        conditions: "Brewer Spruce specifically"
+        notes: "Some species like Brewer Spruce have distinctive drooping or weeping branches"
       
-      - feature_id: "TREE-SIZE-03"  # Tall tree
-        conditions: "Mature trees in good conditions, especially Sitka Spruce"
-        notes: "Can grow very tall, particularly in favorable habitats"
+      - feature_id: "TREE-SIZE-03"  # Very tall
+        conditions: "Sitka Spruce in favorable conditions"
+        notes: "Some species like Sitka Spruce can grow extremely tall in good conditions"
       
-      - feature_id: "BRANCH-FEAT-05"  # Drooping branchlets
-        conditions: "Norway Spruce and some other species"
-        notes: "Secondary branches may hang down from primary branches"
+      - feature_id: "NEEDLE-COLOR-01"  # Waxy white lines
+        conditions: "Varies by species"
+        notes: "Some species have white stomatal lines on needle surfaces, creating a silvery appearance"
     
     never_true:
       - feature_id: "LEAF-TYPE-01"  # Deciduous
         notes: "Never drops all needles seasonally"
       
-      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in bundles
-        notes: "Never has needles growing in clusters or bundles"
+      - feature_id: "NEEDLE-ARRANGE-03"  # Needles in bundles
+        notes: "Needles never grow in bundles like pines"
       
-      - feature_id: "NEEDLE-ATTACH-02"  # Flat, disklike attachments
-        notes: "Never has needles attached directly to the twig without pegs"
-      
-      - feature_id: "CONE-POS-02"  # Upright cones
-        notes: "Never has cones growing upright on branches"
+      - feature_id: "CONE-ATTACH-01"  # Upright cones
+        notes: "Cones never stand upright, always hang down from branches"
   
-  # Kid-friendly identification
+  # Kid-friendly identification section
   kid_friendly_identification:
-    primary_identifier: "Sharp, poky needles that grow all around the twig and roll easily between your fingers"
-    memorable_comparison: "The needles feel like square toothpicks and are poky like tiny pin cushions"
-    touch_tip: "Gently feel a needle - it will feel square and roll easily between your fingers (but be careful, they're poky!)"
-    smell_tip: "Crush a needle to smell a fresh, Christmas tree scent"
-    fun_fact: "The wood from spruce trees is used to make many musical instruments, including guitars, violins, and pianos, because it vibrates in a special way that makes beautiful sounds!"
+    primary_identifier: "Super prickly needles that grow all around the twig like a bottle brush"
+    memorable_comparison: "The needles are like tiny swords that poke you if you grab them - they feel much sharper than fir or pine needles"
+    touch_tip: "Gently touch a branch - the needles are very poky! Now try to pull a single needle off and look at the twig - you'll see a tiny woody peg where the needle was attached, like a little wooden toothpick sticking out"
+    smell_tip: "Crush a needle carefully to smell a fresh, strong pine-like scent"
+    fun_fact: "Spruce wood is used to make many musical instruments, especially violin tops, guitar soundboards, and piano parts. The wood vibrates in a special way that makes beautiful sounds! Spruce trees can also live for hundreds of years - some of the oldest spruces were already growing when the first European explorers came to America."
     
+    # Detective steps walk children through identification
     detective_steps:
       - step: 1
-        instruction: "Look at the overall shape - is it a perfect Christmas tree shape with a straight pointy top?"
+        instruction: "First, look at the tree shape - does it have a Christmas tree pyramid shape with branches growing in rings around the trunk?"
         yes_next: 2
-        no_next: "Might not be a spruce - check other conifer options"
+        no_next: "If the shape is irregular or the branches don't grow in clear rings, check other evergreen trees"
       - step: 2
-        instruction: "Look at how the needles grow. Do they stick out all around the twigs (not in bundles or flat rows)?"
+        instruction: "Carefully touch the needles - are they very sharp and poky, growing all around the twig like a bottle brush?"
         yes_next: 3
-        no_next: "If needles are in bundles, it's a pine; if in flat rows, check fir or hemlock"
+        no_next: "If needles are soft and flat, check fir trees; if they grow in bundles, check pine trees"
       - step: 3
-        instruction: "Very carefully feel a needle (they're poky!). Can you roll it easily between your fingers?"
-        yes_next: 4
-        no_next: "If needles are flat and don't roll, check fir or hemlock"
-      - step: 4
-        instruction: "If you find any cones, are they hanging down (not standing up) and about the size of a banana or smaller?"
-        yes_next: "You found a spruce!"
-        no_next: "If cones stand upright, it's probably a fir"
+        instruction: "Try to gently pull off a needle and look where it was attached - do you see a small woody peg sticking out from the twig?"
+        yes_next: "You found a spruce! The needle color and cone shape can help you figure out which kind."
+        no_next: "If you don't see a woody peg where the needle was attached, it might be a different evergreen tree"
   
-  # Seasonal timeline
+  # Seasonal changes - separate entry for each season
   seasonal_timeline:
     - season: "Spring"
-      visual_changes: "Bright green new growth at branch tips"
-      reproductive_activity: "Male pollen cones release yellow pollen; young seed cones begin forming"
-      identification_tips: "Look for contrast between new and old growth; small reddish female cones forming"
-      kid_friendly_tip: "In spring, look for bright green baby needles at the tips of branches and tiny red bumps that will grow into cones"
+      visual_changes: "New growth emerges as light green buds that develop into fresh needles; male pollen cones appear"
+      reproductive_activity: "Pollen release from small male cones; female cones begin developing"
+      identification_tips: "Look for contrast between new light green growth and older needles; pollen may dust surfaces below trees"
+      kid_friendly_tip: "In spring, spruce trees grow fresh light green needle tips, and tiny structures release yellow pollen dust that can make you sneeze!"
     
     - season: "Summer" 
-      visual_changes: "New growth hardens off; young cones grow larger"
-      reproductive_activity: "Seed cones enlarge and begin to mature"
-      identification_tips: "Green or purplish immature cones visible"
-      kid_friendly_tip: "The baby needles grow up and become the same color as the older needles, and the cones start getting bigger"
+      visual_changes: "New needles mature to match older ones; young green or purple cones develop"
+      reproductive_activity: "Female cones grow larger but remain tightly closed"
+      identification_tips: "Young hanging cones becoming more visible; uniform needle color"
+      kid_friendly_tip: "By summer, you can spot the young green or purple cones hanging down from branches - they start out small and pointing upward, then turn downward as they grow"
     
     - season: "Fall"
-      visual_changes: "No color change as it remains evergreen; cones mature"
-      reproductive_activity: "Seed cones mature, change from green to brown"
-      identification_tips: "Brown mature cones may be visible"
-      kid_friendly_tip: "Unlike deciduous trees, spruce trees keep their green needles all fall and winter - no colorful leaves here!"
+      visual_changes: "Cones mature and change color from green to brown; minimal needle color change"
+      reproductive_activity: "Cones mature, scales begin to open to release seeds"
+      identification_tips: "Brown mature cones; some older interior needles may yellow and drop but tree remains green"
+      kid_friendly_tip: "In fall, the cones turn brown and start to open their scales like little wooden flowers to let the seeds fly out"
     
     - season: "Winter"
-      visual_changes: "No change as it remains evergreen"
-      reproductive_activity: "Mature cones may release seeds during dry periods"
-      identification_tips: "Distinctive conical form stands out when deciduous trees are bare"
-      kid_friendly_tip: "In winter, spruce trees stay green and keep their perfect Christmas tree shape when other trees lose their leaves"
+      visual_changes: "Remains green; open brown cones may persist on branches or fall"
+      reproductive_activity: "Dormant; no reproductive activity"
+      identification_tips: "Evergreen nature makes identification easier when deciduous trees are bare"
+      kid_friendly_tip: "Spruces stay green all winter when many other trees lose their leaves, and you can often still see brown cones hanging from the branches"
       
-  # Additional required sections
+  # Additional required sections 
   confirmation_checklist:
-    - feature: "Needles square in cross-section (roll easily between fingers)"
+    - feature: "Sharp, stiff needles growing singly around twig"
       reliability: "Very high"
-      visibility: "Requires close inspection and touch"
-    - feature: "Needles grow singly all around the twig"
+      visibility: "Medium - need to look at needles up close"
+    - feature: "Needles leave woody pegs when pulled off"
       reliability: "Very high"
-      visibility: "Easy to see up close"
-    - feature: "Conical or pyramidal shape"
+      visibility: "Requires interaction - pulling a needle"
+    - feature: "Hanging papery cones (when present)"
       reliability: "High"
-      visibility: "Visible from a distance"
-    - feature: "Hanging cones (when present)"
-      reliability: "High"
-      visibility: "Easy to see when present"
-    - feature: "Sharp, stiff needles"
-      reliability: "High"
-      visibility: "Requires touch (careful!)"
+      visibility: "Medium - need to find cones"
+    - feature: "Pyramid shape with horizontally layered branches"
+      reliability: "Medium to high"
+      visibility: "Easy to observe from distance"
     
   look_alikes:
-    - name: "Fir (Abies species)"
-      type: "genus"
-      differences: "Fir needles are flat, not square; softer to touch; leave round, smooth scars on twigs; cones stand upright, not hanging"
-      identification_tip: "Try rolling a needle between your fingers - fir needles are flat and won't roll; also check cones - firs have upright cones"
+    - species: "Fir (Abies species)"
+      differences: "Fir has flat, soft needles that don't prick when touched; when needles are pulled off, they leave round scars, not pegs; cones stand upright"
+      identification_tip: "If the needles are soft and flat and leave flat round scars when pulled off, it's a fir, not a spruce"
     
-    - name: "Hemlock (Tsuga species)"
-      type: "genus"
-      differences: "Hemlock needles are flat with white lines beneath; foliage appears more delicate and feathery; needles attached to tiny pegs"
-      identification_tip: "Hemlock foliage is flatter and more delicate-looking; needles have white lines underneath"
+    - species: "Douglas-fir (Pseudotsuga menziesii)"
+      differences: "Douglas-fir has softer, flatter needles; cones have distinctive 3-pronged bracts; more flexible branches"
+      identification_tip: "If the needles are soft and the cones have little mouse-tail bracts sticking out, it's a Douglas-fir, not a true spruce"
     
-    - name: "Douglas-fir (Pseudotsuga menziesii)"
-      type: "species"
-      differences: "Douglas-fir has softer, flat needles; distinctive cones with three-pointed bracts sticking out"
-      identification_tip: "Douglas-fir needles are softer and flat, not square; cones have unique 'mouse tail' bracts"
+    - species: "Hemlock (Tsuga species)"
+      differences: "Hemlock has flatter needles arranged in flattened sprays; drooping leader (top); more delicate appearance; tiny cones"
+      identification_tip: "If the tree has a drooping top branch and the needles are arranged in flattened sprays, it's likely a hemlock"
     
   cultural_significance:
-    - culture: "Native American Tribes (Various)"
+    # Organized by culture
+    - culture: "Native California Tribes"
       physical_uses:
-        - "Used roots for weaving baskets and binding tools"
-        - "Harvested pitch for waterproofing and as a healing salve"
-        - "Made tea from needles as source of vitamin C"
-        - "Used wood for building and tool making"
+        - "Used the strong, flexible roots for basket weaving and binding"
+        - "Collected pitch for waterproofing and medicine"
+        - "Harvested inner bark for emergency food in some areas"
+        - "Created tea from needles for treating colds and respiratory problems"
       symbolic_meaning:
-        - "Represented persistence through harsh winters because of evergreen nature"
-        - "Featured in stories about endurance and resilience"
-        - "Used in purification ceremonies through burning of needles and branches"
+        - "Associated with strength and resilience in harsh environments"
+        - "Used branches in some purification ceremonies"
+        - "Included in some winter solstice celebrations for evergreen nature"
     
-    - culture: "Western Christmas Traditions"
+    - culture: "Early Settlers"
       physical_uses:
-        - "Harvested as Christmas trees"
-        - "Used branches for holiday decorations and wreaths"
-        - "Extracted oils for scents and fragrances"
+        - "Selected for lightweight, strong lumber for aircraft construction"
+        - "Harvested for paper making due to long wood fibers"
+        - "Used for ship masts and spars because of straight trunks"
+        - "Made spruce beer from new growth as vitamin C source"
       symbolic_meaning:
-        - "Symbolizes everlasting life through winter"
-        - "Represents the Christmas season and winter celebrations"
-        - "Perfect conical shape seen as ideal symbol for holiday decorating"
+        - "Symbolized hardiness and survival in mountain regions"
+        - "Prized for Christmas trees because of perfect pyramid shape"
+        - "Associated with wilderness and frontier landscapes"
     
-    - culture: "Modern Forestry"
+    - culture: "Modern California"
       physical_uses:
-        - "Grown for timber production, especially for lightweight construction"
-        - "Wood used for making musical instruments due to acoustic properties"
-        - "Pulped for high-quality paper production"
-        - "Used extensively in the aerospace industry for its strength-to-weight ratio"
+        - "Harvested for piano soundboards and other musical instruments"
+        - "Valued for specialty lumber with specific resonance properties"
+        - "Planted as landscape specimens, especially blue varieties"
+        - "Studied as indicator species for climate change impacts"
       symbolic_meaning:
-        - "Represents sustainable forestry practices when plantation-grown"
-        - "Symbolizes adaptation to harsh environments"
-        - "Used as indicators of climate change impacts on forests"
+        - "Represents high mountain ecosystems and wilderness"
+        - "Associated with holiday traditions and winter celebrations"
+        - "Symbolizes adaptation to harsh environments in conservation education"
     
   cultural_ecological_notes:
-    - "Important habitat trees for many bird species"
-    - "Seeds are eaten by numerous birds and small mammals"
-    - "Provide winter shelter for wildlife when other trees are bare"
-    - "Sitka Spruce is particularly important in coastal ecosystems"
-    - "Some species are increasingly threatened by climate change"
-    - "Different species adapted to specific elevation and climate zones"
+    - "Different spruce species occupy specific elevation and climate niches"
+    - "Brewer Spruce is a California endemic with very limited range, of conservation concern"
+    - "Sitka Spruce forms the backbone of coastal temperate rainforests"
+    - "Provides critical habitat for birds, especially in winter when other trees are bare"
+    - "Creates microclimate and soil conditions that support distinctive understory communities"
     
   range_within_california:
-    - "Sitka Spruce occurs naturally only in a narrow band along the northern California coast"
-    - "Engelmann Spruce grows naturally at high elevations in the Sierra Nevada"
-    - "Colorado Blue Spruce and Norway Spruce are not native but widely planted as ornamentals"
-    - "Spruce trees generally prefer cooler, moister habitats than many other California conifers"
-    - "Found in cultivation throughout the state in parks and landscapes"
+    - "Sitka Spruce limited to foggy coastal areas in extreme northern California"
+    - "Engelmann Spruce found at high elevations in mountains of northern California"
+    - "Brewer Spruce restricted to Klamath mountains of northwest California"
+    - "Blue Spruce and other non-native species widely planted as ornamentals"
+    - "Generally absent from central and southern California except as landscape plantings"
     
   # Physical characteristics
   physical_characteristics:
-    height_range: "40-180 feet, depending on species (Sitka Spruce can reach over 200 feet)"
-    growth_rate: "Slow to moderate, about 1-2 feet per year when young"
-    crown_spread: "15-30 feet at maturity for most species"
-    lifespan: "200-700+ years, depending on species"
-    trunk_diameter: "1-6 feet at maturity"
-    root_system: "Shallow, wide-spreading root system"
-    toxicity: "Not toxic, though handling needles may cause skin irritation in sensitive individuals"
+    height_range: "40-180 feet depending on species (Sitka Spruce can exceed 180 feet)"
+    growth_rate: "Slow to moderate; typically 8-24 inches per year when young"
+    crown_spread: "20-35 feet at maturity"
+    lifespan: "200-700+ years depending on species"
+    trunk_diameter: "2-5 feet at maturity"
+    root_system: "Shallow and spreading, making them susceptible to windthrow"
+    toxicity: "Not toxic; young spring growth edible but very resinous"
   
   conservation_status:
-    status: "Most species are secure, though habitat concerns exist"
+    status: "Varies by species; Brewer Spruce considered vulnerable"
     threats: 
-      - "Climate change affecting suitable habitat"
-      - "Beetle infestations increasing with warmer conditions"
-      - "Drought stress in planted specimens outside native range"
-      - "Sitka Spruce habitat threatened by sea level rise"
+      - "Climate change affecting suitable habitat range, especially for high elevation species"
+      - "Spruce beetle outbreaks becoming more severe with warmer temperatures"
+      - "High-severity wildfire in dense stands with accumulated fuels"
+      - "Sitka Spruce habitat threatened by coastal development"
     protection_efforts:
-      - "Protection of native habitats in national forests and parks"
-      - "Research into climate adaptation and pest resistance"
-      - "Seed banking for genetic conservation"
+      - "Monitoring of endemic Brewer Spruce populations"
+      - "Research on climate adaptation and beetle resistance"
+      - "Seed banking of rare populations for conservation"
       
   decision_tree_placement:
     primary_split_features:
-      - "feature_id: NEEDLE-ARRANGE-03"  # Single needles all around twig
-      - "feature_id: NEEDLE-SHAPE-01"  # Square needles
-      - "feature_id: TREE-FORM-01"  # Pyramidal shape
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: SENSORY-TOUCH-02"  # Prickly
+      - "feature_id: LEAF-ARRANGE-02"  # Single needles
     confirmation_features:
-      - "feature_id: NEEDLE-ATTACH-03"  # Peg-like attachments
-      - "feature_id: CONE-POS-01"  # Hanging cones
+      - "feature_id: LEAF-ATTACH-01"  # Needles leave pegs
+      - "feature_id: CONE-ATTACH-02"  # Hanging cones
     observation_sequence:
       - distance: "from_far_away"
-        features_to_check: ["TREE-FORM-01", "BRANCH-ANGLE-03"]  # Pyramidal shape, horizontal branches
+        features_to_check: ["TREE-FORM-01", "LEAF-TYPE-02"]  # Pyramidal form, evergreen
       - distance: "from_nearby"
-        features_to_check: ["NEEDLE-ARRANGE-03", "NEEDLE-COLOR-04"]  # Single needles all around twig, possibly blue-green
+        features_to_check: ["SENSORY-TOUCH-02", "LEAF-ARRANGE-02"]  # Prickly, single needles
       - distance: "close_inspection"
-        features_to_check: ["NEEDLE-SHAPE-01", "NEEDLE-ATTACH-03"]  # Square needles, peg-like attachments
+        features_to_check: ["LEAF-ATTACH-01", "CONE-ATTACH-02"]  # Needles leave pegs, hanging cones
     seasonal_identification:
       spring:
-        reliability: "High"
-        key_features: ["NEEDLE-ARRANGE-03", "NEEDLE-SHAPE-01", "TREE-FORM-01"]
-        notes: "New growth provides color contrast"
+        reliability: "Medium to high"
+        key_features: ["LEAF-TYPE-02", "SENSORY-TOUCH-02"]
+        notes: "New growth provides good contrast; pollen cones may be visible"
       summer:
-        reliability: "High" 
-        key_features: ["NEEDLE-ARRANGE-03", "NEEDLE-SHAPE-01", "CONE-POS-01"]
-        notes: "Developing cones may be visible"
-      fall:
         reliability: "High"
-        key_features: ["NEEDLE-ARRANGE-03", "NEEDLE-SHAPE-01", "TREE-FORM-01"]
-        notes: "Evergreen nature stands out as deciduous trees change color"
+        key_features: ["LEAF-ARRANGE-02", "SENSORY-TOUCH-02"]
+        notes: "Developing cones becoming visible; full needle development"
+      fall:
+        reliability: "Very high" 
+        key_features: ["CONE-ATTACH-02", "LEAF-ATTACH-01"]
+        notes: "Mature cones highly visible; evergreen nature stands out as deciduous trees change"
       winter:
-        reliability: "Very high"
-        key_features: ["NEEDLE-ARRANGE-03", "NEEDLE-SHAPE-01", "TREE-FORM-01"]
-        notes: "Distinctive form visible when deciduous trees are bare"
-    misidentification_risks: 
-      - "Most often confused with fir trees, which have flat needles and upright cones"
-      - "Sometimes confused with Douglas-fir, which has flat needles"
-      - "Young trees might be confused with other conifers before distinctive features develop"
-  
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "TREE-FORM-01"]
+        notes: "Evergreen pyramidal form very distinctive when deciduous trees are bare"
+
   wildlife_value:
-    - "Seeds are important food for crossbills, chickadees, nuthatches, and squirrels"
-    - "Dense evergreen foliage provides crucial winter shelter for birds"
-    - "Branches offer nesting sites for many bird species"
-    - "Old trees develop cavities used by woodpeckers and other cavity-nesting wildlife"
-    - "Provides cover for deer and other mammals"
-    - "Fallen needles contribute to forest floor ecosystem"
+    - "Seeds are important food for red squirrels, crossbills, chickadees, and other birds"
+    - "Dense branching provides excellent winter shelter and nesting sites"
+    - "Spruce grouse feed heavily on spruce needles in northern forests"
+    - "Provides high perches and nesting platforms for birds of prey"
+    - "Forms the core of distinctive forest ecosystems, especially in coastal fog belt (Sitka Spruce)"
+    - "Lower branches that touch ground create sheltered areas for small mammals"

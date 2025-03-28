@@ -1,6 +1,8 @@
 tree:
   common_name: "Northern California Walnut"
   scientific_name: "Juglans hindsii"
+  scientific_genus: "Juglans"
+  common_genus: "Walnut"
   family: "Juglandaceae"
   
   # Basic summary information
@@ -154,7 +156,7 @@ tree:
       reliability: "Medium"
       visibility: "Only visible in fall"
     
-  look_alike_species:
+  look_alikes:
     - species: "California Black Walnut (Juglans californica)"
       differences: "Northern California Walnut is larger with more leaflets (13-21 vs. 11-19); ranges further north in California"
       identification_tip: "Count the leaflets - if there are usually more than 15, it's likely Northern California Walnut"

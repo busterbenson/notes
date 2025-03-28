@@ -131,7 +131,7 @@ tree:
       reliability: "Medium"
       visibility: "High - but seasonal"
 
-  look_alike_species:
+  look_alikes:
     - species: "Norway Maple (Acer platanoides)"
       differences: "Has similar leaf shape but produces milky sap when leaf stems are broken; flowers and seed clusters grow upright rather than hanging; bark doesn't peel in the same multicolored way"
       identification_tip: "If the flower and seed clusters point upward instead of hanging down, it's likely Norway Maple"

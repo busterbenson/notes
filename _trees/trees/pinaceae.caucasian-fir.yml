@@ -1,6 +1,8 @@
 tree:
   common_name: "Caucasian Fir"
   scientific_name: "Abies nordmanniana"
+  scientific_genus: "Abies"
+  common_genus: "Fir"
   family: "Pinaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -146,7 +148,7 @@ tree:
       reliability: "Very high"
       visibility: "Visible when mature cones are present"
     
-  look_alike_species:
+  look_alikes:
     - species: "Nordmann Fir (Abies nordmanniana subsp. nordmanniana)"
       differences: "Actually the same species, just a different subspecies name - they are identical"
       identification_tip: "These are the same tree, just called by different names"

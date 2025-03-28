@@ -1,6 +1,8 @@
 tree:
   common_name: "Red Gum Eucalyptus"
   scientific_name: "Eucalyptus camaldulensis"
+  scientific_genus: "Eucalyptus"
+  common_genus: "Eucalyptus"
   family: "Myrtaceae"
   
   # Basic summary (2-3 sentences of most distinctive features)
@@ -160,7 +162,7 @@ tree:
       reliability: "High"
       visibility: "Medium - need to look closely when present"
     
-  look_alike_species:
+  look_alikes:
     - species: "Blue Gum Eucalyptus (Eucalyptus globulus)"
       differences: "Blue Gum has blue-gray juvenile leaves, grows taller, and has larger seed capsules; bark is more stringy than patchy"
       identification_tip: "If the bark peels in long strips rather than patches, and juvenile leaves are distinctly blue, it's likely Blue Gum"

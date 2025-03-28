@@ -1,6 +1,8 @@
 tree:
   common_name: "Sweet Gum"
   scientific_name: "Liquidambar styraciflua"
+  scientific_genus: "Liquidambar"
+  common_genus: "Sweet Gum"
   family: "Altingiaceae"
   
   # Basic summary information
@@ -165,7 +167,7 @@ tree:
       reliability: "High"
       visibility: "Need to look closely at branches"
     
-  look_alike_species:
+  look_alikes:
     - species: "Maple Trees (Acer species)"
       differences: "Maples have opposite leaves (pairs directly across from each other); don't have spiky seed balls but winged 'helicopter' seeds"
       identification_tip: "If the leaves grow opposite each other instead of alternate, it's a maple, not a sweet gum"

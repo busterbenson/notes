@@ -1,6 +1,8 @@
 tree:
   common_name: "Rocky Mountain Maple"
   scientific_name: "Acer glabrum"
+  scientific_genus: "Acer"
+  common_genus: "Maple"
   family: "Sapindaceae"
   
   # Basic summary information
@@ -150,7 +152,7 @@ tree:
       reliability: "High"
       visibility: "Visible when present (summer to fall)"
     
-  look_alike_species:
+  look_alikes:
     - species: "Canyon Maple (Acer grandidentatum)"
       differences: "Canyon Maple typically grows as a single-trunked small tree rather than a multi-stemmed shrub; has larger leaves"
       identification_tip: "Rocky Mountain Maple is usually shrubby with multiple stems; Canyon Maple typically has a single trunk"
