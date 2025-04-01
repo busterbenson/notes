@@ -45,10 +45,10 @@ Each card expresses one of four archetypes, determined by the relationship betwe
 
 | Relationship | Archetype | Color | Qualities |
 |--------------|-----------|-------|-----------|
-| Resonant Season | **Sage** | Iridescent | Integrated, wise, harmonious expression |
-| Next Season | **Fool** | Turquoise | Innocent, new beginning, fresh perspective |
-| Third Season | **Hero** | Gold | Skilled, masterful, powerful expression |
-| Fourth Season | **Monster** | Purple | Excessive, challenging, shadow expression |
+| Resonant Season | **Sage**    | Iridescent   | Integrated, wise, harmonious expression |
+| Next Season     | **Fool**    | Turquoise    | Innocent, new beginning, fresh perspective |
+| Third Season    | **Hero**    | Gold         | Skilled, masterful, powerful expression |
+| Fourth Season   | **Monster** | Purple       | Excessive, challenging, shadow expression |
 
 ### Seasonal Progression
 
@@ -64,16 +64,16 @@ For example, if a card's resonant season is Winter:
 ## Archetype Qualities
 
 ### Sage
-The Sage represents wisdom, integration, and harmony. It appears when a card's resonant season matches its cycle bits' season. The Sage archetype embodies the most balanced expression of the card's energy, where inner and outer worlds are appropriately aligned with the cycle phase.
+The Sage represents a collective state of wisdom, integration, and harmony between its energy's strengths AND acceptance and accountability for its shadow, across individuals and time. It appears when a card's resonant season matches its cycle bits' season. The Sage archetype embodies the most balanced expression of the card's energy, where inner and outer worlds are appropriately aligned with the cycle phase. The sage manifests in cards as multifaceted and chimeric in nature (a union of several characters/creatures/groups), whole in time more than space, because they integrate cycles of change and growth.
 
 ### Fool
-The Fool represents innocence, new beginnings, and fresh perspectives. It appears when a card's resonant season is followed by its cycle bits' season. The Fool archetype embodies potential and untested energy, where the card's pattern is moving into a new phase with openness and curiosity.
+The Fool represents innocence, new beginnings, and fresh perspectives. It appears when a card's resonant season is followed by its cycle bits' season. The Fool archetype embodies potential and untested energy, where the card's pattern is moving into a new phase with openness and curiosity. The fool manifests in cards as characters in childhood. 
 
 ### Hero
-The Hero represents skill, mastery, and accomplished power. It appears when a card's resonant season is two steps ahead of its cycle bits' season. The Hero archetype embodies competence and achievement, where the card's pattern has matured and developed strong capabilities.
+The Hero represents skill, mastery, and accomplished power. It appears when a card's resonant season is two steps ahead of its cycle bits' season. The Hero archetype embodies competence and achievement, where the card's pattern has matured and developed strong capabilities, and yet also has the seed of its own shadow. The hero will often manifest in cards as the peak form of an individual human character, but usually as a snapshot in time that will inevitably change and lose that moment of perfection.
 
 ### Monster
-The Monster represents excess, challenge, and shadow aspects. It appears when a card's resonant season is three steps ahead of (or one step behind) its cycle bits' season. The Monster archetype embodies the imbalanced or exaggerated expression of the card's qualities, where energy has become distorted or overwhelming.
+The Monster represents the seed of the hero's shadow realized: the resultant excess, challenges caused by the solutions of the past, and shadow aspects that the hero didn't want to confront. It appears when a card's resonant season is three steps ahead of (or one step behind) its cycle bits' season. The Monster archetype embodies the imbalanced or exaggerated expression of the card's qualities, where energy has become distorted or overwhelming. The monster will often manifest in cards as an animal/creature/monster that represents the shadow of the hero it's related to. It too is usually a snapshot in time that will inevitably change and lose that flash of monstrosity.
 
 ## Example Applications
 

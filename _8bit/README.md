@@ -4,13 +4,16 @@ A divination system based on 8-bit binary patterns, combining elements of tarot,
 
 ## Project Structure
 
-- `associations.yml` - Core associations for bits, trigrams, elements, etc.
 - `card-template.yml` - Template for creating new cards with complete structure
 - `card-example-00000000.yml` - Example card (The Moon in Winter) with all fields filled in
 
 ### Directories
 
-- `/associations/` - Reference documents for associations between systems
+- `/associations/` - Reference documents and core data
+  - `core-systems.yml` - Core associations for bits, trigrams, elements, etc.
+  - `archetype-guide.md` - Guide to the Sage/Fool/Hero/Monster system
+  - `gender-assignment.md` - Documentation for gender assignment rules
+  - `fractal-manifestations.md` - Framework for fractal interpretation
   - `tarot-final-mapping.md` - Final mapping of tarot cards to bit patterns
   - `hebrew-letter-major-arcana.md` - Hebrew letter associations
   - `gene-keys-reference.md` - Gene Keys correspondences

@@ -4,6 +4,7 @@ This directory contains reference documents and mappings for the 8-Bit Oracle di
 
 ## Core Reference Files
 
+- **core-systems.yml**: Main structured data file containing all bit definitions, patterns, and meaning systems
 - **tarot-final-mapping.md**: Definitive mapping of tarot cards to 6-bit patterns
 - **hebrew-letter-major-arcana.md**: Hebrew letter associations for the Major Arcana
 - **gene-keys-reference.md**: Overview of the Gene Keys system and its integration 
@@ -14,7 +15,7 @@ This directory contains reference documents and mappings for the 8-Bit Oracle di
 
 ## Using These References
 
-While the main `associations.yml` file contains the structured data needed for card generation, these markdown files provide deeper context, rationale, and detailed explanations that wouldn't fit well in YAML format.
+While the `core-systems.yml` file contains the structured data needed for card generation, the markdown files provide deeper context, rationale, and detailed explanations that wouldn't fit well in YAML format.
 
 The files in this directory serve several purposes:
 
@@ -24,7 +25,5 @@ The files in this directory serve several purposes:
 4. **System Architecture**: They document how different symbolic systems interrelate
 
 ## Related Resources
-
-For implementation details and the structured data version of these associations, see the main `associations.yml` file in the parent directory.
 
 For the development history and analysis that led to these associations, see the documents in the `/mapping_plans/` directory.
