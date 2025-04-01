@@ -37,14 +37,21 @@ card:
     cycle: 
       season: "Winter" # From bit_definitions.bit78.meanings
       tarot_suit: "Swords" # From bit_definitions.bit78.meanings
-      moon_phase: "New Moon" # From bit_definitions.bit78.meanings
       element: "Air" # From bit_definitions.bit78.meanings
+
+    ## Lunar Phase (based on decimal modulo calculation)
+    lunar:
+      decimal_modulo: "184 % 8 = 0, 184 % 2 = 0" # decimal % 8 for phase, decimal % 2 for half
+      phase: "Dark Moon" # From lunar_cycle_system.phases
+      phase_half: "Deepening" # From phase halves in lunar_cycle_system
+      lunar_cycle: "1" # (bit_count_positions_1_6 % 4) + 1 = (4 % 4) + 1 = 1
+      cycle_name: "Inception Cycle" # From lunar_cycle_system.lunar_cycles
+      complete_designation: "Dark Moon Deepening, Inception Cycle of Winter"
 
     # Tarot
     tarot:
       card: "Seven of Swords" # The corresponding tarot card for bits 1-6
       cycle_suit: "Swords" # The corresponding tarot suit for bits 7-8
-      cycle_moon: "New Moon"
       seasonal_expression: "In Winter, the Seven of Swords takes on its most masterful expression as the Hero, demonstrating intellectual prowess and calculated strategy. Here, the cunning and cleverness of this card is refined to an art form, showing expertise in knowing when to advance and when to retreat in order to preserve resources."
 
     # Hexagram-related
@@ -72,19 +79,20 @@ card:
     # Oracle card creation - captures the essence of all 8 bits and associations
     # Follow style guidelines for consistent deck creation
     oracle_card:
-      card_name: "Strategic Frost"
+      card_name: "Strategic Frost (Dark Moon Deepening)"
       card_creature: "The Frost Tactician - a feminine figure with the keen, watchful presence of an arctic fox, moving expertly through the winter landscape while carrying precious knowledge"
       question_posed: "What battles should you not fight? What resources must you preserve for more important confrontations?"
-      card_scene: "Under a dark winter sky lit only by cold stars, a feminine figure in gold and silver cloaks moves silently through a snow-covered mountain pass. She carries a strategic map and three swords, leaving four others partially hidden in the snow behind her. Her face shows determination and calculation, as if executing a complex plan requiring perfect timing. In the background, a fortress casts long shadows on the snow, while hidden pathways reveal themselves only to those who know where to look. The scene conveys a sense of necessary retreat, but one executed with mastery and foresight rather than fear."
-      universal_symbol: "A crossed sword and map under a crescent moon"
+      card_scene: "Under a dark winter sky lit only by cold stars, a feminine figure in gold and silver cloaks moves silently through a snow-covered mountain pass. She carries a strategic map and three swords, leaving four others partially hidden in the snow behind her. Her face shows determination and calculation, as if executing a complex plan requiring perfect timing. In the background, a fortress casts long shadows on the snow, while hidden pathways reveal themselves only to those who know where to look. There is no moon visible in the sky - only darkness, representing the Dark Moon Deepening phase where plans are laid but not yet revealed. The scene conveys a sense of necessary retreat executed with mastery and foresight rather than fear, perfectly embodying the hidden potential of the Dark Moon."
+      universal_symbol: "A crossed sword and map under a black circle (Dark Moon)"
       mood: "Calculating, strategic, resourceful, deliberate"
 
       # Image generation prompt - use this template but fill with specific details
       prompt_for_image_gen: "Limited color risograph-style illustration of a feminine figure in winter attire moving through a snowy mountain pass at night, carrying three swords and a strategic map.
       Use magenta for foreground elements (inner world) and cyan for background/environment (outer world), with gold highlights.
       Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
-      Include a clean, full-width title bar at the bottom, with centered 8-bit code '10111000' and card title 'STRATEGIC FROST' in bold, without corner decorations or symbols.
-      Feature a crescent moon, arctic fox companion, crossed swords, and a strategic map.
+      Include a clean, full-width title bar at the bottom with centered card title 'STRATEGIC FROST' in bold, and a more subtle subtitle below that reads 'DARK MOON DEEPENING • 10111000'.
+      Feature a completely dark sky with no visible moon (representing Dark Moon phase), arctic fox companion, crossed swords, and a strategic map.
+      Include a small, discrete dark moon icon in one corner to indicate the lunar phase.
       The scene should evoke the mood of calculation, strategy, and deliberate action and incorporate subtle seasonal/elemental references appropriate for Winter.
       Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
       

@@ -40,14 +40,21 @@ card:
     cycle: 
       season: "[Winter/Spring/Summer/Fall]" # From bit_definitions.bit78.meanings
       tarot_suit: "[Swords/Wands/Cups/Pentacles]" # From bit_definitions.bit78.meanings
-      moon_phase: "[New/Waxing/Full/Waning] Moon" # From bit_definitions.bit78.meanings
       element: "[Air/Fire/Water/Earth]" # From bit_definitions.bit78.meanings
+
+    ## Lunar Phase (based on decimal modulo calculation)
+    lunar:
+      decimal_modulo: "[decimal_value modulo calculation]" # decimal % 8 for phase, decimal % 2 for half
+      phase: "[Dark Moon/New Moon/First Quarter/etc.]" # From lunar_cycle_system.phases
+      phase_half: "[Deepening/Emerging/Birthing/etc.]" # From phase halves in lunar_cycle_system
+      lunar_cycle: "[1-4]" # (bit_count_positions_1_6 % 4) + 1
+      cycle_name: "[Inception/Development/Culmination/Transition] Cycle" # From lunar_cycle_system.lunar_cycles
+      complete_designation: "[Full lunar designation, e.g., Dark Moon Emerging, Inception Cycle of Winter]"
 
     # Tarot
     tarot:
       card: "[Card name]" # The corresponding tarot card for bits 1-6
       cycle_suit: "[Suit]" # The corresponding tarot suit for bits 7-8
-      cycle_moon: "[Moon phase]"
       seasonal_expression: "[Description of how this hexagram energy expresses in this season as this archetype - expand on the relationship between the card's core energy and its seasonal/archetypal manifestation]"
 
     # Hexagram-related

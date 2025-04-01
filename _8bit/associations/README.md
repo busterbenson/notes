@@ -5,6 +5,7 @@ This directory contains reference documents and mappings for the 8-Bit Oracle di
 ## Core Reference Files
 
 - **core-systems.yml**: Main structured data file containing all bit definitions, patterns, and meaning systems
+- **lunar-cycle.yml**: Complete lunar cycle system with phase-half precision mapping
 - **tarot-final-mapping.md**: Definitive mapping of tarot cards to 6-bit patterns
 - **hebrew-letter-major-arcana.md**: Hebrew letter associations for the Major Arcana
 - **gene-keys-reference.md**: Overview of the Gene Keys system and its integration 
