@@ -63,26 +63,18 @@ bit_definitions:
     name: "Cycle Phase"
     meanings:
       "00":
-        phase: "New"
-        moon_phase: "New Moon"
         season: "Winter"
         tarot_suit: "Swords"
         element: "Air"
       "10":
-        phase: "Waxing"
-        moon_phase: "Waxing Moon"
         season: "Spring"
         tarot_suit: "Wands"
         element: "Fire"
       "11":
-        phase: "Full"
-        moon_phase: "Full Moon"
         season: "Summer"
         tarot_suit: "Cups"
         element: "Water"
       "01":
-        phase: "Waning"
-        moon_phase: "Waning Moon"
         season: "Fall"
         tarot_suit: "Pentacles"
         element: "Earth"
@@ -1127,20 +1119,3 @@ divination:
     template: "This card's musical pattern plays {notes}, creating a {quality} feeling."
   tarot:
     template: "This card corresponds to {tarot_card} in the {cycle_phase} aspect, suggesting {tarot_meaning}."
-
-# Musical System
-musical_system:
-  bit_to_note_mapping:
-    bit1: "C"
-    bit2: "D"
-    bit3: "E"
-    bit4: "F"
-    bit5: "G"
-    bit6: "A"
-    bit7: "B"
-    bit8: "C (octave)"
-  interpretation:
-    "1": "Note is played"
-    "0": "Note is silent"
-  scale: "C Major"
-  duration: "Equal duration for each note (eighth notes)"

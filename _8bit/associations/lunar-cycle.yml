@@ -1,0 +1,259 @@
+# Lunar Cycle Associations for 8-Bit Oracle
+version: "1.1.0"
+
+# Lunar Cycle Determination System
+lunar_cycle_system:
+  name: "Refined Lunar Mapping System"
+  description: "Maps each card to a specific half-phase of the moon during a specific lunar cycle in a specific season, creating a 1:1 mapping between calendar days and cards."
+  
+  # Calculation Method
+  calculation:
+    season: "Determined by bits 7-8 (00=Winter, 10=Spring, 11=Summer, 01=Fall)"
+    lunar_cycle: "(bit_count_positions_1_6 % 4) + 1  # Yields lunar cycle 1-4 within the season"
+    lunar_phase: "(decimal_value ÷ 2) % 8  # Yields phase 0-7"
+    phase_half: "decimal_value % 2  # 0 = First Half, 1 = Second Half"
+    complete_formula: "Each card represents a unique season + lunar cycle + lunar phase + phase half combination"
+  
+  # Astronomical Correspondences
+  astronomical_meaning:
+    total_combinations: "4 seasons × 4 lunar cycles × 8 phases × 2 halves = 256 unique combinations"
+    coverage: "Each of the 256 cards maps to exactly one combination"
+    calendar_precision: "Each card represents approximately 1.75 days in a specific lunar month in a specific season"
+    inactive_cycles: "When a season has fewer than 4 lunar cycles, cards mapped to non-occurring cycles represent potential or background influences"
+  
+  # Phase Mappings
+  phases:
+    "0":
+      name: "Dark Moon"
+      first_half:
+        name: "Dark Moon (Deepening)"
+        illumination: "0% illumination, approaching new moon"
+        description: "The deepest void before the new cycle begins, complete darkness"
+        keywords: ["void", "potential", "emptiness", "surrender", "reset", "mystery"]
+        symbols: ["black circle", "void", "abyss", "empty vessel"]
+        qualities: "Silent, receptive, hidden, mysterious, potent"
+        color: "Black"
+      second_half:
+        name: "Dark Moon (Emerging)"
+        illumination: "0-1% illumination, barely emerging"
+        description: "The moment of transition from complete darkness to first emergence"
+        keywords: ["threshold", "emergence", "conception", "potential", "shift", "cusp"]
+        symbols: ["black circle with faint edge", "germinating seed", "empty vessel with drop"]
+        qualities: "Pregnant with possibility, threshold awareness, cusp of becoming"
+        color: "Deepest Indigo"
+    
+    "1":
+      name: "New Moon"
+      first_half:
+        name: "New Moon (Birthing)"
+        illumination: "1-6% illumination, waxing"
+        description: "The first visible sliver of light, beginning of new growth"
+        keywords: ["beginning", "birth", "emergence", "spark", "initiation", "genesis"]
+        symbols: ["thin crescent", "sprouting seed", "first breath", "dawn"]
+        qualities: "Fresh, innocent, nascent, delicate, pristine"
+        color: "Deep Blue-Violet"
+      second_half:
+        name: "New Moon (Strengthening)"
+        illumination: "6-12.5% illumination, waxing"
+        description: "Growing sliver of light, gathering momentum and definition"
+        keywords: ["definition", "gathering", "forming", "direction", "intention", "blueprint"]
+        symbols: ["widening crescent", "unfurling leaf", "first steps", "outline forming"]
+        qualities: "Intentional, defining, clarifying, gathering strength"
+        color: "Deep Blue"
+    
+    "2":
+      name: "First Quarter"
+      first_half:
+        name: "First Quarter (Challenging)"
+        illumination: "12.5-25% illumination, waxing"
+        description: "Approaching the quarter point, growing through challenge"
+        keywords: ["challenge", "effort", "direction", "determination", "friction", "adjustment"]
+        symbols: ["thickening crescent", "climbing slope", "facing obstacles", "decision point"]
+        qualities: "Determined, effortful, resolute, challenged, decisive"
+        color: "Royal Blue"
+      second_half:
+        name: "First Quarter (Balancing)"
+        illumination: "25-37.5% illumination, waxing"
+        description: "Half illuminated, point of decision and equal balance of light and dark"
+        keywords: ["balance", "decision", "commitment", "action", "turning point", "halfway"]
+        symbols: ["half moon", "scale", "crossroads", "pivotal moment", "equal parts"]
+        qualities: "Balanced, decisive, committed, turning, pivotal"
+        color: "Sky Blue"
+    
+    "3":
+      name: "Waxing Gibbous"
+      first_half:
+        name: "Waxing Gibbous (Building)"
+        illumination: "37.5-50% illumination, waxing"
+        description: "Light overtaking darkness, focused building and refinement"
+        keywords: ["building", "refining", "perfecting", "progressing", "focus", "development"]
+        symbols: ["growing gibbous", "structure rising", "gathering resources", "refinement"]
+        qualities: "Focused, diligent, constructive, progressive, detail-oriented"
+        color: "Pale Blue"
+      second_half:
+        name: "Waxing Gibbous (Culminating)"
+        illumination: "50-62.5% illumination, waxing"
+        description: "Approaching fullness, anticipating completion and revelation"
+        keywords: ["anticipation", "preparation", "near completion", "almost", "readiness", "culmination"]
+        symbols: ["nearly full moon", "ripening fruit", "final preparations", "dress rehearsal"]
+        qualities: "Anticipatory, prepared, nearly complete, poised, expectant"
+        color: "Silver-Blue"
+    
+    "4":
+      name: "Full Moon"
+      first_half:
+        name: "Full Moon (Illuminating)"
+        illumination: "62.5-75% illumination, at peak"
+        description: "Maximum illumination beginning, full revelation and manifestation"
+        keywords: ["revelation", "illumination", "clarity", "manifestation", "realization", "fulfillment"]
+        symbols: ["full bright orb", "open eye", "open flower", "complete circle"]
+        qualities: "Illuminated, revealed, manifest, complete, powerful"
+        color: "Bright Silver"
+      second_half:
+        name: "Full Moon (Revealing)"
+        illumination: "75-87.5% illumination, at peak"
+        description: "Sustained maximum illumination, complete visibility and awareness"
+        keywords: ["visibility", "awareness", "fullness", "display", "communion", "peak"]
+        symbols: ["radiant full orb", "high tide", "fully bloomed flower", "total illumination"]
+        qualities: "Luminous, aware, expressive, fulfilled, communal"
+        color: "Brilliant White"
+    
+    "5":
+      name: "Waning Gibbous"
+      first_half:
+        name: "Waning Gibbous (Sharing)"
+        illumination: "87.5-75% illumination, waning"
+        description: "Beginning to release light, sharing wisdom and abundance"
+        keywords: ["sharing", "teaching", "abundance", "giving", "disseminating", "distributing"]
+        symbols: ["slightly waning orb", "abundant harvest", "teaching", "sharing circle"]
+        qualities: "Generous, expressive, distributive, abundant, wise"
+        color: "Pale Gold"
+      second_half:
+        name: "Waning Gibbous (Integrating)"
+        illumination: "75-62.5% illumination, waning"
+        description: "Continued release, integrating lessons and experience"
+        keywords: ["integration", "reflection", "digestion", "processing", "assimilation", "understanding"]
+        symbols: ["waning gibbous", "processing", "absorbing", "internalizing wisdom"]
+        qualities: "Reflective, integrated, understanding, digesting, wise"
+        color: "Gold"
+    
+    "6":
+      name: "Last Quarter"
+      first_half:
+        name: "Last Quarter (Releasing)"
+        illumination: "62.5-50% illumination, waning"
+        description: "Approaching half darkness, active release and letting go"
+        keywords: ["release", "letting go", "clearing", "reorientation", "dismantling", "preparation"]
+        symbols: ["half dark moon", "clearing space", "pruning", "releasing grip", "clean slate"]
+        qualities: "Releasing, clearing, relinquishing, simplifying, resolving"
+        color: "Orange-Gold"
+      second_half:
+        name: "Last Quarter (Resolving)"
+        illumination: "50-37.5% illumination, waning"
+        description: "Half illuminated, point of resolution and reorientation"
+        keywords: ["resolution", "conclusion", "completion", "reorientation", "reassessment", "wisdom"]
+        symbols: ["half moon", "resolved conflict", "completed cycle", "reconciliation", "assessment"]
+        qualities: "Resolute, balanced, wise, complete, transitional"
+        color: "Amber"
+    
+    "7":
+      name: "Balsamic Moon"
+      first_half:
+        name: "Balsamic Moon (Distilling)"
+        illumination: "37.5-12.5% illumination, waning"
+        description: "Light fading significantly, distilling wisdom and essence"
+        keywords: ["distillation", "essence", "wisdom", "preparation", "reduction", "essence"]
+        symbols: ["thin crescent", "essential oil", "final drop", "concentrated wisdom"]
+        qualities: "Essential, concentrated, distilled, wise, preparatory"
+        color: "Deep Red"
+      second_half:
+        name: "Balsamic Moon (Surrendering)"
+        illumination: "12.5-0% illumination, waning to darkness"
+        description: "Final sliver of light before darkness, complete surrender and acceptance"
+        keywords: ["surrender", "acceptance", "closure", "transition", "ending", "completion"]
+        symbols: ["barely visible crescent", "final breath", "closing door", "empty bowl"]
+        qualities: "Surrendering, accepting, transitional, completing, empty"
+        color: "Deep Purple"
+
+  # Lunar Cycles Within Seasons
+  lunar_cycles:
+    description: "Each season potentially contains 4 lunar cycles, though in reality a season may have 3 or occasionally 4 cycles"
+    cycle_meanings:
+      first_cycle:
+        name: "Inception Cycle"
+        description: "The beginning of the season's energy, establishing the seasonal pattern"
+        keywords: ["inception", "establishment", "pattern-setting", "introduction", "foundation"]
+      second_cycle:
+        name: "Development Cycle"
+        description: "The growth and expansion of the season's energy, developing its themes"
+        keywords: ["development", "growth", "expansion", "exploration", "amplification"]
+      third_cycle:
+        name: "Culmination Cycle"
+        description: "The peak expression of the season's energy, bringing its themes to fruition"
+        keywords: ["culmination", "fruition", "realization", "fulfillment", "expression"]
+      fourth_cycle:
+        name: "Transition Cycle"
+        description: "The transitional energy of the season, preparing for the next season"
+        keywords: ["transition", "preparation", "blending", "shifting", "bridge"]
+        note: "This cycle doesn't occur in every season every year, but cards mapped to it still hold meaningful energy"
+
+# Calendar Implementation
+calendar_implementation:
+  day_to_card_mapping:
+    description: "This system creates a direct 1:1 mapping between calendar days and oracle cards"
+    process: "For any calendar date, determine its season, lunar cycle within that season, lunar phase, and phase half"
+    formula: |
+      1. Identify the season (Winter, Spring, Summer, Fall)
+      2. Identify which lunar cycle of that season (1st, 2nd, 3rd, or 4th)
+      3. Identify the lunar phase based on illumination percentage
+      4. Identify whether it's the first or second half of that phase
+      5. This maps to exactly one card in the oracle
+    astronomical_precision: "Each card corresponds to approximately 1.75 days in the lunar cycle"
+  
+  calculator_guidance:
+    description: "A digital or physical calendar reference can be created to map dates to cards"
+    suggestion: "Create a perpetual lunar calendar that maps each day of the year to its corresponding card"
+    special_cases: "When a 4th lunar cycle doesn't occur in a season, those cards represent potential or background energies"
+
+# Card Generation Implications
+card_generation:
+  card_identification:
+    naming: "Include the complete lunar designation in the card's identification"
+    example: "Strategic Frost (Dark Moon Emerging, Inception Cycle of Winter)"
+  
+  visual_elements:
+    lunar_indicator: "Include a small lunar phase icon showing exact illumination percentage"
+    color_scheme: "Use the phase half's associated color as an accent in the card design"
+    symbolic_elements: "Incorporate symbols associated with the specific phase half"
+  
+  interpretation_guidance:
+    - "Include guidance specific to the phase half's unique qualities"
+    - "Note how the lunar cycle within the season affects the energy expression"
+    - "Highlight the card's connection to specific days in the calendar year"
+    - "Provide insight into how the card's energy differs from other cards of the same hexagram in different lunar expressions"
+
+# Calculation Examples
+calculation_examples:
+  - binary: "00000000"
+    decimal: 0
+    season: "Winter"
+    lunar_cycle: 1
+    lunar_phase: "Dark Moon"
+    phase_half: "First Half (Deepening)"
+    complete_identification: "Dark Moon Deepening, Inception Cycle of Winter"
+  
+  - binary: "10111000"
+    decimal: 184
+    season: "Winter"
+    lunar_cycle: 1
+    lunar_phase: "Last Quarter"
+    phase_half: "Second Half (Resolving)"
+    complete_identification: "Last Quarter Resolving, Inception Cycle of Winter"
+  
+  - binary: "11111111"
+    decimal: 255
+    season: "Fall"
+    lunar_cycle: 4
+    lunar_phase: "Balsamic Moon"
+    phase_half: "Second Half (Surrendering)"
+    complete_identification: "Balsamic Moon Surrendering, Transition Cycle of Fall"

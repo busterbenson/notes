@@ -23,12 +23,12 @@
 
 ## Cycle Phases (Bits 7-8)
 
-| Bits | Season  | Moon Phase  | Element | Tarot Suit | Card Naming       |
+| Bits | Season  | Element | Tarot Suit | Card Naming       |
 |------|---------|------------|---------|------------|-------------------|
-| 00   | Winter  | New Moon   | Air     | Swords     | [Card] of Winter  |
-| 01   | Spring  | Waxing Moon| Fire    | Wands      | [Card] of Spring  |
-| 11   | Summer  | Full Moon  | Water   | Cups       | [Card] of Summer  |
-| 10   | Autumn  | Waning Moon| Earth   | Pentacles  | [Card] of Autumn  |
+| 00   | Winter  | Air     | Swords     | [Card] of Winter  |
+| 10   | Spring  | Fire    | Wands      | [Card] of Spring  |
+| 11   | Summer  | Water   | Cups       | [Card] of Summer  |
+| 01   | Autumn  | Earth   | Pentacles  | [Card] of Autumn  |
 
 ## Inner & Outer World (3-Bit) Combinations
 
