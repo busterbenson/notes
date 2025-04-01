@@ -1,6 +1,7 @@
 # Card 00000000.yml - The Moon in Winter (Sage)
 card:
   # Summary
+  version:     "1.0"         
   binary:      "00000000"
   decimal:     "0"
   hexadecimal: "00"

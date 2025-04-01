@@ -4,6 +4,7 @@
 # Card [XXXXXXXX].yml - [Card Name] in [Season] ([Archetype])
 card:
   # Summary
+  version:     "1.0"         # Version of the card template used 
   binary:      "[XXXXXXXX]"  # 8-bit binary code
   decimal:     "[DDD]"       # Decimal equivalent
   hexadecimal: "[XX]"        # Hexadecimal equivalent

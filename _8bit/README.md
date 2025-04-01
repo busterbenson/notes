@@ -4,9 +4,6 @@ A divination system based on 8-bit binary patterns, combining elements of tarot,
 
 ## Project Structure
 
-- `card-template.yml` - Template for creating new cards with complete structure
-- `card-example-00000000.yml` - Example card (The Moon in Winter) with all fields filled in
-
 ### Directories
 
 - `/associations/` - Reference documents and core data
@@ -23,6 +20,8 @@ A divination system based on 8-bit binary patterns, combining elements of tarot,
   - Contains evaluation and analysis of different mapping approaches
   
 - `/cards/` - Individual card files organized by pattern similarity
+  - `card-template.yml` - Template for creating new cards with complete structure
+  - `card-example-00000000.yml` - Example card (The Moon in Winter) with all fields filled in
   - Organized in subdirectories by first 6 bits (e.g., `/000000/`, `/010010/`)
   - Each card is named by its binary pattern (e.g., `00000000.yml`)
 
@@ -33,7 +32,7 @@ A divination system based on 8-bit binary patterns, combining elements of tarot,
 ## Card Generation Workflow
 
 1. **Create a new card file**:
-   - Copy `card-template.yml` to the appropriate subdirectory in `/cards/`
+   - Copy `/cards/card-template.yml` to the appropriate subdirectory in `/cards/`
    - Name it according to its binary pattern (e.g., `01010101.yml`)
    - Fill in all fields based on the template
 

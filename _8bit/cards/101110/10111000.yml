@@ -1,0 +1,142 @@
+# Card 10111000.yml - Seven of Swords in Winter (Hero)
+card:
+  # Summary
+  version:     "1.0"        # Version of the card template used 
+  binary:      "10111000"   # 8-bit binary code
+  decimal:     "184"        # Decimal equivalent
+  hexadecimal: "B8"         # Hexadecimal equivalent
+
+  # Basic Info
+  # These are crude associations that serve as inputs for the interpreted meaning 
+  basic_info: 
+    desc: "This card embodies the energy of the Seven of Swords expressed in the Winter season as a Hero archetype. With intuition, capacity, expectations, and support all present, but lacking ability and clear options, this card represents a strategic retreat or calculated risk. The Winter setting brings a cold, intellectual approach to this energy, suggesting careful planning and foresight rather than brash action. As the Hero archetype, this represents mastery of strategic withdrawal and self-preservation, knowing when to conserve energy and resources for the battles that truly matter."
+    
+    keywords: ["strategy", "cunning", "retreat", "conservation", "foresight", "calculation", "self-preservation"]
+    symbols: ["swords partially gathered", "moon shadows", "strategic map", "snow-covered path", "winter stars", "hidden treasure", "silent escape"]
+  
+  # Direct Associations (these come directly from various associations to the bits and symbol systems)
+  # These are hard-coded into our system and are inputs used to generate interpreted meanings
+  direct_associations:
+    archetype: "Hero" # Determined by resonant season and seasonal cycle
+    archetype_color: "Gold" # Sage: Iridescent, Fool: Turquoise, Hero: Gold, Monster: Purple
+    gender: "feminine" # Based on bit count - 4 bits = Hero and Monster are masculine, Fool and Sage are feminine
+
+    ## Inner World (bits 1-3)
+    inner_world:
+      color: "Magenta" # From rgb_colors mapping
+      trigram: "☲" # From i_ching_trigrams mapping
+      meaning: "Intuitive and resourceful but lacking practical skills; has the vision and space but needs help executing" # From composite_frameworks.inner_world.meanings
+
+    ## Outer World (bits 4-6)
+    outer_world:
+      color: "Cyan" # From rgb_colors mapping
+      trigram: "☴" # From i_ching_trigrams mapping
+      meaning: "Support and options present, but misaligned with expectations; alternative paths with backing" # From composite_frameworks.outer_world.meanings
+
+    ## Cycle (bits 7-8)
+    cycle: 
+      season: "Winter" # From bit_definitions.bit78.meanings
+      tarot_suit: "Swords" # From bit_definitions.bit78.meanings
+      moon_phase: "New Moon" # From bit_definitions.bit78.meanings
+      element: "Air" # From bit_definitions.bit78.meanings
+
+    # Tarot
+    tarot:
+      card: "Seven of Swords" # The corresponding tarot card for bits 1-6
+      cycle_suit: "Swords" # The corresponding tarot suit for bits 7-8
+      cycle_moon: "New Moon"
+      seasonal_expression: "In Winter, the Seven of Swords takes on its most masterful expression as the Hero, demonstrating intellectual prowess and calculated strategy. Here, the cunning and cleverness of this card is refined to an art form, showing expertise in knowing when to advance and when to retreat in order to preserve resources."
+
+    # Hexagram-related
+    hexagram:
+      i_ching:
+        number: 49
+        name: "Ge"
+        label: "Revolution"
+        description: "Molting, radical change, transformation, rebellion"
+      gene_key:
+        number: 49
+        shadow: "Reaction"
+        gift: "Revolution"
+        siddhi: "Rebirth"
+        meaning: "A journey from instinctive responses to conscious transformation and ultimately complete spiritual renewal"
+
+  # Interpreted Meanings (combining all direct associations into a coherent whole)
+  # This is where the synthesis happens - integrating all direct associations
+  interpreted_meanings: 
+    basic:
+      name_6bit: "Strategic Retreat"
+      name_8bit: "Winter's Calculated Risk"
+      gender: "feminine" # Based on bit count logic from associations.yml
+
+    # Oracle card creation - captures the essence of all 8 bits and associations
+    # Follow style guidelines for consistent deck creation
+    oracle_card:
+      card_name: "Strategic Frost"
+      card_creature: "The Frost Tactician - a feminine figure with the keen, watchful presence of an arctic fox, moving expertly through the winter landscape while carrying precious knowledge"
+      question_posed: "What battles should you not fight? What resources must you preserve for more important confrontations?"
+      card_scene: "Under a dark winter sky lit only by cold stars, a feminine figure in gold and silver cloaks moves silently through a snow-covered mountain pass. She carries a strategic map and three swords, leaving four others partially hidden in the snow behind her. Her face shows determination and calculation, as if executing a complex plan requiring perfect timing. In the background, a fortress casts long shadows on the snow, while hidden pathways reveal themselves only to those who know where to look. The scene conveys a sense of necessary retreat, but one executed with mastery and foresight rather than fear."
+      universal_symbol: "A crossed sword and map under a crescent moon"
+      mood: "Calculating, strategic, resourceful, deliberate"
+
+      # Image generation prompt - use this template but fill with specific details
+      prompt_for_image_gen: "Limited color risograph-style illustration of a feminine figure in winter attire moving through a snowy mountain pass at night, carrying three swords and a strategic map.
+      Use magenta for foreground elements (inner world) and cyan for background/environment (outer world), with gold highlights.
+      Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '10111000' and card title 'STRATEGIC FROST' in bold, without corner decorations or symbols.
+      Feature a crescent moon, arctic fox companion, crossed swords, and a strategic map.
+      The scene should evoke the mood of calculation, strategy, and deliberate action and incorporate subtle seasonal/elemental references appropriate for Winter.
+      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
+      
+  # Related Cards
+  related_cards: 
+    # Season variations of the same card
+    same_card_winter: "10111000" # The Seven of Swords in Winter
+    same_card_spring: "10111010" # The Seven of Swords in Spring
+    same_card_summer: "10111011" # The Seven of Swords in Summer
+    same_card_fall: "10111001" # The Seven of Swords in Fall
+        
+    # Opposites
+    opposite: "01000111" # The opposite binary pattern
+    
+    # Related thematically
+    thematic_pair: "01001110" # Five of Cups - also deals with partial loss/gain
+    
+    # Complete cycle - order starts with the resonant season (Sage)
+    full_cycle: ["10111011","10111000","10111010","10111001"] # The Seven of Swords in all seasons
+    
+  # Bit Values - for reference and calculation
+  bit_values:
+    bit1: "1"  # Intuition
+    bit2: "0"  # Ability
+    bit3: "1"  # Capacity
+    bit4: "1"  # Expectations
+    bit5: "1"  # Support
+    bit6: "0"  # Options
+    bit78: "00" # Cycle phase
+    
+  # Fractal Manifestations - how this pattern appears at different scales
+  fractal_meanings:
+    quantum:
+      pattern: "A quantum particle that appears to take multiple paths simultaneously while maintaining coherence with its environment"
+      insight: "Strategic withdrawal isn't absence but selective presence - being everywhere that matters and nowhere that doesn't"
+    
+    biological:
+      pattern: "Animals that camouflage or adapt to winter conditions, preserving energy while maintaining readiness"
+      insight: "Conservation of resources during scarcity is not surrender but evolutionary wisdom"
+    
+    psychological:
+      pattern: "The mind's ability to focus selectively on critical information while filtering out distractions"
+      insight: "Mental clarity comes not from processing everything but from strategic selection of what matters most"
+    
+    social:
+      pattern: "Communities that pool and distribute limited resources during times of scarcity or challenge"
+      insight: "Group survival during difficult times requires both strategic withdrawal and selective sharing"
+    
+    ecological:
+      pattern: "Winter ecosystems that appear dormant but are actually conserving and redistributing energy beneath the surface"
+      insight: "What appears as stillness often conceals crucial preparation for future renewal"
+    
+    cosmic:
+      pattern: "Galaxies that appear to retreat from each other while maintaining invisible connections through gravitational forces"
+      insight: "Distance and separation are often illusions that mask deeper, invisible connections"
