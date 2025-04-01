@@ -1,5 +1,17 @@
 # 8-Bit Oracle Card Generation Style Guide
 
+## Project Overview
+
+The 8-Bit Oracle is a divination system based on 8-bit binary patterns that combines elements of tarot, I Ching, astrology, and other symbolic frameworks into a cohesive system. Each card represents a unique binary pattern where:
+
+- **Bits 1-3**: Inner world resources (Intuition, Ability, Capacity)
+- **Bits 4-6**: Outer world resources (Expectations, Support, Options)
+- **Bits 7-8**: Seasonal cycle (Winter, Spring, Summer, Fall)
+
+Each card embodies a specific archetype (Sage, Fool, Hero, or Monster) and lunar phase based on mathematical properties of its pattern. The binary structure creates a system where each card represents a specific day in the natural calendar, linking cosmic patterns to human experience.
+
+The imagery for each card should visually represent these symbolic layers while maintaining a consistent aesthetic across the deck. Cards should evoke their binary nature through a limited color palette that represents inner world, outer world, and archetypal energies.
+
 ## Card Dimensions and Layout
 - **Aspect Ratio**: 3:5 (traditional tarot card proportions)
 - **Resolution**: 1200 x 2000 pixels
