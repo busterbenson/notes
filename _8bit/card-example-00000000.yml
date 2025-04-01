@@ -1,0 +1,140 @@
+# Card 00000000.yml - The Moon in Winter (Sage)
+card:
+  # Summary
+  binary:      "00000000"
+  decimal:     "0"
+  hexadecimal: "00"
+
+  # Basic Info
+  # These are crude associations, and will serve as inputs for the interpreted meaning 
+  basic_info: 
+    desc: "This card represents darkness, the unconscious, and the hidden - the void where all potential lies dormant. The all-zeros pattern perfectly captures the absence of clarity and certainty, with no resources activated. This is the Moon in its Winter aspect, embodying the Sage archetype who has transcended even the darkness. Rather than fearing the void, the Sage inhabits and understands it as the source of all creation. Symbolizing mystery, confusion, and hidden forces, this card reminds us that wisdom can be found in acknowledging the unknown."
+    
+    keywords: ["darkness", "unconscious", "illusion", "mystery", "confusion", "hidden forces"]
+    symbols: ["empty circle", "void", "black hole", "night sky without stars", "new moon", "still waters reflecting nothing"]
+  
+  # Direct Associations (these come directly from various associations to the bits and various symbol systems)
+  # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
+  direct_associations:
+    archetype: "Sage" # Fool, Hero, Monster, Sage depending on resonant season for the hexagram
+    archetype_color: "Iridescent" # Sage: Iridescent, Fool: Turquoise, Hero: Gold, Monster: Purple
+    gender: "neutral" # With 0 bits set to 1, all archetypes are gender-neutral
+  
+    ## Inner World (bits 1-3)
+    inner_world:
+      color: "Black"
+      trigram: "☷" # Earth
+      meaning: "Complete absence of inner resources; intuition, ability, and capacity are all absent"
+
+    ## Outer World (bits 4-6)
+    outer_world:
+      color: "Black"
+      trigram: "☷" # Earth
+      meaning: "Complete lack of outer resources; expectations, support, and options are all absent"
+
+    ## Cycle (bits 7-8)
+    cycle: 
+      season: "Winter"
+      tarot_suit: "Swords"
+      moon_phase: "New Moon"
+      element: "Air"
+
+    # Tarot
+    tarot:
+      card: "The Moon" # The corresponding tarot card for bits 1-6
+      cycle_suit: "Swords"   # The corresponding tarot suit for bits 7-8
+      cycle_moon: "New"
+      seasonal_expression: "The Moon energy expressed through the wisdom of the Sage, modified by Winter's qualities of stillness and reflection, creating a profound understanding of the void and darkness as the essential foundation of all creation and potential."
+
+    # Hexagram-related
+    hexagram:
+      i_ching:
+        number: 2
+        name: "Kun"
+        label: "The Receptive"
+        description: "Pure yin, yielding, responsive, accepting, following"
+      gene_key:
+        number: 2
+        shadow: "Dislocation"
+        gift: "Orientation"
+        siddhi: "Unity"
+        meaning: "A journey from feeling lost and disconnected to finding your true direction and ultimately experiencing oneness with all"
+
+  # Interpreted Meanings (combining all of the direct associations in various ways)
+  # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
+  interpreted_meanings: 
+    basic:
+      name_6bit: "The Moon"
+      name_8bit: "The Moon in Winter"
+      gender: "neutral" # With 0 bits set to 1, all archetypes are gender neutral
+
+    # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations
+    oracle_card:
+      card_name: "Void Mirror"
+      card_creature: "A gender-neutral sage whose body appears as a silhouette of stars against the deeper darkness, merging with the void yet somehow distinct from it, whose eyes reflect the unlimited potential contained in absolute emptiness"
+      question_posed: "What wisdom might emerge if you fully embraced the darkness you've been avoiding?"
+      card_scene: "A gender-neutral figure with indistinct features stands perfectly still at the center of absolute darkness. Their form is defined only by an outline of tiny stars, creating a silhouette of cosmic light against the even deeper void behind them. There is no landscape, no horizon, only graduated shades of darkness extending in all directions. Where the figure's eyes should be, there are instead two perfectly circular voids that somehow reflect the observer's own gaze back at them. In one hand, the figure holds what appears to be a mirror made of polished obsidian that reflects nothing yet seems to contain everything. The figure's posture conveys neither fear nor discomfort in this lightless realm, but rather a profound understanding and acceptance of darkness as the necessary foundation of all existence. Around their feet, what initially appears to be simple ripples in water reveals itself to be ripples in space-time itself, as if the void is a fluid medium through which all potential must pass. The new moon is present only as an absence against the black sky, defined by the stars that aren't visible within its boundary. The entire scene conveys a sense of vastness and infinite potential rather than emptiness or negation - the darkness not as an end but as the beginning of all possibility."
+      universal_symbol: "The obsidian mirror - reflecting nothing yet containing everything, representing the paradox of emptiness as the source of all potential"
+      mood: "Profound acceptance, mysterious anticipation, the serene recognition that all creation emerges from darkness and returns to it"
+
+      # Image generation prompt
+      prompt_for_image_gen: "Limited color risograph-style illustration of a gender-neutral figure standing in absolute darkness, their body appearing only as a silhouette of tiny stars against the deeper void.
+      Use BLACK for foreground elements (inner world) and BLACK for background/environment (outer world), with IRIDESCENT midnight blue highlights.
+      Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
+      Include a clean, full-width title bar at the bottom, with centered 8-bit code '00000000' and card title 'VOID MIRROR' in bold, without corner decorations or symbols.
+      Feature a handheld obsidian mirror that reflects nothing, ripples in space-time at the figure's feet, and the new moon visible only as an absence of stars in the night sky.
+      The scene should evoke the mood of profound acceptance and mysterious anticipation, incorporating subtle seasonal/elemental references appropriate for Winter (e.g., stillness, breath visible in cold air, crystalline formations in darkness).
+      Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
+      
+  # Related Cards
+  related_cards: 
+    # Season variations of the same card
+    same_card_winter: "00000000" # The Moon in Winter (Sage) - this card
+    same_card_spring: "00000010" # The Moon in Spring (Fool)
+    same_card_summer: "00000011" # The Moon in Summer (Hero)
+    same_card_fall: "00000001" # The Moon in Fall (Monster)
+        
+    # Opposites
+    opposite: "11111111" # The Sun in Summer - complete darkness vs. complete illumination
+    
+    # Related thematically
+    thematic_pair: "01001000" # The Abysmal in Winter - profound mystery related to profound depth
+    
+    # Complete cycle - starts with the resonant season (Sage)
+    full_cycle: ["00000000","00000010","00000011","00000001"] # Winter (Sage), Spring (Fool), Summer (Hero), Fall (Monster)
+    
+  # Bit Values
+  bit_values:
+    bit1: "0"  # Intuition
+    bit2: "0"  # Ability
+    bit3: "0"  # Capacity
+    bit4: "0"  # Expectations
+    bit5: "0"  # Support
+    bit6: "0"  # Options
+    bit78: "00" # Cycle phase (Winter)
+    
+  # Fractal Manifestations
+  fractal_meanings:
+    quantum:
+      pattern: "Quantum vacuum - the apparent emptiness that contains infinite virtual particles"
+      insight: "What appears as nothing actually contains infinite potential when observed at the deepest level"
+    
+    biological:
+      pattern: "Dormancy in winter - seeds containing life potential in darkness"
+      insight: "Life forces withdraw and consolidate in darkness, preparing for future growth"
+    
+    psychological:
+      pattern: "The unconscious mind - hidden forces that shape conscious experience"
+      insight: "What we are not aware of often has the most powerful influence on what we experience"
+    
+    social:
+      pattern: "Cultural blindspots - collective unconscious patterns that remain unseen"
+      insight: "Communities are often shaped most by what they collectively do not see or acknowledge"
+    
+    ecological:
+      pattern: "Deep ocean environments - life forms evolved to thrive in complete darkness"
+      insight: "Even in apparent absence of light and resources, life adapts and finds new pathways"
+    
+    cosmic:
+      pattern: "Dark matter and dark energy - invisible forces shaping the visible universe"
+      insight: "The unseen and unmeasurable may constitute the majority of what exists"

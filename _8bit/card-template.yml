@@ -11,7 +11,7 @@ card:
   # Basic Info
   # These are crude associations that serve as inputs for the interpreted meaning 
   basic_info: 
-    desc: "[A paragraph describing the card's core energy and meaning - focus on the combination of hexagram energy with the seasonal/archetypal expression]"
+    desc: "[A paragraph describing the card's core energy and meaning - focus on the combination of hexagram energy with the seasonal/archetypal expression. Include how the bit pattern reflects resources present/absent and how this connects to the card's overall meaning.]"
     
     keywords: ["[keyword 1]", "[keyword 2]", "[keyword 3]", "[keyword 4]", "[keyword 5]", "[keyword 6]"]
     symbols: ["[symbol 1]", "[symbol 2]", "[symbol 3]", "[symbol 4]", "[symbol 5]", "[symbol 6]"]
@@ -21,7 +21,7 @@ card:
   direct_associations:
     archetype: "[Sage/Fool/Hero/Monster]" # Determined by resonant season and seasonal cycle
     archetype_color: "[Color]" # Sage: Iridescent, Fool: Turquoise, Hero: Gold, Monster: Purple
-    gender: "[neutral/masculine/feminine]" # neutral, masculine, or feminine based on logic in associations.yml
+    gender: "[neutral/masculine/feminine]" # Based on bit count - 0/6 bits = neutral, otherwise follows pattern in associations.yml
 
     ## Inner World (bits 1-3)
     inner_world:
@@ -47,7 +47,7 @@ card:
       card: "[Card name]" # The corresponding tarot card for bits 1-6
       cycle_suit: "[Suit]" # The corresponding tarot suit for bits 7-8
       cycle_moon: "[Moon phase]"
-      seasonal_expression: "[Description of how this hexagram energy expresses in this season as this archetype]"
+      seasonal_expression: "[Description of how this hexagram energy expresses in this season as this archetype - expand on the relationship between the card's core energy and its seasonal/archetypal manifestation]"
 
     # Hexagram-related
     hexagram:
@@ -69,25 +69,21 @@ card:
     basic:
       name_6bit: "[Name based on hexagram]"
       name_8bit: "[Name incorporating season]"
+      gender: "[gender]" # Based on bit count logic from associations.yml
 
     # Oracle card creation - captures the essence of all 8 bits and associations
     # Follow style guidelines for consistent deck creation
     oracle_card:
       card_name: "[Evocative name for the card]"
-      # GENDER ASSIGNMENT IS REQUIRED - count the 1s in bits 1-6 and apply the corresponding gender:
-      # - For 3 or 5 bits set to 1: Hero and Monster are feminine, Fool and Sage are masculine
-      # - For 2 or 4 bits set to 1: Hero and Monster are masculine, Fool and Sage are feminine
-      # - For 0 or 6 bits set to 1: All archetypes are gender-neutral
-      # Always use explicit gender terms like "feminine", "masculine", "female", "male" or "gender-neutral"
-      card_creature: "[Description of the mythological figure or character that embodies this card's energy, with EXPLICIT gender terms based on bit count]"
-      question_posed: "[Question this card asks the querent]"
-      card_scene: "[Detailed description of the card's imagery, incorporating all symbolic elements, colors, and archetype - maintain consistent gender representation]"
-      universal_symbol: "[Core symbol that captures the essence of this card]"
-      mood: "[Emotional/energetic quality of the card]"
+      card_creature: "[Description of the mythological figure or character that embodies this card's energy, with correct gender terms based on bit count]"
+      question_posed: "[Question this card asks the querent - should prompt reflection about the core themes]"
+      card_scene: "[Detailed description of the card's imagery, incorporating all symbolic elements, colors, and archetype - maintain consistent gender representation. Include landscape, figure, action, symbolic objects, and atmospheric elements that capture the essence of the card.]"
+      universal_symbol: "[Core symbol that captures the essence of this card - should be distinctive and memorable]"
+      mood: "[Emotional/energetic quality of the card - what feeling does it evoke?]"
 
       # Image generation prompt - use this template but fill with specific details
       prompt_for_image_gen: "Limited color risograph-style illustration of [short scene description].
-      Use [INNER WORLD COLOR] for foreground elements (inner world) and [OUTER WORLD COLOR] for background/environment (outer world), with [ACCENT COLOR] for highlights.
+      Use [INNER WORLD COLOR] for foreground elements (inner world) and [OUTER WORLD COLOR] for background/environment (outer world), with [ARCHETYPE COLOR] highlights.
       Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
       Include a clean, full-width title bar at the bottom, with centered 8-bit code '[XXXXXXXX]' and card title '[CARD TITLE]' in bold, without corner decorations or symbols.
       Feature [key symbolic elements, e.g., moon phase, animal companions, symbolic object].
@@ -103,12 +99,12 @@ card:
     same_card_fall: "[XXXXXX01]" # The [Hexagram] in Fall
         
     # Opposites
-    opposite: "[Inverted binary]" # [Name of opposite card]
+    opposite: "[Inverted binary]" # [Name of opposite card - meaningful relationship]
     
     # Related thematically
-    thematic_pair: "[Related binary]" # [Name of thematically related card]
+    thematic_pair: "[Related binary]" # [Name of thematically related card - explain connection]
     
-    # Complete cycle - order depends on resonant season, always starts with Sage
+    # Complete cycle - order starts with the resonant season (Sage)
     full_cycle: ["[Sage card]","[Fool card]","[Hero card]","[Monster card]"] # The [Hexagram] in all seasons
     
   # Bit Values - for reference and calculation
@@ -120,3 +116,29 @@ card:
     bit5: "[0/1]"  # Support
     bit6: "[0/1]"  # Options
     bit78: "[00/01/10/11]" # Cycle phase
+    
+  # Fractal Manifestations - how this pattern appears at different scales
+  fractal_meanings:
+    quantum:
+      pattern: "[How this card's energy pattern manifests at quantum level]"
+      insight: "[The wisdom this reveals about reality's fundamental nature]"
+    
+    biological:
+      pattern: "[How this card's energy pattern appears in living systems]"
+      insight: "[The wisdom this reveals about life and evolution]"
+    
+    psychological:
+      pattern: "[How this card's energy pattern manifests in human mind]"
+      insight: "[The wisdom this reveals about consciousness and thought]"
+    
+    social:
+      pattern: "[How this card's energy pattern appears in communities]"
+      insight: "[The wisdom this reveals about human connection]"
+    
+    ecological:
+      pattern: "[How this card's energy pattern manifests in ecosystems]"
+      insight: "[The wisdom this reveals about natural systems]"
+    
+    cosmic:
+      pattern: "[How this card's energy pattern appears at universal scale]"
+      insight: "[The wisdom this reveals about the nature of existence]"
