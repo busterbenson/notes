@@ -103,7 +103,7 @@ card:
     thematic_pair: "01001110" # Five of Cups - also deals with partial loss/gain
     
     # Complete cycle - order starts with the resonant season (Sage)
-    full_cycle: ["10111011","10111000","10111010","10111001"] # The Seven of Swords in all seasons
+    full_cycle: ["10111011","10111010","10111000","10111001"] # The Seven of Swords in all seasons
     
   # Bit Values - for reference and calculation
   bit_values:

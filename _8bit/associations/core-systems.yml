@@ -68,7 +68,7 @@ bit_definitions:
         season: "Winter"
         tarot_suit: "Swords"
         element: "Air"
-      "01":
+      "10":
         phase: "Waxing"
         moon_phase: "Waxing Moon"
         season: "Spring"
@@ -80,7 +80,7 @@ bit_definitions:
         season: "Summer"
         tarot_suit: "Cups"
         element: "Water"
-      "10":
+      "01":
         phase: "Waning"
         moon_phase: "Waning Moon"
         season: "Fall"

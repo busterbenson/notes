@@ -86,8 +86,8 @@ card:
       prompt_for_image_gen: "Limited color risograph-style illustration of [short scene description].
       Use [INNER WORLD COLOR] for foreground elements (inner world) and [OUTER WORLD COLOR] for background/environment (outer world), with [ARCHETYPE COLOR] highlights.
       Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
-      Include a clean, full-width title bar at the bottom, with centered 8-bit code '[XXXXXXXX]' and card title '[CARD TITLE]' in bold, without corner decorations or symbols.
-      Feature [key symbolic elements, e.g., moon phase, animal companions, symbolic object].
+      Include a clean, full-width title bar at the bottom, centered, with a card title '[CARD TITLE]' in bold and a more subtle subtitle below that with the 8-bit code '[XXXXXXXX]' and , without corner decorations or symbols.
+      Feature [card_creature in the card_scene, key symbolic elements, e.g., moon phase, animal companions, symbolic object].
       The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle seasonal/elemental references appropriate for [SEASON].
       Style should blend Rider-Waite simplicity with modern symbolic abstraction, emotionally resonant but compositionally clean."
       

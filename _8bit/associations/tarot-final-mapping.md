@@ -64,9 +64,9 @@ This document presents the final mapping of Tarot cards to 6-bit patterns in the
 
 Each of these 32 archetypes appears in all 4 elemental phases (bits 7-8):
 - **00**: Air/Swords/Winter/New Moon
-- **01**: Fire/Wands/Spring/Waxing Moon
+- **10**: Fire/Wands/Spring/Waxing Moon
 - **11**: Water/Cups/Summer/Full Moon
-- **10**: Earth/Pentacles/Autumn/Waning Moon
+- **01**: Earth/Pentacles/Autumn/Waning Moon
 
 This creates the full set of 128 cards for the even-parity patterns.
 
