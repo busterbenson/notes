@@ -1,0 +1,187 @@
+card:
+  version: '2.0'
+  binary: '10000000'
+  decimal: 128
+  hexadecimal: '80'
+  basic_info:
+    desc: "This card represents the pure expression of intuition without the practical means to manifest it. The 10000000 pattern captures intuition as the sole activated inner resource, with all other resources absent. In this Winter aspect, it manifests as the Sage who perceives profound insights yet exists in complete external silence. The Dark Moon Deepening phase perfectly mirrors this energy - the moment of complete darkness that contains all potential. Like a visionary who sees clearly but dwells in isolation, this card embodies the paradox of knowing without the means to express."
+    keywords:
+    - intuition
+    - isolation
+    - vision
+    - turning point
+    - renewal
+    - inner knowing
+    symbols:
+    - solitary flame
+    - crystal cave
+    - frozen compass
+    - night sky without stars
+  direct_associations:
+    archetype: Sage
+    archetype_color: Iridescent
+    gender: feminine
+    inner_world:
+      color: Red
+      trigram: Wind
+      meaning: Strong intuition but lacking practical skills and resources; knows what feels right but can't manifest it
+    outer_world:
+      color: Black
+      trigram: Earth
+      meaning: Complete lack of outer resources; expectations, support, and options are all absent
+    cycle:
+      season: Winter
+      tarot_suit: Swords
+      element: Air
+    lunar:
+      decimal_modulo: 128 % 8 = 0, 128 % 2 = 0
+      phase: Dark Moon
+      phase_half: Deepening
+      lunar_cycle: '2'
+      cycle_name: Development Cycle
+      complete_designation: Dark Moon Deepening, Development Cycle of Winter
+    tarot:
+      card: The Magician
+      cycle_suit: Swords
+      seasonal_expression: "The Magician's creative potential expressed through the Sage's wisdom, modified by Winter's stillness, creating a state of pure intuitive vision that awaits the right moment and means to manifest."
+    hexagram:
+      i_ching:
+        number: 24
+        name: Fu
+        label: Return
+        description: Returning, renewal, recovery, turning point
+      gene_key:
+        number: 24
+        shadow: Addiction
+        gift: Invention
+        siddhi: Silence
+        description: A journey from compulsive patterns to creative breakthroughs and ultimately profound inner silence and peace
+  interpreted_meanings:
+    basic:
+      name_6bit: 'Return'
+      name_8bit: 'Return in Winter'
+      gender: feminine
+    oracle_card:
+      card_name: 'Solitary Flame'
+      card_creature: "A feminine sage with alabaster skin and flowing silver hair that seems to merge with the surrounding darkness. Her form is slender yet strong, wrapped in layers of midnight blue fabric that ripple like water. Her eyes are closed in deep contemplation, yet somehow convey an intense awareness of hidden truths. A small red flame hovers between her cupped hands - the sole source of light and warmth in the scene, representing her isolated intuition amidst the void of external resources. Her expression conveys perfect serenity despite her isolation, as though she has transcended the need for outer validation or support."
+      question_posed: "What truth do you perceive that cannot yet be expressed or validated by others?"
+      card_scene: "A lone feminine figure sits in meditative stillness within a vast crystal cave of ice and darkness. The cavern walls reflect and refract a single flame that hovers between her hands, creating countless points of red light like stars in the darkness. Outside the cave, a winter landscape stretches into infinity, completely devoid of life or movement - just endless snow under a moonless sky. The cave itself seems to exist outside of time, a sanctuary where pure intuition can be preserved until the right moment for its expression arrives. Near the figure lies a frozen compass, its needle permanently fixed toward her rather than north, suggesting that in the absence of external guidance, one's own intuition becomes the only reliable direction. The darkness is not threatening but protective - a womb-like space where vision can develop before being exposed to the harsh light of manifestation. The Dark Moon Deepening phase is represented by the complete absence of any lunar illumination, suggesting the deepest point of the cycle when internal truth is strongest precisely because external validation is absent."
+      universal_symbol: "The solitary flame - representing pure intuition preserved in isolation, the sole light in darkness that must be protected until conditions allow it to spread"
+      mood: "Sacred solitude, patient certainty, the quiet confidence of inner knowing despite outer silence"
+      prompt_for_image_gen: "LIMITED COLOR RISOGRAPH-STYLE ILLUSTRATION FOR \"SOLITARY FLAME\" (10000000)
+
+Create a limited-color risograph-style illustration that captures the essence of the Solitary Flame card - representing pure intuition preserved in isolation, the knowing that exists without external validation or means to manifest.
+
+CARD DIMENSIONS AND STYLE:
+- 1200 x 2000 pixels (3:5 ratio)
+- MUST INCLUDE A CLEAR BORDER with all content 200px from all edges 
+- All artwork and elements MUST remain within this 200px border - NOTHING should extend beyond this border
+- This means the actual illustration area is 800x1600 pixels centered on the card
+- Bottom 15% contains the title bar area with a clean horizontal line separation
+- Woodblock print/risograph aesthetic with bold lines and limited colors
+- Visible texture and grain throughout all elements
+- Strong contrast between elements with minimalist composition
+
+COLOR PALETTE:
+- Primary: Red (for inner world character and single flame)
+- Accent: Iridescent silver-blue highlights (representing the Sage archetype)
+- Outer World: Black/deep blues for the cave and winter landscape
+- White/off-white background with subtle texture
+- Use black for all outlines and details with varying line weights
+
+CHARACTER DESCRIPTION (INNER WORLD):
+- A feminine sage with alabaster skin and flowing silver hair that seems to merge with the darkness
+- Her body wrapped in layers of midnight blue fabric that ripple like water
+- Eyes closed in deep meditation, yet conveying intense awareness of hidden truths
+- Hands cupped before her, holding/surrounding a small hovering red flame
+- Her posture perfectly still, serene despite complete isolation
+- Face conveying peaceful certainty - the confidence of inner knowing without external validation
+- Silver-blue iridescent highlights in her hair and at the edges of her form
+
+SCENE DESCRIPTION (OUTER WORLD):
+- A vast crystal cave of ice and darkness, walls reflecting the single flame as countless points of light
+- Outside the cave entrance, a glimpse of endless winter landscape stretching to infinity
+- Completely moonless sky visible beyond the cave opening
+- No signs of life, movement or habitation in the landscape
+- A frozen compass lying near the figure, its needle pointing toward her rather than north
+- Cave walls with geometric crystal formations catching and refracting the flame's light
+- The darkness creating a womb-like, protective rather than threatening atmosphere
+
+LUNAR PHASE REPRESENTATION:
+- Small, discrete Dark Moon icon in upper right corner - a perfect black circle
+- This represents the Dark Moon Deepening phase - the moment of complete darkness before any emergence
+- The dark moon icon echoed in the moonless sky visible beyond the cave entrance
+
+SYMBOLIC ELEMENTS:
+- Solitary flame: A small red fire hovering between the sage's hands, the only warm color in the scene, representing isolated intuition
+- Crystal cave: Geometric ice formations creating a sanctuary where vision can develop protected from the harsh outer world
+- Frozen compass: An antique navigation tool with its needle pointing toward the sage rather than north, suggesting internal guidance when external markers fail
+- Moonless night sky: The complete absence of external light, showing a time when one must rely entirely on inner illumination
+
+MOOD AND ATMOSPHERE:
+- Sacred solitude - the profound peace that comes from complete self-reliance
+- Patient certainty - knowing a truth that cannot yet be expressed or validated
+- Protective darkness - the necessity of isolation for certain kinds of development
+- Suspended potential - the feeling of a turning point that hasn't quite arrived
+
+LAYOUT SPECIFICATIONS:
+- Full width title bar at bottom (15% of card height)
+- \"SOLITARY FLAME\" in bold, centered, all caps
+- \"10000000\" in smaller text below
+- Main illustration filling the space above the title bar
+- Strong composition with the sage and flame as central focal point, slightly offset within the cave setting
+
+ARTISTIC DIRECTION:
+- Create dramatic contrast between the red flame and the dark blues/blacks of the cave
+- Use minimal elements to convey maximum symbolic meaning
+- Apply halftone or similar effects for the points of reflected light throughout the cave
+- Balance the stillness of the figure with subtle movement in the fabric and flame
+- Ensure the darkness feels protective and womb-like rather than threatening
+
+SYMBOLIC MEANINGS TO CONVEY:
+- The necessity of isolation for certain kinds of knowing
+- The preservation of intuitive vision when manifestation isn't yet possible
+- The return to inner guidance when external validation is absent
+- The turning point that exists in perfect stillness
+- The paradox that pure potential exists in apparent emptiness
+
+This card represents the isolated flame of intuition preserved in the darkness of winter - the knowing that exists without external validation or means to manifest. The image should evoke a sense of sacred solitude and the quiet certainty of inner truth awaiting its moment to emerge."
+  related_cards:
+    same_card_winter: '10000000'
+    same_card_spring: '10000010'
+    same_card_summer: '10000011'
+    same_card_fall: '10000001'
+    opposite: '01111111'
+    thematic_pair: '00001000'
+    full_cycle:
+    - '10000000'
+    - '10000010'
+    - '10000011'
+    - '10000001'
+  bit_values:
+    bit1: '1'
+    bit2: '0'
+    bit3: '0'
+    bit4: '0'
+    bit5: '0'
+    bit6: '0'
+    bit78: '00'
+  fractal_meanings:
+    quantum:
+      pattern: "Quantum observer effect - the moment of observation that exists before measurement"
+      insight: "Some forms of knowing fundamentally change when brought into manifestation"
+    biological:
+      pattern: "Neural signal before threshold - the electrical potential that hasn't yet triggered action"
+      insight: "Biological systems often recognize truth before having the means to act on it"
+    psychological:
+      pattern: "Intuitive knowing without rational proof - gut feeling that precedes evidence"
+      insight: "Our deepest knowing often arrives before we have the means to validate or express it"
+    social:
+      pattern: "Visionary ideas before their time - concepts that await cultural readiness"
+      insight: "Social transformation often begins with isolated insights that cannot be widely shared until conditions change"
+    ecological:
+      pattern: "Seeds in winter dormancy - genetic potential preserved in isolation"
+      insight: "Nature preserves its most important information by protecting it from premature expression"
+    cosmic:
+      pattern: "Dark energy - the invisible force that shapes the universe's expansion"
+      insight: "The most powerful forces in existence often remain completely unseen"

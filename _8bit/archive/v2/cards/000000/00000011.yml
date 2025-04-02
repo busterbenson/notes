@@ -1,0 +1,140 @@
+card:
+  version: '2.0'
+  binary: '00000011'
+  decimal: 3
+  hexadecimal: '3'
+  basic_info:
+    desc: "This card represents the perfectly formed empty vessel that waits to be filled. The 00000011 pattern captures the conscious mastery of emptiness as a form of receptivity. In this Summer aspect, it manifests as the Hero who has crafted emptiness into a deliberate state of readiness. The New Moon Strengthening phase perfectly mirrors this energy - the growing sliver of light that defines the vessel of darkness. This is not the void of absence but the deliberate creation of space - like a bowl whose value lies in its emptiness, or a clearing in a forest that allows light to enter and new growth to thrive."
+    keywords:
+    - receptivity
+    - readiness
+    - containment
+    - prepared emptiness
+    - structured void
+    - conscious vessel
+    symbols:
+    - empty bowl
+    - cupped hands
+    - forest clearing
+    - strengthening crescent
+  direct_associations:
+    archetype: Hero
+    archetype_color: Gold
+    gender: neutral
+    inner_world:
+      color: Black
+      trigram: Earth
+      meaning: Complete absence of inner resources; intuition, ability, and capacity are all absent
+    outer_world:
+      color: Black
+      trigram: Earth
+      meaning: Complete lack of outer resources; expectations, support, and options are all absent
+    cycle:
+      season: Summer
+      tarot_suit: Cups
+      element: Water
+    lunar:
+      decimal_modulo: 3 % 8 = 1, 3 % 2 = 1
+      phase: New Moon
+      phase_half: Strengthening
+      lunar_cycle: '1'
+      cycle_name: Inception Cycle
+      complete_designation: New Moon Strengthening, Inception Cycle of Summer
+    tarot:
+      card: The Moon
+      cycle_suit: Cups
+      seasonal_expression: "The Moon's mysterious energy expressed through the Hero's masterful approach, modified by Summer's abundant potential, creating a state where emptiness becomes a consciously crafted vessel ready to receive."
+    hexagram:
+      i_ching:
+        number: 2
+        name: Kun
+        label: The Receptive
+        description: Pure yin, yielding, responsive, accepting, following
+      gene_key:
+        number: 2
+        shadow: Dislocation
+        gift: Orientation
+        siddhi: Unity
+        description: A journey from feeling lost and disconnected to finding your true direction and ultimately experiencing oneness with all
+  interpreted_meanings:
+    basic:
+      name_6bit: 'The Receptive'
+      name_8bit: 'The Receptive in Summer'
+      gender: neutral
+    oracle_card:
+      card_name: 'Perfect Vessel'
+      card_creature: "A neutral hero whose form appears strong yet completely open, embodying receptivity as power rather than weakness. Neither distinctly male nor female, this figure has crafted their body into a perfect vessel through discipline and mastery. They stand in a clearing with hands cupped to receive light, their posture both grounded and spacious. Their eyes hold a serene awareness that true mastery lies not in filling space but in creating it."
+      question_posed: "What perfect container are you creating that will allow abundance to naturally flow into your life?"
+      card_scene: "A gender-neutral figure stands in a perfectly circular clearing in a lush summer forest. Sunlight streams down, illuminating the figure who stands with feet firmly planted and hands cupped together as if to receive water or light. The figure has crafted an empty bowl of exquisite simplicity that sits nearby on a flat stone. The clearing is meticulously maintained - not a space of absence but a deliberately created void that allows light to penetrate the forest canopy. This light nurtures a ring of flowers and plants that thrive around the clearing's edge, creating a living boundary between emptiness and fullness. The strengthening crescent moon is clearly visible in the daylight sky, its growing form echoed in the curve of the bowl and the figure's cupped hands. There's a sense of readiness and anticipation, but without urgency or grasping - the perfect state of receptivity that comes from mastery rather than lack. The New Moon Strengthening phase is represented by the growing crescent and the overall quality of emptiness being deliberately shaped and defined. The entire composition evokes Summer's essence - the mastery that comes from abundance channeled into perfect form."
+      universal_symbol: "The perfectly formed empty bowl - representing emptiness as a conscious creation rather than an absence"
+      mood: "Masterful receptivity, deliberate openness, the power of prepared space"
+      prompt_for_image_gen: "Limited color risograph-style illustration of a gender-neutral hero standing in a perfect circular clearing, holding an exquisitely simple empty bowl with hands cupped to receive light.
+
+Card dimensions: 1200 x 2000 pixels (3:5 ratio)
+Style: Woodblock print/risograph aesthetic with bold lines and limited colors
+
+COLOR PALETTE:
+- Inner World (character/foreground): Black
+- Outer World (environment/background): Black
+- Archetype Highlights: Gold (warm yellow-gold accents)
+- Black for all lines and details
+- White/off-white background
+
+CARD ELEMENTS:
+- Main character: A gender-neutral hero with strong yet open posture, standing centered in a clearing with hands cupped to receive light, beside a simple empty bowl
+- Scene: A perfectly circular clearing in a lush summer forest with sunlight streaming down, flowers growing around the perimeter, creating a deliberate space
+- Lunar phase indicator: Show New Moon (widening crescent) in upper right corner
+- Season: Include distinct Summer elements like full forest canopy, abundant flowers around clearing edge, and strong directional sunlight
+- Symbols: Include empty bowl on stone, cupped hands receiving light, circular forest clearing, and strengthening crescent moon visible in daylight sky
+
+LAYOUT:
+- Full width title bar at bottom (15% of height)
+- Title \"PERFECT VESSEL\" in bold, centered, all caps
+- Subtitle \"New Moon Strengthening • 00000011\" below in smaller text
+- Main illustration above title bar
+
+STYLE NOTES:
+- Bold black outlines with varying thickness
+- Visible texture and grain throughout
+- Black for character/foreground, Black for environment, Warm gold highlights
+- Limited perspective but clear spatial relationships
+- Risograph/woodblock print texture throughout with subtle halftone effects"
+  related_cards:
+    same_card_winter: '00000000'
+    same_card_spring: '00000010'
+    same_card_summer: '00000011'
+    same_card_fall: '00000001'
+    opposite: '11111100'
+    thematic_pair: '00000111'
+    full_cycle:
+    - '00000000'
+    - '00000010'
+    - '00000011'
+    - '00000001'
+  bit_values:
+    bit1: '0'
+    bit2: '0'
+    bit3: '0'
+    bit4: '0'
+    bit5: '0'
+    bit6: '0'
+    bit78: '11'
+  fractal_meanings:
+    quantum:
+      pattern: "Quantum field - the structured emptiness that allows particles to manifest"
+      insight: "Structure in emptiness is what allows form to arise with coherence and meaning"
+    biological:
+      pattern: "Cell differentiation - creating specialized empty spaces for function"
+      insight: "Living systems require precisely defined empty spaces to function properly"
+    psychological:
+      pattern: "Attentive awareness - the clear mind that can receive without distortion"
+      insight: "The most receptive mind is not an absence of thought but a disciplined openness"
+    social:
+      pattern: "Cultural containers - traditions that create space for meaningful interaction"
+      insight: "The most vibrant communities create deliberate containers for connection"
+    ecological:
+      pattern: "Forest clearings - spaces where distinct ecosystems thrive through maintained openness"
+      insight: "Natural systems often require deliberate emptiness for diversity to flourish"
+    cosmic:
+      pattern: "Galactic structure - the organized emptiness that shapes cosmic evolution"
+      insight: "The vast emptiness between stars is precisely what allows galaxies their form and function"

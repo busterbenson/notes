@@ -9,7 +9,7 @@ lunar_cycle_system:
   # Calculation Method
   calculation:
     season: "Determined by bits 7-8 (00=Winter, 10=Spring, 11=Summer, 01=Fall)"
-    lunar_cycle: "(bit_count_positions_1_6 % 4) + 1  # Yields lunar cycle 1-4 within the season"
+    lunar_cycle: "(count of '1' bits in positions 1-6 % 4) + 1  # Yields lunar cycle 1-4 within the season"
     lunar_phase: "(decimal_value ÷ 2) % 8  # Yields phase 0-7"
     phase_half: "decimal_value % 2  # 0 = First Half, 1 = Second Half"
     complete_formula: "Each card represents a unique season + lunar cycle + lunar phase + phase half combination"

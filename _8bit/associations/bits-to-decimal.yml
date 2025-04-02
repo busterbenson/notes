@@ -1,0 +1,95 @@
+# 8-bit Oracle Associations
+version: "1.0.0"
+
+# Binary Interpretation System
+binary_system:
+  bit_order: "left-to-right"
+  description: "All binary codes in the 8-bit Oracle prioritize bits from left to right (most significant bit first)"
+  
+  # Binary to Decimal Conversion Rules
+  binary_to_decimal:
+    prioritization: "left-to-right"
+    description: |
+      All binary to decimal conversions follow left-to-right priority:
+      - The leftmost bit (bit 1) has the smallest value (2^0 = 1)
+      - The second bit from left (bit 2) has the next value (2^1 = 2)
+      - The third bit from left (bit 3) has the next value (2^2 = 4)
+      - And so on through bit 8 (2^7 = 128)
+    
+    examples:
+      - binary: "00000000"
+        description: "Traditional: 0, Left-prioritized: 0"
+      - binary: "10000000" 
+        description: "Traditional: 128, Left-prioritized: 1"
+      - binary: "01000000"
+        description: "Traditional: 64, Left-prioritized: 2"
+      - binary: "11000000"
+        description: "Traditional: 192, Left-prioritized: 3"
+      - binary: "00100000"
+        description: "Traditional: 32, Left-prioritized: 4"
+      - binary: "00000001"
+        description: "Traditional: 1, Left-prioritized: 128"
+    
+    bit_values:
+      bit1: 1    # 2^0
+      bit2: 2    # 2^1  
+      bit3: 4    # 2^2
+      bit4: 8    # 2^3
+      bit5: 16   # 2^4
+      bit6: 32   # 2^5
+      bit7: 64   # 2^6
+      bit8: 128  # 2^7
+  
+  # Binary Progression Pattern
+  progression_pattern:
+    description: |
+      When advancing through cards in left-to-right order:
+      - The leftmost bit (bit 1) changes every other card
+      - The second bit (bit 2) changes every 4 cards
+      - The third bit (bit 3) changes every 8 cards
+      - And so on, with each bit position changing at 2^(position-1) intervals
+    
+    example_sequence:
+      - "00000000" # Card 1
+      - "10000000" # Card 2
+      - "01000000" # Card 3
+      - "11000000" # Card 4
+      - "00100000" # Card 5
+      - "10100000" # Card 6
+      - "01100000" # Card 7
+      - "11100000" # Card 8
+
+# Lunar Calculation with Left-to-Right Priority
+lunar_calculations:
+  description: "All lunar calculations use left-to-right priority when converting binary to decimal values"
+  
+  # Left-prioritized lunar cycle calculation
+  lunar_cycle:
+    description: |
+      Lunar cycle uses a weighted counting method that prioritizes leftmost bits:
+      - Higher weights are assigned to leftmost bits
+      - Weights for bits 1-6: [6, 5, 4, 3, 2, 1]
+      - Weighted sum is calculated and mapped to cycles 1-4
+    formula: "cycle = (weighted_sum % 4) + 1"
+  
+  # Left-prioritized phase calculation
+  lunar_phase:
+    description: "Phase is determined by the left-prioritized decimal value divided by 2, modulo 8"
+    formula: "(left_prioritized_decimal ÷ 2) % 8"
+  
+  # Left-prioritized phase half calculation
+  phase_half:
+    description: "Phase half is determined by the left-prioritized decimal value modulo 2"
+    formula: "left_prioritized_decimal % 2"
+
+# Implementation Notes
+implementation_notes:
+  description: "Important notes about the left-to-right binary system"
+  
+  notes:
+    - "Always use left-to-right priority for all binary-to-decimal conversions"
+    - "This applies to binary numbers of all lengths (1, 2, 3, 4, 5, 6, 7, and 8 bits)"
+    - "All calculations that require converting binary to decimal must use left-to-right priority"
+    - "Binary strings are always written with bit 1 on the left and bit 8 on the right"
+    - "Season bits (7-8) remain unchanged from the original system: 00=Winter, 10=Spring, 11=Summer, 01=Fall"
+    - "Known cards (like 'Void Mirror' = 00000000) retain their existing attributes"

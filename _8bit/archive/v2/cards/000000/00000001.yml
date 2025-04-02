@@ -1,0 +1,140 @@
+card:
+  version: '2.0'
+  binary: '00000001'
+  decimal: 1
+  hexadecimal: '1'
+  basic_info:
+    desc: "This card represents the void as a consuming force that simultaneously creates space for new beginnings. The 00000001 pattern captures the moment when absolute emptiness begins its transformation. In this Fall aspect, it manifests as the Monster who embodies the devouring yet generative aspect of darkness. As resources are consumed and returned to nothingness, the first seeds of creation emerge. The Dark Moon Emerging phase perfectly mirrors this - the transition point from complete darkness to the first hint of light, where destruction and creation become the same process."
+    keywords:
+    - consumption
+    - threshold
+    - emergence
+    - dissolution
+    - decay
+    - transformation
+    symbols:
+    - devouring maw
+    - falling leaves
+    - event horizon
+    - rotting fruit with seed
+  direct_associations:
+    archetype: Monster
+    archetype_color: Purple
+    gender: neutral
+    inner_world:
+      color: Black
+      trigram: Earth
+      meaning: Complete absence of inner resources; intuition, ability, and capacity are all absent
+    outer_world:
+      color: Black
+      trigram: Earth
+      meaning: Complete lack of outer resources; expectations, support, and options are all absent
+    cycle:
+      season: Fall
+      tarot_suit: Pentacles
+      element: Earth
+    lunar:
+      decimal_modulo: 1 % 8 = 0, 1 % 2 = 1
+      phase: Dark Moon
+      phase_half: Emerging
+      lunar_cycle: '1'
+      cycle_name: Inception Cycle
+      complete_designation: Dark Moon Emerging, Inception Cycle of Fall
+    tarot:
+      card: The Moon
+      cycle_suit: Pentacles
+      seasonal_expression: "The Moon's mysterious energy expressed through the Monster's consuming nature, modified by Fall's decay, creating a threshold state where darkness devours the old while simultaneously creating space for future growth."
+    hexagram:
+      i_ching:
+        number: 2
+        name: Kun
+        label: The Receptive
+        description: Pure yin, yielding, responsive, accepting, following
+      gene_key:
+        number: 2
+        shadow: Dislocation
+        gift: Orientation
+        siddhi: Unity
+        description: A journey from feeling lost and disconnected to finding your true direction and ultimately experiencing oneness with all
+  interpreted_meanings:
+    basic:
+      name_6bit: 'The Receptive'
+      name_8bit: 'The Receptive in Fall'
+      gender: neutral
+    oracle_card:
+      card_name: 'Devouring Void'
+      card_creature: "A neutral monster whose form appears as an amorphous darkness with a consuming maw. Neither distinctly male nor female, this entity exists as a shadow that both devours and creates. Its edges constantly shift and flow, simultaneously absorbing everything around it while paradoxically allowing the faintest glimmers of new growth to emerge from its darkest depths."
+      question_posed: "What must be completely consumed or released before new growth can emerge in your life?"
+      card_scene: "A formless darkness occupies the center of the image, appearing as a vast, consuming maw that absorbs everything in its vicinity. Around this void, autumn leaves and decaying matter swirl as if being pulled into the darkness. The background suggests a forest in late fall, with bare trees and a ground covered in decay. Yet within the darkest center of the void, barely perceptible, are tiny seeds and the faintest glimmer of new potential. The scene creates a stark threshold - a boundary between existence and non-existence where decay and rebirth become indistinguishable. At the edge of the darkness is what appears to be an event horizon - a point of no return where matter stretches and distorts as it's pulled into the void. The Dark Moon Emerging phase is represented by a barely visible sliver of light at the very center of the darkness, suggesting that from the deepest consumption comes the first spark of creation. The entire composition evokes Fall's essence - the necessary destruction that precedes rebirth."
+      universal_symbol: "The devouring maw - representing the necessary consumption and dissolution that precedes all new creation"
+      mood: "Threshold awareness, transformative dissolution, the necessary end that contains a beginning"
+      prompt_for_image_gen: "Limited color risograph-style illustration of an amorphous void with a devouring maw-like quality, absorbing autumn elements while paradoxically containing the first spark of creation.
+
+Card dimensions: 1200 x 2000 pixels (3:5 ratio)
+Style: Woodblock print/risograph aesthetic with bold lines and limited colors
+
+COLOR PALETTE:
+- Inner World (character/foreground): Black
+- Outer World (environment/background): Black
+- Archetype Highlights: Purple (deep violet accents)
+- Black for all lines and details
+- White/off-white background
+
+CARD ELEMENTS:
+- Main character: A neutral monster appearing as shapeless darkness with a consuming maw-like quality, its edges constantly shifting and flowing
+- Scene: A formless void absorbing autumn leaves and decaying matter, with bare trees in background, and barely perceptible seeds/glimmers within the darkest center
+- Lunar phase indicator: Show Dark Moon with barely visible thin crescent in upper right corner
+- Season: Include distinct Fall elements like swirling dead leaves, bare trees, and rotting fruit with visible seeds
+- Symbols: Include devouring maw, event horizon effect, falling leaves being absorbed, and subtle seed shapes within deepest darkness
+
+LAYOUT:
+- Full width title bar at bottom (15% of height)
+- Title \"DEVOURING VOID\" in bold, centered, all caps
+- Subtitle \"Dark Moon Emerging • 00000001\" below in smaller text
+- Main illustration above title bar
+
+STYLE NOTES:
+- Bold black outlines with varying thickness
+- Visible texture and grain throughout
+- Black for character/foreground, Black for environment, Deep purple highlights
+- Limited perspective but clear spatial relationships
+- Risograph/woodblock print texture throughout with subtle halftone effects"
+  related_cards:
+    same_card_winter: '00000000'
+    same_card_spring: '00000010'
+    same_card_summer: '00000011'
+    same_card_fall: '00000001'
+    opposite: '11111110'
+    thematic_pair: '00011111'
+    full_cycle:
+    - '00000000'
+    - '00000010'
+    - '00000011'
+    - '00000001'
+  bit_values:
+    bit1: '0'
+    bit2: '0'
+    bit3: '0'
+    bit4: '0'
+    bit5: '0'
+    bit6: '0'
+    bit78: '01'
+  fractal_meanings:
+    quantum:
+      pattern: "Quantum collapse - the moment when wave functions collapse into particles"
+      insight: "Destruction and creation are the same event viewed from different perspectives"
+    biological:
+      pattern: "Decomposition processes - the breakdown that enables new life"
+      insight: "Decay is not an end but a transformation that releases nutrients for new growth"
+    psychological:
+      pattern: "Shadow integration - confronting and absorbing disowned aspects of self"
+      insight: "What we refuse to face continues to consume our energy until we turn and embrace it"
+    social:
+      pattern: "Cultural dissolution - the breakdown of structures that precedes renewal"
+      insight: "Societal collapse often contains the seeds of more adaptive systems"
+    ecological:
+      pattern: "Forest fires - destructive forces that trigger necessary regeneration"
+      insight: "Some ecosystems require periodic destruction to maintain their health and diversity"
+    cosmic:
+      pattern: "Black holes - cosmic devourers that may create new universes"
+      insight: "The most destructive forces in the universe may also be the most creative"

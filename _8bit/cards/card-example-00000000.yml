@@ -17,7 +17,13 @@ card:
   # Direct Associations (these come directly from various associations to the bits and various symbol systems)
   # These are hard-coded into our system and are inputs that will be used to generate interpreted meanings
   direct_associations:
-    archetype: "Sage" # Fool, Hero, Monster, Sage depending on resonant season for the hexagram
+    # Resonant season calculation:
+    # Inner world (bits 1-3): 000 -> 0 bits are 1, so inner world = 0
+    # Outer world (bits 4-6): 000 -> 0 bits are 1, so outer world = 0
+    # Therefore resonant season = inner0-outer0 = Winter
+    # Card season (bits 7-8): 00 = Winter
+    # Since card season matches resonant season, archetype is Sage
+    archetype: "Sage" # When card season matches resonant season (both Winter for 00000000), the archetype is Sage
     archetype_color: "Iridescent" # Sage: Iridescent, Fool: Turquoise, Hero: Gold, Monster: Purple
     gender: "neutral" # With 0 bits set to 1, all archetypes are gender-neutral
   
@@ -33,18 +39,18 @@ card:
       trigram: "☷" # Earth
       meaning: "Complete lack of outer resources; expectations, support, and options are all absent"
 
-    ## Cycle (bits 7-8)
-    cycle: 
+    ## Solar Season (bits 7-8)
+    solar_cycle: 
       season: "Winter"
       tarot_suit: "Swords"
       element: "Air"
 
-    ## Lunar Phase (based on decimal modulo calculation)
-    lunar:
-      decimal_modulo: "0 % 8 = 0, 0 % 2 = 0" # decimal % 8 for phase, decimal % 2 for half
+    ## Lunar Phase (based on decimal modulo calculation, bits prioritized left-to-right)
+    lunar_cycle:
+      decimal_modulo: "0 % 8 = 0, 0 % 2 = 0" # (decimal_value ÷ 2) % 8 for phase, decimal_value % 2 for half
       phase: "Dark Moon" # From lunar_cycle_system.phases
-      phase_half: "Deepening" # From phase halves in lunar_cycle_system
-      lunar_cycle: "1" # (bit_count_positions_1_6 % 4) + 1 = (0 % 4) + 1 = 1
+      phase_half: "Deepening" # From phase halves in lunar-cycle.yml
+      cycle_number: "1" # (count of '1' bits in positions 1-6 % 4) + 1 = (0 % 4) + 1 = 1
       cycle_name: "Inception Cycle" # From lunar_cycle_system.lunar_cycles
       complete_designation: "Dark Moon Deepening, Inception Cycle of Winter"
 
@@ -89,7 +95,7 @@ card:
       prompt_for_image_gen: "Limited color risograph-style illustration of a gender-neutral figure standing in absolute darkness, their body appearing only as a silhouette of tiny stars against the deeper void.
       Use BLACK for foreground elements (inner world) and BLACK for background/environment (outer world), with IRIDESCENT midnight blue highlights.
       Maintain risograph/woodblock print texture with strong contrast, 3-4 colors max, and minimalistic geometric forms.
-      Include a clean, full-width title bar at the bottom with centered card title 'VOID MIRROR' in bold, and a more subtle subtitle below that reads 'DARK MOON DEEPENING • 00000000'.
+      Include a clean, full-width title bar at the bottom with centered card title 'VOID MIRROR' in bold, and a more subtle subtitle below that reads '00000000'.
       Feature a handheld obsidian mirror that reflects nothing, ripples in space-time at the figure's feet, and the complete absence of any moon in the night sky (representing Dark Moon phase).
       The scene should evoke the mood of profound acceptance and mysterious anticipation, incorporating subtle seasonal/elemental references appropriate for Winter (e.g., stillness, breath visible in cold air, crystalline formations in darkness).
       Include a small, discrete dark moon icon in one corner to indicate the lunar phase.
@@ -120,7 +126,7 @@ card:
     bit4: "0"  # Expectations
     bit5: "0"  # Support
     bit6: "0"  # Options
-    bit78: "00" # Cycle phase (Winter)
+    bit78: "00" # Season determination: 00=Winter, 10=Spring, 11=Summer, 01=Fall
     
   # Fractal Manifestations
   fractal_meanings:

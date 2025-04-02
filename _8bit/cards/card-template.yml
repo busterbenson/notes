@@ -6,7 +6,7 @@ card:
   # Summary
   version:     "1.0"         # Version of the card template used 
   binary:      "[XXXXXXXX]"  # 8-bit binary code
-  decimal:     "[DDD]"       # Decimal equivalent
+  decimal:     "[DDD]"       # Decimal equivalent (left-to-right priority of bits)
   hexadecimal: "[XX]"        # Hexadecimal equivalent
 
   # Basic Info
@@ -20,7 +20,16 @@ card:
   # Direct Associations (these come directly from various associations to the bits and symbol systems)
   # These are hard-coded into our system and are inputs used to generate interpreted meanings
   direct_associations:
-    archetype: "[Sage/Fool/Hero/Monster]" # Determined by resonant season and seasonal cycle
+    # Resonant season calculation:
+    # 1. Count bits in inner world (bits 1-3): if 2+ bits are 1, inner = 1; otherwise inner = 0
+    # 2. Count bits in outer world (bits 4-6): if 2+ bits are 1, outer = 1; otherwise outer = 0
+    # 3. Map inner-outer to season: 00 = Winter, 10 = Spring, 11 = Summer, 01 = Fall
+    # 4. Compare resonant season to card season (bits 7-8):
+    #    - If seasons match: Sage archetype
+    #    - If card season is next clockwise: Fool archetype
+    #    - If card season is opposite: Hero archetype
+    #    - If card season is previous clockwise: Monster archetype
+    archetype: "[Sage/Fool/Hero/Monster]" # Determined by relationship between resonant season (based on bits 1-6 pattern) and actual card season (bits 7-8)
     archetype_color: "[Color]" # Sage: Iridescent, Fool: Turquoise, Hero: Gold, Monster: Purple
     gender: "[neutral/masculine/feminine]" # Based on bit count - 0/6 bits = neutral, otherwise follows pattern in associations.yml
 
@@ -36,18 +45,18 @@ card:
       trigram: "[Trigram]" # From i_ching_trigrams mapping
       meaning: "[Outer world meaning]" # From composite_frameworks.outer_world.meanings
 
-    ## Cycle (bits 7-8)
-    cycle: 
+    ## Solar Season (bits 7-8)
+    solar_cycle:
       season: "[Winter/Spring/Summer/Fall]" # From bit_definitions.bit78.meanings
       tarot_suit: "[Swords/Wands/Cups/Pentacles]" # From bit_definitions.bit78.meanings
       element: "[Air/Fire/Water/Earth]" # From bit_definitions.bit78.meanings
 
-    ## Lunar Phase (based on decimal modulo calculation)
-    lunar:
+    ## Lunar cycle (determineed by logic in associations/lunar-cycle.yml)
+    lunar_cycle: 
       decimal_modulo: "[decimal_value modulo calculation]" # decimal % 8 for phase, decimal % 2 for half
       phase: "[Dark Moon/New Moon/First Quarter/etc.]" # From lunar_cycle_system.phases
       phase_half: "[Deepening/Emerging/Birthing/etc.]" # From phase halves in lunar_cycle_system
-      lunar_cycle: "[1-4]" # (bit_count_positions_1_6 % 4) + 1
+      cycle_number: "[1-4]" # (bit_count_positions_1_6 % 4) + 1
       cycle_name: "[Inception/Development/Culmination/Transition] Cycle" # From lunar_cycle_system.lunar_cycles
       complete_designation: "[Full lunar designation, e.g., Dark Moon Emerging, Inception Cycle of Winter]"
 
@@ -123,7 +132,7 @@ card:
     bit4: "[0/1]"  # Expectations
     bit5: "[0/1]"  # Support
     bit6: "[0/1]"  # Options
-    bit78: "[00/01/10/11]" # Cycle phase
+    bit78: "[00/01/10/11]" # Season determination: 00=Winter, 10=Spring, 11=Summer, 01=Fall
     
   # Fractal Manifestations - how this pattern appears at different scales
   fractal_meanings:

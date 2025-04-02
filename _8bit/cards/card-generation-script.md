@@ -78,7 +78,7 @@ Follow the complete style guidelines in card-style-guidelines.md, with special a
 - Card dimensions: 1200 x 2000 pixels (3:5 ratio)
 - Limited color palette: Inner world color, outer world color, archetype color + black outlines and white background
 - Risograph/woodblock aesthetic with visible texture
-- Title bar (15% height) with "[CARD TITLE]" and "[LUNAR PHASE • XXXXXXXX]" beneath
+- Title bar (15% height) with "[CARD TITLE]" and "[XXXXXXXX]" beneath
 
 ## Special Instructions
 - Clearly distinguish inner world (character/foreground) from outer world (environment/background)

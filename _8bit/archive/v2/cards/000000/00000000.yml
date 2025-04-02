@@ -1,0 +1,140 @@
+card:
+  version: '2.0'
+  binary: '00000000'
+  decimal: 0
+  hexadecimal: '0'
+  basic_info:
+    desc: "This card represents the deepest void where all potential lies dormant. The all-zeros pattern embodies complete emptiness - an absence of all resources, both inner and outer. In this Winter aspect, it manifests as the Sage who has transcended even darkness itself. This figure doesn't fear the void but instead understands it as the necessary foundation of all creation. The Dark Moon Deepening phase perfectly mirrors this energy - the moment of complete darkness before any emergence. Like the void that preceded the universe, this card speaks to the paradoxical nature of nothingness as the source of everything."
+    keywords:
+    - void
+    - potential
+    - emptiness
+    - surrender
+    - mystery
+    - profound acceptance
+    symbols:
+    - obsidian mirror
+    - starlit silhouette
+    - ripples in space-time
+    - crystallized breath
+  direct_associations:
+    archetype: Sage
+    archetype_color: Iridescent
+    gender: neutral
+    inner_world:
+      color: Black
+      trigram: Earth
+      meaning: Complete absence of inner resources; intuition, ability, and capacity are all absent
+    outer_world:
+      color: Black
+      trigram: Earth
+      meaning: Complete lack of outer resources; expectations, support, and options are all absent
+    cycle:
+      season: Winter
+      tarot_suit: Swords
+      element: Air
+    lunar:
+      decimal_modulo: 0 % 8 = 0, 0 % 2 = 0
+      phase: Dark Moon
+      phase_half: Deepening
+      lunar_cycle: '1'
+      cycle_name: Inception Cycle
+      complete_designation: Dark Moon Deepening, Inception Cycle of Winter
+    tarot:
+      card: The Moon
+      cycle_suit: Swords
+      seasonal_expression: "The Moon's mysterious energy expressed through the Sage's wisdom, modified by Winter's stillness, creating a profound understanding that darkness is not to be feared but recognized as the essential foundation of all creation and potential."
+    hexagram:
+      i_ching:
+        number: 2
+        name: Kun
+        label: The Receptive
+        description: Pure yin, yielding, responsive, accepting, following
+      gene_key:
+        number: 2
+        shadow: Dislocation
+        gift: Orientation
+        siddhi: Unity
+        description: A journey from feeling lost and disconnected to finding your true direction and ultimately experiencing oneness with all
+  interpreted_meanings:
+    basic:
+      name_6bit: 'The Receptive'
+      name_8bit: 'The Receptive in Winter'
+      gender: neutral
+    oracle_card:
+      card_name: 'Void Mirror'
+      card_creature: "A gender-neutral sage whose body appears as a silhouette of stars against deeper darkness, merging with the void yet somehow distinct from it. Their eyes are not visible features but rather perfect circular voids that somehow reflect the unlimited potential contained in absolute emptiness. Their form seems both ancient and timeless, a consciousness that has learned to exist in perfect harmony with nothingness."
+      question_posed: "What profound wisdom might emerge if you fully embraced the darkness you've been avoiding?"
+      card_scene: "A gender-neutral figure stands perfectly still at the center of absolute darkness. Their form is defined only by an outline of tiny stars, creating a silhouette of cosmic light against the even deeper void behind them. There is no landscape, no horizon, only graduated shades of darkness extending in all directions. Where the figure's eyes should be, there are instead two perfectly circular voids that somehow reflect the observer's own gaze back at them. In one hand, the figure holds what appears to be a mirror made of polished obsidian that reflects nothing yet seems to contain everything. The figure's posture conveys neither fear nor discomfort in this lightless realm, but rather a profound understanding and acceptance of darkness as the necessary foundation of all existence. Around their feet, what initially appears to be simple ripples in water reveals itself to be ripples in space-time itself, as if the void is a fluid medium through which all potential must pass. The dark moon is represented by complete absence - a void within the void. The entire scene embodies the Dark Moon Deepening phase - the deepest moment of darkness before any emergence, conveying a sense of vastness and infinite potential rather than emptiness or negation - the darkness not as an end but as the beginning of all possibility."
+      universal_symbol: "The obsidian mirror - reflecting nothing yet containing everything, representing the paradox of emptiness as the source of all potential"
+      mood: "Profound acceptance, mysterious anticipation, serene recognition that all creation emerges from darkness"
+      prompt_for_image_gen: "Limited color risograph-style illustration of a gender-neutral sage standing in absolute darkness, their body appearing only as a silhouette of tiny stars against the deeper void.
+
+Card dimensions: 1200 x 2000 pixels (3:5 ratio)
+Style: Woodblock print/risograph aesthetic with bold lines and limited colors
+
+COLOR PALETTE:
+- Inner World (character/foreground): Black
+- Outer World (environment/background): Black
+- Archetype Highlights: Iridescent (subtle midnight blue and silver highlights)
+- Black for all lines and details
+- White/off-white background
+
+CARD ELEMENTS:
+- Main character: A gender-neutral sage whose body appears only as a silhouette of tiny stars against deeper darkness, with circular void-like eyes that paradoxically reflect everything
+- Scene: A figure standing in absolute darkness with graduated shades of black, holding an obsidian mirror that reflects nothing, with ripples in space-time at their feet
+- Lunar phase indicator: Show Dark Moon (completely black circle) in upper right corner
+- Season: Include subtle Winter elements like crystallized breath visible in cold air and geometric ice crystals in darkness
+- Symbols: Include obsidian mirror, starlit silhouette, and ripples in space-time
+
+LAYOUT:
+- Full width title bar at bottom (15% of height)
+- Title \"VOID MIRROR\" in bold, centered, all caps
+- Subtitle \"Dark Moon Deepening • 00000000\" below in smaller text
+- Main illustration above title bar
+
+STYLE NOTES:
+- Bold black outlines with varying thickness
+- Visible texture and grain throughout
+- Black for character/foreground, Black for environment, Iridescent silver-blue for highlights
+- Limited perspective but clear spatial relationships
+- Risograph/woodblock print texture throughout with subtle halftone effects"
+  related_cards:
+    same_card_winter: '00000000'
+    same_card_spring: '00000010'
+    same_card_summer: '00000011'
+    same_card_fall: '00000001'
+    opposite: '11111111'
+    thematic_pair: '01001000'
+    full_cycle:
+    - '00000000'
+    - '00000010'
+    - '00000011'
+    - '00000001'
+  bit_values:
+    bit1: '0'
+    bit2: '0'
+    bit3: '0'
+    bit4: '0'
+    bit5: '0'
+    bit6: '0'
+    bit78: '00'
+  fractal_meanings:
+    quantum:
+      pattern: "Quantum vacuum - the apparent emptiness that contains infinite virtual particles"
+      insight: "What appears as nothing actually contains infinite potential when observed at the deepest level"
+    biological:
+      pattern: "Dormancy in winter - seeds containing life potential in darkness"
+      insight: "Life forces withdraw and consolidate in darkness, preparing for future growth"
+    psychological:
+      pattern: "The unconscious mind - hidden forces that shape conscious experience"
+      insight: "What we are not aware of often has the most powerful influence on what we experience"
+    social:
+      pattern: "Cultural blindspots - collective unconscious patterns that remain unseen"
+      insight: "Communities are often shaped most by what they collectively do not see or acknowledge"
+    ecological:
+      pattern: "Deep ocean environments - life forms evolved to thrive in complete darkness"
+      insight: "Even in apparent absence of light and resources, life adapts and finds new pathways"
+    cosmic:
+      pattern: "Dark matter and dark energy - invisible forces shaping the visible universe"
+      insight: "The unseen and unmeasurable may constitute the majority of what exists"

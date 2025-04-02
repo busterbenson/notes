@@ -1,0 +1,188 @@
+card:
+  version: '2.0'
+  binary: '10000010'
+  decimal: 130
+  hexadecimal: '82'
+  basic_info:
+    desc: "This card represents intuition expressing itself through playful experimentation. The 10000010 pattern captures intuition as the sole inner resource in a Spring landscape of fresh possibilities. In this Spring aspect, it manifests as the Fool who follows hunches and intuitive leaps without concern for practical constraints or external validation. The New Moon Birthing phase perfectly mirrors this energy - the first visible sliver of light emerging from darkness, representing the initial spark of creation. Like a child who intuitively understands a new game without knowing the rules, this card embodies the joyful spontaneity of following pure intuition."
+    keywords:
+    - playful intuition
+    - spontaneity
+    - fresh beginnings
+    - experimentation
+    - hunches
+    - innocent discovery
+    symbols:
+    - red kite
+    - sprouting seed
+    - labyrinth unraveled
+    - dancing figure
+  direct_associations:
+    archetype: Fool
+    archetype_color: Turquoise
+    gender: feminine
+    inner_world:
+      color: Red
+      trigram: Wind
+      meaning: Strong intuition but lacking practical skills and resources; knows what feels right but can't manifest it
+    outer_world:
+      color: Black
+      trigram: Earth
+      meaning: Complete lack of outer resources; expectations, support, and options are all absent
+    cycle:
+      season: Spring
+      tarot_suit: Wands
+      element: Fire
+    lunar:
+      decimal_modulo: 130 % 8 = 1, 130 % 2 = 0
+      phase: New Moon
+      phase_half: Birthing
+      lunar_cycle: '2'
+      cycle_name: Development Cycle
+      complete_designation: New Moon Birthing, Development Cycle of Spring
+    tarot:
+      card: The Magician
+      cycle_suit: Wands
+      seasonal_expression: "The Magician's creative potential expressed through the Fool's innocent perspective, modified by Spring's fresh energy, creating a state of pure intuitive play that follows hunches without concern for practical constraints."
+    hexagram:
+      i_ching:
+        number: 24
+        name: Fu
+        label: Return
+        description: Returning, renewal, recovery, turning point
+      gene_key:
+        number: 24
+        shadow: Addiction
+        gift: Invention
+        siddhi: Silence
+        description: A journey from compulsive patterns to creative breakthroughs and ultimately profound inner silence and peace
+  interpreted_meanings:
+    basic:
+      name_6bit: 'Return'
+      name_8bit: 'Return in Spring'
+      gender: feminine
+    oracle_card:
+      card_name: 'Playful Hunch'
+      card_creature: "A feminine fool with wild, windswept red hair that seems to dance with a life of its own. Her form is lithe and agile, caught mid-spin in a spontaneous dance. Her face bears an expression of delighted surprise, as if she has just discovered something wonderful that no one else has noticed. Her eyes sparkle with intuitive knowing and mischievous joy. She wears light, flowing garments in shades of turquoise that billow around her like spring clouds. A trail of tiny sprouting seeds follows her dancing footsteps, suggesting that her intuitive movements are unconsciously creative. The figure seems completely unconcerned with practical matters or others' expectations - she follows only the red thread of intuition that she holds loosely in one hand."
+      question_posed: "What intuitive urge are you ignoring because it doesn't seem practical or explainable to others?"
+      card_scene: "A feminine figure dances across an awakening spring meadow at dawn, following a thin red thread or ribbon that extends from her hand up into the sky where it connects to a vibrant red kite flying without any apparent wind. The meadow is just beginning to wake from winter, with tiny green shoots emerging everywhere her bare feet touch the earth. The landscape feels like it's at the threshold between winter's sleep and spring's awakening - not fully formed but full of potential. In the background, what initially appeared to be a complex labyrinth is actually unraveling into a single, continuous spiral path, suggesting that what seems complex from outside becomes simple when following intuition. The sky shows the first blush of dawn, with a sliver of newborn light at the horizon and a tiny crescent moon still visible overhead. Despite the lack of external resources or support visible in the scene, the figure appears completely confident and joyful, as if the red thread of intuition is all the guidance needed. The New Moon Birthing phase is represented by the thin crescent visible in the dawn sky, suggesting the first emergence of something entirely new - an insight or path that has never been seen before."
+      universal_symbol: "The red kite - representing intuition that lifts and guides effortlessly, connecting earth and sky, following invisible currents that others cannot perceive"
+      mood: "Carefree spontaneity, delighted discovery, the exhilarating freedom of following a hunch"
+      prompt_for_image_gen: "LIMITED COLOR RISOGRAPH-STYLE ILLUSTRATION FOR \"PLAYFUL HUNCH\" (10000010)
+
+Create a limited-color risograph-style illustration that captures the essence of the Playful Hunch card - representing pure intuition expressing itself through spontaneous play and experimentation, following hunches without concern for practicality.
+
+CARD DIMENSIONS AND STYLE:
+- 1200 x 2000 pixels (3:5 ratio)
+- MUST INCLUDE A CLEAR BORDER with all content 200px from all edges 
+- All artwork and elements MUST remain within this 200px border - NOTHING should extend beyond this border
+- This means the actual illustration area is 800x1600 pixels centered on the card
+- Bottom 15% contains the title bar area with a clean horizontal line separation
+- Woodblock print/risograph aesthetic with bold lines and limited colors
+- Visible texture and grain throughout all elements
+- Strong contrast between elements with minimalist composition
+
+COLOR PALETTE:
+- Primary: Red (for the kite, thread, and character's hair)
+- Accent: Bright turquoise (representing the Fool archetype) for clothing and highlights
+- Outer World: Black with emerging greens for the spring landscape
+- White/off-white background with subtle texture
+- Use black for all outlines and details with varying line weights
+
+CHARACTER DESCRIPTION (INNER WORLD):
+- A feminine fool with wild, windswept red hair that seems animated with its own energy
+- Lithe, agile form caught mid-dance or mid-leap in a spontaneous movement
+- Face showing an expression of delighted surprise and joyful discovery
+- Eyes that sparkle with intuitive knowing and mischievous intelligence
+- Wearing light, flowing garments in shades of turquoise that billow like spring clouds
+- One hand holding a thin red thread that leads up to a kite in the sky
+- Bare feet barely touching the ground, as if gravity has less hold on her than on others
+
+SCENE DESCRIPTION (OUTER WORLD):
+- An awakening spring meadow at dawn, still partially dormant but with new growth emerging
+- Tiny green shoots sprouting wherever the figure's feet have touched the earth
+- A thin red thread extending from the figure's hand up to a vibrant red kite flying overhead
+- The kite flying without any apparent wind, suggesting it's guided by intuition rather than physical forces
+- In the background, a labyrinth pattern that is unraveling into a single spiral path
+- The horizon showing the first blush of dawn light, suggesting the threshold of something new
+- A sense of vast openness and possibility despite the minimal landscape elements
+
+LUNAR PHASE REPRESENTATION:
+- Small, discrete New Moon icon in upper right corner - a thin crescent of light against darkness
+- This represents the New Moon Birthing phase - the first visible emergence of light after complete darkness
+- The lunar icon echoed by a larger crescent moon visible in the dawn sky above the scene
+
+SYMBOLIC ELEMENTS:
+- Red kite: Flying without wind, representing intuition that guides without logical explanation
+- Thin red thread: The connection between intuitive impulse and action, fragile but unbroken
+- Sprouting seeds: New growth emerging from bare ground, showing how intuition creates where nothing existed
+- Unraveling labyrinth: The simplification of complexity when following intuitive guidance, turning a maze into a clear path
+- Dawn light: The threshold moment between darkness and light, representing the birth of new understanding
+
+MOOD AND ATMOSPHERE:
+- Carefree spontaneity - the liberating feeling of following impulse without concern for consequences
+- Delighted discovery - the joy of finding something unexpected through intuitive means
+- Innocent experimentation - trying things without preconceptions or fear of failure
+- Threshold anticipation - the excitement of standing at the beginning of something completely new
+
+LAYOUT SPECIFICATIONS:
+- Full width title bar at bottom (15% of card height)
+- \"PLAYFUL HUNCH\" in bold, centered, all caps
+- \"10000010\" in smaller text below
+- Main illustration filling the space above the title bar
+- Strong composition with the dancing figure as central focal point, with the red thread/kite creating visual movement upward
+
+ARTISTIC DIRECTION:
+- Create dynamic, flowing lines to convey the sense of movement and dance
+- Use negative space effectively to suggest vastness and possibility
+- Balance the minimalism of the winter-to-spring landscape with the vibrant energy of the figure
+- Apply subtle texture to suggest the emergence of new growth from the earth
+- Ensure the red elements (hair, thread, kite) create a visual through-line that guides the eye
+
+SYMBOLIC MEANINGS TO CONVEY:
+- The liberating joy of following intuition without practical concerns
+- How play and experimentation can reveal paths that logic would never find
+- The spring-like quality of intuitive breakthroughs after periods of stillness
+- The fool archetype as one who intuitively understands what others must learn through experience
+- The new moon birthing phase as the first emergence of something previously hidden
+
+This card represents intuition expressing itself through spontaneous play - the knowing that requires no external validation or practical application to be valuable. The image should evoke a sense of carefree joy and the exhilarating freedom that comes from following a hunch without needing to explain or justify it."
+  related_cards:
+    same_card_winter: '10000000'
+    same_card_spring: '10000010'
+    same_card_summer: '10000011'
+    same_card_fall: '10000001'
+    opposite: '01111101'
+    thematic_pair: '00000110'
+    full_cycle:
+    - '10000000'
+    - '10000010'
+    - '10000011'
+    - '10000001'
+  bit_values:
+    bit1: '1'
+    bit2: '0'
+    bit3: '0'
+    bit4: '0'
+    bit5: '0'
+    bit6: '0'
+    bit78: '10'
+  fractal_meanings:
+    quantum:
+      pattern: "Quantum tunneling - particles passing through barriers that classical physics would deem impenetrable"
+      insight: "Intuition often finds paths that logic insists are impossible"
+    biological:
+      pattern: "Play behavior in young animals - seemingly purposeless activity that develops crucial skills"
+      insight: "What appears as mere play often serves profound developmental purposes beneath the surface"
+    psychological:
+      pattern: "Divergent thinking - the mind's ability to generate creative ideas by exploring many possible solutions"
+      insight: "Intuitive leaps can discover in an instant what methodical reasoning might never find"
+    social:
+      pattern: "Cultural innovation - novel practices that emerge through experimental behavior rather than planning"
+      insight: "Social evolution often advances through playful deviation rather than deliberate design"
+    ecological:
+      pattern: "Pioneer species - opportunistic plants that colonize disturbed areas without apparent strategy"
+      insight: "The first stage of renewal often appears random and chaotic while establishing crucial foundations"
+    cosmic:
+      pattern: "Star formation - spontaneous condensation of matter into new celestial bodies"
+      insight: "New centers of energy and light emerge through processes that appear chaotic but follow deeper patterns"

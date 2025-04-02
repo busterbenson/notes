@@ -1,0 +1,187 @@
+card:
+  version: '2.0'
+  binary: '10000001'
+  decimal: 129
+  hexadecimal: '81'
+  basic_info:
+    desc: "This card represents intuition distorted by the process of decay and transformation. The 10000001 pattern captures intuition as the sole inner resource amidst a Fall landscape of dissolution. In this Fall aspect, it manifests as the Monster who perceives deeply but whose vision becomes twisted through isolation and lack of external validation. The Dark Moon Emerging phase perfectly mirrors this energy - the first faint glimmer after complete darkness that can be either the birth of truth or delusion. Like a prophet driven mad by their own visions, this card embodies the danger of intuition that festers in isolation."
+    keywords:
+    - distorted intuition
+    - isolation
+    - decay
+    - obsession
+    - delusion
+    - twisted vision
+    symbols:
+    - warped reflection
+    - fallen leaves
+    - labyrinth
+    - glowing eyes
+  direct_associations:
+    archetype: Monster
+    archetype_color: Purple
+    gender: masculine
+    inner_world:
+      color: Red
+      trigram: Wind
+      meaning: Strong intuition but lacking practical skills and resources; knows what feels right but can't manifest it
+    outer_world:
+      color: Black
+      trigram: Earth
+      meaning: Complete lack of outer resources; expectations, support, and options are all absent
+    cycle:
+      season: Fall
+      tarot_suit: Pentacles
+      element: Earth
+    lunar:
+      decimal_modulo: 129 % 8 = 0, 129 % 2 = 1
+      phase: Dark Moon
+      phase_half: Emerging
+      lunar_cycle: '2'
+      cycle_name: Development Cycle
+      complete_designation: Dark Moon Emerging, Development Cycle of Fall
+    tarot:
+      card: The Magician
+      cycle_suit: Pentacles
+      seasonal_expression: "The Magician's creative potential expressed through the Monster's distortion, modified by Fall's decay, creating a state where intuitive vision becomes twisted through excessive isolation and lack of external validation."
+    hexagram:
+      i_ching:
+        number: 24
+        name: Fu
+        label: Return
+        description: Returning, renewal, recovery, turning point
+      gene_key:
+        number: 24
+        shadow: Addiction
+        gift: Invention
+        siddhi: Silence
+        description: A journey from compulsive patterns to creative breakthroughs and ultimately profound inner silence and peace
+  interpreted_meanings:
+    basic:
+      name_6bit: 'Return'
+      name_8bit: 'Return in Fall'
+      gender: masculine
+    oracle_card:
+      card_name: 'Obsessive Vision'
+      card_creature: "A masculine monster with gaunt features and wild eyes that glow with an unnatural red light. His form is emaciated yet somehow imposing, with long spidery fingers that grasp at nothing. His skin appears almost translucent, with visible veins that pulse with the same red energy as his eyes. Tangled hair frames his face like a dark halo, occasionally revealing a third eye in his forehead that seems to see through different dimensions. His expression contains both profound insight and disturbing intensity - the look of someone who has stared too long into the abyss and allowed it to stare back. His body twists unnaturally, as though the physical form is being distorted by the power of his unchecked intuition."
+      question_posed: "What intuitive understanding have you become obsessed with that requires external validation?"
+      card_scene: "A masculine figure stands within a decaying autumn forest, surrounded by a labyrinth of fallen leaves that spiral inward toward him. The trees are twisted and bare, their branches creating patterns that resemble neural networks or conspiratorial connections. Dozens of small pools of water are scattered throughout the forest floor, each reflecting the monster's face but distorted in different ways - some showing wisdom, others madness. The boundary between reality and delusion is blurred, with certain sections of the forest appearing to shift and morph upon closer inspection. A faint red glow emanates from the figure's eyes and is reflected in the water, creating the only warm color in the otherwise dark and decaying landscape. The Dark Moon Emerging phase is represented by the faintest sliver of light beginning to appear at the edge of a perfectly dark circle visible through the twisted branches - suggesting the precarious moment when new understanding might emerge from darkness, but could just as easily distort into delusion without proper grounding. The entire scene evokes the feeling of being lost in a maze of one's own creation, where genuine insight and fabricated patterns become indistinguishable."
+      universal_symbol: "The warped reflection - representing how intuition becomes distorted without external validation, creating a carnival mirror effect that both reveals and deceives"
+      mood: "Feverish isolation, compelling distortion, the unsettling feeling of insight divorced from reality"
+      prompt_for_image_gen: "LIMITED COLOR RISOGRAPH-STYLE ILLUSTRATION FOR \"OBSESSIVE VISION\" (10000001)
+
+Create a limited-color risograph-style illustration that captures the essence of the Obsessive Vision card - representing intuition that has become distorted through isolation, the knowing that transforms into delusion without external validation.
+
+CARD DIMENSIONS AND STYLE:
+- 1200 x 2000 pixels (3:5 ratio)
+- MUST INCLUDE A CLEAR BORDER with all content 200px from all edges 
+- All artwork and elements MUST remain within this 200px border - NOTHING should extend beyond this border
+- This means the actual illustration area is 800x1600 pixels centered on the card
+- Bottom 15% contains the title bar area with a clean horizontal line separation
+- Woodblock print/risograph aesthetic with bold lines and limited colors
+- Visible texture and grain throughout all elements
+- Strong contrast between elements with minimalist composition
+
+COLOR PALETTE:
+- Primary: Red (for inner world character's eyes and veins)
+- Accent: Deep purple (representing the Monster archetype)
+- Outer World: Black/dark browns for the autumn forest landscape
+- White/off-white background with subtle texture
+- Use black for all outlines and details with varying line weights
+
+CHARACTER DESCRIPTION (INNER WORLD):
+- A masculine monster with gaunt, haunted features and wild, unkempt appearance
+- Eyes that glow with an unnatural red light, including a third eye occasionally visible in his forehead
+- Emaciated yet imposing form with long, spidery fingers that seem to grasp at nothing
+- Skin that appears almost translucent, with visible veins pulsing with the same red energy as the eyes
+- Hair like a dark, tangled halo framing his face
+- Body twisted in an unnatural posture, as if physical form is being distorted by mental energy
+- Expression containing both profound insight and disturbing intensity
+
+SCENE DESCRIPTION (OUTER WORLD):
+- A decaying autumn forest with twisted, bare trees whose branches create neural network-like patterns
+- A labyrinth of fallen leaves that spiral inward toward the figure at the center
+- Multiple small pools of water scattered throughout the forest floor, each reflecting the monster's face in different, distorted ways
+- Some sections of the forest appearing to shift and warp, blurring the boundary between reality and delusion
+- Faint red glow from the figure's eyes reflected in the water pools, creating the only warm color in the scene
+- A sense that the environment itself might be a projection of the figure's mind rather than objective reality
+- No clear path in or out of the forest labyrinth
+
+LUNAR PHASE REPRESENTATION:
+- Small, discrete Dark Moon icon in upper right corner - a black circle with the faintest sliver of light beginning to appear at one edge
+- This represents the Dark Moon Emerging phase - the precarious moment when new understanding begins to form after complete darkness
+- The lunar symbol echoed in a larger moon visible through twisted branches overhead
+
+SYMBOLIC ELEMENTS:
+- Warped reflections: Multiple water pools showing distorted versions of the monster's face, representing intuition twisted by isolation
+- Labyrinth of leaves: Spiraling pattern of autumn leaves creating a maze with no clear path in or out, symbolizing being lost in one's own thoughts
+- Neural branches: Tree branches forming patterns that resemble neural connections or conspiracy boards, showing the mind creating patterns in isolation
+- Glowing eyes: Red illumination representing the inner fire of intuition that has become too intense and consuming without external moderation
+
+MOOD AND ATMOSPHERE:
+- Feverish isolation - the uncomfortable intensity of being trapped with one's own thoughts
+- Compelling distortion - the seductive quality of patterns that seem meaningful but may be fabricated
+- Uncanny recognition - the feeling of seeing something that is simultaneously true and false
+- Obsessive focus - the energy of attention directed too intensely at a single point
+
+LAYOUT SPECIFICATIONS:
+- Full width title bar at bottom (15% of card height)
+- \"OBSESSIVE VISION\" in bold, centered, all caps
+- \"10000001\" in smaller text below
+- Main illustration filling the space above the title bar
+- Strong composition with the monster as focal point surrounded by the spiral labyrinth of leaves and reflective pools
+
+ARTISTIC DIRECTION:
+- Create unsettling contrast between the red glowing elements and the dark autumn landscape
+- Use twisted, irregular linework to convey the distortion of perception
+- Apply warped reflection effects in the water pools to show different facets of the same figure
+- Balance between recognizable forest elements and more abstract, psychological patterns
+- Ensure the monster appears both frightening and pitiable - a figure who suffers from his own vision
+
+SYMBOLIC MEANINGS TO CONVEY:
+- The danger of intuition that lacks external validation or expression
+- How isolation can transform insight into delusion
+- The addictive quality of pattern-recognition divorced from reality
+- The fall season as a time when boundaries between worlds become thinner
+- The monster archetype as intuition that has become dangerous through distortion
+
+This card represents intuition that has festered in isolation, becoming a labyrinth of compelling but potentially delusional patterns. The image should evoke both the seductive power and the disturbing danger of visions that have no external reality check."
+  related_cards:
+    same_card_winter: '10000000'
+    same_card_spring: '10000010'
+    same_card_summer: '10000011'
+    same_card_fall: '10000001'
+    opposite: '01111110'
+    thematic_pair: '00110001'
+    full_cycle:
+    - '10000000'
+    - '10000010'
+    - '10000011'
+    - '10000001'
+  bit_values:
+    bit1: '1'
+    bit2: '0'
+    bit3: '0'
+    bit4: '0'
+    bit5: '0'
+    bit6: '0'
+    bit78: '01'
+  fractal_meanings:
+    quantum:
+      pattern: "Quantum collapse into a false vacuum - when random fluctuation appears to create stable reality"
+      insight: "What appears as insight may actually be random pattern mistaken for meaningful signal"
+    biological:
+      pattern: "Parasitic hijacking - when an organism's detection system is exploited by invaders"
+      insight: "Our intuitive systems can be manipulated to respond to false patterns that mimic important signals"
+    psychological:
+      pattern: "Pareidolia and apophenia - seeing faces in random patterns or meaningful connections in coincidence"
+      insight: "The human mind seeks patterns so eagerly that it will impose them even where none exist"
+    social:
+      pattern: "Conspiracy theories - compelling explanatory frameworks that distort reality"
+      insight: "Isolated groups create self-reinforcing interpretations that become increasingly divorced from shared reality"
+    ecological:
+      pattern: "Invasive species - organisms thriving unchecked without natural predators or balancing forces"
+      insight: "Ideas that would be moderated in healthy discourse can grow monstrous in isolation"
+    cosmic:
+      pattern: "False vacuum decay - when seemingly stable states reveal themselves as unsustainable"
+      insight: "What appears as profound insight in isolation may collapse when exposed to broader reality"

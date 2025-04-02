@@ -1,58 +1,52 @@
-# 8-Bit Oracle Card Repository
+# 8-bit Oracle Cards
 
-This directory contains all 256 card files for the 8-Bit Oracle divination system. Each card is represented by an 8-bit binary pattern and stored in a YAML file named after its binary pattern.
+This repository contains files related to the 8-bit Oracle card system - a divination system based on 8-bit binary patterns.
+
+## Key Files
+
+### Card Sorting
+- `sorts/lunisolar_sort.md` - Complete ordered listing of all 256 cards in order of seasons and lunar cycles
+- `sorts/lunisolar_sort_reference.md` - File with script to generate the circular arrangement
+
+### Card Generation
+- `card-template.yml` - Template for creating new cards
+- `card-generator.py` - Script to generate card YAML files
+- `card-style-guidelines.md` - Visual styling guidelines for cards
+- `generate-card.sh` - Helper script for card generation
+
+## Circular Arrangement
+
+The cards are arranged in a circular pattern with several key properties:
+
+1. **Four Concentric Circles** for seasons:
+   - Winter (00) - Sage archetype
+   - Spring (10) - Fool archetype 
+   - Summer (11) - Hero archetype
+   - Fall (01) - Monster archetype
+
+2. **Bit-Significance Optimization**:
+   - Inner world bits (1-3) change most frequently (87.5% of transitions)
+   - Bit 1 (Intuition) changes every other position (50.0%)
+   - Only one bit changes between adjacent positions
+
+3. **Accurate Metadata**:
+   - Resonant season and archetype based on inner/outer world balance
+   - Lunar cycle, phase, and half phase based on bits 1-6, as defined in associations/lunar-cycle.yml and in sorts/lunisolar_sort_reference.md
+   - Full information for all 256 cards
+
+## Usage
+
+1. View the complete card order in `sorts/lunisolar_sort.md`
 
 ## Card Structure
 
-Each card follows this basic structure:
-- **Binary Pattern**: 8 digits of 0s and 1s (e.g., 00000000)
-- **Bit Values**: Meaning of each activated (1) or unactivated (0) bit
-- **Inner World**: State of bits 1-3 representing internal resources
-- **Outer World**: State of bits 4-6 representing external resources
-- **Cycle Phase**: State of bits 7-8 representing elemental and cyclical phase
+Each card has an 8-bit binary code where:
+- Bits 1-3: Inner world resources (Intuition, Ability, Capacity)
+- Bits 4-6: Outer world resources (Expectations, Support, Options)
+- Bits 7-8: Seasonal cycle (Winter, Spring, Summer, Fall)
 
-## Card Types
+## Moon Phase System
 
-### Major Arcana (22 cards)
-- These correspond to the 22 Major Arcana cards of the Tarot
-- All have even parity (even number of 1s in bits 1-6)
-- Associated with Hebrew letters and Tarot archetypes
-
-### Minor Arcana Numbers (10 cards)
-- These correspond to the 10 numbered cards of the Tarot (Ace through Ten)
-- All have even parity (even number of 1s in bits 1-6)
-- Associated with the Sephiroth of the Kabbalistic Tree of Life
-
-### Seasonal Variations (4 variations for each archetype)
-- Each archetype appears in all four seasonal phases (bits 7-8)
-  - 00: Winter/Air/Swords/New Moon
-  - 01: Spring/Fire/Wands/Waxing Moon
-  - 11: Summer/Water/Cups/Full Moon
-  - 10: Autumn/Earth/Pentacles/Waning Moon
-
-### Odd Parity Cards
-- The 32 cards with odd parity (odd number of 1s in bits 1-6)
-- These represent transitional or shadow aspects of the archetypes
-
-## File Naming Convention
-
-Cards are named according to their 8-bit binary pattern, with the naming convention "Card of Season":
-- `00000000.yml` - Moon of Winter
-- `11111111.yml` - Sun of Summer
-- `10000000.yml` - Magician of Winter
-
-## Reading the Cards
-
-To read or interpret a card:
-1. Look at each individual bit to understand which resources are available
-2. Analyze the inner world (bits 1-3) and outer world (bits 4-6) configurations
-3. Consider the elemental phase (bits 7-8)
-4. Reference the associated systems (I Ching, Tarot, Kabbalah, Music) for deeper insight
-
-## Card Examples
-
-- `00000000.yml` - Moon of Winter (complete absence of resources)
-- `11111111.yml` - Sun of Summer (complete presence of all resources)
-- `10000000.yml` - Magician of Winter (intuition alone)
-- `00111111.yml` - World of Summer (capacity + all outer resources)
-- `01010101.yml` - Five of Spring (alternating pattern of resources)
+The lunar phase is determined by:
+- Phase (8 phases): Decimal value of bits 1-6 modulo 8
+- Half (Deepening/Emerging): Determined by bit 7

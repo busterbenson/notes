@@ -1,0 +1,140 @@
+card:
+  version: '2.0'
+  binary: '00000010'
+  decimal: 2
+  hexadecimal: '2'
+  basic_info:
+    desc: "This card represents the empty canvas where all creation is possible. The 00000010 pattern captures the moment of pristine potential right before the first mark is made. In this Spring aspect, it manifests as the Fool who approaches emptiness with innocent creativity and spontaneous possibility. The New Moon Birthing phase perfectly mirrors this energy - the first visible sliver of light emerging from darkness, the beginning of a new cycle. Like an artist before a blank page or a child seeing the world anew, this card embodies the thrilling potential of the unwritten beginning."
+    keywords:
+    - beginning
+    - birth
+    - innocence
+    - emergence
+    - genesis
+    - potential
+    symbols:
+    - blank canvas
+    - first sliver of moon
+    - seedling
+    - empty path
+  direct_associations:
+    archetype: Fool
+    archetype_color: Turquoise
+    gender: neutral
+    inner_world:
+      color: Black
+      trigram: Earth
+      meaning: Complete absence of inner resources; intuition, ability, and capacity are all absent
+    outer_world:
+      color: Black
+      trigram: Earth
+      meaning: Complete lack of outer resources; expectations, support, and options are all absent
+    cycle:
+      season: Spring
+      tarot_suit: Wands
+      element: Fire
+    lunar:
+      decimal_modulo: 2 % 8 = 1, 2 % 2 = 0
+      phase: New Moon
+      phase_half: Birthing
+      lunar_cycle: '1'
+      cycle_name: Inception Cycle
+      complete_designation: New Moon Birthing, Inception Cycle of Spring
+    tarot:
+      card: The Moon
+      cycle_suit: Wands
+      seasonal_expression: "The Moon's mysterious energy expressed through the Fool's innocent perspective, modified by Spring's creative impulse, creating a state of pristine potential where the first mark on the empty canvas is about to be made."
+    hexagram:
+      i_ching:
+        number: 2
+        name: Kun
+        label: The Receptive
+        description: Pure yin, yielding, responsive, accepting, following
+      gene_key:
+        number: 2
+        shadow: Dislocation
+        gift: Orientation
+        siddhi: Unity
+        description: A journey from feeling lost and disconnected to finding your true direction and ultimately experiencing oneness with all
+  interpreted_meanings:
+    basic:
+      name_6bit: 'The Receptive'
+      name_8bit: 'The Receptive in Spring'
+      gender: neutral
+    oracle_card:
+      card_name: 'Unwritten Beginning'
+      card_creature: "A neutral fool whose form appears youthful and fluid, poised on the threshold of creation. Neither distinctly male nor female, this figure embodies the innocent potential of the beginner's mind. They stand with one foot lifted as if taking the first step on an unmarked path, holding what appears to be a blank canvas or page that contains, paradoxically, all possibility. Their eyes are wide with wonder and their expression contains both anticipation and serenity."
+      question_posed: "What beautiful possibility might emerge if you approached your situation with a beginner's mind, free from preconceptions?"
+      card_scene: "A gender-neutral figure with a childlike, innocent quality stands at the edge of what appears to be a vast empty space that gradually transitions from complete darkness to a field of pristine white. The figure holds a blank canvas or page in one hand, while the other hand is raised as if about to make the first mark. The background suggests early spring - bare branches with the faintest hint of green buds, a few tiny seedlings emerging from otherwise barren ground. The sky shows the thinnest sliver of a new moon, barely visible against the night sky. Where the figure's foot touches the ground, the first hint of a path begins to form, yet the path ahead remains completely unmarked. There's a sense of hushed anticipation, as if the whole scene is holding its breath before the first act of creation. Small ripples or patterns in the empty space suggest infinite possibilities waiting to be manifested. The New Moon Birthing phase is represented by the slender crescent and the overall quality of emergence and initiation. The entire composition evokes Spring's essence - the fresh beginning that contains all potential futures."
+      universal_symbol: "The blank canvas/empty page - representing the limitless potential of beginnings unbound by preconceptions"
+      mood: "Innocent wonder, delicate emergence, the breathless anticipation before creation"
+      prompt_for_image_gen: "Limited color risograph-style illustration of a gender-neutral fool standing before a vast empty space, holding a blank canvas and poised to take the first step on an unmarked path.
+
+Card dimensions: 1200 x 2000 pixels (3:5 ratio)
+Style: Woodblock print/risograph aesthetic with bold lines and limited colors
+
+COLOR PALETTE:
+- Inner World (character/foreground): Black
+- Outer World (environment/background): Black
+- Archetype Highlights: Turquoise (bright aqua blue-green accents)
+- Black for all lines and details
+- White/off-white background
+
+CARD ELEMENTS:
+- Main character: A gender-neutral fool with youthful, fluid appearance, one foot raised as if taking first step, holding a blank canvas/page
+- Scene: A figure at the threshold between darkness and pristine white space, with bare branches showing faint green buds and tiny seedlings emerging from barren ground
+- Lunar phase indicator: Show New Moon (thin crescent) in upper right corner
+- Season: Include distinct Spring elements like barely visible buds on branches, tiny seedlings, and a sense of dawn light
+- Symbols: Include blank canvas/page, first sliver of moon, seedling breaking through soil, and an unmarked path beginning to form
+
+LAYOUT:
+- Full width title bar at bottom (15% of height)
+- Title \"UNWRITTEN BEGINNING\" in bold, centered, all caps
+- Subtitle \"New Moon Birthing • 00000010\" below in smaller text
+- Main illustration above title bar
+
+STYLE NOTES:
+- Bold black outlines with varying thickness
+- Visible texture and grain throughout
+- Black for character/foreground, Black for environment, Bright turquoise highlights
+- Limited perspective but clear spatial relationships
+- Risograph/woodblock print texture throughout with subtle halftone effects"
+  related_cards:
+    same_card_winter: '00000000'
+    same_card_spring: '00000010'
+    same_card_summer: '00000011'
+    same_card_fall: '00000001'
+    opposite: '11111101'
+    thematic_pair: '00100000'
+    full_cycle:
+    - '00000000'
+    - '00000010'
+    - '00000011'
+    - '00000001'
+  bit_values:
+    bit1: '0'
+    bit2: '0'
+    bit3: '0'
+    bit4: '0'
+    bit5: '0'
+    bit6: '0'
+    bit78: '10'
+  fractal_meanings:
+    quantum:
+      pattern: "Wave function potential - the moment before observation collapses possibilities"
+      insight: "Before manifestation, all possibilities exist simultaneously in a state of superposition"
+    biological:
+      pattern: "Germination - the moment when a seed first cracks open"
+      insight: "The most transformative moments often appear as the smallest beginnings"
+    psychological:
+      pattern: "Beginner's mind - approaching experience without preconceptions"
+      insight: "The greatest creativity emerges when we suspend our assumptions and perceived limitations"
+    social:
+      pattern: "Cultural renaissance - periods when societies reimagine possibilities"
+      insight: "Renewed creativity in a culture often follows periods of emptying or clearing old forms"
+    ecological:
+      pattern: "Pioneer species - first organisms to colonize barren environments"
+      insight: "The simplest forms often create the conditions necessary for greater complexity to emerge"
+    cosmic:
+      pattern: "Stellar formation - condensation of matter into new stars"
+      insight: "Creation begins with gathering and concentration of potential within empty space"
