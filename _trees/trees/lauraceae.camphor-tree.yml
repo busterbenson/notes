@@ -1,0 +1,260 @@
+tree:
+  common_name: "Camphor Tree"
+  scientific_name: "Cinnamomum camphora"
+  family: "Lauraceae"
+  
+  # Basic summary (2-3 sentences of most distinctive features)
+  summary: "A large evergreen tree native to Asia with distinctive glossy leaves that emit a strong medicinal camphor scent when crushed. The smooth to slightly furrowed gray-brown bark, aromatic oval leaves, and rounded crown are characteristic of this widely planted ornamental and shade tree."
+  
+  # Identification path guides the decision tree
+  identification_path:
+    primary_markers: "Evergreen tree with strongly aromatic leaves; distinctive camphor smell when leaves crushed"
+    secondary_markers: "Glossy, oval to elliptical leaves; smooth to slightly furrowed gray-brown bark"
+    seasonal_markers: "Small yellowish-white flowers in spring; small black fruits in fall"
+    similar_species_differentiation: "Distinguished from California Bay Laurel by its camphor rather than bay-like smell; differs from Avocado by its smaller fruits and stronger aroma; unlike Eucalyptus, has solid (not sickle-shaped) leaves"
+  
+  # Core features section
+  features:
+    always_true:
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Retains glossy green leaves year-round"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple
+        notes: "Leaves are undivided, not compound"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves arranged alternately along stems"
+      
+      - feature_id: "LEAF-SHAPE-01"  # Oval
+        notes: "Elliptical to oval leaves with pointed tips"
+      
+      - feature_id: "LEAF-EDGE-01"  # Entire
+        notes: "Smooth leaf margins without teeth or lobes"
+      
+      - feature_id: "SENSORY-SMELL-02"  # Aromatic smell
+        notes: "Extremely fragrant leaves with strong medicinal camphor scent when crushed"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Non-native
+        notes: "Native to Asia but widely planted in California as ornamental"
+    
+    usually_true:
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Usually develops a single trunk with broad spreading crown"
+        exceptions: "May have multiple trunks in some landscape settings"
+      
+      - feature_id: "BARK-COLOR-01"  # Gray bark
+        notes: "Gray to brown bark, smooth when young, becoming furrowed with age"
+        exceptions: "Bark color can vary slightly with age and growing conditions"
+    
+    sometimes_true:
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        conditions: "Young to mid-age specimens"
+        notes: "20-50 feet in height, common size in urban settings"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        conditions: "Mature specimens in good growing conditions"
+        notes: "Can reach over 75 feet in ideal conditions"
+      
+      - feature_id: "TREE-FORM-02"  # Rounded crown
+        conditions: "Mature specimens in open settings"
+        notes: "Develops dense, broadly rounded crown when grown in open areas"
+      
+      - feature_id: "FRUIT-TYPE-07"  # Drupes
+        conditions: "Mature trees during fall season"
+        notes: "Produces small black berry-like drupes following inconspicuous flowers"
+      
+      - feature_id: "ECO-ADAPT-01"  # Drought tolerant
+        conditions: "Established trees"
+        notes: "Moderately drought-tolerant once established"
+    
+    never_true:
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all leaves seasonally; remains evergreen"
+      
+      - feature_id: "LEAF-EDGE-05"  # Spiny
+        notes: "Leaves have smooth margins, never spiny"
+      
+      - feature_id: "NEEDLE-ARRANGE-01"  # Single needles
+        notes: "Has broad leaves, not needles"
+  
+  # Kid-friendly identification section
+  kid_friendly_identification:
+    primary_identifier: "Leaves that smell like medicine or mothballs when crushed"
+    memorable_comparison: "The smell is like cough drops, vapor rub, or the white moth-repellent balls sometimes used in closets"
+    touch_tip: "Feel how smooth and shiny the leaves are - they're waxy on both sides"
+    smell_tip: "GENTLY crush a leaf between your fingers and smell - the camphor smell is strong and distinctive!"
+    fun_fact: "The camphor tree has been used for over 2,000 years in traditional medicine. It's the source of camphor, which is used in many products like moth repellents, some perfumes, and vapor rubs for colds. In its native Asia, the wood is prized for furniture because the smell helps keep insects away."
+    
+    # Detective steps walk children through identification
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the leaves. Are they smooth-edged, shiny, and evergreen?"
+        yes_next: 2
+        no_next: "Not a Camphor Tree - try looking for other trees with different leaves"
+      - step: 2
+        instruction: "GENTLY crush a leaf and smell it. Does it have a strong medicinal smell like mothballs or cough drops?"
+        yes_next: 3
+        no_next: "Not a Camphor Tree - check out California Bay Laurel which has a different spicy smell"
+      - step: 3
+        instruction: "Look at the overall tree. Is it a large shade tree with broadly spreading branches?"
+        yes_next: "You found a Camphor Tree!"
+        no_next: "Might be a young Camphor Tree or a different aromatic tree - check the leaf smell again"
+  
+  # Seasonal changes - separate entry for each season
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New leaf growth emerges; small yellowish-white flowers appear in clusters"
+      reproductive_activity: "Small, inconspicuous flowers bloom in branched clusters"
+      identification_tips: "Look for fresh leaf growth and small flower clusters"
+      kid_friendly_tip: "In spring, tiny yellow-white flowers grow in clusters, and you might see lighter green new leaves"
+    
+    - season: "Summer" 
+      visual_changes: "Leaves reach full mature color; flowers develop into small green fruits"
+      reproductive_activity: "Fruits begin developing after flowering"
+      identification_tips: "Full dark green foliage; developing small green fruits"
+      kid_friendly_tip: "During summer, small green berries start to form where the flowers were"
+    
+    - season: "Fall"
+      visual_changes: "Fruits mature and turn black; tree remains evergreen"
+      reproductive_activity: "Fruits ripen turning from green to black"
+      identification_tips: "Look for small black berry-like fruits; tree remains fully green"
+      kid_friendly_tip: "The little fruits turn black in fall, about the size of small peas"
+    
+    - season: "Winter"
+      visual_changes: "Tree stays green; buds may begin forming for spring"
+      reproductive_activity: "Dormant period"
+      identification_tips: "Green crown stands out when deciduous trees are bare"
+      kid_friendly_tip: "While other trees lose their leaves, Camphor Tree stays green all winter"
+      
+  # Additional required sections
+  confirmation_checklist:
+    - feature: "Aromatic leaves with strong camphor scent"
+      reliability: "Very high"
+      visibility: "Easy - detected when leaves are crushed"
+    - feature: "Smooth-edged, glossy, evergreen leaves"
+      reliability: "High"
+      visibility: "Easy - visible from a distance"
+    - feature: "Smooth to slightly furrowed gray-brown bark"
+      reliability: "Medium"
+      visibility: "Easy - visible from nearby"
+    - feature: "Black berry-like fruits (if in season)"
+      reliability: "High"
+      visibility: "Medium - need to look closely"
+    
+  look_alikes:
+    - name: "California Bay Laurel (Umbellularia californica)"
+      type: "species"
+      differences: "California Bay has stronger bay-like scent rather than camphor; more lance-shaped leaves; native to California"
+      identification_tip: "Crush a leaf - California Bay has a spicy bay smell while Camphor Tree has a medicinal camphor smell"
+    
+    - name: "Avocado (Persea americana)"
+      type: "species"
+      differences: "Avocado has larger fruits; milder scent; more leathery leaves and different overall form"
+      identification_tip: "Avocado trees produce large edible fruits and have only a mild scent compared to Camphor Tree's strong aroma"
+    
+    - name: "Southern Magnolia (Magnolia grandiflora)"
+      type: "species"
+      differences: "Magnolia has much larger, thicker leaves; rusty undersides; no aromatic smell; large showy flowers"
+      identification_tip: "Magnolia leaves are much larger and thicker with brown fuzzy undersides and lack the camphor smell"
+    
+  cultural_ecological_notes:
+    - "The strong scent can deter some insects, which is why it's been used traditionally as an insect repellent"
+    - "Widely planted as a shade tree in urban settings throughout California"
+    - "All parts of the tree contain camphor oil, which can be extracted for commercial and medicinal uses"
+    - "Trees can live for over 100 years in favorable conditions"
+    - "Can become invasive in some areas with favorable climate"
+    - "Chemical compounds have antimicrobial properties which help protect the tree from disease"
+    
+  cultural_significance:
+    # Organized by culture
+    - culture: "Traditional East Asian"
+      physical_uses:
+        - "Wood used for furniture and construction due to its insect-repelling properties"
+        - "Extracted camphor oil used for medicine and as a preservative"
+        - "Leaves used in traditional remedies for various ailments"
+        - "Burned as incense in religious ceremonies"
+      symbolic_meaning:
+        - "Associated with purification and cleansing"
+        - "Symbolizes strength and endurance"
+        - "Used in religious practices for clarity and protection"
+    
+    - culture: "Modern Urban California"
+      physical_uses:
+        - "Widely planted as shade trees in parks and streets"
+        - "Valued for drought tolerance once established"
+        - "Used in some botanical gardens as educational specimens"
+        - "Provides dense shade in urban settings"
+      symbolic_meaning:
+        - "Represents the diverse botanical heritage of California's urban forests"
+        - "Often associated with older, established neighborhoods"
+    
+  range_within_california:
+    - "Not native but widely planted throughout urban and suburban areas"
+    - "Particularly common in Southern California and Central Valley cities"
+    - "Found in parks, along streets, and in residential landscapes"
+    - "Thrives in Mediterranean climate zones"
+    - "Less common in high mountain areas due to cold sensitivity"
+    
+  # Decision tree placement
+  physical_characteristics:
+    height_range: "30-100 feet"
+    growth_rate: "Moderate to fast"
+    crown_spread: "50-70 feet at maturity"
+    lifespan: "100+ years in ideal conditions"
+    trunk_diameter: "Up to 3-4 feet in diameter at maturity"
+    root_system: "Deep and extensive lateral roots"
+    toxicity: "Contains volatile oils that can cause skin irritation in sensitive individuals; seeds are toxic if ingested in quantity"
+  
+  conservation_status:
+    status: "Not applicable - non-native ornamental species"
+    threats: 
+      - "Susceptible to extreme cold in northern parts of California"
+      - "Some fungal diseases in overly wet conditions"
+    protection_efforts:
+      - "Not a conservation concern as a non-native species"
+      - "May be regulated in some areas due to invasive potential"
+      
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+      - "feature_id: SENSORY-SMELL-02"  # Aromatic camphor smell
+    confirmation_features:
+      - "feature_id: FRUIT-TYPE-07"  # Drupe fruits
+      - "feature_id: LEAF-EDGE-01"  # Entire leaf edge
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["LEAF-TYPE-02", "TREE-FORM-02"]  # Evergreen, rounded crown
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-EDGE-01", "LEAF-SHAPE-01"]  # Entire leaf edge, oval shape
+      - distance: "close_inspection"
+        features_to_check: ["SENSORY-SMELL-02", "FRUIT-TYPE-07"]  # Aromatic camphor smell, drupe fruits
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "SENSORY-SMELL-02"]
+        notes: "Look for small yellowish-white flower clusters and aromatic leaves"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-TYPE-02", "SENSORY-SMELL-02", "LEAF-COLOR-01"]
+        notes: "Full dark green foliage; developing fruits may be visible"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["LEAF-TYPE-02", "SENSORY-SMELL-02", "FRUIT-TYPE-07"]
+        notes: "Small black fruits present; aromatic evergreen leaves"
+      
+      winter:
+        reliability: "High"
+        key_features: ["LEAF-TYPE-02", "SENSORY-SMELL-02"]
+        notes: "Remains green when deciduous trees are bare"
+    misidentification_risks: 
+      - "May be confused with California Bay Laurel, which has a similar appearance but different aroma"
+      - "Young trees might resemble some other evergreen broadleaf trees like Southern Magnolia"
+      - "In winter, could be confused with other evergreen broadleaf trees when not examining smell"
+
+  wildlife_value:
+    - "Seeds eaten by some birds in its native range"
+    - "Dense evergreen foliage provides winter shelter for birds"
+    - "Not a significant food source for most California wildlife"
+    - "Primarily valuable as shelter rather than food for wildlife"
