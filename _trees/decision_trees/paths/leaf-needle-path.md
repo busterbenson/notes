@@ -2,6 +2,11 @@
 
 Look closely at the leaves or needles of your tree.
 
+**Identification Difficulty Guide:**
+- ★ EASY - Features anyone can see easily, good for beginners
+- ★★ MODERATE - Takes a bit more practice, but still visible
+- ★★★ CHALLENGING - May need closer observation or experience
+
 **Special Feature Pages:**
 - [Redwood & Sequoia Group](groups/redwood-sequoia-group.md) - Compare the three majestic redwood-type trees
 - [Oak Group](groups/oak-group.md) - Identify various oak species by their distinctive leaves
@@ -301,35 +306,35 @@ Look closely at the leaves or needles of your tree.
 │   │   │   ├── How are the needles ATTACHED to the branch?
 │   │   │   │   ├── They're in BUNDLES of 2-5 → Go to Pine Genus (Pinus)
 │   │   │   │   │   ├── How many needles per bundle?
-│   │   │   │   │   │   ├── 5 NEEDLES PER BUNDLE → "WHITE PINE" GROUP
+│   │   │   │   │   │   ├── 5 NEEDLES PER BUNDLE → "WHITE PINE" GROUP ★ (Easy to count)
 │   │   │   │   │   │   │   ├── PINE GENUS - 5-NEEDLE GROUP
-│   │   │   │   │   │   │   │   ├── Sugar Pine: 5 needles per bundle, extremely long cones
-│   │   │   │   │   │   │   │   ├── Western White Pine: 5 needles per bundle
+│   │   │   │   │   │   │   │   ├── Sugar Pine: 5 needles per bundle, extremely long cones ★ (Easy - has longest cones)
+│   │   │   │   │   │   │   │   ├── Western White Pine: 5 needles per bundle ★★ (Moderate - look for location)
 │   │   │   │   │   │   │   │   └── All "White Pines" have 5 needles per bundle
 │   │   │   │   │   │   │   │
 │   │   │   │   │   │   │   └── Key traits: Soft, flexible needles and 5 per bundle
 │   │   │   │   │   │   │
-│   │   │   │   │   │   ├── 3 NEEDLES PER BUNDLE → "YELLOW PINE" GROUP
+│   │   │   │   │   │   ├── 3 NEEDLES PER BUNDLE → "YELLOW PINE" GROUP ★ (Easy to count)
 │   │   │   │   │   │   │   ├── PINE GENUS - 3-NEEDLE GROUP
-│   │   │   │   │   │   │   │   ├── Ponderosa Pine: 3 needles, vanilla-scented puzzle bark
-│   │   │   │   │   │   │   │   ├── Jeffrey Pine: 3 needles, similar to Ponderosa but stronger vanilla scent
-│   │   │   │   │   │   │   │   ├── Gray Pine: 3 needles but extremely long (8-12")
+│   │   │   │   │   │   │   │   ├── Ponderosa Pine: 3 needles, vanilla-scented puzzle bark ★★ (Moderate - smell bark)
+│   │   │   │   │   │   │   │   ├── Jeffrey Pine: 3 needles, similar to Ponderosa but stronger vanilla scent ★★★ (Challenging - very similar to Ponderosa)
+│   │   │   │   │   │   │   │   ├── Gray Pine: 3 needles but extremely long (8-12") ★ (Easy - extra long needles)
 │   │   │   │   │   │   │   │   └── Distinctive puzzle-like bark pattern on many of these
 │   │   │   │   │   │   │   │
 │   │   │   │   │   │   │   └── Key traits: Often longer, stiffer needles than 5-needle pines
 │   │   │   │   │   │   │
-│   │   │   │   │   │   └── 2 NEEDLES PER BUNDLE → "HARD PINE" GROUP
+│   │   │   │   │   │   └── 2 NEEDLES PER BUNDLE → "HARD PINE" GROUP ★ (Easy to count)
 │   │   │   │   │   │       ├── PINE GENUS - 2-NEEDLE GROUP
-│   │   │   │   │   │       │   ├── Lodgepole Pine: 2 needles per bundle, thin bark
-│   │   │   │   │   │       │   ├── Bishop Pine: 2 needles per bundle, coastal habitat
+│   │   │   │   │   │       │   ├── Lodgepole Pine: 2 needles per bundle, thin bark ★★ (Moderate - look for habitat)
+│   │   │   │   │   │       │   ├── Bishop Pine: 2 needles per bundle, coastal habitat ★★★ (Challenging - rare, coastal only)
 │   │   │   │   │   │       │   └── Usually shorter needles than 3 and 5-needle pines
 │   │   │   │   │   │       │
 │   │   │   │   │   │       └── Key traits: Often twisted, shorter needles than other pines
 │   │   │   │   │   │
 │   │   │   │   │   └── What's the NEEDLE LENGTH?
-│   │   │   │   │       ├── EXTREMELY LONG NEEDLES (8"+ long) → LONG-NEEDLE PINE GROUP
-│   │   │   │   │       │   ├── Gray Pine: Very droopy 8-12" needles in threes
-│   │   │   │   │       │   ├── Coulter Pine: Stiff 8-12" needles in threes
+│   │   │   │   │       ├── EXTREMELY LONG NEEDLES (8"+ long) → LONG-NEEDLE PINE GROUP ★ (Easy - very noticeable)
+│   │   │   │   │       │   ├── Gray Pine: Very droopy 8-12" needles in threes ★ (Easy - distinctive droopy look)
+│   │   │   │   │       │   ├── Coulter Pine: Stiff 8-12" needles in threes ★★ (Moderate - check for huge cones)
 │   │   │   │   │       │   └── Often look "shaggy" or "droopy" from a distance
 │   │   │   │   │       │
 │   │   │   │   │       ├── MEDIUM NEEDLES (3-8" long) → MEDIUM-NEEDLE PINE GROUP
@@ -344,31 +349,31 @@ Look closely at the leaves or needles of your tree.
 │   │   │   │   │
 │   │   │   │   ├── They're attached SINGLY (not in bundles) → Go to Single Needle Conifers
 │   │   │   │   │   ├── How do the needles feel when touched?
-│   │   │   │   │   │   ├── FLAT and FLEXIBLE needles → FLAT NEEDLE GROUP
+│   │   │   │   │   │   ├── FLAT and FLEXIBLE needles → FLAT NEEDLE GROUP ★★ (Moderate - requires touching)
 │   │   │   │   │   │   │   ├── FIR GENUS (Abies)
-│   │   │   │   │   │   │   │   ├── White Fir: Flat needles, blue-gray color
-│   │   │   │   │   │   │   │   ├── Red Fir: Similar but greener needles
+│   │   │   │   │   │   │   │   ├── White Fir: Flat needles, blue-gray color ★★ (Moderate - check color)
+│   │   │   │   │   │   │   │   ├── Red Fir: Similar but greener needles ★★★ (Challenging - very similar to White Fir)
 │   │   │   │   │   │   │   │   ├── All have flat, flexible needles
 │   │   │   │   │   │   │   │   └── Needles leave a circular mark when removed, not a woody peg
 │   │   │   │   │   │   │   │
 │   │   │   │   │   │   │   ├── HEMLOCK GENUS (Tsuga)
-│   │   │   │   │   │   │   │   ├── Western Hemlock: Flat needles of uneven length
-│   │   │   │   │   │   │   │   ├── Mountain Hemlock: More radial needles
+│   │   │   │   │   │   │   │   ├── Western Hemlock: Flat needles of uneven length ★★ (Moderate - check for droopy leader)
+│   │   │   │   │   │   │   │   ├── Mountain Hemlock: More radial needles ★★★ (Challenging - only at high elevations)
 │   │   │   │   │   │   │   │   └── Needles attached to small pegs (less woody than spruce)
 │   │   │   │   │   │   │   │
 │   │   │   │   │   │   │   └── DOUGLAS-FIR GENUS (Pseudotsuga)
-│   │   │   │   │   │   │       ├── Douglas-fir: Flat, radiating needles, not a true fir
-│   │   │   │   │   │   │       └── Distinctive cones with three-pointed bracts
+│   │   │   │   │   │   │       ├── Douglas-fir: Flat, radiating needles, not a true fir ★ (Easy - very common tree)
+│   │   │   │   │   │   │       └── Distinctive cones with three-pointed bracts ★ (Easy - unique cone "mouse tails")
 │   │   │   │   │   │   │
-│   │   │   │   │   │   └── SHARP and STIFF needles → SHARP NEEDLE GROUP
+│   │   │   │   │   │   └── SHARP and STIFF needles → SHARP NEEDLE GROUP ★★ (Moderate - requires touching)
 │   │   │   │   │   │       ├── SPRUCE GENUS (Picea)
-│   │   │   │   │   │       │   ├── Blue Spruce: Sharp, stiff needles, blue-silver color
-│   │   │   │   │   │       │   ├── Sitka Spruce: Sharp, stiff needles, green color
+│   │   │   │   │   │       │   ├── Blue Spruce: Sharp, stiff needles, blue-silver color ★ (Easy - distinctive blue color)
+│   │   │   │   │   │       │   ├── Sitka Spruce: Sharp, stiff needles, green color ★★ (Moderate - check for coastal location)
 │   │   │   │   │   │       │   ├── All have needles that radiate all around the twig
 │   │   │   │   │   │       │   └── Needles grow on woody pegs that remain when needle falls
 │   │   │   │   │   │       │
 │   │   │   │   │   │       └── YEW GENUS (Taxus)
-│   │   │   │   │   │           ├── Pacific Yew: Somewhat sharp-pointed needles
+│   │   │   │   │   │           ├── Pacific Yew: Somewhat sharp-pointed needles ★★★ (Challenging - uncommon)
 │   │   │   │   │   │           └── Red berry-like structures (not true berries)
 │   │   │   │   │   │
 │   │   │   │   │   ├── How are the needles ARRANGED on the branch?
