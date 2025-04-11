@@ -1,0 +1,361 @@
+binary_code: '11110110'
+decimal_value: 246
+lr_decimal_value: 111
+hexadecimal_value: F6
+bit_values:
+  bit1: '1'
+  bit2: '1'
+  bit3: '1'
+  bit4: '1'
+  bit5: '0'
+  bit6: '1'
+  bit7: '1'
+  bit8: '0'
+  bit78: '10'
+bit_associations:
+  bit1:
+    position: 1
+    name: Intuition
+    domain: Inner/Heart
+    question: Do you trust your natural instincts to direct you down the right path?
+    value: '1'
+    meaning: Yes, intuition is trusted and followed
+  bit2:
+    position: 2
+    name: Ability
+    domain: Inner/Hands
+    question: Do you have the skills and know-how required to address this question
+      on your own?
+    value: '1'
+    meaning: Yes, required skills and know-how are present
+  bit3:
+    position: 3
+    name: Capacity
+    domain: Inner/Head
+    question: Do your current circumstances provide enough time, space, and resources
+      to address this?
+    value: '1'
+    meaning: Yes, circumstances provide sufficient resources
+  bit4:
+    position: 4
+    name: Expectations
+    domain: Outer/Heart
+    question: Are you aligned with how cultural norms and expectations would want
+      you to address this?
+    value: '1'
+    meaning: Yes, aligned with cultural norms and expectations
+  bit5:
+    position: 5
+    name: Support
+    domain: Outer/Hands
+    question: Do your closest relationships and community have your back in this?
+    value: '0'
+    meaning: No, lacking support from relationships and community
+  bit6:
+    position: 6
+    name: Options
+    domain: Outer/Head
+    question: Are the possible paths that you could choose from clear to you right
+      now?
+    value: '1'
+    meaning: Yes, possible paths are clear
+  bit78:
+    position: 7-8
+    name: Cycle Phase
+    season: Spring
+    tarot_suit: Wands
+    element: Fire
+inner_world:
+  bits: '111'
+  color: White
+  trigram: Heaven
+  trigram_symbol: "\u2630"
+  8bit_trigram_name: Ko
+  qualities: Creative, strong, active
+  rgb: 255,255,255
+  state: inner1
+  name: Monkey
+  desc: Complete presence of inner resources; self-sufficient, confident, and fully
+    equipped
+outer_world:
+  bits: '101'
+  color: Magenta
+  trigram: Fire
+  trigram_symbol: "\u2632"
+  8bit_trigram_name: La
+  qualities: Clinging, clarity, brightness
+  rgb: 255,0,255
+  state: outer1
+  name: Desert
+  desc: Alignment with expectations and clear options, but lacking support; clear
+    authorized path without assistance
+composite_frameworks:
+  inner_and_outer_worlds:
+    inner_world:
+      bits: 1-3
+      bit_pattern: '111'
+      description: Relates to inner resources - intuition, ability, and capacity
+      name: Monkey
+      trigram: Heaven
+      color: White
+      desc: Complete presence of inner resources; self-sufficient, confident, and
+        fully equipped
+    outer_world:
+      bits: 4-6
+      bit_pattern: '101'
+      description: Relates to outer resources - expectations, support, and options
+      name: Desert
+      trigram: Fire
+      desc: Alignment with expectations and clear options, but lacking support; clear
+        authorized path without assistance
+    heart:
+      bits: 1 & 4
+      bit_pattern: '11'
+      description: Relates to emotional guidance - inner intuition and outer expectations
+      name: Whole Heart
+      desc: Both inner intuition and outer expectations provide aligned emotional
+        guidance
+    hands:
+      bits: 2 & 5
+      bit_pattern: '10'
+      description: Relates to practical assistance - inner ability and outer support
+      name: Giving Hands
+      desc: Inner ability present, but outer support is lacking
+    head:
+      bits: 3 & 6
+      bit_pattern: '11'
+      description: Relates to mental clarity - inner capacity and outer options
+      name: Overflowing Mind
+      desc: Both inner capacity and outer options offer mental clarity
+hexagram:
+  binary: '111101'
+  iching_associations:
+    number: 14
+    traditional_name: Da You
+    label: Possession in Great Measure
+    core_meaning: Great possession, abundance, great holdings
+    life_area: Great possession, abundance, prosperity
+    trigram_relationship: The Heaven trigram (Creative, strong, active) beneath the
+      Fire trigram (Clinging, clarity, brightness)
+    natural_element: Sun in sky, creative force
+    inner_trigram:
+      name: Heaven
+      qualities: Creative, strong, active
+      symbol: "\u2630"
+    outer_trigram:
+      name: Fire
+      qualities: Clinging, clarity, brightness
+      symbol: "\u2632"
+  evolutionary_journey:
+    gene_key_number: 14
+    shadow_challenge: Compromise
+    shadow_description: 'The challenge of Compromise: unconscious patterns that limit
+      expression'
+    gift_potential: Competence
+    gift_description: 'The gift of Competence: conscious transformation and breakthrough
+      potential'
+    siddhi_realization: Bounteousness
+    siddhi_description: 'The siddhi of Bounteousness: highest expression and enlightened
+      potential'
+    journey_summary: A journey from selling yourself short to skilled mastery and
+      ultimately overflowing abundance and prosperity
+    journey_position: shadow_challenge
+    position_description: This card embodies the Shadow aspect of Gene Key 14 - Compromise,
+      representing the starting challenge of the evolutionary journey.
+archetype:
+  name: Monster
+  resonant_season_key: inner1-outer1
+  resonant_season: Summer
+  current_season: Spring
+  color: Purple
+  gene_key_aspect: shadow
+  gene_key_manifestation: Compromise
+  expression: The challenge or excess of Compromise - this energy pattern in imbalance
+  cycle_position: Fourth Season
+  cycle_description: A Spring expression of a Summer-resonant pattern
+gender: feminine
+lunar_cycle:
+  decimal_modulo: 246 % 8 = 3, 246 % 2 = 0
+  phase: Waxing Gibbous
+  phase_half: Waxing Gibbous (Early)
+  illumination: ''
+  illumination_min: ''
+  illumination_max: ''
+  cycle_number: 2
+  cycle_name: Development Cycle
+  complete_designation: Waxing Gibbous (Early), Development Cycle of Spring
+image_components:
+  colors:
+    inner_world: White
+    outer_world: Magenta
+    archetype: Purple
+    combined_palette: White, Magenta, and Purple
+  scene_elements:
+    phase_symbol: Waxing Gibbous ()
+    season_element: Spring (Fire)
+    inner_world_symbol: Monkey
+    outer_world_symbol: Desert
+  key_symbols:
+    heart: Whole Heart
+    hands: Giving Hands
+    head: Overflowing Mind
+    archetype: Monster
+classifications:
+- Monster of Heaven
+- Fire Monster
+- Spring Monster
+- Heaven-Fire Pattern
+- Waxing Gibbous Card
+symbolic_associations:
+  core_symbolism:
+    i_ching:
+      label: Possession in Great Measure
+      meaning: Great possession, abundance, great holdings
+      natural_element: Sun in sky, creative force
+      inner_trigram_objects: []
+      outer_trigram_objects: []
+      combined_image: 'Ko beneath La: Sun in sky, creative force'
+    gene_key:
+      shadow: Compromise
+      shadow_objects:
+      - obstacles
+      - chains
+      - fog
+      - darkness
+      - weight
+      - masks
+      - barriers
+      - confusion
+      gift: Competence
+      gift_objects:
+      - tools
+      - bridges
+      - light
+      - keys
+      - maps
+      - doorways
+      - vessels
+      - wings
+      siddhi: Bounteousness
+      siddhi_objects:
+      - crowns
+      - stars
+      - halos
+      - radiance
+      - crystals
+      - flowers
+      - fountains
+      - pure light
+      evolutionary_narrative: The journey from Compromise through Competence to Bounteousness
+    body_symbolism:
+      heart:
+      - chest
+      - heart
+      - solar plexus
+      - emotional center
+      hands:
+      - hands
+      - arms
+      - shoulders
+      - tools
+      - instruments
+      head:
+      - head
+      - mind
+      - eyes
+      - third eye
+      - crown
+      - awareness
+    seasonal_elements:
+    - fire
+    - spark
+    - flame
+    - energy
+    - action
+    - movement
+    - transformation
+    archetype_qualities:
+    - challenge
+    - excess
+    - shadow
+    - intensity
+    - transformation
+  suggested_symbols:
+  - name: Possession in Great Measure
+    description: Symbolizing Great possession, abundance, great holdings
+  - name: Ko
+    description: Representing inner Ko energy
+  - name: La
+    description: Representing outer La energy
+  - name: light
+    description: Representing the siddhi of Bounteousness
+  - name: tool
+    description: Representing the gift of Competence
+  - name: obstacles
+    description: Representing the shadow of Compromise
+  - name: fire
+    description: Representing Spring element
+  - name: Sun in sky
+    description: Natural symbolic element from I Ching tradition
+sample_image_prompt: "LIMITED COLOR RISOGRAPH-STYLE ILLUSTRATION FOR \"KoLa in Spring\"\
+  \ (11110110)\n\nCreate a limited-color risograph-style illustration that captures\
+  \ the essence of the KoLa in Spring card - representing Possession in Great Measure\
+  \ (Da You, Hexagram 14) as a Monster expression in Spring.\n\nCARD DIMENSIONS AND\
+  \ STYLE:\n- 1200 x 2000 pixels (3:5 ratio)\n- Woodblock print/risograph aesthetic\
+  \ with bold lines and limited colors\n- Strong contrast between elements with minimalist\
+  \ composition\n- Incorporate traditional I Ching symbolism with modern interpretation\n\
+  \nCOLOR PALETTE:\n- Primary: White (for inner world character)\n- Secondary: Magenta\
+  \ (for outer world environment)\n- Accent: Purple (representing the Monster archetype)\n\
+  - White/off-white background with subtle texture\n- Use colors symbolically to represent\
+  \ the journey from Compromise to Bounteousness\n\nCHARACTER DESCRIPTION (INNER WORLD):\n\
+  - A feminine monster embodying the qualities of Monkey\n- Expression and posture\
+  \ reflecting The shadow of Compromise\n- Incorporate symbolic elements of Ko (Creative,\
+  \ strong, active)\n- Character represents the inner experience of Possession in\
+  \ Great Measure\n\nSCENE DESCRIPTION (OUTER WORLD):\n- An environment that reflects\
+  \ Spring and Desert\n- Incorporate natural elements: Sun in sky, creative force\n\
+  - Lunar phase showing as a Waxing Gibbous ()\n- Landscape/environment elements symbolizing\
+  \ Great possession, abundance, prosperity\n- Scene represents the outer expression\
+  \ of Possession in Great Measure\n\nSYMBOLIC ELEMENTS:\n- Whole Heart (representing\
+  \ emotional state)\n- Giving Hands (representing abilities and support)\n- Overflowing\
+  \ Mind (representing mental clarity)\n- Traditional I Ching symbolism for Da You\n\
+  - Symbol representing the journey from Compromise to Competence to Bounteousness\n\
+  - Subtle hexagram pattern (6 lines) incorporated into design\n- Element symbols\
+  \ related to Spring and Fire\n\nCONCEPTUAL MEANING TO CONVEY:\n- Core meaning: Great\
+  \ possession, abundance, great holdings\n- Life area: Great possession, abundance,\
+  \ prosperity\n- Gene Key journey: A journey from selling yourself short to skilled\
+  \ mastery and ultimately overflowing abundance and prosperity\n- Archetype significance:\
+  \ The challenge or excess of Compromise - this energy pattern in imbalance\n\nLAYOUT\
+  \ SPECIFICATIONS:\n- Full width title bar at bottom (15% of card height)\n- \"KoLa\
+  \ in Spring\" in bold, centered\n- \"11110110 \u2022 Hexagram 14\" in smaller text\
+  \ below\n\nThis card represents Possession in Great Measure as a monster expression\
+  \ of Heaven-Fire energy in Spring, embodying the journey from Compromise through\
+  \ Competence to Bounteousness.\n"
+suggested_names:
+  primary: Challenging Possession in Great Measure
+  alternatives:
+  - The KoLa of Spring
+  - Possession in Great Measure Waxing Gibbous
+  - KoLa Da You
+  - The Monster of Possession in Great Measure
+  traditional_name: Da You (Possession in Great Measure)
+card_name: null
+name_components:
+  inner_trigram: Ko
+  outer_trigram: La
+  combined_trigrams: KoLa
+  season: Spring
+  element: Fire
+  phase: Waxing Gibbous
+  phase_half: Waxing Gibbous (Early)
+  archetype: Monster
+related_cards:
+  same_hexagram_winter: '11110100'
+  same_hexagram_spring: '11110110'
+  same_hexagram_summer: '11110111'
+  same_hexagram_fall: '11110101'
+  opposite: '00001001'
+  full_cycle:
+  - '11110100'
+  - '11110110'
+  - '11110111'
+  - '11110101'

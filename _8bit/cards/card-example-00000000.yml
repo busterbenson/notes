@@ -2,8 +2,8 @@
 card:
   # Summary
   version:     "1.0"         
-  binary:      "00000000"
-  decimal:     "0"
+  binary:      "00000000" 
+  decimal:     "0" 
   hexadecimal: "00"
 
   # Basic Info
@@ -11,6 +11,7 @@ card:
   basic_info: 
     desc: "This card represents darkness, the unconscious, and the hidden - the void where all potential lies dormant. The all-zeros pattern perfectly captures the absence of clarity and certainty, with no resources activated. This is the Moon in its Winter aspect, embodying the Sage archetype who has transcended even the darkness. Rather than fearing the void, the Sage inhabits and understands it as the source of all creation. Symbolizing mystery, confusion, and hidden forces, this card reminds us that wisdom can be found in acknowledging the unknown."
     
+    # A comprehensive list of symbols and keywords pulled from all direct and composite associations in this card
     keywords: ["darkness", "unconscious", "illusion", "mystery", "confusion", "hidden forces"]
     symbols: ["empty circle", "void", "black hole", "night sky without stars", "new moon", "still waters reflecting nothing"]
   
@@ -54,14 +55,9 @@ card:
       cycle_name: "Inception Cycle" # From lunar_cycle_system.lunar_cycles
       complete_designation: "Dark Moon Deepening, Inception Cycle of Winter"
 
-    # Tarot
-    tarot:
-      card: "The Moon" # The corresponding tarot card for bits 1-6
-      cycle_suit: "Swords"   # The corresponding tarot suit for bits 7-8
-      seasonal_expression: "The Moon energy expressed through the wisdom of the Sage, modified by Winter's qualities of stillness and reflection, creating a profound understanding of the void and darkness as the essential foundation of all creation and potential."
-
     # Hexagram-related
     hexagram:
+      8bit_hexagram_name: "Kaka" # [8bit_trigram_name for inner_world] + [8bit_trigram_name for outer_world] 
       i_ching:
         number: 2
         name: "Kun"
@@ -69,17 +65,15 @@ card:
         description: "Pure yin, yielding, responsive, accepting, following"
       gene_key:
         number: 2
-        shadow: "Dislocation"
-        gift: "Orientation"
-        siddhi: "Unity"
         meaning: "A journey from feeling lost and disconnected to finding your true direction and ultimately experiencing oneness with all"
+        shadow: "Dislocation" # If the archetype is Monster
+        gift: "Orientation" # If the archetype is Hero
+        siddhi: "Unity" # If the archetype is Sage
 
   # Interpreted Meanings (combining all of the direct associations in various ways)
   # This is where the magic happens - the synthesis of all the direct associations into a coherent whole
   interpreted_meanings: 
     basic:
-      name_6bit: "The Moon"
-      name_8bit: "The Moon in Winter"
       gender: "neutral" # With 0 bits set to 1, all archetypes are gender neutral
 
     # Imagine a modern oracle card that captures the essence of all 8-bits of the card and its associations

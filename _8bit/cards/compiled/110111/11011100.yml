@@ -1,0 +1,363 @@
+binary_code: '11011100'
+decimal_value: 220
+lr_decimal_value: 59
+hexadecimal_value: DC
+bit_values:
+  bit1: '1'
+  bit2: '1'
+  bit3: '0'
+  bit4: '1'
+  bit5: '1'
+  bit6: '1'
+  bit7: '0'
+  bit8: '0'
+  bit78: '00'
+bit_associations:
+  bit1:
+    position: 1
+    name: Intuition
+    domain: Inner/Heart
+    question: Do you trust your natural instincts to direct you down the right path?
+    value: '1'
+    meaning: Yes, intuition is trusted and followed
+  bit2:
+    position: 2
+    name: Ability
+    domain: Inner/Hands
+    question: Do you have the skills and know-how required to address this question
+      on your own?
+    value: '1'
+    meaning: Yes, required skills and know-how are present
+  bit3:
+    position: 3
+    name: Capacity
+    domain: Inner/Head
+    question: Do your current circumstances provide enough time, space, and resources
+      to address this?
+    value: '0'
+    meaning: No, circumstances do not provide sufficient resources
+  bit4:
+    position: 4
+    name: Expectations
+    domain: Outer/Heart
+    question: Are you aligned with how cultural norms and expectations would want
+      you to address this?
+    value: '1'
+    meaning: Yes, aligned with cultural norms and expectations
+  bit5:
+    position: 5
+    name: Support
+    domain: Outer/Hands
+    question: Do your closest relationships and community have your back in this?
+    value: '1'
+    meaning: Yes, supported by relationships and community
+  bit6:
+    position: 6
+    name: Options
+    domain: Outer/Head
+    question: Are the possible paths that you could choose from clear to you right
+      now?
+    value: '1'
+    meaning: Yes, possible paths are clear
+  bit78:
+    position: 7-8
+    name: Cycle Phase
+    season: Winter
+    tarot_suit: Swords
+    element: Air
+inner_world:
+  bits: '110'
+  color: Yellow
+  trigram: Lake
+  trigram_symbol: "\u2631"
+  8bit_trigram_name: Sa
+  qualities: Joyful, open, exchange
+  rgb: 255,255,0
+  state: inner1
+  name: Turtle
+  desc: Intuitive and skilled but lacking resources; creative capacity limited by
+    external constraints
+outer_world:
+  bits: '111'
+  color: White
+  trigram: Heaven
+  trigram_symbol: "\u2630"
+  8bit_trigram_name: Ko
+  qualities: Creative, strong, active
+  rgb: 255,255,255
+  state: outer1
+  name: Village
+  desc: Complete presence of outer resources; aligned with expectations, supported
+    by others, with clear options
+composite_frameworks:
+  inner_and_outer_worlds:
+    inner_world:
+      bits: 1-3
+      bit_pattern: '110'
+      description: Relates to inner resources - intuition, ability, and capacity
+      name: Turtle
+      trigram: Lake
+      color: Yellow
+      desc: Intuitive and skilled but lacking resources; creative capacity limited
+        by external constraints
+    outer_world:
+      bits: 4-6
+      bit_pattern: '111'
+      description: Relates to outer resources - expectations, support, and options
+      name: Village
+      trigram: Heaven
+      desc: Complete presence of outer resources; aligned with expectations, supported
+        by others, with clear options
+    heart:
+      bits: 1 & 4
+      bit_pattern: '11'
+      description: Relates to emotional guidance - inner intuition and outer expectations
+      name: Whole Heart
+      desc: Both inner intuition and outer expectations provide aligned emotional
+        guidance
+    hands:
+      bits: 2 & 5
+      bit_pattern: '11'
+      description: Relates to practical assistance - inner ability and outer support
+      name: Full Hands
+      desc: Both inner ability and outer support offer practical assistance
+    head:
+      bits: 3 & 6
+      bit_pattern: '01'
+      description: Relates to mental clarity - inner capacity and outer options
+      name: Projecting Mind
+      desc: Outer options are clear, but inner capacity is lacking
+hexagram:
+  binary: '110111'
+  iching_associations:
+    number: 10
+    traditional_name: "L\xFC"
+    label: Treading
+    core_meaning: Conduct, careful progress, tread carefully, proceeding with caution
+    life_area: Proper conduct, walking one's path carefully
+    trigram_relationship: The Lake trigram (Joyful, open, exchange) beneath the Heaven
+      trigram (Creative, strong, active)
+    natural_element: Open water reflecting sky
+    inner_trigram:
+      name: Lake
+      qualities: Joyful, open, exchange
+      symbol: "\u2631"
+    outer_trigram:
+      name: Heaven
+      qualities: Creative, strong, active
+      symbol: "\u2630"
+  evolutionary_journey:
+    gene_key_number: 10
+    shadow_challenge: Self-Obsession
+    shadow_description: 'The challenge of Self-Obsession: unconscious patterns that
+      limit expression'
+    gift_potential: Naturalness
+    gift_description: 'The gift of Naturalness: conscious transformation and breakthrough
+      potential'
+    siddhi_realization: Being
+    siddhi_description: 'The siddhi of Being: highest expression and enlightened potential'
+    journey_summary: A journey from narcissistic focus to authentic behavior and ultimately
+      pure presence beyond the self
+    journey_position: gift_expression
+    position_description: This card represents the middle stage of the evolutionary
+      journey, expressing the Gift of Naturalness, the breakthrough potential of Gene
+      Key 10.
+archetype:
+  name: Hero
+  resonant_season_key: inner1-outer1
+  resonant_season: Summer
+  current_season: Winter
+  color: Gold
+  gene_key_aspect: gift
+  gene_key_manifestation: Naturalness
+  expression: The skilled, masterful expression of Naturalness - this energy pattern
+    at its most effective
+  cycle_position: Third Season
+  cycle_description: A Winter expression of a Summer-resonant pattern
+gender: feminine
+lunar_cycle:
+  decimal_modulo: 220 % 8 = 6, 220 % 2 = 0
+  phase: Last Quarter
+  phase_half: Last Quarter (Early)
+  illumination: ''
+  illumination_min: ''
+  illumination_max: ''
+  cycle_number: 2
+  cycle_name: Development Cycle
+  complete_designation: Last Quarter (Early), Development Cycle of Winter
+image_components:
+  colors:
+    inner_world: Yellow
+    outer_world: White
+    archetype: Gold
+    combined_palette: Yellow, White, and Gold
+  scene_elements:
+    phase_symbol: Last Quarter ()
+    season_element: Winter (Air)
+    inner_world_symbol: Turtle
+    outer_world_symbol: Village
+  key_symbols:
+    heart: Whole Heart
+    hands: Full Hands
+    head: Projecting Mind
+    archetype: Hero
+classifications:
+- Hero of Lake
+- Heaven Hero
+- Winter Hero
+- Lake-Heaven Pattern
+- Last Quarter Card
+symbolic_associations:
+  core_symbolism:
+    i_ching:
+      label: Treading
+      meaning: Conduct, careful progress, tread carefully, proceeding with caution
+      natural_element: Open water reflecting sky
+      inner_trigram_objects: []
+      outer_trigram_objects: []
+      combined_image: 'Sa beneath Ko: Open water reflecting sky'
+    gene_key:
+      shadow: Self-Obsession
+      shadow_objects:
+      - obstacles
+      - chains
+      - fog
+      - darkness
+      - weight
+      - masks
+      - barriers
+      - confusion
+      gift: Naturalness
+      gift_objects:
+      - tools
+      - bridges
+      - light
+      - keys
+      - maps
+      - doorways
+      - vessels
+      - wings
+      siddhi: Being
+      siddhi_objects:
+      - crowns
+      - stars
+      - halos
+      - radiance
+      - crystals
+      - flowers
+      - fountains
+      - pure light
+      evolutionary_narrative: The journey from Self-Obsession through Naturalness
+        to Being
+    body_symbolism:
+      heart:
+      - chest
+      - heart
+      - solar plexus
+      - emotional center
+      hands:
+      - hands
+      - arms
+      - shoulders
+      - tools
+      - instruments
+      head:
+      - head
+      - mind
+      - eyes
+      - third eye
+      - crown
+      - awareness
+    seasonal_elements:
+    - air
+    - breath
+    - wind
+    - clouds
+    - thought
+    - ideas
+    - intellect
+    archetype_qualities:
+    - mastery
+    - skill
+    - accomplishment
+    - strength
+    - confidence
+  suggested_symbols:
+  - name: Treading
+    description: Symbolizing Conduct, careful progress, tread carefully, proceeding
+      with caution
+  - name: Sa
+    description: Representing inner Sa energy
+  - name: Ko
+    description: Representing outer Ko energy
+  - name: light
+    description: Representing the siddhi of Being
+  - name: tools
+    description: Representing the gift of Naturalness
+  - name: shadow
+    description: Representing the shadow of Self-Obsession
+  - name: air
+    description: Representing Winter element
+  - name: Open water reflecting sky
+    description: Natural symbolic element from I Ching tradition
+sample_image_prompt: "LIMITED COLOR RISOGRAPH-STYLE ILLUSTRATION FOR \"SaKo in Winter\"\
+  \ (11011100)\n\nCreate a limited-color risograph-style illustration that captures\
+  \ the essence of the SaKo in Winter card - representing Treading (L\xFC, Hexagram\
+  \ 10) as a Hero expression in Winter.\n\nCARD DIMENSIONS AND STYLE:\n- 1200 x 2000\
+  \ pixels (3:5 ratio)\n- Woodblock print/risograph aesthetic with bold lines and\
+  \ limited colors\n- Strong contrast between elements with minimalist composition\n\
+  - Incorporate traditional I Ching symbolism with modern interpretation\n\nCOLOR\
+  \ PALETTE:\n- Primary: Yellow (for inner world character)\n- Secondary: White (for\
+  \ outer world environment)\n- Accent: Gold (representing the Hero archetype)\n-\
+  \ White/off-white background with subtle texture\n- Use colors symbolically to represent\
+  \ the journey from Self-Obsession to Being\n\nCHARACTER DESCRIPTION (INNER WORLD):\n\
+  - A feminine hero embodying the qualities of Turtle\n- Expression and posture reflecting\
+  \ The gift of Naturalness\n- Incorporate symbolic elements of Sa (Joyful, open,\
+  \ exchange)\n- Character represents the inner experience of Treading\n\nSCENE DESCRIPTION\
+  \ (OUTER WORLD):\n- An environment that reflects Winter and Village\n- Incorporate\
+  \ natural elements: Open water reflecting sky\n- Lunar phase showing as a Last Quarter\
+  \ ()\n- Landscape/environment elements symbolizing Proper conduct, walking one's\
+  \ path carefully\n- Scene represents the outer expression of Treading\n\nSYMBOLIC\
+  \ ELEMENTS:\n- Whole Heart (representing emotional state)\n- Full Hands (representing\
+  \ abilities and support)\n- Projecting Mind (representing mental clarity)\n- Traditional\
+  \ I Ching symbolism for L\xFC\n- Symbol representing the journey from Self-Obsession\
+  \ to Naturalness to Being\n- Subtle hexagram pattern (6 lines) incorporated into\
+  \ design\n- Element symbols related to Winter and Air\n\nCONCEPTUAL MEANING TO CONVEY:\n\
+  - Core meaning: Conduct, careful progress, tread carefully, proceeding with caution\n\
+  - Life area: Proper conduct, walking one's path carefully\n- Gene Key journey: A\
+  \ journey from narcissistic focus to authentic behavior and ultimately pure presence\
+  \ beyond the self\n- Archetype significance: The skilled, masterful expression of\
+  \ Naturalness - this energy pattern at its most effective\n\nLAYOUT SPECIFICATIONS:\n\
+  - Full width title bar at bottom (15% of card height)\n- \"SaKo in Winter\" in bold,\
+  \ centered\n- \"11011100 \u2022 Hexagram 10\" in smaller text below\n\nThis card\
+  \ represents Treading as a hero expression of Lake-Heaven energy in Winter, embodying\
+  \ the journey from Self-Obsession through Naturalness to Being.\n"
+suggested_names:
+  primary: Mastering Treading
+  alternatives:
+  - The SaKo of Winter
+  - Treading Last Quarter
+  - "SaKo L\xFC"
+  - The Hero of Treading
+  traditional_name: "L\xFC (Treading)"
+card_name: null
+name_components:
+  inner_trigram: Sa
+  outer_trigram: Ko
+  combined_trigrams: SaKo
+  season: Winter
+  element: Air
+  phase: Last Quarter
+  phase_half: Last Quarter (Early)
+  archetype: Hero
+related_cards:
+  same_hexagram_winter: '11011100'
+  same_hexagram_spring: '11011110'
+  same_hexagram_summer: '11011111'
+  same_hexagram_fall: '11011101'
+  opposite: '00100011'
+  full_cycle:
+  - '11011100'
+  - '11011110'
+  - '11011111'
+  - '11011101'

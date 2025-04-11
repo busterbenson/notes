@@ -1,0 +1,361 @@
+binary_code: '01101111'
+decimal_value: 111
+lr_decimal_value: 246
+hexadecimal_value: 6F
+bit_values:
+  bit1: '0'
+  bit2: '1'
+  bit3: '1'
+  bit4: '0'
+  bit5: '1'
+  bit6: '1'
+  bit7: '1'
+  bit8: '1'
+  bit78: '11'
+bit_associations:
+  bit1:
+    position: 1
+    name: Intuition
+    domain: Inner/Heart
+    question: Do you trust your natural instincts to direct you down the right path?
+    value: '0'
+    meaning: No, intuition is not trusted or followed
+  bit2:
+    position: 2
+    name: Ability
+    domain: Inner/Hands
+    question: Do you have the skills and know-how required to address this question
+      on your own?
+    value: '1'
+    meaning: Yes, required skills and know-how are present
+  bit3:
+    position: 3
+    name: Capacity
+    domain: Inner/Head
+    question: Do your current circumstances provide enough time, space, and resources
+      to address this?
+    value: '1'
+    meaning: Yes, circumstances provide sufficient resources
+  bit4:
+    position: 4
+    name: Expectations
+    domain: Outer/Heart
+    question: Are you aligned with how cultural norms and expectations would want
+      you to address this?
+    value: '0'
+    meaning: No, not aligned with cultural norms and expectations
+  bit5:
+    position: 5
+    name: Support
+    domain: Outer/Hands
+    question: Do your closest relationships and community have your back in this?
+    value: '1'
+    meaning: Yes, supported by relationships and community
+  bit6:
+    position: 6
+    name: Options
+    domain: Outer/Head
+    question: Are the possible paths that you could choose from clear to you right
+      now?
+    value: '1'
+    meaning: Yes, possible paths are clear
+  bit78:
+    position: 7-8
+    name: Cycle Phase
+    season: Summer
+    tarot_suit: Cups
+    element: Water
+inner_world:
+  bits: '011'
+  color: Cyan
+  trigram: Wind
+  trigram_symbol: "\u2634"
+  8bit_trigram_name: Ra
+  qualities: Gentle, penetrating, gradual
+  rgb: 0,255,255
+  state: inner1
+  name: Crow
+  desc: Skilled and resourceful but lacks intuition; capable of executing but needs
+    direction
+outer_world:
+  bits: '011'
+  color: Cyan
+  trigram: Wind
+  trigram_symbol: "\u2634"
+  8bit_trigram_name: Ra
+  qualities: Gentle, penetrating, gradual
+  rgb: 0,255,255
+  state: outer1
+  name: Chasm
+  desc: Support and options present, but misaligned with expectations; alternative
+    paths with backing
+composite_frameworks:
+  inner_and_outer_worlds:
+    inner_world:
+      bits: 1-3
+      bit_pattern: '011'
+      description: Relates to inner resources - intuition, ability, and capacity
+      name: Crow
+      trigram: Wind
+      color: Cyan
+      desc: Skilled and resourceful but lacks intuition; capable of executing but
+        needs direction
+    outer_world:
+      bits: 4-6
+      bit_pattern: '011'
+      description: Relates to outer resources - expectations, support, and options
+      name: Chasm
+      trigram: Thunder
+      desc: Support and options present, but misaligned with expectations; alternative
+        paths with backing
+    heart:
+      bits: 1 & 4
+      bit_pattern: '00'
+      description: Relates to emotional guidance - inner intuition and outer expectations
+      name: Empty Heart
+      desc: Neither inner intuition nor outer expectations provide emotional guidance
+    hands:
+      bits: 2 & 5
+      bit_pattern: '11'
+      description: Relates to practical assistance - inner ability and outer support
+      name: Full Hands
+      desc: Both inner ability and outer support offer practical assistance
+    head:
+      bits: 3 & 6
+      bit_pattern: '11'
+      description: Relates to mental clarity - inner capacity and outer options
+      name: Overflowing Mind
+      desc: Both inner capacity and outer options offer mental clarity
+hexagram:
+  binary: '011011'
+  iching_associations:
+    number: 57
+    traditional_name: Xun
+    label: The Gentle
+    core_meaning: Penetration, influence, adaptation, flexibility
+    life_area: Gentle penetration, subtle influence
+    trigram_relationship: The Wind trigram (Gentle, penetrating, gradual) beneath
+      the Wind trigram (Gentle, penetrating, gradual)
+    natural_element: Whirlwind, powerful air currents
+    inner_trigram:
+      name: Wind
+      qualities: Gentle, penetrating, gradual
+      symbol: "\u2634"
+    outer_trigram:
+      name: Wind
+      qualities: Gentle, penetrating, gradual
+      symbol: "\u2634"
+  evolutionary_journey:
+    gene_key_number: 57
+    shadow_challenge: Unease
+    shadow_description: 'The challenge of Unease: unconscious patterns that limit
+      expression'
+    gift_potential: Intuition
+    gift_description: 'The gift of Intuition: conscious transformation and breakthrough
+      potential'
+    siddhi_realization: Omniscience
+    siddhi_description: 'The siddhi of Omniscience: highest expression and enlightened
+      potential'
+    journey_summary: A journey from restlessness and anxiety to intuitive knowing
+      and ultimately universal consciousness and knowing
+    journey_position: siddhi_realization
+    position_description: This card embodies the culmination of the evolutionary journey
+      as the Siddhi of Omniscience, representing the highest potential of Gene Key
+      57.
+archetype:
+  name: Sage
+  resonant_season_key: inner1-outer1
+  resonant_season: Summer
+  current_season: Summer
+  color: Iridescent
+  gene_key_aspect: siddhi
+  gene_key_manifestation: Omniscience
+  expression: The integrated, wise expression of Omniscience - the culmination of
+    this energy pattern
+  cycle_position: Resonant Season
+  cycle_description: A Summer expression of a Summer-resonant pattern
+gender: feminine
+lunar_cycle:
+  decimal_modulo: 111 % 8 = 7, 111 % 2 = 1
+  phase: Balsamic Moon
+  phase_half: Balsamic Moon (Late)
+  illumination: ''
+  illumination_min: ''
+  illumination_max: ''
+  cycle_number: 1
+  cycle_name: Inception Cycle
+  complete_designation: Balsamic Moon (Late), Inception Cycle of Summer
+image_components:
+  colors:
+    inner_world: Cyan
+    outer_world: Cyan
+    archetype: Iridescent
+    combined_palette: Cyan, Cyan, and Iridescent
+  scene_elements:
+    phase_symbol: Balsamic Moon ()
+    season_element: Summer (Water)
+    inner_world_symbol: Crow
+    outer_world_symbol: Chasm
+  key_symbols:
+    heart: Empty Heart
+    hands: Full Hands
+    head: Overflowing Mind
+    archetype: Sage
+classifications:
+- Sage of Wind
+- Wind Sage
+- Summer Sage
+- Wind-Wind Pattern
+- Balsamic Moon Card
+symbolic_associations:
+  core_symbolism:
+    i_ching:
+      label: The Gentle
+      meaning: Penetration, influence, adaptation, flexibility
+      natural_element: Whirlwind, powerful air currents
+      inner_trigram_objects: []
+      outer_trigram_objects: []
+      combined_image: 'Ra beneath Ra: Whirlwind, powerful air currents'
+    gene_key:
+      shadow: Unease
+      shadow_objects:
+      - obstacles
+      - chains
+      - fog
+      - darkness
+      - weight
+      - masks
+      - barriers
+      - confusion
+      gift: Intuition
+      gift_objects:
+      - tools
+      - bridges
+      - light
+      - keys
+      - maps
+      - doorways
+      - vessels
+      - wings
+      siddhi: Omniscience
+      siddhi_objects:
+      - crowns
+      - stars
+      - halos
+      - radiance
+      - crystals
+      - flowers
+      - fountains
+      - pure light
+      evolutionary_narrative: The journey from Unease through Intuition to Omniscience
+    body_symbolism:
+      heart:
+      - chest
+      - heart
+      - solar plexus
+      - emotional center
+      hands:
+      - hands
+      - arms
+      - shoulders
+      - tools
+      - instruments
+      head:
+      - head
+      - mind
+      - eyes
+      - third eye
+      - crown
+      - awareness
+    seasonal_elements:
+    - water
+    - flow
+    - waves
+    - emotions
+    - feelings
+    - connection
+    - intimacy
+    archetype_qualities:
+    - wisdom
+    - integration
+    - wholeness
+    - fulfillment
+    - completion
+  suggested_symbols:
+  - name: The Gentle
+    description: Symbolizing Penetration, influence, adaptation, flexibility
+  - name: Ra
+    description: Representing inner Ra energy
+  - name: Ra
+    description: Representing outer Ra energy
+  - name: crowns
+    description: Representing the siddhi of Omniscience
+  - name: tool
+    description: Representing the gift of Intuition
+  - name: shadow
+    description: Representing the shadow of Unease
+  - name: water
+    description: Representing Summer element
+  - name: Whirlwind
+    description: Natural symbolic element from I Ching tradition
+sample_image_prompt: "LIMITED COLOR RISOGRAPH-STYLE ILLUSTRATION FOR \"RaRa in Summer\"\
+  \ (01101111)\n\nCreate a limited-color risograph-style illustration that captures\
+  \ the essence of the RaRa in Summer card - representing The Gentle (Xun, Hexagram\
+  \ 57) as a Sage expression in Summer.\n\nCARD DIMENSIONS AND STYLE:\n- 1200 x 2000\
+  \ pixels (3:5 ratio)\n- Woodblock print/risograph aesthetic with bold lines and\
+  \ limited colors\n- Strong contrast between elements with minimalist composition\n\
+  - Incorporate traditional I Ching symbolism with modern interpretation\n\nCOLOR\
+  \ PALETTE:\n- Primary: Cyan (for inner world character)\n- Secondary: Cyan (for\
+  \ outer world environment)\n- Accent: Iridescent (representing the Sage archetype)\n\
+  - White/off-white background with subtle texture\n- Use colors symbolically to represent\
+  \ the journey from Unease to Omniscience\n\nCHARACTER DESCRIPTION (INNER WORLD):\n\
+  - A feminine sage embodying the qualities of Crow\n- Expression and posture reflecting\
+  \ The siddhi of Omniscience\n- Incorporate symbolic elements of Ra (Gentle, penetrating,\
+  \ gradual)\n- Character represents the inner experience of The Gentle\n\nSCENE DESCRIPTION\
+  \ (OUTER WORLD):\n- An environment that reflects Summer and Chasm\n- Incorporate\
+  \ natural elements: Whirlwind, powerful air currents\n- Lunar phase showing as a\
+  \ Balsamic Moon ()\n- Landscape/environment elements symbolizing Gentle penetration,\
+  \ subtle influence\n- Scene represents the outer expression of The Gentle\n\nSYMBOLIC\
+  \ ELEMENTS:\n- Empty Heart (representing emotional state)\n- Full Hands (representing\
+  \ abilities and support)\n- Overflowing Mind (representing mental clarity)\n- Traditional\
+  \ I Ching symbolism for Xun\n- Symbol representing the journey from Unease to Intuition\
+  \ to Omniscience\n- Subtle hexagram pattern (6 lines) incorporated into design\n\
+  - Element symbols related to Summer and Water\n\nCONCEPTUAL MEANING TO CONVEY:\n\
+  - Core meaning: Penetration, influence, adaptation, flexibility\n- Life area: Gentle\
+  \ penetration, subtle influence\n- Gene Key journey: A journey from restlessness\
+  \ and anxiety to intuitive knowing and ultimately universal consciousness and knowing\n\
+  - Archetype significance: The integrated, wise expression of Omniscience - the culmination\
+  \ of this energy pattern\n\nLAYOUT SPECIFICATIONS:\n- Full width title bar at bottom\
+  \ (15% of card height)\n- \"RaRa in Summer\" in bold, centered\n- \"01101111 \u2022\
+  \ Hexagram 57\" in smaller text below\n\nThis card represents The Gentle as a sage\
+  \ expression of Wind-Wind energy in Summer, embodying the journey from Unease through\
+  \ Intuition to Omniscience.\n"
+suggested_names:
+  primary: The The Gentle
+  alternatives:
+  - The RaRa of Summer
+  - The Gentle Balsamic Moon
+  - RaRa Xun
+  - The Sage of The Gentle
+  traditional_name: Xun (The Gentle)
+card_name: null
+name_components:
+  inner_trigram: Ra
+  outer_trigram: Ra
+  combined_trigrams: RaRa
+  season: Summer
+  element: Water
+  phase: Balsamic Moon
+  phase_half: Balsamic Moon (Late)
+  archetype: Sage
+related_cards:
+  same_hexagram_winter: '01101100'
+  same_hexagram_spring: '01101110'
+  same_hexagram_summer: '01101111'
+  same_hexagram_fall: '01101101'
+  opposite: '10010000'
+  full_cycle:
+  - '01101100'
+  - '01101110'
+  - '01101111'
+  - '01101101'

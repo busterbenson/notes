@@ -1,0 +1,361 @@
+binary_code: '10111011'
+decimal_value: 187
+lr_decimal_value: 221
+hexadecimal_value: BB
+bit_values:
+  bit1: '1'
+  bit2: '0'
+  bit3: '1'
+  bit4: '1'
+  bit5: '1'
+  bit6: '0'
+  bit7: '1'
+  bit8: '1'
+  bit78: '11'
+bit_associations:
+  bit1:
+    position: 1
+    name: Intuition
+    domain: Inner/Heart
+    question: Do you trust your natural instincts to direct you down the right path?
+    value: '1'
+    meaning: Yes, intuition is trusted and followed
+  bit2:
+    position: 2
+    name: Ability
+    domain: Inner/Hands
+    question: Do you have the skills and know-how required to address this question
+      on your own?
+    value: '0'
+    meaning: No, required skills or know-how are lacking
+  bit3:
+    position: 3
+    name: Capacity
+    domain: Inner/Head
+    question: Do your current circumstances provide enough time, space, and resources
+      to address this?
+    value: '1'
+    meaning: Yes, circumstances provide sufficient resources
+  bit4:
+    position: 4
+    name: Expectations
+    domain: Outer/Heart
+    question: Are you aligned with how cultural norms and expectations would want
+      you to address this?
+    value: '1'
+    meaning: Yes, aligned with cultural norms and expectations
+  bit5:
+    position: 5
+    name: Support
+    domain: Outer/Hands
+    question: Do your closest relationships and community have your back in this?
+    value: '1'
+    meaning: Yes, supported by relationships and community
+  bit6:
+    position: 6
+    name: Options
+    domain: Outer/Head
+    question: Are the possible paths that you could choose from clear to you right
+      now?
+    value: '0'
+    meaning: No, possible paths are unclear
+  bit78:
+    position: 7-8
+    name: Cycle Phase
+    season: Summer
+    tarot_suit: Cups
+    element: Water
+inner_world:
+  bits: '101'
+  color: Magenta
+  trigram: Fire
+  trigram_symbol: "\u2632"
+  8bit_trigram_name: La
+  qualities: Clinging, clarity, brightness
+  rgb: 255,0,255
+  state: inner1
+  name: Fox
+  desc: Intuitive and resourceful but lacking practical skills; has the vision and
+    space but needs help executing
+outer_world:
+  bits: '110'
+  color: Yellow
+  trigram: Lake
+  trigram_symbol: "\u2631"
+  8bit_trigram_name: Sa
+  qualities: Joyful, open, exchange
+  rgb: 255,255,0
+  state: outer1
+  name: Lake
+  desc: Alignment with expectations and support, but unclear options; supported conventional
+    path with limited choices
+composite_frameworks:
+  inner_and_outer_worlds:
+    inner_world:
+      bits: 1-3
+      bit_pattern: '101'
+      description: Relates to inner resources - intuition, ability, and capacity
+      name: Fox
+      trigram: Fire
+      color: Magenta
+      desc: Intuitive and resourceful but lacking practical skills; has the vision
+        and space but needs help executing
+    outer_world:
+      bits: 4-6
+      bit_pattern: '110'
+      description: Relates to outer resources - expectations, support, and options
+      name: Lake
+      trigram: Lake
+      desc: Alignment with expectations and support, but unclear options; supported
+        conventional path with limited choices
+    heart:
+      bits: 1 & 4
+      bit_pattern: '11'
+      description: Relates to emotional guidance - inner intuition and outer expectations
+      name: Whole Heart
+      desc: Both inner intuition and outer expectations provide aligned emotional
+        guidance
+    hands:
+      bits: 2 & 5
+      bit_pattern: '01'
+      description: Relates to practical assistance - inner ability and outer support
+      name: Grabbing Hands
+      desc: Outer support present, but inner ability is lacking
+    head:
+      bits: 3 & 6
+      bit_pattern: '10'
+      description: Relates to mental clarity - inner capacity and outer options
+      name: Active Listening Mind
+      desc: Inner capacity present, but outer options are unclear
+hexagram:
+  binary: '101110'
+  iching_associations:
+    number: 49
+    traditional_name: Ge
+    label: Revolution
+    core_meaning: Molting, radical change, transformation, rebellion
+    life_area: Revolution, fundamental change
+    trigram_relationship: The Fire trigram (Clinging, clarity, brightness) beneath
+      the Lake trigram (Joyful, open, exchange)
+    natural_element: Fire reflected in water, duality
+    inner_trigram:
+      name: Fire
+      qualities: Clinging, clarity, brightness
+      symbol: "\u2632"
+    outer_trigram:
+      name: Lake
+      qualities: Joyful, open, exchange
+      symbol: "\u2631"
+  evolutionary_journey:
+    gene_key_number: 49
+    shadow_challenge: Reaction
+    shadow_description: 'The challenge of Reaction: unconscious patterns that limit
+      expression'
+    gift_potential: Revolution
+    gift_description: 'The gift of Revolution: conscious transformation and breakthrough
+      potential'
+    siddhi_realization: Rebirth
+    siddhi_description: 'The siddhi of Rebirth: highest expression and enlightened
+      potential'
+    journey_summary: A journey from instinctive responses to conscious transformation
+      and ultimately complete spiritual renewal
+    journey_position: siddhi_realization
+    position_description: This card embodies the culmination of the evolutionary journey
+      as the Siddhi of Rebirth, representing the highest potential of Gene Key 49.
+archetype:
+  name: Sage
+  resonant_season_key: inner1-outer1
+  resonant_season: Summer
+  current_season: Summer
+  color: Iridescent
+  gene_key_aspect: siddhi
+  gene_key_manifestation: Rebirth
+  expression: The integrated, wise expression of Rebirth - the culmination of this
+    energy pattern
+  cycle_position: Resonant Season
+  cycle_description: A Summer expression of a Summer-resonant pattern
+gender: feminine
+lunar_cycle:
+  decimal_modulo: 187 % 8 = 5, 187 % 2 = 1
+  phase: Waning Gibbous
+  phase_half: Waning Gibbous (Late)
+  illumination: ''
+  illumination_min: ''
+  illumination_max: ''
+  cycle_number: 1
+  cycle_name: Inception Cycle
+  complete_designation: Waning Gibbous (Late), Inception Cycle of Summer
+image_components:
+  colors:
+    inner_world: Magenta
+    outer_world: Yellow
+    archetype: Iridescent
+    combined_palette: Magenta, Yellow, and Iridescent
+  scene_elements:
+    phase_symbol: Waning Gibbous ()
+    season_element: Summer (Water)
+    inner_world_symbol: Fox
+    outer_world_symbol: Lake
+  key_symbols:
+    heart: Whole Heart
+    hands: Grabbing Hands
+    head: Active Listening Mind
+    archetype: Sage
+classifications:
+- Sage of Fire
+- Lake Sage
+- Summer Sage
+- Fire-Lake Pattern
+- Waning Gibbous Card
+symbolic_associations:
+  core_symbolism:
+    i_ching:
+      label: Revolution
+      meaning: Molting, radical change, transformation, rebellion
+      natural_element: Fire reflected in water, duality
+      inner_trigram_objects: []
+      outer_trigram_objects: []
+      combined_image: 'La beneath Sa: Fire reflected in water, duality'
+    gene_key:
+      shadow: Reaction
+      shadow_objects:
+      - obstacles
+      - chains
+      - fog
+      - darkness
+      - weight
+      - masks
+      - barriers
+      - confusion
+      gift: Revolution
+      gift_objects:
+      - tools
+      - bridges
+      - light
+      - keys
+      - maps
+      - doorways
+      - vessels
+      - wings
+      siddhi: Rebirth
+      siddhi_objects:
+      - crowns
+      - stars
+      - halos
+      - radiance
+      - crystals
+      - flowers
+      - fountains
+      - pure light
+      evolutionary_narrative: The journey from Reaction through Revolution to Rebirth
+    body_symbolism:
+      heart:
+      - chest
+      - heart
+      - solar plexus
+      - emotional center
+      hands:
+      - hands
+      - arms
+      - shoulders
+      - tools
+      - instruments
+      head:
+      - head
+      - mind
+      - eyes
+      - third eye
+      - crown
+      - awareness
+    seasonal_elements:
+    - water
+    - flow
+    - waves
+    - emotions
+    - feelings
+    - connection
+    - intimacy
+    archetype_qualities:
+    - wisdom
+    - integration
+    - wholeness
+    - fulfillment
+    - completion
+  suggested_symbols:
+  - name: Revolution
+    description: Symbolizing Molting, radical change, transformation, rebellion
+  - name: La
+    description: Representing inner La energy
+  - name: Sa
+    description: Representing outer Sa energy
+  - name: crowns
+    description: Representing the siddhi of Rebirth
+  - name: tool
+    description: Representing the gift of Revolution
+  - name: shadow
+    description: Representing the shadow of Reaction
+  - name: water
+    description: Representing Summer element
+  - name: Fire reflected in water
+    description: Natural symbolic element from I Ching tradition
+sample_image_prompt: "LIMITED COLOR RISOGRAPH-STYLE ILLUSTRATION FOR \"LaSa in Summer\"\
+  \ (10111011)\n\nCreate a limited-color risograph-style illustration that captures\
+  \ the essence of the LaSa in Summer card - representing Revolution (Ge, Hexagram\
+  \ 49) as a Sage expression in Summer.\n\nCARD DIMENSIONS AND STYLE:\n- 1200 x 2000\
+  \ pixels (3:5 ratio)\n- Woodblock print/risograph aesthetic with bold lines and\
+  \ limited colors\n- Strong contrast between elements with minimalist composition\n\
+  - Incorporate traditional I Ching symbolism with modern interpretation\n\nCOLOR\
+  \ PALETTE:\n- Primary: Magenta (for inner world character)\n- Secondary: Yellow\
+  \ (for outer world environment)\n- Accent: Iridescent (representing the Sage archetype)\n\
+  - White/off-white background with subtle texture\n- Use colors symbolically to represent\
+  \ the journey from Reaction to Rebirth\n\nCHARACTER DESCRIPTION (INNER WORLD):\n\
+  - A feminine sage embodying the qualities of Fox\n- Expression and posture reflecting\
+  \ The siddhi of Rebirth\n- Incorporate symbolic elements of La (Clinging, clarity,\
+  \ brightness)\n- Character represents the inner experience of Revolution\n\nSCENE\
+  \ DESCRIPTION (OUTER WORLD):\n- An environment that reflects Summer and Lake\n-\
+  \ Incorporate natural elements: Fire reflected in water, duality\n- Lunar phase\
+  \ showing as a Waning Gibbous ()\n- Landscape/environment elements symbolizing Revolution,\
+  \ fundamental change\n- Scene represents the outer expression of Revolution\n\n\
+  SYMBOLIC ELEMENTS:\n- Whole Heart (representing emotional state)\n- Grabbing Hands\
+  \ (representing abilities and support)\n- Active Listening Mind (representing mental\
+  \ clarity)\n- Traditional I Ching symbolism for Ge\n- Symbol representing the journey\
+  \ from Reaction to Revolution to Rebirth\n- Subtle hexagram pattern (6 lines) incorporated\
+  \ into design\n- Element symbols related to Summer and Water\n\nCONCEPTUAL MEANING\
+  \ TO CONVEY:\n- Core meaning: Molting, radical change, transformation, rebellion\n\
+  - Life area: Revolution, fundamental change\n- Gene Key journey: A journey from\
+  \ instinctive responses to conscious transformation and ultimately complete spiritual\
+  \ renewal\n- Archetype significance: The integrated, wise expression of Rebirth\
+  \ - the culmination of this energy pattern\n\nLAYOUT SPECIFICATIONS:\n- Full width\
+  \ title bar at bottom (15% of card height)\n- \"LaSa in Summer\" in bold, centered\n\
+  - \"10111011 \u2022 Hexagram 49\" in smaller text below\n\nThis card represents\
+  \ Revolution as a sage expression of Fire-Lake energy in Summer, embodying the journey\
+  \ from Reaction through Revolution to Rebirth.\n"
+suggested_names:
+  primary: The Revolution
+  alternatives:
+  - The LaSa of Summer
+  - Revolution Waning Gibbous
+  - LaSa Ge
+  - The Sage of Revolution
+  traditional_name: Ge (Revolution)
+card_name: null
+name_components:
+  inner_trigram: La
+  outer_trigram: Sa
+  combined_trigrams: LaSa
+  season: Summer
+  element: Water
+  phase: Waning Gibbous
+  phase_half: Waning Gibbous (Late)
+  archetype: Sage
+related_cards:
+  same_hexagram_winter: '10111000'
+  same_hexagram_spring: '10111010'
+  same_hexagram_summer: '10111011'
+  same_hexagram_fall: '10111001'
+  opposite: '01000100'
+  full_cycle:
+  - '10111000'
+  - '10111010'
+  - '10111011'
+  - '10111001'

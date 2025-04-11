@@ -3,12 +3,32 @@
 Crush a leaf or needle and smell it.
 
 **Special Feature Pages:**
-- [Eucalyptus Group](trees/eucalyptus-group.md) - Learn about the aromatic eucalyptus species
-- [Pine Group](trees/pine-group.md) - Discover how to identify pines by their distinctive scents
+- [Eucalyptus Group](groups/eucalyptus-group.md) - Learn about the aromatic eucalyptus species
+- [Pine Group](groups/pine-group.md) - Discover how to identify pines by their distinctive scents
 
 ```
 ├── The LEAVES or NEEDLES SMELL interesting when crushed!
 │   ├── What TYPE of smell do they have?
+│   │   ├── I'M NOT SURE about the smell type → SMELL HELPER
+│   │   │   ├── That's okay! Here's how to figure it out:
+│   │   │   │   ├── Try crushing the leaf or needle between your fingers
+│   │   │   │   ├── Take small sniffs (don't breathe in too deeply!)
+│   │   │   │   ├── Think about familiar smells like Christmas trees, mint gum, or cooking spices
+│   │   │   │   └── Ask an adult to help describe what they smell
+│   │   │   │
+│   │   │   ├── Common smell categories for kids:
+│   │   │   │   ├── Christmas tree smell → Go to PINE-LIKE
+│   │   │   │   ├── Mint gum or cough drop smell → Go to MINTY
+│   │   │   │   ├── Lemon or orange smell → Go to CITRUSY
+│   │   │   │   ├── Cooking spice smell → Go to BAY LEAF
+│   │   │   │   ├── Nice sweet smell → Go to SWEET
+│   │   │   │   └── Unusual or strong smell → Go to OTHER
+│   │   │   │
+│   │   │   └── Still not sure? That's perfectly fine!
+│   │   │       ├── Try looking at other features instead
+│   │   │       ├── Check the tree's leaves, bark, or shape
+│   │   │       └── You can always come back to smell later
+│   │   │
 │   │   ├── PINE-LIKE or RESINOUS → CONIFER SCENT GROUP
 │   │   │   ├── What's the SPECIFIC smell like?
 │   │   │   │   ├── VANILLA or BUTTERSCOTCH smell → VANILLA-SCENTED BARK GROUP
@@ -830,3 +850,11 @@ Crush a leaf or needle and smell it.
 │   │                   ├── Appreciated by some, not by others
 │   │                   └── Berry-like cones also aromatic
 ```
+
+## What Else Can You See?
+* If the leaves or needles have a distinctive shape: [Leaf/Needle Path](leaf-needle-path.md)
+* If the bark is interesting or unusual: [Bark Path](bark-path.md)
+* If you can see cones, berries, fruits, or seeds: [Cone/Fruit/Seed Path](cone-fruit-seed-path.md)
+* If the tree has flowers: [Flower Path](flower-path.md)
+* If the tree has a distinctive overall shape: [Shape/Size Path](shape-size-path.md)
+* If you're not sure about smells: Try looking at other features first

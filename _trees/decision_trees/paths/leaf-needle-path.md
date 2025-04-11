@@ -3,15 +3,21 @@
 Look closely at the leaves or needles of your tree.
 
 **Special Feature Pages:**
-- [Redwood & Sequoia Group](trees/redwood-sequoia-group.md) - Compare the three majestic redwood-type trees
-- [Oak Group](trees/oak-group.md) - Identify various oak species by their distinctive leaves
-- [Pine Group](trees/pine-group.md) - Learn to tell pines apart by their needle bundles
-- [Maple Group](trees/maple-group.md) - Explore maples with their star-shaped leaves
-- [Eucalyptus Group](trees/eucalyptus-group.md) - Discover the aromatic introduced eucalyptus species
+- [Redwood & Sequoia Group](groups/redwood-sequoia-group.md) - Compare the three majestic redwood-type trees
+- [Oak Group](groups/oak-group.md) - Identify various oak species by their distinctive leaves
+- [Pine Group](groups/pine-group.md) - Learn to tell pines apart by their needle bundles
+- [Maple Group](groups/maple-group.md) - Explore maples with their star-shaped leaves
+- [Eucalyptus Group](groups/eucalyptus-group.md) - Discover the aromatic introduced eucalyptus species
 
 ```
 ├── The LEAVES or NEEDLES look interesting!
 │   ├── What's the BASIC TYPE of leaf/needle?
+│   │   ├── I'M NOT SURE → Look at your leaf or needle carefully:
+│   │   │   ├── Broad leaves are usually flat and wide like your hand
+│   │   │   ├── Needles are thin, pointy and often found on Christmas-tree type trees
+│   │   │   ├── Scales are tiny overlapping parts that look like fish scales
+│   │   │   └── Still not sure? Try the [Leaf Detective Path](leaf-detective-path.md)
+│   │   │
 │   │   ├── They're flat, broad LEAVES → Go to Broadleaf Features
 │   │   │   ├── What SHAPE are the leaves?
 │   │   │   │   ├── They look like STARS or HANDS with points → Go to Star-Shaped/Lobed Leaves
@@ -25,8 +31,8 @@ Look closely at the leaves or needles of your tree.
 │   │   │   │   │   │   │   │
 │   │   │   │   │   │   │   └── Key identification: Check for leaves growing directly across from each other
 │   │   │   │   │   │   │
-│   │   │   │   │   │   └── ALTERNATE ARRANGEMENT (staggered) → ALTERNATING LOBED LEAF GROUP
-│   │   │   │   │   │       ├── What's the LOBE SHAPE?
+│   │   │   │   │   │   ├── ALTERNATE ARRANGEMENT (staggered) → ALTERNATING LOBED LEAF GROUP
+│   │   │   │   │   │   │   ├── What's the LOBE SHAPE?
 │   │   │   │   │   │       │   ├── POINTED STAR-SHAPED LOBES → SWEET GUM GENUS (Liquidambar)
 │   │   │   │   │   │       │   │   ├── Sweet Gum: Star-shaped with 5-7 pointed lobes
 │   │   │   │   │   │       │   │   └── Produces spiky ball fruits
@@ -72,6 +78,11 @@ Look closely at the leaves or needles of your tree.
 │   │   │   │   │   │   │   │   ├── Juvenile leaves often more rounded than mature leaves
 │   │   │   │   │   │   │   │   └── Strong eucalyptus smell when crushed
 │   │   │   │   │   │   │   │
+│   │   │   │   │   │   │   ├── LAUREL FAMILY (Lauraceae)
+│   │   │   │   │   │   │   │   ├── Camphor Tree: Glossy oval waxy leaves with camphor scent
+│   │   │   │   │   │   │   │   ├── Smooth edges with pointed tip
+│   │   │   │   │   │   │   │   └── Strong medicinal smell when crushed
+│   │   │   │   │   │   │   │
 │   │   │   │   │   │   │   └── MANZANITA GENUS (Arctostaphylos)
 │   │   │   │   │   │   │       ├── Various species: Round to oval leathery leaves
 │   │   │   │   │   │   │       └── Smooth red bark is a key identifier
@@ -98,6 +109,7 @@ Look closely at the leaves or needles of your tree.
 │   │   │   │   │   │   │
 │   │   │   │   │   │   ├── SMOOTH or WAVY EDGES → SMOOTH EDGE GROUP
 │   │   │   │   │   │   │   ├── Redbud: Smooth-edged heart-shaped leaves
+│   │   │   │   │   │   │   ├── Camphor Tree: Glossy oval leaves with smooth edges
 │   │   │   │   │   │   │   ├── Some Eucalyptus: Smooth edges on juvenile leaves
 │   │   │   │   │   │   │   └── Rub finger along leaf edge to check for teeth
 │   │   │   │   │   │   │
@@ -657,3 +669,11 @@ Look closely at the leaves or needles of your tree.
 │   │               ├── Palm: Adapted for desert/tropical conditions
 │   │               └── Specialized for harsh environments
 ```
+
+## What Else Can You See?
+* If you notice interesting bark texture or color: [Bark Path](bark-path.md)
+* If the leaves or needles have a smell when crushed: [Smell Path](smell-path.md)
+* If you can see cones, berries, fruits, or seeds: [Cone/Fruit/Seed Path](cone-fruit-seed-path.md) 
+* If you can only see the tree from far away: [Shape/Size Path](shape-size-path.md)
+* If the tree has no leaves right now: [Winter Detective Path](winter-detective-path.md)
+* If you're not sure about the leaf shape: [Leaf Detective Path](leaf-detective-path.md)

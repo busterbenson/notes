@@ -23,40 +23,40 @@
 
 ## Cycle Phases (Bits 7-8)
 
-| Bits | Season  | Element | Tarot Suit | Card Naming       |
-|------|---------|------------|---------|------------|-------------------|
-| 00   | Winter  | Air     | Swords     | [Card] of Winter  |
-| 10   | Spring  | Fire    | Wands      | [Card] of Spring  |
-| 11   | Summer  | Water   | Cups       | [Card] of Summer  |
-| 01   | Autumn  | Earth   | Pentacles  | [Card] of Autumn  |
+| Bits | Season  | Lunar Cycle | Phase      | Half  | 
+|------|---------|------------|-------------|-------|
+| 00   | Winter  | 1st Moon | New Moon      | Early |
+| 10   | Spring  | 2nd Moon | Balsamic Moon | Late  | 
+| 11   | Summer  | 4th Moon | First Quarter | Late  | 
+| 01   | Autumn  | 3rd Moon | Full Moon     | Early |
 
 ## Inner & Outer World (3-Bit) Combinations
 
 ### Inner World (Bits 1-3)
 
-| Pattern | Color   | Trigram | Description                                    |
-|---------|---------|---------|------------------------------------------------|
-| 000     | Black   | Earth   | Complete absence of inner resources            |
-| 001     | Blue    | Mountain| Capacity to understand but lacking intuition   |
-| 010     | Green   | Water   | Technical ability present but lacking intuition|
-| 011     | Cyan    | Thunder | Skilled and resourceful but lacks intuition    |
-| 100     | Red     | Wind    | Strong intuition but lacking practical skills  |
-| 101     | Magenta | Fire    | Intuitive and resourceful but lacking skills   |
-| 110     | Yellow  | Lake    | Intuitive and skilled but lacking resources    |
-| 111     | White   | Heaven  | Complete presence of inner resources           |
+| Pattern | Color   | Trigram | Name         | Description                                    |
+|---------|---------|---------|---------------------------------------------------------------|
+| 000     | Black   | Earth   | Ants         | absence of inner resources                     |
+| 001     | Blue    | Mountain| Bear         | Capacity to understand but lacking intuition   |
+| 010     | Green   | Water   | Spider       | Technical ability present but lacking intuition|
+| 011     | Cyan    | Wind    | Crow         | Skilled and resourceful but lacks intuition    |
+| 100     | Red     | Thunder | Snake        | Strong intuition but lacking practical skills  |
+| 101     | Magenta | Fire    | Fox          | Intuitive and resourceful but lacking skills   |
+| 110     | Yellow  | Lake    | Turtle       | Intuitive and skilled but lacking resources    |
+| 111     | White   | Heaven  | Monkey       | Complete presence of inner resources           |
 
 ### Outer World (Bits 4-6)
 
-| Pattern | Color   | Trigram | Description                                    |
-|---------|---------|---------|------------------------------------------------|
-| 000     | Black   | Earth   | Complete lack of outer resources               |
-| 001     | Blue    | Mountain| Clear options but lacking alignment and support|
-| 010     | Green   | Water   | Support present but lacking alignment and options|
-| 011     | Cyan    | Thunder | Support and options but misaligned with expectations|
-| 100     | Red     | Wind    | Alignment with expectations but lacking support|
-| 101     | Magenta | Fire    | Alignment and clear options but lacking support|
-| 110     | Yellow  | Lake    | Alignment and support but unclear options      |
-| 111     | White   | Heaven  | Complete presence of outer resources           |
+| Pattern | Color   | Trigram | Name         | Description                                          |
+|---------|---------|---------|---------------------------------------------------------------------|
+| 000     | Black   | Earth   | Cave         | Complete lack of outer resources                     |
+| 001     | Blue    | Mountain| Tower        | Clear options but lacking alignment and support      |
+| 010     | Green   | Water   | Forest       | Support present but lacking alignment and options    |
+| 011     | Cyan    | Thunder | Chasm        | Support and options but misaligned with expectations |
+| 100     | Red     | Wind    | Road         | Alignment with expectations but lacking support      |
+| 101     | Magenta | Fire    | Desert       | Alignment and clear options but lacking support      |
+| 110     | Yellow  | Lake    | Lake         | Alignment and support but unclear options            |
+| 111     | White   | Heaven  | Village      | Complete presence of outer resources                 |
 
 ## Sample Readings
 
@@ -78,24 +78,5 @@
 2. Top row: Inner World (Intuition, Ability, Capacity, Inner Integration)
 3. Bottom row: Outer World (Expectations, Support, Options, Outer Integration)
 4. This reading provides detailed insight into each resource area
-
-## Musical Interpretation
-
-Every card can be played as a musical pattern:
-- Each bit corresponds to a note in the C major scale
-- Bit 1 = C, Bit 2 = D, Bit 3 = E, Bit 4 = F, Bit 5 = G, Bit 6 = A, Bit 7 = B, Bit 8 = C
-- 1 = note is played, 0 = note is silent
-- Play the pattern to hear its unique musical expression
-
-## Common Resource Combinations
-
-| Pattern | Description                                              |
-|---------|----------------------------------------------------------|
-| 110000  | The Magician: Creative potential without external backing|
-| 101000  | The High Priestess: Deep intuition with inner space      |
-| 000011  | Wheel of Fortune: External forces at work                |
-| 111000  | Inner World Complete: Self-sufficient but isolated       |
-| 000111  | Outer World Complete: Externally supported but lacking foundation|
-| 111111  | The Sun: Complete integration of all resources           |
 
 This quick reference guide provides the essential information needed to begin working with the 8-Bit Oracle system. For more detailed interpretations, consult the individual card files.

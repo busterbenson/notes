@@ -1,0 +1,361 @@
+binary_code: '00001111'
+decimal_value: 15
+lr_decimal_value: 240
+hexadecimal_value: F
+bit_values:
+  bit1: '0'
+  bit2: '0'
+  bit3: '0'
+  bit4: '0'
+  bit5: '1'
+  bit6: '1'
+  bit7: '1'
+  bit8: '1'
+  bit78: '11'
+bit_associations:
+  bit1:
+    position: 1
+    name: Intuition
+    domain: Inner/Heart
+    question: Do you trust your natural instincts to direct you down the right path?
+    value: '0'
+    meaning: No, intuition is not trusted or followed
+  bit2:
+    position: 2
+    name: Ability
+    domain: Inner/Hands
+    question: Do you have the skills and know-how required to address this question
+      on your own?
+    value: '0'
+    meaning: No, required skills or know-how are lacking
+  bit3:
+    position: 3
+    name: Capacity
+    domain: Inner/Head
+    question: Do your current circumstances provide enough time, space, and resources
+      to address this?
+    value: '0'
+    meaning: No, circumstances do not provide sufficient resources
+  bit4:
+    position: 4
+    name: Expectations
+    domain: Outer/Heart
+    question: Are you aligned with how cultural norms and expectations would want
+      you to address this?
+    value: '0'
+    meaning: No, not aligned with cultural norms and expectations
+  bit5:
+    position: 5
+    name: Support
+    domain: Outer/Hands
+    question: Do your closest relationships and community have your back in this?
+    value: '1'
+    meaning: Yes, supported by relationships and community
+  bit6:
+    position: 6
+    name: Options
+    domain: Outer/Head
+    question: Are the possible paths that you could choose from clear to you right
+      now?
+    value: '1'
+    meaning: Yes, possible paths are clear
+  bit78:
+    position: 7-8
+    name: Cycle Phase
+    season: Summer
+    tarot_suit: Cups
+    element: Water
+inner_world:
+  bits: '000'
+  color: Black
+  trigram: Earth
+  trigram_symbol: "\u2637"
+  8bit_trigram_name: Ka
+  qualities: Receptive, yielding, responsive
+  rgb: 0,0,0
+  state: inner0
+  name: Ants
+  desc: Complete absence of inner resources; intuition, ability, and capacity are
+    all absent
+outer_world:
+  bits: '011'
+  color: Cyan
+  trigram: Wind
+  trigram_symbol: "\u2634"
+  8bit_trigram_name: Ra
+  qualities: Gentle, penetrating, gradual
+  rgb: 0,255,255
+  state: outer1
+  name: Chasm
+  desc: Support and options present, but misaligned with expectations; alternative
+    paths with backing
+composite_frameworks:
+  inner_and_outer_worlds:
+    inner_world:
+      bits: 1-3
+      bit_pattern: '000'
+      description: Relates to inner resources - intuition, ability, and capacity
+      name: Ants
+      trigram: Earth
+      color: Black
+      desc: Complete absence of inner resources; intuition, ability, and capacity
+        are all absent
+    outer_world:
+      bits: 4-6
+      bit_pattern: '011'
+      description: Relates to outer resources - expectations, support, and options
+      name: Chasm
+      trigram: Thunder
+      desc: Support and options present, but misaligned with expectations; alternative
+        paths with backing
+    heart:
+      bits: 1 & 4
+      bit_pattern: '00'
+      description: Relates to emotional guidance - inner intuition and outer expectations
+      name: Empty Heart
+      desc: Neither inner intuition nor outer expectations provide emotional guidance
+    hands:
+      bits: 2 & 5
+      bit_pattern: '01'
+      description: Relates to practical assistance - inner ability and outer support
+      name: Grabbing Hands
+      desc: Outer support present, but inner ability is lacking
+    head:
+      bits: 3 & 6
+      bit_pattern: '01'
+      description: Relates to mental clarity - inner capacity and outer options
+      name: Projecting Mind
+      desc: Outer options are clear, but inner capacity is lacking
+hexagram:
+  binary: '000011'
+  iching_associations:
+    number: 20
+    traditional_name: Guan
+    label: Contemplation
+    core_meaning: Viewing, observing, reflecting, perspective
+    life_area: Contemplation, observation, perspective
+    trigram_relationship: The Earth trigram (Receptive, yielding, responsive) beneath
+      the Wind trigram (Gentle, penetrating, gradual)
+    natural_element: Plains, fields swept by breeze
+    inner_trigram:
+      name: Earth
+      qualities: Receptive, yielding, responsive
+      symbol: "\u2637"
+    outer_trigram:
+      name: Wind
+      qualities: Gentle, penetrating, gradual
+      symbol: "\u2634"
+  evolutionary_journey:
+    gene_key_number: 20
+    shadow_challenge: Superficiality
+    shadow_description: 'The challenge of Superficiality: unconscious patterns that
+      limit expression'
+    gift_potential: Self-Assurance
+    gift_description: 'The gift of Self-Assurance: conscious transformation and breakthrough
+      potential'
+    siddhi_realization: Presence
+    siddhi_description: 'The siddhi of Presence: highest expression and enlightened
+      potential'
+    journey_summary: A journey from shallow engagement to genuine confidence and ultimately
+      complete embodied presence
+    journey_position: shadow_challenge
+    position_description: This card embodies the Shadow aspect of Gene Key 20 - Superficiality,
+      representing the starting challenge of the evolutionary journey.
+archetype:
+  name: Monster
+  resonant_season_key: inner0-outer1
+  resonant_season: Fall
+  current_season: Summer
+  color: Purple
+  gene_key_aspect: shadow
+  gene_key_manifestation: Superficiality
+  expression: The challenge or excess of Superficiality - this energy pattern in imbalance
+  cycle_position: Fourth Season
+  cycle_description: A Summer expression of a Fall-resonant pattern
+gender: masculine
+lunar_cycle:
+  decimal_modulo: 15 % 8 = 7, 15 % 2 = 1
+  phase: Balsamic Moon
+  phase_half: Balsamic Moon (Late)
+  illumination: ''
+  illumination_min: ''
+  illumination_max: ''
+  cycle_number: 3
+  cycle_name: Culmination Cycle
+  complete_designation: Balsamic Moon (Late), Culmination Cycle of Summer
+image_components:
+  colors:
+    inner_world: Black
+    outer_world: Cyan
+    archetype: Purple
+    combined_palette: Black, Cyan, and Purple
+  scene_elements:
+    phase_symbol: Balsamic Moon ()
+    season_element: Summer (Water)
+    inner_world_symbol: Ants
+    outer_world_symbol: Chasm
+  key_symbols:
+    heart: Empty Heart
+    hands: Grabbing Hands
+    head: Projecting Mind
+    archetype: Monster
+classifications:
+- Monster of Earth
+- Wind Monster
+- Summer Monster
+- Earth-Wind Pattern
+- Balsamic Moon Card
+symbolic_associations:
+  core_symbolism:
+    i_ching:
+      label: Contemplation
+      meaning: Viewing, observing, reflecting, perspective
+      natural_element: Plains, fields swept by breeze
+      inner_trigram_objects: []
+      outer_trigram_objects: []
+      combined_image: 'Ka beneath Ra: Plains, fields swept by breeze'
+    gene_key:
+      shadow: Superficiality
+      shadow_objects:
+      - obstacles
+      - chains
+      - fog
+      - darkness
+      - weight
+      - masks
+      - barriers
+      - confusion
+      gift: Self-Assurance
+      gift_objects:
+      - tools
+      - bridges
+      - light
+      - keys
+      - maps
+      - doorways
+      - vessels
+      - wings
+      siddhi: Presence
+      siddhi_objects:
+      - crowns
+      - stars
+      - halos
+      - radiance
+      - crystals
+      - flowers
+      - fountains
+      - pure light
+      evolutionary_narrative: The journey from Superficiality through Self-Assurance
+        to Presence
+    body_symbolism:
+      heart:
+      - chest
+      - heart
+      - solar plexus
+      - emotional center
+      hands:
+      - hands
+      - arms
+      - shoulders
+      - tools
+      - instruments
+      head:
+      - head
+      - mind
+      - eyes
+      - third eye
+      - crown
+      - awareness
+    seasonal_elements:
+    - water
+    - flow
+    - waves
+    - emotions
+    - feelings
+    - connection
+    - intimacy
+    archetype_qualities:
+    - challenge
+    - excess
+    - shadow
+    - intensity
+    - transformation
+  suggested_symbols:
+  - name: Contemplation
+    description: Symbolizing Viewing, observing, reflecting, perspective
+  - name: Ka
+    description: Representing inner Ka energy
+  - name: Ra
+    description: Representing outer Ra energy
+  - name: light
+    description: Representing the siddhi of Presence
+  - name: tool
+    description: Representing the gift of Self-Assurance
+  - name: obstacles
+    description: Representing the shadow of Superficiality
+  - name: water
+    description: Representing Summer element
+  - name: Plains
+    description: Natural symbolic element from I Ching tradition
+sample_image_prompt: "LIMITED COLOR RISOGRAPH-STYLE ILLUSTRATION FOR \"KaRa in Summer\"\
+  \ (00001111)\n\nCreate a limited-color risograph-style illustration that captures\
+  \ the essence of the KaRa in Summer card - representing Contemplation (Guan, Hexagram\
+  \ 20) as a Monster expression in Summer.\n\nCARD DIMENSIONS AND STYLE:\n- 1200 x\
+  \ 2000 pixels (3:5 ratio)\n- Woodblock print/risograph aesthetic with bold lines\
+  \ and limited colors\n- Strong contrast between elements with minimalist composition\n\
+  - Incorporate traditional I Ching symbolism with modern interpretation\n\nCOLOR\
+  \ PALETTE:\n- Primary: Black (for inner world character)\n- Secondary: Cyan (for\
+  \ outer world environment)\n- Accent: Purple (representing the Monster archetype)\n\
+  - White/off-white background with subtle texture\n- Use colors symbolically to represent\
+  \ the journey from Superficiality to Presence\n\nCHARACTER DESCRIPTION (INNER WORLD):\n\
+  - A masculine monster embodying the qualities of Ants\n- Expression and posture\
+  \ reflecting The shadow of Superficiality\n- Incorporate symbolic elements of Ka\
+  \ (Receptive, yielding, responsive)\n- Character represents the inner experience\
+  \ of Contemplation\n\nSCENE DESCRIPTION (OUTER WORLD):\n- An environment that reflects\
+  \ Summer and Chasm\n- Incorporate natural elements: Plains, fields swept by breeze\n\
+  - Lunar phase showing as a Balsamic Moon ()\n- Landscape/environment elements symbolizing\
+  \ Contemplation, observation, perspective\n- Scene represents the outer expression\
+  \ of Contemplation\n\nSYMBOLIC ELEMENTS:\n- Empty Heart (representing emotional\
+  \ state)\n- Grabbing Hands (representing abilities and support)\n- Projecting Mind\
+  \ (representing mental clarity)\n- Traditional I Ching symbolism for Guan\n- Symbol\
+  \ representing the journey from Superficiality to Self-Assurance to Presence\n-\
+  \ Subtle hexagram pattern (6 lines) incorporated into design\n- Element symbols\
+  \ related to Summer and Water\n\nCONCEPTUAL MEANING TO CONVEY:\n- Core meaning:\
+  \ Viewing, observing, reflecting, perspective\n- Life area: Contemplation, observation,\
+  \ perspective\n- Gene Key journey: A journey from shallow engagement to genuine\
+  \ confidence and ultimately complete embodied presence\n- Archetype significance:\
+  \ The challenge or excess of Superficiality - this energy pattern in imbalance\n\
+  \nLAYOUT SPECIFICATIONS:\n- Full width title bar at bottom (15% of card height)\n\
+  - \"KaRa in Summer\" in bold, centered\n- \"00001111 \u2022 Hexagram 20\" in smaller\
+  \ text below\n\nThis card represents Contemplation as a monster expression of Earth-Wind\
+  \ energy in Summer, embodying the journey from Superficiality through Self-Assurance\
+  \ to Presence.\n"
+suggested_names:
+  primary: Challenging Contemplation
+  alternatives:
+  - The KaRa of Summer
+  - Contemplation Balsamic Moon
+  - KaRa Guan
+  - The Monster of Contemplation
+  traditional_name: Guan (Contemplation)
+card_name: null
+name_components:
+  inner_trigram: Ka
+  outer_trigram: Ra
+  combined_trigrams: KaRa
+  season: Summer
+  element: Water
+  phase: Balsamic Moon
+  phase_half: Balsamic Moon (Late)
+  archetype: Monster
+related_cards:
+  same_hexagram_winter: '00001100'
+  same_hexagram_spring: '00001110'
+  same_hexagram_summer: '00001111'
+  same_hexagram_fall: '00001101'
+  opposite: '11110000'
+  full_cycle:
+  - '00001100'
+  - '00001110'
+  - '00001111'
+  - '00001101'

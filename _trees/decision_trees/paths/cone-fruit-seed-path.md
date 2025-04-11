@@ -3,10 +3,10 @@
 Look at the cones, fruits, or seeds of your tree.
 
 **Special Feature Pages:**
-- [Oak & Acorn Group](trees/oak-acorn-group.md) - Identify oaks by their distinctive acorns
-- [Pine Group](trees/pine-group.md) - Learn about the various cone types across pine species
-- [Winged Seed Group](trees/winged-seed-group.md) - Discover trees with helicopter-like winged seeds
-- [Redwood & Sequoia Group](trees/redwood-sequoia-group.md) - Compare the distinctive cones of redwoods and sequoias
+- [Oak & Acorn Group](groups/oak-acorn-group.md) - Identify oaks by their distinctive acorns
+- [Pine Group](groups/pine-group.md) - Learn about the various cone types across pine species
+- [Winged Seed Group](groups/winged-seed-group.md) - Discover trees with helicopter-like winged seeds
+- [Redwood & Sequoia Group](groups/redwood-sequoia-group.md) - Compare the distinctive cones of redwoods and sequoias
 
 ```
 ├── The CONES, FRUITS, or SEEDS catch my eye!
@@ -326,3 +326,11 @@ Look at the cones, fruits, or seeds of your tree.
 │                   ├── Eventually fall and cover ground
 │                   └── Can help identify tree even in winter
 ```
+
+## What Else Can You See?
+* If the leaves or needles are distinctive: [Leaf/Needle Path](leaf-needle-path.md)
+* If the bark has interesting texture or color: [Bark Path](bark-path.md)
+* If the leaves or needles have a smell when crushed: [Smell Path](smell-path.md)
+* If the tree has flowers: [Flower Path](flower-path.md)
+* If the tree has a distinctive overall shape: [Shape/Size Path](shape-size-path.md)
+* If you're seeing the tree in winter without leaves: [Winter Detective Path](winter-detective-path.md)

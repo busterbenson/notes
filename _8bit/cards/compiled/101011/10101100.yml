@@ -1,0 +1,362 @@
+binary_code: '10101100'
+decimal_value: 172
+lr_decimal_value: 53
+hexadecimal_value: AC
+bit_values:
+  bit1: '1'
+  bit2: '0'
+  bit3: '1'
+  bit4: '0'
+  bit5: '1'
+  bit6: '1'
+  bit7: '0'
+  bit8: '0'
+  bit78: '00'
+bit_associations:
+  bit1:
+    position: 1
+    name: Intuition
+    domain: Inner/Heart
+    question: Do you trust your natural instincts to direct you down the right path?
+    value: '1'
+    meaning: Yes, intuition is trusted and followed
+  bit2:
+    position: 2
+    name: Ability
+    domain: Inner/Hands
+    question: Do you have the skills and know-how required to address this question
+      on your own?
+    value: '0'
+    meaning: No, required skills or know-how are lacking
+  bit3:
+    position: 3
+    name: Capacity
+    domain: Inner/Head
+    question: Do your current circumstances provide enough time, space, and resources
+      to address this?
+    value: '1'
+    meaning: Yes, circumstances provide sufficient resources
+  bit4:
+    position: 4
+    name: Expectations
+    domain: Outer/Heart
+    question: Are you aligned with how cultural norms and expectations would want
+      you to address this?
+    value: '0'
+    meaning: No, not aligned with cultural norms and expectations
+  bit5:
+    position: 5
+    name: Support
+    domain: Outer/Hands
+    question: Do your closest relationships and community have your back in this?
+    value: '1'
+    meaning: Yes, supported by relationships and community
+  bit6:
+    position: 6
+    name: Options
+    domain: Outer/Head
+    question: Are the possible paths that you could choose from clear to you right
+      now?
+    value: '1'
+    meaning: Yes, possible paths are clear
+  bit78:
+    position: 7-8
+    name: Cycle Phase
+    season: Winter
+    tarot_suit: Swords
+    element: Air
+inner_world:
+  bits: '101'
+  color: Magenta
+  trigram: Fire
+  trigram_symbol: "\u2632"
+  8bit_trigram_name: La
+  qualities: Clinging, clarity, brightness
+  rgb: 255,0,255
+  state: inner1
+  name: Fox
+  desc: Intuitive and resourceful but lacking practical skills; has the vision and
+    space but needs help executing
+outer_world:
+  bits: '011'
+  color: Cyan
+  trigram: Wind
+  trigram_symbol: "\u2634"
+  8bit_trigram_name: Ra
+  qualities: Gentle, penetrating, gradual
+  rgb: 0,255,255
+  state: outer1
+  name: Chasm
+  desc: Support and options present, but misaligned with expectations; alternative
+    paths with backing
+composite_frameworks:
+  inner_and_outer_worlds:
+    inner_world:
+      bits: 1-3
+      bit_pattern: '101'
+      description: Relates to inner resources - intuition, ability, and capacity
+      name: Fox
+      trigram: Fire
+      color: Magenta
+      desc: Intuitive and resourceful but lacking practical skills; has the vision
+        and space but needs help executing
+    outer_world:
+      bits: 4-6
+      bit_pattern: '011'
+      description: Relates to outer resources - expectations, support, and options
+      name: Chasm
+      trigram: Thunder
+      desc: Support and options present, but misaligned with expectations; alternative
+        paths with backing
+    heart:
+      bits: 1 & 4
+      bit_pattern: '10'
+      description: Relates to emotional guidance - inner intuition and outer expectations
+      name: Giving Heart
+      desc: Inner intuition provides guidance, but not aligned with outer expectations
+    hands:
+      bits: 2 & 5
+      bit_pattern: '01'
+      description: Relates to practical assistance - inner ability and outer support
+      name: Grabbing Hands
+      desc: Outer support present, but inner ability is lacking
+    head:
+      bits: 3 & 6
+      bit_pattern: '11'
+      description: Relates to mental clarity - inner capacity and outer options
+      name: Overflowing Mind
+      desc: Both inner capacity and outer options offer mental clarity
+hexagram:
+  binary: '101011'
+  iching_associations:
+    number: 37
+    traditional_name: Jia Ren
+    label: The Family
+    core_meaning: Clan, domestic relationships, roles, family structure
+    life_area: Family, clan, established structures
+    trigram_relationship: The Fire trigram (Clinging, clarity, brightness) beneath
+      the Wind trigram (Gentle, penetrating, gradual)
+    natural_element: Wildfire, rapidly spreading flame
+    inner_trigram:
+      name: Fire
+      qualities: Clinging, clarity, brightness
+      symbol: "\u2632"
+    outer_trigram:
+      name: Wind
+      qualities: Gentle, penetrating, gradual
+      symbol: "\u2634"
+  evolutionary_journey:
+    gene_key_number: 37
+    shadow_challenge: Weakness
+    shadow_description: 'The challenge of Weakness: unconscious patterns that limit
+      expression'
+    gift_potential: Equality
+    gift_description: 'The gift of Equality: conscious transformation and breakthrough
+      potential'
+    siddhi_realization: Tenderness
+    siddhi_description: 'The siddhi of Tenderness: highest expression and enlightened
+      potential'
+    journey_summary: A journey from feeling powerless to recognizing the essential
+      worth of all people and ultimately gentle compassion toward all beings
+    journey_position: gift_expression
+    position_description: This card represents the middle stage of the evolutionary
+      journey, expressing the Gift of Equality, the breakthrough potential of Gene
+      Key 37.
+archetype:
+  name: Hero
+  resonant_season_key: inner1-outer1
+  resonant_season: Summer
+  current_season: Winter
+  color: Gold
+  gene_key_aspect: gift
+  gene_key_manifestation: Equality
+  expression: The skilled, masterful expression of Equality - this energy pattern
+    at its most effective
+  cycle_position: Third Season
+  cycle_description: A Winter expression of a Summer-resonant pattern
+gender: masculine
+lunar_cycle:
+  decimal_modulo: 172 % 8 = 6, 172 % 2 = 0
+  phase: Last Quarter
+  phase_half: Last Quarter (Early)
+  illumination: ''
+  illumination_min: ''
+  illumination_max: ''
+  cycle_number: 1
+  cycle_name: Inception Cycle
+  complete_designation: Last Quarter (Early), Inception Cycle of Winter
+image_components:
+  colors:
+    inner_world: Magenta
+    outer_world: Cyan
+    archetype: Gold
+    combined_palette: Magenta, Cyan, and Gold
+  scene_elements:
+    phase_symbol: Last Quarter ()
+    season_element: Winter (Air)
+    inner_world_symbol: Fox
+    outer_world_symbol: Chasm
+  key_symbols:
+    heart: Giving Heart
+    hands: Grabbing Hands
+    head: Overflowing Mind
+    archetype: Hero
+classifications:
+- Hero of Fire
+- Wind Hero
+- Winter Hero
+- Fire-Wind Pattern
+- Last Quarter Card
+symbolic_associations:
+  core_symbolism:
+    i_ching:
+      label: The Family
+      meaning: Clan, domestic relationships, roles, family structure
+      natural_element: Wildfire, rapidly spreading flame
+      inner_trigram_objects: []
+      outer_trigram_objects: []
+      combined_image: 'La beneath Ra: Wildfire, rapidly spreading flame'
+    gene_key:
+      shadow: Weakness
+      shadow_objects:
+      - obstacles
+      - chains
+      - fog
+      - darkness
+      - weight
+      - masks
+      - barriers
+      - confusion
+      gift: Equality
+      gift_objects:
+      - tools
+      - bridges
+      - light
+      - keys
+      - maps
+      - doorways
+      - vessels
+      - wings
+      siddhi: Tenderness
+      siddhi_objects:
+      - crowns
+      - stars
+      - halos
+      - radiance
+      - crystals
+      - flowers
+      - fountains
+      - pure light
+      evolutionary_narrative: The journey from Weakness through Equality to Tenderness
+    body_symbolism:
+      heart:
+      - chest
+      - heart
+      - solar plexus
+      - emotional center
+      hands:
+      - hands
+      - arms
+      - shoulders
+      - tools
+      - instruments
+      head:
+      - head
+      - mind
+      - eyes
+      - third eye
+      - crown
+      - awareness
+    seasonal_elements:
+    - air
+    - breath
+    - wind
+    - clouds
+    - thought
+    - ideas
+    - intellect
+    archetype_qualities:
+    - mastery
+    - skill
+    - accomplishment
+    - strength
+    - confidence
+  suggested_symbols:
+  - name: The Family
+    description: Symbolizing Clan, domestic relationships, roles, family structure
+  - name: La
+    description: Representing inner La energy
+  - name: Ra
+    description: Representing outer Ra energy
+  - name: light
+    description: Representing the siddhi of Tenderness
+  - name: tools
+    description: Representing the gift of Equality
+  - name: shadow
+    description: Representing the shadow of Weakness
+  - name: air
+    description: Representing Winter element
+  - name: Wildfire
+    description: Natural symbolic element from I Ching tradition
+sample_image_prompt: "LIMITED COLOR RISOGRAPH-STYLE ILLUSTRATION FOR \"LaRa in Winter\"\
+  \ (10101100)\n\nCreate a limited-color risograph-style illustration that captures\
+  \ the essence of the LaRa in Winter card - representing The Family (Jia Ren, Hexagram\
+  \ 37) as a Hero expression in Winter.\n\nCARD DIMENSIONS AND STYLE:\n- 1200 x 2000\
+  \ pixels (3:5 ratio)\n- Woodblock print/risograph aesthetic with bold lines and\
+  \ limited colors\n- Strong contrast between elements with minimalist composition\n\
+  - Incorporate traditional I Ching symbolism with modern interpretation\n\nCOLOR\
+  \ PALETTE:\n- Primary: Magenta (for inner world character)\n- Secondary: Cyan (for\
+  \ outer world environment)\n- Accent: Gold (representing the Hero archetype)\n-\
+  \ White/off-white background with subtle texture\n- Use colors symbolically to represent\
+  \ the journey from Weakness to Tenderness\n\nCHARACTER DESCRIPTION (INNER WORLD):\n\
+  - A masculine hero embodying the qualities of Fox\n- Expression and posture reflecting\
+  \ The gift of Equality\n- Incorporate symbolic elements of La (Clinging, clarity,\
+  \ brightness)\n- Character represents the inner experience of The Family\n\nSCENE\
+  \ DESCRIPTION (OUTER WORLD):\n- An environment that reflects Winter and Chasm\n\
+  - Incorporate natural elements: Wildfire, rapidly spreading flame\n- Lunar phase\
+  \ showing as a Last Quarter ()\n- Landscape/environment elements symbolizing Family,\
+  \ clan, established structures\n- Scene represents the outer expression of The Family\n\
+  \nSYMBOLIC ELEMENTS:\n- Giving Heart (representing emotional state)\n- Grabbing\
+  \ Hands (representing abilities and support)\n- Overflowing Mind (representing mental\
+  \ clarity)\n- Traditional I Ching symbolism for Jia Ren\n- Symbol representing the\
+  \ journey from Weakness to Equality to Tenderness\n- Subtle hexagram pattern (6\
+  \ lines) incorporated into design\n- Element symbols related to Winter and Air\n\
+  \nCONCEPTUAL MEANING TO CONVEY:\n- Core meaning: Clan, domestic relationships, roles,\
+  \ family structure\n- Life area: Family, clan, established structures\n- Gene Key\
+  \ journey: A journey from feeling powerless to recognizing the essential worth of\
+  \ all people and ultimately gentle compassion toward all beings\n- Archetype significance:\
+  \ The skilled, masterful expression of Equality - this energy pattern at its most\
+  \ effective\n\nLAYOUT SPECIFICATIONS:\n- Full width title bar at bottom (15% of\
+  \ card height)\n- \"LaRa in Winter\" in bold, centered\n- \"10101100 \u2022 Hexagram\
+  \ 37\" in smaller text below\n\nThis card represents The Family as a hero expression\
+  \ of Fire-Wind energy in Winter, embodying the journey from Weakness through Equality\
+  \ to Tenderness.\n"
+suggested_names:
+  primary: Mastering The Family
+  alternatives:
+  - The LaRa of Winter
+  - The Family Last Quarter
+  - LaRa Jia Ren
+  - The Hero of The Family
+  traditional_name: Jia Ren (The Family)
+card_name: null
+name_components:
+  inner_trigram: La
+  outer_trigram: Ra
+  combined_trigrams: LaRa
+  season: Winter
+  element: Air
+  phase: Last Quarter
+  phase_half: Last Quarter (Early)
+  archetype: Hero
+related_cards:
+  same_hexagram_winter: '10101100'
+  same_hexagram_spring: '10101110'
+  same_hexagram_summer: '10101111'
+  same_hexagram_fall: '10101101'
+  opposite: '01010011'
+  full_cycle:
+  - '10101100'
+  - '10101110'
+  - '10101111'
+  - '10101101'

@@ -60,6 +60,7 @@ CORRECT DESIGN:                      INCORRECT DESIGN:
 └────────────────────┘               └────────────────────┘
 ```
 
+- DO make sure that the title bar text fits comfortably within the bounds of the image
 - DO use natural margins like traditional tarot cards
 - DO keep content away from card edges
 - DON'T create decorative borders/frames

@@ -1,0 +1,362 @@
+binary_code: '00111101'
+decimal_value: 61
+lr_decimal_value: 188
+hexadecimal_value: 3D
+bit_values:
+  bit1: '0'
+  bit2: '0'
+  bit3: '1'
+  bit4: '1'
+  bit5: '1'
+  bit6: '1'
+  bit7: '0'
+  bit8: '1'
+  bit78: '01'
+bit_associations:
+  bit1:
+    position: 1
+    name: Intuition
+    domain: Inner/Heart
+    question: Do you trust your natural instincts to direct you down the right path?
+    value: '0'
+    meaning: No, intuition is not trusted or followed
+  bit2:
+    position: 2
+    name: Ability
+    domain: Inner/Hands
+    question: Do you have the skills and know-how required to address this question
+      on your own?
+    value: '0'
+    meaning: No, required skills or know-how are lacking
+  bit3:
+    position: 3
+    name: Capacity
+    domain: Inner/Head
+    question: Do your current circumstances provide enough time, space, and resources
+      to address this?
+    value: '1'
+    meaning: Yes, circumstances provide sufficient resources
+  bit4:
+    position: 4
+    name: Expectations
+    domain: Outer/Heart
+    question: Are you aligned with how cultural norms and expectations would want
+      you to address this?
+    value: '1'
+    meaning: Yes, aligned with cultural norms and expectations
+  bit5:
+    position: 5
+    name: Support
+    domain: Outer/Hands
+    question: Do your closest relationships and community have your back in this?
+    value: '1'
+    meaning: Yes, supported by relationships and community
+  bit6:
+    position: 6
+    name: Options
+    domain: Outer/Head
+    question: Are the possible paths that you could choose from clear to you right
+      now?
+    value: '1'
+    meaning: Yes, possible paths are clear
+  bit78:
+    position: 7-8
+    name: Cycle Phase
+    season: Fall
+    tarot_suit: Pentacles
+    element: Earth
+inner_world:
+  bits: '001'
+  color: Blue
+  trigram: Mountain
+  trigram_symbol: "\u2636"
+  8bit_trigram_name: So
+  qualities: Stillness, stopping, resting
+  rgb: 0,0,255
+  state: inner0
+  name: Bear
+  desc: Capacity to understand but lacking intuition and ability; can see what needs
+    to be done but feels unable to act
+outer_world:
+  bits: '111'
+  color: White
+  trigram: Heaven
+  trigram_symbol: "\u2630"
+  8bit_trigram_name: Ko
+  qualities: Creative, strong, active
+  rgb: 255,255,255
+  state: outer1
+  name: Village
+  desc: Complete presence of outer resources; aligned with expectations, supported
+    by others, with clear options
+composite_frameworks:
+  inner_and_outer_worlds:
+    inner_world:
+      bits: 1-3
+      bit_pattern: '001'
+      description: Relates to inner resources - intuition, ability, and capacity
+      name: Bear
+      trigram: Mountain
+      color: Blue
+      desc: Capacity to understand but lacking intuition and ability; can see what
+        needs to be done but feels unable to act
+    outer_world:
+      bits: 4-6
+      bit_pattern: '111'
+      description: Relates to outer resources - expectations, support, and options
+      name: Village
+      trigram: Heaven
+      desc: Complete presence of outer resources; aligned with expectations, supported
+        by others, with clear options
+    heart:
+      bits: 1 & 4
+      bit_pattern: '01'
+      description: Relates to emotional guidance - inner intuition and outer expectations
+      name: Heavy Heart
+      desc: Outer expectations provide guidance, but inner intuition is not trusted
+    hands:
+      bits: 2 & 5
+      bit_pattern: '01'
+      description: Relates to practical assistance - inner ability and outer support
+      name: Grabbing Hands
+      desc: Outer support present, but inner ability is lacking
+    head:
+      bits: 3 & 6
+      bit_pattern: '11'
+      description: Relates to mental clarity - inner capacity and outer options
+      name: Overflowing Mind
+      desc: Both inner capacity and outer options offer mental clarity
+hexagram:
+  binary: '001111'
+  iching_associations:
+    number: 33
+    traditional_name: Dun
+    label: Retreat
+    core_meaning: Withdrawal, distancing, strategic yielding, stepping back
+    life_area: Retreat, strategic withdrawal
+    trigram_relationship: The Mountain trigram (Stillness, stopping, resting) beneath
+      the Heaven trigram (Creative, strong, active)
+    natural_element: Summit touching sky, highest point
+    inner_trigram:
+      name: Mountain
+      qualities: Stillness, stopping, resting
+      symbol: "\u2636"
+    outer_trigram:
+      name: Heaven
+      qualities: Creative, strong, active
+      symbol: "\u2630"
+  evolutionary_journey:
+    gene_key_number: 33
+    shadow_challenge: Forgetting
+    shadow_description: 'The challenge of Forgetting: unconscious patterns that limit
+      expression'
+    gift_potential: Mindfulness
+    gift_description: 'The gift of Mindfulness: conscious transformation and breakthrough
+      potential'
+    siddhi_realization: Revelation
+    siddhi_description: 'The siddhi of Revelation: highest expression and enlightened
+      potential'
+    journey_summary: A journey from amnesia and unawareness to present moment clarity
+      and ultimately direct revelation of universal truth
+    journey_position: siddhi_realization
+    position_description: This card embodies the culmination of the evolutionary journey
+      as the Siddhi of Revelation, representing the highest potential of Gene Key
+      33.
+archetype:
+  name: Sage
+  resonant_season_key: inner0-outer1
+  resonant_season: Fall
+  current_season: Fall
+  color: Iridescent
+  gene_key_aspect: siddhi
+  gene_key_manifestation: Revelation
+  expression: The integrated, wise expression of Revelation - the culmination of this
+    energy pattern
+  cycle_position: Resonant Season
+  cycle_description: A Fall expression of a Fall-resonant pattern
+gender: feminine
+lunar_cycle:
+  decimal_modulo: 61 % 8 = 6, 61 % 2 = 1
+  phase: Last Quarter
+  phase_half: Last Quarter (Late)
+  illumination: ''
+  illumination_min: ''
+  illumination_max: ''
+  cycle_number: 1
+  cycle_name: Inception Cycle
+  complete_designation: Last Quarter (Late), Inception Cycle of Fall
+image_components:
+  colors:
+    inner_world: Blue
+    outer_world: White
+    archetype: Iridescent
+    combined_palette: Blue, White, and Iridescent
+  scene_elements:
+    phase_symbol: Last Quarter ()
+    season_element: Fall (Earth)
+    inner_world_symbol: Bear
+    outer_world_symbol: Village
+  key_symbols:
+    heart: Heavy Heart
+    hands: Grabbing Hands
+    head: Overflowing Mind
+    archetype: Sage
+classifications:
+- Sage of Mountain
+- Heaven Sage
+- Fall Sage
+- Mountain-Heaven Pattern
+- Last Quarter Card
+symbolic_associations:
+  core_symbolism:
+    i_ching:
+      label: Retreat
+      meaning: Withdrawal, distancing, strategic yielding, stepping back
+      natural_element: Summit touching sky, highest point
+      inner_trigram_objects: []
+      outer_trigram_objects: []
+      combined_image: 'So beneath Ko: Summit touching sky, highest point'
+    gene_key:
+      shadow: Forgetting
+      shadow_objects:
+      - obstacles
+      - chains
+      - fog
+      - darkness
+      - weight
+      - masks
+      - barriers
+      - confusion
+      gift: Mindfulness
+      gift_objects:
+      - tools
+      - bridges
+      - light
+      - keys
+      - maps
+      - doorways
+      - vessels
+      - wings
+      siddhi: Revelation
+      siddhi_objects:
+      - crowns
+      - stars
+      - halos
+      - radiance
+      - crystals
+      - flowers
+      - fountains
+      - pure light
+      evolutionary_narrative: The journey from Forgetting through Mindfulness to Revelation
+    body_symbolism:
+      heart:
+      - chest
+      - heart
+      - solar plexus
+      - emotional center
+      hands:
+      - hands
+      - arms
+      - shoulders
+      - tools
+      - instruments
+      head:
+      - head
+      - mind
+      - eyes
+      - third eye
+      - crown
+      - awareness
+    seasonal_elements:
+    - earth
+    - soil
+    - stone
+    - body
+    - matter
+    - foundation
+    - stability
+    archetype_qualities:
+    - wisdom
+    - integration
+    - wholeness
+    - fulfillment
+    - completion
+  suggested_symbols:
+  - name: Retreat
+    description: Symbolizing Withdrawal, distancing, strategic yielding, stepping
+      back
+  - name: So
+    description: Representing inner So energy
+  - name: Ko
+    description: Representing outer Ko energy
+  - name: crowns
+    description: Representing the siddhi of Revelation
+  - name: tool
+    description: Representing the gift of Mindfulness
+  - name: shadow
+    description: Representing the shadow of Forgetting
+  - name: earth
+    description: Representing Fall element
+  - name: Summit touching sky
+    description: Natural symbolic element from I Ching tradition
+sample_image_prompt: "LIMITED COLOR RISOGRAPH-STYLE ILLUSTRATION FOR \"SoKo in Fall\"\
+  \ (00111101)\n\nCreate a limited-color risograph-style illustration that captures\
+  \ the essence of the SoKo in Fall card - representing Retreat (Dun, Hexagram 33)\
+  \ as a Sage expression in Fall.\n\nCARD DIMENSIONS AND STYLE:\n- 1200 x 2000 pixels\
+  \ (3:5 ratio)\n- Woodblock print/risograph aesthetic with bold lines and limited\
+  \ colors\n- Strong contrast between elements with minimalist composition\n- Incorporate\
+  \ traditional I Ching symbolism with modern interpretation\n\nCOLOR PALETTE:\n-\
+  \ Primary: Blue (for inner world character)\n- Secondary: White (for outer world\
+  \ environment)\n- Accent: Iridescent (representing the Sage archetype)\n- White/off-white\
+  \ background with subtle texture\n- Use colors symbolically to represent the journey\
+  \ from Forgetting to Revelation\n\nCHARACTER DESCRIPTION (INNER WORLD):\n- A feminine\
+  \ sage embodying the qualities of Bear\n- Expression and posture reflecting The\
+  \ siddhi of Revelation\n- Incorporate symbolic elements of So (Stillness, stopping,\
+  \ resting)\n- Character represents the inner experience of Retreat\n\nSCENE DESCRIPTION\
+  \ (OUTER WORLD):\n- An environment that reflects Fall and Village\n- Incorporate\
+  \ natural elements: Summit touching sky, highest point\n- Lunar phase showing as\
+  \ a Last Quarter ()\n- Landscape/environment elements symbolizing Retreat, strategic\
+  \ withdrawal\n- Scene represents the outer expression of Retreat\n\nSYMBOLIC ELEMENTS:\n\
+  - Heavy Heart (representing emotional state)\n- Grabbing Hands (representing abilities\
+  \ and support)\n- Overflowing Mind (representing mental clarity)\n- Traditional\
+  \ I Ching symbolism for Dun\n- Symbol representing the journey from Forgetting to\
+  \ Mindfulness to Revelation\n- Subtle hexagram pattern (6 lines) incorporated into\
+  \ design\n- Element symbols related to Fall and Earth\n\nCONCEPTUAL MEANING TO CONVEY:\n\
+  - Core meaning: Withdrawal, distancing, strategic yielding, stepping back\n- Life\
+  \ area: Retreat, strategic withdrawal\n- Gene Key journey: A journey from amnesia\
+  \ and unawareness to present moment clarity and ultimately direct revelation of\
+  \ universal truth\n- Archetype significance: The integrated, wise expression of\
+  \ Revelation - the culmination of this energy pattern\n\nLAYOUT SPECIFICATIONS:\n\
+  - Full width title bar at bottom (15% of card height)\n- \"SoKo in Fall\" in bold,\
+  \ centered\n- \"00111101 \u2022 Hexagram 33\" in smaller text below\n\nThis card\
+  \ represents Retreat as a sage expression of Mountain-Heaven energy in Fall, embodying\
+  \ the journey from Forgetting through Mindfulness to Revelation.\n"
+suggested_names:
+  primary: The Retreat
+  alternatives:
+  - The SoKo of Fall
+  - Retreat Last Quarter
+  - SoKo Dun
+  - The Sage of Retreat
+  traditional_name: Dun (Retreat)
+card_name: null
+name_components:
+  inner_trigram: So
+  outer_trigram: Ko
+  combined_trigrams: SoKo
+  season: Fall
+  element: Earth
+  phase: Last Quarter
+  phase_half: Last Quarter (Late)
+  archetype: Sage
+related_cards:
+  same_hexagram_winter: '00111100'
+  same_hexagram_spring: '00111110'
+  same_hexagram_summer: '00111111'
+  same_hexagram_fall: '00111101'
+  opposite: '11000010'
+  full_cycle:
+  - '00111100'
+  - '00111110'
+  - '00111111'
+  - '00111101'

@@ -1,0 +1,361 @@
+binary_code: '10111101'
+decimal_value: 189
+lr_decimal_value: 189
+hexadecimal_value: BD
+bit_values:
+  bit1: '1'
+  bit2: '0'
+  bit3: '1'
+  bit4: '1'
+  bit5: '1'
+  bit6: '1'
+  bit7: '0'
+  bit8: '1'
+  bit78: '01'
+bit_associations:
+  bit1:
+    position: 1
+    name: Intuition
+    domain: Inner/Heart
+    question: Do you trust your natural instincts to direct you down the right path?
+    value: '1'
+    meaning: Yes, intuition is trusted and followed
+  bit2:
+    position: 2
+    name: Ability
+    domain: Inner/Hands
+    question: Do you have the skills and know-how required to address this question
+      on your own?
+    value: '0'
+    meaning: No, required skills or know-how are lacking
+  bit3:
+    position: 3
+    name: Capacity
+    domain: Inner/Head
+    question: Do your current circumstances provide enough time, space, and resources
+      to address this?
+    value: '1'
+    meaning: Yes, circumstances provide sufficient resources
+  bit4:
+    position: 4
+    name: Expectations
+    domain: Outer/Heart
+    question: Are you aligned with how cultural norms and expectations would want
+      you to address this?
+    value: '1'
+    meaning: Yes, aligned with cultural norms and expectations
+  bit5:
+    position: 5
+    name: Support
+    domain: Outer/Hands
+    question: Do your closest relationships and community have your back in this?
+    value: '1'
+    meaning: Yes, supported by relationships and community
+  bit6:
+    position: 6
+    name: Options
+    domain: Outer/Head
+    question: Are the possible paths that you could choose from clear to you right
+      now?
+    value: '1'
+    meaning: Yes, possible paths are clear
+  bit78:
+    position: 7-8
+    name: Cycle Phase
+    season: Fall
+    tarot_suit: Pentacles
+    element: Earth
+inner_world:
+  bits: '101'
+  color: Magenta
+  trigram: Fire
+  trigram_symbol: "\u2632"
+  8bit_trigram_name: La
+  qualities: Clinging, clarity, brightness
+  rgb: 255,0,255
+  state: inner1
+  name: Fox
+  desc: Intuitive and resourceful but lacking practical skills; has the vision and
+    space but needs help executing
+outer_world:
+  bits: '111'
+  color: White
+  trigram: Heaven
+  trigram_symbol: "\u2630"
+  8bit_trigram_name: Ko
+  qualities: Creative, strong, active
+  rgb: 255,255,255
+  state: outer1
+  name: Village
+  desc: Complete presence of outer resources; aligned with expectations, supported
+    by others, with clear options
+composite_frameworks:
+  inner_and_outer_worlds:
+    inner_world:
+      bits: 1-3
+      bit_pattern: '101'
+      description: Relates to inner resources - intuition, ability, and capacity
+      name: Fox
+      trigram: Fire
+      color: Magenta
+      desc: Intuitive and resourceful but lacking practical skills; has the vision
+        and space but needs help executing
+    outer_world:
+      bits: 4-6
+      bit_pattern: '111'
+      description: Relates to outer resources - expectations, support, and options
+      name: Village
+      trigram: Heaven
+      desc: Complete presence of outer resources; aligned with expectations, supported
+        by others, with clear options
+    heart:
+      bits: 1 & 4
+      bit_pattern: '11'
+      description: Relates to emotional guidance - inner intuition and outer expectations
+      name: Whole Heart
+      desc: Both inner intuition and outer expectations provide aligned emotional
+        guidance
+    hands:
+      bits: 2 & 5
+      bit_pattern: '01'
+      description: Relates to practical assistance - inner ability and outer support
+      name: Grabbing Hands
+      desc: Outer support present, but inner ability is lacking
+    head:
+      bits: 3 & 6
+      bit_pattern: '11'
+      description: Relates to mental clarity - inner capacity and outer options
+      name: Overflowing Mind
+      desc: Both inner capacity and outer options offer mental clarity
+hexagram:
+  binary: '101111'
+  iching_associations:
+    number: 13
+    traditional_name: Tong Ren
+    label: Fellowship
+    core_meaning: Fellowship, community, connection, common cause
+    life_area: Fellowship, community, common purpose
+    trigram_relationship: The Fire trigram (Clinging, clarity, brightness) beneath
+      the Heaven trigram (Creative, strong, active)
+    natural_element: Sun, stars, celestial fire
+    inner_trigram:
+      name: Fire
+      qualities: Clinging, clarity, brightness
+      symbol: "\u2632"
+    outer_trigram:
+      name: Heaven
+      qualities: Creative, strong, active
+      symbol: "\u2630"
+  evolutionary_journey:
+    gene_key_number: 13
+    shadow_challenge: Discord
+    shadow_description: 'The challenge of Discord: unconscious patterns that limit
+      expression'
+    gift_potential: Discernment
+    gift_description: 'The gift of Discernment: conscious transformation and breakthrough
+      potential'
+    siddhi_realization: Empathy
+    siddhi_description: 'The siddhi of Empathy: highest expression and enlightened
+      potential'
+    journey_summary: A journey from disharmony and conflict to keen insight and ultimately
+      profound understanding of others' feelings
+    journey_position: initial_potential
+    position_description: This card represents the starting point of the evolutionary
+      journey for Gene Key 13, containing the potential to transform from Discord
+      to Empathy.
+archetype:
+  name: Fool
+  resonant_season_key: inner1-outer1
+  resonant_season: Summer
+  current_season: Fall
+  color: Turquoise
+  gene_key_aspect: potential
+  gene_key_manifestation: 13
+  expression: The innocent, fresh beginning of this energy pattern with untapped potential
+  cycle_position: Next Season
+  cycle_description: A Fall expression of a Summer-resonant pattern
+gender: masculine
+lunar_cycle:
+  decimal_modulo: 189 % 8 = 6, 189 % 2 = 1
+  phase: Last Quarter
+  phase_half: Last Quarter (Late)
+  illumination: ''
+  illumination_min: ''
+  illumination_max: ''
+  cycle_number: 2
+  cycle_name: Development Cycle
+  complete_designation: Last Quarter (Late), Development Cycle of Fall
+image_components:
+  colors:
+    inner_world: Magenta
+    outer_world: White
+    archetype: Turquoise
+    combined_palette: Magenta, White, and Turquoise
+  scene_elements:
+    phase_symbol: Last Quarter ()
+    season_element: Fall (Earth)
+    inner_world_symbol: Fox
+    outer_world_symbol: Village
+  key_symbols:
+    heart: Whole Heart
+    hands: Grabbing Hands
+    head: Overflowing Mind
+    archetype: Fool
+classifications:
+- Fool of Fire
+- Heaven Fool
+- Fall Fool
+- Fire-Heaven Pattern
+- Last Quarter Card
+symbolic_associations:
+  core_symbolism:
+    i_ching:
+      label: Fellowship
+      meaning: Fellowship, community, connection, common cause
+      natural_element: Sun, stars, celestial fire
+      inner_trigram_objects: []
+      outer_trigram_objects: []
+      combined_image: 'La beneath Ko: Sun, stars, celestial fire'
+    gene_key:
+      shadow: Discord
+      shadow_objects:
+      - obstacles
+      - chains
+      - fog
+      - darkness
+      - weight
+      - masks
+      - barriers
+      - confusion
+      gift: Discernment
+      gift_objects:
+      - tools
+      - bridges
+      - light
+      - keys
+      - maps
+      - doorways
+      - vessels
+      - wings
+      siddhi: Empathy
+      siddhi_objects:
+      - crowns
+      - stars
+      - halos
+      - radiance
+      - crystals
+      - flowers
+      - fountains
+      - pure light
+      evolutionary_narrative: The journey from Discord through Discernment to Empathy
+    body_symbolism:
+      heart:
+      - chest
+      - heart
+      - solar plexus
+      - emotional center
+      hands:
+      - hands
+      - arms
+      - shoulders
+      - tools
+      - instruments
+      head:
+      - head
+      - mind
+      - eyes
+      - third eye
+      - crown
+      - awareness
+    seasonal_elements:
+    - earth
+    - soil
+    - stone
+    - body
+    - matter
+    - foundation
+    - stability
+    archetype_qualities:
+    - beginnings
+    - innocence
+    - openness
+    - potential
+    - curiosity
+  suggested_symbols:
+  - name: Fellowship
+    description: Symbolizing Fellowship, community, connection, common cause
+  - name: La
+    description: Representing inner La energy
+  - name: Ko
+    description: Representing outer Ko energy
+  - name: light
+    description: Representing the siddhi of Empathy
+  - name: tool
+    description: Representing the gift of Discernment
+  - name: shadow
+    description: Representing the shadow of Discord
+  - name: earth
+    description: Representing Fall element
+  - name: Sun
+    description: Natural symbolic element from I Ching tradition
+sample_image_prompt: "LIMITED COLOR RISOGRAPH-STYLE ILLUSTRATION FOR \"LaKo in Fall\"\
+  \ (10111101)\n\nCreate a limited-color risograph-style illustration that captures\
+  \ the essence of the LaKo in Fall card - representing Fellowship (Tong Ren, Hexagram\
+  \ 13) as a Fool expression in Fall.\n\nCARD DIMENSIONS AND STYLE:\n- 1200 x 2000\
+  \ pixels (3:5 ratio)\n- Woodblock print/risograph aesthetic with bold lines and\
+  \ limited colors\n- Strong contrast between elements with minimalist composition\n\
+  - Incorporate traditional I Ching symbolism with modern interpretation\n\nCOLOR\
+  \ PALETTE:\n- Primary: Magenta (for inner world character)\n- Secondary: White (for\
+  \ outer world environment)\n- Accent: Turquoise (representing the Fool archetype)\n\
+  - White/off-white background with subtle texture\n- Use colors symbolically to represent\
+  \ the journey from Discord to Empathy\n\nCHARACTER DESCRIPTION (INNER WORLD):\n\
+  - A masculine fool embodying the qualities of Fox\n- Expression and posture reflecting\
+  \ The potential journey from Discord to Discernment\n- Incorporate symbolic elements\
+  \ of La (Clinging, clarity, brightness)\n- Character represents the inner experience\
+  \ of Fellowship\n\nSCENE DESCRIPTION (OUTER WORLD):\n- An environment that reflects\
+  \ Fall and Village\n- Incorporate natural elements: Sun, stars, celestial fire\n\
+  - Lunar phase showing as a Last Quarter ()\n- Landscape/environment elements symbolizing\
+  \ Fellowship, community, common purpose\n- Scene represents the outer expression\
+  \ of Fellowship\n\nSYMBOLIC ELEMENTS:\n- Whole Heart (representing emotional state)\n\
+  - Grabbing Hands (representing abilities and support)\n- Overflowing Mind (representing\
+  \ mental clarity)\n- Traditional I Ching symbolism for Tong Ren\n- Symbol representing\
+  \ the journey from Discord to Discernment to Empathy\n- Subtle hexagram pattern\
+  \ (6 lines) incorporated into design\n- Element symbols related to Fall and Earth\n\
+  \nCONCEPTUAL MEANING TO CONVEY:\n- Core meaning: Fellowship, community, connection,\
+  \ common cause\n- Life area: Fellowship, community, common purpose\n- Gene Key journey:\
+  \ A journey from disharmony and conflict to keen insight and ultimately profound\
+  \ understanding of others' feelings\n- Archetype significance: The innocent, fresh\
+  \ beginning of this energy pattern with untapped potential\n\nLAYOUT SPECIFICATIONS:\n\
+  - Full width title bar at bottom (15% of card height)\n- \"LaKo in Fall\" in bold,\
+  \ centered\n- \"10111101 \u2022 Hexagram 13\" in smaller text below\n\nThis card\
+  \ represents Fellowship as a fool expression of Fire-Heaven energy in Fall, embodying\
+  \ the journey from Discord through Discernment to Empathy.\n"
+suggested_names:
+  primary: Awakening Fellowship
+  alternatives:
+  - The LaKo of Fall
+  - Fellowship Last Quarter
+  - LaKo Tong Ren
+  - The Fool of Fellowship
+  traditional_name: Tong Ren (Fellowship)
+card_name: null
+name_components:
+  inner_trigram: La
+  outer_trigram: Ko
+  combined_trigrams: LaKo
+  season: Fall
+  element: Earth
+  phase: Last Quarter
+  phase_half: Last Quarter (Late)
+  archetype: Fool
+related_cards:
+  same_hexagram_winter: '10111100'
+  same_hexagram_spring: '10111110'
+  same_hexagram_summer: '10111111'
+  same_hexagram_fall: '10111101'
+  opposite: '01000010'
+  full_cycle:
+  - '10111100'
+  - '10111110'
+  - '10111111'
+  - '10111101'

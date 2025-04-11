@@ -551,3 +551,11 @@ Look at the overall shape or size of your tree.
 │   │   │           ├── Bristlecone Pine: Twisted, ancient appearance
 │   │   │           └── Some palm species: Spiky crown
 ```
+
+## What Else Can You See?
+* If you can get close enough to examine leaves: [Leaf/Needle Path](leaf-needle-path.md)
+* If the bark is distinctive or interesting: [Bark Path](bark-path.md)
+* If you can crush a leaf to check for smell: [Smell Path](smell-path.md)
+* If you can see cones, fruits, berries, or seeds: [Cone/Fruit/Seed Path](cone-fruit-seed-path.md)
+* If the tree has flowers: [Flower Path](flower-path.md)
+* If you can only see the tree's silhouette: [Silhouette Detective Path](silhouette-detective-path.md)

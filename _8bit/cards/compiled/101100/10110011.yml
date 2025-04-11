@@ -1,0 +1,361 @@
+binary_code: '10110011'
+decimal_value: 179
+lr_decimal_value: 205
+hexadecimal_value: B3
+bit_values:
+  bit1: '1'
+  bit2: '0'
+  bit3: '1'
+  bit4: '1'
+  bit5: '0'
+  bit6: '0'
+  bit7: '1'
+  bit8: '1'
+  bit78: '11'
+bit_associations:
+  bit1:
+    position: 1
+    name: Intuition
+    domain: Inner/Heart
+    question: Do you trust your natural instincts to direct you down the right path?
+    value: '1'
+    meaning: Yes, intuition is trusted and followed
+  bit2:
+    position: 2
+    name: Ability
+    domain: Inner/Hands
+    question: Do you have the skills and know-how required to address this question
+      on your own?
+    value: '0'
+    meaning: No, required skills or know-how are lacking
+  bit3:
+    position: 3
+    name: Capacity
+    domain: Inner/Head
+    question: Do your current circumstances provide enough time, space, and resources
+      to address this?
+    value: '1'
+    meaning: Yes, circumstances provide sufficient resources
+  bit4:
+    position: 4
+    name: Expectations
+    domain: Outer/Heart
+    question: Are you aligned with how cultural norms and expectations would want
+      you to address this?
+    value: '1'
+    meaning: Yes, aligned with cultural norms and expectations
+  bit5:
+    position: 5
+    name: Support
+    domain: Outer/Hands
+    question: Do your closest relationships and community have your back in this?
+    value: '0'
+    meaning: No, lacking support from relationships and community
+  bit6:
+    position: 6
+    name: Options
+    domain: Outer/Head
+    question: Are the possible paths that you could choose from clear to you right
+      now?
+    value: '0'
+    meaning: No, possible paths are unclear
+  bit78:
+    position: 7-8
+    name: Cycle Phase
+    season: Summer
+    tarot_suit: Cups
+    element: Water
+inner_world:
+  bits: '101'
+  color: Magenta
+  trigram: Fire
+  trigram_symbol: "\u2632"
+  8bit_trigram_name: La
+  qualities: Clinging, clarity, brightness
+  rgb: 255,0,255
+  state: inner1
+  name: Fox
+  desc: Intuitive and resourceful but lacking practical skills; has the vision and
+    space but needs help executing
+outer_world:
+  bits: '100'
+  color: Red
+  trigram: Thunder
+  trigram_symbol: "\u2633"
+  8bit_trigram_name: Ro
+  qualities: Arousing, movement, action
+  rgb: 255,0,0
+  state: outer0
+  name: Road
+  desc: Alignment with expectations, but lacking support and clear options; conventional
+    but adrift
+composite_frameworks:
+  inner_and_outer_worlds:
+    inner_world:
+      bits: 1-3
+      bit_pattern: '101'
+      description: Relates to inner resources - intuition, ability, and capacity
+      name: Fox
+      trigram: Fire
+      color: Magenta
+      desc: Intuitive and resourceful but lacking practical skills; has the vision
+        and space but needs help executing
+    outer_world:
+      bits: 4-6
+      bit_pattern: '100'
+      description: Relates to outer resources - expectations, support, and options
+      name: Road
+      trigram: Wind
+      desc: Alignment with expectations, but lacking support and clear options; conventional
+        but adrift
+    heart:
+      bits: 1 & 4
+      bit_pattern: '11'
+      description: Relates to emotional guidance - inner intuition and outer expectations
+      name: Whole Heart
+      desc: Both inner intuition and outer expectations provide aligned emotional
+        guidance
+    hands:
+      bits: 2 & 5
+      bit_pattern: '00'
+      description: Relates to practical assistance - inner ability and outer support
+      name: Empty Hands
+      desc: Neither inner ability nor outer support offer practical assistance
+    head:
+      bits: 3 & 6
+      bit_pattern: '10'
+      description: Relates to mental clarity - inner capacity and outer options
+      name: Active Listening Mind
+      desc: Inner capacity present, but outer options are unclear
+hexagram:
+  binary: '101100'
+  iching_associations:
+    number: 55
+    traditional_name: Feng
+    label: Abundance
+    core_meaning: Prosperity, fullness, peak period, abundance
+    life_area: Abundance, fullness, peak time
+    trigram_relationship: The Fire trigram (Clinging, clarity, brightness) beneath
+      the Thunder trigram (Arousing, movement, action)
+    natural_element: Fire and lightning, dual forces
+    inner_trigram:
+      name: Fire
+      qualities: Clinging, clarity, brightness
+      symbol: "\u2632"
+    outer_trigram:
+      name: Thunder
+      qualities: Arousing, movement, action
+      symbol: "\u2633"
+  evolutionary_journey:
+    gene_key_number: 55
+    shadow_challenge: Victimization
+    shadow_description: 'The challenge of Victimization: unconscious patterns that
+      limit expression'
+    gift_potential: Freedom
+    gift_description: 'The gift of Freedom: conscious transformation and breakthrough
+      potential'
+    siddhi_realization: Freedom
+    siddhi_description: 'The siddhi of Freedom: highest expression and enlightened
+      potential'
+    journey_summary: A journey from feeling oppressed to liberating yourself and ultimately
+      absolute sovereignty of spirit
+    journey_position: initial_potential
+    position_description: This card represents the starting point of the evolutionary
+      journey for Gene Key 55, containing the potential to transform from Victimization
+      to Freedom.
+archetype:
+  name: Fool
+  resonant_season_key: inner1-outer0
+  resonant_season: Spring
+  current_season: Summer
+  color: Turquoise
+  gene_key_aspect: potential
+  gene_key_manifestation: 55
+  expression: The innocent, fresh beginning of this energy pattern with untapped potential
+  cycle_position: Next Season
+  cycle_description: A Summer expression of a Spring-resonant pattern
+gender: masculine
+lunar_cycle:
+  decimal_modulo: 179 % 8 = 1, 179 % 2 = 1
+  phase: New Moon
+  phase_half: New Moon (Late)
+  illumination: ''
+  illumination_min: ''
+  illumination_max: ''
+  cycle_number: 4
+  cycle_name: Transition Cycle
+  complete_designation: New Moon (Late), Transition Cycle of Summer
+image_components:
+  colors:
+    inner_world: Magenta
+    outer_world: Red
+    archetype: Turquoise
+    combined_palette: Magenta, Red, and Turquoise
+  scene_elements:
+    phase_symbol: New Moon ()
+    season_element: Summer (Water)
+    inner_world_symbol: Fox
+    outer_world_symbol: Road
+  key_symbols:
+    heart: Whole Heart
+    hands: Empty Hands
+    head: Active Listening Mind
+    archetype: Fool
+classifications:
+- Fool of Fire
+- Thunder Fool
+- Summer Fool
+- Fire-Thunder Pattern
+- New Moon Card
+symbolic_associations:
+  core_symbolism:
+    i_ching:
+      label: Abundance
+      meaning: Prosperity, fullness, peak period, abundance
+      natural_element: Fire and lightning, dual forces
+      inner_trigram_objects: []
+      outer_trigram_objects: []
+      combined_image: 'La beneath Ro: Fire and lightning, dual forces'
+    gene_key:
+      shadow: Victimization
+      shadow_objects:
+      - obstacles
+      - chains
+      - fog
+      - darkness
+      - weight
+      - masks
+      - barriers
+      - confusion
+      gift: Freedom
+      gift_objects:
+      - tools
+      - bridges
+      - light
+      - keys
+      - maps
+      - doorways
+      - vessels
+      - wings
+      siddhi: Freedom
+      siddhi_objects:
+      - crowns
+      - stars
+      - halos
+      - radiance
+      - crystals
+      - flowers
+      - fountains
+      - pure light
+      evolutionary_narrative: The journey from Victimization through Freedom to Freedom
+    body_symbolism:
+      heart:
+      - chest
+      - heart
+      - solar plexus
+      - emotional center
+      hands:
+      - hands
+      - arms
+      - shoulders
+      - tools
+      - instruments
+      head:
+      - head
+      - mind
+      - eyes
+      - third eye
+      - crown
+      - awareness
+    seasonal_elements:
+    - water
+    - flow
+    - waves
+    - emotions
+    - feelings
+    - connection
+    - intimacy
+    archetype_qualities:
+    - beginnings
+    - innocence
+    - openness
+    - potential
+    - curiosity
+  suggested_symbols:
+  - name: Abundance
+    description: Symbolizing Prosperity, fullness, peak period, abundance
+  - name: La
+    description: Representing inner La energy
+  - name: Ro
+    description: Representing outer Ro energy
+  - name: light
+    description: Representing the siddhi of Freedom
+  - name: tool
+    description: Representing the gift of Freedom
+  - name: shadow
+    description: Representing the shadow of Victimization
+  - name: water
+    description: Representing Summer element
+  - name: Fire and lightning
+    description: Natural symbolic element from I Ching tradition
+sample_image_prompt: "LIMITED COLOR RISOGRAPH-STYLE ILLUSTRATION FOR \"LaRo in Summer\"\
+  \ (10110011)\n\nCreate a limited-color risograph-style illustration that captures\
+  \ the essence of the LaRo in Summer card - representing Abundance (Feng, Hexagram\
+  \ 55) as a Fool expression in Summer.\n\nCARD DIMENSIONS AND STYLE:\n- 1200 x 2000\
+  \ pixels (3:5 ratio)\n- Woodblock print/risograph aesthetic with bold lines and\
+  \ limited colors\n- Strong contrast between elements with minimalist composition\n\
+  - Incorporate traditional I Ching symbolism with modern interpretation\n\nCOLOR\
+  \ PALETTE:\n- Primary: Magenta (for inner world character)\n- Secondary: Red (for\
+  \ outer world environment)\n- Accent: Turquoise (representing the Fool archetype)\n\
+  - White/off-white background with subtle texture\n- Use colors symbolically to represent\
+  \ the journey from Victimization to Freedom\n\nCHARACTER DESCRIPTION (INNER WORLD):\n\
+  - A masculine fool embodying the qualities of Fox\n- Expression and posture reflecting\
+  \ The potential journey from Victimization to Freedom\n- Incorporate symbolic elements\
+  \ of La (Clinging, clarity, brightness)\n- Character represents the inner experience\
+  \ of Abundance\n\nSCENE DESCRIPTION (OUTER WORLD):\n- An environment that reflects\
+  \ Summer and Road\n- Incorporate natural elements: Fire and lightning, dual forces\n\
+  - Lunar phase showing as a New Moon ()\n- Landscape/environment elements symbolizing\
+  \ Abundance, fullness, peak time\n- Scene represents the outer expression of Abundance\n\
+  \nSYMBOLIC ELEMENTS:\n- Whole Heart (representing emotional state)\n- Empty Hands\
+  \ (representing abilities and support)\n- Active Listening Mind (representing mental\
+  \ clarity)\n- Traditional I Ching symbolism for Feng\n- Symbol representing the\
+  \ journey from Victimization to Freedom to Freedom\n- Subtle hexagram pattern (6\
+  \ lines) incorporated into design\n- Element symbols related to Summer and Water\n\
+  \nCONCEPTUAL MEANING TO CONVEY:\n- Core meaning: Prosperity, fullness, peak period,\
+  \ abundance\n- Life area: Abundance, fullness, peak time\n- Gene Key journey: A\
+  \ journey from feeling oppressed to liberating yourself and ultimately absolute\
+  \ sovereignty of spirit\n- Archetype significance: The innocent, fresh beginning\
+  \ of this energy pattern with untapped potential\n\nLAYOUT SPECIFICATIONS:\n- Full\
+  \ width title bar at bottom (15% of card height)\n- \"LaRo in Summer\" in bold,\
+  \ centered\n- \"10110011 \u2022 Hexagram 55\" in smaller text below\n\nThis card\
+  \ represents Abundance as a fool expression of Fire-Thunder energy in Summer, embodying\
+  \ the journey from Victimization through Freedom to Freedom.\n"
+suggested_names:
+  primary: Awakening Abundance
+  alternatives:
+  - The LaRo of Summer
+  - Abundance New Moon
+  - LaRo Feng
+  - The Fool of Abundance
+  traditional_name: Feng (Abundance)
+card_name: null
+name_components:
+  inner_trigram: La
+  outer_trigram: Ro
+  combined_trigrams: LaRo
+  season: Summer
+  element: Water
+  phase: New Moon
+  phase_half: New Moon (Late)
+  archetype: Fool
+related_cards:
+  same_hexagram_winter: '10110000'
+  same_hexagram_spring: '10110010'
+  same_hexagram_summer: '10110011'
+  same_hexagram_fall: '10110001'
+  opposite: '01001100'
+  full_cycle:
+  - '10110000'
+  - '10110010'
+  - '10110011'
+  - '10110001'

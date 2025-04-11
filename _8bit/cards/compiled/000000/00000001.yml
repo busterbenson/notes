@@ -1,0 +1,351 @@
+binary_code: '00000001'
+decimal_value: 1
+lr_decimal_value: 128
+hexadecimal_value: '1'
+bit_values:
+  bit1: '0'
+  bit2: '0'
+  bit3: '0'
+  bit4: '0'
+  bit5: '0'
+  bit6: '0'
+  bit7: '0'
+  bit8: '1'
+  bit78: '01'
+bit_associations:
+  bit1:
+    position: 1
+    name: Intuition
+    domain: Inner/Heart
+    question: Do you trust your natural instincts to direct you down the right path?
+    value: '0'
+    meaning: No, intuition is not trusted or followed
+  bit2:
+    position: 2
+    name: Ability
+    domain: Inner/Hands
+    question: Do you have the skills and know-how required to address this question
+      on your own?
+    value: '0'
+    meaning: No, required skills or know-how are lacking
+  bit3:
+    position: 3
+    name: Capacity
+    domain: Inner/Head
+    question: Do your current circumstances provide enough time, space, and resources
+      to address this?
+    value: '0'
+    meaning: No, circumstances do not provide sufficient resources
+  bit4:
+    position: 4
+    name: Expectations
+    domain: Outer/Heart
+    question: Are you aligned with how cultural norms and expectations would want
+      you to address this?
+    value: '0'
+    meaning: No, not aligned with cultural norms and expectations
+  bit5:
+    position: 5
+    name: Support
+    domain: Outer/Hands
+    question: Do your closest relationships and community have your back in this?
+    value: '0'
+    meaning: No, lacking support from relationships and community
+  bit6:
+    position: 6
+    name: Options
+    domain: Outer/Head
+    question: Are the possible paths that you could choose from clear to you right
+      now?
+    value: '0'
+    meaning: No, possible paths are unclear
+  bit78:
+    position: 7-8
+    name: Cycle Phase
+    season: Fall
+    tarot_suit: Pentacles
+    element: Earth
+inner_world:
+  bits: '000'
+  color: Black
+  trigram: Earth
+  trigram_symbol: "\u2637"
+  8bit_trigram_name: Ka
+  qualities: Receptive, yielding, responsive
+  rgb: 0,0,0
+  state: inner0
+  name: Ants
+  desc: Complete absence of inner resources; intuition, ability, and capacity are
+    all absent
+outer_world:
+  bits: '000'
+  color: Black
+  trigram: Earth
+  trigram_symbol: "\u2637"
+  8bit_trigram_name: Ka
+  qualities: Receptive, yielding, responsive
+  rgb: 0,0,0
+  state: outer0
+  name: Cave
+  desc: Complete lack of outer resources; expectations, support, and options are all
+    absent
+composite_frameworks:
+  inner_and_outer_worlds:
+    inner_world:
+      bits: 1-3
+      bit_pattern: '000'
+      description: Relates to inner resources - intuition, ability, and capacity
+      name: Ants
+      trigram: Earth
+      color: Black
+      desc: Complete absence of inner resources; intuition, ability, and capacity
+        are all absent
+    outer_world:
+      bits: 4-6
+      bit_pattern: '000'
+      description: Relates to outer resources - expectations, support, and options
+      name: Cave
+      trigram: Earth
+      desc: Complete lack of outer resources; expectations, support, and options are
+        all absent
+    heart:
+      bits: 1 & 4
+      bit_pattern: '00'
+      description: Relates to emotional guidance - inner intuition and outer expectations
+      name: Empty Heart
+      desc: Neither inner intuition nor outer expectations provide emotional guidance
+    hands:
+      bits: 2 & 5
+      bit_pattern: '00'
+      description: Relates to practical assistance - inner ability and outer support
+      name: Empty Hands
+      desc: Neither inner ability nor outer support offer practical assistance
+    head:
+      bits: 3 & 6
+      bit_pattern: '00'
+      description: Relates to mental clarity - inner capacity and outer options
+      name: Beginner's Mind
+      desc: Neither inner capacity nor outer options offer mental clarity
+hexagram:
+  binary: '000000'
+  iching_associations:
+    number: 2
+    traditional_name: Kun
+    label: The Receptive
+    core_meaning: Pure yin, yielding, responsive, accepting, following
+    life_area: Receptivity, nurturing, support
+    trigram_relationship: The Earth trigram (Receptive, yielding, responsive) beneath
+      the Earth trigram (Receptive, yielding, responsive)
+    natural_element: Fertile soil, deep foundation, grounding
+    inner_trigram:
+      name: Earth
+      qualities: Receptive, yielding, responsive
+      symbol: "\u2637"
+    outer_trigram:
+      name: Earth
+      qualities: Receptive, yielding, responsive
+      symbol: "\u2637"
+  evolutionary_journey:
+    gene_key_number: 2
+    shadow_challenge: Dislocation
+    shadow_description: 'The challenge of Dislocation: unconscious patterns that limit
+      expression'
+    gift_potential: Orientation
+    gift_description: 'The gift of Orientation: conscious transformation and breakthrough
+      potential'
+    siddhi_realization: Unity
+    siddhi_description: 'The siddhi of Unity: highest expression and enlightened potential'
+    journey_summary: A journey from feeling lost and disconnected to finding your
+      true direction and ultimately experiencing oneness with all
+    journey_position: shadow_challenge
+    position_description: This card embodies the Shadow aspect of Gene Key 2 - Dislocation,
+      representing the starting challenge of the evolutionary journey.
+archetype:
+  name: Monster
+  resonant_season_key: inner0-outer0
+  resonant_season: Winter
+  current_season: Fall
+  color: Purple
+  gene_key_aspect: shadow
+  gene_key_manifestation: Dislocation
+  expression: The challenge or excess of Dislocation - this energy pattern in imbalance
+  cycle_position: Fourth Season
+  cycle_description: A Fall expression of a Winter-resonant pattern
+gender: neutral
+lunar_cycle:
+  decimal_modulo: 1 % 8 = 0, 1 % 2 = 1
+  phase: Dark Moon
+  phase_half: Dark Moon (Late)
+  illumination: ''
+  illumination_min: ''
+  illumination_max: ''
+  cycle_number: 1
+  cycle_name: Inception Cycle
+  complete_designation: Dark Moon (Late), Inception Cycle of Fall
+image_components:
+  colors:
+    inner_world: Black
+    outer_world: Black
+    archetype: Purple
+    combined_palette: Black, Black, and Purple
+  scene_elements:
+    phase_symbol: Dark Moon ()
+    season_element: Fall (Earth)
+    inner_world_symbol: Ants
+    outer_world_symbol: Cave
+  key_symbols:
+    heart: Empty Heart
+    hands: Empty Hands
+    head: Beginner's Mind
+    archetype: Monster
+classifications:
+- Monster of Earth
+- Earth Monster
+- Fall Monster
+- Earth-Earth Pattern
+- Dark Moon Card
+symbolic_associations:
+  core_symbolism:
+    i_ching:
+      label: The Receptive
+      meaning: Pure yin, yielding, responsive, accepting, following
+      natural_element: Fertile soil, deep foundation, grounding
+      inner_trigram_objects: []
+      outer_trigram_objects: []
+      combined_image: 'Ka beneath Ka: Fertile soil, deep foundation, grounding'
+    gene_key:
+      shadow: Dislocation
+      shadow_objects:
+      - obstacles
+      - chains
+      - fog
+      - darkness
+      - weight
+      - masks
+      - barriers
+      - confusion
+      gift: Orientation
+      gift_objects:
+      - tools
+      - bridges
+      - light
+      - keys
+      - maps
+      - doorways
+      - vessels
+      - wings
+      siddhi: Unity
+      siddhi_objects:
+      - crowns
+      - stars
+      - halos
+      - radiance
+      - crystals
+      - flowers
+      - fountains
+      - pure light
+      evolutionary_narrative: The journey from Dislocation through Orientation to
+        Unity
+    body_symbolism:
+      heart:
+      - chest
+      - heart
+      - solar plexus
+      - emotional center
+      hands:
+      - hands
+      - arms
+      - shoulders
+      - tools
+      - instruments
+      head:
+      - head
+      - mind
+      - eyes
+      - third eye
+      - crown
+      - awareness
+    seasonal_elements:
+    - earth
+    - soil
+    - stone
+    - body
+    - matter
+    - foundation
+    - stability
+    archetype_qualities:
+    - challenge
+    - excess
+    - shadow
+    - intensity
+    - transformation
+  suggested_symbols:
+  - name: The Receptive
+    description: Symbolizing Pure yin, yielding, responsive, accepting, following
+  - name: Ka
+    description: Representing inner Ka energy
+  - name: Ka
+    description: Representing outer Ka energy
+  - name: light
+    description: Representing the siddhi of Unity
+  - name: tool
+    description: Representing the gift of Orientation
+  - name: obstacles
+    description: Representing the shadow of Dislocation
+  - name: earth
+    description: Representing Fall element
+  - name: Fertile soil
+    description: Natural symbolic element from I Ching tradition
+sample_image_prompt: "LIMITED COLOR RISOGRAPH-STYLE ILLUSTRATION FOR \"KaKa in Fall\"\
+  \ (00000001)\n\nCreate a limited-color risograph-style illustration that captures\
+  \ the essence of the KaKa in Fall card - representing The Receptive (Kun, Hexagram\
+  \ 2) as a Monster expression in Fall.\n\nCARD DIMENSIONS AND STYLE:\n- 1200 x 2000\
+  \ pixels (3:5 ratio)\n- Woodblock print/risograph aesthetic with bold lines and\
+  \ limited colors\n- Strong contrast between elements with minimalist composition\n\
+  - Incorporate traditional I Ching symbolism with modern interpretation\n\nCOLOR\
+  \ PALETTE:\n- Primary: Black (for inner world character)\n- Secondary: Black (for\
+  \ outer world environment)\n- Accent: Purple (representing the Monster archetype)\n\
+  - White/off-white background with subtle texture\n- Use colors symbolically to represent\
+  \ the journey from Dislocation to Unity\n\nCHARACTER DESCRIPTION (INNER WORLD):\n\
+  - A neutral monster embodying the qualities of Ants\n- Expression and posture reflecting\
+  \ The shadow of Dislocation\n- Incorporate symbolic elements of Ka (Receptive, yielding,\
+  \ responsive)\n- Character represents the inner experience of The Receptive\n\n\
+  SCENE DESCRIPTION (OUTER WORLD):\n- An environment that reflects Fall and Cave\n\
+  - Incorporate natural elements: Fertile soil, deep foundation, grounding\n- Lunar\
+  \ phase showing as a Dark Moon ()\n- Landscape/environment elements symbolizing\
+  \ Receptivity, nurturing, support\n- Scene represents the outer expression of The\
+  \ Receptive\n\nSYMBOLIC ELEMENTS:\n- Empty Heart (representing emotional state)\n\
+  - Empty Hands (representing abilities and support)\n- Beginner's Mind (representing\
+  \ mental clarity)\n- Traditional I Ching symbolism for Kun\n- Symbol representing\
+  \ the journey from Dislocation to Orientation to Unity\n- Subtle hexagram pattern\
+  \ (6 lines) incorporated into design\n- Element symbols related to Fall and Earth\n\
+  \nCONCEPTUAL MEANING TO CONVEY:\n- Core meaning: Pure yin, yielding, responsive,\
+  \ accepting, following\n- Life area: Receptivity, nurturing, support\n- Gene Key\
+  \ journey: A journey from feeling lost and disconnected to finding your true direction\
+  \ and ultimately experiencing oneness with all\n- Archetype significance: The challenge\
+  \ or excess of Dislocation - this energy pattern in imbalance\n\nLAYOUT SPECIFICATIONS:\n\
+  - Full width title bar at bottom (15% of card height)\n- \"KaKa in Fall\" in bold,\
+  \ centered\n- \"00000001 \u2022 Hexagram 2\" in smaller text below\n\nThis card\
+  \ represents The Receptive as a monster expression of Earth-Earth energy in Fall,\
+  \ embodying the journey from Dislocation through Orientation to Unity.\n"
+card_name: Devouring Void
+name_components:
+  inner_trigram: Ka
+  outer_trigram: Ka
+  combined_trigrams: KaKa
+  season: Fall
+  element: Earth
+  phase: Dark Moon
+  phase_half: Dark Moon (Late)
+  archetype: Monster
+related_cards:
+  same_hexagram_winter: '00000000'
+  same_hexagram_spring: '00000010'
+  same_hexagram_summer: '00000011'
+  same_hexagram_fall: '00000001'
+  opposite: '11111110'
+  full_cycle:
+  - '00000000'
+  - '00000010'
+  - '00000011'
+  - '00000001'

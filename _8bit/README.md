@@ -18,8 +18,10 @@ A divination system based on 8-bit binary patterns, combining elements of tarot,
 
 - `/mapping_plans/` - Development documents for the tarot-to-binary mapping
   - Contains evaluation and analysis of different mapping approaches
-  
-- `/cards/` - Individual card files organized by pattern similarity
+
+#### Cards and card images stored in folders like v3 (currently on v3) 
+#### When archived they will be moved to the archive/v3 folder
+- `/cards/[version]/[6-bit code]/[8-bit code].yml` - Individual card files organized by pattern similarity
   - `card-template.yml` - Template for creating new cards with complete structure
   - `card-example-00000000.yml` - Example card (The Moon in Winter) with all fields filled in
   - Organized in subdirectories by first 6 bits (e.g., `/000000/`, `/010010/`)

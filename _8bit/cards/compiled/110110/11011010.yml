@@ -1,0 +1,361 @@
+binary_code: '11011010'
+decimal_value: 218
+lr_decimal_value: 91
+hexadecimal_value: DA
+bit_values:
+  bit1: '1'
+  bit2: '1'
+  bit3: '0'
+  bit4: '1'
+  bit5: '1'
+  bit6: '0'
+  bit7: '1'
+  bit8: '0'
+  bit78: '10'
+bit_associations:
+  bit1:
+    position: 1
+    name: Intuition
+    domain: Inner/Heart
+    question: Do you trust your natural instincts to direct you down the right path?
+    value: '1'
+    meaning: Yes, intuition is trusted and followed
+  bit2:
+    position: 2
+    name: Ability
+    domain: Inner/Hands
+    question: Do you have the skills and know-how required to address this question
+      on your own?
+    value: '1'
+    meaning: Yes, required skills and know-how are present
+  bit3:
+    position: 3
+    name: Capacity
+    domain: Inner/Head
+    question: Do your current circumstances provide enough time, space, and resources
+      to address this?
+    value: '0'
+    meaning: No, circumstances do not provide sufficient resources
+  bit4:
+    position: 4
+    name: Expectations
+    domain: Outer/Heart
+    question: Are you aligned with how cultural norms and expectations would want
+      you to address this?
+    value: '1'
+    meaning: Yes, aligned with cultural norms and expectations
+  bit5:
+    position: 5
+    name: Support
+    domain: Outer/Hands
+    question: Do your closest relationships and community have your back in this?
+    value: '1'
+    meaning: Yes, supported by relationships and community
+  bit6:
+    position: 6
+    name: Options
+    domain: Outer/Head
+    question: Are the possible paths that you could choose from clear to you right
+      now?
+    value: '0'
+    meaning: No, possible paths are unclear
+  bit78:
+    position: 7-8
+    name: Cycle Phase
+    season: Spring
+    tarot_suit: Wands
+    element: Fire
+inner_world:
+  bits: '110'
+  color: Yellow
+  trigram: Lake
+  trigram_symbol: "\u2631"
+  8bit_trigram_name: Sa
+  qualities: Joyful, open, exchange
+  rgb: 255,255,0
+  state: inner1
+  name: Turtle
+  desc: Intuitive and skilled but lacking resources; creative capacity limited by
+    external constraints
+outer_world:
+  bits: '110'
+  color: Yellow
+  trigram: Lake
+  trigram_symbol: "\u2631"
+  8bit_trigram_name: Sa
+  qualities: Joyful, open, exchange
+  rgb: 255,255,0
+  state: outer1
+  name: Lake
+  desc: Alignment with expectations and support, but unclear options; supported conventional
+    path with limited choices
+composite_frameworks:
+  inner_and_outer_worlds:
+    inner_world:
+      bits: 1-3
+      bit_pattern: '110'
+      description: Relates to inner resources - intuition, ability, and capacity
+      name: Turtle
+      trigram: Lake
+      color: Yellow
+      desc: Intuitive and skilled but lacking resources; creative capacity limited
+        by external constraints
+    outer_world:
+      bits: 4-6
+      bit_pattern: '110'
+      description: Relates to outer resources - expectations, support, and options
+      name: Lake
+      trigram: Lake
+      desc: Alignment with expectations and support, but unclear options; supported
+        conventional path with limited choices
+    heart:
+      bits: 1 & 4
+      bit_pattern: '11'
+      description: Relates to emotional guidance - inner intuition and outer expectations
+      name: Whole Heart
+      desc: Both inner intuition and outer expectations provide aligned emotional
+        guidance
+    hands:
+      bits: 2 & 5
+      bit_pattern: '11'
+      description: Relates to practical assistance - inner ability and outer support
+      name: Full Hands
+      desc: Both inner ability and outer support offer practical assistance
+    head:
+      bits: 3 & 6
+      bit_pattern: '00'
+      description: Relates to mental clarity - inner capacity and outer options
+      name: Beginner's Mind
+      desc: Neither inner capacity nor outer options offer mental clarity
+hexagram:
+  binary: '110110'
+  iching_associations:
+    number: 58
+    traditional_name: Dui
+    label: The Joyous
+    core_meaning: Pleasure, joy, satisfaction, delight, lake
+    life_area: Joy, pleasure, satisfaction, lake
+    trigram_relationship: The Lake trigram (Joyful, open, exchange) beneath the Lake
+      trigram (Joyful, open, exchange)
+    natural_element: Linked pools, connected joy
+    inner_trigram:
+      name: Lake
+      qualities: Joyful, open, exchange
+      symbol: "\u2631"
+    outer_trigram:
+      name: Lake
+      qualities: Joyful, open, exchange
+      symbol: "\u2631"
+  evolutionary_journey:
+    gene_key_number: 58
+    shadow_challenge: Dissatisfaction
+    shadow_description: 'The challenge of Dissatisfaction: unconscious patterns that
+      limit expression'
+    gift_potential: Vitality
+    gift_description: 'The gift of Vitality: conscious transformation and breakthrough
+      potential'
+    siddhi_realization: Bliss
+    siddhi_description: 'The siddhi of Bliss: highest expression and enlightened potential'
+    journey_summary: A journey from perpetual discontentment to vibrant aliveness
+      and ultimately transcendent joy beyond conditions
+    journey_position: shadow_challenge
+    position_description: This card embodies the Shadow aspect of Gene Key 58 - Dissatisfaction,
+      representing the starting challenge of the evolutionary journey.
+archetype:
+  name: Monster
+  resonant_season_key: inner1-outer1
+  resonant_season: Summer
+  current_season: Spring
+  color: Purple
+  gene_key_aspect: shadow
+  gene_key_manifestation: Dissatisfaction
+  expression: The challenge or excess of Dissatisfaction - this energy pattern in
+    imbalance
+  cycle_position: Fourth Season
+  cycle_description: A Spring expression of a Summer-resonant pattern
+gender: masculine
+lunar_cycle:
+  decimal_modulo: 218 % 8 = 5, 218 % 2 = 0
+  phase: Waning Gibbous
+  phase_half: Waning Gibbous (Early)
+  illumination: ''
+  illumination_min: ''
+  illumination_max: ''
+  cycle_number: 1
+  cycle_name: Inception Cycle
+  complete_designation: Waning Gibbous (Early), Inception Cycle of Spring
+image_components:
+  colors:
+    inner_world: Yellow
+    outer_world: Yellow
+    archetype: Purple
+    combined_palette: Yellow, Yellow, and Purple
+  scene_elements:
+    phase_symbol: Waning Gibbous ()
+    season_element: Spring (Fire)
+    inner_world_symbol: Turtle
+    outer_world_symbol: Lake
+  key_symbols:
+    heart: Whole Heart
+    hands: Full Hands
+    head: Beginner's Mind
+    archetype: Monster
+classifications:
+- Monster of Lake
+- Lake Monster
+- Spring Monster
+- Lake-Lake Pattern
+- Waning Gibbous Card
+symbolic_associations:
+  core_symbolism:
+    i_ching:
+      label: The Joyous
+      meaning: Pleasure, joy, satisfaction, delight, lake
+      natural_element: Linked pools, connected joy
+      inner_trigram_objects: []
+      outer_trigram_objects: []
+      combined_image: 'Sa beneath Sa: Linked pools, connected joy'
+    gene_key:
+      shadow: Dissatisfaction
+      shadow_objects:
+      - obstacles
+      - chains
+      - fog
+      - darkness
+      - weight
+      - masks
+      - barriers
+      - confusion
+      gift: Vitality
+      gift_objects:
+      - tools
+      - bridges
+      - light
+      - keys
+      - maps
+      - doorways
+      - vessels
+      - wings
+      siddhi: Bliss
+      siddhi_objects:
+      - crowns
+      - stars
+      - halos
+      - radiance
+      - crystals
+      - flowers
+      - fountains
+      - pure light
+      evolutionary_narrative: The journey from Dissatisfaction through Vitality to
+        Bliss
+    body_symbolism:
+      heart:
+      - chest
+      - heart
+      - solar plexus
+      - emotional center
+      hands:
+      - hands
+      - arms
+      - shoulders
+      - tools
+      - instruments
+      head:
+      - head
+      - mind
+      - eyes
+      - third eye
+      - crown
+      - awareness
+    seasonal_elements:
+    - fire
+    - spark
+    - flame
+    - energy
+    - action
+    - movement
+    - transformation
+    archetype_qualities:
+    - challenge
+    - excess
+    - shadow
+    - intensity
+    - transformation
+  suggested_symbols:
+  - name: The Joyous
+    description: Symbolizing Pleasure, joy, satisfaction, delight, lake
+  - name: Sa
+    description: Representing inner Sa energy
+  - name: Sa
+    description: Representing outer Sa energy
+  - name: light
+    description: Representing the siddhi of Bliss
+  - name: tool
+    description: Representing the gift of Vitality
+  - name: obstacles
+    description: Representing the shadow of Dissatisfaction
+  - name: fire
+    description: Representing Spring element
+  - name: Linked pools
+    description: Natural symbolic element from I Ching tradition
+sample_image_prompt: "LIMITED COLOR RISOGRAPH-STYLE ILLUSTRATION FOR \"SaSa in Spring\"\
+  \ (11011010)\n\nCreate a limited-color risograph-style illustration that captures\
+  \ the essence of the SaSa in Spring card - representing The Joyous (Dui, Hexagram\
+  \ 58) as a Monster expression in Spring.\n\nCARD DIMENSIONS AND STYLE:\n- 1200 x\
+  \ 2000 pixels (3:5 ratio)\n- Woodblock print/risograph aesthetic with bold lines\
+  \ and limited colors\n- Strong contrast between elements with minimalist composition\n\
+  - Incorporate traditional I Ching symbolism with modern interpretation\n\nCOLOR\
+  \ PALETTE:\n- Primary: Yellow (for inner world character)\n- Secondary: Yellow (for\
+  \ outer world environment)\n- Accent: Purple (representing the Monster archetype)\n\
+  - White/off-white background with subtle texture\n- Use colors symbolically to represent\
+  \ the journey from Dissatisfaction to Bliss\n\nCHARACTER DESCRIPTION (INNER WORLD):\n\
+  - A masculine monster embodying the qualities of Turtle\n- Expression and posture\
+  \ reflecting The shadow of Dissatisfaction\n- Incorporate symbolic elements of Sa\
+  \ (Joyful, open, exchange)\n- Character represents the inner experience of The Joyous\n\
+  \nSCENE DESCRIPTION (OUTER WORLD):\n- An environment that reflects Spring and Lake\n\
+  - Incorporate natural elements: Linked pools, connected joy\n- Lunar phase showing\
+  \ as a Waning Gibbous ()\n- Landscape/environment elements symbolizing Joy, pleasure,\
+  \ satisfaction, lake\n- Scene represents the outer expression of The Joyous\n\n\
+  SYMBOLIC ELEMENTS:\n- Whole Heart (representing emotional state)\n- Full Hands (representing\
+  \ abilities and support)\n- Beginner's Mind (representing mental clarity)\n- Traditional\
+  \ I Ching symbolism for Dui\n- Symbol representing the journey from Dissatisfaction\
+  \ to Vitality to Bliss\n- Subtle hexagram pattern (6 lines) incorporated into design\n\
+  - Element symbols related to Spring and Fire\n\nCONCEPTUAL MEANING TO CONVEY:\n\
+  - Core meaning: Pleasure, joy, satisfaction, delight, lake\n- Life area: Joy, pleasure,\
+  \ satisfaction, lake\n- Gene Key journey: A journey from perpetual discontentment\
+  \ to vibrant aliveness and ultimately transcendent joy beyond conditions\n- Archetype\
+  \ significance: The challenge or excess of Dissatisfaction - this energy pattern\
+  \ in imbalance\n\nLAYOUT SPECIFICATIONS:\n- Full width title bar at bottom (15%\
+  \ of card height)\n- \"SaSa in Spring\" in bold, centered\n- \"11011010 \u2022 Hexagram\
+  \ 58\" in smaller text below\n\nThis card represents The Joyous as a monster expression\
+  \ of Lake-Lake energy in Spring, embodying the journey from Dissatisfaction through\
+  \ Vitality to Bliss.\n"
+suggested_names:
+  primary: Challenging The Joyous
+  alternatives:
+  - The SaSa of Spring
+  - The Joyous Waning Gibbous
+  - SaSa Dui
+  - The Monster of The Joyous
+  traditional_name: Dui (The Joyous)
+card_name: null
+name_components:
+  inner_trigram: Sa
+  outer_trigram: Sa
+  combined_trigrams: SaSa
+  season: Spring
+  element: Fire
+  phase: Waning Gibbous
+  phase_half: Waning Gibbous (Early)
+  archetype: Monster
+related_cards:
+  same_hexagram_winter: '11011000'
+  same_hexagram_spring: '11011010'
+  same_hexagram_summer: '11011011'
+  same_hexagram_fall: '11011001'
+  opposite: '00100101'
+  full_cycle:
+  - '11011000'
+  - '11011010'
+  - '11011011'
+  - '11011001'

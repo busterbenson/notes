@@ -3,7 +3,7 @@
 Look at the flowers of your tree.
 
 **Special Feature Pages:**
-- [Flowering Trees Group](trees/flowering-trees-group.md) - Explore spectacular flowering trees of California
+- [Flowering Trees Group](groups/flowering-trees-group.md) - Explore spectacular flowering trees of California
 
 ```
 ├── The FLOWERS catch my eye!
@@ -179,3 +179,11 @@ Look at the flowers of your tree.
 │               ├── Long bloom period (months)
 │               └── One of the latest-blooming ornamental trees
 ```
+
+## What Else Can You See?
+* If the leaves or needles are distinctive: [Leaf/Needle Path](leaf-needle-path.md)
+* If the bark has interesting texture or color: [Bark Path](bark-path.md)
+* If the leaves or needles have a smell when crushed: [Smell Path](smell-path.md)
+* If you can see fruits, berries, or seeds: [Cone/Fruit/Seed Path](cone-fruit-seed-path.md)
+* If the tree has a distinctive overall shape: [Shape/Size Path](shape-size-path.md)
+* If the tree isn't flowering right now: Try other paths like [Leaf/Needle Path](leaf-needle-path.md) or [Bark Path](bark-path.md)

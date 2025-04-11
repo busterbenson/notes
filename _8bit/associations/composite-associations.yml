@@ -1,0 +1,141 @@
+# Composite Associations
+
+# Expanded frameworks that combine various bit patterns and frameworks
+composite_associations:
+
+  # These expand upon the I Ching's trigrams by giving a bit more nuance to them depending on 
+  # if they are in the "bottom" (first 3 bits) or "top" (second 3 bits) of the hexagram (first 6 bits)
+  inner_and_outer_worlds:
+    inner_world:
+      bits: "1-3"
+      bit_mask: "???00000"
+      description: "Relates to inner resources - intuition, ability, and capacity"
+      meanings:
+        "000": 
+          name: "Ants"
+          trigram: "Earth"
+          color: "Black"
+          desc: "Complete absence of inner resources; intuition, ability, and capacity are all absent"
+        "001": 
+          name: "Bear"
+          trigram: "Mountain"
+          color: "Blue"
+          desc: "Capacity to understand but lacking intuition and ability; can see what needs to be done but feels unable to act"
+        "010": 
+          name: "Spider"
+          trigram: "Water"
+          color: "Green"
+          desc: "Technical ability present but lacking intuition and capacity; skilled execution without direction or resources"
+        "011": 
+          name: "Crow"
+          trigram: "Wind"
+          color: "Cyan"
+          desc: "Skilled and resourceful but lacks intuition; capable of executing but needs direction"
+        "100": 
+          name: "Snake"
+          trigram: "Thunder"
+          color: "Red"
+          desc: "Strong intuition but lacking practical skills and resources; knows what feels right but can't manifest it"
+        "101": 
+          name: "Fox"
+          trigram: "Fire"
+          color: "Magenta"
+          desc: "Intuitive and resourceful but lacking practical skills; has the vision and space but needs help executing"
+        "110": 
+          name: "Turtle"
+          trigram: "Lake"
+          color: "Yellow"
+          desc: "Intuitive and skilled but lacking resources; creative capacity limited by external constraints"
+        "111": 
+          name: "Monkey"
+          trigram: "Heaven"
+          color: "White"
+          desc: "Complete presence of inner resources; self-sufficient, confident, and fully equipped"
+    outer_world:
+      bits: "4-6"
+      bit_mask: "000???00"
+      description: "Relates to outer resources - expectations, support, and options"
+      meanings:
+        "000": 
+          name: "Cave"
+          trigram: "Earth"
+          desc: "Complete lack of outer resources; expectations, support, and options are all absent"
+        "001": 
+          name: "Tower"
+          trigram: "Mountain"
+          desc: "Clear options present, but lacking alignment with expectations and support"
+        "010": 
+          name: "Forest"
+          trigram: "Water"
+          desc: "Support present, but lacking alignment with expectations and clear options"
+        "011": 
+          name: "Chasm"
+          trigram: "Thunder"
+          desc: "Support and options present, but misaligned with expectations; alternative paths with backing"
+        "100": 
+          name: "Road"
+          trigram: "Wind"
+          desc: "Alignment with expectations, but lacking support and clear options; conventional but adrift"
+        "101": 
+          name: "Desert"
+          trigram: "Fire"
+          desc: "Alignment with expectations and clear options, but lacking support; clear authorized path without assistance"
+        "110": 
+          name: "Lake"
+          trigram: "Lake"
+          desc: "Alignment with expectations and support, but unclear options; supported conventional path with limited choices"
+        "111": 
+          name: "Village"
+          trigram: "Heaven"
+          desc: "Complete presence of outer resources; aligned with expectations, supported by others, with clear options"
+    heart:
+      bits: "1 & 4"
+      bit_mask: "?XX?XXXX"
+      description: "Relates to emotional guidance - inner intuition and outer expectations"
+      meanings:
+        "00": 
+          name: "Empty Heart"
+          desc: "Neither inner intuition nor outer expectations provide emotional guidance"
+        "10": 
+          name: "Giving Heart"
+          desc: "Inner intuition provides guidance, but not aligned with outer expectations"
+        "11": 
+          name: "Whole Heart"
+          desc: "Both inner intuition and outer expectations provide aligned emotional guidance"
+        "01": 
+          name: "Heavy Heart"
+          desc: "Outer expectations provide guidance, but inner intuition is not trusted"
+    hands:
+      bits: "2 & 5"
+      bit_mask: "X?XX?XXX"
+      description: "Relates to practical assistance - inner ability and outer support"
+      meanings:
+        "00": 
+          name: "Empty Hands"
+          desc: "Neither inner ability nor outer support offer practical assistance"
+        "10": 
+          name: "Giving Hands"
+          desc: "Inner ability present, but outer support is lacking"
+        "11": 
+          name: "Full Hands"
+          desc: "Both inner ability and outer support offer practical assistance"
+        "01": 
+          name: "Grabbing Hands"
+          desc: "Outer support present, but inner ability is lacking"
+    head:
+      bits: "3 & 6"
+      bit_mask: "XX?XX?XX"
+      description: "Relates to mental clarity - inner capacity and outer options"
+      meanings:
+        "00": 
+          name: "Beginner's Mind"
+          desc: "Neither inner capacity nor outer options offer mental clarity"
+        "10": 
+          name: "Active Listening Mind"
+          desc: "Inner capacity present, but outer options are unclear"
+        "11": 
+          name: "Overflowing Mind"
+          desc: "Both inner capacity and outer options offer mental clarity"
+        "01": 
+          name: "Projecting Mind"
+          desc: "Outer options are clear, but inner capacity is lacking"

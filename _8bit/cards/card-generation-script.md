@@ -8,22 +8,26 @@ For optimal image generation, extract the following data points from each card's
 
 ### Core Card Information
 - **Binary Code**: The 8-bit binary pattern 
-- **Decimal Value**: For lunar cycle calculations
+- **Decimal Value**: Convert the binary code to a decimal value with left-to-right priority of bits (see bits-to-decimal.yml)
 - **Card Name**: From `oracle_card.card_name`
-- **Archetype**: Sage, Fool, Hero, or Monster
+
+### Inner and Outer World meanings
+- **Inner World Meaning**: For thematic elements, see core-systems.yml and all associations with the first 3 bits
+- **Outer World Meaning**: For thematic elements, see core-systems.yml and all associations with bits 4-6
+
+### Archetype meaning
+- **Archetype**: Sage, Fool, Hero, or Monster based on inner_world, outer_world and resonant season (see archetype-guide.md)
 
 ### Color System
-- **Inner World Color**: RGB value from the inner trigram (bits 1-3)
-- **Inner World Meaning**: For thematic elements
-- **Outer World Color**: RGB value from the outer trigram (bits 4-6)
-- **Outer World Meaning**: For thematic elements
-- **Archetype Color**: Based on archetype (Sage, Fool, Hero, Monster)
+- **Inner World Color**: RGB value from the inner trigram (bits 1-3), see rgb_colors in core-systems.yml
+- **Outer World Color**: RGB value from the outer trigram (bits 4-6), see rgb_colors in core-systems.yml
+- **Archetype Color**: Based on archetype (Sage, Fool, Hero, Monster), see archetype-guide.md
 
 ### Character and Scene
-- **Character Description**: From `oracle_card.card_creature`
-- **Gender Assignment**: Based on bit count rules
-- **Scene Description**: From `oracle_card.card_scene`
-- **Mood Keywords**: From `oracle_card.mood`
+- **Character Description**: From `oracle_card.card_creature`, the archetype, and the composite-associations associated with the inner world
+- **Gender Assignment**: Based on bit count rules in core-systems.yml
+- **Scene Description**: From `oracle_card.card_scene` and the composite-associations with the outer world
+- **Mood Keywords**: From `oracle_card.mood` and all the composite-associations
 - **Universal Symbol**: From `oracle_card.universal_symbol`
 
 ### Symbolic Associations

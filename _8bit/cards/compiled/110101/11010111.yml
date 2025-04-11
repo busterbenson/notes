@@ -1,0 +1,360 @@
+binary_code: '11010111'
+decimal_value: 215
+lr_decimal_value: 235
+hexadecimal_value: D7
+bit_values:
+  bit1: '1'
+  bit2: '1'
+  bit3: '0'
+  bit4: '1'
+  bit5: '0'
+  bit6: '1'
+  bit7: '1'
+  bit8: '1'
+  bit78: '11'
+bit_associations:
+  bit1:
+    position: 1
+    name: Intuition
+    domain: Inner/Heart
+    question: Do you trust your natural instincts to direct you down the right path?
+    value: '1'
+    meaning: Yes, intuition is trusted and followed
+  bit2:
+    position: 2
+    name: Ability
+    domain: Inner/Hands
+    question: Do you have the skills and know-how required to address this question
+      on your own?
+    value: '1'
+    meaning: Yes, required skills and know-how are present
+  bit3:
+    position: 3
+    name: Capacity
+    domain: Inner/Head
+    question: Do your current circumstances provide enough time, space, and resources
+      to address this?
+    value: '0'
+    meaning: No, circumstances do not provide sufficient resources
+  bit4:
+    position: 4
+    name: Expectations
+    domain: Outer/Heart
+    question: Are you aligned with how cultural norms and expectations would want
+      you to address this?
+    value: '1'
+    meaning: Yes, aligned with cultural norms and expectations
+  bit5:
+    position: 5
+    name: Support
+    domain: Outer/Hands
+    question: Do your closest relationships and community have your back in this?
+    value: '0'
+    meaning: No, lacking support from relationships and community
+  bit6:
+    position: 6
+    name: Options
+    domain: Outer/Head
+    question: Are the possible paths that you could choose from clear to you right
+      now?
+    value: '1'
+    meaning: Yes, possible paths are clear
+  bit78:
+    position: 7-8
+    name: Cycle Phase
+    season: Summer
+    tarot_suit: Cups
+    element: Water
+inner_world:
+  bits: '110'
+  color: Yellow
+  trigram: Lake
+  trigram_symbol: "\u2631"
+  8bit_trigram_name: Sa
+  qualities: Joyful, open, exchange
+  rgb: 255,255,0
+  state: inner1
+  name: Turtle
+  desc: Intuitive and skilled but lacking resources; creative capacity limited by
+    external constraints
+outer_world:
+  bits: '101'
+  color: Magenta
+  trigram: Fire
+  trigram_symbol: "\u2632"
+  8bit_trigram_name: La
+  qualities: Clinging, clarity, brightness
+  rgb: 255,0,255
+  state: outer1
+  name: Desert
+  desc: Alignment with expectations and clear options, but lacking support; clear
+    authorized path without assistance
+composite_frameworks:
+  inner_and_outer_worlds:
+    inner_world:
+      bits: 1-3
+      bit_pattern: '110'
+      description: Relates to inner resources - intuition, ability, and capacity
+      name: Turtle
+      trigram: Lake
+      color: Yellow
+      desc: Intuitive and skilled but lacking resources; creative capacity limited
+        by external constraints
+    outer_world:
+      bits: 4-6
+      bit_pattern: '101'
+      description: Relates to outer resources - expectations, support, and options
+      name: Desert
+      trigram: Fire
+      desc: Alignment with expectations and clear options, but lacking support; clear
+        authorized path without assistance
+    heart:
+      bits: 1 & 4
+      bit_pattern: '11'
+      description: Relates to emotional guidance - inner intuition and outer expectations
+      name: Whole Heart
+      desc: Both inner intuition and outer expectations provide aligned emotional
+        guidance
+    hands:
+      bits: 2 & 5
+      bit_pattern: '10'
+      description: Relates to practical assistance - inner ability and outer support
+      name: Giving Hands
+      desc: Inner ability present, but outer support is lacking
+    head:
+      bits: 3 & 6
+      bit_pattern: '01'
+      description: Relates to mental clarity - inner capacity and outer options
+      name: Projecting Mind
+      desc: Outer options are clear, but inner capacity is lacking
+hexagram:
+  binary: '110101'
+  iching_associations:
+    number: 38
+    traditional_name: Kui
+    label: Opposition
+    core_meaning: Contrast, polarity, divergent interests, difference
+    life_area: Opposition, polarity, contrast
+    trigram_relationship: The Lake trigram (Joyful, open, exchange) beneath the Fire
+      trigram (Clinging, clarity, brightness)
+    natural_element: Steam rising, transforming water
+    inner_trigram:
+      name: Lake
+      qualities: Joyful, open, exchange
+      symbol: "\u2631"
+    outer_trigram:
+      name: Fire
+      qualities: Clinging, clarity, brightness
+      symbol: "\u2632"
+  evolutionary_journey:
+    gene_key_number: 38
+    shadow_challenge: Struggle
+    shadow_description: 'The challenge of Struggle: unconscious patterns that limit
+      expression'
+    gift_potential: Perseverance
+    gift_description: 'The gift of Perseverance: conscious transformation and breakthrough
+      potential'
+    siddhi_realization: Honor
+    siddhi_description: 'The siddhi of Honor: highest expression and enlightened potential'
+    journey_summary: A journey from fighting against adversity to steadfast persistence
+      and ultimately noble integrity in all actions
+    journey_position: siddhi_realization
+    position_description: This card embodies the culmination of the evolutionary journey
+      as the Siddhi of Honor, representing the highest potential of Gene Key 38.
+archetype:
+  name: Sage
+  resonant_season_key: inner1-outer1
+  resonant_season: Summer
+  current_season: Summer
+  color: Iridescent
+  gene_key_aspect: siddhi
+  gene_key_manifestation: Honor
+  expression: The integrated, wise expression of Honor - the culmination of this energy
+    pattern
+  cycle_position: Resonant Season
+  cycle_description: A Summer expression of a Summer-resonant pattern
+gender: feminine
+lunar_cycle:
+  decimal_modulo: 215 % 8 = 3, 215 % 2 = 1
+  phase: Waxing Gibbous
+  phase_half: Waxing Gibbous (Late)
+  illumination: ''
+  illumination_min: ''
+  illumination_max: ''
+  cycle_number: 1
+  cycle_name: Inception Cycle
+  complete_designation: Waxing Gibbous (Late), Inception Cycle of Summer
+image_components:
+  colors:
+    inner_world: Yellow
+    outer_world: Magenta
+    archetype: Iridescent
+    combined_palette: Yellow, Magenta, and Iridescent
+  scene_elements:
+    phase_symbol: Waxing Gibbous ()
+    season_element: Summer (Water)
+    inner_world_symbol: Turtle
+    outer_world_symbol: Desert
+  key_symbols:
+    heart: Whole Heart
+    hands: Giving Hands
+    head: Projecting Mind
+    archetype: Sage
+classifications:
+- Sage of Lake
+- Fire Sage
+- Summer Sage
+- Lake-Fire Pattern
+- Waxing Gibbous Card
+symbolic_associations:
+  core_symbolism:
+    i_ching:
+      label: Opposition
+      meaning: Contrast, polarity, divergent interests, difference
+      natural_element: Steam rising, transforming water
+      inner_trigram_objects: []
+      outer_trigram_objects: []
+      combined_image: 'Sa beneath La: Steam rising, transforming water'
+    gene_key:
+      shadow: Struggle
+      shadow_objects:
+      - obstacles
+      - chains
+      - fog
+      - darkness
+      - weight
+      - masks
+      - barriers
+      - confusion
+      gift: Perseverance
+      gift_objects:
+      - tools
+      - bridges
+      - light
+      - keys
+      - maps
+      - doorways
+      - vessels
+      - wings
+      siddhi: Honor
+      siddhi_objects:
+      - crowns
+      - stars
+      - halos
+      - radiance
+      - crystals
+      - flowers
+      - fountains
+      - pure light
+      evolutionary_narrative: The journey from Struggle through Perseverance to Honor
+    body_symbolism:
+      heart:
+      - chest
+      - heart
+      - solar plexus
+      - emotional center
+      hands:
+      - hands
+      - arms
+      - shoulders
+      - tools
+      - instruments
+      head:
+      - head
+      - mind
+      - eyes
+      - third eye
+      - crown
+      - awareness
+    seasonal_elements:
+    - water
+    - flow
+    - waves
+    - emotions
+    - feelings
+    - connection
+    - intimacy
+    archetype_qualities:
+    - wisdom
+    - integration
+    - wholeness
+    - fulfillment
+    - completion
+  suggested_symbols:
+  - name: Opposition
+    description: Symbolizing Contrast, polarity, divergent interests, difference
+  - name: Sa
+    description: Representing inner Sa energy
+  - name: La
+    description: Representing outer La energy
+  - name: crowns
+    description: Representing the siddhi of Honor
+  - name: tool
+    description: Representing the gift of Perseverance
+  - name: shadow
+    description: Representing the shadow of Struggle
+  - name: water
+    description: Representing Summer element
+  - name: Steam rising
+    description: Natural symbolic element from I Ching tradition
+sample_image_prompt: "LIMITED COLOR RISOGRAPH-STYLE ILLUSTRATION FOR \"SaLa in Summer\"\
+  \ (11010111)\n\nCreate a limited-color risograph-style illustration that captures\
+  \ the essence of the SaLa in Summer card - representing Opposition (Kui, Hexagram\
+  \ 38) as a Sage expression in Summer.\n\nCARD DIMENSIONS AND STYLE:\n- 1200 x 2000\
+  \ pixels (3:5 ratio)\n- Woodblock print/risograph aesthetic with bold lines and\
+  \ limited colors\n- Strong contrast between elements with minimalist composition\n\
+  - Incorporate traditional I Ching symbolism with modern interpretation\n\nCOLOR\
+  \ PALETTE:\n- Primary: Yellow (for inner world character)\n- Secondary: Magenta\
+  \ (for outer world environment)\n- Accent: Iridescent (representing the Sage archetype)\n\
+  - White/off-white background with subtle texture\n- Use colors symbolically to represent\
+  \ the journey from Struggle to Honor\n\nCHARACTER DESCRIPTION (INNER WORLD):\n-\
+  \ A feminine sage embodying the qualities of Turtle\n- Expression and posture reflecting\
+  \ The siddhi of Honor\n- Incorporate symbolic elements of Sa (Joyful, open, exchange)\n\
+  - Character represents the inner experience of Opposition\n\nSCENE DESCRIPTION (OUTER\
+  \ WORLD):\n- An environment that reflects Summer and Desert\n- Incorporate natural\
+  \ elements: Steam rising, transforming water\n- Lunar phase showing as a Waxing\
+  \ Gibbous ()\n- Landscape/environment elements symbolizing Opposition, polarity,\
+  \ contrast\n- Scene represents the outer expression of Opposition\n\nSYMBOLIC ELEMENTS:\n\
+  - Whole Heart (representing emotional state)\n- Giving Hands (representing abilities\
+  \ and support)\n- Projecting Mind (representing mental clarity)\n- Traditional I\
+  \ Ching symbolism for Kui\n- Symbol representing the journey from Struggle to Perseverance\
+  \ to Honor\n- Subtle hexagram pattern (6 lines) incorporated into design\n- Element\
+  \ symbols related to Summer and Water\n\nCONCEPTUAL MEANING TO CONVEY:\n- Core meaning:\
+  \ Contrast, polarity, divergent interests, difference\n- Life area: Opposition,\
+  \ polarity, contrast\n- Gene Key journey: A journey from fighting against adversity\
+  \ to steadfast persistence and ultimately noble integrity in all actions\n- Archetype\
+  \ significance: The integrated, wise expression of Honor - the culmination of this\
+  \ energy pattern\n\nLAYOUT SPECIFICATIONS:\n- Full width title bar at bottom (15%\
+  \ of card height)\n- \"SaLa in Summer\" in bold, centered\n- \"11010111 \u2022 Hexagram\
+  \ 38\" in smaller text below\n\nThis card represents Opposition as a sage expression\
+  \ of Lake-Fire energy in Summer, embodying the journey from Struggle through Perseverance\
+  \ to Honor.\n"
+suggested_names:
+  primary: The Opposition
+  alternatives:
+  - The SaLa of Summer
+  - Opposition Waxing Gibbous
+  - SaLa Kui
+  - The Sage of Opposition
+  traditional_name: Kui (Opposition)
+card_name: null
+name_components:
+  inner_trigram: Sa
+  outer_trigram: La
+  combined_trigrams: SaLa
+  season: Summer
+  element: Water
+  phase: Waxing Gibbous
+  phase_half: Waxing Gibbous (Late)
+  archetype: Sage
+related_cards:
+  same_hexagram_winter: '11010100'
+  same_hexagram_spring: '11010110'
+  same_hexagram_summer: '11010111'
+  same_hexagram_fall: '11010101'
+  opposite: '00101000'
+  full_cycle:
+  - '11010100'
+  - '11010110'
+  - '11010111'
+  - '11010101'

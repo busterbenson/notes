@@ -1,0 +1,359 @@
+binary_code: '11100101'
+decimal_value: 229
+lr_decimal_value: 167
+hexadecimal_value: E5
+bit_values:
+  bit1: '1'
+  bit2: '1'
+  bit3: '1'
+  bit4: '0'
+  bit5: '0'
+  bit6: '1'
+  bit7: '0'
+  bit8: '1'
+  bit78: '01'
+bit_associations:
+  bit1:
+    position: 1
+    name: Intuition
+    domain: Inner/Heart
+    question: Do you trust your natural instincts to direct you down the right path?
+    value: '1'
+    meaning: Yes, intuition is trusted and followed
+  bit2:
+    position: 2
+    name: Ability
+    domain: Inner/Hands
+    question: Do you have the skills and know-how required to address this question
+      on your own?
+    value: '1'
+    meaning: Yes, required skills and know-how are present
+  bit3:
+    position: 3
+    name: Capacity
+    domain: Inner/Head
+    question: Do your current circumstances provide enough time, space, and resources
+      to address this?
+    value: '1'
+    meaning: Yes, circumstances provide sufficient resources
+  bit4:
+    position: 4
+    name: Expectations
+    domain: Outer/Heart
+    question: Are you aligned with how cultural norms and expectations would want
+      you to address this?
+    value: '0'
+    meaning: No, not aligned with cultural norms and expectations
+  bit5:
+    position: 5
+    name: Support
+    domain: Outer/Hands
+    question: Do your closest relationships and community have your back in this?
+    value: '0'
+    meaning: No, lacking support from relationships and community
+  bit6:
+    position: 6
+    name: Options
+    domain: Outer/Head
+    question: Are the possible paths that you could choose from clear to you right
+      now?
+    value: '1'
+    meaning: Yes, possible paths are clear
+  bit78:
+    position: 7-8
+    name: Cycle Phase
+    season: Fall
+    tarot_suit: Pentacles
+    element: Earth
+inner_world:
+  bits: '111'
+  color: White
+  trigram: Heaven
+  trigram_symbol: "\u2630"
+  8bit_trigram_name: Ko
+  qualities: Creative, strong, active
+  rgb: 255,255,255
+  state: inner1
+  name: Monkey
+  desc: Complete presence of inner resources; self-sufficient, confident, and fully
+    equipped
+outer_world:
+  bits: '001'
+  color: Blue
+  trigram: Mountain
+  trigram_symbol: "\u2636"
+  8bit_trigram_name: So
+  qualities: Stillness, stopping, resting
+  rgb: 0,0,255
+  state: outer0
+  name: Tower
+  desc: Clear options present, but lacking alignment with expectations and support
+composite_frameworks:
+  inner_and_outer_worlds:
+    inner_world:
+      bits: 1-3
+      bit_pattern: '111'
+      description: Relates to inner resources - intuition, ability, and capacity
+      name: Monkey
+      trigram: Heaven
+      color: White
+      desc: Complete presence of inner resources; self-sufficient, confident, and
+        fully equipped
+    outer_world:
+      bits: 4-6
+      bit_pattern: '001'
+      description: Relates to outer resources - expectations, support, and options
+      name: Tower
+      trigram: Mountain
+      desc: Clear options present, but lacking alignment with expectations and support
+    heart:
+      bits: 1 & 4
+      bit_pattern: '10'
+      description: Relates to emotional guidance - inner intuition and outer expectations
+      name: Giving Heart
+      desc: Inner intuition provides guidance, but not aligned with outer expectations
+    hands:
+      bits: 2 & 5
+      bit_pattern: '10'
+      description: Relates to practical assistance - inner ability and outer support
+      name: Giving Hands
+      desc: Inner ability present, but outer support is lacking
+    head:
+      bits: 3 & 6
+      bit_pattern: '11'
+      description: Relates to mental clarity - inner capacity and outer options
+      name: Overflowing Mind
+      desc: Both inner capacity and outer options offer mental clarity
+hexagram:
+  binary: '111001'
+  iching_associations:
+    number: 26
+    traditional_name: Da Xu
+    label: The Taming Power of the Great
+    core_meaning: Restraint of strong forces, accumulation of energy, reserves
+    life_area: Containing power, restraining energy
+    trigram_relationship: The Heaven trigram (Creative, strong, active) beneath the
+      Mountain trigram (Stillness, stopping, resting)
+    natural_element: Sky over mountain, aspiration
+    inner_trigram:
+      name: Heaven
+      qualities: Creative, strong, active
+      symbol: "\u2630"
+    outer_trigram:
+      name: Mountain
+      qualities: Stillness, stopping, resting
+      symbol: "\u2636"
+  evolutionary_journey:
+    gene_key_number: 26
+    shadow_challenge: Pride
+    shadow_description: 'The challenge of Pride: unconscious patterns that limit expression'
+    gift_potential: Artfulness
+    gift_description: 'The gift of Artfulness: conscious transformation and breakthrough
+      potential'
+    siddhi_realization: Invisibility
+    siddhi_description: 'The siddhi of Invisibility: highest expression and enlightened
+      potential'
+    journey_summary: A journey from ego inflation to skillful manipulation of energy
+      and ultimately selfless service beyond recognition
+    journey_position: gift_expression
+    position_description: This card represents the middle stage of the evolutionary
+      journey, expressing the Gift of Artfulness, the breakthrough potential of Gene
+      Key 26.
+archetype:
+  name: Hero
+  resonant_season_key: inner1-outer0
+  resonant_season: Spring
+  current_season: Fall
+  color: Gold
+  gene_key_aspect: gift
+  gene_key_manifestation: Artfulness
+  expression: The skilled, masterful expression of Artfulness - this energy pattern
+    at its most effective
+  cycle_position: Third Season
+  cycle_description: A Fall expression of a Spring-resonant pattern
+gender: masculine
+lunar_cycle:
+  decimal_modulo: 229 % 8 = 2, 229 % 2 = 1
+  phase: First Quarter
+  phase_half: First Quarter (Late)
+  illumination: ''
+  illumination_min: ''
+  illumination_max: ''
+  cycle_number: 1
+  cycle_name: Inception Cycle
+  complete_designation: First Quarter (Late), Inception Cycle of Fall
+image_components:
+  colors:
+    inner_world: White
+    outer_world: Blue
+    archetype: Gold
+    combined_palette: White, Blue, and Gold
+  scene_elements:
+    phase_symbol: First Quarter ()
+    season_element: Fall (Earth)
+    inner_world_symbol: Monkey
+    outer_world_symbol: Tower
+  key_symbols:
+    heart: Giving Heart
+    hands: Giving Hands
+    head: Overflowing Mind
+    archetype: Hero
+classifications:
+- Hero of Heaven
+- Mountain Hero
+- Fall Hero
+- Heaven-Mountain Pattern
+- First Quarter Card
+symbolic_associations:
+  core_symbolism:
+    i_ching:
+      label: The Taming Power of the Great
+      meaning: Restraint of strong forces, accumulation of energy, reserves
+      natural_element: Sky over mountain, aspiration
+      inner_trigram_objects: []
+      outer_trigram_objects: []
+      combined_image: 'Ko beneath So: Sky over mountain, aspiration'
+    gene_key:
+      shadow: Pride
+      shadow_objects:
+      - obstacles
+      - chains
+      - fog
+      - darkness
+      - weight
+      - masks
+      - barriers
+      - confusion
+      gift: Artfulness
+      gift_objects:
+      - tools
+      - bridges
+      - light
+      - keys
+      - maps
+      - doorways
+      - vessels
+      - wings
+      siddhi: Invisibility
+      siddhi_objects:
+      - crowns
+      - stars
+      - halos
+      - radiance
+      - crystals
+      - flowers
+      - fountains
+      - pure light
+      evolutionary_narrative: The journey from Pride through Artfulness to Invisibility
+    body_symbolism:
+      heart:
+      - chest
+      - heart
+      - solar plexus
+      - emotional center
+      hands:
+      - hands
+      - arms
+      - shoulders
+      - tools
+      - instruments
+      head:
+      - head
+      - mind
+      - eyes
+      - third eye
+      - crown
+      - awareness
+    seasonal_elements:
+    - earth
+    - soil
+    - stone
+    - body
+    - matter
+    - foundation
+    - stability
+    archetype_qualities:
+    - mastery
+    - skill
+    - accomplishment
+    - strength
+    - confidence
+  suggested_symbols:
+  - name: The Taming Power of the Great
+    description: Symbolizing Restraint of strong forces, accumulation of energy, reserves
+  - name: Ko
+    description: Representing inner Ko energy
+  - name: So
+    description: Representing outer So energy
+  - name: light
+    description: Representing the siddhi of Invisibility
+  - name: tools
+    description: Representing the gift of Artfulness
+  - name: shadow
+    description: Representing the shadow of Pride
+  - name: earth
+    description: Representing Fall element
+  - name: Sky over mountain
+    description: Natural symbolic element from I Ching tradition
+sample_image_prompt: "LIMITED COLOR RISOGRAPH-STYLE ILLUSTRATION FOR \"KoSo in Fall\"\
+  \ (11100101)\n\nCreate a limited-color risograph-style illustration that captures\
+  \ the essence of the KoSo in Fall card - representing The Taming Power of the Great\
+  \ (Da Xu, Hexagram 26) as a Hero expression in Fall.\n\nCARD DIMENSIONS AND STYLE:\n\
+  - 1200 x 2000 pixels (3:5 ratio)\n- Woodblock print/risograph aesthetic with bold\
+  \ lines and limited colors\n- Strong contrast between elements with minimalist composition\n\
+  - Incorporate traditional I Ching symbolism with modern interpretation\n\nCOLOR\
+  \ PALETTE:\n- Primary: White (for inner world character)\n- Secondary: Blue (for\
+  \ outer world environment)\n- Accent: Gold (representing the Hero archetype)\n-\
+  \ White/off-white background with subtle texture\n- Use colors symbolically to represent\
+  \ the journey from Pride to Invisibility\n\nCHARACTER DESCRIPTION (INNER WORLD):\n\
+  - A masculine hero embodying the qualities of Monkey\n- Expression and posture reflecting\
+  \ The gift of Artfulness\n- Incorporate symbolic elements of Ko (Creative, strong,\
+  \ active)\n- Character represents the inner experience of The Taming Power of the\
+  \ Great\n\nSCENE DESCRIPTION (OUTER WORLD):\n- An environment that reflects Fall\
+  \ and Tower\n- Incorporate natural elements: Sky over mountain, aspiration\n- Lunar\
+  \ phase showing as a First Quarter ()\n- Landscape/environment elements symbolizing\
+  \ Containing power, restraining energy\n- Scene represents the outer expression\
+  \ of The Taming Power of the Great\n\nSYMBOLIC ELEMENTS:\n- Giving Heart (representing\
+  \ emotional state)\n- Giving Hands (representing abilities and support)\n- Overflowing\
+  \ Mind (representing mental clarity)\n- Traditional I Ching symbolism for Da Xu\n\
+  - Symbol representing the journey from Pride to Artfulness to Invisibility\n- Subtle\
+  \ hexagram pattern (6 lines) incorporated into design\n- Element symbols related\
+  \ to Fall and Earth\n\nCONCEPTUAL MEANING TO CONVEY:\n- Core meaning: Restraint\
+  \ of strong forces, accumulation of energy, reserves\n- Life area: Containing power,\
+  \ restraining energy\n- Gene Key journey: A journey from ego inflation to skillful\
+  \ manipulation of energy and ultimately selfless service beyond recognition\n- Archetype\
+  \ significance: The skilled, masterful expression of Artfulness - this energy pattern\
+  \ at its most effective\n\nLAYOUT SPECIFICATIONS:\n- Full width title bar at bottom\
+  \ (15% of card height)\n- \"KoSo in Fall\" in bold, centered\n- \"11100101 \u2022\
+  \ Hexagram 26\" in smaller text below\n\nThis card represents The Taming Power of\
+  \ the Great as a hero expression of Heaven-Mountain energy in Fall, embodying the\
+  \ journey from Pride through Artfulness to Invisibility.\n"
+suggested_names:
+  primary: Mastering The Taming Power of the Great
+  alternatives:
+  - The KoSo of Fall
+  - The Taming Power of the Great First Quarter
+  - KoSo Da Xu
+  - The Hero of The Taming Power of the Great
+  traditional_name: Da Xu (The Taming Power of the Great)
+card_name: null
+name_components:
+  inner_trigram: Ko
+  outer_trigram: So
+  combined_trigrams: KoSo
+  season: Fall
+  element: Earth
+  phase: First Quarter
+  phase_half: First Quarter (Late)
+  archetype: Hero
+related_cards:
+  same_hexagram_winter: '11100100'
+  same_hexagram_spring: '11100110'
+  same_hexagram_summer: '11100111'
+  same_hexagram_fall: '11100101'
+  opposite: '00011010'
+  full_cycle:
+  - '11100100'
+  - '11100110'
+  - '11100111'
+  - '11100101'

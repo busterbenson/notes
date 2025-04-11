@@ -3,13 +3,21 @@
 Look at the bark of your tree.
 
 **Special Feature Pages:**
-- [Redwood & Sequoia Group](trees/redwood-sequoia-group.md) - Compare the distinctive reddish, spongy bark of redwoods and sequoias
-- [White & Peeling Bark Group](trees/white-peeling-bark-group.md) - Identify trees with striking white or peeling bark
-- [Red & Orange Bark Group](trees/red-orange-bark-group.md) - Discover trees with warm-colored, eye-catching bark
+- [Redwood & Sequoia Group](groups/redwood-sequoia-group.md) - Compare the distinctive reddish, spongy bark of redwoods and sequoias
+- [White & Peeling Bark Group](groups/white-peeling-bark-group.md) - Identify trees with striking white or peeling bark
+- [Red & Orange Bark Group](groups/red-orange-bark-group.md) - Discover trees with warm-colored, eye-catching bark
 
 ```
 ├── The BARK looks interesting!
 │   ├── What's the main COLOR of the bark?
+│   │   ├── I'M NOT SURE → Here's a tip:
+│   │   │   ├── Look at the trunk in sunlight!
+│   │   │   ├── Light colors will appear white, cream, or gray
+│   │   │   ├── Red colors will look reddish-brown or orange 
+│   │   │   ├── Dark colors will be chocolate-brown or black
+│   │   │   ├── Green/yellow will have a slight greenish tint
+│   │   │   └── If colors vary, look at the most common color on the main trunk
+│   │   │
 │   │   ├── WHITE, CREAM, or LIGHT GRAY → LIGHT-COLORED BARK GROUP
 │   │   │   ├── How does the bark TEXTURE appear?
 │   │   │   │   ├── SMOOTH with peeling layers → PEELING LIGHT BARK GROUP
@@ -380,10 +388,11 @@ Look at the bark of your tree.
 │   │   │   │       │   ├── Often twisted and gnarled with age
 │   │   │   │       │   └── Narrow silvery leaves, produces olives
 │   │   │   │       │
-│   │   │   │       ├── BAY LAUREL (Umbellularia)
+│   │   │   │       ├── LAUREL FAMILY (Lauraceae)
 │   │   │   │       │   ├── California Bay Laurel: Olive-green younger bark
-│   │   │   │       │   ├── Strong aromatic leaves
-│   │   │   │       │   └── Small yellowish flowers, olive-like fruits
+│   │   │   │       │   ├── Camphor Tree: Gray-brown smooth bark when young, becoming furrowed with age
+│   │   │   │       │   ├── Both have aromatic leaves (bay vs. camphor scent)
+│   │   │   │       │   └── Evergreen trees with smooth leaf margins
 │   │   │   │       │
 │   │   │   │       └── INCENSE-CEDAR (Calocedrus)
 │   │   │   │           ├── Incense-cedar: Sometimes olive-tinted on young bark
@@ -401,6 +410,11 @@ Look at the bark of your tree.
 │   │   │   │   │   │   ├── Various manzanita species: Green new twigs
 │   │   │   │   │   │   ├── Gradually turn red with age
 │   │   │   │   │   │   └── Smooth texture throughout
+│   │   │   │   │   │
+│   │   │   │   │   ├── CAMPHOR TREE (Cinnamomum camphora) - Young trees
+│   │   │   │   │   │   ├── Smooth gray-green bark when young
+│   │   │   │   │   │   ├── Develops shallow furrows with age
+│   │   │   │   │   │   └── Aromatic medicinal-smelling leaves
 │   │   │   │   │   │
 │   │   │   │   │   └── SOME MAPLE SPECIES
 │   │   │   │   │       ├── Box Elder: Smooth green-tinted young bark
@@ -525,3 +539,11 @@ Look at the bark of your tree.
 │   ├── It has an UNUSUAL COLOR (green, purple, etc.) → Go to Colorful Bark Trees
 │   └── Nothing special about the bark, but I can see it clearly → Go to Basic Bark Types
 ```
+
+## What Else Can You See?
+* If the leaves or needles are distinctive: [Leaf/Needle Path](leaf-needle-path.md)
+* If the leaves or needles have a smell when crushed: [Smell Path](smell-path.md)
+* If you can see cones, berries, fruits, or seeds: [Cone/Fruit/Seed Path](cone-fruit-seed-path.md)
+* If the tree has flowers: [Flower Path](flower-path.md)
+* If the tree has a distinctive overall shape: [Shape/Size Path](shape-size-path.md)
+* If you need more detailed bark analysis: [Bark Detective Path](bark-detective-path.md)
