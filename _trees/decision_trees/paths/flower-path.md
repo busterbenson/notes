@@ -2,6 +2,14 @@
 
 Look at the flowers of your tree.
 
+**Seasonal Guide:** 
+- 🌸 [Spring Blooms] - Flowers visible in spring (February-May)
+- ☀️ [Summer Blooms] - Flowers visible in summer (June-September)
+- 🍂 [Fall Blooms] - Flowers visible in fall (rare in trees)
+- ❄️ [Winter Blooms] - Flowers visible in winter (very rare in trees)
+
+*Most trees flower in spring to early summer. If you don't see flowers, it might be the wrong season - remember when you see trees flowering so you can identify them next year!*
+
 **Special Feature Pages:**
 - [Flowering Trees Group](groups/flowering-trees-group.md) - Explore spectacular flowering trees of California
 
@@ -138,43 +146,43 @@ Look at the flowers of your tree.
 │   │           └── May be hard to see as they're high in the canopy
 │   │
 │   └── When do the flowers APPEAR?
-│       ├── BEFORE LEAVES (on bare branches) → EARLY BLOOM GROUP
-│       │   ├── REDBUD GENUS (Cercis)
+│       ├── BEFORE LEAVES (on bare branches) → EARLY BLOOM GROUP 🌸 [Early Spring]
+│       │   ├── REDBUD GENUS (Cercis) 🌸 [Mar-Apr]
 │       │   │   ├── Western Redbud: Magenta flowers directly on bare branches
 │       │   │   └── Very distinctive in early spring
 │       │   │
-│       │   ├── CHERRY/PLUM GENUS (Prunus)
+│       │   ├── CHERRY/PLUM GENUS (Prunus) 🌸 [Feb-Mar]
 │       │   │   ├── Flowering Cherry/Plum: Showy blossoms before leaves
 │       │   │   └── Creates dramatic flowering display
 │       │   │
-│       │   └── MAGNOLIA GENUS (Magnolia)
+│       │   └── MAGNOLIA GENUS (Magnolia) 🌸 [Feb-Apr]
 │       │       ├── Star Magnolia: White flowers on bare branches
 │       │       ├── Saucer Magnolia: Pink-purple flowers on bare branches
 │       │       └── Both bloom before leaf emergence
 │       │
-│       ├── WITH NEW LEAVES → SIMULTANEOUS BLOOM GROUP
-│       │   ├── DOGWOOD GENUS (Cornus)
+│       ├── WITH NEW LEAVES → SIMULTANEOUS BLOOM GROUP 🌸 [Mid Spring]
+│       │   ├── DOGWOOD GENUS (Cornus) 🌸 [Apr-May]
 │       │   │   ├── Pacific Dogwood: White bracts as leaves develop
 │       │   │   └── Blooms with spring leaf emergence
 │       │   │
-│       │   ├── APPLE/CRABAPPLE GENUS (Malus)
+│       │   ├── APPLE/CRABAPPLE GENUS (Malus) 🌸 [Apr-May]
 │       │   │   ├── Various species: Pink to white flowers with new leaves
 │       │   │   └── Classic spring flowering trees
 │       │   │
-│       │   └── SERVICEBERRY GENUS (Amelanchier)
+│       │   └── SERVICEBERRY GENUS (Amelanchier) 🌸 [Mar-Apr]
 │       │       ├── Western Serviceberry: White flowers with new leaves
 │       │       └── Early spring bloomer
 │       │
-│       └── AFTER LEAVES FULLY DEVELOPED → LATE BLOOM GROUP
-│           ├── CALIFORNIA BUCKEYE (Aesculus californica)
+│       └── AFTER LEAVES FULLY DEVELOPED → LATE BLOOM GROUP ☀️ [Late Spring/Summer]
+│           ├── CALIFORNIA BUCKEYE (Aesculus californica) 🌸 [May-Jun]
 │           │   ├── White flower spikes after leaves fully expanded
 │           │   └── Late spring to early summer bloomer
 │           │
-│           ├── MIMOSA/SILK TREE (Albizia julibrissin)
+│           ├── MIMOSA/SILK TREE (Albizia julibrissin) ☀️ [Jun-Aug]
 │           │   ├── Pink fluffy flowers in summer after full leaf development
 │           │   └── Provides summer interest when few trees are flowering
 │           │
-│           └── CRAPE MYRTLE (Lagerstroemia indica)
+│           └── CRAPE MYRTLE (Lagerstroemia indica) ☀️ [Jul-Sep]
 │               ├── Bright flower clusters in summer
 │               ├── Long bloom period (months)
 │               └── One of the latest-blooming ornamental trees
