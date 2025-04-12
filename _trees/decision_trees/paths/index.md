@@ -1,4 +1,4 @@
-# "What Catches Your Eye?" Tree Identification Guide (Genus & Species)
+# "What Catches Your Eye?" Tree Identification Guide
 
 ## Start Here: What's Most Distinctive About The Tree?
 
@@ -24,8 +24,20 @@ What catches my eye about this tree?
 
 ## About This Guide
 
-This field guide uses a "What catches your eye?" approach to tree identification, rather than starting with scientific classification. Follow the path based on what feature you notice first about the tree in front of you.
+This kid-friendly field guide uses a "What catches your eye?" approach to tree identification, helping children ages 8-10 identify trees without specialized botanical knowledge. Follow the path based on what feature you notice first about the tree in front of you.
 
 Each path will guide you through a series of choices based on observable features, ultimately leading to identification of genus and species.
 
-*Note: This guide focuses on trees commonly found in California, both native and introduced species.*
+## Special Features
+
+This guide includes:
+- **"I'm Not Sure" Options**: Help sections for when you're uncertain at decision points
+- **Difficulty Ratings**: Star system (★, ★★, ★★★) to show which identifications are easier or harder
+- **Seasonal Indicators**: Information about when certain features are visible
+- **Cross-Navigation**: "What Else Can You See?" sections to try different paths if you get stuck
+
+## Complete Documentation
+
+For detailed information about this project, including design decisions, tree coverage statistics, and future enhancement plans, see [PROJECT_DECISIONS.md](PROJECT_DECISIONS.md).
+
+*Note: This guide covers 165 tree species or genera commonly found in California, including both native and introduced species.*

@@ -1,6 +1,6 @@
 # "What Catches Your Eye?" Tree Identification Guide
 
-This guide offers an intuitive approach to identifying California trees by focusing on observable features rather than traditional taxonomic classification. It's designed to be accessible to beginners, children, and nature enthusiasts.
+This guide offers an intuitive approach to identifying California trees by focusing on observable features rather than traditional taxonomic classification. It's designed to be accessible to beginners, children (ages 8-10), and nature enthusiasts.
 
 ## How It Works
 
@@ -35,6 +35,11 @@ The original combined file is preserved as [`genus-species-path.md`](genus-speci
 
 ## Features
 
+- **Kid-friendly language**: Uses simple, accessible language for ages 8-10
+- **"I'm Not Sure" options**: Help sections for uncertain users at key decision points
+- **Difficulty ratings**: Star system (★, ★★, ★★★) indicates identification difficulty
+- **Cross-navigation**: "What Else Can You See?" sections link to alternative paths
+- **Seasonal indicators**: Icons and info about when features are visible
 - **Visual emphasis**: Uses markdown formatting to create visual decision trees
 - **Multiple entry points**: Identify trees based on whatever feature is most obvious
 - **Progressive detail**: Move from general characteristics to specific species
@@ -57,23 +62,37 @@ If no feature of the tree particularly stands out:
 The guide also includes detailed leaf node files for notable tree groups:
 
 **Leaf & Needle Identification:**
-- [Redwood & Sequoia Group](paths/trees/redwood-sequoia-group.md) - A comprehensive comparison of three majestic California trees
-- [Oak Group](paths/trees/oak-group.md) - Identification guide for California's diverse oak species
-- [Pine Group](paths/trees/pine-group.md) - How to distinguish pine species by their needle bundles
-- [Maple Group](paths/trees/maple-group.md) - Guide to maples with their distinctive lobed leaves
-- [Eucalyptus Group](paths/trees/eucalyptus-group.md) - Identification of introduced eucalyptus species
+- [Redwood & Sequoia Group](paths/groups/redwood-sequoia-group.md) - A comprehensive comparison of three majestic California trees
+- [Oak Group](paths/groups/oak-group.md) - Identification guide for California's diverse oak species
+- [Pine Group](paths/groups/pine-group.md) - How to distinguish pine species by their needle bundles
+- [Maple Group](paths/groups/maple-group.md) - Guide to maples with their distinctive lobed leaves
+- [Eucalyptus Group](paths/groups/eucalyptus-group.md) - Identification of introduced eucalyptus species
 
 **Bark Identification:**
-- [White & Peeling Bark Group](paths/trees/white-peeling-bark-group.md) - Trees with striking white or peeling bark
-- [Red & Orange Bark Group](paths/trees/red-orange-bark-group.md) - Trees with warm-colored, distinctive bark
+- [White & Peeling Bark Group](paths/groups/white-peeling-bark-group.md) - Trees with striking white or peeling bark
+- [Red & Orange Bark Group](paths/groups/red-orange-bark-group.md) - Trees with warm-colored, distinctive bark
 
 **Fruit, Cone & Seed Identification:**
-- [Oak & Acorn Group](paths/trees/oak-acorn-group.md) - Identifying oaks by their distinctive acorns
-- [Winged Seed Group](paths/trees/winged-seed-group.md) - Trees with helicopter-like winged seeds
+- [Oak & Acorn Group](paths/groups/oak-acorn-group.md) - Identifying oaks by their distinctive acorns
+- [Winged Seed Group](paths/groups/winged-seed-group.md) - Trees with helicopter-like winged seeds
 
 **Flower Identification:**
-- [Flowering Trees Group](paths/trees/flowering-trees-group.md) - Guide to California's most spectacular flowering trees
+- [Flowering Trees Group](paths/groups/flowering-trees-group.md) - Guide to California's most spectacular flowering trees
+
+## Project Documentation
+
+For detailed information about project decisions, design choices, implementation details, and future enhancement plans, see [`paths/PROJECT_DECISIONS.md`](paths/PROJECT_DECISIONS.md).
+
+This documentation includes:
+- Complete tree coverage statistics
+- Design decisions and rationale
+- Kid-friendly feature implementations
+- Recent enhancements and updates
+- Future enhancement ideas
+- Maintenance guidelines
 
 ## Notes
 
 This guide uses a "What catches your eye?" approach rather than traditional taxonomic keys, making it more accessible for beginners. The hierarchical structure helps users narrow down possibilities based on observable features, regardless of botanical knowledge.
+
+The project currently covers 165 tree species or genera found in California, including both native and introduced species, organized to be accessible to children and beginners.
