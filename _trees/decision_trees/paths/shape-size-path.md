@@ -1,225 +1,384 @@
 # Shape or Size Path
 
-Look at the overall shape or size of your tree.
+Look at the overall shape or size of your tree. This path focuses on features like overall silhouette, crown shape, and tree height.
+
+**Note:** For trunk-specific features (number of trunks, trunk shape, trunk texture, branching height), see the [Trunk Shape Path](trunk-shape-path.md).
 
 ```
 ├── The OVERALL SHAPE or SIZE stands out most!
 │   ├── What SIZE or SHAPE is most distinctive?
-│   │   ├── It's EXTREMELY TALL or MASSIVE → Go to Giant Tree Group
-│   │   │   ├── VERY TALL WITH STRAIGHT TRUNK → TALL CONIFER GROUP
-│   │   │   │   ├── REDWOOD & SEQUOIA GROUP
-│   │   │   │   │   ├── Coast Redwood: Extremely tall (world's tallest trees), reddish bark
-│   │   │   │   │   ├── Giant Sequoia: Extremely massive (world's largest trees), fibrous bark
-│   │   │   │   │   └── Both have scale-like foliage and relatively small cones
+│   │   ├── It's EXTREMELY TALL → TALLEST TREE GROUP
+│   │   │   ├── TOWERING CONIFER CROWN SHAPES
+│   │   │   │   ├── REDWOOD & SEQUOIA GENUS (Sequoia, Sequoiadendron, Metasequoia)
+│   │   │   │   │   ├── Coast Redwood (Sequoia sempervirens): Extremely tall with narrow conical crown
+│   │   │   │   │   ├── Giant Sequoia (Sequoiadendron giganteum): Very tall with cylindrical crown
+│   │   │   │   │   ├── Dawn Redwood (Metasequoia glyptostroboides): Tall with feathery conical crown
+│   │   │   │   │   ├── All have distinctive narrow crowns rising far above surrounding forest canopy
+│   │   │   │   │   ├── All show columnar to conical silhouettes visible from great distances
+│   │   │   │   │   └── All develop cloud-like foliage patterns in extreme old age (key trait)
 │   │   │   │   │
-│   │   │   │   ├── DOUGLAS-FIR (Pseudotsuga)
-│   │   │   │   │   ├── Douglas-fir: Very tall, straight trunk
-│   │   │   │   │   ├── Distinctive cones with "mouse tail" bracts
-│   │   │   │   │   └── Important timber tree, graceful drooping branches
+│   │   │   │   ├── OTHER TALL CONIFER CROWN FORMS
+│   │   │   │   │   ├── Douglas-fir (Pseudotsuga menziesii): Conical crown with drooping leader
+│   │   │   │   │   ├── Sugar Pine (Pinus lambertiana): Open irregular crown with distinctive long cones
+│   │   │   │   │   ├── Ponderosa Pine (Pinus ponderosa): Rounded umbrella-like crown in maturity
+│   │   │   │   │   ├── Sitka Spruce (Picea sitchensis): Conical crown with horizontally tiered branches
+│   │   │   │   │   ├── Noble Fir (Abies procera): Perfect symmetrical conical crown
+│   │   │   │   │   ├── All create distinctive skyline patterns in forest canopy
+│   │   │   │   │   ├── All show crown shape changes with maturity and environmental conditions
+│   │   │   │   │   └── All develop distinctive silhouettes recognizable from distance (key trait)
 │   │   │   │   │
-│   │   │   │   └── TALL PINE SPECIES
-│   │   │   │       ├── Sugar Pine: Tallest pine species, very long cones
-│   │   │   │       ├── Ponderosa Pine: Tall with orange-plated bark
-│   │   │   │       └── Both have needles in bundles (key pine trait)
+│   │   │   │   └── CROWNS OF TALL CONIFERS - AGE CHANGES
+│   │   │   │       ├── YOUNG: Perfect conical shapes with consistent branch spacing
+│   │   │   │       ├── MATURE: Crown shapes become more distinctive to genus
+│   │   │   │       ├── OLD GROWTH: Crowns often develop irregular, flat-topped, or broken silhouettes
+│   │   │   │       └── ANCIENT: May show lightning damage, dead tops, or multiple leaders
 │   │   │   │
-│   │   │   ├── MASSIVE TRUNK DIAMETER → GIANT TRUNK GROUP
-│   │   │   │   ├── SEQUOIA GROUP
-│   │   │   │   │   ├── Giant Sequoia: World's most massive tree
-│   │   │   │   │   ├── Coast Redwood: Huge trunk diameter, tall
-│   │   │   │   │   └── Both have fibrous reddish bark
+│   │   │   ├── TALL BROADLEAF CROWN FORMS
+│   │   │   │   ├── EUCALYPTUS GENUS (Eucalyptus) - Distinctive crown shapes
+│   │   │   │   │   ├── Blue Gum Eucalyptus (E. globulus): Tall with irregular, open crown
+│   │   │   │   │   ├── Red Gum Eucalyptus (E. camaldulensis): Spreading, somewhat umbrella-like crown
+│   │   │   │   │   ├── Silver Dollar Gum (E. polyanthemos): More compact rounded crown
+│   │   │   │   │   ├── All eucalyptus develop distinctive open, irregularly shaped crowns
+│   │   │   │   │   ├── All have pendulous leaves that create dappled light patterns
+│   │   │   │   │   └── All show characteristic blue-gray foliage visible from distance (key trait)
 │   │   │   │   │
-│   │   │   │   ├── LARGE OAK SPECIES
-│   │   │   │   │   ├── Valley Oak: California's largest deciduous tree
-│   │   │   │   │   ├── Coast Live Oak: Can develop massive trunk
-│   │   │   │   │   └── Both produce acorns (key oak trait)
-│   │   │   │   │
-│   │   │   │   └── OLD GROWTH CONIFERS
-│   │   │   │       ├── Douglas-fir: Massive trunk in old growth
-│   │   │   │       ├── Sitka Spruce: Can develop huge trunk
-│   │   │   │       └── Both were historically harvested for timber
+│   │   │   │   └── LARGE DECIDUOUS CROWN PATTERNS
+│   │   │   │       ├── Valley Oak (Quercus lobata): Massive, broad-domed crown
+│   │   │   │       ├── Tulip Tree (Liriodendron tulipifera): Tall with distinctly pyramidal crown
+│   │   │   │       ├── Sycamore species (Platanus): Broad, irregular spreading crowns
+│   │   │   │       ├── All tall deciduous trees develop more rounded crown forms than conifers
+│   │   │   │       ├── All create distinctive seasonal silhouette changes
+│   │   │   │       └── All show branch architecture more visible in winter (key trait)
 │   │   │   │
 │   │   │   └── NOTABLY LARGE CROWN SPREAD → WIDE CROWN GROUP
-│   │   │       ├── MATURE OAK SPECIES
-│   │   │       │   ├── Valley Oak: Enormous crown spread, wider than tall
-│   │   │       │   ├── Coast Live Oak: Wide, dense evergreen crown
-│   │   │       │   └── Blue Oak: Wide-spreading crown in proportion to height
+│   │   │       ├── OAK GENUS (Quercus) - Umbrella-like crowns
+│   │   │       │   ├── Valley Oak (Q. lobata): Enormous crown spread often wider than tree is tall
+│   │   │       │   ├── Coast Live Oak (Q. agrifolia): Wide, dense evergreen crown with horizontal reach
+│   │   │       │   ├── Blue Oak (Q. douglasii): Wide-spreading crown with distinctive blue-gray foliage
+│   │   │       │   ├── California Black Oak (Q. kelloggii): Broad, irregular crown in open settings
+│   │   │       │   ├── Oregon White Oak (Q. garryana): Broad crown with gnarly branching pattern
+│   │   │       │   ├── All mature oak species develop distinctive wide-spreading crowns in open spaces
+│   │   │       │   ├── All have branches that can extend horizontally for impressive distances
+│   │   │       │   └── All may have crowns twice as wide as the tree is tall when open-grown (key oak trait)
 │   │   │       │
-│   │   │       ├── LARGE MAPLE SPECIES
-│   │   │       │   ├── Bigleaf Maple: Very wide-spreading crown
-│   │   │       │   ├── Other mature maples: Wide, rounded crowns
-│   │   │       │   └── All have opposite branching and distinctive maple leaves
+│   │   │       ├── MAPLE GENUS (Acer) - Broad rounded crowns
+│   │   │       │   ├── Bigleaf Maple (A. macrophyllum): Very wide-spreading crown with large leaves
+│   │   │       │   ├── Silver Maple (A. saccharinum): Broad vase-shaped crown with silvery undersides
+│   │   │       │   ├── Norway Maple (A. platanoides): Dense, symmetrical rounded crown
+│   │   │       │   ├── Red Maple (A. rubrum): Wide oval to rounded crown
+│   │   │       │   ├── Box Elder (A. negundo): Irregular broad crown when mature
+│   │   │       │   ├── All mature maple species develop broad, often rounded crown shapes
+│   │   │       │   ├── All cast dense shade beneath their expansive canopies
+│   │   │       │   └── All have distinctive opposite branching patterns visible in crown structure (key maple trait)
 │   │   │       │
-│   │   │       └── CALIFORNIA SYCAMORE (Platanus)
-│   │   │           ├── California Sycamore: Massive, wide-spreading crown
-│   │   │           ├── Distinctive multi-colored, peeling bark
-│   │   │           └── Large maple-like leaves
+│   │   │       ├── SYCAMORE GENUS (Platanus) - Massive irregular crowns
+│   │   │       │   ├── California Sycamore (P. racemosa): Massive, wide-spreading irregular crown
+│   │   │       │   ├── American Sycamore (P. occidentalis): Broad, open irregular canopy
+│   │   │       │   ├── London Plane Tree (P. × acerifolia): Wide-spreading crown in open settings
+│   │   │       │   ├── All sycamore species develop enormous crowns when given space
+│   │   │       │   ├── All have distinctive mottled bark visible through the open crown
+│   │   │       │   └── All show irregular, somewhat sparse branching patterns (key sycamore trait)
+│   │   │       │
+│   │   │       └── ELM GENUS (Ulmus) - Vase-shaped crowns
+│   │   │           ├── American Elm (U. americana): Classic vase-shaped form with arching branches
+│   │   │           ├── English Elm (U. procera): Broad crown with upward-arching branches
+│   │   │           ├── Chinese Elm (U. parvifolia): Wide-spreading with fine textured foliage
+│   │   │           ├── All elm species develop distinctive vase-shaped crowns at maturity
+│   │   │           ├── All have multiple main branches ascending before arching outward 
+│   │   │           └── All create distinctive silhouettes with greatest width in upper crown (key elm trait)
 │   │   │
-│   │   ├── What's the OVERALL SHAPE of the tree?
-│   │   │   ├── PYRAMIDAL or CHRISTMAS TREE SHAPE → CONICAL TREE GROUP
-│   │   │   │   ├── How DENSE are the branches?
-│   │   │   │   │   ├── VERY DENSE, perfect cone shape → DENSE CONICAL GROUP
-│   │   │   │   │   │   ├── SPRUCE GENUS (Picea)
-│   │   │   │   │   │   │   ├── Sitka Spruce: Perfect conical shape, coastal habitat
-│   │   │   │   │   │   │   ├── Engelmann Spruce: More open at maturity, high elevations
-│   │   │   │   │   │   │   ├── All have stiff, sharp needles that grow from all sides of twig
-│   │   │   │   │   │   │   └── Cones hang down (key spruce trait)
-│   │   │   │   │   │   │
-│   │   │   │   │   │   └── FIR GENUS (Abies)
-│   │   │   │   │   │       ├── White Fir: Perfect conical shape, silver-blue color
-│   │   │   │   │   │       ├── Red Fir: Dense symmetrical cone, reddish bark
-│   │   │   │   │   │       ├── All have flat needles that don't roll between fingers
-│   │   │   │   │   │       └── Cones stand upright on branches (key fir trait)
-│   │   │   │   │   │
-│   │   │   │   │   └── SOMEWHAT OPEN, can see through branches → OPEN CONICAL GROUP
-│   │   │   │   │       ├── PINE GENUS (Pinus) - Young trees
-│   │   │   │   │       │   ├── Ponderosa Pine: Young trees conical, open branching
-│   │   │   │   │       │   ├── Jeffrey Pine: Similar to ponderosa but with bluish cast
-│   │   │   │   │       │   ├── All have needles in bundles of 2-5 (key pine trait)
-│   │   │   │   │       │   └── Many lose pyramidal shape with age
-│   │   │   │   │       │
-│   │   │   │   │       ├── DOUGLAS-FIR GENUS (Pseudotsuga)
-│   │   │   │   │       │   ├── Douglas-fir: Conical with slightly drooping branchlets
-│   │   │   │   │       │   ├── Distinctive cones with "mouse tail" bracts
-│   │   │   │   │       │   └── Not a true fir despite the name
-│   │   │   │   │       │
-│   │   │   │   │       └── CEDAR GENUS (various, including Thuja, Calocedrus)
-│   │   │   │   │           ├── Incense-cedar: Conical when young, with flattened sprays
-│   │   │   │   │           ├── Western Redcedar: Conical with drooping branch tips
-│   │   │   │   │           └── All have scale-like or flattened foliage, not true needles
+│   │   ├── What's the OVERALL CROWN SHAPE of the tree?
+│   │   │   ├── PYRAMIDAL or CHRISTMAS TREE SHAPE → CONICAL CROWN GROUP
+│   │   │   │   ├── SPRUCE GENUS (Picea) - Perfect pyramids
+│   │   │   │   │   ├── Blue Spruce (P. pungens): Perfect symmetrical pyramid, blue-gray color
+│   │   │   │   │   ├── Sitka Spruce (P. sitchensis): Dense conical shape, coastal habitat
+│   │   │   │   │   ├── Engelmann Spruce (P. engelmannii): More open pyramid at maturity, high elevations
+│   │   │   │   │   ├── Norway Spruce (P. abies): Classic Christmas tree shape with slightly drooping branches
+│   │   │   │   │   ├── Brewer Spruce (P. breweriana): Distinctive weeping branches in conical outline
+│   │   │   │   │   ├── All spruce species maintain pyramidal crown shape throughout life
+│   │   │   │   │   ├── All have branches arranged in tiers/whorls around the central leader
+│   │   │   │   │   └── All maintain lower branches for perfectly conical silhouette (key spruce trait)
 │   │   │   │   │
-│   │   │   │   ├── How TALL is the tree?
-│   │   │   │   │   ├── VERY TALL (over 100 feet) → TOWERING CONIFER GROUP
-│   │   │   │   │   │   ├── Coast Redwood: Extremely tall with narrow conical form
-│   │   │   │   │   │   ├── Douglas-fir: Tall with somewhat irregular conical shape
-│   │   │   │   │   │   ├── Noble Fir: Symmetrical, tall, with bluish foliage
-│   │   │   │   │   │   └── Sugar Pine: Tall with somewhat regular conical crown
-│   │   │   │   │   │
-│   │   │   │   │   ├── MEDIUM HEIGHT (30-100 feet) → MEDIUM CONIFER GROUP
-│   │   │   │   │   │   ├── Most mature firs and spruces
-│   │   │   │   │   │   ├── White Fir: Regular conical form, often in mountains
-│   │   │   │   │   │   └── Most pines maintain conical shape in medium height stage
-│   │   │   │   │   │
-│   │   │   │   │   └── SMALL (under 30 feet) → DWARF/YOUNG CONIFER GROUP
-│   │   │   │   │       ├── Young conifers of many species
-│   │   │   │   │       ├── Ornamental dwarf conifers (often cultivated)
-│   │   │   │   │       ├── Bristlecone Pine: Slow-growing, can be small for decades
-│   │   │   │   │       └── Some mountain subspecies in harsh environments
+│   │   │   │   ├── FIR GENUS (Abies) - Symmetrical cones
+│   │   │   │   │   ├── White Fir (A. concolor): Perfect symmetrical pyramid, silver-blue color
+│   │   │   │   │   ├── Red Fir (A. magnifica): Dense symmetrical cone, dark green to blue-green
+│   │   │   │   │   ├── Grand Fir (A. grandis): Regular layered pyramid shape
+│   │   │   │   │   ├── Noble Fir (A. procera): Striking symmetrical form with bluish foliage
+│   │   │   │   │   ├── California Red Fir (A. magnifica var. shastensis): Regular conical shape
+│   │   │   │   │   ├── All true fir species have very symmetrical, dense pyramidal crowns
+│   │   │   │   │   ├── All have branches arranged in regular horizontal tiers
+│   │   │   │   │   └── All maintain perfect conical silhouette more consistently than other conifers (key fir trait)
 │   │   │   │   │
-│   │   │   │   └── How BROAD is the base compared to height?
-│   │   │   │       ├── VERY BROAD base → WIDE-BASE CONICAL GROUP
-│   │   │   │       │   ├── CYPRESS GENUS (Cupressus)
-│   │   │   │       │   │   ├── Monterey Cypress: Very wide at base when young
-│   │   │   │       │   │   ├── Italian Cypress: Narrow upright form (exception)
-│   │   │   │       │   │   └── Most have scale-like leaves and rounded cones
-│   │   │   │       │   │
-│   │   │   │       │   └── SOME FIR SPECIES
-│   │   │   │       │       ├── Noble Fir: Very wide at base, regular tiers of branches
-│   │   │   │       │       ├── Grand Fir: Wide at base with dense branch arrangement
-│   │   │   │       │       └── All have flat needles, upright cones
+│   │   │   │   ├── PINE GENUS (Pinus) - Open pyramids
+│   │   │   │   │   ├── Young Ponderosa Pine (P. ponderosa): Conical when young, opens with age
+│   │   │   │   │   ├── Young Jeffrey Pine (P. jeffreyi): Similar to ponderosa but with bluish cast
+│   │   │   │   │   ├── Lodgepole Pine (P. contorta): Narrowly conical in dense stands
+│   │   │   │   │   ├── Monterey Pine (P. radiata): Broadly conical when young
+│   │   │   │   │   ├── Bishop Pine (P. muricata): Irregular conical form in coastal settings
+│   │   │   │   │   ├── All pine species typically show conical form when young
+│   │   │   │   │   ├── All have more open, irregular branch spacing than firs/spruces
+│   │   │   │   │   └── All eventually develop broader crowns with age (key pine trait)
+│   │   │   │   │
+│   │   │   │   ├── DOUGLAS-FIR GENUS (Pseudotsuga) - Soft pyramids
+│   │   │   │   │   ├── Coast Douglas-fir (P. menziesii): Conical with slightly drooping branchlets
+│   │   │   │   │   ├── Rocky Mountain Douglas-fir (P. menziesii var. glauca): Narrower conical form
+│   │   │   │   │   ├── Bigcone Douglas-fir (P. macrocarpa): Broader conical form in southern California
+│   │   │   │   │   ├── All Douglas-fir species have softer silhouette than true firs
+│   │   │   │   │   ├── All show slightly drooping branch tips giving feathery appearance
+│   │   │   │   │   └── All maintain conical form longer than pines but less rigidly than true firs (key Douglas-fir trait)
+│   │   │   │   │
+│   │   │   │   ├── CEDAR & CYPRESS GROUP - Varied pyramids
+│   │   │   │   │   ├── SCALE-LEAF CEDAR-LIKE TREES
+│   │   │   │   │   │   ├── Incense-cedar (Calocedrus decurrens): Narrow pyramidal form with dense foliage
+│   │   │   │   │   │   ├── Western Redcedar (Thuja plicata): Pyramidal with drooping branch tips
+│   │   │   │   │   │   ├── Port Orford-cedar (Chamaecyparis lawsoniana): Dense pyramidal crown
+│   │   │   │   │   │   ├── Alaska-cedar (Chamaecyparis nootkatensis): Narrow conical with weeping tips
+│   │   │   │   │   │   ├── All cedar-like species form distinctive pyramidal crowns
+│   │   │   │   │   │   ├── All have scale-like or flattened spray-like foliage arrangements
+│   │   │   │   │   │   └── All maintain conical form from youth through maturity (key cedar trait)
+│   │   │   │   │   │
+│   │   │   │   │   └── CYPRESS GENUS (Cupressus)
+│   │   │   │   │       ├── Monterey Cypress (C. macrocarpa): Broadly conical when young, flattens with age
+│   │   │   │   │       ├── Arizona Cypress (C. arizonica): Pyramidal with dense foliage
+│   │   │   │   │       ├── Many cultivated cypress varieties have perfect conical shapes
+│   │   │   │   │       ├── All cypress species have dense, often fine-textured foliage 
+│   │   │   │   │       └── All show distinctive pyramid silhouette when young, variable with age (key cypress trait)
+│   │   │   │   │
+│   │   │   │   ├── PYRAMIDAL CROWN PROPORTIONS
+│   │   │   │   │   ├── NARROW PYRAMIDS
+│   │   │   │   │   │   ├── Italian Cypress (Cupressus sempervirens): Extremely narrow conical form
+│   │   │   │   │   │   ├── Columnar Spruce cultivars: Narrow pencil-like pyramids
+│   │   │   │   │   │   ├── Swedish Columnar Aspen: Narrow broadleaf pyramid 
+│   │   │   │   │   │   ├── All maintain width-to-height ratio less than 1:5
+│   │   │   │   │   │   └── All developed through selection for upright growth
+│   │   │   │   │   │
+│   │   │   │   │   ├── MEDIUM PYRAMIDS
+│   │   │   │   │   │   ├── Most fir species: Width-to-height ratio about 1:3
+│   │   │   │   │   │   ├── Most spruce species: Similar proportions 
+│   │   │   │   │   │   ├── Douglas-fir: Classic medium pyramid proportion
+│   │   │   │   │   │   └── Most common proportion in conical trees
+│   │   │   │   │   │
+│   │   │   │   │   └── BROAD PYRAMIDS
+│   │   │   │   │       ├── Deodar Cedar (Cedrus deodara): Wide sweeping pyramidal form
+│   │   │   │   │       ├── Norway Spruce: Develops broad pyramidal form with age
+│   │   │   │   │       ├── Some mature white pines: Broad irregular pyramids
+│   │   │   │   │       └── Width-to-height ratio approaches 1:2 or even 1:1 with age
+│   │   │   │   │
+│   │   │   │   └── AGE-RELATED PYRAMID CHANGES
+│   │   │   │       ├── PERSISTENT PYRAMIDS
+│   │   │   │       │   ├── True firs: Maintain perfect pyramid throughout life
+│   │   │   │       │   ├── Most spruces: Retain conical form even in old age
+│   │   │   │       │   ├── Incense-cedar: Remains conical for centuries
+│   │   │   │       │   └── Some cultivated forms selected for persistent shape
 │   │   │   │       │
-│   │   │   │       └── NARROW throughout → NARROW CONICAL GROUP
-│   │   │   │           ├── Italian Cypress: Very narrow, columnar form
-│   │   │   │           ├── Some ornamental spruce cultivars
-│   │   │   │           └── Some young firs and pines in dense stands
-│   │   │   │
-│   │   │   ├── WEEPING or DROOPING branches → WEEPING TREE GROUP
-│   │   │   │   ├── Are the DROOPING branches on whole tree or just the tip?
-│   │   │   │   │   ├── OVERALL WEEPING FORM (drooping branches throughout) → FULL WEEPING GROUP
-│   │   │   │   │   │   ├── WILLOW GENUS (Salix)
-│   │   │   │   │   │   │   ├── Weeping Willow: Classic weeping form, near water
-│   │   │   │   │   │   │   ├── Other willows: Many have somewhat drooping branches
-│   │   │   │   │   │   │   └── All have elongated, often narrow leaves
-│   │   │   │   │   │   │
-│   │   │   │   │   │   └── ORNAMENTAL WEEPING TREES (often cultivated)
-│   │   │   │   │   │       ├── Weeping Cherry: Pink flowers in spring, drooping form
-│   │   │   │   │   │       ├── Weeping Birch: White bark with drooping branches
-│   │   │   │   │   │       └── Various weeping conifers: Distinctive umbrella-like shapes
-│   │   │   │   │   │
-│   │   │   │   │   └── ONLY TIPS DROOPING → TIP-DROOPING GROUP
-│   │   │   │   │       ├── HEMLOCK GENUS (Tsuga)
-│   │   │   │   │       │   ├── Western Hemlock: Drooping leader (top shoot) and branch tips
-│   │   │   │   │       │   ├── Mountain Hemlock: Similar form at higher elevations
-│   │   │   │   │       │   └── Both have short, flat needles and small cones
-│   │   │   │   │       │
-│   │   │   │   │       ├── SOME CEDARS
-│   │   │   │   │       │   ├── Western Redcedar: Distinctive drooping branch tips
-│   │   │   │   │       │   ├── Alaska-cedar: Drooping branches and leader
-│   │   │   │   │       │   └── Both have scale-like leaves and fibrous bark
-│   │   │   │   │       │
-│   │   │   │   │       └── SOME SPRUCES
-│   │   │   │   │           ├── Brewer Spruce: Distinctive drooping branches
-│   │   │   │   │           └── Some mature Sitka Spruce: Drooping lower branches
-│   │   │   │   │
-│   │   │   │   └── What TYPE OF FOLIAGE does the weeping tree have?
-│   │   │   │       ├── NEEDLES or SCALES → WEEPING CONIFER GROUP
-│   │   │   │       │   ├── Alaska-cedar: Drooping branches, scale-like leaves
-│   │   │   │       │   ├── Western Hemlock: Drooping leader, short flat needles
-│   │   │   │       │   └── Various cultivated weeping conifers
+│   │   │   │       ├── TRANSITIONAL PYRAMIDS
+│   │   │   │       │   ├── Most pines: Conical when young, rounded or flat-topped when mature
+│   │   │   │       │   ├── Redwoods: Perfect pyramids as young trees, irregular crowns when ancient
+│   │   │   │       │   ├── Monterey Cypress: Broadly conical when young, flat or rounded with age
+│   │   │   │       │   └── Common pattern of changing crown shape with development
 │   │   │   │       │
-│   │   │   │       └── BROAD LEAVES → WEEPING BROADLEAF GROUP
-│   │   │   │           ├── Weeping Willow: Long, narrow leaves
-│   │   │   │           ├── Weeping Birch: Triangular to oval leaves
-│   │   │   │           ├── Weeping Cherry: Oval, serrated leaves
-│   │   │   │           └── In winter, check for bud arrangement and bark characteristics
+│   │   │   │       └── CULTIVATED PYRAMIDS
+│   │   │   │           ├── Ornamental dwarf conifers: Bred for perfect miniature pyramids
+│   │   │   │           ├── Christmas tree farms: Pruned for perfect conical shape
+│   │   │   │           ├── Topiary: Maintained pyramidal forms through pruning
+│   │   │   │           └── Human influence creating perfect cones not always seen in nature
 │   │   │   │
-│   │   │   ├── COLUMNAR or VERY TALL AND NARROW → COLUMNAR TREE GROUP
-│   │   │   │   ├── How straight is the trunk?
-│   │   │   │   │   ├── PERFECTLY STRAIGHT, very tall → STRAIGHT COLUMNAR GROUP
-│   │   │   │   │   │   ├── REDWOOD GENUS (Sequoia)
-│   │   │   │   │   │   │   ├── Coast Redwood: Extremely tall, straight columnar form
-│   │   │   │   │   │   │   ├── Tallest tree species in the world
-│   │   │   │   │   │   │   └── Distinctive red, fibrous bark
-│   │   │   │   │   │   │
-│   │   │   │   │   │   ├── SEQUOIA GENUS (Sequoiadendron)
-│   │   │   │   │   │   │   ├── Giant Sequoia: Massive straight trunk, columnar when young
-│   │   │   │   │   │   │   ├── Red-brown fibrous bark, small cones
-│   │   │   │   │   │   │   └── Branches start high up trunk
-│   │   │   │   │   │   │
-│   │   │   │   │   │   └── Some PINE, FIR and SPRUCE SPECIES
-│   │   │   │   │   │       ├── Ponderosa Pine: Tall, straight "yellow pine"
-│   │   │   │   │   │       ├── Sugar Pine: Very tall with straight trunk
-│   │   │   │   │   │       └── Douglas-fir: Straight, tall, valuable timber tree
-│   │   │   │   │   │
-│   │   │   │   │   └── SOMEWHAT IRREGULAR but still columnar → IRREGULAR COLUMNAR GROUP
-│   │   │   │   │       ├── Many mature PINE SPECIES
-│   │   │   │   │       │   ├── Jeffrey Pine: Tall, somewhat irregular crown
-│   │   │   │   │       │   ├── Lodgepole Pine: Slender, often leaning slightly
-│   │   │   │   │       │   └── Gray Pine: Often with slight lean or curve
-│   │   │   │   │       │
-│   │   │   │   │       └── SOME BROADLEAF TREES
-│   │   │   │   │           ├── Mature poplars and cottonwoods: Tall, somewhat irregular
-│   │   │   │   │           ├── Eucalyptus: Tall, straight to slightly irregular
-│   │   │   │   │           └── Check bark patterns and leaf arrangement to confirm
+│   │   │   ├── WEEPING or CASCADING CROWN SHAPE → WEEPING CROWN GROUP
+│   │   │   │   ├── WILLOW GENUS (Salix) - Classic weeping form
+│   │   │   │   │   ├── Weeping Willow (S. babylonica): Iconic fountain-like cascade of branches
+│   │   │   │   │   ├── Golden Weeping Willow (S. alba 'Tristis'): Yellow-green weeping form
+│   │   │   │   │   ├── Wisconsin Weeping Willow (S. × blanda): Hardy weeping habit
+│   │   │   │   │   ├── Thurlow Weeping Willow (S. × pendulina): Graceful arching branches
+│   │   │   │   │   ├── All weeping willow species create distinctive fountain silhouette
+│   │   │   │   │   ├── All have branches that sweep downward in graceful arcs
+│   │   │   │   │   └── All create distinctive motion in even slight breezes (key willow trait)
 │   │   │   │   │
-│   │   │   │   ├── How NARROW is the crown compared to height?
-│   │   │   │   │   ├── EXTREMELY NARROW, pencil-like → PENCIL COLUMNAR GROUP
+│   │   │   │   ├── ORNAMENTAL WEEPING TREES - Cultivated pendulous forms
+│   │   │   │   │   ├── WEEPING CHERRY GROUP (Prunus)
+│   │   │   │   │   │   ├── Weeping Higan Cherry (P. subhirtella 'Pendula'): Graceful arching branches
+│   │   │   │   │   │   ├── Weeping Snow Fountains Cherry (P. 'Snofozam'): Cascading white flowers
+│   │   │   │   │   │   ├── Weeping Japanese Cherry (P. serrulata 'Kiku-shidare'): Pink flowers
+│   │   │   │   │   │   ├── All weeping cherry cultivars have branches that arch downward
+│   │   │   │   │   │   ├── All create spectacular flowering displays in spring
+│   │   │   │   │   │   └── All have umbrella-like mature form with cascading branches (key trait)
+│   │   │   │   │   │
+│   │   │   │   │   ├── WEEPING BIRCH GROUP (Betula)
+│   │   │   │   │   │   ├── Young's Weeping Birch (B. pendula 'Youngii'): Dome-shaped weeping crown
+│   │   │   │   │   │   ├── European Weeping Birch (B. pendula): Graceful weeping branch tips
+│   │   │   │   │   │   ├── Cutleaf Weeping Birch (B. pendula 'Gracilis'): Finely dissected leaves
+│   │   │   │   │   │   ├── All weeping birch forms have distinctive white bark
+│   │   │   │   │   │   ├── All create graceful winter silhouettes with fine branches
+│   │   │   │   │   │   └── All show contrast between white trunks and pendulous branches (key trait)
+│   │   │   │   │   │
+│   │   │   │   │   └── OTHER ORNAMENTAL WEEPING BROADLEAF TREES
+│   │   │   │   │       ├── Weeping Mulberry (Morus alba 'Pendula'): Twisted weeping branches
+│   │   │   │   │       ├── Weeping Japanese Maple (Acer palmatum dissectum): Cascading form
+│   │   │   │   │       ├── Weeping Beech (Fagus sylvatica 'Pendula'): Dramatic weeping form
+│   │   │   │   │       ├── Weeping Redbud (Cercis canadensis 'Lavender Twist'): Twisted weeping branches
+│   │   │   │   │       ├── All are cultivated selections of naturally upright species
+│   │   │   │   │       ├── All create umbrella-like or cascading crown silhouettes
+│   │   │   │   │       └── All are popular ornamental landscape specimens (key trait)
+│   │   │   │   │
+│   │   │   │   ├── PENDULOUS-TIPPED CONIFER CROWNS - Natural weeping habits
+│   │   │   │   │   ├── HEMLOCK GENUS (Tsuga) - Gracefully drooping tips
+│   │   │   │   │   │   ├── Western Hemlock (T. heterophylla): Conical form with drooping leader and branch tips
+│   │   │   │   │   │   ├── Mountain Hemlock (T. mertensiana): Distinctive drooping branch tips in high elevations
+│   │   │   │   │   │   ├── Eastern Hemlock (T. canadensis): Similar pendulous branch tips
+│   │   │   │   │   │   ├── All hemlock species have naturally drooping leader (top shoot)
+│   │   │   │   │   │   ├── All show delicate, feathery appearance from pendulous branch tips
+│   │   │   │   │   │   └── All develop this habit naturally, not through cultivation (key hemlock trait)
+│   │   │   │   │   │
+│   │   │   │   │   ├── CEDAR-LIKE GROUP - Arching-tip forms
+│   │   │   │   │   │   ├── Western Redcedar (Thuja plicata): Conical form with distinctive drooping branch tips
+│   │   │   │   │   │   ├── Alaska-cedar (Chamaecyparis nootkatensis): Dramatic weeping branchlets
+│   │   │   │   │   │   ├── Port Orford-cedar (Chamaecyparis lawsoniana): Pendulous spray-like branch tips
+│   │   │   │   │   │   ├── All have flattened spray-like foliage that enhances drooping appearance
+│   │   │   │   │   │   ├── All maintain overall conical form despite pendulous branch tips
+│   │   │   │   │   │   └── All show distinctive graceful silhouette from distance (key cedar trait)
+│   │   │   │   │   │
+│   │   │   │   │   └── SPECIALTY WEEPING CONIFER FORMS
+│   │   │   │   │       ├── Brewer Spruce (Picea breweriana): Distinctive rope-like drooping branches
+│   │   │   │   │       ├── Weeping Norway Spruce (Picea abies 'Pendula'): Dramatic cultivated weeping form
+│   │   │   │   │       ├── Weeping White Pine (Pinus strobus 'Pendula'): Artful cascading branches
+│   │   │   │   │       ├── Umbrella Pine (Sciadopitys verticillata): Not truly weeping but umbrella-like
+│   │   │   │   │       ├── Some create dramatic ground-covering curtains of foliage
+│   │   │   │   │       ├── Most are special horticultural selections of typically upright species
+│   │   │   │   │       └── Many require staking to achieve desired weeping form
+│   │   │   │   │
+│   │   │   │   └── WEEPING CROWN SHAPES - By pattern type
+│   │   │   │       ├── FOUNTAIN WEEPERS - Upright then cascading
+│   │   │   │       │   ├── Weeping Willow: Classic fountain-like form
+│   │   │   │       │   ├── Weeping Cherry: Branches rise then cascade down
+│   │   │   │       │   ├── All have branches that initially grow upward, then arch down
+│   │   │   │       │   └── Create rounded crown outline with cascading skirt
+│   │   │   │       │
+│   │   │   │       ├── UMBRELLA WEEPERS - Horizontal then dropping
+│   │   │   │       │   ├── Young's Weeping Birch: Branches spread horizontally then drop
+│   │   │   │       │   ├── Weeping Mulberry: Similar umbrella-like form
+│   │   │   │       │   ├── Often grafted on standard (straight trunk)
+│   │   │   │       │   └── Create distinctive flat-topped, wide spreading crown
+│   │   │   │       │
+│   │   │   │       └── TIP WEEPERS - Only ends drooping
+│   │   │   │           ├── Western Hemlock: Overall conical with drooping tips
+│   │   │   │           ├── Western Redcedar: Similar habit with pendulous tips
+│   │   │   │           ├── Maintain normal crown shape with pendulous element
+│   │   │   │           └── Create softened silhouette of parent crown form
+│   │   │   │
+│   │   │   ├── COLUMNAR or VERY TALL AND NARROW → COLUMNAR CROWN GROUP
+│   │   │   │   ├── COLUMNAR CONIFER CROWN SHAPES
+│   │   │   │   │   ├── EXTREMELY NARROW COLUMNAR CROWNS
 │   │   │   │   │   │   ├── CYPRESS GENUS (Cupressus)
-│   │   │   │   │   │   │   ├── Italian Cypress: Classic narrow columnar form
-│   │   │   │   │   │   │   ├── Arizona Cypress: Sometimes narrow columnar
-│   │   │   │   │   │   │   └── Both have scale-like leaves, rounded cones
+│   │   │   │   │   │   │   ├── Italian Cypress (C. sempervirens): Classic narrow columnar crown
+│   │   │   │   │   │   │   ├── Arizona Cypress (C. arizonica): Sometimes narrow columnar form
+│   │   │   │   │   │   │   ├── Monterey Cypress (C. macrocarpa): Can develop narrow form in cultivation
+│   │   │   │   │   │   │   ├── All columnar cypress forms create distinctive vertical accents in landscape
+│   │   │   │   │   │   │   ├── All maintain consistent column shape throughout life
+│   │   │   │   │   │   │   └── All have very compressed width-to-height ratio (key trait)
 │   │   │   │   │   │   │
-│   │   │   │   │   │   └── SOME ORNAMENTAL CULTIVARS
-│   │   │   │   │   │       ├── Columnar junipers: Various cultivated forms
-│   │   │   │   │   │       └── Fastigiate yews: Narrow cultivated forms
+│   │   │   │   │   │   ├── JUNIPER GENUS (Juniperus) - Cultivated forms
+│   │   │   │   │   │   │   ├── 'Skyrocket' Juniper (J. scopulorum): Extremely narrow columnar form
+│   │   │   │   │   │   │   ├── 'Blue Arrow' Juniper (J. virginiana): Pencil-thin blue-gray crown
+│   │   │   │   │   │   │   ├── 'Spartan' Juniper (J. chinensis): Narrowly columnar garden form
+│   │   │   │   │   │   │   ├── All columnar junipers create architectural vertical elements
+│   │   │   │   │   │   │   ├── All maintain consistently narrow form without pruning
+│   │   │   │   │   │   │   └── All produce blue-gray to green scale-like foliage (key trait)
+│   │   │   │   │   │   │
+│   │   │   │   │   │   └── OTHER COLUMNAR CONIFERS
+│   │   │   │   │   │       ├── Columnar Arborvitae (Thuja): Narrow pencil-like forms
+│   │   │   │   │   │       ├── Irish Yew (Taxus baccata 'Fastigiata'): Distinctive narrow column
+│   │   │   │   │   │       ├── Columnar Spruce cultivars: Specialized upright growth forms
+│   │   │   │   │   │       ├── All maintain consistent narrow crown proportions
+│   │   │   │   │   │       ├── All show dense, compressed growth habit compared to natural forms
+│   │   │   │   │   │       └── Most are cultivated forms selected for specific crown proportions
 │   │   │   │   │   │
-│   │   │   │   │   └── MODERATE crown width → STANDARD COLUMNAR GROUP
-│   │   │   │   │       ├── Ponderosa Pine: Crown wider than pencil forms
-│   │   │   │   │       ├── Eucalyptus: Often tall with moderate crown
-│   │   │   │   │       ├── Lombardy Poplar: Columnar but not pencil-thin
-│   │   │   │   │       └── Most mature redwoods and sequoias
+│   │   │   │   │   ├── MODERATE COLUMNAR CROWNS
+│   │   │   │   │   │   ├── REDWOOD & SEQUOIA GROUP
+│   │   │   │   │   │   │   ├── Coast Redwood (Sequoia sempervirens): Tall cylindrical crown form
+│   │   │   │   │   │   │   ├── Giant Sequoia (Sequoiadendron giganteum): Massive columnar crown
+│   │   │   │   │   │   │   ├── Dawn Redwood (Metasequoia glyptostroboides): Column-like crown
+│   │   │   │   │   │   │   ├── All have distinctive crown profiles visible from great distances
+│   │   │   │   │   │   │   ├── All show more tapered column form than cypress or juniper
+│   │   │   │   │   │   │   └── All develop more irregular crown outlines with extreme age (key trait)
+│   │   │   │   │   │   │
+│   │   │   │   │   │   ├── PINE & FIR SPECIES
+│   │   │   │   │   │   │   ├── Young Western White Pine (P. monticola): Columnar crown in forest
+│   │   │   │   │   │   │   ├── Lodgepole Pine (P. contorta): Slender columnar form in dense stands
+│   │   │   │   │   │   │   ├── Some true fir species: Develop columnar proportions in certain habitats
+│   │   │   │   │   │   │   ├── All often form columnar crowns due to forest competition
+│   │   │   │   │   │   │   ├── All show more columnar form in youth, broadening with age
+│   │   │   │   │   │   │   └── All develop distinct vertical crown form in dense forest settings (key trait)
+│   │   │   │   │   │   │
+│   │   │   │   │   │   └── TRUE CEDAR GROUP (Cedrus)
+│   │   │   │   │   │       ├── Young Deodar Cedar (C. deodara): Initially columnar before spreading
+│   │   │   │   │   │       ├── Atlas Cedar (C. atlantica): Columnar when young, pyramidal later
+│   │   │   │   │   │       ├── Lebanon Cedar (C. libani): Similar early columnar growth habit
+│   │   │   │   │   │       ├── All true cedars start with more columnar crown form
+│   │   │   │   │   │       ├── All develop distinct tiered branch architecture with age
+│   │   │   │   │   │       └── All show transitional crown shapes from columnar to spreading (key trait)
+│   │   │   │   │   │
+│   │   │   │   │   └── AGE RELATED COLUMNAR CROWN CHANGES
+│   │   │   │   │       ├── YOUNG: Often more strictly columnar in proportion
+│   │   │   │   │       ├── MATURE: Many species develop slightly broader crown with age
+│   │   │   │   │       ├── FOREST-GROWN: Competition creates more columnar crowns than open-grown trees
+│   │   │   │   │       └── CULTIVATED: Many columnar cultivars maintain form throughout life
 │   │   │   │   │
-│   │   │   │   └── What FOLIAGE TYPE does the columnar tree have?
-│   │   │   │       ├── NEEDLES, SCALES → COLUMNAR CONIFER GROUP
-│   │   │   │       │   ├── Giant Sequoia: Massive columnar trunk
-│   │   │   │       │   ├── Coast Redwood: Extremely tall columnar form
-│   │   │   │       │   ├── Italian Cypress: Narrow columnar form
-│   │   │   │       │   └── Mature pines: Ponderosa, Sugar, Jeffrey pines
+│   │   │   │   ├── COLUMNAR BROADLEAF CROWN SHAPES
+│   │   │   │   │   ├── POPLAR GENUS (Populus) - Natural and cultivated columns
+│   │   │   │   │   │   ├── Lombardy Poplar (P. nigra 'Italica'): Classic columnar broadleaf form
+│   │   │   │   │   │   ├── Swedish Columnar Aspen (P. tremula 'Erecta'): Narrow upright crown
+│   │   │   │   │   │   ├── Tower Poplar (P. × canescens 'Tower'): Distinctive columnar crown
+│   │   │   │   │   │   ├── All columnar poplars create dramatic vertical landscape elements
+│   │   │   │   │   │   ├── All develop uniform, dense upright branching patterns
+│   │   │   │   │   │   └── All show rapid growth and maintain columnar form throughout life (key trait)
+│   │   │   │   │   │
+│   │   │   │   │   ├── CULTIVATED COLUMNAR BROADLEAF TREES
+│   │   │   │   │   │   ├── Columnar Oak cultivars: Narrow fastigiate crown forms
+│   │   │   │   │   │   ├── Columnar Hornbeam (Carpinus betulus 'Fastigiata'): Upright narrow crown
+│   │   │   │   │   │   ├── Upright European Beech (Fagus sylvatica 'Dawyck'): Columnar form
+│   │   │   │   │   │   ├── All are specialized cultivars developed for narrow crowns
+│   │   │   │   │   │   ├── All maintain vertical branch orientation unlike natural forms
+│   │   │   │   │   │   └── All are popular for formal gardens and narrow spaces (key trait)
+│   │   │   │   │   │
+│   │   │   │   │   └── EUCALYPTUS GENUS (Eucalyptus) - Tall columnar crowns
+│   │   │   │   │       ├── Blue Gum Eucalyptus (E. globulus): Tall with upright crown form
+│   │   │   │   │       ├── Sugar Gum (E. cladocalyx): Often develops columnar crown form
+│   │   │   │   │       ├── Lemon-scented Gum (Corymbia citriodora): Tall columnar crown
+│   │   │   │   │       ├── All eucalyptus species tend to grow with strong vertical emphasis
+│   │   │   │   │       ├── All develop distinctive upright crown silhouettes visible from distance
+│   │   │   │   │       └── All show characteristic blue-gray to silver foliage (key trait)
+│   │   │   │   │
+│   │   │   │   └── COLUMNAR CROWN CHARACTERISTICS
+│   │   │   │       ├── CROWN DENSITY VARIATIONS
+│   │   │   │       │   ├── DENSE COLUMNAR CROWNS
+│   │   │   │       │   │   ├── Italian Cypress: Extremely dense, solid-looking column
+│   │   │   │       │   │   ├── Columnar Juniper cultivars: Dense, compact foliage
+│   │   │   │       │   │   └── Most cultivated columnar forms have dense appearance
+│   │   │   │       │   │
+│   │   │   │       │   ├── MEDIUM DENSITY COLUMNS
+│   │   │   │       │   │   ├── Lombardy Poplar: Medium-dense column revealing some branch structure
+│   │   │   │       │   │   ├── Columnar Oak forms: Allow some light penetration
+│   │   │   │       │   │   └── Most deciduous columnar trees in this category
+│   │   │   │       │   │
+│   │   │   │       │   └── OPEN COLUMNAR CROWNS
+│   │   │   │       │       ├── Eucalyptus species: Typically maintain more open columnar form
+│   │   │   │       │       ├── Some columnar birch cultivars: More transparent crown structure
+│   │   │   │       │       └── Allow significant light to filter through crown
 │   │   │   │       │
-│   │   │   │       └── BROAD LEAVES → COLUMNAR BROADLEAF GROUP
-│   │   │   │           ├── Lombardy Poplar: Distinctive narrow columnar form
-│   │   │   │           ├── Some Eucalyptus: Tall with hanging leaves
-│   │   │   │           ├── Cultivated columnar oaks and maples (in urban settings)
-│   │   │   │           └── Check leaf arrangement and bark characteristics
+│   │   │   │       └── CROWN WIDTH PROPORTIONS
+│   │   │   │           ├── PENCIL-THIN: Width-to-height ratio less than 1:10
+│   │   │   │           │   ├── Italian Cypress: Classic example of extremely narrow proportion
+│   │   │   │           │   ├── 'Skyrocket' Juniper: Nearly perfect vertical line
+│   │   │   │           │   └── Creates distinctive exclamation point in landscape
+│   │   │   │           │
+│   │   │   │           ├── NARROW COLUMN: Width-to-height ratio 1:5 to 1:10
+│   │   │   │           │   ├── Lombardy Poplar: Typical narrow column proportion
+│   │   │   │           │   ├── Columnar arborvitae: Often in this proportion range
+│   │   │   │           │   └── Most common for cultivated columnar trees
+│   │   │   │           │
+│   │   │   │           └── BROAD COLUMN: Width-to-height ratio 1:3 to 1:5
+│   │   │   │               ├── Redwood: Natural columnar form but broader than cultivated columns
+│   │   │   │               ├── Some eucalyptus species: Broader column proportions
+│   │   │   │               └── More natural looking than narrower cultivated forms
 │   │   │   │
 │   │   │   ├── WIDE, SPREADING crown → BROAD CANOPY TREE GROUP
 │   │   │   │   ├── What's the CANOPY SHAPE?
@@ -329,227 +488,381 @@ Look at the overall shape or size of your tree.
 │   │   │   │               ├── Ornamental cherries and plums: Low branching
 │   │   │   │               └── Many fruit trees: Branches start close to ground
 │   │   │   │
-│   │   │   ├── MULTI-TRUNKED form → MULTI-TRUNK TREE GROUP
-│   │   │   │   ├── How many trunks typically form?
-│   │   │   │   │   ├── MANY TRUNKS (5 or more) → MANY-TRUNKED GROUP
-│   │   │   │   │   │   ├── MANZANITA GENUS (Arctostaphylos)
-│   │   │   │   │   │   │   ├── Various manzanita species: Multiple smooth red trunks
-│   │   │   │   │   │   │   ├── All have distinctive smooth red/burgundy bark
-│   │   │   │   │   │   │   └── Small, leathery evergreen leaves
-│   │   │   │   │   │   │
-│   │   │   │   │   │   ├── MADRONE GENUS (Arbutus)
-│   │   │   │   │   │   │   ├── Pacific Madrone: Often multi-trunked with red bark
-│   │   │   │   │   │   │   ├── Distinctive peeling red bark
-│   │   │   │   │   │   │   └── Leathery evergreen leaves
-│   │   │   │   │   │   │
-│   │   │   │   │   │   └── SERVICEBERRY GENUS (Amelanchier)
-│   │   │   │   │   │       ├── Western Serviceberry: Multiple slender trunks
-│   │   │   │   │   │       ├── White spring flowers, edible berries
-│   │   │   │   │   │       └── Smooth gray bark with striping
-│   │   │   │   │   │
-│   │   │   │   │   └── FEW TRUNKS (2-4 main trunks) → FEW-TRUNKED GROUP
-│   │   │   │   │       ├── BIRCH GENUS (Betula)
-│   │   │   │   │       │   ├── Water Birch: Often forms clumps of 2-4 trunks
-│   │   │   │   │       │   ├── Other birch species: Sometimes multi-trunked
-│   │   │   │   │       │   └── Distinctive horizontal lenticels on bark
-│   │   │   │   │       │
-│   │   │   │   │       ├── WALNUT GENUS (Juglans)
-│   │   │   │   │       │   ├── California Black Walnut: Often multi-trunked
-│   │   │   │   │       │   ├── Northern California Walnut: Similar form
-│   │   │   │   │       │   └── Both have compound leaves, produce walnuts
-│   │   │   │   │       │
-│   │   │   │   │       └── MAPLE GENUS (Acer) - Some species
-│   │   │   │   │           ├── Vine Maple: Typically multi-trunked
-│   │   │   │   │           ├── Bigleaf Maple: Sometimes develops multiple trunks
-│   │   │   │   │           └── All have opposite leaf arrangement
+│   │   │   ├── MULTI-TRUNKED CROWN PATTERNS
+│   │   │   │   ├── For trunk-specific features of multi-trunked trees, see the [Trunk Shape Path](trunk-shape-path.md)
 │   │   │   │   │
-│   │   │   │   ├── Do the trunks SPREAD OUT or grow UPRIGHT?
-│   │   │   │   │   ├── SPREADING trunks → SPREADING MULTI-TRUNK GROUP
-│   │   │   │   │   │   ├── OAK GENUS - Some species
-│   │   │   │   │   │   │   ├── Coast Live Oak: Often with multiple spreading trunks
-│   │   │   │   │   │   │   ├── Canyon Live Oak: Can form spreading multi-trunk
-│   │   │   │   │   │   │   └── Both produce acorns, have leathery evergreen leaves
-│   │   │   │   │   │   │
-│   │   │   │   │   │   └── MANZANITA GENUS (Arctostaphylos)
-│   │   │   │   │   │       ├── Various manzanita species: Classic spreading form
-│   │   │   │   │   │       ├── Smooth red bark, often twisting trunks
-│   │   │   │   │   │       └── Small bell-shaped flowers, berry-like fruits
+│   │   │   │   ├── SMALL MULTI-STEMMED CROWN FORMS
+│   │   │   │   │   ├── MANZANITA GENUS (Arctostaphylos) - Vase-shaped crowns
+│   │   │   │   │   │   ├── Bigberry Manzanita (A. glauca): Spreading crown from multiple stems
+│   │   │   │   │   │   ├── Common Manzanita (A. manzanita): Rounded crown formed by multiple stems
+│   │   │   │   │   │   ├── Whiteleaf Manzanita (A. viscida): Irregular crown with multiple branches
+│   │   │   │   │   │   ├── All manzanita species create distinctive sculptural crown silhouettes
+│   │   │   │   │   │   ├── All form multiple-stemmed crowns with characteristic branching patterns
+│   │   │   │   │   │   └── All show small evergreen foliage creating dense crown texture (key trait)
 │   │   │   │   │   │
-│   │   │   │   │   └── UPRIGHT trunks → UPRIGHT MULTI-TRUNK GROUP
-│   │   │   │   │       ├── BIRCH GENUS (Betula)
-│   │   │   │   │       │   ├── Water Birch: Multiple upright trunks
-│   │   │   │   │       │   ├── Other birches: Sometimes clumping form
-│   │   │   │   │       │   └── Distinctive peeling or marked bark
-│   │   │   │   │       │
-│   │   │   │   │       ├── ASPEN GENUS (Populus)
-│   │   │   │   │       │   ├── Quaking Aspen: Forms clonal groves with many trunks
-│   │   │   │   │       │   ├── Distinctive white bark with dark markings
-│   │   │   │   │       │   └── Round leaves that "quake" in breeze
-│   │   │   │   │       │
-│   │   │   │   │       └── ALDER GENUS (Alnus)
-│   │   │   │   │           ├── Red Alder: Sometimes multiple straight trunks
-│   │   │   │   │           ├── White Alder: Can form upright clumps
-│   │   │   │   │           └── Both have distinctive catkins and cone-like fruits
+│   │   │   │   │   ├── MADRONE GENUS (Arbutus) - Irregular branching crowns
+│   │   │   │   │   │   ├── Pacific Madrone (A. menziesii): Spreading crown from multiple stems
+│   │   │   │   │   │   ├── Strawberry Tree (A. unedo): Smaller multi-stemmed crown form
+│   │   │   │   │   │   ├── Arizona Madrone (A. arizonica): Irregular multi-stemmed crown
+│   │   │   │   │   │   ├── All madrone species develop distinctive spreading crowns
+│   │   │   │   │   │   ├── All produce large leathery leaves creating dense foliage
+│   │   │   │   │   │   └── All have characteristic branch patterns visible in winter (key trait)
+│   │   │   │   │   │
+│   │   │   │   │   └── SERVICEBERRY GENUS (Amelanchier) - Fountain-like crowns
+│   │   │   │   │       ├── Western Serviceberry (A. alnifolia): Arching multi-stemmed crown
+│   │   │   │   │       ├── Saskatoon Serviceberry (A. alnifolia): Similar fountain-like crown
+│   │   │   │   │       ├── Allegheny Serviceberry (A. laevis): Multi-stemmed vase shape
+│   │   │   │   │       ├── All serviceberry species form vase-shaped or fountain-like crowns
+│   │   │   │   │       ├── All create horizontal layering effect with multiple stems
+│   │   │   │   │       └── All display distinctive spring flowers and fall color (key trait)
 │   │   │   │   │
-│   │   │   │   └── What TYPE OF FOLIAGE does the multi-trunk tree have?
-│   │   │   │       ├── NEEDLES, SCALES → MULTI-TRUNK CONIFER GROUP
-│   │   │   │       │   ├── JUNIPER GENUS (Juniperus)
-│   │   │   │       │   │   ├── Western Juniper: Often multiple trunks in old specimens
-│   │   │   │       │   │   ├── California Juniper: Sometimes multi-trunked
-│   │   │   │       │   │   └── Both have scale-like leaves, berry-like cones
-│   │   │   │       │   │
-│   │   │   │       │   └── Various CYPRESS, CEDAR species
-│   │   │   │       │       ├── Incense-cedar: Sometimes forms multiple leaders
-│   │   │   │       │       ├── Port Orford Cedar: Can develop multiple trunks
-│   │   │   │       │       └── Check for scale-like or flattened foliage
+│   │   │   │   ├── LARGE MULTI-STEMMED CROWN FORMS
+│   │   │   │   │   ├── OAK GENUS (Quercus) - Broad multiple-leader crowns
+│   │   │   │   │   │   ├── Coast Live Oak (Q. agrifolia): Broad crown from multiple stems
+│   │   │   │   │   │   ├── Canyon Live Oak (Q. chrysolepis): Wide crown with multiple leaders
+│   │   │   │   │   │   ├── Blue Oak (Q. douglasii): Can form multi-stemmed broad crown
+│   │   │   │   │   │   ├── All multi-trunked oaks develop extremely wide crown spread
+│   │   │   │   │   │   ├── All create distinctive broad silhouettes wider than tall
+│   │   │   │   │   │   └── All form massive canopies with multiple major scaffold branches (key trait)
+│   │   │   │   │   │
+│   │   │   │   │   ├── MAPLE GENUS (Acer) - Spreading multi-stemmed crowns
+│   │   │   │   │   │   ├── Vine Maple (A. circinatum): Low spreading multi-stemmed crown
+│   │   │   │   │   │   ├── Bigleaf Maple (A. macrophyllum): Broad crown from multiple stems
+│   │   │   │   │   │   ├── Japanese Maple (A. palmatum): Typically multi-stemmed form
+│   │   │   │   │   │   ├── All multi-trunked maples create broad, often rounded crown forms
+│   │   │   │   │   │   ├── All display characteristic opposite branching pattern
+│   │   │   │   │   │   └── All show elegant crown architecture visible in winter (key trait)
+│   │   │   │   │   │
+│   │   │   │   │   └── WALNUT GENUS (Juglans) - Open multi-stemmed crowns
+│   │   │   │   │       ├── California Black Walnut (J. californica): Spreading crown from multiple stems
+│   │   │   │   │       ├── Northern California Walnut (J. hindsii): Similar multi-stemmed crown
+│   │   │   │   │       ├── Black Walnut (J. nigra): Sometimes forms multiple-leader crown
+│   │   │   │   │       ├── All multi-trunked walnuts develop broad, somewhat irregular crowns
+│   │   │   │   │       ├── All create relatively open crown structure with filtered light
+│   │   │   │   │       └── All show distinctive compound leaf pattern creating dappled shade (key trait)
+│   │   │   │   │
+│   │   │   │   ├── CLONAL MULTI-STEMMED CROWN FORMS
+│   │   │   │   │   ├── ASPEN GENUS (Populus) - Grove-forming crowns
+│   │   │   │   │   │   ├── Quaking Aspen (P. tremuloides): Forms clonal groves with many upright crowns
+│   │   │   │   │   │   ├── Bigtooth Aspen (P. grandidentata): Similar clonal multi-stem growth habit
+│   │   │   │   │   │   ├── European Aspen (P. tremula): Forms clonal patches with characteristic crowns
+│   │   │   │   │   │   ├── All aspen species create distinctive grove-like canopy patterns
+│   │   │   │   │   │   ├── All display characteristic trembling leaf movement in breeze
+│   │   │   │   │   │   └── All develop synchronized seasonal changes across entire grove (key trait)
+│   │   │   │   │   │
+│   │   │   │   │   ├── BIRCH GENUS (Betula) - Clumping crown forms
+│   │   │   │   │   │   ├── Water Birch (B. occidentalis): Forms clumps with arching crowns
+│   │   │   │   │   │   ├── Paper Birch (B. papyrifera): Sometimes forms multi-stemmed clusters
+│   │   │   │   │   │   ├── River Birch (B. nigra): Typically develops multi-stemmed form
+│   │   │   │   │   │   ├── All multi-stemmed birches create delicate crown silhouettes
+│   │   │   │   │   │   ├── All display characteristic fine branching patterns
+│   │   │   │   │   │   └── All show distinctive catkins and small leaves (key trait)
+│   │   │   │   │   │
+│   │   │   │   │   └── RIPARIAN THICKET-FORMING CROWNS
+│   │   │   │   │       ├── WILLOW GENUS (Salix) - Thicket crowns
+│   │   │   │   │       │   ├── Arroyo Willow (S. lasiolepis): Forms dense multi-stemmed thickets
+│   │   │   │   │       │   ├── Sandbar Willow (S. exigua): Creates linear multi-stemmed stands
+│   │   │   │   │       │   ├── Pacific Willow (S. lasiandra): Develops broad multi-stemmed crown
+│   │   │   │   │       │   ├── All multi-stemmed willows create distinctive riparian canopy forms
+│   │   │   │   │       │   ├── All display characteristic flexible branching structure
+│   │   │   │   │       │   └── All show elongated leaves that catch light and breeze (key trait)
+│   │   │   │   │       │
+│   │   │   │   │       ├── ALDER GENUS (Alnus) - Stream-side crowns
+│   │   │   │   │       │   ├── White Alder (A. rhombifolia): Multi-stemmed streamside crown
+│   │   │   │   │       │   ├── Red Alder (A. rubra): Sometimes develops multiple-stem crown
+│   │   │   │   │       │   ├── Mountain Alder (A. incana): Forms multiple-stemmed thickets
+│   │   │   │   │       │   ├── All multi-stemmed alders create distinctive riparian canopy patterns
+│   │   │   │   │       │   ├── All develop relatively open crown structure allowing filtered light
+│   │   │   │   │       │   └── All display characteristic cone-like fruits visible in silhouette (key trait)
+│   │   │   │   │       │
+│   │   │   │   │       └── DOGWOOD GENUS (Cornus) - Stream-side crowns
+│   │   │   │   │           ├── Pacific Dogwood (C. nuttallii): Sometimes multi-stemmed form
+│   │   │   │   │           ├── Red-osier Dogwood (C. sericea): Multi-stemmed thicket-forming crowns
+│   │   │   │   │           ├── Creek Dogwood (C. glabrata): Forms multi-stemmed riparian patches
+│   │   │   │   │           ├── All multi-stemmed dogwoods create distinctive layered crown shapes
+│   │   │   │   │           ├── All display horizontal branching pattern creating tiered effect
+│   │   │   │   │           └── All develop attractive flowering display in spring (key trait)
+│   │   │   │   │
+│   │   │   │   └── CONIFER MULTI-STEMMED CROWN FORMS
+│   │   │   │       ├── JUNIPER GENUS (Juniperus) - Spreading multi-stemmed crowns
+│   │   │   │       │   ├── Western Juniper (J. occidentalis): Often develops spreading multi-trunk crown
+│   │   │   │       │   ├── California Juniper (J. californica): Forms broad irregular multi-stemmed crown
+│   │   │   │       │   ├── Utah Juniper (J. osteosperma): Creates distinctive multi-stemmed silhouette
+│   │   │   │       │   ├── All multi-stemmed junipers develop broad, irregular crown forms
+│   │   │   │       │   ├── All create distinctive architectural silhouettes in harsh environments
+│   │   │   │       │   └── All display scale-like foliage creating fine-textured crown (key trait)
 │   │   │   │       │
-│   │   │   │       └── BROAD LEAVES → MULTI-TRUNK BROADLEAF GROUP
-│   │   │   │           ├── Manzanita: Smooth red bark, small leathery leaves
-│   │   │   │           ├── Madrone: Peeling red bark, large leathery leaves
-│   │   │   │           ├── California Black Walnut: Compound leaves, nut fruits
-│   │   │   │           └── Many oak species: Various leaf types, acorn fruits
-│   │   │   │
-│   │   │   ├── TWISTED, GNARLED form → GNARLED FORM TREE GROUP
-│   │   │   │   ├── Is the ENTIRE TREE twisted or just the trunk?
-│   │   │   │   │   ├── ENTIRE TREE is contorted → FULLY CONTORTED GROUP
-│   │   │   │   │   │   ├── CYPRESS GENUS (Cupressus) - Coastal specimens
-│   │   │   │   │   │   │   ├── Monterey Cypress: Classic windswept form
-│   │   │   │   │   │   │   ├── Other coastal cypress: Similar windswept forms
-│   │   │   │   │   │   │   └── Check for scale-like foliage, rounded cones
-│   │   │   │   │   │   │
-│   │   │   │   │   │   ├── PINE GENUS - Coastal/exposed specimens
-│   │   │   │   │   │   │   ├── Monterey Pine: Windswept, leaning form on coast
-│   │   │   │   │   │   │   ├── Shore Pine: Extremely gnarled in coastal winds
-│   │   │   │   │   │   │   ├── Torrey Pine: Twisted, sculptural form
-│   │   │   │   │   │   │   └── Check for needle bundles (key pine trait)
-│   │   │   │   │   │   │
-│   │   │   │   │   │   └── ORNAMENTAL CONTORTED VARIETIES
-│   │   │   │   │   │       ├── Contorted filbert: "Harry Lauder's Walking Stick"
-│   │   │   │   │   │       ├── Weeping mulberry: Twisted, gnarled branches
-│   │   │   │   │   │       └── Often planted in gardens for unusual shape
-│   │   │   │   │   │
-│   │   │   │   │   └── Mainly the TRUNK is twisted → TWISTED TRUNK GROUP
-│   │   │   │   │       ├── OAK GENUS (Quercus) - Old specimens
-│   │   │   │   │       │   ├── Coast Live Oak: Often develops twisted trunk
-│   │   │   │   │       │   ├── Valley Oak: Can develop massive gnarled limbs
-│   │   │   │   │       │   └── Blue Oak: Sometimes twisted in exposed sites
-│   │   │   │   │       │
-│   │   │   │   │       ├── OLD GROWTH JUNIPER GENUS (Juniperus)
-│   │   │   │   │       │   ├── Western Juniper: Classic twisted trunk when old
-│   │   │   │   │       │   ├── California Juniper: Can develop contorted form
-│   │   │   │   │       │   └── Both have shredding bark, scale-like leaves
-│   │   │   │   │       │
-│   │   │   │   │       └── MANZANITA GENUS (Arctostaphylos)
-│   │   │   │   │           ├── Various manzanita species: Sculptural twisted trunks
-│   │   │   │   │           ├── Smooth red bark highlights twisting form
-│   │   │   │   │           └── Often grows in harsh conditions causing twisting
-│   │   │   │   │
-│   │   │   │   ├── What GROWING CONDITIONS create the twisted form?
-│   │   │   │   │   ├── COASTAL WINDSWEPT location → COASTAL GNARLED GROUP
-│   │   │   │   │   │   ├── Monterey Cypress: Classic windswept coastal tree
-│   │   │   │   │   │   ├── Shore Pine: Extremely contorted on coast
-│   │   │   │   │   │   ├── Torrey Pine: Rare, twisted form in coastal San Diego
-│   │   │   │   │   │   └── Various coastal oaks: Often develop windswept form
-│   │   │   │   │   │
-│   │   │   │   │   ├── HIGH MOUNTAIN or EXPOSED location → ALPINE GNARLED GROUP
-│   │   │   │   │   │   ├── WHITEBARK PINE GENUS
-│   │   │   │   │   │   │   ├── Whitebark Pine: Twisted krummholz form at treeline
-│   │   │   │   │   │   │   ├── Needles in bundles of 5, often flagged by wind
-│   │   │   │   │   │   │   └── Only grows at high elevations
-│   │   │   │   │   │   │
-│   │   │   │   │   │   ├── BRISTLECONE PINE GENUS
-│   │   │   │   │   │   │   ├── Bristlecone Pine: Ancient twisted specimens
-│   │   │   │   │   │   │   └── Very slow-growing, extremely long-lived
-│   │   │   │   │   │   │
-│   │   │   │   │   │   └── HIGH ELEVATION JUNIPERS
-│   │   │   │   │   │       ├── Western Juniper: Sculptural in mountain exposures
-│   │   │   │   │   │       └── Sierra Juniper: Classic twisted alpine form
-│   │   │   │   │   │
-│   │   │   │   │   └── DRY HABITAT with poor soil → DROUGHT GNARLED GROUP
-│   │   │   │   │       ├── BLUE OAK GENUS (Quercus)
-│   │   │   │   │       │   ├── Blue Oak: Often twisted in dry foothill habitats
-│   │   │   │   │       │   ├── Distinctive blue-gray foliage
-│   │   │   │   │       │   └── Adapted to hot, dry conditions
-│   │   │   │   │       │
-│   │   │   │   │       ├── GRAY PINE (FOOTHILL PINE)
-│   │   │   │   │       │   ├── Gray Pine: Often with bent, twisted trunk
-│   │   │   │   │       │   ├── Very long needles in bundles of 3
-│   │   │   │   │       │   └── Found in hot, dry foothill woodlands
-│   │   │   │   │       │
-│   │   │   │   │       └── JOSHUA TREE (Yucca brevifolia)
-│   │   │   │   │           ├── Joshua Tree: Iconic twisted desert tree
-│   │   │   │   │           ├── Not a true tree but a giant yucca
-│   │   │   │   │           └── Distinctive spiky appearance
-│   │   │   │   │
-│   │   │   │   └── How OLD is the gnarled tree likely to be?
-│   │   │   │       ├── VERY OLD (centuries) → ANCIENT TREE GROUP
-│   │   │   │       │   ├── BRISTLECONE PINE GENUS
-│   │   │   │       │   │   ├── Bristlecone Pine: World's oldest individual trees
-│   │   │   │       │   │   ├── Extremely twisted, partially dead trunks
-│   │   │   │       │   │   └── High elevation habitat
-│   │   │   │       │   │
-│   │   │   │       │   ├── ANCIENT JUNIPER GENUS
-│   │   │   │       │   │   ├── Western Juniper: Can live 1000+ years
-│   │   │   │       │   │   ├── Twisted trunk with partly dead wood
-│   │   │   │       │   │   └── Found in harsh, dry habitats
-│   │   │   │       │   │
-│   │   │   │       │   └── OLD GROWTH OAK SPECIES
-│   │   │   │       │       ├── Valley Oak: Can live 600+ years
-│   │   │   │       │       ├── Coast Live Oak: Very old specimens are gnarled
-│   │   │   │       │       └── Blue Oak: Ancient specimens in foothills
+│   │   │   │       ├── CEDAR-LIKE SPECIES - Multi-leader crowns
+│   │   │   │       │   ├── Incense-cedar (Calocedrus decurrens): Sometimes forms multiple-leader crown
+│   │   │   │       │   ├── Port Orford Cedar (Chamaecyparis lawsoniana): Can develop multiple-stemmed form
+│   │   │   │       │   ├── Western Redcedar (Thuja plicata): Occasionally multi-stemmed
+│   │   │   │       │   ├── All multi-stemmed cedar-like trees maintain conical to columnar crown shape
+│   │   │   │       │   ├── All develop flattened spray-like foliage arrangement
+│   │   │   │       │   └── All create more broad-based crown when multi-stemmed than single-trunked (key trait)
 │   │   │   │       │
-│   │   │   │       └── YOUNGER but still gnarled → ENVIRONMENTALLY SHAPED GROUP
-│   │   │   │           ├── COASTAL SPECIES (shaped by wind)
-│   │   │   │           │   ├── Monterey Cypress: Classic windswept form
-│   │   │   │           │   ├── Monterey Pine: Often gnarled on coast
-│   │   │   │           │   └── Shore Pine: Contorted by coastal conditions
-│   │   │   │           │
-│   │   │   │           └── ORNAMENTAL CONTORTED VARIETIES
-│   │   │   │               ├── Contorted filbert: Bred for twisted form
-│   │   │   │               ├── Weeping cherry: Selected for drooping habit
-│   │   │   │               └── Various garden specimens bred for unusual form
+│   │   │   │       └── PINE SPECIES - Fire-adapted multi-stemmed crowns
+│   │   │   │           ├── Some Lodgepole Pine (P. contorta): Forms multiple stems after fire
+│   │   │   │           ├── Bishop Pine (P. muricata): Sometimes develops multi-stemmed crown
+│   │   │   │           ├── Gray Pine (P. sabiniana): Can form multi-leader crowns
+│   │   │   │           ├── All multi-stemmed pines develop more irregular crown forms than single-trunked
+│   │   │   │           ├── All create distinctive silhouettes with multiple apical dominance
+│   │   │   │           └── All maintain characteristic needle bundles in crown foliage (key trait)
 │   │   │   │
-│   │   │   ├── Look at specific SIZE attributes
-│   │   │   │   ├── EXTREMELY TALL (over 150 feet) → VERY TALL TREE GROUP
-│   │   │   │   │   ├── Coast Redwood: World's tallest tree species
-│   │   │   │   │   ├── Douglas-fir: Can reach over 200 feet
-│   │   │   │   │   ├── Giant Sequoia: Extremely tall and massive
-│   │   │   │   │   └── Sugar Pine: Tallest pine species
+│   │   │   ├── TWISTED, GNARLED CROWN FORMS
+│   │   │   │   ├── For trunk-specific features of twisted or gnarled trees, see the [Trunk Shape Path](trunk-shape-path.md)
 │   │   │   │   │
-│   │   │   │   ├── MASSIVE TRUNK diameter (over 6 feet) → MASSIVE TRUNK GROUP
-│   │   │   │   │   ├── Giant Sequoia: World's most massive tree trunks
-│   │   │   │   │   ├── Coast Redwood: Huge trunk diameter
-│   │   │   │   │   ├── Valley Oak: Largest native deciduous tree trunk
-│   │   │   │   │   └── Some old growth Douglas-fir and Sitka Spruce
+│   │   │   │   ├── WINDSWEPT CROWN FORMS - Environmental sculpting
+│   │   │   │   │   ├── CYPRESS GENUS (Cupressus) - Wind-sculpted crowns
+│   │   │   │   │   │   ├── Monterey Cypress (C. macrocarpa): Classic flag-form wind-pruned crown
+│   │   │   │   │   │   ├── Gowen Cypress (C. goveniana): Coastal wind-sculpted crown form
+│   │   │   │   │   │   ├── Mendocino Cypress (C. pygmaea): Often develops twisted crown in exposure
+│   │   │   │   │   │   ├── All coastal cypress develop distinctive one-sided wind-pruned crowns
+│   │   │   │   │   │   ├── All show dramatic lean away from prevailing wind direction
+│   │   │   │   │   │   └── All maintain compressed foliage on leeward side of crown (key trait)
+│   │   │   │   │   │
+│   │   │   │   │   ├── PINE GENUS (Pinus) - Coastal/exposed crown forms
+│   │   │   │   │   │   ├── Shore Pine (P. contorta): Dramatically wind-sculpted crown
+│   │   │   │   │   │   ├── Monterey Pine (P. radiata): Flag-form crown in coastal exposure
+│   │   │   │   │   │   ├── Torrey Pine (P. torreyana): Twisted, wind-sculpted crown form
+│   │   │   │   │   │   ├── All coastal pines develop asymmetrical crown forms from wind exposure
+│   │   │   │   │   │   ├── All show branch flagging (extending away from wind direction)
+│   │   │   │   │   │   └── All maintain needles primarily on leeward side of branches (key trait)
+│   │   │   │   │   │
+│   │   │   │   │   └── OAK GENUS (Quercus) - Wind-influenced crowns
+│   │   │   │   │       ├── Coast Live Oak (Q. agrifolia): Often develops wind-pruned crown form
+│   │   │   │   │       ├── Canyon Live Oak (Q. chrysolepis): Can show wind influence in exposed sites
+│   │   │   │   │       ├── Blue Oak (Q. douglasii): Sometimes exhibits wind-sculpted crown
+│   │   │   │   │       ├── All wind-exposed oaks develop asymmetrical crown shapes
+│   │   │   │   │       ├── All maintain more foliage on leeward side of crown
+│   │   │   │   │       └── All show distinctive domed or flattened crown profile from constant wind (key trait)
 │   │   │   │   │
-│   │   │   │   ├── VERY SHORT but tree-like (under 20 feet) → SMALL TREE GROUP
-│   │   │   │   │   ├── Joshua Tree: Not a true tree but tree-like
-│   │   │   │   │   ├── Pacific Dogwood: Small understory tree
-│   │   │   │   │   ├── Western Redbud: Small multi-trunked tree
-│   │   │   │   │   └── Manzanita species: Tree-like shrubs
+│   │   │   │   ├── HIGH ELEVATION CROWN FORMS - Environmental adaptations
+│   │   │   │   │   ├── PINE GENUS (Pinus) - Alpine crown forms
+│   │   │   │   │   │   ├── Whitebark Pine (P. albicaulis): Krummholz or mat-like crown at treeline
+│   │   │   │   │   │   ├── Bristlecone Pine (P. longaeva): Highly contorted crown with partial dieback
+│   │   │   │   │   │   ├── Limber Pine (P. flexilis): Wind-flagged crown in high elevations
+│   │   │   │   │   │   ├── All alpine pines develop distinctive sculptural crown forms
+│   │   │   │   │   │   ├── All show significant crown adaptation to harsh environmental conditions
+│   │   │   │   │   │   └── All maintain living tissue only on protected portions of crown (key trait)
+│   │   │   │   │   │
+│   │   │   │   │   ├── JUNIPER GENUS (Juniperus) - Exposed site crown forms
+│   │   │   │   │   │   ├── Sierra Juniper (J. grandis): Sculptural twisted crown forms
+│   │   │   │   │   │   ├── Western Juniper (J. occidentalis): Contorted crown in exposed sites
+│   │   │   │   │   │   ├── Utah Juniper (J. osteosperma): Often develops twisted crown
+│   │   │   │   │   │   ├── All exposed junipers develop highly individual crown architectures
+│   │   │   │   │   │   ├── All show distinctive crown asymmetry responding to site conditions
+│   │   │   │   │   │   └── All maintain living crown tissue in protected zones (key trait)
+│   │   │   │   │   │
+│   │   │   │   │   └── FIR & SPRUCE GENERA - Treeline crown forms
+│   │   │   │   │       ├── Subalpine Fir (Abies lasiocarpa): Forms krummholz mats at treeline
+│   │   │   │   │       ├── Engelmann Spruce (Picea engelmannii): Develops flag-form at high elevation
+│   │   │   │   │       ├── Mountain Hemlock (Tsuga mertensiana): Sculpted crown in alpine habitat
+│   │   │   │   │       ├── All treeline conifers develop stunted, mat-like or flag-form crowns
+│   │   │   │   │       ├── All show growth primarily in protected microhabitats
+│   │   │   │   │       └── All maintain much wider than tall proportions at extreme elevations (key trait)
 │   │   │   │   │
-│   │   │   │   └── UNUSUALLY WIDE compared to height → WIDE FORM GROUP
-│   │   │   │       ├── Valley Oak: Extremely wide crown
-│   │   │   │       ├── Coast Live Oak: Often wider than tall
-│   │   │   │       ├── California Sycamore: Wide-spreading form
-│   │   │   │       └── Some old growth pines: Develop wide, flat tops
+│   │   │   │   ├── ARID ENVIRONMENT CROWN FORMS - Drought adaptations
+│   │   │   │   │   ├── OAK GENUS (Quercus) - Drought-adapted crowns
+│   │   │   │   │   │   ├── Blue Oak (Q. douglasii): Sparse, irregular crown in dry foothills
+│   │   │   │   │   │   ├── Canyon Live Oak (Q. chrysolepis): Twisted crown in arid sites
+│   │   │   │   │   │   ├── Scrub Oak species (Q. berberidifolia): Contorted crown form
+│   │   │   │   │   │   ├── All drought-adapted oaks develop irregular, open crown shapes
+│   │   │   │   │   │   ├── All maintain lower foliage density than mesic-site counterparts
+│   │   │   │   │   │   └── All show distinctive crown architecture adapted to water conservation (key trait)
+│   │   │   │   │   │
+│   │   │   │   │   ├── PINE GENUS (Pinus) - Arid environment crowns
+│   │   │   │   │   │   ├── Gray Pine (P. sabiniana): Sparse, irregular crown in hot, dry foothills
+│   │   │   │   │   │   ├── Pinyon Pine species (P. monophylla, P. edulis): Rounded, irregular crowns
+│   │   │   │   │   │   ├── Coulter Pine (P. coulteri): Open crown in dry mountain habitats
+│   │   │   │   │   │   ├── All arid-site pines develop open, sometimes contorted crown forms
+│   │   │   │   │   │   ├── All maintain relatively sparse needle distribution to reduce water loss
+│   │   │   │   │   │   └── All show distinctive crown adaptations to drought conditions (key trait)
+│   │   │   │   │   │
+│   │   │   │   │   └── DESERT-ADAPTED TREE CROWNS
+│   │   │   │   │       ├── Joshua Tree (Yucca brevifolia): Distinctive branched crown form
+│   │   │   │   │       ├── Desert Ironwood (Olneya tesota): Twisted, irregular crown
+│   │   │   │   │       ├── Mesquite species (Prosopis): Contorted, broad crown form
+│   │   │   │   │       ├── All desert-adapted trees create distinctive architectural crown forms
+│   │   │   │   │       ├── All develop crown structures that minimize water loss
+│   │   │   │   │       └── All show structural adaptations to extreme temperature fluctuations (key trait)
+│   │   │   │   │
+│   │   │   │   └── ORNAMENTAL CONTORTED CROWN FORMS - Selected variations
+│   │   │   │       ├── DELIBERATELY CONTORTED CROWNS
+│   │   │   │       │   ├── Contorted Filbert (Corylus avellana 'Contorta'): Twisted zigzag crown
+│   │   │   │       │   ├── Corkscrew Willow (Salix matsudana 'Tortuosa'): Spiraling twisted crown
+│   │   │   │       │   ├── Dragon's Claw Willow (Salix babylonica 'Tortuosa'): Contorted crown form
+│   │   │   │       │   ├── All contorted cultivars maintain consistent twisted branching pattern
+│   │   │   │       │   ├── All display their distinctive form most clearly in winter
+│   │   │   │       │   └── All were selected for ornamental twisted crown architecture (key trait)
+│   │   │   │       │
+│   │   │   │       ├── JAPANESE GARDEN FORMS
+│   │   │   │       │   ├── Japanese Black Pine (Pinus thunbergii): Often trained to twisted form
+│   │   │   │       │   ├── Japanese White Pine (P. parviflora): Frequently trained in gnarled style
+│   │   │   │       │   ├── Japanese Maple (Acer palmatum): May be trained to twisted form
+│   │   │   │       │   ├── All Japanese garden forms display deliberately sculpted crown shapes
+│   │   │   │       │   ├── All showcase the artistic manipulation of natural growth patterns
+│   │   │   │       │   └── All require human intervention to develop and maintain form (key trait)
+│   │   │   │       │
+│   │   │   │       └── BONSAI & NIWAKI CROWN FORMS
+│   │   │   │           ├── Various species trained to mimic ancient, windswept trees
+│   │   │   │           ├── Deliberate manipulation creates illusion of great age and weathering
+│   │   │   │           ├── Scale reduction while maintaining natural crown proportions
+│   │   │   │           ├── All trained forms showcase miniaturized version of natural growth patterns
+│   │   │   │           ├── All require continuous maintenance to preserve crown form
+│   │   │   │           └── All display deliberate crown asymmetry to create visual interest (key trait)
 │   │   │   │
-│   │   │   └── The tree has a DISTINCTIVE FEATURE not covered above
-│   │   │       ├── UMBRELLA-SHAPED crown → UMBRELLA CROWN GROUP
-│   │   │       │   ├── Italian Stone Pine: Classic umbrella shape
-│   │   │       │   ├── Mature Torrey Pine: Often flat-topped umbrella form
-│   │   │       │   ├── Some old Sierra junipers: Develop umbrella form
-│   │   │       │   └── Old Jeffrey and Ponderosa Pines: May develop flat tops
+│   │   │   ├── Distinctive SIZE PROPORTION Attributes
+│   │   │   │   ├── EXTREMELY TALL CROWN PROPORTIONS (over 150 feet) → VERY TALL CROWN GROUP
+│   │   │   │   │   ├── REDWOOD & SEQUOIA GENUS - Tallest crowns
+│   │   │   │   │   │   ├── Coast Redwood (Sequoia sempervirens): World's tallest tree with columnar crown
+│   │   │   │   │   │   ├── Giant Sequoia (Sequoiadendron giganteum): Extremely tall with broad columnar crown
+│   │   │   │   │   │   ├── Dawn Redwood (Metasequoia glyptostroboides): Tall with distinctive conical crown
+│   │   │   │   │   │   ├── All create crown silhouettes that extend far above surrounding canopy
+│   │   │   │   │   │   ├── All develop distinctive branch architecture visible from distance
+│   │   │   │   │   │   └── All show gradual crown shape changes with extreme height (key trait)
+│   │   │   │   │   │
+│   │   │   │   │   ├── DOUGLAS-FIR GENUS (Pseudotsuga) - Tall conical crowns
+│   │   │   │   │   │   ├── Coast Douglas-fir (P. menziesii): Reaches 200+ feet with conical crown
+│   │   │   │   │   │   ├── Rocky Mountain Douglas-fir (P. menziesii var. glauca): Tall with narrow crown
+│   │   │   │   │   │   ├── Bigcone Douglas-fir (P. macrocarpa): Tall with broader crown
+│   │   │   │   │   │   ├── All develop distinctive crown silhouettes emerging above forest canopy
+│   │   │   │   │   │   ├── All maintain conical to columnar crown proportion despite great height
+│   │   │   │   │   │   └── All show characteristic drooping leader and branch tips (key trait)
+│   │   │   │   │   │
+│   │   │   │   │   └── NOTABLE TALL CONIFER CROWNS
+│   │   │   │   │       ├── Sugar Pine (P. lambertiana): Tallest pine with distinctive open crown
+│   │   │   │   │       ├── Sitka Spruce (Picea sitchensis): Tall with conical to columnar crown
+│   │   │   │   │       ├── Noble Fir (Abies procera): Very tall with symmetrical conical crown
+│   │   │   │   │       ├── Western White Pine (P. monticola): Tall with irregular crown
+│   │   │   │   │       ├── All develop emergent crown forms rising above forest canopy
+│   │   │   │   │       ├── All maintain distinctive height-to-width proportions
+│   │   │   │   │       └── All show crown forms adapted to compete for light in dense forest (key trait)
+│   │   │   │   │
+│   │   │   │   ├── DWARF CROWN FORMS (under 20 feet) → SMALL TREE CROWN GROUP
+│   │   │   │   │   ├── NATURALLY SMALL TREE CROWNS
+│   │   │   │   │   │   ├── Pacific Dogwood (Cornus nuttallii): Small understory tree with layered crown
+│   │   │   │   │   │   ├── Western Redbud (Cercis occidentalis): Small multi-stemmed spreading crown
+│   │   │   │   │   │   ├── Manzanita species (Arctostaphylos): Tree-like shrubs with distinctive crowns
+│   │   │   │   │   │   ├── All develop complete tree crown forms despite small stature
+│   │   │   │   │   │   ├── All maintain proportional crown spread appropriate to height
+│   │   │   │   │   │   └── All show growth forms adapted to understory or edge habitats (key trait)
+│   │   │   │   │   │
+│   │   │   │   │   ├── DESERT/ARID SMALL TREE CROWNS
+│   │   │   │   │   │   ├── Joshua Tree (Yucca brevifolia): Distinctive candelabra-like crown
+│   │   │   │   │   │   ├── Paloverde (Parkinsonia): Small spreading crown with green stems
+│   │   │   │   │   │   ├── Desert Willow (Chilopsis linearis): Fine-textured small crown
+│   │   │   │   │   │   ├── All develop distinctive architectural crown forms despite small size
+│   │   │   │   │   │   ├── All maintain crown forms adapted to extreme conditions
+│   │   │   │   │   │   └── All show specialized adaptations to arid environments (key trait)
+│   │   │   │   │   │
+│   │   │   │   │   └── DWARF CULTIVATED CROWN FORMS
+│   │   │   │   │       ├── Dwarf Alberta Spruce (Picea glauca 'Conica'): Miniature conical crown
+│   │   │   │   │       ├── Dwarf Japanese Maple cultivars: Small delicate crowns
+│   │   │   │   │       ├── Globe Norway Maple (Acer platanoides 'Globosum'): Perfect small rounded crown
+│   │   │   │   │       ├── All maintain perfect miniature versions of larger species' crown forms
+│   │   │   │   │       ├── All develop distinctive dense crown structure
+│   │   │   │   │       └── All show controlled growth patterns through genetic selection (key trait)
+│   │   │   │   │
+│   │   │   │   └── UNUSUALLY WIDE CROWN PROPORTIONS → BROAD CROWN GROUP
+│   │   │   │       ├── OAK GENUS (Quercus) - Extremely broad crowns
+│   │   │   │       │   ├── Valley Oak (Q. lobata): Crown often twice as wide as tree is tall
+│   │   │   │       │   ├── Coast Live Oak (Q. agrifolia): Massive horizontal crown spread
+│   │   │   │       │   ├── Blue Oak (Q. douglasii): Wide crown with blue-gray foliage
+│   │   │   │       │   ├── All develop crown width significantly exceeding height in open settings
+│   │   │   │       │   ├── All create distinctive umbrella-like or broad-domed silhouettes
+│   │   │   │       │   └── All maintain impressive horizontal branch reach (key trait)
+│   │   │   │       │
+│   │   │   │       ├── SYCAMORE GENUS (Platanus) - Wide-spreading crowns
+│   │   │   │       │   ├── California Sycamore (P. racemosa): Extremely broad, irregular crown
+│   │   │   │       │   ├── American Sycamore (P. occidentalis): Very wide crown spread
+│   │   │   │       │   ├── London Plane Tree (P. × acerifolia): Broad spreading crown
+│   │   │   │       │   ├── All develop massive horizontal crown spread in open settings
+│   │   │   │       │   ├── All create irregular, somewhat open branch architecture
+│   │   │   │       │   └── All maintain distinctive mottled bark visible through spreading crown (key trait)
+│   │   │   │       │
+│   │   │   │       └── OLD GROWTH PINE CROWNS - Broad, flat-topped forms
+│   │   │   │           ├── Old Ponderosa Pine (P. ponderosa): Develops wide, flat crown with age
+│   │   │   │           ├── Jeffrey Pine (P. jeffreyi): Similar broad, flat crown when ancient
+│   │   │   │           ├── Torrey Pine (P. torreyana): Develops distinctive broad, flat crown with age
+│   │   │   │           ├── All old-growth pines develop distinctive flat or umbrella-like crown forms
+│   │   │   │           ├── All show significant width-to-height ratio change with age
+│   │   │   │           └── All maintain most foliage at crown periphery (key trait)
+│   │   │   │
+│   │   │   └── OTHER DISTINCTIVE CROWN FEATURES
+│   │   │       ├── UMBRELLA-SHAPED CROWNS → UMBRELLA SILHOUETTE GROUP
+│   │   │       │   ├── PINE GENUS (Pinus) - Classic umbrella forms
+│   │   │       │   │   ├── Italian Stone Pine (P. pinea): Perfect umbrella-shaped crown
+│   │   │       │   │   ├── Mature Torrey Pine (P. torreyana): Develops flat-topped umbrella form
+│   │   │       │   │   ├── Old Ponderosa Pine (P. ponderosa): Forms umbrella-like crown with age
+│   │   │       │   │   ├── All umbrella pines develop flat or gently rounded crown tops
+│   │   │       │   │   ├── All maintain clear trunks with foliage concentrated at top
+│   │   │       │   │   └── All create distinctive silhouettes visible from great distances (key trait)
+│   │   │       │   │
+│   │   │       │   ├── JUNIPER GENUS (Juniperus) - Mature umbrella forms
+│   │   │       │   │   ├── Old Sierra Juniper (J. grandis): Develops distinctive umbrella crown
+│   │   │       │   │   ├── Ancient Western Juniper (J. occidentalis): Often forms umbrella-like crown
+│   │   │       │   │   ├── Old Rocky Mountain Juniper (J. scopulorum): Can develop umbrella form
+│   │   │       │   │   ├── All ancient junipers may develop distinctive flat-topped crowns
+│   │   │       │   │   ├── All show weathered, twisted branch architecture within crown
+│   │   │       │   │   └── All maintain living foliage primarily on horizontal upper surface (key trait)
+│   │   │       │   │
+│   │   │       │   └── ACACIA GENUS & RELATIVES - Savanna umbrella forms
+│   │   │       │       ├── Acacia species (Acacia/Vachellia): Classic savanna umbrella crowns
+│   │   │       │       ├── Mesquite species (Prosopis): Develop umbrella-like crowns in open settings
+│   │   │       │       ├── Paloverde species (Parkinsonia): Form broad flat-topped crowns
+│   │   │       │       ├── All savanna tree forms develop distinctive horizontally flattened crowns
+│   │   │       │       ├── All maximize shaded area beneath with minimal vertical structure
+│   │   │       │       └── All provide efficient rain and light capture in arid environments (key trait)
 │   │   │       │
-│   │   │       ├── VERY NARROW crown width → PENCIL-THIN GROUP
-│   │   │       │   ├── Italian Cypress: Extremely narrow columnar form
-│   │   │       │   ├── Some ornamental junipers: Pencil-like habit
-│   │   │       │   └── Young Lombardy Poplar: Very narrow upright form
+│   │   │       ├── SPIKY ARCHITECTURAL CROWNS → DISTINCTIVE OUTLINE GROUP
+│   │   │       │   ├── DESERT TREE CROWN FORMS
+│   │   │       │   │   ├── Joshua Tree (Yucca brevifolia): Distinctive spiky candelabra crown
+│   │   │       │   │   ├── Ocotillo (Fouquieria splendens): Fountain-like arrangement of spiky stems
+│   │   │       │   │   ├── Soaptree Yucca (Yucca elata): Tree-like yucca with spiky crown
+│   │   │       │   │   ├── All develop highly architectural crown forms unlike typical trees
+│   │   │       │   │   ├── All create distinctive silhouettes on desert horizon
+│   │   │       │   │   └── All have specialized adaptations to extreme aridity (key trait)
+│   │   │       │   │
+│   │   │       │   ├── PALM FAMILY CROWN FORMS
+│   │   │       │   │   ├── California Fan Palm (Washingtonia filifera): Round crown of large fronds
+│   │   │       │   │   ├── Mexican Fan Palm (Washingtonia robusta): More compact crown than native fan palm
+│   │   │       │   │   ├── Date Palm (Phoenix dactylifera): Dense crown of feather-like fronds
+│   │   │       │   │   ├── All palm species create distinctive radial crown architecture
+│   │   │       │   │   ├── All produce new fronds from single growing point (apical meristem)
+│   │   │       │   │   └── All maintain crowns of large compound leaves (fronds) at top (key trait)
+│   │   │       │   │
+│   │   │       │   └── ANCIENT SPECIMEN CROWNS
+│   │   │       │       ├── Bristlecone Pine (Pinus longaeva): Twisted, partially dead sculptural crown
+│   │   │       │       ├── Ancient Juniper (Juniperus spp.): Highly individualized twisted crown forms
+│   │   │       │       ├── Very old Coast Live Oak (Quercus agrifolia): Massive gnarly crown structure
+│   │   │       │       ├── All ancient specimens develop highly distinctive individual crown forms
+│   │   │       │       ├── All show evidence of partial dieback and regrowth over centuries
+│   │   │       │       └── All maintain only essential living tissue while showcasing age (key trait)
 │   │   │       │
-│   │   │       └── SPIKY, prehistoric appearance → UNUSUAL FORM GROUP
-│   │   │           ├── Joshua Tree: Spiky, otherworldly form
-│   │   │           ├── Bristlecone Pine: Twisted, ancient appearance
-│   │   │           └── Some palm species: Spiky crown
+│   │   │       └── SPECIALIZED GROWTH FORMS → SPECIAL ADAPTATION GROUP
+│   │   │           ├── EPIPHYTIC GROWTH FORMS
+│   │   │           │   ├── Strangler Fig (Ficus spp.): Develops aerial crown around host tree
+│   │   │           │   ├── Some tropical orchids: Create miniature aerial "canopy" forms
+│   │   │           │   ├── Aerial plants that form tree-like structures without ground contact
+│   │   │           │   ├── All grow on other trees rather than in soil
+│   │   │           │   ├── All develop specialized adaptations for water capture
+│   │   │           │   └── All create unique crown forms unlike typical trees (key trait)
+│   │   │           │
+│   │   │           ├── PNEUMATOPHORE-FORMING TREES
+│   │   │           │   ├── Bald Cypress (Taxodium distichum): Develops "knees" in wet habitats
+│   │   │           │   ├── Black Mangrove (Avicennia germinans): Forms pneumatophores in tidal areas
+│   │   │           │   ├── Trees with specialized breathing roots extending above water/soil
+│   │   │           │   ├── All grow in periodically flooded or saturated soils
+│   │   │           │   ├── All develop specialized root structures visible above ground
+│   │   │           │   └── All create distinctive crown-and-root silhouettes (key trait)
+│   │   │           │
+│   │   │           └── COPPICED & POLLARDED FORMS
+│   │   │               ├── Coppiced trees: Cut to ground, develops multi-stemmed regrowth
+│   │   │               ├── Pollarded trees: Cut higher up, forms distinctive "fist" growths
+│   │   │               ├── Various species managed for pole/fuel/fodder production
+│   │   │               ├── All develop distinctive regrowth patterns after human modification
+│   │   │               ├── All maintain unusual branch architecture and crown forms
+│   │   │               └── All demonstrate resilience through vigorous regrowth (key trait)
 ```
 
 ## What Else Can You See?
@@ -558,4 +871,5 @@ Look at the overall shape or size of your tree.
 * If you can crush a leaf to check for smell: [Smell Path](smell-path.md)
 * If you can see cones, fruits, berries, or seeds: [Cone/Fruit/Seed Path](cone-fruit-seed-path.md)
 * If the tree has flowers: [Flower Path](flower-path.md)
+* If the trunk shape or form is distinctive: [Trunk Shape Path](trunk-shape-path.md)
 * If you can only see the tree's silhouette: [Silhouette Detective Path](silhouette-detective-path.md)
