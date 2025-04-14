@@ -7,6 +7,8 @@ Look at the bark of your tree.
 - [White & Peeling Bark Group](groups/white-peeling-bark-group.md) - Identify trees with striking white or peeling bark
 - [Red & Orange Bark Group](groups/red-orange-bark-group.md) - Discover trees with warm-colored, eye-catching bark
 
+**Helpful Reference:** Learn about different bark types with our [Bark Features Guide](references/bark-features-guide.md)!
+
 ```
 ├── The BARK looks interesting!
 │   ├── What's the main COLOR of the bark?

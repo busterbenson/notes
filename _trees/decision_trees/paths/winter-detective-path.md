@@ -196,6 +196,8 @@ Need help with branching patterns? See our detailed [Branching Patterns Guide](r
 
 ## Bark Detective Clues
 
+Need help with bark identification? See our detailed [Bark Features Guide](references/bark-features-guide.md)!
+
 ├── PATCHY MULTICOLORED BARK (looks like camouflage or puzzle pieces)
 │   ├── California Sycamore: Peeling bark with tan, white, and green patches
 │   │   ├── Looks like camouflage or puzzle pieces

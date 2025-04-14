@@ -16,6 +16,11 @@ Look closely at the leaves or needles of your tree.
 - [Maple Group](groups/maple-group.md) - Explore maples with their star-shaped leaves
 - [Eucalyptus Group](groups/eucalyptus-group.md) - Discover the aromatic introduced eucalyptus species
 
+**Helpful References:**
+- Learn about different [branching patterns](references/branching-patterns-guide.md)
+- Understand [conifer crown shapes](references/conifer-crown-guide.md) 
+- Explore [bark types and textures](references/bark-features-guide.md)
+
 ```
 ├── The LEAVES or NEEDLES look interesting!
 │   ├── What's the BASIC TYPE of leaf/needle?

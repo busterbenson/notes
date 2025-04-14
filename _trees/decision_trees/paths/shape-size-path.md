@@ -12,7 +12,7 @@ Look at the overall shape or size of your tree. This path focuses on features li
 ├── The OVERALL SHAPE or SIZE stands out most!
 │   ├── What SIZE or SHAPE is most distinctive?
 │   │   ├── It's EXTREMELY TALL → TALLEST TREE GROUP
-│   │   │   ├── TOWERING CONIFER CROWN SHAPES
+│   │   │   ├── TOWERING CONIFER CROWN SHAPES (Learn more in our [Conifer Crown Guide](references/conifer-crown-guide.md))
 │   │   │   │   ├── REDWOOD & SEQUOIA GENUS (Sequoia, Sequoiadendron, Metasequoia)
 │   │   │   │   │   ├── Coast Redwood (Sequoia sempervirens): Extremely tall with narrow conical crown
 │   │   │   │   │   ├── Giant Sequoia (Sequoiadendron giganteum): Very tall with cylindrical crown
