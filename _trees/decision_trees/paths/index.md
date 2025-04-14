@@ -30,6 +30,7 @@ This guide includes:
 - **Difficulty Ratings**: Star system (★, ★★, ★★★) to show which identifications are easier or harder
 - **Seasonal Indicators**: Information about when certain features are visible
 - **Cross-Navigation**: "What Else Can You See?" sections to try different paths if you get stuck
+- **Reference Guides**: Educational materials that explain key concepts like [tree shapes](references/tree-shapes-guide.md) and [branching patterns](references/branching-patterns-guide.md)
 
 ## Complete Documentation
 

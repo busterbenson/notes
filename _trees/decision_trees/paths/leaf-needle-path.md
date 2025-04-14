@@ -28,7 +28,7 @@ Look closely at the leaves or needles of your tree.
 │   │   ├── They're flat, broad LEAVES → Go to Broadleaf Features
 │   │   │   ├── What SHAPE are the leaves?
 │   │   │   │   ├── They look like STARS or HANDS with points → Go to Star-Shaped/Lobed Leaves
-│   │   │   │   │   ├── How are the leaves ARRANGED on the branch?
+│   │   │   │   │   ├── How are the leaves ARRANGED on the branch? (See our [Branching Patterns Guide](references/branching-patterns-guide.md) for help)
 │   │   │   │   │   │   ├── OPPOSITE ARRANGEMENT (directly across from each other) → MAPLE GROUP
 │   │   │   │   │   │   │   ├── MAPLE GENUS (Acer)
 │   │   │   │   │   │   │   │   ├── Bigleaf Maple: Very large leaves with 5 deep, pointed lobes

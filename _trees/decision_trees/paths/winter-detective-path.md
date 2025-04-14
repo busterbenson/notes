@@ -12,6 +12,10 @@ This path helps you identify trees when they don't have leaves, flowers, or frui
 4. Check for buds and their arrangement
 5. Look for anything still hanging on the tree (seeds, dried fruits, catkins)
 
+**Helpful References:**
+- Not sure about tree shapes? See [Tree Shapes Guide](references/tree-shapes-guide.md)
+- Confused about branching patterns? Check the [Branching Patterns Guide](references/branching-patterns-guide.md)
+
 ## Tree Shape Clues (what you see from far away)
 
 ├── ROUND-TOPPED TREES (shaped like a lollipop or beach ball)
@@ -95,6 +99,8 @@ This path helps you identify trees when they don't have leaves, flowers, or frui
         └── Look for the characteristic drooping branches
 
 ## Branching Pattern Clues (how branches grow from the trunk)
+
+Need help with branching patterns? See our detailed [Branching Patterns Guide](references/branching-patterns-guide.md)!
 
 ├── OPPOSITE BRANCHES (branches grow directly across from each other like butterfly wings)
 │   ├── Remember: MAD = Maple, Ash, Dogwood (main trees with opposite branches)

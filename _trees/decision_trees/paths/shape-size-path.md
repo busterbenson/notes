@@ -6,6 +6,8 @@ Look at the overall shape or size of your tree. This path focuses on features li
 
 **Important:** If there are no leaves, flowers, fruits, or cones present (such as deciduous trees in winter), try the [Winter Tree Detective Path](winter-detective-path.md) instead.
 
+**Helpful Reference:** Need help understanding different tree shapes? See our [Tree Shapes Guide](references/tree-shapes-guide.md)!
+
 ```
 ├── The OVERALL SHAPE or SIZE stands out most!
 │   ├── What SIZE or SHAPE is most distinctive?

@@ -93,10 +93,21 @@ Each decision node follows a standardized format:
 - Terminal nodes with species identification
 - Occasional redirects to other paths when needed
 
-### 3. Group References
+### 3. Group and Reference Organization
 
-Tree group references use the format:
-- `[Group Name](groups/group-name.md)`
+We've organized supplemental content into two distinct categories:
+
+#### Group Files
+Group files (in the `groups/` directory) are part of the identification process:
+- Used for collections of related trees that share identifiable features
+- Directly linked as an identification outcome
+- Format: `[Group Name](groups/group-name.md)`
+
+#### Reference Guides
+Reference guides (in the `references/` directory) provide educational context:
+- Explain fundamental concepts without directly identifying trees
+- Serve as supplemental learning materials
+- Format: `[Guide Name](references/guide-name.md)`
 
 ### 4. Winter Detective Path
 
@@ -142,6 +153,12 @@ The Winter Detective Path provides specialized guidance for identifying deciduou
    - Retained only the Winter Detective Path due to its unique and essential role for winter identification
    - Streamlined the navigation by focusing on the main feature paths for primary identification
    - Enhanced the Winter Detective Path to cover 100% of deciduous species
+
+8. **Educational Reference Guides**:
+   - Created a new `references/` directory to distinguish educational content from identification paths
+   - Developed comprehensive guides on fundamental concepts like branching patterns and tree shapes
+   - Implemented cross-references from main paths to these educational resources
+   - Maintained the integrity of the identification process while providing additional learning resources
 
 ## Future Enhancement Ideas
 
