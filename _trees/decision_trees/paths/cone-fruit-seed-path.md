@@ -8,6 +8,8 @@ Look at the cones, fruits, or seeds of your tree.
 - [Winged Seed Group](groups/winged-seed-group.md) - Discover trees with helicopter-like winged seeds
 - [Redwood & Sequoia Group](groups/redwood-sequoia-group.md) - Compare the distinctive cones of redwoods and sequoias
 
+**Note:** If there are no leaves, flowers, fruits, or cones present (such as deciduous trees in winter), try the [Winter Tree Detective Path](winter-detective-path.md) instead.
+
 ```
 ├── The CONES, FRUITS, or SEEDS catch my eye!
 │   ├── I see CONES → Go to Cone Features

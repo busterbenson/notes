@@ -16,9 +16,11 @@ The California Tree Identification Guide is designed to help children (ages 8-10
   - Broadleaf trees: 86
   - Other (Joshua Tree, California Fan Palm): 3
 - **Path Types**:
-  - 6 Main Feature Paths
+  - 7 Main Feature Paths
   - 6 Detective Paths
   - 10 Group-specific Pages
+
+For detailed path coverage statistics and analysis, see the [Coverage Analysis](/decision_trees/coverage/README.md) directory.
 
 ## Design Decisions
 
@@ -33,6 +35,7 @@ Instead of traditional taxonomic organization, we created multiple entry points 
   - Cone/Fruit/Seed Path (cone-fruit-seed-path.md)
   - Flower Path (flower-path.md)
   - Shape/Size Path (shape-size-path.md)
+  - Trunk Shape Path (trunk-shape-path.md)
 
 - **Detective Paths**:
   - Leaf Detective Path (leaf-detective-path.md)
@@ -132,6 +135,13 @@ Detective paths provide more technical information using the same visual structu
    - Applied ratings consistently to conifer identification
    - Added difficulty guide legend explaining the rating system
 
+6. **Trunk Shape Path Addition**:
+   - Created a comprehensive trunk-shape-path.md focusing on trunk form and characteristics
+   - Organized according to four main categories: Number of Trunks, Branching Height, Trunk Straightness, and Bark Features
+   - Ensured complete coverage of all 165 tree species across categories
+   - Implemented both "I'm Not Sure" options and difficulty ratings
+   - Included cross-navigation to related paths
+
 ## Future Enhancement Ideas
 
 1. **Quick Reference Cards**: Printable one-page guides for common trees
@@ -158,4 +168,4 @@ When updating path files:
 3. Ensure consistency in formatting and navigation structure
 4. Review kid-friendly language throughout all sections
 
-Last Updated: April 11, 2025
+Last Updated: April 14, 2025

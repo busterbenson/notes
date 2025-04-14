@@ -13,6 +13,7 @@ What catches my eye about this tree?
 ├── The BARK looks interesting! → [Go to Bark Path](bark-path.md)
 ├── The LEAVES or NEEDLES SMELL interesting when crushed! → [Go to Smell Path](smell-path.md)
 ├── The OVERALL SHAPE or SIZE stands out most! → [Go to Shape/Size Path](shape-size-path.md)
+├── The TRUNK SHAPE or FORM is most distinctive! → [Go to Trunk Shape Path](trunk-shape-path.md)
 └── Nothing really stands out about this tree... → See below
     ├── I can see the LEAVES up close → [Go to Leaf Detective Path](leaf-detective-path.md)
     ├── I can see the NEEDLES up close → [Go to Needle Detective Path](needle-detective-path.md)
@@ -39,5 +40,7 @@ This guide includes:
 ## Complete Documentation
 
 For detailed information about this project, including design decisions, tree coverage statistics, and future enhancement plans, see [PROJECT_DECISIONS.md](PROJECT_DECISIONS.md).
+
+For detailed analysis of path coverage, including which trees are included in each path and path completeness statistics, see our [Coverage Analysis](/decision_trees/coverage/README.md).
 
 *Note: This guide covers 165 tree species or genera commonly found in California, including both native and introduced species.*

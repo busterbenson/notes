@@ -10,6 +10,8 @@ Look at the flowers of your tree.
 
 *Most trees flower in spring to early summer. If you don't see flowers, it might be the wrong season - remember when you see trees flowering so you can identify them next year!*
 
+**Note:** If there are no leaves, flowers, fruits, or cones present (such as deciduous trees in winter), try the [Winter Tree Detective Path](winter-detective-path.md) instead.
+
 **Special Feature Pages:**
 - [Flowering Trees Group](groups/flowering-trees-group.md) - Explore spectacular flowering trees of California
 

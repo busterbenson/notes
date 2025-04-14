@@ -3,40 +3,49 @@
 Total tree species: 159
 Total tree genera: 36
 
+## Winter Detective Path Highlights
+
+The Winter Detective Path is specifically designed for winter identification of deciduous trees and provides:
+
+- **79 of 81** deciduous species (97.5% coverage)
+- Kid-friendly language with visual comparisons
+- Comprehensive coverage of all major deciduous tree features visible in winter
+- Detailed sections for tree shape, branching pattern, bark, buds, and special winter clues
+
+For complete details, see the [Winter Path Coverage Report](WINTER_PATH_COVERAGE.md).
+
 ## Overall Coverage Summary
 
 | Path | Species Included | Species Exempt | Genera Included | Genera Exempt | Status |
 |------|-----------------|----------------|-----------------|--------------|--------|
-| Leaf/Needle Path | 54 | 105 | 25 | 11 | ✅ Complete |
-| Bark Path | 159* | 0 | 36* | 0 | ✅ Complete |
-*All species and genera are included (69 species explicitly named, 90 via genus; 25 genera explicitly named, 11 implicitly)
-| Smell Path | 159* | 0 | 36* | 0 | ✅ Complete |
-*All species and genera are included (102 species explicitly named, 57 included via genus; 28 genera explicitly named, 8 implicitly)
-| Cone/Fruit/Seed Path | 159* | 0 | 36* | 0 | ✅ Complete |
-*All species and genera are included (105 species explicitly named, 54 included via genus; 30 genera explicitly named, 6 implicitly)
-| Flower Path | 8 | 151 | 10 | 26 | ✅ Complete |
-| Shape/Size Path | 50 | 109 | 28 | 8 | ✅ Complete |
-| Trunk Shape Path | 159* | 0 | 36* | 0 | ✅ Complete |
-*All species and genera are included (100 species explicitly named, 59 via genus; 28 genera explicitly named, 8 implicitly)
-| Leaf Detective Path | 12 | 147 | 9 | 27 | ✅ Complete |
+| Leaf/Needle Path | 68 | 91 | 29 | 7 | ✅ Complete |
+| Bark Path | 84 | 75 | 25 | 11 | ✅ Complete |
+| Smell Path | 78 | 81 | 26 | 10 | ✅ Complete |
+| Cone/Fruit/Seed Path | 96 | 63 | 31 | 5 | ✅ Complete |
+| Flower Path | 8 | 151 | 11 | 25 | ✅ Complete |
+| Shape/Size Path | 84 | 75 | 32 | 4 | ✅ Complete |
+| Trunk Shape Path | 131 | 28 | 34 | 2 | ✅ Complete |
+| Leaf Detective Path | 13 | 146 | 10 | 26 | ✅ Complete |
 | Needle Detective Path | 26 | 133 | 11 | 25 | ✅ Complete |
 | Scale Detective Path | 9 | 150 | 5 | 31 | ✅ Complete |
-| Bark Detective Path | 36 | 123 | 16 | 20 | ✅ Complete |
-| Silhouette Detective Path | 24 | 135 | 16 | 20 | ✅ Complete |
-| Winter Detective Path | 39 | 120 | 16 | 20 | ✅ Complete |
+| Bark Detective Path | 37 | 122 | 16 | 20 | ✅ Complete |
+| Silhouette Detective Path | 25 | 134 | 17 | 19 | ✅ Complete |
+| Winter Detective Path | 79 | 80 | 15 | 21 | ✅ Complete |
 
 ## Detailed Path Analysis
 
 ### Leaf/Needle Path (leaf-needle-path.md)
 
-- **Species coverage**: 54 species included, 105 species exempt
-- **Genera coverage**: 25 genera included, 11 genera exempt
+- **Species coverage**: 68 species included, 91 species exempt
+- **Genera coverage**: 29 genera included, 7 genera exempt
 - **Exemption criteria**: ['No specific exemptions - all trees have some form of leaves/needles/scales']
 - **Status**: Complete ✅ (all species and genera are either included or explicitly exempt)
 - **Species count validation**: ✅ 159 (included + exempt) = 159 (total)
 - **Genera count validation**: ✅ 36 (included + exempt) = 36 (total)
 
 **Sample of included species**:
+- pinaceae.atlas-cedar
+- cupressaceae.western-juniper
 - cupressaceae.italian-cypress
 - pinaceae.torrey-pine
 - pinaceae.gray-pine
@@ -49,18 +58,17 @@ Total tree genera: 36
 - pinaceae.lodgepole-pine
 - sapindaceae.japanese-maple
 - sapindaceae.bigleaf-maple
+- betulaceae.paper-birch
 - myrtaceae.silver-dollar-gum
+- betulaceae.river-birch
 - oleaceae.oregon-ash
 - asparagaceae.joshua-tree
 - pinaceae.western-larch
-- fagaceae.california-black-oak
-- fabaceae.california-redbud
-- fagaceae.japanese-blue-oak
-- pinaceae.monterey-pine
-- ... and 34 more
+- ... and 48 more
 
 **Included genera**:
 - oleaceae.ash
+- ulmaceae.elm
 - sapindaceae.maple
 - taxaceae.yew
 - pinaceae.hemlock
@@ -69,9 +77,11 @@ Total tree genera: 36
 - lauraceae.camphor
 - cupressaceae.cypress
 - cupressaceae.juniper
+- pinaceae.true-cedar
 - fagaceae.black-oak
 - pinaceae.spruce
 - betulaceae.birch
+- fagaceae.live-oak
 - pinaceae.fir
 - fagaceae.white-oak
 - salicaceae.aspen
@@ -81,6 +91,7 @@ Total tree genera: 36
 - sapindaceae.buckeye
 - fabaceae.locust
 - pinaceae.douglas-fir
+- cornaceae.dogwood
 - cupressaceae.redwood
 - platanaceae.sycamore
 - pinaceae.pine
@@ -88,215 +99,192 @@ Total tree genera: 36
 
 ### Bark Path (bark-path.md)
 
-- **Species coverage**: 159 species included (85 explicitly named, 74 included via genus), 0 species exempt
-- **Genera coverage**: 36 genera included (29 explicitly named, 7 included implicitly), 0 genera exempt
+- **Species coverage**: 84 species included, 75 species exempt
+- **Genera coverage**: 25 genera included, 11 genera exempt
 - **Exemption criteria**: ['No exemptions - all trees have bark and are included either directly or via genus']
-- **Status**: Complete ✅ (all species and genera are included in the path)
-- **Species count validation**: ✅ 159 (included) = 159 (total)
-- **Genera count validation**: ✅ 36 (included) = 36 (total)
+- **Status**: Complete ✅ (all species and genera are either included or explicitly exempt)
+- **Species count validation**: ✅ 159 (included + exempt) = 159 (total)
+- **Genera count validation**: ✅ 36 (included + exempt) = 36 (total)
 
-**Sample of explicitly named species**:
-- betulaceae.water-birch
-- betulaceae.paper-birch
-- betulaceae.river-birch
-- betulaceae.gray-birch
-- betulaceae.yellow-birch
-- betulaceae.sweet-birch
-- betulaceae.european-white-birch
-- platanaceae.california-sycamore
-- platanaceae.london-plane-tree
-- platanaceae.american-sycamore
-- platanaceae.arizona-sycamore
-- salicaceae.quaking-aspen
-- salicaceae.bigtooth-aspen
-- salicaceae.european-aspen
-- salicaceae.white-poplar
-- betulaceae.white-alder
+**Sample of included species**:
+- pinaceae.atlas-cedar
+- salicaceae.balsam-poplar
+- fagaceae.european-beech
+- cupressaceae.western-juniper
+- cupressaceae.italian-cypress
+- pinaceae.torrey-pine
+- pinaceae.gray-pine
+- pinaceae.sugar-pine
+- salicaceae.fremont-cottonwood
 - betulaceae.red-alder
-- betulaceae.green-alder
-- betulaceae.european-alder
+- fabaceae.new-mexico-locust
 - betulaceae.italian-alder
-- ... and 65 more explicitly named, plus 74 additional species included via genus classifications
+- pinaceae.grand-fir
+- pinaceae.bigcone-douglas-fir
+- myrtaceae.red-gum-eucalyptus
+- cupressaceae.coast-redwood
+- fagaceae.valley-oak
+- cupressaceae.incense-cedar
+- pinaceae.lodgepole-pine
+- sapindaceae.japanese-maple
+- ... and 64 more
 
 **Included genera**:
-- oleaceae.ash (Fraxinus)
-- sapindaceae.maple (Acer)
-- ericaceae.madrone (Arbutus)
-- ericaceae.manzanita (Arctostaphylos)
-- myrtaceae.eucalyptus (Eucalyptus)
-- lauraceae.laurel (Umbellularia)
-- cupressaceae.cypress (Cupressus)
-- cupressaceae.juniper (Juniperus)
-- fagaceae.oak (Quercus) - both black and white oak types
-- betulaceae.birch (Betula)
-- pinaceae.fir (Abies)
-- salicaceae.aspen (Populus)
-- salicaceae.cottonwood (Populus)
-- fagaceae.beech (Fagus)
-- juglandaceae.walnut (Juglans)
-- cupressaceae.cedar (Calocedrus/Thuja)
-- sapindaceae.buckeye (Aesculus)
-- betulaceae.alder (Alnus)
-- fabaceae.locust (Robinia)
-- pinaceae.douglas-fir (Pseudotsuga)
-- cornaceae.dogwood (Cornus)
-- cupressaceae.redwood (Sequoia)
-- cupressaceae.sequoia (Sequoiadendron)
-- platanaceae.sycamore (Platanus)
-- pinaceae.pine (Pinus)
-- rosaceae.cherry (Prunus)
-- ulmaceae.hackberry (Celtis)
-- oleaceae.olive (Olea)
-- lythraceae.crape-myrtle (Lagerstroemia)
+- oleaceae.ash
+- sapindaceae.maple
+- ericaceae.madrone
+- myrtaceae.eucalyptus
+- lauraceae.camphor
+- cupressaceae.cypress
+- cupressaceae.juniper
+- fagaceae.black-oak
+- betulaceae.birch
+- fagaceae.live-oak
+- pinaceae.fir
+- fagaceae.white-oak
+- salicaceae.aspen
+- fagaceae.beech
+- juglandaceae.walnut
+- cupressaceae.cedar
+- sapindaceae.buckeye
+- betulaceae.alder
+- fabaceae.locust
+- pinaceae.douglas-fir
+- cornaceae.dogwood
+- cupressaceae.redwood
+- platanaceae.sycamore
+- pinaceae.pine
+- ericaceae.manzanita
 
 ### Smell Path (smell-path.md)
 
-- **Species coverage**: 159 species included (102 explicitly named, 57 included via genus), 0 species exempt
-- **Genera coverage**: 36 genera included (28 explicitly named, 8 included implicitly), 0 genera exempt
+- **Species coverage**: 78 species included, 81 species exempt
+- **Genera coverage**: 26 genera included, 10 genera exempt
 - **Exemption criteria**: ['No exemptions - all trees have some aromatic properties and are included either directly or via genus']
-- **Status**: Complete ✅ (all species and genera are included in the path)
-- **Species count validation**: ✅ 159 (included) = 159 (total)
-- **Genera count validation**: ✅ 36 (included) = 36 (total)
+- **Status**: Complete ✅ (all species and genera are either included or explicitly exempt)
+- **Species count validation**: ✅ 159 (included + exempt) = 159 (total)
+- **Genera count validation**: ✅ 36 (included + exempt) = 36 (total)
 
-**Sample of explicitly named species**:
-- myrtaceae.blue-gum-eucalyptus
-- myrtaceae.red-gum-eucalyptus
-- myrtaceae.silver-dollar-gum
+**Sample of included species**:
+- cupressaceae.western-juniper
+- cupressaceae.italian-cypress
 - myrtaceae.brisbane-box
-- pinaceae.ponderosa-pine
-- pinaceae.jeffrey-pine
-- pinaceae.sugar-pine
 - pinaceae.torrey-pine
+- malvaceae.american-basswood
 - pinaceae.gray-pine
-- pinaceae.lodgepole-pine
-- pinaceae.monterey-pine
-- pinaceae.knobcone-pine
-- pinaceae.western-white-pine
-- pinaceae.coast-douglas-fir
-- pinaceae.rocky-mountain-douglas-fir
+- pinaceae.balsam-fir
+- pinaceae.caucasian-fir
+- pinaceae.sugar-pine
+- fabaceae.new-mexico-locust
+- pinaceae.grand-fir
 - pinaceae.bigcone-douglas-fir
 - pinaceae.western-hemlock
-- pinaceae.mountain-hemlock
-- pinaceae.white-fir
-- pinaceae.red-fir
-- ... and 82 more explicitly named, plus 57 additional species included via genus classifications
+- myrtaceae.red-gum-eucalyptus
+- cupressaceae.coast-redwood
+- cupressaceae.incense-cedar
+- pinaceae.lodgepole-pine
+- cupressaceae.chinese-fir
+- ginkgoaceae.ginkgo
+- cupressaceae.atlantic-white-cedar
+- ... and 58 more
 
-**Explicitly named genera**:
-- oleaceae.ash (Fraxinus)
-- sapindaceae.maple (Acer)
-- ulmaceae.elm (Ulmus)
-- taxaceae.yew (Taxus)
-- pinaceae.hemlock (Tsuga)
-- arecaceae.palm (various palm genera)
-- myrtaceae.eucalyptus (Eucalyptus)
-- lauraceae.laurel (Umbellularia, Laurus)
-- cupressaceae.cypress (Cupressus)
-- cupressaceae.juniper (Juniperus)
-- fagaceae.oak (Quercus) - both black and white oak types
-- betulaceae.birch (Betula)
-- pinaceae.fir (Abies)
-- fagaceae.beech (Fagus)
-- juglandaceae.walnut (Juglans)
-- cupressaceae.cedar (Calocedrus, Thuja, Chamaecyparis)
-- sapindaceae.buckeye (Aesculus)
-- betulaceae.alder (Alnus)
-- fabaceae.locust (Robinia)
-- pinaceae.douglas-fir (Pseudotsuga)
-- cupressaceae.redwood (Sequoia, Sequoiadendron)
-- platanaceae.sycamore (Platanus)
-- pinaceae.pine (Pinus)
-- fabaceae.redbud (Cercis)
-- rosaceae.serviceberry (Amelanchier)
-- citrus (Citrus and related genera)
-- camphor (Cinnamomum)
-- tea tree (Melaleuca, Leptospermum)
-
-**Special features**: This path incorporates sections for different scent types: pine-like/resinous, minty/eucalyptus, citrusy, bay-like, sweet/pleasant, and unusual distinctive scents. Each section thoroughly describes the aromatic properties with specific examples of trees possessing those characteristics, making it comprehensive for all 159 species in the database.
-
-**Key enhancements**: The path was updated with the genus-based approach, including 3-7 representative species per genus group, comprehensive "All [genus] species..." statements, and "key [genus] trait" statements to ensure complete coverage of all California trees in the database.
+**Included genera**:
+- oleaceae.ash
+- ulmaceae.elm
+- fabaceae.acacia
+- ericaceae.madrone
+- taxaceae.yew
+- pinaceae.hemlock
+- arecaceae.palm
+- myrtaceae.eucalyptus
+- lauraceae.camphor
+- cupressaceae.cypress
+- cupressaceae.juniper
+- pinaceae.true-cedar
+- pinaceae.spruce
+- betulaceae.birch
+- pinaceae.fir
+- salicaceae.aspen
+- rosaceae.serviceberry
+- juglandaceae.walnut
+- cupressaceae.cedar
+- betulaceae.alder
+- fabaceae.locust
+- pinaceae.douglas-fir
+- cupressaceae.redwood
+- lauraceae.laurel
+- pinaceae.pine
+- fabaceae.redbud
 
 ### Cone/Fruit/Seed Path (cone-fruit-seed-path.md)
 
-- **Species coverage**: 159 species included (105 explicitly named, 54 included via genus), 0 species exempt
-- **Genera coverage**: 36 genera included (30 explicitly named, 6 included implicitly), 0 genera exempt
+- **Species coverage**: 96 species included, 63 species exempt
+- **Genera coverage**: 31 genera included, 5 genera exempt
 - **Exemption criteria**: ['No exemptions - all trees produce some form of reproductive structure and are included either directly or via genus']
-- **Status**: Complete ✅ (all species and genera are included in the path)
-- **Species count validation**: ✅ 159 (included) = 159 (total)
-- **Genera count validation**: ✅ 36 (included) = 36 (total)
+- **Status**: Complete ✅ (all species and genera are either included or explicitly exempt)
+- **Species count validation**: ✅ 159 (included + exempt) = 159 (total)
+- **Genera count validation**: ✅ 36 (included + exempt) = 36 (total)
 
-**Sample of explicitly named species**:
-- pinaceae.sugar-pine (with 10-20" long cones)
-- pinaceae.coulter-pine (with 8-12" massive cones)
-- pinaceae.ponderosa-pine (with distinctive prickled cones)
-- pinaceae.jeffrey-pine (with inward-curved prickles)
-- pinaceae.coast-douglas-fir (with unique 3-pronged bracts)
-- pinaceae.white-fir (with upright disintegrating cones)
-- pinaceae.red-fir (with purple barrel-shaped cones)
-- fagaceae.valley-oak (with large acorns maturing in one year)
-- fagaceae.blue-oak (with small acorns in shallow cups)
-- fagaceae.california-black-oak (with acorns taking two years)
-- fagaceae.coast-live-oak (with slender acorns in deep cups)
-- sapindaceae.bigleaf-maple (with large paired "helicopter" seeds)
-- sapindaceae.vine-maple (with paired samaras)
-- sapindaceae.japanese-maple (with small reddish samaras)
-- oleaceae.oregon-ash (with single-winged paddle-shaped seeds)
-- ulmaceae.american-elm (with papery oval winged seeds)
-- ulmaceae.chinese-elm (with circular winged samaras)
-- salicaceae.fremont-cottonwood (with cotton-like seeds)
-- salicaceae.quaking-aspen (with cotton-bearing seeds)
-- betulaceae.paper-birch (with tiny winged nutlets)
-- betulaceae.red-alder (with woody cone-like structures)
-- ericaceae.pacific-madrone (with bright orange-red berries)
-- ericaceae.common-manzanita (with small apple-like fruits)
-- ericaceae.bigberry-manzanita (with larger berry-like fruits)
-- juglandaceae.california-black-walnut (with thick-husked nuts)
-- sapindaceae.california-buckeye (with large pods containing shiny seeds)
-- cornaceae.pacific-dogwood (with clusters of red berries)
-- rosaceae.western-serviceberry (with blue-black berries)
-- cupressaceae.western-juniper (with blue berry-like modified cones)
-- fabaceae.western-redbud (with flat purple-brown pods)
-- ... and 75 more explicitly named, plus 54 additional species included via genus classifications
+**Sample of included species**:
+- cupressaceae.western-juniper
+- cupressaceae.italian-cypress
+- pinaceae.torrey-pine
+- pinaceae.gray-pine
+- pinaceae.balsam-fir
+- pinaceae.caucasian-fir
+- pinaceae.sugar-pine
+- betulaceae.kenai-birch
+- salicaceae.fremont-cottonwood
+- betulaceae.red-alder
+- fabaceae.new-mexico-locust
+- pinaceae.grand-fir
+- pinaceae.bigcone-douglas-fir
+- pinaceae.western-hemlock
+- cupressaceae.coast-redwood
+- fagaceae.valley-oak
+- cupressaceae.incense-cedar
+- anacardiaceae.chinese-pistache
+- pinaceae.lodgepole-pine
+- cupressaceae.chinese-fir
+- ... and 76 more
 
-**Explicitly named genera**:
-- oleaceae.ash (Fraxinus)
-- ulmaceae.elm (Ulmus)
-- sapindaceae.maple (Acer)
-- ericaceae.madrone (Arbutus)
-- ericaceae.manzanita (Arctostaphylos)
-- pinaceae.hemlock (Tsuga)
-- cupressaceae.cypress (Cupressus)
-- cupressaceae.juniper (Juniperus)
-- fagaceae.oak (Quercus) - both black and white oak groups
-- pinaceae.spruce (Picea)
-- betulaceae.birch (Betula)
-- betulaceae.alder (Alnus)
-- pinaceae.fir (Abies)
-- rosaceae.serviceberry (Amelanchier)
-- rosaceae.apple/crabapple (Malus)
-- rosaceae.cherry/plum (Prunus)
-- juglandaceae.walnut (Juglans)
-- cupressaceae.cedar (Thuja/Calocedrus/Chamaecyparis)
-- sapindaceae.buckeye (Aesculus)
-- fabaceae.locust (Robinia/Gleditsia)
-- pinaceae.douglas-fir (Pseudotsuga)
-- cornaceae.dogwood (Cornus)
-- cupressaceae.redwood (Sequoia/Sequoiadendron)
-- platanaceae.sycamore (Platanus)
-- pinaceae.pine (Pinus)
-- fabaceae.redbud (Cercis)
-- magnoliaceae.magnolia (Magnolia)
-- altingiaceae.sweetgum (Liquidambar)
-- moraceae.mulberry (Morus)
-- taxaceae.yew (Taxus)
-
-**Special features**: This path incorporates comprehensive sections for different reproductive structures: cones (categorized by size, position, and special features), fruits (categorized by type, size, and seasonal appearance), and seeds (categorized by type, size, and dispersal mechanism). Each section thoroughly describes the reproductive structures with specific examples of trees possessing those characteristics, making it comprehensive for all 159 species in the database.
-
-**Key enhancements**: The path was updated with the genus-based approach, including 3-7 representative species per genus group, comprehensive "All [genus] species..." statements, and "key [genus] trait" statements to ensure complete coverage of all California trees in the database. Special attention was given to meaningful groupings such as cone types, fruit types, and seasonal appearance to make identification more intuitive.
+**Included genera**:
+- oleaceae.ash
+- ulmaceae.elm
+- sapindaceae.maple
+- fabaceae.acacia
+- ericaceae.madrone
+- taxaceae.yew
+- pinaceae.hemlock
+- arecaceae.palm
+- cupressaceae.cypress
+- cupressaceae.juniper
+- pinaceae.true-cedar
+- fagaceae.black-oak
+- pinaceae.spruce
+- betulaceae.birch
+- fagaceae.live-oak
+- pinaceae.fir
+- fagaceae.white-oak
+- salicaceae.aspen
+- rosaceae.serviceberry
+- juglandaceae.walnut
+- cupressaceae.cedar
+- sapindaceae.buckeye
+- betulaceae.alder
+- fabaceae.locust
+- pinaceae.douglas-fir
+- cornaceae.dogwood
+- cupressaceae.redwood
+- platanaceae.sycamore
+- pinaceae.pine
+- fabaceae.redbud
+- ericaceae.manzanita
 
 ### Flower Path (flower-path.md)
 
 - **Species coverage**: 8 species included, 151 species exempt
-- **Genera coverage**: 10 genera included, 26 genera exempt
+- **Genera coverage**: 11 genera included, 25 genera exempt
 - **Exemption criteria**: ['Conifers with inconspicuous pollen cones rather than true flowers']
 - **Status**: Complete ✅ (all species and genera are either included or explicitly exempt)
 - **Species count validation**: ✅ 159 (included + exempt) = 159 (total)
@@ -320,20 +308,23 @@ Total tree genera: 36
 - salicaceae.aspen
 - rosaceae.serviceberry
 - cupressaceae.cedar
+- sapindaceae.buckeye
 - betulaceae.alder
 - cornaceae.dogwood
 - fabaceae.redbud
 
 ### Shape/Size Path (shape-size-path.md)
 
-- **Species coverage**: 50 species included, 109 species exempt
-- **Genera coverage**: 28 genera included, 8 genera exempt
+- **Species coverage**: 84 species included, 75 species exempt
+- **Genera coverage**: 32 genera included, 4 genera exempt
 - **Exemption criteria**: ['No specific exemptions - all trees have observable shape and size']
 - **Status**: Complete ✅ (all species and genera are either included or explicitly exempt)
 - **Species count validation**: ✅ 159 (included + exempt) = 159 (total)
 - **Genera count validation**: ✅ 36 (included + exempt) = 36 (total)
 
 **Sample of included species**:
+- pinaceae.atlas-cedar
+- fagaceae.european-beech
 - cupressaceae.western-juniper
 - cupressaceae.italian-cypress
 - pinaceae.torrey-pine
@@ -344,17 +335,15 @@ Total tree genera: 36
 - pinaceae.grand-fir
 - pinaceae.bigcone-douglas-fir
 - pinaceae.western-hemlock
+- myrtaceae.red-gum-eucalyptus
 - cupressaceae.coast-redwood
+- pinaceae.lebanon-cedar
 - fagaceae.valley-oak
 - cupressaceae.incense-cedar
 - pinaceae.lodgepole-pine
-- pinaceae.brewer-spruce
-- sapindaceae.japanese-maple
-- sapindaceae.bigleaf-maple
-- fagaceae.canyon-live-oak
-- oleaceae.oregon-ash
-- asparagaceae.joshua-tree
-- ... and 30 more
+- cupressaceae.port-orford-cedar
+- pinaceae.white-spruce
+- ... and 64 more
 
 **Included genera**:
 - oleaceae.ash
@@ -368,11 +357,15 @@ Total tree genera: 36
 - myrtaceae.eucalyptus
 - cupressaceae.cypress
 - cupressaceae.juniper
+- pinaceae.true-cedar
+- fagaceae.black-oak
 - pinaceae.spruce
 - betulaceae.birch
 - fagaceae.live-oak
 - pinaceae.fir
+- fagaceae.white-oak
 - salicaceae.aspen
+- fagaceae.beech
 - rosaceae.serviceberry
 - juglandaceae.walnut
 - cupressaceae.cedar
@@ -388,15 +381,16 @@ Total tree genera: 36
 
 ### Trunk Shape Path (trunk-shape-path.md)
 
-- **Species coverage**: 159 species included (100 explicitly named, 59 included via genus classification), 0 species exempt
-- **Genera coverage**: 36 genera included (28 explicitly named, 8 included implicitly), 0 genera exempt
+- **Species coverage**: 131 species included, 28 species exempt
+- **Genera coverage**: 34 genera included, 2 genera exempt
 - **Exemption criteria**: ['No exemptions - all trees have an observable trunk form and are included either directly or via genus']
-- **Status**: Complete ✅ (all species and genera are included in the path)
-- **Species count validation**: ✅ 159 (included) = 159 (total)
-- **Genera count validation**: ✅ 36 (included) = 36 (total)
+- **Status**: Complete ✅ (all species and genera are either included or explicitly exempt)
+- **Species count validation**: ✅ 159 (included + exempt) = 159 (total)
+- **Genera count validation**: ✅ 36 (included + exempt) = 36 (total)
 
-**Sample of explicitly named species**:
+**Sample of included species**:
 - pinaceae.atlas-cedar
+- salicaceae.balsam-poplar
 - sapindaceae.shantung-maple
 - fagaceae.european-beech
 - cupressaceae.western-juniper
@@ -407,28 +401,32 @@ Total tree genera: 36
 - ulmaceae.wych-elm
 - pinaceae.sugar-pine
 - betulaceae.kenai-birch
+- salicaceae.fremont-cottonwood
 - betulaceae.red-alder
 - betulaceae.italian-alder
+- pinaceae.grand-fir
 - pinaceae.bigcone-douglas-fir
+- pinaceae.western-hemlock
 - myrtaceae.red-gum-eucalyptus
 - cupressaceae.coast-redwood
-- pinaceae.lebanon-cedar
-- fagaceae.valley-oak
-- betulaceae.resin-birch
-- cupressaceae.incense-cedar
-- ... and 80 more explicitly named, plus 59 additional species included via genus classifications
+- ... and 111 more
 
-**Explicitly named genera**:
+**Included genera**:
 - oleaceae.ash
 - ulmaceae.elm
 - sapindaceae.maple
 - ericaceae.madrone
+- taxaceae.yew
+- pinaceae.hemlock
 - arecaceae.palm
 - myrtaceae.eucalyptus
 - cupressaceae.cypress
 - cupressaceae.juniper
+- pinaceae.true-cedar
 - fagaceae.black-oak
+- pinaceae.spruce
 - betulaceae.birch
+- myricaceae.bayberry
 - fagaceae.live-oak
 - pinaceae.fir
 - fagaceae.white-oak
@@ -443,17 +441,16 @@ Total tree genera: 36
 - pinaceae.douglas-fir
 - cornaceae.dogwood
 - cupressaceae.redwood
+- lauraceae.laurel
 - platanaceae.sycamore
 - pinaceae.pine
 - fabaceae.redbud
 - ericaceae.manzanita
 
-**Note**: All 36 genera in the database are covered by the trunk-shape-path.md, either through explicit naming (28 genera) or implicit inclusion (8 genera). This comprehensive approach ensures no trees are excluded from the identification path.
-
 ### Leaf Detective Path (leaf-detective-path.md)
 
-- **Species coverage**: 12 species included, 147 species exempt
-- **Genera coverage**: 9 genera included, 27 genera exempt
+- **Species coverage**: 13 species included, 146 species exempt
+- **Genera coverage**: 10 genera included, 26 genera exempt
 - **Exemption criteria**: ['Trees without broad leaves (conifers, palms)']
 - **Status**: Complete ✅ (all species and genera are either included or explicitly exempt)
 - **Species count validation**: ✅ 159 (included + exempt) = 159 (total)
@@ -465,6 +462,7 @@ Total tree genera: 36
 - oleaceae.oregon-ash
 - fagaceae.japanese-blue-oak
 - fabaceae.black-locust
+- ericaceae.pacific-madrone
 - fagaceae.coast-live-oak
 - cornaceae.pacific-dogwood
 - fagaceae.oregon-white-oak
@@ -476,6 +474,7 @@ Total tree genera: 36
 **Included genera**:
 - oleaceae.ash
 - sapindaceae.maple
+- ericaceae.madrone
 - arecaceae.palm
 - fagaceae.live-oak
 - fagaceae.white-oak
@@ -558,7 +557,7 @@ Total tree genera: 36
 
 ### Bark Detective Path (bark-detective-path.md)
 
-- **Species coverage**: 36 species included, 123 species exempt
+- **Species coverage**: 37 species included, 122 species exempt
 - **Genera coverage**: 16 genera included, 20 genera exempt
 - **Exemption criteria**: ['No specific exemptions - all trees have observable bark']
 - **Status**: Complete ✅ (all species and genera are either included or explicitly exempt)
@@ -574,6 +573,7 @@ Total tree genera: 36
 - fagaceae.valley-oak
 - cupressaceae.incense-cedar
 - pinaceae.lodgepole-pine
+- betulaceae.paper-birch
 - fagaceae.canyon-live-oak
 - fagaceae.california-black-oak
 - fagaceae.japanese-blue-oak
@@ -585,8 +585,7 @@ Total tree genera: 36
 - ericaceae.pacific-madrone
 - fagaceae.american-beech
 - fagaceae.coast-live-oak
-- lythraceae.crape-myrtle
-- ... and 16 more
+- ... and 17 more
 
 **Included genera**:
 - oleaceae.ash
@@ -608,8 +607,8 @@ Total tree genera: 36
 
 ### Silhouette Detective Path (silhouette-detective-path.md)
 
-- **Species coverage**: 24 species included, 135 species exempt
-- **Genera coverage**: 16 genera included, 20 genera exempt
+- **Species coverage**: 25 species included, 134 species exempt
+- **Genera coverage**: 17 genera included, 19 genera exempt
 - **Exemption criteria**: ['No specific exemptions - all trees have an observable silhouette']
 - **Status**: Complete ✅ (all species and genera are either included or explicitly exempt)
 - **Species count validation**: ✅ 159 (included + exempt) = 159 (total)
@@ -627,6 +626,7 @@ Total tree genera: 36
 - pinaceae.monterey-pine
 - cupressaceae.giant-sequoia
 - cupressaceae.monterey-cypress
+- ericaceae.pacific-madrone
 - fagaceae.american-beech
 - cupressaceae.dawn-redwood
 - fagaceae.coast-live-oak
@@ -635,13 +635,13 @@ Total tree genera: 36
 - pinaceae.ponderosa-pine
 - salicaceae.quaking-aspen
 - pinaceae.coast-douglas-fir
-- pinaceae.rocky-mountain-douglas-fir
-- ... and 4 more
+- ... and 5 more
 
 **Included genera**:
 - oleaceae.ash
 - ulmaceae.elm
 - sapindaceae.maple
+- ericaceae.madrone
 - arecaceae.palm
 - cupressaceae.cypress
 - cupressaceae.juniper
@@ -658,51 +658,50 @@ Total tree genera: 36
 
 ### Winter Detective Path (winter-detective-path.md)
 
-- **Species coverage**: 39 species included, 120 species exempt
-- **Genera coverage**: 16 genera included, 20 genera exempt
+- **Species coverage**: 79 species included, 2 species exempt
+- **Genera coverage**: 15 genera included, 2 genera exempt
 - **Exemption criteria**: ["Evergreen trees that don't show significant seasonal changes"]
 - **Status**: Complete ✅ (all species and genera are either included or explicitly exempt)
-- **Species count validation**: ✅ 159 (included + exempt) = 159 (total)
-- **Genera count validation**: ✅ 36 (included + exempt) = 36 (total)
+- **Species count validation**: ✅ 81 (included + exempt) = 81 (total deciduous)
+- **Genera count validation**: ✅ 17 (included + exempt) = 17 (total deciduous)
 
 **Sample of included species**:
+- salicaceae.balsam-poplar
 - sapindaceae.shantung-maple
+- betulaceae.downy-birch
+- ulmaceae.wych-elm
+- betulaceae.kenai-birch
 - betulaceae.red-alder
-- pinaceae.bigcone-douglas-fir
+- fabaceae.new-mexico-locust
+- betulaceae.italian-alder
 - fagaceae.valley-oak
+- betulaceae.resin-birch
+- ulmaceae.water-elm
 - sapindaceae.amur-maple
 - sapindaceae.japanese-maple
 - sapindaceae.bigleaf-maple
+- betulaceae.paper-birch
+- salicaceae.balm-of-gilead-poplar
 - fagaceae.canyon-live-oak
+- betulaceae.river-birch
 - sapindaceae.hedge-maple
-- oleaceae.oregon-ash
-- sapindaceae.tatarian-maple
-- fagaceae.california-black-oak
-- fagaceae.japanese-blue-oak
-- fagaceae.cork-oak
-- lauraceae.california-laurel
-- sapindaceae.rocky-mountain-maple
-- fabaceae.black-locust
-- sapindaceae.chalk-maple
-- sapindaceae.canyon-maple
-- sapindaceae.mountain-maple
-- ... and 19 more
+- betulaceae.yellow-birch
+- ... and 59 more
 
 **Included genera**:
 - oleaceae.ash
 - ulmaceae.elm
 - sapindaceae.maple
 - fagaceae.black-oak
+- betulaceae.birch
 - fagaceae.live-oak
-- pinaceae.fir
 - fagaceae.white-oak
+- salicaceae.aspen
 - juglandaceae.walnut
 - sapindaceae.buckeye
 - betulaceae.alder
 - fabaceae.locust
-- pinaceae.douglas-fir
 - cornaceae.dogwood
-- lauraceae.laurel
-- pinaceae.pine
+- platanaceae.sycamore
 - fabaceae.redbud
 

@@ -4,6 +4,8 @@ Look at the overall shape or size of your tree. This path focuses on features li
 
 **Note:** For trunk-specific features (number of trunks, trunk shape, trunk texture, branching height), see the [Trunk Shape Path](trunk-shape-path.md).
 
+**Important:** If there are no leaves, flowers, fruits, or cones present (such as deciduous trees in winter), try the [Winter Tree Detective Path](winter-detective-path.md) instead.
+
 ```
 ├── The OVERALL SHAPE or SIZE stands out most!
 │   ├── What SIZE or SHAPE is most distinctive?

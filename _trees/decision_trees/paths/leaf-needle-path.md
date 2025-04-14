@@ -7,6 +7,8 @@ Look closely at the leaves or needles of your tree.
 - ★★ MODERATE - Takes a bit more practice, but still visible
 - ★★★ CHALLENGING - May need closer observation or experience
 
+**Note:** If there are no leaves, flowers, fruits, or cones present (such as deciduous trees in winter), try the [Winter Tree Detective Path](winter-detective-path.md) instead.
+
 **Special Feature Pages:**
 - [Redwood & Sequoia Group](groups/redwood-sequoia-group.md) - Compare the three majestic redwood-type trees
 - [Oak Group](groups/oak-group.md) - Identify various oak species by their distinctive leaves
