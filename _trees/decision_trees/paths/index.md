@@ -14,13 +14,7 @@ What catches my eye about this tree?
 ├── The LEAVES or NEEDLES SMELL interesting when crushed! → [Go to Smell Path](smell-path.md)
 ├── The OVERALL SHAPE or SIZE stands out most! → [Go to Shape/Size Path](shape-size-path.md)
 ├── The TRUNK SHAPE or FORM is most distinctive! → [Go to Trunk Shape Path](trunk-shape-path.md)
-└── Nothing really stands out about this tree... → See below
-    ├── I can see the LEAVES up close → [Go to Leaf Detective Path](leaf-detective-path.md)
-    ├── I can see the NEEDLES up close → [Go to Needle Detective Path](needle-detective-path.md)
-    ├── I can see the SCALE LEAVES up close → [Go to Scale Detective Path](scale-detective-path.md)
-    ├── I can only see the BARK up close → [Go to Bark Detective Path](bark-detective-path.md)
-    ├── I can see the tree from a DISTANCE → [Go to Silhouette Detective Path](silhouette-detective-path.md)
-    └── The tree has NO LEAVES right now → [Go to Winter Detective Path](winter-detective-path.md)
+└── The tree has NO LEAVES right now (winter deciduous tree) → [Go to Winter Detective Path](winter-detective-path.md)
 ```
 
 ## About This Guide

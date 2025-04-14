@@ -31,13 +31,8 @@ PATHS = [
     {"file": "trunk-shape-path.md", "name": "Trunk Shape Path", "exempt_criteria": ["No exemptions - all trees have an observable trunk form and are included either directly or via genus"]},
 ]
 
-# Detective paths
-DETECTIVE_PATHS = [
-    {"file": "leaf-detective-path.md", "name": "Leaf Detective Path", "exempt_criteria": ["Trees without broad leaves (conifers, palms)"]},
-    {"file": "needle-detective-path.md", "name": "Needle Detective Path", "exempt_criteria": ["Trees without needle-like foliage (broadleaf trees, scale-leaf conifers)"]},
-    {"file": "scale-detective-path.md", "name": "Scale Detective Path", "exempt_criteria": ["Trees without scale-like foliage (most broadleaf trees, needle conifers)"]},
-    {"file": "bark-detective-path.md", "name": "Bark Detective Path", "exempt_criteria": ["No specific exemptions - all trees have observable bark"]},
-    {"file": "silhouette-detective-path.md", "name": "Silhouette Detective Path", "exempt_criteria": ["No specific exemptions - all trees have an observable silhouette"]},
+# Special paths
+SPECIAL_PATHS = [
     {"file": "winter-detective-path.md", "name": "Winter Detective Path", "exempt_criteria": ["Evergreen trees that don't show significant seasonal changes"]},
 ]
 
@@ -703,9 +698,9 @@ def main():
         print(f"  Processing {path_info['name']}...")
         path_stats.append(analyze_path(path_info, species_data, genus_data))
     
-    # Analyze detective paths
-    print(f"Analyzing {len(DETECTIVE_PATHS)} detective paths...")
-    for path_info in DETECTIVE_PATHS:
+    # Analyze special paths
+    print(f"Analyzing {len(SPECIAL_PATHS)} special paths...")
+    for path_info in SPECIAL_PATHS:
         print(f"  Processing {path_info['name']}...")
         stats = analyze_path(path_info, species_data, genus_data)
         path_stats.append(stats)

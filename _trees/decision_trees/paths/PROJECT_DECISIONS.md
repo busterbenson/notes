@@ -17,7 +17,7 @@ The California Tree Identification Guide is designed to help children (ages 8-10
   - Other (Joshua Tree, California Fan Palm): 3
 - **Path Types**:
   - 7 Main Feature Paths
-  - 6 Detective Paths
+  - 1 Winter Detective Path (for deciduous trees in winter)
   - 10 Group-specific Pages
 
 For detailed path coverage statistics and analysis, see the [Coverage Analysis](/decision_trees/coverage/README.md) directory.
@@ -37,13 +37,8 @@ Instead of traditional taxonomic organization, we created multiple entry points 
   - Shape/Size Path (shape-size-path.md)
   - Trunk Shape Path (trunk-shape-path.md)
 
-- **Detective Paths**:
-  - Leaf Detective Path (leaf-detective-path.md)
-  - Needle Detective Path (needle-detective-path.md)
-  - Scale Detective Path (scale-detective-path.md)
-  - Bark Detective Path (bark-detective-path.md)
-  - Silhouette Detective Path (silhouette-detective-path.md)
-  - Winter Detective Path (winter-detective-path.md)
+- **Special Paths**:
+  - Winter Detective Path (winter-detective-path.md) - For identifying deciduous trees in winter
 
 ### 2. Genus-Level Groupings
 
@@ -103,9 +98,9 @@ Each decision node follows a standardized format:
 Tree group references use the format:
 - `[Group Name](groups/group-name.md)`
 
-### 4. Detective Paths
+### 4. Winter Detective Path
 
-Detective paths provide more technical information using the same visual structure but with more detailed observations needed.
+The Winter Detective Path provides specialized guidance for identifying deciduous trees during winter when they lack leaves. It uses kid-friendly visual comparisons and focuses on features visible in winter: tree shape, branching patterns, bark, buds, and special winter clues like persistent fruits or catkins.
 
 ## Recent Enhancement Decisions
 
@@ -141,6 +136,12 @@ Detective paths provide more technical information using the same visual structu
    - Ensured complete coverage of all 165 tree species across categories
    - Implemented both "I'm Not Sure" options and difficulty ratings
    - Included cross-navigation to related paths
+
+7. **Simplified Path Structure**:
+   - Removed redundant detective paths (Leaf, Needle, Scale, Bark, and Silhouette Detective Paths)
+   - Retained only the Winter Detective Path due to its unique and essential role for winter identification
+   - Streamlined the navigation by focusing on the main feature paths for primary identification
+   - Enhanced the Winter Detective Path to cover 100% of deciduous species
 
 ## Future Enhancement Ideas
 
