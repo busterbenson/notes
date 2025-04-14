@@ -7,7 +7,7 @@ Total tree genera: 36
 
 The Winter Detective Path is specifically designed for winter identification of deciduous trees and provides:
 
-- **79 of 81** deciduous species (97.5% coverage)
+- **81 of 81** deciduous species (100.0% coverage)
 - Kid-friendly language with visual comparisons
 - Comprehensive coverage of all major deciduous tree features visible in winter
 - Detailed sections for tree shape, branching pattern, bark, buds, and special winter clues
@@ -30,7 +30,7 @@ For complete details, see the [Winter Path Coverage Report](WINTER_PATH_COVERAGE
 | Scale Detective Path | 9 | 150 | 5 | 31 | ✅ Complete |
 | Bark Detective Path | 37 | 122 | 16 | 20 | ✅ Complete |
 | Silhouette Detective Path | 25 | 134 | 17 | 19 | ✅ Complete |
-| Winter Detective Path | 79 | 80 | 15 | 21 | ✅ Complete |
+| Winter Detective Path | 81 | 78 | 16 | 20 | ✅ Complete |
 
 ## Detailed Path Analysis
 
@@ -658,8 +658,8 @@ For complete details, see the [Winter Path Coverage Report](WINTER_PATH_COVERAGE
 
 ### Winter Detective Path (winter-detective-path.md)
 
-- **Species coverage**: 79 species included, 2 species exempt
-- **Genera coverage**: 15 genera included, 2 genera exempt
+- **Species coverage**: 81 species included, 0 species exempt
+- **Genera coverage**: 16 genera included, 1 genera exempt
 - **Exemption criteria**: ["Evergreen trees that don't show significant seasonal changes"]
 - **Status**: Complete ✅ (all species and genera are either included or explicitly exempt)
 - **Species count validation**: ✅ 81 (included + exempt) = 81 (total deciduous)
@@ -668,9 +668,11 @@ For complete details, see the [Winter Path Coverage Report](WINTER_PATH_COVERAGE
 **Sample of included species**:
 - salicaceae.balsam-poplar
 - sapindaceae.shantung-maple
+- fagaceae.european-beech
 - betulaceae.downy-birch
 - ulmaceae.wych-elm
 - betulaceae.kenai-birch
+- salicaceae.fremont-cottonwood
 - betulaceae.red-alder
 - fabaceae.new-mexico-locust
 - betulaceae.italian-alder
@@ -684,9 +686,7 @@ For complete details, see the [Winter Path Coverage Report](WINTER_PATH_COVERAGE
 - salicaceae.balm-of-gilead-poplar
 - fagaceae.canyon-live-oak
 - betulaceae.river-birch
-- sapindaceae.hedge-maple
-- betulaceae.yellow-birch
-- ... and 59 more
+- ... and 61 more
 
 **Included genera**:
 - oleaceae.ash
@@ -697,6 +697,7 @@ For complete details, see the [Winter Path Coverage Report](WINTER_PATH_COVERAGE
 - fagaceae.live-oak
 - fagaceae.white-oak
 - salicaceae.aspen
+- fagaceae.beech
 - juglandaceae.walnut
 - sapindaceae.buckeye
 - betulaceae.alder

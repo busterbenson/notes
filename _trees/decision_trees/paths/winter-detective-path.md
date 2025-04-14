@@ -28,9 +28,14 @@ This path helps you identify trees when they don't have leaves, flowers, or frui
 │   │   │   ├── Trunk has peeling bark with camouflage pattern (tan, white, and green patches)
 │   │   │   └── Often grows near creeks and rivers
 │   │   │
-│   │   └── Black Walnut: Round top with dark, thick-looking branches
+│   │   ├── Black Walnut: Round top with dark, thick-looking branches
 │   │       ├── Dark brown to black deeply grooved bark
 │   │       └── Sometimes has small round nuts under the tree
+│   │   │
+│   │   └── European Beech: Wide round top with smooth gray trunk
+│   │       ├── Distinctive smooth gray bark (looks like elephant skin)
+│   │       ├── Slender pointed buds that look like little cigars
+│   │       └── Often planted in parks and gardens
 │   │
 │   ├── OVAL ROUND TOPS
 │   │   ├── Blue Oak: Light gray branches with a neat, oval shape
@@ -68,6 +73,11 @@ This path helps you identify trees when they don't have leaves, flowers, or frui
 │   │   ├── Branches grow close to trunk pointing upward
 │   │   ├── Gray bark with diamond-shaped marks
 │   │   └── Often planted in rows
+│   │
+│   ├── Fremont Cottonwood: Tall tree with thick upright branches
+│   │   ├── Gray bark becoming deeply furrowed with age
+│   │   ├── Large leaf buds that are sticky and fragrant
+│   │   └── Grows along rivers and streams
 │   │
 │   └── Western Larch: Straight trunk with short branches (deciduous conifer!)
 │       ├── Loses its needles in winter unlike other conifers
