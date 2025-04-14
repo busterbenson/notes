@@ -102,14 +102,36 @@ Look closely at the leaves or needles of your tree.
 │   │   │   │   │   │       │   └── Distinctive white bark with dark marks
 │   │   │   │   │   │       │
 │   │   │   │   │   │       └── BIRCH GENUS (Betula)
-│   │   │   │   │   │           ├── Various birch species: Somewhat triangular to oval leaves
-│   │   │   │   │   │           └── All have distinctive peeling bark with horizontal lenticels
+│   │   │   │   │   │           ├── Paper Birch: Oval to triangular leaves with doubly serrated edges
+│   │   │   │   │   │           ├── River Birch: Triangular-ovate leaves with jagged edges
+│   │   │   │   │   │           ├── Water Birch: Ovate leaves with finely serrated margins
+│   │   │   │   │   │           ├── All birch species have alternate leaf arrangement
+│   │   │   │   │   │           ├── All have distinctive peeling bark with horizontal lenticels
+│   │   │   │   │   │           └── All have doubly serrated leaf margins (key genus trait)
+│   │   │   │   │   │
+│   │   │   │   │   │       ├── WILLOW GENUS (Salix)
+│   │   │   │   │   │       │   ├── Arroyo Willow: Narrow lance-shaped leaves, fine teeth
+│   │   │   │   │   │       │   ├── Red Willow: Longer lance-shaped leaves with reddish stems
+│   │   │   │   │   │       │   ├── Pacific Willow: Shiny green lance-shaped leaves
+│   │   │   │   │   │       │   ├── All willow species have alternate leaf arrangement
+│   │   │   │   │   │       │   ├── All have lance-shaped to narrow oval leaves
+│   │   │   │   │   │       │   └── All leaf stalks have small leaf-like appendages at base (stipules, key genus trait)
+│   │   │   │   │   │       │
+│   │   │   │   │   │       ├── ELM GENUS (Ulmus)
+│   │   │   │   │   │       │   ├── American Elm: Oval to elliptical leaves with doubly serrated margins
+│   │   │   │   │   │       │   ├── Chinese Elm: Smaller oval leaves with finely toothed edges
+│   │   │   │   │   │       │   ├── Siberian Elm: Elliptical leaves with asymmetrical base
+│   │   │   │   │   │       │   ├── All elm species have alternate leaf arrangement
+│   │   │   │   │   │       │   ├── All have distinctly asymmetrical leaf bases (key genus trait)
+│   │   │   │   │   │       │   └── All have doubly serrated leaf margins
 │   │   │   │   │   │
 │   │   │   │   │   ├── What EDGES do the leaves have?
 │   │   │   │   │   │   ├── TOOTHED or SERRATED EDGES → TOOTHED ROUND LEAF GROUP
 │   │   │   │   │   │   │   ├── Birch: Fine, double-toothed edges 
 │   │   │   │   │   │   │   ├── Aspen: Small, rounded teeth
 │   │   │   │   │   │   │   ├── Poplar: Coarser teeth than aspen
+│   │   │   │   │   │   │   ├── Willow: Fine, regular serrations along edge
+│   │   │   │   │   │   │   ├── Elm: Doubly serrated margins with asymmetrical leaf base
 │   │   │   │   │   │   │   └── Examine leaf edge with magnification if needed
 │   │   │   │   │   │   │
 │   │   │   │   │   │   ├── SMOOTH or WAVY EDGES → SMOOTH EDGE GROUP
@@ -132,6 +154,7 @@ Look closely at the leaves or needles of your tree.
 │   │   │   │   │       └── LEAVES RELATIVELY STILL → STABLE LEAF GROUP
 │   │   │   │   │           ├── Redbud: Firmer leaf structure, less movement
 │   │   │   │   │           ├── Most Eucalyptus: Hang vertically, minimal flutter
+│   │   │   │   │           ├── Elm: Minimal movement due to firm texture and weight
 │   │   │   │   │           └── Look for leaf movement on windy day
 │   │   │   │   │
 │   │   │   │   ├── They're made of many small parts (LEAFLETS) → Go to Compound Leaves
@@ -286,13 +309,40 @@ Look closely at the leaves or needles of your tree.
 │   │   │   │
 │   │   │   └── How are the leaves ARRANGED on branches?
 │   │   │       ├── OPPOSITE ARRANGEMENT (across from each other) → OPPOSITE LEAF GROUP
-│   │   │       │   ├── Maple: Opposite leaves, usually lobed
-│   │   │       │   ├── Ash: Opposite compound leaves with leaflets
-│   │   │       │   ├── Dogwood: Opposite simple leaves with curved veins
+│   │   │       │   ├── MAPLE GENUS (Acer)
+│   │   │       │   │   ├── Bigleaf Maple: Large opposite leaves with 5 deep lobes
+│   │   │       │   │   ├── Vine Maple: Smaller opposite leaves with 7-9 lobes
+│   │   │       │   │   ├── All maple species have opposite leaf arrangement
+│   │   │       │   │   └── All have lobed leaves and paired winged seeds
+│   │   │       │   │
+│   │   │       │   ├── ASH GENUS (Fraxinus)
+│   │   │       │   │   ├── Oregon Ash: Opposite pinnate compound leaves with 5-7 leaflets
+│   │   │       │   │   ├── All ash species have opposite compound leaves
+│   │   │       │   │   └── All have pinnately compound leaves with leaflets
+│   │   │       │   │
+│   │   │       │   ├── DOGWOOD GENUS (Cornus)
+│   │   │       │   │   ├── Pacific Dogwood: Oval leaves with curved veins following leaf margin
+│   │   │       │   │   ├── Creek Dogwood: Lanceolate leaves with parallel curved veins
+│   │   │       │   │   ├── All dogwood species have opposite leaf arrangement
+│   │   │       │   │   ├── All have distinctive curved veins that follow leaf shape (key genus trait)
+│   │   │       │   │   └── All produce small flowers surrounded by showy white bracts
+│   │   │       │   │
 │   │   │       │   └── Remember with mnemonic: "MAD" - Maple, Ash, Dogwood
 │   │   │       │
 │   │   │       ├── ALTERNATE ARRANGEMENT (staggered) → ALTERNATE LEAF GROUP
-│   │   │       │   ├── Oak: Alternate leaves with lobes
+│   │   │       │   ├── OAK GENUS (Quercus)
+│   │   │       │   │   ├── Coast Live Oak: Alternate evergreen leaves with spiny edges
+│   │   │       │   │   ├── Valley Oak: Alternate deciduous leaves with rounded lobes
+│   │   │       │   │   ├── California Black Oak: Alternate deciduous leaves with pointed lobes
+│   │   │       │   │   ├── All oak species have alternate leaf arrangement
+│   │   │       │   │   └── All produce acorns (key genus trait)
+│   │   │       │   │
+│   │   │       │   ├── TANOAK (Notholithocarpus densiflorus)
+│   │   │       │   │   ├── Evergreen tree with alternate oblong-elliptical leaves
+│   │   │       │   │   ├── Distinctive toothed margins with straight parallel veins
+│   │   │       │   │   ├── Leaves have dense golden fuzz underneath when young
+│   │   │       │   │   └── Produces acorn-like nuts but is not a true oak
+│   │   │       │   │
 │   │   │       │   ├── Birch: Alternate simple leaves, serrated edges
 │   │   │       │   ├── Most broadleaf trees have alternate arrangement
 │   │   │       │   └── Leaves spaced out along branch, not paired
@@ -416,9 +466,23 @@ Look closely at the leaves or needles of your tree.
 │   │   │   │       │   │   └── Relatively rare trait among conifers
 │   │   │   │       │   │
 │   │   │   │       │   └── EVERGREEN TUFTED NEEDLES → CEDAR-LIKE GROUP
-│   │   │   │       │       ├── Incense-cedar: Scale-like leaves in flattened sprays
-│   │   │   │       │       ├── Western Redcedar: Similar flattened sprays
-│   │   │   │       │       └── Both have aromatic foliage
+│   │   │   │       │       ├── INCENSE-CEDAR (Calocedrus)
+│   │   │   │       │       │   ├── Incense-cedar: Scale-like leaves in flattened sprays
+│   │   │   │       │       │   ├── Distinctive "stacked fan" appearance
+│   │   │   │       │       │   └── Strong pencil-like aroma when crushed
+│   │   │   │       │       │
+│   │   │   │       │       ├── WESTERN REDCEDAR (Thuja)
+│   │   │   │       │       │   ├── Western Redcedar: Scale-like leaves in flattened sprays
+│   │   │   │       │       │   ├── Distinctive white X-pattern on scale undersides
+│   │   │   │       │       │   └── Mild cedar aroma when crushed
+│   │   │   │       │       │
+│   │   │   │       │       ├── TRUE CEDAR (Cedrus)
+│   │   │   │       │       │   ├── Deodar Cedar: Needles in distinct whorled clusters
+│   │   │   │       │       │   ├── Atlas Cedar: Stiff blue-green needles in tufts
+│   │   │   │       │       │   ├── All true cedars have needles in distinct tufts/clusters
+│   │   │   │       │       │   └── All produce large upright barrel-shaped cones
+│   │   │   │       │       │
+│   │   │   │       │       └── All cedar types have aromatic foliage
 │   │   │   │       │
 │   │   │   │       └── How are the CLUSTERS arranged?
 │   │   │   │           ├── CLUSTERS AT REGULAR INTERVALS → LARCH/CEDAR GROUP
@@ -563,22 +627,36 @@ Look closely at the leaves or needles of your tree.
 │   │   │   │   │   │
 │   │   │   │   │   └── Do they have a distinctive AROMA when crushed?
 │   │   │   │   │       ├── CEDAR & CYPRESS GROUP
-│   │   │   │   │       │   ├── STRONG SPICY/PENCIL SMELL → INCENSE-CEDAR
+│   │   │   │   │       │   ├── STRONG SPICY/PENCIL SMELL → INCENSE-CEDAR (Calocedrus)
 │   │   │   │   │       │   │   ├── Incense-cedar: Flattened sprays, spicy smell
-│   │   │   │   │       │   │   └── Smells like pencil shavings (wood used for pencils)
+│   │   │   │   │       │   │   ├── Distinctive pencil-like aroma (wood used for pencils)
+│   │   │   │   │       │   │   ├── Flat sprays with joints that look like stacked fans
+│   │   │   │   │       │   │   └── All have reddish, fibrous, ridged bark
 │   │   │   │   │       │   │
-│   │   │   │   │       │   ├── SWEET FRUITY SMELL → PORT ORFORD CEDAR
+│   │   │   │   │       │   ├── SWEET FRUITY SMELL → PORT ORFORD CEDAR (Chamaecyparis)
 │   │   │   │   │       │   │   ├── Port Orford Cedar: Flattened sprays, spicy-fruity smell
-│   │   │   │   │       │   │   └── Distinctive fruity component to aroma
+│   │   │   │   │       │   │   ├── Alaska Cedar: Similar sprays with lemon-like scent
+│   │   │   │   │       │   │   ├── All have distinctive flattened spray arrangement
+│   │   │   │   │       │   │   └── All have aromatic foliage with fruity component
 │   │   │   │   │       │   │
-│   │   │   │   │       │   └── MILD CEDAR SMELL → WESTERN REDCEDAR
+│   │   │   │   │       │   └── MILD CEDAR SMELL → WESTERN REDCEDAR (Thuja)
 │   │   │   │   │       │       ├── Western Redcedar: Flat sprays with butterfly pattern underneath
-│   │   │   │   │       │       └── Milder aroma than Incense-cedar
+│   │   │   │   │       │       ├── Northern White-cedar: Similar butterfly pattern, smaller tree
+│   │   │   │   │       │       ├── All have distinct white X-pattern on underside of sprays (key genus trait)
+│   │   │   │   │       │       ├── All have fibrous, stringy reddish-brown bark
+│   │   │   │   │       │       └── All have milder aroma than Incense-cedar
 │   │   │   │   │       │
 │   │   │   │   │       └── MINIMAL OR NO AROMA → LOW-AROMA SCALE GROUP
 │   │   │   │   │           ├── REDWOOD GENUS (Sequoia)
 │   │   │   │   │           │   ├── Coast Redwood: Flat sprays with two white lines beneath
 │   │   │   │   │           │   └── Extremely tall with reddish fibrous bark
+│   │   │   │   │           │
+│   │   │   │   │           ├── JUNIPER GENUS (Juniperus)
+│   │   │   │   │           │   ├── Western Juniper: Scale-like adult foliage with little aroma
+│   │   │   │   │           │   ├── Sierra Juniper: Tightly pressed scales, minimal fragrance
+│   │   │   │   │           │   ├── All juniper species produce berry-like cones (key genus trait)
+│   │   │   │   │           │   ├── All have both juvenile needle-like and adult scale-like foliage
+│   │   │   │   │           │   └── Adult foliage has less aroma than juvenile needles
 │   │   │   │   │           │
 │   │   │   │   │           └── Some Cypress varieties have little distinctive smell
 │   │   │   │   │
