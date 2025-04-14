@@ -12,7 +12,8 @@ Total tree genera: 36
 *All species and genera are included (69 species explicitly named, 90 via genus; 25 genera explicitly named, 11 implicitly)
 | Smell Path | 159* | 0 | 36* | 0 | ✅ Complete |
 *All species and genera are included (102 species explicitly named, 57 included via genus; 28 genera explicitly named, 8 implicitly)
-| Cone/Fruit/Seed Path | 42 | 117 | 22 | 14 | ✅ Complete |
+| Cone/Fruit/Seed Path | 159* | 0 | 36* | 0 | ✅ Complete |
+*All species and genera are included (105 species explicitly named, 54 included via genus; 30 genera explicitly named, 6 implicitly)
 | Flower Path | 8 | 151 | 10 | 26 | ✅ Complete |
 | Shape/Size Path | 50 | 109 | 28 | 8 | ✅ Complete |
 | Trunk Shape Path | 159* | 0 | 36* | 0 | ✅ Complete |
@@ -216,59 +217,81 @@ Total tree genera: 36
 
 ### Cone/Fruit/Seed Path (cone-fruit-seed-path.md)
 
-- **Species coverage**: 42 species included, 117 species exempt
-- **Genera coverage**: 22 genera included, 14 genera exempt
-- **Exemption criteria**: ['No specific exemptions - all trees produce some form of reproductive structure']
-- **Status**: Complete ✅ (all species and genera are either included or explicitly exempt)
-- **Species count validation**: ✅ 159 (included + exempt) = 159 (total)
-- **Genera count validation**: ✅ 36 (included + exempt) = 36 (total)
+- **Species coverage**: 159 species included (105 explicitly named, 54 included via genus), 0 species exempt
+- **Genera coverage**: 36 genera included (30 explicitly named, 6 included implicitly), 0 genera exempt
+- **Exemption criteria**: ['No exemptions - all trees produce some form of reproductive structure and are included either directly or via genus']
+- **Status**: Complete ✅ (all species and genera are included in the path)
+- **Species count validation**: ✅ 159 (included) = 159 (total)
+- **Genera count validation**: ✅ 36 (included) = 36 (total)
 
-**Sample of included species**:
-- cupressaceae.western-juniper
-- pinaceae.torrey-pine
-- pinaceae.gray-pine
-- pinaceae.sugar-pine
-- salicaceae.fremont-cottonwood
-- pinaceae.bigcone-douglas-fir
-- pinaceae.western-hemlock
-- cupressaceae.coast-redwood
-- fagaceae.valley-oak
-- cupressaceae.incense-cedar
-- pinaceae.lodgepole-pine
-- sapindaceae.bigleaf-maple
-- oleaceae.oregon-ash
-- fagaceae.california-black-oak
-- fagaceae.japanese-blue-oak
-- pinaceae.monterey-pine
-- pinaceae.knobcone-pine
-- pinaceae.california-white-fir
-- cupressaceae.giant-sequoia
-- ericaceae.pacific-madrone
-- ... and 22 more
+**Sample of explicitly named species**:
+- pinaceae.sugar-pine (with 10-20" long cones)
+- pinaceae.coulter-pine (with 8-12" massive cones)
+- pinaceae.ponderosa-pine (with distinctive prickled cones)
+- pinaceae.jeffrey-pine (with inward-curved prickles)
+- pinaceae.coast-douglas-fir (with unique 3-pronged bracts)
+- pinaceae.white-fir (with upright disintegrating cones)
+- pinaceae.red-fir (with purple barrel-shaped cones)
+- fagaceae.valley-oak (with large acorns maturing in one year)
+- fagaceae.blue-oak (with small acorns in shallow cups)
+- fagaceae.california-black-oak (with acorns taking two years)
+- fagaceae.coast-live-oak (with slender acorns in deep cups)
+- sapindaceae.bigleaf-maple (with large paired "helicopter" seeds)
+- sapindaceae.vine-maple (with paired samaras)
+- sapindaceae.japanese-maple (with small reddish samaras)
+- oleaceae.oregon-ash (with single-winged paddle-shaped seeds)
+- ulmaceae.american-elm (with papery oval winged seeds)
+- ulmaceae.chinese-elm (with circular winged samaras)
+- salicaceae.fremont-cottonwood (with cotton-like seeds)
+- salicaceae.quaking-aspen (with cotton-bearing seeds)
+- betulaceae.paper-birch (with tiny winged nutlets)
+- betulaceae.red-alder (with woody cone-like structures)
+- ericaceae.pacific-madrone (with bright orange-red berries)
+- ericaceae.common-manzanita (with small apple-like fruits)
+- ericaceae.bigberry-manzanita (with larger berry-like fruits)
+- juglandaceae.california-black-walnut (with thick-husked nuts)
+- sapindaceae.california-buckeye (with large pods containing shiny seeds)
+- cornaceae.pacific-dogwood (with clusters of red berries)
+- rosaceae.western-serviceberry (with blue-black berries)
+- cupressaceae.western-juniper (with blue berry-like modified cones)
+- fabaceae.western-redbud (with flat purple-brown pods)
+- ... and 75 more explicitly named, plus 54 additional species included via genus classifications
 
-**Included genera**:
-- oleaceae.ash
-- ulmaceae.elm
-- sapindaceae.maple
-- ericaceae.madrone
-- pinaceae.hemlock
-- cupressaceae.juniper
-- fagaceae.black-oak
-- pinaceae.spruce
-- betulaceae.birch
-- fagaceae.live-oak
-- pinaceae.fir
-- fagaceae.white-oak
-- rosaceae.serviceberry
-- juglandaceae.walnut
-- cupressaceae.cedar
-- sapindaceae.buckeye
-- pinaceae.douglas-fir
-- cornaceae.dogwood
-- cupressaceae.redwood
-- platanaceae.sycamore
-- pinaceae.pine
-- fabaceae.redbud
+**Explicitly named genera**:
+- oleaceae.ash (Fraxinus)
+- ulmaceae.elm (Ulmus)
+- sapindaceae.maple (Acer)
+- ericaceae.madrone (Arbutus)
+- ericaceae.manzanita (Arctostaphylos)
+- pinaceae.hemlock (Tsuga)
+- cupressaceae.cypress (Cupressus)
+- cupressaceae.juniper (Juniperus)
+- fagaceae.oak (Quercus) - both black and white oak groups
+- pinaceae.spruce (Picea)
+- betulaceae.birch (Betula)
+- betulaceae.alder (Alnus)
+- pinaceae.fir (Abies)
+- rosaceae.serviceberry (Amelanchier)
+- rosaceae.apple/crabapple (Malus)
+- rosaceae.cherry/plum (Prunus)
+- juglandaceae.walnut (Juglans)
+- cupressaceae.cedar (Thuja/Calocedrus/Chamaecyparis)
+- sapindaceae.buckeye (Aesculus)
+- fabaceae.locust (Robinia/Gleditsia)
+- pinaceae.douglas-fir (Pseudotsuga)
+- cornaceae.dogwood (Cornus)
+- cupressaceae.redwood (Sequoia/Sequoiadendron)
+- platanaceae.sycamore (Platanus)
+- pinaceae.pine (Pinus)
+- fabaceae.redbud (Cercis)
+- magnoliaceae.magnolia (Magnolia)
+- altingiaceae.sweetgum (Liquidambar)
+- moraceae.mulberry (Morus)
+- taxaceae.yew (Taxus)
+
+**Special features**: This path incorporates comprehensive sections for different reproductive structures: cones (categorized by size, position, and special features), fruits (categorized by type, size, and seasonal appearance), and seeds (categorized by type, size, and dispersal mechanism). Each section thoroughly describes the reproductive structures with specific examples of trees possessing those characteristics, making it comprehensive for all 159 species in the database.
+
+**Key enhancements**: The path was updated with the genus-based approach, including 3-7 representative species per genus group, comprehensive "All [genus] species..." statements, and "key [genus] trait" statements to ensure complete coverage of all California trees in the database. Special attention was given to meaningful groupings such as cone types, fruit types, and seasonal appearance to make identification more intuitive.
 
 ### Flower Path (flower-path.md)
 
