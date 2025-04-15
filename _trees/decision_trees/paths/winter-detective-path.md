@@ -15,6 +15,7 @@ This path helps you identify trees when they don't have leaves, flowers, or frui
 **Helpful References:**
 - Not sure about tree shapes? See [Tree Shapes Guide](references/tree-shapes-guide.md)
 - Confused about branching patterns? Check the [Branching Patterns Guide](references/branching-patterns-guide.md)
+- Want to learn about leaf types for when leaves return? See [Leaf Types Guide](references/leaf-types-guide.md)
 
 ## Tree Shape Clues (what you see from far away)
 

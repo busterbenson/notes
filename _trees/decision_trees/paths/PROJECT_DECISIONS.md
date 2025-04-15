@@ -156,7 +156,12 @@ The Winter Detective Path provides specialized guidance for identifying deciduou
 
 8. **Educational Reference Guides**:
    - Created a new `references/` directory to distinguish educational content from identification paths
-   - Developed comprehensive guides on fundamental concepts like branching patterns and tree shapes
+   - Developed comprehensive guides on fundamental concepts:
+     - Tree shapes and forms
+     - Branching patterns for opposite vs. alternate branching
+     - Bark features and textures
+     - Conifer crown forms by family and genus
+     - Leaf types, arrangements, and shapes
    - Implemented cross-references from main paths to these educational resources
    - Maintained the integrity of the identification process while providing additional learning resources
 
@@ -186,4 +191,4 @@ When updating path files:
 3. Ensure consistency in formatting and navigation structure
 4. Review kid-friendly language throughout all sections
 
-Last Updated: April 14, 2025
+Last Updated: April 15, 2025

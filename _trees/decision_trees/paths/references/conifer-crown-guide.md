@@ -150,31 +150,104 @@ The same species can look different depending on where it grows:
 - **Stunted height**: Severe weather limits overall size
 - **Hardy forms**: May develop krummholz (twisted, ground-hugging) form
 
-## Famous California Conifer Crown Forms
+## California Conifer Genera Crown Forms
 
-### Coast Redwood (Sequoia sempervirens)
-- **Young**: Perfect conical shape
-- **Mature**: Tall columnar trunk with small, irregular crown
-- **Ancient**: Often has broken top with secondary leaders
-- **Special feature**: Can sprout new trunks from base ("fairy rings")
+### PINE FAMILY (Pinaceae)
 
-### Giant Sequoia (Sequoiadendron giganteum)
-- **Young**: Perfect pyramid
-- **Mature**: Massive columnar trunk with rounded crown
-- **Ancient**: Irregular crown with massive branches
-- **Special feature**: Maintains thick branches even at great heights
+#### Pine Genus (Pinus)
+- **Young**: Conical to pyramidal
+- **Mature**: Often develops rounded or flat-topped crown
+- **Examples**:
+  - **Ponderosa Pine**: Tall with umbrella-like crown when mature
+  - **Sugar Pine**: Irregular crown with very long cones
+  - **Torrey Pine**: Wild, twisted form with irregular crown
+  - **Lodgepole Pine**: Narrow, cylindrical crown shape
 
-### Douglas-fir (Pseudotsuga menziesii)
+#### Fir Genus (Abies)
+- **Young**: Perfect pyramidal shape with symmetrical branches
+- **Mature**: Dense conical crown with distinctive flat branches
+- **Examples**:
+  - **White Fir**: Perfectly symmetrical, blue-green pyramid
+  - **Red Fir**: Denser, more compact pyramidal crown
+  - **Noble Fir**: Very symmetrical with evenly spaced tiers
+
+#### Spruce Genus (Picea)
+- **Young**: Very dense, perfect pyramidal shape
+- **Mature**: Maintains conical form better than other conifers
+- **Examples**:
+  - **Sitka Spruce**: Distinctive tiered branches in horizontal layers
+  - **Blue Spruce**: Dense, stiff pyramidal form with blue-silver color
+  - **Brewer Spruce**: Weeping foliage with distinctive drooping branches
+
+#### Hemlock Genus (Tsuga)
+- **Young**: Pyramidal with graceful, drooping leader (top)
+- **Mature**: Conical with distinctively drooping branch tips
+- **Examples**:
+  - **Western Hemlock**: Delicate appearance with nodding leader and drooping branches
+  - **Mountain Hemlock**: More compact with bluish foliage
+  - **All hemlocks**: Distinctively graceful, with soft appearance
+
+#### Douglas-fir Genus (Pseudotsuga)
 - **Young**: Perfect pyramid with drooping leader
 - **Mature**: Conical to rounded crown with horizontal branches
 - **Ancient**: Flat or irregular top, often with dead spike at top
 - **Special feature**: Branches often form distinct horizontal layers
 
-### Ponderosa Pine (Pinus ponderosa)
-- **Young**: Conical with ascending branches
-- **Mature**: Oval crown with large, spreading branches
-- **Ancient**: Flat-topped or irregular with thick, gnarled branches
-- **Special feature**: Develops distinctive "puzzle piece" bark with age
+#### True Cedar Genus (Cedrus)
+- **Young**: Broad pyramidal shape
+- **Mature**: Develops flat or spreading top with age
+- **Examples**:
+  - **Deodar Cedar**: Graceful with drooping branch tips
+  - **Atlas Cedar**: Layered, spreading crown 
+  - **Lebanon Cedar**: Distinctively flat-topped when mature
+
+#### Larch Genus (Larix)
+- **Young**: Narrow pyramidal shape
+- **Mature**: More open, conical form
+- **Special feature**: Deciduous conifer (loses needles in winter)
+- **Example**: Western Larch with conical shape and bare winter branches
+
+### CYPRESS FAMILY (Cupressaceae)
+
+#### Redwood & Sequoia Genera (Sequoia, Sequoiadendron, Metasequoia)
+- **Coast Redwood**: Tall columnar trunk with small crown
+- **Giant Sequoia**: Massive columnar trunk with rounded crown
+- **Dawn Redwood**: Conical shape, deciduous (loses needles in winter)
+- **Special feature**: Becomes more distinctive with great age
+
+#### Cypress Genus (Cupressus)
+- **Young**: Dense pyramidal to conical shape
+- **Mature**: Varies by species from columnar to spreading
+- **Examples**:
+  - **Italian Cypress**: Very narrow, columnar form
+  - **Monterey Cypress**: Broader, often with flat-topped crown
+  - **Arizona Cypress**: Pyramidal to oval crown form
+
+#### Juniper Genus (Juniperus)
+- **Young**: Often pyramidal or columnar
+- **Mature**: Many develop rounded or irregular shapes
+- **Examples**:
+  - **Western Juniper**: Irregular, twisted form with age
+  - **California Juniper**: Often multi-trunked with spreading crown
+  - **Many junipers**: Become more irregular and character-filled with age
+
+#### Incense Cedar/Western Redcedar (Calocedrus, Thuja)
+- **Young**: Narrow pyramidal shape
+- **Mature**: More columnar with age
+- **Examples**:
+  - **Incense Cedar**: Columnar form with dense foliage
+  - **Western Redcedar**: Conical with drooping, spray-like branches
+  - **All have**: Rich, textured foliage appearing in flat sprays
+
+### YEW FAMILY (Taxaceae)
+
+#### Yew Genus (Taxus)
+- **Young**: Pyramidal to rounded
+- **Mature**: Often broadly rounded
+- **Examples**:
+  - **Pacific Yew**: Irregular, often multi-stemmed
+  - **English Yew**: Dense, can be pruned to various shapes
+  - **All yews**: Develop irregular character with great age
 
 ## Using Crown Shape for Identification
 

@@ -35,6 +35,7 @@ This guide includes:
   - [Branching Patterns Guide](references/branching-patterns-guide.md): How to tell opposite from alternate branches
   - [Bark Features Guide](references/bark-features-guide.md): Types of bark textures and colors
   - [Conifer Crown Guide](references/conifer-crown-guide.md): Understanding conifer tree shapes
+  - [Leaf Types Guide](references/leaf-types-guide.md): Different leaf types, arrangements, and shapes
 
 ## Complete Documentation
 
