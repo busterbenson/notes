@@ -1,0 +1,861 @@
+<?xml version="1.0" ?>
+<opml version="2.0">
+  <head>
+    <title>Bark Path</title>
+  </head>
+  <body>
+    <outline text="The BARK looks interesting!">
+      <outline text="What's the main COLOR of the bark?">
+        <outline text="I'M NOT SURE → Here's a tip:">
+          <outline text="Look at the trunk in sunlight!"/>
+          <outline text="Light colors will appear white, cream, or gray"/>
+          <outline text="Red colors will look reddish-brown or orange"/>
+          <outline text="Dark colors will be chocolate-brown or black"/>
+          <outline text="Green/yellow will have a slight greenish tint"/>
+          <outline text="If colors vary, look at the most common color on the main trunk"/>
+        </outline>
+        <outline text="WHITE, CREAM, or LIGHT GRAY → LIGHT-COLORED BARK GROUP">
+          <outline text="How does the bark TEXTURE appear?">
+            <outline text="SMOOTH with peeling layers → PEELING LIGHT BARK GROUP">
+              <outline text="BIRCH GENUS (Betula)">
+                <outline text="Water Birch: Smooth reddish-brown with white lenticels"/>
+                <outline text="Paper Birch: Brilliant white peeling bark (ornamental)"/>
+                <outline text="River Birch: Peeling cinnamon to cream bark that exfoliates in curls"/>
+                <outline text="Gray Birch: White bark with triangular dark patches at branch junctions"/>
+                <outline text="Yellow Birch: Golden-bronze peeling bark with wintergreen aroma"/>
+                <outline text="Sweet Birch: Dark reddish-brown bark with wintergreen scent when scratched"/>
+                <outline text="European White Birch: Striking white bark with black diamond-shaped markings"/>
+                <outline text="All birch species have distinctive horizontal lenticels (dash marks) and produce catkins in spring"/>
+              </outline>
+              <outline text="SYCAMORE GENUS (Platanus)">
+                <outline text="California Sycamore: Mottled white/tan/green peeling bark"/>
+                <outline text="London Plane Tree: Similar mottled bark, widely planted street tree"/>
+                <outline text="American Sycamore: Whiter bark with puzzle-piece pattern"/>
+                <outline text="Arizona Sycamore: More beige-colored mottled bark"/>
+                <outline text="All have distinctive patchwork or &quot;camouflage&quot; pattern"/>
+                <outline text="All produce ball-like fruits hanging on strings and have large maple-like leaves"/>
+              </outline>
+              <outline text="EUCALYPTUS GENUS (Eucalyptus)">
+                <outline text="Ghost Gum: Smooth white porcelain-like bark"/>
+                <outline text="Sugar Gum: White to cream bark that sheds in ribbons"/>
+                <outline text="Snow Gum: Smooth white bark with colorful patches"/>
+                <outline text="Silver-dollar Gum: Smooth whitish-gray bark, peels in spots"/>
+                <outline text="Spinning Gum: Very white smooth bark with minimal shedding"/>
+                <outline text="White Ironbark: Smooth white bark becoming rough with age"/>
+                <outline text="All eucalyptus species have distinctive minty/medicinal smell when leaves are crushed"/>
+              </outline>
+            </outline>
+            <outline text="SMOOTH with distinct markings → MARKED LIGHT BARK GROUP">
+              <outline text="ASPEN GENUS (Populus)">
+                <outline text="Quaking Aspen: Smooth white bark with black knots/scars"/>
+                <outline text="Bigtooth Aspen: Similar white bark with larger leaf teeth"/>
+                <outline text="European Aspen: Greenish-white bark with diamond-shaped markings"/>
+                <outline text="White Poplar: Chalky white bark, gray-green when young"/>
+                <outline text="All have distinctive &quot;eye&quot; markings or horizontal scars on trunk"/>
+                <outline text="All produce small round/triangular leaves that tremble in slight breeze"/>
+              </outline>
+              <outline text="ALDER GENUS (Alnus)">
+                <outline text="White Alder: Light gray bark with horizontal lenticels"/>
+                <outline text="Red Alder: Smooth gray bark often with white patches"/>
+                <outline text="Green Alder: Smooth grayish bark with scattered lenticels"/>
+                <outline text="European Alder: Gray-brown bark with small lenticels"/>
+                <outline text="Italian Alder: Smooth gray bark developing small plates with age"/>
+                <outline text="All have smooth bark with distinctive lenticel marking pattern"/>
+                <outline text="All produce woody &quot;cone-like&quot; fruits and catkins in spring"/>
+              </outline>
+              <outline text="MAPLE GENUS (Acer)">
+                <outline text="Bigleaf Maple: Young trees have light gray smooth bark"/>
+                <outline text="Vine Maple: Smooth greenish to light gray bark"/>
+                <outline text="Striped Maple: Distinctive green bark with white vertical stripes"/>
+                <outline text="Norway Maple: Young trees have smooth gray-green bark"/>
+                <outline text="Silver Maple: Smooth gray bark when young, becoming flaky"/>
+                <outline text="Japanese Maple: Smooth gray to gray-green bark"/>
+                <outline text="Boxelder: Light gray smooth bark when young"/>
+                <outline text="All maple species have opposite branching pattern (key maple trait)"/>
+              </outline>
+            </outline>
+            <outline text="ROUGH or BLOCKY texture → ROUGH LIGHT BARK GROUP">
+              <outline text="PINE GENUS (Pinus)">
+                <outline text="Ponderosa Pine: Upper bark yellow/orange in plates"/>
+                <outline text="Sugar Pine: Light gray to whitish plates when mature"/>
+                <outline text="Jeffrey Pine: Similar to Ponderosa but with vanilla scent"/>
+                <outline text="Western White Pine: Smooth gray bark becoming plated"/>
+                <outline text="Eastern White Pine: Gray-white bark with long flat ridges"/>
+                <outline text="Whitebark Pine: Light grayish bark with slight scale pattern"/>
+                <outline text="Limber Pine: Light gray to whitish smooth bark"/>
+                <outline text="All pine species recognized by needles in bundles (key pine trait)"/>
+              </outline>
+              <outline text="POPLAR GENUS (Populus)">
+                <outline text="Fremont Cottonwood: Deeply furrowed light grayish bark with age"/>
+                <outline text="Black Cottonwood: Gray bark becoming deeply furrowed"/>
+                <outline text="Balsam Poplar: Light gray bark with diamond-shaped ridges"/>
+                <outline text="Eastern Cottonwood: Thick grayish-white bark with deep furrows"/>
+                <outline text="Older specimens develop increasingly rough texture with maturity"/>
+                <outline text="All produce heart-shaped to triangular leaves and fluffy cotton-like seeds"/>
+              </outline>
+              <outline text="OAK GENUS (Quercus) - Light-barked species">
+                <outline text="Valley Oak: Light gray, blocky texture with age"/>
+                <outline text="Blue Oak: Light gray, somewhat checked bark"/>
+                <outline text="Oregon White Oak: Light grayish bark with shallow fissures"/>
+                <outline text="Englemann Oak: Grayish bark with blocky plates"/>
+                <outline text="Bur Oak: Light gray deeply furrowed bark"/>
+                <outline text="White Oak: Light ashy-gray bark with shallow furrows"/>
+                <outline text="All oak species produce acorns (key oak trait)"/>
+              </outline>
+            </outline>
+          </outline>
+          <outline text="Does the light bark have a SPECIAL FEATURE?">
+            <outline text="PUZZLE-PIECE PATTERN → PUZZLE BARK GROUP">
+              <outline text="SYCAMORE GENUS (Platanus)"/>
+              <outline text="California Sycamore: Classic puzzle-piece patterned bark"/>
+              <outline text="London Plane Tree: Similar puzzle-like pattern (ornamental)"/>
+              <outline text="American Sycamore: White bark with distinct puzzle pattern"/>
+              <outline text="Arizona Sycamore: Similar pattern with more beige tones"/>
+              <outline text="All sycamores shed puzzle pieces revealing lighter patches beneath"/>
+            </outline>
+            <outline text="HORIZONTAL LINES or LENTICELS → LINED BARK GROUP">
+              <outline text="BIRCH GENUS (Betula)"/>
+              <outline text="All birch species have distinctive horizontal dash-like lenticels"/>
+              <outline text="Includes Paper Birch, River Birch, Water Birch, Gray Birch"/>
+              <outline text="ALDER GENUS (Alnus)"/>
+              <outline text="All alder species have similar but less prominent horizontal lines"/>
+              <outline text="Includes White Alder, Red Alder, European Alder, Green Alder"/>
+              <outline text="CHERRY GENUS (Prunus)"/>
+              <outline text="Many cherry species have distinctive horizontal lenticel lines"/>
+            </outline>
+            <outline text="POWDERY or DUSTY APPEARANCE → POWDERY BARK GROUP">
+              <outline text="EUCALYPTUS GENUS (Eucalyptus)"/>
+              <outline text="Ghost Gum and several other species: Powdery white bloom on bark"/>
+              <outline text="Snow Gum: Chalky white appearance with colorful patches"/>
+              <outline text="PINE GENUS (Pinus)"/>
+              <outline text="Several pine species develop whitish powdery patches"/>
+              <outline text="OTHER POWDERY-BARKED TREES"/>
+              <outline text="Aspen species often have powdery bloom when young"/>
+              <outline text="Basswood: Develops grayish powdery appearance with age"/>
+            </outline>
+          </outline>
+          <outline text="Where is the tree GROWING?">
+            <outline text="ALONG STREAMS/WATER → RIPARIAN LIGHT BARK GROUP">
+              <outline text="ASPEN GENUS (Populus)">
+                <outline text="Quaking Aspen: Forms groves along streams"/>
+                <outline text="Bigtooth Aspen: Similar white bark, larger teeth on leaves"/>
+                <outline text="European Aspen: Greenish-white bark with similar form"/>
+                <outline text="All have white to greenish-white smooth bark with black markings"/>
+                <outline text="All produce round to triangular leaves that &quot;quake&quot; in the breeze"/>
+              </outline>
+              <outline text="ALDER GENUS (Alnus)">
+                <outline text="White Alder: Light gray bark, grows along streams"/>
+                <outline text="Red Alder: Can have light patches, similar habitat"/>
+                <outline text="Arizona Alder: Gray bark with lenticels, streamside species"/>
+                <outline text="Green Alder: Smooth gray bark, subalpine stream habitat"/>
+                <outline text="European Alder: Grayish bark with horizontal markings"/>
+                <outline text="All alder species have distinctive catkins and woody cone-like fruits"/>
+              </outline>
+              <outline text="COTTONWOOD GENUS (Populus)">
+                <outline text="Fremont Cottonwood: Light gray bark, riparian species"/>
+                <outline text="Black Cottonwood: Sometimes has light patches"/>
+                <outline text="Eastern Cottonwood: Light gray bark becoming furrowed"/>
+                <outline text="Balsam Poplar: Light grayish bark with diamond-shaped markings"/>
+                <outline text="Narrowleaf Cottonwood: Light gray bark with shallow furrows"/>
+                <outline text="All cottonwood species produce fluffy cotton-like seeds in spring"/>
+              </outline>
+            </outline>
+            <outline text="IN MOUNTAIN FORESTS → MOUNTAIN LIGHT BARK GROUP">
+              <outline text="ASPEN GENUS (Populus)">
+                <outline text="Quaking Aspen: Forms beautiful mountain groves"/>
+                <outline text="White bark stands out against dark conifers"/>
+                <outline text="Brilliant yellow fall color"/>
+              </outline>
+              <outline text="PINE GENUS - Some species">
+                <outline text="Whitebark Pine: Light colored bark at high elevations"/>
+                <outline text="Limber Pine: Light gray to whitish bark"/>
+                <outline text="Both high-elevation pines with 5 needles per bundle"/>
+              </outline>
+              <outline text="SOME FIR SPECIES (Abies)">
+                <outline text="White Fir: Smooth light gray bark when young"/>
+                <outline text="Subalpine Fir: Light-colored, smooth bark"/>
+                <outline text="Both have flat needles, upright cones"/>
+              </outline>
+            </outline>
+            <outline text="IN URBAN SETTINGS → ORNAMENTAL LIGHT BARK GROUP">
+              <outline text="BIRCH SPECIES - Ornamental plantings">
+                <outline text="Paper Birch: Brilliant white peeling bark"/>
+                <outline text="River Birch: Peeling cinnamon to cream bark"/>
+                <outline text="Both commonly planted for ornamental value"/>
+              </outline>
+              <outline text="BEECH GENUS (Fagus)">
+                <outline text="European Beech: Smooth light gray bark"/>
+                <outline text="American Beech: Similar smooth gray bark (rare in CA)"/>
+                <outline text="Both have smooth elephant-like gray bark"/>
+              </outline>
+              <outline text="CRAPE MYRTLE (Lagerstroemia)">
+                <outline text="Crape Myrtle: Smooth mottled bark, light colored"/>
+                <outline text="Popular ornamental with colorful flowers"/>
+                <outline text="Distinctive peeling pattern revealing lighter layers"/>
+              </outline>
+            </outline>
+          </outline>
+        </outline>
+        <outline text="RED, ORANGE, or CINNAMON → RED-TONED BARK GROUP">
+          <outline text="How does the bark TEXTURE appear?">
+            <outline text="SMOOTH and PEELING → PEELING RED BARK GROUP">
+              <outline text="MADRONE GENUS (Arbutus)">
+                <outline text="Pacific Madrone: Smooth peeling red-orange bark"/>
+                <outline text="Strawberry Tree: Similar smooth red bark, more shrub-like"/>
+                <outline text="Texas Madrone: Smooth reddish bark, found in southern climates"/>
+                <outline text="Greek Strawberry Tree: Reddish peeling bark, Mediterranean species"/>
+                <outline text="All madrone species peel to reveal bright green new bark underneath"/>
+                <outline text="All have leathery evergreen oval leaves and produce red berries"/>
+              </outline>
+              <outline text="MANZANITA GENUS (Arctostaphylos)">
+                <outline text="Bigberry Manzanita: Smooth mahogany-red bark"/>
+                <outline text="Common Manzanita: Smooth polished red bark"/>
+                <outline text="Eastwood Manzanita: Reddish-burgundy smooth bark"/>
+                <outline text="Whiteleaf Manzanita: Rich red smooth bark with pale leaves"/>
+                <outline text="Pointleaf Manzanita: Smooth red exfoliating bark"/>
+                <outline text="All manzanita species have similar smooth red bark, typically smaller than madrone"/>
+                <outline text="All produce small bell-shaped flowers and berry-like fruits"/>
+              </outline>
+              <outline text="SOME EUCALYPTUS SPECIES">
+                <outline text="Red Gum: Peeling bark revealing red-orange patches"/>
+                <outline text="Other eucalyptus species with red tones"/>
+                <outline text="All have distinctive eucalyptus smell when leaves crushed"/>
+              </outline>
+            </outline>
+            <outline text="FIBROUS or SHREDDY → FIBROUS RED BARK GROUP">
+              <outline text="REDWOOD GENUS (Sequoia)">
+                <outline text="Coast Redwood: Reddish-brown fibrous bark"/>
+                <outline text="Thick, spongy texture, fire resistant"/>
+                <outline text="Extremely tall with small flat needles"/>
+              </outline>
+              <outline text="SEQUOIA GENUS (Sequoiadendron)">
+                <outline text="Giant Sequoia: Cinnamon-red, deeply furrowed bark"/>
+                <outline text="Very thick, spongy fire resistant texture"/>
+                <outline text="Massive trunks, small scale-like needles"/>
+              </outline>
+              <outline text="INCENSE-CEDAR (Calocedrus)">
+                <outline text="Incense-cedar: Reddish brown shreddy bark"/>
+                <outline text="Fibrous texture, strongly aromatic"/>
+                <outline text="Flat sprays of scale-like foliage"/>
+              </outline>
+            </outline>
+            <outline text="PLATED or SCALY → PLATED RED BARK GROUP">
+              <outline text="PINE GENUS - Some species">
+                <outline text="Ponderosa Pine: Orange-brown &quot;puzzle piece&quot; plates"/>
+                <outline text="Jeffrey Pine: Similar but larger plates"/>
+                <outline text="Both smell like vanilla or butterscotch when warm"/>
+              </outline>
+              <outline text="JUNIPER GENUS (Juniperus)">
+                <outline text="Western Juniper: Reddish brown shredding bark"/>
+                <outline text="California Juniper: Similar color and texture"/>
+                <outline text="Both have scale-like foliage, blue berry-like cones"/>
+              </outline>
+              <outline text="SOME PINE SPECIES">
+                <outline text="Torrey Pine: Reddish plated bark"/>
+                <outline text="Monterey Pine: Reddish-brown furrowed bark"/>
+                <outline text="Both coastal pines with distinctive forms"/>
+              </outline>
+            </outline>
+          </outline>
+          <outline text="Does the red bark have a SPECIAL FEATURE?">
+            <outline text="GLOSSY, POLISHED look → POLISHED RED BARK GROUP">
+              <outline text="Madrone: Glossy, polished-looking red bark"/>
+              <outline text="Manzanita: Similar shiny appearance"/>
+              <outline text="Both have smooth texture that feels cool to touch"/>
+            </outline>
+            <outline text="&quot;SUNBURN&quot; PEELING appearance → PEELING RED BARK GROUP">
+              <outline text="Pacific Madrone: Classic &quot;sunburned&quot; peeling appearance"/>
+              <outline text="Some manzanita species: Similar peeling character"/>
+              <outline text="Both reveal bright green or yellow new bark underneath"/>
+            </outline>
+            <outline text="CINNAMON &quot;PUZZLE PIECES&quot; → PUZZLE RED BARK GROUP">
+              <outline text="Ponderosa Pine: Classic cinnamon puzzle-piece bark"/>
+              <outline text="Jeffrey Pine: Similar but larger plates"/>
+              <outline text="Both have distinctive vanilla/butterscotch scent"/>
+            </outline>
+          </outline>
+          <outline text="How does the tree SMELL when bark is scratched?">
+            <outline text="VANILLA or BUTTERSCOTCH scent → AROMATIC RED BARK GROUP">
+              <outline text="Ponderosa Pine: Strong vanilla scent in plates"/>
+              <outline text="Jeffrey Pine: Even stronger butterscotch smell"/>
+              <outline text="Both most aromatic on warm sunny days"/>
+            </outline>
+            <outline text="CEDAR or PENCIL-SHAVING smell → CEDAR RED BARK GROUP">
+              <outline text="Incense-cedar: Strong pencil shaving smell"/>
+              <outline text="Western Redcedar: Aromatic cedar smell"/>
+              <outline text="Both have fibrous reddish bark"/>
+            </outline>
+            <outline text="NO DISTINCT SMELL → NON-AROMATIC RED BARK GROUP">
+              <outline text="Pacific Madrone: No strong smell when scratched"/>
+              <outline text="Coast Redwood: Minimal scent in bark"/>
+              <outline text="Manzanita species: Typically not aromatic"/>
+            </outline>
+          </outline>
+        </outline>
+        <outline text="DARK BROWN to BLACK → DARK BARK GROUP">
+          <outline text="How does the bark TEXTURE appear?">
+            <outline text="DEEPLY FURROWED with ridges → RIDGED DARK BARK GROUP">
+              <outline text="OAK GENUS (Quercus) - Dark-barked species">
+                <outline text="California Black Oak: Dark deeply furrowed bark"/>
+                <outline text="Canyon Live Oak: Very dark, deeply grooved"/>
+                <outline text="Interior Live Oak: Dark bark with deep vertical furrows"/>
+                <outline text="Coast Live Oak: Dark gray-brown with deep furrows when mature"/>
+                <outline text="Red Oak: Dark gray to black with prominent ridges"/>
+                <outline text="Scrub Oak: Dark and deeply furrowed on older specimens"/>
+                <outline text="All oak species develop more deeply furrowed bark with age"/>
+                <outline text="All oak species produce acorns (key oak trait)"/>
+              </outline>
+              <outline text="ASH GENUS (Fraxinus)">
+                <outline text="Oregon Ash: Dark bark with diamond-shaped furrows"/>
+                <outline text="White Ash: Dark gray deeply furrowed bark"/>
+                <outline text="Green Ash: Dark gray to brown with distinctive ridge pattern"/>
+                <outline text="Arizona Ash: Gray-brown bark becoming furrowed with age"/>
+                <outline text="European Ash: Gray to dark gray deeply fissured bark"/>
+                <outline text="All ash species have distinctive interlacing ridge pattern when mature"/>
+                <outline text="All have compound leaves with opposite branching (key ash trait)"/>
+              </outline>
+              <outline text="WALNUT GENUS (Juglans)">
+                <outline text="California Black Walnut: Dark deeply furrowed bark"/>
+                <outline text="Northern California Walnut: Similar bark texture"/>
+                <outline text="Black Walnut: Very dark deeply ridged bark"/>
+                <outline text="English Walnut: Dark gray deeply furrowed in maturity"/>
+                <outline text="Butternut: Dark gray bark with broad, flat-topped ridges"/>
+                <outline text="All walnut species develop increasingly furrowed bark with age"/>
+                <outline text="All have compound leaves and produce walnuts (key walnut trait)"/>
+              </outline>
+            </outline>
+            <outline text="BLOCKY or CHECKERED → CHECKERED DARK BARK GROUP">
+              <outline text="PERSIMMON GENUS (Diospyros)">
+                <outline text="Common Persimmon: Distinctive checkered bark"/>
+                <outline text="Texas Persimmon: Dark blocky bark with lighter cracks"/>
+                <outline text="Japanese Persimmon: Develops checkered pattern with age"/>
+                <outline text="Date-plum: Gray-black bark with distinctive block pattern"/>
+                <outline text="All persimmon species have black blocks with lighter cracks between"/>
+                <outline text="All produce orange to yellow persimmon fruits (key persimmon trait)"/>
+              </outline>
+              <outline text="DOGWOOD GENUS (Cornus)">
+                <outline text="Pacific Dogwood: Dark bark breaks into small blocks"/>
+                <outline text="Flowering Dogwood: Similar blocky pattern when mature"/>
+                <outline text="Kousa Dogwood: Mottled bark with small blocky sections"/>
+                <outline text="Cornelian Cherry: Dark gray bark breaking into small blocks"/>
+                <outline text="All dogwood species develop distinctive alligator-like pattern when mature"/>
+                <outline text="Most have showy white &quot;flowers&quot; (actually bracts) and red berries"/>
+              </outline>
+              <outline text="OAK GENUS (Quercus) - Some mature species">
+                <outline text="Valley Oak: Develops checkered pattern with age"/>
+                <outline text="Blue Oak: Sometimes forms small blocks"/>
+                <outline text="Oregon White Oak: Can develop blocky pattern in older specimens"/>
+                <outline text="Post Oak: Dark gray bark broken into rectangular blocks"/>
+                <outline text="Bur Oak: Develops distinctive blocky ridges"/>
+                <outline text="Many oak species develop more blocky or checkered pattern with age"/>
+                <outline text="All oak species produce acorns (key oak trait)"/>
+              </outline>
+            </outline>
+            <outline text="SCALY or FLAKY → SCALY DARK BARK GROUP">
+              <outline text="PINE GENUS (Pinus) - Dark-barked species">
+                <outline text="Bishop Pine: Dark scaly bark"/>
+                <outline text="Knobcone Pine: Dark flaky bark"/>
+                <outline text="Lodgepole Pine: Dark bark with small scales"/>
+                <outline text="Monterey Pine: Dark scaly bark with shallow furrows"/>
+                <outline text="Jack Pine: Flaky dark gray to black bark"/>
+                <outline text="Virginia Pine: Dark brown to nearly black scaly bark"/>
+                <outline text="Many pine species develop increasingly scaly bark with age"/>
+                <outline text="All pine species recognized by needles in bundles (key pine trait)"/>
+              </outline>
+              <outline text="DOUGLAS-FIR GENUS (Pseudotsuga)">
+                <outline text="Coast Douglas-fir: Dark bark with resin blisters when young"/>
+                <outline text="Rocky Mountain Douglas-fir: Similar but grayer bark"/>
+                <outline text="Bigcone Douglas-fir: Dark bark becoming thick and scaly"/>
+                <outline text="Japanese Douglas-fir: Dark gray bark with fine scales"/>
+                <outline text="All Douglas-fir species develop thick corky bark with age"/>
+                <outline text="All have distinctive cones with &quot;mouse tail&quot; bracts (key Douglas-fir trait)"/>
+              </outline>
+              <outline text="BUCKEYE GENUS (Aesculus)">
+                <outline text="California Buckeye: Dark scaly bark"/>
+                <outline text="Ohio Buckeye: Dark gray bark becoming scaly with age"/>
+                <outline text="Yellow Buckeye: Dark gray-brown scaly bark"/>
+                <outline text="Red Buckeye: Dark gray bark with shallow scales"/>
+                <outline text="Horse Chestnut: Dark gray scaly bark, often with orange inner bark"/>
+                <outline text="All buckeye species have distinctive rounded crowns and early leaf drop"/>
+                <outline text="All produce large, poisonous &quot;horse chestnut&quot; seeds (key buckeye trait)"/>
+              </outline>
+            </outline>
+          </outline>
+          <outline text="Does the dark bark have a SPECIAL FEATURE?">
+            <outline text="OOZING SAP or RESIN → RESINOUS DARK BARK GROUP">
+              <outline text="CHERRY/PLUM GENUS (Prunus)">
+                <outline text="Black Cherry: Dark bark often with amber resin oozing"/>
+                <outline text="Bitter Cherry: Dark bark with resin or gum exudate"/>
+                <outline text="Pin Cherry: Dark reddish-brown bark with amber exudate"/>
+                <outline text="Chokecherry: Dark bark often with gum deposits"/>
+                <outline text="Purple-leaf Plum: Dark bark that can exude amber resin"/>
+                <outline text="All cherry species have distinctive horizontal lenticels"/>
+                <outline text="All are often among first trees to flower in spring (key cherry trait)"/>
+              </outline>
+              <outline text="PINE GENUS (Pinus) - Resinous species">
+                <outline text="Gray Pine: Often has prominent resin patches on trunk"/>
+                <outline text="Bishop Pine: Can have resinous patches"/>
+                <outline text="Ponderosa Pine: Often has resin streaks on dark bark"/>
+                <outline text="Jeffrey Pine: Similar resin patterns to Ponderosa"/>
+                <outline text="Lodgepole Pine: Dark bark with small pockets of resin"/>
+                <outline text="All pine species can produce resin when injured or diseased"/>
+                <outline text="All pine species recognized by needles in bundles (key pine trait)"/>
+              </outline>
+              <outline text="FIR GENUS (Abies) - Young trees">
+                <outline text="White Fir: Resin blisters in young bark"/>
+                <outline text="Red Fir: Similar resin features"/>
+                <outline text="California Red Fir: Dark bark with resin pockets"/>
+                <outline text="Grand Fir: Gray bark with resin blisters when young"/>
+                <outline text="Subalpine Fir: Dark grayish bark with resin blisters"/>
+                <outline text="All fir species can have resin blisters, especially when young"/>
+                <outline text="All have flat needles and upright cones (key fir trait)"/>
+              </outline>
+            </outline>
+            <outline text="WARTY or BUMPY texture → WARTY DARK BARK GROUP">
+              <outline text="HACKBERRY GENUS (Celtis)">
+                <outline text="Western Hackberry: Distinctive warty bark"/>
+                <outline text="Common Hackberry: Gray bark with corky warts and ridges"/>
+                <outline text="Netleaf Hackberry: Dark gray bark with numerous warty projections"/>
+                <outline text="Sugarberry: Dark gray bark with warty, corky outgrowths"/>
+                <outline text="Desert Hackberry: Gray to brown bark with warty texture"/>
+                <outline text="All hackberry species develop numerous warty projections on trunk"/>
+                <outline text="All produce small berry-like drupes (key hackberry trait)"/>
+              </outline>
+              <outline text="COTTONWOOD GENUS (Populus) - Mature specimens">
+                <outline text="Fremont Cottonwood: Develops warty ridges with age"/>
+                <outline text="Black Cottonwood: Similar texture when old"/>
+                <outline text="Eastern Cottonwood: Dark gray bark with warty ridges"/>
+                <outline text="Narrowleaf Cottonwood: Dark bark with warty projections"/>
+                <outline text="Balsam Poplar: Develops warty texture with maturity"/>
+                <outline text="All mature cottonwood species develop increasingly warty or ridged bark"/>
+                <outline text="All produce cotton-like seeds in spring (key cottonwood trait)"/>
+              </outline>
+              <outline text="BUCKEYE GENUS (Aesculus)">
+                <outline text="California Buckeye: Sometimes has warty bark"/>
+                <outline text="Ohio Buckeye: Develops warty texture with age"/>
+                <outline text="Yellow Buckeye: Gray bark with warty ridges"/>
+                <outline text="Red Buckeye: Can develop bumpy texture with age"/>
+                <outline text="Horse Chestnut: Often develops warty projections"/>
+                <outline text="This feature is especially noticeable on older specimens"/>
+                <outline text="All produce distinctive large round seeds (key buckeye trait)"/>
+              </outline>
+            </outline>
+            <outline text="Very THICK and CORKY → CORKY DARK BARK GROUP">
+              <outline text="OAK GENUS (Quercus) - Cork species">
+                <outline text="Cork Oak: Extremely thick corky bark"/>
+                <outline text="Canyon Live Oak: Develops thick corky bark with age"/>
+                <outline text="Turkey Oak: Develops corky ridges on mature specimens"/>
+                <outline text="Bur Oak: Develops thick corky bark with deep furrows"/>
+                <outline text="Cork Oak is planted ornamentally and is the source of commercial cork"/>
+                <outline text="All oak species produce acorns (key oak trait)"/>
+              </outline>
+              <outline text="DOUGLAS-FIR GENUS (Pseudotsuga) - Mature specimens">
+                <outline text="Coast Douglas-fir: Develops very thick corky bark"/>
+                <outline text="Rocky Mountain Douglas-fir: Similar corky texture"/>
+                <outline text="Bigcone Douglas-fir: Thick, corky, fire-resistant bark"/>
+                <outline text="All can develop bark up to 12 inches thick on old trees"/>
+                <outline text="Thick bark provides excellent fire protection"/>
+                <outline text="All have distinctive cones with &quot;mouse tail&quot; bracts (key Douglas-fir trait)"/>
+              </outline>
+              <outline text="PINE GENUS (Pinus) - Fire-adapted species">
+                <outline text="Ponderosa Pine: Develops thick, corky bark with age"/>
+                <outline text="Jeffrey Pine: Similar thick protective bark"/>
+                <outline text="Western Yellow Pine: Thick corky orange-brown bark"/>
+                <outline text="Longleaf Pine: Thick plated bark as fire adaptation"/>
+                <outline text="Pitch Pine: Thick, irregularly furrowed, fire-resistant bark"/>
+                <outline text="Many pine species develop thick bark as fire adaptation"/>
+                <outline text="All pine species recognized by needles in bundles (key pine trait)"/>
+              </outline>
+            </outline>
+          </outline>
+          <outline text="Is the dark bark SMOOTH or ROUGH?">
+            <outline text="SMOOTH, especially on upper trunk → SMOOTH DARK BARK GROUP">
+              <outline text="MAPLE GENUS (Acer) - Mature trees">
+                <outline text="Bigleaf Maple: Gray-brown smooth bark on upper trunk"/>
+                <outline text="Vine Maple: Smooth dark gray-green bark"/>
+                <outline text="Striped Maple: Smooth greenish bark with dark stripes"/>
+                <outline text="Rocky Mountain Maple: Smooth dark grayish bark"/>
+                <outline text="Black Maple: Smooth dark gray bark on younger parts"/>
+                <outline text="Red Maple: Smooth dark gray bark on upper branches"/>
+                <outline text="Most maple species have smoother bark on upper trunk than lower"/>
+                <outline text="All have opposite leaf arrangement (key maple trait)"/>
+              </outline>
+              <outline text="CHERRY GENUS (Prunus)">
+                <outline text="Black Cherry: Smooth dark bark with distinctive lenticels"/>
+                <outline text="Pin Cherry: Smooth reddish-brown to dark gray bark"/>
+                <outline text="Bitter Cherry: Smooth dark bark with horizontal lenticels"/>
+                <outline text="Chokecherry: Smooth dark bark, typically on upper trunk"/>
+                <outline text="Ornamental Cherry: Smooth glossy bark on many varieties"/>
+                <outline text="All cherry species have smooth bark that often peels horizontally in strips"/>
+                <outline text="All have a distinctive sheen on smooth areas (key cherry trait)"/>
+              </outline>
+              <outline text="MADRONE GENUS (Arbutus) - Older parts">
+                <outline text="Pacific Madrone: Older bark sometimes dark and smooth"/>
+                <outline text="Strawberry Tree: Similar dark smooth areas contrasting with peeling sections"/>
+                <outline text="Greek Strawberry Tree: Can have dark smooth areas on older portions"/>
+                <outline text="Texas Madrone: Dark smooth portions contrasting with peeling areas"/>
+                <outline text="All madrone species show contrast between smooth dark areas and peeling red newer bark"/>
+                <outline text="All have leathery evergreen leaves (key madrone trait)"/>
+              </outline>
+            </outline>
+            <outline text="VERY ROUGH, deeply textured → ROUGH DARK BARK GROUP">
+              <outline text="OAK GENUS (Quercus) - Black Oak group">
+                <outline text="California Black Oak: Very dark rough bark"/>
+                <outline text="Interior Live Oak: Dark and deeply furrowed"/>
+                <outline text="Coast Live Oak: Very dark deeply furrowed mature bark"/>
+                <outline text="Red Oak: Dark blackish bark with deep furrows"/>
+                <outline text="Scrub Oak: Dark rough bark on mature specimens"/>
+                <outline text="All black oak group species have increasingly rough texture with age"/>
+                <outline text="All have bristle-tipped leaves (key black oak trait)"/>
+              </outline>
+              <outline text="WALNUT GENUS (Juglans)">
+                <outline text="California Black Walnut: Very dark, deeply ridged"/>
+                <outline text="Northern California Walnut: Similar texture"/>
+                <outline text="Black Walnut: Extremely rough dark ridged bark"/>
+                <outline text="English Walnut: Dark gray to black rough bark when mature"/>
+                <outline text="Butternut: Dark, deeply furrowed with distinctive ridge pattern"/>
+                <outline text="All walnut species develop increasingly rough bark with age"/>
+                <outline text="All have compound leaves and produce walnuts (key walnut trait)"/>
+              </outline>
+              <outline text="LOCUST GENUS (Robinia)">
+                <outline text="Black Locust: Very rough dark bark with deep furrows"/>
+                <outline text="New Mexico Locust: Similar rough dark texture"/>
+                <outline text="Bristly Locust: Dark rough bark with age"/>
+                <outline text="Clammy Locust: Rough dark bark with distinct ridges"/>
+                <outline text="Honey Locust: Dark gray to brown deeply fissured bark"/>
+                <outline text="All locust species develop extremely rough, rope-like bark with age"/>
+                <outline text="All have compound leaves and often thorny branches (key locust trait)"/>
+              </outline>
+            </outline>
+          </outline>
+        </outline>
+        <outline text="GREEN or YELLOW undertones → GREEN-YELLOW BARK GROUP">
+          <outline text="Are there MULTIPLE COLORS in the bark?">
+            <outline text="MULTI-COLORED PATCHES → MOTTLED GREEN BARK GROUP">
+              <outline text="SYCAMORE GENUS (Platanus)">
+                <outline text="California Sycamore: Green, white, tan mottled pattern"/>
+                <outline text="London Plane Tree: Similar mottled pattern with green undertones"/>
+                <outline text="American Sycamore: Green, cream, and brown patchy bark"/>
+                <outline text="Arizona Sycamore: Multicolored patches with green tints"/>
+                <outline text="All sycamore species have distinctive camouflage-like appearance"/>
+                <outline text="All peel to reveal lighter colors beneath (key sycamore trait)"/>
+              </outline>
+              <outline text="MADRONE GENUS (Arbutus) - New bark">
+                <outline text="Pacific Madrone: Bright green new bark under peeling red"/>
+                <outline text="Strawberry Tree: Similar green underbark beneath red outer layer"/>
+                <outline text="Texas Madrone: Green new bark becoming reddish with sun exposure"/>
+                <outline text="Greek Strawberry Tree: Fresh green bark beneath peeling sections"/>
+                <outline text="All madrone species have multiple color zones as bark matures"/>
+                <outline text="All maintain smooth texture throughout (key madrone trait)"/>
+              </outline>
+              <outline text="EUCALYPTUS GENUS (Eucalyptus)">
+                <outline text="Rainbow Eucalyptus: Multi-colored peeling bark with vibrant hues"/>
+                <outline text="Lemon-scented Gum: Patches of green, yellow, gray in bark"/>
+                <outline text="Silver Dollar Gum: Mottled patches of green, gray, and cream"/>
+                <outline text="Snow Gum: Colorful patches with green, gray, cream, and pink"/>
+                <outline text="Spotted Gum: Distinctive mottled pattern with green undertones"/>
+                <outline text="Most eucalyptus species have multi-colored bark patterns"/>
+                <outline text="All have distinctive eucalyptus smell when leaves crushed (key eucalyptus trait)"/>
+              </outline>
+            </outline>
+            <outline text="GREEN with YELLOW TINT → YELLOW-GREEN BARK GROUP">
+              <outline text="PINE GENUS (Pinus) - Yellow pines">
+                <outline text="Ponderosa Pine: Yellow-green cast to young trunks"/>
+                <outline text="Jeffrey Pine: Similar yellow-green tone to young bark"/>
+                <outline text="Western Yellow Pine: Yellow-green tint to bark"/>
+                <outline text="Shortleaf Pine: Yellow-green cast on young specimens"/>
+                <outline text="Pitch Pine: Yellow-green tints to younger bark"/>
+                <outline text="These species are often called &quot;yellow pines&quot; for this reason"/>
+                <outline text="All develop orange or cinnamon puzzle-piece bark patterns with age"/>
+                <outline text="All pine species recognized by needles in bundles (key pine trait)"/>
+              </outline>
+              <outline text="MAPLE GENUS (Acer) - Green-barked species">
+                <outline text="Box Elder: Green-yellow cast to young bark"/>
+                <outline text="Vine Maple: Sometimes has greenish tint to bark"/>
+                <outline text="Striped Maple: Distinctive green bark with white stripes"/>
+                <outline text="Mountain Maple: Green-yellow tint to young bark"/>
+                <outline text="Japanese Maple: Some varieties have green-tinted bark"/>
+                <outline text="Chalk Maple: Young bark often with green-yellow cast"/>
+                <outline text="Many maple species have green tints to their bark when young"/>
+                <outline text="All have opposite branching pattern (key maple trait)"/>
+              </outline>
+              <outline text="WILLOW GENUS (Salix) - Young branches">
+                <outline text="Weeping Willow: Yellow-green young bark"/>
+                <outline text="Pussy Willow: Distinctive yellow-green young stems"/>
+                <outline text="Arroyo Willow: Green-yellow bark on new shoots"/>
+                <outline text="Coyote Willow: Yellow-green young stems and twigs"/>
+                <outline text="Scouler's Willow: Yellow-green cast to young bark"/>
+                <outline text="This feature is often most visible on new shoots and twigs"/>
+                <outline text="All willow species have narrow, often elongated leaves (key willow trait)"/>
+              </outline>
+            </outline>
+            <outline text="OLIVE-GREEN to GRAY-GREEN → OLIVE BARK GROUP">
+              <outline text="OLIVE GENUS (Olea)">
+                <outline text="Olive Tree: Distinctive gray-green bark"/>
+                <outline text="Wild Olive: Gray-green bark, more shrubby form"/>
+                <outline text="Russian Olive: Shreddy gray-green bark"/>
+                <outline text="African Olive: Similar gray-green bark to common olive"/>
+                <outline text="All olive species become increasingly twisted and gnarled with age"/>
+                <outline text="All have narrow silvery leaves and produce olives (key olive trait)"/>
+              </outline>
+              <outline text="LAUREL FAMILY (Lauraceae)">
+                <outline text="California Bay Laurel: Olive-green younger bark"/>
+                <outline text="Camphor Tree: Gray-brown to olive-green smooth bark when young"/>
+                <outline text="Avocado: Gray-green smooth bark"/>
+                <outline text="Sassafras: Olive-green tinged bark on young trees"/>
+                <outline text="Spicebush: Similar olive-green smooth bark when young"/>
+                <outline text="All members of the laurel family have aromatic leaves (bay, camphor, or spice scent)"/>
+                <outline text="All are evergreen trees with smooth leaf margins (key laurel trait)"/>
+              </outline>
+              <outline text="CEDAR GENUS (Calocedrus/Thuja)">
+                <outline text="Incense-cedar: Sometimes olive-tinted on young bark"/>
+                <outline text="Western Redcedar: Gray-green cast on young bark"/>
+                <outline text="Atlas Cedar: Young trees have olive-green bark tone"/>
+                <outline text="Port Orford Cedar: Olive-green cast on bark of young trees"/>
+                <outline text="Northern White Cedar: Gray-green cast to young bark"/>
+                <outline text="All cedar species develop more reddish or brownish tones with age"/>
+                <outline text="All have flat sprays of scale-like foliage (key cedar trait)"/>
+              </outline>
+            </outline>
+          </outline>
+          <outline text="Is the greenish bark SMOOTH or ROUGH?">
+            <outline text="SMOOTH, often on young trees → SMOOTH GREEN BARK GROUP">
+              <outline text="MADRONE GENUS (Arbutus) - New bark">
+                <outline text="Pacific Madrone: Bright green smooth new bark"/>
+                <outline text="Strawberry Tree: Similar green new bark"/>
+                <outline text="Texas Madrone: Green smooth bark on new growth"/>
+                <outline text="Greek Strawberry Tree: Bright green smooth inner bark"/>
+                <outline text="All madrone species reveal green new bark when red outer bark peels"/>
+                <outline text="All gradually turn red with exposure to sun (key madrone trait)"/>
+              </outline>
+              <outline text="MANZANITA GENUS (Arctostaphylos) - New growth">
+                <outline text="Common Manzanita: Green new twigs and branches"/>
+                <outline text="Bigberry Manzanita: Bright green new growth"/>
+                <outline text="Whiteleaf Manzanita: Green new twigs contrasting with red mature bark"/>
+                <outline text="Eastwood Manzanita: Similar green new growth pattern"/>
+                <outline text="Pointleaf Manzanita: Green smooth young twigs"/>
+                <outline text="All manzanita species have green new twigs that gradually turn red with age"/>
+                <outline text="All maintain smooth texture throughout (key manzanita trait)"/>
+              </outline>
+              <outline text="LAUREL FAMILY (Lauraceae) - Young trees">
+                <outline text="Camphor Tree: Smooth gray-green bark when young"/>
+                <outline text="California Bay Laurel: Smooth green-tinted bark on young trees"/>
+                <outline text="Avocado: Smooth greenish bark when young"/>
+                <outline text="Sassafras: Young bark with green tints"/>
+                <outline text="All develop shallow furrows with age"/>
+                <outline text="All have aromatic leaves with distinctive scents (key laurel trait)"/>
+              </outline>
+              <outline text="MAPLE GENUS (Acer) - Green-barked species">
+                <outline text="Box Elder: Smooth green-tinted young bark"/>
+                <outline text="Vine Maple: Often green-tinted when young"/>
+                <outline text="Striped Maple: Distinctive smooth green bark with vertical striping"/>
+                <outline text="Japanese Maple: Some varieties have green-tinted smooth bark"/>
+                <outline text="Mountain Maple: Smooth green bark when young"/>
+                <outline text="Many maple species have green-tinted bark when young"/>
+                <outline text="All have opposite leaf arrangement (key maple trait)"/>
+              </outline>
+            </outline>
+            <outline text="ROUGH or FLAKING → ROUGH GREEN BARK GROUP">
+              <outline text="SYCAMORE GENUS (Platanus) - Older bark">
+                <outline text="California Sycamore: Green tint visible in patches"/>
+                <outline text="London Plane Tree: Similar pattern with green undertones"/>
+                <outline text="American Sycamore: Flaking bark with green tints"/>
+                <outline text="Arizona Sycamore: Similar flaking pattern with green patches"/>
+                <outline text="All sycamore species have flaking bark that reveals various colors including green"/>
+                <outline text="All form distinctive puzzle-piece pattern (key sycamore trait)"/>
+              </outline>
+              <outline text="PINE GENUS (Pinus) - Yellow-green species">
+                <outline text="Ponderosa Pine: Yellow-green undertones in bark plates"/>
+                <outline text="Jeffrey Pine: Similar but more orange tones"/>
+                <outline text="Western Yellow Pine: Greenish tints in bark puzzle pieces"/>
+                <outline text="Shortleaf Pine: Yellow-green tones in bark plates"/>
+                <outline text="Pitch Pine: Sometimes shows green-yellow tints"/>
+                <outline text="All &quot;yellow pines&quot; develop puzzle-piece pattern with age"/>
+                <outline text="All pine species recognized by needles in bundles (key pine trait)"/>
+              </outline>
+              <outline text="CYPRESS GENUS (Cupressus)">
+                <outline text="Arizona Cypress: Sometimes has gray-green tint to bark"/>
+                <outline text="Monterey Cypress: Can have greenish tint to rough bark"/>
+                <outline text="Italian Cypress: Gray-green cast on some specimens"/>
+                <outline text="Portuguese Cypress: Sometimes shows green tints in bark"/>
+                <outline text="All cypress species can appear dusty green in certain light"/>
+                <outline text="All have scale-like foliage and small rounded cones (key cypress trait)"/>
+              </outline>
+            </outline>
+          </outline>
+          <outline text="Where is the tree GROWING?">
+            <outline text="IN RIPARIAN AREAS → RIPARIAN GREEN BARK GROUP">
+              <outline text="WILLOW GENUS (Salix)">
+                <outline text="Weeping Willow: Yellow-green young bark"/>
+                <outline text="Arroyo Willow: Green-yellow bark on riparian trees"/>
+                <outline text="Pacific Willow: Yellow-green bark in wetland settings"/>
+                <outline text="Coyote Willow: Greenish young bark in streamside habitats"/>
+                <outline text="Scouler's Willow: Green-tinted bark near water sources"/>
+                <outline text="All willow species are always found near water"/>
+                <outline text="All have flexible twigs and narrow elongated leaves (key willow trait)"/>
+              </outline>
+              <outline text="MAPLE GENUS (Acer) - Riparian species">
+                <outline text="Box Elder: Green-tinted bark, grows near streams"/>
+                <outline text="Red Maple: Can have green tints when growing in wet areas"/>
+                <outline text="Silver Maple: Sometimes with green tones near streams"/>
+                <outline text="Bigleaf Maple: Young trees can show green tint in riparian settings"/>
+                <outline text="Box Elder has compound leaves unlike most maples"/>
+                <outline text="All have opposite branching pattern (key maple trait)"/>
+              </outline>
+              <outline text="SYCAMORE GENUS (Platanus)">
+                <outline text="California Sycamore: Mottled green bark, riparian habitat"/>
+                <outline text="American Sycamore: Similar pattern, always near water"/>
+                <outline text="Arizona Sycamore: Green-tinted mottled bark along waterways"/>
+                <outline text="London Plane Tree: Green-tinted bark, often planted near water"/>
+                <outline text="All sycamore species are always found near water sources"/>
+                <outline text="All have large maple-like leaves and ball-like fruits (key sycamore trait)"/>
+              </outline>
+            </outline>
+            <outline text="IN UPLAND FORESTS → UPLAND GREEN BARK GROUP">
+              <outline text="MADRONE GENUS (Arbutus)">
+                <outline text="Pacific Madrone: Green new bark, grows in dry forests"/>
+                <outline text="Strawberry Tree: Similar green new bark on upland sites"/>
+                <outline text="Texas Madrone: Green new bark in higher elevation forests"/>
+                <outline text="All madrone species are often found on slopes with oaks and pines"/>
+                <outline text="All have leathery evergreen leaves (key madrone trait)"/>
+              </outline>
+              <outline text="LAUREL FAMILY (Lauraceae)">
+                <outline text="California Bay Laurel: Olive-green bark, upland tree"/>
+                <outline text="Camphor Tree: Gray-green bark, sometimes in upland settings"/>
+                <outline text="Sassafras: Green-tinted bark in forest settings"/>
+                <outline text="All are commonly found in mixed evergreen forests"/>
+                <outline text="All have aromatic leaves and olive-like fruits (key laurel trait)"/>
+              </outline>
+              <outline text="PINE GENUS (Pinus) - Upland species">
+                <outline text="Ponderosa Pine: Yellow-green young bark in mountain forests"/>
+                <outline text="Jeffrey Pine: Similar coloration on young trees at higher elevations"/>
+                <outline text="Lodgepole Pine: Can have yellow-green tint in young growth"/>
+                <outline text="Sugar Pine: Sometimes shows green tints in mountain settings"/>
+                <outline text="Gray Pine: Yellow-green bark tones in foothill forests"/>
+                <outline text="All these pine species are common in upland forests"/>
+                <outline text="All pine species recognized by needles in bundles (key pine trait)"/>
+              </outline>
+            </outline>
+            <outline text="IN GARDENS or URBAN SETTINGS → ORNAMENTAL GREEN BARK GROUP">
+              <outline text="OLIVE GENUS (Olea)">
+                <outline text="Olive Tree: Gray-green bark, common ornamental"/>
+                <outline text="Wild Olive: Similar gray-green bark in garden settings"/>
+                <outline text="Russian Olive: Gray-green shreddy bark in landscaping"/>
+                <outline text="African Olive: Olive-green bark in ornamental plantings"/>
+                <outline text="All olive species are planted for fruit and ornamental value"/>
+                <outline text="All develop distinctive twisted form in mature specimens (key olive trait)"/>
+              </outline>
+              <outline text="EUCALYPTUS GENUS (Eucalyptus)">
+                <outline text="Lemon-scented Gum: Smooth greenish bark"/>
+                <outline text="Rainbow Eucalyptus: Multi-colored with green tones"/>
+                <outline text="Silver Dollar Gum: Green-gray smooth bark"/>
+                <outline text="Red Gum: Sometimes greenish tinted in patches"/>
+                <outline text="Snow Gum: Multi-colored bark with green tones"/>
+                <outline text="All are popular in landscaping and urban settings"/>
+                <outline text="All have distinctive eucalyptus smell when leaves crushed (key eucalyptus trait)"/>
+              </outline>
+              <outline text="MAPLE GENUS (Acer) - Ornamental species">
+                <outline text="Japanese Maple: Sometimes green-tinted young bark"/>
+                <outline text="Paperbark Maple: Can have greenish tint on young growth"/>
+                <outline text="Trident Maple: Young bark often with green cast"/>
+                <outline text="Fullmoon Maple: Green tints on young ornamental specimens"/>
+                <outline text="Hedge Maple: Sometimes green-tinted in garden settings"/>
+                <outline text="Many maple species are common ornamentals with delicate leaves"/>
+                <outline text="All have opposite branching pattern (key maple trait)"/>
+              </outline>
+            </outline>
+          </outline>
+        </outline>
+        <outline text="Does the bark have a UNIQUE PATTERN?">
+          <outline text="PEELING in CURLS or STRIPS → PEELING BARK GROUP">
+            <outline text="BIRCH GENUS (Betula)">
+              <outline text="Water Birch: Peels in horizontal strips"/>
+              <outline text="Paper Birch: Classic white peeling bark"/>
+              <outline text="River Birch: Peeling cinnamon to cream bark that exfoliates in curls"/>
+              <outline text="Yellow Birch: Golden-bronze peeling bark"/>
+              <outline text="Gray Birch: White bark that peels minimally"/>
+              <outline text="Sweet Birch: Dark reddish-brown peeling bark"/>
+              <outline text="All birch species peel to some degree, with distinctive pattern for each species"/>
+              <outline text="All have distinctive horizontal lenticels (key birch trait)"/>
+            </outline>
+            <outline text="MADRONE GENUS (Arbutus)">
+              <outline text="Pacific Madrone: Red bark peels in curls"/>
+              <outline text="Strawberry Tree: Similar red peeling bark"/>
+              <outline text="Texas Madrone: Reddish bark that peels in thin strips"/>
+              <outline text="Greek Strawberry Tree: Peeling red-orange bark"/>
+              <outline text="All madrone species reveal bright green new bark underneath when peeling"/>
+              <outline text="All maintain smooth texture throughout (key madrone trait)"/>
+            </outline>
+            <outline text="EUCALYPTUS GENUS (Eucalyptus)">
+              <outline text="Blue Gum: Peels in long ribbons"/>
+              <outline text="Red Gum: Similar long ribbon peeling pattern"/>
+              <outline text="Silver Dollar Gum: Peels in patches to reveal multicolored underbark"/>
+              <outline text="Rainbow Eucalyptus: Dramatic peeling reveals colorful layers"/>
+              <outline text="Spinning Gum: Peels in smaller strips"/>
+              <outline text="Most eucalyptus species have distinctive peeling pattern"/>
+              <outline text="All have distinctive eucalyptus smell when leaves crushed (key eucalyptus trait)"/>
+            </outline>
+          </outline>
+          <outline text="&quot;JIGSAW PUZZLE&quot; or CAMOUFLAGE pattern → PUZZLE BARK GROUP">
+            <outline text="SYCAMORE GENUS (Platanus)">
+              <outline text="California Sycamore: Classic puzzle-piece bark"/>
+              <outline text="London Plane Tree: Similar puzzle-like pattern"/>
+              <outline text="American Sycamore: White bark with distinct puzzle pattern"/>
+              <outline text="Arizona Sycamore: Similar pattern with more beige tones"/>
+              <outline text="All sycamore species have mottled cream, tan, and green coloration"/>
+              <outline text="All shed puzzle pieces revealing lighter patches beneath (key sycamore trait)"/>
+            </outline>
+            <outline text="PINE GENUS (Pinus) - Yellow pines">
+              <outline text="Ponderosa Pine: Cinnamon puzzle-piece bark plates"/>
+              <outline text="Jeffrey Pine: Similar but larger plates"/>
+              <outline text="Western Yellow Pine: Distinctive jigsaw pattern in bark"/>
+              <outline text="Shortleaf Pine: Similar but smaller puzzle pieces"/>
+              <outline text="All &quot;yellow pines&quot; develop similar puzzle pattern with age"/>
+              <outline text="Many have vanilla-like scent in bark crevices (key yellow pine trait)"/>
+            </outline>
+            <outline text="CRAPE MYRTLE GENUS (Lagerstroemia)">
+              <outline text="Common Crape Myrtle: Develops jigsaw-like mottled pattern"/>
+              <outline text="Japanese Crape Myrtle: Similar mottled exfoliating pattern"/>
+              <outline text="Queen's Crape Myrtle: Distinctive jigsaw-like bark pattern"/>
+              <outline text="All crape myrtle species develop multiple color patches as bark exfoliates"/>
+              <outline text="All are popular ornamentals with colorful flowers (key crape myrtle trait)"/>
+            </outline>
+          </outline>
+          <outline text="HORIZONTAL LINES or &quot;DASH MARKS&quot; → LINED BARK GROUP">
+            <outline text="BIRCH GENUS (Betula)">
+              <outline text="Water Birch: Distinctive horizontal dash marks (lenticels)"/>
+              <outline text="Paper Birch: Similar horizontal lenticels but on white background"/>
+              <outline text="River Birch: Prominent lenticels on cinnamon to cream bark"/>
+              <outline text="Gray Birch: White bark with horizontal dashes"/>
+              <outline text="Yellow Birch: Golden-bronze bark with horizontal lenticels"/>
+              <outline text="European White Birch: Striking white bark with horizontal lenticel pattern"/>
+              <outline text="All birch species show this distinctive horizontal lenticel pattern"/>
+              <outline text="All produce catkins in spring (key birch trait)"/>
+            </outline>
+            <outline text="CHERRY GENUS (Prunus)">
+              <outline text="Black Cherry: Prominent horizontal lenticels on dark bark"/>
+              <outline text="Bitter Cherry: Distinctive horizontal lenticel pattern"/>
+              <outline text="Pin Cherry: Horizontal lenticels on reddish bark"/>
+              <outline text="Chokecherry: Similar lenticel pattern on younger bark"/>
+              <outline text="All cherry species have horizontal lenticels, often prominent on younger bark"/>
+              <outline text="All may seep gum from these marks when damaged (key cherry trait)"/>
+            </outline>
+            <outline text="ALDER GENUS (Alnus)">
+              <outline text="White Alder: Distinctive horizontal lines"/>
+              <outline text="Red Alder: Similar markings on more reddish bark"/>
+              <outline text="Green Alder: Horizontal lenticels on grayish bark"/>
+              <outline text="European Alder: Gray-brown bark with horizontal lenticel pattern"/>
+              <outline text="Italian Alder: Shows distinct horizontal lenticel marks"/>
+              <outline text="All alder species show horizontal lenticel pattern, though less prominent than birches"/>
+              <outline text="All produce woody &quot;cone-like&quot; fruits and catkins (key alder trait)"/>
+            </outline>
+          </outline>
+        </outline>
+      </outline>
+      <outline text="It PEELS or FLAKES off in patches → Go to Peeling Bark Trees"/>
+      <outline text="It has PUZZLE-PIECE patterns → Go to Puzzle-Bark Trees"/>
+      <outline text="It has an UNUSUAL COLOR (green, purple, etc.) → Go to Colorful Bark Trees"/>
+      <outline text="Nothing special about the bark, but I can see it clearly → Go to Basic Bark Types"/>
+    </outline>
+  </body>
+</opml>
