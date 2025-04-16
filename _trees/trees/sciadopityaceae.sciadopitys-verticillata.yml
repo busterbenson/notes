@@ -1,0 +1,260 @@
+tree:
+  common_name: "Japanese Umbrella Pine"
+  scientific_name: "Sciadopitys verticillata"
+  scientific_genus: "Sciadopitys"
+  common_genus: "Umbrella Pine"
+  family: "Sciadopityaceae"
+  
+  # Basic summary information
+  summary: "A unique conifer native to Japan with distinctive whorled needles that resemble umbrella spokes. Despite its name, it's not a true pine but the sole member of its own family. Slow-growing and highly valued as an ornamental specimen tree in gardens."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Distinctive whorled needles arranged like umbrella spokes; thick, glossy, dark green needles"
+    secondary_markers: "Conical to pyramidal shape; whorls of needles at branch tips; slow-growing"
+    seasonal_markers: "Little seasonal change; stays evergreen year-round; small upright cones appear in spring"
+    similar_species_differentiation: "Unlike any other conifer; whorled needle arrangement is unmistakable; needles are much thicker and longer than pine needles"
+  
+  features:
+    always_true:
+      # Fundamental traits
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles for 3-4 years before shedding"
+        
+      - feature_id: "NEEDLE-ARRANGE-07"  # Whorled needles
+        notes: "Needles arranged in distinctive whorls at branch tips, like umbrella spokes"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal shape
+        notes: "Maintains a conical to pyramidal shape throughout its life"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Non-native to California
+        notes: "Native to Japan; cultivated in California as an ornamental"
+      
+      - feature_id: "NEEDLE-SIZE-03"  # Long needles
+        notes: "Thick, glossy needles 2-5 inches long"
+        
+      - feature_id: "NEEDLE-COLOR-01"  # Dark green needles
+        notes: "Deep green, glossy needles that are flattened and thick"
+      
+    usually_true:
+      # Features with exceptions
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "In cultivation typically reaches 20-30 feet tall"
+        exceptions: "Can grow larger (up to 70 feet) in ideal conditions over many decades"
+      
+      - feature_id: "GROWTH-RATE-01"  # Slow-growing
+        notes: "Very slow-growing, adding only a few inches per year"
+        exceptions: "Growth rate increases somewhat with optimal care"
+        
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with a single straight trunk"
+        exceptions: "May occasionally develop multiple leaders if damaged"
+        
+    sometimes_true:
+      # Notable but not defining features
+      - feature_id: "BRANCH-ARRANGE-02"  # Whorled branches
+        notes: "Branches often arranged in whorls around the trunk"
+        conditions: "More regular in younger specimens"
+        
+      - feature_id: "CONE-PRESENT-01"  # Visible cones
+        notes: "Produces oval to cylindrical cones 2-4 inches long"
+        conditions: "Cones develop in spring and mature in fall"
+        
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never loses all needles seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-04"  # Needles in bundles
+        notes: "Never has needles arranged in bundles like true pines"
+      
+      - feature_id: "TREE-FORM-07"  # Irregular shape
+        notes: "Never develops an irregular form; maintains pyramidal shape"
+      
+      - feature_id: "HABITAT-LOC-06"  # High elevation
+        notes: "Not found at high elevations in California; grown in gardens and parks"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A tree with dark green needles arranged in circles like umbrella spokes at the ends of branches"
+    memorable_comparison: "The needles look like nature's umbrellas! Each branch tip has thick green needles arranged in a perfect circle, just like the spokes of a tiny umbrella."
+    touch_tip: "The needles are thick and soft to touch, not prickly like most conifers. They feel like firm rubber strips."
+    smell_tip: "Crushing the needles releases a mild, fresh scent that's not as strong as pine or cedar."
+    fun_fact: "The Japanese Umbrella Pine is a living fossil! It's the only tree in its entire family and has been around since dinosaur times. Scientists thought it was extinct until they discovered it growing in remote Japanese mountains. The Japanese call it 'Koyamaki' and consider it a very special tree."
+    
+    detective_steps:
+      - step: 1
+        instruction: "Look at the needles. Are they thick, glossy, and dark green, arranged in circular whorls at the branch tips (like umbrella spokes)?"
+        yes_next: 2
+        no_next: "Not a Japanese Umbrella Pine - no other conifer has needles arranged this way"
+      - step: 2
+        instruction: "Is the tree shaped like a Christmas tree (pyramidal) with a neat, orderly appearance?"
+        yes_next: 3
+        no_next: "Might not be a Japanese Umbrella Pine, which keeps a pyramidal shape"
+      - step: 3
+        instruction: "Are the needles thick and leathery (not thin like most conifers), around 2-5 inches long?"
+        yes_next: "You found a Japanese Umbrella Pine! They're rare and special in California gardens."
+        no_next: "If the needles are thin or short, it's probably a different conifer"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New growth emerges as lighter green at branch tips; pollen cones may appear"
+      reproductive_activity: "Produces small pollen cones; pollination occurs"
+      identification_tips: "New growth is lighter green; distinctive needle arrangement remains key identifier"
+      kid_friendly_tip: "In spring, look for lighter green 'baby needles' growing at the tips of branches, making new mini-umbrellas!"
+    
+    - season: "Summer" 
+      visual_changes: "New growth darkens to match older needles; uniform dark green appearance"
+      reproductive_activity: "Seed cones develop slowly if present"
+      identification_tips: "Uniform dark green color; distinctive whorled needle arrangement"
+      kid_friendly_tip: "All summer long, the tree stays deep green with its special umbrella-like needle circles at the end of each branch"
+    
+    - season: "Fall"
+      visual_changes: "Little visual change; older interior needles may yellow slightly before dropping"
+      reproductive_activity: "Cones continue to mature if present"
+      identification_tips: "Maintains distinctive appearance; some needles may yellow inside the crown"
+      kid_friendly_tip: "In fall, a few of the oldest needles might turn yellow and drop, but most stay green all year"
+    
+    - season: "Winter"
+      visual_changes: "No significant change; maintains evergreen appearance"
+      reproductive_activity: "Dormant"
+      identification_tips: "Distinctive needle arrangement remains visible year-round"
+      kid_friendly_tip: "Even in winter, the Japanese Umbrella Pine keeps its special umbrella-shaped needle bunches, staying green all year"
+  
+  # Required confirmation checklist
+  confirmation_checklist:
+    - feature: "Distinctive whorled needle arrangement like umbrella spokes"
+      reliability: "Very high"
+      visibility: "Easily visible when examining branch tips"
+    - feature: "Thick, glossy dark green needles"
+      reliability: "High"
+      visibility: "Easily visible up close"
+    - feature: "Neat pyramidal form"
+      reliability: "Medium-high"
+      visibility: "Visible from a distance"
+    - feature: "Slow growth rate"
+      reliability: "Medium"
+      visibility: "Not immediately observable"
+    - feature: "Needles arranged in terminal clusters"
+      reliability: "Very high"
+      visibility: "Distinctive when viewed up close"
+    
+  # Look-alike species
+  look_alikes:
+    - species: "True Pines (Pinus species)"
+      differences: "True pines have needles in bundles of 2-5 held together at the base, not in whorled arrangements; different cone structure; different overall texture"
+      identification_tip: "Japanese Umbrella Pine has distinctive umbrella-like needle arrangements at branch tips, unlike any pine"
+    - species: "Yew (Taxus species)"
+      differences: "Yews have flattened needles arranged along the stems, not in whorls; produce red berry-like structures, not cones; different growth habit"
+      identification_tip: "Japanese Umbrella Pine has unique whorled needle arrangements, unlike the flat spray-like arrangement of yew needles"
+    - species: "Fir (Abies species)"
+      differences: "Firs have needles attached individually to branches, not in whorls; different cone structure; generally faster growing"
+      identification_tip: "The whorled needle arrangement of Japanese Umbrella Pine is unlike the evenly distributed individual needles of firs"
+    
+  # Cultural significance
+  cultural_significance:
+    # Organized by culture
+    - culture: "Traditional Japanese"
+      physical_uses:
+        - "Timber used for specialized construction where water resistance is required"
+        - "Historically used for boat building and roof shingles"
+        - "Wood also used for specialized crafts and furniture"
+        - "Sacred tree protected in temple grounds"
+      symbolic_meaning:
+        - "Considered sacred in Shinto religion"
+        - "Symbol of longevity and endurance"
+        - "Associated with Eternal Life in traditional beliefs"
+        - "Featured in Japanese gardens to represent permanence"
+    
+    - culture: "Modern Botanical"
+      physical_uses:
+        - "Grown as specimen tree in botanical gardens and arboretums"
+        - "Studied as a 'living fossil' with ancient lineage"
+        - "Used in research on conifer evolution and taxonomy"
+        - "Cultivated for horticultural display and education"
+      symbolic_meaning:
+        - "Represents botanical uniqueness and rarity"
+        - "Symbol of evolutionary resilience and adaptation"
+        - "Valued for its status as sole member of its family"
+        - "Embodies the importance of plant conservation"
+    
+    - culture: "Contemporary Garden Design"
+      physical_uses:
+        - "Prized specimen tree in formal gardens"
+        - "Architectural element in Japanese-inspired landscapes"
+        - "Focal point in conifer collections"
+        - "Slow-growing option for long-term landscape planning"
+      symbolic_meaning:
+        - "Represents botanical sophistication and knowledge"
+        - "Symbol of patience (due to slow growth)"
+        - "Indicates garden owner's commitment to rare plants"
+        - "Connection to Japanese horticultural traditions"
+  
+  # Range information
+  range_within_california:
+    - "Not native to California; grown as an ornamental specimen"
+    - "Most common in coastal and Bay Area gardens where climate is mild"
+    - "Found in botanical gardens and arboretums throughout the state"
+    - "Struggles in hot, dry inland valleys without proper care"
+    - "More common in Northern California than Southern California"
+    - "Limited to cultivated settings; not naturalized"
+    - "Requires cool, moist conditions with some protection from hot afternoon sun"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "20-30 feet in cultivation; up to 70 feet in ideal conditions over many decades"
+    growth_rate: "Very slow; typically 3-6 inches per year"
+    crown_spread: "10-15 feet at maturity"
+    lifespan: "Long-lived; potentially several hundred years"
+    trunk_diameter: "1-2 feet at maturity"
+    root_system: "Moderately deep with spreading lateral roots; sensitive to disturbance"
+    toxicity: "Not known to be toxic"
+  
+  # Decision tree placement
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: NEEDLE-ARRANGE-07"  # Whorled needles
+      - "feature_id: LEAF-TYPE-02"  # Evergreen
+    confirmation_features:
+      - "feature_id: TREE-FORM-01"  # Pyramidal
+      - "feature_id: GROWTH-RATE-01"  # Slow-growing
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-01", "NEEDLE-COLOR-01"]  # Pyramidal form, dark green
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-ARRANGE-07", "NEEDLE-SIZE-03"]  # Whorled needles, long needles
+      - distance: "close_inspection"
+        features_to_check: ["BRANCH-ARRANGE-02", "TREE-TRUNK-01"]  # Whorled branches, single trunk
+    seasonal_identification:
+      spring:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-07", "TREE-FORM-01"]
+        notes: "New growth is lighter green but distinctive needle arrangement remains visible"
+      
+      summer:
+        reliability: "Very high" 
+        key_features: ["NEEDLE-ARRANGE-07", "NEEDLE-COLOR-01"]
+        notes: "Uniform dark green color makes whorled needle pattern most visible"
+      
+      fall:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-07", "TREE-FORM-01"]
+        notes: "Some interior needles may yellow but unique arrangement remains visible"
+      
+      winter:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-07", "TREE-FORM-01"]
+        notes: "Evergreen nature makes winter identification straightforward"
+    misidentification_risks: 
+      - "No close lookalikes due to unique needle arrangement"
+      - "From a distance, might be confused with other pyramidal conifers"
+      - "Name causes confusion with true pines, though appearance is quite different"
+  
+  # Wildlife value
+  wildlife_value:
+    - "Limited wildlife value in California as a non-native specimen tree"
+    - "Dense foliage may provide nesting sites for birds"
+    - "Not a significant food source for native wildlife"
+    - "In its native Japan, supports specific insect species"
+    - "Primarily grown for ornamental rather than ecological purposes"

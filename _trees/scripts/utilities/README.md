@@ -1,128 +1,88 @@
-# Utility Scripts
+# Tree Utility Scripts
 
-These scripts provide utility functions for working with the tree files and path coverage.
+This directory contains utility scripts for managing and validating the California Tree Guide data files.
 
-## Markdown to XMind Sync Tool
+## Available Scripts
 
-The primary tool is `sync_tree_docs.py`, which provides a unified interface for converting markdown files to XMind format and ensuring 100% correspondence.
+- `validate_tree_files.py` - Validates the format and structure of tree and genus YAML files
+- `validate_shape_size_path_improved.py` - Checks if all trees mentioned in the shape-size path have corresponding files
+- `markdown_to_xmind_complete.py` - Converts markdown decision trees to XMind format
+- `generate_xmind.sh` - Shell script to easily regenerate the XMind file
 
-### Key Features
+## Tree File Validation
 
-- **100% correspondence** between markdown and XMind files
-- **Markdown as source of truth** - edit markdown files, generate XMind for visualization
-- **Node-level tracking** with persistent IDs and hashes
-- **Proper XMind format** compatible with XMind application
-- **Verification tools** to ensure perfect conversion
+The `validate_tree_files.py` script validates all tree and genus YAML files to ensure they meet the required structure and formatting guidelines:
+
+- Checks for all required sections and subsections
+- Validates feature ID formatting
+- Ensures seasonal data includes all seasons
+- Verifies the structure of identification paths and detective steps
 
 ### Usage
 
-#### Sync Markdown to XMind
+To run the validation script:
 
 ```bash
-./sync_tree_docs.py sync
+# Create virtual environment (first time only)
+python3 -m venv venv
+source venv/bin/activate
+pip install PyYAML
+
+# Run the validation
+python validate_tree_files.py [path_to_base_directory]
 ```
 
-This will:
-1. Generate an XMind file from markdown files
-2. Verify 100% correspondence between formats
+If no path is provided, it will use the default tree and genus directories.
 
-#### Generate XMind Only
+### Validation Results
+
+The script will produce a detailed report of any issues found, including:
+- Missing required sections
+- Invalid feature ID formats
+- Missing seasonal information
+- YAML parsing errors
+
+## Shape-Size Path Tree Coverage Analysis
+
+The shape-size-path.md file mentions many tree species and genera. We analyzed this file to determine which mentioned trees have corresponding YML files and which are missing.
+
+### Summary
+
+- **37** tree species mentioned in shape-size-path.md
+- **25** genera mentioned in shape-size-path.md
+- **29** tree species have existing files
+- **8** tree species are missing files
+- **25** genera have existing files (All genera are covered!)
+- **0** genera are missing files
+
+### Missing Items by Priority
+
+#### High Priority (California Native Trees)
+Only one California native tree is missing a file:
+
+1. Bristlecone Pine (Pinus longaeva)
+
+#### Medium Priority (Commonly Cultivated Trees)
+These commonly cultivated trees are mentioned but missing files:
+
+1. Tulip Tree (Liriodendron tulipifera)
+2. Umbrella Pine (Sciadopitys verticillata)
+3. Japanese Black Pine (Pinus thunbergii)
+4. Date Palm (Phoenix dactylifera)
+
+#### Low Priority (Trees to Consider Removing)
+These trees are neither California natives nor commonly cultivated, so they could be removed from the path file:
+
+1. Gum (Corymbia citriodora)
+2. Ocotillo (Fouquieria splendens)
+3. Black Mangrove (Avicennia germinans)
+
+### Usage
+
+To run the shape-size path validation script:
 
 ```bash
-./sync_tree_docs.py generate
+python3 validate_shape_size_path_improved.py
 ```
 
-#### Verify Correspondence
-
-```bash
-./sync_tree_docs.py verify
-```
-
-For detailed verification results:
-
-```bash
-./sync_tree_docs.py verify --detailed
-```
-
-#### Open XMind File
-
-```bash
-./sync_tree_docs.py view
-```
-
-### Custom Paths
-
-You can specify custom paths for the markdown directory and XMind file:
-
-```bash
-./sync_tree_docs.py sync --path-dir /path/to/markdown/files --xmind /path/to/output.xmind
-```
-
-## Validation Scripts
-
-### `validate_tree_files.py`
-
-Validates the structure and formatting of tree YAML files in the `/trees` directory.
-
-**Usage:**
-```bash
-cd _trees  # Make sure you're in the _trees directory
-python scripts/utilities/validate_tree_files.py
-```
-
-**Functionality:**
-- Checks for required fields (common_name, scientific_name, etc.)
-- Checks for required sections (Basic summary, Identification path, etc.)
-- Validates proper quoting in fields
-- Reports on files with "Unknown" genus values
-
-### `validate_path_coverage.py`
-
-Analyzes and validates tree and genus coverage across all path files and the mind map.
-
-**Usage:**
-```bash
-cd _trees  # Make sure you're in the _trees directory
-python scripts/utilities/validate_path_coverage.py
-```
-
-**Functionality:**
-- Extracts tree species and genus references from all markdown path files
-- Extracts tree species and genus references from the mind map XML
-- Identifies species and genera missing from the mind map
-- Identifies species and genera in the mind map but missing from path files
-- Reports coverage percentages for each path file
-- Helps ensure complete coverage across the identification guide
-
-### `verify_correspondence.py`
-
-Verifies the correspondence between markdown files and XMind mind map.
-
-**Usage:**
-```bash
-python verify_correspondence.py --md-dir /path/to/markdown --xmind /path/to/xmind.xmind
-```
-
-**Functionality:**
-- Checks for 100% node-level correspondence between formats
-- Verifies text, notes, and structure match exactly
-- Reports detailed discrepancies when found
-
-## Workflow
-
-1. **Edit markdown files** as the source of truth
-2. **Run sync tool**: `./sync_tree_docs.py sync`
-3. **View in XMind**: `./sync_tree_docs.py view`
-4. **Repeat** when markdown files are updated
-
-## Additional Documentation
-
-- [Detailed Documentation](README_MARKDOWN_SOURCE.md) - In-depth explanation of the conversion process
-
-## Adding New Utility Scripts
-
-When adding new utility scripts:
-1. Include comprehensive docstrings
-2. Add a description to this README
-3. Make the script executable (`chmod +x script_name.py`)
-4. Test thoroughly before committing
+This will analyze the shape-size-path.md file and generate a report of missing trees and genera.

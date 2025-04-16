@@ -616,21 +616,21 @@ Look at the overall shape or size of your tree. This path focuses on features li
 │   │   │   │   ├── For trunk-specific features of twisted or gnarled trees, see the [Trunk Shape Path](trunk-shape-path.md)
 │   │   │   │   │
 │   │   │   │   ├── WINDSWEPT CROWN FORMS - Environmental sculpting
-│   │   │   │   │   ├── CYPRESS GENUS (Cupressus) - Wind-sculpted crowns
-│   │   │   │   │   │   ├── Monterey Cypress (C. macrocarpa): Classic flag-form wind-pruned crown
-│   │   │   │   │   │   ├── Gowen Cypress (C. goveniana): Coastal wind-sculpted crown form
-│   │   │   │   │   │   ├── Mendocino Cypress (C. pygmaea): Often develops twisted crown in exposure
-│   │   │   │   │   │   ├── All coastal cypress develop distinctive one-sided wind-pruned crowns
-│   │   │   │   │   │   ├── All show dramatic lean away from prevailing wind direction
-│   │   │   │   │   │   └── All maintain compressed foliage on leeward side of crown (key trait)
+│   │   │   │   │   ├── CYPRESS GENUS (Cupressus) - Wind-shaped crowns
+│   │   │   │   │   │   ├── Monterey Cypress (C. macrocarpa): Shaped like a flag waving in the wind
+│   │   │   │   │   │   ├── Gowen Cypress (C. goveniana): Shaped by coastal winds
+│   │   │   │   │   │   ├── Mendocino Cypress (C. pygmaea): Often twisted by strong ocean breezes
+│   │   │   │   │   │   ├── All coastal cypress trees grow branches mainly on one side (away from the wind)
+│   │   │   │   │   │   ├── All lean away from the direction the wind usually blows
+│   │   │   │   │   │   └── All have most of their branches and leaves on the side protected from wind (key trait)
 │   │   │   │   │   │
-│   │   │   │   │   ├── PINE GENUS (Pinus) - Coastal/exposed crown forms
-│   │   │   │   │   │   ├── Shore Pine (P. contorta): Dramatically wind-sculpted crown
-│   │   │   │   │   │   ├── Monterey Pine (P. radiata): Flag-form crown in coastal exposure
-│   │   │   │   │   │   ├── Torrey Pine (P. torreyana): Twisted, wind-sculpted crown form
-│   │   │   │   │   │   ├── All coastal pines develop asymmetrical crown forms from wind exposure
-│   │   │   │   │   │   ├── All show branch flagging (extending away from wind direction)
-│   │   │   │   │   │   └── All maintain needles primarily on leeward side of branches (key trait)
+│   │   │   │   │   ├── PINE GENUS (Pinus) - Trees shaped by coastal winds
+│   │   │   │   │   │   ├── Shore Pine (P. contorta): Dramatically shaped by strong winds
+│   │   │   │   │   │   ├── Monterey Pine (P. radiata): Branches grow mainly on one side like a flag
+│   │   │   │   │   │   ├── Torrey Pine (P. torreyana): Twisted and shaped by coastal breezes
+│   │   │   │   │   │   ├── All coastal pines grow unevenly, with more branches away from the wind
+│   │   │   │   │   │   ├── All have branches that point away from the windy side
+│   │   │   │   │   │   └── All keep most of their needles on the side protected from wind (key trait)
 │   │   │   │   │   │
 │   │   │   │   │   └── OAK GENUS (Quercus) - Wind-influenced crowns
 │   │   │   │   │       ├── Coast Live Oak (Q. agrifolia): Often develops wind-pruned crown form
@@ -657,13 +657,13 @@ Look at the overall shape or size of your tree. This path focuses on features li
 │   │   │   │   │   │   ├── All show distinctive crown asymmetry responding to site conditions
 │   │   │   │   │   │   └── All maintain living crown tissue in protected zones (key trait)
 │   │   │   │   │   │
-│   │   │   │   │   └── FIR & SPRUCE GENERA - Treeline crown forms
-│   │   │   │   │       ├── Subalpine Fir (Abies lasiocarpa): Forms krummholz mats at treeline
-│   │   │   │   │       ├── Engelmann Spruce (Picea engelmannii): Develops flag-form at high elevation
-│   │   │   │   │       ├── Mountain Hemlock (Tsuga mertensiana): Sculpted crown in alpine habitat
-│   │   │   │   │       ├── All treeline conifers develop stunted, mat-like or flag-form crowns
-│   │   │   │   │       ├── All show growth primarily in protected microhabitats
-│   │   │   │   │       └── All maintain much wider than tall proportions at extreme elevations (key trait)
+│   │   │   │   │   └── MOUNTAIN CONIFERS - Trees shaped by high elevation weather
+│   │   │   │   │       ├── Subalpine Fir (Abies lasiocarpa): Forms low, carpet-like mats at high elevations
+│   │   │   │   │       ├── Engelmann Spruce (Picea engelmannii): Sometimes grows with branches mainly on one side
+│   │   │   │   │       ├── Mountain Hemlock (Tsuga mertensiana): Shaped by snow and wind into artistic forms
+│   │   │   │   │       ├── All high mountain trees may grow low and spread out instead of tall
+│   │   │   │   │       ├── All survive by growing where they're protected from harsh weather
+│   │   │   │   │       └── All are often wider than they are tall at high elevations (key trait)
 │   │   │   │   │
 │   │   │   │   ├── ARID ENVIRONMENT CROWN FORMS - Drought adaptations
 │   │   │   │   │   ├── OAK GENUS (Quercus) - Drought-adapted crowns
@@ -843,30 +843,30 @@ Look at the overall shape or size of your tree. This path focuses on features li
 │   │   │       │       ├── All show evidence of partial dieback and regrowth over centuries
 │   │   │       │       └── All maintain only essential living tissue while showcasing age (key trait)
 │   │   │       │
-│   │   │       └── SPECIALIZED GROWTH FORMS → SPECIAL ADAPTATION GROUP
-│   │   │           ├── EPIPHYTIC GROWTH FORMS
-│   │   │           │   ├── Strangler Fig (Ficus spp.): Develops aerial crown around host tree
-│   │   │           │   ├── Some tropical orchids: Create miniature aerial "canopy" forms
-│   │   │           │   ├── Aerial plants that form tree-like structures without ground contact
-│   │   │           │   ├── All grow on other trees rather than in soil
-│   │   │           │   ├── All develop specialized adaptations for water capture
-│   │   │           │   └── All create unique crown forms unlike typical trees (key trait)
+│   │   │       └── TREES WITH SPECIAL FEATURES → UNUSUAL TREES GROUP
+│   │   │           ├── TREES WITH SPECIAL ROOTS
+│   │   │           │   ├── Bald Cypress (Taxodium distichum): Forms "knee" roots sticking up from wet ground
+│   │   │           │   ├── Some Fig Trees: May have roots that grow down from branches
+│   │   │           │   ├── Trees with exposed roots on slopes or creek banks
+│   │   │           │   ├── All have unusual root patterns you can easily see
+│   │   │           │   ├── All grow in special places like wet areas or steep slopes
+│   │   │           │   └── All show how trees can adapt to challenging growing spots (key trait)
 │   │   │           │
-│   │   │           ├── PNEUMATOPHORE-FORMING TREES
-│   │   │           │   ├── Bald Cypress (Taxodium distichum): Develops "knees" in wet habitats
-│   │   │           │   ├── Black Mangrove (Avicennia germinans): Forms pneumatophores in tidal areas
-│   │   │           │   ├── Trees with specialized breathing roots extending above water/soil
-│   │   │           │   ├── All grow in periodically flooded or saturated soils
-│   │   │           │   ├── All develop specialized root structures visible above ground
-│   │   │           │   └── All create distinctive crown-and-root silhouettes (key trait)
+│   │   │           ├── TREES SHAPED BY WEATHER
+│   │   │           │   ├── Monterey Cypress: Wind-swept, leaning shape along the coast
+│   │   │           │   ├── Shore Pine: Often bent and twisted by coastal winds
+│   │   │           │   ├── High mountain trees: May be short and bent from snow and wind
+│   │   │           │   ├── All show the power of wind and weather on tree shape
+│   │   │           │   ├── All lean away from the direction the wind usually blows
+│   │   │           │   └── All tell stories about the places they grow (key trait)
 │   │   │           │
-│   │   │           └── COPPICED & POLLARDED FORMS
-│   │   │               ├── Coppiced trees: Cut to ground, develops multi-stemmed regrowth
-│   │   │               ├── Pollarded trees: Cut higher up, forms distinctive "fist" growths
-│   │   │               ├── Various species managed for pole/fuel/fodder production
-│   │   │               ├── All develop distinctive regrowth patterns after human modification
-│   │   │               ├── All maintain unusual branch architecture and crown forms
-│   │   │               └── All demonstrate resilience through vigorous regrowth (key trait)
+│   │   │           └── TREES SHAPED BY PEOPLE
+│   │   │               ├── Japanese Garden Trees: Carefully pruned into artistic shapes
+│   │   │               ├── Street Trees: Sometimes pruned for power lines or sidewalks
+│   │   │               ├── Park Trees: May be planted in rows or special patterns
+│   │   │               ├── All show how people and trees work together in landscaping
+│   │   │               ├── All have shapes that look too neat or planned to be natural
+│   │   │               └── All can be beautiful examples of tree art (key trait)
 ```
 
 ## What Else Can You See?

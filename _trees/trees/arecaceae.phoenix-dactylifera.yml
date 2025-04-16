@@ -1,0 +1,268 @@
+tree:
+  common_name: "Date Palm"
+  scientific_name: "Phoenix dactylifera"
+  scientific_genus: "Phoenix"
+  common_genus: "Date Palm"
+  family: "Arecaceae"
+  
+  # Basic summary information
+  summary: "A tall palm tree with a single thick trunk and feathery fronds arranged in a crown at the top. Known for producing edible date fruits that hang in large clusters, it has been cultivated for thousands of years and is a common ornamental tree in southern California."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Tall palm with feathery fronds (not fan-shaped); produces dates in hanging clusters; sharp spines at base of fronds"
+    secondary_markers: "Single thick trunk with diamond-pattern from old leaf bases; feathery fronds up to 20 feet long"
+    seasonal_markers: "Produces dates that ripen from yellow to brown in late summer and fall"
+    similar_species_differentiation: "Unlike fan palms, has feathery (pinnate) fronds rather than fan-shaped; unlike Canary Island Date Palm, typically has a more slender trunk and produces edible dates"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its fronds year-round"
+        
+      - feature_id: "TREE-FORM-05"  # Columnar
+        notes: "Single thick trunk topped with a crown of spreading fronds"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Non-native to California
+        notes: "Native to North Africa and the Middle East; cultivated in California"
+      
+      - feature_id: "LEAF-COMPLEX-03"  # Compound leaf
+        notes: "Fronds are compound with many leaflets arranged along a central stem"
+        
+      - feature_id: "LEAF-SHAPE-04"  # Pinnate
+        notes: "Leaflets arranged feather-like along the frond stem"
+        
+      - feature_id: "TREE-SIZE-03"  # Tall
+        notes: "Can grow 70-100 feet tall when mature"
+      
+    usually_true:
+      # Features with some exceptions
+      - feature_id: "TREE-TRUNK-01"  # Single trunk
+        notes: "Typically grows with a single straight trunk"
+        exceptions: "May occasionally produce offshoots at base"
+        
+      - feature_id: "BARK-TEXT-09"  # Patterned bark
+        notes: "Trunk covered with diamond-shaped leaf base scars"
+        exceptions: "Pattern may be less distinct on very old specimens"
+      
+      - feature_id: "FRUIT-TYPE-02"  # Berry-like
+        notes: "Produces date fruits which are technically berries"
+        exceptions: "Only female trees produce fruit when pollinated"
+        
+    sometimes_true:
+      # Notable but not defining features
+      - feature_id: "TRUNK-TEXTURE-04"  # Ringed trunk
+        notes: "Trunk may show horizontal rings from growth patterns"
+        conditions: "More noticeable on some specimens than others"
+        
+      - feature_id: "FRUIT-PRESENT-01"  # Visible fruit
+        notes: "Large clusters of dates hang below the crown of fronds"
+        conditions: "Late summer through fall on female trees only"
+        
+      - feature_id: "FLOWER-PRESENT-01"  # Visible flowers
+        notes: "Produces large branched flower clusters"
+        conditions: "Spring flowering season"
+        
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all fronds seasonally; always evergreen"
+      
+      - feature_id: "LEAF-SHAPE-01"  # Fan-shaped leaves
+        notes: "Never has fan-shaped fronds like other palms"
+      
+      - feature_id: "BARK-TEXT-04"  # Furrowed bark
+        notes: "Never develops furrowed bark; always has distinct diamond pattern"
+      
+      - feature_id: "HABITAT-WATER-02"  # Wetland habitat
+        notes: "Never grows naturally in wetlands; prefers dry, hot conditions with access to groundwater"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A tall palm tree with feathery fronds (not fan-shaped) and clusters of sweet dates that hang down"
+    memorable_comparison: "The fronds look like giant green feathers sticking out from the top of a tall pole, and in fall they grow delicious dates like bunches of little brown oval candies hanging down!"
+    touch_tip: "Be careful! The base of the fronds has sharp spines that can poke you. The dates are soft and sticky when ripe."
+    smell_tip: "Ripe dates have a sweet, honey-like smell. The fronds don't have much scent."
+    fun_fact: "Date Palms are one of the oldest fruit trees that humans have grown, for over 6,000 years! In desert countries, people call them the 'tree of life' because they provide food, shade, and materials for building - almost everything people need to survive in the desert!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "Is it a tall palm tree with long feathery fronds (not fan-shaped)?"
+        yes_next: 2
+        no_next: "If the fronds are fan-shaped like an open hand, it's a different kind of palm"
+      - step: 2
+        instruction: "Does the tree have a single straight trunk with a rough diamond pattern from old leaf bases?"
+        yes_next: 3
+        no_next: "If it has multiple trunks or a different bark texture, it might be another palm species"
+      - step: 3
+        instruction: "Do the fronds have sharp spines at their base (be careful, don't touch!)?"
+        yes_next: 4
+        no_next: "If there are no spines, it's probably a different kind of feather palm"
+      - step: 4
+        instruction: "In late summer or fall, are there clusters of dates hanging down (they start yellowish and turn brown when ripe)?"
+        yes_next: "You found a Date Palm!"
+        no_next: "It might be a Date Palm that's not fruiting (maybe it's a male tree or too young), or a similar-looking palm like a Canary Island Date Palm"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "New fronds emerge from center of crown; large flower clusters appear"
+      reproductive_activity: "Flowers bloom; pollination occurs (wind or hand-pollinated in cultivation)"
+      identification_tips: "Flower clusters are visible; may see old fruit clusters from previous year"
+      kid_friendly_tip: "In spring, look for new bright green fronds growing from the middle, and big flower bunches that will later turn into dates"
+    
+    - season: "Summer" 
+      visual_changes: "Crown fully developed; unripe green or yellow dates begin developing in clusters"
+      reproductive_activity: "Dates develop and begin to ripen"
+      identification_tips: "Developing date clusters visible on female trees"
+      kid_friendly_tip: "By summer, you can see the baby dates growing in big bunches - they're hard and green or yellow"
+    
+    - season: "Fall"
+      visual_changes: "Dates ripen, changing from yellow to brown; some fronds may brown slightly"
+      reproductive_activity: "Dates fully ripen; commercial harvest occurs"
+      identification_tips: "Brown, ripe dates hanging in large clusters are distinctive"
+      kid_friendly_tip: "In fall, the dates turn brown and get soft and sweet - this is when they're ready to eat!"
+    
+    - season: "Winter"
+      visual_changes: "Some older fronds may brown and droop but tree remains generally unchanged"
+      reproductive_activity: "Dormant"
+      identification_tips: "Distinctive silhouette; may still have some dried fruit clusters"
+      kid_friendly_tip: "Even in winter, Date Palms stay green and tall, though some of the older fronds might turn brown"
+  
+  # Required confirmation checklist
+  confirmation_checklist:
+    - feature: "Tall palm with single straight trunk"
+      reliability: "Very high"
+      visibility: "Easily visible from a distance"
+    - feature: "Feathery (pinnate) fronds, not fan-shaped"
+      reliability: "Very high"
+      visibility: "Visible from a distance"
+    - feature: "Sharp spines at base of fronds"
+      reliability: "High"
+      visibility: "Visible from nearby"
+    - feature: "Date clusters (when in season)"
+      reliability: "Very high"
+      visibility: "Visible when present, but only on female trees"
+    - feature: "Diamond pattern on trunk from old leaf bases"
+      reliability: "High"
+      visibility: "Visible from nearby"
+    
+  # Look-alike species
+  look_alikes:
+    - species: "Canary Island Date Palm (Phoenix canariensis)"
+      differences: "Canary Island Date Palm has a much thicker trunk, shorter and more numerous fronds, and rarely produces edible dates"
+      identification_tip: "Date Palm has a more slender trunk and produces larger, edible dates in substantial clusters"
+    - species: "Queen Palm (Syagrus romanzoffiana)"
+      differences: "Queen Palm has similar feathery fronds but lacks the spines at frond bases; produces small orange fruits, not dates; has a smoother, ringed trunk"
+      identification_tip: "Date Palm has spines at frond bases and a diamond-patterned trunk, not smooth rings"
+    - species: "Mexican Fan Palm (Washingtonia robusta)"
+      differences: "Mexican Fan Palm has fan-shaped fronds (not feathery); much skinnier trunk; very different overall appearance"
+      identification_tip: "Date Palm has feathery fronds arranged like a feather, not fan-shaped fronds"
+    
+  # Cultural significance
+  cultural_significance:
+    # Organized by culture
+    - culture: "Middle Eastern/North African"
+      physical_uses:
+        - "Dates are a traditional staple food with high nutritional value"
+        - "Fronds used for thatching, baskets, and fiber"
+        - "Trunk wood used for building materials"
+        - "Sap tapped for palm sugar or fermented drinks"
+      symbolic_meaning:
+        - "Considered the 'tree of life' in desert regions"
+        - "Religious significance in Islam, Judaism, and Christianity"
+        - "Symbol of oasis, fertility, and abundance"
+        - "Associated with desert resilience and sustenance"
+    
+    - culture: "Coachella Valley Agriculture"
+      physical_uses:
+        - "Commercial date production is a major industry"
+        - "Different varieties grown for specific markets"
+        - "Date-derived products include syrups, sugars, and pastes"
+        - "Tourism centered around date farms and festivals"
+      symbolic_meaning:
+        - "Agricultural heritage of the region"
+        - "Symbol of California desert agriculture"
+        - "Represents successful crop adaptation to harsh environment"
+        - "Cultural icon for the Coachella Valley region"
+    
+    - culture: "Modern California Landscaping"
+      physical_uses:
+        - "Popular specimen tree in desert and Mediterranean landscapes"
+        - "Used to create 'oasis' aesthetic in resorts and parks"
+        - "Street tree in Southern California cities"
+        - "Provides shade in hot desert environments"
+      symbolic_meaning:
+        - "Represents exotic, tropical atmosphere"
+        - "Associated with leisure, luxury, and desert resorts"
+        - "Symbol of Southern California/desert lifestyle"
+        - "Evokes connections to Middle Eastern and North African cultures"
+  
+  # Range information
+  range_within_california:
+    - "Not native to California but extensively cultivated"
+    - "Commercial date production centered in Coachella Valley"
+    - "Grown ornamentally throughout Southern California"
+    - "Thrives in hot desert regions of southeastern California"
+    - "Can be grown in Central Valley but less common"
+    - "Limited success in coastal areas due to cooler temperatures"
+    - "Requires hot, dry climate with access to water for optimal fruit production"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "70-100 feet tall at maturity"
+    growth_rate: "Moderate; about 1-2 feet per year under good conditions"
+    crown_spread: "20-40 feet at maturity"
+    lifespan: "100-150 years or more"
+    trunk_diameter: "1-2 feet"
+    root_system: "Fibrous, extensive root system that seeks groundwater"
+    toxicity: "Not toxic, but sharp spines at frond bases can cause injury"
+  
+  # Decision tree placement
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: TREE-FORM-05"  # Columnar
+      - "feature_id: LEAF-SHAPE-04"  # Pinnate fronds
+    confirmation_features:
+      - "feature_id: FRUIT-TYPE-02"  # Berry-like (dates)
+      - "feature_id: BARK-TEXT-09"  # Patterned bark
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-05", "LEAF-SHAPE-04"]  # Columnar form, pinnate fronds
+      - distance: "from_nearby"
+        features_to_check: ["BARK-TEXT-09", "TREE-TRUNK-01"]  # Patterned bark, single trunk
+      - distance: "close_inspection"
+        features_to_check: ["FRUIT-TYPE-02", "TRUNK-TEXTURE-04"]  # Dates, ringed trunk
+    seasonal_identification:
+      spring:
+        reliability: "Medium-high"
+        key_features: ["LEAF-SHAPE-04", "FLOWER-PRESENT-01"]
+        notes: "Flower clusters distinctive but may be high in crown"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-SHAPE-04", "FRUIT-PRESENT-01"]
+        notes: "Developing date clusters visible on female trees"
+      
+      fall:
+        reliability: "Very high"
+        key_features: ["LEAF-SHAPE-04", "FRUIT-PRESENT-01"]
+        notes: "Ripe date clusters are highly distinctive"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["TREE-FORM-05", "LEAF-SHAPE-04"]
+        notes: "Form remains distinctive but lacks fruiting characteristics"
+    misidentification_risks: 
+      - "Most commonly confused with Canary Island Date Palm, which has a thicker trunk"
+      - "Queen Palm has similar fronds but lacks spines and has orange fruits"
+      - "Male Date Palms without fruit may be harder to distinguish from similar palms"
+  
+  # Wildlife value
+  wildlife_value:
+    - "Provides nesting sites for birds, particularly in frond crowns"
+    - "Dates provide food for birds and small mammals when ripe"
+    - "Creates shade habitat in desert environments"
+    - "Limited native wildlife value in California as a non-native species"
+    - "In native range, crucial component of oasis ecosystems"

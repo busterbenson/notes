@@ -1,0 +1,265 @@
+tree:
+  common_name: "Japanese Black Pine"
+  scientific_name: "Pinus thunbergii"
+  scientific_genus: "Pinus"
+  common_genus: "Pine"
+  family: "Pinaceae"
+  
+  # Basic summary information
+  summary: "A striking ornamental pine native to Japan and Korea, with distinctive dark gray-black bark, bright green needles, and an artistic, often twisted growth habit. Widely used in Japanese gardens and bonsai, it's also salt-tolerant, making it valuable for coastal landscaping."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Bright green needles in pairs; dark gray to blackish bark; often with artistic, asymmetrical growth form"
+    secondary_markers: "Needles stiff and sharp, 3-5 inches long; irregular branching pattern; distinctive winter buds with silvery-white scales"
+    seasonal_markers: "White 'candles' of new growth in spring; dark silhouette distinctive year-round"
+    similar_species_differentiation: "Unlike most other two-needle pines, has distinctively dark bark; brighter green needles than Austrian Pine; more irregular growth habit than many pines"
+  
+  features:
+    always_true:
+      # Fundamental traits that don't change
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles year-round"
+        
+      - feature_id: "NEEDLE-ARRANGE-02"  # Needles in pairs
+        notes: "Always has two needles per bundle (fascicle)"
+      
+      - feature_id: "BARK-COLOR-02"  # Dark bark
+        notes: "Distinctive gray-black bark, especially on mature trees"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Non-native to California
+        notes: "Native to Japan and Korea; cultivated in California"
+      
+      - feature_id: "NEEDLE-COLOR-02"  # Bright green needles
+        notes: "Vibrant green needles that contrast with dark bark"
+    
+    usually_true:
+      # Features with exceptions
+      - feature_id: "TREE-FORM-05"  # Irregular form
+        notes: "Often develops an asymmetrical, artistic form"
+        exceptions: "May have more regular form in some landscape plantings"
+      
+      - feature_id: "TREE-SIZE-02"  # Medium tree
+        notes: "Typically grows 20-60 feet tall in cultivation"
+        exceptions: "Can be smaller in poor conditions or when maintained as bonsai"
+      
+      - feature_id: "NEEDLE-SIZE-02"  # Medium needles
+        notes: "Needles typically 3-5 inches long"
+        exceptions: "Length varies with growing conditions"
+        
+      - feature_id: "CONE-SIZE-02"  # Medium cones
+        notes: "Cones typically 1.5-2.5 inches long"
+        exceptions: "Size varies somewhat with growing conditions"
+        
+    sometimes_true:
+      # Features that vary by condition or circumstance
+      - feature_id: "TREE-TRUNK-02"  # Multi-trunked
+        notes: "May develop multiple trunks, especially in landscape specimens"
+        conditions: "More common in open-grown specimens"
+        
+      - feature_id: "HABITAT-LOC-01"  # Coastal habitat
+        notes: "Often planted in coastal areas due to salt tolerance"
+        conditions: "In cultivated settings"
+        
+      - feature_id: "CONE-PRESENT-01"  # Visible cones
+        notes: "Produces oval-conical cones, often clustered"
+        conditions: "On mature trees during cone development seasons"
+    
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all needles seasonally"
+      
+      - feature_id: "NEEDLE-ARRANGE-04"  # Needles in fives
+        notes: "Always has two needles per bundle, never five"
+      
+      - feature_id: "NEEDLE-ARRANGE-03"  # Needles in threes
+        notes: "Always has two needles per bundle, never three"
+      
+      - feature_id: "BARK-COLOR-03"  # Light-colored bark
+        notes: "Never has light-colored bark; always distinctively dark"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A pine tree with dark gray-black bark and bright green needles that grow in pairs"
+    memorable_comparison: "It looks like an artist painted a pine tree with fancy twisty branches and super dark bark - almost like it's wearing a black tuxedo while its bright green needles stand out like decorations!"
+    touch_tip: "The needles are stiff and a bit sharp - be gentle when touching them. The bark feels rough and ridged."
+    smell_tip: "Crush a needle gently between your fingers to release a fresh, piney scent."
+    fun_fact: "Japanese Black Pines are super popular for making bonsai - those tiny trees that people grow in special pots! Artists carefully wire and prune them to make them look like miniature versions of ancient trees that might grow on a windswept cliff. Some bonsai Japanese Black Pines are over 100 years old but still tiny enough to fit on a table!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, look at the bark - is it distinctively dark gray to almost black?"
+        yes_next: 2
+        no_next: "Probably not a Japanese Black Pine - most other pines have brown or reddish bark"
+      - step: 2
+        instruction: "Check the needles. Are they bright green and growing in pairs (exactly 2 needles attached at the same point)?"
+        yes_next: 3
+        no_next: "Not a Japanese Black Pine - check other pine species that match the needle arrangement"
+      - step: 3
+        instruction: "Look at the shape of the tree. Does it have an interesting, often irregular or artistic growth pattern?"
+        yes_next: "You found a Japanese Black Pine!"
+        no_next: "It might still be a Japanese Black Pine, especially if it's young or was pruned to be more symmetrical"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Dramatic 'candles' of new growth appear with distinctive white or silvery appearance"
+      reproductive_activity: "Pollen cones release yellow pollen; female cones begin development"
+      identification_tips: "White 'candles' at branch tips are distinctive; contrast of new and old growth"
+      kid_friendly_tip: "In spring, look for what gardeners call 'candles' - the new baby branches growing from the tips that look like white fingers reaching up!"
+    
+    - season: "Summer" 
+      visual_changes: "New growth matures to match older needles; uniform bright green appearance"
+      reproductive_activity: "Young female cones continue developing"
+      identification_tips: "Uniform bright green needles contrast with dark bark"
+      kid_friendly_tip: "By summer, the white 'candles' have grown into new green needles, and the tree is a beautiful bright green with super dark bark"
+    
+    - season: "Fall"
+      visual_changes: "Little color change; some older interior needles may yellow and drop"
+      reproductive_activity: "Cones continue to mature"
+      identification_tips: "Dark bark and evergreen nature make fall identification straightforward"
+      kid_friendly_tip: "In fall, some of the oldest needles near the trunk might turn yellow and fall off, but most of the tree stays bright green"
+    
+    - season: "Winter"
+      visual_changes: "Distinctive dark silhouette; silvery-white winter buds visible"
+      reproductive_activity: "Dormant; mature cones may remain on tree"
+      identification_tips: "Dark bark, winter buds with silvery-white scales, and overall form are key winter identifiers"
+      kid_friendly_tip: "In winter, Japanese Black Pine stands out with its dark branches against the sky, and you can see silvery-white buds where new growth will appear in spring"
+  
+  # Confirmation checklist
+  confirmation_checklist:
+    - feature: "Dark gray to black bark"
+      reliability: "Very high"
+      visibility: "Easily visible from nearby"
+    - feature: "Bright green needles in pairs"
+      reliability: "Very high"
+      visibility: "Visible when examining branches"
+    - feature: "Irregular, artistic growth habit"
+      reliability: "Medium-high"
+      visibility: "Visible from a distance in mature specimens"
+    - feature: "Stiff, sharp needles 3-5 inches long"
+      reliability: "High"
+      visibility: "Requires close inspection"
+    - feature: "White 'candles' in spring"
+      reliability: "Very high (seasonal)"
+      visibility: "Highly visible during spring growth"
+    
+  # Look-alike species
+  look_alikes:
+    - species: "Austrian Pine (Pinus nigra)"
+      differences: "Austrian Pine has darker green needles, more symmetrical growth habit, and bark that's not as blackish"
+      identification_tip: "Japanese Black Pine typically has more irregular growth, brighter green needles, and darker bark"
+    - species: "Shore Pine (Pinus contorta)"
+      differences: "Shore Pine has shorter needles, different cone structure, and brownish rather than blackish bark"
+      identification_tip: "Japanese Black Pine has longer, brighter green needles and distinctively darker bark"
+    - species: "Scotch Pine (Pinus sylvestris)"
+      differences: "Scotch Pine has bluish-green, shorter needles and distinctive orange-red upper bark"
+      identification_tip: "Japanese Black Pine lacks the orange-red upper bark color and has consistently dark bark"
+    
+  # Cultural significance
+  cultural_significance:
+    # Organized by culture
+    - culture: "Traditional Japanese"
+      physical_uses:
+        - "Extensively used in bonsai art for centuries"
+        - "Major component of traditional Japanese gardens"
+        - "Used as windbreaks along coasts"
+        - "Wood traditionally used for specialized carvings"
+      symbolic_meaning:
+        - "Represents resilience and perseverance in harsh conditions"
+        - "Symbol of longevity and strength"
+        - "Associated with coastal landscapes in art"
+        - "Embodies wabi-sabi aesthetic of beauty in imperfection"
+    
+    - culture: "Bonsai Art Community"
+      physical_uses:
+        - "One of the most favored species for bonsai cultivation"
+        - "Subject of specialized pruning and training techniques"
+        - "Used in bonsai exhibitions and competitions"
+        - "Valuable specimens passed down through generations"
+      symbolic_meaning:
+        - "Represents mastery of bonsai techniques"
+        - "Symbol of patience and artistic dedication"
+        - "Embodies the relationship between humans and nature"
+        - "Connection to Japanese cultural heritage"
+    
+    - culture: "Modern California Landscape"
+      physical_uses:
+        - "Used in Japanese-inspired gardens and landscapes"
+        - "Planted as coastal specimens due to salt tolerance"
+        - "Cultivated as architectural elements in designed spaces"
+        - "Trained as niwaki (garden trees) in formal landscapes"
+      symbolic_meaning:
+        - "Represents Asian garden design influence"
+        - "Symbol of horticultural sophistication"
+        - "Connection to Japanese aesthetic principles"
+        - "Embodies artistic manipulation of natural forms"
+  
+  # Range information
+  range_within_california:
+    - "Not native to California; cultivated as an ornamental"
+    - "Most common in coastal areas due to salt tolerance"
+    - "Found in Japanese gardens and specialized landscapes throughout the state"
+    - "Grows well in Mediterranean climate regions of California"
+    - "Common in bonsai collections and displays"
+    - "Adaptable to many California climate zones with proper care"
+    - "Particularly successful in foggy coastal environments"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "20-60 feet in landscape settings; can be maintained at any size as bonsai"
+    growth_rate: "Moderate; typically 8-12 inches per year in good conditions"
+    crown_spread: "20-35 feet at maturity"
+    lifespan: "100-200+ years"
+    trunk_diameter: "1-3 feet at maturity"
+    root_system: "Adaptable, relatively shallow but spreading root system"
+    toxicity: "Not toxic, though pine needles can cause stomach upset if ingested in quantity"
+  
+  # Decision tree placement
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: NEEDLE-ARRANGE-02"  # Needles in pairs
+      - "feature_id: BARK-COLOR-02"  # Dark bark
+    confirmation_features:
+      - "feature_id: TREE-FORM-05"  # Irregular form
+      - "feature_id: NEEDLE-COLOR-02"  # Bright green needles
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-05", "BARK-COLOR-02"]  # Irregular form, dark bark
+      - distance: "from_nearby"
+        features_to_check: ["NEEDLE-COLOR-02", "NEEDLE-ARRANGE-02"]  # Bright green needles, needles in pairs
+      - distance: "close_inspection"
+        features_to_check: ["NEEDLE-SIZE-02", "CONE-SIZE-02"]  # Medium needles, medium cones
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["NEEDLE-ARRANGE-02", "BARK-COLOR-02"]
+        notes: "White 'candles' of new growth highly distinctive"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["NEEDLE-COLOR-02", "BARK-COLOR-02"]
+        notes: "Contrast of bright green needles with dark bark distinctive"
+      
+      fall:
+        reliability: "High"
+        key_features: ["NEEDLE-ARRANGE-02", "BARK-COLOR-02"]
+        notes: "Evergreen nature with distinctive bark color"
+      
+      winter:
+        reliability: "Medium-high"
+        key_features: ["BARK-COLOR-02", "TREE-FORM-05"]
+        notes: "Dark bark and growth habit remain visible in winter"
+    misidentification_risks: 
+      - "Can be confused with Austrian Pine, which has similar needle arrangement but less blackish bark"
+      - "Other two-needle pines might be mistaken for it if bark color is not noted"
+      - "Young specimens or those in poor light may not develop characteristic dark bark"
+  
+  # Wildlife value
+  wildlife_value:
+    - "Limited native wildlife value in California as a non-native ornamental"
+    - "May provide nesting sites for birds"
+    - "Seeds eaten by some birds and small mammals"
+    - "Dense foliage can provide shelter for birds and small animals"
+    - "In native range, supports specific insect communities"

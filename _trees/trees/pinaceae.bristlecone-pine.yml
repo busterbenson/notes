@@ -1,0 +1,267 @@
+tree:
+  common_name: "Bristlecone Pine"
+  scientific_name: "Pinus longaeva"
+  scientific_genus: "Pinus"
+  common_genus: "Pine"
+  family: "Pinaceae"
+  
+  # Basic summary information
+  summary: "One of the world's oldest living organisms, the Bristlecone Pine is a gnarled, twisted evergreen tree that thrives in harsh high-elevation environments. Known for its extreme longevity (some trees over 4,000 years old), weathered appearance, and bristle-tipped cone scales."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Twisted, gnarled growth form with exposed dead wood; needles in bundles of five; found in harsh high-elevation environments"
+    secondary_markers: "Short needles that persist for 20-40 years; small cones with bristle-like prickles; reddish-brown bark on younger branches contrasting with weathered gray wood"
+    seasonal_markers: "Little seasonal change; stays evergreen year-round; cones mature in fall of second year"
+    similar_species_differentiation: "Unlike Whitebark Pine, has bristles on cone scales; unlike Limber Pine, has smaller cones and shorter needles; unlike most pines, frequently shows extensive dead wood that remains attached for centuries"
+  
+  features:
+    always_true:
+      # Fundamental traits
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Keeps its needles for decades (20-40 years), much longer than most pines"
+        
+      - feature_id: "NEEDLE-ARRANGE-04"  # Needles in fives
+        notes: "Always grows five needles bundled together in each fascicle"
+      
+      - feature_id: "TREE-FORM-07"  # Irregular/sculptural
+        notes: "Extremely twisted, contorted growth form shaped by harsh conditions"
+      
+      - feature_id: "TREE-SIZE-01"  # Small tree
+        notes: "Typically 15-30 feet tall, rarely growing taller due to harsh conditions"
+      
+      - feature_id: "BARK-TEXT-02"  # Scaly bark
+        notes: "Reddish-brown bark on younger branches; older trees have extensive exposed weathered wood"
+      
+      - feature_id: "ECO-ORIGIN-01"  # Native to California
+        notes: "Native to the high mountains of eastern California and the Great Basin"
+      
+      - feature_id: "ECO-LIFE-01"  # Extremely long-lived
+        notes: "Among the longest-lived organisms on Earth, with some specimens over 4,000 years old"
+        
+      - feature_id: "HABITAT-LOC-06"  # High elevation
+        notes: "Found at elevations between 9,500-11,500 feet in California's White Mountains"
+        
+    usually_true:
+      # Features with exceptions
+      - feature_id: "NEEDLE-SIZE-01"  # Short needles
+        notes: "Needles typically 1-1.5 inches long"
+        exceptions: "Needle length can vary slightly depending on growing conditions"
+      
+      - feature_id: "WOOD-TYPE-01"  # Exposed wood
+        notes: "Extensive exposed dead wood that remains attached to living portions"
+        exceptions: "Younger trees show less of this characteristic"
+        
+      - feature_id: "CONE-SIZE-01"  # Small cones
+        notes: "Cones typically 2.5-4 inches long"
+        exceptions: "Size varies slightly with growing conditions"
+        
+    sometimes_true:
+      # Notable but not defining features
+      - feature_id: "TREE-GROWTH-03"  # Partially dead
+        notes: "Often has sections that have died while other parts of the tree continue to live"
+        conditions: "Common in older specimens"
+        
+      - feature_id: "BARK-COLOR-01"  # Multiple bark colors
+        notes: "Shows a mix of reddish-brown bark and weathered silver-gray exposed wood"
+        conditions: "Typical of mature trees"
+        
+      - feature_id: "CONE-COLOR-02"  # Purple to brown cones
+        notes: "Cones are typically purple when young, maturing to brown"
+        conditions: "During cone development over two growing seasons"
+        
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Never drops all needles seasonally"
+      
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Never grows tall (over 60 feet) due to harsh environmental conditions"
+      
+      - feature_id: "TREE-FORM-01"  # Pyramidal
+        notes: "Never develops a typical pyramidal conifer shape"
+      
+      - feature_id: "HABITAT-LOC-01"  # Low elevation
+        notes: "Never found at low elevations in California"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A twisted, gnarled pine tree that can live for thousands of years, with bundles of five short needles"
+    memorable_comparison: "It looks like a tree shaped by a powerful wizard - all twisted and ancient, with parts that look dead but are still alive, like a tree that's survived thousands of years of magic storms!"
+    touch_tip: "The needles come in bundles of five and feel stiff but not sharp. They're shorter than other pine needles."
+    smell_tip: "If you gently crush a few needles, they have a mild pine scent that's less strong than most pines."
+    fun_fact: "Bristlecone Pines are the oldest living things on Earth! Some are over 4,000 years old - that means they were already ancient trees when the pyramids in Egypt were being built!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "First, check where the tree is growing. Is it in a harsh, rocky area at very high elevation (above 9,000 feet) in eastern California mountains?"
+        yes_next: 2
+        no_next: "Probably not a Bristlecone Pine - they only grow in very high, harsh environments"
+      - step: 2
+        instruction: "Look at the tree's shape. Is it twisted and gnarled with sections that look dead but are still attached to the tree?"
+        yes_next: 3
+        no_next: "Might be another high-mountain pine like Whitebark Pine or Limber Pine"
+      - step: 3
+        instruction: "Check the needles. Do they come in bundles of exactly 5 needles, and are they short (about as long as your thumb)?"
+        yes_next: 4
+        no_next: "Not a Bristlecone Pine - check other high-elevation pines"
+      - step: 4
+        instruction: "Look for small cones with tiny bristles on the scales (you might need a cone that's fallen to the ground to see this)."
+        yes_next: "You found a Bristlecone Pine, one of the oldest living things on Earth!"
+        no_next: "If the cones don't have bristles, it might be a Whitebark Pine or Limber Pine instead"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Little visual change; new growth appears as slightly lighter green needle tips"
+      reproductive_activity: "Pollen cones may form on branch tips; pollination occurs"
+      identification_tips: "May be inaccessible due to snow at high elevations; little seasonal change to observe"
+      kid_friendly_tip: "In spring, look for tiny new light green needle tips, like the tree is getting new hair!"
+    
+    - season: "Summer" 
+      visual_changes: "New growth matures; purple immature seed cones may be visible"
+      reproductive_activity: "Seed cones continue developing after spring pollination"
+      identification_tips: "Best season for access due to snow melt; twisted form most visible"
+      kid_friendly_tip: "Summer is the best time to visit these ancient trees, when the snow has melted and you can see their twisted, magical shapes"
+    
+    - season: "Fall"
+      visual_changes: "Little color change as it's evergreen; cones mature to brown"
+      reproductive_activity: "Seed cones mature in their second year; may release seeds"
+      identification_tips: "Accessibility decreasing with early mountain snows; look for mature cones"
+      kid_friendly_tip: "In fall, look for small brown pinecones that have tiny bristles on each scale"
+    
+    - season: "Winter"
+      visual_changes: "No significant changes except snow accumulation"
+      reproductive_activity: "Dormant"
+      identification_tips: "Usually inaccessible due to deep snow; no seasonal identification features"
+      kid_friendly_tip: "In winter, these trees are usually buried in deep snow at the top of mountains, resting until spring"
+  
+  # Required confirmation checklist
+  confirmation_checklist:
+    - feature: "Location at high elevation (9,000+ feet) in eastern California mountains"
+      reliability: "Very high"
+      visibility: "Obvious from context"
+    - feature: "Twisted, gnarled growth form with exposed dead wood"
+      reliability: "Very high"
+      visibility: "Easily visible from a distance"
+    - feature: "Needles in bundles of five"
+      reliability: "High"
+      visibility: "Requires close inspection"
+    - feature: "Small cones with bristle-tipped scales"
+      reliability: "High"
+      visibility: "Requires finding and examining cones"
+    - feature: "Extreme longevity/ancient appearance"
+      reliability: "Medium-high"
+      visibility: "Subjective but recognizable"
+    
+  # Look-alike species
+  look_alikes:
+    - species: "Whitebark Pine (Pinus albicaulis)"
+      differences: "Whitebark Pine has similar size and also grows at high elevations, but has a more upright growth habit, lacks the distinctive twisted form, and its cones lack bristles"
+      identification_tip: "Bristlecone has more twisted growth, exposed dead wood, and bristles on cone scales"
+    - species: "Limber Pine (Pinus flexilis)"
+      differences: "Limber Pine also grows at high elevations but has longer needles (2-3 inches), larger cones (3-8 inches), and rarely shows the extreme twisted growth form"
+      identification_tip: "Bristlecone has shorter needles, smaller cones, and more twisted, ancient appearance"
+    - species: "Foxtail Pine (Pinus balfouriana)"
+      differences: "Foxtail Pine is another ancient high-elevation pine, but has needles densely packed along branches like a fox's tail, and grows in different California mountain ranges"
+      identification_tip: "Bristlecone has less densely packed needles and grows specifically in the White Mountains of eastern California"
+    
+  # Cultural significance
+  cultural_significance:
+    # Organized by culture
+    - culture: "Native Paiute"
+      physical_uses:
+        - "Used wood for tools and implements"
+        - "Harvested pine nuts from cones, though sparse"
+        - "Utilized resin for waterproofing and adhesives"
+      symbolic_meaning:
+        - "Respected for ability to survive in harsh environments"
+        - "Associated with strength and perseverance"
+        - "Considered sacred in their traditional territories"
+    
+    - culture: "Scientific Community"
+      physical_uses:
+        - "Used for dendrochronology (tree ring dating) research"
+        - "Cores taken to study climate history over millennia"
+        - "Used to calibrate radiocarbon dating"
+      symbolic_meaning:
+        - "Represents extreme longevity and resilience"
+        - "Symbolizes living connection to ancient history"
+        - "Embodies adaptation to extreme conditions"
+    
+    - culture: "Modern California"
+      physical_uses:
+        - "Protected as natural heritage in Ancient Bristlecone Pine Forest"
+        - "Serves as ecotourism attraction"
+        - "Used in education about climate change and adaptation"
+      symbolic_meaning:
+        - "Symbol of California's diverse natural heritage"
+        - "Represents persistence through adversity"
+        - "Embodies the passage of time and human impact on nature"
+  
+  # Range information
+  range_within_california:
+    - "Limited to the White Mountains in eastern California"
+    - "Small population in the Inyo Mountains"
+    - "Found at elevations between 9,500-11,500 feet"
+    - "Most famous stand located in Ancient Bristlecone Pine Forest"
+    - "Grows in exposed, rocky limestone slopes with poor soil"
+    - "Specifically adapted to harsh, dry, cold alpine conditions"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "15-30 feet (occasionally up to 60 feet in protected locations)"
+    growth_rate: "Extremely slow, often less than 1 inch in diameter per century"
+    crown_spread: "Irregular, typically 8-20 feet"
+    lifespan: "Extremely long-lived, commonly 1,000-4,000+ years"
+    trunk_diameter: "2-5 feet at maturity"
+    root_system: "Extensive, shallow root system adapted to rocky soil"
+    toxicity: "Not toxic"
+  
+  # Decision tree placement
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: NEEDLE-ARRANGE-04"  # Needles in fives
+      - "feature_id: HABITAT-LOC-06"  # High elevation
+    confirmation_features:
+      - "feature_id: TREE-FORM-07"  # Irregular/sculptural
+      - "feature_id: ECO-LIFE-01"  # Extremely long-lived
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-07", "HABITAT-LOC-06"]  # Irregular form, high elevation
+      - distance: "from_nearby"
+        features_to_check: ["WOOD-TYPE-01", "TREE-SIZE-01"]  # Exposed wood, small tree
+      - distance: "close_inspection"
+        features_to_check: ["NEEDLE-ARRANGE-04", "NEEDLE-SIZE-01"]  # Needles in fives, short needles
+    seasonal_identification:
+      spring:
+        reliability: "Medium"
+        key_features: ["TREE-FORM-07", "NEEDLE-ARRANGE-04"]
+        notes: "Often inaccessible due to snow; little seasonal change"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["TREE-FORM-07", "NEEDLE-ARRANGE-04", "HABITAT-LOC-06"]
+        notes: "Best season for access and identification"
+      
+      fall:
+        reliability: "Medium-high"
+        key_features: ["TREE-FORM-07", "CONE-SIZE-01"]
+        notes: "Brown mature cones may be visible; early snow possible"
+      
+      winter:
+        reliability: "Low"
+        key_features: ["TREE-FORM-07"]
+        notes: "Usually inaccessible due to snow; identification difficult"
+    misidentification_risks: 
+      - "Can be confused with other high-elevation five-needle pines, especially Whitebark Pine and Limber Pine"
+      - "Young trees lack the distinctive twisted form and ancient appearance"
+      - "Location is a key identifying feature; similar-looking trees at lower elevations are likely different species"
+  
+  # Wildlife value
+  wildlife_value:
+    - "Provides habitat for high-elevation birds and small mammals"
+    - "Seeds eaten by Clark's Nutcrackers, which help disperse them"
+    - "Dead wood provides nesting and foraging sites for insects and birds"
+    - "Stabilizes soil in harsh alpine environments"
+    - "Creates microhabitats that allow other plants to establish"

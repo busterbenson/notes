@@ -1,0 +1,261 @@
+tree:
+  common_name: "Tulip Tree"
+  scientific_name: "Liriodendron tulipifera"
+  scientific_genus: "Liriodendron"
+  common_genus: "Tulip Tree"
+  family: "Magnoliaceae"
+  
+  # Basic summary information
+  summary: "A large, fast-growing deciduous tree with distinctive four-lobed leaves that resemble a tulip outline. It produces showy yellow-green flowers that look like tulips, and develops a tall, straight trunk with gray, furrowed bark. Also known as Tulip Poplar or Yellow Poplar, though not actually related to poplars."
+  
+  # Identification path
+  identification_path:
+    primary_markers: "Unique four-lobed leaves with flat tops (cut-off appearance); tulip-shaped flowers in late spring; tall straight trunk"
+    secondary_markers: "Leaves turn bright yellow in fall; distinctive seed cones persist into winter; gray bark becomes deeply furrowed with age"
+    seasonal_markers: "Green-yellow tulip-like flowers in late spring; brilliant yellow fall color; interesting winter silhouette"
+    similar_species_differentiation: "Leaf shape unlike any other tree in California; somewhat similar to maple leaves but with distinctively squared-off tips"
+  
+  features:
+    always_true:
+      # Fundamental traits
+      - feature_id: "LEAF-TYPE-01"  # Deciduous
+        notes: "Loses all its leaves in fall"
+        
+      - feature_id: "LEAF-COMPLEX-01"  # Simple broadleaf
+        notes: "Leaves are single, not divided into smaller leaflets"
+      
+      - feature_id: "LEAF-SHAPE-05"  # Lobed
+        notes: "Distinctive four-lobed leaves with a flat or notched top"
+      
+      - feature_id: "LEAF-ARRANGE-01"  # Alternate
+        notes: "Leaves arranged alternately along branches"
+      
+      - feature_id: "ECO-ORIGIN-02"  # Non-native to California
+        notes: "Native to eastern North America; cultivated in California"
+      
+      - feature_id: "TREE-FORM-03"  # Upright/oval
+        notes: "Develops a tall, straight trunk with a symmetrical oval crown"
+        
+    usually_true:
+      # Features with exceptions
+      - feature_id: "TREE-SIZE-03"  # Tall tree
+        notes: "Can grow 70-90 feet tall in cultivation, even taller in native range"
+        exceptions: "Smaller in poor conditions or with limited space"
+      
+      - feature_id: "GROWTH-RATE-03"  # Fast-growing
+        notes: "Grows rapidly, adding 2 feet or more in height per year when young"
+        exceptions: "Slower in poor soil or dry conditions"
+        
+      - feature_id: "BARK-TEXT-04"  # Furrowed bark
+        notes: "Develops vertically furrowed gray bark with age"
+        exceptions: "Young trees have smooth gray bark"
+        
+    sometimes_true:
+      # Notable but not defining features
+      - feature_id: "FLOWER-POSITION-01"  # Terminal flowers
+        notes: "Flowers appear at branch tips, but may be hidden by foliage on tall trees"
+        conditions: "Regular on flowering-age trees (10+ years old)"
+        
+      - feature_id: "FALL-COLOR-02"  # Yellow fall color
+        notes: "Foliage turns bright clear yellow in autumn"
+        conditions: "Fall season (October-November)"
+        
+      - feature_id: "FRUIT-PRESENT-01"  # Visible fruit
+        notes: "Distinctive cone-like cluster of winged seeds (samaras)"
+        conditions: "Late summer through winter"
+        
+    never_true:
+      # Features explicitly absent
+      - feature_id: "LEAF-TYPE-02"  # Evergreen
+        notes: "Always drops its leaves in winter; never evergreen"
+      
+      - feature_id: "LEAF-COMPLEX-02"  # Compound leaf
+        notes: "Always has simple leaves, never compound"
+      
+      - feature_id: "LEAF-SHAPE-02"  # Heart-shaped
+        notes: "Never has heart-shaped leaves, always distinctively lobed"
+      
+      - feature_id: "FLOWER-COLOR-01"  # White flowers
+        notes: "Flowers are yellow-green with orange base, never white"
+  
+  # Kid-friendly identification
+  kid_friendly_identification:
+    primary_identifier: "A tall tree with unique leaves shaped like an outline of a tulip flower (or a cat's face with flat ears) and yellow-green flowers that look like tulips"
+    memorable_comparison: "The leaves look like someone drew the outline of a tulip flower, then colored it in green, or like a cat face with the ears cut flat instead of pointed!"
+    touch_tip: "The leaves are smooth and feel like paper. They move and flutter in the breeze."
+    smell_tip: "The leaves don't have a strong smell, but the flowers have a faint sweet scent if you can reach them."
+    fun_fact: "Even though it's called a Tulip 'Poplar' or 'Yellow Poplar,' this tree isn't related to poplars at all! It's actually a member of the magnolia family. Its flowers look like tulips, which is how it got its name, and it's one of the tallest hardwood trees in America!"
+    
+    detective_steps:
+      - step: 1
+        instruction: "Look at the leaves (in spring through fall). Do they have a unique shape with four lobes and a flat or notched top, looking a bit like a cat face with flat ears?"
+        yes_next: 2
+        no_next: "Probably not a Tulip Tree - no other tree in California has leaves shaped like this"
+      - step: 2
+        instruction: "Is it a large tree with a straight, tall trunk and gray bark that gets furrowed with age?"
+        yes_next: 3
+        no_next: "Might not be a mature Tulip Tree or could be something else"
+      - step: 3
+        instruction: "In late spring, does it have large yellow-green flowers shaped like tulips (though they might be high up and hard to see on tall trees)?"
+        yes_next: "You found a Tulip Tree!"
+        no_next: "If it's not flowering season, check for the distinctive leaf shape and tall, straight growth"
+      - step: 4
+        instruction: "In fall, do the leaves turn a clear yellow color before falling?"
+        yes_next: "This confirms it's likely a Tulip Tree"
+        no_next: "If the fall color is different, double-check the leaf shape"
+  
+  # Seasonal changes
+  seasonal_timeline:
+    - season: "Spring"
+      visual_changes: "Leaves emerge light green; large tulip-shaped flowers bloom after leaves appear"
+      reproductive_activity: "Flowers bloom in late spring (May-June)"
+      identification_tips: "Distinctive tulip-shaped flowers are visible but may be high in the canopy"
+      kid_friendly_tip: "In spring, look for leaves unfolding like little green fans, and later big yellow-green flowers shaped like tulips!"
+    
+    - season: "Summer" 
+      visual_changes: "Full leaf development; green seed clusters become visible after flowers fade"
+      reproductive_activity: "Seed clusters develop throughout summer"
+      identification_tips: "Identify by distinctive leaf shape and tall, straight form"
+      kid_friendly_tip: "In summer, the tree is full of bright green leaves that look like cat faces with flat ears"
+    
+    - season: "Fall"
+      visual_changes: "Foliage turns bright clear yellow; seed clusters mature and begin to disintegrate"
+      reproductive_activity: "Seeds mature and begin to disperse by wind"
+      identification_tips: "Bright yellow fall color and distinctive leaf shape"
+      kid_friendly_tip: "In fall, all the leaves turn bright yellow like they're glowing, before they fall to the ground"
+    
+    - season: "Winter"
+      visual_changes: "Leafless; distinctive high, straight silhouette; persistent seed cluster remnants"
+      reproductive_activity: "Dormant; some seed dispersal continues"
+      identification_tips: "Straight trunk, remnants of cone-like seed clusters, smooth twigs with duck-bill shaped buds"
+      kid_friendly_tip: "In winter, you can still spot it by its tall, straight trunk and the brown seed pods that look like little pinecones sticking up"
+  
+  # Required confirmation checklist
+  confirmation_checklist:
+    - feature: "Distinctive leaf shape with 4 lobes and flat top"
+      reliability: "Very high"
+      visibility: "Easily visible during growing season"
+    - feature: "Tall, straight trunk with symmetrical crown"
+      reliability: "High"
+      visibility: "Visible from a distance"
+    - feature: "Tulip-shaped yellow-green flowers (late spring)"
+      reliability: "Very high"
+      visibility: "May be difficult to see on tall trees"
+    - feature: "Cone-like seed clusters"
+      reliability: "High"
+      visibility: "Visible in summer through winter"
+    - feature: "Clear yellow fall color"
+      reliability: "Medium-high"
+      visibility: "Obvious in fall"
+    
+  # Look-alike species
+  look_alikes:
+    - species: "Maples (Acer species)"
+      differences: "Maples have opposite leaf arrangement (Tulip Tree has alternate); maple leaves have pointed lobes (Tulip Tree has flat or notched top); maples have winged seed pairs (Tulip Tree has cone-like seed clusters)"
+      identification_tip: "Tulip Tree leaves have a distinctive cut-off or notched top, unlike the pointed lobes of maple leaves"
+    - species: "Poplars (Populus species)"
+      differences: "Despite the common name 'Tulip Poplar,' true poplars have different leaf shapes (heart-shaped, triangular, or oval); smaller flowers; different bark characteristics"
+      identification_tip: "Tulip Tree leaves are distinctively lobed with flat tops, unlike any poplar species"
+    - species: "Planetree/Sycamore (Platanus species)"
+      differences: "Sycamores have more deeply lobed leaves; mottled, exfoliating bark; spherical seed balls; and a more spreading form"
+      identification_tip: "Tulip Tree has more uniform leaf shape, furrowed gray bark, and upright growth habit"
+    
+  # Cultural significance
+  cultural_significance:
+    # Organized by culture
+    - culture: "Native American (Eastern)"
+      physical_uses:
+        - "Used for dugout canoes due to straight trunks and soft wood"
+        - "Bark used for medicinal purposes"
+        - "Wood used for various implements and containers"
+      symbolic_meaning:
+        - "Associated with straight growth and strength"
+        - "Represented reaching toward the sky in some traditions"
+        - "Considered a valuable resource tree in eastern woodlands"
+    
+    - culture: "Early American Settlers"
+      physical_uses:
+        - "Favored lumber tree for house frames, furniture, and general construction"
+        - "Used for organ pipes, musical instruments, and carvings"
+        - "Inner bark sometimes used for fever remedies"
+      symbolic_meaning:
+        - "Represented the abundant resources of the New World"
+        - "Valued as a sign of rich soil and good farmland"
+        - "Associated with frontier expansion and settlement"
+    
+    - culture: "Modern California"
+      physical_uses:
+        - "Planted as ornamental shade tree in parks and large gardens"
+        - "Valued for rapid growth and attractive form"
+        - "Used in landscaping for fall color and spring flowers"
+      symbolic_meaning:
+        - "Represents eastern American heritage in California landscapes"
+        - "Symbolizes the diversity of adapted plants in cultivation"
+        - "Valued for aesthetics rather than historical or cultural significance"
+  
+  # Range information
+  range_within_california:
+    - "Not native to California but cultivated throughout state"
+    - "More common in Northern California and Bay Area where summer water is available"
+    - "Found in parks, arboretums, and large gardens"
+    - "Less common in hot, dry inland valleys and Southern California"
+    - "Typically planted as a specimen or shade tree in large spaces"
+    - "Needs adequate soil moisture and struggles in drought conditions"
+    
+  # Physical characteristics
+  physical_characteristics:
+    height_range: "70-90 feet in cultivation; up to 150 feet in native range"
+    growth_rate: "Fast, especially when young; 2+ feet per year under good conditions"
+    crown_spread: "30-50 feet at maturity"
+    lifespan: "200-250 years"
+    trunk_diameter: "2-4 feet at maturity"
+    root_system: "Moderately deep, spreading root system"
+    toxicity: "Not toxic to humans or animals"
+  
+  # Decision tree placement
+  decision_tree_placement:
+    primary_split_features:
+      - "feature_id: LEAF-SHAPE-05"  # Lobed (unique lobing pattern)
+      - "feature_id: LEAF-TYPE-01"  # Deciduous
+    confirmation_features:
+      - "feature_id: TREE-FORM-03"  # Upright/oval
+      - "feature_id: TREE-SIZE-03"  # Tall tree
+    observation_sequence:
+      - distance: "from_far_away"
+        features_to_check: ["TREE-FORM-03", "TREE-SIZE-03"]  # Upright form, tall tree
+      - distance: "from_nearby"
+        features_to_check: ["LEAF-SHAPE-05", "LEAF-ARRANGE-01"]  # Unique leaf shape, alternate arrangement
+      - distance: "close_inspection"
+        features_to_check: ["FLOWER-POSITION-01", "BARK-TEXT-04"]  # Terminal flowers, furrowed bark
+    seasonal_identification:
+      spring:
+        reliability: "Very high"
+        key_features: ["LEAF-SHAPE-05", "FLOWER-POSITION-01"]
+        notes: "Tulip-shaped flowers and distinctive leaves make spring identification certain"
+      
+      summer:
+        reliability: "High" 
+        key_features: ["LEAF-SHAPE-05", "TREE-FORM-03"]
+        notes: "Distinctive leaf shape is key for summer identification"
+      
+      fall:
+        reliability: "High"
+        key_features: ["LEAF-SHAPE-05", "FALL-COLOR-02"]
+        notes: "Yellow fall color and distinctive leaf shape"
+      
+      winter:
+        reliability: "Medium"
+        key_features: ["TREE-FORM-03", "FRUIT-PRESENT-01"]
+        notes: "Winter identification relies on form, persistent seed structures, and distinctive buds"
+    misidentification_risks: 
+      - "Leaf shape could be confused with maple from a distance, but differs in arrangement (alternate vs. opposite)"
+      - "Common name 'Tulip Poplar' causes confusion with true poplars (Populus species)"
+      - "When not in leaf, could be confused with other large, straight-trunked hardwoods"
+  
+  # Wildlife value
+  wildlife_value:
+    - "Flowers provide nectar for hummingbirds, bees, and butterflies"
+    - "Seeds eaten by songbirds, squirrels, and other small mammals"
+    - "Mature trees provide nesting sites for birds"
+    - "In California, primarily has ornamental rather than ecological value"
+    - "In its native range, it's an important component of eastern hardwood forests"
