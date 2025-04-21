@@ -37,6 +37,24 @@ This guide includes:
   - [Conifer Crown Guide](references/conifer-crown-guide.md): Understanding conifer tree shapes
   - [Leaf Types Guide](references/leaf-types-guide.md): Different leaf types, arrangements, and shapes
 
+## Interactive Versions
+
+In addition to the markdown-based paths, this guide is also available in interactive formats:
+
+### Mind Map Version
+
+Explore the complete decision tree structure visually using our mind map files:
+
+- [Complete Mind Map (FreeMind XML)](california_tree_guide_complete.xml) - Best viewed with FreeMind
+- [Mind Map (MM Format)](california_tree_guide.mm) - Compatible with various mind mapping tools
+- [Mind Map (MindManager Format)](california_tree_guide.mmind) - For MindManager users
+
+For instructions on using these mind map files, see our [Mind Map Usage Guide](/decision_trees/MIND_MAP_USAGE_GUIDE.md).
+
+### Interactive Web Version
+
+We're also developing a web-based interactive version of this guide. See our [Interactive Implementation Plan](/decision_trees/INTERACTIVE_IMPLEMENTATION_PLAN.md) for details.
+
 ## Complete Documentation
 
 For detailed information about this project, including design decisions, tree coverage statistics, and future enhancement plans, see [PROJECT_DECISIONS.md](PROJECT_DECISIONS.md).

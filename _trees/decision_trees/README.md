@@ -21,17 +21,10 @@ The guide is organized into separate files to make it more manageable:
 - [`paths/smell-path.md`](paths/smell-path.md) - For identifying trees by the smell of crushed leaves or needles
 - [`paths/shape-size-path.md`](paths/shape-size-path.md) - For identifying trees by their overall shape or size
 
-### Detective Paths
+### Special Paths
 For trees with no single standout feature, these paths use detailed technical characteristics:
 
-- [`paths/leaf-detective-path.md`](paths/leaf-detective-path.md) - Technical leaf identification (arrangement, edges, surfaces)
-- [`paths/needle-detective-path.md`](paths/needle-detective-path.md) - Technical needle identification (attachment, shape, connection)
-- [`paths/scale-detective-path.md`](paths/scale-detective-path.md) - Technical scale leaf identification (arrangement, tips, colors)
-- [`paths/bark-detective-path.md`](paths/bark-detective-path.md) - Technical bark identification (pattern, color, texture)
-- [`paths/silhouette-detective-path.md`](paths/silhouette-detective-path.md) - Identification from a distance (shape, branching, habitat)
 - [`paths/winter-detective-path.md`](paths/winter-detective-path.md) - Winter identification when leaves are absent (buds, twigs, persistent fruits)
-
-The original combined file is preserved as [`genus-species-path.md`](genus-species-path.md).
 
 ## Features
 
@@ -90,6 +83,20 @@ This documentation includes:
 - Recent enhancements and updates
 - Future enhancement ideas
 - Maintenance guidelines
+
+## Interactive Versions
+
+The guide is available in multiple interactive formats:
+
+### Mind Map Version
+
+We've created mind map versions of the complete guide for visual exploration of the decision tree structure:
+
+- **[`paths/california_tree_guide_xmind_complete.xml`](paths/california_tree_guide_xmind_complete.xml)** - Complete mind map in FreeMind XML format that can be imported into XMind
+
+### Interactive Web Implementation
+
+For details on our approach to creating an interactive web version of the guide, see the [INTERACTIVE_IMPLEMENTATION_PLAN.md](INTERACTIVE_IMPLEMENTATION_PLAN.md) document, which outlines a comprehensive implementation strategy for a kid-friendly web interface.
 
 ## Notes
 
