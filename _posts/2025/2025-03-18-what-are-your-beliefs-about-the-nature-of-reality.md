@@ -1,6 +1,6 @@
 ---
 title        : "What are your beliefs about the nature of reality?"
-slink         : https://buster.substack.com/p/what-are-your-beliefs-about-the-nature?utm_source=activity_item
+link         : https://buster.substack.com/p/what-are-your-beliefs-about-the-nature?utm_source=activity_item
 author       : me
 
 one_liner    : "Discover your cosmic worldview with this short two-step interview"
