@@ -2,9 +2,9 @@
 
 The Gene Keys are a modern interpretation of the I Ching created by Richard Rudd. Each Gene Key maps directly to an I Ching hexagram, providing three primary frequencies or states of consciousness:
 
-1. **Shadow** - The lower frequency challenge or unconscious pattern
-2. **Gift** - The mid-range breakthrough or conscious expression 
-3. **Siddhi** - The highest frequency or enlightened state
+1. **Shadow** - The lower frequency challenge or unconscious pattern (associated with Monster archetype)
+2. **Gift** - The mid-range breakthrough or conscious expression (associated with Hero archetype)
+3. **Siddhi** - The highest frequency or enlightened state (associated with Sage archetype)
 
 ## Integration with the 8-Bit Oracle
 

@@ -4,31 +4,13 @@
 
 | Bit | Position | Resource    | Question                                                  | Domain      |
 |-----|----------|-------------|-----------------------------------------------------------|-------------|
-| 1   | 10000000 | Intuition   | Do you trust your natural instincts?                      | Inner/Heart |
-| 2   | 01000000 | Ability     | Do you have the skills required?                          | Inner/Hands |
-| 3   | 00100000 | Capacity    | Do you have the time, space, and resources?               | Inner/Head  |
-| 4   | 00010000 | Expectations| Are you aligned with cultural norms?                      | Outer/Heart |
-| 5   | 00001000 | Support     | Do your relationships and community have your back?       | Outer/Hands |
-| 6   | 00000100 | Options     | Are your possible paths clear?                            | Outer/Head  |
-| 7-8 | 00000011 | Cycle Phase | What element, season, and suit characterizes the card?    | Cycle       |
-
-## Reading a Card
-
-1. **Identify the Binary Pattern**: Each card has an 8-digit binary pattern (e.g., 10100000)
-2. **Note Active Resources**: Each '1' indicates an active resource, each '0' an inactive one
-3. **Analyze Inner World**: Bits 1-3 show your internal resources
-4. **Analyze Outer World**: Bits 4-6 show your external resources
-5. **Note the Cycle Phase**: Bits 7-8 show the elemental quality and cycle phase
-6. **Consider Associated Systems**: Reference I Ching, Tarot, and other correspondences
-
-## Cycle Phases (Bits 7-8)
-
-| Bits | Season  | Lunar Cycle | Phase      | Half  | 
-|------|---------|------------|-------------|-------|
-| 00   | Winter  | 1st Moon | New Moon      | Early |
-| 10   | Spring  | 2nd Moon | Balsamic Moon | Late  | 
-| 11   | Summer  | 4th Moon | First Quarter | Late  | 
-| 01   | Autumn  | 3rd Moon | Full Moon     | Early |
+| 1   | 1XXXXXXX | Intuition   | Do you trust your natural instincts?                      | Inner/Heart |
+| 2   | X1XXXXXX | Ability     | Do you have the skills required?                          | Inner/Hands |
+| 3   | XX1XXXXX | Capacity    | Do you have the time, space, and resources?               | Inner/Head  |
+| 4   | XXX1XXXX | Expectations| Are you aligned with cultural norms?                      | Outer/Heart |
+| 5   | XXXX1XXX | Support     | Do your relationships and community have your back?       | Outer/Hands |
+| 6   | XXXXX1XX | Options     | Are your possible paths clear?                            | Outer/Head  |
+| 7-8 | XXXXXX11 | Cycle Phase | What element, season, and suit characterizes the card?    | Cycle       |
 
 ## Inner & Outer World (3-Bit) Combinations
 
@@ -36,7 +18,7 @@
 
 | Pattern | Color   | Trigram | Name         | Description                                    |
 |---------|---------|---------|---------------------------------------------------------------|
-| 000     | Black   | Earth   | Ants         | absence of inner resources                     |
+| 000     | Black   | Earth   | Ants         | Absence of inner resources                     |
 | 001     | Blue    | Mountain| Bear         | Capacity to understand but lacking intuition   |
 | 010     | Green   | Water   | Spider       | Technical ability present but lacking intuition|
 | 011     | Cyan    | Wind    | Crow         | Skilled and resourceful but lacks intuition    |
@@ -58,25 +40,94 @@
 | 110     | Yellow  | Lake    | Lake         | Alignment and support but unclear options            |
 | 111     | White   | Heaven  | Village      | Complete presence of outer resources                 |
 
-## Sample Readings
+## Season (Bits 7-8)
 
-### Single Card Reading
-1. Draw a card
-2. Analyze which resources are active/inactive
-3. Consider how this pattern relates to your question
-4. Reference the card's associated systems for deeper meaning
-5. For transformation focus, explore the card's Gene Key journey (Shadow → Gift → Siddhi)
+| Bits | Season  | 
+|------|---------|
+| 00   | Winter  |
+| 10   | Spring  |
+| 11   | Summer  |
+| 01   | Autumn  |
 
-### Three Card Reading
-1. Draw three cards: Past/Present/Future or Situation/Challenge/Advice
-2. Note which resources are consistently present or absent
-3. Observe how the patterns evolve from card to card
-4. Pay attention to the cycle phases and their progression
+## Lunar Cycle, Phase, and Phase Half
 
-### Resource Grid Reading
-1. Draw eight cards and arrange in a 4x2 grid
-2. Top row: Inner World (Intuition, Ability, Capacity, Inner Integration)
-3. Bottom row: Outer World (Expectations, Support, Options, Outer Integration)
-4. This reading provides detailed insight into each resource area
+### Lunar Cycle happens 4 times per season 
+| lunar_cycle = ((decimal_value % 64) ÷ 16) + 1
+*Examples:* 
+- 00000000 = (0 % 64) / 16 = 0 + 1 = 1st cycle
+- 10111010 = (93 % 64) / 16 = 3 + 1 = 2nd cycle
+- 11111100 = (63 % 64) / 16 = 2 + 1 = 4th cycle
+- 11111111 = (255 % 64) / 16 =   + 1 = 1st cycle
+- 01010100 = (42 % 64) / 16 = 3 + 1 = 4th cycle
+- 01010101 = (170 % 64) / 16 = 0 + 1 = 1st cycle
+- 01010111 = (234 % 64) / 16 = 1 + 1 = 2nd cycle
 
-This quick reference guide provides the essential information needed to begin working with the 8-Bit Oracle system. For more detailed interpretations, consult the individual card files.
+### Lunar Phase happens once per Lunar Cycle per Season (0 = dark moon, 4 = full moon)
+| lunar_phase: decimal_value % 8 
+*Phases:*
+- 0: Dark Moon 
+- 1: New Moon
+- 2: First Quarter
+- 3: Waxing Gibbous
+- 4: Full Moon 
+- 5: Waning Gibbous
+- 6: Last Quarter
+- 7: Balsamic Moon
+*Examples:*
+- 00000000 = (0 / 2) % 8 = 0: Dark Moon
+- 10111010 = (93 / 2) % 8 = 6: Last Quarter
+- 11111100 = (63 / 2) % 7 = 7: Balsamic Moon
+- 11111111 = (255 / 2) % 8 = 0: Dark Moon
+- 01010100 = (42 / 2) % 8 = 5: Waning Gibbous
+- 01010101 = (170 / 2) % 8 = 5: Waning Gibbous
+- 01010111 = (234 / 2) % 8 = 5: Waning Gibbous
+
+### Each Lunar Phase within a Cycle and Season has 2 halves (0 = Early, 1 = Late)
+| phase_half: decimal_value % 2
+
+### Examples (see full mapping in sorts/binary_sort.md)
+|-------------|--------------|-------------|-------------|-------------------|-------|
+| 8bit binary | L->R Decimal | Season      | Lunar Cycle | Phase             | Half  |
+|-------------|--------------|-------------|-------------|-------------------|-------| 
+| 00000000    | 0            | Winter      | 1st         | 0: Dark Moon      | Early |
+| 10111010    | 93           | Spring      | 2nd         | 6: Last Quarter   | Late  | 
+| 11111100    | 63           | Winter      | 4th         | 7: Balsamic Moon  | Late  |
+| 11111111    | 255          | Summer      | 1st         | 0: Dark Moon      | Late  |
+| 01010100    | 42           | Winter      | 4th         | 5: Waning Gibbous | Early |
+| 01010101    | 170          | Fall        | 1st         | 5: Waning Gibbous | Early |
+| 01010111    | 170          | Summer      | 2nd         | 5: Waning Gibbous | Early |
+|-------------|--------------|-------------|-------------|-------------------|-------|
+
+## Archetypes
+Archetypes are described in the archetype-guide.md file in full, but essentially each card has a "resonant season" determined by the first 6 bits, where the first 3 (inner world) are mapped to either 0 or 1 depending on which one has more bits, and the same is done for the second 3 bits (outer world). If inner world reduces to 1 and outer world reduces to 0, then the resonant season is 10, or Spring. That is then compared to the 7th and 8th bits, which describe the season of this card. 
+
+If the resonant season is the same as the card's season, then the archetype is Sage. Moving forward one season at a time, from the resonant season, will determine the archetypes of other cards that have the same first 6 bits. 
+
+For example:
+- If the resonant season is Winter, and the season is Winter, then the archetype is Sage.
+- If the resonant season is Spring, and the season is Spring, then the archetype is Sage.
+- If the resonant season is Summer, and the season is Summer, then the archetype is Sage.
+- If the resonant season is Fall, and the season is Fall, then the archetype is Sage.
+- If the resonant season is Winter, and the season is Spring, then the archetype is Fool.
+- If the resonant season is Winter, and the season is Summer, then the archetype is Hero.
+- If the resonant season is Winter, and the season is Fall, then the archetype is Monster.
+
+| Binary    | Decimal | Season | Resonant Season | Archetype |
+|-----------|---------|--------|-----------------|-----------|
+| 00000000  | 0       | Winter | Winter          | Sage      |
+| 10111010  | 93      | Spring | Summer          | Monster   |
+| 11111100  | 63      | Winter | Summer          | Hero      |
+| 11111111  | 255     | Summer | Summer          | Sage      |
+| 01010100  | 42      | Winter | Winter          | Sage      |
+| 01010101  | 170     | Fall   | Fall            | Sage      |
+| 01010111  | 234     | Summer | Fall            | Monster   |
+
+## Gender
+The gender of each card's archetypes is determined by counting the number of "1" bits in positions 1-6 (the resource bits). This count creates a systematic approach to gender assignment that connects to the card's fundamental energy pattern.
+
+| Number of "1" Bits | Gender Assignment                                          |
+|--------------------|------------------------------------------------------------|
+| 0 or 6 bits        | All archetypes are gender-neutral                          |
+| 2 or 4 bits        | Hero and Monster are masculine, Fool and Sage are feminine |
+| 3 or 5 bits        | Hero and Monster are feminine, Fool and Sage are masculine |
+

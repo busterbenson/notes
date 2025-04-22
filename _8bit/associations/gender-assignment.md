@@ -8,11 +8,11 @@ The 8-bit Oracle incorporates gender associations based on the bit patterns in e
 
 The gender of each card's archetypes is determined by counting the number of "1" bits in positions 1-6 (the resource bits). This count creates a systematic approach to gender assignment that connects to the card's fundamental energy pattern.
 
-| Number of "1" Bits | Gender Assignment |
-|--------------------|-------------------|
-| 0 or 6 bits | All archetypes are gender-neutral |
-| 2 or 4 bits | Hero and Monster are masculine, Fool and Sage are feminine |
-| 3 or 5 bits | Hero and Monster are feminine, Fool and Sage are masculine |
+| Number of "1" Bits | Gender Assignment                                          |
+|--------------------|------------------------------------------------------------|
+| 0 or 6 bits        | All archetypes are gender-neutral                          |
+| 2 or 4 bits        | Hero and Monster are masculine, Fool and Sage are feminine |
+| 3 or 5 bits        | Hero and Monster are feminine, Fool and Sage are masculine |
 
 ## Understanding the Pattern Logic
 

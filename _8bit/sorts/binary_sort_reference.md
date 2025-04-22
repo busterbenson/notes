@@ -68,13 +68,13 @@ Each card's attributes are calculated based on its binary representation:
 ### Lunar Cycle Calculation
 For each card:
 ```
-lunar_cycle = (count of '1' bits in positions 1-6 % 4) + 1
+lunar_cycle = (count of '1' bits % 4) + 1
 ```
 
 ### Lunar Phase Calculation
 For each card:
 ```
-lunar_phase = (decimal_value ÷ 2) % 8
+lunar_phase = (l->r decimal_value ÷ 2) % 8
 ```
 
 This produces a value from 0-7, corresponding to these lunar phases:
@@ -90,7 +90,7 @@ This produces a value from 0-7, corresponding to these lunar phases:
 ### Phase Half Calculation
 For each card:
 ```
-phase_half = decimal_value % 2
+phase_half = l->r decimal_value % 2
 ```
 
 This determines which half of the lunar phase:
@@ -127,8 +127,8 @@ This left-to-right priority is critical to maintain consistency across all aspec
 Currently, only four cards have been fully developed:
 
 1. `00000000` - "Void Mirror" (Winter, Sage)
-2. `00000001` - "Devouring Void" (Fall, Monster)
-3. `00000010` - "Unwritten Beginning" (Spring, Fool)
-4. `00000011` - "Perfect Vessel" (Summer, Hero)
+2. `00000010` - "Unwritten Beginning" (Spring, Fool)
+3. `00000011` - "Perfect Vessel" (Summer, Hero)
+4. `00000001` - "Devouring Void" (Fall, Monster)
 
 These represent the four foundational archetypes in their respective seasons.
