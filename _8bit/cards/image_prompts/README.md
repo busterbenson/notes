@@ -21,6 +21,20 @@ image_prompts/
   └── [other hexagrams]
 ```
 
+## Integration with Card Generation
+
+These image prompts can be created from the image prompt sections in the generated card YAML files:
+
+1. Generate a card using the new card generation tools:
+   ```bash
+   cd /Users/buster/projects/notes/_8bit/cards
+   ./generate-card.sh 10101010
+   ```
+
+2. Fill in the card details in the generated YAML file, including the `prompt_for_image_gen` section.
+
+3. Extract the completed image prompt and save it as a separate file in this directory for reference and organization.
+
 ## Image Prompt Structure
 
 Each image prompt follows a consistent structure:
@@ -63,7 +77,7 @@ Each image prompt follows a consistent structure:
 
 When creating a new image prompt:
 
-1. Use the completed card description from `../completed/[hexagram]/[binary].md` as the foundation
+1. Use the completed `prompt_for_image_gen` section from the generated card YAML file
 2. Ensure strong archetype integration based on the seasonal archetype
 3. Emphasize visual distinction while maintaining thematic connection to other cards in the hexagram
 4. Include specific references to how the central motifs evolve across the four seasonal cards

@@ -17,48 +17,50 @@ bit_associations:
     position: 1
     name: Intuition
     domain: Inner/Heart
-    question: Do you trust your natural instincts to direct you down the right path?
+    question: Do you trust your natural instincts?
     value: '1'
     meaning: Yes, intuition is trusted and followed
+    resource: Intuition
   bit2:
     position: 2
     name: Ability
     domain: Inner/Hands
-    question: Do you have the skills and know-how required to address this question
-      on your own?
+    question: Do you have the skills required?
     value: '1'
     meaning: Yes, required skills and know-how are present
+    resource: Ability
   bit3:
     position: 3
     name: Capacity
     domain: Inner/Head
-    question: Do your current circumstances provide enough time, space, and resources
-      to address this?
+    question: Do you have the time, space, and resources?
     value: '1'
     meaning: Yes, circumstances provide sufficient resources
+    resource: Capacity
   bit4:
     position: 4
     name: Expectations
     domain: Outer/Heart
-    question: Are you aligned with how cultural norms and expectations would want
-      you to address this?
+    question: Are you aligned with cultural norms?
     value: '0'
     meaning: No, not aligned with cultural norms and expectations
+    resource: Expectations
   bit5:
     position: 5
     name: Support
     domain: Outer/Hands
-    question: Do your closest relationships and community have your back in this?
+    question: Do your relationships and community have your back?
     value: '0'
     meaning: No, lacking support from relationships and community
+    resource: Support
   bit6:
     position: 6
     name: Options
     domain: Outer/Head
-    question: Are the possible paths that you could choose from clear to you right
-      now?
+    question: Are your possible paths clear?
     value: '1'
     meaning: Yes, possible paths are clear
+    resource: Options
   bit78:
     position: 7-8
     name: Cycle Phase
@@ -77,6 +79,8 @@ inner_world:
   name: Monkey
   desc: Complete presence of inner resources; self-sufficient, confident, and fully
     equipped
+  detailed_name: Monkey
+  detailed_description: Complete presence of inner resources
 outer_world:
   bits: '001'
   color: Blue
@@ -88,6 +92,8 @@ outer_world:
   state: outer0
   name: Tower
   desc: Clear options present, but lacking alignment with expectations and support
+  detailed_name: Tower
+  detailed_description: Clear options but lacking alignment and support
 composite_frameworks:
   inner_and_outer_worlds:
     inner_world:
@@ -171,17 +177,27 @@ archetype:
     at its most effective
   cycle_position: Third Season
   cycle_description: A Fall expression of a Spring-resonant pattern
+  detailed_description: The Fool represents innocence, new beginnings, and fresh perspectives.
+    It appears when a card's resonant season is followed by its cycle bits' season.
+    The Fool archetype embodies potential and untested energy, where the card's pattern
+    is moving into a new phase with openness and curiosity. The fool manifests in
+    cards as characters in childhood or at the threshold of a journey. In the narrative
+    cycle, the Fool is always the beginning point - the awakening of consciousness
+    to new possibilities. In the Gene Key associations (found in core-systems.yml
+    and gene-keys-reference.md), the Fool is associated with the gene key's raw potential,
+    outside of the more specific nuances of the shadow, gift, and siddhi.
 gender: masculine
 lunar_cycle:
   decimal_modulo: 229 % 8 = 2, 229 % 2 = 1
   phase: First Quarter
-  phase_half: First Quarter (Late)
+  phase_half: Late
   illumination: ''
   illumination_min: ''
   illumination_max: ''
-  cycle_number: 1
+  cycle_number: '3'
   cycle_name: Inception Cycle
   complete_designation: First Quarter (Late), Inception Cycle of Fall
+  lunar_phase_detailed: '3: Waxing Gibbous'
 image_components:
   colors:
     inner_world: White

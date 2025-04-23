@@ -1,0 +1,142 @@
+card:
+  version: '1.0'
+  binary: '10101001'
+  decimal: '149'
+  hexadecimal: a9
+  basic_info:
+    desc: '[A paragraph describing the card''s core energy and meaning - focus on
+      the combination of hexagram energy with the Fall/Hero expression. Include how
+      the bit pattern reflects resources present/absent and how this connects to the
+      card''s overall meaning.]'
+    keywords:
+    - '[keyword 1]'
+    - '[keyword 2]'
+    - '[keyword 3]'
+    - '[keyword 4]'
+    - '[keyword 5]'
+    - '[keyword 6]'
+    symbols:
+    - '[symbol 1]'
+    - '[symbol 2]'
+    - '[symbol 3]'
+    - '[symbol 4]'
+    - '[symbol 5]'
+    - '[symbol 6]'
+  direct_associations:
+    archetype: Hero
+    archetype_color: Gold
+    gender: feminine
+    inner_world:
+      color: Magenta
+      trigram: Fire
+      meaning: Intuitive and resourceful but lacking practical skills; has the vision
+        and space but needs help executing
+    outer_world:
+      color: Green
+      trigram: Water
+      meaning: Support present, but lacking alignment with expectations and clear
+        options
+    solar_cycle:
+      season: Fall
+      tarot_suit: Pentacles
+      element: Earth
+    lunar_cycle:
+      decimal_modulo: 149 % 8 = 2, 149 % 2 = 1
+      phase: First Quarter
+      phase_half: Balancing
+      cycle_number: '4'
+      cycle_name: Transition Cycle
+      complete_designation: First Quarter (Late), Transition Cycle of Fall
+    tarot:
+      card: '[Card for 101010]'
+      cycle_suit: Pentacles
+      seasonal_expression: '[Description of how this hexagram energy expresses in
+        this season]'
+    hexagram:
+      i_ching:
+        number: 63
+        name: Ji Ji
+        label: After Completion
+        description: Completion, fulfillment, success, accomplished task
+      gene_key:
+        number: 63
+        shadow: Doubt
+        gift: Inquiry
+        siddhi: Truth
+        meaning: A journey from skepticism and uncertainty to genuine questioning
+          and ultimately direct realization of absolute truth
+  interpreted_meanings:
+    basic:
+      name_6bit: '[Name based on hexagram 101010]'
+      name_8bit: '[Name incorporating Fall]'
+      gender: feminine
+    oracle_card:
+      card_name: '[Evocative name for card 10101001]'
+      card_creature: '[Description of the mythological figure or character that embodies
+        this card''s energy, with feminine terms]'
+      question_posed: '[Question this card asks the querent - should prompt reflection
+        about the core themes]'
+      card_scene: '[Detailed description of the card''s imagery, incorporating all
+        symbolic elements, colors, and archetype]'
+      universal_symbol: '[Core symbol that captures the essence of this card]'
+      mood: '[Emotional/energetic quality of the card]'
+      prompt_for_image_gen: 'Limited color risograph-style illustration of [short
+        scene description].
+
+        Use Magenta for foreground elements (inner world) and Green for background/environment
+        (outer world), with Gold highlights.
+
+        Maintain risograph/woodblock print texture with strong contrast, 3-4 colors
+        max, and minimalistic geometric forms.
+
+        Include a clean, full-width title bar at the bottom, centered, with a card
+        title ''[CARD TITLE]'' in bold and a more subtle subtitle below that with
+        the 8-bit code ''10101001'', without corner decorations or symbols.
+
+        Feature [card_creature in the card_scene, key symbolic elements, e.g., moon
+        phase, animal companions, symbolic object].
+
+        The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle
+        seasonal/elemental references appropriate for Fall.
+
+        Style should blend Rider-Waite simplicity with modern symbolic abstraction,
+        emotionally resonant but compositionally clean.'
+  related_cards:
+    same_card_winter: '10101000'
+    same_card_spring: '10101010'
+    same_card_summer: '10101011'
+    same_card_fall: '10101001'
+    opposite: '01010110'
+    thematic_pair: '[Related binary]'
+    full_cycle:
+    - '10101000'
+    - '10101010'
+    - '10101011'
+    - '10101001'
+  bit_values:
+    bit1: '1'
+    bit2: '0'
+    bit3: '1'
+    bit4: '0'
+    bit5: '1'
+    bit6: '0'
+    bit78: '01'
+  fractal_meanings:
+    quantum:
+      pattern: '[How this card''s energy pattern manifests at quantum level]'
+      insight: '[The wisdom this reveals about reality''s fundamental nature]'
+    biological:
+      pattern: '[How this card''s energy pattern appears in living systems]'
+      insight: '[The wisdom this reveals about life and evolution]'
+    psychological:
+      pattern: '[How this card''s energy pattern manifests in human mind]'
+      insight: '[The wisdom this reveals about consciousness and thought]'
+    social:
+      pattern: '[How this card''s energy pattern appears in communities]'
+      insight: '[The wisdom this reveals about human connection]'
+    ecological:
+      pattern: '[How this card''s energy pattern manifests in ecosystems]'
+      insight: '[The wisdom this reveals about natural systems]'
+    cosmic:
+      pattern: '[How this card''s energy pattern appears at universal scale]'
+      insight: '[The wisdom this reveals about the nature of existence]'

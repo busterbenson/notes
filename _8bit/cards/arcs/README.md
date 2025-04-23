@@ -6,6 +6,20 @@ This directory contains narrative arc documentation for the 8-Bit Oracle card sy
 
 All narrative arcs follow the archetypal progression of Fool → Hero → Monster → Sage, which corresponds to the seasonal progression of Spring → Summer → Fall → Winter. This cycle represents the natural development of consciousness from initial awakening, through mastery and challenge, to integration and transcendence, potentially beginning a new cycle at a higher level.
 
+## Integration with Card Generation
+
+When using the new card generation tools, narrative arcs play an important role:
+
+1. Generate cards for a hexagram:
+   ```bash
+   cd /Users/buster/projects/notes/_8bit/cards
+   ./generate-hexagram.sh 101010
+   ```
+
+2. Create or update the narrative arc file for the hexagram at `/hexagram/101010.md`
+
+3. Use the narrative arc to inform the details you add to each of the four generated card files, ensuring consistency across the seasonal variations.
+
 ## Purpose
 
 The narrative arcs serve multiple functions in the oracle system:

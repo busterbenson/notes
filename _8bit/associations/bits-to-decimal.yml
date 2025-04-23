@@ -59,29 +59,6 @@ binary_system:
       - "01100000" # Card 7
       - "11100000" # Card 8
 
-# Lunar Calculation with Left-to-Right Priority
-lunar_calculations:
-  description: "All lunar calculations use left-to-right priority when converting binary to decimal values"
-  
-  # Left-prioritized lunar cycle calculation
-  lunar_cycle:
-    description: |
-      Lunar cycle uses a weighted counting method that prioritizes leftmost bits:
-      - Higher weights are assigned to leftmost bits
-      - Weights for bits 1-6: [6, 5, 4, 3, 2, 1]
-      - Weighted sum is calculated and mapped to cycles 1-4
-    formula: "cycle = (weighted_sum % 4) + 1"
-  
-  # Left-prioritized phase calculation
-  lunar_phase:
-    description: "Phase is determined by the left-prioritized decimal value divided by 2, modulo 8"
-    formula: "(left_prioritized_decimal ÷ 2) % 8"
-  
-  # Left-prioritized phase half calculation
-  phase_half:
-    description: "Phase half is determined by the left-prioritized decimal value modulo 2"
-    formula: "left_prioritized_decimal % 2"
-
 # Implementation Notes
 implementation_notes:
   description: "Important notes about the left-to-right binary system"

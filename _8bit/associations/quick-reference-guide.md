@@ -112,15 +112,15 @@ For example:
 - If the resonant season is Winter, and the season is Summer, then the archetype is Hero.
 - If the resonant season is Winter, and the season is Fall, then the archetype is Monster.
 
-| Binary    | Decimal | Season | Resonant Season | Archetype |
-|-----------|---------|--------|-----------------|-----------|
-| 00000000  | 0       | Winter | Winter          | Sage      |
-| 10111010  | 93      | Spring | Summer          | Monster   |
-| 11111100  | 63      | Winter | Summer          | Hero      |
-| 11111111  | 255     | Summer | Summer          | Sage      |
-| 01010100  | 42      | Winter | Winter          | Sage      |
-| 01010101  | 170     | Fall   | Fall            | Sage      |
-| 01010111  | 234     | Summer | Fall            | Monster   |
+| Binary    | L->R Decimal | Season | Resonant Season | Archetype |
+|-----------|--------------|--------|-----------------|-----------|
+| 00000000  | 0            | Winter | Winter          | Sage      |
+| 10111010  | 93           | Spring | Summer          | Monster   |
+| 11111100  | 63           | Winter | Summer          | Hero      |
+| 11111111  | 255          | Summer | Summer          | Sage      |
+| 01010100  | 42           | Winter | Winter          | Sage      |
+| 01010101  | 170          | Fall   | Fall            | Sage      |
+| 01010111  | 234          | Summer | Fall            | Monster   |
 
 ## Gender
 The gender of each card's archetypes is determined by counting the number of "1" bits in positions 1-6 (the resource bits). This count creates a systematic approach to gender assignment that connects to the card's fundamental energy pattern.

@@ -36,10 +36,15 @@ In some cases, ? will also be used to simply denote which bit(s) are relevant to
 
 ## Generating Cards
 
-### To generate all the compiled card asssociation files:
-Simply run:
-  cd /Users/buster/projects/notes/_8bit/cards
-  ./generate-all-associations.py
+These association files are used by the card generation scripts in the `/cards/` directory. To generate cards:
+
+```bash
+cd /Users/buster/projects/notes/_8bit/cards
+./generate-card.sh <binary_code>      # Generate a single card
+./generate-hexagram.sh <6-bit_code>   # Generate all four seasonal cards for a hexagram
+```
+
+See the `/cards/README.md` file for more details on the card generation process.
 
 ## Related Resources
 

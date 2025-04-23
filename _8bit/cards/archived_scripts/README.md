@@ -19,13 +19,18 @@ This directory contains scripts that are no longer used in the current 8-Bit Ora
 - **Reason for archiving**: Appears to be superseded by `create-description.py`
 - **Replacement**: `create-description.py` provides this functionality
 
+### create-description.py
+- **Purpose**: Creates a structured card description in markdown format
+- **Reason for archiving**: Functionality now integrated into `generate-card.py`
+- **Replacement**: `generate-card.py` and `generate-card.sh` provide this functionality in a more comprehensive way
+
 ## Current Workflow
 
 The current workflow uses these primary scripts:
 
-1. `association-generator.py` - Generates raw associations in YAML format in compiled/
-2. `create-description.py` - Creates initial markdown card template
-3. `create-enhanced-card.py` - Enhances markdown cards with system data and image prompt
-4. `generate-card.sh` - Main orchestration script that ties everything together
+1. `generate-card.py` - Creates complete card YAML files with all sections from the template
+2. `generate-card.sh` - Shell wrapper for the Python script with validation and instructions
+3. `generate-hexagram.sh` - Generates all four seasonal cards for a hexagram at once
 
-All card data is now stored in markdown format in the completed/ directory.
+All card data is now stored in YAML format in the generated/ directory, ready to be filled with meaningful content.
+EOL < /dev/null

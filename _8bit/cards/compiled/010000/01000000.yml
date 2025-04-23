@@ -17,48 +17,50 @@ bit_associations:
     position: 1
     name: Intuition
     domain: Inner/Heart
-    question: Do you trust your natural instincts to direct you down the right path?
+    question: Do you trust your natural instincts?
     value: '0'
     meaning: No, intuition is not trusted or followed
+    resource: Intuition
   bit2:
     position: 2
     name: Ability
     domain: Inner/Hands
-    question: Do you have the skills and know-how required to address this question
-      on your own?
+    question: Do you have the skills required?
     value: '1'
     meaning: Yes, required skills and know-how are present
+    resource: Ability
   bit3:
     position: 3
     name: Capacity
     domain: Inner/Head
-    question: Do your current circumstances provide enough time, space, and resources
-      to address this?
+    question: Do you have the time, space, and resources?
     value: '0'
     meaning: No, circumstances do not provide sufficient resources
+    resource: Capacity
   bit4:
     position: 4
     name: Expectations
     domain: Outer/Heart
-    question: Are you aligned with how cultural norms and expectations would want
-      you to address this?
+    question: Are you aligned with cultural norms?
     value: '0'
     meaning: No, not aligned with cultural norms and expectations
+    resource: Expectations
   bit5:
     position: 5
     name: Support
     domain: Outer/Hands
-    question: Do your closest relationships and community have your back in this?
+    question: Do your relationships and community have your back?
     value: '0'
     meaning: No, lacking support from relationships and community
+    resource: Support
   bit6:
     position: 6
     name: Options
     domain: Outer/Head
-    question: Are the possible paths that you could choose from clear to you right
-      now?
+    question: Are your possible paths clear?
     value: '0'
     meaning: No, possible paths are unclear
+    resource: Options
   bit78:
     position: 7-8
     name: Cycle Phase
@@ -77,6 +79,8 @@ inner_world:
   name: Spider
   desc: Technical ability present but lacking intuition and capacity; skilled execution
     without direction or resources
+  detailed_name: Spider
+  detailed_description: Technical ability present but lacking intuition
 outer_world:
   bits: '000'
   color: Black
@@ -89,6 +93,8 @@ outer_world:
   name: Cave
   desc: Complete lack of outer resources; expectations, support, and options are all
     absent
+  detailed_name: Cave
+  detailed_description: Complete lack of outer resources
 composite_frameworks:
   inner_and_outer_worlds:
     inner_world:
@@ -173,17 +179,32 @@ archetype:
     energy pattern
   cycle_position: Resonant Season
   cycle_description: A Winter expression of a Winter-resonant pattern
+  detailed_description: The Sage represents a collective state of wisdom, integration,
+    and harmony between its energy's strengths AND acceptance and accountability for
+    its shadow, across individuals and time. It appears when a card's resonant season
+    matches its cycle bits' season. The Sage archetype embodies the most balanced
+    expression of the card's energy, where inner and outer worlds are appropriately
+    aligned with the cycle phase. The sage manifests in cards as multifaceted and
+    chimeric in nature (a union of several characters/creatures/groups), whole in
+    time more than space, because they integrate cycles of change and growth. In the
+    narrative cycle, the Sage follows the Monster, representing the integration and
+    transcendence phase of consciousness. The Sage contains the wisdom of the entire
+    cycle and ultimately transcends it to become a new kind of Fool at a higher level.
+    In the Gene Key associations (found in core-systems.yml and gene-keys-reference.md),
+    the Sage is associated with the siddhi version of the gene key that is associated
+    with the card in question.
 gender: feminine
 lunar_cycle:
   decimal_modulo: 64 % 8 = 0, 64 % 2 = 0
   phase: Dark Moon
-  phase_half: Dark Moon (Early)
+  phase_half: Early
   illumination: ''
   illumination_min: ''
   illumination_max: ''
-  cycle_number: 2
+  cycle_number: '1'
   cycle_name: Development Cycle
   complete_designation: Dark Moon (Early), Development Cycle of Winter
+  lunar_phase_detailed: '1: New Moon'
 image_components:
   colors:
     inner_world: Green

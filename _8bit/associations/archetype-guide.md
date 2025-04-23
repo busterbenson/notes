@@ -116,7 +116,7 @@ The archetype of a card provides insight into how its energy is currently manife
 The archetype system provides a framework for understanding the qualitative expression of each card's binary pattern, adding nuance and depth to readings.
 
 ## Lookup
-| Binary    | Decimal | Season | Resonant Season | Archetype |
+| Binary    | L->R Decimal | Season | Resonant Season | Archetype |
 |-----------|---------|--------|-----------------|-----------|
 | 00000000  | 0       | Winter | Winter          | Sage      |
 | 10000000  | 1       | Winter | Winter          | Sage      |
@@ -162,7 +162,7 @@ The archetype system provides a framework for understanding the qualitative expr
 | 10010100  | 41      | Winter | Fall            | Fool      |
 | 01010100  | 42      | Winter | Fall            | Fool      |
 | 11010100  | 43      | Winter | Summer          | Hero      |
-| 00110100  | 44      | Winter | Winter          | Sage      |
+| 00110100  | 44      | Winter | Fall            | Fool      |
 | 10110100  | 45      | Winter | Summer          | Hero      |
 | 01110100  | 46      | Winter | Summer          | Hero      |
 | 11110100  | 47      | Winter | Summer          | Hero      |
@@ -194,18 +194,18 @@ The archetype system provides a framework for understanding the qualitative expr
 | 10010010  | 73      | Spring | Winter          | Fool      |
 | 01010010  | 74      | Spring | Winter          | Fool      |
 | 11010010  | 75      | Spring | Spring          | Sage      |
-| 00110010  | 76      | Spring | Fall            | Hero      |
+| 00110010  | 76      | Spring | Winter          | Fool      |
 | 10110010  | 77      | Spring | Spring          | Sage      |
 | 01110010  | 78      | Spring | Spring          | Sage      |
 | 11110010  | 79      | Spring | Spring          | Sage      |
 | 00001010  | 80      | Spring | Winter          | Fool      |
 | 10001010  | 81      | Spring | Winter          | Fool      |
 | 01001010  | 82      | Spring | Winter          | Fool      |
-| 11001010  | 83      | Spring | Summer          | Monster   |
+| 11001010  | 83      | Spring | Spring          | Sage      |
 | 00101010  | 84      | Spring | Winter          | Fool      |
 | 10101010  | 85      | Spring | Spring          | Sage      |
 | 01101010  | 86      | Spring | Spring          | Sage      |
-| 11101010  | 87      | Spring | Winter          | Fool      |
+| 11101010  | 87      | Spring | Spring          | Sage      |
 | 00011010  | 88      | Spring | Fall            | Hero      |
 | 10011010  | 89      | Spring | Fall            | Hero      |
 | 01011010  | 90      | Spring | Fall            | Hero      |
@@ -216,7 +216,7 @@ The archetype system provides a framework for understanding the qualitative expr
 | 11111010  | 95      | Spring | Summer          | Monster   |
 | 00000110  | 96      | Spring | Winter          | Fool      |
 | 10000110  | 97      | Spring | Winter          | Fool      |
-| 01000110  | 98      | Spring | Spring          | Sage      |
+| 01000110  | 98      | Spring | Winter          | Fool      |
 | 11000110  | 99      | Spring | Spring          | Sage      |
 | 00100110  | 100     | Spring | Winter          | Fool      |
 | 10100110  | 101     | Spring | Spring          | Sage      |
@@ -319,18 +319,18 @@ The archetype system provides a framework for understanding the qualitative expr
 | 01100011  | 198     | Summer | Spring          | Fool      |
 | 11100011  | 199     | Summer | Spring          | Fool      |
 | 00010011  | 200     | Summer | Winter          | Hero      |
-| 10010011  | 201     | Summer | Fall            | Monster   |
-| 01010011  | 202     | Summer | Fall            | Monster   |
+| 10010011  | 201     | Summer | Winter          | Hero      |
+| 01010011  | 202     | Summer | Winter          | Hero      |
 | 11010011  | 203     | Summer | Spring          | Fool      |
-| 00110011  | 204     | Summer | Fall            | Monster   |
+| 00110011  | 204     | Summer | Winter          | Hero      |
 | 10110011  | 205     | Summer | Spring          | Fool      |
 | 01110011  | 206     | Summer | Spring          | Fool      |
 | 11110011  | 207     | Summer | Spring          | Fool      |
 | 00001011  | 208     | Summer | Winter          | Hero      |
-| 10001011  | 209     | Summer | Fall            | Monster   |
+| 10001011  | 209     | Summer | Winter          | Hero      |
 | 01001011  | 210     | Summer | Winter          | Fool      |
 | 11001011  | 211     | Summer | Spring          | Fool      |
-| 00101011  | 212     | Summer | Fall            | Monster   |
+| 00101011  | 212     | Summer | Winter          | Hero      |
 | 10101011  | 213     | Summer | Spring          | Fool      |
 | 01101011  | 214     | Summer | Spring          | Fool      |
 | 11101011  | 215     | Summer | Spring          | Fool      |

@@ -17,48 +17,50 @@ bit_associations:
     position: 1
     name: Intuition
     domain: Inner/Heart
-    question: Do you trust your natural instincts to direct you down the right path?
+    question: Do you trust your natural instincts?
     value: '0'
     meaning: No, intuition is not trusted or followed
+    resource: Intuition
   bit2:
     position: 2
     name: Ability
     domain: Inner/Hands
-    question: Do you have the skills and know-how required to address this question
-      on your own?
+    question: Do you have the skills required?
     value: '1'
     meaning: Yes, required skills and know-how are present
+    resource: Ability
   bit3:
     position: 3
     name: Capacity
     domain: Inner/Head
-    question: Do your current circumstances provide enough time, space, and resources
-      to address this?
+    question: Do you have the time, space, and resources?
     value: '0'
     meaning: No, circumstances do not provide sufficient resources
+    resource: Capacity
   bit4:
     position: 4
     name: Expectations
     domain: Outer/Heart
-    question: Are you aligned with how cultural norms and expectations would want
-      you to address this?
+    question: Are you aligned with cultural norms?
     value: '0'
     meaning: No, not aligned with cultural norms and expectations
+    resource: Expectations
   bit5:
     position: 5
     name: Support
     domain: Outer/Hands
-    question: Do your closest relationships and community have your back in this?
+    question: Do your relationships and community have your back?
     value: '1'
     meaning: Yes, supported by relationships and community
+    resource: Support
   bit6:
     position: 6
     name: Options
     domain: Outer/Head
-    question: Are the possible paths that you could choose from clear to you right
-      now?
+    question: Are your possible paths clear?
     value: '1'
     meaning: Yes, possible paths are clear
+    resource: Options
   bit78:
     position: 7-8
     name: Cycle Phase
@@ -77,6 +79,8 @@ inner_world:
   name: Spider
   desc: Technical ability present but lacking intuition and capacity; skilled execution
     without direction or resources
+  detailed_name: Spider
+  detailed_description: Technical ability present but lacking intuition
 outer_world:
   bits: '011'
   color: Cyan
@@ -89,6 +93,8 @@ outer_world:
   name: Chasm
   desc: Support and options present, but misaligned with expectations; alternative
     paths with backing
+  detailed_name: Chasm
+  detailed_description: Support and options but misaligned with expectations
 composite_frameworks:
   inner_and_outer_worlds:
     inner_world:
@@ -172,17 +178,30 @@ archetype:
   expression: The challenge or excess of Dishonesty - this energy pattern in imbalance
   cycle_position: Fourth Season
   cycle_description: A Summer expression of a Fall-resonant pattern
+  detailed_description: 'The Monster represents the seed of the hero''s shadow realized:
+    the resultant excess, challenges caused by the solutions of the past, and shadow
+    aspects that the hero didn''t want to confront. It appears when a card''s resonant
+    season is three steps ahead of (or one step behind) its cycle bits'' season. The
+    Monster archetype embodies the imbalanced or exaggerated expression of the card''s
+    qualities, where energy has become distorted or overwhelming. The monster will
+    often manifest in cards as an animal/creature/monster that represents the shadow
+    of the hero it''s related to. In the narrative cycle, the Monster follows the
+    Hero, representing the challenge and transformation phase of consciousness. In
+    the Gene Key associations (found in core-systems.yml and gene-keys-reference.md),
+    the Monster is associated with the shadow version of the gene key that is associated
+    with the card in question.'
 gender: feminine
 lunar_cycle:
   decimal_modulo: 79 % 8 = 7, 79 % 2 = 1
   phase: Balsamic Moon
-  phase_half: Balsamic Moon (Late)
+  phase_half: Early
   illumination: ''
   illumination_min: ''
   illumination_max: ''
-  cycle_number: 4
+  cycle_number: '4'
   cycle_name: Transition Cycle
   complete_designation: Balsamic Moon (Late), Transition Cycle of Summer
+  lunar_phase_detailed: '1: New Moon'
 image_components:
   colors:
     inner_world: Green

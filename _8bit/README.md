@@ -19,30 +19,39 @@ A divination system based on 8-bit binary patterns, combining elements of tarot,
 - `/mapping_plans/` - Development documents for the tarot-to-binary mapping
   - Contains evaluation and analysis of different mapping approaches
 
-#### Cards and card images stored in folders like v3 (currently on v3) 
-#### When archived they will be moved to the archive/v3 folder
-- `/cards/[version]/[6-bit code]/[8-bit code].yml` - Individual card files organized by pattern similarity
-  - `card-template.yml` - Template for creating new cards with complete structure
-  - `card-example-00000000.yml` - Example card (The Moon in Winter) with all fields filled in
-  - Organized in subdirectories by first 6 bits (e.g., `/000000/`, `/010010/`)
-  - Each card is named by its binary pattern (e.g., `00000000.yml`)
+- `/cards/` - Card generation scripts and data files
+  - `generate-card.py` - Python script to generate a complete card
+  - `generate-card.sh` - Shell wrapper to generate a single card
+  - `generate-hexagram.sh` - Script to generate all four seasonal cards for a hexagram
+  - `card-template.yml` - Template for card structure
+  - `card-example-00000000.yml` - Example card with all fields filled in
+  - `/generated/` - Generated card files with complete structure
+  - `/arcs/` - Narrative arc documentation for hexagrams
+  - `/image_prompts/` - Custom image generation prompts
 
-- `/card_images/` - Generated card images organized by pattern similarity
-  - Same subdirectory structure as `/cards/`
-  - Images may have multiple versions with numbering (e.g., `00000000-void-mirror.0.png`)
+- `/card_images/` - Generated card images
+  - Images named by pattern (e.g., `00000000-void-mirror.png`)
 
 ## Card Generation Workflow
 
-1. **Create a new card file**:
-   - Copy `/cards/card-template.yml` to the appropriate subdirectory in `/cards/`
-   - Name it according to its binary pattern (e.g., `01010101.yml`)
-   - Fill in all fields based on the template
+1. **Generate a card template**:
+   ```bash
+   cd /cards
+   ./generate-card.sh 10101010  # Generate a single card
+   ./generate-hexagram.sh 101010  # Generate all four cards for a hexagram
+   ```
 
-2. **Generate card image**:
-   - Use the `prompt_for_image_gen` field in your card file
-   - Pass this to your image generation system
-   - Save the result in the corresponding subdirectory in `/card_images/`
-   - Name format: `{binary}-{card_name}.{version}.png` (e.g., `00000000-void-mirror.0.png`)
+2. **Create or update narrative arc**:
+   - Create or edit a narrative arc file in `/cards/arcs/hexagram/<6-bit-code>.md`
+
+3. **Fill in card details**:
+   - Edit the generated YAML file in `/cards/generated/`
+   - Add keywords, symbols, and detailed descriptions
+   - Complete the image prompt section
+
+4. **Generate card image**:
+   - Use the completed image prompt with an image generation service
+   - Save the resulting image to `/card_images/`
 
 ## Binary Pattern Structure
 

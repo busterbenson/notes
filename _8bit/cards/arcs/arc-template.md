@@ -10,81 +10,101 @@
 ## Core Theme
 [The central narrative thread that connects all cards in this arc.]
 
+## Internal Dramatic Tension
+The arc of [Hexagram Name] explores three fundamental tensions that drive its narrative journey:
+
+1. **[Primary Tension 1]**: [Describe the central tension/paradox that drives the arc's development. Explain how this tension evolves through the four archetypal stages, showing how each stage represents a different relationship to or expression of this tension. Example tensions include: Form vs. Formlessness, Unity vs. Diversity, Action vs. Receptivity, etc.]
+
+2. **[Primary Tension 2]**: [Describe the second key tension that shapes character development through the arc. Explain how this tension manifests differently in each archetypal stage, creating challenges and growth opportunities. Example tensions include: Individual vs. Collective, Certainty vs. Uncertainty, Preservation vs. Transformation, etc.]
+
+3. **[Primary Tension 3]**: [Describe the third tension that represents the fundamental transformation between beginning and end of the cycle. This tension usually involves how the character's relationship to reality itself transforms. Example tensions include: Separation vs. Integration, Control vs. Surrender, Knowledge vs. Wisdom, etc.]
+
+## Relational Tensions
+The [Hexagram Name] ([BINARY CODE]) exists in dynamic relationship with several other hexagrams, particularly its opposite, [Opposite Hexagram Name] ([OPPOSITE BINARY CODE]). These relationships reveal essential complementary tensions that add depth to its meaning within the 8-Bit Oracle system:
+
+1. **[Hexagram Name] vs. [Opposite Hexagram Name]**: [Describe how this hexagram and its opposite represent complementary or contrasting energies. Explain what fundamental polarity or spectrum they represent together, and how they might interact in readings. For example, how Heaven (111111) and Earth (000000) represent complementary creative and receptive forces.]
+
+2. **[Tension Aspect 1]**: [Describe a specific aspect of the relationship between this hexagram and its opposite, focusing on how they represent different approaches to a similar theme or challenge. For example, how The Creative emphasizes visibility while The Receptive emphasizes hiddenness.]
+
+3. **[Tension Aspect 2]**: [Describe another aspect of the relationship, such as how the inner and outer trigrams are arranged differently and what this means. For example, how After Completion features Fire/Water while Before Completion features Water/Fire.]
+
+4. **Relationship with [Related Hexagram 1] and [Related Hexagram 2]**: [Describe how this hexagram relates to 1-2 other hexagrams that share important connections or form meaningful patterns together. Explain what larger process or cycle they collectively represent. For example, how Return, After Completion, and Innocence might form a meta-cycle of consciousness development.]
+
 ## Evolutionary Journey
-[The spiritual/psychological/developmental journey represented by this sequence of cards, following the Fool → Hero → Monster → Sage progression.]
+[The spiritual/psychological/developmental journey represented by this sequence of cards, following the Fool → Hero → Monster → Sage progression. Include the relevant Gene Key journey if applicable (e.g., Gene Key 63: Doubt → Inquiry → Truth).]
 
 ## Visual Narrative Continuity
 
 ### Primary Symbol: [CENTRAL MOTIF]
 [Description of how the central motif evolves across the cards in this arc. Note that the specific seasons will depend on the resonant season of the hexagram. The archetypes always follow the order: Fool → Hero → Monster → Sage, but the seasons they map to will shift based on the resonant season.]
 
+- **[Post-Resonant Season] (Fool)**: [Description of motif in the Fool expression]
+- **[Next Season] (Hero)**: [Description of motif in the Hero expression]
+- **[Next+1 Season] (Monster)**: [Description of motif in the Monster expression]
 - **[Resonant Season] (Sage)**: [Description of motif in the Sage expression]
-- **[Next Season] (Fool)**: [Description of motif in the Fool expression]
-- **[Next+1 Season] (Hero)**: [Description of motif in the Hero expression]
-- **[Next+2 Season] (Monster)**: [Description of motif in the Monster expression]
 
 ### Environment Evolution
 [How the environment (outer world) evolves across the four archetypal expressions.]
 
+- **[Post-Resonant Season] (Fool)**: [Environment details for Fool expression]
+- **[Next Season] (Hero)**: [Environment details for Hero expression]
+- **[Next+1 Season] (Monster)**: [Environment details for Monster expression]
 - **[Resonant Season] (Sage)**: [Environment details for Sage expression]
-- **[Next Season] (Fool)**: [Environment details for Fool expression]
-- **[Next+1 Season] (Hero)**: [Environment details for Hero expression]
-- **[Next+2 Season] (Monster)**: [Environment details for Monster expression]
 
 ## Character Development
 
 ### The [CHARACTER] Journey (Inner World)
 [Description of how the character or archetype develops across the arc.]
 
-1. **[Resonant Season] (Sage)**: [Character as Sage] - integrated wisdom and transcendence
-2. **[Next Season] (Fool)**: [Character as Fool] - intuitive but inexperienced
-3. **[Next+1 Season] (Hero)**: [Character as Hero] - developing mastery and skill
-4. **[Next+2 Season] (Monster)**: [Character as Monster] - powerful but potentially destabilizing
+- **[Post-Resonant Season] (Fool)**: [Character as Fool] - intuitive but inexperienced
+- **[Next Season] (Hero)**: [Character as Hero] - developing mastery and skill
+- **[Next+1 Season] (Monster)**: [Character as Monster] - powerful but potentially destabilizing
+- **[Resonant Season] (Sage)**: [Character as Sage] - integrated wisdom and transcendence
 
 ### The [ENVIRONMENT] Journey (Outer World)
 [Description of how the environment transforms across the arc.]
 
-1. **[Resonant Season] (Sage)**: [Environment with Sage] - crystalline clarity, essential structures revealed
-2. **[Next Season] (Fool)**: [Environment with Fool] - welcoming yet mysterious, new beginnings
-3. **[Next+1 Season] (Hero)**: [Environment with Hero] - vibrant and rich but with unclear direction
-4. **[Next+2 Season] (Monster)**: [Environment with Monster] - transforming, revealing patterns through breakdown
+- **[Post-Resonant Season] (Fool)**: [Environment with Fool] - welcoming yet mysterious, new beginnings
+- **[Next Season] (Hero)**: [Environment with Hero] - vibrant and rich but with unclear direction
+- **[Next+1 Season] (Monster)**: [Environment with Monster] - transforming, revealing patterns through breakdown
+- **[Resonant Season] (Sage)**: [Environment with Sage] - crystalline clarity, essential structures revealed
 
 ## Symbolic Continuity
 
 ### Color Progression
+- **[Post-Resonant Season] (Fool)**: [Inner World Color]/[Outer World Color]/Turquoise - representing [meaning]
+- **[Next Season] (Hero)**: [Inner World Color]/[Outer World Color]/Gold - representing [meaning]
+- **[Next+1 Season] (Monster)**: [Inner World Color]/[Outer World Color]/Iridescent - representing [meaning]
 - **[Resonant Season] (Sage)**: [Inner World Color]/[Outer World Color]/Purple - representing [meaning]
-- **[Next Season] (Fool)**: [Inner World Color]/[Outer World Color]/Turquoise - representing [meaning]
-- **[Next+1 Season] (Hero)**: [Inner World Color]/[Outer World Color]/Gold - representing [meaning]
-- **[Next+2 Season] (Monster)**: [Inner World Color]/[Outer World Color]/Iridescent - representing [meaning]
 
 ### Element Progression
+- **[Post-Resonant Season] (Fool)**: [Element] - [how it manifests with the Fool]
+- **[Next Season] (Hero)**: [Element] - [how it manifests with the Hero]
+- **[Next+1 Season] (Monster)**: [Element] - [how it manifests with the Monster]
 - **[Resonant Season] (Sage)**: [Element] - [how it manifests with the Sage]
-- **[Next Season] (Fool)**: [Element] - [how it manifests with the Fool]
-- **[Next+1 Season] (Hero)**: [Element] - [how it manifests with the Hero]
-- **[Next+2 Season] (Monster)**: [Element] - [how it manifests with the Monster]
 
 ## Narrative Arc Structure
 
-### 1. [Resonant Season] ([HEXAGRAM][season-bits]) - "[CARD NAME]" (Sage)
-**Stage**: Integration, transcendence, completion/rebirth
-**Theme**: [Core theme of this card]
-**Challenge**: [Key challenge represented]
-**Wisdom**: [Essential wisdom offered]
-
-### 2. [Next Season] ([HEXAGRAM][season-bits]) - "[CARD NAME]" (Fool)
+### 1. [Post-Resonant Season] ([HEXAGRAM][season-bits]) - "[CARD NAME]" (Fool)
 **Stage**: Awakening, beginning, initiation
 **Theme**: [Core theme of this card]
 **Challenge**: [Key challenge represented]
 **Wisdom**: [Essential wisdom offered]
 
-### 3. [Next+1 Season] ([HEXAGRAM][season-bits]) - "[CARD NAME]" (Hero)
+### 2. [Next Season] ([HEXAGRAM][season-bits]) - "[CARD NAME]" (Hero)
 **Stage**: Development, exploration, mastery
 **Theme**: [Core theme of this card]
 **Challenge**: [Key challenge represented]
 **Wisdom**: [Essential wisdom offered]
 
-### 4. [Next+2 Season] ([HEXAGRAM][season-bits]) - "[CARD NAME]" (Monster)
+### 3. [Next+1 Season] ([HEXAGRAM][season-bits]) - "[CARD NAME]" (Monster)
 **Stage**: Challenge, testing, transformation
+**Theme**: [Core theme of this card]
+**Challenge**: [Key challenge represented]
+**Wisdom**: [Essential wisdom offered]
+
+### 4. [Resonant Season] ([HEXAGRAM][season-bits]) - "[CARD NAME]" (Sage)
+**Stage**: Integration, transcendence, completion/rebirth
 **Theme**: [Core theme of this card]
 **Challenge**: [Key challenge represented]
 **Wisdom**: [Essential wisdom offered]
@@ -116,8 +136,7 @@ When generating descriptions for any card in this hexagram:
 
 ## Questions for Integration in Readings
 
-When multiple cards from this hexagram appear in a reading, consider:
-
+Example questions that should be adapted to be more specific to the tensions in the card at between stages:
 1. Where in the cycle of [evolutionary journey theme] does the querent find themselves?
 2. How might the tension between inner [inner world meaning] and outer [outer world meaning] be resolved through [resolution theme]?
 3. What completed cycle is now giving way to a new level of [evolution theme]?
