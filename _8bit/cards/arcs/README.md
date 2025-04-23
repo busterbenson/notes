@@ -8,17 +8,9 @@ All narrative arcs follow the archetypal progression of Fool → Hero → Monste
 
 ## Integration with Card Generation
 
-When using the new card generation tools, narrative arcs play an important role:
+Narrative arcs play an important role in the card generation workflow. 
 
-1. Generate cards for a hexagram:
-   ```bash
-   cd /Users/buster/projects/notes/_8bit/cards
-   ./generate-hexagram.sh 101010
-   ```
-
-2. Create or update the narrative arc file for the hexagram at `/hexagram/101010.md`
-
-3. Use the narrative arc to inform the details you add to each of the four generated card files, ensuring consistency across the seasonal variations.
+For complete instructions on creating narrative arcs and integrating them with the card generation process, please refer to the main [README.md](../README.md) in the parent directory.
 
 ## Purpose
 

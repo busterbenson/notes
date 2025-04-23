@@ -23,17 +23,9 @@ image_prompts/
 
 ## Integration with Card Generation
 
-These image prompts can be created from the image prompt sections in the generated card YAML files:
+These image prompts can be created from the image prompt sections in the generated card YAML files.
 
-1. Generate a card using the new card generation tools:
-   ```bash
-   cd /Users/buster/projects/notes/_8bit/cards
-   ./generate-card.sh 10101010
-   ```
-
-2. Fill in the card details in the generated YAML file, including the `prompt_for_image_gen` section.
-
-3. Extract the completed image prompt and save it as a separate file in this directory for reference and organization.
+For the complete card generation workflow, including creating image prompts, please refer to the main [README.md](../README.md) in the parent directory.
 
 ## Image Prompt Structure
 

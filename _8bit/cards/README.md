@@ -44,6 +44,38 @@ Each hexagram (first 6 bits) should have a narrative arc that provides consisten
 
 Example: `arcs/hexagram/101010.md` for all cards with binary pattern 101010xx.
 
+#### Prompt for Generating a Narrative Arc with Claude
+
+Use this template to ask Claude to generate a narrative arc for a hexagram:
+
+```
+Please create a narrative arc for the 8-Bit Oracle hexagram [XXXXXX].
+
+I need a comprehensive narrative arc document that will provide consistent storytelling across all four seasonal expressions of this hexagram.
+
+For context:
+- This hexagram corresponds to I Ching hexagram [#] [NAME] ([LABEL])
+- The Gene Key journey is from [SHADOW] through [GIFT] to [SIDDHI]
+- The inner trigram is [TRIGRAM NAME] and the outer trigram is [TRIGRAM NAME]
+- The primary quality of this hexagram is [DESCRIPTION]
+
+Please structure the narrative arc with these sections:
+1. Overview - A brief introduction to this hexagram's significance and energy
+2. Narrative Fable - A short story that embodies this hexagram's journey through the seasons
+3. Core Theme - The central narrative thread connecting all four seasonal expressions
+4. Evolutionary Journey - How this hexagram represents stages in consciousness development
+5. Visual Narrative Continuity - How visual elements should evolve across the four seasonal cards
+6. Character Development - How the central figure/entity transforms through the four archetypal expressions (Fool → Hero → Monster → Sage)
+7. Symbolic Continuity - Key symbols that should appear in all four cards but transform seasonally
+8. Narrative Arc Structure - Detailed breakdown of each seasonal card's storyline
+9. Integration Points - Connections to psychological or spiritual frameworks
+10. Questions for Integration - Reflective prompts for readings involving multiple cards in this hexagram
+
+Ensure the narrative shows dramatic transformation across seasons while maintaining thematic continuity.
+```
+
+Replace the bracketed information with details from the generated card file or associations files.
+
 ### 3. Fill in Card Details
 
 Edit the generated YAML file (`generated/<binary-code>.yml`) to replace placeholders with meaningful content:
@@ -75,6 +107,70 @@ Edit the generated YAML file (`generated/<binary-code>.yml`) to replace placehol
    - Fill in all six fractal levels from quantum to cosmic
 
 Refer to `card-example-00000000.yml` for a fully completed example.
+
+#### Prompt for Completing Card Details with Claude
+
+Use this template to ask Claude to complete the details for a specific card:
+
+```
+Please help me complete the 8-Bit Oracle card for binary code [XXXXXXXX].
+
+I have the generated template with all the basic associations, but I need help filling in the creative and interpretive elements to create a rich, cohesive card. I'll provide the key information from the generated file and the narrative arc for this hexagram.
+
+Key Information:
+- Binary: [XXXXXXXX]
+- Decimal: [DDD]
+- Archetype: [ARCHETYPE]
+- Gender: [GENDER]
+- Season: [SEASON]
+- Inner World: [INNER TRIGRAM] ([INNER COLOR])
+- Outer World: [OUTER TRIGRAM] ([OUTER COLOR])
+- Archetype Color: [COLOR]
+- Lunar Phase: [PHASE] - [HALF] ([CYCLE_NAME] of [SEASON])
+- I Ching Hexagram: [NUMBER] [NAME] ([LABEL])
+- Gene Key Journey: [SHADOW] → [GIFT] → [SIDDHI]
+
+Narrative Arc Context:
+[PASTE RELEVANT SECTIONS FROM THE HEXAGRAM'S NARRATIVE ARC]
+
+Please provide the following elements for this card:
+
+1. Basic Info:
+   - A rich, detailed description (150-200 words) of this card's core energy and meaning
+   - 6 evocative keywords that capture this card's essence
+   - 6 symbolic elements that would represent this card visually
+
+2. Interpreted Meanings:
+   - Card Name: An evocative name that captures this energy (consider subtle mythological references)
+   - Card Creature: A detailed description of a [GENDER] mythological figure that embodies this card's energy
+   - Question Posed: A profound, reflective question this card asks the querent
+   - Card Scene: A vivid, detailed description (200-250 words) of the card's imagery, incorporating:
+     * The [INNER COLOR] for foreground elements
+     * The [OUTER COLOR] for background elements
+     * [ARCHETYPE COLOR] highlights
+     * The lunar phase symbolism
+     * Seasonal elements appropriate for [SEASON]
+     * The archetypal energy of the [ARCHETYPE]
+   - Universal Symbol: The core symbolic element that captures this card's essence
+   - Mood: The emotional/energetic quality of this card
+
+3. Fractal Manifestations:
+   - For each level (quantum, biological, psychological, social, ecological, cosmic), provide:
+     * A specific pattern that manifests this card's energy at that scale
+     * An insight about reality this pattern reveals
+
+4. Image Generation Prompt:
+   - A complete, detailed prompt for generating this card's image, incorporating all the visual elements
+
+Make sure all elements align with:
+- The [ARCHETYPE] expression in [SEASON]
+- The [GENDER] energy
+- The combination of [INNER TRIGRAM] and [OUTER TRIGRAM]
+- The Journey from [SHADOW] through [GIFT] to [SIDDHI]
+- The narrative arc for this hexagram
+```
+
+Replace the bracketed information with details from the generated card file and the narrative arc document. Adjust the "Narrative Arc Context" section to include the most relevant portions of the narrative arc for this specific card's season and archetype.
 
 ### 4. Generate Card Image
 

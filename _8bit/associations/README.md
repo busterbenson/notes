@@ -34,17 +34,11 @@ Some associations will include a "bit_mask" attribute that will describe which b
 
 In some cases, ? will also be used to simply denote which bit(s) are relevant to the association, in the sense that the bit_mask for the inner_world is ???XXXXX, meaning that the first 3 bits are what determine the inner_world, and that those values can be 0s or 1s, but that the 4th through 8th bits are not relevant to determining the inner_world.
 
-## Generating Cards
+## Card Generation
 
-These association files are used by the card generation scripts in the `/cards/` directory. To generate cards:
+These association files are used by the card generation scripts in the `/cards/` directory.
 
-```bash
-cd /Users/buster/projects/notes/_8bit/cards
-./generate-card.sh <binary_code>      # Generate a single card
-./generate-hexagram.sh <6-bit_code>   # Generate all four seasonal cards for a hexagram
-```
-
-See the `/cards/README.md` file for more details on the card generation process.
+For complete instructions on the card generation process, please refer to the [README.md](/cards/README.md) in the cards directory.
 
 ## Related Resources
 

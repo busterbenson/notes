@@ -34,24 +34,15 @@ A divination system based on 8-bit binary patterns, combining elements of tarot,
 
 ## Card Generation Workflow
 
-1. **Generate a card template**:
-   ```bash
-   cd /cards
-   ./generate-card.sh 10101010  # Generate a single card
-   ./generate-hexagram.sh 101010  # Generate all four cards for a hexagram
-   ```
+For the complete, detailed workflow on generating cards, creating narrative arcs, and filling in card details, please refer to the [README.md](/cards/README.md) in the cards directory.
 
-2. **Create or update narrative arc**:
-   - Create or edit a narrative arc file in `/cards/arcs/hexagram/<6-bit-code>.md`
-
-3. **Fill in card details**:
-   - Edit the generated YAML file in `/cards/generated/`
-   - Add keywords, symbols, and detailed descriptions
-   - Complete the image prompt section
-
-4. **Generate card image**:
-   - Use the completed image prompt with an image generation service
-   - Save the resulting image to `/card_images/`
+The comprehensive guide includes:
+- Generating card templates with the correct associations
+- Creating narrative arcs for hexagrams
+- Filling in creative card details
+- Generating card images
+- Validating card associations
+- Example prompts for working with AI assistants like Claude
 
 ## Binary Pattern Structure
 
