@@ -44,9 +44,9 @@ card:
       decimal_modulo: 85 % 8 = 2, 85 % 2 = 1
       phase: First Quarter
       phase_half: Balancing
-      cycle_number: '4'
-      cycle_name: Transition Cycle
-      complete_designation: First Quarter (Late), Transition Cycle of Spring
+      cycle_number: '2'
+      cycle_name: Development Cycle
+      complete_designation: First Quarter (Late), Development Cycle of Spring
     tarot:
       card: '[Card for 101010]'
       cycle_suit: Wands

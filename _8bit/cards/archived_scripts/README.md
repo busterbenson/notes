@@ -2,35 +2,33 @@
 
 This directory contains scripts that are no longer used in the current 8-Bit Oracle card generation workflow but are preserved for reference.
 
-## Scripts
+## Scripts from Previous Workflow
 
-### card-generator.py
-- **Purpose**: Generated YAML files for cards in the v3/ directory
-- **Reason for archiving**: The workflow now uses markdown files directly in the completed/ directory instead of YAML files
-- **Replacement**: `create-description.py` and `create-enhanced-card.py` together generate markdown files directly
+### Scripts That Referenced the Compiled Directory
+These scripts were used in the previous workflow that relied on the compiled/ directory, which has been replaced by the new generate-card.py system:
 
-### convert_yaml_to_md.py
-- **Purpose**: Migration utility to convert YAML files from v3/ to markdown files in completed/
-- **Reason for archiving**: One-time migration is complete, no longer needed for ongoing work
-- **Replacement**: Not needed; all new cards are generated directly as markdown
+- **association-generator.py** - Generated association data files in the compiled/ directory
+- **generate-all-associations.py** - Generated all association files for all hexagrams
+- **audit_resonant_seasons.py** - Audited resonant season calculations in compiled cards
+- **fix_compiled_cards.py** - Fixed issues in compiled card files
+- **enhance_compiled_cards.py** - Enhanced compiled card files with additional data
+- **ensure_decimal_lr.py** - Ensured decimal values used left-to-right bit priority
+- **normalize_lr_decimal.py** - Normalized decimal values to use left-to-right bit priority
 
-### generate-card-description.py
-- **Purpose**: An earlier version of card description generation
-- **Reason for archiving**: Appears to be superseded by `create-description.py`
-- **Replacement**: `create-description.py` provides this functionality
+### Card Description Generation Scripts
+These scripts were related to generating card descriptions, now replaced by the more comprehensive generation process:
 
-### create-description.py
-- **Purpose**: Creates a structured card description in markdown format
-- **Reason for archiving**: Functionality now integrated into `generate-card.py`
-- **Replacement**: `generate-card.py` and `generate-card.sh` provide this functionality in a more comprehensive way
+- **create-description.py** - Created structured card descriptions in markdown format
+- **create-enhanced-card.py** - Enhanced markdown cards with system data and image prompts
+- **generate-card-description.py** - An earlier version of card description generation
 
 ## Current Workflow
 
-The current workflow uses these primary scripts:
+The current workflow uses these primary scripts (in the parent directory):
 
-1. `generate-card.py` - Creates complete card YAML files with all sections from the template
-2. `generate-card.sh` - Shell wrapper for the Python script with validation and instructions
-3. `generate-hexagram.sh` - Generates all four seasonal cards for a hexagram at once
+1. **generate-card.py** - Creates complete card YAML files with all sections from the template
+2. **generate-card.sh** - Shell wrapper for the Python script with validation and instructions
+3. **generate-hexagram.sh** - Generates all four seasonal cards for a hexagram at once
+4. **generate-all-cards.py** - Generates all 256 possible 8-bit Oracle cards
 
 All card data is now stored in YAML format in the generated/ directory, ready to be filled with meaningful content.
-EOL < /dev/null

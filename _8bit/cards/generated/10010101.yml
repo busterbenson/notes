@@ -1,0 +1,142 @@
+card:
+  version: '1.0'
+  binary: '10010101'
+  decimal: '169'
+  hexadecimal: '95'
+  basic_info:
+    desc: '[A paragraph describing the card''s core energy and meaning - focus on
+      the combination of hexagram energy with the Fall/Sage expression. Include how
+      the bit pattern reflects resources present/absent and how this connects to the
+      card''s overall meaning.]'
+    keywords:
+    - '[keyword 1]'
+    - '[keyword 2]'
+    - '[keyword 3]'
+    - '[keyword 4]'
+    - '[keyword 5]'
+    - '[keyword 6]'
+    symbols:
+    - '[symbol 1]'
+    - '[symbol 2]'
+    - '[symbol 3]'
+    - '[symbol 4]'
+    - '[symbol 5]'
+    - '[symbol 6]'
+  direct_associations:
+    archetype: Sage
+    archetype_color: Iridescent
+    gender: masculine
+    inner_world:
+      color: Red
+      trigram: Thunder
+      meaning: Strong intuition but lacking practical skills and resources; knows
+        what feels right but can't manifest it
+    outer_world:
+      color: Magenta
+      trigram: Fire
+      meaning: Alignment with expectations and clear options, but lacking support;
+        clear authorized path without assistance
+    solar_cycle:
+      season: Fall
+      tarot_suit: Pentacles
+      element: Earth
+    lunar_cycle:
+      decimal_modulo: 169 % 8 = 4, 169 % 2 = 1
+      phase: Full Moon
+      phase_half: Revealing
+      cycle_number: '3'
+      cycle_name: Culmination Cycle
+      complete_designation: Full Moon (Late), Culmination Cycle of Fall
+    tarot:
+      card: '[Card for 100101]'
+      cycle_suit: Pentacles
+      seasonal_expression: '[Description of how this hexagram energy expresses in
+        this season]'
+    hexagram:
+      i_ching:
+        number: 21
+        name: Shi He
+        label: Biting Through
+        description: Breaking through obstacles, enforcing justice, decisive action
+      gene_key:
+        number: 21
+        shadow: Control
+        gift: Authority
+        siddhi: Valor
+        meaning: A journey from domination and manipulation to natural leadership
+          and ultimately selfless courage in the face of challenges
+  interpreted_meanings:
+    basic:
+      name_6bit: '[Name based on hexagram 100101]'
+      name_8bit: '[Name incorporating Fall]'
+      gender: masculine
+    oracle_card:
+      card_name: '[Evocative name for card 10010101]'
+      card_creature: '[Description of the mythological figure or character that embodies
+        this card''s energy, with masculine terms]'
+      question_posed: '[Question this card asks the querent - should prompt reflection
+        about the core themes]'
+      card_scene: '[Detailed description of the card''s imagery, incorporating all
+        symbolic elements, colors, and archetype]'
+      universal_symbol: '[Core symbol that captures the essence of this card]'
+      mood: '[Emotional/energetic quality of the card]'
+      prompt_for_image_gen: 'Limited color risograph-style illustration of [short
+        scene description].
+
+        Use Red for foreground elements (inner world) and Magenta for background/environment
+        (outer world), with Iridescent highlights.
+
+        Maintain risograph/woodblock print texture with strong contrast, 3-4 colors
+        max, and minimalistic geometric forms.
+
+        Include a clean, full-width title bar at the bottom, centered, with a card
+        title ''[CARD TITLE]'' in bold and a more subtle subtitle below that with
+        the 8-bit code ''10010101'', without corner decorations or symbols.
+
+        Feature [card_creature in the card_scene, key symbolic elements, e.g., moon
+        phase, animal companions, symbolic object].
+
+        The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle
+        seasonal/elemental references appropriate for Fall.
+
+        Style should blend Rider-Waite simplicity with modern symbolic abstraction,
+        emotionally resonant but compositionally clean.'
+  related_cards:
+    same_card_winter: '10010100'
+    same_card_spring: '10010110'
+    same_card_summer: '10010111'
+    same_card_fall: '10010101'
+    opposite: '01101010'
+    thematic_pair: '[Related binary]'
+    full_cycle:
+    - '10010100'
+    - '10010110'
+    - '10010111'
+    - '10010101'
+  bit_values:
+    bit1: '1'
+    bit2: '0'
+    bit3: '0'
+    bit4: '1'
+    bit5: '0'
+    bit6: '1'
+    bit78: '01'
+  fractal_meanings:
+    quantum:
+      pattern: '[How this card''s energy pattern manifests at quantum level]'
+      insight: '[The wisdom this reveals about reality''s fundamental nature]'
+    biological:
+      pattern: '[How this card''s energy pattern appears in living systems]'
+      insight: '[The wisdom this reveals about life and evolution]'
+    psychological:
+      pattern: '[How this card''s energy pattern manifests in human mind]'
+      insight: '[The wisdom this reveals about consciousness and thought]'
+    social:
+      pattern: '[How this card''s energy pattern appears in communities]'
+      insight: '[The wisdom this reveals about human connection]'
+    ecological:
+      pattern: '[How this card''s energy pattern manifests in ecosystems]'
+      insight: '[The wisdom this reveals about natural systems]'
+    cosmic:
+      pattern: '[How this card''s energy pattern appears at universal scale]'
+      insight: '[The wisdom this reveals about the nature of existence]'

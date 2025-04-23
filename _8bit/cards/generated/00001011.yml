@@ -1,0 +1,142 @@
+card:
+  version: '1.0'
+  binary: '00001011'
+  decimal: '208'
+  hexadecimal: 0b
+  basic_info:
+    desc: '[A paragraph describing the card''s core energy and meaning - focus on
+      the combination of hexagram energy with the Summer/Hero expression. Include
+      how the bit pattern reflects resources present/absent and how this connects
+      to the card''s overall meaning.]'
+    keywords:
+    - '[keyword 1]'
+    - '[keyword 2]'
+    - '[keyword 3]'
+    - '[keyword 4]'
+    - '[keyword 5]'
+    - '[keyword 6]'
+    symbols:
+    - '[symbol 1]'
+    - '[symbol 2]'
+    - '[symbol 3]'
+    - '[symbol 4]'
+    - '[symbol 5]'
+    - '[symbol 6]'
+  direct_associations:
+    archetype: Hero
+    archetype_color: Gold
+    gender: masculine
+    inner_world:
+      color: Black
+      trigram: Earth
+      meaning: Complete absence of inner resources; intuition, ability, and capacity
+        are all absent
+    outer_world:
+      color: Green
+      trigram: Water
+      meaning: Support present, but lacking alignment with expectations and clear
+        options
+    solar_cycle:
+      season: Summer
+      tarot_suit: Cups
+      element: Water
+    lunar_cycle:
+      decimal_modulo: 208 % 8 = 0, 208 % 2 = 0
+      phase: Dark Moon
+      phase_half: Deepening
+      cycle_number: '2'
+      cycle_name: Development Cycle
+      complete_designation: Dark Moon (Early), Development Cycle of Summer
+    tarot:
+      card: '[Card for 000010]'
+      cycle_suit: Cups
+      seasonal_expression: '[Description of how this hexagram energy expresses in
+        this season]'
+    hexagram:
+      i_ching:
+        number: 8
+        name: Bi
+        label: Holding Together
+        description: Union, alliance, solidarity, working together
+      gene_key:
+        number: 8
+        shadow: Mediocrity
+        gift: Style
+        siddhi: Exquisiteness
+        meaning: A journey from average and unremarkable to distinctive style and
+          ultimately the exquisite expression of your unique essence
+  interpreted_meanings:
+    basic:
+      name_6bit: '[Name based on hexagram 000010]'
+      name_8bit: '[Name incorporating Summer]'
+      gender: masculine
+    oracle_card:
+      card_name: '[Evocative name for card 00001011]'
+      card_creature: '[Description of the mythological figure or character that embodies
+        this card''s energy, with masculine terms]'
+      question_posed: '[Question this card asks the querent - should prompt reflection
+        about the core themes]'
+      card_scene: '[Detailed description of the card''s imagery, incorporating all
+        symbolic elements, colors, and archetype]'
+      universal_symbol: '[Core symbol that captures the essence of this card]'
+      mood: '[Emotional/energetic quality of the card]'
+      prompt_for_image_gen: 'Limited color risograph-style illustration of [short
+        scene description].
+
+        Use Black for foreground elements (inner world) and Green for background/environment
+        (outer world), with Gold highlights.
+
+        Maintain risograph/woodblock print texture with strong contrast, 3-4 colors
+        max, and minimalistic geometric forms.
+
+        Include a clean, full-width title bar at the bottom, centered, with a card
+        title ''[CARD TITLE]'' in bold and a more subtle subtitle below that with
+        the 8-bit code ''00001011'', without corner decorations or symbols.
+
+        Feature [card_creature in the card_scene, key symbolic elements, e.g., moon
+        phase, animal companions, symbolic object].
+
+        The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle
+        seasonal/elemental references appropriate for Summer.
+
+        Style should blend Rider-Waite simplicity with modern symbolic abstraction,
+        emotionally resonant but compositionally clean.'
+  related_cards:
+    same_card_winter: '00001000'
+    same_card_spring: '00001010'
+    same_card_summer: '00001011'
+    same_card_fall: '00001001'
+    opposite: '11110100'
+    thematic_pair: '[Related binary]'
+    full_cycle:
+    - '00001000'
+    - '00001010'
+    - '00001011'
+    - '00001001'
+  bit_values:
+    bit1: '0'
+    bit2: '0'
+    bit3: '0'
+    bit4: '0'
+    bit5: '1'
+    bit6: '0'
+    bit78: '11'
+  fractal_meanings:
+    quantum:
+      pattern: '[How this card''s energy pattern manifests at quantum level]'
+      insight: '[The wisdom this reveals about reality''s fundamental nature]'
+    biological:
+      pattern: '[How this card''s energy pattern appears in living systems]'
+      insight: '[The wisdom this reveals about life and evolution]'
+    psychological:
+      pattern: '[How this card''s energy pattern manifests in human mind]'
+      insight: '[The wisdom this reveals about consciousness and thought]'
+    social:
+      pattern: '[How this card''s energy pattern appears in communities]'
+      insight: '[The wisdom this reveals about human connection]'
+    ecological:
+      pattern: '[How this card''s energy pattern manifests in ecosystems]'
+      insight: '[The wisdom this reveals about natural systems]'
+    cosmic:
+      pattern: '[How this card''s energy pattern appears at universal scale]'
+      insight: '[The wisdom this reveals about the nature of existence]'

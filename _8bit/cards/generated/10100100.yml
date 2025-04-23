@@ -1,0 +1,142 @@
+card:
+  version: '1.0'
+  binary: '10100100'
+  decimal: '37'
+  hexadecimal: a4
+  basic_info:
+    desc: '[A paragraph describing the card''s core energy and meaning - focus on
+      the combination of hexagram energy with the Winter/Monster expression. Include
+      how the bit pattern reflects resources present/absent and how this connects
+      to the card''s overall meaning.]'
+    keywords:
+    - '[keyword 1]'
+    - '[keyword 2]'
+    - '[keyword 3]'
+    - '[keyword 4]'
+    - '[keyword 5]'
+    - '[keyword 6]'
+    symbols:
+    - '[symbol 1]'
+    - '[symbol 2]'
+    - '[symbol 3]'
+    - '[symbol 4]'
+    - '[symbol 5]'
+    - '[symbol 6]'
+  direct_associations:
+    archetype: Monster
+    archetype_color: Purple
+    gender: feminine
+    inner_world:
+      color: Magenta
+      trigram: Fire
+      meaning: Intuitive and resourceful but lacking practical skills; has the vision
+        and space but needs help executing
+    outer_world:
+      color: Blue
+      trigram: Mountain
+      meaning: Clear options present, but lacking alignment with expectations and
+        support
+    solar_cycle:
+      season: Winter
+      tarot_suit: Swords
+      element: Air
+    lunar_cycle:
+      decimal_modulo: 37 % 8 = 2, 37 % 2 = 1
+      phase: First Quarter
+      phase_half: Balancing
+      cycle_number: '3'
+      cycle_name: Culmination Cycle
+      complete_designation: First Quarter (Late), Culmination Cycle of Winter
+    tarot:
+      card: '[Card for 101001]'
+      cycle_suit: Swords
+      seasonal_expression: '[Description of how this hexagram energy expresses in
+        this season]'
+    hexagram:
+      i_ching:
+        number: 22
+        name: Bi
+        label: Grace
+        description: Elegance, refinement, adornment, aesthetic beauty
+      gene_key:
+        number: 22
+        shadow: Dishonor
+        gift: Grace
+        siddhi: Graciousness
+        meaning: A journey from shame and disgrace to elegance and beauty and ultimately
+          divine courtesy and respect for all life
+  interpreted_meanings:
+    basic:
+      name_6bit: '[Name based on hexagram 101001]'
+      name_8bit: '[Name incorporating Winter]'
+      gender: feminine
+    oracle_card:
+      card_name: '[Evocative name for card 10100100]'
+      card_creature: '[Description of the mythological figure or character that embodies
+        this card''s energy, with feminine terms]'
+      question_posed: '[Question this card asks the querent - should prompt reflection
+        about the core themes]'
+      card_scene: '[Detailed description of the card''s imagery, incorporating all
+        symbolic elements, colors, and archetype]'
+      universal_symbol: '[Core symbol that captures the essence of this card]'
+      mood: '[Emotional/energetic quality of the card]'
+      prompt_for_image_gen: 'Limited color risograph-style illustration of [short
+        scene description].
+
+        Use Magenta for foreground elements (inner world) and Blue for background/environment
+        (outer world), with Purple highlights.
+
+        Maintain risograph/woodblock print texture with strong contrast, 3-4 colors
+        max, and minimalistic geometric forms.
+
+        Include a clean, full-width title bar at the bottom, centered, with a card
+        title ''[CARD TITLE]'' in bold and a more subtle subtitle below that with
+        the 8-bit code ''10100100'', without corner decorations or symbols.
+
+        Feature [card_creature in the card_scene, key symbolic elements, e.g., moon
+        phase, animal companions, symbolic object].
+
+        The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle
+        seasonal/elemental references appropriate for Winter.
+
+        Style should blend Rider-Waite simplicity with modern symbolic abstraction,
+        emotionally resonant but compositionally clean.'
+  related_cards:
+    same_card_winter: '10100100'
+    same_card_spring: '10100110'
+    same_card_summer: '10100111'
+    same_card_fall: '10100101'
+    opposite: '01011011'
+    thematic_pair: '[Related binary]'
+    full_cycle:
+    - '10100100'
+    - '10100110'
+    - '10100111'
+    - '10100101'
+  bit_values:
+    bit1: '1'
+    bit2: '0'
+    bit3: '1'
+    bit4: '0'
+    bit5: '0'
+    bit6: '1'
+    bit78: '00'
+  fractal_meanings:
+    quantum:
+      pattern: '[How this card''s energy pattern manifests at quantum level]'
+      insight: '[The wisdom this reveals about reality''s fundamental nature]'
+    biological:
+      pattern: '[How this card''s energy pattern appears in living systems]'
+      insight: '[The wisdom this reveals about life and evolution]'
+    psychological:
+      pattern: '[How this card''s energy pattern manifests in human mind]'
+      insight: '[The wisdom this reveals about consciousness and thought]'
+    social:
+      pattern: '[How this card''s energy pattern appears in communities]'
+      insight: '[The wisdom this reveals about human connection]'
+    ecological:
+      pattern: '[How this card''s energy pattern manifests in ecosystems]'
+      insight: '[The wisdom this reveals about natural systems]'
+    cosmic:
+      pattern: '[How this card''s energy pattern appears at universal scale]'
+      insight: '[The wisdom this reveals about the nature of existence]'

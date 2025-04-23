@@ -1,0 +1,142 @@
+card:
+  version: '1.0'
+  binary: '11000101'
+  decimal: '163'
+  hexadecimal: c5
+  basic_info:
+    desc: '[A paragraph describing the card''s core energy and meaning - focus on
+      the combination of hexagram energy with the Fall/Hero expression. Include how
+      the bit pattern reflects resources present/absent and how this connects to the
+      card''s overall meaning.]'
+    keywords:
+    - '[keyword 1]'
+    - '[keyword 2]'
+    - '[keyword 3]'
+    - '[keyword 4]'
+    - '[keyword 5]'
+    - '[keyword 6]'
+    symbols:
+    - '[symbol 1]'
+    - '[symbol 2]'
+    - '[symbol 3]'
+    - '[symbol 4]'
+    - '[symbol 5]'
+    - '[symbol 6]'
+  direct_associations:
+    archetype: Hero
+    archetype_color: Gold
+    gender: feminine
+    inner_world:
+      color: Yellow
+      trigram: Lake
+      meaning: Intuitive and skilled but lacking resources; creative capacity limited
+        by external constraints
+    outer_world:
+      color: Blue
+      trigram: Mountain
+      meaning: Clear options present, but lacking alignment with expectations and
+        support
+    solar_cycle:
+      season: Fall
+      tarot_suit: Pentacles
+      element: Earth
+    lunar_cycle:
+      decimal_modulo: 163 % 8 = 1, 163 % 2 = 1
+      phase: New Moon
+      phase_half: Strengthening
+      cycle_number: '3'
+      cycle_name: Culmination Cycle
+      complete_designation: New Moon (Late), Culmination Cycle of Fall
+    tarot:
+      card: '[Card for 110001]'
+      cycle_suit: Pentacles
+      seasonal_expression: '[Description of how this hexagram energy expresses in
+        this season]'
+    hexagram:
+      i_ching:
+        number: 41
+        name: Sun
+        label: Decrease
+        description: Reduction, simplification, lessening, diminishing
+      gene_key:
+        number: 41
+        shadow: Fantasy
+        gift: Anticipation
+        siddhi: Emanation
+        meaning: A journey from unrealistic imagination to positive expectation and
+          ultimately becoming a pure channel for divine expression
+  interpreted_meanings:
+    basic:
+      name_6bit: '[Name based on hexagram 110001]'
+      name_8bit: '[Name incorporating Fall]'
+      gender: feminine
+    oracle_card:
+      card_name: '[Evocative name for card 11000101]'
+      card_creature: '[Description of the mythological figure or character that embodies
+        this card''s energy, with feminine terms]'
+      question_posed: '[Question this card asks the querent - should prompt reflection
+        about the core themes]'
+      card_scene: '[Detailed description of the card''s imagery, incorporating all
+        symbolic elements, colors, and archetype]'
+      universal_symbol: '[Core symbol that captures the essence of this card]'
+      mood: '[Emotional/energetic quality of the card]'
+      prompt_for_image_gen: 'Limited color risograph-style illustration of [short
+        scene description].
+
+        Use Yellow for foreground elements (inner world) and Blue for background/environment
+        (outer world), with Gold highlights.
+
+        Maintain risograph/woodblock print texture with strong contrast, 3-4 colors
+        max, and minimalistic geometric forms.
+
+        Include a clean, full-width title bar at the bottom, centered, with a card
+        title ''[CARD TITLE]'' in bold and a more subtle subtitle below that with
+        the 8-bit code ''11000101'', without corner decorations or symbols.
+
+        Feature [card_creature in the card_scene, key symbolic elements, e.g., moon
+        phase, animal companions, symbolic object].
+
+        The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle
+        seasonal/elemental references appropriate for Fall.
+
+        Style should blend Rider-Waite simplicity with modern symbolic abstraction,
+        emotionally resonant but compositionally clean.'
+  related_cards:
+    same_card_winter: '11000100'
+    same_card_spring: '11000110'
+    same_card_summer: '11000111'
+    same_card_fall: '11000101'
+    opposite: '00111010'
+    thematic_pair: '[Related binary]'
+    full_cycle:
+    - '11000100'
+    - '11000110'
+    - '11000111'
+    - '11000101'
+  bit_values:
+    bit1: '1'
+    bit2: '1'
+    bit3: '0'
+    bit4: '0'
+    bit5: '0'
+    bit6: '1'
+    bit78: '01'
+  fractal_meanings:
+    quantum:
+      pattern: '[How this card''s energy pattern manifests at quantum level]'
+      insight: '[The wisdom this reveals about reality''s fundamental nature]'
+    biological:
+      pattern: '[How this card''s energy pattern appears in living systems]'
+      insight: '[The wisdom this reveals about life and evolution]'
+    psychological:
+      pattern: '[How this card''s energy pattern manifests in human mind]'
+      insight: '[The wisdom this reveals about consciousness and thought]'
+    social:
+      pattern: '[How this card''s energy pattern appears in communities]'
+      insight: '[The wisdom this reveals about human connection]'
+    ecological:
+      pattern: '[How this card''s energy pattern manifests in ecosystems]'
+      insight: '[The wisdom this reveals about natural systems]'
+    cosmic:
+      pattern: '[How this card''s energy pattern appears at universal scale]'
+      insight: '[The wisdom this reveals about the nature of existence]'

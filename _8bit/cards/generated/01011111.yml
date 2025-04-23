@@ -1,0 +1,142 @@
+card:
+  version: '1.0'
+  binary: '01011111'
+  decimal: '250'
+  hexadecimal: 5f
+  basic_info:
+    desc: '[A paragraph describing the card''s core energy and meaning - focus on
+      the combination of hexagram energy with the Summer/Monster expression. Include
+      how the bit pattern reflects resources present/absent and how this connects
+      to the card''s overall meaning.]'
+    keywords:
+    - '[keyword 1]'
+    - '[keyword 2]'
+    - '[keyword 3]'
+    - '[keyword 4]'
+    - '[keyword 5]'
+    - '[keyword 6]'
+    symbols:
+    - '[symbol 1]'
+    - '[symbol 2]'
+    - '[symbol 3]'
+    - '[symbol 4]'
+    - '[symbol 5]'
+    - '[symbol 6]'
+  direct_associations:
+    archetype: Monster
+    archetype_color: Purple
+    gender: masculine
+    inner_world:
+      color: Green
+      trigram: Water
+      meaning: Technical ability present but lacking intuition and capacity; skilled
+        execution without direction or resources
+    outer_world:
+      color: White
+      trigram: Heaven
+      meaning: Complete presence of outer resources; aligned with expectations, supported
+        by others, with clear options
+    solar_cycle:
+      season: Summer
+      tarot_suit: Cups
+      element: Water
+    lunar_cycle:
+      decimal_modulo: 250 % 8 = 5, 250 % 2 = 0
+      phase: Waning Gibbous
+      phase_half: Sharing
+      cycle_number: '4'
+      cycle_name: Transition Cycle
+      complete_designation: Waning Gibbous (Early), Transition Cycle of Summer
+    tarot:
+      card: '[Card for 010111]'
+      cycle_suit: Cups
+      seasonal_expression: '[Description of how this hexagram energy expresses in
+        this season]'
+    hexagram:
+      i_ching:
+        number: 6
+        name: Song
+        label: Conflict
+        description: Dispute, contention, argument, controversy
+      gene_key:
+        number: 6
+        shadow: Conflict
+        gift: Diplomacy
+        siddhi: Peace
+        meaning: A journey from friction and antagonism to skillful mediation and
+          ultimately profound harmony and peace
+  interpreted_meanings:
+    basic:
+      name_6bit: '[Name based on hexagram 010111]'
+      name_8bit: '[Name incorporating Summer]'
+      gender: masculine
+    oracle_card:
+      card_name: '[Evocative name for card 01011111]'
+      card_creature: '[Description of the mythological figure or character that embodies
+        this card''s energy, with masculine terms]'
+      question_posed: '[Question this card asks the querent - should prompt reflection
+        about the core themes]'
+      card_scene: '[Detailed description of the card''s imagery, incorporating all
+        symbolic elements, colors, and archetype]'
+      universal_symbol: '[Core symbol that captures the essence of this card]'
+      mood: '[Emotional/energetic quality of the card]'
+      prompt_for_image_gen: 'Limited color risograph-style illustration of [short
+        scene description].
+
+        Use Green for foreground elements (inner world) and White for background/environment
+        (outer world), with Purple highlights.
+
+        Maintain risograph/woodblock print texture with strong contrast, 3-4 colors
+        max, and minimalistic geometric forms.
+
+        Include a clean, full-width title bar at the bottom, centered, with a card
+        title ''[CARD TITLE]'' in bold and a more subtle subtitle below that with
+        the 8-bit code ''01011111'', without corner decorations or symbols.
+
+        Feature [card_creature in the card_scene, key symbolic elements, e.g., moon
+        phase, animal companions, symbolic object].
+
+        The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle
+        seasonal/elemental references appropriate for Summer.
+
+        Style should blend Rider-Waite simplicity with modern symbolic abstraction,
+        emotionally resonant but compositionally clean.'
+  related_cards:
+    same_card_winter: '01011100'
+    same_card_spring: '01011110'
+    same_card_summer: '01011111'
+    same_card_fall: '01011101'
+    opposite: '10100000'
+    thematic_pair: '[Related binary]'
+    full_cycle:
+    - '01011100'
+    - '01011110'
+    - '01011111'
+    - '01011101'
+  bit_values:
+    bit1: '0'
+    bit2: '1'
+    bit3: '0'
+    bit4: '1'
+    bit5: '1'
+    bit6: '1'
+    bit78: '11'
+  fractal_meanings:
+    quantum:
+      pattern: '[How this card''s energy pattern manifests at quantum level]'
+      insight: '[The wisdom this reveals about reality''s fundamental nature]'
+    biological:
+      pattern: '[How this card''s energy pattern appears in living systems]'
+      insight: '[The wisdom this reveals about life and evolution]'
+    psychological:
+      pattern: '[How this card''s energy pattern manifests in human mind]'
+      insight: '[The wisdom this reveals about consciousness and thought]'
+    social:
+      pattern: '[How this card''s energy pattern appears in communities]'
+      insight: '[The wisdom this reveals about human connection]'
+    ecological:
+      pattern: '[How this card''s energy pattern manifests in ecosystems]'
+      insight: '[The wisdom this reveals about natural systems]'
+    cosmic:
+      pattern: '[How this card''s energy pattern appears at universal scale]'
+      insight: '[The wisdom this reveals about the nature of existence]'

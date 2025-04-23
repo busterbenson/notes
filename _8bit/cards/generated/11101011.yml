@@ -1,0 +1,142 @@
+card:
+  version: '1.0'
+  binary: '11101011'
+  decimal: '215'
+  hexadecimal: eb
+  basic_info:
+    desc: '[A paragraph describing the card''s core energy and meaning - focus on
+      the combination of hexagram energy with the Summer/Fool expression. Include
+      how the bit pattern reflects resources present/absent and how this connects
+      to the card''s overall meaning.]'
+    keywords:
+    - '[keyword 1]'
+    - '[keyword 2]'
+    - '[keyword 3]'
+    - '[keyword 4]'
+    - '[keyword 5]'
+    - '[keyword 6]'
+    symbols:
+    - '[symbol 1]'
+    - '[symbol 2]'
+    - '[symbol 3]'
+    - '[symbol 4]'
+    - '[symbol 5]'
+    - '[symbol 6]'
+  direct_associations:
+    archetype: Fool
+    archetype_color: Turquoise
+    gender: feminine
+    inner_world:
+      color: White
+      trigram: Heaven
+      meaning: Complete presence of inner resources; self-sufficient, confident, and
+        fully equipped
+    outer_world:
+      color: Green
+      trigram: Water
+      meaning: Support present, but lacking alignment with expectations and clear
+        options
+    solar_cycle:
+      season: Summer
+      tarot_suit: Cups
+      element: Water
+    lunar_cycle:
+      decimal_modulo: 215 % 8 = 3, 215 % 2 = 1
+      phase: Waxing Gibbous
+      phase_half: Culminating
+      cycle_number: '2'
+      cycle_name: Development Cycle
+      complete_designation: Waxing Gibbous (Late), Development Cycle of Summer
+    tarot:
+      card: '[Card for 111010]'
+      cycle_suit: Cups
+      seasonal_expression: '[Description of how this hexagram energy expresses in
+        this season]'
+    hexagram:
+      i_ching:
+        number: 5
+        name: Xu
+        label: Waiting
+        description: Patience, anticipation, nourishment, timing
+      gene_key:
+        number: 5
+        shadow: Impatience
+        gift: Patience
+        siddhi: Timelessness
+        meaning: A journey from restless urgency to calm waiting and ultimately freedom
+          from the constraints of time
+  interpreted_meanings:
+    basic:
+      name_6bit: '[Name based on hexagram 111010]'
+      name_8bit: '[Name incorporating Summer]'
+      gender: feminine
+    oracle_card:
+      card_name: '[Evocative name for card 11101011]'
+      card_creature: '[Description of the mythological figure or character that embodies
+        this card''s energy, with feminine terms]'
+      question_posed: '[Question this card asks the querent - should prompt reflection
+        about the core themes]'
+      card_scene: '[Detailed description of the card''s imagery, incorporating all
+        symbolic elements, colors, and archetype]'
+      universal_symbol: '[Core symbol that captures the essence of this card]'
+      mood: '[Emotional/energetic quality of the card]'
+      prompt_for_image_gen: 'Limited color risograph-style illustration of [short
+        scene description].
+
+        Use White for foreground elements (inner world) and Green for background/environment
+        (outer world), with Turquoise highlights.
+
+        Maintain risograph/woodblock print texture with strong contrast, 3-4 colors
+        max, and minimalistic geometric forms.
+
+        Include a clean, full-width title bar at the bottom, centered, with a card
+        title ''[CARD TITLE]'' in bold and a more subtle subtitle below that with
+        the 8-bit code ''11101011'', without corner decorations or symbols.
+
+        Feature [card_creature in the card_scene, key symbolic elements, e.g., moon
+        phase, animal companions, symbolic object].
+
+        The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle
+        seasonal/elemental references appropriate for Summer.
+
+        Style should blend Rider-Waite simplicity with modern symbolic abstraction,
+        emotionally resonant but compositionally clean.'
+  related_cards:
+    same_card_winter: '11101000'
+    same_card_spring: '11101010'
+    same_card_summer: '11101011'
+    same_card_fall: '11101001'
+    opposite: '00010100'
+    thematic_pair: '[Related binary]'
+    full_cycle:
+    - '11101000'
+    - '11101010'
+    - '11101011'
+    - '11101001'
+  bit_values:
+    bit1: '1'
+    bit2: '1'
+    bit3: '1'
+    bit4: '0'
+    bit5: '1'
+    bit6: '0'
+    bit78: '11'
+  fractal_meanings:
+    quantum:
+      pattern: '[How this card''s energy pattern manifests at quantum level]'
+      insight: '[The wisdom this reveals about reality''s fundamental nature]'
+    biological:
+      pattern: '[How this card''s energy pattern appears in living systems]'
+      insight: '[The wisdom this reveals about life and evolution]'
+    psychological:
+      pattern: '[How this card''s energy pattern manifests in human mind]'
+      insight: '[The wisdom this reveals about consciousness and thought]'
+    social:
+      pattern: '[How this card''s energy pattern appears in communities]'
+      insight: '[The wisdom this reveals about human connection]'
+    ecological:
+      pattern: '[How this card''s energy pattern manifests in ecosystems]'
+      insight: '[The wisdom this reveals about natural systems]'
+    cosmic:
+      pattern: '[How this card''s energy pattern appears at universal scale]'
+      insight: '[The wisdom this reveals about the nature of existence]'

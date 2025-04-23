@@ -1,0 +1,142 @@
+card:
+  version: '1.0'
+  binary: '00011000'
+  decimal: '24'
+  hexadecimal: '18'
+  basic_info:
+    desc: '[A paragraph describing the card''s core energy and meaning - focus on
+      the combination of hexagram energy with the Winter/Fool expression. Include
+      how the bit pattern reflects resources present/absent and how this connects
+      to the card''s overall meaning.]'
+    keywords:
+    - '[keyword 1]'
+    - '[keyword 2]'
+    - '[keyword 3]'
+    - '[keyword 4]'
+    - '[keyword 5]'
+    - '[keyword 6]'
+    symbols:
+    - '[symbol 1]'
+    - '[symbol 2]'
+    - '[symbol 3]'
+    - '[symbol 4]'
+    - '[symbol 5]'
+    - '[symbol 6]'
+  direct_associations:
+    archetype: Fool
+    archetype_color: Turquoise
+    gender: feminine
+    inner_world:
+      color: Black
+      trigram: Earth
+      meaning: Complete absence of inner resources; intuition, ability, and capacity
+        are all absent
+    outer_world:
+      color: Yellow
+      trigram: Lake
+      meaning: Alignment with expectations and support, but unclear options; supported
+        conventional path with limited choices
+    solar_cycle:
+      season: Winter
+      tarot_suit: Swords
+      element: Air
+    lunar_cycle:
+      decimal_modulo: 24 % 8 = 4, 24 % 2 = 0
+      phase: Full Moon
+      phase_half: Illuminating
+      cycle_number: '2'
+      cycle_name: Development Cycle
+      complete_designation: Full Moon (Early), Development Cycle of Winter
+    tarot:
+      card: '[Card for 000110]'
+      cycle_suit: Swords
+      seasonal_expression: '[Description of how this hexagram energy expresses in
+        this season]'
+    hexagram:
+      i_ching:
+        number: 45
+        name: Cui
+        label: Gathering Together
+        description: Assembly, accumulation, congregation, coming together
+      gene_key:
+        number: 45
+        shadow: Dominance
+        gift: Synarchy
+        siddhi: Communion
+        meaning: A journey from controlling others to harmonious leadership and ultimately
+          deep spiritual connection with all beings
+  interpreted_meanings:
+    basic:
+      name_6bit: '[Name based on hexagram 000110]'
+      name_8bit: '[Name incorporating Winter]'
+      gender: feminine
+    oracle_card:
+      card_name: '[Evocative name for card 00011000]'
+      card_creature: '[Description of the mythological figure or character that embodies
+        this card''s energy, with feminine terms]'
+      question_posed: '[Question this card asks the querent - should prompt reflection
+        about the core themes]'
+      card_scene: '[Detailed description of the card''s imagery, incorporating all
+        symbolic elements, colors, and archetype]'
+      universal_symbol: '[Core symbol that captures the essence of this card]'
+      mood: '[Emotional/energetic quality of the card]'
+      prompt_for_image_gen: 'Limited color risograph-style illustration of [short
+        scene description].
+
+        Use Black for foreground elements (inner world) and Yellow for background/environment
+        (outer world), with Turquoise highlights.
+
+        Maintain risograph/woodblock print texture with strong contrast, 3-4 colors
+        max, and minimalistic geometric forms.
+
+        Include a clean, full-width title bar at the bottom, centered, with a card
+        title ''[CARD TITLE]'' in bold and a more subtle subtitle below that with
+        the 8-bit code ''00011000'', without corner decorations or symbols.
+
+        Feature [card_creature in the card_scene, key symbolic elements, e.g., moon
+        phase, animal companions, symbolic object].
+
+        The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle
+        seasonal/elemental references appropriate for Winter.
+
+        Style should blend Rider-Waite simplicity with modern symbolic abstraction,
+        emotionally resonant but compositionally clean.'
+  related_cards:
+    same_card_winter: '00011000'
+    same_card_spring: '00011010'
+    same_card_summer: '00011011'
+    same_card_fall: '00011001'
+    opposite: '11100111'
+    thematic_pair: '[Related binary]'
+    full_cycle:
+    - '00011000'
+    - '00011010'
+    - '00011011'
+    - '00011001'
+  bit_values:
+    bit1: '0'
+    bit2: '0'
+    bit3: '0'
+    bit4: '1'
+    bit5: '1'
+    bit6: '0'
+    bit78: '00'
+  fractal_meanings:
+    quantum:
+      pattern: '[How this card''s energy pattern manifests at quantum level]'
+      insight: '[The wisdom this reveals about reality''s fundamental nature]'
+    biological:
+      pattern: '[How this card''s energy pattern appears in living systems]'
+      insight: '[The wisdom this reveals about life and evolution]'
+    psychological:
+      pattern: '[How this card''s energy pattern manifests in human mind]'
+      insight: '[The wisdom this reveals about consciousness and thought]'
+    social:
+      pattern: '[How this card''s energy pattern appears in communities]'
+      insight: '[The wisdom this reveals about human connection]'
+    ecological:
+      pattern: '[How this card''s energy pattern manifests in ecosystems]'
+      insight: '[The wisdom this reveals about natural systems]'
+    cosmic:
+      pattern: '[How this card''s energy pattern appears at universal scale]'
+      insight: '[The wisdom this reveals about the nature of existence]'

@@ -93,14 +93,26 @@ def determine_gender(bit_count, archetype):
         else:
             return "feminine"
 
-def calculate_lunar_phase(decimal_value, lunar_cycle_data):
-    """Calculate lunar phase information based on decimal value."""
+def calculate_lunar_phase(decimal_value, lunar_cycle_data, bit_count_1_6):
+    """
+    Calculate lunar phase information based on decimal value.
+    
+    This follows the lunar cycle calculation from lunar-cycle.yml:
+    - lunar_phase: "(l->r decimal_value ÷ 2) % 8" - Yields phase 0-7
+    - phase_half: "l->r decimal_value % 2" - 0 = Early, 1 = Late
+    - lunar_cycle: "((l->r decimal_value % 64) ÷ 16) + 1" - Yields cycle 1-4 within the season
+    """
+    # Calculate lunar phase (0-7) based on decimal value
     lunar_phase_num = (decimal_value // 2) % 8
+    
+    # Calculate phase half (0 = Early, 1 = Late)
     phase_half = decimal_value % 2
     
+    # Get phase data from lunar cycle system
     phase_data = lunar_cycle_data["lunar_cycle_system"]["phases"][str(lunar_phase_num)]
     phase_name = phase_data["name"]
     
+    # Get half name and description
     if phase_half == 0:
         half_name = phase_data["first_half"]["name"]
         half_desc = phase_data["first_half"]["half_phase_desc"]
@@ -108,10 +120,15 @@ def calculate_lunar_phase(decimal_value, lunar_cycle_data):
         half_name = phase_data["second_half"]["name"]
         half_desc = phase_data["second_half"]["half_phase_desc"]
     
+    # Calculate lunar cycle (1-4) using the correct formula from lunar-cycle.yml
+    # ((l->r decimal_value % 64) ÷ 16) + 1
+    lunar_cycle_num = ((decimal_value % 64) // 16) + 1
+    
     return {
         "phase": phase_name,
         "half_name": half_name,
         "half_desc": half_desc,
+        "lunar_cycle": lunar_cycle_num,
         "decimal_modulo": f"{decimal_value} % 8 = {lunar_phase_num}, {decimal_value} % 2 = {phase_half}"
     }
 
@@ -216,9 +233,9 @@ def generate_card(binary_code):
     hexagram = binary_code[0:6]
     hexagram_data = get_hexagram_data(hexagram, core_systems)
     
-    # Calculate lunar cycle
-    lunar_info = calculate_lunar_phase(decimal, lunar_cycle_data)
-    cycle_number = (bit_count_1_6 % 4) + 1
+    # Calculate lunar cycle and phase information
+    lunar_info = calculate_lunar_phase(decimal, lunar_cycle_data, bit_count_1_6)
+    cycle_number = lunar_info["lunar_cycle"]
     cycle_names = {
         1: "Inception Cycle",
         2: "Development Cycle",

@@ -44,9 +44,9 @@ card:
       decimal_modulo: 149 % 8 = 2, 149 % 2 = 1
       phase: First Quarter
       phase_half: Balancing
-      cycle_number: '4'
-      cycle_name: Transition Cycle
-      complete_designation: First Quarter (Late), Transition Cycle of Fall
+      cycle_number: '2'
+      cycle_name: Development Cycle
+      complete_designation: First Quarter (Late), Development Cycle of Fall
     tarot:
       card: '[Card for 101010]'
       cycle_suit: Pentacles

@@ -1,0 +1,142 @@
+card:
+  version: '1.0'
+  binary: '01010011'
+  decimal: '202'
+  hexadecimal: '53'
+  basic_info:
+    desc: '[A paragraph describing the card''s core energy and meaning - focus on
+      the combination of hexagram energy with the Summer/Hero expression. Include
+      how the bit pattern reflects resources present/absent and how this connects
+      to the card''s overall meaning.]'
+    keywords:
+    - '[keyword 1]'
+    - '[keyword 2]'
+    - '[keyword 3]'
+    - '[keyword 4]'
+    - '[keyword 5]'
+    - '[keyword 6]'
+    symbols:
+    - '[symbol 1]'
+    - '[symbol 2]'
+    - '[symbol 3]'
+    - '[symbol 4]'
+    - '[symbol 5]'
+    - '[symbol 6]'
+  direct_associations:
+    archetype: Hero
+    archetype_color: Gold
+    gender: masculine
+    inner_world:
+      color: Green
+      trigram: Water
+      meaning: Technical ability present but lacking intuition and capacity; skilled
+        execution without direction or resources
+    outer_world:
+      color: Red
+      trigram: Thunder
+      meaning: Alignment with expectations, but lacking support and clear options;
+        conventional but adrift
+    solar_cycle:
+      season: Summer
+      tarot_suit: Cups
+      element: Water
+    lunar_cycle:
+      decimal_modulo: 202 % 8 = 5, 202 % 2 = 0
+      phase: Waning Gibbous
+      phase_half: Sharing
+      cycle_number: '1'
+      cycle_name: Inception Cycle
+      complete_designation: Waning Gibbous (Early), Inception Cycle of Summer
+    tarot:
+      card: '[Card for 010100]'
+      cycle_suit: Cups
+      seasonal_expression: '[Description of how this hexagram energy expresses in
+        this season]'
+    hexagram:
+      i_ching:
+        number: 40
+        name: Jie
+        label: Deliverance
+        description: Release, liberation, resolution, untangling
+      gene_key:
+        number: 40
+        shadow: Exhaustion
+        gift: Resolve
+        siddhi: Divine Will
+        meaning: A journey from depletion and fatigue to determined resolution and
+          ultimately alignment with the highest purpose
+  interpreted_meanings:
+    basic:
+      name_6bit: '[Name based on hexagram 010100]'
+      name_8bit: '[Name incorporating Summer]'
+      gender: masculine
+    oracle_card:
+      card_name: '[Evocative name for card 01010011]'
+      card_creature: '[Description of the mythological figure or character that embodies
+        this card''s energy, with masculine terms]'
+      question_posed: '[Question this card asks the querent - should prompt reflection
+        about the core themes]'
+      card_scene: '[Detailed description of the card''s imagery, incorporating all
+        symbolic elements, colors, and archetype]'
+      universal_symbol: '[Core symbol that captures the essence of this card]'
+      mood: '[Emotional/energetic quality of the card]'
+      prompt_for_image_gen: 'Limited color risograph-style illustration of [short
+        scene description].
+
+        Use Green for foreground elements (inner world) and Red for background/environment
+        (outer world), with Gold highlights.
+
+        Maintain risograph/woodblock print texture with strong contrast, 3-4 colors
+        max, and minimalistic geometric forms.
+
+        Include a clean, full-width title bar at the bottom, centered, with a card
+        title ''[CARD TITLE]'' in bold and a more subtle subtitle below that with
+        the 8-bit code ''01010011'', without corner decorations or symbols.
+
+        Feature [card_creature in the card_scene, key symbolic elements, e.g., moon
+        phase, animal companions, symbolic object].
+
+        The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle
+        seasonal/elemental references appropriate for Summer.
+
+        Style should blend Rider-Waite simplicity with modern symbolic abstraction,
+        emotionally resonant but compositionally clean.'
+  related_cards:
+    same_card_winter: '01010000'
+    same_card_spring: '01010010'
+    same_card_summer: '01010011'
+    same_card_fall: '01010001'
+    opposite: '10101100'
+    thematic_pair: '[Related binary]'
+    full_cycle:
+    - '01010000'
+    - '01010010'
+    - '01010011'
+    - '01010001'
+  bit_values:
+    bit1: '0'
+    bit2: '1'
+    bit3: '0'
+    bit4: '1'
+    bit5: '0'
+    bit6: '0'
+    bit78: '11'
+  fractal_meanings:
+    quantum:
+      pattern: '[How this card''s energy pattern manifests at quantum level]'
+      insight: '[The wisdom this reveals about reality''s fundamental nature]'
+    biological:
+      pattern: '[How this card''s energy pattern appears in living systems]'
+      insight: '[The wisdom this reveals about life and evolution]'
+    psychological:
+      pattern: '[How this card''s energy pattern manifests in human mind]'
+      insight: '[The wisdom this reveals about consciousness and thought]'
+    social:
+      pattern: '[How this card''s energy pattern appears in communities]'
+      insight: '[The wisdom this reveals about human connection]'
+    ecological:
+      pattern: '[How this card''s energy pattern manifests in ecosystems]'
+      insight: '[The wisdom this reveals about natural systems]'
+    cosmic:
+      pattern: '[How this card''s energy pattern appears at universal scale]'
+      insight: '[The wisdom this reveals about the nature of existence]'

@@ -1,0 +1,142 @@
+card:
+  version: '1.0'
+  binary: '01101101'
+  decimal: '182'
+  hexadecimal: 6d
+  basic_info:
+    desc: '[A paragraph describing the card''s core energy and meaning - focus on
+      the combination of hexagram energy with the Fall/Fool expression. Include how
+      the bit pattern reflects resources present/absent and how this connects to the
+      card''s overall meaning.]'
+    keywords:
+    - '[keyword 1]'
+    - '[keyword 2]'
+    - '[keyword 3]'
+    - '[keyword 4]'
+    - '[keyword 5]'
+    - '[keyword 6]'
+    symbols:
+    - '[symbol 1]'
+    - '[symbol 2]'
+    - '[symbol 3]'
+    - '[symbol 4]'
+    - '[symbol 5]'
+    - '[symbol 6]'
+  direct_associations:
+    archetype: Fool
+    archetype_color: Turquoise
+    gender: feminine
+    inner_world:
+      color: Cyan
+      trigram: Wind
+      meaning: Skilled and resourceful but lacks intuition; capable of executing but
+        needs direction
+    outer_world:
+      color: Cyan
+      trigram: Wind
+      meaning: Support and options present, but misaligned with expectations; alternative
+        paths with backing
+    solar_cycle:
+      season: Fall
+      tarot_suit: Pentacles
+      element: Earth
+    lunar_cycle:
+      decimal_modulo: 182 % 8 = 3, 182 % 2 = 0
+      phase: Waxing Gibbous
+      phase_half: Building
+      cycle_number: '4'
+      cycle_name: Transition Cycle
+      complete_designation: Waxing Gibbous (Early), Transition Cycle of Fall
+    tarot:
+      card: '[Card for 011011]'
+      cycle_suit: Pentacles
+      seasonal_expression: '[Description of how this hexagram energy expresses in
+        this season]'
+    hexagram:
+      i_ching:
+        number: 57
+        name: Xun
+        label: The Gentle
+        description: Penetration, influence, adaptation, flexibility
+      gene_key:
+        number: 57
+        shadow: Unease
+        gift: Intuition
+        siddhi: Omniscience
+        meaning: A journey from restlessness and anxiety to intuitive knowing and
+          ultimately universal consciousness and knowing
+  interpreted_meanings:
+    basic:
+      name_6bit: '[Name based on hexagram 011011]'
+      name_8bit: '[Name incorporating Fall]'
+      gender: feminine
+    oracle_card:
+      card_name: '[Evocative name for card 01101101]'
+      card_creature: '[Description of the mythological figure or character that embodies
+        this card''s energy, with feminine terms]'
+      question_posed: '[Question this card asks the querent - should prompt reflection
+        about the core themes]'
+      card_scene: '[Detailed description of the card''s imagery, incorporating all
+        symbolic elements, colors, and archetype]'
+      universal_symbol: '[Core symbol that captures the essence of this card]'
+      mood: '[Emotional/energetic quality of the card]'
+      prompt_for_image_gen: 'Limited color risograph-style illustration of [short
+        scene description].
+
+        Use Cyan for foreground elements (inner world) and Cyan for background/environment
+        (outer world), with Turquoise highlights.
+
+        Maintain risograph/woodblock print texture with strong contrast, 3-4 colors
+        max, and minimalistic geometric forms.
+
+        Include a clean, full-width title bar at the bottom, centered, with a card
+        title ''[CARD TITLE]'' in bold and a more subtle subtitle below that with
+        the 8-bit code ''01101101'', without corner decorations or symbols.
+
+        Feature [card_creature in the card_scene, key symbolic elements, e.g., moon
+        phase, animal companions, symbolic object].
+
+        The scene should evoke the mood of [MOOD KEYWORDS] and incorporate subtle
+        seasonal/elemental references appropriate for Fall.
+
+        Style should blend Rider-Waite simplicity with modern symbolic abstraction,
+        emotionally resonant but compositionally clean.'
+  related_cards:
+    same_card_winter: '01101100'
+    same_card_spring: '01101110'
+    same_card_summer: '01101111'
+    same_card_fall: '01101101'
+    opposite: '10010010'
+    thematic_pair: '[Related binary]'
+    full_cycle:
+    - '01101100'
+    - '01101110'
+    - '01101111'
+    - '01101101'
+  bit_values:
+    bit1: '0'
+    bit2: '1'
+    bit3: '1'
+    bit4: '0'
+    bit5: '1'
+    bit6: '1'
+    bit78: '01'
+  fractal_meanings:
+    quantum:
+      pattern: '[How this card''s energy pattern manifests at quantum level]'
+      insight: '[The wisdom this reveals about reality''s fundamental nature]'
+    biological:
+      pattern: '[How this card''s energy pattern appears in living systems]'
+      insight: '[The wisdom this reveals about life and evolution]'
+    psychological:
+      pattern: '[How this card''s energy pattern manifests in human mind]'
+      insight: '[The wisdom this reveals about consciousness and thought]'
+    social:
+      pattern: '[How this card''s energy pattern appears in communities]'
+      insight: '[The wisdom this reveals about human connection]'
+    ecological:
+      pattern: '[How this card''s energy pattern manifests in ecosystems]'
+      insight: '[The wisdom this reveals about natural systems]'
+    cosmic:
+      pattern: '[How this card''s energy pattern appears at universal scale]'
+      insight: '[The wisdom this reveals about the nature of existence]'

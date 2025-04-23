@@ -32,7 +32,7 @@ When sorting cards by binary value:
 The first 16 cards in proper left-to-right binary order:
 
 ```
-00000000 = 0    (Void Mirror)
+00000000 = 0  
 10000000 = 1
 01000000 = 2
 11000000 = 3
@@ -51,9 +51,9 @@ The first 16 cards in proper left-to-right binary order:
 ```
 
 Later in the sequence, the known cards appear at these positions:
-- `00000001` = 128 (Devouring Void) - position 129
-- `00000010` = 64 (Unwritten Beginning) - position 65
-- `00000011` = 192 (Perfect Vessel) - position 193
+- `00000001` = 128 
+- `00000010` = 64 
+- `00000011` = 192
 
 ## Card Attribute Calculations
 
@@ -68,7 +68,7 @@ Each card's attributes are calculated based on its binary representation:
 ### Lunar Cycle Calculation
 For each card:
 ```
-lunar_cycle = (count of '1' bits % 4) + 1
+lunar_cycle = ((l->r decimal_value % 64) ÷ 16) + 1
 ```
 
 ### Lunar Phase Calculation
