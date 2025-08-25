@@ -29,11 +29,13 @@ card:
     inner_world:
       color: White
       trigram: Heaven
+      symbol: Monkey
       meaning: Complete presence of inner resources; self-sufficient, confident, and
         fully equipped
     outer_world:
       color: Blue
       trigram: Mountain
+      symbol: Tower
       meaning: Clear options present, but lacking alignment with expectations and
         support
     solar_cycle:
@@ -44,6 +46,7 @@ card:
       decimal_modulo: 39 % 8 = 3, 39 % 2 = 1
       phase: Waxing Gibbous
       phase_half: Culminating
+      half_name: Waxing Gibbous (Late)
       cycle_number: '3'
       cycle_name: Culmination Cycle
       complete_designation: Waxing Gibbous (Late), Culmination Cycle of Winter
@@ -76,15 +79,16 @@ card:
         this card''s energy, with masculine terms]'
       question_posed: '[Question this card asks the querent - should prompt reflection
         about the core themes]'
-      card_scene: '[Detailed description of the card''s imagery, incorporating all
-        symbolic elements, colors, and archetype]'
+      card_scene: '[Detailed description of the card''s imagery, incorporating Monkey
+        (inner world symbol) and Tower (outer world symbol), along with all symbolic
+        elements, colors, and archetype]'
       universal_symbol: '[Core symbol that captures the essence of this card]'
       mood: '[Emotional/energetic quality of the card]'
       prompt_for_image_gen: 'Limited color risograph-style illustration of [short
         scene description].
 
-        Use White for foreground elements (inner world) and Blue for background/environment
-        (outer world), with Purple highlights.
+        Use White for foreground elements (inner world: Monkey) and Blue for background/environment
+        (outer world: Tower), with Purple highlights.
 
         Maintain risograph/woodblock print texture with strong contrast, 3-4 colors
         max, and minimalistic geometric forms.

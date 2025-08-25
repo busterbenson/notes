@@ -29,11 +29,13 @@ card:
     inner_world:
       color: Red
       trigram: Thunder
+      symbol: Snake
       meaning: Strong intuition but lacking practical skills and resources; knows
         what feels right but can't manifest it
     outer_world:
       color: Green
       trigram: Water
+      symbol: Forest
       meaning: Support present, but lacking alignment with expectations and clear
         options
     solar_cycle:
@@ -44,6 +46,7 @@ card:
       decimal_modulo: 81 % 8 = 0, 81 % 2 = 1
       phase: Dark Moon
       phase_half: Emerging
+      half_name: Dark Moon (Late)
       cycle_number: '2'
       cycle_name: Development Cycle
       complete_designation: Dark Moon (Late), Development Cycle of Spring
@@ -76,15 +79,16 @@ card:
         this card''s energy, with feminine terms]'
       question_posed: '[Question this card asks the querent - should prompt reflection
         about the core themes]'
-      card_scene: '[Detailed description of the card''s imagery, incorporating all
-        symbolic elements, colors, and archetype]'
+      card_scene: '[Detailed description of the card''s imagery, incorporating Snake
+        (inner world symbol) and Forest (outer world symbol), along with all symbolic
+        elements, colors, and archetype]'
       universal_symbol: '[Core symbol that captures the essence of this card]'
       mood: '[Emotional/energetic quality of the card]'
       prompt_for_image_gen: 'Limited color risograph-style illustration of [short
         scene description].
 
-        Use Red for foreground elements (inner world) and Green for background/environment
-        (outer world), with Turquoise highlights.
+        Use Red for foreground elements (inner world: Snake) and Green for background/environment
+        (outer world: Forest), with Turquoise highlights.
 
         Maintain risograph/woodblock print texture with strong contrast, 3-4 colors
         max, and minimalistic geometric forms.

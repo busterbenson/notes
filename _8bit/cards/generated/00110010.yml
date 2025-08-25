@@ -29,11 +29,13 @@ card:
     inner_world:
       color: Blue
       trigram: Mountain
+      symbol: Bear
       meaning: Capacity to understand but lacking intuition and ability; can see what
         needs to be done but feels unable to act
     outer_world:
       color: Red
       trigram: Thunder
+      symbol: Road
       meaning: Alignment with expectations, but lacking support and clear options;
         conventional but adrift
     solar_cycle:
@@ -44,6 +46,7 @@ card:
       decimal_modulo: 76 % 8 = 6, 76 % 2 = 0
       phase: Last Quarter
       phase_half: Releasing
+      half_name: Last Quarter (Early)
       cycle_number: '1'
       cycle_name: Inception Cycle
       complete_designation: Last Quarter (Early), Inception Cycle of Spring
@@ -76,15 +79,16 @@ card:
         this card''s energy, with feminine terms]'
       question_posed: '[Question this card asks the querent - should prompt reflection
         about the core themes]'
-      card_scene: '[Detailed description of the card''s imagery, incorporating all
-        symbolic elements, colors, and archetype]'
+      card_scene: '[Detailed description of the card''s imagery, incorporating Bear
+        (inner world symbol) and Road (outer world symbol), along with all symbolic
+        elements, colors, and archetype]'
       universal_symbol: '[Core symbol that captures the essence of this card]'
       mood: '[Emotional/energetic quality of the card]'
       prompt_for_image_gen: 'Limited color risograph-style illustration of [short
         scene description].
 
-        Use Blue for foreground elements (inner world) and Red for background/environment
-        (outer world), with Turquoise highlights.
+        Use Blue for foreground elements (inner world: Bear) and Red for background/environment
+        (outer world: Road), with Turquoise highlights.
 
         Maintain risograph/woodblock print texture with strong contrast, 3-4 colors
         max, and minimalistic geometric forms.

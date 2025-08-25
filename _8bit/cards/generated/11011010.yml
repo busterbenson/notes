@@ -29,11 +29,13 @@ card:
     inner_world:
       color: Yellow
       trigram: Lake
+      symbol: Turtle
       meaning: Intuitive and skilled but lacking resources; creative capacity limited
         by external constraints
     outer_world:
       color: Yellow
       trigram: Lake
+      symbol: Lake
       meaning: Alignment with expectations and support, but unclear options; supported
         conventional path with limited choices
     solar_cycle:
@@ -44,6 +46,7 @@ card:
       decimal_modulo: 91 % 8 = 5, 91 % 2 = 1
       phase: Waning Gibbous
       phase_half: Integrating
+      half_name: Waning Gibbous (Late)
       cycle_number: '2'
       cycle_name: Development Cycle
       complete_designation: Waning Gibbous (Late), Development Cycle of Spring
@@ -76,15 +79,16 @@ card:
         this card''s energy, with masculine terms]'
       question_posed: '[Question this card asks the querent - should prompt reflection
         about the core themes]'
-      card_scene: '[Detailed description of the card''s imagery, incorporating all
-        symbolic elements, colors, and archetype]'
+      card_scene: '[Detailed description of the card''s imagery, incorporating Turtle
+        (inner world symbol) and Lake (outer world symbol), along with all symbolic
+        elements, colors, and archetype]'
       universal_symbol: '[Core symbol that captures the essence of this card]'
       mood: '[Emotional/energetic quality of the card]'
       prompt_for_image_gen: 'Limited color risograph-style illustration of [short
         scene description].
 
-        Use Yellow for foreground elements (inner world) and Yellow for background/environment
-        (outer world), with Purple highlights.
+        Use Yellow for foreground elements (inner world: Turtle) and Yellow for background/environment
+        (outer world: Lake), with Purple highlights.
 
         Maintain risograph/woodblock print texture with strong contrast, 3-4 colors
         max, and minimalistic geometric forms.

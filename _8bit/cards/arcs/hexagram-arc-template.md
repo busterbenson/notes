@@ -1,20 +1,39 @@
 # Narrative Arc: [TYPE] [IDENTIFIER]
+*Created on [date] • Last updated on [date]*
 
 ## Overview
-[Brief introduction to this narrative arc and its significance in the 8-Bit Oracle system. Note that narrative arcs follow the sequence: Fool → Hero → Monster → Sage archetypes, which correspond to the seasons AFTER the resonant season. For example, if the resonant season is Spring, then the Fool archetype appears in Summer, the Hero in Fall, the Monster in Winter, and the Sage in Spring. This arc documents the transformative journey through each archetypal expression of the hexagram's energy.]
+[Brief introduction to this narrative arc and its significance in the 8-Bit Oracle system. Note that narrative arcs follow the sequence: Fool → Hero → Monster → Sage. The narrative arc always begins on the card that has the Fool archetype, which corresponds to the season AFTER the resonant season. For example, if the resonant season is Spring, then the Fool archetype appears in Summer, the Hero in Fall, the Monster in Winter, and the Sage in Spring. This arc documents the transformative journey through each archetypal expression of the hexagram's energy.]
 
 ## Cards
-- [8-bit code for fool]
-- [8-bit code for hero]
-- [8-bit code for monster]
-- [8-bit code for sage]
-
-## Narrative Fable: [Title of the Fable]
-
-[A short, evocative story that captures the entire arc in fable form. The fable should feature the central characters/elements from the cards and show their transformation through the four seasonal stages. It should embody the spiritual/psychological journey in narrative form and end with a sense of completion that suggests the beginning of a new cycle at a higher level. Aim for a fable that could stand alone as a teaching story while also illuminating the specific wisdom of this hexagram.]
+- [8-bit code for Fool]
+- [8-bit code for Hero]
+- [8-bit code for Monster]
+- [8-bit code for Sage]
 
 ## Core Theme
 [The central narrative thread that connects all cards in this arc.]
+
+## Primary Visual Symbols
+- Inner world character: [corresponding symbol]
+- Outer world environment: [corresponding symbol]
+- Other: [any other primary visual symbols used in the narrative across cards]
+
+## Symbol Relations
+- **Key Connections**: [Identify 2-3 most important symbol relationships with other hexagrams]
+- **Distinctive Expression**: [What makes this hexagram's symbols unique in the system]
+- **Trigram Manifestation**: [How inner and outer trigrams are uniquely expressed through these symbols]
+
+## One Liner
+[Summarize the arc of these cards, using the character, environment, and visual imagery as representative symbols of the unique personality of this card.]
+
+## Evolutionary Journey
+[The spiritual/psychological/developmental journey represented by this sequence of cards, following the Fool → Hero → Monster → Sage progression. Include the relevant Gene Key journey if applicable (e.g., Gene Key 63: Doubt → Inquiry → Truth).]
+
+## Placement in lunar cycle arcs
+- Relevant lunar cycle in each season: [1-4]
+- Lunar phase + half: [i.e. Dark Moon (late)]
+- Previous: [XXXXXX]
+- Next: [XXXXXX]
 
 ## Internal Dramatic Tension
 The arc of [Hexagram Name] explores three fundamental tensions that drive its narrative journey:
@@ -35,9 +54,6 @@ The [Hexagram Name] ([BINARY CODE]) exists in dynamic relationship with several 
 3. **[Tension Aspect 2]**: [Describe another aspect of the relationship, such as how the inner and outer trigrams are arranged differently and what this means. For example, how After Completion features Fire/Water while Before Completion features Water/Fire.]
 
 4. **Relationship with [Related Hexagram 1] and [Related Hexagram 2]**: [Describe how this hexagram relates to 1-2 other hexagrams that share important connections or form meaningful patterns together. Explain what larger process or cycle they collectively represent. For example, how Return, After Completion, and Innocence might form a meta-cycle of consciousness development.]
-
-## Evolutionary Journey
-[The spiritual/psychological/developmental journey represented by this sequence of cards, following the Fool → Hero → Monster → Sage progression. Include the relevant Gene Key journey if applicable (e.g., Gene Key 63: Doubt → Inquiry → Truth).]
 
 ## Visual Narrative Continuity
 
@@ -130,6 +146,10 @@ The complete arc reflects spiritual traditions that emphasize:
 - [Spiritual significance of stage 2] (Summer/Hero)
 - [Spiritual significance of stage 3] (Fall/Monster)
 - [Spiritual significance of stage 4] (Winter/Sage)
+
+## Narrative Fable: [Title of the Fable]
+
+[A short 400-ish word evocative story broken up into 4 acts (one "scene" for each archetype) that captures the entire arc in fable form. The fable should feature the central characters/elements from the cards and show their transformation through the four seasonal stages. It should embody the spiritual/psychological journey in narrative form and end with a sense of completion that suggests the beginning of a new cycle at a higher level. Aim for a fable that could stand alone, and where each act also stands alone as a snapshot within the story, as a meaning-making story while also illuminating the specific wisdom of this hexagram.]
 
 ## Usage in Card Description Generation
 

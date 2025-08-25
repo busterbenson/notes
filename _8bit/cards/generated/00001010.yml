@@ -29,11 +29,13 @@ card:
     inner_world:
       color: Black
       trigram: Earth
+      symbol: Ants
       meaning: Complete absence of inner resources; intuition, ability, and capacity
         are all absent
     outer_world:
       color: Green
       trigram: Water
+      symbol: Forest
       meaning: Support present, but lacking alignment with expectations and clear
         options
     solar_cycle:
@@ -44,6 +46,7 @@ card:
       decimal_modulo: 80 % 8 = 0, 80 % 2 = 0
       phase: Dark Moon
       phase_half: Deepening
+      half_name: Dark Moon (Early)
       cycle_number: '2'
       cycle_name: Development Cycle
       complete_designation: Dark Moon (Early), Development Cycle of Spring
@@ -76,15 +79,16 @@ card:
         this card''s energy, with feminine terms]'
       question_posed: '[Question this card asks the querent - should prompt reflection
         about the core themes]'
-      card_scene: '[Detailed description of the card''s imagery, incorporating all
-        symbolic elements, colors, and archetype]'
+      card_scene: '[Detailed description of the card''s imagery, incorporating Ants
+        (inner world symbol) and Forest (outer world symbol), along with all symbolic
+        elements, colors, and archetype]'
       universal_symbol: '[Core symbol that captures the essence of this card]'
       mood: '[Emotional/energetic quality of the card]'
       prompt_for_image_gen: 'Limited color risograph-style illustration of [short
         scene description].
 
-        Use Black for foreground elements (inner world) and Green for background/environment
-        (outer world), with Turquoise highlights.
+        Use Black for foreground elements (inner world: Ants) and Green for background/environment
+        (outer world: Forest), with Turquoise highlights.
 
         Maintain risograph/woodblock print texture with strong contrast, 3-4 colors
         max, and minimalistic geometric forms.

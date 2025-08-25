@@ -29,11 +29,13 @@ card:
     inner_world:
       color: Cyan
       trigram: Wind
+      symbol: Crow
       meaning: Skilled and resourceful but lacks intuition; capable of executing but
         needs direction
     outer_world:
       color: Blue
       trigram: Mountain
+      symbol: Tower
       meaning: Clear options present, but lacking alignment with expectations and
         support
     solar_cycle:
@@ -44,6 +46,7 @@ card:
       decimal_modulo: 230 % 8 = 3, 230 % 2 = 0
       phase: Waxing Gibbous
       phase_half: Building
+      half_name: Waxing Gibbous (Early)
       cycle_number: '3'
       cycle_name: Culmination Cycle
       complete_designation: Waxing Gibbous (Early), Culmination Cycle of Summer
@@ -76,15 +79,16 @@ card:
         this card''s energy, with masculine terms]'
       question_posed: '[Question this card asks the querent - should prompt reflection
         about the core themes]'
-      card_scene: '[Detailed description of the card''s imagery, incorporating all
-        symbolic elements, colors, and archetype]'
+      card_scene: '[Detailed description of the card''s imagery, incorporating Crow
+        (inner world symbol) and Tower (outer world symbol), along with all symbolic
+        elements, colors, and archetype]'
       universal_symbol: '[Core symbol that captures the essence of this card]'
       mood: '[Emotional/energetic quality of the card]'
       prompt_for_image_gen: 'Limited color risograph-style illustration of [short
         scene description].
 
-        Use Cyan for foreground elements (inner world) and Blue for background/environment
-        (outer world), with Turquoise highlights.
+        Use Cyan for foreground elements (inner world: Crow) and Blue for background/environment
+        (outer world: Tower), with Turquoise highlights.
 
         Maintain risograph/woodblock print texture with strong contrast, 3-4 colors
         max, and minimalistic geometric forms.

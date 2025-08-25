@@ -37,10 +37,10 @@
 - **Key Symbols**: At least 3 from card description
 
 ## Archetype Representation
-- **Sage**: Chimeric/multifaceted, timeless, wise
 - **Fool**: Youthful, spontaneous, innocent
 - **Hero**: Peak form, masterful, dynamic
 - **Monster**: Exaggerated, hybrid, shadowy
+- **Sage**: Chimeric/multifaceted, timeless, wise
 
 ## Design Do's and Don'ts
 ```

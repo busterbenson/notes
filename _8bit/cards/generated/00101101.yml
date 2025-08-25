@@ -29,11 +29,13 @@ card:
     inner_world:
       color: Blue
       trigram: Mountain
+      symbol: Bear
       meaning: Capacity to understand but lacking intuition and ability; can see what
         needs to be done but feels unable to act
     outer_world:
       color: Cyan
       trigram: Wind
+      symbol: Chasm
       meaning: Support and options present, but misaligned with expectations; alternative
         paths with backing
     solar_cycle:
@@ -44,6 +46,7 @@ card:
       decimal_modulo: 180 % 8 = 2, 180 % 2 = 0
       phase: First Quarter
       phase_half: Challenging
+      half_name: First Quarter (Early)
       cycle_number: '4'
       cycle_name: Transition Cycle
       complete_designation: First Quarter (Early), Transition Cycle of Fall
@@ -76,15 +79,16 @@ card:
         this card''s energy, with masculine terms]'
       question_posed: '[Question this card asks the querent - should prompt reflection
         about the core themes]'
-      card_scene: '[Detailed description of the card''s imagery, incorporating all
-        symbolic elements, colors, and archetype]'
+      card_scene: '[Detailed description of the card''s imagery, incorporating Bear
+        (inner world symbol) and Chasm (outer world symbol), along with all symbolic
+        elements, colors, and archetype]'
       universal_symbol: '[Core symbol that captures the essence of this card]'
       mood: '[Emotional/energetic quality of the card]'
       prompt_for_image_gen: 'Limited color risograph-style illustration of [short
         scene description].
 
-        Use Blue for foreground elements (inner world) and Cyan for background/environment
-        (outer world), with Iridescent highlights.
+        Use Blue for foreground elements (inner world: Bear) and Cyan for background/environment
+        (outer world: Chasm), with Iridescent highlights.
 
         Maintain risograph/woodblock print texture with strong contrast, 3-4 colors
         max, and minimalistic geometric forms.

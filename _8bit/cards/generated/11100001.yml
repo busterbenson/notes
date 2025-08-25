@@ -29,11 +29,13 @@ card:
     inner_world:
       color: White
       trigram: Heaven
+      symbol: Monkey
       meaning: Complete presence of inner resources; self-sufficient, confident, and
         fully equipped
     outer_world:
       color: Black
       trigram: Earth
+      symbol: Cave
       meaning: Complete lack of outer resources; expectations, support, and options
         are all absent
     solar_cycle:
@@ -44,6 +46,7 @@ card:
       decimal_modulo: 135 % 8 = 3, 135 % 2 = 1
       phase: Waxing Gibbous
       phase_half: Culminating
+      half_name: Waxing Gibbous (Late)
       cycle_number: '1'
       cycle_name: Inception Cycle
       complete_designation: Waxing Gibbous (Late), Inception Cycle of Fall
@@ -76,15 +79,16 @@ card:
         this card''s energy, with feminine terms]'
       question_posed: '[Question this card asks the querent - should prompt reflection
         about the core themes]'
-      card_scene: '[Detailed description of the card''s imagery, incorporating all
-        symbolic elements, colors, and archetype]'
+      card_scene: '[Detailed description of the card''s imagery, incorporating Monkey
+        (inner world symbol) and Cave (outer world symbol), along with all symbolic
+        elements, colors, and archetype]'
       universal_symbol: '[Core symbol that captures the essence of this card]'
       mood: '[Emotional/energetic quality of the card]'
       prompt_for_image_gen: 'Limited color risograph-style illustration of [short
         scene description].
 
-        Use White for foreground elements (inner world) and Black for background/environment
-        (outer world), with Gold highlights.
+        Use White for foreground elements (inner world: Monkey) and Black for background/environment
+        (outer world: Cave), with Gold highlights.
 
         Maintain risograph/woodblock print texture with strong contrast, 3-4 colors
         max, and minimalistic geometric forms.

@@ -29,11 +29,13 @@ card:
     inner_world:
       color: Magenta
       trigram: Fire
+      symbol: Fox
       meaning: Intuitive and resourceful but lacking practical skills; has the vision
         and space but needs help executing
     outer_world:
       color: Blue
       trigram: Mountain
+      symbol: Tower
       meaning: Clear options present, but lacking alignment with expectations and
         support
     solar_cycle:
@@ -44,6 +46,7 @@ card:
       decimal_modulo: 165 % 8 = 2, 165 % 2 = 1
       phase: First Quarter
       phase_half: Balancing
+      half_name: First Quarter (Late)
       cycle_number: '3'
       cycle_name: Culmination Cycle
       complete_designation: First Quarter (Late), Culmination Cycle of Fall
@@ -76,15 +79,16 @@ card:
         this card''s energy, with feminine terms]'
       question_posed: '[Question this card asks the querent - should prompt reflection
         about the core themes]'
-      card_scene: '[Detailed description of the card''s imagery, incorporating all
-        symbolic elements, colors, and archetype]'
+      card_scene: '[Detailed description of the card''s imagery, incorporating Fox
+        (inner world symbol) and Tower (outer world symbol), along with all symbolic
+        elements, colors, and archetype]'
       universal_symbol: '[Core symbol that captures the essence of this card]'
       mood: '[Emotional/energetic quality of the card]'
       prompt_for_image_gen: 'Limited color risograph-style illustration of [short
         scene description].
 
-        Use Magenta for foreground elements (inner world) and Blue for background/environment
-        (outer world), with Gold highlights.
+        Use Magenta for foreground elements (inner world: Fox) and Blue for background/environment
+        (outer world: Tower), with Gold highlights.
 
         Maintain risograph/woodblock print texture with strong contrast, 3-4 colors
         max, and minimalistic geometric forms.

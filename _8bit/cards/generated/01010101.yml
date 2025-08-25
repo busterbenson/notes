@@ -29,11 +29,13 @@ card:
     inner_world:
       color: Green
       trigram: Water
+      symbol: Spider
       meaning: Technical ability present but lacking intuition and capacity; skilled
         execution without direction or resources
     outer_world:
       color: Magenta
       trigram: Fire
+      symbol: Desert
       meaning: Alignment with expectations and clear options, but lacking support;
         clear authorized path without assistance
     solar_cycle:
@@ -44,6 +46,7 @@ card:
       decimal_modulo: 170 % 8 = 5, 170 % 2 = 0
       phase: Waning Gibbous
       phase_half: Sharing
+      half_name: Waning Gibbous (Early)
       cycle_number: '3'
       cycle_name: Culmination Cycle
       complete_designation: Waning Gibbous (Early), Culmination Cycle of Fall
@@ -76,15 +79,16 @@ card:
         this card''s energy, with masculine terms]'
       question_posed: '[Question this card asks the querent - should prompt reflection
         about the core themes]'
-      card_scene: '[Detailed description of the card''s imagery, incorporating all
-        symbolic elements, colors, and archetype]'
+      card_scene: '[Detailed description of the card''s imagery, incorporating Spider
+        (inner world symbol) and Desert (outer world symbol), along with all symbolic
+        elements, colors, and archetype]'
       universal_symbol: '[Core symbol that captures the essence of this card]'
       mood: '[Emotional/energetic quality of the card]'
       prompt_for_image_gen: 'Limited color risograph-style illustration of [short
         scene description].
 
-        Use Green for foreground elements (inner world) and Magenta for background/environment
-        (outer world), with Iridescent highlights.
+        Use Green for foreground elements (inner world: Spider) and Magenta for background/environment
+        (outer world: Desert), with Iridescent highlights.
 
         Maintain risograph/woodblock print texture with strong contrast, 3-4 colors
         max, and minimalistic geometric forms.

@@ -29,11 +29,13 @@ card:
     inner_world:
       color: Cyan
       trigram: Wind
+      symbol: Crow
       meaning: Skilled and resourceful but lacks intuition; capable of executing but
         needs direction
     outer_world:
       color: Red
       trigram: Thunder
+      symbol: Road
       meaning: Alignment with expectations, but lacking support and clear options;
         conventional but adrift
     solar_cycle:
@@ -44,6 +46,7 @@ card:
       decimal_modulo: 142 % 8 = 7, 142 % 2 = 0
       phase: Balsamic Moon
       phase_half: Distilling
+      half_name: Balsamic Moon (Early)
       cycle_number: '1'
       cycle_name: Inception Cycle
       complete_designation: Balsamic Moon (Early), Inception Cycle of Fall
@@ -76,15 +79,16 @@ card:
         this card''s energy, with feminine terms]'
       question_posed: '[Question this card asks the querent - should prompt reflection
         about the core themes]'
-      card_scene: '[Detailed description of the card''s imagery, incorporating all
-        symbolic elements, colors, and archetype]'
+      card_scene: '[Detailed description of the card''s imagery, incorporating Crow
+        (inner world symbol) and Road (outer world symbol), along with all symbolic
+        elements, colors, and archetype]'
       universal_symbol: '[Core symbol that captures the essence of this card]'
       mood: '[Emotional/energetic quality of the card]'
       prompt_for_image_gen: 'Limited color risograph-style illustration of [short
         scene description].
 
-        Use Cyan for foreground elements (inner world) and Red for background/environment
-        (outer world), with Gold highlights.
+        Use Cyan for foreground elements (inner world: Crow) and Red for background/environment
+        (outer world: Road), with Gold highlights.
 
         Maintain risograph/woodblock print texture with strong contrast, 3-4 colors
         max, and minimalistic geometric forms.

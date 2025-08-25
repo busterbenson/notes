@@ -29,11 +29,13 @@ card:
     inner_world:
       color: Red
       trigram: Thunder
+      symbol: Snake
       meaning: Strong intuition but lacking practical skills and resources; knows
         what feels right but can't manifest it
     outer_world:
       color: Red
       trigram: Thunder
+      symbol: Road
       meaning: Alignment with expectations, but lacking support and clear options;
         conventional but adrift
     solar_cycle:
@@ -44,6 +46,7 @@ card:
       decimal_modulo: 201 % 8 = 4, 201 % 2 = 1
       phase: Full Moon
       phase_half: Revealing
+      half_name: Full Moon (Late)
       cycle_number: '1'
       cycle_name: Inception Cycle
       complete_designation: Full Moon (Late), Inception Cycle of Summer
@@ -76,15 +79,16 @@ card:
         this card''s energy, with masculine terms]'
       question_posed: '[Question this card asks the querent - should prompt reflection
         about the core themes]'
-      card_scene: '[Detailed description of the card''s imagery, incorporating all
-        symbolic elements, colors, and archetype]'
+      card_scene: '[Detailed description of the card''s imagery, incorporating Snake
+        (inner world symbol) and Road (outer world symbol), along with all symbolic
+        elements, colors, and archetype]'
       universal_symbol: '[Core symbol that captures the essence of this card]'
       mood: '[Emotional/energetic quality of the card]'
       prompt_for_image_gen: 'Limited color risograph-style illustration of [short
         scene description].
 
-        Use Red for foreground elements (inner world) and Red for background/environment
-        (outer world), with Gold highlights.
+        Use Red for foreground elements (inner world: Snake) and Red for background/environment
+        (outer world: Road), with Gold highlights.
 
         Maintain risograph/woodblock print texture with strong contrast, 3-4 colors
         max, and minimalistic geometric forms.

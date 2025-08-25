@@ -57,8 +57,9 @@ Essential archetypal symbols that distill the card's meaning visually
 ### 4. CARD DESCRIPTION (150-200 words)
 A purely visual scene an artist could paint, using concrete, specific imagery. The description should:
 - Focus entirely on what appears in the card illustration with precise visual details
+- Use the inner world character as the main subject/character of the image (as specified in Primary Visual Symbols)
+- Use the outer world element as the environment/setting (as specified in Primary Visual Symbols)
 - Describe textures, colors, lighting, composition, and atmosphere
-- Include specific characters, objects, landscape elements, and their relationships
 - Capture meaningful gestures, expressions, postures, and actions
 - Use sensory language that brings the scene to life
 - Avoid any abstract concepts, systems references, or self-referential language
@@ -79,11 +80,12 @@ Frame questions in second person ("you") that invite deep contemplation without 
 Brief notes on how this card relates to others in the system (opposites, complements, sequences)
 
 ### 7. NARRATIVE ARC PLACEMENT
-Describe how this card fits into its hexagram's narrative arc, following the archetypal progression of Fool(Spring) → Hero(Summer) → Monster(Fall) → Sage(Winter):
+Describe how this card fits into its hexagram's narrative arc, following the archetypal progression of Fool → Hero → Monster → Sage (with their associated seasons depending on the hexagram):
 - The card's specific role or stage in the larger journey (awakening, mastery, challenge, or integration)
 - Visual motifs that should evolve from or into related seasonal cards
 - How this card builds upon what came before and sets up what follows
 - Specific symbolic elements that maintain continuity across the arc
+- How the inner world character (protagonist) and outer world environment (setting) evolve throughout the narrative
 - How this card participates in the spiraling development of consciousness
 
 ### 8. TECHNICAL DESCRIPTION (Optional)

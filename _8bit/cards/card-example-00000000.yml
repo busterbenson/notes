@@ -32,12 +32,14 @@ card:
     inner_world:
       color: "Black"
       trigram: "☷" # Earth
+      symbol: "Ants"
       meaning: "Complete absence of inner resources; intuition, ability, and capacity are all absent"
 
     ## Outer World (bits 4-6)
     outer_world:
       color: "Black"
       trigram: "☷" # Earth
+      symbol: "Cave"
       meaning: "Complete lack of outer resources; expectations, support, and options are all absent"
 
     ## Solar Season (bits 7-8)

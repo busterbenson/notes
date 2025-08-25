@@ -4,7 +4,9 @@
 
 This directory contains narrative arc documentation for the 8-Bit Oracle card system. Narrative arcs capture the storytelling and thematic continuity across related cards, providing a deeper understanding of how individual cards participate in larger patterns and journeys.
 
-All narrative arcs follow the archetypal progression of Fool → Hero → Monster → Sage, which corresponds to the seasonal progression of Spring → Summer → Fall → Winter. This cycle represents the natural development of consciousness from initial awakening, through mastery and challenge, to integration and transcendence, potentially beginning a new cycle at a higher level.
+**Hexagram narrative arcs** follow the archetypal progression of Fool → Hero → Monster → Sage, which corresponds to the seasonal progression of Spring → Summer → Fall → Winter. This cycle represents the natural development of consciousness from initial awakening, through mastery and challenge, to integration and transcendence, potentially beginning a new cycle at a higher level, on the time scale of a year.
+
+**Lunar cycle narrative arcs** follow the progression of a lunar cycle from Dark Moon to Full Moon to Balsamic Moon for a particular cycle within a particular season. This cycle represents various life arcs and dramas that occur on the time scale of a month. 
 
 ## Integration with Card Generation
 
@@ -26,9 +28,7 @@ The narrative arcs serve multiple functions in the oracle system:
 The arcs are organized into several categories:
 
 - `/hexagram/` - Narrative arcs for each 6-bit hexagram (spanning its 4 seasonal expressions)
-- `/trigram/` - Narrative arcs for each trigram combination (planned)
-- `/journeys/` - Narrative arcs for specific evolutionary journeys (planned)
-- `/patterns/` - Narrative arcs for mathematical or structural patterns (planned)
+- `/lunar_cycles/` - Narrative arcs for each moon phase in a given lunar cycle (planned)
 
 ## File Format
 
@@ -60,9 +60,7 @@ When multiple cards from the same narrative arc appear in a reading, the arc doc
 ## Development Status
 
 - Hexagram arcs: In progress (1/64 complete)
-- Trigram arcs: Planned
-- Journey arcs: Planned
-- Pattern arcs: Planned
+- Lunar cycle arcs: Planned
 
 ## Contribution Guidelines
 

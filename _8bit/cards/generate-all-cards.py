@@ -31,8 +31,11 @@ def generate_cards(binary_strings):
             if i % 16 == 0:
                 print(f"Generating cards: {i}/{total} ({i/total:.1%})")
             
-            # Run the generate-card.py script for this binary
-            subprocess.run(['python', 'generate-card.py', binary], check=True, stdout=subprocess.DEVNULL)
+            # Run the generate-card.py script for this binary using the virtual environment
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            card_script_path = os.path.join(script_dir, 'generate-card.py')
+            venv_python = os.path.join(script_dir, 'venv', 'bin', 'python')
+            subprocess.run([venv_python, card_script_path, binary], check=True, stdout=subprocess.DEVNULL)
         except subprocess.CalledProcessError as e:
             print(f"Error generating card for {binary}: {e}")
             continue
