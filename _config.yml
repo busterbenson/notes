@@ -16,6 +16,23 @@ exclude:
   - '.jekyll-cache'
   - 'Gemfile'
   - 'Gemfile.lock'
+  - '_8bit/archive'
+  - '_8bit/cards/README.md'
+  - '_8bit/cards/archived_scripts'
+  - '_8bit/cards/arcs'
+  - '_8bit/cards/image_prompts'
+  - '_8bit/cards/completed'
+  - '_8bit/associations/README.md'
+  - '_8bit/card_images'
+  - '_8bit/generated'
+  - '_8bit/mapping_plans'
+  - '_8bit/sorts'
+  - '_8bit/writing'
+  - '_8bit/cards/generate-*.py'
+  - '_8bit/cards/generate-*.sh'
+  - '_8bit/cards/*.py'
+  - '_8bit/cards/*.sh'
+  - '_8bit/cards/venv'
   
 compress_html:
   clippings: all
