@@ -16,23 +16,7 @@ exclude:
   - '.jekyll-cache'
   - 'Gemfile'
   - 'Gemfile.lock'
-  - '_8bit/archive'
-  - '_8bit/cards/README.md'
-  - '_8bit/cards/archived_scripts'
-  - '_8bit/cards/arcs'
-  - '_8bit/cards/image_prompts'
-  - '_8bit/cards/completed'
-  - '_8bit/associations/README.md'
-  - '_8bit/card_images'
-  - '_8bit/generated'
-  - '_8bit/mapping_plans'
-  - '_8bit/sorts'
-  - '_8bit/writing'
-  - '_8bit/cards/generate-*.py'
-  - '_8bit/cards/generate-*.sh'
-  - '_8bit/cards/*.py'
-  - '_8bit/cards/*.sh'
-  - '_8bit/cards/venv'
+  - 'archive/'
   
 compress_html:
   clippings: all
@@ -56,7 +40,6 @@ plugins:
   - jekyll-target-blank
   - jekyll-twitter-plugin
   - jekyll-youtube
-  - jekyll-email-protect
   - jekyll-redirect-from
   - jekyll-dotenv
   - jekyll-responsive-image
@@ -126,18 +109,12 @@ collections:
   posts:
     output: true
     permalink: /:year/:month/:day/:slug
-  mood:
-    output: true 
-    permalink: /mood/:name
   tarot:
     output: true
     permalink: /tarot/:name
   symbol:
     output: true
     permalink: /symbol/:symbol
-  8bit:
-    output: true
-    permalink: /8bit/:name
 
 defaults:
   - scope:
@@ -158,14 +135,4 @@ defaults:
       path: ""
       type: "pages"
     values:
-      layout: "mood"
-  - scope: 
-      path: ""
-      type: "pages"
-    values:
       layout: "tarot"
-  - scope: 
-      path: ""
-      type: "pages"
-    values:
-      layout: "8bit"

@@ -1,7 +1,9 @@
 ---
-title 			: Book of Moods
-layout			: book-of-moods
+title 			: Book of Moods (Archived)  
+layout			: page
 ---
+
+This collection has been archived. The Book of Moods content is now located in the archive directory.
 
 {% assign moods = site.data.book-of-moods %}
 {% assign question = moods.question %}
