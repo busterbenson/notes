@@ -1,8 +1,6 @@
 <li class="mb-0">
 	{% if post.link and post.link != '' and post.redirect == true %}
 		<a href="{{ post.link }}">{{ post.title }}</a>
-	{% elsif post.link and post.link != '' %}
-		<a href="{{ site.baseurl }}{{ post.link }}">{{ post.title }}</a>
 	{% else %}
 		<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 	{% endif %}

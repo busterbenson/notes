@@ -7,6 +7,7 @@ one_liner    : "Discover your cosmic worldview with this short two-step intervie
 image			   : 
 piles			   : ['self-reflection']
 comment_link : 
+redirect     : true
 ---
 
 # What are your beliefs about the nature of reality?

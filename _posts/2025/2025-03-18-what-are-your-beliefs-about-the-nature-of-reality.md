@@ -7,7 +7,7 @@ one_liner    : "Discover your cosmic worldview with this short two-step intervie
 image			   : 
 piles			   : ['self-reflection']
 comment_link : 
-redirect     : false
+redirect     : true
 ---
 
 This short interview is designed to be a fun way to help you identify your fundamental beliefs about the nature of reality (aka your cosmology), and attempts to get kind of specific about it. It's not meant to be a comprehensive survey of all possible cosmologies, but rather a tool to help you identify your own cosmology and perhaps to spark a fun conversation with others.
