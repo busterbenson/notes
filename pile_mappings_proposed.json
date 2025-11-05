@@ -1,0 +1,2542 @@
+{
+  "summary": {
+    "total_posts": 154,
+    "posts_changed": 101,
+    "posts_with_additions": 21,
+    "unique_piles": 33
+  },
+  "new_pile_counts": {
+    "fundamental-purpose": 5,
+    "creativity": 12,
+    "fiction": 2,
+    "mortality": 4,
+    "work": 35,
+    "reflection": 31,
+    "relationships": 10,
+    "year-review": 23,
+    "game-theory": 4,
+    "systems-thinking": 6,
+    "identity": 5,
+    "technology": 7,
+    "self-tracking": 11,
+    "750words": 12,
+    "update": 17,
+    "behavior-change": 23,
+    "psychology": 4,
+    "health": 2,
+    "internal-voices": 4,
+    "codex-vitae": 11,
+    "philosophy": 5,
+    "cognitive-science": 13,
+    "cognitive-biases": 8,
+    "guide": 4,
+    "spirituality": 2,
+    "experiment": 4,
+    "dialogue": 14,
+    "negative-space": 3,
+    "society": 7,
+    "wicked-problems": 1,
+    "meta-crisis": 4,
+    "symbols": 1,
+    "prisoner-dilemma": 1
+  },
+  "mapped_posts": [
+    {
+      "file": "_posts/2003/2003-03-30-fundamental-purpose.md",
+      "title": "Fundamental purpose",
+      "old_piles": [
+        "fundamental-purpose"
+      ],
+      "new_piles": [
+        "fundamental-purpose"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "fundamental-purpose"
+      ]
+    },
+    {
+      "file": "_posts/2003/2003-04-30-meta-fundamental-purpose.md",
+      "title": "Meta-fundamental purpose",
+      "old_piles": [
+        "fundamental-purpose"
+      ],
+      "new_piles": [
+        "fundamental-purpose"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "fundamental-purpose"
+      ]
+    },
+    {
+      "file": "_posts/2003/2003-08-05-man-versus-himself.md",
+      "title": "My first book, Man Versus Himself",
+      "old_piles": [
+        "book",
+        "death",
+        "fiction"
+      ],
+      "new_piles": [
+        "creativity",
+        "fiction",
+        "mortality",
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "creativity",
+        "fiction",
+        "mortality",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2003/2003-08-23-reputation-rank.md",
+      "title": "Reputation rank",
+      "old_piles": [
+        "fundamental-purpose"
+      ],
+      "new_piles": [
+        "fundamental-purpose"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "fundamental-purpose"
+      ]
+    },
+    {
+      "file": "_posts/2003/2003-08-31-more-about-purpose.md",
+      "title": "More about purpose",
+      "old_piles": [
+        "fundamental-purpose"
+      ],
+      "new_piles": [
+        "fundamental-purpose"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "fundamental-purpose"
+      ]
+    },
+    {
+      "file": "_posts/2003/2003-12-14-month-of-mecember.md",
+      "title": "Month of Mecember",
+      "old_piles": [],
+      "new_piles": [],
+      "suggested_additions": [],
+      "total_piles": []
+    },
+    {
+      "file": "_posts/2004/2004-01-01-2003-old-year-reflections.md",
+      "title": "2003 Old Year Reflections",
+      "old_piles": [
+        "self-reflection",
+        "quality-time",
+        "year-in-review"
+      ],
+      "new_piles": [
+        "reflection",
+        "relationships",
+        "year-review"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "reflection",
+        "relationships",
+        "year-review"
+      ]
+    },
+    {
+      "file": "_posts/2004/2004-01-19-game-the-system.md",
+      "title": "Game the system",
+      "old_piles": [
+        "game-theory"
+      ],
+      "new_piles": [
+        "game-theory"
+      ],
+      "suggested_additions": [
+        "systems-thinking"
+      ],
+      "total_piles": [
+        "game-theory",
+        "systems-thinking"
+      ]
+    },
+    {
+      "file": "_posts/2004/2004-01-29-effective-individual.md",
+      "title": "An effective individual",
+      "old_piles": [],
+      "new_piles": [],
+      "suggested_additions": [],
+      "total_piles": []
+    },
+    {
+      "file": "_posts/2004/2004-02-01-build-reputation-avoid-credit.md",
+      "title": "Build reputation, avoid credit",
+      "old_piles": [
+        "fundamental-purpose"
+      ],
+      "new_piles": [
+        "fundamental-purpose"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "fundamental-purpose"
+      ]
+    },
+    {
+      "file": "_posts/2004/2004-04-24-lazy-distributed-universe.md",
+      "title": "Lazy, distributed universe",
+      "old_piles": [
+        "personal-mythology"
+      ],
+      "new_piles": [
+        "identity"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "identity"
+      ]
+    },
+    {
+      "file": "_posts/2004/2004-05-10-a-self-explanatory-object.md",
+      "title": "A self-explanatory object",
+      "old_piles": [
+        "technology"
+      ],
+      "new_piles": [
+        "technology"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "technology"
+      ]
+    },
+    {
+      "file": "_posts/2005/2005-11-05-post-futility.md",
+      "title": "Post-futility",
+      "old_piles": [],
+      "new_piles": [],
+      "suggested_additions": [],
+      "total_piles": []
+    },
+    {
+      "file": "_posts/2005/2005-11-07-designed-to-break.md",
+      "title": "Designed to break",
+      "old_piles": [],
+      "new_piles": [],
+      "suggested_additions": [],
+      "total_piles": []
+    },
+    {
+      "file": "_posts/2006/2006-05-31-higher-highs-lower-lows.md",
+      "title": "30: Higher highs and lower lows",
+      "old_piles": [
+        "self-reflection",
+        "year-in-review"
+      ],
+      "new_piles": [
+        "reflection",
+        "year-review"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "reflection",
+        "year-review"
+      ]
+    },
+    {
+      "file": "_posts/2007/2007-02-07-history-of-my-self-tracking.md",
+      "title": "History of my self-tracking",
+      "old_piles": [
+        "self-tracking",
+        "game-theory"
+      ],
+      "new_piles": [
+        "game-theory",
+        "self-tracking"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "game-theory",
+        "self-tracking"
+      ]
+    },
+    {
+      "file": "_posts/2007/2007-05-29-double-down.md",
+      "title": "31: Double down",
+      "old_piles": [
+        "self-reflection",
+        "year-in-review"
+      ],
+      "new_piles": [
+        "reflection",
+        "year-review"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "reflection",
+        "year-review"
+      ]
+    },
+    {
+      "file": "_posts/2008/2008-05-27-no-problem.md",
+      "title": "32: No problem",
+      "old_piles": [
+        "self-reflection",
+        "year-in-review"
+      ],
+      "new_piles": [
+        "reflection",
+        "year-review"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "reflection",
+        "year-review"
+      ]
+    },
+    {
+      "file": "_posts/2009/2009-05-28-frugal-to-the-max.md",
+      "title": "33: Frugal to the max",
+      "old_piles": [
+        "self-reflection",
+        "year-in-review"
+      ],
+      "new_piles": [
+        "reflection",
+        "year-review"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "reflection",
+        "year-review"
+      ]
+    },
+    {
+      "file": "_posts/2009/2009-12-16-750-words-a-day.md",
+      "title": "750 words a day, or a defense of private, unfiltered, unplanned writing",
+      "old_piles": [
+        "project",
+        "750-words"
+      ],
+      "new_piles": [
+        "750words",
+        "update",
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "750words",
+        "update",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2010/2010-05-28-cultivate-the-core.md",
+      "title": "34: Cultivate the core",
+      "old_piles": [
+        "self-reflection",
+        "year-in-review"
+      ],
+      "new_piles": [
+        "reflection",
+        "year-review"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "reflection",
+        "year-review"
+      ]
+    },
+    {
+      "file": "_posts/2010/2010-11-25-we-are-paper-boats.md",
+      "title": "We are paper boats",
+      "old_piles": [
+        "self-reflection",
+        "year-in-review"
+      ],
+      "new_piles": [
+        "reflection",
+        "year-review"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "reflection",
+        "year-review"
+      ]
+    },
+    {
+      "file": "_posts/2011/2011-01-06-why-wasnt-i-consulted.md",
+      "title": "Why Wasn't I Consulted?",
+      "old_piles": [
+        "product-management",
+        "technology"
+      ],
+      "new_piles": [
+        "technology",
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "technology",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2011/2011-01-10-im-a-techno-futuro-optimist.md",
+      "title": "I'm a techno-futuro-optimist",
+      "old_piles": [],
+      "new_piles": [],
+      "suggested_additions": [],
+      "total_piles": []
+    },
+    {
+      "file": "_posts/2011/2011-03-22-spring-sponge-or-stone.md",
+      "title": "Spring, Sponge, or Stone?",
+      "old_piles": [
+        "resiliance",
+        "behavior-change"
+      ],
+      "new_piles": [
+        "behavior-change"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "behavior-change"
+      ]
+    },
+    {
+      "file": "_posts/2011/2011-05-28-love-the-struggle.md",
+      "title": "35: Love the struggle",
+      "old_piles": [
+        "self-reflection",
+        "year-in-review"
+      ],
+      "new_piles": [
+        "reflection",
+        "year-review"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "reflection",
+        "year-review"
+      ]
+    },
+    {
+      "file": "_posts/2011/2011-06-11-what-ive-learned-taking-photos-every-day-836pm.md",
+      "title": "What I’ve learned taking photos every day at 8:36 p.m.",
+      "old_piles": [
+        "self-reflection",
+        "project",
+        "family"
+      ],
+      "new_piles": [
+        "reflection",
+        "relationships",
+        "update",
+        "work"
+      ],
+      "suggested_additions": [
+        "year-review"
+      ],
+      "total_piles": [
+        "reflection",
+        "relationships",
+        "update",
+        "work",
+        "year-review"
+      ]
+    },
+    {
+      "file": "_posts/2012/2012-05-28-talk-it-out.md",
+      "title": "36: Talk it out",
+      "old_piles": [
+        "self-reflection",
+        "year-in-review"
+      ],
+      "new_piles": [
+        "reflection",
+        "year-review"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "reflection",
+        "year-review"
+      ]
+    },
+    {
+      "file": "_posts/2012/2012-07-11-a-duck-bears-no-grudges.md",
+      "title": "A duck bears no grudges",
+      "old_piles": [
+        "behavior-change",
+        "mindset"
+      ],
+      "new_piles": [
+        "behavior-change",
+        "psychology"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "behavior-change",
+        "psychology"
+      ]
+    },
+    {
+      "file": "_posts/2012/2012-07-25-everything-i-currently-know-about-habits.md",
+      "title": "Everything I (currently) know about starting and keeping habits in one long manifesto",
+      "old_piles": [
+        "behavior-change",
+        "750-words"
+      ],
+      "new_piles": [
+        "750words",
+        "behavior-change",
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "750words",
+        "behavior-change",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2012/2012-07-31-why-just-do-it-is-bullshit.md",
+      "title": "Why 'Just Do It' is bullshit",
+      "old_piles": [
+        "behavior-change"
+      ],
+      "new_piles": [
+        "behavior-change"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "behavior-change"
+      ]
+    },
+    {
+      "file": "_posts/2012/2012-08-17-a-friendly-safety-reminder.md",
+      "title": "A friendly safety reminder",
+      "old_piles": [
+        "security"
+      ],
+      "new_piles": [
+        "technology"
+      ],
+      "suggested_additions": [
+        "relationships"
+      ],
+      "total_piles": [
+        "relationships",
+        "technology"
+      ]
+    },
+    {
+      "file": "_posts/2012/2012-08-17-the-half-plants-diet.md",
+      "title": "The half-plants diet",
+      "old_piles": [
+        "health"
+      ],
+      "new_piles": [
+        "health"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "health"
+      ]
+    },
+    {
+      "file": "_posts/2012/2012-09-16-tweet-fearlessly.md",
+      "title": "Tweet fearlessly",
+      "old_piles": [
+        "security"
+      ],
+      "new_piles": [
+        "technology"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "technology"
+      ]
+    },
+    {
+      "file": "_posts/2012/2012-09-22-the-i-dont-want-to-habit.md",
+      "title": "The \"I don't want to\" habit",
+      "old_piles": [
+        "behavior-change"
+      ],
+      "new_piles": [
+        "behavior-change"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "behavior-change"
+      ]
+    },
+    {
+      "file": "_posts/2012/2012-09-26-one-dollar-for-you.md",
+      "title": "$1 for you",
+      "old_piles": [
+        "behavior-change",
+        "complaining"
+      ],
+      "new_piles": [
+        "behavior-change"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "behavior-change"
+      ]
+    },
+    {
+      "file": "_posts/2012/2012-10-05-look-look-look.md",
+      "title": "Look, look, look",
+      "old_piles": [
+        "mindset"
+      ],
+      "new_piles": [
+        "behavior-change",
+        "psychology"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "behavior-change",
+        "psychology"
+      ]
+    },
+    {
+      "file": "_posts/2012/2012-10-06-who-you-are-vs-who-you-want-to-be.md",
+      "title": "Who you are vs who you want to be",
+      "old_piles": [
+        "internal-voices"
+      ],
+      "new_piles": [
+        "internal-voices"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "internal-voices"
+      ]
+    },
+    {
+      "file": "_posts/2012/2012-10-10-behavior-change-is-belief-change.md",
+      "title": "Behavior change is belief change",
+      "old_piles": [
+        "behavior-change"
+      ],
+      "new_piles": [
+        "behavior-change"
+      ],
+      "suggested_additions": [
+        "codex-vitae",
+        "philosophy"
+      ],
+      "total_piles": [
+        "behavior-change",
+        "codex-vitae",
+        "philosophy"
+      ]
+    },
+    {
+      "file": "_posts/2012/2012-10-30-zoomed-out.md",
+      "title": "Zoomed out",
+      "old_piles": [
+        "family"
+      ],
+      "new_piles": [
+        "relationships"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "relationships"
+      ]
+    },
+    {
+      "file": "_posts/2012/2012-11-04-what-im-tracking-now-and-why.md",
+      "title": "What I'm tracking now and why",
+      "old_piles": [
+        "self-tracking"
+      ],
+      "new_piles": [
+        "self-tracking"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "self-tracking"
+      ]
+    },
+    {
+      "file": "_posts/2012/2012-11-18-ab-fit.md",
+      "title": "A/B fit",
+      "old_piles": [
+        "critical-thinking",
+        "systems-thinking"
+      ],
+      "new_piles": [
+        "cognitive-science",
+        "systems-thinking"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "cognitive-science",
+        "systems-thinking"
+      ]
+    },
+    {
+      "file": "_posts/2012/2012-11-18-disconnect-saturdays.md",
+      "title": "Disconnect Saturdays",
+      "old_piles": [
+        "behavior-change"
+      ],
+      "new_piles": [
+        "behavior-change"
+      ],
+      "suggested_additions": [
+        "relationships"
+      ],
+      "total_piles": [
+        "behavior-change",
+        "relationships"
+      ]
+    },
+    {
+      "file": "_posts/2012/2012-11-28-codex-vitae.md",
+      "title": "Codex Vitae",
+      "old_piles": [
+        "self-reflection",
+        "codex-vitae",
+        "project"
+      ],
+      "new_piles": [
+        "codex-vitae",
+        "reflection",
+        "update",
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "codex-vitae",
+        "reflection",
+        "update",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2012/2012-12-08-anything-is-possible.md",
+      "title": "\"Anything is possible.\"",
+      "old_piles": [
+        "behavior-change"
+      ],
+      "new_piles": [
+        "behavior-change"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "behavior-change"
+      ]
+    },
+    {
+      "file": "_posts/2012/2012-12-28-rabbit-rabbit.md",
+      "title": "Rabbit Rabbit Resolution Accountability Squad",
+      "old_piles": [
+        "self-reflection"
+      ],
+      "new_piles": [
+        "reflection"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "reflection"
+      ]
+    },
+    {
+      "file": "_posts/2012/2012-12-31-my-2013-resolution.md",
+      "title": "My 2013 resolution: memento morning",
+      "old_piles": [
+        "behavior-change"
+      ],
+      "new_piles": [
+        "behavior-change"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "behavior-change"
+      ]
+    },
+    {
+      "file": "_posts/2013/2013-01-04-starter-kit.md",
+      "title": "Starter kit for a solar-powered self-replicating 3D printer that can make enough money to buy its own materials, pick them up, and print children when it feels ready.",
+      "old_piles": [
+        "thought-experiment",
+        "artificial-intelligence"
+      ],
+      "new_piles": [
+        "philosophy",
+        "technology"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "philosophy",
+        "technology"
+      ]
+    },
+    {
+      "file": "_posts/2013/2013-01-23-is-this-your-best-possible-work.md",
+      "title": "Is this your best possible work?",
+      "old_piles": [],
+      "new_piles": [],
+      "suggested_additions": [],
+      "total_piles": []
+    },
+    {
+      "file": "_posts/2013/2013-01-28-one-dollar-conclusion.md",
+      "title": "$1 for you (conclusion)",
+      "old_piles": [
+        "behavior-change",
+        "complaining"
+      ],
+      "new_piles": [
+        "behavior-change"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "behavior-change"
+      ]
+    },
+    {
+      "file": "_posts/2013/2013-02-19-the-long-slog.md",
+      "title": "The long slog",
+      "old_piles": [
+        "behavior-change"
+      ],
+      "new_piles": [
+        "behavior-change"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "behavior-change"
+      ]
+    },
+    {
+      "file": "_posts/2013/2013-02-23-our-filters.md",
+      "title": "Our filters",
+      "old_piles": [
+        "cognitive-biases"
+      ],
+      "new_piles": [
+        "cognitive-biases",
+        "cognitive-science"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "cognitive-biases",
+        "cognitive-science"
+      ]
+    },
+    {
+      "file": "_posts/2013/2013-03-03-my-two-brains.md",
+      "title": "My two brains",
+      "old_piles": [],
+      "new_piles": [],
+      "suggested_additions": [],
+      "total_piles": []
+    },
+    {
+      "file": "_posts/2013/2013-03-05-the-game-of-life.md",
+      "title": "The game of life",
+      "old_piles": [
+        "mindset"
+      ],
+      "new_piles": [
+        "behavior-change",
+        "psychology"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "behavior-change",
+        "psychology"
+      ]
+    },
+    {
+      "file": "_posts/2013/2013-03-13-are-your-habits-tiny-or-huge.md",
+      "title": "Are your habits tiny or huge?",
+      "old_piles": [
+        "behavior-change"
+      ],
+      "new_piles": [
+        "behavior-change"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "behavior-change"
+      ]
+    },
+    {
+      "file": "_posts/2013/2013-03-18-how-to-change-yourself-v1.md",
+      "title": "How to change yourself (v0.1)",
+      "old_piles": [
+        "behavior-change"
+      ],
+      "new_piles": [
+        "behavior-change"
+      ],
+      "suggested_additions": [
+        "guide"
+      ],
+      "total_piles": [
+        "behavior-change",
+        "guide"
+      ]
+    },
+    {
+      "file": "_posts/2013/2013-03-20-too-simple-cheap-easy-obvious-bias.md",
+      "title": "Too simple, cheap, easy, obvious bias",
+      "old_piles": [
+        "cognitive-biases",
+        "mindfulness"
+      ],
+      "new_piles": [
+        "cognitive-biases",
+        "cognitive-science",
+        "spirituality"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "cognitive-biases",
+        "cognitive-science",
+        "spirituality"
+      ]
+    },
+    {
+      "file": "_posts/2013/2013-04-07-three-cognitive-biases-walk-into-a-bar.md",
+      "title": "Three cognitive biases walk into a bar...",
+      "old_piles": [
+        "cognitive-biases"
+      ],
+      "new_piles": [
+        "cognitive-biases",
+        "cognitive-science"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "cognitive-biases",
+        "cognitive-science"
+      ]
+    },
+    {
+      "file": "_posts/2013/2013-04-22-one-metric-kiloslog.md",
+      "title": "1 metric kiloslog",
+      "old_piles": [
+        "self-tracking"
+      ],
+      "new_piles": [
+        "self-tracking"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "self-tracking"
+      ]
+    },
+    {
+      "file": "_posts/2013/2013-05-04-if-i-lived-100-times.md",
+      "title": "If I lived 100 times",
+      "old_piles": [
+        "death",
+        "critical-thinking"
+      ],
+      "new_piles": [
+        "cognitive-science",
+        "mortality"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "cognitive-science",
+        "mortality"
+      ]
+    },
+    {
+      "file": "_posts/2013/2013-05-17-celebrate-your-next-death-day.md",
+      "title": "Celebrate your next death day",
+      "old_piles": [
+        "death"
+      ],
+      "new_piles": [
+        "mortality"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "mortality"
+      ]
+    },
+    {
+      "file": "_posts/2013/2013-05-28-more-kiloslogs.md",
+      "title": "37: More kiloslogs",
+      "old_piles": [
+        "self-reflection",
+        "year-in-review"
+      ],
+      "new_piles": [
+        "reflection",
+        "year-review"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "reflection",
+        "year-review"
+      ]
+    },
+    {
+      "file": "_posts/2013/2013-06-05-experimenting-with-subjectivity.md",
+      "title": "Experimenting with subjectivity",
+      "old_piles": [],
+      "new_piles": [],
+      "suggested_additions": [
+        "experiment"
+      ],
+      "total_piles": [
+        "experiment"
+      ]
+    },
+    {
+      "file": "_posts/2013/2013-06-16-know-thy-umwelt.md",
+      "title": "Know Thy Umwelt",
+      "old_piles": [
+        "internal-voices"
+      ],
+      "new_piles": [
+        "internal-voices"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "internal-voices"
+      ]
+    },
+    {
+      "file": "_posts/2013/2013-06-29-the-death-bed-game.md",
+      "title": "The death bed game",
+      "old_piles": [
+        "death",
+        "self-tracking"
+      ],
+      "new_piles": [
+        "mortality",
+        "self-tracking"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "mortality",
+        "self-tracking"
+      ]
+    },
+    {
+      "file": "_posts/2013/2013-07-13-the-elephants.md",
+      "title": "The Elephants",
+      "old_piles": [
+        "behavior-change",
+        "rules-to-live-by"
+      ],
+      "new_piles": [
+        "behavior-change",
+        "codex-vitae"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "behavior-change",
+        "codex-vitae"
+      ]
+    },
+    {
+      "file": "_posts/2013/2013-07-25-whats-your-life-change-score.md",
+      "title": "What's your life change score?",
+      "old_piles": [
+        "self-tracking"
+      ],
+      "new_piles": [
+        "self-tracking"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "self-tracking"
+      ]
+    },
+    {
+      "file": "_posts/2013/2013-08-24-live-like-a-hydra.md",
+      "title": "Live like a hydra",
+      "old_piles": [
+        "resiliance",
+        "behavior-change",
+        "self-tracking",
+        "personal-mythology"
+      ],
+      "new_piles": [
+        "behavior-change",
+        "identity",
+        "self-tracking"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "behavior-change",
+        "identity",
+        "self-tracking"
+      ]
+    },
+    {
+      "file": "_posts/2013/2013-08-28-managing-my-internet-rage.md",
+      "title": "Managing my internet rage",
+      "old_piles": [
+        "dialogue",
+        "cognitive-dissonance"
+      ],
+      "new_piles": [
+        "cognitive-science",
+        "dialogue",
+        "psychology"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "cognitive-science",
+        "dialogue",
+        "psychology"
+      ]
+    },
+    {
+      "file": "_posts/2013/2013-09-23-make-your-own-horse-ebooks.md",
+      "title": "Make your own @horse_ebooks",
+      "old_piles": [
+        "technology",
+        "artificial-intelligence"
+      ],
+      "new_piles": [
+        "technology"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "technology"
+      ]
+    },
+    {
+      "file": "_posts/2013/2013-12-31-make-better-resolutions.md",
+      "title": "Make better resolutions",
+      "old_piles": [
+        "behavior-change"
+      ],
+      "new_piles": [
+        "behavior-change"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "behavior-change"
+      ]
+    },
+    {
+      "file": "_posts/2014/2014-02-17-smarter-than-smart.md",
+      "title": "Smarter than smart",
+      "old_piles": [
+        "critical-thinking"
+      ],
+      "new_piles": [
+        "cognitive-science"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "cognitive-science"
+      ]
+    },
+    {
+      "file": "_posts/2014/2014-02-17-the-concept-of-a-person.md",
+      "title": "The concept of a person",
+      "old_piles": [
+        "internal-voices"
+      ],
+      "new_piles": [
+        "internal-voices"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "internal-voices"
+      ]
+    },
+    {
+      "file": "_posts/2014/2014-03-17-how-i-track-my-life.md",
+      "title": "How I track my life",
+      "old_piles": [
+        "behavior-change",
+        "quality-time",
+        "technology"
+      ],
+      "new_piles": [
+        "behavior-change",
+        "relationships",
+        "technology"
+      ],
+      "suggested_additions": [
+        "self-tracking"
+      ],
+      "total_piles": [
+        "behavior-change",
+        "relationships",
+        "self-tracking",
+        "technology"
+      ]
+    },
+    {
+      "file": "_posts/2014/2014-05-28-cultivate-quality-time.md",
+      "title": "38 is great: cultivate quality time",
+      "old_piles": [
+        "self-reflection",
+        "quality-time",
+        "year-in-review"
+      ],
+      "new_piles": [
+        "reflection",
+        "relationships",
+        "year-review"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "reflection",
+        "relationships",
+        "year-review"
+      ]
+    },
+    {
+      "file": "_posts/2014/2014-07-30-the-technology.md",
+      "title": "The Technology",
+      "old_piles": [
+        "product-management"
+      ],
+      "new_piles": [
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2014/2014-08-10-3-lane-product-development.md",
+      "title": "3-lane product development",
+      "old_piles": [
+        "product-management"
+      ],
+      "new_piles": [
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2014/2014-10-18-universe-soloverse.md",
+      "title": "Universe ↔ soloverse",
+      "old_piles": [
+        "internal-voices"
+      ],
+      "new_piles": [
+        "internal-voices"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "internal-voices"
+      ]
+    },
+    {
+      "file": "_posts/2014/2014-10-22-better-than-meditation.md",
+      "title": "Better than meditation",
+      "old_piles": [
+        "mindfulness",
+        "750-words"
+      ],
+      "new_piles": [
+        "750words",
+        "spirituality",
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "750words",
+        "spirituality",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2014/2014-11-29-self-coaching-experiment-results.md",
+      "title": "Self-coaching experiment results",
+      "old_piles": [
+        "behavior-change",
+        "project"
+      ],
+      "new_piles": [
+        "behavior-change",
+        "update",
+        "work"
+      ],
+      "suggested_additions": [
+        "experiment"
+      ],
+      "total_piles": [
+        "behavior-change",
+        "experiment",
+        "update",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2015/2015-05-27-the-element-of-irreducible-rascality.md",
+      "title": "The Element of Irreducible Rascality",
+      "old_piles": [
+        "personal-mythology"
+      ],
+      "new_piles": [
+        "identity"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "identity"
+      ]
+    },
+    {
+      "file": "_posts/2015/2015-06-13-make-wiggle-room.md",
+      "title": "39: Make wiggle room",
+      "old_piles": [
+        "self-reflection",
+        "year-in-review"
+      ],
+      "new_piles": [
+        "reflection",
+        "year-review"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "reflection",
+        "year-review"
+      ]
+    },
+    {
+      "file": "_posts/2015/2015-09-20-systems-thinking-for-kids.md",
+      "title": "Systems Thinking For Kids",
+      "old_piles": [
+        "systems-thinking"
+      ],
+      "new_piles": [
+        "systems-thinking"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "systems-thinking"
+      ]
+    },
+    {
+      "file": "_posts/2016/2016-03-21-software-vs-humans.md",
+      "title": "Software vs Humans",
+      "old_piles": [
+        "self-reflection",
+        "systems-thinking",
+        "year-in-review"
+      ],
+      "new_piles": [
+        "reflection",
+        "systems-thinking",
+        "year-review"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "reflection",
+        "systems-thinking",
+        "year-review"
+      ]
+    },
+    {
+      "file": "_posts/2016/2016-05-28-mind-the-loops.md",
+      "title": "40: Mind the loops",
+      "old_piles": [
+        "self-reflection",
+        "systems-thinking",
+        "year-in-review"
+      ],
+      "new_piles": [
+        "reflection",
+        "systems-thinking",
+        "year-review"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "reflection",
+        "systems-thinking",
+        "year-review"
+      ]
+    },
+    {
+      "file": "_posts/2016/2016-06-01-life-of-clodia.md",
+      "title": "Life of Clodia",
+      "old_piles": [
+        "fiction",
+        "systems-thinking",
+        "project"
+      ],
+      "new_piles": [
+        "fiction",
+        "systems-thinking",
+        "update",
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "fiction",
+        "systems-thinking",
+        "update",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2016/2016-07-17-codex-vitae-better-humans.md",
+      "title": "Codex Vitae - Better Humans",
+      "old_piles": [
+        "self-tracking",
+        "codex-vitae"
+      ],
+      "new_piles": [
+        "codex-vitae",
+        "self-tracking"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "codex-vitae",
+        "self-tracking"
+      ]
+    },
+    {
+      "file": "_posts/2016/2016-09-01-cognitive-bias-cheat-sheet.md",
+      "title": "Cognitive bias cheat sheet",
+      "old_piles": [
+        "cognitive-biases"
+      ],
+      "new_piles": [
+        "cognitive-biases",
+        "cognitive-science"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "cognitive-biases",
+        "cognitive-science"
+      ]
+    },
+    {
+      "file": "_posts/2017/2017-01-07-cognitive-bias-cheat-sheet-simplified.md",
+      "title": "Cognitive bias cheat sheet, simplified",
+      "old_piles": [
+        "cognitive-biases"
+      ],
+      "new_piles": [
+        "cognitive-biases",
+        "cognitive-science"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "cognitive-biases",
+        "cognitive-science"
+      ]
+    },
+    {
+      "file": "_posts/2017/2017-02-06-stephen-covey-7-habits-of-highly-effective-people.md",
+      "title": "7 Habits of Highly Effective People",
+      "old_piles": [
+        "dialogue",
+        "rules-to-live-by"
+      ],
+      "new_piles": [
+        "codex-vitae",
+        "dialogue"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "codex-vitae",
+        "dialogue"
+      ]
+    },
+    {
+      "file": "_posts/2017/2017-05-28-41-seek-endarkenment.md",
+      "title": "41: Seek endarkenment",
+      "old_piles": [
+        "self-reflection",
+        "negative-space",
+        "year-in-review"
+      ],
+      "new_piles": [
+        "negative-space",
+        "reflection",
+        "year-review"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "negative-space",
+        "reflection",
+        "year-review"
+      ]
+    },
+    {
+      "file": "_posts/2017/2017-10-27-rational-one-minute-guide.md",
+      "title": "A rational person's 1-minute guide to why rational thinking often fails to persuade people",
+      "old_piles": [
+        "cognitive-biases"
+      ],
+      "new_piles": [
+        "cognitive-biases",
+        "cognitive-science"
+      ],
+      "suggested_additions": [
+        "guide"
+      ],
+      "total_piles": [
+        "cognitive-biases",
+        "cognitive-science",
+        "guide"
+      ]
+    },
+    {
+      "file": "_posts/2018/2018-07-02-42-dig-deeper.md",
+      "title": "42: Dig deeper",
+      "old_piles": [
+        "self-reflection",
+        "year-in-review"
+      ],
+      "new_piles": [
+        "reflection",
+        "year-review"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "reflection",
+        "year-review"
+      ]
+    },
+    {
+      "file": "_posts/2018/2018-12-30-monopoly-teaching-game.md",
+      "title": "Monopoly’s Anti-Capitalist, Socialist Roots as a Teaching Game at Wharton",
+      "old_piles": [
+        "game-theory"
+      ],
+      "new_piles": [
+        "game-theory"
+      ],
+      "suggested_additions": [
+        "society"
+      ],
+      "total_piles": [
+        "game-theory",
+        "society"
+      ]
+    },
+    {
+      "file": "_posts/2018/2018-12-31-history-of-my-beliefs.md",
+      "title": "History of my beliefs (so far)",
+      "old_piles": [
+        "self-tracking",
+        "codex-vitae"
+      ],
+      "new_piles": [
+        "codex-vitae",
+        "self-tracking"
+      ],
+      "suggested_additions": [
+        "philosophy"
+      ],
+      "total_piles": [
+        "codex-vitae",
+        "philosophy",
+        "self-tracking"
+      ]
+    },
+    {
+      "file": "_posts/2018/2018-12-31-the-negative-space-of-technology.md",
+      "title": "Sarah Mei’s thread about the negative space of technology",
+      "old_piles": [
+        "negative-space"
+      ],
+      "new_piles": [
+        "negative-space"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "negative-space"
+      ]
+    },
+    {
+      "file": "_posts/2019/2019-01-02-equilibriums-and-limits.md",
+      "title": "Equilibriums and Limits: a better way to look at most every political issue",
+      "old_piles": [
+        "dialogue"
+      ],
+      "new_piles": [
+        "dialogue"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "dialogue"
+      ]
+    },
+    {
+      "file": "_posts/2019/2019-01-04-30-fundamentals.md",
+      "title": "30 fundamentals",
+      "old_piles": [
+        "rules-to-live-by"
+      ],
+      "new_piles": [
+        "codex-vitae"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "codex-vitae"
+      ]
+    },
+    {
+      "file": "_posts/2019/2019-01-07-fruitful.md",
+      "title": "Announcing a new friendly and diverse community: Fruitful",
+      "old_piles": [
+        "dialogue",
+        "project",
+        "community",
+        "book"
+      ],
+      "new_piles": [
+        "creativity",
+        "dialogue",
+        "relationships",
+        "society",
+        "update",
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "creativity",
+        "dialogue",
+        "relationships",
+        "society",
+        "update",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2019/2019-01-09-friendly-and-diverse-community.md",
+      "title": "Can a friendly and diverse dialogue exist between liberals and conservatives on the internet?",
+      "old_piles": [
+        "dialogue",
+        "community"
+      ],
+      "new_piles": [
+        "dialogue",
+        "relationships",
+        "society"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "dialogue",
+        "relationships",
+        "society"
+      ]
+    },
+    {
+      "file": "_posts/2019/2019-01-17-hippocratic-oath.md",
+      "title": "The Hippocratic Oath",
+      "old_piles": [
+        "health",
+        "negative-space"
+      ],
+      "new_piles": [
+        "health",
+        "negative-space"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "health",
+        "negative-space"
+      ]
+    },
+    {
+      "file": "_posts/2019/2019-01-17-the-beginning-of-a-fruitful-dialogue.md",
+      "title": "The Beginning of a Fruitful Dialogue",
+      "old_piles": [
+        "dialogue",
+        "fruitful"
+      ],
+      "new_piles": [
+        "dialogue"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "dialogue"
+      ]
+    },
+    {
+      "file": "_posts/2019/2019-01-18-guidelines-for-fruitful-dialogue.md",
+      "title": "Guidelines for Fruitful Dialogue",
+      "old_piles": [
+        "dialogue",
+        "fruitful"
+      ],
+      "new_piles": [
+        "dialogue"
+      ],
+      "suggested_additions": [
+        "guide"
+      ],
+      "total_piles": [
+        "dialogue",
+        "guide"
+      ]
+    },
+    {
+      "file": "_posts/2019/2019-01-20-the-definition-of-emotional-labor-has-changed.md",
+      "title": "The definition of “emotional labor” has changed",
+      "old_piles": [
+        "social-issues"
+      ],
+      "new_piles": [
+        "society"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "society"
+      ]
+    },
+    {
+      "file": "_posts/2019/2019-02-06-history-of-my-name.md",
+      "title": "History of my name",
+      "old_piles": [
+        "self-reflection",
+        "family"
+      ],
+      "new_piles": [
+        "reflection",
+        "relationships"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "reflection",
+        "relationships"
+      ]
+    },
+    {
+      "file": "_posts/2019/2019-02-12-the-green-new-deal-is-a-one-pager-for-america.md",
+      "title": "The Green New Deal is a 1-Pager for America",
+      "old_piles": [
+        "dialogue",
+        "critical-thinking"
+      ],
+      "new_piles": [
+        "cognitive-science",
+        "dialogue"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "cognitive-science",
+        "dialogue"
+      ]
+    },
+    {
+      "file": "_posts/2019/2019-02-20-oakland-schools-are-struggling.md",
+      "title": "Oakland schools are struggling",
+      "old_piles": [
+        "dialogue"
+      ],
+      "new_piles": [
+        "dialogue"
+      ],
+      "suggested_additions": [
+        "society"
+      ],
+      "total_piles": [
+        "dialogue",
+        "society"
+      ]
+    },
+    {
+      "file": "_posts/2019/2019-03-22-one-dollar-early-bird-special.md",
+      "title": "$1/month early bird special ⛅️",
+      "old_piles": [
+        "being-a-creator"
+      ],
+      "new_piles": [
+        "creativity",
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "creativity",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2019/2019-04-03-how-I-bootstrapped-750-words.md",
+      "title": "How I bootstrapped my side project into a $20k/mo lifestyle business",
+      "old_piles": [
+        "project",
+        "750-words"
+      ],
+      "new_piles": [
+        "750words",
+        "update",
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "750words",
+        "update",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2019/2019-04-12-well-that-backfired.md",
+      "title": "Well that backfired",
+      "old_piles": [
+        "cognitive-biases",
+        "book"
+      ],
+      "new_piles": [
+        "cognitive-biases",
+        "cognitive-science",
+        "creativity",
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "cognitive-biases",
+        "cognitive-science",
+        "creativity",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2019/2019-05-10-pocket-biases.md",
+      "title": "Pocket Biases",
+      "old_piles": [
+        "cognitive-biases",
+        "book",
+        "project"
+      ],
+      "new_piles": [
+        "cognitive-biases",
+        "cognitive-science",
+        "creativity",
+        "update",
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "cognitive-biases",
+        "cognitive-science",
+        "creativity",
+        "update",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2019/2019-05-31-43-all-in-and-with-the-flow.md",
+      "title": "43: All in & with the flow",
+      "old_piles": [
+        "self-reflection",
+        "year-in-review"
+      ],
+      "new_piles": [
+        "reflection",
+        "year-review"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "reflection",
+        "year-review"
+      ]
+    },
+    {
+      "file": "_posts/2019/2019-06-03-what-can-we-do-about-our-bias.md",
+      "title": "What Can We Do About Our Bias?",
+      "old_piles": [
+        "dialogue",
+        "book"
+      ],
+      "new_piles": [
+        "creativity",
+        "dialogue",
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "creativity",
+        "dialogue",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2019/2019-09-16-an-alternative-to-zingers.md",
+      "title": "An alternative to zingers",
+      "old_piles": [
+        "dialogue",
+        "book"
+      ],
+      "new_piles": [
+        "creativity",
+        "dialogue",
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "creativity",
+        "dialogue",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2019/2019-10-01-podcast-tour-for-why-are-we-yelling.md",
+      "title": "Podcast tour for Why Are We Yelling?",
+      "old_piles": [
+        "book"
+      ],
+      "new_piles": [
+        "creativity",
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "creativity",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2019/2019-10-09-new-book-website.md",
+      "title": "Ooh look, a book",
+      "old_piles": [
+        "being-a-creator"
+      ],
+      "new_piles": [
+        "creativity",
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "creativity",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2019/2019-10-31-testing-the-disagreement-template.md",
+      "title": "Testing the disagreement template",
+      "old_piles": [
+        "dialogue",
+        "book"
+      ],
+      "new_piles": [
+        "creativity",
+        "dialogue",
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "creativity",
+        "dialogue",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2019/2019-11-19-we-now-know-why-we-are-yelling.md",
+      "title": "We Now Know Why We Are Yelling!",
+      "old_piles": [
+        "being-a-creator",
+        "book"
+      ],
+      "new_piles": [
+        "creativity",
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "creativity",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2019/2019-12-14-we-need-an-alternative-to-the-heros-journey.md",
+      "title": "We need an alternative to the Hero’s Journey",
+      "old_piles": [
+        "personal-mythology",
+        "wicked-problems"
+      ],
+      "new_piles": [
+        "identity",
+        "wicked-problems"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "identity",
+        "wicked-problems"
+      ]
+    },
+    {
+      "file": "_posts/2019/2019-12-18-qualities-of-wicked-problems.md",
+      "title": "What are the qualities of a wicked problem?",
+      "old_piles": [
+        "meta-crisis"
+      ],
+      "new_piles": [
+        "meta-crisis"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "meta-crisis"
+      ]
+    },
+    {
+      "file": "_posts/2020/2020-01-23-why-we-need-a-personal-mythology.md",
+      "title": "Why We Should Create Personal Mythologies (and How)",
+      "old_piles": [
+        "meta-crisis",
+        "personal-mythology"
+      ],
+      "new_piles": [
+        "identity",
+        "meta-crisis"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "identity",
+        "meta-crisis"
+      ]
+    },
+    {
+      "file": "_posts/2020/2020-04-07-one-meaningful-thing.md",
+      "title": "One meaningful thing",
+      "old_piles": [
+        "behavior-change"
+      ],
+      "new_piles": [
+        "behavior-change"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "behavior-change"
+      ]
+    },
+    {
+      "file": "_posts/2020/2020-05-28-750-words-v2.md",
+      "title": "750 Words V2 Updates, Timeline, Bugs",
+      "old_piles": [
+        "750-words"
+      ],
+      "new_piles": [
+        "750words",
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "750words",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2020/2020-05-28-an-amateurs-guide.md",
+      "title": "An Amateur’s Unfinished Map of Whatever Comes to Mind as This is Happening",
+      "old_piles": [
+        "being-a-creator"
+      ],
+      "new_piles": [
+        "creativity",
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "creativity",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2020/2020-05-28-year-of-the-amateur.md",
+      "title": "44: Year of the Amateur",
+      "old_piles": [
+        "self-reflection",
+        "year-in-review"
+      ],
+      "new_piles": [
+        "reflection",
+        "year-review"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "reflection",
+        "year-review"
+      ]
+    },
+    {
+      "file": "_posts/2020/2020-06-01-notes-on-awakening-from-the-meaning-crisis.md",
+      "title": "Notes on Awakening from the Meaning Crisis, by John Vervaeke",
+      "old_piles": [
+        "meta-crisis"
+      ],
+      "new_piles": [
+        "meta-crisis"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "meta-crisis"
+      ]
+    },
+    {
+      "file": "_posts/2020/2020-06-03-notes-on-white-fragility.md",
+      "title": "Notes on White Fragility, by Robin DiAngelo",
+      "old_piles": [
+        "social-issues"
+      ],
+      "new_piles": [
+        "society"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "society"
+      ]
+    },
+    {
+      "file": "_posts/2020/2020-06-08-on-white-fragility.md",
+      "title": "Letter.wiki conversation on White Fragility",
+      "old_piles": [
+        "dialogue",
+        "social-issues"
+      ],
+      "new_piles": [
+        "dialogue",
+        "society"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "dialogue",
+        "society"
+      ]
+    },
+    {
+      "file": "_posts/2020/2020-07-14-notes-on-tim-urbans-epic-blog-post-series-a-story-of-us.md",
+      "title": "Notes on Tim Urban's epic blog post series, \"A Story of Us\"",
+      "old_piles": [
+        "meta-crisis"
+      ],
+      "new_piles": [
+        "meta-crisis"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "meta-crisis"
+      ]
+    },
+    {
+      "file": "_posts/2021/2021-01-28-visualizing-our-shared-mood-take-one.md",
+      "title": "Visualizing our shared mood, take one",
+      "old_piles": [],
+      "new_piles": [],
+      "suggested_additions": [],
+      "total_piles": []
+    },
+    {
+      "file": "_posts/2021/2021-03-25-brackish-notes-spring-2021.md",
+      "title": "Brackish Notes, Spring 2021",
+      "old_piles": [],
+      "new_piles": [],
+      "suggested_additions": [],
+      "total_piles": []
+    },
+    {
+      "file": "_posts/2021/2021-05-28-year-of-reconstellation.md",
+      "title": "45: Year of Reconstellation",
+      "old_piles": [
+        "self-reflection",
+        "year-in-review"
+      ],
+      "new_piles": [
+        "reflection",
+        "year-review"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "reflection",
+        "year-review"
+      ]
+    },
+    {
+      "file": "_posts/2021/2021-08-21-pocket-tarot.md",
+      "title": "Pocket Tarot",
+      "old_piles": [
+        "project",
+        "symbol-languages"
+      ],
+      "new_piles": [
+        "symbols",
+        "update",
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "symbols",
+        "update",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2022/2022-05-28-a-blagenflorble-heart.md",
+      "title": "46: A Blagenflorble Heart",
+      "old_piles": [
+        "self-reflection",
+        "year-in-review"
+      ],
+      "new_piles": [
+        "reflection",
+        "year-review"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "reflection",
+        "year-review"
+      ]
+    },
+    {
+      "file": "_posts/2022/2022-05-31-this-could-work-interview-about-750-words.md",
+      "title": "This Could Work podcast interview about 750 Words",
+      "old_piles": [
+        "750-words"
+      ],
+      "new_piles": [
+        "750words",
+        "work"
+      ],
+      "suggested_additions": [
+        "dialogue"
+      ],
+      "total_piles": [
+        "750words",
+        "dialogue",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2022/2022-07-05-blog-about-ideas-im-mulling.md",
+      "title": "Blog about ideas I'm mulling",
+      "old_piles": [
+        "self-reflection",
+        "codex-vitae",
+        "project",
+        "self-tracking"
+      ],
+      "new_piles": [
+        "codex-vitae",
+        "reflection",
+        "self-tracking",
+        "update",
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "codex-vitae",
+        "reflection",
+        "self-tracking",
+        "update",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2022/2022-07-05-ideas-im-mulling.md",
+      "title": "Ideas I'm Mulling",
+      "old_piles": [
+        "self-reflection",
+        "codex-vitae",
+        "project",
+        "self-tracking"
+      ],
+      "new_piles": [
+        "codex-vitae",
+        "reflection",
+        "self-tracking",
+        "update",
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "codex-vitae",
+        "reflection",
+        "self-tracking",
+        "update",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2022/2022-10-24-how-to-coach-yourself.md",
+      "title": "How To Coach Yourself",
+      "old_piles": [
+        "behavior-change",
+        "self-reflection"
+      ],
+      "new_piles": [
+        "behavior-change",
+        "reflection"
+      ],
+      "suggested_additions": [
+        "guide"
+      ],
+      "total_piles": [
+        "behavior-change",
+        "guide",
+        "reflection"
+      ]
+    },
+    {
+      "file": "_posts/2023/2023-05-31-chalant.md",
+      "title": "47 — CHALANT! ☄️",
+      "old_piles": [
+        "self-reflection",
+        "year-in-review"
+      ],
+      "new_piles": [
+        "reflection",
+        "year-review"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "reflection",
+        "year-review"
+      ]
+    },
+    {
+      "file": "_posts/2023/2023-06-11-new-experimental-feature-the-streak-fairy.md",
+      "title": "New experimental feature: the Streak Fairy",
+      "old_piles": [
+        "project",
+        "750-words"
+      ],
+      "new_piles": [
+        "750words",
+        "update",
+        "work"
+      ],
+      "suggested_additions": [
+        "experiment"
+      ],
+      "total_piles": [
+        "750words",
+        "experiment",
+        "update",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2023/2023-07-18-new-partner-program.md",
+      "title": "New Partner Program incentives focus on high-quality human writing",
+      "old_piles": [
+        "medium",
+        "product-management"
+      ],
+      "new_piles": [
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2024/2024-10-10-be-be-be.md",
+      "title": "48 — Be Buster Benson, BBB, Be Be Be, 🐝🐝🐝",
+      "old_piles": [
+        "self-reflection",
+        "year-in-review"
+      ],
+      "new_piles": [
+        "reflection",
+        "year-review"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "reflection",
+        "year-review"
+      ]
+    },
+    {
+      "file": "_posts/2024/2024-10-18-want-to-help-750-words-become-sustainable.md",
+      "title": "Want to help 750 Words become sustainable?",
+      "old_piles": [
+        "project",
+        "750-words"
+      ],
+      "new_piles": [
+        "750words",
+        "update",
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "750words",
+        "update",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2024/2024-10-24-a-new-way-to-share-stats.md",
+      "title": "A new way to share stats",
+      "old_piles": [
+        "project",
+        "750-words"
+      ],
+      "new_piles": [
+        "750words",
+        "update",
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "750words",
+        "update",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2024/2024-11-13-october-report-month-one-of-this-experiment-in-sustainability.md",
+      "title": "October report! Month one of this experiment in sustainability",
+      "old_piles": [
+        "project",
+        "750-words"
+      ],
+      "new_piles": [
+        "750words",
+        "update",
+        "work"
+      ],
+      "suggested_additions": [
+        "experiment"
+      ],
+      "total_piles": [
+        "750words",
+        "experiment",
+        "update",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2024/2024-12-03-I-analyzed-15-years-of-testimonials-from-users-of-750-Words.md",
+      "title": "I analyzed 15 years of testimonials from users of 750words.com to learn how their private journaling habits have helped them",
+      "old_piles": [
+        "project",
+        "750-words"
+      ],
+      "new_piles": [
+        "750words",
+        "update",
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "750words",
+        "update",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2024/2024-12-09-2024-november-update.md",
+      "title": "November update!",
+      "old_piles": [
+        "project",
+        "750-words"
+      ],
+      "new_piles": [
+        "750words",
+        "update",
+        "work"
+      ],
+      "suggested_additions": [],
+      "total_piles": [
+        "750words",
+        "update",
+        "work"
+      ]
+    },
+    {
+      "file": "_posts/2025/2025-03-18-what-are-your-beliefs-about-the-nature-of-reality.md",
+      "title": "What are your beliefs about the nature of reality?",
+      "old_piles": [
+        "self-reflection"
+      ],
+      "new_piles": [
+        "reflection"
+      ],
+      "suggested_additions": [
+        "codex-vitae",
+        "philosophy"
+      ],
+      "total_piles": [
+        "codex-vitae",
+        "philosophy",
+        "reflection"
+      ]
+    },
+    {
+      "file": "_posts/2025/2025-04-15-what-are-your-beliefs-about-the-nature-of-reality-v2.md",
+      "title": "What are your beliefs about the nature of reality? V2",
+      "old_piles": [
+        "self-reflection"
+      ],
+      "new_piles": [
+        "reflection"
+      ],
+      "suggested_additions": [
+        "codex-vitae",
+        "philosophy"
+      ],
+      "total_piles": [
+        "codex-vitae",
+        "philosophy",
+        "reflection"
+      ]
+    },
+    {
+      "file": "_posts/2025/2025-06-22-wanna-play-an-iterated-prisoners-dilemma-tournament-between-chatgpt-claude-gemini-and-humans.md",
+      "title": "Wanna play an iterated prisoner's dilemma tournament between ChatGPT, Claude, Gemini, and humans?",
+      "old_piles": [],
+      "new_piles": [],
+      "suggested_additions": [
+        "game-theory",
+        "prisoner-dilemma"
+      ],
+      "total_piles": [
+        "game-theory",
+        "prisoner-dilemma"
+      ]
+    },
+    {
+      "file": "_posts/2025/2025-06-26-dilemma-tournament-team-introductions.md",
+      "title": "Dilemma Tournament: Team Introductions!",
+      "old_piles": [],
+      "new_piles": [],
+      "suggested_additions": [],
+      "total_piles": []
+    },
+    {
+      "file": "_posts/2025/2025-07-06-dilemma-pregame-commentary.md",
+      "title": "001 - Dilemma Pregame Commentary",
+      "old_piles": [],
+      "new_piles": [],
+      "suggested_additions": [],
+      "total_piles": []
+    },
+    {
+      "file": "_posts/2025/2025-07-07-dilemma-round-one-results.md",
+      "title": "002 - Dilemma Round One Results",
+      "old_piles": [],
+      "new_piles": [],
+      "suggested_additions": [],
+      "total_piles": []
+    },
+    {
+      "file": "_posts/_index.md",
+      "title": "Blog",
+      "old_piles": [],
+      "new_piles": [],
+      "suggested_additions": [],
+      "total_piles": []
+    }
+  ]
+}
