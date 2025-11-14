@@ -486,6 +486,11 @@
     category: "world"
     tags: ["politics"]
 
+'2025-08-22':
+  - name: "Burned my resume"
+    category: "work"
+    tags: [""]
+
 '2056-09-12': 
   - name: "☠️ My life expectancy expiration date"
     category: "self"
