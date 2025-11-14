@@ -77,10 +77,11 @@ I'm proposing reorganizing your piles into 4 clear dimensions:
 - essay, experiment, guide (content types)
 
 **Result:**
-- 33 unique piles (down from 41)
+- 35 unique piles (down from 41)
 - More consistent granularity
 - Better coverage of your themes
 - Clearer organization
+- Keeps project-specific piles (750words, book, fruitful)
 
 ---
 
@@ -201,7 +202,7 @@ Here are some example mappings to give you a feel:
 
 **"47 - CHALANT!" (2023 year review)**
 - Old: `self-reflection`, `year-in-review`
-- New: `reflection`, `year-review`, `identity`, `psychology`, `spirituality`
+- New: `reflection`, `year-in-review`, `identity`, `psychology`, `spirituality`
 
 **"Cognitive Bias Cheat Sheet"**
 - Old: `cognitive-biases`
