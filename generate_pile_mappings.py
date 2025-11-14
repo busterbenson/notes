@@ -13,7 +13,7 @@ with open('pile_analysis.json', 'r') as f:
 PILE_MAPPING = {
     # Direct mappings (keep or rename)
     'self-reflection': ['reflection'],
-    'year-in-review': ['year-review', 'reflection'],
+    'year-in-review': ['year-in-review', 'reflection'],
     'dialogue': ['dialogue'],
     'fiction': ['fiction'],
     'game-theory': ['game-theory'],
@@ -27,9 +27,11 @@ PILE_MAPPING = {
     'wicked-problems': ['wicked-problems'],
     'meta-crisis': ['meta-crisis'],
     'symbol-languages': ['symbols'],
+    'book': ['book'],  # Keep project-specific
+    'fruitful': ['fruitful'],  # Keep project-specific
 
     # Consolidations
-    '750-words': ['750words', 'work'],
+    '750-words': ['750words'],  # Just remove hyphen
     'cognitive-biases': ['cognitive-science', 'cognitive-biases'],
     'critical-thinking': ['cognitive-science'],
     'mindset': ['psychology', 'behavior-change'],
@@ -46,7 +48,6 @@ PILE_MAPPING = {
 
     # Topic-based
     'project': ['update', 'work'],
-    'book': ['creativity', 'work'],
     'death': ['mortality'],
     'health': ['health'],
     'security': ['technology'],
@@ -57,21 +58,20 @@ PILE_MAPPING = {
 
     # Remove (merge into others)
     'complaining': [],  # Remove
-    'fruitful': [],  # Remove
     'medium': ['work'],  # Too specific
 }
 
 # Title/content-based suggestions
 TITLE_PATTERNS = {
-    r'\d+:': ['year-review', 'reflection'],  # "47: CHALANT"
-    r'year.{0,10}review': ['year-review', 'reflection'],
-    r'annual.{0,10}review': ['year-review', 'reflection'],
+    r'\d+:': ['year-in-review', 'reflection'],  # "47: CHALANT"
+    r'year.{0,10}review': ['year-in-review', 'reflection'],
+    r'annual.{0,10}review': ['year-in-review', 'reflection'],
     r'cognitive bias': ['cognitive-science', 'cognitive-biases'],
     r'belief': ['philosophy', 'codex-vitae'],
     r'cosmology': ['philosophy', 'spirituality'],
     r'death|mortal|legacy': ['mortality'],
     r'prisoner.{0,5}dilemma': ['prisoner-dilemma', 'game-theory'],
-    r'750.?words': ['750words', 'work'],
+    r'750.?words': ['750words'],
     r'experiment|trying|challenge': ['experiment'],
     r'how to|guide|framework': ['guide'],
     r'conversation|interview|dialogue': ['dialogue'],

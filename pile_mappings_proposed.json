@@ -1,19 +1,18 @@
 {
   "summary": {
     "total_posts": 154,
-    "posts_changed": 101,
+    "posts_changed": 95,
     "posts_with_additions": 21,
-    "unique_piles": 33
+    "unique_piles": 35
   },
   "new_pile_counts": {
     "fundamental-purpose": 5,
-    "creativity": 12,
+    "book": 9,
     "fiction": 2,
     "mortality": 4,
-    "work": 35,
     "reflection": 31,
     "relationships": 10,
-    "year-review": 23,
+    "year-in-review": 23,
     "game-theory": 4,
     "systems-thinking": 6,
     "identity": 5,
@@ -21,6 +20,7 @@
     "self-tracking": 11,
     "750words": 12,
     "update": 17,
+    "work": 25,
     "behavior-change": 23,
     "psychology": 4,
     "health": 2,
@@ -35,6 +35,8 @@
     "dialogue": 14,
     "negative-space": 3,
     "society": 7,
+    "fruitful": 2,
+    "creativity": 4,
     "wicked-problems": 1,
     "meta-crisis": 4,
     "symbols": 1,
@@ -78,17 +80,15 @@
         "fiction"
       ],
       "new_piles": [
-        "creativity",
+        "book",
         "fiction",
-        "mortality",
-        "work"
+        "mortality"
       ],
       "suggested_additions": [],
       "total_piles": [
-        "creativity",
+        "book",
         "fiction",
-        "mortality",
-        "work"
+        "mortality"
       ]
     },
     {
@@ -138,13 +138,13 @@
       "new_piles": [
         "reflection",
         "relationships",
-        "year-review"
+        "year-in-review"
       ],
       "suggested_additions": [],
       "total_piles": [
         "reflection",
         "relationships",
-        "year-review"
+        "year-in-review"
       ]
     },
     {
@@ -239,12 +239,12 @@
       ],
       "new_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ],
       "suggested_additions": [],
       "total_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ]
     },
     {
@@ -273,12 +273,12 @@
       ],
       "new_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ],
       "suggested_additions": [],
       "total_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ]
     },
     {
@@ -290,12 +290,12 @@
       ],
       "new_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ],
       "suggested_additions": [],
       "total_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ]
     },
     {
@@ -307,12 +307,12 @@
       ],
       "new_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ],
       "suggested_additions": [],
       "total_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ]
     },
     {
@@ -343,12 +343,12 @@
       ],
       "new_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ],
       "suggested_additions": [],
       "total_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ]
     },
     {
@@ -360,12 +360,12 @@
       ],
       "new_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ],
       "suggested_additions": [],
       "total_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ]
     },
     {
@@ -417,12 +417,12 @@
       ],
       "new_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ],
       "suggested_additions": [],
       "total_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ]
     },
     {
@@ -440,14 +440,14 @@
         "work"
       ],
       "suggested_additions": [
-        "year-review"
+        "year-in-review"
       ],
       "total_piles": [
         "reflection",
         "relationships",
         "update",
         "work",
-        "year-review"
+        "year-in-review"
       ]
     },
     {
@@ -459,12 +459,12 @@
       ],
       "new_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ],
       "suggested_additions": [],
       "total_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ]
     },
     {
@@ -493,14 +493,12 @@
       ],
       "new_piles": [
         "750words",
-        "behavior-change",
-        "work"
+        "behavior-change"
       ],
       "suggested_additions": [],
       "total_piles": [
         "750words",
-        "behavior-change",
-        "work"
+        "behavior-change"
       ]
     },
     {
@@ -980,12 +978,12 @@
       ],
       "new_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ],
       "suggested_additions": [],
       "total_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ]
     },
     {
@@ -1193,13 +1191,13 @@
       "new_piles": [
         "reflection",
         "relationships",
-        "year-review"
+        "year-in-review"
       ],
       "suggested_additions": [],
       "total_piles": [
         "reflection",
         "relationships",
-        "year-review"
+        "year-in-review"
       ]
     },
     {
@@ -1253,14 +1251,12 @@
       ],
       "new_piles": [
         "750words",
-        "spirituality",
-        "work"
+        "spirituality"
       ],
       "suggested_additions": [],
       "total_piles": [
         "750words",
-        "spirituality",
-        "work"
+        "spirituality"
       ]
     },
     {
@@ -1308,12 +1304,12 @@
       ],
       "new_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ],
       "suggested_additions": [],
       "total_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ]
     },
     {
@@ -1341,13 +1337,13 @@
       "new_piles": [
         "reflection",
         "systems-thinking",
-        "year-review"
+        "year-in-review"
       ],
       "suggested_additions": [],
       "total_piles": [
         "reflection",
         "systems-thinking",
-        "year-review"
+        "year-in-review"
       ]
     },
     {
@@ -1361,13 +1357,13 @@
       "new_piles": [
         "reflection",
         "systems-thinking",
-        "year-review"
+        "year-in-review"
       ],
       "suggested_additions": [],
       "total_piles": [
         "reflection",
         "systems-thinking",
-        "year-review"
+        "year-in-review"
       ]
     },
     {
@@ -1469,13 +1465,13 @@
       "new_piles": [
         "negative-space",
         "reflection",
-        "year-review"
+        "year-in-review"
       ],
       "suggested_additions": [],
       "total_piles": [
         "negative-space",
         "reflection",
-        "year-review"
+        "year-in-review"
       ]
     },
     {
@@ -1506,12 +1502,12 @@
       ],
       "new_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ],
       "suggested_additions": [],
       "total_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ]
     },
     {
@@ -1603,7 +1599,7 @@
         "book"
       ],
       "new_piles": [
-        "creativity",
+        "book",
         "dialogue",
         "relationships",
         "society",
@@ -1612,7 +1608,7 @@
       ],
       "suggested_additions": [],
       "total_piles": [
-        "creativity",
+        "book",
         "dialogue",
         "relationships",
         "society",
@@ -1664,11 +1660,13 @@
         "fruitful"
       ],
       "new_piles": [
-        "dialogue"
+        "dialogue",
+        "fruitful"
       ],
       "suggested_additions": [],
       "total_piles": [
-        "dialogue"
+        "dialogue",
+        "fruitful"
       ]
     },
     {
@@ -1679,13 +1677,15 @@
         "fruitful"
       ],
       "new_piles": [
-        "dialogue"
+        "dialogue",
+        "fruitful"
       ],
       "suggested_additions": [
         "guide"
       ],
       "total_piles": [
         "dialogue",
+        "fruitful",
         "guide"
       ]
     },
@@ -1797,17 +1797,15 @@
         "book"
       ],
       "new_piles": [
+        "book",
         "cognitive-biases",
-        "cognitive-science",
-        "creativity",
-        "work"
+        "cognitive-science"
       ],
       "suggested_additions": [],
       "total_piles": [
+        "book",
         "cognitive-biases",
-        "cognitive-science",
-        "creativity",
-        "work"
+        "cognitive-science"
       ]
     },
     {
@@ -1819,17 +1817,17 @@
         "project"
       ],
       "new_piles": [
+        "book",
         "cognitive-biases",
         "cognitive-science",
-        "creativity",
         "update",
         "work"
       ],
       "suggested_additions": [],
       "total_piles": [
+        "book",
         "cognitive-biases",
         "cognitive-science",
-        "creativity",
         "update",
         "work"
       ]
@@ -1843,12 +1841,12 @@
       ],
       "new_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ],
       "suggested_additions": [],
       "total_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ]
     },
     {
@@ -1859,15 +1857,13 @@
         "book"
       ],
       "new_piles": [
-        "creativity",
-        "dialogue",
-        "work"
+        "book",
+        "dialogue"
       ],
       "suggested_additions": [],
       "total_piles": [
-        "creativity",
-        "dialogue",
-        "work"
+        "book",
+        "dialogue"
       ]
     },
     {
@@ -1878,15 +1874,13 @@
         "book"
       ],
       "new_piles": [
-        "creativity",
-        "dialogue",
-        "work"
+        "book",
+        "dialogue"
       ],
       "suggested_additions": [],
       "total_piles": [
-        "creativity",
-        "dialogue",
-        "work"
+        "book",
+        "dialogue"
       ]
     },
     {
@@ -1896,13 +1890,11 @@
         "book"
       ],
       "new_piles": [
-        "creativity",
-        "work"
+        "book"
       ],
       "suggested_additions": [],
       "total_piles": [
-        "creativity",
-        "work"
+        "book"
       ]
     },
     {
@@ -1929,15 +1921,13 @@
         "book"
       ],
       "new_piles": [
-        "creativity",
-        "dialogue",
-        "work"
+        "book",
+        "dialogue"
       ],
       "suggested_additions": [],
       "total_piles": [
-        "creativity",
-        "dialogue",
-        "work"
+        "book",
+        "dialogue"
       ]
     },
     {
@@ -1948,11 +1938,13 @@
         "book"
       ],
       "new_piles": [
+        "book",
         "creativity",
         "work"
       ],
       "suggested_additions": [],
       "total_piles": [
+        "book",
         "creativity",
         "work"
       ]
@@ -2026,13 +2018,11 @@
         "750-words"
       ],
       "new_piles": [
-        "750words",
-        "work"
+        "750words"
       ],
       "suggested_additions": [],
       "total_piles": [
-        "750words",
-        "work"
+        "750words"
       ]
     },
     {
@@ -2060,12 +2050,12 @@
       ],
       "new_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ],
       "suggested_additions": [],
       "total_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ]
     },
     {
@@ -2152,12 +2142,12 @@
       ],
       "new_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ],
       "suggested_additions": [],
       "total_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ]
     },
     {
@@ -2188,12 +2178,12 @@
       ],
       "new_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ],
       "suggested_additions": [],
       "total_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ]
     },
     {
@@ -2203,16 +2193,14 @@
         "750-words"
       ],
       "new_piles": [
-        "750words",
-        "work"
+        "750words"
       ],
       "suggested_additions": [
         "dialogue"
       ],
       "total_piles": [
         "750words",
-        "dialogue",
-        "work"
+        "dialogue"
       ]
     },
     {
@@ -2294,12 +2282,12 @@
       ],
       "new_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ],
       "suggested_additions": [],
       "total_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ]
     },
     {
@@ -2348,12 +2336,12 @@
       ],
       "new_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ],
       "suggested_additions": [],
       "total_piles": [
         "reflection",
-        "year-review"
+        "year-in-review"
       ]
     },
     {

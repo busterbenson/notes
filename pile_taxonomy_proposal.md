@@ -32,7 +32,7 @@
 *What form does the content take?*
 
 - **reflection** - Personal reflections and introspection (replaces: self-reflection)
-- **year-review** - Annual year-in-review posts (replaces: year-in-review)
+- **year-in-review** - Annual year-in-review posts (keep)
 - **dialogue** - Conversations and interviews (keep)
 - **essay** - Long-form analytical writing
 - **experiment** - Reports on personal experiments
@@ -71,7 +71,9 @@
 - **self-tracking** - Quantified self, metrics, measurement (keep)
 - **codex-vitae** - Book of beliefs, life principles (keep)
 - **cognitive-biases** - Specific work on bias cataloging
-- **750words** - Your 750 Words project (replaces: 750-words)
+- **750words** - Your 750 Words project (keep)
+- **book** - Book writing and publishing projects (keep)
+- **fruitful** - Fruitful project (keep)
 - **prisoner-dilemma** - Iterated cooperation games (NEW - for recent tournament posts)
 - **fundamental-purpose** - Core purpose exploration (keep)
 - **meta-crisis** - Civilizational challenges (keep)
@@ -86,8 +88,8 @@
 
 ### CONSOLIDATIONS
 - **self-reflection** → **reflection** (shorter, cleaner)
-- **year-in-review** → **year-review** (consistent hyphenation)
-- **750-words** → **750words** (no hyphen for consistency)
+- **year-in-review** → **year-in-review** (keep as-is)
+- **750-words** → **750words** (keep, just remove hyphen for consistency)
 - **cognitive-biases** + **critical-thinking** → **cognitive-science** (broader, clearer)
 - **mindset** → absorbed into **behavior-change** or **psychology**
 - **being-a-creator** → **creativity** + **work**
@@ -96,7 +98,8 @@
 - **rules-to-live-by** → **codex-vitae**
 - **quality-time** → **relationships**
 - **complaining** → (remove - not useful as ongoing category)
-- **fruitful** → (remove - unclear meaning)
+- **book** → **book** (keep as-is - project-specific)
+- **fruitful** → **fruitful** (keep as-is - project-specific)
 - **medium** → (remove - too specific, use **work** instead)
 
 ### FIXES
@@ -124,7 +127,7 @@
 Most posts should have 2-4 piles from different dimensions:
 
 **Example 1:** "Chalant" year review
-- `year-review` (content type)
+- `year-in-review` (content type)
 - `reflection` (content type)
 - `identity` (life domain)
 - `psychology` (intellectual domain)
