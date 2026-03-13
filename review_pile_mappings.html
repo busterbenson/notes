@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pile Mappings Review - busterbenson.com</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .stats {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .stat-box {
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 32px;
+            font-weight: bold;
+            color: #3498db;
+        }
+        .stat-label {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+        .controls {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .filter-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .filter-group label {
+            font-weight: 600;
+        }
+        select, input {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        button {
+            padding: 8px 16px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        button:hover {
+            background: #2980b9;
+        }
+        button.secondary {
+            background: #95a5a6;
+        }
+        button.secondary:hover {
+            background: #7f8c8d;
+        }
+        .post-card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .post-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .post-file {
+            font-size: 12px;
+            color: #95a5a6;
+            margin-bottom: 15px;
+        }
+        .piles-section {
+            display: grid;
+            gap: 10px;
+        }
+        .pile-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .pile-label {
+            font-weight: 600;
+            color: #7f8c8d;
+            min-width: 80px;
+            padding-top: 5px;
+        }
+        .pile-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            flex: 1;
+        }
+        .pile-tag {
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-family: monospace;
+        }
+        .pile-tag.old {
+            background: #e74c3c;
+            color: white;
+        }
+        .pile-tag.new {
+            background: #27ae60;
+            color: white;
+        }
+        .pile-tag.suggested {
+            background: #f39c12;
+            color: white;
+        }
+        .pile-tag.empty {
+            background: #ecf0f1;
+            color: #95a5a6;
+            font-style: italic;
+        }
+        .actions {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #ecf0f1;
+            display: flex;
+            gap: 10px;
+        }
+        .status {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+        .status.approved {
+            background: #d4edda;
+            color: #155724;
+        }
+        .status.rejected {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .status.modified {
+            background: #fff3cd;
+            color: #856404;
+        }
+        .status.pending {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+        .export-section {
+            margin-top: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .hidden {
+            display: none;
+        }
+        .pile-editor {
+            margin-top: 10px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 4px;
+        }
+        .pile-editor input {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🗂️ Pile Mappings Review</h1>
+
+    <div class="stats">
+        <h2>Summary Statistics</h2>
+        <div class="stats-grid">
+            <div class="stat-box">
+                <div class="stat-number" id="total-posts">0</div>
+                <div class="stat-label">Total Posts</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" id="posts-changed">0</div>
+                <div class="stat-label">Posts Changed</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" id="unique-piles">0</div>
+                <div class="stat-label">Unique New Piles</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" id="review-progress">0%</div>
+                <div class="stat-label">Reviewed</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <div class="filter-group">
+            <label>Filter:</label>
+            <select id="filter-status">
+                <option value="all">All Posts</option>
+                <option value="changed">Changed Only</option>
+                <option value="suggestions">With Suggestions</option>
+                <option value="pending" selected>Pending Review</option>
+                <option value="approved">Approved</option>
+                <option value="modified">Modified</option>
+            </select>
+
+            <input type="text" id="search" placeholder="Search titles...">
+
+            <button onclick="exportDecisions()">Export Decisions (JSON)</button>
+            <button class="secondary" onclick="approveAll()">Approve All Visible</button>
+        </div>
+    </div>
+
+    <div id="posts-container"></div>
+
+    <div class="export-section hidden" id="export-section">
+        <h3>Export Ready</h3>
+        <p>Copy this JSON and save it as <code>pile_decisions.json</code></p>
+        <textarea id="export-data" style="width: 100%; height: 200px; font-family: monospace;"></textarea>
+    </div>
+
+    <script>
+        let posts = [];
+        let decisions = {};
+
+        // Load data
+        fetch('pile_mappings_proposed.json')
+            .then(response => response.json())
+            .then(data => {
+                posts = data.mapped_posts;
+
+                // Initialize decisions
+                posts.forEach(post => {
+                    decisions[post.file] = {
+                        status: 'pending',
+                        final_piles: post.total_piles
+                    };
+                });
+
+                updateStats(data.summary);
+                renderPosts();
+            })
+            .catch(error => {
+                console.error('Error loading data:', error);
+                document.getElementById('posts-container').innerHTML =
+                    '<p style="color: red;">Error loading pile_mappings_proposed.json. Make sure the file exists.</p>';
+            });
+
+        function updateStats(summary) {
+            document.getElementById('total-posts').textContent = summary.total_posts;
+            document.getElementById('posts-changed').textContent = summary.posts_changed;
+            document.getElementById('unique-piles').textContent = summary.unique_piles;
+            updateProgress();
+        }
+
+        function updateProgress() {
+            const reviewed = Object.values(decisions).filter(d => d.status !== 'pending').length;
+            const total = posts.length;
+            const percent = Math.round((reviewed / total) * 100);
+            document.getElementById('review-progress').textContent = percent + '%';
+        }
+
+        function renderPosts() {
+            const filterStatus = document.getElementById('filter-status').value;
+            const searchTerm = document.getElementById('search').value.toLowerCase();
+
+            const container = document.getElementById('posts-container');
+            container.innerHTML = '';
+
+            let filteredPosts = posts.filter(post => {
+                // Status filter
+                if (filterStatus === 'changed' && JSON.stringify(post.old_piles) === JSON.stringify(post.new_piles)) {
+                    return false;
+                }
+                if (filterStatus === 'suggestions' && post.suggested_additions.length === 0) {
+                    return false;
+                }
+                if (filterStatus !== 'all' && filterStatus !== 'changed' && filterStatus !== 'suggestions') {
+                    if (decisions[post.file].status !== filterStatus) {
+                        return false;
+                    }
+                }
+
+                // Search filter
+                if (searchTerm && !post.title.toLowerCase().includes(searchTerm)) {
+                    return false;
+                }
+
+                return true;
+            });
+
+            filteredPosts.forEach(post => {
+                const card = createPostCard(post);
+                container.appendChild(card);
+            });
+
+            if (filteredPosts.length === 0) {
+                container.innerHTML = '<p style="text-align: center; color: #95a5a6;">No posts match the current filters.</p>';
+            }
+        }
+
+        function createPostCard(post) {
+            const card = document.createElement('div');
+            card.className = 'post-card';
+
+            const decision = decisions[post.file];
+            const statusClass = decision.status;
+            const statusLabel = decision.status.charAt(0).toUpperCase() + decision.status.slice(1);
+
+            card.innerHTML = `
+                <div class="post-title">
+                    ${post.title}
+                    <span class="status ${statusClass}">${statusLabel}</span>
+                </div>
+                <div class="post-file">${post.file}</div>
+
+                <div class="piles-section">
+                    <div class="pile-row">
+                        <div class="pile-label">Old:</div>
+                        <div class="pile-tags">
+                            ${post.old_piles.length > 0
+                                ? post.old_piles.map(p => `<span class="pile-tag old">${p}</span>`).join('')
+                                : '<span class="pile-tag empty">(no piles)</span>'}
+                        </div>
+                    </div>
+
+                    <div class="pile-row">
+                        <div class="pile-label">New:</div>
+                        <div class="pile-tags">
+                            ${post.new_piles.map(p => `<span class="pile-tag new">${p}</span>`).join('')}
+                        </div>
+                    </div>
+
+                    ${post.suggested_additions.length > 0 ? `
+                    <div class="pile-row">
+                        <div class="pile-label">Suggested:</div>
+                        <div class="pile-tags">
+                            ${post.suggested_additions.map(p => `<span class="pile-tag suggested">${p}</span>`).join('')}
+                        </div>
+                    </div>
+                    ` : ''}
+
+                    <div class="pile-row">
+                        <div class="pile-label">Final:</div>
+                        <div class="pile-tags">
+                            ${decision.final_piles.map(p => `<span class="pile-tag new">${p}</span>`).join('')}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pile-editor hidden" id="editor-${post.file.replace(/[^a-zA-Z0-9]/g, '_')}">
+                    <input type="text" id="input-${post.file.replace(/[^a-zA-Z0-9]/g, '_')}"
+                           value="${decision.final_piles.join(', ')}"
+                           placeholder="Enter piles separated by commas">
+                    <button onclick="saveCustomPiles('${post.file}')">Save Custom Piles</button>
+                    <button class="secondary" onclick="cancelEdit('${post.file}')">Cancel</button>
+                </div>
+
+                <div class="actions">
+                    <button onclick="approve('${post.file}')">✓ Approve</button>
+                    <button onclick="editPiles('${post.file}')">✎ Edit Piles</button>
+                    <button class="secondary" onclick="reject('${post.file}')">✗ Keep Original</button>
+                </div>
+            `;
+
+            return card;
+        }
+
+        function approve(file) {
+            decisions[file].status = 'approved';
+            updateProgress();
+            renderPosts();
+        }
+
+        function reject(file) {
+            const post = posts.find(p => p.file === file);
+            decisions[file].status = 'rejected';
+            decisions[file].final_piles = post.old_piles;
+            updateProgress();
+            renderPosts();
+        }
+
+        function editPiles(file) {
+            const editorId = 'editor-' + file.replace(/[^a-zA-Z0-9]/g, '_');
+            document.getElementById(editorId).classList.remove('hidden');
+        }
+
+        function cancelEdit(file) {
+            const editorId = 'editor-' + file.replace(/[^a-zA-Z0-9]/g, '_');
+            document.getElementById(editorId).classList.add('hidden');
+        }
+
+        function saveCustomPiles(file) {
+            const inputId = 'input-' + file.replace(/[^a-zA-Z0-9]/g, '_');
+            const input = document.getElementById(inputId);
+            const piles = input.value.split(',').map(p => p.trim()).filter(p => p);
+
+            decisions[file].status = 'modified';
+            decisions[file].final_piles = piles;
+
+            cancelEdit(file);
+            updateProgress();
+            renderPosts();
+        }
+
+        function approveAll() {
+            const filterStatus = document.getElementById('filter-status').value;
+            const searchTerm = document.getElementById('search').value.toLowerCase();
+
+            posts.forEach(post => {
+                // Apply same filters
+                let include = true;
+                if (filterStatus === 'changed' && JSON.stringify(post.old_piles) === JSON.stringify(post.new_piles)) {
+                    include = false;
+                }
+                if (filterStatus === 'suggestions' && post.suggested_additions.length === 0) {
+                    include = false;
+                }
+                if (filterStatus !== 'all' && filterStatus !== 'changed' && filterStatus !== 'suggestions') {
+                    if (decisions[post.file].status !== filterStatus) {
+                        include = false;
+                    }
+                }
+                if (searchTerm && !post.title.toLowerCase().includes(searchTerm)) {
+                    include = false;
+                }
+
+                if (include && decisions[post.file].status === 'pending') {
+                    decisions[post.file].status = 'approved';
+                }
+            });
+
+            updateProgress();
+            renderPosts();
+        }
+
+        function exportDecisions() {
+            const output = {
+                decisions: decisions,
+                summary: {
+                    total: posts.length,
+                    approved: Object.values(decisions).filter(d => d.status === 'approved').length,
+                    modified: Object.values(decisions).filter(d => d.status === 'modified').length,
+                    rejected: Object.values(decisions).filter(d => d.status === 'rejected').length,
+                    pending: Object.values(decisions).filter(d => d.status === 'pending').length
+                }
+            };
+
+            document.getElementById('export-data').value = JSON.stringify(output, null, 2);
+            document.getElementById('export-section').classList.remove('hidden');
+        }
+
+        // Event listeners
+        document.getElementById('filter-status').addEventListener('change', renderPosts);
+        document.getElementById('search').addEventListener('input', renderPosts);
+    </script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+---
+title: Quirky Clock
+layout: fullscreen
+max_width: true
+---
+
+<style>
+  /* ─── Base ──────────────────────────────────────────────────────── */
+  #quirky-clock {
+    font-family: Helvetica, sans-serif;
+    color: #fff;
+  }
+
+  body {
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    background-color: #ddd;
+    color: #fff;
+  }
+
+  #fullscreen {
+    margin: 37px !important;
+  }
+
+  /* ─── Location prompt ──────────────────────────────────────────── */
+  a#get-location-link {
+    color: #fff;
+  }
+
+  /* ─── Navigation controls ──────────────────────────────────────── */
+  #hidden-date-links,
+  #visible-date-links {
+    font-size: 12px;
+    margin-bottom: 2em;
+    padding: 5px 0;
+  }
+  #hidden-date-links {
+    display: none;
+  }
+  a.date-link {
+    color: #ddd;
+  }
+  input#date-and-time {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    color: #fff;
+    background: transparent;
+    border: 0 solid #000;
+    border-bottom: 1px solid #fff;
+  }
+  #navigation-and-links, a {
+    margin-top: 1em;
+    z-index: 100;
+  }
+
+  /* ─── Clock face ───────────────────────────────────────────────── */
+  #clock-canvas {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 2000px;
+    max-height: 2000px;
+    min-width: 100px;
+    min-height: 100px;
+    padding: 0;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background: transparent;
+  }
+  #clock {
+    position: relative;
+    background: transparent;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    max-width: 2000px;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+  }
+
+  /* ─── Clock hands (planets, sunrise/sunset, constellations) ──── */
+  #hand-1, #hand-2, #hand-3, #hand-4, #hand-5,
+  #hand-6, #hand-7, #hand-8, #hand-9, #hand-10,
+  #hand-sunrise, #hand-sunset, #hand-constellations,
+  #label-hand-1, #label-hand-2, #label-hand-3, #label-hand-4, #label-hand-5,
+  #label-hand-6, #label-hand-7, #label-hand-8, #label-hand-9, #label-hand-10 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 2000px;
+    max-height: 2000px;
+    padding: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    pointer-events: none;
+    transition: none; /* JS enables transition after first render */
+  }
+
+  /* ─── Preferences / data sections ──────────────────────────────── */
+  #clock-preferences {
+    margin-top: 50px;
+  }
+  .show-hand {
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+    box-sizing: border-box;
+  }
+  #moonth-data {
+    padding-top: 50px;
+  }
+  #moonth-data-table td {
+    border: 1px solid #fff;
+    padding: 5px;
+    font-size: 12px;
+  }
+  #save-moonth-data-row {
+    font-size: 12px;
+    padding-top: 3px;
+  }
+
+  /* ─── Debug section ────────────────────────────────────────────── */
+  #debug {
+    margin-top: 2em;
+  }
+
+  /* ─── Utility ──────────────────────────────────────────────────── */
+  .hidden {
+    display: none;
+  }
+</style>
+
+<!-- ═══════════════════════════════════════════════════════════════════
+     HTML Structure
+     ═══════════════════════════════════════════════════════════════════ -->
+<div id="quirky-clock">
+
+  <!-- Location prompt -->
+  <div id="location-status">
+    Click to <a href="#" id="get-location-link">load 🌞 and 🌛 and ✨ data from the universe</a>.
+  </div>
+  <div id="location-not-available"></div>
+
+  <!-- Time navigation -->
+  <div id="navigation-and-links">
+    <div><input id="date-and-time" /></div>
+    <div id="hidden-date-links">
+      <span><a href="#" id="show-controls" class="date-link">Show controls</a></span>
+    </div>
+    <div id="visible-date-links">
+      <span><a href="#" id="hide-controls" class="date-link">Hide</a></span> &bull;
+      <span id="prev-day"><a href="#" class="date-link">Previous Day</a></span> &bull;
+      <span id="prev-hour"><a href="#" class="date-link">Previous Hour</a></span> &bull;
+      <span id="right-now"><a href="#" class="date-link">Right Now</a></span> &bull;
+      <span id="this-sunset"><a href="#" class="date-link">Sunset at <span id="time_of_sunset"></span></a></span> &bull;
+      <span id="next-hour"><a href="#" class="date-link">Next Hour</a></span> &bull;
+      <span id="next-day"><a href="#" class="date-link">Next Day</a></span>
+    </div>
+  </div>
+
+  <!-- Clock face -->
+  <div id="clock-canvas">
+    <div id="clock">
+      <!-- Planet labels (rendered below hands) -->
+      <div id="label-hand-1"></div>
+      <div id="label-hand-2"></div>
+      <div id="label-hand-3"></div>
+      <div id="label-hand-4"></div>
+      <div id="label-hand-5"></div>
+      <div id="label-hand-6"></div>
+      <div id="label-hand-7"></div>
+      <div id="label-hand-8"></div>
+      <div id="label-hand-9"></div>
+      <div id="label-hand-10"></div>
+
+      <!-- Planet hands -->
+      <div id="hand-1"></div>
+      <div id="hand-2"></div>
+      <div id="hand-3"></div>
+      <div id="hand-4"></div>
+      <div id="hand-5"></div>
+      <div id="hand-6"></div>
+      <div id="hand-7"></div>
+      <div id="hand-8"></div>
+      <div id="hand-9"></div>
+      <div id="hand-10"></div>
+
+      <!-- Special hands -->
+      <div id="hand-sunrise"></div>
+      <div id="hand-sunset"></div>
+      <div id="hand-constellations"></div>
+    </div>
+  </div>
+
+  <!-- Show/hide checkboxes -->
+  <div id="clock-preferences">
+    <div class="show-hand"><input type="checkbox" id="show-sun" name="sun" checked> Show Sun</div>
+    <div class="show-hand"><input type="checkbox" id="show-moon" name="moon" checked> Show Moon</div>
+    <div class="show-hand"><input type="checkbox" id="show-mercury" name="mercury" checked> Show Mercury</div>
+    <div class="show-hand"><input type="checkbox" id="show-venus" name="venus" checked> Show Venus</div>
+    <div class="show-hand"><input type="checkbox" id="show-mars" name="mars" checked> Show Mars</div>
+    <div class="show-hand"><input type="checkbox" id="show-jupiter" name="jupiter" checked> Show Jupiter</div>
+    <div class="show-hand"><input type="checkbox" id="show-saturn" name="saturn" checked> Show Saturn</div>
+    <div class="show-hand"><input type="checkbox" id="show-uranus" name="uranus" checked> Show Uranus</div>
+    <div class="show-hand"><input type="checkbox" id="show-neptune" name="neptune" checked> Show Neptune</div>
+    <div class="show-hand"><input type="checkbox" id="show-pluto" name="pluto" checked> Show Pluto</div>
+  </div>
+
+  <!-- Moonth data table -->
+  <div id="moonth-data">
+    <table id="moonth-data-table">
+      <tr>
+        <td>Date</td>
+        <td>Time</td>
+        <td>Sun</td>
+        <td>Moon</td>
+        <td>Mercury</td>
+        <td>Venus</td>
+        <td>Mars</td>
+        <td>Jupiter</td>
+        <td>Saturn</td>
+        <td>Uranus</td>
+        <td>Neptune</td>
+        <td>Pluto</td>
+      </tr>
+    </table>
+    <div><a href="#" id="save-moonth-data-row" class="date-link">Save Data To Row</a></div>
+  </div>
+
+  <!-- Debug output -->
+  <div id="debug">
+    <div>Date: <span id="date"></span></div>
+    <div>Current time: <span id="current_time"></span></div>
+    <div>Countdown to Spring Equinox: <span id="aries_relative_to_year"></span></div>
+    <hr />
+    <div>Sun: <span id="sun_debug"></span></div>
+    <div>Sunrise: <span id="sunrise_debug"></span></div>
+    <div>High Noon: <span id="highnoon_debug"></span></div>
+    <div>Sunset: <span id="sunset_debug"></span></div>
+    <hr />
+    <div>Moon: <span id="moon_debug"></span></div>
+    <div>Moon Status: <span id="moon_status_debug"></span></div>
+    <div>Moon Phase: <span id="moon_phase_rough_debug"></span></div>
+    <div>Moon Illumination: <span id="moon_illumination_debug"></span></div>
+    <div>Moon Parallactic Angle: <span id="moon_parallactic_angle_debug"></span></div>
+    <hr />
+    <div>Mercury: <span id="mercury_debug"></span></div>
+    <div>Venus: <span id="venus_debug"></span></div>
+    <div>Mars: <span id="mars_debug"></span></div>
+    <div>Jupiter: <span id="jupiter_debug"></span></div>
+    <div>Saturn: <span id="saturn_debug"></span></div>
+    <div>Uranus: <span id="uranus_debug"></span></div>
+    <div>Neptune: <span id="neptune_debug"></span></div>
+    <div>Pluto: <span id="pluto_debug"></span></div>
+  </div>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════════
+     Scripts — loaded in dependency order
+     (jQuery, moment.js, SunCalc are loaded by head.html)
+     ═══════════════════════════════════════════════════════════════════ -->
+<script src="/assets/js/clock13/clock13-config.js?v={{ site.time | date: '%s' }}"></script>
+<script src="/assets/js/clock13/clock13-astro.js?v={{ site.time | date: '%s' }}"></script>
+<script src="/assets/js/clock13/clock13-render.js?v={{ site.time | date: '%s' }}"></script>
+<script src="/assets/js/clock13/clock13.js?v={{ site.time | date: '%s' }}"></script>
+<script>
+  $(document).ready(function () {
+    ClockApp.init({
+      apiUserId: '{{ site.env.ASTROLOGY_USER_ID }}',
+      apiKey: '{{ site.env.ASTROLOGY_API_KEY }}',
+      debug: false,
+      dataControls: false
+    });
+  });
+</script>
