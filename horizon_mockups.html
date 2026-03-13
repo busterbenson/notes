@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Horizon Color Mockups — Across the Day</title>
+<style>
+  body {
+    background: #111;
+    color: #eee;
+    font-family: system-ui, sans-serif;
+    padding: 30px;
+  }
+  h1 { text-align: center; font-size: 20px; margin-bottom: 5px; }
+  .subtitle { text-align: center; color: #888; font-size: 13px; margin-bottom: 30px; }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 40px;
+  }
+  .row-label {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    color: #bbb;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 8px;
+  }
+  .mockup {
+    text-align: center;
+  }
+  .mockup h3 {
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #ddd;
+  }
+  .mockup p {
+    max-width: 250px;
+    font-size: 11px;
+    color: #777;
+    margin-top: 4px;
+  }
+  canvas {
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  }
+</style>
+</head>
+<body>
+
+<h1>Elliptical Horizon — Color Integration Study</h1>
+<p class="subtitle">How the ground fill and horizon line look at different times of day, with the clock's actual background color palette</p>
+
+<!-- Row 1: Strategy A — subtle dark ground -->
+<div class="row">
+  <div class="row-label">Strategy A: Dark ground overlay (constant color, varies opacity)</div>
+  <div class="mockup"><h3>Deep Night (2am)</h3><canvas id="a1" width="250" height="250"></canvas></div>
+  <div class="mockup"><h3>Pre-Dawn (5:30am)</h3><canvas id="a2" width="250" height="250"></canvas></div>
+  <div class="mockup"><h3>Morning (9am)</h3><canvas id="a3" width="250" height="250"></canvas></div>
+  <div class="mockup"><h3>Solar Noon</h3><canvas id="a4" width="250" height="250"></canvas></div>
+  <div class="mockup"><h3>Sunset (6pm)</h3><canvas id="a5" width="250" height="250"></canvas></div>
+  <div class="mockup"><h3>Evening (9pm)</h3><canvas id="a6" width="250" height="250"></canvas></div>
+</div>
+
+<!-- Row 2: Strategy B — warm earth tones -->
+<div class="row">
+  <div class="row-label">Strategy B: Warm earth ground (brown-green, adapts to time of day)</div>
+  <div class="mockup"><h3>Deep Night</h3><canvas id="b1" width="250" height="250"></canvas></div>
+  <div class="mockup"><h3>Pre-Dawn</h3><canvas id="b2" width="250" height="250"></canvas></div>
+  <div class="mockup"><h3>Morning</h3><canvas id="b3" width="250" height="250"></canvas></div>
+  <div class="mockup"><h3>Solar Noon</h3><canvas id="b4" width="250" height="250"></canvas></div>
+  <div class="mockup"><h3>Sunset</h3><canvas id="b5" width="250" height="250"></canvas></div>
+  <div class="mockup"><h3>Evening</h3><canvas id="b6" width="250" height="250"></canvas></div>
+</div>
+
+<!-- Row 3: Strategy C — complementary darken -->
+<div class="row">
+  <div class="row-label">Strategy C: Complementary darken (ground = darker shade of current sky)</div>
+  <div class="mockup"><h3>Deep Night</h3><canvas id="c1" width="250" height="250"></canvas></div>
+  <div class="mockup"><h3>Pre-Dawn</h3><canvas id="c2" width="250" height="250"></canvas></div>
+  <div class="mockup"><h3>Morning</h3><canvas id="c3" width="250" height="250"></canvas></div>
+  <div class="mockup"><h3>Solar Noon</h3><canvas id="c4" width="250" height="250"></canvas></div>
+  <div class="mockup"><h3>Sunset</h3><canvas id="c5" width="250" height="250"></canvas></div>
+  <div class="mockup"><h3>Evening</h3><canvas id="c6" width="250" height="250"></canvas></div>
+</div>
+
+<script>
+// ─── Clock's actual color palette ─────────────────────────────
+const COLORS = {
+  night:       [17, 34, 102],
+  dawn:        [28, 61, 136],
+  sunrise:     [150, 204, 251],
+  noon:        [104, 176, 247],
+  sunset:      [42, 80, 179],
+  evening:     [26, 60, 128],
+  preSunrise:  [199, 121, 102],
+  postSunrise: [184, 124, 132],
+  preSunset:   [224, 122, 95],
+  postSunset:  [217, 83, 79],
+};
+
+// Time-of-day presets (sun angle on the clock, plus background color)
+const TIMES = [
+  { label: 'night',   sunAngle: 200, bg: COLORS.night },
+  { label: 'predawn', sunAngle: 260, bg: lerp3(COLORS.dawn, COLORS.preSunrise, 0.5) },
+  { label: 'morning', sunAngle: 330, bg: lerp3(COLORS.sunrise, COLORS.noon, 0.4) },
+  { label: 'noon',    sunAngle: 0,   bg: COLORS.noon },
+  { label: 'sunset',  sunAngle: 90,  bg: COLORS.preSunset },
+  { label: 'evening', sunAngle: 120, bg: lerp3(COLORS.postSunset, COLORS.night, 0.6) },
+];
+
+// Sunrise/sunset on the clock (equinox-ish)
+const SUNRISE_DEG = 268;
+const SUNSET_DEG = 90;
+
+const SIZE = 250;
+const CENTER = SIZE / 2;
+const R = 115;
+
+function degToRad(d) { return d * Math.PI / 180; }
+function lerp3(a, b, t) { return [a[0]+(b[0]-a[0])*t, a[1]+(b[1]-a[1])*t, a[2]+(b[2]-a[2])*t]; }
+function rgb(c) { return `rgb(${Math.round(c[0])},${Math.round(c[1])},${Math.round(c[2])})`; }
+function rgba(c, a) { return `rgba(${Math.round(c[0])},${Math.round(c[1])},${Math.round(c[2])},${a})`; }
+function darken(c, f) { return [c[0]*f, c[1]*f, c[2]*f]; }
+
+function drawBase(ctx, bgColor) {
+  // Clock circle with background
+  ctx.beginPath();
+  ctx.arc(CENTER, CENTER, R, 0, Math.PI * 2);
+  ctx.fillStyle = rgb(bgColor);
+  ctx.fill();
+
+  // Daytime arc (slightly brighter region)
+  ctx.beginPath();
+  ctx.moveTo(CENTER, CENTER);
+  ctx.arc(CENTER, CENTER, R,
+    degToRad(SUNRISE_DEG - 90), degToRad(SUNSET_DEG - 90), false);
+  ctx.closePath();
+  // Subtle brightening for day portion
+  ctx.fillStyle = 'rgba(255,255,255,0.08)';
+  ctx.fill();
+
+  // Constellation ring hint
+  ctx.beginPath();
+  ctx.arc(CENTER, CENTER, R - 10, 0, Math.PI * 2);
+  ctx.strokeStyle = 'rgba(255,255,255,0.12)';
+  ctx.lineWidth = 14;
+  ctx.stroke();
+
+  // Hour ticks
+  for (let i = 0; i < 24; i++) {
+    const angle = degToRad(i * 15 - 90);
+    ctx.beginPath();
+    ctx.moveTo(CENTER + (R-5) * Math.cos(angle), CENTER + (R-5) * Math.sin(angle));
+    ctx.lineTo(CENTER + R * Math.cos(angle), CENTER + R * Math.sin(angle));
+    ctx.strokeStyle = 'rgba(255,255,255,0.2)';
+    ctx.lineWidth = 0.5;
+    ctx.stroke();
+  }
+}
+
+function drawEllipticalHorizon(ctx, groundFill, horizonStroke, horizonWidth) {
+  const srAngle = degToRad(SUNRISE_DEG - 90);
+  const ssAngle = degToRad(SUNSET_DEG - 90);
+  const srX = CENTER + R * Math.cos(srAngle);
+  const srY = CENTER + R * Math.sin(srAngle);
+  const ssX = CENTER + R * Math.cos(ssAngle);
+  const ssY = CENTER + R * Math.sin(ssAngle);
+
+  const midX = (srX + ssX) / 2;
+  const midY = (srY + ssY) / 2;
+  const dx = ssX - srX;
+  const dy = ssY - srY;
+  const lineAngle = Math.atan2(dy, dx);
+  const majorR = Math.sqrt(dx*dx + dy*dy) / 2;
+  const minorR = majorR * 0.2;
+
+  // Ground fill (below ellipse)
+  ctx.save();
+  ctx.beginPath();
+  ctx.ellipse(midX, midY, majorR, minorR, lineAngle, 0, Math.PI);
+  ctx.arc(CENTER, CENTER, R, degToRad(SUNSET_DEG - 90), degToRad(SUNRISE_DEG - 90), false);
+  ctx.closePath();
+  ctx.fillStyle = groundFill;
+  ctx.fill();
+
+  // Horizon line (the ellipse arc on sky side)
+  ctx.beginPath();
+  ctx.ellipse(midX, midY, majorR, minorR, lineAngle, Math.PI, 0);
+  ctx.strokeStyle = horizonStroke;
+  ctx.lineWidth = horizonWidth || 1.5;
+  ctx.stroke();
+  ctx.restore();
+}
+
+function drawPlanets(ctx, sunAngle) {
+  const planets = [
+    { angle: sunAngle, r: 75, color: [232, 200, 100], size: 5 },
+    { angle: sunAngle + 30, r: 62, color: [200, 200, 200], size: 4 },
+    { angle: sunAngle - 20, r: 82, color: [180, 180, 190], size: 3 },
+    { angle: sunAngle + 50, r: 88, color: [240, 220, 170], size: 3.5 },
+    { angle: sunAngle + 160, r: 92, color: [210, 100, 80], size: 3.5 },
+    { angle: sunAngle + 200, r: 96, color: [220, 190, 140], size: 4.5 },
+    { angle: sunAngle + 140, r: 100, color: [225, 200, 150], size: 4 },
+  ];
+
+  planets.forEach(p => {
+    const angle = degToRad(p.angle - 90);
+    const x = CENTER + p.r * Math.cos(angle);
+    const y = CENTER + p.r * Math.sin(angle);
+
+    ctx.beginPath();
+    ctx.moveTo(CENTER, CENTER);
+    ctx.lineTo(x, y);
+    ctx.strokeStyle = rgba(p.color, 0.35);
+    ctx.lineWidth = 1;
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(x, y, p.size, 0, Math.PI * 2);
+    ctx.fillStyle = rgb(p.color);
+    ctx.fill();
+  });
+
+  // Hub
+  ctx.beginPath();
+  ctx.arc(CENTER, CENTER, 7, 0, Math.PI * 2);
+  ctx.fillStyle = 'rgba(200,200,200,0.25)';
+  ctx.fill();
+}
+
+// ─── Strategy A: Dark ground overlay ──────────────────────────
+// Simple approach: ground is always a dark overlay, just varying opacity
+TIMES.forEach((time, i) => {
+  const ctx = document.getElementById('a' + (i+1)).getContext('2d');
+  drawBase(ctx, time.bg);
+
+  // Darker at night (less contrast needed), more visible during day
+  const isDay = (i >= 2 && i <= 4);
+  const opacity = isDay ? 0.4 : 0.25;
+  drawEllipticalHorizon(ctx,
+    `rgba(15, 12, 8, ${opacity})`,
+    `rgba(160, 130, 90, ${isDay ? 0.4 : 0.25})`,
+    1.5
+  );
+  drawPlanets(ctx, time.sunAngle);
+});
+
+// ─── Strategy B: Warm earth tones ─────────────────────────────
+// Ground color shifts through the day: dark earth at night, warm brown during day
+const GROUND_COLORS = [
+  { ground: [15, 18, 35],    line: [60, 50, 40],     opacity: 0.7 },   // night: very dark blue-earth
+  { ground: [45, 30, 35],    line: [140, 100, 70],    opacity: 0.6 },   // predawn: dark warm
+  { ground: [70, 55, 35],    line: [180, 150, 100],   opacity: 0.45 },  // morning: warm brown
+  { ground: [55, 70, 40],    line: [140, 160, 100],   opacity: 0.4 },   // noon: green-brown (sunlit earth)
+  { ground: [80, 45, 30],    line: [200, 130, 80],    opacity: 0.5 },   // sunset: warm amber earth
+  { ground: [25, 20, 30],    line: [100, 70, 60],     opacity: 0.6 },   // evening: cooling earth
+];
+
+TIMES.forEach((time, i) => {
+  const ctx = document.getElementById('b' + (i+1)).getContext('2d');
+  drawBase(ctx, time.bg);
+
+  const gc = GROUND_COLORS[i];
+  drawEllipticalHorizon(ctx,
+    rgba(gc.ground, gc.opacity),
+    rgba(gc.line, 0.5),
+    2
+  );
+  drawPlanets(ctx, time.sunAngle);
+});
+
+// ─── Strategy C: Complementary darken ─────────────────────────
+// Ground = a darker, warmer version of the current sky color
+TIMES.forEach((time, i) => {
+  const ctx = document.getElementById('c' + (i+1)).getContext('2d');
+  drawBase(ctx, time.bg);
+
+  // Take the background and darken it, shifting slightly warm
+  const bg = time.bg;
+  const groundColor = [
+    bg[0] * 0.35 + 15,  // darken and add slight warmth
+    bg[1] * 0.3 + 8,
+    bg[2] * 0.25
+  ];
+  const lineColor = [
+    bg[0] * 0.6 + 30,
+    bg[1] * 0.5 + 20,
+    bg[2] * 0.4 + 10
+  ];
+
+  drawEllipticalHorizon(ctx,
+    rgba(groundColor, 0.65),
+    rgba(lineColor, 0.4),
+    1.5
+  );
+  drawPlanets(ctx, time.sunAngle);
+});
+</script>
+</body>
+</html>

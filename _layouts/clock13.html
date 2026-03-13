@@ -15,7 +15,7 @@ max_width: true
     width: 100%;
     max-width: 2000px;
     margin: 0 auto;
-    background-color: #ddd;
+    background-color: #0a0a12;
     color: #fff;
   }
 
@@ -101,6 +101,18 @@ max_width: true
     z-index: 2;
     pointer-events: none;
     transition: none; /* JS enables transition after first render */
+  }
+
+  /* ─── Horizon canvas ──────────────────────────────────────────── */
+  #horizon-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 3; /* above constellation ring (z:2) to obscure below-horizon stars,
+                   but below planet hands (z:10+) and sunrise/sunset (z:50) */
   }
 
   /* ─── Preferences / data sections ──────────────────────────────── */
@@ -196,6 +208,9 @@ max_width: true
       <div id="hand-sunrise"></div>
       <div id="hand-sunset"></div>
       <div id="hand-constellations"></div>
+
+      <!-- Horizon canvas overlay -->
+      <canvas id="horizon-canvas"></canvas>
     </div>
   </div>
 
@@ -269,6 +284,7 @@ max_width: true
      ═══════════════════════════════════════════════════════════════════ -->
 <script src="/assets/js/clock13/clock13-config.js?v={{ site.time | date: '%s' }}"></script>
 <script src="/assets/js/clock13/clock13-astro.js?v={{ site.time | date: '%s' }}"></script>
+<script src="/assets/js/clock13/clock13-horizon.js?v={{ site.time | date: '%s' }}"></script>
 <script src="/assets/js/clock13/clock13-render.js?v={{ site.time | date: '%s' }}"></script>
 <script src="/assets/js/clock13/clock13.js?v={{ site.time | date: '%s' }}"></script>
 <script>

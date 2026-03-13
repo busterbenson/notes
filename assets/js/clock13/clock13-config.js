@@ -44,14 +44,14 @@ var ClockConfig = (function () {
   var PLANETS = [
     { name: 'Sun',     token: 'sun',     imagePath: 'v2/sun/sun',           hasLabel: false },
     { name: 'Moon',    token: 'moon',    imagePath: 'v2/moon/full/moon',    hasLabel: false },
-    { name: 'Mercury', token: 'mercury', imagePath: 'v2/planets/planets',   hasLabel: true },
-    { name: 'Venus',   token: 'venus',   imagePath: 'v2/planets/planets',   hasLabel: true },
-    { name: 'Mars',    token: 'mars',    imagePath: 'v2/planets/planets',   hasLabel: true },
-    { name: 'Jupiter', token: 'jupiter', imagePath: 'v2/planets/planets',   hasLabel: true },
-    { name: 'Saturn',  token: 'saturn',  imagePath: 'v2/planets/planets',   hasLabel: true },
-    { name: 'Uranus',  token: 'uranus',  imagePath: 'v2/planets/planets',   hasLabel: true },
-    { name: 'Neptune', token: 'neptune', imagePath: 'v2/planets/planets',   hasLabel: true },
-    { name: 'Pluto',   token: 'pluto',   imagePath: 'v2/planets/planets',   hasLabel: true }
+    { name: 'Mercury', token: 'mercury', imagePath: 'v2/mercury/mercury',   hasLabel: true },
+    { name: 'Venus',   token: 'venus',   imagePath: 'v2/venus/venus',       hasLabel: true },
+    { name: 'Mars',    token: 'mars',    imagePath: 'v2/mars/mars',         hasLabel: true },
+    { name: 'Jupiter', token: 'jupiter', imagePath: 'v2/jupiter/jupiter',   hasLabel: true },
+    { name: 'Saturn',  token: 'saturn',  imagePath: 'v2/saturn/saturn',     hasLabel: true },
+    { name: 'Uranus',  token: 'uranus',  imagePath: 'v2/uranus/uranus',     hasLabel: true },
+    { name: 'Neptune', token: 'neptune', imagePath: 'v2/neptune/neptune',   hasLabel: true },
+    { name: 'Pluto',   token: 'pluto',   imagePath: 'v2/pluto/pluto',       hasLabel: true }
   ];
 
   // Inner planets (orbit between Earth and Sun)
@@ -91,16 +91,16 @@ var ClockConfig = (function () {
 
   // ─── Background Color Palette ─────────────────────────────────────
   var COLORS = {
-    night:       '#112266',
-    dawn:        '#1C3D88',
-    sunrise:     '#96CCFB',
-    noon:        '#68B0F7',
-    sunset:      '#2A50B3',
-    evening:     '#1A3C80',
-    preSunrise:  '#C77966',
-    postSunrise: '#B87C84',
-    preSunset:   '#E07A5F',
-    postSunset:  '#D9534F'
+    night:       '#0B1A4A',    // deep navy
+    dawn:        '#1C3366',    // dark blue, hint of light
+    preSunrise:  '#D08862',    // warm coral sunrise glow
+    postSunrise: '#8AADCF',    // warm blue, cooling from sunrise glow
+    sunrise:     '#90C8F0',    // clear morning blue (start of morning→noon)
+    noon:        '#C2E2FF',    // lightest, brightest sky blue (peak)
+    sunset:      '#8CBEEA',    // gentle afternoon blue (slightly less bright)
+    preSunset:   '#DC8558',    // warm golden sunset glow
+    postSunset:  '#A85540',    // deeper sunset ember
+    evening:     '#1A3060'     // dark evening blue
   };
 
   // Degrees of twilight glow before/after sunrise and sunset

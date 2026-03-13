@@ -48,7 +48,12 @@ var ClockApp = (function ($, moment, Config, Astro, Render) {
     wireEvents();
 
     // Start
-    $(window).on('resize', Render.scaleClockToSquare);
+    $(window).on('resize', function () {
+      Render.scaleClockToSquare();
+      if (typeof ClockHorizon !== 'undefined') {
+        ClockHorizon.redraw();
+      }
+    });
     requestUpdate();
   }
 

@@ -65,6 +65,16 @@ var ClockRender = (function ($, Config, Astro) {
                      result.moments.sunrise.degrees,
                      result.moments.sunset.degrees);
 
+    // Draw the elliptical horizon overlay
+    var skyColor = $('#clock-canvas').css('background-color');
+    if (typeof ClockHorizon !== 'undefined') {
+      ClockHorizon.render(
+        result.moments.sunrise.degrees,
+        result.moments.sunset.degrees,
+        skyColor
+      );
+    }
+
     // After the first render, enable CSS transitions for smooth updates
     if (!firstRenderDone) {
       firstRenderDone = true;
@@ -171,7 +181,8 @@ var ClockRender = (function ($, Config, Astro) {
   // ─── Background color based on sun position ──────────────────────
   function renderBackground(sunAngle, sunriseAngle, sunsetAngle) {
     var color = computeBackgroundColor(sunAngle, sunriseAngle, sunsetAngle);
-    $('body').css('background-color', color);
+    // Apply sky color to the clock circle only (not the page body)
+    $('#clock-canvas').css('background-color', color);
   }
 
   function computeBackgroundColor(sunAngle, sunriseAngle, sunsetAngle) {
