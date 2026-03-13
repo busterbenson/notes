@@ -106,7 +106,9 @@ var ClockAstro = (function (SunCalc, moment, Config) {
   function formatTime(date) {
     var h = date.getHours();
     var m = date.getMinutes();
-    return (h < 10 ? '0' : '') + h + ':' + (m < 10 ? '0' : '') + m;
+    var ampm = h >= 12 ? 'pm' : 'am';
+    var h12 = h % 12 || 12;
+    return h12 + ':' + (m < 10 ? '0' : '') + m + ' ' + ampm;
   }
 
   // ─── 2. Planetary Positions (via Astrology API) ──────────────────
@@ -145,7 +147,8 @@ var ClockAstro = (function (SunCalc, moment, Config) {
       data: JSON.stringify(params)
     }).then(
       function (resp) {
-        // Normalize the API response into a clean array
+        // Normalize the API response into a clean array, filtering to known bodies only
+        // (API may return Ascendant, Midheaven, Rahu, Ketu etc. which we don't render)
         return resp.map(function (p) {
           return {
             name: p.name,
@@ -157,6 +160,8 @@ var ClockAstro = (function (SunCalc, moment, Config) {
             speed: p.speed,
             house: p.house
           };
+        }).filter(function (p) {
+          return Config.KNOWN_TOKENS.indexOf(p.token) >= 0;
         });
       },
       function (err) {
@@ -232,7 +237,8 @@ var ClockAstro = (function (SunCalc, moment, Config) {
     // Sine wave: peaks at summer solstice (~day 172), troughs at winter solstice
     // Phase offset 80 aligns the zero-crossings with the equinoxes (~day 80 = Mar 21)
     var seasonalFactor = Math.sin(2 * Math.PI * (doy - 80) / 365.25);
-    sunPlot.line = Math.round(Config.SUN_LINE_AMPLITUDE * seasonalFactor);
+    sunPlot.line = Math.max(Config.LINE_MIN, Math.min(Config.LINE_MAX,
+      Math.round(Config.SUN_LINE_AMPLITUDE * seasonalFactor)));
 
     // ── Step E: Constellations ──────────────────────────────────────
     // The constellation ring image has the zodiac running counter-clockwise
@@ -275,7 +281,8 @@ var ClockAstro = (function (SunCalc, moment, Config) {
         }
       }
 
-      var line = computePlanetLine(token, degreesFromSun, planet.isRetrograde,
+      var line = computePlanetLine(token, planet.eclipticLongitude,
+                                    new Date(seasonalData.date),
                                     seasonalFactor, sunPlot.line, seasonalData.moon);
 
       plots[token] = {
@@ -333,60 +340,137 @@ var ClockAstro = (function (SunCalc, moment, Config) {
     return null;
   }
 
+  // ─── Helper: clamp a line value to valid image range ─────────────
+  function clampLine(line) {
+    return Math.max(Config.LINE_MIN, Math.min(Config.LINE_MAX, line));
+  }
+
+  // ─── Ecliptic Latitude Computation ─────────────────────────────
+  //
+  // Each planet orbits in a plane tilted relative to the ecliptic.
+  // The ecliptic latitude β (how far above/below the ecliptic plane)
+  // is computed from:
+  //
+  //   β = arcsin( sin(i) × sin(L - Ω) )
+  //
+  // where:
+  //   i = orbital inclination to the ecliptic
+  //   L = planet's current ecliptic longitude
+  //   Ω = longitude of ascending node (where the orbit crosses the ecliptic going north)
+  //
+  // All values from J2000.0 epoch with slow secular drift rates.
+  // Sources: Meeus "Astronomical Algorithms", JPL planetary fact sheets.
+  //
+  // Note: For the Moon, inclination is to the ecliptic (~5.145°) and the
+  // node regresses with an 18.6-year period.
+
+  var ORBITAL_ELEMENTS = {
+    //              inclination (°)   node at J2000 (°)   node drift (°/century)
+    moon:    { i:  5.145,   node0: 125.044,  nodeDrift: -1934.136 }, // 18.6-yr regression
+    mercury: { i:  7.005,   node0:  48.331,  nodeDrift:   -0.125 },
+    venus:   { i:  3.395,   node0:  76.680,  nodeDrift:   -0.278 },
+    mars:    { i:  1.850,   node0:  49.558,  nodeDrift:   -0.293 },
+    jupiter: { i:  1.303,   node0: 100.464,  nodeDrift:    0.176 },
+    saturn:  { i:  2.489,   node0: 113.666,  nodeDrift:   -0.252 },
+    uranus:  { i:  0.773,   node0:  74.006,  nodeDrift:    0.074 },
+    neptune: { i:  1.770,   node0: 131.784,  nodeDrift:   -0.006 },
+    pluto:   { i: 17.160,   node0: 110.307,  nodeDrift:   -0.009 }
+  };
+
+  /**
+   * Compute ecliptic latitude for a body given its ecliptic longitude and date.
+   * Returns degrees, positive = north of ecliptic, negative = south.
+   */
+  function computeEclipticLatitude(token, eclipticLongitude, date) {
+    var elem = ORBITAL_ELEMENTS[token];
+    if (!elem) return 0; // Sun is always on the ecliptic (β = 0)
+
+    // Centuries since J2000.0
+    var j2000 = new Date(Date.UTC(2000, 0, 1, 12, 0, 0));
+    var T = (date.getTime() - j2000.getTime()) / (86400000 * 36525);
+
+    // Current longitude of ascending node
+    var node = posMod(elem.node0 + elem.nodeDrift * T, 360);
+
+    // β = arcsin( sin(i) × sin(L - Ω) )
+    var iRad = elem.i * Math.PI / 180;
+    var argRad = (eclipticLongitude - node) * Math.PI / 180;
+    var beta = Math.asin(Math.sin(iRad) * Math.sin(argRad));
+
+    return beta * 180 / Math.PI; // convert back to degrees
+  }
+
   // ─── Helper: compute concentric circle line for a body ───────────
-  function computePlanetLine(token, degreesFromSun, isRetrograde, seasonalFactor, sunLine, moonData) {
+  //
+  // Now based on ACTUAL ecliptic latitude: how far above or below
+  // the ecliptic plane the body appears. Positive latitude (north of
+  // ecliptic) → positive line offset, negative → negative offset.
+  //
+  // The line value is computed as:
+  //   sunLine + round( (β / maxβ) × range )
+  //
+  // where maxβ is the body's maximum possible ecliptic latitude
+  // (= its orbital inclination), giving a -1 to +1 normalized factor
+  // that scales the configured range.
+
+  function computePlanetLine(token, eclipticLongitude, date, seasonalFactor, sunLine, moonData) {
+    var elem = ORBITAL_ELEMENTS[token];
+    if (!elem) return sunLine; // unknown body → same as sun
+
     var ranges = Config.PLANET_LINE_RANGES[token];
-    if (!ranges) return sunLine; // unknown body → same as sun
+    if (!ranges) return sunLine;
 
     // Scale the range by season (larger spread at solstices)
     var absSeasonFactor = Math.abs(seasonalFactor);
     var range = ranges.base + (ranges.max - ranges.base) * absSeasonFactor;
 
-    // ── Moon: line based on illumination and waxing/waning ──────────
-    if (token === 'moon') {
-      if (!moonData) return sunLine;
-      var illumination = moonData.illuminationPct / 100; // 0-1
-      var isWaxing = moonData.isWaxing;
+    // Compute actual ecliptic latitude
+    var beta = computeEclipticLatitude(token, eclipticLongitude, date);
 
-      // Full moon → max offset in one direction, new moon → near sun
-      // Waxing: offset goes positive (above sun). Waning: offset goes negative.
-      var offset;
-      if (illumination > 0.5) {
-        // Gibbous (half to full): offset scales from range/2 to range
-        offset = range * (0.5 + illumination / 2);
-      } else {
-        // Crescent (new to half): offset scales from 0 to range/2
-        offset = range * illumination;
-      }
-      // Waxing = positive offset, waning = negative
-      return sunLine + Math.round(isWaxing ? offset : -offset);
-    }
+    // Normalize: β ranges from -inclination to +inclination
+    // Map to -1..+1 factor
+    var maxBeta = elem.i; // maximum possible latitude = orbital inclination
+    var factor = beta / maxBeta; // -1 to +1
 
-    // ── Inner planets: elongation-based ─────────────────────────────
-    if (Config.INNER_PLANETS.indexOf(token) >= 0) {
-      var maxElong = Config.MAX_ELONGATION[token];
-      // How far is the planet from the sun? (0-360, but inner planets stay within maxElong)
-      var elongation;
-      if (degreesFromSun <= 180) {
-        elongation = Math.min(degreesFromSun, maxElong);
-      } else {
-        elongation = Math.min(360 - degreesFromSun, maxElong);
-      }
-      var fraction = elongation / maxElong; // 0-1
-      var sign = isRetrograde ? 1 : -1;
-      return sunLine + Math.round(sign * range * fraction);
-    }
+    return clampLine(sunLine + Math.round(factor * range));
+  }
 
-    // ── Outer planets: opposition-based ─────────────────────────────
-    // Max offset at opposition (180° from sun), zero at conjunction (0°)
-    var opposition;
-    if (degreesFromSun <= 180) {
-      opposition = degreesFromSun / 180; // 0 → 1
-    } else {
-      opposition = (360 - degreesFromSun) / 180; // 1 → 0
-    }
-    var outerSign = isRetrograde ? 1 : -1;
-    return sunLine + Math.round(outerSign * range * opposition);
+  // ─── 4. Local Planet Position Estimator (fallback) ───────────────
+  /**
+   * Estimates ecliptic longitudes for all planets using mean orbital elements.
+   * Uses J2000.0 epoch (2000-01-01 12:00 TT) as reference and mean daily motion.
+   * Accuracy: ~1-5° for inner planets, ~1-2° for outer planets over a few years.
+   * Good enough for clock arm sizing when the API is unavailable.
+   */
+  function estimatePlanetaryPositions(date) {
+    // Days since J2000.0 epoch (2000-01-01 12:00 UTC)
+    var j2000 = new Date(Date.UTC(2000, 0, 1, 12, 0, 0));
+    var daysSinceJ2000 = (date.getTime() - j2000.getTime()) / 86400000;
+
+    // Mean orbital elements at J2000.0: longitude at epoch + mean daily motion
+    // Sources: Meeus "Astronomical Algorithms", JPL approximate positions
+    var bodies = [
+      { name: 'Sun',     token: 'sun',     L0: 280.460,  rate: 0.9856474 },  // Earth's orbital motion as seen from Earth
+      { name: 'Moon',    token: 'moon',    L0: 218.316,  rate: 13.176396 },  // Moon's mean longitude
+      { name: 'Mercury', token: 'mercury', L0: 252.251,  rate: 4.0923344 },
+      { name: 'Venus',   token: 'venus',   L0: 181.980,  rate: 1.6021302 },
+      { name: 'Mars',    token: 'mars',    L0: 355.433,  rate: 0.5240208 },
+      { name: 'Jupiter', token: 'jupiter', L0: 34.351,   rate: 0.0831294 },
+      { name: 'Saturn',  token: 'saturn',  L0: 50.077,   rate: 0.0334442 },
+      { name: 'Uranus',  token: 'uranus',  L0: 314.055,  rate: 0.0117260 },
+      { name: 'Neptune', token: 'neptune', L0: 304.349,  rate: 0.0059540 },
+      { name: 'Pluto',   token: 'pluto',   L0: 238.929,  rate: 0.0039780 }
+    ];
+
+    return bodies.map(function (b) {
+      var longitude = posMod(b.L0 + b.rate * daysSinceJ2000, 360);
+      return {
+        name: b.name,
+        token: b.token,
+        eclipticLongitude: longitude,
+        isRetrograde: false  // Can't easily determine from mean elements alone
+      };
+    });
   }
 
   // ─── Public API ───────────────────────────────────────────────────
@@ -398,6 +482,8 @@ var ClockAstro = (function (SunCalc, moment, Config) {
     dateToTimeDegrees: dateToTimeDegrees,
     getSeasonalData: getSeasonalData,
     getPlanetaryPositions: getPlanetaryPositions,
+    estimatePlanetaryPositions: estimatePlanetaryPositions,
+    computeEclipticLatitude: computeEclipticLatitude,
     computePlotPositions: computePlotPositions
   };
 

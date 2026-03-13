@@ -70,6 +70,9 @@ var ClockApp = (function ($, moment, Config, Astro, Render) {
     $('#date-and-time').on('keydown', function (e) {
       if (e.key === 'Enter') {
         e.preventDefault();
+        // Clear cached date so configureTime parses the input text
+        state.now = null;
+        $('#date-and-time').data('rawDate', null);
         state.timeInputType = 'manual';
         requestUpdate();
       }
@@ -84,10 +87,18 @@ var ClockApp = (function ($, moment, Config, Astro, Render) {
       state.timeInputType = 'auto';
       requestUpdate();
     });
+    $('#this-sunrise a, #this-sunrise').on('click', function (e) {
+      e.preventDefault();
+      if (state.seasonalData && state.seasonalData.sunrise) {
+        state.now = new Date(state.seasonalData.sunrise.getTime());
+        state.timeInputType = 'manual';
+        requestUpdate();
+      }
+    });
     $('#this-sunset a, #this-sunset').on('click', function (e) {
       e.preventDefault();
       if (state.seasonalData && state.seasonalData.sunset) {
-        $('#date-and-time').val(state.seasonalData.sunset);
+        state.now = new Date(state.seasonalData.sunset.getTime());
         state.timeInputType = 'manual';
         requestUpdate();
       }
@@ -118,37 +129,80 @@ var ClockApp = (function ($, moment, Config, Astro, Render) {
 
   // ─── Time Navigation ─────────────────────────────────────────────
   function shiftTime(amount, unit) {
-    var val = $('#date-and-time').val();
-    var ts = Date.parse(val);
-    if (isNaN(ts)) return;
+    // Use the stored raw Date object (the formatted display string isn't parseable)
+    var d = $('#date-and-time').data('rawDate');
+    if (!d || !(d instanceof Date)) {
+      d = state.now || new Date();
+    }
+    d = new Date(d.getTime()); // clone so we don't mutate
 
-    var d = new Date(ts);
     if (unit === 'day') {
       d.setDate(d.getDate() + amount);
     } else if (unit === 'hour') {
       d.setHours(d.getHours() + amount);
     }
-    $('#date-and-time').val(d);
+    // Store the new date so the next shift works too
+    $('#date-and-time').data('rawDate', d);
     state.timeInputType = 'manual';
+    state.now = d;
     requestUpdate();
+  }
+
+  // ─── Parse user-entered date string ──────────────────────────────
+  function parseUserDate(val) {
+    if (!val || !val.trim()) return null;
+
+    // Try native Date.parse first (handles many formats)
+    var ts = Date.parse(val);
+    if (!isNaN(ts)) return new Date(ts);
+
+    // Handle our formatted display: "Friday, March 13, 2026  ·  12:08 am"
+    // Strip day name and the · separator, normalize whitespace
+    var cleaned = val
+      .replace(/^[A-Za-z]+,\s*/, '')   // remove "Friday, "
+      .replace(/\s*·\s*/g, ' ')         // replace · with space
+      .trim();
+    // Now we have something like "March 13, 2026 12:08 am"
+    ts = Date.parse(cleaned);
+    if (!isNaN(ts)) return new Date(ts);
+
+    // Try moment.js as a last resort
+    if (typeof moment !== 'undefined') {
+      var m = moment(val, [
+        'MMMM D, YYYY h:mm a',
+        'MMMM D, YYYY h:mma',
+        'MMM D, YYYY h:mm a',
+        'YYYY-MM-DD HH:mm',
+        'YYYY-MM-DD',
+        'MM/DD/YYYY',
+        'M/D/YYYY'
+      ]);
+      if (m.isValid()) return m.toDate();
+    }
+
+    return null;
   }
 
   // ─── Configure Time ──────────────────────────────────────────────
   function configureTime() {
     if (state.timeInputType === 'manual') {
-      var val = $('#date-and-time').val();
-      if (val && val.trim().length > 0) {
-        var ts = Date.parse(val);
-        if (!isNaN(ts)) {
-          state.now = new Date(ts);
-        } else {
-          // Invalid input → fall back to now
-          state.now = new Date();
-          state.timeInputType = 'auto';
-        }
+      // Prefer the already-set state.now (from shiftTime / sunrise / sunset click),
+      // then fall back to the stored raw date, then try parsing the input.
+      if (state.now && state.now instanceof Date && !isNaN(state.now.getTime())) {
+        // already set — use it
       } else {
-        state.now = new Date();
-        state.timeInputType = 'auto';
+        var raw = $('#date-and-time').data('rawDate');
+        if (raw && raw instanceof Date) {
+          state.now = raw;
+        } else {
+          var parsed = parseUserDate($('#date-and-time').val());
+          if (parsed) {
+            state.now = parsed;
+          } else {
+            state.now = new Date();
+            state.timeInputType = 'auto';
+          }
+        }
       }
     } else {
       state.now = new Date();
@@ -227,6 +281,7 @@ var ClockApp = (function ($, moment, Config, Astro, Render) {
 
     // 1. Get seasonal data (sunrise, sunset, moon — via SunCalc, instant)
     state.seasonalData = Astro.getSeasonalData(lat, lng, state.now);
+    Render.updateSunriseTimeDisplay(state.seasonalData.sunriseTimeStr);
     Render.updateSunsetTimeDisplay(state.seasonalData.sunsetTimeStr);
 
     // 2. Get planetary positions (via API, async)
@@ -245,28 +300,21 @@ var ClockApp = (function ($, moment, Config, Astro, Render) {
     state.currentXHR.then(function (planets) {
       if (planets && planets.length > 0) {
         state.planets = planets;
-      } else if (!state.planets || state.planets.length === 0) {
-        // No cached data either — create minimal fallback
-        console.warn('No planetary data received. Clock will show sun/moon only.');
-        var doy = Astro.dayOfYear(state.now);
-        var sunLongitude = Astro.posMod((doy - 80) * (360 / 365.25), 360);
-        state.planets = [{ name: 'Sun', token: 'sun', eclipticLongitude: sunLongitude, isRetrograde: false }];
+      } else {
+        // API returned empty — use local orbital estimates for the current date
+        console.warn('No planetary data from API. Using local orbital estimates.');
+        state.planets = Astro.estimatePlanetaryPositions(state.now);
       }
-      // else: keep the last good state.planets data
 
       renderFromState();
 
     }).catch(function (err) {
       console.error('Clock update error:', err);
 
-      // Fall back to last good planet data if available
-      if (!state.planets || state.planets.length === 0) {
-        var doy = Astro.dayOfYear(state.now);
-        var sunLongitude = Astro.posMod((doy - 80) * (360 / 365.25), 360);
-        state.planets = [{ name: 'Sun', token: 'sun', eclipticLongitude: sunLongitude, isRetrograde: false }];
-      }
+      // API failed — use local orbital estimates for the current date
+      // (always re-estimate so positions match the displayed date, not a stale one)
+      state.planets = Astro.estimatePlanetaryPositions(state.now);
 
-      // Still render with whatever data we have
       renderFromState();
     });
   }

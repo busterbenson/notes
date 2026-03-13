@@ -22,15 +22,15 @@ var ClockConfig = (function () {
   // Maximum line offset from the sun for each body
   // [0] = range at equinox (used as base), scaled by season
   var PLANET_LINE_RANGES = {
-    moon:    { base: 6, max: 8 },
-    mercury: { base: 1, max: 2 },
-    venus:   { base: 2, max: 3 },
-    mars:    { base: 3, max: 4 },
-    jupiter: { base: 4, max: 5 },
-    saturn:  { base: 5, max: 6 },
-    uranus:  { base: 6, max: 7 },
-    neptune: { base: 6, max: 7 },
-    pluto:   { base: 7, max: 7 }
+    moon:    { base: 3, max: 4 },
+    mercury: { base: 1, max: 1 },
+    venus:   { base: 1, max: 2 },
+    mars:    { base: 2, max: 3 },
+    jupiter: { base: 2, max: 3 },
+    saturn:  { base: 3, max: 3 },
+    uranus:  { base: 3, max: 4 },
+    neptune: { base: 3, max: 4 },
+    pluto:   { base: 4, max: 4 }
   };
 
   // Maximum elongation from the sun (degrees) for inner planets
@@ -59,6 +59,17 @@ var ClockConfig = (function () {
 
   // Outer planets (orbit beyond Earth)
   var OUTER_PLANETS = ['mars', 'jupiter', 'saturn', 'uranus', 'neptune', 'pluto'];
+
+  // Known body tokens (used to filter API responses that include non-planet entries)
+  var KNOWN_TOKENS = ['sun', 'moon', 'mercury', 'venus', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune', 'pluto'];
+
+  // Clamp range for computed line values (prevents arms from extending to the edge of the clock)
+  // NOTE: positive values = longer arms, negative = shorter. The images are asymmetric:
+  //   line +3 for Pluto ≈ 85% of radius, +5 ≈ 92%, +7 ≈ 98% (hits edge!)
+  //   line -3 for Pluto ≈ 45%, -7 ≈ 25%
+  // Keep LINE_MAX tight so outer planet arms stay well inside the circle.
+  var LINE_MIN = -7;
+  var LINE_MAX = 2;
 
   // ─── Moon Phase Image Paths ───────────────────────────────────────
   var MOON_PHASE_IMAGES = {
@@ -126,6 +137,9 @@ var ClockConfig = (function () {
     PLANETS: PLANETS,
     INNER_PLANETS: INNER_PLANETS,
     OUTER_PLANETS: OUTER_PLANETS,
+    KNOWN_TOKENS: KNOWN_TOKENS,
+    LINE_MIN: LINE_MIN,
+    LINE_MAX: LINE_MAX,
     MOON_PHASE_IMAGES: MOON_PHASE_IMAGES,
     moonPhaseNameFromFraction: moonPhaseNameFromFraction,
     IMAGE_BASE: IMAGE_BASE,

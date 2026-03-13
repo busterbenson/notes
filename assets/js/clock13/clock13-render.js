@@ -358,9 +358,32 @@ var ClockRender = (function ($, Config, Astro) {
     label.toggleClass('hidden');
   }
 
-  // ─── Update the date/time input ──────────────────────────────────
+  // ─── Update the date/time display ────────────────────────────────
   function updateDateInput(date) {
-    $('#date-and-time').val(date);
+    if (!(date instanceof Date)) date = new Date(date);
+
+    var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+    var months = ['January','February','March','April','May','June',
+                  'July','August','September','October','November','December'];
+
+    var h = date.getHours();
+    var m = date.getMinutes();
+    var ampm = h >= 12 ? 'pm' : 'am';
+    var h12 = h % 12 || 12;
+    var mm = m < 10 ? '0' + m : m;
+
+    var formatted = days[date.getDay()] + ', '
+      + months[date.getMonth()] + ' ' + date.getDate() + ', '
+      + date.getFullYear()
+      + '  ·  ' + h12 + ':' + mm + ' ' + ampm;
+
+    $('#date-and-time').val(formatted);
+    // Store the real Date object so the input can still be edited
+    $('#date-and-time').data('rawDate', date);
+  }
+
+  function updateSunriseTimeDisplay(timeStr) {
+    $('#time_of_sunrise').html(timeStr);
   }
 
   function updateSunsetTimeDisplay(timeStr) {
@@ -377,6 +400,7 @@ var ClockRender = (function ($, Config, Astro) {
     hideControls: hideControls,
     toggleHand: toggleHand,
     updateDateInput: updateDateInput,
+    updateSunriseTimeDisplay: updateSunriseTimeDisplay,
     updateSunsetTimeDisplay: updateSunsetTimeDisplay
   };
 

@@ -7,7 +7,7 @@ max_width: true
 <style>
   /* ─── Base ──────────────────────────────────────────────────────── */
   #quirky-clock {
-    font-family: Helvetica, sans-serif;
+    font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;
     color: #fff;
   }
 
@@ -20,39 +20,84 @@ max_width: true
   }
 
   #fullscreen {
-    margin: 37px !important;
+    margin: 20px !important;
   }
 
   /* ─── Location prompt ──────────────────────────────────────────── */
   a#get-location-link {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+  a#get-location-link:hover {
     color: #fff;
+    border-bottom-color: rgba(255,255,255,0.5);
+  }
+  #location-status {
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    padding: 8px 0;
+    opacity: 0.7;
   }
 
   /* ─── Navigation controls ──────────────────────────────────────── */
-  #hidden-date-links,
-  #visible-date-links {
-    font-size: 12px;
-    margin-bottom: 2em;
-    padding: 5px 0;
+  #navigation-and-links {
+    text-align: center;
+    margin: 0 auto 16px;
+    max-width: 600px;
+    z-index: 100;
   }
-  #hidden-date-links {
-    display: none;
-  }
-  a.date-link {
-    color: #ddd;
+  #navigation-and-links a {
+    margin-top: 0;
   }
   input#date-and-time {
     width: 100%;
-    padding: 5px 0;
-    font-size: 16px;
-    color: #fff;
+    padding: 8px 0;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    color: rgba(255,255,255,0.85);
     background: transparent;
-    border: 0 solid #000;
-    border-bottom: 1px solid #fff;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    text-align: center;
+    outline: none;
+    transition: border-color 0.3s;
   }
-  #navigation-and-links, a {
-    margin-top: 1em;
-    z-index: 100;
+  input#date-and-time:focus {
+    border-bottom-color: rgba(255,255,255,0.5);
+    color: #fff;
+  }
+
+  #hidden-date-links {
+    display: none;
+    padding: 6px 0;
+    font-size: 0;
+  }
+  #hidden-date-links span {
+    font-size: 12px;
+  }
+  #visible-date-links {
+    padding: 8px 0 0;
+    font-size: 0; /* collapse whitespace between inline-blocks */
+  }
+  #visible-date-links span {
+    font-size: 12px;
+  }
+  a.date-link {
+    color: rgba(255,255,255,0.4);
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    transition: color 0.2s;
+  }
+  a.date-link:hover {
+    color: rgba(255,255,255,0.85);
+  }
+  .nav-sep {
+    color: rgba(255,255,255,0.15);
+    margin: 0 6px;
+    font-size: 12px;
   }
 
   /* ─── Clock face ───────────────────────────────────────────────── */
@@ -65,11 +110,12 @@ max_width: true
     min-width: 100px;
     min-height: 100px;
     padding: 0;
-    border: 1px solid #fff;
+    border: 1px solid rgba(255,255,255,0.12);
     border-radius: 50%;
     aspect-ratio: 1 / 1;
     overflow: hidden;
     background: transparent;
+    box-shadow: 0 0 60px rgba(0,0,0,0.5);
   }
   #clock {
     position: relative;
@@ -111,36 +157,46 @@ max_width: true
     width: 100%;
     height: 100%;
     pointer-events: none;
-    z-index: 3; /* above constellation ring (z:2) to obscure below-horizon stars,
-                   but below planet hands (z:10+) and sunrise/sunset (z:50) */
+    z-index: 3;
   }
 
   /* ─── Preferences / data sections ──────────────────────────────── */
   #clock-preferences {
-    margin-top: 50px;
+    margin-top: 40px;
+    text-align: center;
   }
   .show-hand {
     display: inline-block;
-    width: 200px;
+    margin: 3px 4px;
     vertical-align: top;
     box-sizing: border-box;
+    font-size: 11px;
+    letter-spacing: 0.02em;
+    color: rgba(255,255,255,0.4);
+  }
+  .show-hand input[type="checkbox"] {
+    opacity: 0.5;
+    margin-right: 2px;
   }
   #moonth-data {
     padding-top: 50px;
   }
   #moonth-data-table td {
-    border: 1px solid #fff;
+    border: 1px solid rgba(255,255,255,0.15);
     padding: 5px;
-    font-size: 12px;
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
   }
   #save-moonth-data-row {
-    font-size: 12px;
+    font-size: 11px;
     padding-top: 3px;
   }
 
   /* ─── Debug section ────────────────────────────────────────────── */
   #debug {
     margin-top: 2em;
+    font-size: 11px;
+    color: rgba(255,255,255,0.3);
   }
 
   /* ─── Utility ──────────────────────────────────────────────────── */
@@ -167,13 +223,14 @@ max_width: true
       <span><a href="#" id="show-controls" class="date-link">Show controls</a></span>
     </div>
     <div id="visible-date-links">
-      <span><a href="#" id="hide-controls" class="date-link">Hide</a></span> &bull;
-      <span id="prev-day"><a href="#" class="date-link">Previous Day</a></span> &bull;
-      <span id="prev-hour"><a href="#" class="date-link">Previous Hour</a></span> &bull;
-      <span id="right-now"><a href="#" class="date-link">Right Now</a></span> &bull;
-      <span id="this-sunset"><a href="#" class="date-link">Sunset at <span id="time_of_sunset"></span></a></span> &bull;
-      <span id="next-hour"><a href="#" class="date-link">Next Hour</a></span> &bull;
-      <span id="next-day"><a href="#" class="date-link">Next Day</a></span>
+      <span><a href="#" id="hide-controls" class="date-link">Hide</a></span><span class="nav-sep">·</span><span
+        id="prev-day"><a href="#" class="date-link">← Day</a></span><span class="nav-sep">·</span><span
+        id="prev-hour"><a href="#" class="date-link">← Hour</a></span><span class="nav-sep">·</span><span
+        id="this-sunrise"><a href="#" class="date-link">Sunrise <span id="time_of_sunrise"></span></a></span><span class="nav-sep">·</span><span
+        id="right-now"><a href="#" class="date-link">Now</a></span><span class="nav-sep">·</span><span
+        id="this-sunset"><a href="#" class="date-link">Sunset <span id="time_of_sunset"></span></a></span><span class="nav-sep">·</span><span
+        id="next-hour"><a href="#" class="date-link">Hour →</a></span><span class="nav-sep">·</span><span
+        id="next-day"><a href="#" class="date-link">Day →</a></span>
     </div>
   </div>
 
