@@ -105,8 +105,8 @@ max_width: true
     position: relative;
     margin: 0 auto;
     width: 100%;
-    max-width: 2000px;
-    max-height: 2000px;
+    max-width: min(2000px, calc(100vh - 120px));  /* fit within viewport height */
+    max-height: calc(100vh - 120px);              /* leave room for nav controls */
     min-width: 100px;
     min-height: 100px;
     padding: 0;

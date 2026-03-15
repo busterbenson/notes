@@ -43,10 +43,13 @@ var ClockRender = (function ($, Config, Astro) {
     return result;
   }
 
-  // ─── Scale the clock to be a square ──────────────────────────────
+  // ─── Scale the clock to be a square (viewport-aware) ────────────
   function scaleClockToSquare() {
-    var w = $('#clock').width();
-    $('#clock').css('height', w);
+    var canvas = $('#clock-canvas');
+    // The actual rendered size of the canvas (CSS already constrains it)
+    var size = canvas.width();
+    $('#clock').css('height', size);
+    canvas.css('height', size);
   }
 
   // ─── Render all planet and moon hands ────────────────────────────

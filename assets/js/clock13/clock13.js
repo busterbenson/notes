@@ -29,6 +29,7 @@ var ClockApp = (function ($, moment, Config, Astro, Render) {
     apiUserId: null,
     apiKey: null,
     refreshTimer: null,
+    lastRefreshTime: null,   // timestamp of the last successful refresh (for drift detection)
     currentXHR: null         // reference to in-flight API call (for cancellation)
   };
 
@@ -346,8 +347,63 @@ var ClockApp = (function ($, moment, Config, Astro, Render) {
   // ─── Schedule the next auto-refresh ──────────────────────────────
   function scheduleNextRefresh() {
     if (state.timeInputType === 'auto') {
-      state.refreshTimer = setTimeout(requestUpdate, Config.AUTO_REFRESH_MS);
+      state.lastRefreshTime = Date.now();
+      state.refreshTimer = setTimeout(function () {
+        // Drift detection: if the timer fires much later than expected
+        // (e.g. browser throttled the tab, or device slept), log it.
+        // Either way, we update — the important thing is the timer keeps running.
+        var elapsed = Date.now() - state.lastRefreshTime;
+        if (elapsed > Config.AUTO_REFRESH_MS * 1.5) {
+          console.info('Clock: timer drifted (' + Math.round(elapsed / 1000) + 's elapsed, expected ' + Math.round(Config.AUTO_REFRESH_MS / 1000) + 's). Catching up.');
+        }
+        requestUpdate();
+      }, Config.AUTO_REFRESH_MS);
     }
+  }
+
+  // ─── Visibility & Focus Recovery ──────────────────────────────────
+  // Browsers throttle or pause setTimeout in background tabs and after
+  // sleep/wake. These listeners ensure the clock recovers immediately
+  // when the user returns, AND that the timer chain is always re-established
+  // even if setTimeout silently died.
+
+  function ensureTimerAlive() {
+    if (state.timeInputType !== 'auto') return;
+
+    var now = Date.now();
+    var elapsed = state.lastRefreshTime ? (now - state.lastRefreshTime) : Infinity;
+
+    if (elapsed >= Config.AUTO_REFRESH_MS) {
+      // Overdue — refresh immediately (this also restarts the timer chain)
+      console.info('Clock: recovering after ' + Math.round(elapsed / 1000) + 's. Refreshing now.');
+      requestUpdate();
+    } else {
+      // Not yet due, but the timer may have silently died.
+      // Cancel whatever might be pending and reschedule for the remaining time.
+      if (state.refreshTimer) {
+        clearTimeout(state.refreshTimer);
+      }
+      var remaining = Config.AUTO_REFRESH_MS - elapsed;
+      state.refreshTimer = setTimeout(function () {
+        requestUpdate();
+      }, remaining);
+    }
+  }
+
+  function handleVisibilityChange() {
+    if (document.visibilityState === 'visible') {
+      ensureTimerAlive();
+    }
+  }
+
+  function handleWindowFocus() {
+    ensureTimerAlive();
+  }
+
+  // Attach once at module level (safe even if init is called multiple times)
+  if (typeof document.addEventListener === 'function') {
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    window.addEventListener('focus', handleWindowFocus);
   }
 
   // ─── Public API ──────────────────────────────────────────────────
