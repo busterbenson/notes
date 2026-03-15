@@ -186,6 +186,65 @@ var ClockRender = (function ($, Config, Astro) {
     var color = computeBackgroundColor(sunAngle, sunriseAngle, sunsetAngle);
     // Apply sky color to the clock circle only (not the page body)
     $('#clock-canvas').css('background-color', color);
+
+    // Apply adaptive drop-shadow to planet hands for contrast against the sky
+    applyHandContrast(color);
+  }
+
+  /**
+   * Add a subtle outline to planet hand elements for gentle contrast
+   * against the current sky. The outline color is the complementary
+   * of the sky — darkened sky-hue on bright skies, lightened on dark —
+   * so it blends naturally rather than looking like a harsh border.
+   */
+  function applyHandContrast(skyColor) {
+    // Parse the sky color (could be hex or rgb(...))
+    var r, g, b;
+    var rgbMatch = skyColor.match(/rgb\(\s*(\d+),\s*(\d+),\s*(\d+)/);
+    if (rgbMatch) {
+      r = parseInt(rgbMatch[1]); g = parseInt(rgbMatch[2]); b = parseInt(rgbMatch[3]);
+    } else if (skyColor.charAt(0) === '#') {
+      r = parseInt(skyColor.slice(1, 3), 16);
+      g = parseInt(skyColor.slice(3, 5), 16);
+      b = parseInt(skyColor.slice(5, 7), 16);
+    } else {
+      return;
+    }
+
+    // Perceived luminance (0 = black, 1 = white)
+    var luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+
+    // Build a shadow color that's a darkened or lightened version of the
+    // sky itself — this reads as "part of the scene" rather than an
+    // imposed border.
+    var sr, sg, sb, opacity;
+    if (luminance > 0.4) {
+      // Bright sky: darken the sky color toward its own shadow
+      sr = Math.round(r * 0.25);
+      sg = Math.round(g * 0.25);
+      sb = Math.round(b * 0.25);
+      // Gentle opacity that rises with brightness: 0.12 at midtones → 0.30 at peak white
+      opacity = 0.12 + 0.18 * (luminance - 0.4) / 0.6;
+    } else {
+      // Dark sky: lighten toward a pale version of the sky
+      sr = Math.min(255, Math.round(r + (255 - r) * 0.6));
+      sg = Math.min(255, Math.round(g + (255 - g) * 0.6));
+      sb = Math.min(255, Math.round(b + (255 - b) * 0.6));
+      opacity = 0.08 + 0.10 * (0.4 - luminance) / 0.4; // 0.08 → 0.18
+    }
+
+    var shadowColor = 'rgba(' + sr + ',' + sg + ',' + sb + ',' + opacity.toFixed(2) + ')';
+
+    // Single pair of 1px offsets (just enough to hint at depth, not a full border)
+    var filterVal =
+      'drop-shadow( 1px  0 0 ' + shadowColor + ') ' +
+      'drop-shadow(-1px  0 0 ' + shadowColor + ') ' +
+      'drop-shadow( 0  1px 0 ' + shadowColor + ') ' +
+      'drop-shadow( 0 -1px 0 ' + shadowColor + ')';
+
+    for (var i = 1; i <= 10; i++) {
+      $('#hand-' + i).css('filter', filterVal);
+    }
   }
 
   function computeBackgroundColor(sunAngle, sunriseAngle, sunsetAngle) {
