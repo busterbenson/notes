@@ -162,8 +162,15 @@ max_width: true
 
   /* ─── Preferences / data sections ──────────────────────────────── */
   #clock-preferences {
-    margin-top: 40px;
+    margin-top: 16px;
     text-align: center;
+  }
+  #preferences-toggle {
+    font-size: 12px;
+    letter-spacing: 0.03em;
+  }
+  #preferences-panel {
+    margin-top: 10px;
   }
   .show-hand {
     display: inline-block;
@@ -271,18 +278,23 @@ max_width: true
     </div>
   </div>
 
-  <!-- Show/hide checkboxes -->
+  <!-- Planet visibility preferences (collapsed by default) -->
   <div id="clock-preferences">
-    <div class="show-hand"><input type="checkbox" id="show-sun" name="sun" checked> Show Sun</div>
-    <div class="show-hand"><input type="checkbox" id="show-moon" name="moon" checked> Show Moon</div>
-    <div class="show-hand"><input type="checkbox" id="show-mercury" name="mercury" checked> Show Mercury</div>
-    <div class="show-hand"><input type="checkbox" id="show-venus" name="venus" checked> Show Venus</div>
-    <div class="show-hand"><input type="checkbox" id="show-mars" name="mars" checked> Show Mars</div>
-    <div class="show-hand"><input type="checkbox" id="show-jupiter" name="jupiter" checked> Show Jupiter</div>
-    <div class="show-hand"><input type="checkbox" id="show-saturn" name="saturn" checked> Show Saturn</div>
-    <div class="show-hand"><input type="checkbox" id="show-uranus" name="uranus" checked> Show Uranus</div>
-    <div class="show-hand"><input type="checkbox" id="show-neptune" name="neptune" checked> Show Neptune</div>
-    <div class="show-hand"><input type="checkbox" id="show-pluto" name="pluto" checked> Show Pluto</div>
+    <div id="preferences-toggle">
+      <a href="#" id="show-preferences" class="date-link">Settings</a>
+    </div>
+    <div id="preferences-panel" style="display:none;">
+      <div class="show-hand"><input type="checkbox" id="show-sun" name="sun" checked> Sun</div>
+      <div class="show-hand"><input type="checkbox" id="show-moon" name="moon" checked> Moon</div>
+      <div class="show-hand"><input type="checkbox" id="show-mercury" name="mercury" checked> Mercury</div>
+      <div class="show-hand"><input type="checkbox" id="show-venus" name="venus" checked> Venus</div>
+      <div class="show-hand"><input type="checkbox" id="show-mars" name="mars" checked> Mars</div>
+      <div class="show-hand"><input type="checkbox" id="show-jupiter" name="jupiter" checked> Jupiter</div>
+      <div class="show-hand"><input type="checkbox" id="show-saturn" name="saturn" checked> Saturn</div>
+      <div class="show-hand"><input type="checkbox" id="show-uranus" name="uranus" checked> Uranus</div>
+      <div class="show-hand"><input type="checkbox" id="show-neptune" name="neptune" checked> Neptune</div>
+      <div class="show-hand"><input type="checkbox" id="show-pluto" name="pluto" checked> Pluto</div>
+    </div>
   </div>
 
   <!-- Moonth data table -->

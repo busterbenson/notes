@@ -410,6 +410,9 @@ var ClockRender = (function ($, Config, Astro) {
     $('#hidden-date-links').show();
     $('#visible-date-links').hide();
     $('#clock-preferences').hide();
+    // Also collapse the preferences panel when hiding all controls
+    $('#preferences-panel').hide();
+    $('#show-preferences').text('Settings');
   }
 
   // ─── Show / hide individual planet hand ──────────────────────────

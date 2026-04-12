@@ -160,6 +160,19 @@ var ClockApp = (function ($, moment, Config, Astro, Render) {
     $('#show-controls').on('click', function (e) { e.preventDefault(); Render.showControls(); });
     $('#hide-controls').on('click', function (e) { e.preventDefault(); Render.hideControls(); });
 
+    // Toggle planet preferences panel
+    $('#show-preferences').on('click', function (e) {
+      e.preventDefault();
+      var panel = $('#preferences-panel');
+      if (panel.is(':visible')) {
+        panel.slideUp(200);
+        $(this).text('Settings');
+      } else {
+        panel.slideDown(200);
+        $(this).text('Hide settings');
+      }
+    });
+
     // Show/hide planet hands
     var planets = ['sun', 'moon', 'mercury', 'venus', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune', 'pluto'];
     for (var i = 0; i < planets.length; i++) {
