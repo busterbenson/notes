@@ -353,6 +353,12 @@ h3.popover-header {
 .popover {
   border: 5px solid #334;
 }
+.week.popover-active {
+  background-color: #fffbe6;
+  box-shadow: 0 0 0 2px #e8c547;
+  z-index: 1;
+  position: relative;
+}
 
 // Book of moods
 .book-of-moodes {

@@ -17,15 +17,22 @@
 			      trigger: 'manual'
 			    }).on('mouseenter', function () {
 			      var _this = this;
-			      $(this).popover('show');
-			      $('.popover').on('mouseleave', function () {
-			        $(_this).popover('hide');
-			      });
+			      var delay = $(this).find('[data-has-image]').length || $(this).is('[data-has-image]') ? 150 : 0;
+			      _this._popoverTimeout = setTimeout(function () {
+			        $(_this).popover('show');
+			        $(_this).closest('.week').addClass('popover-active');
+			        $('.popover').on('mouseleave', function () {
+			          $(_this).popover('hide');
+			          $(_this).closest('.week').removeClass('popover-active');
+			        });
+			      }, delay);
 			    }).on('mouseleave', function () {
 			      var _this = this;
+			      clearTimeout(_this._popoverTimeout);
 			      setTimeout(function () {
 			        if (!$('.popover:hover').length) {
 			          $(_this).popover('hide');
+			          $(_this).closest('.week').removeClass('popover-active');
 			        }
 			      }, 100);
 			    });
