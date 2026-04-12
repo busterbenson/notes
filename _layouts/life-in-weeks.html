@@ -72,7 +72,7 @@ max_width: false
 		    			{% assign specific_date = this_week_date | date: "%s" | plus: day_modifier | date: "%Y-%m-%d" %}
 		    			{% if specific_date < next_year %}
 								{% for event in data[specific_date] %}
-									<a {% if event.link %}href="{{ event.link }}"{% endif %} title="{{ specific_date | date: "%b %-d, %Y" }}" target="_new" {% if event.desc %}data-toggle="popover" data-placement="auto"{% endif %} title="{{ specific_date }}" data-trigger="hover" data-content="{{ event.desc }}">{{ event.name }}</a>
+									<a {% if event.link %}href="{{ event.link }}"{% endif %} title="{{ specific_date | date: "%b %-d, %Y" }}" target="_new" {% if event.desc or event.image %}data-toggle="popover" data-placement="auto" data-html="true"{% endif %} title="{{ specific_date }}" data-trigger="hover" data-content="{% if event.image %}<img src='{{ event.image }}' style='max-width:200px;margin-bottom:8px;display:block;'>{% endif %}{{ event.desc }}">{{ event.name }}</a>
 								{% endfor %}
 							{% endif %}
 		    		{% endfor %}

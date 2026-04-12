@@ -204,6 +204,13 @@
   - name: "❤️ Niko is born"
     category: "family"
     tags: ["niko"]
+    image: "/assets/images/instagram/2010/niko-sleepy-morning-baby.jpg"
+
+'2010-10-19':
+  - name: "📸 First Instagram post"
+    desc: "Johnny Jump Up — baby Niko in a bouncer. Beginning of 15 years of visual documentation."
+    category: "self"
+    image: "/assets/images/instagram/2010/niko-johnny-jump-up-first-instagram-post.jpg"
 
 '2010-05-28':
   - name: "🎂 I turn 34: Cultivating the core"
@@ -243,6 +250,13 @@
     category: "work"
     tags: ["habit labs"]
 
+'2012-03-26':
+  - name: "📸 First #8:36pm photo"
+    desc: "Kellianne reading 'taking the moon for a walk' to Niko at bedtime. Start of the daily photo project."
+    category: "writing"
+    image: "/assets/images/instagram/2012/first-836pm-reading-to-niko.jpg"
+    tags: ["836pm"]
+
 '2012-08-22':
   - name: "I publish the first version of my book of beliefs"
     category: "self"
@@ -257,6 +271,7 @@
   - name: "🚚 Kellianne, Niko, and I move to Berkeley, California"
     category: "relationships"
     tags: ["kellianne", "home"]
+    image: "/assets/images/instagram/2013/niko-new-city-bedroom-sf.jpg"
 
 '2013-05-28':
   - name: "🎂 I turn 37: More kiloslogs"
@@ -272,6 +287,14 @@
   - name: "❤️ I meet Rodney, my brother. We found each other through 23andme.com"
     category: "family"
     tags: ["rodney"]
+    image: "/assets/images/instagram/2014/met-brother-rodney.jpg"
+
+'2014-05-23':
+  - name: "📸 Updating Beliefs.md — proto-Codex Vitae"
+    desc: "Screenshot of Beliefs.md in a code editor alongside Manifesto.md, BirthdayMottos.md, DailyPrimes.md, Genome.txt. The earliest visual evidence of the practice."
+    category: "writing"
+    image: "/assets/images/instagram/2014/updating-beliefs-file.jpg"
+    tags: ["beliefs"]
 
 '2014-05-28':
   - name: "🎂 I turn 38: Cultivate quality time"
@@ -283,12 +306,20 @@
   - name: "🏡 Kellianne and I buy a house in Berkeley"
     category: "family"
     tags: ["home"]
+    image: "/assets/images/instagram/2014/got-house-keys-berkeley.jpg"
 
 '2015-05-28':
   - name: "🎂 I turn 39: Make wiggle room"
     category: "birthday"
     link: "https://busterbenson.com/2015/06/13/make-wiggle-room"
     tags: ["annual review"]
+
+'2015-06-06':
+  - name: "📸 Kellianne finishes AIDS/LifeCycle ride"
+    desc: "SF to LA by bike. Buster and Niko at the finish line."
+    category: "family"
+    image: "/assets/images/instagram/2015/kellianne-aids-ride-finish.jpg"
+    tags: ["kellianne"]
 
 '2015-06-03':
   - name: "My last day at Twitter"
@@ -305,6 +336,13 @@
     category: "work"
     tags: ["slack"]
 
+'2016-04-19':
+  - name: "📸 Started #the100dayproject — Life of Clodia"
+    desc: "Clodia the Adventurous Asteroid: 51 daily illustrated episodes about an asteroid who leaves her comfortable life to see everything."
+    category: "writing"
+    image: "/assets/images/instagram/2016/clodia-adventurous-asteroid.jpg"
+    tags: ["drawing", "the100dayproject"]
+
 '2016-05-28':
   - name: "🎂 I turn 40: Mind the loops"
     category: "birthday"
@@ -315,6 +353,7 @@
   - name: "❤️ Louie is born"
     category: "family"
     tags: ["louie"]
+    image: "/assets/images/instagram/2016/louie-day-one.jpg"
 
 '2016-09-01':
   - name: "🧠 I publish the Cognitive Bias Cheat Sheet"
@@ -322,6 +361,13 @@
     category: "writing"
     link: "https://betterhumans.coach.me/cognitive-bias-cheat-sheet-55a472476b18"
     tags: ["biases"]
+    image: "/assets/images/instagram/2017/cognitive-bias-cheat-sheet.jpg"
+
+'2017-01-21':
+  - name: "📸 Women's March"
+    category: "world"
+    image: "/assets/images/instagram/2017/womens-march.jpg"
+    tags: ["politics"]
 
 '2016-11-08':
   - name: "🤬 Trump wins the election"
@@ -369,17 +415,31 @@
     category: "writing"
     tags: ["why are we yelling?"]
 
+'2019-05-03':
+  - name: "📸 Book cover revealed"
+    desc: "First time seeing 'Why Are We Yelling?' cover wrapped around a book."
+    category: "writing"
+    image: "/assets/images/instagram/2019/why-are-we-yelling-cover.jpg"
+    tags: ["why are we yelling?"]
+
 '2019-05-28':
   - name: "🎂 I turn 43: All in & with the flow"
     category: "birthday"
     link: "https://buster.medium.com/43-all-in-with-the-flow-e61e55b5dcf0"
     tags: ["annual review"]
 
+'2019-10-15':
+  - name: "Tarot art obsession begins"
+    desc: "Deep rabbit hole on tarot art, history, and reading. Tracking symbol evolution across decks. Leads to 45+ decks and original art."
+    category: "self"
+    tags: ["tarot"]
+
 '2019-11-19':
   - name: "😱 Why Are We Yelling? is published"
     category: "writing"
     tags: ["why are we yelling?"]
     link: "https://buster.medium.com/hello-this-is-my-book-b6aab9415f64"
+    image: "/assets/images/instagram/2019/kindle-notification-book.jpg"
 
 '2020-03-14':
   - name: "🏠 First day of shelter-in-place for COVID-19"
@@ -390,6 +450,13 @@
     category: "birthday"
     link: "https://paper.dropbox.com/doc/44-Year-of-the-Amateur--A1I6fGSn30hLhQMF5kpFCXC7AQ-xzFR0pPTrr36OFxt7h86h"
     tags: ["annual review"]
+    image: "/assets/images/instagram/2020/buster-44-birthday.jpg"
+
+'2020-07-01':
+  - name: "Separated from Kellianne"
+    desc: "Moved into an apartment a couple miles from the house. Announced publicly February 2021."
+    category: "relationships"
+    tags: ["kellianne"]
 
 '2020-12-14':
   - name: "Biden officially declared winner of the election"
@@ -417,11 +484,18 @@
     link: "https://buster.medium.com/45-year-of-reconstellation-38f7c0917c1b"
     tags: ["annual review"]
 
+'2021-07-20':
+  - name: "📸 Kauai trip"
+    desc: "Stargazing, southern stars, seeing more of Scorpio than ever before. Allerton Gardens, Spouting Horn."
+    category: "self"
+    image: "/assets/images/instagram/2021/kauai-stars.jpg"
+
 '2022-04-29':
   - name: "Kellianne and I officially divorced"
     desc: "Separated in June of 2019."
     category: "relatiohships"
     tags: ["kellianne"]
+    image: "/assets/images/instagram/2021/separation-announcement-family.jpg"
 
 '2022-05-18':
   - name: "I get COVID"
@@ -444,6 +518,7 @@
   - name: "I adopted Pancake 😻"
     category: "family"
     tags: ["cat"]
+    image: "/assets/images/instagram/2023/pancake-in-frying-pan.jpg"
 
 '2023-05-28':
   - name: "🎂 I turn 47: CHALANT!"
@@ -455,6 +530,7 @@
   - name: "🏡 I buy a house in Albany"
     category: "family"
     tags: ["home"]
+    image: "/assets/images/instagram/2023/moving-day-sala-house.jpg"
 
 '2023-10-24':
   - name: "First date with Sarah"
@@ -464,12 +540,19 @@
   - name: "Pancake has kittens 😻😻😻😻"
     category: "family"
     tags: ["cat"]
+    image: "/assets/images/instagram/2024/kitten-faces.jpg"
 
 '2024-05-28':
   - name: "🎂 I turn 48: Be Buster Benson, BBB, Be Be Be, 🐝🐝🐝"
     category: "birthday"
     link: "https://buster.medium.com/48-be-buster-benson-bbb-be-be-be-ba0d51abcc7c"
     tags: ["annual review"]
+
+'2024-07-24':
+  - name: "Japan — family reunion after 25 years"
+    desc: "Big lunch near aunt and uncle's house. Family not seen in 25 years."
+    category: "family"
+    tags: ["japan"]
 
 '2024-10-03':
   - name: "My last day at Medium"
@@ -481,15 +564,32 @@
     category: "work"
     tags: ["750-words"]
 
+'2024-10-14':
+  - name: "Saw Tsuchinshan-ATLAS comet"
+    desc: "From Albany beach with the kids. Shows up once every 80,000 years."
+    category: "self"
+
 '2024-11-05':
   - name: "🤮 Trump wins election"
     category: "world"
     tags: ["politics"]
 
+'2025-03-31':
+  - name: "📸 Mexico City with Sarah and Niko"
+    desc: "Teotihuacan pyramids, El Nido de Quetzalcóatl by Javier Senosiain."
+    category: "relationships"
+    image: "/assets/images/instagram/2025/niko-teotihuacan.jpg"
+    tags: ["sarah"]
+
 '2025-08-22':
   - name: "Burned my resume"
     category: "work"
     tags: [""]
+
+'2026-01-05':
+  - name: "My first day at Inkitt"
+    category: "work"
+    tags: ["inkitt"]
 
 '2056-09-12': 
   - name: "☠️ My life expectancy expiration date"
