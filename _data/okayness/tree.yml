@@ -1,0 +1,69 @@
+# Internal Okayness — tree of themes, boards, and sub-boards.
+#
+# Each node has a stable `id` (never rename; change `name` for display).
+# Ratings attach to ids, so boards can be renamed without losing history.
+#
+# Scoring:
+#   resilience_days — EWMA half-life for this board's own ratings.
+#     Low = reactive; high = slow-moving. Defaults below are seeds.
+#   children — if present, the board's effective score is a blend of its
+#     children's scores combined with its own direct ratings. The default
+#     blender is `weighted_mean` with `parent_weight: 0` (children-only) and
+#     each child equally weighted. Tune per board as needed.
+#
+# The 0–7 scale:
+#   7 Great · 6 Good · 5 Okay · 4 Neutral · 3 Not Okay · 2 Bad · 1 Terrible · 0 Numb
+
+themes:
+  - id: self
+    name: Self
+    children:
+      - { id: self-health, name: Health, resilience_days: 14 }
+      - { id: self-therapy, name: Therapy, resilience_days: 60 }
+      - { id: self-psychedelics, name: Psychedelics, resilience_days: 60 }
+      - { id: self-spirituality, name: Spirituality, resilience_days: 60 }
+
+  - id: career
+    name: Career
+    children:
+      - { id: career-inkitt, name: Inkitt, resilience_days: 30 }
+      - { id: career-750, name: "750 Words", resilience_days: 30 }
+
+  - id: social
+    name: Social & Relationships
+    children:
+      - { id: social-sarah, name: Sarah, resilience_days: 14 }
+      - { id: social-niko, name: Niko, resilience_days: 14 }
+      - { id: social-louie, name: Louie, resilience_days: 14 }
+      - { id: social-friends, name: Friends, resilience_days: 30 }
+      - { id: social-community, name: Community, resilience_days: 30 }
+
+  - id: projects
+    name: Projects & Plans
+    children:
+      - { id: projects-chalant, name: Chalant, resilience_days: 30 }
+      - { id: projects-dilemma, name: Dilemma, resilience_days: 30 }
+      - { id: projects-norway, name: Norway, resilience_days: 30 }
+
+  - id: basic-needs
+    name: Basic Needs
+    children:
+      - { id: basic-needs-budget, name: Budget & Spending, resilience_days: 30 }
+      - { id: basic-needs-investments, name: Investments, resilience_days: 60 }
+      - { id: basic-needs-home, name: Home, resilience_days: 30 }
+
+  - id: world
+    name: World
+    children:
+      - { id: world-ai, name: AI, resilience_days: 60 }
+      - { id: world-politics, name: Politics, resilience_days: 60 }
+      - { id: world-war, name: War, resilience_days: 60 }
+      - { id: world-environment, name: Environment, resilience_days: 60 }
+
+# Per-board blending overrides. Defaults are fine if you don't list a board.
+# blending:
+#   "self":
+#     parent_weight: 0.2        # 20% from parent's own direct ratings, 80% from children
+#     child_weights:             # non-equal child weights
+#       self-health: 2
+#       self-therapy: 1

@@ -1,0 +1,13 @@
+# Internal Okayness — append-only rating log.
+#
+# Add new ratings to the bottom. Never edit or remove past rows; the EWMA
+# scoring naturally fades old data so corrections happen by adding fresher
+# ratings, not by rewriting history.
+#
+# Each entry:
+#   id: <board id from tree.yml>
+#   at: ISO 8601 timestamp with offset
+#   score: integer 0..7  (0 = Numb, 7 = Great)
+#   note: optional free text
+
+ratings: []
