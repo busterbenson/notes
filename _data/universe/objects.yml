@@ -1,0 +1,577 @@
+# Universe — object dataset
+#
+# Every entry has:
+#   id            stable slug, never rename
+#   name          display name
+#   category      compact-object | star | planet | asteroid | moon | galaxy |
+#                 cluster | particle | nucleus | atom | macromolecule | virus |
+#                 organism | structure | cosmic-event | epoch
+#   mass_kg       mass in kilograms
+#   radius_m      characteristic size in meters
+#   density_kg_m3 mean density (computed or measured)
+#   color_band    nuclear | atomic | dark-matter | radiation | planck | quantum
+#   shape         circle | square | diamond | cross | asterisk | star
+#   color         hex string (matches Ianni Fig. 2 convention)
+#   formation
+#     time_ya     time before present in years (negative = future)
+#     epoch       descriptive era label
+#   evolution     optional list of {time_ya, density_kg_m3, label} for objects whose
+#                 density changes over time (the Universe trace, dying stars)
+#   sources       list of citation tags (defined in _data/universe/sources.yml)
+#   blurb         one-line description for tooltips
+#
+# Mass/density values cross-checked against NASA NSSDC Planetary Fact Sheets
+# (https://nssdc.gsfc.nasa.gov/planetary/factsheet/), Particle Data Group
+# https://pdg.lbl.gov, Planck Collaboration 2020 cosmological parameters
+# (Aghanim et al. 2020, A&A 641 A6), and Ianni, Mannarelli, Rossi 2022.
+
+objects:
+
+# ─── Solar system: Sun + planets ───────────────────────────────────────
+  - id: sun
+    name: Sun
+    category: star
+    mass_kg: 1.989e30
+    radius_m: 6.957e8
+    density_kg_m3: 1408
+    color_band: atomic
+    shape: asterisk
+    color: "#b03a36"
+    formation: { time_ya: 4.6e9, epoch: solar-system-formation }
+    sources: [nasa-fact-sun, ianni-2022]
+    blurb: "G2V main-sequence star. ~5 Gyr remaining on main sequence."
+
+  - id: mercury
+    name: Mercury
+    category: planet
+    mass_kg: 3.301e23
+    radius_m: 2.4397e6
+    density_kg_m3: 5429
+    color_band: atomic
+    shape: square
+    color: "#3fa648"
+    formation: { time_ya: 4.55e9, epoch: solar-system-formation }
+    sources: [nasa-fact-mercury]
+    blurb: "Smallest planet, closest to the Sun. Iron-dominated core."
+
+  - id: venus
+    name: Venus
+    category: planet
+    mass_kg: 4.867e24
+    radius_m: 6.0518e6
+    density_kg_m3: 5243
+    color_band: atomic
+    shape: square
+    color: "#3fa648"
+    formation: { time_ya: 4.55e9, epoch: solar-system-formation }
+    sources: [nasa-fact-venus]
+    blurb: "Earth's near-twin in mass and radius. Runaway-greenhouse atmosphere."
+
+  - id: earth
+    name: Earth
+    category: planet
+    mass_kg: 5.9722e24
+    radius_m: 6.371e6
+    density_kg_m3: 5514
+    color_band: atomic
+    shape: square
+    color: "#3fa648"
+    formation: { time_ya: 4.54e9, epoch: solar-system-formation }
+    sources: [nasa-fact-earth, ianni-2022]
+    blurb: "Densest planet in the solar system. Liquid-water surface."
+
+  - id: mars
+    name: Mars
+    category: planet
+    mass_kg: 6.4171e23
+    radius_m: 3.3895e6
+    density_kg_m3: 3934
+    color_band: atomic
+    shape: square
+    color: "#3fa648"
+    formation: { time_ya: 4.5e9, epoch: solar-system-formation }
+    sources: [nasa-fact-mars, ianni-2022]
+    blurb: "Cold desert planet. Past liquid-water surface, now frozen."
+
+  - id: jupiter
+    name: Jupiter
+    category: planet
+    mass_kg: 1.898e27
+    radius_m: 6.9911e7
+    density_kg_m3: 1326
+    color_band: atomic
+    shape: square
+    color: "#3fa648"
+    formation: { time_ya: 4.5e9, epoch: solar-system-formation }
+    sources: [nasa-fact-jupiter, ianni-2022]
+    blurb: "Gas giant. Approaches the maximum-mass planet limit (Ianni eq. 19-20)."
+
+  - id: saturn
+    name: Saturn
+    category: planet
+    mass_kg: 5.683e26
+    radius_m: 5.8232e7
+    density_kg_m3: 687
+    color_band: atomic
+    shape: square
+    color: "#3fa648"
+    formation: { time_ya: 4.5e9, epoch: solar-system-formation }
+    sources: [nasa-fact-saturn]
+    blurb: "Less dense than water. Rings span 270,000 km."
+
+  - id: uranus
+    name: Uranus
+    category: planet
+    mass_kg: 8.681e25
+    radius_m: 2.5362e7
+    density_kg_m3: 1270
+    color_band: atomic
+    shape: square
+    color: "#3fa648"
+    formation: { time_ya: 4.5e9, epoch: solar-system-formation }
+    sources: [nasa-fact-uranus]
+    blurb: "Ice giant tilted on its side."
+
+  - id: neptune
+    name: Neptune
+    category: planet
+    mass_kg: 1.024e26
+    radius_m: 2.4622e7
+    density_kg_m3: 1638
+    color_band: atomic
+    shape: square
+    color: "#3fa648"
+    formation: { time_ya: 4.5e9, epoch: solar-system-formation }
+    sources: [nasa-fact-neptune]
+    blurb: "Outer ice giant, fastest-blowing winds in the solar system."
+
+  - id: moon
+    name: Moon
+    category: moon
+    mass_kg: 7.342e22
+    radius_m: 1.7374e6
+    density_kg_m3: 3344
+    color_band: atomic
+    shape: square
+    color: "#3fa648"
+    formation: { time_ya: 4.51e9, epoch: theia-impact }
+    sources: [nasa-fact-moon, ianni-2022]
+    blurb: "Formed from debris of the Theia impact ~50 Myr after Earth itself."
+
+  - id: pluto
+    name: Pluto
+    category: planet
+    mass_kg: 1.303e22
+    radius_m: 1.1883e6
+    density_kg_m3: 1854
+    color_band: atomic
+    shape: square
+    color: "#3fa648"
+    formation: { time_ya: 4.5e9, epoch: solar-system-formation }
+    sources: [nasa-fact-pluto]
+    blurb: "Dwarf planet. Crosses Neptune's orbit on its 248-yr loop."
+
+  - id: ceres
+    name: Ceres
+    category: asteroid
+    mass_kg: 9.39e20
+    radius_m: 4.696e5
+    density_kg_m3: 2162
+    color_band: atomic
+    shape: square
+    color: "#7da680"
+    formation: { time_ya: 4.6e9, epoch: solar-system-formation }
+    sources: [ianni-2022]
+    blurb: "Largest body in the asteroid belt. Spherical, near the planet/asteroid line."
+
+  - id: vesta
+    name: 4 Vesta
+    category: asteroid
+    mass_kg: 2.59e20
+    radius_m: 2.625e5
+    density_kg_m3: 3456
+    color_band: atomic
+    shape: square
+    color: "#7da680"
+    formation: { time_ya: 4.56e9, epoch: solar-system-formation }
+    sources: [ianni-2022]
+    blurb: "Second-largest asteroid. Differentiated like a small planet."
+
+  - id: deimos
+    name: Deimos
+    category: moon
+    mass_kg: 1.4762e15
+    radius_m: 6.2e3
+    density_kg_m3: 1471
+    color_band: atomic
+    shape: square
+    color: "#7da680"
+    formation: { time_ya: 4.5e9, epoch: solar-system-formation }
+    sources: [ianni-2022]
+    blurb: "Mars's smaller moon. Non-spherical, ~12 km across."
+
+  - id: phobos
+    name: Phobos
+    category: moon
+    mass_kg: 1.0659e16
+    radius_m: 1.1267e4
+    density_kg_m3: 1876
+    color_band: atomic
+    shape: square
+    color: "#7da680"
+    formation: { time_ya: 4.5e9, epoch: solar-system-formation }
+    sources: [ianni-2022]
+    blurb: "Mars's larger moon. Spirals inward, will impact Mars in ~50 Myr."
+
+# ─── Stars ────────────────────────────────────────────────────────────
+  - id: sirius-a
+    name: Sirius A
+    category: star
+    mass_kg: 4.05e30
+    radius_m: 1.18e9
+    density_kg_m3: 583
+    color_band: atomic
+    shape: asterisk
+    color: "#b03a36"
+    formation: { time_ya: 2.42e8, epoch: stellar-formation-recent }
+    sources: [ianni-2022]
+    blurb: "Brightest star in Earth's night sky. A1V main-sequence."
+
+  - id: sirius-b
+    name: Sirius B
+    category: compact-object
+    mass_kg: 2.04e30
+    radius_m: 5.85e6
+    density_kg_m3: 2.43e9
+    color_band: atomic
+    shape: asterisk
+    color: "#b03a36"
+    formation: { time_ya: 1.2e8, epoch: white-dwarf-formation }
+    sources: [ianni-2022]
+    blurb: "White dwarf companion to Sirius A. Sun mass packed into Earth volume."
+
+  - id: proxima-centauri
+    name: Proxima Centauri
+    category: star
+    mass_kg: 2.45e29
+    radius_m: 1.05e8
+    density_kg_m3: 5.6e4
+    color_band: atomic
+    shape: asterisk
+    color: "#b03a36"
+    formation: { time_ya: 4.85e9, epoch: stellar-formation }
+    sources: [ianni-2022]
+    blurb: "Nearest star to the Sun. M5.5Ve red dwarf. Hosts Proxima b."
+
+  - id: betelgeuse
+    name: Betelgeuse
+    category: star
+    mass_kg: 3.4e31
+    radius_m: 5.1e11
+    density_kg_m3: 6.1e-5
+    color_band: atomic
+    shape: asterisk
+    color: "#b03a36"
+    formation: { time_ya: 1e7, epoch: stellar-formation-recent }
+    sources: [ianni-2022]
+    blurb: "Red supergiant. Will go supernova within ~100,000 years."
+
+  - id: rigel
+    name: Rigel
+    category: star
+    mass_kg: 4.16e31
+    radius_m: 5.4e10
+    density_kg_m3: 6.3e-2
+    color_band: atomic
+    shape: asterisk
+    color: "#b03a36"
+    formation: { time_ya: 8e6, epoch: stellar-formation-recent }
+    sources: [ianni-2022]
+    blurb: "Blue supergiant in Orion. ~20× Sun's mass."
+
+# ─── Compact objects (BHs, neutron stars) ─────────────────────────────
+  - id: crab-pulsar
+    name: Crab Pulsar
+    category: compact-object
+    mass_kg: 2.78e30
+    radius_m: 1.0e4
+    density_kg_m3: 6.65e17
+    color_band: nuclear
+    shape: diamond
+    color: "#b03a36"
+    formation: { time_ya: 968, epoch: supernova-1054 }
+    sources: [ianni-2022]
+    blurb: "Neutron star at the heart of the Crab Nebula. Spinning 30×/sec."
+
+  - id: stellar-mass-bh
+    name: Stellar-mass BH (representative)
+    category: compact-object
+    mass_kg: 6e30
+    radius_m: 8.9e3
+    density_kg_m3: 2.0e18
+    color_band: nuclear
+    shape: circle
+    color: "#1a1a1a"
+    formation: { time_ya: null, epoch: ongoing }
+    sources: [ligo-virgo-catalog, ianni-2022]
+    blurb: "Typical 3 M☉ black hole. Schwarzschild radius ~9 km. Forms in core-collapse SNe."
+
+  - id: sgr-a-star
+    name: Sgr A*
+    category: compact-object
+    mass_kg: 8.55e36
+    radius_m: 1.27e10
+    density_kg_m3: 1.0e6
+    color_band: nuclear
+    shape: circle
+    color: "#1a1a1a"
+    formation: { time_ya: 1.3e10, epoch: galaxy-formation }
+    sources: [eht-collaboration-2022, ianni-2022]
+    blurb: "Supermassive BH at the Milky Way's center. 4.15 million M☉."
+
+  - id: m87-bh
+    name: M87* (M87 SMBH)
+    category: compact-object
+    mass_kg: 1.29e40
+    radius_m: 1.91e13
+    density_kg_m3: 4.4e-1
+    color_band: nuclear
+    shape: circle
+    color: "#1a1a1a"
+    formation: { time_ya: 1.3e10, epoch: galaxy-formation }
+    sources: [eht-collaboration-2019]
+    blurb: "Subject of the first BH image (2019). 6.5 billion M☉."
+
+# ─── Galactic and cosmological structures ────────────────────────────
+  - id: milky-way
+    name: Milky Way
+    category: galaxy
+    mass_kg: 2.4e42
+    radius_m: 4.7e20
+    density_kg_m3: 5.5e-21
+    color_band: dark-matter
+    shape: square
+    color: "#a55ec2"
+    formation: { time_ya: 1.36e10, epoch: galaxy-formation }
+    sources: [planck-2020]
+    blurb: "Our galaxy. Includes ~10¹¹ stars + dark matter halo."
+
+  - id: andromeda
+    name: Andromeda (M31)
+    category: galaxy
+    mass_kg: 2.4e42
+    radius_m: 5.4e20
+    density_kg_m3: 3.6e-21
+    color_band: dark-matter
+    shape: square
+    color: "#a55ec2"
+    formation: { time_ya: 1.0e10, epoch: galaxy-formation }
+    sources: [planck-2020]
+    blurb: "Nearest large galaxy. Will collide with the Milky Way in ~4.5 Gyr."
+
+  - id: virgo-cluster
+    name: Virgo Cluster
+    category: cluster
+    mass_kg: 2.4e45
+    radius_m: 4.8e22
+    density_kg_m3: 5.2e-24
+    color_band: dark-matter
+    shape: cross
+    color: "#a55ec2"
+    formation: { time_ya: 1.2e10, epoch: cluster-formation }
+    sources: [planck-2020]
+    blurb: "Nearest large galaxy cluster. ~1300 member galaxies."
+
+  - id: laniakea-supercluster
+    name: Laniakea Supercluster
+    category: cluster
+    mass_kg: 2.0e47
+    radius_m: 7.6e23
+    density_kg_m3: 1.1e-25
+    color_band: dark-matter
+    shape: cross
+    color: "#a55ec2"
+    formation: { time_ya: 1.0e10, epoch: large-scale-structure }
+    sources: [tully-2014-laniakea]
+    blurb: "Our home supercluster. 100,000 galaxies including Milky Way."
+
+  - id: observable-universe
+    name: Observable universe
+    category: structure
+    mass_kg: 1.5e53
+    radius_m: 4.4e26
+    density_kg_m3: 9.47e-27
+    color_band: radiation
+    shape: square
+    color: "#2d6db0"
+    formation: { time_ya: 1.38e10, epoch: big-bang }
+    evolution:
+      - { time_ya: 1.38e10, density_kg_m3: 5.16e96,  label: "Planck era (t = 1 t_Planck)" }
+      - { time_ya: 1.38e10, density_kg_m3: 1e87,    label: "End of inflation (t ≈ 10⁻³² s)" }
+      - { time_ya: 1.38e10, density_kg_m3: 1e17,    label: "QCD epoch (t ≈ 10⁻⁵ s)" }
+      - { time_ya: 1.38e10, density_kg_m3: 1e-3,    label: "Nucleosynthesis (t ≈ 3 min)" }
+      - { time_ya: 1.38e10, density_kg_m3: 1e-15,   label: "Recombination (t ≈ 380 kyr)" }
+      - { time_ya: 1.36e10, density_kg_m3: 1e-22,   label: "First stars (t ≈ 200 Myr)" }
+      - { time_ya: 1.0e10,  density_kg_m3: 1e-25,   label: "Galaxy formation peak" }
+      - { time_ya: 0,        density_kg_m3: 9.47e-27, label: "Today (critical density)" }
+    sources: [planck-2020, ianni-2022]
+    blurb: "Everything causally connected to us. ~93 Gly across in proper distance."
+
+# ─── Macroscopic / biological ─────────────────────────────────────────
+  - id: human
+    name: Human
+    category: organism
+    mass_kg: 70
+    radius_m: 0.85
+    density_kg_m3: 1010
+    color_band: atomic
+    shape: cross
+    color: "#2d6db0"
+    formation: { time_ya: 3e5, epoch: hominin-emergence }
+    sources: [ianni-2022]
+    blurb: "Median adult human. Density ~slightly above water."
+
+  - id: blue-whale
+    name: Blue whale
+    category: organism
+    mass_kg: 1.5e5
+    radius_m: 15
+    density_kg_m3: 1060
+    color_band: atomic
+    shape: cross
+    color: "#2d6db0"
+    formation: { time_ya: 5e7, epoch: cetacean-evolution }
+    sources: [iucn-cetaceans]
+    blurb: "Largest known animal in Earth's history."
+
+  - id: cell
+    name: Eukaryotic cell
+    category: organism
+    mass_kg: 1e-12
+    radius_m: 1e-5
+    density_kg_m3: 1100
+    color_band: atomic
+    shape: cross
+    color: "#2d6db0"
+    formation: { time_ya: 2.1e9, epoch: eukaryote-emergence }
+    sources: [milo-2010-bionumbers]
+    blurb: "Typical animal cell, ~10 µm across. Density just above water."
+
+  - id: sars-cov-2
+    name: SARS-CoV-2
+    category: virus
+    mass_kg: 1e-18
+    radius_m: 6e-8
+    density_kg_m3: 1100
+    color_band: atomic
+    shape: square
+    color: "#2d6db0"
+    formation: { time_ya: 5, epoch: covid-pandemic }
+    sources: [bar-on-2020-sars-cov-2, ianni-2022]
+    blurb: "~120 nm enveloped virus. Ianni 2022 plotted it on Fig. 1 as a curiosity."
+
+# ─── Atomic and subatomic ─────────────────────────────────────────────
+  - id: hydrogen-atom
+    name: Hydrogen atom
+    category: atom
+    mass_kg: 1.6735e-27
+    radius_m: 5.29e-11
+    density_kg_m3: 2.69e3
+    color_band: atomic
+    shape: square
+    color: "#3fa648"
+    formation: { time_ya: 1.38e10, epoch: recombination }
+    sources: [pdg-2024, ianni-2022]
+    blurb: "Bohr radius. First atoms formed at recombination, 380 kyr after BB."
+
+  - id: uranium-atom
+    name: Uranium atom
+    category: atom
+    mass_kg: 3.95e-25
+    radius_m: 1.75e-10
+    density_kg_m3: 1.76e4
+    color_band: atomic
+    shape: square
+    color: "#3fa648"
+    formation: { time_ya: 6.6e9, epoch: r-process-nucleosynthesis }
+    sources: [pdg-2024, ianni-2022]
+    blurb: "Heaviest naturally occurring element. Forged in neutron-star mergers."
+
+  - id: hydrogen-nucleus
+    name: Hydrogen nucleus (proton)
+    category: nucleus
+    mass_kg: 1.6726e-27
+    radius_m: 8.41e-16
+    density_kg_m3: 6.7e17
+    color_band: nuclear
+    shape: circle
+    color: "#1a1a1a"
+    formation: { time_ya: 1.38e10, epoch: bb-nucleosynthesis }
+    sources: [pdg-2024]
+    blurb: "Single proton. ~10⁻¹⁵ m charge radius. Nuclear-density."
+
+  - id: uranium-nucleus
+    name: Uranium-238 nucleus
+    category: nucleus
+    mass_kg: 3.95e-25
+    radius_m: 7.4e-15
+    density_kg_m3: 2.3e17
+    color_band: nuclear
+    shape: circle
+    color: "#1a1a1a"
+    formation: { time_ya: 6.6e9, epoch: r-process-nucleosynthesis }
+    sources: [pdg-2024, ianni-2022]
+    blurb: "Heaviest stable nucleus. Half-life 4.5 Gyr."
+
+  - id: proton
+    name: Proton (free)
+    category: particle
+    mass_kg: 1.6726e-27
+    radius_m: 8.41e-16
+    density_kg_m3: 6.7e17
+    color_band: nuclear
+    shape: circle
+    color: "#2d6db0"
+    formation: { time_ya: 1.38e10, epoch: quark-hadron-transition }
+    sources: [pdg-2024, ianni-2022]
+    blurb: "Lightest baryon. Lifetime > 10³⁴ years (lower bound)."
+
+  - id: electron
+    name: Electron
+    category: particle
+    mass_kg: 9.109e-31
+    radius_m: 2.42e-12
+    density_kg_m3: 0
+    color_band: quantum
+    shape: circle
+    color: "#2d6db0"
+    formation: { time_ya: 1.38e10, epoch: leptogenesis }
+    sources: [pdg-2024, ianni-2022]
+    blurb: "Point particle. Radius shown is its Compton wavelength."
+
+  - id: w-boson
+    name: W boson
+    category: particle
+    mass_kg: 1.43e-25
+    radius_m: 2.45e-18
+    density_kg_m3: 0
+    color_band: quantum
+    shape: circle
+    color: "#2d6db0"
+    formation: { time_ya: 1.38e10, epoch: electroweak-transition }
+    sources: [pdg-2024, ianni-2022]
+    blurb: "Mediates the weak interaction. Mass 80.4 GeV/c²."
+
+# ─── Anchor/limit objects ─────────────────────────────────────────────
+  - id: planck-mass-bh
+    name: Planck-scale BH
+    category: cosmic-event
+    mass_kg: 2.176e-8
+    radius_m: 1.616e-35
+    density_kg_m3: 5.16e96
+    color_band: planck
+    shape: circle
+    color: "#6b4f3a"
+    formation: { time_ya: 1.38e10, epoch: planck-era }
+    sources: [pdg-2024]
+    blurb: "Planck mass at Planck length — the smallest, densest possible BH. Where GR + QM both break."

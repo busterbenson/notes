@@ -1,0 +1,78 @@
+# Citation registry for /universe/. Every object in objects.yml references
+# one or more of these tags in its `sources:` list.
+
+sources:
+
+  - id: nasa-fact-sun
+    short: NASA Fact Sheet — Sun
+    citation: "NASA NSSDC Sun Fact Sheet (https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html)"
+  - id: nasa-fact-mercury
+    short: NASA Fact Sheet — Mercury
+    citation: "NASA NSSDC Mercury Fact Sheet (https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html)"
+  - id: nasa-fact-venus
+    short: NASA Fact Sheet — Venus
+    citation: "NASA NSSDC Venus Fact Sheet"
+  - id: nasa-fact-earth
+    short: NASA Fact Sheet — Earth
+    citation: "NASA NSSDC Earth Fact Sheet"
+  - id: nasa-fact-mars
+    short: NASA Fact Sheet — Mars
+    citation: "NASA NSSDC Mars Fact Sheet"
+  - id: nasa-fact-jupiter
+    short: NASA Fact Sheet — Jupiter
+    citation: "NASA NSSDC Jupiter Fact Sheet"
+  - id: nasa-fact-saturn
+    short: NASA Fact Sheet — Saturn
+    citation: "NASA NSSDC Saturn Fact Sheet"
+  - id: nasa-fact-uranus
+    short: NASA Fact Sheet — Uranus
+    citation: "NASA NSSDC Uranus Fact Sheet"
+  - id: nasa-fact-neptune
+    short: NASA Fact Sheet — Neptune
+    citation: "NASA NSSDC Neptune Fact Sheet"
+  - id: nasa-fact-moon
+    short: NASA Fact Sheet — Moon
+    citation: "NASA NSSDC Moon Fact Sheet"
+  - id: nasa-fact-pluto
+    short: NASA Fact Sheet — Pluto
+    citation: "NASA NSSDC Pluto Fact Sheet"
+
+  - id: pdg-2024
+    short: Particle Data Group 2024
+    citation: "S. Navas et al. (Particle Data Group), Phys. Rev. D 110 030001 (2024)."
+
+  - id: planck-2020
+    short: Planck Collaboration 2020
+    citation: "Aghanim, N. et al. (Planck Collaboration). 'Planck 2018 results. VI. Cosmological parameters.' Astronomy & Astrophysics 641 (2020) A6."
+
+  - id: ianni-2022
+    short: Ianni et al. 2022
+    citation: "Ianni, A.; Mannarelli, M.; Rossi, N. 'A new approach to dark matter from the mass–radius diagram of the Universe.' Results in Physics 38 (2022) 105544. doi:10.1016/j.rinp.2022.105544"
+
+  - id: ligo-virgo-catalog
+    short: LIGO-Virgo-KAGRA O4 Catalog
+    citation: "LIGO Scientific, Virgo, KAGRA Collaborations. Gravitational-Wave Transient Catalog (GWTC) — current public release."
+
+  - id: eht-collaboration-2019
+    short: EHT M87* 2019
+    citation: "Event Horizon Telescope Collaboration. 'First M87 Event Horizon Telescope Results.' ApJL 875 L1 (2019)."
+
+  - id: eht-collaboration-2022
+    short: EHT Sgr A* 2022
+    citation: "Event Horizon Telescope Collaboration. 'First Sagittarius A* Event Horizon Telescope Results.' ApJL 930 L12 (2022)."
+
+  - id: tully-2014-laniakea
+    short: Tully et al. 2014 — Laniakea
+    citation: "Tully, R. B. et al. 'The Laniakea supercluster of galaxies.' Nature 513 (2014) 71-73."
+
+  - id: bar-on-2020-sars-cov-2
+    short: Bar-On et al. 2020 — SARS-CoV-2
+    citation: "Bar-On, Y. M. et al. 'SARS-CoV-2 (COVID-19) by the numbers.' eLife 9 (2020) e57309."
+
+  - id: milo-2010-bionumbers
+    short: BioNumbers (cell density)
+    citation: "Milo, R. et al. 'BioNumbers — the database of key numbers in molecular and cell biology.' Nucleic Acids Res. 38, D750 (2010)."
+
+  - id: iucn-cetaceans
+    short: IUCN Red List — Cetaceans
+    citation: "IUCN Red List of Threatened Species — Balaenoptera musculus."
