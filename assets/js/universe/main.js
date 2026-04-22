@@ -469,8 +469,20 @@
   }
 
   // ── Boot ─────────────────────────────────────────────────────────────
-  document.addEventListener("DOMContentLoaded", () => {
-    buildMassSizeChart();
-    buildDensityTimeChart();
-  });
+  // main.js sits at end-of-body, so DOMContentLoaded usually fires BEFORE
+  // this code runs. Listening for it is too late — invoke directly if the
+  // document is already past loading.
+  function boot() {
+    try {
+      buildMassSizeChart();
+      buildDensityTimeChart();
+    } catch (e) {
+      console.error("[universe] chart init failed:", e);
+    }
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", boot);
+  } else {
+    boot();
+  }
 })();

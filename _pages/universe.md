@@ -1,21 +1,24 @@
 ---
 title: The Universe at a Glance
 permalink: /universe/
-layout: page
+layout: fullscreen
 sitemap: false
 ---
 
 <style>
-  .uni-intro { color: #555; font-size: 0.95rem; line-height: 1.55; max-width: 65ch; margin: 0 0 1.5rem 0; }
-  .uni-charts { display: grid; grid-template-columns: 1fr; gap: 2rem; margin-top: 1rem; }
-  @media (min-width: 1100px) { .uni-charts { grid-template-columns: 1fr 1fr; } }
+  body { background: #faf8f0; }
+  #fullscreen { padding: 1.5rem 1.5rem 3rem; max-width: none; }
+  .uni-page-title { font-family: "Open Sans", sans-serif; font-weight: 700; font-size: 1.6rem; margin: 0 0 0.4rem 0; color: #1a1a1a; }
+  .uni-intro { color: #555; font-size: 0.95rem; line-height: 1.55; max-width: 70ch; margin: 0 0 1.5rem 0; }
+  .uni-charts { display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-top: 1rem; }
+  @media (min-width: 1200px) { .uni-charts { grid-template-columns: 1fr 1fr; } }
 
   .uni-chart { background: #fdfcf6; border: 1px solid #ece8d8; border-radius: 12px; padding: 1.25rem; }
   .uni-chart-header { display: flex; align-items: baseline; gap: 0.75rem; margin-bottom: 0.6rem; }
   .uni-chart-title { font-weight: 600; font-size: 1.05rem; color: #1a1a1a; margin: 0; }
   .uni-chart-subtitle { color: #888; font-size: 0.8rem; }
 
-  .uni-canvas { width: 100%; aspect-ratio: 1.2 / 1; min-height: 420px; }
+  .uni-canvas { width: 100%; aspect-ratio: 1.4 / 1; min-height: 480px; }
 
   .uni-legend { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.75rem; }
   .uni-chip {
@@ -47,6 +50,7 @@ sitemap: false
   .uni-footer li { margin: 0.2rem 0; line-height: 1.45; }
 </style>
 
+<h1 class="uni-page-title">The Universe at a Glance</h1>
 <p class="uni-intro">
   Two paired interactive charts of <strong>everything that physically exists</strong>.
   The left chart is the Carr–Rees mass-radius diagram — the geometry of what's
