@@ -41,19 +41,21 @@ Usage:
 
   <!-- 7 arc segments — red on the left, green on the right.
        Drawn counterclockwise (sweep-flag=0) from bottom-right (Great, 135°)
-       over the top to bottom-left (Terrible, 225°). Each wedge spans 270°/7 ≈ 38.57°. -->
+       over the top to bottom-left (Terrible, 225°). Each wedge spans 270°/7 ≈ 38.57°.
+       Both sides mirror each other — neutral beige in the middle fading outward to
+       deep green / deep red. -->
   <g fill="none" stroke-width="11" stroke-linecap="butt">
-    <path d="M 76.87 76.87 A 38 38 0 0 0 87.77 54.25" stroke="#6fcf97"/>  <!-- Great  -->
-    <path d="M 87.77 54.25 A 38 38 0 0 0 82.22 29.86" stroke="#9bd5a8"/>  <!-- Good   -->
-    <path d="M 82.22 29.86 A 38 38 0 0 0 62.54 14.11" stroke="#c8e3b8"/>  <!-- Okay   -->
-    <path d="M 62.54 14.11 A 38 38 0 0 0 37.46 14.11" stroke="#e3e3d0"/>  <!-- Neutral-->
-    <path d="M 37.46 14.11 A 38 38 0 0 0 17.78 29.86" stroke="#f3d6a3"/>  <!-- NotOkay-->
-    <path d="M 17.78 29.86 A 38 38 0 0 0 12.23 54.25" stroke="#ef9b80"/>  <!-- Bad    -->
-    <path d="M 12.23 54.25 A 38 38 0 0 0 23.13 76.87" stroke="#d96460"/>  <!-- Terrible-->
+    <path d="M 76.87 76.87 A 38 38 0 0 0 87.77 54.25" stroke="#6fcf97"/>  <!-- Great    -->
+    <path d="M 87.77 54.25 A 38 38 0 0 0 82.22 29.86" stroke="#9bd5a8"/>  <!-- Good     -->
+    <path d="M 82.22 29.86 A 38 38 0 0 0 62.54 14.11" stroke="#c8e3b8"/>  <!-- Okay     -->
+    <path d="M 62.54 14.11 A 38 38 0 0 0 37.46 14.11" stroke="#e3e3d0"/>  <!-- Neutral  -->
+    <path d="M 37.46 14.11 A 38 38 0 0 0 17.78 29.86" stroke="#e8c5c5"/>  <!-- Not Okay -->
+    <path d="M 17.78 29.86 A 38 38 0 0 0 12.23 54.25" stroke="#d58989"/>  <!-- Bad      -->
+    <path d="M 12.23 54.25 A 38 38 0 0 0 23.13 76.87" stroke="#a83834"/>  <!-- Terrible -->
   </g>
 
-  <!-- Numb marker — gray dot at 180° (straight down), off the arc -->
-  <circle cx="50" cy="88" r="3.5" fill="#888" stroke="#faf8f2" stroke-width="1"/>
+  <!-- Numb marker — dark brown-gray dot at 180° (straight down), off the arc -->
+  <circle cx="50" cy="88" r="3.5" fill="#3d332e" stroke="#faf8f2" stroke-width="1"/>
 
   <!-- Needle -->
   <g transform="rotate({{ angle }} 50 50)">
