@@ -25,6 +25,8 @@
   const SECONDS_PER_YEAR = 3.15576e7;
 
   const UNIVERSE_AGE_YEARS = 1.38e10;
+  const UNIVERSE_AGE_S = UNIVERSE_AGE_YEARS * SECONDS_PER_YEAR; // ≈ 4.355e17 s
+  const PLANCK_TIME_S = 5.391e-44;
 
   const BAND_COLORS = {
     nuclear:   "#b03a36",
@@ -58,8 +60,16 @@
     o.density_kg_m3 = +o.density_kg_m3;
     o.x_log_r = Math.log10(o.radius_m / LAMBDA_PROTON_M);
     o.y_log_m = Math.log10(o.mass_kg / M_PROTON_KG);
-    if (o.formation && o.formation.time_ya != null) {
-      o.formation.time_seconds_ago = o.formation.time_ya * SECONDS_PER_YEAR;
+    if (o.formation) {
+      if (o.formation.time_ya != null) {
+        o.formation.time_seconds_ago = o.formation.time_ya * SECONDS_PER_YEAR;
+        if (o.formation.time_after_bb_s == null) {
+          o.formation.time_after_bb_s = Math.max(
+            PLANCK_TIME_S,
+            UNIVERSE_AGE_S - o.formation.time_seconds_ago
+          );
+        }
+      }
     }
   });
 
@@ -285,13 +295,24 @@
 
   // ─────────────────────────────────────────────────────────────────────
   // CHART 2 — Density × Time
+  //
+  // X-axis is log(time since Big Bang in seconds). The Big Bang sits just
+  // off the left edge (Planck time = 5.39e-44 s ≈ 10⁻⁴³·³ s), and "now"
+  // sits at log10(4.355e17) ≈ 17.64 on the right. This is the only frame
+  // that lets the early-universe expansion (Planck era → inflation →
+  // nucleosynthesis → recombination) read as anything other than a single
+  // pixel pile-up at the Big Bang.
+  //
+  // Y-axis is log10(density kg/m³), bounded to the physically meaningful
+  // range [-30, +100]. Soft horizontal bands mark cosmic / atomic /
+  // nuclear / trans-Planckian regimes, in the same colors as Chart 1.
   // ─────────────────────────────────────────────────────────────────────
   function buildDensityTimeChart() {
     const containerEl = document.getElementById("chart-density-time");
     if (!containerEl) return;
     const W = containerEl.clientWidth;
     const H = containerEl.clientHeight;
-    const margin = { top: 20, right: 20, bottom: 50, left: 60 };
+    const margin = { top: 28, right: 24, bottom: 56, left: 64 };
     const innerW = W - margin.left - margin.right;
     const innerH = H - margin.top - margin.bottom;
 
@@ -300,21 +321,12 @@
       .attr("preserveAspectRatio", "xMidYMid meet")
       .style("width", "100%").style("height", "100%");
 
-    // Time axis: symmetric log centered at present.
-    // x value = years before present (positive = past). 0 = present.
-    // We display log(years-ago + 1) on the left side (past).
-    // Future region is reserved on the right but empty for now.
-    const xScale = d3.scaleSymlog()
-      .domain([-1e2, 1.5e10])    // 100 yr in the future to 15 Gyr in the past
-      .range([innerW, 0])        // present-on-right is too confusing; flip so past is on the left
-      .constant(1);
-    // Actually we want past on the left. Re-do with positive=past mapped to smaller pixel x.
-    xScale.range([0, innerW]);
-    xScale.domain([1.5e10, -1e2]);
+    // x = log10(seconds since Big Bang)
+    const xLogDomain = [-44, 18.5]; // Planck time → ~3× universe age (room for "future")
+    const yLogDomain = [-30, 100];
 
-    const yScale = d3.scaleLog()
-      .domain([1e-30, 1e100])
-      .range([innerH, 0]);
+    const xScale = d3.scaleLinear().domain(xLogDomain).range([0, innerW]);
+    const yScale = d3.scaleLinear().domain(yLogDomain).range([innerH, 0]);
 
     const root = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
 
@@ -322,14 +334,14 @@
       .attr("width", innerW).attr("height", innerH)
       .attr("fill", "#fdfcf6").attr("stroke", "#cdc8b6");
 
-    // Density bands as soft horizontal stripes
+    // ── Density bands (mirror Chart 1 color scheme) ─────────────────────
     const bands = [
-      { y: [1e-28, 1e-22], color: "#a55ec2", label: "Dark-matter / cosmic", op: 0.06 },
-      { y: [1e-22, 5e2], color: "#7b8fa1", label: "Diffuse", op: 0 },
-      { y: [5e2, 1e6], color: "#3fa648", label: "Atomic / solid", op: 0.06 },
-      { y: [1e6, 1e15], color: "#7b8fa1", label: "Degenerate", op: 0 },
-      { y: [1e15, 1e20], color: "#b03a36", label: "Nuclear", op: 0.06 },
-      { y: [1e20, 1e96], color: "#6b4f3a", label: "Trans-Planckian", op: 0.04 },
+      { y: [-29, -22], color: BAND_COLORS["dark-matter"], label: "Dark-matter / cosmic", op: 0.07 },
+      { y: [-22,  3],  color: null,                       label: "Diffuse",              op: 0 },
+      { y: [ 3,   6],  color: BAND_COLORS.atomic,         label: "Atomic / solid",       op: 0.07 },
+      { y: [ 6,  15],  color: null,                       label: "Degenerate",           op: 0 },
+      { y: [15,  20],  color: BAND_COLORS.nuclear,        label: "Nuclear",              op: 0.10 },
+      { y: [20,  99],  color: BAND_COLORS.planck,         label: "Trans-Planckian",      op: 0.06 },
     ];
     bands.forEach(b => {
       if (b.op === 0) return;
@@ -339,71 +351,133 @@
         .attr("fill", b.color).attr("opacity", b.op);
     });
 
-    // Era markers
+    // ── Gridlines ───────────────────────────────────────────────────────
+    const gridX = d3.range(Math.ceil(xLogDomain[0] / 4) * 4, xLogDomain[1] + 1, 4);
+    const gridY = d3.range(yLogDomain[0], yLogDomain[1] + 1, 10);
+    root.append("g").selectAll("line.gx").data(gridX).join("line")
+      .attr("x1", d => xScale(d)).attr("x2", d => xScale(d))
+      .attr("y1", 0).attr("y2", innerH)
+      .attr("stroke", "#e6e0c7").attr("stroke-width", 0.5);
+    root.append("g").selectAll("line.gy").data(gridY).join("line")
+      .attr("x1", 0).attr("x2", innerW)
+      .attr("y1", d => yScale(d)).attr("y2", d => yScale(d))
+      .attr("stroke", "#e6e0c7").attr("stroke-width", 0.5);
+
+    // ── Era markers (vertical lines at well-known cosmic times) ─────────
+    const NOW_LOG = Math.log10(UNIVERSE_AGE_S);
     const eras = [
-      { years_ago: 1.38e10, label: "Big Bang" },
-      { years_ago: 1.38e10 - 380000, label: "Recombination" },
-      { years_ago: 1.36e10, label: "First stars" },
-      { years_ago: 4.6e9, label: "Solar system" },
-      { years_ago: 0, label: "Now" },
+      { logT: -43.27, label: "Planck",       short: "tₚ" },
+      { logT: -32,    label: "Inflation end" },
+      { logT: -5,     label: "QCD" },
+      { logT: 2.26,   label: "Nucleosynth." },
+      { logT: 13.08,  label: "Recombination" },
+      { logT: 15.80,  label: "First stars" },
+      { logT: Math.log10(UNIVERSE_AGE_S - 4.6e9 * SECONDS_PER_YEAR), label: "Solar system" },
+      { logT: NOW_LOG, label: "Now", emphasis: true },
     ];
-    eras.forEach(e => {
-      const x = xScale(e.years_ago);
+    eras.forEach((e, i) => {
+      const x = xScale(e.logT);
+      if (x < 0 || x > innerW) return;
       root.append("line")
         .attr("x1", x).attr("x2", x).attr("y1", 0).attr("y2", innerH)
-        .attr("stroke", "#bbb").attr("stroke-dasharray", "3 3").attr("stroke-width", 0.7);
-      root.append("text").attr("x", x).attr("y", -4)
-        .attr("text-anchor", "middle").attr("font-size", 9).attr("fill", "#888")
+        .attr("stroke", e.emphasis ? "#888" : "#cfc8b3")
+        .attr("stroke-dasharray", e.emphasis ? null : "3 3")
+        .attr("stroke-width", e.emphasis ? 1.0 : 0.6);
+      root.append("text").attr("x", x).attr("y", -8)
+        .attr("text-anchor", "middle").attr("font-size", 9)
+        .attr("fill", e.emphasis ? "#444" : "#888")
         .text(e.label);
     });
 
-    // Axes
-    const xTicks = [1e10, 1e9, 1e8, 1e7, 1e6, 1e5, 1e4, 1e3, 1e2, 1e1, 1, 0];
+    // ── Axes ────────────────────────────────────────────────────────────
     const xAxis = d3.axisBottom(xScale)
-      .tickValues(xTicks)
-      .tickFormat(d => d === 0 ? "now" : `${d.toExponential(0)} yr ago`);
-    const yAxis = d3.axisLeft(yScale).ticks(8, "0.0e0");
-    root.append("g").attr("transform", `translate(0,${innerH})`)
-      .call(xAxis).call(g => g.selectAll("text").attr("font-size", 8))
+      .tickValues(gridX)
+      .tickFormat(d => formatLogSeconds(d));
+    const yAxis = d3.axisLeft(yScale)
+      .tickValues(gridY)
+      .tickFormat(d => `10${supScript(d)}`);
+    root.append("g").attr("transform", `translate(0,${innerH})`).call(xAxis)
+      .call(g => g.selectAll("text").attr("font-size", 9))
       .call(g => g.selectAll(".domain, .tick line").attr("stroke", "#888"));
     root.append("g").call(yAxis)
+      .call(g => g.selectAll("text").attr("font-size", 10))
       .call(g => g.selectAll(".domain, .tick line").attr("stroke", "#888"));
     root.append("text")
-      .attr("x", innerW / 2).attr("y", innerH + 38)
+      .attr("x", innerW / 2).attr("y", innerH + 40)
       .attr("text-anchor", "middle").attr("fill", "#444")
       .attr("font-size", 12).attr("font-weight", 600)
-      .text("← past · time · future →");
+      .text("time since Big Bang  →  log₁₀(t / s)");
     root.append("text")
-      .attr("transform", `rotate(-90)`)
-      .attr("x", -innerH / 2).attr("y", -42)
+      .attr("transform", "rotate(-90)")
+      .attr("x", -innerH / 2).attr("y", -46)
       .attr("text-anchor", "middle").attr("fill", "#444")
       .attr("font-size", 12).attr("font-weight", 600)
-      .text("density (kg/m³, log)");
+      .text("density  →  log₁₀(ρ / kg·m⁻³)");
 
-    // Universe trace
+    // ── Universe trace ──────────────────────────────────────────────────
     const universeObj = data.objects.find(o => o.id === "observable-universe");
     if (universeObj && universeObj.evolution) {
-      const line = d3.line()
-        .x(d => xScale(d.time_ya))
-        .y(d => yScale(d.density_kg_m3))
-        .curve(d3.curveCatmullRom.alpha(0.5));
+      const evo = universeObj.evolution
+        .map(d => ({
+          ...d,
+          x_log_t: Math.log10(Math.max(d.time_after_bb_s, PLANCK_TIME_S)),
+          y_log_d: Math.log10(d.density_kg_m3),
+        }))
+        .sort((a, b) => a.x_log_t - b.x_log_t);
+
+      // Background "shadow" stroke for legibility
+      const lineGen = d3.line()
+        .x(d => xScale(d.x_log_t))
+        .y(d => yScale(d.y_log_d))
+        .curve(d3.curveMonotoneX);
 
       root.append("path")
-        .datum(universeObj.evolution)
+        .datum(evo)
         .attr("fill", "none")
-        .attr("stroke", "#444")
+        .attr("stroke", "#fffceb")
+        .attr("stroke-width", 5)
+        .attr("stroke-linecap", "round")
+        .attr("d", lineGen);
+      root.append("path")
+        .datum(evo)
+        .attr("fill", "none")
+        .attr("stroke", "#3a3a3a")
         .attr("stroke-width", 2)
-        .attr("d", line);
+        .attr("stroke-linecap", "round")
+        .attr("d", lineGen);
 
-      // Mark each evolution waypoint
-      root.selectAll("circle.uni-evo").data(universeObj.evolution).join("circle")
+      // Per-segment colored overlays — paint each segment in the band
+      // color of its starting waypoint, so the trace bleeds from Planck
+      // through nuclear → atomic → cosmic.
+      for (let i = 0; i < evo.length - 1; i++) {
+        const a = evo[i], b = evo[i + 1];
+        const segColor = bandColorForDensity(a.density_kg_m3);
+        root.append("path")
+          .datum([a, b])
+          .attr("fill", "none")
+          .attr("stroke", segColor)
+          .attr("stroke-width", 2.5)
+          .attr("stroke-linecap", "round")
+          .attr("opacity", 0.85)
+          .attr("d", lineGen);
+      }
+
+      // Waypoint dots
+      root.selectAll("circle.uni-evo").data(evo).join("circle")
         .attr("class", "uni-evo")
-        .attr("cx", d => xScale(d.time_ya))
-        .attr("cy", d => yScale(d.density_kg_m3))
-        .attr("r", 3)
+        .attr("cx", d => xScale(d.x_log_t))
+        .attr("cy", d => yScale(d.y_log_d))
+        .attr("r", 4)
         .attr("fill", d => bandColorForDensity(d.density_kg_m3))
+        .attr("stroke", "#fffceb")
+        .attr("stroke-width", 1.2)
+        .style("cursor", "pointer")
         .on("mouseenter", (e, d) => {
-          tooltip.html(`<strong>Universe</strong><div class="meta">${d.label}</div>`)
+          tooltip.html(
+            `<strong>Universe — ${d.label}</strong>` +
+            `<div class="meta">density ≈ ${formatScientific(d.density_kg_m3, "kg/m³")}</div>` +
+            `<div class="meta">t = ${formatScientific(d.time_after_bb_s, "s")} after Big Bang</div>`
+          )
             .style("left", (e.clientX + 14) + "px").style("top", (e.clientY + 14) + "px")
             .style("opacity", 1);
         })
@@ -411,31 +485,62 @@
         .on("mouseleave", hideTooltip);
     }
 
-    // All other objects: place at (formation_time, density)
+    // ── All other objects ──────────────────────────────────────────────
     data.objects.forEach(obj => {
       if (obj.id === "observable-universe") return;
-      if (!obj.formation || obj.formation.time_ya == null) return;
-      const t = obj.formation.time_ya;
+      if (!obj.formation || obj.formation.time_after_bb_s == null) return;
+      const t = obj.formation.time_after_bb_s;
       const d = obj.density_kg_m3;
-      if (d <= 0) return;
-      const px = xScale(t);
-      const py = yScale(d);
-      if (px < 0 || px > innerW || py < 0 || py > innerH) return;
-      const g = root.append("g").attr("transform", `translate(${px},${py})`)
+      if (d <= 0 || t <= 0) return;
+      const x_log = Math.log10(Math.max(t, PLANCK_TIME_S));
+      const y_log = Math.log10(d);
+      if (x_log < xLogDomain[0] || x_log > xLogDomain[1]) return;
+      if (y_log < yLogDomain[0] || y_log > yLogDomain[1]) return;
+      const px = xScale(x_log);
+      const py = yScale(y_log);
+      const g = root.append("g")
+        .attr("transform", `translate(${px},${py})`)
+        .attr("data-id", obj.id)
         .style("cursor", "pointer");
-      renderShape(g, obj, 3);
-      g.on("mouseenter", e => showTooltip(e, obj))
+      renderShape(g, obj, 4);
+      g.on("mouseenter", e => { showTooltip(e, obj); g.select("circle, rect, path").attr("stroke", "#fff").attr("stroke-width", 2); })
        .on("mousemove", moveTooltip)
-       .on("mouseleave", hideTooltip);
+       .on("mouseleave", () => { hideTooltip(); g.select("circle, rect, path").attr("stroke", null); });
+
+      // Inline label
+      root.append("text")
+        .attr("x", px + 6).attr("y", py + 3)
+        .attr("font-size", 9).attr("fill", "#444")
+        .text(obj.name);
     });
 
-    // Legend
+    // ── Legend ──────────────────────────────────────────────────────────
     const legendEl = d3.select("#legend-density-time");
+    legendEl.html("");
     bands.forEach(b => {
       if (b.op === 0) return;
       legendEl.append("span").attr("class", "uni-chip")
         .html(`<span class="uni-chip-dot" style="background:${b.color}"></span>${b.label}`);
     });
+    legendEl.append("span").attr("class", "uni-chip")
+      .html(`<span class="uni-chip-dot" style="background:#3a3a3a"></span>Universe trace`);
+  }
+
+  // Format a log10(seconds) tick into an intuitive label like "1 s",
+  // "1 yr ago" or "10⁻³² s". Edge cases: very small → exponent only;
+  // around present → human units.
+  function formatLogSeconds(logT) {
+    const t = Math.pow(10, logT);
+    const NOW_LOG = Math.log10(UNIVERSE_AGE_S);
+    if (Math.abs(logT - NOW_LOG) < 0.4) return "now";
+    if (logT < -10)   return `10${supScript(Math.round(logT))} s`;
+    if (logT < 0)     return `10${supScript(Math.round(logT))} s`;
+    if (logT < 2)     return `${Math.round(t)} s`;
+    if (logT < 4.5)   return `${Math.round(t / 60)} min`;
+    if (logT < 7.5)   return `${Math.round(t / SECONDS_PER_YEAR / 1).toLocaleString()} yr`;
+    if (logT < 10.5)  return `${(t / SECONDS_PER_YEAR / 1e6).toFixed(0)} Myr`;
+    if (logT < 18)    return `${(t / SECONDS_PER_YEAR / 1e9).toFixed(1)} Gyr`;
+    return `10${supScript(Math.round(logT))} s`;
   }
 
   function bandColorForDensity(rho) {

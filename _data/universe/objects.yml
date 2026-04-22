@@ -404,16 +404,19 @@ objects:
     color_band: radiation
     shape: square
     color: "#2d6db0"
-    formation: { time_ya: 1.38e10, epoch: big-bang }
+    formation: { time_ya: 1.38e10, time_after_bb_s: 0, epoch: big-bang }
     evolution:
-      - { time_ya: 1.38e10, density_kg_m3: 5.16e96,  label: "Planck era (t = 1 t_Planck)" }
-      - { time_ya: 1.38e10, density_kg_m3: 1e87,    label: "End of inflation (t ≈ 10⁻³² s)" }
-      - { time_ya: 1.38e10, density_kg_m3: 1e17,    label: "QCD epoch (t ≈ 10⁻⁵ s)" }
-      - { time_ya: 1.38e10, density_kg_m3: 1e-3,    label: "Nucleosynthesis (t ≈ 3 min)" }
-      - { time_ya: 1.38e10, density_kg_m3: 1e-15,   label: "Recombination (t ≈ 380 kyr)" }
-      - { time_ya: 1.36e10, density_kg_m3: 1e-22,   label: "First stars (t ≈ 200 Myr)" }
-      - { time_ya: 1.0e10,  density_kg_m3: 1e-25,   label: "Galaxy formation peak" }
-      - { time_ya: 0,        density_kg_m3: 9.47e-27, label: "Today (critical density)" }
+      - { time_after_bb_s: 5.39e-44, density_kg_m3: 5.16e96, label: "Planck era (t = 1 tₚ)" }
+      - { time_after_bb_s: 1.0e-36,  density_kg_m3: 1.0e80,  label: "GUT epoch (t ≈ 10⁻³⁶ s)" }
+      - { time_after_bb_s: 1.0e-32,  density_kg_m3: 1.0e72,  label: "End of inflation (t ≈ 10⁻³² s)" }
+      - { time_after_bb_s: 1.0e-12,  density_kg_m3: 1.0e34,  label: "Electroweak transition (t ≈ 1 ps)" }
+      - { time_after_bb_s: 1.0e-5,   density_kg_m3: 1.0e17,  label: "QCD epoch (t ≈ 10⁻⁵ s)" }
+      - { time_after_bb_s: 1.0,      density_kg_m3: 1.0e9,   label: "Lepton epoch (t ≈ 1 s)" }
+      - { time_after_bb_s: 180,      density_kg_m3: 1.0e3,   label: "Nucleosynthesis (t ≈ 3 min)" }
+      - { time_after_bb_s: 1.2e13,   density_kg_m3: 4.1e-19, label: "Recombination (t ≈ 380 kyr)" }
+      - { time_after_bb_s: 6.3e15,   density_kg_m3: 1.0e-22, label: "First stars (t ≈ 200 Myr)" }
+      - { time_after_bb_s: 1.2e17,   density_kg_m3: 1.0e-25, label: "Galaxy formation peak (t ≈ 4 Gyr)" }
+      - { time_after_bb_s: 4.355e17, density_kg_m3: 9.47e-27, label: "Today (critical density)" }
     sources: [planck-2020, ianni-2022]
     blurb: "Everything causally connected to us. ~93 Gly across in proper distance."
 
