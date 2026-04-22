@@ -73,7 +73,7 @@ sitemap: false
   <div class="uni-chart">
     <div class="uni-chart-header">
       <h2 class="uni-chart-title">Density × Time</h2>
-      <span class="uni-chart-subtitle">log density · symmetric-log time · 0 = present</span>
+      <span class="uni-chart-subtitle">log density · log time-since-Big-Bang</span>
     </div>
     <div id="chart-density-time" class="uni-canvas"></div>
     <div class="uni-legend" id="legend-density-time"></div>
@@ -111,4 +111,4 @@ sitemap: false
   };
 </script>
 <script src="https://d3js.org/d3.v7.min.js"></script>
-<script src="/assets/js/universe/main.js"></script>
+<script src="/assets/js/universe/main.js?v=2"></script>
