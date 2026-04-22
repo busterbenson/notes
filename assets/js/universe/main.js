@@ -71,7 +71,35 @@
         }
       }
     }
+    o.prominence = labelProminence(o);
   });
+
+  // Label-prominence tier for zoom-aware visibility on Chart 1.
+  // 1 = always visible, 2 = visible at k≥2, 3 = k≥4, 4 = k≥8.
+  // Tuned so the default view shows ~12 well-known objects without
+  // crowding, and zooming in reveals the rest by tier.
+  function labelProminence(o) {
+    const headline = new Set([
+      "observable-universe", "milky-way", "andromeda", "laniakea",
+      "sun", "earth", "moon", "jupiter",
+      "sgr-a", "m87-smbh", "crab-pulsar", "stellar-bh",
+      "human", "blue-whale",
+      "proton", "electron", "eukaryotic-cell",
+    ]);
+    if (headline.has(o.id)) return 1;
+    if (o.category === "planet" || o.category === "star") return 2;
+    if (o.category === "galaxy" || o.category === "cluster") return 2;
+    if (o.category === "compact-object" || o.category === "structure") return 2;
+    if (o.category === "particle" || o.category === "atom") return 3;
+    return 3;
+  }
+
+  function visibleAtZoom(prominence, k) {
+    if (k >= 8) return true;
+    if (k >= 4) return prominence <= 3;
+    if (k >= 2) return prominence <= 2;
+    return prominence <= 1;
+  }
 
   // ── Tooltip ──────────────────────────────────────────────────────────
   const tooltip = d3.select("#uni-tooltip");
@@ -172,31 +200,51 @@
     const root = svg.append("g")
       .attr("transform", `translate(${margin.left},${margin.top})`);
 
-    const plotBg = root.append("rect")
+    root.append("rect")
       .attr("width", innerW).attr("height", innerH)
       .attr("fill", "#fdfcf6").attr("stroke", "#cdc8b6");
 
-    // Gridlines
+    // Clip path so zoomed/panned content can't escape the plot area.
+    const clipId = "uni-clip-mass-size";
+    svg.append("defs").append("clipPath").attr("id", clipId)
+      .append("rect").attr("width", innerW).attr("height", innerH);
+
+    // The "view" group holds everything that pans/zooms — gridlines,
+    // boundary lines, density diagonals, points, labels. Axes live
+    // outside it so they redraw with rescaled domains instead of
+    // skewing geometrically.
+    const view = root.append("g")
+      .attr("clip-path", `url(#${clipId})`)
+      .append("g")
+      .attr("class", "uni-view");
+
+    // ── Gridlines (live inside view, redrawn on zoom) ───────────────────
     const gridX = d3.range(xDomain[0], xDomain[1] + 1, 10);
     const gridY = d3.range(yDomain[0], yDomain[1] + 1, 10);
-    root.append("g").selectAll("line.gx").data(gridX).join("line")
-      .attr("class", "gx")
-      .attr("x1", d => xScale(d)).attr("x2", d => xScale(d))
-      .attr("y1", 0).attr("y2", innerH)
-      .attr("stroke", "#e6e0c7").attr("stroke-width", 0.5);
-    root.append("g").selectAll("line.gy").data(gridY).join("line")
-      .attr("class", "gy")
-      .attr("x1", 0).attr("x2", innerW)
-      .attr("y1", d => yScale(d)).attr("y2", d => yScale(d))
-      .attr("stroke", "#e6e0c7").attr("stroke-width", 0.5);
+    const gxGroup = view.append("g").attr("class", "gxgroup");
+    const gyGroup = view.append("g").attr("class", "gygroup");
 
-    // Axes
+    function drawGrid(xs, ys) {
+      gxGroup.selectAll("line").data(xs).join("line")
+        .attr("x1", d => xScale(d)).attr("x2", d => xScale(d))
+        .attr("y1", 0).attr("y2", innerH)
+        .attr("stroke", "#e6e0c7").attr("stroke-width", 0.5);
+      gyGroup.selectAll("line").data(ys).join("line")
+        .attr("x1", 0).attr("x2", innerW)
+        .attr("y1", d => yScale(d)).attr("y2", d => yScale(d))
+        .attr("stroke", "#e6e0c7").attr("stroke-width", 0.5);
+    }
+    drawGrid(gridX, gridY);
+
+    // ── Axes (outside view; we rebuild these on zoom from rescaled scales) ──
     const xAxis = d3.axisBottom(xScale).tickValues(gridX).tickFormat(d => `10${supScript(d)}`);
     const yAxis = d3.axisLeft(yScale).tickValues(gridY).tickFormat(d => `10${supScript(d)}`);
-    root.append("g")
+    const xAxisG = root.append("g")
+      .attr("class", "xaxis")
       .attr("transform", `translate(0,${innerH})`)
       .call(xAxis).call(g => g.selectAll(".domain, .tick line").attr("stroke", "#888"));
-    root.append("g")
+    const yAxisG = root.append("g")
+      .attr("class", "yaxis")
       .call(yAxis).call(g => g.selectAll(".domain, .tick line").attr("stroke", "#888"));
     root.append("text")
       .attr("x", innerW / 2).attr("y", innerH + 38)
@@ -210,62 +258,64 @@
       .attr("font-size", 12).attr("font-weight", 600)
       .text("mass  →  log₁₀(m / m_proton)");
 
-    // ── Boundary lines ─────────────────────────────────────────────────
+    // ── Boundary + density diagonal lines (in view group) ──────────────
     // BH boundary: r = 2GM/c² → log(r/λ_p) = log(m/m_p) + log(2G m_p/(c² λ_p))
     // 2G m_p / (c² λ_p) = 2 × 6.674e-11 × 1.673e-27 / (9e16 × 1.32e-15)
     //                  = 2.232e-37 / 1.19e2 = 1.876e-39 (dimensionless)
     // So log(r/λ_p) = log(m/m_p) - 38.73, i.e. y = x + 38.73 in our axes
+    // QM boundary: r = ℏ/(mc) → log(r/λ_p) = -log(m/m_p) - 0.8
     const BH_INTERCEPT = 38.73;
-    drawLine(root, xScale, yScale,
-      [xDomain[0], xDomain[0] + BH_INTERCEPT],
-      [xDomain[1], xDomain[1] + BH_INTERCEPT],
-      { stroke: "#1a1a1a", "stroke-dasharray": "6 3", "stroke-width": 1.6 },
-      "Black hole boundary", -42, 250, "#1a1a1a");
-
-    // QM boundary: r = ℏ/(mc) → log(r/λ_p) = -log(m/m_p) + log(ℏ/(m_p c λ_p))
-    // ℏ/(m_p c λ_p) = 1.0546e-34 / (1.673e-27 × 3e8 × 1.32e-15)
-    //              = 1.0546e-34 / 6.62e-34 ≈ 0.159 → log = -0.797
-    // So log(r/λ_p) = -log(m/m_p) - 0.8, i.e. y = -x - 0.8
     const QM_INTERCEPT = -0.8;
-    drawLine(root, xScale, yScale,
-      [xDomain[0], -xDomain[0] + QM_INTERCEPT],
-      [xDomain[1], -xDomain[1] + QM_INTERCEPT],
-      { stroke: "#1a1a1a", "stroke-dasharray": "6 3", "stroke-width": 1.6 },
-      "Quantum mechanics boundary", 42, -150, "#1a1a1a");
 
-    // Constant-density diagonals: y = 3x + c (from log m = 3 log r + const)
-    // For density ρ in our normalized units:
-    //   m / (4/3 π r³) = ρ
-    //   m_p × M̃ / ((4/3)π × λ_p³ × R̃³) = ρ
-    //   M̃/R̃³ = ρ × (4/3)π × λ_p³ / m_p
-    //   λ_p³/m_p = (1.32e-15)³ / 1.67e-27 = 2.30e-45 / 1.67e-27 = 1.38e-18
-    //   coeff = (4/3)π × 1.38e-18 = 5.78e-18
-    //   So y - 3x = log(ρ × 5.78e-18) = log(ρ) - 17.24
+    // For density diagonals: y = 3x + log10(ρ) - 17.24  (see derivation in v0)
     function densityIntercept(rho) { return Math.log10(rho) - 17.24; }
-    const NUCLEAR_RHO = 2.3e17;
-    const ATOMIC_RHO = 5e3;
-    const DM_RHO = 5e-25;
 
-    [
-      [NUCLEAR_RHO, BAND_COLORS.nuclear, "Nuclear density"],
-      [ATOMIC_RHO, BAND_COLORS.atomic, "Atomic density"],
-      [DM_RHO, BAND_COLORS["dark-matter"], "Dark-matter density"],
-    ].forEach(([rho, color, label]) => {
-      const intercept = densityIntercept(rho);
-      drawLine(root, xScale, yScale,
-        [xDomain[0], 3 * xDomain[0] + intercept],
-        [xDomain[1], 3 * xDomain[1] + intercept],
-        { stroke: color, "stroke-dasharray": "4 3", "stroke-width": 1.0 },
-        label, 60, 0, color);
+    const lineSpecs = [
+      { kind: "bh",      pts: [[xDomain[0], xDomain[0] + BH_INTERCEPT], [xDomain[1], xDomain[1] + BH_INTERCEPT]],
+        attrs: { stroke: "#1a1a1a", "stroke-dasharray": "6 3", "stroke-width": 1.6 },
+        label: "Black hole boundary", labelDx: -42, labelDy: 250, color: "#1a1a1a" },
+      { kind: "qm",      pts: [[xDomain[0], -xDomain[0] + QM_INTERCEPT], [xDomain[1], -xDomain[1] + QM_INTERCEPT]],
+        attrs: { stroke: "#1a1a1a", "stroke-dasharray": "6 3", "stroke-width": 1.6 },
+        label: "Quantum mechanics boundary", labelDx: 42, labelDy: -150, color: "#1a1a1a" },
+      { kind: "nuclear", pts: [[xDomain[0], 3 * xDomain[0] + densityIntercept(2.3e17)], [xDomain[1], 3 * xDomain[1] + densityIntercept(2.3e17)]],
+        attrs: { stroke: BAND_COLORS.nuclear, "stroke-dasharray": "4 3", "stroke-width": 1.0 },
+        label: "Nuclear density", labelDx: 60, labelDy: 0, color: BAND_COLORS.nuclear },
+      { kind: "atomic",  pts: [[xDomain[0], 3 * xDomain[0] + densityIntercept(5e3)], [xDomain[1], 3 * xDomain[1] + densityIntercept(5e3)]],
+        attrs: { stroke: BAND_COLORS.atomic, "stroke-dasharray": "4 3", "stroke-width": 1.0 },
+        label: "Atomic density", labelDx: 60, labelDy: 0, color: BAND_COLORS.atomic },
+      { kind: "dm",      pts: [[xDomain[0], 3 * xDomain[0] + densityIntercept(5e-25)], [xDomain[1], 3 * xDomain[1] + densityIntercept(5e-25)]],
+        attrs: { stroke: BAND_COLORS["dark-matter"], "stroke-dasharray": "4 3", "stroke-width": 1.0 },
+        label: "Dark-matter density", labelDx: 60, labelDy: 0, color: BAND_COLORS["dark-matter"] },
+    ];
+
+    const lineGroup = view.append("g").attr("class", "lines");
+    const lineLabelGroup = view.append("g").attr("class", "linelabels");
+    lineSpecs.forEach(spec => {
+      const ln = lineGroup.append("line")
+        .attr("data-kind", spec.kind)
+        .attr("x1", xScale(spec.pts[0][0])).attr("y1", yScale(spec.pts[0][1]))
+        .attr("x2", xScale(spec.pts[1][0])).attr("y2", yScale(spec.pts[1][1]));
+      Object.entries(spec.attrs).forEach(([k, v]) => ln.attr(k, v));
+      const mx = (xScale(spec.pts[0][0]) + xScale(spec.pts[1][0])) / 2 + spec.labelDx;
+      const my = (yScale(spec.pts[0][1]) + yScale(spec.pts[1][1])) / 2 + spec.labelDy;
+      lineLabelGroup.append("text")
+        .attr("data-kind", spec.kind)
+        .attr("x", mx).attr("y", my)
+        .attr("font-size", 10).attr("font-weight", 600)
+        .attr("fill", spec.color)
+        .text(spec.label);
     });
 
-    // ── Data points ────────────────────────────────────────────────────
-    const ptGroup = root.append("g").attr("class", "points");
-    const labelGroup = root.append("g").attr("class", "labels");
+    // ── Data points + labels ────────────────────────────────────────────
+    const ptGroup = view.append("g").attr("class", "points");
+    const labelGroup = view.append("g").attr("class", "labels");
 
-    data.objects.forEach(obj => {
-      if (obj.x_log_r < xDomain[0] || obj.x_log_r > xDomain[1]) return;
-      if (obj.y_log_m < yDomain[0] || obj.y_log_m > yDomain[1]) return;
+    const visibleObjs = data.objects.filter(obj =>
+      obj.x_log_r >= xDomain[0] && obj.x_log_r <= xDomain[1] &&
+      obj.y_log_m >= yDomain[0] && obj.y_log_m <= yDomain[1]
+    );
+
+    visibleObjs.forEach(obj => {
       const px = xScale(obj.x_log_r);
       const py = yScale(obj.y_log_m);
       const g = ptGroup.append("g")
@@ -278,14 +328,86 @@
        .on("mousemove", e => moveTooltip(e))
        .on("mouseleave", () => { hideTooltip(); g.select("circle, rect, path").attr("stroke", null); });
 
-      // Static label (will be made smarter on zoom in v2)
       labelGroup.append("text")
+        .attr("data-id", obj.id)
+        .attr("data-prominence", obj.prominence)
         .attr("x", px + 6).attr("y", py + 3)
-        .attr("font-size", 9).attr("fill", "#444")
+        .attr("font-size", 9)
+        .attr("fill", "#444")
+        .style("opacity", visibleAtZoom(obj.prominence, 1) ? 1 : 0)
+        .style("pointer-events", "none")
         .text(obj.name);
     });
 
-    // Legend
+    // ── Zoom behavior ──────────────────────────────────────────────────
+    // Pan + zoom up to 50× into the densest regions. On every event:
+    //   1. transform the view group (geometric zoom)
+    //   2. recompute axes with rescaled domains so labels read correctly
+    //   3. counter-scale shape sizes & label fonts so they don't balloon
+    //   4. fade labels in/out by prominence tier
+    const ptNodes = ptGroup.selectAll("g[data-id]");
+    const labelNodes = labelGroup.selectAll("text[data-id]");
+
+    function applyZoom(transform) {
+      view.attr("transform", transform.toString());
+      const k = transform.k;
+
+      const xz = transform.rescaleX(xScale);
+      const yz = transform.rescaleY(yScale);
+      xAxisG.call(xAxis.scale(xz)).call(g => g.selectAll(".domain, .tick line").attr("stroke", "#888"));
+      yAxisG.call(yAxis.scale(yz)).call(g => g.selectAll(".domain, .tick line").attr("stroke", "#888"));
+
+      // Counter-scale visual elements so they don't grow with zoom.
+      const inv = 1 / k;
+      ptNodes.each(function() {
+        const node = d3.select(this);
+        const t = node.attr("transform");
+        // Strip any prior scale() and re-apply translate + counter-scale.
+        const m = t.match(/translate\(([^)]+)\)/);
+        if (m) node.attr("transform", `translate(${m[1]}) scale(${inv})`);
+      });
+      labelNodes
+        .style("font-size", `${9 * inv}px`)
+        .attr("dx", 6 * inv).attr("dy", 3 * inv)
+        .style("opacity", function() {
+          const p = +d3.select(this).attr("data-prominence");
+          return visibleAtZoom(p, k) ? 1 : 0;
+        });
+
+      // Counter-scale boundary + density line strokes so they stay crisp.
+      lineGroup.selectAll("line").attr("stroke-width", function() {
+        const kind = d3.select(this).attr("data-kind");
+        return (kind === "bh" || kind === "qm" ? 1.6 : 1.0) * inv;
+      });
+      lineLabelGroup.selectAll("text")
+        .style("font-size", `${10 * inv}px`)
+        .style("opacity", k > 4 ? 0 : 1);  // free up the canvas at high zoom
+    }
+
+    const zoom = d3.zoom()
+      .scaleExtent([1, 50])
+      .translateExtent([[0, 0], [innerW, innerH]])
+      .extent([[0, 0], [innerW, innerH]])
+      .on("zoom", e => applyZoom(e.transform));
+
+    svg.call(zoom);
+    applyZoom(d3.zoomIdentity);
+
+    // Reset-zoom button overlay
+    root.append("g").attr("class", "reset-zoom")
+      .attr("transform", `translate(${innerW - 78}, 8)`)
+      .style("cursor", "pointer")
+      .on("click", () => svg.transition().duration(350).call(zoom.transform, d3.zoomIdentity))
+      .call(g => {
+        g.append("rect")
+          .attr("width", 70).attr("height", 22).attr("rx", 4)
+          .attr("fill", "#fdfcf6").attr("stroke", "#bbb");
+        g.append("text").attr("x", 35).attr("y", 15)
+          .attr("text-anchor", "middle").attr("font-size", 10)
+          .attr("fill", "#555").text("reset zoom");
+      });
+
+    // ── Legend ──────────────────────────────────────────────────────────
     const legendEl = d3.select("#legend-mass-size");
     Object.entries(BAND_LABELS).forEach(([band, label]) => {
       legendEl.append("span").attr("class", "uni-chip").attr("data-band", band)
