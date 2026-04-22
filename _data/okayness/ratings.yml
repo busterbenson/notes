@@ -10,4 +10,67 @@
 #   score: integer 0..7  (0 = Numb, 7 = Great)
 #   note: optional free text
 
-ratings: []
+ratings:
+  - id: self-health
+    at: 2026-04-22T12:43:01-07:00
+    score: 5
+  - id: self-therapy
+    at: 2026-04-22T12:43:01-07:00
+    score: 6
+  - id: self-psychedelics
+    at: 2026-04-22T12:43:01-07:00
+    score: 5
+  - id: self-spirituality
+    at: 2026-04-22T12:43:01-07:00
+    score: 4
+  - id: career-inkitt
+    at: 2026-04-22T12:43:01-07:00
+    score: 6
+  - id: career-750
+    at: 2026-04-22T12:43:01-07:00
+    score: 6
+  - id: social-sarah
+    at: 2026-04-22T12:43:01-07:00
+    score: 6
+  - id: social-niko
+    at: 2026-04-22T12:43:01-07:00
+    score: 6
+  - id: social-louie
+    at: 2026-04-22T12:43:01-07:00
+    score: 6
+  - id: social-friends
+    at: 2026-04-22T12:43:01-07:00
+    score: 5
+  - id: social-community
+    at: 2026-04-22T12:43:01-07:00
+    score: 4
+  - id: projects-chalant
+    at: 2026-04-22T12:43:01-07:00
+    score: 6
+  - id: projects-dilemma
+    at: 2026-04-22T12:43:01-07:00
+    score: 4
+  - id: projects-norway
+    at: 2026-04-22T12:43:01-07:00
+    score: 6
+  - id: basic-needs-budget
+    at: 2026-04-22T12:43:01-07:00
+    score: 3
+  - id: basic-needs-investments
+    at: 2026-04-22T12:43:01-07:00
+    score: 3
+  - id: basic-needs-home
+    at: 2026-04-22T12:43:01-07:00
+    score: 4
+  - id: world-ai
+    at: 2026-04-22T12:43:01-07:00
+    score: 5
+  - id: world-politics
+    at: 2026-04-22T12:43:01-07:00
+    score: 1
+  - id: world-war
+    at: 2026-04-22T12:43:01-07:00
+    score: 1
+  - id: world-environment
+    at: 2026-04-22T12:43:01-07:00
+    score: 1
