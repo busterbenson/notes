@@ -2,29 +2,27 @@
 Okayness dial — speedometer-style SVG widget.
 
 Layout (degrees measured clockwise from 12 o'clock):
-  Great (7)    → 225°  (bottom-left)
-  Good (6)     → 270°  (9 o'clock)
-  Okay (5)     → 315°  (top-left)
-  Neutral (4)  → 360° / 0°  (top)
-  Not Okay (3) → 45°   (top-right)
-  Bad (2)      → 90°   (3 o'clock)
-  Terrible (1) → 135°  (bottom-right)
+  Terrible (1) → 225°  (bottom-left, red)
+  Bad (2)      → 270°  (9 o'clock)
+  Not Okay (3) → 315°  (top-left)
+  Neutral (4)  → 0°    (top)
+  Okay (5)     → 45°   (top-right)
+  Good (6)     → 90°   (3 o'clock)
+  Great (7)    → 135°  (bottom-right, green)
   Numb (0)     → 180°  (straight down, off the arc)
+
+Needle angle = 45 × score − 180. For s=1 → −135° (bottom-left),
+s=4 → 0° (top), s=7 → 135° (bottom-right).
 
 Usage:
   {% include okayness-dial.html score=3.4 size=50 %}
   {% include okayness-dial.html score=nil size=50 %}   (empty)
-
-Params:
-  score: nil | 0..7 (float)
-  size:  integer px (default 50)
 {%- endcomment -%}
 
 {%- assign size = include.size | default: 50 -%}
 {%- assign has_score = false -%}
 {%- if include.score != nil and include.score != "" -%}{%- assign has_score = true -%}{%- endif -%}
 
-{%- comment -%} Needle angle (CSS rotate degrees, 0 = up, clockwise). {%- endcomment -%}
 {%- if has_score == false -%}
   {%- assign angle = 180 -%}
   {%- assign needle_color = "#ccc" -%}
@@ -32,8 +30,7 @@ Params:
   {%- assign angle = 180 -%}
   {%- assign needle_color = "#555" -%}
 {%- else -%}
-  {%- assign sdiff = 7 | minus: include.score -%}
-  {%- assign angle = sdiff | times: 45 | plus: 225 -%}
+  {%- assign angle = include.score | times: 45 | minus: 180 -%}
   {%- assign needle_color = "#222" -%}
 {%- endif -%}
 
@@ -42,19 +39,20 @@ Params:
   <!-- background disc -->
   <circle cx="50" cy="50" r="46" fill="#faf8f2" stroke="#e6e4da" stroke-width="1"/>
 
-  <!-- 7 arc segments (Great → Good → Okay → Neutral → Not Okay → Bad → Terrible),
-       swept clockwise from 225° through the top to 135°. Each wedge spans 270°/7 ≈ 38.57°. -->
+  <!-- 7 arc segments — red on the left, green on the right.
+       Drawn counterclockwise (sweep-flag=0) from bottom-right (Great, 135°)
+       over the top to bottom-left (Terrible, 225°). Each wedge spans 270°/7 ≈ 38.57°. -->
   <g fill="none" stroke-width="11" stroke-linecap="butt">
-    <path d="M 23.13 76.87 A 38 38 0 0 1 12.23 54.25" stroke="#6fcf97"/>
-    <path d="M 12.23 54.25 A 38 38 0 0 1 17.78 29.86" stroke="#9bd5a8"/>
-    <path d="M 17.78 29.86 A 38 38 0 0 1 37.46 14.11" stroke="#c8e3b8"/>
-    <path d="M 37.46 14.11 A 38 38 0 0 1 62.54 14.11" stroke="#e3e3d0"/>
-    <path d="M 62.54 14.11 A 38 38 0 0 1 82.22 29.86" stroke="#f3d6a3"/>
-    <path d="M 82.22 29.86 A 38 38 0 0 1 87.77 54.25" stroke="#ef9b80"/>
-    <path d="M 87.77 54.25 A 38 38 0 0 1 76.87 76.87" stroke="#d96460"/>
+    <path d="M 76.87 76.87 A 38 38 0 0 0 87.77 54.25" stroke="#6fcf97"/>  <!-- Great  -->
+    <path d="M 87.77 54.25 A 38 38 0 0 0 82.22 29.86" stroke="#9bd5a8"/>  <!-- Good   -->
+    <path d="M 82.22 29.86 A 38 38 0 0 0 62.54 14.11" stroke="#c8e3b8"/>  <!-- Okay   -->
+    <path d="M 62.54 14.11 A 38 38 0 0 0 37.46 14.11" stroke="#e3e3d0"/>  <!-- Neutral-->
+    <path d="M 37.46 14.11 A 38 38 0 0 0 17.78 29.86" stroke="#f3d6a3"/>  <!-- NotOkay-->
+    <path d="M 17.78 29.86 A 38 38 0 0 0 12.23 54.25" stroke="#ef9b80"/>  <!-- Bad    -->
+    <path d="M 12.23 54.25 A 38 38 0 0 0 23.13 76.87" stroke="#d96460"/>  <!-- Terrible-->
   </g>
 
-  <!-- Numb marker — gray dot at 180° (straight down), separated from the arc -->
+  <!-- Numb marker — gray dot at 180° (straight down), off the arc -->
   <circle cx="50" cy="88" r="3.5" fill="#888" stroke="#faf8f2" stroke-width="1"/>
 
   <!-- Needle -->

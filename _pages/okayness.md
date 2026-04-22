@@ -7,68 +7,73 @@ sitemap: false
 
 <style>
   .okayness-tree { list-style: none; padding-left: 0; margin-top: 1.5rem; }
-  .okayness-tree ul { list-style: none; padding-left: 1.25rem; border-left: 1px dashed #d8d8d2; margin-left: 0.5rem; }
+  .okayness-theme { margin: 0.5rem 0; padding: 0; }
+  .okayness-theme > summary {
+    list-style: none;                 /* hide default disclosure triangle */
+    cursor: pointer;
+    padding: 0.35rem 0;
+  }
+  .okayness-theme > summary::-webkit-details-marker { display: none; }
+  .okayness-theme > summary::before {
+    content: "▸";
+    display: inline-block;
+    width: 1em;
+    margin-right: 0.15rem;
+    color: #aaa;
+    transition: transform 0.15s ease;
+  }
+  .okayness-theme[open] > summary::before { transform: rotate(90deg); }
+  .okayness-children {
+    list-style: none;
+    padding-left: 1.75rem;
+    border-left: 1px dashed #d8d8d2;
+    margin: 0.25rem 0 0.75rem 0.7rem;
+  }
   .okayness-row {
     display: flex; align-items: center; gap: 0.6rem;
-    padding: 0.35rem 0; font-family: inherit;
+    font-family: inherit;
   }
   .okayness-dial { flex-shrink: 0; vertical-align: middle; }
   .okayness-name { flex: 1; }
-  .okayness-score { font-variant-numeric: tabular-nums; font-weight: 600; min-width: 2.5rem; text-align: right; }
-  .okayness-band {
-    font-size: 0.75rem; padding: 1px 6px; border-radius: 10px;
-    text-transform: uppercase; letter-spacing: 0.04em; color: #2a2a2a;
-  }
-  .band-great    { background: #6fcf97; }
-  .band-good     { background: #9bd5a8; }
-  .band-okay     { background: #c8e3b8; }
-  .band-neutral  { background: #e3e3d0; }
-  .band-not-okay { background: #f3d6a3; }
-  .band-bad      { background: #ef9b80; }
-  .band-terrible { background: #d96460; color: white; }
-  .band-numb     { background: #888; color: white; }
-  .band-none     { background: #f4f4ee; color: #aaa; }
   .okayness-trend { font-size: 0.8rem; color: #888; }
   .okayness-trend.up { color: #2d7a3a; }
   .okayness-trend.down { color: #b03a36; }
   .okayness-meta { font-size: 0.7rem; color: #999; }
-  .okayness-numb-flag { color: #b03a36; font-size: 0.75rem; font-weight: 600; }
+  .okayness-numb-flag { color: #b03a36; font-size: 0.75rem; font-weight: 600; margin-left: 0.4rem; }
   .okayness-legend { font-size: 0.85rem; color: #666; margin: 1rem 0; }
-  .okayness-recent { font-size: 0.8rem; color: #555; margin-top: 0.5rem; padding-left: 1rem; border-left: 2px solid #f0e8d0; }
+  .okayness-recent { font-size: 0.8rem; color: #555; margin-top: 0.35rem; padding-left: 1rem; border-left: 2px solid #f0e8d0; }
   .okayness-recent .rating { margin-bottom: 0.2rem; }
+  .okayness-child { padding: 0.3rem 0; }
 </style>
 
 A subjective dashboard of how I'm feeling across the parts of my life that matter.
-Ratings are mine, set deliberately. Each board has an EWMA with a tunable half-life
-(shown in days as `hl=N` next to the name). Parent boards blend their children's
-scores. The 0–7 scale runs **7 Great → 6 Good → 5 Okay → 4 Neutral → 3 Not Okay →
-2 Bad → 1 Terrible → 0 Numb**.
+Each theme starts collapsed — click to expand and see the boards underneath.
 
 <p class="okayness-meta">
   {{ site.data.okayness.total_ratings }} total ratings
   · last build {{ site.data.okayness.last_updated }}
 </p>
 
-<ul class="okayness-tree">
+<div class="okayness-tree">
 {% for theme in site.data.okayness.tree.themes %}
   {% assign t = site.data.okayness.computed[theme.id] %}
-  <li>
-    <div class="okayness-row">
-      {% include okayness-dial.html score=t.effective_score size=44 %}
-      <strong class="okayness-name">{{ theme.name }}</strong>
-      {% if t.trend %}
-        <span class="okayness-trend {% if t.trend > 0 %}up{% elsif t.trend < 0 %}down{% endif %}">
-          {% if t.trend > 0 %}+{% endif %}{{ t.trend }}
-        </span>
-      {% endif %}
-      <span class="okayness-score">{{ t.effective_score | default: "—" }}</span>
-      <span class="okayness-band band-{{ t.effective_band }}">{{ t.effective_band | replace: "-", " " }}</span>
-    </div>
+  <details class="okayness-theme">
+    <summary>
+      <span class="okayness-row">
+        {% include okayness-dial.html score=t.effective_score size=44 %}
+        <strong class="okayness-name">{{ theme.name }}</strong>
+        {% if t.trend %}
+          <span class="okayness-trend {% if t.trend > 0 %}up{% elsif t.trend < 0 %}down{% endif %}">
+            {% if t.trend > 0 %}+{% endif %}{{ t.trend }}
+          </span>
+        {% endif %}
+      </span>
+    </summary>
     {% if theme.children %}
-    <ul>
+    <ul class="okayness-children">
       {% for child in theme.children %}
         {% assign c = site.data.okayness.computed[child.id] %}
-        <li>
+        <li class="okayness-child">
           <div class="okayness-row">
             {% include okayness-dial.html score=c.effective_score size=36 %}
             <span class="okayness-name">
@@ -83,8 +88,6 @@ scores. The 0–7 scale runs **7 Great → 6 Good → 5 Okay → 4 Neutral → 3
                 {% if c.trend > 0 %}+{% endif %}{{ c.trend }}
               </span>
             {% endif %}
-            <span class="okayness-score">{{ c.effective_score | default: "—" }}</span>
-            <span class="okayness-band band-{{ c.effective_band }}">{{ c.effective_band | replace: "-", " " }}</span>
           </div>
           {% if c.recent and c.recent.size > 0 %}
             <div class="okayness-recent">
@@ -103,15 +106,9 @@ scores. The 0–7 scale runs **7 Great → 6 Good → 5 Okay → 4 Neutral → 3
       {% endfor %}
     </ul>
     {% endif %}
-  </li>
+  </details>
 {% endfor %}
-</ul>
-
-<p class="okayness-legend">
-  Bands: 6.5–7 great · 5.5–6.5 good · 4.5–5.5 okay · 3.5–4.5 neutral ·
-  2.5–3.5 not okay · 1.5–2.5 bad · 0.5–1.5 terrible · 0–0.5 numb. The number is the
-  exponentially-weighted moving average; trend is current minus 30-days-ago.
-</p>
+</div>
 
 <p class="okayness-legend" style="display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap;">
   <span>Dial reference —</span>
@@ -121,4 +118,9 @@ scores. The 0–7 scale runs **7 Great → 6 Good → 5 Okay → 4 Neutral → 3
   {% include okayness-dial.html score=3 size=44 %} <span>Not okay</span>
   {% include okayness-dial.html score=1 size=44 %} <span>Terrible</span>
   {% include okayness-dial.html score=0 size=44 %} <span>Numb</span>
+</p>
+
+<p class="okayness-legend">
+  Scores use a 0–7 scale (7 Great → 0 Numb) and per-board EWMA with a tunable half-life.
+  Parent themes blend their children's scores. Trend is the signed delta vs. 30 days ago.
 </p>
