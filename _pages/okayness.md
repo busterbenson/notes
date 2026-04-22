@@ -9,9 +9,10 @@ sitemap: false
   .okayness-tree { list-style: none; padding-left: 0; margin-top: 1.5rem; }
   .okayness-tree ul { list-style: none; padding-left: 1.25rem; border-left: 1px dashed #d8d8d2; margin-left: 0.5rem; }
   .okayness-row {
-    display: flex; align-items: baseline; gap: 0.6rem;
+    display: flex; align-items: center; gap: 0.6rem;
     padding: 0.35rem 0; font-family: inherit;
   }
+  .okayness-dial { flex-shrink: 0; vertical-align: middle; }
   .okayness-name { flex: 1; }
   .okayness-score { font-variant-numeric: tabular-nums; font-weight: 600; min-width: 2.5rem; text-align: right; }
   .okayness-band {
@@ -53,6 +54,7 @@ scores. The 0–7 scale runs **7 Great → 6 Good → 5 Okay → 4 Neutral → 3
   {% assign t = site.data.okayness.computed[theme.id] %}
   <li>
     <div class="okayness-row">
+      {% include okayness-dial.html score=t.effective_score size=44 %}
       <strong class="okayness-name">{{ theme.name }}</strong>
       {% if t.trend %}
         <span class="okayness-trend {% if t.trend > 0 %}up{% elsif t.trend < 0 %}down{% endif %}">
@@ -68,6 +70,7 @@ scores. The 0–7 scale runs **7 Great → 6 Good → 5 Okay → 4 Neutral → 3
         {% assign c = site.data.okayness.computed[child.id] %}
         <li>
           <div class="okayness-row">
+            {% include okayness-dial.html score=c.effective_score size=36 %}
             <span class="okayness-name">
               {{ child.name }}
               <span class="okayness-meta">hl={{ c.resilience_days }}d · {{ c.leaf_count }} ratings</span>
@@ -108,4 +111,14 @@ scores. The 0–7 scale runs **7 Great → 6 Good → 5 Okay → 4 Neutral → 3
   Bands: 6.5–7 great · 5.5–6.5 good · 4.5–5.5 okay · 3.5–4.5 neutral ·
   2.5–3.5 not okay · 1.5–2.5 bad · 0.5–1.5 terrible · 0–0.5 numb. The number is the
   exponentially-weighted moving average; trend is current minus 30-days-ago.
+</p>
+
+<p class="okayness-legend" style="display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap;">
+  <span>Dial reference —</span>
+  {% include okayness-dial.html score=7 size=44 %} <span>Great</span>
+  {% include okayness-dial.html score=5 size=44 %} <span>Okay</span>
+  {% include okayness-dial.html score=4 size=44 %} <span>Neutral</span>
+  {% include okayness-dial.html score=3 size=44 %} <span>Not okay</span>
+  {% include okayness-dial.html score=1 size=44 %} <span>Terrible</span>
+  {% include okayness-dial.html score=0 size=44 %} <span>Numb</span>
 </p>

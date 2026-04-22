@@ -1,0 +1,68 @@
+{%- comment -%}
+Okayness dial — speedometer-style SVG widget.
+
+Layout (degrees measured clockwise from 12 o'clock):
+  Great (7)    → 225°  (bottom-left)
+  Good (6)     → 270°  (9 o'clock)
+  Okay (5)     → 315°  (top-left)
+  Neutral (4)  → 360° / 0°  (top)
+  Not Okay (3) → 45°   (top-right)
+  Bad (2)      → 90°   (3 o'clock)
+  Terrible (1) → 135°  (bottom-right)
+  Numb (0)     → 180°  (straight down, off the arc)
+
+Usage:
+  {% include okayness-dial.html score=3.4 size=50 %}
+  {% include okayness-dial.html score=nil size=50 %}   (empty)
+
+Params:
+  score: nil | 0..7 (float)
+  size:  integer px (default 50)
+{%- endcomment -%}
+
+{%- assign size = include.size | default: 50 -%}
+{%- assign has_score = false -%}
+{%- if include.score != nil and include.score != "" -%}{%- assign has_score = true -%}{%- endif -%}
+
+{%- comment -%} Needle angle (CSS rotate degrees, 0 = up, clockwise). {%- endcomment -%}
+{%- if has_score == false -%}
+  {%- assign angle = 180 -%}
+  {%- assign needle_color = "#ccc" -%}
+{%- elsif include.score < 0.5 -%}
+  {%- assign angle = 180 -%}
+  {%- assign needle_color = "#555" -%}
+{%- else -%}
+  {%- assign sdiff = 7 | minus: include.score -%}
+  {%- assign angle = sdiff | times: 45 | plus: 225 -%}
+  {%- assign needle_color = "#222" -%}
+{%- endif -%}
+
+<svg class="okayness-dial" viewBox="0 0 100 100" width="{{ size }}" height="{{ size }}"
+     role="img" aria-label="Okayness score {{ include.score | default: 'unrated' }}">
+  <!-- background disc -->
+  <circle cx="50" cy="50" r="46" fill="#faf8f2" stroke="#e6e4da" stroke-width="1"/>
+
+  <!-- 7 arc segments (Great → Good → Okay → Neutral → Not Okay → Bad → Terrible),
+       swept clockwise from 225° through the top to 135°. Each wedge spans 270°/7 ≈ 38.57°. -->
+  <g fill="none" stroke-width="11" stroke-linecap="butt">
+    <path d="M 23.13 76.87 A 38 38 0 0 1 12.23 54.25" stroke="#6fcf97"/>
+    <path d="M 12.23 54.25 A 38 38 0 0 1 17.78 29.86" stroke="#9bd5a8"/>
+    <path d="M 17.78 29.86 A 38 38 0 0 1 37.46 14.11" stroke="#c8e3b8"/>
+    <path d="M 37.46 14.11 A 38 38 0 0 1 62.54 14.11" stroke="#e3e3d0"/>
+    <path d="M 62.54 14.11 A 38 38 0 0 1 82.22 29.86" stroke="#f3d6a3"/>
+    <path d="M 82.22 29.86 A 38 38 0 0 1 87.77 54.25" stroke="#ef9b80"/>
+    <path d="M 87.77 54.25 A 38 38 0 0 1 76.87 76.87" stroke="#d96460"/>
+  </g>
+
+  <!-- Numb marker — gray dot at 180° (straight down), separated from the arc -->
+  <circle cx="50" cy="88" r="3.5" fill="#888" stroke="#faf8f2" stroke-width="1"/>
+
+  <!-- Needle -->
+  <g transform="rotate({{ angle }} 50 50)">
+    <line x1="50" y1="50" x2="50" y2="14"
+          stroke="{{ needle_color }}" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Center hub -->
+  <circle cx="50" cy="50" r="3" fill="{{ needle_color }}"/>
+</svg>
