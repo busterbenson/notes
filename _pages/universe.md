@@ -175,4 +175,4 @@ sitemap: false
   };
 </script>
 <script src="https://d3js.org/d3.v7.min.js"></script>
-<script src="/assets/js/universe/main.js?v=12"></script>
+<script src="/assets/js/universe/main.js?v=13"></script>

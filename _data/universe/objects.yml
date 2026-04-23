@@ -1040,3 +1040,121 @@ objects:
     formation: { time_ya: 1.2e10, epoch: galaxy-formation }
     sources: [ianni-2022]
     blurb: "A 'red nugget' relic galaxy — extreme compactness (~5 kpc) holding ~250 billion stars. Unusually dense."
+
+# ─── Common molecules ─────────────────────────────────────────────────
+  - id: water-molecule
+    name: Water (H₂O)
+    category: macromolecule
+    mass_kg: 2.99e-26
+    radius_m: 1.4e-10
+    density_kg_m3: 1.0e3
+    color_band: atomic
+    shape: cross
+    color: "#3fa648"
+    formation: { time_ya: 1.36e10, epoch: stellar-nucleosynthesis }
+    sources: [pdg-2024]
+    blurb: "Most abundant molecule on Earth. Bond angle 104.5°; 2.75 Å end-to-end."
+
+  - id: methane
+    name: Methane (CH₄)
+    category: macromolecule
+    mass_kg: 2.66e-26
+    radius_m: 1.9e-10
+    density_kg_m3: 4.16e2
+    color_band: atomic
+    shape: cross
+    color: "#3fa648"
+    formation: { time_ya: 1.36e10, epoch: stellar-nucleosynthesis }
+    sources: [pdg-2024]
+    blurb: "Simplest hydrocarbon. Tetrahedral, ~3.8 Å across. Major greenhouse gas."
+
+  - id: glucose
+    name: Glucose (C₆H₁₂O₆)
+    category: macromolecule
+    mass_kg: 2.99e-25
+    radius_m: 4.5e-10
+    density_kg_m3: 1.54e3
+    color_band: atomic
+    shape: cross
+    color: "#3fa648"
+    formation: { time_ya: 3.5e9, epoch: photosynthesis }
+    sources: [milo-2010-bionumbers]
+    blurb: "Primary energy substrate of nearly every cell. ~9 Å in extended form."
+
+  - id: caffeine
+    name: Caffeine (C₈H₁₀N₄O₂)
+    category: macromolecule
+    mass_kg: 3.22e-25
+    radius_m: 6.5e-10
+    density_kg_m3: 1.23e3
+    color_band: atomic
+    shape: cross
+    color: "#3fa648"
+    formation: { time_ya: 1e7, epoch: angiosperm-evolution }
+    sources: [milo-2010-bionumbers]
+    blurb: "Adenosine receptor antagonist. ~13 Å across. Found in 60+ plant species."
+
+  - id: atp
+    name: ATP
+    category: macromolecule
+    mass_kg: 8.42e-25
+    radius_m: 7.5e-10
+    density_kg_m3: 1.5e3
+    color_band: atomic
+    shape: cross
+    color: "#3fa648"
+    formation: { time_ya: 3.7e9, epoch: abiogenesis }
+    sources: [milo-2010-bionumbers]
+    blurb: "Adenosine triphosphate — the universal energy currency of the cell."
+
+  - id: c60
+    name: Buckminsterfullerene (C₆₀)
+    category: macromolecule
+    mass_kg: 1.2e-24
+    radius_m: 5.0e-10
+    density_kg_m3: 1.65e3
+    color_band: atomic
+    shape: cross
+    color: "#3fa648"
+    formation: { time_ya: 4.5e9, epoch: stellar-formation-recent }
+    sources: [pdg-2024]
+    blurb: "Soccer-ball-shaped carbon allotrope, ~1 nm. Discovered 1985, found in space 2010."
+
+  - id: insulin
+    name: Insulin
+    category: macromolecule
+    mass_kg: 9.65e-24
+    radius_m: 2.0e-9
+    density_kg_m3: 1.35e3
+    color_band: atomic
+    shape: cross
+    color: "#3fa648"
+    formation: { time_ya: 5e8, epoch: vertebrate-evolution }
+    sources: [milo-2010-bionumbers]
+    blurb: "51-residue peptide hormone. ~5 nm across; the molecule diabetics inject."
+
+  - id: hemoglobin
+    name: Hemoglobin
+    category: macromolecule
+    mass_kg: 1.07e-22
+    radius_m: 2.75e-9
+    density_kg_m3: 1.34e3
+    color_band: atomic
+    shape: cross
+    color: "#3fa648"
+    formation: { time_ya: 5e8, epoch: vertebrate-evolution }
+    sources: [milo-2010-bionumbers]
+    blurb: "Tetrameric oxygen-binding protein. ~5.5 nm across; ~250 million per red blood cell."
+
+  - id: dna-helix
+    name: DNA (1 helical turn)
+    category: macromolecule
+    mass_kg: 1.1e-23
+    radius_m: 1.7e-9
+    density_kg_m3: 1.7e3
+    color_band: atomic
+    shape: cross
+    color: "#3fa648"
+    formation: { time_ya: 3.7e9, epoch: abiogenesis }
+    sources: [milo-2010-bionumbers]
+    blurb: "10 base pairs of B-form DNA: 3.4 nm long, 2 nm wide. Codes ~20 bits."
