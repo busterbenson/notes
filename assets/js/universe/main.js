@@ -92,8 +92,10 @@
     ]);
     const tier2 = new Set([
       "andromeda", "laniakea", "virgo-cluster",
+      "m33-triangulum", "lmc", "ic-1101", "m87-galaxy",
       "jupiter", "moon", "sirius-a",
       "m87-smbh", "crab-pulsar", "stellar-bh",
+      "vela-pulsar", "magnetar-1806", "psr-j0740",
       "blue-whale", "ant", "elephant",
       "sars-cov-2", "ribosome", "e-coli",
       "uranium-atom", "hydrogen-atom",
@@ -427,36 +429,43 @@
     // sits ON the line at that x, rotated to match the screen-space
     // slope, and offset perpendicular by ~10px so it floats just
     // above/below the dashed stroke.
+    //
+    // anchorX picked so the labels DON'T cross adjacent lines. Density
+    // diagonals (slope 3) are stacked with intercepts ~17 apart in y;
+    // each label sits at a different x to avoid stacking up.
     const lineSpecs = [
+      // Hard boundaries — black, near opposite corners of the chart.
       { kind: "bh",      slope: 1,  intercept: BH_INTERCEPT,
-        anchorX: 35,  perpOffset: -10,
+        anchorX: 8,  perpOffset: -10,
         attrs: { stroke: "#1a1a1a", "stroke-dasharray": "6 3", "stroke-width": 1.6 },
         label: "Black hole boundary", color: "#1a1a1a" },
       { kind: "qm",      slope: -1, intercept: QM_INTERCEPT,
-        anchorX: -10, perpOffset: -10,
+        anchorX: -16, perpOffset: -10,
         attrs: { stroke: "#1a1a1a", "stroke-dasharray": "6 3", "stroke-width": 1.6 },
         label: "Quantum mechanics boundary", color: "#1a1a1a" },
+      // Density diagonals — stacked, anchored at progressively higher
+      // x so the labels spread along a NW-SE direction across the
+      // visible area.
       { kind: "nuclear", slope: 3,  intercept: densityIntercept(2.3e17),
-        anchorX: 25, perpOffset: -10,
+        anchorX: 12, perpOffset: -10,
         attrs: { stroke: BAND_COLORS.nuclear, "stroke-dasharray": "4 3", "stroke-width": 1.0 },
         label: "Nuclear density", color: BAND_COLORS.nuclear },
       { kind: "atomic",  slope: 3,  intercept: densityIntercept(5e3),
-        anchorX: 28, perpOffset: -10,
+        anchorX: 17, perpOffset: -10,
         attrs: { stroke: BAND_COLORS.atomic, "stroke-dasharray": "4 3", "stroke-width": 1.0 },
         label: "Atomic density", color: BAND_COLORS.atomic },
       { kind: "dm",      slope: 3,  intercept: densityIntercept(5e-25),
-        anchorX: 38, perpOffset: -10,
+        anchorX: 28, perpOffset: -10,
         attrs: { stroke: BAND_COLORS["dark-matter"], "stroke-dasharray": "4 3", "stroke-width": 1.0 },
         label: "Dark-matter density", color: BAND_COLORS["dark-matter"] },
       // ρ_Λ ≈ 5.96e-27 kg/m³ — vacuum energy density from the
-      // cosmological constant (Planck 2018). The lowest density
-      // anything in our universe averages over: cosmic voids and
-      // empty space asymptote here. Anything below this would mean
-      // negative dark-energy density.
+      // cosmological constant (Planck 2018). Outer bound on how
+      // empty space can be; cosmic voids and "empty" space asymptote
+      // here. Drawn black as a hard boundary like BH/QM.
       { kind: "vacuum",  slope: 3,  intercept: densityIntercept(5.96e-27),
-        anchorX: 40, perpOffset: -10,
-        attrs: { stroke: "#5c8aa6", "stroke-dasharray": "2 4", "stroke-width": 1.0 },
-        label: "Vacuum (Λ)", color: "#5c8aa6" },
+        anchorX: 33, perpOffset: -10,
+        attrs: { stroke: "#1a1a1a", "stroke-dasharray": "2 4", "stroke-width": 1.6 },
+        label: "Vacuum (Λ)", color: "#1a1a1a" },
     ];
 
     const lineGroup = view.append("g").attr("class", "lines");
@@ -589,9 +598,11 @@
       });
 
       // Counter-scale boundary + density line strokes so they stay crisp.
+      // BH, QM, and Vacuum are hard boundaries → thicker stroke.
       lineGroup.selectAll("line").attr("stroke-width", function() {
         const kind = d3.select(this).attr("data-kind");
-        return (kind === "bh" || kind === "qm" ? 1.6 : 1.0) * inv;
+        const isBoundary = kind === "bh" || kind === "qm" || kind === "vacuum";
+        return (isBoundary ? 1.6 : 1.0) * inv;
       });
       lineLabelGroup.selectAll("text")
         .style("font-size", `${10 * inv}px`)

@@ -597,14 +597,14 @@ objects:
     name: Electron neutrino
     category: particle
     mass_kg: 1.07e-37
-    radius_m: 5.5e-7
+    radius_m: 3.29e-6
     density_kg_m3: 0
     color_band: quantum
     shape: circle
     color: "#2d6db0"
     formation: { time_ya: 1.38e10, epoch: leptogenesis }
     sources: [pdg-2024]
-    blurb: "Mass <0.8 eV/c² (KATRIN 2022 upper bound). Compton wavelength shown as size."
+    blurb: "Mass <0.8 eV/c² (KATRIN). Radius shown is its Compton wavelength λ_C = ℏ/(mc) — sits exactly on the QM boundary."
 
   - id: muon
     name: Muon
@@ -921,3 +921,122 @@ objects:
     formation: { time_ya: 26, epoch: ross-ice-shelf-calving }
     sources: [iucn-cetaceans]
     blurb: "Largest recorded iceberg at calving (March 2000). 295 km × 37 km, broke up by 2018."
+
+# ─── More neutron-star variants ───────────────────────────────────────
+  - id: psr-j0740
+    name: PSR J0740+6620
+    category: compact-object
+    mass_kg: 4.14e30
+    radius_m: 1.24e4
+    density_kg_m3: 5.18e17
+    color_band: nuclear
+    shape: diamond
+    color: "#b03a36"
+    formation: { time_ya: 5.0e8, epoch: stellar-formation-recent }
+    sources: [pdg-2024, ligo-virgo-catalog]
+    blurb: "Heaviest known neutron star (2.08 M☉). NICER+radio constraints rule out softer EOS."
+
+  - id: vela-pulsar
+    name: Vela pulsar
+    category: compact-object
+    mass_kg: 2.78e30
+    radius_m: 1.0e4
+    density_kg_m3: 6.64e17
+    color_band: nuclear
+    shape: diamond
+    color: "#b03a36"
+    formation: { time_ya: 1.1e4, epoch: vela-supernova }
+    sources: [pdg-2024]
+    blurb: "Brightest persistent gamma-ray source. Spins 11.2× per second; born in SN ~11,000 yr ago."
+
+  - id: magnetar-1806
+    name: SGR 1806-20 (magnetar)
+    category: compact-object
+    mass_kg: 2.78e30
+    radius_m: 1.0e4
+    density_kg_m3: 6.64e17
+    color_band: nuclear
+    shape: diamond
+    color: "#b03a36"
+    formation: { time_ya: 1500, epoch: magnetar-formation }
+    sources: [pdg-2024]
+    blurb: "10¹¹ Tesla magnetic field — strongest known. Its 2004 starquake briefly outshone the full Moon in gamma rays."
+
+  - id: psr-j1748-fast
+    name: PSR J1748-2446ad
+    category: compact-object
+    mass_kg: 3.98e30
+    radius_m: 1.6e4
+    density_kg_m3: 2.32e17
+    color_band: nuclear
+    shape: diamond
+    color: "#b03a36"
+    formation: { time_ya: 3.0e10, epoch: globular-cluster-formation }
+    sources: [pdg-2024]
+    blurb: "Fastest-spinning known pulsar: 716 Hz (43,000 RPM). Equator moves at 24% the speed of light."
+
+# ─── More galaxies ────────────────────────────────────────────────────
+  - id: m33-triangulum
+    name: M33 (Triangulum)
+    category: galaxy
+    mass_kg: 1.0e41
+    radius_m: 9.3e19
+    density_kg_m3: 2.97e-20
+    color_band: dark-matter
+    shape: square
+    color: "#a55ec2"
+    formation: { time_ya: 1.3e10, epoch: galaxy-formation }
+    sources: [ianni-2022]
+    blurb: "Third-largest galaxy in the Local Group. ~50 billion stars; visible to the naked eye on dark nights."
+
+  - id: lmc
+    name: Large Magellanic Cloud
+    category: galaxy
+    mass_kg: 2.0e40
+    radius_m: 7.0e19
+    density_kg_m3: 1.39e-20
+    color_band: dark-matter
+    shape: square
+    color: "#a55ec2"
+    formation: { time_ya: 1.3e10, epoch: galaxy-formation }
+    sources: [ianni-2022]
+    blurb: "Closest substantial galaxy (50 kpc). Irregular dwarf, satellite of the Milky Way."
+
+  - id: m87-galaxy
+    name: M87 (giant elliptical)
+    category: galaxy
+    mass_kg: 1.2e43
+    radius_m: 1.0e21
+    density_kg_m3: 2.86e-21
+    color_band: dark-matter
+    shape: square
+    color: "#a55ec2"
+    formation: { time_ya: 1.32e10, epoch: galaxy-formation }
+    sources: [eht-collaboration-2019]
+    blurb: "Giant elliptical at the heart of the Virgo cluster. Hosts the M87* SMBH (6.5 billion M☉)."
+
+  - id: ic-1101
+    name: IC 1101
+    category: galaxy
+    mass_kg: 2.0e44
+    radius_m: 1.85e22
+    density_kg_m3: 7.5e-24
+    color_band: dark-matter
+    shape: square
+    color: "#a55ec2"
+    formation: { time_ya: 1.3e10, epoch: galaxy-formation }
+    sources: [ianni-2022]
+    blurb: "One of the largest known galaxies. ~600 kpc across; ~100 trillion stars (mostly old)."
+
+  - id: ngc-1277
+    name: NGC 1277 (compact massive)
+    category: galaxy
+    mass_kg: 5.0e41
+    radius_m: 1.5e19
+    density_kg_m3: 3.5e-17
+    color_band: dark-matter
+    shape: square
+    color: "#a55ec2"
+    formation: { time_ya: 1.2e10, epoch: galaxy-formation }
+    sources: [ianni-2022]
+    blurb: "A 'red nugget' relic galaxy — extreme compactness (~5 kpc) holding ~250 billion stars. Unusually dense."
