@@ -377,39 +377,68 @@
     // For density diagonals: y = 3x + log10(ρ) - 17.24  (see derivation in v0)
     function densityIntercept(rho) { return Math.log10(rho) - 17.24; }
 
+    // Each spec specifies the line slope/intercept (data coords) plus
+    // an `anchorX` — the data x where we place the label. The label
+    // sits ON the line at that x, rotated to match the screen-space
+    // slope, and offset perpendicular by ~10px so it floats just
+    // above/below the dashed stroke.
     const lineSpecs = [
-      { kind: "bh",      pts: [[xDomain[0], xDomain[0] + BH_INTERCEPT], [xDomain[1], xDomain[1] + BH_INTERCEPT]],
+      { kind: "bh",      slope: 1,  intercept: BH_INTERCEPT,
+        anchorX: 35,  perpOffset: -10,
         attrs: { stroke: "#1a1a1a", "stroke-dasharray": "6 3", "stroke-width": 1.6 },
-        label: "Black hole boundary", labelDx: -42, labelDy: 250, color: "#1a1a1a" },
-      { kind: "qm",      pts: [[xDomain[0], -xDomain[0] + QM_INTERCEPT], [xDomain[1], -xDomain[1] + QM_INTERCEPT]],
+        label: "Black hole boundary", color: "#1a1a1a" },
+      { kind: "qm",      slope: -1, intercept: QM_INTERCEPT,
+        anchorX: -10, perpOffset: -10,
         attrs: { stroke: "#1a1a1a", "stroke-dasharray": "6 3", "stroke-width": 1.6 },
-        label: "Quantum mechanics boundary", labelDx: 42, labelDy: -150, color: "#1a1a1a" },
-      { kind: "nuclear", pts: [[xDomain[0], 3 * xDomain[0] + densityIntercept(2.3e17)], [xDomain[1], 3 * xDomain[1] + densityIntercept(2.3e17)]],
+        label: "Quantum mechanics boundary", color: "#1a1a1a" },
+      { kind: "nuclear", slope: 3,  intercept: densityIntercept(2.3e17),
+        anchorX: 25, perpOffset: -10,
         attrs: { stroke: BAND_COLORS.nuclear, "stroke-dasharray": "4 3", "stroke-width": 1.0 },
-        label: "Nuclear density", labelDx: 60, labelDy: 0, color: BAND_COLORS.nuclear },
-      { kind: "atomic",  pts: [[xDomain[0], 3 * xDomain[0] + densityIntercept(5e3)], [xDomain[1], 3 * xDomain[1] + densityIntercept(5e3)]],
+        label: "Nuclear density", color: BAND_COLORS.nuclear },
+      { kind: "atomic",  slope: 3,  intercept: densityIntercept(5e3),
+        anchorX: 28, perpOffset: -10,
         attrs: { stroke: BAND_COLORS.atomic, "stroke-dasharray": "4 3", "stroke-width": 1.0 },
-        label: "Atomic density", labelDx: 60, labelDy: 0, color: BAND_COLORS.atomic },
-      { kind: "dm",      pts: [[xDomain[0], 3 * xDomain[0] + densityIntercept(5e-25)], [xDomain[1], 3 * xDomain[1] + densityIntercept(5e-25)]],
+        label: "Atomic density", color: BAND_COLORS.atomic },
+      { kind: "dm",      slope: 3,  intercept: densityIntercept(5e-25),
+        anchorX: 38, perpOffset: -10,
         attrs: { stroke: BAND_COLORS["dark-matter"], "stroke-dasharray": "4 3", "stroke-width": 1.0 },
-        label: "Dark-matter density", labelDx: 60, labelDy: 0, color: BAND_COLORS["dark-matter"] },
+        label: "Dark-matter density", color: BAND_COLORS["dark-matter"] },
     ];
 
     const lineGroup = view.append("g").attr("class", "lines");
     const lineLabelGroup = view.append("g").attr("class", "linelabels");
     lineSpecs.forEach(spec => {
+      const x1 = xDomain[0], x2 = xDomain[1];
+      const y1 = spec.slope * x1 + spec.intercept;
+      const y2 = spec.slope * x2 + spec.intercept;
+      const sx1 = xScale(x1), sy1 = yScale(y1), sx2 = xScale(x2), sy2 = yScale(y2);
+
       const ln = lineGroup.append("line")
         .attr("data-kind", spec.kind)
-        .attr("x1", xScale(spec.pts[0][0])).attr("y1", yScale(spec.pts[0][1]))
-        .attr("x2", xScale(spec.pts[1][0])).attr("y2", yScale(spec.pts[1][1]));
+        .attr("x1", sx1).attr("y1", sy1).attr("x2", sx2).attr("y2", sy2);
       Object.entries(spec.attrs).forEach(([k, v]) => ln.attr(k, v));
-      const mx = (xScale(spec.pts[0][0]) + xScale(spec.pts[1][0])) / 2 + spec.labelDx;
-      const my = (yScale(spec.pts[0][1]) + yScale(spec.pts[1][1])) / 2 + spec.labelDy;
+
+      // Place label on the line at anchorX, then offset perpendicular
+      // to the line direction so it doesn't sit directly on the stroke.
+      const yAnchor = spec.slope * spec.anchorX + spec.intercept;
+      const px = xScale(spec.anchorX);
+      const py = yScale(yAnchor);
+      const dx = sx2 - sx1, dy = sy2 - sy1;
+      const len = Math.hypot(dx, dy) || 1;
+      // Perpendicular unit vector pointing "up" in screen space (negative y).
+      let perpX = -dy / len, perpY = dx / len;
+      if (perpY > 0) { perpX = -perpX; perpY = -perpY; }
+      const lx = px + perpX * spec.perpOffset;
+      const ly = py + perpY * spec.perpOffset;
+      const angleDeg = Math.atan2(dy, dx) * 180 / Math.PI;
+
       lineLabelGroup.append("text")
         .attr("data-kind", spec.kind)
-        .attr("x", mx).attr("y", my)
+        .attr("x", lx).attr("y", ly)
+        .attr("text-anchor", "middle")
         .attr("font-size", 10).attr("font-weight", 600)
         .attr("fill", spec.color)
+        .attr("transform", `rotate(${angleDeg} ${lx} ${ly})`)
         .text(spec.label);
     });
 
@@ -428,6 +457,7 @@
       const g = ptGroup.append("g")
         .attr("transform", `translate(${px},${py})`)
         .attr("data-id", obj.id)
+        .attr("data-band", obj.color_band)
         .style("cursor", "pointer");
       renderShape(g, obj, 4);
       g.append("title").text(obj.name);
@@ -437,6 +467,7 @@
 
       labelGroup.append("text")
         .attr("data-id", obj.id)
+        .attr("data-band", obj.color_band)
         .attr("data-prominence", obj.prominence)
         .attr("x", px + 6).attr("y", py + 3)
         .attr("font-size", 9)
@@ -514,12 +545,45 @@
           .attr("fill", "#555").text("reset zoom");
       });
 
-    // ── Legend ──────────────────────────────────────────────────────────
+    // ── Legend (clickable to toggle bands + boundaries) ─────────────────
     const legendEl = d3.select("#legend-mass-size");
+    const bandToLineKind = { nuclear: "nuclear", atomic: "atomic", "dark-matter": "dm" };
     Object.entries(BAND_LABELS).forEach(([band, label]) => {
-      legendEl.append("span").attr("class", "uni-chip").attr("data-band", band)
+      const chip = legendEl.append("span")
+        .attr("class", "uni-chip").attr("data-band", band).attr("data-on", "true")
         .html(`<span class="uni-chip-dot" style="background:${BAND_COLORS[band]}"></span>${label}`);
+      chip.on("click", function() {
+        const on = this.getAttribute("data-on") !== "false";
+        const next = on ? "false" : "true";
+        this.setAttribute("data-on", next);
+        toggleBandVisibility(band, !on);
+      });
     });
+    // Add boundary toggles as bonus chips
+    [{ kind: "bh", label: "Black hole boundary" }, { kind: "qm", label: "Quantum mechanics boundary" }].forEach(({ kind, label }) => {
+      const chip = legendEl.append("span")
+        .attr("class", "uni-chip").attr("data-line-kind", kind).attr("data-on", "true")
+        .html(`<span class="uni-chip-dot" style="background:#1a1a1a"></span>${label}`);
+      chip.on("click", function() {
+        const on = this.getAttribute("data-on") !== "false";
+        const next = on ? "false" : "true";
+        this.setAttribute("data-on", next);
+        toggleLineKindVisibility(kind, !on);
+      });
+    });
+
+    function toggleBandVisibility(band, visible) {
+      const op = visible ? "" : "none";
+      view.selectAll(`g[data-band="${band}"]`).style("display", op);
+      view.selectAll(`text[data-band="${band}"]`).style("display", op);
+      const lineKind = bandToLineKind[band];
+      if (lineKind) toggleLineKindVisibility(lineKind, visible);
+    }
+    function toggleLineKindVisibility(kind, visible) {
+      const op = visible ? "" : "none";
+      lineGroup.select(`line[data-kind="${kind}"]`).style("display", op);
+      lineLabelGroup.select(`text[data-kind="${kind}"]`).style("display", op);
+    }
   }
 
   // ─────────────────────────────────────────────────────────────────────
