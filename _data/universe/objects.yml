@@ -829,3 +829,95 @@ objects:
     formation: { time_ya: 2e8, epoch: jurassic }
     sources: [iucn-cetaceans]
     blurb: "Tallest tree species. Sequoia sempervirens up to 115 m."
+
+# ─── Familiar large-scale objects ─────────────────────────────────────
+  - id: cumulus-cloud
+    name: Cumulus cloud
+    category: structure
+    mass_kg: 5.0e8
+    radius_m: 5.0e2
+    density_kg_m3: 1.0e0
+    color_band: atomic
+    shape: cross
+    color: "#7b8fa1"
+    formation: { time_ya: 0, epoch: ongoing }
+    sources: [ianni-2022]
+    blurb: "Fair-weather cumulus, ~1 km across. ~500 tonnes of suspended water — same mass as 100 elephants."
+
+  - id: oak-tree
+    name: Oak tree
+    category: organism
+    mass_kg: 4.0e3
+    radius_m: 1.5e1
+    density_kg_m3: 7.5e2
+    color_band: atomic
+    shape: cross
+    color: "#2d6db0"
+    formation: { time_ya: 1.5e8, epoch: cretaceous }
+    sources: [iucn-cetaceans]
+    blurb: "Mature Quercus, ~30 m tall. Wood density ~750 kg/m³."
+
+  - id: titanic
+    name: RMS Titanic
+    category: structure
+    mass_kg: 5.23e7
+    radius_m: 1.34e2
+    density_kg_m3: 1.05e3
+    color_band: atomic
+    shape: cross
+    color: "#7b8fa1"
+    formation: { time_ya: 114, epoch: industrial-era }
+    sources: [ianni-2022]
+    blurb: "269 m × 28 m × 53 m, displacement 52,310 t. Sank 1912, found 1985 at 3,800 m depth."
+
+  - id: great-barrier-reef
+    name: Great Barrier Reef
+    category: structure
+    mass_kg: 1.0e15
+    radius_m: 1.15e6
+    density_kg_m3: 2.0e3
+    color_band: atomic
+    shape: cross
+    color: "#7b8fa1"
+    formation: { time_ya: 2.0e7, epoch: holocene }
+    sources: [iucn-cetaceans]
+    blurb: "2,300 km long living reef system. Coral skeleton density ~2 g/cm³, similar to limestone."
+
+  - id: mount-everest
+    name: Mount Everest
+    category: structure
+    mass_kg: 1.6e14
+    radius_m: 8.85e3
+    density_kg_m3: 2.7e3
+    color_band: atomic
+    shape: cross
+    color: "#7b8fa1"
+    formation: { time_ya: 5.0e7, epoch: himalayan-orogeny }
+    sources: [ianni-2022]
+    blurb: "8,849 m above sea level. Granitic + sedimentary mass; still rising ~4 mm/yr."
+
+  - id: pyramid-giza
+    name: Great Pyramid of Giza
+    category: structure
+    mass_kg: 6.0e9
+    radius_m: 1.15e2
+    density_kg_m3: 2.1e3
+    color_band: atomic
+    shape: cross
+    color: "#7b8fa1"
+    formation: { time_ya: 4500, epoch: bronze-age }
+    sources: [ianni-2022]
+    blurb: "~230 m base, 147 m tall (originally). 2.3 million limestone blocks, ~2.5 t each."
+
+  - id: iceberg-b15
+    name: Iceberg B-15
+    category: structure
+    mass_kg: 3.0e12
+    radius_m: 1.5e5
+    density_kg_m3: 9.17e2
+    color_band: atomic
+    shape: cross
+    color: "#7b8fa1"
+    formation: { time_ya: 26, epoch: ross-ice-shelf-calving }
+    sources: [iucn-cetaceans]
+    blurb: "Largest recorded iceberg at calving (March 2000). 295 km × 37 km, broke up by 2018."

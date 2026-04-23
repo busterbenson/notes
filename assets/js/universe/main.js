@@ -98,6 +98,7 @@
       "sars-cov-2", "ribosome", "e-coli",
       "uranium-atom", "hydrogen-atom",
       "neutron", "neutrino",
+      "mount-everest", "great-barrier-reef", "titanic", "cumulus-cloud", "oak-tree",
     ]);
     if (tier1.has(o.id)) return 1;
     if (tier2.has(o.id)) return 2;
