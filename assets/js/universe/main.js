@@ -101,6 +101,30 @@
     return prominence <= 1;
   }
 
+  // ── Cross-chart linking ──────────────────────────────────────────────
+  // When an object is hovered on either chart, fade everyone else on
+  // BOTH charts and spotlight the matching id. Lets the eye trace
+  // an object from its mass-radius position to its time-density
+  // counterpart without losing context.
+  const CROSS_LINK_SELECTOR = "g[data-id]";
+  function crossChartHover(id) {
+    document.querySelectorAll(CROSS_LINK_SELECTOR).forEach(node => {
+      if (node.getAttribute("data-id") === id) {
+        node.classList.add("uni-spot");
+        node.classList.remove("uni-dimmed");
+      } else {
+        node.classList.add("uni-dimmed");
+        node.classList.remove("uni-spot");
+      }
+    });
+  }
+  function crossChartClear() {
+    document.querySelectorAll(CROSS_LINK_SELECTOR).forEach(node => {
+      node.classList.remove("uni-dimmed");
+      node.classList.remove("uni-spot");
+    });
+  }
+
   // ── Tooltip ──────────────────────────────────────────────────────────
   const tooltip = d3.select("#uni-tooltip");
 
@@ -324,9 +348,9 @@
         .style("cursor", "pointer");
       renderShape(g, obj, 4);
       g.append("title").text(obj.name);
-      g.on("mouseenter", e => { showTooltip(e, obj); g.select("circle, rect, path").attr("stroke", "#fff").attr("stroke-width", 2); })
+      g.on("mouseenter", e => { showTooltip(e, obj); crossChartHover(obj.id); })
        .on("mousemove", e => moveTooltip(e))
-       .on("mouseleave", () => { hideTooltip(); g.select("circle, rect, path").attr("stroke", null); });
+       .on("mouseleave", () => { hideTooltip(); crossChartClear(); });
 
       labelGroup.append("text")
         .attr("data-id", obj.id)
@@ -625,9 +649,9 @@
         .attr("data-id", obj.id)
         .style("cursor", "pointer");
       renderShape(g, obj, 4);
-      g.on("mouseenter", e => { showTooltip(e, obj); g.select("circle, rect, path").attr("stroke", "#fff").attr("stroke-width", 2); })
+      g.on("mouseenter", e => { showTooltip(e, obj); crossChartHover(obj.id); })
        .on("mousemove", moveTooltip)
-       .on("mouseleave", () => { hideTooltip(); g.select("circle, rect, path").attr("stroke", null); });
+       .on("mouseleave", () => { hideTooltip(); crossChartClear(); });
 
       // Inline label
       root.append("text")

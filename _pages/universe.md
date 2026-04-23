@@ -31,6 +31,14 @@ sitemap: false
   .uni-chip[data-on="false"] { opacity: 0.4; }
   .uni-chip-dot { width: 0.55rem; height: 0.55rem; border-radius: 50%; }
 
+  /* Cross-chart linking — when one object is hovered, the others fade
+     across both panels so the eye can find its counterpart. */
+  .uni-dimmed { opacity: 0.18; transition: opacity 0.18s ease; }
+  .uni-spot   { opacity: 1.0;  transition: opacity 0.18s ease; }
+  .uni-spot circle, .uni-spot rect, .uni-spot path {
+    stroke: #1a1a1a; stroke-width: 2;
+  }
+
   .uni-tooltip {
     position: absolute; pointer-events: none;
     background: rgba(28, 24, 16, 0.92); color: #f5f0df;
@@ -111,4 +119,4 @@ sitemap: false
   };
 </script>
 <script src="https://d3js.org/d3.v7.min.js"></script>
-<script src="/assets/js/universe/main.js?v=3"></script>
+<script src="/assets/js/universe/main.js?v=4"></script>
