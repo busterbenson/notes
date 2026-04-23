@@ -39,6 +39,34 @@ sitemap: false
     stroke: #1a1a1a; stroke-width: 2;
   }
 
+  /* Tour mode UI */
+  .uni-tour-bar {
+    display: flex; gap: 0.5rem; align-items: center;
+    margin: 0.5rem 0 1rem; flex-wrap: wrap;
+  }
+  .uni-tour-btn {
+    background: #fdfcf6; border: 1px solid #cdc8b6; border-radius: 999px;
+    padding: 0.35rem 0.95rem; font-size: 0.85rem; cursor: pointer;
+    color: #2a2a2a; transition: background 0.15s ease, border-color 0.15s ease;
+    display: inline-flex; align-items: center; gap: 0.35rem;
+  }
+  .uni-tour-btn:hover { background: #f3eeda; border-color: #b8b194; }
+  .uni-tour-btn.primary { background: #2a2a2a; color: #fffceb; border-color: #2a2a2a; }
+  .uni-tour-btn.primary:hover { background: #1a1a1a; }
+  .uni-tour-controls { display: none; gap: 0.4rem; align-items: center; }
+  .uni-tour-card {
+    display: none; position: fixed; bottom: 1.25rem; left: 50%;
+    transform: translateX(-50%);
+    background: rgba(28, 24, 16, 0.94); color: #f5f0df;
+    padding: 0.85rem 1.25rem; border-radius: 10px;
+    max-width: 540px; min-width: 320px; z-index: 900;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.35);
+    line-height: 1.5;
+  }
+  .uni-tour-counter { color: #c8b893; font-size: 0.72rem; letter-spacing: 0.07em; text-transform: uppercase; }
+  .uni-tour-name { font-size: 1.05rem; font-weight: 700; color: #ffe9b8; margin: 0.25rem 0; }
+  .uni-tour-story { font-size: 0.88rem; }
+
   .uni-tooltip {
     position: absolute; pointer-events: none;
     background: rgba(28, 24, 16, 0.92); color: #f5f0df;
@@ -64,8 +92,19 @@ sitemap: false
   The left chart is the Carr–Rees mass-radius diagram — the geometry of what's
   possible at all. The right chart is its temporal companion — when each
   density regime got populated, and how the universe itself has moved through
-  them since the Big Bang. Hover any object to highlight it on both charts.
+  them since the Big Bang. Hover any object to highlight it on both charts,
+  or take the tour for a guided walk from observable universe down to electron.
 </p>
+
+<div class="uni-tour-bar">
+  <button id="uni-tour-button" class="uni-tour-btn primary">▶ Take the tour</button>
+  <div id="uni-tour-controls" class="uni-tour-controls">
+    <button id="uni-tour-prev" class="uni-tour-btn">◀ Prev</button>
+    <button id="uni-tour-next" class="uni-tour-btn">Next ▶</button>
+    <button id="uni-tour-stop" class="uni-tour-btn">Stop</button>
+    <span style="color:#888;font-size:0.78rem;">← → arrows · Esc to stop</span>
+  </div>
+</div>
 
 <div class="uni-charts">
 
@@ -90,6 +129,7 @@ sitemap: false
 </div>
 
 <div id="uni-tooltip" class="uni-tooltip"></div>
+<div id="uni-tour-card" class="uni-tour-card"></div>
 
 <div class="uni-footer">
   <p>
@@ -119,4 +159,4 @@ sitemap: false
   };
 </script>
 <script src="https://d3js.org/d3.v7.min.js"></script>
-<script src="/assets/js/universe/main.js?v=4"></script>
+<script src="/assets/js/universe/main.js?v=5"></script>

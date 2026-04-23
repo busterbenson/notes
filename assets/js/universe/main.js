@@ -101,6 +101,89 @@
     return prominence <= 1;
   }
 
+  // ── Tour mode ────────────────────────────────────────────────────────
+  // A guided 12-stop walk from the largest known structure down to the
+  // electron — the same scale ladder the page is built around. Each
+  // stop highlights the object on both charts via crossChartHover()
+  // and surfaces a one-line story; auto-advances every 4 seconds.
+  const TOUR_STOPS = [
+    { id: "observable-universe",
+      story: "Everything we can see — 93 billion light-years across in proper distance, 13.8 Gyr old. The whole chart is contained in this one dot." },
+    { id: "laniakea",
+      story: "Our home supercluster. 100,000 galaxies including the Milky Way, gravitationally drifting toward the Great Attractor." },
+    { id: "milky-way",
+      story: "Our barred-spiral galaxy. ~200 billion stars across a 100,000-light-year disk." },
+    { id: "sgr-a",
+      story: "The supermassive black hole at the Milky Way's center. 4.3 million solar masses crammed inside a Schwarzschild radius the size of Mercury's orbit." },
+    { id: "sun",
+      story: "G2V main-sequence star. 4.6 Gyr old, ~5 Gyr remaining before red-giant phase." },
+    { id: "earth",
+      story: "Our planet. ~5,500 kg/m³ — densest in the solar system because of the iron core." },
+    { id: "blue-whale",
+      story: "Largest animal that has ever lived. Mass ~150 tonnes, density just above water." },
+    { id: "human",
+      story: "Median adult — about 70 kg, 1.7 m, density slightly above water. Big enough to think, small enough to fit inside the atomic-density slope." },
+    { id: "eukaryotic-cell",
+      story: "A typical eukaryotic cell. The transition from inanimate matter to organism happens 6 orders of magnitude below us." },
+    { id: "sars-cov-2",
+      story: "A SARS-CoV-2 virion — about 100 nm across. Self-replicating organic chemistry just barely qualifies as 'alive.'" },
+    { id: "proton",
+      story: "A proton. The reference particle for both axes — every label is normalized to its mass and Compton wavelength." },
+    { id: "electron",
+      story: "An electron. Sits on the quantum-mechanics boundary line: any smaller and the uncertainty principle blurs out its position." },
+  ];
+
+  let tourTimer = null;
+  let tourIdx = 0;
+  let tourActive = false;
+
+  function startTour() {
+    tourActive = true;
+    tourIdx = 0;
+    showTourStep();
+    document.getElementById("uni-tour-controls").style.display = "flex";
+    document.getElementById("uni-tour-button").style.display = "none";
+  }
+  function stopTour() {
+    tourActive = false;
+    if (tourTimer) clearTimeout(tourTimer);
+    crossChartClear();
+    hideTourCard();
+    document.getElementById("uni-tour-controls").style.display = "none";
+    document.getElementById("uni-tour-button").style.display = "inline-flex";
+  }
+  function tourNext() {
+    if (!tourActive) return;
+    tourIdx = (tourIdx + 1) % TOUR_STOPS.length;
+    showTourStep();
+  }
+  function tourPrev() {
+    if (!tourActive) return;
+    tourIdx = (tourIdx - 1 + TOUR_STOPS.length) % TOUR_STOPS.length;
+    showTourStep();
+  }
+  function showTourStep() {
+    if (tourTimer) clearTimeout(tourTimer);
+    const stop = TOUR_STOPS[tourIdx];
+    const obj = data.objects.find(o => o.id === stop.id);
+    if (!obj) { tourNext(); return; }
+    crossChartHover(stop.id);
+    showTourCard(obj, stop.story, tourIdx + 1, TOUR_STOPS.length);
+    tourTimer = setTimeout(tourNext, 4500);
+  }
+  function showTourCard(obj, story, n, total) {
+    const card = document.getElementById("uni-tour-card");
+    card.style.display = "block";
+    card.innerHTML =
+      `<div class="uni-tour-counter">${n} / ${total}</div>` +
+      `<div class="uni-tour-name">${obj.name}</div>` +
+      `<div class="uni-tour-story">${story}</div>`;
+  }
+  function hideTourCard() {
+    const card = document.getElementById("uni-tour-card");
+    if (card) card.style.display = "none";
+  }
+
   // ── Cross-chart linking ──────────────────────────────────────────────
   // When an object is hovered on either chart, fade everyone else on
   // BOTH charts and spotlight the matching id. Lets the eye trace
@@ -727,9 +810,27 @@
     try {
       buildMassSizeChart();
       buildDensityTimeChart();
+      wireTourControls();
     } catch (e) {
       console.error("[universe] chart init failed:", e);
     }
+  }
+
+  function wireTourControls() {
+    const startBtn = document.getElementById("uni-tour-button");
+    if (startBtn) startBtn.addEventListener("click", startTour);
+    const stopBtn = document.getElementById("uni-tour-stop");
+    if (stopBtn) stopBtn.addEventListener("click", stopTour);
+    const nextBtn = document.getElementById("uni-tour-next");
+    if (nextBtn) nextBtn.addEventListener("click", () => { tourNext(); });
+    const prevBtn = document.getElementById("uni-tour-prev");
+    if (prevBtn) prevBtn.addEventListener("click", () => { tourPrev(); });
+    document.addEventListener("keydown", e => {
+      if (!tourActive) return;
+      if (e.key === "Escape") stopTour();
+      else if (e.key === "ArrowRight") tourNext();
+      else if (e.key === "ArrowLeft") tourPrev();
+    });
   }
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", boot);
