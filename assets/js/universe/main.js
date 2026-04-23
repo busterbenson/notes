@@ -211,22 +211,40 @@
   // ── Tooltip ──────────────────────────────────────────────────────────
   const tooltip = d3.select("#uni-tooltip");
 
+  // Anchor the tooltip on the MARKER's screen position, not the mouse
+  // cursor. Otherwise zoomed views move the marker but the tooltip
+  // tracks the cursor and they drift apart visually. The mousemove
+  // handler is a no-op so the tooltip stays put while hovering.
   function showTooltip(event, obj) {
     const lines = [
       `<strong>${obj.name}</strong>`,
       `<div class="meta">${formatScientific(obj.mass_kg, "kg")} · ${formatScientific(obj.radius_m, "m")} · ${formatScientific(obj.density_kg_m3, "kg/m³")}</div>`,
       obj.blurb ? `<div style="margin-top:0.35rem;">${obj.blurb}</div>` : "",
     ].join("");
-    tooltip
-      .html(lines)
-      .style("left", (event.clientX + 14) + "px")
-      .style("top", (event.clientY + 14) + "px")
-      .style("opacity", 1);
+    tooltip.html(lines);
+    placeTooltipAtMarker(event.currentTarget);
+    tooltip.style("opacity", 1);
   }
-  function moveTooltip(event) {
-    tooltip
-      .style("left", (event.clientX + 14) + "px")
-      .style("top", (event.clientY + 14) + "px");
+  function placeTooltipAtMarker(markerNode) {
+    if (!markerNode || !markerNode.getBoundingClientRect) return;
+    const r = markerNode.getBoundingClientRect();
+    const ttEl = tooltip.node();
+    if (!ttEl) return;
+    const ttW = ttEl.offsetWidth || 280;
+    const ttH = ttEl.offsetHeight || 60;
+    // Default: tooltip to the right of the marker, vertically centered.
+    let left = r.right + 10;
+    let top = r.top + r.height / 2 - ttH / 2;
+    // If we'd run off the right edge, swap to left side.
+    if (left + ttW > window.innerWidth - 8) left = r.left - ttW - 10;
+    // Clamp vertical bounds.
+    top = Math.max(8, Math.min(top, window.innerHeight - ttH - 8));
+    tooltip.style("left", left + "px").style("top", top + "px");
+  }
+  function moveTooltip(_event) {
+    // No-op — tooltip stays anchored to the marker for the duration
+    // of the hover. Re-anchoring on mousemove caused jitter when the
+    // cursor wandered between the marker and the tooltip itself.
   }
   function hideTooltip() {
     tooltip.style("opacity", 0);
@@ -443,8 +461,16 @@
     });
 
     // ── Data points + labels ────────────────────────────────────────────
+    // Markers go inside the view group (zoom transforms them).
+    // Labels go in a SEPARATE group attached to root (outside zoom),
+    // because text inside a scaled group sees its dx/dy multiplied by
+    // the zoom factor — so labels drift away from their markers as you
+    // zoom in. Storing data-px / data-py on each label lets us
+    // recompute screen position on every zoom event using the
+    // rescaled axes.
     const ptGroup = view.append("g").attr("class", "points");
-    const labelGroup = view.append("g").attr("class", "labels");
+    const labelGroup = root.append("g").attr("class", "labels")
+      .attr("clip-path", `url(#${clipId})`);
 
     const visibleObjs = data.objects.filter(obj =>
       obj.x_log_r >= xDomain[0] && obj.x_log_r <= xDomain[1] &&
@@ -469,6 +495,8 @@
         .attr("data-id", obj.id)
         .attr("data-band", obj.color_band)
         .attr("data-prominence", obj.prominence)
+        .attr("data-x-log", obj.x_log_r)
+        .attr("data-y-log", obj.y_log_m)
         .attr("x", px + 6).attr("y", py + 3)
         .attr("font-size", 9)
         .attr("fill", "#444")
@@ -495,22 +523,28 @@
       xAxisG.call(xAxis.scale(xz)).call(g => g.selectAll(".domain, .tick line").attr("stroke", "#888"));
       yAxisG.call(yAxis.scale(yz)).call(g => g.selectAll(".domain, .tick line").attr("stroke", "#888"));
 
-      // Counter-scale visual elements so they don't grow with zoom.
+      // Counter-scale markers so the shapes don't balloon with zoom.
       const inv = 1 / k;
       ptNodes.each(function() {
         const node = d3.select(this);
         const t = node.attr("transform");
-        // Strip any prior scale() and re-apply translate + counter-scale.
         const m = t.match(/translate\(([^)]+)\)/);
         if (m) node.attr("transform", `translate(${m[1]}) scale(${inv})`);
       });
-      labelNodes
-        .style("font-size", `${9 * inv}px`)
-        .attr("dx", 6 * inv).attr("dy", 3 * inv)
-        .style("opacity", function() {
-          const p = +d3.select(this).attr("data-prominence");
-          return visibleAtZoom(p, k) ? 1 : 0;
-        });
+
+      // Labels live OUTSIDE the zoomed view group, so we re-anchor them
+      // to the marker's screen position using the rescaled axes. This
+      // keeps each label exactly 6/3 px from its marker at any zoom
+      // level instead of drifting away as the zoom factor multiplies
+      // dx/dy inside a scaled coordinate space.
+      labelNodes.each(function() {
+        const node = d3.select(this);
+        const xLog = +node.attr("data-x-log");
+        const yLog = +node.attr("data-y-log");
+        node.attr("x", xz(xLog) + 6).attr("y", yz(yLog) + 3);
+        const p = +node.attr("data-prominence");
+        node.style("opacity", visibleAtZoom(p, k) ? 1 : 0);
+      });
 
       // Counter-scale boundary + density line strokes so they stay crisp.
       lineGroup.selectAll("line").attr("stroke-width", function() {
@@ -575,7 +609,7 @@
     function toggleBandVisibility(band, visible) {
       const op = visible ? "" : "none";
       view.selectAll(`g[data-band="${band}"]`).style("display", op);
-      view.selectAll(`text[data-band="${band}"]`).style("display", op);
+      labelGroup.selectAll(`text[data-band="${band}"]`).style("display", op);
       const lineKind = bandToLineKind[band];
       if (lineKind) toggleLineKindVisibility(lineKind, visible);
     }
