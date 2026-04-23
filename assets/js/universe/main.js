@@ -91,16 +91,19 @@
       "proton", "electron",
     ]);
     const tier2 = new Set([
+      // Galaxies + clusters — well-separated on the chart, can show at k≥2
       "andromeda", "laniakea", "virgo-cluster",
-      "m33-triangulum", "lmc", "ic-1101", "m87-galaxy",
+      "m33-triangulum", "lmc",
+      // Solar system / stars — show one anchor each
       "jupiter", "moon", "sirius-a",
+      // One iconic compact object per family
       "m87-smbh", "crab-pulsar", "stellar-bh",
-      "vela-pulsar", "magnetar-1806", "psr-j0740",
-      "blue-whale", "ant", "elephant",
-      "sars-cov-2", "ribosome", "e-coli",
-      "uranium-atom", "hydrogen-atom",
-      "neutron", "neutrino",
-      "mount-everest", "great-barrier-reef", "titanic", "cumulus-cloud", "oak-tree",
+      // Familiar large-scale things
+      "blue-whale", "elephant",
+      "sars-cov-2",
+      "uranium-atom",
+      "neutrino",
+      "mount-everest", "great-barrier-reef", "titanic", "cumulus-cloud",
     ]);
     if (tier1.has(o.id)) return 1;
     if (tier2.has(o.id)) return 2;
@@ -208,6 +211,7 @@
   // an object from its mass-radius position to its time-density
   // counterpart without losing context.
   const CROSS_LINK_SELECTOR = "g[data-id]";
+  const CROSS_LINK_LABEL_SELECTOR = "text[data-id]";
   function crossChartHover(id) {
     document.querySelectorAll(CROSS_LINK_SELECTOR).forEach(node => {
       if (node.getAttribute("data-id") === id) {
@@ -218,11 +222,28 @@
         node.classList.remove("uni-spot");
       }
     });
+    // Pop the matching label OUT regardless of its prominence tier so
+    // even hidden cluster members become readable when hovered. The
+    // CSS class force-shows it, raises it above siblings, and gives
+    // it a white pill background so it cuts through any overlap.
+    document.querySelectorAll(CROSS_LINK_LABEL_SELECTOR).forEach(node => {
+      if (node.getAttribute("data-id") === id) {
+        node.classList.add("uni-label-spot");
+        // Move to end of parent so it paints on top.
+        if (node.parentNode) node.parentNode.appendChild(node);
+      } else {
+        node.classList.add("uni-label-dimmed");
+      }
+    });
   }
   function crossChartClear() {
     document.querySelectorAll(CROSS_LINK_SELECTOR).forEach(node => {
       node.classList.remove("uni-dimmed");
       node.classList.remove("uni-spot");
+    });
+    document.querySelectorAll(CROSS_LINK_LABEL_SELECTOR).forEach(node => {
+      node.classList.remove("uni-label-spot");
+      node.classList.remove("uni-label-dimmed");
     });
   }
 

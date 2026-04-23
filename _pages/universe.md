@@ -40,6 +40,21 @@ sitemap: false
     stroke: #1a1a1a; stroke-width: 2;
   }
 
+  /* Hovered label pops out of crowded clusters: forced visible,
+     larger, with a soft pill behind it via paint-order so the text
+     reads on top of any overlap. */
+  .uni-label-dimmed { opacity: 0.12 !important; transition: opacity 0.18s ease; }
+  .uni-label-spot {
+    opacity: 1 !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    fill: #1a1a1a !important;
+    paint-order: stroke fill;
+    stroke: #fffceb;
+    stroke-width: 5px;
+    stroke-linejoin: round;
+  }
+
   /* Tour mode UI */
   .uni-tour-bar {
     display: flex; gap: 0.5rem; align-items: center;
@@ -160,4 +175,4 @@ sitemap: false
   };
 </script>
 <script src="https://d3js.org/d3.v7.min.js"></script>
-<script src="/assets/js/universe/main.js?v=11"></script>
+<script src="/assets/js/universe/main.js?v=12"></script>
