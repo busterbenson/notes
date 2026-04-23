@@ -247,13 +247,24 @@
     if (!ttEl) return;
     const ttW = ttEl.offsetWidth || 280;
     const ttH = ttEl.offsetHeight || 60;
+    // getBoundingClientRect is viewport-relative; the tooltip uses
+    // position:absolute so its left/top are document-relative — add
+    // scroll offsets so the card lands next to the marker even when
+    // the page has been scrolled.
+    const sx = window.pageXOffset || document.documentElement.scrollLeft;
+    const sy = window.pageYOffset || document.documentElement.scrollTop;
     // Default: tooltip to the right of the marker, vertically centered.
-    let left = r.right + 10;
-    let top = r.top + r.height / 2 - ttH / 2;
-    // If we'd run off the right edge, swap to left side.
-    if (left + ttW > window.innerWidth - 8) left = r.left - ttW - 10;
-    // Clamp vertical bounds.
-    top = Math.max(8, Math.min(top, window.innerHeight - ttH - 8));
+    let left = r.right + 10 + sx;
+    let top  = r.top + r.height / 2 - ttH / 2 + sy;
+    // If we'd run off the right edge of the viewport, swap to left side.
+    if (r.right + 10 + ttW > window.innerWidth - 8) {
+      left = r.left - ttW - 10 + sx;
+    }
+    // Clamp viewport bounds (still in viewport coords for the clamp,
+    // then re-apply scroll to convert back to document coords).
+    let topVp = top - sy;
+    topVp = Math.max(8, Math.min(topVp, window.innerHeight - ttH - 8));
+    top = topVp + sy;
     tooltip.style("left", left + "px").style("top", top + "px");
   }
   function moveTooltip(_event) {
