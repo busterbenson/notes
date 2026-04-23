@@ -74,24 +74,39 @@
     o.prominence = labelProminence(o);
   });
 
-  // Label-prominence tier for zoom-aware visibility on Chart 1.
-  // 1 = always visible, 2 = visible at k≥2, 3 = k≥4, 4 = k≥8.
-  // Tuned so the default view shows ~12 well-known objects without
-  // crowding, and zooming in reveals the rest by tier.
+  // Prominence tier (1-4) controls whether a marker AND its label
+  // render at a given zoom level. Tuned so the default view shows
+  // ~10 anchor objects without overlap, and progressively richer
+  // populations appear as the user zooms in:
+  //   k=1  → tier 1 (~10 anchors)
+  //   k≥2  → tier 2 adds (planets, major stars, galaxies, compacts, cells)
+  //   k≥4  → tier 3 adds (more animals, atoms, asteroids, viruses, smaller structures)
+  //   k≥8  → tier 4 (every exotic particle, every atom, every minor moon)
   function labelProminence(o) {
-    const headline = new Set([
-      "observable-universe", "milky-way", "andromeda", "laniakea",
-      "sun", "earth", "moon", "jupiter",
-      "sgr-a", "m87-smbh", "crab-pulsar", "stellar-bh",
-      "human", "blue-whale",
-      "proton", "electron", "eukaryotic-cell",
+    if (o.prominence != null) return +o.prominence; // explicit override from yaml
+    const tier1 = new Set([
+      "observable-universe", "milky-way", "sgr-a",
+      "sun", "earth",
+      "human", "eukaryotic-cell",
+      "proton", "electron",
     ]);
-    if (headline.has(o.id)) return 1;
-    if (o.category === "planet" || o.category === "star") return 2;
-    if (o.category === "galaxy" || o.category === "cluster") return 2;
-    if (o.category === "compact-object" || o.category === "structure") return 2;
-    if (o.category === "particle" || o.category === "atom") return 3;
-    return 3;
+    const tier2 = new Set([
+      "andromeda", "laniakea", "virgo-cluster",
+      "jupiter", "moon", "sirius-a",
+      "m87-smbh", "crab-pulsar", "stellar-bh",
+      "blue-whale", "ant", "elephant",
+      "sars-cov-2", "ribosome", "e-coli",
+      "uranium-atom", "hydrogen-atom",
+      "neutron", "neutrino",
+    ]);
+    if (tier1.has(o.id)) return 1;
+    if (tier2.has(o.id)) return 2;
+    if (o.category === "planet" || o.category === "star") return 3;
+    if (o.category === "galaxy" || o.category === "cluster") return 3;
+    if (o.category === "compact-object" || o.category === "structure") return 3;
+    if (o.category === "organism" || o.category === "cell") return 3;
+    if (o.category === "virus" || o.category === "macromolecule") return 3;
+    return 4;
   }
 
   function visibleAtZoom(prominence, k) {
@@ -421,6 +436,15 @@
         anchorX: 38, perpOffset: -10,
         attrs: { stroke: BAND_COLORS["dark-matter"], "stroke-dasharray": "4 3", "stroke-width": 1.0 },
         label: "Dark-matter density", color: BAND_COLORS["dark-matter"] },
+      // ρ_Λ ≈ 5.96e-27 kg/m³ — vacuum energy density from the
+      // cosmological constant (Planck 2018). The lowest density
+      // anything in our universe averages over: cosmic voids and
+      // empty space asymptote here. Anything below this would mean
+      // negative dark-energy density.
+      { kind: "vacuum",  slope: 3,  intercept: densityIntercept(5.96e-27),
+        anchorX: 40, perpOffset: -10,
+        attrs: { stroke: "#5c8aa6", "stroke-dasharray": "2 4", "stroke-width": 1.0 },
+        label: "Vacuum (Λ)", color: "#5c8aa6" },
     ];
 
     const lineGroup = view.append("g").attr("class", "lines");
@@ -484,7 +508,9 @@
         .attr("transform", `translate(${px},${py})`)
         .attr("data-id", obj.id)
         .attr("data-band", obj.color_band)
-        .style("cursor", "pointer");
+        .attr("data-prominence", obj.prominence)
+        .style("cursor", "pointer")
+        .style("opacity", visibleAtZoom(obj.prominence, 1) ? 1 : 0);
       renderShape(g, obj, 4);
       g.append("title").text(obj.name);
       g.on("mouseenter", e => { showTooltip(e, obj); crossChartHover(obj.id); })
@@ -524,12 +550,16 @@
       yAxisG.call(yAxis.scale(yz)).call(g => g.selectAll(".domain, .tick line").attr("stroke", "#888"));
 
       // Counter-scale markers so the shapes don't balloon with zoom.
+      // Markers also fade by prominence — at base zoom only headline
+      // objects show, more reveal as you zoom in.
       const inv = 1 / k;
       ptNodes.each(function() {
         const node = d3.select(this);
         const t = node.attr("transform");
         const m = t.match(/translate\(([^)]+)\)/);
         if (m) node.attr("transform", `translate(${m[1]}) scale(${inv})`);
+        const p = +node.attr("data-prominence");
+        if (!isNaN(p)) node.style("opacity", visibleAtZoom(p, k) ? 1 : 0);
       });
 
       // Labels live OUTSIDE the zoomed view group, so we re-anchor them

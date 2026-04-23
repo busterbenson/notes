@@ -578,3 +578,254 @@ objects:
     formation: { time_ya: 1.38e10, epoch: planck-era }
     sources: [pdg-2024]
     blurb: "Planck mass at Planck length — the smallest, densest possible BH. Where GR + QM both break."
+
+# ─── Additional particles ─────────────────────────────────────────────
+  - id: neutron
+    name: Neutron (free)
+    category: particle
+    mass_kg: 1.6749e-27
+    radius_m: 8.0e-16
+    density_kg_m3: 7.8e17
+    color_band: nuclear
+    shape: circle
+    color: "#2d6db0"
+    formation: { time_ya: 1.38e10, epoch: quark-hadron-transition }
+    sources: [pdg-2024]
+    blurb: "Slightly heavier than proton. Free lifetime ~879 s."
+
+  - id: neutrino
+    name: Electron neutrino
+    category: particle
+    mass_kg: 1.07e-37
+    radius_m: 5.5e-7
+    density_kg_m3: 0
+    color_band: quantum
+    shape: circle
+    color: "#2d6db0"
+    formation: { time_ya: 1.38e10, epoch: leptogenesis }
+    sources: [pdg-2024]
+    blurb: "Mass <0.8 eV/c² (KATRIN 2022 upper bound). Compton wavelength shown as size."
+
+  - id: muon
+    name: Muon
+    category: particle
+    mass_kg: 1.883e-28
+    radius_m: 1.87e-15
+    density_kg_m3: 0
+    color_band: quantum
+    shape: circle
+    color: "#2d6db0"
+    formation: { time_ya: 1.38e10, epoch: lepton-era }
+    sources: [pdg-2024]
+    blurb: "207× heavier than the electron. Lifetime 2.2 µs."
+
+  - id: pion
+    name: Charged pion (π±)
+    category: particle
+    mass_kg: 2.488e-28
+    radius_m: 6.7e-16
+    density_kg_m3: 0
+    color_band: nuclear
+    shape: circle
+    color: "#2d6db0"
+    formation: { time_ya: 1.38e10, epoch: quark-hadron-transition }
+    sources: [pdg-2024]
+    blurb: "Lightest meson. Mediates the residual strong force between nucleons."
+
+  - id: higgs
+    name: Higgs boson
+    category: particle
+    mass_kg: 2.231e-25
+    radius_m: 1.58e-18
+    density_kg_m3: 0
+    color_band: quantum
+    shape: circle
+    color: "#2d6db0"
+    formation: { time_ya: 1.38e10, epoch: electroweak-transition }
+    sources: [pdg-2024]
+    blurb: "125 GeV. Discovered at the LHC in 2012; gives other particles mass via the Higgs field."
+
+  - id: top-quark
+    name: Top quark
+    category: particle
+    mass_kg: 3.075e-25
+    radius_m: 1.14e-18
+    density_kg_m3: 0
+    color_band: quantum
+    shape: circle
+    color: "#2d6db0"
+    formation: { time_ya: 1.38e10, epoch: quark-era }
+    sources: [pdg-2024]
+    blurb: "Heaviest known elementary particle. ~173 GeV/c²."
+
+# ─── Additional atoms ─────────────────────────────────────────────────
+  - id: carbon-atom
+    name: Carbon atom
+    category: atom
+    mass_kg: 1.994e-26
+    radius_m: 7.0e-11
+    density_kg_m3: 1.39e4
+    color_band: atomic
+    shape: square
+    color: "#3fa648"
+    formation: { time_ya: 1.36e10, epoch: stellar-nucleosynthesis }
+    sources: [pdg-2024]
+    blurb: "Forged in the triple-alpha process inside stars. Backbone of life."
+
+  - id: oxygen-atom
+    name: Oxygen atom
+    category: atom
+    mass_kg: 2.657e-26
+    radius_m: 6.0e-11
+    density_kg_m3: 2.94e4
+    color_band: atomic
+    shape: square
+    color: "#3fa648"
+    formation: { time_ya: 1.36e10, epoch: stellar-nucleosynthesis }
+    sources: [pdg-2024]
+    blurb: "Most abundant element in Earth's crust. From helium burning."
+
+  - id: iron-atom
+    name: Iron atom
+    category: atom
+    mass_kg: 9.273e-26
+    radius_m: 1.26e-10
+    density_kg_m3: 1.10e4
+    color_band: atomic
+    shape: square
+    color: "#3fa648"
+    formation: { time_ya: 4.6e9, epoch: type-ia-supernovae }
+    sources: [pdg-2024]
+    blurb: "Endpoint of stellar fusion — fusing iron consumes energy."
+
+  - id: gold-atom
+    name: Gold atom
+    category: atom
+    mass_kg: 3.27e-25
+    radius_m: 1.66e-10
+    density_kg_m3: 1.71e4
+    color_band: atomic
+    shape: square
+    color: "#3fa648"
+    formation: { time_ya: 4.6e9, epoch: r-process-nucleosynthesis }
+    sources: [pdg-2024]
+    blurb: "Forged primarily in neutron-star mergers."
+
+# ─── Macromolecules and cells ─────────────────────────────────────────
+  - id: ribosome
+    name: Ribosome
+    category: macromolecule
+    mass_kg: 4.5e-21
+    radius_m: 1.25e-8
+    density_kg_m3: 5.5e2
+    color_band: atomic
+    shape: cross
+    color: "#2d6db0"
+    formation: { time_ya: 3.7e9, epoch: abiogenesis }
+    sources: [milo-2010-bionumbers]
+    blurb: "Translates RNA into protein. ~25 nm; the smallest biological 'machine'."
+
+  - id: bacteriophage
+    name: Bacteriophage T4
+    category: virus
+    mass_kg: 8.5e-19
+    radius_m: 1.0e-7
+    density_kg_m3: 2.0e2
+    color_band: atomic
+    shape: square
+    color: "#2d6db0"
+    formation: { time_ya: 1e9, epoch: virus-evolution }
+    sources: [bar-on-2020-sars-cov-2]
+    blurb: "Iconic virus that infects E. coli. ~200 nm head-to-tail."
+
+  - id: e-coli
+    name: E. coli bacterium
+    category: cell
+    mass_kg: 1.0e-15
+    radius_m: 1.0e-6
+    density_kg_m3: 1.16e3
+    color_band: atomic
+    shape: cross
+    color: "#2d6db0"
+    formation: { time_ya: 3.5e9, epoch: prokaryote-evolution }
+    sources: [milo-2010-bionumbers]
+    blurb: "Workhorse bacterium. ~2 µm long, 1 µm wide, ~1 pg."
+
+  - id: red-blood-cell
+    name: Red blood cell
+    category: cell
+    mass_kg: 9.0e-14
+    radius_m: 4.0e-6
+    density_kg_m3: 1.10e3
+    color_band: atomic
+    shape: cross
+    color: "#2d6db0"
+    formation: { time_ya: 5e8, epoch: vertebrate-evolution }
+    sources: [milo-2010-bionumbers]
+    blurb: "Biconcave disc, 6-8 µm across. Carries oxygen via hemoglobin."
+
+# ─── Animals (filling the macroscopic gap) ────────────────────────────
+  - id: ant
+    name: Ant
+    category: organism
+    mass_kg: 5e-6
+    radius_m: 2.5e-3
+    density_kg_m3: 1.05e3
+    color_band: atomic
+    shape: cross
+    color: "#2d6db0"
+    formation: { time_ya: 1.4e8, epoch: cretaceous }
+    sources: [iucn-cetaceans]
+    blurb: "Typical worker ant. Density just above water."
+
+  - id: mouse
+    name: House mouse
+    category: organism
+    mass_kg: 2.5e-2
+    radius_m: 4e-2
+    density_kg_m3: 1.05e3
+    color_band: atomic
+    shape: cross
+    color: "#2d6db0"
+    formation: { time_ya: 1e7, epoch: rodent-evolution }
+    sources: [iucn-cetaceans]
+    blurb: "Mus musculus. ~25 g, 7-10 cm body length."
+
+  - id: cat
+    name: Domestic cat
+    category: organism
+    mass_kg: 4
+    radius_m: 0.25
+    density_kg_m3: 1.03e3
+    color_band: atomic
+    shape: cross
+    color: "#2d6db0"
+    formation: { time_ya: 1e4, epoch: domestication }
+    sources: [iucn-cetaceans]
+    blurb: "Felis catus. Median weight ~4 kg."
+
+  - id: elephant
+    name: African elephant
+    category: organism
+    mass_kg: 5e3
+    radius_m: 2.5
+    density_kg_m3: 1.05e3
+    color_band: atomic
+    shape: cross
+    color: "#2d6db0"
+    formation: { time_ya: 5e6, epoch: mammal-radiation }
+    sources: [iucn-cetaceans]
+    blurb: "Largest land animal. Loxodonta africana."
+
+  - id: redwood
+    name: Coast redwood
+    category: organism
+    mass_kg: 1.5e6
+    radius_m: 50
+    density_kg_m3: 4.5e2
+    color_band: atomic
+    shape: cross
+    color: "#2d6db0"
+    formation: { time_ya: 2e8, epoch: jurassic }
+    sources: [iucn-cetaceans]
+    blurb: "Tallest tree species. Sequoia sempervirens up to 115 m."
