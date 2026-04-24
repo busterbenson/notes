@@ -915,21 +915,28 @@
         }).on("mouseleave", () => { hideTooltip(); crossChartClear(); });
       });
 
-      // End-of-trajectory label (latest waypoint).
-      const last = s.points[s.points.length - 1];
-      if (last) {
+      // Label anchor — use the MIDDLE waypoint so labels spread along
+      // the trajectory instead of stacking at the right edge (where
+      // every trajectory ends at "today"). The middle is also usually
+      // where the trajectory is most readable / least crowded.
+      if (s.points.length > 0) {
+        const mid = s.points[Math.floor((s.points.length - 1) / 2)];
         labelGroup.append("text")
           .attr("data-id", s.id)
           .attr("data-prominence", s.prominence || 2)
-          .attr("data-x-from-now", last.tFromNow)
-          .attr("data-y-log", last.y_log)
-          .attr("x", xScale(last.tFromNow) + 8)
-          .attr("y", yScale(last.y_log) + 3)
+          .attr("data-x-from-now", mid.tFromNow)
+          .attr("data-y-log", mid.y_log)
+          .attr("x", xScale(mid.tFromNow) + 8)
+          .attr("y", yScale(mid.y_log) - 6)
           .attr("font-size", 10)
           .attr("font-weight", 600)
           .attr("fill", s.color || "#444")
           .style("opacity", visibleAtZoom(s.prominence || 2, 1) ? 1 : 0)
           .style("pointer-events", "none")
+          .style("paint-order", "stroke fill")
+          .style("stroke", "#fffceb")
+          .style("stroke-width", "3px")
+          .style("stroke-linejoin", "round")
           .text(s.name);
       }
 
@@ -971,7 +978,7 @@
         const node = d3.select(this);
         const xVal = +node.attr("data-x-from-now");
         const yVal = +node.attr("data-y-log");
-        node.attr("x", xz(xVal) + 8).attr("y", yz(yVal) + 3);
+        node.attr("x", xz(xVal) + 8).attr("y", yz(yVal) - 6);
         const p = +node.attr("data-prominence");
         node.style("opacity", visibleAtZoom(p, k) ? 1 : 0);
       });
