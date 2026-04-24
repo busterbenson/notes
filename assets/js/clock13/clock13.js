@@ -45,6 +45,31 @@ var ClockApp = (function ($, moment, Config, Astro, Render) {
     state.debug ? $('#debug').show() : $('#debug').hide();
     state.dataControls ? $('#moonth-data').show() : $('#moonth-data').hide();
 
+    // ─── Initial-time URL params ────────────────────────────────
+    // ?at=ISO8601    →  show the sky at that exact moment
+    // ?at=sunset     →  show the sky at today's sunset
+    // ?at=sunrise    →  ...sunrise
+    // ?at=noon       →  ...solar noon (12:00 local)
+    // Used by the zodiacal-morning skill to embed a snapshot of
+    // tonight's sky in the daily report; also handy for scheduling
+    // (e.g. "what was the sky doing at the moment my kid was born").
+    try {
+      var sp = new URLSearchParams(window.location.search);
+      var atParam = sp.get('at');
+      if (atParam) {
+        var requested = parseAtParam(atParam);
+        if (requested) {
+          state.initialNow = requested;
+          // Preset the input so the visible value matches the rendered sky.
+          $('#date-and-time')
+            .data('rawDate', requested)
+            .val(formatDateForInput(requested));
+        }
+      }
+    } catch (e) {
+      // ignore URL-param errors, fall through to live time
+    }
+
     // Wire up events
     wireEvents();
 
@@ -56,6 +81,30 @@ var ClockApp = (function ($, moment, Config, Astro, Render) {
       }
     });
     requestUpdate();
+  }
+
+  // Parse an ?at= param into a Date. Accepts ISO 8601 timestamps OR the
+  // literal strings "sunset" / "sunrise" / "noon" (resolved against
+  // today's local date). For sunset/sunrise we use SunCalc with the
+  // user's geolocation later — at parse time we just stash the literal
+  // and let requestUpdate handle resolution after location fixes in.
+  function parseAtParam(raw) {
+    raw = String(raw).trim();
+    var keywords = ['sunset', 'sunrise', 'noon'];
+    if (keywords.indexOf(raw.toLowerCase()) !== -1) {
+      state.initialAtKeyword = raw.toLowerCase();
+      return new Date(); // placeholder; replaced after location resolves
+    }
+    var d = new Date(raw);
+    if (!isNaN(d.getTime())) return d;
+    return null;
+  }
+
+  function formatDateForInput(d) {
+    // Match the input's display format: "YYYY-MM-DD HH:MM" local
+    var pad = function (n) { return String(n).padStart(2, '0'); };
+    return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate())
+      + ' ' + pad(d.getHours()) + ':' + pad(d.getMinutes());
   }
 
   // ─── Event Wiring ────────────────────────────────────────────────
@@ -186,6 +235,31 @@ var ClockApp = (function ($, moment, Config, Astro, Render) {
 
   // ─── Configure Time ──────────────────────────────────────────────
   function configureTime() {
+    // First-call resolution of any ?at= URL param. We do this here
+    // (not init) because sunrise/sunset/noon need state.seasonalData
+    // populated by the location/data fetch upstream.
+    if (state.initialNow && !state.initialResolved) {
+      if (state.initialAtKeyword && state.seasonalData) {
+        var s = state.seasonalData;
+        if (state.initialAtKeyword === 'sunset' && s.sunset) {
+          state.now = new Date(s.sunset.getTime());
+        } else if (state.initialAtKeyword === 'sunrise' && s.sunrise) {
+          state.now = new Date(s.sunrise.getTime());
+        } else if (state.initialAtKeyword === 'noon') {
+          var n = new Date();
+          n.setHours(12, 0, 0, 0);
+          state.now = n;
+        }
+      } else {
+        state.now = state.initialNow;
+      }
+      state.timeInputType = 'manual';
+      state.initialResolved = true;
+      $('#date-and-time')
+        .data('rawDate', state.now)
+        .val(formatDateForInput(state.now));
+    }
+
     if (state.timeInputType === 'manual') {
       // Prefer the already-set state.now (from shiftTime / sunrise / sunset click),
       // then fall back to the stored raw date, then try parsing the input.
