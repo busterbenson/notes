@@ -235,29 +235,48 @@ var ClockApp = (function ($, moment, Config, Astro, Render) {
 
   // ─── Configure Time ──────────────────────────────────────────────
   function configureTime() {
-    // First-call resolution of any ?at= URL param. We do this here
-    // (not init) because sunrise/sunset/noon need state.seasonalData
-    // populated by the location/data fetch upstream.
-    if (state.initialNow && !state.initialResolved) {
-      if (state.initialAtKeyword && state.seasonalData) {
+    // First-call resolution of any ?at= URL param. ISO timestamps
+    // resolve immediately. sunrise/sunset/noon need state.seasonalData
+    // populated by the location/data fetch upstream — that arrives
+    // a render cycle or two after init(). For those, we let
+    // configureTime run once with current time as a placeholder, then
+    // the requestUpdate loop calls back here and we swap to the real
+    // resolved time. Marker (initialResolved) prevents the swap from
+    // happening on every tick once it has succeeded.
+    if ((state.initialNow || state.initialAtKeyword) && !state.initialResolved) {
+      var resolved = null;
+      if (state.initialAtKeyword) {
         var s = state.seasonalData;
-        if (state.initialAtKeyword === 'sunset' && s.sunset) {
-          state.now = new Date(s.sunset.getTime());
-        } else if (state.initialAtKeyword === 'sunrise' && s.sunrise) {
-          state.now = new Date(s.sunrise.getTime());
+        if (state.initialAtKeyword === 'sunset' && s && s.sunset) {
+          resolved = new Date(s.sunset.getTime());
+        } else if (state.initialAtKeyword === 'sunrise' && s && s.sunrise) {
+          resolved = new Date(s.sunrise.getTime());
         } else if (state.initialAtKeyword === 'noon') {
-          var n = new Date();
-          n.setHours(12, 0, 0, 0);
-          state.now = n;
+          resolved = new Date();
+          resolved.setHours(12, 0, 0, 0);
         }
-      } else {
-        state.now = state.initialNow;
+      } else if (state.initialNow) {
+        resolved = state.initialNow;
       }
-      state.timeInputType = 'manual';
-      state.initialResolved = true;
-      $('#date-and-time')
-        .data('rawDate', state.now)
-        .val(formatDateForInput(state.now));
+      if (resolved) {
+        state.now = resolved;
+        state.timeInputType = 'manual';
+        state.initialResolved = true;
+        $('#date-and-time')
+          .data('rawDate', state.now)
+          .val(formatDateForInput(state.now));
+      }
+      // If not resolved (sunset/sunrise still waiting on seasonalData),
+      // fall through and let the rest of configureTime run with live
+      // time. We'll retry resolution on the next tick. To force that
+      // retry we schedule a re-render once the data arrives:
+      if (!resolved && state.initialAtKeyword && !state.initialRetryScheduled) {
+        state.initialRetryScheduled = true;
+        setTimeout(function () {
+          state.initialRetryScheduled = false;
+          requestUpdate();
+        }, 800);
+      }
     }
 
     if (state.timeInputType === 'manual') {
