@@ -25,7 +25,7 @@ systems:
     name: Life on Earth (biosphere)
     category: biology
     color: "#3fa648"
-    prominence: 1
+    prominence: 1   # keep — anchor of the chart's biology story
     blurb: "Total mass of all living things on Earth — bacteria, plants, fungi, animals, the lot. Today ≈ 1.1 × 10¹⁵ kg, ~85% of which is plants."
     trajectory:
       - { time_ya: 3.7e9,  mass_kg: 1.0e6,  label: "First cells (LUCA's descendants)" }
@@ -70,7 +70,7 @@ systems:
     name: Humans (Homo sapiens)
     category: people
     color: "#2d6db0"
-    prominence: 1
+    prominence: 1   # keep — most common entry point for the chart
     blurb: "Total wet mass of all living humans. Today ≈ 5 × 10¹¹ kg, doubled in your lifetime, projected to plateau around 10 billion mid-century."
     trajectory:
       - { time_ya: 300e3,  mass_kg: 5.0e5,  label: "Anatomically modern humans appear (~10,000 individuals)" }

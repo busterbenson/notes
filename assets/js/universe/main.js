@@ -745,8 +745,11 @@
       .attr("preserveAspectRatio", "xMidYMid meet")
       .style("width", "100%").style("height", "100%");
 
+    // NOW anchors the RIGHT edge — we can't know what lies past it,
+    // and keeping the past-only domain doubles the horizontal space
+    // available for trajectories that actually exist.
     const PAST_LIMIT_S   = -UNIVERSE_AGE_S;
-    const FUTURE_LIMIT_S = UNIVERSE_AGE_S * 2.0;
+    const FUTURE_LIMIT_S = 0;
     // Mass: 1 kg → 10⁵³ kg. log10 axis.
     const yLogDomain = [0, 53];
 
@@ -771,14 +774,12 @@
 
     // ── Tick anchors (humanized labels) ────────────────────────────────
     const yearS = SECONDS_PER_YEAR;
+    // Past-only ticks (now sits at the right edge).
     const anchorTicks = [
       -1e10 * yearS, -1e9 * yearS, -1e8 * yearS, -1e7 * yearS,
       -1e6 * yearS, -1e5 * yearS, -1e4 * yearS, -1e3 * yearS,
       -100 * yearS, -10 * yearS, -1 * yearS,
-      -86400 * 30, -86400, -3600, 0, 3600, 86400, 86400 * 30,
-      1 * yearS, 10 * yearS, 100 * yearS, 1e3 * yearS,
-      1e4 * yearS, 1e5 * yearS, 1e6 * yearS, 1e7 * yearS,
-      1e8 * yearS, 1e9 * yearS,
+      -86400 * 30, -86400, -3600, -60, 0,
     ];
     const visibleTicks = anchorTicks.filter(t => t >= PAST_LIMIT_S && t <= FUTURE_LIMIT_S);
     const gridY = d3.range(yLogDomain[0], yLogDomain[1] + 1, 5);
@@ -798,7 +799,7 @@
     }
     drawGrid();
 
-    // ── Era markers (familiar moments) ──────────────────────────────────
+    // ── Era markers (familiar moments — past only since now is the edge) ──
     const eras = [
       { tFromNow: -UNIVERSE_AGE_S,            label: "Big Bang" },
       { tFromNow: -(4.6e9 * yearS),           label: "Solar system" },
@@ -807,7 +808,6 @@
       { tFromNow: -(66e6 * yearS),            label: "Dinosaurs end" },
       { tFromNow: -(10e3 * yearS),            label: "Agriculture" },
       { tFromNow: 0,                           label: "Now", emphasis: true },
-      { tFromNow:  (5e9 * yearS),             label: "Sun → red giant" },
     ];
     const eraGroup = view.append("g").attr("class", "eras");
     eras.forEach(e => {
@@ -841,7 +841,7 @@
       .attr("x", innerW / 2).attr("y", innerH + 40)
       .attr("text-anchor", "middle").attr("fill", "#444")
       .attr("font-size", 12).attr("font-weight", 600)
-      .text("←  past  ·  time from now (symmetric log, 0 = present)  ·  future  →");
+      .text("time before now (symmetric log)  →  now");
     root.append("text")
       .attr("transform", "rotate(-90)")
       .attr("x", -innerH / 2).attr("y", -50)
@@ -852,12 +852,17 @@
     // ── System trajectories ────────────────────────────────────────────
     const systems = (data.systems || []).map(s => ({
       ...s,
-      points: (s.trajectory || []).map(w => ({
-        ...w,
-        tFromNow: -w.time_ya * SECONDS_PER_YEAR,
-        y_log: Math.log10(Math.max(w.mass_kg, 1)),
-      })).sort((a, b) => a.tFromNow - b.tFromNow),
-    }));
+      points: (s.trajectory || [])
+        .map(w => ({
+          ...w,
+          tFromNow: -w.time_ya * SECONDS_PER_YEAR,
+          y_log: Math.log10(Math.max(w.mass_kg, 1)),
+        }))
+        // NOW is the right edge — drop future projections so they
+        // don't pull labels off-screen or imply we know the future.
+        .filter(p => p.tFromNow <= 0)
+        .sort((a, b) => a.tFromNow - b.tFromNow),
+    })).filter(s => s.points.length > 0);
 
     const trajGroup = view.append("g").attr("class", "systems");
     const labelGroup = root.append("g").attr("class", "system-labels")
@@ -1212,7 +1217,7 @@
       .attr("x", innerW / 2).attr("y", innerH + 40)
       .attr("text-anchor", "middle").attr("fill", "#444")
       .attr("font-size", 12).attr("font-weight", 600)
-      .text("←  past  ·  time from now (symmetric log, 0 = present)  ·  future  →");
+      .text("time before now (symmetric log)  →  now");
     root.append("text")
       .attr("transform", "rotate(-90)")
       .attr("x", -innerH / 2).attr("y", -46)
