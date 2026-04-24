@@ -722,11 +722,25 @@
       .attr("preserveAspectRatio", "xMidYMid meet")
       .style("width", "100%").style("height", "100%");
 
-    // x = log10(seconds since Big Bang)
-    const xLogDomain = [-44, 18.5]; // Planck time → ~3× universe age (room for "future")
+    // X-AXIS REWRITE 2026-04-23 — symmetric log centered on NOW.
+    //
+    // The eye lives in the present. Everything important happens in the
+    // last few decades; everything ancient compresses into the leftmost
+    // sliver. d3.scaleSymlog with constant=1 gives a linear vicinity of
+    // ±1 second around now and a logarithmic stretch in both directions
+    // outside that. The Big Bang (-4.355e17 s) sits at the far left;
+    // the heat death of the universe (way out in the future) sits at
+    // the far right. "1 day ago" and "1 day from now" are equidistant
+    // from center. Most pixels are spent on the most recent and most
+    // imminent moments.
+    const PAST_LIMIT_S   = -UNIVERSE_AGE_S;        // Big Bang, ~ -4.355e17 s
+    const FUTURE_LIMIT_S = UNIVERSE_AGE_S * 2.0;   // ~ +8.7e17 s, far enough for stellar futures
     const yLogDomain = [-30, 100];
 
-    const xScale = d3.scaleLinear().domain(xLogDomain).range([0, innerW]);
+    const xScale = d3.scaleSymlog()
+      .domain([PAST_LIMIT_S, FUTURE_LIMIT_S])
+      .range([0, innerW])
+      .constant(1);  // linear within ±1s around now, log outside
     const yScale = d3.scaleLinear().domain(yLogDomain).range([innerH, 0]);
 
     const root = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
@@ -752,48 +766,66 @@
         .attr("fill", b.color).attr("opacity", b.op);
     });
 
-    // ── Gridlines ───────────────────────────────────────────────────────
-    const gridX = d3.range(Math.ceil(xLogDomain[0] / 4) * 4, xLogDomain[1] + 1, 4);
+    // ── Tick values ──────────────────────────────────────────────────────
+    // Hand-picked symmetric anchors so labels read as familiar units
+    // ("1 yr ago", "1 yr from now") rather than scientific notation.
+    const yearS = SECONDS_PER_YEAR;
+    const anchorTicks = [
+      -1e10 * yearS, -1e9 * yearS, -1e8 * yearS, -1e7 * yearS,
+      -1e6 * yearS, -1e5 * yearS, -1e4 * yearS, -1e3 * yearS,
+      -100 * yearS, -10 * yearS, -1 * yearS,
+      -86400 * 30, -86400, -3600, -60, -1,
+      0,
+      1, 60, 3600, 86400, 86400 * 30,
+      1 * yearS, 10 * yearS, 100 * yearS, 1e3 * yearS,
+      1e4 * yearS, 1e5 * yearS, 1e6 * yearS, 1e7 * yearS,
+      1e8 * yearS, 1e9 * yearS,
+    ];
+    const visibleTicks = anchorTicks.filter(t => t >= PAST_LIMIT_S && t <= FUTURE_LIMIT_S);
+
+    // Gridlines at the same anchor positions.
     const gridY = d3.range(yLogDomain[0], yLogDomain[1] + 1, 10);
-    root.append("g").selectAll("line.gx").data(gridX).join("line")
+    root.append("g").selectAll("line.gx").data(visibleTicks).join("line")
       .attr("x1", d => xScale(d)).attr("x2", d => xScale(d))
       .attr("y1", 0).attr("y2", innerH)
-      .attr("stroke", "#e6e0c7").attr("stroke-width", 0.5);
+      .attr("stroke", d => d === 0 ? "#888" : "#e6e0c7")
+      .attr("stroke-width", d => d === 0 ? 1 : 0.5);
     root.append("g").selectAll("line.gy").data(gridY).join("line")
       .attr("x1", 0).attr("x2", innerW)
       .attr("y1", d => yScale(d)).attr("y2", d => yScale(d))
       .attr("stroke", "#e6e0c7").attr("stroke-width", 0.5);
 
-    // ── Era markers (vertical lines at well-known cosmic times) ─────────
-    const NOW_LOG = Math.log10(UNIVERSE_AGE_S);
+    // ── Era markers (well-known moments, plotted at their offset from NOW) ──
     const eras = [
-      { logT: -43.27, label: "Planck",       short: "tₚ" },
-      { logT: -32,    label: "Inflation end" },
-      { logT: -5,     label: "QCD" },
-      { logT: 2.26,   label: "Nucleosynth." },
-      { logT: 13.08,  label: "Recombination" },
-      { logT: 15.80,  label: "First stars" },
-      { logT: Math.log10(UNIVERSE_AGE_S - 4.6e9 * SECONDS_PER_YEAR), label: "Solar system" },
-      { logT: NOW_LOG, label: "Now", emphasis: true },
+      { tFromNow: -UNIVERSE_AGE_S,                          label: "Big Bang" },
+      { tFromNow: -(1.36e10 * yearS),                       label: "First stars" },
+      { tFromNow: -(4.6e9 * yearS),                         label: "Solar system" },
+      { tFromNow: -(3.5e9 * yearS),                         label: "Life begins" },
+      { tFromNow: -(6.6e7 * yearS),                         label: "Dinosaurs end" },
+      { tFromNow: -(3e5 * yearS),                           label: "Modern humans" },
+      { tFromNow: 0,                                        label: "Now", emphasis: true },
+      { tFromNow:  (5e9 * yearS),                           label: "Sun → red giant" },
+      { tFromNow:  (1e14 * yearS),                          label: "Last stars die" },
     ];
-    eras.forEach((e, i) => {
-      const x = xScale(e.logT);
-      if (x < 0 || x > innerW) return;
+    eras.forEach(e => {
+      if (e.tFromNow < PAST_LIMIT_S || e.tFromNow > FUTURE_LIMIT_S) return;
+      const x = xScale(e.tFromNow);
       root.append("line")
         .attr("x1", x).attr("x2", x).attr("y1", 0).attr("y2", innerH)
-        .attr("stroke", e.emphasis ? "#888" : "#cfc8b3")
+        .attr("stroke", e.emphasis ? "#444" : "#cfc8b3")
         .attr("stroke-dasharray", e.emphasis ? null : "3 3")
-        .attr("stroke-width", e.emphasis ? 1.0 : 0.6);
+        .attr("stroke-width", e.emphasis ? 1.4 : 0.6);
       root.append("text").attr("x", x).attr("y", -8)
         .attr("text-anchor", "middle").attr("font-size", 9)
         .attr("fill", e.emphasis ? "#444" : "#888")
+        .style("font-weight", e.emphasis ? 700 : 400)
         .text(e.label);
     });
 
     // ── Axes ────────────────────────────────────────────────────────────
     const xAxis = d3.axisBottom(xScale)
-      .tickValues(gridX)
-      .tickFormat(d => formatLogSeconds(d));
+      .tickValues(visibleTicks)
+      .tickFormat(d => formatTimeFromNow(d));
     const yAxis = d3.axisLeft(yScale)
       .tickValues(gridY)
       .tickFormat(d => `10${supScript(d)}`);
@@ -807,7 +839,7 @@
       .attr("x", innerW / 2).attr("y", innerH + 40)
       .attr("text-anchor", "middle").attr("fill", "#444")
       .attr("font-size", 12).attr("font-weight", 600)
-      .text("time since Big Bang  →  log₁₀(t / s)");
+      .text("←  past  ·  time from now (symmetric log, 0 = present)  ·  future  →");
     root.append("text")
       .attr("transform", "rotate(-90)")
       .attr("x", -innerH / 2).attr("y", -46)
@@ -816,19 +848,24 @@
       .text("density  →  log₁₀(ρ / kg·m⁻³)");
 
     // ── Universe trace ──────────────────────────────────────────────────
+    // Each waypoint's x is "seconds from now", computed from its
+    // time_after_bb_s. Anything pre-recombination (380 kyr after BB)
+    // sits at essentially -universe_age within float precision and
+    // gets stacked at the leftmost edge — that's accepted. The eye
+    // wants resolution on the recent and the imminent, not on the
+    // first picosecond.
     const universeObj = data.objects.find(o => o.id === "observable-universe");
     if (universeObj && universeObj.evolution) {
       const evo = universeObj.evolution
         .map(d => ({
           ...d,
-          x_log_t: Math.log10(Math.max(d.time_after_bb_s, PLANCK_TIME_S)),
+          tFromNow: -(UNIVERSE_AGE_S - d.time_after_bb_s),
           y_log_d: Math.log10(d.density_kg_m3),
         }))
-        .sort((a, b) => a.x_log_t - b.x_log_t);
+        .sort((a, b) => a.tFromNow - b.tFromNow);
 
-      // Background "shadow" stroke for legibility
       const lineGen = d3.line()
-        .x(d => xScale(d.x_log_t))
+        .x(d => xScale(d.tFromNow))
         .y(d => yScale(d.y_log_d))
         .curve(d3.curveMonotoneX);
 
@@ -847,9 +884,6 @@
         .attr("stroke-linecap", "round")
         .attr("d", lineGen);
 
-      // Per-segment colored overlays — paint each segment in the band
-      // color of its starting waypoint, so the trace bleeds from Planck
-      // through nuclear → atomic → cosmic.
       for (let i = 0; i < evo.length - 1; i++) {
         const a = evo[i], b = evo[i + 1];
         const segColor = bandColorForDensity(a.density_kg_m3);
@@ -863,10 +897,9 @@
           .attr("d", lineGen);
       }
 
-      // Waypoint dots
       root.selectAll("circle.uni-evo").data(evo).join("circle")
         .attr("class", "uni-evo")
-        .attr("cx", d => xScale(d.x_log_t))
+        .attr("cx", d => xScale(d.tFromNow))
         .attr("cy", d => yScale(d.y_log_d))
         .attr("r", 4)
         .attr("fill", d => bandColorForDensity(d.density_kg_m3))
@@ -886,18 +919,17 @@
         .on("mouseleave", hideTooltip);
     }
 
-    // ── All other objects ──────────────────────────────────────────────
+    // ── All other objects (formed in the past, plotted at -age) ────────
     data.objects.forEach(obj => {
       if (obj.id === "observable-universe") return;
-      if (!obj.formation || obj.formation.time_after_bb_s == null) return;
-      const t = obj.formation.time_after_bb_s;
+      if (!obj.formation || obj.formation.time_seconds_ago == null) return;
+      const tFromNow = -obj.formation.time_seconds_ago;  // negative for past
       const d = obj.density_kg_m3;
-      if (d <= 0 || t <= 0) return;
-      const x_log = Math.log10(Math.max(t, PLANCK_TIME_S));
+      if (d <= 0) return;
+      if (tFromNow < PAST_LIMIT_S || tFromNow > FUTURE_LIMIT_S) return;
       const y_log = Math.log10(d);
-      if (x_log < xLogDomain[0] || x_log > xLogDomain[1]) return;
       if (y_log < yLogDomain[0] || y_log > yLogDomain[1]) return;
-      const px = xScale(x_log);
+      const px = xScale(tFromNow);
       const py = yScale(y_log);
       const g = root.append("g")
         .attr("transform", `translate(${px},${py})`)
@@ -908,7 +940,6 @@
        .on("mousemove", moveTooltip)
        .on("mouseleave", () => { hideTooltip(); crossChartClear(); });
 
-      // Inline label
       root.append("text")
         .attr("x", px + 6).attr("y", py + 3)
         .attr("font-size", 9).attr("fill", "#444")
@@ -925,6 +956,27 @@
     });
     legendEl.append("span").attr("class", "uni-chip")
       .html(`<span class="uni-chip-dot" style="background:#3a3a3a"></span>Universe trace`);
+  }
+
+  // Format a "seconds from now" tick into a human-readable label.
+  // 0 = "now", negatives are past ("1 yr ago"), positives are future
+  // ("1 yr from now"). Picks the largest unit that keeps the number
+  // tidy (60 → "1 min", 3600 → "1 hr", etc.).
+  function formatTimeFromNow(s) {
+    if (s === 0) return "now";
+    const past = s < 0;
+    const a = Math.abs(s);
+    let n, unit;
+    if (a >= SECONDS_PER_YEAR * 1e9) { n = a / (SECONDS_PER_YEAR * 1e9); unit = "Gyr"; }
+    else if (a >= SECONDS_PER_YEAR * 1e6) { n = a / (SECONDS_PER_YEAR * 1e6); unit = "Myr"; }
+    else if (a >= SECONDS_PER_YEAR * 1e3) { n = a / (SECONDS_PER_YEAR * 1e3); unit = "kyr"; }
+    else if (a >= SECONDS_PER_YEAR) { n = a / SECONDS_PER_YEAR; unit = "yr"; }
+    else if (a >= 86400) { n = a / 86400; unit = "d"; }
+    else if (a >= 3600)  { n = a / 3600; unit = "hr"; }
+    else if (a >= 60)    { n = a / 60; unit = "min"; }
+    else                 { n = a; unit = "s"; }
+    const tidy = n >= 100 ? n.toFixed(0) : (n >= 10 ? n.toFixed(0) : n.toFixed(0));
+    return past ? `${tidy} ${unit} ago` : `${tidy} ${unit} from now`;
   }
 
   // Format a log10(seconds) tick into an intuitive label like "1 s",
