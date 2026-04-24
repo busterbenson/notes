@@ -197,6 +197,90 @@ systems:
       - { time_ya: 0,    mass_kg: 1.4e12, label: "Today — ~6.8B active smartphones, ~200 g each" }
     sources: [icann-stats]
 
+  - id: languages
+    name: Spoken languages (extant)
+    category: people
+    color: "#aa9d3a"
+    prominence: 3
+    blurb: "Mass shown is speakers × 60 kg of 'language carriers'. Peak diversity ~10 kya at maybe 20,000 languages; today ~7,100 and dropping ~1 every 2 weeks. The wave-and-collapse pattern is the chart's saddest curve."
+    trajectory:
+      - { time_ya: 50000, mass_kg: 1.0e7,  label: "Modern syntactic language emerges" }
+      - { time_ya: 10000, mass_kg: 5.0e8,  label: "~20,000 languages spoken at peak diversity" }
+      - { time_ya: 500,   mass_kg: 3.0e10, label: "Colonization era — many languages start dying" }
+      - { time_ya: 125,   mass_kg: 8.0e10, label: "1900 — ~10,000 languages, dominant ones standardizing via print" }
+      - { time_ya: 0,     mass_kg: 4.5e11, label: "Today — ~7,100 languages, half projected gone by 2100" }
+    sources: [ethnologue]
+
+  - id: scientific-papers
+    name: Scientific papers (cumulative)
+    category: technology
+    color: "#446a8c"
+    prominence: 3
+    blurb: "Royal Society 1665 to today's ~3 million new papers/year. Mass-as-paper: average 8-page paper ≈ 50 g. Cumulative ≈ 4 × 10⁹ kg of physical paper if anyone printed them all out (almost no one does anymore)."
+    trajectory:
+      - { time_ya: 360, mass_kg: 1.0e1,  label: "1665 — Phil. Trans. of the Royal Society launches" }
+      - { time_ya: 200, mass_kg: 1.0e5,  label: "1825 — ~3,000/yr published" }
+      - { time_ya: 75,  mass_kg: 5.0e7,  label: "1950 — post-war science boom begins" }
+      - { time_ya: 25,  mass_kg: 5.0e8,  label: "2000 — ~1M papers/yr" }
+      - { time_ya: 0,   mass_kg: 4.0e9,  label: "Today — ~3M/yr, ~80M cumulative" }
+    sources: [bornmann-2015]
+
+  - id: vaccines
+    name: Vaccines administered (cumulative)
+    category: technology
+    color: "#3fb59a"
+    prominence: 3
+    blurb: "Edward Jenner's 1796 cowpox-against-smallpox experiment to today's ~16 billion COVID doses alone. Cumulative ≈ 8 × 10¹⁰ doses (mass-as-vials: ~5 g each, so ~4 × 10⁸ kg). Among the highest-leverage interventions per kilogram in history."
+    trajectory:
+      - { time_ya: 230, mass_kg: 1.0e-2, label: "1796 — Jenner's first cowpox inoculation" }
+      - { time_ya: 130, mass_kg: 1.0e2,  label: "1896 — Pasteur's vaccine institute era" }
+      - { time_ya: 75,  mass_kg: 1.0e5,  label: "1950 — polio + measles + childhood schedule" }
+      - { time_ya: 25,  mass_kg: 1.0e7,  label: "2000 — global immunization programs scale" }
+      - { time_ya: 0,   mass_kg: 4.0e8,  label: "Today — ~80B doses cumulative incl. COVID era" }
+    sources: [our-world-in-data]
+
+  - id: recorded-music
+    name: Recorded music (cumulative)
+    category: technology
+    color: "#c47a4a"
+    prominence: 4
+    blurb: "From Edison's wax cylinder in 1877 to today's ~200M tracks on streaming platforms. Mass-as-data: average 4 MB per track, ~10⁹ kg of equivalent vinyl if pressed. The point isn't the mass but the explosion: zero to billions of songs in 150 years."
+    trajectory:
+      - { time_ya: 149, mass_kg: 1.0e-1, label: "1877 — Edison phonograph; first recording exists" }
+      - { time_ya: 100, mass_kg: 1.0e5,  label: "1926 — electric recording; record industry forms" }
+      - { time_ya: 75,  mass_kg: 1.0e7,  label: "1950 — vinyl LP era + radio scales catalog" }
+      - { time_ya: 25,  mass_kg: 5.0e8,  label: "2000 — ~10M tracks digitized; Napster + iTunes" }
+      - { time_ya: 0,   mass_kg: 1.0e10, label: "Today — ~200M tracks across streaming platforms" }
+    sources: [riaa]
+
+  - id: photos-taken
+    name: Photographs taken globally (cumulative)
+    category: technology
+    color: "#7b4ec4"
+    prominence: 4
+    blurb: "Daguerreotype 1839 → today's ~1.5 trillion photos taken per year. Cumulative ~13 trillion photos, almost all digital. If each were a printed 4×6 (~10 g), the total would be ~10¹¹ kg — about a tenth the mass of all humans alive."
+    trajectory:
+      - { time_ya: 187, mass_kg: 1.0e-2, label: "1839 — Daguerre's first photograph" }
+      - { time_ya: 125, mass_kg: 1.0e6,  label: "1900 — Kodak Brownie democratizes photography" }
+      - { time_ya: 25,  mass_kg: 1.0e10, label: "2000 — ~80B photos/yr; digital cameras + film overlap" }
+      - { time_ya: 15,  mass_kg: 3.0e10, label: "2010 — smartphones reset what 'taking a photo' means" }
+      - { time_ya: 0,   mass_kg: 1.3e11, label: "Today — ~1.5T photos taken/yr; ~13T cumulative" }
+    sources: [keypoint-intelligence]
+
+  - id: bitcoin
+    name: Bitcoin mining hardware
+    category: technology
+    color: "#e8a83a"
+    prominence: 4
+    blurb: "From Satoshi's CPU mining in Jan 2009 to today's ASIC fleet. ~10⁹ kg of dedicated mining hardware globally. The energy footprint (~150 TWh/yr) is what gets attention; the physical hardware mass is its own story of how fast specialized silicon can reshape a power grid."
+    trajectory:
+      - { time_ya: 17,  mass_kg: 1.0e1,  label: "Jan 2009 — Genesis block; CPU mining only" }
+      - { time_ya: 14,  mass_kg: 1.0e3,  label: "2012 — first GPU farms" }
+      - { time_ya: 12,  mass_kg: 1.0e5,  label: "2014 — ASIC era begins; Bitmain founded" }
+      - { time_ya: 8,   mass_kg: 1.0e7,  label: "2018 — first big halving cycles, hardware scales" }
+      - { time_ya: 0,   mass_kg: 1.0e9,  label: "Today — ~5M ASICs deployed, ~200 g each" }
+    sources: [cambridge-cbeci]
+
   - id: wild-mammals
     name: Wild mammals
     category: biology
