@@ -115,6 +115,12 @@
     return 4;
   }
 
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, c => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+    })[c]);
+  }
+
   function visibleAtZoom(prominence, k) {
     if (k >= 8) return true;
     if (k >= 4) return prominence <= 3;
@@ -708,6 +714,363 @@
   // range [-30, +100]. Soft horizontal bands mark cosmic / atomic /
   // nuclear / trans-Planckian regimes, in the same colors as Chart 1.
   // ─────────────────────────────────────────────────────────────────────
+  // ─────────────────────────────────────────────────────────────────────
+  // CHART 2 (v15) — Systems × Time
+  //
+  // Replaces the previous Density × Time chart. Each "system" is a
+  // trajectory of (time_from_now, total_system_mass) waypoints —
+  // life on Earth, humans, chickens, cities, AI, etc. The point is
+  // not where a single object SITS at its birth moment but how a
+  // SYSTEM grows / shrinks through deep time.
+  //
+  // Y axis: log total mass in kg, range ~10⁰ (1 kg) to 10⁵³ (matter
+  //   content of the observable universe).
+  // X axis: symmetric log seconds from now, centered on present.
+  //
+  // Interactive: zoom + pan (mirrors Chart 1), hover trajectory to
+  // spotlight, click waypoint for milestone tooltip.
+  // ─────────────────────────────────────────────────────────────────────
+  function buildSystemsChart() {
+    const containerEl = document.getElementById("chart-systems-time");
+    if (!containerEl) return;
+    const W = containerEl.clientWidth;
+    const H = containerEl.clientHeight;
+    const margin = { top: 28, right: 24, bottom: 56, left: 64 };
+    const innerW = W - margin.left - margin.right;
+    const innerH = H - margin.top - margin.bottom;
+
+    const svg = d3.select(containerEl).append("svg")
+      .attr("viewBox", `0 0 ${W} ${H}`)
+      .attr("preserveAspectRatio", "xMidYMid meet")
+      .style("width", "100%").style("height", "100%");
+
+    const PAST_LIMIT_S   = -UNIVERSE_AGE_S;
+    const FUTURE_LIMIT_S = UNIVERSE_AGE_S * 2.0;
+    // Mass: 1 kg → 10⁵³ kg. log10 axis.
+    const yLogDomain = [0, 53];
+
+    const xScale = d3.scaleSymlog()
+      .domain([PAST_LIMIT_S, FUTURE_LIMIT_S])
+      .range([0, innerW])
+      .constant(1);
+    const yScale = d3.scaleLinear().domain(yLogDomain).range([innerH, 0]);
+
+    const root = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+    root.append("rect")
+      .attr("width", innerW).attr("height", innerH)
+      .attr("fill", "#fdfcf6").attr("stroke", "#cdc8b6");
+
+    const clipId = "uni-clip-systems-time";
+    svg.append("defs").append("clipPath").attr("id", clipId)
+      .append("rect").attr("width", innerW).attr("height", innerH);
+    const view = root.append("g")
+      .attr("clip-path", `url(#${clipId})`)
+      .append("g")
+      .attr("class", "uni-view");
+
+    // ── Tick anchors (humanized labels) ────────────────────────────────
+    const yearS = SECONDS_PER_YEAR;
+    const anchorTicks = [
+      -1e10 * yearS, -1e9 * yearS, -1e8 * yearS, -1e7 * yearS,
+      -1e6 * yearS, -1e5 * yearS, -1e4 * yearS, -1e3 * yearS,
+      -100 * yearS, -10 * yearS, -1 * yearS,
+      -86400 * 30, -86400, -3600, 0, 3600, 86400, 86400 * 30,
+      1 * yearS, 10 * yearS, 100 * yearS, 1e3 * yearS,
+      1e4 * yearS, 1e5 * yearS, 1e6 * yearS, 1e7 * yearS,
+      1e8 * yearS, 1e9 * yearS,
+    ];
+    const visibleTicks = anchorTicks.filter(t => t >= PAST_LIMIT_S && t <= FUTURE_LIMIT_S);
+    const gridY = d3.range(yLogDomain[0], yLogDomain[1] + 1, 5);
+
+    const gxGroup = view.append("g").attr("class", "gxgroup");
+    const gyGroup = view.append("g").attr("class", "gygroup");
+    function drawGrid() {
+      gxGroup.selectAll("line").data(visibleTicks).join("line")
+        .attr("x1", d => xScale(d)).attr("x2", d => xScale(d))
+        .attr("y1", 0).attr("y2", innerH)
+        .attr("stroke", d => d === 0 ? "#888" : "#e6e0c7")
+        .attr("stroke-width", d => d === 0 ? 1 : 0.5);
+      gyGroup.selectAll("line").data(gridY).join("line")
+        .attr("x1", 0).attr("x2", innerW)
+        .attr("y1", d => yScale(d)).attr("y2", d => yScale(d))
+        .attr("stroke", "#e6e0c7").attr("stroke-width", 0.5);
+    }
+    drawGrid();
+
+    // ── Era markers (familiar moments) ──────────────────────────────────
+    const eras = [
+      { tFromNow: -UNIVERSE_AGE_S,            label: "Big Bang" },
+      { tFromNow: -(4.6e9 * yearS),           label: "Solar system" },
+      { tFromNow: -(3.5e9 * yearS),           label: "Life begins" },
+      { tFromNow: -(540e6 * yearS),           label: "Cambrian" },
+      { tFromNow: -(66e6 * yearS),            label: "Dinosaurs end" },
+      { tFromNow: -(10e3 * yearS),            label: "Agriculture" },
+      { tFromNow: 0,                           label: "Now", emphasis: true },
+      { tFromNow:  (5e9 * yearS),             label: "Sun → red giant" },
+    ];
+    const eraGroup = view.append("g").attr("class", "eras");
+    eras.forEach(e => {
+      if (e.tFromNow < PAST_LIMIT_S || e.tFromNow > FUTURE_LIMIT_S) return;
+      const x = xScale(e.tFromNow);
+      eraGroup.append("line")
+        .attr("x1", x).attr("x2", x).attr("y1", 0).attr("y2", innerH)
+        .attr("stroke", e.emphasis ? "#444" : "#cfc8b3")
+        .attr("stroke-dasharray", e.emphasis ? null : "3 3")
+        .attr("stroke-width", e.emphasis ? 1.4 : 0.6);
+      eraGroup.append("text").attr("x", x).attr("y", -8)
+        .attr("text-anchor", "middle").attr("font-size", 9)
+        .attr("fill", e.emphasis ? "#444" : "#888")
+        .style("font-weight", e.emphasis ? 700 : 400)
+        .text(e.label);
+    });
+
+    // ── Axes (outside view; rebuilt on zoom) ────────────────────────────
+    const xAxis = d3.axisBottom(xScale).tickValues(visibleTicks)
+      .tickFormat(d => formatTimeFromNow(d));
+    const yAxis = d3.axisLeft(yScale).tickValues(gridY)
+      .tickFormat(d => formatMass(d));
+    const xAxisG = root.append("g").attr("class", "xaxis")
+      .attr("transform", `translate(0,${innerH})`).call(xAxis)
+      .call(g => g.selectAll("text").attr("font-size", 9))
+      .call(g => g.selectAll(".domain, .tick line").attr("stroke", "#888"));
+    const yAxisG = root.append("g").attr("class", "yaxis").call(yAxis)
+      .call(g => g.selectAll("text").attr("font-size", 10))
+      .call(g => g.selectAll(".domain, .tick line").attr("stroke", "#888"));
+    root.append("text")
+      .attr("x", innerW / 2).attr("y", innerH + 40)
+      .attr("text-anchor", "middle").attr("fill", "#444")
+      .attr("font-size", 12).attr("font-weight", 600)
+      .text("←  past  ·  time from now (symmetric log, 0 = present)  ·  future  →");
+    root.append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("x", -innerH / 2).attr("y", -50)
+      .attr("text-anchor", "middle").attr("fill", "#444")
+      .attr("font-size", 12).attr("font-weight", 600)
+      .text("total system mass  →  log₁₀(kg)");
+
+    // ── System trajectories ────────────────────────────────────────────
+    const systems = (data.systems || []).map(s => ({
+      ...s,
+      points: (s.trajectory || []).map(w => ({
+        ...w,
+        tFromNow: -w.time_ya * SECONDS_PER_YEAR,
+        y_log: Math.log10(Math.max(w.mass_kg, 1)),
+      })).sort((a, b) => a.tFromNow - b.tFromNow),
+    }));
+
+    const trajGroup = view.append("g").attr("class", "systems");
+    const labelGroup = root.append("g").attr("class", "system-labels")
+      .attr("clip-path", `url(#${clipId})`);
+
+    const lineGen = d3.line()
+      .x(d => xScale(d.tFromNow))
+      .y(d => yScale(d.y_log))
+      .curve(d3.curveMonotoneX);
+
+    systems.forEach(s => {
+      const g = trajGroup.append("g")
+        .attr("data-id", s.id)
+        .attr("data-prominence", s.prominence || 2)
+        .style("cursor", "pointer");
+
+      // Halo stroke for readability against the background.
+      g.append("path")
+        .datum(s.points)
+        .attr("class", "halo")
+        .attr("fill", "none")
+        .attr("stroke", "#fffceb")
+        .attr("stroke-width", 5)
+        .attr("stroke-linecap", "round")
+        .attr("d", lineGen);
+      // Main color stroke.
+      g.append("path")
+        .datum(s.points)
+        .attr("class", "trace")
+        .attr("fill", "none")
+        .attr("stroke", s.color || "#444")
+        .attr("stroke-width", 2.2)
+        .attr("stroke-linecap", "round")
+        .attr("d", lineGen);
+
+      // Waypoint dots — clickable for milestone tooltips.
+      s.points.forEach((p, i) => {
+        const dot = g.append("g")
+          .attr("data-waypoint", i)
+          .attr("transform", `translate(${xScale(p.tFromNow)},${yScale(p.y_log)})`);
+        dot.append("circle")
+          .attr("r", 3.5)
+          .attr("fill", s.color || "#444")
+          .attr("stroke", "#fffceb")
+          .attr("stroke-width", 1);
+        dot.on("mouseenter", e => {
+          tooltip.html(
+            `<strong>${s.name} — ${escapeHtml(p.label)}</strong>` +
+            `<div class="meta">${formatMassWords(p.mass_kg)} · ${humanTime(p.time_ya)}</div>` +
+            (s.blurb ? `<div style="margin-top:0.35rem;">${s.blurb}</div>` : "")
+          );
+          placeTooltipAtMarker(dot.node());
+          tooltip.style("opacity", 1);
+          crossChartHover(s.id);
+        }).on("mouseleave", () => { hideTooltip(); crossChartClear(); });
+      });
+
+      // End-of-trajectory label (latest waypoint).
+      const last = s.points[s.points.length - 1];
+      if (last) {
+        labelGroup.append("text")
+          .attr("data-id", s.id)
+          .attr("data-prominence", s.prominence || 2)
+          .attr("data-x-from-now", last.tFromNow)
+          .attr("data-y-log", last.y_log)
+          .attr("x", xScale(last.tFromNow) + 8)
+          .attr("y", yScale(last.y_log) + 3)
+          .attr("font-size", 10)
+          .attr("font-weight", 600)
+          .attr("fill", s.color || "#444")
+          .style("opacity", visibleAtZoom(s.prominence || 2, 1) ? 1 : 0)
+          .style("pointer-events", "none")
+          .text(s.name);
+      }
+
+      // Hover anywhere on the trace (not just dots) for spotlight.
+      g.on("mouseenter", () => crossChartHover(s.id))
+       .on("mouseleave", () => crossChartClear());
+    });
+
+    // ── Zoom (mirrors Chart 1's behavior) ──────────────────────────────
+    const trajPaths = trajGroup.selectAll("g[data-id]");
+    const trajLabels = labelGroup.selectAll("text[data-id]");
+
+    function applyZoom(transform) {
+      view.attr("transform", transform.toString());
+      const k = transform.k;
+
+      const xz = transform.rescaleX(xScale);
+      const yz = transform.rescaleY(yScale);
+      xAxisG.call(xAxis.scale(xz)).call(g => g.selectAll(".domain, .tick line").attr("stroke", "#888"));
+      yAxisG.call(yAxis.scale(yz)).call(g => g.selectAll(".domain, .tick line").attr("stroke", "#888"));
+
+      const inv = 1 / k;
+      // Counter-scale stroke widths so lines don't balloon at zoom.
+      trajPaths.selectAll("path.halo").attr("stroke-width", 5 * inv);
+      trajPaths.selectAll("path.trace").attr("stroke-width", 2.2 * inv);
+      trajPaths.selectAll("circle").attr("r", 3.5 * inv).attr("stroke-width", inv);
+
+      // Waypoint dot containers: keep their data-anchor positions but
+      // counter-scale so the circles don't grow with zoom.
+      trajPaths.selectAll("g[data-waypoint]").each(function() {
+        const node = d3.select(this);
+        const t = node.attr("transform");
+        const m = t.match(/translate\(([^)]+)\)/);
+        if (m) node.attr("transform", `translate(${m[1]}) scale(${inv})`);
+      });
+
+      // Re-anchor labels at their data positions in the rescaled axes.
+      trajLabels.each(function() {
+        const node = d3.select(this);
+        const xVal = +node.attr("data-x-from-now");
+        const yVal = +node.attr("data-y-log");
+        node.attr("x", xz(xVal) + 8).attr("y", yz(yVal) + 3);
+        const p = +node.attr("data-prominence");
+        node.style("opacity", visibleAtZoom(p, k) ? 1 : 0);
+      });
+
+      // Era markers also live inside the view group; their text labels
+      // counter-scale so they stay readable.
+      eraGroup.selectAll("text").style("font-size", `${9 * inv}px`);
+    }
+
+    const zoom = d3.zoom()
+      .scaleExtent([1, 50])
+      .translateExtent([[0, 0], [innerW, innerH]])
+      .extent([[0, 0], [innerW, innerH]])
+      .on("zoom", e => applyZoom(e.transform));
+
+    svg.call(zoom);
+    applyZoom(d3.zoomIdentity);
+
+    // Reset-zoom button
+    root.append("g").attr("class", "reset-zoom")
+      .attr("transform", `translate(${innerW - 78}, 8)`)
+      .style("cursor", "pointer")
+      .on("click", () => svg.transition().duration(350).call(zoom.transform, d3.zoomIdentity))
+      .call(g => {
+        g.append("rect")
+          .attr("width", 70).attr("height", 22).attr("rx", 4)
+          .attr("fill", "#fdfcf6").attr("stroke", "#bbb");
+        g.append("text").attr("x", 35).attr("y", 15)
+          .attr("text-anchor", "middle").attr("font-size", 10)
+          .attr("fill", "#555").text("reset zoom");
+      });
+
+    // ── Legend (clickable to toggle category groups) ───────────────────
+    const legendEl = d3.select("#legend-systems-time");
+    legendEl.html("");
+    const cats = [
+      { key: "biology",     label: "Life",         color: "#3fa648" },
+      { key: "people",      label: "Humans",       color: "#2d6db0" },
+      { key: "livestock",   label: "Livestock",    color: "#d29922" },
+      { key: "human-built", label: "Built world",  color: "#7b8fa1" },
+      { key: "technology",  label: "Tech / AI",    color: "#bc8cff" },
+      { key: "cosmic",      label: "Cosmic",       color: "#1a1a1a" },
+    ];
+    cats.forEach(c => {
+      const chip = legendEl.append("span")
+        .attr("class", "uni-chip").attr("data-cat", c.key).attr("data-on", "true")
+        .html(`<span class="uni-chip-dot" style="background:${c.color}"></span>${c.label}`);
+      chip.on("click", function() {
+        const on = this.getAttribute("data-on") !== "false";
+        this.setAttribute("data-on", on ? "false" : "true");
+        const display = on ? "none" : "";
+        const matchingIds = systems.filter(s => s.category === c.key).map(s => s.id);
+        matchingIds.forEach(id => {
+          trajGroup.selectAll(`g[data-id="${id}"]`).style("display", display);
+          labelGroup.selectAll(`text[data-id="${id}"]`).style("display", display);
+        });
+      });
+    });
+  }
+
+  // Format an integer log10(mass_kg) into "1 kg" / "1 t" / "1 Gt" etc.
+  function formatMass(logKg) {
+    const labels = {
+      0: "1 kg", 3: "1 t", 6: "kt", 9: "Mt", 12: "Gt",
+      15: "Tt", 18: "Pt", 21: "Et", 24: "Zt", 27: "Yt",
+      30: "10³⁰ kg", 33: "10³³ kg", 36: "10³⁶ kg",
+      39: "10³⁹ kg", 42: "10⁴² kg", 45: "10⁴⁵ kg",
+      48: "10⁴⁸ kg", 51: "10⁵¹ kg",
+    };
+    if (labels[logKg]) return labels[logKg];
+    return `10${supScript(logKg)} kg`;
+  }
+
+  // Conversational mass formatter used in tooltips.
+  function formatMassWords(mass_kg) {
+    if (mass_kg >= 1e15) return `${(mass_kg / 1e12).toFixed(0)} billion tonnes`;
+    if (mass_kg >= 1e12) return `${(mass_kg / 1e9).toFixed(0)} million tonnes`;
+    if (mass_kg >= 1e9)  return `${(mass_kg / 1e6).toFixed(0)} thousand tonnes`;
+    if (mass_kg >= 1e6)  return `${(mass_kg / 1e3).toFixed(0)} tonnes`;
+    if (mass_kg >= 1e3)  return `${(mass_kg).toFixed(0)} kg`;
+    return `${mass_kg.toFixed(2)} kg`;
+  }
+
+  // Plain-language time-ago / time-from-now (with century-level signal):
+  function humanTime(time_ya) {
+    if (time_ya == null) return "";
+    if (time_ya === 0) return "now";
+    const future = time_ya < 0;
+    const a = Math.abs(time_ya);
+    let v;
+    if (a >= 1e9) v = `${(a / 1e9).toFixed(1)} billion years`;
+    else if (a >= 1e6) v = `${(a / 1e6).toFixed(0)} million years`;
+    else if (a >= 1e3) v = `${(a / 1e3).toFixed(0)} thousand years`;
+    else v = `${a.toFixed(0)} years`;
+    return future ? `${v} from now` : `${v} ago`;
+  }
+
+  // ─────────────────────────────────────────────────────────────────────
+  // CHART 2 (legacy stub — superseded by buildSystemsChart).
+  // Keep the function name so any cached callers don't blow up.
   function buildDensityTimeChart() {
     const containerEl = document.getElementById("chart-density-time");
     if (!containerEl) return;
@@ -1033,7 +1396,7 @@
   function boot() {
     try {
       buildMassSizeChart();
-      buildDensityTimeChart();
+      buildSystemsChart();
       wireTourControls();
     } catch (e) {
       console.error("[universe] chart init failed:", e);

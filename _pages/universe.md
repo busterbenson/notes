@@ -104,12 +104,14 @@ sitemap: false
 
 <h1 class="uni-page-title">The Universe at a Glance</h1>
 <p class="uni-intro">
-  Two paired interactive charts of <strong>everything that physically exists</strong>.
-  The left chart is the Carr–Rees mass-radius diagram — the geometry of what's
-  possible at all. The right chart is its temporal companion — when each
-  density regime got populated, and how the universe itself has moved through
-  them since the Big Bang. Hover any object to highlight it on both charts,
-  or take the tour for a guided walk from observable universe down to electron.
+  Two paired interactive charts. The left chart is the Carr–Rees
+  mass-radius diagram — the geometry of what's <strong>possible</strong> at all.
+  The right chart shows how <strong>systems</strong> grow through deep time:
+  life on Earth, humans, chickens, cities, the internet, AI — each one a
+  trajectory through total mass over the symmetric-log time axis,
+  centered on now. Hover any object or trajectory to spotlight it; zoom
+  in for finer detail; take the tour for a guided walk from observable
+  universe down to electron.
 </p>
 
 <div class="uni-tour-bar">
@@ -135,11 +137,11 @@ sitemap: false
 
   <div class="uni-chart">
     <div class="uni-chart-header">
-      <h2 class="uni-chart-title">Density × Time</h2>
-      <span class="uni-chart-subtitle">log density · symmetric-log time from now (0 = present)</span>
+      <h2 class="uni-chart-title">Systems × Time</h2>
+      <span class="uni-chart-subtitle">log total mass · symmetric-log time from now (0 = present)</span>
     </div>
-    <div id="chart-density-time" class="uni-canvas"></div>
-    <div class="uni-legend" id="legend-density-time"></div>
+    <div id="chart-systems-time" class="uni-canvas"></div>
+    <div class="uni-legend" id="legend-systems-time"></div>
   </div>
 
 </div>
@@ -171,8 +173,9 @@ sitemap: false
   // Pass the data into JS-land via a JSON island.
   window.UniverseData = {
     objects: {{ site.data.universe.objects.objects | jsonify }},
+    systems: {{ site.data.universe.systems.systems | jsonify }},
     sources: {{ site.data.universe.sources.sources | jsonify }}
   };
 </script>
 <script src="https://d3js.org/d3.v7.min.js"></script>
-<script src="/assets/js/universe/main.js?v=14"></script>
+<script src="/assets/js/universe/main.js?v=15"></script>

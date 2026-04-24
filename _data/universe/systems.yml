@@ -1,0 +1,200 @@
+# Systems through time — data for Chart 2.
+#
+# Each entry is a SYSTEM (not a single object): a population, a
+# species, a class of artifact, a movement. Each carries a trajectory
+# of (time_ya, total_mass_kg, label) waypoints showing how the system
+# grew/shrank in TOTAL MASS through deep time.
+#
+# Mass numbers are order-of-magnitude. Real biosphere/population
+# figures vary; sources cited per system. The point of the chart is
+# the SHAPE of growth, not the precise value at any one moment.
+#
+# Schema per system:
+#   id, name, category, color, blurb
+#   trajectory: [{time_ya, mass_kg, label}, ...]   # most-past first
+#     time_ya  — years before present (negative = future)
+#     mass_kg  — total mass of the system at that moment
+#     label    — short milestone description (shows in tooltip)
+#   prominence: 1-3 (1 = always visible, 3 = needs zoom)
+#   sources: [tags from sources.yml]
+
+systems:
+
+# ─── Life and biology ────────────────────────────────────────────────
+  - id: biosphere
+    name: Life on Earth (biosphere)
+    category: biology
+    color: "#3fa648"
+    prominence: 1
+    blurb: "Total mass of all living things on Earth — bacteria, plants, fungi, animals, the lot. Today ≈ 1.1 × 10¹⁵ kg, ~85% of which is plants."
+    trajectory:
+      - { time_ya: 3.7e9,  mass_kg: 1.0e6,  label: "First cells (LUCA's descendants)" }
+      - { time_ya: 2.4e9,  mass_kg: 1.0e10, label: "Great Oxygenation — cyanobacteria fill the oceans" }
+      - { time_ya: 1.5e9,  mass_kg: 1.0e12, label: "Eukaryotes diversify" }
+      - { time_ya: 540e6,  mass_kg: 1.0e14, label: "Cambrian explosion — animals everywhere" }
+      - { time_ya: 350e6,  mass_kg: 5.0e14, label: "First forests cover the continents" }
+      - { time_ya: 252e6,  mass_kg: 5.0e13, label: "End-Permian — ~95% of marine species gone" }
+      - { time_ya: 100e6,  mass_kg: 5.0e14, label: "Mid-Cretaceous — dinosaurs and flowering plants" }
+      - { time_ya: 66e6,   mass_kg: 2.0e14, label: "Chicxulub impact — mammals inherit the rebuild" }
+      - { time_ya: 0,      mass_kg: 1.1e15, label: "Today — ~85% plants, 13% bacteria, 2% everything else" }
+    sources: [bar-on-2018-biomass]
+
+  - id: plants
+    name: Plants (photosynthesizers)
+    category: biology
+    color: "#7fba61"
+    prominence: 2
+    blurb: "Land plants alone hold ~450 Gt of carbon, making them the largest single kingdom by mass."
+    trajectory:
+      - { time_ya: 470e6,  mass_kg: 1.0e11, label: "First land plants colonize from freshwater algae" }
+      - { time_ya: 350e6,  mass_kg: 1.0e14, label: "Carboniferous coal-forest peak" }
+      - { time_ya: 100e6,  mass_kg: 5.0e14, label: "Flowering plants take over" }
+      - { time_ya: 0,      mass_kg: 9.0e14, label: "Today — 450 Gt C of land plants" }
+    sources: [bar-on-2018-biomass]
+
+  - id: animals
+    name: Animals (metazoans)
+    category: biology
+    color: "#b03a36"
+    prominence: 2
+    blurb: "All multicellular animals — fish, insects, mammals, you. Today ≈ 4 Gt C, dominated by arthropods and fish."
+    trajectory:
+      - { time_ya: 580e6,  mass_kg: 1.0e9,  label: "First Ediacaran soft-bodied animals" }
+      - { time_ya: 540e6,  mass_kg: 1.0e11, label: "Cambrian explosion — every body plan invented at once" }
+      - { time_ya: 250e6,  mass_kg: 1.0e12, label: "End-Permian dieback" }
+      - { time_ya: 66e6,   mass_kg: 5.0e12, label: "K-Pg extinction — dinosaurs out, mammals' rise begins" }
+      - { time_ya: 0,      mass_kg: 8.0e12, label: "Today — 4 Gt C, half arthropods + fish" }
+    sources: [bar-on-2018-biomass]
+
+  - id: humans
+    name: Humans (Homo sapiens)
+    category: people
+    color: "#2d6db0"
+    prominence: 1
+    blurb: "Total wet mass of all living humans. Today ≈ 5 × 10¹¹ kg, doubled in your lifetime, projected to plateau around 10 billion mid-century."
+    trajectory:
+      - { time_ya: 300e3,  mass_kg: 5.0e5,  label: "Anatomically modern humans appear (~10,000 individuals)" }
+      - { time_ya: 70e3,   mass_kg: 5.0e6,  label: "Out-of-Africa expansion (~100,000 individuals)" }
+      - { time_ya: 12e3,   mass_kg: 2.5e8,  label: "Agricultural revolution (~5 million people)" }
+      - { time_ya: 2000,   mass_kg: 1.0e10, label: "1 CE (~200 million people)" }
+      - { time_ya: 320,    mass_kg: 3.0e10, label: "1700 CE (~600 million)" }
+      - { time_ya: 125,    mass_kg: 9.0e10, label: "1900 CE (~1.6 billion)" }
+      - { time_ya: 25,     mass_kg: 3.7e11, label: "2000 CE (~6.1 billion)" }
+      - { time_ya: 0,      mass_kg: 5.0e11, label: "Today (~8.1 billion)" }
+      - { time_ya: -25,    mass_kg: 6.0e11, label: "2050 projection (~9.7 billion, near-peak)" }
+      - { time_ya: -75,    mass_kg: 6.5e11, label: "2100 projection (~10.4 billion)" }
+    sources: [un-population, kremer-1993]
+
+  - id: chickens
+    name: Domestic chickens
+    category: livestock
+    color: "#d29922"
+    prominence: 2
+    blurb: "From a junglefowl in SE Asia ~10,000 years ago to ~33 billion birds today — by mass, the most successful land vertebrate by far."
+    trajectory:
+      - { time_ya: 10000, mass_kg: 1.5e4,  label: "First domestication in SE Asia (~10,000 birds)" }
+      - { time_ya: 2000,  mass_kg: 1.0e8,  label: "Spread across Eurasia + Mediterranean" }
+      - { time_ya: 125,   mass_kg: 1.0e9,  label: "1900 — ~500M birds, mostly backyard" }
+      - { time_ya: 75,    mass_kg: 5.0e9,  label: "1950 — 3 billion, broiler genetics shipping" }
+      - { time_ya: 25,    mass_kg: 2.8e10, label: "2000 — 14 billion, factory farming dominant" }
+      - { time_ya: 0,     mass_kg: 7.0e10, label: "Today — ~33 billion alive at any moment" }
+    sources: [fao-livestock]
+
+  - id: cattle
+    name: Cattle (Bos taurus + B. indicus)
+    category: livestock
+    color: "#a55ec2"
+    prominence: 2
+    blurb: "From aurochs domestication ~10,000 years ago to ~1 billion cattle today (~6 × 10¹¹ kg, more biomass than all wild mammals combined)."
+    trajectory:
+      - { time_ya: 10000, mass_kg: 1.0e7,  label: "Aurochs domestication (Anatolia + India)" }
+      - { time_ya: 2000,  mass_kg: 5.0e9,  label: "Eurasia + Africa pastoral systems established" }
+      - { time_ya: 125,   mass_kg: 1.0e11, label: "1900 — ~400M cattle" }
+      - { time_ya: 0,     mass_kg: 6.0e11, label: "Today — ~1B cattle, ~600 kg average" }
+    sources: [fao-livestock]
+
+  - id: wild-mammals
+    name: Wild mammals
+    category: biology
+    color: "#7da680"
+    prominence: 2
+    blurb: "Once vastly more numerous than livestock; today only ~5% of mammalian biomass. The reversal happened in the last 200 years."
+    trajectory:
+      - { time_ya: 10000, mass_kg: 5.0e10, label: "End-Pleistocene — abundant megafauna" }
+      - { time_ya: 2000,  mass_kg: 4.0e10, label: "Post-megafauna extinction baseline" }
+      - { time_ya: 125,   mass_kg: 1.0e10, label: "1900 — habitat loss accelerating" }
+      - { time_ya: 0,     mass_kg: 7.0e9,  label: "Today — ~5% of mammalian biomass; livestock dominates" }
+    sources: [bar-on-2018-biomass]
+
+# ─── Human-built systems ─────────────────────────────────────────────
+  - id: cities
+    name: Cities (urban built environment)
+    category: human-built
+    color: "#7b8fa1"
+    prominence: 2
+    blurb: "Total mass of buildings, roads, infrastructure in human settlements. Today ≈ 1.1 × 10¹⁵ kg — same order as the entire biosphere."
+    trajectory:
+      - { time_ya: 10000, mass_kg: 1.0e8,  label: "Çatalhöyük, Jericho — ~10,000 inhabitants" }
+      - { time_ya: 5000,  mass_kg: 1.0e11, label: "Bronze Age cities (Uruk, Mohenjo-daro)" }
+      - { time_ya: 2000,  mass_kg: 1.0e13, label: "Roman empire — ~1M in Rome alone" }
+      - { time_ya: 125,   mass_kg: 1.0e14, label: "1900 — first megacities, 13% urban" }
+      - { time_ya: 25,    mass_kg: 5.0e14, label: "2000 — 47% urban" }
+      - { time_ya: 0,     mass_kg: 1.1e15, label: "Today — 57% urban, urban mass ≈ biosphere mass" }
+    sources: [krausmann-2017-stocks]
+
+  - id: books
+    name: Books printed
+    category: human-built
+    color: "#b03a36"
+    prominence: 3
+    blurb: "Cumulative mass of physical books printed since Gutenberg (1440). ~150 million unique titles, ~10¹⁰ kg total."
+    trajectory:
+      - { time_ya: 580,   mass_kg: 1.0e3,  label: "Gutenberg Bible — ~180 copies" }
+      - { time_ya: 400,   mass_kg: 1.0e7,  label: "1626 — ~50K titles printed in Europe" }
+      - { time_ya: 200,   mass_kg: 1.0e9,  label: "1825 — industrial printing, mass literacy" }
+      - { time_ya: 25,    mass_kg: 5.0e9,  label: "2000 — ~50M titles cumulative" }
+      - { time_ya: 0,     mass_kg: 1.0e10, label: "Today — ~150M titles, slowing as reading goes digital" }
+    sources: [google-books-project]
+
+  - id: internet
+    name: Internet (hardware)
+    category: technology
+    color: "#1a8fbf"
+    prominence: 2
+    blurb: "Total physical mass of internet-connected hardware: routers, fiber, datacenters, phones, IoT. Today ≈ 10¹³ kg, mostly mobile devices."
+    trajectory:
+      - { time_ya: 57,    mass_kg: 4.0e2,  label: "ARPANET 1969 — 4 IMPs at Stanford, UCLA, UCSB, Utah" }
+      - { time_ya: 35,    mass_kg: 1.0e7,  label: "1991 — World Wide Web invented, ~10⁵ hosts" }
+      - { time_ya: 25,    mass_kg: 1.0e10, label: "2000 — ~360M users, dial-up era ending" }
+      - { time_ya: 15,    mass_kg: 1.0e12, label: "2010 — smartphones globalize the network" }
+      - { time_ya: 0,     mass_kg: 1.0e13, label: "Today — ~30B connected devices" }
+    sources: [icann-stats]
+
+  - id: ai
+    name: AI compute
+    category: technology
+    color: "#bc8cff"
+    prominence: 1
+    blurb: "Total physical mass of AI accelerator hardware (GPUs, TPUs, ASICs in datacenters). The newest system on the chart, growing ~50%/yr."
+    trajectory:
+      - { time_ya: 90,    mass_kg: 1.0e0,  label: "1936 — Turing's machine (paper)" }
+      - { time_ya: 70,    mass_kg: 1.0e3,  label: "1956 — Dartmouth workshop, 'AI' coined" }
+      - { time_ya: 14,    mass_kg: 1.0e5,  label: "2012 — AlexNet wins ImageNet, GPU era begins" }
+      - { time_ya: 6,     mass_kg: 1.0e7,  label: "2020 — GPT-3, scaling laws confirmed" }
+      - { time_ya: 3,     mass_kg: 1.0e8,  label: "2023 — global AI hardware buildout begins in earnest" }
+      - { time_ya: 0,     mass_kg: 5.0e9,  label: "Today — ~5M H100-class GPUs equivalent globally" }
+      - { time_ya: -5,    mass_kg: 1.0e11, label: "2031 projection — current capex trajectory" }
+    sources: [sevilla-2024-compute]
+
+# ─── Anchor: the universe itself ─────────────────────────────────────
+  - id: universe-mass
+    name: Observable universe (matter)
+    category: cosmic
+    color: "#1a1a1a"
+    prominence: 1
+    blurb: "Total baryonic + dark matter mass within our cosmic horizon. Roughly constant since the Big Bang; the chart's scale anchor at 10⁵³ kg."
+    trajectory:
+      - { time_ya: 1.38e10, mass_kg: 1.5e53, label: "Big Bang — all matter present, just hotter" }
+      - { time_ya: 1.0e10,  mass_kg: 1.5e53, label: "Galaxy formation peak" }
+      - { time_ya: 0,        mass_kg: 1.5e53, label: "Today — same matter, more diffuse, locked in stars + dark matter halos" }
+    sources: [planck-2020]
