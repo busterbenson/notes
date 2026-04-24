@@ -281,6 +281,81 @@ systems:
       - { time_ya: 0,   mass_kg: 1.0e9,  label: "Today — ~5M ASICs deployed, ~200 g each" }
     sources: [cambridge-cbeci]
 
+# ─── Personal trajectories (Buster's life and works) ─────────────────
+# Tier 5 — visible only at deep zoom (k≥16). The point isn't the
+# absolute mass (single people are dust on the global scale) but the
+# SHAPE of a life: the rise into adulthood, the long plateau, the
+# eventual decline. The chart at this zoom becomes a mirror.
+  - id: buster-self
+    name: Buster Benson (body mass)
+    category: personal
+    color: "#1a1a1a"
+    prominence: 5
+    blurb: "One human life, plotted as body mass. Born May 28 1976 in Seattle. The hump shape is universal — peak in young adulthood, plateau, then a tapering off no one knows the date of. The chart turns into a mirror at this zoom."
+    trajectory:
+      - { time_ya: 50,    mass_kg: 3.5,   label: "May 28 1976 — born in Seattle" }
+      - { time_ya: 45,    mass_kg: 18,    label: "1981 — age 5" }
+      - { time_ya: 37,    mass_kg: 40,    label: "1989 — age 13, Bellingham WA" }
+      - { time_ya: 32,    mass_kg: 70,    label: "1994 — age 18, leaves for college (Whitman)" }
+      - { time_ya: 17,    mass_kg: 75,    label: "2009 — age 33, launches 750words" }
+      - { time_ya: 0,     mass_kg: 78,    label: "Today — age 49, almost 50" }
+      - { time_ya: -30,   mass_kg: 75,    label: "2056 projection — age 80, post-retirement plateau" }
+    sources: [self]
+
+  - id: niko-self
+    name: Niko Benson (body mass)
+    category: personal
+    color: "#bc8cff"
+    prominence: 5
+    blurb: "Born May 15 2010. Buster's first kid. Plotted alongside Buster's curve, you can see two lives offset by 34 years overlapping — Buster's plateau happens during Niko's rise."
+    trajectory:
+      - { time_ya: 16,   mass_kg: 3.5,  label: "May 15 2010 — born" }
+      - { time_ya: 10,   mass_kg: 22,   label: "2016 — age 6, kindergarten" }
+      - { time_ya: 5,    mass_kg: 38,   label: "2021 — age 11, COVID era" }
+      - { time_ya: 0,    mass_kg: 50,   label: "Today — age 15" }
+      - { time_ya: -10,  mass_kg: 65,   label: "2036 projection — age 25, peak" }
+    sources: [self]
+
+  - id: louie-self
+    name: Louie Benson (body mass)
+    category: personal
+    color: "#3fa648"
+    prominence: 5
+    blurb: "Born May 6 2016. Buster's second kid. The youngest curve on the chart — six years behind Niko, forty years behind Buster."
+    trajectory:
+      - { time_ya: 10,   mass_kg: 3.4,  label: "May 6 2016 — born" }
+      - { time_ya: 5,    mass_kg: 18,   label: "2021 — age 5" }
+      - { time_ya: 0,    mass_kg: 35,   label: "Today — age 9" }
+      - { time_ya: -16,  mass_kg: 70,   label: "2042 projection — age 26, peak" }
+    sources: [self]
+
+  - id: 750words-system
+    name: 750words.com (members)
+    category: personal
+    color: "#d29922"
+    prominence: 5
+    blurb: "The morning-pages-as-a-website project Buster launched in October 2009 and has run continuously since. Mass shown is active-members × 60 kg of writers. Today ~3,300 active. The interesting line isn't the user count — it's the cumulative words written through the system, which crosses 10⁹ words around now."
+    trajectory:
+      - { time_ya: 17,   mass_kg: 6.0e2, label: "Oct 2009 — launch with 10 friends" }
+      - { time_ya: 16,   mass_kg: 6.0e4, label: "2010 — first 1,000 active writers" }
+      - { time_ya: 12,   mass_kg: 1.5e6, label: "2014 — peak active users ~25K" }
+      - { time_ya: 5,    mass_kg: 6.0e5, label: "2021 — community settles into committed core" }
+      - { time_ya: 0,    mass_kg: 2.0e5, label: "Today — ~3,264 active members + Chalant on the backend" }
+    sources: [750-internal]
+
+  - id: sala-house
+    name: Sala House
+    category: personal
+    color: "#7da680"
+    prominence: 5
+    blurb: "700 Hillside Ave, Albany CA. A Christopher Alexander-designed house Buster + Kellianne bought in Dec 2023 after years of looking. Mass is the structure itself — wood, glass, stone — somewhere around 200 tonnes for a 2,500 sqft house."
+    trajectory:
+      - { time_ya: 70,    mass_kg: 0,        label: "~1955 — Christopher Alexander designs the original" }
+      - { time_ya: 68,    mass_kg: 2.0e5,    label: "1958 — built on Hillside Ave" }
+      - { time_ya: 2.4,   mass_kg: 2.0e5,    label: "Dec 2023 — Buster + Kellianne purchase" }
+      - { time_ya: 0,     mass_kg: 2.0e5,    label: "Today — kids growing up here" }
+    sources: [self]
+
   - id: wild-mammals
     name: Wild mammals
     category: biology

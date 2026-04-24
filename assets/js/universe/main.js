@@ -122,9 +122,10 @@
   }
 
   function visibleAtZoom(prominence, k) {
-    if (k >= 8) return true;
-    if (k >= 4) return prominence <= 3;
-    if (k >= 2) return prominence <= 2;
+    if (k >= 16) return true;
+    if (k >= 8)  return prominence <= 4;
+    if (k >= 4)  return prominence <= 3;
+    if (k >= 2)  return prominence <= 2;
     return prominence <= 1;
   }
 
@@ -1013,6 +1014,7 @@
       { key: "human-built", label: "Built world",  color: "#7b8fa1" },
       { key: "technology",  label: "Tech / AI",    color: "#bc8cff" },
       { key: "planetary",   label: "Planetary",    color: "#5c8aa6" },
+      { key: "personal",    label: "Personal",     color: "#1a1a1a" },
       { key: "cosmic",      label: "Cosmic",       color: "#1a1a1a" },
     ];
     cats.forEach(c => {
