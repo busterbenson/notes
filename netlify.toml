@@ -5,8 +5,26 @@
     X-XSS-Protection = "1; mode=block"
     Referrer-Policy = "no-referrer"
     X-Content-Type-Options = "nosniff"
-    
-    
+
+# /clock is intentionally embeddable — the zodiacal-morning brief on
+# chalant-reports.pages.dev iframes it to show tonight's sky. Override
+# the site-wide X-Frame-Options DENY with a CSP frame-ancestors that
+# permits self + chalant-reports. X-Frame-Options ALLOW-FROM is
+# deprecated and ignored by modern Chrome, so we set CSP and clear
+# the older header. Match both /clock and /clock/ for safety.
+[[headers]]
+  for = "/clock"
+  [headers.values]
+    X-Frame-Options = ""
+    Content-Security-Policy = "frame-ancestors 'self' https://chalant-reports.pages.dev https://busterbenson.com"
+
+[[headers]]
+  for = "/clock/*"
+  [headers.values]
+    X-Frame-Options = ""
+    Content-Security-Policy = "frame-ancestors 'self' https://chalant-reports.pages.dev https://busterbenson.com"
+
+
 [[headers]]
   for = "*.ico"
   [headers.values]
