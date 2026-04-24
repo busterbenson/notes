@@ -267,6 +267,61 @@ systems:
       - { time_ya: 0,   mass_kg: 1.3e11, label: "Today — ~1.5T photos taken/yr; ~13T cumulative" }
     sources: [keypoint-intelligence]
 
+  - id: spacecraft
+    name: Spacecraft + satellites
+    category: technology
+    color: "#4a4ec4"
+    prominence: 3
+    blurb: "All human-launched objects currently in orbit or beyond — Sputnik 1957 to today's Starlink mega-constellations + ISS. ~13,000 active satellites + ~30,000 tracked debris pieces, ~4 × 10⁶ kg total in orbit. Plus the Voyagers, still receding."
+    trajectory:
+      - { time_ya: 69,  mass_kg: 8.4e1,  label: "Oct 1957 — Sputnik 1, 84 kg, beep beep" }
+      - { time_ya: 57,  mass_kg: 1.0e4,  label: "1969 — Apollo era, ~100 active satellites" }
+      - { time_ya: 25,  mass_kg: 2.0e5,  label: "2000 — ISS construction begins (~420 t module total)" }
+      - { time_ya: 5,   mass_kg: 1.0e6,  label: "2021 — Starlink ramps, satellite count crosses 4,000" }
+      - { time_ya: 0,   mass_kg: 4.0e6,  label: "Today — ~13K active sats + ~30K debris in orbit" }
+    sources: [esa-discos]
+
+  - id: cars
+    name: Cars produced (cumulative)
+    category: human-built
+    color: "#9b6d4a"
+    prominence: 3
+    blurb: "From Karl Benz's 1886 Patent-Motorwagen (one car) to ~2 billion cars produced cumulatively today (~3 × 10¹² kg of metal + plastic + electronics). About 1.5 billion are still in active use."
+    trajectory:
+      - { time_ya: 140, mass_kg: 5.0e2,  label: "1886 — Karl Benz's Motorwagen (3-wheel, ~250 kg)" }
+      - { time_ya: 117, mass_kg: 1.0e7,  label: "1909 — Ford Model T arrives, mass production" }
+      - { time_ya: 75,  mass_kg: 5.0e10, label: "1950 — post-war boom, ~50M cars worldwide" }
+      - { time_ya: 25,  mass_kg: 1.0e12, label: "2000 — ~700M cars on roads" }
+      - { time_ya: 0,   mass_kg: 3.0e12, label: "Today — ~2B cars produced cumulative, ~1.5B in use" }
+    sources: [oica-stats]
+
+  - id: bicycles
+    name: Bicycles
+    category: human-built
+    color: "#c4a64a"
+    prominence: 4
+    blurb: "From the 1817 'draisine' (no pedals, foot-pushed) to ~1 billion bicycles in use today. The most numerous powered-by-humans vehicle ever built. Mass per bike ~12 kg → ~1.2 × 10¹⁰ kg total."
+    trajectory:
+      - { time_ya: 209, mass_kg: 25,     label: "1817 — Karl Drais's laufmaschine (foot-pushed)" }
+      - { time_ya: 140, mass_kg: 1.0e6,  label: "1886 — safety bicycle (chain-driven, equal wheels)" }
+      - { time_ya: 75,  mass_kg: 5.0e8,  label: "1950 — ~50M bicycles, mass commuting in Asia" }
+      - { time_ya: 25,  mass_kg: 5.0e9,  label: "2000 — ~800M bicycles" }
+      - { time_ya: 0,   mass_kg: 1.2e10, label: "Today — ~1B bicycles in use; +e-bike inflection point" }
+    sources: [un-transport]
+
+  - id: emails
+    name: Emails sent (per year)
+    category: technology
+    color: "#7b8cbf"
+    prominence: 4
+    blurb: "From the first @-symbol email in 1971 to ~376 billion sent per day today (~1.4 × 10¹⁴ per year). Mass-as-data: average email ≈ 75 KB ≈ 0.4 mg if you imagine printing it. Most never get read."
+    trajectory:
+      - { time_ya: 55,  mass_kg: 0.0,   label: "1971 — Ray Tomlinson sends the first @-email (one)" }
+      - { time_ya: 30,  mass_kg: 1.0e2, label: "1996 — Hotmail launches, ~1B emails/day" }
+      - { time_ya: 15,  mass_kg: 5.0e4, label: "2011 — ~150B/day, spam crisis era" }
+      - { time_ya: 0,   mass_kg: 5.6e7, label: "Today — ~376B/day (~half spam)" }
+    sources: [statista]
+
   - id: bitcoin
     name: Bitcoin mining hardware
     category: technology
