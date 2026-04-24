@@ -1012,6 +1012,7 @@
       { key: "livestock",   label: "Livestock",    color: "#d29922" },
       { key: "human-built", label: "Built world",  color: "#7b8fa1" },
       { key: "technology",  label: "Tech / AI",    color: "#bc8cff" },
+      { key: "planetary",   label: "Planetary",    color: "#5c8aa6" },
       { key: "cosmic",      label: "Cosmic",       color: "#1a1a1a" },
     ];
     cats.forEach(c => {

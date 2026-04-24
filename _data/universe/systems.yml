@@ -126,6 +126,66 @@ systems:
       - { time_ya: 0,     mass_kg: 7.0e9,  label: "Today — ~5% of mammalian biomass; livestock dominates" }
     sources: [bar-on-2018-biomass]
 
+  - id: fungi
+    name: Fungi
+    category: biology
+    color: "#c97a2f"
+    prominence: 2
+    blurb: "Earth's quiet giants. ~12 Gt of carbon globally — more than animals, ~6× more than humans put together. Mostly soil fungi + mycorrhizal networks. The largest single organism known is a 9 km² honey fungus mat in Oregon."
+    trajectory:
+      - { time_ya: 1.0e9,  mass_kg: 1.0e12, label: "Fungi diverge from animals" }
+      - { time_ya: 470e6,  mass_kg: 1.0e13, label: "Mycorrhizal partnerships help plants colonize land" }
+      - { time_ya: 350e6,  mass_kg: 5.0e13, label: "Carboniferous coal forests — fungi can't yet decompose lignin, coal piles up" }
+      - { time_ya: 250e6,  mass_kg: 2.0e13, label: "End-Permian fungal spike — fungi feast on dying ecosystems" }
+      - { time_ya: 0,      mass_kg: 2.4e13, label: "Today — ~12 Gt C, 90% in soil + mycorrhizae" }
+    sources: [bar-on-2018-biomass]
+
+# ─── Planetary-scale signals ─────────────────────────────────────────
+  - id: atmospheric-co2
+    name: Atmospheric CO₂
+    category: planetary
+    color: "#5c8aa6"
+    prominence: 2
+    blurb: "Total mass of CO₂ in the atmosphere. Pre-industrial baseline 280 ppm ≈ 2.2 × 10¹⁵ kg; today ~425 ppm ≈ 3.3 × 10¹⁵ kg. The vertical line on the right side of 'now' is the Industrial Revolution made physical."
+    trajectory:
+      - { time_ya: 800e3, mass_kg: 1.4e15, label: "Last glacial maximum (~180 ppm)" }
+      - { time_ya: 11700, mass_kg: 2.2e15, label: "Holocene baseline (~280 ppm) — stable for 10,000 yrs" }
+      - { time_ya: 175,   mass_kg: 2.2e15, label: "1850 — Industrial Revolution begins (~285 ppm)" }
+      - { time_ya: 75,    mass_kg: 2.5e15, label: "1950 — fossil-fuel era (~310 ppm)" }
+      - { time_ya: 25,    mass_kg: 2.9e15, label: "2000 — ~370 ppm, climate science consensus solidifies" }
+      - { time_ya: 0,     mass_kg: 3.3e15, label: "Today — ~425 ppm, +50% above baseline" }
+      - { time_ya: -75,   mass_kg: 4.5e15, label: "2100 — high-emissions scenario (~600 ppm)" }
+    sources: [noaa-co2, ipcc-ar6]
+
+  - id: polar-ice
+    name: Polar ice (Antarctic + Greenland)
+    category: planetary
+    color: "#a8c8e0"
+    prominence: 2
+    blurb: "Combined mass of the two big ice sheets. Antarctica holds ~2.65 × 10¹⁹ kg, Greenland ~2.7 × 10¹⁸ kg. Both are losing mass — Greenland accelerating fast since 2000, Antarctica catching up. The trajectory tilts down on the right."
+    trajectory:
+      - { time_ya: 22000, mass_kg: 4.0e19, label: "Last Glacial Maximum — ice sheets cover Northern Eur. + N. America" }
+      - { time_ya: 11700, mass_kg: 3.0e19, label: "Holocene begins, sheets retreat to today's poles" }
+      - { time_ya: 175,   mass_kg: 2.95e19, label: "1850 — pre-industrial baseline" }
+      - { time_ya: 25,    mass_kg: 2.93e19, label: "2000 — losses now measurable from satellites" }
+      - { time_ya: 0,     mass_kg: 2.92e19, label: "Today — losing ~5 × 10¹⁴ kg/yr combined" }
+      - { time_ya: -75,   mass_kg: 2.85e19, label: "2100 — high-emissions projection" }
+    sources: [imbie-2024]
+
+  - id: plastics
+    name: Plastics produced (cumulative)
+    category: human-built
+    color: "#d76a92"
+    prominence: 2
+    blurb: "Cumulative mass of all plastic ever manufactured. From zero in 1950 to ~9 × 10¹² kg today. Of that, ~6 × 10¹² kg is now waste (landfills, oceans, microplastics in living tissue). Possibly the cleanest 'humans changed the planet' signal on the chart."
+    trajectory:
+      - { time_ya: 75,   mass_kg: 2.0e9,  label: "1950 — ~2 Mt produced/yr, mostly Bakelite + early polymers" }
+      - { time_ya: 50,   mass_kg: 1.5e11, label: "1975 — petrochemicals scale up" }
+      - { time_ya: 25,   mass_kg: 2.5e12, label: "2000 — ~225 Mt/yr production rate" }
+      - { time_ya: 0,    mass_kg: 9.0e12, label: "Today — ~9 Gt cumulative; ~6 Gt is now waste" }
+      - { time_ya: -25,  mass_kg: 2.0e13, label: "2050 — projected if production trajectory continues" }
+    sources: [geyer-2017-plastics]
+
 # ─── Human-built systems ─────────────────────────────────────────────
   - id: cities
     name: Cities (urban built environment)
