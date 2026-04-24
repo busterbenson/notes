@@ -113,6 +113,90 @@ systems:
       - { time_ya: 0,     mass_kg: 6.0e11, label: "Today — ~1B cattle, ~600 kg average" }
     sources: [fao-livestock]
 
+  - id: dogs
+    name: Domestic dogs
+    category: livestock
+    color: "#e08a4a"
+    prominence: 3
+    blurb: "Domesticated from grey wolves ~30 kya — the first species we partnered with, ~20 kyr before anything else. Today ~900M dogs at ~25 kg average."
+    trajectory:
+      - { time_ya: 30000, mass_kg: 1.0e5,  label: "Wolves first associate with humans (Siberia / Europe)" }
+      - { time_ya: 10000, mass_kg: 1.0e7,  label: "Distinct breeds emerge alongside agriculture" }
+      - { time_ya: 125,   mass_kg: 1.0e9,  label: "1900 — ~50M dogs, urbanization begins pet shift" }
+      - { time_ya: 0,     mass_kg: 2.3e10, label: "Today — ~900M dogs (470M owned + 430M free-ranging)" }
+    sources: [fao-livestock]
+
+  - id: honey-bees
+    name: Honey bees (Apis mellifera)
+    category: biology
+    color: "#e6b800"
+    prominence: 3
+    blurb: "Beekeeping is ~9,000 years old (Egyptian sun temples). Today ~100 million managed colonies × ~50,000 bees × 0.1 g = ~5 × 10⁸ kg, plus an unknown wild population."
+    trajectory:
+      - { time_ya: 9000, mass_kg: 1.0e6,  label: "Earliest honey-pot evidence in N. African pottery" }
+      - { time_ya: 2500, mass_kg: 1.0e7,  label: "Egyptian + Greek apiculture systematized" }
+      - { time_ya: 175,  mass_kg: 5.0e7,  label: "1850 — Langstroth movable-frame hive invented" }
+      - { time_ya: 0,    mass_kg: 5.0e8,  label: "Today — ~100M managed colonies; wild populations declining" }
+    sources: [fao-livestock]
+
+  - id: coral-reefs
+    name: Coral reefs
+    category: biology
+    color: "#e08aa6"
+    prominence: 3
+    blurb: "Living coral total mass — the architects, not the limestone. Reefs cover <1% of ocean floor but host 25% of marine species. Down ~50% since 1980 from heat + acidification."
+    trajectory:
+      - { time_ya: 65e6,  mass_kg: 5.0e11, label: "Modern scleractinian reefs rebuild after K-Pg" }
+      - { time_ya: 6000,  mass_kg: 8.0e11, label: "Holocene reef peak — sea-level stable, conditions ideal" }
+      - { time_ya: 50,    mass_kg: 7.0e11, label: "1975 — pre-bleaching baseline, mass coring underway" }
+      - { time_ya: 25,    mass_kg: 5.0e11, label: "2000 — ~30% lost to first global bleaching events" }
+      - { time_ya: 0,     mass_kg: 3.5e11, label: "Today — ~50% of 1980 baseline gone" }
+    sources: [iucn-cetaceans]
+
+# ─── Cultural and informational systems ──────────────────────────────
+  - id: religions
+    name: World religions (adherents)
+    category: people
+    color: "#9b6dc7"
+    prominence: 3
+    blurb: "Total mass of all religious adherents (≈ adherents × 60 kg). Buddhism 500 BCE, Christianity 1 CE, Islam 600 CE — three trajectories collapsed into one because they all follow the same shape: founder, slow Anatolian/Arabian/Indian century, then exponential during periods of empire + missionary expansion."
+    trajectory:
+      - { time_ya: 2500, mass_kg: 6.0e6,  label: "Buddhism founded; first organized world religion" }
+      - { time_ya: 2000, mass_kg: 1.0e8,  label: "Christianity emerges in Roman Judea" }
+      - { time_ya: 1400, mass_kg: 1.0e10, label: "Islam founded; spreads across Arabia + N. Africa" }
+      - { time_ya: 500,  mass_kg: 8.0e10, label: "Reformation + colonial exports begin" }
+      - { time_ya: 125,  mass_kg: 5.0e11, label: "1900 — ~75% of humanity religiously affiliated" }
+      - { time_ya: 0,    mass_kg: 4.5e11, label: "Today — ~85% affiliated; non-affiliated rising in West" }
+    sources: [pew-religion]
+
+  - id: wikipedia
+    name: Wikipedia (articles)
+    category: technology
+    color: "#5c6e7b"
+    prominence: 3
+    blurb: "From zero in Jan 2001 to 60M+ articles across 300+ languages today. Mass shown is paper-equivalent: average article ≈ 4 KB ≈ 0.02 g of printed paper if you imagine printing the whole thing."
+    trajectory:
+      - { time_ya: 25,   mass_kg: 0.0,    label: "Jan 2001 — Jimmy Wales + Larry Sanger launch with 0 articles" }
+      - { time_ya: 22,   mass_kg: 1.0e2,  label: "2003 — 100K articles, mostly English" }
+      - { time_ya: 18,   mass_kg: 1.0e4,  label: "2007 — 5M articles across major languages" }
+      - { time_ya: 10,   mass_kg: 5.0e4,  label: "2015 — 35M articles" }
+      - { time_ya: 0,    mass_kg: 1.2e6,  label: "Today — 60M articles in 300+ languages" }
+    sources: [wikimedia-stats]
+
+  - id: smartphones
+    name: Smartphones
+    category: technology
+    color: "#1a8fbf"
+    prominence: 2
+    blurb: "From the iPhone reveal in Jan 2007 to ~6.8 billion smartphones in active use today (~10¹² kg of hardware). Now the dominant computing surface for most of humanity — the largest physical mass of personal computing ever produced."
+    trajectory:
+      - { time_ya: 19,   mass_kg: 0.0,    label: "Jan 2007 — iPhone announced" }
+      - { time_ya: 15,   mass_kg: 1.0e8,  label: "2011 — 1B smartphone subscriptions" }
+      - { time_ya: 10,   mass_kg: 5.0e10, label: "2016 — 3.7B users, mobile passes desktop web" }
+      - { time_ya: 5,    mass_kg: 9.0e10, label: "2021 — 6B subscriptions, COVID accelerates dependence" }
+      - { time_ya: 0,    mass_kg: 1.4e12, label: "Today — ~6.8B active smartphones, ~200 g each" }
+    sources: [icann-stats]
+
   - id: wild-mammals
     name: Wild mammals
     category: biology
