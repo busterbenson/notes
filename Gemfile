@@ -1,9 +1,10 @@
 source "https://rubygems.org"
-ruby '~> 4.0'
+ruby '~> 3.3'
 
-# Ruby 3.4+ moved a chunk of stdlib gems out of default load path. The
-# Jekyll/Liquid/rmagick stack still requires several of them. Pinning here
-# so the build doesn't fail at boot on Ruby 4.
+# Ruby 3.4+ moved a chunk of stdlib gems out of default load path; Ruby 4.0
+# added ostruct to that list. Pinning here is harmless on Ruby 3.3 (where
+# they're still in stdlib) and forward-compatible if/when Netlify's image
+# moves to 3.4+ or 4.x.
 gem 'bigdecimal'
 gem 'observer'
 gem 'csv'
