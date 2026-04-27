@@ -38,10 +38,22 @@ module OkaynessPlugin
 
       themes.each { |theme| compute_node(theme, now, ratings_by_id, blending, computed) }
 
+      # Off-dashboard (GOD-residue) — projected GOD boards with no IOD presence
+      # (or only fragmentary presence). Not rated, not scored — *named absences*.
+      # Resolve `partial_into` board ids to their human names via `computed`
+      # so the page template can render link text without re-walking the tree.
+      off_dashboard = (tree_data["off_dashboard"] || []).map do |entry|
+        resolved_partial = (entry["partial_into"] || []).map do |bid|
+          { "id" => bid, "name" => (computed[bid] && computed[bid]["name"]) || bid }
+        end
+        entry.merge("partial_into_resolved" => resolved_partial)
+      end
+
       site.data["okayness"] ||= {}
-      site.data["okayness"]["computed"]    = computed
-      site.data["okayness"]["themes_flat"] = flatten(themes)
-      site.data["okayness"]["last_updated"] = now.iso8601
+      site.data["okayness"]["computed"]      = computed
+      site.data["okayness"]["themes_flat"]   = flatten(themes)
+      site.data["okayness"]["off_dashboard"] = off_dashboard
+      site.data["okayness"]["last_updated"]  = now.iso8601
       site.data["okayness"]["total_ratings"] = ratings_data["ratings"]&.length.to_i
     end
 

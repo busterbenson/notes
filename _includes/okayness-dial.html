@@ -17,9 +17,11 @@ s=4 → 0° (top), s=7 → 135° (bottom-right).
 Usage:
   {% include okayness-dial.html score=3.4 size=50 %}
   {% include okayness-dial.html score=nil size=50 %}   (empty)
+  {% include okayness-dial.html ghost=true size=36 %}  (off-dashboard / no needle)
 {%- endcomment -%}
 
 {%- assign size = include.size | default: 50 -%}
+{%- assign ghost = include.ghost | default: false -%}
 {%- assign has_score = false -%}
 {%- if include.score != nil and include.score != "" -%}{%- assign has_score = true -%}{%- endif -%}
 
@@ -34,8 +36,19 @@ Usage:
   {%- assign needle_color = "#222" -%}
 {%- endif -%}
 
-<svg class="okayness-dial" viewBox="0 0 100 100" width="{{ size }}" height="{{ size }}"
-     role="img" aria-label="Okayness score {{ include.score | default: 'unrated' }}">
+<svg class="okayness-dial{% if ghost %} okayness-dial-ghost{% endif %}" viewBox="0 0 100 100" width="{{ size }}" height="{{ size }}"
+     role="img" aria-label="{% if ghost %}Off-dashboard{% else %}Okayness score {{ include.score | default: 'unrated' }}{% endif %}">
+{%- if ghost -%}
+  <!-- Ghost dial — off-dashboard, no needle, faint disc, dashed arc, hollow numb-dot.
+       Visual stance: the dial exists as a *named absence*; it has no reading. -->
+  <circle cx="50" cy="50" r="46" fill="#faf8f2" stroke="#e6e4da" stroke-width="1" stroke-dasharray="2 3" opacity="0.55"/>
+  <g fill="none" stroke="#d8d2bc" stroke-width="6" stroke-linecap="butt" stroke-dasharray="2 4" opacity="0.6">
+    <path d="M 76.87 76.87 A 38 38 0 0 0 23.13 76.87"/>
+  </g>
+  <circle cx="50" cy="88" r="3" fill="none" stroke="#3d332e" stroke-width="1" opacity="0.5"/>
+  <circle cx="50" cy="50" r="2.5" fill="#bbb"/>
+</svg>
+{%- else -%}
   <!-- background disc -->
   <circle cx="50" cy="50" r="46" fill="#faf8f2" stroke="#e6e4da" stroke-width="1"/>
 
@@ -66,3 +79,4 @@ Usage:
   <!-- Center hub -->
   <circle cx="50" cy="50" r="3" fill="{{ needle_color }}"/>
 </svg>
+{%- endif -%}

@@ -64,6 +64,76 @@ themes:
       - { id: world-power-concentration, name: Power Concentration, resilience_days: 60 }
       - { id: world-longnow, name: Long-now, resilience_days: 60 }
 
+# Off-dashboard — GOD boards with no IOD presence (or only fragmentary presence).
+#
+# These are NOT rated. The hierarchy of the live themes above IS Buster's
+# salience function; depth = inverse top-of-mind-ness. Boards listed here are
+# *named absences* — projection from GOD to IOD that didn't take.
+#
+# status:
+#   never-cared — never installed on the dashboard. No engagement. The default
+#                 stance toward most planetary dials.
+#   numb        — was installed, the transducer stopped reading. The needle
+#                 sits at the dark dot. Engagement-with-numbness is its own
+#                 stance, distinct from never-cared.
+#   partial     — some sub-dial(s) absorbed by an IOD board, but the full board
+#                 is not installed. `partial_into` lists the IOD board ids that
+#                 carry the fragment.
+#
+# Each entry references its GOD page section so the off-dashboard list is
+# anchored to the canonical board it's projecting from.
+off_dashboard:
+  - id: god-national-security
+    name: Government / national-security POV
+    status: never-cared
+    god_anchor: "global-okayness-dashboard#Board: Government / national-security POV"
+    note: "Vantage mismatch — Buster doesn't work in or adjacent to national security. Filtered into Politics + Investments via second-order effects."
+
+  - id: god-rural-working-class
+    name: Rural / working-class vantage
+    status: never-cared
+    god_anchor: "global-okayness-dashboard#Board: Rural / working-class vantage"
+    note: "Geographic and class-position mismatch. Appropriate absence."
+
+  - id: god-religious-communities
+    name: Religious communities vantage
+    status: never-cared
+    god_anchor: "global-okayness-dashboard#Board: Religious communities vantage"
+    note: "Spirituality is named as personal practice. The institutional dials don't fit Buster's actual relationship to religion."
+
+  - id: god-immigrant-first-gen
+    name: Immigrant / first-generation vantage
+    status: never-cared
+    god_anchor: "global-okayness-dashboard#Board: Immigrant / first-generation vantage"
+    note: "Status mismatch."
+
+  - id: god-older-adults
+    name: Older-adults vantage
+    status: never-cared
+    god_anchor: "global-okayness-dashboard#Board: Older-adults vantage"
+    note: "Near-future Buster dials (eldercare, retirement-asset adequacy, cognitive decline). Not yet across the would-actually-rate-it threshold."
+
+  - id: god-electorate-priorities
+    name: US electorate priorities
+    status: partial
+    god_anchor: "global-okayness-dashboard#Board: US electorate priorities (2026 midterm cycle)"
+    partial_into: [basic-needs-budget, basic-needs-home, world-politics, world-war]
+    note: "Cost-of-living lands on Budget, housing on Home, threats-to-democracy on Politics, foreign-policy on War. Crime / abortion / education / addiction / racial issues are absent."
+
+  - id: god-gen-z
+    name: Gen Z / 20-somethings vantage
+    status: partial
+    god_anchor: "global-okayness-dashboard#Board: Gen Z / 20-somethings vantage"
+    partial_into: [social-niko, social-louie, world-environment, world-ai]
+    note: "Climate-induced family-planning anxiety lands on Environment + Niko/Louie; AI labor displacement on AI; mental-health partial via the kid boards."
+
+  - id: god-parents-school-age
+    name: Parents-of-school-aged-kids vantage
+    status: partial
+    god_anchor: "global-okayness-dashboard#Board: Parents-of-school-aged-kids vantage"
+    partial_into: [social-niko, social-louie]
+    note: "School safety, cell-phone-in-school, screen time, youth mental health — all absorbed by the named-kid boards rather than tracked as their own dial set."
+
 # Per-board blending overrides. Defaults are fine if you don't list a board.
 # blending:
 #   "self":
