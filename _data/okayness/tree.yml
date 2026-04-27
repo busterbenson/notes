@@ -22,6 +22,8 @@ themes:
       - { id: self-therapy, name: Therapy, resilience_days: 60 }
       - { id: self-psychedelics, name: Psychedelics, resilience_days: 60 }
       - { id: self-spirituality, name: Spirituality, resilience_days: 60 }
+      - { id: self-channel-hygiene, name: Channel Hygiene, resilience_days: 30 }
+      - { id: self-aliveness, name: Aliveness, resilience_days: 30 }
 
   - id: career
     name: Career
@@ -59,6 +61,8 @@ themes:
       - { id: world-politics, name: Politics, resilience_days: 60 }
       - { id: world-war, name: War, resilience_days: 60 }
       - { id: world-environment, name: Environment, resilience_days: 60 }
+      - { id: world-power-concentration, name: Power Concentration, resilience_days: 60 }
+      - { id: world-longnow, name: Long-now, resilience_days: 60 }
 
 # Per-board blending overrides. Defaults are fine if you don't list a board.
 # blending:

@@ -74,3 +74,19 @@ ratings:
   - id: world-environment
     at: 2026-04-22T12:43:01-07:00
     score: 1
+  - id: self-channel-hygiene
+    at: 2026-04-26T12:00:00-07:00
+    score: 3
+    note: blocklist exists, leakage real, algorithm > deliberate most days
+  - id: self-aliveness
+    at: 2026-04-26T12:00:00-07:00
+    score: 6
+    note: bell metaphor live, conviction-building, projects loud — alive but not peak
+  - id: world-power-concentration
+    at: 2026-04-26T12:00:00-07:00
+    score: 2
+    note: antitrust collapse + AI lab consolidation + billionaire scale — actively concerning, not despair
+  - id: world-longnow
+    at: 2026-04-26T12:00:00-07:00
+    score: 3
+    note: civilizational fragility open, birthday-50 work giving it a felt seat — uncomfortable but engaged
