@@ -110,62 +110,6 @@ sitemap: false
 
   .okayness-dial { display: block; flex-shrink: 0; }
 
-  /* ── Off-dashboard (GOD-residue) section ──────────────────────────── */
-  .ok-off-section {
-    margin-top: 2.25rem;
-    padding-top: 1.25rem;
-    border-top: 1px dashed #d8d2bc;
-  }
-  .ok-off-header {
-    display: flex; align-items: baseline; justify-content: space-between;
-    flex-wrap: wrap; gap: 0.6rem;
-    margin-bottom: 0.4rem;
-  }
-  .ok-off-header h2 {
-    font-size: 0.95rem; font-weight: 600; color: #6f6a55;
-    margin: 0; letter-spacing: 0.02em;
-  }
-  .ok-off-intro {
-    color: #8a8470; font-size: 0.82rem; line-height: 1.55;
-    margin: 0 0 1rem 0; max-width: 60ch;
-  }
-  .ok-off-list {
-    list-style: none; padding: 0; margin: 0;
-    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.4rem;
-  }
-  @media (max-width: 640px) { .ok-off-list { grid-template-columns: 1fr; } }
-  .ok-off-item {
-    display: flex; align-items: flex-start; gap: 0.7rem;
-    padding: 0.55rem 0.6rem;
-    border-radius: 6px;
-    background: transparent;
-    opacity: 0.78;
-  }
-  .ok-off-item:hover { opacity: 1; background: #f6f1de; }
-  .ok-off-info { flex: 1; min-width: 0; }
-  .ok-off-name {
-    font-size: 0.88rem; color: #6f6a55; font-weight: 500;
-  }
-  .ok-off-meta {
-    font-size: 0.7rem; color: #a59f88;
-    margin-top: 0.15rem; line-height: 1.45;
-  }
-  .ok-off-status {
-    display: inline-block;
-    font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.07em;
-    padding: 0.05rem 0.4rem; border-radius: 3px;
-    margin-left: 0.35rem; vertical-align: 1px;
-    font-weight: 600;
-  }
-  .ok-off-status.never-cared { background: #ece8d8; color: #8a8470; }
-  .ok-off-status.numb        { background: #e0d4cc; color: #5a4a42; }
-  .ok-off-status.partial     { background: #e3ddc4; color: #6f6a3a; }
-  .ok-off-partial-into {
-    font-size: 0.7rem; color: #8a8470; font-style: italic;
-  }
-  .okayness-dial-ghost { opacity: 0.85; }
-
   /* ── GOD-link badge ───────────────────────────────────────────────── */
   /* A small dot next to a board name signals "this IOD board links to
      a node in the canonical GOD tree." Hover/tap reveals which one. */
@@ -180,12 +124,137 @@ sitemap: false
     transition: background 0.1s ease;
   }
   .ok-god-badge:hover { background: #8a8470; }
+
+  /* ── Full GOD collapsible tree ────────────────────────────────────── */
+  /* This is the index/map view of the entire canonical GOD, with linkage
+     state at every node. Visually QUIETER than the dial widgets above —
+     bulleted, monospace-friendly, no measurements. The actual measurements
+     live in the dials; this view is the absence-and-presence pattern. */
+  .ok-god-section {
+    margin-top: 2.25rem;
+    padding-top: 1.25rem;
+    border-top: 1px dashed #d8d2bc;
+  }
+  .ok-god-header {
+    display: flex; align-items: baseline; justify-content: space-between;
+    flex-wrap: wrap; gap: 0.6rem;
+    margin-bottom: 0.4rem;
+  }
+  .ok-god-header h2 {
+    font-size: 0.95rem; font-weight: 600; color: #6f6a55;
+    margin: 0; letter-spacing: 0.02em;
+  }
+  .ok-god-intro {
+    color: #8a8470; font-size: 0.82rem; line-height: 1.55;
+    margin: 0 0 0.6rem 0; max-width: 62ch;
+  }
   .ok-god-coverage {
-    margin-top: 0.6rem;
-    font-size: 0.78rem; color: #8a8470;
-    font-style: italic;
+    font-size: 0.78rem; color: #8a8470; font-style: italic;
+    margin: 0 0 1rem 0;
   }
   .ok-god-coverage strong { color: #6f6a55; font-style: normal; }
+  .ok-god-coverage .swatch {
+    display: inline-block; width: 0.55rem; height: 0.55rem;
+    border-radius: 50%; vertical-align: 1px;
+    margin: 0 0.15rem 0 0.4rem;
+  }
+
+  .god-tree, .god-tree ul {
+    list-style: none; margin: 0; padding: 0;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.82rem;
+  }
+  .god-tree { line-height: 1.55; }
+  .god-tree ul { padding-left: 1.25rem; border-left: 1px dotted #e2dcc6; margin-left: 0.45rem; }
+
+  .god-umbrella { margin-top: 0.5rem; }
+  .god-umbrella > summary {
+    list-style: none; cursor: pointer;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.85rem; font-weight: 600;
+    color: #6f6a55; text-transform: uppercase; letter-spacing: 0.07em;
+    padding: 0.35rem 0;
+  }
+  .god-umbrella > summary::-webkit-details-marker { display: none; }
+  .god-umbrella > summary::before {
+    content: "▸"; display: inline-block; width: 1rem;
+    color: #b6ad8a; transition: transform 0.1s ease;
+  }
+  .god-umbrella[open] > summary::before { content: "▾"; }
+
+  .god-node { margin: 0.05rem 0; }
+  .god-node > summary, .god-leaf {
+    list-style: none; cursor: pointer;
+    display: flex; align-items: baseline; gap: 0.45rem;
+    padding: 0.1rem 0;
+    color: #4a4538;
+  }
+  .god-leaf { cursor: default; }
+  .god-node > summary::-webkit-details-marker { display: none; }
+  .god-node > summary::before {
+    content: "▸"; display: inline-block; width: 0.9rem;
+    color: #b6ad8a; flex-shrink: 0;
+  }
+  .god-node[open] > summary::before { content: "▾"; }
+  .god-leaf::before {
+    content: "·"; display: inline-block; width: 0.9rem;
+    color: #c8c1a8; flex-shrink: 0; text-align: center;
+  }
+
+  .god-marker {
+    display: inline-block; flex-shrink: 0;
+    width: 0.8rem; text-align: center;
+    font-weight: 600; line-height: 1;
+  }
+  .god-marker.linked     { color: #2d7a3a; }   /* filled check */
+  .god-marker.partial    { color: #b07c2d; }   /* half-state   */
+  .god-marker.not-linked { color: #b6ad8a; }   /* empty        */
+  .god-marker.numb       { color: #6e5a4f; }   /* dead-dot     */
+
+  .god-name { color: #2a2a2a; }
+  .god-node[data-state="not-linked"] > summary > .god-name,
+  .god-leaf[data-state="not-linked"] > .god-name {
+    color: #8a8470;
+  }
+  .god-node[data-state="numb"] > summary > .god-name,
+  .god-leaf[data-state="numb"] > .god-name {
+    color: #6e5a4f; font-style: italic;
+  }
+
+  .god-id {
+    color: #b6ad8a; font-size: 0.7rem;
+    margin-left: 0.3rem;
+  }
+  .god-link-into {
+    color: #6f6a55; font-size: 0.72rem;
+    margin-left: 0.5rem;
+  }
+  .god-link-into a { color: #2d7a3a; text-decoration: none; border-bottom: 1px dotted #b8d4be; }
+  .god-link-into a:hover { border-bottom-style: solid; }
+
+  .god-detail {
+    margin: 0.2rem 0 0.4rem 1.85rem;
+    padding: 0.3rem 0.55rem;
+    background: #f6f1de;
+    border-radius: 4px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.78rem; color: #6f6a55; line-height: 1.5;
+  }
+  .god-detail .god-summary { color: #4a4538; }
+  .god-detail .god-note {
+    margin-top: 0.25rem; font-style: italic;
+  }
+  .god-detail .god-status-tag {
+    display: inline-block;
+    font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.07em;
+    padding: 0.05rem 0.35rem; border-radius: 3px;
+    margin-right: 0.3rem; vertical-align: 1px;
+    font-weight: 600;
+    background: #ece8d8; color: #8a8470;
+  }
+  .god-detail .god-status-tag.partial     { background: #e3ddc4; color: #6f6a3a; }
+  .god-detail .god-status-tag.numb        { background: #e0d4cc; color: #5a4a42; }
+  .god-detail .god-status-tag.never-cared { background: #ece8d8; color: #8a8470; }
 </style>
 
 <p class="ok-intro">
@@ -273,48 +342,45 @@ sitemap: false
 {% endfor %}
 </div>
 
-{% if site.data.okayness.off_dashboard and site.data.okayness.off_dashboard.size > 0 %}
-<section class="ok-off-section">
-  <div class="ok-off-header">
-    <h2>Off-Dashboard</h2>
-    <span class="ok-off-meta">{{ site.data.okayness.off_dashboard.size }} board{% if site.data.okayness.off_dashboard.size != 1 %}s{% endif %}</span>
+{% if site.data.okayness.god_render %}
+<section class="ok-god-section">
+  <div class="ok-god-header">
+    <h2>Global dashboard projection</h2>
+    {% assign tot = site.data.okayness.god_render.totals %}
+    <span class="ok-god-coverage">{{ tot.total }} GOD nodes</span>
   </div>
-  <p class="ok-off-intro">
-    Boards I project onto the world but don't track here. The hierarchy above is
-    my salience function; this list is its named complement. Each entry is a
-    board on the global dashboard that has no IOD presence — or only a fragment
-    that landed inside one of the rated boards. The absence is itself the data.
+  <p class="ok-god-intro">
+    The full <a href="https://github.com/busterbenson/chalantbot-obsidian/blob/main/Wiki/pages/global-okayness-dashboard.md">canonical GOD tree</a>
+    rendered as an index, with every node tagged by whether it lands somewhere on the dial grid above.
+    The hierarchy here is the world's; the hierarchy above is mine. The pattern of
+    presence and absence — at every level — is the salience function, made legible.
   </p>
-  {% if site.data.okayness.god_coverage %}
   <p class="ok-god-coverage">
-    GOD coverage: <strong>{{ site.data.okayness.god_coverage.linked }}</strong>
-    of <strong>{{ site.data.okayness.god_coverage.total_known }}</strong>
-    known GOD nodes are linked from the live dashboard above
-    (<span class="ok-god-badge" title="GOD link"></span> indicates a linked board);
-    {{ site.data.okayness.god_coverage.off_dashboard }} more sit in this list as named absences.
+    <span class="god-marker linked">●</span> <strong>{{ tot.linked }}</strong> linked
+    <span class="god-marker partial">◐</span> <strong>{{ tot.partial }}</strong> partial
+    <span class="god-marker not-linked">○</span> <strong>{{ tot.not_linked }}</strong> not linked
+    {% if tot.numb > 0 %}<span class="god-marker numb">●</span> <strong>{{ tot.numb }}</strong> numb{% endif %}
   </p>
-  {% endif %}
-  <ul class="ok-off-list">
-    {% for entry in site.data.okayness.off_dashboard %}
-      <li class="ok-off-item">
-        {% include okayness-dial.html ghost=true size=32 %}
-        <div class="ok-off-info">
-          <div class="ok-off-name">
-            {{ entry.name }}
-            <span class="ok-off-status {{ entry.status }}">{{ entry.status | replace: "-", " " }}</span>
-          </div>
-          <div class="ok-off-meta">
-            {{ entry.note }}
-            {% if entry.status == "partial" and entry.partial_into_resolved %}
-              <div class="ok-off-partial-into">
-                fragments live in:
-                {% for p in entry.partial_into_resolved %}{{ p.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}
-              </div>
-            {% endif %}
-          </div>
-        </div>
-      </li>
-    {% endfor %}
+
+  {%- assign render = site.data.okayness.god_render -%}
+
+  <ul class="god-tree">
+    <li>
+      <details class="god-umbrella">
+        <summary>Buster's bubble &middot; {{ render.bubble.size }} boards</summary>
+        <ul>
+          {% for board in render.bubble %}{% include okayness-god-node.html node=board %}{% endfor %}
+        </ul>
+      </details>
+    </li>
+    <li>
+      <details class="god-umbrella">
+        <summary>Outside the bubble &middot; {{ render.outside.size }} boards</summary>
+        <ul>
+          {% for board in render.outside %}{% include okayness-god-node.html node=board %}{% endfor %}
+        </ul>
+      </details>
+    </li>
   </ul>
 </section>
 {% endif %}
@@ -333,6 +399,6 @@ sitemap: false
   </div>
   <p><strong>How the math works.</strong> Each board has its own half-life — how long it takes for an old rating to count half as much. Body and relationships move on a 14-day half-life; bigger structural things (Therapy, Spirituality, World) on 60. Parent themes blend their children. Trend is the score now minus the score 30 days ago.</p>
   <p><strong>Hierarchy is salience.</strong> A board near the top of the dashboard is top of mind; a board nested inside a theme is less so. The ordering isn't an organizational convenience — it's the projection function from the world's dashboard onto the parts of it I've actually installed.</p>
-  <p><strong>Off-Dashboard.</strong> The list at the bottom names boards that exist on the world's dashboard but not on mine — either fragments absorbed into a rated board (<em>partial</em>), boards that were here and went dead (<em>numb</em>), or boards I've never installed (<em>never-cared</em>). Never-cared isn't apathy; it's the honest stance toward dials built for other bells. Numb and never-cared are different — engagement-with-numbness vs. no engagement at all.</p>
+  <p><strong>Global dashboard projection.</strong> The collapsible tree at the bottom is the entire <a href="https://github.com/busterbenson/chalantbot-obsidian/blob/main/Wiki/pages/global-okayness-dashboard.md">canonical GOD</a>, with each node marked <span class="god-marker linked">●</span> linked (an IOD board points at it), <span class="god-marker partial">◐</span> partial (some children linked, some not, or absorbed by a nearby IOD board), <span class="god-marker not-linked">○</span> not linked (no IOD coupling — most often a vantage built for other bells), or <span class="god-marker numb">●</span> numb (was tracked, transducer went dead). Expand a node to see what links into it (or what doesn't), the one-line summary from the wiki, and any partial-fragmentation notes.</p>
   <p><strong>About this page.</strong> Subjective and just for me. Open and unlinked from the homepage. Boards and ratings live in <code>_data/okayness/</code> in the site repo.</p>
 </div>

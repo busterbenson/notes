@@ -28,6 +28,7 @@ module OkaynessPlugin
     def generate(site)
       tree_data    = site.data.dig("okayness", "tree") || {}
       ratings_data = site.data.dig("okayness", "ratings") || {}
+      god_data     = site.data.dig("okayness", "god_tree") || {}
       blending     = tree_data["blending"] || {}
 
       themes = tree_data["themes"] || []
@@ -38,49 +39,146 @@ module OkaynessPlugin
 
       themes.each { |theme| compute_node(theme, now, ratings_by_id, blending, computed) }
 
-      # Off-dashboard (GOD-residue) — projected GOD boards with no IOD presence
-      # (or only fragmentary presence). Not rated, not scored — *named absences*.
+      # Off-dashboard (GOD-residue) — IOD-side metadata about *why* certain
+      # GOD nodes aren't tracked. Not rated, not scored — *named absences*.
+      # Lives here (option a from the design doc): GOD structure stays clean
+      # in god_tree.yml; IOD-specific status / partial_into / note fields stay
+      # in tree.yml under off_dashboard. The Full-GOD tree section below reads
+      # from BOTH plus tree.yml's god_anchor fields to render linkage state.
       # Resolve `partial_into` board ids to their human names via `computed`
-      # so the page template can render link text without re-walking the tree.
+      # so the template can render link text without re-walking the tree.
       off_dashboard = (tree_data["off_dashboard"] || []).map do |entry|
         resolved_partial = (entry["partial_into"] || []).map do |bid|
           { "id" => bid, "name" => (computed[bid] && computed[bid]["name"]) || bid }
         end
         entry.merge("partial_into_resolved" => resolved_partial)
       end
+      off_dashboard_by_anchor = off_dashboard
+        .each_with_object({}) { |e, h| h[e["god_anchor"]] = e if e["god_anchor"] }
 
-      # GOD coverage — count how many GOD nodes the IOD links to via god_anchor.
-      # Walks every board + sub_dial in the live themes and collects unique
-      # god_anchor ids; off_dashboard god_anchors count as "named absences"
-      # that ARE in the GOD's universe (just not Tracked here).
-      iod_anchors = collect_god_anchors(themes)
-      off_anchors = (tree_data["off_dashboard"] || []).map { |e| e["god_anchor"] }.compact.uniq
-      total_known_god_anchors = (iod_anchors + off_anchors).uniq
+      # GOD coverage — collect every god_anchor referenced from the live IOD,
+      # then walk the canonical god_tree.yml so we know the full universe of
+      # GOD nodes (board + dial). For each GOD node we compute a linkage
+      # state: linked / partial / not-linked / numb. The Full-GOD section in
+      # the page template renders this tree.
+      iod_anchors_with_owners = collect_iod_anchor_owners(themes, computed)
+      iod_anchor_ids = iod_anchors_with_owners.keys
+
+      god_render = build_god_tree_render(
+        god_data,
+        iod_anchors_with_owners,
+        off_dashboard_by_anchor,
+      )
+
+      total_known_god_anchors = (iod_anchor_ids + off_dashboard.map { |e| e["god_anchor"] }.compact).uniq
 
       site.data["okayness"] ||= {}
       site.data["okayness"]["computed"]      = computed
       site.data["okayness"]["themes_flat"]   = flatten(themes)
       site.data["okayness"]["off_dashboard"] = off_dashboard
+      site.data["okayness"]["god_render"]    = god_render
       site.data["okayness"]["last_updated"]  = now.iso8601
       site.data["okayness"]["total_ratings"] = ratings_data["ratings"]&.length.to_i
       site.data["okayness"]["god_coverage"]  = {
-        "linked"       => iod_anchors.size,
-        "off_dashboard"=> off_anchors.size,
+        "linked"       => iod_anchor_ids.size,
+        "off_dashboard"=> off_dashboard.size,
         "total_known"  => total_known_god_anchors.size,
+        "totals"       => god_render["totals"],
       }
     end
 
-    # Walk themes and pull every god_anchor — both on boards and on
-    # nested sub_dials. Returns a unique list of GOD ids the IOD points at.
-    def collect_god_anchors(nodes, out = [])
+    # Walk themes and collect every god_anchor mapping. Returns a hash:
+    #   { "<god-anchor-id>" => [ { "id" => iod_id, "name" => iod_name }, ... ] }
+    # so the GOD render can show *which* IOD board(s) link to a given GOD
+    # node. A GOD anchor can be linked from more than one IOD board (the
+    # canonical example: markets/macro is linked from both Budget and
+    # Investments).
+    def collect_iod_anchor_owners(nodes, computed, owners = {}, parent_owner = nil)
       nodes.each do |n|
-        out << n["god_anchor"] if n["god_anchor"]
-        collect_god_anchors(n["children"] || [], out) if n["children"]
+        node_owner = if computed[n["id"]]
+                       { "id" => n["id"], "name" => computed[n["id"]]["name"] || n["name"] }
+                     else
+                       { "id" => n["id"], "name" => n["name"] }
+                     end
+        if n["god_anchor"]
+          (owners[n["god_anchor"]] ||= []) << node_owner
+        end
+        collect_iod_anchor_owners(n["children"] || [], computed, owners, node_owner) if n["children"]
         (n["sub_dials"] || []).each do |s|
-          out << s["god_anchor"] if s["god_anchor"]
+          if s["god_anchor"]
+            sub_owner = { "id" => s["id"], "name" => s["name"], "parent" => node_owner }
+            (owners[s["god_anchor"]] ||= []) << sub_owner
+          end
         end
       end
-      out.compact.uniq
+      owners
+    end
+
+    # Build a render-ready tree of the canonical GOD with linkage state for
+    # every node. State values:
+    #   linked     — at least one IOD board references this exact id.
+    #   partial    — none / some children linked, with explicit off_dashboard
+    #                metadata marking this as a partial fragmentation; OR
+    #                a parent whose sub-dials have mixed link state.
+    #   not-linked — no IOD reference, no off_dashboard entry. Pure absence.
+    #   numb       — was tracked, transducer is dead. Currently unused; the
+    #                schema supports it for parity with the prior off_dashboard
+    #                taxonomy (status: numb).
+    # never-cared maps to not-linked + an off_dashboard note ("never-cared" is
+    # a *reason* for not-linked, not a separate state on the tree itself).
+    def build_god_tree_render(god_data, anchor_owners, off_by_anchor)
+      totals = { "total" => 0, "linked" => 0, "partial" => 0,
+                 "not_linked" => 0, "numb" => 0 }
+
+      walker = lambda do |nodes|
+        (nodes || []).map do |node|
+          children = walker.call(node["dials"])
+          owners = anchor_owners[node["id"]] || []
+          off    = off_by_anchor[node["id"]]
+
+          state =
+            if owners.any?
+              if children.any? && children.any? { |c| c["state"] == "not-linked" } && children.any? { |c| c["state"] == "linked" }
+                "partial"
+              else
+                "linked"
+              end
+            elsif off && off["status"] == "numb"
+              "numb"
+            elsif off && off["status"] == "partial"
+              "partial"
+            elsif children.any? && children.any? { |c| c["state"] == "linked" || c["state"] == "partial" }
+              "partial"
+            elsif off && off["status"] == "never-cared"
+              "not-linked"
+            else
+              "not-linked"
+            end
+
+          totals["total"] += 1
+          case state
+          when "linked"     then totals["linked"]     += 1
+          when "partial"    then totals["partial"]    += 1
+          when "numb"       then totals["numb"]       += 1
+          else                   totals["not_linked"] += 1
+          end
+
+          {
+            "id"           => node["id"],
+            "name"         => node["name"],
+            "summary"      => node["summary"],
+            "state"        => state,
+            "owners"       => owners,
+            "off_metadata" => off,
+            "dials"        => children,
+          }
+        end
+      end
+
+      bubble  = walker.call(god_data["bubble"])
+      outside = walker.call(god_data["outside"])
+
+      { "bubble" => bubble, "outside" => outside, "totals" => totals }
     end
 
     private
