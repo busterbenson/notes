@@ -1,10 +1,11 @@
 source "https://rubygems.org"
-ruby '~> 3.3'
+# No `ruby` pin in the Gemfile — let .ruby-version drive (Netlify reads it).
+# Local 4.0.2 builds use these stdlib pins; Netlify's 3.1.3 build doesn't
+# need them but pulling the gems is harmless.
 
 # Ruby 3.4+ moved a chunk of stdlib gems out of default load path; Ruby 4.0
-# added ostruct to that list. Pinning here is harmless on Ruby 3.3 (where
-# they're still in stdlib) and forward-compatible if/when Netlify's image
-# moves to 3.4+ or 4.x.
+# added ostruct to that list. Pinning here is harmless on Ruby 3.1/3.3
+# (where they're still in stdlib) and required on Ruby 4.
 gem 'bigdecimal'
 gem 'observer'
 gem 'csv'
