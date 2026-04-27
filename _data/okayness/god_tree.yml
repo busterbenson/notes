@@ -2,380 +2,527 @@
 # Source of truth: ~/chalantbot/obsidian/Chalant/Wiki/pages/global-okayness-dashboard.md
 # Any structural change to the wiki should be reflected here in the same commit.
 #
-# Schema:
-#   bubble: list of "Buster-bubble" GOD boards (the 10 boards the wiki treats
-#     as the primary dial-space). Each has:
-#       id      — kebab-case slug per the scheme on the GOD wiki page
-#                 ("GOD id scheme (stable anchors for IOD links)").
-#                 IOD `god_anchor` fields point at these ids.
-#       name    — human display name (matches the wiki section header).
-#       summary — one-line description, distilled from the wiki's
-#                 "Measures" / "Why on the dashboard" prose.
-#       dials   — optional list of named sub-dials. Each carries the same
-#                 fields plus its own slug under `<board-slug>/<dial-slug>`.
+# === UNIFIED THEME TREE (2026-04-23) =========================================
+# Earlier versions of this file split the GOD into two trees with two different
+# organizing principles fighting each other: "Buster's bubble" (10 thematic
+# boards) and "Outside the bubble" (8 demographic vantages). The unification
+# folds everything into a single theme-organized hierarchy. Whether a dial sits
+# inside Buster's current bubble is now a *property* of the dial (`bubble:
+# true|false`), not a structural prefix. Demographic vantages — national-
+# security analyst, median voter, rural America, religious communities, Gen Z,
+# older adults, immigrant / first-gen, parents of school-age kids — are
+# preserved as a `vantages:` list on each dial that needs them, so the same
+# information ("salient to this constituency") is recoverable without forcing
+# the tree to grow two competing skeletons.
 #
-#   outside: list of "Outside-Buster's-Bubble" boards. Same shape, but each
-#     id is prefixed `outside/<vantage-slug>` per the wiki's slug scheme.
-#     Sub-dials use `outside/<vantage>/<dial>`. The wiki currently does NOT
-#     enumerate slugs for outside-bubble dials (board-only); slugs here are
-#     generated from the dial names following kebab-case-most-distinctive-word
-#     and are not yet referenced from the IOD. They exist so the rendering
-#     code can walk a complete tree.
+# Schema:
+#   themes — top-level list. Each theme has:
+#     id      — kebab-case slug per the GOD wiki's id scheme.
+#     name    — human display name (matches the wiki section header).
+#     summary — one-line description.
+#     dials   — list of named sub-dials. Each carries:
+#       id          — `<theme-slug>/<dial-slug>` per the wiki's id scheme.
+#       name        — display name.
+#       summary     — one-line description.
+#       bubble      — true if this dial was part of the original Buster-bubble
+#                     subset (was on his radar pre-unification). Dials added to
+#                     unified themes from the demographic-vantage tree default
+#                     to false.
+#       vantages    — optional list of demographic vantages for which this dial
+#                     is especially salient (e.g. [parents] for school cell-
+#                     phone policy, [national-security] for undersea cables).
+#                     Empty / absent means "broadly salient" or "Buster-bubble
+#                     only — no vantage label needed."
+#       cross_themes — optional list of *other* theme ids this dial also
+#                     belongs to. The dial lives under its primary theme;
+#                     cross_themes is a hint for cross-linking, not a
+#                     structural duplicate.
+#
+# Vantage vocabulary (for the `vantages:` field):
+#   national-security   — government / national-security analyst POV
+#   electorate          — US median voter (poll-tracking constituency)
+#   rural               — rural / working-class vantage
+#   religious           — religious-communities vantage
+#   gen-z               — Gen Z / 20-somethings vantage
+#   older-adults        — older-adults vantage
+#   immigrant           — immigrant / first-generation vantage
+#   parents             — parents-of-school-aged-kids vantage
 #
 # IOD linkage:
 #   This file describes the GOD only. Whether any given node is "linked"
 #   (has an IOD board pointing at it via god_anchor) is determined at build
 #   time by walking _data/okayness/tree.yml's god_anchor fields. See
-#   _plugins/okayness.rb.
+#   _plugins/okayness.rb. The `outside/<vantage>/<dial>` ids of the previous
+#   structure no longer exist; ids that used to live there have been re-homed
+#   under their primary theme with a `vantages: [...]` annotation.
 
-bubble:
+themes:
   - id: wars
     name: Wars and Violence
-    summary: "Acute and chronic armed conflict — phase-transition risk and the chronic humanitarian state."
+    summary: "Acute and chronic armed conflict — phase-transition risk and the chronic humanitarian state, plus how the same dials read from a voter / immigrant vantage."
     dials:
       - id: wars/hormuz
         name: Hormuz / US-Iran
         summary: "Whether the US-Iran ceasefire holds and whether the Strait of Hormuz becomes a shooting gallery."
+        bubble: true
       - id: wars/gaza
         name: Gaza / Israel-Palestine
         summary: "Cumulative humanitarian state of an ongoing collapse."
+        bubble: true
       - id: wars/long-tails
         name: Ukraine, Sudan, the long tails
         summary: "Long-running conflicts that have aged out of the foreground but are still happening."
+        bubble: true
+      - id: wars/electorate-foreign-policy
+        name: Foreign policy / wars (voter view)
+        summary: "Israel-Gaza, Ukraine-Russia, Iran-Hormuz, China-Taiwan posture as it lands in US elections — troop risk, gas prices, US standing."
+        bubble: false
+        vantages: [electorate]
+        cross_themes: [politics]
+      - id: wars/foreign-policy-home
+        name: Foreign-policy effects on home country
+        summary: "US sanctions, aid, trade, military involvement as it touches one's family abroad — Mexican, Iranian, Chinese, Filipino, Salvadoran, Ukrainian, Israeli, Palestinian, etc. corridors."
+        bubble: false
+        vantages: [immigrant]
 
   - id: climate
-    name: Climate
-    summary: "The slow planetary substrate dial plus the photogenic-disaster surface dial plus the biosphere foundation."
+    name: Climate and Biosphere
+    summary: "The slow planetary substrate dial, the photogenic-disaster surface dial, the biosphere foundation, and the way climate enters intimate decisions about whether to have kids."
     dials:
       - id: climate/slow
         name: Slow climate (the one we don't watch)
         summary: "Baseline temperature, ice mass, ocean heat content, biodiversity loss — technically dominant, perceptually subordinate."
+        bubble: true
       - id: climate/acute
         name: Acute climate (the one we do watch)
         summary: "Fires, floods, hurricanes, cascading weather events — visceral and photogenic."
+        bubble: true
       - id: climate/biosphere
         name: Biosphere / mass extinction
         summary: "Species loss, mycelial collapse, pollinator decline, soil degradation — the foundation under everything else."
+        bubble: true
+      - id: climate/family-planning-anxiety
+        name: Climate-induced family-planning anxiety
+        summary: "Younger adults explicitly weighing climate in fertility decisions; climate-grief support groups; 'should I have kids' as a sustained genre."
+        bubble: false
+        vantages: [gen-z]
+        cross_themes: [education-next-generation, long-now]
 
   - id: markets
-    name: Markets / Economy
-    summary: "Macro narrative, the SaaS canary near the laptop, and the AI-labor-displacement leading edge."
+    name: Markets and Economy
+    summary: "Macro narrative, the SaaS canary near the laptop, AI labor displacement at the leading edge, plus the cost-of-living / housing / commodity / remittance / retirement dials that organize most kitchen-table economic anxiety."
     dials:
       - id: markets/macro
         name: The economy as macroeconomic narrative
         summary: "Inflation, employment, debt, asset bubbles — the dial that touches every body via rent, food, retirement."
+        bubble: true
       - id: markets/saas
         name: SaaS / digital revenue (the canary near the laptop)
         summary: "Small-business and indie revenue, subscription retention, platform extraction."
+        bubble: true
       - id: markets/ai-labor
         name: AI labor displacement
         summary: "Whether knowledge-work prices are starting to actually move."
+        bubble: true
+        cross_themes: [ai-tech]
+      - id: markets/cost-of-living
+        name: Cost of living / inflation (kitchen-table)
+        summary: "Grocery, rent, energy, insurance, services inflation — the dial that consistently tops every poll. 64% of voters call it 'a very serious problem.'"
+        bubble: false
+        vantages: [electorate]
+      - id: markets/housing
+        name: Housing affordability
+        summary: "Rent-to-income, first-time homebuyer entry rate, housing-starts vs demand, zoning reform momentum — the structural-economics dial covered as a housing-market story."
+        bubble: false
+        vantages: [electorate]
+      - id: markets/housing-acute-gen-z
+        name: Housing affordability (acute version)
+        summary: "Rent-to-income, first-apartment entry, parents'-basement occupancy, frozen-market effects on under-35s — the dial defining whether independent adulthood is even available."
+        bubble: false
+        vantages: [gen-z]
+        cross_themes: [markets]
+      - id: markets/manufacturing
+        name: Manufacturing employment / factory closures
+        summary: "Announced closures, plant openings, reshoring data, regional employment trends in Rust Belt and rural South."
+        bubble: false
+        vantages: [rural]
+      - id: markets/agriculture
+        name: Agricultural prices / farm economy
+        summary: "Commodity prices, input costs, trade-policy effects, farm consolidation — whether a generationally-owned farm survives."
+        bubble: false
+        vantages: [rural]
+      - id: markets/remittances
+        name: Remittances
+        summary: "Outflow volumes, transaction-fee policy, banking-access rules, proposed remittance taxes — US household economics linked to home-country economics for tens of millions."
+        bubble: false
+        vantages: [immigrant]
+      - id: markets/retirement-assets
+        name: Retirement-asset adequacy
+        summary: "401(k) and IRA balances by cohort, defined-benefit pension coverage, working-into-old-age rates."
+        bubble: false
+        vantages: [older-adults]
 
   - id: politics
-    name: Politics / Governance
-    summary: "Whether the institutions that constrain power still constrain it."
+    name: Politics and Governance
+    summary: "Whether the institutions that constrain power still constrain it, plus the specific issue dials (immigration enforcement, abortion, guns, civil rights, religious liberty, threats-to-democracy as voter alarm) that organize US political life."
     dials:
       - id: politics/democracy
         name: US democracy / rule of law
         summary: "Whether the institutions that constrain power still do."
+        bubble: true
       - id: politics/executive-overreach
         name: Executive overreach
         summary: "Unilateral executive action, regulator capture, normalization of orders that would have been scandals."
+        bubble: true
       - id: politics/courts
         name: Court legitimacy
         summary: "Whether court rulings are accepted as binding by the parties they constrain."
+        bubble: true
+      - id: politics/threats-to-democracy
+        name: Threats to democracy / institutional erosion (voter view)
+        summary: "Election-administration trust, peaceful-transfer norms, executive-power expansion, judicial independence — alarm rising in both coalitions, each naming the other as the threat."
+        bubble: false
+        vantages: [electorate]
+      - id: politics/immigration-electorate
+        name: Immigration / border (electorate view)
+        summary: "Border encounters, ICE enforcement tempo, deportation numbers, legal-immigration backlog, refugee admissions — second-most-cited problem in Gallup Feb 2026."
+        bubble: false
+        vantages: [electorate]
+      - id: politics/deportation-enforcement
+        name: Deportation / enforcement policy (immigrant view)
+        summary: "ICE detentions, removals, due-process erosion, third-country removals, mixed-status separations — the same underlying actions, read very differently from the receiving end."
+        bubble: false
+        vantages: [immigrant]
+        cross_themes: [politics]
+      - id: politics/family-separation
+        name: Family-separation / mixed-status precarity
+        summary: "Children with one or more undocumented parent, citizenship case backlog, family-reunification visa wait times."
+        bubble: false
+        vantages: [immigrant]
+      - id: politics/naturalization-asylum
+        name: Naturalization / asylum backlog
+        summary: "USCIS processing times, asylum-court backlogs, work-permit availability for pending cases."
+        bubble: false
+        vantages: [immigrant]
+      - id: politics/abortion
+        name: Abortion
+        summary: "State-level access, ballot-initiative results, IVF and contraception protections downstream of Dobbs."
+        bubble: false
+        vantages: [electorate]
+      - id: politics/guns
+        name: Guns / gun violence
+        summary: "Mass-shooting frequency, total firearm deaths, legislative response, school-shooting drills as cultural baseline."
+        bubble: false
+        vantages: [electorate]
+        cross_themes: [education-next-generation]
+      - id: politics/civil-rights
+        name: Racial issues / civil rights
+        summary: "DEI rollback, voting access, policing, immigration enforcement, hate-crime tempo."
+        bubble: false
+        vantages: [electorate]
+      - id: politics/religious-liberty
+        name: Religious liberty / free exercise
+        summary: "SCOTUS religious-liberty cases, accommodations litigation, hostility-to-faith perceptions."
+        bubble: false
+        vantages: [religious]
 
   - id: ai-tech
-    name: AI / Technology
-    summary: "Capability trajectory, alignment, agent security in the wild, and cognitive ecology."
+    name: AI and Technology
+    summary: "Capability trajectory, alignment, agent security in the wild, cognitive ecology — and the entry-level labor edge where the cohort that's about to enter the market hits the front of it."
     dials:
       - id: ai-tech/capability
         name: AI capability trajectory
         summary: "What the frontier models can do and how fast that's changing."
+        bubble: true
       - id: ai-tech/alignment
         name: Alignment / safety
         summary: "Whether we'll know if a model is misaligned before deployment."
+        bubble: true
       - id: ai-tech/agent-security
         name: Prompt injection / agent security in the wild
         summary: "Whether agentic systems are being attacked at scale yet."
+        bubble: true
+        cross_themes: [media-epistemics]
       - id: ai-tech/consciousness
         name: AI consciousness / cognitive ecology
         summary: "What minds are doing to other minds when they share an attention layer."
+        bubble: true
+      - id: ai-tech/entry-level
+        name: AI labor displacement (entry-level)
+        summary: "Entry-level white-collar hiring, graduate-jobs availability, junior-developer demand — the dial that hits the youngest cohort first if it moves."
+        bubble: false
+        vantages: [gen-z]
+        cross_themes: [markets, education-next-generation]
 
-  - id: health-drugs
-    name: Health / Drugs
-    summary: "Pandemic muscle, psychedelic policy motion, healthcare access."
+  - id: health-care
+    name: Health and Care
+    summary: "Pandemic muscle, drug-policy motion, healthcare access at every quintile, the addiction crisis from electorate and rural views, biosecurity at state level, and the eldercare / cognitive-decline / Medicare-solvency dials older adults read on themselves."
     dials:
-      - id: health-drugs/pandemic
+      - id: health-care/pandemic
         name: Pandemic memory and preparedness
         summary: "Whether the institutional muscle built during COVID still exists."
-      - id: health-drugs/psychedelic-policy
+        bubble: true
+      - id: health-care/psychedelic-policy
         name: Psychedelic policy
         summary: "The slow legalization of compounds that were illegal a decade ago."
-      - id: health-drugs/healthcare-access
+        bubble: true
+      - id: health-care/healthcare-access
         name: Healthcare access
-        summary: "Whether people get care when they need it."
+        summary: "Whether people get care when they need it — upstream of almost every other dial in real terms; downstream of every political dial."
+        bubble: true
+      - id: health-care/healthcare-costs-electorate
+        name: Healthcare costs and access (electorate view)
+        summary: "Premiums, deductibles, drug prices, coverage rates, surprise-billing, rural hospital closures. Tied for top issue in Quinnipiac (~10% as #1, much higher when 'important' rather than 'most important')."
+        bubble: false
+        vantages: [electorate]
+        cross_themes: [health-care]
+      - id: health-care/rural-healthcare
+        name: Rural healthcare access
+        summary: "Rural hospital closures, distance to OB care, ambulance availability, broadband for telehealth — upstream of the rural-vs-urban life-expectancy divergence."
+        bubble: false
+        vantages: [rural]
+      - id: health-care/addiction
+        name: Addiction / opioid crisis (national)
+        summary: "Overdose deaths, fentanyl supply, treatment access, harm-reduction policy."
+        bubble: false
+        vantages: [electorate]
+      - id: health-care/opioid-recovery-rural
+        name: Opioid recovery / drug deaths (rural)
+        summary: "Local overdose rates, treatment availability, fentanyl penetration, recovery-community capacity. Nearly everyone in many rural counties is one degree of separation from a death."
+        bubble: false
+        vantages: [rural]
+      - id: health-care/biosecurity
+        name: Biosecurity / pandemic preparedness (state-level)
+        summary: "Biolab safety, gain-of-function moratoria, pandemic-treaty negotiations, dual-use oversight."
+        bubble: false
+        vantages: [national-security]
+      - id: health-care/eldercare
+        name: Eldercare crisis / caregiver collapse
+        summary: "Nursing-home availability, in-home-care worker shortage, family-caregiver burden."
+        bubble: false
+        vantages: [older-adults]
+      - id: health-care/cognitive-decline
+        name: Cognitive decline / dementia awareness
+        summary: "Dementia incidence, early-onset Alzheimer's research, treatment access, caregiver-support."
+        bubble: false
+        vantages: [older-adults]
+      - id: health-care/medicare-social-security
+        name: Medicare / Social Security solvency
+        summary: "Trust-fund depletion timelines, Congress's appetite for reform, benefit-cut probabilities."
+        bubble: false
+        vantages: [older-adults]
 
   - id: media-epistemics
-    name: Media / Epistemics
+    name: Media and Epistemics
     summary: "The dashboard's own instruments — if these are broken, every other reading is suspect."
     dials:
       - id: media-epistemics/algorithmic-timeline
         name: Algorithmic timeline distortion
         summary: "What fraction of 'what's happening' is actually a function of the channel's optimization."
+        bubble: true
       - id: media-epistemics/deepfakes
         name: Deepfakes / synthetic media
         summary: "How much of what looks real isn't."
+        bubble: true
       - id: media-epistemics/prompt-injection
         name: Indirect prompt injection in the wild
         summary: "Attacker content embedded in tool-readable surfaces that hijacks LLM agents reading them."
+        bubble: true
+        cross_themes: [ai-tech]
       - id: media-epistemics/attention-economy
         name: Attention economy / fragmentation
         summary: "The cost of focused attention."
+        bubble: true
 
   - id: power-concentration
     name: Power Concentration
-    summary: "Billionaire-scale individual influence, AI lab consolidation, regulatory capture."
+    summary: "Billionaire-scale individual influence, AI lab consolidation, regulatory capture — the asymmetry between concentrated and ordinary scale."
     dials:
       - id: power-concentration/billionaires
         name: Billionaire-scale individual influence
         summary: "Degree to which individual ultra-rich people can move policy, narrative, and platform."
+        bubble: true
       - id: power-concentration/ai-labs
         name: AI lab consolidation
         summary: "How many actors hold frontier capability — fewer actors, less governance traction."
+        bubble: true
+        cross_themes: [ai-tech]
       - id: power-concentration/regulatory-capture
         name: Regulatory capture
         summary: "Whether the regulators can still regulate."
+        bubble: true
 
   - id: social-fabric
     name: Social Fabric
-    summary: "Loneliness, polarization, declining trust — the upstream tissue."
+    summary: "Loneliness, polarization, declining trust — the upstream tissue — plus crime / public-safety perception, dating-economy collapse, the Great Dechurching, faith-and-family formation, antisemitism / anti-Muslim incidents, religious persecution abroad, cohort-specific mental health, and loneliness in old age."
     dials:
       - id: social-fabric/loneliness
         name: Loneliness and isolation
         summary: "The slow social-tissue measurement, upstream of almost everything political."
+        bubble: true
       - id: social-fabric/polarization
         name: Polarization
         summary: "The distance between coalitions, the inability to share a reality."
+        bubble: true
       - id: social-fabric/trust
         name: Declining trust
         summary: "Trust in institutions, in media, in neighbors — working capital for every other dial."
+        bubble: true
+      - id: social-fabric/crime
+        name: Crime / public safety
+        summary: "Violent-crime rates, property crime, perception of disorder, fear-of-crime — perception often diverges from rates."
+        bubble: false
+        vantages: [electorate]
+      - id: social-fabric/dating-economy
+        name: Dating-economy collapse
+        summary: "Declining sex frequency, app-dating dissatisfaction, gendered political divergence, marriage delay."
+        bubble: false
+        vantages: [gen-z]
+      - id: social-fabric/dechurching
+        name: Church attendance / "the Great Dechurching"
+        summary: "Weekly attendance trends, religious-affiliation rates, post-COVID return rates, youth retention. ~40M Americans have stopped attending church in the last 25 years."
+        bubble: false
+        vantages: [religious]
+      - id: social-fabric/family-formation
+        name: Faith and family formation
+        summary: "Marriage rates, fertility differentials by religiosity, intergenerational transmission of faith."
+        bubble: false
+        vantages: [religious]
+        cross_themes: [long-now]
+      - id: social-fabric/antisemitism-anti-muslim
+        name: Antisemitism / anti-Muslim incidents (domestic)
+        summary: "Hate-crime statistics, campus-climate reports, synagogue / mosque security investments."
+        bubble: false
+        vantages: [religious]
+      - id: social-fabric/persecution-abroad
+        name: Religious persecution abroad
+        summary: "Christian persecution, antisemitism (global), Uyghur Muslims, Rohingya."
+        bubble: false
+        vantages: [religious]
+      - id: social-fabric/youth-mental-health-cohort
+        name: Mental health / loneliness (Gen Z cohort)
+        summary: "Youth depression / anxiety rates, social-media-correlated harms, in-person social capital — the cohort raised on smartphones is the first to test the integration."
+        bubble: false
+        vantages: [gen-z]
+        cross_themes: [education-next-generation]
+      - id: social-fabric/loneliness-old-age
+        name: Loneliness in old age
+        summary: "Widow / widower loneliness, isolation in 70+ cohort, elder-suicide rates, intergenerational living."
+        bubble: false
+        vantages: [older-adults]
+
+  - id: geopolitical-infrastructure
+    name: Geopolitical Infrastructure
+    summary: "The structural substrate underneath both wars and markets — semiconductors, rare earths, undersea cables, dollar reserve status, supply-chain resilience, intelligence capability, nuclear posture, near-peer competition. Earns its own theme because these aren't markets (they're the chokepoints under markets) and aren't wars (though they enable them); they move on geological time and reorganize everything when they shift."
+    dials:
+      - id: geopolitical-infrastructure/nuclear-posture
+        name: Nuclear posture
+        summary: "Arsenal modernization, treaty status, tactical-nuclear thresholds, proliferation cascades."
+        bubble: false
+        vantages: [national-security]
+      - id: geopolitical-infrastructure/semiconductors
+        name: Semiconductor sovereignty
+        summary: "TSMC concentration, Taiwan scenarios, US/EU fab buildout, China's domestic substitution. The chokepoint dial."
+        bubble: false
+        vantages: [national-security]
+      - id: geopolitical-infrastructure/supply-chain
+        name: Supply-chain resilience
+        summary: "Critical minerals, pharmaceutical APIs, food-system dependencies, just-in-time fragility."
+        bubble: false
+        vantages: [national-security]
+        cross_themes: [long-now]
+      - id: geopolitical-infrastructure/dollar
+        name: Currency dominance / dollar reserve status
+        summary: "USD share of reserves, BRICS settlement experiments, sanctioned-actor workarounds."
+        bubble: false
+        vantages: [national-security]
+      - id: geopolitical-infrastructure/intelligence
+        name: Intelligence / counterintelligence
+        summary: "Foreign HUMINT, insider threats, SIGINT capability, agency morale under political pressure."
+        bubble: false
+        vantages: [national-security]
+      - id: geopolitical-infrastructure/rare-earths
+        name: Rare earths and critical minerals
+        summary: "Lithium, cobalt, nickel, gallium, germanium, neodymium concentration and processing chokepoints."
+        bubble: false
+        vantages: [national-security]
+      - id: geopolitical-infrastructure/undersea-cables
+        name: Undersea cables
+        summary: "The ~95% of intercontinental data traffic running through ~500 cables; cable-cutting incidents."
+        bubble: false
+        vantages: [national-security]
+      - id: geopolitical-infrastructure/near-peer
+        name: Near-peer competition (US-China, US-Russia)
+        summary: "Mil-spend ratios, tech-decoupling tempo, alliance cohesion, Taiwan timeline assessments."
+        bubble: false
+        vantages: [national-security]
+
+  - id: education-next-generation
+    name: Education and the Next Generation
+    summary: "Dials about whether the institutions that hold school-age kids are holding, plus the cohort-specific anxieties (entry-level AI, climate-and-kids, college ROI) that shape the people about to inherit the dashboard. Earns its own theme because the parents-of-school-age vantage was already structurally coherent and the under-35 cohort dials cluster around the same question — *what kind of world is the next generation walking into.*"
+    dials:
+      - id: education-next-generation/public-education
+        name: Public education
+        summary: "Test scores, teacher retention, learning-loss recovery, curriculum fights."
+        bubble: false
+        vantages: [electorate, parents]
+      - id: education-next-generation/school-safety
+        name: School safety
+        summary: "Shooting-drill frequency, lockdown incidents, bullying / harassment metrics, parent-perceived safety."
+        bubble: false
+        vantages: [parents]
+        cross_themes: [politics]
+      - id: education-next-generation/cell-phones
+        name: Cell-phone-in-school policy
+        summary: "State and district phone-bans, evidence on academic and mental-health effects, enforcement reality."
+        bubble: false
+        vantages: [parents]
+      - id: education-next-generation/screen-time
+        name: Screen time / kids' device use
+        summary: "Daily screen hours by age, social-media-account ages, parental-controls efficacy, content moderation."
+        bubble: false
+        vantages: [parents]
+      - id: education-next-generation/learning-loss
+        name: Educational quality / learning loss recovery
+        summary: "Test scores, reading proficiency, math proficiency, gap recovery from pandemic baseline."
+        bubble: false
+        vantages: [parents]
+      - id: education-next-generation/college-cost
+        name: College admissions / cost
+        summary: "Sticker price, net price after aid, admit rates, ROI by major, alternatives."
+        bubble: false
+        vantages: [parents]
+      - id: education-next-generation/youth-mental-health-parental
+        name: Youth mental health (parental view)
+        summary: "Depression and anxiety in school-aged kids, suicide rates, treatment-access waitlists, in-school counselor ratios."
+        bubble: false
+        vantages: [parents]
+        cross_themes: [social-fabric]
+      - id: education-next-generation/school-consolidation
+        name: School consolidation
+        summary: "District mergers, school closures, bus-ride times — the slow withdrawal of institutions from low-density areas."
+        bubble: false
+        vantages: [rural]
 
   - id: long-now
     name: Long-Now
-    summary: "AGI timeline, civilizational fragility, intergenerational ethics — the slow-cycle dials."
+    summary: "AGI timeline, civilizational fragility, intergenerational ethics, demographic transitions — the slow-cycle dials whose readings only matter on a 20+ year horizon and whose movement is essentially locked in by then."
     dials:
       - id: long-now/agi-timeline
         name: AGI timeline
         summary: "How far the AI capability dial can go and how fast."
+        bubble: true
+        cross_themes: [ai-tech]
       - id: long-now/fragility
         name: Civilizational fragility
         summary: "Resilience of energy, food, supply chains, internet to multi-shock failure."
+        bubble: true
       - id: long-now/intergenerational
         name: Intergenerational ethics
         summary: "What we owe people who don't exist yet."
-
-# Outside-Buster's-Bubble boards. The wiki maps these to vantage points
-# (national-security analyst, median voter, rural America, religious
-# communities, Gen Z, older adults, immigrant / first-gen, parents of
-# school-age kids). Sub-dial slugs are generated from dial names — the wiki
-# does not yet enumerate them with parenthesized ids.
-outside:
-  - id: outside/national-security
-    name: Government / national-security POV
-    summary: "Slow structural dials oriented toward state-level competition — the dashboard a national-security analyst keeps."
-    dials:
-      - id: outside/national-security/nuclear-posture
-        name: Nuclear posture
-        summary: "Arsenal modernization, treaty status, tactical-nuclear thresholds, proliferation cascades."
-      - id: outside/national-security/semiconductors
-        name: Semiconductor sovereignty
-        summary: "TSMC concentration, Taiwan scenarios, US/EU fab buildout, China's domestic substitution."
-      - id: outside/national-security/supply-chain
-        name: Supply-chain resilience
-        summary: "Critical minerals, pharmaceutical APIs, food-system dependencies, just-in-time fragility."
-      - id: outside/national-security/dollar
-        name: Currency dominance / dollar reserve status
-        summary: "USD share of reserves, BRICS settlement experiments, sanctioned-actor workarounds."
-      - id: outside/national-security/intelligence
-        name: Intelligence / counterintelligence
-        summary: "Foreign HUMINT, insider threats, SIGINT capability, agency morale under political pressure."
-      - id: outside/national-security/demographics
+        bubble: true
+      - id: long-now/demographics
         name: Demographic transitions / fertility
-        summary: "TFR trends, age-pyramid shifts, labor-force entry, dependency ratios."
-      - id: outside/national-security/rare-earths
-        name: Rare earths and critical minerals
-        summary: "Lithium, cobalt, nickel, gallium, germanium, neodymium concentration and processing chokepoints."
-      - id: outside/national-security/undersea-cables
-        name: Undersea cables
-        summary: "The ~95% of intercontinental data traffic running through ~500 cables; cable-cutting incidents."
-      - id: outside/national-security/biosecurity
-        name: Biosecurity / pandemic preparedness (state-level)
-        summary: "Biolab safety, gain-of-function moratoria, pandemic-treaty negotiations, dual-use oversight."
-      - id: outside/national-security/near-peer
-        name: Near-peer competition (US-China, US-Russia)
-        summary: "Mil-spend ratios, tech-decoupling tempo, alliance cohesion, Taiwan timeline assessments."
-
-  - id: outside/electorate
-    name: US electorate priorities
-    summary: "What most polling captures when it asks 'most important problem facing the country' — the dashboard the median voter is reading."
-    dials:
-      - id: outside/electorate/cost-of-living
-        name: Cost of living / inflation
-        summary: "Grocery, rent, energy, insurance, services inflation — the dial that consistently tops every poll."
-      - id: outside/electorate/immigration
-        name: Immigration / border
-        summary: "Border encounters, ICE enforcement tempo, deportation numbers, legal-immigration backlog."
-      - id: outside/electorate/healthcare
-        name: Healthcare costs and access
-        summary: "Premiums, deductibles, drug prices, coverage rates, surprise-billing, rural hospital closures."
-      - id: outside/electorate/crime
-        name: Crime / public safety
-        summary: "Violent-crime rates, property crime, perception of disorder, fear-of-crime."
-      - id: outside/electorate/abortion
-        name: Abortion
-        summary: "State-level access, ballot-initiative results, IVF and contraception protections."
-      - id: outside/electorate/guns
-        name: Guns / gun violence
-        summary: "Mass-shooting frequency, total firearm deaths, legislative response, school-shooting drills."
-      - id: outside/electorate/housing
-        name: Housing affordability
-        summary: "Rent-to-income, first-time homebuyer entry rate, housing-starts vs demand, zoning reform."
-      - id: outside/electorate/education
-        name: Public education
-        summary: "Test scores, teacher retention, learning-loss recovery, curriculum fights."
-      - id: outside/electorate/addiction
-        name: Addiction / opioid crisis
-        summary: "Overdose deaths, fentanyl supply, treatment access, harm-reduction policy."
-      - id: outside/electorate/civil-rights
-        name: Racial issues / civil rights
-        summary: "DEI rollback, voting access, policing, immigration enforcement, hate-crime tempo."
-      - id: outside/electorate/foreign-policy
-        name: Foreign policy / wars
-        summary: "Israel-Gaza, Ukraine-Russia, Iran-Hormuz, China-Taiwan posture; US military involvement."
-      - id: outside/electorate/threats-to-democracy
-        name: Threats to democracy / institutional erosion
-        summary: "Election-administration trust, peaceful-transfer norms, executive-power expansion, judicial independence."
-
-  - id: outside/rural
-    name: Rural / working-class vantage
-    summary: "Dials watched in towns whose major employer has closed, whose hospital is two counties away."
-    dials:
-      - id: outside/rural/manufacturing
-        name: Manufacturing employment / factory closures
-        summary: "Announced closures, plant openings, reshoring data, regional employment trends."
-      - id: outside/rural/opioid-recovery
-        name: Opioid recovery / drug deaths
-        summary: "Local overdose rates, treatment availability, fentanyl penetration, recovery-community capacity."
-      - id: outside/rural/school-consolidation
-        name: School consolidation
-        summary: "District mergers, school closures, bus-ride times — the slow withdrawal of institutions from low-density areas."
-      - id: outside/rural/agriculture
-        name: Agricultural prices / farm economy
-        summary: "Commodity prices, input costs, trade-policy effects, farm consolidation."
-      - id: outside/rural/healthcare
-        name: Rural healthcare access
-        summary: "Rural hospital closures, distance to OB care, ambulance availability, broadband for telehealth."
-
-  - id: outside/religious
-    name: Religious communities vantage
-    summary: "Dials watched by people whose lives are organized around a faith community."
-    dials:
-      - id: outside/religious/dechurching
-        name: Church attendance / "the Great Dechurching"
-        summary: "Weekly attendance trends, religious-affiliation rates, post-COVID return rates, youth retention."
-      - id: outside/religious/religious-liberty
-        name: Religious liberty / free exercise
-        summary: "SCOTUS religious-liberty cases, accommodations litigation, hostility-to-faith perceptions."
-      - id: outside/religious/persecution-abroad
-        name: Religious persecution abroad
-        summary: "Christian persecution, antisemitism (global), Uyghur Muslims, Rohingya."
-      - id: outside/religious/antisemitism-anti-muslim
-        name: Antisemitism / anti-Muslim incidents (domestic)
-        summary: "Hate-crime statistics, campus-climate reports, synagogue / mosque security investments."
-      - id: outside/religious/family-formation
-        name: Faith and family formation
-        summary: "Marriage rates, fertility differentials by religiosity, intergenerational transmission of faith."
-
-  - id: outside/gen-z
-    name: Gen Z / 20-somethings vantage
-    summary: "Dials watched by people for whom climate is baseline, AI is a labor competitor, and housing is a closed door."
-    dials:
-      - id: outside/gen-z/housing
-        name: Housing affordability (acute version)
-        summary: "Rent-to-income, first-apartment entry, parents'-basement occupancy, frozen-market effects on under-35s."
-      - id: outside/gen-z/climate-family-planning
-        name: Climate-induced family-planning anxiety
-        summary: "Younger adults explicitly weighing climate in fertility decisions; climate-grief support groups."
-      - id: outside/gen-z/ai-entry-level
-        name: AI labor displacement (entry-level)
-        summary: "Entry-level white-collar hiring, graduate-jobs availability, junior-developer demand."
-      - id: outside/gen-z/mental-health
-        name: Mental health / loneliness (cohort-specific)
-        summary: "Youth depression / anxiety rates, social-media-correlated harms, in-person social capital."
-      - id: outside/gen-z/dating-economy
-        name: Dating-economy collapse
-        summary: "Declining sex frequency, app-dating dissatisfaction, gendered political divergence, marriage delay."
-
-  - id: outside/older-adults
-    name: Older-adults vantage
-    summary: "Dials watched by people for whom Medicare, Social Security, and eldercare are not abstractions."
-    dials:
-      - id: outside/older-adults/medicare-social-security
-        name: Medicare / Social Security solvency
-        summary: "Trust-fund depletion timelines, Congress's appetite for reform, benefit-cut probabilities."
-      - id: outside/older-adults/eldercare
-        name: Eldercare crisis / caregiver collapse
-        summary: "Nursing-home availability, in-home-care worker shortage, family-caregiver burden."
-      - id: outside/older-adults/cognitive-decline
-        name: Cognitive decline / dementia awareness
-        summary: "Dementia incidence, early-onset Alzheimer's research, treatment access, caregiver-support."
-      - id: outside/older-adults/retirement-assets
-        name: Retirement-asset adequacy
-        summary: "401(k) and IRA balances by cohort, defined-benefit pension coverage, working-into-old-age rates."
-      - id: outside/older-adults/loneliness
-        name: Loneliness in old age
-        summary: "Widow / widower loneliness, isolation in 70+ cohort, elder-suicide rates, intergenerational living."
-
-  - id: outside/immigrant
-    name: Immigrant / first-generation vantage
-    summary: "Dials watched by people whose status, family, and home-country news cycle are all live considerations."
-    dials:
-      - id: outside/immigrant/deportation
-        name: Deportation / enforcement policy
-        summary: "ICE detentions, removals, due-process erosion, third-country removals, mixed-status separations."
-      - id: outside/immigrant/family-separation
-        name: Family-separation / mixed-status precarity
-        summary: "Children with one or more undocumented parent, citizenship case backlog, family-reunification visa wait times."
-      - id: outside/immigrant/remittances
-        name: Remittances
-        summary: "Outflow volumes, transaction-fee policy, banking-access rules, proposed remittance taxes."
-      - id: outside/immigrant/foreign-policy-home
-        name: Foreign-policy effects on home country
-        summary: "US sanctions, aid policy, trade policy, military involvement as it touches one's family abroad."
-      - id: outside/immigrant/naturalization-asylum
-        name: Naturalization / asylum backlog
-        summary: "USCIS processing times, asylum-court backlogs, work-permit availability for pending cases."
-
-  - id: outside/parents-school
-    name: Parents-of-school-aged-kids vantage
-    summary: "Dials watched by people whose default daily question is 'is my kid okay today, and is this institution holding.'"
-    dials:
-      - id: outside/parents-school/school-safety
-        name: School safety
-        summary: "Shooting-drill frequency, lockdown incidents, bullying / harassment metrics, parent-perceived safety."
-      - id: outside/parents-school/cell-phones
-        name: Cell-phone-in-school policy
-        summary: "State and district phone-bans, evidence on academic and mental-health effects, enforcement reality."
-      - id: outside/parents-school/screen-time
-        name: Screen time / kids' device use
-        summary: "Daily screen hours by age, social-media-account ages, parental-controls efficacy, content moderation."
-      - id: outside/parents-school/learning-loss
-        name: Educational quality / learning loss recovery
-        summary: "Test scores, reading proficiency, math proficiency, gap recovery from pandemic baseline."
-      - id: outside/parents-school/college-cost
-        name: College admissions / cost
-        summary: "Sticker price, net price after aid, admit rates, ROI by major, alternatives."
-      - id: outside/parents-school/youth-mental-health
-        name: Youth mental health (parental view)
-        summary: "Depression and anxiety in school-aged kids, suicide rates, treatment-access waitlists, in-school counselor ratios."
+        summary: "TFR trends, age-pyramid shifts, labor-force entry, dependency ratios — sub-replacement fertility across most of the developed world; China's demographic shock now visible."
+        bubble: false
+        vantages: [national-security]

@@ -126,9 +126,17 @@ module OkaynessPlugin
     #                taxonomy (status: numb).
     # never-cared maps to not-linked + an off_dashboard note ("never-cared" is
     # a *reason* for not-linked, not a separate state on the tree itself).
+    #
+    # NOTE on the unified tree (2026-04-23): god_tree.yml now has a single
+    # top-level `themes:` array instead of the prior `bubble:` / `outside:`
+    # split. Dials carry `bubble: true|false` and an optional `vantages:` list
+    # so the demographic-vantage information (national-security, electorate,
+    # rural, religious, gen-z, older-adults, immigrant, parents) is preserved
+    # as a property of each node rather than as a structural prefix.
     def build_god_tree_render(god_data, anchor_owners, off_by_anchor)
       totals = { "total" => 0, "linked" => 0, "partial" => 0,
-                 "not_linked" => 0, "numb" => 0 }
+                 "not_linked" => 0, "numb" => 0,
+                 "bubble" => 0, "outside_bubble" => 0 }
 
       walker = lambda do |nodes|
         (nodes || []).map do |node|
@@ -163,6 +171,16 @@ module OkaynessPlugin
           else                   totals["not_linked"] += 1
           end
 
+          # Track bubble vs. outside-bubble counts at the dial level (themes
+          # don't carry a `bubble:` field in the unified schema).
+          if node.key?("bubble")
+            if node["bubble"]
+              totals["bubble"] += 1
+            else
+              totals["outside_bubble"] += 1
+            end
+          end
+
           {
             "id"           => node["id"],
             "name"         => node["name"],
@@ -170,15 +188,17 @@ module OkaynessPlugin
             "state"        => state,
             "owners"       => owners,
             "off_metadata" => off,
+            "bubble"       => node["bubble"],
+            "vantages"     => node["vantages"] || [],
+            "cross_themes" => node["cross_themes"] || [],
             "dials"        => children,
           }
         end
       end
 
-      bubble  = walker.call(god_data["bubble"])
-      outside = walker.call(god_data["outside"])
+      themes = walker.call(god_data["themes"])
 
-      { "bubble" => bubble, "outside" => outside, "totals" => totals }
+      { "themes" => themes, "totals" => totals }
     end
 
     private

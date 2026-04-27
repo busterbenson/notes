@@ -255,6 +255,24 @@ sitemap: false
   .god-detail .god-status-tag.partial     { background: #e3ddc4; color: #6f6a3a; }
   .god-detail .god-status-tag.numb        { background: #e0d4cc; color: #5a4a42; }
   .god-detail .god-status-tag.never-cared { background: #ece8d8; color: #8a8470; }
+
+  /* ── Bubble / vantage flags on GOD nodes (unified tree) ───────────── */
+  /* Each dial in the unified GOD tree carries either an "in bubble" flag
+     (Buster's current radar) or a "salient to: <vantage>" flag (a
+     demographic constituency for which the dial is especially salient).
+     Quiet typography — these are meta-data labels, not measurements. */
+  .god-flag {
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.06em;
+    padding: 0.05rem 0.35rem; border-radius: 3px;
+    margin-left: 0.35rem; vertical-align: 1px;
+    font-weight: 500;
+    background: transparent;
+  }
+  .god-flag.bubble  { color: #5a7a3a; background: #eef3e0; }
+  .god-flag.vantage { color: #6f5a3a; background: #f3ecd8; }
+  .god-flag.outside { color: #8a8470; background: #ece8d8; }
 </style>
 
 <p class="ok-intro">
@@ -351,36 +369,26 @@ sitemap: false
   </div>
   <p class="ok-god-intro">
     The full <a href="https://github.com/busterbenson/chalantbot-obsidian/blob/main/Wiki/pages/global-okayness-dashboard.md">canonical GOD tree</a>
-    rendered as an index, with every node tagged by whether it lands somewhere on the dial grid above.
-    The hierarchy here is the world's; the hierarchy above is mine. The pattern of
-    presence and absence — at every level — is the salience function, made legible.
+    rendered as an index — one unified hierarchy organized by theme. Every dial carries
+    a flag: <span class="god-flag bubble">in bubble</span> if it's on Buster's current radar,
+    or <span class="god-flag vantage">salient to: …</span> for the demographic vantages
+    (national-security analyst, median voter, rural America, religious communities, Gen Z,
+    older adults, immigrants, parents) where the dial is especially loud. The hierarchy
+    here is the world's; the hierarchy above is Buster's. The pattern of presence and
+    absence — at every level — is the salience function, made legible.
   </p>
   <p class="ok-god-coverage">
     <span class="god-marker linked">●</span> <strong>{{ tot.linked }}</strong> linked
     <span class="god-marker partial">◐</span> <strong>{{ tot.partial }}</strong> partial
     <span class="god-marker not-linked">○</span> <strong>{{ tot.not_linked }}</strong> not linked
     {% if tot.numb > 0 %}<span class="god-marker numb">●</span> <strong>{{ tot.numb }}</strong> numb{% endif %}
+    &middot; <strong>{{ tot.bubble }}</strong> in bubble, <strong>{{ tot.outside_bubble }}</strong> outside
   </p>
 
   {%- assign render = site.data.okayness.god_render -%}
 
   <ul class="god-tree">
-    <li>
-      <details class="god-umbrella">
-        <summary>Buster's bubble &middot; {{ render.bubble.size }} boards</summary>
-        <ul>
-          {% for board in render.bubble %}{% include okayness-god-node.html node=board %}{% endfor %}
-        </ul>
-      </details>
-    </li>
-    <li>
-      <details class="god-umbrella">
-        <summary>Outside the bubble &middot; {{ render.outside.size }} boards</summary>
-        <ul>
-          {% for board in render.outside %}{% include okayness-god-node.html node=board %}{% endfor %}
-        </ul>
-      </details>
-    </li>
+    {% for theme in render.themes %}{% include okayness-god-node.html node=theme %}{% endfor %}
   </ul>
 </section>
 {% endif %}
@@ -399,6 +407,6 @@ sitemap: false
   </div>
   <p><strong>How the math works.</strong> Each board has its own half-life — how long it takes for an old rating to count half as much. Body and relationships move on a 14-day half-life; bigger structural things (Therapy, Spirituality, World) on 60. Parent themes blend their children. Trend is the score now minus the score 30 days ago.</p>
   <p><strong>Hierarchy is salience.</strong> A board near the top of the dashboard is top of mind; a board nested inside a theme is less so. The ordering isn't an organizational convenience — it's the projection function from the world's dashboard onto the parts of it I've actually installed.</p>
-  <p><strong>Global dashboard projection.</strong> The collapsible tree at the bottom is the entire <a href="https://github.com/busterbenson/chalantbot-obsidian/blob/main/Wiki/pages/global-okayness-dashboard.md">canonical GOD</a>, with each node marked <span class="god-marker linked">●</span> linked (an IOD board points at it), <span class="god-marker partial">◐</span> partial (some children linked, some not, or absorbed by a nearby IOD board), <span class="god-marker not-linked">○</span> not linked (no IOD coupling — most often a vantage built for other bells), or <span class="god-marker numb">●</span> numb (was tracked, transducer went dead). Expand a node to see what links into it (or what doesn't), the one-line summary from the wiki, and any partial-fragmentation notes.</p>
+  <p><strong>Global dashboard projection.</strong> The collapsible tree at the bottom is the entire <a href="https://github.com/busterbenson/chalantbot-obsidian/blob/main/Wiki/pages/global-okayness-dashboard.md">canonical GOD</a> as a single theme-organized hierarchy. Each node is marked <span class="god-marker linked">●</span> linked (an IOD board points at it), <span class="god-marker partial">◐</span> partial (some children linked, some not, or absorbed by a nearby IOD board), <span class="god-marker not-linked">○</span> not linked (no IOD coupling — most often a vantage built for other bells), or <span class="god-marker numb">●</span> numb (was tracked, transducer went dead). Each dial also carries a flag: <span class="god-flag bubble">in bubble</span> for dials on Buster's current radar, or <span class="god-flag vantage">salient to: &lt;vantage&gt;</span> for dials whose primary audience is a specific demographic constituency. Expand a node to see what links into it, the one-line summary from the wiki, and any partial-fragmentation notes.</p>
   <p><strong>About this page.</strong> Subjective and just for me. Open and unlinked from the homepage. Boards and ratings live in <code>_data/okayness/</code> in the site repo.</p>
 </div>

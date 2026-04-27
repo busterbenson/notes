@@ -7,6 +7,10 @@ Expects:
     id, name, summary, state (linked/partial/not-linked/numb),
     owners (array of {id, name[, parent]}),
     off_metadata (the off_dashboard entry if any — status/note/partial_into_resolved),
+    bubble (true/false/nil — true if this dial is in Buster's current bubble),
+    vantages (array of vantage slugs — demographic constituencies for which
+      this dial is especially salient; empty for purely-bubble dials),
+    cross_themes (array of theme ids — secondary themes this dial also touches),
     dials (array of child nodes, same shape).
 
 The render is intentionally quiet: monospace, dotted indent guide, small
@@ -27,18 +31,27 @@ markers. The dial widgets above are loud measurements; this is the index.
         <span class="god-marker {{ n.state }}" title="{{ n.state | replace: '-', ' ' }}">{{ marker_char }}</span>
         <span class="god-name">{{ n.name }}</span>
         <code class="god-id">{{ n.id }}</code>
+        {% if n.bubble == true %}<span class="god-flag bubble" title="In Buster's bubble">in bubble</span>{% endif %}
+        {% if n.bubble == false and n.vantages.size > 0 %}
+          <span class="god-flag vantage" title="Salient to this vantage">salient to: {% for v in n.vantages %}{{ v }}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
+        {% elsif n.bubble == false %}
+          <span class="god-flag outside" title="Outside Buster's bubble">outside bubble</span>
+        {% endif %}
         {% if n.owners.size > 0 %}
           <span class="god-link-into">→
             {% for o in n.owners %}<a href="#">{{ o.name }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
           </span>
         {% endif %}
       </summary>
-      {% if n.summary or n.off_metadata %}
+      {% if n.summary or n.off_metadata or n.cross_themes.size > 0 %}
         <div class="god-detail">
           {% if n.off_metadata %}
             <span class="god-status-tag {{ n.off_metadata.status }}">{{ n.off_metadata.status | replace: "-", " " }}</span>
           {% endif %}
           {% if n.summary %}<span class="god-summary">{{ n.summary }}</span>{% endif %}
+          {% if n.cross_themes.size > 0 %}
+            <div class="god-note">also touches: {% for t in n.cross_themes %}{{ t }}{% unless forloop.last %}, {% endunless %}{% endfor %}</div>
+          {% endif %}
           {% if n.off_metadata.note %}<div class="god-note">{{ n.off_metadata.note }}</div>{% endif %}
           {% if n.off_metadata.partial_into_resolved and n.off_metadata.partial_into_resolved.size > 0 %}
             <div class="god-note">fragments live in:
@@ -56,6 +69,12 @@ markers. The dial widgets above are loud measurements; this is the index.
       <span class="god-marker {{ n.state }}" title="{{ n.state | replace: '-', ' ' }}">{{ marker_char }}</span>
       <span class="god-name">{{ n.name }}</span>
       <code class="god-id">{{ n.id }}</code>
+      {% if n.bubble == true %}<span class="god-flag bubble" title="In Buster's bubble">in bubble</span>{% endif %}
+      {% if n.bubble == false and n.vantages.size > 0 %}
+        <span class="god-flag vantage" title="Salient to this vantage">salient to: {% for v in n.vantages %}{{ v }}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
+      {% elsif n.bubble == false %}
+        <span class="god-flag outside" title="Outside Buster's bubble">outside bubble</span>
+      {% endif %}
       {% if n.owners.size > 0 %}
         <span class="god-link-into">→
           {% for o in n.owners %}{{ o.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}

@@ -160,11 +160,20 @@ themes:
           - { id: world-longnow-intergenerational, name: Intergenerational ethics, god_anchor: long-now/intergenerational }
           - { id: world-longnow-agi, name: AGI timeline, god_anchor: long-now/agi-timeline }
 
-# Off-dashboard — GOD boards with no IOD presence (or only fragmentary presence).
+# Off-dashboard — GOD nodes with no IOD presence (or only fragmentary presence).
 #
 # These are NOT rated. The hierarchy of the live themes above IS Buster's
-# salience function; depth = inverse top-of-mind-ness. Boards listed here are
+# salience function; depth = inverse top-of-mind-ness. Entries here are
 # *named absences* — projection from GOD to IOD that didn't take.
+#
+# Schema choice (post-2026-04-23 unification): the GOD tree is now a single
+# theme-organized hierarchy with `bubble:` and `vantages:` as node properties
+# instead of a structural `outside/<vantage>/<dial>` prefix. The off_dashboard
+# entries below remain a *curated, vantage-labeled* list — the off_dashboard
+# schema retains the vantage groupings even though god_tree.yml no longer
+# structures by vantage. Each entry now references the new theme-based ids;
+# the `vantage:` field labels the group it belongs to (national-security,
+# electorate, rural, religious, gen-z, older-adults, immigrant, parents).
 #
 # status:
 #   never-cared — never installed on the dashboard. No engagement. The default
@@ -172,73 +181,81 @@ themes:
 #   numb        — was installed, the transducer stopped reading. The needle
 #                 sits at the dark dot. Engagement-with-numbness is its own
 #                 stance, distinct from never-cared.
-#   partial     — some sub-dial(s) absorbed by an IOD board, but the full board
-#                 is not installed. `partial_into` lists the IOD board ids that
-#                 carry the fragment.
+#   partial     — some sub-dial(s) absorbed by an IOD board, but the vantage's
+#                 dials are not installed in full. `partial_into` lists the
+#                 IOD board ids that carry the fragment.
 #
-# Each entry references its GOD page section so the off-dashboard list is
-# anchored to the canonical board it's projecting from. The `god_anchor` field
-# uses the stable id scheme defined on the GOD wiki page; `god_section` is the
-# anchor-style reference to the page section (kept for direct link rendering).
+# Each entry references the GOD theme it's projecting from via `god_anchor`
+# (a theme-level id like `geopolitical-infrastructure`, or a specific dial id
+# like `social-fabric/dechurching`). `god_section` is the anchor-style
+# reference to the wiki section (kept for direct link rendering).
 off_dashboard:
-  - id: god-national-security
-    name: Government / national-security POV
+  - id: god-national-security-vantage
+    name: Government / national-security vantage
+    vantage: national-security
     status: never-cared
-    god_anchor: outside/national-security
-    god_section: "global-okayness-dashboard#Board: Government / national-security POV"
-    note: "Vantage mismatch — Buster doesn't work in or adjacent to national security. Filtered into Politics + Investments via second-order effects."
+    god_anchor: geopolitical-infrastructure
+    god_section: "global-okayness-dashboard#Theme: Geopolitical Infrastructure"
+    note: "Vantage mismatch — Buster doesn't work in or adjacent to national security. Filtered into Politics + Investments via second-order effects. Dials in this vantage now live under the Geopolitical Infrastructure theme; the cross-cutting biosecurity / nuclear / undersea-cable / dollar / supply-chain / rare-earth / near-peer / intelligence dials are present in the GOD but unlinked to any IOD board."
 
-  - id: god-rural-working-class
+  - id: god-rural-working-class-vantage
     name: Rural / working-class vantage
+    vantage: rural
     status: never-cared
-    god_anchor: outside/rural
-    god_section: "global-okayness-dashboard#Board: Rural / working-class vantage"
-    note: "Geographic and class-position mismatch. Appropriate absence."
+    god_anchor: markets/manufacturing
+    god_section: "global-okayness-dashboard#Theme: Markets and Economy"
+    note: "Geographic and class-position mismatch. Appropriate absence. Dials in this vantage (manufacturing, opioid recovery, school consolidation, agriculture, rural healthcare) now live across Markets, Health and Care, Education and the Next Generation themes — none currently linked to an IOD board."
 
-  - id: god-religious-communities
+  - id: god-religious-communities-vantage
     name: Religious communities vantage
+    vantage: religious
     status: never-cared
-    god_anchor: outside/religious
-    god_section: "global-okayness-dashboard#Board: Religious communities vantage"
-    note: "Spirituality is named as personal practice. The institutional dials don't fit Buster's actual relationship to religion."
+    god_anchor: social-fabric/dechurching
+    god_section: "global-okayness-dashboard#Theme: Social Fabric"
+    note: "Spirituality is named as personal practice. The institutional dials don't fit Buster's actual relationship to religion. Religious-vantage dials (dechurching, religious liberty, persecution abroad, antisemitism / anti-Muslim, faith and family formation) now live across Social Fabric and Politics themes."
 
-  - id: god-immigrant-first-gen
+  - id: god-immigrant-first-gen-vantage
     name: Immigrant / first-generation vantage
+    vantage: immigrant
     status: never-cared
-    god_anchor: outside/immigrant
-    god_section: "global-okayness-dashboard#Board: Immigrant / first-generation vantage"
-    note: "Status mismatch."
+    god_anchor: politics/deportation-enforcement
+    god_section: "global-okayness-dashboard#Theme: Politics and Governance"
+    note: "Status mismatch. Immigrant-vantage dials (deportation / enforcement, family separation, remittances, foreign policy effects on home country, naturalization / asylum backlog) now live across Politics, Markets, and Wars themes."
 
-  - id: god-older-adults
+  - id: god-older-adults-vantage
     name: Older-adults vantage
+    vantage: older-adults
     status: never-cared
-    god_anchor: outside/older-adults
-    god_section: "global-okayness-dashboard#Board: Older-adults vantage"
-    note: "Near-future Buster dials (eldercare, retirement-asset adequacy, cognitive decline). Not yet across the would-actually-rate-it threshold."
+    god_anchor: health-care/eldercare
+    god_section: "global-okayness-dashboard#Theme: Health and Care"
+    note: "Near-future Buster dials (eldercare, cognitive decline, Medicare / Social Security solvency, retirement-asset adequacy, loneliness in old age). Not yet across the would-actually-rate-it threshold. Now distributed across Health and Care, Markets, Social Fabric themes."
 
-  - id: god-electorate-priorities
+  - id: god-electorate-vantage
     name: US electorate priorities
+    vantage: electorate
     status: partial
-    god_anchor: outside/electorate
-    god_section: "global-okayness-dashboard#Board: US electorate priorities (2026 midterm cycle)"
+    god_anchor: politics/threats-to-democracy
+    god_section: "global-okayness-dashboard#Theme: Politics and Governance"
     partial_into: [basic-needs-budget, basic-needs-home, world-politics, world-war]
-    note: "Cost-of-living lands on Budget, housing on Home, threats-to-democracy on Politics, foreign-policy on War. Crime / abortion / education / addiction / racial issues are absent."
+    note: "Cost-of-living (markets/cost-of-living) lands on Budget; housing (markets/housing) on Home; threats-to-democracy (politics/threats-to-democracy) on Politics; foreign policy / wars (wars/electorate-foreign-policy) on War. Crime, abortion, education, addiction, civil rights, religious liberty, guns, immigration enforcement — all electorate-vantage dials in the GOD that have no IOD presence."
 
-  - id: god-gen-z
+  - id: god-gen-z-vantage
     name: Gen Z / 20-somethings vantage
+    vantage: gen-z
     status: partial
-    god_anchor: outside/gen-z
-    god_section: "global-okayness-dashboard#Board: Gen Z / 20-somethings vantage"
+    god_anchor: ai-tech/entry-level
+    god_section: "global-okayness-dashboard#Theme: AI and Technology"
     partial_into: [social-niko, social-louie, world-environment, world-ai]
-    note: "Climate-induced family-planning anxiety lands on Environment + Niko/Louie; AI labor displacement on AI; mental-health partial via the kid boards."
+    note: "Climate-induced family-planning anxiety (climate/family-planning-anxiety) lands on Environment + Niko/Louie; AI entry-level labor displacement (ai-tech/entry-level) on AI; cohort mental-health (social-fabric/youth-mental-health-cohort) partial via the kid boards. Housing acuteness (markets/housing) and dating-economy collapse (social-fabric/dating-economy) are absent."
 
-  - id: god-parents-school-age
+  - id: god-parents-school-age-vantage
     name: Parents-of-school-aged-kids vantage
+    vantage: parents
     status: partial
-    god_anchor: outside/parents-school
-    god_section: "global-okayness-dashboard#Board: Parents-of-school-aged-kids vantage"
+    god_anchor: education-next-generation
+    god_section: "global-okayness-dashboard#Theme: Education and the Next Generation"
     partial_into: [social-niko, social-louie]
-    note: "School safety, cell-phone-in-school, screen time, youth mental health — all absorbed by the named-kid boards rather than tracked as their own dial set."
+    note: "School safety, cell-phone-in-school, screen time, learning loss, youth mental health (parental view), college cost — all absorbed by the named-kid boards rather than tracked as their own dial set. The Education and the Next Generation theme now exists in the GOD; the IOD has not yet promoted any of its dials to first-class boards."
 
 # Per-board blending overrides. Defaults are fine if you don't list a board.
 # blending:
