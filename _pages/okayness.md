@@ -5,6 +5,8 @@ layout: page
 sitemap: false
 ---
 
+<!-- build-probe: 1777256439 (verifying Ruby 4 Netlify deploy) -->
+
 <style>
   /* ── Layout ─────────────────────────────────────────────────────────── */
   .ok-intro {
