@@ -1,6 +1,16 @@
 source "https://rubygems.org"
-ruby '3.1.3'
+ruby '~> 4.0'
 
+# Ruby 3.4+ moved a chunk of stdlib gems out of default load path. The
+# Jekyll/Liquid/rmagick stack still requires several of them. Pinning here
+# so the build doesn't fail at boot on Ruby 4.
+gem 'bigdecimal'
+gem 'observer'
+gem 'csv'
+gem 'base64'
+gem 'mutex_m'
+gem 'logger'
+gem 'ostruct'
 gem 'rmagick'
 gem 'nokogiri', "~> 1.14.3"
 gem 'jekyll'
