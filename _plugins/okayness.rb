@@ -49,12 +49,38 @@ module OkaynessPlugin
         entry.merge("partial_into_resolved" => resolved_partial)
       end
 
+      # GOD coverage — count how many GOD nodes the IOD links to via god_anchor.
+      # Walks every board + sub_dial in the live themes and collects unique
+      # god_anchor ids; off_dashboard god_anchors count as "named absences"
+      # that ARE in the GOD's universe (just not Tracked here).
+      iod_anchors = collect_god_anchors(themes)
+      off_anchors = (tree_data["off_dashboard"] || []).map { |e| e["god_anchor"] }.compact.uniq
+      total_known_god_anchors = (iod_anchors + off_anchors).uniq
+
       site.data["okayness"] ||= {}
       site.data["okayness"]["computed"]      = computed
       site.data["okayness"]["themes_flat"]   = flatten(themes)
       site.data["okayness"]["off_dashboard"] = off_dashboard
       site.data["okayness"]["last_updated"]  = now.iso8601
       site.data["okayness"]["total_ratings"] = ratings_data["ratings"]&.length.to_i
+      site.data["okayness"]["god_coverage"]  = {
+        "linked"       => iod_anchors.size,
+        "off_dashboard"=> off_anchors.size,
+        "total_known"  => total_known_god_anchors.size,
+      }
+    end
+
+    # Walk themes and pull every god_anchor — both on boards and on
+    # nested sub_dials. Returns a unique list of GOD ids the IOD points at.
+    def collect_god_anchors(nodes, out = [])
+      nodes.each do |n|
+        out << n["god_anchor"] if n["god_anchor"]
+        collect_god_anchors(n["children"] || [], out) if n["children"]
+        (n["sub_dials"] || []).each do |s|
+          out << s["god_anchor"] if s["god_anchor"]
+        end
+      end
+      out.compact.uniq
     end
 
     private
@@ -93,6 +119,10 @@ module OkaynessPlugin
         "numb_streak_days" => numb_streak_days(own_ratings, now),
         "recent"           => own_ratings.sort_by { |r| r["at"].to_s }.last(RECENT_LIMIT),
         "trend"            => trend,
+        # GOD-link surface — whether/how this IOD board points into the
+        # canonical GOD tree. Personal-only boards have no god_anchor.
+        "god_anchor"       => node["god_anchor"],
+        "sub_dials"        => node["sub_dials"] || [],
       }
     end
 

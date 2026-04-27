@@ -165,6 +165,27 @@ sitemap: false
     font-size: 0.7rem; color: #8a8470; font-style: italic;
   }
   .okayness-dial-ghost { opacity: 0.85; }
+
+  /* ── GOD-link badge ───────────────────────────────────────────────── */
+  /* A small dot next to a board name signals "this IOD board links to
+     a node in the canonical GOD tree." Hover/tap reveals which one. */
+  .ok-god-badge {
+    display: inline-block;
+    width: 0.5rem; height: 0.5rem;
+    border-radius: 50%;
+    background: #b6ad8a;
+    margin-left: 0.4rem;
+    vertical-align: 1px;
+    cursor: help;
+    transition: background 0.1s ease;
+  }
+  .ok-god-badge:hover { background: #8a8470; }
+  .ok-god-coverage {
+    margin-top: 0.6rem;
+    font-size: 0.78rem; color: #8a8470;
+    font-style: italic;
+  }
+  .ok-god-coverage strong { color: #6f6a55; font-style: normal; }
 </style>
 
 <p class="ok-intro">
@@ -217,6 +238,7 @@ sitemap: false
               <div class="ok-board-info">
                 <div class="ok-board-name">
                   {{ child.name }}
+                  {% if c.god_anchor %}<span class="ok-god-badge" title="Linked to GOD: {{ c.god_anchor }}"></span>{% endif %}
                   {% if c.numb_streak_days > 0 %}<span class="ok-numb-flag">numb {{ c.numb_streak_days }}d</span>{% endif %}
                 </div>
                 <div class="ok-board-meta">
@@ -263,6 +285,15 @@ sitemap: false
     board on the global dashboard that has no IOD presence — or only a fragment
     that landed inside one of the rated boards. The absence is itself the data.
   </p>
+  {% if site.data.okayness.god_coverage %}
+  <p class="ok-god-coverage">
+    GOD coverage: <strong>{{ site.data.okayness.god_coverage.linked }}</strong>
+    of <strong>{{ site.data.okayness.god_coverage.total_known }}</strong>
+    known GOD nodes are linked from the live dashboard above
+    (<span class="ok-god-badge" title="GOD link"></span> indicates a linked board);
+    {{ site.data.okayness.god_coverage.off_dashboard }} more sit in this list as named absences.
+  </p>
+  {% endif %}
   <ul class="ok-off-list">
     {% for entry in site.data.okayness.off_dashboard %}
       <li class="ok-off-item">

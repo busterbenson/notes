@@ -10,6 +10,19 @@
 #     children's scores combined with its own direct ratings. The default
 #     blender is `weighted_mean` with `parent_weight: 0` (children-only) and
 #     each child equally weighted. Tune per board as needed.
+#   sub_dials — optional nested layer below a board (same fields as a board:
+#     id, name, god_anchor, note, resilience_days). Salience-as-hierarchy
+#     means deeper = less-salient. Sub_dials don't currently have ratings of
+#     their own; they exist to render the GOD-IOD partial-adoption structure.
+#
+# IOD-as-superset model (see wiki: internal-okayness-dashboard):
+#   god_anchor — optional id of the GOD node this IOD board/sub-dial maps to.
+#     The id scheme is defined on the GOD wiki page under "GOD id scheme
+#     (stable anchors for IOD links)" — slugs like `wars/hormuz`,
+#     `ai-tech/capability`, `media-epistemics/algorithmic-timeline`. Personal-
+#     only boards (Self theme, Career, Projects, Basic Needs, the named-people
+#     Social boards) do NOT carry a god_anchor and do not need one — they
+#     measure this bell, not a planetary phenomenon.
 #
 # The 0–7 scale:
 #   7 Great · 6 Good · 5 Okay · 4 Neutral · 3 Not Okay · 2 Bad · 1 Terrible · 0 Numb
@@ -18,51 +31,134 @@ themes:
   - id: self
     name: Self
     children:
+      # Personal-only — Self theme is internal instruments. No god_anchor.
       - { id: self-health, name: Health, resilience_days: 14 }
       - { id: self-therapy, name: Therapy, resilience_days: 60 }
       - { id: self-psychedelics, name: Psychedelics, resilience_days: 60 }
       - { id: self-spirituality, name: Spirituality, resilience_days: 60 }
-      - { id: self-channel-hygiene, name: Channel Hygiene, resilience_days: 30 }
+      - id: self-channel-hygiene
+        name: Channel Hygiene
+        resilience_days: 30
+        # Channel Hygiene is the *operational status* of Buster's relationship
+        # to the GOD's media/epistemics field. Whole-board link.
+        god_anchor: media-epistemics
       - { id: self-aliveness, name: Aliveness, resilience_days: 30 }
 
   - id: career
     name: Career
     children:
-      - { id: career-inkitt, name: Inkitt, resilience_days: 30 }
-      - { id: career-750, name: "750 Words", resilience_days: 30 }
+      - id: career-inkitt
+        name: Inkitt
+        resilience_days: 30
+        # Career boards fragment from the GOD's markets board (AI labor
+        # displacement is the dominant projection for Inkitt).
+        god_anchor: markets/ai-labor
+      - id: career-750
+        name: "750 Words"
+        resilience_days: 30
+        # 750 Words sits on the SaaS canary dial primarily.
+        god_anchor: markets/saas
 
   - id: social
     name: Social & Relationships
     children:
+      # Personal-only — named individuals are this bell's relationships.
       - { id: social-sarah, name: Sarah, resilience_days: 14 }
       - { id: social-niko, name: Niko, resilience_days: 14 }
       - { id: social-louie, name: Louie, resilience_days: 14 }
-      - { id: social-friends, name: Friends, resilience_days: 30 }
-      - { id: social-community, name: Community, resilience_days: 30 }
+      - id: social-friends
+        name: Friends
+        resilience_days: 30
+        # Friends + Community couple to the GOD's social-fabric board, often
+        # counter-coupled (IOD bright partly because GOD reads dark).
+        god_anchor: social-fabric
+      - id: social-community
+        name: Community
+        resilience_days: 30
+        god_anchor: social-fabric
 
   - id: projects
     name: Projects & Plans
     children:
-      - { id: projects-chalant, name: Chalant, resilience_days: 30 }
+      - id: projects-chalant
+        name: Chalant
+        resilience_days: 30
+        # Chalant runs on the substrate the GOD's AI capability dial tracks.
+        god_anchor: ai-tech/capability
+      # Personal-only — Dilemma (book) and Norway (place/pilgrimage) are
+      # this-bell-only.
       - { id: projects-dilemma, name: Dilemma, resilience_days: 30 }
       - { id: projects-norway, name: Norway, resilience_days: 30 }
 
   - id: basic-needs
     name: Basic Needs
     children:
-      - { id: basic-needs-budget, name: Budget & Spending, resilience_days: 30 }
-      - { id: basic-needs-investments, name: Investments, resilience_days: 60 }
+      - id: basic-needs-budget
+        name: Budget & Spending
+        resilience_days: 30
+        # Cashflow is partly company-specific and partly absorbing the GOD's
+        # macro-economy reading via cost-of-living.
+        god_anchor: markets/macro
+      - id: basic-needs-investments
+        name: Investments
+        resilience_days: 60
+        god_anchor: markets/macro
+      # Home is personal-only — Sala House specifically. The civilizational-
+      # fragility coupling is real but the dial measures *this place*.
       - { id: basic-needs-home, name: Home, resilience_days: 30 }
 
   - id: world
     name: World
     children:
-      - { id: world-ai, name: AI, resilience_days: 60 }
-      - { id: world-politics, name: Politics, resilience_days: 60 }
-      - { id: world-war, name: War, resilience_days: 60 }
-      - { id: world-environment, name: Environment, resilience_days: 60 }
-      - { id: world-power-concentration, name: Power Concentration, resilience_days: 60 }
-      - { id: world-longnow, name: Long-now, resilience_days: 60 }
+      - id: world-ai
+        name: AI
+        resilience_days: 60
+        # World/AI is the field-shape question — capability + alignment.
+        god_anchor: ai-tech
+        sub_dials:
+          - { id: world-ai-capability, name: Capability trajectory, god_anchor: ai-tech/capability }
+          - { id: world-ai-alignment, name: Alignment / safety, god_anchor: ai-tech/alignment }
+          - { id: world-ai-consciousness, name: Cognitive ecology, god_anchor: ai-tech/consciousness }
+      - id: world-politics
+        name: Politics
+        resilience_days: 60
+        god_anchor: politics
+        sub_dials:
+          - { id: world-politics-democracy, name: US democracy / rule of law, god_anchor: politics/democracy }
+          - { id: world-politics-executive, name: Executive overreach, god_anchor: politics/executive-overreach }
+          - { id: world-politics-courts, name: Court legitimacy, god_anchor: politics/courts }
+      - id: world-war
+        name: War
+        resilience_days: 60
+        god_anchor: wars
+        sub_dials:
+          - { id: world-war-hormuz, name: Hormuz / US-Iran, god_anchor: wars/hormuz }
+          - { id: world-war-gaza, name: Gaza, god_anchor: wars/gaza }
+          - { id: world-war-long-tails, name: Ukraine / Sudan / long tails, god_anchor: wars/long-tails }
+      - id: world-environment
+        name: Environment
+        resilience_days: 60
+        god_anchor: climate
+        sub_dials:
+          - { id: world-environment-slow, name: Slow climate, god_anchor: climate/slow }
+          - { id: world-environment-acute, name: Acute climate, god_anchor: climate/acute }
+          - { id: world-environment-biosphere, name: Biosphere, god_anchor: climate/biosphere }
+      - id: world-power-concentration
+        name: Power Concentration
+        resilience_days: 60
+        god_anchor: power-concentration
+        sub_dials:
+          - { id: world-power-billionaires, name: Billionaire-scale influence, god_anchor: power-concentration/billionaires }
+          - { id: world-power-ai-labs, name: AI lab consolidation, god_anchor: power-concentration/ai-labs }
+          - { id: world-power-regulatory, name: Regulatory capture, god_anchor: power-concentration/regulatory-capture }
+      - id: world-longnow
+        name: Long-now
+        resilience_days: 60
+        god_anchor: long-now
+        sub_dials:
+          - { id: world-longnow-fragility, name: Civilizational fragility, god_anchor: long-now/fragility }
+          - { id: world-longnow-intergenerational, name: Intergenerational ethics, god_anchor: long-now/intergenerational }
+          - { id: world-longnow-agi, name: AGI timeline, god_anchor: long-now/agi-timeline }
 
 # Off-dashboard — GOD boards with no IOD presence (or only fragmentary presence).
 #
@@ -81,56 +177,66 @@ themes:
 #                 carry the fragment.
 #
 # Each entry references its GOD page section so the off-dashboard list is
-# anchored to the canonical board it's projecting from.
+# anchored to the canonical board it's projecting from. The `god_anchor` field
+# uses the stable id scheme defined on the GOD wiki page; `god_section` is the
+# anchor-style reference to the page section (kept for direct link rendering).
 off_dashboard:
   - id: god-national-security
     name: Government / national-security POV
     status: never-cared
-    god_anchor: "global-okayness-dashboard#Board: Government / national-security POV"
+    god_anchor: outside/national-security
+    god_section: "global-okayness-dashboard#Board: Government / national-security POV"
     note: "Vantage mismatch — Buster doesn't work in or adjacent to national security. Filtered into Politics + Investments via second-order effects."
 
   - id: god-rural-working-class
     name: Rural / working-class vantage
     status: never-cared
-    god_anchor: "global-okayness-dashboard#Board: Rural / working-class vantage"
+    god_anchor: outside/rural
+    god_section: "global-okayness-dashboard#Board: Rural / working-class vantage"
     note: "Geographic and class-position mismatch. Appropriate absence."
 
   - id: god-religious-communities
     name: Religious communities vantage
     status: never-cared
-    god_anchor: "global-okayness-dashboard#Board: Religious communities vantage"
+    god_anchor: outside/religious
+    god_section: "global-okayness-dashboard#Board: Religious communities vantage"
     note: "Spirituality is named as personal practice. The institutional dials don't fit Buster's actual relationship to religion."
 
   - id: god-immigrant-first-gen
     name: Immigrant / first-generation vantage
     status: never-cared
-    god_anchor: "global-okayness-dashboard#Board: Immigrant / first-generation vantage"
+    god_anchor: outside/immigrant
+    god_section: "global-okayness-dashboard#Board: Immigrant / first-generation vantage"
     note: "Status mismatch."
 
   - id: god-older-adults
     name: Older-adults vantage
     status: never-cared
-    god_anchor: "global-okayness-dashboard#Board: Older-adults vantage"
+    god_anchor: outside/older-adults
+    god_section: "global-okayness-dashboard#Board: Older-adults vantage"
     note: "Near-future Buster dials (eldercare, retirement-asset adequacy, cognitive decline). Not yet across the would-actually-rate-it threshold."
 
   - id: god-electorate-priorities
     name: US electorate priorities
     status: partial
-    god_anchor: "global-okayness-dashboard#Board: US electorate priorities (2026 midterm cycle)"
+    god_anchor: outside/electorate
+    god_section: "global-okayness-dashboard#Board: US electorate priorities (2026 midterm cycle)"
     partial_into: [basic-needs-budget, basic-needs-home, world-politics, world-war]
     note: "Cost-of-living lands on Budget, housing on Home, threats-to-democracy on Politics, foreign-policy on War. Crime / abortion / education / addiction / racial issues are absent."
 
   - id: god-gen-z
     name: Gen Z / 20-somethings vantage
     status: partial
-    god_anchor: "global-okayness-dashboard#Board: Gen Z / 20-somethings vantage"
+    god_anchor: outside/gen-z
+    god_section: "global-okayness-dashboard#Board: Gen Z / 20-somethings vantage"
     partial_into: [social-niko, social-louie, world-environment, world-ai]
     note: "Climate-induced family-planning anxiety lands on Environment + Niko/Louie; AI labor displacement on AI; mental-health partial via the kid boards."
 
   - id: god-parents-school-age
     name: Parents-of-school-aged-kids vantage
     status: partial
-    god_anchor: "global-okayness-dashboard#Board: Parents-of-school-aged-kids vantage"
+    god_anchor: outside/parents-school
+    god_section: "global-okayness-dashboard#Board: Parents-of-school-aged-kids vantage"
     partial_into: [social-niko, social-louie]
     note: "School safety, cell-phone-in-school, screen time, youth mental health — all absorbed by the named-kid boards rather than tracked as their own dial set."
 
