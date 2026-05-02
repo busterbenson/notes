@@ -16,13 +16,13 @@
   for = "/clock"
   [headers.values]
     X-Frame-Options = ""
-    Content-Security-Policy = "frame-ancestors 'self' https://chalant-reports.pages.dev https://busterbenson.com"
+    Content-Security-Policy = "frame-ancestors 'self' https://chalant-reports.pages.dev https://busterbenson.com https://chalantbot.abyssinian-peacock.ts.net:8002"
 
 [[headers]]
   for = "/clock/*"
   [headers.values]
     X-Frame-Options = ""
-    Content-Security-Policy = "frame-ancestors 'self' https://chalant-reports.pages.dev https://busterbenson.com"
+    Content-Security-Policy = "frame-ancestors 'self' https://chalant-reports.pages.dev https://busterbenson.com https://chalantbot.abyssinian-peacock.ts.net:8002"
 
 
 [[headers]]
