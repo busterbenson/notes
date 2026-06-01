@@ -5,7 +5,7 @@ author       : me
 
 one_liner    : "Appreciate the impermanence"
 image			   : assets/images/pieces/cultivate-the-core.jpg
-piles			   : ['self-reflection', 'year-in-review']
+piles			   : ['self-reflection']
 comment_link : 
 ---
 

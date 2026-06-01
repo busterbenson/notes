@@ -5,7 +5,7 @@ author       : me
 
 one_liner    : "A running to-do list of all the stuff software has to do really well in order to be better than us at all the things we consider ourselves to be pretty good at. In our humble opinion."
 image			   : assets/images/pieces/software-vs-humans.png
-piles			   : ['self-reflection', 'systems-thinking', 'year-in-review']
+piles			   : ['self-reflection', 'systems-thinking']
 comment_link : 
 ---
 
