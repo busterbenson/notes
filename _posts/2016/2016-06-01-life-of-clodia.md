@@ -1,6 +1,6 @@
 ---
 title        : "Life of Clodia"
-link         : https://busterbenson.com/projects/life-of-clodia/
+link         : https://2019.busterbenson.com/projects/life-of-clodia/
 author       : me
 
 one_liner    : "An incomplete choose-your-own-adventure story about an adventurous asteroid."
