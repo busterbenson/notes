@@ -49,6 +49,25 @@
     margin: 0 auto;
     width: 100%;
   }
+  #filter {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 1px solid #3a3a3a;
+    color: var(--dim);
+    border-radius: 999px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 0.45rem 1.7rem 0.45rem 1.1rem;
+    margin-bottom: 1.4rem;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%238a857c' stroke-width='1.5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem center;
+    background-size: 0.55rem;
+  }
   #chip {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
     font-size: 0.72rem;
@@ -108,6 +127,7 @@
 </head>
 <body>
   <main id="stage" title="Next question">
+    <select id="filter" aria-label="Category"></select>
     <div id="chip"></div>
     <div id="question"></div>
     <div id="hint">tap for another</div>
@@ -311,30 +331,58 @@ const QUESTIONS = [
   {d:"Buster",c:"Hypothetical",q:"If you had to pick a recipe on your tombstone, which recipe would it be?"}
 ];
 
-// Shuffle once per cycle and persist, so every question comes up before any repeats —
-// even across page loads and offline sessions.
-const KEY = 'questions-cycle-v1';
-const N = QUESTIONS.length;
+// Pick from all categories or a single one. Each pool keeps its own shuffled
+// cycle, persisted in localStorage, so every question in the pool comes up
+// before any repeats — across page loads and offline sessions.
+const KEY = 'questions-state-v2';
+const ALL = 'All';
 
-function newCycle() {
-  const order = Array.from({length: N}, (_, i) => i);
-  for (let i = N - 1; i > 0; i--) {
+const CATS = (() => {
+  const m = new Map();
+  QUESTIONS.forEach((item, i) => {
+    if (!item.c) return;
+    if (!m.has(item.c)) m.set(item.c, []);
+    m.get(item.c).push(i);
+  });
+  return m;
+})();
+
+function poolFor(cat) {
+  return cat === ALL ? QUESTIONS.map((_, i) => i) : (CATS.get(cat) || []);
+}
+
+function newCycle(cat) {
+  const order = poolFor(cat).slice();
+  for (let i = order.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [order[i], order[j]] = [order[j], order[i]];
   }
   return { order, pos: 0 };
 }
 
-function loadCycle() {
+let state = (() => {
   try {
     const s = JSON.parse(localStorage.getItem(KEY));
-    if (s && Array.isArray(s.order) && s.order.length === N &&
-        Number.isInteger(s.pos) && s.pos >= 0 && s.pos < N) return s;
+    if (s && typeof s === 'object' && s.cycles && typeof s.cycles === 'object') {
+      if (s.cat !== ALL && !CATS.has(s.cat)) s.cat = ALL;
+      return s;
+    }
   } catch (e) {}
-  return newCycle();
-}
+  return { cat: ALL, cycles: {} };
+})();
 
-let state = loadCycle();
+function cycle() {
+  const pool = poolFor(state.cat);
+  let c = state.cycles[state.cat];
+  const valid = c && Array.isArray(c.order) && c.order.length === pool.length &&
+    c.order.every((i) => pool.includes(i)) &&
+    Number.isInteger(c.pos) && c.pos >= 0 && c.pos < c.order.length;
+  if (!valid) {
+    c = newCycle(state.cat);
+    state.cycles[state.cat] = c;
+  }
+  return c;
+}
 
 function save() {
   try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {}
@@ -344,22 +392,40 @@ const chipEl = document.getElementById('chip');
 const qEl = document.getElementById('question');
 const countEl = document.getElementById('count');
 const hintEl = document.getElementById('hint');
+const filterEl = document.getElementById('filter');
+
+(function buildFilter() {
+  const opts = [[ALL, QUESTIONS.length]];
+  [...CATS.keys()].sort().forEach((c) => opts.push([c, CATS.get(c).length]));
+  for (const [name, n] of opts) {
+    const o = document.createElement('option');
+    o.value = name;
+    o.textContent = (name === ALL ? 'All categories' : name) + ' · ' + n;
+    filterEl.appendChild(o);
+  }
+  filterEl.value = state.cat;
+})();
 
 function render() {
-  const item = QUESTIONS[state.order[state.pos]];
-  chipEl.textContent = [item.d, item.c].filter(Boolean).join(' · ');
+  const c = cycle();
+  const item = QUESTIONS[c.order[c.pos]];
+  // The chip repeats the category, which is only informative when drawing
+  // from all categories at once.
+  chipEl.textContent = item.c || '';
+  chipEl.style.display = (state.cat === ALL && item.c) ? '' : 'none';
   qEl.textContent = item.q;
-  countEl.textContent = (state.pos + 1) + ' / ' + N;
+  countEl.textContent = (c.pos + 1) + ' / ' + c.order.length;
 }
 
 function show(step) {
   qEl.classList.add('fading');
   setTimeout(() => {
+    const c = cycle();
     if (step > 0) {
-      state.pos++;
-      if (state.pos >= N) state = newCycle();
-    } else if (state.pos > 0) {
-      state.pos--;
+      c.pos++;
+      if (c.pos >= c.order.length) state.cycles[state.cat] = newCycle(state.cat);
+    } else if (c.pos > 0) {
+      c.pos--;
     }
     save();
     render();
@@ -370,6 +436,14 @@ function show(step) {
 
 document.getElementById('stage').addEventListener('click', () => show(1));
 document.getElementById('prev').addEventListener('click', (e) => { e.stopPropagation(); show(-1); });
+filterEl.addEventListener('click', (e) => e.stopPropagation());
+filterEl.addEventListener('change', (e) => {
+  e.stopPropagation();
+  state.cat = filterEl.value;
+  save();
+  qEl.classList.add('fading');
+  setTimeout(() => { render(); qEl.classList.remove('fading'); }, 180);
+});
 document.addEventListener('keydown', (e) => {
   if (e.key === ' ' || e.key === 'ArrowRight' || e.key === 'Enter') { e.preventDefault(); show(1); }
   if (e.key === 'ArrowLeft') { e.preventDefault(); show(-1); }

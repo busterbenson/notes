@@ -1,6 +1,6 @@
 // Offline cache for /questions/. Bump the version to force clients to refresh
 // their cached copy after the page changes.
-const CACHE = 'questions-v1';
+const CACHE = 'questions-v2';
 const ASSETS = [
   './',
   './manifest.webmanifest',
