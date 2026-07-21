@@ -121,7 +121,6 @@ permalink: /questions/
     font-family: inherit;
   }
   #bar button:active { background: var(--chip); }
-  #count { white-space: nowrap; }
   #overlay {
     position: fixed;
     inset: 0;
@@ -187,13 +186,13 @@ permalink: /questions/
   <footer id="bar">
     <button id="prev" aria-label="Previous question">&#8249; back</button>
     <select id="filter" aria-label="Category"></select>
-    <span id="count"></span>
     <button id="menuBtn" aria-label="Status menu">&#8943;</button>
   </footer>
   <div id="overlay" hidden>
     <div id="menu">
       <div class="menu-row"><span>Connection</span><span id="mConn"></span></div>
       <div class="menu-row"><span>Offline copy</span><span id="mCache"></span></div>
+      <div class="menu-row"><span>Current deck</span><span id="mCount"></span></div>
       <div class="menu-row"><span>Seen (all categories)</span><span id="mSeen"></span></div>
       <button id="clearBtn">Clear history of seen questions</button>
     </div>
@@ -261,7 +260,7 @@ function save() {
 
 const chipEl = document.getElementById('chip');
 const qEl = document.getElementById('question');
-const countEl = document.getElementById('count');
+const countEl = document.getElementById('mCount');
 const hintEl = document.getElementById('hint');
 const filterEl = document.getElementById('filter');
 
