@@ -17,11 +17,11 @@
   },
   {
     "q": "Do you believe in God? If so, what do you mean by the word God?",
-    "c": "Spirituality"
+    "c": "World & Beliefs"
   },
   {
     "q": "What is a significant thing you've ever changed your mind about recently? How was it changed?",
-    "c": "Story"
+    "c": "Identity & Growth"
   },
   {
     "q": "Do you have any kinks that you've never admitted to anybody?",
@@ -29,11 +29,11 @@
   },
   {
     "q": "Have you had any romantic relationship or affairs that you've never told anyone about?",
-    "c": "Story"
+    "c": "Relationships"
   },
   {
     "q": "If you could press a button and double the sex drive of all women on Earth, would you do it? All the men?",
-    "c": "Hypothetical"
+    "c": "Sex"
   },
   {
     "q": "What are a couple things about the people in this room that make you feel weirdly competitive or jealous?",
@@ -41,15 +41,15 @@
   },
   {
     "q": "Which of your personality traits are you secretly most proud of?",
-    "c": "Self"
+    "c": "Identity & Growth"
   },
   {
     "q": "How have you disappointed your parents recently?",
-    "c": "Story"
+    "c": "Family"
   },
   {
     "q": "If you could, would you use the orgasmatron? What rules would you give yourself for using it, if any?",
-    "c": "Hypothetical"
+    "c": "Sex"
   },
   {
     "q": "You must pick a number right now and live that many more years in good physical health, followed by the same number of years in bad physical and mental health. What's your number?",
@@ -57,15 +57,15 @@
   },
   {
     "q": "If you were in charge of managing the gates of heaven and determining who went to heaven and who went to hell, what would your criteria be for judging each person?",
-    "c": "Hypothetical"
+    "c": "World & Beliefs"
   },
   {
     "q": "What was your biggest financial mistake?",
-    "c": "Story"
+    "c": "Money & Work"
   },
   {
     "q": "What was your last really painful experience that you now feel that you are mostly healed from? How did you go about healing from it?",
-    "c": "Story"
+    "c": "Identity & Growth"
   },
   {
     "q": "Would you rather double the amount of emotional pain and pleasure you feel on a daily basis, or cut both in half?",
@@ -73,11 +73,11 @@
   },
   {
     "q": "Are you afraid of death? Why or why not?",
-    "c": "Self"
+    "c": "Inner Life & Emotions"
   },
   {
     "q": "What are the signs that someone understands you uniquely? How many people do you feel uniquely understood by?",
-    "c": "Self"
+    "c": "Inner Life & Emotions"
   },
   {
     "q": "How do you feel your parents did a good job raising you? How did they fuck you up?",
@@ -85,19 +85,19 @@
   },
   {
     "q": "What kinds of sex work should be legal, if any?",
-    "c": "Sex"
+    "c": "World & Beliefs"
   },
   {
     "q": "Do you think it's okay to eat animals? What about having sex with animals?",
-    "c": "Sex"
+    "c": "World & Beliefs"
   },
   {
     "q": "Are there any viewpoints so offensive that they deserve to be made illegal to express? If so, which ones?",
-    "c": "Social"
+    "c": "World & Beliefs"
   },
   {
     "q": "How much do you know about the art of seduction?",
-    "c": "Self"
+    "c": "Sex"
   },
   {
     "q": "Could you be in a serious relationship with someone who could never hear criticism or negativity?",
@@ -113,7 +113,7 @@
   },
   {
     "q": "What is currently your greatest insecurity? How do you hide it?",
-    "c": "Self"
+    "c": "Inner Life & Emotions"
   },
   {
     "q": "You see a friend getting into their third emotionally abusive relationship in a row and they seem to ignore your advice. What do you do?",
@@ -121,26 +121,26 @@
   },
   {
     "q": "Do you make decisions more based on logic or intuition? What's an example?",
-    "c": "Self"
+    "c": "Identity & Growth"
   },
   {
     "q": "Do you make decisions more based on strict rules or by judging the specific circumstances? What's an example?",
-    "c": "Self"
+    "c": "Identity & Growth"
   },
   {
     "q": "When making a decision, do you tend to lean more towards what is familiar or towards what is new? What's an example?",
-    "c": "Self"
+    "c": "Identity & Growth"
   },
   {
     "q": "Do you believe the set of concepts like \"duty\", \"should\", \"obligation\", and \"deserving\" are worth striving for?",
-    "c": "Self"
+    "c": "World & Beliefs"
   },
   {
     "q": "What is your biggest obstacle toward personal inner peace? Why is this specifically difficult to work through?",
-    "c": "Self"
+    "c": "Inner Life & Emotions"
   },
   {
-    "q": "Out of all your past sexual experiences, which has disturbed you the most?",
+    "q": "Out of all your past sexual experiences, which one was the weirdest??",
     "c": "Sex"
   },
   {
@@ -149,15 +149,15 @@
   },
   {
     "q": "Of all the beliefs you hold, which is most likely to be considered barbaric in 150 years?",
-    "c": "World"
+    "c": "World & Beliefs"
   },
   {
     "q": "What emotion/feeling are you currently suppressing or ignoring?",
-    "c": "Self"
+    "c": "Inner Life & Emotions"
   },
   {
     "q": "What's the most sick (mental or physical) you've ever been? When have you felt the most mentally and physically healthy? Where are you now?",
-    "c": "Self"
+    "c": "Inner Life & Emotions"
   },
   {
     "q": "You have to marry someone you know right now (becoming poly if necessary). Who is it?",
@@ -165,7 +165,7 @@
   },
   {
     "q": "Are you more afraid of being boring or bored?",
-    "c": "Self"
+    "c": "Identity & Growth"
   },
   {
     "q": "Did your parents give you the love and emotional support you needed as a kid? Have things improved or not since then?",
@@ -177,7 +177,7 @@
   },
   {
     "q": "Are there any technologies that you wish had never been invented? Why?",
-    "c": "World"
+    "c": "World & Beliefs"
   },
   {
     "q": "What are your boundaries for what is and isn't allowed in a fight with a romantic partner? Is yelling okay? Personal insults? What's not okay?",
@@ -185,15 +185,15 @@
   },
   {
     "q": "What kind of people do you get along best with? Who's the most recent person you've met that fits this category?",
-    "c": "Social"
+    "c": "Identity & Growth"
   },
   {
     "q": "Do you feel like any of your core beliefs have been challenged recently? Do you feel open to changing the belief, or resistance?",
-    "c": "Self"
+    "c": "World & Beliefs"
   },
   {
     "q": "In what ways are you inhibited from expressing love?",
-    "c": "Self"
+    "c": "Inner Life & Emotions"
   },
   {
     "q": "Have you ever participated in any capacity with anything that might be considered sex work?",
@@ -201,23 +201,23 @@
   },
   {
     "q": "When you introspect, away from society and your physical body, deep inside, do you feel a sense of gender?",
-    "c": "Self"
+    "c": "Identity & Growth"
   },
   {
     "q": "Which of your achievements are you most proud of? What is the most recent thing you've done that you're proud of?",
-    "c": "Self"
+    "c": "Identity & Growth"
   },
   {
     "q": "What is the best advice you've received, and why did you need it?",
-    "c": "Self"
+    "c": "Identity & Growth"
   },
   {
     "q": "Are you waiting or hoping to hear an apology from anyone? What do you want them to say?",
-    "c": "Self"
+    "c": "Inner Life & Emotions"
   },
   {
     "q": "What about your appearance would you like to change?",
-    "c": "Self"
+    "c": "Inner Life & Emotions"
   },
   {
     "q": "Would you date a clone of yourself in your preferred gender?",
@@ -225,7 +225,7 @@
   },
   {
     "q": "Have you ever had (what you consider to be) a spiritual experience? If so, what was it like and what effects did it have on you?",
-    "c": "Spirituality"
+    "c": "World & Beliefs"
   },
   {
     "q": "Have you ever dated someone who you felt was below your standards? If so, what's the longest that that went on?",
@@ -237,11 +237,11 @@
   },
   {
     "q": "What viewpoint is the most difficult for you to empathize with?",
-    "c": "World"
+    "c": "World & Beliefs"
   },
   {
     "q": "Do you feel a greater sense of satisfaction when you gain approval from people who are very similar to you, or very different from you?",
-    "c": "Social"
+    "c": "Identity & Growth"
   },
   {
     "q": "How easy is it for you to orgasm?",
@@ -253,11 +253,11 @@
   },
   {
     "q": "Are there any cases in which you would support forced, involuntary brain modification to change someone else's mind, urges, or behavior?",
-    "c": "World"
+    "c": "World & Beliefs"
   },
   {
     "q": "What are your weirdest coping mechanisms for stress?",
-    "c": "Self"
+    "c": "Inner Life & Emotions"
   },
   {
     "q": "If you could press a button that would make you feel deeply and permanently that everything was okay, would you? What qualifications would you require before pressing the button?",
@@ -265,7 +265,7 @@
   },
   {
     "q": "What does it take for you to respect a person's preferred pronouns? How about their preferred gender identity?",
-    "c": "World"
+    "c": "World & Beliefs"
   },
   {
     "q": "If you tried, could you count and list the names of everyone you've had sex with? Do your best.",
@@ -273,7 +273,7 @@
   },
   {
     "q": "Would you rather have sex with your partner who is inhabiting your parent-of-the-same-gender's body, or have sex with your parent-of-the-same-gender who is inhabiting your partner's body?",
-    "c": "Hypothetical"
+    "c": "Sex"
   },
   {
     "q": "What percentage of your preferred age/gender demographic world-wide would you be down to have sex with?",
@@ -281,11 +281,11 @@
   },
   {
     "q": "What's the most intense emotional pain you've ever experienced? What was your response to it?",
-    "c": "Story"
+    "c": "Inner Life & Emotions"
   },
   {
     "q": "What have you done that you are most ashamed of?",
-    "c": "Story"
+    "c": "Identity & Growth"
   },
   {
     "q": "What was the most difficult thing you've ever had to do?",
@@ -293,23 +293,23 @@
   },
   {
     "q": "What's the most controversial opinion you hold among your own friends?",
-    "c": "Social"
+    "c": "World & Beliefs"
   },
   {
     "q": "What's the most controversial opinion you hold amongst your local community, neighbors, etc?",
-    "c": "World"
+    "c": "World & Beliefs"
   },
   {
     "q": "What do you think enlightenment is? Do you have it? What prevents it?",
-    "c": "Self"
+    "c": "World & Beliefs"
   },
   {
     "q": "Do you have any political or social opinions that you're afraid to express to your closest friends?",
-    "c": "Friends"
+    "c": "World & Beliefs"
   },
   {
     "q": "What about yourself have you been trying to fix for a long time? Why is it difficult?",
-    "c": "Self"
+    "c": "Identity & Growth"
   },
   {
     "q": "In total, have you given or received more oral sex?",
@@ -321,7 +321,7 @@
   },
   {
     "q": "If you had to fuck a cow, would you rather it be dead or alive?",
-    "c": "Hypothetical"
+    "c": "Sex"
   },
   {
     "q": "What do you most admire about the people in this room?",
@@ -333,7 +333,7 @@
   },
   {
     "q": "In what ways do you tend to be misunderstood by people?",
-    "c": "Self"
+    "c": "Identity & Growth"
   },
   {
     "q": "If you (and only you) could see one measurement or statistic over everyone's heads, what would you want it to indicate?",
@@ -349,23 +349,23 @@
   },
   {
     "q": "Which have you planned or thought about in greater detail: killing yourself, or killing someone else?",
-    "c": "Self"
+    "c": "Inner Life & Emotions"
   },
   {
     "q": "What's the most intense physical pain you've ever experienced?",
-    "c": "Story"
+    "c": "Inner Life & Emotions"
   },
   {
     "q": "What groups or communities are you most judged for being a member of?",
-    "c": "Social"
+    "c": "Identity & Growth"
   },
   {
     "q": "Do you still owe someone an apology? What for?",
-    "c": "Social"
+    "c": "Identity & Growth"
   },
   {
     "q": "Does somebody owe you an apology for something? What for?",
-    "c": "Social"
+    "c": "Inner Life & Emotions"
   },
   {
     "q": "Who in your life seems best at handling adversity and suffering in a healthy way?",
@@ -373,15 +373,15 @@
   },
   {
     "q": "Has anything triggered a big fear response in you recently?",
-    "c": "Story"
+    "c": "Inner Life & Emotions"
   },
   {
     "q": "What problems do you see in the relationships of those around you? In this room?",
-    "c": "Relationships"
+    "c": "Social"
   },
   {
     "q": "How much do people tend to respect you? How much do they tend to desire you? Which would you rather have more of?",
-    "c": "Social"
+    "c": "Identity & Growth"
   },
   {
     "q": "What trait do you find very attractive in a romantic partner that is undervalued by others?",
@@ -389,35 +389,35 @@
   },
   {
     "q": "Are some kinds of torture permissible under certain circumstances? Elaborate.",
-    "c": "World"
+    "c": "World & Beliefs"
   },
   {
     "q": "At the gut level, do you feel that the world is safe or not safe?",
-    "c": "World"
+    "c": "Inner Life & Emotions"
   },
   {
     "q": "Which of the exes of the people in this room would you most like to have sex with?",
-    "c": "Sex"
+    "c": "Social"
   },
   {
     "q": "Who do you hate most? Why?",
-    "c": "World"
+    "c": "Inner Life & Emotions"
   },
   {
     "q": "If you could have one but not the other, would you rather love someone or be loved by someone?",
-    "c": "Relationships"
+    "c": "Inner Life & Emotions"
   },
   {
     "q": "Can someone both be a kind person and also hold the exact opposite of your political views?",
-    "c": "Hypothetical"
+    "c": "World & Beliefs"
   },
   {
     "q": "Is incest always wrong? When, if ever, would you be open to it?",
-    "c": "Relationships"
+    "c": "World & Beliefs"
   },
   {
     "q": "On a scale of 1-10, where 0 is complete self-loathing and 10 is absolute unconditional love, how much do you like/love yourself?",
-    "c": "Self"
+    "c": "Inner Life & Emotions"
   },
   {
     "q": "If you were invited to an all-nude party, where all the participants are required to be naked the whole time, would you go?",
@@ -433,15 +433,15 @@
   },
   {
     "q": "What's one of the most adventurous things you've ever done in bed? Who initiated it?",
-    "c": "Story"
+    "c": "Sex"
   },
   {
     "q": "Which generic stereotypes about you (your race, gender, sexuality, etc) do you benefit from? Which do you feel hurt you?",
-    "c": "Self"
+    "c": "Identity & Growth"
   },
   {
     "q": "How do your own morals differ from those that you feel pressured to keep by society?",
-    "c": "Self"
+    "c": "World & Beliefs"
   },
   {
     "q": "If you could press a button that would instantly correct every single false belief you have, would you do it? Do you have any idea which ones would be most affected?",
@@ -449,23 +449,23 @@
   },
   {
     "q": "Would you prefer to date someone 20 IQ points higher or 20 points lower than you?",
-    "c": "Hypothetical"
+    "c": "Relationships"
   },
   {
     "q": "Would you prefer to date someone hotter than you or less hot?",
-    "c": "Hypothetical"
+    "c": "Relationships"
   },
   {
     "q": "In what ways do you not trust yourself? Have you done anything recently that you feel was self-sabotage?",
-    "c": "Story"
+    "c": "Inner Life & Emotions"
   },
   {
     "q": "What difficult or painful experience would you recommend to everyone?",
-    "c": "Story"
+    "c": "Identity & Growth"
   },
   {
     "q": "Which of your habits conflicts most with your values?",
-    "c": "Self"
+    "c": "World & Beliefs"
   },
   {
     "q": "If you could ask the universe one question and get the truth, what would you ask? What would you do with the answer?",
@@ -473,7 +473,7 @@
   },
   {
     "q": "Have you had any thoughts or opinions pop up in your head recently that are so offensive that you feel ashamed for having thought them?",
-    "c": "Self"
+    "c": "Inner Life & Emotions"
   },
   {
     "q": "What is the most interesting fact about you or experience that you've had that few people know?",
@@ -481,79 +481,131 @@
   },
   {
     "q": "If you had to choose one, would you rather double or halve your sex drive? Where would that put you relative to others?",
-    "c": "Hypothetical"
-  },
-  {
-    "q": "What's something you've done that you believe nobody else in this room has done?",
-    "c": "Story"
-  },
-  {
-    "q": "What's something everyone else in this room has done except you?",
-    "c": "Story"
-  },
-  {
-    "q": "Who in this room do you think has been fired from the most jobs? What were they fired for?",
-    "c": "Social"
-  },
-  {
-    "q": "Who in this room do you think has slept with the most people?",
     "c": "Sex"
   },
   {
-    "q": "Do you think of yourself as intimidating? Why?",
-    "c": "Self"
-  },
-  {
-    "q": "Have you ever read through the emails or text messages of your partner? Did you find anything incriminating? If so, what did you do with that information?",
-    "c": "Story"
-  },
-  {
-    "q": "To your knowledge, has your partner ever read through your emails and text messages without your consent? Did they find anything incriminating? If so, what did they do with that information?",
-    "c": "Story"
-  },
-  {
-    "q": "Everyone close your eyes. Now discuss what color each person's shirt is and see how well you did.",
-    "c": "Guess"
-  },
-  {
-    "q": "On a scale of 1-10, how well would you rate your dancing skills?",
-    "c": "Self"
-  },
-  {
-    "q": "On a scale of 1-10, how well would you rate your ability to give people orgasms?",
-    "c": "Self"
-  },
-  {
-    "q": "When did you meet each person in this room? What was your first impression of them?",
-    "c": "Story"
-  },
-  {
-    "q": "What was your first impression of each person in this room when you saw them today?",
-    "c": "Story"
-  },
-  {
-    "q": "Guess how many speeding tickets each person in this room has gotten, and then see how close you were.",
-    "c": "Guess"
-  },
-  {
-    "q": "Do you feel most at home in a bustling urban area, deep in nature, or somewhere remote and quaint? Which part of you comes out there that can't come out in the others?",
-    "c": "Self"
-  },
-  {
-    "q": "Nobody move! What is everyone in this room's body language telling you right now?",
+    "q": "What's something you've done that you believe nobody else in this room has done?",
     "c": "Social"
   },
   {
+    "q": "What's something everyone else in this room has done except you?",
+    "c": "Social"
+  },
+  {
+    "q": "What does my fashion tell you about me?",
+    "c": "Perception"
+  },
+  {
+    "q": "Do you think I've ever been fired from a job? If so, what for?",
+    "c": "Perception"
+  },
+  {
+    "q": "Who in this room do you think has been fired from the most jobs? What were they fired for?",
+    "c": "Perception"
+  },
+  {
+    "q": "Who in this room do you think has slept with the most people?",
+    "c": "Perception"
+  },
+  {
+    "q": "Think of your favorite childhood TV show of all time. On the count of three, say it out loud! (all players)",
+    "c": "Perception"
+  },
+  {
+    "q": "Who do you think my celebrity crush is?",
+    "c": "Perception"
+  },
+  {
+    "q": "Do you think I intimidate others? Why or why not?",
+    "c": "Perception"
+  },
+  {
+    "q": "Do you think of yourself as intimidating? Why?",
+    "c": "Identity & Growth"
+  },
+  {
+    "q": "Have you ever read through the emails or text messages of your partner? Did you find anything incriminating? If so, what did you do with that information?",
+    "c": "Relationships"
+  },
+  {
+    "q": "To your knowledge, has your partner ever read through your emails and text messages without your consent? Did they find anything incriminating? If so, what did they do with that information?",
+    "c": "Relationships"
+  },
+  {
+    "q": "Everyone close your eyes. Now discuss what color each person's is shirt and see how well you did.",
+    "c": "Perception"
+  },
+  {
+    "q": "Rate your dancing skills on a scale of 1-10. On the count of three, say your answers out loud! (all players)",
+    "c": "Perception"
+  },
+  {
+    "q": "On a scale of 1-10, how well would you rate your dancing skills?",
+    "c": "Perception"
+  },
+  {
+    "q": "Do you think I fall in love easily? Why or why not?",
+    "c": "Perception"
+  },
+  {
+    "q": "On a scale of 1-10, how well would you rate your ability to give people orgasms?",
+    "c": "Sex"
+  },
+  {
+    "q": "When did you meet each person in this room? What was your first impression of them?",
+    "c": "Social"
+  },
+  {
+    "q": "What's the first thing you noticed about me when I arrived on this trip?",
+    "c": "Perception"
+  },
+  {
+    "q": "What was your first impression of each person in this room when you saw them today?",
+    "c": "Social"
+  },
+  {
+    "q": "How many speeding tickets do you think I've gotten in my life?",
+    "c": "Perception"
+  },
+  {
+    "q": "Guess how many speeding tickets each person in this room has gotten, and then see how close you were.",
+    "c": "Perception"
+  },
+  {
+    "q": "Do you feel most at home in a bustling urban area, deep in nature, or somewhere remote and quaint? Which part of you comes out there that can't come out in the others?",
+    "c": "Identity & Growth"
+  },
+  {
+    "q": "What is my body language telling you right now?",
+    "c": "Perception"
+  },
+  {
+    "q": "Nobody move! What is everyone in this room's body language telling you right now?",
+    "c": "Perception"
+  },
+  {
+    "q": "As a child, what do you think I wanted to be?",
+    "c": "Perception"
+  },
+  {
     "q": "What did you imagine your life to be like now when you were half your age? Is it better or worse than you imagined?",
-    "c": "Story"
+    "c": "Identity & Growth"
   },
   {
     "q": "Is there a food that you hate that everyone else seems to love? Is there a food you love that everyone else seems to hate?",
-    "c": "Self"
+    "c": "Identity & Growth"
+  },
+  {
+    "q": "Let's say I have a secret tattoo somewhere on me. Based on what you know about me, where is it and what is the tattoo of?",
+    "c": "Perception"
   },
   {
     "q": "If you had to get a tattoo today, what are 3 ideas you'd consider? Ask people to vote on them and then consider getting it. Why would you / wouldn't you?",
-    "c": "Hypothetical"
+    "c": "Perception"
+  },
+  {
+    "q": "Make an assumption about me that you think is true but don't have proof. (all players)",
+    "c": "Perception"
   },
   {
     "q": "Ask others to give you life advice about a question you're currently grappling with. Then tell them if you think their advice is good or bad and why.",
@@ -561,23 +613,23 @@
   },
   {
     "q": "Are you active on social media? If so, what do you think people that only see that image of you think about you? If not, how do you think your life would appear to others if you were active on it?",
-    "c": "Social"
+    "c": "Identity & Growth"
   },
   {
     "q": "Are you usually early, on time, or late to events? What do you think of people who are like that?",
-    "c": "Self"
+    "c": "Identity & Growth"
   },
   {
     "q": "If you had an influx of money suddenly but had to spend it quickly and irresponsibly, what would you choose to splurge on?",
-    "c": "Hypothetical"
+    "c": "Money & Work"
   },
   {
     "q": "Ask others in the room what they think you do for a living. Let them know if they are right or not, and what, if anything, they missed.",
-    "c": "Social"
+    "c": "Perception"
   },
   {
     "q": "Ask others in the room if they think you are good at taking care of plants or not. How do their answers make you feel?",
-    "c": "Social"
+    "c": "Perception"
   },
   {
     "q": "If you had to sing a song at karaoke in front of all of your family and friends or else one of them would be randomly struck by lightning, what song would you choose to sing?",
@@ -585,15 +637,15 @@
   },
   {
     "q": "For each person in the room, finish the sentence: just by looking at you, I'd think _____.",
-    "c": "Social"
+    "c": "Perception"
   },
   {
     "q": "Have you binge watched any tv shows recently? If so, which would you most recommend to the people here, and why?",
-    "c": "Self"
+    "c": "Social"
   },
   {
     "q": "What's one thing you find yourself often doing when first meeting someone that you want to like you that is purely for the purposes of making a good impression on them?",
-    "c": "Self"
+    "c": "Identity & Growth"
   },
   {
     "q": "Ask people in this room, on a scale of 1-10, how messy do you think my car is? 1 being cleanest, 10 a complete disaster.",
@@ -601,11 +653,11 @@
   },
   {
     "q": "If every time you walked into a room your theme song played, what song would you pick?",
-    "c": "Hypothetical"
+    "c": "Identity & Growth"
   },
   {
     "q": "If each person in this room got a magic relic that gave them super powers that enhanced one of their natural abilities, what powers would each person have?",
-    "c": "Hypothetical"
+    "c": "Perception"
   },
   {
     "q": "Look at each person in the room and maintain eye contact for at least 5 seconds each. Who was this easiest with?",
@@ -617,11 +669,11 @@
   },
   {
     "q": "How are you feeling right now? Answer 100% truthfully until everyone in the room is convinced that you aren't hiding any feelings.",
-    "c": "Self"
+    "c": "Inner Life & Emotions"
   },
   {
     "q": "Is there anything that you're thinking about right now, in the back of your mind, even as you play this game? What is it?",
-    "c": "Self"
+    "c": "Inner Life & Emotions"
   },
   {
     "q": "If you could force one person in this room to change their mind about anything, what would it be?",
@@ -633,39 +685,39 @@
   },
   {
     "q": "What's been the best compliment a stranger has ever given you?",
-    "c": "Connection"
-  },
-  {
-    "q": "Press shuffle on the biggest album of music on your phone. Share your thoughts about the first song that comes up.",
-    "c": "Connection"
-  },
-  {
-    "q": "Show everyone the last photo taken on your phone, describe what it is, and why you took it.",
     "c": "Story"
   },
   {
+    "q": "Press shuffle on the biggest album of music on your phone. Share your thoughts about the first song that comes up.",
+    "c": "Perception"
+  },
+  {
+    "q": "Show everyone the last photo taken on your phone, describe what it is, and why you took it.",
+    "c": "Perception"
+  },
+  {
     "q": "If your life was a book, and each chapter captured 10 years of your life, what would the current chapter be titled?",
-    "c": "Self"
+    "c": "Identity & Growth"
   },
   {
     "q": "What song have you most recently listened to on repeat? What emotion does it capture for you?",
-    "c": "Self"
+    "c": "Inner Life & Emotions"
   },
   {
-    "q": "What's something about yourself that a partner has tried to change about you but that you are glad you did not?",
-    "c": "Self"
+    "q": "What's something about yourself that a partner has tried to change about you but that you are glad you did not.",
+    "c": "Identity & Growth"
   },
   {
     "q": "Find something small to throw. Make a wish (out loud) for something you crave more of in your life. Then toss it somewhere to make it come true.",
-    "c": "Self"
+    "c": "Perception"
   },
   {
     "q": "What would your younger self not believe about your life today?",
-    "c": "Connection"
+    "c": "Identity & Growth"
   },
   {
     "q": "What question are you trying to answer most in your life right now?",
-    "c": "Connection"
+    "c": "Identity & Growth"
   },
   {
     "q": "Describe a moment of perfect happiness from your past that you would like to revisit, even if the circumstances of that moment are no longer possible.",
@@ -673,35 +725,35 @@
   },
   {
     "q": "Create a secret handshake.",
-    "c": "Connection"
+    "c": "Perception"
   },
   {
-    "q": "What's something that has happened to you that to this day you do not fully understand?",
+    "q": "What's something that has happened to you that to this day you do not fully understand.",
     "c": "Story"
   },
   {
     "q": "What is the last thing you lied to your mother about?",
-    "c": "Connection"
+    "c": "Family"
   },
   {
     "q": "What is something that you still feel compelled to want to prove to the world or to a specific person?",
-    "c": "Self"
+    "c": "Identity & Growth"
   },
   {
     "q": "Swap seats with each other.",
-    "c": "Connection"
+    "c": "Perception"
   },
   {
     "q": "How do you define success? How do you define failure? How might success be scary? How might failure be okay?",
-    "c": "Self"
+    "c": "World & Beliefs"
   },
   {
     "q": "Have you ever told someone I love you but didn't mean it? If so, why?",
-    "c": "Connection"
+    "c": "Relationships"
   },
   {
     "q": "What's your mother's name? If she's still alive, what do you think she is doing right now? And the thing you admire most about her?",
-    "c": "Connection"
+    "c": "Family"
   },
   {
     "q": "What's your father's name? If he's still alive, what do you think he is doing right now? And the thing you admire most about him?",
@@ -717,11 +769,11 @@
   },
   {
     "q": "On a scale of 1-10: How hungry are you right now? How sleepy are you? How badly do you need to go to the bathroom?",
-    "c": "Self"
+    "c": "Perception"
   },
   {
     "q": "If you have, when was the moment you realized you weren't invincible?",
-    "c": "Connection"
+    "c": "Story"
   },
   {
     "q": "Can you remember the moment you realized your parents were not all-powerful?",
@@ -729,30 +781,30 @@
   },
   {
     "q": "What is the secret to living the best life in as few words as possible?",
-    "c": "Self"
+    "c": "World & Beliefs"
   },
   {
     "q": "What is a common path for happiness in today's world that you believe is a dead end? When did you realize that this was the case?",
-    "c": "World"
+    "c": "World & Beliefs"
   },
   {
     "q": "What do you think you could work on (or are working on) that would make you a better person? How can the people in this room help you with that?",
-    "c": "Self"
+    "c": "Identity & Growth"
   },
   {
     "q": "If you could get to know someone in your life on a deeper level, who would it be and why?",
-    "c": "Connection"
+    "c": "Social"
   },
   {
     "q": "If you could swap bodies with anyone who would it be and why?",
-    "c": "Hypothetical"
+    "c": ""
   },
   {
     "q": "If you were to commit to a better life, right in this moment, what would a better life be?",
-    "c": "Self"
+    "c": ""
   },
   {
     "q": "If you had to pick a recipe on your tombstone, which recipe would it be?",
-    "c": "Hypothetical"
+    "c": ""
   }
 ]
