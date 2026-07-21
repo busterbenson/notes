@@ -68,7 +68,10 @@ permalink: /questions/
     letter-spacing: 0.14em;
     text-transform: uppercase;
     padding: 0.45rem 1.7rem 0.45rem 1.1rem;
-    margin-bottom: 1.4rem;
+    max-width: 44vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     cursor: pointer;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%238a857c' stroke-width='1.5'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
@@ -118,12 +121,55 @@ permalink: /questions/
     font-family: inherit;
   }
   #bar button:active { background: var(--chip); }
-  #status { display: flex; align-items: center; gap: 0.45rem; }
-  #dot {
-    width: 0.5rem; height: 0.5rem; border-radius: 50%;
-    background: #555;
+  #count { white-space: nowrap; }
+  #overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 10;
   }
-  #dot.ready { background: #5a9e6f; }
+  #overlay[hidden] { display: none; }
+  #menu {
+    background: #232323;
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+    max-width: 42rem;
+    padding: 1.1rem 1.4rem calc(1.5rem + env(safe-area-inset-bottom));
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 0.9rem;
+  }
+  .menu-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid #333;
+  }
+  .menu-row span:last-child { color: var(--dim); }
+  .mdot {
+    display: inline-block;
+    width: 0.5rem; height: 0.5rem;
+    border-radius: 50%;
+    background: #555;
+    margin-right: 0.45rem;
+  }
+  .mdot.on { background: #5a9e6f; }
+  #clearBtn {
+    margin-top: 1.2rem;
+    width: 100%;
+    background: none;
+    border: 1px solid #3a3a3a;
+    color: var(--fg);
+    border-radius: 999px;
+    padding: 0.7rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  #clearBtn:active { background: var(--chip); }
   #hint {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
     font-size: 0.78rem;
@@ -134,16 +180,24 @@ permalink: /questions/
 </head>
 <body>
   <main id="stage" title="Next question">
-    <select id="filter" aria-label="Category"></select>
     <div id="chip"></div>
     <div id="question"></div>
     <div id="hint">tap for another</div>
   </main>
   <footer id="bar">
     <button id="prev" aria-label="Previous question">&#8249; back</button>
-    <span id="status"><span id="dot"></span><span id="net">checking&hellip;</span></span>
+    <select id="filter" aria-label="Category"></select>
     <span id="count"></span>
+    <button id="menuBtn" aria-label="Status menu">&#8943;</button>
   </footer>
+  <div id="overlay" hidden>
+    <div id="menu">
+      <div class="menu-row"><span>Connection</span><span id="mConn"></span></div>
+      <div class="menu-row"><span>Offline copy</span><span id="mCache"></span></div>
+      <div class="menu-row"><span>Seen (all categories)</span><span id="mSeen"></span></div>
+      <button id="clearBtn">Clear history of seen questions</button>
+    </div>
+  </div>
 
 <script>
 const QUESTIONS = {{ site.data.questions | jsonify }};
@@ -217,7 +271,7 @@ const filterEl = document.getElementById('filter');
   for (const [name, n] of opts) {
     const o = document.createElement('option');
     o.value = name;
-    o.textContent = (name === ALL ? 'All categories' : name) + ' · ' + n;
+    o.textContent = (name === ALL ? 'All' : name) + ' · ' + n;
     filterEl.appendChild(o);
   }
   filterEl.value = state.cat;
@@ -232,6 +286,11 @@ function render() {
   chipEl.style.display = (state.cat === ALL && item.c) ? '' : 'none';
   qEl.textContent = item.q;
   countEl.textContent = (c.pos + 1) + ' / ' + c.order.length;
+  // Seen history is keyed on question text so it survives spreadsheet
+  // updates reordering the data, and counts across every category pool.
+  if (!Array.isArray(state.seen)) state.seen = [];
+  if (!state.seen.includes(item.q)) state.seen.push(item.q);
+  save();
 }
 
 function show(step) {
@@ -244,7 +303,6 @@ function show(step) {
     } else if (c.pos > 0) {
       c.pos--;
     }
-    save();
     render();
     qEl.classList.remove('fading');
     hintEl.style.visibility = 'hidden';
@@ -257,9 +315,62 @@ filterEl.addEventListener('click', (e) => e.stopPropagation());
 filterEl.addEventListener('change', (e) => {
   e.stopPropagation();
   state.cat = filterEl.value;
-  save();
   qEl.classList.add('fading');
   setTimeout(() => { render(); qEl.classList.remove('fading'); }, 180);
+});
+
+// Status menu: connection state, offline-cache state, seen count, clear.
+const overlayEl = document.getElementById('overlay');
+const menuBtnEl = document.getElementById('menuBtn');
+const mConnEl = document.getElementById('mConn');
+const mCacheEl = document.getElementById('mCache');
+const mSeenEl = document.getElementById('mSeen');
+const clearBtnEl = document.getElementById('clearBtn');
+const CLEAR_LABEL = 'Clear history of seen questions';
+let swReady = false;
+let clearArmed = false;
+
+function seenCount() {
+  const seen = new Set(state.seen || []);
+  return QUESTIONS.filter((item) => seen.has(item.q)).length;
+}
+
+function dot(on) {
+  return '<span class="mdot' + (on ? ' on' : '') + '"></span>';
+}
+
+function updateMenu() {
+  const online = navigator.onLine;
+  mConnEl.innerHTML = dot(online) + (online ? 'online' : 'offline');
+  mCacheEl.innerHTML = dot(swReady) + (swReady ? 'works offline' : 'not cached yet');
+  mSeenEl.textContent = seenCount() + ' of ' + QUESTIONS.length;
+}
+
+menuBtnEl.addEventListener('click', (e) => {
+  e.stopPropagation();
+  clearArmed = false;
+  clearBtnEl.textContent = CLEAR_LABEL;
+  updateMenu();
+  overlayEl.hidden = false;
+});
+overlayEl.addEventListener('click', (e) => {
+  if (e.target === overlayEl) overlayEl.hidden = true;
+});
+window.addEventListener('online', updateMenu);
+window.addEventListener('offline', updateMenu);
+
+clearBtnEl.addEventListener('click', () => {
+  if (!clearArmed) {
+    clearArmed = true;
+    clearBtnEl.textContent = 'Tap again to confirm';
+    return;
+  }
+  clearArmed = false;
+  state.seen = [];
+  state.cycles = {};
+  render();
+  updateMenu();
+  clearBtnEl.textContent = 'Cleared ✓';
 });
 document.addEventListener('keydown', (e) => {
   if (e.key === ' ' || e.key === 'ArrowRight' || e.key === 'Enter') { e.preventDefault(); show(1); }
@@ -270,11 +381,9 @@ render();
 
 // Offline support: the service worker caches this page (and the icons) on first
 // visit, so the URL keeps working with no connection at all.
-const netEl = document.getElementById('net');
-const dotEl = document.getElementById('dot');
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js').then((reg) => {
-    const markReady = () => { dotEl.classList.add('ready'); netEl.textContent = 'works offline'; };
+    const markReady = () => { swReady = true; updateMenu(); };
     if (reg.active) markReady();
     else reg.addEventListener('updatefound', () => {
       const w = reg.installing;
@@ -289,7 +398,7 @@ if ('serviceWorker' in navigator) {
         reg.update().catch(() => {});
       }
     });
-  }).catch(() => { netEl.textContent = 'online only'; });
+  }).catch(() => { updateMenu(); });
 
   // ...and when one takes over, reload once to pick up the new page. Guarded
   // to the already-controlled case so the very first visit doesn't reload.
@@ -300,8 +409,6 @@ if ('serviceWorker' in navigator) {
     reloaded = true;
     location.reload();
   });
-} else {
-  netEl.textContent = 'online only';
 }
 </script>
 </body>
