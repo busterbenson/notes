@@ -25,6 +25,13 @@
     Content-Security-Policy = "frame-ancestors 'self' https://chalant-reports.pages.dev https://busterbenson.com https://chalantbot.abyssinian-peacock.ts.net:8002"
 
 
+# The /questions service worker must never be cached long-term, or clients
+# would keep running a stale worker for a week after the page changes.
+[[headers]]
+  for = "/questions/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache"
+
 [[headers]]
   for = "*.ico"
   [headers.values]

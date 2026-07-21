@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Questions</title>
+<meta name="description" content="One good question at a time.">
+<meta name="theme-color" content="#191919">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Questions">
+<meta name="robots" content="noindex">
+<style>
+  :root {
+    --bg: #191919;
+    --fg: #f2ede4;
+    --dim: #8a857c;
+    --chip: #2a2a2a;
+    --accent: #d4a24e;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: Georgia, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    user-select: none;
+    overscroll-behavior: none;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+  #stage {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    cursor: pointer;
+    max-width: 42rem;
+    margin: 0 auto;
+    width: 100%;
+  }
+  #chip {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--dim);
+    background: var(--chip);
+    border-radius: 999px;
+    padding: 0.35rem 0.9rem;
+    margin-bottom: 2rem;
+    min-height: 1em;
+  }
+  #question {
+    font-size: clamp(1.5rem, 4.5vw, 2.2rem);
+    line-height: 1.4;
+    transition: opacity 0.18s ease;
+  }
+  #question.fading { opacity: 0; }
+  #bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.9rem 1.4rem 1.3rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 0.8rem;
+    color: var(--dim);
+    max-width: 42rem;
+    margin: 0 auto;
+    width: 100%;
+  }
+  #bar button {
+    background: none;
+    border: 1px solid #3a3a3a;
+    color: var(--fg);
+    border-radius: 999px;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 0.55rem 1.1rem;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  #bar button:active { background: var(--chip); }
+  #status { display: flex; align-items: center; gap: 0.45rem; }
+  #dot {
+    width: 0.5rem; height: 0.5rem; border-radius: 50%;
+    background: #555;
+  }
+  #dot.ready { background: #5a9e6f; }
+  #hint {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 0.78rem;
+    color: var(--dim);
+    margin-top: 2.4rem;
+  }
+</style>
+</head>
+<body>
+  <main id="stage" title="Next question">
+    <div id="chip"></div>
+    <div id="question"></div>
+    <div id="hint">tap for another</div>
+  </main>
+  <footer id="bar">
+    <button id="prev" aria-label="Previous question">&#8249; back</button>
+    <span id="status"><span id="dot"></span><span id="net">checking&hellip;</span></span>
+    <span id="count"></span>
+  </footer>
+
+<script>
+const QUESTIONS = [
+  {d:"Askhole",c:"Story",q:"What relatively common experience have you never had? Why?"},
+  {d:"Askhole",c:"Hypothetical",q:"If you could ask everybody in the world one question, what would it be? What would you do with the answers?"},
+  {d:"Askhole",c:"Hypothetical",q:"You can make a designer baby. If you could spend 10 points on intelligence, happiness, attractiveness, and physical health, how would you distribute those points?"},
+  {d:"Askhole",c:"Story",q:"What was the last thing you cried about? When was it?"},
+  {d:"Askhole",c:"Spirituality",q:"Do you believe in God? If so, what do you mean by the word God?"},
+  {d:"Askhole",c:"Story",q:"What is a significant thing you've ever changed your mind about recently? How was it changed?"},
+  {d:"Askhole",c:"Sex",q:"Do you have any kinks that you've never admitted to anybody?"},
+  {d:"Buster",c:"Story",q:"Have you had any romantic relationship or affairs that you've never told anyone about?"},
+  {d:"Askhole",c:"Hypothetical",q:"If you could press a button and double the sex drive of all women on Earth, would you do it? All the men?"},
+  {d:"Askhole",c:"Social",q:"What are a couple things about the people in this room that make you feel weirdly competitive or jealous?"},
+  {d:"Askhole",c:"Self",q:"Which of your personality traits are you secretly most proud of?"},
+  {d:"Askhole",c:"Story",q:"How have you disappointed your parents recently?"},
+  {d:"Askhole",c:"Hypothetical",q:"If you could, would you use the orgasmatron? What rules would you give yourself for using it, if any?"},
+  {d:"Askhole",c:"Hypothetical",q:"You must pick a number right now and live that many more years in good physical health, followed by the same number of years in bad physical and mental health. What's your number?"},
+  {d:"Askhole",c:"Hypothetical",q:"If you were in charge of managing the gates of heaven and determining who went to heaven and who went to hell, what would your criteria be for judging each person?"},
+  {d:"Askhole",c:"Story",q:"What was your biggest financial mistake?"},
+  {d:"Askhole",c:"Story",q:"What was your last really painful experience that you now feel that you are mostly healed from? How did you go about healing from it?"},
+  {d:"Askhole",c:"Hypothetical",q:"Would you rather double the amount of emotional pain and pleasure you feel on a daily basis, or cut both in half?"},
+  {d:"Askhole",c:"Self",q:"Are you afraid of death? Why or why not?"},
+  {d:"Askhole",c:"Self",q:"What are the signs that someone understands you uniquely? How many people do you feel uniquely understood by?"},
+  {d:"Askhole",c:"Family",q:"How do you feel your parents did a good job raising you? How did they fuck you up?"},
+  {d:"Askhole",c:"Sex",q:"What kinds of sex work should be legal, if any?"},
+  {d:"Askhole",c:"Sex",q:"Do you think it's okay to eat animals? What about having sex with animals?"},
+  {d:"Askhole",c:"Social",q:"Are there any viewpoints so offensive that they deserve to be made illegal to express? If so, which ones?"},
+  {d:"Askhole",c:"Self",q:"How much do you know about the art of seduction?"},
+  {d:"Buster",c:"Relationships",q:"Could you be in a serious relationship with someone who could never hear criticism or negativity?"},
+  {d:"Askhole",c:"Relationships",q:"Do you ever feel guilt or shame for romantically rejecting people who are interested in you?"},
+  {d:"Askhole",c:"Hypothetical",q:"Would you rather be raped or falsely (but convincingly) accused of rape?"},
+  {d:"Askhole",c:"Self",q:"What is currently your greatest insecurity? How do you hide it?"},
+  {d:"Askhole",c:"Relationships",q:"You see a friend getting into their third emotionally abusive relationship in a row and they seem to ignore your advice. What do you do?"},
+  {d:"Askhole",c:"Self",q:"Do you make decisions more based on logic or intuition? What's an example?"},
+  {d:"Buster",c:"Self",q:"Do you make decisions more based on strict rules or by judging the specific circumstances? What's an example?"},
+  {d:"Buster",c:"Self",q:"When making a decision, do you tend to lean more towards what is familiar or towards what is new? What's an example?"},
+  {d:"Askhole",c:"Self",q:"Do you believe the set of concepts like \"duty\", \"should\", \"obligation\", and \"deserving\" are worth striving for?"},
+  {d:"Askhole",c:"Self",q:"What is your biggest obstacle toward personal inner peace? Why is this specifically difficult to work through?"},
+  {d:"Askhole",c:"Sex",q:"Out of all your past sexual experiences, which has disturbed you the most?"},
+  {d:"Buster",c:"Sex",q:"Out of all your past sexual experience, what has been the most memorable?"},
+  {d:"Askhole",c:"World",q:"Of all the beliefs you hold, which is most likely to be considered barbaric in 150 years?"},
+  {d:"Askhole",c:"Self",q:"What emotion/feeling are you currently suppressing or ignoring?"},
+  {d:"Askhole",c:"Self",q:"What's the most sick (mental or physical) you've ever been? When have you felt the most mentally and physically healthy? Where are you now?"},
+  {d:"Buster",c:"Relationships",q:"You have to marry someone you know right now (becoming poly if necessary). Who is it?"},
+  {d:"Askhole",c:"Self",q:"Are you more afraid of being boring or bored?"},
+  {d:"Askhole",c:"Family",q:"Did your parents give you the love and emotional support you needed as a kid? Have things improved or not since then?"},
+  {d:"Askhole",c:"Sex",q:"What was your most embarrassing sexual experience?"},
+  {d:"Askhole",c:"World",q:"Are there any technologies that you wish had never been invented? Why?"},
+  {d:"Askhole",c:"Relationships",q:"What are your boundaries for what is and isn't allowed in a fight with a romantic partner? Is yelling okay? Personal insults? What's not okay?"},
+  {d:"Askhole",c:"Social",q:"What kind of people do you get along best with? Who's the most recent person you've met that fits this category?"},
+  {d:"Askhole",c:"Self",q:"Do you feel like any of your core beliefs have been challenged recently? Do you feel open to changing the belief, or resistance?"},
+  {d:"Askhole",c:"Self",q:"In what ways are you inhibited from expressing love?"},
+  {d:"Askhole",c:"Sex",q:"Have you ever participated in any capacity with anything that might be considered sex work?"},
+  {d:"Askhole",c:"Self",q:"When you introspect, away from society and your physical body, deep inside, do you feel a sense of gender?"},
+  {d:"Askhole",c:"Self",q:"Which of your achievements are you most proud of? What is the most recent thing you've done that you're proud of?"},
+  {d:"Askhole",c:"Self",q:"What is the best advice you've received, and why did you need it?"},
+  {d:"Askhole",c:"Self",q:"Are you waiting or hoping to hear an apology from anyone? What do you want them to say?"},
+  {d:"Askhole",c:"Self",q:"What about your appearance would you like to change?"},
+  {d:"Askhole",c:"Relationships",q:"Would you date a clone of yourself in your preferred gender?"},
+  {d:"Askhole",c:"Spirituality",q:"Have you ever had (what you consider to be) a spiritual experience? If so, what was it like and what effects did it have on you?"},
+  {d:"Askhole",c:"Relationships",q:"Have you ever dated someone who you felt was below your standards? If so, what's the longest that that went on?"},
+  {d:"Buster",c:"Relationships",q:"Have you ever dated someone that you felt was out of your league? If so, how long did it last?"},
+  {d:"Askhole",c:"World",q:"What viewpoint is the most difficult for you to empathize with?"},
+  {d:"Askhole",c:"Social",q:"Do you feel a greater sense of satisfaction when you gain approval from people who are very similar to you, or very different from you?"},
+  {d:"Askhole",c:"Sex",q:"How easy is it for you to orgasm?"},
+  {d:"Askhole",c:"Relationships",q:"Have you ever been in an open or polyamorous relationship? Either way, would you consider it (again)?"},
+  {d:"Askhole",c:"World",q:"Are there any cases in which you would support forced, involuntary brain modification to change someone else's mind, urges, or behavior?"},
+  {d:"Askhole",c:"Self",q:"What are your weirdest coping mechanisms for stress?"},
+  {d:"Askhole",c:"Hypothetical",q:"If you could press a button that would make you feel deeply and permanently that everything was okay, would you? What qualifications would you require before pressing the button?"},
+  {d:"Askhole",c:"World",q:"What does it take for you to respect a person's preferred pronouns? How about their preferred gender identity?"},
+  {d:"Askhole",c:"Sex",q:"If you tried, could you count and list the names of everyone you've had sex with? Do your best."},
+  {d:"Askhole",c:"Hypothetical",q:"Would you rather have sex with your partner who is inhabiting your parent-of-the-same-gender's body, or have sex with your parent-of-the-same-gender who is inhabiting your partner's body?"},
+  {d:"Askhole",c:"Sex",q:"What percentage of your preferred age/gender demographic world-wide would you be down to have sex with?"},
+  {d:"Askhole",c:"Story",q:"What's the most intense emotional pain you've ever experienced? What was your response to it?"},
+  {d:"Askhole",c:"Story",q:"What have you done that you are most ashamed of?"},
+  {d:"Askhole",c:"Story",q:"What was the most difficult thing you've ever had to do?"},
+  {d:"Askhole",c:"Social",q:"What's the most controversial opinion you hold among your own friends?"},
+  {d:"Buster",c:"World",q:"What's the most controversial opinion you hold amongst your local community, neighbors, etc?"},
+  {d:"Askhole",c:"Self",q:"What do you think enlightenment is? Do you have it? What prevents it?"},
+  {d:"Askhole",c:"Friends",q:"Do you have any political or social opinions that you're afraid to express to your closest friends?"},
+  {d:"Askhole",c:"Self",q:"What about yourself have you been trying to fix for a long time? Why is it difficult?"},
+  {d:"Askhole",c:"Sex",q:"In total, have you given or received more oral sex?"},
+  {d:"Askhole",c:"Relationships",q:"What were the conditions of your last break-up? Has your story about it changed since it happened?"},
+  {d:"Askhole",c:"Hypothetical",q:"If you had to fuck a cow, would you rather it be dead or alive?"},
+  {d:"Askhole",c:"Social",q:"What do you most admire about the people in this room?"},
+  {d:"Askhole",c:"Hypothetical",q:"If you had to eliminate one million people from the world based on a criteria of your choosing, what would it be? How would you eliminate them?"},
+  {d:"Askhole",c:"Self",q:"In what ways do you tend to be misunderstood by people?"},
+  {d:"Askhole",c:"Hypothetical",q:"If you (and only you) could see one measurement or statistic over everyone's heads, what would you want it to indicate?"},
+  {d:"Askhole",c:"Family",q:"How would (or did) you raise your children differently from how your parents raised you?"},
+  {d:"Buster",c:"Family",q:"If you have children, how do you think your children might raise their children differently from how you raised them?"},
+  {d:"Askhole",c:"Self",q:"Which have you planned or thought about in greater detail: killing yourself, or killing someone else?"},
+  {d:"Askhole",c:"Story",q:"What's the most intense physical pain you've ever experienced?"},
+  {d:"Askhole",c:"Social",q:"What groups or communities are you most judged for being a member of?"},
+  {d:"Askhole",c:"Social",q:"Do you still owe someone an apology? What for?"},
+  {d:"Buster",c:"Social",q:"Does somebody owe you an apology for something? What for?"},
+  {d:"Askhole",c:"Social",q:"Who in your life seems best at handling adversity and suffering in a healthy way?"},
+  {d:"Askhole",c:"Story",q:"Has anything triggered a big fear response in you recently?"},
+  {d:"Askhole",c:"Relationships",q:"What problems do you see in the relationships of those around you? In this room?"},
+  {d:"Askhole",c:"Social",q:"How much do people tend to respect you? How much do they tend to desire you? Which would you rather have more of?"},
+  {d:"Askhole",c:"Relationships",q:"What trait do you find very attractive in a romantic partner that is undervalued by others?"},
+  {d:"Askhole",c:"World",q:"Are some kinds of torture permissible under certain circumstances? Elaborate."},
+  {d:"Askhole",c:"World",q:"At the gut level, do you feel that the world is safe or not safe?"},
+  {d:"Askhole",c:"Sex",q:"Which of the exes of the people in this room would you most like to have sex with?"},
+  {d:"Askhole",c:"World",q:"Who do you hate most? Why?"},
+  {d:"Askhole",c:"Relationships",q:"If you could have one but not the other, would you rather love someone or be loved by someone?"},
+  {d:"Askhole",c:"Hypothetical",q:"Can someone both be a kind person and also hold the exact opposite of your political views?"},
+  {d:"Askhole",c:"Relationships",q:"Is incest always wrong? When, if ever, would you be open to it?"},
+  {d:"Askhole",c:"Self",q:"On a scale of 1-10, where 0 is complete self-loathing and 10 is absolute unconditional love, how much do you like/love yourself?"},
+  {d:"Askhole",c:"Hypothetical",q:"If you were invited to an all-nude party, where all the participants are required to be naked the whole time, would you go?"},
+  {d:"Askhole",c:"Social",q:"If you had to body swap with someone in the room and live their life for a year, who would you pick?"},
+  {d:"Askhole",c:"Hypothetical",q:"Would you rather have accidentally killed a child, or be a nonoffending pedophile?"},
+  {d:"Askhole",c:"Story",q:"What's one of the most adventurous things you've ever done in bed? Who initiated it?"},
+  {d:"Askhole",c:"Self",q:"Which generic stereotypes about you (your race, gender, sexuality, etc) do you benefit from? Which do you feel hurt you?"},
+  {d:"Askhole",c:"Self",q:"How do your own morals differ from those that you feel pressured to keep by society?"},
+  {d:"Askhole",c:"Hypothetical",q:"If you could press a button that would instantly correct every single false belief you have, would you do it? Do you have any idea which ones would be most affected?"},
+  {d:"Askhole",c:"Hypothetical",q:"Would you prefer to date someone 20 IQ points higher or 20 points lower than you?"},
+  {d:"Buster",c:"Hypothetical",q:"Would you prefer to date someone hotter than you or less hot?"},
+  {d:"Askhole",c:"Story",q:"In what ways do you not trust yourself? Have you done anything recently that you feel was self-sabotage?"},
+  {d:"Askhole",c:"Story",q:"What difficult or painful experience would you recommend to everyone?"},
+  {d:"Askhole",c:"Self",q:"Which of your habits conflicts most with your values?"},
+  {d:"Askhole",c:"Hypothetical",q:"If you could ask the universe one question and get the truth, what would you ask? What would you do with the answer?"},
+  {d:"Buster",c:"Self",q:"Have you had any thoughts or opinions pop up in your head recently that are so offensive that you feel ashamed for having thought them?"},
+  {d:"Askhole",c:"Story",q:"What is the most interesting fact about you or experience that you've had that few people know?"},
+  {d:"Askhole",c:"Hypothetical",q:"If you had to choose one, would you rather double or halve your sex drive? Where would that put you relative to others?"},
+  {d:"Buster",c:"Story",q:"What's something you've done that you believe nobody else in this room has done?"},
+  {d:"Buster",c:"Story",q:"What's something everyone else in this room has done except you?"},
+  {d:"Buster",c:"Social",q:"Who in this room do you think has been fired from the most jobs? What were they fired for?"},
+  {d:"Buster",c:"Sex",q:"Who in this room do you think has slept with the most people?"},
+  {d:"Buster",c:"Self",q:"Do you think of yourself as intimidating? Why?"},
+  {d:"Buster",c:"Story",q:"Have you ever read through the emails or text messages of your partner? Did you find anything incriminating? If so, what did you do with that information?"},
+  {d:"Buster",c:"Story",q:"To your knowledge, has your partner ever read through your emails and text messages without your consent? Did they find anything incriminating? If so, what did they do with that information?"},
+  {d:"Buster",c:"Guess",q:"Everyone close your eyes. Now discuss what color each person's shirt is and see how well you did."},
+  {d:"Buster",c:"Self",q:"On a scale of 1-10, how well would you rate your dancing skills?"},
+  {d:"Buster",c:"Self",q:"On a scale of 1-10, how well would you rate your ability to give people orgasms?"},
+  {d:"Buster",c:"Story",q:"When did you meet each person in this room? What was your first impression of them?"},
+  {d:"Buster",c:"Story",q:"What was your first impression of each person in this room when you saw them today?"},
+  {d:"Buster",c:"Guess",q:"Guess how many speeding tickets each person in this room has gotten, and then see how close you were."},
+  {d:"Buster",c:"Self",q:"Do you feel most at home in a bustling urban area, deep in nature, or somewhere remote and quaint? Which part of you comes out there that can't come out in the others?"},
+  {d:"Buster",c:"Social",q:"Nobody move! What is everyone in this room's body language telling you right now?"},
+  {d:"Buster",c:"Story",q:"What did you imagine your life to be like now when you were half your age? Is it better or worse than you imagined?"},
+  {d:"Buster",c:"Self",q:"Is there a food that you hate that everyone else seems to love? Is there a food you love that everyone else seems to hate?"},
+  {d:"Buster",c:"Hypothetical",q:"If you had to get a tattoo today, what are 3 ideas you'd consider? Ask people to vote on them and then consider getting it. Why would you / wouldn't you?"},
+  {d:"Buster",c:"Social",q:"Ask others to give you life advice about a question you're currently grappling with. Then tell them if you think their advice is good or bad and why."},
+  {d:"Buster",c:"Social",q:"Are you active on social media? If so, what do you think people that only see that image of you think about you? If not, how do you think your life would appear to others if you were active on it?"},
+  {d:"Buster",c:"Self",q:"Are you usually early, on time, or late to events? What do you think of people who are like that?"},
+  {d:"Buster",c:"Hypothetical",q:"If you had an influx of money suddenly but had to spend it quickly and irresponsibly, what would you choose to splurge on?"},
+  {d:"Buster",c:"Social",q:"Ask others in the room what they think you do for a living. Let them know if they are right or not, and what, if anything, they missed."},
+  {d:"Buster",c:"Social",q:"Ask others in the room if they think you are good at taking care of plants or not. How do their answers make you feel?"},
+  {d:"Buster",c:"Hypothetical",q:"If you had to sing a song at karaoke in front of all of your family and friends or else one of them would be randomly struck by lightning, what song would you choose to sing?"},
+  {d:"Buster",c:"Social",q:"For each person in the room, finish the sentence: just by looking at you, I'd think _____."},
+  {d:"Buster",c:"Self",q:"Have you binge watched any tv shows recently? If so, which would you most recommend to the people here, and why?"},
+  {d:"Buster",c:"Self",q:"What's one thing you find yourself often doing when first meeting someone that you want to like you that is purely for the purposes of making a good impression on them?"},
+  {d:"WNRS",c:"Perception",q:"Ask people in this room, on a scale of 1-10, how messy do you think my car is? 1 being cleanest, 10 a complete disaster."},
+  {d:"Buster",c:"Hypothetical",q:"If every time you walked into a room your theme song played, what song would you pick?"},
+  {d:"Buster",c:"Hypothetical",q:"If each person in this room got a magic relic that gave them super powers that enhanced one of their natural abilities, what powers would each person have?"},
+  {d:"Buster",c:"Social",q:"Look at each person in the room and maintain eye contact for at least 5 seconds each. Who was this easiest with?"},
+  {d:"Buster",c:"Hypothetical",q:"You're abducted by angels and given 24 hours to spy on anyone in the world, how would you spend that time?"},
+  {d:"Buster",c:"Self",q:"How are you feeling right now? Answer 100% truthfully until everyone in the room is convinced that you aren't hiding any feelings."},
+  {d:"Buster",c:"Self",q:"Is there anything that you're thinking about right now, in the back of your mind, even as you play this game? What is it?"},
+  {d:"Buster",c:"Social",q:"If you could force one person in this room to change their mind about anything, what would it be?"},
+  {d:"Buster",c:"Story",q:"Who's the last person that changed your life without even knowing that they did?"},
+  {d:"WNRS",c:"Connection",q:"What's been the best compliment a stranger has ever given you?"},
+  {d:"WNRS",c:"Connection",q:"Press shuffle on the biggest album of music on your phone. Share your thoughts about the first song that comes up."},
+  {d:"Buster",c:"Story",q:"Show everyone the last photo taken on your phone, describe what it is, and why you took it."},
+  {d:"Buster",c:"Self",q:"If your life was a book, and each chapter captured 10 years of your life, what would the current chapter be titled?"},
+  {d:"Buster",c:"Self",q:"What song have you most recently listened to on repeat? What emotion does it capture for you?"},
+  {d:"Buster",c:"Self",q:"What's something about yourself that a partner has tried to change about you but that you are glad you did not?"},
+  {d:"Buster",c:"Self",q:"Find something small to throw. Make a wish (out loud) for something you crave more of in your life. Then toss it somewhere to make it come true."},
+  {d:"WNRS",c:"Connection",q:"What would your younger self not believe about your life today?"},
+  {d:"WNRS",c:"Connection",q:"What question are you trying to answer most in your life right now?"},
+  {d:"Buster",c:"Story",q:"Describe a moment of perfect happiness from your past that you would like to revisit, even if the circumstances of that moment are no longer possible."},
+  {d:"WNRS",c:"Connection",q:"Create a secret handshake."},
+  {d:"Buster",c:"Story",q:"What's something that has happened to you that to this day you do not fully understand?"},
+  {d:"WNRS",c:"Connection",q:"What is the last thing you lied to your mother about?"},
+  {d:"Buster",c:"Self",q:"What is something that you still feel compelled to want to prove to the world or to a specific person?"},
+  {d:"WNRS",c:"Connection",q:"Swap seats with each other."},
+  {d:"Buster",c:"Self",q:"How do you define success? How do you define failure? How might success be scary? How might failure be okay?"},
+  {d:"WNRS",c:"Connection",q:"Have you ever told someone I love you but didn't mean it? If so, why?"},
+  {d:"WNRS",c:"Connection",q:"What's your mother's name? If she's still alive, what do you think she is doing right now? And the thing you admire most about her?"},
+  {d:"Buster",c:"Family",q:"What's your father's name? If he's still alive, what do you think he is doing right now? And the thing you admire most about him?"},
+  {d:"Buster",c:"Family",q:"What's something you got from your parents that they didn't get from theirs?"},
+  {d:"Buster",c:"Family",q:"What's something good that your parents had in their lives but that for whatever reason you didn't have?"},
+  {d:"Buster",c:"Self",q:"On a scale of 1-10: How hungry are you right now? How sleepy are you? How badly do you need to go to the bathroom?"},
+  {d:"WNRS",c:"Connection",q:"If you have, when was the moment you realized you weren't invincible?"},
+  {d:"Buster",c:"Family",q:"Can you remember the moment you realized your parents were not all-powerful?"},
+  {d:"Buster",c:"Self",q:"What is the secret to living the best life in as few words as possible?"},
+  {d:"Buster",c:"World",q:"What is a common path for happiness in today's world that you believe is a dead end? When did you realize that this was the case?"},
+  {d:"Buster",c:"Self",q:"What do you think you could work on (or are working on) that would make you a better person? How can the people in this room help you with that?"},
+  {d:"WNRS",c:"Connection",q:"If you could get to know someone in your life on a deeper level, who would it be and why?"},
+  {d:"Buster",c:"Hypothetical",q:"If you could swap bodies with anyone who would it be and why?"},
+  {d:"Buster",c:"Self",q:"If you were to commit to a better life, right in this moment, what would a better life be?"},
+  {d:"Buster",c:"Hypothetical",q:"If you had to pick a recipe on your tombstone, which recipe would it be?"}
+];
+
+// Shuffle once per cycle and persist, so every question comes up before any repeats —
+// even across page loads and offline sessions.
+const KEY = 'questions-cycle-v1';
+const N = QUESTIONS.length;
+
+function newCycle() {
+  const order = Array.from({length: N}, (_, i) => i);
+  for (let i = N - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [order[i], order[j]] = [order[j], order[i]];
+  }
+  return { order, pos: 0 };
+}
+
+function loadCycle() {
+  try {
+    const s = JSON.parse(localStorage.getItem(KEY));
+    if (s && Array.isArray(s.order) && s.order.length === N &&
+        Number.isInteger(s.pos) && s.pos >= 0 && s.pos < N) return s;
+  } catch (e) {}
+  return newCycle();
+}
+
+let state = loadCycle();
+
+function save() {
+  try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {}
+}
+
+const chipEl = document.getElementById('chip');
+const qEl = document.getElementById('question');
+const countEl = document.getElementById('count');
+const hintEl = document.getElementById('hint');
+
+function render() {
+  const item = QUESTIONS[state.order[state.pos]];
+  chipEl.textContent = [item.d, item.c].filter(Boolean).join(' · ');
+  qEl.textContent = item.q;
+  countEl.textContent = (state.pos + 1) + ' / ' + N;
+}
+
+function show(step) {
+  qEl.classList.add('fading');
+  setTimeout(() => {
+    if (step > 0) {
+      state.pos++;
+      if (state.pos >= N) state = newCycle();
+    } else if (state.pos > 0) {
+      state.pos--;
+    }
+    save();
+    render();
+    qEl.classList.remove('fading');
+    hintEl.style.visibility = 'hidden';
+  }, 180);
+}
+
+document.getElementById('stage').addEventListener('click', () => show(1));
+document.getElementById('prev').addEventListener('click', (e) => { e.stopPropagation(); show(-1); });
+document.addEventListener('keydown', (e) => {
+  if (e.key === ' ' || e.key === 'ArrowRight' || e.key === 'Enter') { e.preventDefault(); show(1); }
+  if (e.key === 'ArrowLeft') { e.preventDefault(); show(-1); }
+});
+
+render();
+
+// Offline support: the service worker caches this page (and the icons) on first
+// visit, so the URL keeps working with no connection at all.
+const netEl = document.getElementById('net');
+const dotEl = document.getElementById('dot');
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js').then((reg) => {
+    const markReady = () => { dotEl.classList.add('ready'); netEl.textContent = 'works offline'; };
+    if (reg.active) markReady();
+    else reg.addEventListener('updatefound', () => {
+      const w = reg.installing;
+      if (w) w.addEventListener('statechange', () => { if (w.state === 'activated') markReady(); });
+    });
+  }).catch(() => { netEl.textContent = 'online only'; });
+} else {
+  netEl.textContent = 'online only';
+}
+</script>
+</body>
+</html>
