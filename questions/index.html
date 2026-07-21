@@ -463,7 +463,26 @@ if ('serviceWorker' in navigator) {
       const w = reg.installing;
       if (w) w.addEventListener('statechange', () => { if (w.state === 'activated') markReady(); });
     });
+
+    // iOS home-screen apps resume from the app switcher without a fresh
+    // navigation, so a long-lived page would never see new deploys. Check for
+    // an updated service worker whenever the app returns to the foreground...
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible' && navigator.onLine) {
+        reg.update().catch(() => {});
+      }
+    });
   }).catch(() => { netEl.textContent = 'online only'; });
+
+  // ...and when one takes over, reload once to pick up the new page. Guarded
+  // to the already-controlled case so the very first visit doesn't reload.
+  const hadController = !!navigator.serviceWorker.controller;
+  let reloaded = false;
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (!hadController || reloaded) return;
+    reloaded = true;
+    location.reload();
+  });
 } else {
   netEl.textContent = 'online only';
 }
